@@ -4541,8 +4541,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q1-a", topicId: "cons-1-5", conceptId: "accessible-entrance-a",
     section: "B", questionRef: "2015 HL Q1(a)",
-    stem: "The main entrance to a dwelling house is designed for ease of access for everyone. The high-performance insulated wooden door has vertical sheeting on both sides and a 150 mm × 70 mm frame fixed in the external wall. The wall has a 100 mm concrete-block outer leaf, a 200 mm timber-frame inner leaf and a 60 mm insulated service cavity. The ground floor is insulated solid concrete with a 20 mm quarry-tile finish. Use the original door illustration and these dimensions. The section is through the centre of the door, from 500 mm below finished floor, through floor, threshold, wall, door and frame, to 300 mm above the top of the door frame, at scale 1:10.",
-    questionText: "To a scale of 1:10, draw the specified vertical section through the centre of the door, showing the construction details from 500 mm below finished floor to 300 mm above the top of the door frame.",
+    stem: "The main entrance to a dwelling house is designed to facilitate ease of access for everyone. The door shown is a high performance insulated wooden door with vertical sheeting on both sides. The door frame is 150 mm × 70 mm in cross-section and is fixed in the external wall. The wall has a 100 mm concrete block outer leaf, a 200 mm timber-frame inner leaf and a 60 mm insulated service cavity. The ground floor is an insulated solid concrete floor with a 20 mm quarry tile finish.",
+    questionText: "To a scale of 1:10, draw a vertical section through the centre of the door. Show the typical construction details from 500 mm below finished floor, through the floor, the threshold, the external wall, the door and doorframe to a level 300 mm above the top of the door frame.",
     tariffModel: {"kind":"fixed"}, totalMarks: 52,
     rows: [
     { id: "construction", kind: "criterion", verbatim: "Main entrance and door", marks: 44, contextNote: "Award the best eleven acceptable construction details only, each at drawing 3 plus annotation 1, maximum 44. Blockwork/deadwork; hardcore and sand blinding; radon barrier/DPM; floor insulation; subfloor and tile; drainage channel; level surface to drainage channel; insulated high-performance door; thermally broken sealed doorframe; lintels; stepped DPC at head; racking sheeting and strap; breather membrane; timber studs; vapour-diffusion cavity; concrete-block outer leaf and render; fireproof cavity closer; internal vapour barrier/taped airtightness membrane; service cavity; plaster slab and skimcoat. The source accepts other appropriate detailing. A standard uninsulated door earns 2 instead of the high-performance detail 4; a standard frame earns 2 instead of the thermally broken/sealed detail 4. Apply these replacements within their detail, never as extra credit. Preserve the specified 100 mm block outer leaf,200 mm timber frame,60 mm service cavity,150×70 mm frame and 20 mm quarry tiles. Foundations are not required, even though the source model extends below the requested 500 mm depth. Do not demand all twenty indicative features or award beyond eleven.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44] },
@@ -4557,7 +4557,7 @@ export const CARDS: SecCard[] = [
                 2
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original door illustration and complete dimensions preserved. Follow the selected practice prompt. Published construction-detail cap, drawing marks and separate access marks are retained."
+          "presentationNote": "Original door illustration and specification retained. Construction, draughting and scale marks belong to part (a); the access detail in (b) is marked separately."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q1-original",
@@ -4585,8 +4585,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q1-b", topicId: "cons-3-7", conceptId: "accessible-entrance-b",
     section: "B", questionRef: "2015 HL Q1(b)",
-    stem: "The main entrance to a dwelling house is designed for ease of access for everyone. The high-performance insulated wooden door has vertical sheeting on both sides and a 150 mm × 70 mm frame fixed in the external wall. The wall has a 100 mm concrete-block outer leaf, a 200 mm timber-frame inner leaf and a 60 mm insulated service cavity. The ground floor is insulated solid concrete with a 20 mm quarry-tile finish. Use the original door illustration and these dimensions. The section is through the centre of the door, from 500 mm below finished floor, through floor, threshold, wall, door and frame, to 300 mm above the top of the door frame, at scale 1:10.",
-    questionText: "On the entrance section described above, show clearly the design detailing that ensures ease of access for all persons.",
+    stem: "The main entrance to a dwelling house is designed to facilitate ease of access for everyone. The door shown is a high performance insulated wooden door with vertical sheeting on both sides. The door frame is 150 mm × 70 mm in cross-section and is fixed in the external wall. The wall has a 100 mm concrete block outer leaf, a 200 mm timber-frame inner leaf and a 60 mm insulated service cavity. The ground floor is an insulated solid concrete floor with a 20 mm quarry tile finish.",
+    questionText: "On your drawing, show clearly the design detailing that ensures ease of access for all persons.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "access", kind: "criterion", verbatim: "Ease of access - sloped threshold and upstand", marks: 8, contextNote: "Show the sloped threshold and upstand as a coherent accessible entrance detail, maintaining the relationship between external approach, drainage, door threshold and internal finished floor shown in the source model. This is the single published 8-mark access criterion: no separate 4+4 allocation is printed. Use the supplied full question and section context; do not award the (a)construction or presentation marks again. The source does not publish partial bands for this shared criterion, so this card exposes 0 or 8 only.", permittedMarks: [0,8] },
@@ -4600,7 +4600,7 @@ export const CARDS: SecCard[] = [
                 2
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original door illustration and complete dimensions preserved. Follow the selected practice prompt. Published construction-detail cap, drawing marks and separate access marks are retained."
+          "presentationNote": "Original door illustration and specification retained. Construction, draughting and scale marks belong to part (a); the access detail in (b) is marked separately."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q1-original",
@@ -4628,15 +4628,15 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q1-complete", topicId: "cons-1-5", conceptId: "accessible-entrance-complete",
     section: "B", questionRef: "2015 HL Q1 — complete",
-    stem: "The main entrance to a dwelling house is designed for ease of access for everyone. The high-performance insulated wooden door has vertical sheeting on both sides and a 150 mm × 70 mm frame fixed in the external wall. The wall has a 100 mm concrete-block outer leaf, a 200 mm timber-frame inner leaf and a 60 mm insulated service cavity. The ground floor is insulated solid concrete with a 20 mm quarry-tile finish. Use the original door illustration and these dimensions. The section is through the centre of the door, from 500 mm below finished floor, through floor, threshold, wall, door and frame, to 300 mm above the top of the door frame, at scale 1:10.",
-    questionText: "(a) To a scale of 1:10, draw the specified vertical section through the centre of the door, showing the construction details from 500 mm below finished floor to 300 mm above the top of the door frame. (b) On the entrance section described above, show clearly the design detailing that ensures ease of access for all persons.",
+    stem: "The main entrance to a dwelling house is designed to facilitate ease of access for everyone. The door shown is a high performance insulated wooden door with vertical sheeting on both sides. The door frame is 150 mm × 70 mm in cross-section and is fixed in the external wall. The wall has a 100 mm concrete block outer leaf, a 200 mm timber-frame inner leaf and a 60 mm insulated service cavity. The ground floor is an insulated solid concrete floor with a 20 mm quarry tile finish.",
+    questionText: "(a) To a scale of 1:10, draw a vertical section through the centre of the door. Show the typical construction details from 500 mm below finished floor, through the floor, the threshold, the external wall, the door and doorframe to a level 300 mm above the top of the door frame. (b) On your drawing, show clearly the design detailing that ensures ease of access for all persons.",
     tariffModel: {"kind":"fixed"}, totalMarks: 60,
     rows: [
     { id: "a-construction", kind: "criterion", verbatim: "Main entrance and door", marks: 44, contextNote: "Award the best eleven acceptable construction details only, each at drawing 3 plus annotation 1, maximum 44. Blockwork/deadwork; hardcore and sand blinding; radon barrier/DPM; floor insulation; subfloor and tile; drainage channel; level surface to drainage channel; insulated high-performance door; thermally broken sealed doorframe; lintels; stepped DPC at head; racking sheeting and strap; breather membrane; timber studs; vapour-diffusion cavity; concrete-block outer leaf and render; fireproof cavity closer; internal vapour barrier/taped airtightness membrane; service cavity; plaster slab and skimcoat. The source accepts other appropriate detailing. A standard uninsulated door earns 2 instead of the high-performance detail 4; a standard frame earns 2 instead of the thermally broken/sealed detail 4. Apply these replacements within their detail, never as extra credit. Preserve the specified 100 mm block outer leaf,200 mm timber frame,60 mm service cavity,150×70 mm frame and 20 mm quarry tiles. Foundations are not required, even though the source model extends below the requested 500 mm depth. Do not demand all twenty indicative features or award beyond eleven.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44] },
     { id: "a-presentation", kind: "criterion", verbatim: "Draughting", marks: 8, contextNote: "Draughting 4 and scale 4 are separate presentation allowances for this one drawing. The printed draughting quality band is excellent 4, good 3, fair 2; the scale allowance is 4 with no partial band printed. Use scale 1:10 and the specified extents. Combined selectable totals are sums of draughting 0/2/3/4 and scale 0/4, up to 8. These marks belong only to (a) and must not be awarded again for (b).", permittedMarks: [0,2,3,4,6,7,8] },
     { id: "b-access", kind: "criterion", verbatim: "Ease of access - sloped threshold and upstand", marks: 8, contextNote: "Show the sloped threshold and upstand as a coherent accessible entrance detail, maintaining the relationship between external approach, drainage, door threshold and internal finished floor shown in the source model. This is the single published 8-mark access criterion: no separate 4+4 allocation is printed. Use the supplied full question and section context; do not award the (a)construction or presentation marks again. The source does not publish partial bands for this shared criterion, so this card exposes 0 or 8 only.", permittedMarks: [0,8] },
     ],
-    taskGroups: [{"label":"(a)","sourceCardId":"cons-2015-hl-q1-a","marks":52,"rowIds":["a-construction","a-presentation"]},{"label":"(b)","sourceCardId":"cons-2015-hl-q1-b","marks":8,"rowIds":["b-access"]}],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q1-a","label":"a","marks":52,"rowIds":["a-construction","a-presentation"]},{"sourceCardId":"cons-2015-hl-q1-b","label":"b","marks":8,"rowIds":["b-access"]}],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 1",
@@ -4646,7 +4646,7 @@ export const CARDS: SecCard[] = [
                 2
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original door illustration and complete dimensions preserved. Follow the selected practice prompt. Published construction-detail cap, drawing marks and separate access marks are retained."
+          "presentationNote": "Original door illustration and specification retained. Construction, draughting and scale marks belong to part (a); the access detail in (b) is marked separately."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q1-original",
@@ -4674,7 +4674,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q2-a", topicId: "cons-3-2", conceptId: "external-wall-performance-a",
     section: "B", questionRef: "2015 HL Q2(a)",
-    stem: "External walls for a new dwelling house. In(a), choose three distinct functional requirements. In(b), choose three different, distinct external-wall types and specify their materials and typical dimensions. Part(c)evaluates two of your own wall types from(b), then recommends and justifies a preferred type for a new house. These are open student choices, not a fixed list of named alternatives.",
     questionText: "Using notes and freehand sketches, discuss three functional requirements of an external wall for a new dwelling house.",
     tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
@@ -4689,7 +4688,7 @@ export const CARDS: SecCard[] = [
                 2
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Retains three functional requirements, three distinct wall constructions, and the dependent evaluation of two student-selected walls. Notes, sketches, materials and dimensions retain their separate published credit."
+          "presentationNote": "Original question retained. Requirements and wall types are open choices; the scheme lists typical examples. Part (c) evaluates two of the candidate’s own wall types from (b)."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q2-original",
@@ -4708,7 +4707,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q2-b", topicId: "cons-3-2", conceptId: "external-wall-performance-b",
     section: "B", questionRef: "2015 HL Q2(b)",
-    stem: "External walls for a new dwelling house. In(a), choose three distinct functional requirements. In(b), choose three different, distinct external-wall types and specify their materials and typical dimensions. Part(c)evaluates two of your own wall types from(b), then recommends and justifies a preferred type for a new house. These are open student choices, not a fixed list of named alternatives.",
     questionText: "Using notes and freehand sketches, show the design detailing of three different, distinct external wall types suitable for a new dwelling house. For each wall type, specify the materials to be used and include typical dimensions.",
     tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
@@ -4723,7 +4721,7 @@ export const CARDS: SecCard[] = [
                 2
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Retains three functional requirements, three distinct wall constructions, and the dependent evaluation of two student-selected walls. Notes, sketches, materials and dimensions retain their separate published credit."
+          "presentationNote": "Original question retained. Requirements and wall types are open choices; the scheme lists typical examples. Part (c) evaluates two of the candidate’s own wall types from (b)."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q2-original",
@@ -4742,8 +4740,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q2-c", topicId: "cons-3-2", conceptId: "external-wall-performance-c",
     section: "B", questionRef: "2015 HL Q2(c)",
-    stem: "External walls for a new dwelling house. In(a), choose three distinct functional requirements. In(b), choose three different, distinct external-wall types and specify their materials and typical dimensions. Part(c)evaluates two of your own wall types from(b), then recommends and justifies a preferred type for a new house. These are open student choices, not a fixed list of named alternatives.",
-    questionText: "Evaluate the design of any two of your wall types from part(b). Recommend a preferred external wall type for a new house and justify your recommendation.",
+    questionText: "Evaluate the design of any two of the wall types at 2(b) above. Recommend a preferred external wall type for a new house and justify your recommendation.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "response", kind: "criterion", verbatim: "Evaluation of any two wall types - recommendation and justification", marks: 12, contextNote: "Evaluate first wall 3; evaluate second wall 3; recommend preferred wall type 3; justify recommendation 3. Use two of the student-selected types from(b). The source examples contrast masonry robustness/thermal mass/traditional skills with longer warm-up; timber-frame rapid erection, insulation depth and service-cavity convenience; and external insulation continuity versus more demanding fixing/opening details. Explain trade-offs relevant to the new house and connect the recommendation to that evaluation. No single wall type is prescribed as universally best. A list of two names without evaluation is insufficient.", permittedMarks: [0,3,6,9,12] },
@@ -4757,7 +4754,7 @@ export const CARDS: SecCard[] = [
                 2
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Retains three functional requirements, three distinct wall constructions, and the dependent evaluation of two student-selected walls. Notes, sketches, materials and dimensions retain their separate published credit."
+          "presentationNote": "Original question retained. Requirements and wall types are open choices; the scheme lists typical examples. Part (c) evaluates two of the candidate’s own wall types from (b)."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q2-original",
@@ -4776,15 +4773,14 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q2-complete", topicId: "cons-3-2", conceptId: "external-wall-performance-complete",
     section: "B", questionRef: "2015 HL Q2 — complete",
-    stem: "External walls for a new dwelling house. In(a), choose three distinct functional requirements. In(b), choose three different, distinct external-wall types and specify their materials and typical dimensions. Part(c)evaluates two of your own wall types from(b), then recommends and justifies a preferred type for a new house. These are open student choices, not a fixed list of named alternatives.",
-    questionText: "(a) Using notes and freehand sketches, discuss three functional requirements of an external wall for a new dwelling house. (b) Using notes and freehand sketches, show the design detailing of three different, distinct external wall types suitable for a new dwelling house. For each wall type, specify the materials to be used and include typical dimensions. (c) Evaluate the design of any two of your wall types from part(b). Recommend a preferred external wall type for a new house and justify your recommendation.",
+    questionText: "(a) Using notes and freehand sketches, discuss three functional requirements of an external wall for a new dwelling house. (b) Using notes and freehand sketches, show the design detailing of three different, distinct external wall types suitable for a new dwelling house. For each wall type, specify the materials to be used and include typical dimensions. (c) Evaluate the design of any two of the wall types at 2(b) above. Recommend a preferred external wall type for a new house and justify your recommendation.",
     tariffModel: {"kind":"fixed"}, totalMarks: 60,
     rows: [
     { id: "a-response", kind: "criterion", verbatim: "three functional requirements of an external wall", marks: 24, contextNote: "Three distinct requirements, each notes 4 and sketches 4 (6×4=24). Suitable source examples include supporting upper floors/roof and transmitting loads; preventing rainwater or rising damp entering; limiting heat transfer and thermal bridging; preventing uncontrolled air leakage; resisting condensation; providing robust openings. Explain and illustrate each selected function: naming three requirements without the required explanatory notes and sketches does not earn all 24. An example sketch can show the load path, a moisture barrier or continuous insulation, as appropriate to the function. The source list is indicative and other relevant requirements remain acceptable.", permittedMarks: [0,4,8,12,16,20,24] },
     { id: "b-response", kind: "criterion", verbatim: "three different, distinct types of external wall", marks: 24, contextNote: "For each of three DISTINCT wall types, notes 3 and sketch 3 (18 total). Award materials 1 per wall (3 total) and typical dimensions 1 per wall (3 total), total 24. Do not reduce the task to naming types. Source examples include insulated cavity concrete-block wall; insulated timber frame with weatherproof external cladding; timber-frame inner leaf with block outer leaf; externally insulated solid masonry; light steel frame with insulated cladding; suitable breathable stone, straw-bale, cob or rammed-earth construction. Different construction systems must be represented; do not count the same wall three times with new labels. Show layers, structural support, insulation, moisture control and finishes with consistent materials/dimensions for the selected system. The scheme accepts other suitable wall types; these examples are not an exhaustive finite pool.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24] },
     { id: "c-response", kind: "criterion", verbatim: "Evaluation of any two wall types - recommendation and justification", marks: 12, contextNote: "Evaluate first wall 3; evaluate second wall 3; recommend preferred wall type 3; justify recommendation 3. Use two of the student-selected types from(b). The source examples contrast masonry robustness/thermal mass/traditional skills with longer warm-up; timber-frame rapid erection, insulation depth and service-cavity convenience; and external insulation continuity versus more demanding fixing/opening details. Explain trade-offs relevant to the new house and connect the recommendation to that evaluation. No single wall type is prescribed as universally best. A list of two names without evaluation is insufficient.", permittedMarks: [0,3,6,9,12] },
     ],
-    taskGroups: [{"label":"(a)","sourceCardId":"cons-2015-hl-q2-a","marks":24,"rowIds":["a-response"]},{"label":"(b)","sourceCardId":"cons-2015-hl-q2-b","marks":24,"rowIds":["b-response"]},{"label":"(c)","sourceCardId":"cons-2015-hl-q2-c","marks":12,"rowIds":["c-response"]}],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q2-a","label":"a","marks":24,"rowIds":["a-response"]},{"sourceCardId":"cons-2015-hl-q2-b","label":"b","marks":24,"rowIds":["b-response"]},{"sourceCardId":"cons-2015-hl-q2-c","label":"c","marks":12,"rowIds":["c-response"]}],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 2",
@@ -4794,7 +4790,7 @@ export const CARDS: SecCard[] = [
                 2
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Retains three functional requirements, three distinct wall constructions, and the dependent evaluation of two student-selected walls. Notes, sketches, materials and dimensions retain their separate published credit."
+          "presentationNote": "Original question retained. Requirements and wall types are open choices; the scheme lists typical examples. Part (c) evaluates two of the candidate’s own wall types from (b)."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q2-original",
@@ -4811,117 +4807,16 @@ export const CARDS: SecCard[] = [
     year: 2015, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-a-A-advantages", topicId: "cons-1-2", conceptId: "extension-garden-room-a-a-advantages",
-    section: "B", questionRef: "2015 HL Q3(a) — option A, advantages",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "Discuss in detail two advantages of the attached extension at A.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "conserves space in the rear garden of the house", marks: 6, contextNote: "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include conserving rear-garden space; reducing external-wall area and associated insulation costs; easier connection to existing services; flexible division of the combined living space; and closer family/social connection. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-a-A-disadvantages", topicId: "cons-1-2", conceptId: "extension-garden-room-a-a-disadvantages",
-    section: "B", questionRef: "2015 HL Q3(a) — option A, disadvantages",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "Discuss in detail two disadvantages of the attached extension at A.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "can reduce the natural lighting and ventilation of the kitchen/dining room", marks: 6, contextNote: "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include reducing existing kitchen/dining light or ventilation; disturbing the original layout or views; losing quieter separate rooms; demanding weatherproof and insulated junctions; and structural support needed for a larger opening in the existing external wall. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q3-a-A", topicId: "cons-1-2", conceptId: "extension-garden-room-a-a",
-    section: "B", questionRef: "2015 HL Q3(a) — option A",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "Discuss in detail two advantages of the attached extension at A. Discuss in detail two disadvantages of the attached extension at A.",
+    section: "B", questionRef: "2015 HL Q3(a) — Option A",
+    stem: "The drawing shows the ground floor plan of a two-storey semi-detached house and a portion of the rear garden. The external walls of the house are 400 mm concrete block walls with a full-fill insulated cavity. The rear wall M-M is south facing. The owners need an additional space for use as a study and occasionally as a family space. The space is to have internal dimensions of 5.0 metres × 3.0 metres as shown. The following options are being considered: (i) building a single-storey extension onto the rear of the house at A. or (ii) building a detached, free-standing space in the garden at B.",
+    questionText: "Discuss in detail two advantages and two disadvantages of each option listed at (i) and (ii) above. — Option A",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "a-A-advantages-response", kind: "criterion", verbatim: "conserves space in the rear garden of the house", marks: 6, contextNote: "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include conserving rear-garden space; reducing external-wall area and associated insulation costs; easier connection to existing services; flexible division of the combined living space; and closer family/social connection. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    { id: "a-A-disadvantages-response", kind: "criterion", verbatim: "can reduce the natural lighting and ventilation of the kitchen/dining room", marks: 6, contextNote: "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include reducing existing kitchen/dining light or ventilation; disturbing the original layout or views; losing quieter separate rooms; demanding weatherproof and insulated junctions; and structural support needed for a larger opening in the existing external wall. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    ],
-    taskGroups: [{"label":"a-A-advantages","sourceCardId":"cons-2015-hl-q3-a-A-advantages","marks":6,"rowIds":["a-A-advantages-response"]},{"label":"a-A-disadvantages","sourceCardId":"cons-2015-hl-q3-a-A-disadvantages","marks":6,"rowIds":["a-A-disadvantages-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-a-B-advantages", topicId: "cons-1-2", conceptId: "extension-garden-room-a-b-advantages",
-    section: "B", questionRef: "2015 HL Q3(a) — option B, advantages",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "Discuss in detail two advantages of the detached garden room at B.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "minimises disruption during construction", marks: 6, contextNote: "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include less disruption; retaining light and views from existing rooms; a separate quiet/private study; more freedom in the new room design; and a direct relationship with the garden. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 3, contextNote: "An advantage of the single-storey extension at A, discussed for this house (3). Such as: saves on construction and insulation costs; conserves space in the rear garden; more efficient energy use, as it minimises the area of external walling; more freedom in using and dividing the total living space.", permittedMarks: [0,1,2,3] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 3, contextNote: "A second, different advantage of the extension at A (3). Such as: easy, economical connection to existing services (space heating, plumbing, ventilation, electrical distribution); a compact plan that supports regular social interaction across the generations of the family.", permittedMarks: [0,1,2,3] },
+    { id: "disadvantage-1", kind: "criterion", verbatim: "Disadvantage 1", marks: 3, contextNote: "A disadvantage of the extension at A (3). Such as: disturbs the well-proportioned original layout; creates a large undifferentiated space that needs careful design; can reduce the natural lighting and ventilation of the kitchen/dining room; more energy for lighting and heating a large space.", permittedMarks: [0,1,2,3] },
+    { id: "disadvantage-2", kind: "criterion", verbatim: "Disadvantage 2", marks: 3, contextNote: "A second, different disadvantage of the extension at A (3). Such as: fewer discrete rooms for a quieter environment; may spoil the view from the existing kitchen and dining area; continuity of insulation and weatherproofing at the roof and wall abutment; spanning the larger opening in the existing external wall may need strengthening and RSJs; misses the chance to connect the garden with the living spaces.", permittedMarks: [0,1,2,3] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -4932,41 +4827,7 @@ export const CARDS: SecCard[] = [
                 2
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-a-B-disadvantages", topicId: "cons-1-2", conceptId: "extension-garden-room-a-b-disadvantages",
-    section: "B", questionRef: "2015 HL Q3(a) — option B, disadvantages",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "Discuss in detail two disadvantages of the detached garden room at B.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "larger area of external envelope", marks: 6, contextNote: "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include a larger exposed envelope and associated insulation/heating costs; moving outdoors to reach the room; loss of garden space to paths; separating family living space; and extra access or service-connection costs. The scheme heading 3(b)(ii) on PDF page 10 is a numbering error: these are the disadvantages for part(a), option B. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+          "presentationNote": "Original plan with positions A and B retained. Part (a) requires both options; in part (b) the candidate selects one option and the same design marks apply to either. Scheme sketches are examples, not required designs."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q3-original",
@@ -4984,15 +4845,16 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q3-a-B", topicId: "cons-1-2", conceptId: "extension-garden-room-a-b",
-    section: "B", questionRef: "2015 HL Q3(a) — option B",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "Discuss in detail two advantages of the detached garden room at B. Discuss in detail two disadvantages of the detached garden room at B.",
+    section: "B", questionRef: "2015 HL Q3(a) — Option B",
+    stem: "The drawing shows the ground floor plan of a two-storey semi-detached house and a portion of the rear garden. The external walls of the house are 400 mm concrete block walls with a full-fill insulated cavity. The rear wall M-M is south facing. The owners need an additional space for use as a study and occasionally as a family space. The space is to have internal dimensions of 5.0 metres × 3.0 metres as shown. The following options are being considered: (i) building a single-storey extension onto the rear of the house at A. or (ii) building a detached, free-standing space in the garden at B.",
+    questionText: "Discuss in detail two advantages and two disadvantages of each option listed at (i) and (ii) above. — Option B",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "a-B-advantages-response", kind: "criterion", verbatim: "minimises disruption during construction", marks: 6, contextNote: "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include less disruption; retaining light and views from existing rooms; a separate quiet/private study; more freedom in the new room design; and a direct relationship with the garden. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    { id: "a-B-disadvantages-response", kind: "criterion", verbatim: "larger area of external envelope", marks: 6, contextNote: "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include a larger exposed envelope and associated insulation/heating costs; moving outdoors to reach the room; loss of garden space to paths; separating family living space; and extra access or service-connection costs. The scheme heading 3(b)(ii) on PDF page 10 is a numbering error: these are the disadvantages for part(a), option B. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 3, contextNote: "An advantage of the detached, free-standing space at B, discussed for this house (3). Such as: keeps the existing relationship between the kitchen/dining area and the outside; minimises disruption during construction; maintains natural lighting to the existing rooms; greater privacy in a distinct room in the garden.", permittedMarks: [0,1,2,3] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 3, contextNote: "A second, different advantage of the space at B (3). Such as: space for a young or older family member; more freedom of design and more natural lighting in the new building; a closer link between room and garden; isolation for activities that need quiet or are noisy; does not overshadow the existing kitchen and dining room.", permittedMarks: [0,1,2,3] },
+    { id: "disadvantage-1", kind: "criterion", verbatim: "Disadvantage 1", marks: 3, contextNote: "A disadvantage of the space at B (3). Such as: a larger external envelope with higher insulation costs; the inconvenience of crossing the garden to reach it; possibly higher heating costs from an extra external door and reduced airtightness.", permittedMarks: [0,1,2,3] },
+    { id: "disadvantage-2", kind: "criterion", verbatim: "Disadvantage 2", marks: 3, contextNote: "A second, different disadvantage of the space at B (3). Such as: garden space lost to paths; unusable spaces near the external doors; fragmentation of family living space; the cost of access for all and of connecting services (heating, plumbing and waste, electrical). The scheme prints this list under the heading 3(b)(ii); it belongs to part (a), option B.", permittedMarks: [0,1,2,3] },
     ],
-    taskGroups: [{"label":"a-B-advantages","sourceCardId":"cons-2015-hl-q3-a-B-advantages","marks":6,"rowIds":["a-B-advantages-response"]},{"label":"a-B-disadvantages","sourceCardId":"cons-2015-hl-q3-a-B-disadvantages","marks":6,"rowIds":["a-B-disadvantages-response"]}],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 3",
@@ -5002,7 +4864,7 @@ export const CARDS: SecCard[] = [
                 2
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+          "presentationNote": "Original plan with positions A and B retained. Part (a) requires both options; in part (b) the candidate selects one option and the same design marks apply to either. Scheme sketches are examples, not required designs."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q3-original",
@@ -5020,17 +4882,21 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q3-a", topicId: "cons-1-2", conceptId: "extension-garden-room-a",
-    section: "B", questionRef: "2015 HL Q3(a) — both options",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "Discuss in detail two advantages of the attached extension at A. Discuss in detail two disadvantages of the attached extension at A. Discuss in detail two advantages of the detached garden room at B. Discuss in detail two disadvantages of the detached garden room at B.",
+    section: "B", questionRef: "2015 HL Q3(a)",
+    stem: "The drawing shows the ground floor plan of a two-storey semi-detached house and a portion of the rear garden. The external walls of the house are 400 mm concrete block walls with a full-fill insulated cavity. The rear wall M-M is south facing. The owners need an additional space for use as a study and occasionally as a family space. The space is to have internal dimensions of 5.0 metres × 3.0 metres as shown. The following options are being considered: (i) building a single-storey extension onto the rear of the house at A. or (ii) building a detached, free-standing space in the garden at B.",
+    questionText: "Discuss in detail two advantages and two disadvantages of each option listed at (i) and (ii) above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
-    { id: "a-A-a-A-advantages-response", kind: "criterion", verbatim: "conserves space in the rear garden of the house", marks: 6, contextNote: "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include conserving rear-garden space; reducing external-wall area and associated insulation costs; easier connection to existing services; flexible division of the combined living space; and closer family/social connection. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    { id: "a-A-a-A-disadvantages-response", kind: "criterion", verbatim: "can reduce the natural lighting and ventilation of the kitchen/dining room", marks: 6, contextNote: "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include reducing existing kitchen/dining light or ventilation; disturbing the original layout or views; losing quieter separate rooms; demanding weatherproof and insulated junctions; and structural support needed for a larger opening in the existing external wall. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    { id: "a-B-a-B-advantages-response", kind: "criterion", verbatim: "minimises disruption during construction", marks: 6, contextNote: "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include less disruption; retaining light and views from existing rooms; a separate quiet/private study; more freedom in the new room design; and a direct relationship with the garden. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    { id: "a-B-a-B-disadvantages-response", kind: "criterion", verbatim: "larger area of external envelope", marks: 6, contextNote: "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include a larger exposed envelope and associated insulation/heating costs; moving outdoors to reach the room; loss of garden space to paths; separating family living space; and extra access or service-connection costs. The scheme heading 3(b)(ii) on PDF page 10 is a numbering error: these are the disadvantages for part(a), option B. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
+    { id: "a-A-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 3, contextNote: "An advantage of the single-storey extension at A, discussed for this house (3). Such as: saves on construction and insulation costs; conserves space in the rear garden; more efficient energy use, as it minimises the area of external walling; more freedom in using and dividing the total living space.", permittedMarks: [0,1,2,3] },
+    { id: "a-A-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 3, contextNote: "A second, different advantage of the extension at A (3). Such as: easy, economical connection to existing services (space heating, plumbing, ventilation, electrical distribution); a compact plan that supports regular social interaction across the generations of the family.", permittedMarks: [0,1,2,3] },
+    { id: "a-A-disadvantage-1", kind: "criterion", verbatim: "Disadvantage 1", marks: 3, contextNote: "A disadvantage of the extension at A (3). Such as: disturbs the well-proportioned original layout; creates a large undifferentiated space that needs careful design; can reduce the natural lighting and ventilation of the kitchen/dining room; more energy for lighting and heating a large space.", permittedMarks: [0,1,2,3] },
+    { id: "a-A-disadvantage-2", kind: "criterion", verbatim: "Disadvantage 2", marks: 3, contextNote: "A second, different disadvantage of the extension at A (3). Such as: fewer discrete rooms for a quieter environment; may spoil the view from the existing kitchen and dining area; continuity of insulation and weatherproofing at the roof and wall abutment; spanning the larger opening in the existing external wall may need strengthening and RSJs; misses the chance to connect the garden with the living spaces.", permittedMarks: [0,1,2,3] },
+    { id: "a-B-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 3, contextNote: "An advantage of the detached, free-standing space at B, discussed for this house (3). Such as: keeps the existing relationship between the kitchen/dining area and the outside; minimises disruption during construction; maintains natural lighting to the existing rooms; greater privacy in a distinct room in the garden.", permittedMarks: [0,1,2,3] },
+    { id: "a-B-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 3, contextNote: "A second, different advantage of the space at B (3). Such as: space for a young or older family member; more freedom of design and more natural lighting in the new building; a closer link between room and garden; isolation for activities that need quiet or are noisy; does not overshadow the existing kitchen and dining room.", permittedMarks: [0,1,2,3] },
+    { id: "a-B-disadvantage-1", kind: "criterion", verbatim: "Disadvantage 1", marks: 3, contextNote: "A disadvantage of the space at B (3). Such as: a larger external envelope with higher insulation costs; the inconvenience of crossing the garden to reach it; possibly higher heating costs from an extra external door and reduced airtightness.", permittedMarks: [0,1,2,3] },
+    { id: "a-B-disadvantage-2", kind: "criterion", verbatim: "Disadvantage 2", marks: 3, contextNote: "A second, different disadvantage of the space at B (3). Such as: garden space lost to paths; unusable spaces near the external doors; fragmentation of family living space; the cost of access for all and of connecting services (heating, plumbing and waste, electrical). The scheme prints this list under the heading 3(b)(ii); it belongs to part (a), option B.", permittedMarks: [0,1,2,3] },
     ],
-    taskGroups: [{"label":"a-A","sourceCardId":"cons-2015-hl-q3-a-A","marks":12,"rowIds":["a-A-a-A-advantages-response","a-A-a-A-disadvantages-response"]},{"label":"a-B","sourceCardId":"cons-2015-hl-q3-a-B","marks":12,"rowIds":["a-B-a-B-advantages-response","a-B-a-B-disadvantages-response"]}],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q3-a-A","label":"Option A","marks":12,"rowIds":["a-A-advantage-1","a-A-advantage-2","a-A-disadvantage-1","a-A-disadvantage-2"]},{"sourceCardId":"cons-2015-hl-q3-a-B","label":"Option B","marks":12,"rowIds":["a-B-advantage-1","a-B-advantage-2","a-B-disadvantage-1","a-B-disadvantage-2"]}],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 3",
@@ -5040,7 +4906,7 @@ export const CARDS: SecCard[] = [
                 2
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+          "presentationNote": "Original plan with positions A and B retained. Part (a) requires both options; in part (b) the candidate selects one option and the same design marks apply to either. Scheme sketches are examples, not required designs."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q3-original",
@@ -5050,356 +4916,6 @@ export const CARDS: SecCard[] = [
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
           "includesPrompt": true
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-b-A-external-design", topicId: "cons-1-3", conceptId: "extension-garden-room-b-a-external-design",
-    section: "B", questionRef: "2015 HL Q3(b) — option A, external design",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "Select option A: an attached single-storey extension at A. Using notes and freehand sketches, show a proposed external design for the attractive study/family space.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "Elevation", marks: 12, contextNote: "External-design notes 6 and sketches 6 (12 total). Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. The source suggests a low roof/elevation where appropriate to avoid overshadowing the enclosed garden, south-facing windows for daylight, and an attractive design appropriate to the house. Explain the proposed form and openings and illustrate them in an external sketch. Other thoughtful modern or traditional designs are accepted: a flat roof, a particular material or every feature in the sample is not compulsory. These marks do not include the separately marked internal layout or garden connection.", permittedMarks: [0,6,12] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q3-attached-exterior",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-attached-exterior.png",
-          "srcHash": "f906cd40cf358e67e286cb78cbdf2af1",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): attached exterior. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-b-A-internal-layout", topicId: "cons-1-3", conceptId: "extension-garden-room-b-a-internal-layout",
-    section: "B", questionRef: "2015 HL Q3(b) — option A, internal layout",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "For option A, an attached single-storey extension at A, use notes and freehand sketches to show the proposed internal layout of the 5.0 m × 3.0 m study/family space.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "the space is divided to provide some privacy and a sense of seclusion", marks: 12, contextNote: "Internal-layout notes 6 and sketches 6 (12 total). Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. The source describes a small desk/office area for individual work and a larger communal area, with separation giving privacy; a convertible couch is an optional example, not a required bedroom. Show a workable internal arrangement for the stated study and occasional family uses, with access and circulation related to the original plan. The source plan is illustrative: do not require its exact furniture arrangement or copy it at the expense of the printed dimensions. External form and garden-link marks are awarded in their own tasks.", permittedMarks: [0,6,12] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q3-attached-layout",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-attached-layout.png",
-          "srcHash": "cfb5f759c90531f08bc73d0420fc8e0e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): attached layout. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-b-A-garden-link", topicId: "cons-1-2", conceptId: "extension-garden-room-b-a-garden-link",
-    section: "B", questionRef: "2015 HL Q3(b) — option A, garden connection",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "For option A, an attached single-storey extension at A, show in your design how the proposed space links with the surrounding rear garden.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "Link to rear garden", marks: 6, contextNote: "Award the published shared 6-mark criterion for showing how the proposed space links to the rear garden. Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. Source examples include double, folding or sliding doors, glazing for garden views, and a patio giving outdoor seating and access. Show a coherent indoor/outdoor relationship appropriate to the selected location; the example doors/windows are alternatives and are not all mandatory. A covered connection to the house can be relevant to option B, but it does not replace the requested link to the garden. No separate notes/sketch split is printed for this 6-mark criterion.", permittedMarks: [0,6] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q3-garden-link",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-garden-link.png",
-          "srcHash": "c5c19a4245d8667b7e9d776455b9e3fc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): garden link. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-b-A", topicId: "cons-1-3", conceptId: "extension-garden-room-b-a",
-    section: "B", questionRef: "2015 HL Q3(b) — option A",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "Select option A: an attached single-storey extension at A. Using notes and freehand sketches, show a proposed external design for the attractive study/family space. For option A, an attached single-storey extension at A, use notes and freehand sketches to show the proposed internal layout of the 5.0 m × 3.0 m study/family space. For option A, an attached single-storey extension at A, show in your design how the proposed space links with the surrounding rear garden.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 30,
-    rows: [
-    { id: "b-A-external-design-response", kind: "criterion", verbatim: "Elevation", marks: 12, contextNote: "External-design notes 6 and sketches 6 (12 total). Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. The source suggests a low roof/elevation where appropriate to avoid overshadowing the enclosed garden, south-facing windows for daylight, and an attractive design appropriate to the house. Explain the proposed form and openings and illustrate them in an external sketch. Other thoughtful modern or traditional designs are accepted: a flat roof, a particular material or every feature in the sample is not compulsory. These marks do not include the separately marked internal layout or garden connection.", permittedMarks: [0,6,12] },
-    { id: "b-A-internal-layout-response", kind: "criterion", verbatim: "the space is divided to provide some privacy and a sense of seclusion", marks: 12, contextNote: "Internal-layout notes 6 and sketches 6 (12 total). Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. The source describes a small desk/office area for individual work and a larger communal area, with separation giving privacy; a convertible couch is an optional example, not a required bedroom. Show a workable internal arrangement for the stated study and occasional family uses, with access and circulation related to the original plan. The source plan is illustrative: do not require its exact furniture arrangement or copy it at the expense of the printed dimensions. External form and garden-link marks are awarded in their own tasks.", permittedMarks: [0,6,12] },
-    { id: "b-A-garden-link-response", kind: "criterion", verbatim: "Link to rear garden", marks: 6, contextNote: "Award the published shared 6-mark criterion for showing how the proposed space links to the rear garden. Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. Source examples include double, folding or sliding doors, glazing for garden views, and a patio giving outdoor seating and access. Show a coherent indoor/outdoor relationship appropriate to the selected location; the example doors/windows are alternatives and are not all mandatory. A covered connection to the house can be relevant to option B, but it does not replace the requested link to the garden. No separate notes/sketch split is printed for this 6-mark criterion.", permittedMarks: [0,6] },
-    ],
-    taskGroups: [{"label":"b-A-external-design","sourceCardId":"cons-2015-hl-q3-b-A-external-design","marks":12,"rowIds":["b-A-external-design-response"]},{"label":"b-A-internal-layout","sourceCardId":"cons-2015-hl-q3-b-A-internal-layout","marks":12,"rowIds":["b-A-internal-layout-response"]},{"label":"b-A-garden-link","sourceCardId":"cons-2015-hl-q3-b-A-garden-link","marks":6,"rowIds":["b-A-garden-link-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q3-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-scheme.png",
-          "srcHash": "1b29ab493fdd5b707f9a71e4d508ad26",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-b-B-external-design", topicId: "cons-1-3", conceptId: "extension-garden-room-b-b-external-design",
-    section: "B", questionRef: "2015 HL Q3(b) — option B, external design",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "Select option B: a detached, free-standing garden room at B. Using notes and freehand sketches, show a proposed external design for the attractive study/family space.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "Elevation", marks: 12, contextNote: "External-design notes 6 and sketches 6 (12 total). Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. The source suggests a low roof/elevation where appropriate to avoid overshadowing the enclosed garden, south-facing windows for daylight, and an attractive design appropriate to the house. Explain the proposed form and openings and illustrate them in an external sketch. Other thoughtful modern or traditional designs are accepted: a flat roof, a particular material or every feature in the sample is not compulsory. These marks do not include the separately marked internal layout or garden connection.", permittedMarks: [0,6,12] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q3-detached-exterior",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-detached-exterior.png",
-          "srcHash": "b8659df9d2f5700c512d9b7b8f4f292b",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): detached exterior. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-b-B-internal-layout", topicId: "cons-1-3", conceptId: "extension-garden-room-b-b-internal-layout",
-    section: "B", questionRef: "2015 HL Q3(b) — option B, internal layout",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "For option B, a detached, free-standing garden room at B, use notes and freehand sketches to show the proposed internal layout of the 5.0 m × 3.0 m study/family space.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "the space is divided to provide some privacy and a sense of seclusion", marks: 12, contextNote: "Internal-layout notes 6 and sketches 6 (12 total). Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. The source describes a small desk/office area for individual work and a larger communal area, with separation giving privacy; a convertible couch is an optional example, not a required bedroom. Show a workable internal arrangement for the stated study and occasional family uses, with access and circulation related to the original plan. The source plan is illustrative: do not require its exact furniture arrangement or copy it at the expense of the printed dimensions. External form and garden-link marks are awarded in their own tasks.", permittedMarks: [0,6,12] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q3-detached-layout",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-detached-layout.png",
-          "srcHash": "e295e34b3b204524478fa4759adadffd",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): detached layout. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-b-B-garden-link", topicId: "cons-1-2", conceptId: "extension-garden-room-b-b-garden-link",
-    section: "B", questionRef: "2015 HL Q3(b) — option B, garden connection",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "For option B, a detached, free-standing garden room at B, show in your design how the proposed space links with the surrounding rear garden.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "Link to rear garden", marks: 6, contextNote: "Award the published shared 6-mark criterion for showing how the proposed space links to the rear garden. Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. Source examples include double, folding or sliding doors, glazing for garden views, and a patio giving outdoor seating and access. Show a coherent indoor/outdoor relationship appropriate to the selected location; the example doors/windows are alternatives and are not all mandatory. A covered connection to the house can be relevant to option B, but it does not replace the requested link to the garden. No separate notes/sketch split is printed for this 6-mark criterion.", permittedMarks: [0,6] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q3-garden-link",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-garden-link.png",
-          "srcHash": "c5c19a4245d8667b7e9d776455b9e3fc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): garden link. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-b-B", topicId: "cons-1-3", conceptId: "extension-garden-room-b-b",
-    section: "B", questionRef: "2015 HL Q3(b) — option B",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "Select option B: a detached, free-standing garden room at B. Using notes and freehand sketches, show a proposed external design for the attractive study/family space. For option B, a detached, free-standing garden room at B, use notes and freehand sketches to show the proposed internal layout of the 5.0 m × 3.0 m study/family space. For option B, a detached, free-standing garden room at B, show in your design how the proposed space links with the surrounding rear garden.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 30,
-    rows: [
-    { id: "b-B-external-design-response", kind: "criterion", verbatim: "Elevation", marks: 12, contextNote: "External-design notes 6 and sketches 6 (12 total). Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. The source suggests a low roof/elevation where appropriate to avoid overshadowing the enclosed garden, south-facing windows for daylight, and an attractive design appropriate to the house. Explain the proposed form and openings and illustrate them in an external sketch. Other thoughtful modern or traditional designs are accepted: a flat roof, a particular material or every feature in the sample is not compulsory. These marks do not include the separately marked internal layout or garden connection.", permittedMarks: [0,6,12] },
-    { id: "b-B-internal-layout-response", kind: "criterion", verbatim: "the space is divided to provide some privacy and a sense of seclusion", marks: 12, contextNote: "Internal-layout notes 6 and sketches 6 (12 total). Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. The source describes a small desk/office area for individual work and a larger communal area, with separation giving privacy; a convertible couch is an optional example, not a required bedroom. Show a workable internal arrangement for the stated study and occasional family uses, with access and circulation related to the original plan. The source plan is illustrative: do not require its exact furniture arrangement or copy it at the expense of the printed dimensions. External form and garden-link marks are awarded in their own tasks.", permittedMarks: [0,6,12] },
-    { id: "b-B-garden-link-response", kind: "criterion", verbatim: "Link to rear garden", marks: 6, contextNote: "Award the published shared 6-mark criterion for showing how the proposed space links to the rear garden. Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. Source examples include double, folding or sliding doors, glazing for garden views, and a patio giving outdoor seating and access. Show a coherent indoor/outdoor relationship appropriate to the selected location; the example doors/windows are alternatives and are not all mandatory. A covered connection to the house can be relevant to option B, but it does not replace the requested link to the garden. No separate notes/sketch split is printed for this 6-mark criterion.", permittedMarks: [0,6] },
-    ],
-    taskGroups: [{"label":"b-B-external-design","sourceCardId":"cons-2015-hl-q3-b-B-external-design","marks":12,"rowIds":["b-B-external-design-response"]},{"label":"b-B-internal-layout","sourceCardId":"cons-2015-hl-q3-b-B-internal-layout","marks":12,"rowIds":["b-B-internal-layout-response"]},{"label":"b-B-garden-link","sourceCardId":"cons-2015-hl-q3-b-B-garden-link","marks":6,"rowIds":["b-B-garden-link-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q3-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-scheme.png",
-          "srcHash": "1b29ab493fdd5b707f9a71e4d508ad26",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -5409,11 +4925,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q3-c", topicId: "cons-1-2", conceptId: "extension-garden-room-c",
     section: "B", questionRef: "2015 HL Q3(c)",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+    stem: "The drawing shows the ground floor plan of a two-storey semi-detached house and a portion of the rear garden. The external walls of the house are 400 mm concrete block walls with a full-fill insulated cavity. The rear wall M-M is south facing. The owners need an additional space for use as a study and occasionally as a family space. The space is to have internal dimensions of 5.0 metres × 3.0 metres as shown. The following options are being considered: (i) building a single-storey extension onto the rear of the house at A. or (ii) building a detached, free-standing space in the garden at B.",
     questionText: "Discuss two advantages of designing a space that links with the rear garden.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "response", kind: "criterion", verbatim: "increases use made of the valuable space outside", marks: 6, contextNote: "Award two distinct advantages at 3 marks each (6 total). The source examples include closer contact with nature, awareness of seasonal change, enjoyment of the senses, educational opportunities for children, access to natural light, more use of outside space, and a greater sense of spaciousness. Discuss the relationship between the new room and garden. Merely naming a door type describes a design feature, not its advantage. The menu is open; other relevant, well-argued benefits are accepted.", permittedMarks: [0,3,6] },
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 3, contextNote: "An advantage of linking the space with the rear garden (3). Such as: an increased sense of wellbeing from closer contact with nature; awareness of the changing seasons; engaging the senses; the health benefits of natural light.", permittedMarks: [0,1,2,3] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 3, contextNote: "A second, different advantage (3). Such as: educational benefits for children; more use made of the valuable space outside; a greater sense of spaciousness for little extra investment. Naming a door type describes a design feature, not an advantage.", permittedMarks: [0,1,2,3] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -5424,7 +4941,7 @@ export const CARDS: SecCard[] = [
                 2
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+          "presentationNote": "Original plan with positions A and B retained. Part (a) requires both options; in part (b) the candidate selects one option and the same design marks apply to either. Scheme sketches are examples, not required designs."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q3-original",
@@ -5434,1005 +4951,6 @@ export const CARDS: SecCard[] = [
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
           "includesPrompt": true
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-complete-A", topicId: "cons-1-2", conceptId: "extension-garden-room-complete-a",
-    section: "B", questionRef: "2015 HL Q3 — complete, option A",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "Discuss in detail two advantages of the attached extension at A. Discuss in detail two disadvantages of the attached extension at A. Discuss in detail two advantages of the detached garden room at B. Discuss in detail two disadvantages of the detached garden room at B. Select option A: an attached single-storey extension at A. Using notes and freehand sketches, show a proposed external design for the attractive study/family space. For option A, an attached single-storey extension at A, use notes and freehand sketches to show the proposed internal layout of the 5.0 m × 3.0 m study/family space. For option A, an attached single-storey extension at A, show in your design how the proposed space links with the surrounding rear garden. Discuss two advantages of designing a space that links with the rear garden.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-a-A-a-A-advantages-response", kind: "criterion", verbatim: "conserves space in the rear garden of the house", marks: 6, contextNote: "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include conserving rear-garden space; reducing external-wall area and associated insulation costs; easier connection to existing services; flexible division of the combined living space; and closer family/social connection. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    { id: "a-a-A-a-A-disadvantages-response", kind: "criterion", verbatim: "can reduce the natural lighting and ventilation of the kitchen/dining room", marks: 6, contextNote: "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include reducing existing kitchen/dining light or ventilation; disturbing the original layout or views; losing quieter separate rooms; demanding weatherproof and insulated junctions; and structural support needed for a larger opening in the existing external wall. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    { id: "a-a-B-a-B-advantages-response", kind: "criterion", verbatim: "minimises disruption during construction", marks: 6, contextNote: "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include less disruption; retaining light and views from existing rooms; a separate quiet/private study; more freedom in the new room design; and a direct relationship with the garden. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    { id: "a-a-B-a-B-disadvantages-response", kind: "criterion", verbatim: "larger area of external envelope", marks: 6, contextNote: "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include a larger exposed envelope and associated insulation/heating costs; moving outdoors to reach the room; loss of garden space to paths; separating family living space; and extra access or service-connection costs. The scheme heading 3(b)(ii) on PDF page 10 is a numbering error: these are the disadvantages for part(a), option B. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    { id: "b-A-b-A-external-design-response", kind: "criterion", verbatim: "Elevation", marks: 12, contextNote: "External-design notes 6 and sketches 6 (12 total). Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. The source suggests a low roof/elevation where appropriate to avoid overshadowing the enclosed garden, south-facing windows for daylight, and an attractive design appropriate to the house. Explain the proposed form and openings and illustrate them in an external sketch. Other thoughtful modern or traditional designs are accepted: a flat roof, a particular material or every feature in the sample is not compulsory. These marks do not include the separately marked internal layout or garden connection.", permittedMarks: [0,6,12] },
-    { id: "b-A-b-A-internal-layout-response", kind: "criterion", verbatim: "the space is divided to provide some privacy and a sense of seclusion", marks: 12, contextNote: "Internal-layout notes 6 and sketches 6 (12 total). Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. The source describes a small desk/office area for individual work and a larger communal area, with separation giving privacy; a convertible couch is an optional example, not a required bedroom. Show a workable internal arrangement for the stated study and occasional family uses, with access and circulation related to the original plan. The source plan is illustrative: do not require its exact furniture arrangement or copy it at the expense of the printed dimensions. External form and garden-link marks are awarded in their own tasks.", permittedMarks: [0,6,12] },
-    { id: "b-A-b-A-garden-link-response", kind: "criterion", verbatim: "Link to rear garden", marks: 6, contextNote: "Award the published shared 6-mark criterion for showing how the proposed space links to the rear garden. Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. Source examples include double, folding or sliding doors, glazing for garden views, and a patio giving outdoor seating and access. Show a coherent indoor/outdoor relationship appropriate to the selected location; the example doors/windows are alternatives and are not all mandatory. A covered connection to the house can be relevant to option B, but it does not replace the requested link to the garden. No separate notes/sketch split is printed for this 6-mark criterion.", permittedMarks: [0,6] },
-    { id: "c-response", kind: "criterion", verbatim: "increases use made of the valuable space outside", marks: 6, contextNote: "Award two distinct advantages at 3 marks each (6 total). The source examples include closer contact with nature, awareness of seasonal change, enjoyment of the senses, educational opportunities for children, access to natural light, more use of outside space, and a greater sense of spaciousness. Discuss the relationship between the new room and garden. Merely naming a door type describes a design feature, not its advantage. The menu is open; other relevant, well-argued benefits are accepted.", permittedMarks: [0,3,6] },
-    ],
-    taskGroups: [{"label":"a","sourceCardId":"cons-2015-hl-q3-a","marks":24,"rowIds":["a-a-A-a-A-advantages-response","a-a-A-a-A-disadvantages-response","a-a-B-a-B-advantages-response","a-a-B-a-B-disadvantages-response"]},{"label":"b-A","sourceCardId":"cons-2015-hl-q3-b-A","marks":30,"rowIds":["b-A-b-A-external-design-response","b-A-b-A-internal-layout-response","b-A-b-A-garden-link-response"]},{"label":"c","sourceCardId":"cons-2015-hl-q3-c","marks":6,"rowIds":["c-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q3-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-scheme.png",
-          "srcHash": "1b29ab493fdd5b707f9a71e4d508ad26",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q3-complete-B", topicId: "cons-1-2", conceptId: "extension-garden-room-complete-b",
-    section: "B", questionRef: "2015 HL Q3 — complete, option B",
-    stem: "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
-    questionText: "Discuss in detail two advantages of the attached extension at A. Discuss in detail two disadvantages of the attached extension at A. Discuss in detail two advantages of the detached garden room at B. Discuss in detail two disadvantages of the detached garden room at B. Select option B: a detached, free-standing garden room at B. Using notes and freehand sketches, show a proposed external design for the attractive study/family space. For option B, a detached, free-standing garden room at B, use notes and freehand sketches to show the proposed internal layout of the 5.0 m × 3.0 m study/family space. For option B, a detached, free-standing garden room at B, show in your design how the proposed space links with the surrounding rear garden. Discuss two advantages of designing a space that links with the rear garden.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-a-A-a-A-advantages-response", kind: "criterion", verbatim: "conserves space in the rear garden of the house", marks: 6, contextNote: "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include conserving rear-garden space; reducing external-wall area and associated insulation costs; easier connection to existing services; flexible division of the combined living space; and closer family/social connection. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    { id: "a-a-A-a-A-disadvantages-response", kind: "criterion", verbatim: "can reduce the natural lighting and ventilation of the kitchen/dining room", marks: 6, contextNote: "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include reducing existing kitchen/dining light or ventilation; disturbing the original layout or views; losing quieter separate rooms; demanding weatherproof and insulated junctions; and structural support needed for a larger opening in the existing external wall. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    { id: "a-a-B-a-B-advantages-response", kind: "criterion", verbatim: "minimises disruption during construction", marks: 6, contextNote: "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include less disruption; retaining light and views from existing rooms; a separate quiet/private study; more freedom in the new room design; and a direct relationship with the garden. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    { id: "a-a-B-a-B-disadvantages-response", kind: "criterion", verbatim: "larger area of external envelope", marks: 6, contextNote: "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include a larger exposed envelope and associated insulation/heating costs; moving outdoors to reach the room; loss of garden space to paths; separating family living space; and extra access or service-connection costs. The scheme heading 3(b)(ii) on PDF page 10 is a numbering error: these are the disadvantages for part(a), option B. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.", permittedMarks: [0,3,6] },
-    { id: "b-B-b-B-external-design-response", kind: "criterion", verbatim: "Elevation", marks: 12, contextNote: "External-design notes 6 and sketches 6 (12 total). Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. The source suggests a low roof/elevation where appropriate to avoid overshadowing the enclosed garden, south-facing windows for daylight, and an attractive design appropriate to the house. Explain the proposed form and openings and illustrate them in an external sketch. Other thoughtful modern or traditional designs are accepted: a flat roof, a particular material or every feature in the sample is not compulsory. These marks do not include the separately marked internal layout or garden connection.", permittedMarks: [0,6,12] },
-    { id: "b-B-b-B-internal-layout-response", kind: "criterion", verbatim: "the space is divided to provide some privacy and a sense of seclusion", marks: 12, contextNote: "Internal-layout notes 6 and sketches 6 (12 total). Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. The source describes a small desk/office area for individual work and a larger communal area, with separation giving privacy; a convertible couch is an optional example, not a required bedroom. Show a workable internal arrangement for the stated study and occasional family uses, with access and circulation related to the original plan. The source plan is illustrative: do not require its exact furniture arrangement or copy it at the expense of the printed dimensions. External form and garden-link marks are awarded in their own tasks.", permittedMarks: [0,6,12] },
-    { id: "b-B-b-B-garden-link-response", kind: "criterion", verbatim: "Link to rear garden", marks: 6, contextNote: "Award the published shared 6-mark criterion for showing how the proposed space links to the rear garden. Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. Source examples include double, folding or sliding doors, glazing for garden views, and a patio giving outdoor seating and access. Show a coherent indoor/outdoor relationship appropriate to the selected location; the example doors/windows are alternatives and are not all mandatory. A covered connection to the house can be relevant to option B, but it does not replace the requested link to the garden. No separate notes/sketch split is printed for this 6-mark criterion.", permittedMarks: [0,6] },
-    { id: "c-response", kind: "criterion", verbatim: "increases use made of the valuable space outside", marks: 6, contextNote: "Award two distinct advantages at 3 marks each (6 total). The source examples include closer contact with nature, awareness of seasonal change, enjoyment of the senses, educational opportunities for children, access to natural light, more use of outside space, and a greater sense of spaciousness. Discuss the relationship between the new room and garden. Merely naming a door type describes a design feature, not its advantage. The menu is open; other relevant, well-argued benefits are accepted.", permittedMarks: [0,3,6] },
-    ],
-    taskGroups: [{"label":"a","sourceCardId":"cons-2015-hl-q3-a","marks":24,"rowIds":["a-a-A-a-A-advantages-response","a-a-A-a-A-disadvantages-response","a-a-B-a-B-advantages-response","a-a-B-a-B-disadvantages-response"]},{"label":"b-B","sourceCardId":"cons-2015-hl-q3-b-B","marks":30,"rowIds":["b-B-b-B-external-design-response","b-B-b-B-internal-layout-response","b-B-b-B-garden-link-response"]},{"label":"c","sourceCardId":"cons-2015-hl-q3-c","marks":6,"rowIds":["c-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 3",
-          "title": "Attached extension or detached garden room",
-          "pages": [
-                1,
-                2
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q3-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
-          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q3-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-scheme.png",
-          "srcHash": "1b29ab493fdd5b707f9a71e4d508ad26",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-a-local-character", topicId: "cons-1-1", conceptId: "vernacular-refurbishment-a-local-character",
-    section: "B", questionRef: "2015 HL Q4(a) — respect for local character",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of respect for local character in the eco-refurbishment of the old vernacular house.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "vernacular architecture evolved from its location", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain the relationship between the house, local materials and labour, simple traditional scale/detailing, neighbouring cottages and landscape. Plan the work to conserve that historical character and the unity of the row while improving the building fabric and reducing energy demand. The source recommends a considered approach specific to the building and conservation advice; it does not require every example or one universal refurbishment formula.", permittedMarks: [0,10] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-a-breathable-structure", topicId: "cons-6-6", conceptId: "vernacular-refurbishment-a-breathable-structure",
-    section: "B", questionRef: "2015 HL Q4(a) — breathable structure",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of a breathable structure in the eco-refurbishment of the old vernacular house.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "a breathable structure allows the gradual movement of moisture", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain how suitable permeable fabric and hygroscopic materials allow moisture movement and drying rather than trapping water in traditional walls and roof, reducing surface/interstitial condensation risk. Discuss compatible insulation, lime-based finishes and the permeability of the whole assembly. The scheme lists natural or mineral material examples; they are not a required fixed list. Its separate roof alternative includes a designed warm-side vapour-control layer, so do not turn the first sample into a universal prohibition of every vapour-control layer or confuse moisture transport with uncontrolled air leakage.", permittedMarks: [0,10] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-a-reuse-materials", topicId: "cons-1-1", conceptId: "vernacular-refurbishment-a-reuse-materials",
-    section: "B", questionRef: "2015 HL Q4(a) — reuse of materials",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of reuse of materials in the eco-refurbishment of the old vernacular house.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "careful examination of complete house to determine what materials can be reused", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Survey the building and retain serviceable original fabric. Inspect timber for decay, repair only defective portions with compatible timber and profiles, number/store slates and floorboards for reinstatement, and use matching reclaimed material where appropriate. Explain how reuse maintains historical integrity and appearance and reduces unnecessary replacement. Repair examples are illustrative; do not require demolition or replacement of sound fabric.", permittedMarks: [0,10] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-b-roof", topicId: "cons-3-8", conceptId: "vernacular-refurbishment-b-roof",
-    section: "B", questionRef: "2015 HL Q4(b) — roof",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Using notes and freehand sketches, describe the steps in upgrading the un-insulated traditional cut roof with natural slates while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 20,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "the repair is to retain as far as possible the historic fabric of the roof", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey and retain sound roof timbers; number and store slates, repair decayed rafter ends/wallplate where necessary using compatible material, and reinstate original or matching slates, fascia and soffit profiles. Show an appropriate insulated roof assembly, membrane and ventilation/moisture strategy with continuity at the wallplate. The source gives breathable insulation arrangements and, separately, a warm-side continuous vapour barrier with service cavity; these are alternative coherent designs, not cumulative mandatory layers. Do not require every illustrated insulation type or claim that a vapour barrier is forbidden in all designs. The source panel retains both examples.", permittedMarks: [0,10,20] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-roof",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof.png",
-          "srcHash": "e6df0697de8d9f0286f433f183cb8445",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-b-windows", topicId: "cons-3-5", conceptId: "vernacular-refurbishment-b-windows",
-    section: "B", questionRef: "2015 HL Q4(b) — sliding sash windows",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Using notes and freehand sketches, describe the steps in upgrading the single-glazed softwood sliding sash windows while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 20,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "maintenance and repair of historic windows is recommended before replacement", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey, record and number the sashes/glass; remove and repair damaged timber with compatible species/profiles, prepare and repaint, and reinstate serviceable glazing. Check cords, pulleys and ironmongery. Explain and sketch a suitable thermal/draught improvement: appropriate sash seals and glazing where rebates permit, or discreet internally fitted secondary glazing. Preserve glazing-bar proportions, profiles and external appearance. The scheme presents repair, re-glazing and secondary glazing as alternatives; do not require all options simultaneously or default to replacing sound historic windows. Where secondary glazing is chosen, retain a coherent moisture/ventilation arrangement.", permittedMarks: [0,10,20] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-windows",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-windows.png",
-          "srcHash": "8083724d9c494b1560f6877d0493f273",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): windows. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-b-floor", topicId: "cons-4-2", conceptId: "vernacular-refurbishment-b-floor",
-    section: "B", questionRef: "2015 HL Q4(b) — suspended timber floor",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Using notes and freehand sketches, describe the steps in upgrading the un-insulated suspended timber floor while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 20,
-    rows: [
-    { id: "response", kind: "criterion", verbatim: "check sub-floor ventilation", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Establish the floor’s historical significance, record and number boards/skirtings, lift and store them carefully, inspect joists/boards and repair decayed parts. Preserve sub-floor ventilation. Show supported insulation fitted between joists without gaps, an appropriate breathable layer and reinstatement of the numbered boards/skirting. The source shows alternative insulation supports/assemblies, including netting for soft insulation or battens with board support; these are examples, not additional choose-one card routes. Retain the suspended floor rather than substituting an unrelated solid concrete floor. Source page 14 also contains adjacent window examples; only the floor treatment earns this task’s marks.", permittedMarks: [0,10,20] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-floor",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-floor.png",
-          "srcHash": "7d899cdf04ebe55ccf0cc90854653da4",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): floor. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-a-local-character-and-breathable-structure", topicId: "cons-1-1", conceptId: "vernacular-refurbishment-a-local-character-and-breathable-structure",
-    section: "B", questionRef: "2015 HL Q4(a) — local-character and breathable-structure",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of respect for local character in the eco-refurbishment of the old vernacular house. Discuss the importance of a breathable structure in the eco-refurbishment of the old vernacular house.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 20,
-    rows: [
-    { id: "a-local-character-response", kind: "criterion", verbatim: "vernacular architecture evolved from its location", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain the relationship between the house, local materials and labour, simple traditional scale/detailing, neighbouring cottages and landscape. Plan the work to conserve that historical character and the unity of the row while improving the building fabric and reducing energy demand. The source recommends a considered approach specific to the building and conservation advice; it does not require every example or one universal refurbishment formula.", permittedMarks: [0,10] },
-    { id: "a-breathable-structure-response", kind: "criterion", verbatim: "a breathable structure allows the gradual movement of moisture", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain how suitable permeable fabric and hygroscopic materials allow moisture movement and drying rather than trapping water in traditional walls and roof, reducing surface/interstitial condensation risk. Discuss compatible insulation, lime-based finishes and the permeability of the whole assembly. The scheme lists natural or mineral material examples; they are not a required fixed list. Its separate roof alternative includes a designed warm-side vapour-control layer, so do not turn the first sample into a universal prohibition of every vapour-control layer or confuse moisture transport with uncontrolled air leakage.", permittedMarks: [0,10] },
-    ],
-    taskGroups: [{"label":"a-local-character","sourceCardId":"cons-2015-hl-q4-a-local-character","marks":10,"rowIds":["a-local-character-response"]},{"label":"a-breathable-structure","sourceCardId":"cons-2015-hl-q4-a-breathable-structure","marks":10,"rowIds":["a-breathable-structure-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-a-local-character-and-reuse-materials", topicId: "cons-1-1", conceptId: "vernacular-refurbishment-a-local-character-and-reuse-materials",
-    section: "B", questionRef: "2015 HL Q4(a) — local-character and reuse-materials",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of respect for local character in the eco-refurbishment of the old vernacular house. Discuss the importance of reuse of materials in the eco-refurbishment of the old vernacular house.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 20,
-    rows: [
-    { id: "a-local-character-response", kind: "criterion", verbatim: "vernacular architecture evolved from its location", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain the relationship between the house, local materials and labour, simple traditional scale/detailing, neighbouring cottages and landscape. Plan the work to conserve that historical character and the unity of the row while improving the building fabric and reducing energy demand. The source recommends a considered approach specific to the building and conservation advice; it does not require every example or one universal refurbishment formula.", permittedMarks: [0,10] },
-    { id: "a-reuse-materials-response", kind: "criterion", verbatim: "careful examination of complete house to determine what materials can be reused", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Survey the building and retain serviceable original fabric. Inspect timber for decay, repair only defective portions with compatible timber and profiles, number/store slates and floorboards for reinstatement, and use matching reclaimed material where appropriate. Explain how reuse maintains historical integrity and appearance and reduces unnecessary replacement. Repair examples are illustrative; do not require demolition or replacement of sound fabric.", permittedMarks: [0,10] },
-    ],
-    taskGroups: [{"label":"a-local-character","sourceCardId":"cons-2015-hl-q4-a-local-character","marks":10,"rowIds":["a-local-character-response"]},{"label":"a-reuse-materials","sourceCardId":"cons-2015-hl-q4-a-reuse-materials","marks":10,"rowIds":["a-reuse-materials-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-a-breathable-structure-and-reuse-materials", topicId: "cons-6-6", conceptId: "vernacular-refurbishment-a-breathable-structure-and-reuse-materials",
-    section: "B", questionRef: "2015 HL Q4(a) — breathable-structure and reuse-materials",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of a breathable structure in the eco-refurbishment of the old vernacular house. Discuss the importance of reuse of materials in the eco-refurbishment of the old vernacular house.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 20,
-    rows: [
-    { id: "a-breathable-structure-response", kind: "criterion", verbatim: "a breathable structure allows the gradual movement of moisture", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain how suitable permeable fabric and hygroscopic materials allow moisture movement and drying rather than trapping water in traditional walls and roof, reducing surface/interstitial condensation risk. Discuss compatible insulation, lime-based finishes and the permeability of the whole assembly. The scheme lists natural or mineral material examples; they are not a required fixed list. Its separate roof alternative includes a designed warm-side vapour-control layer, so do not turn the first sample into a universal prohibition of every vapour-control layer or confuse moisture transport with uncontrolled air leakage.", permittedMarks: [0,10] },
-    { id: "a-reuse-materials-response", kind: "criterion", verbatim: "careful examination of complete house to determine what materials can be reused", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Survey the building and retain serviceable original fabric. Inspect timber for decay, repair only defective portions with compatible timber and profiles, number/store slates and floorboards for reinstatement, and use matching reclaimed material where appropriate. Explain how reuse maintains historical integrity and appearance and reduces unnecessary replacement. Repair examples are illustrative; do not require demolition or replacement of sound fabric.", permittedMarks: [0,10] },
-    ],
-    taskGroups: [{"label":"a-breathable-structure","sourceCardId":"cons-2015-hl-q4-a-breathable-structure","marks":10,"rowIds":["a-breathable-structure-response"]},{"label":"a-reuse-materials","sourceCardId":"cons-2015-hl-q4-a-reuse-materials","marks":10,"rowIds":["a-reuse-materials-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-b-roof-and-windows", topicId: "cons-3-8", conceptId: "vernacular-refurbishment-b-roof-and-windows",
-    section: "B", questionRef: "2015 HL Q4(b) — roof and windows",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Using notes and freehand sketches, describe the steps in upgrading the un-insulated traditional cut roof with natural slates while respecting the original cottage appearance and character. Using notes and freehand sketches, describe the steps in upgrading the single-glazed softwood sliding sash windows while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 40,
-    rows: [
-    { id: "b-roof-response", kind: "criterion", verbatim: "the repair is to retain as far as possible the historic fabric of the roof", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey and retain sound roof timbers; number and store slates, repair decayed rafter ends/wallplate where necessary using compatible material, and reinstate original or matching slates, fascia and soffit profiles. Show an appropriate insulated roof assembly, membrane and ventilation/moisture strategy with continuity at the wallplate. The source gives breathable insulation arrangements and, separately, a warm-side continuous vapour barrier with service cavity; these are alternative coherent designs, not cumulative mandatory layers. Do not require every illustrated insulation type or claim that a vapour barrier is forbidden in all designs. The source panel retains both examples.", permittedMarks: [0,10,20] },
-    { id: "b-windows-response", kind: "criterion", verbatim: "maintenance and repair of historic windows is recommended before replacement", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey, record and number the sashes/glass; remove and repair damaged timber with compatible species/profiles, prepare and repaint, and reinstate serviceable glazing. Check cords, pulleys and ironmongery. Explain and sketch a suitable thermal/draught improvement: appropriate sash seals and glazing where rebates permit, or discreet internally fitted secondary glazing. Preserve glazing-bar proportions, profiles and external appearance. The scheme presents repair, re-glazing and secondary glazing as alternatives; do not require all options simultaneously or default to replacing sound historic windows. Where secondary glazing is chosen, retain a coherent moisture/ventilation arrangement.", permittedMarks: [0,10,20] },
-    ],
-    taskGroups: [{"label":"b-roof","sourceCardId":"cons-2015-hl-q4-b-roof","marks":20,"rowIds":["b-roof-response"]},{"label":"b-windows","sourceCardId":"cons-2015-hl-q4-b-windows","marks":20,"rowIds":["b-windows-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-roof-windows",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-windows.png",
-          "srcHash": "01f00367358eb31fb586863aa2feeb82",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof windows. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-b-roof-and-floor", topicId: "cons-3-8", conceptId: "vernacular-refurbishment-b-roof-and-floor",
-    section: "B", questionRef: "2015 HL Q4(b) — roof and floor",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Using notes and freehand sketches, describe the steps in upgrading the un-insulated traditional cut roof with natural slates while respecting the original cottage appearance and character. Using notes and freehand sketches, describe the steps in upgrading the un-insulated suspended timber floor while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 40,
-    rows: [
-    { id: "b-roof-response", kind: "criterion", verbatim: "the repair is to retain as far as possible the historic fabric of the roof", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey and retain sound roof timbers; number and store slates, repair decayed rafter ends/wallplate where necessary using compatible material, and reinstate original or matching slates, fascia and soffit profiles. Show an appropriate insulated roof assembly, membrane and ventilation/moisture strategy with continuity at the wallplate. The source gives breathable insulation arrangements and, separately, a warm-side continuous vapour barrier with service cavity; these are alternative coherent designs, not cumulative mandatory layers. Do not require every illustrated insulation type or claim that a vapour barrier is forbidden in all designs. The source panel retains both examples.", permittedMarks: [0,10,20] },
-    { id: "b-floor-response", kind: "criterion", verbatim: "check sub-floor ventilation", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Establish the floor’s historical significance, record and number boards/skirtings, lift and store them carefully, inspect joists/boards and repair decayed parts. Preserve sub-floor ventilation. Show supported insulation fitted between joists without gaps, an appropriate breathable layer and reinstatement of the numbered boards/skirting. The source shows alternative insulation supports/assemblies, including netting for soft insulation or battens with board support; these are examples, not additional choose-one card routes. Retain the suspended floor rather than substituting an unrelated solid concrete floor. Source page 14 also contains adjacent window examples; only the floor treatment earns this task’s marks.", permittedMarks: [0,10,20] },
-    ],
-    taskGroups: [{"label":"b-roof","sourceCardId":"cons-2015-hl-q4-b-roof","marks":20,"rowIds":["b-roof-response"]},{"label":"b-floor","sourceCardId":"cons-2015-hl-q4-b-floor","marks":20,"rowIds":["b-floor-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-roof-floor",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-floor.png",
-          "srcHash": "73aa35ec72d3e4f761656d3937440adc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof floor. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-b-windows-and-floor", topicId: "cons-3-5", conceptId: "vernacular-refurbishment-b-windows-and-floor",
-    section: "B", questionRef: "2015 HL Q4(b) — windows and floor",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Using notes and freehand sketches, describe the steps in upgrading the single-glazed softwood sliding sash windows while respecting the original cottage appearance and character. Using notes and freehand sketches, describe the steps in upgrading the un-insulated suspended timber floor while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 40,
-    rows: [
-    { id: "b-windows-response", kind: "criterion", verbatim: "maintenance and repair of historic windows is recommended before replacement", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey, record and number the sashes/glass; remove and repair damaged timber with compatible species/profiles, prepare and repaint, and reinstate serviceable glazing. Check cords, pulleys and ironmongery. Explain and sketch a suitable thermal/draught improvement: appropriate sash seals and glazing where rebates permit, or discreet internally fitted secondary glazing. Preserve glazing-bar proportions, profiles and external appearance. The scheme presents repair, re-glazing and secondary glazing as alternatives; do not require all options simultaneously or default to replacing sound historic windows. Where secondary glazing is chosen, retain a coherent moisture/ventilation arrangement.", permittedMarks: [0,10,20] },
-    { id: "b-floor-response", kind: "criterion", verbatim: "check sub-floor ventilation", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Establish the floor’s historical significance, record and number boards/skirtings, lift and store them carefully, inspect joists/boards and repair decayed parts. Preserve sub-floor ventilation. Show supported insulation fitted between joists without gaps, an appropriate breathable layer and reinstatement of the numbered boards/skirting. The source shows alternative insulation supports/assemblies, including netting for soft insulation or battens with board support; these are examples, not additional choose-one card routes. Retain the suspended floor rather than substituting an unrelated solid concrete floor. Source page 14 also contains adjacent window examples; only the floor treatment earns this task’s marks.", permittedMarks: [0,10,20] },
-    ],
-    taskGroups: [{"label":"b-windows","sourceCardId":"cons-2015-hl-q4-b-windows","marks":20,"rowIds":["b-windows-response"]},{"label":"b-floor","sourceCardId":"cons-2015-hl-q4-b-floor","marks":20,"rowIds":["b-floor-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-windows",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-windows.png",
-          "srcHash": "8083724d9c494b1560f6877d0493f273",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): windows. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-complete-local-character-and-breathable-structure--roof-and-windows", topicId: "cons-1-1", conceptId: "vernacular-refurbishment-complete-local-character-and-breathable-structure--roof-and-windows",
-    section: "B", questionRef: "2015 HL Q4 — complete: local-character and breathable-structure / roof and windows",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of respect for local character in the eco-refurbishment of the old vernacular house. Discuss the importance of a breathable structure in the eco-refurbishment of the old vernacular house. Using notes and freehand sketches, describe the steps in upgrading the un-insulated traditional cut roof with natural slates while respecting the original cottage appearance and character. Using notes and freehand sketches, describe the steps in upgrading the single-glazed softwood sliding sash windows while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-local-character-and-breathable-structure-a-local-character-response", kind: "criterion", verbatim: "vernacular architecture evolved from its location", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain the relationship between the house, local materials and labour, simple traditional scale/detailing, neighbouring cottages and landscape. Plan the work to conserve that historical character and the unity of the row while improving the building fabric and reducing energy demand. The source recommends a considered approach specific to the building and conservation advice; it does not require every example or one universal refurbishment formula.", permittedMarks: [0,10] },
-    { id: "a-local-character-and-breathable-structure-a-breathable-structure-response", kind: "criterion", verbatim: "a breathable structure allows the gradual movement of moisture", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain how suitable permeable fabric and hygroscopic materials allow moisture movement and drying rather than trapping water in traditional walls and roof, reducing surface/interstitial condensation risk. Discuss compatible insulation, lime-based finishes and the permeability of the whole assembly. The scheme lists natural or mineral material examples; they are not a required fixed list. Its separate roof alternative includes a designed warm-side vapour-control layer, so do not turn the first sample into a universal prohibition of every vapour-control layer or confuse moisture transport with uncontrolled air leakage.", permittedMarks: [0,10] },
-    { id: "b-roof-and-windows-b-roof-response", kind: "criterion", verbatim: "the repair is to retain as far as possible the historic fabric of the roof", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey and retain sound roof timbers; number and store slates, repair decayed rafter ends/wallplate where necessary using compatible material, and reinstate original or matching slates, fascia and soffit profiles. Show an appropriate insulated roof assembly, membrane and ventilation/moisture strategy with continuity at the wallplate. The source gives breathable insulation arrangements and, separately, a warm-side continuous vapour barrier with service cavity; these are alternative coherent designs, not cumulative mandatory layers. Do not require every illustrated insulation type or claim that a vapour barrier is forbidden in all designs. The source panel retains both examples.", permittedMarks: [0,10,20] },
-    { id: "b-roof-and-windows-b-windows-response", kind: "criterion", verbatim: "maintenance and repair of historic windows is recommended before replacement", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey, record and number the sashes/glass; remove and repair damaged timber with compatible species/profiles, prepare and repaint, and reinstate serviceable glazing. Check cords, pulleys and ironmongery. Explain and sketch a suitable thermal/draught improvement: appropriate sash seals and glazing where rebates permit, or discreet internally fitted secondary glazing. Preserve glazing-bar proportions, profiles and external appearance. The scheme presents repair, re-glazing and secondary glazing as alternatives; do not require all options simultaneously or default to replacing sound historic windows. Where secondary glazing is chosen, retain a coherent moisture/ventilation arrangement.", permittedMarks: [0,10,20] },
-    ],
-    taskGroups: [{"label":"a-local-character-and-breathable-structure","sourceCardId":"cons-2015-hl-q4-a-local-character-and-breathable-structure","marks":20,"rowIds":["a-local-character-and-breathable-structure-a-local-character-response","a-local-character-and-breathable-structure-a-breathable-structure-response"]},{"label":"b-roof-and-windows","sourceCardId":"cons-2015-hl-q4-b-roof-and-windows","marks":40,"rowIds":["b-roof-and-windows-b-roof-response","b-roof-and-windows-b-windows-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-roof-windows",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-windows.png",
-          "srcHash": "01f00367358eb31fb586863aa2feeb82",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof windows. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-complete-local-character-and-breathable-structure--roof-and-floor", topicId: "cons-1-1", conceptId: "vernacular-refurbishment-complete-local-character-and-breathable-structure--roof-and-floor",
-    section: "B", questionRef: "2015 HL Q4 — complete: local-character and breathable-structure / roof and floor",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of respect for local character in the eco-refurbishment of the old vernacular house. Discuss the importance of a breathable structure in the eco-refurbishment of the old vernacular house. Using notes and freehand sketches, describe the steps in upgrading the un-insulated traditional cut roof with natural slates while respecting the original cottage appearance and character. Using notes and freehand sketches, describe the steps in upgrading the un-insulated suspended timber floor while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-local-character-and-breathable-structure-a-local-character-response", kind: "criterion", verbatim: "vernacular architecture evolved from its location", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain the relationship between the house, local materials and labour, simple traditional scale/detailing, neighbouring cottages and landscape. Plan the work to conserve that historical character and the unity of the row while improving the building fabric and reducing energy demand. The source recommends a considered approach specific to the building and conservation advice; it does not require every example or one universal refurbishment formula.", permittedMarks: [0,10] },
-    { id: "a-local-character-and-breathable-structure-a-breathable-structure-response", kind: "criterion", verbatim: "a breathable structure allows the gradual movement of moisture", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain how suitable permeable fabric and hygroscopic materials allow moisture movement and drying rather than trapping water in traditional walls and roof, reducing surface/interstitial condensation risk. Discuss compatible insulation, lime-based finishes and the permeability of the whole assembly. The scheme lists natural or mineral material examples; they are not a required fixed list. Its separate roof alternative includes a designed warm-side vapour-control layer, so do not turn the first sample into a universal prohibition of every vapour-control layer or confuse moisture transport with uncontrolled air leakage.", permittedMarks: [0,10] },
-    { id: "b-roof-and-floor-b-roof-response", kind: "criterion", verbatim: "the repair is to retain as far as possible the historic fabric of the roof", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey and retain sound roof timbers; number and store slates, repair decayed rafter ends/wallplate where necessary using compatible material, and reinstate original or matching slates, fascia and soffit profiles. Show an appropriate insulated roof assembly, membrane and ventilation/moisture strategy with continuity at the wallplate. The source gives breathable insulation arrangements and, separately, a warm-side continuous vapour barrier with service cavity; these are alternative coherent designs, not cumulative mandatory layers. Do not require every illustrated insulation type or claim that a vapour barrier is forbidden in all designs. The source panel retains both examples.", permittedMarks: [0,10,20] },
-    { id: "b-roof-and-floor-b-floor-response", kind: "criterion", verbatim: "check sub-floor ventilation", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Establish the floor’s historical significance, record and number boards/skirtings, lift and store them carefully, inspect joists/boards and repair decayed parts. Preserve sub-floor ventilation. Show supported insulation fitted between joists without gaps, an appropriate breathable layer and reinstatement of the numbered boards/skirting. The source shows alternative insulation supports/assemblies, including netting for soft insulation or battens with board support; these are examples, not additional choose-one card routes. Retain the suspended floor rather than substituting an unrelated solid concrete floor. Source page 14 also contains adjacent window examples; only the floor treatment earns this task’s marks.", permittedMarks: [0,10,20] },
-    ],
-    taskGroups: [{"label":"a-local-character-and-breathable-structure","sourceCardId":"cons-2015-hl-q4-a-local-character-and-breathable-structure","marks":20,"rowIds":["a-local-character-and-breathable-structure-a-local-character-response","a-local-character-and-breathable-structure-a-breathable-structure-response"]},{"label":"b-roof-and-floor","sourceCardId":"cons-2015-hl-q4-b-roof-and-floor","marks":40,"rowIds":["b-roof-and-floor-b-roof-response","b-roof-and-floor-b-floor-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-roof-floor",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-floor.png",
-          "srcHash": "73aa35ec72d3e4f761656d3937440adc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof floor. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-complete-local-character-and-breathable-structure--windows-and-floor", topicId: "cons-1-1", conceptId: "vernacular-refurbishment-complete-local-character-and-breathable-structure--windows-and-floor",
-    section: "B", questionRef: "2015 HL Q4 — complete: local-character and breathable-structure / windows and floor",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of respect for local character in the eco-refurbishment of the old vernacular house. Discuss the importance of a breathable structure in the eco-refurbishment of the old vernacular house. Using notes and freehand sketches, describe the steps in upgrading the single-glazed softwood sliding sash windows while respecting the original cottage appearance and character. Using notes and freehand sketches, describe the steps in upgrading the un-insulated suspended timber floor while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-local-character-and-breathable-structure-a-local-character-response", kind: "criterion", verbatim: "vernacular architecture evolved from its location", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain the relationship between the house, local materials and labour, simple traditional scale/detailing, neighbouring cottages and landscape. Plan the work to conserve that historical character and the unity of the row while improving the building fabric and reducing energy demand. The source recommends a considered approach specific to the building and conservation advice; it does not require every example or one universal refurbishment formula.", permittedMarks: [0,10] },
-    { id: "a-local-character-and-breathable-structure-a-breathable-structure-response", kind: "criterion", verbatim: "a breathable structure allows the gradual movement of moisture", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain how suitable permeable fabric and hygroscopic materials allow moisture movement and drying rather than trapping water in traditional walls and roof, reducing surface/interstitial condensation risk. Discuss compatible insulation, lime-based finishes and the permeability of the whole assembly. The scheme lists natural or mineral material examples; they are not a required fixed list. Its separate roof alternative includes a designed warm-side vapour-control layer, so do not turn the first sample into a universal prohibition of every vapour-control layer or confuse moisture transport with uncontrolled air leakage.", permittedMarks: [0,10] },
-    { id: "b-windows-and-floor-b-windows-response", kind: "criterion", verbatim: "maintenance and repair of historic windows is recommended before replacement", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey, record and number the sashes/glass; remove and repair damaged timber with compatible species/profiles, prepare and repaint, and reinstate serviceable glazing. Check cords, pulleys and ironmongery. Explain and sketch a suitable thermal/draught improvement: appropriate sash seals and glazing where rebates permit, or discreet internally fitted secondary glazing. Preserve glazing-bar proportions, profiles and external appearance. The scheme presents repair, re-glazing and secondary glazing as alternatives; do not require all options simultaneously or default to replacing sound historic windows. Where secondary glazing is chosen, retain a coherent moisture/ventilation arrangement.", permittedMarks: [0,10,20] },
-    { id: "b-windows-and-floor-b-floor-response", kind: "criterion", verbatim: "check sub-floor ventilation", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Establish the floor’s historical significance, record and number boards/skirtings, lift and store them carefully, inspect joists/boards and repair decayed parts. Preserve sub-floor ventilation. Show supported insulation fitted between joists without gaps, an appropriate breathable layer and reinstatement of the numbered boards/skirting. The source shows alternative insulation supports/assemblies, including netting for soft insulation or battens with board support; these are examples, not additional choose-one card routes. Retain the suspended floor rather than substituting an unrelated solid concrete floor. Source page 14 also contains adjacent window examples; only the floor treatment earns this task’s marks.", permittedMarks: [0,10,20] },
-    ],
-    taskGroups: [{"label":"a-local-character-and-breathable-structure","sourceCardId":"cons-2015-hl-q4-a-local-character-and-breathable-structure","marks":20,"rowIds":["a-local-character-and-breathable-structure-a-local-character-response","a-local-character-and-breathable-structure-a-breathable-structure-response"]},{"label":"b-windows-and-floor","sourceCardId":"cons-2015-hl-q4-b-windows-and-floor","marks":40,"rowIds":["b-windows-and-floor-b-windows-response","b-windows-and-floor-b-floor-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-windows",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-windows.png",
-          "srcHash": "8083724d9c494b1560f6877d0493f273",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): windows. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-complete-local-character-and-reuse-materials--roof-and-windows", topicId: "cons-1-1", conceptId: "vernacular-refurbishment-complete-local-character-and-reuse-materials--roof-and-windows",
-    section: "B", questionRef: "2015 HL Q4 — complete: local-character and reuse-materials / roof and windows",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of respect for local character in the eco-refurbishment of the old vernacular house. Discuss the importance of reuse of materials in the eco-refurbishment of the old vernacular house. Using notes and freehand sketches, describe the steps in upgrading the un-insulated traditional cut roof with natural slates while respecting the original cottage appearance and character. Using notes and freehand sketches, describe the steps in upgrading the single-glazed softwood sliding sash windows while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-local-character-and-reuse-materials-a-local-character-response", kind: "criterion", verbatim: "vernacular architecture evolved from its location", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain the relationship between the house, local materials and labour, simple traditional scale/detailing, neighbouring cottages and landscape. Plan the work to conserve that historical character and the unity of the row while improving the building fabric and reducing energy demand. The source recommends a considered approach specific to the building and conservation advice; it does not require every example or one universal refurbishment formula.", permittedMarks: [0,10] },
-    { id: "a-local-character-and-reuse-materials-a-reuse-materials-response", kind: "criterion", verbatim: "careful examination of complete house to determine what materials can be reused", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Survey the building and retain serviceable original fabric. Inspect timber for decay, repair only defective portions with compatible timber and profiles, number/store slates and floorboards for reinstatement, and use matching reclaimed material where appropriate. Explain how reuse maintains historical integrity and appearance and reduces unnecessary replacement. Repair examples are illustrative; do not require demolition or replacement of sound fabric.", permittedMarks: [0,10] },
-    { id: "b-roof-and-windows-b-roof-response", kind: "criterion", verbatim: "the repair is to retain as far as possible the historic fabric of the roof", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey and retain sound roof timbers; number and store slates, repair decayed rafter ends/wallplate where necessary using compatible material, and reinstate original or matching slates, fascia and soffit profiles. Show an appropriate insulated roof assembly, membrane and ventilation/moisture strategy with continuity at the wallplate. The source gives breathable insulation arrangements and, separately, a warm-side continuous vapour barrier with service cavity; these are alternative coherent designs, not cumulative mandatory layers. Do not require every illustrated insulation type or claim that a vapour barrier is forbidden in all designs. The source panel retains both examples.", permittedMarks: [0,10,20] },
-    { id: "b-roof-and-windows-b-windows-response", kind: "criterion", verbatim: "maintenance and repair of historic windows is recommended before replacement", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey, record and number the sashes/glass; remove and repair damaged timber with compatible species/profiles, prepare and repaint, and reinstate serviceable glazing. Check cords, pulleys and ironmongery. Explain and sketch a suitable thermal/draught improvement: appropriate sash seals and glazing where rebates permit, or discreet internally fitted secondary glazing. Preserve glazing-bar proportions, profiles and external appearance. The scheme presents repair, re-glazing and secondary glazing as alternatives; do not require all options simultaneously or default to replacing sound historic windows. Where secondary glazing is chosen, retain a coherent moisture/ventilation arrangement.", permittedMarks: [0,10,20] },
-    ],
-    taskGroups: [{"label":"a-local-character-and-reuse-materials","sourceCardId":"cons-2015-hl-q4-a-local-character-and-reuse-materials","marks":20,"rowIds":["a-local-character-and-reuse-materials-a-local-character-response","a-local-character-and-reuse-materials-a-reuse-materials-response"]},{"label":"b-roof-and-windows","sourceCardId":"cons-2015-hl-q4-b-roof-and-windows","marks":40,"rowIds":["b-roof-and-windows-b-roof-response","b-roof-and-windows-b-windows-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-roof-windows",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-windows.png",
-          "srcHash": "01f00367358eb31fb586863aa2feeb82",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof windows. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-complete-local-character-and-reuse-materials--roof-and-floor", topicId: "cons-1-1", conceptId: "vernacular-refurbishment-complete-local-character-and-reuse-materials--roof-and-floor",
-    section: "B", questionRef: "2015 HL Q4 — complete: local-character and reuse-materials / roof and floor",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of respect for local character in the eco-refurbishment of the old vernacular house. Discuss the importance of reuse of materials in the eco-refurbishment of the old vernacular house. Using notes and freehand sketches, describe the steps in upgrading the un-insulated traditional cut roof with natural slates while respecting the original cottage appearance and character. Using notes and freehand sketches, describe the steps in upgrading the un-insulated suspended timber floor while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-local-character-and-reuse-materials-a-local-character-response", kind: "criterion", verbatim: "vernacular architecture evolved from its location", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain the relationship between the house, local materials and labour, simple traditional scale/detailing, neighbouring cottages and landscape. Plan the work to conserve that historical character and the unity of the row while improving the building fabric and reducing energy demand. The source recommends a considered approach specific to the building and conservation advice; it does not require every example or one universal refurbishment formula.", permittedMarks: [0,10] },
-    { id: "a-local-character-and-reuse-materials-a-reuse-materials-response", kind: "criterion", verbatim: "careful examination of complete house to determine what materials can be reused", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Survey the building and retain serviceable original fabric. Inspect timber for decay, repair only defective portions with compatible timber and profiles, number/store slates and floorboards for reinstatement, and use matching reclaimed material where appropriate. Explain how reuse maintains historical integrity and appearance and reduces unnecessary replacement. Repair examples are illustrative; do not require demolition or replacement of sound fabric.", permittedMarks: [0,10] },
-    { id: "b-roof-and-floor-b-roof-response", kind: "criterion", verbatim: "the repair is to retain as far as possible the historic fabric of the roof", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey and retain sound roof timbers; number and store slates, repair decayed rafter ends/wallplate where necessary using compatible material, and reinstate original or matching slates, fascia and soffit profiles. Show an appropriate insulated roof assembly, membrane and ventilation/moisture strategy with continuity at the wallplate. The source gives breathable insulation arrangements and, separately, a warm-side continuous vapour barrier with service cavity; these are alternative coherent designs, not cumulative mandatory layers. Do not require every illustrated insulation type or claim that a vapour barrier is forbidden in all designs. The source panel retains both examples.", permittedMarks: [0,10,20] },
-    { id: "b-roof-and-floor-b-floor-response", kind: "criterion", verbatim: "check sub-floor ventilation", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Establish the floor’s historical significance, record and number boards/skirtings, lift and store them carefully, inspect joists/boards and repair decayed parts. Preserve sub-floor ventilation. Show supported insulation fitted between joists without gaps, an appropriate breathable layer and reinstatement of the numbered boards/skirting. The source shows alternative insulation supports/assemblies, including netting for soft insulation or battens with board support; these are examples, not additional choose-one card routes. Retain the suspended floor rather than substituting an unrelated solid concrete floor. Source page 14 also contains adjacent window examples; only the floor treatment earns this task’s marks.", permittedMarks: [0,10,20] },
-    ],
-    taskGroups: [{"label":"a-local-character-and-reuse-materials","sourceCardId":"cons-2015-hl-q4-a-local-character-and-reuse-materials","marks":20,"rowIds":["a-local-character-and-reuse-materials-a-local-character-response","a-local-character-and-reuse-materials-a-reuse-materials-response"]},{"label":"b-roof-and-floor","sourceCardId":"cons-2015-hl-q4-b-roof-and-floor","marks":40,"rowIds":["b-roof-and-floor-b-roof-response","b-roof-and-floor-b-floor-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-roof-floor",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-floor.png",
-          "srcHash": "73aa35ec72d3e4f761656d3937440adc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof floor. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-complete-local-character-and-reuse-materials--windows-and-floor", topicId: "cons-1-1", conceptId: "vernacular-refurbishment-complete-local-character-and-reuse-materials--windows-and-floor",
-    section: "B", questionRef: "2015 HL Q4 — complete: local-character and reuse-materials / windows and floor",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of respect for local character in the eco-refurbishment of the old vernacular house. Discuss the importance of reuse of materials in the eco-refurbishment of the old vernacular house. Using notes and freehand sketches, describe the steps in upgrading the single-glazed softwood sliding sash windows while respecting the original cottage appearance and character. Using notes and freehand sketches, describe the steps in upgrading the un-insulated suspended timber floor while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-local-character-and-reuse-materials-a-local-character-response", kind: "criterion", verbatim: "vernacular architecture evolved from its location", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain the relationship between the house, local materials and labour, simple traditional scale/detailing, neighbouring cottages and landscape. Plan the work to conserve that historical character and the unity of the row while improving the building fabric and reducing energy demand. The source recommends a considered approach specific to the building and conservation advice; it does not require every example or one universal refurbishment formula.", permittedMarks: [0,10] },
-    { id: "a-local-character-and-reuse-materials-a-reuse-materials-response", kind: "criterion", verbatim: "careful examination of complete house to determine what materials can be reused", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Survey the building and retain serviceable original fabric. Inspect timber for decay, repair only defective portions with compatible timber and profiles, number/store slates and floorboards for reinstatement, and use matching reclaimed material where appropriate. Explain how reuse maintains historical integrity and appearance and reduces unnecessary replacement. Repair examples are illustrative; do not require demolition or replacement of sound fabric.", permittedMarks: [0,10] },
-    { id: "b-windows-and-floor-b-windows-response", kind: "criterion", verbatim: "maintenance and repair of historic windows is recommended before replacement", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey, record and number the sashes/glass; remove and repair damaged timber with compatible species/profiles, prepare and repaint, and reinstate serviceable glazing. Check cords, pulleys and ironmongery. Explain and sketch a suitable thermal/draught improvement: appropriate sash seals and glazing where rebates permit, or discreet internally fitted secondary glazing. Preserve glazing-bar proportions, profiles and external appearance. The scheme presents repair, re-glazing and secondary glazing as alternatives; do not require all options simultaneously or default to replacing sound historic windows. Where secondary glazing is chosen, retain a coherent moisture/ventilation arrangement.", permittedMarks: [0,10,20] },
-    { id: "b-windows-and-floor-b-floor-response", kind: "criterion", verbatim: "check sub-floor ventilation", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Establish the floor’s historical significance, record and number boards/skirtings, lift and store them carefully, inspect joists/boards and repair decayed parts. Preserve sub-floor ventilation. Show supported insulation fitted between joists without gaps, an appropriate breathable layer and reinstatement of the numbered boards/skirting. The source shows alternative insulation supports/assemblies, including netting for soft insulation or battens with board support; these are examples, not additional choose-one card routes. Retain the suspended floor rather than substituting an unrelated solid concrete floor. Source page 14 also contains adjacent window examples; only the floor treatment earns this task’s marks.", permittedMarks: [0,10,20] },
-    ],
-    taskGroups: [{"label":"a-local-character-and-reuse-materials","sourceCardId":"cons-2015-hl-q4-a-local-character-and-reuse-materials","marks":20,"rowIds":["a-local-character-and-reuse-materials-a-local-character-response","a-local-character-and-reuse-materials-a-reuse-materials-response"]},{"label":"b-windows-and-floor","sourceCardId":"cons-2015-hl-q4-b-windows-and-floor","marks":40,"rowIds":["b-windows-and-floor-b-windows-response","b-windows-and-floor-b-floor-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-windows",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-windows.png",
-          "srcHash": "8083724d9c494b1560f6877d0493f273",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): windows. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-complete-breathable-structure-and-reuse-materials--roof-and-windows", topicId: "cons-6-6", conceptId: "vernacular-refurbishment-complete-breathable-structure-and-reuse-materials--roof-and-windows",
-    section: "B", questionRef: "2015 HL Q4 — complete: breathable-structure and reuse-materials / roof and windows",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of a breathable structure in the eco-refurbishment of the old vernacular house. Discuss the importance of reuse of materials in the eco-refurbishment of the old vernacular house. Using notes and freehand sketches, describe the steps in upgrading the un-insulated traditional cut roof with natural slates while respecting the original cottage appearance and character. Using notes and freehand sketches, describe the steps in upgrading the single-glazed softwood sliding sash windows while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-breathable-structure-and-reuse-materials-a-breathable-structure-response", kind: "criterion", verbatim: "a breathable structure allows the gradual movement of moisture", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain how suitable permeable fabric and hygroscopic materials allow moisture movement and drying rather than trapping water in traditional walls and roof, reducing surface/interstitial condensation risk. Discuss compatible insulation, lime-based finishes and the permeability of the whole assembly. The scheme lists natural or mineral material examples; they are not a required fixed list. Its separate roof alternative includes a designed warm-side vapour-control layer, so do not turn the first sample into a universal prohibition of every vapour-control layer or confuse moisture transport with uncontrolled air leakage.", permittedMarks: [0,10] },
-    { id: "a-breathable-structure-and-reuse-materials-a-reuse-materials-response", kind: "criterion", verbatim: "careful examination of complete house to determine what materials can be reused", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Survey the building and retain serviceable original fabric. Inspect timber for decay, repair only defective portions with compatible timber and profiles, number/store slates and floorboards for reinstatement, and use matching reclaimed material where appropriate. Explain how reuse maintains historical integrity and appearance and reduces unnecessary replacement. Repair examples are illustrative; do not require demolition or replacement of sound fabric.", permittedMarks: [0,10] },
-    { id: "b-roof-and-windows-b-roof-response", kind: "criterion", verbatim: "the repair is to retain as far as possible the historic fabric of the roof", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey and retain sound roof timbers; number and store slates, repair decayed rafter ends/wallplate where necessary using compatible material, and reinstate original or matching slates, fascia and soffit profiles. Show an appropriate insulated roof assembly, membrane and ventilation/moisture strategy with continuity at the wallplate. The source gives breathable insulation arrangements and, separately, a warm-side continuous vapour barrier with service cavity; these are alternative coherent designs, not cumulative mandatory layers. Do not require every illustrated insulation type or claim that a vapour barrier is forbidden in all designs. The source panel retains both examples.", permittedMarks: [0,10,20] },
-    { id: "b-roof-and-windows-b-windows-response", kind: "criterion", verbatim: "maintenance and repair of historic windows is recommended before replacement", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey, record and number the sashes/glass; remove and repair damaged timber with compatible species/profiles, prepare and repaint, and reinstate serviceable glazing. Check cords, pulleys and ironmongery. Explain and sketch a suitable thermal/draught improvement: appropriate sash seals and glazing where rebates permit, or discreet internally fitted secondary glazing. Preserve glazing-bar proportions, profiles and external appearance. The scheme presents repair, re-glazing and secondary glazing as alternatives; do not require all options simultaneously or default to replacing sound historic windows. Where secondary glazing is chosen, retain a coherent moisture/ventilation arrangement.", permittedMarks: [0,10,20] },
-    ],
-    taskGroups: [{"label":"a-breathable-structure-and-reuse-materials","sourceCardId":"cons-2015-hl-q4-a-breathable-structure-and-reuse-materials","marks":20,"rowIds":["a-breathable-structure-and-reuse-materials-a-breathable-structure-response","a-breathable-structure-and-reuse-materials-a-reuse-materials-response"]},{"label":"b-roof-and-windows","sourceCardId":"cons-2015-hl-q4-b-roof-and-windows","marks":40,"rowIds":["b-roof-and-windows-b-roof-response","b-roof-and-windows-b-windows-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-roof-windows",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-windows.png",
-          "srcHash": "01f00367358eb31fb586863aa2feeb82",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof windows. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-complete-breathable-structure-and-reuse-materials--roof-and-floor", topicId: "cons-6-6", conceptId: "vernacular-refurbishment-complete-breathable-structure-and-reuse-materials--roof-and-floor",
-    section: "B", questionRef: "2015 HL Q4 — complete: breathable-structure and reuse-materials / roof and floor",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of a breathable structure in the eco-refurbishment of the old vernacular house. Discuss the importance of reuse of materials in the eco-refurbishment of the old vernacular house. Using notes and freehand sketches, describe the steps in upgrading the un-insulated traditional cut roof with natural slates while respecting the original cottage appearance and character. Using notes and freehand sketches, describe the steps in upgrading the un-insulated suspended timber floor while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-breathable-structure-and-reuse-materials-a-breathable-structure-response", kind: "criterion", verbatim: "a breathable structure allows the gradual movement of moisture", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain how suitable permeable fabric and hygroscopic materials allow moisture movement and drying rather than trapping water in traditional walls and roof, reducing surface/interstitial condensation risk. Discuss compatible insulation, lime-based finishes and the permeability of the whole assembly. The scheme lists natural or mineral material examples; they are not a required fixed list. Its separate roof alternative includes a designed warm-side vapour-control layer, so do not turn the first sample into a universal prohibition of every vapour-control layer or confuse moisture transport with uncontrolled air leakage.", permittedMarks: [0,10] },
-    { id: "a-breathable-structure-and-reuse-materials-a-reuse-materials-response", kind: "criterion", verbatim: "careful examination of complete house to determine what materials can be reused", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Survey the building and retain serviceable original fabric. Inspect timber for decay, repair only defective portions with compatible timber and profiles, number/store slates and floorboards for reinstatement, and use matching reclaimed material where appropriate. Explain how reuse maintains historical integrity and appearance and reduces unnecessary replacement. Repair examples are illustrative; do not require demolition or replacement of sound fabric.", permittedMarks: [0,10] },
-    { id: "b-roof-and-floor-b-roof-response", kind: "criterion", verbatim: "the repair is to retain as far as possible the historic fabric of the roof", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey and retain sound roof timbers; number and store slates, repair decayed rafter ends/wallplate where necessary using compatible material, and reinstate original or matching slates, fascia and soffit profiles. Show an appropriate insulated roof assembly, membrane and ventilation/moisture strategy with continuity at the wallplate. The source gives breathable insulation arrangements and, separately, a warm-side continuous vapour barrier with service cavity; these are alternative coherent designs, not cumulative mandatory layers. Do not require every illustrated insulation type or claim that a vapour barrier is forbidden in all designs. The source panel retains both examples.", permittedMarks: [0,10,20] },
-    { id: "b-roof-and-floor-b-floor-response", kind: "criterion", verbatim: "check sub-floor ventilation", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Establish the floor’s historical significance, record and number boards/skirtings, lift and store them carefully, inspect joists/boards and repair decayed parts. Preserve sub-floor ventilation. Show supported insulation fitted between joists without gaps, an appropriate breathable layer and reinstatement of the numbered boards/skirting. The source shows alternative insulation supports/assemblies, including netting for soft insulation or battens with board support; these are examples, not additional choose-one card routes. Retain the suspended floor rather than substituting an unrelated solid concrete floor. Source page 14 also contains adjacent window examples; only the floor treatment earns this task’s marks.", permittedMarks: [0,10,20] },
-    ],
-    taskGroups: [{"label":"a-breathable-structure-and-reuse-materials","sourceCardId":"cons-2015-hl-q4-a-breathable-structure-and-reuse-materials","marks":20,"rowIds":["a-breathable-structure-and-reuse-materials-a-breathable-structure-response","a-breathable-structure-and-reuse-materials-a-reuse-materials-response"]},{"label":"b-roof-and-floor","sourceCardId":"cons-2015-hl-q4-b-roof-and-floor","marks":40,"rowIds":["b-roof-and-floor-b-roof-response","b-roof-and-floor-b-floor-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-roof-floor",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-floor.png",
-          "srcHash": "73aa35ec72d3e4f761656d3937440adc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof floor. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q4-complete-breathable-structure-and-reuse-materials--windows-and-floor", topicId: "cons-6-6", conceptId: "vernacular-refurbishment-complete-breathable-structure-and-reuse-materials--windows-and-floor",
-    section: "B", questionRef: "2015 HL Q4 — complete: breathable-structure and reuse-materials / windows and floor",
-    stem: "An old house built in the vernacular tradition is to be eco-refurbished. Part (a) selects any TWO of respect for local character, breathable structure and reuse of materials. For part (b), one cottage in the illustrated row of single-storey cottages needs significant refurbishment. The survey finds an un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; and an un-insulated suspended timber floor. Select any TWO of these three areas and use notes and freehand sketches to describe upgrading EACH selected area while respecting the appearance and character of the original cottages. The two selections in (a) and (b) are independent.",
-    questionText: "Discuss the importance of a breathable structure in the eco-refurbishment of the old vernacular house. Discuss the importance of reuse of materials in the eco-refurbishment of the old vernacular house. Using notes and freehand sketches, describe the steps in upgrading the single-glazed softwood sliding sash windows while respecting the original cottage appearance and character. Using notes and freehand sketches, describe the steps in upgrading the un-insulated suspended timber floor while respecting the original cottage appearance and character.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-breathable-structure-and-reuse-materials-a-breathable-structure-response", kind: "criterion", verbatim: "a breathable structure allows the gradual movement of moisture", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Explain how suitable permeable fabric and hygroscopic materials allow moisture movement and drying rather than trapping water in traditional walls and roof, reducing surface/interstitial condensation risk. Discuss compatible insulation, lime-based finishes and the permeability of the whole assembly. The scheme lists natural or mineral material examples; they are not a required fixed list. Its separate roof alternative includes a designed warm-side vapour-control layer, so do not turn the first sample into a universal prohibition of every vapour-control layer or confuse moisture transport with uncontrolled air leakage.", permittedMarks: [0,10] },
-    { id: "a-breathable-structure-and-reuse-materials-a-reuse-materials-response", kind: "criterion", verbatim: "careful examination of complete house to determine what materials can be reused", marks: 10, contextNote: "This is one published 10-mark discussion criterion. The scheme does not divide it into a fixed number of separately marked points; do not invent point-by-point marks. Relevant, developed discussion is required and other relevant information is acceptable. Survey the building and retain serviceable original fabric. Inspect timber for decay, repair only defective portions with compatible timber and profiles, number/store slates and floorboards for reinstatement, and use matching reclaimed material where appropriate. Explain how reuse maintains historical integrity and appearance and reduces unnecessary replacement. Repair examples are illustrative; do not require demolition or replacement of sound fabric.", permittedMarks: [0,10] },
-    { id: "b-windows-and-floor-b-windows-response", kind: "criterion", verbatim: "maintenance and repair of historic windows is recommended before replacement", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Survey, record and number the sashes/glass; remove and repair damaged timber with compatible species/profiles, prepare and repaint, and reinstate serviceable glazing. Check cords, pulleys and ironmongery. Explain and sketch a suitable thermal/draught improvement: appropriate sash seals and glazing where rebates permit, or discreet internally fitted secondary glazing. Preserve glazing-bar proportions, profiles and external appearance. The scheme presents repair, re-glazing and secondary glazing as alternatives; do not require all options simultaneously or default to replacing sound historic windows. Where secondary glazing is chosen, retain a coherent moisture/ventilation arrangement.", permittedMarks: [0,10,20] },
-    { id: "b-windows-and-floor-b-floor-response", kind: "criterion", verbatim: "check sub-floor ventilation", marks: 20, contextNote: "Award notes 10 and freehand sketches 10, total 20, for this selected area. The rubric publishes no finer per-step subdivision. Both the upgrading sequence and respect for the original cottage character are required; a written list alone does not earn sketch marks. Establish the floor’s historical significance, record and number boards/skirtings, lift and store them carefully, inspect joists/boards and repair decayed parts. Preserve sub-floor ventilation. Show supported insulation fitted between joists without gaps, an appropriate breathable layer and reinstatement of the numbered boards/skirting. The source shows alternative insulation supports/assemblies, including netting for soft insulation or battens with board support; these are examples, not additional choose-one card routes. Retain the suspended floor rather than substituting an unrelated solid concrete floor. Source page 14 also contains adjacent window examples; only the floor treatment earns this task’s marks.", permittedMarks: [0,10,20] },
-    ],
-    taskGroups: [{"label":"a-breathable-structure-and-reuse-materials","sourceCardId":"cons-2015-hl-q4-a-breathable-structure-and-reuse-materials","marks":20,"rowIds":["a-breathable-structure-and-reuse-materials-a-breathable-structure-response","a-breathable-structure-and-reuse-materials-a-reuse-materials-response"]},{"label":"b-windows-and-floor","sourceCardId":"cons-2015-hl-q4-b-windows-and-floor","marks":40,"rowIds":["b-windows-and-floor-b-windows-response","b-windows-and-floor-b-floor-response"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 4",
-          "title": "Eco-refurbishment of a vernacular cottage",
-          "pages": [
-                1,
-                3
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original row-of-cottages illustration and both independent choose-two pools are retained. Scheme drawings show acceptable examples; adjacent examples on the source pages are not extra required tasks."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q4-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
-          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q4-windows",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-windows.png",
-          "srcHash": "8083724d9c494b1560f6877d0493f273",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): windows. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -6442,15 +4960,13 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q5-a", topicId: "cons-6-1", conceptId: "wall-heat-loss-a",
     section: "B", questionRef: "2015 HL Q5(a)",
-    stem: "The new house has a concrete-block external wall: 16 mm external render, 100 mm outer concrete-block leaf, a 250 mm cavity FULLY filled with polystyrene bead insulation, 100 mm inner concrete-block leaf and 12 mm internal plaster. Rse = 0.048 and Rsi = 0.122 m²·°C/W. Conductivities in W/(m·°C): render 0.720; both concrete-block leaves 1.440; polystyrene bead 0.031; plaster 0.220. For EACH house, external wall area is 150 m², average inside temperature 20 °C and outside 6 °C. Heating runs 8 hours/day, every day, for 35 weeks/year. Oil costs €0.95/litre and provides 37,350 kJ/litre; 1,000 W = 1 kJ/s. Part (a) calculates the new wall U-value; part (b) calculates annual wall heat-loss cost for BOTH the new house using (a) and an existing house with U = 0.21 W/(m²·°C). Part (c) details water exclusion at the new house’s window head. The existing-house compliance statement belongs to the 2015 paper, not a current regulatory claim.",
-    questionText: "Calculate the U-value of the specified full-fill insulated external wall of the new house, showing the component resistances, total resistance and U-value.",
+    questionText: "Using the following data, calculate the U-value of the external wall of a new dwelling house. The wall is of concrete block construction, with a 250 mm cavity. The cavity is a full-fill insulated cavity, with polystyrene bead insulation as shown. Specification of external wall: external render thickness 16 mm; concrete block outer leaf thickness 100 mm; cavity width 250 mm; concrete block inner leaf thickness 100 mm; internal plaster thickness 12 mm. Thermal data of external wall: resistance of external surface (R) 0.048 m² °C/W; conductivity of external render (k) 0.720 W/m °C; conductivity of concrete blocks (k) 1.440 W/m °C; conductivity of polystyrene bead (k) 0.031 W/m °C; conductivity of internal plaster (k) 0.220 W/m °C; resistance of internal surface (R) 0.122 m² °C/W.",
     tariffModel: {"kind":"fixed"}, totalMarks: 30,
     rows: [
     { id: "method", kind: "criterion", verbatim: "Tabulation / methodology", marks: 3, contextNote: "Use a clear resistance table or equivalent method. Convert layer thicknesses from mm to m; R = thickness/conductivity, add both surface resistances and all five material layers, then U = 1/Rtotal. The rubric heading “Insulated concrete ground floor” is a source error: the paper and the worked solution describe the specified external wall.", permittedMarks: [0,3] },
-    { id: "surfaces", kind: "criterion", verbatim: "External surface resistance", marks: 6, contextNote: "Two separately published checks at 3 marks each. Use the supplied external surface resistance Rse = 0.048 m²·°C/W directly; do not divide it by a thickness or conductivity. Use the supplied internal surface resistance Rsi = 0.122 m²·°C/W directly.", permittedMarks: [0,3,6] },
-    { id: "material-layers", kind: "criterion", verbatim: "Polystyrene bead", marks: 15, contextNote: "Five separately published material-resistance checks at 3 marks each; retain both concrete-block leaves. Rrender = 0.016/0.720 = 0.02222222 m²·°C/W. Router block = 0.100/1.440 = 0.06944444 m²·°C/W. The outer and inner block leaves each contribute their own resistance. Rbead = 0.250/0.031 = 8.06451613 m²·°C/W. The cavity is fully filled: do not add a separate air-cavity resistance. Rinner block = 0.100/1.440 = 0.06944444 m²·°C/W. Include this second leaf as well as the outer leaf. Rplaster = 0.012/0.220 = 0.05454545 m²·°C/W.", permittedMarks: [0,3,6,9,12,15] },
+    { id: "resistances", kind: "criterion", verbatim: "Formulae: R=T/k R=T × r", marks: 21, contextNote: "Seven resistances, 3 each: the five material layers by R = thickness/conductivity, with thicknesses converted from mm to m, and the two given surface resistances. External surface Rse = 0.048 (given; do not divide it by a thickness); external render 0.016/0.720 = 0.02222222; outer concrete-block leaf 0.100/1.440 = 0.06944444; polystyrene bead 0.250/0.031 = 8.06451613 (the cavity is fully filled, so no separate air-cavity resistance); inner concrete-block leaf 0.100/1.440 = 0.06944444 (both leaves count); internal plaster 0.012/0.220 = 0.05454545; internal surface Rsi = 0.122 (given). All in m²·°C/W.", permittedMarks: [0,3,6,9,12,15,18,21] },
     { id: "total-resistance", kind: "criterion", verbatim: "Total resistance", marks: 3, contextNote: "Rtotal = 0.048 + 0.02222222 + 0.06944444 + 8.06451613 + 0.06944444 + 0.05454545 + 0.122 = 8.45017269 m²·°C/W, subject to sensible intermediate rounding.", permittedMarks: [0,3] },
-    { id: "u-value", kind: "criterion", verbatim: "U-value", marks: 3, contextNote: "U = 1/Rtotal = 1/8.45017269 = 0.11834078 W/(m²·°C), approximately 0.1183 W/(m²·°C). The rubric awards 1 mark for the formula alone within this 3-mark criterion, not an additional mark. The remaining criteria stay at their own published 3-mark allocations.", permittedMarks: [0,1,3] },
+    { id: "u-value", kind: "criterion", verbatim: "U-value (1 mark for formula)", marks: 3, contextNote: "U = 1/Rtotal = 1/8.45017269 = 0.11834078 W/(m²·°C), approximately 0.1183 W/(m²·°C). The rubric awards 1 mark for the formula alone within this 3-mark criterion, not an additional mark. The remaining criteria stay at their own published 3-mark allocations.", permittedMarks: [0,1,3] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -6461,7 +4977,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "All dimensions, thermal data, heating schedule and both required house calculations are retained. Arithmetic uses the printed data; the scheme’s incorrect hours annotation and its rounded cost variants are explained in the marking notes."
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.1183 W/m²°C and annual costs of €44.60 (new house) and €79.14 (existing house)."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q5-original",
@@ -6480,8 +4996,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q5-b-new", topicId: "cons-6-3", conceptId: "wall-heat-loss-b-new",
     section: "B", questionRef: "2015 HL Q5(b) — new house",
-    stem: "The new house has a concrete-block external wall: 16 mm external render, 100 mm outer concrete-block leaf, a 250 mm cavity FULLY filled with polystyrene bead insulation, 100 mm inner concrete-block leaf and 12 mm internal plaster. Rse = 0.048 and Rsi = 0.122 m²·°C/W. Conductivities in W/(m·°C): render 0.720; both concrete-block leaves 1.440; polystyrene bead 0.031; plaster 0.220. For EACH house, external wall area is 150 m², average inside temperature 20 °C and outside 6 °C. Heating runs 8 hours/day, every day, for 35 weeks/year. Oil costs €0.95/litre and provides 37,350 kJ/litre; 1,000 W = 1 kJ/s. Part (a) calculates the new wall U-value; part (b) calculates annual wall heat-loss cost for BOTH the new house using (a) and an existing house with U = 0.21 W/(m²·°C). Part (c) details water exclusion at the new house’s window head. The existing-house compliance statement belongs to the 2015 paper, not a current regulatory claim. For separate practice of part (b), the reference answer from part (a) is U = 0.11834078 W/(m²·°C).",
-    questionText: "Calculate the annual cost of heat lost through the external walls of the new house, using the U-value obtained in (a). Use the full thermal and heating data in the stem.",
+    questionText: "Using the U-value obtained at 5(a) and the data given below, calculate the cost of heat lost annually through the external walls of the new house - as specified at 5(a) above. Data for both houses: area of external wall of each house 150 m²; average internal temperature 20 °C; average external temperature 6 °C; heating period 8 hours per day, every day for 35 weeks per annum; cost of oil 95 cent per litre; calorific value of oil 37350 kJ per litre; 1000 watts: 1kJ per second.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "heat-rate", kind: "criterion", verbatim: "Heat loss formula and calculation", marks: 2, contextNote: "Use heat-loss rate = U × A × ΔT, with ΔT = 20 − 6 = 14 °C. For this house, 0.11834078 × 150 × 14 ≈ 248.51563 W (J/s). Use the U-value appropriate to this house; rate alone is not annual energy or cost.", permittedMarks: [0,2] },
@@ -6499,7 +5014,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "All dimensions, thermal data, heating schedule and both required house calculations are retained. Arithmetic uses the printed data; the scheme’s incorrect hours annotation and its rounded cost variants are explained in the marking notes."
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.1183 W/m²°C and annual costs of €44.60 (new house) and €79.14 (existing house)."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q5-original",
@@ -6518,8 +5033,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q5-b-existing", topicId: "cons-6-3", conceptId: "wall-heat-loss-b-existing",
     section: "B", questionRef: "2015 HL Q5(b) — existing house",
-    stem: "The new house has a concrete-block external wall: 16 mm external render, 100 mm outer concrete-block leaf, a 250 mm cavity FULLY filled with polystyrene bead insulation, 100 mm inner concrete-block leaf and 12 mm internal plaster. Rse = 0.048 and Rsi = 0.122 m²·°C/W. Conductivities in W/(m·°C): render 0.720; both concrete-block leaves 1.440; polystyrene bead 0.031; plaster 0.220. For EACH house, external wall area is 150 m², average inside temperature 20 °C and outside 6 °C. Heating runs 8 hours/day, every day, for 35 weeks/year. Oil costs €0.95/litre and provides 37,350 kJ/litre; 1,000 W = 1 kJ/s. Part (a) calculates the new wall U-value; part (b) calculates annual wall heat-loss cost for BOTH the new house using (a) and an existing house with U = 0.21 W/(m²·°C). Part (c) details water exclusion at the new house’s window head. The existing-house compliance statement belongs to the 2015 paper, not a current regulatory claim.",
-    questionText: "Calculate the annual cost of heat lost through the external walls of the existing house, using U = 0.21 W/(m²·°C). Use the full thermal and heating data in the stem.",
+    questionText: "Using the data given below, calculate the cost of heat lost annually through the external walls of an existing house that complies with current Building Regulations, having a U-value of 0.21 W/m² °C for the walls. Data for both houses: area of external wall of each house 150 m²; average internal temperature 20 °C; average external temperature 6 °C; heating period 8 hours per day, every day for 35 weeks per annum; cost of oil 95 cent per litre; calorific value of oil 37350 kJ per litre; 1000 watts: 1kJ per second.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "heat-rate", kind: "criterion", verbatim: "Heat loss calculation", marks: 2, contextNote: "Use heat-loss rate = U × A × ΔT, with ΔT = 20 − 6 = 14 °C. For this house, 0.21 × 150 × 14 ≈ 441 W (J/s). Use the U-value appropriate to this house; rate alone is not annual energy or cost.", permittedMarks: [0,2] },
@@ -6537,7 +5051,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "All dimensions, thermal data, heating schedule and both required house calculations are retained. Arithmetic uses the printed data; the scheme’s incorrect hours annotation and its rounded cost variants are explained in the marking notes."
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.1183 W/m²°C and annual costs of €44.60 (new house) and €79.14 (existing house)."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q5-original",
@@ -6555,9 +5069,8 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q5-b", topicId: "cons-6-3", conceptId: "wall-heat-loss-b",
-    section: "B", questionRef: "2015 HL Q5(b) — both houses",
-    stem: "The new house has a concrete-block external wall: 16 mm external render, 100 mm outer concrete-block leaf, a 250 mm cavity FULLY filled with polystyrene bead insulation, 100 mm inner concrete-block leaf and 12 mm internal plaster. Rse = 0.048 and Rsi = 0.122 m²·°C/W. Conductivities in W/(m·°C): render 0.720; both concrete-block leaves 1.440; polystyrene bead 0.031; plaster 0.220. For EACH house, external wall area is 150 m², average inside temperature 20 °C and outside 6 °C. Heating runs 8 hours/day, every day, for 35 weeks/year. Oil costs €0.95/litre and provides 37,350 kJ/litre; 1,000 W = 1 kJ/s. Part (a) calculates the new wall U-value; part (b) calculates annual wall heat-loss cost for BOTH the new house using (a) and an existing house with U = 0.21 W/(m²·°C). Part (c) details water exclusion at the new house’s window head. The existing-house compliance statement belongs to the 2015 paper, not a current regulatory claim. For separate practice of part (b), the reference answer from part (a) is U = 0.11834078 W/(m²·°C).",
-    questionText: "Calculate the annual cost of heat lost through the external walls of the new house, using the U-value obtained in (a). Use the full thermal and heating data in the stem. Calculate the annual cost of heat lost through the external walls of the existing house, using U = 0.21 W/(m²·°C). Use the full thermal and heating data in the stem.",
+    section: "B", questionRef: "2015 HL Q5(b)",
+    questionText: "Using the U-value obtained at 5(a) and the data given below, calculate the cost of heat lost annually through the external walls of each of the following: the new house - as specified at 5(a) above and an existing house that complies with current Building Regulations, having a U-value of 0.21 W/m² °C for the walls. Data for both houses: area of external wall of each house 150 m²; average internal temperature 20 °C; average external temperature 6 °C; heating period 8 hours per day, every day for 35 weeks per annum; cost of oil 95 cent per litre; calorific value of oil 37350 kJ per litre; 1000 watts: 1kJ per second.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
     { id: "b-new-heat-rate", kind: "criterion", verbatim: "Heat loss formula and calculation", marks: 2, contextNote: "Use heat-loss rate = U × A × ΔT, with ΔT = 20 − 6 = 14 °C. For this house, 0.11834078 × 150 × 14 ≈ 248.51563 W (J/s). Use the U-value appropriate to this house; rate alone is not annual energy or cost.", permittedMarks: [0,2] },
@@ -6571,7 +5084,7 @@ export const CARDS: SecCard[] = [
     { id: "b-existing-oil", kind: "criterion", verbatim: "Litres of oil for one year", marks: 2, contextNote: "Litres = annual energy / 37,350 ≈ 83.31181 litres. This uses the calorific value given in the paper; do not invent an unstated boiler-efficiency factor.", permittedMarks: [0,2] },
     { id: "b-existing-annual-cost", kind: "criterion", verbatim: "Annual cost of heat loss", marks: 2, contextNote: "Cost = litres × €0.95 ≈ €79.14622. Using unrounded values gives €79.15 to the nearest cent. The scheme uses 83.31 litres, giving €79.1445 and its printed €79.14; it also shows a proportional-method result of €79.13 using previously rounded figures. Keep these published variants distinguishable from the direct unrounded result and accept coherent rounding. Alternative direct or proportional methods may earn the equivalent published criteria; do not award the same calculation twice.", permittedMarks: [0,2] },
     ],
-    taskGroups: [{"label":"b-new","sourceCardId":"cons-2015-hl-q5-b-new","marks":10,"rowIds":["b-new-heat-rate","b-new-heating-time","b-new-annual-energy","b-new-oil","b-new-annual-cost"]},{"label":"b-existing","sourceCardId":"cons-2015-hl-q5-b-existing","marks":10,"rowIds":["b-existing-heat-rate","b-existing-heating-time","b-existing-annual-energy","b-existing-oil","b-existing-annual-cost"]}],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q5-b-new","label":"New house","marks":10,"rowIds":["b-new-heat-rate","b-new-heating-time","b-new-annual-energy","b-new-oil","b-new-annual-cost"]},{"sourceCardId":"cons-2015-hl-q5-b-existing","label":"Existing house","marks":10,"rowIds":["b-existing-heat-rate","b-existing-heating-time","b-existing-annual-energy","b-existing-oil","b-existing-annual-cost"]}],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 5",
@@ -6581,7 +5094,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "All dimensions, thermal data, heating schedule and both required house calculations are retained. Arithmetic uses the printed data; the scheme’s incorrect hours annotation and its rounded cost variants are explained in the marking notes."
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.1183 W/m²°C and annual costs of €44.60 (new house) and €79.14 (existing house)."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q5-original",
@@ -6600,8 +5113,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q5-c", topicId: "cons-3-4", conceptId: "wall-heat-loss-c",
     section: "B", questionRef: "2015 HL Q5(c)",
-    stem: "The new house has a concrete-block external wall: 16 mm external render, 100 mm outer concrete-block leaf, a 250 mm cavity FULLY filled with polystyrene bead insulation, 100 mm inner concrete-block leaf and 12 mm internal plaster. Rse = 0.048 and Rsi = 0.122 m²·°C/W. Conductivities in W/(m·°C): render 0.720; both concrete-block leaves 1.440; polystyrene bead 0.031; plaster 0.220. For EACH house, external wall area is 150 m², average inside temperature 20 °C and outside 6 °C. Heating runs 8 hours/day, every day, for 35 weeks/year. Oil costs €0.95/litre and provides 37,350 kJ/litre; 1,000 W = 1 kJ/s. Part (a) calculates the new wall U-value; part (b) calculates annual wall heat-loss cost for BOTH the new house using (a) and an existing house with U = 0.21 W/(m²·°C). Part (c) details water exclusion at the new house’s window head. The existing-house compliance statement belongs to the 2015 paper, not a current regulatory claim.",
-    questionText: "Using notes and freehand sketches, show best-practice design detailing to prevent water ingress at the window head in the specified full-fill insulated external wall of the new house.",
+    questionText: "Using notes and freehand sketches, show best practice design detailing to prevent the ingress of water at the window head in the wall of the new house specified at 5(a) above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "annotations", kind: "criterion", verbatim: "Notes / annotations", marks: 5, contextNote: "Annotate a coherent water-excluding head detail for the specified wall. The original model shows the DPC/cavity-tray arrangement above the lintel/head, outer and inner wall leaves, full-fill insulation, lintel support, window-frame junction and a weathered/dripped outer head. Explain how penetrating water is intercepted and directed outward rather than onto the frame or inner leaf. Other relevant detailing is accepted; do not treat both sample drawings as two compulsory answers or split these 5 marks into an invented list of individual one-mark items.", permittedMarks: [0,5] },
@@ -6616,7 +5128,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "All dimensions, thermal data, heating schedule and both required house calculations are retained. Arithmetic uses the printed data; the scheme’s incorrect hours annotation and its rounded cost variants are explained in the marking notes."
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.1183 W/m²°C and annual costs of €44.60 (new house) and €79.14 (existing house)."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q5-original",
@@ -6644,15 +5156,13 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q5-complete", topicId: "cons-6-1", conceptId: "wall-heat-loss-complete",
     section: "B", questionRef: "2015 HL Q5 — complete",
-    stem: "The new house has a concrete-block external wall: 16 mm external render, 100 mm outer concrete-block leaf, a 250 mm cavity FULLY filled with polystyrene bead insulation, 100 mm inner concrete-block leaf and 12 mm internal plaster. Rse = 0.048 and Rsi = 0.122 m²·°C/W. Conductivities in W/(m·°C): render 0.720; both concrete-block leaves 1.440; polystyrene bead 0.031; plaster 0.220. For EACH house, external wall area is 150 m², average inside temperature 20 °C and outside 6 °C. Heating runs 8 hours/day, every day, for 35 weeks/year. Oil costs €0.95/litre and provides 37,350 kJ/litre; 1,000 W = 1 kJ/s. Part (a) calculates the new wall U-value; part (b) calculates annual wall heat-loss cost for BOTH the new house using (a) and an existing house with U = 0.21 W/(m²·°C). Part (c) details water exclusion at the new house’s window head. The existing-house compliance statement belongs to the 2015 paper, not a current regulatory claim.",
-    questionText: "Calculate the U-value of the specified full-fill insulated external wall of the new house, showing the component resistances, total resistance and U-value. Calculate the annual cost of heat lost through the external walls of the new house, using the U-value obtained in (a). Use the full thermal and heating data in the stem. Calculate the annual cost of heat lost through the external walls of the existing house, using U = 0.21 W/(m²·°C). Use the full thermal and heating data in the stem. Using notes and freehand sketches, show best-practice design detailing to prevent water ingress at the window head in the specified full-fill insulated external wall of the new house.",
+    questionText: "(a) Using the following data, calculate the U-value of the external wall of a new dwelling house. The wall is of concrete block construction, with a 250 mm cavity. The cavity is a full-fill insulated cavity, with polystyrene bead insulation as shown. Specification of external wall: external render thickness 16 mm; concrete block outer leaf thickness 100 mm; cavity width 250 mm; concrete block inner leaf thickness 100 mm; internal plaster thickness 12 mm. Thermal data of external wall: resistance of external surface (R) 0.048 m² °C/W; conductivity of external render (k) 0.720 W/m °C; conductivity of concrete blocks (k) 1.440 W/m °C; conductivity of polystyrene bead (k) 0.031 W/m °C; conductivity of internal plaster (k) 0.220 W/m °C; resistance of internal surface (R) 0.122 m² °C/W. (b) Using the U-value obtained at 5(a) and the data given below, calculate the cost of heat lost annually through the external walls of each of the following: the new house - as specified at 5(a) above and an existing house that complies with current Building Regulations, having a U-value of 0.21 W/m² °C for the walls. Data for both houses: area of external wall of each house 150 m²; average internal temperature 20 °C; average external temperature 6 °C; heating period 8 hours per day, every day for 35 weeks per annum; cost of oil 95 cent per litre; calorific value of oil 37350 kJ per litre; 1000 watts: 1kJ per second. (c) Using notes and freehand sketches, show best practice design detailing to prevent the ingress of water at the window head in the wall of the new house specified at 5(a) above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 60,
     rows: [
     { id: "a-method", kind: "criterion", verbatim: "Tabulation / methodology", marks: 3, contextNote: "Use a clear resistance table or equivalent method. Convert layer thicknesses from mm to m; R = thickness/conductivity, add both surface resistances and all five material layers, then U = 1/Rtotal. The rubric heading “Insulated concrete ground floor” is a source error: the paper and the worked solution describe the specified external wall.", permittedMarks: [0,3] },
-    { id: "a-surfaces", kind: "criterion", verbatim: "External surface resistance", marks: 6, contextNote: "Two separately published checks at 3 marks each. Use the supplied external surface resistance Rse = 0.048 m²·°C/W directly; do not divide it by a thickness or conductivity. Use the supplied internal surface resistance Rsi = 0.122 m²·°C/W directly.", permittedMarks: [0,3,6] },
-    { id: "a-material-layers", kind: "criterion", verbatim: "Polystyrene bead", marks: 15, contextNote: "Five separately published material-resistance checks at 3 marks each; retain both concrete-block leaves. Rrender = 0.016/0.720 = 0.02222222 m²·°C/W. Router block = 0.100/1.440 = 0.06944444 m²·°C/W. The outer and inner block leaves each contribute their own resistance. Rbead = 0.250/0.031 = 8.06451613 m²·°C/W. The cavity is fully filled: do not add a separate air-cavity resistance. Rinner block = 0.100/1.440 = 0.06944444 m²·°C/W. Include this second leaf as well as the outer leaf. Rplaster = 0.012/0.220 = 0.05454545 m²·°C/W.", permittedMarks: [0,3,6,9,12,15] },
+    { id: "a-resistances", kind: "criterion", verbatim: "Formulae: R=T/k R=T × r", marks: 21, contextNote: "Seven resistances, 3 each: the five material layers by R = thickness/conductivity, with thicknesses converted from mm to m, and the two given surface resistances. External surface Rse = 0.048 (given; do not divide it by a thickness); external render 0.016/0.720 = 0.02222222; outer concrete-block leaf 0.100/1.440 = 0.06944444; polystyrene bead 0.250/0.031 = 8.06451613 (the cavity is fully filled, so no separate air-cavity resistance); inner concrete-block leaf 0.100/1.440 = 0.06944444 (both leaves count); internal plaster 0.012/0.220 = 0.05454545; internal surface Rsi = 0.122 (given). All in m²·°C/W.", permittedMarks: [0,3,6,9,12,15,18,21] },
     { id: "a-total-resistance", kind: "criterion", verbatim: "Total resistance", marks: 3, contextNote: "Rtotal = 0.048 + 0.02222222 + 0.06944444 + 8.06451613 + 0.06944444 + 0.05454545 + 0.122 = 8.45017269 m²·°C/W, subject to sensible intermediate rounding.", permittedMarks: [0,3] },
-    { id: "a-u-value", kind: "criterion", verbatim: "U-value", marks: 3, contextNote: "U = 1/Rtotal = 1/8.45017269 = 0.11834078 W/(m²·°C), approximately 0.1183 W/(m²·°C). The rubric awards 1 mark for the formula alone within this 3-mark criterion, not an additional mark. The remaining criteria stay at their own published 3-mark allocations.", permittedMarks: [0,1,3] },
+    { id: "a-u-value", kind: "criterion", verbatim: "U-value (1 mark for formula)", marks: 3, contextNote: "U = 1/Rtotal = 1/8.45017269 = 0.11834078 W/(m²·°C), approximately 0.1183 W/(m²·°C). The rubric awards 1 mark for the formula alone within this 3-mark criterion, not an additional mark. The remaining criteria stay at their own published 3-mark allocations.", permittedMarks: [0,1,3] },
     { id: "b-new-heat-rate", kind: "criterion", verbatim: "Heat loss formula and calculation", marks: 2, contextNote: "Use heat-loss rate = U × A × ΔT, with ΔT = 20 − 6 = 14 °C. For this house, 0.11834078 × 150 × 14 ≈ 248.51563 W (J/s). Use the U-value appropriate to this house; rate alone is not annual energy or cost.", permittedMarks: [0,2] },
     { id: "b-new-heating-time", kind: "criterion", verbatim: "Heating duration for one year", marks: 2, contextNote: "8 × 7 × 35 = 1,960 hours = 7,056,000 seconds. The worked scheme prints “3,157 hours” beside the correct seconds; that parenthetical hours figure is an error. Follow the paper’s schedule and the correct seconds, not 3,157 hours.", permittedMarks: [0,2] },
     { id: "b-new-annual-energy", kind: "criterion", verbatim: "kJ calculation for one year", marks: 2, contextNote: "Annual wall heat loss = heat-loss rate × 7,056,000 / 1,000 ≈ 1,753,526.29 kJ. The factor 1,000 converts J to kJ; keep watts, seconds and the oil calorific value in consistent units.", permittedMarks: [0,2] },
@@ -6666,7 +5176,7 @@ export const CARDS: SecCard[] = [
     { id: "c-annotations", kind: "criterion", verbatim: "Notes / annotations", marks: 5, contextNote: "Annotate a coherent water-excluding head detail for the specified wall. The original model shows the DPC/cavity-tray arrangement above the lintel/head, outer and inner wall leaves, full-fill insulation, lintel support, window-frame junction and a weathered/dripped outer head. Explain how penetrating water is intercepted and directed outward rather than onto the frame or inner leaf. Other relevant detailing is accepted; do not treat both sample drawings as two compulsory answers or split these 5 marks into an invented list of individual one-mark items.", permittedMarks: [0,5] },
     { id: "c-sketches", kind: "criterion", verbatim: "Sketches", marks: 5, contextNote: "Draw the window-head construction so the water-excluding route and its relationship to lintel, wall cavity, insulation and frame are clear. The two source sketches illustrate acceptable head details, not a fixed choose-one question. Preserve the printed wall construction and show the proposed detail rather than a generic unrelated window drawing.", permittedMarks: [0,5] },
     ],
-    taskGroups: [{"label":"a","sourceCardId":"cons-2015-hl-q5-a","marks":30,"rowIds":["a-method","a-surfaces","a-material-layers","a-total-resistance","a-u-value"]},{"label":"b-new","sourceCardId":"cons-2015-hl-q5-b-new","marks":10,"rowIds":["b-new-heat-rate","b-new-heating-time","b-new-annual-energy","b-new-oil","b-new-annual-cost"]},{"label":"b-existing","sourceCardId":"cons-2015-hl-q5-b-existing","marks":10,"rowIds":["b-existing-heat-rate","b-existing-heating-time","b-existing-annual-energy","b-existing-oil","b-existing-annual-cost"]},{"label":"c","sourceCardId":"cons-2015-hl-q5-c","marks":10,"rowIds":["c-annotations","c-sketches"]}],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q5-a","label":"a","marks":30,"rowIds":["a-method","a-resistances","a-total-resistance","a-u-value"]},{"sourceCardId":"cons-2015-hl-q5-b-new","label":"b — new house","marks":10,"rowIds":["b-new-heat-rate","b-new-heating-time","b-new-annual-energy","b-new-oil","b-new-annual-cost"]},{"sourceCardId":"cons-2015-hl-q5-b-existing","label":"b — existing house","marks":10,"rowIds":["b-existing-heat-rate","b-existing-heating-time","b-existing-annual-energy","b-existing-oil","b-existing-annual-cost"]},{"sourceCardId":"cons-2015-hl-q5-c","label":"c","marks":10,"rowIds":["c-annotations","c-sketches"]}],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 5",
@@ -6676,7 +5186,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "All dimensions, thermal data, heating schedule and both required house calculations are retained. Arithmetic uses the printed data; the scheme’s incorrect hours annotation and its rounded cost variants are explained in the marking notes."
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.1183 W/m²°C and annual costs of €44.60 (new house) and €79.14 (existing house)."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q5-original",
@@ -6704,13 +5214,13 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q6-a", topicId: "cons-1-2", conceptId: "low-impact-design-a",
     section: "B", questionRef: "2015 HL Q6(a)",
-    stem: "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
-    questionText: "Using notes and freehand sketches, discuss three distinct features of the shown house design that ensure low environmental impact.",
+    stem: "The elevation and ground floor plan of a house are shown. The house has three bedrooms and a bathroom upstairs. The external walls are of timber frame construction with a rendered concrete block outer leaf. The house is designed to maximise solar energy, as shown, and to have low environmental impact.",
+    questionText: "Using notes and freehand sketches, discuss three features of the design that ensure that the house has low environmental impact.",
     tariffModel: {"kind":"fixed"}, totalMarks: 30,
     rows: [
-    { id: "feature-1", kind: "criterion", verbatim: "Low environmental impact – features of house", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
-    { id: "feature-2", kind: "criterion", verbatim: "Low environmental impact – features of house", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
-    { id: "feature-3", kind: "criterion", verbatim: "Low environmental impact – features of house", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
+    { id: "feature-1", kind: "criterion", verbatim: "Design feature 1", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
+    { id: "feature-2", kind: "criterion", verbatim: "Design feature 2", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
+    { id: "feature-3", kind: "criterion", verbatim: "Design feature 3", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -6721,7 +5231,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
+          "presentationNote": "Original elevation and plan retained. Part (b) chooses any two of three printed items, each keeping its own 10 marks. Features in (a) are open; the scheme lists typical examples."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q6-original",
@@ -6737,135 +5247,6 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-compact.png",
           "srcHash": "21a891a67648826f60cb93914678acfc",
           "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): compact. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q6-b-compact-form", topicId: "cons-1-2", conceptId: "low-impact-design-b-compact-form",
-    section: "B", questionRef: "2015 HL Q6(b) — compact form",
-    stem: "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
-    questionText: "Using notes and freehand sketches, discuss the importance of compact form in designing a house with low environmental impact.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "principle", kind: "criterion", verbatim: "reduced external surface area minimizes heat loss through the outer envelope", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain that an efficient form can reduce external envelope area for useful accommodation, reducing heat loss and materials needed for the envelope, land take and visual impact. Illustrate the relationship between form, plan and envelope, using the source house where appropriate. Compare like accommodation: compactness does not by itself prove that every house has a smaller internal volume. The source sketch illustrates the plan; it is not a required exact plan to copy.", permittedMarks: [0,5,10] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 6",
-          "title": "Low environmental impact house",
-          "pages": [
-                1,
-                4
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q6-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-original.png",
-          "srcHash": "3f74361759cfb9ad4690c4bc07954c19",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q6-compact",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-compact.png",
-          "srcHash": "21a891a67648826f60cb93914678acfc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): compact. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q6-b-flexible-design", topicId: "cons-1-2", conceptId: "low-impact-design-b-flexible-design",
-    section: "B", questionRef: "2015 HL Q6(b) — flexible design",
-    stem: "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
-    questionText: "Using notes and freehand sketches, discuss the importance of flexible design in designing a house with low environmental impact.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "principle", kind: "criterion", verbatim: "dwelling can respond, over time, to the changes of lifestyle", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how an adaptable layout accommodates changing users and needs without major rebuilding or replacement, extending the useful life of the house and conserving resources. Illustrate a relevant arrangement, such as a room usable as office or occasional bedroom, adaptable bathroom/access provision, or a changeable internal division. Relate the sketch to the original plan and retain structural sense. The source’s example removing a hallway division is illustrative, not an instruction to remove an arbitrary load-bearing wall.", permittedMarks: [0,5,10] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 6",
-          "title": "Low environmental impact house",
-          "pages": [
-                1,
-                4
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q6-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-original.png",
-          "srcHash": "3f74361759cfb9ad4690c4bc07954c19",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q6-flexible-maintenance",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-flexible-maintenance.png",
-          "srcHash": "407da66aeb9e2a564484378607847e89",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): flexible maintenance. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q6-b-low-maintenance", topicId: "cons-1-2", conceptId: "low-impact-design-b-low-maintenance",
-    section: "B", questionRef: "2015 HL Q6(b) — low maintenance",
-    stem: "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
-    questionText: "Using notes and freehand sketches, discuss the importance of low maintenance in designing a house with low environmental impact.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "principle", kind: "criterion", verbatim: "reduces the use of energy and materials over the lifetime of the dwelling", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how durable materials, robust construction and maintainable details reduce recurring material/energy inputs, delay replacement and help retain the building’s environmental performance and appearance. Illustrate a suitable detail or design feature and explain its lifetime benefit. Low maintenance does not mean no inspection or upkeep. The adjacent source landscape drawing is an example, not the only acceptable sketch.", permittedMarks: [0,5,10] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 6",
-          "title": "Low environmental impact house",
-          "pages": [
-                1,
-                4
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q6-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-original.png",
-          "srcHash": "3f74361759cfb9ad4690c4bc07954c19",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q6-flexible-maintenance",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-flexible-maintenance.png",
-          "srcHash": "407da66aeb9e2a564484378607847e89",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): flexible maintenance. These are sample accepted designs, not extra required choices.",
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
           "solution": true,
           "lettersVisible": []
@@ -6878,7 +5259,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q6-c", topicId: "cons-1-2", conceptId: "low-impact-design-c",
     section: "B", questionRef: "2015 HL Q6(c)",
-    stem: "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+    stem: "The elevation and ground floor plan of a house are shown. The house has three bedrooms and a bathroom upstairs. The external walls are of timber frame construction with a rendered concrete block outer leaf. The house is designed to maximise solar energy, as shown, and to have low environmental impact.",
     questionText: "Discuss in detail the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -6893,7 +5274,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
+          "presentationNote": "Original elevation and plan retained. Part (b) chooses any two of three printed items, each keeping its own 10 marks. Features in (a) are open; the scheme lists typical examples."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q6-original",
@@ -6903,288 +5284,6 @@ export const CARDS: SecCard[] = [
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
           "includesPrompt": true
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q6-b-compact-form-and-flexible-design", topicId: "cons-1-2", conceptId: "low-impact-design-b-compact-form-and-flexible-design",
-    section: "B", questionRef: "2015 HL Q6(b) — compact form and flexible design",
-    stem: "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
-    questionText: "Using notes and freehand sketches, discuss the importance of compact form in designing a house with low environmental impact. Using notes and freehand sketches, discuss the importance of flexible design in designing a house with low environmental impact.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 20,
-    rows: [
-    { id: "b-compact-form-principle", kind: "criterion", verbatim: "reduced external surface area minimizes heat loss through the outer envelope", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain that an efficient form can reduce external envelope area for useful accommodation, reducing heat loss and materials needed for the envelope, land take and visual impact. Illustrate the relationship between form, plan and envelope, using the source house where appropriate. Compare like accommodation: compactness does not by itself prove that every house has a smaller internal volume. The source sketch illustrates the plan; it is not a required exact plan to copy.", permittedMarks: [0,5,10] },
-    { id: "b-flexible-design-principle", kind: "criterion", verbatim: "dwelling can respond, over time, to the changes of lifestyle", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how an adaptable layout accommodates changing users and needs without major rebuilding or replacement, extending the useful life of the house and conserving resources. Illustrate a relevant arrangement, such as a room usable as office or occasional bedroom, adaptable bathroom/access provision, or a changeable internal division. Relate the sketch to the original plan and retain structural sense. The source’s example removing a hallway division is illustrative, not an instruction to remove an arbitrary load-bearing wall.", permittedMarks: [0,5,10] },
-    ],
-    taskGroups: [{"label":"b-compact-form","sourceCardId":"cons-2015-hl-q6-b-compact-form","marks":10,"rowIds":["b-compact-form-principle"]},{"label":"b-flexible-design","sourceCardId":"cons-2015-hl-q6-b-flexible-design","marks":10,"rowIds":["b-flexible-design-principle"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 6",
-          "title": "Low environmental impact house",
-          "pages": [
-                1,
-                4
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q6-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-original.png",
-          "srcHash": "3f74361759cfb9ad4690c4bc07954c19",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q6-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-scheme.png",
-          "srcHash": "8913689c769299a6e4e816e90c69cd18",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q6-complete-compact-form-and-flexible-design", topicId: "cons-1-2", conceptId: "low-impact-design-complete-compact-form-and-flexible-design",
-    section: "B", questionRef: "2015 HL Q6 — complete: compact form and flexible design",
-    stem: "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
-    questionText: "Using notes and freehand sketches, discuss three distinct features of the shown house design that ensure low environmental impact. Using notes and freehand sketches, discuss the importance of compact form in designing a house with low environmental impact. Using notes and freehand sketches, discuss the importance of flexible design in designing a house with low environmental impact. Discuss in detail the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-feature-1", kind: "criterion", verbatim: "Low environmental impact – features of house", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
-    { id: "a-feature-2", kind: "criterion", verbatim: "Low environmental impact – features of house", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
-    { id: "a-feature-3", kind: "criterion", verbatim: "Low environmental impact – features of house", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
-    { id: "b-compact-form-and-flexible-design-b-compact-form-principle", kind: "criterion", verbatim: "reduced external surface area minimizes heat loss through the outer envelope", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain that an efficient form can reduce external envelope area for useful accommodation, reducing heat loss and materials needed for the envelope, land take and visual impact. Illustrate the relationship between form, plan and envelope, using the source house where appropriate. Compare like accommodation: compactness does not by itself prove that every house has a smaller internal volume. The source sketch illustrates the plan; it is not a required exact plan to copy.", permittedMarks: [0,5,10] },
-    { id: "b-compact-form-and-flexible-design-b-flexible-design-principle", kind: "criterion", verbatim: "dwelling can respond, over time, to the changes of lifestyle", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how an adaptable layout accommodates changing users and needs without major rebuilding or replacement, extending the useful life of the house and conserving resources. Illustrate a relevant arrangement, such as a room usable as office or occasional bedroom, adaptable bathroom/access provision, or a changeable internal division. Relate the sketch to the original plan and retain structural sense. The source’s example removing a hallway division is illustrative, not an instruction to remove an arbitrary load-bearing wall.", permittedMarks: [0,5,10] },
-    { id: "c-discussion", kind: "criterion", verbatim: "Discussion of NZEB design for 21st century", marks: 10, contextNote: "Award 4 marks for a relevant point and 6 for its developed discussion, total 10. Explain why very low energy demand, high energy performance and appropriate renewable supply matter for long-term resource use, climate impact, energy costs/security or fair access to resources. Develop the reasoning rather than reciting a list. The scheme describes very high energy performance with the small remaining demand met to a significant extent by renewables on-site or nearby; NZEB does not require every building to be off-grid. Its 2019/2021 introduction dates are historical context from the 2015 scheme, not current legal guidance and not a required answer. Other relevant, developed arguments are accepted.", permittedMarks: [0,4,6,10] },
-    ],
-    taskGroups: [{"label":"a","sourceCardId":"cons-2015-hl-q6-a","marks":30,"rowIds":["a-feature-1","a-feature-2","a-feature-3"]},{"label":"b-compact-form-and-flexible-design","sourceCardId":"cons-2015-hl-q6-b-compact-form-and-flexible-design","marks":20,"rowIds":["b-compact-form-and-flexible-design-b-compact-form-principle","b-compact-form-and-flexible-design-b-flexible-design-principle"]},{"label":"c","sourceCardId":"cons-2015-hl-q6-c","marks":10,"rowIds":["c-discussion"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 6",
-          "title": "Low environmental impact house",
-          "pages": [
-                1,
-                4
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q6-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-original.png",
-          "srcHash": "3f74361759cfb9ad4690c4bc07954c19",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q6-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-scheme.png",
-          "srcHash": "8913689c769299a6e4e816e90c69cd18",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q6-b-compact-form-and-low-maintenance", topicId: "cons-1-2", conceptId: "low-impact-design-b-compact-form-and-low-maintenance",
-    section: "B", questionRef: "2015 HL Q6(b) — compact form and low maintenance",
-    stem: "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
-    questionText: "Using notes and freehand sketches, discuss the importance of compact form in designing a house with low environmental impact. Using notes and freehand sketches, discuss the importance of low maintenance in designing a house with low environmental impact.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 20,
-    rows: [
-    { id: "b-compact-form-principle", kind: "criterion", verbatim: "reduced external surface area minimizes heat loss through the outer envelope", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain that an efficient form can reduce external envelope area for useful accommodation, reducing heat loss and materials needed for the envelope, land take and visual impact. Illustrate the relationship between form, plan and envelope, using the source house where appropriate. Compare like accommodation: compactness does not by itself prove that every house has a smaller internal volume. The source sketch illustrates the plan; it is not a required exact plan to copy.", permittedMarks: [0,5,10] },
-    { id: "b-low-maintenance-principle", kind: "criterion", verbatim: "reduces the use of energy and materials over the lifetime of the dwelling", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how durable materials, robust construction and maintainable details reduce recurring material/energy inputs, delay replacement and help retain the building’s environmental performance and appearance. Illustrate a suitable detail or design feature and explain its lifetime benefit. Low maintenance does not mean no inspection or upkeep. The adjacent source landscape drawing is an example, not the only acceptable sketch.", permittedMarks: [0,5,10] },
-    ],
-    taskGroups: [{"label":"b-compact-form","sourceCardId":"cons-2015-hl-q6-b-compact-form","marks":10,"rowIds":["b-compact-form-principle"]},{"label":"b-low-maintenance","sourceCardId":"cons-2015-hl-q6-b-low-maintenance","marks":10,"rowIds":["b-low-maintenance-principle"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 6",
-          "title": "Low environmental impact house",
-          "pages": [
-                1,
-                4
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q6-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-original.png",
-          "srcHash": "3f74361759cfb9ad4690c4bc07954c19",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q6-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-scheme.png",
-          "srcHash": "8913689c769299a6e4e816e90c69cd18",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q6-complete-compact-form-and-low-maintenance", topicId: "cons-1-2", conceptId: "low-impact-design-complete-compact-form-and-low-maintenance",
-    section: "B", questionRef: "2015 HL Q6 — complete: compact form and low maintenance",
-    stem: "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
-    questionText: "Using notes and freehand sketches, discuss three distinct features of the shown house design that ensure low environmental impact. Using notes and freehand sketches, discuss the importance of compact form in designing a house with low environmental impact. Using notes and freehand sketches, discuss the importance of low maintenance in designing a house with low environmental impact. Discuss in detail the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-feature-1", kind: "criterion", verbatim: "Low environmental impact – features of house", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
-    { id: "a-feature-2", kind: "criterion", verbatim: "Low environmental impact – features of house", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
-    { id: "a-feature-3", kind: "criterion", verbatim: "Low environmental impact – features of house", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
-    { id: "b-compact-form-and-low-maintenance-b-compact-form-principle", kind: "criterion", verbatim: "reduced external surface area minimizes heat loss through the outer envelope", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain that an efficient form can reduce external envelope area for useful accommodation, reducing heat loss and materials needed for the envelope, land take and visual impact. Illustrate the relationship between form, plan and envelope, using the source house where appropriate. Compare like accommodation: compactness does not by itself prove that every house has a smaller internal volume. The source sketch illustrates the plan; it is not a required exact plan to copy.", permittedMarks: [0,5,10] },
-    { id: "b-compact-form-and-low-maintenance-b-low-maintenance-principle", kind: "criterion", verbatim: "reduces the use of energy and materials over the lifetime of the dwelling", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how durable materials, robust construction and maintainable details reduce recurring material/energy inputs, delay replacement and help retain the building’s environmental performance and appearance. Illustrate a suitable detail or design feature and explain its lifetime benefit. Low maintenance does not mean no inspection or upkeep. The adjacent source landscape drawing is an example, not the only acceptable sketch.", permittedMarks: [0,5,10] },
-    { id: "c-discussion", kind: "criterion", verbatim: "Discussion of NZEB design for 21st century", marks: 10, contextNote: "Award 4 marks for a relevant point and 6 for its developed discussion, total 10. Explain why very low energy demand, high energy performance and appropriate renewable supply matter for long-term resource use, climate impact, energy costs/security or fair access to resources. Develop the reasoning rather than reciting a list. The scheme describes very high energy performance with the small remaining demand met to a significant extent by renewables on-site or nearby; NZEB does not require every building to be off-grid. Its 2019/2021 introduction dates are historical context from the 2015 scheme, not current legal guidance and not a required answer. Other relevant, developed arguments are accepted.", permittedMarks: [0,4,6,10] },
-    ],
-    taskGroups: [{"label":"a","sourceCardId":"cons-2015-hl-q6-a","marks":30,"rowIds":["a-feature-1","a-feature-2","a-feature-3"]},{"label":"b-compact-form-and-low-maintenance","sourceCardId":"cons-2015-hl-q6-b-compact-form-and-low-maintenance","marks":20,"rowIds":["b-compact-form-and-low-maintenance-b-compact-form-principle","b-compact-form-and-low-maintenance-b-low-maintenance-principle"]},{"label":"c","sourceCardId":"cons-2015-hl-q6-c","marks":10,"rowIds":["c-discussion"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 6",
-          "title": "Low environmental impact house",
-          "pages": [
-                1,
-                4
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q6-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-original.png",
-          "srcHash": "3f74361759cfb9ad4690c4bc07954c19",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q6-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-scheme.png",
-          "srcHash": "8913689c769299a6e4e816e90c69cd18",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q6-b-flexible-design-and-low-maintenance", topicId: "cons-1-2", conceptId: "low-impact-design-b-flexible-design-and-low-maintenance",
-    section: "B", questionRef: "2015 HL Q6(b) — flexible design and low maintenance",
-    stem: "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
-    questionText: "Using notes and freehand sketches, discuss the importance of flexible design in designing a house with low environmental impact. Using notes and freehand sketches, discuss the importance of low maintenance in designing a house with low environmental impact.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 20,
-    rows: [
-    { id: "b-flexible-design-principle", kind: "criterion", verbatim: "dwelling can respond, over time, to the changes of lifestyle", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how an adaptable layout accommodates changing users and needs without major rebuilding or replacement, extending the useful life of the house and conserving resources. Illustrate a relevant arrangement, such as a room usable as office or occasional bedroom, adaptable bathroom/access provision, or a changeable internal division. Relate the sketch to the original plan and retain structural sense. The source’s example removing a hallway division is illustrative, not an instruction to remove an arbitrary load-bearing wall.", permittedMarks: [0,5,10] },
-    { id: "b-low-maintenance-principle", kind: "criterion", verbatim: "reduces the use of energy and materials over the lifetime of the dwelling", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how durable materials, robust construction and maintainable details reduce recurring material/energy inputs, delay replacement and help retain the building’s environmental performance and appearance. Illustrate a suitable detail or design feature and explain its lifetime benefit. Low maintenance does not mean no inspection or upkeep. The adjacent source landscape drawing is an example, not the only acceptable sketch.", permittedMarks: [0,5,10] },
-    ],
-    taskGroups: [{"label":"b-flexible-design","sourceCardId":"cons-2015-hl-q6-b-flexible-design","marks":10,"rowIds":["b-flexible-design-principle"]},{"label":"b-low-maintenance","sourceCardId":"cons-2015-hl-q6-b-low-maintenance","marks":10,"rowIds":["b-low-maintenance-principle"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 6",
-          "title": "Low environmental impact house",
-          "pages": [
-                1,
-                4
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q6-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-original.png",
-          "srcHash": "3f74361759cfb9ad4690c4bc07954c19",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q6-flexible-maintenance",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-flexible-maintenance.png",
-          "srcHash": "407da66aeb9e2a564484378607847e89",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): flexible maintenance. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q6-complete-flexible-design-and-low-maintenance", topicId: "cons-1-2", conceptId: "low-impact-design-complete-flexible-design-and-low-maintenance",
-    section: "B", questionRef: "2015 HL Q6 — complete: flexible design and low maintenance",
-    stem: "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
-    questionText: "Using notes and freehand sketches, discuss three distinct features of the shown house design that ensure low environmental impact. Using notes and freehand sketches, discuss the importance of flexible design in designing a house with low environmental impact. Using notes and freehand sketches, discuss the importance of low maintenance in designing a house with low environmental impact. Discuss in detail the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-feature-1", kind: "criterion", verbatim: "Low environmental impact – features of house", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
-    { id: "a-feature-2", kind: "criterion", verbatim: "Low environmental impact – features of house", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
-    { id: "a-feature-3", kind: "criterion", verbatim: "Low environmental impact – features of house", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
-    { id: "b-flexible-design-and-low-maintenance-b-flexible-design-principle", kind: "criterion", verbatim: "dwelling can respond, over time, to the changes of lifestyle", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how an adaptable layout accommodates changing users and needs without major rebuilding or replacement, extending the useful life of the house and conserving resources. Illustrate a relevant arrangement, such as a room usable as office or occasional bedroom, adaptable bathroom/access provision, or a changeable internal division. Relate the sketch to the original plan and retain structural sense. The source’s example removing a hallway division is illustrative, not an instruction to remove an arbitrary load-bearing wall.", permittedMarks: [0,5,10] },
-    { id: "b-flexible-design-and-low-maintenance-b-low-maintenance-principle", kind: "criterion", verbatim: "reduces the use of energy and materials over the lifetime of the dwelling", marks: 10, contextNote: "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how durable materials, robust construction and maintainable details reduce recurring material/energy inputs, delay replacement and help retain the building’s environmental performance and appearance. Illustrate a suitable detail or design feature and explain its lifetime benefit. Low maintenance does not mean no inspection or upkeep. The adjacent source landscape drawing is an example, not the only acceptable sketch.", permittedMarks: [0,5,10] },
-    { id: "c-discussion", kind: "criterion", verbatim: "Discussion of NZEB design for 21st century", marks: 10, contextNote: "Award 4 marks for a relevant point and 6 for its developed discussion, total 10. Explain why very low energy demand, high energy performance and appropriate renewable supply matter for long-term resource use, climate impact, energy costs/security or fair access to resources. Develop the reasoning rather than reciting a list. The scheme describes very high energy performance with the small remaining demand met to a significant extent by renewables on-site or nearby; NZEB does not require every building to be off-grid. Its 2019/2021 introduction dates are historical context from the 2015 scheme, not current legal guidance and not a required answer. Other relevant, developed arguments are accepted.", permittedMarks: [0,4,6,10] },
-    ],
-    taskGroups: [{"label":"a","sourceCardId":"cons-2015-hl-q6-a","marks":30,"rowIds":["a-feature-1","a-feature-2","a-feature-3"]},{"label":"b-flexible-design-and-low-maintenance","sourceCardId":"cons-2015-hl-q6-b-flexible-design-and-low-maintenance","marks":20,"rowIds":["b-flexible-design-and-low-maintenance-b-flexible-design-principle","b-flexible-design-and-low-maintenance-b-low-maintenance-principle"]},{"label":"c","sourceCardId":"cons-2015-hl-q6-c","marks":10,"rowIds":["c-discussion"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 6",
-          "title": "Low environmental impact house",
-          "pages": [
-                1,
-                4
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q6-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-original.png",
-          "srcHash": "3f74361759cfb9ad4690c4bc07954c19",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: source question and illustration for original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q6-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-scheme.png",
-          "srcHash": "8913689c769299a6e4e816e90c69cd18",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -7194,8 +5293,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q7-a", topicId: "cons-3-8", conceptId: "attic-roof-section-a",
     section: "B", questionRef: "2015 HL Q7(a)",
-    stem: "The new house has a traditional cut roof pitched at 45°, an internal width of 6.0 m and high roof insulation. Insulated plasterboard with skim finish is fixed under the rafters. The external supporting wall is 400 mm concrete block with a full-fill insulated cavity. The FLOOR joists are 225 mm × 40 mm and are supported centrally on a 100 mm internal load-bearing concrete-block wall. The attic floor finish is 25 mm tongue-and-groove boards. At scale 1:10, the vertical section passes through one half of the roof, eaves to ridge, showing one external wall and one rafter length, from 500 mm below the floor joists to the ridge. Include three courses of slate at the eaves and four typical roof dimensions. Part (b) adds ventilation details at BOTH eaves and roof/ridge.",
-    questionText: "To scale 1:10, draw the specified vertical section through half of the traditional cut roof, from 500 mm below floor joists to ridge. Include the external wall, one rafter length, three slate courses at eaves and four typical dimensions.",
+    stem: "The roof of a new house, as shown, is a traditional cut roof and has a pitch of 45 degrees. The house has an internal width of 6.0 metres and the roof is highly insulated. Insulated plasterboard is also fixed to the underside of the rafters and is finished with a plaster skim coat. The external wall supporting the floor joists is a 400 mm concrete block wall with a full-fill insulated cavity. The 225 mm × 40 mm floor joists are supported centrally on a 100 mm internal load-bearing concrete block wall. The attic floor is finished with 25 mm tongue-and-groove floor boards.",
+    questionText: "To a scale of 1:10, draw a vertical section through one half of the roof structure from eaves up to ridge, showing one external wall and one rafter length. Show the typical construction details from 500 mm below the floor joists up to the ridge and include three courses of slate at eaves. Include four typical dimensions of the roof structure.",
     tariffModel: {"kind":"fixed"}, totalMarks: 52,
     rows: [
     { id: "construction", kind: "criterion", verbatim: "Vertical section through roof structure - attic", marks: 40, contextNote: "Award the best TEN acceptable construction details only: drawing 3 plus annotation 1 for each, maximum 40. Published examples are 400 mm external wall; full-fill cavity insulation; internal/external plaster/render; cavity closer;100 mm load-bearing centre wall; wallplate; rafter; insulated slab under rafter; vertical purlin; strut/collar; breather membrane/battens; counter-battens; slates; fascia/soffit/gutter(any TWO of these for ONE 4-mark criterion); ridge board; and joist/25 mm tongue-and-groove floorboards. Other appropriate detailing is accepted. Do not require all 16 indicative criteria or count the fascia/soffit/gutter as three separate 4-mark details. Preserve the paper’s 225×40 mm FLOOR joists; the scheme’s generic 200×40 mm ceiling-joist example does not replace the printed floor specification.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40] },
@@ -7211,7 +5310,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original roof illustration and all specified dimensions retained. The scheme model is illustrative; the printed225×40mm floor-joist size controls over its generic ceiling-joist list. Drawing/annotation, dimension, presentation and ventilation allowances remain separate."
+          "presentationNote": "Original roof sketch and dimensions retained. Construction, dimension and scale/draughting marks belong to part (a); the two ventilation details in (b) are marked separately."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q7-original",
@@ -7238,9 +5337,9 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q7-b-eaves", topicId: "cons-3-9", conceptId: "attic-roof-section-b-eaves",
-    section: "B", questionRef: "2015 HL Q7(b) — eaves ventilation",
-    stem: "The new house has a traditional cut roof pitched at 45°, an internal width of 6.0 m and high roof insulation. Insulated plasterboard with skim finish is fixed under the rafters. The external supporting wall is 400 mm concrete block with a full-fill insulated cavity. The FLOOR joists are 225 mm × 40 mm and are supported centrally on a 100 mm internal load-bearing concrete-block wall. The attic floor finish is 25 mm tongue-and-groove boards. At scale 1:10, the vertical section passes through one half of the roof, eaves to ridge, showing one external wall and one rafter length, from 500 mm below the floor joists to the ridge. Include three courses of slate at the eaves and four typical roof dimensions. Part (b) adds ventilation details at BOTH eaves and roof/ridge.",
-    questionText: "On the specified roof section, show the design detail that provides ventilation at the eaves.",
+    section: "B", questionRef: "2015 HL Q7(b) — eaves",
+    stem: "The roof of a new house, as shown, is a traditional cut roof and has a pitch of 45 degrees. The house has an internal width of 6.0 metres and the roof is highly insulated. Insulated plasterboard is also fixed to the underside of the rafters and is finished with a plaster skim coat. The external wall supporting the floor joists is a 400 mm concrete block wall with a full-fill insulated cavity. The 225 mm × 40 mm floor joists are supported centrally on a 100 mm internal load-bearing concrete block wall. The attic floor is finished with 25 mm tongue-and-groove floor boards.",
+    questionText: "Include on you drawing, best practice design detailing to ensure ventilation of the roof structure. — Eaves",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "eaves", kind: "criterion", verbatim: "Two design details for ventilation – eaves and roof/ridge", marks: 4, contextNote: "The scheme explicitly allocates 4 marks to the eaves ventilation detail. Show the low-level air entry and its connection to the roof ventilation route without the insulation blocking it, as illustrated by the source arrows. This is a 4-mark location subtotal; do not import the (a)drawing 3/annotation 1 split into(b), where no such breakdown is published. The full(b)also requires a separate roof/ridge detail.", permittedMarks: [0,4] },
@@ -7254,7 +5353,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original roof illustration and all specified dimensions retained. The scheme model is illustrative; the printed225×40mm floor-joist size controls over its generic ceiling-joist list. Drawing/annotation, dimension, presentation and ventilation allowances remain separate."
+          "presentationNote": "Original roof sketch and dimensions retained. Construction, dimension and scale/draughting marks belong to part (a); the two ventilation details in (b) are marked separately."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q7-original",
@@ -7281,9 +5380,9 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q7-b-ridge", topicId: "cons-3-9", conceptId: "attic-roof-section-b-ridge",
-    section: "B", questionRef: "2015 HL Q7(b) — roof/ridge ventilation",
-    stem: "The new house has a traditional cut roof pitched at 45°, an internal width of 6.0 m and high roof insulation. Insulated plasterboard with skim finish is fixed under the rafters. The external supporting wall is 400 mm concrete block with a full-fill insulated cavity. The FLOOR joists are 225 mm × 40 mm and are supported centrally on a 100 mm internal load-bearing concrete-block wall. The attic floor finish is 25 mm tongue-and-groove boards. At scale 1:10, the vertical section passes through one half of the roof, eaves to ridge, showing one external wall and one rafter length, from 500 mm below the floor joists to the ridge. Include three courses of slate at the eaves and four typical roof dimensions. Part (b) adds ventilation details at BOTH eaves and roof/ridge.",
-    questionText: "On the specified roof section, show the design detail that provides ventilation at the roof/ridge.",
+    section: "B", questionRef: "2015 HL Q7(b) — roof/ridge",
+    stem: "The roof of a new house, as shown, is a traditional cut roof and has a pitch of 45 degrees. The house has an internal width of 6.0 metres and the roof is highly insulated. Insulated plasterboard is also fixed to the underside of the rafters and is finished with a plaster skim coat. The external wall supporting the floor joists is a 400 mm concrete block wall with a full-fill insulated cavity. The 225 mm × 40 mm floor joists are supported centrally on a 100 mm internal load-bearing concrete block wall. The attic floor is finished with 25 mm tongue-and-groove floor boards.",
+    questionText: "Include on you drawing, best practice design detailing to ensure ventilation of the roof structure. — Roof/ridge",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "ridge", kind: "criterion", verbatim: "Two design details for ventilation – eaves and roof/ridge", marks: 4, contextNote: "The scheme explicitly allocates 4 marks to the roof/ridge ventilation detail. Show the high-level ventilation/outlet and a continuous appropriate roof air route to it, with the insulation and roof covering arranged as in a coherent ventilated construction. The source model shows airflow at the ridge. This is a 4-mark location subtotal; no separate drawing/annotation allocation is printed for (b). The full(b)also requires the eaves detail.", permittedMarks: [0,4] },
@@ -7297,7 +5396,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original roof illustration and all specified dimensions retained. The scheme model is illustrative; the printed225×40mm floor-joist size controls over its generic ceiling-joist list. Drawing/annotation, dimension, presentation and ventilation allowances remain separate."
+          "presentationNote": "Original roof sketch and dimensions retained. Construction, dimension and scale/draughting marks belong to part (a); the two ventilation details in (b) are marked separately."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q7-original",
@@ -7324,15 +5423,15 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q7-b", topicId: "cons-3-9", conceptId: "attic-roof-section-b",
-    section: "B", questionRef: "2015 HL Q7(b) — both ventilation locations",
-    stem: "The new house has a traditional cut roof pitched at 45°, an internal width of 6.0 m and high roof insulation. Insulated plasterboard with skim finish is fixed under the rafters. The external supporting wall is 400 mm concrete block with a full-fill insulated cavity. The FLOOR joists are 225 mm × 40 mm and are supported centrally on a 100 mm internal load-bearing concrete-block wall. The attic floor finish is 25 mm tongue-and-groove boards. At scale 1:10, the vertical section passes through one half of the roof, eaves to ridge, showing one external wall and one rafter length, from 500 mm below the floor joists to the ridge. Include three courses of slate at the eaves and four typical roof dimensions. Part (b) adds ventilation details at BOTH eaves and roof/ridge.",
-    questionText: "On the specified roof section, show the design detail that provides ventilation at the eaves. On the specified roof section, show the design detail that provides ventilation at the roof/ridge.",
+    section: "B", questionRef: "2015 HL Q7(b)",
+    stem: "The roof of a new house, as shown, is a traditional cut roof and has a pitch of 45 degrees. The house has an internal width of 6.0 metres and the roof is highly insulated. Insulated plasterboard is also fixed to the underside of the rafters and is finished with a plaster skim coat. The external wall supporting the floor joists is a 400 mm concrete block wall with a full-fill insulated cavity. The 225 mm × 40 mm floor joists are supported centrally on a 100 mm internal load-bearing concrete block wall. The attic floor is finished with 25 mm tongue-and-groove floor boards.",
+    questionText: "Include on you drawing, best practice design detailing to ensure ventilation of the roof structure.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "b-eaves-eaves", kind: "criterion", verbatim: "Two design details for ventilation – eaves and roof/ridge", marks: 4, contextNote: "The scheme explicitly allocates 4 marks to the eaves ventilation detail. Show the low-level air entry and its connection to the roof ventilation route without the insulation blocking it, as illustrated by the source arrows. This is a 4-mark location subtotal; do not import the (a)drawing 3/annotation 1 split into(b), where no such breakdown is published. The full(b)also requires a separate roof/ridge detail.", permittedMarks: [0,4] },
     { id: "b-ridge-ridge", kind: "criterion", verbatim: "Two design details for ventilation – eaves and roof/ridge", marks: 4, contextNote: "The scheme explicitly allocates 4 marks to the roof/ridge ventilation detail. Show the high-level ventilation/outlet and a continuous appropriate roof air route to it, with the insulation and roof covering arranged as in a coherent ventilated construction. The source model shows airflow at the ridge. This is a 4-mark location subtotal; no separate drawing/annotation allocation is printed for (b). The full(b)also requires the eaves detail.", permittedMarks: [0,4] },
     ],
-    taskGroups: [{"label":"b-eaves","sourceCardId":"cons-2015-hl-q7-b-eaves","marks":4,"rowIds":["b-eaves-eaves"]},{"label":"b-ridge","sourceCardId":"cons-2015-hl-q7-b-ridge","marks":4,"rowIds":["b-ridge-ridge"]}],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q7-b-eaves","label":"Eaves","marks":4,"rowIds":["b-eaves-eaves"]},{"sourceCardId":"cons-2015-hl-q7-b-ridge","label":"Roof/ridge","marks":4,"rowIds":["b-ridge-ridge"]}],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 7",
@@ -7342,7 +5441,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original roof illustration and all specified dimensions retained. The scheme model is illustrative; the printed225×40mm floor-joist size controls over its generic ceiling-joist list. Drawing/annotation, dimension, presentation and ventilation allowances remain separate."
+          "presentationNote": "Original roof sketch and dimensions retained. Construction, dimension and scale/draughting marks belong to part (a); the two ventilation details in (b) are marked separately."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q7-original",
@@ -7370,8 +5469,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q7-complete", topicId: "cons-3-8", conceptId: "attic-roof-section-complete",
     section: "B", questionRef: "2015 HL Q7 — complete",
-    stem: "The new house has a traditional cut roof pitched at 45°, an internal width of 6.0 m and high roof insulation. Insulated plasterboard with skim finish is fixed under the rafters. The external supporting wall is 400 mm concrete block with a full-fill insulated cavity. The FLOOR joists are 225 mm × 40 mm and are supported centrally on a 100 mm internal load-bearing concrete-block wall. The attic floor finish is 25 mm tongue-and-groove boards. At scale 1:10, the vertical section passes through one half of the roof, eaves to ridge, showing one external wall and one rafter length, from 500 mm below the floor joists to the ridge. Include three courses of slate at the eaves and four typical roof dimensions. Part (b) adds ventilation details at BOTH eaves and roof/ridge.",
-    questionText: "To scale 1:10, draw the specified vertical section through half of the traditional cut roof, from 500 mm below floor joists to ridge. Include the external wall, one rafter length, three slate courses at eaves and four typical dimensions. On the specified roof section, show the design detail that provides ventilation at the eaves. On the specified roof section, show the design detail that provides ventilation at the roof/ridge.",
+    stem: "The roof of a new house, as shown, is a traditional cut roof and has a pitch of 45 degrees. The house has an internal width of 6.0 metres and the roof is highly insulated. Insulated plasterboard is also fixed to the underside of the rafters and is finished with a plaster skim coat. The external wall supporting the floor joists is a 400 mm concrete block wall with a full-fill insulated cavity. The 225 mm × 40 mm floor joists are supported centrally on a 100 mm internal load-bearing concrete block wall. The attic floor is finished with 25 mm tongue-and-groove floor boards.",
+    questionText: "(a) To a scale of 1:10, draw a vertical section through one half of the roof structure from eaves up to ridge, showing one external wall and one rafter length. Show the typical construction details from 500 mm below the floor joists up to the ridge and include three courses of slate at eaves. Include four typical dimensions of the roof structure. (b) Include on you drawing, best practice design detailing to ensure ventilation of the roof structure.",
     tariffModel: {"kind":"fixed"}, totalMarks: 60,
     rows: [
     { id: "a-construction", kind: "criterion", verbatim: "Vertical section through roof structure - attic", marks: 40, contextNote: "Award the best TEN acceptable construction details only: drawing 3 plus annotation 1 for each, maximum 40. Published examples are 400 mm external wall; full-fill cavity insulation; internal/external plaster/render; cavity closer;100 mm load-bearing centre wall; wallplate; rafter; insulated slab under rafter; vertical purlin; strut/collar; breather membrane/battens; counter-battens; slates; fascia/soffit/gutter(any TWO of these for ONE 4-mark criterion); ridge board; and joist/25 mm tongue-and-groove floorboards. Other appropriate detailing is accepted. Do not require all 16 indicative criteria or count the fascia/soffit/gutter as three separate 4-mark details. Preserve the paper’s 225×40 mm FLOOR joists; the scheme’s generic 200×40 mm ceiling-joist example does not replace the printed floor specification.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40] },
@@ -7380,7 +5479,7 @@ export const CARDS: SecCard[] = [
     { id: "b-b-eaves-eaves", kind: "criterion", verbatim: "Two design details for ventilation – eaves and roof/ridge", marks: 4, contextNote: "The scheme explicitly allocates 4 marks to the eaves ventilation detail. Show the low-level air entry and its connection to the roof ventilation route without the insulation blocking it, as illustrated by the source arrows. This is a 4-mark location subtotal; do not import the (a)drawing 3/annotation 1 split into(b), where no such breakdown is published. The full(b)also requires a separate roof/ridge detail.", permittedMarks: [0,4] },
     { id: "b-b-ridge-ridge", kind: "criterion", verbatim: "Two design details for ventilation – eaves and roof/ridge", marks: 4, contextNote: "The scheme explicitly allocates 4 marks to the roof/ridge ventilation detail. Show the high-level ventilation/outlet and a continuous appropriate roof air route to it, with the insulation and roof covering arranged as in a coherent ventilated construction. The source model shows airflow at the ridge. This is a 4-mark location subtotal; no separate drawing/annotation allocation is printed for (b). The full(b)also requires the eaves detail.", permittedMarks: [0,4] },
     ],
-    taskGroups: [{"label":"a","sourceCardId":"cons-2015-hl-q7-a","marks":52,"rowIds":["a-construction","a-dimensions","a-presentation"]},{"label":"b","sourceCardId":"cons-2015-hl-q7-b","marks":8,"rowIds":["b-b-eaves-eaves","b-b-ridge-ridge"]}],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q7-a","label":"a","marks":52,"rowIds":["a-construction","a-dimensions","a-presentation"]},{"sourceCardId":"cons-2015-hl-q7-b","label":"b","marks":8,"rowIds":["b-b-eaves-eaves","b-b-ridge-ridge"]}],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 7",
@@ -7390,7 +5489,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original roof illustration and all specified dimensions retained. The scheme model is illustrative; the printed225×40mm floor-joist size controls over its generic ceiling-joist list. Drawing/annotation, dimension, presentation and ventilation allowances remain separate."
+          "presentationNote": "Original roof sketch and dimensions retained. Construction, dimension and scale/draughting marks belong to part (a); the two ventilation details in (b) are marked separately."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q7-original",
@@ -7418,8 +5517,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q8-a", topicId: "cons-5-3", conceptId: "zoned-heating-and-hot-water-a",
     section: "B", questionRef: "2015 HL Q8(a)",
-    stem: "A wood-burning stove combined with a solar collector is to provide central heating AND hot water for a three-bedroom, two-storey dwelling house. The design must show two independently controlled heating zones, one on each floor, with three radiators on EACH floor, control-valve locations and typical pipe sizes. The solar collector is for water heating (solar thermal). Part (c) asks for two design considerations when selecting locations for BOTH the chimney and the hot press, using notes and freehand sketches and justifying the choices.",
-    questionText: "Using notes and a single-line diagram, show a typical layout for BOTH central heating and domestic hot water, supplied by the wood-burning stove combined with the solar collector. Show two independently controlled heating zones, one per floor, and three radiators on each floor. Locate control valves and give typical pipe sizes.",
+    stem: "A wood-burning stove combined with a solar collector is to provide central heating and hot water for a three bedroom, two-storey dwelling house.",
+    questionText: "Using notes and a single-line diagram, show a typical design layout for both the heating system and the hot water system. Show two independently controlled heating zones, one on each floor, and include three radiators on each floor. Indicate the location of the control valves and give the typical sizes of the pipework.",
     tariffModel: {"kind":"fixed"}, totalMarks: 40,
     rows: [
     { id: "system", kind: "criterion", verbatim: "Design of zoned plumbing system", marks: 36, contextNote: "Award the best NINE acceptable system details, each sketch 3 plus annotation 1, capped at 36. The source menu includes stove; radiator flow/return; radiators; zone valves and thermostats; header/expansion/storage tank and feeds; expansion pipe/vessel; primary flow/return; pump/valves; solar collector, flow/return and pump; twin-coil cylinder; control panel; expansion and temperature-reducing vessels. Preserve both heat sources, two independently controlled zones and six radiators. For the optional pump/valves criterion, any two applicable radiator/isolating/drain-off components satisfy that ONE detail; do not award an extra 4 marks per item. Notes on the source diagram identify zone thermostats T1/T2 although the drawn labels repeat T2; retain two independent controls.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36] },
@@ -7434,7 +5533,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original stove and collector illustrations and complete scheme diagrams are retained. The scheme is an exam model, not an installation specification. Its PV electricity statistic does not answer this solar-thermal water-heating question."
+          "presentationNote": "Original stove and collector sketch retained. Part (c) requires both the chimney and the hot press, each marked separately. The scheme diagrams are exam models, not installation specifications."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q8-original",
@@ -7462,8 +5561,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q8-b", topicId: "cons-5-2", conceptId: "zoned-heating-and-hot-water-b",
     section: "B", questionRef: "2015 HL Q8(b)",
-    stem: "A wood-burning stove combined with a solar collector is to provide central heating AND hot water for a three-bedroom, two-storey dwelling house. The design must show two independently controlled heating zones, one on each floor, with three radiators on EACH floor, control-valve locations and typical pipe sizes. The solar collector is for water heating (solar thermal). Part (c) asks for two design considerations when selecting locations for BOTH the chimney and the hot press, using notes and freehand sketches and justifying the choices.",
-    questionText: "Using notes and freehand sketches, show a preferred location for the solar collector that will ensure its maximum efficiency in the specified water-heating system.",
+    stem: "A wood-burning stove combined with a solar collector is to provide central heating and hot water for a three bedroom, two-storey dwelling house.",
+    questionText: "Using notes and freehand sketches show a preferred location for a solar collector that will ensure its maximum efficiency.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "notes", kind: "criterion", verbatim: "Preferred location for solar collector", marks: 4, contextNote: "Explain a suitable unshaded location, normally facing south, with a coherent roof/ground/wall placement and appropriate tilt. The 2015 scheme gives a 45° optimum tilt and approximately 15° east/west tolerance as examples. Avoid chimney/tree shade and consider roof support, insulation and overheating. Its PV domestic-electricity statistic is unrelated to the required solar-thermal water-heating answer; do not substitute photovoltaic electricity generation.", permittedMarks: [0,4] },
@@ -7478,7 +5577,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original stove and collector illustrations and complete scheme diagrams are retained. The scheme is an exam model, not an installation specification. Its PV electricity statistic does not answer this solar-thermal water-heating question."
+          "presentationNote": "Original stove and collector sketch retained. Part (c) requires both the chimney and the hot press, each marked separately. The scheme diagrams are exam models, not installation specifications."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q8-original",
@@ -7505,9 +5604,9 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q8-c-chimney", topicId: "cons-5-7", conceptId: "zoned-heating-and-hot-water-c-chimney",
-    section: "B", questionRef: "2015 HL Q8(c) — chimney location",
-    stem: "A wood-burning stove combined with a solar collector is to provide central heating AND hot water for a three-bedroom, two-storey dwelling house. The design must show two independently controlled heating zones, one on each floor, with three radiators on EACH floor, control-valve locations and typical pipe sizes. The solar collector is for water heating (solar thermal). Part (c) asks for two design considerations when selecting locations for BOTH the chimney and the hot press, using notes and freehand sketches and justifying the choices.",
-    questionText: "Using notes and freehand sketches, discuss the design-stage considerations for locating the chimney in the specified house and justify your choices. This is the chimney component of part (c), whose full prompt requires two considerations for BOTH chimney and hot press.",
+    section: "B", questionRef: "2015 HL Q8(c) — chimney",
+    stem: "A wood-burning stove combined with a solar collector is to provide central heating and hot water for a three bedroom, two-storey dwelling house.",
+    questionText: "Using notes and freehand sketches, discuss two considerations that should be taken into account at the design stage of the house when selecting a location for the chimney. Justify your design choices.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "notes", kind: "criterion", verbatim: "Chimney", marks: 3, contextNote: "Explain and justify a coherent chimney location, for example an internal wall and grouping chimney, hot press and bathroom to shorten service runs. Internal chimney-breast thermal mass can release stored heat to adjoining rooms. This is the published 3-mark notes allowance for the chimney location, not 3 marks for each open example.", permittedMarks: [0,3] },
@@ -7522,7 +5621,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original stove and collector illustrations and complete scheme diagrams are retained. The scheme is an exam model, not an installation specification. Its PV electricity statistic does not answer this solar-thermal water-heating question."
+          "presentationNote": "Original stove and collector sketch retained. Part (c) requires both the chimney and the hot press, each marked separately. The scheme diagrams are exam models, not installation specifications."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q8-original",
@@ -7549,9 +5648,9 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q8-c-hotpress", topicId: "cons-5-2", conceptId: "zoned-heating-and-hot-water-c-hotpress",
-    section: "B", questionRef: "2015 HL Q8(c) — hot-press location",
-    stem: "A wood-burning stove combined with a solar collector is to provide central heating AND hot water for a three-bedroom, two-storey dwelling house. The design must show two independently controlled heating zones, one on each floor, with three radiators on EACH floor, control-valve locations and typical pipe sizes. The solar collector is for water heating (solar thermal). Part (c) asks for two design considerations when selecting locations for BOTH the chimney and the hot press, using notes and freehand sketches and justifying the choices.",
-    questionText: "Using notes and freehand sketches, discuss the design-stage considerations for locating the hot press in the specified house and justify your choices. This is the hot-press component of part (c), whose full prompt requires two considerations for BOTH chimney and hot press.",
+    section: "B", questionRef: "2015 HL Q8(c) — hot press",
+    stem: "A wood-burning stove combined with a solar collector is to provide central heating and hot water for a three bedroom, two-storey dwelling house.",
+    questionText: "Using notes and freehand sketches, discuss two considerations that should be taken into account at the design stage of the house when selecting a location for the hot press. Justify your design choices.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "notes", kind: "criterion", verbatim: "Hot press", marks: 3, contextNote: "Explain and justify locating the cylinder and associated controls close to the boiler, with short insulated flow/return and distribution pipes. Short runs reduce heat loss, the volume of water to heat and warm-up time; insulate cylinder, pipes and tanks. This is one shared 3-mark notes allowance, not a new tariff for every illustrative reason.", permittedMarks: [0,3] },
@@ -7566,7 +5665,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original stove and collector illustrations and complete scheme diagrams are retained. The scheme is an exam model, not an installation specification. Its PV electricity statistic does not answer this solar-thermal water-heating question."
+          "presentationNote": "Original stove and collector sketch retained. Part (c) requires both the chimney and the hot press, each marked separately. The scheme diagrams are exam models, not installation specifications."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q8-original",
@@ -7593,9 +5692,9 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q8-c", topicId: "cons-5-7", conceptId: "zoned-heating-and-hot-water-c",
-    section: "B", questionRef: "2015 HL Q8(c) — both locations",
-    stem: "A wood-burning stove combined with a solar collector is to provide central heating AND hot water for a three-bedroom, two-storey dwelling house. The design must show two independently controlled heating zones, one on each floor, with three radiators on EACH floor, control-valve locations and typical pipe sizes. The solar collector is for water heating (solar thermal). Part (c) asks for two design considerations when selecting locations for BOTH the chimney and the hot press, using notes and freehand sketches and justifying the choices.",
-    questionText: "Using notes and freehand sketches, discuss two considerations that should be taken into account at the design stage when selecting a location for BOTH the chimney and the hot press. Justify your design choices.",
+    section: "B", questionRef: "2015 HL Q8(c)",
+    stem: "A wood-burning stove combined with a solar collector is to provide central heating and hot water for a three bedroom, two-storey dwelling house.",
+    questionText: "Using notes and freehand sketches, discuss two considerations that should be taken into account at the design stage of the house when selecting a location for both the chimney and the hot press. Justify your design choices.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "c-chimney-notes", kind: "criterion", verbatim: "Chimney", marks: 3, contextNote: "Explain and justify a coherent chimney location, for example an internal wall and grouping chimney, hot press and bathroom to shorten service runs. Internal chimney-breast thermal mass can release stored heat to adjoining rooms. This is the published 3-mark notes allowance for the chimney location, not 3 marks for each open example.", permittedMarks: [0,3] },
@@ -7603,7 +5702,7 @@ export const CARDS: SecCard[] = [
     { id: "c-hotpress-notes", kind: "criterion", verbatim: "Hot press", marks: 3, contextNote: "Explain and justify locating the cylinder and associated controls close to the boiler, with short insulated flow/return and distribution pipes. Short runs reduce heat loss, the volume of water to heat and warm-up time; insulate cylinder, pipes and tanks. This is one shared 3-mark notes allowance, not a new tariff for every illustrative reason.", permittedMarks: [0,3] },
     { id: "c-hotpress-sketch", kind: "criterion", verbatim: "Hot press", marks: 3, contextNote: "Sketch the hot press/cylinder location and its relationship to the boiler and pipe routes. Use the complete source plan, insulated-pipe and boiler/cylinder illustrations to support the justification. Separate published 3-mark sketch allowance.", permittedMarks: [0,3] },
     ],
-    taskGroups: [{"label":"c-chimney","sourceCardId":"cons-2015-hl-q8-c-chimney","marks":6,"rowIds":["c-chimney-notes","c-chimney-sketch"]},{"label":"c-hotpress","sourceCardId":"cons-2015-hl-q8-c-hotpress","marks":6,"rowIds":["c-hotpress-notes","c-hotpress-sketch"]}],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q8-c-chimney","label":"Chimney","marks":6,"rowIds":["c-chimney-notes","c-chimney-sketch"]},{"sourceCardId":"cons-2015-hl-q8-c-hotpress","label":"Hot press","marks":6,"rowIds":["c-hotpress-notes","c-hotpress-sketch"]}],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 8",
@@ -7613,7 +5712,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original stove and collector illustrations and complete scheme diagrams are retained. The scheme is an exam model, not an installation specification. Its PV electricity statistic does not answer this solar-thermal water-heating question."
+          "presentationNote": "Original stove and collector sketch retained. Part (c) requires both the chimney and the hot press, each marked separately. The scheme diagrams are exam models, not installation specifications."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q8-original",
@@ -7641,8 +5740,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q8-complete", topicId: "cons-5-3", conceptId: "zoned-heating-and-hot-water-complete",
     section: "B", questionRef: "2015 HL Q8 — complete",
-    stem: "A wood-burning stove combined with a solar collector is to provide central heating AND hot water for a three-bedroom, two-storey dwelling house. The design must show two independently controlled heating zones, one on each floor, with three radiators on EACH floor, control-valve locations and typical pipe sizes. The solar collector is for water heating (solar thermal). Part (c) asks for two design considerations when selecting locations for BOTH the chimney and the hot press, using notes and freehand sketches and justifying the choices.",
-    questionText: "Using notes and a single-line diagram, show a typical layout for BOTH central heating and domestic hot water, supplied by the wood-burning stove combined with the solar collector. Show two independently controlled heating zones, one per floor, and three radiators on each floor. Locate control valves and give typical pipe sizes. Using notes and freehand sketches, show a preferred location for the solar collector that will ensure its maximum efficiency in the specified water-heating system. Using notes and freehand sketches, discuss two considerations that should be taken into account at the design stage when selecting a location for BOTH the chimney and the hot press. Justify your design choices.",
+    stem: "A wood-burning stove combined with a solar collector is to provide central heating and hot water for a three bedroom, two-storey dwelling house.",
+    questionText: "(a) Using notes and a single-line diagram, show a typical design layout for both the heating system and the hot water system. Show two independently controlled heating zones, one on each floor, and include three radiators on each floor. Indicate the location of the control valves and give the typical sizes of the pipework. (b) Using notes and freehand sketches show a preferred location for a solar collector that will ensure its maximum efficiency. (c) Using notes and freehand sketches, discuss two considerations that should be taken into account at the design stage of the house when selecting a location for both the chimney and the hot press. Justify your design choices.",
     tariffModel: {"kind":"fixed"}, totalMarks: 60,
     rows: [
     { id: "a-system", kind: "criterion", verbatim: "Design of zoned plumbing system", marks: 36, contextNote: "Award the best NINE acceptable system details, each sketch 3 plus annotation 1, capped at 36. The source menu includes stove; radiator flow/return; radiators; zone valves and thermostats; header/expansion/storage tank and feeds; expansion pipe/vessel; primary flow/return; pump/valves; solar collector, flow/return and pump; twin-coil cylinder; control panel; expansion and temperature-reducing vessels. Preserve both heat sources, two independently controlled zones and six radiators. For the optional pump/valves criterion, any two applicable radiator/isolating/drain-off components satisfy that ONE detail; do not award an extra 4 marks per item. Notes on the source diagram identify zone thermostats T1/T2 although the drawn labels repeat T2; retain two independent controls.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36] },
@@ -7654,7 +5753,7 @@ export const CARDS: SecCard[] = [
     { id: "c-c-hotpress-notes", kind: "criterion", verbatim: "Hot press", marks: 3, contextNote: "Explain and justify locating the cylinder and associated controls close to the boiler, with short insulated flow/return and distribution pipes. Short runs reduce heat loss, the volume of water to heat and warm-up time; insulate cylinder, pipes and tanks. This is one shared 3-mark notes allowance, not a new tariff for every illustrative reason.", permittedMarks: [0,3] },
     { id: "c-c-hotpress-sketch", kind: "criterion", verbatim: "Hot press", marks: 3, contextNote: "Sketch the hot press/cylinder location and its relationship to the boiler and pipe routes. Use the complete source plan, insulated-pipe and boiler/cylinder illustrations to support the justification. Separate published 3-mark sketch allowance.", permittedMarks: [0,3] },
     ],
-    taskGroups: [{"label":"a","sourceCardId":"cons-2015-hl-q8-a","marks":40,"rowIds":["a-system","a-sizes"]},{"label":"b","sourceCardId":"cons-2015-hl-q8-b","marks":8,"rowIds":["b-notes","b-sketch"]},{"label":"c","sourceCardId":"cons-2015-hl-q8-c","marks":12,"rowIds":["c-c-chimney-notes","c-c-chimney-sketch","c-c-hotpress-notes","c-c-hotpress-sketch"]}],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q8-a","label":"a","marks":40,"rowIds":["a-system","a-sizes"]},{"sourceCardId":"cons-2015-hl-q8-b","label":"b","marks":8,"rowIds":["b-notes","b-sketch"]},{"sourceCardId":"cons-2015-hl-q8-c","label":"c","marks":12,"rowIds":["c-c-chimney-notes","c-c-chimney-sketch","c-c-hotpress-notes","c-c-hotpress-sketch"]}],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 8",
@@ -7664,7 +5763,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The original stove and collector illustrations and complete scheme diagrams are retained. The scheme is an exam model, not an installation specification. Its PV electricity statistic does not answer this solar-thermal water-heating question."
+          "presentationNote": "Original stove and collector sketch retained. Part (c) requires both the chimney and the hot press, each marked separately. The scheme diagrams are exam models, not installation specifications."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q8-original",
@@ -7690,381 +5789,9 @@ export const CARDS: SecCard[] = [
     year: 2015, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q9-a-eaves", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-a-eaves",
-    section: "B", questionRef: "2015 HL Q9(a) — roof/wall junction at eaves",
-    stem: "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
-    questionText: "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the roof/wall junction at eaves. This is one 16-mark location from the printed choose-three task.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 16,
-    rows: [
-    { id: "notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 9",
-          "title": "Four circled thermal-bridge junctions",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q9-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
-          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q9-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
-          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q9-a-upper-floor", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-a-upper-floor",
-    section: "B", questionRef: "2015 HL Q9(a) — upper-floor/external-wall junction",
-    stem: "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
-    questionText: "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the upper-floor/external-wall junction. This is one 16-mark location from the printed choose-three task.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 16,
-    rows: [
-    { id: "notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 9",
-          "title": "Four circled thermal-bridge junctions",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q9-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
-          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q9-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
-          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q9-a-cill", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-a-cill",
-    section: "B", questionRef: "2015 HL Q9(a) — window-cill junction",
-    stem: "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
-    questionText: "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the window-cill junction. This is one 16-mark location from the printed choose-three task.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 16,
-    rows: [
-    { id: "notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 9",
-          "title": "Four circled thermal-bridge junctions",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q9-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
-          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q9-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
-          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q9-a-ground-floor", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-a-ground-floor",
-    section: "B", questionRef: "2015 HL Q9(a) — ground-floor/external-wall junction",
-    stem: "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
-    questionText: "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the ground-floor/external-wall junction. This is one 16-mark location from the printed choose-three task.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 16,
-    rows: [
-    { id: "notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 9",
-          "title": "Four circled thermal-bridge junctions",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q9-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
-          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q9-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
-          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q9-a-eaves-upper-floor-cill", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-a-eaves-upper-floor-cill",
-    section: "B", questionRef: "2015 HL Q9(a) — eaves, upper-floor, cill",
-    stem: "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
-    questionText: "For these THREE circled locations — roof/wall junction at eaves, upper-floor/external-wall junction, window-cill junction — use notes and freehand sketches to show best-practice detailing that prevents a thermal bridge at EACH selected location.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 48,
-    rows: [
-    { id: "a-eaves-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-eaves-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-upper-floor-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-upper-floor-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-cill-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-cill-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    ],
-    taskGroups: [{"label":"a-eaves","sourceCardId":"cons-2015-hl-q9-a-eaves","marks":16,"rowIds":["a-eaves-notes","a-eaves-sketch"]},{"label":"a-upper-floor","sourceCardId":"cons-2015-hl-q9-a-upper-floor","marks":16,"rowIds":["a-upper-floor-notes","a-upper-floor-sketch"]},{"label":"a-cill","sourceCardId":"cons-2015-hl-q9-a-cill","marks":16,"rowIds":["a-cill-notes","a-cill-sketch"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 9",
-          "title": "Four circled thermal-bridge junctions",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q9-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
-          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q9-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
-          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q9-a-eaves-upper-floor-ground-floor", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-a-eaves-upper-floor-ground-floor",
-    section: "B", questionRef: "2015 HL Q9(a) — eaves, upper-floor, ground-floor",
-    stem: "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
-    questionText: "For these THREE circled locations — roof/wall junction at eaves, upper-floor/external-wall junction, ground-floor/external-wall junction — use notes and freehand sketches to show best-practice detailing that prevents a thermal bridge at EACH selected location.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 48,
-    rows: [
-    { id: "a-eaves-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-eaves-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-upper-floor-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-upper-floor-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-ground-floor-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-ground-floor-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    ],
-    taskGroups: [{"label":"a-eaves","sourceCardId":"cons-2015-hl-q9-a-eaves","marks":16,"rowIds":["a-eaves-notes","a-eaves-sketch"]},{"label":"a-upper-floor","sourceCardId":"cons-2015-hl-q9-a-upper-floor","marks":16,"rowIds":["a-upper-floor-notes","a-upper-floor-sketch"]},{"label":"a-ground-floor","sourceCardId":"cons-2015-hl-q9-a-ground-floor","marks":16,"rowIds":["a-ground-floor-notes","a-ground-floor-sketch"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 9",
-          "title": "Four circled thermal-bridge junctions",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q9-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
-          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q9-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
-          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q9-a-eaves-cill-ground-floor", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-a-eaves-cill-ground-floor",
-    section: "B", questionRef: "2015 HL Q9(a) — eaves, cill, ground-floor",
-    stem: "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
-    questionText: "For these THREE circled locations — roof/wall junction at eaves, window-cill junction, ground-floor/external-wall junction — use notes and freehand sketches to show best-practice detailing that prevents a thermal bridge at EACH selected location.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 48,
-    rows: [
-    { id: "a-eaves-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-eaves-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-cill-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-cill-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-ground-floor-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-ground-floor-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    ],
-    taskGroups: [{"label":"a-eaves","sourceCardId":"cons-2015-hl-q9-a-eaves","marks":16,"rowIds":["a-eaves-notes","a-eaves-sketch"]},{"label":"a-cill","sourceCardId":"cons-2015-hl-q9-a-cill","marks":16,"rowIds":["a-cill-notes","a-cill-sketch"]},{"label":"a-ground-floor","sourceCardId":"cons-2015-hl-q9-a-ground-floor","marks":16,"rowIds":["a-ground-floor-notes","a-ground-floor-sketch"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 9",
-          "title": "Four circled thermal-bridge junctions",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q9-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
-          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q9-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
-          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q9-a-upper-floor-cill-ground-floor", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-a-upper-floor-cill-ground-floor",
-    section: "B", questionRef: "2015 HL Q9(a) — upper-floor, cill, ground-floor",
-    stem: "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
-    questionText: "For these THREE circled locations — upper-floor/external-wall junction, window-cill junction, ground-floor/external-wall junction — use notes and freehand sketches to show best-practice detailing that prevents a thermal bridge at EACH selected location.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 48,
-    rows: [
-    { id: "a-upper-floor-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-upper-floor-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-cill-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-cill-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-ground-floor-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-ground-floor-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    ],
-    taskGroups: [{"label":"a-upper-floor","sourceCardId":"cons-2015-hl-q9-a-upper-floor","marks":16,"rowIds":["a-upper-floor-notes","a-upper-floor-sketch"]},{"label":"a-cill","sourceCardId":"cons-2015-hl-q9-a-cill","marks":16,"rowIds":["a-cill-notes","a-cill-sketch"]},{"label":"a-ground-floor","sourceCardId":"cons-2015-hl-q9-a-ground-floor","marks":16,"rowIds":["a-ground-floor-notes","a-ground-floor-sketch"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 9",
-          "title": "Four circled thermal-bridge junctions",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q9-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
-          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q9-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
-          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q9-b", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-b",
     section: "B", questionRef: "2015 HL Q9(b)",
-    stem: "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+    stem: "It is proposed to design the external envelope of a dwelling house to be thermal bridge free. The drawing shows an outline section through a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The roof is a traditional cut roof, the first floor has tongue-and-groove flooring on timber joists and the ground floor is an insulated solid concrete floor.",
     questionText: "Discuss the importance of designing a building envelope that is thermal bridge free.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
@@ -8080,7 +5807,7 @@ export const CARDS: SecCard[] = [
                 5
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+          "presentationNote": "Original section with four circled locations retained. Part (a) chooses any three, each location keeping its own 16 marks; locations are named with the marking scheme’s headings."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q9-original",
@@ -8096,483 +5823,6 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
           "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
           "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q9-complete-eaves-upper-floor-cill", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-complete-eaves-upper-floor-cill",
-    section: "B", questionRef: "2015 HL Q9 — complete: eaves, upper-floor, cill",
-    stem: "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
-    questionText: "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the roof/wall junction at eaves. This is one 16-mark location from the printed choose-three task. Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the upper-floor/external-wall junction. This is one 16-mark location from the printed choose-three task. Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the window-cill junction. This is one 16-mark location from the printed choose-three task. Discuss the importance of designing a building envelope that is thermal bridge free.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-eaves-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-eaves-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-upper-floor-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-upper-floor-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-cill-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-cill-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "b-point-1", kind: "criterion", verbatim: "Discussion (point 1) - 2 marks for point, 4 marks for discussion", marks: 6, contextNote: "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.", permittedMarks: [0,2,4,6] },
-    { id: "b-point-2", kind: "criterion", verbatim: "Discussion (point 2) - 2 marks for point, 4 marks for discussion", marks: 6, contextNote: "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.", permittedMarks: [0,2,4,6] },
-    ],
-    taskGroups: [{"label":"a-eaves","sourceCardId":"cons-2015-hl-q9-a-eaves","marks":16,"rowIds":["a-eaves-notes","a-eaves-sketch"]},{"label":"a-upper-floor","sourceCardId":"cons-2015-hl-q9-a-upper-floor","marks":16,"rowIds":["a-upper-floor-notes","a-upper-floor-sketch"]},{"label":"a-cill","sourceCardId":"cons-2015-hl-q9-a-cill","marks":16,"rowIds":["a-cill-notes","a-cill-sketch"]},{"label":"b","sourceCardId":"cons-2015-hl-q9-b","marks":12,"rowIds":["b-point-1","b-point-2"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 9",
-          "title": "Four circled thermal-bridge junctions",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q9-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
-          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q9-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
-          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q9-complete-eaves-upper-floor-ground-floor", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-complete-eaves-upper-floor-ground-floor",
-    section: "B", questionRef: "2015 HL Q9 — complete: eaves, upper-floor, ground-floor",
-    stem: "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
-    questionText: "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the roof/wall junction at eaves. This is one 16-mark location from the printed choose-three task. Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the upper-floor/external-wall junction. This is one 16-mark location from the printed choose-three task. Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the ground-floor/external-wall junction. This is one 16-mark location from the printed choose-three task. Discuss the importance of designing a building envelope that is thermal bridge free.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-eaves-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-eaves-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-upper-floor-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-upper-floor-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-ground-floor-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-ground-floor-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "b-point-1", kind: "criterion", verbatim: "Discussion (point 1) - 2 marks for point, 4 marks for discussion", marks: 6, contextNote: "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.", permittedMarks: [0,2,4,6] },
-    { id: "b-point-2", kind: "criterion", verbatim: "Discussion (point 2) - 2 marks for point, 4 marks for discussion", marks: 6, contextNote: "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.", permittedMarks: [0,2,4,6] },
-    ],
-    taskGroups: [{"label":"a-eaves","sourceCardId":"cons-2015-hl-q9-a-eaves","marks":16,"rowIds":["a-eaves-notes","a-eaves-sketch"]},{"label":"a-upper-floor","sourceCardId":"cons-2015-hl-q9-a-upper-floor","marks":16,"rowIds":["a-upper-floor-notes","a-upper-floor-sketch"]},{"label":"a-ground-floor","sourceCardId":"cons-2015-hl-q9-a-ground-floor","marks":16,"rowIds":["a-ground-floor-notes","a-ground-floor-sketch"]},{"label":"b","sourceCardId":"cons-2015-hl-q9-b","marks":12,"rowIds":["b-point-1","b-point-2"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 9",
-          "title": "Four circled thermal-bridge junctions",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q9-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
-          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q9-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
-          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q9-complete-eaves-cill-ground-floor", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-complete-eaves-cill-ground-floor",
-    section: "B", questionRef: "2015 HL Q9 — complete: eaves, cill, ground-floor",
-    stem: "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
-    questionText: "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the roof/wall junction at eaves. This is one 16-mark location from the printed choose-three task. Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the window-cill junction. This is one 16-mark location from the printed choose-three task. Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the ground-floor/external-wall junction. This is one 16-mark location from the printed choose-three task. Discuss the importance of designing a building envelope that is thermal bridge free.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-eaves-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-eaves-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-cill-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-cill-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-ground-floor-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-ground-floor-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "b-point-1", kind: "criterion", verbatim: "Discussion (point 1) - 2 marks for point, 4 marks for discussion", marks: 6, contextNote: "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.", permittedMarks: [0,2,4,6] },
-    { id: "b-point-2", kind: "criterion", verbatim: "Discussion (point 2) - 2 marks for point, 4 marks for discussion", marks: 6, contextNote: "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.", permittedMarks: [0,2,4,6] },
-    ],
-    taskGroups: [{"label":"a-eaves","sourceCardId":"cons-2015-hl-q9-a-eaves","marks":16,"rowIds":["a-eaves-notes","a-eaves-sketch"]},{"label":"a-cill","sourceCardId":"cons-2015-hl-q9-a-cill","marks":16,"rowIds":["a-cill-notes","a-cill-sketch"]},{"label":"a-ground-floor","sourceCardId":"cons-2015-hl-q9-a-ground-floor","marks":16,"rowIds":["a-ground-floor-notes","a-ground-floor-sketch"]},{"label":"b","sourceCardId":"cons-2015-hl-q9-b","marks":12,"rowIds":["b-point-1","b-point-2"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 9",
-          "title": "Four circled thermal-bridge junctions",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q9-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
-          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q9-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
-          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q9-complete-upper-floor-cill-ground-floor", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-complete-upper-floor-cill-ground-floor",
-    section: "B", questionRef: "2015 HL Q9 — complete: upper-floor, cill, ground-floor",
-    stem: "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
-    questionText: "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the upper-floor/external-wall junction. This is one 16-mark location from the printed choose-three task. Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the window-cill junction. This is one 16-mark location from the printed choose-three task. Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the ground-floor/external-wall junction. This is one 16-mark location from the printed choose-three task. Discuss the importance of designing a building envelope that is thermal bridge free.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-upper-floor-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-upper-floor-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-cill-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-cill-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "a-ground-floor-notes", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.", permittedMarks: [0,8] },
-    { id: "a-ground-floor-sketch", kind: "criterion", verbatim: "Thermal bridging details - Three locations", marks: 8, contextNote: "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.", permittedMarks: [0,8] },
-    { id: "b-point-1", kind: "criterion", verbatim: "Discussion (point 1) - 2 marks for point, 4 marks for discussion", marks: 6, contextNote: "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.", permittedMarks: [0,2,4,6] },
-    { id: "b-point-2", kind: "criterion", verbatim: "Discussion (point 2) - 2 marks for point, 4 marks for discussion", marks: 6, contextNote: "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.", permittedMarks: [0,2,4,6] },
-    ],
-    taskGroups: [{"label":"a-upper-floor","sourceCardId":"cons-2015-hl-q9-a-upper-floor","marks":16,"rowIds":["a-upper-floor-notes","a-upper-floor-sketch"]},{"label":"a-cill","sourceCardId":"cons-2015-hl-q9-a-cill","marks":16,"rowIds":["a-cill-notes","a-cill-sketch"]},{"label":"a-ground-floor","sourceCardId":"cons-2015-hl-q9-a-ground-floor","marks":16,"rowIds":["a-ground-floor-notes","a-ground-floor-sketch"]},{"label":"b","sourceCardId":"cons-2015-hl-q9-b","marks":12,"rowIds":["b-point-1","b-point-2"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 9",
-          "title": "Four circled thermal-bridge junctions",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q9-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
-          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q9-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
-          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q10-a-airtightness", topicId: "cons-6-5", conceptId: "passive-house-and-daylight-a-airtightness",
-    section: "B", questionRef: "2015 HL Q10(a) — Airtight building envelope",
-    stem: "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
-    questionText: "Using notes and freehand sketches, discuss in detail the importance of airtight building envelope in Passive House design. This is one of the two selected16-mark topics.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 16,
-    rows: [
-    { id: "notes", kind: "criterion", verbatim: "Airtight building envelope", marks: 8, contextNote: "Explain a continuous airtight layer, carefully sealed junctions/penetrations and controlled fresh-air supply. The source examples include taped membranes, plaster continuity, service cavities and blower-door testing. Airtightness limits uncontrolled leakage; it does not eliminate conductive heat loss through the fabric. Do not confuse the airtight barrier with insulation, or omit deliberate ventilation.", permittedMarks: [0,8] },
-    { id: "sketch", kind: "criterion", verbatim: "Airtight building envelope", marks: 8, contextNote: "Sketch an uninterrupted air-barrier line around the section and show continuity at a relevant junction or service penetration, as in the source red-line diagram.", permittedMarks: [0,8] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 10",
-          "title": "Passive House design",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q10-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-original.png",
-          "srcHash": "a64d5009b812b844113ba9a5a7f499bc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q10-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-scheme.png",
-          "srcHash": "be58085c5473be273627bc9e28a56fd0",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q10-a-space-heating", topicId: "cons-5-3", conceptId: "passive-house-and-daylight-a-space-heating",
-    section: "B", questionRef: "2015 HL Q10(a) — Space heating demand",
-    stem: "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
-    questionText: "Using notes and freehand sketches, discuss in detail the importance of space heating demand in Passive House design. This is one of the two selected16-mark topics.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 16,
-    rows: [
-    { id: "notes", kind: "criterion", verbatim: "Space heating demand", marks: 8, contextNote: "Explain the small energy demand for heating indoor spaces, distinguished from domestic hot water and total primary energy. The 2015 scheme cites space-heating demand ≤15 kWh/m² per year and heating load ≤10 W/m²; these are different quantities. Low fabric losses, controlled ventilation and useful gains reduce demand. Its primary-energy factor 2.58 and 120 kWh/m²/year criterion are historical scheme figures, not asserted as current rules.", permittedMarks: [0,8] },
-    { id: "sketch", kind: "criterion", verbatim: "Space heating demand", marks: 8, contextNote: "Use a relevant freehand sketch to connect reduced fabric/ventilation losses and useful heat gains with the low space-heating demand. Label the mechanisms; do not treat a tariff number by itself as the required sketch.", permittedMarks: [0,8] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 10",
-          "title": "Passive House design",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q10-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-original.png",
-          "srcHash": "a64d5009b812b844113ba9a5a7f499bc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q10-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-scheme.png",
-          "srcHash": "be58085c5473be273627bc9e28a56fd0",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q10-a-indoor-air", topicId: "cons-6-5", conceptId: "passive-house-and-daylight-a-indoor-air",
-    section: "B", questionRef: "2015 HL Q10(a) — Indoor air quality",
-    stem: "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
-    questionText: "Using notes and freehand sketches, discuss in detail the importance of indoor air quality in Passive House design. This is one of the two selected16-mark topics.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 16,
-    rows: [
-    { id: "notes", kind: "criterion", verbatim: "Indoor air quality", marks: 8, contextNote: "Explain planned fresh-air supply, extract from wet rooms, filtration, humidity/pollutant control and heat recovery. Supply and extract streams exchange heat without mixing in the model; maintenance and correctly balanced flow matter. The source’s 0.3–0.6 air changes/hour concern designed ventilation; do not present that as the blower-door leakage test. Its plant example is explicitly of small quantitative effect and does not replace ventilation.", permittedMarks: [0,8] },
-    { id: "sketch", kind: "criterion", verbatim: "Indoor air quality", marks: 8, contextNote: "Sketch the supply/extract routes and heat-exchanger arrangement, showing fresh filtered supply to living spaces and moisture/pollutant extraction from wet rooms. Keep the two air streams distinct, using the complete source ventilation diagrams.", permittedMarks: [0,8] },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 10",
-          "title": "Passive House design",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q10-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-original.png",
-          "srcHash": "a64d5009b812b844113ba9a5a7f499bc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q10-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-scheme.png",
-          "srcHash": "be58085c5473be273627bc9e28a56fd0",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q10-a-airtightness-space-heating", topicId: "cons-6-5", conceptId: "passive-house-and-daylight-a-airtightness-space-heating",
-    section: "B", questionRef: "2015 HL Q10(a) — airtightness, space-heating",
-    stem: "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
-    questionText: "Using notes and freehand sketches, discuss in detail the importance of airtight building envelope in Passive House design. This is one of the two selected16-mark topics. Using notes and freehand sketches, discuss in detail the importance of space heating demand in Passive House design. This is one of the two selected16-mark topics.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 32,
-    rows: [
-    { id: "a-airtightness-notes", kind: "criterion", verbatim: "Airtight building envelope", marks: 8, contextNote: "Explain a continuous airtight layer, carefully sealed junctions/penetrations and controlled fresh-air supply. The source examples include taped membranes, plaster continuity, service cavities and blower-door testing. Airtightness limits uncontrolled leakage; it does not eliminate conductive heat loss through the fabric. Do not confuse the airtight barrier with insulation, or omit deliberate ventilation.", permittedMarks: [0,8] },
-    { id: "a-airtightness-sketch", kind: "criterion", verbatim: "Airtight building envelope", marks: 8, contextNote: "Sketch an uninterrupted air-barrier line around the section and show continuity at a relevant junction or service penetration, as in the source red-line diagram.", permittedMarks: [0,8] },
-    { id: "a-space-heating-notes", kind: "criterion", verbatim: "Space heating demand", marks: 8, contextNote: "Explain the small energy demand for heating indoor spaces, distinguished from domestic hot water and total primary energy. The 2015 scheme cites space-heating demand ≤15 kWh/m² per year and heating load ≤10 W/m²; these are different quantities. Low fabric losses, controlled ventilation and useful gains reduce demand. Its primary-energy factor 2.58 and 120 kWh/m²/year criterion are historical scheme figures, not asserted as current rules.", permittedMarks: [0,8] },
-    { id: "a-space-heating-sketch", kind: "criterion", verbatim: "Space heating demand", marks: 8, contextNote: "Use a relevant freehand sketch to connect reduced fabric/ventilation losses and useful heat gains with the low space-heating demand. Label the mechanisms; do not treat a tariff number by itself as the required sketch.", permittedMarks: [0,8] },
-    ],
-    taskGroups: [{"label":"a-airtightness","sourceCardId":"cons-2015-hl-q10-a-airtightness","marks":16,"rowIds":["a-airtightness-notes","a-airtightness-sketch"]},{"label":"a-space-heating","sourceCardId":"cons-2015-hl-q10-a-space-heating","marks":16,"rowIds":["a-space-heating-notes","a-space-heating-sketch"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 10",
-          "title": "Passive House design",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q10-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-original.png",
-          "srcHash": "a64d5009b812b844113ba9a5a7f499bc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q10-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-scheme.png",
-          "srcHash": "be58085c5473be273627bc9e28a56fd0",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q10-a-airtightness-indoor-air", topicId: "cons-6-5", conceptId: "passive-house-and-daylight-a-airtightness-indoor-air",
-    section: "B", questionRef: "2015 HL Q10(a) — airtightness, indoor-air",
-    stem: "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
-    questionText: "Using notes and freehand sketches, discuss in detail the importance of airtight building envelope in Passive House design. This is one of the two selected16-mark topics. Using notes and freehand sketches, discuss in detail the importance of indoor air quality in Passive House design. This is one of the two selected16-mark topics.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 32,
-    rows: [
-    { id: "a-airtightness-notes", kind: "criterion", verbatim: "Airtight building envelope", marks: 8, contextNote: "Explain a continuous airtight layer, carefully sealed junctions/penetrations and controlled fresh-air supply. The source examples include taped membranes, plaster continuity, service cavities and blower-door testing. Airtightness limits uncontrolled leakage; it does not eliminate conductive heat loss through the fabric. Do not confuse the airtight barrier with insulation, or omit deliberate ventilation.", permittedMarks: [0,8] },
-    { id: "a-airtightness-sketch", kind: "criterion", verbatim: "Airtight building envelope", marks: 8, contextNote: "Sketch an uninterrupted air-barrier line around the section and show continuity at a relevant junction or service penetration, as in the source red-line diagram.", permittedMarks: [0,8] },
-    { id: "a-indoor-air-notes", kind: "criterion", verbatim: "Indoor air quality", marks: 8, contextNote: "Explain planned fresh-air supply, extract from wet rooms, filtration, humidity/pollutant control and heat recovery. Supply and extract streams exchange heat without mixing in the model; maintenance and correctly balanced flow matter. The source’s 0.3–0.6 air changes/hour concern designed ventilation; do not present that as the blower-door leakage test. Its plant example is explicitly of small quantitative effect and does not replace ventilation.", permittedMarks: [0,8] },
-    { id: "a-indoor-air-sketch", kind: "criterion", verbatim: "Indoor air quality", marks: 8, contextNote: "Sketch the supply/extract routes and heat-exchanger arrangement, showing fresh filtered supply to living spaces and moisture/pollutant extraction from wet rooms. Keep the two air streams distinct, using the complete source ventilation diagrams.", permittedMarks: [0,8] },
-    ],
-    taskGroups: [{"label":"a-airtightness","sourceCardId":"cons-2015-hl-q10-a-airtightness","marks":16,"rowIds":["a-airtightness-notes","a-airtightness-sketch"]},{"label":"a-indoor-air","sourceCardId":"cons-2015-hl-q10-a-indoor-air","marks":16,"rowIds":["a-indoor-air-notes","a-indoor-air-sketch"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 10",
-          "title": "Passive House design",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q10-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-original.png",
-          "srcHash": "a64d5009b812b844113ba9a5a7f499bc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q10-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-scheme.png",
-          "srcHash": "be58085c5473be273627bc9e28a56fd0",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q10-a-space-heating-indoor-air", topicId: "cons-5-3", conceptId: "passive-house-and-daylight-a-space-heating-indoor-air",
-    section: "B", questionRef: "2015 HL Q10(a) — space-heating, indoor-air",
-    stem: "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
-    questionText: "Using notes and freehand sketches, discuss in detail the importance of space heating demand in Passive House design. This is one of the two selected16-mark topics. Using notes and freehand sketches, discuss in detail the importance of indoor air quality in Passive House design. This is one of the two selected16-mark topics.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 32,
-    rows: [
-    { id: "a-space-heating-notes", kind: "criterion", verbatim: "Space heating demand", marks: 8, contextNote: "Explain the small energy demand for heating indoor spaces, distinguished from domestic hot water and total primary energy. The 2015 scheme cites space-heating demand ≤15 kWh/m² per year and heating load ≤10 W/m²; these are different quantities. Low fabric losses, controlled ventilation and useful gains reduce demand. Its primary-energy factor 2.58 and 120 kWh/m²/year criterion are historical scheme figures, not asserted as current rules.", permittedMarks: [0,8] },
-    { id: "a-space-heating-sketch", kind: "criterion", verbatim: "Space heating demand", marks: 8, contextNote: "Use a relevant freehand sketch to connect reduced fabric/ventilation losses and useful heat gains with the low space-heating demand. Label the mechanisms; do not treat a tariff number by itself as the required sketch.", permittedMarks: [0,8] },
-    { id: "a-indoor-air-notes", kind: "criterion", verbatim: "Indoor air quality", marks: 8, contextNote: "Explain planned fresh-air supply, extract from wet rooms, filtration, humidity/pollutant control and heat recovery. Supply and extract streams exchange heat without mixing in the model; maintenance and correctly balanced flow matter. The source’s 0.3–0.6 air changes/hour concern designed ventilation; do not present that as the blower-door leakage test. Its plant example is explicitly of small quantitative effect and does not replace ventilation.", permittedMarks: [0,8] },
-    { id: "a-indoor-air-sketch", kind: "criterion", verbatim: "Indoor air quality", marks: 8, contextNote: "Sketch the supply/extract routes and heat-exchanger arrangement, showing fresh filtered supply to living spaces and moisture/pollutant extraction from wet rooms. Keep the two air streams distinct, using the complete source ventilation diagrams.", permittedMarks: [0,8] },
-    ],
-    taskGroups: [{"label":"a-space-heating","sourceCardId":"cons-2015-hl-q10-a-space-heating","marks":16,"rowIds":["a-space-heating-notes","a-space-heating-sketch"]},{"label":"a-indoor-air","sourceCardId":"cons-2015-hl-q10-a-indoor-air","marks":16,"rowIds":["a-indoor-air-notes","a-indoor-air-sketch"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 10",
-          "title": "Passive House design",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q10-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-original.png",
-          "srcHash": "a64d5009b812b844113ba9a5a7f499bc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q10-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-scheme.png",
-          "srcHash": "be58085c5473be273627bc9e28a56fd0",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
           "solution": true,
           "lettersVisible": []
@@ -8585,8 +5835,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q10-b", topicId: "cons-6-4", conceptId: "passive-house-and-daylight-b",
     section: "B", questionRef: "2015 HL Q10(b)",
-    stem: "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
-    questionText: "Using notes and freehand sketches, discuss the importance of thermal mass in Passive House design.",
+    questionText: "Using notes and freehand sketches, discuss the importance of thermal mass in the design of a Passive House.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
     { id: "notes", kind: "criterion", verbatim: "Importance of thermal mass", marks: 7, contextNote: "Explain how exposed heavy materials absorb and store heat and release it later, moderating and delaying temperature peaks. The source examples include concrete floors/walls, brick and stone, with high density and heat capacity and suitable conductivity. Thermal mass must work with useful solar gain, shading and ventilation; it is not the same as thermal insulation.", permittedMarks: [0,7] },
@@ -8601,7 +5850,7 @@ export const CARDS: SecCard[] = [
                 5
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+          "presentationNote": "Original Passive House sketch retained. Part (a) chooses any two of three printed items, each keeping its own 16 marks. The 2015 scheme’s energy figures are historical, not current regulations."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q10-original",
@@ -8629,7 +5878,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q10-c", topicId: "cons-6-4", conceptId: "passive-house-and-daylight-c",
     section: "B", questionRef: "2015 HL Q10(c)",
-    stem: "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
     questionText: "Using notes and freehand sketches, discuss the function of carefully designed solar shading for the Passive House shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
@@ -8645,160 +5893,7 @@ export const CARDS: SecCard[] = [
                 5
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q10-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-original.png",
-          "srcHash": "a64d5009b812b844113ba9a5a7f499bc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q10-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-scheme.png",
-          "srcHash": "be58085c5473be273627bc9e28a56fd0",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q10-complete-airtightness-space-heating", topicId: "cons-6-5", conceptId: "passive-house-and-daylight-complete-airtightness-space-heating",
-    section: "B", questionRef: "2015 HL Q10 — complete: airtightness, space-heating",
-    stem: "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
-    questionText: "Using notes and freehand sketches, discuss in detail the importance of airtight building envelope in Passive House design. This is one of the two selected16-mark topics. Using notes and freehand sketches, discuss in detail the importance of space heating demand in Passive House design. This is one of the two selected16-mark topics. Using notes and freehand sketches, discuss the importance of thermal mass in Passive House design. Using notes and freehand sketches, discuss the function of carefully designed solar shading for the Passive House shown.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-airtightness-notes", kind: "criterion", verbatim: "Airtight building envelope", marks: 8, contextNote: "Explain a continuous airtight layer, carefully sealed junctions/penetrations and controlled fresh-air supply. The source examples include taped membranes, plaster continuity, service cavities and blower-door testing. Airtightness limits uncontrolled leakage; it does not eliminate conductive heat loss through the fabric. Do not confuse the airtight barrier with insulation, or omit deliberate ventilation.", permittedMarks: [0,8] },
-    { id: "a-airtightness-sketch", kind: "criterion", verbatim: "Airtight building envelope", marks: 8, contextNote: "Sketch an uninterrupted air-barrier line around the section and show continuity at a relevant junction or service penetration, as in the source red-line diagram.", permittedMarks: [0,8] },
-    { id: "a-space-heating-notes", kind: "criterion", verbatim: "Space heating demand", marks: 8, contextNote: "Explain the small energy demand for heating indoor spaces, distinguished from domestic hot water and total primary energy. The 2015 scheme cites space-heating demand ≤15 kWh/m² per year and heating load ≤10 W/m²; these are different quantities. Low fabric losses, controlled ventilation and useful gains reduce demand. Its primary-energy factor 2.58 and 120 kWh/m²/year criterion are historical scheme figures, not asserted as current rules.", permittedMarks: [0,8] },
-    { id: "a-space-heating-sketch", kind: "criterion", verbatim: "Space heating demand", marks: 8, contextNote: "Use a relevant freehand sketch to connect reduced fabric/ventilation losses and useful heat gains with the low space-heating demand. Label the mechanisms; do not treat a tariff number by itself as the required sketch.", permittedMarks: [0,8] },
-    { id: "b-notes", kind: "criterion", verbatim: "Importance of thermal mass", marks: 7, contextNote: "Explain how exposed heavy materials absorb and store heat and release it later, moderating and delaying temperature peaks. The source examples include concrete floors/walls, brick and stone, with high density and heat capacity and suitable conductivity. Thermal mass must work with useful solar gain, shading and ventilation; it is not the same as thermal insulation.", permittedMarks: [0,7] },
-    { id: "b-sketch", kind: "criterion", verbatim: "Importance of thermal mass", marks: 7, contextNote: "Sketch solar radiation entering glazing, absorption/storage in the floor or wall and later heat release to the occupied space, as in the source model. Make the time-shifted storage/release mechanism clear.", permittedMarks: [0,7] },
-    { id: "c-notes", kind: "criterion", verbatim: "Carefully designed solar shading", marks: 7, contextNote: "Explain limiting excessive direct summer gain and glare while allowing useful winter sun. Source examples include correctly sized overhangs, brise-soleil, adjustable external screens, blinds and balconies without thermal bridges. Select and justify suitable design details for the illustrated house; do not treat the example list as a compulsory finite pool.", permittedMarks: [0,7] },
-    { id: "c-sketch", kind: "criterion", verbatim: "Carefully designed solar shading", marks: 7, contextNote: "Sketch the chosen shading detail and the high summer/low winter sun paths, or the operation of adjustable shading, to explain the function. Retain the illustrated house as context and distinguish external interception of sunlight from internal blinds. The source provides several complete alternative model drawings.", permittedMarks: [0,7] },
-    ],
-    taskGroups: [{"label":"a-airtightness","sourceCardId":"cons-2015-hl-q10-a-airtightness","marks":16,"rowIds":["a-airtightness-notes","a-airtightness-sketch"]},{"label":"a-space-heating","sourceCardId":"cons-2015-hl-q10-a-space-heating","marks":16,"rowIds":["a-space-heating-notes","a-space-heating-sketch"]},{"label":"b","sourceCardId":"cons-2015-hl-q10-b","marks":14,"rowIds":["b-notes","b-sketch"]},{"label":"c","sourceCardId":"cons-2015-hl-q10-c","marks":14,"rowIds":["c-notes","c-sketch"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 10",
-          "title": "Passive House design",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q10-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-original.png",
-          "srcHash": "a64d5009b812b844113ba9a5a7f499bc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q10-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-scheme.png",
-          "srcHash": "be58085c5473be273627bc9e28a56fd0",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q10-complete-airtightness-indoor-air", topicId: "cons-6-5", conceptId: "passive-house-and-daylight-complete-airtightness-indoor-air",
-    section: "B", questionRef: "2015 HL Q10 — complete: airtightness, indoor-air",
-    stem: "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
-    questionText: "Using notes and freehand sketches, discuss in detail the importance of airtight building envelope in Passive House design. This is one of the two selected16-mark topics. Using notes and freehand sketches, discuss in detail the importance of indoor air quality in Passive House design. This is one of the two selected16-mark topics. Using notes and freehand sketches, discuss the importance of thermal mass in Passive House design. Using notes and freehand sketches, discuss the function of carefully designed solar shading for the Passive House shown.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-airtightness-notes", kind: "criterion", verbatim: "Airtight building envelope", marks: 8, contextNote: "Explain a continuous airtight layer, carefully sealed junctions/penetrations and controlled fresh-air supply. The source examples include taped membranes, plaster continuity, service cavities and blower-door testing. Airtightness limits uncontrolled leakage; it does not eliminate conductive heat loss through the fabric. Do not confuse the airtight barrier with insulation, or omit deliberate ventilation.", permittedMarks: [0,8] },
-    { id: "a-airtightness-sketch", kind: "criterion", verbatim: "Airtight building envelope", marks: 8, contextNote: "Sketch an uninterrupted air-barrier line around the section and show continuity at a relevant junction or service penetration, as in the source red-line diagram.", permittedMarks: [0,8] },
-    { id: "a-indoor-air-notes", kind: "criterion", verbatim: "Indoor air quality", marks: 8, contextNote: "Explain planned fresh-air supply, extract from wet rooms, filtration, humidity/pollutant control and heat recovery. Supply and extract streams exchange heat without mixing in the model; maintenance and correctly balanced flow matter. The source’s 0.3–0.6 air changes/hour concern designed ventilation; do not present that as the blower-door leakage test. Its plant example is explicitly of small quantitative effect and does not replace ventilation.", permittedMarks: [0,8] },
-    { id: "a-indoor-air-sketch", kind: "criterion", verbatim: "Indoor air quality", marks: 8, contextNote: "Sketch the supply/extract routes and heat-exchanger arrangement, showing fresh filtered supply to living spaces and moisture/pollutant extraction from wet rooms. Keep the two air streams distinct, using the complete source ventilation diagrams.", permittedMarks: [0,8] },
-    { id: "b-notes", kind: "criterion", verbatim: "Importance of thermal mass", marks: 7, contextNote: "Explain how exposed heavy materials absorb and store heat and release it later, moderating and delaying temperature peaks. The source examples include concrete floors/walls, brick and stone, with high density and heat capacity and suitable conductivity. Thermal mass must work with useful solar gain, shading and ventilation; it is not the same as thermal insulation.", permittedMarks: [0,7] },
-    { id: "b-sketch", kind: "criterion", verbatim: "Importance of thermal mass", marks: 7, contextNote: "Sketch solar radiation entering glazing, absorption/storage in the floor or wall and later heat release to the occupied space, as in the source model. Make the time-shifted storage/release mechanism clear.", permittedMarks: [0,7] },
-    { id: "c-notes", kind: "criterion", verbatim: "Carefully designed solar shading", marks: 7, contextNote: "Explain limiting excessive direct summer gain and glare while allowing useful winter sun. Source examples include correctly sized overhangs, brise-soleil, adjustable external screens, blinds and balconies without thermal bridges. Select and justify suitable design details for the illustrated house; do not treat the example list as a compulsory finite pool.", permittedMarks: [0,7] },
-    { id: "c-sketch", kind: "criterion", verbatim: "Carefully designed solar shading", marks: 7, contextNote: "Sketch the chosen shading detail and the high summer/low winter sun paths, or the operation of adjustable shading, to explain the function. Retain the illustrated house as context and distinguish external interception of sunlight from internal blinds. The source provides several complete alternative model drawings.", permittedMarks: [0,7] },
-    ],
-    taskGroups: [{"label":"a-airtightness","sourceCardId":"cons-2015-hl-q10-a-airtightness","marks":16,"rowIds":["a-airtightness-notes","a-airtightness-sketch"]},{"label":"a-indoor-air","sourceCardId":"cons-2015-hl-q10-a-indoor-air","marks":16,"rowIds":["a-indoor-air-notes","a-indoor-air-sketch"]},{"label":"b","sourceCardId":"cons-2015-hl-q10-b","marks":14,"rowIds":["b-notes","b-sketch"]},{"label":"c","sourceCardId":"cons-2015-hl-q10-c","marks":14,"rowIds":["c-notes","c-sketch"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 10",
-          "title": "Passive House design",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
-    },
-    questionFigure: {
-          "candId": "construction-studies-2015-HL-q10-original",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-original.png",
-          "srcHash": "a64d5009b812b844113ba9a5a7f499bc",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: source question and illustration, original.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "includesPrompt": true
-    },
-    figure: {
-          "candId": "construction-studies-2015-HL-q10-scheme",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-scheme.png",
-          "srcHash": "be58085c5473be273627bc9e28a56fd0",
-          "alt": "Original SEC 2015 Higher Construction Studies Question 10: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "solution": true,
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2015, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    id: "cons-2015-hl-q10-complete-space-heating-indoor-air", topicId: "cons-5-3", conceptId: "passive-house-and-daylight-complete-space-heating-indoor-air",
-    section: "B", questionRef: "2015 HL Q10 — complete: space-heating, indoor-air",
-    stem: "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
-    questionText: "Using notes and freehand sketches, discuss in detail the importance of space heating demand in Passive House design. This is one of the two selected16-mark topics. Using notes and freehand sketches, discuss in detail the importance of indoor air quality in Passive House design. This is one of the two selected16-mark topics. Using notes and freehand sketches, discuss the importance of thermal mass in Passive House design. Using notes and freehand sketches, discuss the function of carefully designed solar shading for the Passive House shown.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 60,
-    rows: [
-    { id: "a-space-heating-notes", kind: "criterion", verbatim: "Space heating demand", marks: 8, contextNote: "Explain the small energy demand for heating indoor spaces, distinguished from domestic hot water and total primary energy. The 2015 scheme cites space-heating demand ≤15 kWh/m² per year and heating load ≤10 W/m²; these are different quantities. Low fabric losses, controlled ventilation and useful gains reduce demand. Its primary-energy factor 2.58 and 120 kWh/m²/year criterion are historical scheme figures, not asserted as current rules.", permittedMarks: [0,8] },
-    { id: "a-space-heating-sketch", kind: "criterion", verbatim: "Space heating demand", marks: 8, contextNote: "Use a relevant freehand sketch to connect reduced fabric/ventilation losses and useful heat gains with the low space-heating demand. Label the mechanisms; do not treat a tariff number by itself as the required sketch.", permittedMarks: [0,8] },
-    { id: "a-indoor-air-notes", kind: "criterion", verbatim: "Indoor air quality", marks: 8, contextNote: "Explain planned fresh-air supply, extract from wet rooms, filtration, humidity/pollutant control and heat recovery. Supply and extract streams exchange heat without mixing in the model; maintenance and correctly balanced flow matter. The source’s 0.3–0.6 air changes/hour concern designed ventilation; do not present that as the blower-door leakage test. Its plant example is explicitly of small quantitative effect and does not replace ventilation.", permittedMarks: [0,8] },
-    { id: "a-indoor-air-sketch", kind: "criterion", verbatim: "Indoor air quality", marks: 8, contextNote: "Sketch the supply/extract routes and heat-exchanger arrangement, showing fresh filtered supply to living spaces and moisture/pollutant extraction from wet rooms. Keep the two air streams distinct, using the complete source ventilation diagrams.", permittedMarks: [0,8] },
-    { id: "b-notes", kind: "criterion", verbatim: "Importance of thermal mass", marks: 7, contextNote: "Explain how exposed heavy materials absorb and store heat and release it later, moderating and delaying temperature peaks. The source examples include concrete floors/walls, brick and stone, with high density and heat capacity and suitable conductivity. Thermal mass must work with useful solar gain, shading and ventilation; it is not the same as thermal insulation.", permittedMarks: [0,7] },
-    { id: "b-sketch", kind: "criterion", verbatim: "Importance of thermal mass", marks: 7, contextNote: "Sketch solar radiation entering glazing, absorption/storage in the floor or wall and later heat release to the occupied space, as in the source model. Make the time-shifted storage/release mechanism clear.", permittedMarks: [0,7] },
-    { id: "c-notes", kind: "criterion", verbatim: "Carefully designed solar shading", marks: 7, contextNote: "Explain limiting excessive direct summer gain and glare while allowing useful winter sun. Source examples include correctly sized overhangs, brise-soleil, adjustable external screens, blinds and balconies without thermal bridges. Select and justify suitable design details for the illustrated house; do not treat the example list as a compulsory finite pool.", permittedMarks: [0,7] },
-    { id: "c-sketch", kind: "criterion", verbatim: "Carefully designed solar shading", marks: 7, contextNote: "Sketch the chosen shading detail and the high summer/low winter sun paths, or the operation of adjustable shading, to explain the function. Retain the illustrated house as context and distinguish external interception of sunlight from internal blinds. The source provides several complete alternative model drawings.", permittedMarks: [0,7] },
-    ],
-    taskGroups: [{"label":"a-space-heating","sourceCardId":"cons-2015-hl-q10-a-space-heating","marks":16,"rowIds":["a-space-heating-notes","a-space-heating-sketch"]},{"label":"a-indoor-air","sourceCardId":"cons-2015-hl-q10-a-indoor-air","marks":16,"rowIds":["a-indoor-air-notes","a-indoor-air-sketch"]},{"label":"b","sourceCardId":"cons-2015-hl-q10-b","marks":14,"rowIds":["b-notes","b-sketch"]},{"label":"c","sourceCardId":"cons-2015-hl-q10-c","marks":14,"rowIds":["c-notes","c-sketch"]}],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "ORIGINAL QUESTION 10",
-          "title": "Passive House design",
-          "pages": [
-                1,
-                5
-          ],
-          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+          "presentationNote": "Original Passive House sketch retained. Part (a) chooses any two of three printed items, each keeping its own 16 marks. The 2015 scheme’s energy figures are historical, not current regulations."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q10-original",
@@ -8826,8 +5921,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q10-alt-discussion", topicId: "cons-7-4", conceptId: "passive-house-and-daylight-alt-discussion",
     section: "B", questionRef: "2015 HL Q10-alt — discussion",
-    stem: "This is the ALTERNATIVE Question 10, based on the original printed passage adapted from Dermot Bannon, LOVE YOUR HOME: Secrets to a Successful Space (2014), Gill & Macmillan, ISBN 9780717164486. Read the complete passage in the attached original question. It discusses the role of light in architecture and wellbeing, changing glass technology, the limited daylight in many older Irish homes, lower-U-value glazing and the attraction of natural light. Discuss the statement, explain glazing advances and recommend THREE best-practice daylight guidelines. The passage’s description of glazing without heat loss is qualitative rhetoric: a low U-value reduces heat loss rather than eliminating it. This alternative is a single 60-mark route, not an addition to the primary Passive House question.",
-    questionText: "Discuss the original printed statement about light, architecture and the changing use of glazing in detail.",
+    stem: "Light is what architecture is all about. It is as fundamental for the soul as air, fire, earth and water. Light has been one of the key elements of architecture since the Modern movement began (and glass technology improved) at the turn of the 20th century. Yet, light has traditionally been lacking in Irish homes. Many old cottages only have windows on the south side and none on the north. Now glass has improved and windows can be made with incredibly low U-values (meaning it doesn’t let the cold through), so you can now have large glazed areas without heat loss. We need light and instinctively search for it. People move to the part of the room where there is natural light and children instinctively play in pools of light. Adapted from LOVE YOUR HOME Secrets to a Successful Space by Dermot Bannon (2014) Published by Gill & Macmillan. ISBN: 978 07171 6448 6",
+    questionText: "Discuss the above statement in detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
     { id: "point-1", kind: "criterion", verbatim: "Discussion – point 1 (3 for point, 5 for discussion)", marks: 8, contextNote: "Develop one distinct, relevant point from the passage: the importance of daylight for the quality and use of spaces; the changing architectural possibilities of glass; the contrast with older limited/draughty glazing; orientation and room layout; the relationship between light, views and occupants. Award point 3 and discussion 5, without repeating another point. Discuss the qualitative passage critically: lower U-values reduce heat loss, rather than making it zero. Historical commentary is not a current-law claim.", permittedMarks: [0,3,5,8] },
@@ -8843,7 +5938,7 @@ export const CARDS: SecCard[] = [
                 5
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission. Passage adapted from Dermot Bannon (2014), Gill & Macmillan, as credited on the original paper.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q10-alternative",
@@ -8862,8 +5957,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q10-alt-glazing", topicId: "cons-3-6", conceptId: "passive-house-and-daylight-alt-glazing",
     section: "B", questionRef: "2015 HL Q10-alt — glazing advances",
-    stem: "This is the ALTERNATIVE Question 10, based on the original printed passage adapted from Dermot Bannon, LOVE YOUR HOME: Secrets to a Successful Space (2014), Gill & Macmillan, ISBN 9780717164486. Read the complete passage in the attached original question. It discusses the role of light in architecture and wellbeing, changing glass technology, the limited daylight in many older Irish homes, lower-U-value glazing and the attraction of natural light. Discuss the statement, explain glazing advances and recommend THREE best-practice daylight guidelines. The passage’s description of glazing without heat loss is qualitative rhetoric: a low U-value reduces heat loss rather than eliminating it. This alternative is a single 60-mark route, not an addition to the primary Passive House question.",
-    questionText: "Outline how advances in glazing technology have led to increased use of glass in house design, in the context of the printed passage.",
+    stem: "Light is what architecture is all about. It is as fundamental for the soul as air, fire, earth and water. Light has been one of the key elements of architecture since the Modern movement began (and glass technology improved) at the turn of the 20th century. Yet, light has traditionally been lacking in Irish homes. Many old cottages only have windows on the south side and none on the north. Now glass has improved and windows can be made with incredibly low U-values (meaning it doesn’t let the cold through), so you can now have large glazed areas without heat loss. We need light and instinctively search for it. People move to the part of the room where there is natural light and children instinctively play in pools of light. Adapted from LOVE YOUR HOME Secrets to a Successful Space by Dermot Bannon (2014) Published by Gill & Macmillan. ISBN: 978 07171 6448 6",
+    questionText: "Outline how advances in glazing technology have led to the increased use of glass in house design.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "advances", kind: "criterion", verbatim: "Advances in glazing technology - increased use of glass", marks: 6, contextNote: "Explain relevant improvements and their design consequences, for example low-emissivity coatings reducing radiant heat transfer, insulating/vacuum glazing, safer laminated or structural glazing, or controllable tint. This is one shared 6-mark allowance; the scheme does not publish a separate mark per technology. The source’s claim that low iron content itself reduces conductivity is not used as a required technical explanation. Lower U-values permit reduced heat loss; they do not mean no heat transfer at all.", permittedMarks: [0,6] },
@@ -8877,7 +5972,7 @@ export const CARDS: SecCard[] = [
                 5
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission. Passage adapted from Dermot Bannon (2014), Gill & Macmillan, as credited on the original paper.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q10-alternative",
@@ -8895,9 +5990,9 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q10-alt-guidelines", topicId: "cons-7-4", conceptId: "passive-house-and-daylight-alt-guidelines",
-    section: "B", questionRef: "2015 HL Q10-alt — three guidelines",
-    stem: "This is the ALTERNATIVE Question 10, based on the original printed passage adapted from Dermot Bannon, LOVE YOUR HOME: Secrets to a Successful Space (2014), Gill & Macmillan, ISBN 9780717164486. Read the complete passage in the attached original question. It discusses the role of light in architecture and wellbeing, changing glass technology, the limited daylight in many older Irish homes, lower-U-value glazing and the attraction of natural light. Discuss the statement, explain glazing advances and recommend THREE best-practice daylight guidelines. The passage’s description of glazing without heat loss is qualitative rhetoric: a low U-value reduces heat loss rather than eliminating it. This alternative is a single 60-mark route, not an addition to the primary Passive House question.",
-    questionText: "Recommend THREE best-practice guidelines that would encourage better use of natural light in contemporary dwelling-house design. Explain each recommendation.",
+    section: "B", questionRef: "2015 HL Q10-alt — guidelines",
+    stem: "Light is what architecture is all about. It is as fundamental for the soul as air, fire, earth and water. Light has been one of the key elements of architecture since the Modern movement began (and glass technology improved) at the turn of the 20th century. Yet, light has traditionally been lacking in Irish homes. Many old cottages only have windows on the south side and none on the north. Now glass has improved and windows can be made with incredibly low U-values (meaning it doesn’t let the cold through), so you can now have large glazed areas without heat loss. We need light and instinctively search for it. People move to the part of the room where there is natural light and children instinctively play in pools of light. Adapted from LOVE YOUR HOME Secrets to a Successful Space by Dermot Bannon (2014) Published by Gill & Macmillan. ISBN: 978 07171 6448 6",
+    questionText: "Recommend three best practice guidelines that would encourage better use of natural light in the design of contemporary dwelling houses.",
     tariffModel: {"kind":"fixed"}, totalMarks: 30,
     rows: [
     { id: "guideline-1", kind: "criterion", verbatim: "Guideline 1 (4 for point, 6 for discussion)", marks: 10, contextNote: "Give a distinct practical guideline(point 4) and explain how it improves natural lighting(discussion 6). The scheme accepts orientation and considered glazing position, shallow plans, rooflights/internal glazing, adapting existing houses, sustainable planning/incentives or design education. Connect each recommendation to daylight access and occupants while considering glare/overheating. These are illustrative open choices, not a fixed choose-three list; do not repeat the same guideline.", permittedMarks: [0,4,6,10] },
@@ -8913,7 +6008,7 @@ export const CARDS: SecCard[] = [
                 5
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission. Passage adapted from Dermot Bannon (2014), Gill & Macmillan, as credited on the original paper.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q10-alternative",
@@ -8931,20 +6026,20 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
     id: "cons-2015-hl-q10-alt-complete", topicId: "cons-7-4", conceptId: "passive-house-and-daylight-alt-complete",
-    section: "B", questionRef: "2015 HL Q10-alt — complete alternative",
-    stem: "This is the ALTERNATIVE Question 10, based on the original printed passage adapted from Dermot Bannon, LOVE YOUR HOME: Secrets to a Successful Space (2014), Gill & Macmillan, ISBN 9780717164486. Read the complete passage in the attached original question. It discusses the role of light in architecture and wellbeing, changing glass technology, the limited daylight in many older Irish homes, lower-U-value glazing and the attraction of natural light. Discuss the statement, explain glazing advances and recommend THREE best-practice daylight guidelines. The passage’s description of glazing without heat loss is qualitative rhetoric: a low U-value reduces heat loss rather than eliminating it. This alternative is a single 60-mark route, not an addition to the primary Passive House question.",
-    questionText: "Discuss the original printed statement about light, architecture and the changing use of glazing in detail. Outline how advances in glazing technology have led to increased use of glass in house design, in the context of the printed passage. Recommend THREE best-practice guidelines that would encourage better use of natural light in contemporary dwelling-house design. Explain each recommendation.",
+    section: "B", questionRef: "2015 HL Q10-alt — complete",
+    stem: "Light is what architecture is all about. It is as fundamental for the soul as air, fire, earth and water. Light has been one of the key elements of architecture since the Modern movement began (and glass technology improved) at the turn of the 20th century. Yet, light has traditionally been lacking in Irish homes. Many old cottages only have windows on the south side and none on the north. Now glass has improved and windows can be made with incredibly low U-values (meaning it doesn’t let the cold through), so you can now have large glazed areas without heat loss. We need light and instinctively search for it. People move to the part of the room where there is natural light and children instinctively play in pools of light. Adapted from LOVE YOUR HOME Secrets to a Successful Space by Dermot Bannon (2014) Published by Gill & Macmillan. ISBN: 978 07171 6448 6",
+    questionText: "Discuss the above statement in detail and outline how advances in glazing technology have led to the increased use of glass in house design. Recommend three best practice guidelines that would encourage better use of natural light in the design of contemporary dwelling houses.",
     tariffModel: {"kind":"fixed"}, totalMarks: 60,
     rows: [
-    { id: "alt-discussion-point-1", kind: "criterion", verbatim: "Discussion – point 1 (3 for point, 5 for discussion)", marks: 8, contextNote: "Develop one distinct, relevant point from the passage: the importance of daylight for the quality and use of spaces; the changing architectural possibilities of glass; the contrast with older limited/draughty glazing; orientation and room layout; the relationship between light, views and occupants. Award point 3 and discussion 5, without repeating another point. Discuss the qualitative passage critically: lower U-values reduce heat loss, rather than making it zero. Historical commentary is not a current-law claim.", permittedMarks: [0,3,5,8] },
-    { id: "alt-discussion-point-2", kind: "criterion", verbatim: "Discussion – point 2 (3 for point, 5 for discussion)", marks: 8, contextNote: "Develop one distinct, relevant point from the passage: the importance of daylight for the quality and use of spaces; the changing architectural possibilities of glass; the contrast with older limited/draughty glazing; orientation and room layout; the relationship between light, views and occupants. Award point 3 and discussion 5, without repeating another point. Discuss the qualitative passage critically: lower U-values reduce heat loss, rather than making it zero. Historical commentary is not a current-law claim.", permittedMarks: [0,3,5,8] },
-    { id: "alt-discussion-point-3", kind: "criterion", verbatim: "Discussion – point 3 (3 for point, 5 for discussion)", marks: 8, contextNote: "Develop one distinct, relevant point from the passage: the importance of daylight for the quality and use of spaces; the changing architectural possibilities of glass; the contrast with older limited/draughty glazing; orientation and room layout; the relationship between light, views and occupants. Award point 3 and discussion 5, without repeating another point. Discuss the qualitative passage critically: lower U-values reduce heat loss, rather than making it zero. Historical commentary is not a current-law claim.", permittedMarks: [0,3,5,8] },
-    { id: "alt-glazing-advances", kind: "criterion", verbatim: "Advances in glazing technology - increased use of glass", marks: 6, contextNote: "Explain relevant improvements and their design consequences, for example low-emissivity coatings reducing radiant heat transfer, insulating/vacuum glazing, safer laminated or structural glazing, or controllable tint. This is one shared 6-mark allowance; the scheme does not publish a separate mark per technology. The source’s claim that low iron content itself reduces conductivity is not used as a required technical explanation. Lower U-values permit reduced heat loss; they do not mean no heat transfer at all.", permittedMarks: [0,6] },
-    { id: "alt-guidelines-guideline-1", kind: "criterion", verbatim: "Guideline 1 (4 for point, 6 for discussion)", marks: 10, contextNote: "Give a distinct practical guideline(point 4) and explain how it improves natural lighting(discussion 6). The scheme accepts orientation and considered glazing position, shallow plans, rooflights/internal glazing, adapting existing houses, sustainable planning/incentives or design education. Connect each recommendation to daylight access and occupants while considering glare/overheating. These are illustrative open choices, not a fixed choose-three list; do not repeat the same guideline.", permittedMarks: [0,4,6,10] },
-    { id: "alt-guidelines-guideline-2", kind: "criterion", verbatim: "Guideline 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "Give a distinct practical guideline(point 4) and explain how it improves natural lighting(discussion 6). The scheme accepts orientation and considered glazing position, shallow plans, rooflights/internal glazing, adapting existing houses, sustainable planning/incentives or design education. Connect each recommendation to daylight access and occupants while considering glare/overheating. These are illustrative open choices, not a fixed choose-three list; do not repeat the same guideline.", permittedMarks: [0,4,6,10] },
-    { id: "alt-guidelines-guideline-3", kind: "criterion", verbatim: "Guideline 3 (4 for point, 6 for discussion)", marks: 10, contextNote: "Give a distinct practical guideline(point 4) and explain how it improves natural lighting(discussion 6). The scheme accepts orientation and considered glazing position, shallow plans, rooflights/internal glazing, adapting existing houses, sustainable planning/incentives or design education. Connect each recommendation to daylight access and occupants while considering glare/overheating. These are illustrative open choices, not a fixed choose-three list; do not repeat the same guideline.", permittedMarks: [0,4,6,10] },
+    { id: "discussion-point-1", kind: "criterion", verbatim: "Discussion – point 1 (3 for point, 5 for discussion)", marks: 8, contextNote: "Develop one distinct, relevant point from the passage: the importance of daylight for the quality and use of spaces; the changing architectural possibilities of glass; the contrast with older limited/draughty glazing; orientation and room layout; the relationship between light, views and occupants. Award point 3 and discussion 5, without repeating another point. Discuss the qualitative passage critically: lower U-values reduce heat loss, rather than making it zero. Historical commentary is not a current-law claim.", permittedMarks: [0,3,5,8] },
+    { id: "discussion-point-2", kind: "criterion", verbatim: "Discussion – point 2 (3 for point, 5 for discussion)", marks: 8, contextNote: "Develop one distinct, relevant point from the passage: the importance of daylight for the quality and use of spaces; the changing architectural possibilities of glass; the contrast with older limited/draughty glazing; orientation and room layout; the relationship between light, views and occupants. Award point 3 and discussion 5, without repeating another point. Discuss the qualitative passage critically: lower U-values reduce heat loss, rather than making it zero. Historical commentary is not a current-law claim.", permittedMarks: [0,3,5,8] },
+    { id: "discussion-point-3", kind: "criterion", verbatim: "Discussion – point 3 (3 for point, 5 for discussion)", marks: 8, contextNote: "Develop one distinct, relevant point from the passage: the importance of daylight for the quality and use of spaces; the changing architectural possibilities of glass; the contrast with older limited/draughty glazing; orientation and room layout; the relationship between light, views and occupants. Award point 3 and discussion 5, without repeating another point. Discuss the qualitative passage critically: lower U-values reduce heat loss, rather than making it zero. Historical commentary is not a current-law claim.", permittedMarks: [0,3,5,8] },
+    { id: "glazing-advances", kind: "criterion", verbatim: "Advances in glazing technology - increased use of glass", marks: 6, contextNote: "Explain relevant improvements and their design consequences, for example low-emissivity coatings reducing radiant heat transfer, insulating/vacuum glazing, safer laminated or structural glazing, or controllable tint. This is one shared 6-mark allowance; the scheme does not publish a separate mark per technology. The source’s claim that low iron content itself reduces conductivity is not used as a required technical explanation. Lower U-values permit reduced heat loss; they do not mean no heat transfer at all.", permittedMarks: [0,6] },
+    { id: "guidelines-guideline-1", kind: "criterion", verbatim: "Guideline 1 (4 for point, 6 for discussion)", marks: 10, contextNote: "Give a distinct practical guideline(point 4) and explain how it improves natural lighting(discussion 6). The scheme accepts orientation and considered glazing position, shallow plans, rooflights/internal glazing, adapting existing houses, sustainable planning/incentives or design education. Connect each recommendation to daylight access and occupants while considering glare/overheating. These are illustrative open choices, not a fixed choose-three list; do not repeat the same guideline.", permittedMarks: [0,4,6,10] },
+    { id: "guidelines-guideline-2", kind: "criterion", verbatim: "Guideline 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "Give a distinct practical guideline(point 4) and explain how it improves natural lighting(discussion 6). The scheme accepts orientation and considered glazing position, shallow plans, rooflights/internal glazing, adapting existing houses, sustainable planning/incentives or design education. Connect each recommendation to daylight access and occupants while considering glare/overheating. These are illustrative open choices, not a fixed choose-three list; do not repeat the same guideline.", permittedMarks: [0,4,6,10] },
+    { id: "guidelines-guideline-3", kind: "criterion", verbatim: "Guideline 3 (4 for point, 6 for discussion)", marks: 10, contextNote: "Give a distinct practical guideline(point 4) and explain how it improves natural lighting(discussion 6). The scheme accepts orientation and considered glazing position, shallow plans, rooflights/internal glazing, adapting existing houses, sustainable planning/incentives or design education. Connect each recommendation to daylight access and occupants while considering glare/overheating. These are illustrative open choices, not a fixed choose-three list; do not repeat the same guideline.", permittedMarks: [0,4,6,10] },
     ],
-    taskGroups: [{"label":"alt-discussion","sourceCardId":"cons-2015-hl-q10-alt-discussion","marks":24,"rowIds":["alt-discussion-point-1","alt-discussion-point-2","alt-discussion-point-3"]},{"label":"alt-glazing","sourceCardId":"cons-2015-hl-q10-alt-glazing","marks":6,"rowIds":["alt-glazing-advances"]},{"label":"alt-guidelines","sourceCardId":"cons-2015-hl-q10-alt-guidelines","marks":30,"rowIds":["alt-guidelines-guideline-1","alt-guidelines-guideline-2","alt-guidelines-guideline-3"]}],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q10-alt-discussion","label":"Discussion","marks":24,"rowIds":["discussion-point-1","discussion-point-2","discussion-point-3"]},{"sourceCardId":"cons-2015-hl-q10-alt-glazing","label":"Glazing advances","marks":6,"rowIds":["glazing-advances"]},{"sourceCardId":"cons-2015-hl-q10-alt-guidelines","label":"Guidelines","marks":30,"rowIds":["guidelines-guideline-1","guidelines-guideline-2","guidelines-guideline-3"]}],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
@@ -8954,7 +6049,7 @@ export const CARDS: SecCard[] = [
                 5
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission. Passage adapted from Dermot Bannon (2014), Gill & Macmillan, as credited on the original paper.",
-          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question."
     },
     questionFigure: {
           "candId": "construction-studies-2015-HL-q10-alternative",
@@ -12087,6 +9182,499 @@ export const CARDS: SecCard[] = [
           "srcHash": "50b4856e3f3296041ff667e9f31643af",
           "alt": "SEC model orientation and sun-path sketches with the long glazed elevation facing south, and the benefits to the homeowner.",
           "attribution": "SEC Leaving Certificate Construction Studies 2025 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    id: "cons-2015-hl-q3-b", topicId: "cons-1-3", conceptId: "extension-garden-room-b",
+    section: "B", questionRef: "2015 HL Q3(b)",
+    stem: "The drawing shows the ground floor plan of a two-storey semi-detached house and a portion of the rear garden. The external walls of the house are 400 mm concrete block walls with a full-fill insulated cavity. The rear wall M-M is south facing. The owners need an additional space for use as a study and occasionally as a family space. The space is to have internal dimensions of 5.0 metres × 3.0 metres as shown. The following options are being considered: (i) building a single-storey extension onto the rear of the house at A. or (ii) building a detached, free-standing space in the garden at B.",
+    questionText: "Select one of the above options and, using notes and freehand sketches, show a proposed external design and internal layout for an attractive study/family space. Show in your design how the proposed space is to link with the surrounding rear garden.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "external-notes", kind: "criterion", verbatim: "External design - Notes", marks: 6, contextNote: "Notes on the proposed external design for the chosen option (an extension on the south-facing rear wall M-M at A, or a free-standing space at B), keeping the 5.0 m × 3.0 m internal space. Such as: a flat-roofed structure with a low elevation lets more light into the enclosed garden and keeps the sense of space; windows on the south elevation for good natural lighting; a space at B can be linked to the house by a covered walkway. Any thoughtful modern or traditional design with creativity and flair is acceptable.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "external-sketches", kind: "criterion", verbatim: "Sketches", marks: 6, contextNote: "Freehand sketch of the proposed external design (elevation) for the chosen option.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "layout-notes", kind: "criterion", verbatim: "Internal layout - Notes", marks: 6, contextNote: "Notes on the internal layout of the study/family space. Such as: the space divided to give some privacy and a sense of seclusion; a small office area for individual work at a desk; a larger area for communal living; a convertible couch for occasional overnight visitors.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "layout-sketches", kind: "criterion", verbatim: "Sketches", marks: 6, contextNote: "Freehand sketch (plan) of the proposed internal layout of the 5.0 m × 3.0 m space.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "garden-link", kind: "criterion", verbatim: "How proposed space is to link with rear garden", marks: 6, contextNote: "Such as: double, folding or sliding doors for easy access outside; floor-to-ceiling windows to capture views of the garden; a paved patio with wide-opening doors for seating and access, extending the space into the garden.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan with positions A and B retained. Part (a) requires both options; in part (b) the candidate selects one option and the same design marks apply to either. Scheme sketches are examples, not required designs."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2015-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
+          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2015-HL-q3-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-scheme.png",
+          "srcHash": "1b29ab493fdd5b707f9a71e4d508ad26",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    id: "cons-2015-hl-q3-complete", topicId: "cons-1-2", conceptId: "extension-garden-room-complete",
+    section: "B", questionRef: "2015 HL Q3 — complete",
+    stem: "The drawing shows the ground floor plan of a two-storey semi-detached house and a portion of the rear garden. The external walls of the house are 400 mm concrete block walls with a full-fill insulated cavity. The rear wall M-M is south facing. The owners need an additional space for use as a study and occasionally as a family space. The space is to have internal dimensions of 5.0 metres × 3.0 metres as shown. The following options are being considered: (i) building a single-storey extension onto the rear of the house at A. or (ii) building a detached, free-standing space in the garden at B.",
+    questionText: "(a) Discuss in detail two advantages and two disadvantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design and internal layout for an attractive study/family space. Show in your design how the proposed space is to link with the surrounding rear garden. (c) Discuss two advantages of designing a space that links with the rear garden.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-A-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 3, contextNote: "An advantage of the single-storey extension at A, discussed for this house (3). Such as: saves on construction and insulation costs; conserves space in the rear garden; more efficient energy use, as it minimises the area of external walling; more freedom in using and dividing the total living space.", permittedMarks: [0,1,2,3] },
+    { id: "a-A-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 3, contextNote: "A second, different advantage of the extension at A (3). Such as: easy, economical connection to existing services (space heating, plumbing, ventilation, electrical distribution); a compact plan that supports regular social interaction across the generations of the family.", permittedMarks: [0,1,2,3] },
+    { id: "a-A-disadvantage-1", kind: "criterion", verbatim: "Disadvantage 1", marks: 3, contextNote: "A disadvantage of the extension at A (3). Such as: disturbs the well-proportioned original layout; creates a large undifferentiated space that needs careful design; can reduce the natural lighting and ventilation of the kitchen/dining room; more energy for lighting and heating a large space.", permittedMarks: [0,1,2,3] },
+    { id: "a-A-disadvantage-2", kind: "criterion", verbatim: "Disadvantage 2", marks: 3, contextNote: "A second, different disadvantage of the extension at A (3). Such as: fewer discrete rooms for a quieter environment; may spoil the view from the existing kitchen and dining area; continuity of insulation and weatherproofing at the roof and wall abutment; spanning the larger opening in the existing external wall may need strengthening and RSJs; misses the chance to connect the garden with the living spaces.", permittedMarks: [0,1,2,3] },
+    { id: "a-B-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 3, contextNote: "An advantage of the detached, free-standing space at B, discussed for this house (3). Such as: keeps the existing relationship between the kitchen/dining area and the outside; minimises disruption during construction; maintains natural lighting to the existing rooms; greater privacy in a distinct room in the garden.", permittedMarks: [0,1,2,3] },
+    { id: "a-B-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 3, contextNote: "A second, different advantage of the space at B (3). Such as: space for a young or older family member; more freedom of design and more natural lighting in the new building; a closer link between room and garden; isolation for activities that need quiet or are noisy; does not overshadow the existing kitchen and dining room.", permittedMarks: [0,1,2,3] },
+    { id: "a-B-disadvantage-1", kind: "criterion", verbatim: "Disadvantage 1", marks: 3, contextNote: "A disadvantage of the space at B (3). Such as: a larger external envelope with higher insulation costs; the inconvenience of crossing the garden to reach it; possibly higher heating costs from an extra external door and reduced airtightness.", permittedMarks: [0,1,2,3] },
+    { id: "a-B-disadvantage-2", kind: "criterion", verbatim: "Disadvantage 2", marks: 3, contextNote: "A second, different disadvantage of the space at B (3). Such as: garden space lost to paths; unusable spaces near the external doors; fragmentation of family living space; the cost of access for all and of connecting services (heating, plumbing and waste, electrical). The scheme prints this list under the heading 3(b)(ii); it belongs to part (a), option B.", permittedMarks: [0,1,2,3] },
+    { id: "b-external-notes", kind: "criterion", verbatim: "External design - Notes", marks: 6, contextNote: "Notes on the proposed external design for the chosen option (an extension on the south-facing rear wall M-M at A, or a free-standing space at B), keeping the 5.0 m × 3.0 m internal space. Such as: a flat-roofed structure with a low elevation lets more light into the enclosed garden and keeps the sense of space; windows on the south elevation for good natural lighting; a space at B can be linked to the house by a covered walkway. Any thoughtful modern or traditional design with creativity and flair is acceptable.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-external-sketches", kind: "criterion", verbatim: "Sketches", marks: 6, contextNote: "Freehand sketch of the proposed external design (elevation) for the chosen option.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-layout-notes", kind: "criterion", verbatim: "Internal layout - Notes", marks: 6, contextNote: "Notes on the internal layout of the study/family space. Such as: the space divided to give some privacy and a sense of seclusion; a small office area for individual work at a desk; a larger area for communal living; a convertible couch for occasional overnight visitors.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-layout-sketches", kind: "criterion", verbatim: "Sketches", marks: 6, contextNote: "Freehand sketch (plan) of the proposed internal layout of the 5.0 m × 3.0 m space.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-garden-link", kind: "criterion", verbatim: "How proposed space is to link with rear garden", marks: 6, contextNote: "Such as: double, folding or sliding doors for easy access outside; floor-to-ceiling windows to capture views of the garden; a paved patio with wide-opening doors for seating and access, extending the space into the garden.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 3, contextNote: "An advantage of linking the space with the rear garden (3). Such as: an increased sense of wellbeing from closer contact with nature; awareness of the changing seasons; engaging the senses; the health benefits of natural light.", permittedMarks: [0,1,2,3] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 3, contextNote: "A second, different advantage (3). Such as: educational benefits for children; more use made of the valuable space outside; a greater sense of spaciousness for little extra investment. Naming a door type describes a design feature, not an advantage.", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q3-a-A","label":"a — Option A","marks":12,"rowIds":["a-A-advantage-1","a-A-advantage-2","a-A-disadvantage-1","a-A-disadvantage-2"]},{"sourceCardId":"cons-2015-hl-q3-a-B","label":"a — Option B","marks":12,"rowIds":["a-B-advantage-1","a-B-advantage-2","a-B-disadvantage-1","a-B-disadvantage-2"]},{"sourceCardId":"cons-2015-hl-q3-b","label":"b","marks":30,"rowIds":["b-external-notes","b-external-sketches","b-layout-notes","b-layout-sketches","b-garden-link"]},{"sourceCardId":"cons-2015-hl-q3-c","label":"c","marks":6,"rowIds":["c-advantage-1","c-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan with positions A and B retained. Part (a) requires both options; in part (b) the candidate selects one option and the same design marks apply to either. Scheme sketches are examples, not required designs."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2015-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
+          "srcHash": "f7fa394dc6c3aa885d835b0fda970478",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2015-HL-q3-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-scheme.png",
+          "srcHash": "1b29ab493fdd5b707f9a71e4d508ad26",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    id: "cons-2015-hl-q4-a", topicId: "cons-1-1", conceptId: "vernacular-refurbishment-a",
+    section: "B", questionRef: "2015 HL Q4(a)",
+    questionText: "Discuss the importance of any two of the following in the eco-refurbishment of an old house built in the vernacular tradition: respect for local character; breathable structure; reuse of materials.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "items", kind: "anyN", verbatim: "Discussion - eco-refurbishment - any two", marks: 20, contextNote: "Any two of the three, 10 each, as a developed discussion; the scheme does not split the 10 into points. Respect for local character: vernacular houses evolved from their location, built simply and modestly from local materials and labour, so refurbishment keeps materials, methods and detailing simple, retains the historic character and the unity of the row of cottages, upgrades the fabric first, and takes advice from a conservation officer, architect, engineer or designer. Breathable structure: moisture moves gradually from the inside through the walls and roof and is not trapped, preventing surface and interstitial condensation; natural, hygroscopic insulation and finishes (lime, hemp, cork, wood fibreboard, sheep’s wool, lime renders and plasters) let it move; vapour barriers and vapour-resistant materials are not usually appropriate in older buildings, and layers should become more permeable from inside to outside. Reuse of materials: examine the whole house to see what can be reused; replace only the decayed portions of roof members (splice rafter ends, wall plate in the same timber); replace decayed fascia and soffit to the identical profile; lift, number and store floorboards and skirtings for reuse, replacing damaged boards with similar salvaged ones to keep the patina of age.", group: {"claimMax":2,"perOption":10,"options":["Respect for local character","Breathable structure","Reuse of materials"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Eco-refurbishment of a vernacular cottage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original row-of-cottages sketch retained. Parts (a) and (b) each choose any two of three printed items, and each item keeps its own marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2015-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
+          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    id: "cons-2015-hl-q4-b", topicId: "cons-1-1", conceptId: "vernacular-refurbishment-b",
+    section: "B", questionRef: "2015 HL Q4(b)",
+    questionText: "A row of single-storey cottages is shown in the sketch. One of the cottages is in need of significant refurbishment. A survey of the cottage reveals: un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps involved in upgrading each area selected in a manner that respects the appearance and character of the original cottages.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "areas", kind: "anyN", verbatim: "Two areas for upgrading - roof, windows, floor", marks: 40, contextNote: "Any two of the three surveyed areas, each notes 10 and sketches 10 = 20, describing the upgrading steps in a way that respects the appearance and character of the original cottages. Roof: retain as much historic fabric as possible; remove, number and store the slates and reuse them (slates from the rear placed on the front for uniformity); inspect the members and replace only decayed portions; replace impermeable sarking felt with a vapour-diffuse membrane; insulate with hygroscopic materials (sheep’s wool between the rafters, wood fibreboard above and below) with counter battens for ventilation, or, as the scheme’s other option, insulation with a ventilation path and a continuous taped vapour barrier on the warm side behind an insulated service cavity. Sliding sash windows: maintain and repair before replacing; survey, number and remove the sashes; repair damaged wood with a similar species, sand, seal and repaint; remove cracked putty and re-glaze with linseed oil putty; check the pulleys and cords; then keep the existing glass, or fit draught-proof seals and double-glazed units where the rebates are deep enough, or fit secondary glazing inside. Suspended timber floor: determine the floor’s historical significance; record and number the floorboards and skirting, remove and store them; check the sub-floor ventilation; replace decayed joists or boards; fit insulation between the joists on netting or battens, friction tight with no gaps; fit a breather membrane and replace the floorboards as labelled.", group: {"claimMax":2,"perOption":20,"options":["Roof","Sliding sash windows","Suspended timber floor"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Eco-refurbishment of a vernacular cottage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original row-of-cottages sketch retained. Parts (a) and (b) each choose any two of three printed items, and each item keeps its own marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2015-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
+          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2015-HL-q4-roof-windows",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-windows.png",
+          "srcHash": "01f00367358eb31fb586863aa2feeb82",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof windows. These are sample accepted designs, not extra required choices.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    id: "cons-2015-hl-q4-complete", topicId: "cons-1-1", conceptId: "vernacular-refurbishment-complete",
+    section: "B", questionRef: "2015 HL Q4 — complete",
+    questionText: "(a) Discuss the importance of any two of the following in the eco-refurbishment of an old house built in the vernacular tradition: respect for local character; breathable structure; reuse of materials. (b) A row of single-storey cottages is shown in the sketch. One of the cottages is in need of significant refurbishment. A survey of the cottage reveals: un-insulated traditional cut roof with natural slates; softwood windows, single-glazed with sliding sash; un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps involved in upgrading each area selected in a manner that respects the appearance and character of the original cottages.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-items", kind: "anyN", verbatim: "Discussion - eco-refurbishment - any two", marks: 20, contextNote: "Any two of the three, 10 each, as a developed discussion; the scheme does not split the 10 into points. Respect for local character: vernacular houses evolved from their location, built simply and modestly from local materials and labour, so refurbishment keeps materials, methods and detailing simple, retains the historic character and the unity of the row of cottages, upgrades the fabric first, and takes advice from a conservation officer, architect, engineer or designer. Breathable structure: moisture moves gradually from the inside through the walls and roof and is not trapped, preventing surface and interstitial condensation; natural, hygroscopic insulation and finishes (lime, hemp, cork, wood fibreboard, sheep’s wool, lime renders and plasters) let it move; vapour barriers and vapour-resistant materials are not usually appropriate in older buildings, and layers should become more permeable from inside to outside. Reuse of materials: examine the whole house to see what can be reused; replace only the decayed portions of roof members (splice rafter ends, wall plate in the same timber); replace decayed fascia and soffit to the identical profile; lift, number and store floorboards and skirtings for reuse, replacing damaged boards with similar salvaged ones to keep the patina of age.", group: {"claimMax":2,"perOption":10,"options":["Respect for local character","Breathable structure","Reuse of materials"]} },
+    { id: "b-areas", kind: "anyN", verbatim: "Two areas for upgrading - roof, windows, floor", marks: 40, contextNote: "Any two of the three surveyed areas, each notes 10 and sketches 10 = 20, describing the upgrading steps in a way that respects the appearance and character of the original cottages. Roof: retain as much historic fabric as possible; remove, number and store the slates and reuse them (slates from the rear placed on the front for uniformity); inspect the members and replace only decayed portions; replace impermeable sarking felt with a vapour-diffuse membrane; insulate with hygroscopic materials (sheep’s wool between the rafters, wood fibreboard above and below) with counter battens for ventilation, or, as the scheme’s other option, insulation with a ventilation path and a continuous taped vapour barrier on the warm side behind an insulated service cavity. Sliding sash windows: maintain and repair before replacing; survey, number and remove the sashes; repair damaged wood with a similar species, sand, seal and repaint; remove cracked putty and re-glaze with linseed oil putty; check the pulleys and cords; then keep the existing glass, or fit draught-proof seals and double-glazed units where the rebates are deep enough, or fit secondary glazing inside. Suspended timber floor: determine the floor’s historical significance; record and number the floorboards and skirting, remove and store them; check the sub-floor ventilation; replace decayed joists or boards; fit insulation between the joists on netting or battens, friction tight with no gaps; fit a breather membrane and replace the floorboards as labelled.", group: {"claimMax":2,"perOption":20,"options":["Roof","Sliding sash windows","Suspended timber floor"]} },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q4-a","label":"a","marks":20,"rowIds":["a-items"]},{"sourceCardId":"cons-2015-hl-q4-b","label":"b","marks":40,"rowIds":["b-areas"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Eco-refurbishment of a vernacular cottage",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original row-of-cottages sketch retained. Parts (a) and (b) each choose any two of three printed items, and each item keeps its own marks."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2015-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
+          "srcHash": "09590acbdf218b6e20738aacf8a76a7e",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2015-HL-q4-roof-windows",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-windows.png",
+          "srcHash": "01f00367358eb31fb586863aa2feeb82",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof windows. These are sample accepted designs, not extra required choices.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    id: "cons-2015-hl-q6-b", topicId: "cons-1-2", conceptId: "low-impact-design-b",
+    section: "B", questionRef: "2015 HL Q6(b)",
+    stem: "The elevation and ground floor plan of a house are shown. The house has three bedrooms and a bathroom upstairs. The external walls are of timber frame construction with a rendered concrete block outer leaf. The house is designed to maximise solar energy, as shown, and to have low environmental impact.",
+    questionText: "Using notes and freehand sketches, discuss the importance of any two of the following in designing a house to have low environmental impact: compact form; flexible design; low maintenance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "features", kind: "anyN", verbatim: "Any two design features", marks: 20, contextNote: "Any two of the three, each notes 5 and sketches 5 = 10. Compact form: a reduced external surface area minimises heat loss and the materials needed to enclose the living space; less concrete and so lower carbon emissions; a smaller heated air volume; a house one room wide is easier to heat by passive solar gain; less land used and less visual impact. Flexible design: the dwelling can respond over time to changes in lifestyle and needs without major structural change, extending its useful life; a bathroom designed for lifetime use; a home office or occasional bedroom easily made; a wall to the hallway removable to form a larger open-plan area; easier retrofitting of new technologies. Low maintenance: reduces the energy and materials used over the dwelling’s lifetime and delays its replacement; keeps the energy-saving features at peak efficiency for longer; robust construction; keeps the attractive, unobtrusive appearance for longer.", group: {"claimMax":2,"perOption":10,"options":["Compact form","Flexible design","Low maintenance"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (b) chooses any two of three printed items, each keeping its own 10 marks. Features in (a) are open; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2015-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-original.png",
+          "srcHash": "3f74361759cfb9ad4690c4bc07954c19",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 6: source question and illustration for original.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2015-HL-q6-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-scheme.png",
+          "srcHash": "8913689c769299a6e4e816e90c69cd18",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    id: "cons-2015-hl-q6-complete", topicId: "cons-1-2", conceptId: "low-impact-design-complete",
+    section: "B", questionRef: "2015 HL Q6 — complete",
+    stem: "The elevation and ground floor plan of a house are shown. The house has three bedrooms and a bathroom upstairs. The external walls are of timber frame construction with a rendered concrete block outer leaf. The house is designed to maximise solar energy, as shown, and to have low environmental impact.",
+    questionText: "(a) Using notes and freehand sketches, discuss three features of the design that ensure that the house has low environmental impact. (b) Using notes and freehand sketches, discuss the importance of any two of the following in designing a house to have low environmental impact: compact form; flexible design; low maintenance. (c) Discuss in detail the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-feature-1", kind: "criterion", verbatim: "Design feature 1", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
+    { id: "a-feature-2", kind: "criterion", verbatim: "Design feature 2", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
+    { id: "a-feature-3", kind: "criterion", verbatim: "Design feature 3", marks: 10, contextNote: "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.", permittedMarks: [0,5,10] },
+    { id: "b-features", kind: "anyN", verbatim: "Any two design features", marks: 20, contextNote: "Any two of the three, each notes 5 and sketches 5 = 10. Compact form: a reduced external surface area minimises heat loss and the materials needed to enclose the living space; less concrete and so lower carbon emissions; a smaller heated air volume; a house one room wide is easier to heat by passive solar gain; less land used and less visual impact. Flexible design: the dwelling can respond over time to changes in lifestyle and needs without major structural change, extending its useful life; a bathroom designed for lifetime use; a home office or occasional bedroom easily made; a wall to the hallway removable to form a larger open-plan area; easier retrofitting of new technologies. Low maintenance: reduces the energy and materials used over the dwelling’s lifetime and delays its replacement; keeps the energy-saving features at peak efficiency for longer; robust construction; keeps the attractive, unobtrusive appearance for longer.", group: {"claimMax":2,"perOption":10,"options":["Compact form","Flexible design","Low maintenance"]} },
+    { id: "c-discussion", kind: "criterion", verbatim: "Discussion of NZEB design for 21st century", marks: 10, contextNote: "Award 4 marks for a relevant point and 6 for its developed discussion, total 10. Explain why very low energy demand, high energy performance and appropriate renewable supply matter for long-term resource use, climate impact, energy costs/security or fair access to resources. Develop the reasoning rather than reciting a list. The scheme describes very high energy performance with the small remaining demand met to a significant extent by renewables on-site or nearby; NZEB does not require every building to be off-grid. Its 2019/2021 introduction dates are historical context from the 2015 scheme, not current legal guidance and not a required answer. Other relevant, developed arguments are accepted.", permittedMarks: [0,4,6,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q6-a","label":"a","marks":30,"rowIds":["a-feature-1","a-feature-2","a-feature-3"]},{"sourceCardId":"cons-2015-hl-q6-b","label":"b","marks":20,"rowIds":["b-features"]},{"sourceCardId":"cons-2015-hl-q6-c","label":"c","marks":10,"rowIds":["c-discussion"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (b) chooses any two of three printed items, each keeping its own 10 marks. Features in (a) are open; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2015-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-original.png",
+          "srcHash": "3f74361759cfb9ad4690c4bc07954c19",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 6: source question and illustration for original.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2015-HL-q6-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-scheme.png",
+          "srcHash": "8913689c769299a6e4e816e90c69cd18",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    id: "cons-2015-hl-q9-a", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-a",
+    section: "B", questionRef: "2015 HL Q9(a)",
+    stem: "It is proposed to design the external envelope of a dwelling house to be thermal bridge free. The drawing shows an outline section through a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The roof is a traditional cut roof, the first floor has tongue-and-groove flooring on timber joists and the ground floor is an insulated solid concrete floor.",
+    questionText: "Select any three locations from those circled on the drawing and, using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at each location selected.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 48,
+    rows: [
+    { id: "locations", kind: "anyN", verbatim: "Thermal bridging details - Three locations", marks: 48, contextNote: "Any three of the four circled locations, each notes 8 and sketches 8 = 16, showing the insulation kept continuous so that no thermal bridge forms. Junction of roof and wall at eaves: 60 mm rigid insulation board; 400 mm fibreglass insulation; a 60 mm cavity closer; an autoclaved aerated concrete (AAC) block; 250 mm full-fill cavity insulation. Junction of upper floors and external walls: joists hung on the inside leaf, on metal hangers or resin-anchored bolts, with no penetration of the leaf and cavity; the wall plastered for airtightness. Window cill: insulation at the back of the cill so it does not bridge the cavity; a high-density proprietary cavity closer; 250 mm full-fill cavity insulation; airtightness tape to the triple-glazed window frame. Ground floors abutting external walls: cavity insulation carried down at least 225 mm below the top of the finished floor; an 80 mm perimeter insulation strip between the slab and the inner leaf; 150–300 mm insulation under the slab; 100 mm AAC blocks below ground level.", group: {"claimMax":3,"perOption":16,"options":["Junction of roof and wall at eaves","Junction of upper floors and external walls","Window cill","Ground floors abutting external walls"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original section with four circled locations retained. Part (a) chooses any three, each location keeping its own 16 marks; locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2015-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
+          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2015-HL-q9-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
+          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    id: "cons-2015-hl-q9-complete", topicId: "cons-6-2", conceptId: "thermal-bridge-junctions-complete",
+    section: "B", questionRef: "2015 HL Q9 — complete",
+    stem: "It is proposed to design the external envelope of a dwelling house to be thermal bridge free. The drawing shows an outline section through a two-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The roof is a traditional cut roof, the first floor has tongue-and-groove flooring on timber joists and the ground floor is an insulated solid concrete floor.",
+    questionText: "(a) Select any three locations from those circled on the drawing and, using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at each location selected. (b) Discuss the importance of designing a building envelope that is thermal bridge free.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-locations", kind: "anyN", verbatim: "Thermal bridging details - Three locations", marks: 48, contextNote: "Any three of the four circled locations, each notes 8 and sketches 8 = 16, showing the insulation kept continuous so that no thermal bridge forms. Junction of roof and wall at eaves: 60 mm rigid insulation board; 400 mm fibreglass insulation; a 60 mm cavity closer; an autoclaved aerated concrete (AAC) block; 250 mm full-fill cavity insulation. Junction of upper floors and external walls: joists hung on the inside leaf, on metal hangers or resin-anchored bolts, with no penetration of the leaf and cavity; the wall plastered for airtightness. Window cill: insulation at the back of the cill so it does not bridge the cavity; a high-density proprietary cavity closer; 250 mm full-fill cavity insulation; airtightness tape to the triple-glazed window frame. Ground floors abutting external walls: cavity insulation carried down at least 225 mm below the top of the finished floor; an 80 mm perimeter insulation strip between the slab and the inner leaf; 150–300 mm insulation under the slab; 100 mm AAC blocks below ground level.", group: {"claimMax":3,"perOption":16,"options":["Junction of roof and wall at eaves","Junction of upper floors and external walls","Window cill","Ground floors abutting external walls"]} },
+    { id: "b-point-1", kind: "criterion", verbatim: "Discussion (point 1) - 2 marks for point, 4 marks for discussion", marks: 6, contextNote: "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.", permittedMarks: [0,2,4,6] },
+    { id: "b-point-2", kind: "criterion", verbatim: "Discussion (point 2) - 2 marks for point, 4 marks for discussion", marks: 6, contextNote: "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.", permittedMarks: [0,2,4,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q9-a","label":"a","marks":48,"rowIds":["a-locations"]},{"sourceCardId":"cons-2015-hl-q9-b","label":"b","marks":12,"rowIds":["b-point-1","b-point-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original section with four circled locations retained. Part (a) chooses any three, each location keeping its own 16 marks; locations are named with the marking scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2015-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
+          "srcHash": "1fc34e660f474de6ecc5ba0ae1857137",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2015-HL-q9-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
+          "srcHash": "fd9461b4d03b9e5aadc7e1301fbda627",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    id: "cons-2015-hl-q10-a", topicId: "cons-6-5", conceptId: "passive-house-and-daylight-a",
+    section: "B", questionRef: "2015 HL Q10(a)",
+    questionText: "Using notes and freehand sketches, discuss in detail the importance of any two of the following in the design of a Passive House: airtight building envelope; space heating demand; indoor air quality.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 32,
+    rows: [
+    { id: "items", kind: "anyN", verbatim: "Design of a Passive House - any 2", marks: 32, contextNote: "Any two of the three, each notes 8 and sketches 8 = 16. Airtight building envelope: build tight and ventilate right; an unbroken air barrier on the warm side of the insulation, taped at every junction (wall/floor, wall/window, wall/door, ceiling/wall, chimney/ceiling), prevents unregulated air leakage and heat loss and lets the fresh-air intake be controlled; a service cavity keeps services from puncturing it; grommets seal pipes and cables; a blower door test checks it. Space heating demand: the energy needed to keep 20 °C indoors all year, not including hot water; a Passive House limits it to 15 kWh/m² per year or less, with a heating load of no more than 10 W/m²; the 2015 scheme also cites a primary energy demand of no more than 120 kWh/m² per year. Indoor air quality: greater airtightness needs a designed ventilation system that supplies clean, warm, filtered fresh air; mechanical ventilation with heat recovery extracts moist air from the kitchen, utility and bathrooms and passes it through a heat exchanger without mixing it with the incoming air; filters changed every three to six months; relative humidity of 30% to 60%; 0.3 to 0.6 air changes per hour.", group: {"claimMax":2,"perOption":16,"options":["Airtight building envelope","Space heating demand","Indoor air quality"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original Passive House sketch retained. Part (a) chooses any two of three printed items, each keeping its own 16 marks. The 2015 scheme’s energy figures are historical, not current regulations."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2015-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-original.png",
+          "srcHash": "a64d5009b812b844113ba9a5a7f499bc",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 10: source question and illustration, original.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2015-HL-q10-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-scheme.png",
+          "srcHash": "be58085c5473be273627bc9e28a56fd0",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 10: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    id: "cons-2015-hl-q10-complete", topicId: "cons-6-5", conceptId: "passive-house-and-daylight-complete",
+    section: "B", questionRef: "2015 HL Q10 — complete",
+    questionText: "(a) Using notes and freehand sketches, discuss in detail the importance of any two of the following in the design of a Passive House: airtight building envelope; space heating demand; indoor air quality. (b) Using notes and freehand sketches, discuss the importance of thermal mass in the design of a Passive House. (c) Using notes and freehand sketches, discuss the function of carefully designed solar shading for the Passive House shown.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-items", kind: "anyN", verbatim: "Design of a Passive House - any 2", marks: 32, contextNote: "Any two of the three, each notes 8 and sketches 8 = 16. Airtight building envelope: build tight and ventilate right; an unbroken air barrier on the warm side of the insulation, taped at every junction (wall/floor, wall/window, wall/door, ceiling/wall, chimney/ceiling), prevents unregulated air leakage and heat loss and lets the fresh-air intake be controlled; a service cavity keeps services from puncturing it; grommets seal pipes and cables; a blower door test checks it. Space heating demand: the energy needed to keep 20 °C indoors all year, not including hot water; a Passive House limits it to 15 kWh/m² per year or less, with a heating load of no more than 10 W/m²; the 2015 scheme also cites a primary energy demand of no more than 120 kWh/m² per year. Indoor air quality: greater airtightness needs a designed ventilation system that supplies clean, warm, filtered fresh air; mechanical ventilation with heat recovery extracts moist air from the kitchen, utility and bathrooms and passes it through a heat exchanger without mixing it with the incoming air; filters changed every three to six months; relative humidity of 30% to 60%; 0.3 to 0.6 air changes per hour.", group: {"claimMax":2,"perOption":16,"options":["Airtight building envelope","Space heating demand","Indoor air quality"]} },
+    { id: "b-notes", kind: "criterion", verbatim: "Importance of thermal mass", marks: 7, contextNote: "Explain how exposed heavy materials absorb and store heat and release it later, moderating and delaying temperature peaks. The source examples include concrete floors/walls, brick and stone, with high density and heat capacity and suitable conductivity. Thermal mass must work with useful solar gain, shading and ventilation; it is not the same as thermal insulation.", permittedMarks: [0,7] },
+    { id: "b-sketch", kind: "criterion", verbatim: "Importance of thermal mass", marks: 7, contextNote: "Sketch solar radiation entering glazing, absorption/storage in the floor or wall and later heat release to the occupied space, as in the source model. Make the time-shifted storage/release mechanism clear.", permittedMarks: [0,7] },
+    { id: "c-notes", kind: "criterion", verbatim: "Carefully designed solar shading", marks: 7, contextNote: "Explain limiting excessive direct summer gain and glare while allowing useful winter sun. Source examples include correctly sized overhangs, brise-soleil, adjustable external screens, blinds and balconies without thermal bridges. Select and justify suitable design details for the illustrated house; do not treat the example list as a compulsory finite pool.", permittedMarks: [0,7] },
+    { id: "c-sketch", kind: "criterion", verbatim: "Carefully designed solar shading", marks: 7, contextNote: "Sketch the chosen shading detail and the high summer/low winter sun paths, or the operation of adjustable shading, to explain the function. Retain the illustrated house as context and distinguish external interception of sunlight from internal blinds. The source provides several complete alternative model drawings.", permittedMarks: [0,7] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2015-hl-q10-a","label":"a","marks":32,"rowIds":["a-items"]},{"sourceCardId":"cons-2015-hl-q10-b","label":"b","marks":14,"rowIds":["b-notes","b-sketch"]},{"sourceCardId":"cons-2015-hl-q10-c","label":"c","marks":14,"rowIds":["c-notes","c-sketch"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original Passive House sketch retained. Part (a) chooses any two of three printed items, each keeping its own 16 marks. The 2015 scheme’s energy figures are historical, not current regulations."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2015-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-original.png",
+          "srcHash": "a64d5009b812b844113ba9a5a7f499bc",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 10: source question and illustration, original.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2015-HL-q10-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-scheme.png",
+          "srcHash": "be58085c5473be273627bc9e28a56fd0",
+          "alt": "Original SEC 2015 Higher Construction Studies Question 10: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
           "solution": true,
           "lettersVisible": []
     },

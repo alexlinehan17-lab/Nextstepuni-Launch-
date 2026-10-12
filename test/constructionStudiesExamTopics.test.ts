@@ -303,10 +303,18 @@ describe('Construction Studies exam-topic registry', () => {
       yearMin: 2010,
       yearMax: 2026,
     });
-    expect(CONSTRUCTION_HIGHER).toHaveLength(255 + CONSTRUCTION_2015_HIGHER_REVIEWED_IDS.length + CONSTRUCTION_2026_HIGHER_REVIEWED_IDS.length + CONSTRUCTION_2025_HIGHER_ADDED_IDS.length);
-    expect(CONSTRUCTION_ORDINARY).toHaveLength(250 + CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS.length + CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS.length + CONSTRUCTION_2025_ORDINARY_ADDED_IDS.length);
+    // A pre-audit card consolidated into the surviving card for its printed choice (choice is not a route)
+    // leaves the deck through a recorded withdrawal; its ID stays live as a progress alias.
+    const aliased = fs.readdirSync('scripts/markbank/authored').filter(n => /^construction-studies-.*-reviewed\.json$/.test(n))
+      .flatMap(n => (JSON.parse(fs.readFileSync(`scripts/markbank/authored/${n}`, 'utf8')).withdrawn ?? []) as Array<{cardId: string; aliasOf?: string}>)
+      .filter(w => w.aliasOf).map(w => w.cardId);
+    const aliasedHigher = aliased.filter(id => id.includes('-hl-')).length;
+    const aliasedOrdinary = aliased.filter(id => id.includes('-ol-')).length;
+    expect(aliasedHigher + aliasedOrdinary).toBe(aliased.length);
+    expect(CONSTRUCTION_HIGHER).toHaveLength(255 - aliasedHigher + CONSTRUCTION_2015_HIGHER_REVIEWED_IDS.length + CONSTRUCTION_2026_HIGHER_REVIEWED_IDS.length + CONSTRUCTION_2025_HIGHER_ADDED_IDS.length);
+    expect(CONSTRUCTION_ORDINARY).toHaveLength(250 - aliasedOrdinary + CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS.length + CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS.length + CONSTRUCTION_2025_ORDINARY_ADDED_IDS.length);
     expect(new Set(
       [...CONSTRUCTION_HIGHER, ...CONSTRUCTION_ORDINARY].map(card => card.id),
-    ).size).toBe(505 + CONSTRUCTION_2015_HIGHER_REVIEWED_IDS.length + CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS.length + CONSTRUCTION_2026_HIGHER_REVIEWED_IDS.length + CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS.length + CONSTRUCTION_2025_HIGHER_ADDED_IDS.length + CONSTRUCTION_2025_ORDINARY_ADDED_IDS.length);
+    ).size).toBe(505 - aliased.length + CONSTRUCTION_2015_HIGHER_REVIEWED_IDS.length + CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS.length + CONSTRUCTION_2026_HIGHER_REVIEWED_IDS.length + CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS.length + CONSTRUCTION_2025_HIGHER_ADDED_IDS.length + CONSTRUCTION_2025_ORDINARY_ADDED_IDS.length);
   });
 });

@@ -1,50 +1,22 @@
-// Original 2015 Higher Q1–Q2: five separately marked tasks and two full questions.
-export const CONSTRUCTION_2015_HIGHER_Q1_Q2_ADDED_IDS = [
-  'cons-2015-hl-q1-a', 'cons-2015-hl-q1-b', 'cons-2015-hl-q1-complete',
-  'cons-2015-hl-q2-a', 'cons-2015-hl-q2-b', 'cons-2015-hl-q2-c', 'cons-2015-hl-q2-complete',
-];
-
-// Original Q3–Q6 source boundaries and all finite printed routes.
-export const CONSTRUCTION_2015_HIGHER_Q3_Q6_ADDED_IDS = [
-  'cons-2015-hl-q3-a-A-advantages',
-  'cons-2015-hl-q3-a-A-disadvantages',
+// 2015 Higher Q1–Q10 and the alternative Q10: every separately marked task and one complete card per
+// question. Every printed choice is one card (choice is not a route).
+export const CONSTRUCTION_2015_HIGHER_REVIEWED_IDS = [
+  'cons-2015-hl-q1-a',
+  'cons-2015-hl-q1-b',
+  'cons-2015-hl-q1-complete',
+  'cons-2015-hl-q2-a',
+  'cons-2015-hl-q2-b',
+  'cons-2015-hl-q2-c',
+  'cons-2015-hl-q2-complete',
   'cons-2015-hl-q3-a-A',
-  'cons-2015-hl-q3-a-B-advantages',
-  'cons-2015-hl-q3-a-B-disadvantages',
   'cons-2015-hl-q3-a-B',
   'cons-2015-hl-q3-a',
-  'cons-2015-hl-q3-b-A-external-design',
-  'cons-2015-hl-q3-b-A-internal-layout',
-  'cons-2015-hl-q3-b-A-garden-link',
-  'cons-2015-hl-q3-b-A',
-  'cons-2015-hl-q3-b-B-external-design',
-  'cons-2015-hl-q3-b-B-internal-layout',
-  'cons-2015-hl-q3-b-B-garden-link',
-  'cons-2015-hl-q3-b-B',
+  'cons-2015-hl-q3-b',
   'cons-2015-hl-q3-c',
-  'cons-2015-hl-q3-complete-A',
-  'cons-2015-hl-q3-complete-B',
-  'cons-2015-hl-q4-a-local-character',
-  'cons-2015-hl-q4-a-breathable-structure',
-  'cons-2015-hl-q4-a-reuse-materials',
-  'cons-2015-hl-q4-b-roof',
-  'cons-2015-hl-q4-b-windows',
-  'cons-2015-hl-q4-b-floor',
-  'cons-2015-hl-q4-a-local-character-and-breathable-structure',
-  'cons-2015-hl-q4-a-local-character-and-reuse-materials',
-  'cons-2015-hl-q4-a-breathable-structure-and-reuse-materials',
-  'cons-2015-hl-q4-b-roof-and-windows',
-  'cons-2015-hl-q4-b-roof-and-floor',
-  'cons-2015-hl-q4-b-windows-and-floor',
-  'cons-2015-hl-q4-complete-local-character-and-breathable-structure--roof-and-windows',
-  'cons-2015-hl-q4-complete-local-character-and-breathable-structure--roof-and-floor',
-  'cons-2015-hl-q4-complete-local-character-and-breathable-structure--windows-and-floor',
-  'cons-2015-hl-q4-complete-local-character-and-reuse-materials--roof-and-windows',
-  'cons-2015-hl-q4-complete-local-character-and-reuse-materials--roof-and-floor',
-  'cons-2015-hl-q4-complete-local-character-and-reuse-materials--windows-and-floor',
-  'cons-2015-hl-q4-complete-breathable-structure-and-reuse-materials--roof-and-windows',
-  'cons-2015-hl-q4-complete-breathable-structure-and-reuse-materials--roof-and-floor',
-  'cons-2015-hl-q4-complete-breathable-structure-and-reuse-materials--windows-and-floor',
+  'cons-2015-hl-q3-complete',
+  'cons-2015-hl-q4-a',
+  'cons-2015-hl-q4-b',
+  'cons-2015-hl-q4-complete',
   'cons-2015-hl-q5-a',
   'cons-2015-hl-q5-b-new',
   'cons-2015-hl-q5-b-existing',
@@ -52,20 +24,9 @@ export const CONSTRUCTION_2015_HIGHER_Q3_Q6_ADDED_IDS = [
   'cons-2015-hl-q5-c',
   'cons-2015-hl-q5-complete',
   'cons-2015-hl-q6-a',
-  'cons-2015-hl-q6-b-compact-form',
-  'cons-2015-hl-q6-b-flexible-design',
-  'cons-2015-hl-q6-b-low-maintenance',
+  'cons-2015-hl-q6-b',
   'cons-2015-hl-q6-c',
-  'cons-2015-hl-q6-b-compact-form-and-flexible-design',
-  'cons-2015-hl-q6-complete-compact-form-and-flexible-design',
-  'cons-2015-hl-q6-b-compact-form-and-low-maintenance',
-  'cons-2015-hl-q6-complete-compact-form-and-low-maintenance',
-  'cons-2015-hl-q6-b-flexible-design-and-low-maintenance',
-  'cons-2015-hl-q6-complete-flexible-design-and-low-maintenance'
-];
-
-// Q7–Q10 include every printed choice and the separate Q10 alternative.
-export const CONSTRUCTION_2015_HIGHER_Q7_Q10_ADDED_IDS = [
+  'cons-2015-hl-q6-complete',
   'cons-2015-hl-q7-a',
   'cons-2015-hl-q7-b-eaves',
   'cons-2015-hl-q7-b-ridge',
@@ -77,40 +38,21 @@ export const CONSTRUCTION_2015_HIGHER_Q7_Q10_ADDED_IDS = [
   'cons-2015-hl-q8-c-hotpress',
   'cons-2015-hl-q8-c',
   'cons-2015-hl-q8-complete',
-  'cons-2015-hl-q9-a-eaves',
-  'cons-2015-hl-q9-a-upper-floor',
-  'cons-2015-hl-q9-a-cill',
-  'cons-2015-hl-q9-a-ground-floor',
-  'cons-2015-hl-q9-a-eaves-upper-floor-cill',
-  'cons-2015-hl-q9-a-eaves-upper-floor-ground-floor',
-  'cons-2015-hl-q9-a-eaves-cill-ground-floor',
-  'cons-2015-hl-q9-a-upper-floor-cill-ground-floor',
+  'cons-2015-hl-q9-a',
   'cons-2015-hl-q9-b',
-  'cons-2015-hl-q9-complete-eaves-upper-floor-cill',
-  'cons-2015-hl-q9-complete-eaves-upper-floor-ground-floor',
-  'cons-2015-hl-q9-complete-eaves-cill-ground-floor',
-  'cons-2015-hl-q9-complete-upper-floor-cill-ground-floor',
-  'cons-2015-hl-q10-a-airtightness',
-  'cons-2015-hl-q10-a-space-heating',
-  'cons-2015-hl-q10-a-indoor-air',
-  'cons-2015-hl-q10-a-airtightness-space-heating',
-  'cons-2015-hl-q10-a-airtightness-indoor-air',
-  'cons-2015-hl-q10-a-space-heating-indoor-air',
+  'cons-2015-hl-q9-complete',
+  'cons-2015-hl-q10-a',
   'cons-2015-hl-q10-b',
   'cons-2015-hl-q10-c',
-  'cons-2015-hl-q10-complete-airtightness-space-heating',
-  'cons-2015-hl-q10-complete-airtightness-indoor-air',
-  'cons-2015-hl-q10-complete-space-heating-indoor-air',
+  'cons-2015-hl-q10-complete',
   'cons-2015-hl-q10-alt-discussion',
   'cons-2015-hl-q10-alt-glazing',
   'cons-2015-hl-q10-alt-guidelines',
   'cons-2015-hl-q10-alt-complete'
 ];
 
-export const CONSTRUCTION_2015_HIGHER_REVIEWED_IDS = [...CONSTRUCTION_2015_HIGHER_Q1_Q2_ADDED_IDS, ...CONSTRUCTION_2015_HIGHER_Q3_Q6_ADDED_IDS, ...CONSTRUCTION_2015_HIGHER_Q7_Q10_ADDED_IDS];
-
-// Original 2015 Ordinary Q1–Q9: every separately marked task, every complete question and all
-// 126 choose-five Q8 routes (C(9,5)).
+// Original 2015 Ordinary Q1–Q9: every separately marked task and every complete question; the
+// choose-five-of-nine Q8 is one card (choice is not a route).
 export const CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS = [
   'cons-2015-ol-q1-a',
   'cons-2015-ol-q1-b',

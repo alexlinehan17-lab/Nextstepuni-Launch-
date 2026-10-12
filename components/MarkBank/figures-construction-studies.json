@@ -34,41 +34,6 @@
     "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
     "solution": false
   },
-  "construction-studies-2015-HL-q3-attached-exterior": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-attached-exterior.png",
-    "md5": "f906cd40cf358e67e286cb78cbdf2af1",
-    "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): attached exterior. These are sample accepted designs, not extra required choices.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-HL-q3-attached-layout": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-attached-layout.png",
-    "md5": "cfb5f759c90531f08bc73d0420fc8e0e",
-    "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): attached layout. These are sample accepted designs, not extra required choices.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-HL-q3-detached-exterior": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-detached-exterior.png",
-    "md5": "b8659df9d2f5700c512d9b7b8f4f292b",
-    "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): detached exterior. These are sample accepted designs, not extra required choices.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-HL-q3-detached-layout": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-detached-layout.png",
-    "md5": "e295e34b3b204524478fa4759adadffd",
-    "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): detached layout. These are sample accepted designs, not extra required choices.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-HL-q3-garden-link": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-garden-link.png",
-    "md5": "c5c19a4245d8667b7e9d776455b9e3fc",
-    "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): garden link. These are sample accepted designs, not extra required choices.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
   "construction-studies-2015-HL-q3-scheme": {
     "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-scheme.png",
     "md5": "1b29ab493fdd5b707f9a71e4d508ad26",
@@ -83,38 +48,10 @@
     "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
     "solution": false
   },
-  "construction-studies-2015-HL-q4-roof": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof.png",
-    "md5": "e6df0697de8d9f0286f433f183cb8445",
-    "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof. These are sample accepted designs, not extra required choices.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-HL-q4-windows": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-windows.png",
-    "md5": "8083724d9c494b1560f6877d0493f273",
-    "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): windows. These are sample accepted designs, not extra required choices.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-HL-q4-floor": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-floor.png",
-    "md5": "7d899cdf04ebe55ccf0cc90854653da4",
-    "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): floor. These are sample accepted designs, not extra required choices.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
   "construction-studies-2015-HL-q4-roof-windows": {
     "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-windows.png",
     "md5": "01f00367358eb31fb586863aa2feeb82",
     "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof windows. These are sample accepted designs, not extra required choices.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-HL-q4-roof-floor": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-floor.png",
-    "md5": "73aa35ec72d3e4f761656d3937440adc",
-    "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof floor. These are sample accepted designs, not extra required choices.",
     "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
     "solution": true
   },
@@ -143,13 +80,6 @@
     "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-compact.png",
     "md5": "21a891a67648826f60cb93914678acfc",
     "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): compact. These are sample accepted designs, not extra required choices.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2015-HL-q6-flexible-maintenance": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-flexible-maintenance.png",
-    "md5": "407da66aeb9e2a564484378607847e89",
-    "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): flexible maintenance. These are sample accepted designs, not extra required choices.",
     "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
     "solution": true
   },

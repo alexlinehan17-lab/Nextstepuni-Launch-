@@ -50,6 +50,16 @@ PAPERS = {
                         aliases={'cons-2025-hl-q2-a-health-and-safety-officer': 'cons-2025-hl-q2-a-safety-training',
                                  'cons-2025-hl-q2-a-risk-assessment-audit': 'cons-2025-hl-q2-a-safety-training',
                                  'cons-2025-hl-q10-a-foundation-design': 'cons-2025-hl-q10-a-building-form'}),
+    # The 2015 Higher redraft also lifts every stem and question text (its earlier review carried authored
+    # paraphrase), so its status and bridge reason come from the draft, and its figures are the earlier crops.
+    '2015-higher': dict(validator='construction_2015_higher', draft=DRAFTS / 'construction-2015-higher/higher-2015-draft.json',
+                        review='construction-studies-2015-higher-reviewed.json', bridge='construction-studies-2015-higher.json',
+                        fixture='test/fixtures/construction2015Reviewed.ts', consts={'CONSTRUCTION_2015_HIGHER_REVIEWED_IDS': 'all'},
+                        aliases={}, figure_dir=R / 'public/exam-figures/construction-studies/markbank',
+                        drop=('questionDraftReviews', 'validatedAt'), status_from_draft=True,
+                        bridge_reason='2015 Higher main English theory: all ten printed question numbers, the separate Q10 alternative and '
+                                      '48 source-reviewed tasks reconciled with lifted wording; every printed choice is one card '
+                                      '(choice is not a route). Practical/Irish/other papers remain open.'),
 }
 RULE = ('Choice is not a route (coordinator rule, 2026-10-12): a printed choose-N-of-M is ONE card that prints all M items '
         'with one anyN group over them, never a card per item or per combination.')
@@ -85,7 +95,7 @@ def main(key):
     old = read(review_path)
     assert 'consolidation' not in old, f'{key} is already consolidated'
     draft = read(cfg['draft'])
-    validator.validate(draft, figure_dir=cfg['draft'].parent, integrated=None)
+    validator.validate(draft, figure_dir=cfg.get('figure_dir', cfg['draft'].parent), integrated=None)
 
     authored = read(authored_path)
     by_id = {c['id']: c for c in authored}
@@ -130,14 +140,15 @@ def main(key):
     save(manifest_path, manifest)
 
     now = datetime.now(timezone.utc).isoformat()
-    keep = {k: v for k, v in old.items() if k not in draft and k not in ('tasks', 'bindings', 'questionFigures', 'addedIds', 'corrections', 'consolidatedLegacy')}
+    keep = {k: v for k, v in old.items() if k not in draft and k not in ('tasks', 'bindings', 'questionFigures', 'addedIds', 'corrections', 'consolidatedLegacy')
+            and k not in cfg.get('drop', ())}
     review = dict(draft, **keep)
     review['withdrawn'] = old.get('withdrawn', []) + withdrawn
     supersede(review, old)
     review['consolidation'] = dict(at=now, rule=RULE, withdrawnCards=len(withdrawn), aliasedCards=len(cfg['aliases']),
                                    tasksBefore=len(old_ids), tasksAfter=len(new_cards),
                                    removedFigures=sorted(old_figs - set(new_figs)))
-    review['status'] = re.sub(r'\b\d+ source-reviewed tasks', f'{len(new_cards)} source-reviewed tasks', old['status'])
+    review['status'] = draft['status'] if cfg.get('status_from_draft') else re.sub(r'\b\d+ source-reviewed tasks', f'{len(new_cards)} source-reviewed tasks', old['status'])
     save(review_path, review)
 
     bridge = read(bridge_path)
@@ -145,7 +156,7 @@ def main(key):
                   questions=[dict(n=q['n'], fileid=q['fileid'],
                                   topicIds=sorted({t for b in draft['bindings'] if b['questionNumber'] == q['n'] for t in b['atlasTopicIds']}))
                              for q in bridge['questions']])
-    bridge['reason'] = re.sub(r'\d+ source-reviewed tasks', f'{len(new_cards)} source-reviewed tasks', bridge['reason'])
+    bridge['reason'] = cfg.get('bridge_reason') or re.sub(r'\d+ source-reviewed tasks', f'{len(new_cards)} source-reviewed tasks', bridge['reason'])
     save(bridge_path, bridge)
 
     fixture = R / cfg['fixture']
