@@ -20036,1256 +20036,1310 @@
   },
   {
     "id": "cons-2023-ol-q1-b",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-3-3",
     "conceptId": "connecting-the-inner-and-outer-leaves",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2023 OL Q1(b)",
+    "stem": "The sketch shows the external wall and timber first floor of a dwelling house. The external wall is a 400 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. The first floor joists are 225 mm × 50 mm and are fixed to the external wall using joist hangers. The floor is finished with a tongued and grooved hardwood floor, on 20 mm plywood decking with a plasterboard ceiling beneath.",
     "questionText": "On your drawing, show the typical design detailing to connect the inner and outer leaves of the external wall.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "fixed",
-      "notation": "3",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
+      "kind": "fixed"
     },
     "totalMarks": 3,
     "rows": [
       {
-        "id": "cons-2023-ol-q1-b-r1",
-        "kind": "point",
+        "id": "wall-tie",
+        "kind": "criterion",
         "verbatim": "Wall tie clearly identified",
         "marks": 3,
-        "openList": true,
-        "contextNote": ""
+        "contextNote": "Show and identify the wall tie connecting the two leaves across the cavity, as in the scheme’s model section.",
+        "permittedMarks": [
+          0,
+          3
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q1-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "External wall and timber first floor section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the wall-tie detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    }
   },
   {
     "id": "cons-2023-ol-q2-a",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-6-3",
     "conceptId": "why-energy-upgrade-grants-exist",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2023 OL Q2(a)",
+    "stem": "The sketch shows an old uninsulated dwelling house. The homeowner has received a grant to carry out energy upgrades to their house. They have decided to start by adding external insulation to the walls of the house.",
     "questionText": "Discuss two reasons why energy upgrade grants are available for old houses.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 6",
-      "answer": 2,
-      "ofParts": 5,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 12,
     "rows": [
       {
-        "id": "cons-2023-ol-q2-a-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss two reasons why energy upgrade grants are available for old houses.",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "To improve the BER of the house",
-            "To reduce the energy usage of the home and in turn reduce carbon emissions",
-            "To encourage owners to upgrade existing houses instead of building new houses",
-            "To make older houses energy efficient, sustainable, and economical to heat",
-            "To encourage greener living for the inhabitants"
-          ]
-        }
+        "id": "reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 6,
+        "contextNote": "Such as: to improve the BER of the house; to reduce the energy use of the home and so its carbon emissions.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 6,
+        "contextNote": "A second, different reason. Such as: to encourage owners to upgrade existing houses instead of building new ones; to make older houses energy efficient, sustainable and economical to heat; to encourage greener living.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q2-reasons",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Energy upgrades to an old house",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The insulation method and type, and the other upgrade in (c), are open choices; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2023-ol-q2-c",
-    "topicId": "cons-6-3",
-    "conceptId": "other-energy-upgrades-for-an-old-house",
-    "level": "ordinary",
-    "year": 2023,
     "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "other-energy-upgrades-for-an-old-house",
     "questionRef": "2023 OL Q2(c)",
+    "stem": "The sketch shows an old uninsulated dwelling house. The homeowner has received a grant to carry out energy upgrades to their house. They have decided to start by adding external insulation to the walls of the house.",
     "questionText": "On a separate sketch show, using notes and freehand sketches, one other possible energy upgrade the homeowner could carry out to their house.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 14",
-      "answer": 1,
-      "ofParts": 5,
-      "perPart": 14
+      "kind": "fixed"
     },
     "totalMarks": 14,
     "rows": [
       {
-        "id": "cons-2023-ol-q2-c-r1",
-        "kind": "anyN",
-        "verbatim": "On a separate sketch show, using notes and freehand sketches, one other possible energy upgrade the homeowner could carr",
+        "id": "upgrade",
+        "kind": "criterion",
+        "verbatim": "Possible energy upgrade note & sketch (7 + 7 marks)",
         "marks": 14,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 1,
-          "perOption": 14,
-          "options": [
-            "Increase insulation at roof level",
-            "Install solar panels to supplement electricity from the grid",
-            "Replace the heating system to a more energy efficient method",
-            "Replace open fireplace with a wood burning stove",
-            "Upgrade to high performance windows Any alternative detailing which complies with current Building Regulations is acceptable"
-          ]
-        }
+        "contextNote": "Note 7 and sketch 7 of one other upgrade. Such as: more insulation at roof level; solar panels to supplement grid electricity; a more energy-efficient heating system; a wood-burning stove in place of an open fire; high-performance windows.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q2-upgrade",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Energy upgrades to an old house",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The insulation method and type, and the other upgrade in (c), are open choices; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2023-ol-q3-a",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-5-2",
     "conceptId": "pipework-for-a-solar-installation",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2023 OL Q3(a)",
-    "questionText": "Draw a large freehand sketch of the given house. On your sketch, show the pipework necessary to connect the solar collector to the hot water cylinder and supply hot water to a shower.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "stem": "The sketch shows a dwelling house which has a solar collector on the roof. The solar collector provides hot water for the household.",
+    "questionText": "Draw a large freehand sketch of the given house. On your sketch, show the pipework necessary to connect the solar collector to the hot water cylinder and supply hot water to a shower. Include the following in your sketch: flow and return pipes; expansion vessel; pipework to shower; all necessary valves.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "8 x 5",
-      "answer": 8,
-      "ofParts": 12,
-      "perPart": 5
+      "kind": "fixed"
     },
     "totalMarks": 40,
     "rows": [
       {
-        "id": "cons-2023-ol-q3-a-r1",
-        "kind": "anyN",
-        "verbatim": "Typical details",
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "Any 8 x 5 marks",
         "marks": 40,
-        "openList": true,
-        "contextNote": "Typical details",
-        "group": {
-          "claimMax": 8,
-          "perOption": 5,
-          "options": [
-            "Solar collector",
-            "Ø22 mm cold feed to collector",
-            "Ø22 mm hot return to cylinder",
-            "250 l cylinder",
-            "Circulation pump",
-            "24 l solar expansion vessel",
-            "Storage tank",
-            "Ø22 mm cold feed to cylinder",
-            "Ø28 mm expansion pipe",
-            "Ø22 mm hot water to shower",
-            "Shower unit",
-            "Stop valves and drain valve"
-          ]
-        }
+        "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: solar collector; cold feed to collector; hot return to cylinder; cylinder; circulation pump; solar expansion vessel; storage tank; cold feed to cylinder; expansion pipe; hot water to shower and shower unit; valves. Typical sizes: Ø22 mm feed and return, a 250 l cylinder, a 24 l solar expansion vessel, a Ø28 mm expansion pipe, Ø22 mm hot water to the shower.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q3-system",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Solar collector hot water pipework",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The listed components are required content, not a choice. The scheme diagram is one acceptable layout; any alternative that complies with current Building Regulations is acceptable."
+    }
   },
   {
     "id": "cons-2023-ol-q3-b",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-6-4",
     "conceptId": "where-to-locate-solar-panels",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2023 OL Q3(b)",
+    "stem": "The sketch shows a dwelling house which has a solar collector on the roof. The solar collector provides hot water for the household.",
     "questionText": "Discuss two considerations when deciding the location of solar panels on a house.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 5",
-      "answer": 2,
-      "ofParts": 7,
-      "perPart": 5
+      "kind": "fixed"
     },
     "totalMarks": 10,
     "rows": [
       {
-        "id": "cons-2023-ol-q3-b-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss two considerations when deciding the location of solar panels on a house.",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 5,
-          "options": [
-            "Orientation of roof",
-            "Position and proximity of neighbouring buildings",
-            "The pitch of the roof",
-            "Type of roof on the house, ability of the roof to support and secure the panels",
-            "Usable area of the roof",
-            "Space of the surrounding garden and possible shading from neighbouring trees/plants",
-            "Ease for maintenance and cleaning so it continues to work efficiently"
-          ]
-        }
+        "id": "consideration-1",
+        "kind": "criterion",
+        "verbatim": "Consideration 1",
+        "marks": 5,
+        "contextNote": "Such as: the orientation of the roof; the position and proximity of neighbouring buildings; the pitch of the roof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "consideration-2",
+        "kind": "criterion",
+        "verbatim": "Consideration 2",
+        "marks": 5,
+        "contextNote": "A second, different consideration. Such as: whether the roof can support and secure the panels; the usable roof area; shading from trees; ease of maintenance and cleaning.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q3-locations",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Solar collector hot water pipework",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The listed components are required content, not a choice. The scheme diagram is one acceptable layout; any alternative that complies with current Building Regulations is acceptable."
+    }
   },
   {
     "id": "cons-2023-ol-q4-a",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-3-8",
     "conceptId": "advantages-of-prefabricated-trussed-rafters",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2023 OL Q4(a)",
+    "stem": "The sketch shows the roof of a house under construction. The homeowners have decided to construct the roof using prefabricated trussed rafters.",
     "questionText": "Discuss two advantages of using prefabricated trussed rafters to construct a roof.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 4",
-      "answer": 2,
-      "ofParts": 4,
-      "perPart": 4
+      "kind": "fixed"
     },
     "totalMarks": 8,
     "rows": [
       {
-        "id": "cons-2023-ol-q4-a-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss two advantages of using prefabricated trussed rafters to construct a roof.",
-        "marks": 8,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 4,
-          "options": [
-            "Less waste produced in the construction compared to cut roofs",
-            "Quicker roof construction time on-site",
-            "Uses material more efficiently compared to cut roof construction",
-            "Can produce open plan dwellings, as the truss is not reliant on internal walls for support Any other valid reason will be accepted"
-          ]
-        }
+        "id": "advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 4,
+        "contextNote": "Such as: less waste than a cut roof; quicker roof construction on site.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 4,
+        "contextNote": "A second, different advantage. Such as: more efficient use of material; open-plan layouts, as the truss does not rely on internal walls for support.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q4-advantages",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Prefabricated trussed rafters",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. All five printed items in (b) are required in one sketch; the roof finish in (c) is an open choice."
+    }
   },
   {
     "id": "cons-2023-ol-q4-b",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-3-8",
     "conceptId": "how-a-trussed-rafter-is-fixed",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2023 OL Q4(b)",
-    "questionText": "Using notes and a freehand sketch, show the typical construction details of how a trussed rafter is secured on the external wall of a house.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "stem": "The sketch shows the roof of a house under construction. The homeowners have decided to construct the roof using prefabricated trussed rafters.",
+    "questionText": "Using notes and a freehand sketch, show the typical construction details of how a trussed rafter is secured on the external wall of a house. Include the following in your sketch: external wall; wallplate; trussed rafter; nail plate; truss clip.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "5 x 6",
-      "answer": 5,
-      "ofParts": 6,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 30,
     "rows": [
       {
-        "id": "cons-2023-ol-q4-b-r1",
-        "kind": "anyN",
-        "verbatim": "Using notes and a freehand sketch, show the typical construction details of how a trussed rafter is secured on the exter",
-        "marks": 30,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 5,
-          "perOption": 6,
-          "options": [
-            "External insulated walls are finished with a cavity closer",
-            "Wall plates 100 mm × 75 mm are securely fixed to the external wall with 1200 mm galvanised steel straps",
-            "Truss rafters are prefabricated off site",
-            "Nail plates are mechanically fixed at all joints and structural locations for strength and rigidity",
-            "Truss clips are attached on to the wall plate at 400 mm intervals",
-            "The truss rafter is lifted onto the truss clips and secured in place"
-          ]
-        }
+        "id": "wall",
+        "kind": "criterion",
+        "verbatim": "external wall sketch & note (4 + 2 marks)",
+        "marks": 6,
+        "contextNote": "Sketch 4 and note 2. Such as: the insulated external wall finished with a cavity closer.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "wallplate",
+        "kind": "criterion",
+        "verbatim": "wallplate sketch & note (4 + 2 marks)",
+        "marks": 6,
+        "contextNote": "Sketch 4 and note 2. Such as: a 100 mm × 75 mm wallplate fixed to the wall with 1200 mm galvanised steel straps.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "rafter",
+        "kind": "criterion",
+        "verbatim": "trussed rafter sketch & note (4 + 2 marks)",
+        "marks": 6,
+        "contextNote": "Sketch 4 and note 2. Such as: trussed rafters prefabricated off site, lifted onto the truss clips and secured.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "nail-plate",
+        "kind": "criterion",
+        "verbatim": "nail plate sketch & note (4 + 2 marks)",
+        "marks": 6,
+        "contextNote": "Sketch 4 and note 2. Such as: nail plates mechanically fixed at all joints for strength and rigidity.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "truss-clip",
+        "kind": "criterion",
+        "verbatim": "truss clip sketch & note (4 + 2 marks)",
+        "marks": 6,
+        "contextNote": "Sketch 4 and note 2. Such as: truss clips fixed to the wallplate at 400 mm intervals.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q4-fixing",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Prefabricated trussed rafters",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. All five printed items in (b) are required in one sketch; the roof finish in (c) is an open choice."
+    }
   },
   {
     "id": "cons-2023-ol-q5-a",
-    "topicId": "cons-3-10",
-    "conceptId": "vertical-section-wall-and-flat-roof-eaves",
-    "level": "ordinary",
-    "year": 2023,
     "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "vertical-section-wall-and-flat-roof-eaves",
     "questionRef": "2023 OL Q5(a)",
+    "stem": "The sketch shows the eaves of a flat roof. The roof is covered with a waterproof membrane, on 150 mm rigid insulation, on a 20 mm plywood deck supported by sloping firring pieces. The 200 mm × 50 mm timber joists have a plasterboard ceiling beneath. The roof is supported on a 400 mm concrete block wall with a full-fill insulated cavity. The wall is rendered on both sides.",
     "questionText": "To a scale of 1:5, draw a vertical section through the external wall and the eaves of the flat roof. On your drawing, show the typical construction details from a level 450 mm below the wallplate, through the external wall and eaves. Show 900 mm length of roof joist.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "8 x 5",
-      "answer": 8,
-      "ofParts": 14,
-      "perPart": 5
+      "kind": "fixed"
     },
-    "totalMarks": 40,
+    "totalMarks": 46,
     "rows": [
       {
-        "id": "cons-2023-ol-q5-a-r1",
-        "kind": "anyN",
-        "verbatim": "Specification – typical detail",
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "Any 8 x 5 marks",
         "marks": 40,
-        "openList": true,
-        "contextNote": "Specification – typical detail",
-        "group": {
-          "claimMax": 8,
-          "perOption": 5,
-          "options": [
-            "19 mm external render",
-            "Concrete block outer leaf 100 mm",
-            "Full fill insulated cavity 200 mm",
-            "Wall tie",
-            "Concrete block inner leaf 100 mm",
-            "15 mm internal plaster",
-            "100 mm × 75 mm wall plate",
-            "Cavity closer",
-            "Waterproof membrane",
-            "150 mm insulation",
-            "Breather membrane",
-            "20 mm plywood decking",
-            "Firring piece",
-            "200 × 50 mm insulated ceiling joist"
-          ]
-        }
+        "contextNote": "Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; wallplate with cavity closer; waterproof membrane; insulation; plywood decking with breather membrane; firring piece; insulated ceiling joist; insulated plasterboard ceiling with airtight membrane; fascia and soffit; gutter. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster, a 100 × 75 mm wallplate, 150 mm insulation, 20 mm plywood, 200 × 50 mm joists and a 50 mm insulated plasterboard ceiling.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+        "marks": 6,
+        "contextNote": "Draughting, accuracy and scale of the section: excellent 6, good 4, fair 2.",
+        "permittedMarks": [
+          0,
+          2,
+          4,
+          6
+        ]
       }
     ],
-    "notes": "The scheme lists 17 acceptable points under \"Specification – typical detail\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+    "questionFigureKey": "construction-studies-2023-OL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q5-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "External wall and flat roof eaves section",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details and draughting belong to part (a); the cavity-closer detail in (b) is marked separately."
+    }
   },
   {
     "id": "cons-2023-ol-q6-a",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-9-4",
     "conceptId": "safety-in-the-construction-studies-room",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2023 OL Q6(a)",
-    "questionText": "State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations: • using a jigsaw • using epoxy adhesive.",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations: using a jigsaw; using epoxy adhesive.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "4 x 4",
-      "answer": 4,
-      "ofParts": 9,
-      "perPart": 4
+      "kind": "fixed"
     },
     "totalMarks": 16,
     "rows": [
       {
-        "id": "cons-2023-ol-q6-a-r1",
-        "kind": "anyN",
-        "verbatim": "Using a jigsaw • Use a dust mask during operation",
-        "marks": 16,
-        "openList": true,
-        "contextNote": "Using a jigsaw • Use a dust mask during operation",
-        "group": {
-          "claimMax": 4,
-          "perOption": 4,
-          "options": [
-            "Use ear protection to reduce damage to hearing",
-            "Use eye protection to protect from dust and flying chips of material",
-            "Ensure leads are not a trip hazard",
-            "Ensure work piece is secured from movement while using the jigsaw Using epoxy",
-            "Ensure the work zone is well ventilated adhesive",
-            "Use skin and clothing protection",
-            "Use a respirator mask to prevent inhaling epoxy vapours",
-            "Use eye protection to prevent the risk of contact with eyes",
-            "Ensure work area is clear to avoid slips if the epoxy leaks Any other suitable specific precaution will be accepted"
-          ]
-        }
+        "id": "jigsaw-1",
+        "kind": "criterion",
+        "verbatim": "Using a jigsaw - Safety precaution 1",
+        "marks": 4,
+        "contextNote": "Such as: wear a dust mask; wear ear protection; wear eye protection against dust and flying chips.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "jigsaw-2",
+        "kind": "criterion",
+        "verbatim": "Using a jigsaw - Safety precaution 2",
+        "marks": 4,
+        "contextNote": "A second, different jigsaw precaution. Such as: keep leads from being a trip hazard; secure the work piece against movement.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "epoxy-1",
+        "kind": "criterion",
+        "verbatim": "Using epoxy adhesive - Safety precaution 1",
+        "marks": 4,
+        "contextNote": "Such as: work in a well-ventilated zone; protect skin and clothing.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "epoxy-2",
+        "kind": "criterion",
+        "verbatim": "Using epoxy adhesive - Safety precaution 2",
+        "marks": 4,
+        "contextNote": "A second, different epoxy precaution. Such as: a respirator mask against the vapours; eye protection; keep the work area clear to avoid slips if the epoxy leaks.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q6-classroom",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Safety in the Construction Studies room",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. Both printed situations in (a) are required, two precautions each. Precautions and reasons are open responses; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2023-ol-q6-b",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-9-4",
     "conceptId": "safety-precautions-with-workshop-equipment",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2023 OL Q6(b)",
-    "questionText": "Using notes and freehand sketches, describe three specific safety precautions to be observed when woodturning on a lathe. Give one reason for each safety precaution outlined.",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "Using notes and freehand sketches, describe three specific safety precautions to be observed when woodturning on a lathe. Give one reason for each safety precaution outlined.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 8",
-      "answer": 3,
-      "ofParts": 6,
-      "perPart": 8
+      "kind": "fixed"
     },
     "totalMarks": 24,
     "rows": [
       {
-        "id": "cons-2023-ol-q6-b-r1",
-        "kind": "anyN",
-        "verbatim": "Give one reason for each",
-        "marks": 24,
-        "openList": true,
-        "contextNote": "Give one reason for each",
-        "group": {
-          "claimMax": 3,
-          "perOption": 8,
-          "options": [
-            "Close fitting, protective clothing must be worn",
-            "Long and loose hair must be tied back",
-            "Face visor must be worn",
-            "Dust mask or breathing protection must be used",
-            "The tool rest must be positioned at the correct height and distance to the workpiece",
-            "The correct RPM should be used depending on the size of the work piece"
-          ]
-        }
+        "id": "precaution-1",
+        "kind": "criterion",
+        "verbatim": "Safety precautions 1 and reason (3 + 3 + 2 marks)",
+        "marks": 8,
+        "contextNote": "A precaution in notes and sketch with its reason, marked 3 + 3 + 2. Such as: close-fitting protective clothing; long or loose hair tied back.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "precaution-2",
+        "kind": "criterion",
+        "verbatim": "Safety precautions 2 and reason (3 + 3 + 2 marks)",
+        "marks": 8,
+        "contextNote": "A second, different precaution with its reason, 3 + 3 + 2. Such as: a face visor; a dust mask or breathing protection.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "precaution-3",
+        "kind": "criterion",
+        "verbatim": "Safety precautions 3 and reason (3 + 3 + 2 marks)",
+        "marks": 8,
+        "contextNote": "A third, different precaution with its reason, 3 + 3 + 2. Such as: the tool rest at the correct height and distance from the work piece; the correct speed (RPM) for the size of the work piece.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q6-lathe",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Safety in the Construction Studies room",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. Both printed situations in (a) are required, two precautions each. Precautions and reasons are open responses; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2023-ol-q6-c",
-    "topicId": "cons-9-1",
-    "conceptId": "why-a-workshop-is-kept-tidy",
-    "level": "ordinary",
-    "year": 2023,
     "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-9-4",
+    "conceptId": "why-a-workshop-is-kept-tidy",
     "questionRef": "2023 OL Q6(c)",
-    "questionText": "Discuss two reasons why it is important to maintain an organised and tidy environment in a Construction Studies room.",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "Discuss two reasons why it is important to maintain an organised and tidy environment in a Construction Studies room.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 5",
-      "answer": 2,
-      "ofParts": 6,
-      "perPart": 5
+      "kind": "fixed"
     },
     "totalMarks": 10,
     "rows": [
       {
-        "id": "cons-2023-ol-q6-c-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss two reasons why it is important to maintain an organised and tidy environment in a Construction Studies room.",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 5,
-          "options": [
-            "Reduces the risk of trip hazards",
-            "Easier to locate tools and work material",
-            "Reduces time lost when locating tools and work pieces",
-            "Reduces damage to tools and machines",
-            "Organised storage of off-cuts promotes material reuse and reduces material waste",
-            "Promotes neatness and correct procedure when working on practical projects Any other suitable reason will be accepted"
-          ]
-        }
+        "id": "reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 5,
+        "contextNote": "Such as: fewer trip hazards; tools and materials are easier to find.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 5,
+        "contextNote": "A second, different reason. Such as: less time lost locating tools; less damage to tools and machines; off-cuts stored for reuse, reducing waste; neat, correct working procedure.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q6-tidy",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Safety in the Construction Studies room",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. Both printed situations in (a) are required, two precautions each. Precautions and reasons are open responses; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2023-ol-q7-a",
-    "topicId": "cons-1-1",
-    "conceptId": "advantages-of-a-large-utility-room",
-    "level": "ordinary",
-    "year": 2023,
     "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "advantages-of-a-large-utility-room",
     "questionRef": "2023 OL Q7(a)",
+    "stem": "The draft design for a utility room in a new dwelling house is shown. The positions of the external door, window and a door to the kitchen are included.",
     "questionText": "Discuss two advantages of including a large utility room in the design of a new home.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 5",
-      "answer": 2,
-      "ofParts": 6,
-      "perPart": 5
+      "kind": "fixed"
     },
     "totalMarks": 10,
     "rows": [
       {
-        "id": "cons-2023-ol-q7-a-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss two advantages of including a large utility room in the design of a new home.",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 5,
-          "options": [
-            "Creates extra usable kitchen space",
-            "Place to store outdoor shoes and clothing to keep the house hygienic",
-            "Place to position washing machine to reduce the sound interrupting the kitchen",
-            "Extra storage for bulky items from the house",
-            "Secure space for family pet during the day and night",
-            "Space to hang and air freshly washed clothing"
-          ]
-        }
+        "id": "advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 5,
+        "contextNote": "Such as: extra usable kitchen space; a place to store outdoor shoes and clothing, keeping the house hygienic.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 5,
+        "contextNote": "A second, different advantage. Such as: the washing machine away from the kitchen to reduce noise; storage for bulky items; a secure space for a pet; space to hang and air washed clothes.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q7-advantages",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Utility room design",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations, reasons and the floor covering are open, well-reasoned responses."
+    }
   },
   {
     "id": "cons-2023-ol-q7-b",
-    "topicId": "cons-1-1",
-    "conceptId": "laying-out-a-utility-room",
-    "level": "ordinary",
-    "year": 2023,
     "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "laying-out-a-utility-room",
     "questionRef": "2023 OL Q7(b)",
-    "questionText": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the utility room: • sink • washing machine • storage units • seating / boot area. Give one reason for selecting each location.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "stem": "The draft design for a utility room in a new dwelling house is shown. The positions of the external door, window and a door to the kitchen are included.",
+    "questionText": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the utility room: sink; washing machine; storage units; seating / boot area. Give one reason for selecting each location.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "4 x 5",
-      "answer": 4,
-      "ofParts": 14,
-      "perPart": 5
+      "kind": "fixed"
     },
-    "totalMarks": 20,
+    "totalMarks": 28,
     "rows": [
       {
-        "id": "cons-2023-ol-q7-b-r1",
-        "kind": "anyN",
-        "verbatim": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the utili",
-        "marks": 20,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 4,
-          "perOption": 5,
-          "options": [
-            "sink",
-            "washing machine",
-            "storage units",
-            "seating / boot area",
-            "Located close to window to allow natural light access to work area",
-            "Located by window to allow user to have a view of the outdoors",
-            "Located on an external wall for ease of connection to wastewater disposal washing machine",
-            "Located on an external wall for ease of wastewater disposal",
-            "Access to electrical sockets",
-            "Located on external wall for access to water supply storage units",
-            "Located by wall to prevent blocking occupants entering and exiting the home",
-            "Located by wall so the units can be supported and attached for strength and stability",
-            "Located close to the washing machine to allow storage of laundry and washing detergents seating / boot area",
-            "Located by a wall to allow the seating to be fixed securely to it"
-          ]
-        }
+        "id": "sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 8,
+        "contextNote": "A large freehand sketch of the given utility room design.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "sink",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for sink (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: by the window for natural light and a view out; on an external wall for the wastewater connection.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "washing-machine",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for washing machine (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: on an external wall for wastewater disposal and water supply; near electrical sockets.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "storage",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for storage units (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: against a wall so they do not block the doors and can be fixed securely; beside the washing machine for laundry and detergents.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "seating",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for seating / boot area (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: against a wall so it can be fixed securely; close to the external door for removing and storing shoes and boots.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
       }
     ],
-    "notes": "The scheme awards 28 marks for this part. The 20 on this card are the marks it states answers for; the other 8 go to Sketch (8) — the drawing itself and anything the scheme prices without saying what earns it. The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+    "questionFigureKey": "construction-studies-2023-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q7-layout",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Utility room design",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations, reasons and the floor covering are open, well-reasoned responses."
+    }
   },
   {
     "id": "cons-2023-ol-q9-a",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-3-7",
     "conceptId": "choosing-a-material-for-a-front-door",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2023 OL Q9(a)",
+    "stem": "The sketch shows a front entrance to a semi-detached house. The owners wish to modify the front entrance to make it fit for use by a person with limited mobility.",
     "questionText": "Specify a suitable material for a new front door, and give two reasons for your choice.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 4",
-      "answer": 3,
-      "ofParts": 14,
-      "perPart": 4
+      "kind": "fixed"
     },
     "totalMarks": 12,
     "rows": [
       {
-        "id": "cons-2023-ol-q9-a-r1",
-        "kind": "anyN",
-        "verbatim": "Suitable material for front door",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "Suitable material for front door",
-        "group": {
-          "claimMax": 3,
-          "perOption": 4,
-          "options": [
-            "Cedar",
-            "Larch",
-            "Oak",
-            "Teak",
-            "uPVC",
-            "Aluminium Two reasons for your choice",
-            "Durability",
-            "Some wood species don’t require preservative treatment due to natural oils",
-            "Naturally resistant to insect attack",
-            "Naturally resistant to moisture",
-            "Aluminium and uPVC don’t require regular maintenance",
-            "Install ramp to main entrance of a slope 1:20. (minimum width 1200 mm) with a level landing pad turning circle at the entrance",
-            "Remove driveway material that may cause trips and falls and install a smooth slip resistant material. Patterned concrete, paving stones, tarmacadam",
-            "Glass panel to observe who is at the door"
-          ]
-        }
+        "id": "material",
+        "kind": "criterion",
+        "verbatim": "Suitable material",
+        "marks": 4,
+        "contextNote": "Such as: cedar, larch, oak, teak, uPVC or aluminium.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 4,
+        "contextNote": "A reason matching the material. Such as: durability; some wood species need no preservative because of their natural oils.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 4,
+        "contextNote": "A second, different reason. Such as: natural resistance to insect attack or moisture; aluminium and uPVC need no regular maintenance.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
       }
     ],
-    "notes": "The scheme lists 18 acceptable points under \"Suitable material for front door\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+    "questionFigureKey": "construction-studies-2023-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q9-materials",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "An accessible front entrance",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The door material, modifications and reasons are open responses; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2023-ol-q9-c",
-    "topicId": "cons-1-1",
-    "conceptId": "an-accessible-front-entrance",
-    "level": "ordinary",
-    "year": 2023,
     "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "an-accessible-front-entrance",
     "questionRef": "2023 OL Q9(c)",
+    "stem": "The sketch shows a front entrance to a semi-detached house. The owners wish to modify the front entrance to make it fit for use by a person with limited mobility.",
     "questionText": "Discuss two reasons why the owners would wish to create a front entrance that is accessible for all.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 6",
-      "answer": 2,
-      "ofParts": 4,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 12,
     "rows": [
       {
-        "id": "cons-2023-ol-q9-c-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss two reasons why the owners would wish to create a front entrance that is accessible for all.",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Increase the resale value of the property as costly modification will be eliminated",
-            "Future proof the home to the needs of the family throughout its life. Prams, buggies, shopping carts, walking aids, wheelchairs",
-            "Reduces costly future renovations",
-            "Sustainable living as retro fitting at a later stage uses additional resources and energy"
-          ]
-        }
+        "id": "reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 6,
+        "contextNote": "Such as: a higher resale value, with costly modifications already done; a home future-proofed for prams, buggies, walking aids and wheelchairs.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 6,
+        "contextNote": "A second, different reason. Such as: fewer costly renovations later; more sustainable living, as retrofitting later uses more resources and energy.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q9-reasons",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "An accessible front entrance",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The door material, modifications and reasons are open responses; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2023-ol-q1-a",
-    "topicId": "cons-3-2",
-    "conceptId": "vertical-section-external-wall-and-floor",
-    "level": "ordinary",
-    "year": 2023,
     "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "vertical-section-external-wall-and-floor",
     "questionRef": "2023 OL Q1(a)",
+    "stem": "The sketch shows the external wall and timber first floor of a dwelling house. The external wall is a 400 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. The first floor joists are 225 mm × 50 mm and are fixed to the external wall using joist hangers. The floor is finished with a tongued and grooved hardwood floor, on 20 mm plywood decking with a plasterboard ceiling beneath.",
     "questionText": "To a scale of 1:5, draw a vertical section through the external wall and first floor. On your drawing show the typical construction details from a level 400 mm below the plasterboard ceiling to a level 400 mm above the hardwood floor. Show an internal floor width of 900 mm. Include four typical dimensions.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "7 x 5",
-      "answer": 7,
-      "ofParts": 11,
-      "perPart": 5
+      "kind": "fixed"
     },
-    "totalMarks": 35,
+    "totalMarks": 47,
     "rows": [
       {
-        "id": "cons-2023-ol-q1-a-r1",
-        "kind": "anyN",
-        "verbatim": "To a scale of 1:5, draw a vertical section through the external wall and first floor. On your drawing show the typical c",
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "Any 7 x 5 marks",
         "marks": 35,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 7,
-          "perOption": 5,
-          "options": [
-            "Concrete block outer leaf with internal plaster",
-            "Full fill cavity with wall tie",
-            "Concrete block inner leaf with render",
-            "Joist hanger",
-            "Ceiling joist",
-            "Airtight tape",
-            "Plasterboard",
-            "Plywood decking",
-            "Tongue & groove flooring",
-            "Skirting board",
-            "Any 4 typical dimensions"
-          ]
-        }
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; joist hanger; joist; airtight tape; plasterboard; plywood decking; tongue and groove flooring; skirting board. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, 225 × 50 mm joists and 20 mm plywood decking.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "dimensions",
+        "kind": "criterion",
+        "verbatim": "Any 4 typical dimensions",
+        "marks": 4,
+        "contextNote": "Four appropriate typical dimensions on the section.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q1-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "External wall and timber first floor section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the wall-tie detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    }
   },
   {
     "id": "cons-2023-ol-q5-b",
-    "topicId": "cons-3-4",
-    "conceptId": "keeping-the-cavity-clear-of-mortar",
-    "level": "ordinary",
-    "year": 2023,
     "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-3-3",
+    "conceptId": "keeping-the-cavity-clear-of-mortar",
     "questionRef": "2023 OL Q5(b)",
+    "stem": "The sketch shows the eaves of a flat roof. The roof is covered with a waterproof membrane, on 150 mm rigid insulation, on a 20 mm plywood deck supported by sloping firring pieces. The 200 mm × 50 mm timber joists have a plasterboard ceiling beneath. The roof is supported on a 400 mm concrete block wall with a full-fill insulated cavity. The wall is rendered on both sides.",
     "questionText": "On your drawing show the typical design detailing to ensure that the cavity is closed at wallplate level.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "fixed",
-      "notation": "4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
+      "kind": "fixed"
     },
     "totalMarks": 4,
     "rows": [
       {
-        "id": "cons-2023-ol-q5-b-r1",
-        "kind": "point",
+        "id": "closer",
+        "kind": "criterion",
         "verbatim": "Cavity closer",
         "marks": 4,
-        "openList": true,
-        "contextNote": ""
+        "contextNote": "Show and identify the cavity closer at wallplate level, as in the scheme’s model detail. Any other suitable detail is accepted.",
+        "permittedMarks": [
+          0,
+          4
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q5-closer",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "External wall and flat roof eaves section",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details and draughting belong to part (a); the cavity-closer detail in (b) is marked separately."
+    }
   },
   {
     "id": "cons-2023-ol-q9-b",
-    "topicId": "cons-1-1",
-    "conceptId": "modifying-a-front-entrance",
-    "level": "ordinary",
-    "year": 2023,
     "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "modifying-a-front-entrance",
     "questionRef": "2023 OL Q9(b)",
+    "stem": "The sketch shows a front entrance to a semi-detached house. The owners wish to modify the front entrance to make it fit for use by a person with limited mobility.",
     "questionText": "Using notes and freehand sketches, show two modifications to the front entrance area that would allow access to the house for a person with limited mobility.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 13",
-      "answer": 2,
-      "ofParts": 2,
-      "perPart": 13
+      "kind": "fixed"
     },
     "totalMarks": 26,
     "rows": [
       {
-        "id": "cons-2023-ol-q9-b-r1",
-        "kind": "anyN",
-        "verbatim": "Using notes and freehand sketches, show two modifications to the front entrance area that would allow access to the hous",
-        "marks": 26,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 13,
-          "options": [
-            "Modification 1 to entrance notes + sketch",
-            "Modification 2 to entrance notes + sketch"
-          ]
-        }
+        "id": "modification-1",
+        "kind": "criterion",
+        "verbatim": "Modification 1 to entrance notes + sketch (8 + 5 marks)",
+        "marks": 13,
+        "contextNote": "Notes and sketch, 8 + 5. Such as: a ramp to the main entrance at a 1:20 slope, at least 1200 mm wide, with a level landing and turning circle; a smooth, slip-resistant surface in place of loose driveway material.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": "modification-2",
+        "kind": "criterion",
+        "verbatim": "Modification 2 to entrance notes + sketch (8 + 5 marks)",
+        "marks": 13,
+        "contextNote": "Notes and sketch, 8 + 5, for a second, different modification. Such as: a doorway widened to a 1000 mm clear opening; a low-level threshold; a glass panel to see who is at the door; high- and low-level lighting; a weather canopy.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q9-modifications",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "An accessible front entrance",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The door material, modifications and reasons are open responses; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2023-ol-q8-None-concrete-mixer",
-    "topicId": "cons-1-5",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-2-7",
     "conceptId": "construction-terms-concrete-mixer",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2023 OL Q8 — Concrete mixer",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • concrete mixer.",
+    "questionRef": "2023 OL Q8",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: concrete mixer; smart radiator valve; ridge tile; triple glazing; balusters; cedar cladding; bridle joint; wood pellet stove; floor screed.",
     "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
+      "kind": "fixed"
     },
-    "totalMarks": 10,
+    "totalMarks": 50,
     "rows": [
       {
-        "id": "cons-2023-ol-q8-None-concrete-mixer-r1",
+        "id": "terms",
         "kind": "anyN",
-        "verbatim": "Concrete mixer",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Concrete mixer",
+        "verbatim": "Construction Terms",
+        "marks": 50,
+        "contextNote": "Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). Concrete mixer: a rotating drum that turns raw materials into concrete without segregation; small on-site batch mixers (electric, petrol or diesel) are hand loaded and make up to 200 litres per batch, so quality control is difficult; larger quantities come from a mixing plant in a ready-mix truck of 4–6 cubic metres, better regulated and poured directly into the work area. Smart radiator valve: fitted to new or existing radiators; integrated sensors measure the room temperature and signal to reduce or increase the flow of hot water; controlled from smart devices when the owners are away; each room can have its own temperature; reduces energy cost and use. Ridge tile: sits on the apex of the roof and seals the intersection of the two roof planes; traditionally bedded in mortar, now often fixed with integrated dry-fix systems; made from materials like the roof covering, in a variety of colours and profiles. Triple glazing: three panes of glass with cavities usually filled with an inert gas (argon, xenon or krypton); reduces noise and insulates better than double glazing; heavier and thicker, so it may not suit all frames; it can reduce solar gain, so some owners avoid it on the southern elevation. Balusters: vertical members between the handrail and string of a stairs, also called spindles; moulded, square or lathe-turned; must not let a 100 mm diameter sphere pass between them; made of wood, iron or plastic. Cedar cladding: naturally durable, lasting over 60 years without preservative treatment, which is only needed to avoid the weathered silver-grey colour; fixed horizontally or vertically to battens with stainless steel or galvanised fixings, as cedar reacts with ferrous metals; low embodied energy. Bridle joint: a common, strong woodworking joint with a large gluing area; a tee or corner bridle, removing one third of the material from one piece and two thirds from the other; used in frame construction and to join table rails to uprights. Wood pellet stove: heats a home by burning renewable pellets of compressed sawdust and waste wood; an auger feeds fuel steadily from a hopper for a constant flame needing little adjustment; a low-cost heating alternative with very low emissions and a smaller environmental impact. Floor screed: the final layer of the floor on which a floor finish is laid; traditionally sand and cement at 3:1 to 5:1, levelled with a tamping board; modern free-flowing calcium sulphate screeds self-level and suit underfloor heating, at 50–75 mm over pipes clipped to the rigid insulation.",
         "group": {
-          "claimMax": 2,
-          "perOption": 6,
+          "claimMax": 5,
+          "perOption": 10,
           "options": [
-            "Concrete mixers have a rotating drum designed to turn raw materials in to concrete without segregation",
-            "Small batch (on-site) mixers can be electrical or operated by a petrol or diesel engine. Mixer is hand loaded and can produce up to 200 litres of concrete per batch on site",
-            "Since small batch mixers are loaded by hand, quality control is difficult to regulate",
-            "Larger quantities of concrete are mixed off site in a mixing plant and transported to site by a ready mixed concrete truck",
-            "Usual capacity of ready-mix trucks is 4 – 6 cubic meters",
-            "Quality control of ready mix is better regulated, mix can be poured directly into work area"
-          ],
-          "perOptionSteps": [
-            6,
-            4
+            "Concrete mixer",
+            "Smart radiator valve",
+            "Ridge tile",
+            "Triple glazing",
+            "Balusters",
+            "Cedar cladding",
+            "Bridle joint",
+            "Wood pellet stove",
+            "Floor screed"
           ]
         }
       }
     ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2023-ol-q8-None-smart-radiator-valve",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-smart-radiator-valve",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2023 OL Q8 — Smart radiator valve",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • smart radiator valve.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2023-ol-q8-None-smart-radiator-valve-r1",
-        "kind": "anyN",
-        "verbatim": "Smart radiator valve",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Smart radiator valve",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Smart valves can be fitted to new or existing radiators",
-            "Measures the room temperature using integrated sensors",
-            "Can signal to reduce or to increase the flow of hot water to the radiator",
-            "Smart radiator valves can be controlled from smart devices when home owners are away",
-            "Allows each room to have a different temperature compared to traditional heating systems with only one or two heating zones",
-            "Reduces energy cost and usage as the smart valve will control and retain the set temperature"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2023-ol-q8-None-ridge-tile",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-ridge-tile",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2023 OL Q8 — Ridge tile",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • ridge tile.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2023-ol-q8-None-ridge-tile-r1",
-        "kind": "anyN",
-        "verbatim": "Ridge tile",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Ridge tile",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Sits on the apex of a roof and protects the roof by sealing the intersection of the two roof planes",
-            "Traditionally, ridge tiles are fixed using mortar to bond them to the tiles. Modern tile manufacturers have intergrated fixing systems to secure the ridge tile without mortar",
-            "Ridge tiles are made from similar materials as the roof covering and can come in a variety of colours and profiles",
-            "Some ridge tiles are used as a decorative finish to the horizontal line along the top of the roof"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2023-ol-q8-None-triple-glazing",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-triple-glazing",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2023 OL Q8 — Triple glazing",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • triple glazing.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2023-ol-q8-None-triple-glazing-r1",
-        "kind": "anyN",
-        "verbatim": "Triple glazing",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Triple glazing",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Triple glazing is made up of three panes of glass instead of the traditional one or two panes",
-            "The cavity between each pane of glass is usually filled with an inert gas such as argon, xenon or krypton",
-            "Together with the extra pane, this can help to reduce noise transmission and increase energy efficiency",
-            "Triple glazing is better at insulating homes compared to double glazing, resulting in improved thermal comfort",
-            "Triple glazing is much heavier and thicker than double glazing so may not suit all frame types",
-            "Triple glazing may prevent solar gain into a home so some homeowners may not install triple glazing on the southern elevation of the building"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2023-ol-q8-None-balusters",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-balusters",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2023 OL Q8 — Balusters",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • balusters.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2023-ol-q8-None-balusters-r1",
-        "kind": "anyN",
-        "verbatim": "Balusters",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Balusters",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "A baluster is a vertical member between the handrail and string on a stairs",
-            "The term baluster is interchangeable with the word spindle in stairs construction",
-            "A baluster can be a moulded shaft, square, or lathe-turned in form",
-            "Balusters should not allow a 100 mm diameter sphere pass between them",
-            "Balusters can be manufactured from a range of materials such as wood, iron, and plastic"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2023-ol-q8-None-cedar-cladding",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-cedar-cladding",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2023 OL Q8 — Cedar cladding",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • cedar cladding.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2023-ol-q8-None-cedar-cladding-r1",
-        "kind": "anyN",
-        "verbatim": "Cedar cladding",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Cedar cladding",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Cedar wood has natural durability giving an expected life of over 60 years without preservative treatment",
-            "Treatment of cladding is only necessary if the weathered silver-grey colour is not desired",
-            "Cedar cladding can be secured horizontally or vertically to battens",
-            "Cedar reacts with ferrous materials and should be fixed with stainless steel or galvanised fixings",
-            "Canadian cedar is the most commonly used variety due to its rich warm colours compared to European grown cedar",
-            "Cedar cladding has a low embodied energy compared to other external finishes"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2023-ol-q8-None-bridle-joint",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-bridle-joint",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2023 OL Q8 — Bridle joint",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • bridle joint.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2023-ol-q8-None-bridle-joint-r1",
-        "kind": "anyN",
-        "verbatim": "Bridle joint",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Bridle joint",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "A bridle joint is a common strong woodworking joint with a large gluing area",
-            "The joint can be a Tee-bridle or Corner bridle joint",
-            "Bridle Joints involve the removal of one-third of the material from one piece and two-thirds of the material from the other piece",
-            "Suitable joining method for any corner angle or Tee type of frame joint configuration",
-            "The corner bridle joint can be used in frame construction",
-            "The Tee bridle can be used in table construction to join rails to uprights"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2023-ol-q8-None-wood-pellet-stove",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-wood-pellet-stove",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2023 OL Q8 — Wood pellet stove",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • wood pellet stove.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2023-ol-q8-None-wood-pellet-stove-r1",
-        "kind": "anyN",
-        "verbatim": "Wood pellet stove",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Wood pellet stove",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Provides heat to a home by burning renewable pellets made of condensed biomass materials or compressed wood",
-            "Compressed wood pellets are made from organic matter like sawdust and waste wood from logging, manufacturing, forest debris, and crop waste that is dried and pressed into pellet form",
-            "Similar to other renewable energy systems, a pellet stove can provide considerable savings for home heating costs by enhancing the heat in all or part of your home",
-            "Using an auger to steadily feed fuel from a storage hopper into a burn area, it produces a constant flame that requires little adjustments",
-            "Pellet stoves are a low-cost heating alternative that have a smaller impact on the environment than traditional heating sources",
-            "Pellet fuel expels extremely low emissions making a pellet stove a highly environmentally-friendly and cost-effective option"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2023-ol-q8-None-floor-screed",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-floor-screed",
-    "level": "ordinary",
-    "year": 2023,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2023 OL Q8 — Floor screed",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • floor screed.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2023-ol-q8-None-floor-screed-r1",
-        "kind": "anyN",
-        "verbatim": "Floor screed",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Floor screed",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "The final layer of the floor upon which a finished flooring material may be placed",
-            "There are a number of methods to installing floor screed",
-            "Tradition methods use a combination of sand, cement and water, usually in a sand/cement mix ratio of anywhere between 3:1 and 5:1",
-            "Modern methods include free flowing calcium sulphate liquid products which will self-level when poured on to the subfloor",
-            "Most self-levelling screeds are designed to be used with underfloor heating (UFH). Liquid floor screed is ideally placed at depths of between 50 - 75mm in conjunction with UFH",
-            "UFH pipes are clipped to the rigid insulation and the screed poured directly on top of the pipes"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2023-OL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q8-terms",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Construction terms",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Explain any five of the nine printed terms. Each term is marked separately at 10 marks; the scheme illustrations are examples of suitable sketches."
+    }
   },
   {
     "id": "cons-2024-hl-q1-a",
@@ -54780,6 +54834,1526 @@
           "b-guideline-1",
           "b-guideline-2",
           "b-guideline-3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2023-ol-q1-complete",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "first-floor-wall-section-complete",
+    "questionRef": "2023 OL Q1 — complete",
+    "stem": "The sketch shows the external wall and timber first floor of a dwelling house. The external wall is a 400 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. The first floor joists are 225 mm × 50 mm and are fixed to the external wall using joist hangers. The floor is finished with a tongued and grooved hardwood floor, on 20 mm plywood decking with a plasterboard ceiling beneath.",
+    "questionText": "(a) To a scale of 1:5, draw a vertical section through the external wall and first floor. On your drawing show the typical construction details from a level 400 mm below the plasterboard ceiling to a level 400 mm above the hardwood floor. Show an internal floor width of 900 mm. Include four typical dimensions.\n\n(b) On your drawing, show the typical design detailing to connect the inner and outer leaves of the external wall.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "Any 7 x 5 marks",
+        "marks": 35,
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; joist hanger; joist; airtight tape; plasterboard; plywood decking; tongue and groove flooring; skirting board. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, 225 × 50 mm joists and 20 mm plywood decking.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "a-dimensions",
+        "kind": "criterion",
+        "verbatim": "Any 4 typical dimensions",
+        "marks": 4,
+        "contextNote": "Four appropriate typical dimensions on the section.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "b-wall-tie",
+        "kind": "criterion",
+        "verbatim": "Wall tie clearly identified",
+        "marks": 3,
+        "contextNote": "Show and identify the wall tie connecting the two leaves across the cavity, as in the scheme’s model section.",
+        "permittedMarks": [
+          0,
+          3
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2023-OL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q1-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "External wall and timber first floor section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the wall-tie detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2023-ol-q1-a",
+        "label": "a",
+        "marks": 47,
+        "rowIds": [
+          "a-details",
+          "a-dimensions",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2023-ol-q1-b",
+        "label": "b",
+        "marks": 3,
+        "rowIds": [
+          "b-wall-tie"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2023-ol-q2-b",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "energy-upgrades-b",
+    "questionRef": "2023 OL Q2(b)",
+    "stem": "The sketch shows an old uninsulated dwelling house. The homeowner has received a grant to carry out energy upgrades to their house. They have decided to start by adding external insulation to the walls of the house.",
+    "questionText": "Using notes and freehand sketches, show one suitable method of applying an external insulation system to a house. Specify the type and thickness of insulation.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "method",
+        "kind": "criterion",
+        "verbatim": "Method of insulating external walls note & sketch (8 + 8 marks)",
+        "marks": 16,
+        "contextNote": "Note 8 and sketch 8 of one method. Such as: clean the wall; fix starter tracks at DPC level; apply adhesive to the back and perimeter of the boards and stagger their joints; fix with mechanical anchors; apply a 6–10 mm polymer-modified base render with glass-fibre mesh lapped at least 100 mm; then a final finish.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "id": "type",
+        "kind": "criterion",
+        "verbatim": "Preferred insulation type for external wall",
+        "marks": 4,
+        "contextNote": "Such as: expanded polystyrene (EPS), phenolic, polyisocyanurate (PIR) or extruded polystyrene (XPS).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "thickness",
+        "kind": "criterion",
+        "verbatim": "Thickness of insulation",
+        "marks": 4,
+        "contextNote": "The scheme recommends a 200 mm insulation thickness.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2023-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q2-method",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Energy upgrades to an old house",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The insulation method and type, and the other upgrade in (c), are open choices; the scheme lists typical examples."
+    }
+  },
+  {
+    "id": "cons-2023-ol-q2-complete",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-6-3",
+    "conceptId": "energy-upgrades-complete",
+    "questionRef": "2023 OL Q2 — complete",
+    "stem": "The sketch shows an old uninsulated dwelling house. The homeowner has received a grant to carry out energy upgrades to their house. They have decided to start by adding external insulation to the walls of the house.",
+    "questionText": "(a) Discuss two reasons why energy upgrade grants are available for old houses.\n\n(b) Using notes and freehand sketches, show one suitable method of applying an external insulation system to a house. Specify the type and thickness of insulation.\n\n(c) On a separate sketch show, using notes and freehand sketches, one other possible energy upgrade the homeowner could carry out to their house.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 6,
+        "contextNote": "Such as: to improve the BER of the house; to reduce the energy use of the home and so its carbon emissions.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 6,
+        "contextNote": "A second, different reason. Such as: to encourage owners to upgrade existing houses instead of building new ones; to make older houses energy efficient, sustainable and economical to heat; to encourage greener living.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-method",
+        "kind": "criterion",
+        "verbatim": "Method of insulating external walls note & sketch (8 + 8 marks)",
+        "marks": 16,
+        "contextNote": "Note 8 and sketch 8 of one method. Such as: clean the wall; fix starter tracks at DPC level; apply adhesive to the back and perimeter of the boards and stagger their joints; fix with mechanical anchors; apply a 6–10 mm polymer-modified base render with glass-fibre mesh lapped at least 100 mm; then a final finish.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "id": "b-type",
+        "kind": "criterion",
+        "verbatim": "Preferred insulation type for external wall",
+        "marks": 4,
+        "contextNote": "Such as: expanded polystyrene (EPS), phenolic, polyisocyanurate (PIR) or extruded polystyrene (XPS).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-thickness",
+        "kind": "criterion",
+        "verbatim": "Thickness of insulation",
+        "marks": 4,
+        "contextNote": "The scheme recommends a 200 mm insulation thickness.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-upgrade",
+        "kind": "criterion",
+        "verbatim": "Possible energy upgrade note & sketch (7 + 7 marks)",
+        "marks": 14,
+        "contextNote": "Note 7 and sketch 7 of one other upgrade. Such as: more insulation at roof level; solar panels to supplement grid electricity; a more energy-efficient heating system; a wood-burning stove in place of an open fire; high-performance windows.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2023-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q2-method",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Energy upgrades to an old house",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The insulation method and type, and the other upgrade in (c), are open choices; the scheme lists typical examples."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2023-ol-q2-a",
+        "label": "a",
+        "marks": 12,
+        "rowIds": [
+          "a-reason-1",
+          "a-reason-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2023-ol-q2-b",
+        "label": "b",
+        "marks": 24,
+        "rowIds": [
+          "b-method",
+          "b-type",
+          "b-thickness"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2023-ol-q2-c",
+        "label": "c",
+        "marks": 14,
+        "rowIds": [
+          "c-upgrade"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2023-ol-q3-complete",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-5-2",
+    "conceptId": "solar-hot-water-complete",
+    "questionRef": "2023 OL Q3 — complete",
+    "stem": "The sketch shows a dwelling house which has a solar collector on the roof. The solar collector provides hot water for the household.",
+    "questionText": "(a) Draw a large freehand sketch of the given house. On your sketch, show the pipework necessary to connect the solar collector to the hot water cylinder and supply hot water to a shower. Include the following in your sketch: flow and return pipes; expansion vessel; pipework to shower; all necessary valves.\n\n(b) Discuss two considerations when deciding the location of solar panels on a house.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "Any 8 x 5 marks",
+        "marks": 40,
+        "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: solar collector; cold feed to collector; hot return to cylinder; cylinder; circulation pump; solar expansion vessel; storage tank; cold feed to cylinder; expansion pipe; hot water to shower and shower unit; valves. Typical sizes: Ø22 mm feed and return, a 250 l cylinder, a 24 l solar expansion vessel, a Ø28 mm expansion pipe, Ø22 mm hot water to the shower.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
+      },
+      {
+        "id": "b-consideration-1",
+        "kind": "criterion",
+        "verbatim": "Consideration 1",
+        "marks": 5,
+        "contextNote": "Such as: the orientation of the roof; the position and proximity of neighbouring buildings; the pitch of the roof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-consideration-2",
+        "kind": "criterion",
+        "verbatim": "Consideration 2",
+        "marks": 5,
+        "contextNote": "A second, different consideration. Such as: whether the roof can support and secure the panels; the usable roof area; shading from trees; ease of maintenance and cleaning.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2023-OL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q3-system",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Solar collector hot water pipework",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The listed components are required content, not a choice. The scheme diagram is one acceptable layout; any alternative that complies with current Building Regulations is acceptable."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2023-ol-q3-a",
+        "label": "a",
+        "marks": 40,
+        "rowIds": [
+          "a-details"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2023-ol-q3-b",
+        "label": "b",
+        "marks": 10,
+        "rowIds": [
+          "b-consideration-1",
+          "b-consideration-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2023-ol-q4-c",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-3-9",
+    "conceptId": "trussed-rafter-roof-c",
+    "questionRef": "2023 OL Q4(c)",
+    "stem": "The sketch shows the roof of a house under construction. The homeowners have decided to construct the roof using prefabricated trussed rafters.",
+    "questionText": "Specify a suitable roof finish material for the house, and give two reasons for your choice.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "material",
+        "kind": "criterion",
+        "verbatim": "Suitable material",
+        "marks": 4,
+        "contextNote": "Such as: slate, tiles, photovoltaic slates or zinc sheeting.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 4,
+        "contextNote": "A reason matching the finish. Such as, slate: attractive, durable, low maintenance, long lasting; tiles: long life span, low maintenance, recyclable, cheaper.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 4,
+        "contextNote": "A second, different reason. Such as, photovoltaic slates: generate energy on site and are more discreet than panels; zinc: modern, easily shaped, more choice of colour.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2023-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q4-finishes",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Prefabricated trussed rafters",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. All five printed items in (b) are required in one sketch; the roof finish in (c) is an open choice."
+    }
+  },
+  {
+    "id": "cons-2023-ol-q4-complete",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-3-8",
+    "conceptId": "trussed-rafter-roof-complete",
+    "questionRef": "2023 OL Q4 — complete",
+    "stem": "The sketch shows the roof of a house under construction. The homeowners have decided to construct the roof using prefabricated trussed rafters.",
+    "questionText": "(a) Discuss two advantages of using prefabricated trussed rafters to construct a roof.\n\n(b) Using notes and a freehand sketch, show the typical construction details of how a trussed rafter is secured on the external wall of a house. Include the following in your sketch: external wall; wallplate; trussed rafter; nail plate; truss clip.\n\n(c) Specify a suitable roof finish material for the house, and give two reasons for your choice.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 4,
+        "contextNote": "Such as: less waste than a cut roof; quicker roof construction on site.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 4,
+        "contextNote": "A second, different advantage. Such as: more efficient use of material; open-plan layouts, as the truss does not rely on internal walls for support.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-wall",
+        "kind": "criterion",
+        "verbatim": "external wall sketch & note (4 + 2 marks)",
+        "marks": 6,
+        "contextNote": "Sketch 4 and note 2. Such as: the insulated external wall finished with a cavity closer.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-wallplate",
+        "kind": "criterion",
+        "verbatim": "wallplate sketch & note (4 + 2 marks)",
+        "marks": 6,
+        "contextNote": "Sketch 4 and note 2. Such as: a 100 mm × 75 mm wallplate fixed to the wall with 1200 mm galvanised steel straps.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-rafter",
+        "kind": "criterion",
+        "verbatim": "trussed rafter sketch & note (4 + 2 marks)",
+        "marks": 6,
+        "contextNote": "Sketch 4 and note 2. Such as: trussed rafters prefabricated off site, lifted onto the truss clips and secured.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-nail-plate",
+        "kind": "criterion",
+        "verbatim": "nail plate sketch & note (4 + 2 marks)",
+        "marks": 6,
+        "contextNote": "Sketch 4 and note 2. Such as: nail plates mechanically fixed at all joints for strength and rigidity.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-truss-clip",
+        "kind": "criterion",
+        "verbatim": "truss clip sketch & note (4 + 2 marks)",
+        "marks": 6,
+        "contextNote": "Sketch 4 and note 2. Such as: truss clips fixed to the wallplate at 400 mm intervals.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-material",
+        "kind": "criterion",
+        "verbatim": "Suitable material",
+        "marks": 4,
+        "contextNote": "Such as: slate, tiles, photovoltaic slates or zinc sheeting.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 4,
+        "contextNote": "A reason matching the finish. Such as, slate: attractive, durable, low maintenance, long lasting; tiles: long life span, low maintenance, recyclable, cheaper.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 4,
+        "contextNote": "A second, different reason. Such as, photovoltaic slates: generate energy on site and are more discreet than panels; zinc: modern, easily shaped, more choice of colour.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2023-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q4-fixing",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Prefabricated trussed rafters",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. All five printed items in (b) are required in one sketch; the roof finish in (c) is an open choice."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2023-ol-q4-a",
+        "label": "a",
+        "marks": 8,
+        "rowIds": [
+          "a-advantage-1",
+          "a-advantage-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2023-ol-q4-b",
+        "label": "b",
+        "marks": 30,
+        "rowIds": [
+          "b-wall",
+          "b-wallplate",
+          "b-rafter",
+          "b-nail-plate",
+          "b-truss-clip"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2023-ol-q4-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-material",
+          "c-reason-1",
+          "c-reason-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2023-ol-q5-complete",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "flat-roof-eaves-section-complete",
+    "questionRef": "2023 OL Q5 — complete",
+    "stem": "The sketch shows the eaves of a flat roof. The roof is covered with a waterproof membrane, on 150 mm rigid insulation, on a 20 mm plywood deck supported by sloping firring pieces. The 200 mm × 50 mm timber joists have a plasterboard ceiling beneath. The roof is supported on a 400 mm concrete block wall with a full-fill insulated cavity. The wall is rendered on both sides.",
+    "questionText": "(a) To a scale of 1:5, draw a vertical section through the external wall and the eaves of the flat roof. On your drawing, show the typical construction details from a level 450 mm below the wallplate, through the external wall and eaves. Show 900 mm length of roof joist.\n\n(b) On your drawing show the typical design detailing to ensure that the cavity is closed at wallplate level.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "Any 8 x 5 marks",
+        "marks": 40,
+        "contextNote": "Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; wallplate with cavity closer; waterproof membrane; insulation; plywood decking with breather membrane; firring piece; insulated ceiling joist; insulated plasterboard ceiling with airtight membrane; fascia and soffit; gutter. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster, a 100 × 75 mm wallplate, 150 mm insulation, 20 mm plywood, 200 × 50 mm joists and a 50 mm insulated plasterboard ceiling.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+        "marks": 6,
+        "contextNote": "Draughting, accuracy and scale of the section: excellent 6, good 4, fair 2.",
+        "permittedMarks": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "id": "b-closer",
+        "kind": "criterion",
+        "verbatim": "Cavity closer",
+        "marks": 4,
+        "contextNote": "Show and identify the cavity closer at wallplate level, as in the scheme’s model detail. Any other suitable detail is accepted.",
+        "permittedMarks": [
+          0,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2023-OL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q5-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "External wall and flat roof eaves section",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details and draughting belong to part (a); the cavity-closer detail in (b) is marked separately."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2023-ol-q5-a",
+        "label": "a",
+        "marks": 46,
+        "rowIds": [
+          "a-details",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2023-ol-q5-b",
+        "label": "b",
+        "marks": 4,
+        "rowIds": [
+          "b-closer"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2023-ol-q6-complete",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-9-4",
+    "conceptId": "classroom-safety-complete",
+    "questionRef": "2023 OL Q6 — complete",
+    "stem": "",
+    "questionText": "(a) State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations: using a jigsaw; using epoxy adhesive.\n\n(b) Using notes and freehand sketches, describe three specific safety precautions to be observed when woodturning on a lathe. Give one reason for each safety precaution outlined.\n\n(c) Discuss two reasons why it is important to maintain an organised and tidy environment in a Construction Studies room.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-jigsaw-1",
+        "kind": "criterion",
+        "verbatim": "Using a jigsaw - Safety precaution 1",
+        "marks": 4,
+        "contextNote": "Such as: wear a dust mask; wear ear protection; wear eye protection against dust and flying chips.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-jigsaw-2",
+        "kind": "criterion",
+        "verbatim": "Using a jigsaw - Safety precaution 2",
+        "marks": 4,
+        "contextNote": "A second, different jigsaw precaution. Such as: keep leads from being a trip hazard; secure the work piece against movement.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-epoxy-1",
+        "kind": "criterion",
+        "verbatim": "Using epoxy adhesive - Safety precaution 1",
+        "marks": 4,
+        "contextNote": "Such as: work in a well-ventilated zone; protect skin and clothing.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-epoxy-2",
+        "kind": "criterion",
+        "verbatim": "Using epoxy adhesive - Safety precaution 2",
+        "marks": 4,
+        "contextNote": "A second, different epoxy precaution. Such as: a respirator mask against the vapours; eye protection; keep the work area clear to avoid slips if the epoxy leaks.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-precaution-1",
+        "kind": "criterion",
+        "verbatim": "Safety precautions 1 and reason (3 + 3 + 2 marks)",
+        "marks": 8,
+        "contextNote": "A precaution in notes and sketch with its reason, marked 3 + 3 + 2. Such as: close-fitting protective clothing; long or loose hair tied back.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-precaution-2",
+        "kind": "criterion",
+        "verbatim": "Safety precautions 2 and reason (3 + 3 + 2 marks)",
+        "marks": 8,
+        "contextNote": "A second, different precaution with its reason, 3 + 3 + 2. Such as: a face visor; a dust mask or breathing protection.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-precaution-3",
+        "kind": "criterion",
+        "verbatim": "Safety precautions 3 and reason (3 + 3 + 2 marks)",
+        "marks": 8,
+        "contextNote": "A third, different precaution with its reason, 3 + 3 + 2. Such as: the tool rest at the correct height and distance from the work piece; the correct speed (RPM) for the size of the work piece.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "c-reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 5,
+        "contextNote": "Such as: fewer trip hazards; tools and materials are easier to find.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "c-reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 5,
+        "contextNote": "A second, different reason. Such as: less time lost locating tools; less damage to tools and machines; off-cuts stored for reuse, reducing waste; neat, correct working procedure.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2023-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q6-lathe",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Safety in the Construction Studies room",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. Both printed situations in (a) are required, two precautions each. Precautions and reasons are open responses; the scheme lists typical examples."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2023-ol-q6-a",
+        "label": "a",
+        "marks": 16,
+        "rowIds": [
+          "a-jigsaw-1",
+          "a-jigsaw-2",
+          "a-epoxy-1",
+          "a-epoxy-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2023-ol-q6-b",
+        "label": "b",
+        "marks": 24,
+        "rowIds": [
+          "b-precaution-1",
+          "b-precaution-2",
+          "b-precaution-3"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2023-ol-q6-c",
+        "label": "c",
+        "marks": 10,
+        "rowIds": [
+          "c-reason-1",
+          "c-reason-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2023-ol-q7-c",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-4-2",
+    "conceptId": "utility-room-c",
+    "questionRef": "2023 OL Q7(c)",
+    "stem": "The draft design for a utility room in a new dwelling house is shown. The positions of the external door, window and a door to the kitchen are included.",
+    "questionText": "Specify a suitable floor covering for the utility room and give two reasons for your choice.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "covering",
+        "kind": "criterion",
+        "verbatim": "Suitable floor covering",
+        "marks": 4,
+        "contextNote": "Such as: ceramic tiles, vinyl, polished concrete, wood laminate or linoleum.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 4,
+        "contextNote": "A reason matching the covering. Such as, ceramic tiles: hard wearing, resistant to water damage, easy to maintain; vinyl: easy to install, water resistant.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 4,
+        "contextNote": "A second, different reason. Such as, polished concrete: transfers underfloor heating well, highly durable; wood laminate: durable and less expensive; linoleum: hardwearing and waterproof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2023-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q7-covering",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Utility room design",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations, reasons and the floor covering are open, well-reasoned responses."
+    }
+  },
+  {
+    "id": "cons-2023-ol-q7-complete",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "utility-room-complete",
+    "questionRef": "2023 OL Q7 — complete",
+    "stem": "The draft design for a utility room in a new dwelling house is shown. The positions of the external door, window and a door to the kitchen are included.",
+    "questionText": "(a) Discuss two advantages of including a large utility room in the design of a new home.\n\n(b) Draw a large freehand sketch of the given design and show your preferred location for each of the following in the utility room: sink; washing machine; storage units; seating / boot area. Give one reason for selecting each location.\n\n(c) Specify a suitable floor covering for the utility room and give two reasons for your choice.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 5,
+        "contextNote": "Such as: extra usable kitchen space; a place to store outdoor shoes and clothing, keeping the house hygienic.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "a-advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 5,
+        "contextNote": "A second, different advantage. Such as: the washing machine away from the kitchen to reduce noise; storage for bulky items; a secure space for a pet; space to hang and air washed clothes.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 8,
+        "contextNote": "A large freehand sketch of the given utility room design.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-sink",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for sink (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: by the window for natural light and a view out; on an external wall for the wastewater connection.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-washing-machine",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for washing machine (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: on an external wall for wastewater disposal and water supply; near electrical sockets.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-storage",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for storage units (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: against a wall so they do not block the doors and can be fixed securely; beside the washing machine for laundry and detergents.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-seating",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for seating / boot area (3 + 2 marks)",
+        "marks": 5,
+        "contextNote": "Location 3 and reason 2. Such as: against a wall so it can be fixed securely; close to the external door for removing and storing shoes and boots.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "c-covering",
+        "kind": "criterion",
+        "verbatim": "Suitable floor covering",
+        "marks": 4,
+        "contextNote": "Such as: ceramic tiles, vinyl, polished concrete, wood laminate or linoleum.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 4,
+        "contextNote": "A reason matching the covering. Such as, ceramic tiles: hard wearing, resistant to water damage, easy to maintain; vinyl: easy to install, water resistant.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 4,
+        "contextNote": "A second, different reason. Such as, polished concrete: transfers underfloor heating well, highly durable; wood laminate: durable and less expensive; linoleum: hardwearing and waterproof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2023-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q7-layout",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Utility room design",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations, reasons and the floor covering are open, well-reasoned responses."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2023-ol-q7-a",
+        "label": "a",
+        "marks": 10,
+        "rowIds": [
+          "a-advantage-1",
+          "a-advantage-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2023-ol-q7-b",
+        "label": "b",
+        "marks": 28,
+        "rowIds": [
+          "b-sketch",
+          "b-sink",
+          "b-washing-machine",
+          "b-storage",
+          "b-seating"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2023-ol-q7-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-covering",
+          "c-reason-1",
+          "c-reason-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2023-ol-q9-complete",
+    "subjectId": "construction-studies",
+    "year": 2023,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-3-7",
+    "conceptId": "accessible-front-entrance-complete",
+    "questionRef": "2023 OL Q9 — complete",
+    "stem": "The sketch shows a front entrance to a semi-detached house. The owners wish to modify the front entrance to make it fit for use by a person with limited mobility.",
+    "questionText": "(a) Specify a suitable material for a new front door, and give two reasons for your choice.\n\n(b) Using notes and freehand sketches, show two modifications to the front entrance area that would allow access to the house for a person with limited mobility.\n\n(c) Discuss two reasons why the owners would wish to create a front entrance that is accessible for all.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-material",
+        "kind": "criterion",
+        "verbatim": "Suitable material",
+        "marks": 4,
+        "contextNote": "Such as: cedar, larch, oak, teak, uPVC or aluminium.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 4,
+        "contextNote": "A reason matching the material. Such as: durability; some wood species need no preservative because of their natural oils.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 4,
+        "contextNote": "A second, different reason. Such as: natural resistance to insect attack or moisture; aluminium and uPVC need no regular maintenance.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-modification-1",
+        "kind": "criterion",
+        "verbatim": "Modification 1 to entrance notes + sketch (8 + 5 marks)",
+        "marks": 13,
+        "contextNote": "Notes and sketch, 8 + 5. Such as: a ramp to the main entrance at a 1:20 slope, at least 1200 mm wide, with a level landing and turning circle; a smooth, slip-resistant surface in place of loose driveway material.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": "b-modification-2",
+        "kind": "criterion",
+        "verbatim": "Modification 2 to entrance notes + sketch (8 + 5 marks)",
+        "marks": 13,
+        "contextNote": "Notes and sketch, 8 + 5, for a second, different modification. Such as: a doorway widened to a 1000 mm clear opening; a low-level threshold; a glass panel to see who is at the door; high- and low-level lighting; a weather canopy.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": "c-reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 6,
+        "contextNote": "Such as: a higher resale value, with costly modifications already done; a home future-proofed for prams, buggies, walking aids and wheelchairs.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 6,
+        "contextNote": "A second, different reason. Such as: fewer costly renovations later; more sustainable living, as retrofitting later uses more resources and energy.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2023-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2023-OL-q9-modifications",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "An accessible front entrance",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The door material, modifications and reasons are open responses; the scheme lists typical examples."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2023-ol-q9-a",
+        "label": "a",
+        "marks": 12,
+        "rowIds": [
+          "a-material",
+          "a-reason-1",
+          "a-reason-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2023-ol-q9-b",
+        "label": "b",
+        "marks": 26,
+        "rowIds": [
+          "b-modification-1",
+          "b-modification-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2023-ol-q9-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-reason-1",
+          "c-reason-2"
         ]
       }
     ]

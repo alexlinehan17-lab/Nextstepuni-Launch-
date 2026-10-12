@@ -95,4 +95,14 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "cons-2024-ol-q8-None-faceplate-turning": "cons-2024-ol-q8-None-site-planning-notice",
   "cons-2024-ol-q8-None-plywood": "cons-2024-ol-q8-None-site-planning-notice",
   "cons-2024-ol-q8-None-heat-pump": "cons-2024-ol-q8-None-site-planning-notice",
+  /* 2026-10-12. Construction Studies 2023 Ordinary Q8 is one any-five card (choice is not a route); the other eight
+   * pre-audit per-term cards are consolidated into it and their progress goes to it. */
+  "cons-2023-ol-q8-None-smart-radiator-valve": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-ridge-tile": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-triple-glazing": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-balusters": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-cedar-cladding": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-bridle-joint": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-wood-pellet-stove": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-floor-screed": "cons-2023-ol-q8-None-concrete-mixer",
 };

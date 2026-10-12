@@ -1811,5 +1811,215 @@
     "alt": "SEC marking-scheme notes and sketches for Question 10(a) and (b): foundation design, solar shading, the building envelope and the MVHR layout (three pages).",
     "attribution": "SEC Leaving Certificate Construction Studies 2023 Higher Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2023-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q1-original.png",
+    "md5": "fadcd9c34de5a57dd6b40fd14168bcc2",
+    "alt": "Original SEC 2023 Ordinary Construction Studies Question 1: the printed question with a sketch of a cavity wall supporting a timber first floor on joist hangers.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2023-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q2-original.png",
+    "md5": "a59d10da31102fcc99ff2301e4854349",
+    "alt": "Original SEC 2023 Ordinary Construction Studies Question 2: the printed question with a sketch of an old two-storey stone house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2023-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q3-original.png",
+    "md5": "fe579bb4d6835c3616e4a35ac01fd485",
+    "alt": "Original SEC 2023 Ordinary Construction Studies Question 3: the printed question with a sketch of a house with a solar collector on the roof.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2023-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q4-original.png",
+    "md5": "521cf0f3dfa0155c1080b9c6c5f759b8",
+    "alt": "Original SEC 2023 Ordinary Construction Studies Question 4: the printed question with a sketch of a roof of trussed rafters under construction.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2023-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q5-original.png",
+    "md5": "91a491f0ec2d61613102a171c4690f40",
+    "alt": "Original SEC 2023 Ordinary Construction Studies Question 5: the printed question with a sketch of the eaves of a flat roof.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2023-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q6-original.png",
+    "md5": "3449fab940693324d47a5955789bcad3",
+    "alt": "Original SEC 2023 Ordinary Construction Studies Question 6: the printed question with a sketch of a woodturning lathe.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2023-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q7-original.png",
+    "md5": "4f25190942d952fcbcf36ee02a7b7942",
+    "alt": "Original SEC 2023 Ordinary Construction Studies Question 7: the printed question with the draft plan of a utility room with an external door, window and kitchen door.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2023-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q8-original.png",
+    "md5": "4b84c1accf8877f9b98fdcf0fcba92c6",
+    "alt": "Original SEC 2023 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2023-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q9-original.png",
+    "md5": "719cc515881778b37094bdebb0d79e95",
+    "alt": "Original SEC 2023 Ordinary Construction Studies Question 9: the printed question with a sketch of the front entrance of a semi-detached house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2023-OL-q1-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q1-scheme.png",
+    "md5": "aa499112d9d59820b312fd7963bed77f",
+    "alt": "SEC model section through the cavity wall and timber first floor on a joist hanger, with the wall tie marked (b) and the specification list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q2-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q2-reasons.png",
+    "md5": "275b272abcee88b1d115eac6bd74e96a",
+    "alt": "SEC 2023 Ordinary marking scheme notes on why energy upgrade grants are available for old houses.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q2-method": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q2-method.png",
+    "md5": "766ed8264af2132342eb22d925cfe183",
+    "alt": "SEC 2023 Ordinary marking scheme notes on applying external insulation, with sketches of the insulation boards, mesh and render, and the insulation types and thickness.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q2-upgrade": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q2-upgrade.png",
+    "md5": "c5b66f65688521a2495e346853bb9b41",
+    "alt": "SEC 2023 Ordinary marking scheme notes on other energy upgrades, with sketches of a heat pump, solar panels on a roof and a wood-burning stove.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q3-system.png",
+    "md5": "72004ee329646b34175840bf695e35e7",
+    "alt": "SEC model diagram of the solar collector connected to the cylinder, with the pump, expansion vessel, storage tank, shower and valves, and the typical details.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q3-locations": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q3-locations.png",
+    "md5": "e436572449dd427ffaa043b694d89e15",
+    "alt": "SEC 2023 Ordinary marking scheme notes on considerations when locating solar panels on a house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q4-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q4-advantages.png",
+    "md5": "e84f7bb05c4a0218bc673c6063aaf148",
+    "alt": "SEC 2023 Ordinary marking scheme notes on the advantages of trussed rafters.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q4-fixing": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q4-fixing.png",
+    "md5": "e628c9375347d7814367f5b127391fbe",
+    "alt": "SEC 2023 Ordinary marking scheme notes on securing a trussed rafter to the wall, with sketches of the wallplate, truss clip and nail plate.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q4-finishes": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q4-finishes.png",
+    "md5": "e5ab1b6b156669483dc61f53ad0f0865",
+    "alt": "SEC 2023 Ordinary marking scheme table of roof finishes (slate, tiles, photovoltaic slates and zinc sheeting) with reasons for each.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q5-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q5-section.png",
+    "md5": "8db793f8b8278337fed67deb1b1b9732",
+    "alt": "SEC model section through the cavity wall and the eaves of the insulated flat roof, with the specification list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q5-closer": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q5-closer.png",
+    "md5": "109f79f402ecee1ee6a7e84056283276",
+    "alt": "SEC model detail of the cavity closer at wallplate level, marked (b).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q6-classroom": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q6-classroom.png",
+    "md5": "a0ce5cad306fa5ec00bbf3e5dfefe67c",
+    "alt": "SEC 2023 Ordinary marking scheme table of safety precautions when using a jigsaw and when using epoxy adhesive.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q6-lathe": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q6-lathe.png",
+    "md5": "bfbaa9688398c5ede482404b388dc5f1",
+    "alt": "SEC 2023 Ordinary marking scheme notes on woodturning safety, with sketches of tied-back hair, a face visor, a dust mask and a lathe with its tool rest.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q6-tidy": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q6-tidy.png",
+    "md5": "a4877a4bb893660f1cc0d4558d6dd886",
+    "alt": "SEC 2023 Ordinary marking scheme notes on keeping the Construction Studies room organised and tidy.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q7-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q7-advantages.png",
+    "md5": "5c2c5cf1366bd6440faf7f9277bb3be7",
+    "alt": "SEC 2023 Ordinary marking scheme notes on the advantages of a large utility room.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q7-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q7-layout.png",
+    "md5": "d6207de7e04f93396a07e6afff926238",
+    "alt": "SEC model plan of the utility room with the sink under the window, the washing machine, storage units and seating/boot area, with the reasons for each location (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q7-covering": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q7-covering.png",
+    "md5": "c85db73c10022490d2d006d1b4c224a1",
+    "alt": "SEC 2023 Ordinary marking scheme table of utility-room floor coverings (ceramic tiles, vinyl, polished concrete, wood laminate and linoleum) with reasons for each.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q8-terms": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q8-terms.png",
+    "md5": "9e828d6c72acec3690e14e77991e7f9d",
+    "alt": "SEC marking-scheme notes and sketches for all nine Question 8 terms, in scheme order: concrete mixer, smart radiator valve, ridge tile, triple glazing, balusters, cedar cladding, bridle joint, wood pellet stove and floor screed.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q9-materials": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q9-materials.png",
+    "md5": "086eca5fc3d3283305f84cbad69f183b",
+    "alt": "SEC 2023 Ordinary marking scheme notes on front-door materials and reasons, with a sketch of a timber door under a canopy.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q9-modifications": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q9-modifications.png",
+    "md5": "91cd5d8745f100cb5bcaf10465b0d1d4",
+    "alt": "SEC 2023 Ordinary marking scheme notes on modifying the entrance for a person with limited mobility, with a sketch of an entrance opening in a brick wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2023-OL-q9-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-OL-q9-reasons.png",
+    "md5": "fcf7bc89ced087934cd48ba002693d8f",
+    "alt": "SEC 2023 Ordinary marking scheme notes on why owners would create an entrance accessible to all, with a sketch of a ramped entrance.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }
