@@ -237,7 +237,7 @@ class Draft:
         whole = {}
         for t in self.tasks:
             c = t['card']
-            if '-complete' in c['id'] or c['id'].removeprefix(self.PREFIX) in kept_whole:
+            if c['id'].endswith('-complete') or c['id'].removeprefix(self.PREFIX) in kept_whole:
                 parts = [g['label'] for g in c.get('taskGroups', [])] or ['one card over every printed item']
                 whole.setdefault('10-alt' if t['alternative'] else t['questionNumber'], []).append(dict(id=c['id'], parts=parts, marks=c['totalMarks']))
         assert set(reasons) | set(consolidated) == {k.removeprefix(self.PREFIX) for k in self.legacy}, \
@@ -397,7 +397,7 @@ def validate(d, m, images=True, figure_dir=FIGURE_DIR, integrated=True):
     full = 60 if level == 'higher' else 50
     kept_whole = set(_get(m, 'WHOLE_CHOICES', set()))
     for qk in [str(i) for i in range(1, len(m.QUESTIONS) + 1)] + (['10-alt'] if alt else []):
-        whole = sorted(k for k in cards if qkey_of(k) == qk and ('-complete' in k or k in kept_whole))
+        whole = sorted(k for k in cards if qkey_of(k) == qk and (k.endswith('-complete') or k in kept_whole))
         assert len(whole) == 1 and [w['id'] for w in ledgers[qk]['wholeRoutes']] == [PREFIX + k for k in whole], qk
         assert all(cards[k]['totalMarks'] == full for k in whole), qk
     sel = d['selectionLedger']
@@ -655,8 +655,7 @@ def integrate(m, here, alt_text, anchor_from_sidecar=False):
               + '); whole theory paper reconciled against the original paper and scheme. Practical component and Irish edition remain separate work.')
     review = dict(draft, status=status, reviewedAt=now, paperComplete=True, **extra,
                   fullPaperReconciliation=dict(questions=len(m.QUESTIONS), alternativeQuestions=1 if getattr(m, 'ALT', False) else 0,
-                                               examRubric=('Any five of ten questions, 60 marks each, 300 total' if level == 'higher' else
-                                                           'Any four of nine questions, 50 marks each, 200 total') + '; no full-exam Cartesian cards.',
+                                               examRubric=m.RUBRIC + '; no full-exam Cartesian cards.',
                                                method=f'Same-operator source review of the paper and every scheme page; validator construction_{year}_{level}.py on the shared engine construction_paper.py.',
                                                validator=report),
                   priorAuthoredCardHashes=str((here / 'prior-authored-card-hashes.json').relative_to(R)),
