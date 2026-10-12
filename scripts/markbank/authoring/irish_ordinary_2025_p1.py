@@ -10,14 +10,14 @@ segment cards and the nine composition titles. Their IDs are kept and the six
 segments stay the listening card unit (the Bank plays one recording section as one
 exercise). `apply_legacy_review` (called by irish_cards.py) joins them to Atlas,
 marks each of the 20 printed listening questions as its own 3-mark criterion and
-lifts the 2025 composition scheme. `build` adds the 30 two-section selections
-printed by “Freagair do rogha dhá cheann de A, B, C, D” beside the legacy file.
+lifts the 2025 composition scheme. “Freagair do rogha dhá cheann de A, B, C, D” is
+a choice, not a route: each title keeps its own card and carries the instruction in
+its task requirements; no two-section combination cards are published (each
+composition is marked on its own 50). `main` writes the component review.
 """
 from __future__ import annotations
 import argparse
-import copy
 import hashlib
-import itertools
 import json
 import re
 from pathlib import Path
@@ -25,7 +25,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001GLP100IV'
 SCHEME_FILE = 'LC001GLP000IV'
-OUT = ROOT / 'components/MarkBank/cards/irish/ordinary-2025-p1-authored.json'
+OUT = ROOT / 'scripts/markbank/authored/irish-ordinary-2025-p1-component-review.json'
 SOURCE_REVIEW = ROOT / 'scripts/markbank/authored/irish-ordinary-2025-p1-source-review.json'
 REVIEWED_AT = '2026-10-11'
 PAPER_SHA = 'f0a9c0dfe1ee9fd67ecef6274050bfffca0114f7c634bb69a4a35e7db03bf212'
@@ -184,7 +184,10 @@ def material():
 
 
 def apply_legacy_review(cards):
-    """Join the 15 retained legacy cards to Atlas and lift the 2025 scheme (IDs, totals and topics unchanged)."""
+    """Join the 15 retained legacy cards to Atlas and lift the 2025 scheme (IDs, totals and topics unchanged).
+
+    schemeFileid names the Ordinary scheme: without it the Atlas answer map falls
+    back to the Higher scheme file."""
     m = material()
     by_id = {c['id']: c for c in cards}
     stamped = []
@@ -196,7 +199,7 @@ def apply_legacy_review(cards):
             values = {int(v) for v in re.findall(r'= (\d) mharc', chunk)}
             criteria.append(criterion(cid, label, 3, [chunk, m['general']], 'exact', permitted=sorted({0, 3} | values)))
         pages = sorted({p for q in questions for p in q[4]})
-        card.update(atlasQuestionId=key, reviewedAt=REVIEWED_AT, reviewedPaperPages=[page], paperPage=page,
+        card.update(atlasQuestionId=key, reviewedAt=REVIEWED_AT, reviewedPaperPages=[page], paperPage=page, schemeFileid=SCHEME_FILE,
                     schemePage=pages[0], schemePages=pages, sourceMaterial=source(f'Cluastuiscint {ref}', [page]), criteria=criteria,
                     markingGuideNote='The listed responses and tariffs come from the 2025 SEC marking scheme; equivalent wording with the same meaning is accepted. '
                                      'Each printed question is marked at its own published 3-mark tariff. ' + LANGUAGE)
@@ -206,11 +209,11 @@ def apply_legacy_review(cards):
         for roman, title in titles:
             card = by_id[f'irish-2025-ol-p1-composition-{group.lower()}-{roman}']
             body = m['head'] + f'\n\n{group} · {form} (50 marc)\n' + (instruction + '\n' if instruction else '') + f'({roman}) {title}'
-            card.update(atlasQuestionId=f'W-{group}-{roman}', reviewedAt=REVIEWED_AT, reviewedPaperPages=[7], paperPage=7,
+            card.update(atlasQuestionId=f'W-{group}-{roman}', reviewedAt=REVIEWED_AT, reviewedPaperPages=[7], paperPage=7, schemeFileid=SCHEME_FILE,
                         schemePage=10, schemePages=[10, 11, 12, 13],
                         questionText=body + f'\n\nAn rogha don chárta seo: {group}({roman}).',
                         sourceMaterial=source(f'Ceapadóireacht {group}({roman})', [7]),
-                        taskRequirements=['Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.',
+                        taskRequirements=['Freagair do rogha dhá cheann de A, B, C, D anseo.', 'Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.',
                                           'Coinnigh ceangal cinnte leanúnach idir an teideal agus an t-ábhar.', 'Leathleathanach nó mar sin.'],
                         criteria=[criterion('tasc', 'An Tasc', 2, [c['marking'].split('An tÁbhar (8 marc)')[0]], permitted=[0, 2]),
                                   criterion('abhar', 'An tÁbhar', 8, [c['marking'].split('An tÁbhar (8 marc)', 1)[1].split('An Cumas Gaeilge (40 marc)')[0]], 'indicative'),
@@ -224,68 +227,34 @@ def apply_legacy_review(cards):
     return cards, stamped
 
 
-def build(legacy_cards):
-    """The 30 printed two-section selections, built from the reviewed legacy titles."""
+def review():
+    """The component review record; the inventory reads it beside authored.json."""
     m = material()
-    by_id = {c['id']: c for c in legacy_cards}
-    singles = {g: [by_id[f'irish-2025-ol-p1-composition-{g.lower()}-{t[0]}'] for t in v[2]] for g, v in m['groups'].items()}
-    cards = []
-    for g1, g2 in itertools.combinations('ABCD', 2):
-        for m1, m2 in itertools.product(singles[g1], singles[g2]):
-            members = [m1, m2]
-            key = '-'.join(x['atlasQuestionId'].removeprefix('W-') for x in members)
-            criteria = []
-            for x in members:
-                prefix = x['atlasQuestionId'].lower().removeprefix('w-') + '-'
-                for old in x['criteria']:
-                    cc = copy.deepcopy(old)
-                    cc['id'] = prefix + cc['id']
-                    cc['label'] = x['questionRef'].removeprefix('2025 OL Paper 1 ') + ' · ' + cc['label']
-                    criteria.append(cc)
-            topics = list(dict.fromkeys(t for x in members for t in [x['topicId'], *x.get('additionalTopicIds', [])]))
-            ref = ' + '.join(x['questionRef'].removeprefix('2025 OL Paper 1 ') for x in members)
-            cards.append(dict(
-                id='irish-2025-ol-p1-composition-' + key.lower(), year=2025, level='ordinary', paper=1, section='1',
-                atlasQuestionId=f'W-{key}', questionRef=f'2025 OL Paper 1 {ref}',
-                questionText='Freagair do rogha dhá cheann de A, B, C, D anseo.\n\nAn rogha don chárta seo: ' + ref + '\n\n' +
-                             '\n\n'.join(x['questionRef'].removeprefix('2025 OL Paper 1 ') + '\n' + x['questionText'].split('\n\n')[2] for x in members),
-                totalMarks=100, topicId=topics[0], **({'additionalTopicIds': topics[1:]} if topics[1:] else {}),
-                conceptId='irish-ol-p1-composition-' + key.lower(), paperFileid=FILE, schemeFileid=SCHEME_FILE,
-                schemePage=10, schemePages=[10, 11, 12, 13], reviewedAt=REVIEWED_AT, reviewedPaperPages=[7],
-                taskRequirements=[r for x in members for r in x['taskRequirements']], criteria=criteria,
-                markingGuideNote='One permitted printed selection: two whole 50-mark compositions from two different sections. '
-                                 'Each keeps its own Tasc, Ábhar and Cumas Gaeilge awards; alternative routes are not added together.',
-                sourceMaterial=source(f'Ceapadóireacht {ref}', [7]), memberCardIds=[x['id'] for x in members]))
-    assert len(cards) == 30 and all(sum(c['maxMarks'] for c in card['criteria']) == 100 for card in cards)
     sr = json.loads(SOURCE_REVIEW.read_text())
     legacy = [f'irish-2025-ol-p1-listening-{s[1]}' for s in m['segments']] + [
         f'irish-2025-ol-p1-composition-{g.lower()}-{t[0]}' for g, v in m['groups'].items() for t in v[2]]
-    review = dict(year=2025, level='ordinary', paperFileid=FILE + '.pdf', schemeFileid=SCHEME_FILE + '.pdf',
-                  paperSha256=PAPER_SHA, schemeSha256=SCHEME_SHA,
-                  reviewedPaperPages=list(range(1, 17)), reviewedSchemePages=sr['reviewedSchemePages'], schemeScope=sr['schemeScope'],
-                  reviewDate=REVIEWED_AT, status='reviewed', fullPaperAndApplicableSchemeVisualSweep=True, selectionDecisions=m['decisions'],
-                  legacyCardIds=legacy, listeningSegmentCardIds=legacy[:6], compositionRouteCardIds=legacy[6:],
-                  pairedRouteCardIds=[c['id'] for c in cards], printedListeningQuestions=20,
-                  examStructure=dict(listening=60, composition=100, total=160),
-                  nonPoolDecisions=sr['nonPoolDecisions'], openIssues=[], audio=sr['audio'], caveats=sr['sourceFindings'],
-                  boundaries='6 retained listening segment cards carrying all 20 printed questions as separate 3-mark criteria (60); '
-                             '9 retained composition titles at 50; 30 two-section selections at 100.')
-    return dict(review=review, cards=cards)
+    return dict(year=2025, level='ordinary', paperFileid=FILE + '.pdf', schemeFileid=SCHEME_FILE + '.pdf',
+                paperSha256=PAPER_SHA, schemeSha256=SCHEME_SHA,
+                reviewedPaperPages=list(range(1, 17)), reviewedSchemePages=sr['reviewedSchemePages'], schemeScope=sr['schemeScope'],
+                reviewDate=REVIEWED_AT, status='reviewed', fullPaperAndApplicableSchemeVisualSweep=True, selectionDecisions=m['decisions'],
+                cardIds=legacy, listeningSegmentCardIds=legacy[:6], compositionRouteCardIds=legacy[6:], printedListeningQuestions=20,
+                examStructure=dict(listening=60, composition=100, total=160),
+                nonPoolDecisions=sr['nonPoolDecisions'], openIssues=[], audio=sr['audio'], caveats=sr['sourceFindings'],
+                boundaries='6 retained listening segment cards carrying all 20 printed questions as separate 3-mark criteria (60); '
+                           '9 retained composition titles at 50 (answer any two; no combination cards).')
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
-    legacy = json.loads((ROOT / 'components/MarkBank/cards/irish/authored.json').read_text())['cards']
-    assert all(c.get('atlasQuestionId') for c in legacy if c['id'].startswith('irish-2025-ol-p1-')), 'Run irish_cards.py first'
-    data = build(legacy)
+    data = review()
     content = json.dumps(data, ensure_ascii=False, indent=2) + '\n'
     if args.check:
         assert OUT.exists() and OUT.read_text() == content, f'Stale output: {OUT}'
     else:
         OUT.write_text(content)
-    print(f"Irish Ordinary 2025 Paper 1: {len(data['cards'])} added selections (+15 retained legacy cards); the archive remains incomplete.")
+    print(f"Irish Ordinary 2025 Paper 1: {len(data['cardIds'])} retained cards reviewed (20 printed listening questions); the archive remains incomplete.")
 
 
 if __name__ == '__main__':

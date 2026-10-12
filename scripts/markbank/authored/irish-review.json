@@ -908,18 +908,29 @@
         "irish-2025-fl-r-3c-3",
         "irish-2025-fl-r-3c-4",
         "irish-2025-fl-r-3c-5",
+        "irish-2025-fl-w-4a",
+        "irish-2025-fl-w-4b-16-aibrean",
+        "irish-2025-fl-w-4b-5-bealtaine",
+        "irish-2025-fl-w-4b-10-meitheamh",
+        "irish-2025-fl-w-5a",
+        "irish-2025-fl-w-5b"
+      ],
+      "fullPaperAndSchemeVisualSweep": true,
+      "markBankAtlasTaskParity": "78 of 78 exact year/level/file/part identities mapped; original coarse Atlas IDs retained; 75 additive Atlas entries",
+      "runtimeVerification": {
+        "levels": "Foundation profile, persisted choice and picker retain Foundation; other subjects resolve supported levels from curriculumRegistry",
+        "sourceReader": "Real PDF pages rendered at 390px for listening pages 3–5, poem page 12, form page 15, and selected writing pages 14/17. Navigation reaches the real final page, close returns keyboard focus, no horizontal overflow.",
+        "audio": "Official Foundation recording decoded by Chromium with readyState 4 and duration 1769.391094 seconds in Mark Bank and Topic Atlas.",
+        "atlas": "A-1a and W-4B-16-aibrean rendered their real paper and scheme PDFs; show/hide worked; A-1a also exposed the official recording.",
+        "browserErrors": []
+      },
+      "withdrawnCombinationCardIds": [
         "irish-2025-fl-r-2-ab",
         "irish-2025-fl-r-2-ac",
         "irish-2025-fl-r-2-bc",
         "irish-2025-fl-r-3-ab",
         "irish-2025-fl-r-3-ac",
         "irish-2025-fl-r-3-bc",
-        "irish-2025-fl-w-4a",
-        "irish-2025-fl-w-4b-16-aibrean",
-        "irish-2025-fl-w-4b-5-bealtaine",
-        "irish-2025-fl-w-4b-10-meitheamh",
-        "irish-2025-fl-w-5a",
-        "irish-2025-fl-w-5b",
         "irish-2025-fl-w-4a-4b-16-aibrean",
         "irish-2025-fl-w-4a-4b-5-bealtaine",
         "irish-2025-fl-w-4a-4b-10-meitheamh",
@@ -932,16 +943,7 @@
         "irish-2025-fl-w-4b-5b-5-bealtaine",
         "irish-2025-fl-w-4b-5b-10-meitheamh",
         "irish-2025-fl-w-5a-5b"
-      ],
-      "fullPaperAndSchemeVisualSweep": true,
-      "markBankAtlasTaskParity": "78 of 78 exact year/level/file/part identities mapped; original coarse Atlas IDs retained; 75 additive Atlas entries",
-      "runtimeVerification": {
-        "levels": "Foundation profile, persisted choice and picker retain Foundation; other subjects resolve supported levels from curriculumRegistry",
-        "sourceReader": "Real PDF pages rendered at 390px for listening pages 3–5, poem page 12, form page 15, and selected writing pages 14/17. Navigation reaches the real final page, close returns keyboard focus, no horizontal overflow.",
-        "audio": "Official Foundation recording decoded by Chromium with readyState 4 and duration 1769.391094 seconds in Mark Bank and Topic Atlas.",
-        "atlas": "A-1a and W-4B-16-aibrean rendered their real paper and scheme PDFs; show/hide worked; A-1a also exposed the official recording.",
-        "browserErrors": []
-      }
+      ]
     }
   ],
   "reviewedHigherRoutes": {
@@ -1309,26 +1311,6 @@
       "irish-2024-fl-w-5a",
       "irish-2024-fl-w-5b"
     ],
-    "pairedRouteCardIds": [
-      "irish-2024-fl-r-2-ab",
-      "irish-2024-fl-r-2-ac",
-      "irish-2024-fl-r-2-bc",
-      "irish-2024-fl-r-3-ab",
-      "irish-2024-fl-r-3-ac",
-      "irish-2024-fl-r-3-bc",
-      "irish-2024-fl-w-4a-4b-25-meitheamh",
-      "irish-2024-fl-w-4a-4b-27-meitheamh",
-      "irish-2024-fl-w-4a-4b-3-iuil",
-      "irish-2024-fl-w-4a-5a",
-      "irish-2024-fl-w-4a-5b",
-      "irish-2024-fl-w-4b-5a-25-meitheamh",
-      "irish-2024-fl-w-4b-5a-27-meitheamh",
-      "irish-2024-fl-w-4b-5a-3-iuil",
-      "irish-2024-fl-w-4b-5b-25-meitheamh",
-      "irish-2024-fl-w-4b-5b-27-meitheamh",
-      "irish-2024-fl-w-4b-5b-3-iuil",
-      "irish-2024-fl-w-5a-5b"
-    ],
     "examStructure": {
       "listening": 120,
       "matching": 40,
@@ -1386,7 +1368,27 @@
       "otherSubjects": "decoded topic records unchanged",
       "cardIdsRemoved": [],
       "atlasIdsRemoved": []
-    }
+    },
+    "withdrawnCombinationCardIds": [
+      "irish-2024-fl-r-2-ab",
+      "irish-2024-fl-r-2-ac",
+      "irish-2024-fl-r-2-bc",
+      "irish-2024-fl-r-3-ab",
+      "irish-2024-fl-r-3-ac",
+      "irish-2024-fl-r-3-bc",
+      "irish-2024-fl-w-4a-4b-25-meitheamh",
+      "irish-2024-fl-w-4a-4b-27-meitheamh",
+      "irish-2024-fl-w-4a-4b-3-iuil",
+      "irish-2024-fl-w-4a-5a",
+      "irish-2024-fl-w-4a-5b",
+      "irish-2024-fl-w-4b-5a-25-meitheamh",
+      "irish-2024-fl-w-4b-5a-27-meitheamh",
+      "irish-2024-fl-w-4b-5a-3-iuil",
+      "irish-2024-fl-w-4b-5b-25-meitheamh",
+      "irish-2024-fl-w-4b-5b-27-meitheamh",
+      "irish-2024-fl-w-4b-5b-3-iuil",
+      "irish-2024-fl-w-5a-5b"
+    ]
   },
   "foundation2023": {
     "year": 2023,
@@ -1642,20 +1644,6 @@
       "irish-2023-fl-w-5a",
       "irish-2023-fl-w-5b"
     ],
-    "pairedRouteCardIds": [
-      "irish-2023-fl-r-2-ab",
-      "irish-2023-fl-r-2-ac",
-      "irish-2023-fl-r-2-bc",
-      "irish-2023-fl-r-3-ab",
-      "irish-2023-fl-r-3-ac",
-      "irish-2023-fl-r-3-bc",
-      "irish-2023-fl-w-4a-4b",
-      "irish-2023-fl-w-4a-5a",
-      "irish-2023-fl-w-4a-5b",
-      "irish-2023-fl-w-4b-5a",
-      "irish-2023-fl-w-4b-5b",
-      "irish-2023-fl-w-5a-5b"
-    ],
     "examStructure": {
       "listening": 120,
       "matching": 40,
@@ -1715,7 +1703,21 @@
       "otherSubjects": "structural topic data and decoded runtime records unchanged",
       "cardIdsRemoved": [],
       "atlasIdsRemoved": []
-    }
+    },
+    "withdrawnCombinationCardIds": [
+      "irish-2023-fl-r-2-ab",
+      "irish-2023-fl-r-2-ac",
+      "irish-2023-fl-r-2-bc",
+      "irish-2023-fl-r-3-ab",
+      "irish-2023-fl-r-3-ac",
+      "irish-2023-fl-r-3-bc",
+      "irish-2023-fl-w-4a-4b",
+      "irish-2023-fl-w-4a-5a",
+      "irish-2023-fl-w-4a-5b",
+      "irish-2023-fl-w-4b-5a",
+      "irish-2023-fl-w-4b-5b",
+      "irish-2023-fl-w-5a-5b"
+    ]
   },
   "foundation2022": {
     "year": 2022,
@@ -1977,14 +1979,6 @@
       "irish-2022-fl-w-5a",
       "irish-2022-fl-w-5b"
     ],
-    "pairedRouteCardIds": [
-      "irish-2022-fl-r-2-ab",
-      "irish-2022-fl-r-2-ac",
-      "irish-2022-fl-r-2-bc",
-      "irish-2022-fl-r-3-ab",
-      "irish-2022-fl-r-3-ac",
-      "irish-2022-fl-r-3-bc"
-    ],
     "examStructure": {
       "listening": 120,
       "matching": 40,
@@ -2050,7 +2044,15 @@
       "otherSubjects": "structural topic data and decoded runtime records unchanged",
       "cardIdsRemoved": [],
       "atlasIdsRemoved": []
-    }
+    },
+    "withdrawnCombinationCardIds": [
+      "irish-2022-fl-r-2-ab",
+      "irish-2022-fl-r-2-ac",
+      "irish-2022-fl-r-2-bc",
+      "irish-2022-fl-r-3-ab",
+      "irish-2022-fl-r-3-ac",
+      "irish-2022-fl-r-3-bc"
+    ]
   },
   "foundation2021": {
     "year": 2021,
@@ -2307,14 +2309,6 @@
       "irish-2021-fl-w-5a",
       "irish-2021-fl-w-5b"
     ],
-    "pairedRouteCardIds": [
-      "irish-2021-fl-r-2-ab",
-      "irish-2021-fl-r-2-ac",
-      "irish-2021-fl-r-2-bc",
-      "irish-2021-fl-r-3-ab",
-      "irish-2021-fl-r-3-ac",
-      "irish-2021-fl-r-3-bc"
-    ],
     "examStructure": {
       "listening": 120,
       "matching": 40,
@@ -2381,7 +2375,15 @@
       "inventoryCheck": "passed",
       "diffCheck": "passed",
       "preservation": "742 preceding Bank cards byte-for-byte unchanged; 1328 preceding Atlas identities retained; every old Foundation 2021–2025 answer record field retained; other subjects unchanged"
-    }
+    },
+    "withdrawnCombinationCardIds": [
+      "irish-2021-fl-r-2-ab",
+      "irish-2021-fl-r-2-ac",
+      "irish-2021-fl-r-2-bc",
+      "irish-2021-fl-r-3-ab",
+      "irish-2021-fl-r-3-ac",
+      "irish-2021-fl-r-3-bc"
+    ]
   },
   "foundation2020": {
     "year": 2020,
@@ -2618,18 +2620,6 @@
       "irish-2020-fl-w-5a",
       "irish-2020-fl-w-5b"
     ],
-    "pairedRouteCardIds": [
-      "irish-2020-fl-r-2-ab",
-      "irish-2020-fl-r-2-ac",
-      "irish-2020-fl-r-2-bc",
-      "irish-2020-fl-r-3-ab",
-      "irish-2020-fl-r-3-ac",
-      "irish-2020-fl-r-3-bc",
-      "irish-2020-fl-w-4a-5a",
-      "irish-2020-fl-w-4a-5b",
-      "irish-2020-fl-w-4b-5a",
-      "irish-2020-fl-w-4b-5b"
-    ],
     "examStructure": {
       "listening": 120,
       "matching": 40,
@@ -2697,7 +2687,19 @@
       "generatorIdempotence": "passed",
       "inventoryCheck": "passed",
       "diffCheck": "passed"
-    }
+    },
+    "withdrawnCombinationCardIds": [
+      "irish-2020-fl-r-2-ab",
+      "irish-2020-fl-r-2-ac",
+      "irish-2020-fl-r-2-bc",
+      "irish-2020-fl-r-3-ab",
+      "irish-2020-fl-r-3-ac",
+      "irish-2020-fl-r-3-bc",
+      "irish-2020-fl-w-4a-5a",
+      "irish-2020-fl-w-4a-5b",
+      "irish-2020-fl-w-4b-5a",
+      "irish-2020-fl-w-4b-5b"
+    ]
   },
   "foundation2019": {
     "year": 2019,
@@ -2949,20 +2951,6 @@
       "irish-2019-fl-w-5a",
       "irish-2019-fl-w-5b"
     ],
-    "pairedRouteCardIds": [
-      "irish-2019-fl-r-2-ab",
-      "irish-2019-fl-r-2-ac",
-      "irish-2019-fl-r-2-bc",
-      "irish-2019-fl-r-3-ab",
-      "irish-2019-fl-r-3-ac",
-      "irish-2019-fl-r-3-bc",
-      "irish-2019-fl-w-4a-5a",
-      "irish-2019-fl-w-4a-5b",
-      "irish-2019-fl-w-4b-dearthair-5a",
-      "irish-2019-fl-w-4b-dearthair-5b",
-      "irish-2019-fl-w-4b-deirfiur-5a",
-      "irish-2019-fl-w-4b-deirfiur-5b"
-    ],
     "examStructure": {
       "listening": 120,
       "matching": 40,
@@ -3030,6 +3018,27 @@
       "generatorIdempotence": "passed",
       "inventoryCheck": "passed",
       "diffCheck": "passed"
-    }
+    },
+    "withdrawnCombinationCardIds": [
+      "irish-2019-fl-r-2-ab",
+      "irish-2019-fl-r-2-ac",
+      "irish-2019-fl-r-2-bc",
+      "irish-2019-fl-r-3-ab",
+      "irish-2019-fl-r-3-ac",
+      "irish-2019-fl-r-3-bc",
+      "irish-2019-fl-w-4a-5a",
+      "irish-2019-fl-w-4a-5b",
+      "irish-2019-fl-w-4b-dearthair-5a",
+      "irish-2019-fl-w-4b-dearthair-5b",
+      "irish-2019-fl-w-4b-deirfiur-5a",
+      "irish-2019-fl-w-4b-deirfiur-5b"
+    ]
+  },
+  "choiceIsNotARoute": {
+    "date": "2026-10-12",
+    "rule": "When a student chooses N of M printed items, each printed option or part keeps its own card and the choose instruction sits in its taskRequirements; no per-combination cards. No scheme marks any withdrawn set jointly: every withdrawn card's award equalled the sum of its members' awards.",
+    "withdrawnCards": 300,
+    "liveAliasesNeeded": 0,
+    "note": "Card ids listed under validation.idsAdded are the historical record of what each batch added; the 300 combination ids among them, and every withdrawnCombinationCardIds list, are no longer in the bank."
   }
 }

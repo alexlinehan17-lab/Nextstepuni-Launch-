@@ -47,20 +47,19 @@ added together. The archive inventory now has three reviewed components and
 88 pending components. Sixty-nine still have no Mark Bank cards.
 
 `irish_foundation.py` adds the visually reviewed 2025 Foundation paper: fourteen
-listening parts, ten matching parts, thirty reading parts, six whole writing
-routes, six paired reading routes, and twelve paired writing routes. The paired
-routes reproduce the printed choose-two instructions; their marks are not added
-to individual alternatives to infer the examination total. Source hashes and
+listening parts, ten matching parts, thirty reading parts and six whole writing
+cards. Each reading part and writing option carries the printed choose-two
+instruction in its task requirements; no card combines two choices. Source hashes and
 selection decisions are committed beside the cards in `foundation-authored.json`.
 
 `irish_foundation_2024.py` independently reviews all twenty 2024 Foundation
 paper pages and all twenty-four scheme pages. Its 78 cards cover fourteen
-listening parts, ten sign matches, thirty reading parts, six whole writing
-routes, six paired reading routes and twelve paired writing routes. The three
+listening parts, ten sign matches, thirty reading parts and six whole writing
+cards. The three
 interview dates are 25 June, 27 June and 3 July; each form remains 45 marks. The
 2024 length table differs from 2025 and is preserved exactly. Sixty individual
-tasks/routes plus eighteen overlapping paired routes represent the permitted
-practice choices; the examination total is 120 + 40 + 50 + 60 + 90 = 360.
+task and option cards represent the permitted practice choices; the examination
+total is 120 + 40 + 50 + 60 + 90 = 360.
 
 Every 2024 task joins to the correct Atlas topic with complete source and scheme
 pages. The external reference's letter association for the form is explicitly
@@ -78,10 +77,15 @@ Use the actual year's scheme. Separately marked reading and listening parts can
 be practised independently. A whole written response with one shared language
 award stays whole; show its published content allocations inside the rubric.
 
-Expand closed task choices, including choices inside a task. The 2025 form has
-three interview dates, which produce three 45-mark routes. Combining it with
-another writing task therefore expands each relevant pair into three 90-mark
-routes. Multiple-choice distractors are answers to one task, not alternative
+Choice is not a route. When the student chooses N of M printed items, each
+printed option or part keeps its own card and the choose instruction goes into
+its task requirements; never make a card per combination. The one exception is
+a scheme that marks a set jointly, which becomes one card with slot criteria.
+Closed variants inside one task still get one card each: the 2025 form has
+three interview dates, which produce three 45-mark form cards, never multiplied
+by another writing choice. `irish_choice.withdraw_combinations` enforces this in
+every generator and `test/irishChoiceIsNotARoute.test.ts` guards it.
+Multiple-choice distractors are answers to one task, not alternative
 valid tasks. Required headings, indicative examples and open choices such as
 school subjects or hobbies are not finite task pools.
 

@@ -13,6 +13,7 @@ import itertools
 import json
 import re
 from pathlib import Path
+from irish_choice import withdraw_combinations
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001BLP000IV'
@@ -364,7 +365,7 @@ def build():
         audio=json.loads(SOURCE_REVIEW.read_text())['audio'],
         boundaries='14 listening parts; 10 matching parts; 30 reading parts; 5 whole writing routes including two letter recipients; 6 paired reading routes; no paired writing routes.',
         caveats=json.loads(SOURCE_REVIEW.read_text())['sourceFindings'])
-    return dict(review=review,cards=cards),scheme
+    return withdraw_combinations(dict(review=review,cards=cards)),scheme
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)

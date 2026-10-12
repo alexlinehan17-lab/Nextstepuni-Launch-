@@ -13,6 +13,7 @@ import itertools
 import json
 import re
 from pathlib import Path
+from irish_choice import withdraw_combinations
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001BLP000IV'
@@ -326,7 +327,7 @@ def build():
         boundaries='14 listening parts; 10 matching parts; 30 reading parts; 6 whole writing routes; 6 paired reading routes; 12 paired writing routes.',
         caveats=['Foundation 2024 only. Other years remain pending.',
                  'The 2024 form length table is 35–40: 0, 25–34: −1, 10–24: −2, <10: −3. Do not substitute the different 2025 table.'])
-    return dict(review=review,cards=cards),scheme
+    return withdraw_combinations(dict(review=review,cards=cards)),scheme
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)

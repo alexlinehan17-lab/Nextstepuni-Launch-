@@ -23,27 +23,21 @@ describe('2011 Foundation separate written and listening papers',()=>{
       expect(resolvePaperFileid('irish',year,'foundation','4')).toBeNull();
     }
   });
-  it('retains every published boundary and all16 complete writing selections',()=>{
-    expect(cards).toHaveLength(92);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(92);
+  it('retains every published boundary and carries the printed choices on their options',()=>{
+    expect(cards).toHaveLength(70);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(70);
     cards.forEach(c=>expect(tariffReconciles(c),c.id).toBe(true));
     expect(written.review.atomicPracticeCardIds).toHaveLength(48);
-    expect(written.review.pairedRouteCardIds).toHaveLength(22);
+    expect(written.review).not.toHaveProperty('pairedRouteCardIds');
     expect(written.review.examStructure).toEqual({matching:40,readingQ2:50,readingQ3:60,writingQ4:30,writingQ5:40,writingQ6:50,writing:120,total:270});
     expect(aural.review.examStructure).toEqual({listening:180,total:180});
-    const products=written.cards.filter(c=>/^W-4[AB]-5/.test(c.atlasQuestionId));
-    const expected=['A','B'].flatMap(a=>['5A','5B-15-lunasa','5B-17-lunasa','5B-19-lunasa'].flatMap(b=>['A','B'].map(c=>`W-4${a}-${b}-6${c}`)));
-    expect(products.map(c=>c.atlasQuestionId)).toEqual(expected);
-    for(const c of products){
-      expect(c.totalMarks).toBe(120);expect(c.memberCardIds).toHaveLength(3);
-      expect(c.sourceMaterial.pages).toHaveLength(3);
-      expect(c.questionText).toContain('FREAGAIR GACH CEIST (4, 5 agus 6)');
-      expect(c.criteria.find(r=>r.id.endsWith('-cumarsaid'))!.maxMarks).toBe(37);
-      expect(c.criteria.find(r=>/^w-6[ab]-gaeilge$/.test(r.id))!.maxMarks).toBe(13);
-    }
-    for(const n of [2,3]) for(const pair of ['AB','AC','BC']) {
-      const c=get(`R-${n}-${pair}`);expect(c.totalMarks).toBe(n===2?50:60);
-      expect(c.criteria).toHaveLength(10);expect(c.sourceMaterial.pages).toHaveLength(2);
+    // Choice is not a route: no reading pairs and no 4 + 5 + 6 writing products (dates stay single options).
+    expect(written.cards.filter(c=>/^R-[23]-[ABC]{2}$|^W-4[AB]-5/.test(c.atlasQuestionId))).toEqual([]);
+    const writing=written.cards.filter(c=>/^W-[456]/.test(c.atlasQuestionId));
+    expect(writing.map(c=>c.atlasQuestionId)).toEqual(['W-4A','W-4B','W-5A','W-5B-15-lunasa','W-5B-17-lunasa','W-5B-19-lunasa','W-6A','W-6B']);
+    for(const c of writing) expect(c.taskRequirements[0],c.id).toBe('FREAGAIR GACH CEIST (4, 5 agus 6). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b). Ceist 6: Freagair (a) NÓ (b).');
+    for(const n of [2,3]) for(const c of written.cards.filter(c=>new RegExp(`^R-${n}[ABC]-\\d$`).test(c.atlasQuestionId))) {
+      expect(c.taskRequirements[0],c.id).toBe(`Ceist ${n} Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.`);
     }
   });
   it('joins22 listening parts to the aural paper, shared EV scheme and full recording',()=>{
@@ -80,7 +74,6 @@ describe('2011 Foundation separate written and listening papers',()=>{
     }
     expect(guide('R-2B-2','answer')).toContain('absent from the passage and options');
     expect(guide('R-2B-2','answer')).toContain('scheme does not explicitly award');
-    for(const pair of ['AB','BC'])expect(guide('R-2-'+pair,'r-2b-2-answer')).toContain('Published source discrepancy');
     expect(guide('R-3A-2','answer')).toContain('Búistéar, sorcas, thiomáin sé bád');
     expect(guide('R-3B-4','answer')).toContain('D’fhill sé abhaile');
     expect(guide('R-3C-2','answer')).toContain('Is bhí an t-ocras mór dá chrá');
@@ -120,10 +113,9 @@ describe('2011 Foundation separate written and listening papers',()=>{
       expect(guide(key,'cumarsaid')).not.toMatch(/[\uE000-\uF8FF]/);
     }
     expect(get('W-6A').schemePages).toEqual([16]);expect(get('W-6B').schemePages).toEqual([17]);
-    const pair=cards.find(c=>c.id==='irish-2011-fl-w-4b-5b-17-lunasa-6b')!;
-    if(pair.rubric.system!=='irish')throw new Error('wrongrubric');
-    const scores=Object.fromEntries(pair.rubric.criteria.map(c=>['irish:'+c.id,c.id==='w-6b-cumarsaid'?10:c.id==='w-6b-gaeilge'?7:c.maxMarks]));
-    expect(irishMarks(pair,scores)).toBe(87); // invitation30 +form40 +story10+7
+    const story=cards.find(c=>c.id==='irish-2011-fl-w-6b')!;
+    if(story.rubric.system!=='irish')throw new Error('wrongrubric');
+    expect(irishMarks(story,{'irish:cumarsaid':10,'irish:gaeilge':7})).toBe(17);
   });
   it('uses the correct paper/scheme for every Atlas route and preserves the twelve aural identities',()=>{
     for(const batch of [written,aural]){
@@ -152,7 +144,8 @@ describe('2011 Foundation separate written and listening papers',()=>{
     expect(w.q.find((q:{n:string})=>q.n==='3').schemeRegion.map((r:{p:number})=>r.p)).toEqual([7,8,9,10,11,12,13,14,15,16,17]);
     expect(w.q.find((q:{n:string})=>q.n==='W-4B').label).toContain('Cuireadh');
     expect(w.q.find((q:{n:string})=>q.n==='W-5B').label).toContain('Foirm');
-    for(const n of ['R-2B-2','R-2B','R-2-AB','R-2-BC','2','W-4B','W-5A','W-5B','W-5B-15-lunasa','3']){
+    expect(w.q.some((q:{n:string})=>/^R-[23]-[ABC]{2}$|^W-4[AB]-5/.test(q.n))).toBe(false);
+    for(const n of ['R-2B-2','R-2B','2','W-4B','W-5A','W-5B','W-5B-15-lunasa','3']){
       expect(w.q.find((q:{n:string})=>q.n===n).practiceInstruction).toContain('Nóta foinse');
     }
     const instructions=w.q.find((q:{n:string})=>q.n==='3').practiceInstruction;

@@ -15,29 +15,22 @@ const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
 const guide=(key:string,id:string)=>get(key).criteria.find(c=>c.id===id)!.guidance.join(' ');
 
 describe('2026 Foundation source reconciliation',()=>{
-  it('retains every published boundary and expands both closed choose-two pools',()=>{
-    expect(cards).toHaveLength(70);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(70);
+  it('retains every published boundary and carries both closed choose-two instructions on their options',()=>{
+    expect(cards).toHaveLength(58);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(58);
     for(const card of cards) expect(tariffReconciles(card),card.id).toBe(true);
     for(const card of cards) expect(card.schemeRegion?.schemeFileid).toBe('LC001BLP100IV.pdf');
     expect(authored.review.atomicPracticeCardIds).toHaveLength(58);
-    expect(authored.review.pairedRouteCardIds).toHaveLength(12);
+    // Choice is not a route: no per-combination cards for either choose-two pool.
+    expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
+    expect(authored.cards.filter(c=>/^R-[23]-[ABC]{2}$|^W-[45][AB]-[45][AB]$/.test(c.atlasQuestionId))).toEqual([]);
     for(const n of [2,3]) {
-      const routes=authored.cards.filter(c=>new RegExp(`^R-${n}-[ABC]{2}$`).test(c.atlasQuestionId));
-      expect(routes.map(c=>c.atlasQuestionId)).toEqual(['AB','AC','BC'].map(p=>`R-${n}-${p}`));
-      for(const c of routes) {
-        expect(c.totalMarks).toBe(n===2?50:60);
-        expect(c.criteria).toHaveLength(10);
-        expect(c.sourceMaterial.pages).toHaveLength(2);
-      }
+      const parts=authored.cards.filter(c=>new RegExp(`^R-${n}[ABC]-\\d$`).test(c.atlasQuestionId));
+      expect(parts).toHaveLength(15);
+      for(const c of parts) expect(c.taskRequirements[0],c.id).toBe(`Ceist ${n} Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.`);
     }
-    const pairs=authored.cards.filter(c=>/^W-[45][AB]-[45][AB]$/.test(c.atlasQuestionId));
-    expect(pairs.map(c=>c.atlasQuestionId)).toEqual(['W-4A-4B','W-4A-5A','W-4A-5B','W-4B-5A','W-4B-5B','W-5A-5B']);
-    for(const c of pairs) {
-      expect(c.totalMarks).toBe(90);
-      expect(c.questionText).toContain('Freagair dhá cheist ar bith as na ceithre cinn seo a leanas: 4 (a), 4 (b), 5 (a) nó 5 (b).');
-      expect(c.criteria.filter(r=>r.id.endsWith('-gaeilge'))).toHaveLength(2);
-      expect('sourceDiscrepancyNotice' in c).toBe(false);
+    for(const key of ['W-4A','W-4B','W-5A','W-5B']) {
+      expect(get(key).taskRequirements[0],key).toBe('Freagair dhá cheist ar bith as na ceithre cinn seo a leanas: 4 (a), 4 (b), 5 (a) nó 5 (b).');
     }
   });
 
@@ -105,9 +98,8 @@ describe('2026 Foundation source reconciliation',()=>{
       expect(guide(key,'gaeilge')).toContain('An-mhaith 6–8; Maith / Maith go leor 3–5; Lag / An-lag 0–2');
       expect(guide(key,'gaeilge')).not.toContain('An-mhaith 7–8');
     }
-    const pair=cards.find(c=>c.id==='irish-2026-fl-w-4b-5a')!;
-    expect(cardsForTopic('irish-2-8',cards)).toContain(pair);
-    expect(cardsForTopic('irish-9-4',cards)).toContain(pair);
+    expect(cardsForTopic('irish-2-8',cards)).toContain(cards.find(c=>c.id==='irish-2026-fl-w-4b')!);
+    expect(cardsForTopic('irish-9-4',cards)).toContain(cards.find(c=>c.id==='irish-2026-fl-w-5a')!);
   });
 
   it('applies the missing-reference caps and the length table only to the story communication award',()=>{
@@ -121,16 +113,16 @@ describe('2026 Foundation source reconciliation',()=>{
     expect(get('W-5A').sourceDiscrepancyNotice).toContain('Féile cheoil');
     expect(guide('W-5B','cumarsaid')).toContain('An madra caillte');
     expect(get('W-5B').questionText).toContain('2. Ar strae / Trína chéile');
-    const pair=cards.find(c=>c.id==='irish-2026-fl-w-4b-5a')!;
-    if(pair.rubric.system!=='irish') throw new Error('Wrong rubric');
-    const scores=Object.fromEntries(pair.rubric.criteria.map(c=>[irishScoreId(c.id),c.kind==='award'?c.maxMarks:0]));
-    expect(irishMarks(pair,scores)).toBe(90);
-    scores['irish:w-5a-cumarsaid']=26;
-    scores['irish:w-5a-length']=3;
-    expect(irishMarks(pair,scores)).toBe(79);
+    const story=cards.find(c=>c.id==='irish-2026-fl-w-5a')!;
+    if(story.rubric.system!=='irish') throw new Error('Wrong rubric');
+    const scores=Object.fromEntries(story.rubric.criteria.map(c=>[irishScoreId(c.id),c.kind==='award'?c.maxMarks:0]));
+    expect(irishMarks(story,scores)).toBe(45);
+    scores['irish:cumarsaid']=26;
+    scores['irish:length']=3;
+    expect(irishMarks(story,scores)).toBe(34); // 26 − 3 communication + 11 language; the deduction never reaches the language award.
   });
 
-  it('joins all 70 cards to Atlas with the right pages, topics and disclosed scheme carry-overs',()=>{
+  it('joins all 58 cards to Atlas with the right pages, topics and disclosed scheme carry-overs',()=>{
     const map=JSON.parse(readFileSync('public/paper-answers/2026/LC001BLP100IV.pdf.json','utf8'));
     const q=(n:string)=>map.q.find((q:{n:string})=>q.n===n);
     const topics=(n:string)=>examTopicIdsForQuestion('irish','foundation',2026,'main',n,'p1','iv','LC001BLP100IV.pdf');
@@ -144,7 +136,8 @@ describe('2026 Foundation source reconciliation',()=>{
     expect(topics('W-4B')).toEqual(['irish-foundation-write-a-letter']);
     expect(topics('3')).not.toContain('irish-foundation-fill-in-a-form');
     expect(q('1').audioMaterial.playbackUrl).toContain('/2026/LC001BLP017IV.mp3');
-    for(const n of ['W-4B','W-5A','W-4B-5A','3']) expect(q(n).practiceInstruction,n).toContain('Nóta foinse');
+    for(const n of ['W-4B','W-5A','3']) expect(q(n).practiceInstruction,n).toContain('Nóta foinse');
+    expect(map.q.some((q:{n:string})=>/^W-[45][AB]-[45][AB]$|^R-[23]-[ABC]{2}$/.test(q.n))).toBe(false);
     expect(q('W-4B').practiceInstruction.match(/Foirm Iarratais/g)).toHaveLength(1);
     expect(q('3').practiceInstruction.match(/Nóta foinse/g)).toHaveLength(2);
   });

@@ -20,6 +20,7 @@ import itertools
 import json
 import re
 from pathlib import Path
+from irish_choice import withdraw_combinations
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001GLP200IV'
@@ -370,7 +371,7 @@ def build():
                   examStructure=dict(readingA=50, readingB=50, prose=50, poetry=50, total=200),
                   nonPoolDecisions=sr['nonPoolDecisions'], openIssues=[], caveats=sr['sourceFindings'],
                   boundaries=f'{len([c for c in cards if "-reading-" in c["id"]])} reading cards; {len([c for c in cards if "-reading-" not in c["id"] and "memberCardIds" not in c])} literature routes and sub-questions; {len(pairs)} two-route selections.')
-    return dict(review=review, cards=cards)
+    return withdraw_combinations(dict(review=review, cards=cards))
 
 
 def main():

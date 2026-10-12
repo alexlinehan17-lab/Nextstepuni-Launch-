@@ -1,12 +1,12 @@
 import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
-import added from '../components/MarkBank/cards/irish/ordinary-2025-p1-authored.json';
+import review from '../scripts/markbank/authored/irish-ordinary-2025-p1-component-review.json';
 import authored from '../components/MarkBank/cards/irish/authored.json';
 import sourceReview from '../scripts/markbank/authored/irish-ordinary-2025-p1-source-review.json';
 import inventory from '../scripts/markbank/authored/irish-archive-inventory.json';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
-import { irishMarks, irishScoreId, listeningQuestionGroups } from '../components/MarkBank/SessionScreen';
+import { listeningQuestionGroups } from '../components/MarkBank/SessionScreen';
 import { sessionExerciseCount } from '../components/MarkBank/sessionPlanning';
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { tariffReconciles } from '../types/markBank';
@@ -16,16 +16,16 @@ type Card = { id: string; atlasQuestionId?: string; totalMarks: number; topicId:
 const cards = ORDINARY.filter(c => c.year === 2025 && c.paperFileid === 'LC001GLP100IV');
 const legacy = (authored.cards as unknown as (Card & { year: number; level: string; paper: number })[])
   .filter(c => c.year === 2025 && c.level === 'ordinary' && c.paper === 1);
-const all = [...legacy, ...(added.cards as unknown as Card[])];
+const all = legacy;
 const get = (n: string) => all.find(c => c.atlasQuestionId === n)!;
 const AUDIO = 'https://www.examinations.ie/archive/exampapers/2025/LC001ZLP017IV.mp3';
 
-describe('2025 Ordinary Paper 1 source reconciliation (15 retained + 30 selections)', () => {
+describe('2025 Ordinary Paper 1 source reconciliation (15 retained cards)', () => {
   it('marks all 20 printed listening questions at 3 marks inside the six retained segment cards', () => {
-    expect(cards).toHaveLength(45);
+    expect(cards).toHaveLength(15);
     for (const card of cards) expect(tariffReconciles(card), card.id).toBe(true);
-    expect(legacy.map(c => c.id).sort()).toEqual([...added.review.legacyCardIds].sort());
-    const segments = added.review.listeningSegmentCardIds.map(id => legacy.find(c => c.id === id)!);
+    expect(legacy.map(c => c.id).sort()).toEqual([...review.cardIds].sort());
+    const segments = review.listeningSegmentCardIds.map(id => legacy.find(c => c.id === id)!);
     expect(segments.map(c => [c.atlasQuestionId, c.totalMarks, c.criteria.length])).toEqual([
       ['L-A-F1', 12, 4], ['L-A-F2', 12, 4], ['L-B-C1', 12, 4], ['L-B-C2', 12, 4], ['L-C-P1', 6, 2], ['L-C-P2', 6, 2]]);
     expect(segments.flatMap(c => c.criteria).every(r => r.maxMarks === 3)).toBe(true);
@@ -46,7 +46,7 @@ describe('2025 Ordinary Paper 1 source reconciliation (15 retained + 30 selectio
   });
 
   it('lifts the 2025 composition scheme and keeps the full 0–40 language scale', () => {
-    const titles = added.review.compositionRouteCardIds.map(id => legacy.find(c => c.id === id)!);
+    const titles = review.compositionRouteCardIds.map(id => legacy.find(c => c.id === id)!);
     expect(titles.map(c => c.atlasQuestionId)).toEqual(['W-A-i', 'W-A-ii', 'W-A-iii', 'W-B-i', 'W-B-ii', 'W-C-i', 'W-C-ii', 'W-D-i', 'W-D-ii']);
     for (const c of titles) {
       expect(c.criteria.map(r => [r.id, r.maxMarks])).toEqual([['tasc', 2], ['abhar', 8], ['gaeilge', 40]]);
@@ -59,22 +59,16 @@ describe('2025 Ordinary Paper 1 source reconciliation (15 retained + 30 selectio
     expect(get('W-B-i').questionText).toContain('An rogha don chárta seo: B(i).');
   });
 
-  it('expands the choose-two mechanically into all 30 two-section selections', () => {
-    expect(added.cards).toHaveLength(30);
-    const byId = new Map(all.map(c => [c.id, c]));
-    for (const pair of added.cards) {
-      expect(pair.totalMarks).toBe(100);
-      const members = pair.memberCardIds.map(id => byId.get(id)!);
-      expect(members).toHaveLength(2);
-      expect(members[0].atlasQuestionId!.split('-')[1]).not.toBe(members[1].atlasQuestionId!.split('-')[1]);
+  it('publishes each title once and carries the choose-two instruction, with no combination cards', () => {
+    expect(cards.filter(c => / \+ /.test(c.questionRef))).toEqual([]);
+    for (const id of review.compositionRouteCardIds) {
+      const card = legacy.find(c => c.id === id)! as Card & { taskRequirements: string[] };
+      expect(card.taskRequirements[0]).toBe('Freagair do rogha dhá cheann de A, B, C, D anseo.');
+      expect(card.totalMarks).toBe(50);
     }
-    expect(added.cards.map(c => c.atlasQuestionId)).toContain('W-A-iii-D-ii');
-    const pair = cards.find(c => c.id === 'irish-2025-ol-p1-composition-b-i-c-ii')!;
-    if (pair.rubric.system !== 'irish') throw new Error('Wrong rubric');
-    expect(irishMarks(pair, Object.fromEntries(pair.rubric.criteria.map(c => [irishScoreId(c.id), c.maxMarks])))).toBe(100);
   });
 
-  it('joins all 45 cards to Atlas with pages, audio and writing-form topics', () => {
+  it('joins all 15 cards to Atlas with pages, audio and writing-form topics', () => {
     const map = JSON.parse(readFileSync('public/paper-answers/2025/LC001GLP100IV.pdf.json', 'utf8'));
     const q = (n: string) => map.q.find((q: { n: string }) => q.n === n);
     expect(map.schemeFileid).toBe('LC001GLP000IV.pdf');
@@ -87,8 +81,8 @@ describe('2025 Ordinary Paper 1 source reconciliation (15 retained + 30 selectio
     }
     for (const n of ['1', '2', '3', '4']) expect(q(n), n).toBeDefined();
     expect(q('L-B-C2').audioMaterial.playbackUrl).toBe(AUDIO);
-    expect(examTopicIdsForQuestion('irish', 'ordinary', 2025, 'main', 'W-A-i-D-ii', 'p1', 'iv', 'LC001GLP100IV.pdf').sort())
-      .toEqual(['irish-ordinary-write-a-blogcreative-writing-task', 'irish-ordinary-write-a-conversation']);
+    expect(examTopicIdsForQuestion('irish', 'ordinary', 2025, 'main', 'W-D-ii', 'p1', 'iv', 'LC001GLP100IV.pdf'))
+      .toEqual(['irish-ordinary-write-a-conversation']);
   });
 
   it('rejects unknown and stale raw selection directives', () => {
@@ -115,8 +109,8 @@ print('source guard passed')
   });
 
   it('records the visual sweep and reconciles the component without claiming archive completion', () => {
-    expect(added.review.reviewedPaperPages).toEqual(Array.from({ length: 16 }, (_, i) => i + 1));
-    expect(added.review.examStructure).toEqual({ listening: 60, composition: 100, total: 160 });
+    expect(review.reviewedPaperPages).toEqual(Array.from({ length: 16 }, (_, i) => i + 1));
+    expect(review.examStructure).toEqual({ listening: 60, composition: 100, total: 160 });
     const row = inventory.papers.find(p => p.key === '2025|ordinary|LC001GLP100IV.pdf')!;
     expect(row.markBankCardIds.slice().sort()).toEqual(cards.map(c => c.id).sort());
     expect(row).toMatchObject({ fullVisualReview: 'complete', bankAtlasTaskParity: 'complete', partAndSelectionReconciliation: 'complete' });

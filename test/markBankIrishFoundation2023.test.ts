@@ -13,31 +13,19 @@ const cards=ALL_CARDS.filter(c=>c.year===2023);
 const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
 
 describe('2023 Foundation source reconciliation',()=>{
-  it('retains the reviewed published boundaries and expands both closed choose-two pools',()=>{
-    expect(cards).toHaveLength(70);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(70);
-    for(const card of cards) expect(tariffReconciles(card),card.id).toBe(true);
+  it('retains the reviewed published boundaries and carries each printed choice on its options',()=>{
+    expect(cards).toHaveLength(58);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(58);
+    cards.forEach(c=>expect(tariffReconciles(c),c.id).toBe(true));
     expect(authored.review.atomicPracticeCardIds).toHaveLength(58);
-    expect(authored.review.pairedRouteCardIds).toHaveLength(12);
-    for(const n of [2,3]) {
-      const routes=authored.cards.filter(c=>new RegExp(`^R-${n}-[ABC]{2}$`).test(c.atlasQuestionId));
-      expect(routes.map(c=>c.atlasQuestionId)).toEqual(['AB','AC','BC'].map(p=>`R-${n}-${p}`));
-      for(const c of routes) {
-        expect(c.totalMarks).toBe(n===2?50:60);
-        expect(c.criteria).toHaveLength(10);
-        expect(c.sourceMaterial.pages).toHaveLength(2);
-        expect(c.questionText).toContain('Freagair do rogha dhá cheann');
-      }
+    // Choice is not a route: no reading pairs and no writing combinations.
+    expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
+    expect(authored.cards.filter(c=>'memberCardIds' in c)).toEqual([]);
+    for(const n of [2,3]) for(const c of authored.cards.filter(c=>new RegExp(`^R-${n}[ABC]-\\d$`).test(c.atlasQuestionId))) {
+      expect(c.taskRequirements[0],c.id).toBe(`Ceist ${n} Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.`);
     }
-    const pairs=authored.cards.filter(c=>/^W-[45][AB]-[45][AB]$/.test(c.atlasQuestionId));
-    expect(pairs.map(c=>c.atlasQuestionId)).toEqual(['W-4A-4B','W-4A-5A','W-4A-5B','W-4B-5A','W-4B-5B','W-5A-5B']);
-    for(const c of pairs) {
-      expect(c.totalMarks).toBe(90);
-      expect(c.sourceMaterial.pages).toHaveLength(2);
-      expect(c.criteria.filter(r=>r.id.endsWith('-gaeilge'))).toHaveLength(2);
-    }
+    for(const c of authored.cards.filter(c=>/^W-[45]/.test(c.atlasQuestionId))) expect(c.taskRequirements[0],c.id).toBe("Freagair dhá cheist ar bith as na ceithre cinn seo a leanas: 4 (a), 4 (b), 5 (a) nó 5 (b).");
   });
-
   it('keeps both SEC-accepted listening alternatives inside their original tasks',()=>{
     const listening=cards.filter(c=>Boolean(c.audioMaterial)) as Parameters<typeof combinedListeningAssessment>[0];
     expect(listening).toHaveLength(14);
@@ -84,10 +72,13 @@ describe('2023 Foundation source reconciliation',()=>{
     expect(letter.criteria.every(c=>c.kind==='award')).toBe(true);
     expect(letter.questionText.match(/dhá phointe eolais/g)).toHaveLength(4);
     expect(letter.questionText).toContain('post páirtaimseartha agat in óstán');
-    const pair=cards.find(c=>c.id==='irish-2023-fl-w-4b-5a')!;
-    expect(cardsForTopic('irish-2-8',cards)).toContain(pair);
-    expect(cardsForTopic('irish-9-3',cards)).toContain(pair);
-    expect(cardsForTopic('irish-9-4',cards)).toContain(pair);
+    // Choice is not a route: letter and story are separate cards with their own topics.
+    const letterCard=cards.find(c=>c.id==='irish-2023-fl-w-4b')!;
+    const story=cards.find(c=>c.id==='irish-2023-fl-w-5a')!;
+    expect(cards.some(c=>c.id==='irish-2023-fl-w-4b-5a')).toBe(false);
+    expect(cardsForTopic('irish-2-8',cards)).toContain(letterCard);
+    expect(cardsForTopic('irish-9-3',cards)).toContain(letterCard);
+    expect(cardsForTopic('irish-9-4',cards)).toContain(story);
     expect(get('W-4A').criteria.map(c=>c.maxMarks)).toEqual([1,10,13,5,5,11]);
     expect(get('W-4A').criteria.find(c=>c.id==='pictiur3')!.guidance.join(' ')).toContain('Ryan Tubridy');
     expect(get('W-4A').criteria.find(c=>c.id==='pictiur4')!.guidance.join(' ')).toContain('Trócaire');
@@ -97,15 +88,15 @@ describe('2023 Foundation source reconciliation',()=>{
       expect(c.criteria.find(r=>r.id==='length')).toMatchObject({kind:'deduction',maxMarks:4,deductFrom:'cumarsaid'});
       expect(c.criteria.find(r=>r.id==='cumarsaid')!.guidance.join(' ')).toContain('34, 30, 26, 22, 18 nó 14');
     }
-    if(pair.rubric.system!=='irish') throw new Error('Wrong rubric');
-    const scores=Object.fromEntries(pair.rubric.criteria.map(c=>[irishScoreId(c.id),c.kind==='award'?c.maxMarks:0]));
-    expect(irishMarks(pair,scores)).toBe(90);
-    scores['irish:w-5a-cumarsaid']=0;
-    scores['irish:w-5a-length']=4;
-    expect(irishMarks(pair,scores)).toBe(56);
+    if(story.rubric.system!=='irish') throw new Error('Wrong rubric');
+    const scores=Object.fromEntries(story.rubric.criteria.map(c=>[irishScoreId(c.id),c.kind==='award'?c.maxMarks:0]));
+    expect(irishMarks(story,scores)).toBe(45);
+    scores['irish:cumarsaid']=0;
+    scores['irish:length']=4;
+    expect(irishMarks(story,scores)).toBe(11); // the length deduction cannot take communication below zero
   });
 
-  it('joins all 70 cards to Atlas with complete source and scheme pages and correct year-specific topics',()=>{
+  it('joins all 58 cards to Atlas with complete source and scheme pages and correct year-specific topics',()=>{
     const map=JSON.parse(readFileSync('public/paper-answers/2023/LC001BLP000IV.pdf.json','utf8'));
     const topics=(n:string)=>examTopicIdsForQuestion('irish','foundation',2023,'main',n,'single','iv','LC001BLP000IV.pdf');
     for(const c of authored.cards) {

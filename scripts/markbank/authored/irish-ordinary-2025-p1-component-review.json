@@ -1,0 +1,191 @@
+{
+  "year": 2025,
+  "level": "ordinary",
+  "paperFileid": "LC001GLP100IV.pdf",
+  "schemeFileid": "LC001GLP000IV.pdf",
+  "paperSha256": "f0a9c0dfe1ee9fd67ecef6274050bfffca0114f7c634bb69a4a35e7db03bf212",
+  "schemeSha256": "709a6ffc8a0c6c700ff4132993a2058363ac028f0dca21ae23eef0fa26f95831",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    30,
+    31
+  ],
+  "schemeScope": "Combined Ordinary scheme. PDF 1–2 cover and note; 3 listening tariffs; 4–6 transcript (never shown to students); 7–9 listening answers; 10–13 composition marking, symbols, 40-mark table and short-attempt columns; 30–31 modified marking (SMM, incl. the composition 40-mark table). PDF 14–29 are Paper 2; 32–36 blank.",
+  "reviewDate": "2026-10-11",
+  "status": "reviewed",
+  "fullPaperAndApplicableSchemeVisualSweep": true,
+  "selectionDecisions": [
+    {
+      "page": 2,
+      "raw": "Scríobh do chuid freagraí le peann gorm nó le peann dubh. Ní ceadmhach peann luaidhe a úsáid.",
+      "decision": "Pen colour instruction, not an answer route."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair gach cuid – A, B, C – sa fhreagarleabhar seo.",
+      "decision": "Required answers; no finite task menu."
+    },
+    {
+      "page": 3,
+      "raw": "Caithfidh do chuid freagraí uile sa triail seo a bheith i nGaeilge, ach amháin nuair nach gá sin.",
+      "decision": "Required answers; no finite task menu."
+    },
+    {
+      "page": 5,
+      "raw": "2. Scríobh síos áit amháin ina bhfuil na meaisíní speisialta ar fáil chun buidéil phlaisteacha",
+      "decision": "One required answer; siopaí and ollmhargaí are both accepted answers to one task."
+    },
+    {
+      "page": 6,
+      "raw": "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t‐ábhar",
+      "decision": "Instruction to keep the chosen title connected; selection classified on page 7."
+    },
+    {
+      "page": 7,
+      "raw": "Freagair do rogha dhá cheann de A, B, C, D anseo.",
+      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark title cards, each marked on its own 50. Choice is not a route: no two-section combination cards; the instruction is in each title card’s task requirements."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh giota leanúnach nó blag (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo.",
+      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark title cards, each marked on its own 50. Choice is not a route: no two-section combination cards; the instruction is in each title card’s task requirements. Required form wording inside one composition (giota leanúnach nó blag; litir/ríomhphost; dó/di; cara or tuismitheoirí); not a separate route."
+    },
+    {
+      "page": 7,
+      "raw": "Ceap scéal (leathleathanach nó mar sin) a mbeadh ceann amháin de na sleachta seo a leanas",
+      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark title cards, each marked on its own 50. Choice is not a route: no two-section combination cards; the instruction is in each title card’s task requirements."
+    },
+    {
+      "page": 7,
+      "raw": "nó",
+      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark title cards, each marked on its own 50. Choice is not a route: no two-section combination cards; the instruction is in each title card’s task requirements."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh an litir/an ríomhphost (leathleathanach nó mar sin) a chuirfeá chuig cara leat",
+      "decision": "Required form wording inside one composition (giota leanúnach nó blag; litir/ríomhphost; dó/di; cara or tuismitheoirí); not a separate route."
+    },
+    {
+      "page": 7,
+      "raw": "ag insint dó/di faoi na himeachtaí a d’eagraigh Comhairle na nDaltaí agus faoin bpáirt",
+      "decision": "Required form wording inside one composition (giota leanúnach nó blag; litir/ríomhphost; dó/di; cara or tuismitheoirí); not a separate route."
+    },
+    {
+      "page": 7,
+      "raw": "ag insint dó/di faoin titim shneachta sin agus faoi mar a chaith tú féin agus do mhuintir",
+      "decision": "Required form wording inside one composition (giota leanúnach nó blag; litir/ríomhphost; dó/di; cara or tuismitheoirí); not a separate route."
+    },
+    {
+      "page": 7,
+      "raw": "do chara leat. Scríobh an comhrá (leathleathanach nó mar sin) a bheadh agat le do chara",
+      "decision": "Required form wording inside one composition (giota leanúnach nó blag; litir/ríomhphost; dó/di; cara or tuismitheoirí); not a separate route."
+    },
+    {
+      "page": 7,
+      "raw": "nó mar sin) a bheadh agat le do thuismitheoirí faoin ábhar sin.",
+      "decision": "Required form wording inside one composition (giota leanúnach nó blag; litir/ríomhphost; dó/di; cara or tuismitheoirí); not a separate route."
+    },
+    {
+      "page": 16,
+      "raw": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe Stáit",
+      "decision": "Copyright statement, not a task."
+    },
+    {
+      "page": 16,
+      "raw": "Cearta Gaolmhara, 2000. Ní údaraítear aon úsáid dá éis chun aon chríche ach amháin chun na críche dá bhfuil sé",
+      "decision": "Copyright statement, not a task."
+    }
+  ],
+  "cardIds": [
+    "irish-2025-ol-p1-listening-a-f1",
+    "irish-2025-ol-p1-listening-a-f2",
+    "irish-2025-ol-p1-listening-b-c1",
+    "irish-2025-ol-p1-listening-b-c2",
+    "irish-2025-ol-p1-listening-c-p1",
+    "irish-2025-ol-p1-listening-c-p2",
+    "irish-2025-ol-p1-composition-a-i",
+    "irish-2025-ol-p1-composition-a-ii",
+    "irish-2025-ol-p1-composition-a-iii",
+    "irish-2025-ol-p1-composition-b-i",
+    "irish-2025-ol-p1-composition-b-ii",
+    "irish-2025-ol-p1-composition-c-i",
+    "irish-2025-ol-p1-composition-c-ii",
+    "irish-2025-ol-p1-composition-d-i",
+    "irish-2025-ol-p1-composition-d-ii"
+  ],
+  "listeningSegmentCardIds": [
+    "irish-2025-ol-p1-listening-a-f1",
+    "irish-2025-ol-p1-listening-a-f2",
+    "irish-2025-ol-p1-listening-b-c1",
+    "irish-2025-ol-p1-listening-b-c2",
+    "irish-2025-ol-p1-listening-c-p1",
+    "irish-2025-ol-p1-listening-c-p2"
+  ],
+  "compositionRouteCardIds": [
+    "irish-2025-ol-p1-composition-a-i",
+    "irish-2025-ol-p1-composition-a-ii",
+    "irish-2025-ol-p1-composition-a-iii",
+    "irish-2025-ol-p1-composition-b-i",
+    "irish-2025-ol-p1-composition-b-ii",
+    "irish-2025-ol-p1-composition-c-i",
+    "irish-2025-ol-p1-composition-c-ii",
+    "irish-2025-ol-p1-composition-d-i",
+    "irish-2025-ol-p1-composition-d-ii"
+  ],
+  "printedListeningQuestions": 20,
+  "examStructure": {
+    "listening": 60,
+    "composition": 100,
+    "total": 160
+  },
+  "nonPoolDecisions": [
+    "Listening answers with alternatives (e.g. siopaí / ollmhargaí) are accepted answers to one task, not routes.",
+    "Card unit for listening: the six retained legacy segment cards keep their IDs and stay the card unit, because the Bank plays one recording section as one exercise; every printed question is a separate 3-mark criterion (20 questions, 60 marks). Separate question cards are not added: they would repeat the same prompts inside that exercise.",
+    "Composition: closed choose-two of four sections; each printed title is a 50-mark card (already carded, IDs retained). Choice is not a route: no two-section combination cards are published; the choose-two instruction is in each title card’s task requirements. Letter/email and conversation partner wording stay inside one response.",
+    "The modified marking scheme changes assessment for eligible candidates, not the printed tasks."
+  ],
+  "openIssues": [],
+  "audio": {
+    "url": "https://www.examinations.ie/archive/exampapers/2025/LC001ZLP017IV.mp3",
+    "verified": "2026-10-11",
+    "evidence": "scripts/markbank/authored/irish-listening-audio-verification.json",
+    "note": "One SEC recording serves the Higher and Ordinary 2025 listening test; Ordinary asks different questions on the same extracts. All 2025 listening cards already play it (commit ef1a7e550)."
+  },
+  "caveats": [
+    "Paper 1 = 160: listening 60 (Cuid A 24, B 24, C 12; every question 3 marks) and composition 100 (any two of A–D at 50: Tasc 2, Ábhar 8, Cumas Gaeilge 40).",
+    "Listening language: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge” (scheme PDF 3 and 9) is one section-level deduction; cards state it without applying it. Printed partial answers: RTÉ = 1, San ionad = 1, Nócha = 2, Sa chlub = 1, Léargas … = 1.",
+    "Composition 40-mark table (PDF 12) with short-attempt columns M/F1/F2/F3 (36/30/20/10, PDF 13); those columns include odd values, so the Cumas Gaeilge award takes any value 0–40.",
+    "Legacy corrections (IDs, totals and topics unchanged): each segment card had one undivided criterion; the nine composition cards carried short paraphrased notes and an even-only Cumas Gaeilge scale. All now carry the lifted 2025 scheme text and per-question tariffs."
+  ],
+  "boundaries": "6 retained listening segment cards carrying all 20 printed questions as separate 3-mark criteria (60); 9 retained composition titles at 50 (answer any two; no combination cards)."
+}

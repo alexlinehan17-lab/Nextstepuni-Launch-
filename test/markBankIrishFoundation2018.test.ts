@@ -12,35 +12,20 @@ const cards=ALL_CARDS.filter(c=>c.year===2018);
 const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
 
 describe('2018 Foundation independently reviewed boundaries',()=>{
-  it('requires one Q4 and one Q5 and expands all three internal form dates',()=>{
-    expect(cards).toHaveLength(74);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(74);
+  it('requires one Q4 and one Q5 and carries each printed choice on its options',()=>{
+    expect(cards).toHaveLength(60);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(60);
     cards.forEach(c=>expect(tariffReconciles(c),c.id).toBe(true));
     expect(authored.review.examStructure).toEqual({listening:120,matching:40,readingQ2:50,readingQ3:60,writingQ4:40,writingQ5:50,writing:90,total:360});
     expect(authored.review.atomicPracticeCardIds).toHaveLength(60);
-    expect(authored.review.pairedRouteCardIds).toHaveLength(14);
-    const routes=authored.cards.filter(c=>/^W-.*-5[AB]$/.test(c.atlasQuestionId));
-    expect(routes.map(c=>c.atlasQuestionId)).toEqual([
-      'W-4A-5A','W-4A-5B','W-4B-11-bealtaine-5A','W-4B-11-bealtaine-5B',
-      'W-4B-14-bealtaine-5A','W-4B-14-bealtaine-5B','W-4B-16-bealtaine-5A','W-4B-16-bealtaine-5B',
-    ]);
-    for(const c of routes) {
-      expect(c.totalMarks).toBe(90);
-      expect(c.questionText).toContain('FREAGAIR GACH CEIST (4 AGUS 5)');
-      expect(c.memberCardIds).toHaveLength(2);
-      expect(c.sourceMaterial.pages).toEqual([c.atlasQuestionId.includes('4A')?14:15,c.atlasQuestionId.endsWith('5A')?16:17]);
+    // Choice is not a route: no reading pairs and no writing combinations.
+    expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
+    expect(authored.cards.filter(c=>'memberCardIds' in c)).toEqual([]);
+    for(const n of [2,3]) for(const c of authored.cards.filter(c=>new RegExp(`^R-${n}[ABC]-\\d$`).test(c.atlasQuestionId))) {
+      expect(c.taskRequirements[0],c.id).toBe(`Ceist ${n} Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.`);
     }
-    for(const n of [2,3]) {
-      const pairs=authored.cards.filter(c=>new RegExp(`^R-${n}-[ABC]{2}$`).test(c.atlasQuestionId));
-      expect(pairs.map(c=>c.atlasQuestionId)).toEqual(['AB','AC','BC'].map(p=>`R-${n}-${p}`));
-      for(const c of pairs) {
-        expect(c.totalMarks).toBe(n===2?50:60);
-        expect(c.criteria).toHaveLength(10);
-        expect(c.sourceMaterial.pages).toHaveLength(2);
-      }
-    }
+    for(const c of authored.cards.filter(c=>/^W-[45]/.test(c.atlasQuestionId))) expect(c.taskRequirements[0],c.id).toBe("FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).");
   });
-
   it('keeps the fourteen listening answers, full map and complete official recording',()=>{
     const listening=cards.filter(c=>Boolean(c.audioMaterial)) as Parameters<typeof combinedListeningAssessment>[0];
     expect(listening).toHaveLength(14);
@@ -78,7 +63,7 @@ describe('2018 Foundation independently reviewed boundaries',()=>{
       '4 mharc: Chun drámaíocht a chur chun cinn; Chun Gaeilge a chur chun cinn; Drámaíocht na Gaeilge.',
       '2 mharc: Drámaíocht; Gaeilge.',
     ]);
-    for(const route of ['R-3-AB','R-3-BC']) expect(get(route).criteria.find(c=>c.id==='r-3b-2-answer')!.permittedMarks).toEqual([0,2,4,6]);
+    expect(get('R-3B-2').criteria[0].permittedMarks).toEqual([0,2,4,6]);
   });
 
   it('keeps the notice submarks and each whole form with one language award',()=>{
@@ -113,7 +98,7 @@ describe('2018 Foundation independently reviewed boundaries',()=>{
     expect(forms[0].criteria).toEqual(forms[2].criteria);
   });
 
-  it('confines paragraph and story length adjustments to their own awards in paired practice',()=>{
+  it('confines paragraph and story length adjustments to their own awards on separate cards',()=>{
     for(const key of ['W-5A','W-5B']) {
       const story=get(key);
       expect(story.totalMarks).toBe(50);
@@ -129,13 +114,14 @@ describe('2018 Foundation independently reviewed boundaries',()=>{
     expect(get('W-5B').schemePages).toEqual([14,15]);
     expect(get('W-5A').questionText).toContain('Turas Rothaíochta Faoin Tuath');
     expect(get('W-5B').questionText).toContain('CEOLCHOIRM');
-    const pair=cards.find(c=>c.id==='irish-2018-fl-w-4b-11-bealtaine-5b')!;
-    if(pair.rubric.system!=='irish') throw new Error('wrong rubric');
+    const form=cards.find(c=>c.id==='irish-2018-fl-w-4b-11-bealtaine')!;
+    const story=cards.find(c=>c.id==='irish-2018-fl-w-5b')!;
+    if(form.rubric.system!=='irish'||story.rubric.system!=='irish') throw new Error('wrong rubric');
+    // Choice is not a route: form and story are marked on their own cards.
     // Questions 21/30 -> 11/15; paragraph awarded12 reduced25% ->9;
     // language10 stays intact; 45-word story50 reduced50% ->25.
-    const scores={'irish:w-4b-11-bealtaine-fields':11,'irish:w-4b-11-bealtaine-paragraph':9,
-      'irish:w-4b-11-bealtaine-gaeilge':10,'irish:w-5b-freagra':25};
-    expect(irishMarks(pair,scores)).toBe(55);
+    expect(irishMarks(form,{'irish:fields':11,'irish:paragraph':9,'irish:gaeilge':10})).toBe(30);
+    expect(irishMarks(story,{'irish:freagra':25})).toBe(25);
   });
 
   it('joins every task and the restored whole sections to full Atlas paper/scheme regions',()=>{
