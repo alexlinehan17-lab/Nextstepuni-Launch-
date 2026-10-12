@@ -3,6 +3,7 @@ import { CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, CONSTRUCTION_2026_ORDINARY_REVIE
 import { CONSTRUCTION_2025_HIGHER_ADDED_IDS, CONSTRUCTION_2025_ORDINARY_ADDED_IDS } from './fixtures/construction2025Reviewed';
 import { CONSTRUCTION_2024_HIGHER_ADDED_IDS, CONSTRUCTION_2024_ORDINARY_ADDED_IDS } from './fixtures/construction2024Reviewed';
 import { CONSTRUCTION_2023_HIGHER_ADDED_IDS, CONSTRUCTION_2023_ORDINARY_ADDED_IDS } from './fixtures/construction2023Reviewed';
+import { CONSTRUCTION_REVIEWED_HIGHER_ADDED_IDS, CONSTRUCTION_REVIEWED_ORDINARY_ADDED_IDS } from './fixtures/constructionReviewedPapers';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -760,7 +761,7 @@ const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
 // Keep the original Construction count/hash frozen. Source-reviewed additions
 // have their own paper/tariff/route audit (scripts/markbank/authoring/
 // construction_*.py); never rebaseline missing IDs.
-const constructionAdditionIds = new Set([...CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2025_HIGHER_ADDED_IDS, ...CONSTRUCTION_2025_ORDINARY_ADDED_IDS, ...CONSTRUCTION_2024_HIGHER_ADDED_IDS, ...CONSTRUCTION_2024_ORDINARY_ADDED_IDS, ...CONSTRUCTION_2023_HIGHER_ADDED_IDS, ...CONSTRUCTION_2023_ORDINARY_ADDED_IDS]);
+const constructionAdditionIds = new Set([...CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2025_HIGHER_ADDED_IDS, ...CONSTRUCTION_2025_ORDINARY_ADDED_IDS, ...CONSTRUCTION_2024_HIGHER_ADDED_IDS, ...CONSTRUCTION_2024_ORDINARY_ADDED_IDS, ...CONSTRUCTION_2023_HIGHER_ADDED_IDS, ...CONSTRUCTION_2023_ORDINARY_ADDED_IDS, ...CONSTRUCTION_REVIEWED_HIGHER_ADDED_IDS, ...CONSTRUCTION_REVIEWED_ORDINARY_ADDED_IDS]);
 // Pre-audit Construction cards consolidated into a surviving card ("choice is not a route",
 // 2026-10-12) keep their identity through an explicit progress alias, so the frozen set still
 // counts them; never rebaseline the frozen count or hash.

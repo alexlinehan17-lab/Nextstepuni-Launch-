@@ -2021,5 +2021,229 @@
     "alt": "SEC 2023 Ordinary marking scheme notes on why owners would create an entrance accessible to all, with a sketch of a ramped entrance.",
     "attribution": "SEC Leaving Certificate Construction Studies 2023 Ordinary Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2022-HL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q1-original.png",
+    "md5": "43e0391ffb955187cf618101a0bdb3ee",
+    "alt": "Original SEC 2022 Higher Construction Studies Question 1: the printed question with a sketch of a flat-roofed dining area projecting from the rear wall of a house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-HL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q2-original.png",
+    "md5": "15ceea78980d1d78aa45453b9295d341",
+    "alt": "Original SEC 2022 Higher Construction Studies Question 2: the printed question with the ground-floor plan of an open-plan kitchen/dining space.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-HL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q3-original.png",
+    "md5": "2d7f8661db43b5aad93d58cd8b1691a9",
+    "alt": "Original SEC 2022 Higher Construction Studies Question 3: the printed question with the elevation and ground-floor plan of a terraced former shop and its rear garden, wall A-A marked.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-HL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q4-original.png",
+    "md5": "f23188e46e95569383ab9771d7d36db9",
+    "alt": "Original SEC 2022 Higher Construction Studies Question 4: the printed question with a sketch of a digger excavating on a site.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-HL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q5-original.png",
+    "md5": "3fdbe377c344294f1934959b56946cfc",
+    "alt": "Original SEC 2022 Higher Construction Studies Question 5: the printed question with a sketch of the externally insulated solid block wall and all the construction and thermal data.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-HL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q6-original.png",
+    "md5": "18933f5fa42e29d2c379ff739db612a5",
+    "alt": "Original SEC 2022 Higher Construction Studies Question 6: the printed question with the elevation and ground-floor plan of a timber-frame house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-HL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q7-original.png",
+    "md5": "5e10bf6875ae373ac21325354f1c5934",
+    "alt": "Original SEC 2022 Higher Construction Studies Question 7: the printed question with a sketch of a cut-string wooden stairs and landing.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-HL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q8-original.png",
+    "md5": "416f9a452429e8ae38231bd3c3afd9e7",
+    "alt": "Original SEC 2022 Higher Construction Studies Question 8: the printed question with a sketch of solar collectors on a roof.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-HL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q9-original.png",
+    "md5": "45b46e1655c03a273f2328a0b4c73838",
+    "alt": "Original SEC 2022 Higher Construction Studies Question 9: the printed question with an outline section through a timber-frame wall and truss roof, three locations circled.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-HL-q10-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q10-original.png",
+    "md5": "5fec70dc8ea7fd744d6e54c98171b2b7",
+    "alt": "Original SEC 2022 Higher Construction Studies Question 10: the printed question with a sketch of a proposed Passive House in a rural setting.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-HL-q10-alt-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q10-alt-original.png",
+    "md5": "2df68d282737770a3c940a34fbe0d669",
+    "alt": "Original SEC 2022 Higher Construction Studies alternative Question 10: the printed SEAI quotation on replacing boilers with air source heat pumps and its two parts.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2022-HL-q1-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q1-section.png",
+    "md5": "1a7f6df9fd4c33fb2ab2509bbd226835",
+    "alt": "SEC model vertical section through the external wall, flat roof and abutment with the rear wall, with the detail lists for each area (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q1-thermal-bridge": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q1-thermal-bridge.png",
+    "md5": "e388a1cc30701614db01a1eee24109e4",
+    "alt": "SEC model detail of the flat-roof abutment with an arrow to the insulated block, labelled “(b) Insulated block”.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q2-entrance": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q2-entrance.png",
+    "md5": "b08ce0a4a9cbe994773b1ad4c5cb53cc",
+    "alt": "SEC 2022 Higher marking scheme notes on lifetime-use entrance access, with sketches of a wide entrance door and a canopy.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q2-corridor": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q2-corridor.png",
+    "md5": "39cce0277bf5908493f093747fa94f82",
+    "alt": "SEC 2022 Higher marking scheme notes on lifetime-use internal corridors, with a sketch of corridor and door widths.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q2-guidelines": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q2-guidelines.png",
+    "md5": "89ca8f8355b3d3d8026036b9808908e3",
+    "alt": "SEC 2022 Higher marking scheme notes on lifetime-use entrance access and internal corridors, with sketches.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q2-areas": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q2-areas.png",
+    "md5": "d7effec706dc6baad7c7a6dfaa9d8928",
+    "alt": "SEC model kitchen and dining layout for a wheelchair user with turning circles and clear spaces, and the kitchen and dining notes with sketches (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q3-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q3-layout.png",
+    "md5": "b4131a80efeae05f2fc8afd4c1675b9e",
+    "alt": "SEC model layouts of the rear extension with an internal courtyard, with notes on the courtyard, the separate living space and daylight.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q3-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q3-reasons.png",
+    "md5": "c1e32d9d9d9a24a89148a4a6078dc8ff",
+    "alt": "SEC 2022 Higher marking scheme reasons for the proposed layout, with a model plan of the extension and courtyard.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q4-requirements": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q4-requirements.png",
+    "md5": "dccf6f742012feddc99c945ec5b18c80",
+    "alt": "SEC 2022 Higher marking scheme notes on the functional requirements of a foundation, with a sketch of loads on a house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q4-foundations": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q4-foundations.png",
+    "md5": "e2d8326a383ee29191ce4fd7325359e8",
+    "alt": "SEC model strip foundation and passive insulated raft foundation, each with its notes and dimensions (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q5-calculation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q5-calculation.png",
+    "md5": "d7ed6d65941fb523f6c1e0c08237aa9b",
+    "alt": "SEC worked solution: the U-value table giving a total resistance of 5.229 and U = 0.191 W/m²°C, and the annual heat-loss cost of €100.02 by two methods.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q5-insulation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q5-insulation.png",
+    "md5": "e7928dd1405626ad11a359c474e44ea0",
+    "alt": "SEC worked solution for the additional insulation: required resistance 8.333, difference 3.104, giving 96 mm.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q6-low-impact": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q6-low-impact.png",
+    "md5": "aabfc099ed26cca0c7b0b9cdd963f186",
+    "alt": "SEC 2022 Higher marking scheme notes on low-environmental-impact features, with sketches of timber framing, charred cladding and the plan.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q6-wellbeing": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q6-wellbeing.png",
+    "md5": "9387f0f5fcac946546183beb499cab6b",
+    "alt": "SEC 2022 Higher marking scheme notes and sketches for all three Question 6(b) items: internal air quality, thermal environment and social interaction (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q6-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q6-scheme.png",
+    "md5": "50ccb4b652151e608319d3e6d74e7b91",
+    "alt": "SEC marking-scheme notes and sketches for Question 6(a) and (b): low-impact features, internal air quality, thermal environment and social interaction (three pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q7-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q7-section.png",
+    "md5": "b49f853f1f41e6828dc0bad76fe8b4b8",
+    "alt": "SEC model section through the cut-string stairs and landing with the 100 mm sphere and 900 mm handrail height marked, the detail lists and the two safety details.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q8-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q8-system.png",
+    "md5": "cae0c6b75811d2d36100f9bb66f1f1b2",
+    "alt": "SEC model single-line diagram of a solar collector connected to a twin-coil cylinder with pump, controls and expansion vessel, the pipe sizes and how the system works.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q9-locations": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q9-locations.png",
+    "md5": "ca8680ae740def02e292b93508751d46",
+    "alt": "SEC model airtightness details for all three circled locations: the window head, wallplate level and a ceiling light fitting (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q9-test": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q9-test.png",
+    "md5": "40127f4e2c5eff95bedaa2be9b761b2e",
+    "alt": "SEC 2022 Higher marking scheme notes on the blower door test, with sketches of the fan fitted in a doorway.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q10-orientation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q10-orientation.png",
+    "md5": "05aca16b465a3883c03d0fefb627bf1f",
+    "alt": "SEC model sketches of the preferred orientation with the summer and winter sun paths, and the notes on thermal performance.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2022-HL-q10-thermal-mass": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-HL-q10-thermal-mass.png",
+    "md5": "69db84f47566f7acdc8045d8c0c6223d",
+    "alt": "SEC 2022 Higher marking scheme notes on thermal mass with sketches of solar gain stored and released, a concrete floor and suitable materials.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    "solution": true
   }
 }
