@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "passed on 2026-10-12 after 2019 OL Paper 2 (all reviewed papers to date)",
+  "productionBuild": "passed on 2026-10-12 after 2017 OL Paper 2 (all reviewed papers to date)",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -1431,5 +1431,59 @@
     "schemeRowFigures": "24 of 41 parts carry the scheme-row crop (stacked fractions, mangled bold maths, and the image-only Q3(a)(ii) diagram, Q4(a) construction, Q5(a) Empirical Rule figure and Q9(b)(i) chart). All 24 crops opened and checked.",
     "coverageBaseline": "1746/3474 asks covered, 2 orphans (shared-reader faults from 2017 HL, unchanged), 0 excluded, 1728 open",
     "validation": "Deck generation (2,157 built, 0 dropped), Atlas generation and --check (530 placements), audit --check-reviewed, scheme quote check of all 41 cards, generator re-run rebuilds all 41 cards identically, ten regression files (386/386), typecheck and diff whitespace check passed."
+  },
+  "browserBatch7": {
+    "cards": [
+      "maths-2018-hl-p1-q8-c",
+      "maths-2018-hl-p2-q8-b-ii",
+      "maths-2018-ol-p1-q4-b",
+      "maths-2018-ol-p2-q1-a-i",
+      "maths-2017-hl-p1-q3-a",
+      "maths-2017-hl-p2-q8-b-i",
+      "maths-2017-ol-p1-q7-c-i",
+      "maths-2017-ol-p2-q4-b-ii"
+    ],
+    "engine": "Chrome via Playwright, local Vite on port 5701 with the worktree's PDF mirror (2018 and 2017 paper and scheme links added locally, uncommitted)",
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "questionPagesRender": true,
+    "twoPageSource": "maths-2018-hl-p2-q8-b-ii and maths-2017-ol-p2-q4-b-ii render both PDF pages with ink on both viewports; a first capture taken before rendering settled showed a blank page, a re-check after 2 s showed both pages",
+    "schemeHiddenBeforeReveal": true,
+    "schemeRowCropHiddenBeforeReveal": true,
+    "schemeRowCropLoadedAfterReveal": {
+      "desktopWidthPx": [
+        582,
+        582,
+        508,
+        582
+      ],
+      "mobileWidthPx": 320,
+      "cards": [
+        "maths-2018-hl-p1-q8-c",
+        "maths-2018-ol-p2-q1-a-i",
+        "maths-2017-hl-p2-q8-b-i",
+        "maths-2017-ol-p2-q4-b-ii"
+      ]
+    },
+    "exclusiveScaleAwards": {
+      "hl10C_2018p1": 8,
+      "hl10D_2018p2_combined": 5,
+      "ol5C_2018p1": 4,
+      "ol5C_2018p2": 2,
+      "hl20D_2017p1": 14,
+      "hl15C_2017p2": 9,
+      "ol10C_2017p1": 4,
+      "ol10D_2017p2": 5
+    },
+    "schemeReaderRenders": true,
+    "pageErrors": []
   }
 }
