@@ -14,6 +14,7 @@ import json
 import re
 from pathlib import Path
 import fitz
+from irish_choice import withdraw_combinations
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001BLP000IV'
@@ -283,7 +284,7 @@ def build():
         boundaries='14 listening parts; 10 matching parts; 30 reading parts; 6 whole writing routes; 6 paired reading routes; 12 paired writing routes.',
         caveats=['Foundation 2025 only. Other years remain pending.',
                  'Form length scheme names maximum −3 but its explicit table only prints 0 and −1; no extra word thresholds have been invented.'])
-    return dict(review=review,cards=cards),scheme
+    return withdraw_combinations(dict(review=review,cards=cards)),scheme
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)

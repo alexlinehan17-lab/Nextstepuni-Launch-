@@ -13,6 +13,7 @@ import itertools
 import json
 import re
 from pathlib import Path
+from irish_choice import withdraw_combinations
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001BLP100IV'
@@ -487,7 +488,7 @@ def build():
             nonPoolDecisions=source_review['nonPoolDecisions'],openIssues=[],caveats=source_review['sourceFindings'],
             boundaries='22 individually marked listening parts.' if is_aural else '10matching+30reading+8wholewriting routes;6readingpairs and16fullwritingproducts.',
             **({'audio':source_review['audio']} if is_aural else {}))
-        outputs['foundation-2011-aural-authored.json' if is_aural else 'foundation-2011-authored.json']=dict(review=review,cards=subset)
+        outputs['foundation-2011-aural-authored.json' if is_aural else 'foundation-2011-authored.json']=withdraw_combinations(dict(review=review,cards=subset))
     return outputs,scheme
 
 def main():

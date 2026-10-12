@@ -12,26 +12,19 @@ const cards=ALL_CARDS.filter(c=>c.year===2021);
 const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
 
 describe('2021 Foundation independently reviewed boundaries',()=>{
-  it('keeps the adjusted one-response writing rule and every reading pair',()=>{
-    expect(cards).toHaveLength(65);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(65);
+  it('keeps the adjusted one-response writing rule and carries each printed choice on its options',()=>{
+    expect(cards).toHaveLength(59);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(59);
     cards.forEach(c=>expect(tariffReconciles(c),c.id).toBe(true));
     expect(authored.review.examStructure).toEqual({listening:120,matching:40,readingQ2:50,readingQ3:60,writing:45,total:315});
     expect(authored.review.atomicPracticeCardIds).toHaveLength(59);
-    expect(authored.review.pairedRouteCardIds).toHaveLength(6);
-    expect(authored.cards.filter(c=>c.section==='3')).toHaveLength(5);
-    expect(authored.cards.filter(c=>/^W-[45][AB]-[45][AB]/.test(c.atlasQuestionId))).toEqual([]);
-    for(const n of [2,3]) {
-      const routes=authored.cards.filter(c=>new RegExp(`^R-${n}-[ABC]{2}$`).test(c.atlasQuestionId));
-      expect(routes.map(c=>c.atlasQuestionId)).toEqual(['AB','AC','BC'].map(p=>`R-${n}-${p}`));
-      for(const c of routes) {
-        expect(c.totalMarks).toBe(n===2?50:60);
-        expect(c.criteria).toHaveLength(10);
-        expect(c.sourceMaterial.pages).toHaveLength(2);
-      }
+    // Choice is not a route: no reading pairs and no writing combinations.
+    expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
+    expect(authored.cards.filter(c=>'memberCardIds' in c)).toEqual([]);
+    for(const n of [2,3]) for(const c of authored.cards.filter(c=>new RegExp(`^R-${n}[ABC]-\\d$`).test(c.atlasQuestionId))) {
+      expect(c.taskRequirements[0],c.id).toBe(`Ceist ${n} Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.`);
     }
   });
-
   it('keeps the fourteen exact listening awards with all original source pages',()=>{
     const listening=cards.filter(c=>Boolean(c.audioMaterial)) as Parameters<typeof combinedListeningAssessment>[0];
     expect(listening).toHaveLength(14);
@@ -67,7 +60,7 @@ describe('2021 Foundation independently reviewed boundaries',()=>{
     }
   });
 
-  it('retains every partial-credit answer in atomic tasks and all applicable reading pairs',()=>{
+  it('retains every partial-credit answer in the atomic part cards',()=>{
     expect(get('R-3A-4').criteria[0].guidance).toEqual([
       'Bhris sé méara a lámh de bharr timpiste',
       '6 mharc: Bhris sé méara a lámh; Bhí mí-ádh air de bharr timpiste a tharla dó; Timpiste.',
@@ -82,8 +75,9 @@ describe('2021 Foundation independently reviewed boundaries',()=>{
       const card=cards.find(c=>c.id===`irish-2021-fl-${id}`)!;
       for(const score of scores) expect(irishMarks(card,{'irish:answer':score})).toBe(score);
     }
-    for(const route of ['R-3-AB','R-3-AC']) expect(get(route).criteria.find(c=>c.id==='r-3a-4-answer')!.permittedMarks).toEqual([0,3,4,6]);
-    for(const route of ['R-3-AC','R-3-BC']) expect(get(route).criteria.find(c=>c.id==='r-3c-5-answer')!.permittedMarks).toEqual([0,4,6]);
+    expect(get('R-3A-4').criteria[0].permittedMarks).toEqual([0,3,4,6]);
+    expect(get('R-3C-5').criteria[0].permittedMarks).toEqual([0,4,6]);
+    expect(authored.cards.some(c=>/^R-[23]-[ABC]{2}$/.test(c.atlasQuestionId))).toBe(false);
     expect(get('R-3B-5').criteria[0].guidance.join(' ')).toContain('Clárú = 6 mharc');
   });
 

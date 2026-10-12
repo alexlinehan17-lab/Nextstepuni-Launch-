@@ -12,35 +12,20 @@ const cards=ALL_CARDS.filter(c=>c.year===2012);
 const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
 
 describe('2012 Foundation independently reviewed boundaries',()=>{
-  it('requires one Q4 and one Q5, mechanically expanding the eight writing products and six reading pairs',()=>{
-    expect(cards).toHaveLength(74);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(74);
+  it('requires one Q4 and one Q5 and carries each printed choice on its options',()=>{
+    expect(cards).toHaveLength(60);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(60);
     cards.forEach(c=>expect(tariffReconciles(c),c.id).toBe(true));
     expect(authored.review.examStructure).toEqual({listening:120,matching:40,readingQ2:50,readingQ3:60,writingQ4:40,writingQ5:50,writing:90,total:360});
     expect(authored.review.atomicPracticeCardIds).toHaveLength(60);
-    expect(authored.review.pairedRouteCardIds).toHaveLength(14);
-    const writing=authored.cards.filter(c=>/^W-4[AB](?:-\d+-iuil)?-5[AB]$/.test(c.atlasQuestionId));
-    expect(writing.map(c=>c.atlasQuestionId)).toEqual(['W-4A-5A','W-4A-5B',...['19','21','24'].flatMap(day=>['A','B'].map(end=>`W-4B-${day}-iuil-5${end}`))]);
-    for(const c of writing) {
-      expect(c.totalMarks).toBe(90);
-      expect(c.questionText).toContain('FREAGAIR GACH CEIST (4 AGUS 5)');
-      expect(c.questionText).toContain('Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).');
-      expect(c.memberCardIds).toHaveLength(2);
-      expect(c.sourceMaterial.pages).toEqual([c.atlasQuestionId.includes('4A')?14:15,c.atlasQuestionId.endsWith('5A')?16:17]);
-      expect(c.criteria.find(r=>r.id.endsWith('-cumarsaid'))!.maxMarks).toBe(37);
-      expect(c.criteria.find(r=>/^w-5[ab]-gaeilge$/.test(r.id))!.maxMarks).toBe(13);
+    // Choice is not a route: no reading pairs and no writing combinations.
+    expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
+    expect(authored.cards.filter(c=>'memberCardIds' in c)).toEqual([]);
+    for(const n of [2,3]) for(const c of authored.cards.filter(c=>new RegExp(`^R-${n}[ABC]-\\d$`).test(c.atlasQuestionId))) {
+      expect(c.taskRequirements[0],c.id).toBe(`Ceist ${n} Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.`);
     }
-    for(const n of [2,3]) {
-      const routes=authored.cards.filter(c=>new RegExp(`^R-${n}-[ABC]{2}$`).test(c.atlasQuestionId));
-      expect(routes.map(c=>c.atlasQuestionId)).toEqual(['AB','AC','BC'].map(p=>`R-${n}-${p}`));
-      for(const c of routes) {
-        expect(c.totalMarks).toBe(n===2?50:60);
-        expect(c.criteria).toHaveLength(10);
-        expect(c.sourceMaterial.pages).toHaveLength(2);
-      }
-    }
+    for(const c of authored.cards.filter(c=>/^W-[45]/.test(c.atlasQuestionId))) expect(c.taskRequirements[0],c.id).toBe("FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).");
   });
-
   it('keeps all fourteen listening parts and the complete recording and question pages',()=>{
     const listening=cards.filter(c=>Boolean(c.audioMaterial)) as Parameters<typeof combinedListeningAssessment>[0];
     expect(listening).toHaveLength(14);
@@ -88,12 +73,11 @@ describe('2012 Foundation independently reviewed boundaries',()=>{
     expect(get('R-3A-3').criteria[0].guidance.join(' ')).toContain('3 mharc: Ag canadh; Ag obair i gclubanna');
     expect(get('R-3B-5').criteria[0].guidance.join(' ')).toContain('abairt iomlán');
     expect(get('R-3C-3').criteria[0].guidance.join(' ')).toContain('0 marc: líne2 leis féin');
-    for(const [part,scores] of Object.entries(partials)) for(const pair of ['AB','AC','BC'].filter(p=>p.includes(part[1]))) {
-      expect(get('R-3-'+pair).criteria.find(c=>c.id==='r-'+part.toLowerCase()+'-answer')!.permittedMarks).toEqual(scores);
-    }
+    // Choice is not a route: each part keeps its own partial tariff; no pair card repeats it.
+    expect(authored.cards.some(c=>/^R-[23]-[ABC]{2}$/.test(c.atlasQuestionId))).toBe(false);
   });
 
-  it('keeps the year-specific notice allowances and all three whole form-date routes',()=>{
+  it('keeps the year-specific notice allowances and all three whole form-date options',()=>{
     const notice=get('W-4A');
     expect(notice.criteria.map(c=>c.maxMarks)).toEqual([1,8,13,4,4,10]);
     expect(notice.schemePages).toEqual([8,9,10]);
@@ -129,7 +113,7 @@ describe('2012 Foundation independently reviewed boundaries',()=>{
     }
   });
 
-  it('reduces only story communication for length and keeps language and the paired form intact',()=>{
+  it('reduces only story communication for length and keeps language and the separate form card intact',()=>{
     for(const key of ['W-5A','W-5B']) {
       const story=get(key);
       expect(story.totalMarks).toBe(50);
@@ -150,11 +134,11 @@ describe('2012 Foundation independently reviewed boundaries',()=>{
     expect(get('W-5B').criteria[0].guidance.join(' ')).not.toContain('Ag bádóireacht');
     expect(get('W-5A').criteria[0].guidance.join(' ')).toContain('ach ná glac le “ag snámh”');
     expect(get('W-5B').criteria[0].guidance.join(' ')).toContain('Muna bhfuil dhá thagairt do phictiúr a trí glac le tagairt amháin eile');
-    const pair=cards.find(c=>c.id==='irish-2012-fl-w-4b-21-iuil-5b')!;
-    if(pair.rubric.system!=='irish') throw new Error('wrong rubric');
-    const scores=Object.fromEntries(pair.rubric.criteria.map(c=>['irish:'+c.id,
-      c.id==='w-5b-cumarsaid'?10:c.id==='w-5b-gaeilge'?7:c.maxMarks]));
-    expect(irishMarks(pair,scores)).toBe(57); // form40 + adjustedcommunication10 + language7
+    const story=cards.find(c=>c.id==='irish-2012-fl-w-5b')!;
+    if(story.rubric.system!=='irish') throw new Error('wrong rubric');
+    // Choice is not a route: the form is marked on its own card, so the story
+    // card carries only its adjusted communication10 + language7.
+    expect(irishMarks(story,{'irish:cumarsaid':10,'irish:gaeilge':7})).toBe(17);
   });
 
   it('joins every reviewed task to Atlas with full paper/scheme context and precise form labelling',()=>{

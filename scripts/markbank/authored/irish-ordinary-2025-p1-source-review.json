@@ -73,22 +73,22 @@
     {
       "page": 7,
       "raw": "Freagair do rogha dhá cheann de A, B, C, D anseo.",
-      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark routes and 30 full 100-mark selections (one title from each of two sections)."
+      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark title cards, each marked on its own 50. Choice is not a route: no two-section combination cards; the instruction is in each title card’s task requirements."
     },
     {
       "page": 7,
       "raw": "Scríobh giota leanúnach nó blag (leathleathanach nó mar sin) ar cheann amháin de na hábhair seo.",
-      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark routes and 30 full 100-mark selections (one title from each of two sections). Required form wording inside one composition (giota leanúnach nó blag; litir/ríomhphost; dó/di; cara or tuismitheoirí); not a separate route."
+      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark title cards, each marked on its own 50. Choice is not a route: no two-section combination cards; the instruction is in each title card’s task requirements. Required form wording inside one composition (giota leanúnach nó blag; litir/ríomhphost; dó/di; cara or tuismitheoirí); not a separate route."
     },
     {
       "page": 7,
       "raw": "Ceap scéal (leathleathanach nó mar sin) a mbeadh ceann amháin de na sleachta seo a leanas",
-      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark routes and 30 full 100-mark selections (one title from each of two sections)."
+      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark title cards, each marked on its own 50. Choice is not a route: no two-section combination cards; the instruction is in each title card’s task requirements."
     },
     {
       "page": 7,
       "raw": "nó",
-      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark routes and 30 full 100-mark selections (one title from each of two sections)."
+      "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark title cards, each marked on its own 50. Choice is not a route: no two-section combination cards; the instruction is in each title card’s task requirements."
     },
     {
       "page": 7,
@@ -135,7 +135,7 @@
   "nonPoolDecisions": [
     "Listening answers with alternatives (e.g. siopaí / ollmhargaí) are accepted answers to one task, not routes.",
     "Card unit for listening: the six retained legacy segment cards keep their IDs and stay the card unit, because the Bank plays one recording section as one exercise; every printed question is a separate 3-mark criterion (20 questions, 60 marks). Separate question cards are not added: they would repeat the same prompts inside that exercise.",
-    "Composition: closed choose-two of four sections; each printed title is a 50-mark route (already carded, IDs retained) and every two-section combination of titles is a 100-mark selection (30 added). Letter/email and conversation partner wording stay inside one response.",
+    "Composition: closed choose-two of four sections; each printed title is a 50-mark card (already carded, IDs retained). Choice is not a route: no two-section combination cards are published; the choose-two instruction is in each title card’s task requirements. Letter/email and conversation partner wording stay inside one response.",
     "The modified marking scheme changes assessment for eligible candidates, not the printed tasks."
   ],
   "sourceFindings": [

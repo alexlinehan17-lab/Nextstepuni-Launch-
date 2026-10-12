@@ -13,6 +13,7 @@ import itertools
 import json
 import re
 from pathlib import Path
+from irish_choice import withdraw_combinations
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001BLP000IV'
@@ -292,7 +293,7 @@ def build():
                  'The SEC accepts two alternatives for aural Q5(b) and Q6(a); each remains one task.',
                  'The letter has no published word-count penalty; keep all four picture instructions and one shared language award.',
                  'Preserve the Tagairt NR/-12 headings beside the explicit 34,30,26,22,18,14 communication caps. Do not invent an extra automatic deduction from the abbreviated heading.'])
-    return dict(review=review,cards=cards),scheme
+    return withdraw_combinations(dict(review=review,cards=cards)),scheme
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)

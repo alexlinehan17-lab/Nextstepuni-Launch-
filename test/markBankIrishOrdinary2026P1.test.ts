@@ -15,25 +15,19 @@ const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
 const AUDIO='https://www.examinations.ie/archive/exampapers/2026/LC001ZLP017IV.mp3';
 
 describe('2026 Ordinary Paper 1 source reconciliation',()=>{
-  it('ships 20 three-mark listening questions, 9 titles and all 30 two-section selections',()=>{
-    expect(cards).toHaveLength(59);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(59);
+  it('ships 20 three-mark listening questions and 9 titles, with no two-section combination cards',()=>{
+    expect(cards).toHaveLength(29);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(29);
     for(const card of cards) expect(tariffReconciles(card),card.id).toBe(true);
     const listening=authored.cards.filter(c=>c.atlasQuestionId.startsWith('L-'));
     expect(listening).toHaveLength(20);
     expect(listening.every(c=>c.totalMarks===3)).toBe(true);
     const singles=authored.cards.filter(c=>/^W-[A-D]-i+$/.test(c.atlasQuestionId));
     expect(singles.map(c=>c.atlasQuestionId)).toEqual(['W-A-i','W-A-ii','W-A-iii','W-B-i','W-B-ii','W-C-i','W-C-ii','W-D-i','W-D-ii']);
-    const pairs=authored.cards.filter(c=>'memberCardIds' in c);
-    expect(pairs).toHaveLength(30);
-    for(const c of pairs){
-      expect(c.totalMarks).toBe(100);
-      expect(c.memberCardIds).toHaveLength(2);
-      const [g1,g2]=c.atlasQuestionId.match(/-([A-D])-/g)!.map(s=>s[1]);
-      expect(g1).not.toBe(g2);
-      expect(c.criteria.filter(r=>r.id.endsWith('-gaeilge'))).toHaveLength(2);
-    }
-    expect(pairs.map(c=>c.atlasQuestionId)).toContain('W-A-iii-D-ii');
+    // Choice is not a route: each title carries the choose-two instruction; no combination cards.
+    expect(authored.cards.filter(c=>'memberCardIds' in c)).toEqual([]);
+    for(const c of singles) expect(c.taskRequirements[0]).toBe('Freagair do rogha dhá cheann de A, B, C, D anseo.');
+    expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
   });
 
   it('keeps each listening key and the section-level 0–6 language deduction',()=>{
@@ -64,12 +58,12 @@ describe('2026 Ordinary Paper 1 source reconciliation',()=>{
     expect([get('W-A-i').topicId,get('W-B-i').topicId,get('W-C-i').topicId,get('W-D-i').topicId]).toEqual(['irish-2-6','irish-2-3','irish-2-8','irish-2-9']);
     expect(get('W-C-ii').questionText).toContain('seó faisin');
     expect(get('W-B-ii').questionText).toContain('Léim mo chroí le háthas');
-    const pair=cards.find(c=>c.id==='irish-2026-ol-p1-composition-b-i-c-ii')!;
-    if(pair.rubric.system!=='irish') throw new Error('Wrong rubric');
-    expect(irishMarks(pair,Object.fromEntries(pair.rubric.criteria.map(c=>[irishScoreId(c.id),c.maxMarks])))).toBe(100);
+    const title=cards.find(c=>c.id==='irish-2026-ol-p1-composition-c-ii')!;
+    if(title.rubric.system!=='irish') throw new Error('Wrong rubric');
+    expect(irishMarks(title,Object.fromEntries(title.rubric.criteria.map(c=>[irishScoreId(c.id),c.maxMarks])))).toBe(50);
   });
 
-  it('joins all 59 cards to Atlas with pages, audio and writing-form topics',()=>{
+  it('joins all 29 cards to Atlas with pages, audio and writing-form topics',()=>{
     const map=JSON.parse(readFileSync('public/paper-answers/2026/LC001GLP100IV.pdf.json','utf8'));
     const q=(n:string)=>map.q.find((q:{n:string})=>q.n===n);
     expect(map.schemeFileid).toBe('LC001GLP100IV.pdf');
@@ -80,8 +74,9 @@ describe('2026 Ordinary Paper 1 source reconciliation',()=>{
       expect(q(c.atlasQuestionId).region.map((r:{p:number})=>r.p),c.id).toEqual(c.schemePages);
       if('audioMaterial' in c) expect(q(c.atlasQuestionId).audioMaterial).toEqual(c.audioMaterial);
     }
-    expect(examTopicIdsForQuestion('irish','ordinary',2026,'main','W-A-i-D-ii','p1','iv','LC001GLP100IV.pdf').sort())
-      .toEqual(['irish-ordinary-write-a-blogcreative-writing-task','irish-ordinary-write-a-conversation']);
+    expect(examTopicIdsForQuestion('irish','ordinary',2026,'main','W-D-ii','p1','iv','LC001GLP100IV.pdf'))
+      .toEqual(['irish-ordinary-write-a-conversation']);
+    expect(map.q.some((q:{n:string})=>/^W-[A-D]-i+-[A-D]-/.test(q.n))).toBe(false);
   });
 
   it('rejects unknown and stale raw selection directives',()=>{

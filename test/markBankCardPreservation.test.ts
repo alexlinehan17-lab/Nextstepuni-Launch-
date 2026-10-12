@@ -89,16 +89,10 @@ const addedIrishOrdinaryRoutes = new Set([
   ...['a-f1-q1a','a-f1-q1b','a-f1-q2a','a-f1-q2b','a-f2-q1a','a-f2-q1b','a-f2-q2a','a-f2-q2b',
     'b-c1-first-q1','b-c1-first-q2','b-c1-second-q1','b-c1-second-q2','b-c2-first-q1','b-c2-first-q2','b-c2-second-q1','b-c2-second-q2',
     'c-p1-q1','c-p1-q2','c-p2-q1','c-p2-q2'].map(key => `irish-2026-ol-p1-listening-${key}`),
-  ...(() => {
-    const titles: Record<string, string[]> = { a: ['i','ii','iii'], b: ['i','ii'], c: ['i','ii'], d: ['i','ii'] };
-    const singles = Object.entries(titles).flatMap(([g, list]) => list.map(t => `${g}-${t}`));
-    const pairs = ['a','b','c','d'].flatMap((g1, i) => ['a','b','c','d'].slice(i + 1).flatMap(g2 =>
-      titles[g1].flatMap(t1 => titles[g2].map(t2 => `${g1}-${t1}-${g2}-${t2}`))));
-    return [...singles, ...pairs].map(key => `irish-2026-ol-p1-composition-${key}`);
-  })(),
-  // 2026 Ordinary Paper 2: ten reading questions and their twenty parts, the
-  // prescribed/optional literature routes with printed sub-questions, and the
-  // sixteen two-route selections within 2A, 2B, 3A and 3B.
+  // Each printed title once (choice is not a route: no two-section combination cards).
+  ...['a-i','a-ii','a-iii','b-i','b-ii','c-i','c-ii','d-i','d-ii'].map(key => `irish-2026-ol-p1-composition-${key}`),
+  // 2026 Ordinary Paper 2: ten reading questions and their twenty parts, and the
+  // prescribed/optional literature routes with printed sub-questions (no combination cards).
   ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => [`reading-${p}-q${q}`, `reading-${p}-q${q}-a`, `reading-${p}-q${q}-b`]))
     .map(key => `irish-2026-ol-p2-${key}`),
   ...(() => {
@@ -110,18 +104,7 @@ const addedIrishOrdinaryRoutes = new Set([
       ...parts('poetry-3a-a', three), ...parts('poetry-3a-b', [...three, 'i-a', 'i-b', 'i-c', 'i-d']), ...parts('poetry-3a-c', three),
       'poetry-3b-a', 'poetry-3b-b', 'poetry-3b-c',
     ];
-    const selections = [
-      'prose-2a-a-caca-milis--b', 'prose-2a-a-caca-milis--c', 'prose-2a-a-an-lasair-choille--b', 'prose-2a-a-an-lasair-choille--c', 'prose-2a-b--c',
-      'prose-2b-a-scannan--b', 'prose-2b-a-scannan--c', 'prose-2b-a-drama--b', 'prose-2b-a-drama--c', 'prose-2b-b--c',
-      'poetry-3a-a--b', 'poetry-3a-a--c', 'poetry-3a-b--c', 'poetry-3b-a--b', 'poetry-3b-a--c', 'poetry-3b-b--c',
-    ];
-    return [...routes, ...selections].map(key => `irish-2026-ol-p2-${key}`);
-  })(),
-  // 2025 Ordinary Paper 1: the 30 printed two-section selections beside the retained titles.
-  ...(() => {
-    const titles: Record<string, string[]> = { a: ['i','ii','iii'], b: ['i','ii'], c: ['i','ii'], d: ['i','ii'] };
-    return ['a','b','c','d'].flatMap((g1, i) => ['a','b','c','d'].slice(i + 1).flatMap(g2 =>
-      titles[g1].flatMap(t1 => titles[g2].map(t2 => `irish-2025-ol-p1-composition-${g1}-${t1}-${g2}-${t2}`))));
+    return routes.map(key => `irish-2026-ol-p2-${key}`);
   })(),
 ]);
 

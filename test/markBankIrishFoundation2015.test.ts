@@ -12,34 +12,20 @@ const cards=ALL_CARDS.filter(c=>c.year===2015);
 const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
 
 describe('2015 Foundation independently reviewed boundaries',()=>{
-  it('requires one Q4 and one Q5, mechanically expanding the four writing products and six reading pairs',()=>{
-    expect(cards).toHaveLength(68);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(68);
+  it('requires one Q4 and one Q5 and carries each printed choice on its options',()=>{
+    expect(cards).toHaveLength(58);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(58);
     cards.forEach(c=>expect(tariffReconciles(c),c.id).toBe(true));
     expect(authored.review.examStructure).toEqual({listening:120,matching:40,readingQ2:50,readingQ3:60,writingQ4:40,writingQ5:50,writing:90,total:360});
     expect(authored.review.atomicPracticeCardIds).toHaveLength(58);
-    expect(authored.review.pairedRouteCardIds).toHaveLength(10);
-    const writing=authored.cards.filter(c=>/^W-4[AB]-5[AB]$/.test(c.atlasQuestionId));
-    expect(writing.map(c=>c.atlasQuestionId)).toEqual(['W-4A-5A','W-4A-5B','W-4B-5A','W-4B-5B']);
-    for(const c of writing) {
-      expect(c.totalMarks).toBe(90);
-      expect(c.questionText).toContain('FREAGAIR GACH CEIST (4 AGUS 5)');
-      expect(c.questionText).toContain('Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).');
-      expect(c.memberCardIds).toHaveLength(2);
-      expect(c.sourceMaterial.pages).toEqual([c.atlasQuestionId.includes('4A')?14:15,c.atlasQuestionId.endsWith('5A')?16:17]);
-      expect(c.criteria.find(r=>r.id.endsWith('-freagra'))!.maxMarks).toBe(50);
+    // Choice is not a route: no reading pairs and no writing combinations.
+    expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
+    expect(authored.cards.filter(c=>'memberCardIds' in c)).toEqual([]);
+    for(const n of [2,3]) for(const c of authored.cards.filter(c=>new RegExp(`^R-${n}[ABC]-\\d$`).test(c.atlasQuestionId))) {
+      expect(c.taskRequirements[0],c.id).toBe(`Ceist ${n} Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.`);
     }
-    for(const n of [2,3]) {
-      const routes=authored.cards.filter(c=>new RegExp(`^R-${n}-[ABC]{2}$`).test(c.atlasQuestionId));
-      expect(routes.map(c=>c.atlasQuestionId)).toEqual(['AB','AC','BC'].map(p=>`R-${n}-${p}`));
-      for(const c of routes) {
-        expect(c.totalMarks).toBe(n===2?50:60);
-        expect(c.criteria).toHaveLength(10);
-        expect(c.sourceMaterial.pages).toHaveLength(2);
-      }
-    }
+    for(const c of authored.cards.filter(c=>/^W-[45]/.test(c.atlasQuestionId))) expect(c.taskRequirements[0],c.id).toBe("FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).");
   });
-
   it('keeps all fourteen listening parts and the complete recording and question pages',()=>{
     const listening=cards.filter(c=>Boolean(c.audioMaterial)) as Parameters<typeof combinedListeningAssessment>[0];
     expect(listening).toHaveLength(14);
@@ -78,9 +64,8 @@ describe('2015 Foundation independently reviewed boundaries',()=>{
     expect(get('R-3A-5').criteria[0].guidance).toContain('1 mharc: Pictiúrlann; Bialann. Téann sí lena cairde = 0.');
     expect(get('R-3B-4').criteria[0].guidance).toContain('3 mharc: Bratach.');
     expect(get('R-3C-5').criteria[0].guidance).toContain('2 mharc: Dóchas; Véarsa3 líne1, líne2 agus líne3 le chéile.');
-    for(const [part,scores] of Object.entries(partials)) for(const pair of ['AB','AC','BC'].filter(p=>p.includes(part[1]))) {
-      expect(get('R-3-'+pair).criteria.find(c=>c.id==='r-'+part.toLowerCase()+'-answer')!.permittedMarks).toEqual(scores);
-    }
+    // Choice is not a route: each part keeps its own partial tariff; no pair card repeats it.
+    expect(authored.cards.some(c=>/^R-[23]-[ABC]{2}$/.test(c.atlasQuestionId))).toBe(false);
   });
 
   it('retains the notice deductions and one whole airport letter with required1/2/3/2 details',()=>{
@@ -101,7 +86,7 @@ describe('2015 Foundation independently reviewed boundaries',()=>{
     expect(letter.criteria.some(c=>c.id==='length')).toBe(false);
     expect(letter.criteria.at(-1)!.guidance.join(' ')).toContain('gan iomarca béime');
     expect(letter.markingGuideNote).toContain('flexible pronoun wording');
-    expect(authored.cards.filter(c=>/^W-4B-/.test(c.atlasQuestionId))).toHaveLength(2); // only the two Q5 products
+    expect(authored.cards.filter(c=>/^W-4B-/.test(c.atlasQuestionId))).toHaveLength(0); // choice is not a route: no Q4 x Q5 products
   });
 
   it('retains the 37/13 story rubric and proportional final-mark rule without using later-year or modified bands',()=>{
@@ -124,11 +109,12 @@ describe('2015 Foundation independently reviewed boundaries',()=>{
     expect(get('W-5B').schemePages).toEqual([14]);
     expect(get('W-5A').questionText).toContain('Cluiche Mór');
     expect(get('W-5B').questionText).toContain('ag dul go dtí an amharclann');
-    const pair=cards.find(c=>c.id==='irish-2015-fl-w-4b-5b')!;
-    expect(pair.rubric.system).toBe('irish');
-    if(pair.rubric.system!=='irish') throw new Error('wrong rubric');
-    const scores=Object.fromEntries(pair.rubric.criteria.map(c=>['irish:'+c.id,c.id==='w-5b-freagra'?25:c.maxMarks]));
-    expect(irishMarks(pair,scores)).toBe(65); // 40 for letter + halved 50-mark story
+    const story=cards.find(c=>c.id==='irish-2015-fl-w-5b')!;
+    expect(story.rubric.system).toBe('irish');
+    if(story.rubric.system!=='irish') throw new Error('wrong rubric');
+    // Choice is not a route: the letter is marked on its own card; the story card
+    // carries the halved 50-mark story alone.
+    expect(irishMarks(story,{'irish:freagra':25})).toBe(25);
   });
 
   it('joins every reviewed task to Atlas with full paper/scheme context and precise letter labelling',()=>{

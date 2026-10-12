@@ -14,6 +14,7 @@ import itertools
 import json
 import re
 from pathlib import Path
+from irish_choice import withdraw_combinations
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001BLP100IV'
@@ -335,7 +336,7 @@ def build():
                   nonPoolDecisions=sr['nonPoolDecisions'], openIssues=[], audio=sr['audio'],
                   boundaries='14 listening parts; 10 matching parts; 30 reading parts at their printed unequal tariffs; 4 whole writing responses; 6 paired reading routes; 6 paired writing routes.',
                   caveats=sr['sourceFindings'])
-    return dict(review=review, cards=cards), scheme
+    return withdraw_combinations(dict(review=review, cards=cards)), scheme
 
 
 def main():

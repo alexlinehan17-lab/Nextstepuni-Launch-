@@ -14,7 +14,7 @@ const CARDS = ALL_CARDS.filter(c => c.year === 2025);
 
 describe('reviewed 2025 Irish Foundation tasks', () => {
   it('loads and remembers Foundation without changing other subjects’ available levels', async () => {
-    expect(await loadCards('irish', 'foundation')).toHaveLength(1227);
+    expect(await loadCards('irish', 'foundation')).toHaveLength(1003);
     expect(builtDecks()).toContainEqual({ subjectId: 'irish', level: 'foundation', label: 'Irish Foundation' });
     expect(levelsForSubject('irish', 2025)).toEqual(['higher', 'ordinary', 'foundation']);
     expect(levelsForSubject('biology', 2025)).toEqual(['higher', 'ordinary']);
@@ -23,8 +23,8 @@ describe('reviewed 2025 Irish Foundation tasks', () => {
   });
 
   it('keeps every reviewed task at its published boundary and on the canonical curriculum', () => {
-    expect(CARDS).toHaveLength(78);
-    expect(new Set(CARDS.map(c => c.id)).size).toBe(78);
+    expect(CARDS).toHaveLength(60);
+    expect(new Set(CARDS.map(c => c.id)).size).toBe(60);
     for (const card of CARDS) {
       expect(tariffReconciles(card), card.id).toBe(true);
       expect(card.specVersion).toBe(resolveCurriculumSpecification('irish', 2025)!.id);
@@ -37,16 +37,15 @@ describe('reviewed 2025 Irish Foundation tasks', () => {
     expect(CARDS.filter(c => /-r-3[abc]-\d+$/.test(c.id)).every(c => c.totalMarks === 6)).toBe(true);
   });
 
-  it('expands every pair and the form’s internal date choice with its full context', () => {
+  it('publishes each passage part and writing option once, carrying the printed choose-two instruction', () => {
+    // Choice is not a route: no per-combination cards for “dhá cheann de (a), (b), (c)” or “dhá cheist ar bith”.
+    expect(CARDS.filter(c => /-r-[23]-[abc]{2}$|-w-[45][ab]-[45][ab]/.test(c.id))).toEqual([]);
     for (const question of [2, 3]) {
-      const routes = CARDS.filter(c => new RegExp(`-r-${question}-[abc]{2}$`).test(c.id));
-      expect(routes.map(c => c.id.split('-').at(-1))).toEqual(['ab', 'ac', 'bc']);
-      for (const route of routes) {
-        expect(route.totalMarks).toBe(question === 2 ? 50 : 60);
-        expect(route.sourceMaterial?.pages).toHaveLength(2);
-        if (route.rubric.system !== 'irish') throw new Error('Wrong rubric');
-        expect(route.rubric.criteria).toHaveLength(10);
-        expect(new Set(route.rubric.criteria.map(c => c.id)).size).toBe(10);
+      const parts = CARDS.filter(c => new RegExp(`-r-${question}[abc]-\\d+$`).test(c.id));
+      expect(parts).toHaveLength(15);
+      for (const part of parts) {
+        if (part.rubric.system !== 'irish') throw new Error('Wrong rubric');
+        expect(part.rubric.taskRequirements[0], part.id).toBe(`Ceist ${question} Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.`);
       }
     }
     const forms = CARDS.filter(c => /-w-4b-(16|5|10)-/.test(c.id));
@@ -59,27 +58,23 @@ describe('reviewed 2025 Irish Foundation tasks', () => {
       expect(form.questionText).toContain('timpeall 40 focal');
       expect(form.sourceMaterial?.pages).toEqual([15]);
     }
-    const pairs = CARDS.filter(c => /-w-[45][ab]-[45][ab]/.test(c.id));
-    expect(pairs).toHaveLength(12);
-    for (const pair of pairs) {
-      expect(pair.totalMarks).toBe(90);
-      expect(pair.sourceMaterial?.pages).toHaveLength(2);
-      if (pair.rubric.system !== 'irish') throw new Error('Wrong rubric');
-      expect(pair.rubric.criteria.filter(c => c.id.endsWith('-gaeilge'))).toHaveLength(2);
+    const writing = CARDS.filter(c => /-w-[45][ab](-|$)/.test(c.id));
+    expect(writing).toHaveLength(6);
+    for (const option of writing) {
+      if (option.rubric.system !== 'irish') throw new Error('Wrong rubric');
+      expect(option.rubric.taskRequirements[0], option.id).toBe('Freagair dhá cheist ar bith as na ceithre cinn seo a leanas: 4 (a), 4 (b), 5 (a) nó 5 (b).');
     }
-    const mixed = CARDS.find(c => c.id === 'irish-2025-fl-w-4a-4b-16-aibrean')!;
-    expect(cardsForTopic('irish-9-0', CARDS)).toContain(mixed);
-    expect(cardsForTopic('irish-9-3', CARDS)).toContain(mixed);
+    expect(cardsForTopic('irish-9-0', CARDS)).toContain(forms[0]);
   });
 
-  it('never lets a short response deduct marks from another response or its language award', () => {
-    const card = CARDS.find(c => c.id === 'irish-2025-fl-w-5a-5b')!;
+  it('never lets a short story deduct marks from its language award', () => {
+    const card = CARDS.find(c => c.id === 'irish-2025-fl-w-5a')!;
     if (card.rubric.system !== 'irish') throw new Error('Wrong rubric');
     const scores = Object.fromEntries(card.rubric.criteria.map(c => [irishScoreId(c.id), c.kind === 'award' ? c.maxMarks : 0]));
-    expect(irishMarks(card, scores)).toBe(90);
-    scores['irish:w-5a-cumarsaid'] = 0;
-    scores['irish:w-5a-length'] = 4;
-    expect(irishMarks(card, scores)).toBe(56); // 11 language + the other complete 45-mark response.
+    expect(irishMarks(card, scores)).toBe(45);
+    scores['irish:cumarsaid'] = 0;
+    scores['irish:length'] = 4;
+    expect(irishMarks(card, scores)).toBe(11); // the length deduction reduces communication only; 11 language marks stay.
   });
 
   it('keeps all listening pictures and choices with the official Foundation recording', () => {

@@ -234,18 +234,6 @@
       "irish-2020-fl-w-5a",
       "irish-2020-fl-w-5b"
     ],
-    "pairedRouteCardIds": [
-      "irish-2020-fl-r-2-ab",
-      "irish-2020-fl-r-2-ac",
-      "irish-2020-fl-r-2-bc",
-      "irish-2020-fl-r-3-ab",
-      "irish-2020-fl-r-3-ac",
-      "irish-2020-fl-r-3-bc",
-      "irish-2020-fl-w-4a-5a",
-      "irish-2020-fl-w-4a-5b",
-      "irish-2020-fl-w-4b-5a",
-      "irish-2020-fl-w-4b-5b"
-    ],
     "examStructure": {
       "listening": 120,
       "matching": 40,
@@ -274,7 +262,7 @@
       "durationSeconds": 1828.415156,
       "playbackAdvanced": true
     },
-    "boundaries": "14 listening parts; 10 matching parts; 30 reading parts; 4 whole writing tasks; 6 paired reading routes; 4 writing products (one Q4 and one Q5).",
+    "boundaries": "58 individually marked task/option cards; 10 per-combination cards withdrawn (choice is not a route).",
     "caveats": [
       "2020 requires one 40-mark Q4 response and one 50-mark Q5 response. Total 360:120+40+50+60+40+50. Four writing products, not any two from four.",
       "All 14 listening awards are exact 0/full-mark. Matching answers GEIFABJDCH.",
@@ -285,7 +273,8 @@
       "4B is Freagra ar chuireadh, not a form. Ruairí replies to Áine. Layout3(1+1+1),picture1=7(4+3),picture3=9(3+3+3),picture4=11(4+4+3),language10. Picture2 is the invitation source. All seven reply instructions compulsory; two match details open. No address/date or length rule. Use the existing correspondence curriculum/topic with the precise reply label.",
       "5A Seó Tallainne / schemePDF13; 5B dolphin boat-trip incident / schemePDF14–15. Each communication37+language13. Minus5 from communication ceiling per missing reference. 5B needs all four pictures plus a fifth reference. Approx90words; if short, proportional reduction of awarded mark (45 words: deduct50%). No later-year fixed table. Whole-response scoring preserves proportional assessment and prevents a deduction affecting the paired Q4.",
       "No standard language band table is printed. PDF16 table belongs only to the modified scheme. Retain ordinary language criteria from PDF7 and explicit10/13 awards, not SMM bands. TranscriptsPDF17–19 are answer material."
-    ]
+    ],
+    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn."
   },
   "cards": [
     {
@@ -1662,7 +1651,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -1711,7 +1702,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -1760,7 +1753,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -1809,7 +1804,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -1858,7 +1855,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -1907,7 +1906,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -1956,7 +1957,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2005,7 +2008,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2054,7 +2059,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2103,7 +2110,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2152,7 +2161,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2201,7 +2212,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2250,7 +2263,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2299,7 +2314,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2348,7 +2365,9 @@
       "schemePages": [
         5
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2397,7 +2416,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2446,7 +2467,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2495,7 +2518,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2544,7 +2569,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2593,7 +2620,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2648,7 +2677,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2697,7 +2728,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2746,7 +2779,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2795,7 +2830,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2844,7 +2881,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2893,7 +2932,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2942,7 +2983,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -2991,7 +3034,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -3040,7 +3085,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -3089,7 +3136,9 @@
       "schemePages": [
         6
       ],
-      "taskRequirements": [],
+      "taskRequirements": [
+        "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos."
+      ],
       "criteria": [
         {
           "id": "answer",
@@ -3124,1168 +3173,6 @@
       }
     },
     {
-      "id": "irish-2020-fl-r-2-ab",
-      "year": 2020,
-      "level": "foundation",
-      "paper": 1,
-      "section": "2",
-      "atlasQuestionId": "R-2-AB",
-      "questionRef": "2020 FL Léamhthuiscint · Ceist 2(a) + (b)",
-      "questionText": "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.\n\nAn rogha don chárta seo: Léamhthuiscint · Ceist 2(a) + (b)\n\nLéamhthuiscint · Ceist 2(a)(1)\nLéigh an téacs ar leathanach 6.\n\n1. Cathain a d’fhreastail Peadar ar an agallamh?\n\n13 Lúnasa\n16 Meán Fómhair\n20 Meán Fómhair\n\nLéamhthuiscint · Ceist 2(a)(2)\nLéigh an téacs ar leathanach 6.\n\n2. Cén grád a fuair Peadar sa Teicneolaíocht san Ardteistiméireacht?\n\nGrád O2\nGrád H3\nGrád H4\n\nLéamhthuiscint · Ceist 2(a)(3)\nLéigh an téacs ar leathanach 6.\n\n3. Cad a gheobhaidh an printíseach dhá lá sa tseachtain?\n\nScrúdú\nRanganna\nTaithí phraiticiúil\n\nLéamhthuiscint · Ceist 2(a)(4)\nLéigh an téacs ar leathanach 6.\n\n4. Cad a bheidh sa ríomhphost a sheolfar chuig Peadar má ghlacann sé le háit ar an gcúrsa?\n\nLiosta lóistín\nTorthaí na hArdteistiméireachta\nGach eolas faoin gcúrsa\n\nLéamhthuiscint · Ceist 2(a)(5)\nLéigh an téacs ar leathanach 6.\n\n5. Cén post atá ag Muireann Ní Chonaill?\n\nLeictreoir\nOifigeach Pearsanra\nStiúrthóir\n\nLéamhthuiscint · Ceist 2(b)(1)\nLéigh an téacs ar leathanach 7.\n\n1. Cá bhfuil Ionad an Bhlascaoid Mhóir suite?\n\nAr na Blascaodaí\nSa Daingean\nI nDún Chaoin\n\nLéamhthuiscint · Ceist 2(b)(2)\nLéigh an téacs ar leathanach 7.\n\n2. Cathain a tréigeadh an Blascaod Mór?\n\nSa bhliain 1953\nNa céadta bliain ó shin\nSa bhliain 1993\n\nLéamhthuiscint · Ceist 2(b)(3)\nLéigh an téacs ar leathanach 7.\n\n3. Cén tsiombail de thraidisiún na hiascaireachta atá ar taispeáint sa mhúsaem?\n\nAgallaimh\nNaomhóg\nGrianghraif\n\nLéamhthuiscint · Ceist 2(b)(4)\nLéigh an téacs ar leathanach 7.\n\n4. Cén leabhar a scríobh Muiris Ó Súilleabháin?\n\nMachnamh Seanmhná\nAn tOileánach\nFiche Bliain ag Fás\n\nLéamhthuiscint · Ceist 2(b)(5)\nLéigh an téacs ar leathanach 7.\n\n5. Cén áit ar an oileán ar féidir le cuairteoirí fanacht?\n\nTeach Thomáis Uí Chriomhthain\nSa teach lóistín\nSa chaifé",
-      "totalMarks": 50,
-      "topicId": "irish-9-2",
-      "examTopicKeys": [
-        "letterReading",
-        "brochure"
-      ],
-      "conceptId": "irish-foundation-r-2-ab",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 5,
-      "schemePages": [
-        5
-      ],
-      "taskRequirements": [],
-      "criteria": [
-        {
-          "id": "r-2a-1-answer",
-          "label": "Léamhthuiscint · Ceist 2(a)(1) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "16 Meán Fómhair"
-          ]
-        },
-        {
-          "id": "r-2a-2-answer",
-          "label": "Léamhthuiscint · Ceist 2(a)(2) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Grád H4"
-          ]
-        },
-        {
-          "id": "r-2a-3-answer",
-          "label": "Léamhthuiscint · Ceist 2(a)(3) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Taithí phraiticiúil"
-          ]
-        },
-        {
-          "id": "r-2a-4-answer",
-          "label": "Léamhthuiscint · Ceist 2(a)(4) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Liosta lóistín"
-          ]
-        },
-        {
-          "id": "r-2a-5-answer",
-          "label": "Léamhthuiscint · Ceist 2(a)(5) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Oifigeach Pearsanra"
-          ]
-        },
-        {
-          "id": "r-2b-1-answer",
-          "label": "Léamhthuiscint · Ceist 2(b)(1) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "I nDún Chaoin"
-          ]
-        },
-        {
-          "id": "r-2b-2-answer",
-          "label": "Léamhthuiscint · Ceist 2(b)(2) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Sa bhliain 1953"
-          ]
-        },
-        {
-          "id": "r-2b-3-answer",
-          "label": "Léamhthuiscint · Ceist 2(b)(3) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Naomhóg"
-          ]
-        },
-        {
-          "id": "r-2b-4-answer",
-          "label": "Léamhthuiscint · Ceist 2(b)(4) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Fiche Bliain ag Fás"
-          ]
-        },
-        {
-          "id": "r-2b-5-answer",
-          "label": "Léamhthuiscint · Ceist 2(b)(5) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Sa teach lóistín"
-          ]
-        }
-      ],
-      "markingGuideNote": "This is one permitted printed selection. Each selected response retains its own SEC marking criteria; alternative routes are not added to this tariff.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Léamhthuiscint · Ceist 2(a) + (b)",
-        "title": "Gaeilge Bonnleibhéal 2020 · Léamhthuiscint · Ceist 2(a) + (b)",
-        "pages": [
-          6,
-          7
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "additionalTopicIds": [],
-      "memberCardIds": [
-        "irish-2020-fl-r-2a-1",
-        "irish-2020-fl-r-2a-2",
-        "irish-2020-fl-r-2a-3",
-        "irish-2020-fl-r-2a-4",
-        "irish-2020-fl-r-2a-5",
-        "irish-2020-fl-r-2b-1",
-        "irish-2020-fl-r-2b-2",
-        "irish-2020-fl-r-2b-3",
-        "irish-2020-fl-r-2b-4",
-        "irish-2020-fl-r-2b-5"
-      ]
-    },
-    {
-      "id": "irish-2020-fl-r-2-ac",
-      "year": 2020,
-      "level": "foundation",
-      "paper": 1,
-      "section": "2",
-      "atlasQuestionId": "R-2-AC",
-      "questionRef": "2020 FL Léamhthuiscint · Ceist 2(a) + (c)",
-      "questionText": "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.\n\nAn rogha don chárta seo: Léamhthuiscint · Ceist 2(a) + (c)\n\nLéamhthuiscint · Ceist 2(a)(1)\nLéigh an téacs ar leathanach 6.\n\n1. Cathain a d’fhreastail Peadar ar an agallamh?\n\n13 Lúnasa\n16 Meán Fómhair\n20 Meán Fómhair\n\nLéamhthuiscint · Ceist 2(a)(2)\nLéigh an téacs ar leathanach 6.\n\n2. Cén grád a fuair Peadar sa Teicneolaíocht san Ardteistiméireacht?\n\nGrád O2\nGrád H3\nGrád H4\n\nLéamhthuiscint · Ceist 2(a)(3)\nLéigh an téacs ar leathanach 6.\n\n3. Cad a gheobhaidh an printíseach dhá lá sa tseachtain?\n\nScrúdú\nRanganna\nTaithí phraiticiúil\n\nLéamhthuiscint · Ceist 2(a)(4)\nLéigh an téacs ar leathanach 6.\n\n4. Cad a bheidh sa ríomhphost a sheolfar chuig Peadar má ghlacann sé le háit ar an gcúrsa?\n\nLiosta lóistín\nTorthaí na hArdteistiméireachta\nGach eolas faoin gcúrsa\n\nLéamhthuiscint · Ceist 2(a)(5)\nLéigh an téacs ar leathanach 6.\n\n5. Cén post atá ag Muireann Ní Chonaill?\n\nLeictreoir\nOifigeach Pearsanra\nStiúrthóir\n\nLéamhthuiscint · Ceist 2(c)(1)\nLéigh an téacs ar leathanach 8.\n\n1. Cén seomra ina raibh Muiris nuair a chuala sé fuaim aisteach?\n\nSa seomra suí\nSa chistin\nSa seomra leapa\n\nLéamhthuiscint · Ceist 2(c)(2)\nLéigh an téacs ar leathanach 8.\n\n2. Cad ba chúis leis an bhfuaim aisteach?\n\nÉan beag dubh\nLuch\nCat\n\nLéamhthuiscint · Ceist 2(c)(3)\nLéigh an téacs ar leathanach 8.\n\n3. Cá raibh an súiche dubh le feiceáil?\n\nAr an bhfuinneog\nOs comhair an tinteáin\nAr an doras\n\nLéamhthuiscint · Ceist 2(c)(4)\nLéigh an téacs ar leathanach 8.\n\n4. Cad a chaith Muiris isteach sa seomra suí?\n\nSpúnóg adhmaid\nSúiche\nPíosa aráin\n\nLéamhthuiscint · Ceist 2(c)(5)\nLéigh an téacs ar leathanach 8.\n\n5. Conas a d’éalaigh an t-éan amach as an teach?\n\nTríd an bhfuinneog oscailte\nSuas an simléar\nTríd an doras",
-      "totalMarks": 50,
-      "topicId": "irish-9-2",
-      "examTopicKeys": [
-        "letterReading",
-        "news"
-      ],
-      "conceptId": "irish-foundation-r-2-ac",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 5,
-      "schemePages": [
-        5
-      ],
-      "taskRequirements": [],
-      "criteria": [
-        {
-          "id": "r-2a-1-answer",
-          "label": "Léamhthuiscint · Ceist 2(a)(1) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "16 Meán Fómhair"
-          ]
-        },
-        {
-          "id": "r-2a-2-answer",
-          "label": "Léamhthuiscint · Ceist 2(a)(2) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Grád H4"
-          ]
-        },
-        {
-          "id": "r-2a-3-answer",
-          "label": "Léamhthuiscint · Ceist 2(a)(3) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Taithí phraiticiúil"
-          ]
-        },
-        {
-          "id": "r-2a-4-answer",
-          "label": "Léamhthuiscint · Ceist 2(a)(4) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Liosta lóistín"
-          ]
-        },
-        {
-          "id": "r-2a-5-answer",
-          "label": "Léamhthuiscint · Ceist 2(a)(5) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Oifigeach Pearsanra"
-          ]
-        },
-        {
-          "id": "r-2c-1-answer",
-          "label": "Léamhthuiscint · Ceist 2(c)(1) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Sa chistin"
-          ]
-        },
-        {
-          "id": "r-2c-2-answer",
-          "label": "Léamhthuiscint · Ceist 2(c)(2) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Éan beag dubh"
-          ]
-        },
-        {
-          "id": "r-2c-3-answer",
-          "label": "Léamhthuiscint · Ceist 2(c)(3) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Os comhair an tinteáin"
-          ]
-        },
-        {
-          "id": "r-2c-4-answer",
-          "label": "Léamhthuiscint · Ceist 2(c)(4) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Píosa aráin"
-          ]
-        },
-        {
-          "id": "r-2c-5-answer",
-          "label": "Léamhthuiscint · Ceist 2(c)(5) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Tríd an bhfuinneog oscailte"
-          ]
-        }
-      ],
-      "markingGuideNote": "This is one permitted printed selection. Each selected response retains its own SEC marking criteria; alternative routes are not added to this tariff.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Léamhthuiscint · Ceist 2(a) + (c)",
-        "title": "Gaeilge Bonnleibhéal 2020 · Léamhthuiscint · Ceist 2(a) + (c)",
-        "pages": [
-          6,
-          8
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "additionalTopicIds": [],
-      "memberCardIds": [
-        "irish-2020-fl-r-2a-1",
-        "irish-2020-fl-r-2a-2",
-        "irish-2020-fl-r-2a-3",
-        "irish-2020-fl-r-2a-4",
-        "irish-2020-fl-r-2a-5",
-        "irish-2020-fl-r-2c-1",
-        "irish-2020-fl-r-2c-2",
-        "irish-2020-fl-r-2c-3",
-        "irish-2020-fl-r-2c-4",
-        "irish-2020-fl-r-2c-5"
-      ]
-    },
-    {
-      "id": "irish-2020-fl-r-2-bc",
-      "year": 2020,
-      "level": "foundation",
-      "paper": 1,
-      "section": "2",
-      "atlasQuestionId": "R-2-BC",
-      "questionRef": "2020 FL Léamhthuiscint · Ceist 2(b) + (c)",
-      "questionText": "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.\n\nAn rogha don chárta seo: Léamhthuiscint · Ceist 2(b) + (c)\n\nLéamhthuiscint · Ceist 2(b)(1)\nLéigh an téacs ar leathanach 7.\n\n1. Cá bhfuil Ionad an Bhlascaoid Mhóir suite?\n\nAr na Blascaodaí\nSa Daingean\nI nDún Chaoin\n\nLéamhthuiscint · Ceist 2(b)(2)\nLéigh an téacs ar leathanach 7.\n\n2. Cathain a tréigeadh an Blascaod Mór?\n\nSa bhliain 1953\nNa céadta bliain ó shin\nSa bhliain 1993\n\nLéamhthuiscint · Ceist 2(b)(3)\nLéigh an téacs ar leathanach 7.\n\n3. Cén tsiombail de thraidisiún na hiascaireachta atá ar taispeáint sa mhúsaem?\n\nAgallaimh\nNaomhóg\nGrianghraif\n\nLéamhthuiscint · Ceist 2(b)(4)\nLéigh an téacs ar leathanach 7.\n\n4. Cén leabhar a scríobh Muiris Ó Súilleabháin?\n\nMachnamh Seanmhná\nAn tOileánach\nFiche Bliain ag Fás\n\nLéamhthuiscint · Ceist 2(b)(5)\nLéigh an téacs ar leathanach 7.\n\n5. Cén áit ar an oileán ar féidir le cuairteoirí fanacht?\n\nTeach Thomáis Uí Chriomhthain\nSa teach lóistín\nSa chaifé\n\nLéamhthuiscint · Ceist 2(c)(1)\nLéigh an téacs ar leathanach 8.\n\n1. Cén seomra ina raibh Muiris nuair a chuala sé fuaim aisteach?\n\nSa seomra suí\nSa chistin\nSa seomra leapa\n\nLéamhthuiscint · Ceist 2(c)(2)\nLéigh an téacs ar leathanach 8.\n\n2. Cad ba chúis leis an bhfuaim aisteach?\n\nÉan beag dubh\nLuch\nCat\n\nLéamhthuiscint · Ceist 2(c)(3)\nLéigh an téacs ar leathanach 8.\n\n3. Cá raibh an súiche dubh le feiceáil?\n\nAr an bhfuinneog\nOs comhair an tinteáin\nAr an doras\n\nLéamhthuiscint · Ceist 2(c)(4)\nLéigh an téacs ar leathanach 8.\n\n4. Cad a chaith Muiris isteach sa seomra suí?\n\nSpúnóg adhmaid\nSúiche\nPíosa aráin\n\nLéamhthuiscint · Ceist 2(c)(5)\nLéigh an téacs ar leathanach 8.\n\n5. Conas a d’éalaigh an t-éan amach as an teach?\n\nTríd an bhfuinneog oscailte\nSuas an simléar\nTríd an doras",
-      "totalMarks": 50,
-      "topicId": "irish-9-2",
-      "examTopicKeys": [
-        "brochure",
-        "news"
-      ],
-      "conceptId": "irish-foundation-r-2-bc",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 5,
-      "schemePages": [
-        5
-      ],
-      "taskRequirements": [],
-      "criteria": [
-        {
-          "id": "r-2b-1-answer",
-          "label": "Léamhthuiscint · Ceist 2(b)(1) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "I nDún Chaoin"
-          ]
-        },
-        {
-          "id": "r-2b-2-answer",
-          "label": "Léamhthuiscint · Ceist 2(b)(2) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Sa bhliain 1953"
-          ]
-        },
-        {
-          "id": "r-2b-3-answer",
-          "label": "Léamhthuiscint · Ceist 2(b)(3) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Naomhóg"
-          ]
-        },
-        {
-          "id": "r-2b-4-answer",
-          "label": "Léamhthuiscint · Ceist 2(b)(4) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Fiche Bliain ag Fás"
-          ]
-        },
-        {
-          "id": "r-2b-5-answer",
-          "label": "Léamhthuiscint · Ceist 2(b)(5) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Sa teach lóistín"
-          ]
-        },
-        {
-          "id": "r-2c-1-answer",
-          "label": "Léamhthuiscint · Ceist 2(c)(1) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Sa chistin"
-          ]
-        },
-        {
-          "id": "r-2c-2-answer",
-          "label": "Léamhthuiscint · Ceist 2(c)(2) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Éan beag dubh"
-          ]
-        },
-        {
-          "id": "r-2c-3-answer",
-          "label": "Léamhthuiscint · Ceist 2(c)(3) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Os comhair an tinteáin"
-          ]
-        },
-        {
-          "id": "r-2c-4-answer",
-          "label": "Léamhthuiscint · Ceist 2(c)(4) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Píosa aráin"
-          ]
-        },
-        {
-          "id": "r-2c-5-answer",
-          "label": "Léamhthuiscint · Ceist 2(c)(5) · Freagra",
-          "kind": "award",
-          "maxMarks": 5,
-          "permittedMarks": [
-            0,
-            5
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Tríd an bhfuinneog oscailte"
-          ]
-        }
-      ],
-      "markingGuideNote": "This is one permitted printed selection. Each selected response retains its own SEC marking criteria; alternative routes are not added to this tariff.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Léamhthuiscint · Ceist 2(b) + (c)",
-        "title": "Gaeilge Bonnleibhéal 2020 · Léamhthuiscint · Ceist 2(b) + (c)",
-        "pages": [
-          7,
-          8
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "additionalTopicIds": [],
-      "memberCardIds": [
-        "irish-2020-fl-r-2b-1",
-        "irish-2020-fl-r-2b-2",
-        "irish-2020-fl-r-2b-3",
-        "irish-2020-fl-r-2b-4",
-        "irish-2020-fl-r-2b-5",
-        "irish-2020-fl-r-2c-1",
-        "irish-2020-fl-r-2c-2",
-        "irish-2020-fl-r-2c-3",
-        "irish-2020-fl-r-2c-4",
-        "irish-2020-fl-r-2c-5"
-      ]
-    },
-    {
-      "id": "irish-2020-fl-r-3-ab",
-      "year": 2020,
-      "level": "foundation",
-      "paper": 1,
-      "section": "2",
-      "atlasQuestionId": "R-3-AB",
-      "questionRef": "2020 FL Léamhthuiscint · Ceist 3(a) + (b)",
-      "questionText": "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.\n\nAn rogha don chárta seo: Léamhthuiscint · Ceist 3(a) + (b)\n\nLéamhthuiscint · Ceist 3(a)(1)\nLéigh an téacs ar leathanach 9.\n\n1. Cad as do Shibéal Ní Chasaide?\n\nGaoth Dobhair\nRáth Chairn\nMeiriceá\n\nLéamhthuiscint · Ceist 3(a)(2)\nLéigh an téacs ar leathanach 9.\n\n2. Cad a thosaigh sí ag foghlaim nuair a bhí sí cúig bliana d’aois?\n\nAn veidhlín\nAn chláirseach\nAmhránaíocht ar an sean-nós\n\nLéamhthuiscint · Ceist 3(a)(3)\nLéigh an téacs ar leathanach 9.\n\n3. Cén t-amhrán a chan Sibéal ar RTÉ sa chlár chun Éirí Amach na Cásca 1916 a chomóradh?\n\nFuarú\nMise Éire\nCeol 2018\n\nLéamhthuiscint · Ceist 3(a)(4)\nLéigh an téacs ar leathanach 9.\n\n4. Cá raibh Sibéal ag canadh i mí Mheán Fómhair 2019?\n\nSa Phuball Gaeilge\nI nDroichead Átha\nAg Fleadh Cheoil na hÉireann\n\nLéamhthuiscint · Ceist 3(a)(5)\nLéigh an téacs ar leathanach 9.\n\n5. Cár fhan Sibéal agus í sa chéad bhliain ar Ollscoil na hÉireann, Baile Átha Cliath?\n\nLéamhthuiscint · Ceist 3(b)(1)\nLéigh an téacs ar leathanach 10.\n\n1. Cén cineál clár is mó a chuireann Hector Ó hEochagáin i láthair?\n\nCláir thaistil\nCláir chainte\nCláir cheoil\n\nLéamhthuiscint · Ceist 3(b)(2)\nLéigh an téacs ar leathanach 10.\n\n2. Cá bhfuil Hector ina chónaí faoi láthair?\n\nSa Spáinn\nI gContae na Gaillimhe\nAr Inis Meáin\n\nLéamhthuiscint · Ceist 3(b)(3)\nLéigh an téacs ar leathanach 10.\n\n3. Cén áit a raibh Hector sa tsraith is déanaí?\n\nMeiriceá Láir\nAn Áise\nNa Stáit Aontaithe\n\nLéamhthuiscint · Ceist 3(b)(4)\nLéigh an téacs ar leathanach 10.\n\n4. Cé hé Carl Lewis?\n\nBuachaill bó\nLúthchleasaí\nAmhránaí\n\nLéamhthuiscint · Ceist 3(b)(5)\nLéigh an téacs ar leathanach 10.\n\n5. Cad é an rud is spéisiúla faoi Hector ina chuid clár taistil?",
-      "totalMarks": 60,
-      "topicId": "irish-9-2",
-      "examTopicKeys": [
-        "news",
-        "extract"
-      ],
-      "conceptId": "irish-foundation-r-3-ab",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 6,
-      "schemePages": [
-        6
-      ],
-      "taskRequirements": [],
-      "criteria": [
-        {
-          "id": "r-3a-1-answer",
-          "label": "Léamhthuiscint · Ceist 3(a)(1) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Ráth Chairn"
-          ]
-        },
-        {
-          "id": "r-3a-2-answer",
-          "label": "Léamhthuiscint · Ceist 3(a)(2) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Amhránaíocht ar an sean-nós"
-          ]
-        },
-        {
-          "id": "r-3a-3-answer",
-          "label": "Léamhthuiscint · Ceist 3(a)(3) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Mise Éire"
-          ]
-        },
-        {
-          "id": "r-3a-4-answer",
-          "label": "Léamhthuiscint · Ceist 3(a)(4) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Sa Phuball Gaeilge"
-          ]
-        },
-        {
-          "id": "r-3a-5-answer",
-          "label": "Léamhthuiscint · Ceist 3(a)(5) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            1,
-            3,
-            4,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "I dTeach na Gaeilge",
-            "6 mharc: I dTeach na Gaeilge ar an gcampas.",
-            "4 mharc: I dteach ar an gcampas; I dteach san ollscoil.",
-            "3 mharc: Ar an gcampas. 1 mharc: I dteach."
-          ]
-        },
-        {
-          "id": "r-3b-1-answer",
-          "label": "Léamhthuiscint · Ceist 3(b)(1) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Cláir thaistil"
-          ]
-        },
-        {
-          "id": "r-3b-2-answer",
-          "label": "Léamhthuiscint · Ceist 3(b)(2) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "I gContae na Gaillimhe"
-          ]
-        },
-        {
-          "id": "r-3b-3-answer",
-          "label": "Léamhthuiscint · Ceist 3(b)(3) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Na Stáit Aontaithe"
-          ]
-        },
-        {
-          "id": "r-3b-4-answer",
-          "label": "Léamhthuiscint · Ceist 3(b)(4) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Lúthchleasaí"
-          ]
-        },
-        {
-          "id": "r-3b-5-answer",
-          "label": "Léamhthuiscint · Ceist 3(b)(5) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Nach gcuireann aon rud eagla air"
-          ]
-        }
-      ],
-      "markingGuideNote": "This is one permitted printed selection. Each selected response retains its own SEC marking criteria; alternative routes are not added to this tariff.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Léamhthuiscint · Ceist 3(a) + (b)",
-        "title": "Gaeilge Bonnleibhéal 2020 · Léamhthuiscint · Ceist 3(a) + (b)",
-        "pages": [
-          9,
-          10
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "additionalTopicIds": [],
-      "memberCardIds": [
-        "irish-2020-fl-r-3a-1",
-        "irish-2020-fl-r-3a-2",
-        "irish-2020-fl-r-3a-3",
-        "irish-2020-fl-r-3a-4",
-        "irish-2020-fl-r-3a-5",
-        "irish-2020-fl-r-3b-1",
-        "irish-2020-fl-r-3b-2",
-        "irish-2020-fl-r-3b-3",
-        "irish-2020-fl-r-3b-4",
-        "irish-2020-fl-r-3b-5"
-      ]
-    },
-    {
-      "id": "irish-2020-fl-r-3-ac",
-      "year": 2020,
-      "level": "foundation",
-      "paper": 1,
-      "section": "2",
-      "atlasQuestionId": "R-3-AC",
-      "questionRef": "2020 FL Léamhthuiscint · Ceist 3(a) + (c)",
-      "questionText": "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.\n\nAn rogha don chárta seo: Léamhthuiscint · Ceist 3(a) + (c)\n\nLéamhthuiscint · Ceist 3(a)(1)\nLéigh an téacs ar leathanach 9.\n\n1. Cad as do Shibéal Ní Chasaide?\n\nGaoth Dobhair\nRáth Chairn\nMeiriceá\n\nLéamhthuiscint · Ceist 3(a)(2)\nLéigh an téacs ar leathanach 9.\n\n2. Cad a thosaigh sí ag foghlaim nuair a bhí sí cúig bliana d’aois?\n\nAn veidhlín\nAn chláirseach\nAmhránaíocht ar an sean-nós\n\nLéamhthuiscint · Ceist 3(a)(3)\nLéigh an téacs ar leathanach 9.\n\n3. Cén t-amhrán a chan Sibéal ar RTÉ sa chlár chun Éirí Amach na Cásca 1916 a chomóradh?\n\nFuarú\nMise Éire\nCeol 2018\n\nLéamhthuiscint · Ceist 3(a)(4)\nLéigh an téacs ar leathanach 9.\n\n4. Cá raibh Sibéal ag canadh i mí Mheán Fómhair 2019?\n\nSa Phuball Gaeilge\nI nDroichead Átha\nAg Fleadh Cheoil na hÉireann\n\nLéamhthuiscint · Ceist 3(a)(5)\nLéigh an téacs ar leathanach 9.\n\n5. Cár fhan Sibéal agus í sa chéad bhliain ar Ollscoil na hÉireann, Baile Átha Cliath?\n\nLéamhthuiscint · Ceist 3(c)(1)\nLéigh an téacs ar leathanach 11.\n\n1. Cén t-am atá sé agus an file ag déanamh ar an stáisiún traenach?\n\n5.45\n6.15\n6.45\n\nLéamhthuiscint · Ceist 3(c)(2)\nLéigh an téacs ar leathanach 11.\n\n2. Cad atá ag sleamhnú siar?\n\nAn stáisiún traenach\nAn ghealach\nAn ghrian\n\nLéamhthuiscint · Ceist 3(c)(3)\nLéigh an téacs ar leathanach 11.\n\n3. Cad atá ag damhsa sa stáisiún traenach?\n\nDuine\nCosa\nDuilleoga\n\nLéamhthuiscint · Ceist 3(c)(4)\nLéigh an téacs ar leathanach 11.\n\n4. Cén treo a bhféachann an file?\n\nÓ thuaidh\nÓ dheas\nSiar\n\nLéamhthuiscint · Ceist 3(c)(5)\nLéigh an téacs ar leathanach 11.\n\n5. Cad a dhéanfaidh an file nuair a stopfaidh an traein?",
-      "totalMarks": 60,
-      "topicId": "irish-9-2",
-      "examTopicKeys": [
-        "news",
-        "poem"
-      ],
-      "conceptId": "irish-foundation-r-3-ac",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 6,
-      "schemePages": [
-        6
-      ],
-      "taskRequirements": [],
-      "criteria": [
-        {
-          "id": "r-3a-1-answer",
-          "label": "Léamhthuiscint · Ceist 3(a)(1) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Ráth Chairn"
-          ]
-        },
-        {
-          "id": "r-3a-2-answer",
-          "label": "Léamhthuiscint · Ceist 3(a)(2) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Amhránaíocht ar an sean-nós"
-          ]
-        },
-        {
-          "id": "r-3a-3-answer",
-          "label": "Léamhthuiscint · Ceist 3(a)(3) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Mise Éire"
-          ]
-        },
-        {
-          "id": "r-3a-4-answer",
-          "label": "Léamhthuiscint · Ceist 3(a)(4) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Sa Phuball Gaeilge"
-          ]
-        },
-        {
-          "id": "r-3a-5-answer",
-          "label": "Léamhthuiscint · Ceist 3(a)(5) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            1,
-            3,
-            4,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "I dTeach na Gaeilge",
-            "6 mharc: I dTeach na Gaeilge ar an gcampas.",
-            "4 mharc: I dteach ar an gcampas; I dteach san ollscoil.",
-            "3 mharc: Ar an gcampas. 1 mharc: I dteach."
-          ]
-        },
-        {
-          "id": "r-3c-1-answer",
-          "label": "Léamhthuiscint · Ceist 3(c)(1) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "5.45"
-          ]
-        },
-        {
-          "id": "r-3c-2-answer",
-          "label": "Léamhthuiscint · Ceist 3(c)(2) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "An ghealach"
-          ]
-        },
-        {
-          "id": "r-3c-3-answer",
-          "label": "Léamhthuiscint · Ceist 3(c)(3) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Duilleoga"
-          ]
-        },
-        {
-          "id": "r-3c-4-answer",
-          "label": "Léamhthuiscint · Ceist 3(c)(4) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Ó dheas"
-          ]
-        },
-        {
-          "id": "r-3c-5-answer",
-          "label": "Léamhthuiscint · Ceist 3(c)(5) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            3,
-            4,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Brostóidh an file/mé/sé/sí ar bord",
-            "3 mharc: Beidh an file/mé/sé/sí compordach istigh.",
-            "6 mharc: Líne 5 agus Líne 6 as Véarsa 3 le chéile.",
-            "4 mharc: An véarsa iomlán (iomarcaíocht)."
-          ]
-        }
-      ],
-      "markingGuideNote": "This is one permitted printed selection. Each selected response retains its own SEC marking criteria; alternative routes are not added to this tariff.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Léamhthuiscint · Ceist 3(a) + (c)",
-        "title": "Gaeilge Bonnleibhéal 2020 · Léamhthuiscint · Ceist 3(a) + (c)",
-        "pages": [
-          9,
-          11
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "additionalTopicIds": [],
-      "memberCardIds": [
-        "irish-2020-fl-r-3a-1",
-        "irish-2020-fl-r-3a-2",
-        "irish-2020-fl-r-3a-3",
-        "irish-2020-fl-r-3a-4",
-        "irish-2020-fl-r-3a-5",
-        "irish-2020-fl-r-3c-1",
-        "irish-2020-fl-r-3c-2",
-        "irish-2020-fl-r-3c-3",
-        "irish-2020-fl-r-3c-4",
-        "irish-2020-fl-r-3c-5"
-      ]
-    },
-    {
-      "id": "irish-2020-fl-r-3-bc",
-      "year": 2020,
-      "level": "foundation",
-      "paper": 1,
-      "section": "2",
-      "atlasQuestionId": "R-3-BC",
-      "questionRef": "2020 FL Léamhthuiscint · Ceist 3(b) + (c)",
-      "questionText": "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.\n\nAn rogha don chárta seo: Léamhthuiscint · Ceist 3(b) + (c)\n\nLéamhthuiscint · Ceist 3(b)(1)\nLéigh an téacs ar leathanach 10.\n\n1. Cén cineál clár is mó a chuireann Hector Ó hEochagáin i láthair?\n\nCláir thaistil\nCláir chainte\nCláir cheoil\n\nLéamhthuiscint · Ceist 3(b)(2)\nLéigh an téacs ar leathanach 10.\n\n2. Cá bhfuil Hector ina chónaí faoi láthair?\n\nSa Spáinn\nI gContae na Gaillimhe\nAr Inis Meáin\n\nLéamhthuiscint · Ceist 3(b)(3)\nLéigh an téacs ar leathanach 10.\n\n3. Cén áit a raibh Hector sa tsraith is déanaí?\n\nMeiriceá Láir\nAn Áise\nNa Stáit Aontaithe\n\nLéamhthuiscint · Ceist 3(b)(4)\nLéigh an téacs ar leathanach 10.\n\n4. Cé hé Carl Lewis?\n\nBuachaill bó\nLúthchleasaí\nAmhránaí\n\nLéamhthuiscint · Ceist 3(b)(5)\nLéigh an téacs ar leathanach 10.\n\n5. Cad é an rud is spéisiúla faoi Hector ina chuid clár taistil?\n\nLéamhthuiscint · Ceist 3(c)(1)\nLéigh an téacs ar leathanach 11.\n\n1. Cén t-am atá sé agus an file ag déanamh ar an stáisiún traenach?\n\n5.45\n6.15\n6.45\n\nLéamhthuiscint · Ceist 3(c)(2)\nLéigh an téacs ar leathanach 11.\n\n2. Cad atá ag sleamhnú siar?\n\nAn stáisiún traenach\nAn ghealach\nAn ghrian\n\nLéamhthuiscint · Ceist 3(c)(3)\nLéigh an téacs ar leathanach 11.\n\n3. Cad atá ag damhsa sa stáisiún traenach?\n\nDuine\nCosa\nDuilleoga\n\nLéamhthuiscint · Ceist 3(c)(4)\nLéigh an téacs ar leathanach 11.\n\n4. Cén treo a bhféachann an file?\n\nÓ thuaidh\nÓ dheas\nSiar\n\nLéamhthuiscint · Ceist 3(c)(5)\nLéigh an téacs ar leathanach 11.\n\n5. Cad a dhéanfaidh an file nuair a stopfaidh an traein?",
-      "totalMarks": 60,
-      "topicId": "irish-9-2",
-      "examTopicKeys": [
-        "extract",
-        "poem"
-      ],
-      "conceptId": "irish-foundation-r-3-bc",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 6,
-      "schemePages": [
-        6
-      ],
-      "taskRequirements": [],
-      "criteria": [
-        {
-          "id": "r-3b-1-answer",
-          "label": "Léamhthuiscint · Ceist 3(b)(1) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Cláir thaistil"
-          ]
-        },
-        {
-          "id": "r-3b-2-answer",
-          "label": "Léamhthuiscint · Ceist 3(b)(2) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "I gContae na Gaillimhe"
-          ]
-        },
-        {
-          "id": "r-3b-3-answer",
-          "label": "Léamhthuiscint · Ceist 3(b)(3) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Na Stáit Aontaithe"
-          ]
-        },
-        {
-          "id": "r-3b-4-answer",
-          "label": "Léamhthuiscint · Ceist 3(b)(4) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Lúthchleasaí"
-          ]
-        },
-        {
-          "id": "r-3b-5-answer",
-          "label": "Léamhthuiscint · Ceist 3(b)(5) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Nach gcuireann aon rud eagla air"
-          ]
-        },
-        {
-          "id": "r-3c-1-answer",
-          "label": "Léamhthuiscint · Ceist 3(c)(1) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "5.45"
-          ]
-        },
-        {
-          "id": "r-3c-2-answer",
-          "label": "Léamhthuiscint · Ceist 3(c)(2) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "An ghealach"
-          ]
-        },
-        {
-          "id": "r-3c-3-answer",
-          "label": "Léamhthuiscint · Ceist 3(c)(3) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Duilleoga"
-          ]
-        },
-        {
-          "id": "r-3c-4-answer",
-          "label": "Léamhthuiscint · Ceist 3(c)(4) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Ó dheas"
-          ]
-        },
-        {
-          "id": "r-3c-5-answer",
-          "label": "Léamhthuiscint · Ceist 3(c)(5) · Freagra",
-          "kind": "award",
-          "maxMarks": 6,
-          "permittedMarks": [
-            0,
-            3,
-            4,
-            6
-          ],
-          "guidanceKind": "exact-answer",
-          "guidance": [
-            "Brostóidh an file/mé/sé/sí ar bord",
-            "3 mharc: Beidh an file/mé/sé/sí compordach istigh.",
-            "6 mharc: Líne 5 agus Líne 6 as Véarsa 3 le chéile.",
-            "4 mharc: An véarsa iomlán (iomarcaíocht)."
-          ]
-        }
-      ],
-      "markingGuideNote": "This is one permitted printed selection. Each selected response retains its own SEC marking criteria; alternative routes are not added to this tariff.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Léamhthuiscint · Ceist 3(b) + (c)",
-        "title": "Gaeilge Bonnleibhéal 2020 · Léamhthuiscint · Ceist 3(b) + (c)",
-        "pages": [
-          10,
-          11
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "additionalTopicIds": [],
-      "memberCardIds": [
-        "irish-2020-fl-r-3b-1",
-        "irish-2020-fl-r-3b-2",
-        "irish-2020-fl-r-3b-3",
-        "irish-2020-fl-r-3b-4",
-        "irish-2020-fl-r-3b-5",
-        "irish-2020-fl-r-3c-1",
-        "irish-2020-fl-r-3c-2",
-        "irish-2020-fl-r-3c-3",
-        "irish-2020-fl-r-3c-4",
-        "irish-2020-fl-r-3c-5"
-      ]
-    },
-    {
       "id": "irish-2020-fl-w-4a",
       "year": 2020,
       "level": "foundation",
@@ -4308,6 +3195,7 @@
         10
       ],
       "taskRequirements": [
+        "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).",
         "Scríobh fógra bunaithe ar na ceithre phictiúr agus ar na treoracha."
       ],
       "criteria": [
@@ -4467,6 +3355,7 @@
         12
       ],
       "taskRequirements": [
+        "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).",
         "Scríobh freagra ar chuireadh Áine mar Ruairí.",
         "Luaigh gach pointe agus dhá rud faoin gcluiche; tús agus críoch oiriúnach."
       ],
@@ -4643,6 +3532,7 @@
         13
       ],
       "taskRequirements": [
+        "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).",
         "Scríobh timpeall 90 focal in Iris na Scoile.",
         "Tabhair cúig thagairt ar a laghad don ócáid sna pictiúir."
       ],
@@ -4751,6 +3641,7 @@
         15
       ],
       "taskRequirements": [
+        "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).",
         "Scríobh timpeall 90 focal in Iris na Scoile.",
         "Tabhair cúig thagairt ar a laghad don ócáid sna pictiúir."
       ],
@@ -4836,1000 +3727,6 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Original examination pages, including every required picture or passage."
       }
-    },
-    {
-      "id": "irish-2020-fl-w-4a-5a",
-      "year": 2020,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-4A-5A",
-      "questionRef": "2020 FL Scríobh · Ceist 4(a) + Scríobh · Ceist 5(a)",
-      "questionText": "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).\n\nAn rogha don chárta seo: Scríobh · Ceist 4(a) + Scríobh · Ceist 5(a)\n\nScríobh · Ceist 4(a)\nFéach ar na pictiúir thíos.\n\nScríobh amach an FÓGRA a bhaineann leis an rud atá i gceist thuas.\n\nCén rud a bheidh ar siúl? Cén áit?\nCén lá? Cén dáta? Cén t-am? Táille?\nCén t-aoi speisialta a bheidh i láthair?\nCad a dhéanfar leis an airgead?\n\nScríobh · Ceist 5(a)\nFéach ar an bpictiúr thíos.\n\nBhí tú ag Seó Tallainne le do chairde an mhí seo caite.\nTá tú chun cuntas (timpeall 90 focal) a scríobh in Iris na Scoile faoin Seó Tallainne sin.\n\nScríobh an cuntas sin (timpeall 90 focal) sa spás atá faoin bpictiúr.\n\nSeó Tallainne",
-      "totalMarks": 90,
-      "topicId": "irish-9-3",
-      "examTopicKeys": [
-        "notice",
-        "pictures",
-        "story"
-      ],
-      "conceptId": "irish-foundation-w-4a-5a",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 8,
-      "schemePages": [
-        8,
-        9,
-        10,
-        13
-      ],
-      "taskRequirements": [
-        "Scríobh fógra bunaithe ar na ceithre phictiúr agus ar na treoracha.",
-        "Scríobh timpeall 90 focal in Iris na Scoile.",
-        "Tabhair cúig thagairt ar a laghad don ócáid sna pictiúir."
-      ],
-      "criteria": [
-        {
-          "id": "w-4a-leagan",
-          "label": "Scríobh · Ceist 4(a) · Leagan Amach",
-          "kind": "award",
-          "maxMarks": 1,
-          "permittedMarks": [
-            0,
-            1
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Iarracht ar fhógra."
-          ]
-        },
-        {
-          "id": "w-4a-pictiur1",
-          "label": "Scríobh · Ceist 4(a) · Pictiúr 1",
-          "kind": "award",
-          "maxMarks": 8,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Cén rud a bheidh ar siúl? 4 mharc Glac leis an bhfreagra seo ar 4 mharc: Tráth na gCeist (Boird) Glac leis an bhfreagra seo ar 2 mharc: comórtas ceisteanna Glac leis an bhfreagra seo ar 1 mharc: comórtas Pictiúr 1 Cén áit? 4 mharc Glac leis na freagraí seo ar 4 mharc: ainm áite ar bith i nGaeilge, sa halla, i halla na scoile… Sa halla = 2 mharc Sa scoil = 1 mharc Ná bronn aon mharc ar ainm áite i mBéarla. "
-          ]
-        },
-        {
-          "id": "w-4a-pictiur2",
-          "label": "Scríobh · Ceist 4(a) · Pictiúr 2",
-          "kind": "award",
-          "maxMarks": 13,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Cén lá? 4 mharc Glac leis na freagraí seo ar 4 mharc: lá ar bith atá ainmnithe nó inniu, anocht, amárach, ag an deireadh seachtaine, an tseachtain seo chugainn... Beidh pionós -1 i gceist má luaitear an Aimsir Chaite: Dé Luain seo caite… Pictiúr 2 Cén dáta? 3 mharc Glac le dáta ina bhfuil an mhí litrithe. Ní gá an bhliain a bheith luaite. Samplaí: 13 Nollaig, 7 Nollaig 2020… Pionós -1 i gceist i gcás figiúirí mar shampla 18/12, 16/12/2020… Pionós -1 i gceist má tá an mhí litrithe ach gan dáta cinnte luaite: Samhain, Nollaig 2020… Ná bronn aon mharc ar fhigiúr lom. Pictiúr 2 Cén t-am? 3 mharc Glac le ham ar bith atá inghlactha sa chomhthéacs. Samplaí: A deich a chlog, 10 a.m., am lóin, 10 a.m.-2 p.m., tar éis na scoile, meán lae… Pictiúr 2 Táille? 3 mharc Beifear ag súil le méid áirithe airgid le comhartha euro agus ceangal éigin le táille/le cead isteach. Samplaí: Táille: €5, Cúig euro mar tháille, Ticéad €5, Cead isteach €5… Pionós -2 i gceist i gcás méid airgid leis féin "
-          ]
-        },
-        {
-          "id": "w-4a-pictiur3",
-          "label": "Scríobh · Ceist 4(a) · Pictiúr 3",
-          "kind": "award",
-          "maxMarks": 4,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Cén t-aoi speisialta a bheidh i láthair? 4 mharc Beidh ionramháil ag teastáil.",
-            "8 Samplaí:…ann/i láthair/sa scoil…an tUachtarán/Micheál D. Ó hUiginn mar aoi speisialta…ag bronnadh duaiseanna…ag caint... Pionós -3 i gcás ainm lom gan aon cheangal/gan aon ionramháil. Ná glac le hainm aon duine eile. "
-          ]
-        },
-        {
-          "id": "w-4a-pictiur4",
-          "label": "Scríobh · Ceist 4(a) · Pictiúr 4",
-          "kind": "award",
-          "maxMarks": 4,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Cad a dhéanfar leis an airgead? 4 mharc Beidh ionramháil ag teastáil a chuirfidh in iúl go mbeidh an t-airgead ag dul go Coiste Glas na Scoile… Samplaí: Airgead ag dul go (dtí an) Coiste Glas, ar son an choiste… Airgead: Coiste Glas, Airgead  Coiste Glas, airgead ar son boscaí bruscair… ‘Coiste Glas na Scoile’ leis féin = 0 "
-          ]
-        },
-        {
-          "id": "w-4a-gaeilge",
-          "label": "Scríobh · Ceist 4(a) · Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 10,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Stór focal: cruinneas agus oiriúnacht stór focal. Litriú.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric."
-          ]
-        },
-        {
-          "id": "w-5a-freagra",
-          "label": "Scríobh · Ceist 5(a) · Freagra iomlán · Cumarsáid 37 + Gaeilge 13",
-          "kind": "award",
-          "maxMarks": 50,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-            21,
-            22,
-            23,
-            24,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32,
-            33,
-            34,
-            35,
-            36,
-            37,
-            38,
-            39,
-            40,
-            41,
-            42,
-            43,
-            44,
-            45,
-            46,
-            47,
-            48,
-            49,
-            50
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Cumas Cumarsáide = 37 marc; Cruinneas Gaeilge = 13 mharc. Mark both parts, then enter the final whole-response mark after any published proportional length adjustment.",
-            "11 Ceist 5 Freagair (a) NÓ (b). (50 marc) (a) Cuntas (50 marc) Cumas Cumarsáide = 37 marc = 50 marc Cruinneas Gaeilge = 13 mharc Tasc  Cuntas (timpeall 90 focal) a scríobh in Iris na Scoile bunaithe ar an ábhar: ‘Seó Tallainne’ mar atá léirithe sa phictiúr. Cumas Cumarsáide = 37 marc  Cúig thagairt (T1 , T2 , T3 , T4 , T5 ) ar a laghad atá ag teastáil sa chuntas d’imeachtaí nó do thosca na hócáide.  Tá caighdeán na cumarsáide le cur san áireamh. Ná glac le cóipeáil lom.  Pionós (-5 ón 37 atá ar fáil) i gcás gach tagairt in easnamh. (37-5t = 32)  Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an ócáid a léirítear.  Ná glac le Béarla.  Tá timpeall 90 focal ag teastáil.  Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta: (mar shampla: mura bhfuil ann ach 45 focal, an t-alt a mharcáil as an marc atá ar fáil don iarracht agus ansin 50% a bhaint den mharc bronnta).  An marc atá ar fáil don iarracht agus na marcanna bronnta agus bainte a léiriú. Tagairtí féideartha: Ag dul go dtí an seó tallainne…an lá…an dáta…an t-am…na daoine eile a bhí ag an seó tallainne…an halla/an club/halla na scoile…an halla dubh/plódaithe le daoine…chosain na ticéid €…chun dul isteach…an stáitse…na ceoltóirí…an banna ceoil…na huirlisí ceoil… an líon ceoltóirí ar an stáitse…an t-atmaisféar…an áit…an comhartha…na scoláirí…ag éisteacht leis an gceol…ag canadh…aisteoirí/rinceoirí…ag bualadh bos…na moltóirí… an scór…bia/buidéal uisce ar fáil i siopa na scoile…ag an gcomórtas tallainne…ag ithe agus ag ól…ag díol agus ag ceannach ticéad don chrannchur…éadaí…bhuaigh tú…an comórtas… na duaiseanna…tuairim faoin seó tallainne…bhain mé taitneamh as an oíche...mar a mhothaigh tú nuair a bhí an seó tallainne thart...grianghraf…scéal ar an bpáipéar… ar leathanach Facebook… Léirigh na tagairtí ar an script mar seo: T1 , T2 , T3 , T4 , T5 Cruinneas Gaeilge = 13 mharc Léiriú na marcanna ag bun an fhreagra: Cumarsáid Cum (37) = Cruinneas Gaeilge Cr (13) =",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Stór focal: cruinneas agus oiriúnacht stór focal. Litriú.",
-            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric.",
-            "If too short, subtract the appropriate percentage of the awarded mark: the SEC example is 45 words → mark the attempt, then deduct 50% of the awarded mark. Apply this only to this story. No later-year fixed length table is printed."
-          ]
-        }
-      ],
-      "markingGuideNote": "This is one permitted printed selection. Each selected response retains its own SEC marking criteria; alternative routes are not added to this tariff.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 4(a) + Scríobh · Ceist 5(a)",
-        "title": "Gaeilge Bonnleibhéal 2020 · Scríobh · Ceist 4(a) + Scríobh · Ceist 5(a)",
-        "pages": [
-          14,
-          16
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "additionalTopicIds": [
-        "irish-9-4"
-      ],
-      "memberCardIds": [
-        "irish-2020-fl-w-4a",
-        "irish-2020-fl-w-5a"
-      ]
-    },
-    {
-      "id": "irish-2020-fl-w-4a-5b",
-      "year": 2020,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-4A-5B",
-      "questionRef": "2020 FL Scríobh · Ceist 4(a) + Scríobh · Ceist 5(b)",
-      "questionText": "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).\n\nAn rogha don chárta seo: Scríobh · Ceist 4(a) + Scríobh · Ceist 5(b)\n\nScríobh · Ceist 4(a)\nFéach ar na pictiúir thíos.\n\nScríobh amach an FÓGRA a bhaineann leis an rud atá i gceist thuas.\n\nCén rud a bheidh ar siúl? Cén áit?\nCén lá? Cén dáta? Cén t-am? Táille?\nCén t-aoi speisialta a bheidh i láthair?\nCad a dhéanfar leis an airgead?\n\nScríobh · Ceist 5(b)\nFéach ar na pictiúir anseo thíos.\n\nTharla an eachtra seo agus tú ar thuras báid le do chara.\nTá tú chun scríobh faoin eachtra seo in Iris na Scoile (timpeall 90 focal).\n\nScríobh faoin eachtra (timpeall 90 focal) sa spás atá faoi na pictiúir.\n\nEACHTRA A THARLA",
-      "totalMarks": 90,
-      "topicId": "irish-9-3",
-      "examTopicKeys": [
-        "notice",
-        "pictures",
-        "story"
-      ],
-      "conceptId": "irish-foundation-w-4a-5b",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 8,
-      "schemePages": [
-        8,
-        9,
-        10,
-        14,
-        15
-      ],
-      "taskRequirements": [
-        "Scríobh fógra bunaithe ar na ceithre phictiúr agus ar na treoracha.",
-        "Scríobh timpeall 90 focal in Iris na Scoile.",
-        "Tabhair cúig thagairt ar a laghad don ócáid sna pictiúir."
-      ],
-      "criteria": [
-        {
-          "id": "w-4a-leagan",
-          "label": "Scríobh · Ceist 4(a) · Leagan Amach",
-          "kind": "award",
-          "maxMarks": 1,
-          "permittedMarks": [
-            0,
-            1
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Iarracht ar fhógra."
-          ]
-        },
-        {
-          "id": "w-4a-pictiur1",
-          "label": "Scríobh · Ceist 4(a) · Pictiúr 1",
-          "kind": "award",
-          "maxMarks": 8,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Cén rud a bheidh ar siúl? 4 mharc Glac leis an bhfreagra seo ar 4 mharc: Tráth na gCeist (Boird) Glac leis an bhfreagra seo ar 2 mharc: comórtas ceisteanna Glac leis an bhfreagra seo ar 1 mharc: comórtas Pictiúr 1 Cén áit? 4 mharc Glac leis na freagraí seo ar 4 mharc: ainm áite ar bith i nGaeilge, sa halla, i halla na scoile… Sa halla = 2 mharc Sa scoil = 1 mharc Ná bronn aon mharc ar ainm áite i mBéarla. "
-          ]
-        },
-        {
-          "id": "w-4a-pictiur2",
-          "label": "Scríobh · Ceist 4(a) · Pictiúr 2",
-          "kind": "award",
-          "maxMarks": 13,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Cén lá? 4 mharc Glac leis na freagraí seo ar 4 mharc: lá ar bith atá ainmnithe nó inniu, anocht, amárach, ag an deireadh seachtaine, an tseachtain seo chugainn... Beidh pionós -1 i gceist má luaitear an Aimsir Chaite: Dé Luain seo caite… Pictiúr 2 Cén dáta? 3 mharc Glac le dáta ina bhfuil an mhí litrithe. Ní gá an bhliain a bheith luaite. Samplaí: 13 Nollaig, 7 Nollaig 2020… Pionós -1 i gceist i gcás figiúirí mar shampla 18/12, 16/12/2020… Pionós -1 i gceist má tá an mhí litrithe ach gan dáta cinnte luaite: Samhain, Nollaig 2020… Ná bronn aon mharc ar fhigiúr lom. Pictiúr 2 Cén t-am? 3 mharc Glac le ham ar bith atá inghlactha sa chomhthéacs. Samplaí: A deich a chlog, 10 a.m., am lóin, 10 a.m.-2 p.m., tar éis na scoile, meán lae… Pictiúr 2 Táille? 3 mharc Beifear ag súil le méid áirithe airgid le comhartha euro agus ceangal éigin le táille/le cead isteach. Samplaí: Táille: €5, Cúig euro mar tháille, Ticéad €5, Cead isteach €5… Pionós -2 i gceist i gcás méid airgid leis féin "
-          ]
-        },
-        {
-          "id": "w-4a-pictiur3",
-          "label": "Scríobh · Ceist 4(a) · Pictiúr 3",
-          "kind": "award",
-          "maxMarks": 4,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Cén t-aoi speisialta a bheidh i láthair? 4 mharc Beidh ionramháil ag teastáil.",
-            "8 Samplaí:…ann/i láthair/sa scoil…an tUachtarán/Micheál D. Ó hUiginn mar aoi speisialta…ag bronnadh duaiseanna…ag caint... Pionós -3 i gcás ainm lom gan aon cheangal/gan aon ionramháil. Ná glac le hainm aon duine eile. "
-          ]
-        },
-        {
-          "id": "w-4a-pictiur4",
-          "label": "Scríobh · Ceist 4(a) · Pictiúr 4",
-          "kind": "award",
-          "maxMarks": 4,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Cad a dhéanfar leis an airgead? 4 mharc Beidh ionramháil ag teastáil a chuirfidh in iúl go mbeidh an t-airgead ag dul go Coiste Glas na Scoile… Samplaí: Airgead ag dul go (dtí an) Coiste Glas, ar son an choiste… Airgead: Coiste Glas, Airgead  Coiste Glas, airgead ar son boscaí bruscair… ‘Coiste Glas na Scoile’ leis féin = 0 "
-          ]
-        },
-        {
-          "id": "w-4a-gaeilge",
-          "label": "Scríobh · Ceist 4(a) · Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 10,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Stór focal: cruinneas agus oiriúnacht stór focal. Litriú.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric."
-          ]
-        },
-        {
-          "id": "w-5b-freagra",
-          "label": "Scríobh · Ceist 5(b) · Freagra iomlán · Cumarsáid 37 + Gaeilge 13",
-          "kind": "award",
-          "maxMarks": 50,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-            21,
-            22,
-            23,
-            24,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32,
-            33,
-            34,
-            35,
-            36,
-            37,
-            38,
-            39,
-            40,
-            41,
-            42,
-            43,
-            44,
-            45,
-            46,
-            47,
-            48,
-            49,
-            50
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Cumas Cumarsáide = 37 marc; Cruinneas Gaeilge = 13 mharc. Mark both parts, then enter the final whole-response mark after any published proportional length adjustment.",
-            "12 Nó (b) Eachtra (50 marc) Cumas Cumarsáide = 37 marc = 50 marc Cruinneas Gaeilge = 13 mharc Tasc  Scríobh faoin eachtra (timpeall 90 focal) in Iris na Scoile. Cumas Cumarsáide = 37 marc  Tá cúig thagairt ar a laghad ag teastáil le go mbeadh fás nádúrtha ag baint leis an eachtra. Ceann do gach pictiúr (T1, T2, T3, T4) agus aon tagairt amháin eile (T5).  Tá caighdeán na cumarsáide le cur san áireamh. Ná glac le cóipeáil lom.  Pionós (-5 ón 37 atá ar fáil) i gcás gach tagairt in easnamh. (37-5t = 32)  Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an eachtra a léirítear.  Ná glac le Béarla.  Tá timpeall 90 focal ag teastáil.  Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta: (mar shampla: mura bhfuil ann ach 45 focal, an t-alt a mharcáil as an marc atá ar fáil don iarracht agus ansin 50% a bhaint den mharc bronnta).  An marc atá ar fáil don iarracht agus na marcanna bronnta agus bainte a léiriú. Tagairtí féideartha: Pictiúr 1 Na déagóirí…ina seasamh ar an gcé…fógra/póstaer….turas báid…an deilf…na ticéid €…an bád ag fágáil ag 12 a chlog…ag comhrá…ba mhaith leo dul amach chun an deilf a fheiceáil… an aimsir…plódaithe le daoine…ar laethanta saoire…conas a mhothaigh siad… Pictiúr 2 An t-am…an aimsir…an slua…ina seasamh sa scuaine…a lán daoine…ag comhrá…€10…an fear… an ticéad…sceitimíní áthais orthu…málaí…ceamara…fón póca… Pictiúr 3 An bád lán le paisinéirí…D’fhág an bád an ché…amuigh ar an bhfarraige…lá grianmhar, te a bhí ann…ag súil go bhfeicfeadh siad an deilf…léim an deilf san uisce…bhí gach duine ciúin…daoine ag tógáil grianghraf…thit an ceamara as a lámh…baineadh geit as…isteach san uisce…chuaigh sé síos san uisce…ag caoineadh…trí chéile…imníoch…brónach… Pictiúr 4 Ar ais ar an gcé…an t-am…thuirling na déagóirí den bhád…a dtuismitheoirí ann chun bualadh leo…d’inis…an scéal do… Léirigh na tagairtí ar an script mar seo: T1, T2, T3, T4, T5",
-            "13 Cruinneas Gaeilge = 13 mharc Léiriú na marcanna ag bun an fhreagra: Cumarsáid Cum (37) = Cruinneas Gaeilge Cr (13) =",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Stór focal: cruinneas agus oiriúnacht stór focal. Litriú.",
-            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric.",
-            "If too short, subtract the appropriate percentage of the awarded mark: the SEC example is 45 words → mark the attempt, then deduct 50% of the awarded mark. Apply this only to this story. No later-year fixed length table is printed."
-          ]
-        }
-      ],
-      "markingGuideNote": "This is one permitted printed selection. Each selected response retains its own SEC marking criteria; alternative routes are not added to this tariff.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 4(a) + Scríobh · Ceist 5(b)",
-        "title": "Gaeilge Bonnleibhéal 2020 · Scríobh · Ceist 4(a) + Scríobh · Ceist 5(b)",
-        "pages": [
-          14,
-          17
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "additionalTopicIds": [
-        "irish-9-4"
-      ],
-      "memberCardIds": [
-        "irish-2020-fl-w-4a",
-        "irish-2020-fl-w-5b"
-      ]
-    },
-    {
-      "id": "irish-2020-fl-w-4b-5a",
-      "year": 2020,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-4B-5A",
-      "questionRef": "2020 FL Scríobh · Ceist 4(b) · Freagra ar chuireadh + Scríobh · Ceist 5(a)",
-      "questionText": "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).\n\nAn rogha don chárta seo: Scríobh · Ceist 4(b) · Freagra ar chuireadh + Scríobh · Ceist 5(a)\n\nScríobh · Ceist 4(b) · Freagra ar chuireadh\nFéach ar na pictiúir thíos.\n\nIs tusa Ruairí. Fuair tú an cuireadh seo ó Áine. Scríobh FREAGRA ar an gcuireadh seo.\nI do fhreagra, luaigh na pointí seo:\n\n- An lá a fuair tú an cuireadh — Pictiúr 1\n- Go raibh áthas ort nuair a fuair tú an cuireadh — Pictiúr 1\n- Gur iarr tú cead ar do Mham dul ann — Pictiúr 3\n- Go mbeidh tú ábalta dul ann — Pictiúr 3\n- Conas a rachaidh sibh ann — Pictiúr 3\n- Dhá rud faoin gcluiche — Pictiúr 4\n- An t-am a thiocfaidh sibh abhaile — Pictiúr 4\n\nN.B. Bíodh an leagan amach cuí ar do fhreagra: tús agus críoch oiriúnach.\n\nScríobh · Ceist 5(a)\nFéach ar an bpictiúr thíos.\n\nBhí tú ag Seó Tallainne le do chairde an mhí seo caite.\nTá tú chun cuntas (timpeall 90 focal) a scríobh in Iris na Scoile faoin Seó Tallainne sin.\n\nScríobh an cuntas sin (timpeall 90 focal) sa spás atá faoin bpictiúr.\n\nSeó Tallainne",
-      "totalMarks": 90,
-      "topicId": "irish-9-3",
-      "examTopicKeys": [
-        "letterWriting",
-        "pictures",
-        "story"
-      ],
-      "conceptId": "irish-foundation-w-4b-5a",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 11,
-      "schemePages": [
-        11,
-        12,
-        13
-      ],
-      "taskRequirements": [
-        "Scríobh freagra ar chuireadh Áine mar Ruairí.",
-        "Luaigh gach pointe agus dhá rud faoin gcluiche; tús agus críoch oiriúnach.",
-        "Scríobh timpeall 90 focal in Iris na Scoile.",
-        "Tabhair cúig thagairt ar a laghad don ócáid sna pictiúir."
-      ],
-      "criteria": [
-        {
-          "id": "w-4b-iarracht",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Iarracht ar an bhfreagra",
-          "kind": "award",
-          "maxMarks": 1,
-          "permittedMarks": [
-            0,
-            1
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Iarracht ar an bhfreagra = 1 mharc."
-          ]
-        },
-        {
-          "id": "w-4b-beannu",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Beannú",
-          "kind": "award",
-          "maxMarks": 1,
-          "permittedMarks": [
-            0,
-            1
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Beannú = 1 mharc."
-          ]
-        },
-        {
-          "id": "w-4b-slan",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Slán / Síniú",
-          "kind": "award",
-          "maxMarks": 1,
-          "permittedMarks": [
-            0,
-            1
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Slán / Síniú = 1 mharc."
-          ]
-        },
-        {
-          "id": "w-4b-pictiur1",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Pictiúr 1",
-          "kind": "award",
-          "maxMarks": 7,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " An lá a fuair tú an cuireadh 4 mharc Glac le lá ar bith atá ainmnithe: Dé Luain, inné, ar maidin… Pictiúr 1 Go raibh áthas ort nuair a fuair tú an cuireadh 3 mharc Bhí áthas orm…go raibh (míle) maith agat… "
-          ]
-        },
-        {
-          "id": "w-4b-pictiur3",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Pictiúr 3",
-          "kind": "award",
-          "maxMarks": 9,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Gur iarr tú cead ar do Mham dul ann 3 mharc D’iarr mé cead ar Mham…chuir mé ceist ar Mham…labhair mé le Mam… Pictiúr 3 Go mbeidh tú ábalta dul ann 3 mharc Beidh mé ábalta dul…‘Sea’ a dúirt Mam…tá cead agam… Pictiúr 3 Conas a rachaidh sibh ann 3 mharc Rachaimid ar an traein…gheobhaimid síob ó…go dtí an stáisiún traenach…fágfaidh an traein ar…beimid sa bhaile ar… "
-          ]
-        },
-        {
-          "id": "w-4b-pictiur4",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Pictiúr 4",
-          "kind": "award",
-          "maxMarks": 11,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Dhá rud faoin gcluiche 4 mharc + 4 mharc = 8 marc Beidh…ag imirt…an staid/an pháirc imeartha…an dáta…an lá…an t-am…ag féachaint ar na foirne…ag comhrá…ag bualadh bos…ag canadh…ag screadach…cairde…cé a bhuafaidh an cluiche…an corn… Pictiúr 4 An t-am a thiocfaidh sibh abhaile 3 mharc Glac le ham ar bith atá inghlactha sa chomhthéacs Samplaí: Fágfaidh an traein ar…tiocfaimid abhaile ar… "
-          ]
-        },
-        {
-          "id": "w-4b-gaeilge",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 10,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Stór focal: cruinneas agus oiriúnacht stór focal. Litriú.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric."
-          ]
-        },
-        {
-          "id": "w-5a-freagra",
-          "label": "Scríobh · Ceist 5(a) · Freagra iomlán · Cumarsáid 37 + Gaeilge 13",
-          "kind": "award",
-          "maxMarks": 50,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-            21,
-            22,
-            23,
-            24,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32,
-            33,
-            34,
-            35,
-            36,
-            37,
-            38,
-            39,
-            40,
-            41,
-            42,
-            43,
-            44,
-            45,
-            46,
-            47,
-            48,
-            49,
-            50
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Cumas Cumarsáide = 37 marc; Cruinneas Gaeilge = 13 mharc. Mark both parts, then enter the final whole-response mark after any published proportional length adjustment.",
-            "11 Ceist 5 Freagair (a) NÓ (b). (50 marc) (a) Cuntas (50 marc) Cumas Cumarsáide = 37 marc = 50 marc Cruinneas Gaeilge = 13 mharc Tasc  Cuntas (timpeall 90 focal) a scríobh in Iris na Scoile bunaithe ar an ábhar: ‘Seó Tallainne’ mar atá léirithe sa phictiúr. Cumas Cumarsáide = 37 marc  Cúig thagairt (T1 , T2 , T3 , T4 , T5 ) ar a laghad atá ag teastáil sa chuntas d’imeachtaí nó do thosca na hócáide.  Tá caighdeán na cumarsáide le cur san áireamh. Ná glac le cóipeáil lom.  Pionós (-5 ón 37 atá ar fáil) i gcás gach tagairt in easnamh. (37-5t = 32)  Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an ócáid a léirítear.  Ná glac le Béarla.  Tá timpeall 90 focal ag teastáil.  Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta: (mar shampla: mura bhfuil ann ach 45 focal, an t-alt a mharcáil as an marc atá ar fáil don iarracht agus ansin 50% a bhaint den mharc bronnta).  An marc atá ar fáil don iarracht agus na marcanna bronnta agus bainte a léiriú. Tagairtí féideartha: Ag dul go dtí an seó tallainne…an lá…an dáta…an t-am…na daoine eile a bhí ag an seó tallainne…an halla/an club/halla na scoile…an halla dubh/plódaithe le daoine…chosain na ticéid €…chun dul isteach…an stáitse…na ceoltóirí…an banna ceoil…na huirlisí ceoil… an líon ceoltóirí ar an stáitse…an t-atmaisféar…an áit…an comhartha…na scoláirí…ag éisteacht leis an gceol…ag canadh…aisteoirí/rinceoirí…ag bualadh bos…na moltóirí… an scór…bia/buidéal uisce ar fáil i siopa na scoile…ag an gcomórtas tallainne…ag ithe agus ag ól…ag díol agus ag ceannach ticéad don chrannchur…éadaí…bhuaigh tú…an comórtas… na duaiseanna…tuairim faoin seó tallainne…bhain mé taitneamh as an oíche...mar a mhothaigh tú nuair a bhí an seó tallainne thart...grianghraf…scéal ar an bpáipéar… ar leathanach Facebook… Léirigh na tagairtí ar an script mar seo: T1 , T2 , T3 , T4 , T5 Cruinneas Gaeilge = 13 mharc Léiriú na marcanna ag bun an fhreagra: Cumarsáid Cum (37) = Cruinneas Gaeilge Cr (13) =",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Stór focal: cruinneas agus oiriúnacht stór focal. Litriú.",
-            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric.",
-            "If too short, subtract the appropriate percentage of the awarded mark: the SEC example is 45 words → mark the attempt, then deduct 50% of the awarded mark. Apply this only to this story. No later-year fixed length table is printed."
-          ]
-        }
-      ],
-      "markingGuideNote": "This is one permitted printed selection. Each selected response retains its own SEC marking criteria; alternative routes are not added to this tariff.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh + Scríobh · Ceist 5(a)",
-        "title": "Gaeilge Bonnleibhéal 2020 · Scríobh · Ceist 4(b) · Freagra ar chuireadh + Scríobh · Ceist 5(a)",
-        "pages": [
-          15,
-          16
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "additionalTopicIds": [
-        "irish-2-8",
-        "irish-9-4"
-      ],
-      "memberCardIds": [
-        "irish-2020-fl-w-4b",
-        "irish-2020-fl-w-5a"
-      ]
-    },
-    {
-      "id": "irish-2020-fl-w-4b-5b",
-      "year": 2020,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-4B-5B",
-      "questionRef": "2020 FL Scríobh · Ceist 4(b) · Freagra ar chuireadh + Scríobh · Ceist 5(b)",
-      "questionText": "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).\n\nAn rogha don chárta seo: Scríobh · Ceist 4(b) · Freagra ar chuireadh + Scríobh · Ceist 5(b)\n\nScríobh · Ceist 4(b) · Freagra ar chuireadh\nFéach ar na pictiúir thíos.\n\nIs tusa Ruairí. Fuair tú an cuireadh seo ó Áine. Scríobh FREAGRA ar an gcuireadh seo.\nI do fhreagra, luaigh na pointí seo:\n\n- An lá a fuair tú an cuireadh — Pictiúr 1\n- Go raibh áthas ort nuair a fuair tú an cuireadh — Pictiúr 1\n- Gur iarr tú cead ar do Mham dul ann — Pictiúr 3\n- Go mbeidh tú ábalta dul ann — Pictiúr 3\n- Conas a rachaidh sibh ann — Pictiúr 3\n- Dhá rud faoin gcluiche — Pictiúr 4\n- An t-am a thiocfaidh sibh abhaile — Pictiúr 4\n\nN.B. Bíodh an leagan amach cuí ar do fhreagra: tús agus críoch oiriúnach.\n\nScríobh · Ceist 5(b)\nFéach ar na pictiúir anseo thíos.\n\nTharla an eachtra seo agus tú ar thuras báid le do chara.\nTá tú chun scríobh faoin eachtra seo in Iris na Scoile (timpeall 90 focal).\n\nScríobh faoin eachtra (timpeall 90 focal) sa spás atá faoi na pictiúir.\n\nEACHTRA A THARLA",
-      "totalMarks": 90,
-      "topicId": "irish-9-3",
-      "examTopicKeys": [
-        "letterWriting",
-        "pictures",
-        "story"
-      ],
-      "conceptId": "irish-foundation-w-4b-5b",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 11,
-      "schemePages": [
-        11,
-        12,
-        14,
-        15
-      ],
-      "taskRequirements": [
-        "Scríobh freagra ar chuireadh Áine mar Ruairí.",
-        "Luaigh gach pointe agus dhá rud faoin gcluiche; tús agus críoch oiriúnach.",
-        "Scríobh timpeall 90 focal in Iris na Scoile.",
-        "Tabhair cúig thagairt ar a laghad don ócáid sna pictiúir."
-      ],
-      "criteria": [
-        {
-          "id": "w-4b-iarracht",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Iarracht ar an bhfreagra",
-          "kind": "award",
-          "maxMarks": 1,
-          "permittedMarks": [
-            0,
-            1
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Iarracht ar an bhfreagra = 1 mharc."
-          ]
-        },
-        {
-          "id": "w-4b-beannu",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Beannú",
-          "kind": "award",
-          "maxMarks": 1,
-          "permittedMarks": [
-            0,
-            1
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Beannú = 1 mharc."
-          ]
-        },
-        {
-          "id": "w-4b-slan",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Slán / Síniú",
-          "kind": "award",
-          "maxMarks": 1,
-          "permittedMarks": [
-            0,
-            1
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Slán / Síniú = 1 mharc."
-          ]
-        },
-        {
-          "id": "w-4b-pictiur1",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Pictiúr 1",
-          "kind": "award",
-          "maxMarks": 7,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " An lá a fuair tú an cuireadh 4 mharc Glac le lá ar bith atá ainmnithe: Dé Luain, inné, ar maidin… Pictiúr 1 Go raibh áthas ort nuair a fuair tú an cuireadh 3 mharc Bhí áthas orm…go raibh (míle) maith agat… "
-          ]
-        },
-        {
-          "id": "w-4b-pictiur3",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Pictiúr 3",
-          "kind": "award",
-          "maxMarks": 9,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Gur iarr tú cead ar do Mham dul ann 3 mharc D’iarr mé cead ar Mham…chuir mé ceist ar Mham…labhair mé le Mam… Pictiúr 3 Go mbeidh tú ábalta dul ann 3 mharc Beidh mé ábalta dul…‘Sea’ a dúirt Mam…tá cead agam… Pictiúr 3 Conas a rachaidh sibh ann 3 mharc Rachaimid ar an traein…gheobhaimid síob ó…go dtí an stáisiún traenach…fágfaidh an traein ar…beimid sa bhaile ar… "
-          ]
-        },
-        {
-          "id": "w-4b-pictiur4",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Pictiúr 4",
-          "kind": "award",
-          "maxMarks": 11,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Dhá rud faoin gcluiche 4 mharc + 4 mharc = 8 marc Beidh…ag imirt…an staid/an pháirc imeartha…an dáta…an lá…an t-am…ag féachaint ar na foirne…ag comhrá…ag bualadh bos…ag canadh…ag screadach…cairde…cé a bhuafaidh an cluiche…an corn… Pictiúr 4 An t-am a thiocfaidh sibh abhaile 3 mharc Glac le ham ar bith atá inghlactha sa chomhthéacs Samplaí: Fágfaidh an traein ar…tiocfaimid abhaile ar… "
-          ]
-        },
-        {
-          "id": "w-4b-gaeilge",
-          "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh · Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 10,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Stór focal: cruinneas agus oiriúnacht stór focal. Litriú.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric."
-          ]
-        },
-        {
-          "id": "w-5b-freagra",
-          "label": "Scríobh · Ceist 5(b) · Freagra iomlán · Cumarsáid 37 + Gaeilge 13",
-          "kind": "award",
-          "maxMarks": 50,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-            21,
-            22,
-            23,
-            24,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32,
-            33,
-            34,
-            35,
-            36,
-            37,
-            38,
-            39,
-            40,
-            41,
-            42,
-            43,
-            44,
-            45,
-            46,
-            47,
-            48,
-            49,
-            50
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Cumas Cumarsáide = 37 marc; Cruinneas Gaeilge = 13 mharc. Mark both parts, then enter the final whole-response mark after any published proportional length adjustment.",
-            "12 Nó (b) Eachtra (50 marc) Cumas Cumarsáide = 37 marc = 50 marc Cruinneas Gaeilge = 13 mharc Tasc  Scríobh faoin eachtra (timpeall 90 focal) in Iris na Scoile. Cumas Cumarsáide = 37 marc  Tá cúig thagairt ar a laghad ag teastáil le go mbeadh fás nádúrtha ag baint leis an eachtra. Ceann do gach pictiúr (T1, T2, T3, T4) agus aon tagairt amháin eile (T5).  Tá caighdeán na cumarsáide le cur san áireamh. Ná glac le cóipeáil lom.  Pionós (-5 ón 37 atá ar fáil) i gcás gach tagairt in easnamh. (37-5t = 32)  Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an eachtra a léirítear.  Ná glac le Béarla.  Tá timpeall 90 focal ag teastáil.  Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta: (mar shampla: mura bhfuil ann ach 45 focal, an t-alt a mharcáil as an marc atá ar fáil don iarracht agus ansin 50% a bhaint den mharc bronnta).  An marc atá ar fáil don iarracht agus na marcanna bronnta agus bainte a léiriú. Tagairtí féideartha: Pictiúr 1 Na déagóirí…ina seasamh ar an gcé…fógra/póstaer….turas báid…an deilf…na ticéid €…an bád ag fágáil ag 12 a chlog…ag comhrá…ba mhaith leo dul amach chun an deilf a fheiceáil… an aimsir…plódaithe le daoine…ar laethanta saoire…conas a mhothaigh siad… Pictiúr 2 An t-am…an aimsir…an slua…ina seasamh sa scuaine…a lán daoine…ag comhrá…€10…an fear… an ticéad…sceitimíní áthais orthu…málaí…ceamara…fón póca… Pictiúr 3 An bád lán le paisinéirí…D’fhág an bád an ché…amuigh ar an bhfarraige…lá grianmhar, te a bhí ann…ag súil go bhfeicfeadh siad an deilf…léim an deilf san uisce…bhí gach duine ciúin…daoine ag tógáil grianghraf…thit an ceamara as a lámh…baineadh geit as…isteach san uisce…chuaigh sé síos san uisce…ag caoineadh…trí chéile…imníoch…brónach… Pictiúr 4 Ar ais ar an gcé…an t-am…thuirling na déagóirí den bhád…a dtuismitheoirí ann chun bualadh leo…d’inis…an scéal do… Léirigh na tagairtí ar an script mar seo: T1, T2, T3, T4, T5",
-            "13 Cruinneas Gaeilge = 13 mharc Léiriú na marcanna ag bun an fhreagra: Cumarsáid Cum (37) = Cruinneas Gaeilge Cr (13) =",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Stór focal: cruinneas agus oiriúnacht stór focal. Litriú.",
-            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric.",
-            "If too short, subtract the appropriate percentage of the awarded mark: the SEC example is 45 words → mark the attempt, then deduct 50% of the awarded mark. Apply this only to this story. No later-year fixed length table is printed."
-          ]
-        }
-      ],
-      "markingGuideNote": "This is one permitted printed selection. Each selected response retains its own SEC marking criteria; alternative routes are not added to this tariff.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh + Scríobh · Ceist 5(b)",
-        "title": "Gaeilge Bonnleibhéal 2020 · Scríobh · Ceist 4(b) · Freagra ar chuireadh + Scríobh · Ceist 5(b)",
-        "pages": [
-          15,
-          17
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "additionalTopicIds": [
-        "irish-2-8",
-        "irish-9-4"
-      ],
-      "memberCardIds": [
-        "irish-2020-fl-w-4b",
-        "irish-2020-fl-w-5b"
-      ]
     }
   ]
 }

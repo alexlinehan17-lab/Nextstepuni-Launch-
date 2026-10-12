@@ -16,8 +16,8 @@ const topicsFor = (key: string) => examTopicIdsForQuestion('irish', 'ordinary', 
 
 describe('2026 Ordinary Paper 2 source reconciliation', () => {
   it('keeps all ten reading questions whole and each printed part at 5 marks', () => {
-    expect(cards).toHaveLength(88);
-    expect(new Set(cards.map(c => c.id)).size).toBe(88);
+    expect(cards).toHaveLength(72);
+    expect(new Set(cards.map(c => c.id)).size).toBe(72);
     for (const card of cards) expect(tariffReconciles(card), card.id).toBe(true);
     const wholes = authored.cards.filter(c => /^R-[AB]-\d$/.test(c.atlasQuestionId));
     expect(wholes.map(c => c.totalMarks)).toEqual(Array(10).fill(10));
@@ -92,30 +92,24 @@ describe('2026 Ordinary Paper 2 source reconciliation', () => {
     expect(get('F-3A-c').schemePages).toEqual([30, 31]);
   });
 
-  it('expands each choose-two mechanically within 2A, 2B, 3A and 3B, never across alternatives', () => {
-    const pairs = authored.cards.filter(c => 'memberCardIds' in c);
-    expect(pairs.map(c => c.atlasQuestionId)).toEqual([
-      'P-2A-a-caca-milis--b', 'P-2A-a-caca-milis--c', 'P-2A-a-an-lasair-choille--b', 'P-2A-a-an-lasair-choille--c', 'P-2A-b--c',
-      'P-2B-a-scannan--b', 'P-2B-a-scannan--c', 'P-2B-a-drama--b', 'P-2B-a-drama--c', 'P-2B-b--c',
-      'F-3A-a--b', 'F-3A-a--c', 'F-3A-b--c', 'F-3B-a--b', 'F-3B-a--c', 'F-3B-b--c',
-    ]);
-    const byId = new Map(authored.cards.map(c => [c.id, c]));
-    for (const pair of pairs) {
-      expect(pair.totalMarks).toBe(50);
-      const members = pair.memberCardIds!.map(id => byId.get(id)!);
-      expect(members).toHaveLength(2);
-      expect(new Set(members.map(m => m.atlasQuestionId.slice(0, 4))).size, pair.id).toBe(1);
-      expect(members[0].atlasQuestionId.split('-')[2], pair.id).not.toBe(members[1].atlasQuestionId.split('-')[2]);
-      expect(pair.criteria.filter(c => c.kind === 'deduction'), pair.id).toHaveLength(2);
+  it('treats each choose-two within 2A, 2B, 3A and 3B as a choice, not a route', () => {
+    // Each printed route keeps its own 25-mark card and carries the instruction; no two-route combination cards.
+    expect(authored.cards.filter(c => 'memberCardIds' in c)).toEqual([]);
+    const routes = authored.cards.filter(c => /^(P-2[AB]-[abc](-caca-milis|-an-lasair-choille|-scannan|-drama)?|F-3[AB]-[abc])$/.test(c.atlasQuestionId));
+    expect(routes).toHaveLength(14);
+    for (const route of routes) {
+      expect(route.totalMarks, route.id).toBe(25);
+      expect(route.taskRequirements[0], route.id).toBe('Freagair do rogha dhá cheann as (a), (b) nó (c).');
     }
-    expect(get('F-3B-a--c').questionText).toContain('Níl cead an dán roghnach céanna a úsáid faoi dhó.');
-    const pair = cards.find(c => c.id === 'irish-2026-ol-p2-prose-2a-a-caca-milis--b')!;
-    if (pair.rubric.system !== 'irish') throw new Error('Wrong rubric');
-    const scores = Object.fromEntries(pair.rubric.criteria.map(c => [irishScoreId(c.id), c.kind === 'deduction' ? 0 : c.maxMarks]));
-    expect(irishMarks(pair, scores)).toBe(50);
+    expect(get('F-3B-a').questionText).toContain('Níl cead an dán roghnach céanna a úsáid faoi dhó');
+    expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
+    const route = cards.find(c => c.id === 'irish-2026-ol-p2-prose-2a-a-caca-milis')!;
+    if (route.rubric.system !== 'irish') throw new Error('Wrong rubric');
+    const scores = Object.fromEntries(route.rubric.criteria.map(c => [irishScoreId(c.id), c.kind === 'deduction' ? 0 : c.maxMarks]));
+    expect(irishMarks(route, scores)).toBe(25);
   });
 
-  it('joins all 88 cards to Atlas with paper pages, scheme pages and same-level topics', () => {
+  it('joins all 72 cards to Atlas with paper pages, scheme pages and same-level topics', () => {
     const map = JSON.parse(readFileSync('public/paper-answers/2026/LC001GLP200IV.pdf.json', 'utf8'));
     const q = (n: string) => map.q.find((q: { n: string }) => q.n === n);
     expect(map.schemeFileid).toBe('LC001GLP100IV.pdf');
@@ -127,7 +121,8 @@ describe('2026 Ordinary Paper 2 source reconciliation', () => {
     }
     for (const n of ['1', '2', '3']) expect(q(n), n).toBeDefined();
     expect(topicsFor('R-A-1-a')).toEqual(['irish-ordinary-reading-comprehension']);
-    expect(topicsFor('P-2A-b--c')).toEqual(['irish-ordinary-prescribed-prose-archive']);
+    expect(topicsFor('P-2A-c')).toEqual(['irish-ordinary-prescribed-prose-archive']);
+    expect(map.q.some((q: { n: string }) => q.n.includes('--'))).toBe(false);
     expect(topicsFor('F-3A-b-i-a')).toEqual(['irish-ordinary-prescribed-poetry-archive']);
     expect(topicsFor('P-2B-b')).toEqual(['irish-ordinary-write-about-a-studied-prose-optional']);
     expect(topicsFor('F-3B-c')).toEqual(['irish-ordinary-write-about-a-studied-poem-optional']);
