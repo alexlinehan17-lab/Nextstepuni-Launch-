@@ -427,19 +427,30 @@ describe('Mark Bank card preservation', () => {
   // Agricultural Science identities must still produce their exact old hash.
   const additions = new Set(agriculturalReview.addedCardIds);
   const baselineCards = (cards: { id: string }[]) => cards.filter(card => !additions.has(card.id));
+  // Original identities consolidated into one card stay in the frozen set as an
+  // additive record: each is withdrawn from the deck and read through its alias.
+  const withdrawn = (agriculturalReview as { withdrawnCardIds?: Record<string, string> }).withdrawnCardIds ?? {};
+  const withdrawnFor = (cards: { id: string }[]) => {
+    const live = new Set(cards.map(card => card.id));
+    return Object.entries(withdrawn).filter(([, canonical]) => live.has(canonical)).map(([id]) => ({ id }));
+  };
 
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
-    const preserved = baselineCards(cards);
+    const preserved = [...baselineCards(cards), ...withdrawnFor(cards)];
     expect(preserved.length, `${name}: original card count changed`).toBe(count);
     expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
     expect(identityHash(preserved), `${name}: a card ID was removed or replaced`).toBe(hash);
   });
 
   it('protects the complete current bank', () => {
-    expect(additions.size).toBe(663);
+    expect(additions.size).toBe(556);
     const live = decks.flatMap(([, cards]) => cards);
     expect(live.filter(card => additions.has(card.id)).map(card => card.id).sort()).toEqual([...additions].sort());
-    expect(baselineCards(live).length).toBe(10_495);
+    expect(baselineCards(live).length + withdrawnFor(live).length).toBe(10_495);
+    for (const [id, canonical] of Object.entries(withdrawn)) {
+      expect(live.some(card => card.id === id), `${id} must be withdrawn`).toBe(false);
+      expect(CARD_ID_ALIASES[id], `${id} needs a progress alias`).toBe(canonical);
+    }
   });
 
   it('keeps every Agricultural Science card corrected in place, each with its SEC evidence', () => {
@@ -447,24 +458,15 @@ describe('Mark Bank card preservation', () => {
     // identity hash above. Each is listed here with the reason it changed.
     const corrected: Record<string, string> = {
       'agsci-2025-ol-q8b': 'Symbols 2 and 3 marked 3+2 as a two-option group, not an all-or-nothing tick.',
-      'agsci-2025-hl-q2a': 'Any two of three printed lifecycles: first printed route (Annual, Biennial).',
-      'agsci-2025-hl-q2bii': 'Any two of five printed Wagyu characteristics: first printed route (Meat quality, Good growth rates).',
-      'agsci-2025-hl-q6b': 'Any one of three lambing tools: first printed route (Stomach tube).',
-      'agsci-2025-hl-q12a': 'Q12 is one any-four-of-five 2(4)+2(1) task: route (a)(b)(c)(d), 10 marks.',
-      'agsci-2025-hl-q12b': 'Q12 any-four-of-five: route (b)(c)(d)(e), 10 marks.',
-      'agsci-2025-hl-q12c': 'Q12 any-four-of-five: route (c)(d)(e)(a), 10 marks.',
-      'agsci-2025-hl-q12d': 'Q12 any-four-of-five: route (d)(e)(a)(b), 10 marks.',
-      'agsci-2025-hl-q12e': 'Q12 any-four-of-five: route (e)(a)(b)(c), 10 marks.',
+      'agsci-2025-hl-q12a': 'Q12 is one any-four-of-five 2(4)+2(1) card listing all five prompts, 10 marks; Q12(b)–(e) are withdrawn as its aliases.',
       'agsci-2025-hl-q14bi': 'Restores the published result mark: 4x4 + 1 = 17, so Question 14 totals 50.',
-      'agsci-2025-hl-q15b': 'Any three of four printed plants: first printed route (A, B, C).',
-      'agsci-2025-ol-q1ai': 'Any three of four printed cattle breeds: first printed route (A, B, C).',
+      'agsci-2025-hl-q15b': 'Any three of four printed plants on one card, every photograph decoded (3x1).',
+      'agsci-2025-ol-q1ai': 'Any three of four printed cattle breeds on one card, every photograph decoded, word list as printed (3x2).',
       'agsci-2025-ol-q9bi-ii': 'Keeps part (i) only (3 marks); part (ii) already ships as agsci-2025-ol-q9bii.',
       'agsci-2025-ol-q9biii-iv': 'Keeps part (iii) only (3 marks); part (iv) already ships as agsci-2025-ol-q9biv.',
-      'agsci-2024-hl-q2ai': 'Any two of three printed breed photographs: first printed route (A, B).',
+      'agsci-2024-hl-q2ai': 'Any two of three printed breeds on one card, every photograph decoded (2(2)).',
       'agsci-2024-hl-q2aiii': 'Drops the question wording that had been listed as an accepted answer; any two of four printed characteristics, 2(2).',
-      'agsci-2024-hl-q6a': 'Any two of four printed scheme features, action 3 + benefit 2 each: first printed route (lameness control, ewe minerals).',
-      'agsci-2024-hl-q6bii': 'Any two of three printed welfare features at 3+1: first printed route (lamb minerals, flystrike).',
-      'agsci-2024-hl-q15aiii': 'Two animal-related factors OR two environmental conditions: first printed route (animal-related factors).',
+      'agsci-2024-hl-q6a': 'Any two of four printed scheme features on one card: action row 2(3) and benefit row 2(2), ref Q6(a).',
       'agsci-2024-hl-q16bi': 'Restores the truncated answer ("... with Sample 2 or Sample 3") and the paper\'s results-table lead-in and crop.',
       'agsci-2024-hl-q16bii': 'Replaces a flattened results table in the stem with the paper\'s lead-in and the table crop.',
       'agsci-2024-hl-q17a': 'Restores the published 5 (factor) + 1 (description) split instead of all-or-nothing 6.',
@@ -485,7 +487,8 @@ describe('Mark Bank card preservation', () => {
       expect(record.originalSha256).toMatch(/^[0-9a-f]{64}$/);
     }
     expect(live.get('agsci-2025-hl-q14bi')?.totalMarks).toBe(17);
-    for (const key of ['a', 'b', 'c', 'd', 'e']) expect(live.get(`agsci-2025-hl-q12${key}`)?.totalMarks).toBe(10);
+    expect(live.get('agsci-2025-hl-q12a')?.totalMarks).toBe(10);
+    for (const key of ['b', 'c', 'd', 'e']) expect(live.has(`agsci-2025-hl-q12${key}`)).toBe(false);
     // 2024 Higher corrections keep each original's ID and total.
     for (const [id, marks] of [['agsci-2024-hl-q2ai', 4], ['agsci-2024-hl-q6a', 10], ['agsci-2024-hl-q6bii', 4], ['agsci-2024-hl-q15aiii', 4],
       ['agsci-2024-hl-q17a', 6], ['agsci-2024-hl-q18aiii', 8]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
@@ -493,7 +496,7 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(34);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(38);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);

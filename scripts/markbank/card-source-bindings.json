@@ -423,6 +423,13 @@
         28
       ]
     },
+    "agsci-2024-hl-q15aiii": {
+      "kind": "text",
+      "pages": [
+        28
+      ],
+      "stripStem": true
+    },
     "agsci-2024-hl-q15aiv": {
       "pages": [
         29
@@ -593,6 +600,11 @@
       ]
     },
     "agsci-2024-hl-q6bi": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2024-hl-q6bii": {
       "pages": [
         11
       ]
@@ -1023,11 +1035,21 @@
         3
       ]
     },
+    "agsci-2025-hl-q2a": {
+      "pages": [
+        4
+      ]
+    },
     "agsci-2025-hl-q2bi": {
       "pages": [
         5
       ],
       "stripStem": true
+    },
+    "agsci-2025-hl-q2bii": {
+      "pages": [
+        5
+      ]
     },
     "agsci-2025-hl-q2biii": {
       "pages": [
@@ -1098,6 +1120,11 @@
     "agsci-2025-hl-q5c": {
       "pages": [
         10
+      ]
+    },
+    "agsci-2025-hl-q6b": {
+      "pages": [
+        11
       ]
     },
     "agsci-2025-hl-q7a": {

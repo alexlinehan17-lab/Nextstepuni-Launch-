@@ -1286,5 +1286,27 @@
         ]
       }
     }
+  },
+  "agricultural-science": {
+    "agsci-2025-hl-q12b": {
+      "reason": "2025 HL Q12 is one any-four-of-five task under a single 2(4)+2(1) scale (paper PDF page 18, scheme PDF page 17). The original prompt (b) card priced one prompt at 2 marks; it is withdrawn and its progress now belongs to agsci-2025-hl-q12a, the single 10-mark card that lists all five prompts.",
+      "drop": true,
+      "replacementId": "agsci-2025-hl-q12a"
+    },
+    "agsci-2025-hl-q12c": {
+      "reason": "2025 HL Q12 is one any-four-of-five task under a single 2(4)+2(1) scale (paper PDF page 18, scheme PDF page 17). The original prompt (c) card priced one prompt at 2 marks; it is withdrawn and its progress now belongs to agsci-2025-hl-q12a, the single 10-mark card that lists all five prompts.",
+      "drop": true,
+      "replacementId": "agsci-2025-hl-q12a"
+    },
+    "agsci-2025-hl-q12d": {
+      "reason": "2025 HL Q12 is one any-four-of-five task under a single 2(4)+2(1) scale (paper PDF page 18, scheme PDF page 17). The original prompt (d) card priced one prompt at 2 marks; it is withdrawn and its progress now belongs to agsci-2025-hl-q12a, the single 10-mark card that lists all five prompts.",
+      "drop": true,
+      "replacementId": "agsci-2025-hl-q12a"
+    },
+    "agsci-2025-hl-q12e": {
+      "reason": "2025 HL Q12 is one any-four-of-five task under a single 2(4)+2(1) scale (paper PDF page 18, scheme PDF page 17). The original prompt (e) card priced one prompt at 2 marks; it is withdrawn and its progress now belongs to agsci-2025-hl-q12a, the single 10-mark card that lists all five prompts.",
+      "drop": true,
+      "replacementId": "agsci-2025-hl-q12a"
+    }
   }
 }

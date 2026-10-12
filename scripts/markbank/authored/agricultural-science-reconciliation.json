@@ -1,13 +1,22 @@
 {
   "status": "in-progress",
-  "shippedCardCount": 1532,
-  "reviewedRoutesChecked": 888,
+  "shippedCardCount": 1421,
+  "reviewedRoutesChecked": 781,
   "independentlyReviewedTranslatedRoutes": 81,
   "reviewedBatchIssues": [],
   "papers": [
     {
       "year": 2024,
       "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 81,
+      "shippedRoutes": 81,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
       "lang": "ev",
       "expectedRoutes": 91,
       "shippedRoutes": 91,
@@ -16,19 +25,10 @@
     },
     {
       "year": 2025,
-      "level": "ordinary",
-      "lang": "ev",
-      "expectedRoutes": 99,
-      "shippedRoutes": 99,
-      "missing": [],
-      "unmatched": []
-    },
-    {
-      "year": 2025,
       "level": "higher",
       "lang": "ev",
-      "expectedRoutes": 112,
-      "shippedRoutes": 112,
+      "expectedRoutes": 89,
+      "shippedRoutes": 89,
       "missing": [],
       "unmatched": []
     },
@@ -36,8 +36,8 @@
       "year": 2026,
       "level": "ordinary",
       "lang": "ev",
-      "expectedRoutes": 114,
-      "shippedRoutes": 114,
+      "expectedRoutes": 85,
+      "shippedRoutes": 85,
       "missing": [],
       "unmatched": []
     },
@@ -45,8 +45,8 @@
       "year": 2026,
       "level": "higher",
       "lang": "ev",
-      "expectedRoutes": 112,
-      "shippedRoutes": 112,
+      "expectedRoutes": 91,
+      "shippedRoutes": 91,
       "missing": [],
       "unmatched": []
     },
@@ -54,8 +54,8 @@
       "year": 2012,
       "level": "higher",
       "lang": "ev",
-      "expectedRoutes": 62,
-      "shippedRoutes": 62,
+      "expectedRoutes": 56,
+      "shippedRoutes": 56,
       "missing": [],
       "unmatched": []
     },
@@ -63,8 +63,8 @@
       "year": 2010,
       "level": "higher",
       "lang": "ev",
-      "expectedRoutes": 62,
-      "shippedRoutes": 62,
+      "expectedRoutes": 55,
+      "shippedRoutes": 55,
       "missing": [],
       "unmatched": []
     },
@@ -81,8 +81,8 @@
       "year": 2011,
       "level": "higher",
       "lang": "ev",
-      "expectedRoutes": 70,
-      "shippedRoutes": 70,
+      "expectedRoutes": 67,
+      "shippedRoutes": 67,
       "missing": [],
       "unmatched": []
     },

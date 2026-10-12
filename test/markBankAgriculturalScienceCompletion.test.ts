@@ -42,32 +42,33 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
   });
 
-  it('expands every three-of-four udder-labelling route at the published three-mark tariff', () => {
-    const routes = cards.filter(c => c.id.startsWith('agsci-2023-hl-q18ai-route-'));
-    expect(routes.map(c => c.id.split('-').at(-1)).sort()).toEqual(['abc', 'abd', 'acd', 'bcd']);
-    for (const card of routes) {
-      expect(card.totalMarks).toBe(3);
-      expect(card.sourceMaterial?.pages).toEqual([37]);
-      expect(card.questionText).toBe('Label any three parts of the structure of the udder.');
-      expect(tariffReconciles(card)).toBe(true);
-    }
-    expect(get('agsci-2023-hl-q18ai-route-abc').rows[1].verbatim).toBe('Median suspensory ligament');
+  it('keeps the three-of-four udder labels on one card at the published three-mark tariff', () => {
+    expect(cards.filter(c => c.questionRef.startsWith('2023 HL Q18(a)(i)'))).toHaveLength(1);
+    const card = get('agsci-2023-hl-q18ai');
+    expect(card.totalMarks).toBe(3);
+    expect(card.sourceMaterial?.pages).toEqual([37]);
+    expect(card.questionText).toBe('Label any three parts of the structure of the udder.');
+    expect(card.rows[0].group?.options).toHaveLength(4);
+    expect(card.rows[0].group?.options[1]).toBe('Median suspensory ligament');
+    expect(card.rows[0].group?.claimMax).toBe(3);
+    expect(tariffReconciles(card)).toBe(true);
+    expect(marksClaimed(card, {}, { labels: [0, 1, 3] })).toBe(3);
   });
 
-  it('keeps the separate ram reason pools and their complete 3+1 marking menus', () => {
-    const e = get('agsci-2022-ol-q2bii-route-e');
-    const f = get('agsci-2022-ol-q2bii-route-f');
-    expect(e.rows[0].group?.options).toHaveLength(8);
-    expect(f.rows[0].group?.options).toHaveLength(5);
-    expect(f.rows[0].group?.options).not.toContain('easy lambing');
-    for (const card of [e, f]) {
-      expect(card.totalMarks).toBe(4);
-      expect(card.rows[0].group?.perOptionSteps).toEqual([3, 1]);
-      expect(card.sourceMaterial?.pages).toEqual([5]);
-      expect(tariffReconciles(card)).toBe(true);
-      expect(marksClaimed(card, {}, { reasons: [0] })).toBe(3);
-      expect(marksClaimed(card, {}, { reasons: [0, 1] })).toBe(4);
-    }
+  it('keeps both ram reason pools on one card with the complete 3+1 marking menu', () => {
+    expect(cards.filter(c => c.questionRef.startsWith('2022 OL Q2(b)(ii)'))).toHaveLength(1);
+    const card = get('agsci-2022-ol-q2bii');
+    expect(card.rows[0].group?.options).toHaveLength(9);
+    expect(card.rows[0].group?.options).toContain('easy lambing');
+    expect(card.rows[0].group?.options).toContain('excellent conformation');
+    expect(card.rows[0].contextNote).toContain('Breed F reasons');
+    expect(card.stem).not.toContain('Practice choice');
+    expect(card.totalMarks).toBe(4);
+    expect(card.rows[0].group?.perOptionSteps).toEqual([3, 1]);
+    expect(card.sourceMaterial?.pages).toEqual([5]);
+    expect(tariffReconciles(card)).toBe(true);
+    expect(marksClaimed(card, {}, { reasons: [0] })).toBe(3);
+    expect(marksClaimed(card, {}, { reasons: [0, 1] })).toBe(4);
   });
 
   it('retains partial credit for the two correct warning symbols', () => {
@@ -99,16 +100,18 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
   });
 
-  it('preserves both 2010 Q3 options and all 62 independently reviewed legacy tasks', () => {
+  it('preserves both 2010 Q3 options and all 55 independently reviewed legacy tasks', () => {
     const legacy = cards.filter(card => card.year === 2010 && card.level === 'higher');
-    expect(legacy).toHaveLength(62);
+    expect(legacy).toHaveLength(55);
     expect(legacy.filter(card => card.questionRef.includes('Q3 Option One'))).toHaveLength(6);
-    expect(legacy.filter(card => card.questionRef.includes('Q3 Option Two'))).toHaveLength(7);
-    const diseaseRoutes = legacy.filter(card => card.id.startsWith('agsci-2010-hl-q3o2b-route-'));
-    expect(diseaseRoutes.map(card => card.id).sort()).toEqual([
-      'agsci-2010-hl-q3o2b-route-grass-tetany', 'agsci-2010-hl-q3o2b-route-hoose',
-    ]);
-    expect(diseaseRoutes.map(card => card.totalMarks)).toEqual([12, 12]);
+    expect(legacy.filter(card => card.questionRef.includes('Q3 Option Two'))).toHaveLength(6);
+    // Hoose or grass tetany: one card whose two disease routes are mutually exclusive rows.
+    const disease = get('agsci-2010-hl-q3o2b');
+    expect(disease.totalMarks).toBe(12);
+    expect(disease.rows.map(row => row.route)).toEqual(['Hoose', 'Hoose', 'Hoose', 'grass-tetany', 'grass-tetany', 'grass-tetany']);
+    expect(tariffReconciles(disease)).toBe(true);
+    expect(marksClaimed(disease, { 'r-1': 'yes', 'r-2': 'yes', 'r-3': 'yes' })).toBe(12);
+    expect(marksClaimed(disease, { 'r-1': 'yes', 'r-4': 'yes' })).toBe(4);
     for (const card of legacy) {
       const specification = resolveCurriculumSpecification(card.subjectId, card.year)!;
       expect(card.specificationId).toBe(specification.id);
@@ -119,19 +122,17 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
   });
 
-  it('expands both 2010 three-of-four tasks with their complete wording and tariffs', () => {
-    const combinations = ['i-ii-iii', 'i-ii-iv', 'i-iii-iv', 'ii-iii-iv'];
-    for (const [question, marks, rowCount] of [['q7a', 12, 3], ['q8c', 24, 6]] as const) {
-      const routes = cards.filter(card => card.id.startsWith(`agsci-2010-hl-${question}-route-`));
-      expect(routes.map(card => card.id.split('-route-')[1])).toEqual(combinations);
-      expect(new Set(routes.map(card => card.questionText)).size).toBe(1);
-      for (const candidate of routes) {
-        const card = get(candidate.id);
-        expect(card.totalMarks).toBe(marks);
-        expect(card.rows).toHaveLength(rowCount);
-        const claims = Object.fromEntries(card.rows.map(row => [row.id, [0, 1]]));
-        expect(marksClaimed(card, {}, claims)).toBe(marks);
-      }
+  it('keeps both 2010 three-of-four choices on one card that lists every printed item', () => {
+    for (const [question, ref, total, rows, answer] of [['q7a', 'Q7(a)', 12, 4, 3], ['q8c', 'Q8(c)', 24, 8, 6]] as const) {
+      expect(cards.filter(card => card.questionRef.startsWith(`2010 HL ${ref}`))).toHaveLength(1);
+      const card = get(`agsci-2010-hl-${question}`);
+      expect(card.questionRef).toBe(`2010 HL ${ref}`);
+      expect(card.totalMarks).toBe(total);
+      expect(card.rows).toHaveLength(rows);
+      expect(card.tariffModel).toEqual({ kind: 'bestNofParts', answer, ofParts: rows, perPart: 4 });
+      expect(card.rows.every(row => row.group?.claimMax === 2 && row.group?.perOption === 2)).toBe(true);
+      expect(tariffReconciles(card)).toBe(true);
+      expect(card.stem ?? '').not.toContain('Practice choice');
     }
   });
 
@@ -156,9 +157,9 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(get('agsci-2010-ol-q12dii').rows[0].contextNote).toContain('28');
   });
 
-  it('retains all 70 2011 Higher routes and separates shared genetic-cross marks from the three outcomes', () => {
+  it('retains all 67 2011 Higher tasks and separates shared genetic-cross marks from the three outcomes', () => {
     const legacy = higher.filter(card => card.year === 2011);
-    expect(legacy).toHaveLength(70);
+    expect(legacy).toHaveLength(67);
     const cross = get('agsci-2011-hl-q7b-cross');
     expect(cross.totalMarks).toBe(12);
     expect(cross.figure?.solution).toBe(true);
@@ -167,14 +168,15 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(get('agsci-2011-hl-q7bi').rows[0].verbatim).toBe('12/16');
     expect(get('agsci-2011-hl-q7bii').rows[0].verbatim).toBe('4/16');
     expect(get('agsci-2011-hl-q7biii').rows[0].verbatim).toBe('3/16');
-    const routes = legacy.filter(card => card.id.startsWith('agsci-2011-hl-q8c-route-'));
-    expect(routes.map(card => card.id.split('-route-')[1])).toEqual(['i-ii-iii','i-ii-iv','i-iii-iv','ii-iii-iv']);
-    for (const candidate of routes) {
-      const card = get(candidate.id);
-      expect(card.totalMarks).toBe(24);
-      expect(card.rows).toHaveLength(6);
-      expect(marksClaimed(card,Object.fromEntries(card.rows.map(row => [row.id,'yes'])),{})).toBe(24);
-    }
+    // Any three of four comparison pairs: one card, eight member answers, the best six at 4.
+    expect(legacy.filter(card => card.questionRef.startsWith('2011 HL Q8(c)'))).toHaveLength(1);
+    const pairs = get('agsci-2011-hl-q8c');
+    expect(pairs.totalMarks).toBe(24);
+    expect(pairs.rows).toHaveLength(1);
+    expect(pairs.rows[0].group?.options).toHaveLength(8);
+    expect(pairs.rows[0].group?.claimMax).toBe(6);
+    expect(marksClaimed(pairs, {}, { 'r-1': [0, 1, 2, 3, 6, 7] })).toBe(24);
+    expect(marksClaimed(pairs, {}, { 'r-1': [0, 1] })).toBe(8);
   });
 
   it('keeps the heart image under circulatory physiology and preserves the cereal drawing’s partial award', () => {
@@ -308,27 +310,25 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
 
-  it('expands both 2012 three-of-four pools without summing alternative-route tariffs', () => {
-    for (const [prefix,total,rows] of [['q7a',12,3],['q8c',24,6]] as const) {
-      const routes = higher.filter(card => card.id.startsWith(`agsci-2012-hl-${prefix}-route-`));
-      expect(routes.map(card => card.id.split('-route-')[1])).toEqual(['i-ii-iii','i-ii-iv','i-iii-iv','ii-iii-iv']);
-      for (const candidate of routes) {
-        const card = get(candidate.id);
-        expect(card.totalMarks).toBe(total);
-        expect(card.rows).toHaveLength(rows);
-        expect(card.questionText).toContain('three');
-        expect(card.stem).toContain('Practice choice:');
-        const task = review.tasks.find(task => task.cardIds.includes(card.id))!;
-        expect(task.selection.kind).toBe('closed');
-        if (prefix === 'q8c') {
-          const claims = Object.fromEntries(card.rows.map(row => [row.id,[0,1]]));
-          expect(marksClaimed(card,{},claims)).toBe(24);
-          expect(marksClaimed(card,{},Object.fromEntries(card.rows.map(row => [row.id,[0]])))).toBe(12);
-        } else {
-          expect(marksClaimed(card,Object.fromEntries(card.rows.map(row => [row.id,'yes'])),{})).toBe(12);
-        }
-      }
+  it('keeps both 2012 three-of-four choices on one card without summing alternatives', () => {
+    for (const [key, ref] of [['q7a', 'Q7(a)'], ['q8c', 'Q8(c)']] as const) {
+      expect(higher.filter(card => card.questionRef.startsWith(`2012 HL ${ref}`))).toHaveLength(1);
+      const card = get(`agsci-2012-hl-${key}`);
+      expect(card.questionText).toContain('three');
+      expect(card.stem ?? '').not.toContain('Practice choice');
+      const task = review.tasks.find(task => task.cardIds.includes(card.id))!;
+      expect(task.selection).toMatchObject({ kind: 'closed', choose: 3, pooled: true });
+      expect(tariffReconciles(card)).toBe(true);
     }
+    const terms = get('agsci-2012-hl-q7a');
+    expect(terms.totalMarks).toBe(12);
+    expect(terms.rows[0].group?.options).toHaveLength(4);
+    expect(marksClaimed(terms, {}, { 'r-1': [0, 1, 3] })).toBe(12);
+    expect(marksClaimed(terms, {}, { 'r-1': [0, 1, 2, 3] })).toBe(12);
+    const pairs = get('agsci-2012-hl-q8c');
+    expect(pairs.totalMarks).toBe(24);
+    expect(pairs.rows).toHaveLength(8);
+    expect(pairs.tariffModel).toEqual({ kind: 'bestNofParts', answer: 6, ofParts: 8, perPart: 4 });
   });
 
   it('preserves the 2012 pooled first-correct scales and repeated answer fields', () => {
@@ -412,36 +412,35 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(preferredAnswersUrl('agricultural-science',2011,'LC024ALP000IV.pdf','old-storage')).toBe('/paper-answers/2011/LC024ALP000IV.pdf.json');
   });
 
-  it('expands every printed 2026 Higher pool mechanically at the route tariff', () => {
+  it('publishes every printed 2026 Higher item choice as one card', () => {
     const year = higher.filter(card => card.year === 2026);
-    expect(year).toHaveLength(112);
-    const pools: Array<[string, number, number, string[]]> = [
-      ['q2b', 4, 10, ['fertilising-light-genetic', 'fertilising-light-grassland', 'fertilising-genetic-grassland', 'light-genetic-grassland']],
-      ['q7', 15, 10, []],
-      ['q10a', 3, 5, ['ab', 'ac', 'bc']],
-      ['q14ci', 2, 9, ['a', 'b']],
-      ['q18ciii', 2, 3, ['plants', 'animals']],
+    expect(year).toHaveLength(91);
+    const pools: Array<[string, string, number, number, number]> = [
+      ['q2b', 'Q2(b)', 4, 3, 10], ['q7', 'Q7', 6, 4, 10], ['q10a', 'Q10(a)', 3, 2, 5], ['q18ciii', 'Q18(c)(iii)', 5, 1, 3],
     ];
-    for (const [key, count, marks, suffixes] of pools) {
-      const routes = year.filter(card => card.id.startsWith(`agsci-2026-hl-${key}-route-`));
-      expect(routes, key).toHaveLength(count);
-      expect(new Set(routes.map(card => card.questionText)).size, key).toBe(1);
-      if (suffixes.length) expect(routes.map(card => card.id.split('-route-')[1])).toEqual(suffixes);
-      for (const candidate of routes) {
-        const card = get(candidate.id);
-        expect(card.totalMarks).toBe(marks);
-        expect(card.stem).toContain('Practice choice:');
-        expect(tariffReconciles(card)).toBe(true);
-        const task = review.tasks.find(task => task.cardIds.includes(card.id))!;
-        expect(task.selection.kind).toBe('closed');
-      }
+    for (const [key, ref, options, claim, marks] of pools) {
+      expect(year.filter(card => card.questionRef === `2026 HL ${ref}`), key).toHaveLength(1);
+      const card = get(`agsci-2026-hl-${key}`);
+      expect(card.totalMarks).toBe(marks);
+      expect(card.rows).toHaveLength(1);
+      expect(card.rows[0].group?.options, key).toHaveLength(options);
+      expect(card.rows[0].group?.claimMax, key).toBe(claim);
+      expect(card.stem ?? '').not.toContain('Practice choice');
+      expect(tariffReconciles(card)).toBe(true);
+      expect(review.tasks.find(task => task.cardIds.includes(card.id))!.selection).toMatchObject({ kind: 'closed', pooled: true });
     }
-    const benefits = get('agsci-2026-hl-q7-route-carbon-losses-food-nutrients');
-    expect(benefits.rows[0].group?.options).toHaveLength(4);
+    const benefits = get('agsci-2026-hl-q7');
     expect(benefits.rows[0].group?.perOptionSteps).toEqual([5, 3, 1, 1]);
     expect(marksClaimed(benefits, {}, { 'r-1': [3] })).toBe(5);
-    expect(marksClaimed(benefits, {}, { 'r-1': [0, 1, 2, 3] })).toBe(10);
-    // Section A questions total 10 and Section B 50 for every candidate route.
+    expect(marksClaimed(benefits, {}, { 'r-1': [0, 1, 2, 5] })).toBe(10);
+    // Method A or B: one card; naming a method commits its route.
+    const sowing = get('agsci-2026-hl-q14ci');
+    expect(sowing.totalMarks).toBe(9);
+    expect(sowing.rows.map(row => row.route)).toEqual(['A', 'A', 'B', 'B']);
+    expect(tariffReconciles(sowing)).toBe(true);
+    expect(marksClaimed(sowing, { 'r-1': 'yes' }, { 'r-2': [0, 1] })).toBe(9);
+    expect(marksClaimed(sowing, { 'r-1': 'yes', 'r-3': 'yes' }, {})).toBe(3);
+    // Section A questions total 10 and Section B 50 for every candidate.
     const units = census.questionMarkChecks.filter(check => check.year === 2026 && check.level === 'higher');
     expect(units).toHaveLength(18);
     for (const check of units) expect(check.candidateTotalsFromScheme).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
@@ -476,29 +475,27 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
   });
 
-  it('expands every printed 2026 Ordinary pool and keeps answer-identification ticks whole', () => {
+  it('publishes every printed 2026 Ordinary item choice as one card and keeps answer-identification ticks whole', () => {
     const year = ordinary.filter(card => card.year === 2026);
-    expect(year).toHaveLength(114);
-    const pools: Array<[string, number, number]> = [
-      ['q1a', 4, 6], ['q4a', 3, 6], ['q4b', 3, 2], ['q5a', 4, 7], ['q9a', 10, 10],
-      ['q9bi', 3, 5], ['q10a', 3, 6], ['q14ai', 4, 6], ['q18bii', 4, 9],
+    expect(year).toHaveLength(85);
+    const pools: Array<[string, number, number, number]> = [
+      ['q1a', 4, 3, 6], ['q4a', 3, 2, 6], ['q4b', 9, 1, 2], ['q5a', 4, 3, 7], ['q9a', 5, 3, 10],
+      ['q9bi', 3, 2, 5], ['q10a', 3, 2, 6], ['q14ai', 4, 3, 6], ['q18bii', 4, 3, 9],
     ];
-    for (const [key, count, marks] of pools) {
-      const routes = year.filter(card => card.id.startsWith(`agsci-2026-ol-${key}-route-`));
-      expect(routes, key).toHaveLength(count);
-      expect(new Set(routes.map(card => card.id)).size).toBe(count);
-      for (const candidate of routes) {
-        const card = get(candidate.id);
-        expect(card.totalMarks, card.id).toBe(marks);
-        expect(card.stem).toContain('Practice choice:');
-        expect(tariffReconciles(card)).toBe(true);
-        expect(review.tasks.find(task => task.cardIds.includes(card.id))!.selection.kind).toBe('closed');
-      }
+    for (const [key, options, claim, marks] of pools) {
+      const card = get(`agsci-2026-ol-${key}`);
+      expect(year.filter(candidate => candidate.questionRef.split(' — ')[0] === card.questionRef), key).toHaveLength(1);
+      expect(card.totalMarks, card.id).toBe(marks);
+      expect(card.rows[0].group?.options, key).toHaveLength(options);
+      expect(card.rows[0].group?.claimMax, key).toBe(claim);
+      expect(card.stem ?? '').not.toContain('Practice choice');
+      expect(tariffReconciles(card)).toBe(true);
+      expect(review.tasks.find(task => task.cardIds.includes(card.id))!.selection).toMatchObject({ kind: 'closed', pooled: true });
     }
-    const cattle = get('agsci-2026-ol-q5a-route-acd');
+    const cattle = get('agsci-2026-ol-q5a');
     expect(cattle.rows[0].group?.perOptionSteps).toEqual([1, 2, 4]);
     expect(marksClaimed(cattle, {}, { 'r-1': [2] })).toBe(1);
-    expect(marksClaimed(cattle, {}, { 'r-1': [0, 1, 2] })).toBe(7);
+    expect(marksClaimed(cattle, {}, { 'r-1': [0, 1, 3] })).toBe(7);
     const organic = get('agsci-2026-ol-q6');
     expect(organic.rows[0].group?.perOptionSteps).toEqual([1, 1, 2, 2, 4]);
     expect(marksClaimed(organic, {}, { 'r-1': [0, 1, 2, 3, 4] })).toBe(10);
@@ -507,7 +504,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
       expect(card.rows).toHaveLength(1);
       expect(review.tasks.find(task => task.cardIds.includes(card.id))!.selection.kind).toBe('none');
     }
-    for (const id of ['q4a-route-ab', 'q11b', 'q12bi', 'q18bii-route-abc']) {
+    for (const id of ['q4a', 'q11b', 'q12bi', 'q18bii']) {
       const card = ordinary.find(candidate => candidate.id === `agsci-2026-ol-${id}`)!;
       expect(card.kind, id).toBe('diagram');
       if (card.kind !== 'diagram') throw new Error('Expected a diagram card');
@@ -539,36 +536,38 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
   });
 
-  it('reconciles all 88 original 2025 Higher cards and expands every printed pool', () => {
+  it('reconciles all 88 original 2025 Higher cards and publishes every printed item choice as one card', () => {
     const year = higher.filter(card => card.year === 2025);
-    expect(year).toHaveLength(112);
+    expect(year).toHaveLength(89);
     const tasks = review.tasks.filter(task => task.questionRef.startsWith('2025 HL'));
-    expect(tasks).toHaveLength(112);
+    expect(tasks).toHaveLength(89);
     const states = tasks.map(task => (task as { originalCard?: string }).originalCard);
-    expect(states.filter(state => state === 'unchanged')).toHaveLength(78);
-    expect(states.filter(state => state === 'corrected-in-place')).toHaveLength(10);
-    expect(states.filter(state => state === 'added')).toHaveLength(24);
-    const pools: Array<[string, number, number]> = [['q2a', 3, 10], ['q2bii', 10, 2], ['q6b', 3, 4], ['q7b', 4, 5], ['q12', 5, 10], ['q15b', 4, 3]];
-    for (const [key, count, marks] of pools) {
-      const routes = year.filter(card => card.questionRef.startsWith(`2025 HL Q${key.slice(1).replace(/^(\d+)([a-z]?)(i*)$/, (_m, n, l, r) => n + (l ? `(${l})` : '') + (r ? `(${r})` : ''))}`)
-        && card.questionRef.includes(' — '));
-      expect(routes, key).toHaveLength(count);
-      for (const candidate of routes) {
-        const card = get(candidate.id);
-        expect(card.totalMarks, card.id).toBe(marks);
-        expect(tariffReconciles(card)).toBe(true);
-        expect(review.tasks.find(task => task.cardIds.includes(card.id))!.selection.kind).toBe('closed');
-      }
+    expect(states.filter(state => state === 'unchanged')).toHaveLength(81);
+    expect(states.filter(state => state === 'corrected-in-place')).toHaveLength(3);
+    expect(states.filter(state => state === 'added')).toHaveLength(5);
+    expect(year.filter(card => card.questionRef.includes(' — '))).toHaveLength(0);
+    for (const [key, marks] of [['q2a', 10], ['q2bii', 2], ['q6b', 4], ['q7b', 5], ['q12a', 10], ['q15b', 3]] as const) {
+      const card = get(`agsci-2025-hl-${key}`);
+      expect(card.totalMarks, key).toBe(marks);
+      expect(tariffReconciles(card), key).toBe(true);
+      expect(review.tasks.find(task => task.cardIds.includes(card.id))!.selection).toMatchObject({ kind: 'closed', pooled: true });
     }
-    // Legacy IDs become the first printed route.
-    expect(get('agsci-2025-hl-q2a').questionRef).toBe('2025 HL Q2(a) — Annual, Biennial');
-    expect(get('agsci-2025-hl-q6b').questionRef).toBe('2025 HL Q6(b) — Stomach tube');
-    expect(get('agsci-2025-hl-q15b').questionRef).toBe('2025 HL Q15(b) — A, B, C');
-    const q12 = get('agsci-2025-hl-q12c');
+    // Q12 is one any-four-of-five card; the other four prompt IDs are progress aliases of it.
+    const q12 = get('agsci-2025-hl-q12a');
+    expect(q12.questionRef).toBe('2025 HL Q12');
+    expect(q12.rows[0].group?.options).toHaveLength(5);
     expect(q12.rows[0].group?.perOptionSteps).toEqual([4, 4, 1, 1]);
-    expect(q12.rows[0].group?.options[1]).toContain('Close to surface to maximise photosynthesis');
-    expect(marksClaimed(q12, {}, { 'r-1': [0, 1, 2, 3] })).toBe(10);
+    expect(q12.rows[0].group?.options[2]).toContain('Close to surface to maximise photosynthesis');
+    expect(marksClaimed(q12, {}, { 'r-1': [0, 1, 2, 4] })).toBe(10);
     expect(marksClaimed(q12, {}, { 'r-1': [3] })).toBe(4);
+    expect((review as { withdrawnCardIds: Record<string, string> }).withdrawnCardIds).toEqual({
+      'agsci-2025-hl-q12b': 'agsci-2025-hl-q12a', 'agsci-2025-hl-q12c': 'agsci-2025-hl-q12a',
+      'agsci-2025-hl-q12d': 'agsci-2025-hl-q12a', 'agsci-2025-hl-q12e': 'agsci-2025-hl-q12a',
+    });
+    for (const key of ['b', 'c', 'd', 'e']) expect(year.some(card => card.id === `agsci-2025-hl-q12${key}`)).toBe(false);
+    const plants = get('agsci-2025-hl-q15b');
+    expect(plants.rows[0].group?.options).toEqual(['A: Cleavers', 'B: Chicory', 'C: Silverweed', 'D: Oilseed rape']);
+    expect(higher.find(card => card.id === 'agsci-2025-hl-q15b')!.kind).toBe('diagram');
     const capillarity = get('agsci-2025-hl-q14bi');
     expect(capillarity.totalMarks).toBe(17);
     expect(marksClaimed(capillarity, { 'r-2': 'yes' }, { 'r-1': [0, 1, 2, 3] })).toBe(17);
@@ -576,8 +575,6 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     for (const variant of get('agsci-2025-hl-q15c').answerVariants!) {
       expect(tariffReconciles({ ...get('agsci-2025-hl-q15c'), rows: variant.rows })).toBe(true);
     }
-    const plants = higher.find(card => card.id === 'agsci-2025-hl-q15b-route-bcd')!;
-    expect(plants.kind).toBe('diagram');
     const units = census.questionMarkChecks.filter(check => check.year === 2025 && check.level === 'higher');
     expect(units).toHaveLength(18);
     for (const check of units) expect(check.candidateTotalsFromScheme).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
@@ -585,26 +582,25 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(map.q.find(q => q.n === '14')?.schemeNote).toContain('17');
   });
 
-  it('reconciles the original 2025 Ordinary cards, splits the fused Q9(b) parts and expands every pool', () => {
+  it('reconciles the original 2025 Ordinary cards, splits the fused Q9(b) parts and publishes each item choice as one card', () => {
     const year = ordinary.filter(card => card.year === 2025);
-    expect(year).toHaveLength(99);
-    // 98 tasks from this review plus the earlier reviewed Q8(b) correction.
+    expect(year).toHaveLength(91);
+    // 90 tasks from this review plus the earlier reviewed Q8(b) correction.
     const tasks = review.tasks.filter(task => task.questionRef.startsWith('2025 OL'));
-    expect(tasks).toHaveLength(99);
+    expect(tasks).toHaveLength(91);
     const states = tasks.map(task => (task as { originalCard?: string }).originalCard);
     expect(states.filter(state => state === 'unchanged')).toHaveLength(68);
     expect(states.filter(state => state === 'corrected-in-place')).toHaveLength(3);
-    expect(states.filter(state => state === 'added')).toHaveLength(27);
-    for (const [prefix, count, marks] of [['Q1(a)(i) — ', 4, 6], ['Q7(a) — ', 4, 6], ['Q14(c)(iii) — ', 3, 8]] as const) {
-      const routes = year.filter(card => card.questionRef.startsWith(`2025 OL ${prefix}`));
-      expect(routes, prefix).toHaveLength(count);
-      for (const candidate of routes) {
-        const card = get(candidate.id);
-        expect(card.totalMarks).toBe(marks);
-        expect(tariffReconciles(card)).toBe(true);
-      }
+    expect(states.filter(state => state === 'added')).toHaveLength(19);
+    for (const [key, ref, options, claim, marks] of [['q1ai', 'Q1(a)(i)', 4, 3, 6], ['q7a', 'Q7(a)', 4, 3, 6], ['q14ciii', 'Q14(c)(iii)', 3, 2, 8]] as const) {
+      expect(year.filter(card => card.questionRef.startsWith(`2025 OL ${ref}`)), ref).toHaveLength(1);
+      const card = get(`agsci-2025-ol-${key}`);
+      expect(card.totalMarks).toBe(marks);
+      expect(card.rows[0].group?.options).toHaveLength(options);
+      expect(card.rows[0].group?.claimMax).toBe(claim);
+      expect(tariffReconciles(card)).toBe(true);
     }
-    expect(get('agsci-2025-ol-q1ai').questionRef).toBe('2025 OL Q1(a)(i) — A, B, C');
+    expect(get('agsci-2025-ol-q1ai').questionRef).toBe('2025 OL Q1(a)(i)');
     expect(get('agsci-2025-ol-q9bi-ii').questionRef).toBe('2025 OL Q9(b)(i)');
     expect(get('agsci-2025-ol-q9bi-ii').totalMarks).toBe(3);
     expect(get('agsci-2025-ol-q9biii-iv').questionRef).toBe('2025 OL Q9(b)(iii)');
@@ -619,34 +615,34 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     for (const check of units) expect(check.candidateTotalsFromScheme).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
   });
 
-  it('reconciles all 72 original 2024 Higher cards, expands every printed pool and discloses the Q18 total', () => {
+  it('reconciles all 72 original 2024 Higher cards, keeps each item choice on one card and discloses the Q18 total', () => {
     const year = higher.filter(card => card.year === 2024);
-    expect(year).toHaveLength(91);
+    expect(year).toHaveLength(81);
     const tasks = review.tasks.filter(task => task.questionRef.startsWith('2024 HL'));
-    expect(tasks).toHaveLength(91);
+    expect(tasks).toHaveLength(81);
     const states = tasks.map(task => (task as { originalCard?: string }).originalCard);
-    expect(states.filter(state => state === 'unchanged')).toHaveLength(61);
-    expect(states.filter(state => state === 'corrected-in-place')).toHaveLength(11);
-    expect(states.filter(state => state === 'added')).toHaveLength(19);
-    for (const [prefix, count, marks] of [['Q2(a)(i) — ', 3, 4], ['Q6(a) — ', 6, 10], ['Q6(b)(ii) — ', 3, 4], ['Q15(a)(iii) — ', 2, 4]] as const) {
-      const routes = year.filter(card => card.questionRef.startsWith(`2024 HL ${prefix}`));
-      expect(routes, prefix).toHaveLength(count);
-      for (const candidate of routes) {
-        const card = get(candidate.id);
-        expect(card.totalMarks, card.id).toBe(marks);
-        expect(tariffReconciles(card), card.id).toBe(true);
-        expect(review.tasks.find(task => task.cardIds.includes(card.id))!.selection.kind).toBe('closed');
-      }
+    expect(states.filter(state => state === 'unchanged')).toHaveLength(63);
+    expect(states.filter(state => state === 'corrected-in-place')).toHaveLength(9);
+    expect(states.filter(state => state === 'added')).toHaveLength(9);
+    expect(year.filter(card => card.questionRef.includes(' — '))).toHaveLength(0);
+    for (const [key, marks] of [['q2ai', 4], ['q6a', 10], ['q6bii', 4], ['q15aiii', 4]] as const) {
+      const card = get(`agsci-2024-hl-${key}`);
+      expect(card.totalMarks, key).toBe(marks);
+      expect(tariffReconciles(card), key).toBe(true);
+      expect(review.tasks.find(task => task.cardIds.includes(card.id))!.selection).toMatchObject({ kind: 'closed', pooled: true });
     }
-    // Legacy IDs become the first printed route.
-    expect(get('agsci-2024-hl-q2ai').questionRef).toBe('2024 HL Q2(a)(i) — A, B');
-    expect(get('agsci-2024-hl-q6a').questionRef).toBe("2024 HL Q6(a) — Lameness control, Mineral supplementation of ewe's post mating");
-    expect(get('agsci-2024-hl-q15aiii').questionRef).toBe('2024 HL Q15(a)(iii) — Animal-related factors');
+    const breeds = get('agsci-2024-hl-q2ai');
+    expect(breeds.rows[0].group?.options).toEqual(['A: Landrace', 'B: Blue Leicester', 'C: Simmental']);
+    expect(marksClaimed(breeds, {}, { 'r-1': [1, 2] })).toBe(4);
+    const sheep = get('agsci-2024-hl-q6a');
+    expect(sheep.questionRef).toBe('2024 HL Q6(a)');
+    expect(sheep.rows.map(row => row.group?.options.length)).toEqual([4, 4]);
+    expect(marksClaimed(sheep, {}, { 'r-1': [2, 3], 'r-2': [2, 3] })).toBe(10);
     // A named factor alone earns its 5; any two printed dominant features earn 6+2.
     expect(marksClaimed(get('agsci-2024-hl-q17a'), {}, { 'r-1': [2] })).toBe(5);
     expect(marksClaimed(get('agsci-2024-hl-q18aiii'), {}, { 'r-1': [2] })).toBe(6);
     expect(marksClaimed(get('agsci-2024-hl-q18aiii'), {}, { 'r-1': [2, 5] })).toBe(8);
-    for (const id of ['agsci-2024-hl-q5a', 'agsci-2024-hl-q9bi', 'agsci-2024-hl-q13aii', 'agsci-2024-hl-q18aii']) {
+    for (const id of ['agsci-2024-hl-q2ai', 'agsci-2024-hl-q5a', 'agsci-2024-hl-q9bi', 'agsci-2024-hl-q13aii', 'agsci-2024-hl-q18aii']) {
       expect(higher.find(card => card.id === id)!.kind, id).toBe('diagram');
     }
     expect(get('agsci-2024-hl-q16bi').rows[0].accepts).toContain('valid comparison with Sample 2 or Sample 3');
@@ -659,6 +655,40 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(units.find(check => check.question === 'Q18')!.sourceException).toContain('54');
     const map: PaperAnswerMap = JSON.parse(readFileSync(resolve(__dirname, '../public/paper-answers/2024/LC024ALP000EV.pdf.json'), 'utf8'));
     expect(map.q.find(q => q.n === '18')?.schemeNote).toContain('54');
+  });
+
+  it('refuses Agricultural Science route siblings that differ only in which printed items were chosen', () => {
+    // A printed any-N-of-M choice is ONE practice card (coordinator rule,
+    // 2026-10-12). Siblings sharing a question address are allowed only for
+    // separately marked required parts, never for an item choice.
+    const closed = new Set(review.tasks.filter(task => task.selection.kind === 'closed').map(task => task.questionRef.split(' — ')[0]));
+    const byBase = new Map<string, string[]>();
+    for (const card of cards) {
+      const base = card.questionRef.split(' — ')[0];
+      byBase.set(base, [...(byBase.get(base) ?? []), card.id]);
+      expect(card.id, card.id).not.toMatch(/-route-/);
+      expect(`${card.stem ?? ''} ${card.questionText}`, card.id).not.toMatch(/Practice choice/);
+    }
+    const taskFor = (id: string) => review.tasks.find(task => task.cardIds.includes(id))!;
+    for (const task of review.tasks.filter(task => task.selection.kind === 'closed')) {
+      expect(task.cardIds, task.questionRef).toHaveLength(1);
+      expect(task.questionRef, task.questionRef).not.toContain(' — ');
+      expect((task.selection as { pooled?: boolean }).pooled, task.questionRef).toBe(true);
+      // Any sibling at the same address must be a separately marked required
+      // part (for example a definition beside the disease choice), never an
+      // item of this printed choice.
+      const options = ((task.selection as { options?: string[] }).options ?? []).map(option => option.toLowerCase());
+      for (const id of byBase.get(task.questionRef) ?? []) {
+        if (id === task.cardIds[0]) continue;
+        const sibling = cards.find(card => card.id === id)!;
+        expect(taskFor(id).selection.kind, id).not.toBe('closed');
+        expect(options, id).not.toContain(sibling.questionRef.split(' — ')[1]?.toLowerCase());
+      }
+    }
+    expect(closed.size).toBeGreaterThanOrEqual(35);
+    for (const paper of census.papers) {
+      for (const task of paper.baseTasks) expect(task.routes, task.ref).toHaveLength(1);
+    }
   });
 
   it('awards 2010 first-correct marks independently of the named instrument', () => {
@@ -692,7 +722,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('keeps mixed comparisons discoverable under each assessed current topic without duplicating cards', () => {
-    const card = get('agsci-2010-hl-q8c-route-i-ii-iv');
+    const card = get('agsci-2010-hl-q8c');
     for (const topic of ['agsci-4-3-1', 'agsci-3-3-2', 'agsci-4-3-3']) {
       expect(cardsForTopic(topic, cards).filter(candidate => candidate.id === card.id)).toHaveLength(1);
       expect(findCanonicalTopic(resolveCurriculumSpecification('agricultural-science', 2026)!, topic)).toBeDefined();
@@ -712,7 +742,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(895);
+    expect(atlas.markBankCards).toHaveLength(784);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;
@@ -735,8 +765,8 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
   });
 
-  it('finds all 298 translated tasks under the same topics and practice identities', () => {
-    expect(atlas.translatedMarkBankCards).toHaveLength(298);
+  it('finds all 288 translated tasks under the same topics and practice identities', () => {
+    expect(atlas.translatedMarkBankCards).toHaveLength(288);
     for (const join of atlas.translatedMarkBankCards) {
       const card = get(join.cardId);
       const english = atlas.markBankCards.find(candidate => candidate.cardId === join.cardId)!;

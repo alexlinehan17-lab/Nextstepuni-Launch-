@@ -2,10 +2,9 @@
 
 All 8 paper and 16 scheme PDF pages visually inspected on 7 October 2026.
 The shared dihybrid-cross award is separate from its three ratio answers.
-Question 8(c)'s three-of-four comparisons expand to four complete routes.
+Question 8(c)'s three-of-four comparisons are one card crediting the best six members.
 """
 import hashlib
-from itertools import combinations
 import fitz
 from agricultural_science_2010_hl import ROOT, point, menu, region
 
@@ -16,7 +15,7 @@ SELECTIONS = {
     'ec78d4ad8f7de622':('independent-task-selection','Q1 selects six of ten independently marked lettered parts. Every part is retained; (b), (g) and (h) split at fixed roman-part awards. No exam-submission bundles.'),
     '07570960ab2faac4':('independent-task-selection','Q4 selects two independently priced 24-mark experiments. All four are separate practice tasks; open methods are marking menus, not a finite printed pool.'),
     '2843749efe6a5ae7':('independent-task-selection','Q8 selects two 24-mark parts. All are retained, including the internal closed pool in (c).'),
-    '91da40e393d25b3c':('closed','Q8(c) prints four comparison pairs and asks for three. All four combinations retain three complete eight-mark comparisons.'),
+    '91da40e393d25b3c':('closed','Q8(c) prints four comparison pairs and asks for three, eight marks each. One card lists all eight members and credits the best six; item-choice siblings are not separate practice identities.'),
     '29f5b0a7725b0396':('independent-task-selection','Q9 selects four independently marked twelve-mark explanations. All five are retained.'),
 }
 
@@ -51,8 +50,8 @@ def paper_review():
                 paperPagesInspected=list(range(1,9)),schemePagesInspected=list(range(1,17)),
                 selectionDirectives=observed,
                 supplementarySelections=[dict(page=p,wording=w,classification=c,reason=r) for p,w,c,r in supplementary],
-                taskCountsByQuestion={'Q1':13,'Q2':7,'Q3 Option One':5,'Q3 Option Two':6,'Q4':4,'Q5':7,'Q6':6,'Q7':8,'Q8':9,'Q9':5},
-                independentBoundaryReview='67 base tasks, 70 finite routes. Q7(b) has 12 marks for the shared cross and three separate 4-mark ratios. Diagram labels remain one exercise. Q3 Option Two (c)(ii) has separately priced advantages and disadvantages.',
+                taskCountsByQuestion={'Q1':13,'Q2':7,'Q3 Option One':5,'Q3 Option Two':6,'Q4':4,'Q5':7,'Q6':6,'Q7':8,'Q8':6,'Q9':5},
+                independentBoundaryReview='67 base tasks, one card each (the Q8(c) three-of-four choice is one card). Q7(b) has 12 marks for the shared cross and three separate 4-mark ratios. Diagram labels remain one exercise. Q3 Option Two (c)(ii) has separately priced advantages and disadvantages.',
                 remaining=['Full application navigation review','Corpus-wide reconciliation'])
 
 
@@ -332,15 +331,16 @@ def reviewed_tasks():
         'iv':[('Eelworms','nematodes/no legs/non-segmented/roundworms'),('Wireworms','larvae/of clickbeetle/arthropod/legs/segmented or any insect characteristic')],
     }
     pair_topics={'i':('4-1','3-0','animal-physiology-digestive-system'),'ii':('3-2','2-1','classification-of-animals-plants'),'iii':('2-2-2','1-3','soil-science'),'iv':('3-3-2','2-4','crop-production')}
-    for selected in combinations(pairs,3):
-        topic,old,_=pair_topics[selected[0]]
-        c=add('q8c-route-'+'-'.join(selected),'Q8(c) — '+', '.join(selected),topic,old,'|'.join(pair_topics[k][2] for k in selected),'agricultural-comparisons',
-            'Highlight the main differences between the members of any three of the following pairs: (i) Essential and non-essential amino acids (ii) Annual and biennial plants (iii) Drainage and irrigation (iv) Eelworms and wireworms.',
-            [point(answer,4,label+'.') for k in selected for label,answer in pairs[k]],
-            [region(5,.49,.587)],[region(11,.506,.898)],'Practice choice: '+', '.join(selected)+'.',
-            {'kind':'closed','choose':3,'options':list(pairs),'route':list(selected)})
-        c['additionalTopicIds']=['agsci-'+pair_topics[k][0] for k in selected[1:]]
-        c['curriculumNodeIds']=['agricultural-science-'+pair_topics[k][1] for k in selected]
+    keys=list(pairs)
+    c=add('q8c','Q8(c)',pair_topics['i'][0],pair_topics['i'][1],'|'.join(pair_topics[k][2] for k in keys),'agricultural-comparisons',
+        'Highlight the main differences between the members of any three of the following pairs: (i) Essential and non-essential amino acids (ii) Annual and biennial plants (iii) Drainage and irrigation (iv) Eelworms and wireworms.',
+        [menu([answer for k in keys for _,answer in pairs[k]],[4]*6,
+              'Any three pairs, both members of each: 4 marks per member, six members (24 marks). Options in printed order: '
+              + '; '.join(f'({k}) ' + ' and '.join(label.lower() for label,_ in pairs[k]) for k in keys) + '.')],
+        [region(5,.49,.587)],[region(11,.506,.898)],None,
+        {'kind':'closed','choose':3,'options':keys,'pooled':True})
+    c['additionalTopicIds']=['agsci-'+pair_topics[k][0] for k in keys[1:]]
+    c['curriculumNodeIds']=['agricultural-science-'+pair_topics[k][1] for k in keys]
     # The scheme permits three points with at least one from each application;
     # it does not prescribe a fermentation + brewing + baking allocation.
     # A manual total preserves that judgement without manufacturing fixed rows.
@@ -403,7 +403,7 @@ def reviewed_tasks():
         if key in ['q4a','q4b','q4c','q4d']:
             y={'q4a':(.525,.55),'q4b':(.555,.581),'q4c':(.585,.611),'q4d':(.615,.655)}[key]
             task['paperRegions']=[region(3,.495,.52),region(3,*y)]
-        if key.startswith('q8c-route-'): task['paperRegions']=[region(5,.51,.611)]
+        if key=='q8c': task['paperRegions']=[region(5,.51,.611)]
         if key in ['q9a','q9b','q9c','q9d','q9e']:
             y={'q9a':(.675,.701),'q9b':(.705,.731),'q9c':(.735,.761),'q9d':(.765,.791),'q9e':(.795,.851)}[key]
             task['paperRegions']=[region(5,.645,.672),region(5,*y)]
@@ -421,12 +421,12 @@ def reviewed_tasks():
     }
     for task,card in zip(tasks,cards):
         key=card['id'].removeprefix('agsci-2011-hl-')
-        source_key='q8c' if key.startswith('q8c-route-') and 'i' in task['selection']['route'] else key
+        source_key=key
         if source_key in scientific:
             url,note=scientific[source_key]
             task['schemeNote']=note
             task['scientificContext']={'source':url,'checkedAt':'2026-10-07','treatment':'Retain the historical quotation and tariff; explain the scientific distinction.'}
             card['rows'][0]['contextNote']=(card['rows'][0].get('contextNote','')+' '+note).strip()
-    assert len(cards)==70
-    assert len({c['id'] for c in cards})==70
+    assert len(cards)==67
+    assert len({c['id'] for c in cards})==67
     return cards,tasks

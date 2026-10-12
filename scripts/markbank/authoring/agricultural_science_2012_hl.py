@@ -1,7 +1,7 @@
 """2012 Higher tasks from the complete original paper/scheme review.
 
 The independent source census was transcribed first. Two printed three-of-four
-pools expand mechanically; open examples remain coherent answer menus.
+pools are one card each; open examples remain coherent answer menus.
 """
 from itertools import combinations
 from agricultural_science_2010_hl import ROOT, point, menu, region
@@ -17,10 +17,10 @@ SELECTIONS = {
     '0edb5bbb1e0254c2':('open','Q3 Option One (b)(ii) selects two factors from the student’s own preceding answer; no finite pool is printed.'),
     'a64eef37127d491b':('independent-task-selection','Q4 selects two independently priced 24-mark methods. All four are retained.'),
     '341e437d57edf3c6':('open','Q6(c) asks for one hormone without a printed finite pool. Scheme examples are coherent answer menus.'),
-    '0e1658b6d9ac7f04':('closed','Q7(a) prints four terms and asks for three. All four combinations are retained.'),
+    '0e1658b6d9ac7f04':('closed','Q7(a) prints four terms and asks for three, 4 marks each. One card: a single anyN row lists all four terms, claim limit three.'),
     '2400d5f4cae0b778':('required-condition','Q7(b)(ii) crosses two of the new hybrids, both BE. This is a required parent condition, not a finite response selection.'),
-    '3514ced833fb6e33':('independent-task-selection','Q8 selects two independently priced parts. All internal tasks and finite comparison routes are retained.'),
-    'b8d6b839e57eec1c':('closed','Q8(c) prints four comparison pairs and asks for three. All four complete combinations are retained.'),
+    '3514ced833fb6e33':('independent-task-selection','Q8 selects two independently priced parts. All internal tasks are retained; the comparison choice in (c) is one card.'),
+    'b8d6b839e57eec1c':('closed','Q8(c) prints four comparison pairs and asks for three. One card lists all eight members as 4-mark groups and credits the best six (24 marks).'),
     '7f8409467c8fcc41':('independent-task-selection','Q9 selects four independently marked twelve-mark explanations. All five are retained.'),
 }
 SCIENTIFIC = {
@@ -32,7 +32,7 @@ SCIENTIFIC = {
 SOURCE_NOTES = {
     'q5biii':'The examination paper repeats (ii) beside Earthing-up. The scheme correctly numbers this third practice (iii); this task uses (iii) and retains the original paper crop.',
     'q7bii':'The scheme labels the hybrid intercross offspring F1. Relative to the original Barra × Evita cross, these are the F2 generation. Parents BE × BE and the original genotypes, phenotypes and ten-mark tariff are unchanged.',
-    'q8c':'The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper.',
+    'q8c':'The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice card follows the paper.',
 }
 
 
@@ -51,7 +51,7 @@ def paper_review():
                 wholePaperVisualReview='reviewed',schemeBoundaryReview='reviewed',
                 paperPagesInspected=list(range(1,9)),schemePagesInspected=list(range(1,17)),
                 selectionDirectives=observed,supplementarySelections=supplementary,sourceNotes=notes,
-                independentBoundaryReview='56 base tasks and 62 routes. Shared first-correct scales remain whole. Two printed three-of-four pools expand to four routes each. Milk composition, soil profile and growth-curve drawing retain the published partial bands under manual question-total marking.',
+                independentBoundaryReview='56 base tasks, one card each. Shared first-correct scales remain whole. The two printed three-of-four pools are one card each. Milk composition, soil profile and growth-curve drawing retain the published partial bands under manual question-total marking.',
                 cropVisualReview='All 56 distinct crop pairs inspected. Clipped scheme continuation, growth-curve axis, neighbouring-line fragments and shared Q4/Q9 tariffs corrected and re-rendered. Both original solution images inspected.',
                 runtimeReview='42 integrated production-component cases at 1200px and 390px: source reveal/hide, nonblank crops, full-reader zoom/toggle/return, marking menus, manual question-total grading and solution images; no page errors. Signed-in full-app navigation remains open.',
                 remaining=['Irish edition comparison','Full application navigation review','Corpus-wide reconciliation'])
@@ -79,7 +79,7 @@ def reviewed_tasks():
                   examTopicIds=['agricultural-science-higher-'+t for t in atlas.split('|')],
                   selection=selection or {'kind':'none','reason':'Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes.'},
                   evidence='All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring.')
-        note_key='q8c' if key.startswith('q8c-route-') else key
+        note_key=key
         if note_key in SOURCE_NOTES: task['schemeNote']=SOURCE_NOTES[note_key]
         if key in SCIENTIFIC:
             url,note=SCIENTIFIC[key];task['schemeNote']=note
@@ -269,11 +269,10 @@ def reviewed_tasks():
         'iii':('Genetically modified (GM) crops','Where the genotype of a crop is altered (to produce an improved variety).'),
         'iv':('Binary fission','Division of a cell into two or type of (asexual) reproduction in unicellular organisms or named.'),
     }
-    for selected in combinations(terms,3):
-        add('q7a-route-'+'-'.join(selected),'Q7(a) — '+', '.join(selected),'4-3-2','3-6','genetics','genetics-terms',
-            'Explain three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission.',
-            [point(terms[k][1],4,terms[k][0]+'.') for k in selected],[region(4,.617,.7)],[region(12,.111,.266)],
-            'Practice choice: '+', '.join(terms[k][0] for k in selected)+'.',selection={'kind':'closed','choose':3,'options':list(terms),'route':list(selected)})
+    add('q7a','Q7(a)','4-3-2','3-6','genetics','genetics-terms',
+        'Explain three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission.',
+        [menu([terms[k][1] for k in terms],[4,4,4],'Any three of the four terms, 4 marks each. Options in printed order: '+'; '.join(f'({k}) {terms[k][0]}' for k in terms)+'.')],
+        [region(4,.617,.7)],[region(12,.111,.266)],selection={'kind':'closed','choose':3,'options':list(terms),'pooled':True})
     oats='In cereal trials for oats, pure-breeding Barra (approximately 500 mm straw length) was crossed with pure-breeding Evita (approximately 800 mm). The hybrid had an approximate straw length of 650 mm. Use B for the 500 mm gene and E for the 800 mm gene.'
     add('q7bi','Q7(b)(i)','4-3-2','3-6','genetics','oat-incomplete-dominance',
         'Show how this hybrid result arose.',[point('BB',2,'Pure-breeding Barra parent.'),point('EE',2,'Pure-breeding Evita parent.'),point('BE',2,'Hybrid offspring, explaining the 650 mm result.')],
@@ -316,17 +315,19 @@ def reviewed_tasks():
         'iii':('Catch crop and nurse crop','crop-production','Grown between two main crops|sown after maincrop|fast growing crop (2-3 months)|prevents leaching|prevents soil erosion|high yield|break between grass and cereal|mainly fodder crops|e.g. turnips','Crop with 1 year life cycle|sown with perennial crop|annual crop is harvested leaving the perennial crop|reduces weeds|prevents soil erosion|used to establish perennial crop|e.g. grass sown with spring barley or peas'),
         'iv':('Zoonoses and zoospores','animal-diseases|plant-physiology','Disease(s)|can be transmitted from animal to human|spread by direct contact (insects eating flesh of infected animals, drinking contaminated water)|e.g. anthrax, brucellosis','Asexual reproductive cell|method of propagation in algae (bacteria, fungi)|no cell wall|flagellum for movement|mobile spore|e.g. Phytophthora infestans (potato blight)'),
     }
-    for selected in combinations(pairs,3):
-        rows=[]
-        for k in selected:
-            label,_,left,right=pairs[k];a,b=label.split(' and ')
-            rows += [menu(left,[2,2],a+': two points.'),menu(right,[2,2],b+': two points.')]
-        c=add('q8c-route-'+'-'.join(selected),'Q8(c) — '+', '.join(selected),'4-3-1','3-3|2-4|3-5',
-            '|'.join(dict.fromkeys(t for k in selected for t in pairs[k][1].split('|'))),'agricultural-comparisons',
-            'Highlight the main differences between the members of three of the following pairs: (i) Lungworm and ringworm. (ii) Breeding unit and finishing unit. (iii) Catch crop and nurse crop. (iv) Zoonoses and zoospores.',
-            rows,[region(5,.165,.304)],[region(13,.436,.801)],'Practice choice: '+', '.join(pairs[k][0] for k in selected)+'.',
-            selection={'kind':'closed','choose':3,'options':list(pairs),'route':list(selected)})
-        c['additionalTopicIds']=['agsci-4-3-3','agsci-3-3-2']
+    rows=[]
+    for k in pairs:
+        label,_,left,right=pairs[k];a,b=label.split(' and ')
+        rows += [menu(left,[2,2],f'({k}) {a}: two points.'+(' Any three pairs, both members of each: two points (4 marks) per member, best six members (24 marks).' if k=='i' else '')),
+                 menu(right,[2,2],f'({k}) {b}: two points.')]
+    c=add('q8c','Q8(c)','4-3-1','3-3|2-4|3-5',
+        '|'.join(dict.fromkeys(t for k in pairs for t in pairs[k][1].split('|'))),'agricultural-comparisons',
+        'Highlight the main differences between the members of three of the following pairs: (i) Lungworm and ringworm. (ii) Breeding unit and finishing unit. (iii) Catch crop and nurse crop. (iv) Zoonoses and zoospores.',
+        rows,[region(5,.165,.304)],[region(13,.436,.801)],
+        selection={'kind':'closed','choose':3,'options':list(pairs),'pooled':True})
+    c['additionalTopicIds']=['agsci-4-3-3','agsci-3-3-2']
+    c['tariffModel']={'kind':'bestNofParts','answer':6,'ofParts':8,'perPart':4}
+    c['totalMarks']=tasks[-1]['marksPerRoute']=24
     reasons=[
         ('a','The importance of pollination in plants.','Necessary for (sexual) reproduction of flowering plants|allows for genetic variation|production of seeds|fruits|which are food for animals|part of the food chain|biodiversity-maintains a balance in the ecosystem.','3-1','2-0','plant-physiology',(.436,.458),(.111,.184)),
         ('b','A greater demand for energy by animals kept outdoors over the winter.','Colder outdoors|wetter|animals use energy for heat (respiration)|greater energy demand to maintain critical temperature|animals move around and use energy|thermoregulation (maintain body temperature)','4-1','3-0','animal-physiology-digestive-system',(.466,.488),(.193,.261)),
@@ -338,5 +339,5 @@ def reviewed_tasks():
         add('q9'+letter,f'Q9({letter})',topic,old,atlas,'scientific-explanation-'+letter,
             'Give a scientific explanation for: '+label,[menu(pool,[4]*3,'Three distinct points in a coherent explanation; synonymous descriptions earn only one award.')],
             [region(5,.406,.428),region(5,*py)],[region(14,.111,.195)] if letter=='a' else [region(14,.111,.195),region(14,*sy,.195,.96)])
-    assert len(cards)==62
+    assert len(cards)==56
     return cards,tasks

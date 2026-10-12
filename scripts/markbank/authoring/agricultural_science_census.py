@@ -1029,17 +1029,15 @@ def source_tasks():
             assert cue in pages[kind][page-1], f'Stale source cue: {level} {ref}: {cue}'
             routes = [ref]
             selection = {'kind':'none'}
+            # A printed item choice is ONE practice card (coordinator rule,
+            # 2026-10-12): the task keeps its closed pool but a single route.
             if year==2010 and level=='higher' and ref=='Q3 Option Two (b)':
-                routes = [ref+' — Hoose',ref+' — grass-tetany']
-                selection = {'kind':'closed','choose':1,'options':['Hoose','grass-tetany']}
+                selection = {'kind':'closed','choose':1,'options':['Hoose','grass-tetany'],'pooled':True}
             elif ref in MODERN_POOLS.get((year,level),{}):
                 choose,choices = MODERN_POOLS[(year,level)][ref]
-                routes = [ref+' — '+', '.join(parts) for parts in itertools.combinations(choices,choose)]
-                selection = {'kind':'closed','choose':choose,'options':choices}
+                selection = {'kind':'closed','choose':choose,'options':choices,'pooled':True}
             elif year<2021 and level=='higher' and (ref=='Q8(c)' or year in (2010,2012) and ref=='Q7(a)'):
-                choices = ['i','ii','iii','iv']
-                routes = [ref+' — '+', '.join(parts) for parts in itertools.combinations(choices,3)]
-                selection = {'kind':'closed','choose':3,'options':choices}
+                selection = {'kind':'closed','choose':3,'options':['i','ii','iii','iv'],'pooled':True}
             tag = 'HL' if level=='higher' else 'OL'
             tasks.append({'ref':f'{year} {tag} {ref}','marksPerResponse':int(marks),
                           'paperPage':paper_page,'schemePage':scheme_page,
@@ -1065,8 +1063,8 @@ def build():
                 'A diagram labelling exercise stays one task with all required labels and its figure; labels are answer fields, not printed alternative routes.',
                 'A matching table can split into complete activity or disease tasks when each row has a published fixed award. Completed examples are not tasks.',
                 'Pooled first-correct tariffs stay together: Higher Q1(e/f/g/j), Ordinary Q5 and Q7 must not allocate fixed marks to individual answer positions.',
-                'Higher Q3 Option One and Option Two are distinct addresses. Q3 Option Two (b) has two common definitions and two alternative disease responses.',
-                'Higher Q7(a) and Q8(c) each print a closed three-of-four pool. Each complete three-item response is one route.',
+                'Higher Q3 Option One and Option Two are distinct addresses. Q3 Option Two (b) has two common definitions and one disease task whose hoose and grass-tetany responses are mutually exclusive rows on one card.',
+                'Higher Q7(a) and Q8(c) each print a closed three-of-four pool. A printed item choice is one practice card listing every item; it is never split into combination siblings.',
                 'Exam choices between independently priced questions/parts do not combine unrelated tasks into extra practice identities.',
                 'Ordinary Q3(a) identifies correct dairy breeds rather than choosing arbitrary pairs. Ordinary Q8(c) and Q9(c/e) are open methods/crops; accepted scheme examples are not a finite paper choice.',
                 'Ordinary Q12(a)(iii) has inconsistent point-count wording: retain 18 marks and a non-automatic part-score. Q12(d) totals 28 in English versus 30 printed; disclose the discrepancy, never add fictitious marks.',
@@ -1173,7 +1171,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56 / 62; 2026 Higher 91 / 112; 2026 Ordinary 85 / 114; 2025 Higher 89 / 112; 2025 Ordinary 91 / 99; 2024 Higher 81 / 91. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81. Remaining editions stay open.')
 
 
 if __name__=='__main__':

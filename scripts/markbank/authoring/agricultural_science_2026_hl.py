@@ -2,12 +2,11 @@
 
 All 44 paper pages and 33 scheme pages were inspected before authoring; the
 independent census in agricultural_science_census.py was transcribed first.
-Three printed finite pools expand mechanically (Q2(b) three of four headings,
-Q7 four of six benefits, Q10(a) two of three plants) and two printed either/or
-choices become one route each (Q14(c)(i) method A or B, Q18(c)(iii) plants or
-animals). Open examples stay coherent answer menus.
+Every printed item choice is ONE card listing every item (Q2(b) three of four
+headings, Q7 four of six benefits, Q10(a) two of three plants, Q18(c)(iii)
+plants or animals); Q14(c)(i) method A or B keeps its two methods as mutually
+exclusive row routes on one card. Open examples stay coherent answer menus.
 """
-from itertools import combinations
 from agricultural_science_2010_hl import point, menu, region
 from agricultural_science_2010_parity import scan
 from agricultural_science_2011_hl import variants
@@ -21,12 +20,12 @@ SELECTIONS = {
     'e8c019ae0b41ecb7':('exam-selection','Section B: four of six independent questions. Every question is retained.'),
     '7432b25456cb2ca8':('exam-selection','Repeated Section A instruction: ten independent 10-mark questions, all retained.'),
     '9707f8e403d3e354':('independent-task-selection','Q2 either (a) or (b): both independently marked alternatives are retained at their own addresses.'),
-    'dede8045c702dde8':('closed','Q2(b) prints four headings and asks for any three: all four three-heading routes are retained at 10 marks each.'),
+    'dede8045c702dde8':('closed','Q2(b) prints four headings and asks for any three; scored 5+3+2 on the first three correct headings. ONE card: a single anyN row lists every printed item with the scheme\'s wording and marks (coordinator rule, 2026-10-12: item-choice siblings are not separate practice identities).'),
     '1dbe2dc4871a9fc0':('independent-task-selection','Q3 either (a) or (b): both alternatives are retained.'),
     '814a14887d2c6953':('not-a-selection','Prose in the Q5 stem ("one of the most costly"); no response choice.'),
     'cf26516051e681aa':('independent-task-selection','Q6 either (a) or (b): both alternatives are retained.'),
-    '6dac7ebdeb2a6e5c':('closed','Q7 prints six benefits and asks for any four: all fifteen four-benefit routes are retained at 10 marks each.'),
-    '00f8ddba32153c18':('closed','Q10(a) prints plants A, B and C and asks for any two: all three two-plant routes are retained at 5 marks each.'),
+    '6dac7ebdeb2a6e5c':('closed','Q7 prints six benefits and asks for any four, scored 5+3+2(1). ONE card: a single anyN row lists every printed item with the scheme\'s wording and marks (coordinator rule, 2026-10-12: item-choice siblings are not separate practice identities).'),
+    '00f8ddba32153c18':('closed','Q10(a) prints plants A, B and C and asks for any two, scored 3+2. ONE card: a single anyN row lists every printed item with the scheme\'s wording and marks (coordinator rule, 2026-10-12: item-choice siblings are not separate practice identities).'),
     '66628fc3651b1157':('independent-task-selection','Q11 either (a) or (b): both alternatives are retained.'),
     'f726bead2abb20bc':('not-a-selection','Q12(a) uses "select" for breeding selection of traits; the two traits are open, not a printed pool.'),
     '246c040a8fc33fc0':('exam-selection','Section B heading: four of six independent 50-mark questions, all retained.'),
@@ -34,8 +33,8 @@ SELECTIONS = {
     '4a520afd30e05775':('independent-task-selection','Q16: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained.'),
 }
 SUPPLEMENTARY = [
-    (26,'Identify method A or B','closed','Q14(c)(i): a printed choice between photographs A and B. Both routes are retained, each with its own name and method menu.'),
-    (39,'plants or animals','closed','Q18(c)(iii): a printed choice between plants and animals. Both routes are retained with their own scheme menus.'),
+    (26,'Identify method A or B','closed','Q14(c)(i): a printed choice between photographs A and B, each with its own name and method menu. One card: the two methods are mutually exclusive row routes (name 3 + two method points), so naming a method locks its route.'),
+    (39,'plants or animals','closed','Q18(c)(iii): a printed choice between plants and animals, one 3-mark explanation. One card: a single anyN row lists both scheme menus, claim limit one.'),
     (8,'Name one other mineral','open','Q4(c): any suitable mineral; the scheme examples are matching name/reason menus, not a printed pool.'),
     (31,'Describe three stages of grass growth','open','Q16(a)(i): the stages are student-generated; the scheme lists four described stages as a marking menu.'),
     (36,'profitability and/or environmental footprint','open','Q17(a)(v): flexible and/or wording; one combined menu, not fanned out.'),
@@ -57,7 +56,7 @@ def paper_review():
                 wholePaperVisualReview='reviewed', schemeBoundaryReview='reviewed',
                 paperPagesInspected=list(range(1, 45)), schemePagesInspected=list(range(1, 34)),
                 selectionDirectives=observed, supplementarySelections=supplementary, sourceNotes=notes,
-                independentBoundaryReview='91 base tasks and 112 routes. Q2(b) three-of-four (4 routes), Q7 four-of-six (15), Q10(a) two-of-three (3), Q14(c)(i) A or B (2) and Q18(c)(iii) plants or animals (2). First-correct scales stay whole; drawings, the graph and the two-field fertility comparison keep manual question-total marking.',
+                independentBoundaryReview='91 base tasks, one card each. Item-choice pools are single cards: Q2(b) any three of four headings, Q7 any four of six benefits, Q10(a) any two of three plants, Q14(c)(i) method A or B (route-locked rows) and Q18(c)(iii) plants or animals. First-correct scales stay whole; drawings, the graph and the two-field fertility comparison keep manual question-total marking.',
                 cropVisualReview='Every distinct paper/scheme crop pair rendered and inspected; the scheme reproductive-system solution image inspected.',
                 runtimeReview='Integrated production-component cases at 1200px and 390px. Signed-in full-app navigation remains open.',
                 remaining=['Irish edition comparison (deferred)', 'Full application navigation review', 'Corpus-wide reconciliation'])
@@ -124,14 +123,14 @@ def reviewed_tasks():
         'genetic': ('Genetic improvement of crops', '(Breeding) genetically selecting crops for traits (like faster growth or larger surface area or higher chlorophyll content, or drought resistance) leads to increased photosynthesis or crop yields'),
         'grassland': ('Grassland management', 'Management of grazing system (stocking rate or reseeding or topping or rotation) to increase leaf growth / increase sugar content for silage or grazing.'),
     }
-    for chosen in combinations(headings, 3):
-        labels = [headings[k][0] for k in chosen]
-        add('q2b-route-' + '-'.join(chosen), 'Q2(b) — ' + ', '.join(labels), '3-1', 'plant-physiology|crop-production', 'photosynthesis-crop-production',
-            'Discuss how the knowledge of photosynthesis is used to enhance crop production on Irish farms. In your answer, refer to any three of the following:',
-            [menu([headings[k][1] for k in chosen], [5, 3, 2],
-                  'One point under each of your three headings, in order: ' + '; '.join(labels) + '. Alternatives within one heading earn one award. The first correct heading earns 5 marks, the second 3 and the third 2.')],
-            [region(5, .065, .295)], [region(13, .066, .467)], 'Practice choice: ' + ', '.join(labels) + '.',
-            selection={'kind': 'closed', 'choose': 3, 'options': list(headings), 'route': list(chosen)}, extra=('3-3-2',))
+    add('q2b', 'Q2(b)', '3-1', 'plant-physiology|crop-production', 'photosynthesis-crop-production',
+        'Discuss how the knowledge of photosynthesis is used to enhance crop production on Irish farms. In your answer, refer to any three of the following: '
+        + '; '.join(h[0] for h in headings.values()) + '.',
+        [menu([h[1] for h in headings.values()], [5, 3, 2],
+              'One point under each of any three headings. In printed order the options are: ' + '; '.join(h[0] for h in headings.values())
+              + '. Alternatives within one heading earn one award. The first correct heading earns 5 marks, the second 3 and the third 2.')],
+        [region(5, .065, .295)], [region(13, .066, .467)],
+        selection={'kind': 'closed', 'choose': 3, 'options': list(headings), 'pooled': True}, extra=('3-3-2',))
 
     q3a = ('Teagasc have confirmed the first reported case of a field population of Italian ryegrass which has proven resistant to the chemical herbicide glyphosate. '
            'Italian ryegrass is already a major challenge on some Irish tillage farms, with some populations resistant to selective herbicides used in crops. (Adapted from Teagasc, 2025)')
@@ -222,15 +221,15 @@ def reviewed_tasks():
         'food': ('Food quality', 'Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers.'),
         'nutrients': ('Nutrient provision', 'Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs.'),
     }
-    for chosen in combinations(benefits, 4):
-        labels = [benefits[k][0] for k in chosen]
-        add('q7-route-' + '-'.join(chosen), 'Q7 — ' + ', '.join(labels), '2-2-3', 'soil-science', 'soil-biological-health-benefits',
-            'Outline how any four benefits can improve agricultural productivity and/or ecosystem health.',
-            [menu([benefits[k][1] for k in chosen], [5, 3, 1, 1],
-                  'One outline for each of your four benefits, in order: ' + '; '.join(labels) + '. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).')],
-            [region(12, .065, .505)], [region(16, .333, .870)],
-            'Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: ' + ', '.join(labels) + '.',
-            selection={'kind': 'closed', 'choose': 4, 'options': list(benefits), 'route': list(chosen)})
+    add('q7', 'Q7', '2-2-3', 'soil-science', 'soil-biological-health-benefits',
+        'Outline how any four benefits can improve agricultural productivity and/or ecosystem health.',
+        [menu([b[1] for b in benefits.values()], [5, 3, 1, 1],
+              'One outline for each of any four benefits. In printed order the options are: ' + '; '.join(b[0] for b in benefits.values())
+              + '. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).')],
+        [region(12, .065, .505)], [region(16, .333, .870)],
+        'Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. '
+        'The benefits printed are: ' + '; '.join(b[0] for b in benefits.values()) + '.',
+        selection={'kind': 'closed', 'choose': 4, 'options': list(benefits), 'pooled': True})
 
     q8 = 'A farmer is considering introducing a new beef breed (Breed A) to cross with their dairy cows (Breed B) towards the end of the breeding season to improve beef efficiency on their farm.'
     add('q8a', 'Q8(a)', '4-2', 'beef-cattle|dairy-cattle', 'beef-dairy-breed-identification', 'Identify breed A and B.',
@@ -255,13 +254,12 @@ def reviewed_tasks():
         [region(14, .065, .43), region(14, .546, .57), region(14, .663, .767)], [region(17, .406, .545)], q9)
 
     plants = {'A': 'A – Ragwort', 'B': 'B – Nettle', 'C': 'C – Dandelion'}
-    for chosen in combinations(plants, 2):
-        add('q10a-route-' + ''.join(chosen).lower(), 'Q10(a) — ' + ', '.join(chosen), '3-2', 'classification-of-animals-plants', 'weed-identification',
-            'Identify any two of the plants A, B, and C.',
-            [menu([plants[k] for k in chosen], [3, 2], 'Identify the two plants you chose. The first correct identification earns 3 marks and the second 2.')],
-            [region(15, .065, .387)], [region(17, .545, .628)],
-            'During a farm walk, a farmer was asked to identify the three plants A, B and C found in the field. Practice choice: plants ' + ' and '.join(chosen) + '.',
-            selection={'kind': 'closed', 'choose': 2, 'options': list(plants), 'route': list(chosen)})
+    add('q10a', 'Q10(a)', '3-2', 'classification-of-animals-plants', 'weed-identification',
+        'Identify any two of the plants A, B, and C.',
+        [menu(list(plants.values()), [3, 2], 'Any two of the three plants. The first correct identification earns 3 marks and the second 2.')],
+        [region(15, .065, .387)], [region(17, .545, .628)],
+        'During a farm walk, a farmer was asked to identify the three plants A, B and C found in the field.',
+        selection={'kind': 'closed', 'choose': 2, 'options': list(plants), 'pooled': True})
     add('q10b', 'Q10(b)', '3-3-1', 'crop-production', 'uncertified-seed-risks',
         'The farmer accidentally bought uncertified seed containing a high percentage of weed seeds. Explain two risks this poses to productivity and sustainability on his farm.',
         [menu(['(Increase in weed populations) competition – reduced yield or income', 'seeds can remain viable in soil for many years', 'long term weed control very difficult or expensive',
@@ -401,14 +399,17 @@ def reviewed_tasks():
               ['Land grazed or cut tightly', 'Seed is spread using a fertiliser spreader or by hand',
                'The field is then lightly grazed or rolled so that animals’ hooves or machinery help press the seed into the soil']),
     }
+    rows = []
     for letter, (label, name, steps) in sowing.items():
-        add('q14ci-route-' + letter.lower(), f'Q14(c)(i) — {letter}', '3-3-1', 'grassland', 'clover-oversowing-method',
-            'Identify method A or B and explain to a group of farmers how clover seeds can be sown using this method.',
-            [point(name, 3, 'Named method.'),
-             menu(steps, [3, 3], '* If the name and method match they get full marks, if the name and method don’t match they get awarded the marks for the name')],
-            [region(26, .065, .41)], [region(24, .195, .542)],
-            f'Clover seeds can be over-sown into established swards in a number of ways as shown in the photographs A and B below. Practice choice: method {letter} ({label}).',
-            selection={'kind': 'closed', 'choose': 1, 'options': list(sowing), 'route': [letter]})
+        rows += [dict(point(name, 3, f'Method {letter}: named method, 3 marks. Naming a method commits the card to that route.'), route=letter),
+                 dict(menu(steps, [3, 3], f'Method {letter}: two points of the method, 3 marks each. * If the name and method match they get full marks, if the name and method don’t match they get awarded the marks for the name'), route=letter)]
+    add('q14ci', 'Q14(c)(i)', '3-3-1', 'grassland', 'clover-oversowing-method',
+        'Identify method A or B and explain to a group of farmers how clover seeds can be sown using this method.', rows,
+        [region(26, .065, .41)], [region(24, .195, .542)],
+        'Clover seeds can be over-sown into established swards in a number of ways as shown in the photographs A and B below.',
+        selection={'kind': 'closed', 'choose': 1, 'options': list(sowing), 'pooled': True})
+    # Mutually exclusive row routes count once: 3 + 6 for whichever method is answered.
+    cards[-1]['totalMarks'] = tasks[-1]['marksPerRoute'] = 9
     add('q14cii', 'Q14(c)(ii)', '3-3-1', 'grassland', 'oversowing-grazing-height',
         'Identify the ideal post-grazing height of the sward at time of over-sowing by placing a tick (✓) in the correct box.',
         [point('≤ 4cm', 3, 'The scheme ticks ≤ 4cm.')], [region(26, .065, .106), region(26, .73, .875)], [region(24, .542, .647)])
@@ -585,11 +586,12 @@ def reviewed_tasks():
                      'Native cattle or sheep breeds cope better on wet, heavy soils and are less prone to lameness',
                      'animals with efficient feed conversion or strong immune systems perform better on land with lower grass quality']),
     }
-    for key, (label, topic, pool) in domains.items():
-        add('q18ciii-route-' + key, f'Q18(c)(iii) — {key}', topic, 'genetics|soil-science', 'genetic-traits-soil-conditions',
-            'Explain how genetic traits in plants or animals can help farmers respond to soil conditions.',
-            [menu(pool, [3], label + '.')], [region(39, .627, .67)], [region(30, .336, .585)],
-            f'Practice choice: {key}.', selection={'kind': 'closed', 'choose': 1, 'options': list(domains), 'route': [key]}, extra=('2-3',))
+    add('q18ciii', 'Q18(c)(iii)', '3-3-1', 'genetics|soil-science', 'genetic-traits-soil-conditions',
+        'Explain how genetic traits in plants or animals can help farmers respond to soil conditions.',
+        [menu([o for d in domains.values() for o in d[2]], [3],
+              'One explanation, in plants or in livestock. The first two options are the scheme’s plant traits and the last three its livestock traits.')],
+        [region(39, .627, .67)], [region(30, .336, .585)],
+        selection={'kind': 'closed', 'choose': 1, 'options': list(domains), 'pooled': True}, extra=('2-3', '4-3-2'))
     q18d = ('‘Genocells’ is a new emerging technology available for genotyped dairy herds. Bulk milk samples were tested with an accuracy of 90 – 98% for Somatic Cell Count (SCC). '
             'Together with milk recording, this allows for better management of SCC throughout the lactation period. (Adapted from Teagasc, 2025)')
     add('q18di', 'Q18(d)(i)', '4-3-2', 'genetics|innovation-and-biotechnology-in-agriculture', 'genotyped-definition', 'Explain the underlined term.',
@@ -598,5 +600,5 @@ def reviewed_tasks():
         'Explain how the better management of SCC throughout the lactation period can benefit farmers.',
         [menu('Ensuring low SCC reduces the incidence of mastitis|(healthy udders) produce better quality milk or higher milk yields|fewer discarded milk days due to antibiotic treatments|milk with a low SCC attracts bonus payments from processors or avoids penalties|less need to cull (reducing replacement costs and improving genetic progress in the herd)|enhances animal welfare|reduces veterinary or labour costs', [5, 2])],
         [region(40, .065, .215), region(40, .348, .391)], [region(30, .633, .807)], q18d)
-    assert len(cards) == 112, len(cards)
+    assert len(cards) == 91, len(cards)
     return cards, tasks

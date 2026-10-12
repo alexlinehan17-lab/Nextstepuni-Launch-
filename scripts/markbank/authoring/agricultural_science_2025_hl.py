@@ -1,18 +1,18 @@
 """2025 Higher review: the 88 original cards reconciled against the SEC sources.
 
 All 44 paper pages and 25 scheme pages were inspected and the independent
-census transcribed before any card was touched. 78 original card objects
+census transcribed before any card was touched. 81 original card objects
 match a published task boundary and tariff and are left byte-identical; they
-only gain an Atlas binding and an inspected official source page. Ten original
-cards are corrected IN PLACE, keeping their IDs (and saved progress): where an
-unexpanded printed pool becomes routes, the original card becomes the first
-printed route; Q12 becomes its any-four-of-five 2(4)+2(1) scale and Q14(b)(i)
-regains the published result mark. Each correction records the original
-wording, marks and object hash plus the SEC page and quote that justify it.
+only gain an Atlas binding and an inspected official source page. A printed
+any-N-of-M choice is ONE practice card. Three originals are corrected IN PLACE,
+keeping their IDs: Q12(a) becomes the single any-four-of-five 2(4)+2(1) card
+(its sibling prompt cards Q12(b)-(e) are withdrawn as progress aliases of it),
+Q14(b)(i) regains the published result mark and Q15(b) becomes one
+any-three-of-four card. Each correction records the original wording, marks
+and object hash plus the SEC page and quote that justify it.
 """
 import hashlib
 import json
-from itertools import combinations
 from agricultural_science_2010_hl import ROOT, point, menu, region
 from agricultural_science_2010_parity import scan
 from agricultural_science_2011_hl import variants
@@ -26,22 +26,22 @@ SELECTIONS = {
     'ae168e9a0c211b77':('exam-selection','Section B: four of six independent questions. Every question is retained.'),
     '4d0e9772893bc740':('exam-selection','Repeated Section A instruction: ten independent 10-mark questions, all retained.'),
     '82944548c2c72701':('independent-task-selection','Q2 either (a) or (b): both independently marked alternatives are retained.'),
-    '6cfb3ad3b6d6408b':('closed','Q2(a) prints annual, biennial and perennial and asks for any two: three routes at 10 marks each.'),
-    '2e6cd11be874308c':('closed','Q2(b)(ii) "Choose" any two of five printed characteristics: ten routes at 2 marks each.'),
-    '9ab2b0c47cfe5005':('closed','Second regex match in the same Q2(b)(ii) instruction ("any two"); the same ten routes.'),
+    '6cfb3ad3b6d6408b':('closed','Q2(a) prints annual, biennial and perennial and asks for any two, (3+2) each. The original one-card form already lets any two lifecycles score, so it is kept unchanged. One card (item-choice siblings are not separate practice identities).'),
+    '2e6cd11be874308c':('closed','Q2(b)(ii) "Choose" any two of five printed characteristics, 1+1. The original one-card form carries all five in its accepts, so it is kept unchanged. One card (item-choice siblings are not separate practice identities).'),
+    '9ab2b0c47cfe5005':('closed','Second regex match in the same Q2(b)(ii) instruction ("any two"); the same single card.'),
     '4090a61f0e3cfda9':('independent-task-selection','Q3 either (a) or (b): both alternatives are retained.'),
     '9e6f5de3f3c38902':('independent-task-selection','Q4 either (a) or (b): both alternatives are retained.'),
-    '980037ae98923503':('closed','Q6(b): any one of the three lambing tools identified in part (a); the scheme prints one description per tool, so three 4-mark routes.'),
+    '980037ae98923503':('closed','Q6(b): any one of the three lambing tools identified in part (a), 4 marks. The original one-card form carries all three descriptions, so it is kept unchanged. One card (item-choice siblings are not separate practice identities).'),
     'a00923023b1eed61':('open','Q7(a): any two components of the soil microbiome; no printed pool, the scheme examples are a marking menu.'),
-    '6cd6108e84f08878':('closed','Q7(b): any one of the four printed processes; four 5-mark routes, each with its own contribution and benefit.'),
+    '6cd6108e84f08878':('closed','Q7(b): any one of the four printed processes, 4 (contribution) + 1 (benefit). One card: an anyN contribution row and an anyN benefit row, each listing all four processes, claim limit one. One card (item-choice siblings are not separate practice identities).'),
     '57ae0134389e1d7a':('independent-task-selection','Q9 either (a) or (b): both alternatives are retained.'),
     '4303f26dc3d09f03':('not-a-selection','Prose in the Q11 stem ("one of the best"); no response choice.'),
-    '00fdc88683e221c4':('closed','Q12: any four of five printed prompts under one 2(4)+2(1) scale; five 10-mark routes.'),
+    '00fdc88683e221c4':('closed','Q12: any four of five printed prompts under one 2(4)+2(1) scale. One 10-mark card: a single anyN row lists all five prompts, claim limit four. The other four legacy prompt IDs are withdrawn as progress aliases of it.'),
     '9fcb3888322d99ac':('exam-selection','Section B heading: four of six independent 50-mark questions, all retained.'),
     '145c11c431516d76':('independent-task-selection','Q13: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained.'),
     'b79207c595ecd897':('independent-task-selection','Q14: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained.'),
     'f937232b4d54fbc3':('open','Q15(a)(ii): characteristics for "any two parent plants" the student selects; no printed pool of plants.'),
-    '708d97ce6238b64b':('closed','Q15(b): any three of four printed photographs A–D; four 3-mark routes.'),
+    '708d97ce6238b64b':('closed','Q15(b): any three of four printed photographs A–D, 3x1. One card: a single anyN row lists all four plants, claim limit three. One card (item-choice siblings are not separate practice identities).'),
 }
 SUPPLEMENTARY = [
     (11,'Identify the three pieces of equipment','answer-identification','Q6(a): the three correct pieces among six photographs (A, C and D); the distractors are not routes.'),
@@ -54,6 +54,9 @@ SOURCE_NOTES = {
     'q14bi':'The scheme prints 4x4 for four method points and a separate 1 mark for “*Result: valid result for investigation described”. This part totals 17, which Question 14 needs to total 50.',
 }
 TOPIC = 'agricultural-science-higher-'
+# Original objects written back unchanged (kept, or withdrawn as aliases).
+RESTORED = []
+WITHDRAWN = {}
 SNAPSHOT = ROOT / 'scripts/markbank/authored/agricultural-science-corrected-originals.json'
 
 
@@ -68,7 +71,7 @@ def paper_review():
                 wholePaperVisualReview='reviewed', schemeBoundaryReview='reviewed',
                 paperPagesInspected=list(range(1, 45)), schemePagesInspected=list(range(1, 26)),
                 selectionDirectives=observed, supplementarySelections=supplementary, sourceNotes=notes,
-                independentBoundaryReview='89 base tasks and 112 routes. 78 original cards match a published boundary and tariff unchanged. Ten are corrected in place (Q2(a), Q2(b)(ii), Q6(b), Q12(a)–(e), Q14(b)(i), Q15(b)); 24 cards are added: missing Q1(b), Q3(a)(ii), Q6(a), Q7(b) (four routes) and Q15(c), plus the remaining printed routes of Q2(a), Q2(b)(ii), Q6(b) and Q15(b).',
+                independentBoundaryReview='89 base tasks, one card each. 81 original cards match a published boundary and tariff unchanged (Q2(a), Q2(b)(ii) and Q6(b) already let any printed choice score). Three are corrected in place: Q12(a) becomes the single any-four-of-five 2(4)+2(1) card, its four sibling prompt IDs Q12(b)–(e) are withdrawn as progress aliases of it; Q14(b)(i) regains its result mark; Q15(b) becomes one any-three-of-four card. Five cards are added: missing Q1(b), Q3(a)(ii), Q6(a), Q7(b) and Q15(c).',
                 cropVisualReview='Every distinct paper/scheme crop pair rendered and inspected.',
                 runtimeReview='Integrated production-component cases at 1200px and 390px. Signed-in full-app navigation remains open.',
                 remaining=['Irish edition comparison (deferred)', 'Full application navigation review', 'Corpus-wide reconciliation'])
@@ -236,6 +239,7 @@ def reviewed_tasks(existing):
     """existing: {id: card} from the authored file (originals are read, never rewritten unless corrected)."""
     paper_review()
     cards, tasks, corrections = [], [], {}
+    RESTORED.clear(); WITHDRAWN.clear()
     # Original cards carry no review stamp; cards this review wrote do. The
     # corrected originals come from their frozen snapshot, never the file.
     originals = {cid: card for cid, card in existing.items()
@@ -257,13 +261,17 @@ def reviewed_tasks(existing):
         tasks.append(t)
         return t
 
-    def keep(key, ref, examTopics=None):
+    def keep(key, ref, examTopics=None, selection=None):
         cid = 'agsci-2025-hl-' + key
         card = originals[cid]
         assert card['questionRef'] == '2025 HL ' + ref, (cid, card['questionRef'])
-        t = task(cid, ref, ref, examTopics=examTopics)
+        t = task(cid, ref, ref, selection=selection, examTopics=examTopics)
         t['marksPerRoute'] = card['totalMarks']
         t['originalCard'] = 'unchanged'
+        if cid in snapshot:
+            # An earlier review rewrote it; the frozen original goes back byte-identical.
+            assert original_hash(card) == snapshot[cid]['originalSha256']
+            RESTORED.append(card)
 
     def add(key, ref, base, topic, concept, question, rows, stem=None, marks=None, selection=None, figure=None, labels=None,
             extra=(), examTopics=None, correction=None, extra_fields=None):
@@ -302,42 +310,18 @@ def reviewed_tasks(existing):
         cards.append(card)
         return card
 
-    def closed(choose, options, route):
-        return {'kind': 'closed', 'choose': choose, 'options': options, 'route': route}
+    def closed(choose, options):
+        # Item choice is ONE practice card (coordinator rule, 2026-10-12).
+        return {'kind': 'closed', 'choose': choose, 'options': options, 'pooled': True}
 
     # Section A ---------------------------------------------------------------
     keep('q1a', 'Q1(a)')
     add('q1b', 'Q1(b)', 'Q1(b)', '4-2', 'polled-breed', 'State which breed A or B has a dominant polled trait as a characteristic of the breed.',
         [point('A or Aberdeen Angus', 2)], 'Photographs A and B show two cattle breeds (part (a): identify both cattle breeds in A and B).', extra=('4-3-2',))
     keep('q1c', 'Q1(c)')
-    life = list(LIFECYCLES)
-    q2a_stem = 'Plant lifecycles can be distinguished as annual, biennial and perennial.'
-    for chosen in combinations(life, 2):
-        key = 'q2a' if chosen == ('Annual', 'Biennial') else 'q2a-route-' + '-'.join(c.lower() for c in chosen)
-        rows = []
-        for name in chosen:
-            expl, example = LIFECYCLES[name]
-            rows += [point(expl, 3, f'{name}: explanation.'),
-                     dict(point(example, 2, f'Example of a {name.lower()} plant. (Any other valid example of a plant)'), openList=True)]
-        add(key, 'Q2(a) — ' + ', '.join(chosen), 'Q2(a)', '3-2', 'plant-lifecycles',
-            'Explain any two plant lifecycles and provide an example of each one.', rows,
-            q2a_stem + ' Practice choice: ' + ', '.join(chosen) + '.', selection=closed(2, life, list(chosen)), extra=('3-1',),
-            correction=('Visually verified paper PDF page 4 ("Explain any two plant lifecycles and provide an example of each one" beside the printed annual/biennial/perennial table) '
-                        'and scheme PDF page 12 ("(3+2) + (3+2)"). The printed any-two-of-three pool expands into three routes; this ID becomes the first printed route, Annual and Biennial, with the published 10-mark tariff.')
-                       if key == 'q2a' else None)
+    keep('q2a', 'Q2(a)', selection=closed(2, list(LIFECYCLES)))
     keep('q2bi', 'Q2(b)(i)')
-    wagyu = ('Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. '
-             'Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024)')
-    chars = list(CHARACTERISTICS)
-    for chosen in combinations(chars, 2):
-        key = 'q2bii' if chosen == ('Meat quality', 'Good growth rates') else 'q2bii-route-' + '-'.join(c.lower().replace(' ', '-') for c in chosen)
-        rows = [menu(CHARACTERISTICS[c], [1], f'{c}: one description.') if len(CHARACTERISTICS[c]) > 1 else point(CHARACTERISTICS[c][0], 1, f'{c}: description.') for c in chosen]
-        add(key, 'Q2(b)(ii) — ' + ', '.join(chosen), 'Q2(b)(ii)', '4-3-2', 'beef-cross-sire-selection',
-            'Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.',
-            rows, wagyu + ' Practice choice: ' + ', '.join(chosen) + '.', selection=closed(2, chars, list(chosen)), extra=('4-3-1',),
-            correction=('Visually verified paper PDF page 5 ("Choose any two characteristics of the Wagyu breed from the list below", five printed characteristics) and scheme PDF page 12 ("1+1", one description per characteristic). '
-                        'The printed two-of-five pool expands into ten routes; this ID becomes the first printed route, Meat quality and Good growth rates, at the published 2 marks.')
-                       if key == 'q2bii' else None)
+    keep('q2bii', 'Q2(b)(ii)', selection=closed(2, list(CHARACTERISTICS)))
     keep('q2biii', 'Q2(b)(iii)')
     keep('q3ai', 'Q3(a)(i)')
     add('q3aii', 'Q3(a)(ii)', 'Q3(a)(ii)', '4-3-1', 'technology-environmental-sustainability',
@@ -355,45 +339,38 @@ def reviewed_tasks(existing):
         [menu(['Stomach tube', 'heat lamp', 'ropes'], [1, 1, 1], 'Names: one mark for each correct piece of equipment named.'),
          menu(['A: Stomach tube', 'C: heat lamp', 'D: ropes'], [1, 1, 1], 'Identified: one mark for each correct photograph matched to its equipment. The scheme prints 3x1 (names) and 3x1 (identified).')],
         lamb, extra=('4-2',))
-    tools = list(TOOLS)
-    for name in tools:
-        key = 'q6b' if name == 'Stomach tube' else 'q6b-route-' + name.lower().replace(' ', '-')
-        add(key, f'Q6(b) — {name}', 'Q6(b)', '4-3-3', 'lambing-equipment-use',
-            'Briefly describe how any one of your named pieces of equipment identified in part (a) above is used during the lambing period.',
-            [point(TOOLS[name], 4, f'{name}.')], lamb + f' Part (a): the three pieces of lambing equipment are a stomach tube, a heat lamp and ropes. Practice choice: {name}.',
-            selection=closed(1, tools, [name]),
-            correction=('Visually verified paper PDF page 11 ("Briefly describe how any one of your named pieces of equipment identified in part (a)") and scheme PDF page 15 (one description each for stomach tube, heat lamp and ropes, 4 marks). '
-                        'The one-of-three choice expands into three routes; this ID becomes the first printed route, Stomach tube.') if key == 'q6b' else None)
+    keep('q6b', 'Q6(b)', selection=closed(1, list(TOOLS)))
     keep('q7a', 'Q7(a)')
     procs = list(PROCESSES)
-    for name in procs:
-        contrib, benefit = PROCESSES[name]
-        add('q7b-route-' + name.lower().replace(' ', '-'), f'Q7(b) — {name}', 'Q7(b)', '2-2-3', 'soil-microbiome-processes',
-            'Outline how the soil microbiome contributes to any one of the above processes and state how this process in turn benefits productivity in a named catch or energy crop.',
-            [menu(contrib, [4], f'{name}: contribution of the soil microbiome.') if len(contrib) > 1 else point(contrib[0], 4, f'{name}: contribution of the soil microbiome.'),
-             menu(benefit, [1], 'Benefit to productivity in a named catch or energy crop. The scheme prints 4+1.') if len(benefit) > 1 else point(benefit[0], 1, 'Benefit to productivity in a named catch or energy crop. The scheme prints 4+1.')],
-            'The soil microbiome plays a large role in soil health. The diagram shows four processes carried out by the soil microbiome: water retention, plant carbon sink, carbon sequestration and plant growth promotion. Practice choice: ' + name + '.',
-            selection=closed(1, procs, [name]), extra=('3-3-2',))
+    add('q7b', 'Q7(b)', 'Q7(b)', '2-2-3', 'soil-microbiome-processes',
+        'Outline how the soil microbiome contributes to any one of the above processes and state how this process in turn benefits productivity in a named catch or energy crop.',
+        [menu([c for p in procs for c in PROCESSES[p][0]], [4],
+              'Contribution of the soil microbiome to the one process you chose, 4 marks. Options by process: water retention 1–3, plant carbon sink 4, carbon sequestration 5, plant growth promotion 6–7.'),
+         menu([b for p in procs for b in PROCESSES[p][1]], [1],
+              'Benefit to productivity in a named catch or energy crop, matching the same process, 1 mark (4+1). Options by process: water retention 1–2, plant carbon sink 3, carbon sequestration 4, plant growth promotion 5–6.')],
+        'The soil microbiome plays a large role in soil health. The diagram shows four processes carried out by the soil microbiome: water retention, plant carbon sink, carbon sequestration and plant growth promotion.',
+        selection=closed(1, procs), extra=('3-3-2',))
     keep('q8a', 'Q8(a)')
     for k, ref in [('q9a', 'Q9(a)'), ('q9bi', 'Q9(b)(i)'), ('q9bii', 'Q9(b)(ii)'), ('q9biii', 'Q9(b)(iii)'), ('q10a', 'Q10(a)'), ('q10b', 'Q10(b)'), ('q11a', 'Q11(a)'), ('q11b', 'Q11(b)')]:
         keep(k, ref)
     letters = list(Q12_ITEMS)
-    for legacy, route in Q12_LEGACY.items():
-        items = [Q12_ITEMS[l] for l in route]
-        ordered = list(route[route.index(legacy):] + route[:route.index(legacy)])
-        assert sorted(route) == list(route)
-        topics = list(dict.fromkeys(Q12_ITEMS[l][2] for l in ordered))
-        add('q12' + legacy, 'Q12 — ' + ', '.join(route), 'Q12', topics[0], 'scientific-reasons-' + route,
-            'Outline one scientific reason for any four of the following: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere.',
-            [menu([Q12_ITEMS[l][1] for l in route], [4, 4, 1, 1],
-                  'One reason for each of your four prompts, in order: ' + ' '.join(f'({l}) {Q12_ITEMS[l][0]}' for l in route)
-                  + ' Alternatives within one prompt earn one award. The scheme prints 2(4)+2(1): the first two correct reasons earn 4 marks each and the next two 1 each.')],
-            'Practice choice: ' + ', '.join(f'({l})' for l in route) + '.', selection=closed(4, letters, list(route)), extra=tuple(topics[1:]),
-            examTopics='|'.join(dict.fromkeys(t for l in route for t in Q12_ITEMS[l][3].split('|'))),
-            correction=(f'Visually verified paper PDF page 18 ("Outline one scientific reason for any four of the following", five prompts (a)–(e)) and scheme PDF page 17 (one "2(4)+2(1)" tariff for the whole question). '
-                        f'The original carded each prompt as a separate 2-mark task, which matches neither the 10-mark question nor its first-correct scale. Q12 is one any-four-of-five task: five 10-mark routes. '
-                        f'This ID, originally prompt ({legacy}), becomes the route that begins at ({legacy}) in cyclic printed order, ({") (".join(ordered)}), so its own prompt stays on the card.'
-                        + (' Its topic moves from crop establishment (3.3.1) to soil management (2.3): a buffer zone protects water quality from run-off.' if legacy == 'b' else '')))
+    topics = list(dict.fromkeys(Q12_ITEMS[l][2] for l in letters))
+    add('q12a', 'Q12', 'Q12', topics[0], 'scientific-reasons',
+        'Outline one scientific reason for any four of the following: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere.',
+        [menu([Q12_ITEMS[l][1] for l in letters], [4, 4, 1, 1],
+              'One reason for each of any four prompts. In printed order the options answer: ' + ' '.join(f'({l}) {Q12_ITEMS[l][0]}' for l in letters)
+              + ' Alternatives within one prompt earn one award. The scheme prints 2(4)+2(1): the first two correct reasons earn 4 marks each and the next two 1 each.')],
+        selection=closed(4, letters), extra=tuple(topics[1:]),
+        examTopics='|'.join(dict.fromkeys(t for l in letters for t in Q12_ITEMS[l][3].split('|'))),
+        correction=('Visually verified paper PDF page 18 ("Outline one scientific reason for any four of the following", five prompts (a)–(e)) and scheme PDF page 17 (one "2(4)+2(1)" tariff for the whole question). '
+                    'The original carded each prompt as a separate 2-mark task, which matches neither the 10-mark question nor its first-correct scale. Q12 is one any-four-of-five task: '
+                    'this ID, originally prompt (a), becomes the single 10-mark card whose one anyN row lists all five prompts with the scheme\'s reasons, claim limit four. '
+                    'The original prompt cards Q12(b)–(e) are withdrawn as progress aliases of it, so their saved progress is read by this card.'))
+    for legacy in 'bcde':
+        cid = 'agsci-2025-hl-q12' + legacy
+        assert original_hash(originals[cid]) == snapshot[cid]['originalSha256']
+        RESTORED.append(originals[cid])
+        WITHDRAWN[cid] = 'agsci-2025-hl-q12a'
     # Section B ---------------------------------------------------------------
     for k, ref in [('q13ai', 'Q13(a)(i)'), ('q13aii', 'Q13(a)(ii)'), ('q13aiii', 'Q13(a)(iii)'), ('q13aiv', 'Q13(a)(iv)'), ('q13av', 'Q13(a)(v)'),
                    ('q13avi', 'Q13(a)(vi)'), ('q13avii', 'Q13(a)(vii)'), ('q13bi', 'Q13(b)(i)'), ('q13bii', 'Q13(b)(ii)'), ('q13biii', 'Q13(b)(iii)'),
@@ -418,17 +395,15 @@ def reviewed_tasks(existing):
     for k, ref in [('q15ai', 'Q15(a)(i)'), ('q15aii', 'Q15(a)(ii)'), ('q15aiii', 'Q15(a)(iii)'), ('q15aiv', 'Q15(a)(iv)')]:
         keep(k, ref)
     plant_letters = list(PLANTS)
-    for chosen in combinations(plant_letters, 3):
-        key = 'q15b' if chosen == ('A', 'B', 'C') else 'q15b-route-' + ''.join(chosen).lower()
-        add(key, 'Q15(b) — ' + ', '.join(chosen), 'Q15(b)', '3-2', 'identifying-common-farm-weeds',
-            'Identify any three common plants found on Irish farms in the photographs below.',
-            [point(f'{l}: {PLANTS[l]}', 1, f'Photograph {l}.') for l in chosen],
-            'Practice choice: photographs ' + ', '.join(chosen) + '.', selection=closed(3, plant_letters, list(chosen)), extra=('3-1',),
-            figure='agricultural-science-2025-HL-paper-p30-art',
-            labels=[dict(letter=l, meaning=PLANTS[l], askedInThisQuestion=l in chosen) for l in plant_letters],
-            correction=('Visually verified paper PDF page 30 ("Identify any three common plants found on Irish farms in the photographs below", photographs A–D) and scheme PDF page 21 ("3x1": A Cleavers, B Chicory, C Silverweed, D Oilseed rape). '
-                        'The printed three-of-four pool expands into four routes; this ID becomes the first printed route, A, B and C. Its topic moves from plant physiology to identification (3.2), where weed identification sits.')
-                       if key == 'q15b' else None)
+    add('q15b', 'Q15(b)', 'Q15(b)', '3-2', 'identifying-common-farm-weeds',
+        'Identify any three common plants found on Irish farms in the photographs below.',
+        [menu([f'{l}: {PLANTS[l]}' for l in plant_letters], [1, 1, 1], 'Any three of the four photographs, 1 mark each (3x1).')],
+        selection=closed(3, plant_letters), extra=('3-1',),
+        figure='agricultural-science-2025-HL-paper-p30-art',
+        labels=[dict(letter=l, meaning=PLANTS[l], askedInThisQuestion=True) for l in plant_letters],
+        correction=('Visually verified paper PDF page 30 ("Identify any three common plants found on Irish farms in the photographs below", photographs A–D) and scheme PDF page 21 ("3x1": A Cleavers, B Chicory, C Silverweed, D Oilseed rape). '
+                    'The original decoded only A–C and carried D as an accepted alternative on each row, with an empty stem. Same ID: one any-three-of-four card whose anyN row lists all four plants, '
+                    'claim limit three, with every photograph decoded. Its topic moves from plant physiology to identification (3.2), where weed identification sits.'))
     headings = {
         'types': ('Types of weed control', ['Crop rotation to reduce the build-up of weeds', 'correct seeding rate to increase competition',
                   'spray the field with pre-harvest or pre-emergence herbicides to reduce the weeds in the crop', 'ensure the machines are cleaned between fields to reduce weed seeds being carried',
@@ -451,6 +426,6 @@ def reviewed_tasks(existing):
                    ('q17bi', 'Q17(b)(i)'), ('q17bii', 'Q17(b)(ii)'), ('q17ci', 'Q17(c)(i)'), ('q17cii', 'Q17(c)(ii)'),
                    ('q18ai', 'Q18(a)(i)'), ('q18aii', 'Q18(a)(ii)'), ('q18aiii', 'Q18(a)(iii)'), ('q18b', 'Q18(b)'), ('q18ci', 'Q18(c)(i)'), ('q18cii', 'Q18(c)(ii)')]:
         keep(k, ref)
-    assert len(tasks) == 112 and len(cards) == 34 and len(corrections) == 10 and len(originals) == 88, (len(tasks), len(cards), len(corrections), len(originals))
-    assert {t['cardIds'][0] for t in tasks} >= set(originals), 'Every original 2025 Higher card must be reviewed'
+    assert len(tasks) == 89 and len(cards) == 8 and len(corrections) == 3 and len(originals) == 88 and len(RESTORED) == 7, (len(tasks), len(cards), len(corrections), len(originals), len(RESTORED))
+    assert {t['cardIds'][0] for t in tasks} | set(WITHDRAWN) >= set(originals), 'Every original 2025 Higher card must be reviewed or withdrawn as an alias'
     return cards, tasks, corrections

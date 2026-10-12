@@ -8472,37 +8472,13 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2022-ol-q2bii-route-e", topicId: "agsci-4-3-2", conceptId: "selecting-a-ram-for-replacement-ewes",
-    section: "A", questionRef: "2022 OL Q2(b)(ii) — breed E",
-    stem: "Practice choice: breed E. Jessica is looking to buy a ram to breed replacements with her Suffolk cross ewes.",
+    id: "agsci-2022-ol-q2bii", topicId: "agsci-4-3-2", conceptId: "selecting-a-ram-for-replacement-ewes",
+    section: "A", questionRef: "2022 OL Q2(b)(ii)",
+    stem: "Jessica is looking to buy a ram to breed replacements with her Suffolk cross ewes.",
     questionText: "Jessica could choose either breed E or F to cross with her Suffolk cross ewes for replacements in her flock. Advise Jessica with reasons which breed to choose.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "reasons", kind: "anyN", verbatim: "good milk production / prolific / easy lambing / good mothers / hardy or good survival rate / good growth rate / calm or easy to handle / maternal sire", marks: 4, contextNote: "Use the scheme’s reasons for breed E. Credit two distinct reasons; synonymous descriptions of the same trait count once. The first correct reason earns 3 marks and the second earns 1.", group: {"claimMax":2,"perOption":3,"perOptionSteps":[3,1],"options":["good milk production","prolific","easy lambing","good mothers","hardy or good survival rate","good growth rate","calm or easy to handle","maternal sire"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Ram photographs E and F",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"}, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2022-ol-q2bii-route-f", topicId: "agsci-4-3-2", conceptId: "selecting-a-ram-for-replacement-ewes",
-    section: "A", questionRef: "2022 OL Q2(b)(ii) — breed F",
-    stem: "Practice choice: breed F. Jessica is looking to buy a ram to breed replacements with her Suffolk cross ewes.",
-    questionText: "Jessica could choose either breed E or F to cross with her Suffolk cross ewes for replacements in her flock. Advise Jessica with reasons which breed to choose.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "reasons", kind: "anyN", verbatim: "hardy or good survival rate / prolific / good mothers / good growth rate / excellent conformation", marks: 4, contextNote: "Use the scheme’s reasons for breed F. Credit two distinct reasons; synonymous descriptions of the same trait count once. The first correct reason earns 3 marks and the second earns 1.", group: {"claimMax":2,"perOption":3,"perOptionSteps":[3,1],"options":["hardy or good survival rate","prolific","good mothers","good growth rate","excellent conformation"]} },
+    { id: "reasons", kind: "anyN", verbatim: "good milk production / prolific / easy lambing / good mothers / hardy or good survival rate / good growth rate / calm or easy to handle / maternal sire / excellent conformation", marks: 4, contextNote: "Two distinct reasons for the breed you choose; synonymous descriptions of the same trait count once. The first correct reason earns 3 marks and the second earns 1. Breed E reasons: good milk production, prolific, easy lambing, good mothers, hardy or good survival rate, good growth rate, calm or easy to handle, maternal sire. Breed F reasons: hardy or good survival rate, prolific, good mothers, good growth rate, excellent conformation.", group: {"claimMax":2,"perOption":3,"perOptionSteps":[3,1],"options":["good milk production","prolific","easy lambing","good mothers","hardy or good survival rate","good growth rate","calm or easy to handle","maternal sire","excellent conformation"]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -14054,101 +14030,17 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q1a-route-abc", topicId: "agsci-3-3-1", conceptId: "farm-machinery-identification",
-    section: "A", questionRef: "2026 OL Q1(a) — A, B, C",
-    stem: "Practice choice: A, B, C.",
+    id: "agsci-2026-ol-q1a", topicId: "agsci-3-3-1", conceptId: "farm-machinery-identification",
+    section: "A", questionRef: "2026 OL Q1(a)",
     questionText: "Identify any three pieces of equipment commonly found on Irish farms using the words in the list below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A – combine harvester", marks: 2, contextNote: "A." },
-    { id: "r-2", kind: "point", verbatim: "B – plough", marks: 2, contextNote: "B." },
-    { id: "r-3", kind: "point", verbatim: "C – drone sprayer", marks: 2, contextNote: "C." },
+    { id: "r-1", kind: "anyN", verbatim: "A – combine harvester / B – plough / C – drone sprayer / D - topper", marks: 6, contextNote: "Any 3 of the 4 printed items, 2 marks each.", group: {"claimMax":3,"perOption":2,"options":["A – combine harvester","B – plough","C – drone sprayer","D - topper"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q1(a) — A, B, C",
-          "pages": [
-                3
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-1"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q1a-route-abd", topicId: "agsci-3-3-1", conceptId: "farm-machinery-identification",
-    section: "A", questionRef: "2026 OL Q1(a) — A, B, D",
-    stem: "Practice choice: A, B, D.",
-    questionText: "Identify any three pieces of equipment commonly found on Irish farms using the words in the list below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A – combine harvester", marks: 2, contextNote: "A." },
-    { id: "r-2", kind: "point", verbatim: "B – plough", marks: 2, contextNote: "B." },
-    { id: "r-3", kind: "point", verbatim: "D - topper", marks: 2, contextNote: "D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q1(a) — A, B, D",
-          "pages": [
-                3
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-1"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q1a-route-acd", topicId: "agsci-3-3-1", conceptId: "farm-machinery-identification",
-    section: "A", questionRef: "2026 OL Q1(a) — A, C, D",
-    stem: "Practice choice: A, C, D.",
-    questionText: "Identify any three pieces of equipment commonly found on Irish farms using the words in the list below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A – combine harvester", marks: 2, contextNote: "A." },
-    { id: "r-2", kind: "point", verbatim: "C – drone sprayer", marks: 2, contextNote: "C." },
-    { id: "r-3", kind: "point", verbatim: "D - topper", marks: 2, contextNote: "D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q1(a) — A, C, D",
-          "pages": [
-                3
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-1"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q1a-route-bcd", topicId: "agsci-3-3-1", conceptId: "farm-machinery-identification",
-    section: "A", questionRef: "2026 OL Q1(a) — B, C, D",
-    stem: "Practice choice: B, C, D.",
-    questionText: "Identify any three pieces of equipment commonly found on Irish farms using the words in the list below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "B – plough", marks: 2, contextNote: "B." },
-    { id: "r-2", kind: "point", verbatim: "C – drone sprayer", marks: 2, contextNote: "C." },
-    { id: "r-3", kind: "point", verbatim: "D - topper", marks: 2, contextNote: "D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q1(a) — B, C, D",
+          "title": "Agricultural Science 2026 Ordinary — Q1(a)",
           "pages": [
                 3
           ],
@@ -14396,18 +14288,18 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q4a-route-ab", topicId: "agsci-1-5", conceptId: "farmyard-hazards",
-    section: "A", questionRef: "2026 OL Q4(a) — A, B",
-    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow. Practice choice: A, B.",
+    id: "agsci-2026-ol-q4a", topicId: "agsci-1-5", conceptId: "farmyard-hazards",
+    section: "A", questionRef: "2026 OL Q4(a)",
+    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow.",
     questionText: "Identify any two potential safety hazards labelled A, B and C.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A – slurry gases or falling into tank or beware of animal movement or moving vehicles / B – Moving machinery or items falling off pit or falls from pit (walls)", marks: 6, contextNote: "Identify the hazard at each of your two chosen letters. The first correct hazard earns 2 marks and the second 4.", group: {"claimMax":2,"perOption":2,"options":["A – slurry gases or falling into tank or beware of animal movement or moving vehicles","B – Moving machinery or items falling off pit or falls from pit (walls)"],"perOptionSteps":[2,4]} },
+    { id: "r-1", kind: "anyN", verbatim: "A – slurry gases or falling into tank or beware of animal movement or moving vehicles / B – Moving machinery or items falling off pit or falls from pit (walls) / C – moving machinery or risk of falling objects or disease risk from rodents", marks: 6, contextNote: "Identify the hazard at each of your two chosen letters. The first correct hazard earns 2 marks and the second 4.", group: {"claimMax":2,"perOption":2,"options":["A – slurry gases or falling into tank or beware of animal movement or moving vehicles","B – Moving machinery or items falling off pit or falls from pit (walls)","C – moving machinery or risk of falling objects or disease risk from rodents"],"perOptionSteps":[2,4]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q4(a) — A, B",
+          "title": "Agricultural Science 2026 Ordinary — Q4(a)",
           "pages": [
                 6
           ],
@@ -14426,83 +14318,7 @@ export const CARDS: SecCard[] = [
                 "C"
           ]
     },
-    labelKey: [{"letter":"A","meaning":"slurry gases or falling into tank or beware of animal movement or moving vehicles","askedInThisQuestion":true},{"letter":"B","meaning":"Moving machinery or items falling off pit or falls from pit (walls)","askedInThisQuestion":true},{"letter":"C","meaning":"moving machinery or risk of falling objects or disease risk from rodents","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "diagram",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q4a-route-ac", topicId: "agsci-1-5", conceptId: "farmyard-hazards",
-    section: "A", questionRef: "2026 OL Q4(a) — A, C",
-    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow. Practice choice: A, C.",
-    questionText: "Identify any two potential safety hazards labelled A, B and C.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A – slurry gases or falling into tank or beware of animal movement or moving vehicles / C – moving machinery or risk of falling objects or disease risk from rodents", marks: 6, contextNote: "Identify the hazard at each of your two chosen letters. The first correct hazard earns 2 marks and the second 4.", group: {"claimMax":2,"perOption":2,"options":["A – slurry gases or falling into tank or beware of animal movement or moving vehicles","C – moving machinery or risk of falling objects or disease risk from rodents"],"perOptionSteps":[2,4]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q4(a) — A, C",
-          "pages": [
-                6
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-    figure: {
-          "candId": "agsci-2026-ol-paper-farm-hazards",
-          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-farm-hazards.png",
-          "srcHash": "3e237257a115016f777a517036aee260",
-          "alt": "Original hand-sketched farmyard map: livestock shed, milking parlour and handling unit, feed storage area, slurry tank, silage pit, machinery shed and farmhouse, with hazard triangles A, B and C.",
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"slurry gases or falling into tank or beware of animal movement or moving vehicles","askedInThisQuestion":true},{"letter":"B","meaning":"Moving machinery or items falling off pit or falls from pit (walls)","askedInThisQuestion":false},{"letter":"C","meaning":"moving machinery or risk of falling objects or disease risk from rodents","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "diagram",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q4a-route-bc", topicId: "agsci-1-5", conceptId: "farmyard-hazards",
-    section: "A", questionRef: "2026 OL Q4(a) — B, C",
-    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow. Practice choice: B, C.",
-    questionText: "Identify any two potential safety hazards labelled A, B and C.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "B – Moving machinery or items falling off pit or falls from pit (walls) / C – moving machinery or risk of falling objects or disease risk from rodents", marks: 6, contextNote: "Identify the hazard at each of your two chosen letters. The first correct hazard earns 2 marks and the second 4.", group: {"claimMax":2,"perOption":2,"options":["B – Moving machinery or items falling off pit or falls from pit (walls)","C – moving machinery or risk of falling objects or disease risk from rodents"],"perOptionSteps":[2,4]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q4(a) — B, C",
-          "pages": [
-                6
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-    figure: {
-          "candId": "agsci-2026-ol-paper-farm-hazards",
-          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-farm-hazards.png",
-          "srcHash": "3e237257a115016f777a517036aee260",
-          "alt": "Original hand-sketched farmyard map: livestock shed, milking parlour and handling unit, feed storage area, slurry tank, silage pit, machinery shed and farmhouse, with hazard triangles A, B and C.",
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"slurry gases or falling into tank or beware of animal movement or moving vehicles","askedInThisQuestion":false},{"letter":"B","meaning":"Moving machinery or items falling off pit or falls from pit (walls)","askedInThisQuestion":true},{"letter":"C","meaning":"moving machinery or risk of falling objects or disease risk from rodents","askedInThisQuestion":true}],
+    labelKey: [{"letter":"A","meaning":"slurry gases or falling into tank or beware of animal movement or moving vehicles","askedInThisQuestion":true},{"letter":"B","meaning":"Moving machinery or items falling off pit or falls from pit (walls)","askedInThisQuestion":true},{"letter":"C","meaning":"moving machinery or risk of falling objects or disease risk from rodents","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
@@ -14510,68 +14326,18 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q4b-route-a", topicId: "agsci-1-5", conceptId: "reducing-farmyard-risk",
-    section: "A", questionRef: "2026 OL Q4(b) — A",
-    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow. Practice choice: hazard A.",
+    id: "agsci-2026-ol-q4b", topicId: "agsci-1-5", conceptId: "reducing-farmyard-risk",
+    section: "A", questionRef: "2026 OL Q4(b)",
+    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow.",
     questionText: "For any one safety hazard identified in part (a), suggest one measure the farmer could take to reduce the potential risk.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "do not enter shed during agitating / keep cover on tank / beware of animal or machinery movement / keep gates closed", marks: 2, contextNote: "One measure for hazard A. The scheme accepts any valid example for each hazard.", group: {"claimMax":1,"perOption":2,"options":["do not enter shed during agitating","keep cover on tank","beware of animal or machinery movement","keep gates closed"]} },
+    { id: "r-1", kind: "anyN", verbatim: "do not enter shed during agitating / keep cover on tank / beware of animal or machinery movement / keep gates closed / beware of any moving machinery / have side rails on pit / do not go under the silage cover / be aware of moving machinery or falling objects / wash hands after handling feed", marks: 2, contextNote: "One measure for the hazard you chose. Options 1–4 are the scheme’s measures for hazard A, 5–7 for B and 8–9 for C. The scheme accepts any valid example for each hazard.", group: {"claimMax":1,"perOption":2,"options":["do not enter shed during agitating","keep cover on tank","beware of animal or machinery movement","keep gates closed","beware of any moving machinery","have side rails on pit","do not go under the silage cover","be aware of moving machinery or falling objects","wash hands after handling feed"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q4(b) — A",
-          "pages": [
-                6
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q4b-route-b", topicId: "agsci-1-5", conceptId: "reducing-farmyard-risk",
-    section: "A", questionRef: "2026 OL Q4(b) — B",
-    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow. Practice choice: hazard B.",
-    questionText: "For any one safety hazard identified in part (a), suggest one measure the farmer could take to reduce the potential risk.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "beware of any moving machinery / have side rails on pit / do not go under the silage cover", marks: 2, contextNote: "One measure for hazard B. The scheme accepts any valid example for each hazard.", group: {"claimMax":1,"perOption":2,"options":["beware of any moving machinery","have side rails on pit","do not go under the silage cover"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q4(b) — B",
-          "pages": [
-                6
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q4b-route-c", topicId: "agsci-1-5", conceptId: "reducing-farmyard-risk",
-    section: "A", questionRef: "2026 OL Q4(b) — C",
-    stem: "The map below is a hand sketch drawn by an Agricultural Science student on a farm visit. The student identified three potential hazards on the farm and labelled them A, B and C. Analyse the sketch and answer the questions that follow. Practice choice: hazard C.",
-    questionText: "For any one safety hazard identified in part (a), suggest one measure the farmer could take to reduce the potential risk.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "be aware of moving machinery or falling objects / wash hands after handling feed", marks: 2, contextNote: "One measure for hazard C. The scheme accepts any valid example for each hazard.", group: {"claimMax":1,"perOption":2,"options":["be aware of moving machinery or falling objects","wash hands after handling feed"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q4(b) — C",
+          "title": "Agricultural Science 2026 Ordinary — Q4(b)",
           "pages": [
                 6
           ],
@@ -14610,93 +14376,17 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q5a-route-abc", topicId: "agsci-4-2", conceptId: "cattle-breed-identification",
-    section: "A", questionRef: "2026 OL Q5(a) — A, B, C",
-    stem: "Practice choice: A, B, C.",
+    id: "agsci-2026-ol-q5a", topicId: "agsci-4-2", conceptId: "cattle-breed-identification",
+    section: "A", questionRef: "2026 OL Q5(a)",
     questionText: "Identify any three cattle breeds found on Irish farms using the list of words below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A – Aberdeen Angus / B – Friesian or Holstein or Holstein Friesian / C – Shorthorn", marks: 7, contextNote: "Identify the three pictured breeds you chose. The scheme prints 1+2+4: the first correct breed earns 1 mark, the second 2 and the third 4.", group: {"claimMax":3,"perOption":1,"options":["A – Aberdeen Angus","B – Friesian or Holstein or Holstein Friesian","C – Shorthorn"],"perOptionSteps":[1,2,4]} },
+    { id: "r-1", kind: "anyN", verbatim: "A – Aberdeen Angus / B – Friesian or Holstein or Holstein Friesian / C – Shorthorn / D – Simmental", marks: 7, contextNote: "Identify the three pictured breeds you chose. The scheme prints 1+2+4: the first correct breed earns 1 mark, the second 2 and the third 4.", group: {"claimMax":3,"perOption":1,"options":["A – Aberdeen Angus","B – Friesian or Holstein or Holstein Friesian","C – Shorthorn","D – Simmental"],"perOptionSteps":[1,2,4]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q5(a) — A, B, C",
-          "pages": [
-                7
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q5a-route-abd", topicId: "agsci-4-2", conceptId: "cattle-breed-identification",
-    section: "A", questionRef: "2026 OL Q5(a) — A, B, D",
-    stem: "Practice choice: A, B, D.",
-    questionText: "Identify any three cattle breeds found on Irish farms using the list of words below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 7,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A – Aberdeen Angus / B – Friesian or Holstein or Holstein Friesian / D – Simmental", marks: 7, contextNote: "Identify the three pictured breeds you chose. The scheme prints 1+2+4: the first correct breed earns 1 mark, the second 2 and the third 4.", group: {"claimMax":3,"perOption":1,"options":["A – Aberdeen Angus","B – Friesian or Holstein or Holstein Friesian","D – Simmental"],"perOptionSteps":[1,2,4]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q5(a) — A, B, D",
-          "pages": [
-                7
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q5a-route-acd", topicId: "agsci-4-2", conceptId: "cattle-breed-identification",
-    section: "A", questionRef: "2026 OL Q5(a) — A, C, D",
-    stem: "Practice choice: A, C, D.",
-    questionText: "Identify any three cattle breeds found on Irish farms using the list of words below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 7,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A – Aberdeen Angus / C – Shorthorn / D – Simmental", marks: 7, contextNote: "Identify the three pictured breeds you chose. The scheme prints 1+2+4: the first correct breed earns 1 mark, the second 2 and the third 4.", group: {"claimMax":3,"perOption":1,"options":["A – Aberdeen Angus","C – Shorthorn","D – Simmental"],"perOptionSteps":[1,2,4]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q5(a) — A, C, D",
-          "pages": [
-                7
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q5a-route-bcd", topicId: "agsci-4-2", conceptId: "cattle-breed-identification",
-    section: "A", questionRef: "2026 OL Q5(a) — B, C, D",
-    stem: "Practice choice: B, C, D.",
-    questionText: "Identify any three cattle breeds found on Irish farms using the list of words below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 7,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "B – Friesian or Holstein or Holstein Friesian / C – Shorthorn / D – Simmental", marks: 7, contextNote: "Identify the three pictured breeds you chose. The scheme prints 1+2+4: the first correct breed earns 1 mark, the second 2 and the third 4.", group: {"claimMax":3,"perOption":1,"options":["B – Friesian or Holstein or Holstein Friesian","C – Shorthorn","D – Simmental"],"perOptionSteps":[1,2,4]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q5(a) — B, C, D",
+          "title": "Agricultural Science 2026 Ordinary — Q5(a)",
           "pages": [
                 7
           ],
@@ -14909,18 +14599,18 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q9a-route-gate-handling-escape", topicId: "agsci-1-5", conceptId: "calving-safety",
-    section: "A", questionRef: "2026 OL Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen",
-    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Lock cows in a proper calving gate; Good handling facilities when moving cows to and from calving pens; Have two escape points in a calving pen.",
+    id: "agsci-2026-ol-q9a", topicId: "agsci-1-5", conceptId: "calving-safety",
+    section: "A", questionRef: "2026 OL Q9(a)",
+    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. The table lists: Lock cows in a proper calving gate; Good handling facilities when moving cows to and from calving pens; Have two escape points in a calving pen; Never turn your back on a freshly calved cow; Keep dogs/children away from calving shed.",
     questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf / Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf / Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf","Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf","Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
+    { id: "r-1", kind: "anyN", verbatim: "Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf / Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf / Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf / Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf / Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of any three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf","Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf","Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf","Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf","Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen",
+          "title": "Agricultural Science 2026 Ordinary — Q9(a)",
           "pages": [
                 10
           ],
@@ -14934,293 +14624,18 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q9a-route-gate-handling-back", topicId: "agsci-1-5", conceptId: "calving-safety",
-    section: "A", questionRef: "2026 OL Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Never turn your back on a freshly calved cow",
-    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Lock cows in a proper calving gate; Good handling facilities when moving cows to and from calving pens; Never turn your back on a freshly calved cow.",
-    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf / Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf / Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf","Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf","Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Never turn your back on a freshly calved cow",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q9a-route-gate-handling-dogs", topicId: "agsci-1-5", conceptId: "calving-safety",
-    section: "A", questionRef: "2026 OL Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Keep dogs/children away from calving shed",
-    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Lock cows in a proper calving gate; Good handling facilities when moving cows to and from calving pens; Keep dogs/children away from calving shed.",
-    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf / Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf / Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf","Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf","Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Keep dogs/children away from calving shed",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q9a-route-gate-escape-back", topicId: "agsci-1-5", conceptId: "calving-safety",
-    section: "A", questionRef: "2026 OL Q9(a) — Lock cows in a proper calving gate, Have two escape points in a calving pen, Never turn your back on a freshly calved cow",
-    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Lock cows in a proper calving gate; Have two escape points in a calving pen; Never turn your back on a freshly calved cow.",
-    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf / Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf / Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf","Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf","Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Lock cows in a proper calving gate, Have two escape points in a calving pen, Never turn your back on a freshly calved cow",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q9a-route-gate-escape-dogs", topicId: "agsci-1-5", conceptId: "calving-safety",
-    section: "A", questionRef: "2026 OL Q9(a) — Lock cows in a proper calving gate, Have two escape points in a calving pen, Keep dogs/children away from calving shed",
-    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Lock cows in a proper calving gate; Have two escape points in a calving pen; Keep dogs/children away from calving shed.",
-    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf / Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf / Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf","Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf","Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Lock cows in a proper calving gate, Have two escape points in a calving pen, Keep dogs/children away from calving shed",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q9a-route-gate-back-dogs", topicId: "agsci-1-5", conceptId: "calving-safety",
-    section: "A", questionRef: "2026 OL Q9(a) — Lock cows in a proper calving gate, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
-    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Lock cows in a proper calving gate; Never turn your back on a freshly calved cow; Keep dogs/children away from calving shed.",
-    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf / Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf / Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Lock cows in a proper calving gate – to restrain the animal when working with them / after calving cows are very protective of calf","Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf","Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Lock cows in a proper calving gate, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q9a-route-handling-escape-back", topicId: "agsci-1-5", conceptId: "calving-safety",
-    section: "A", questionRef: "2026 OL Q9(a) — Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen, Never turn your back on a freshly calved cow",
-    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Good handling facilities when moving cows to and from calving pens; Have two escape points in a calving pen; Never turn your back on a freshly calved cow.",
-    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf / Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf / Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf","Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf","Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen, Never turn your back on a freshly calved cow",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q9a-route-handling-escape-dogs", topicId: "agsci-1-5", conceptId: "calving-safety",
-    section: "A", questionRef: "2026 OL Q9(a) — Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen, Keep dogs/children away from calving shed",
-    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Good handling facilities when moving cows to and from calving pens; Have two escape points in a calving pen; Keep dogs/children away from calving shed.",
-    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf / Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf / Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf","Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf","Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen, Keep dogs/children away from calving shed",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q9a-route-handling-back-dogs", topicId: "agsci-1-5", conceptId: "calving-safety",
-    section: "A", questionRef: "2026 OL Q9(a) — Good handling facilities when moving cows to and from calving pens, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
-    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Good handling facilities when moving cows to and from calving pens; Never turn your back on a freshly calved cow; Keep dogs/children away from calving shed.",
-    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf / Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf / Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Good handling facilities when moving cows to and from calving pens – they don’t escape / they don’t hurt themselves or keeps them calm / easier to handle or isolate / after calving cows are very protective of calf","Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf","Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Good handling facilities when moving cows to and from calving pens, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q9a-route-escape-back-dogs", topicId: "agsci-1-5", conceptId: "calving-safety",
-    section: "A", questionRef: "2026 OL Q9(a) — Have two escape points in a calving pen, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
-    stem: "The 2022 Teagasc National Farm Survey states that over 50% of all farming accidents involved livestock, with incidents involving calving cows being the most common. Entering a pen with a cow and calf can be very dangerous. Practice choice: Have two escape points in a calving pen; Never turn your back on a freshly calved cow; Keep dogs/children away from calving shed.",
-    questionText: "Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf / Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf / Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf", marks: 10, contextNote: "One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.", group: {"claimMax":3,"perOption":2,"options":["Have two escape points in a calving pen – ensure you can get out quick as possible / in case one route is blocked / after calving cows are very protective of calf","Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf","Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf"],"perOptionSteps":[2,3,5]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q9(a) — Have two escape points in a calving pen, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q9bi-route-ab", topicId: "agsci-1-5", conceptId: "farm-safety-signs",
-    section: "A", questionRef: "2026 OL Q9(b)(i) — A, B",
-    stem: "You are on a farm with a group of farmers and you come across the following signs. Practice choice: A, B.",
+    id: "agsci-2026-ol-q9bi", topicId: "agsci-1-5", conceptId: "farm-safety-signs",
+    section: "A", questionRef: "2026 OL Q9(b)(i)",
+    stem: "You are on a farm with a group of farmers and you come across the following signs.",
     questionText: "Explain the meaning of any two signs A, B or C to the group of farmers.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A – Beware of bull / B – Poisonous or toxic", marks: 5, contextNote: "Meanings of your two chosen signs. The first correct meaning earns 2 marks and the second 3.", group: {"claimMax":2,"perOption":2,"options":["A – Beware of bull","B – Poisonous or toxic"],"perOptionSteps":[2,3]} },
+    { id: "r-1", kind: "anyN", verbatim: "A – Beware of bull / B – Poisonous or toxic / C – Beware of machinery", marks: 5, contextNote: "Meanings of your two chosen signs. The first correct meaning earns 2 marks and the second 3.", group: {"claimMax":2,"perOption":2,"options":["A – Beware of bull","B – Poisonous or toxic","C – Beware of machinery"],"perOptionSteps":[2,3]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q9(b)(i) — A, B",
-          "pages": [
-                11
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q9bi-route-ac", topicId: "agsci-1-5", conceptId: "farm-safety-signs",
-    section: "A", questionRef: "2026 OL Q9(b)(i) — A, C",
-    stem: "You are on a farm with a group of farmers and you come across the following signs. Practice choice: A, C.",
-    questionText: "Explain the meaning of any two signs A, B or C to the group of farmers.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A – Beware of bull / C – Beware of machinery", marks: 5, contextNote: "Meanings of your two chosen signs. The first correct meaning earns 2 marks and the second 3.", group: {"claimMax":2,"perOption":2,"options":["A – Beware of bull","C – Beware of machinery"],"perOptionSteps":[2,3]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q9(b)(i) — A, C",
-          "pages": [
-                11
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-1-5"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q9bi-route-bc", topicId: "agsci-1-5", conceptId: "farm-safety-signs",
-    section: "A", questionRef: "2026 OL Q9(b)(i) — B, C",
-    stem: "You are on a farm with a group of farmers and you come across the following signs. Practice choice: B, C.",
-    questionText: "Explain the meaning of any two signs A, B or C to the group of farmers.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "B – Poisonous or toxic / C – Beware of machinery", marks: 5, contextNote: "Meanings of your two chosen signs. The first correct meaning earns 2 marks and the second 3.", group: {"claimMax":2,"perOption":2,"options":["B – Poisonous or toxic","C – Beware of machinery"],"perOptionSteps":[2,3]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q9(b)(i) — B, C",
+          "title": "Agricultural Science 2026 Ordinary — Q9(b)(i)",
           "pages": [
                 11
           ],
@@ -15259,68 +14674,17 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q10a-route-barley-white", topicId: "agsci-3-2", conceptId: "plant-lifecycles",
-    section: "A", questionRef: "2026 OL Q10(a) — Barley, White clover",
-    stem: "Practice choice: Barley, White clover.",
-    questionText: "Identify the correct lifecycle for any two of the plants below, by placing a tick (✓) in the correct box.",
+    id: "agsci-2026-ol-q10a", topicId: "agsci-3-2", conceptId: "plant-lifecycles",
+    section: "A", questionRef: "2026 OL Q10(a)",
+    questionText: "Identify the correct lifecycle for any two of the plants below, by placing a tick (✓) in the correct box. Plants: Barley, White clover, Potato.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Barley – annual / White clover – perennial", marks: 6, contextNote: "Tick the lifecycle of each of your two chosen plants, 2(3).", group: {"claimMax":2,"perOption":3,"options":["Barley – annual","White clover – perennial"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Barley – annual / White clover – perennial / Potatoes – biennial", marks: 6, contextNote: "Tick the lifecycle of any two of the three plants, 2(3).", group: {"claimMax":2,"perOption":3,"options":["Barley – annual","White clover – perennial","Potatoes – biennial"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q10(a) — Barley, White clover",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-2"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q10a-route-barley-potato", topicId: "agsci-3-2", conceptId: "plant-lifecycles",
-    section: "A", questionRef: "2026 OL Q10(a) — Barley, Potato",
-    stem: "Practice choice: Barley, Potato.",
-    questionText: "Identify the correct lifecycle for any two of the plants below, by placing a tick (✓) in the correct box.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Barley – annual / Potatoes – biennial", marks: 6, contextNote: "Tick the lifecycle of each of your two chosen plants, 2(3).", group: {"claimMax":2,"perOption":3,"options":["Barley – annual","Potatoes – biennial"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q10(a) — Barley, Potato",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-2"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q10a-route-white-potato", topicId: "agsci-3-2", conceptId: "plant-lifecycles",
-    section: "A", questionRef: "2026 OL Q10(a) — White clover, Potato",
-    stem: "Practice choice: White clover, Potato.",
-    questionText: "Identify the correct lifecycle for any two of the plants below, by placing a tick (✓) in the correct box.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "White clover – perennial / Potatoes – biennial", marks: 6, contextNote: "Tick the lifecycle of each of your two chosen plants, 2(3).", group: {"claimMax":2,"perOption":3,"options":["White clover – perennial","Potatoes – biennial"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q10(a) — White clover, Potato",
+          "title": "Agricultural Science 2026 Ordinary — Q10(a)",
           "pages": [
                 12
           ],
@@ -15767,101 +15131,18 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q14ai-route-abc", topicId: "agsci-4-2", conceptId: "sheep-breed-identification",
-    section: "B", questionRef: "2026 OL Q14(a)(i) — A, B, C",
-    stem: "Sally and Jess are sheep farmers in Co. Mayo with a mixture of lowland and hill sheep. Practice choice: A, B, C.",
+    id: "agsci-2026-ol-q14ai", topicId: "agsci-4-2", conceptId: "sheep-breed-identification",
+    section: "B", questionRef: "2026 OL Q14(a)(i)",
+    stem: "Sally and Jess are sheep farmers in Co. Mayo with a mixture of lowland and hill sheep.",
     questionText: "Identify any three sheep breeds found on their farm using the list below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A – Texel", marks: 2, contextNote: "A." },
-    { id: "r-2", kind: "point", verbatim: "B – Border Leicester", marks: 2, contextNote: "B." },
-    { id: "r-3", kind: "point", verbatim: "C – Blackface mountain", marks: 2, contextNote: "C." },
+    { id: "r-1", kind: "anyN", verbatim: "A – Texel / B – Border Leicester / C – Blackface mountain / D – Suffolk", marks: 6, contextNote: "Any 3 of the 4 printed items, 2 marks each.", group: {"claimMax":3,"perOption":2,"options":["A – Texel","B – Border Leicester","C – Blackface mountain","D – Suffolk"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q14(a)(i) — A, B, C",
-          "pages": [
-                21
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q14ai-route-abd", topicId: "agsci-4-2", conceptId: "sheep-breed-identification",
-    section: "B", questionRef: "2026 OL Q14(a)(i) — A, B, D",
-    stem: "Sally and Jess are sheep farmers in Co. Mayo with a mixture of lowland and hill sheep. Practice choice: A, B, D.",
-    questionText: "Identify any three sheep breeds found on their farm using the list below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A – Texel", marks: 2, contextNote: "A." },
-    { id: "r-2", kind: "point", verbatim: "B – Border Leicester", marks: 2, contextNote: "B." },
-    { id: "r-3", kind: "point", verbatim: "D – Suffolk", marks: 2, contextNote: "D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q14(a)(i) — A, B, D",
-          "pages": [
-                21
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q14ai-route-acd", topicId: "agsci-4-2", conceptId: "sheep-breed-identification",
-    section: "B", questionRef: "2026 OL Q14(a)(i) — A, C, D",
-    stem: "Sally and Jess are sheep farmers in Co. Mayo with a mixture of lowland and hill sheep. Practice choice: A, C, D.",
-    questionText: "Identify any three sheep breeds found on their farm using the list below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A – Texel", marks: 2, contextNote: "A." },
-    { id: "r-2", kind: "point", verbatim: "C – Blackface mountain", marks: 2, contextNote: "C." },
-    { id: "r-3", kind: "point", verbatim: "D – Suffolk", marks: 2, contextNote: "D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q14(a)(i) — A, C, D",
-          "pages": [
-                21
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-2"]), kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q14ai-route-bcd", topicId: "agsci-4-2", conceptId: "sheep-breed-identification",
-    section: "B", questionRef: "2026 OL Q14(a)(i) — B, C, D",
-    stem: "Sally and Jess are sheep farmers in Co. Mayo with a mixture of lowland and hill sheep. Practice choice: B, C, D.",
-    questionText: "Identify any three sheep breeds found on their farm using the list below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "B – Border Leicester", marks: 2, contextNote: "B." },
-    { id: "r-2", kind: "point", verbatim: "C – Blackface mountain", marks: 2, contextNote: "C." },
-    { id: "r-3", kind: "point", verbatim: "D – Suffolk", marks: 2, contextNote: "D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q14(a)(i) — B, C, D",
+          "title": "Agricultural Science 2026 Ordinary — Q14(a)(i)",
           "pages": [
                 21
           ],
@@ -16923,20 +16204,18 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q18bii-route-abc", topicId: "agsci-4-1", conceptId: "udder-structure",
-    section: "B", questionRef: "2026 OL Q18(b)(ii) — A, B, C",
-    stem: "Words: Quarter, Connective tissue septum, Teat, Median suspensory ligament. Practice choice: A, B, C.",
+    id: "agsci-2026-ol-q18bii", topicId: "agsci-4-1", conceptId: "udder-structure",
+    section: "B", questionRef: "2026 OL Q18(b)(ii)",
+    stem: "Words: Quarter, Connective tissue septum, Teat, Median suspensory ligament.",
     questionText: "Identify any three parts labelled A, B, C and D of the udder using the list of words below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A – teat", marks: 3, contextNote: "A." },
-    { id: "r-2", kind: "point", verbatim: "B – quarter", marks: 3, contextNote: "B." },
-    { id: "r-3", kind: "point", verbatim: "C – median suspensory ligament", marks: 3, contextNote: "C." },
+    { id: "r-1", kind: "anyN", verbatim: "A – teat / B – quarter / C – median suspensory ligament / D – connective tissue septum", marks: 9, contextNote: "Any 3 of the 4 printed items, 3 marks each.", group: {"claimMax":3,"perOption":3,"options":["A – teat","B – quarter","C – median suspensory ligament","D – connective tissue septum"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q18(b)(ii) — A, B, C",
+          "title": "Agricultural Science 2026 Ordinary — Q18(b)(ii)",
           "pages": [
                 35
           ],
@@ -16956,130 +16235,7 @@ export const CARDS: SecCard[] = [
                 "D"
           ]
     },
-    labelKey: [{"letter":"A","meaning":"teat","askedInThisQuestion":true},{"letter":"B","meaning":"quarter","askedInThisQuestion":true},{"letter":"C","meaning":"median suspensory ligament","askedInThisQuestion":true},{"letter":"D","meaning":"connective tissue septum","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-1"]), kind: "diagram",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q18bii-route-abd", topicId: "agsci-4-1", conceptId: "udder-structure",
-    section: "B", questionRef: "2026 OL Q18(b)(ii) — A, B, D",
-    stem: "Words: Quarter, Connective tissue septum, Teat, Median suspensory ligament. Practice choice: A, B, D.",
-    questionText: "Identify any three parts labelled A, B, C and D of the udder using the list of words below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 9,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A – teat", marks: 3, contextNote: "A." },
-    { id: "r-2", kind: "point", verbatim: "B – quarter", marks: 3, contextNote: "B." },
-    { id: "r-3", kind: "point", verbatim: "D – connective tissue septum", marks: 3, contextNote: "D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q18(b)(ii) — A, B, D",
-          "pages": [
-                35
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-    figure: {
-          "candId": "agsci-2026-ol-paper-udder",
-          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-udder.png",
-          "srcHash": "66075871ddb7f88e952c3829ff7f9301",
-          "alt": "Original cut-away udder diagram with arrows labelled A, B, C and D.",
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 35 — © State Examinations Commission.",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "D"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"teat","askedInThisQuestion":true},{"letter":"B","meaning":"quarter","askedInThisQuestion":true},{"letter":"C","meaning":"median suspensory ligament","askedInThisQuestion":false},{"letter":"D","meaning":"connective tissue septum","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-1"]), kind: "diagram",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q18bii-route-acd", topicId: "agsci-4-1", conceptId: "udder-structure",
-    section: "B", questionRef: "2026 OL Q18(b)(ii) — A, C, D",
-    stem: "Words: Quarter, Connective tissue septum, Teat, Median suspensory ligament. Practice choice: A, C, D.",
-    questionText: "Identify any three parts labelled A, B, C and D of the udder using the list of words below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 9,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A – teat", marks: 3, contextNote: "A." },
-    { id: "r-2", kind: "point", verbatim: "C – median suspensory ligament", marks: 3, contextNote: "C." },
-    { id: "r-3", kind: "point", verbatim: "D – connective tissue septum", marks: 3, contextNote: "D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q18(b)(ii) — A, C, D",
-          "pages": [
-                35
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-    figure: {
-          "candId": "agsci-2026-ol-paper-udder",
-          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-udder.png",
-          "srcHash": "66075871ddb7f88e952c3829ff7f9301",
-          "alt": "Original cut-away udder diagram with arrows labelled A, B, C and D.",
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 35 — © State Examinations Commission.",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "D"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"teat","askedInThisQuestion":true},{"letter":"B","meaning":"quarter","askedInThisQuestion":false},{"letter":"C","meaning":"median suspensory ligament","askedInThisQuestion":true},{"letter":"D","meaning":"connective tissue septum","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-1"]), kind: "diagram",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2026-ol-q18bii-route-bcd", topicId: "agsci-4-1", conceptId: "udder-structure",
-    section: "B", questionRef: "2026 OL Q18(b)(ii) — B, C, D",
-    stem: "Words: Quarter, Connective tissue septum, Teat, Median suspensory ligament. Practice choice: B, C, D.",
-    questionText: "Identify any three parts labelled A, B, C and D of the udder using the list of words below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 9,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "B – quarter", marks: 3, contextNote: "B." },
-    { id: "r-2", kind: "point", verbatim: "C – median suspensory ligament", marks: 3, contextNote: "C." },
-    { id: "r-3", kind: "point", verbatim: "D – connective tissue septum", marks: 3, contextNote: "D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Ordinary — Q18(b)(ii) — B, C, D",
-          "pages": [
-                35
-          ],
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, diagrams and examination context."
-    },
-    figure: {
-          "candId": "agsci-2026-ol-paper-udder",
-          "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-udder.png",
-          "srcHash": "66075871ddb7f88e952c3829ff7f9301",
-          "alt": "Original cut-away udder diagram with arrows labelled A, B, C and D.",
-          "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 35 — © State Examinations Commission.",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "D"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"teat","askedInThisQuestion":false},{"letter":"B","meaning":"quarter","askedInThisQuestion":true},{"letter":"C","meaning":"median suspensory ligament","askedInThisQuestion":true},{"letter":"D","meaning":"connective tissue septum","askedInThisQuestion":true}],
+    labelKey: [{"letter":"A","meaning":"teat","askedInThisQuestion":true},{"letter":"B","meaning":"quarter","askedInThisQuestion":true},{"letter":"C","meaning":"median suspensory ligament","askedInThisQuestion":true},{"letter":"D","meaning":"connective tissue septum","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
@@ -17088,19 +16244,17 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q1ai", topicId: "agsci-4-2", additionalTopicIds: ["agsci-4-3-2"], conceptId: "identifying-cattle-breeds-from-a-list",
-    section: "A", questionRef: "2025 OL Q1(a)(i) — A, B, C",
-    stem: "Word list: Jersey, Holstein Friesian, Charolais, Limousin. Practice choice: photographs A, B, C.",
+    section: "A", questionRef: "2025 OL Q1(a)(i)",
+    stem: "Word list: Jersey, Holstein Friesian, Charolais, Limousin.",
     questionText: "Identify any three breeds A, B, C or D using the list below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A: Charolais", marks: 2, contextNote: "Photograph A." },
-    { id: "r-2", kind: "point", verbatim: "B: Jersey", marks: 2, contextNote: "Photograph B." },
-    { id: "r-3", kind: "point", verbatim: "C: Limousin", marks: 2, contextNote: "Photograph C." },
+    { id: "r-1", kind: "anyN", verbatim: "A: Charolais / B: Jersey / C: Limousin / D: Holstein Friesian", marks: 6, contextNote: "Any three of the four photographs, 2 marks each (3x2).", group: {"claimMax":3,"perOption":2,"options":["A: Charolais","B: Jersey","C: Limousin","D: Holstein Friesian"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Ordinary — Q1(a)(i) — A, B, C",
+          "title": "Agricultural Science 2025 Ordinary — Q1(a)(i)",
           "pages": [
                 3
           ],
@@ -17120,130 +16274,7 @@ export const CARDS: SecCard[] = [
                 "D"
           ]
     },
-    labelKey: [{"letter":"A","meaning":"Charolais","askedInThisQuestion":true},{"letter":"B","meaning":"Jersey","askedInThisQuestion":true},{"letter":"C","meaning":"Limousin","askedInThisQuestion":true},{"letter":"D","meaning":"Holstein Friesian","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-2","agsci-4-3-2"]), kind: "diagram",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q1ai-route-abd", topicId: "agsci-4-2", additionalTopicIds: ["agsci-4-3-2"], conceptId: "identifying-cattle-breeds-from-a-list",
-    section: "A", questionRef: "2025 OL Q1(a)(i) — A, B, D",
-    stem: "Word list: Jersey, Holstein Friesian, Charolais, Limousin. Practice choice: photographs A, B, D.",
-    questionText: "Identify any three breeds A, B, C or D using the list below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A: Charolais", marks: 2, contextNote: "Photograph A." },
-    { id: "r-2", kind: "point", verbatim: "B: Jersey", marks: 2, contextNote: "Photograph B." },
-    { id: "r-3", kind: "point", verbatim: "D: Holstein Friesian", marks: 2, contextNote: "Photograph D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Ordinary — Q1(a)(i) — A, B, D",
-          "pages": [
-                3
-          ],
-          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-    figure: {
-          "candId": "agricultural-science-2025-OL-paper-p03-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p03-art.png",
-          "srcHash": "3d7f24bd5114829a31454828aae981da",
-          "alt": "The top of Section A with Question 1(a). A pale green word bank lists Jersey, Holstein Friesian, Charolais and Limousin, above four photographs of cattle in a two by two grid, each pair over an answer row. A: a cream-white bull with a pale pink muzzle and yellow ear tags, standing in grass among darker cattle. B: a fawn cow grazing, with a herd of the same fawn colour behind her. C: a deep red-brown bull, heavily muscled over the hindquarters, tied in a straw-bedded shed. D: a black-and-white cow grazing, black over the shoulder and rump with a broad white band. Part (ii) below asks for one beef breed from part (i).",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "D"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Charolais","askedInThisQuestion":true},{"letter":"B","meaning":"Jersey","askedInThisQuestion":true},{"letter":"C","meaning":"Limousin","askedInThisQuestion":false},{"letter":"D","meaning":"Holstein Friesian","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-2","agsci-4-3-2"]), kind: "diagram",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q1ai-route-acd", topicId: "agsci-4-2", additionalTopicIds: ["agsci-4-3-2"], conceptId: "identifying-cattle-breeds-from-a-list",
-    section: "A", questionRef: "2025 OL Q1(a)(i) — A, C, D",
-    stem: "Word list: Jersey, Holstein Friesian, Charolais, Limousin. Practice choice: photographs A, C, D.",
-    questionText: "Identify any three breeds A, B, C or D using the list below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A: Charolais", marks: 2, contextNote: "Photograph A." },
-    { id: "r-2", kind: "point", verbatim: "C: Limousin", marks: 2, contextNote: "Photograph C." },
-    { id: "r-3", kind: "point", verbatim: "D: Holstein Friesian", marks: 2, contextNote: "Photograph D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Ordinary — Q1(a)(i) — A, C, D",
-          "pages": [
-                3
-          ],
-          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-    figure: {
-          "candId": "agricultural-science-2025-OL-paper-p03-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p03-art.png",
-          "srcHash": "3d7f24bd5114829a31454828aae981da",
-          "alt": "The top of Section A with Question 1(a). A pale green word bank lists Jersey, Holstein Friesian, Charolais and Limousin, above four photographs of cattle in a two by two grid, each pair over an answer row. A: a cream-white bull with a pale pink muzzle and yellow ear tags, standing in grass among darker cattle. B: a fawn cow grazing, with a herd of the same fawn colour behind her. C: a deep red-brown bull, heavily muscled over the hindquarters, tied in a straw-bedded shed. D: a black-and-white cow grazing, black over the shoulder and rump with a broad white band. Part (ii) below asks for one beef breed from part (i).",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "D"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Charolais","askedInThisQuestion":true},{"letter":"B","meaning":"Jersey","askedInThisQuestion":false},{"letter":"C","meaning":"Limousin","askedInThisQuestion":true},{"letter":"D","meaning":"Holstein Friesian","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-2","agsci-4-3-2"]), kind: "diagram",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q1ai-route-bcd", topicId: "agsci-4-2", additionalTopicIds: ["agsci-4-3-2"], conceptId: "identifying-cattle-breeds-from-a-list",
-    section: "A", questionRef: "2025 OL Q1(a)(i) — B, C, D",
-    stem: "Word list: Jersey, Holstein Friesian, Charolais, Limousin. Practice choice: photographs B, C, D.",
-    questionText: "Identify any three breeds A, B, C or D using the list below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "B: Jersey", marks: 2, contextNote: "Photograph B." },
-    { id: "r-2", kind: "point", verbatim: "C: Limousin", marks: 2, contextNote: "Photograph C." },
-    { id: "r-3", kind: "point", verbatim: "D: Holstein Friesian", marks: 2, contextNote: "Photograph D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Ordinary — Q1(a)(i) — B, C, D",
-          "pages": [
-                3
-          ],
-          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-    figure: {
-          "candId": "agricultural-science-2025-OL-paper-p03-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p03-art.png",
-          "srcHash": "3d7f24bd5114829a31454828aae981da",
-          "alt": "The top of Section A with Question 1(a). A pale green word bank lists Jersey, Holstein Friesian, Charolais and Limousin, above four photographs of cattle in a two by two grid, each pair over an answer row. A: a cream-white bull with a pale pink muzzle and yellow ear tags, standing in grass among darker cattle. B: a fawn cow grazing, with a herd of the same fawn colour behind her. C: a deep red-brown bull, heavily muscled over the hindquarters, tied in a straw-bedded shed. D: a black-and-white cow grazing, black over the shoulder and rump with a broad white band. Part (ii) below asks for one beef breed from part (i).",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "D"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Charolais","askedInThisQuestion":false},{"letter":"B","meaning":"Jersey","askedInThisQuestion":true},{"letter":"C","meaning":"Limousin","askedInThisQuestion":true},{"letter":"D","meaning":"Holstein Friesian","askedInThisQuestion":true}],
+    labelKey: [{"letter":"A","meaning":"Charolais","askedInThisQuestion":true},{"letter":"B","meaning":"Jersey","askedInThisQuestion":true},{"letter":"C","meaning":"Limousin","askedInThisQuestion":true},{"letter":"D","meaning":"Holstein Friesian","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
@@ -17302,101 +16333,18 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q7a-route-abc", topicId: "agsci-3-2", conceptId: "identifying-grassland-plants",
-    section: "A", questionRef: "2025 OL Q7(a) — A, B, C",
-    stem: "List: Chicory, White clover, Perennial ryegrass, Nettle. Practice choice: photographs A, B, C.",
+    id: "agsci-2025-ol-q7a", topicId: "agsci-3-2", conceptId: "identifying-grassland-plants",
+    section: "A", questionRef: "2025 OL Q7(a)",
+    stem: "List: Chicory, White clover, Perennial ryegrass, Nettle.",
     questionText: "Identify any three plants shown in the table below using the list opposite.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A: (Perennial) ryegrass", marks: 2, contextNote: "Photograph A." },
-    { id: "r-2", kind: "point", verbatim: "B: (White)clover", marks: 2, contextNote: "Photograph B." },
-    { id: "r-3", kind: "point", verbatim: "C: Nettle", marks: 2, contextNote: "Photograph C." },
+    { id: "r-1", kind: "anyN", verbatim: "A: (Perennial) ryegrass / B: (White)clover / C: Nettle / D: Chicory", marks: 6, contextNote: "Any three of the four photographs, 2 marks each (3x2).", group: {"claimMax":3,"perOption":2,"options":["A: (Perennial) ryegrass","B: (White)clover","C: Nettle","D: Chicory"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Ordinary — Q7(a) — A, B, C",
-          "pages": [
-                8
-          ],
-          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2"]), kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q7a-route-abd", topicId: "agsci-3-2", conceptId: "identifying-grassland-plants",
-    section: "A", questionRef: "2025 OL Q7(a) — A, B, D",
-    stem: "List: Chicory, White clover, Perennial ryegrass, Nettle. Practice choice: photographs A, B, D.",
-    questionText: "Identify any three plants shown in the table below using the list opposite.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A: (Perennial) ryegrass", marks: 2, contextNote: "Photograph A." },
-    { id: "r-2", kind: "point", verbatim: "B: (White)clover", marks: 2, contextNote: "Photograph B." },
-    { id: "r-3", kind: "point", verbatim: "D: Chicory", marks: 2, contextNote: "Photograph D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Ordinary — Q7(a) — A, B, D",
-          "pages": [
-                8
-          ],
-          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2"]), kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q7a-route-acd", topicId: "agsci-3-2", conceptId: "identifying-grassland-plants",
-    section: "A", questionRef: "2025 OL Q7(a) — A, C, D",
-    stem: "List: Chicory, White clover, Perennial ryegrass, Nettle. Practice choice: photographs A, C, D.",
-    questionText: "Identify any three plants shown in the table below using the list opposite.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A: (Perennial) ryegrass", marks: 2, contextNote: "Photograph A." },
-    { id: "r-2", kind: "point", verbatim: "C: Nettle", marks: 2, contextNote: "Photograph C." },
-    { id: "r-3", kind: "point", verbatim: "D: Chicory", marks: 2, contextNote: "Photograph D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Ordinary — Q7(a) — A, C, D",
-          "pages": [
-                8
-          ],
-          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2"]), kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q7a-route-bcd", topicId: "agsci-3-2", conceptId: "identifying-grassland-plants",
-    section: "A", questionRef: "2025 OL Q7(a) — B, C, D",
-    stem: "List: Chicory, White clover, Perennial ryegrass, Nettle. Practice choice: photographs B, C, D.",
-    questionText: "Identify any three plants shown in the table below using the list opposite.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "B: (White)clover", marks: 2, contextNote: "Photograph B." },
-    { id: "r-2", kind: "point", verbatim: "C: Nettle", marks: 2, contextNote: "Photograph C." },
-    { id: "r-3", kind: "point", verbatim: "D: Chicory", marks: 2, contextNote: "Photograph D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Ordinary — Q7(a) — B, C, D",
+          "title": "Agricultural Science 2025 Ordinary — Q7(a)",
           "pages": [
                 8
           ],
@@ -17820,71 +16768,18 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q14ciii-route-jk", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-3-1"], conceptId: "identifying-tillage-crops",
-    section: "B", questionRef: "2025 OL Q14(c)(iii) — J, K",
-    stem: "List: Maize, Oilseed rape, Wheat. Practice choice: photographs J and K.",
+    id: "agsci-2025-ol-q14ciii", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-3-1"], conceptId: "identifying-tillage-crops",
+    section: "B", questionRef: "2025 OL Q14(c)(iii)",
+    stem: "List: Maize, Oilseed rape, Wheat.",
     questionText: "The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops, using the following list.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "J: Maize", marks: 4, contextNote: "Photograph J." },
-    { id: "r-2", kind: "point", verbatim: "K: Wheat", marks: 4, contextNote: "Photograph K." },
+    { id: "r-1", kind: "anyN", verbatim: "J: Maize / K: Wheat / L: Oilseed rape", marks: 8, contextNote: "Any two of the three photographs, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["J: Maize","K: Wheat","L: Oilseed rape"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Ordinary — Q14(c)(iii) — J, K",
-          "pages": [
-                23
-          ],
-          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2","agsci-3-3-1"]), kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q14ciii-route-jl", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-3-1"], conceptId: "identifying-tillage-crops",
-    section: "B", questionRef: "2025 OL Q14(c)(iii) — J, L",
-    stem: "List: Maize, Oilseed rape, Wheat. Practice choice: photographs J and L.",
-    questionText: "The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops, using the following list.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "J: Maize", marks: 4, contextNote: "Photograph J." },
-    { id: "r-2", kind: "point", verbatim: "L: Oilseed rape", marks: 4, contextNote: "Photograph L." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Ordinary — Q14(c)(iii) — J, L",
-          "pages": [
-                23
-          ],
-          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2","agsci-3-3-1"]), kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q14ciii-route-kl", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-3-1"], conceptId: "identifying-tillage-crops",
-    section: "B", questionRef: "2025 OL Q14(c)(iii) — K, L",
-    stem: "List: Maize, Oilseed rape, Wheat. Practice choice: photographs K and L.",
-    questionText: "The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops, using the following list.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "K: Wheat", marks: 4, contextNote: "Photograph K." },
-    { id: "r-2", kind: "point", verbatim: "L: Oilseed rape", marks: 4, contextNote: "Photograph L." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Ordinary — Q14(c)(iii) — K, L",
+          "title": "Agricultural Science 2025 Ordinary — Q14(c)(iii)",
           "pages": [
                 23
           ],

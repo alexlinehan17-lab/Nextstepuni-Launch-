@@ -4,15 +4,14 @@ All 40 paper pages and 25 scheme pages were inspected and the independent
 census transcribed before any card was touched. 68 original card objects match
 a published boundary and tariff and stay byte-identical (Q8(b) keeps its earlier
 reviewed correction and Atlas identity). Three are corrected IN PLACE, keeping
-their IDs: Q1(a)(i)'s unexpanded any-three-of-four pool becomes its first
-printed route, and the two cards that fused Q9(b)(i)+(ii) and (iii)+(iv) are
+their IDs: Q1(a)(i) becomes one any-three-of-four card listing all four
+breeds, and the two cards that fused Q9(b)(i)+(ii) and (iii)+(iv) are
 narrowed to (i) and (iii) because (ii) and (iv) already ship as their own cards.
 Each correction records the original wording, marks and object hash plus the
 SEC page and quote that justify it.
 """
 import hashlib
 import json
-from itertools import combinations
 from agricultural_science_2010_hl import ROOT, point, menu, region
 from agricultural_science_2010_parity import scan
 from agricultural_science_2011_hl import variants
@@ -26,17 +25,17 @@ SELECTIONS = {
     'f9890666bf4b5f74':('exam-selection','Section B: four of six independent questions. Every question is retained.'),
     '02be49493afa8e7c':('exam-selection','Repeated Section A instruction: ten independent 10-mark questions, all retained.'),
     '90d5750e2aa45b66':('independent-task-selection','Q1 either (a) or (b): both alternatives are retained.'),
-    '02e7b70e9366b1ef':('closed','Q1(a)(i) prints cattle A–D and asks for any three: all four routes at 6 marks each.'),
+    '02e7b70e9366b1ef':('closed','Q1(a)(i) prints cattle A–D and asks for any three, 3x2. One card: a single anyN row lists every printed item with the scheme\'s wording, claim limit as printed (item-choice siblings are not separate practice identities).'),
     '54e0749a8c2f9250':('answer-identification','Q1(b)(i) "which bull ... you would advise Jack to choose": the scheme accepts Aberdeen Angus only; not a route.'),
     'b06358c53d0c52b9':('not-a-selection','Q4(c) "suited to either method of grazing": one explanation of the farm layout, not a route choice.'),
-    '8a6e390f36e0a801':('closed','Q7(a) prints plants A–D and asks for any three: all four routes at 6 marks each.'),
+    '8a6e390f36e0a801':('closed','Q7(a) prints plants A–D and asks for any three, 3x2. One card: a single anyN row lists every printed item with the scheme\'s wording, claim limit as printed (item-choice siblings are not separate practice identities).'),
     '38c2a2684ba96ccf':('answer-identification','Q8(b): tick the two correct warning signs (already reviewed as a two-option group).'),
     '0d127836401c20be':('independent-task-selection','Q9 either (a) or (b): both alternatives are retained.'),
     'c22de058fcbf5bdd':('independent-task-selection','Q11 either (a) or (b): both alternatives are retained.'),
     '3d6d2aadcb4e0fb3':('independent-task-selection','Q12 either (a) or (b): both alternatives are retained.'),
     '01d5f968562bfc85':('exam-selection','Section B heading: four of six independent 50-mark questions, all retained.'),
     '66dc076510443757':('answer-identification','Q14(c)(i): tick the one correct minimum germination rate (85%).'),
-    '9f2f2597438fe0f3':('closed','Q14(c)(iii) prints crops J, K and L and asks for any two: all three routes at 8 marks each.'),
+    '9f2f2597438fe0f3':('closed','Q14(c)(iii) prints crops J, K and L and asks for any two, 2(4). One card: a single anyN row lists every printed item with the scheme\'s wording, claim limit as printed (item-choice siblings are not separate practice identities).'),
     '286650213bca37f4':('independent-task-selection','Q15: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained.'),
     '0c87d89efc00ea50':('independent-task-selection','Q17: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained.'),
     '787dc7a1aba3278c':('not-a-selection','Prose inside a Q17(b)(ii) step ("Add calcium carbonate to one of the test tubes"); no response choice.'),
@@ -60,7 +59,7 @@ def paper_review():
                 wholePaperVisualReview='reviewed', schemeBoundaryReview='reviewed',
                 paperPagesInspected=list(range(1, 41)), schemePagesInspected=list(range(1, 26)),
                 selectionDirectives=observed, supplementarySelections=supplementary, sourceNotes=[],
-                independentBoundaryReview='90 base tasks and 99 routes. 68 original cards match a published boundary and tariff unchanged (Q8(b) keeps its earlier reviewed correction). Three are corrected in place (Q1(a)(i) pool; Q9(b)(i) and (iii) separated from the parts already carded on their own); 27 cards are added.',
+                independentBoundaryReview='91 base tasks, one card each. 68 original cards match a published boundary and tariff unchanged (Q8(b) keeps its earlier reviewed correction). Three are corrected in place (Q1(a)(i) becomes one any-three-of-four card; Q9(b)(i) and (iii) separated from the parts already carded on their own); 19 cards are added, including one card each for the item-choice pools Q7(a) and Q14(c)(iii).',
                 cropVisualReview='Every distinct paper/scheme crop pair rendered and inspected.',
                 runtimeReview='Integrated production-component cases at 1200px and 390px. Signed-in full-app navigation remains open.',
                 remaining=['Irish edition comparison (deferred)', 'Full application navigation review', 'Corpus-wide reconciliation'])
@@ -248,22 +247,22 @@ def reviewed_tasks(existing):
         cards.append(card)
         return card
 
-    def closed(choose, options, route):
-        return {'kind': 'closed', 'choose': choose, 'options': options, 'route': route}
+    def closed(choose, options):
+        # Item choice is ONE practice card (coordinator rule, 2026-10-12).
+        return {'kind': 'closed', 'choose': choose, 'options': options, 'pooled': True}
 
     # Section A ---------------------------------------------------------------
     breeds = {'A': 'A: Charolais', 'B': 'B: Jersey', 'C': 'C: Limousin', 'D': 'D: Holstein Friesian'}
     meanings = {'A': 'Charolais', 'B': 'Jersey', 'C': 'Limousin', 'D': 'Holstein Friesian'}
-    for chosen in combinations(breeds, 3):
-        key = 'q1ai' if chosen == ('A', 'B', 'C') else 'q1ai-route-' + ''.join(chosen).lower()
-        add(key, 'Q1(a)(i) — ' + ', '.join(chosen), 'Q1(a)(i)', '4-2', 'identifying-cattle-breeds-from-a-list',
-            'Identify any three breeds A, B, C or D using the list below.',
-            [point(breeds[l], 2, f'Photograph {l}.') for l in chosen],
-            'Word list: Jersey, Holstein Friesian, Charolais, Limousin. Practice choice: photographs ' + ', '.join(chosen) + '.',
-            selection=closed(3, list(breeds), list(chosen)), figure='agricultural-science-2025-OL-paper-p03-art',
-            labels=[dict(letter=l, meaning=meanings[l], askedInThisQuestion=l in chosen) for l in breeds], extra=('4-3-2',),
-            correction=('Visually verified paper PDF page 3 ("Identify any three breeds A, B, C or D using the list below", four photographs) and scheme PDF page 12 ("3x2": A Charolais, B Jersey, C Limousin, D Holstein Friesian). '
-                        'The printed three-of-four pool expands into four routes; this ID becomes the first printed route, A, B and C, at the published 6 marks. Its topic moves to identification (4.2).') if key == 'q1ai' else None)
+    add('q1ai', 'Q1(a)(i)', 'Q1(a)(i)', '4-2', 'identifying-cattle-breeds-from-a-list',
+        'Identify any three breeds A, B, C or D using the list below.',
+        [menu(list(breeds.values()), [2, 2, 2], 'Any three of the four photographs, 2 marks each (3x2).')],
+        'Word list: Jersey, Holstein Friesian, Charolais, Limousin.',
+        selection=closed(3, list(breeds)), figure='agricultural-science-2025-OL-paper-p03-art',
+        labels=[dict(letter=l, meaning=meanings[l], askedInThisQuestion=True) for l in breeds], extra=('4-3-2',),
+        correction=('Visually verified paper PDF page 3 ("Identify any three breeds A, B, C or D using the list below", four photographs) and scheme PDF page 12 ("3x2": A Charolais, B Jersey, C Limousin, D Holstein Friesian). '
+                    'The original stem was the word list run together with a stray "Or", and only A–C were decoded, with D carried as an accepted alternative. Same ID: one any-three-of-four card whose anyN row lists all four breeds, '
+                    'claim limit three, with every photograph decoded and the word list as printed. Its topic moves to identification (4.2).'))
     for k, ref in [('q1aii', 'Q1(a)(ii)'), ('q1bi', 'Q1(b)(i)'), ('q1bii', 'Q1(b)(ii)'), ('q1biii', 'Q1(b)(iii)'), ('q2', 'Q2'), ('q3', 'Q3'),
                    ('q4a', 'Q4(a)'), ('q4b', 'Q4(b)'), ('q4c', 'Q4(c)')]:
         keep(k, ref)
@@ -277,12 +276,10 @@ def reviewed_tasks(existing):
     keep('q6a', 'Q6(a)')
     keep('q6b', 'Q6(b)')
     plants = {'A': 'A: (Perennial) ryegrass', 'B': 'B: (White)clover', 'C': 'C: Nettle', 'D': 'D: Chicory'}
-    for chosen in combinations(plants, 3):
-        add('q7a-route-' + ''.join(chosen).lower(), 'Q7(a) — ' + ', '.join(chosen), 'Q7(a)', '3-2', 'identifying-grassland-plants',
-            'Identify any three plants shown in the table below using the list opposite.',
-            [point(plants[l], 2, f'Photograph {l}.') for l in chosen],
-            'List: Chicory, White clover, Perennial ryegrass, Nettle. Practice choice: photographs ' + ', '.join(chosen) + '.',
-            selection=closed(3, list(plants), list(chosen)))
+    add('q7a', 'Q7(a)', 'Q7(a)', '3-2', 'identifying-grassland-plants',
+        'Identify any three plants shown in the table below using the list opposite.',
+        [menu(list(plants.values()), [2, 2, 2], 'Any three of the four photographs, 2 marks each (3x2).')],
+        'List: Chicory, White clover, Perennial ryegrass, Nettle.', selection=closed(3, list(plants)))
     add('q7b', 'Q7(b)', 'Q7(b)', '3-3-2', 'undesirable-sward-plant', 'State which plant from part (a) above is not desired in a grassland sward.',
         [point('Nettle or C', 4)], 'Part (a) shows A (perennial) ryegrass, B (white) clover, C nettle and D chicory.', extra=('3-2',))
     keep('q8a', 'Q8(a)')
@@ -342,11 +339,10 @@ def reviewed_tasks(existing):
     for k, ref in [('q14b-i', 'Q14(b)(i)'), ('q14b-ii', 'Q14(b)(ii)'), ('q14b-iii', 'Q14(b)(iii)'), ('q14b-iv', 'Q14(b)(iv)'), ('q14c-i', 'Q14(c)(i)'), ('q14c-ii', 'Q14(c)(ii)')]:
         keep(k, ref)
     tillage = {'J': 'J: Maize', 'K': 'K: Wheat', 'L': 'L: Oilseed rape'}
-    for chosen in combinations(tillage, 2):
-        add('q14ciii-route-' + ''.join(chosen).lower(), 'Q14(c)(iii) — ' + ', '.join(chosen), 'Q14(c)(iii)', '3-2', 'identifying-tillage-crops',
-            'The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops, using the following list.',
-            [point(tillage[l], 4, f'Photograph {l}.') for l in chosen], 'List: Maize, Oilseed rape, Wheat. Practice choice: photographs ' + ' and '.join(chosen) + '.',
-            selection=closed(2, list(tillage), list(chosen)), extra=('3-3-1',))
+    add('q14ciii', 'Q14(c)(iii)', 'Q14(c)(iii)', '3-2', 'identifying-tillage-crops',
+        'The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops, using the following list.',
+        [menu(list(tillage.values()), [4, 4], 'Any two of the three photographs, 4 marks each (2(4)).')], 'List: Maize, Oilseed rape, Wheat.',
+        selection=closed(2, list(tillage)), extra=('3-3-1',))
     for k, ref in [('q15a-i', 'Q15(a)(i)'), ('q15a-ii', 'Q15(a)(ii)'), ('q15a-iii', 'Q15(a)(iii)'), ('q15b-i', 'Q15(b)(i)'), ('q15b-ii', 'Q15(b)(ii)'), ('q15b-iii', 'Q15(b)(iii)'), ('q15c', 'Q15(c)')]:
         keep(k, ref)
     add('q15di', 'Q15(d)(i)', 'Q15(d)(i)', '4-3-2', 'calf-nutrition-order',
@@ -399,6 +395,6 @@ def reviewed_tasks(existing):
     add('q18cii', 'Q18(c)(ii)', 'Q18(c)(ii)', '1-3', 'butter-export-estimate', 'Using the graph, estimate the value of Irish butter exports to Ireland in 2021.',
         [point('265,000 to 275,000', 6)], exports, extra=('4-3-1',))
     keep('q18ciii', 'Q18(c)(iii)')
-    assert len(tasks) == 98 and len(cards) == 30 and len(corrections) == 3 and len(originals) == 71, (len(tasks), len(cards), len(corrections), len(originals))
+    assert len(tasks) == 90 and len(cards) == 22 and len(corrections) == 3 and len(originals) == 71, (len(tasks), len(cards), len(corrections), len(originals))
     assert {t['cardIds'][0] for t in tasks} | {'agsci-2025-ol-q8b'} >= set(originals) | {'agsci-2025-ol-q8b'}, 'Every original 2025 Ordinary card must be reviewed'
     return cards, tasks, corrections

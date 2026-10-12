@@ -65,12 +65,11 @@
               "A",
               "B",
               "C"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2024 HL Q2(a)(i) — A, B",
-            "2024 HL Q2(a)(i) — A, C",
-            "2024 HL Q2(a)(i) — B, C"
+            "2024 HL Q2(a)(i)"
           ]
         },
         {
@@ -295,15 +294,11 @@
               "Mineral supplementation of ewe's post mating",
               "Meal feeding of lamb's post weaning",
               "Scanning of in-lamb ewes"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2024 HL Q6(a) — Lameness control, Mineral supplementation of ewe's post mating",
-            "2024 HL Q6(a) — Lameness control, Meal feeding of lamb's post weaning",
-            "2024 HL Q6(a) — Lameness control, Scanning of in-lamb ewes",
-            "2024 HL Q6(a) — Mineral supplementation of ewe's post mating, Meal feeding of lamb's post weaning",
-            "2024 HL Q6(a) — Mineral supplementation of ewe's post mating, Scanning of in-lamb ewes",
-            "2024 HL Q6(a) — Meal feeding of lamb's post weaning, Scanning of in-lamb ewes"
+            "2024 HL Q6(a)"
           ]
         },
         {
@@ -340,12 +335,11 @@
               "Mineral supplementation of lambs pre-weaning",
               "Flystrike control",
               "Genotyping of ram"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2024 HL Q6(b)(ii) — Mineral supplementation of lambs pre-weaning, Flystrike control",
-            "2024 HL Q6(b)(ii) — Mineral supplementation of lambs pre-weaning, Genotyping of ram",
-            "2024 HL Q6(b)(ii) — Flystrike control, Genotyping of ram"
+            "2024 HL Q6(b)(ii)"
           ]
         },
         {
@@ -908,11 +902,11 @@
             "options": [
               "Animal-related factors",
               "Environmental conditions"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2024 HL Q15(a)(iii) — Animal-related factors",
-            "2024 HL Q15(a)(iii) — Environmental conditions"
+            "2024 HL Q15(a)(iii)"
           ]
         },
         {
@@ -1456,13 +1450,11 @@
               "B",
               "C",
               "D"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2025 OL Q1(a)(i) — A, B, C",
-            "2025 OL Q1(a)(i) — A, B, D",
-            "2025 OL Q1(a)(i) — A, C, D",
-            "2025 OL Q1(a)(i) — B, C, D"
+            "2025 OL Q1(a)(i)"
           ]
         },
         {
@@ -1721,13 +1713,11 @@
               "B",
               "C",
               "D"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2025 OL Q7(a) — A, B, C",
-            "2025 OL Q7(a) — A, B, D",
-            "2025 OL Q7(a) — A, C, D",
-            "2025 OL Q7(a) — B, C, D"
+            "2025 OL Q7(a)"
           ]
         },
         {
@@ -2444,12 +2434,11 @@
               "J",
               "K",
               "L"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2025 OL Q14(c)(iii) — J, K",
-            "2025 OL Q14(c)(iii) — J, L",
-            "2025 OL Q14(c)(iii) — K, L"
+            "2025 OL Q14(c)(iii)"
           ]
         },
         {
@@ -3094,12 +3083,11 @@
               "Annual",
               "Biennial",
               "Perennial"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2025 HL Q2(a) — Annual, Biennial",
-            "2025 HL Q2(a) — Annual, Perennial",
-            "2025 HL Q2(a) — Biennial, Perennial"
+            "2025 HL Q2(a)"
           ]
         },
         {
@@ -3138,19 +3126,11 @@
               "Ease of calving",
               "Docility",
               "Fertility"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2025 HL Q2(b)(ii) — Meat quality, Good growth rates",
-            "2025 HL Q2(b)(ii) — Meat quality, Ease of calving",
-            "2025 HL Q2(b)(ii) — Meat quality, Docility",
-            "2025 HL Q2(b)(ii) — Meat quality, Fertility",
-            "2025 HL Q2(b)(ii) — Good growth rates, Ease of calving",
-            "2025 HL Q2(b)(ii) — Good growth rates, Docility",
-            "2025 HL Q2(b)(ii) — Good growth rates, Fertility",
-            "2025 HL Q2(b)(ii) — Ease of calving, Docility",
-            "2025 HL Q2(b)(ii) — Ease of calving, Fertility",
-            "2025 HL Q2(b)(ii) — Docility, Fertility"
+            "2025 HL Q2(b)(ii)"
           ]
         },
         {
@@ -3442,12 +3422,11 @@
               "Stomach tube",
               "Heat lamp",
               "Ropes"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2025 HL Q6(b) — Stomach tube",
-            "2025 HL Q6(b) — Heat lamp",
-            "2025 HL Q6(b) — Ropes"
+            "2025 HL Q6(b)"
           ]
         },
         {
@@ -3485,13 +3464,11 @@
               "Plant carbon sink",
               "Carbon sequestration",
               "Plant growth promotion"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2025 HL Q7(b) — Water retention",
-            "2025 HL Q7(b) — Plant carbon sink",
-            "2025 HL Q7(b) — Carbon sequestration",
-            "2025 HL Q7(b) — Plant growth promotion"
+            "2025 HL Q7(b)"
           ]
         },
         {
@@ -3666,14 +3643,11 @@
               "c",
               "d",
               "e"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2025 HL Q12 — a, b, c, d",
-            "2025 HL Q12 — a, b, c, e",
-            "2025 HL Q12 — a, b, d, e",
-            "2025 HL Q12 — a, c, d, e",
-            "2025 HL Q12 — b, c, d, e"
+            "2025 HL Q12"
           ]
         },
         {
@@ -4136,13 +4110,11 @@
               "B",
               "C",
               "D"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2025 HL Q15(b) — A, B, C",
-            "2025 HL Q15(b) — A, B, D",
-            "2025 HL Q15(b) — A, C, D",
-            "2025 HL Q15(b) — B, C, D"
+            "2025 HL Q15(b)"
           ]
         },
         {
@@ -4635,13 +4607,11 @@
               "B",
               "C",
               "D"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 OL Q1(a) — A, B, C",
-            "2026 OL Q1(a) — A, B, D",
-            "2026 OL Q1(a) — A, C, D",
-            "2026 OL Q1(a) — B, C, D"
+            "2026 OL Q1(a)"
           ]
         },
         {
@@ -4814,12 +4784,11 @@
               "A",
               "B",
               "C"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 OL Q4(a) — A, B",
-            "2026 OL Q4(a) — A, C",
-            "2026 OL Q4(a) — B, C"
+            "2026 OL Q4(a)"
           ]
         },
         {
@@ -4839,12 +4808,11 @@
               "A",
               "B",
               "C"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 OL Q4(b) — A",
-            "2026 OL Q4(b) — B",
-            "2026 OL Q4(b) — C"
+            "2026 OL Q4(b)"
           ]
         },
         {
@@ -4882,13 +4850,11 @@
               "B",
               "C",
               "D"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 OL Q5(a) — A, B, C",
-            "2026 OL Q5(a) — A, B, D",
-            "2026 OL Q5(a) — A, C, D",
-            "2026 OL Q5(a) — B, C, D"
+            "2026 OL Q5(a)"
           ]
         },
         {
@@ -5046,19 +5012,11 @@
               "Have two escape points in a calving pen",
               "Never turn your back on a freshly calved cow",
               "Keep dogs/children away from calving shed"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 OL Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen",
-            "2026 OL Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Never turn your back on a freshly calved cow",
-            "2026 OL Q9(a) — Lock cows in a proper calving gate, Good handling facilities when moving cows to and from calving pens, Keep dogs/children away from calving shed",
-            "2026 OL Q9(a) — Lock cows in a proper calving gate, Have two escape points in a calving pen, Never turn your back on a freshly calved cow",
-            "2026 OL Q9(a) — Lock cows in a proper calving gate, Have two escape points in a calving pen, Keep dogs/children away from calving shed",
-            "2026 OL Q9(a) — Lock cows in a proper calving gate, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
-            "2026 OL Q9(a) — Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen, Never turn your back on a freshly calved cow",
-            "2026 OL Q9(a) — Good handling facilities when moving cows to and from calving pens, Have two escape points in a calving pen, Keep dogs/children away from calving shed",
-            "2026 OL Q9(a) — Good handling facilities when moving cows to and from calving pens, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed",
-            "2026 OL Q9(a) — Have two escape points in a calving pen, Never turn your back on a freshly calved cow, Keep dogs/children away from calving shed"
+            "2026 OL Q9(a)"
           ]
         },
         {
@@ -5078,12 +5036,11 @@
               "A",
               "B",
               "C"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 OL Q9(b)(i) — A, B",
-            "2026 OL Q9(b)(i) — A, C",
-            "2026 OL Q9(b)(i) — B, C"
+            "2026 OL Q9(b)(i)"
           ]
         },
         {
@@ -5120,12 +5077,11 @@
               "Barley",
               "White clover",
               "Potato"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 OL Q10(a) — Barley, White clover",
-            "2026 OL Q10(a) — Barley, Potato",
-            "2026 OL Q10(a) — White clover, Potato"
+            "2026 OL Q10(a)"
           ]
         },
         {
@@ -5418,13 +5374,11 @@
               "B",
               "C",
               "D"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 OL Q14(a)(i) — A, B, C",
-            "2026 OL Q14(a)(i) — A, B, D",
-            "2026 OL Q14(a)(i) — A, C, D",
-            "2026 OL Q14(a)(i) — B, C, D"
+            "2026 OL Q14(a)(i)"
           ]
         },
         {
@@ -6142,13 +6096,11 @@
               "B",
               "C",
               "D"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 OL Q18(b)(ii) — A, B, C",
-            "2026 OL Q18(b)(ii) — A, B, D",
-            "2026 OL Q18(b)(ii) — A, C, D",
-            "2026 OL Q18(b)(ii) — B, C, D"
+            "2026 OL Q18(b)(ii)"
           ]
         }
       ]
@@ -6250,13 +6202,11 @@
               "Optimising light capture",
               "Genetic improvement of crops",
               "Grassland management"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 HL Q2(b) — Fertilising the crop, Optimising light capture, Genetic improvement of crops",
-            "2026 HL Q2(b) — Fertilising the crop, Optimising light capture, Grassland management",
-            "2026 HL Q2(b) — Fertilising the crop, Genetic improvement of crops, Grassland management",
-            "2026 HL Q2(b) — Optimising light capture, Genetic improvement of crops, Grassland management"
+            "2026 HL Q2(b)"
           ]
         },
         {
@@ -6568,24 +6518,11 @@
               "Improve plant resilience",
               "Food quality",
               "Nutrient provision"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Reduced environmental losses, Improve plant resilience",
-            "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Reduced environmental losses, Food quality",
-            "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Reduced environmental losses, Nutrient provision",
-            "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Improve plant resilience, Food quality",
-            "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Improve plant resilience, Nutrient provision",
-            "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Food quality, Nutrient provision",
-            "2026 HL Q7 — Protection from pests and diseases, Reduced environmental losses, Improve plant resilience, Food quality",
-            "2026 HL Q7 — Protection from pests and diseases, Reduced environmental losses, Improve plant resilience, Nutrient provision",
-            "2026 HL Q7 — Protection from pests and diseases, Reduced environmental losses, Food quality, Nutrient provision",
-            "2026 HL Q7 — Protection from pests and diseases, Improve plant resilience, Food quality, Nutrient provision",
-            "2026 HL Q7 — Carbon storage, Reduced environmental losses, Improve plant resilience, Food quality",
-            "2026 HL Q7 — Carbon storage, Reduced environmental losses, Improve plant resilience, Nutrient provision",
-            "2026 HL Q7 — Carbon storage, Reduced environmental losses, Food quality, Nutrient provision",
-            "2026 HL Q7 — Carbon storage, Improve plant resilience, Food quality, Nutrient provision",
-            "2026 HL Q7 — Reduced environmental losses, Improve plant resilience, Food quality, Nutrient provision"
+            "2026 HL Q7"
           ]
         },
         {
@@ -6690,12 +6627,11 @@
               "A",
               "B",
               "C"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 HL Q10(a) — A, B",
-            "2026 HL Q10(a) — A, C",
-            "2026 HL Q10(a) — B, C"
+            "2026 HL Q10(a)"
           ]
         },
         {
@@ -7105,11 +7041,11 @@
             "options": [
               "A",
               "B"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 HL Q14(c)(i) — A",
-            "2026 HL Q14(c)(i) — B"
+            "2026 HL Q14(c)(i)"
           ]
         },
         {
@@ -7723,11 +7659,11 @@
             "options": [
               "plants",
               "animals"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2026 HL Q18(c)(iii) — plants",
-            "2026 HL Q18(c)(iii) — animals"
+            "2026 HL Q18(c)(iii)"
           ]
         },
         {
@@ -8509,13 +8445,11 @@
               "ii",
               "iii",
               "iv"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2012 HL Q7(a) — i, ii, iii",
-            "2012 HL Q7(a) — i, ii, iv",
-            "2012 HL Q7(a) — i, iii, iv",
-            "2012 HL Q7(a) — ii, iii, iv"
+            "2012 HL Q7(a)"
           ]
         },
         {
@@ -8655,13 +8589,11 @@
               "ii",
               "iii",
               "iv"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2012 HL Q8(c) — i, ii, iii",
-            "2012 HL Q8(c) — i, ii, iv",
-            "2012 HL Q8(c) — i, iii, iv",
-            "2012 HL Q8(c) — ii, iii, iv"
+            "2012 HL Q8(c)"
           ]
         },
         {
@@ -9186,11 +9118,11 @@
             "options": [
               "Hoose",
               "grass-tetany"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2010 HL Q3 Option Two (b) — Hoose",
-            "2010 HL Q3 Option Two (b) — grass-tetany"
+            "2010 HL Q3 Option Two (b)"
           ]
         },
         {
@@ -9466,13 +9398,11 @@
               "ii",
               "iii",
               "iv"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2010 HL Q7(a) — i, ii, iii",
-            "2010 HL Q7(a) — i, ii, iv",
-            "2010 HL Q7(a) — i, iii, iv",
-            "2010 HL Q7(a) — ii, iii, iv"
+            "2010 HL Q7(a)"
           ]
         },
         {
@@ -9629,13 +9559,11 @@
               "ii",
               "iii",
               "iv"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2010 HL Q8(c) — i, ii, iii",
-            "2010 HL Q8(c) — i, ii, iv",
-            "2010 HL Q8(c) — i, iii, iv",
-            "2010 HL Q8(c) — ii, iii, iv"
+            "2010 HL Q8(c)"
           ]
         },
         {
@@ -12249,13 +12177,11 @@
               "ii",
               "iii",
               "iv"
-            ]
+            ],
+            "pooled": true
           },
           "routes": [
-            "2011 HL Q8(c) — i, ii, iii",
-            "2011 HL Q8(c) — i, ii, iv",
-            "2011 HL Q8(c) — i, iii, iv",
-            "2011 HL Q8(c) — ii, iii, iv"
+            "2011 HL Q8(c)"
           ]
         },
         {
@@ -15130,8 +15056,8 @@
     "A diagram labelling exercise stays one task with all required labels and its figure; labels are answer fields, not printed alternative routes.",
     "A matching table can split into complete activity or disease tasks when each row has a published fixed award. Completed examples are not tasks.",
     "Pooled first-correct tariffs stay together: Higher Q1(e/f/g/j), Ordinary Q5 and Q7 must not allocate fixed marks to individual answer positions.",
-    "Higher Q3 Option One and Option Two are distinct addresses. Q3 Option Two (b) has two common definitions and two alternative disease responses.",
-    "Higher Q7(a) and Q8(c) each print a closed three-of-four pool. Each complete three-item response is one route.",
+    "Higher Q3 Option One and Option Two are distinct addresses. Q3 Option Two (b) has two common definitions and one disease task whose hoose and grass-tetany responses are mutually exclusive rows on one card.",
+    "Higher Q7(a) and Q8(c) each print a closed three-of-four pool. A printed item choice is one practice card listing every item; it is never split into combination siblings.",
     "Exam choices between independently priced questions/parts do not combine unrelated tasks into extra practice identities.",
     "Ordinary Q3(a) identifies correct dairy breeds rather than choosing arbitrary pairs. Ordinary Q8(c) and Q9(c/e) are open methods/crops; accepted scheme examples are not a finite paper choice.",
     "Ordinary Q12(a)(iii) has inconsistent point-count wording: retain 18 marks and a non-automatic part-score. Q12(d) totals 28 in English versus 30 printed; disclose the discrepancy, never add fictitious marks.",

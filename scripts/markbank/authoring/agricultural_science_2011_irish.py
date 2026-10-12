@@ -31,7 +31,7 @@ def paper_review():
         (3,'haon dá cheann díobh seo a leanas','independent-task-selection','Q4 selects two separate 24-mark experiments; all four are available for practice.'),
         (3,'saotharlainne nó páirce','open','Laboratory or field are experiment settings, not a finite printed pool of named methods.'),
         (5,'Mínigh gach aon cheann de na téarmaí','required-headings','All three Q7(a) definitions are required, each worth four marks.'),
-        (5,'thrí cinn ar bith de na péirí','closed','Q8(c) selects three of four comparison pairs, yielding four complete 24-mark routes.'),
+        (5,'thrí cinn ar bith de na péirí','closed','Q8(c) selects three of four comparison pairs: one 24-mark card crediting the best six members.'),
         (5,'cheithre cinn ar bith díobh seo a leanas','independent-task-selection','Q9 selects four independent twelve-mark explanations; all five are retained.'),
     ]
     observed,supplementary=scan(2011,FILE,HASHES,cues,extra)
@@ -39,7 +39,7 @@ def paper_review():
                 wholePaperVisualReview='reviewed',schemeBoundaryReview='reviewed',
                 paperPagesInspected=list(range(1,9)),schemePagesInspected=list(range(1,13)),
                 selectionDirectives=observed,supplementarySelections=supplementary,
-                translationParity='All original pages visually inspected. The 67 base tasks, 70 routes and all published mark boundaries match the English edition. Source-specific answer ranges, numbering and genetic symbols are retained.',
+                translationParity='All original pages visually inspected. The 67 base tasks (one card each) and all published mark boundaries match the English edition. Source-specific answer ranges, numbering and genetic symbols are retained.',
                 sourceNotes=NOTES,
                 remaining=['Independent Irish source census','Full application navigation review','Corpus-wide reconciliation'])
 
@@ -88,9 +88,8 @@ def crops():
         ('q9a',10,.097,.178),('q9b',10,.188,.282),('q9c',10,.282,.343),
         ('q9d',10,.342,.434),('q9e',10,.433,.511),
     ]:bind(scheme,keys,p,top,bottom)
-    for route in ['i-ii-iii','i-ii-iv','i-iii-iv','ii-iii-iv']:
-        paper['q8c-route-'+route]=regions(5,.564,.662)
-        scheme['q8c-route-'+route]=regions(9,.495,.895)
+    paper['q8c']=regions(5,.564,.662)
+    scheme['q8c']=regions(9,.495,.895)
     for key in ['q4b','q4c','q4d']:
         scheme[key].append({'p':7,'r':[.77,.04,.87,.058]})
     for key in ['q9b','q9c','q9d','q9e']:
@@ -103,7 +102,7 @@ def attach_sources(tasks,review):
     selected=[t for t in tasks if t['cardIds'][0].startswith('agsci-2011-hl-')]
     prefix='agsci-2011-hl-'
     keys={t['cardIds'][0].removeprefix(prefix) for t in selected}
-    assert keys==set(paper)==set(scheme) and len(keys)==70, (keys-set(paper),keys-set(scheme))
+    assert keys==set(paper)==set(scheme) and len(keys)==67, (keys-set(paper),keys-set(scheme))
     for task in selected:
         key=task['cardIds'][0].removeprefix(prefix)
         ref=task['questionRef'].split(' Q',1)[1]
@@ -114,7 +113,7 @@ def attach_sources(tasks,review):
         if notes:source['schemeNote']='\n\n'.join(notes)
         task['translatedSources']=[source]
     freeze=lambda x:len({tuple((r['p'],tuple(r['r'])) for r in c) for c in x.values()})
-    assert (len(keys),freeze(paper),freeze(scheme))==(70,40,53)
+    assert (len(keys),freeze(paper),freeze(scheme))==(67,40,53)
     for mapping,pages in [(paper,review['paperPagesInspected']),(scheme,review['schemePagesInspected'])]:
         for crop in mapping.values():
             for r in crop:

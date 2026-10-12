@@ -2,12 +2,11 @@
 
 All 40 paper pages and 24 scheme pages were inspected before authoring; the
 independent census in agricultural_science_census.py was transcribed first.
-Every printed finite pool expands mechanically: Q1(a), Q5(a), Q14(a)(i) and
-Q18(b)(ii) three of four; Q4(a), Q9(b)(i) and Q10(a) two of three; Q4(b) one
-of three hazards; Q9(a) three of five safety features. Ticks that identify the
+Every printed item choice is ONE card listing every item: Q1(a), Q5(a),
+Q14(a)(i) and Q18(b)(ii) three of four; Q4(a), Q9(b)(i) and Q10(a) two of
+three; Q4(b) one of three hazards; Q9(a) three of five safety features. Ticks that identify the
 single correct answer are answer identification, not routes.
 """
-from itertools import combinations
 from agricultural_science_2010_hl import point, menu, region
 from agricultural_science_2010_parity import scan
 from agricultural_science_2011_hl import variants
@@ -20,25 +19,25 @@ SELECTIONS = {
     '12643a33f3a32b31':('exam-selection','Section A: ten of twelve independent questions. Every question and both sides of each internal choice are retained.'),
     'e8ef67ddf417a212':('exam-selection','Section B: four of six independent questions. Every question is retained.'),
     '9279a5994cd75306':('exam-selection','Repeated Section A instruction: ten independent 10-mark questions, all retained.'),
-    '68cb0434414120e1':('closed','Q1(a) prints machines A–D and asks for any three: all four three-picture routes are retained at 6 marks each.'),
+    '68cb0434414120e1':('closed','Q1(a) prints machines A–D and asks for any three. One card: a single anyN row lists every printed item with the scheme\'s wording and marks (item-choice siblings are not separate practice identities).'),
     'e82de7fc3df02343':('independent-task-selection','Q3 either (a) or (b): both alternatives are retained.'),
-    'b37292626d759374':('closed','Q4(a) prints hazards A, B and C and asks for any two: all three two-hazard routes are retained at 6 marks each.'),
-    'eef9f5121da5b37c':('closed','Q4(b) asks for any one of the three printed hazards: three routes, each with its own scheme measures, at 2 marks.'),
-    '31d5f1b76a0150b1':('closed','Q5(a) prints cattle A–D and asks for any three: all four routes are retained at 7 marks each.'),
+    'b37292626d759374':('closed','Q4(a) prints hazards A, B and C and asks for any two. One card: a single anyN row lists every printed item with the scheme\'s wording and marks (item-choice siblings are not separate practice identities).'),
+    'eef9f5121da5b37c':('closed','Q4(b) asks for any one of the three printed hazards. One card: a single anyN row lists every printed item with the scheme\'s wording and marks (item-choice siblings are not separate practice identities).'),
+    '31d5f1b76a0150b1':('closed','Q5(a) prints cattle A–D and asks for any three. One card: a single anyN row lists every printed item with the scheme\'s wording and marks (item-choice siblings are not separate practice identities).'),
     'e526e5630e3eef3e':('independent-task-selection','Q8 either (a) or (b): both alternatives are retained.'),
     'e84ceadf8f49b84e':('independent-task-selection','Q9 either (a) or (b): both alternatives are retained.'),
-    'b4dda66070736477':('closed','Q9(a) prints five safety features and asks for a reason for any three: all ten routes are retained at 10 marks each.'),
-    'd67d299c87eb8406':('closed','Q9(b)(i) prints signs A, B and C and asks for any two: all three routes are retained at 5 marks each.'),
-    '548b7645ecdfb3cb':('closed','Q10(a) prints three plants and asks for the lifecycle of any two: all three routes are retained at 6 marks each.'),
+    'b4dda66070736477':('closed','Q9(a) prints five safety features and asks for a reason for any three. One card: a single anyN row lists every printed item with the scheme\'s wording and marks (item-choice siblings are not separate practice identities).'),
+    'd67d299c87eb8406':('closed','Q9(b)(i) prints signs A, B and C and asks for any two. One card: a single anyN row lists every printed item with the scheme\'s wording and marks (item-choice siblings are not separate practice identities).'),
+    '548b7645ecdfb3cb':('closed','Q10(a) prints three plants and asks for the lifecycle of any two. One card: a single anyN row lists every printed item with the scheme\'s wording and marks (item-choice siblings are not separate practice identities).'),
     'f08ddcaeb5138cee':('independent-task-selection','Q12 either (a) or (b): both alternatives are retained.'),
     '024b108b32f221f3':('exam-selection','Section B heading: four of six independent 50-mark questions, all retained.'),
-    '2c4216f9686097b8':('closed','Q14(a)(i) prints sheep A–D and asks for any three: all four routes are retained at 6 marks each.'),
+    '2c4216f9686097b8':('closed','Q14(a)(i) prints sheep A–D and asks for any three. One card: a single anyN row lists every printed item with the scheme\'s wording and marks (item-choice siblings are not separate practice identities).'),
     '8bc895fb618589af':('independent-task-selection','Q15: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained.'),
     '1e3a8ee0704d5ce3':('answer-identification','Q15(d)(ii): identify the one method the cows preferred from the graph; one correct answer, not a route.'),
     'b7955337ee8d60ec':('independent-task-selection','Q16: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained.'),
     'c5a0a84851b40d40':('not-a-selection','Prose in the Q16(c) stem ("one of the calves"); no response choice.'),
     '255d6f8999e58e46':('answer-identification','Q18(a)(iv): tick the two correct contributors; the third box is a distractor, not a route.'),
-    '1a034decc5bb8379':('closed','Q18(b)(ii) prints udder parts A–D and asks for any three: all four routes are retained at 9 marks each.'),
+    '1a034decc5bb8379':('closed','Q18(b)(ii) prints udder parts A–D and asks for any three. One card: a single anyN row lists every printed item with the scheme\'s wording and marks (item-choice siblings are not separate practice identities).'),
 }
 SUPPLEMENTARY = [
     (26,'Identify which machine A or B','answer-identification','Q15(c): the scheme accepts machine A only; B is not an alternative route.'),
@@ -61,7 +60,7 @@ def paper_review():
                 wholePaperVisualReview='reviewed', schemeBoundaryReview='reviewed',
                 paperPagesInspected=list(range(1, 41)), schemePagesInspected=list(range(1, 25)),
                 selectionDirectives=observed, supplementarySelections=supplementary, sourceNotes=notes,
-                independentBoundaryReview='85 base tasks and 114 routes. Closed pools: Q1(a), Q5(a), Q14(a)(i), Q18(b)(ii) three of four (4 each); Q4(a), Q9(b)(i), Q10(a) two of three (3 each); Q4(b) one of three (3); Q9(a) three of five (10). Pooled first-correct scales stay whole; drawings, graphs and the calculation keep manual totals.',
+                independentBoundaryReview='85 base tasks, one card each. Item-choice pools are single cards: Q1(a), Q5(a), Q14(a)(i), Q18(b)(ii) any three of four; Q4(a), Q9(b)(i), Q10(a) any two of three; Q4(b) any one of three; Q9(a) any three of five. Pooled first-correct scales stay whole; drawings, graphs and the calculation keep manual totals.',
                 cropVisualReview='Every distinct paper/scheme crop pair rendered and inspected, with three paper diagram crops and two scheme solution images.',
                 runtimeReview='Integrated production-component cases at 1200px and 390px. Signed-in full-app navigation remains open.',
                 remaining=['Irish edition comparison (deferred)', 'Full application navigation review', 'Corpus-wide reconciliation'])
@@ -101,15 +100,12 @@ def reviewed_tasks():
         return card
 
     def routes(key, ref, topic, atlas, concept, question, pool, k, steps, pp, sp, stem, note, extra=(), figure=None, labels=None, points=False):
-        for chosen in combinations(pool, k):
-            letters = [c[0] for c in chosen]
-            rows = ([point(text, s, label + '.') for (label, text), s in zip(chosen, steps)] if points
-                    else [menu([text for _, text in chosen], steps, note)])
-            add(f'{key}-route-' + ''.join(l.lower() for l in letters) if all(len(l) == 1 for l in letters) else f'{key}-route-' + '-'.join(letters),
-                f'{ref} — ' + ', '.join(letters), topic, atlas, concept, question, rows, pp, sp,
-                (stem + ' ' if stem else '') + 'Practice choice: ' + ', '.join(letters) + '.',
-                selection={'kind': 'closed', 'choose': k, 'options': [c[0] for c in pool], 'route': letters}, extra=extra, figure=figure,
-                labels=[dict(l, askedInThisQuestion=l['letter'] in letters) for l in labels] if labels else None)
+        """A printed any-k-of-n pool: ONE card, one anyN row over every printed item."""
+        if points:
+            note = f'Any {k} of the {len(pool)} printed items, {steps[0]} marks each.'
+        add(key, ref, topic, atlas, concept, question, [menu([text for _, text in pool], steps, note)], pp, sp, stem,
+            selection={'kind': 'closed', 'choose': k, 'options': [c[0] for c in pool], 'pooled': True}, extra=extra, figure=figure,
+            labels=[dict(l, askedInThisQuestion=True) for l in labels] if labels else None)
 
     # Section A ---------------------------------------------------------------
     machines = [('A', 'A – combine harvester'), ('B', 'B – plough'), ('C', 'C – drone sprayer'), ('D', 'D - topper')]
@@ -171,12 +167,12 @@ def reviewed_tasks():
     measures = {'A': ['do not enter shed during agitating', 'keep cover on tank', 'beware of animal or machinery movement', 'keep gates closed'],
                 'B': ['beware of any moving machinery', 'have side rails on pit', 'do not go under the silage cover'],
                 'C': ['be aware of moving machinery or falling objects', 'wash hands after handling feed']}
-    for letter, pool in measures.items():
-        add('q4b-route-' + letter.lower(), f'Q4(b) — {letter}', '1-5', 'health-safety', 'reducing-farmyard-risk',
-            'For any one safety hazard identified in part (a), suggest one measure the farmer could take to reduce the potential risk.',
-            [menu(pool, [2], f'One measure for hazard {letter}. The scheme accepts any valid example for each hazard.')],
-            [region(6, .062, .545), region(6, .613, .745)], [region(13, .492, .665)], q4 + f' Practice choice: hazard {letter}.',
-            selection={'kind': 'closed', 'choose': 1, 'options': list(measures), 'route': [letter]})
+    add('q4b', 'Q4(b)', '1-5', 'health-safety', 'reducing-farmyard-risk',
+        'For any one safety hazard identified in part (a), suggest one measure the farmer could take to reduce the potential risk.',
+        [menu([m for pool in measures.values() for m in pool], [2],
+              'One measure for the hazard you chose. Options 1–4 are the scheme’s measures for hazard A, 5–7 for B and 8–9 for C. The scheme accepts any valid example for each hazard.')],
+        [region(6, .062, .545), region(6, .613, .745)], [region(13, .492, .665)], q4,
+        selection={'kind': 'closed', 'choose': 1, 'options': list(measures), 'pooled': True})
     add('q4c', 'Q4(c)', '1-5', 'health-safety|animal-production', 'separating-animals-machinery',
         'Explain why it is important to separate animal movement areas from machinery routes in a farmyard.',
         [menu('Avoid animals escaping|ensure machines don’t run into animals|(human) safety|biosecurity or disease control|farm efficiency or traffic flow', [2])],
@@ -229,14 +225,12 @@ def reviewed_tasks():
                 ('Never turn your back on a freshly calved cow', 'Never turn your back on a freshly calved cow – always observe the cow incase she goes to attack / you can get out of pen / after calving cows are very protective of calf'),
                 ('Keep dogs/children away from calving shed', 'Keep dogs / children away form calving shed – dogs and children can aggravate cows / after calving cows are very protective of calf')]
     keys = ['gate', 'handling', 'escape', 'back', 'dogs']
-    for chosen in combinations(range(5), 3):
-        labels = [features[i][0] for i in chosen]
-        add('q9a-route-' + '-'.join(keys[i] for i in chosen), 'Q9(a) — ' + ', '.join(labels), '1-5', 'health-safety|animal-production', 'calving-safety',
-            'Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.',
-            [menu([features[i][1] for i in chosen], [2, 3, 5],
-                  'One reason for each of your three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.')],
-            [region(10, .062, .84)], [region(15, .082, .465)], q9 + ' Practice choice: ' + '; '.join(labels) + '.',
-            selection={'kind': 'closed', 'choose': 3, 'options': keys, 'route': [keys[i] for i in chosen]})
+    add('q9a', 'Q9(a)', '1-5', 'health-safety|animal-production', 'calving-safety',
+        'Some safety features to prevent injury during the calving season are outlined in the table below. Outline one reason for any three safety features.',
+        [menu([f[1] for f in features], [2, 3, 5],
+              'One reason for each of any three features. (Accept after calving cows are very protective of calf once only). The scheme prints 2+3+5.')],
+        [region(10, .062, .84)], [region(15, .082, .465)], q9 + ' The table lists: ' + '; '.join(f[0] for f in features) + '.',
+        selection={'kind': 'closed', 'choose': 3, 'options': keys, 'pooled': True})
     signs = [('A', 'A – Beware of bull'), ('B', 'B – Poisonous or toxic'), ('C', 'C – Beware of machinery')]
     routes('q9bi', 'Q9(b)(i)', '1-5', 'health-safety', 'farm-safety-signs', 'Explain the meaning of any two signs A, B or C to the group of farmers.',
         signs, 2, [2, 3], [region(11, .09, .515)], [region(15, .478, .579)], 'You are on a farm with a group of farmers and you come across the following signs.',
@@ -247,13 +241,11 @@ def reviewed_tasks():
         [region(11, .09, .115), region(11, .515, .68)], [region(15, .579, .645)], 'You are on a farm with a group of farmers.')
 
     lifecycles = [('Barley', 'Barley – annual'), ('White clover', 'White clover – perennial'), ('Potato', 'Potatoes – biennial')]
-    for chosen in combinations(range(3), 2):
-        labels = [lifecycles[i][0] for i in chosen]
-        add('q10a-route-' + '-'.join(labels[j].split()[0].lower() for j in range(2)), 'Q10(a) — ' + ', '.join(labels), '3-2', 'classification-of-organisms', 'plant-lifecycles',
-            'Identify the correct lifecycle for any two of the plants below, by placing a tick (✓) in the correct box.',
-            [menu([lifecycles[i][1] for i in chosen], [3, 3], 'Tick the lifecycle of each of your two chosen plants, 2(3).')],
-            [region(12, .062, .675)], [region(15, .645, .747)], 'Practice choice: ' + ', '.join(labels) + '.',
-            selection={'kind': 'closed', 'choose': 2, 'options': [p for p, _ in lifecycles], 'route': labels})
+    add('q10a', 'Q10(a)', '3-2', 'classification-of-organisms', 'plant-lifecycles',
+        'Identify the correct lifecycle for any two of the plants below, by placing a tick (✓) in the correct box. Plants: ' + ', '.join(p for p, _ in lifecycles) + '.',
+        [menu([l[1] for l in lifecycles], [3, 3], 'Tick the lifecycle of any two of the three plants, 2(3).')],
+        [region(12, .062, .675)], [region(15, .645, .747)],
+        selection={'kind': 'closed', 'choose': 2, 'options': [p for p, _ in lifecycles], 'pooled': True})
     add('q10b', 'Q10(b)', '3-3-2', 'grassland|crop-production', 'grassland-weed-control', 'Explain how a farmer would control weeds in a grass field.',
         [menu('Fertilising|topping|rotational grazing|reseeding|crop rotation|machine hygiene|certified seed|herbicide or spot spraying|hand rogueing or picking', [2, 2])],
         [region(12, .678, .82)], [region(15, .747, .833)])
@@ -499,5 +491,5 @@ def reviewed_tasks():
         [region(35, .062, .655)], [region(23, .611, .731)], 'Words: Quarter, Connective tissue septum, Teat, Median suspensory ligament.', None, points=True,
         figure='agsci-2026-ol-paper-udder',
         labels=[dict(letter='A', meaning='teat'), dict(letter='B', meaning='quarter'), dict(letter='C', meaning='median suspensory ligament'), dict(letter='D', meaning='connective tissue septum')])
-    assert len(cards) == 114, len(cards)
+    assert len(cards) == 85, len(cards)
     return cards, tasks

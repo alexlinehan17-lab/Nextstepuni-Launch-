@@ -40,15 +40,15 @@ def paper_reviews():
         }, (8,12), {
             '1596f9b705b57549':('independent-task-selection','Q1: select six separately priced tasks; all ten and the internal Q1(d) boundary correspond to the English ledger.'),
             '8c8365cdbc2b1501':('independent-task-selection','Q4: select two independently priced experiments; all four are represented by the English ledger.'),
-            'd8d42a0d3d699fb6':('closed','Q7(a): the same three-of-four genetics terms as English; four complete routes.'),
-            'df55007fddb4691c':('independent-task-selection','Q8: select two independent 24-mark tasks. Q8(c) has its own internal three-of-four routes.'),
+            'd8d42a0d3d699fb6':('closed','Q7(a): the same three-of-four genetics terms as English; one card crediting the best three.'),
+            'df55007fddb4691c':('independent-task-selection','Q8: select two independent 24-mark tasks. Q8(c) has its own internal three-of-four choice, one card.'),
             '4e757ccca4f2d193':('independent-task-selection','Second regex match within the same Q8 outer selection; it does not create an extra pool.'),
         }, [
             (2,'SÉ CHEIST LE FREAGAIRT','exam-selection','Six examination questions, not a combined practice task.'),
             (3,'NÓ Rogha a Dó','closed','Both Q3 options match the separately reviewed English tasks.'),
-            (3,'ceann amháin ar bith de na galair','closed','Q3 Option Two disease choice: hoose or grass tetany, two complete routes.'),
+            (3,'ceann amháin ar bith de na galair','closed','Q3 Option Two disease choice: hoose or grass tetany, one card with two mutually exclusive row routes.'),
             (3,'mhodh saotharlainne nó ar mhodh páirce','open','Laboratory/field are settings; no finite pool of named experimental responses.'),
-            (5,'dtrí cinn ar bith de na péirí','closed','Q8(c): choose three of four comparisons, four routes.'),
+            (5,'dtrí cinn ar bith de na péirí','closed','Q8(c): choose three of four comparisons, one card crediting the best six members.'),
             (5,'cheithre cinn ar bith','independent-task-selection','Q9: four separately priced explanations chosen from five, all five retained.'),
         ], [
             {'questionN':'4','questionRef':'Q4(d)','paperPage':3,'schemePage':8,

@@ -8748,93 +8748,13 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q18ai-route-abc", topicId: "agsci-4-1", conceptId: "udder-structure",
-    section: "B", questionRef: "2023 HL Q18(a)(i) — A, B, C",
-    stem: "Practice choice: label A, B, C on the official udder diagram.",
+    id: "agsci-2023-hl-q18ai", topicId: "agsci-4-1", conceptId: "udder-structure",
+    section: "B", questionRef: "2023 HL Q18(a)(i)",
+    stem: "Label the parts on the official udder diagram.",
     questionText: "Label any three parts of the structure of the udder.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "label-a", kind: "point", verbatim: "Teat", marks: 1, contextNote: "Label A." },
-    { id: "label-b", kind: "point", verbatim: "Median suspensory ligament", marks: 1, contextNote: "Label B." },
-    { id: "label-c", kind: "point", verbatim: "Connective tissue / fine membrane", marks: 1, contextNote: "Label C." },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Udder structure",
-          "pages": [
-                37
-          ],
-          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"}, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q18ai-route-abd", topicId: "agsci-4-1", conceptId: "udder-structure",
-    section: "B", questionRef: "2023 HL Q18(a)(i) — A, B, D",
-    stem: "Practice choice: label A, B, D on the official udder diagram.",
-    questionText: "Label any three parts of the structure of the udder.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "label-a", kind: "point", verbatim: "Teat", marks: 1, contextNote: "Label A." },
-    { id: "label-b", kind: "point", verbatim: "Median suspensory ligament", marks: 1, contextNote: "Label B." },
-    { id: "label-d", kind: "point", verbatim: "Epidermis / hind quarter / outer wall", marks: 1, contextNote: "Label D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Udder structure",
-          "pages": [
-                37
-          ],
-          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"}, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q18ai-route-acd", topicId: "agsci-4-1", conceptId: "udder-structure",
-    section: "B", questionRef: "2023 HL Q18(a)(i) — A, C, D",
-    stem: "Practice choice: label A, C, D on the official udder diagram.",
-    questionText: "Label any three parts of the structure of the udder.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "label-a", kind: "point", verbatim: "Teat", marks: 1, contextNote: "Label A." },
-    { id: "label-c", kind: "point", verbatim: "Connective tissue / fine membrane", marks: 1, contextNote: "Label C." },
-    { id: "label-d", kind: "point", verbatim: "Epidermis / hind quarter / outer wall", marks: 1, contextNote: "Label D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Udder structure",
-          "pages": [
-                37
-          ],
-          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"}, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
-    id: "agsci-2023-hl-q18ai-route-bcd", topicId: "agsci-4-1", conceptId: "udder-structure",
-    section: "B", questionRef: "2023 HL Q18(a)(i) — B, C, D",
-    stem: "Practice choice: label B, C, D on the official udder diagram.",
-    questionText: "Label any three parts of the structure of the udder.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "label-b", kind: "point", verbatim: "Median suspensory ligament", marks: 1, contextNote: "Label B." },
-    { id: "label-c", kind: "point", verbatim: "Connective tissue / fine membrane", marks: 1, contextNote: "Label C." },
-    { id: "label-d", kind: "point", verbatim: "Epidermis / hind quarter / outer wall", marks: 1, contextNote: "Label D." },
+    { id: "labels", kind: "anyN", verbatim: "Teat / Median suspensory ligament / Connective tissue / fine membrane / Epidermis / hind quarter / outer wall", marks: 3, contextNote: "Any three of the four labels, 1 mark each. Options in letter order: A, B, C, D.", group: {"claimMax":3,"perOption":1,"options":["Teat","Median suspensory ligament","Connective tissue / fine membrane","Epidermis / hind quarter / outer wall"]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -9454,47 +9374,23 @@ export const CARDS: SecCard[] = [
     year: 2010, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2010 Higher Level — © State Examinations Commission.",
-    id: "agsci-2010-hl-q3o2b-route-hoose", topicId: "agsci-4-3-3", conceptId: "cattle-disease-cause-symptom-control",
-    section: "B", questionRef: "2010 HL Q3 Option Two (b) — Hoose",
-    stem: "Hoose is a parasitic disease while grass-tetany is a deficiency disease. Practice choice: Hoose.",
+    id: "agsci-2010-hl-q3o2b", topicId: "agsci-4-3-3", conceptId: "cattle-disease-cause-symptom-control",
+    section: "B", questionRef: "2010 HL Q3 Option Two (b)",
+    stem: "Hoose is a parasitic disease while grass-tetany is a deficiency disease.",
     questionText: "In the case of either disease state the cause, a symptom and a method of control or treatment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "lungworm/dictyocaulus /nematode (roundworms)", marks: 4, contextNote: "Cause." },
-    { id: "r-2", kind: "point", verbatim: "coughing (Husk another name)/head down between front legs/drooling/failure to thrive", marks: 4, contextNote: "One symptom." },
-    { id: "r-3", kind: "point", verbatim: "leader-follower system/ oral vaccine/keeping young calves in off grass at vulnerable times/dosing", marks: 4, contextNote: "One control or treatment." },
+    { id: "r-1", kind: "point", verbatim: "lungworm/dictyocaulus /nematode (roundworms)", marks: 4, contextNote: "Hoose: Cause.", route: "Hoose" },
+    { id: "r-2", kind: "point", verbatim: "coughing (Husk another name)/head down between front legs/drooling/failure to thrive", marks: 4, contextNote: "Hoose: One symptom.", route: "Hoose" },
+    { id: "r-3", kind: "point", verbatim: "leader-follower system/ oral vaccine/keeping young calves in off grass at vulnerable times/dosing", marks: 4, contextNote: "Hoose: One control or treatment.", route: "Hoose" },
+    { id: "r-4", kind: "point", verbatim: "Grass lacking in magnesium in spring/ fertiliser suppresses uptake of Mg/diet is lacking magnesium /Mg is not stored in body", marks: 4, contextNote: "grass-tetany: Cause.", route: "grass-tetany" },
+    { id: "r-5", kind: "point", verbatim: "Twitching/”staggers”/nervousness/coma", marks: 4, contextNote: "grass-tetany: One symptom.", route: "grass-tetany" },
+    { id: "r-6", kind: "point", verbatim: "Feed calcined magnesite in diet cal-mag/MgO/in spring before outturn to grass and in the meal or water after for some time/magnesium lick/limit access to fresh grass/injection of magnesium/bolus(bullet)", marks: 4, contextNote: "grass-tetany: One control or treatment.", route: "grass-tetany" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2010 Higher — Q3 Option Two (b) — Hoose",
-          "pages": [
-                3
-          ],
-          "attribution": "SEC Agricultural Science 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2010, ["agricultural-science-3-5"]), kind: "question",
-    year: 2010, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2010 Higher Level — © State Examinations Commission.",
-    id: "agsci-2010-hl-q3o2b-route-grass-tetany", topicId: "agsci-4-3-3", conceptId: "cattle-disease-cause-symptom-control",
-    section: "B", questionRef: "2010 HL Q3 Option Two (b) — grass-tetany",
-    stem: "Hoose is a parasitic disease while grass-tetany is a deficiency disease. Practice choice: grass-tetany.",
-    questionText: "In the case of either disease state the cause, a symptom and a method of control or treatment.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Grass lacking in magnesium in spring/ fertiliser suppresses uptake of Mg/diet is lacking magnesium /Mg is not stored in body", marks: 4, contextNote: "Cause." },
-    { id: "r-2", kind: "point", verbatim: "Twitching/”staggers”/nervousness/coma", marks: 4, contextNote: "One symptom." },
-    { id: "r-3", kind: "point", verbatim: "Feed calcined magnesite in diet cal-mag/MgO/in spring before outturn to grass and in the meal or water after for some time/magnesium lick/limit access to fresh grass/injection of magnesium/bolus(bullet)", marks: 4, contextNote: "One control or treatment." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2010 Higher — Q3 Option Two (b) — grass-tetany",
+          "title": "Agricultural Science 2010 Higher — Q3 Option Two (b)",
           "pages": [
                 3
           ],
@@ -10017,101 +9913,20 @@ export const CARDS: SecCard[] = [
     year: 2010, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2010 Higher Level — © State Examinations Commission.",
-    id: "agsci-2010-hl-q7a-route-i-ii-iii", topicId: "agsci-4-3-2", conceptId: "genetics-and-breeding-terms",
-    section: "B", questionRef: "2010 HL Q7(a) — i, ii, iii",
-    stem: "Practice choice: freemartin condition, hermaphrodite, artificial selection.",
+    id: "agsci-2010-hl-q7a", topicId: "agsci-4-3-2", conceptId: "genetics-and-breeding-terms",
+    section: "B", questionRef: "2010 HL Q7(a)",
     questionText: "Explain three of the following terms: (i) freemartin condition (ii) hermaphrodite (iii) artificial selection (iv) pedigree animal.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    tariffModel: {"kind":"bestNofParts","answer":3,"ofParts":4,"perPart":4}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "a heifer calf / which was a twin with a bull calf / hormones / should not be used for breeding / it will be infertile / identified by unusually small genitals", marks: 4, contextNote: "Freemartin condition: two points.", group: {"claimMax":2,"perOption":2,"options":["a heifer calf","which was a twin with a bull calf","hormones","should not be used for breeding","it will be infertile","identified by unusually small genitals"]} },
-    { id: "r-2", kind: "anyN", verbatim: "both sexes in the one individual / common in lower organisms / liverfluke tapeworms or other example / both organs function in lower animals / occurs occasionally in farm animals / should not be kept for breeding", marks: 4, contextNote: "Hermaphrodite: two points.", group: {"claimMax":2,"perOption":2,"options":["both sexes in the one individual","common in lower organisms","liverfluke tapeworms or other example","both organs function in lower animals","occurs occasionally in farm animals","should not be kept for breeding"]} },
-    { id: "r-3", kind: "anyN", verbatim: "used by breeders / quicker than natural selection / mutations are induced in plants / using radiation ,colchicine,cold shock / in animals by selective breeding or desireable characteristics / recently by genetic modification", marks: 4, contextNote: "Artificial selection: two points.", group: {"claimMax":2,"perOption":2,"options":["used by breeders","quicker than natural selection","mutations are induced in plants","using radiation ,colchicine,cold shock","in animals by selective breeding or desireable characteristics","recently by genetic modification"]} },
+    { id: "r-1", kind: "anyN", verbatim: "a heifer calf / which was a twin with a bull calf / hormones / should not be used for breeding / it will be infertile / identified by unusually small genitals", marks: 4, contextNote: "(i) Freemartin condition: two points. Explain any three of the four terms, 4 marks each.", group: {"claimMax":2,"perOption":2,"options":["a heifer calf","which was a twin with a bull calf","hormones","should not be used for breeding","it will be infertile","identified by unusually small genitals"]} },
+    { id: "r-2", kind: "anyN", verbatim: "both sexes in the one individual / common in lower organisms / liverfluke tapeworms or other example / both organs function in lower animals / occurs occasionally in farm animals / should not be kept for breeding", marks: 4, contextNote: "(ii) Hermaphrodite: two points.", group: {"claimMax":2,"perOption":2,"options":["both sexes in the one individual","common in lower organisms","liverfluke tapeworms or other example","both organs function in lower animals","occurs occasionally in farm animals","should not be kept for breeding"]} },
+    { id: "r-3", kind: "anyN", verbatim: "used by breeders / quicker than natural selection / mutations are induced in plants / using radiation ,colchicine,cold shock / in animals by selective breeding or desireable characteristics / recently by genetic modification", marks: 4, contextNote: "(iii) Artificial selection: two points.", group: {"claimMax":2,"perOption":2,"options":["used by breeders","quicker than natural selection","mutations are induced in plants","using radiation ,colchicine,cold shock","in animals by selective breeding or desireable characteristics","recently by genetic modification"]} },
+    { id: "r-4", kind: "anyN", verbatim: "purebreeding or homozygous (animals) / achieved by selective breeding or desireable characteristics / whose lineage is recorded / in a breed society herdbook or register / these animals have “papers” / and herd book(studbook)number / used in A.I. stations (or breeding)", marks: 4, contextNote: "(iv) Pedigree animal: two points.", group: {"claimMax":2,"perOption":2,"options":["purebreeding or homozygous (animals)","achieved by selective breeding or desireable characteristics","whose lineage is recorded","in a breed society herdbook or register","these animals have “papers”","and herd book(studbook)number","used in A.I. stations (or breeding)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2010 Higher — Q7(a) — i, ii, iii",
-          "pages": [
-                4
-          ],
-          "attribution": "SEC Agricultural Science 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2010, ["agricultural-science-3-6"]), kind: "question",
-    year: 2010, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2010 Higher Level — © State Examinations Commission.",
-    id: "agsci-2010-hl-q7a-route-i-ii-iv", topicId: "agsci-4-3-2", conceptId: "genetics-and-breeding-terms",
-    section: "B", questionRef: "2010 HL Q7(a) — i, ii, iv",
-    stem: "Practice choice: freemartin condition, hermaphrodite, pedigree animal.",
-    questionText: "Explain three of the following terms: (i) freemartin condition (ii) hermaphrodite (iii) artificial selection (iv) pedigree animal.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "a heifer calf / which was a twin with a bull calf / hormones / should not be used for breeding / it will be infertile / identified by unusually small genitals", marks: 4, contextNote: "Freemartin condition: two points.", group: {"claimMax":2,"perOption":2,"options":["a heifer calf","which was a twin with a bull calf","hormones","should not be used for breeding","it will be infertile","identified by unusually small genitals"]} },
-    { id: "r-2", kind: "anyN", verbatim: "both sexes in the one individual / common in lower organisms / liverfluke tapeworms or other example / both organs function in lower animals / occurs occasionally in farm animals / should not be kept for breeding", marks: 4, contextNote: "Hermaphrodite: two points.", group: {"claimMax":2,"perOption":2,"options":["both sexes in the one individual","common in lower organisms","liverfluke tapeworms or other example","both organs function in lower animals","occurs occasionally in farm animals","should not be kept for breeding"]} },
-    { id: "r-3", kind: "anyN", verbatim: "purebreeding or homozygous (animals) / achieved by selective breeding or desireable characteristics / whose lineage is recorded / in a breed society herdbook or register / these animals have “papers” / and herd book(studbook)number / used in A.I. stations (or breeding)", marks: 4, contextNote: "Pedigree animal: two points.", group: {"claimMax":2,"perOption":2,"options":["purebreeding or homozygous (animals)","achieved by selective breeding or desireable characteristics","whose lineage is recorded","in a breed society herdbook or register","these animals have “papers”","and herd book(studbook)number","used in A.I. stations (or breeding)"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2010 Higher — Q7(a) — i, ii, iv",
-          "pages": [
-                4
-          ],
-          "attribution": "SEC Agricultural Science 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2010, ["agricultural-science-3-6"]), kind: "question",
-    year: 2010, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2010 Higher Level — © State Examinations Commission.",
-    id: "agsci-2010-hl-q7a-route-i-iii-iv", topicId: "agsci-4-3-2", conceptId: "genetics-and-breeding-terms",
-    section: "B", questionRef: "2010 HL Q7(a) — i, iii, iv",
-    stem: "Practice choice: freemartin condition, artificial selection, pedigree animal.",
-    questionText: "Explain three of the following terms: (i) freemartin condition (ii) hermaphrodite (iii) artificial selection (iv) pedigree animal.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "a heifer calf / which was a twin with a bull calf / hormones / should not be used for breeding / it will be infertile / identified by unusually small genitals", marks: 4, contextNote: "Freemartin condition: two points.", group: {"claimMax":2,"perOption":2,"options":["a heifer calf","which was a twin with a bull calf","hormones","should not be used for breeding","it will be infertile","identified by unusually small genitals"]} },
-    { id: "r-2", kind: "anyN", verbatim: "used by breeders / quicker than natural selection / mutations are induced in plants / using radiation ,colchicine,cold shock / in animals by selective breeding or desireable characteristics / recently by genetic modification", marks: 4, contextNote: "Artificial selection: two points.", group: {"claimMax":2,"perOption":2,"options":["used by breeders","quicker than natural selection","mutations are induced in plants","using radiation ,colchicine,cold shock","in animals by selective breeding or desireable characteristics","recently by genetic modification"]} },
-    { id: "r-3", kind: "anyN", verbatim: "purebreeding or homozygous (animals) / achieved by selective breeding or desireable characteristics / whose lineage is recorded / in a breed society herdbook or register / these animals have “papers” / and herd book(studbook)number / used in A.I. stations (or breeding)", marks: 4, contextNote: "Pedigree animal: two points.", group: {"claimMax":2,"perOption":2,"options":["purebreeding or homozygous (animals)","achieved by selective breeding or desireable characteristics","whose lineage is recorded","in a breed society herdbook or register","these animals have “papers”","and herd book(studbook)number","used in A.I. stations (or breeding)"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2010 Higher — Q7(a) — i, iii, iv",
-          "pages": [
-                4
-          ],
-          "attribution": "SEC Agricultural Science 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2010, ["agricultural-science-3-6"]), kind: "question",
-    year: 2010, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2010 Higher Level — © State Examinations Commission.",
-    id: "agsci-2010-hl-q7a-route-ii-iii-iv", topicId: "agsci-4-3-2", conceptId: "genetics-and-breeding-terms",
-    section: "B", questionRef: "2010 HL Q7(a) — ii, iii, iv",
-    stem: "Practice choice: hermaphrodite, artificial selection, pedigree animal.",
-    questionText: "Explain three of the following terms: (i) freemartin condition (ii) hermaphrodite (iii) artificial selection (iv) pedigree animal.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "both sexes in the one individual / common in lower organisms / liverfluke tapeworms or other example / both organs function in lower animals / occurs occasionally in farm animals / should not be kept for breeding", marks: 4, contextNote: "Hermaphrodite: two points.", group: {"claimMax":2,"perOption":2,"options":["both sexes in the one individual","common in lower organisms","liverfluke tapeworms or other example","both organs function in lower animals","occurs occasionally in farm animals","should not be kept for breeding"]} },
-    { id: "r-2", kind: "anyN", verbatim: "used by breeders / quicker than natural selection / mutations are induced in plants / using radiation ,colchicine,cold shock / in animals by selective breeding or desireable characteristics / recently by genetic modification", marks: 4, contextNote: "Artificial selection: two points.", group: {"claimMax":2,"perOption":2,"options":["used by breeders","quicker than natural selection","mutations are induced in plants","using radiation ,colchicine,cold shock","in animals by selective breeding or desireable characteristics","recently by genetic modification"]} },
-    { id: "r-3", kind: "anyN", verbatim: "purebreeding or homozygous (animals) / achieved by selective breeding or desireable characteristics / whose lineage is recorded / in a breed society herdbook or register / these animals have “papers” / and herd book(studbook)number / used in A.I. stations (or breeding)", marks: 4, contextNote: "Pedigree animal: two points.", group: {"claimMax":2,"perOption":2,"options":["purebreeding or homozygous (animals)","achieved by selective breeding or desireable characteristics","whose lineage is recorded","in a breed society herdbook or register","these animals have “papers”","and herd book(studbook)number","used in A.I. stations (or breeding)"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2010 Higher — Q7(a) — ii, iii, iv",
+          "title": "Agricultural Science 2010 Higher — Q7(a)",
           "pages": [
                 4
           ],
@@ -10514,117 +10329,28 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2010, ["agricultural-science-3-3","agricultural-science-2-6"]), kind: "question",
-    year: 2010, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2010 Higher Level — © State Examinations Commission.",
-    id: "agsci-2010-hl-q8c-route-i-ii-iii", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-3-3-2"], conceptId: "animal-production-comparisons",
-    section: "B", questionRef: "2010 HL Q8(c) — i, ii, iii",
-    stem: "Practice choice: i, ii, iii.",
-    questionText: "Highlight the main differences between the members of any three of the following pairs: (i) farrowing house and fattening house in pig production (ii) zero grazing and creep grazing (iii) bull-beef production and heifer-beef production (iv) ectoparasites and endoparasites.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "20degrees / first house for a pig or where litter is born / sows + piglets here for 4 -7 weeks / infra red lamps / creep area / farrowing crate", marks: 4, contextNote: "Farrowing house: two points.", group: {"claimMax":2,"perOption":2,"options":["20degrees","first house for a pig or where litter is born","sows + piglets here for 4 -7 weeks","infra red lamps","creep area","farrowing crate"]} },
-    { id: "r-2", kind: "anyN", verbatim: "22 degrees / last house before slaughter or finishing house / room to walk about / lower density / ad lib feeding", marks: 4, contextNote: "Fattening house: two points.", group: {"claimMax":2,"perOption":2,"options":["22 degrees","last house before slaughter or finishing house","room to walk about","lower density","ad lib feeding"]} },
-    { id: "r-3", kind: "anyN", verbatim: "animals kept inside / on a feedlot / grass or other forage is cut / and brought to animals / no poaching / less energy wasted by animals / labour intensive", marks: 4, contextNote: "Zero grazing: two points.", group: {"claimMax":2,"perOption":2,"options":["animals kept inside","on a feedlot","grass or other forage is cut","and brought to animals","no poaching","less energy wasted by animals","labour intensive"]} },
-    { id: "r-4", kind: "anyN", verbatim: "In sheep or cattle systems / a gap in fence / allows young animals access to a clean (worm free) field / good grass available / return to suckle / access denied to mothers", marks: 4, contextNote: "Creep grazing: two points.", group: {"claimMax":2,"perOption":2,"options":["In sheep or cattle systems","a gap in fence","allows young animals access to a clean (worm free) field","good grass available","return to suckle","access denied to mothers"]} },
-    { id: "r-5", kind: "anyN", verbatim: "male animals only / reared without castration / to about 16 months / better growth rates / because of testosterone / high quality feed needed(barley beef) / small market here(meat is strong) / 1-1.25kg gain per day after weaning / dangerous / can breed with heifers", marks: 4, contextNote: "Bull-beef production: two points.", group: {"claimMax":2,"perOption":2,"options":["male animals only","reared without castration","to about 16 months","better growth rates","because of testosterone","high quality feed needed(barley beef)","small market here(meat is strong)","1-1.25kg gain per day after weaning","dangerous","can breed with heifers"]} },
-    { id: "r-6", kind: "anyN", verbatim: "preferred by consumer / heifers are smaller / don’t kill out as well as male / take longer to mature / heifer calves are cheaper than bull calves / 0.6-0.7kg gain per day", marks: 4, contextNote: "Heifer-beef production: two points.", group: {"claimMax":2,"perOption":2,"options":["preferred by consumer","heifers are smaller","don’t kill out as well as male","take longer to mature","heifer calves are cheaper than bull calves","0.6-0.7kg gain per day"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2010 Higher — Q8(c) — i, ii, iii",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
     ...examCardCurriculum("agricultural-science", 2010, ["agricultural-science-3-3","agricultural-science-3-5","agricultural-science-2-6"]), kind: "question",
     year: 2010, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2010 Higher Level — © State Examinations Commission.",
-    id: "agsci-2010-hl-q8c-route-i-ii-iv", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-3-3","agsci-3-3-2"], conceptId: "animal-production-comparisons",
-    section: "B", questionRef: "2010 HL Q8(c) — i, ii, iv",
-    stem: "Practice choice: i, ii, iv.",
+    id: "agsci-2010-hl-q8c", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-3-3","agsci-3-3-2"], conceptId: "animal-production-comparisons",
+    section: "B", questionRef: "2010 HL Q8(c)",
     questionText: "Highlight the main differences between the members of any three of the following pairs: (i) farrowing house and fattening house in pig production (ii) zero grazing and creep grazing (iii) bull-beef production and heifer-beef production (iv) ectoparasites and endoparasites.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    tariffModel: {"kind":"bestNofParts","answer":6,"ofParts":8,"perPart":4}, totalMarks: 24,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "20degrees / first house for a pig or where litter is born / sows + piglets here for 4 -7 weeks / infra red lamps / creep area / farrowing crate", marks: 4, contextNote: "Farrowing house: two points.", group: {"claimMax":2,"perOption":2,"options":["20degrees","first house for a pig or where litter is born","sows + piglets here for 4 -7 weeks","infra red lamps","creep area","farrowing crate"]} },
-    { id: "r-2", kind: "anyN", verbatim: "22 degrees / last house before slaughter or finishing house / room to walk about / lower density / ad lib feeding", marks: 4, contextNote: "Fattening house: two points.", group: {"claimMax":2,"perOption":2,"options":["22 degrees","last house before slaughter or finishing house","room to walk about","lower density","ad lib feeding"]} },
-    { id: "r-3", kind: "anyN", verbatim: "animals kept inside / on a feedlot / grass or other forage is cut / and brought to animals / no poaching / less energy wasted by animals / labour intensive", marks: 4, contextNote: "Zero grazing: two points.", group: {"claimMax":2,"perOption":2,"options":["animals kept inside","on a feedlot","grass or other forage is cut","and brought to animals","no poaching","less energy wasted by animals","labour intensive"]} },
-    { id: "r-4", kind: "anyN", verbatim: "In sheep or cattle systems / a gap in fence / allows young animals access to a clean (worm free) field / good grass available / return to suckle / access denied to mothers", marks: 4, contextNote: "Creep grazing: two points.", group: {"claimMax":2,"perOption":2,"options":["In sheep or cattle systems","a gap in fence","allows young animals access to a clean (worm free) field","good grass available","return to suckle","access denied to mothers"]} },
-    { id: "r-5", kind: "anyN", verbatim: "are on the skin / have claws etc / suck blood-eat skin / easier to control than endo / dipping / sprays / washes / fungus( ringworm) or arthropod ( fleas,mites,ticks,lice,maggots)", marks: 4, contextNote: "Ectoparasites: two points.", group: {"claimMax":2,"perOption":2,"options":["are on the skin","have claws etc","suck blood-eat skin","easier to control than endo","dipping","sprays","washes","fungus( ringworm) or arthropod ( fleas,mites,ticks,lice,maggots)"]} },
-    { id: "r-6", kind: "anyN", verbatim: "on inside / have tough skin-cuticle / no digestive organs often / complicated life cycle / often hermaphrodite / harder to control / examples fluke ,stomach worms etc", marks: 4, contextNote: "Endoparasites: two points.", group: {"claimMax":2,"perOption":2,"options":["on inside","have tough skin-cuticle","no digestive organs often","complicated life cycle","often hermaphrodite","harder to control","examples fluke ,stomach worms etc"]} },
+    { id: "r-1", kind: "anyN", verbatim: "20degrees / first house for a pig or where litter is born / sows + piglets here for 4 -7 weeks / infra red lamps / creep area / farrowing crate", marks: 4, contextNote: "(i) Farrowing house: two points. Any three pairs: both members of each, two points (4 marks) per member.", group: {"claimMax":2,"perOption":2,"options":["20degrees","first house for a pig or where litter is born","sows + piglets here for 4 -7 weeks","infra red lamps","creep area","farrowing crate"]} },
+    { id: "r-2", kind: "anyN", verbatim: "22 degrees / last house before slaughter or finishing house / room to walk about / lower density / ad lib feeding", marks: 4, contextNote: "(i) Fattening house: two points.", group: {"claimMax":2,"perOption":2,"options":["22 degrees","last house before slaughter or finishing house","room to walk about","lower density","ad lib feeding"]} },
+    { id: "r-3", kind: "anyN", verbatim: "animals kept inside / on a feedlot / grass or other forage is cut / and brought to animals / no poaching / less energy wasted by animals / labour intensive", marks: 4, contextNote: "(ii) Zero grazing: two points.", group: {"claimMax":2,"perOption":2,"options":["animals kept inside","on a feedlot","grass or other forage is cut","and brought to animals","no poaching","less energy wasted by animals","labour intensive"]} },
+    { id: "r-4", kind: "anyN", verbatim: "In sheep or cattle systems / a gap in fence / allows young animals access to a clean (worm free) field / good grass available / return to suckle / access denied to mothers", marks: 4, contextNote: "(ii) Creep grazing: two points.", group: {"claimMax":2,"perOption":2,"options":["In sheep or cattle systems","a gap in fence","allows young animals access to a clean (worm free) field","good grass available","return to suckle","access denied to mothers"]} },
+    { id: "r-5", kind: "anyN", verbatim: "male animals only / reared without castration / to about 16 months / better growth rates / because of testosterone / high quality feed needed(barley beef) / small market here(meat is strong) / 1-1.25kg gain per day after weaning / dangerous / can breed with heifers", marks: 4, contextNote: "(iii) Bull-beef production: two points.", group: {"claimMax":2,"perOption":2,"options":["male animals only","reared without castration","to about 16 months","better growth rates","because of testosterone","high quality feed needed(barley beef)","small market here(meat is strong)","1-1.25kg gain per day after weaning","dangerous","can breed with heifers"]} },
+    { id: "r-6", kind: "anyN", verbatim: "preferred by consumer / heifers are smaller / don’t kill out as well as male / take longer to mature / heifer calves are cheaper than bull calves / 0.6-0.7kg gain per day", marks: 4, contextNote: "(iii) Heifer-beef production: two points.", group: {"claimMax":2,"perOption":2,"options":["preferred by consumer","heifers are smaller","don’t kill out as well as male","take longer to mature","heifer calves are cheaper than bull calves","0.6-0.7kg gain per day"]} },
+    { id: "r-7", kind: "anyN", verbatim: "are on the skin / have claws etc / suck blood-eat skin / easier to control than endo / dipping / sprays / washes / fungus( ringworm) or arthropod ( fleas,mites,ticks,lice,maggots)", marks: 4, contextNote: "(iv) Ectoparasites: two points.", group: {"claimMax":2,"perOption":2,"options":["are on the skin","have claws etc","suck blood-eat skin","easier to control than endo","dipping","sprays","washes","fungus( ringworm) or arthropod ( fleas,mites,ticks,lice,maggots)"]} },
+    { id: "r-8", kind: "anyN", verbatim: "on inside / have tough skin-cuticle / no digestive organs often / complicated life cycle / often hermaphrodite / harder to control / examples fluke ,stomach worms etc", marks: 4, contextNote: "(iv) Endoparasites: two points.", group: {"claimMax":2,"perOption":2,"options":["on inside","have tough skin-cuticle","no digestive organs often","complicated life cycle","often hermaphrodite","harder to control","examples fluke ,stomach worms etc"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2010 Higher — Q8(c) — i, ii, iv",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2010, ["agricultural-science-3-3","agricultural-science-3-5"]), kind: "question",
-    year: 2010, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2010 Higher Level — © State Examinations Commission.",
-    id: "agsci-2010-hl-q8c-route-i-iii-iv", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-3-3"], conceptId: "animal-production-comparisons",
-    section: "B", questionRef: "2010 HL Q8(c) — i, iii, iv",
-    stem: "Practice choice: i, iii, iv.",
-    questionText: "Highlight the main differences between the members of any three of the following pairs: (i) farrowing house and fattening house in pig production (ii) zero grazing and creep grazing (iii) bull-beef production and heifer-beef production (iv) ectoparasites and endoparasites.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "20degrees / first house for a pig or where litter is born / sows + piglets here for 4 -7 weeks / infra red lamps / creep area / farrowing crate", marks: 4, contextNote: "Farrowing house: two points.", group: {"claimMax":2,"perOption":2,"options":["20degrees","first house for a pig or where litter is born","sows + piglets here for 4 -7 weeks","infra red lamps","creep area","farrowing crate"]} },
-    { id: "r-2", kind: "anyN", verbatim: "22 degrees / last house before slaughter or finishing house / room to walk about / lower density / ad lib feeding", marks: 4, contextNote: "Fattening house: two points.", group: {"claimMax":2,"perOption":2,"options":["22 degrees","last house before slaughter or finishing house","room to walk about","lower density","ad lib feeding"]} },
-    { id: "r-3", kind: "anyN", verbatim: "male animals only / reared without castration / to about 16 months / better growth rates / because of testosterone / high quality feed needed(barley beef) / small market here(meat is strong) / 1-1.25kg gain per day after weaning / dangerous / can breed with heifers", marks: 4, contextNote: "Bull-beef production: two points.", group: {"claimMax":2,"perOption":2,"options":["male animals only","reared without castration","to about 16 months","better growth rates","because of testosterone","high quality feed needed(barley beef)","small market here(meat is strong)","1-1.25kg gain per day after weaning","dangerous","can breed with heifers"]} },
-    { id: "r-4", kind: "anyN", verbatim: "preferred by consumer / heifers are smaller / don’t kill out as well as male / take longer to mature / heifer calves are cheaper than bull calves / 0.6-0.7kg gain per day", marks: 4, contextNote: "Heifer-beef production: two points.", group: {"claimMax":2,"perOption":2,"options":["preferred by consumer","heifers are smaller","don’t kill out as well as male","take longer to mature","heifer calves are cheaper than bull calves","0.6-0.7kg gain per day"]} },
-    { id: "r-5", kind: "anyN", verbatim: "are on the skin / have claws etc / suck blood-eat skin / easier to control than endo / dipping / sprays / washes / fungus( ringworm) or arthropod ( fleas,mites,ticks,lice,maggots)", marks: 4, contextNote: "Ectoparasites: two points.", group: {"claimMax":2,"perOption":2,"options":["are on the skin","have claws etc","suck blood-eat skin","easier to control than endo","dipping","sprays","washes","fungus( ringworm) or arthropod ( fleas,mites,ticks,lice,maggots)"]} },
-    { id: "r-6", kind: "anyN", verbatim: "on inside / have tough skin-cuticle / no digestive organs often / complicated life cycle / often hermaphrodite / harder to control / examples fluke ,stomach worms etc", marks: 4, contextNote: "Endoparasites: two points.", group: {"claimMax":2,"perOption":2,"options":["on inside","have tough skin-cuticle","no digestive organs often","complicated life cycle","often hermaphrodite","harder to control","examples fluke ,stomach worms etc"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2010 Higher — Q8(c) — i, iii, iv",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2010, ["agricultural-science-3-3","agricultural-science-3-5","agricultural-science-2-6"]), kind: "question",
-    year: 2010, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2010 Higher Level — © State Examinations Commission.",
-    id: "agsci-2010-hl-q8c-route-ii-iii-iv", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-3-3","agsci-3-3-2"], conceptId: "animal-production-comparisons",
-    section: "B", questionRef: "2010 HL Q8(c) — ii, iii, iv",
-    stem: "Practice choice: ii, iii, iv.",
-    questionText: "Highlight the main differences between the members of any three of the following pairs: (i) farrowing house and fattening house in pig production (ii) zero grazing and creep grazing (iii) bull-beef production and heifer-beef production (iv) ectoparasites and endoparasites.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "animals kept inside / on a feedlot / grass or other forage is cut / and brought to animals / no poaching / less energy wasted by animals / labour intensive", marks: 4, contextNote: "Zero grazing: two points.", group: {"claimMax":2,"perOption":2,"options":["animals kept inside","on a feedlot","grass or other forage is cut","and brought to animals","no poaching","less energy wasted by animals","labour intensive"]} },
-    { id: "r-2", kind: "anyN", verbatim: "In sheep or cattle systems / a gap in fence / allows young animals access to a clean (worm free) field / good grass available / return to suckle / access denied to mothers", marks: 4, contextNote: "Creep grazing: two points.", group: {"claimMax":2,"perOption":2,"options":["In sheep or cattle systems","a gap in fence","allows young animals access to a clean (worm free) field","good grass available","return to suckle","access denied to mothers"]} },
-    { id: "r-3", kind: "anyN", verbatim: "male animals only / reared without castration / to about 16 months / better growth rates / because of testosterone / high quality feed needed(barley beef) / small market here(meat is strong) / 1-1.25kg gain per day after weaning / dangerous / can breed with heifers", marks: 4, contextNote: "Bull-beef production: two points.", group: {"claimMax":2,"perOption":2,"options":["male animals only","reared without castration","to about 16 months","better growth rates","because of testosterone","high quality feed needed(barley beef)","small market here(meat is strong)","1-1.25kg gain per day after weaning","dangerous","can breed with heifers"]} },
-    { id: "r-4", kind: "anyN", verbatim: "preferred by consumer / heifers are smaller / don’t kill out as well as male / take longer to mature / heifer calves are cheaper than bull calves / 0.6-0.7kg gain per day", marks: 4, contextNote: "Heifer-beef production: two points.", group: {"claimMax":2,"perOption":2,"options":["preferred by consumer","heifers are smaller","don’t kill out as well as male","take longer to mature","heifer calves are cheaper than bull calves","0.6-0.7kg gain per day"]} },
-    { id: "r-5", kind: "anyN", verbatim: "are on the skin / have claws etc / suck blood-eat skin / easier to control than endo / dipping / sprays / washes / fungus( ringworm) or arthropod ( fleas,mites,ticks,lice,maggots)", marks: 4, contextNote: "Ectoparasites: two points.", group: {"claimMax":2,"perOption":2,"options":["are on the skin","have claws etc","suck blood-eat skin","easier to control than endo","dipping","sprays","washes","fungus( ringworm) or arthropod ( fleas,mites,ticks,lice,maggots)"]} },
-    { id: "r-6", kind: "anyN", verbatim: "on inside / have tough skin-cuticle / no digestive organs often / complicated life cycle / often hermaphrodite / harder to control / examples fluke ,stomach worms etc", marks: 4, contextNote: "Endoparasites: two points.", group: {"claimMax":2,"perOption":2,"options":["on inside","have tough skin-cuticle","no digestive organs often","complicated life cycle","often hermaphrodite","harder to control","examples fluke ,stomach worms etc"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2010 Higher — Q8(c) — ii, iii, iv",
+          "title": "Agricultural Science 2010 Higher — Q8(c)",
           "pages": [
                 5
           ],
@@ -12967,117 +12693,21 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-0","agricultural-science-2-1","agricultural-science-1-3"]), kind: "question",
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-0","agricultural-science-2-1","agricultural-science-1-3","agricultural-science-2-4"]), kind: "question",
     year: 2011, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Higher Level — © State Examinations Commission.",
-    id: "agsci-2011-hl-q8c-route-i-ii-iii", topicId: "agsci-4-1", additionalTopicIds: ["agsci-3-2","agsci-2-2-2"], conceptId: "agricultural-comparisons",
-    section: "B", questionRef: "2011 HL Q8(c) — i, ii, iii",
-    stem: "Practice choice: i, ii, iii.",
+    id: "agsci-2011-hl-q8c", topicId: "agsci-4-1", additionalTopicIds: ["agsci-3-2","agsci-2-2-2","agsci-3-3-2"], conceptId: "agricultural-comparisons",
+    section: "B", questionRef: "2011 HL Q8(c)",
     questionText: "Highlight the main differences between the members of any three of the following pairs: (i) Essential and non-essential amino acids (ii) Annual and biennial plants (iii) Drainage and irrigation (iv) Eelworms and wireworms.",
     tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "must be in animal diet/cannot be manufactured by an animal/ruminants don’t need essential amino acids can make their own", marks: 4, contextNote: "Essential amino acids. The historical scheme includes “not needed for growth” for non-essential amino acids. These amino acids are needed to make proteins; non-essential means the body can synthesise them. The original scheme remains visible for this examination." },
-    { id: "r-2", kind: "point", verbatim: "can be made by the body/from other nutrients/not needed for growth/in abundant supply", marks: 4, contextNote: "Non-essential amino acids." },
-    { id: "r-3", kind: "point", verbatim: "plant grows flowers seeds and dies in 1 growing season/completes lifecycle in one year", marks: 4, contextNote: "Annual plants." },
-    { id: "r-4", kind: "point", verbatim: "plant grows year 1 stores food regrows year 2/flowers seeds and dies in two years/completes lifecycle in two years", marks: 4, contextNote: "Biennial plants." },
-    { id: "r-5", kind: "point", verbatim: "the removal of excess water (when soil is saturated, flooded)/stops poaching", marks: 4, contextNote: "Drainage." },
-    { id: "r-6", kind: "point", verbatim: "adding water to soil/in times of moisture stress/soil moisture deficit/drought/to stop plants drying up or wilting", marks: 4, contextNote: "Irrigation." },
+    { id: "r-1", kind: "anyN", verbatim: "must be in animal diet/cannot be manufactured by an animal/ruminants don’t need essential amino acids can make their own / can be made by the body/from other nutrients/not needed for growth/in abundant supply / plant grows flowers seeds and dies in 1 growing season/completes lifecycle in one year / plant grows year 1 stores food regrows year 2/flowers seeds and dies in two years/completes lifecycle in two years / the removal of excess water (when soil is saturated, flooded)/stops poaching / adding water to soil/in times of moisture stress/soil moisture deficit/drought/to stop plants drying up or wilting / nematodes/no legs/non-segmented/roundworms / larvae/of clickbeetle/arthropod/legs/segmented or any insect characteristic", marks: 24, contextNote: "Any three pairs, both members of each: 4 marks per member, six members (24 marks). Options in printed order: (i) essential amino acids and non-essential amino acids; (ii) annual plants and biennial plants; (iii) drainage and irrigation; (iv) eelworms and wireworms. The historical scheme includes “not needed for growth” for non-essential amino acids. These amino acids are needed to make proteins; non-essential means the body can synthesise them. The original scheme remains visible for this examination.", group: {"claimMax":6,"perOption":4,"options":["must be in animal diet/cannot be manufactured by an animal/ruminants don’t need essential amino acids can make their own","can be made by the body/from other nutrients/not needed for growth/in abundant supply","plant grows flowers seeds and dies in 1 growing season/completes lifecycle in one year","plant grows year 1 stores food regrows year 2/flowers seeds and dies in two years/completes lifecycle in two years","the removal of excess water (when soil is saturated, flooded)/stops poaching","adding water to soil/in times of moisture stress/soil moisture deficit/drought/to stop plants drying up or wilting","nematodes/no legs/non-segmented/roundworms","larvae/of clickbeetle/arthropod/legs/segmented or any insect characteristic"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2011 Higher — Q8(c) — i, ii, iii",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-0","agricultural-science-2-1","agricultural-science-2-4"]), kind: "question",
-    year: 2011, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Higher Level — © State Examinations Commission.",
-    id: "agsci-2011-hl-q8c-route-i-ii-iv", topicId: "agsci-4-1", additionalTopicIds: ["agsci-3-2","agsci-3-3-2"], conceptId: "agricultural-comparisons",
-    section: "B", questionRef: "2011 HL Q8(c) — i, ii, iv",
-    stem: "Practice choice: i, ii, iv.",
-    questionText: "Highlight the main differences between the members of any three of the following pairs: (i) Essential and non-essential amino acids (ii) Annual and biennial plants (iii) Drainage and irrigation (iv) Eelworms and wireworms.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "must be in animal diet/cannot be manufactured by an animal/ruminants don’t need essential amino acids can make their own", marks: 4, contextNote: "Essential amino acids. The historical scheme includes “not needed for growth” for non-essential amino acids. These amino acids are needed to make proteins; non-essential means the body can synthesise them. The original scheme remains visible for this examination." },
-    { id: "r-2", kind: "point", verbatim: "can be made by the body/from other nutrients/not needed for growth/in abundant supply", marks: 4, contextNote: "Non-essential amino acids." },
-    { id: "r-3", kind: "point", verbatim: "plant grows flowers seeds and dies in 1 growing season/completes lifecycle in one year", marks: 4, contextNote: "Annual plants." },
-    { id: "r-4", kind: "point", verbatim: "plant grows year 1 stores food regrows year 2/flowers seeds and dies in two years/completes lifecycle in two years", marks: 4, contextNote: "Biennial plants." },
-    { id: "r-5", kind: "point", verbatim: "nematodes/no legs/non-segmented/roundworms", marks: 4, contextNote: "Eelworms." },
-    { id: "r-6", kind: "point", verbatim: "larvae/of clickbeetle/arthropod/legs/segmented or any insect characteristic", marks: 4, contextNote: "Wireworms." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2011 Higher — Q8(c) — i, ii, iv",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-0","agricultural-science-1-3","agricultural-science-2-4"]), kind: "question",
-    year: 2011, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Higher Level — © State Examinations Commission.",
-    id: "agsci-2011-hl-q8c-route-i-iii-iv", topicId: "agsci-4-1", additionalTopicIds: ["agsci-2-2-2","agsci-3-3-2"], conceptId: "agricultural-comparisons",
-    section: "B", questionRef: "2011 HL Q8(c) — i, iii, iv",
-    stem: "Practice choice: i, iii, iv.",
-    questionText: "Highlight the main differences between the members of any three of the following pairs: (i) Essential and non-essential amino acids (ii) Annual and biennial plants (iii) Drainage and irrigation (iv) Eelworms and wireworms.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "must be in animal diet/cannot be manufactured by an animal/ruminants don’t need essential amino acids can make their own", marks: 4, contextNote: "Essential amino acids. The historical scheme includes “not needed for growth” for non-essential amino acids. These amino acids are needed to make proteins; non-essential means the body can synthesise them. The original scheme remains visible for this examination." },
-    { id: "r-2", kind: "point", verbatim: "can be made by the body/from other nutrients/not needed for growth/in abundant supply", marks: 4, contextNote: "Non-essential amino acids." },
-    { id: "r-3", kind: "point", verbatim: "the removal of excess water (when soil is saturated, flooded)/stops poaching", marks: 4, contextNote: "Drainage." },
-    { id: "r-4", kind: "point", verbatim: "adding water to soil/in times of moisture stress/soil moisture deficit/drought/to stop plants drying up or wilting", marks: 4, contextNote: "Irrigation." },
-    { id: "r-5", kind: "point", verbatim: "nematodes/no legs/non-segmented/roundworms", marks: 4, contextNote: "Eelworms." },
-    { id: "r-6", kind: "point", verbatim: "larvae/of clickbeetle/arthropod/legs/segmented or any insect characteristic", marks: 4, contextNote: "Wireworms." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2011 Higher — Q8(c) — i, iii, iv",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, diagrams and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-1","agricultural-science-1-3","agricultural-science-2-4"]), kind: "question",
-    year: 2011, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Higher Level — © State Examinations Commission.",
-    id: "agsci-2011-hl-q8c-route-ii-iii-iv", topicId: "agsci-3-2", additionalTopicIds: ["agsci-2-2-2","agsci-3-3-2"], conceptId: "agricultural-comparisons",
-    section: "B", questionRef: "2011 HL Q8(c) — ii, iii, iv",
-    stem: "Practice choice: ii, iii, iv.",
-    questionText: "Highlight the main differences between the members of any three of the following pairs: (i) Essential and non-essential amino acids (ii) Annual and biennial plants (iii) Drainage and irrigation (iv) Eelworms and wireworms.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "plant grows flowers seeds and dies in 1 growing season/completes lifecycle in one year", marks: 4, contextNote: "Annual plants." },
-    { id: "r-2", kind: "point", verbatim: "plant grows year 1 stores food regrows year 2/flowers seeds and dies in two years/completes lifecycle in two years", marks: 4, contextNote: "Biennial plants." },
-    { id: "r-3", kind: "point", verbatim: "the removal of excess water (when soil is saturated, flooded)/stops poaching", marks: 4, contextNote: "Drainage." },
-    { id: "r-4", kind: "point", verbatim: "adding water to soil/in times of moisture stress/soil moisture deficit/drought/to stop plants drying up or wilting", marks: 4, contextNote: "Irrigation." },
-    { id: "r-5", kind: "point", verbatim: "nematodes/no legs/non-segmented/roundworms", marks: 4, contextNote: "Eelworms." },
-    { id: "r-6", kind: "point", verbatim: "larvae/of clickbeetle/arthropod/legs/segmented or any insect characteristic", marks: 4, contextNote: "Wireworms." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2011 Higher — Q8(c) — ii, iii, iv",
+          "title": "Agricultural Science 2011 Higher — Q8(c)",
           "pages": [
                 5
           ],
@@ -14751,101 +14381,17 @@ export const CARDS: SecCard[] = [
     year: 2012, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
-    id: "agsci-2012-hl-q7a-route-i-ii-iii", topicId: "agsci-4-3-2", conceptId: "genetics-terms",
-    section: "B", questionRef: "2012 HL Q7(a) — i, ii, iii",
-    stem: "Practice choice: Sex linkage, Continuous variation, Genetically modified (GM) crops.",
+    id: "agsci-2012-hl-q7a", topicId: "agsci-4-3-2", conceptId: "genetics-terms",
+    section: "B", questionRef: "2012 HL Q7(a)",
     questionText: "Explain three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Where a gene (for a non-reproductive trait) is carried on the sex (or X) chromosome", marks: 4, contextNote: "Sex linkage." },
-    { id: "r-2", kind: "point", verbatim: "Where there is a range of phenotypes between two extremes or controlled by a number of genes (interacting with each other)", marks: 4, contextNote: "Continuous variation." },
-    { id: "r-3", kind: "point", verbatim: "Where the genotype of a crop is altered (to produce an improved variety).", marks: 4, contextNote: "Genetically modified (GM) crops." },
+    { id: "r-1", kind: "anyN", verbatim: "Where a gene (for a non-reproductive trait) is carried on the sex (or X) chromosome / Where there is a range of phenotypes between two extremes or controlled by a number of genes (interacting with each other) / Where the genotype of a crop is altered (to produce an improved variety). / Division of a cell into two or type of (asexual) reproduction in unicellular organisms or named.", marks: 12, contextNote: "Any three of the four terms, 4 marks each. Options in printed order: (i) Sex linkage; (ii) Continuous variation; (iii) Genetically modified (GM) crops; (iv) Binary fission.", group: {"claimMax":3,"perOption":4,"options":["Where a gene (for a non-reproductive trait) is carried on the sex (or X) chromosome","Where there is a range of phenotypes between two extremes or controlled by a number of genes (interacting with each other)","Where the genotype of a crop is altered (to produce an improved variety).","Division of a cell into two or type of (asexual) reproduction in unicellular organisms or named."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2012 Higher — Q7(a) — i, ii, iii",
-          "pages": [
-                4
-          ],
-          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
-    year: 2012, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
-    id: "agsci-2012-hl-q7a-route-i-ii-iv", topicId: "agsci-4-3-2", conceptId: "genetics-terms",
-    section: "B", questionRef: "2012 HL Q7(a) — i, ii, iv",
-    stem: "Practice choice: Sex linkage, Continuous variation, Binary fission.",
-    questionText: "Explain three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Where a gene (for a non-reproductive trait) is carried on the sex (or X) chromosome", marks: 4, contextNote: "Sex linkage." },
-    { id: "r-2", kind: "point", verbatim: "Where there is a range of phenotypes between two extremes or controlled by a number of genes (interacting with each other)", marks: 4, contextNote: "Continuous variation." },
-    { id: "r-3", kind: "point", verbatim: "Division of a cell into two or type of (asexual) reproduction in unicellular organisms or named.", marks: 4, contextNote: "Binary fission." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2012 Higher — Q7(a) — i, ii, iv",
-          "pages": [
-                4
-          ],
-          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
-    year: 2012, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
-    id: "agsci-2012-hl-q7a-route-i-iii-iv", topicId: "agsci-4-3-2", conceptId: "genetics-terms",
-    section: "B", questionRef: "2012 HL Q7(a) — i, iii, iv",
-    stem: "Practice choice: Sex linkage, Genetically modified (GM) crops, Binary fission.",
-    questionText: "Explain three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Where a gene (for a non-reproductive trait) is carried on the sex (or X) chromosome", marks: 4, contextNote: "Sex linkage." },
-    { id: "r-2", kind: "point", verbatim: "Where the genotype of a crop is altered (to produce an improved variety).", marks: 4, contextNote: "Genetically modified (GM) crops." },
-    { id: "r-3", kind: "point", verbatim: "Division of a cell into two or type of (asexual) reproduction in unicellular organisms or named.", marks: 4, contextNote: "Binary fission." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2012 Higher — Q7(a) — i, iii, iv",
-          "pages": [
-                4
-          ],
-          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
-    year: 2012, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
-    id: "agsci-2012-hl-q7a-route-ii-iii-iv", topicId: "agsci-4-3-2", conceptId: "genetics-terms",
-    section: "B", questionRef: "2012 HL Q7(a) — ii, iii, iv",
-    stem: "Practice choice: Continuous variation, Genetically modified (GM) crops, Binary fission.",
-    questionText: "Explain three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Where there is a range of phenotypes between two extremes or controlled by a number of genes (interacting with each other)", marks: 4, contextNote: "Continuous variation." },
-    { id: "r-2", kind: "point", verbatim: "Where the genotype of a crop is altered (to produce an improved variety).", marks: 4, contextNote: "Genetically modified (GM) crops." },
-    { id: "r-3", kind: "point", verbatim: "Division of a cell into two or type of (asexual) reproduction in unicellular organisms or named.", marks: 4, contextNote: "Binary fission." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2012 Higher — Q7(a) — ii, iii, iv",
+          "title": "Agricultural Science 2012 Higher — Q7(a)",
           "pages": [
                 4
           ],
@@ -15207,113 +14753,24 @@ export const CARDS: SecCard[] = [
     year: 2012, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
-    id: "agsci-2012-hl-q8c-route-i-ii-iii", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-3-3","agsci-3-3-2"], conceptId: "agricultural-comparisons",
-    section: "B", questionRef: "2012 HL Q8(c) — i, ii, iii",
-    stem: "Practice choice: Lungworm and ringworm, Breeding unit and finishing unit, Catch crop and nurse crop.",
+    id: "agsci-2012-hl-q8c", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-3-3","agsci-3-3-2"], conceptId: "agricultural-comparisons",
+    section: "B", questionRef: "2012 HL Q8(c)",
     questionText: "Highlight the main differences between the members of three of the following pairs: (i) Lungworm and ringworm. (ii) Breeding unit and finishing unit. (iii) Catch crop and nurse crop. (iv) Zoonoses and zoospores.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    tariffModel: {"kind":"bestNofParts","answer":6,"ofParts":8,"perPart":4}, totalMarks: 24,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Nematode / endoparasite / affects respiratory tract (lungs) / causes hoose / not a zoonosis.", marks: 4, contextNote: "Lungworm: two points. The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper.", group: {"claimMax":2,"perOption":2,"options":["Nematode","endoparasite","affects respiratory tract (lungs)","causes hoose","not a zoonosis."]} },
-    { id: "r-2", kind: "anyN", verbatim: "Fungus (fungal disease) / ectoparasite / affects skin and hair on neck and head / zoonosis.", marks: 4, contextNote: "ringworm: two points.", group: {"claimMax":2,"perOption":2,"options":["Fungus (fungal disease)","ectoparasite","affects skin and hair on neck and head","zoonosis."]} },
-    { id: "r-3", kind: "anyN", verbatim: "Pigs weigh less than 32Kg / dry sow house / farrowing house / 20°C / farrowing crate / weaner house 24°C / age range birth to 12 weeks / with sow for first 5 weeks until weaned / boar present.", marks: 4, contextNote: "Breeding unit: two points.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh less than 32Kg","dry sow house","farrowing house","20°C","farrowing crate","weaner house 24°C","age range birth to 12 weeks","with sow for first 5 weeks until weaned","boar present."]} },
-    { id: "r-4", kind: "anyN", verbatim: "Pigs weigh more than 32 kg / pigs reared for slaughter / 22°C / age range 3-6 months / slaughter 82 kg.", marks: 4, contextNote: "finishing unit: two points.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh more than 32 kg","pigs reared for slaughter","22°C","age range 3-6 months","slaughter 82 kg."]} },
-    { id: "r-5", kind: "anyN", verbatim: "Grown between two main crops / sown after maincrop / fast growing crop (2-3 months) / prevents leaching / prevents soil erosion / high yield / break between grass and cereal / mainly fodder crops / e.g. turnips", marks: 4, contextNote: "Catch crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Grown between two main crops","sown after maincrop","fast growing crop (2-3 months)","prevents leaching","prevents soil erosion","high yield","break between grass and cereal","mainly fodder crops","e.g. turnips"]} },
-    { id: "r-6", kind: "anyN", verbatim: "Crop with 1 year life cycle / sown with perennial crop / annual crop is harvested leaving the perennial crop / reduces weeds / prevents soil erosion / used to establish perennial crop / e.g. grass sown with spring barley or peas", marks: 4, contextNote: "nurse crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Crop with 1 year life cycle","sown with perennial crop","annual crop is harvested leaving the perennial crop","reduces weeds","prevents soil erosion","used to establish perennial crop","e.g. grass sown with spring barley or peas"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Nematode / endoparasite / affects respiratory tract (lungs) / causes hoose / not a zoonosis.", marks: 4, contextNote: "(i) Lungworm: two points. Any three pairs, both members of each: two points (4 marks) per member, best six members (24 marks). The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice card follows the paper.", group: {"claimMax":2,"perOption":2,"options":["Nematode","endoparasite","affects respiratory tract (lungs)","causes hoose","not a zoonosis."]} },
+    { id: "r-2", kind: "anyN", verbatim: "Fungus (fungal disease) / ectoparasite / affects skin and hair on neck and head / zoonosis.", marks: 4, contextNote: "(i) ringworm: two points.", group: {"claimMax":2,"perOption":2,"options":["Fungus (fungal disease)","ectoparasite","affects skin and hair on neck and head","zoonosis."]} },
+    { id: "r-3", kind: "anyN", verbatim: "Pigs weigh less than 32Kg / dry sow house / farrowing house / 20°C / farrowing crate / weaner house 24°C / age range birth to 12 weeks / with sow for first 5 weeks until weaned / boar present.", marks: 4, contextNote: "(ii) Breeding unit: two points.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh less than 32Kg","dry sow house","farrowing house","20°C","farrowing crate","weaner house 24°C","age range birth to 12 weeks","with sow for first 5 weeks until weaned","boar present."]} },
+    { id: "r-4", kind: "anyN", verbatim: "Pigs weigh more than 32 kg / pigs reared for slaughter / 22°C / age range 3-6 months / slaughter 82 kg.", marks: 4, contextNote: "(ii) finishing unit: two points.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh more than 32 kg","pigs reared for slaughter","22°C","age range 3-6 months","slaughter 82 kg."]} },
+    { id: "r-5", kind: "anyN", verbatim: "Grown between two main crops / sown after maincrop / fast growing crop (2-3 months) / prevents leaching / prevents soil erosion / high yield / break between grass and cereal / mainly fodder crops / e.g. turnips", marks: 4, contextNote: "(iii) Catch crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Grown between two main crops","sown after maincrop","fast growing crop (2-3 months)","prevents leaching","prevents soil erosion","high yield","break between grass and cereal","mainly fodder crops","e.g. turnips"]} },
+    { id: "r-6", kind: "anyN", verbatim: "Crop with 1 year life cycle / sown with perennial crop / annual crop is harvested leaving the perennial crop / reduces weeds / prevents soil erosion / used to establish perennial crop / e.g. grass sown with spring barley or peas", marks: 4, contextNote: "(iii) nurse crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Crop with 1 year life cycle","sown with perennial crop","annual crop is harvested leaving the perennial crop","reduces weeds","prevents soil erosion","used to establish perennial crop","e.g. grass sown with spring barley or peas"]} },
+    { id: "r-7", kind: "anyN", verbatim: "Disease(s) / can be transmitted from animal to human / spread by direct contact (insects eating flesh of infected animals, drinking contaminated water) / e.g. anthrax, brucellosis", marks: 4, contextNote: "(iv) Zoonoses: two points.", group: {"claimMax":2,"perOption":2,"options":["Disease(s)","can be transmitted from animal to human","spread by direct contact (insects eating flesh of infected animals, drinking contaminated water)","e.g. anthrax, brucellosis"]} },
+    { id: "r-8", kind: "anyN", verbatim: "Asexual reproductive cell / method of propagation in algae (bacteria, fungi) / no cell wall / flagellum for movement / mobile spore / e.g. Phytophthora infestans (potato blight)", marks: 4, contextNote: "(iv) zoospores: two points.", group: {"claimMax":2,"perOption":2,"options":["Asexual reproductive cell","method of propagation in algae (bacteria, fungi)","no cell wall","flagellum for movement","mobile spore","e.g. Phytophthora infestans (potato blight)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2012 Higher — Q8(c) — i, ii, iii",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3","agricultural-science-2-4","agricultural-science-3-5"]), kind: "question",
-    year: 2012, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
-    id: "agsci-2012-hl-q8c-route-i-ii-iv", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-3-3","agsci-3-3-2"], conceptId: "agricultural-comparisons",
-    section: "B", questionRef: "2012 HL Q8(c) — i, ii, iv",
-    stem: "Practice choice: Lungworm and ringworm, Breeding unit and finishing unit, Zoonoses and zoospores.",
-    questionText: "Highlight the main differences between the members of three of the following pairs: (i) Lungworm and ringworm. (ii) Breeding unit and finishing unit. (iii) Catch crop and nurse crop. (iv) Zoonoses and zoospores.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Nematode / endoparasite / affects respiratory tract (lungs) / causes hoose / not a zoonosis.", marks: 4, contextNote: "Lungworm: two points. The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper.", group: {"claimMax":2,"perOption":2,"options":["Nematode","endoparasite","affects respiratory tract (lungs)","causes hoose","not a zoonosis."]} },
-    { id: "r-2", kind: "anyN", verbatim: "Fungus (fungal disease) / ectoparasite / affects skin and hair on neck and head / zoonosis.", marks: 4, contextNote: "ringworm: two points.", group: {"claimMax":2,"perOption":2,"options":["Fungus (fungal disease)","ectoparasite","affects skin and hair on neck and head","zoonosis."]} },
-    { id: "r-3", kind: "anyN", verbatim: "Pigs weigh less than 32Kg / dry sow house / farrowing house / 20°C / farrowing crate / weaner house 24°C / age range birth to 12 weeks / with sow for first 5 weeks until weaned / boar present.", marks: 4, contextNote: "Breeding unit: two points.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh less than 32Kg","dry sow house","farrowing house","20°C","farrowing crate","weaner house 24°C","age range birth to 12 weeks","with sow for first 5 weeks until weaned","boar present."]} },
-    { id: "r-4", kind: "anyN", verbatim: "Pigs weigh more than 32 kg / pigs reared for slaughter / 22°C / age range 3-6 months / slaughter 82 kg.", marks: 4, contextNote: "finishing unit: two points.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh more than 32 kg","pigs reared for slaughter","22°C","age range 3-6 months","slaughter 82 kg."]} },
-    { id: "r-5", kind: "anyN", verbatim: "Disease(s) / can be transmitted from animal to human / spread by direct contact (insects eating flesh of infected animals, drinking contaminated water) / e.g. anthrax, brucellosis", marks: 4, contextNote: "Zoonoses: two points.", group: {"claimMax":2,"perOption":2,"options":["Disease(s)","can be transmitted from animal to human","spread by direct contact (insects eating flesh of infected animals, drinking contaminated water)","e.g. anthrax, brucellosis"]} },
-    { id: "r-6", kind: "anyN", verbatim: "Asexual reproductive cell / method of propagation in algae (bacteria, fungi) / no cell wall / flagellum for movement / mobile spore / e.g. Phytophthora infestans (potato blight)", marks: 4, contextNote: "zoospores: two points.", group: {"claimMax":2,"perOption":2,"options":["Asexual reproductive cell","method of propagation in algae (bacteria, fungi)","no cell wall","flagellum for movement","mobile spore","e.g. Phytophthora infestans (potato blight)"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2012 Higher — Q8(c) — i, ii, iv",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3","agricultural-science-2-4","agricultural-science-3-5"]), kind: "question",
-    year: 2012, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
-    id: "agsci-2012-hl-q8c-route-i-iii-iv", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-3-3","agsci-3-3-2"], conceptId: "agricultural-comparisons",
-    section: "B", questionRef: "2012 HL Q8(c) — i, iii, iv",
-    stem: "Practice choice: Lungworm and ringworm, Catch crop and nurse crop, Zoonoses and zoospores.",
-    questionText: "Highlight the main differences between the members of three of the following pairs: (i) Lungworm and ringworm. (ii) Breeding unit and finishing unit. (iii) Catch crop and nurse crop. (iv) Zoonoses and zoospores.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Nematode / endoparasite / affects respiratory tract (lungs) / causes hoose / not a zoonosis.", marks: 4, contextNote: "Lungworm: two points. The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper.", group: {"claimMax":2,"perOption":2,"options":["Nematode","endoparasite","affects respiratory tract (lungs)","causes hoose","not a zoonosis."]} },
-    { id: "r-2", kind: "anyN", verbatim: "Fungus (fungal disease) / ectoparasite / affects skin and hair on neck and head / zoonosis.", marks: 4, contextNote: "ringworm: two points.", group: {"claimMax":2,"perOption":2,"options":["Fungus (fungal disease)","ectoparasite","affects skin and hair on neck and head","zoonosis."]} },
-    { id: "r-3", kind: "anyN", verbatim: "Grown between two main crops / sown after maincrop / fast growing crop (2-3 months) / prevents leaching / prevents soil erosion / high yield / break between grass and cereal / mainly fodder crops / e.g. turnips", marks: 4, contextNote: "Catch crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Grown between two main crops","sown after maincrop","fast growing crop (2-3 months)","prevents leaching","prevents soil erosion","high yield","break between grass and cereal","mainly fodder crops","e.g. turnips"]} },
-    { id: "r-4", kind: "anyN", verbatim: "Crop with 1 year life cycle / sown with perennial crop / annual crop is harvested leaving the perennial crop / reduces weeds / prevents soil erosion / used to establish perennial crop / e.g. grass sown with spring barley or peas", marks: 4, contextNote: "nurse crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Crop with 1 year life cycle","sown with perennial crop","annual crop is harvested leaving the perennial crop","reduces weeds","prevents soil erosion","used to establish perennial crop","e.g. grass sown with spring barley or peas"]} },
-    { id: "r-5", kind: "anyN", verbatim: "Disease(s) / can be transmitted from animal to human / spread by direct contact (insects eating flesh of infected animals, drinking contaminated water) / e.g. anthrax, brucellosis", marks: 4, contextNote: "Zoonoses: two points.", group: {"claimMax":2,"perOption":2,"options":["Disease(s)","can be transmitted from animal to human","spread by direct contact (insects eating flesh of infected animals, drinking contaminated water)","e.g. anthrax, brucellosis"]} },
-    { id: "r-6", kind: "anyN", verbatim: "Asexual reproductive cell / method of propagation in algae (bacteria, fungi) / no cell wall / flagellum for movement / mobile spore / e.g. Phytophthora infestans (potato blight)", marks: 4, contextNote: "zoospores: two points.", group: {"claimMax":2,"perOption":2,"options":["Asexual reproductive cell","method of propagation in algae (bacteria, fungi)","no cell wall","flagellum for movement","mobile spore","e.g. Phytophthora infestans (potato blight)"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2012 Higher — Q8(c) — i, iii, iv",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
-    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3","agricultural-science-2-4","agricultural-science-3-5"]), kind: "question",
-    year: 2012, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
-    id: "agsci-2012-hl-q8c-route-ii-iii-iv", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-3-3","agsci-3-3-2"], conceptId: "agricultural-comparisons",
-    section: "B", questionRef: "2012 HL Q8(c) — ii, iii, iv",
-    stem: "Practice choice: Breeding unit and finishing unit, Catch crop and nurse crop, Zoonoses and zoospores.",
-    questionText: "Highlight the main differences between the members of three of the following pairs: (i) Lungworm and ringworm. (ii) Breeding unit and finishing unit. (iii) Catch crop and nurse crop. (iv) Zoonoses and zoospores.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Pigs weigh less than 32Kg / dry sow house / farrowing house / 20°C / farrowing crate / weaner house 24°C / age range birth to 12 weeks / with sow for first 5 weeks until weaned / boar present.", marks: 4, contextNote: "Breeding unit: two points. The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh less than 32Kg","dry sow house","farrowing house","20°C","farrowing crate","weaner house 24°C","age range birth to 12 weeks","with sow for first 5 weeks until weaned","boar present."]} },
-    { id: "r-2", kind: "anyN", verbatim: "Pigs weigh more than 32 kg / pigs reared for slaughter / 22°C / age range 3-6 months / slaughter 82 kg.", marks: 4, contextNote: "finishing unit: two points.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh more than 32 kg","pigs reared for slaughter","22°C","age range 3-6 months","slaughter 82 kg."]} },
-    { id: "r-3", kind: "anyN", verbatim: "Grown between two main crops / sown after maincrop / fast growing crop (2-3 months) / prevents leaching / prevents soil erosion / high yield / break between grass and cereal / mainly fodder crops / e.g. turnips", marks: 4, contextNote: "Catch crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Grown between two main crops","sown after maincrop","fast growing crop (2-3 months)","prevents leaching","prevents soil erosion","high yield","break between grass and cereal","mainly fodder crops","e.g. turnips"]} },
-    { id: "r-4", kind: "anyN", verbatim: "Crop with 1 year life cycle / sown with perennial crop / annual crop is harvested leaving the perennial crop / reduces weeds / prevents soil erosion / used to establish perennial crop / e.g. grass sown with spring barley or peas", marks: 4, contextNote: "nurse crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Crop with 1 year life cycle","sown with perennial crop","annual crop is harvested leaving the perennial crop","reduces weeds","prevents soil erosion","used to establish perennial crop","e.g. grass sown with spring barley or peas"]} },
-    { id: "r-5", kind: "anyN", verbatim: "Disease(s) / can be transmitted from animal to human / spread by direct contact (insects eating flesh of infected animals, drinking contaminated water) / e.g. anthrax, brucellosis", marks: 4, contextNote: "Zoonoses: two points.", group: {"claimMax":2,"perOption":2,"options":["Disease(s)","can be transmitted from animal to human","spread by direct contact (insects eating flesh of infected animals, drinking contaminated water)","e.g. anthrax, brucellosis"]} },
-    { id: "r-6", kind: "anyN", verbatim: "Asexual reproductive cell / method of propagation in algae (bacteria, fungi) / no cell wall / flagellum for movement / mobile spore / e.g. Phytophthora infestans (potato blight)", marks: 4, contextNote: "zoospores: two points.", group: {"claimMax":2,"perOption":2,"options":["Asexual reproductive cell","method of propagation in algae (bacteria, fungi)","no cell wall","flagellum for movement","mobile spore","e.g. Phytophthora infestans (potato blight)"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2012 Higher — Q8(c) — ii, iii, iv",
+          "title": "Agricultural Science 2012 Higher — Q8(c)",
           "pages": [
                 5
           ],
@@ -15624,93 +15081,17 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q2b-route-fertilising-light-genetic", topicId: "agsci-3-1", additionalTopicIds: ["agsci-3-3-2"], conceptId: "photosynthesis-crop-production",
-    section: "A", questionRef: "2026 HL Q2(b) — Fertilising the crop, Optimising light capture, Genetic improvement of crops",
-    stem: "Practice choice: Fertilising the crop, Optimising light capture, Genetic improvement of crops.",
-    questionText: "Discuss how the knowledge of photosynthesis is used to enhance crop production on Irish farms. In your answer, refer to any three of the following:",
+    id: "agsci-2026-hl-q2b", topicId: "agsci-3-1", additionalTopicIds: ["agsci-3-3-2"], conceptId: "photosynthesis-crop-production",
+    section: "A", questionRef: "2026 HL Q2(b)",
+    questionText: "Discuss how the knowledge of photosynthesis is used to enhance crop production on Irish farms. In your answer, refer to any three of the following: Fertilising the crop; Optimising light capture; Genetic improvement of crops; Grassland management.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Provides nutrients (e.g. N, P, K) to enhance leaf growth/area or provides N for chlorophyll production or correct mineral function related to photosynthesis / Sow crops in rows / correct spacing to maximise sunlight / avoid shading /aspect described / time of sowing to maximise daylength (growth days) / relevant genetic selection for enhanced light capture / (Breeding) genetically selecting crops for traits (like faster growth or larger surface area or higher chlorophyll content, or drought resistance) leads to increased photosynthesis or crop yields", marks: 10, contextNote: "One point under each of your three headings, in order: Fertilising the crop; Optimising light capture; Genetic improvement of crops. Alternatives within one heading earn one award. The first correct heading earns 5 marks, the second 3 and the third 2.", group: {"claimMax":3,"perOption":5,"options":["Provides nutrients (e.g. N, P, K) to enhance leaf growth/area or provides N for chlorophyll production or correct mineral function related to photosynthesis","Sow crops in rows / correct spacing to maximise sunlight / avoid shading /aspect described / time of sowing to maximise daylength (growth days) / relevant genetic selection for enhanced light capture","(Breeding) genetically selecting crops for traits (like faster growth or larger surface area or higher chlorophyll content, or drought resistance) leads to increased photosynthesis or crop yields"],"perOptionSteps":[5,3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "Provides nutrients (e.g. N, P, K) to enhance leaf growth/area or provides N for chlorophyll production or correct mineral function related to photosynthesis / Sow crops in rows / correct spacing to maximise sunlight / avoid shading /aspect described / time of sowing to maximise daylength (growth days) / relevant genetic selection for enhanced light capture / (Breeding) genetically selecting crops for traits (like faster growth or larger surface area or higher chlorophyll content, or drought resistance) leads to increased photosynthesis or crop yields / Management of grazing system (stocking rate or reseeding or topping or rotation) to increase leaf growth / increase sugar content for silage or grazing.", marks: 10, contextNote: "One point under each of any three headings. In printed order the options are: Fertilising the crop; Optimising light capture; Genetic improvement of crops; Grassland management. Alternatives within one heading earn one award. The first correct heading earns 5 marks, the second 3 and the third 2.", group: {"claimMax":3,"perOption":5,"options":["Provides nutrients (e.g. N, P, K) to enhance leaf growth/area or provides N for chlorophyll production or correct mineral function related to photosynthesis","Sow crops in rows / correct spacing to maximise sunlight / avoid shading /aspect described / time of sowing to maximise daylength (growth days) / relevant genetic selection for enhanced light capture","(Breeding) genetically selecting crops for traits (like faster growth or larger surface area or higher chlorophyll content, or drought resistance) leads to increased photosynthesis or crop yields","Management of grazing system (stocking rate or reseeding or topping or rotation) to increase leaf growth / increase sugar content for silage or grazing."],"perOptionSteps":[5,3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q2(b) — Fertilising the crop, Optimising light capture, Genetic improvement of crops",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-1","agsci-3-3-2"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q2b-route-fertilising-light-grassland", topicId: "agsci-3-1", additionalTopicIds: ["agsci-3-3-2"], conceptId: "photosynthesis-crop-production",
-    section: "A", questionRef: "2026 HL Q2(b) — Fertilising the crop, Optimising light capture, Grassland management",
-    stem: "Practice choice: Fertilising the crop, Optimising light capture, Grassland management.",
-    questionText: "Discuss how the knowledge of photosynthesis is used to enhance crop production on Irish farms. In your answer, refer to any three of the following:",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Provides nutrients (e.g. N, P, K) to enhance leaf growth/area or provides N for chlorophyll production or correct mineral function related to photosynthesis / Sow crops in rows / correct spacing to maximise sunlight / avoid shading /aspect described / time of sowing to maximise daylength (growth days) / relevant genetic selection for enhanced light capture / Management of grazing system (stocking rate or reseeding or topping or rotation) to increase leaf growth / increase sugar content for silage or grazing.", marks: 10, contextNote: "One point under each of your three headings, in order: Fertilising the crop; Optimising light capture; Grassland management. Alternatives within one heading earn one award. The first correct heading earns 5 marks, the second 3 and the third 2.", group: {"claimMax":3,"perOption":5,"options":["Provides nutrients (e.g. N, P, K) to enhance leaf growth/area or provides N for chlorophyll production or correct mineral function related to photosynthesis","Sow crops in rows / correct spacing to maximise sunlight / avoid shading /aspect described / time of sowing to maximise daylength (growth days) / relevant genetic selection for enhanced light capture","Management of grazing system (stocking rate or reseeding or topping or rotation) to increase leaf growth / increase sugar content for silage or grazing."],"perOptionSteps":[5,3,2]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q2(b) — Fertilising the crop, Optimising light capture, Grassland management",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-1","agsci-3-3-2"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q2b-route-fertilising-genetic-grassland", topicId: "agsci-3-1", additionalTopicIds: ["agsci-3-3-2"], conceptId: "photosynthesis-crop-production",
-    section: "A", questionRef: "2026 HL Q2(b) — Fertilising the crop, Genetic improvement of crops, Grassland management",
-    stem: "Practice choice: Fertilising the crop, Genetic improvement of crops, Grassland management.",
-    questionText: "Discuss how the knowledge of photosynthesis is used to enhance crop production on Irish farms. In your answer, refer to any three of the following:",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Provides nutrients (e.g. N, P, K) to enhance leaf growth/area or provides N for chlorophyll production or correct mineral function related to photosynthesis / (Breeding) genetically selecting crops for traits (like faster growth or larger surface area or higher chlorophyll content, or drought resistance) leads to increased photosynthesis or crop yields / Management of grazing system (stocking rate or reseeding or topping or rotation) to increase leaf growth / increase sugar content for silage or grazing.", marks: 10, contextNote: "One point under each of your three headings, in order: Fertilising the crop; Genetic improvement of crops; Grassland management. Alternatives within one heading earn one award. The first correct heading earns 5 marks, the second 3 and the third 2.", group: {"claimMax":3,"perOption":5,"options":["Provides nutrients (e.g. N, P, K) to enhance leaf growth/area or provides N for chlorophyll production or correct mineral function related to photosynthesis","(Breeding) genetically selecting crops for traits (like faster growth or larger surface area or higher chlorophyll content, or drought resistance) leads to increased photosynthesis or crop yields","Management of grazing system (stocking rate or reseeding or topping or rotation) to increase leaf growth / increase sugar content for silage or grazing."],"perOptionSteps":[5,3,2]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q2(b) — Fertilising the crop, Genetic improvement of crops, Grassland management",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-1","agsci-3-3-2"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q2b-route-light-genetic-grassland", topicId: "agsci-3-1", additionalTopicIds: ["agsci-3-3-2"], conceptId: "photosynthesis-crop-production",
-    section: "A", questionRef: "2026 HL Q2(b) — Optimising light capture, Genetic improvement of crops, Grassland management",
-    stem: "Practice choice: Optimising light capture, Genetic improvement of crops, Grassland management.",
-    questionText: "Discuss how the knowledge of photosynthesis is used to enhance crop production on Irish farms. In your answer, refer to any three of the following:",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Sow crops in rows / correct spacing to maximise sunlight / avoid shading /aspect described / time of sowing to maximise daylength (growth days) / relevant genetic selection for enhanced light capture / (Breeding) genetically selecting crops for traits (like faster growth or larger surface area or higher chlorophyll content, or drought resistance) leads to increased photosynthesis or crop yields / Management of grazing system (stocking rate or reseeding or topping or rotation) to increase leaf growth / increase sugar content for silage or grazing.", marks: 10, contextNote: "One point under each of your three headings, in order: Optimising light capture; Genetic improvement of crops; Grassland management. Alternatives within one heading earn one award. The first correct heading earns 5 marks, the second 3 and the third 2.", group: {"claimMax":3,"perOption":5,"options":["Sow crops in rows / correct spacing to maximise sunlight / avoid shading /aspect described / time of sowing to maximise daylength (growth days) / relevant genetic selection for enhanced light capture","(Breeding) genetically selecting crops for traits (like faster growth or larger surface area or higher chlorophyll content, or drought resistance) leads to increased photosynthesis or crop yields","Management of grazing system (stocking rate or reseeding or topping or rotation) to increase leaf growth / increase sugar content for silage or grazing."],"perOptionSteps":[5,3,2]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q2(b) — Optimising light capture, Genetic improvement of crops, Grassland management",
+          "title": "Agricultural Science 2026 Higher — Q2(b)",
           "pages": [
                 5
           ],
@@ -16227,368 +15608,18 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-pests-carbon-losses-resilience", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Reduced environmental losses, Improve plant resilience",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Protection from pests and diseases, Carbon storage, Reduced environmental losses, Improve plant resilience.",
+    id: "agsci-2026-hl-q7", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
+    section: "A", questionRef: "2026 HL Q7",
+    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. The benefits printed are: Protection from pests and diseases; Carbon storage; Reduced environmental losses; Improve plant resilience; Food quality; Nutrient provision.",
     questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield. / It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields. / Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted. / Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Protection from pests and diseases; Carbon storage; Reduced environmental losses; Improve plant resilience. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield.","It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields.","Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted.","Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons."],"perOptionSteps":[5,3,1,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield. / It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields. / Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted. / Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons. / Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers. / Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs.", marks: 10, contextNote: "One outline for each of any four benefits. In printed order the options are: Protection from pests and diseases; Carbon storage; Reduced environmental losses; Improve plant resilience; Food quality; Nutrient provision. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield.","It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields.","Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted.","Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons.","Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers.","Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs."],"perOptionSteps":[5,3,1,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Protection from pests and diseases, Carbon storage, Reduced environmental losses, Improve plant resilience",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-pests-carbon-losses-food", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Reduced environmental losses, Food quality",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Protection from pests and diseases, Carbon storage, Reduced environmental losses, Food quality.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield. / It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields. / Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted. / Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Protection from pests and diseases; Carbon storage; Reduced environmental losses; Food quality. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield.","It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields.","Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted.","Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Protection from pests and diseases, Carbon storage, Reduced environmental losses, Food quality",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-pests-carbon-losses-nutrients", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Reduced environmental losses, Nutrient provision",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Protection from pests and diseases, Carbon storage, Reduced environmental losses, Nutrient provision.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield. / It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields. / Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted. / Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Protection from pests and diseases; Carbon storage; Reduced environmental losses; Nutrient provision. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield.","It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields.","Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted.","Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Protection from pests and diseases, Carbon storage, Reduced environmental losses, Nutrient provision",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-pests-carbon-resilience-food", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Improve plant resilience, Food quality",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Protection from pests and diseases, Carbon storage, Improve plant resilience, Food quality.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield. / It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields. / Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons. / Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Protection from pests and diseases; Carbon storage; Improve plant resilience; Food quality. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield.","It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields.","Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons.","Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Protection from pests and diseases, Carbon storage, Improve plant resilience, Food quality",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-pests-carbon-resilience-nutrients", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Improve plant resilience, Nutrient provision",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Protection from pests and diseases, Carbon storage, Improve plant resilience, Nutrient provision.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield. / It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields. / Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons. / Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Protection from pests and diseases; Carbon storage; Improve plant resilience; Nutrient provision. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield.","It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields.","Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons.","Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Protection from pests and diseases, Carbon storage, Improve plant resilience, Nutrient provision",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-pests-carbon-food-nutrients", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Protection from pests and diseases, Carbon storage, Food quality, Nutrient provision",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Protection from pests and diseases, Carbon storage, Food quality, Nutrient provision.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield. / It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields. / Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers. / Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Protection from pests and diseases; Carbon storage; Food quality; Nutrient provision. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield.","It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields.","Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers.","Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Protection from pests and diseases, Carbon storage, Food quality, Nutrient provision",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-pests-losses-resilience-food", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Protection from pests and diseases, Reduced environmental losses, Improve plant resilience, Food quality",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Protection from pests and diseases, Reduced environmental losses, Improve plant resilience, Food quality.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield. / Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted. / Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons. / Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Protection from pests and diseases; Reduced environmental losses; Improve plant resilience; Food quality. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield.","Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted.","Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons.","Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Protection from pests and diseases, Reduced environmental losses, Improve plant resilience, Food quality",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-pests-losses-resilience-nutrients", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Protection from pests and diseases, Reduced environmental losses, Improve plant resilience, Nutrient provision",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Protection from pests and diseases, Reduced environmental losses, Improve plant resilience, Nutrient provision.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield. / Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted. / Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons. / Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Protection from pests and diseases; Reduced environmental losses; Improve plant resilience; Nutrient provision. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield.","Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted.","Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons.","Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Protection from pests and diseases, Reduced environmental losses, Improve plant resilience, Nutrient provision",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-pests-losses-food-nutrients", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Protection from pests and diseases, Reduced environmental losses, Food quality, Nutrient provision",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Protection from pests and diseases, Reduced environmental losses, Food quality, Nutrient provision.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield. / Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted. / Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers. / Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Protection from pests and diseases; Reduced environmental losses; Food quality; Nutrient provision. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield.","Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted.","Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers.","Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Protection from pests and diseases, Reduced environmental losses, Food quality, Nutrient provision",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-pests-resilience-food-nutrients", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Protection from pests and diseases, Improve plant resilience, Food quality, Nutrient provision",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Protection from pests and diseases, Improve plant resilience, Food quality, Nutrient provision.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield. / Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons. / Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers. / Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Protection from pests and diseases; Improve plant resilience; Food quality; Nutrient provision. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["Diverse farming systems encourage beneficial organisms / natural predators control pests, (reducing the need for pesticides) / healthy soils suppress plant diseases or improving crop survival or improving yield.","Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons.","Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers.","Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Protection from pests and diseases, Improve plant resilience, Food quality, Nutrient provision",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-carbon-losses-resilience-food", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Carbon storage, Reduced environmental losses, Improve plant resilience, Food quality",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Carbon storage, Reduced environmental losses, Improve plant resilience, Food quality.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields. / Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted. / Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons. / Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Carbon storage; Reduced environmental losses; Improve plant resilience; Food quality. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields.","Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted.","Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons.","Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Carbon storage, Reduced environmental losses, Improve plant resilience, Food quality",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-carbon-losses-resilience-nutrients", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Carbon storage, Reduced environmental losses, Improve plant resilience, Nutrient provision",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Carbon storage, Reduced environmental losses, Improve plant resilience, Nutrient provision.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields. / Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted. / Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons. / Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Carbon storage; Reduced environmental losses; Improve plant resilience; Nutrient provision. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields.","Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted.","Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons.","Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Carbon storage, Reduced environmental losses, Improve plant resilience, Nutrient provision",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-carbon-losses-food-nutrients", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Carbon storage, Reduced environmental losses, Food quality, Nutrient provision",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Carbon storage, Reduced environmental losses, Food quality, Nutrient provision.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields. / Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted. / Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers. / Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Carbon storage; Reduced environmental losses; Food quality; Nutrient provision. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields.","Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted.","Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers.","Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Carbon storage, Reduced environmental losses, Food quality, Nutrient provision",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-carbon-resilience-food-nutrients", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Carbon storage, Improve plant resilience, Food quality, Nutrient provision",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Carbon storage, Improve plant resilience, Food quality, Nutrient provision.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields. / Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons. / Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers. / Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Carbon storage; Improve plant resilience; Food quality; Nutrient provision. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["It reduces the amount of carbon dioxide in the atmosphere, (helping to slow climate change) / (Carbon-rich) soils have better structure or water-holding capacity or higher fertility or allows stronger root growth or higher yields.","Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons.","Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers.","Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Carbon storage, Improve plant resilience, Food quality, Nutrient provision",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-2-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q7-route-losses-resilience-food-nutrients", topicId: "agsci-2-2-3", conceptId: "soil-biological-health-benefits",
-    section: "A", questionRef: "2026 HL Q7 — Reduced environmental losses, Improve plant resilience, Food quality, Nutrient provision",
-    stem: "Good soil biology is essential for agricultural productivity and ecosystem health. Improving soil’s biological health is a very important aspect of all farming. Practice choice: Reduced environmental losses, Improve plant resilience, Food quality, Nutrient provision.",
-    questionText: "Outline how any four benefits can improve agricultural productivity and/or ecosystem health.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted. / Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons. / Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers. / Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs.", marks: 10, contextNote: "One outline for each of your four benefits, in order: Reduced environmental losses; Improve plant resilience; Food quality; Nutrient provision. Alternatives within one benefit earn one award. The scheme prints 5+3+2(1).", group: {"claimMax":4,"perOption":5,"options":["Healthy soil biome prevents nitrate leaching or phosphorus runoff (into rivers and lakes, improving water quality) / more nutrients stay in the field, meaning less fertiliser is wasted.","Healthy soil biome (and diverse systems) help plants cope with stress / crops becomes more resistant to drought or disease or extreme weather / more reliable yields, even in difficult seasons.","Improved access to soil nutrients improves crop quality / increases protein or vitamin or mineral content of food crops / produces healthier feed for livestock or higher quality produce for consumers.","Soil organisms release nutrients naturally through decomposition / provides crops with a steady supply of nitrogen or phosphorus or trace elements / reduces reliance on chemical fertilisers, lowering costs."],"perOptionSteps":[5,3,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q7 — Reduced environmental losses, Improve plant resilience, Food quality, Nutrient provision",
+          "title": "Agricultural Science 2026 Higher — Q7",
           "pages": [
                 12
           ],
@@ -16731,68 +15762,18 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q10a-route-ab", topicId: "agsci-3-2", conceptId: "weed-identification",
-    section: "A", questionRef: "2026 HL Q10(a) — A, B",
-    stem: "During a farm walk, a farmer was asked to identify the three plants A, B and C found in the field. Practice choice: plants A and B.",
+    id: "agsci-2026-hl-q10a", topicId: "agsci-3-2", conceptId: "weed-identification",
+    section: "A", questionRef: "2026 HL Q10(a)",
+    stem: "During a farm walk, a farmer was asked to identify the three plants A, B and C found in the field.",
     questionText: "Identify any two of the plants A, B, and C.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A – Ragwort / B – Nettle", marks: 5, contextNote: "Identify the two plants you chose. The first correct identification earns 3 marks and the second 2.", group: {"claimMax":2,"perOption":3,"options":["A – Ragwort","B – Nettle"],"perOptionSteps":[3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "A – Ragwort / B – Nettle / C – Dandelion", marks: 5, contextNote: "Any two of the three plants. The first correct identification earns 3 marks and the second 2.", group: {"claimMax":2,"perOption":3,"options":["A – Ragwort","B – Nettle","C – Dandelion"],"perOptionSteps":[3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q10(a) — A, B",
-          "pages": [
-                15
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-2"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q10a-route-ac", topicId: "agsci-3-2", conceptId: "weed-identification",
-    section: "A", questionRef: "2026 HL Q10(a) — A, C",
-    stem: "During a farm walk, a farmer was asked to identify the three plants A, B and C found in the field. Practice choice: plants A and C.",
-    questionText: "Identify any two of the plants A, B, and C.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A – Ragwort / C – Dandelion", marks: 5, contextNote: "Identify the two plants you chose. The first correct identification earns 3 marks and the second 2.", group: {"claimMax":2,"perOption":3,"options":["A – Ragwort","C – Dandelion"],"perOptionSteps":[3,2]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q10(a) — A, C",
-          "pages": [
-                15
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-2"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q10a-route-bc", topicId: "agsci-3-2", conceptId: "weed-identification",
-    section: "A", questionRef: "2026 HL Q10(a) — B, C",
-    stem: "During a farm walk, a farmer was asked to identify the three plants A, B and C found in the field. Practice choice: plants B and C.",
-    questionText: "Identify any two of the plants A, B, and C.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "B – Nettle / C – Dandelion", marks: 5, contextNote: "Identify the two plants you chose. The first correct identification earns 3 marks and the second 2.", group: {"claimMax":2,"perOption":3,"options":["B – Nettle","C – Dandelion"],"perOptionSteps":[3,2]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q10(a) — B, C",
+          "title": "Agricultural Science 2026 Higher — Q10(a)",
           "pages": [
                 15
           ],
@@ -17384,45 +16365,21 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q14ci-route-a", topicId: "agsci-3-3-1", conceptId: "clover-oversowing-method",
-    section: "B", questionRef: "2026 HL Q14(c)(i) — A",
-    stem: "Clover seeds can be over-sown into established swards in a number of ways as shown in the photographs A and B below. Practice choice: method A (Direct drilling).",
+    id: "agsci-2026-hl-q14ci", topicId: "agsci-3-3-1", conceptId: "clover-oversowing-method",
+    section: "B", questionRef: "2026 HL Q14(c)(i)",
+    stem: "Clover seeds can be over-sown into established swards in a number of ways as shown in the photographs A and B below.",
     questionText: "Identify method A or B and explain to a group of farmers how clover seeds can be sown using this method.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Method: A = Direct drilling / stitching in / slit sowing", marks: 3, contextNote: "Named method." },
-    { id: "r-2", kind: "anyN", verbatim: "Land grazed or cut tightly / The machine opens a small groove in the grass sward / Clover seed is dropped into the slot at the correct depth (5-10mm) / The slot then closes, leaving the seed in direct contact with the soil or rolled", marks: 6, contextNote: "* If the name and method match they get full marks, if the name and method don’t match they get awarded the marks for the name", group: {"claimMax":2,"perOption":3,"options":["Land grazed or cut tightly","The machine opens a small groove in the grass sward","Clover seed is dropped into the slot at the correct depth (5-10mm)","The slot then closes, leaving the seed in direct contact with the soil or rolled"]} },
+    { id: "r-1", kind: "point", verbatim: "Method: A = Direct drilling / stitching in / slit sowing", marks: 3, contextNote: "Method A: named method, 3 marks. Naming a method commits the card to that route.", route: "A" },
+    { id: "r-2", kind: "anyN", verbatim: "Land grazed or cut tightly / The machine opens a small groove in the grass sward / Clover seed is dropped into the slot at the correct depth (5-10mm) / The slot then closes, leaving the seed in direct contact with the soil or rolled", marks: 6, contextNote: "Method A: two points of the method, 3 marks each. * If the name and method match they get full marks, if the name and method don’t match they get awarded the marks for the name", route: "A", group: {"claimMax":2,"perOption":3,"options":["Land grazed or cut tightly","The machine opens a small groove in the grass sward","Clover seed is dropped into the slot at the correct depth (5-10mm)","The slot then closes, leaving the seed in direct contact with the soil or rolled"]} },
+    { id: "r-3", kind: "point", verbatim: "Method B = Broadcast", marks: 3, contextNote: "Method B: named method, 3 marks. Naming a method commits the card to that route.", route: "B" },
+    { id: "r-4", kind: "anyN", verbatim: "Land grazed or cut tightly / Seed is spread using a fertiliser spreader or by hand / The field is then lightly grazed or rolled so that animals’ hooves or machinery help press the seed into the soil", marks: 6, contextNote: "Method B: two points of the method, 3 marks each. * If the name and method match they get full marks, if the name and method don’t match they get awarded the marks for the name", route: "B", group: {"claimMax":2,"perOption":3,"options":["Land grazed or cut tightly","Seed is spread using a fertiliser spreader or by hand","The field is then lightly grazed or rolled so that animals’ hooves or machinery help press the seed into the soil"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q14(c)(i) — A",
-          "pages": [
-                26
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-1"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q14ci-route-b", topicId: "agsci-3-3-1", conceptId: "clover-oversowing-method",
-    section: "B", questionRef: "2026 HL Q14(c)(i) — B",
-    stem: "Clover seeds can be over-sown into established swards in a number of ways as shown in the photographs A and B below. Practice choice: method B (Broadcasting).",
-    questionText: "Identify method A or B and explain to a group of farmers how clover seeds can be sown using this method.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 9,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Method B = Broadcast", marks: 3, contextNote: "Named method." },
-    { id: "r-2", kind: "anyN", verbatim: "Land grazed or cut tightly / Seed is spread using a fertiliser spreader or by hand / The field is then lightly grazed or rolled so that animals’ hooves or machinery help press the seed into the soil", marks: 6, contextNote: "* If the name and method match they get full marks, if the name and method don’t match they get awarded the marks for the name", group: {"claimMax":2,"perOption":3,"options":["Land grazed or cut tightly","Seed is spread using a fertiliser spreader or by hand","The field is then lightly grazed or rolled so that animals’ hooves or machinery help press the seed into the soil"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q14(c)(i) — B",
+          "title": "Agricultural Science 2026 Higher — Q14(c)(i)",
           "pages": [
                 26
           ],
@@ -18456,47 +17413,21 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-1","agsci-2-3"]), kind: "question",
+    ...examCardCurriculum("agricultural-science", 2026, ["agsci-3-3-1","agsci-2-3","agsci-4-3-2"]), kind: "question",
     year: 2026, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q18ciii-route-plants", topicId: "agsci-3-3-1", additionalTopicIds: ["agsci-2-3"], conceptId: "genetic-traits-soil-conditions",
-    section: "B", questionRef: "2026 HL Q18(c)(iii) — plants",
-    stem: "Practice choice: plants.",
+    id: "agsci-2026-hl-q18ciii", topicId: "agsci-3-3-1", additionalTopicIds: ["agsci-2-3","agsci-4-3-2"], conceptId: "genetic-traits-soil-conditions",
+    section: "B", questionRef: "2026 HL Q18(c)(iii)",
     questionText: "Explain how genetic traits in plants or animals can help farmers respond to soil conditions.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Select for traits such as disease resistant / tolerance to acidic soils or waterlogging or drought or low fertility (e.g. certain grass or cereal varieties have deeper or stronger root systems that allow them to access nutrients and moisture from poor or dry soils)", marks: 3, contextNote: "In plants.", group: {"claimMax":1,"perOption":3,"options":["Select for traits such as disease resistant","tolerance to acidic soils or waterlogging or drought or low fertility (e.g. certain grass or cereal varieties have deeper or stronger root systems that allow them to access nutrients and moisture from poor or dry soils)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Select for traits such as disease resistant / tolerance to acidic soils or waterlogging or drought or low fertility (e.g. certain grass or cereal varieties have deeper or stronger root systems that allow them to access nutrients and moisture from poor or dry soils) / select animals that are better adapted to specific soil and grazing conditions. (e.g. hardy) / Native cattle or sheep breeds cope better on wet, heavy soils and are less prone to lameness / animals with efficient feed conversion or strong immune systems perform better on land with lower grass quality", marks: 3, contextNote: "One explanation, in plants or in livestock. The first two options are the scheme’s plant traits and the last three its livestock traits.", group: {"claimMax":1,"perOption":3,"options":["Select for traits such as disease resistant","tolerance to acidic soils or waterlogging or drought or low fertility (e.g. certain grass or cereal varieties have deeper or stronger root systems that allow them to access nutrients and moisture from poor or dry soils)","select animals that are better adapted to specific soil and grazing conditions. (e.g. hardy)","Native cattle or sheep breeds cope better on wet, heavy soils and are less prone to lameness","animals with efficient feed conversion or strong immune systems perform better on land with lower grass quality"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q18(c)(iii) — plants",
-          "pages": [
-                39
-          ],
-          "attribution": "SEC Agricultural Science 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2026, ["agsci-4-3-2","agsci-2-3"]), kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2026 Higher Level — © State Examinations Commission.",
-    id: "agsci-2026-hl-q18ciii-route-animals", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-2-3"], conceptId: "genetic-traits-soil-conditions",
-    section: "B", questionRef: "2026 HL Q18(c)(iii) — animals",
-    stem: "Practice choice: animals.",
-    questionText: "Explain how genetic traits in plants or animals can help farmers respond to soil conditions.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "select animals that are better adapted to specific soil and grazing conditions. (e.g. hardy) / Native cattle or sheep breeds cope better on wet, heavy soils and are less prone to lameness / animals with efficient feed conversion or strong immune systems perform better on land with lower grass quality", marks: 3, contextNote: "In livestock.", group: {"claimMax":1,"perOption":3,"options":["select animals that are better adapted to specific soil and grazing conditions. (e.g. hardy)","Native cattle or sheep breeds cope better on wet, heavy soils and are less prone to lameness","animals with efficient feed conversion or strong immune systems perform better on land with lower grass quality"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2026 Higher — Q18(c)(iii) — animals",
+          "title": "Agricultural Science 2026 Higher — Q18(c)(iii)",
           "pages": [
                 39
           ],
@@ -18581,350 +17512,6 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2","agsci-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q2a", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-1"], conceptId: "plant-lifecycles",
-    section: "A", questionRef: "2025 HL Q2(a) — Annual, Biennial",
-    stem: "Plant lifecycles can be distinguished as annual, biennial and perennial. Practice choice: Annual, Biennial.",
-    questionText: "Explain any two plant lifecycles and provide an example of each one.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Completes its life cycle in one year", marks: 3, contextNote: "Annual: explanation." },
-    { id: "r-2", kind: "point", verbatim: "wheat", marks: 2, contextNote: "Example of a annual plant. (Any other valid example of a plant)", openList: true },
-    { id: "r-3", kind: "point", verbatim: "Completes its life cycle in two years", marks: 3, contextNote: "Biennial: explanation." },
-    { id: "r-4", kind: "point", verbatim: "carrot", marks: 2, contextNote: "Example of a biennial plant. (Any other valid example of a plant)", openList: true },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q2(a) — Annual, Biennial",
-          "pages": [
-                4
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2","agsci-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q2a-route-annual-perennial", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-1"], conceptId: "plant-lifecycles",
-    section: "A", questionRef: "2025 HL Q2(a) — Annual, Perennial",
-    stem: "Plant lifecycles can be distinguished as annual, biennial and perennial. Practice choice: Annual, Perennial.",
-    questionText: "Explain any two plant lifecycles and provide an example of each one.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Completes its life cycle in one year", marks: 3, contextNote: "Annual: explanation." },
-    { id: "r-2", kind: "point", verbatim: "wheat", marks: 2, contextNote: "Example of a annual plant. (Any other valid example of a plant)", openList: true },
-    { id: "r-3", kind: "point", verbatim: "Flower and reproduce for multiple years", marks: 3, contextNote: "Perennial: explanation." },
-    { id: "r-4", kind: "point", verbatim: "perennial ryegrass", marks: 2, contextNote: "Example of a perennial plant. (Any other valid example of a plant)", openList: true },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q2(a) — Annual, Perennial",
-          "pages": [
-                4
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2","agsci-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q2a-route-biennial-perennial", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-1"], conceptId: "plant-lifecycles",
-    section: "A", questionRef: "2025 HL Q2(a) — Biennial, Perennial",
-    stem: "Plant lifecycles can be distinguished as annual, biennial and perennial. Practice choice: Biennial, Perennial.",
-    questionText: "Explain any two plant lifecycles and provide an example of each one.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Completes its life cycle in two years", marks: 3, contextNote: "Biennial: explanation." },
-    { id: "r-2", kind: "point", verbatim: "carrot", marks: 2, contextNote: "Example of a biennial plant. (Any other valid example of a plant)", openList: true },
-    { id: "r-3", kind: "point", verbatim: "Flower and reproduce for multiple years", marks: 3, contextNote: "Perennial: explanation." },
-    { id: "r-4", kind: "point", verbatim: "perennial ryegrass", marks: 2, contextNote: "Example of a perennial plant. (Any other valid example of a plant)", openList: true },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q2(a) — Biennial, Perennial",
-          "pages": [
-                4
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-2","agsci-4-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q2bii", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-4-3-1"], conceptId: "beef-cross-sire-selection",
-    section: "A", questionRef: "2025 HL Q2(b)(ii) — Meat quality, Good growth rates",
-    stem: "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Meat quality, Good growth rates.",
-    questionText: "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Factors relating to marbling or texture or taste or tenderness (that appeal to consumers) / many cows go into calf to beef system so improved beef traits", marks: 1, contextNote: "Meat quality: one description.", group: {"claimMax":1,"perOption":1,"options":["Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)","many cows go into calf to beef system so improved beef traits"]} },
-    { id: "r-2", kind: "point", verbatim: "Will influence when an animal gets to slaughter and kill out weight (fast maturing)", marks: 1, contextNote: "Good growth rates: description." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Meat quality, Good growth rates",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-2","agsci-4-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q2bii-route-meat-quality-ease-of-calving", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-4-3-1"], conceptId: "beef-cross-sire-selection",
-    section: "A", questionRef: "2025 HL Q2(b)(ii) — Meat quality, Ease of calving",
-    stem: "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Meat quality, Ease of calving.",
-    questionText: "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Factors relating to marbling or texture or taste or tenderness (that appeal to consumers) / many cows go into calf to beef system so improved beef traits", marks: 1, contextNote: "Meat quality: one description.", group: {"claimMax":1,"perOption":1,"options":["Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)","many cows go into calf to beef system so improved beef traits"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Reduced risk of complications / better suited for crossing with dairy cows rather than bigger continental breeds", marks: 1, contextNote: "Ease of calving: one description.", group: {"claimMax":1,"perOption":1,"options":["Reduced risk of complications","better suited for crossing with dairy cows rather than bigger continental breeds"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Meat quality, Ease of calving",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-2","agsci-4-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q2bii-route-meat-quality-docility", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-4-3-1"], conceptId: "beef-cross-sire-selection",
-    section: "A", questionRef: "2025 HL Q2(b)(ii) — Meat quality, Docility",
-    stem: "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Meat quality, Docility.",
-    questionText: "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Factors relating to marbling or texture or taste or tenderness (that appeal to consumers) / many cows go into calf to beef system so improved beef traits", marks: 1, contextNote: "Meat quality: one description.", group: {"claimMax":1,"perOption":1,"options":["Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)","many cows go into calf to beef system so improved beef traits"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Animals with good temperament are easier to handle / less risk of injury", marks: 1, contextNote: "Docility: one description.", group: {"claimMax":1,"perOption":1,"options":["Animals with good temperament are easier to handle","less risk of injury"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Meat quality, Docility",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-2","agsci-4-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q2bii-route-meat-quality-fertility", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-4-3-1"], conceptId: "beef-cross-sire-selection",
-    section: "A", questionRef: "2025 HL Q2(b)(ii) — Meat quality, Fertility",
-    stem: "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Meat quality, Fertility.",
-    questionText: "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Factors relating to marbling or texture or taste or tenderness (that appeal to consumers) / many cows go into calf to beef system so improved beef traits", marks: 1, contextNote: "Meat quality: one description.", group: {"claimMax":1,"perOption":1,"options":["Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)","many cows go into calf to beef system so improved beef traits"]} },
-    { id: "r-2", kind: "point", verbatim: "greater number of calves over lifetime of bull", marks: 1, contextNote: "Fertility: description." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Meat quality, Fertility",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-2","agsci-4-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q2bii-route-good-growth-rates-ease-of-calving", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-4-3-1"], conceptId: "beef-cross-sire-selection",
-    section: "A", questionRef: "2025 HL Q2(b)(ii) — Good growth rates, Ease of calving",
-    stem: "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Good growth rates, Ease of calving.",
-    questionText: "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Will influence when an animal gets to slaughter and kill out weight (fast maturing)", marks: 1, contextNote: "Good growth rates: description." },
-    { id: "r-2", kind: "anyN", verbatim: "Reduced risk of complications / better suited for crossing with dairy cows rather than bigger continental breeds", marks: 1, contextNote: "Ease of calving: one description.", group: {"claimMax":1,"perOption":1,"options":["Reduced risk of complications","better suited for crossing with dairy cows rather than bigger continental breeds"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Good growth rates, Ease of calving",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-2","agsci-4-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q2bii-route-good-growth-rates-docility", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-4-3-1"], conceptId: "beef-cross-sire-selection",
-    section: "A", questionRef: "2025 HL Q2(b)(ii) — Good growth rates, Docility",
-    stem: "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Good growth rates, Docility.",
-    questionText: "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Will influence when an animal gets to slaughter and kill out weight (fast maturing)", marks: 1, contextNote: "Good growth rates: description." },
-    { id: "r-2", kind: "anyN", verbatim: "Animals with good temperament are easier to handle / less risk of injury", marks: 1, contextNote: "Docility: one description.", group: {"claimMax":1,"perOption":1,"options":["Animals with good temperament are easier to handle","less risk of injury"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Good growth rates, Docility",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-2","agsci-4-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q2bii-route-good-growth-rates-fertility", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-4-3-1"], conceptId: "beef-cross-sire-selection",
-    section: "A", questionRef: "2025 HL Q2(b)(ii) — Good growth rates, Fertility",
-    stem: "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Good growth rates, Fertility.",
-    questionText: "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Will influence when an animal gets to slaughter and kill out weight (fast maturing)", marks: 1, contextNote: "Good growth rates: description." },
-    { id: "r-2", kind: "point", verbatim: "greater number of calves over lifetime of bull", marks: 1, contextNote: "Fertility: description." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Good growth rates, Fertility",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-2","agsci-4-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q2bii-route-ease-of-calving-docility", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-4-3-1"], conceptId: "beef-cross-sire-selection",
-    section: "A", questionRef: "2025 HL Q2(b)(ii) — Ease of calving, Docility",
-    stem: "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Ease of calving, Docility.",
-    questionText: "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Reduced risk of complications / better suited for crossing with dairy cows rather than bigger continental breeds", marks: 1, contextNote: "Ease of calving: one description.", group: {"claimMax":1,"perOption":1,"options":["Reduced risk of complications","better suited for crossing with dairy cows rather than bigger continental breeds"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Animals with good temperament are easier to handle / less risk of injury", marks: 1, contextNote: "Docility: one description.", group: {"claimMax":1,"perOption":1,"options":["Animals with good temperament are easier to handle","less risk of injury"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Ease of calving, Docility",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-2","agsci-4-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q2bii-route-ease-of-calving-fertility", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-4-3-1"], conceptId: "beef-cross-sire-selection",
-    section: "A", questionRef: "2025 HL Q2(b)(ii) — Ease of calving, Fertility",
-    stem: "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Ease of calving, Fertility.",
-    questionText: "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Reduced risk of complications / better suited for crossing with dairy cows rather than bigger continental breeds", marks: 1, contextNote: "Ease of calving: one description.", group: {"claimMax":1,"perOption":1,"options":["Reduced risk of complications","better suited for crossing with dairy cows rather than bigger continental breeds"]} },
-    { id: "r-2", kind: "point", verbatim: "greater number of calves over lifetime of bull", marks: 1, contextNote: "Fertility: description." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Ease of calving, Fertility",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-2","agsci-4-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q2bii-route-docility-fertility", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-4-3-1"], conceptId: "beef-cross-sire-selection",
-    section: "A", questionRef: "2025 HL Q2(b)(ii) — Docility, Fertility",
-    stem: "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024) Practice choice: Docility, Fertility.",
-    questionText: "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Animals with good temperament are easier to handle / less risk of injury", marks: 1, contextNote: "Docility: one description.", group: {"claimMax":1,"perOption":1,"options":["Animals with good temperament are easier to handle","less risk of injury"]} },
-    { id: "r-2", kind: "point", verbatim: "greater number of calves over lifetime of bull", marks: 1, contextNote: "Fertility: description." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q2(b)(ii) — Docility, Fertility",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
     ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-1","agsci-2-3"]), kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC024ALP000EV",
@@ -18976,176 +17563,23 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-3"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q6b", topicId: "agsci-4-3-3", conceptId: "lambing-equipment-use",
-    section: "A", questionRef: "2025 HL Q6(b) — Stomach tube",
-    stem: "Pádraig is a sheep and beef farmer. He is getting his equipment ready for lambing. Part (a): the three pieces of lambing equipment are a stomach tube, a heat lamp and ropes. Practice choice: Stomach tube.",
-    questionText: "Briefly describe how any one of your named pieces of equipment identified in part (a) above is used during the lambing period.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Tube is placed into stomach through oesophagus to deliver milk to stomach", marks: 4, contextNote: "Stomach tube." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q6(b) — Stomach tube",
-          "pages": [
-                11
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-3"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q6b-route-heat-lamp", topicId: "agsci-4-3-3", conceptId: "lambing-equipment-use",
-    section: "A", questionRef: "2025 HL Q6(b) — Heat lamp",
-    stem: "Pádraig is a sheep and beef farmer. He is getting his equipment ready for lambing. Part (a): the three pieces of lambing equipment are a stomach tube, a heat lamp and ropes. Practice choice: Heat lamp.",
-    questionText: "Briefly describe how any one of your named pieces of equipment identified in part (a) above is used during the lambing period.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "The heat lamp is placed above the lamb", marks: 4, contextNote: "Heat lamp." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q6(b) — Heat lamp",
-          "pages": [
-                11
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-3"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q6b-route-ropes", topicId: "agsci-4-3-3", conceptId: "lambing-equipment-use",
-    section: "A", questionRef: "2025 HL Q6(b) — Ropes",
-    stem: "Pádraig is a sheep and beef farmer. He is getting his equipment ready for lambing. Part (a): the three pieces of lambing equipment are a stomach tube, a heat lamp and ropes. Practice choice: Ropes.",
-    questionText: "Briefly describe how any one of your named pieces of equipment identified in part (a) above is used during the lambing period.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Ropes are tied above the hooves of lambs to pull lamb during birth", marks: 4, contextNote: "Ropes." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q6(b) — Ropes",
-          "pages": [
-                11
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
     ...examCardCurriculum("agricultural-science", 2025, ["agsci-2-2-3","agsci-3-3-2"]), kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q7b-route-water-retention", topicId: "agsci-2-2-3", additionalTopicIds: ["agsci-3-3-2"], conceptId: "soil-microbiome-processes",
-    section: "A", questionRef: "2025 HL Q7(b) — Water retention",
-    stem: "The soil microbiome plays a large role in soil health. The diagram shows four processes carried out by the soil microbiome: water retention, plant carbon sink, carbon sequestration and plant growth promotion. Practice choice: Water retention.",
+    id: "agsci-2025-hl-q7b", topicId: "agsci-2-2-3", additionalTopicIds: ["agsci-3-3-2"], conceptId: "soil-microbiome-processes",
+    section: "A", questionRef: "2025 HL Q7(b)",
+    stem: "The soil microbiome plays a large role in soil health. The diagram shows four processes carried out by the soil microbiome: water retention, plant carbon sink, carbon sequestration and plant growth promotion.",
     questionText: "Outline how the soil microbiome contributes to any one of the above processes and state how this process in turn benefits productivity in a named catch or energy crop.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(Mycorrhizal fungi) increase area for water absorption / (bacteria and fungi) break down OM to humus which increase water retention / improves soil structure", marks: 4, contextNote: "Water retention: contribution of the soil microbiome.", group: {"claimMax":1,"perOption":4,"options":["(Mycorrhizal fungi) increase area for water absorption","(bacteria and fungi) break down OM to humus which increase water retention","improves soil structure"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Increased water availability to the crop / reduces effects of drought", marks: 1, contextNote: "Benefit to productivity in a named catch or energy crop. The scheme prints 4+1.", group: {"claimMax":1,"perOption":1,"options":["Increased water availability to the crop","reduces effects of drought"]} },
+    { id: "r-1", kind: "anyN", verbatim: "(Mycorrhizal fungi) increase area for water absorption / (bacteria and fungi) break down OM to humus which increase water retention / improves soil structure / Micro-organisms feed on OM and allow for nutrient recycling (store carbon) in soil (biomass or humus) / Decomposition of OM to humus for carbon storage in soil / Symbiotic relationship (between plants and mycorrhizal fungi/bacteria) fixes nitrogen or makes phosphate available / mycorrhizal fungi produce growth hormones", marks: 4, contextNote: "Contribution of the soil microbiome to the one process you chose, 4 marks. Options by process: water retention 1–3, plant carbon sink 4, carbon sequestration 5, plant growth promotion 6–7.", group: {"claimMax":1,"perOption":4,"options":["(Mycorrhizal fungi) increase area for water absorption","(bacteria and fungi) break down OM to humus which increase water retention","improves soil structure","Micro-organisms feed on OM and allow for nutrient recycling (store carbon) in soil (biomass or humus)","Decomposition of OM to humus for carbon storage in soil","Symbiotic relationship (between plants and mycorrhizal fungi/bacteria) fixes nitrogen or makes phosphate available","mycorrhizal fungi produce growth hormones"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Increased water availability to the crop / reduces effects of drought / Greater nutrient availability for crop growth / Improved soil structure for crop growth or greater nutrient availability for crop growth / Improved nutrient availability leading to improved yield / improved yield due to growth hormones", marks: 1, contextNote: "Benefit to productivity in a named catch or energy crop, matching the same process, 1 mark (4+1). Options by process: water retention 1–2, plant carbon sink 3, carbon sequestration 4, plant growth promotion 5–6.", group: {"claimMax":1,"perOption":1,"options":["Increased water availability to the crop","reduces effects of drought","Greater nutrient availability for crop growth","Improved soil structure for crop growth or greater nutrient availability for crop growth","Improved nutrient availability leading to improved yield","improved yield due to growth hormones"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q7(b) — Water retention",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-2-2-3","agsci-3-3-2"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q7b-route-plant-carbon-sink", topicId: "agsci-2-2-3", additionalTopicIds: ["agsci-3-3-2"], conceptId: "soil-microbiome-processes",
-    section: "A", questionRef: "2025 HL Q7(b) — Plant carbon sink",
-    stem: "The soil microbiome plays a large role in soil health. The diagram shows four processes carried out by the soil microbiome: water retention, plant carbon sink, carbon sequestration and plant growth promotion. Practice choice: Plant carbon sink.",
-    questionText: "Outline how the soil microbiome contributes to any one of the above processes and state how this process in turn benefits productivity in a named catch or energy crop.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Micro-organisms feed on OM and allow for nutrient recycling (store carbon) in soil (biomass or humus)", marks: 4, contextNote: "Plant carbon sink: contribution of the soil microbiome." },
-    { id: "r-2", kind: "point", verbatim: "Greater nutrient availability for crop growth", marks: 1, contextNote: "Benefit to productivity in a named catch or energy crop. The scheme prints 4+1." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q7(b) — Plant carbon sink",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-2-2-3","agsci-3-3-2"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q7b-route-carbon-sequestration", topicId: "agsci-2-2-3", additionalTopicIds: ["agsci-3-3-2"], conceptId: "soil-microbiome-processes",
-    section: "A", questionRef: "2025 HL Q7(b) — Carbon sequestration",
-    stem: "The soil microbiome plays a large role in soil health. The diagram shows four processes carried out by the soil microbiome: water retention, plant carbon sink, carbon sequestration and plant growth promotion. Practice choice: Carbon sequestration.",
-    questionText: "Outline how the soil microbiome contributes to any one of the above processes and state how this process in turn benefits productivity in a named catch or energy crop.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Decomposition of OM to humus for carbon storage in soil", marks: 4, contextNote: "Carbon sequestration: contribution of the soil microbiome." },
-    { id: "r-2", kind: "point", verbatim: "Improved soil structure for crop growth or greater nutrient availability for crop growth", marks: 1, contextNote: "Benefit to productivity in a named catch or energy crop. The scheme prints 4+1." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q7(b) — Carbon sequestration",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-2-2-3","agsci-3-3-2"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q7b-route-plant-growth-promotion", topicId: "agsci-2-2-3", additionalTopicIds: ["agsci-3-3-2"], conceptId: "soil-microbiome-processes",
-    section: "A", questionRef: "2025 HL Q7(b) — Plant growth promotion",
-    stem: "The soil microbiome plays a large role in soil health. The diagram shows four processes carried out by the soil microbiome: water retention, plant carbon sink, carbon sequestration and plant growth promotion. Practice choice: Plant growth promotion.",
-    questionText: "Outline how the soil microbiome contributes to any one of the above processes and state how this process in turn benefits productivity in a named catch or energy crop.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Symbiotic relationship (between plants and mycorrhizal fungi/bacteria) fixes nitrogen or makes phosphate available / mycorrhizal fungi produce growth hormones", marks: 4, contextNote: "Plant growth promotion: contribution of the soil microbiome.", group: {"claimMax":1,"perOption":4,"options":["Symbiotic relationship (between plants and mycorrhizal fungi/bacteria) fixes nitrogen or makes phosphate available","mycorrhizal fungi produce growth hormones"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Improved nutrient availability leading to improved yield / improved yield due to growth hormones", marks: 1, contextNote: "Benefit to productivity in a named catch or energy crop. The scheme prints 4+1.", group: {"claimMax":1,"perOption":1,"options":["Improved nutrient availability leading to improved yield","improved yield due to growth hormones"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q7(b) — Plant growth promotion",
+          "title": "Agricultural Science 2025 Higher — Q7(b)",
           "pages": [
                 12
           ],
@@ -19159,118 +17593,17 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q12a", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-2-3","agsci-3-1","agsci-4-3-1"], conceptId: "scientific-reasons-abcd",
-    section: "A", questionRef: "2025 HL Q12 — a, b, c, d",
-    stem: "Practice choice: (a), (b), (c), (d).",
+    id: "agsci-2025-hl-q12a", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-2-3","agsci-3-1","agsci-4-3-1"], conceptId: "scientific-reasons",
+    section: "A", questionRef: "2025 HL Q12",
     questionText: "Outline one scientific reason for any four of the following: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring / Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity / Close to surface to maximise photosynthesis / Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)", marks: 10, contextNote: "One reason for each of your four prompts, in order: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. Alternatives within one prompt earn one award. The scheme prints 2(4)+2(1): the first two correct reasons earn 4 marks each and the next two 1 each.", group: {"claimMax":4,"perOption":4,"options":["To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring","Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity","Close to surface to maximise photosynthesis","Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)"],"perOptionSteps":[4,4,1,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring / Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity / Close to surface to maximise photosynthesis / Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding) / To transport minerals / to provide water for photosynthesis / to cool the plant", marks: 10, contextNote: "One reason for each of any four prompts. In printed order the options answer: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere. Alternatives within one prompt earn one award. The scheme prints 2(4)+2(1): the first two correct reasons earn 4 marks each and the next two 1 each.", group: {"claimMax":4,"perOption":4,"options":["To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring","Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity","Close to surface to maximise photosynthesis","Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)","To transport minerals / to provide water for photosynthesis / to cool the plant"],"perOptionSteps":[4,4,1,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q12 — a, b, c, d",
-          "pages": [
-                18
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-2-3","agsci-3-1","agsci-4-3-1"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q12b", topicId: "agsci-2-3", additionalTopicIds: ["agsci-3-1","agsci-4-3-1"], conceptId: "scientific-reasons-bcde",
-    section: "A", questionRef: "2025 HL Q12 — b, c, d, e",
-    stem: "Practice choice: (b), (c), (d), (e).",
-    questionText: "Outline one scientific reason for any four of the following: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity / Close to surface to maximise photosynthesis / Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding) / To transport minerals / to provide water for photosynthesis / to cool the plant", marks: 10, contextNote: "One reason for each of your four prompts, in order: (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere. Alternatives within one prompt earn one award. The scheme prints 2(4)+2(1): the first two correct reasons earn 4 marks each and the next two 1 each.", group: {"claimMax":4,"perOption":4,"options":["Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity","Close to surface to maximise photosynthesis","Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)","To transport minerals / to provide water for photosynthesis / to cool the plant"],"perOptionSteps":[4,4,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q12 — b, c, d, e",
-          "pages": [
-                18
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-1","agsci-4-3-1","agsci-4-3-2"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q12c", topicId: "agsci-3-1", additionalTopicIds: ["agsci-4-3-1","agsci-4-3-2"], conceptId: "scientific-reasons-acde",
-    section: "A", questionRef: "2025 HL Q12 — a, c, d, e",
-    stem: "Practice choice: (a), (c), (d), (e).",
-    questionText: "Outline one scientific reason for any four of the following: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring / Close to surface to maximise photosynthesis / Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding) / To transport minerals / to provide water for photosynthesis / to cool the plant", marks: 10, contextNote: "One reason for each of your four prompts, in order: (a) Progeny testing in dairy cows. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere. Alternatives within one prompt earn one award. The scheme prints 2(4)+2(1): the first two correct reasons earn 4 marks each and the next two 1 each.", group: {"claimMax":4,"perOption":4,"options":["To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring","Close to surface to maximise photosynthesis","Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)","To transport minerals / to provide water for photosynthesis / to cool the plant"],"perOptionSteps":[4,4,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q12 — a, c, d, e",
-          "pages": [
-                18
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-1","agsci-3-1","agsci-4-3-2","agsci-2-3"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q12d", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-3-1","agsci-4-3-2","agsci-2-3"], conceptId: "scientific-reasons-abde",
-    section: "A", questionRef: "2025 HL Q12 — a, b, d, e",
-    stem: "Practice choice: (a), (b), (d), (e).",
-    questionText: "Outline one scientific reason for any four of the following: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring / Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity / Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding) / To transport minerals / to provide water for photosynthesis / to cool the plant", marks: 10, contextNote: "One reason for each of your four prompts, in order: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere. Alternatives within one prompt earn one award. The scheme prints 2(4)+2(1): the first two correct reasons earn 4 marks each and the next two 1 each.", group: {"claimMax":4,"perOption":4,"options":["To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring","Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity","Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)","To transport minerals / to provide water for photosynthesis / to cool the plant"],"perOptionSteps":[4,4,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q12 — a, b, d, e",
-          "pages": [
-                18
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-1","agsci-4-3-2","agsci-2-3"]), kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q12e", topicId: "agsci-3-1", additionalTopicIds: ["agsci-4-3-2","agsci-2-3"], conceptId: "scientific-reasons-abce",
-    section: "A", questionRef: "2025 HL Q12 — a, b, c, e",
-    stem: "Practice choice: (a), (b), (c), (e).",
-    questionText: "Outline one scientific reason for any four of the following: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (d) Culling of breeding ewes on a sheep farm. (e) Movement of water from the soil through the plant to the atmosphere.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring / Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity / Close to surface to maximise photosynthesis / To transport minerals / to provide water for photosynthesis / to cool the plant", marks: 10, contextNote: "One reason for each of your four prompts, in order: (a) Progeny testing in dairy cows. (b) Having a buffer zone close to a waterway. (c) Presence of chloroplasts in the palisade layer of a leaf. (e) Movement of water from the soil through the plant to the atmosphere. Alternatives within one prompt earn one award. The scheme prints 2(4)+2(1): the first two correct reasons earn 4 marks each and the next two 1 each.", group: {"claimMax":4,"perOption":4,"options":["To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring","Reduce run off or prevent eutrophication / reduce sediment in rivers / increased bank stability / increased biodiversity","Close to surface to maximise photosynthesis","To transport minerals / to provide water for photosynthesis / to cool the plant"],"perOptionSteps":[4,4,1,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q12 — a, b, c, e",
+          "title": "Agricultural Science 2025 Higher — Q12",
           "pages": [
                 18
           ],
@@ -19311,19 +17644,16 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q15b", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-1"], conceptId: "identifying-common-farm-weeds",
-    section: "B", questionRef: "2025 HL Q15(b) — A, B, C",
-    stem: "Practice choice: photographs A, B, C.",
+    section: "B", questionRef: "2025 HL Q15(b)",
     questionText: "Identify any three common plants found on Irish farms in the photographs below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A: Cleavers", marks: 1, contextNote: "Photograph A." },
-    { id: "r-2", kind: "point", verbatim: "B: Chicory", marks: 1, contextNote: "Photograph B." },
-    { id: "r-3", kind: "point", verbatim: "C: Silverweed", marks: 1, contextNote: "Photograph C." },
+    { id: "r-1", kind: "anyN", verbatim: "A: Cleavers / B: Chicory / C: Silverweed / D: Oilseed rape", marks: 3, contextNote: "Any three of the four photographs, 1 mark each (3x1).", group: {"claimMax":3,"perOption":1,"options":["A: Cleavers","B: Chicory","C: Silverweed","D: Oilseed rape"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q15(b) — A, B, C",
+          "title": "Agricultural Science 2025 Higher — Q15(b)",
           "pages": [
                 30
           ],
@@ -19343,130 +17673,7 @@ export const CARDS: SecCard[] = [
                 "D"
           ]
     },
-    labelKey: [{"letter":"A","meaning":"Cleavers","askedInThisQuestion":true},{"letter":"B","meaning":"Chicory","askedInThisQuestion":true},{"letter":"C","meaning":"Silverweed","askedInThisQuestion":true},{"letter":"D","meaning":"Oilseed rape","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2","agsci-3-1"]), kind: "diagram",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q15b-route-abd", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-1"], conceptId: "identifying-common-farm-weeds",
-    section: "B", questionRef: "2025 HL Q15(b) — A, B, D",
-    stem: "Practice choice: photographs A, B, D.",
-    questionText: "Identify any three common plants found on Irish farms in the photographs below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A: Cleavers", marks: 1, contextNote: "Photograph A." },
-    { id: "r-2", kind: "point", verbatim: "B: Chicory", marks: 1, contextNote: "Photograph B." },
-    { id: "r-3", kind: "point", verbatim: "D: Oilseed rape", marks: 1, contextNote: "Photograph D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q15(b) — A, B, D",
-          "pages": [
-                30
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-    figure: {
-          "candId": "agricultural-science-2025-HL-paper-p30-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p30-art.png",
-          "srcHash": "542ca6ea641423f68967675a6d9401f9",
-          "alt": "Two pieces of artwork on one page. Across the top, four colour photographs of plants lettered A to D above an empty four-cell answer row: A a dense mat of narrow leaves in whorls up square stems, B open sky-blue daisy-like flowers on wiry stems, C small five-petalled yellow flowers among strongly toothed silvery-green leaflets, D a field of tall yellow four-petalled flowers on branching stems. Below, the part (c) weed control diagram: a blue triangle whose corners carry photographs captioned Mature plants (top), Seedlings (bottom left) and Seeds (bottom right). Three numbered circles sit on the sides — a green 1 on the bottom edge fed by a green box reading Crop rotation, Seedbed preparation, Pre-emergence herbicide; a grey 2 on the left edge fed by a grey box reading Seed rate, Biological controls, Patch / band spray; a red 3 on the right edge fed by a red box reading Pre-harvest herbicides, Cleaning of machinery, Stubble management.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "D"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Cleavers","askedInThisQuestion":true},{"letter":"B","meaning":"Chicory","askedInThisQuestion":true},{"letter":"C","meaning":"Silverweed","askedInThisQuestion":false},{"letter":"D","meaning":"Oilseed rape","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2","agsci-3-1"]), kind: "diagram",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q15b-route-acd", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-1"], conceptId: "identifying-common-farm-weeds",
-    section: "B", questionRef: "2025 HL Q15(b) — A, C, D",
-    stem: "Practice choice: photographs A, C, D.",
-    questionText: "Identify any three common plants found on Irish farms in the photographs below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A: Cleavers", marks: 1, contextNote: "Photograph A." },
-    { id: "r-2", kind: "point", verbatim: "C: Silverweed", marks: 1, contextNote: "Photograph C." },
-    { id: "r-3", kind: "point", verbatim: "D: Oilseed rape", marks: 1, contextNote: "Photograph D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q15(b) — A, C, D",
-          "pages": [
-                30
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-    figure: {
-          "candId": "agricultural-science-2025-HL-paper-p30-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p30-art.png",
-          "srcHash": "542ca6ea641423f68967675a6d9401f9",
-          "alt": "Two pieces of artwork on one page. Across the top, four colour photographs of plants lettered A to D above an empty four-cell answer row: A a dense mat of narrow leaves in whorls up square stems, B open sky-blue daisy-like flowers on wiry stems, C small five-petalled yellow flowers among strongly toothed silvery-green leaflets, D a field of tall yellow four-petalled flowers on branching stems. Below, the part (c) weed control diagram: a blue triangle whose corners carry photographs captioned Mature plants (top), Seedlings (bottom left) and Seeds (bottom right). Three numbered circles sit on the sides — a green 1 on the bottom edge fed by a green box reading Crop rotation, Seedbed preparation, Pre-emergence herbicide; a grey 2 on the left edge fed by a grey box reading Seed rate, Biological controls, Patch / band spray; a red 3 on the right edge fed by a red box reading Pre-harvest herbicides, Cleaning of machinery, Stubble management.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "D"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Cleavers","askedInThisQuestion":true},{"letter":"B","meaning":"Chicory","askedInThisQuestion":false},{"letter":"C","meaning":"Silverweed","askedInThisQuestion":true},{"letter":"D","meaning":"Oilseed rape","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
-    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2","agsci-3-1"]), kind: "diagram",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q15b-route-bcd", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-1"], conceptId: "identifying-common-farm-weeds",
-    section: "B", questionRef: "2025 HL Q15(b) — B, C, D",
-    stem: "Practice choice: photographs B, C, D.",
-    questionText: "Identify any three common plants found on Irish farms in the photographs below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "B: Chicory", marks: 1, contextNote: "Photograph B." },
-    { id: "r-2", kind: "point", verbatim: "C: Silverweed", marks: 1, contextNote: "Photograph C." },
-    { id: "r-3", kind: "point", verbatim: "D: Oilseed rape", marks: 1, contextNote: "Photograph D." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2025 Higher — Q15(b) — B, C, D",
-          "pages": [
-                30
-          ],
-          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-    figure: {
-          "candId": "agricultural-science-2025-HL-paper-p30-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p30-art.png",
-          "srcHash": "542ca6ea641423f68967675a6d9401f9",
-          "alt": "Two pieces of artwork on one page. Across the top, four colour photographs of plants lettered A to D above an empty four-cell answer row: A a dense mat of narrow leaves in whorls up square stems, B open sky-blue daisy-like flowers on wiry stems, C small five-petalled yellow flowers among strongly toothed silvery-green leaflets, D a field of tall yellow four-petalled flowers on branching stems. Below, the part (c) weed control diagram: a blue triangle whose corners carry photographs captioned Mature plants (top), Seedlings (bottom left) and Seeds (bottom right). Three numbered circles sit on the sides — a green 1 on the bottom edge fed by a green box reading Crop rotation, Seedbed preparation, Pre-emergence herbicide; a grey 2 on the left edge fed by a grey box reading Seed rate, Biological controls, Patch / band spray; a red 3 on the right edge fed by a red box reading Pre-harvest herbicides, Cleaning of machinery, Stubble management.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "D"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Cleavers","askedInThisQuestion":false},{"letter":"B","meaning":"Chicory","askedInThisQuestion":true},{"letter":"C","meaning":"Silverweed","askedInThisQuestion":true},{"letter":"D","meaning":"Oilseed rape","askedInThisQuestion":true}],
+    labelKey: [{"letter":"A","meaning":"Cleavers","askedInThisQuestion":true},{"letter":"B","meaning":"Chicory","askedInThisQuestion":true},{"letter":"C","meaning":"Silverweed","askedInThisQuestion":true},{"letter":"D","meaning":"Oilseed rape","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
@@ -19686,18 +17893,17 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q2ai", topicId: "agsci-4-1", conceptId: "identifying-pig-sheep-and-cattle-breeds",
-    section: "A", questionRef: "2024 HL Q2(a)(i) — A, B",
-    stem: "Answer either (a) or (b). Practice choice: photographs A and B.",
+    section: "A", questionRef: "2024 HL Q2(a)(i)",
+    stem: "Answer either (a) or (b).",
     questionText: "Identify any two of the following breeds.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A: Landrace", marks: 2, contextNote: "Photograph A." },
-    { id: "r-2", kind: "point", verbatim: "B: Blue Leicester", marks: 2, contextNote: "Photograph B." },
+    { id: "r-1", kind: "anyN", verbatim: "A: Landrace / B: Blue Leicester / C: Simmental", marks: 4, contextNote: "Any two of the three photographs, 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["A: Landrace","B: Blue Leicester","C: Simmental"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q2(a)(i) — A, B",
+          "title": "Agricultural Science 2024 Higher — Q2(a)(i)",
           "pages": [
                 4
           ],
@@ -19716,85 +17922,7 @@ export const CARDS: SecCard[] = [
                 "C"
           ]
     },
-    labelKey: [{"letter":"A","meaning":"Landrace","askedInThisQuestion":true},{"letter":"B","meaning":"Blue Leicester","askedInThisQuestion":true},{"letter":"C","meaning":"Simmental","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
-    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-1"]), kind: "diagram",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q2ai-route-ac", topicId: "agsci-4-1", conceptId: "identifying-pig-sheep-and-cattle-breeds",
-    section: "A", questionRef: "2024 HL Q2(a)(i) — A, C",
-    stem: "Answer either (a) or (b). Practice choice: photographs A and C.",
-    questionText: "Identify any two of the following breeds.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A: Landrace", marks: 2, contextNote: "Photograph A." },
-    { id: "r-2", kind: "point", verbatim: "C: Simmental", marks: 2, contextNote: "Photograph C." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q2(a)(i) — A, C",
-          "pages": [
-                4
-          ],
-          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-    figure: {
-          "candId": "agricultural-science-2024-HL-paper-p04-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p04-art.png",
-          "srcHash": "3e02254d50de3b69951392d41a4cd272",
-          "alt": "The instruction 'Identify any two of the following breeds.' above three colour photographs lettered A, B and C, each over an empty answer cell. A: a long pale pink pig in profile on grass with forward-drooping ears, against a metal gate. B: the head and neck of a sheep with a bare blue-grey face, a dark muzzle, long upright ears and a yellow ear tag, its dense cream fleece behind. C: a heavy bull, red-brown with broad white patches over the shoulder, flank and hindquarters, and a white head. Below the answer row the page prints part (ii) on the sheep's prolificacy and part (iii) on the bull as a terminal sire, with their ruled boxes.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Landrace","askedInThisQuestion":true},{"letter":"B","meaning":"Blue Leicester","askedInThisQuestion":false},{"letter":"C","meaning":"Simmental","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
-    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-1"]), kind: "diagram",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q2ai-route-bc", topicId: "agsci-4-1", conceptId: "identifying-pig-sheep-and-cattle-breeds",
-    section: "A", questionRef: "2024 HL Q2(a)(i) — B, C",
-    stem: "Answer either (a) or (b). Practice choice: photographs B and C.",
-    questionText: "Identify any two of the following breeds.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "B: Blue Leicester", marks: 2, contextNote: "Photograph B." },
-    { id: "r-2", kind: "point", verbatim: "C: Simmental", marks: 2, contextNote: "Photograph C." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q2(a)(i) — B, C",
-          "pages": [
-                4
-          ],
-          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-    figure: {
-          "candId": "agricultural-science-2024-HL-paper-p04-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p04-art.png",
-          "srcHash": "3e02254d50de3b69951392d41a4cd272",
-          "alt": "The instruction 'Identify any two of the following breeds.' above three colour photographs lettered A, B and C, each over an empty answer cell. A: a long pale pink pig in profile on grass with forward-drooping ears, against a metal gate. B: the head and neck of a sheep with a bare blue-grey face, a dark muzzle, long upright ears and a yellow ear tag, its dense cream fleece behind. C: a heavy bull, red-brown with broad white patches over the shoulder, flank and hindquarters, and a white head. Below the answer row the page prints part (ii) on the sheep's prolificacy and part (iii) on the bull as a terminal sire, with their ruled boxes.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Landrace","askedInThisQuestion":false},{"letter":"B","meaning":"Blue Leicester","askedInThisQuestion":true},{"letter":"C","meaning":"Simmental","askedInThisQuestion":true}],
+    labelKey: [{"letter":"A","meaning":"Landrace","askedInThisQuestion":true},{"letter":"B","meaning":"Blue Leicester","askedInThisQuestion":true},{"letter":"C","meaning":"Simmental","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
@@ -19876,240 +18004,20 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q6a", topicId: "agsci-4-3-2", conceptId: "sheep-improvement-scheme-measures",
-    section: "A", questionRef: "2024 HL Q6(a) — Lameness control, Mineral supplementation of ewe's post mating",
-    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. Practice choice: lameness control and mineral supplementation of ewe's post mating.",
+    section: "A", questionRef: "2024 HL Q6(a)",
+    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes.",
     questionText: "For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "regular checking / footbath / antibiotic spray / paring hooves / vaccination / closed flock / breed selection", marks: 3, contextNote: "Lameness control: action (i), 3 marks. The scheme prints 2(3) + 2(2): an action at 3 marks and a benefit at 2 marks for each of the two features.", group: {"claimMax":1,"perOption":3,"options":["regular checking","footbath","antibiotic spray","paring hooves","vaccination","closed flock","breed selection"]} },
-    { id: "r-2", kind: "anyN", verbatim: "increased LWG / increased conception rates / increased milk production", marks: 2, contextNote: "Lameness control: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["increased LWG","increased conception rates","increased milk production"]} },
-    { id: "r-3", kind: "anyN", verbatim: "(bucket) lick / bolus / injection / feed additive / drench", marks: 3, contextNote: "Mineral supplementation of ewe's post mating: action (i), 3 marks.", group: {"claimMax":1,"perOption":3,"options":["(bucket) lick","bolus","injection","feed additive","drench"]} },
-    { id: "r-4", kind: "anyN", verbatim: "improve (P) conception rate or maintain pregnancy / improved development of embryo (health) or foetus or lamb / (Mg) prevent grass tetany or reduced (nutritional) disease", marks: 2, contextNote: "Mineral supplementation of ewe's post mating: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["improve (P) conception rate or maintain pregnancy","improved development of embryo (health) or foetus or lamb","(Mg) prevent grass tetany or reduced (nutritional) disease"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Lameness control: regular checking or footbath or antibiotic spray or paring hooves or vaccination or closed flock or breed selection / Mineral supplementation of ewe’s post mating: (bucket) lick / bolus / injection / feed additive / drench / Meal feeding lambs post weaning: creep feeder / trough / Scanning in-lamb ewes: ultrasound scanner or scanner placed on abdomen", marks: 6, contextNote: "(i) Action for each of your two features, 3 marks each.", group: {"claimMax":2,"perOption":3,"options":["Lameness control: regular checking or footbath or antibiotic spray or paring hooves or vaccination or closed flock or breed selection","Mineral supplementation of ewe’s post mating: (bucket) lick / bolus / injection / feed additive / drench","Meal feeding lambs post weaning: creep feeder / trough","Scanning in-lamb ewes: ultrasound scanner or scanner placed on abdomen"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Lameness control: increased LWG or increased conception rates or increased milk production / Mineral supplementation of ewes’ post mating: improve (P) conception rate or maintain pregnancy / improved development of embryo (health) or foetus or lamb / (Mg) prevent grass tetany or reduced (nutritional) disease / Meal feeding lambs post weaning: increase liveweight gain / reach slaughter weight quicker / reduces stress of weaning / Scanning in-lamb ewes: determine the number of lambs the ewe is carrying / can feed ewes accordingly or housing management / cull barren ewes", marks: 4, contextNote: "(ii) Benefit of each of the same two features, 2 marks each. The scheme prints 2(3) + 2(2); each benefit must belong to a feature whose action you gave.", group: {"claimMax":2,"perOption":2,"options":["Lameness control: increased LWG or increased conception rates or increased milk production","Mineral supplementation of ewes’ post mating: improve (P) conception rate or maintain pregnancy / improved development of embryo (health) or foetus or lamb / (Mg) prevent grass tetany or reduced (nutritional) disease","Meal feeding lambs post weaning: increase liveweight gain / reach slaughter weight quicker / reduces stress of weaning","Scanning in-lamb ewes: determine the number of lambs the ewe is carrying / can feed ewes accordingly or housing management / cull barren ewes"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q6(a) — Lameness control, Mineral supplementation of ewe's post mating",
+          "title": "Agricultural Science 2024 Higher — Q6(a)",
           "pages": [
                 10
-          ],
-          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
-    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-2"]), kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q6a-route-lameness-meal", topicId: "agsci-4-3-2", conceptId: "sheep-improvement-scheme-measures",
-    section: "A", questionRef: "2024 HL Q6(a) — Lameness control, Meal feeding of lamb's post weaning",
-    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. Practice choice: lameness control and meal feeding of lamb's post weaning.",
-    questionText: "For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "regular checking / footbath / antibiotic spray / paring hooves / vaccination / closed flock / breed selection", marks: 3, contextNote: "Lameness control: action (i), 3 marks. The scheme prints 2(3) + 2(2): an action at 3 marks and a benefit at 2 marks for each of the two features.", group: {"claimMax":1,"perOption":3,"options":["regular checking","footbath","antibiotic spray","paring hooves","vaccination","closed flock","breed selection"]} },
-    { id: "r-2", kind: "anyN", verbatim: "increased LWG / increased conception rates / increased milk production", marks: 2, contextNote: "Lameness control: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["increased LWG","increased conception rates","increased milk production"]} },
-    { id: "r-3", kind: "anyN", verbatim: "creep feeder / trough", marks: 3, contextNote: "Meal feeding of lamb's post weaning: action (i), 3 marks.", group: {"claimMax":1,"perOption":3,"options":["creep feeder","trough"]} },
-    { id: "r-4", kind: "anyN", verbatim: "increase liveweight gain / reach slaughter weight quicker / reduces stress of weaning", marks: 2, contextNote: "Meal feeding of lamb's post weaning: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["increase liveweight gain","reach slaughter weight quicker","reduces stress of weaning"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q6(a) — Lameness control, Meal feeding of lamb's post weaning",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
-    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-2"]), kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q6a-route-lameness-scanning", topicId: "agsci-4-3-2", conceptId: "sheep-improvement-scheme-measures",
-    section: "A", questionRef: "2024 HL Q6(a) — Lameness control, Scanning of in-lamb ewes",
-    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. Practice choice: lameness control and scanning of in-lamb ewes.",
-    questionText: "For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "regular checking / footbath / antibiotic spray / paring hooves / vaccination / closed flock / breed selection", marks: 3, contextNote: "Lameness control: action (i), 3 marks. The scheme prints 2(3) + 2(2): an action at 3 marks and a benefit at 2 marks for each of the two features.", group: {"claimMax":1,"perOption":3,"options":["regular checking","footbath","antibiotic spray","paring hooves","vaccination","closed flock","breed selection"]} },
-    { id: "r-2", kind: "anyN", verbatim: "increased LWG / increased conception rates / increased milk production", marks: 2, contextNote: "Lameness control: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["increased LWG","increased conception rates","increased milk production"]} },
-    { id: "r-3", kind: "point", verbatim: "ultrasound scanner or scanner placed on abdomen", marks: 3, contextNote: "Scanning of in-lamb ewes: action (i), 3 marks." },
-    { id: "r-4", kind: "anyN", verbatim: "determine the number of lambs the ewe is carrying / can feed ewes accordingly or housing management / cull barren ewes", marks: 2, contextNote: "Scanning of in-lamb ewes: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["determine the number of lambs the ewe is carrying","can feed ewes accordingly or housing management","cull barren ewes"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q6(a) — Lameness control, Scanning of in-lamb ewes",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
-    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-2"]), kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q6a-route-minerals-meal", topicId: "agsci-4-3-2", conceptId: "sheep-improvement-scheme-measures",
-    section: "A", questionRef: "2024 HL Q6(a) — Mineral supplementation of ewe's post mating, Meal feeding of lamb's post weaning",
-    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. Practice choice: mineral supplementation of ewe's post mating and meal feeding of lamb's post weaning.",
-    questionText: "For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(bucket) lick / bolus / injection / feed additive / drench", marks: 3, contextNote: "Mineral supplementation of ewe's post mating: action (i), 3 marks. The scheme prints 2(3) + 2(2): an action at 3 marks and a benefit at 2 marks for each of the two features.", group: {"claimMax":1,"perOption":3,"options":["(bucket) lick","bolus","injection","feed additive","drench"]} },
-    { id: "r-2", kind: "anyN", verbatim: "improve (P) conception rate or maintain pregnancy / improved development of embryo (health) or foetus or lamb / (Mg) prevent grass tetany or reduced (nutritional) disease", marks: 2, contextNote: "Mineral supplementation of ewe's post mating: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["improve (P) conception rate or maintain pregnancy","improved development of embryo (health) or foetus or lamb","(Mg) prevent grass tetany or reduced (nutritional) disease"]} },
-    { id: "r-3", kind: "anyN", verbatim: "creep feeder / trough", marks: 3, contextNote: "Meal feeding of lamb's post weaning: action (i), 3 marks.", group: {"claimMax":1,"perOption":3,"options":["creep feeder","trough"]} },
-    { id: "r-4", kind: "anyN", verbatim: "increase liveweight gain / reach slaughter weight quicker / reduces stress of weaning", marks: 2, contextNote: "Meal feeding of lamb's post weaning: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["increase liveweight gain","reach slaughter weight quicker","reduces stress of weaning"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q6(a) — Mineral supplementation of ewe's post mating, Meal feeding of lamb's post weaning",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
-    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-2"]), kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q6a-route-minerals-scanning", topicId: "agsci-4-3-2", conceptId: "sheep-improvement-scheme-measures",
-    section: "A", questionRef: "2024 HL Q6(a) — Mineral supplementation of ewe's post mating, Scanning of in-lamb ewes",
-    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. Practice choice: mineral supplementation of ewe's post mating and scanning of in-lamb ewes.",
-    questionText: "For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(bucket) lick / bolus / injection / feed additive / drench", marks: 3, contextNote: "Mineral supplementation of ewe's post mating: action (i), 3 marks. The scheme prints 2(3) + 2(2): an action at 3 marks and a benefit at 2 marks for each of the two features.", group: {"claimMax":1,"perOption":3,"options":["(bucket) lick","bolus","injection","feed additive","drench"]} },
-    { id: "r-2", kind: "anyN", verbatim: "improve (P) conception rate or maintain pregnancy / improved development of embryo (health) or foetus or lamb / (Mg) prevent grass tetany or reduced (nutritional) disease", marks: 2, contextNote: "Mineral supplementation of ewe's post mating: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["improve (P) conception rate or maintain pregnancy","improved development of embryo (health) or foetus or lamb","(Mg) prevent grass tetany or reduced (nutritional) disease"]} },
-    { id: "r-3", kind: "point", verbatim: "ultrasound scanner or scanner placed on abdomen", marks: 3, contextNote: "Scanning of in-lamb ewes: action (i), 3 marks." },
-    { id: "r-4", kind: "anyN", verbatim: "determine the number of lambs the ewe is carrying / can feed ewes accordingly or housing management / cull barren ewes", marks: 2, contextNote: "Scanning of in-lamb ewes: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["determine the number of lambs the ewe is carrying","can feed ewes accordingly or housing management","cull barren ewes"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q6(a) — Mineral supplementation of ewe's post mating, Scanning of in-lamb ewes",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
-    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-2"]), kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q6a-route-meal-scanning", topicId: "agsci-4-3-2", conceptId: "sheep-improvement-scheme-measures",
-    section: "A", questionRef: "2024 HL Q6(a) — Meal feeding of lamb's post weaning, Scanning of in-lamb ewes",
-    stem: "Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes. Practice choice: meal feeding of lamb's post weaning and scanning of in-lamb ewes.",
-    questionText: "For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "creep feeder / trough", marks: 3, contextNote: "Meal feeding of lamb's post weaning: action (i), 3 marks. The scheme prints 2(3) + 2(2): an action at 3 marks and a benefit at 2 marks for each of the two features.", group: {"claimMax":1,"perOption":3,"options":["creep feeder","trough"]} },
-    { id: "r-2", kind: "anyN", verbatim: "increase liveweight gain / reach slaughter weight quicker / reduces stress of weaning", marks: 2, contextNote: "Meal feeding of lamb's post weaning: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["increase liveweight gain","reach slaughter weight quicker","reduces stress of weaning"]} },
-    { id: "r-3", kind: "point", verbatim: "ultrasound scanner or scanner placed on abdomen", marks: 3, contextNote: "Scanning of in-lamb ewes: action (i), 3 marks." },
-    { id: "r-4", kind: "anyN", verbatim: "determine the number of lambs the ewe is carrying / can feed ewes accordingly or housing management / cull barren ewes", marks: 2, contextNote: "Scanning of in-lamb ewes: benefit (ii), 2 marks.", group: {"claimMax":1,"perOption":2,"options":["determine the number of lambs the ewe is carrying","can feed ewes accordingly or housing management","cull barren ewes"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q6(a) — Meal feeding of lamb's post weaning, Scanning of in-lamb ewes",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
-    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-3"]), kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q6bii", topicId: "agsci-4-3-3", conceptId: "sheep-scheme-health-welfare",
-    section: "A", questionRef: "2024 HL Q6(b)(ii) — Mineral supplementation of lambs pre-weaning, Flystrike control",
-    stem: "Answer either (a) or (b). The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. Some of the target features of the scheme are: mineral supplementation of lambs pre-weaning; flystrike control; genotyping of ram. Practice choice: mineral supplementation of lambs pre-weaning and flystrike control.",
-    questionText: "Briefly explain how the scheme enhances animal health and welfare using any two of the target features listed above.",
-    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Mineral supplementation lambs pre-weaning: improved LWG or reduced nutritional disease", marks: null, contextNote: "Mineral supplementation of lambs pre-weaning. The scheme prints 3+1: the first correct explanation earns 3 marks and the second 1, whichever feature is answered first." },
-    { id: "r-2", kind: "point", verbatim: "Flystrike control: prevent maggots feeding off them (which increases liveweight of animal) or less pain", marks: null, contextNote: "Flystrike control." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q6(b)(ii) — Mineral supplementation of lambs pre-weaning, Flystrike control",
-          "pages": [
-                11
-          ],
-          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
-    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-3"]), kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q6bii-route-minerals-genotyping", topicId: "agsci-4-3-3", conceptId: "sheep-scheme-health-welfare",
-    section: "A", questionRef: "2024 HL Q6(b)(ii) — Mineral supplementation of lambs pre-weaning, Genotyping of ram",
-    stem: "Answer either (a) or (b). The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. Some of the target features of the scheme are: mineral supplementation of lambs pre-weaning; flystrike control; genotyping of ram. Practice choice: mineral supplementation of lambs pre-weaning and genotyping of ram.",
-    questionText: "Briefly explain how the scheme enhances animal health and welfare using any two of the target features listed above.",
-    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Mineral supplementation lambs pre-weaning: improved LWG or reduced nutritional disease", marks: null, contextNote: "Mineral supplementation of lambs pre-weaning. The scheme prints 3+1: the first correct explanation earns 3 marks and the second 1, whichever feature is answered first." },
-    { id: "r-2", kind: "point", verbatim: "Genotyping of ram: provides easier lambing or better disease resistance or less mutations or improved dag score or increased survival (rate)", marks: null, contextNote: "Genotyping of ram." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q6(b)(ii) — Mineral supplementation of lambs pre-weaning, Genotyping of ram",
-          "pages": [
-                11
-          ],
-          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
-    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-3"]), kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q6bii-route-flystrike-genotyping", topicId: "agsci-4-3-3", conceptId: "sheep-scheme-health-welfare",
-    section: "A", questionRef: "2024 HL Q6(b)(ii) — Flystrike control, Genotyping of ram",
-    stem: "Answer either (a) or (b). The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. Some of the target features of the scheme are: mineral supplementation of lambs pre-weaning; flystrike control; genotyping of ram. Practice choice: flystrike control and genotyping of ram.",
-    questionText: "Briefly explain how the scheme enhances animal health and welfare using any two of the target features listed above.",
-    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Flystrike control: prevent maggots feeding off them (which increases liveweight of animal) or less pain", marks: null, contextNote: "Flystrike control. The scheme prints 3+1: the first correct explanation earns 3 marks and the second 1, whichever feature is answered first." },
-    { id: "r-2", kind: "point", verbatim: "Genotyping of ram: provides easier lambing or better disease resistance or less mutations or improved dag score or increased survival (rate)", marks: null, contextNote: "Genotyping of ram." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q6(b)(ii) — Flystrike control, Genotyping of ram",
-          "pages": [
-                11
           ],
           "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
@@ -20252,56 +18160,6 @@ export const CARDS: SecCard[] = [
           "title": "Agricultural Science 2024 Higher — Q14(c)",
           "pages": [
                 27
-          ],
-          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
-    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-1"]), kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q15aiii", topicId: "agsci-4-1", conceptId: "factors-influencing-cattle-nutrient-requirements",
-    section: "B", questionRef: "2024 HL Q15(a)(iii) — Animal-related factors",
-    stem: "Read the article and answer the questions that follow. NUTRIENT REQUIREMENTS OF BEEF CATTLE — Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins. (Adapted from mcdvetmanual.com) The amounts of nutrients that cattle require is influenced by various animal-related factors and environmental conditions. Practice choice: animal-related factors.",
-    questionText: "State two animal-related factors or two environmental conditions.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Weight / age / sex / stage and extent of production / body composition / genetics / amount of physical activity / health", marks: 4, contextNote: "Animal-related factors: two at 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["Weight","age","sex","stage and extent of production","body composition","genetics","amount of physical activity","health"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q15(a)(iii) — Animal-related factors",
-          "pages": [
-                28
-          ],
-          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
-    },
-  } as SecCard,
-  {
-    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
-    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-1"]), kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
-    id: "agsci-2024-hl-q15aiii-route-environmental-conditions", topicId: "agsci-4-1", conceptId: "factors-influencing-cattle-nutrient-requirements",
-    section: "B", questionRef: "2024 HL Q15(a)(iii) — Environmental conditions",
-    stem: "Read the article and answer the questions that follow. NUTRIENT REQUIREMENTS OF BEEF CATTLE — Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins. (Adapted from mcdvetmanual.com) The amounts of nutrients that cattle require is influenced by various animal-related factors and environmental conditions. Practice choice: environmental conditions.",
-    questionText: "State two animal-related factors or two environmental conditions.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Temperature / humidity / wind chill or draught free / ultraviolet radiation or UV light / precipitation / soil nutrient deficiencies", marks: 4, contextNote: "Environmental conditions: two at 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["Temperature","humidity","wind chill or draught free","ultraviolet radiation or UV light","precipitation","soil nutrient deficiencies"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Agricultural Science 2024 Higher — Q15(a)(iii) — Environmental conditions",
-          "pages": [
-                28
           ],
           "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
@@ -20630,6 +18488,130 @@ export const CARDS: SecCard[] = [
           "alt": "Original Integrated Pest Management pyramid: Prevention at the base, then Cultural / Sanitation, Physical / Mechanical, Biological, and Chemical (Pesticide) at the narrow top.",
           "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 39 — © State Examinations Commission.",
           "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
+    id: "agsci-2025-hl-q2a", topicId: "agsci-3-2", conceptId: "plant-lifecycles",
+    section: "A", questionRef: "2025 HL Q2(a)",
+    stem: "Plant lifecycles can be distinguished as annual, biennial and perennial.",
+    questionText: "Explain any two plant lifecycles and provide an example of each one.",
+    tariffModel: {"kind":"fixed","notation":"(3+2) + (3+2)"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "First lifecycle explained — Annual: Completes its life cycle in one year", marks: 3, accepts: ["Biennial: Completes its life cycle in two years","Perennial: Flower and reproduce for multiple years"] },
+    { id: "r-2", kind: "alt", verbatim: "Example of the first lifecycle — wheat", marks: 2, accepts: ["carrot","perennial ryegrass"], contextNote: "The example must match the lifecycle explained in the row above - the scheme pairs them line by line (annual/wheat, biennial/carrot, perennial/perennial ryegrass). Any other valid plant of the same lifecycle scores.", openList: true },
+    { id: "r-3", kind: "alt", verbatim: "Second lifecycle explained — Biennial: Completes its life cycle in two years", marks: 3, accepts: ["Annual: Completes its life cycle in one year","Perennial: Flower and reproduce for multiple years"] },
+    { id: "r-4", kind: "alt", verbatim: "Example of the second lifecycle — carrot", marks: 2, accepts: ["wheat","perennial ryegrass"], contextNote: "The example must match the lifecycle explained in the row above - the scheme pairs them line by line (annual/wheat, biennial/carrot, perennial/perennial ryegrass). Any other valid plant of the same lifecycle scores.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
+    id: "agsci-2025-hl-q2bii", topicId: "agsci-4-3-2", conceptId: "beef-cross-sire-selection",
+    section: "A", questionRef: "2025 HL Q2(b)(ii)",
+    stem: "Japanese Wagyu beef is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. (Adapted from Independent.ie, 2024)",
+    questionText: "Choose any two characteristics of the Wagyu breed from the list below and describe how each of your chosen characteristics makes the breed suitable for crossing with dairy cows. Meat quality / Good growth rates / Ease of calving / Docility / Fertility",
+    tariffModel: {"kind":"fixed","notation":"1+1"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "First characteristic described — Meat quality: Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)", marks: 1, accepts: ["many cows go into calf to beef system so improved beef traits","Good growth rates: Will influence when an animal gets to slaughter and kill out weight (fast maturing)","Ease of calving: Reduced risk of complications","better suited for crossing with dairy cows rather than bigger continental breeds","Docility: Animals with good temperament are easier to handle","less risk of injury","Fertility: greater number of calves over lifetime of bull"] },
+    { id: "r-2", kind: "alt", verbatim: "Second characteristic described — Good growth rates: Will influence when an animal gets to slaughter and kill out weight (fast maturing)", marks: 1, accepts: ["Meat quality: Factors relating to marbling or texture or taste or tenderness (that appeal to consumers)","many cows go into calf to beef system so improved beef traits","Ease of calving: Reduced risk of complications","better suited for crossing with dairy cows rather than bigger continental breeds","Docility: Animals with good temperament are easier to handle","less risk of injury","Fertility: greater number of calves over lifetime of bull"] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
+    id: "agsci-2025-hl-q6b", topicId: "agsci-4-3-3", conceptId: "lambing-equipment-use",
+    section: "A", questionRef: "2025 HL Q6(b)",
+    stem: "Pádraig is a sheep and beef farmer. He is getting his equipment ready for lambing. In part (a) he identified three pieces of lambing equipment: a stomach tube, a heat lamp and ropes.",
+    questionText: "Briefly describe how any one of your named pieces of equipment identified in part (a) above is used during the lambing period.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Stomach tube: Tube is placed into stomach through oesophagus to deliver milk to stomach", marks: 4, accepts: ["Heat lamp: The heat lamp is placed above the lamb","Ropes: Ropes are tied above the hooves of lambs to pull lamb during birth"] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q6bii", topicId: "agsci-4-3-3", conceptId: "sheep-scheme-health-welfare",
+    section: "A", questionRef: "2024 HL Q6(b)(ii)",
+    stem: "Answer either (a) or (b). The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. Some of the target features of the scheme are: mineral supplementation of lambs pre-weaning; flystrike control; genotyping of ram. The paper prints a table with a Named target feature column and an Explanation column, for two features.",
+    questionText: "Briefly explain how the scheme enhances animal health and welfare using any two of the target features listed above.",
+    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Mineral supplementation lambs pre-weaning — improved LWG or reduced nutritional disease", marks: null, accepts: ["prevent maggots feeding off them","provides easier lambing or better disease resistance or less mutations or improved dag score or increased survival (rate)"], contextNote: "First correct explanation — 3 marks. Any one of the three features may be taken first." },
+    { id: "r-2", kind: "alt", verbatim: "Flystrike control — prevent maggots feeding off them", marks: null, accepts: ["increases liveweight of animal) or less pain","provides easier lambing or better disease resistance or less mutations or improved dag score or increased survival (rate)"], contextNote: "Second correct explanation — 1 mark. The flystrike answer reads in full \"prevent maggots feeding off them (which increases liveweight of animal) or less pain\" (the mark column splits it in the extraction)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q15aiii", topicId: "agsci-4-1", conceptId: "factors-influencing-cattle-nutrient-requirements",
+    section: "B", questionRef: "2024 HL Q15(a)(iii)",
+    questionText: "State two animal-related factors or two environmental conditions.",
+    tariffModel: {"kind":"bestNofParts","answer":2,"ofParts":14,"perPart":2}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Weight // age // sex // extent of production // composition // genetics // of physical activity // health // Temperature // humidity // chill or draught free // radiation or UV light // precipitation // soil nutrient deficiencies", marks: null, group: {"claimMax":2,"perOption":2,"options":["Weight","age","sex","extent of production","composition","genetics","of physical activity","health","Temperature","humidity","chill or draught free","radiation or UV light","precipitation","soil nutrient deficiencies"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
     },
   } as SecCard,
 ];

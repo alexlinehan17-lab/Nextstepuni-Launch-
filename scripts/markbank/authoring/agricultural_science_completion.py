@@ -10,7 +10,6 @@ of examination route. Run with --write, or --check to verify generated content.
 from __future__ import annotations
 
 import argparse
-import itertools
 import json
 from pathlib import Path
 from agricultural_science_2010_hl import reviewed_tasks as reviewed_2010_hl, paper_review
@@ -25,9 +24,9 @@ from agricultural_science_2011_ol import reviewed_tasks as reviewed_2011_ol, pap
 from agricultural_science_2012_hl import reviewed_tasks as reviewed_2012_hl, paper_review as higher_2012_review
 from agricultural_science_2026_hl import reviewed_tasks as reviewed_2026_hl, paper_review as higher_2026_review
 from agricultural_science_2026_ol import reviewed_tasks as reviewed_2026_ol, paper_review as ordinary_2026_review
-from agricultural_science_2025_hl import reviewed_tasks as reviewed_2025_hl, paper_review as higher_2025_review, SNAPSHOT, original_hash
+from agricultural_science_2025_hl import reviewed_tasks as reviewed_2025_hl, paper_review as higher_2025_review, SNAPSHOT, original_hash, RESTORED as RESTORED_2025_HL, WITHDRAWN
 from agricultural_science_2025_ol import reviewed_tasks as reviewed_2025_ol, paper_review as ordinary_2025_review
-from agricultural_science_2024_hl import reviewed_tasks as reviewed_2024_hl, paper_review as higher_2024_review
+from agricultural_science_2024_hl import reviewed_tasks as reviewed_2024_hl, paper_review as higher_2024_review, RESTORED as RESTORED_2024_HL
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -67,43 +66,41 @@ def reviewed_tasks():
               'hardy or good survival rate', 'good growth rate', 'calm or easy to handle', 'maternal sire'],
         'F': ['hardy or good survival rate', 'prolific', 'good mothers', 'good growth rate', 'excellent conformation'],
     }
-    route_ids = []
-    for route, options in pools.items():
-        cid = f'agsci-2022-ol-q2bii-route-{route.lower()}'
-        route_ids.append(cid)
-        cards.append(card(cid, 2022, 'ordinary', f'{ref} — breed {route}', 'agsci-4-3-2',
-            'selecting-a-ram-for-replacement-ewes', question, 4, [{
-                'id': 'reasons', 'kind': 'anyN', 'verbatim': ' / '.join(options), 'marks': 4,
-                'contextNote': f'Use the scheme’s reasons for breed {route}. Credit two distinct reasons; synonymous descriptions of the same trait count once. The first correct reason earns 3 marks and the second earns 1.',
-                'group': {'claimMax': 2, 'perOption': 3, 'perOptionSteps': [3, 1], 'options': options},
-            }], 5, 'Ram photographs E and F',
-            f'Practice choice: breed {route}. Jessica is looking to buy a ram to breed replacements with her Suffolk cross ewes.'))
+    # Item choice (breed E or F) is ONE practice card: one anyN row over both
+    # breeds' scheme reasons, claim limit two at 3+1 (coordinator rule, 2026-10-12).
+    options = list(dict.fromkeys(pools['E'] + pools['F']))
+    cid = 'agsci-2022-ol-q2bii'
+    cards.append(card(cid, 2022, 'ordinary', ref, 'agsci-4-3-2',
+        'selecting-a-ram-for-replacement-ewes', question, 4, [{
+            'id': 'reasons', 'kind': 'anyN', 'verbatim': ' / '.join(options), 'marks': 4,
+            'contextNote': 'Two distinct reasons for the breed you choose; synonymous descriptions of the same trait count once. The first correct reason earns 3 marks and the second earns 1. '
+                           'Breed E reasons: ' + ', '.join(pools['E']) + '. Breed F reasons: ' + ', '.join(pools['F']) + '.',
+            'group': {'claimMax': 2, 'perOption': 3, 'perOptionSteps': [3, 1], 'options': options},
+        }], 5, 'Ram photographs E and F', 'Jessica is looking to buy a ram to breed replacements with her Suffolk cross ewes.'))
     reviews.append({
         'questionRef': ref, 'paperPage': 5, 'schemePage': 12,
-        'selection': {'kind': 'closed', 'choose': 1, 'options': ['E', 'F']},
-        'cardIds': route_ids, 'marksPerRoute': 4,
+        'selection': {'kind': 'closed', 'choose': 1, 'options': ['E', 'F'], 'pooled': True},
+        'cardIds': [cid], 'marksPerRoute': 4,
         'examTopicIds': ['agricultural-science-ordinary-animal-production'],
-        'evidence': 'Paper and scheme visually inspected. The scheme separates E and F reason pools, each with 3+1. All eight E entries and all five F entries are retained. These are accepted answers, not a printed finite pool of reason choices.',
+        'evidence': 'Paper and scheme visually inspected. The scheme separates E and F reason pools, each with 3+1. All eight E entries and all five F entries are retained on one card. These are accepted answers, not a printed finite pool of reason choices.',
     })
 
     ref = '2023 HL Q18(a)(i)'
     answers = {'A': 'Teat', 'B': 'Median suspensory ligament',
                'C': 'Connective tissue / fine membrane', 'D': 'Epidermis / hind quarter / outer wall'}
-    route_ids = []
-    for letters in itertools.combinations(answers, 3):
-        cid = f'agsci-2023-hl-q18ai-route-{"".join(letters).lower()}'
-        route_ids.append(cid)
-        cards.append(card(cid, 2023, 'higher', f'{ref} — {", ".join(letters)}', 'agsci-4-1',
-            'udder-structure', 'Label any three parts of the structure of the udder.', 3,
-            [{'id': f'label-{letter.lower()}', 'kind': 'point', 'verbatim': answers[letter],
-              'marks': 1, 'contextNote': f'Label {letter}.'} for letter in letters],
-            37, 'Udder structure', f'Practice choice: label {", ".join(letters)} on the official udder diagram.'))
+    cid = 'agsci-2023-hl-q18ai'
+    cards.append(card(cid, 2023, 'higher', ref, 'agsci-4-1',
+        'udder-structure', 'Label any three parts of the structure of the udder.', 3,
+        [{'id': 'labels', 'kind': 'anyN', 'verbatim': ' / '.join(answers.values()), 'marks': 3,
+          'contextNote': 'Any three of the four labels, 1 mark each. Options in letter order: A, B, C, D.',
+          'group': {'claimMax': 3, 'perOption': 1, 'options': list(answers.values())}}],
+        37, 'Udder structure', 'Label the parts on the official udder diagram.'))
     reviews.append({
         'questionRef': ref, 'paperPage': 37, 'schemePage': 27,
-        'selection': {'kind': 'closed', 'choose': 3, 'options': list(answers)},
-        'cardIds': route_ids, 'marksPerRoute': 3,
+        'selection': {'kind': 'closed', 'choose': 3, 'options': list(answers), 'pooled': True},
+        'cardIds': [cid], 'marksPerRoute': 3,
         'examTopicIds': ['agricultural-science-higher-dairy-cattle'],
-        'evidence': 'Paper and scheme visually inspected. Four labelled structures, any three at 1 mark each: all four combinations. B is the complete phrase Median suspensory ligament, present in the scheme’s block-order extraction.',
+        'evidence': 'Paper and scheme visually inspected. Four labelled structures, any three at 1 mark each, on one card. B is the complete phrase Median suspensory ligament, present in the scheme’s block-order extraction.',
     })
 
     cid, ref = 'agsci-2022-ol-q13bi', '2022 OL Q13(b)(i)'
@@ -192,9 +189,14 @@ def reviewed_tasks():
         reviewed['qa'] = {'gates':['verbatim','tariff','figure','source-crop'],
                           'humanReviewedBy':'agent-source-reviewed','humanReviewedAt':batch_dates.get(id(reviewed),'2026-10-07')}
     corrected = ['agsci-2025-ol-q8b', *sorted(corrections_2025)]
-    return cards, {'status': 'in-progress', 'reviewedAt': '2026-10-07',
+    # Originals an earlier review rewrote and this one restores byte-identical:
+    # kept as they were on main, or withdrawn as progress aliases of a pooled card.
+    restored = [*RESTORED_2025_HL, *RESTORED_2024_HL]
+    assert not {c['id'] for c in restored} & {c['id'] for c in cards}
+    return cards, restored, {'status': 'in-progress', 'reviewedAt': '2026-10-07',
                    'addedCardIds': [c['id'] for c in cards if c['id'] not in corrected],
                    'correctedCardIds': corrected,
+                   'withdrawnCardIds': dict(sorted(WITHDRAWN.items())),
                    'corrections': {cid: {k: v for k, v in record.items()} for cid, record in sorted(corrections_2025.items())},
                    'tasks': reviews, 'paperReviews': paper_reviews}
 
@@ -204,11 +206,13 @@ def main():
     parser.add_argument('--write', action='store_true')
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
-    cards, review = reviewed_tasks()
+    cards, restored, review = reviewed_tasks()
     existing = json.loads(AUTHORED.read_text())
     by_id = {c['id']: c for c in existing}
+    restored_ids = {c['id'] for c in restored}
     if args.check:
         assert all(by_id.get(c['id']) == c for c in cards), 'Reviewed cards missing or stale'
+        assert all(by_id.get(c['id']) == c for c in restored), 'Restored originals missing or changed'
         assert json.loads(REVIEW.read_text()) == review, 'Review record stale'
         print(f'OK: {len(cards)} cards for {len(review["tasks"])} reviewed tasks; full corpus review remains open')
     elif args.write:
@@ -228,13 +232,20 @@ def main():
             managed.add(old['id'])
         for c in cards:
             assert c['id'] not in by_id or c['id'] in managed, f'Refusing to replace prior card {c["id"]}'
-        revised = [c for c in existing if c['id'] not in managed] + cards
-        assert set(by_id) <= {c['id'] for c in revised}, 'Refusing to remove an existing card'
+        for c in restored:
+            assert c['id'] in managed or by_id.get(c['id']) == c, f'{c["id"]} changed outside a reviewed restore'
+        revised = [c for c in existing if c['id'] not in managed and c['id'] not in restored_ids] + cards + restored
+        # Only this script's own branch-only combination siblings may go: a
+        # printed item choice is one card (coordinator rule, 2026-10-12). Any
+        # other disappearance, or any card that existed before this audit, stops.
+        removed = set(by_id) - {c['id'] for c in revised}
+        assert all('-route-' in cid and cid in previous.get('addedCardIds', []) for cid in removed), f'Refusing to remove an existing card: {sorted(removed)[:5]}'
         AUTHORED.write_text(json.dumps(revised, ensure_ascii=False, indent=1) + '\n')
         REVIEW.write_text(json.dumps(review, ensure_ascii=False, indent=2) + '\n')
         print(f'Wrote {len(cards)} reviewed cards; preserved every existing ID')
     else:
         print(json.dumps(review, ensure_ascii=False, indent=2))
+    return cards, restored
 
 
 if __name__ == '__main__':

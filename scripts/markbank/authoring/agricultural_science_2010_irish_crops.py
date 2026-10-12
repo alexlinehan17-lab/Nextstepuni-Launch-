@@ -27,7 +27,7 @@ def higher():
         ('q3o1ai q3o1aii q3o1aiii q3o1aiv',3,.030,.202),
         ('q3o1b',3,.210,.234),('q3o1c',3,.240,.293),
         ('q3o2ai q3o2aii',3,.397,.451),
-        ('q3o2b-parasitic q3o2b-deficiency q3o2b-route-hoose q3o2b-route-grass-tetany',3,.457,.512),
+        ('q3o2b-parasitic q3o2b-deficiency q3o2b',3,.457,.512),
         ('q3o2c',3,.517,.556),
         ('q5ai q5aii',4,.030,.084),('q5bi q5bii',4,.090,.146),('q5c',4,.151,.190),
         ('q6a',4,.273,.297),('q6b',4,.303,.342),('q6ci q6cii',4,.348,.402),
@@ -42,11 +42,10 @@ def higher():
         paper['q4'+letter] = regions(3,.636,.676)+regions(3,top,bottom)
     for letter in 'abcde':
         paper['q9'+letter] = regions(5,.330,.355)+paper['q9'+letter]
-    for route in ['i-ii-iii','i-ii-iv','i-iii-iv','ii-iii-iv']:
-        paper['q7a-route-'+route] = regions(4,.528,.613)
-        paper['q8c-route-'+route] = regions(5,.135,.249)
-        scheme['q7a-route-'+route] = regions(10,.057,.349)
-        scheme['q8c-route-'+route] = regions(11,.381,.925)
+    paper['q7a'] = regions(4,.528,.613)
+    paper['q8c'] = regions(5,.135,.249)
+    scheme['q7a'] = regions(10,.057,.349)
+    scheme['q8c'] = regions(11,.381,.925)
     for keys, page, top, bottom in [
         ('q1a',4,.057,.204),('q1b',4,.203,.352),('q1c',4,.351,.435),
         ('q1di q1dii',4,.434,.485),('q1e',4,.484,.567),('q1f',4,.566,.617),
@@ -55,7 +54,7 @@ def higher():
         ('q3o1ai q3o1aii q3o1aiii q3o1aiv',6,.057,.234),
         ('q3o1b',6,.233,.382),('q3o1c',6,.381,.550),
         ('q3o2ai q3o2aii',7,.112,.215),
-        ('q3o2b-parasitic q3o2b-deficiency q3o2b-route-hoose q3o2b-route-grass-tetany',7,.214,.823),
+        ('q3o2b-parasitic q3o2b-deficiency q3o2b',7,.214,.823),
         ('q3o2c',7,.821,.939),
         ('q4a',8,.057,.202),('q4b',8,.201,.284),('q4c',8,.283,.334),('q4d',8,.333,.466),
         ('q5ai q5aii',8,.570,.738),('q5bi q5bii',8,.736,.869),('q5c',8,.868,.921),
@@ -152,7 +151,7 @@ def attach_sources(tasks, paper_reviews):
         keys = {cid.removeprefix(prefix) for task in selected for cid in task['cardIds']}
         assert keys == set(paper) == set(scheme), (keys-set(paper),set(paper)-keys,keys-set(scheme),set(scheme)-keys)
         review = next(p for p in paper_reviews if p['lang']=='iv' and p['level']==level)
-        expected = (62,43,44) if level=='higher' else (85,48,64)
+        expected = (55,43,44) if level=='higher' else (85,48,64)
         freeze = lambda mapping: {tuple((seg['p'],tuple(seg['r'])) for seg in crop) for crop in mapping.values()}
         assert (len(keys),len(freeze(paper)),len(freeze(scheme))) == expected
         for mapping, pages in [(paper,review['paperPagesInspected']),(scheme,review['schemePagesInspected'])]:

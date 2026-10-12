@@ -1,22 +1,22 @@
 """2024 Higher review: the 72 original cards reconciled against the SEC sources.
 
 All 44 paper pages and 28 scheme pages were inspected and the independent
-census transcribed before any card was touched. 61 original card objects match
+census transcribed before any card was touched. 63 original card objects match
 a published task boundary and tariff and are left byte-identical; they only
-gain an Atlas binding and an inspected official source page. Eleven original
-cards are corrected IN PLACE, keeping their IDs (and saved progress): four
-unexpanded printed pools become routes, with the original card as the first
-printed route; Q17(a) and Q18(a)(iii) regain their published first-correct
-splits; Q2(a)(iii) loses an accepted "answer" that was the question's own
-wording; Q16(b)(i) regains the truncated end of its answer; and Q16(b)(ii),
-Q17(c)(ii) and Q17(c)(iii) replace a results table flattened into label soup
-with the paper's own wording and the table crop. Each correction records the
-original wording, marks and object hash plus the SEC page that justifies it.
+gain an Atlas binding and an inspected official source page. Nine original
+cards are corrected IN PLACE, keeping their IDs (and saved progress): Q2(a)(i)
+and Q6(a) become one card each for their printed item choice (a printed
+any-N-of-M choice is one practice card, never combination siblings); Q17(a)
+and Q18(a)(iii) regain their published first-correct splits; Q2(a)(iii) loses
+an accepted "answer" that was the question's own wording; Q16(b)(i) regains the
+truncated end of its answer; and Q16(b)(ii), Q17(c)(ii) and Q17(c)(iii)
+replace a results table flattened into label soup with the paper's own wording
+and the table crop. Each correction records the original wording, marks and
+object hash plus the SEC page that justifies it.
 """
 import copy
 import hashlib
 import json
-from itertools import combinations
 from agricultural_science_2010_hl import ROOT, point, menu, region
 from agricultural_science_2010_parity import scan
 
@@ -29,12 +29,12 @@ SELECTIONS = {
     'ea3b3226438791d2':('exam-selection','Instructions: Section B, four of six independent questions. Every question is retained.'),
     '71038ca6471079fa':('exam-selection','Repeated Section A instruction: ten independent 10-mark questions, all retained.'),
     '9e20b1d011162ade':('independent-task-selection','Q2 either (a) or (b): both independently marked alternatives are retained.'),
-    '223b9af9c9f623b0':('closed','Q2(a)(i): identify any two of the three printed breed photographs A, B and C; three routes at 4 marks each.'),
+    '223b9af9c9f623b0':('closed','Q2(a)(i): identify any two of the three printed breed photographs A, B and C, 2(2). One card: a single anyN row lists all three breeds, claim limit two (item-choice siblings are not separate practice identities).'),
     '6caaad42c1aa08a4':('not-a-selection','Prose in the Q2(b) article ("one of the rarest Irish cattle breeds"); no response choice.'),
     '33e6c4291021cdb1':('independent-task-selection','Q3 either (a) or (b): both alternatives are retained.'),
     '1219196bfd47c12c':('independent-task-selection','Q6 either (a) or (b): both alternatives are retained.'),
-    '4d4469089bd00069':('closed','Q6(a): any two of four printed target features / activities, each with its action and benefit; six 10-mark routes.'),
-    'f1e2ff4300775d5c':('closed','Q6(b)(ii): any two of three printed target features; three 4-mark routes.'),
+    '4d4469089bd00069':('closed','Q6(a): any two of four printed target features / activities, each with its action (3) and benefit (2). One card: an anyN action row and an anyN benefit row, each listing all four features, claim limit two.'),
+    'f1e2ff4300775d5c':('closed','Q6(b)(ii): any two of three printed target features, 3+1. The original one-card form already lets any two of the three score, so it is kept unchanged.'),
     'db3e9151df2a298b':('not-a-selection','Prose in the Q7 article ("trees with either crops or livestock"); no response choice.'),
     'e9ba4a6006d2032d':('independent-task-selection','Q9 either (a) or (b): both alternatives are retained.'),
     '33be39e92663abfa':('exam-selection','Section B heading: four of six independent 50-mark questions, all retained.'),
@@ -43,7 +43,7 @@ SELECTIONS = {
     '18b0f122a37a410d':('independent-task-selection','Q14: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained.'),
 }
 SUPPLEMENTARY = [
-    (28,'State two animal-related factors or two environmental conditions.','closed','Q15(a)(iii): one of two printed categories (the two table columns); two 4-mark routes.'),
+    (28,'State two animal-related factors or two environmental conditions.','closed','Q15(a)(iii): two from one of two printed columns, 2(2). The original one-card form lists both columns in one anyN row, claim limit two, so it is kept unchanged.'),
     (7,'climate and /or environmental benefits','open','Q3(b): flexible and/or wording; one response.'),
     (13,'provide another example of a biological control and state its target','open','Q8(c): a student-chosen biological control; the scheme table is a marking menu.'),
     (23,'State two locations in Ireland where you would find a peat soil.','open','Q13(b)(ii): any named correct locations; no printed pool.'),
@@ -61,6 +61,8 @@ SOURCE_NOTES = {
 TOPIC = 'agricultural-science-higher-'
 SNAPSHOT = ROOT / 'scripts/markbank/authored/agricultural-science-corrected-originals.json'
 PREFIX = 'agsci-2024-hl-'
+# Original objects written back unchanged after an earlier review rewrote them.
+RESTORED = []
 
 
 def original_hash(card):
@@ -74,7 +76,7 @@ def paper_review():
                 wholePaperVisualReview='reviewed', schemeBoundaryReview='reviewed',
                 paperPagesInspected=list(range(1, 45)), schemePagesInspected=list(range(1, 29)),
                 selectionDirectives=observed, supplementarySelections=supplementary, sourceNotes=notes,
-                independentBoundaryReview='81 base tasks and 91 routes. 61 original cards match a published boundary and tariff unchanged. Eleven are corrected in place (Q2(a)(i), Q2(a)(iii), Q6(a), Q6(b)(ii), Q15(a)(iii), Q16(b)(i), Q16(b)(ii), Q17(a), Q17(c)(ii), Q17(c)(iii), Q18(a)(iii)); 19 cards are added: missing Q5(a), Q9(b)(i), Q9(b)(ii), Q13(a)(ii), Q14(c), Q15(c)(i), Q18(a)(ii), Q18(b)(iii) and Q18(c), plus the remaining printed routes of Q2(a)(i), Q6(a), Q6(b)(ii) and Q15(a)(iii).',
+                independentBoundaryReview='81 base tasks, one card each. 63 original cards match a published boundary and tariff unchanged (Q6(b)(ii) and Q15(a)(iii) already let any printed choice score). Nine are corrected in place (Q2(a)(i) and Q6(a) become one item-choice card each; Q2(a)(iii), Q16(b)(i), Q16(b)(ii), Q17(a), Q17(c)(ii), Q17(c)(iii), Q18(a)(iii)); 9 cards are added for the missing Q5(a), Q9(b)(i), Q9(b)(ii), Q13(a)(ii), Q14(c), Q15(c)(i), Q18(a)(ii), Q18(b)(iii) and Q18(c).',
                 cropVisualReview='Every distinct paper/scheme crop pair rendered and inspected.',
                 runtimeReview='Integrated production-component cases at 1200px and 390px. Signed-in full-app navigation remains open.',
                 remaining=['Irish edition comparison (deferred)', 'Full application navigation review', 'Corpus-wide reconciliation'])
@@ -223,6 +225,7 @@ def reviewed_tasks(existing):
     """existing: {id: card} from the authored file (originals are read, never rewritten unless corrected)."""
     paper_review()
     cards, tasks, corrections = [], [], {}
+    RESTORED.clear()
     # Original cards carry no review stamp; cards this review wrote do. The
     # corrected originals come from their frozen snapshot, never the file.
     originals = {cid: card for cid, card in existing.items()
@@ -244,13 +247,16 @@ def reviewed_tasks(existing):
         tasks.append(t)
         return t
 
-    def keep(key, ref, examTopics=None):
+    def keep(key, ref, examTopics=None, selection=None):
         cid = PREFIX + key
         card = originals[cid]
         assert card['questionRef'] == '2024 HL ' + ref, (cid, card['questionRef'])
-        t = task(cid, ref, ref, examTopics=examTopics)
+        t = task(cid, ref, ref, selection=selection, examTopics=examTopics)
         t['marksPerRoute'] = card['totalMarks']
         t['originalCard'] = 'unchanged'
+        if cid in snapshot:
+            assert original_hash(card) == snapshot[cid]['originalSha256']
+            RESTORED.append(card)
 
     def source(ref, pp):
         return dict(kind='source-text', label='OFFICIAL QUESTION PAGE', title='Agricultural Science 2024 Higher — ' + ref,
@@ -310,24 +316,22 @@ def reviewed_tasks(existing):
         cards.append(card)
         return card
 
-    def closed(choose, options, route):
-        return {'kind': 'closed', 'choose': choose, 'options': options, 'route': route}
+    def closed(choose, options):
+        # Item choice is ONE practice card (coordinator rule, 2026-10-12).
+        return {'kind': 'closed', 'choose': choose, 'options': options, 'pooled': True}
 
     # Section A ---------------------------------------------------------------
     keep('q1a', 'Q1(a)')
     keep('q1b', 'Q1(b)')
     letters = list(BREEDS)
-    for chosen in combinations(letters, 2):
-        key = 'q2ai' if chosen == ('A', 'B') else 'q2ai-route-' + ''.join(chosen).lower()
-        add(key, 'Q2(a)(i) — ' + ', '.join(chosen), 'Q2(a)(i)', '4-1', 'identifying-pig-sheep-and-cattle-breeds',
-            'Identify any two of the following breeds.', [point(f'{l}: {BREEDS[l]}', 2, f'Photograph {l}.') for l in chosen],
-            'Answer either (a) or (b). Practice choice: photographs ' + ' and '.join(chosen) + '.',
-            selection=closed(2, letters, list(chosen)), figure='agricultural-science-2024-HL-paper-p04-art',
-            labels=[dict(letter=l, meaning=BREEDS[l], askedInThisQuestion=l in chosen) for l in letters],
-            examTopics='pigs|sheep|beef-cattle',
-            correction=('Visually verified paper PDF page 4 ("Identify any two of the following breeds", photographs A, B and C) and scheme PDF page 12 ("2(2)": A Landrace, B Blue Leicester, C Simmental). '
-                        'The printed two-of-three pool expands into three routes; this ID becomes the first printed route, A and B, at the published 4 marks. Its stem was the stray word "Or".')
-                       if key == 'q2ai' else None)
+    add('q2ai', 'Q2(a)(i)', 'Q2(a)(i)', '4-1', 'identifying-pig-sheep-and-cattle-breeds',
+        'Identify any two of the following breeds.', [menu([f'{l}: {BREEDS[l]}' for l in letters], [2, 2], 'Any two of the three photographs, 2 marks each (2(2)).')],
+        'Answer either (a) or (b).', selection=closed(2, letters), figure='agricultural-science-2024-HL-paper-p04-art',
+        labels=[dict(letter=l, meaning=BREEDS[l], askedInThisQuestion=True) for l in letters],
+        examTopics='pigs|sheep|beef-cattle',
+        correction=('Visually verified paper PDF page 4 ("Identify any two of the following breeds", photographs A, B and C) and scheme PDF page 12 ("2(2)": A Landrace, B Blue Leicester, C Simmental). '
+                    'The original stem was the stray word "Or" and only A and B were decoded, with C carried as an accepted alternative. Same ID: one any-two-of-three card whose anyN row lists all three breeds, '
+                    'claim limit two, with every photograph decoded.'))
     keep('q2aii', 'Q2(a)(ii)')
     fix('q2aiii', 'Q2(a)(iii)', dict(
         stem='Answer either (a) or (b). Part (i) shows three photographs lettered A, B and C; C is a bull.',
@@ -354,38 +358,24 @@ def reviewed_tasks(existing):
     sheep_stem = ('Answer either (a) or (b). Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: '
                   "lameness control; mineral supplementation of ewe's post mating; meal feeding of lamb's post weaning; scanning of in-lamb ewes.")
     slugs = list(FEATURES)
-    for chosen in combinations(slugs, 2):
-        key = 'q6a' if chosen == ('lameness', 'minerals') else 'q6a-route-' + '-'.join(chosen)
-        names = [FEATURES[s][0] for s in chosen]
-        rows = []
-        for s in chosen:
-            name, actions, benefits = FEATURES[s]
-            rows += [menu(actions, [3], f'{name}: action (i), 3 marks.') if len(actions) > 1 else point(actions[0], 3, f'{name}: action (i), 3 marks.'),
-                     menu(benefits, [2], f'{name}: benefit (ii), 2 marks.')]
-        rows[0]['contextNote'] += ' The scheme prints 2(3) + 2(2): an action at 3 marks and a benefit at 2 marks for each of the two features.'
-        add(key, 'Q6(a) — ' + ', '.join(names), 'Q6(a)', '4-3-2', 'sheep-improvement-scheme-measures',
-            'For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.',
-            rows, sheep_stem + ' Practice choice: ' + ' and '.join(n.lower() for n in names) + '.',
-            selection=closed(2, [FEATURES[s][0] for s in slugs], names),
-            correction=('Visually verified paper PDF page 10 ("For any two of the above listed target features / activities", four printed features, (i) action and (ii) benefit) and scheme PDF page 15 (one action and one benefit per feature, "2(3) + 2(2)"). '
-                        'The printed two-of-four pool expands into six 10-mark routes; this ID, originally the fused Q6(a)(i)–(ii) task with free feature choice, becomes the first printed route, lameness control and mineral supplementation of ewes post mating.')
-                       if key == 'q6a' else None)
+    action_text = {'lameness': 'Lameness control: regular checking or footbath or antibiotic spray or paring hooves or vaccination or closed flock or breed selection',
+                   'minerals': 'Mineral supplementation of ewe’s post mating: (bucket) lick / bolus / injection / feed additive / drench',
+                   'meal': 'Meal feeding lambs post weaning: creep feeder / trough',
+                   'scanning': 'Scanning in-lamb ewes: ultrasound scanner or scanner placed on abdomen'}
+    benefit_text = {'lameness': 'Lameness control: increased LWG or increased conception rates or increased milk production',
+                    'minerals': 'Mineral supplementation of ewes’ post mating: improve (P) conception rate or maintain pregnancy / improved development of embryo (health) or foetus or lamb / (Mg) prevent grass tetany or reduced (nutritional) disease',
+                    'meal': 'Meal feeding lambs post weaning: increase liveweight gain / reach slaughter weight quicker / reduces stress of weaning',
+                    'scanning': 'Scanning in-lamb ewes: determine the number of lambs the ewe is carrying / can feed ewes accordingly or housing management / cull barren ewes'}
+    add('q6a', 'Q6(a)', 'Q6(a)', '4-3-2', 'sheep-improvement-scheme-measures',
+        'For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock.',
+        [menu([action_text[k] for k in slugs], [3, 3], '(i) Action for each of your two features, 3 marks each.'),
+         menu([benefit_text[k] for k in slugs], [2, 2], '(ii) Benefit of each of the same two features, 2 marks each. The scheme prints 2(3) + 2(2); each benefit must belong to a feature whose action you gave.')],
+        sheep_stem, selection=closed(2, [FEATURES[k][0] for k in slugs]),
+        correction=('Visually verified paper PDF page 10 ("For any two of the above listed target features / activities", four printed features, (i) action and (ii) benefit) and scheme PDF page 15 (one action and one benefit per feature, "2(3) + 2(2)"). '
+                    'The original fused card was referenced "Q6(a)(i)–(ii)" and spread the four features across mismatched answer slots. Same ID and 10 marks: one any-two-of-four card with an action row and a benefit row, '
+                    'each listing all four features in the scheme\'s wording, claim limit two.'))
     keep('q6bi', 'Q6(b)(i)')
-    welfare_stem = ('Answer either (a) or (b). The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. '
-                    'Some of the target features of the scheme are: mineral supplementation of lambs pre-weaning; flystrike control; genotyping of ram.')
-    wslugs = list(WELFARE)
-    for chosen in combinations(wslugs, 2):
-        key = 'q6bii' if chosen == ('minerals', 'flystrike') else 'q6bii-route-' + '-'.join(chosen)
-        (n1, e1), (n2, e2) = WELFARE[chosen[0]], WELFARE[chosen[1]]
-        rows = [point(f'{SCHEME_LABEL.get(n1, n1)}: ' + ' or '.join(e1), None, f'{n1}. The scheme prints 3+1: the first correct explanation earns 3 marks and the second 1, whichever feature is answered first.'),
-                point(f'{SCHEME_LABEL.get(n2, n2)}: ' + ' or '.join(e2), None, f'{n2}.')]
-        add(key, f'Q6(b)(ii) — {n1}, {n2}', 'Q6(b)(ii)', '4-3-3', 'sheep-scheme-health-welfare',
-            'Briefly explain how the scheme enhances animal health and welfare using any two of the target features listed above.',
-            rows, welfare_stem + f' Practice choice: {n1.lower()} and {n2.lower()}.', marks=4, tariff={'kind': 'orderedSplit', 'notation': '3+1'},
-            selection=closed(2, [WELFARE[s][0] for s in wslugs], [n1, n2]),
-            correction=('Visually verified paper PDF page 11 ("using any two of the target features listed above", three printed features) and scheme PDF page 15 (one explanation per feature, "3+1"). '
-                        'The printed two-of-three pool expands into three routes; this ID becomes the first printed route, mineral supplementation of lambs pre-weaning and flystrike control, at the published 4 marks.')
-                       if key == 'q6bii' else None)
+    keep('q6bii', 'Q6(b)(ii)', selection=closed(2, [w[0] for w in WELFARE.values()]))
     for k, ref in [('q7a', 'Q7(a)'), ('q7b', 'Q7(b)'), ('q8a', 'Q8(a)'), ('q8b', 'Q8(b)'), ('q8c', 'Q8(c)'), ('q9a', 'Q9(a)')]:
         keep(k, ref)
     soil_stem = ('Answer either (a) or (b). Soil structure describes the arrangement of soil particles within a soil. '
@@ -431,17 +421,7 @@ def reviewed_tasks(existing):
                  'The amounts of nutrients that cattle require is influenced by various animal-related factors and environmental conditions.')
     keep('q15ai', 'Q15(a)(i)')
     keep('q15aii', 'Q15(a)(ii)')
-    fslugs = list(FACTORS)
-    for slug in fslugs:
-        name, options = FACTORS[slug]
-        key = 'q15aiii' if slug == 'animal-related-factors' else 'q15aiii-route-' + slug
-        add(key, f'Q15(a)(iii) — {name}', 'Q15(a)(iii)', '4-1', 'factors-influencing-cattle-nutrient-requirements',
-            'State two animal-related factors or two environmental conditions.',
-            [menu(options, [2, 2], f'{name}: two at 2 marks each (2(2)).')],
-            beef_stem + f' Practice choice: {name.lower()}.', selection=closed(1, [FACTORS[s][0] for s in fslugs], [name]),
-            correction=('Visually verified paper PDF page 28 ("State two animal-related factors or two environmental conditions", a two-column table) and scheme PDF page 20 (one list per column, "2(2)"). '
-                        'The original pooled both columns into one best-two-of-fourteen menu, so a mixed answer looked complete. The one-of-two printed choice expands into two routes; this ID becomes the first printed route, animal-related factors. Its stem-stripping source binding is removed so the route\'s practice choice stays visible.')
-                       if slug == 'animal-related-factors' else None)
+    keep('q15aiii', 'Q15(a)(iii)', selection=closed(1, [f[0] for f in FACTORS.values()]))
     for k, ref in [('q15aiv', 'Q15(a)(iv)'), ('q15av', 'Q15(a)(v)'), ('q15bi', 'Q15(b)(i)'), ('q15bii', 'Q15(b)(ii)')]:
         keep(k, ref)
     add('q15ci', 'Q15(c)(i)', 'Q15(c)(i)', '4-3-1', 'calculating-daily-liveweight-gain',
@@ -522,6 +502,6 @@ def reviewed_tasks(existing):
         "With the EU's 'Farm to Fork Strategy' proposed to reduce by 50% the use of chemical pesticides, Integrated Pest Management (IPM) systems are becoming increasingly important. "
         'The IPM diagram is a pyramid: Prevention at the base, then Cultural / Sanitation, Physical / Mechanical, Biological, and Chemical (Pesticide) at the top.',
         marks=16, tariff={'kind': 'orderedSplit', 'notation': '6+6+4'}, figure='agsci-2024-hl-paper-ipm-pyramid', extra=('2-3',))
-    assert len(tasks) == 91 and len(cards) == 30 and len(corrections) == 11 and len(originals) == 72, (len(tasks), len(cards), len(corrections), len(originals))
+    assert len(tasks) == 81 and len(cards) == 18 and len(corrections) == 9 and len(originals) == 72 and len(RESTORED) == 2, (len(tasks), len(cards), len(corrections), len(originals), len(RESTORED))
     assert {t['cardIds'][0] for t in tasks} >= set(originals), 'Every original 2024 Higher card must be reviewed'
     return cards, tasks, corrections

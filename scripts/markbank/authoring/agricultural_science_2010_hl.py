@@ -5,7 +5,6 @@ No question census or generated card count is used as completeness evidence.
 """
 from pathlib import Path
 import hashlib
-from itertools import combinations
 import fitz
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -43,10 +42,10 @@ CONCEPTS = {
 # have a reviewed classification; a new or stale key stops authoring.
 SELECTIONS = {
     '822d395310352400': ('independent-task-selection', 'Q1 selects six separately priced (a)–(j) tasks. All ten are represented, with (d) split at its 4/6 boundary. Combining six unrelated tasks would represent a candidate exam selection, not a practice task.'),
-    '9449f3af55f635a7': ('closed', 'Q3 Option Two (b): one of two diseases. Both complete 12-mark routes are expanded; the two separately priced definitions remain common tasks.'),
+    '9449f3af55f635a7': ('closed', 'Q3 Option Two (b): one of two diseases. One card: the two complete 12-mark disease routes are mutually exclusive row routes, so claiming a point commits the card to that disease; the two separately priced definitions remain common tasks.'),
     '8523a40fc570893c': ('independent-task-selection', 'Q4 selects two of four separately marked 24-mark experimental methods. Each method is independently practicable and represented. Laboratory/field are open methods, not named finite responses.'),
-    '18ccf05d5ed0e5de': ('independent-task-selection', 'Q8 selects two independent 24-mark parts. Parts (a), (b) and every internal route of (c) are represented. Exam-level pairs do not create a new practice task.'),
-    '095797ddc519af1c': ('closed', 'Q8(c): choose three of four printed comparisons. All four combinations retain six 4-mark groups, totalling 24 marks each.'),
+    '18ccf05d5ed0e5de': ('independent-task-selection', 'Q8 selects two independent 24-mark parts. Parts (a), (b) and (c) are represented. Exam-level pairs do not create a new practice task.'),
+    '095797ddc519af1c': ('closed', 'Q8(c): choose three of four printed comparisons. One card lists all eight members as 4-mark groups and credits the best six (24 marks); item-choice siblings are not separate practice identities.'),
     '7fc0c6ebf51e3c05': ('independent-task-selection', 'Q9 selects four independently marked 12-mark explanations. All five tasks are represented, without bundling unrelated responses into an exam submission.'),
 }
 
@@ -72,7 +71,7 @@ def paper_review():
         (3,'OR Option Two','closed','Both Question 3 options are retained under distinct IDs, split only at their own published mark boundaries.'),
         (3,'laboratory or field method','open','Two settings for a method, not two named finite responses. Complete official method menus are retained.'),
         (3,'control or treatment','open','Open methods of dealing with the chosen disease. Scheme alternatives are accepted answers; no fixed response pool is printed.'),
-        (4,'Explain three of the following terms:','closed','Q7(a) choose three of four terms: all four combinations, 12 marks each.'),
+        (4,'Explain three of the following terms:','closed','Q7(a) choose three of four terms, 4 marks each: one card lists all four and credits the best three (12 marks).'),
         (4,'one type of polyploidy','open','No finite pool is printed. Scheme examples use matching type/example marking menus on one card.'),
     ]
     for page,wording,_,_ in supplementary:
@@ -83,8 +82,8 @@ def paper_review():
         'paperPagesInspected':list(range(1,9)),'schemePagesInspected':list(range(1,15)),
         'selectionDirectives':observed,
         'supplementarySelections':[{'page':p,'wording':w,'classification':k,'reason':r} for p,w,k,r in supplementary],
-        'taskCountsByQuestion':{'Q1':11,'Q2':3,'Q3 Option One':6,'Q3 Option Two':7,'Q4':4,'Q5':5,'Q6':5,'Q7':10,'Q8':6,'Q9':5},
-        'independentBoundaryReview':'62 practice cards; all published tasks retained. Descending awards stay together. Internal finite choices use 2, 4 and 4 routes. Candidate examination totals must not sum all mutually exclusive routes.',
+        'taskCountsByQuestion':{'Q1':11,'Q2':3,'Q3 Option One':6,'Q3 Option Two':6,'Q4':4,'Q5':5,'Q6':5,'Q7':7,'Q8':3,'Q9':5},
+        'independentBoundaryReview':'55 practice cards, one per published task. Descending awards stay together. Internal finite choices (Q3 Option Two (b), Q7(a), Q8(c)) are single cards. Candidate examination totals must not sum mutually exclusive routes.',
         'remaining':['Full application phone/desktop runtime review','Corpus-wide reconciliation'],
     }
 
@@ -271,6 +270,7 @@ def reviewed_tasks():
         [menu(['caused by a lack','mineral, vitamin or amino acid'],[4,2], 'Explain the lack and specify an essential nutrient; the two fragments form one definition.')],
         [region(3,.422,.479)],[region(8,.187,.305,0,.377),region(8,.187,.224,.725,.95)],disease_stem+' Practice term: deficiency disease.')
     # A closed choice printed inside part (b): both complete 12-mark routes.
+    disease_routes = []
     for disease, key, rows, span in [
         ('Hoose','hoose',[
             point('lungworm/dictyocaulus /nematode (roundworms)',4,'Cause.'),
@@ -281,10 +281,14 @@ def reviewed_tasks():
             point('Twitching/”staggers”/nervousness/coma',4,'One symptom.'),
             point('Feed calcined magnesite in diet cal-mag/MgO/in spring before outturn to grass and in the meal or water after for some time/magnesium lick/limit access to fresh grass/injection of magnesium/bolus(bullet)',4,'One control or treatment.')],(.415,.648)),
     ]:
-        add(f'q3o2b-route-{key}', f'Q3 Option Two (b) — {disease}', '4-3-3','3-5','animal-diseases',
-            'In the case of either disease state the cause, a symptom and a method of control or treatment.',rows,
-            [region(3,.422,.479)],[region(8,.235,.648,.38,1)],disease_stem+f' Practice choice: {disease}.',
-            {'kind':'closed','choose':1,'options':['Hoose','grass-tetany'],'route':disease})
+        disease_routes += [dict(row, route=disease, contextNote=f'{disease}: ' + row['contextNote']) for row in rows]
+    # A closed choice printed inside part (b): ONE card whose two disease routes are
+    # mutually exclusive rows; claiming any point commits the card to that disease.
+    q3o2b = add('q3o2b', 'Q3 Option Two (b)', '4-3-3','3-5','animal-diseases',
+        'In the case of either disease state the cause, a symptom and a method of control or treatment.', disease_routes,
+        [region(3,.422,.479)],[region(8,.235,.648,.38,1)],disease_stem,
+        {'kind':'closed','choose':1,'options':['Hoose','grass-tetany'],'pooled':True})
+    q3o2b['totalMarks'] = tasks[-1]['marksPerRoute'] = 12
     add('q3o2c','Q3 Option Two (c)','3-3-1','2-3','crop-production',
         'Give three reasons for a low rate of seedling establishment in a spring-sown crop.',
         [menu(['not certified seed','pests','drought','too cold','too wet','weeds','unsuitable soil type','compacted soil','disease(damping off)'],[4]*3)],
@@ -373,13 +377,13 @@ def reviewed_tasks():
         'iii': ('artificial selection','used by breeders|quicker than natural selection|mutations are induced in plants|using radiation ,colchicine,cold shock|in animals by selective breeding or desireable characteristics|recently by genetic modification'),
         'iv': ('pedigree animal','purebreeding or homozygous (animals)|achieved by selective breeding or desireable characteristics|whose lineage is recorded|in a breed society herdbook or register|these animals have “papers”|and herd book(studbook)number|used in A.I. stations (or breeding)'),
     }
-    for selected in combinations(terms,3):
-        add('q7a-route-'+'-'.join(selected),'Q7(a) — '+', '.join(selected),'4-3-2','3-6','genetics',
-            'Explain three of the following terms: (i) freemartin condition (ii) hermaphrodite (iii) artificial selection (iv) pedigree animal.',
-            [menu(terms[k][1],[2,2],terms[k][0].capitalize()+': two points.') for k in selected],
-            [region(4,.529,.617)],[region(11,.05,.306)],
-            'Practice choice: '+', '.join(terms[k][0] for k in selected)+'.',
-            {'kind':'closed','choose':3,'options':list(terms),'route':list(selected)})
+    q7a = add('q7a','Q7(a)','4-3-2','3-6','genetics',
+        'Explain three of the following terms: (i) freemartin condition (ii) hermaphrodite (iii) artificial selection (iv) pedigree animal.',
+        [menu(terms[k][1],[2,2],f'({k}) '+terms[k][0].capitalize()+': two points.'+(' Explain any three of the four terms, 4 marks each.' if k=='i' else '')) for k in terms],
+        [region(4,.529,.617)],[region(11,.05,.306)],
+        selection={'kind':'closed','choose':3,'options':list(terms),'pooled':True})
+    q7a['tariffModel'] = {'kind':'bestNofParts','answer':3,'ofParts':4,'perPart':4}
+    q7a['totalMarks'] = tasks[-1]['marksPerRoute'] = 12
     pigs_stem = ('In guinea pigs the allele for black coat (B) is dominant over the allele for brown coat (b). '
                  'A pair of guinea pigs produces a litter of eight piglets; four of the litter are black and four are brown.')
     add('q7bi','Q7(b)(i)','4-3-2','3-6','genetics',
@@ -437,19 +441,16 @@ def reviewed_tasks():
               ('Endoparasites','on inside|have tough skin-cuticle|no digestive organs often|complicated life cycle|often hermaphrodite|harder to control|examples fluke ,stomach worms etc')],
     }
     atlas_pair_topics={'i':['pigs'],'ii':['grassland'],'iii':['beef-cattle'],'iv':['animal-diseases']}
-    for selected in combinations(pairs,3):
-        card=add('q8c-route-'+'-'.join(selected),'Q8(c) — '+', '.join(selected),'4-3-1','3-3',
-            '|'.join(t for k in selected for t in atlas_pair_topics[k]),
-            'Highlight the main differences between the members of any three of the following pairs: (i) farrowing house and fattening house in pig production (ii) zero grazing and creep grazing (iii) bull-beef production and heifer-beef production (iv) ectoparasites and endoparasites.',
-            [menu(pool,[2,2],label+': two points.') for k in selected for label,pool in pairs[k]],
-            [region(5,.136,.217)],[region(12,.372,.853)],'Practice choice: '+', '.join(selected)+'.',
-            {'kind':'closed','choose':3,'options':list(pairs),'route':list(selected)})
-        if 'iv' in selected:
-            card['curriculumNodeIds'].append('agricultural-science-3-5')
-            card['additionalTopicIds'] = ['agsci-4-3-3']
-        if 'ii' in selected:
-            card['curriculumNodeIds'].append('agricultural-science-2-6')
-            card.setdefault('additionalTopicIds', []).append('agsci-3-3-2')
+    q8c = add('q8c','Q8(c)','4-3-1','3-3',
+        '|'.join(t for k in pairs for t in atlas_pair_topics[k]),
+        'Highlight the main differences between the members of any three of the following pairs: (i) farrowing house and fattening house in pig production (ii) zero grazing and creep grazing (iii) bull-beef production and heifer-beef production (iv) ectoparasites and endoparasites.',
+        [menu(pool,[2,2],f'({k}) {label}: two points.'+(' Any three pairs: both members of each, two points (4 marks) per member.' if k=='i' and label=='Farrowing house' else '')) for k in pairs for label,pool in pairs[k]],
+        [region(5,.136,.217)],[region(12,.372,.853)],
+        selection={'kind':'closed','choose':3,'options':list(pairs),'pooled':True})
+    q8c['tariffModel'] = {'kind':'bestNofParts','answer':6,'ofParts':8,'perPart':4}
+    q8c['totalMarks'] = tasks[-1]['marksPerRoute'] = 24
+    q8c['curriculumNodeIds'] += ['agricultural-science-3-5', 'agricultural-science-2-6']
+    q8c['additionalTopicIds'] = ['agsci-4-3-3', 'agsci-3-3-2']
 
     fasting='full gut(rumen) at slaughter|increases meat hygiene risk|E coli risk on meat|sugar(glycogen) in muscle turns to lactic acid|especially if animals are stressed|results in poor quality meat'
     hanging='Hanging carcass allows blood to drain|enzymes|break down tough fibres in meat|better quality meat'
@@ -509,7 +510,7 @@ def reviewed_tasks():
         key = task['cardIds'][0].removeprefix('agsci-2010-hl-')
         if key in paper_blocks:
             task['paperRegions'] = paper_blocks[key]
-        if key.startswith('q8c-route-'):
+        if key == 'q8c':
             task['paperRegions'] = [region(5,.136,.214)]
         if key in scheme_blocks:
             task['schemeRegions'] = scheme_blocks[key]

@@ -17,20 +17,16 @@ RUNTIME = ROOT / 'data/examTopics/agricultural-science-question-runtime.json'
 # Prefix, exact paper range, exact scheme range. Include the source artwork in
 # each question crop and stop before the next independently marked part.
 REGIONS = {
-    'agsci-2022-ol-q2bii-route-': ([0, .089, 1, .596], [0, .618, 1, .732]),
-    'agsci-2023-hl-q18ai-route-': ([0, .066, 1, .386], [0, .317, 1, .559]),
+    'agsci-2022-ol-q2bii': ([0, .089, 1, .596], [0, .618, 1, .732]),
+    'agsci-2023-hl-q18ai': ([0, .066, 1, .386], [0, .317, 1, .559]),
     'agsci-2022-ol-q13bi': ([0, .066, 1, .383], [0, .085, 1, .149]),
     'agsci-2025-ol-q8b': ([0, .529, 1, .808], [0, .370, 1, .419]),
 }
 # Explicit assignments survive reordering the authored deck or adding cards.
 NUMBERS = {
-    'agsci-2022-ol-q2bii-route-e': '1001',
-    'agsci-2022-ol-q2bii-route-f': '1002',
+    'agsci-2022-ol-q2bii': '1001',
     'agsci-2022-ol-q13bi': '1003',
-    'agsci-2023-hl-q18ai-route-abc': '1001',
-    'agsci-2023-hl-q18ai-route-abd': '1002',
-    'agsci-2023-hl-q18ai-route-acd': '1003',
-    'agsci-2023-hl-q18ai-route-bcd': '1004',
+    'agsci-2023-hl-q18ai': '1001',
     'agsci-2025-ol-q8b': '1001',
 }
 
@@ -63,7 +59,7 @@ def outputs():
                 paper_regions, scheme_regions = task['paperRegions'], task['schemeRegions']
                 n = task['atlasNumbers'][cid]
             else:
-                paper_rect, scheme_rect = next(regions for prefix, regions in REGIONS.items() if cid.startswith(prefix))
+                paper_rect, scheme_rect = REGIONS[cid]
                 paper_regions = [{'p': task['paperPage'], 'r': paper_rect}]
                 scheme_regions = [{'p': task['schemePage'], 'r': scheme_rect}]
                 n = NUMBERS[cid]
