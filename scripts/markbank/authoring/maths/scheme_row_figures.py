@@ -72,6 +72,10 @@ AFFECTED = {
         'maths-2018-hl-p1-q3-b', 'maths-2018-hl-p1-q6-b-ii', 'maths-2018-hl-p1-q7-c', 'maths-2018-hl-p1-q7-d', 'maths-2018-hl-p1-q7-e-ii',
         'maths-2018-hl-p1-q8-a', 'maths-2018-hl-p1-q8-b', 'maths-2018-hl-p1-q8-c', 'maths-2018-hl-p1-q8-d',
         'maths-2018-hl-p1-q9-a', 'maths-2018-hl-p1-q9-c-i',
+        # Paper 2: working that refers to a diagram or graph in the scheme, the
+        # Q8(b)(i) tick table, and the Q8(c) present-value sum.
+        'maths-2018-hl-p2-q4-b', 'maths-2018-hl-p2-q6-a', 'maths-2018-hl-p2-q7-d', 'maths-2018-hl-p2-q8-b-i',
+        'maths-2018-hl-p2-q8-c', 'maths-2018-hl-p2-q9-b-iii',
     ],
 }
 BANDS = ['Low Partial Credit', 'Mid Partial Credit', 'High Partial Credit', 'Partial Credit', 'Full Credit',
@@ -110,9 +114,15 @@ def rules(page):
     A table inside a model solution (a stem-and-leaf plot, a probability table)
     draws rules of its own, so only a rule that starts and ends on a column
     boundary of the scheme table counts. The boundaries come from the table's
-    header rule, the first rule on the page.
+    header rule, the first rule on the page. A rule drawn as two abutting
+    segments (one per cell, as under the 2018 Higher Q9(b)(iii) graph) is one rule.
     """
-    segs = hsegments(page)
+    segs = []
+    for y, a, b in sorted(hsegments(page)):
+        if segs and segs[-1][0] == y and a - segs[-1][2] <= 2:
+            segs[-1] = (y, segs[-1][1], max(b, segs[-1][2]))
+        else:
+            segs.append((y, a, b))
     top = min(y for y, _, _ in segs)
     bounds = sorted({round(x, 0) for y, a, b in segs if y <= top + 25 for x in (a, b)})
     on = lambda x: any(abs(x - b) < 3 for b in bounds)

@@ -42,6 +42,7 @@ import higher2021p2 from '../scripts/markbank/mathematics/reviews/2021-higher-p2
 import ordinary2021p1 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p1.json';
 import ordinary2021p2 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p2.json';
 import higher2020p1 from '../scripts/markbank/mathematics/reviews/2020-higher-p1.json';
+import higher2018p2 from '../scripts/markbank/mathematics/reviews/2018-higher-p2.json';
 import higher2018p1 from '../scripts/markbank/mathematics/reviews/2018-higher-p1.json';
 import schemeRowFigures from '../scripts/markbank/authored/maths-scheme-row-figures-catalogue.json';
 import ordinary2019p2 from '../scripts/markbank/mathematics/reviews/2019-ordinary-p2.json';
@@ -985,6 +986,7 @@ describe.each([
   { year: 2019, level: 'ordinary' as const, number: 1, count: 36, review: ordinary2019p1 },
   { year: 2019, level: 'ordinary' as const, number: 2, count: 39, review: ordinary2019p2 },
   { year: 2018, level: 'higher' as const, number: 1, count: 33, review: higher2018p1 },
+  { year: 2018, level: 'higher' as const, number: 2, count: 32, review: higher2018p2 },
 ])('$year $level Mathematics Paper $number new-paper source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
   const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
@@ -1057,6 +1059,12 @@ describe('2018 Higher scheme rows that cannot be lifted as text', () => {
     expect(ids).toEqual(expect.arrayContaining(['maths-2018-hl-p1-q6-b-ii', 'maths-2018-hl-p1-q7-c', 'maths-2018-hl-p1-q7-d',
       'maths-2018-hl-p1-q7-e-ii', 'maths-2018-hl-p1-q8-a', 'maths-2018-hl-p1-q8-b', 'maths-2018-hl-p1-q8-c', 'maths-2018-hl-p1-q8-d',
       'maths-2018-hl-p1-q9-a', 'maths-2018-hl-p1-q9-c-i']));
+  });
+
+  it('covers Paper 2 parts whose working refers to a printed diagram, graph or tick table', () => {
+    const ids = withRow.map(card => card.id);
+    expect(ids).toEqual(expect.arrayContaining(['maths-2018-hl-p2-q4-b', 'maths-2018-hl-p2-q6-a', 'maths-2018-hl-p2-q7-d',
+      'maths-2018-hl-p2-q8-b-i', 'maths-2018-hl-p2-q8-c', 'maths-2018-hl-p2-q9-b-iii']));
   });
 });
 
