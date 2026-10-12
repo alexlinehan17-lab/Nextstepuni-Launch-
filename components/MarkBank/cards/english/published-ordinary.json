@@ -48,6 +48,17 @@
    "schemeSha256": "1ffaf4e11d7e4cf6576ac088ed540feb6d19fae29c13aaf4f35ea59b9e1a033b"
   },
   {
+   "paperId": "english-2024-ol-p1",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "tasks": 22,
+   "cards": 20,
+   "printedDuplicates": 2,
+   "paperSha256": "fc626a7ffe7ca903ae6deaf143ec14b378c11dc79bd16f244a9b9cc1cf0c65f5",
+   "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce"
+  },
+  {
    "paperId": "english-2018-ol-p1",
    "year": 2018,
    "level": "ordinary",
@@ -1096,6 +1107,17 @@
     },
     "capRulePage": 3
    },
+   "2024-ordinary": {
+    "family": "ol-o1-o8-2018",
+    "gridPages": [
+     63,
+     64
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2025-ordinary": {
     "family": "ol-o1-o8-2018",
     "gridPages": [
@@ -1122,10 +1144,31 @@
  },
  "legacyAdditionalSources": {},
  "bridgedPapers": [
+  "english-2024-ol-p1",
   "english-2025-ol-p1",
   "english-2025-ol-p2"
  ],
  "bridgedLegacyIds": [
+  "english-2024-ol-p1-composing-1",
+  "english-2024-ol-p1-composing-2",
+  "english-2024-ol-p1-composing-3",
+  "english-2024-ol-p1-composing-4",
+  "english-2024-ol-p1-composing-5",
+  "english-2024-ol-p1-composing-6",
+  "english-2024-ol-p1-composing-7",
+  "english-2024-ol-p1-t1-a-i",
+  "english-2024-ol-p1-t1-a-ii",
+  "english-2024-ol-p1-t1-a-iii-a",
+  "english-2024-ol-p1-t1-a-iii-b",
+  "english-2024-ol-p1-t1-b",
+  "english-2024-ol-p1-t2-a-i",
+  "english-2024-ol-p1-t2-a-ii",
+  "english-2024-ol-p1-t2-a-iii-b",
+  "english-2024-ol-p1-t2-b",
+  "english-2024-ol-p1-t3-a-i",
+  "english-2024-ol-p1-t3-a-ii",
+  "english-2024-ol-p1-t3-a-iii-b",
+  "english-2024-ol-p1-t3-b",
   "english-2025-ol-p1-composing-1",
   "english-2025-ol-p1-composing-2",
   "english-2025-ol-p1-composing-3",
@@ -1216,6 +1259,8 @@
   "english-2025-ol-p2-unseen-q2"
  ],
  "bridgeAliases": {
+  "english-2024-ol-p1-t2-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
+  "english-2024-ol-p1-t3-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
   "english-2025-ol-p1-t2-a-iii-b": "english-2025-ol-p1-t1-a-iii-b",
   "english-2025-ol-p1-t3-a-iii-b": "english-2025-ol-p1-t1-a-iii-b",
   "english-2025-ol-p2-comparative-a-q1": "english-2025-ol-p2-comparative-a-q1-a-i",
@@ -1240,7 +1285,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1043,
+ "cardCount": 1063,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -10346,6 +10391,784 @@
    "atlas": {
     "fileid": "LC002GLP200EV.pdf",
     "n": "19"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-t1-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 1 QA(i)",
+   "questionText": "What impression do you form of Jamie from reading the above extract? Make three points in your response. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Challenge 1: A New School",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Elaine Feeney — adapted extract from her novel How to Build a Boat (longlisted for the 2023 Booker Prize), with Cover A and Cover B (PDF2–3). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-t1-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 1 QA(ii)",
+   "questionText": "Do you think this extract is a good example of descriptive writing? Give reasons for your answer, referring to the above extract.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Challenge 1: A New School",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Elaine Feeney — adapted extract from her novel How to Build a Boat (longlisted for the 2023 Booker Prize), with Cover A and Cover B (PDF2–3). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-t1-a-iii-a",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 1 QA(iii)(a)",
+   "questionText": "The theme of this examination paper is ‘Challenges’. What do you think will be the greatest challenge ahead of you in life? Describe how you intend to deal with that challenge.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    5,
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   },
+   "atlasPlacements": [
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "10"
+    },
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "12"
+    }
+   ]
+  },
+  {
+   "id": "english-2024-ol-p1-t1-a-iii-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 1 QA(iii)(b)",
+   "questionText": "The cover of a novel is important in catching a potential reader’s attention. Cover A and Cover B have both been used to sell the novel, How to Build A Boat. Which cover do you prefer? Give reasons for your answer, referring to both covers in your response.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Challenge 1: A New School",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Elaine Feeney — adapted extract from her novel How to Build a Boat (longlisted for the 2023 Booker Prize), with Cover A and Cover B (PDF2–3). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-t1-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 1 QB",
+   "questionText": "You are nearing the end of your time in secondary education. You have been asked to put three objects into a time capsule, representing your time in school. A time capsule is a container storing a selection of objects, buried for discovery in the future. Write a blog for your school website in which you: describe each object you will put in the capsule, explain why you have chosen each of them to represent your time in school, and imagine how people will react when they find the capsule fifty years from now.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-t2-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 2 QA(i)",
+   "questionText": "What impression do you form of Rhasidat Adeleke from reading the above extract? Make three points in your response. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Challenge 2: Beat the Clock",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Ian O’Riordan — based on an article in The Irish Times profiling Rhasidat Adeleke, with one photograph (PDF4–5). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-t2-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 2 QA(ii)",
+   "questionText": "Do you think this extract gives a good sense of the place where Rhasidat trains and studies? Give reasons for your answer, referring to the above extract.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Challenge 2: Beat the Clock",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Ian O’Riordan — based on an article in The Irish Times profiling Rhasidat Adeleke, with one photograph (PDF4–5). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-t2-a-iii-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 2 QA(iii)(b)",
+   "questionText": "You are designing the front cover for an information booklet encouraging young Irish athletes to take up sports scholarships abroad. Suggest two images you would put on the cover and explain why you think they would be appropriate.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Challenge 2: Beat the Clock",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Ian O’Riordan — based on an article in The Irish Times profiling Rhasidat Adeleke, with one photograph (PDF4–5). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-t2-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 2 QB",
+   "questionText": "You are a sports commentator on the radio, covering the end of an exciting sporting event. You can be covering any type of sporting event. Write the text of your commentary in which you: create a sense of the mood of the occasion for the listeners, describe two exciting incidents that occur towards the end of the event, and reflect on the outcome of the event.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-t3-a-i",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 3 QA(i)",
+   "questionText": "Based on your reading of the written text in TEXT 3, which three of the ten quotations about challenges do you find most interesting and inspiring? Give reasons why you find these quotes interesting and inspiring.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 3 of 10). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Challenge 3: Life Challenges",
+    "pages": [
+     6
+    ],
+    "attribution": "Ten numbered quotations about challenges (PDF6) and four photographs, Images A–D (PDF6–7). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-t3-a-ii",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 3 QA(ii)",
+   "questionText": "The theme of this examination paper is ‘Challenges’. Based on what you see in the images in TEXT 3 above, explain three things you learn from them about challenges in life. You may use one or more than one of the images in your response.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Challenge 3: Life Challenges",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Ten numbered quotations about challenges (PDF6) and four photographs, Images A–D (PDF6–7). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-t3-a-iii-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 3 QA(iii)(b)",
+   "questionText": "You have been asked to suggest two more images to add to the above collection of images on the theme of challenges. Describe the images you would suggest and explain why you believe these would be good additions to the collection.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Challenge 3: Life Challenges",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Ten numbered quotations about challenges (PDF6) and four photographs, Images A–D (PDF6–7). As reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9,
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-t3-b",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Text 3 QB",
+   "questionText": "You are a newspaper columnist whose articles give advice to parents and guardians. This week you are writing about the challenges teenagers can commonly face in today’s world. Write the text of your article in which you: write an introduction to the topic, describe some of the challenges commonly faced by teenagers today, and give your readers advice as to how they can help teenagers face these challenges.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-composing-1",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 1",
+   "questionText": "In TEXT 1 Jamie’s father, Eoin, describes the anxiety of facing the challenge of the week ahead as ‘Sundaynightitis’. Write a personal essay in which you reflect on the challenges of facing a typical week in your life.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-composing-2",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 2",
+   "questionText": "In TEXT 3 Martin Luther King Jr. advises people ‘to face the challenge of change’. Write a short story, featuring a character who has to overcome difficulties because of a significant change in his or her life.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    13
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-composing-3",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 3",
+   "questionText": "In TEXT 2 Rhasidat has to adjust to life in Texas, which is very different to life in Ireland. Write a magazine article in which you consider some of the challenges of adapting to life in a new country.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-composing-4",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 4",
+   "questionText": "In TEXT 3 Alice Walker refers to giving up power. Write a short story set in a world where a corrupt leader is challenged and overcome.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-composing-5",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 5",
+   "questionText": "TEXT 2 describes Rhasidat as a talented athlete. Write a personal essay in which you describe your own talents and consider how you have developed them.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-composing-6",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 6",
+   "questionText": "The theme for this examination paper is ‘Challenges’. You have been invited to deliver a speech entitled, “The Challenges Facing our World Today” to a youth forum in the United Nations. Write the text of the speech you would deliver.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested speech.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-ol-p1-composing-7",
+   "year": 2024,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2024 OL Paper 1 Composing 7",
+   "questionText": "In TEXT 1 Jamie says he wants to complain about going to a new school. Write a feature article for a magazine in which you explore whether or not people nowadays are likely to complain officially, when they are unhappy about something. Your article can be serious or humorous or both.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested feature article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "7"
    }
   },
   {

@@ -2167,17 +2167,73 @@
       "paperSha256": "fc626a7ffe7ca903ae6deaf143ec14b378c11dc79bd16f244a9b9cc1cf0c65f5",
       "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
       "paperPagesInspected": [
+        1,
         2,
         3,
+        4,
+        5,
         6,
-        7
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ],
-      "visualSweepComplete": false,
+      "visualSweepComplete": true,
       "notes": [
-        "Book covers A/B; Text 3 has ten numbered quotations, choose three. Images A–D allow any number, not a fixed pool size."
+        "Book covers A/B; Text 3 has ten numbered quotations, choose three. Images A–D allow any number, not a fixed pool size.",
+        "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks, one card each (Text 1 A(iii)(b) cover A/B and Text 3 A(i) three of ten quotations are printed choices marked identically). A(iii)(a) is printed identically under all three texts and published once (two printed repeats).",
+        "Readers under printed headings: TEXT 1 Challenge 1: A New School PDF2–3 (the extractor had used the introduction), TEXT 2 Challenge 2: Beat the Clock PDF4–5, TEXT 3 Challenge 3: Life Challenges PDF6–7 (A(i) PDF6). A(iii)(a) needs no reader. C/L ≤ P (PDF3); grids PDF63–64 (2018 OL print)."
       ],
-      "allTaskBoundariesSchemeChecked": false,
-      "allFiniteRoutesReconciled": false
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        62,
+        63,
+        64
+      ],
+      "schemePagesVisuallyChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        63,
+        64
+      ],
+      "independentPaperTally": {
+        "baseTasks": 22,
+        "finiteRoutes": 22,
+        "basis": "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks, one card each (Text 1 A(iii)(b) cover A/B and Text 3 A(i) three of ten quotations are printed choices marked identically). A(iii)(a) is printed identically under all three texts and published once (two printed repeats)."
+      }
     },
     {
       "paperId": "english-2024-ol-p2",

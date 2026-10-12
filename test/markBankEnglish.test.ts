@@ -268,9 +268,11 @@ describe('English prompt and source integrity', () => {
       'english-2024-ol-p1-t2-a-ii',
       'english-2024-ol-p1-t3-a-iii-b',
     ];
+    // A bridged paper serves these ids from its reviewed published card, which keeps the reader.
+    const served = new Map([...HIGHER, ...ORDINARY].map(card => [card.id, card]));
     for (const id of restoredContextDependentIds) {
       const authored = manifest.cards.find(card => card.id === id);
-      const runtime = byId.get(id);
+      const runtime = served.get(id);
       expect(authored?.sourceMaterial, id).toBeDefined();
       expect(runtime?.sourceMaterial, id).toBeDefined();
       expect(authored?.taskRequirements, id).toContain(

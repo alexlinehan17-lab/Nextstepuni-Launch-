@@ -3575,6 +3575,155 @@
       "attribution": "Building my Grandfather — Jonathan Edwards, as reproduced in the SEC 2024 paper.",
       "questionSha256": "568ae322ac5b0fd0883d11f4e7a4710ce93674019cf4fca9f86e09bc999c7cc3",
       "reason": "Paper PDF6 prints the introduction (Jonathan Edwards imagining an encounter with his grandfather), the title, the whole 26-line poem and the byline above both questions; visually verified."
+    },
+    "english-2024-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Challenge 1: A New School",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Elaine Feeney — adapted extract from her novel How to Build a Boat (longlisted for the 2023 Booker Prize), with Cover A and Cover B (PDF2–3). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "6d286f9a5b39a85b3101c365691951b3672219647083893ce4a4b1f3ac3bb7d0",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked; the whole printed text is retained."
+    },
+    "english-2024-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Challenge 1: A New School",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Elaine Feeney — adapted extract from her novel How to Build a Boat (longlisted for the 2023 Booker Prize), with Cover A and Cover B (PDF2–3). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "d14bd1ac15721d4c15f03b183f08b623b26fdef22acc63499282d38c149ed4e0",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked; the whole printed text is retained."
+    },
+    "english-2024-ol-p1-t1-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Challenge 1: A New School",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Elaine Feeney — adapted extract from her novel How to Build a Boat (longlisted for the 2023 Booker Prize), with Cover A and Cover B (PDF2–3). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "1de8eb015a4a7b5c2f4317b763c9802b42b07c14b2fcdb801bef309e2bef2225",
+      "reason": "The task compares Cover A and Cover B, printed on PDF3 within TEXT 1; the whole text is retained."
+    },
+    "english-2024-ol-p1-t1-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "is an adapted extract from the novel, “How to Build a Boat” by Elaine Feeney. It was",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "fc626a7ffe7ca903ae6deaf143ec14b378c11dc79bd16f244a9b9cc1cf0c65f5",
+      "questionSha256": "7a5104c977428c89bb63f066eb24c45b3b7c5a8459eda5d606a2bc246ac8f989",
+      "reason": "Self-contained: the greatest challenge ahead in the candidate’s own life and how they will deal with it. Scheme PDF5 assesses the candidate’s own account and never refers to TEXT 1. The same task is printed under all three texts."
+    },
+    "english-2024-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Challenge 2: Beat the Clock",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Ian O’Riordan — based on an article in The Irish Times profiling Rhasidat Adeleke, with one photograph (PDF4–5). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "6cc18216edcdb28b486cdc4ade6c29d8411322a4afa74aba37f24f0e84bb98a7",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked; the whole printed text is retained."
+    },
+    "english-2024-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Challenge 2: Beat the Clock",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Ian O’Riordan — based on an article in The Irish Times profiling Rhasidat Adeleke, with one photograph (PDF4–5). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "ac90242218461eee80c3b54f7b52ad048e29f79cb58bf8dff8fe92e67134284c",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked; the whole printed text is retained."
+    },
+    "english-2024-ol-p1-t2-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Challenge 2: Beat the Clock",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Ian O’Riordan — based on an article in The Irish Times profiling Rhasidat Adeleke, with one photograph (PDF4–5). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "036e848856aa2449b80838d7f60bd7932f9a4e3f975f1d136fbbdbd78a44b92d",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked; the whole printed text is retained."
+    },
+    "english-2024-ol-p1-t2-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "CHALLENGE 2: BEAT THE CLOCK",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "fc626a7ffe7ca903ae6deaf143ec14b378c11dc79bd16f244a9b9cc1cf0c65f5",
+      "questionSha256": "7a5104c977428c89bb63f066eb24c45b3b7c5a8459eda5d606a2bc246ac8f989",
+      "reason": "Self-contained: the greatest challenge ahead in the candidate’s own life and how they will deal with it. Scheme PDF7 assesses the candidate’s own account and never refers to TEXT 2. The same task is printed under all three texts."
+    },
+    "english-2024-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Challenge 3: Life Challenges",
+      "pages": [
+        6
+      ],
+      "attribution": "Ten numbered quotations about challenges (PDF6) and four photographs, Images A–D (PDF6–7). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "b6680f0e07d0bf8093eb37e38df4fdf36123b809aaef8c5f85558fac0ca453d7",
+      "reason": "The task chooses from “the written text in TEXT 3”: the ten numbered quotations, all on PDF6 with the heading and introduction."
+    },
+    "english-2024-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Challenge 3: Life Challenges",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Ten numbered quotations about challenges (PDF6) and four photographs, Images A–D (PDF6–7). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "26c2d282dca1e9c7f33fc1e3c7b3b54bc73e375001e9344270920f547170b02e",
+      "reason": "The four images, A and B on PDF6 and C and D on PDF7, are all needed."
+    },
+    "english-2024-ol-p1-t3-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Challenge 3: Life Challenges",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Ten numbered quotations about challenges (PDF6) and four photographs, Images A–D (PDF6–7). As reproduced in the SEC 2024 paper.",
+      "questionSha256": "f092288968606b6a8265f65af3c0209c9036e05f6945ba62198278cd82719a0c",
+      "reason": "The task adds two images to “the above collection of images”, spanning PDF6–7."
+    },
+    "english-2024-ol-p1-t3-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "CHALLENGE 3: LIFE CHALLENGES",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "fc626a7ffe7ca903ae6deaf143ec14b378c11dc79bd16f244a9b9cc1cf0c65f5",
+      "questionSha256": "7a5104c977428c89bb63f066eb24c45b3b7c5a8459eda5d606a2bc246ac8f989",
+      "reason": "Self-contained: the greatest challenge ahead in the candidate’s own life and how they will deal with it. Scheme PDF9 assesses the candidate’s own account and never refers to TEXT 3. The same task is printed under all three texts."
     }
   }
 }
