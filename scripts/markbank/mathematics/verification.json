@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "passed on 2026-10-12 after 2021 OL Paper 2 (all reviewed papers to date)",
+  "productionBuild": "passed on 2026-10-12 after 2019 OL Paper 2 (all reviewed papers to date)",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -1207,5 +1207,41 @@
     "schemePagesInspected": 24,
     "coverageBaseline": "1451/3474 asks covered, 0 orphans, 0 excluded, 2023 open",
     "validation": "Deck generation (1,870 built, 0 dropped), Atlas generation and --check (458 placements), audit --check-reviewed, scheme quote check of all 39 cards, ten regression files (348/348), typecheck and diff whitespace check passed."
+  },
+  "browserBatch6": {
+    "engine": "Chrome via Playwright, local Vite on port 5701 with the worktree's PDF mirror (2019 and 2020 paper and scheme links added locally, uncommitted)",
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "cards": [
+      "maths-2020-hl-p1-q7-d",
+      "maths-2020-hl-p2-q4-a",
+      "maths-2020-ol-p2-q3-a-i",
+      "maths-2019-hl-p1-q1-a",
+      "maths-2019-ol-p1-q7-b-i",
+      "maths-2019-ol-p2-q9-a"
+    ],
+    "questionPagesRender": true,
+    "twoPageSource": "maths-2019-ol-p1-q7-b-i reaches 2 / 2 and renders PDF page 17 on both viewports; a capture taken before the page scroll settled showed blank margin, a re-check after 2 s showed the page",
+    "schemeHiddenBeforeReveal": true,
+    "exclusiveScaleAwards": {
+      "hl15D_p1": 7,
+      "hl15D_p2_conflict": 11,
+      "ol5C": 3,
+      "hl10D_2019": 5,
+      "ol20D": 15,
+      "ol15C_2019": 9
+    },
+    "scalesShown": "15D shows No / Low / Mid / High partial / Full credit −1 / Full credit (0, 4, 7, 11, 14, 15); 2020 HL P2 Q4(a) follows the 15D printed beside the solution",
+    "schemeReaderRenders": true,
+    "escapeAndFocusReturn": true,
+    "pageErrors": []
   }
 }
