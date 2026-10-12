@@ -100,7 +100,16 @@ def expand(task, decision):
         if decision['kind'] not in ('open', 'flexible', 'required', 'context'):
             raise ValueError(task['id'] + ': unclassified selection directive')
         return [task]
-    return route_variants(task, decision)
+    raise ValueError(FINITE_REFUSAL.format(task=task['id']))
+
+
+# Route cards are only for a choice the scheme marks with different content
+# per route (rows, menus, allocations or indicative material). A route here
+# is the task plus a choice label and nothing else, so a `finite` decision is
+# always a choice-only group: refuse it wherever it is expanded (record
+# scripts, gates, the publisher), instead of relying on a later collapse.
+FINITE_REFUSAL = ('{task}: a finite decision makes route cards that differ only in a choice label; record it as '
+                  '"printed-choice" (one card; coordinator rule 2026-10-12)')
 
 
 def enumerate_choices(tasks, decisions):

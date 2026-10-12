@@ -31,8 +31,8 @@
    "level": "ordinary",
    "paper": 1,
    "tasks": 22,
-   "cards": 22,
-   "printedDuplicates": 0,
+   "cards": 20,
+   "printedDuplicates": 2,
    "paperSha256": "c9845f45521246b3c63a72b1e18f9eec1cad1e4e90012fed5fef045e5ac26f79",
    "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7"
   },
@@ -1091,7 +1091,7 @@
  "bridgedPapers": [],
  "bridgedLegacyIds": [],
  "bridgeAliases": {},
- "cardCount": 924,
+ "cardCount": 922,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -5789,14 +5789,13 @@
     "Sustain a clear, purposeful response in an appropriate register."
    ],
    "sourceMaterial": {
-    "kind": "source-text",
-    "label": "TEXT 1",
-    "title": "Joanne O’Riordan — United Nations speech",
+    "kind": "source-illustration",
+    "label": "QUESTION PAGE",
+    "title": "Question A (iii)(b), as printed after TEXT 1",
     "pages": [
-     2,
      3
     ],
-    "attribution": "Joanne O’Riordan. Material as reproduced in the official SEC paper.",
+    "attribution": "Question page as reproduced in the SEC 2018 Ordinary Level English Paper 1.",
     "presentationNote": "Official State Examinations Commission examination layout."
    },
    "schemePages": [
@@ -5814,7 +5813,17 @@
    "atlas": {
     "fileid": "LC002GLP100EV.pdf",
     "n": "8"
-   }
+   },
+   "atlasPlacements": [
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "10"
+    },
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "12"
+    }
+   ]
   },
   {
    "id": "english-2018-ol-p1-t1-b",
@@ -5985,49 +5994,6 @@
    }
   },
   {
-   "id": "english-2018-ol-p1-t2-a-iii-b",
-   "year": 2018,
-   "level": "ordinary",
-   "paper": 1,
-   "questionRef": "2018 OL Paper 1 Text 2 QA(iii)(b)",
-   "questionText": "The theme of this examination paper is “Inspiring People”. Identify someone, other than Joanne O’Riordan, Gary or Paul O’Donovan or Kailash Satyarthi, who inspires you and explain why you find this person inspiring.",
-   "totalMarks": 10,
-   "topicId": "english-10-0",
-   "conceptId": "english-comprehending-insights",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-text",
-    "label": "TEXT 2",
-    "title": "The Big Interview: How Paul’s Drive Ignited the Champion in Gary O’Donovan",
-    "pages": [
-     4,
-     5
-    ],
-    "attribution": "Larry Ryan. Material as reproduced in the official SEC paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "schemePages": [
-    8
-   ],
-   "assessment": {
-    "mode": "combined",
-    "grid": "2018-ordinary",
-    "allocation": {
-     "P+C": 6,
-     "L+M": 4
-    }
-   },
-   "paperFileid": "LC002GLP100EV",
-   "atlas": {
-    "fileid": "LC002GLP100EV.pdf",
-    "n": "10"
-   }
-  },
-  {
    "id": "english-2018-ol-p1-t2-b",
    "year": 2018,
    "level": "ordinary",
@@ -6162,49 +6128,6 @@
     "Address every instruction in the printed task.",
     "Read and use the official source material supplied with the card.",
     "Develop the required two points fully.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-text",
-    "label": "TEXT 3",
-    "title": "Kailash Satyarthi — interview and child-labour poster",
-    "pages": [
-     6,
-     7
-    ],
-    "attribution": "Interview source: UNESCO; poster as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "schemePages": [
-    10
-   ],
-   "assessment": {
-    "mode": "combined",
-    "grid": "2018-ordinary",
-    "allocation": {
-     "P+C": 6,
-     "L+M": 4
-    }
-   },
-   "paperFileid": "LC002GLP100EV",
-   "atlas": {
-    "fileid": "LC002GLP100EV.pdf",
-    "n": "12"
-   }
-  },
-  {
-   "id": "english-2018-ol-p1-t3-a-iii-b",
-   "year": 2018,
-   "level": "ordinary",
-   "paper": 1,
-   "questionRef": "2018 OL Paper 1 Text 3 QA(iii)(b)",
-   "questionText": "The theme of this examination paper is “Inspiring People”. Identify someone, other than Joanne O’Riordan, Gary or Paul O’Donovan or Kailash Satyarthi, who inspires you and explain why you find this person inspiring.",
-   "totalMarks": 10,
-   "topicId": "english-10-0",
-   "conceptId": "english-comprehending-insights",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
    "sourceMaterial": {

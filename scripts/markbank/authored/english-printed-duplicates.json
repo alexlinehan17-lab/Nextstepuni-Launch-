@@ -1,6 +1,18 @@
 {
   "rule": "A task printed more than once on the same paper with identical wording, tariff, marking and reader is ONE card (the canonical placement); the publisher refuses an undeclared identical task and checks every declared one, and the Atlas keeps every printed placement.",
   "duplicates": {
+    "english-2018-ol-p1-t2-a-iii-b": {
+      "canonical": "english-2018-ol-p1-t1-a-iii-b",
+      "reason": "Printed identically under TEXT 1, 2 and 3 (paper PDF3, PDF5, PDF7) and asks about someone other than Joanne O’Riordan, Gary or Paul O’Donovan or Kailash Satyarthi, so no single text’s reader applies (coordinator decision, 2026-10-12). The card shows the printed question page (Text 1 placement, PDF3, viewed) instead of a TEXT reader; the Atlas keeps all three printed placements."
+    },
+    "english-2018-ol-p1-t3-a-iii-b": {
+      "canonical": "english-2018-ol-p1-t1-a-iii-b",
+      "reason": "Printed identically under TEXT 1, 2 and 3 (paper PDF3, PDF5, PDF7) and asks about someone other than Joanne O’Riordan, Gary or Paul O’Donovan or Kailash Satyarthi, so no single text’s reader applies (coordinator decision, 2026-10-12). The card shows the printed question page (Text 1 placement, PDF3, viewed) instead of a TEXT reader; the Atlas keeps all three printed placements."
+    },
+    "english-2018-ol-p2-comparative-a-q2-b": {
+      "canonical": "english-2018-ol-p2-comparative-a-q1-b",
+      "reason": "Q1(b) and Q2(b) are printed with identical wording and tariff (40) under one mode, on the same page (paper PDF11) and marked from the same scheme page; one practice identity, keeping both printed placements in the Atlas."
+    },
     "english-2026-ol-p1-t2-a-iii-a": {
       "canonical": "english-2026-ol-p1-t1-a-iii-a",
       "reason": "Printed identically after TEXT 1, TEXT 2 and TEXT 3 (paper PDF3, PDF5, PDF7), same tariff (10), no reader required; one practice identity as in the 2022–2025 Ordinary Level convention, keeping all three printed placements in the Atlas."
@@ -20,10 +32,6 @@
     "english-2026-ol-p2-comparative-c-q2-b": {
       "canonical": "english-2026-ol-p2-comparative-c-q1-b",
       "reason": "Q1(b) and Q2(b) are printed with identical wording and tariff (40) under one mode, on the same page (paper PDF13) and marked from the same scheme page; one practice identity, keeping both printed placements in the Atlas."
-    },
-    "english-2018-ol-p2-comparative-a-q2-b": {
-      "canonical": "english-2018-ol-p2-comparative-a-q1-b",
-      "reason": "Q1(b) and Q2(b) are printed with identical wording and tariff (40) under one mode, on the same page (paper PDF11) and marked from the same scheme page; one practice identity, keeping both printed placements in the Atlas."
     }
   }
 }

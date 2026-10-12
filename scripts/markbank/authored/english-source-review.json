@@ -786,15 +786,14 @@
       "questionSha256": "96e8ad6bce51ae6df1e5f3479dec958a8642789410c407786995d3e533fd9d19"
     },
     "english-2018-ol-p1-t1-a-iii-b": {
-      "kind": "source-text",
-      "label": "TEXT 1",
-      "title": "Joanne O’Riordan — United Nations speech",
+      "kind": "source-illustration",
+      "label": "QUESTION PAGE",
+      "title": "Question A (iii)(b), as printed after TEXT 1",
       "pages": [
-        2,
         3
       ],
-      "attribution": "Joanne O’Riordan. Material as reproduced in the official SEC paper.",
-      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "attribution": "Question page as reproduced in the SEC 2018 Ordinary Level English Paper 1.",
+      "reason": "Printed identically under TEXT 1, 2 and 3 (paper PDF3, PDF5, PDF7) and asks about someone other than Joanne O’Riordan, Gary or Paul O’Donovan or Kailash Satyarthi, so no single text’s reader applies (coordinator decision, 2026-10-12). The card shows the printed question page (Text 1 placement, PDF3, viewed) instead of a TEXT reader; the Atlas keeps all three printed placements.",
       "questionSha256": "b7f528cea6a64820aafc6bfe30ab1ea20e308a8deae7d65c69306f116ac8fcad"
     },
     "english-2018-ol-p1-t2-a-i": {
@@ -834,15 +833,14 @@
       "questionSha256": "98970d36b97aa6247dd6a9d55d412f0bb0c3fdacc6d3a420aae02bf27cb03d8b"
     },
     "english-2018-ol-p1-t2-a-iii-b": {
-      "kind": "source-text",
-      "label": "TEXT 2",
-      "title": "The Big Interview: How Paul’s Drive Ignited the Champion in Gary O’Donovan",
+      "kind": "source-illustration",
+      "label": "QUESTION PAGE",
+      "title": "Question A (iii)(b), as printed after TEXT 1",
       "pages": [
-        4,
-        5
+        3
       ],
-      "attribution": "Larry Ryan. Material as reproduced in the official SEC paper.",
-      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "attribution": "Question page as reproduced in the SEC 2018 Ordinary Level English Paper 1.",
+      "reason": "Printed identically under TEXT 1, 2 and 3 (paper PDF3, PDF5, PDF7) and asks about someone other than Joanne O’Riordan, Gary or Paul O’Donovan or Kailash Satyarthi, so no single text’s reader applies (coordinator decision, 2026-10-12). The card shows the printed question page (Text 1 placement, PDF3, viewed) instead of a TEXT reader; the Atlas keeps all three printed placements.",
       "questionSha256": "b7f528cea6a64820aafc6bfe30ab1ea20e308a8deae7d65c69306f116ac8fcad"
     },
     "english-2018-ol-p1-t3-a-i": {
@@ -882,15 +880,14 @@
       "questionSha256": "13957c2f6d9fc8ff3339c58eb55b17e5544069454c23d998f8e8df4bd63950eb"
     },
     "english-2018-ol-p1-t3-a-iii-b": {
-      "kind": "source-text",
-      "label": "TEXT 3",
-      "title": "Kailash Satyarthi — interview and child-labour poster",
+      "kind": "source-illustration",
+      "label": "QUESTION PAGE",
+      "title": "Question A (iii)(b), as printed after TEXT 1",
       "pages": [
-        6,
-        7
+        3
       ],
-      "attribution": "Interview source: UNESCO; poster as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
-      "reason": "Full source and all accompanying images visually inspected. The 2018 Higher Text3 illustrated poem occupies p.6 only; p.7 contains questions.",
+      "attribution": "Question page as reproduced in the SEC 2018 Ordinary Level English Paper 1.",
+      "reason": "Printed identically under TEXT 1, 2 and 3 (paper PDF3, PDF5, PDF7) and asks about someone other than Joanne O’Riordan, Gary or Paul O’Donovan or Kailash Satyarthi, so no single text’s reader applies (coordinator decision, 2026-10-12). The card shows the printed question page (Text 1 placement, PDF3, viewed) instead of a TEXT reader; the Atlas keeps all three printed placements.",
       "questionSha256": "b7f528cea6a64820aafc6bfe30ab1ea20e308a8deae7d65c69306f116ac8fcad"
     },
     "english-2010-hl-p1-t1-a-i": {

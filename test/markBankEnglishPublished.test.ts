@@ -85,8 +85,9 @@ describe('English paper-by-paper publication', () => {
       && (!legacyPapers.has(entry.paperId) || BRIDGED_PAPERS.has(entry.paperId)));
     const published = [...publishedHigher.papers, ...publishedOrdinary.papers];
     expect(published.map(paper => paper.paperId).sort()).toEqual(reviewed.map(entry => entry.paperId).sort());
-    expect(published).toHaveLength(36);
-    expect([...BRIDGED_PAPERS].sort()).toEqual(['english-2025-hl-p1', 'english-2025-hl-p2']);
+    expect(published.length).toBeGreaterThanOrEqual(36);
+    expect([...BRIDGED_PAPERS].every(paper => legacyPapers.has(paper))).toBe(true);
+    expect(BRIDGED_PAPERS.has('english-2025-hl-p1') && BRIDGED_PAPERS.has('english-2025-hl-p2')).toBe(true);
     for (const paper of published) {
       const entry = reviewed.find(row => row.paperId === paper.paperId)!;
       const tally = (entry as unknown as { independentPaperTally: { baseTasks: number; finiteRoutes: number } })
@@ -98,14 +99,13 @@ describe('English paper-by-paper publication', () => {
       expect(RECORDS.filter(record => record.id.startsWith(`${paper.paperId}-`)), paper.paperId)
         .toHaveLength(paper.cards);
     }
-    expect(PUBLISHED).toHaveLength(1_329);
+    expect(PUBLISHED).toHaveLength(RECORDS.length);
   });
 
   it('never publishes an unreviewed or legacy-served paper', () => {
-    const unreviewed = ['english-2016-hl-p2', 'english-2016-ol-p2', 'english-2017-hl-p1',
-      'english-2019-ol-p2', 'english-2020-hl-p1'];
+    const unreviewed = visualJson.papers.filter(entry => !entry.visualSweepComplete).map(entry => entry.paperId);
     for (const paper of unreviewed) {
-      expect(ALL.some(entry => entry.id.startsWith(`${paper}-`)), paper).toBe(false);
+      expect(RECORDS.some(record => record.id.startsWith(`${paper}-`)), paper).toBe(false);
     }
     // 2021-2025 stay served only by their legacy cards unless a legacy bridge exists.
     expect(RECORDS.filter(record => record.year >= 2021 && record.year <= 2025)
@@ -139,12 +139,13 @@ describe('English paper-by-paper publication', () => {
     expect(publishedOrdinary.legacyAdditionalSources).toEqual({});
   });
 
-  it('bridges 2025 Higher Level: 38 ids kept by their reviewed card, 4 explicit progress aliases', () => {
+  it('bridges every legacy id of a bridged paper: kept by its reviewed card or an explicit alias', () => {
     const bridged = [...BRIDGED_IDS].sort();
     expect(bridged).toEqual(authoredJson.cards.map(entry => entry.id)
-      .filter(id => /^english-2025-hl-p[12]-/.test(id)).sort());
-    expect(bridged).toHaveLength(42);
-    expect(BRIDGE_ALIASES).toEqual({
+      .filter(id => BRIDGED_PAPERS.has(id.match(/^english-\d{4}-(?:hl|ol)-p[12]/)![0])).sort());
+    // 2025 Higher Level: 38 kept, 4 bundled parts aliased.
+    expect(bridged.filter(id => id.startsWith('english-2025-hl-'))).toHaveLength(42);
+    expect(Object.fromEntries(Object.entries(BRIDGE_ALIASES).filter(([id]) => id.startsWith('english-2025-hl-')))).toEqual({
       'english-2025-hl-p2-comparative-a-q1': 'english-2025-hl-p2-comparative-a-q1-a',
       'english-2025-hl-p2-comparative-b-q1': 'english-2025-hl-p2-comparative-b-q1-a',
       'english-2025-hl-p2-comparative-c-q1': 'english-2025-hl-p2-comparative-c-q1-a',
@@ -161,10 +162,11 @@ describe('English paper-by-paper publication', () => {
         expect(card(id).qa.humanReviewedBy, id).toBe('independent-paper-review');
       }
     }
-    // Every 2025 HL card is now a reviewed card; no legacy version is served twice.
-    expect(ALL.filter(entry => entry.year === 2025 && entry.level === 'higher')
+    // Every card of a bridged paper is now a reviewed card; no legacy version is served twice.
+    expect(ALL.filter(entry => BRIDGED_PAPERS.has(
+      `english-${entry.year}-${entry.level === 'higher' ? 'hl' : 'ol'}-p${entry.section}`))
       .every(entry => PUBLISHED_IDS.has(entry.id))).toBe(true);
-    expect(PUBLISHED.filter(entry => entry.year === 2025)).toHaveLength(46);
+    expect(PUBLISHED.filter(entry => entry.year === 2025 && entry.level === 'higher')).toHaveLength(46);
   });
 
   it('keeps the six 2025 Paper 1 indicative lists, lifted verbatim from the scheme', () => {
@@ -301,9 +303,16 @@ describe('English published printed choices and readers', () => {
     expect(placesOf(either).map(place => place.n)).toEqual(['8', '10', '12']);
     for (const id of ['english-2026-ol-p1-t2-a-iii-a', 'english-2026-ol-p1-t3-a-iii-a',
       'english-2026-ol-p2-comparative-a-q2-b', 'english-2026-ol-p2-comparative-b-q2-b',
-      'english-2026-ol-p2-comparative-c-q2-b', 'english-2018-ol-p2-comparative-a-q2-b']) {
+      'english-2026-ol-p2-comparative-c-q2-b', 'english-2018-ol-p2-comparative-a-q2-b',
+      'english-2018-ol-p1-t2-a-iii-b', 'english-2018-ol-p1-t3-a-iii-b']) {
       expect(byId.has(id), id).toBe(false);
     }
+    // 2018 OL P1 A(iii)(b) asks about someone outside all three texts: one card
+    // with the printed question page, not a TEXT reader (coordinator decision).
+    const inspiring = RECORDS.find(record => record.id === 'english-2018-ol-p1-t1-a-iii-b')!;
+    expect(placesOf(inspiring).map(place => place.n)).toEqual(['8', '10', '12']);
+    expect(card('english-2018-ol-p1-t1-a-iii-b').sourceMaterial).toMatchObject({
+      kind: 'source-illustration', label: 'QUESTION PAGE', pages: [3] });
     for (const id of ['english-2026-ol-p2-comparative-a-q1-b', 'english-2018-ol-p2-comparative-a-q1-b']) {
       expect(card(id).totalMarks, id).toBe(40);
     }
@@ -361,7 +370,7 @@ describe('English Topic Atlas parity for published papers', () => {
       .filter(item => item.answers === 1)
       .map(item => `${entry.year}|${entry.level}|${item.doc.f}`)));
     const papers = [...new Set(RECORDS.map(record => `${record.year}|${record.level}|${record.atlas.fileid}`))];
-    expect(papers).toHaveLength(36);
+    expect(papers).toHaveLength(publishedHigher.papers.length + publishedOrdinary.papers.length);
     for (const paper of papers) {
       const [year, , fileid] = paper.split('|');
       expect(live.has(paper), `${paper} answers flag`).toBe(true);

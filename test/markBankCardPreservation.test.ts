@@ -392,20 +392,18 @@ const decks = [
    * tasks and finite printed routes, each on its own year's printed grid and
    * cap rule. Every one of the 650 legacy 2021-2025 ids is unchanged; the
    * legacy-only hashes below are the previous frozen baselines verbatim. */
-  /* 2026-10-11 (bridge): 2025 HL Paper 1 and Paper 2 are published from
-   * their independent review through english-legacy-bridge.json. Their 42
-   * legacy ids all survive: 38 are kept by the reviewed card and 4 (bundled
-   * Comparative Q1 and Unseen Q1 parts) are explicit progress aliases in
-   * cardAliases.ts. The legacy proof below still reproduces the frozen
-   * 210-id hash from live and bridged ids.
-   * 2026-10-12 (coordinator rule): a printed choice the scheme marks
-   * identically for every option is ONE card, and a task printed twice on one
-   * paper is one card. 778 route cards collapse into 150 printed-choice cards
-   * and 6 printed repeats merge; all of them existed only on the English
-   * branch (never on main), so no saved progress referred to them. No legacy
-   * id is touched. Higher 610 -> 573, Ordinary 1961 -> 1364. */
+  /* English (2026-10-11/12). Legacy 2021-2025 cards come from authored.json;
+   * independently reviewed papers are published by english_publish.py. A
+   * legacy paper is published only through english-legacy-bridge.json: each
+   * legacy id is kept by its reviewed card or becomes a progress alias, and
+   * the legacy proof below reproduces the frozen 210/440-id hashes from live
+   * plus bridged ids. A printed choice marked identically for every option is
+   * one card, and a task printed twice on a paper is one card (coordinator
+   * rule, 2026-10-12); the 778 route cards and 8 repeats that rule removed
+   * existed only on the English branch, never on main. These two counts and
+   * hashes are refreshed by tmp/english-audit/refresh-pins.py per paper. */
   ['english:higher', ENGLISH_HIGHER, 573, '2cbf9c4fc0d2031107e521637fb01f151f1bf1d3f74621648f877eae18e65776'],
-  ['english:ordinary', ENGLISH_ORDINARY, 1364, 'a4824ee1eb898a7e02b1f06e9984aa80dbebcb185f70af424b59f4e45012853a'],
+  ['english:ordinary', ENGLISH_ORDINARY, 1362, 'a8a4f8ec714be0d5e6dbc53db55015ae10c87a11a82ecfe521e6214c68db22d0'],
   /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
    * responses across 2021–2025 Higher and Ordinary are present, including
    * listening audio and the real PDF pages for passages and printed poems. */
@@ -449,7 +447,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(11_782);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(11_780);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -463,13 +461,13 @@ describe('Mark Bank card preservation', () => {
       .filter(([name]) => !name.startsWith('computer-science:')
         && !name.startsWith('engineering:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_018);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_016);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
     const published = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
       .map(card => card.id));
-    expect(published.size).toBe(1_329);
+    expect(published.size).toBe(1_327);
     // No route card is published: a printed choice marked identically is one card.
     expect([...published].some(id => id.includes('-route-'))).toBe(false);
     // Legacy ids of bridged papers (2025 HL) are no longer served as legacy
@@ -477,7 +475,7 @@ describe('Mark Bank card preservation', () => {
     const bridged = [...publishedEnglishHigher.bridgedLegacyIds, ...publishedEnglishOrdinary.bridgedLegacyIds];
     const bridgeAliases: Record<string, string> = {
       ...publishedEnglishHigher.bridgeAliases, ...publishedEnglishOrdinary.bridgeAliases };
-    expect(bridged).toHaveLength(42);
+    expect(bridged).toHaveLength(42);  // refreshed by tmp/english-audit/refresh-pins.py
     for (const id of bridged) {
       const kept = published.has(id) && !(id in bridgeAliases);
       const aliased = CARD_ID_ALIASES[id] === bridgeAliases[id] && published.has(bridgeAliases[id]);
@@ -487,7 +485,7 @@ describe('Mark Bank card preservation', () => {
     // the still-legacy cards plus the bridged ids reproduce the frozen hashes.
     const legacyIds = (cards: readonly { id: string }[], level: 'hl' | 'ol') => [
       ...cards.filter(card => !published.has(card.id)),
-      ...bridged.filter(id => id.startsWith(`english-2025-${level}-`)).map(id => ({ id })),
+      ...bridged.filter(id => /^english-\d{4}-(hl|ol)-/.exec(id)?.[1] === level).map(id => ({ id })),
     ];
     expect(identityHash(legacyIds(ENGLISH_HIGHER, 'hl')))
       .toBe('231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0');

@@ -3569,7 +3569,7 @@
       "reason": "Full paper visually inspected; exact prompt, marked boundary and criteria cross-checked against the cited scheme pages. Required multiple aspects share one tariff. Closed printed options retain the full tariff per route; flexible tone, evidence counts and qualified evaluations remain open."
     },
     "english-2018-ol-p1-t1-a-iii-b": {
-      "taskSha256": "1302619f8dc30ee0f35a712d88630d8fb65f1dd79d1fbbab98b3f3236aeee709",
+      "taskSha256": "ea77612db7b16a2728dcf9833d6c7010e697ec0b7b3ee6fef60b269a1c05012a",
       "paperSha256": "c9845f45521246b3c63a72b1e18f9eec1cad1e4e90012fed5fef045e5ac26f79",
       "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
       "totalMarks": 10,
@@ -3681,7 +3681,7 @@
       "reason": "Full paper visually inspected; exact prompt, marked boundary and criteria cross-checked against the cited scheme pages. Required multiple aspects share one tariff. Closed printed options retain the full tariff per route; flexible tone, evidence counts and qualified evaluations remain open."
     },
     "english-2018-ol-p1-t2-a-iii-b": {
-      "taskSha256": "97da5297108eef81cdd9973a5ff1ea83fed4c82966954318ed036645d88a1970",
+      "taskSha256": "575a8d10b9e2451ccfc6570d4383605810a7f1649f87dd28c94bf164db067cff",
       "paperSha256": "c9845f45521246b3c63a72b1e18f9eec1cad1e4e90012fed5fef045e5ac26f79",
       "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
       "totalMarks": 10,
@@ -3793,7 +3793,7 @@
       "reason": "Full paper visually inspected; exact prompt, marked boundary and criteria cross-checked against the cited scheme pages. Required multiple aspects share one tariff. Closed printed options retain the full tariff per route; flexible tone, evidence counts and qualified evaluations remain open."
     },
     "english-2018-ol-p1-t3-a-iii-b": {
-      "taskSha256": "867e3a9addfaee559b89e46f2613c973d1409f62d7c0c42e13fe721ef50434b6",
+      "taskSha256": "c471c52e841121a34a4ea8bb5b1175af5dce5cf95b6ca98668d2116b4907a40b",
       "paperSha256": "c9845f45521246b3c63a72b1e18f9eec1cad1e4e90012fed5fef045e5ac26f79",
       "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
       "totalMarks": 10,

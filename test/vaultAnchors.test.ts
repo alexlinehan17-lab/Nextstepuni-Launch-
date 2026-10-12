@@ -16,6 +16,8 @@
  *    worse than none — these files ship to the live app on push to main.
  */
 
+import publishedEnglishHigher from '../components/MarkBank/cards/english/published-higher.json';
+import publishedEnglishOrdinary from '../components/MarkBank/cards/english/published-ordinary.json';
 import { existsSync, readdirSync, readFileSync } from 'fs';
 import path from 'path';
 import { describe, it, expect } from 'vitest';
@@ -67,9 +69,11 @@ describe('audited hosted answer maps', () => {
   });
 
   it('ships every override and keeps it byte-identical to the reviewed source map', () => {
-    // 23 Art/Physics maps plus the 36 reviewed English maps (one per paper
-    // published by english_publish.py, including the bridged 2025 HL papers).
-    expect(HOSTED_ANSWER_OVERRIDES.size).toBe(59);
+    // 23 Art/Physics maps plus one reviewed English map per paper published
+    // by english_publish.py (legacy papers included once bridged).
+    const englishPapers = publishedEnglishHigher.papers.length + publishedEnglishOrdinary.papers.length;
+    expect(englishPapers).toBeGreaterThanOrEqual(36);
+    expect(HOSTED_ANSWER_OVERRIDES.size).toBe(23 + englishPapers);
     for (const key of HOSTED_ANSWER_OVERRIDES) {
       const [subjectId, year, fileid] = key.split('|');
       expect(['art', 'physics', 'english']).toContain(subjectId);

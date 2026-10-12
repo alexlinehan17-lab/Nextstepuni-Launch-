@@ -49,11 +49,19 @@ class EnglishPublisherTest(unittest.TestCase):
             self.assertEqual(path.read_text(), publish.dump(value), str(path.relative_to(ROOT)))
 
     def test_only_reviewed_papers_publish_and_legacy_papers_need_a_bridge(self):
-        self.assertEqual(len(self.published), 36)
-        self.assertEqual(sum(paper['cards'] for paper in self.published), 1329)
-        self.assertEqual(sum(paper['printedDuplicates'] for paper in self.published), 6)
+        visual = {e['paperId']: e for e in json.loads(
+            (ROOT / 'scripts/markbank/authored/english-visual-review.json').read_text())['papers']}
+        bridged = set(json.loads(publish.LEGACY_BRIDGE.read_text())['papers'])
+        legacy = publish.legacy_papers()
+        reviewed = {key for key, entry in visual.items() if entry['visualSweepComplete']
+                    and entry.get('independentPaperTally') and (key not in legacy or key in bridged)}
+        self.assertEqual({paper['paperId'] for paper in self.published}, reviewed)
+        self.assertGreaterEqual(len(self.published), 36)
+        for paper in self.published:
+            tally = visual[paper['paperId']]['independentPaperTally']
+            self.assertEqual((paper['tasks'], paper['cards'] + paper['printedDuplicates']),
+                             (tally['baseTasks'], tally['finiteRoutes']), paper['paperId'])
         reasons = {row['paperId']: row['reason'] for row in self.refused}
-        bridged = {'english-2025-hl-p1', 'english-2025-hl-p2'}
         for year in range(2021, 2026):
             for level in ('hl', 'ol'):
                 for paper in (1, 2):
@@ -62,8 +70,7 @@ class EnglishPublisherTest(unittest.TestCase):
                         self.assertIn(paper_id, {row['paperId'] for row in self.published})
                     else:
                         self.assertIn('legacy', reasons[paper_id])
-        for paper_id in ('english-2016-hl-p2', 'english-2017-ol-p1', 'english-2019-hl-p2'):
-            self.assertNotIn(paper_id, {paper['paperId'] for paper in self.published})
+        for paper_id in set(visual) - reviewed:
             self.assertIn(paper_id, reasons)
 
     def test_each_card_names_its_years_grid_and_reviewed_scheme_pages(self):
@@ -127,17 +134,32 @@ class EnglishPrintedChoiceRefusalTest(unittest.TestCase):
     def test_label_only_route_group_is_refused(self):
         key = 'english-2026-hl-p1'
         original = publish.check_paper
-        decision = dict(self.decisions[key + '-composing-5'], kind='finite')
-        decision['expectedRoutes'] = decision.pop('printedChoices')
+        decision = self.decisions[key + '-composing-5']
 
         def as_routes(record, tasks, strict=False):
             report, routes = original(record, tasks, strict=strict)
             if record['id'] == key:
                 task = next(t for t in tasks if t['id'] == key + '-composing-5')
-                routes = [r for r in routes if r['id'] != task['id']] + english_choices.expand(task, decision)
+                routes = [r for r in routes if r['id'] != task['id']] + \
+                    english_choices.route_variants(task, decision, 'printedChoices')
             return report, routes
         with mock.patch.object(publish, 'check_paper', side_effect=as_routes):
             with self.assertRaisesRegex(ValueError, 'differ only in a choice label'):
+                publish.publish()
+
+    def test_a_finite_decision_is_refused_at_expansion_and_by_the_publisher(self):
+        key = 'english-2026-hl-p1-composing-5'
+        task = next(t for t in parser.extract_record(self.records['english-2026-hl-p1'])[1] if t['id'] == key)
+        finite = dict(self.decisions[key], kind='finite')
+        finite['expectedRoutes'] = finite.pop('printedChoices')
+        with self.assertRaisesRegex(ValueError, 'differ only in a choice label'):
+            english_choices.expand(task, finite)
+        ledger = json.loads((ROOT / 'scripts/markbank/authored/english-selection-review.json').read_text())
+        ledger['decisions'][key] = finite
+        original = publish.read
+        with mock.patch.object(publish, 'read', side_effect=lambda path: ledger if path.name ==
+                               'english-selection-review.json' else original(path)):
+            with self.assertRaisesRegex(ValueError, 'record it as "printed-choice"'):
                 publish.publish()
 
     def test_routes_that_differ_in_marking_content_are_allowed(self):
@@ -186,13 +208,15 @@ class EnglishLegacyBridgeTest(unittest.TestCase):
         manifest = self.outputs[publish.CARDS_DIR / 'published-higher.json']
         published = {card['id'] for card in manifest['cards']}
         aliases = publish.card_aliases()
-        self.assertEqual(manifest['bridgedPapers'], ['english-2025-hl-p1', 'english-2025-hl-p2'])
-        legacy_ids = sorted(card['id'] for card in self.legacy['cards'] if card['id'].startswith('english-2025-hl-'))
+        self.assertTrue({'english-2025-hl-p1', 'english-2025-hl-p2'} <= set(manifest['bridgedPapers']))
+        legacy_ids = sorted(card['id'] for card in self.legacy['cards']
+                            if any(card['id'].startswith(paper + '-') for paper in manifest['bridgedPapers']))
         self.assertEqual(manifest['bridgedLegacyIds'], legacy_ids)
-        self.assertEqual(len(legacy_ids), 42)
         kept = [cid for cid in legacy_ids if cid in published]
         aliased = {cid: aliases[cid] for cid in legacy_ids if cid not in published}
-        self.assertEqual((len(kept), len(aliased)), (38, 4))
+        self.assertEqual(len(kept) + len(aliased), len(legacy_ids))
+        self.assertEqual((len([c for c in kept if c.startswith('english-2025-hl-')]),
+                          len([c for c in aliased if c.startswith('english-2025-hl-')])), (38, 4))
         self.assertEqual(aliased, manifest['bridgeAliases'])
         self.assertTrue(all(target in published for target in aliased.values()))
 

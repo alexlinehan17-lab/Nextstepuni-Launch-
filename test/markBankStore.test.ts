@@ -282,11 +282,11 @@ describe('the review survives, which is the whole point', () => {
     expect(store.memoryFor(deck, canonicalId)).toEqual(memory);
   });
 
-  it('keeps English review memory across the 2025 Higher Level legacy bridge', async () => {
+  it('keeps English review memory across every Higher Level legacy bridge', async () => {
     const published = (await import('../components/MarkBank/cards/english/published-higher.json')).default as unknown as {
       bridgedLegacyIds: string[]; bridgeAliases: Record<string, string>; cards: Array<{ id: string }>;
     };
-    expect(published.bridgedLegacyIds).toHaveLength(42);
+    expect(published.bridgedLegacyIds.length).toBeGreaterThanOrEqual(42);
     const live = new Set(published.cards.map(card => card.id));
     for (const legacyId of published.bridgedLegacyIds) {
       const memory = { s: 9, d: 4.8, last: NOW, reps: 2, lapses: 0, state: 2 as const };

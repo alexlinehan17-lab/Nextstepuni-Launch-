@@ -32,6 +32,7 @@ import sys
 
 import fitz
 
+import english_choices
 from english_cards import comparable
 from english_complete import ROOT, inventory
 import english_full_cards as parser
@@ -351,6 +352,11 @@ def publish():
     bridges = read(LEGACY_BRIDGE)['papers'] if LEGACY_BRIDGE.exists() else {}
     reviews = read(AUTHORED / 'english-task-review.json')['tasks']
     printed_duplicates = read(PRINTED_DUPLICATES)['duplicates'] if PRINTED_DUPLICATES.exists() else {}
+    finite = sorted(tid for tid, decision in read(AUTHORED / 'english-selection-review.json')['decisions'].items()
+                    if decision['kind'] == 'finite')
+    if finite:
+        # Any paper, published or not: a choice-only route group never enters the ledger.
+        raise ValueError(english_choices.FINITE_REFUSAL.format(task=', '.join(finite)))
     visual = {entry['paperId']: entry for entry in read(AUTHORED / 'english-visual-review.json')['papers']}
 
     published, refused, cards = [], [], {'higher': [], 'ordinary': []}

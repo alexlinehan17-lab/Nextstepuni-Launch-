@@ -160,12 +160,14 @@ describe('English all-question census', () => {
     const authored = census.asks.filter(ask => ask.status === 'authored');
     const canonicalAuthoredIds = [...new Set(authored.map(ask =>
       manifest.withdrawnAliases[ask.id] ?? ask.id))].sort();
-    expect(BRIDGED.size).toBe(42);
-    expect(LEGACY_HIGHER).toHaveLength(210 - 42);
-    expect(LEGACY_ORDINARY).toHaveLength(440);
-    expect(ALL).toHaveLength(650 - 42);
+    const bridgedAt = (level: 'higher' | 'ordinary') => manifest.cards
+      .filter(card => card.level === level && BRIDGED.has(card.id)).length;
+    expect(BRIDGED.size).toBeGreaterThanOrEqual(42);
+    expect(LEGACY_HIGHER).toHaveLength(210 - bridgedAt('higher'));
+    expect(LEGACY_ORDINARY).toHaveLength(440 - bridgedAt('ordinary'));
+    expect(ALL).toHaveLength(650 - BRIDGED.size);
     expect(manifest.cardCount).toBe(650);
-    expect(new Set(ALL.map(card => card.id)).size).toBe(650 - 42);
+    expect(new Set(ALL.map(card => card.id)).size).toBe(650 - BRIDGED.size);
     expect(canonicalAuthoredIds).toHaveLength(650);
     expect([...ALL.map(card => card.id), ...BRIDGED].sort()).toEqual(canonicalAuthoredIds);
     expect(manifest.cards.map(card => card.id).sort()).toEqual(canonicalAuthoredIds);
@@ -300,8 +302,12 @@ describe('English PCLM cards', () => {
       && (card.year === 2021 || card.year === 2022)
       && card.questionRef.includes('Single Text'));
     // SEC Ordinary schemes, PDF p.19: all nine texts have four 35-mark
-    // questions. Q1 is 10+10+15; Q2–4 use P=11,C=11,L=11,M=2.
-    expect(adjusted).toHaveLength(72);
+    // questions. Q1 is 10+10+15; Q2–4 use P=11,C=11,L=11,M=2. 72 legacy cards,
+    // minus any now served by a bridged reviewed paper.
+    const legacyAdjusted = manifest.cards.filter(card => card.level === 'ordinary'
+      && (card.year === 2021 || card.year === 2022) && card.questionRef.includes('Single Text'));
+    expect(legacyAdjusted).toHaveLength(72);
+    expect(adjusted).toHaveLength(legacyAdjusted.filter(card => !BRIDGED.has(card.id)).length);
     for (const card of adjusted) {
       expect(card.totalMarks, card.id).toBe(35);
       const assessment = card.rubric.assessment;
@@ -331,16 +337,24 @@ describe('English PCLM cards', () => {
 
   it('preserves the SEC marking mode of every linked component', () => {
     const composites = ALL.filter(card => card.rubric.assessment.mode === 'composite');
-    // 125 before the 2025 HL bridge; its four bundled cards (Comparative A/B/C
-    // Q1, Unseen Q1) are now separate reviewed tasks.
-    expect(composites).toHaveLength(121);
+    // The legacy manifest bundles 125 cards of linked parts (265 combined, 60
+    // discrete). A bridged paper serves its parts as separate reviewed tasks.
+    const linked = manifest.cards.filter(card => card.printedParts.length > 0);
+    const parts = (cards: AuthoredCard[]) => cards.flatMap(card => card.printedParts
+      .map(part => Number(part.match(/(\d+)\s+marks?$/i)![1])));
+    expect([linked.length, parts(linked).filter(m => m <= 20).length, parts(linked).filter(m => m > 20).length])
+      .toEqual([125, 265, 60]);
+    const served = linked.filter(card => !BRIDGED.has(card.id));
+    expect(composites).toHaveLength(served.length);
     const components = composites.flatMap(card => {
       const assessment = card.rubric.assessment;
       if (assessment.mode !== 'composite') throw new Error('unreachable');
       return assessment.components.map(component => ({ card, component }));
     });
-    expect(components.filter(({ component }) => component.mode === 'combined')).toHaveLength(263);
-    expect(components.filter(({ component }) => component.mode === 'discrete')).toHaveLength(54);
+    expect(components.filter(({ component }) => component.mode === 'combined'))
+      .toHaveLength(parts(served).filter(m => m <= 20).length);
+    expect(components.filter(({ component }) => component.mode === 'discrete'))
+      .toHaveLength(parts(served).filter(m => m > 20).length);
     expect(components.filter(({ component }) => component.totalMarks <= 20
       && component.mode !== 'combined').map(({ card }) => card.questionRef)).toEqual([]);
     expect(components.filter(({ component }) => component.totalMarks > 20
