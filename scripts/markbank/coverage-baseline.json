@@ -2,12 +2,12 @@
  "agricultural-science": {
   "cards": 1426,
   "contentHash": "a79545cd40a6ab64",
-  "coveragePct": 55.5,
-  "covered": 1364,
+  "coveragePct": 52.0,
+  "covered": 1471,
   "excluded": 0,
-  "leaves": 2456,
-  "open": 1092,
-  "orphans": 89,
+  "leaves": 2830,
+  "open": 1359,
+  "orphans": 2,
   "papers": {
    "count": 34,
    "hash": "cc3b10d8b4ed8ab5"
