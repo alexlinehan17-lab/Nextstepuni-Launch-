@@ -21,6 +21,7 @@ import { logError } from '../utils/logError';
 import { trackFunnel } from '../utils/funnel';
 import { trackProgrammeEvent } from '../utils/programmeAnalytics';
 import { isReservedEmail, isVerifiedAdminSession } from '../utils/adminIdentity';
+import { suggestEmailCorrection } from '../utils/emailTypo';
 import {
   beginRegistrationProvisioning,
   endRegistrationProvisioning,
@@ -160,6 +161,9 @@ async function writeUserDoc(
   if (outcome === 'failed') throw captured ?? new Error(`${context}: write rejected`);
 }
 
+// Shown for every failed email sign-in; also the cue for "No account yet?".
+const LOGIN_FAILED_MESSAGE = 'Invalid email or password.';
+
 const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const mobileAppDesign = useMobileAppDesign();
   const reducedMotion = useReducedMotion();
@@ -226,6 +230,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   });
   const fieldMessage = (id: string) => fieldErrors[id] && <small id={`${id}-error`} className="auth-live-field-error" role="alert">{fieldErrors[id]}</small>;
   const [isLoading, setIsLoading] = useState(false);
+  // The email whose likely-typo suggestion has been shown. Continue pauses
+  // once to show it; pressing Continue again keeps the address as typed.
+  const [typoShownFor, setTypoShownFor] = useState('');
   const [resetSent, setResetSent] = useState(false);
   const [resendCountdown, setResendCountdown] = useState(0);
   // B4 (audit 2026-06-01): student must accept the Privacy Notice + Terms
@@ -327,7 +334,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         console.error('Login attempt failed:', err);
       }
     }
-    if (!success) setError('Invalid email or password.');
+    if (!success) setError(LOGIN_FAILED_MESSAGE);
     setIsLoading(false);
   };
 
@@ -505,6 +512,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) { return rejectField('register-email', 'Check the email address, for example you@example.com.'); }
       const normalised = email.trim().toLowerCase();
       if (isReservedEmail(normalised)) { return rejectField('register-email', 'Use a different email address.'); }
+      if (suggestEmailCorrection(email) && typoShownFor !== email) {
+        setTypoShownFor(email);
+        requestAnimationFrame(() => document.getElementById('register-email-suggestion')?.focus());
+        return false;
+      }
       return true;
     }
     if (registerStep === 2) {
@@ -784,6 +796,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     if (registerStep > 1) setRegisterStep((step) => step - 1);
     else navigate('welcome');
   };
+  const emailSuggestion = view === 'register' && registerStep === 1 ? suggestEmailCorrection(email) : null;
   const selectedSchool = SCHOOLS.find((item) => item.id === school);
   const schoolName = selectedSchool?.name || '';
   const errorMessage = error && (
@@ -1058,6 +1071,28 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                         {/* Name remains free-form for all naming conventions. */}
                       </div>
                       {emailField('register-email')}
+                      {emailSuggestion && typoShownFor === email && (
+                        <div className="auth-live-suggestion" role="status">
+                          <p>
+                            Check your email address. Did you mean{' '}
+                            <strong>{emailSuggestion}</strong>?
+                          </p>
+                          <button
+                            id="register-email-suggestion"
+                            type="button"
+                            className="auth-live-secondary"
+                            onClick={() => {
+                              setEmail(emailSuggestion);
+                              setTypoShownFor('');
+                              setError(''); setFieldErrors({});
+                            }}
+                          >
+                            <span>Use {emailSuggestion}</span>
+                            <Check size={17} aria-hidden="true" />
+                          </button>
+                          <small>Or press Continue to keep the address you typed.</small>
+                        </div>
+                      )}
                     </>
                   )}
                   {registerStep === 2 && (
@@ -1204,6 +1239,25 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   </button>
                 </fieldset>
                 {errorMessage}
+                {error === LOGIN_FAILED_MESSAGE && (
+                  <div className="auth-live-no-account">
+                    <span>No account yet?</span>
+                    <button
+                      type="button"
+                      className="auth-live-secondary"
+                      disabled={isLoading}
+                      onClick={() => {
+                        // A typed username is not an email address; start clean.
+                        if (!email.includes('@')) setEmail('');
+                        setRegisterStep(1);
+                        navigate('register');
+                      }}
+                    >
+                      Create an account
+                      <ArrowRight size={18} aria-hidden="true" />
+                    </button>
+                  </div>
+                )}
                 <div className="auth-live-actions">
                   <button
                     type="button"
