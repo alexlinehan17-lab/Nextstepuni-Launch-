@@ -82,6 +82,11 @@ AFFECTED = {
     # whose denominator is filtered as a mark cell.
     (2018, 'ol'): [
         'maths-2018-ol-p1-q2-a', 'maths-2018-ol-p1-q3-a', 'maths-2018-ol-p1-q4-a', 'maths-2018-ol-p1-q8-c',
+        # Paper 2: a completed table, a construction, a scatterplot and a tick box
+        # printed as images, and stacked fractions filtered as mark cells.
+        'maths-2018-ol-p2-q1-a-i', 'maths-2018-ol-p2-q6-a-i', 'maths-2018-ol-p2-q7-f-i', 'maths-2018-ol-p2-q7-f-ii',
+        'maths-2018-ol-p2-q8-e', 'maths-2018-ol-p2-q8-f', 'maths-2018-ol-p2-q9-a-i', 'maths-2018-ol-p2-q9-a-iii',
+        'maths-2018-ol-p2-q9-b-i',
     ],
 }
 BANDS = ['Low Partial Credit', 'Mid Partial Credit', 'High Partial Credit', 'Partial Credit', 'Full Credit',
@@ -97,6 +102,11 @@ def part_label(printed):
     first = re.sub(r'^Q\d+', '', printed[0])
     rest = [re.sub(r'^Q\d+(\([a-z]\))?', '', p) for p in printed[1:]]
     return first + ''.join('+' + r for r in rest)
+
+
+def part_label_long(printed):
+    """'Q6(a)(i)','Q6(a)(ii)' -> '(a)(i)+(a)(ii)': the 2018 Ordinary scheme repeats the letter."""
+    return '+'.join(re.sub(r'^Q\d+', '', p) for p in printed)
 
 
 def hsegments(page):
@@ -163,7 +173,7 @@ def vertical_xs(page):
     return sorted(xs)
 
 
-def find_row(page, label):
+def find_row(page, label, alt=None):
     """The ruled row whose label-column words read `label`, with its continuation rows.
 
     A part's scheme content can run over more than one ruled row: a model-solution
@@ -174,6 +184,7 @@ def find_row(page, label):
     labelled with anything else.
     """
     want = norm_label(label)
+    wants = {want, norm_label(alt)} if alt else {want}
     xs = vertical_xs(page)
     label_right = xs[1] + 1
     words = [w for w in page.get_text('words') if w[2] <= label_right]
@@ -184,11 +195,11 @@ def find_row(page, label):
             continue
         got = norm_label(''.join(w[4] for w in sorted(words, key=lambda w: (round(w[1]), w[0])) if top <= w[1] < bottom))
         rows.append((top, bottom, got))
-    hits = [i for i, r in enumerate(rows) if r[2] == want]
+    hits = [i for i, r in enumerate(rows) if r[2] in wants]
     if not hits:
         raise SystemExit(f'label {label!r}: no ruled row reads that label on page {page.number + 1}')
     i = j = hits[0]
-    while j + 1 < len(rows) and rows[j + 1][2] in ('', want) and abs(rows[j + 1][0] - rows[j][1]) <= 2:
+    while j + 1 < len(rows) and (rows[j + 1][2] == '' or rows[j + 1][2] in wants) and abs(rows[j + 1][0] - rows[j][1]) <= 2:
         j += 1
     if any(h > j for h in hits):
         raise SystemExit(f'label {label!r}: {len(hits)} separate ruled rows read that label on page {page.number + 1}')
@@ -216,7 +227,7 @@ def main():
         pno = task['schemePages'][0]
         page = doc[pno - 1]
         label = part_label(task['printedParts'])
-        top, bottom = find_row(page, label)
+        top, bottom = find_row(page, label, part_label_long(task['printedParts']))
         x0, x1 = table_x(page)
         clip = pymupdf.Rect(x0 - 2, top - 2, x1 + 2, bottom + 2)
         n = per_page.get(pno, 0); per_page[pno] = n + 1

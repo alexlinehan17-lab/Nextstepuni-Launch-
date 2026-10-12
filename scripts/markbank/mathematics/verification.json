@@ -1,8 +1,8 @@
 {
   "date": "2026-10-12",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, 2019 Ordinary Level Paper 1, 2019 Ordinary Level Paper 2, 2018 Higher Level Paper 1, 2018 Higher Level Paper 2, 2018 Ordinary Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1972,
-  "reviewedTasks": 1972,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, 2019 Ordinary Level Paper 1, 2019 Ordinary Level Paper 2, 2018 Higher Level Paper 1, 2018 Higher Level Paper 2, 2018 Ordinary Level Paper 1, 2018 Ordinary Level Paper 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 2011,
+  "reviewedTasks": 2011,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 364,
+  "targetedRegressionTests": 368,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -1320,5 +1320,27 @@
     "schemeRowFigures": "4 parts carry the scheme-row crop (Q2(a), Q3(a), Q4(a), Q8(c)). scheme_row_figures.py now lets a table rule end on any of the table's vertical borders (the lower rows of the Q8 table end left of the header) and tolerates a thin skipped row between continuation rows; 2019 OL and 2018 HL row ranges verified unchanged.",
     "coverageBaseline": "1554/3474 asks covered, 0 orphans, 0 excluded, 1920 open",
     "validation": "Deck generation (1,972 built, 0 dropped), Atlas generation and --check (485 placements), audit --check-reviewed, scheme quote check of all 37 cards, generator re-run rebuilds all 37 cards identically, ten regression files (364/364), typecheck and diff whitespace check passed; all 4 crops opened and checked."
+  },
+  "ordinary2018p2": {
+    "paper": "2018 Ordinary Level Paper 2",
+    "paperFileid": "LC003GLP200EV.pdf",
+    "schemeFileid": "LC003GLP000EV.pdf",
+    "reviewedAt": "2026-10-12",
+    "newPaper": true,
+    "independentlyReviewedTasks": 39,
+    "existingRuntimeCardsReviewed": 0,
+    "addedRuntimeCards": 39,
+    "historicalRejectsRemaining": 0,
+    "targetedRegressionTests": 368,
+    "previousRuntimeIdsRetained": 1972,
+    "offeredMarks": 300,
+    "candidateMarks": 300,
+    "paperPagesInspected": 16,
+    "schemePagesInspected": 20,
+    "scaleNote": "2018 Ordinary Paper 2 ladders differ from Paper 1: 5A 0,5; 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10B 0,5,10; 10C 0,3,7,10; 10D 0,2,5,8,10; 15D 0,4,7,11,15. Q3(a)(i)+(ii), Q3(b)(i)+(ii), Q5(b)(i)+(ii), Q6(a)(i)+(ii) and Q7(a)(i)+(ii)+(iii) are one task each.",
+    "schemeRowFigures": "9 parts carry the scheme-row crop (Q1(a)(i), Q6(a), Q7(f)(i), Q7(f)(ii), Q8(e), Q8(f), Q9(a)(i), Q9(a)(iii), Q9(b)(i)). scheme_row_figures.py also accepts the label printed with its letter repeated ((a)(i)+(a)(ii)); 2019 OL and 2018 HL/OL P1 row ranges unchanged.",
+    "examTopicMappings": "StudyClix has no placement for 2018 OL P2 Q2; the reviewed placement adds it (finalStudyclixExamTopics logical mappings 1644 -> 1645).",
+    "coverageBaseline": "1599/3474 asks covered, 0 orphans, 0 excluded, 1875 open",
+    "validation": "Deck generation (2,011 built, 0 dropped), Atlas generation and --check (494 placements), audit --check-reviewed, scheme quote check of all 39 cards, generator re-run rebuilds all 39 cards identically, ten regression files (368/368), typecheck and diff whitespace check passed; all 9 crops opened and checked."
   }
 }

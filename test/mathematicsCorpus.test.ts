@@ -42,6 +42,7 @@ import higher2021p2 from '../scripts/markbank/mathematics/reviews/2021-higher-p2
 import ordinary2021p1 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p1.json';
 import ordinary2021p2 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p2.json';
 import higher2020p1 from '../scripts/markbank/mathematics/reviews/2020-higher-p1.json';
+import ordinary2018p2 from '../scripts/markbank/mathematics/reviews/2018-ordinary-p2.json';
 import ordinary2018p1 from '../scripts/markbank/mathematics/reviews/2018-ordinary-p1.json';
 import higher2018p2 from '../scripts/markbank/mathematics/reviews/2018-higher-p2.json';
 import higher2018p1 from '../scripts/markbank/mathematics/reviews/2018-higher-p1.json';
@@ -989,6 +990,7 @@ describe.each([
   { year: 2018, level: 'higher' as const, number: 1, count: 33, review: higher2018p1 },
   { year: 2018, level: 'higher' as const, number: 2, count: 32, review: higher2018p2 },
   { year: 2018, level: 'ordinary' as const, number: 1, count: 37, review: ordinary2018p1 },
+  { year: 2018, level: 'ordinary' as const, number: 2, count: 39, review: ordinary2018p2 },
 ])('$year $level Mathematics Paper $number new-paper source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
   const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
@@ -1059,6 +1061,13 @@ describe('2018 Ordinary scheme rows that cannot be lifted as text', () => {
     const ids = withRow.map(card => card.id);
     expect(ids).toEqual(expect.arrayContaining(['maths-2018-ol-p1-q2-a', 'maths-2018-ol-p1-q3-a', 'maths-2018-ol-p1-q4-a',
       'maths-2018-ol-p1-q8-c']));
+  });
+
+  it('covers the Paper 2 table, construction, scatterplot and tick box, and the filtered fractions', () => {
+    const ids = withRow.map(card => card.id);
+    expect(ids).toEqual(expect.arrayContaining(['maths-2018-ol-p2-q1-a-i', 'maths-2018-ol-p2-q6-a-i', 'maths-2018-ol-p2-q7-f-i',
+      'maths-2018-ol-p2-q7-f-ii', 'maths-2018-ol-p2-q8-e', 'maths-2018-ol-p2-q8-f', 'maths-2018-ol-p2-q9-a-i', 'maths-2018-ol-p2-q9-a-iii',
+      'maths-2018-ol-p2-q9-b-i']));
   });
 });
 
