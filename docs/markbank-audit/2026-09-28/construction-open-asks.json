@@ -1,24 +1,24 @@
 {
   "subjectId": "construction-studies",
-  "measuredAt": "2026-10-12T15:34:27.320121+00:00",
+  "measuredAt": "2026-10-12T15:35:08.668454+00:00",
   "command": "python3 scripts/markbank/authoring/reconcile.py construction-studies --baseline write",
   "baseline": {
-    "cards": 802,
-    "contentHash": "e00f12fdea3fb798",
-    "coveragePct": 67.4,
-    "covered": 568,
+    "cards": 806,
+    "contentHash": "5ccb87cb015808d7",
+    "coveragePct": 67.9,
+    "covered": 572,
     "excluded": 0,
     "leaves": 843,
-    "open": 275,
+    "open": 271,
     "orphans": 0,
     "papers": {
       "count": 63,
       "hash": "7a382fe186c759ea"
     },
-    "refsHash": "f200505ac0b7d418"
+    "refsHash": "3eae1826d121965f"
   },
-  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2015 Higher, 2015 Ordinary, 2021 Higher, 2022 Higher, 2022 Ordinary, 2023 Higher, 2023 Ordinary, 2024 Higher, 2024 Ordinary, 2025 Higher, 2025 Ordinary, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
-  "openTotal": 275,
+  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2015 Higher, 2015 Ordinary, 2021 Higher, 2021 Ordinary, 2022 Higher, 2022 Ordinary, 2023 Higher, 2023 Ordinary, 2024 Higher, 2024 Ordinary, 2025 Higher, 2025 Ordinary, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
+  "openTotal": 271,
   "papers": [
     {
       "year": 2010,
@@ -476,13 +476,8 @@
       "year": 2021,
       "level": "ol",
       "leaves": 22,
-      "covered": 18,
-      "open": [
-        "Q2(b)",
-        "Q2(c)",
-        "Q4(c)",
-        "Q7(a)"
-      ]
+      "covered": 22,
+      "open": []
     },
     {
       "year": 2022,

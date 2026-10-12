@@ -2679,5 +2679,208 @@
     "alt": "SEC 2021 Higher marking scheme notes on how the house responds to its rural setting, with sketches of a hay barn and the house plan.",
     "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2021-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q1-original.png",
+    "md5": "527ad7be69b1cc879eb139010264c2b0",
+    "alt": "Original SEC 2021 Ordinary Construction Studies Question 1: the printed question with a sketch of the slated eaves of a cut roof with its gutter.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q2-original.png",
+    "md5": "9fc114fd65e5ed05231bbdfed38cec44",
+    "alt": "Original SEC 2021 Ordinary Construction Studies Question 2: the printed question with a sketch of a ground floor being insulated.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q3-original.png",
+    "md5": "79ae7e93f70cf2eee73eed2433f81c7e",
+    "alt": "Original SEC 2021 Ordinary Construction Studies Question 3: the printed question with sketches of a kitchen sink and a water meter.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q4-original.png",
+    "md5": "6f14a49021524f9b457ebdba0e6516e0",
+    "alt": "Original SEC 2021 Ordinary Construction Studies Question 4: the printed question with a sketch of a proposed town house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q5-original.png",
+    "md5": "6aa8d6c6c2611aaecd406bda5dd2c377",
+    "alt": "Original SEC 2021 Ordinary Construction Studies Question 5: the printed question with a sketch of a triple-glazed window on its cill.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q6-original.png",
+    "md5": "94f47dfc8685abaeac9f711d0a9d08f6",
+    "alt": "Original SEC 2021 Ordinary Construction Studies Question 6: the printed question with a sketch of an excavator digging a trench.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q7-original.png",
+    "md5": "f0224a45e94614b41a31298c56ee8524",
+    "alt": "Original SEC 2021 Ordinary Construction Studies Question 7: the printed question with the draft plan of a living room beside a kitchen.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q8-original.png",
+    "md5": "f86b57a8a9146faec46f8260e04284e3",
+    "alt": "Original SEC 2021 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q9-original.png",
+    "md5": "202162e73dee3205cac2663fccf73d94",
+    "alt": "Original SEC 2021 Ordinary Construction Studies Question 9: the printed question with a sketch of softwood decking behind a house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-OL-q1-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q1-scheme.png",
+    "md5": "50f3380e9ef2b9ad2846c4e113f1674d",
+    "alt": "SEC model section through the cut-roof eaves and cavity wall with the gutter marked (b), and the specification list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q2-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q2-advantages.png",
+    "md5": "5bf85338ad5e053f4d550fe6f82db1f2",
+    "alt": "SEC 2021 Ordinary marking scheme notes on the advantages of a highly insulated ground floor.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q2-method": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q2-method.png",
+    "md5": "f674a1631db2c0a32dcd10a69021e57a",
+    "alt": "SEC 2021 Ordinary marking scheme notes on insulating a solid ground floor, with sketches of the insulation boards and membrane, and the insulation types and thickness.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q2-floor": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q2-floor.png",
+    "md5": "f232b008110cb7999ae7ee4a54dd8352",
+    "alt": "SEC 2021 Ordinary marking scheme table of kitchen floor types (tiles, solid wood, laminate, polished concrete, natural stone) with reasons for each.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q3-system.png",
+    "md5": "caf376ae1e50560118b160804e894ef3",
+    "alt": "SEC model single-line diagram of the cold water supply from the main through the meter to the sink and attic tank, with the typical details.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q3-meter": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q3-meter.png",
+    "md5": "6ceacc26a506e499a59b78811f025077",
+    "alt": "SEC 2021 Ordinary marking scheme notes on the advantages of a water meter.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q4-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q4-reasons.png",
+    "md5": "d3842240b4ca0b89122736e76a71b094",
+    "alt": "SEC 2021 Ordinary marking scheme notes on why planning permission is needed.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q4-documents": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q4-documents.png",
+    "md5": "ea385ef42c747e995b65aec6bc44de5e",
+    "alt": "SEC 2021 Ordinary marking scheme notes on the site notice and site location map, with sketches of each.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q4-town": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q4-town.png",
+    "md5": "3da3c09538adff83d91eeb19e52a8a5d",
+    "alt": "SEC 2021 Ordinary marking scheme table of the advantages and disadvantages of building in a town.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q5-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q5-scheme.png",
+    "md5": "cd0ac7be8f754a11bc2800e4a647d582",
+    "alt": "SEC model section through the cavity wall and window cill with the drip marked (b), the specification list and the cill detail.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q6-signs": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q6-signs.png",
+    "md5": "72123e1089b7d74efe6437c08914e0c7",
+    "alt": "SEC model PPE signs for a high-visibility vest, safety boots and a safety helmet, each with its reason.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q6-risks": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q6-risks.png",
+    "md5": "426464308f87f5b9357e89343da23cc5",
+    "alt": "SEC 2021 Ordinary marking scheme notes on risks in deep trenches, with a sketch of an excavator and ladder.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q6-trench": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q6-trench.png",
+    "md5": "e112a89ccc730495fef53a6fbfc28061",
+    "alt": "SEC 2021 Ordinary marking scheme notes on trench safety precautions, with sketches of shoring and barriers.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q7-access": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q7-access.png",
+    "md5": "e2aa0f107f33dff5508b1d7d9a4d7710",
+    "alt": "SEC 2021 Ordinary marking scheme notes on direct kitchen access, with a sketch of the door between the rooms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q7-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q7-layout.png",
+    "md5": "d918ec5407cddf0bec9f0970f8b5e5ac",
+    "alt": "SEC model living room plan with the sofas, stove and television placed, and the reasons for each location (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q7-stove": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q7-stove.png",
+    "md5": "3933f0b3b0d0f588ac8b072dae6f6bfd",
+    "alt": "SEC 2021 Ordinary marking scheme notes on the advantages of a wood-burning stove.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q8-terms": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q8-terms.png",
+    "md5": "ebe621a04270b6d7f84ccfb9c80b094e",
+    "alt": "SEC marking-scheme notes and sketches for all nine Question 8 terms, in scheme order: joist bridging, working drawing, roof light, steel reinforcement, heat pump, ridge board, biscuit joint, room thermostat and building energy rating (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q9-finish": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q9-finish.png",
+    "md5": "e4f5dc3e87d73f2536c16999b4c14672",
+    "alt": "SEC 2021 Ordinary marking scheme notes on finishes for decking and reasons.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q9-winter": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q9-winter.png",
+    "md5": "9fdc2ae45606ccdf1261636cdb8390ef",
+    "alt": "SEC 2021 Ordinary marking scheme notes on making the space usable in winter, with sketches of a windbreak and a roofed deck.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-OL-q9-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-OL-q9-advantages.png",
+    "md5": "2cf4f313e7bc0865bf26a7b689d52d0a",
+    "alt": "SEC 2021 Ordinary marking scheme notes on the advantages of an outdoor living space, with a sketch of an outdoor fireplace.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }

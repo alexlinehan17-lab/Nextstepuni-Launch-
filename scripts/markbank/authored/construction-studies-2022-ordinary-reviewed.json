@@ -5791,7 +5791,7 @@
   "fullPaperReconciliation": {
     "questions": 9,
     "alternativeQuestions": 0,
-    "examRubric": "Any four of nine questions, 50 marks each, 200 total; no full-exam Cartesian cards.",
+    "examRubric": "Any three of nine questions, 50 marks each, 150 total; no full-exam Cartesian cards.",
     "method": "Same-operator source review of the paper and every scheme page; validator construction_2022_ordinary.py on the shared engine construction_paper.py.",
     "validator": {
       "tasks": 31,

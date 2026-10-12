@@ -14664,1187 +14664,1189 @@
   },
   {
     "id": "cons-2021-ol-q1-b",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-5-4",
     "conceptId": "rainwater-removal-at-the-eaves",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2021 OL Q1(b)",
+    "stem": "The sketch shows portion of the eaves of a pitched roof. The slated cut roof has a pitch of 30°. The roof is supported on a 400 mm concrete block wall with a full-fill insulated cavity. The slates are fixed to 50 mm × 30 mm battens, on a breather membrane, supported on 200 mm × 50 mm rafters. The ceiling joists are 200 mm × 50 mm with plasterboard fixed beneath. The roof is highly insulated at ceiling joist level.",
     "questionText": "On your drawing show how rainwater is removed at the eaves.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "fixed",
-      "notation": "3",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
+      "kind": "fixed"
     },
     "totalMarks": 3,
     "rows": [
       {
-        "id": "cons-2021-ol-q1-b-r1",
-        "kind": "point",
+        "id": "gutter",
+        "kind": "criterion",
         "verbatim": "Eaves gutter/ downpipe",
         "marks": 3,
-        "openList": true,
-        "contextNote": ""
+        "contextNote": "Show and identify the eaves gutter and downpipe, as in the scheme’s model section.",
+        "permittedMarks": [
+          0,
+          3
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q1-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "Cut-roof eaves and external wall section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the rainwater detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    }
   },
   {
     "id": "cons-2021-ol-q2-a",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-6-2",
     "conceptId": "advantages-of-an-insulated-ground-floor",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2021 OL Q2(a)",
+    "stem": "A young couple wish to have a highly insulated ground floor in their new house. The solid ground floor is to have a 100 mm concrete floor slab, finished with a suitable flooring material.",
     "questionText": "List two advantages of constructing a ground floor with a high level of insulation.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 5",
-      "answer": 2,
-      "ofParts": 5,
-      "perPart": 5
+      "kind": "fixed"
     },
     "totalMarks": 10,
     "rows": [
       {
-        "id": "cons-2021-ol-q2-a-r1",
-        "kind": "anyN",
-        "verbatim": "List two advantages of constructing a ground floor with a high level of insulation.",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 5,
-          "options": [
-            "Better for the environment",
-            "Increased thermal comfort for occupants",
-            "Energy bills are reduced",
-            "The overall house will be warmer",
-            "It improves the Building Energy Rating (BER)"
-          ]
-        }
+        "id": "advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 5,
+        "contextNote": "Such as: better for the environment; more thermal comfort.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 5,
+        "contextNote": "A second, different advantage. Such as: lower energy bills; a warmer house; a better BER.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q2-advantages",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Insulating a solid ground floor",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. The insulation method and type and the floor finish are open choices; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2021-ol-q3-a",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-5-2",
     "conceptId": "cold-water-pipework-from-the-tank",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2021 OL Q3(a)",
-    "questionText": "Using a single-line labelled sketch, show the pipework required to supply cold water from the water main to the kitchen sink and to the water storage tank.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "stem": "The public water supply provides households with clean, treated water for domestic consumption.",
+    "questionText": "Using a single-line labelled sketch, show the pipework required to supply cold water from the water main to the kitchen sink and to the water storage tank. Include the following in your sketch: water main; water meter; rising main; pipework to the kitchen sink; insulated cold water storage tank; all necessary valves.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "8 x 4",
-      "answer": 8,
-      "ofParts": 12,
-      "perPart": 4
+      "kind": "fixed"
     },
-    "totalMarks": 32,
+    "totalMarks": 40,
     "rows": [
       {
-        "id": "cons-2021-ol-q3-a-r1",
-        "kind": "anyN",
-        "verbatim": "Typical details",
+        "id": "items",
+        "kind": "criterion",
+        "verbatim": "Any 8 × 4 marks",
         "marks": 32,
-        "openList": true,
-        "contextNote": "Typical details",
-        "group": {
-          "claimMax": 8,
-          "perOption": 4,
-          "options": [
-            "Mains water supply",
-            "Water meter",
-            "Stop valve",
-            "15 mm rising main",
-            "Kitchen sink",
-            "Connection to kitchen sink",
-            "Ball-valve",
-            "Cold water storage tank",
-            "Insulation around storage tank",
-            "28 mm overflow",
-            "Pipework insulation",
-            "Valves"
-          ]
-        }
+        "contextNote": "Credit the best EIGHT acceptable items at 4 marks each, capped at 32. Marked items: mains water supply; water meter; 15 mm rising main; kitchen sink; connection to the sink; ball valve; cold water storage tank; insulation around the tank; 28 mm overflow; pipe insulation; valves; annotation.",
+        "permittedMarks": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the sketch: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q3-system",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Cold water supply from the water main",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. The listed components are required content, not a choice; the best-eight list is a marking menu."
+    }
   },
   {
     "id": "cons-2021-ol-q3-b",
-    "topicId": "cons-5-2",
-    "conceptId": "advantages-of-a-water-meter",
-    "level": "ordinary",
-    "year": 2021,
     "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-5-1",
+    "conceptId": "advantages-of-a-water-meter",
     "questionRef": "2021 OL Q3(b)",
+    "stem": "The public water supply provides households with clean, treated water for domestic consumption.",
     "questionText": "Discuss two advantages of installing a water meter.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 5",
-      "answer": 2,
-      "ofParts": 4,
-      "perPart": 5
+      "kind": "fixed"
     },
     "totalMarks": 10,
     "rows": [
       {
-        "id": "cons-2021-ol-q3-b-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss two advantages of installing a water meter.",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 5,
-          "options": [
-            "Encourage water conservation",
-            "Reduce the cost of water treatment due to reduced usage",
-            "Show leaks and wastage if water meter reading is high",
-            "Reduce the water usage bill"
-          ]
-        }
+        "id": "advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 5,
+        "contextNote": "Such as: encourages water conservation; lower water treatment costs.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 5,
+        "contextNote": "A second, different advantage. Such as: shows leaks and wastage; a lower water bill.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q3-meter",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Cold water supply from the water main",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. The listed components are required content, not a choice; the best-eight list is a marking menu."
+    }
   },
   {
     "id": "cons-2021-ol-q4-a",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-1-3",
     "conceptId": "why-planning-permission-is-needed",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2021 OL Q4(a)",
+    "stem": "The sketch shows a design for a dwelling house which is to be constructed in a town. The owner intends to apply for planning permission to construct this dwelling house.",
     "questionText": "Discuss two reasons why it is necessary to apply for planning permission to build a new dwelling house.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 6",
-      "answer": 2,
-      "ofParts": 6,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 12,
     "rows": [
       {
-        "id": "cons-2021-ol-q4-a-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss two reasons why it is necessary to apply for planning permission to build a new dwelling house.",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "To ensure structures meet all current building regulations",
-            "To ensure no environmental damage is done to localities",
-            "Informs the public about the development",
-            "It controls the design, shape, height and location of developments",
-            "To provide better designed communities",
-            "Legal requirement"
-          ]
-        }
+        "id": "reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 6,
+        "contextNote": "Such as: to ensure the building meets current regulations; to avoid environmental damage.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 6,
+        "contextNote": "A second, different reason. Such as: it informs the public; it controls design, height and location; better designed communities; a legal requirement.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q4-reasons",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Planning permission for a town house",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+    }
   },
   {
     "id": "cons-2021-ol-q4-b",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-1-3",
     "conceptId": "information-in-a-planning-application",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2021 OL Q4(b)",
-    "questionText": "Using notes and freehand sketches, describe the information that must be contained in each of the following planning documents: • site notice • site location map.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "stem": "The sketch shows a design for a dwelling house which is to be constructed in a town. The owner intends to apply for planning permission to construct this dwelling house.",
+    "questionText": "Using notes and freehand sketches, describe the information that must be contained in each of the following planning documents: site notice; site location map.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 13",
-      "answer": 2,
-      "ofParts": 10,
-      "perPart": 13
+      "kind": "fixed"
     },
     "totalMarks": 26,
     "rows": [
       {
-        "id": "cons-2021-ol-q4-b-r1",
-        "kind": "anyN",
-        "verbatim": "Using notes and freehand sketches, describe the information that must be contained in each of the following planning doc",
-        "marks": 26,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 13,
-          "options": [
-            "Name of applicant",
-            "Reference number of application",
-            "A description of what the development is to consist of",
-            "Where the application and plans can be inspected",
-            "The date when the site notice was erected. site location map",
-            "Identify the location of the dwelling and local areas",
-            "A scale of between 1:10560 and 1:2500",
-            "Boundary of site must be outlined in red colour",
-            "Position of neighbouring buildings",
-            "Position of north"
-          ]
-        }
+        "id": "site-notice",
+        "kind": "criterion",
+        "verbatim": "Site notice note & sketch (8 + 5 marks)",
+        "marks": 13,
+        "contextNote": "Note 8 and sketch 5. Such as: the applicant’s name; the application reference; a description of the development; where the plans can be inspected; the date the notice was erected.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": "location-map",
+        "kind": "criterion",
+        "verbatim": "Site location map note & sketch (8 + 5 marks)",
+        "marks": 13,
+        "contextNote": "Note 8 and sketch 5. Such as: the location of the dwelling and local area; a scale between 1:10560 and 1:2500; the site boundary outlined in red; neighbouring buildings; north point.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q4-documents",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Planning permission for a town house",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+    }
   },
   {
     "id": "cons-2021-ol-q5-a",
-    "topicId": "cons-3-6",
-    "conceptId": "vertical-section-external-wall-and-window",
-    "level": "ordinary",
-    "year": 2021,
     "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "vertical-section-external-wall-and-window",
     "questionRef": "2021 OL Q5(a)",
-    "questionText": "To a scale of 1:5, draw a vertical section through the external wall and bottom portion of the window. Show the typical construction details from a level 400 mm below to a level 300 mm above the concrete window cill.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "stem": "The sketch shows portion of a triple glazed wooden window. The window is fixed in a 400 mm concrete block wall with a full-fill insulated cavity. The wall is rendered on both sides. The fixed frame of the window is 120 mm × 80 mm and is thermally broken.",
+    "questionText": "To a scale of 1:5, draw a vertical section through the external wall and bottom portion of the window. Show the typical construction details from a level 400 mm below to a level 300 mm above the concrete window cill. Include three typical dimensions on your drawing.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "7 x 5",
-      "answer": 7,
-      "ofParts": 14,
-      "perPart": 5
+      "kind": "fixed"
     },
-    "totalMarks": 35,
+    "totalMarks": 46,
     "rows": [
       {
-        "id": "cons-2021-ol-q5-a-r1",
-        "kind": "anyN",
-        "verbatim": "Specifications",
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "Any 7 x 5 marks",
         "marks": 35,
-        "openList": true,
-        "contextNote": "Specifications",
-        "group": {
-          "claimMax": 7,
-          "perOption": 5,
-          "options": [
-            "19 mm external render",
-            "100 mm concrete block outer leaf",
-            "Full filled insulated cavity",
-            "Wall ties",
-            "100 mm concrete block inner leaf",
-            "13 mm internal plaster",
-            "Cavity closer",
-            "DPC",
-            "Precast concrete window cill",
-            "Throating / drip",
-            "Window board",
-            "Airtight tape",
-            "Window frame 120 × 80 mm",
-            "Triple glazing"
-          ]
-        }
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: block outer leaf; full-fill insulated cavity; wall ties; block inner leaf; 13 mm plaster and 19 mm render; cavity closer; DPC; precast concrete cill with throating/drip; window board; airtight tape; window frame 120 × 80 mm; triple glazing.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "dimensions",
+        "kind": "criterion",
+        "verbatim": "Any three typical dimensions",
+        "marks": 3,
+        "contextNote": "Three appropriate typical dimensions on the section, 1 each.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q5-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "External wall and window cill section",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the cill detail in (b) is marked separately."
+    }
   },
   {
     "id": "cons-2021-ol-q6-b",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-1-8",
     "conceptId": "risks-when-working-in-a-deep-trench",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2021 OL Q6(b)",
-    "questionText": "Describe two potential risks to construction workers when working in a deep trench.",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "Describe two potential risks to construction workers when working in a deep trench.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 5",
-      "answer": 2,
-      "ofParts": 5,
-      "perPart": 5
+      "kind": "fixed"
     },
     "totalMarks": 10,
     "rows": [
       {
-        "id": "cons-2021-ol-q6-b-r1",
-        "kind": "anyN",
-        "verbatim": "Possible Risks",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Possible Risks",
-        "group": {
-          "claimMax": 2,
-          "perOption": 5,
-          "options": [
-            "Cave-ins or collapse of trench sides",
-            "Equipment falling in on workers",
-            "Machinery falling in on workers",
-            "Workers falling on entering or exiting the trench",
-            "Coming in contact with underground services"
-          ]
-        }
+        "id": "risk-1",
+        "kind": "criterion",
+        "verbatim": "Risk 1",
+        "marks": 5,
+        "contextNote": "Such as: the trench sides caving in or collapsing; equipment or machinery falling in on workers.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "risk-2",
+        "kind": "criterion",
+        "verbatim": "Risk 2",
+        "marks": 5,
+        "contextNote": "A second, different risk. Such as: workers falling when entering or leaving; contact with underground services.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q6-risks",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "PPE and deep-trench safety",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. All three printed PPE items in (a) are required, each separately marked; risks and precautions are open responses."
+    }
   },
   {
     "id": "cons-2021-ol-q6-c",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-1-8",
     "conceptId": "safety-precautions-in-a-deep-trench",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2021 OL Q6(c)",
-    "questionText": "Using notes and a freehand sketch, describe one safety precaution that workers should observe when working in a deep trench on a construction site.",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "Using notes and a freehand sketch, describe one safety precaution that workers should observe when working in a deep trench on a construction site.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 13",
-      "answer": 1,
-      "ofParts": 4,
-      "perPart": 13
+      "kind": "fixed"
     },
     "totalMarks": 13,
     "rows": [
       {
-        "id": "cons-2021-ol-q6-c-r1",
-        "kind": "anyN",
-        "verbatim": "Using notes and a freehand sketch, describe one safety precaution that workers should observe when working in a deep tre",
+        "id": "precaution",
+        "kind": "criterion",
+        "verbatim": "Safety precaution note & sketch (8 + 5 marks)",
         "marks": 13,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 1,
-          "perOption": 13,
-          "options": [
-            "Slope or battering back the trench sides to a safe angle to stabilise the sides and stop collapse",
-            "Support trench walls with sheeting/trench box when the depth exceeds 1.25 metres to prevent the collapse of the sides",
-            "Ensure guard rails and exclusion zone notices are in place to limit the proximity of machines and workers to the edge of the trench",
-            "Ensure excavated material is stored at a safe distance from the open trench to prevent material falling into the trench"
-          ]
-        }
+        "contextNote": "Note 8 and sketch 5. Such as: battering the sides back to a safe angle; sheeting or a trench box beyond 1.25 m deep; guard rails and exclusion zones; spoil stored well back from the edge.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q6-trench",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "PPE and deep-trench safety",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. All three printed PPE items in (a) are required, each separately marked; risks and precautions are open responses."
+    }
   },
   {
     "id": "cons-2021-ol-q7-b",
-    "topicId": "cons-1-1",
-    "conceptId": "laying-out-a-living-room",
-    "level": "ordinary",
-    "year": 2021,
     "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "laying-out-a-living-room",
     "questionRef": "2021 OL Q7(b)",
-    "questionText": "On the sketch, show your preferred location for each of the following in the living room: • sofa (3 seater) • stove • sofa (2 seater) • television. Give one reason for selecting each location.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "stem": "A draft design for a living room layout with an adjacent kitchen in a new dwelling house is shown. The positions of the windows and a door are included.",
+    "questionText": "On the sketch, show your preferred location for each of the following in the living room: sofa (3 seater); stove; sofa (2 seater); television. Give one reason for selecting each location.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "4 x 6",
-      "answer": 4,
-      "ofParts": 5,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 24,
     "rows": [
       {
-        "id": "cons-2021-ol-q7-b-r1",
-        "kind": "anyN",
-        "verbatim": "On the sketch, show your preferred location for each of the following in the living room: • sofa (3 seater) • stove • so",
-        "marks": 24,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 4,
-          "perOption": 6,
-          "options": [
-            "Show your preferred locations for each of the following in the living room",
-            "Sofa (3 Seater)",
-            "Sofa (2 Seater)",
-            "Stove",
-            "Television"
-          ]
-        }
+        "id": "sofa-3",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for 3 seater sofa position (3 + 3 marks)",
+        "marks": 6,
+        "contextNote": "Location 3 and reason 3. Such as: a clear view of the television and stove; against the wall to save space.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "sofa-2",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for 2 seater sofa position (3 + 3 marks)",
+        "marks": 6,
+        "contextNote": "Location 3 and reason 3. Such as: a view of the television beside the stove; placed for conversation; not blocking light.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "stove",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for stove position (3 + 3 marks)",
+        "marks": 6,
+        "contextNote": "Location 3 and reason 3. Such as: on an external wall for the flue; central for heat circulation and as a focal point.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "television",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for television position (3 + 3 marks)",
+        "marks": 6,
+        "contextNote": "Location 3 and reason 3. Such as: on a wall for secure fixing; in a corner away from window glare and damage.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q7-layout",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Living room layout with kitchen access",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    }
   },
   {
     "id": "cons-2021-ol-q7-c",
-    "topicId": "cons-5-7",
-    "conceptId": "a-wood-burning-stove-in-a-living-room",
-    "level": "ordinary",
-    "year": 2021,
     "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-5-3",
+    "conceptId": "a-wood-burning-stove-in-a-living-room",
     "questionRef": "2021 OL Q7(c)",
+    "stem": "A draft design for a living room layout with an adjacent kitchen in a new dwelling house is shown. The positions of the windows and a door are included.",
     "questionText": "Discuss one advantage of incorporating a wood-burning stove in a modern living room.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 6",
-      "answer": 1,
-      "ofParts": 4,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 6,
     "rows": [
       {
-        "id": "cons-2021-ol-q7-c-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss one advantage of incorporating a wood-burning stove in a modern living room.",
+        "id": "advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
         "marks": 6,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 1,
-          "perOption": 6,
-          "options": [
-            "A centre piece for a group to gather around and socialise",
-            "Provides warmth to the family in the main room of the dwelling",
-            "Environmentally friendly if using timber for fuel",
-            "Reduces the use oil and gas to heat the area"
-          ]
-        }
+        "contextNote": "Such as: a centrepiece to gather around; warmth in the main room; environmentally friendly with timber fuel; less oil and gas used.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q7-stove",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Living room layout with kitchen access",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    }
   },
   {
     "id": "cons-2021-ol-q9-a",
-    "topicId": "cons-4-6",
-    "conceptId": "an-applied-finish-for-decking",
-    "level": "ordinary",
-    "year": 2021,
     "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-10-7",
+    "conceptId": "an-applied-finish-for-decking",
     "questionRef": "2021 OL Q9(a)",
+    "stem": "The sketch shows a space for outdoor living to the rear of a dwelling house. The space has been constructed using softwood decking on wooden joists.",
     "questionText": "Specify a suitable applied finish to preserve the decking, and give two reasons for your choice.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 4",
-      "answer": 3,
-      "ofParts": 11,
-      "perPart": 4
+      "kind": "fixed"
     },
     "totalMarks": 12,
     "rows": [
       {
-        "id": "cons-2021-ol-q9-a-r1",
-        "kind": "anyN",
-        "verbatim": "Suitable applied finish to preserve the decking",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "Suitable applied finish to preserve the decking",
-        "group": {
-          "claimMax": 3,
-          "perOption": 4,
-          "options": [
-            "Oils (Decking oil, Teak oil, furniture oil)",
-            "Solvent based preservative",
-            "Exterior wood paint",
-            "Varnish",
-            "Decking stain Two reasons for your choice:",
-            "Improve appearance of the decking",
-            "Protects against UV damage and fading",
-            "Extends the life span of the softwood decking",
-            "Prevents against algae growth on the decking boards",
-            "Protects the boards against rot and decay",
-            "Changes the colour of the decking boards"
-          ]
-        }
+        "id": "finish",
+        "kind": "criterion",
+        "verbatim": "Suitable finish",
+        "marks": 4,
+        "contextNote": "Such as: decking, teak or furniture oil; a solvent-based preservative; exterior wood paint; varnish; decking stain.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 4,
+        "contextNote": "Such as: a better appearance; protection against UV damage and fading.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 4,
+        "contextNote": "A second, different reason. Such as: a longer life for the softwood; protection against algae, rot and decay; a change of colour.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q9-finish",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Outdoor living space on softwood decking",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The finish, modifications and advantages are open responses; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2021-ol-q9-b",
-    "topicId": "cons-1-1",
-    "conceptId": "using-an-outdoor-space-year-round",
-    "level": "ordinary",
-    "year": 2021,
     "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "using-an-outdoor-space-year-round",
     "questionRef": "2021 OL Q9(b)",
+    "stem": "The sketch shows a space for outdoor living to the rear of a dwelling house. The space has been constructed using softwood decking on wooden joists.",
     "questionText": "The outdoor space needs to be modified so that the occupants can use the space throughout the year. Using notes and freehand sketches, show two modifications to the outdoor space that would allow its use during the winter months.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 13",
-      "answer": 2,
-      "ofParts": 3,
-      "perPart": 13
+      "kind": "fixed"
     },
     "totalMarks": 26,
     "rows": [
       {
-        "id": "cons-2021-ol-q9-b-r1",
-        "kind": "anyN",
-        "verbatim": "The outdoor space needs to be modified so that the occupants can use the space throughout the year. Using notes and free",
-        "marks": 26,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 13,
-          "options": [
-            "Install a wind breaker around the decking",
-            "Install a permanent roof",
-            "Install a heat source - fire pit, outdoor patio heater, external fireplace"
-          ]
-        }
+        "id": "modification-1",
+        "kind": "criterion",
+        "verbatim": "Modification 1 to space notes + sketch (8 + 5 marks )",
+        "marks": 13,
+        "contextNote": "Notes and sketch, 8 + 5. Such as: a windbreak around the decking; a permanent roof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": "modification-2",
+        "kind": "criterion",
+        "verbatim": "Modification 2 to space notes + sketch (8 + 5 marks )",
+        "marks": 13,
+        "contextNote": "Notes and sketch, 8 + 5, for a second, different modification. Such as: a heat source — a fire pit, patio heater or outdoor fireplace.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q9-winter",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Outdoor living space on softwood decking",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The finish, modifications and advantages are open responses; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2021-ol-q9-c",
-    "topicId": "cons-1-1",
-    "conceptId": "advantages-of-an-outdoor-living-space",
-    "level": "ordinary",
-    "year": 2021,
     "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "advantages-of-an-outdoor-living-space",
     "questionRef": "2021 OL Q9(c)",
+    "stem": "The sketch shows a space for outdoor living to the rear of a dwelling house. The space has been constructed using softwood decking on wooden joists.",
     "questionText": "Discuss two advantages for the occupants of creating an outdoor living space.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 6",
-      "answer": 2,
-      "ofParts": 4,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 12,
     "rows": [
       {
-        "id": "cons-2021-ol-q9-c-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss two advantages for the occupants of creating an outdoor living space.",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "A Planning of Project",
-            "B Report Writing",
-            "C Manipulative Skills",
-            "D Presentation of Project"
-          ]
-        }
+        "id": "advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 6,
+        "contextNote": "Such as: more usable space; a connection with nature and the outdoors.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 6,
+        "contextNote": "A second, different advantage. Such as: outdoor meals in warmer seasons; a higher resale value.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q9-advantages",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Outdoor living space on softwood decking",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The finish, modifications and advantages are open responses; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2021-ol-q1-a",
-    "topicId": "cons-3-9",
-    "conceptId": "vertical-section-external-wall-and-pitched-eaves",
-    "level": "ordinary",
-    "year": 2021,
     "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "vertical-section-external-wall-and-pitched-eaves",
     "questionRef": "2021 OL Q1(a)",
-    "questionText": "To a scale of 1:5, draw a vertical section through the external wall and through the eaves of the pitched roof. On your drawing, show the typical construction details from a level 400 mm below the wallplate, through the wall and eaves. Include the first three courses of slate at eaves.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "stem": "The sketch shows portion of the eaves of a pitched roof. The slated cut roof has a pitch of 30°. The roof is supported on a 400 mm concrete block wall with a full-fill insulated cavity. The slates are fixed to 50 mm × 30 mm battens, on a breather membrane, supported on 200 mm × 50 mm rafters. The ceiling joists are 200 mm × 50 mm with plasterboard fixed beneath. The roof is highly insulated at ceiling joist level.",
+    "questionText": "To a scale of 1:5, draw a vertical section through the external wall and through the eaves of the pitched roof. On your drawing, show the typical construction details from a level 400 mm below the wallplate, through the wall and eaves. Include the first three courses of slate at eaves. Include three typical dimensions on your drawing.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "7 x 5",
-      "answer": 7,
-      "ofParts": 14,
-      "perPart": 5
+      "kind": "fixed"
     },
-    "totalMarks": 35,
+    "totalMarks": 47,
     "rows": [
       {
-        "id": "cons-2021-ol-q1-a-r1",
-        "kind": "anyN",
-        "verbatim": "To a scale of 1:5, draw a vertical section through the external wall and through the eaves of the pitched roof. On your ",
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "Any 7 x 5 marks",
         "marks": 35,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 7,
-          "perOption": 5,
-          "options": [
-            "Slates 600 mm × 300 mm on battens 50 mm × 30 mm",
-            "Breather membrane",
-            "Rafters 200 mm × 50 mm",
-            "Ceiling joist with insulation between joists",
-            "Insulated plasterboard with skim coat",
-            "Wallplate 100 mm × 75 mm",
-            "Airtight membrane and tape",
-            "Ventilation",
-            "Tilting fillet, fascia, soffit and eaves gutter",
-            "Concrete block inner leaf",
-            "Full fill cavity insulation 200 mm, wall ties and cavity closer",
-            "Concrete block outer leaf",
-            "13 mm internal plaster and 19 mm render",
-            "Any three typical dimensions"
-          ]
-        }
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: slates on 50 × 30 mm battens; breather membrane; rafters 200 × 50 mm; ceiling joists with insulation between; insulated plasterboard with skim; wallplate 100 × 75 mm; airtight membrane and tape; ventilation; tilting fillet, fascia, soffit and gutter; block inner leaf; 200 mm full-fill cavity with ties and cavity closer; block outer leaf; 13 mm plaster and 19 mm render.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "dimensions",
+        "kind": "criterion",
+        "verbatim": "Any three typical dimensions",
+        "marks": 4,
+        "contextNote": "Three appropriate typical dimensions on the section.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q1-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "Cut-roof eaves and external wall section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the rainwater detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    }
   },
   {
     "id": "cons-2021-ol-q5-b",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-3-6",
     "conceptId": "preventing-water-entering-at-the-window-cill",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2021 OL Q5(b)",
+    "stem": "The sketch shows portion of a triple glazed wooden window. The window is fixed in a 400 mm concrete block wall with a full-fill insulated cavity. The wall is rendered on both sides. The fixed frame of the window is 120 mm × 80 mm and is thermally broken.",
     "questionText": "Show on your drawing the typical design detailing to prevent water entering at the window cill.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "fixed",
-      "notation": "4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
+      "kind": "fixed"
     },
     "totalMarks": 4,
     "rows": [
       {
-        "id": "cons-2021-ol-q5-b-r1",
-        "kind": "point",
+        "id": "cill",
+        "kind": "criterion",
         "verbatim": "Throating / drip / DPC",
         "marks": 4,
-        "openList": true,
-        "contextNote": ""
+        "contextNote": "Show and identify the detail, such as a sloped cill overhanging the render with a throating or drip, wrapped in DPC. Any other suitable detail is accepted.",
+        "permittedMarks": [
+          0,
+          4
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q5-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "External wall and window cill section",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the cill detail in (b) is marked separately."
+    }
   },
   {
     "id": "cons-2021-ol-q6-a",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-1-8",
     "conceptId": "safety-signs-on-a-construction-site",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2021 OL Q6(a)",
-    "questionText": "Using a large freehand sketch, show the safety sign for each of the following personal protection equipment (PPE) items: • high-visibility vest • safety boots • safety helmet. Give one specific reason why each item of personal protective equipment listed above must be worn.",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "Using a large freehand sketch, show the safety sign for each of the following personal protection equipment (PPE) items: high-visibility vest; safety boots; safety helmet. Give one specific reason why each item of personal protective equipment listed above must be worn.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 9",
-      "answer": 3,
-      "ofParts": 3,
-      "perPart": 9
+      "kind": "fixed"
     },
     "totalMarks": 27,
     "rows": [
       {
-        "id": "cons-2021-ol-q6-a-r1",
-        "kind": "anyN",
-        "verbatim": "Using a large freehand sketch, show the safety sign for each of the following personal protection equipment (PPE) items:",
-        "marks": 27,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 3,
-          "perOption": 9,
-          "options": [
-            "High-visibility vest sign and specific reason",
-            "Safety boots sign and specific reason",
-            "Safety helmet sign and specific reason"
-          ]
-        }
+        "id": "vest",
+        "kind": "criterion",
+        "verbatim": "High-visibility vest sign and specific reason (6 + 3 marks)",
+        "marks": 9,
+        "contextNote": "Sign 6 and specific reason 3. Such as: workers visible on site so machine operators can see them and avoid accidents.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "id": "boots",
+        "kind": "criterion",
+        "verbatim": "Safety boots sign and specific reason (6 + 3 marks)",
+        "marks": 9,
+        "contextNote": "Sign 6 and specific reason 3. Such as: feet protected from heavy materials and objects being dropped.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "id": "helmet",
+        "kind": "criterion",
+        "verbatim": "Safety helmet sign and specific reason (6 + 3 marks)",
+        "marks": 9,
+        "contextNote": "Sign 6 and specific reason 3. Such as: the head protected from objects and materials falling from heights.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q6-signs",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "PPE and deep-trench safety",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. All three printed PPE items in (a) are required, each separately marked; risks and precautions are open responses."
+    }
   },
   {
     "id": "cons-2021-ol-q8-None-joist-bridging",
-    "topicId": "cons-1-5",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-4-3",
     "conceptId": "construction-terms-joist-bridging",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2021 OL Q8 — Joist bridging",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • joist bridging.",
+    "questionRef": "2021 OL Q8",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: joist bridging; steel reinforcement; biscuit joint; working drawing; heat pump; room thermostat; rooflight; ridgeboard; building energy rating.",
     "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
+      "kind": "fixed"
     },
-    "totalMarks": 10,
+    "totalMarks": 50,
     "rows": [
       {
-        "id": "cons-2021-ol-q8-None-joist-bridging-r1",
+        "id": "terms",
         "kind": "anyN",
-        "verbatim": "Joist bridging",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Joist bridging",
+        "verbatim": "Construction Terms",
+        "marks": 50,
+        "contextNote": "Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). Joist bridging: keeps floor joists vertical and stops them twisting; stiffens and ties the joists together and spreads load to neighbouring joists; solid or herringbone bridging. Steel reinforcement: combined with concrete as reinforced concrete, taking the tension in load-bearing members; placed low in a foundation; patterned bars (rebar) or mesh for grip, tied into cages. Biscuit joint: used in modern furniture for butt and edge joints in boards of different widths and thicknesses; pressed beech biscuits fit grooves cut by a biscuit joiner, giving a larger gluing area. Working drawing: a scaled drawing used as a guide when building furniture or buildings, with elevations, plan and sections, dimensions and notes; hand drafted or CAD; often called plans or blueprints. Heat pump: moves heat from one place to another, such as from the outside air or ground into the house for heating and hot water, very efficiently. Room thermostat: senses the room temperature and switches the heating to keep it at the chosen level; dial, digital or smart (Wi-Fi) control; lower heating bills and less waste. Roof light: a window in the roof surface for natural light, double, triple or quadruple glazed; lets an attic become a usable room; more privacy than a dormer. Ridge board: the horizontal member at the top ends of the rafters forming the apex of a cut roof; rafters are nailed to it; supported by the rafters or gables; typically 225 × 32 or 225 × 25 mm. Building Energy Rating: a certificate rating a home’s energy performance from A to G, calculated on the energy for space heating, hot water, ventilation and lighting; A is the most efficient with the lowest bills.",
         "group": {
-          "claimMax": 2,
-          "perOption": 6,
+          "claimMax": 5,
+          "perOption": 10,
           "options": [
-            "Used to keep joists vertical to prevent twisting",
-            "Stiffens and strengthens the joists by tying then together",
-            "Used to spread the load from one joist to other nearby joists",
-            "Two methods: solid bridging and herringbone bridging"
-          ],
-          "perOptionSteps": [
-            6,
-            4
+            "Joist bridging",
+            "Steel reinforcement",
+            "Biscuit joint",
+            "Working drawing",
+            "Heat pump",
+            "Room thermostat",
+            "Roof light",
+            "Ridge board",
+            "Building Energy Rating"
           ]
         }
       }
     ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2021-ol-q8-None-working-drawing",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-working-drawing",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2021 OL Q8 — Working drawing",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • working drawing.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2021-ol-q8-None-working-drawing-r1",
-        "kind": "anyN",
-        "verbatim": "Working drawing",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Working drawing",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "A scaled drawing to use as a guide when constructing furniture or buildings",
-            "Will include an elevation, end elevation, plan, and sectional views",
-            "Will include dimensions and graphical information to aid construction of the building or artefact",
-            "Can be hand drafted or created using"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2021-ol-q8-None-roof-light",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-roof-light",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2021 OL Q8 — Roof light",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • rooflight.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2021-ol-q8-None-roof-light-r1",
-        "kind": "anyN",
-        "verbatim": "Roof light",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Roof light",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Used on roof surfaces for a means of natural light",
-            "Units are fitted with double, triple or quadruple glazing",
-            "Allows attic space to be used as a usable room",
-            "Form an important part of modern house design",
-            "Gives more privacy compared to dormer windows"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2021-ol-q8-None-steel-reinforcement",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-steel-reinforcement",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2021 OL Q8 — Steel reinforcement",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • steel reinforcement.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2021-ol-q8-None-steel-reinforcement-r1",
-        "kind": "anyN",
-        "verbatim": "Steel reinforcement",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Steel reinforcement",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Combined with concrete to create a strong building material called reinforced concrete",
-            "Encased in load-bearing concrete structures to increase strength and hold the concrete in tension",
-            "Placed at a depth of two thirds a foundations thickness",
-            "The steel is usually patterned to improve the bond and grip with the surrounding concrete",
-            "Often referred to as rebar and comes in bars or mesh which can be tied together into cages"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2021-ol-q8-None-heat-pump",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-heat-pump",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2021 OL Q8 — Heat pump",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • heat pump.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2021-ol-q8-None-heat-pump-r1",
-        "kind": "anyN",
-        "verbatim": "Heat pump",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Heat pump",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Used to extract heat from one area to another by means of the refrigeration cycle",
-            "A fan is used to pass air over an evaporator coil which removes the heat energy from the air and passes it to the refrigerant",
-            "The refrigerant is then compressed, which increases the temperature, this heat is transferred to water running through radiators or underfloor heating",
-            "Heat pumps that use the ground for heating are called geothermal heat pumps"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2021-ol-q8-None-ridge-board",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-ridge-board",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2021 OL Q8 — Ridge board",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • ridgeboard.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2021-ol-q8-None-ridge-board-r1",
-        "kind": "anyN",
-        "verbatim": "Ridge board",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Ridge board",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Horizontal member placed between the top end of the rafters",
-            "Forms the apex of a cut roof",
-            "Supported by the rafters or/and at the gable wall",
-            "Gives rigidity and straightness to the roof",
-            "Rafters are nailed to the ridge board",
-            "Typical sizes - 225 × 32 mm, 225 × 25 mm"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2021-ol-q8-None-biscuit-joint",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-biscuit-joint",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2021 OL Q8 — Biscuit joint",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • biscuit joint.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2021-ol-q8-None-biscuit-joint-r1",
-        "kind": "anyN",
-        "verbatim": "Biscuit joint",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Biscuit joint",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Widely used joint in manufacturing modern furniture to butt joint and edge joint",
-            "Joint used to join board of various width and thickness",
-            "Biscuit manufactured from pressed beech and available in different sizes",
-            "Biscuit joiner used to form a groove in opposing edges to allow biscuit to fit",
-            "Forms a larger surface area for gluing hence strengthens joint"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2021-ol-q8-None-room-thermostat",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-room-thermostat",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2021 OL Q8 — Room thermostat",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • room thermostat.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2021-ol-q8-None-room-thermostat-r1",
-        "kind": "anyN",
-        "verbatim": "Room thermostat",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Room thermostat",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Senses the air temperature in the room and communicates with the heating system",
-            "Regulates a desirable temperature throughout the house",
-            "Can be digital, dial or touchscreen controlled",
-            "Smart home thermostats are connected to the"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2021-ol-q8-None-building-energy-rating",
-    "topicId": "cons-1-5",
-    "conceptId": "construction-terms-building-energy-rating",
-    "level": "ordinary",
-    "year": 2021,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2021 OL Q8 — Building Energy Rating",
-    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • building energy rating.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "6 + 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
-    },
-    "totalMarks": 10,
-    "rows": [
-      {
-        "id": "cons-2021-ol-q8-None-building-energy-rating-r1",
-        "kind": "anyN",
-        "verbatim": "Building Energy Rating",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Building Energy Rating",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "BER certificates indicates the homes energy performance",
-            "Rates the energy performance of a house from A - G",
-            "An A-rated house is the most energy efficient and will have the lowest energy bills",
-            "BER is calculated on the energy used to space heat, heat water, ventilate, and light a house",
-            "An A-rated house is the current building standard and can improve its appeal to buyers and renters"
-          ],
-          "perOptionSteps": [
-            6,
-            4
-          ]
-        }
-      }
-    ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2021-OL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q8-terms",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Construction terms",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Explain any five of the nine printed terms. Each term is marked separately at 10 marks; the scheme illustrations are examples of suitable sketches."
+    }
   },
   {
     "id": "cons-2022-hl-q1-a",
@@ -64924,6 +64926,1552 @@
           "b-guideline-1",
           "b-guideline-2",
           "b-guideline-3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2021-ol-q1-complete",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "cut-roof-eaves-section-complete",
+    "questionRef": "2021 OL Q1 — complete",
+    "stem": "The sketch shows portion of the eaves of a pitched roof. The slated cut roof has a pitch of 30°. The roof is supported on a 400 mm concrete block wall with a full-fill insulated cavity. The slates are fixed to 50 mm × 30 mm battens, on a breather membrane, supported on 200 mm × 50 mm rafters. The ceiling joists are 200 mm × 50 mm with plasterboard fixed beneath. The roof is highly insulated at ceiling joist level.",
+    "questionText": "(a) To a scale of 1:5, draw a vertical section through the external wall and through the eaves of the pitched roof. On your drawing, show the typical construction details from a level 400 mm below the wallplate, through the wall and eaves. Include the first three courses of slate at eaves. Include three typical dimensions on your drawing.\n\n(b) On your drawing show how rainwater is removed at the eaves.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "Any 7 x 5 marks",
+        "marks": 35,
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: slates on 50 × 30 mm battens; breather membrane; rafters 200 × 50 mm; ceiling joists with insulation between; insulated plasterboard with skim; wallplate 100 × 75 mm; airtight membrane and tape; ventilation; tilting fillet, fascia, soffit and gutter; block inner leaf; 200 mm full-fill cavity with ties and cavity closer; block outer leaf; 13 mm plaster and 19 mm render.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "a-dimensions",
+        "kind": "criterion",
+        "verbatim": "Any three typical dimensions",
+        "marks": 4,
+        "contextNote": "Three appropriate typical dimensions on the section.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "b-gutter",
+        "kind": "criterion",
+        "verbatim": "Eaves gutter/ downpipe",
+        "marks": 3,
+        "contextNote": "Show and identify the eaves gutter and downpipe, as in the scheme’s model section.",
+        "permittedMarks": [
+          0,
+          3
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2021-OL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q1-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "Cut-roof eaves and external wall section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the rainwater detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2021-ol-q1-a",
+        "label": "a",
+        "marks": 47,
+        "rowIds": [
+          "a-details",
+          "a-dimensions",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2021-ol-q1-b",
+        "label": "b",
+        "marks": 3,
+        "rowIds": [
+          "b-gutter"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2021-ol-q2-b",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-4-2",
+    "conceptId": "ground-floor-insulation-b",
+    "questionRef": "2021 OL Q2(b)",
+    "stem": "A young couple wish to have a highly insulated ground floor in their new house. The solid ground floor is to have a 100 mm concrete floor slab, finished with a suitable flooring material.",
+    "questionText": "Using notes and freehand sketches, show one suitable method of insulating the solid ground floor of the new house. Specify the type and thickness of insulation.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 26,
+    "rows": [
+      {
+        "id": "method",
+        "kind": "criterion",
+        "verbatim": "Method of insulating floor note & sketch (8 + 8 marks)",
+        "marks": 16,
+        "contextNote": "Note 8 and sketch 8. Such as: a DPM/radon barrier on sand blinding; perimeter insulation against cold bridging; insulation boards tightly butted on the membrane; the concrete slab poured on top.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "id": "type",
+        "kind": "criterion",
+        "verbatim": "Preferred insulation type for the floor",
+        "marks": 5,
+        "contextNote": "Such as: extruded polystyrene, polyurethane or foil-faced PIR boards.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "thickness",
+        "kind": "criterion",
+        "verbatim": "Thickness of insulation",
+        "marks": 5,
+        "contextNote": "Such as: 150–300 mm insulation boards.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2021-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q2-method",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Insulating a solid ground floor",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. The insulation method and type and the floor finish are open choices; the scheme lists typical examples."
+    }
+  },
+  {
+    "id": "cons-2021-ol-q2-c",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-4-2",
+    "conceptId": "ground-floor-insulation-c",
+    "questionRef": "2021 OL Q2(c)",
+    "stem": "A young couple wish to have a highly insulated ground floor in their new house. The solid ground floor is to have a 100 mm concrete floor slab, finished with a suitable flooring material.",
+    "questionText": "The couple must decide on the floor finishes for their house. Recommend a suitable flooring material for the open-plan kitchen, and give two reasons for your selection.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 14,
+    "rows": [
+      {
+        "id": "floor",
+        "kind": "criterion",
+        "verbatim": "Suitable floor type",
+        "marks": 6,
+        "contextNote": "Such as: tiles, solid wood, laminate, polished concrete or natural stone.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 4,
+        "contextNote": "A reason matching the floor. Such as, tiles: easy to clean, hygienic, hard wearing; solid wood: attractive, natural feel.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 4,
+        "contextNote": "A second, different reason. Such as, laminate: cheap and easy to install; polished concrete: durable and maintenance free; natural stone: local and water resistant.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2021-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q2-floor",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Insulating a solid ground floor",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. The insulation method and type and the floor finish are open choices; the scheme lists typical examples."
+    }
+  },
+  {
+    "id": "cons-2021-ol-q2-complete",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "ground-floor-insulation-complete",
+    "questionRef": "2021 OL Q2 — complete",
+    "stem": "A young couple wish to have a highly insulated ground floor in their new house. The solid ground floor is to have a 100 mm concrete floor slab, finished with a suitable flooring material.",
+    "questionText": "(a) List two advantages of constructing a ground floor with a high level of insulation.\n\n(b) Using notes and freehand sketches, show one suitable method of insulating the solid ground floor of the new house. Specify the type and thickness of insulation.\n\n(c) The couple must decide on the floor finishes for their house. Recommend a suitable flooring material for the open-plan kitchen, and give two reasons for your selection.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 5,
+        "contextNote": "Such as: better for the environment; more thermal comfort.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "a-advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 5,
+        "contextNote": "A second, different advantage. Such as: lower energy bills; a warmer house; a better BER.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-method",
+        "kind": "criterion",
+        "verbatim": "Method of insulating floor note & sketch (8 + 8 marks)",
+        "marks": 16,
+        "contextNote": "Note 8 and sketch 8. Such as: a DPM/radon barrier on sand blinding; perimeter insulation against cold bridging; insulation boards tightly butted on the membrane; the concrete slab poured on top.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "id": "b-type",
+        "kind": "criterion",
+        "verbatim": "Preferred insulation type for the floor",
+        "marks": 5,
+        "contextNote": "Such as: extruded polystyrene, polyurethane or foil-faced PIR boards.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-thickness",
+        "kind": "criterion",
+        "verbatim": "Thickness of insulation",
+        "marks": 5,
+        "contextNote": "Such as: 150–300 mm insulation boards.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "c-floor",
+        "kind": "criterion",
+        "verbatim": "Suitable floor type",
+        "marks": 6,
+        "contextNote": "Such as: tiles, solid wood, laminate, polished concrete or natural stone.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 4,
+        "contextNote": "A reason matching the floor. Such as, tiles: easy to clean, hygienic, hard wearing; solid wood: attractive, natural feel.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 4,
+        "contextNote": "A second, different reason. Such as, laminate: cheap and easy to install; polished concrete: durable and maintenance free; natural stone: local and water resistant.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2021-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q2-method",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Insulating a solid ground floor",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. The insulation method and type and the floor finish are open choices; the scheme lists typical examples."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2021-ol-q2-a",
+        "label": "a",
+        "marks": 10,
+        "rowIds": [
+          "a-advantage-1",
+          "a-advantage-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2021-ol-q2-b",
+        "label": "b",
+        "marks": 26,
+        "rowIds": [
+          "b-method",
+          "b-type",
+          "b-thickness"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2021-ol-q2-c",
+        "label": "c",
+        "marks": 14,
+        "rowIds": [
+          "c-floor",
+          "c-reason-1",
+          "c-reason-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2021-ol-q3-complete",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-5-2",
+    "conceptId": "cold-water-supply-complete",
+    "questionRef": "2021 OL Q3 — complete",
+    "stem": "The public water supply provides households with clean, treated water for domestic consumption.",
+    "questionText": "(a) Using a single-line labelled sketch, show the pipework required to supply cold water from the water main to the kitchen sink and to the water storage tank. Include the following in your sketch: water main; water meter; rising main; pipework to the kitchen sink; insulated cold water storage tank; all necessary valves.\n\n(b) Discuss two advantages of installing a water meter.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-items",
+        "kind": "criterion",
+        "verbatim": "Any 8 × 4 marks",
+        "marks": 32,
+        "contextNote": "Credit the best EIGHT acceptable items at 4 marks each, capped at 32. Marked items: mains water supply; water meter; 15 mm rising main; kitchen sink; connection to the sink; ball valve; cold water storage tank; insulation around the tank; 28 mm overflow; pipe insulation; valves; annotation.",
+        "permittedMarks": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the sketch: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "b-advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 5,
+        "contextNote": "Such as: encourages water conservation; lower water treatment costs.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 5,
+        "contextNote": "A second, different advantage. Such as: shows leaks and wastage; a lower water bill.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2021-OL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q3-system",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Cold water supply from the water main",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. The listed components are required content, not a choice; the best-eight list is a marking menu."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2021-ol-q3-a",
+        "label": "a",
+        "marks": 40,
+        "rowIds": [
+          "a-items",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2021-ol-q3-b",
+        "label": "b",
+        "marks": 10,
+        "rowIds": [
+          "b-advantage-1",
+          "b-advantage-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2021-ol-q4-c",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "planning-permission-c",
+    "questionRef": "2021 OL Q4(c)",
+    "stem": "The sketch shows a design for a dwelling house which is to be constructed in a town. The owner intends to apply for planning permission to construct this dwelling house.",
+    "questionText": "Discuss one advantage and one disadvantage of building a dwelling house in a town.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 6,
+        "contextNote": "Such as: public transport; less reliance on a car; amenities within walking distance; access to services and public sewerage.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "disadvantage",
+        "kind": "criterion",
+        "verbatim": "Disadvantage",
+        "marks": 6,
+        "contextNote": "Such as: poorer air quality; noise; less connection to nature; less privacy; limited site space.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2021-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q4-town",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Planning permission for a town house",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+    }
+  },
+  {
+    "id": "cons-2021-ol-q4-complete",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-3",
+    "conceptId": "planning-permission-complete",
+    "questionRef": "2021 OL Q4 — complete",
+    "stem": "The sketch shows a design for a dwelling house which is to be constructed in a town. The owner intends to apply for planning permission to construct this dwelling house.",
+    "questionText": "(a) Discuss two reasons why it is necessary to apply for planning permission to build a new dwelling house.\n\n(b) Using notes and freehand sketches, describe the information that must be contained in each of the following planning documents: site notice; site location map.\n\n(c) Discuss one advantage and one disadvantage of building a dwelling house in a town.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 6,
+        "contextNote": "Such as: to ensure the building meets current regulations; to avoid environmental damage.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 6,
+        "contextNote": "A second, different reason. Such as: it informs the public; it controls design, height and location; better designed communities; a legal requirement.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-site-notice",
+        "kind": "criterion",
+        "verbatim": "Site notice note & sketch (8 + 5 marks)",
+        "marks": 13,
+        "contextNote": "Note 8 and sketch 5. Such as: the applicant’s name; the application reference; a description of the development; where the plans can be inspected; the date the notice was erected.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": "b-location-map",
+        "kind": "criterion",
+        "verbatim": "Site location map note & sketch (8 + 5 marks)",
+        "marks": 13,
+        "contextNote": "Note 8 and sketch 5. Such as: the location of the dwelling and local area; a scale between 1:10560 and 1:2500; the site boundary outlined in red; neighbouring buildings; north point.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": "c-advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 6,
+        "contextNote": "Such as: public transport; less reliance on a car; amenities within walking distance; access to services and public sewerage.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-disadvantage",
+        "kind": "criterion",
+        "verbatim": "Disadvantage",
+        "marks": 6,
+        "contextNote": "Such as: poorer air quality; noise; less connection to nature; less privacy; limited site space.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2021-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q4-documents",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Planning permission for a town house",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2021-ol-q4-a",
+        "label": "a",
+        "marks": 12,
+        "rowIds": [
+          "a-reason-1",
+          "a-reason-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2021-ol-q4-b",
+        "label": "b",
+        "marks": 26,
+        "rowIds": [
+          "b-site-notice",
+          "b-location-map"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2021-ol-q4-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-advantage",
+          "c-disadvantage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2021-ol-q5-complete",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "window-cill-section-complete",
+    "questionRef": "2021 OL Q5 — complete",
+    "stem": "The sketch shows portion of a triple glazed wooden window. The window is fixed in a 400 mm concrete block wall with a full-fill insulated cavity. The wall is rendered on both sides. The fixed frame of the window is 120 mm × 80 mm and is thermally broken.",
+    "questionText": "(a) To a scale of 1:5, draw a vertical section through the external wall and bottom portion of the window. Show the typical construction details from a level 400 mm below to a level 300 mm above the concrete window cill. Include three typical dimensions on your drawing.\n\n(b) Show on your drawing the typical design detailing to prevent water entering at the window cill.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "Any 7 x 5 marks",
+        "marks": 35,
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: block outer leaf; full-fill insulated cavity; wall ties; block inner leaf; 13 mm plaster and 19 mm render; cavity closer; DPC; precast concrete cill with throating/drip; window board; airtight tape; window frame 120 × 80 mm; triple glazing.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "a-dimensions",
+        "kind": "criterion",
+        "verbatim": "Any three typical dimensions",
+        "marks": 3,
+        "contextNote": "Three appropriate typical dimensions on the section, 1 each.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "b-cill",
+        "kind": "criterion",
+        "verbatim": "Throating / drip / DPC",
+        "marks": 4,
+        "contextNote": "Show and identify the detail, such as a sloped cill overhanging the render with a throating or drip, wrapped in DPC. Any other suitable detail is accepted.",
+        "permittedMarks": [
+          0,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2021-OL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q5-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "External wall and window cill section",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the cill detail in (b) is marked separately."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2021-ol-q5-a",
+        "label": "a",
+        "marks": 46,
+        "rowIds": [
+          "a-details",
+          "a-dimensions",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2021-ol-q5-b",
+        "label": "b",
+        "marks": 4,
+        "rowIds": [
+          "b-cill"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2021-ol-q6-complete",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "trench-safety-complete",
+    "questionRef": "2021 OL Q6 — complete",
+    "stem": "",
+    "questionText": "(a) Using a large freehand sketch, show the safety sign for each of the following personal protection equipment (PPE) items: high-visibility vest; safety boots; safety helmet. Give one specific reason why each item of personal protective equipment listed above must be worn.\n\n(b) Describe two potential risks to construction workers when working in a deep trench.\n\n(c) Using notes and a freehand sketch, describe one safety precaution that workers should observe when working in a deep trench on a construction site.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-vest",
+        "kind": "criterion",
+        "verbatim": "High-visibility vest sign and specific reason (6 + 3 marks)",
+        "marks": 9,
+        "contextNote": "Sign 6 and specific reason 3. Such as: workers visible on site so machine operators can see them and avoid accidents.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "id": "a-boots",
+        "kind": "criterion",
+        "verbatim": "Safety boots sign and specific reason (6 + 3 marks)",
+        "marks": 9,
+        "contextNote": "Sign 6 and specific reason 3. Such as: feet protected from heavy materials and objects being dropped.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "id": "a-helmet",
+        "kind": "criterion",
+        "verbatim": "Safety helmet sign and specific reason (6 + 3 marks)",
+        "marks": 9,
+        "contextNote": "Sign 6 and specific reason 3. Such as: the head protected from objects and materials falling from heights.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "id": "b-risk-1",
+        "kind": "criterion",
+        "verbatim": "Risk 1",
+        "marks": 5,
+        "contextNote": "Such as: the trench sides caving in or collapsing; equipment or machinery falling in on workers.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-risk-2",
+        "kind": "criterion",
+        "verbatim": "Risk 2",
+        "marks": 5,
+        "contextNote": "A second, different risk. Such as: workers falling when entering or leaving; contact with underground services.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "c-precaution",
+        "kind": "criterion",
+        "verbatim": "Safety precaution note & sketch (8 + 5 marks)",
+        "marks": 13,
+        "contextNote": "Note 8 and sketch 5. Such as: battering the sides back to a safe angle; sheeting or a trench box beyond 1.25 m deep; guard rails and exclusion zones; spoil stored well back from the edge.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2021-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q6-signs",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "PPE and deep-trench safety",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original question retained. All three printed PPE items in (a) are required, each separately marked; risks and precautions are open responses."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2021-ol-q6-a",
+        "label": "a",
+        "marks": 27,
+        "rowIds": [
+          "a-vest",
+          "a-boots",
+          "a-helmet"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2021-ol-q6-b",
+        "label": "b",
+        "marks": 10,
+        "rowIds": [
+          "b-risk-1",
+          "b-risk-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2021-ol-q6-c",
+        "label": "c",
+        "marks": 13,
+        "rowIds": [
+          "c-precaution"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2021-ol-q7-a",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "living-room-layout-a",
+    "questionRef": "2021 OL Q7(a)",
+    "stem": "A draft design for a living room layout with an adjacent kitchen in a new dwelling house is shown. The positions of the windows and a door are included.",
+    "questionText": "Draw a large freehand sketch of the given design and show on the sketch how the kitchen could be accessed directly from the living room. Discuss one advantage of including direct access to the kitchen from the living room.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch of living room",
+        "marks": 8,
+        "contextNote": "A large freehand sketch of the given design.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "access",
+        "kind": "criterion",
+        "verbatim": "Suitable access from kitchen",
+        "marks": 6,
+        "contextNote": "Direct access to the kitchen shown, such as a door or opening in the shared wall.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 6,
+        "contextNote": "Such as: quicker to reach the kitchen; a larger space to gather; heat circulating between the most-used rooms; the family together while doing different tasks.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2021-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q7-access",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Living room layout with kitchen access",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    }
+  },
+  {
+    "id": "cons-2021-ol-q7-complete",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "living-room-layout-complete",
+    "questionRef": "2021 OL Q7 — complete",
+    "stem": "A draft design for a living room layout with an adjacent kitchen in a new dwelling house is shown. The positions of the windows and a door are included.",
+    "questionText": "(a) Draw a large freehand sketch of the given design and show on the sketch how the kitchen could be accessed directly from the living room. Discuss one advantage of including direct access to the kitchen from the living room.\n\n(b) On the sketch, show your preferred location for each of the following in the living room: sofa (3 seater); stove; sofa (2 seater); television. Give one reason for selecting each location.\n\n(c) Discuss one advantage of incorporating a wood-burning stove in a modern living room.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch of living room",
+        "marks": 8,
+        "contextNote": "A large freehand sketch of the given design.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "a-access",
+        "kind": "criterion",
+        "verbatim": "Suitable access from kitchen",
+        "marks": 6,
+        "contextNote": "Direct access to the kitchen shown, such as a door or opening in the shared wall.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 6,
+        "contextNote": "Such as: quicker to reach the kitchen; a larger space to gather; heat circulating between the most-used rooms; the family together while doing different tasks.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-sofa-3",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for 3 seater sofa position (3 + 3 marks)",
+        "marks": 6,
+        "contextNote": "Location 3 and reason 3. Such as: a clear view of the television and stove; against the wall to save space.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-sofa-2",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for 2 seater sofa position (3 + 3 marks)",
+        "marks": 6,
+        "contextNote": "Location 3 and reason 3. Such as: a view of the television beside the stove; placed for conversation; not blocking light.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-stove",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for stove position (3 + 3 marks)",
+        "marks": 6,
+        "contextNote": "Location 3 and reason 3. Such as: on an external wall for the flue; central for heat circulation and as a focal point.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-television",
+        "kind": "criterion",
+        "verbatim": "Location and valid reason for television position (3 + 3 marks)",
+        "marks": 6,
+        "contextNote": "Location 3 and reason 3. Such as: on a wall for secure fixing; in a corner away from window glare and damage.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 6,
+        "contextNote": "Such as: a centrepiece to gather around; warmth in the main room; environmentally friendly with timber fuel; less oil and gas used.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2021-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q7-layout",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Living room layout with kitchen access",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original plan retained. All four printed items in (b) are required in one sketch; locations and reasons are open, well-reasoned responses."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2021-ol-q7-a",
+        "label": "a",
+        "marks": 20,
+        "rowIds": [
+          "a-sketch",
+          "a-access",
+          "a-advantage"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2021-ol-q7-b",
+        "label": "b",
+        "marks": 24,
+        "rowIds": [
+          "b-sofa-3",
+          "b-sofa-2",
+          "b-stove",
+          "b-television"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2021-ol-q7-c",
+        "label": "c",
+        "marks": 6,
+        "rowIds": [
+          "c-advantage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2021-ol-q9-complete",
+    "subjectId": "construction-studies",
+    "year": 2021,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-10-7",
+    "conceptId": "outdoor-decking-complete",
+    "questionRef": "2021 OL Q9 — complete",
+    "stem": "The sketch shows a space for outdoor living to the rear of a dwelling house. The space has been constructed using softwood decking on wooden joists.",
+    "questionText": "(a) Specify a suitable applied finish to preserve the decking, and give two reasons for your choice.\n\n(b) The outdoor space needs to be modified so that the occupants can use the space throughout the year. Using notes and freehand sketches, show two modifications to the outdoor space that would allow its use during the winter months.\n\n(c) Discuss two advantages for the occupants of creating an outdoor living space.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-finish",
+        "kind": "criterion",
+        "verbatim": "Suitable finish",
+        "marks": 4,
+        "contextNote": "Such as: decking, teak or furniture oil; a solvent-based preservative; exterior wood paint; varnish; decking stain.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 4,
+        "contextNote": "Such as: a better appearance; protection against UV damage and fading.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 4,
+        "contextNote": "A second, different reason. Such as: a longer life for the softwood; protection against algae, rot and decay; a change of colour.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-modification-1",
+        "kind": "criterion",
+        "verbatim": "Modification 1 to space notes + sketch (8 + 5 marks )",
+        "marks": 13,
+        "contextNote": "Notes and sketch, 8 + 5. Such as: a windbreak around the decking; a permanent roof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": "b-modification-2",
+        "kind": "criterion",
+        "verbatim": "Modification 2 to space notes + sketch (8 + 5 marks )",
+        "marks": 13,
+        "contextNote": "Notes and sketch, 8 + 5, for a second, different modification. Such as: a heat source — a fire pit, patio heater or outdoor fireplace.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": "c-advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 6,
+        "contextNote": "Such as: more usable space; a connection with nature and the outdoors.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 6,
+        "contextNote": "A second, different advantage. Such as: outdoor meals in warmer seasons; a higher resale value.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2021-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2021-OL-q9-winter",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Outdoor living space on softwood decking",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The finish, modifications and advantages are open responses; the scheme lists typical examples."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2021-ol-q9-a",
+        "label": "a",
+        "marks": 12,
+        "rowIds": [
+          "a-finish",
+          "a-reason-1",
+          "a-reason-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2021-ol-q9-b",
+        "label": "b",
+        "marks": 26,
+        "rowIds": [
+          "b-modification-1",
+          "b-modification-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2021-ol-q9-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-advantage-1",
+          "c-advantage-2"
         ]
       }
     ]

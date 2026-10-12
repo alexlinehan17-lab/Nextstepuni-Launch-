@@ -214,5 +214,72 @@
     "withdrawnIds": [],
     "keptChoiceIds": [],
     "choiceCardIds": []
+  },
+  {
+    "year": 2021,
+    "level": "ordinary",
+    "validator": "scripts/markbank/authoring/construction_2021_ordinary.py",
+    "result": {
+      "tasks": 30,
+      "addedTasks": 12,
+      "correctedTasks": 18,
+      "consolidatedLegacy": 8,
+      "leafTasks": 22,
+      "wholeQuestions": 9,
+      "anyNChoiceCards": 1,
+      "sourceFigures": 29,
+      "paperComplete": true
+    },
+    "priorCount": 802,
+    "addedIds": [
+      "cons-2021-ol-q1-complete",
+      "cons-2021-ol-q2-b",
+      "cons-2021-ol-q2-c",
+      "cons-2021-ol-q2-complete",
+      "cons-2021-ol-q3-complete",
+      "cons-2021-ol-q4-c",
+      "cons-2021-ol-q4-complete",
+      "cons-2021-ol-q5-complete",
+      "cons-2021-ol-q6-complete",
+      "cons-2021-ol-q7-a",
+      "cons-2021-ol-q7-complete",
+      "cons-2021-ol-q9-complete"
+    ],
+    "correctedIds": [
+      "cons-2021-ol-q1-a",
+      "cons-2021-ol-q1-b",
+      "cons-2021-ol-q2-a",
+      "cons-2021-ol-q3-a",
+      "cons-2021-ol-q3-b",
+      "cons-2021-ol-q4-a",
+      "cons-2021-ol-q4-b",
+      "cons-2021-ol-q5-a",
+      "cons-2021-ol-q5-b",
+      "cons-2021-ol-q6-a",
+      "cons-2021-ol-q6-b",
+      "cons-2021-ol-q6-c",
+      "cons-2021-ol-q7-b",
+      "cons-2021-ol-q7-c",
+      "cons-2021-ol-q8-None-joist-bridging",
+      "cons-2021-ol-q9-a",
+      "cons-2021-ol-q9-b",
+      "cons-2021-ol-q9-c"
+    ],
+    "withdrawnIds": [
+      "cons-2021-ol-q8-None-steel-reinforcement",
+      "cons-2021-ol-q8-None-biscuit-joint",
+      "cons-2021-ol-q8-None-working-drawing",
+      "cons-2021-ol-q8-None-heat-pump",
+      "cons-2021-ol-q8-None-room-thermostat",
+      "cons-2021-ol-q8-None-roof-light",
+      "cons-2021-ol-q8-None-ridge-board",
+      "cons-2021-ol-q8-None-building-energy-rating"
+    ],
+    "keptChoiceIds": [
+      "cons-2021-ol-q8-None-joist-bridging"
+    ],
+    "choiceCardIds": [
+      "cons-2021-ol-q8-None-joist-bridging"
+    ]
   }
 ]

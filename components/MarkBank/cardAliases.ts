@@ -115,4 +115,14 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "cons-2022-ol-q8-None-wall-tie": "cons-2022-ol-q8-None-strip-foundation",
   "cons-2022-ol-q8-None-cordless-jigsaw": "cons-2022-ol-q8-None-strip-foundation",
   "cons-2022-ol-q8-None-underfloor-heating": "cons-2022-ol-q8-None-strip-foundation",
+  /* 2026-10-12. Construction Studies 2021 Ordinary: each printed choice is one card (choice is not a route); the
+   * pre-audit per-item cards are consolidated into cons-2021-ol-q8-None-joist-bridging and their progress goes to it. */
+  "cons-2021-ol-q8-None-steel-reinforcement": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-biscuit-joint": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-working-drawing": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-heat-pump": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-room-thermostat": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-roof-light": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-ridge-board": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-building-energy-rating": "cons-2021-ol-q8-None-joist-bridging",
 };
