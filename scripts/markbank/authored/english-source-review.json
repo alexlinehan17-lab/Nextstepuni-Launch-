@@ -3542,6 +3542,39 @@
       "attribution": "Monisha Rajesh — edited article from the travel section of the Financial Times, ‘To Istanbul by Train’, March 2023, with two images (PDF6–7). As reproduced in the SEC 2024 paper.",
       "questionSha256": "3c8938131ec78eb3d50550dcc2e156cf42d0f3f1d372b74de6c0a77ca02f9c46",
       "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2024-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Building my Grandfather",
+      "pages": [
+        6
+      ],
+      "attribution": "Building my Grandfather — Jonathan Edwards, as reproduced in the SEC 2024 paper.",
+      "questionSha256": "fda34e370f434b9ca06a49cbc50f1847e70ee5928852d1ba049a2eaff62bfd3b",
+      "reason": "Paper PDF6 prints the introduction (Jonathan Edwards imagining an encounter with his grandfather), the title, the whole 26-line poem and the byline above both questions; visually verified."
+    },
+    "english-2024-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Building my Grandfather",
+      "pages": [
+        6
+      ],
+      "attribution": "Building my Grandfather — Jonathan Edwards, as reproduced in the SEC 2024 paper.",
+      "questionSha256": "e9f2a24b7f1d96293113387daa85c93756cda038b689c824a85a9463e370cd8f",
+      "reason": "Paper PDF6 prints the introduction (Jonathan Edwards imagining an encounter with his grandfather), the title, the whole 26-line poem and the byline above both questions; visually verified."
+    },
+    "english-2024-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Building my Grandfather",
+      "pages": [
+        6
+      ],
+      "attribution": "Building my Grandfather — Jonathan Edwards, as reproduced in the SEC 2024 paper.",
+      "questionSha256": "568ae322ac5b0fd0883d11f4e7a4710ce93674019cf4fca9f86e09bc999c7cc3",
+      "reason": "Paper PDF6 prints the introduction (Jonathan Edwards imagining an encounter with his grandfather), the title, the whole 26-line poem and the byline above both questions; visually verified."
     }
   }
 }

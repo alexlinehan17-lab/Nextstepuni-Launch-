@@ -249,6 +249,18 @@ class EnglishLegacyBridgeTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'not the same printed task'):
             self.apply('english-2025-ol-p2', bridge)
 
+    def test_legacy_comparative_grid_is_corrected_with_quoted_rows(self):
+        entries = self.bridge['papers']['english-2024-hl-p2']['legacyCards']
+        rows = entries['english-2024-hl-p2-comparative-a-q1']['correction']['rows']
+        self.assertEqual([row['schemePage'] for row in rows], [33, 34])
+        manifest = self.outputs[publish.CARDS_DIR / 'published-higher.json']
+        modes = {c['id']: c['assessment']['mode'] for c in manifest['cards'] if c['id'].startswith('english-2024-hl-p2-comparative-')}
+        self.assertEqual({modes[f'english-2024-hl-p2-comparative-{m}-q1-{p}'] for m in 'abc' for p in 'ab'}, {'combined'})
+        bridge = copy.deepcopy(self.bridge['papers']['english-2024-hl-p2'])
+        bridge['legacyCards']['english-2024-hl-p2-comparative-a-q1']['correction']['rows'][0]['schemeRow'] = 'H1 30 – 26'
+        with self.assertRaisesRegex(ValueError, 'corrected scheme row not printed'):
+            self.apply('english-2024-hl-p2', bridge)
+
     def test_lifted_indicative_material_reaches_only_its_cards(self):
         manifest = self.outputs[publish.CARDS_DIR / 'published-higher.json']
         carrying = sorted(card['id'] for card in manifest['cards'] if card.get('indicativeMaterial'))

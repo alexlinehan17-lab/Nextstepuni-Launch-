@@ -9037,28 +9037,28 @@
     },
     "english-2024-hl-p2-single-a-i": {
       "questionSha256": "685dc3d714fc75ac5734c6f030d3c40ad1ccbd6088c66a0dce31d18e5ca33211",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF22: at least two moral and ethical issues, broadly interpreted; ‘fascinated’ may be addressed implicitly. One 60-mark response."
     },
     "english-2024-hl-p2-single-b-i": {
       "questionSha256": "3513a9473c10adcfe9f6842c382d80486cc224c8f292afd5e4e951b40cc630f2",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF24: at least two core issues explored through the Proctor–Elizabeth relationship, broadly interpreted; ‘complex’ may be addressed implicitly. One 60-mark response."
     },
     "english-2024-hl-p2-single-c-i": {
       "questionSha256": "d0780f11d34563b130135f9b28ba83b3d11546128218bd288aca58c8cebdeff9",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF26: at least two core issues explored through Hamlet’s relationship with Gertrude, broadly interpreted; ‘complex’ may be addressed implicitly. One 60-mark response."
     },
     "english-2024-hl-p2-single-d-i": {
       "questionSha256": "e5e1ae00f250adcad91d1debdce5770d86c9a2477c53eb27bed1090a6442b903",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF28: at least two moral and ethical issues, broadly interpreted; ‘fascinated’ may be addressed implicitly. One 60-mark response."
     },
     "english-2024-hl-p2-single-e-i": {
       "questionSha256": "b52a704499e9506d1c452d0560a80c85a536924eadda97a53c0ffbf379314727",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF30: at least two moral and ethical issues, broadly interpreted; ‘fascinated’ may be addressed implicitly. One 60-mark response."
     },
     "english-2024-ol-p2-single-a-q1-b": {
       "questionSha256": "839568a0437964e494d24412eba87b038c308632c3113a23d3427efcae4c060d",
@@ -13802,42 +13802,42 @@
     "english-2024-hl-p2-comparative-a-q1-b": {
       "questionSha256": "595bdf5545dea061c400f86cbc0e5c5c67d60656007dc1b377ef76afe252bea7",
       "kind": "flexible",
-      "reason": "The paper explicitly allows combined approaches, repeated or different aspects, and/or alternatives supplied by the student. It does not prescribe a fixed named pool of exclusive answers."
+      "reason": "Paper PDF4 and scheme PDF34: two other texts, at least two techniques each, “the same or different techniques”. One 40-mark response."
     },
     "english-2024-hl-p2-comparative-a-q2": {
       "questionSha256": "dd309de8e173d86600c33bf631475cbd8fb8cc23cef21cf335c1d2a7ae2f51b0",
       "kind": "flexible",
-      "reason": "The paper explicitly allows combined approaches, repeated or different aspects, and/or alternatives supplied by the student. It does not prescribe a fixed named pool of exclusive answers."
+      "reason": "Scheme PDF35: at least one technique in at least two texts manipulating the reader’s emotional response; flexible minimums. One 70-mark response."
     },
     "english-2024-hl-p2-comparative-b-q1-a": {
       "questionSha256": "400097f9119c4b9ab14a68af19563595e1304af17f70ff0135172ed85cf3b6b9",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF36: the extent to which one central character’s freedom (broadly interpreted) is determined by social position and status. One 30-mark response."
     },
     "english-2024-hl-p2-comparative-b-q1-b": {
       "questionSha256": "885065c2503b0e299c2d49a70f69f63edf189e8af8f2af70470ac29ad2f0e2f1",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF37: two other texts, one central character each; links with part (a) not required. One 40-mark response."
     },
     "english-2024-hl-p2-comparative-b-q2": {
       "questionSha256": "ee203a8e16001686240484261d19daa68189abff1b98f03b483417b500aef489",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF38: at least two texts; the extent to which the cultural context nurtures admirable values and attitudes. One 70-mark response."
     },
     "english-2024-hl-p2-comparative-c-q1-a": {
       "questionSha256": "ee3239895e7c86a115501e0ea8e523c3cebe40831a714ac61e60463b5e78dc7e",
-      "kind": "context",
-      "reason": "These are the mode name or overlapping descriptions of the same literary focus. They are not mutually exclusive printed answer options. Texts, techniques and examples remain student-selected."
+      "kind": "open",
+      "reason": "Scheme PDF39: one interesting interaction at one pivotal moment in one text, broadly interpreted. One 30-mark response."
     },
     "english-2024-hl-p2-comparative-c-q1-b": {
       "questionSha256": "457c58cd30c9d425a3709193e09bd6c89b8dabb796000eb8de5c23cc1a9b01e0",
-      "kind": "context",
-      "reason": "These are the mode name or overlapping descriptions of the same literary focus. They are not mutually exclusive printed answer options. Texts, techniques and examples remain student-selected."
+      "kind": "flexible",
+      "reason": "Paper PDF5 prints “at least two other texts”; scheme PDF40 expects two (more: consult the advising examiner). One 40-mark response on the same theme."
     },
     "english-2024-hl-p2-comparative-c-q2": {
       "questionSha256": "b6729622c67ddb776cd76c01be4da7ffd3b68da7f1ee3d11fa1072a895e64559",
-      "kind": "context",
-      "reason": "These are the mode name or overlapping descriptions of the same literary focus. They are not mutually exclusive printed answer options. Texts, techniques and examples remain student-selected."
+      "kind": "flexible",
+      "reason": "Scheme PDF41: at least two texts; the extent to which a theme instilled a sense of human selflessness. One 70-mark response."
     },
     "english-2024-ol-p2-comparative-a-q1-a-i": {
       "questionSha256": "d2eb3de7bd6f6c5f108eb388508faa941281a4395905da40789bd845802765dc",
@@ -16353,6 +16353,76 @@
       "questionSha256": "3c8938131ec78eb3d50550dcc2e156cf42d0f3f1d372b74de6c0a77ca02f9c46",
       "kind": "open",
       "reason": "Scheme PDF11: four elements of style chosen freely from the text, discussing how they make it an informative and appealing piece of travel writing. One 20-mark response."
+    },
+    "english-2024-hl-p2-single-a-ii": {
+      "questionSha256": "b9879bfe9ce345cde58b165eab3349ac2ea2c27f86bb0c6a33c5c0d20d65a63e",
+      "kind": "open",
+      "reason": "Scheme PDF23: the extent to which the narrative structure engages the reader — a graded judgement. One 60-mark response."
+    },
+    "english-2024-hl-p2-single-b-ii": {
+      "questionSha256": "488bb64a948916cf5c633cd6e476361bf24dcae670e5e9bb2b070e5ca304697e",
+      "kind": "open",
+      "reason": "Scheme PDF25: more than one compelling reason the play is not entirely bleak; candidates may engage with its bleak aspects. One 60-mark response."
+    },
+    "english-2024-hl-p2-single-c-ii": {
+      "questionSha256": "e5bb4227afc00913d7cd68591668c561986717462baeb150af47772131448c93",
+      "kind": "open",
+      "reason": "Scheme PDF27: more than one aspect making the play surprisingly positive and hopeful; ‘surprisingly’ explicit or implicit. One 60-mark response."
+    },
+    "english-2024-hl-p2-single-d-ii": {
+      "questionSha256": "8e76eb576ef8e444ac875fb7e6377aef7a11d25af030ecf99079706dce9dd47e",
+      "kind": "open",
+      "reason": "Scheme PDF29: the extent to which the narrative structure engages the reader — a graded judgement. One 60-mark response."
+    },
+    "english-2024-hl-p2-single-e-ii": {
+      "questionSha256": "2ed95622d2a46ecfd47bb0c385133102efd18446b34cedd1e784f0ff54449cea",
+      "kind": "open",
+      "reason": "Scheme PDF31: at least two insights from the portrayal of the class system; ‘provocative’ liberally or implicitly. One 60-mark response."
+    },
+    "english-2024-hl-p2-comparative-a-q1-a": {
+      "questionSha256": "a1c5301a2507fd4ddc4ef34f72c7a2ec2a9d4e541a582fb1c928cddab685e614",
+      "kind": "open",
+      "reason": "Scheme PDF33: at least two techniques making one relationship believable in one freely chosen text. One 30-mark response."
+    },
+    "english-2024-hl-p2-unseen-q1-a": {
+      "questionSha256": "fda34e370f434b9ca06a49cbc50f1847e70ee5928852d1ba049a2eaff62bfd3b",
+      "kind": "open",
+      "reason": "Scheme PDF42: views on how effectively the poet uses tone — a graded judgement. One 10-mark response."
+    },
+    "english-2024-hl-p2-unseen-q1-b": {
+      "questionSha256": "e9f2a24b7f1d96293113387daa85c93756cda038b689c824a85a9463e370cd8f",
+      "kind": "open",
+      "reason": "Scheme PDF42: at least two characteristics of the grandfather of the candidate’s own. One 10-mark response."
+    },
+    "english-2024-hl-p2-unseen-q2": {
+      "questionSha256": "568ae322ac5b0fd0883d11f4e7a4710ce93674019cf4fca9f86e09bc999c7cc3",
+      "kind": "open",
+      "reason": "Scheme PDF43: the extent to which the language is clever and creative — a graded judgement. One 20-mark response."
+    },
+    "english-2024-hl-p2-prescribed-1": {
+      "questionSha256": "8f9c622896bb32e34cbce32f651aa228d9f49694cf1b70c66a2a93060d612435",
+      "kind": "open",
+      "reason": "Scheme PDF43, 44: freedom of choice of poems studied; discuss the statement. One 50-mark response."
+    },
+    "english-2024-hl-p2-prescribed-2": {
+      "questionSha256": "45a47b6389e4e0cf89a7ee86c1428a641ad125059d7188fc873649ebec3f3e58",
+      "kind": "open",
+      "reason": "Scheme PDF43, 45: freedom of choice of poems studied; discuss the statement. One 50-mark response."
+    },
+    "english-2024-hl-p2-prescribed-3": {
+      "questionSha256": "c8a134bb7e9502f4069f906c0a24ec4fe7237a2a2a13d7de9efb9b7c8433ab24",
+      "kind": "open",
+      "reason": "Scheme PDF43, 46: freedom of choice of poems studied; discuss the statement. One 50-mark response."
+    },
+    "english-2024-hl-p2-prescribed-4": {
+      "questionSha256": "43e950ae0588a7654963c6839e141a01ca7ed2e0742d868e6a2a998bcd3eac74",
+      "kind": "open",
+      "reason": "Scheme PDF43, 47: freedom of choice of poems studied; discuss the statement. One 50-mark response."
+    },
+    "english-2024-hl-p2-prescribed-5": {
+      "questionSha256": "f4334527d7d114faa3130ba86a72fd5d72bf85a7c250eee24780833ae02692f3",
+      "kind": "open",
+      "reason": "Scheme PDF43, 48: freedom of choice of poems studied; discuss the statement. One 50-mark response."
     }
   }
 }

@@ -366,11 +366,17 @@ def apply_bridge(key, bridge, record, emitted, legacy_manifest):
                 target['indicativeMaterial'] = lifted['items']
             correction = entry.get('correction')
             if correction:
-                # A legacy marking defect corrected by the reviewed card: quote the printed row.
-                if not correction.get('reason', '').strip() or correction['schemePage'] not in target['schemePages']:
-                    raise ValueError(f'{old}: a correction record needs a reason and the card\'s own scheme page')
-                if squashed(correction['schemeRow']) not in squashed(doc[correction['schemePage'] - 1].get_text()):
-                    raise ValueError(f'{old}: corrected scheme row not printed on scheme PDF{correction["schemePage"]}')
+                # A legacy marking defect corrected by the reviewed cards: quote each printed row, on the
+                # scheme page of the card (or of a part of the bundled legacy card) that now uses it.
+                pages = set(target['schemePages']) | {page for card in emitted if card['id'].startswith(old + '-')
+                                                      for page in card['schemePages']}
+                if not correction.get('reason', '').strip() or not correction.get('rows'):
+                    raise ValueError(f'{old}: a correction record needs a reason and its quoted scheme rows')
+                for row in correction['rows']:
+                    if row['schemePage'] not in pages:
+                        raise ValueError(f'{old}: corrected row is not on a scheme page of its reviewed cards')
+                    if squashed(row['schemeRow']) not in squashed(doc[row['schemePage'] - 1].get_text()):
+                        raise ValueError(f'{old}: corrected scheme row not printed on scheme PDF{row["schemePage"]}')
 
 
 def publish():

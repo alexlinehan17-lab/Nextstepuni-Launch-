@@ -59,6 +59,17 @@
    "schemeSha256": "470ddca344cc7b0941cf6e10f4d1e1a13e27db7ca6b58501d6997a8289b5a82b"
   },
   {
+   "paperId": "english-2024-hl-p2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "tasks": 27,
+   "cards": 27,
+   "printedDuplicates": 0,
+   "paperSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
+   "schemeSha256": "470ddca344cc7b0941cf6e10f4d1e1a13e27db7ca6b58501d6997a8289b5a82b"
+  },
+  {
    "paperId": "english-2018-hl-p1",
    "year": 2018,
    "level": "higher",
@@ -719,6 +730,7 @@
  "legacyAdditionalSources": {},
  "bridgedPapers": [
   "english-2024-hl-p1",
+  "english-2024-hl-p2",
   "english-2025-hl-p1",
   "english-2025-hl-p2"
  ],
@@ -742,6 +754,29 @@
   "english-2024-hl-p1-t3-a-ii",
   "english-2024-hl-p1-t3-a-iii",
   "english-2024-hl-p1-t3-b",
+  "english-2024-hl-p2-comparative-a-q1",
+  "english-2024-hl-p2-comparative-a-q2",
+  "english-2024-hl-p2-comparative-b-q1",
+  "english-2024-hl-p2-comparative-b-q2",
+  "english-2024-hl-p2-comparative-c-q1",
+  "english-2024-hl-p2-comparative-c-q2",
+  "english-2024-hl-p2-prescribed-1",
+  "english-2024-hl-p2-prescribed-2",
+  "english-2024-hl-p2-prescribed-3",
+  "english-2024-hl-p2-prescribed-4",
+  "english-2024-hl-p2-prescribed-5",
+  "english-2024-hl-p2-single-a-i",
+  "english-2024-hl-p2-single-a-ii",
+  "english-2024-hl-p2-single-b-i",
+  "english-2024-hl-p2-single-b-ii",
+  "english-2024-hl-p2-single-c-i",
+  "english-2024-hl-p2-single-c-ii",
+  "english-2024-hl-p2-single-d-i",
+  "english-2024-hl-p2-single-d-ii",
+  "english-2024-hl-p2-single-e-i",
+  "english-2024-hl-p2-single-e-ii",
+  "english-2024-hl-p2-unseen-q1",
+  "english-2024-hl-p2-unseen-q2",
   "english-2025-hl-p1-composing-1",
   "english-2025-hl-p1-composing-2",
   "english-2025-hl-p1-composing-3",
@@ -786,12 +821,16 @@
   "english-2025-hl-p2-unseen-q2"
  ],
  "bridgeAliases": {
+  "english-2024-hl-p2-comparative-a-q1": "english-2024-hl-p2-comparative-a-q1-a",
+  "english-2024-hl-p2-comparative-b-q1": "english-2024-hl-p2-comparative-b-q1-a",
+  "english-2024-hl-p2-comparative-c-q1": "english-2024-hl-p2-comparative-c-q1-a",
+  "english-2024-hl-p2-unseen-q1": "english-2024-hl-p2-unseen-q1-a",
   "english-2025-hl-p2-comparative-a-q1": "english-2025-hl-p2-comparative-a-q1-a",
   "english-2025-hl-p2-comparative-b-q1": "english-2025-hl-p2-comparative-b-q1-a",
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 424,
+ "cardCount": 451,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -4806,6 +4845,912 @@
    "atlas": {
     "fileid": "LC002ALP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-single-a-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text A(i)",
+   "questionText": "“We are fascinated by the tensions that emerge from Doerr’s exploration of a variety of moral and ethical issues in his novel, All the Light We Cannot See.” Discuss this statement, developing your response with reference to Doerr’s novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-single-a-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text A(ii)",
+   "questionText": "To what extent do you think the narrative structure adopted by Doerr in his novel, All the Light We Cannot See, is effective in engaging the reader? Develop your response with reference to Doerr’s novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-single-b-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text B(i)",
+   "questionText": "“Miller uses Proctor’s complex relationship with Elizabeth to explore a variety of core issues in his play, The Crucible.” Discuss this statement, developing your response with reference to Miller’s play.",
+   "totalMarks": 60,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-single-b-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text B(ii)",
+   "questionText": "Discuss the compelling reasons why Miller’s play, The Crucible, should not be considered an entirely bleak play. Develop your response with reference to Miller’s play.",
+   "totalMarks": 60,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-single-c-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text C(i)",
+   "questionText": "“Shakespeare uses Hamlet’s complex relationship with Gertrude to explore a variety of core issues in his play, Hamlet.” Discuss this statement, developing your response with reference to Shakespeare’s play, Hamlet.",
+   "totalMarks": 60,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-single-c-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text C(ii)",
+   "questionText": "Discuss the aspects of Shakespeare’s play, Hamlet, that make it a surprisingly positive and hopeful drama. Develop your response with reference to Shakespeare’s play, Hamlet.",
+   "totalMarks": 60,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-single-d-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text D(i)",
+   "questionText": "“We are fascinated by the tensions that emerge from Shelley’s exploration of a variety of moral and ethical issues in her novel, Frankenstein.” Discuss this statement, developing your response with reference to Shelley’s novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-single-d-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text D(ii)",
+   "questionText": "To what extent do you think the narrative structure adopted by Shelley in her novel, Frankenstein, is effective in engaging the reader? Develop your response with reference to Shelley’s novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-single-e-i",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text E(i)",
+   "questionText": "“We are fascinated by the tensions that emerge from Wilde’s exploration of a variety of moral and ethical issues in his novel, The Picture of Dorian Gray.” Discuss this statement, developing your response with reference to Wilde’s novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-single-e-ii",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Single Text E(ii)",
+   "questionText": "“Readers gain a variety of insights from Wilde’s provocative portrayal of the class system in his novel, The Picture of Dorian Gray.” Discuss this statement, developing your response with reference to Wilde’s novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-comparative-a-q1-a",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative A Q1(a)",
+   "questionText": "Discuss how the author in one text on your comparative course employs a variety of techniques to make a relationship in that text believable. Develop your response with reference to your chosen text.",
+   "totalMarks": 30,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Literary Genre · Q1",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-comparative-a-q1-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative A Q1(b)",
+   "questionText": "In the case of two other texts on your comparative course, compare how each of the authors employ a variety of techniques to make a relationship in these texts believable. Develop your response with reference to your chosen texts. You may refer to the same or different techniques in relation to each of your chosen texts. You may refer to the same or different techniques to those you referred to in 1 (a) above.",
+   "totalMarks": 40,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Literary Genre · Q1",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-comparative-a-q2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative A Q2",
+   "questionText": "Compare how effectively at least one technique is employed, by the authors of at least two texts on your comparative course, to manipulate the reader’s emotional response to these texts. Develop your response with reference to your chosen texts. You may refer to the same or different techniques in relation to each of your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Literary Genre · Q2",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-comparative-b-q1-a",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative B Q1(a)",
+   "questionText": "Discuss the extent to which the level of freedom enjoyed by a central character in one text on your comparative course is determined by this character’s social position and status. Develop your response with reference to your chosen text.",
+   "totalMarks": 30,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Cultural Context · Q1",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-comparative-b-q1-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative B Q1(b)",
+   "questionText": "In the case of two other texts you have studied on your comparative course, compare the extent to which the level of freedom enjoyed by a central character in each of these texts is determined by these characters’ social position and status. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Cultural Context · Q1",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-comparative-b-q2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative B Q2",
+   "questionText": "In the case of at least two texts on your comparative course, compare the extent to which aspects of the cultural context, prevalent in these texts, nurture admirable values and attitudes. Develop your response with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Cultural Context · Q2",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-comparative-c-q1-a",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative C Q1(a)",
+   "questionText": "Discuss how an interesting interaction between two or more characters, at a pivotal moment in one of the texts on your comparative course, revealed important insights about a theme or issue in that text. Develop your response with reference to your chosen text.",
+   "totalMarks": 30,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme or Issue · Q1",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-comparative-c-q1-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative C Q1(b)",
+   "questionText": "In the case of at least two other texts you have studied on your comparative course, compare how an interesting interaction between two or more characters, at a pivotal moment in each of these texts, revealed important insights about the same theme or issue you discussed in part 1 (a) above. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme or Issue · Q1",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-comparative-c-q2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Comparative C Q2",
+   "questionText": "In the case of at least two texts on your comparative course, compare the extent to which the exploration of a theme or issue in these texts, instilled in you a sense that human beings are selfless in their thoughts and actions. Develop your response with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme or Issue · Q2",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-unseen-q1-a",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Unseen Poetry Q1(a)",
+   "questionText": "Do you think the poet uses tone in an effective way in this poem? Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Building my Grandfather",
+    "pages": [
+     6
+    ],
+    "attribution": "Building my Grandfather — Jonathan Edwards, as reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-unseen-q1-b",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Unseen Poetry Q1(b)",
+   "questionText": "In your view, what characteristics of the grandfather emerge during the course of this poem? Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Building my Grandfather",
+    "pages": [
+     6
+    ],
+    "attribution": "Building my Grandfather — Jonathan Edwards, as reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-unseen-q2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Unseen Poetry Q2",
+   "questionText": "To what extent do you believe that the poet’s use of language is clever and creative in this poem? Make detailed reference to the poem in support of your answer.",
+   "totalMarks": 20,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q2",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Building my Grandfather",
+    "pages": [
+     6
+    ],
+    "attribution": "Building my Grandfather — Jonathan Edwards, as reproduced in the SEC 2024 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2024-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "21"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-prescribed-1",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Prescribed Poetry Q1",
+   "questionText": "“Yeats utilises powerful imagery to explore fascinating contradictions that are central to his poetry.” Discuss this statement developing your response with reference to the poetry by W.B. Yeats on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-23",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "W.B. Yeats",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "22"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-prescribed-2",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Prescribed Poetry Q2",
+   "questionText": "“Ní Chuilleanáin uses evocative imagery to produce poems that often reveal meaningful insights about the nature of life.” Discuss this statement developing your response with reference to the poetry by Eiléan Ní Chuilleanáin on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-18",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Eiléan Ní Chuilleanáin",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "23"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-prescribed-3",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Prescribed Poetry Q3",
+   "questionText": "“Dickinson’s style allows her to explore the complexity of a variety of abstract ideas in a concrete and accessible manner.” Discuss this statement developing your response with reference to the poetry by Emily Dickinson on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Emily Dickinson",
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-prescribed-4",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Prescribed Poetry Q4",
+   "questionText": "“The dramatic imagery we encounter in Plath’s poetry reveals her to be an insightful social commentator.” Discuss this statement developing your response with reference to the poetry by Sylvia Plath on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sylvia Plath",
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2024-hl-p2-prescribed-5",
+   "year": 2024,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2024 HL Paper 2 Prescribed Poetry Q5",
+   "questionText": "“Heaney uses a deceptively simple style to convey profound observations about people and places.” Discuss this statement developing your response with reference to the poetry by Seamus Heaney on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-8",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Seamus Heaney",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2024-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "5"
    }
   },
   {

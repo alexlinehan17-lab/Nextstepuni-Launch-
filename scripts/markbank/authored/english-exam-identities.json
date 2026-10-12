@@ -3059,7 +3059,8 @@
       "observedHeading": "Prescribed Poetry · “Yeats Utilises Powerful Imagery To Explore Fascinating Contradictions That Are Central · Q1",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
-      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712"
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
+      "promptHeading": "W.B. Yeats"
     },
     "english-2024-hl-p2-prescribed-2": {
       "topicId": "english-11-18",
@@ -3068,7 +3069,8 @@
       "observedHeading": "Prescribed Poetry · “Ní Chuilleanáin Uses Evocative Imagery To Produce Poems That Often Reveal · Q2",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
-      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712"
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
+      "promptHeading": "Eiléan Ní Chuilleanáin"
     },
     "english-2024-hl-p2-prescribed-3": {
       "topicId": "english-11-2",
@@ -3077,7 +3079,8 @@
       "observedHeading": "Prescribed Poetry · “Dickinson’S Style Allows Her To Explore The Complexity Of A Variety Of Abstract Ideas In A · Q3",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
-      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712"
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
+      "promptHeading": "Emily Dickinson"
     },
     "english-2024-hl-p2-prescribed-4": {
       "topicId": "english-11-19",
@@ -3086,7 +3089,8 @@
       "observedHeading": "Prescribed Poetry · “The Dramatic Imagery We Encounter In Plath’S Poetry Reveals Her To Be An Insightful · Q4",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
-      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712"
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
+      "promptHeading": "Sylvia Plath"
     },
     "english-2024-hl-p2-prescribed-5": {
       "topicId": "english-11-8",
@@ -3095,7 +3099,8 @@
       "observedHeading": "Prescribed Poetry · “Heaney Uses A Deceptively Simple Style To Convey Profound Observations About People · Q5",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
-      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712"
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
+      "promptHeading": "Seamus Heaney"
     },
     "english-2024-ol-p2-single-a": {
       "topicId": "english-12-8",

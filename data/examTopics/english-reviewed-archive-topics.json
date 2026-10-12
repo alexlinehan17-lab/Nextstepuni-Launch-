@@ -701,6 +701,16 @@
     "english-6-0",
     "english-12-8"
    ]
+  },
+  {
+   "id": "english-higher-text-the-picture-of-dorian-gray-reviewed-archive",
+   "level": "higher",
+   "slug": "text-the-picture-of-dorian-gray",
+   "label": "Text - The Picture of Dorian Gray",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-25"
+   ]
   }
  ]
 }
