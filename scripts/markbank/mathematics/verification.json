@@ -1,8 +1,8 @@
 {
   "date": "2026-10-12",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1618,
-  "reviewedTasks": 1618,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1648,
+  "reviewedTasks": 1648,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 327,
+  "targetedRegressionTests": 330,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -1064,5 +1064,25 @@
     "schemePagesInspected": 24,
     "coverageBaseline": "1195/3474 asks covered, 0 orphans, 0 excluded, 2279 open",
     "validation": "Deck generation (1,618 built, 0 dropped), Atlas generation and --check (395 placements), audit --check-reviewed, scheme quote check of all 36 cards against the glyph-repaired scheme, ten regression files (327/327), typecheck and diff whitespace check passed."
+  },
+  "higher2020p2": {
+    "paper": "2020 Higher Level Paper 2",
+    "paperFileid": "LC003ALP200EV.pdf",
+    "schemeFileid": "LC003ALP000EV.pdf",
+    "reviewedAt": "2026-10-12",
+    "independentlyReviewedTasks": 30,
+    "existingRuntimeCardsReviewed": 0,
+    "newPaper": true,
+    "addedRuntimeCards": 30,
+    "scaleConflict": "Summary page 27 lists Q4(a) 10C and Q4(b) 15D; the scales printed beside the solutions on page 33 are Q4(a) 15D and Q4(b) 10D (both notes carry mid partial credit). Cards follow page 33.",
+    "historicalRejectsRemaining": 0,
+    "targetedRegressionTests": 330,
+    "previousRuntimeIdsRetained": 1618,
+    "offeredMarks": 300,
+    "candidateMarks": 300,
+    "paperPagesInspected": 28,
+    "schemePagesInspected": 25,
+    "coverageBaseline": "1225/3474 asks covered, 0 orphans, 0 excluded, 2249 open",
+    "validation": "Deck generation (1,648 built, 0 dropped after x-bar was written with the combining overline the bank already uses), Atlas generation and --check (404 placements), audit --check-reviewed, scheme quote check of all 30 cards, ten regression files (330/330), typecheck and diff whitespace check passed."
   }
 }
