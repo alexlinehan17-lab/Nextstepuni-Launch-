@@ -71,11 +71,11 @@
       "localPaper": "examiner-reports/french/papers/2026-ol-000-paper.pdf",
       "localScheme": "examiner-reports/french/schemes/2026-ol.pdf",
       "cards": {
-        "writing": 49,
+        "writing": 10,
         "reading": 33,
         "cloze": 10
       },
-      "atlasTasks": 92,
+      "atlasTasks": 53,
       "sittingCensus": {
         "leaves": 59,
         "covered": 59,
@@ -166,12 +166,12 @@
       "localPaper": "examiner-reports/french/papers/2025-ol-000-paper.pdf",
       "localScheme": "examiner-reports/french/schemes/2025-ol.pdf",
       "cards": {
-        "writing": 49,
+        "writing": 10,
         "reading": 33,
         "cloze": 10,
         "legacyCloze": 1
       },
-      "atlasTasks": 92,
+      "atlasTasks": 53,
       "sittingCensus": {
         "leaves": 59,
         "covered": 59,
@@ -262,12 +262,12 @@
       "localPaper": "examiner-reports/french/papers/2024-ol-000-paper.pdf",
       "localScheme": "examiner-reports/french/schemes/2024-ol.pdf",
       "cards": {
-        "writing": 49,
+        "writing": 10,
         "reading": 33,
         "cloze": 10,
         "legacyCloze": 1
       },
-      "atlasTasks": 92,
+      "atlasTasks": 53,
       "sittingCensus": {
         "leaves": 59,
         "covered": 59,
@@ -358,12 +358,12 @@
       "localPaper": "examiner-reports/french/papers/2023-ol-000-paper.pdf",
       "localScheme": "examiner-reports/french/schemes/2023-ol.pdf",
       "cards": {
-        "writing": 49,
+        "writing": 10,
         "reading": 33,
         "cloze": 10,
         "legacyCloze": 1
       },
-      "atlasTasks": 92,
+      "atlasTasks": 53,
       "sittingCensus": {
         "leaves": 59,
         "covered": 59,
@@ -454,11 +454,11 @@
       "localPaper": "examiner-reports/french/papers/2022-ol-000-paper.pdf",
       "localScheme": "examiner-reports/french/schemes/2022-ol.pdf",
       "cards": {
-        "writing": 49,
+        "writing": 10,
         "reading": 34,
         "cloze": 10
       },
-      "atlasTasks": 93,
+      "atlasTasks": 54,
       "sittingCensus": {
         "leaves": 60,
         "covered": 60,
@@ -549,12 +549,12 @@
       "localPaper": "examiner-reports/french/papers/2021-ol-000-paper.pdf",
       "localScheme": "examiner-reports/french/schemes/2021-ol.pdf",
       "cards": {
-        "writing": 49,
+        "writing": 10,
         "reading": 33,
         "cloze": 10,
         "legacyCloze": 1
       },
-      "atlasTasks": 92,
+      "atlasTasks": 53,
       "sittingCensus": {
         "leaves": 59,
         "covered": 59,

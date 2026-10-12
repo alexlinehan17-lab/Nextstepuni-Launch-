@@ -61,6 +61,15 @@ def printed_line(doc, page, pattern, left=None):
     return found.pop()
 
 
+# The printed "any three" instruction of each five-point Ordinary task
+# (2021 onwards). The diary prints its own (config 'diaryInstruction').
+CHOOSE_THREE = {
+    'B2A': r'In the message,? include three of the following (?:five )?points:',
+    'B2B': r'Write a postcard in French to your friend,? .{1,60}? in which you include three of the following five points:',
+    'B3B': r'In the letter,? include three of the following five points:',
+}
+ORDINALS = ['first', 'second', 'third']
+
 # NextStepUni's own guidance. Shown only under the app-labelled practice notes,
 # never in a field the panel attributes to the SEC.
 PRACTICE_GRID = ('Use the published descriptors to place the response you wrote. The marks apply to this '
@@ -396,20 +405,28 @@ def build_year(config):
     assert_exact(form_instruction, doc, [config['formPage']])
     form_categories = [printed_line(scheme_ol, config['formSchemePage'], r'1st Category[^.]*?message not clear\.'),
                        printed_line(scheme_ol, config['formSchemePage'], r'2nd Category[^.]*?message clear\.')]
-    for chosen in combinations(range(4), form_choose):
-        selected = [f'{i+6}. {form_questions[i]}' for i in chosen]
-        maximum = 12 // form_choose
-        criteria = [criterion(f'communication-{i+6}', f'Communication · question {i+6}', maximum,
+    printed_questions = [f'{i+6}. {form_questions[i]}' for i in range(4)]
+    if form_choose == 4:
+        criteria = [criterion(f'communication-{i+6}', f'Communication · question {i+6}', 3,
                               [form_questions[i], *form_categories,
                                *([form_question_notes[str(i + 6)]] if str(i + 6) in form_question_notes else []),
-                               *form_notes]) for i in chosen]
-        lang = language(8, ol_language)
-        lang['requiresAttempt'] = True
-        criteria.append(lang)
-        suffix = ''.join(str(i+6) for i in chosen)
-        add('ordinary', f'B1B-route-{suffix}', 'B1B', form_stem + '\n\n' + '\n'.join(selected), config['formPage'], config['formSchemePage'], criteria,
-            [form_instruction],
-            practice=[] if form_choose == 4 else ['This practice route answers three of the four printed questions.'])
+                               *form_notes]) for i in range(4)]
+        practice = []
+    else:
+        # The student chooses which three of the four printed questions to
+        # answer: one card shows all four, and each Communication mark is for
+        # one question the student chose. Each lists every printed question.
+        labelled = [question + (f' — {form_question_notes[str(i + 6)]}' if str(i + 6) in form_question_notes else '')
+                    for i, question in enumerate(printed_questions)]
+        criteria = [criterion(f'communication-{ordinal}', f'Communication · {ordinal} question you chose', 4,
+                              [*labelled, *form_categories, *form_notes]) for ordinal in ORDINALS]
+        practice = ['Choose any three of the four printed questions. Each Communication mark is for one question you chose; '
+                    'one question cannot earn two of them.']
+    lang = language(8, ol_language)
+    lang['requiresAttempt'] = True
+    criteria.append(lang)
+    add('ordinary', 'B1B-route-6789', 'B1B', form_stem + '\n\n' + '\n'.join(printed_questions), config['formPage'], config['formSchemePage'], criteria,
+        [form_instruction], practice=practice)
 
     pools = config['pools']
     assert {pool[0] for pool in pools} == {'B2A', 'B2B', 'B3A', 'B3B'}
@@ -446,15 +463,27 @@ def build_year(config):
             # French in your diary:" (2021–2026).
             diary_instruction = config['diaryInstruction']
             assert_exact(diary_instruction, doc, [page], 290)
-        for chosen in combinations(range(len(points)), 3):
+        choose = None
+        if len(points) == 5:
+            choose = diary_instruction if parent == 'B3A' else printed_line(doc, page, CHOOSE_THREE[parent], left=290)
+            assert 'three of the following' in choose, (YEAR, parent, choose)
+        for chosen in [tuple(range(len(points)))] if choose else combinations(range(len(points)), 3):
             suffix = ''.join(str(i+1) for i in chosen)
             maximum = 4 if parent == 'B3B' else 5
             tariff = printed_tariff(YEAR, parent, scheme_ol, scheme_page, maximum)
             notes = communication_notes(config, scheme_ol, scheme_page)
             categories = [printed_line(scheme_ol, scheme_page, r'1st Category[^.]*?message not clear\.'),
                           printed_line(scheme_ol, scheme_page, r'2nd Category[^.]*?message clear\.')]
-            criteria = [criterion(f'communication-{i+1}', f'Communication · point {i+1}', maximum,
-                                  [answers[i], tariff, *notes, *categories]) for i in chosen]
+            if choose:
+                # The student chooses which three printed points to include: each
+                # Communication mark is for one point they chose, and each lists
+                # the scheme's wording for every printed point.
+                labelled = [f'{points[i]} — {answers[i]}' for i in range(5)]
+                criteria = [criterion(f'communication-{ordinal}', f'Communication · {ordinal} point you chose', maximum,
+                                      [*labelled, tariff, *notes, *categories]) for ordinal in ORDINALS]
+            else:
+                criteria = [criterion(f'communication-{i+1}', f'Communication · point {i+1}', maximum,
+                                      [answers[i], tariff, *notes, *categories]) for i in chosen]
             if parent == 'B3B':
                 criteria = [criterion('format-top', 'Format · top of page', 3,
                                       [printed_line(scheme_ol, scheme_page, r'Top of page\s*\S\s*3 marks \(France not necessary in address\)')]
@@ -466,23 +495,31 @@ def build_year(config):
                 lang['requiresAttempt'] = True
             criteria.append(lang)
             context = stem + (' ' + diary_instruction if parent == 'B3A' else '')
+            if choose and parent == 'B2B':
+                # The postcard's printed sentence continues with its instruction.
+                head = stem[:stem.index('Write a postcard')]
+                assert stem[len(head):] in choose, (YEAR, stem, choose)
+                context = head + choose
+            elif choose and parent != 'B3A':
+                context += ' ' + choose
             context += '\n\n' + '\n'.join(f'• {points[i]}' for i in chosen)
             if parent == 'B3B':
                 context += '\n\n' + config['letterIdentity']
                 assert norm(config['letterIdentity']) in norm(clip_text)
                 assert_exact(config['letterIdentity'], doc, [page], 290)
             layout = [] if parent == 'B3B' else [printed_line(scheme_ol, scheme_page, r'(?:Ignore layout|No marks for layout)\.')]
-            add('ordinary', f'{parent}-route-{suffix}', parent, context, page, scheme_page, criteria,
-                [in_french, *layout],
-                practice=(['This practice route uses three of the five printed points.'] if len(points) == 5 else [])
+            add('ordinary', parent if choose else f'{parent}-route-{suffix}', parent, context, page, scheme_page, criteria,
+                [in_french, *([choose] if choose else []), *layout],
+                practice=(['Choose any three of the five printed points. Each Communication mark is for one point you chose; '
+                           'one point cannot earn two of them.'] if choose else [])
                 + (['Use the formal letter layout and the supplied addresses.'] if parent == 'B3B' else []))
             if parent == 'B3B':
                 cards[-1]['schemeCitation'] = cards[-1]['schemeCitation'].replace(
                     f'p.{scheme_page}', 'pp.' + ', '.join(map(str, [scheme_page, *format_pages])))
         audit.append(dict(year=YEAR, level='ordinary', question=parent, choose=3, poolSize=len(points),
-                          routes=len(list(combinations(points, 3))), paperPage=page, schemePage=scheme_page))
+                          cards=1, paperPage=page, schemePage=scheme_page))
 
-    audit.append(dict(year=YEAR, level='ordinary', question='B1B', choose=form_choose, poolSize=4, routes=len(list(combinations(form_questions, form_choose))),
+    audit.append(dict(year=YEAR, level='ordinary', question='B1B', choose=form_choose, poolSize=4, cards=1,
                       separatelyMarkedFields=5, paperPage=config['formPage'], schemePage=config['formSchemePage']))
     audit.append(dict(year=YEAR, level='higher', question='B', routes=len(paper.section_b_asks()), paperPages=sorted({ask[3] for ask in paper.section_b_asks()}), schemePages=[config['hlGridPage'] - 1, config['hlGridPage']],
                       notes=config.get('hlSelectionNote', f'Q1a/b/c are alternatives. Q{config["hlNoLayoutQuestion"]} email bullets are all required. Q1c real/imaginary is open creative scope, not a finite response pool.')))
