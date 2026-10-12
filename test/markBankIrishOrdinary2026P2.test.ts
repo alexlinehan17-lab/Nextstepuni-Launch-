@@ -69,8 +69,9 @@ describe('2026 Ordinary Paper 2 source reconciliation', () => {
       }
     }
     const route = cards.find(c => c.id === 'irish-2026-ol-p2-poetry-3a-a')!;
-    if (route.rubric.system !== 'irish') throw new Error('Wrong rubric');
-    const full = (deduct: number) => Object.fromEntries(route.rubric.criteria.map(c => [irishScoreId(c.id), c.kind === 'deduction' ? deduct : c.maxMarks]));
+    const rubric = route.rubric;
+    if (rubric.system !== 'irish') throw new Error('Wrong rubric');
+    const full = (deduct: number) => Object.fromEntries(rubric.criteria.map(c => [irishScoreId(c.id), c.kind === 'deduction' ? deduct : c.maxMarks]));
     expect(irishMarks(route, full(0))).toBe(25);
     expect(irishMarks(route, full(4))).toBe(21);
   });

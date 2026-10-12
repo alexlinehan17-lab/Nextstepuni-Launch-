@@ -79,7 +79,7 @@ describe('2010 Foundation written paper, with the listening paper held as a sour
     expect(get('W-5A').sourceDiscrepancyNotice).toContain('san óstán');
   });
   it('expands three interview dates and confines the paragraph length rule to its15-mark award',()=>{
-    const forms=written.cards.filter(c=>/^W-5B-/.test(c.atlasQuestionId)&&!c.memberCardIds);
+    const forms=written.cards.filter(c=>/^W-5B-/.test(c.atlasQuestionId)&&!('memberCardIds' in c));
     expect(forms.map(c=>c.atlasQuestionId)).toEqual(['W-5B-21-iuil','W-5B-28-iuil','W-5B-4-lunasa']);
     for(const [i,c] of forms.entries()){
       expect(c.questionText).toContain(`An rogha don chárta seo: ${['21 Iúil','28 Iúil','4 Lúnasa'][i]}.`);
