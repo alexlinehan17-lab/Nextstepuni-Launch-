@@ -26,24 +26,6 @@
   }
  },
  "biology": {
-  "bio-2024-hl-q12-b-i": {
-   "reason": "The printed task asks the student to copy and extend the prey-population graph; the same inspected official graph is shared by every sibling that depends on it.",
-   "set": {
-    "questionFigureKey": "biology-2024-hl-paper-p003-i0"
-   }
-  },
-  "bio-2024-hl-q12-b-ii": {
-   "reason": "The explanation concerns the predator line the student draws over the supplied prey graph, so the inspected official graph must remain visible as question context.",
-   "set": {
-    "questionFigureKey": "biology-2024-hl-paper-p003-i0"
-   }
-  },
-  "bio-2024-hl-q12-b-iii": {
-   "reason": "Time X exists only on the supplied prey graph; attach the same inspected official graph used by the rest of Q12(b).",
-   "set": {
-    "questionFigureKey": "biology-2024-hl-paper-p003-i0"
-   }
-  },
   "bio-2025-ol-q11-c-i": {
    "reason": "Q11(c) is printed in the Section C booklet; its earlier Section A tag pointed the source reader at the wrong paper component.",
    "set": {
@@ -174,6 +156,11 @@
    "reason": "A shipped duplicate: \"Q16(c)(iii)-(iv)\" carded the two parts bio-2025-ol-q16-c-iii and bio-2025-ol-q16-c-iv already card separately. Withdrawn with a progress alias to bio-2025-ol-q16-c-iii, which carries its first part.",
    "drop": true,
    "replacementId": "bio-2025-ol-q16-c-iii"
+  },
+  "bio-2024-hl-q8-b2": {
+   "reason": "The second half of Q8(b), one printed task the old cards cut in two (\"[1 of 2]\", \"[2 of 2]\"). Withdrawn with a progress alias to bio-2024-hl-q8-b1, which now carries the whole task.",
+   "drop": true,
+   "replacementId": "bio-2024-hl-q8-b1"
   }
  },
  "physics": {

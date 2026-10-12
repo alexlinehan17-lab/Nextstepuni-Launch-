@@ -452,3 +452,113 @@ describe('Biology 2025 Ordinary — reviewed sitting, corrected in place', () =>
     }
   });
 });
+
+const hl24 = sittings['2024-hl'];
+const higher2024 = BIO_HIGHER.filter(card => card.year === 2024) as unknown as ReviewedCard[];
+const hl24ById = new Map(higher2024.map(card => [card.id, card]));
+const hl24Verbatims = (id: string) => (hl24ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
+  .map(row => row.verbatim);
+
+describe('Biology 2024 Higher — reviewed sitting, corrected in place', () => {
+  const review = hl24.review!;
+
+  it('ships every reviewed task, and nothing else, for the sitting', () => {
+    expect(hl24.baseTaskCount).toBe(161);
+    expect(hl24.cardCount).toBe(163);
+    expect(higher2024).toHaveLength(163);
+    expect(new Set(hl24.tasks.map(task => task.id))).toEqual(new Set(hl24ById.keys()));
+  });
+
+  it('keeps every shipped id but one aliased half-task', () => {
+    expect(review.baselineCommit).toBe('913bc5e57');
+    expect([review.verified.length, review.corrected.length, review.added.length,
+      review.retained.length]).toEqual([13, 121, 29, 1]);
+    for (const id of [...review.verified, ...review.corrected.map(c => c.id), ...review.added]) {
+      expect(hl24ById.has(id), id).toBe(true);
+    }
+    // "Q8(b) [2 of 2]" was the second half of one printed task: withdrawn,
+    // its progress carried to the card that now holds the whole task.
+    expect(review.retained.map(r => r.id)).toEqual(['bio-2024-hl-q8-b2']);
+    expect(hl24ById.has('bio-2024-hl-q8-b2')).toBe(false);
+    expect(review.withdrawn['bio-2024-hl-q8-b2'].replacementId).toBe('bio-2024-hl-q8-b1');
+    expect(hl24ById.get('bio-2024-hl-q8-b1')!.totalMarks).toBe(24);
+  });
+
+  it('records what each corrected card showed before', () => {
+    for (const correction of review.corrected) {
+      expect(correction.changed.length, correction.id).toBeGreaterThan(0);
+      for (const field of correction.changed) {
+        expect(field in correction.fieldsBefore, `${correction.id}.${field}`).toBe(true);
+      }
+    }
+  });
+
+  it('leaves the cards the review verified exactly as they shipped', () => {
+    const verified = review.verified.map(id => hl24ById.get(id)!)
+      .sort((a, b) => a.id.localeCompare(b.id));
+    // The thirteen cards' shipped text is byte-identical to the deck before the review.
+    expect(contentHash(verified)).toBe('3d2938daadbb4242c222fea584f63569c4abb13f8ba542d75752459d55761785');
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(hl24.sources['038'].sha256)
+      .toBe('9213c5666f1816378111bb526ed7c27294a6336e70869830a918835d9ea99937');
+    expect(hl24.sources['040'].sha256)
+      .toBe('876631d384f0a5b73573df1c4e628ba43504a744eb133c714cab54a0cf7708c0');
+    expect(hl24.sources.scheme.sha256)
+      .toBe('1ffe460a25c6636ca1a1e62ec9d7dfa4d796857d68c0ad74b4d201c9b2ccbf3b');
+    expect([hl24.sources['038'].pages, hl24.sources['040'].pages, hl24.sources.scheme.pages])
+      .toEqual([40, 12, 36]);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const task of hl24.tasks) {
+      const card = hl24ById.get(task.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('adds up to the printed question totals', () => {
+    const totals = new Map<number, number>();
+    for (const task of hl24.tasks) {
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    expect(totals.get(1)).toBe(24);   // best five of six parts at 4
+    // "6(3) + 2": seven responses each carded at 3, so 21 against the
+    // ladder's 20; Q3 adds its separately priced (a) 3(1) to "5(3) + 2".
+    for (const q of [2, 3, 4, 5, 7]) expect(totals.get(q), `Q${q}`).toBe(21);
+    expect(totals.get(6)).toBe(20);   // 10(2)
+    for (const q of [8, 9, 10]) expect(totals.get(q), `Q${q}`).toBe(30);
+    for (const q of [11, 12, 13, 14, 15]) expect(totals.get(q), `Q${q}`).toBe(60);
+    for (const q of [16, 17]) expect(totals.get(q), `Q${q}`).toBe(120);   // any two of four 30s
+  });
+
+  it('cards a choice the scheme marks the same way as one card, not routes', () => {
+    expect(Object.keys(hl24.routes)).toEqual([]);
+    expect(higher2024.filter(card => card.questionRef.includes('Q10(b)'))).toHaveLength(2);
+    // Q16(b)(ii) is not a choice: every gland is answered, one card per gland.
+    expect(higher2024.filter(card => card.questionRef.startsWith('2024 HL Q16(b)(ii) — '))
+      .map(card => card.questionRef.split(' — ')[1])).toEqual(['X', 'Y', 'Z']);
+  });
+
+  it('reads the true/false ticks from the scheme', () => {
+    expect(['a', 'b', 'c', 'd', 'e', 'f', 'g'].map(x => hl24Verbatims(`bio-2024-hl-q5-${x}`)[0]))
+      .toEqual(['False', 'False', 'True', 'False', 'False', 'True', 'True']);
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph|table)s?\b|\bthe food web\b/i;
+    for (const card of higher2024) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    // Q15(b)(i): the underlining that names the terms is shown as printed.
+    expect(hl24ById.get('bio-2024-hl-q15-b-i')!.questionFigure).toBeTruthy();
+    // Q13(b)(ii): the scheme's equation waits for the reveal.
+    expect(hl24ById.get('bio-2024-hl-q13-b-ii')!.figure?.solution).toBe(true);
+  });
+});

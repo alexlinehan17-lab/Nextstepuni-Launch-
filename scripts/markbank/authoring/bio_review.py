@@ -290,6 +290,10 @@ def build_row(lifter, spec, row_id, task_doc, sp, lo):
             options = trimmed
         if any('other correct' in o.lower() for o in options):
             open_list = True
+        if spec.get('open_list'):
+            # The scheme prints its menu as examples ("Any six correct labels
+            # e.g. ..."): open, though no option says so.
+            open_list = True
         group = {'claimMax': spec['claim'], 'perOption': spec['per'], 'options': options}
         if spec.get('steps'):
             group['perOptionSteps'] = spec['steps']
@@ -485,12 +489,20 @@ def build(ledger, year, level):
         if qn in ladders:
             # One ladder over the whole question ("6(3) + (2)"): each response
             # is carded at the ladder's step, and the ladder, not the sum of
-            # the cards, makes the printed total.
-            steps = ladders[qn]
-            units = sorted(units_by.get(qn, Counter()).elements())
-            if len(units) != len(steps) or set(units) != {steps[0]} or sum(steps) != total:
-                problems.append(f'Q{qn}: {len(units)} responses at {set(units)} do not fit the '
-                                f'ladder {steps} to {total}')
+            # the cards, makes the printed total. A ladder may sit beside a
+            # part the scheme prices on its own ("3(1)" then "5(3) + 2"):
+            # {'steps': [...], 'fixed': {mark: count}} names those units.
+            spec = ladders[qn]
+            steps, fixed = (spec['steps'], Counter(spec['fixed'])) if isinstance(spec, dict) \
+                else (spec, Counter())
+            units = units_by.get(qn, Counter()) - fixed
+            got_fixed = units_by.get(qn, Counter()) & fixed
+            units = sorted(units.elements())
+            fixed_total = sum(m * n for m, n in fixed.items())
+            if (len(units) != len(steps) or set(units) != {steps[0]} or got_fixed != fixed
+                    or sum(steps) + fixed_total != total):
+                problems.append(f'Q{qn}: {len(units)} responses at {set(units)} (+ fixed '
+                                f'{dict(got_fixed)}) do not fit the ladder {steps} to {total}')
         elif qn in getattr(ledger, 'BEST_OF', {}):
             n, per = ledger.BEST_OF[qn]
             parts = [c for c in cards

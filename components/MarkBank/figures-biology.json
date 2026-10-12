@@ -1,4 +1,348 @@
 {
+ "biology-2024-hl-q11-flower": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q11-flower.png",
+  "md5": "b1a96b4f6999d32b5aa47589065e8156",
+  "alt": "Drawing of a wind-pollinated flower: long stalks hang large pollen sacs outside the flower, and feathery structures rise from its centre. Arrow A points to one of the large hanging sacs, arrow B to the long stalk carrying it, and arrow C to one of the feathery structures.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q11(b)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   300,
+   240,
+   540,
+   425
+  ]
+ },
+ "biology-2024-hl-q12-food-web": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q12-food-web.png",
+  "md5": "3b1645a50702173727fa28a97db463a5",
+  "alt": "A marine food web of drawings joined by arrows. Phytoplankton feed Zooplankton and Shrimp; Seaweed feeds Shrimp and Hermit crab; Zooplankton feed Salmon; Shrimp feed Salmon and Herring; Hermit crab feeds Octopus; Salmon feed Seagull; Herring and Octopus feed Seal; Seagull feeds Peregrine falcon; Seal feeds Orca whale.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q12(c)(i)1",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   115,
+   330,
+   500,
+   545
+  ]
+ },
+ "biology-2024-hl-q12-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q12-graph.png",
+  "md5": "f1a63e9e49a21d75472758632d433019",
+  "alt": "Graph of Numbers of organisms against Time: a solid wavy line labelled Prey rises and falls in regular peaks. A point X is marked on the time axis near its right end.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q12(b)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   375,
+   87,
+   540,
+   200
+  ]
+ },
+ "biology-2024-hl-q13-leaf-cells": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q13-leaf-cells.png",
+  "md5": "a005e1289ddcc39a455047a835c5f43f",
+  "alt": "Light micrograph of leaf cells: each cell is packed around its edge with many small dark oval bodies, and arrows from the label Organelles point to them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q13(c)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   382,
+   318,
+   540,
+   450
+  ]
+ },
+ "biology-2024-hl-q13-mitochondrion": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q13-mitochondrion.png",
+  "md5": "801641f86c92ee39b8cbc99aaff831b0",
+  "alt": "Electron micrograph of a transverse section through an oval organelle with a smooth outer membrane and many folds of an inner membrane running across its interior.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q13(b)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   382,
+   122,
+   540,
+   250
+  ]
+ },
+ "biology-2024-hl-q13b-ii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q13b-ii-scheme.png",
+  "md5": "4bdd92e9c61d175273a1c19fd4865953",
+  "alt": "The marking scheme's balanced equation: C6H12O6 + 6O2, an arrow, then 6CO2 + 6H2O, with the number after each element printed as a subscript.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q13(b)(ii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 19,
+  "sourceRect": [
+   106,
+   343,
+   262,
+   362
+  ],
+  "solution": true
+ },
+ "biology-2024-hl-q14-viruses": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q14-viruses.png",
+  "md5": "67ab0c5a0a1e94c4bb5d84536ce75099",
+  "alt": "Electron micrograph of virus particles: each has a many-sided head on a short tail.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q14(c)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   365,
+   312,
+   540,
+   455
+  ]
+ },
+ "biology-2024-hl-q15b-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q15b-i-question.png",
+  "md5": "07d01ef3493adb0693d9ef7199f50d5f",
+  "alt": "The printed question: (b) In snapdragon plants, the allele for tallness is dominant over the allele for dwarfness. However, the allele for red flower shows incomplete dominance with the allele for white flower. Pink flower is the phenotype that results in the heterozygous condition. The two genes are not linked. (i) Explain the underlined terms. The first \"allele\" and \"heterozygous\" are underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q15(b)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   80,
+   117,
+   545,
+   226
+  ]
+ },
+ "biology-2024-hl-q16-female": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q16-female.png",
+  "md5": "736a4cdd8a8701642490ac374c917870",
+  "alt": "Outline of a human female body with organs drawn in. Arrow X points to a gland in the front of the neck; two arrows Y point to the small glands sitting on top of the organs labelled Kidney; two arrows Z point to the two small oval organs on either side of the uterus.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q16(b)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   365,
+   355,
+   540,
+   690
+  ]
+ },
+ "biology-2024-hl-q16-male": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q16-male.png",
+  "md5": "c78ed20118dba8292cd1aa62bff93df9",
+  "alt": "Side-view diagram of the human male reproductive system. Arrow A points to the tube running through the penis; arrow B to the tube looping up from the testis; C labels the gland at the base of the bladder.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q16(a)(i)1",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   400,
+   92,
+   540,
+   240
+  ]
+ },
+ "biology-2024-hl-q16-phototropism": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q16-phototropism.png",
+  "md5": "4d7c6667ebab296974093c2f89f3964f",
+  "alt": "Photograph of a seedling in a small pot, its stem bending sideways towards a lamp at the left of the picture.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q16(c)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   322,
+   55,
+   540,
+   200
+  ]
+ },
+ "biology-2024-hl-q17-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q17-graph.png",
+  "md5": "35f05e48741853f2e56080c51e516c6c",
+  "alt": "Graph of Enzyme activity against pH, from 0 to 10. A solid curve A rises from about pH 1, peaks at pH 2 and falls to zero by about pH 3; a dashed curve B rises from about pH 6, peaks at pH 7 and falls to zero by about pH 8.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q17(a)(i)1",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   195,
+   112,
+   400,
+   295
+  ]
+ },
+ "biology-2024-hl-q17-onion": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q17-onion.png",
+  "md5": "09e4a4d25794649c0e45dae9600edc1a",
+  "alt": "Light micrograph of an onion cell dividing: two groups of dark, V-shaped chromosomes are moving apart towards opposite ends of the cell.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q17(d)(iii)1",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   420,
+   368,
+   540,
+   510
+  ]
+ },
+ "biology-2024-hl-q3-canal": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q3-canal.png",
+  "md5": "b523f18496fe1a01f4032ef4993e1be8",
+  "alt": "Diagram of the human alimentary canal from the mouth down. An arrow labelled A points to the tube running down the neck to the stomach; B labels the large organ at the upper left of the abdomen; C labels the gland lying beneath the stomach; a label Small intestine points to the coiled tube in the middle of the abdomen.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q3(a)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   372,
+   55,
+   545,
+   455
+  ]
+ },
+ "biology-2024-hl-q4-stem": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q4-stem.png",
+  "md5": "369ae49b16ed89548f85f6878ae0d42b",
+  "alt": "Micrograph of a transverse section of a stem: a round section with many small dark bundles spread all through it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q4(e)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   417,
+   499,
+   542,
+   612
+  ]
+ },
+ "biology-2024-hl-q4-vessels": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q4-vessels.png",
+  "md5": "e4fc1d716543ee097fc3b8b83586683a",
+  "alt": "Diagram of a longitudinal view of plant transport tissue: on the left, tubes with spiral and ring-shaped thickening on their walls, with upward arrows inside them; on the right, columns of long cells joined end to end by perforated cross-walls, with smaller cells beside them and arrows pointing both up and down.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q4(a)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   385,
+   108,
+   540,
+   290
+  ]
+ },
+ "biology-2024-hl-q7-stages": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-q7-stages.png",
+  "md5": "f4609bc02c1af2bdcddb2b5679f7bb05",
+  "alt": "Flow diagram of genetic engineering. A cell leads by Isolation to a chromosome; an enzyme (drawn as a small triangle) cuts it at Stage X, giving a gene. A plasmid (vector) is also cut by the enzyme at Stage X, and the gene and the cut plasmid join as Recombinant DNA. Stage Y takes the recombinant DNA into a host cell, which divides; Stage Z leads from the host cells to Product.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q7(b)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   92,
+   92,
+   495,
+   320
+  ]
+ },
  "biology-2025-hl-q11-embryo-sac": {
   "src": "/exam-figures/biology/markbank/biology-2025-hl-q11-embryo-sac.png",
   "md5": "6c2cf51839e72874aec3bc7f4800dde9",

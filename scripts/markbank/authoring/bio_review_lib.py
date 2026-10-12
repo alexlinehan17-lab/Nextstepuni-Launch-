@@ -53,7 +53,7 @@ _LEAD = re.compile(r'^(?:\s*(?:\([a-h]\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)|
 _AFTER_SENTENCE = re.compile(r'[.?!:]\s+$')
 # What may follow a selection on its line: nothing, a new sentence, or the
 # scheme's own tariff cell glued to the end of a menu ("... / pole Any three 3(1)").
-_TARIFF_TAIL = re.compile(r'^\s*(?:Any\s+\w+\s*)?(?:\d+\(\d\)|\d\+\d)?\s*$')
+_TARIFF_TAIL = re.compile(r'^\s*(?:Any\s+\w+\s*)?(?:\d+\(\d\)|\d\+\d|\d{1,2})?\s*$')
 
 
 def _closes(text_after, end):
@@ -290,12 +290,13 @@ def pt(sel, marks, label=None, kind=None, note=None, units=None, first_alt=False
             'note_sel': note_sel, 'note_lead': note_lead, 'whole': whole}
 
 
-def anyn(sel, claim, per, steps=None, note=None, options=None, note_sel=None):
+def anyn(sel, claim, per, steps=None, note=None, options=None, note_sel=None, open_list=False):
     """A bounded menu: "Any two 2(3)". `sel` is the whole printed list, cut
     into options at the SEC's own solidus; or `options` is a list of
-    selectors, one per option, for menus printed one per line."""
+    selectors, one per option, for menus printed one per line. `open_list`
+    marks a menu the scheme prints as examples ("e.g.")."""
     return {'type': 'anyn', 'sel': sel, 'claim': claim, 'per': per, 'steps': steps,
-            'note': note, 'options': options, 'note_sel': note_sel}
+            'note': note, 'options': options, 'note_sel': note_sel, 'open_list': open_list}
 
 
 def G(kind, page=None, clip=None, expect=None, **kw):

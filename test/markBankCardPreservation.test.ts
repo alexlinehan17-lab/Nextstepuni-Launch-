@@ -115,7 +115,13 @@ const decks = [
    * the 67 tasks the old cards bundled or missed ship as new ids, one of
    * them (bio-2025-hl-q9-b-ii) an authored card the build had never shipped.
    * The frozen 2021-2025 identity hash is pinned below without them. */
-  ['biology:higher', BIO_HIGHER, 928, '5ebe7f73c7390bd0012ca4a2688d90d669a19b020076f1a701c3c410388978a2'],
+  /* 2026-10-12: biology higher 928 -> 956. The 2024 Higher sitting is
+   * re-reviewed the same way (bio_review_2024_hl.py): 134 of its 135 shipped
+   * ids are kept (121 corrected, 13 verified), 29 tasks the old cards bundled
+   * or missed ship as new ids, and bio-2024-hl-q8-b2, the second half of one
+   * printed task the old cards cut in two, is withdrawn with a progress alias
+   * to bio-2024-hl-q8-b1. The frozen hash below restores it. */
+  ['biology:higher', BIO_HIGHER, 956, 'cc47da9d5abbee245e2f72eca7ad0463ff0c36cb55e4c4bc9bbf846e82ed7013'],
   /* 2026-10-11: biology ordinary 686 -> 873. The 2026 Ordinary sitting is
    * added from the same review (bio_review_2026_ol.py): 183 tasks, 187 cards
    * once the four closed choose-one pools (Q7(c), Q13(b)(vi), Q16(c)(vi),
@@ -809,7 +815,9 @@ describe('Mark Bank card preservation', () => {
     // ...and the 2025 Higher Biology review's 67 new ids: 19,703 + 67.
     // ...and the 2025 Ordinary Biology review's 43 new ids, less the one
     // aliased duplicate it withdraws: 19,770 + 43 - 1.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_812);
+    // ...and the 2024 Higher review's 29 new ids, less its one aliased
+    // withdrawal: 19,812 + 29 - 1.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_840);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -823,7 +831,7 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(55);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(56);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -889,15 +897,18 @@ describe('Mark Bank card preservation', () => {
   it('adds the reviewed 2026 Biology sittings without replacing a prior card id', () => {
     // Every 2021-2025 card keeps its identity; the 2026 cards, and the ids a
     // reviewed 2025 sitting adds, are new ids.
-    expect(identityHash(BIO_HIGHER.filter(card =>
-      card.year <= 2025 && !BIOLOGY_REVIEW_ADDED.has(card.id))))
-      .toBe('45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836');
     // A shipped id a review withdraws survives as a progress alias: restored
     // here, the 2021-2025 set is exactly the one pinned before the reviews.
-    const withdrawnOrdinary = Object.keys(CARD_ID_ALIASES)
-      .filter(id => id.startsWith('bio-') && id.includes('-ol-'))
+    const withdrawn = (level: string) => Object.keys(CARD_ID_ALIASES)
+      .filter(id => id.startsWith('bio-') && id.includes(`-${level}-`))
       .map(id => ({ id }));
+    const withdrawnHigher = withdrawn('hl');
+    const withdrawnOrdinary = withdrawn('ol');
+    expect(withdrawnHigher.map(card => card.id)).toEqual(['bio-2024-hl-q8-b2']);
     expect(withdrawnOrdinary.map(card => card.id)).toEqual(['bio-2025-ol-q16-ciii-fig']);
+    expect(identityHash([...BIO_HIGHER.filter(card =>
+      card.year <= 2025 && !BIOLOGY_REVIEW_ADDED.has(card.id)), ...withdrawnHigher]))
+      .toBe('45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836');
     expect(identityHash([...BIO_ORDINARY.filter(card =>
       card.year <= 2025 && !BIOLOGY_REVIEW_ADDED.has(card.id)), ...withdrawnOrdinary]))
       .toBe('5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e');
