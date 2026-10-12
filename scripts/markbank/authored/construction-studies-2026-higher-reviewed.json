@@ -2287,7 +2287,7 @@
             3
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles; an unchosen item never adds marks."
         }
       },
       "sourceChecks": [
@@ -2396,7 +2396,7 @@
             3
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles; an unchosen item never adds marks."
         }
       },
       "sourceChecks": [
@@ -2521,7 +2521,7 @@
             3
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles: every finite route is kept, and an unchosen item never adds marks."
+          "presentationNote": "Original sketch retained. Part (a) chooses any two of three printed areas and part (b) any two of three printed principles; an unchosen item never adds marks."
         },
         "taskGroups": [
           {
@@ -5150,7 +5150,7 @@
             6
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
         }
       },
       "sourceChecks": [
@@ -5262,7 +5262,7 @@
             6
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
         }
       },
       "sourceChecks": [
@@ -5390,7 +5390,7 @@
             6
           ],
           "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three: every combination is kept, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
+          "presentationNote": "Original drawing with four circled locations retained. Part (a) chooses any three, and each location keeps its own 16 marks. Locations are named with the marking scheme’s headings."
         },
         "taskGroups": [
           {
@@ -8195,5 +8195,43 @@
       "construction-studies-2026-HL-q9-window-cill",
       "construction-studies-2026-HL-q9-window-head"
     ]
-  }
+  },
+  "revisions": [
+    {
+      "cardId": "cons-2026-hl-q4-a",
+      "priorSha256": "737eefd39081f84e4028598f09a0b53f7ce038c1601f39bff062e621742f8a52",
+      "correctedSha256": "ed8f93dc23081a172b5deebcff71913591b28cf414c918a8858c1cc0e2d569ff",
+      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or finite route is kept. Wording only; rows, tariff and topics unchanged."
+    },
+    {
+      "cardId": "cons-2026-hl-q4-b",
+      "priorSha256": "e75016e2ef8c277729122e7bdfa250d9d4740c354c818ba0a276b2e3ac56d7f5",
+      "correctedSha256": "a47494740c828d1909fd193cf9f334ac2e7ecef7d20cd288df4f0daf7bbd1d4c",
+      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or finite route is kept. Wording only; rows, tariff and topics unchanged."
+    },
+    {
+      "cardId": "cons-2026-hl-q4-complete",
+      "priorSha256": "b6baad2ac5ac396788b39d602a06485e8075986f993f6f392f247c6ea4b0876f",
+      "correctedSha256": "ca61b8cefeaa62bd4c0f2d6d955ba7cecb4d3ca1558163338dfbe8062319859a",
+      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or finite route is kept. Wording only; rows, tariff and topics unchanged."
+    },
+    {
+      "cardId": "cons-2026-hl-q9-a",
+      "priorSha256": "699ad9aa52dc1e0f5dde0339320674c4b7febe93db9a7e64979af31422ec16fd",
+      "correctedSha256": "4d790a191bdc5b5e73c763fd430b02706da46efb6fb51219fa1ea06795d8419c",
+      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or finite route is kept. Wording only; rows, tariff and topics unchanged."
+    },
+    {
+      "cardId": "cons-2026-hl-q9-b",
+      "priorSha256": "4beac527652dae5911fac1cfb74741e5007562c741c9f6f596e6ff5ffa1a261b",
+      "correctedSha256": "ddf750e4e88a88e3b9557d64df89229695e93918e0d9d1b6769f4a511c1acd5f",
+      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or finite route is kept. Wording only; rows, tariff and topics unchanged."
+    },
+    {
+      "cardId": "cons-2026-hl-q9-complete",
+      "priorSha256": "1e6d0a4cc5bb960fc349742d71d80ed5ea3a3b0b97e100c4a3d65f26c3d7ec94",
+      "correctedSha256": "dd3a2a84a45264b605ba1c260f256e8a16afa7d61b6269a5431b436e58a26013",
+      "reason": "Retires the route-era presentation note: a printed choice is one card, so the note no longer says every combination or finite route is kept. Wording only; rows, tariff and topics unchanged."
+    }
+  ]
 }

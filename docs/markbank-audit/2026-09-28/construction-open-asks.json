@@ -1,10 +1,10 @@
 {
   "subjectId": "construction-studies",
-  "measuredAt": "2026-10-12T03:39:19.600244+00:00",
+  "measuredAt": "2026-10-12T07:42:12.195781+00:00",
   "command": "python3 scripts/markbank/authoring/reconcile.py construction-studies --baseline write",
   "baseline": {
     "cards": 710,
-    "contentHash": "5ab8d5754e805f3e",
+    "contentHash": "a7a4f930a3827b0d",
     "coveragePct": 63.1,
     "covered": 532,
     "excluded": 0,
