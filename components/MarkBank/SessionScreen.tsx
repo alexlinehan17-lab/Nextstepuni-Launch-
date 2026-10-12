@@ -1334,7 +1334,10 @@ const ArtRubricPanel: React.FC<{
               </strong>
               <span style={{ font: `700 9.5px/1 ${MONO}`, color: LABEL }}>{rangeLabel} marks</span>
             </div>
-            <ul style={{ margin: '6px 0 8px', paddingLeft: 16, color: MUTED, font: `400 11px/1.45 ${SANS}` }}>
+            {band.lead && (
+              <p style={{ margin: '6px 0 0', color: MUTED, font: `400 11px/1.45 ${SANS}` }}>{band.lead}</p>
+            )}
+            <ul style={{ listStyle: 'disc', margin: '6px 0 8px', paddingLeft: 16, color: MUTED, font: `400 11px/1.45 ${SANS}` }}>
               {band.guidance.map((note, index) => <li key={`${band.level}-${index}`}>{note}</li>)}
             </ul>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
@@ -1394,11 +1397,8 @@ const ArtRubricPanel: React.FC<{
         <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
           SEC Art marking scheme
         </span>
-        <p style={{ margin: '5px 0 4px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
+        <p style={{ margin: '5px 0 12px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
           Place your response on the published Art scale.
-        </p>
-        <p style={{ margin: '0 0 12px', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
-          Score each independently awarded component once. Descriptor guidance is evidence for a band, never a model-answer checklist.
         </p>
 
         <div style={{ display: 'grid', gap: 10 }}>
@@ -1409,7 +1409,7 @@ const ArtRubricPanel: React.FC<{
                 <span style={{ font: `700 10px/1 ${MONO}`, color: LABEL }}>/ {criterion.maxMarks}</span>
               </div>
               {criterion.guidance.length > 0 && (
-                <ul style={{ margin: '7px 0 10px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
+                <ul style={{ listStyle: 'disc', margin: '7px 0 10px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
                   {criterion.guidance.map((note, index) => <li key={`${criterion.id}-${index}`}>{note}</li>)}
                 </ul>
               )}
@@ -1429,14 +1429,33 @@ const ArtRubricPanel: React.FC<{
         </div>
       </div>
 
-      <aside style={{ marginTop: 12, padding: '12px', borderRadius: 11, background: 'var(--mb-raised)', border: `1px solid ${MUTED_BORDER}` }}>
-        <strong style={{ display: 'block', font: `700 10px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: INK_2 }}>
-          How to use this guide
-        </strong>
-        <p style={{ margin: '5px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
-          {rubric.markingGuideNote}
-        </p>
-      </aside>
+      {rubric.markingGuideNote && (
+        <aside style={{ marginTop: 12, padding: '12px', borderRadius: 11, background: 'var(--mb-raised)', border: `1px solid ${MUTED_BORDER}` }}>
+          <strong style={{ display: 'block', font: `700 10px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: INK_2 }}>
+            From the SEC marking scheme
+          </strong>
+          <p style={{ margin: '5px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
+            {rubric.markingGuideNote}
+          </p>
+        </aside>
+      )}
+
+      {rubric.practiceNotes && rubric.practiceNotes.length > 0 && (
+        <section
+          aria-label="NextStepUni practice notes"
+          style={{ marginTop: 16, paddingTop: 14, borderTop: `1px solid ${HAIRLINE_2}` }}
+        >
+          <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+            NextStepUni practice notes
+          </span>
+          <p style={{ margin: '4px 0 8px', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
+            Our guidance for using this card. Not part of the SEC marking scheme.
+          </p>
+          <ul style={{ listStyle: 'disc', margin: 0, paddingLeft: 17, color: INK_2, font: `400 12px/1.5 ${SANS}` }}>
+            {rubric.practiceNotes.map((note, index) => <li key={`practice-${index}`}>{note}</li>)}
+          </ul>
+        </section>
+      )}
     </div>
   );
 };

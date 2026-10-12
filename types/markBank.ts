@@ -551,7 +551,12 @@ export type ArtBandLevel = 'low' | 'moderate' | 'high';
 export interface ArtBand {
   level: ArtBandLevel;
   marks: number[];
-  /** SEC descriptor guidance, condensed only to remove repeated boilerplate. */
+  /** The scheme's printed lead-in to the band's bullets, where audited. */
+  lead?: string;
+  /**
+   * SEC descriptor guidance: the printed bullets for an audited year,
+   * otherwise condensed only to remove repeated boilerplate.
+   */
   guidance: string[];
 }
 
@@ -580,7 +585,10 @@ export interface ArtRubric {
   /** Things the printed task explicitly requires. They carry no marks alone. */
   taskRequirements: string[];
   criteria: ArtCriterion[];
+  /** The scheme's own printed note on applying the descriptors, or ''. */
   markingGuideNote: string;
+  /** NextStepUni's guidance for using the card; not part of the SEC scheme. */
+  practiceNotes?: string[];
 }
 
 export type GeographyGuidanceKind =

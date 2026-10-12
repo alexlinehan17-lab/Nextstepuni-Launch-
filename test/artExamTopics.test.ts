@@ -268,10 +268,11 @@ describe('Art exam-topic registry', () => {
       yearMax: 2026,
     });
     // 462 before printed choices sharing one Atlas heading became one card;
-    // the 64 withdrawn per-option ids are cardAliases.ts keys.
-    expect(authoredArt.cardCount).toBe(398);
-    expect(ART_HIGHER).toHaveLength(206);
-    expect(ART_ORDINARY).toHaveLength(192);
-    expect(new Set([...ART_HIGHER, ...ART_ORDINARY].map(card => card.id)).size).toBe(398);
+    // the 64 withdrawn per-option ids are cardAliases.ts keys. The 2026 papers
+    // add 52 (26 Higher, 26 Ordinary).
+    expect(authoredArt.cardCount).toBe(450);
+    expect(ART_HIGHER).toHaveLength(232);
+    expect(ART_ORDINARY).toHaveLength(218);
+    expect(new Set([...ART_HIGHER, ...ART_ORDINARY].map(card => card.id)).size).toBe(450);
   });
 });

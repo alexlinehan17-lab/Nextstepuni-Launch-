@@ -5,7 +5,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "levels": [
     "higher",
@@ -13,9 +14,9 @@
   ],
   "selectionUnit": "One card per separately marked printed task. Where the student chooses among printed items, the task is one card showing every option; holistic Section B/C essays remain intact.",
   "expectedCards": {
-    "higher": 206,
-    "ordinary": 192,
-    "total": 398
+    "higher": 232,
+    "ordinary": 218,
+    "total": 450
   },
   "papers": [
     {
@@ -3673,6 +3674,490 @@
           "number": 19,
           "cardId": "art-2025-ol-q19",
           "questionRef": "2025 OL Q19",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "paperFileid": "LC014ALP000EV",
+      "expectedCards": 26,
+      "cards": [
+        {
+          "number": 1,
+          "cardId": "art-2026-hl-q1-a",
+          "questionRef": "2026 HL Q1(a)",
+          "section": "A",
+          "paperPage": 3,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 1,
+          "cardId": "art-2026-hl-q1-b",
+          "questionRef": "2026 HL Q1(b)",
+          "section": "A",
+          "paperPage": 3,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2026-hl-q2-a",
+          "questionRef": "2026 HL Q2(a)",
+          "section": "A",
+          "paperPage": 4,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2026-hl-q2-b",
+          "questionRef": "2026 HL Q2(b)",
+          "section": "A",
+          "paperPage": 4,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 3,
+          "cardId": "art-2026-hl-q3-a",
+          "questionRef": "2026 HL Q3(a)",
+          "section": "A",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 3,
+          "cardId": "art-2026-hl-q3-b",
+          "questionRef": "2026 HL Q3(b)",
+          "section": "A",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 4,
+          "cardId": "art-2026-hl-q4-a",
+          "questionRef": "2026 HL Q4(a)",
+          "section": "A",
+          "paperPage": 6,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 4,
+          "cardId": "art-2026-hl-q4-b",
+          "questionRef": "2026 HL Q4(b)",
+          "section": "A",
+          "paperPage": 6,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 5,
+          "cardId": "art-2026-hl-q5-a",
+          "questionRef": "2026 HL Q5(a)",
+          "section": "A",
+          "paperPage": 7,
+          "totalMarks": 6,
+          "hasIllustration": false
+        },
+        {
+          "number": 5,
+          "cardId": "art-2026-hl-q5-b",
+          "questionRef": "2026 HL Q5(b)",
+          "section": "A",
+          "paperPage": 7,
+          "totalMarks": 4,
+          "hasIllustration": false
+        },
+        {
+          "number": 6,
+          "cardId": "art-2026-hl-q6-a",
+          "questionRef": "2026 HL Q6(a)",
+          "section": "A",
+          "paperPage": 8,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 6,
+          "cardId": "art-2026-hl-q6-b",
+          "questionRef": "2026 HL Q6(b)",
+          "section": "A",
+          "paperPage": 8,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 7,
+          "cardId": "art-2026-hl-q7-a",
+          "questionRef": "2026 HL Q7(a)",
+          "section": "A",
+          "paperPage": 9,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 7,
+          "cardId": "art-2026-hl-q7-b",
+          "questionRef": "2026 HL Q7(b)",
+          "section": "A",
+          "paperPage": 9,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 8,
+          "cardId": "art-2026-hl-q8",
+          "questionRef": "2026 HL Q8",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 9,
+          "cardId": "art-2026-hl-q9",
+          "questionRef": "2026 HL Q9",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 10,
+          "cardId": "art-2026-hl-q10",
+          "questionRef": "2026 HL Q10",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 11,
+          "cardId": "art-2026-hl-q11",
+          "questionRef": "2026 HL Q11",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 12,
+          "cardId": "art-2026-hl-q12",
+          "questionRef": "2026 HL Q12",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 13,
+          "cardId": "art-2026-hl-q13",
+          "questionRef": "2026 HL Q13",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2026-hl-q14",
+          "questionRef": "2026 HL Q14",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2026-hl-q15",
+          "questionRef": "2026 HL Q15",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 16,
+          "cardId": "art-2026-hl-q16",
+          "questionRef": "2026 HL Q16",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 17,
+          "cardId": "art-2026-hl-q17",
+          "questionRef": "2026 HL Q17",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 18,
+          "cardId": "art-2026-hl-q18",
+          "questionRef": "2026 HL Q18",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 19,
+          "cardId": "art-2026-hl-q19",
+          "questionRef": "2026 HL Q19",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "paperFileid": "LC014GLP000EV",
+      "expectedCards": 26,
+      "cards": [
+        {
+          "number": 1,
+          "cardId": "art-2026-ol-q1-a",
+          "questionRef": "2026 OL Q1(a)",
+          "section": "A",
+          "paperPage": 3,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 1,
+          "cardId": "art-2026-ol-q1-b",
+          "questionRef": "2026 OL Q1(b)",
+          "section": "A",
+          "paperPage": 3,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2026-ol-q2-a",
+          "questionRef": "2026 OL Q2(a)",
+          "section": "A",
+          "paperPage": 4,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2026-ol-q2-b",
+          "questionRef": "2026 OL Q2(b)",
+          "section": "A",
+          "paperPage": 4,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 3,
+          "cardId": "art-2026-ol-q3-a",
+          "questionRef": "2026 OL Q3(a)",
+          "section": "A",
+          "paperPage": 5,
+          "totalMarks": 6,
+          "hasIllustration": false
+        },
+        {
+          "number": 3,
+          "cardId": "art-2026-ol-q3-b",
+          "questionRef": "2026 OL Q3(b)",
+          "section": "A",
+          "paperPage": 5,
+          "totalMarks": 4,
+          "hasIllustration": false
+        },
+        {
+          "number": 4,
+          "cardId": "art-2026-ol-q4-a",
+          "questionRef": "2026 OL Q4(a)",
+          "section": "A",
+          "paperPage": 6,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 4,
+          "cardId": "art-2026-ol-q4-b",
+          "questionRef": "2026 OL Q4(b)",
+          "section": "A",
+          "paperPage": 6,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 5,
+          "cardId": "art-2026-ol-q5-a",
+          "questionRef": "2026 OL Q5(a)",
+          "section": "A",
+          "paperPage": 7,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 5,
+          "cardId": "art-2026-ol-q5-b",
+          "questionRef": "2026 OL Q5(b)",
+          "section": "A",
+          "paperPage": 7,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 6,
+          "cardId": "art-2026-ol-q6-a",
+          "questionRef": "2026 OL Q6(a)",
+          "section": "A",
+          "paperPage": 8,
+          "totalMarks": 6,
+          "hasIllustration": false
+        },
+        {
+          "number": 6,
+          "cardId": "art-2026-ol-q6-b",
+          "questionRef": "2026 OL Q6(b)",
+          "section": "A",
+          "paperPage": 8,
+          "totalMarks": 4,
+          "hasIllustration": false
+        },
+        {
+          "number": 7,
+          "cardId": "art-2026-ol-q7-a",
+          "questionRef": "2026 OL Q7(a)",
+          "section": "A",
+          "paperPage": 9,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 7,
+          "cardId": "art-2026-ol-q7-b",
+          "questionRef": "2026 OL Q7(b)",
+          "section": "A",
+          "paperPage": 9,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 8,
+          "cardId": "art-2026-ol-q8",
+          "questionRef": "2026 OL Q8",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 9,
+          "cardId": "art-2026-ol-q9",
+          "questionRef": "2026 OL Q9",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 10,
+          "cardId": "art-2026-ol-q10",
+          "questionRef": "2026 OL Q10",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 11,
+          "cardId": "art-2026-ol-q11",
+          "questionRef": "2026 OL Q11",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 12,
+          "cardId": "art-2026-ol-q12",
+          "questionRef": "2026 OL Q12",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 13,
+          "cardId": "art-2026-ol-q13",
+          "questionRef": "2026 OL Q13",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2026-ol-q14",
+          "questionRef": "2026 OL Q14",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2026-ol-q15",
+          "questionRef": "2026 OL Q15",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 16,
+          "cardId": "art-2026-ol-q16",
+          "questionRef": "2026 OL Q16",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 17,
+          "cardId": "art-2026-ol-q17",
+          "questionRef": "2026 OL Q17",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 18,
+          "cardId": "art-2026-ol-q18",
+          "questionRef": "2026 OL Q18",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 19,
+          "cardId": "art-2026-ol-q19",
+          "questionRef": "2026 OL Q19",
           "section": "C",
           "paperPage": 17,
           "totalMarks": 50,

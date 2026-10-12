@@ -1,7 +1,500 @@
 {
   "subjectId": "art",
-  "corpus": "All separately marked written-examination tasks, 2021–2025; a printed choice is one card",
-  "cardCount": 398,
+  "corpus": "All separately marked written-examination tasks, 2021–2026; a printed choice is one card",
+  "cardCount": 450,
+  "auditedYears": [
+    2026
+  ],
+  "descriptors": {
+    "2026-higher": {
+      "short": {
+        "page": 17,
+        "lead": "The response shows evidence of the following where appropriate:",
+        "bands": {
+          "low": [
+            "Limited understanding of the requirements of the question.",
+            "Limited application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A limited level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Limited analysis, interpretation and evaluation of any given stimulus material.",
+            "Limited presentation of accurate and/or relevant arguments, explanations and ideas which are based on little or no evidence.",
+            "Presentation of an answer with limited and/or no coherence and focus.",
+            "Use of visual art terminology and/or sketches with limited accuracy and relevance."
+          ],
+          "moderate": [
+            "Good understanding of the requirements of the question.",
+            "Good application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A good level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Good analysis, interpretation and evaluation of any given stimulus material.",
+            "Good presentation of accurate and relevant arguments, explanations and ideas which are in the main based on evidence.",
+            "Presentation of a good coherent and focused answer.",
+            "Good, accurate and relevant use of visual art terminology and/or sketches."
+          ],
+          "high": [
+            "Thorough understanding of the requirements of the question.",
+            "Thorough application of accurate and well-informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A thorough level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Consistent and well-informed analysis, interpretation and evaluation of any given stimulus material.",
+            "Thorough presentation of accurate and relevant arguments, explanations and ideas based on evidence.",
+            "Thorough presentation of a coherent and focused answer.",
+            "Thorough, accurate and relevant use of visual art terminology and/or sketches."
+          ]
+        }
+      },
+      "long": [
+        {
+          "id": "coherence-focus",
+          "label": "Coherence and Focus",
+          "maxMarks": 10,
+          "page": 22,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited ability to understand the demands of the question and to create an answer based on the question posed.",
+                "A limited ability to form and present reasonable, sequential and logical arguments and ideas. Work is based on very limited or no evidence.",
+                "A limited ability to articulate a personal understanding in the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good ability to understand the demands of the question and to create an appropriate answer based on the question posed.",
+                "A good ability to form and present reasonable, sequential and logical arguments and ideas which are for the most part based on evidence.",
+                "A good ability to articulate a personal understanding in the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough ability to understand the demands of the question and to create a high-level answer based on the question posed.",
+                "A thorough ability to form and present reasonable, sequential and logical arguments and ideas which are clearly based on evidence.",
+                "A thorough ability to articulate a personal understanding in the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "subject-knowledge",
+          "label": "Subject Knowledge",
+          "maxMarks": 20,
+          "page": 23,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "A limited level of recall, knowledge and understanding of the section of focus.",
+                "A limited level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A limited critical or perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "guidance": [
+                "A good level of recall, knowledge and understanding of the section of focus.",
+                "A good level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A good critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "high": {
+              "marks": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "A thorough level of recall, knowledge and understanding of the section of focus.",
+                "A thorough level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A thorough critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            }
+          }
+        },
+        {
+          "id": "relevant-examples",
+          "label": "Relevant Examples",
+          "maxMarks": 10,
+          "page": 24,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited choice of artists, and examples of artworks/artefacts with limited relevance/not recognised and support a very limited response.",
+                "A limited understanding of the selected artists used and a limited understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good choice of artists, and examples of artworks/artefacts that are mostly relevant/recognised and support a mostly accurate response.",
+                "A good understanding of the selected artists used and a good understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough choice of artists, and examples of artworks/artefacts that are most relevant/recognised and support a highly accurate response.",
+                "A thorough understanding of the selected artists used and a thorough understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "visual-language",
+          "label": "Visual Language (terminology and/or sketches)",
+          "maxMarks": 10,
+          "page": 25,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited use and understanding of terminology to communicate ideas.",
+                "If sketches are used: the sketches demonstrate a limited ability to support the answer and communicate ideas."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good use and understanding of terminology which is accurate and relevant and adds to the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a good ability to support the answer and communicate ideas. The sketches are mostly accurate and relevant."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough use and understanding of terminology which is accurate, relevant and supports the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a thorough ability to support the answer and communicate ideas. The sketches are thorough, accurate and relevant."
+              ]
+            }
+          }
+        }
+      ],
+      "notes": {
+        "current-short-descriptors": {
+          "page": 16,
+          "text": [
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        },
+        "current-long-descriptors": {
+          "page": 21,
+          "text": [
+            "Candidates may choose from a wide range of relevant examples and content to answer a question. Relevant content must be credited.",
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        }
+      }
+    },
+    "2026-ordinary": {
+      "short": {
+        "page": 17,
+        "lead": "The response shows evidence of the following where appropriate:",
+        "bands": {
+          "low": [
+            "Limited understanding of the requirements of the question.",
+            "Limited application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A limited level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Limited analysis, interpretation and evaluation of any given stimulus material.",
+            "Limited presentation of accurate and/or relevant arguments, explanations and ideas which are based on little or no evidence.",
+            "Presentation of an answer with limited and/or no coherence and focus.",
+            "Use of visual art terminology and/or sketches with limited accuracy and relevance."
+          ],
+          "moderate": [
+            "Good understanding of the requirements of the question.",
+            "Good application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A good level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Good analysis, interpretation and evaluation of any given stimulus material.",
+            "Good presentation of accurate and relevant arguments, explanations and ideas which are in the main based on evidence.",
+            "Presentation of a coherent and focused answer.",
+            "Good accurate and relevant use of visual art terminology and/ or sketches."
+          ],
+          "high": [
+            "Thorough understanding of the requirements of the question.",
+            "Thorough application of accurate and well-informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A thorough level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Consistent and well-informed analysis, interpretation and evaluation of any given stimulus material.",
+            "Thorough presentation of accurate and relevant arguments, explanations and ideas based on evidence.",
+            "Thorough presentation of a coherent and focused answer.",
+            "Thorough, accurate and relevant use of visual art terminology and/ or sketches."
+          ]
+        }
+      },
+      "long": [
+        {
+          "id": "coherence-focus",
+          "label": "Coherence and focus",
+          "maxMarks": 10,
+          "page": 22,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited ability to understand the demands of the question and to create an answer based on the question posed.",
+                "A limited ability to form and present reasonable, sequential and logical arguments and ideas. Work is based on very limited or no evidence.",
+                "A limited ability to articulate a personal understanding in the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good ability to understand the demands of the question and to create an appropriate answer based on the question posed.",
+                "A good ability to form and present reasonable, sequential and logical arguments and ideas which are for the most part based on evidence.",
+                "A good ability to articulate a personal understanding in the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough ability to understand the demands of the question and to create a high-level answer based on the question posed.",
+                "A thorough ability to form and present reasonable, sequential and logical arguments and ideas which are clearly based on evidence.",
+                "A thorough ability to articulate a personal understanding in the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "subject-knowledge",
+          "label": "Subject Knowledge",
+          "maxMarks": 20,
+          "page": 23,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "A limited level of recall, knowledge and understanding of the section of focus.",
+                "A limited level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A limited critical or perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "guidance": [
+                "A good level of recall, knowledge and understanding of the section of focus.",
+                "A good level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A good critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "high": {
+              "marks": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "A thorough level of recall, knowledge and understanding of the section of focus.",
+                "A thorough level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A thorough critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            }
+          }
+        },
+        {
+          "id": "relevant-examples",
+          "label": "Relevant Examples",
+          "maxMarks": 10,
+          "page": 24,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited choice of artists, and examples of artworks/artefacts with limited relevance/not recognised and support a very limited response.",
+                "A limited understanding of the selected artists used and a limited understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good choice of artists, and examples of artworks/artefacts that are mostly relevant/recognised and support a mostly accurate response.",
+                "A good understanding of the selected artists used and a good understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough choice of artists and examples of artworks/artefacts that are most relevant/recognised and support a highly accurate response.",
+                "A thorough understanding of the selected artists used and a thorough understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "visual-language",
+          "label": "Visual Language (terminology and/or sketches)",
+          "maxMarks": 10,
+          "page": 25,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited use and understanding of terminology to communicate ideas.",
+                "If sketches are used: the sketches demonstrate a limited ability to support the answer and communicate ideas."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good use and understanding of terminology which is accurate and relevant and adds to the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a good ability to support the answer and communicate ideas. The sketches are mostly accurate and relevant."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough use and understanding of terminology which is accurate, relevant and supports the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a thorough ability to support the answer and communicate ideas. The sketches are thorough, accurate and relevant."
+              ]
+            }
+          }
+        }
+      ],
+      "notes": {
+        "current-short-descriptors": {
+          "page": 16,
+          "text": [
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        },
+        "current-long-descriptors": {
+          "page": 21,
+          "text": [
+            "Candidates may choose from a wide range of relevant examples and content to answer a question. Relevant content must be credited.",
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        }
+      }
+    }
+  },
   "cards": [
     {
       "id": "art-2021-hl-q1-task1",
@@ -16406,7 +16899,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2023 HL Q8",
-      "questionText": "Romanesque and Gothic (c.1000 – 1500s) Discuss the influence of pilgrimage on the art and architecture of the Romanesque period.\n• Refer to specific examples of art and architecture in your answer.\n• Include discussion of context, art elements and design principles, subject matter, materials and techniques.",
+      "questionText": "Romanesque and Gothic (c.1000 – 1500s)\nDiscuss the influence of pilgrimage on the art and architecture of the Romanesque period.\n• Refer to specific examples of art and architecture in your answer.\n• Include discussion of context, art elements and design principles, subject matter, materials and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -16429,7 +16922,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2023 HL Q9",
-      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s) Discuss how representation of the human form developed during the period.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, art elements and design principles, innovation and invention.",
+      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s)\nDiscuss how representation of the human form developed during the period.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, art elements and design principles, innovation and invention.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -16452,7 +16945,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2023 HL Q10",
-      "questionText": "Baroque (c.1600 – 1700s) What influence did religion have on the art and/or architecture of the Baroque period?\n• Refer to named artists and their artworks and/or their architecture in your answer.\n• Include discussion of context, art elements and design principles, materials and techniques.",
+      "questionText": "Baroque (c.1600 – 1700s)\nWhat influence did religion have on the art and/or architecture of the Baroque period?\n• Refer to named artists and their artworks and/or their architecture in your answer.\n• Include discussion of context, art elements and design principles, materials and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -16475,7 +16968,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2023 HL Q11",
-      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s) Discuss how innovation and invention impacted on the art of this period.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, subject matter, art elements and design principles, materials and techniques.",
+      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s)\nDiscuss how innovation and invention impacted on the art of this period.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, subject matter, art elements and design principles, materials and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -16498,7 +16991,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2023 HL Q12",
-      "questionText": "Modernism (c.1900 – 1960s) Discuss how artists moved away from realistic depictions of subject matter in the first half of the twentieth century.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, art elements and design principles, materials and techniques.",
+      "questionText": "Modernism (c.1900 – 1960s)\nDiscuss how artists moved away from realistic depictions of subject matter in the first half of the twentieth century.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, art elements and design principles, materials and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -16521,7 +17014,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2023 HL Q13",
-      "questionText": "Post 1960 Discuss the work of two conceptual artists from this period who embraced innovation and invention.\n• Refer to two named artists and their artworks in your answer.\n• Include discussion of context, art elements and design principles, media and processes.",
+      "questionText": "Post 1960\nDiscuss the work of two conceptual artists from this period who embraced innovation and invention.\n• Refer to two named artists and their artworks in your answer.\n• Include discussion of context, art elements and design principles, media and processes.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -16544,7 +17037,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2023 HL Q14",
-      "questionText": "Pre-Christian (c.4000 BCE – 500 CE) How did the spiritual beliefs of Stone Age people influence the form and decoration of their built structures?\n• Refer in your answer to named structures.\n• Include discussion of context, materials and techniques, art elements and design principles, innovation and invention.",
+      "questionText": "Pre-Christian (c.4000 BCE – 500 CE)\nHow did the spiritual beliefs of Stone Age people influence the form and decoration of their built structures?\n• Refer in your answer to named structures.\n• Include discussion of context, materials and techniques, art elements and design principles, innovation and invention.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -16567,7 +17060,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2023 HL Q15",
-      "questionText": "Insular Art (c.500 – 1100s) Discuss the use of interlace in manuscripts, metalwork and sculpture of the period.\n• Refer in your answer to named examples.\n• Include discussion of context, materials and techniques, art elements and design principles.",
+      "questionText": "Insular Art (c.500 – 1100s)\nDiscuss the use of interlace in manuscripts, metalwork and sculpture of the period.\n• Refer in your answer to named examples.\n• Include discussion of context, materials and techniques, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -16590,7 +17083,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2023 HL Q16",
-      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s) Discuss the architectural features and sculptural decoration of religious structures from this period.\n• Refer in your answer to named examples.\n• Include discussion of context, materials and techniques, art elements and design principles.",
+      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s)\nDiscuss the architectural features and sculptural decoration of religious structures from this period.\n• Refer in your answer to named examples.\n• Include discussion of context, materials and techniques, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -16613,7 +17106,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2023 HL Q17",
-      "questionText": "Georgian period (c.1720 – 1800s) Discuss the development of Georgian domestic architecture and decoration during this period.\n• Refer to specific examples of town houses and/or country houses in your answer.\n• Include discussion of context, innovation and invention, art elements and design principles.",
+      "questionText": "Georgian period (c.1720 – 1800s)\nDiscuss the development of Georgian domestic architecture and decoration during this period.\n• Refer to specific examples of town houses and/or country houses in your answer.\n• Include discussion of context, innovation and invention, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -16636,7 +17129,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2023 HL Q18",
-      "questionText": "Irish Art and Modernism (c.1880 – 1960s) Analyse how themes of nationalism were explored and represented in Irish Art during this period.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, materials and techniques, art elements and design principles.",
+      "questionText": "Irish Art and Modernism (c.1880 – 1960s)\nAnalyse how themes of nationalism were explored and represented in Irish Art during this period.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, materials and techniques, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -16659,7 +17152,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2023 HL Q19",
-      "questionText": "Post 1960 Discuss the work of two Post 1960 Irish artists, whose work communicates any social and/or political messages.\n• Refer to two named artists and their artworks in your answer.\n• Include discussion of context, innovation and invention, materials, art elements and design principles.",
+      "questionText": "Post 1960\nDiscuss the work of two Post 1960 Irish artists, whose work communicates any social and/or political messages.\n• Refer to two named artists and their artworks in your answer.\n• Include discussion of context, innovation and invention, materials, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -17502,7 +17995,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2023 OL Q8",
-      "questionText": "Romanesque and Gothic (c.1000 – 1500s) Give an account of the characteristics of Romanesque architecture and sculpture.\n• Refer to one named church or cathedral and one named sculpture.\n• Include discussion of context, art elements and design principles, materials and techniques.",
+      "questionText": "Romanesque and Gothic (c.1000 – 1500s)\nGive an account of the characteristics of Romanesque architecture and sculpture.\n• Refer to one named church or cathedral and one named sculpture.\n• Include discussion of context, art elements and design principles, materials and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -17525,7 +18018,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2023 OL Q9",
-      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s) How did Humanism and its focus on the individual and the classical world impact on Renaissance Art?\n• Refer to named artists and two named artworks.\n• Include discussion of context, subject matter, innovation and invention.",
+      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s)\nHow did Humanism and its focus on the individual and the classical world impact on Renaissance Art?\n• Refer to named artists and two named artworks.\n• Include discussion of context, subject matter, innovation and invention.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -17548,7 +18041,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2023 OL Q10",
-      "questionText": "Baroque (c.1600 – 1700s) How did the artwork of the Baroque period stir emotion in the viewer?\n• Refer to named artists and two named artworks.\n• Include discussion of subject matter, media and processes, art elements and design principles.",
+      "questionText": "Baroque (c.1600 – 1700s)\nHow did the artwork of the Baroque period stir emotion in the viewer?\n• Refer to named artists and two named artworks.\n• Include discussion of subject matter, media and processes, art elements and design principles.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -17571,7 +18064,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2023 OL Q11",
-      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s) How did the camera impact on the artwork of the period?\n• Refer to named artists and two named artworks.\n• Include discussion of subject matter, art elements and design principles, media and techniques.",
+      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s)\nHow did the camera impact on the artwork of the period?\n• Refer to named artists and two named artworks.\n• Include discussion of subject matter, art elements and design principles, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -17594,7 +18087,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2023 OL Q12",
-      "questionText": "Modernism (c.1900 – 1960s) Identify and discuss the influences that shaped Modernism.\n• Refer to two named artists and their artworks.\n• Include discussion of context, media and techniques, art elements and design principles.",
+      "questionText": "Modernism (c.1900 – 1960s)\nIdentify and discuss the influences that shaped Modernism.\n• Refer to two named artists and their artworks.\n• Include discussion of context, media and techniques, art elements and design principles.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -17617,7 +18110,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2023 OL Q13",
-      "questionText": "Post 1960 Discuss the similarities and differences between the artworks of two artists from this period.\n• Refer to two named artists and at least one artwork from each.\n• Include discussion of context, theme, subject matter, art elements and design principles.",
+      "questionText": "Post 1960\nDiscuss the similarities and differences between the artworks of two artists from this period.\n• Refer to two named artists and at least one artwork from each.\n• Include discussion of context, theme, subject matter, art elements and design principles.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -17640,7 +18133,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2023 OL Q14",
-      "questionText": "Pre-Christian (c.4000 BCE – 500 CE) Give an account of the development of Stone Age architecture in Ireland.\n• Refer in your answer to at least two named Stone Age structures.\n• Include discussion of context, decoration, materials and techniques, innovation and invention.",
+      "questionText": "Pre-Christian (c.4000 BCE – 500 CE)\nGive an account of the development of Stone Age architecture in Ireland.\n• Refer in your answer to at least two named Stone Age structures.\n• Include discussion of context, decoration, materials and techniques, innovation and invention.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -17663,7 +18156,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2023 OL Q15",
-      "questionText": "Insular Art (c.500 – 1100s) Give an account of the processes used in metalwork during this period in Ireland.\n• Refer in your answer to two named metal artefacts you have studied.\n• Include discussion of context, decoration, materials and techniques used.",
+      "questionText": "Insular Art (c.500 – 1100s)\nGive an account of the processes used in metalwork during this period in Ireland.\n• Refer in your answer to two named metal artefacts you have studied.\n• Include discussion of context, decoration, materials and techniques used.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -17686,7 +18179,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2023 OL Q16",
-      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s) Discuss the decoration seen in the religious buildings of the period.\n• Refer in your answer to two named religious buildings you have studied.\n• Include discussion of context, structure, materials, techniques and decoration.",
+      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s)\nDiscuss the decoration seen in the religious buildings of the period.\n• Refer in your answer to two named religious buildings you have studied.\n• Include discussion of context, structure, materials, techniques and decoration.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -17709,7 +18202,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2023 OL Q17",
-      "questionText": "Georgian period (c.1720 – 1800s) Compare a town house of the period with a country house of the period.\n• Refer to two specific buildings in your answer.\n• Include discussion of context, structure, materials, techniques and decoration.",
+      "questionText": "Georgian period (c.1720 – 1800s)\nCompare a town house of the period with a country house of the period.\n• Refer to two specific buildings in your answer.\n• Include discussion of context, structure, materials, techniques and decoration.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -17732,7 +18225,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2023 OL Q18",
-      "questionText": "Irish Art and Modernism (c.1880 – 1960s) Name one artist from this period and give an account of how a new approach to art elements and design principles influenced their work.\n• In your answer refer to two named works by your chosen artist.\n• Include discussion of context, innovation and invention, media and areas of practice.",
+      "questionText": "Irish Art and Modernism (c.1880 – 1960s)\nName one artist from this period and give an account of how a new approach to art elements and design principles influenced their work.\n• In your answer refer to two named works by your chosen artist.\n• Include discussion of context, innovation and invention, media and areas of practice.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -17755,7 +18248,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2023 OL Q19",
-      "questionText": "Post 1960 Name one important artist from the period and discuss their contribution to Irish art.\n• In your answer refer to two named works by your chosen artist.\n• Include discussion of context, subject matter, art elements and design principles, media and areas of practice.",
+      "questionText": "Post 1960\nName one important artist from the period and discuss their contribution to Irish art.\n• In your answer refer to two named works by your chosen artist.\n• Include discussion of context, subject matter, art elements and design principles, media and areas of practice.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -18600,7 +19093,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2024 HL Q8",
-      "questionText": "Romanesque and Gothic (c.1000 – 1500s) Trace the origin and evolution of Gothic Cathedrals.\n• Refer to named examples in your answer.\n• Include discussion of context, innovation and invention, areas of practice, art elements and design principles.",
+      "questionText": "Romanesque and Gothic (c.1000 – 1500s)\nTrace the origin and evolution of Gothic Cathedrals.\n• Refer to named examples in your answer.\n• Include discussion of context, innovation and invention, areas of practice, art elements and design principles.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -18623,7 +19116,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2024 HL Q9",
-      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s) What influence did the study of perspective have on the art of the period?\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, innovation and invention, art elements and design principles, media and areas of practice.",
+      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s)\nWhat influence did the study of perspective have on the art of the period?\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, innovation and invention, art elements and design principles, media and areas of practice.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -18646,7 +19139,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2024 HL Q10",
-      "questionText": "Baroque (c.1600 – 1700s) Discuss how patronage across Europe influenced the art of the period.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, subject matter, art elements and design principles, media and areas of practice.",
+      "questionText": "Baroque (c.1600 – 1700s)\nDiscuss how patronage across Europe influenced the art of the period.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, subject matter, art elements and design principles, media and areas of practice.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -18669,7 +19162,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2024 HL Q11",
-      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s) How was class and/or gender represented by artists during this period?\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, subject matter, media, art elements and design principles.",
+      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s)\nHow was class and/or gender represented by artists during this period?\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, subject matter, media, art elements and design principles.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -18692,7 +19185,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2024 HL Q12",
-      "questionText": "Modernism (c.1900 – 1960s) Discuss how new ideas and new approaches influenced art and/or architecture during this period.\n• Refer to named artists and/or architects and their artworks in your answer.\n• Include discussion of context, themes, art elements and design principles, media and areas of practice.",
+      "questionText": "Modernism (c.1900 – 1960s)\nDiscuss how new ideas and new approaches influenced art and/or architecture during this period.\n• Refer to named artists and/or architects and their artworks in your answer.\n• Include discussion of context, themes, art elements and design principles, media and areas of practice.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -18715,7 +19208,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2024 HL Q13",
-      "questionText": "Post 1960 Discuss how artists explored new ways of making and displaying their work during this period.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, themes, art elements and design principles, media and processes.",
+      "questionText": "Post 1960\nDiscuss how artists explored new ways of making and displaying their work during this period.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, themes, art elements and design principles, media and processes.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -18738,7 +19231,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2024 HL Q14",
-      "questionText": "Pre-Christian (c.4000 BCE – 500 CE) Discuss the development of motifs on stone carving and metalwork throughout this period.\n• Refer in your answer to specific artefacts.\n• Include discussion of context, materials and techniques, art elements and design principles.",
+      "questionText": "Pre-Christian (c.4000 BCE – 500 CE)\nDiscuss the development of motifs on stone carving and metalwork throughout this period.\n• Refer in your answer to specific artefacts.\n• Include discussion of context, materials and techniques, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -18761,7 +19254,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2024 HL Q15",
-      "questionText": "Insular Art (c.500 – 1100s) How did Christian beliefs and practices influence the manuscripts and metalwork of this period?\n• Refer in your answer to named examples.\n• Include discussion of innovation and invention, materials and techniques, art elements and design principles.",
+      "questionText": "Insular Art (c.500 – 1100s)\nHow did Christian beliefs and practices influence the manuscripts and metalwork of this period?\n• Refer in your answer to named examples.\n• Include discussion of innovation and invention, materials and techniques, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -18784,7 +19277,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2024 HL Q16",
-      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s) Trace the development of monastic architecture and decoration during this period.\n• Refer in your answer to named examples.\n• Include discussion of context, innovation and invention, art elements and design principles.",
+      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s)\nTrace the development of monastic architecture and decoration during this period.\n• Refer in your answer to named examples.\n• Include discussion of context, innovation and invention, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -18807,7 +19300,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2024 HL Q17",
-      "questionText": "Georgian period (c.1720 – 1800s) What impact did the ‘Grand Tour’ have on the art and/or architecture of this period?\n• Refer to specific examples of art and/or architecture in your answer.\n• Include discussion of context, innovation and invention, art elements and design principles.",
+      "questionText": "Georgian period (c.1720 – 1800s)\nWhat impact did the ‘Grand Tour’ have on the art and/or architecture of this period?\n• Refer to specific examples of art and/or architecture in your answer.\n• Include discussion of context, innovation and invention, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -18830,7 +19323,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2024 HL Q18",
-      "questionText": "Irish Art and Modernism (c.1880 – 1960s) Explain how Irish art was influenced by European artists of this period.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, subject matter, media and areas of practice, art elements and design principles.",
+      "questionText": "Irish Art and Modernism (c.1880 – 1960s)\nExplain how Irish art was influenced by European artists of this period.\n• Refer to named artists and their artworks in your answer.\n• Include discussion of context, subject matter, media and areas of practice, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -18853,7 +19346,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2024 HL Q19",
-      "questionText": "Post 1960 Compare the work of two Irish artists who explore the theme of identity.\n• Refer to two named artists and their artworks in your answer.\n• Include discussion of context, subject matter, media and processes, art elements and design principles.",
+      "questionText": "Post 1960\nCompare the work of two Irish artists who explore the theme of identity.\n• Refer to two named artists and their artworks in your answer.\n• Include discussion of context, subject matter, media and processes, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -19698,7 +20191,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2024 OL Q8",
-      "questionText": "Romanesque and Gothic (c.1000 – 1500s) Give an account of how Gothic sculpture became more realistic than Romanesque sculpture.\n• Refer in your answer to two sculptures.\n• Include discussion of context, innovation and invention, art elements and design principles.",
+      "questionText": "Romanesque and Gothic (c.1000 – 1500s)\nGive an account of how Gothic sculpture became more realistic than Romanesque sculpture.\n• Refer in your answer to two sculptures.\n• Include discussion of context, innovation and invention, art elements and design principles.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -19721,7 +20214,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2024 OL Q9",
-      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s) Discuss how sculpture developed during the Renaissance period.\n• Refer in your answer to named artists and two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, materials and techniques.",
+      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s)\nDiscuss how sculpture developed during the Renaissance period.\n• Refer in your answer to named artists and two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, materials and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -19744,7 +20237,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2024 OL Q10",
-      "questionText": "Baroque (c.1600 – 1700s) Identify and describe two paintings of the Baroque period that reflect the daily life and activities of the time.\n• Refer in your answer to named artists and two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, media and techniques.",
+      "questionText": "Baroque (c.1600 – 1700s)\nIdentify and describe two paintings of the Baroque period that reflect the daily life and activities of the time.\n• Refer in your answer to named artists and two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -19767,7 +20260,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2024 OL Q11",
-      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s) What does the work of Vincent van Gogh tell us about his life?\n• Refer in your answer to two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, media and techniques.",
+      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s)\nWhat does the work of Vincent van Gogh tell us about his life?\n• Refer in your answer to two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -19790,7 +20283,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2024 OL Q12",
-      "questionText": "Modernism (c.1900 – 1960s) What are the main characteristics of Surrealism?\n• Refer to named artists and two named artworks.\n• Include discussion of context, innovation and invention, subject matter, art elements and design principles.",
+      "questionText": "Modernism (c.1900 – 1960s)\nWhat are the main characteristics of Surrealism?\n• Refer to named artists and two named artworks.\n• Include discussion of context, innovation and invention, subject matter, art elements and design principles.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -19813,7 +20306,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2024 OL Q13",
-      "questionText": "Post 1960 Describe how Pop Art was influenced by topics such as consumerism, celebrity culture, and the mass media.\n• Refer in your answer to named artists and two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, media and techniques.",
+      "questionText": "Post 1960\nDescribe how Pop Art was influenced by topics such as consumerism, celebrity culture, and the mass media.\n• Refer in your answer to named artists and two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -19836,7 +20329,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2024 OL Q14",
-      "questionText": "Pre-Christian (c.4000 BCE – 500 CE) Discuss how metal artefacts were made and decorated during the Iron Age.\n• Refer in your answer to two named metal artefacts you have studied.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
+      "questionText": "Pre-Christian (c.4000 BCE – 500 CE)\nDiscuss how metal artefacts were made and decorated during the Iron Age.\n• Refer in your answer to two named metal artefacts you have studied.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -19859,7 +20352,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2024 OL Q15",
-      "questionText": "Insular Art (c.500 – 1100s) Trace the development of stone crosses during this period.\n• Refer in your answer to two named examples you have studied.\n• Include discussion of context, imagery, art elements and design principles, innovation and invention.",
+      "questionText": "Insular Art (c.500 – 1100s)\nTrace the development of stone crosses during this period.\n• Refer in your answer to two named examples you have studied.\n• Include discussion of context, imagery, art elements and design principles, innovation and invention.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -19882,7 +20375,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2024 OL Q16",
-      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s) Discuss how Late Medieval Christian metalwork was made and decorated.\n• Refer in your answer to two named Christian metal artefacts from this period.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
+      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s)\nDiscuss how Late Medieval Christian metalwork was made and decorated.\n• Refer in your answer to two named Christian metal artefacts from this period.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -19905,7 +20398,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2024 OL Q17",
-      "questionText": "Georgian period (c.1720 – 1800s) Discuss the structure and decoration of two public buildings built in Ireland during this period.\n• Refer in your answer to two named public buildings.\n• Include discussion of context, function, materials and techniques, art elements and design principles.",
+      "questionText": "Georgian period (c.1720 – 1800s)\nDiscuss the structure and decoration of two public buildings built in Ireland during this period.\n• Refer in your answer to two named public buildings.\n• Include discussion of context, function, materials and techniques, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -19928,7 +20421,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2024 OL Q18",
-      "questionText": "Irish Art and Modernism (c.1880 – 1960s) Discuss the work of one female Modernist artist or designer.\n• Refer in your answer to one named artist or designer and two named artworks.\n• Include discussion of context, art elements and design principles, style, media and areas of practice.",
+      "questionText": "Irish Art and Modernism (c.1880 – 1960s)\nDiscuss the work of one female Modernist artist or designer.\n• Refer in your answer to one named artist or designer and two named artworks.\n• Include discussion of context, art elements and design principles, style, media and areas of practice.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -19951,7 +20444,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2024 OL Q19",
-      "questionText": "Post 1960 Compare two figurative artworks, by different artists, produced during this period.\n• Refer in your answer to each named artwork by your chosen artists.\n• Include discussion of context, subject matter, art elements and design principles, media and areas of practice.",
+      "questionText": "Post 1960\nCompare two figurative artworks, by different artists, produced during this period.\n• Refer in your answer to each named artwork by your chosen artists.\n• Include discussion of context, subject matter, art elements and design principles, media and areas of practice.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -20798,7 +21291,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2025 HL Q8",
-      "questionText": "Romanesque and Gothic (c.1000 – 1500s) Discuss the significance and functions of sculpture on Romanesque and Gothic portals (entrances).\n• Refer in your answer to specific examples.\n• Include discussion of context, style, subject matter, art elements and design principles.",
+      "questionText": "Romanesque and Gothic (c.1000 – 1500s)\nDiscuss the significance and functions of sculpture on Romanesque and Gothic portals (entrances).\n• Refer in your answer to specific examples.\n• Include discussion of context, style, subject matter, art elements and design principles.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -20821,7 +21314,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2025 HL Q9",
-      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s) How did artists’ representation of religious and/or mythological figures evolve during this period?\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
+      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s)\nHow did artists’ representation of religious and/or mythological figures evolve during this period?\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -20844,7 +21337,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2025 HL Q10",
-      "questionText": "Baroque (c.1600 – 1700s) Compare and contrast Baroque Art in Italy with Baroque Art in Northern Europe.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, subject matter, areas of practice, art elements and design principles.",
+      "questionText": "Baroque (c.1600 – 1700s)\nCompare and contrast Baroque Art in Italy with Baroque Art in Northern Europe.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, subject matter, areas of practice, art elements and design principles.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -20867,7 +21360,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2025 HL Q11",
-      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s) How did artists challenge traditional approaches to composition, space and perspective in their work during this period?\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, art elements and design principles, innovation and invention, media and techniques.",
+      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s)\nHow did artists challenge traditional approaches to composition, space and perspective in their work during this period?\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, art elements and design principles, innovation and invention, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -20890,7 +21383,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2025 HL Q12 · Fauvism",
-      "questionText": "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
+      "questionText": "Modernism (c.1900 – 1960s)\nDiscuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -20913,7 +21406,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2025 HL Q12 · Expressionism",
-      "questionText": "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
+      "questionText": "Modernism (c.1900 – 1960s)\nDiscuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -20936,7 +21429,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2025 HL Q12 · Cubism",
-      "questionText": "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
+      "questionText": "Modernism (c.1900 – 1960s)\nDiscuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -20959,7 +21452,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2025 HL Q12 · Bauhaus",
-      "questionText": "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
+      "questionText": "Modernism (c.1900 – 1960s)\nDiscuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -20982,7 +21475,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2025 HL Q12 · Surrealism",
-      "questionText": "Modernism (c.1900 – 1960s) Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
+      "questionText": "Modernism (c.1900 – 1960s)\nDiscuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -21005,7 +21498,7 @@
       "level": "higher",
       "section": "B",
       "questionRef": "2025 HL Q13",
-      "questionText": "Post 1960 Discuss how the Conceptual Art and/or the Performance Art of this period has engaged viewers in new and innovative ways.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, areas of practice, art elements and design principles, media and techniques.",
+      "questionText": "Post 1960\nDiscuss how the Conceptual Art and/or the Performance Art of this period has engaged viewers in new and innovative ways.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, areas of practice, art elements and design principles, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -21028,7 +21521,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2025 HL Q14",
-      "questionText": "Pre-Christian (c.4000 BCE – 500 CE) Discuss how Irish artefacts show evidence of trade and interaction with other cultures during this period.\n• Refer in your answer to specific artefacts.\n• Include discussion of context, innovation and invention, materials and techniques, art elements and design principles.",
+      "questionText": "Pre-Christian (c.4000 BCE – 500 CE)\nDiscuss how Irish artefacts show evidence of trade and interaction with other cultures during this period.\n• Refer in your answer to specific artefacts.\n• Include discussion of context, innovation and invention, materials and techniques, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -21051,7 +21544,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2025 HL Q15",
-      "questionText": "Insular Art (c.500 – 1100s) Trace the origin and evolution of Irish High Crosses during this period.\n• Refer in your answer to named examples.\n• Include discussion of context, imagery, art elements and design principles, innovation and invention.",
+      "questionText": "Insular Art (c.500 – 1100s)\nTrace the origin and evolution of Irish High Crosses during this period.\n• Refer in your answer to named examples.\n• Include discussion of context, imagery, art elements and design principles, innovation and invention.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -21074,7 +21567,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2025 HL Q16",
-      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s) How did the design of shrines and/or reliquaries of this period reflect both religious devotion and artistic innovation?\n• Refer in your answer to specific artefacts.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
+      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s)\nHow did the design of shrines and/or reliquaries of this period reflect both religious devotion and artistic innovation?\n• Refer in your answer to specific artefacts.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -21097,7 +21590,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2025 HL Q17",
-      "questionText": "Georgian period (c.1720 – 1800s) Analyse the influence of planning on urban development in Georgian Ireland.\n• Refer in your answer to architectural examples.\n• Include discussion of context, materials and techniques, art elements and design principles, innovation and invention.",
+      "questionText": "Georgian period (c.1720 – 1800s)\nAnalyse the influence of planning on urban development in Georgian Ireland.\n• Refer in your answer to architectural examples.\n• Include discussion of context, materials and techniques, art elements and design principles, innovation and invention.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -21120,7 +21613,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2025 HL Q18",
-      "questionText": "Irish Art and Modernism (c.1880 – 1960s) Discuss how the significant cultural and political changes of the time influenced the art of this period.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, art elements and design principles, innovation and invention, media and techniques.",
+      "questionText": "Irish Art and Modernism (c.1880 – 1960s)\nDiscuss how the significant cultural and political changes of the time influenced the art of this period.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, art elements and design principles, innovation and invention, media and techniques.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -21143,7 +21636,7 @@
       "level": "higher",
       "section": "C",
       "questionRef": "2025 HL Q19",
-      "questionText": "Post 1960 Compare and contrast the work of two artists who have used any of the following: photography, film, video or other lens-based media, during this period.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, subject matter, art elements and design principles.",
+      "questionText": "Post 1960\nCompare and contrast the work of two artists who have used any of the following: photography, film, video or other lens-based media, during this period.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, subject matter, art elements and design principles.",
       "paperPage": 17,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
@@ -21542,7 +22035,7 @@
             6
           ],
           "guidance": [
-            "(a) Description of embroidery using any two of the given headings: colour, texture, line, . . pattern, shape."
+            "(a) Description of embroidery using any two of the given headings: colour, texture, line, pattern, shape."
           ],
           "bandMarks": {
             "low": [
@@ -21790,7 +22283,7 @@
             6
           ],
           "guidance": [
-            "(a) Explanation of how a young visual artist might promote their work. Support answer . . . using two examples."
+            "(a) Explanation of how a young visual artist might promote their work. Support answer using two examples."
           ],
           "bandMarks": {
             "low": [
@@ -21988,7 +22481,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2025 OL Q8",
-      "questionText": "Romanesque and Gothic (c.1000 – 1500s) Compare and contrast one Romanesque church or cathedral with one Gothic church or cathedral.\n• Refer to one named church or cathedral from each period.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
+      "questionText": "Romanesque and Gothic (c.1000 – 1500s)\nCompare and contrast one Romanesque church or cathedral with one Gothic church or cathedral.\n• Refer to one named church or cathedral from each period.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -22011,7 +22504,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2025 OL Q9",
-      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s) Describe two artworks that demonstrate innovation and invention during this period.\n• Refer to named artists and two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, materials and techniques.",
+      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s)\nDescribe two artworks that demonstrate innovation and invention during this period.\n• Refer to named artists and two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, materials and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -22034,7 +22527,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2025 OL Q10",
-      "questionText": "Baroque (c.1600 – 1700s) How did Caravaggio create a sense of drama in his paintings?\n• Refer to two named artworks.\n• Include discussion of context, subject matter, innovation and invention, art elements and design principles.",
+      "questionText": "Baroque (c.1600 – 1700s)\nHow did Caravaggio create a sense of drama in his paintings?\n• Refer to two named artworks.\n• Include discussion of context, subject matter, innovation and invention, art elements and design principles.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -22057,7 +22550,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2025 OL Q11",
-      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s) Describe how the study of light and colour influenced the art of this period.\n• Refer to named artists and two named artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
+      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s)\nDescribe how the study of light and colour influenced the art of this period.\n• Refer to named artists and two named artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -22080,7 +22573,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2025 OL Q12",
-      "questionText": "Modernism (c.1900 – 1960s) Discuss the development of Cubism.\n• Refer to named artists and two named artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
+      "questionText": "Modernism (c.1900 – 1960s)\nDiscuss the development of Cubism.\n• Refer to named artists and two named artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -22103,7 +22596,7 @@
       "level": "ordinary",
       "section": "B",
       "questionRef": "2025 OL Q13",
-      "questionText": "Post 1960 Discuss how visual artists explored new materials and/or techniques during this period.\n• Refer to named artists and two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, media and techniques.",
+      "questionText": "Post 1960\nDiscuss how visual artists explored new materials and/or techniques during this period.\n• Refer to named artists and two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, media and techniques.",
       "paperPage": 11,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -22126,7 +22619,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2025 OL Q14",
-      "questionText": "Pre-Christian (c.4000 BCE – 500 CE) Discuss the development of stone carving throughout this period.\n• Refer to two specific examples of stone carving.\n• Include discussion of context, innovation and invention, art elements and design principles, style and techniques.",
+      "questionText": "Pre-Christian (c.4000 BCE – 500 CE)\nDiscuss the development of stone carving throughout this period.\n• Refer to two specific examples of stone carving.\n• Include discussion of context, innovation and invention, art elements and design principles, style and techniques.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -22149,7 +22642,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2025 OL Q15",
-      "questionText": "Insular Art (c.500 – 1100s) Describe the use of colour and decoration in one named manuscript from this period.\n• Refer to two specific pages from this manuscript.\n• Include discussion of context, imagery, art elements and design principles, materials and techniques.",
+      "questionText": "Insular Art (c.500 – 1100s)\nDescribe the use of colour and decoration in one named manuscript from this period.\n• Refer to two specific pages from this manuscript.\n• Include discussion of context, imagery, art elements and design principles, materials and techniques.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -22172,7 +22665,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2025 OL Q16",
-      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s) Discuss the influence of the Normans on Irish architecture during this period.\n• Refer to two specific structures from this period.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
+      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s)\nDiscuss the influence of the Normans on Irish architecture during this period.\n• Refer to two specific structures from this period.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -22195,7 +22688,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2025 OL Q17",
-      "questionText": "Georgian period (c.1720 – 1800s) Describe the characteristics of Georgian architecture.\n• Refer to two named Georgian buildings.\n• Include discussion of context, art elements and design principles, structure, materials and techniques.",
+      "questionText": "Georgian period (c.1720 – 1800s)\nDescribe the characteristics of Georgian architecture.\n• Refer to two named Georgian buildings.\n• Include discussion of context, art elements and design principles, structure, materials and techniques.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -22218,7 +22711,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2025 OL Q18",
-      "questionText": "Irish Art and Modernism (c.1880 – 1960s) Discuss the influence of Impressionism on Irish painting.\n• Refer to named artists and two named artworks.\n• Include discussion of context, art elements and design principles, style and techniques.",
+      "questionText": "Irish Art and Modernism (c.1880 – 1960s)\nDiscuss the influence of Impressionism on Irish painting.\n• Refer to named artists and two named artworks.\n• Include discussion of context, art elements and design principles, style and techniques.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -22241,7 +22734,7 @@
       "level": "ordinary",
       "section": "C",
       "questionRef": "2025 OL Q19",
-      "questionText": "Post 1960 Describe how visual artists communicate ideas about social issues through their artwork during this period.\n• Refer to named artists and two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, media and areas of practice.",
+      "questionText": "Post 1960\nDescribe how visual artists communicate ideas about social issues through their artwork during this period.\n• Refer to named artists and two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, media and areas of practice.",
       "paperPage": 17,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
@@ -22255,6 +22748,2390 @@
       "conceptId": "art-2025-q19-ol-response",
       "taskRequirements": [
         "Post 1960 Describe how visual artists communicate ideas about social issues through their artwork during this period.; Refer to named artists and two named artworks.; Include discussion of context, subject matter, art elements and design principles, media and areas of practice."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-hl-q1-a",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q1(a)",
+      "questionText": "(a) Discuss this artwork using the following headings: colour, pattern, use of materials.",
+      "paperPage": 3,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2026-q1-hl-a",
+      "taskRequirements": [
+        "(a) Discuss this artwork using the following headings: colour, pattern, use of materials."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Discussion of the artwork illustrated using the given headings: colour, pattern, use of materials."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q1",
+        "title": "Official illustrations for Question 1",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "The Men / Na Fir by Ally Nolan is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-hl-q1-b",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q1(b)",
+      "questionText": "(b) What do you think the work is about? Give reasons for your answer.",
+      "paperPage": 3,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2026-q1-hl-b",
+      "taskRequirements": [
+        "(b) What do you think the work is about? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) Opinion on what the work is about. Reasons for the answer given."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q1",
+        "title": "Official illustrations for Question 1",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "The Men / Na Fir by Ally Nolan is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-hl-q2-a",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q2(a)",
+      "questionText": "(a) Discuss this painting using relevant art elements and design principles.",
+      "paperPage": 4,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2026-q2-hl-a",
+      "taskRequirements": [
+        "(a) Discuss this painting using relevant art elements and design principles."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Discussion of the painting illustrated using relevant art elements and design principles."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q2",
+        "title": "Official illustrations for Question 2",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014ALP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Memories of Home by Kate Beagan is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-hl-q2-b",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q2(b)",
+      "questionText": "(b) Explain the advantages of painting a landscape en plein air (out of doors).",
+      "paperPage": 4,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2026-q2-hl-b",
+      "taskRequirements": [
+        "(b) Explain the advantages of painting a landscape en plein air (out of doors)."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) Explanation of the advantages of painting a landscape en plein air (out of doors)."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q2",
+        "title": "Official illustrations for Question 2",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014ALP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Memories of Home by Kate Beagan is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-hl-q3-a",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q3(a)",
+      "questionText": "(a) What are the benefits for visual artists of having a guaranteed income through this scheme? Give reasons for your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 5,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-0",
+      "conceptId": "art-2026-q3-hl-a",
+      "taskRequirements": [
+        "(a) What are the benefits for visual artists of having a guaranteed income through this scheme? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "(a) Account of the benefits for visual artists of having a guaranteed income through the Basic Income for the Arts scheme. Reasons for the answer given."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4,
+              5
+            ]
+          }
+        }
+      ],
+      "stem": "Several years after launching a trial, Ireland is the first country in the world to make a Basic Income for the Arts scheme permanent, starting in 2026. This means that visual artists on the scheme will receive a guaranteed payment each week. This scheme is being praised worldwide. (Adapted from www.artnews.com)"
+    },
+    {
+      "id": "art-2026-hl-q3-b",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q3(b)",
+      "questionText": "(b) In your opinion, how will this scheme benefit Irish society? Give reasons for your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 5,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-0",
+      "conceptId": "art-2026-q3-hl-b",
+      "taskRequirements": [
+        "(b) In your opinion, how will this scheme benefit Irish society? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "(b) Opinion on how the scheme will benefit Irish society. Reasons for the answer given."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4,
+              5
+            ]
+          }
+        }
+      ],
+      "stem": "Several years after launching a trial, Ireland is the first country in the world to make a Basic Income for the Arts scheme permanent, starting in 2026. This means that visual artists on the scheme will receive a guaranteed payment each week. This scheme is being praised worldwide. (Adapted from www.artnews.com)"
+    },
+    {
+      "id": "art-2026-hl-q4-a",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q4(a)",
+      "questionText": "(a) Describe this artwork using the following headings: setting, colour, composition.",
+      "paperPage": 6,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-2",
+      "conceptId": "art-2026-q4-hl-a",
+      "taskRequirements": [
+        "(a) Describe this artwork using the following headings: setting, colour, composition."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Description of the artwork illustrated using the given headings: setting, colour, composition."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q4",
+        "title": "Official illustrations for Question 4",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014ALP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Royal Courts of Justice, London by Banksy is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-hl-q4-b",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q4(b)",
+      "questionText": "(b) In your opinion, what is the work about? Give reasons for your answer.",
+      "paperPage": 6,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-2",
+      "conceptId": "art-2026-q4-hl-b",
+      "taskRequirements": [
+        "(b) In your opinion, what is the work about? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) Opinion on what the work is about. Reasons for the answer given."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q4",
+        "title": "Official illustrations for Question 4",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014ALP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Royal Courts of Justice, London by Banksy is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-hl-q5-a",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q5(a)",
+      "questionText": "(a) Explain how a gallery or museum could continue to engage with the general public while closed. Justify your answer.",
+      "paperPage": 7,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-0",
+      "conceptId": "art-2026-q5-hl-a",
+      "taskRequirements": [
+        "(a) Explain how a gallery or museum could continue to engage with the general public while closed. Justify your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Explanation of how a gallery or museum could continue to engage with the general public while closed. Justification for the answer given."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "stem": "The Hugh Lane Gallery in Dublin and the Crawford Art Gallery in Cork are currently closed to the public for renovations."
+    },
+    {
+      "id": "art-2026-hl-q5-b",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q5(b)",
+      "questionText": "(b) In your opinion, what do galleries and museums need to consider when putting an artefact into storage? Give reasons for your answer.",
+      "paperPage": 7,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-0",
+      "conceptId": "art-2026-q5-hl-b",
+      "taskRequirements": [
+        "(b) In your opinion, what do galleries and museums need to consider when putting an artefact into storage? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) Opinion/Discussion on what galleries and museums need to consider when putting an artefact into storage. Reasons for the answer given."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "stem": "The Hugh Lane Gallery in Dublin and the Crawford Art Gallery in Cork are currently closed to the public for renovations."
+    },
+    {
+      "id": "art-2026-hl-q6-a",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q6(a)",
+      "questionText": "(a) Describe this sculpture using the following headings: form, location, scale.",
+      "paperPage": 8,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2026-q6-hl-a",
+      "taskRequirements": [
+        "(a) Describe this sculpture using the following headings: form, location, scale."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Description of the sculpture illustrated using the given headings: form, location, scale."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q6",
+        "title": "Official illustrations for Question 6",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014ALP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A Week at the Knees by Alex Chinneck is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-hl-q6-b",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q6(b)",
+      "questionText": "(b) In your opinion, what is the work about? Give reasons for your answer.",
+      "paperPage": 8,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2026-q6-hl-b",
+      "taskRequirements": [
+        "(b) In your opinion, what is the work about? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) Opinion on what the work is about. Reasons for the answer given."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q6",
+        "title": "Official illustrations for Question 6",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014ALP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A Week at the Knees by Alex Chinneck is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-hl-q7-a",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q7(a)",
+      "questionText": "(a) Describe this building using the following headings: form, use of materials, colour.",
+      "paperPage": 9,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
+      "topicId": "art-6-3",
+      "conceptId": "art-2026-q7-hl-a",
+      "taskRequirements": [
+        "(a) Describe this building using the following headings: form, use of materials, colour."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Description of the building illustrated using the given headings: form, use of materials, colour."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q7",
+        "title": "Official illustrations for Question 7",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Grillagh Water House by Patrick Bradley Architect is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-hl-q7-b",
+      "year": 2026,
+      "level": "higher",
+      "section": "A",
+      "questionRef": "2026 HL Q7(b)",
+      "questionText": "(b) Discuss the relationship between the building and the landscape. Use evidence from the illustrations to support your answer.",
+      "paperPage": 9,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
+      "topicId": "art-6-3",
+      "conceptId": "art-2026-q7-hl-b",
+      "taskRequirements": [
+        "(b) Discuss the relationship between the building and the landscape. Use evidence from the illustrations to support your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) Discussion of the relationship between the building and the landscape using evidence from the illustration to support the answer given."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q7",
+        "title": "Official illustrations for Question 7",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Grillagh Water House by Patrick Bradley Architect is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-hl-q8",
+      "year": 2026,
+      "level": "higher",
+      "section": "B",
+      "questionRef": "2026 HL Q8",
+      "questionText": "Romanesque and Gothic (c.1000 – 1500s)\nHow important were space and light in the design of Gothic Cathedrals?\n• Refer in your answer to specific examples.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-0",
+      "conceptId": "art-2026-q8-hl-response",
+      "taskRequirements": [
+        "How important were space and light in the design of Gothic Cathedrals?",
+        "Refer in your answer to specific examples.",
+        "Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-hl-q9",
+      "year": 2026,
+      "level": "higher",
+      "section": "B",
+      "questionRef": "2026 HL Q9",
+      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s)\nDescribe and discuss the development of sculpture during this period.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-1",
+      "conceptId": "art-2026-q9-hl-response",
+      "taskRequirements": [
+        "Describe and discuss the development of sculpture during this period.",
+        "Refer in your answer to named artists and their artworks.",
+        "Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-hl-q10",
+      "year": 2026,
+      "level": "higher",
+      "section": "B",
+      "questionRef": "2026 HL Q10",
+      "questionText": "Baroque (c.1600 – 1700s)\nDescribe and discuss how Baroque art and/or architecture convey ideas of grandeur, power, and spirituality.\n• Refer to named artists and their artworks and/or architects and their architecture.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-2",
+      "conceptId": "art-2026-q10-hl-response",
+      "taskRequirements": [
+        "Describe and discuss how Baroque art and/or architecture convey ideas of grandeur, power, and spirituality.",
+        "Refer to named artists and their artworks and/or architects and their architecture.",
+        "Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-hl-q11",
+      "year": 2026,
+      "level": "higher",
+      "section": "B",
+      "questionRef": "2026 HL Q11",
+      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s)\nDescribe and discuss how artists reflected the social realities of 19th-century Europe in their work.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, subject matter, art elements and design principles, media and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-3",
+      "conceptId": "art-2026-q11-hl-response",
+      "taskRequirements": [
+        "Describe and discuss how artists reflected the social realities of 19th-century Europe in their work.",
+        "Refer in your answer to named artists and their artworks.",
+        "Include discussion of context, subject matter, art elements and design principles, media and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-hl-q12",
+      "year": 2026,
+      "level": "higher",
+      "section": "B",
+      "questionRef": "2026 HL Q12",
+      "questionText": "Modernism (c.1900 – 1960s)\nExamine the influence of Primitivism on the art of this period.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-4",
+      "conceptId": "art-2026-q12-hl-response",
+      "taskRequirements": [
+        "Examine the influence of Primitivism on the art of this period.",
+        "Refer in your answer to named artists and their artworks.",
+        "Include discussion of context, innovation and invention, art elements and design principles, media and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-hl-q13",
+      "year": 2026,
+      "level": "higher",
+      "section": "B",
+      "questionRef": "2026 HL Q13",
+      "questionText": "Post 1960\nCompare and contrast the work of two visual artists of this period who have explored social issues in their artwork.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of subject matter, areas of practice, art elements and design principles, media and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-5",
+      "conceptId": "art-2026-q13-hl-response",
+      "taskRequirements": [
+        "Compare and contrast the work of two visual artists of this period who have explored social issues in their artwork.",
+        "Refer in your answer to named artists and their artworks.",
+        "Include discussion of subject matter, areas of practice, art elements and design principles, media and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-hl-q14",
+      "year": 2026,
+      "level": "higher",
+      "section": "C",
+      "questionRef": "2026 HL Q14",
+      "questionText": "Pre-Christian (c.4000 BCE – 500 CE)\nIn your opinion, can the people who created Ireland’s megalithic monuments be considered inventors, engineers and artists?\n• Refer in your answer to named examples.\n• Include discussion of context, innovation and invention, materials and techniques, art elements and design principles.",
+      "paperPage": 17,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-0",
+      "conceptId": "art-2026-q14-hl-response",
+      "taskRequirements": [
+        "In your opinion, can the people who created Ireland’s megalithic monuments be considered inventors, engineers and artists?",
+        "Refer in your answer to named examples.",
+        "Include discussion of context, innovation and invention, materials and techniques, art elements and design principles."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-hl-q15",
+      "year": 2026,
+      "level": "higher",
+      "section": "C",
+      "questionRef": "2026 HL Q15",
+      "questionText": "Insular Art (c.500 – 1100s)\nCompare and contrast one manuscript from this period with one metal artefact from this period.\n• Refer in your answer to named artefacts.\n• Include discussion of context, innovation and invention, materials and techniques, art elements and design principles.",
+      "paperPage": 17,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-1",
+      "conceptId": "art-2026-q15-hl-response",
+      "taskRequirements": [
+        "Compare and contrast one manuscript from this period with one metal artefact from this period.",
+        "Refer in your answer to named artefacts.",
+        "Include discussion of context, innovation and invention, materials and techniques, art elements and design principles."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-hl-q16",
+      "year": 2026,
+      "level": "higher",
+      "section": "C",
+      "questionRef": "2026 HL Q16",
+      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s)\nHow did patronage influence Late Medieval Irish architecture and/or art?\n• Refer in your answer to named examples.\n• Include discussion of context, innovation and invention, materials and techniques, art elements and design principles.",
+      "paperPage": 17,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-2",
+      "conceptId": "art-2026-q16-hl-response",
+      "taskRequirements": [
+        "How did patronage influence Late Medieval Irish architecture and/or art?",
+        "Refer in your answer to named examples.",
+        "Include discussion of context, innovation and invention, materials and techniques, art elements and design principles."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-hl-q17",
+      "year": 2026,
+      "level": "higher",
+      "section": "C",
+      "questionRef": "2026 HL Q17",
+      "questionText": "Georgian period (c.1720 – 1800s)\nWhat were the key influences that shaped the Irish art and/or Irish architecture of this period?\n• Refer in your answer to named examples.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
+      "paperPage": 17,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-3",
+      "conceptId": "art-2026-q17-hl-response",
+      "taskRequirements": [
+        "What were the key influences that shaped the Irish art and/or Irish architecture of this period?",
+        "Refer in your answer to named examples.",
+        "Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-hl-q18",
+      "year": 2026,
+      "level": "higher",
+      "section": "C",
+      "questionRef": "2026 HL Q18",
+      "questionText": "Irish Art and Modernism (c.1880 – 1960s)\nCompare and contrast the artwork of two Irish female Modernist artists from this period.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, art elements and design principles, innovation and invention, media and techniques.",
+      "paperPage": 17,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-4",
+      "conceptId": "art-2026-q18-hl-response",
+      "taskRequirements": [
+        "Compare and contrast the artwork of two Irish female Modernist artists from this period.",
+        "Refer in your answer to named artists and their artworks.",
+        "Include discussion of context, art elements and design principles, innovation and invention, media and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-hl-q19",
+      "year": 2026,
+      "level": "higher",
+      "section": "C",
+      "questionRef": "2026 HL Q19",
+      "questionText": "Post 1960\nDescribe and discuss the artwork of two Irish visual artists from this period that explore the theme of identity.\n• Refer in your answer to named artists and their artworks.\n• Include discussion of context, art elements and design principles, innovation and invention, media and techniques.",
+      "paperPage": 17,
+      "paperFileid": "LC014ALP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-5",
+      "conceptId": "art-2026-q19-hl-response",
+      "taskRequirements": [
+        "Describe and discuss the artwork of two Irish visual artists from this period that explore the theme of identity.",
+        "Refer in your answer to named artists and their artworks.",
+        "Include discussion of context, art elements and design principles, innovation and invention, media and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-ol-q1-a",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q1(a)",
+      "questionText": "(a) Describe this painting using the following headings: subject matter, composition, colour.",
+      "paperPage": 3,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2026-q1-ol-a",
+      "taskRequirements": [
+        "(a) Describe this painting using the following headings: subject matter, composition, colour."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Description of the painting using the following headings: subject matter, composition, colour."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q1",
+        "title": "Official illustrations for Question 1",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014GLP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Portrait of Sir David Attenborough by David Cobley is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-ol-q1-b",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q1(b)",
+      "questionText": "(b) This painting is a portrait of Sir David Attenborough. What does it tell us about him? Give reasons for your answer using evidence from the illustration shown.",
+      "paperPage": 3,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2026-q1-ol-b",
+      "taskRequirements": [
+        "(b) This painting is a portrait of Sir David Attenborough. What does it tell us about him? Give reasons for your answer using evidence from the illustration shown."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) This painting is a portrait of Sir David Attenborough. What does it tell us about him? Give reasons for your answer using evidence from the illustration shown."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q1",
+        "title": "Official illustrations for Question 1",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014GLP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Portrait of Sir David Attenborough by David Cobley is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-ol-q2-a",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q2(a)",
+      "questionText": "(a) Discuss this shopping bag using the following headings: pattern, colour, mood.",
+      "paperPage": 4,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2026-q2-ol-a",
+      "taskRequirements": [
+        "(a) Discuss this shopping bag using the following headings: pattern, colour, mood."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Discussion of the shopping bag using the following headings: pattern, colour, mood."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q2",
+        "title": "Official illustrations for Question 2",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014GLP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A shopping bag from IKEA, designed by Diana Ordóñez, is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-ol-q2-b",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q2(b)",
+      "questionText": "(b) In your opinion, what imagery inspired this shopping bag? Give reasons for your answer using evidence from the illustration shown.",
+      "paperPage": 4,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2026-q2-ol-b",
+      "taskRequirements": [
+        "(b) In your opinion, what imagery inspired this shopping bag? Give reasons for your answer using evidence from the illustration shown."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) In your opinion, what imagery inspired this shopping bag? Give reasons for your answer using evidence from the illustration shown."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q2",
+        "title": "Official illustrations for Question 2",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014GLP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A shopping bag from IKEA, designed by Diana Ordóñez, is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-ol-q3-a",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q3(a)",
+      "questionText": "(a) What would you include in an Arts Section (with art/craft/design) on a news programme in Ireland? Give examples.",
+      "paperPage": 5,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-0",
+      "conceptId": "art-2026-q3-ol-a",
+      "taskRequirements": [
+        "(a) What would you include in an Arts Section (with art/craft/design) on a news programme in Ireland? Give examples."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) What would you include in an Arts Section (with art/craft/design) on a news programme in Ireland? Give examples."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "stem": "In an interview in August 2025, actor Brendan Gleeson called for an Arts Section similar to the Sports Section, to be included in news programmes in Ireland. Adapted from www.thejournal.ie"
+    },
+    {
+      "id": "art-2026-ol-q3-b",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q3(b)",
+      "questionText": "(b) Why would an Arts Section (with art/craft/design) on news programmes be a good idea? Give reasons for your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-0",
+      "conceptId": "art-2026-q3-ol-b",
+      "taskRequirements": [
+        "(b) Why would an Arts Section (with art/craft/design) on news programmes be a good idea? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) Why would an Arts Section (with art/craft/design) on news programmes be a good idea? Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "stem": "In an interview in August 2025, actor Brendan Gleeson called for an Arts Section similar to the Sports Section, to be included in news programmes in Ireland. Adapted from www.thejournal.ie"
+    },
+    {
+      "id": "art-2026-ol-q4-a",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q4(a)",
+      "questionText": "(a) Describe this artwork using the following headings: use of materials, colour, space/composition.",
+      "paperPage": 6,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-3",
+      "conceptId": "art-2026-q4-ol-a",
+      "taskRequirements": [
+        "(a) Describe this artwork using the following headings: use of materials, colour, space/composition."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Description of the artwork using the following headings: use of materials, colour, space/composition."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q4",
+        "title": "Official illustrations for Question 4",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014GLP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Mar, an artwork by Alejandro Durán, is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-ol-q4-b",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q4(b)",
+      "questionText": "(b) What do you think this artwork is about? Give reasons for your answer.",
+      "paperPage": 6,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-3",
+      "conceptId": "art-2026-q4-ol-b",
+      "taskRequirements": [
+        "(b) What do you think this artwork is about? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) What do you think the artwork is about? Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q4",
+        "title": "Official illustrations for Question 4",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014GLP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Mar, an artwork by Alejandro Durán, is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-ol-q5-a",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q5(a)",
+      "questionText": "(a) Describe this artwork using the following headings: subject matter, colour, composition.",
+      "paperPage": 7,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-3",
+      "conceptId": "art-2026-q5-ol-a",
+      "taskRequirements": [
+        "(a) Describe this artwork using the following headings: subject matter, colour, composition."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Description of the artwork using the following headings: subject matter, colour, composition."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q5",
+        "title": "Official illustrations for Question 5",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014GLP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A mural called Balor, is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-ol-q5-b",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q5(b)",
+      "questionText": "(b) Why do you think murals are important to Irish towns and cities? Give reasons for your answer.",
+      "paperPage": 7,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-3",
+      "conceptId": "art-2026-q5-ol-b",
+      "taskRequirements": [
+        "(b) Why do you think murals are important to Irish towns and cities? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) Why do you think murals are important to Irish towns and cities? Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q5",
+        "title": "Official illustrations for Question 5",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014GLP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A mural called Balor, is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-ol-q6-a",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q6(a)",
+      "questionText": "(a) Why is it important for young people to learn about creative careers (for example: designers / fine artists / craftspeople)? Give reasons for your answer.",
+      "paperPage": 8,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-0",
+      "conceptId": "art-2026-q6-ol-a",
+      "taskRequirements": [
+        "(a) Why is it important for young people to learn about creative careers (for example: designers / fine artists / craftspeople)? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Why is it important for young people to learn about creative careers (for example: designers / fine artists / craftspeople)? Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "stem": "Creative Calling: Careers for the Curious, had a stand at the Higher Options and WorldSkills Ireland 2025 event in the RDS. It featured live demonstrations and visual displays, highlighting the wide range of creative careers in the arts, cultural and creative industries. Adapted from www.screenireland.ie"
+    },
+    {
+      "id": "art-2026-ol-q6-b",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q6(b)",
+      "questionText": "(b) Describe how creative careers (for example: designers / fine artists / craftspeople) can have a positive impact on a business.",
+      "paperPage": 8,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-0",
+      "conceptId": "art-2026-q6-ol-b",
+      "taskRequirements": [
+        "(b) Describe how creative careers (for example: designers / fine artists / craftspeople) can have a positive impact on a business."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) Description of how creative careers (for example: designers / fine artists / craftspeople) can have a positive impact on a business."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "stem": "Creative Calling: Careers for the Curious, had a stand at the Higher Options and WorldSkills Ireland 2025 event in the RDS. It featured live demonstrations and visual displays, highlighting the wide range of creative careers in the arts, cultural and creative industries. Adapted from www.screenireland.ie"
+    },
+    {
+      "id": "art-2026-ol-q7-a",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q7(a)",
+      "questionText": "(a) Discuss this artwork using the following headings: imagery, colour, pattern.",
+      "paperPage": 9,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2026-q7-ol-a",
+      "taskRequirements": [
+        "(a) Discuss this artwork using the following headings: imagery, colour, pattern."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Discussion of the artwork using the following headings: imagery, colour, pattern."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q7",
+        "title": "Official illustrations for Question 7",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014GLP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A wallpaper design called Fruit Looters is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-ol-q7-b",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2026 OL Q7(b)",
+      "questionText": "(b) What kind of interior or room do you think that this wallpaper would suit? Give reasons for your answer.",
+      "paperPage": 9,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2026-q7-ol-b",
+      "taskRequirements": [
+        "(b) What kind of interior or room do you think that this wallpaper would suit? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) What kind of interior or room do you think this wallpaper would suit? Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q7",
+        "title": "Official illustrations for Question 7",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014GLP004BV",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2026 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A wallpaper design called Fruit Looters is illustrated on the accompanying sheet."
+    },
+    {
+      "id": "art-2026-ol-q8",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "B",
+      "questionRef": "2026 OL Q8",
+      "questionText": "Romanesque and Gothic (c.1000 – 1500s)\nDescribe and discuss Romanesque sculpture during this period.\n• Refer to specific examples in your answer.\n• Include discussion of context, innovation and invention, subject matter, art elements and design principles.",
+      "paperPage": 11,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-0",
+      "conceptId": "art-2026-q8-ol-response",
+      "taskRequirements": [
+        "Describe and discuss Romanesque sculpture during this period.",
+        "Refer to specific examples in your answer.",
+        "Include discussion of context, innovation and invention, subject matter, art elements and design principles."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-ol-q9",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "B",
+      "questionRef": "2026 OL Q9",
+      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s)\nGive an account of Michelangelo’s work.\n• Refer to two named artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-1",
+      "conceptId": "art-2026-q9-ol-response",
+      "taskRequirements": [
+        "Give an account of Michelangelo’s work.",
+        "Refer to two named artworks.",
+        "Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-ol-q10",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "B",
+      "questionRef": "2026 OL Q10",
+      "questionText": "Baroque (c.1600 – 1700s)\nDescribe and discuss the main characteristics of Baroque Art.\n• Refer to named artists and two named artworks.\n• Include discussion of context, subject matter, innovation and invention, art elements and design principles.",
+      "paperPage": 11,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-2",
+      "conceptId": "art-2026-q10-ol-response",
+      "taskRequirements": [
+        "Describe and discuss the main characteristics of Baroque Art.",
+        "Refer to named artists and two named artworks.",
+        "Include discussion of context, subject matter, innovation and invention, art elements and design principles."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-ol-q11",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "B",
+      "questionRef": "2026 OL Q11",
+      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s)\nDescribe and discuss how Claude Monet’s paintings were seen as new and innovative.\n• Refer to two named artworks.\n• Include discussion of context, subject matter, art elements and design principles, materials and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-3",
+      "conceptId": "art-2026-q11-ol-response",
+      "taskRequirements": [
+        "Describe and discuss how Claude Monet’s paintings were seen as new and innovative.",
+        "Refer to two named artworks.",
+        "Include discussion of context, subject matter, art elements and design principles, materials and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-ol-q12",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "B",
+      "questionRef": "2026 OL Q12",
+      "questionText": "Modernism (c.1900 – 1960s)\nExamine the work of one of the following artists: Pablo Picasso, Salvador Dalí, Edvard Munch, Käthe Kollwitz.\n• Refer to your selected artist and two of their named artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, materials and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-4",
+      "conceptId": "art-2026-q12-ol-response",
+      "taskRequirements": [
+        "Examine the work of one of the following artists: Pablo Picasso, Salvador Dalí, Edvard Munch, Käthe Kollwitz.",
+        "Refer to your selected artist and two of their named artworks.",
+        "Include discussion of context, innovation and invention, art elements and design principles, materials and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-ol-q13",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "B",
+      "questionRef": "2026 OL Q13",
+      "questionText": "Post 1960\nDescribe and discuss the work of one artist whose artworks communicate ideas about social issues.\n• Refer to one named artist and two named artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-5",
+      "conceptId": "art-2026-q13-ol-response",
+      "taskRequirements": [
+        "Describe and discuss the work of one artist whose artworks communicate ideas about social issues.",
+        "Refer to one named artist and two named artworks.",
+        "Include discussion of context, innovation and invention, art elements and design principles, media and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-ol-q14",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "C",
+      "questionRef": "2026 OL Q14",
+      "questionText": "Pre-Christian (c.4000 BCE – 500 CE)\nDescribe and discuss the development of metalwork during this period.\n• Refer to two specific metal artefacts from this period.\n• Include discussion of context, innovation and invention, art elements and design principles, style and techniques.",
+      "paperPage": 17,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-0",
+      "conceptId": "art-2026-q14-ol-response",
+      "taskRequirements": [
+        "Describe and discuss the development of metalwork during this period.",
+        "Refer to two specific metal artefacts from this period.",
+        "Include discussion of context, innovation and invention, art elements and design principles, style and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-ol-q15",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "C",
+      "questionRef": "2026 OL Q15",
+      "questionText": "Insular Art (c.500 – 1100s)\nDescribe and discuss one chalice and one brooch from this period.\n• Refer to two named artefacts.\n• Include discussion of context, innovation and invention, art elements and design principles, techniques and decoration.",
+      "paperPage": 17,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-1",
+      "conceptId": "art-2026-q15-ol-response",
+      "taskRequirements": [
+        "Describe and discuss one chalice and one brooch from this period.",
+        "Refer to two named artefacts.",
+        "Include discussion of context, innovation and invention, art elements and design principles, techniques and decoration."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-ol-q16",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "C",
+      "questionRef": "2026 OL Q16",
+      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s)\nHow did religion influence the art and/or architecture of Late Medieval Ireland?\n• Refer to two specific examples from the Late Medieval period.\n• Include discussion of context, art elements and design principles, decoration, materials and techniques.",
+      "paperPage": 17,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-2",
+      "conceptId": "art-2026-q16-ol-response",
+      "taskRequirements": [
+        "How did religion influence the art and/or architecture of Late Medieval Ireland?",
+        "Refer to two specific examples from the Late Medieval period.",
+        "Include discussion of context, art elements and design principles, decoration, materials and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-ol-q17",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "C",
+      "questionRef": "2026 OL Q17",
+      "questionText": "Georgian period (c.1720 – 1800s)\nDescribe and discuss the main features of Irish Georgian country houses.\n• Refer in your answer to two named examples.\n• Include discussion of context, art elements and design principles, structure, materials and techniques.",
+      "paperPage": 17,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-3",
+      "conceptId": "art-2026-q17-ol-response",
+      "taskRequirements": [
+        "Describe and discuss the main features of Irish Georgian country houses.",
+        "Refer in your answer to two named examples.",
+        "Include discussion of context, art elements and design principles, structure, materials and techniques."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-ol-q18",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "C",
+      "questionRef": "2026 OL Q18",
+      "questionText": "Irish Art and Modernism (c.1880 – 1960s)\nHow did Jack B. Yeats communicate emotion and ideas in his paintings?\n• Refer to two named artworks.\n• Include discussion of context, subject matter, style, art elements and design principles.",
+      "paperPage": 17,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-4",
+      "conceptId": "art-2026-q18-ol-response",
+      "taskRequirements": [
+        "How did Jack B. Yeats communicate emotion and ideas in his paintings?",
+        "Refer to two named artworks.",
+        "Include discussion of context, subject matter, style, art elements and design principles."
+      ],
+      "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2026-ol-q19",
+      "year": 2026,
+      "level": "ordinary",
+      "section": "C",
+      "questionRef": "2026 OL Q19",
+      "questionText": "Post 1960\nDescribe and discuss the work of one female Irish artist from this period.\n• Refer to two named artworks.\n• Include discussion of context, innovation and invention, art elements and design principles, media and areas of practice.",
+      "paperPage": 17,
+      "paperFileid": "LC014GLP000EV",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-5",
+      "conceptId": "art-2026-q19-ol-response",
+      "taskRequirements": [
+        "Describe and discuss the work of one female Irish artist from this period.",
+        "Refer to two named artworks.",
+        "Include discussion of context, innovation and invention, art elements and design principles, media and areas of practice."
       ],
       "assessment": "current-long-descriptors"
     }

@@ -1,6 +1,7 @@
 /** @license SPDX-License-Identifier: Apache-2.0 */
 import { describe, expect, it } from 'vitest';
 import census from '../scripts/markbank/authored/art-census.json';
+import authored from '../components/MarkBank/cards/art/authored.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { ART_STRANDS } from '../components/MarkBank/deck';
@@ -9,17 +10,17 @@ import { artMarks, suggestRubricGrade } from '../components/MarkBank/SessionScre
 
 const CARDS = [...HIGHER, ...ORDINARY];
 
-describe('complete 2021–2025 Art corpus', () => {
-  it('cards every separately marked task on all ten papers', () => {
-    expect(HIGHER).toHaveLength(206);
-    expect(ORDINARY).toHaveLength(192);
-    expect(CARDS).toHaveLength(398);
-    expect(new Set(CARDS.map(card => card.id)).size).toBe(398);
+describe('complete 2021–2026 Art corpus', () => {
+  it('cards every separately marked task on all twelve papers', () => {
+    expect(HIGHER).toHaveLength(232);
+    expect(ORDINARY).toHaveLength(218);
+    expect(CARDS).toHaveLength(450);
+    expect(new Set(CARDS.map(card => card.id)).size).toBe(450);
 
     const censusIds = census.papers.flatMap(paper => paper.cards.map(card => card.cardId));
     expect([...CARDS.map(card => card.id)].sort()).toEqual([...censusIds].sort());
-    expect(census.papers).toHaveLength(10);
-    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(398);
+    expect(census.papers).toHaveLength(12);
+    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(450);
   });
 
   it('keeps the audited task census for each paper', () => {
@@ -34,6 +35,8 @@ describe('complete 2021–2025 Art corpus', () => {
       '2024-ordinary': 26,
       '2025-higher': 30,
       '2025-ordinary': 26,
+      '2026-higher': 26,
+      '2026-ordinary': 26,
     } as const;
     for (const [paper, count] of Object.entries(expected)) {
       const [year, level] = paper.split('-');
@@ -90,6 +93,14 @@ describe('complete 2021–2025 Art corpus', () => {
       expect(new Set(family.map(card => card.topicId)).size, ref).toBeGreaterThan(1);
       expect(new Set(family.map(card => card.questionText)).size, ref).toBe(1);
     }
+
+    // 2026 OL Q12: four Modernist artists under one heading, so one card with
+    // the printed list; it was first built as one card, so it has the plain id.
+    const modernists = ORDINARY.filter(card => card.questionRef.startsWith('2026 OL Q12'));
+    expect(modernists.map(card => card.id)).toEqual(['art-2026-ol-q12']);
+    expect(modernists[0].questionText).toContain(
+      'Examine the work of one of the following artists: Pablo Picasso, Salvador Dalí, Edvard Munch, Käthe Kollwitz.');
+    expect(modernists[0].topicId).toBe('art-4-4');
 
     // Guard: no two cards for one printed task (same paper and question).
     const seen = new Map<string, string>();
@@ -154,8 +165,8 @@ describe('complete 2021–2025 Art corpus', () => {
     const requiringIllustration = CARDS.filter(card =>
       /accompanying sheet/i.test(`${card.stem ?? ''} ${card.questionText}`));
     const withIllustration = CARDS.filter(card => card.sourceMaterial);
-    expect(requiringIllustration).toHaveLength(140);
-    expect(withIllustration).toHaveLength(147);
+    expect(requiringIllustration).toHaveLength(160);
+    expect(withIllustration).toHaveLength(167);
     expect(requiringIllustration.filter(card => !card.sourceMaterial).map(card => card.id)).toEqual([]);
 
     for (const card of withIllustration) {
@@ -178,5 +189,57 @@ describe('complete 2021–2025 Art corpus', () => {
     expect(displayedTopics).toHaveLength(17);
     expect(displayedTopics).not.toContain('art-6-4');
     expect(new Set(CARDS.map(card => card.topicId))).toEqual(new Set(displayedTopics));
+  });
+
+  it('shows only the scheme\'s printed wording under the SEC\'s name on an audited year', () => {
+    type Printed = {
+      short: { lead: string; bands: Record<string, string[]> };
+      long: Array<{ id: string; label: string; lead: string; bands: Record<string, { marks: number[]; guidance: string[] }> }>;
+      notes: Record<string, { text: string[] }>;
+    };
+    const printed = authored.descriptors as Record<string, Printed>;
+    const audited = new Set<number>(authored.auditedYears);
+    expect([...audited]).toEqual([2026]);
+    // The condensed wording these cards used to show is gone from them.
+    const condensed = 'Limited coherence, focus, visual-art terminology and/or relevant sketches.';
+    const written = 'Understand the demands of the chosen question and build the response around it.';
+
+    const auditedCards = CARDS.filter(card => audited.has(card.year));
+    expect(auditedCards).toHaveLength(52);
+    for (const card of auditedCards) {
+      if (card.rubric.system !== 'art') throw new Error(`${card.id}: wrong rubric`);
+      const scheme = printed[`${card.year}-${card.level}`];
+      const raw = authored.cards.find(entry => entry.id === card.id)!;
+      expect(JSON.stringify(card.rubric), card.id).not.toContain(condensed);
+      expect(JSON.stringify(card.rubric), card.id).not.toContain(written);
+      if (card.section === 'A') {
+        const [criterion] = card.rubric.criteria;
+        expect(criterion.guidance).toEqual(raw.criteria![0].guidance);
+        for (const band of criterion.bands!) {
+          expect(band.lead).toBe(scheme.short.lead);
+          expect(band.guidance).toEqual(scheme.short.bands[band.level]);
+        }
+        expect(card.rubric.markingGuideNote).toBe(scheme.notes['current-short-descriptors'].text.join(' '));
+      } else {
+        expect(card.rubric.criteria.map(criterion => criterion.label)).toEqual(scheme.long.map(entry => entry.label));
+        card.rubric.criteria.forEach((criterion, index) => {
+          expect(criterion.guidance).toEqual([]);
+          for (const band of criterion.bands!) {
+            expect(band.lead).toBe(scheme.long[index].lead);
+            expect(band.guidance).toEqual(scheme.long[index].bands[band.level].guidance);
+            expect(band.marks).toEqual(scheme.long[index].bands[band.level].marks);
+          }
+        });
+        expect(card.rubric.markingGuideNote).toBe(scheme.notes['current-long-descriptors'].text.join(' '));
+      }
+    }
+
+    // Our guidance is on every card, apart from the SEC's; an unaudited card
+    // shows no note under the SEC's name.
+    for (const card of CARDS) {
+      if (card.rubric.system !== 'art') throw new Error(`${card.id}: wrong rubric`);
+      expect(card.rubric.practiceNotes?.length, card.id).toBeGreaterThan(0);
+      if (!audited.has(card.year)) expect(card.rubric.markingGuideNote, card.id).toBe('');
+    }
   });
 });

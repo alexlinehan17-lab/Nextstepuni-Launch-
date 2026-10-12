@@ -760,13 +760,16 @@ const idHash = (ids: readonly string[]) => createHash('sha256')
  * the per-option cards of a printed choice whose options share one Topic Atlas
  * heading, and every choose-two route; each withdrawn ID is an explicit
  * cardAliases.ts key resolving in one step to the card for its own part, so the
- * frozen identity = live Art IDs + Art alias keys. No Art card is added. */
+ * frozen identity = live 2021–2025 Art IDs + Art alias keys. The 2026 papers
+ * are added on top (ART_2026 below), never folded into the frozen hashes. */
 const artAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('art-'));
+const isArt2026 = (id: string) => id.startsWith('art-2026-');
+const ART_2026 = { higher: 26, ordinary: 26 } as const;
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (!name.startsWith('art:')) return ids;
   const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
-  return [...ids, ...artAliasIds.filter(id => id.includes(level))];
+  return [...ids.filter(id => !isArt2026(id)), ...artAliasIds.filter(id => id.includes(level))];
 };
 
 describe('Mark Bank card preservation', () => {
@@ -792,8 +795,17 @@ describe('Mark Bank card preservation', () => {
     }
     const aliased = (level: string) => artAliasIds.filter(id => id.includes(level)).length;
     expect([aliased('-hl-'), aliased('-ol-')]).toEqual([16, 48]);
-    expect(ART_HIGHER).toHaveLength(222 - aliased('-hl-'));
-    expect(ART_ORDINARY).toHaveLength(240 - aliased('-ol-'));
+    expect(ART_HIGHER).toHaveLength(222 - aliased('-hl-') + ART_2026.higher);
+    expect(ART_ORDINARY).toHaveLength(240 - aliased('-ol-') + ART_2026.ordinary);
+  });
+
+  it('adds the 2026 Art papers on top of the frozen 2021–2025 identity', () => {
+    // No 2026 id was ever aliased or frozen; each is a new card for a printed task.
+    const added = [...ART_HIGHER, ...ART_ORDINARY].filter(card => isArt2026(card.id));
+    expect(added.filter(card => card.level === 'higher')).toHaveLength(ART_2026.higher);
+    expect(added.filter(card => card.level === 'ordinary')).toHaveLength(ART_2026.ordinary);
+    expect(added.every(card => card.year === 2026)).toBe(true);
+    expect(artAliasIds.filter(isArt2026)).toEqual([]);
   });
 
   it('protects the complete current bank', () => {
@@ -807,7 +819,8 @@ describe('Mark Bank card preservation', () => {
     // Frozen form: every frozen ID, live or aliased. Live form: the frozen bank
     // less the Art per-option cards withdrawn onto one card per printed task.
     expect(decks.reduce((total, [name, cards]) => total + frozenIds(name, cards).length, 0)).toBe(19_328);
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328 - artAliasIds.length);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
+      .toBe(19_328 - artAliasIds.length + ART_2026.higher + ART_2026.ordinary);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -866,7 +879,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('ukrainian:')
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
-      .reduce((total, [, cards]) => total + cards.length, 0);
+      // The 2026 Art papers are new cards, not part of this earlier bank.
+      .reduce((total, [, cards]) => total + cards.filter(card => !isArt2026(card.id)).length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
 

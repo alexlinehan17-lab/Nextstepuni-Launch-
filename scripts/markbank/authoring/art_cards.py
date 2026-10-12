@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build the complete 2021–2025 Art Mark Bank corpus.
+"""Build the complete 2021–2026 Art Mark Bank corpus.
 
 The question papers supply the exact prompts.  The marking schemes supply the
-published component allocations (2021–2022) and descriptor bands (2023–2025).
+published component allocations (2021–2022) and descriptor bands (2023–2026).
 The separate SEC illustration sheets remain page images from Paper Trail; the
 script records only their official file identity and page number.
 
@@ -19,10 +19,16 @@ files under its own heading.  A choose-N (N >= 2) list is always one card.  The
 four-criterion Section B/C essay remains intact because the SEC applies that
 rubric holistically.
 
-The complete corpus is therefore 398 cards across ten papers:
+The complete corpus is therefore 450 cards across twelve papers:
 
-  * Higher Level:   62 + 62 + 26 + 26 + 30 = 206 cards
-  * Ordinary Level: 57 + 57 + 26 + 26 + 26 = 192 cards
+  * Higher Level:   62 + 62 + 26 + 26 + 30 + 26 = 232 cards
+  * Ordinary Level: 57 + 57 + 26 + 26 + 26 + 26 = 218 cards
+
+An audited year (AUDITED_YEARS) shows only the SEC's printed wording under the
+SEC's name: the descriptor bullets, criterion labels, scheme rows and marking
+notes are lifted from the scheme page by art_printed.py, the task check is the
+paper's own lines, and NextStepUni's guidance is kept apart as practice notes.
+tests/test_art_sec_wording.py re-finds every such string on its page.
 
 Run:
 
@@ -46,6 +52,8 @@ from typing import Any, Iterable
 
 import fitz
 
+import art_printed
+
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -54,7 +62,12 @@ SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'art', 'schemes')
 OUT = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'art', 'authored.json')
 CENSUS_OUT = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.json')
 
-YEARS = tuple(range(2021, 2026))
+YEARS = tuple(range(2021, 2027))
+
+# Years whose SEC-attributed strings are all lifted from the printed page and
+# gated by tests/test_art_sec_wording.py. The other years keep the earlier
+# condensed descriptors (factory.ts) until their own audit.
+AUDITED_YEARS = (2026,)
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
@@ -70,6 +83,8 @@ EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
     (2024, 'ordinary'): 19,
     (2025, 'higher'): 19,
     (2025, 'ordinary'): 19,
+    (2026, 'higher'): 19,
+    (2026, 'ordinary'): 19,
 }
 
 EXPECTED_CARDS_BY_YEAR_LEVEL = {
@@ -83,6 +98,8 @@ EXPECTED_CARDS_BY_YEAR_LEVEL = {
     (2024, 'ordinary'): 26,
     (2025, 'higher'): 30,
     (2025, 'ordinary'): 26,
+    (2026, 'higher'): 26,
+    (2026, 'ordinary'): 26,
 }
 
 # A fixed choice printed by the SEC (one of these artists, works, buildings or
@@ -183,6 +200,14 @@ PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
         ('cubism', 'Cubism'),
         ('bauhaus', 'Bauhaus'),
         ('surrealism', 'Surrealism'),
+    ),
+    # Four Modernist artists under the one Modernism heading: one card. It was
+    # first built as one card, so it has no earlier per-option id to keep.
+    (2026, 'ordinary', 12): (
+        ('pablo-picasso', 'Pablo Picasso'),
+        ('salvador-dali', 'Salvador Dalí'),
+        ('edvard-munch', 'Edvard Munch'),
+        ('kathe-kollwitz', 'Käthe Kollwitz'),
     ),
 }
 
@@ -295,6 +320,8 @@ ILLUSTRATION_PAGES: dict[tuple[int, str], dict[int, int]] = {
     (2024, 'ordinary'): {1: 1, 7: 1, 3: 2, 4: 2, 5: 2},
     (2025, 'higher'): {1: 1, 7: 1, 2: 2, 4: 2, 6: 2},
     (2025, 'ordinary'): {1: 1, 7: 1, 2: 2, 4: 2, 5: 2},
+    (2026, 'higher'): {1: 1, 7: 1, 2: 2, 4: 2, 6: 2},
+    (2026, 'ordinary'): {1: 1, 7: 1, 2: 2, 4: 2, 5: 2},
 }
 
 LONG_TOPIC = {
@@ -317,6 +344,14 @@ for _year, _level, _topics in (
     (2024, 'ordinary', ('art-6-1', 'art-6-0', 'art-6-1', 'art-6-2', 'art-6-2', 'art-6-1', 'art-6-3')),
     (2025, 'higher', ('art-6-3', 'art-6-1', 'art-6-0', 'art-6-1', 'art-6-0', 'art-6-1', 'art-6-1')),
     (2025, 'ordinary', ('art-6-2', 'art-6-2', 'art-6-0', 'art-6-1', 'art-6-1', 'art-6-0', 'art-6-1')),
+    # 2026 Higher: Nolan's textile, Beagan en plein air, Basic Income for the
+    # Arts, Banksy, galleries closed for renovation, Chinneck's sculpture,
+    # Grillagh Water House in its landscape.
+    (2026, 'higher', ('art-6-1', 'art-6-1', 'art-6-0', 'art-6-2', 'art-6-0', 'art-6-1', 'art-6-3')),
+    # 2026 Ordinary: Cobley's portrait, the IKEA bag, an Arts Section on the
+    # news, Duran's plastic-debris work, the Balor mural in Irish towns,
+    # creative careers, the Fruit Looters wallpaper.
+    (2026, 'ordinary', ('art-6-1', 'art-6-1', 'art-6-0', 'art-6-3', 'art-6-3', 'art-6-0', 'art-6-1')),
 ):
     for _number, _topic in enumerate(_topics, start=1):
         CURRENT_SHORT_TOPICS[(_year, _level, _number)] = _topic
@@ -555,7 +590,17 @@ def extract_questions(year: int, level: str) -> dict[int, dict[str, Any]]:
     for index, match in enumerate(matches):
         number = int(match.group(1))
         end = matches[index + 1].start() if index + 1 < len(matches) else len(paged.text)
-        prompt = clean_prompt(paged.text[match.end():end])
+        raw = paged.text[match.end():end]
+        if year >= 2023 and number >= 8:
+            # The period heading is printed on the "Question N" line and the
+            # question begins on the next; keep that break.
+            heading, _, body = raw.partition('\n')
+            heading = compact(heading)
+            if not heading:
+                raise AssertionError(f'{year} {level} Q{number}: no printed period heading')
+            prompt = f'{heading}\n{clean_prompt(body)}'
+        else:
+            prompt = clean_prompt(raw)
         if len(prompt) < 20:
             raise AssertionError(f'{year} {level} Q{number}: implausibly short prompt {prompt!r}')
         out[number] = {
@@ -636,14 +681,20 @@ def parse_range(value: str) -> list[int]:
     raise AssertionError(f'cannot read Art descriptor range {value!r}')
 
 
-def parse_short_table(table: Any) -> list[dict[str, Any]]:
+def parse_short_table(table: Any, page: Any) -> list[dict[str, Any]]:
     rows = table.extract()
     criteria: list[dict[str, Any]] = []
     for index, row in enumerate(rows):
         cells = nonempty_cells(row)
         if len(cells) != 1 or not re.search(r'\([ab]\)', cells[0], re.I):
             continue
-        guidance = cells[0]
+        # The row's visible text, read from its own cell: some schemes hide
+        # white dot leaders inside a row, which the table text would keep.
+        boxes = [box for box, cell in zip(table.rows[index].cells, row)
+                 if box is not None and cell is not None and compact(str(cell))]
+        if len(boxes) != 1:
+            raise AssertionError(f'Art scheme row is not one cell: {cells!r}')
+        guidance = art_printed.cell_text(page, boxes[0])
         band_header = nonempty_cells(rows[index + 1]) if index + 1 < len(rows) else []
         band_ranges = nonempty_cells(rows[index + 2]) if index + 2 < len(rows) else []
         marks_cell = next((cell for cell in band_header if re.search(r'\d+\s*Marks?', cell, re.I)), None)
@@ -689,7 +740,7 @@ def current_short_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
         for number, table in zip(question_numbers, candidate_tables):
             found[number] = {
                 'schemePage': page_number,
-                'criteria': parse_short_table(table),
+                'criteria': parse_short_table(table, page),
             }
     if sorted(found) != list(range(1, 8)):
         raise AssertionError(
@@ -776,12 +827,12 @@ def task_requirements(prompt: str) -> list[str]:
 
 def verify_printed_choices(prompt: str, choices: tuple[tuple[str, str], ...]) -> None:
     """Every option of a reviewed choice pool is printed in the question, in
-    order, as a bullet or in the inline 2025 Higher list."""
+    order, as a bullet or in an inline list (2025 HL Q12, 2026 OL Q12)."""
     labels = [label for _, label in choices]
     bullets = [line[2:] for line in prompt.splitlines() if line.startswith('• ')]
     printed = [label for label in labels if any(body.startswith(label) for body in bullets)]
-    inline = 'one of the following: ' + ', '.join(labels)
-    if printed != labels and inline not in prompt:
+    inline = re.compile(r'one of the following(?: \w+)?: ' + re.escape(', '.join(labels)))
+    if printed != labels and not inline.search(prompt):
         raise AssertionError(f'printed Art choices do not match paper text: {labels!r}')
 
 
@@ -978,6 +1029,35 @@ def compact_requirement(question_text: str) -> str:
     return compact(question_text.replace('\n• ', '; '))
 
 
+def printed_requirements(question_text: str, assessment: str) -> list[str]:
+    """The task check of an audited card: the paper's own lines, one each.
+
+    A Section B/C question's first line is its period heading, a title rather
+    than an ask, so it is left out; a printed bullet loses only its marker."""
+    lines = [line for line in question_text.split('\n') if line.strip()]
+    if assessment == 'current-long-descriptors':
+        lines = lines[1:]
+    out = [re.sub(r'^•\s*', '', line).strip() for line in lines]
+    if not out or any(not line for line in out):
+        raise AssertionError(f'no printed requirement lines in {question_text!r}')
+    return out
+
+
+_PRINTED_SCHEMES: dict[tuple[int, str], dict[str, Any]] = {}
+
+
+def printed_scheme(year: int, level: str) -> dict[str, Any]:
+    """An audited year's descriptors and marking notes, lifted from its scheme."""
+    key = (year, level)
+    if key not in _PRINTED_SCHEMES:
+        _PRINTED_SCHEMES[key] = {
+            'short': art_printed.short_descriptors(year, level),
+            'long': art_printed.long_descriptors(year, level),
+            'notes': art_printed.scheme_notes(year, level),
+        }
+    return _PRINTED_SCHEMES[key]
+
+
 def source_material(year: int, level: str, number: int) -> dict[str, Any] | None:
     page = ILLUSTRATION_PAGES.get((year, level), {}).get(number)
     if page is None:
@@ -1012,6 +1092,16 @@ def make_outer_card(year: int, level: str, number: int, prompt: dict[str, Any],
             raise AssertionError(f'{ref}: missing question-specific scheme')
         criteria = scheme['criteria']
         scheme_page = scheme['schemePage']
+    if year in AUDITED_YEARS and year >= 2023:
+        # Every page the card quotes: the marking note, the descriptor(s) and,
+        # for Section A, the question's own scheme row.
+        lifted = printed_scheme(year, level)
+        if current_long:
+            scheme_page = [lifted['notes']['current-long-descriptors']['page'],
+                           *(criterion['page'] for criterion in lifted['long'])]
+        else:
+            scheme_page = [lifted['notes']['current-short-descriptors']['page'],
+                           lifted['short']['page'], scheme['schemePage']]
 
     source = source_material(year, level, number)
     card: dict[str, Any] = {
@@ -1057,8 +1147,11 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
         variants: tuple[tuple[str | None, str | None], ...] = tuple(choices)
     else:
         # One card per printed task, whatever the student chooses inside it.
-        # The first option's key keeps the established id.
-        variants = ((choices[0][0], None),) if choices else ((None, None),)
+        # The first option's key keeps the established id of a card that was
+        # once built per option (2021–2025); a choice first built as one card
+        # has the plain question id.
+        keep_slug = choices and year <= 2025
+        variants = ((choices[0][0], None),) if keep_slug else ((None, None),)
     expanded: list[dict[str, Any]] = []
 
     for choice_slug, choice_label in variants:
@@ -1146,7 +1239,10 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
                     'topicId': option_topics[choice_slug] if choice_label else outer['topicId'],
                     'questionText': question_text,
                     'conceptId': f"{outer['conceptId']}-{'-'.join(concept_suffixes)}",
-                    'taskRequirements': [compact_requirement(question_text)],
+                    'taskRequirements': (
+                        printed_requirements(question_text, outer['assessment'])
+                        if year in AUDITED_YEARS
+                        else [compact_requirement(question_text)]),
                 }
                 if stem_parts:
                     card['stem'] = ' '.join(stem_parts)
@@ -1208,13 +1304,20 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
 
     runtime = {
         'subjectId': 'art',
-        'corpus': 'All separately marked written-examination tasks, 2021–2025; a printed choice is one card',
+        'corpus': 'All separately marked written-examination tasks, 2021–2026; a printed choice is one card',
         'cardCount': len(cards),
+        'auditedYears': list(AUDITED_YEARS),
+        # Lifted from each audited year's scheme by art_printed.py; the cards
+        # of that year and level show these and nothing written by us.
+        'descriptors': {
+            f'{year}-{level}': printed_scheme(year, level)
+            for year in AUDITED_YEARS if year >= 2023 for level in LEVELS
+        },
         'cards': cards,
     }
     census = {
         'subjectId': 'art',
-        'years': [2021, 2022, 2023, 2024, 2025],
+        'years': list(YEARS),
         'levels': ['higher', 'ordinary'],
         'selectionUnit': (
             'One card per separately marked printed task. Where the student chooses among printed '
@@ -1243,7 +1346,8 @@ def main() -> int:
         if stale:
             print('Art generated files are stale: ' + ', '.join(stale), file=sys.stderr)
             return 1
-        print(f"Art authoring check: {runtime['cardCount']}/{runtime['cardCount']} cards match the ten-paper task census.")
+        print(f"Art authoring check: {runtime['cardCount']}/{runtime['cardCount']} cards match the "
+              f"{len(census['papers'])}-paper task census.")
         return 0
 
     for path, value in outputs:
