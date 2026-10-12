@@ -557,7 +557,12 @@
     "agsci-2024-hl-q15ci",
     "agsci-2024-hl-q18aii",
     "agsci-2024-hl-q18biii",
-    "agsci-2024-hl-q18c"
+    "agsci-2024-hl-q18c",
+    "agsci-2024-ol-q1a",
+    "agsci-2024-ol-q11aii",
+    "agsci-2024-ol-q13biii",
+    "agsci-2024-ol-q14aii",
+    "agsci-2024-ol-q14bi"
   ],
   "correctedCardIds": [
     "agsci-2025-ol-q8b",
@@ -570,6 +575,9 @@
     "agsci-2024-hl-q2ai",
     "agsci-2024-hl-q2aiii",
     "agsci-2024-hl-q6a",
+    "agsci-2024-ol-q14cii",
+    "agsci-2024-ol-q14d",
+    "agsci-2024-ol-q2biii",
     "agsci-2025-hl-q12a",
     "agsci-2025-hl-q14bi",
     "agsci-2025-hl-q15b",
@@ -680,6 +688,39 @@
         "notation": "2(3) + 2(2)"
       },
       "reason": "Visually verified paper PDF page 10 (\"For any two of the above listed target features / activities\", four printed features, (i) action and (ii) benefit) and scheme PDF page 15 (one action and one benefit per feature, \"2(3) + 2(2)\"). The original fused card was referenced \"Q6(a)(i)–(ii)\" and spread the four features across mismatched answer slots. Same ID and 10 marks: one any-two-of-four card with an action row and a benefit row, each listing all four features in the scheme's wording, claim limit two."
+    },
+    "agsci-2024-ol-q14cii": {
+      "originalSha256": "870bd868fbd447a08526ca5824455562487ec377acd0f127322a3bf683638284",
+      "originalQuestionRef": "2024 OL Q14(c)(ii)",
+      "originalQuestionText": "Briefly describe two other ways to measure the quality of silage.",
+      "originalTotalMarks": 8,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "2(2) + 2(2)"
+      },
+      "reason": "Visually verified paper PDF page 24 (\"Briefly describe two other ways to measure the quality of silage\") and scheme PDF page 19 (six named ways with descriptions, \"2(2) + 2(2)\", \"Allow 2 + 2 for name or description\"). The original priced each way as one 4-mark row, so naming a way without its description scored nothing. Same ID, boundary and 8 marks: two names at 2 each and two descriptions at 2 each."
+    },
+    "agsci-2024-ol-q14d": {
+      "originalSha256": "c77bc6df12fe479fab1b0f5a868d0daf364f50af1da94b62b0a59c0e3ce2f046",
+      "originalQuestionRef": "2024 OL Q14(d)",
+      "originalQuestionText": "Hay and silage are common feeds on livestock farms and are both a method of preserving grass. Compare the preserving of grass as hay and silage under the headings that follow using the list of words in the box. [Word list: Dehydration / 24 hours / Under plastic / Shed / 5 - 7 days / Fermentation. Headings: Length of drying, Method of preservation, Storage — each filled in for Hay and for Silage.]",
+      "originalTotalMarks": 12,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "6(2)"
+      },
+      "reason": "Visually verified paper PDF page 24 (a three-heading hay/silage table filled from a six-word list) and scheme PDF page 19 (six cells, \"6(2)\"). The original paired the hay and silage cells of each heading into one 4-mark row, so one correct cell scored nothing. Same ID, boundary and 12 marks: six cells at 2 marks each."
+    },
+    "agsci-2024-ol-q2biii": {
+      "originalSha256": "1b3f3d483d39820bf371776c01dd089f9918cdb65a7300944675faee4233bd6c",
+      "originalQuestionRef": "2024 OL Q2(b)(iii)",
+      "originalQuestionText": "Outline one reason why the head gate labelled in picture A above is important when handling animals.",
+      "originalTotalMarks": 2,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "2 for any one"
+      },
+      "reason": "Visually verified paper PDF page 5 (\"The picture shows different cattle handling facilities. Analyse the pictures and answer the questions that follow.\", pictures A and B) and scheme PDF page 12 (2 marks). The original stem was the diagram labels run together (\"Single file race Round crowd pen Wrong way Right way Headgate Cattle see place to go\"). Same ID, rows and 2 marks; the stem is the paper's own lead-in and the card shows the inspected picture crop with the labelled head gate."
     },
     "agsci-2025-hl-q12a": {
       "originalSha256": "9ba7c955cf8ebb2cf57ee73b752d016656235ced5c4e3bbe392591db01701e5c",
@@ -47121,6 +47162,3919 @@
       "evidence": "All 44 paper and 28 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
       "marksPerRoute": 16,
       "originalCard": "added"
+    },
+    {
+      "questionRef": "2024 OL Q1(a)",
+      "paperPage": 3,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.16,
+            1,
+            0.578
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.137,
+            1,
+            0.195
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q1a": "1001"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q1a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "added"
+    },
+    {
+      "questionRef": "2024 OL Q1(b)",
+      "paperPage": 3,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.16,
+            1,
+            0.462
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.578,
+            1,
+            0.6
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.195,
+            1,
+            0.243
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q1b": "1002"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q1b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q1(c)",
+      "paperPage": 3,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.16,
+            1,
+            0.462
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.647,
+            1,
+            0.67
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.243,
+            1,
+            0.291
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q1c": "1003"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q1c"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q1(d)",
+      "paperPage": 3,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.16,
+            1,
+            0.462
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.711,
+            1,
+            0.733
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.291,
+            1,
+            0.374
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q1d": "1004"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q1d"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q2(a)",
+      "paperPage": 4,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.79
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.374,
+            1,
+            0.5
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q2a": "1005"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q2a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-health-safety",
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 10,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q2(b)(i)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.38
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.516,
+            1,
+            0.581
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q2bi": "1006"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q2bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-health-safety"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q2(b)(ii)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.09,
+            1,
+            0.355
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.423,
+            1,
+            0.446
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.581,
+            1,
+            0.682
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q2bii": "1007"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q2bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-health-safety"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q2(b)(iii)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.09,
+            1,
+            0.355
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.55,
+            1,
+            0.59
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.682,
+            1,
+            0.763
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q2biii": "1008"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q2biii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-health-safety"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2024 OL Q2(b)(iv)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.695,
+            1,
+            0.735
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.763,
+            1,
+            0.846
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q2biv": "1009"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q2biv"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-health-safety"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q3",
+      "paperPage": 6,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.39
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.253
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q3": "1010"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q3"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 10,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q4",
+      "paperPage": 6,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.41,
+            1,
+            0.8
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.253,
+            1,
+            0.372
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q4": "1011"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q4"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 10,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q5(a)",
+      "paperPage": 7,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.535
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.372,
+            1,
+            0.472
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q5a": "1012"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q5a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-physiology"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q5(b)",
+      "paperPage": 7,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.133
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.681,
+            1,
+            0.82
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.472,
+            1,
+            0.566
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q5b": "1013"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q5b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-animal-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q6(a)(i)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.64
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.566,
+            1,
+            0.666
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q6ai": "1014"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q6ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-classification-of-organisms",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q6(a)(ii)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.16
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.639,
+            1,
+            0.705
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.666,
+            1,
+            0.84
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q6aii": "1015"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q6aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Texel",
+          "Suffolk",
+          "Charolais",
+          "Border Leicester"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q6(b)(i)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.07,
+            1,
+            0.445
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.168
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q6bi": "1016"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q6bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q6(b)(ii)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.09,
+            1,
+            0.42
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.551,
+            1,
+            0.573
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.168,
+            1,
+            0.233
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q6bii": "1017"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q6bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q6(b)(iii)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.09,
+            1,
+            0.42
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.678,
+            1,
+            0.7
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.351
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q6biii": "1018"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q6biii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-innovation-and-biotechnology-in-agriculture",
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q7(a)",
+      "paperPage": 10,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.29
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.351,
+            1,
+            0.537
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q7a": "1019"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q7a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "Machine size",
+          "Soil water content",
+          "Tillage system",
+          "Crop rotation"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q7(b)",
+      "paperPage": 10,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.13
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.587,
+            1,
+            0.83
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.537,
+            1,
+            0.598
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q7b": "1020"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q7b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q8(a)",
+      "paperPage": 11,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.42
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.598,
+            1,
+            0.714
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q8a": "1021"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q8a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-health-safety"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q8(b)",
+      "paperPage": 11,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.705,
+            1,
+            0.745
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.714,
+            1,
+            0.797
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q8b": "1022"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q8b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-innovation-and-biotechnology-in-agriculture",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q9(a)(i)",
+      "paperPage": 12,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.21
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.133
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q9ai": "1023"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q9ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-plant-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q9(a)(ii)",
+      "paperPage": 12,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.065,
+            0.61,
+            0.148
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.267,
+            0.61,
+            0.29
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.133,
+            1,
+            0.183
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q9aii": "1024"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q9aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-plant-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q9(a)(iii)",
+      "paperPage": 12,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.065,
+            0.61,
+            0.148
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.364,
+            1,
+            0.49
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.183,
+            1,
+            0.258
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q9aiii": "1025"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q9aiii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-plant-physiology",
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q9(b)",
+      "paperPage": 12,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.496,
+            1,
+            0.62
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.258,
+            1,
+            0.53
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q9b": "1026"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q9b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-fertilisers-pollution-the-environment"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 10,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q10(a)",
+      "paperPage": 13,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.225
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.53,
+            1,
+            0.614
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q10a": "1027"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q10a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q10(b)",
+      "paperPage": 13,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.18
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.324,
+            1,
+            0.46
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.614,
+            1,
+            0.752
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q10b": "1028"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q10b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q10(c)(i)",
+      "paperPage": 13,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.464,
+            1,
+            0.725
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.752,
+            1,
+            0.805
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q10ci": "1029"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q10ci"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q10(c)(ii)",
+      "paperPage": 13,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.464,
+            1,
+            0.66
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.724,
+            1,
+            0.765
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.805,
+            1,
+            0.854
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q10cii": "1030"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q10cii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q11(a)(i)",
+      "paperPage": 14,
+      "schemePage": 16,
+      "paperRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.56
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.133
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q11ai": "1031"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q11ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q11(a)(ii)",
+      "paperPage": 14,
+      "schemePage": 16,
+      "paperRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.52
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.615,
+            1,
+            0.64
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.133,
+            1,
+            0.181
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q11aii": "1032"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q11aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "added"
+    },
+    {
+      "questionRef": "2024 OL Q11(a)(iii)",
+      "paperPage": 14,
+      "schemePage": 16,
+      "paperRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.12,
+            1,
+            0.18
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.682,
+            1,
+            0.85
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.181,
+            1,
+            0.27
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q11aiii": "1033"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q11aiii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q11(b)(i)",
+      "paperPage": 15,
+      "schemePage": 16,
+      "paperRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.07,
+            1,
+            0.4
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.288,
+            1,
+            0.37
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q11bi": "1034"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q11bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q11(b)(ii)",
+      "paperPage": 15,
+      "schemePage": 16,
+      "paperRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.09,
+            1,
+            0.37
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.534,
+            1,
+            0.75
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.37,
+            1,
+            0.452
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q11bii": "1035"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q11bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q12(a)",
+      "paperPage": 16,
+      "schemePage": 16,
+      "paperRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.636
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.452,
+            1,
+            0.567
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q12a": "1036"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q12a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations",
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 8,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q12(b)",
+      "paperPage": 16,
+      "schemePage": 16,
+      "paperRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.133
+          ]
+        },
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.636,
+            1,
+            0.67
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.567,
+            1,
+            0.65
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q12b": "1037"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q12b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations",
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q13(a)(i)",
+      "paperPage": 19,
+      "schemePage": 17,
+      "paperRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0.16,
+            1,
+            0.3
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.145,
+            1,
+            0.281
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q13ai": "1038"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q13ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations",
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 16,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q13(a)(ii)",
+      "paperPage": 20,
+      "schemePage": 17,
+      "paperRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.44
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.281,
+            1,
+            0.382
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q13aii": "1039"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q13aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-classification-of-organisms",
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 12,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q13(b)(i)",
+      "paperPage": 20,
+      "schemePage": 17,
+      "paperRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.562,
+            1,
+            0.81
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.382,
+            1,
+            0.469
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q13bi": "1040"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q13bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations",
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q13(b)(ii)",
+      "paperPage": 20,
+      "schemePage": 17,
+      "paperRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.562,
+            1,
+            0.785
+          ]
+        },
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.469,
+            1,
+            0.534
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q13bii": "1041"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q13bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations",
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q13(b)(iii)",
+      "paperPage": 21,
+      "schemePage": 17,
+      "paperRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.222,
+            1,
+            0.434
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.534,
+            1,
+            0.738
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q13biii": "1042"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q13biii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations",
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "added"
+    },
+    {
+      "questionRef": "2024 OL Q13(b)(iv)",
+      "paperPage": 21,
+      "schemePage": 17,
+      "paperRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.435,
+            1,
+            0.46
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.738,
+            1,
+            0.846
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q13biv": "1043"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q13biv"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations",
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q14(a)(i)",
+      "paperPage": 22,
+      "schemePage": 18,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.18
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.168
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q14ai": "1044"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q14ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q14(a)(ii)",
+      "paperPage": 22,
+      "schemePage": 18,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.13
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.313,
+            1,
+            0.523
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.168,
+            1,
+            0.328
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q14aii": "1045"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q14aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "added"
+    },
+    {
+      "questionRef": "2024 OL Q14(a)(iii)",
+      "paperPage": 22,
+      "schemePage": 18,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.13
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.525,
+            1,
+            0.55
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.328,
+            1,
+            0.371
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q14aiii": "1046"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q14aiii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q14(b)(i)",
+      "paperPage": 22,
+      "schemePage": 18,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.648,
+            1,
+            0.87
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.371,
+            1,
+            0.522
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q14bi": "1047"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q14bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "added"
+    },
+    {
+      "questionRef": "2024 OL Q14(b)(ii)",
+      "paperPage": 22,
+      "schemePage": 18,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.648,
+            1,
+            0.87
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.522,
+            1,
+            0.588
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q14bii": "1048"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q14bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q14(b)(iii)",
+      "paperPage": 22,
+      "schemePage": 18,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.648,
+            1,
+            0.87
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0.19,
+            1,
+            0.32
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.588,
+            1,
+            0.664
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q14biii": "1049"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q14biii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q14(c)(i)",
+      "paperPage": 23,
+      "schemePage": 18,
+      "paperRegions": [
+        {
+          "p": 23,
+          "r": [
+            0,
+            0.323,
+            1,
+            0.37
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.664,
+            1,
+            0.851
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q14ci": "1050"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q14ci"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations",
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 12,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q14(c)(ii)",
+      "paperPage": 23,
+      "schemePage": 19,
+      "paperRegions": [
+        {
+          "p": 23,
+          "r": [
+            0,
+            0.323,
+            1,
+            0.345
+          ]
+        },
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.453
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q14cii": "1051"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q14cii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 8,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2024 OL Q14(d)",
+      "paperPage": 24,
+      "schemePage": 19,
+      "paperRegions": [
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.347,
+            1,
+            0.655
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0.453,
+            1,
+            0.58
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q14d": "1052"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q14d"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 12,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2024 OL Q15(a)(i)",
+      "paperPage": 25,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 25,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.44
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.175
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q15ai": "1053"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q15ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 8,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q15(a)(ii)",
+      "paperPage": 25,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 25,
+          "r": [
+            0,
+            0.442,
+            1,
+            0.8
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.175,
+            1,
+            0.245
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q15aii": "1054"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q15aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-physiology",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 12,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q15(b)(i)",
+      "paperPage": 26,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.11
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.245,
+            1,
+            0.309
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q15bi": "1055"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q15bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 8,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q15(b)(ii)",
+      "paperPage": 26,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0.24,
+            1,
+            0.41
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.309,
+            1,
+            0.355
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q15bii": "1056"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q15bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q15(b)(iii)",
+      "paperPage": 26,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0.24,
+            1,
+            0.29
+          ]
+        },
+        {
+          "p": 26,
+          "r": [
+            0,
+            0.413,
+            1,
+            0.53
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.355,
+            1,
+            0.423
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q15biii": "1057"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q15biii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q15(b)(iv)",
+      "paperPage": 26,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0.536,
+            1,
+            0.845
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.423,
+            1,
+            0.494
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q15biv": "1058"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q15biv"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q15(c)(i)",
+      "paperPage": 27,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.21
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.494,
+            1,
+            0.565
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q15ci": "1059"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q15ci"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q15(c)(ii)",
+      "paperPage": 27,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0.215,
+            1,
+            0.24
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.565,
+            1,
+            0.631
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q15cii": "1060"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q15cii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q15(d)",
+      "paperPage": 27,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0.413,
+            1,
+            0.45
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.631,
+            1,
+            0.715
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q15d": "1061"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q15d"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 8,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q16(a)(i)",
+      "paperPage": 28,
+      "schemePage": 21,
+      "paperRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.15
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.15
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q16ai": "1062"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q16ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q16(a)(ii)",
+      "paperPage": 28,
+      "schemePage": 21,
+      "paperRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.09,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.245,
+            1,
+            0.27
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.15,
+            1,
+            0.216
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q16aii": "1063"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q16aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q16(a)(iii)",
+      "paperPage": 28,
+      "schemePage": 21,
+      "paperRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.09,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.402,
+            1,
+            0.71
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.216,
+            1,
+            0.324
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q16aiii": "1064"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q16aiii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q16(a)(iv)",
+      "paperPage": 28,
+      "schemePage": 21,
+      "paperRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.09,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.711,
+            1,
+            0.735
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.324,
+            1,
+            0.407
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q16aiv": "1065"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q16aiv"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q16(b)",
+      "paperPage": 29,
+      "schemePage": 21,
+      "paperRegions": [
+        {
+          "p": 29,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.11
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.407,
+            1,
+            0.545
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q16b": "1066"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q16b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science",
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 12,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q16(c)(i)",
+      "paperPage": 30,
+      "schemePage": 21,
+      "paperRegions": [
+        {
+          "p": 30,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.155
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.545,
+            1,
+            0.68
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q16ci": "1067"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q16ci"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science",
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q16(c)(ii)",
+      "paperPage": 30,
+      "schemePage": 21,
+      "paperRegions": [
+        {
+          "p": 30,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.125
+          ]
+        },
+        {
+          "p": 30,
+          "r": [
+            0,
+            0.309,
+            1,
+            0.35
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.68,
+            1,
+            0.744
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q16cii": "1068"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q16cii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science",
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 5,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q16(c)(iii)",
+      "paperPage": 30,
+      "schemePage": 21,
+      "paperRegions": [
+        {
+          "p": 30,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.125
+          ]
+        },
+        {
+          "p": 30,
+          "r": [
+            0,
+            0.394,
+            1,
+            0.48
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.744,
+            1,
+            0.848
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q16ciii": "1069"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q16ciii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science",
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q17(a)(i)",
+      "paperPage": 31,
+      "schemePage": 22,
+      "paperRegions": [
+        {
+          "p": 31,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.4
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.184
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q17ai": "1070"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q17ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q17(a)(ii)",
+      "paperPage": 31,
+      "schemePage": 22,
+      "paperRegions": [
+        {
+          "p": 31,
+          "r": [
+            0,
+            0.09,
+            1,
+            0.352
+          ]
+        },
+        {
+          "p": 31,
+          "r": [
+            0,
+            0.509,
+            1,
+            0.53
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.184,
+            1,
+            0.249
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q17aii": "1071"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q17aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q17(a)(iii)",
+      "paperPage": 31,
+      "schemePage": 22,
+      "paperRegions": [
+        {
+          "p": 31,
+          "r": [
+            0,
+            0.633,
+            1,
+            0.68
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.249,
+            1,
+            0.477
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q17aiii": "1072"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q17aiii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 12,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q17(b)(i)",
+      "paperPage": 32,
+      "schemePage": 22,
+      "paperRegions": [
+        {
+          "p": 32,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.16
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.477,
+            1,
+            0.853
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q17bi": "1073"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q17bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 8,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q17(b)(ii)",
+      "paperPage": 32,
+      "schemePage": 23,
+      "paperRegions": [
+        {
+          "p": 32,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.1
+          ]
+        },
+        {
+          "p": 32,
+          "r": [
+            0,
+            0.478,
+            1,
+            0.5
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 23,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.429
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q17bii": "1074"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q17bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 8,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q17(b)(iii)",
+      "paperPage": 32,
+      "schemePage": 23,
+      "paperRegions": [
+        {
+          "p": 32,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.1
+          ]
+        },
+        {
+          "p": 32,
+          "r": [
+            0,
+            0.754,
+            1,
+            0.775
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 23,
+          "r": [
+            0,
+            0.429,
+            1,
+            0.495
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q17biii": "1075"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q17biii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-health-safety",
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q17(c)",
+      "paperPage": 33,
+      "schemePage": 23,
+      "paperRegions": [
+        {
+          "p": 33,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.75
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 23,
+          "r": [
+            0,
+            0.495,
+            1,
+            0.65
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q17c": "1076"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q17c"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 12,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q18(a)(i)",
+      "paperPage": 34,
+      "schemePage": 24,
+      "paperRegions": [
+        {
+          "p": 34,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.2
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.201
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q18ai": "1077"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q18ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 12,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q18(a)(ii)",
+      "paperPage": 34,
+      "schemePage": 24,
+      "paperRegions": [
+        {
+          "p": 34,
+          "r": [
+            0,
+            0.09,
+            1,
+            0.135
+          ]
+        },
+        {
+          "p": 34,
+          "r": [
+            0,
+            0.472,
+            1,
+            0.495
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.201,
+            1,
+            0.284
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q18aii": "1078"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q18aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 11,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q18(a)(iii)",
+      "paperPage": 34,
+      "schemePage": 24,
+      "paperRegions": [
+        {
+          "p": 34,
+          "r": [
+            0,
+            0.629,
+            1,
+            0.84
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.284,
+            1,
+            0.334
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q18aiii": "1079"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q18aiii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-classification-of-organisms",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q18(b)",
+      "paperPage": 35,
+      "schemePage": 24,
+      "paperRegions": [
+        {
+          "p": 35,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.36
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.334,
+            1,
+            0.474
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q18b": "1080"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q18b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 15,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q18(c)",
+      "paperPage": 35,
+      "schemePage": 24,
+      "paperRegions": [
+        {
+          "p": 35,
+          "r": [
+            0,
+            0.372,
+            1,
+            0.45
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.474,
+            1,
+            0.555
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q18c": "1081"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q18c"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2024 OL Q18(d)",
+      "paperPage": 35,
+      "schemePage": 24,
+      "paperRegions": [
+        {
+          "p": 35,
+          "r": [
+            0,
+            0.671,
+            1,
+            0.84
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.555,
+            1,
+            0.718
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2024-ol-q18d": "1082"
+      },
+      "cardIds": [
+        "agsci-2024-ol-q18d"
+      ],
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 40 paper and 26 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
     }
   ],
   "paperReviews": [
@@ -49930,6 +53884,281 @@
         }
       ],
       "independentBoundaryReview": "81 base tasks, one card each. 63 original cards match a published boundary and tariff unchanged (Q6(b)(ii) and Q15(a)(iii) already let any printed choice score). Nine are corrected in place (Q2(a)(i) and Q6(a) become one item-choice card each; Q2(a)(iii), Q16(b)(i), Q16(b)(ii), Q17(a), Q17(c)(ii), Q17(c)(iii), Q18(a)(iii)); 9 cards are added for the missing Q5(a), Q9(b)(i), Q9(b)(ii), Q13(a)(ii), Q14(c), Q15(c)(i), Q18(a)(ii), Q18(b)(iii) and Q18(c).",
+      "cropVisualReview": "Every distinct paper/scheme crop pair rendered and inspected.",
+      "runtimeReview": "Integrated production-component cases at 1200px and 390px. Signed-in full-app navigation remains open.",
+      "remaining": [
+        "Irish edition comparison (deferred)",
+        "Full application navigation review",
+        "Corpus-wide reconciliation"
+      ]
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "hashes": {
+        "exampapers": "dfdcb939847873c973368e2d59e01a1b9420a160d187398e4fed01131c273275",
+        "markingschemes": "b728e72363e7d7b7123f38884f637fcfad73adf2e32c6aaf57dce95eae52690e"
+      },
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "selectionDirectives": [
+        {
+          "id": "f20ee9787884d6ee",
+          "page": 2,
+          "cue": "Answer ten",
+          "context": "nded that you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer ten questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 m",
+          "classification": "exam-selection",
+          "reason": "Instructions: Section A, ten of twelve independent questions. Every question and both sides of each internal choice are retained."
+        },
+        {
+          "id": "377a00c3ba8ea2cd",
+          "page": 2,
+          "cue": "any four",
+          "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Day, Month and Year of Birth in the boxes on the front cover. Write your answers in bl",
+          "classification": "exam-selection",
+          "reason": "Instructions: Section B, four of six independent questions. Every question is retained."
+        },
+        {
+          "id": "ae7e26ead376acf7",
+          "page": 3,
+          "cue": "any ten",
+          "context": "ate Examination 2024 3 Agricultural Science – Ordinary Level A Section A 100 marks Answer any ten questions. Each question carries 10 marks. Question 1 The diagram below shows a type of grazing system. Analyse the diagram and answer the questions that follow. (a) Place a tick () in the correct box below to show the direction",
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: ten independent 10-mark questions, all retained."
+        },
+        {
+          "id": "f53c880b06b4d0ba",
+          "page": 4,
+          "cue": "either",
+          "context": "ng Certificate Examination 2024 4 Agricultural Science – Ordinary Level Question 2 Answer either (a) or (b). (a) Identify the machine from the photographs below that is involved in the farming practices listed in the table. Plough Baler Plate cooler Slurry tanker Farming practice Machine name Spreading animal waste on land R",
+          "classification": "independent-task-selection",
+          "reason": "Q2 either (a) or (b): both independently marked alternatives are retained."
+        },
+        {
+          "id": "72605f73bb19c4b3",
+          "page": 7,
+          "cue": "any three",
+          "context": "ive system of a calf. Analyse the diagram and answer the questions that follow. (a) Label any three parts of the diagram using the words in the list below. Omasum Abomasum Rumen Reticulum (b) Identify the first feed required by the calf by placing a tick () in the correct box. Hay Colostrum Milk Barley A: B: C: D: A B C D Oeso",
+          "classification": "closed",
+          "reason": "Q5(a): label any three of the four lettered stomach parts, 3(2). The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
+        },
+        {
+          "id": "dcf430b417ad8fe4",
+          "page": 8,
+          "cue": "either",
+          "context": "ng Certificate Examination 2024 8 Agricultural Science – Ordinary Level Question 6 Answer either (a) or (b). (a) (i) The photographs below show some breeds of sheep found on Irish farms. Identify any three of the following breeds using the list below. Texel Suffolk Charolais Border Leicester A B C D (ii) Outline one reason w",
+          "classification": "independent-task-selection",
+          "reason": "Q6 either (a) or (b): both alternatives are retained."
+        },
+        {
+          "id": "db8c5487f0a8935f",
+          "page": 8,
+          "cue": "any three",
+          "context": "). (a) (i) The photographs below show some breeds of sheep found on Irish farms. Identify any three of the following breeds using the list below. Texel Suffolk Charolais Border Leicester A B C D (ii) Outline one reason why any named breed in part (i) above is suitable for sheep meat production. Named breed: A: B: C: D:",
+          "classification": "closed",
+          "reason": "Q6(a)(i): identify any three of the four sheep breeds A–D, 3(2). The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
+        },
+        {
+          "id": "7a495caeee110e18",
+          "page": 10,
+          "cue": "any three",
+          "context": "e four headings in the diagram above in relation to soil compaction, briefly describe how any three affect the growth of crops on the land. (b) Identify the % air in the ideal soil composition below by placing a tick () in the correct box. 45% 25% 5% Machine size Soil water content Tillage system Crop rotation Soil Compaction ",
+          "classification": "closed",
+          "reason": "Q7(a): any three of the four printed soil-compaction headings, 3(2). The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
+        },
+        {
+          "id": "9851e46935218bd6",
+          "page": 11,
+          "cue": "any three",
+          "context": "ake significant differences in the health and welfare of the animals. (a) Briefly outline any three advantages of using jackets to improve the health and welfare of animals under the headings provided in the diagram below. (b) Briefly explain how one piece of technology you have studied can improve animals’ health and welfare o",
+          "classification": "open",
+          "reason": "Q8(a): any three advantages of jackets framed by four printed headings; the scheme marks one pool of advantages, not a pool per heading, so the headings are not answer routes."
+        },
+        {
+          "id": "40981c6586dd4843",
+          "page": 12,
+          "cue": "either",
+          "context": "g Certificate Examination 2024 12 Agricultural Science – Ordinary Level Question 9 Answer either (a) or (b). (a) The diagram shows the structure of a plant. Analyse the diagram and answer the questions that follow. (i) Identify the part of the plant that is involved in nutrient absorption. (ii) List two nutrients absorbed by",
+          "classification": "independent-task-selection",
+          "reason": "Q9 either (a) or (b): both alternatives are retained."
+        },
+        {
+          "id": "b3c8d3bbf76a7542",
+          "page": 14,
+          "cue": "Choose",
+          "context": " answer the questions that follow. 1. Breed two organisms with desired characteristics 2. Choose the best offspring and breed 4. Over time characteristic increases 3. Repeat over many generations (i) Identify the desired characteristic being selectively bred. (ii) In step 2, state which hen A, B or C is the best offspring to",
+          "classification": "not-a-selection",
+          "reason": "Text inside the Q11(a) flowchart (\"Choose the best offspring and breed\"); no response choice."
+        },
+        {
+          "id": "f048f0379636bf19",
+          "page": 14,
+          "cue": "either",
+          "context": "() in the correct boxes. Marbling in meat Milk volume Early maturing Milk protein Answer either (a) or (b)",
+          "classification": "independent-task-selection",
+          "reason": "Q11 either (a) or (b): both alternatives are retained."
+        },
+        {
+          "id": "21fc1411c480cdfc",
+          "page": 15,
+          "cue": "choose",
+          "context": "aracteristics of the Belgian Blue. (ii) State with reason which cow A or B a farmer would choose to cross with the Belgian Blue bull shown in the picture above. A B 1. 2. Cow: Reason:",
+          "classification": "answer-identification",
+          "reason": "Q11(b)(ii): state which cow, A or B, to choose; one correct answer (B), not a route."
+        },
+        {
+          "id": "01b2b759eebc6ee1",
+          "page": 19,
+          "cue": "any four",
+          "context": "cate Examination 2024 19 Agricultural Science – Ordinary Level Section B 200 marks Answer any four questions. Each question carries 50 marks. Question 13 (a) Lisa was renting 40 hectares of land for her organic dairy farm. She carried out a number of tests to determine its productivity. One of the areas Lisa decided to investi",
+          "classification": "exam-selection",
+          "reason": "Section B heading: four of six independent 50-mark questions, all retained."
+        },
+        {
+          "id": "151e5877fd6cd086",
+          "page": 19,
+          "cue": "One of",
+          "context": " her organic dairy farm. She carried out a number of tests to determine its productivity. One of the areas Lisa decided to investigate was the botanical composition of the land. Describe with the aid of a labelled diagram how she would carry out this investigation. Labelled diagram:",
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q13(a) stem (\"One of the areas Lisa decided to investigate\"); no response choice."
+        },
+        {
+          "id": "2c775fcd995a6bd2",
+          "page": 20,
+          "cue": "any three",
+          "context": " Science – Ordinary Level (ii) Lisa found the following plants in the grassland. Identify any three of the plants using the list of words in the box below. Broad leaf dock Perennial ryegrass Nettle White clover A B C D (b) The results from the investigation are shown in the table below. Analyse the table and answer the question",
+          "classification": "closed",
+          "reason": "Q13(a)(ii): identify any three of the four plants A–D, 3(4). The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
+        },
+        {
+          "id": "86eb3a30d4e75f80",
+          "page": 25,
+          "cue": "either",
+          "context": "on 2024 25 Agricultural Science – Ordinary Level Question 15 Answer both (a) and (b) with either (c) or (d). The breeding season is an important and busy time on sheep farms to ensure successful lamb production. (a) (i) Outline the management practices of the ewe at mating under the headings that follow. Feeding Health (ii) ",
+          "classification": "independent-task-selection",
+          "reason": "Q15: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
+        },
+        {
+          "id": "95305b1ad7da523c",
+          "page": 34,
+          "cue": "either",
+          "context": "on 2024 34 Agricultural Science – Ordinary Level Question 18 Answer both (a) and (b) with either (c) or (d). (a) Calving is a very busy time on all beef and dairy farms so it is important for farmers to prepared in advance. (i) Outline three ways dairy farmers can prepare for the calving season in order to ensure the surviva",
+          "classification": "independent-task-selection",
+          "reason": "Q18: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
+        }
+      ],
+      "supplementarySelections": [
+        {
+          "page": 8,
+          "wording": "Outline one reason why any named breed in part (i) above is suitable for sheep meat",
+          "classification": "closed",
+          "reason": "Q6(a)(ii): one of the four printed breeds, 4 marks. The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
+        },
+        {
+          "page": 32,
+          "wording": "Based on a named food crop (other than grass) you have studied",
+          "classification": "open",
+          "reason": "Q17(b)(i): a student-named crop; barley, potatoes and kale are the scheme's worked examples (\"or another valid crop\")."
+        },
+        {
+          "page": 11,
+          "wording": "Briefly explain how one piece of technology you have studied",
+          "classification": "open",
+          "reason": "Q8(b): a student-chosen technology; the scheme adds \"any other valid answer\"."
+        },
+        {
+          "page": 12,
+          "wording": "State two agricultural practices which contribute to water pollution",
+          "classification": "open",
+          "reason": "Q9(b): student-chosen practices; the scheme's four practices are a marking menu."
+        },
+        {
+          "page": 3,
+          "wording": "in the correct box below to show the direction of grazing",
+          "classification": "answer-identification",
+          "reason": "Q1(a): one correct direction box."
+        },
+        {
+          "page": 21,
+          "wording": "Identify the most suitable chart or graph to display the above results",
+          "classification": "answer-identification",
+          "reason": "Q13(b)(iii): one correct chart (B)."
+        }
+      ],
+      "sourceNotes": [],
+      "independentBoundaryReview": "82 base tasks, one card each. 74 original cards match a published boundary and tariff unchanged; the item choices Q5(a), Q6(a)(i), Q6(a)(ii), Q7(a) and Q13(a)(ii) are already one card each. Three are corrected in place (Q2(b)(iii) stem; Q14(c)(ii) and Q14(d) awards); five cards are added for the missing Q1(a), Q11(a)(ii), Q13(b)(iii), Q14(a)(ii) and Q14(b)(i).",
       "cropVisualReview": "Every distinct paper/scheme crop pair rendered and inspected.",
       "runtimeReview": "Integrated production-component cases at 1200px and 390px. Signed-in full-app navigation remains open.",
       "remaining": [

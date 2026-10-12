@@ -1086,5 +1086,137 @@
   },
   "originalSha256": "21a9d94a330be42a74d77136db380ce422ea6b7d72c0329da31dbb538d205eb5",
   "snapshotFrom": "codex/agricultural-science-completion-20261007 at 9b9f00d1 (unchanged since the original authoring)"
+ },
+ "agsci-2024-ol-q2biii": {
+  "original": {
+   "id": "agsci-2024-ol-q2biii",
+   "topicId": "agsci-1-5",
+   "conceptId": "why-a-head-gate-matters",
+   "level": "ordinary",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2024 OL Q2(b)(iii)",
+   "questionText": "Outline one reason why the head gate labelled in picture A above is important when handling animals.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2 for any one"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Easy to operate",
+     "marks": 2,
+     "accepts": [
+      "safe working with animals",
+      "administer medicine easily or any named treatment"
+     ]
+    }
+   ],
+   "stem": "Single file race Round crowd pen Wrong way Right way Headgate Cattle see place to go"
+  },
+  "originalSha256": "1b3f3d483d39820bf371776c01dd089f9918cdb65a7300944675faee4233bd6c",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 42285673 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2024-ol-q14cii": {
+  "original": {
+   "id": "agsci-2024-ol-q14cii",
+   "topicId": "agsci-3-3-3",
+   "conceptId": "silage-quality-assessment",
+   "level": "ordinary",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2024 OL Q14(c)(ii)",
+   "stem": "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. One measure of silage quality is its dry matter (DM)%.",
+   "questionText": "Briefly describe two other ways to measure the quality of silage.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(2) + 2(2)"
+   },
+   "totalMarks": 8,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "pH — low pH indicates good quality",
+     "marks": 4,
+     "accepts": [
+      "squeeze liquid from silage",
+      "place pH probe into liquid and note the reading",
+      "dip pH paper in the liquid and compare to the colour chart",
+      "smell sharp acidic or vinegary indicates good quality, putrid or rancid indicates poor quality",
+      "DM content - squeeze with one hand or wring with two hands, little or no liquid removed indicates good quality",
+      "texture - rub the silage sample between your fingers, soft but firm or fibres do not wear easily indicates good quality, wet and slimy indicates poor quality",
+      "leaf to stem - weigh sample of silage, separate leaves from the stems, weigh each separately, calculate the ratio of stem to leaves"
+     ],
+     "contextNote": "Way 1. Scheme note: 'Allow 2 + 2 for name or description' - 2 marks for naming the test, 2 for the description. The scheme's other four methods are in accepts and score the same."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "colour: Yellow - green indicates good quality",
+     "marks": 4,
+     "accepts": [
+      "dark green indicates poor quality",
+      "smell sharp acidic or vinegary indicates good quality, putrid or rancid indicates poor quality",
+      "DM content - squeeze with one hand or wring with two hands, little or no liquid removed indicates good quality",
+      "texture - rub the silage sample between your fingers, soft but firm or fibres do not wear easily indicates good quality, wet and slimy indicates poor quality",
+      "leaf to stem - weigh sample of silage, separate leaves from the stems, weigh each separately, calculate the ratio of stem to leaves"
+     ],
+     "contextNote": "Way 2. 2 marks for naming colour, 2 for the description. The scheme's other four methods are in accepts and score the same."
+    }
+   ],
+   "notes": "Tariff '2(2) + 2(2)' with the scheme note 'Allow 2 + 2 for name or description' = two ways, each 2 for the name and 2 for the description = 8, so fixed with two rows at 4. The scheme prints a six-row table (pH / colour / smell / DM content / texture / leaf to stem) for a two-way tariff; the four methods not shown as rows are in accepts on both rows. Read off marking-scheme PDF p.19 because the markdown extraction interleaves the name column into the description text - in particular the scheme's texture line reads 'soft but firm or fibres do not wear easily indicates good quality', not 'texture or fibres...'."
+  },
+  "originalSha256": "870bd868fbd447a08526ca5824455562487ec377acd0f127322a3bf683638284",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 42285673 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2024-ol-q14d": {
+  "original": {
+   "id": "agsci-2024-ol-q14d",
+   "topicId": "agsci-3-3-3",
+   "conceptId": "hay-versus-silage-preservation",
+   "level": "ordinary",
+   "year": 2024,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2024 OL Q14(d)",
+   "stem": "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms.",
+   "questionText": "Hay and silage are common feeds on livestock farms and are both a method of preserving grass. Compare the preserving of grass as hay and silage under the headings that follow using the list of words in the box. [Word list: Dehydration / 24 hours / Under plastic / Shed / 5 - 7 days / Fermentation. Headings: Length of drying, Method of preservation, Storage — each filled in for Hay and for Silage.]",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "6(2)"
+   },
+   "totalMarks": 12,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Length of drying — 5 – 7 days / 24 hours",
+     "marks": 4,
+     "contextNote": "Hay: 5 – 7 days. Silage: 24 hours. 2 marks per cell."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Method of preservation — Dehydration / Fermentation",
+     "marks": 4,
+     "contextNote": "Hay: Dehydration. Silage: Fermentation. 2 marks per cell."
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "Storage — Shed / Under plastic",
+     "marks": 4,
+     "contextNote": "Hay: Shed. Silage: Under plastic. 2 marks per cell."
+    }
+   ],
+   "notes": "Tariff 6(2) = six table cells at two marks = 12. MAX_ROWS is five, so the two cells of each heading share one row worth 4 with both answers named in the verbatim and split out in the contextNote - the same compression the authored corpus already uses for a six-cell table. No answer content is lost and every row is scheme-traceable. The word box and table headings are plain text in the paper, so the part is fully reproducible without a figure."
+  },
+  "originalSha256": "c77bc6df12fe479fab1b0f5a868d0daf364f50af1da94b62b0a59c0e3ce2f046",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 42285673 (unchanged since the original 869-card bank)"
  }
 }

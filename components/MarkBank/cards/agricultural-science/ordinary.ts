@@ -1440,6 +1440,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Restrain animals or allow treatment", marks: 3, accepts: ["prevent injury","reduce time or labour"], contextNote: "One use only is asked for — any one of these scores the full 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1454,6 +1464,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Be careful of swinging gates", marks: 2, accepts: ["have another person present or tell someone","don’t stand too close","or another one valid precaution"], contextNote: "One precaution only is asked for — any one of these scores the full 2 marks.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p05-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p05-i0.png",
@@ -1507,6 +1527,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Pneumonia", marks: 2, contextNote: "(d) Rapid breathing and coughing in calves is an indicator of ………." },
     { id: "r-5", kind: "point", verbatim: "Orf", marks: 2, contextNote: "(e) Lesions on the mouth, udder and nose of young lambs is ………." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1521,6 +1551,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Colostrum", marks: 4, contextNote: "The tick goes beside Colostrum; the other three options score nothing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p07-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p07-i0.png",
@@ -1543,6 +1583,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Texel – large amount of muscle / lean meat", marks: 4, accepts: ["Charollais – fine boned / long loin / muscular hindquarters / fast growing / easy to flesh / high KO%","Border Leicester – fast growing / prolific","Suffolk – fast growing or early maturing / high quality carcass or excellent conformation / prolific"], contextNote: "One reason for ONE named breed. Whichever of the four breeds is named, one correct characteristic from that breed's line scores the full 4 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1629,6 +1679,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Soil water content: Increased water content allows soil particles to move together increases soil compaction which reduces crop growth", marks: 2, accepts: ["Crop rotation: planting different crops leads to less soil compaction and increased crop growth"], contextNote: "Description 2 of 3." },
     { id: "r-3", kind: "point", verbatim: "Tillage system: Intensive or conventional tillage increases soil compaction reducing crop growth", marks: 2, accepts: ["Crop rotation: planting different crops leads to less soil compaction and increased crop growth"], contextNote: "Description 3 of 3." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1643,6 +1703,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "25%", marks: 4, contextNote: "The tick goes beside 25%." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p10-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p10-i0.png",
@@ -1667,6 +1737,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "protects from cold or wet or harsh conditions or illness", marks: 2, accepts: ["helps to prevent colds or pneumonia or illness or hypothermia or death","reduced energy or vet or housing costs"], contextNote: "Advantage 2 of 3." },
     { id: "r-3", kind: "point", verbatim: "promotes LWG (liveweight gain) which increases profits", marks: 2, accepts: ["helps to prevent colds or pneumonia or illness or hypothermia or death","reduced energy or vet or housing costs"], contextNote: "Advantage 3 of 3." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p11-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p11-i1.png",
@@ -1689,6 +1769,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Collars can read the temperature of the cow and alert farmer", marks: 4, accepts: ["any other valid answer"], contextNote: "The scheme's full line reads 'Collars can read the temperature of the cow and alert farmer if they are sick or / any other valid answer'. Any correctly explained piece of technology scores the full 4 marks.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1703,6 +1793,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Root(hairs)", marks: 3, contextNote: "The brackets mean 'hairs' is not required — 'root' alone scores." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p12-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p12-i0.png",
@@ -1726,6 +1826,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "N", marks: 2, accepts: ["P","K","Ca","Mg","S","other valid answer"], contextNote: "Nutrient 1 — any nutrient from the pool scores 2.", openList: true },
     { id: "r-2", kind: "point", verbatim: "P", marks: 2, accepts: ["N","K","Ca","Mg","S","other valid answer"], contextNote: "Nutrient 2 — any different nutrient from the pool scores 2.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p12-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p12-i0.png",
@@ -1748,6 +1858,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Rhizobium", marks: 3, contextNote: "The tick goes beside Rhizobium." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p12-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p12-i0.png",
@@ -1796,6 +1916,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A food or drink that is made in a traditional manner using high quality ingredients", marks: 2, accepts: ["products created with a greater focus on the uniqueness","products with novelty or a sense of being close to the producer"], contextNote: "One explanation only — any one of these scores the full 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1856,6 +1986,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Protein or casein or whey", marks: 3, contextNote: "Any one of protein, casein or whey scores the full 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1870,6 +2010,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Egg production", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-ol-paper-p014-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-ol-paper-p014-i0.png",
@@ -1917,6 +2067,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Double muscled", marks: 3, accepts: ["muscular or good conformation","strong legs","sloping rump","blue and white or white in colour","wide shoulders","short neck","straight back","fine skin"], contextNote: "Characteristic 1 — any one item from the scheme's pool scores 3." },
     { id: "r-2", kind: "point", verbatim: "blue and white or white in colour", marks: 3, accepts: ["Double muscled","muscular or good conformation","strong legs","sloping rump","wide shoulders","short neck","straight back","fine skin"], contextNote: "Characteristic 2 — any different item from the same pool scores 3." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p15-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p15-i0.png",
@@ -1941,6 +2101,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "amount of fertiliser", marks: null, contextNote: "Independent" },
     { id: "r-3", kind: "point", verbatim: "plant growth", marks: null, contextNote: "Dependent" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p16-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p16-i0.png",
@@ -1963,6 +2133,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "As the different amounts of fertiliser are applied the plant growth (rate)", marks: 2, accepts: ["As the different amounts of fertiliser are applied the plant growth (rate) will differ"], contextNote: "The scheme's full line reads 'As the different amounts of fertiliser are applied the plant growth (rate) will differ'." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p16-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p16-i0.png",
@@ -4775,6 +4955,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "repeat at least 10 times", marks: 4, accepts: ["record plants present","calculate % frequency"] },
     { id: "r-4", kind: "point", verbatim: "identify plants using key or plant ID app or acres guide book", marks: 4, accepts: ["record plants present","calculate % frequency"], contextNote: "The key, the plant ID app and the ACRES guide book are alternative ways of doing this one step." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4790,6 +4980,17 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Quantitative", marks: 2, contextNote: "State" },
     { id: "r-2", kind: "point", verbatim: "Quantity or number of plants measured.", marks: 2, contextNote: "Reason" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20,
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-ol-paper-p020-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-ol-paper-p020-i0.png",
@@ -4813,6 +5014,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Accurate or Yes", marks: 3, contextNote: "State - 'Accurate' and 'Yes' are the same point worded two ways." },
     { id: "r-2", kind: "point", verbatim: "Quadrat was thrown multiple times", marks: 3, accepts: ["land areas chosen randomly","average value used","used approved plant key or book or app to identify plants"], contextNote: "Reason - any ONE of the scheme's four reasons scores the 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-ol-paper-p019-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-ol-paper-p019-i0.png",
@@ -4836,6 +5047,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Fertiliser applied (6 weeks in advance)", marks: 3, accepts: ["grazed in spring prior to closing for silage","soil test (ensure adequate nutrients)","close for 6 weeks","sow productive species or control weeds"], contextNote: "Two ways are asked for and the scheme prints six - any two score 3 each. The four not shown as rows are in accepts." },
     { id: "r-2", kind: "point", verbatim: "slurry applied", marks: 3, accepts: ["grazed in spring prior to closing for silage","soil test (ensure adequate nutrients)","close for 6 weeks","sow productive species or control weeds"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4850,6 +5071,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Less digestible", marks: 3, accepts: ["poor yield","poor quality silage","increased concentrate costs"], contextNote: "Any ONE of the four scheme disadvantages scores the full 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4866,37 +5097,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "place the grass in an oven (at 100 C)", marks: 4, accepts: ["microwave at short intervals","Cut a number of grass samples","use a tissue to dry off any excess water from the grass","use a scissors to cut the grass into short lengths of similar size","record mass of beaker","determine mass of grass sample","repeat weighing","constant mass","mass of the dry grass is equal to the dry matter","calculate the average DM% for each treatment"], contextNote: "The scheme reads 'place the grass in an oven (at 100 C) or microwave at short intervals', so the microwave is the alternative, not a second point." },
     { id: "r-3", kind: "point", verbatim: "calculate the DM% of the grass by putting mass of dry grass over mass of fresh grass multiply by 100/1", marks: 4, accepts: ["Cut a number of grass samples","use a tissue to dry off any excess water from the grass","use a scissors to cut the grass into short lengths of similar size","record mass of beaker","determine mass of grass sample","repeat weighing","constant mass","mass of the dry grass is equal to the dry matter","calculate the average DM% for each treatment"] },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2024-ol-q14cii", topicId: "agsci-3-3-3", conceptId: "silage-quality-assessment",
-    section: "B", questionRef: "2024 OL Q14(c)(ii)",
-    stem: "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. One measure of silage quality is its dry matter (DM)%.",
-    questionText: "Briefly describe two other ways to measure the quality of silage.",
-    tariffModel: {"kind":"fixed","notation":"2(2) + 2(2)"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "pH — low pH indicates good quality", marks: 4, accepts: ["squeeze liquid from silage","place pH probe into liquid and note the reading","dip pH paper in the liquid and compare to the colour chart","smell sharp acidic or vinegary indicates good quality, putrid or rancid indicates poor quality","DM content - squeeze with one hand or wring with two hands, little or no liquid removed indicates good quality","texture - rub the silage sample between your fingers, soft but firm or fibres do not wear easily indicates good quality, wet and slimy indicates poor quality","leaf to stem - weigh sample of silage, separate leaves from the stems, weigh each separately, calculate the ratio of stem to leaves"], contextNote: "Way 1. Scheme note: 'Allow 2 + 2 for name or description' - 2 marks for naming the test, 2 for the description. The scheme's other four methods are in accepts and score the same." },
-    { id: "r-2", kind: "point", verbatim: "colour: Yellow - green indicates good quality", marks: 4, accepts: ["dark green indicates poor quality","smell sharp acidic or vinegary indicates good quality, putrid or rancid indicates poor quality","DM content - squeeze with one hand or wring with two hands, little or no liquid removed indicates good quality","texture - rub the silage sample between your fingers, soft but firm or fibres do not wear easily indicates good quality, wet and slimy indicates poor quality","leaf to stem - weigh sample of silage, separate leaves from the stems, weigh each separately, calculate the ratio of stem to leaves"], contextNote: "Way 2. 2 marks for naming colour, 2 for the description. The scheme's other four methods are in accepts and score the same." },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2024-ol-q14d", topicId: "agsci-3-3-3", conceptId: "hay-versus-silage-preservation",
-    section: "B", questionRef: "2024 OL Q14(d)",
-    stem: "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms.",
-    questionText: "Hay and silage are common feeds on livestock farms and are both a method of preserving grass. Compare the preserving of grass as hay and silage under the headings that follow using the list of words in the box. [Word list: Dehydration / 24 hours / Under plastic / Shed / 5 - 7 days / Fermentation. Headings: Length of drying, Method of preservation, Storage — each filled in for Hay and for Silage.]",
-    tariffModel: {"kind":"fixed","notation":"6(2)"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Length of drying — 5 – 7 days / 24 hours", marks: 4, contextNote: "Hay: 5 – 7 days. Silage: 24 hours. 2 marks per cell." },
-    { id: "r-2", kind: "point", verbatim: "Method of preservation — Dehydration / Fermentation", marks: 4, contextNote: "Hay: Dehydration. Silage: Fermentation. 2 marks per cell." },
-    { id: "r-3", kind: "point", verbatim: "Storage — Shed / Under plastic", marks: 4, contextNote: "Hay: Shed. Silage: Under plastic. 2 marks per cell." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4912,6 +5122,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Flushing or high plane of nutrition or good quality grass", marks: 4, accepts: ["Flushing","high plane of nutrition","good quality grass"], contextNote: "Feeding — the three wordings are alternatives for the same 4 marks." },
     { id: "r-2", kind: "point", verbatim: "reduce stress", marks: 4, accepts: ["good feet or footbath","dipping","good body condition or BCS 3.0 - 3.5","dagging"], contextNote: "Health — any ONE of the scheme's five practices scores the 4 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4927,6 +5147,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Feet or legs", marks: 4, accepts: ["testicles","BCS","fertility","disease"], contextNote: "Two checks are asked for and the scheme prints six - any two score 4 each. The four not shown as rows are in accepts. 'Feet or legs' is one check worded two ways." },
     { id: "r-2", kind: "point", verbatim: "mouth", marks: 4, accepts: ["testicles","BCS","fertility","disease"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4941,6 +5171,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "To mark the ewes that have been served.", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5001,6 +5241,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "To allow for successful mating", marks: 2, accepts: ["prevent injury to the ram","prevent flystrike"], contextNote: "Any ONE of the three scheme reasons scores the full 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5016,6 +5266,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Ewes come into heat", marks: null },
     { id: "r-2", kind: "point", verbatim: "a number of times or at a certain time of the year", marks: null, accepts: ["when the days get shorter"], contextNote: "The scheme adds '(when the days get shorter)' in brackets as context for the 'certain time of the year'." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5030,6 +5290,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Soil organic matter is the part of the soil that consists of plant or animal remains — in various stages of breakdown (decomposition)", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5049,6 +5319,16 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "reduce cultivation", marks: 3 },
     { id: "r-6", kind: "point", verbatim: "add earthworms or microbial inoculants", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5065,6 +5345,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "improves water retention", marks: 2, contextNote: "Water retention (holding)" },
     { id: "r-3", kind: "point", verbatim: "reduces soil compaction", marks: 2, contextNote: "Soil compaction" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5084,6 +5374,16 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "earthworm population or biological activity", marks: 3 },
     { id: "r-6", kind: "point", verbatim: "another named valid agricultural practice", marks: 3, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5106,6 +5406,16 @@ export const CARDS: SecCard[] = [
     { id: "r-8", kind: "point", verbatim: "loss in mass is equal to the amount of organic matter", marks: 4 },
     { id: "r-9", kind: "point", verbatim: "mass of organic matter ÷ dry weight x 100/1", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5143,6 +5453,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Peat soil", marks: 5 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5242,6 +5562,16 @@ export const CARDS: SecCard[] = [
     { id: "r-16", kind: "point", verbatim: "semen must be properly stored", marks: null, contextNote: "Disadvantage" },
     { id: "r-17", kind: "point", verbatim: "stock bull may still be required for mopping up", marks: null, contextNote: "Disadvantage" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5256,6 +5586,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Germination: radicle grows down to develop roots // Ripening: grain hardens // Germination: sprouts develop on tubers and grow upwards // Ripening: tubers fully grown // Germination: radicle grows down to develop roots // Ripening: leaves grow to grazing or harvesting stage", marks: null, group: {"claimMax":2,"perOption":4,"options":["Germination: radicle grows down to develop roots","Ripening: grain hardens","Germination: sprouts develop on tubers and grow upwards","Ripening: tubers fully grown","Germination: radicle grows down to develop roots","Ripening: leaves grow to grazing or harvesting stage"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5270,6 +5610,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Harvested: combine harvester // Stored: bales stored in shed // Harvested: burn off haulms using a contact herbicide // Stored: leak-proof or frost-proof or well-ventilated shed // Harvested: strip grazed // Stored: wrapped in plastic", marks: null, group: {"claimMax":2,"perOption":4,"options":["Harvested: combine harvester","Stored: bales stored in shed","Harvested: burn off haulms using a contact herbicide","Stored: leak-proof or frost-proof or well-ventilated shed","Harvested: strip grazed","Stored: wrapped in plastic"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5284,6 +5634,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Be careful of PTO or don’t wear loose clothes", marks: 4, accepts: ["turn off machine when working on it","or any other valid example"], contextNote: "One precaution only is asked for — any one of these scores the full 4 marks.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5301,6 +5661,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "crop rotation or machine hygiene", marks: 3, contextNote: "Cultural / Sanitation" },
     { id: "r-4", kind: "point", verbatim: "machine hygiene or crop rotation or fans", marks: 3, contextNote: "Prevention" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5315,6 +5685,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Have all equipment (calving jack etc.) // clean bedding // vet number // supply of colostrum // experienced person present or adequate supervision // CCTV // calving pen to isolate the cow // scanning // one description of hygiene // cow in good condition or BCS 3 – 3.5", marks: null, group: {"claimMax":3,"perOption":4,"options":["Have all equipment (calving jack etc.)","clean bedding","vet number","supply of colostrum","experienced person present or adequate supervision","CCTV","calving pen to isolate the cow","scanning","one description of hygiene","cow in good condition or BCS 3 – 3.5"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5335,6 +5715,16 @@ export const CARDS: SecCard[] = [
     { id: "r-6", kind: "point", verbatim: "salt the calf or allow mother to lick the calf", marks: null },
     { id: "r-7", kind: "point", verbatim: "assist delivery of calf", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5353,6 +5743,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "350kg", marks: 3, contextNote: "Mating" },
     { id: "r-5", kind: "point", verbatim: "600kg", marks: 3, contextNote: "1st calving" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5369,6 +5769,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "concentrates", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "good quality silage (75%+ DMD)", marks: 3, accepts: ["good quality spring grass"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5385,6 +5795,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "55 - 60", marks: null, contextNote: "Dry period (number of days)" },
     { id: "r-3", kind: "point", verbatim: "280 - 283", marks: null, contextNote: "Gestation (number of days)" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7088,6 +7508,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(As the animals go around the curve) they think they are going back to where they came from", marks: 3, accepts: ["the animals cannot see people and other moving objects (at the end of the chute)","it takes advantage of the natural circling behaviour of cattle","one-way system for ease of movement"], contextNote: "One reason only is asked for — any one of the scheme's four wordings scores the full 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p05-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p05-i0.png",
@@ -7117,6 +7547,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "C — Abomasum", marks: 2 },
     { id: "r-4", kind: "point", verbatim: "D — Reticulum", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p07-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p07-i0.png",
@@ -7148,6 +7588,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "C — Texel", marks: 2 },
     { id: "r-4", kind: "point", verbatim: "D — Suffolk", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p08-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p08-i1.png",
@@ -7177,6 +7627,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Cow: B or Charolais", marks: 2, contextNote: "The scheme accepts either the letter or the breed name." },
     { id: "r-2", kind: "point", verbatim: "Big frame", marks: 2, accepts: ["continental breed","wide pelvis"], contextNote: "Reason — any ONE of the scheme's three reasons scores the 2 marks. All three say the same thing: she is big enough to calve down to a double-muscled bull." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p15-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p15-i1.png",
@@ -7203,6 +7663,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Leafy grass", marks: 2, accepts: ["no seed heads","more digestible"], contextNote: "One reason only — any ONE of the scheme's three scores the full 2 marks. A candidate who ticked A in part (i) scores by naming the opposite point (stemmy, seed heads out, less digestible)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22,
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p22-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p22-i1.png",
@@ -7229,6 +7700,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Vegetative", marks: 2, contextNote: "The box the scheme ticks. Photograph B is all leaf with no stem elongation and no seed head showing, so the sward is still vegetative." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22,
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p22-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p22-i1.png",
@@ -7258,6 +7740,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "C — Ovary", marks: 3 },
     { id: "r-4", kind: "point", verbatim: "D — Cervix", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p25-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p25-i1.png",
@@ -7288,6 +7780,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "2nd colour — Green / A", marks: null },
     { id: "r-3", kind: "point", verbatim: "3rd colour — Blue / B", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p26-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p26-i0.png",
@@ -7315,6 +7817,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Holstein) Friesian", marks: 6, contextNote: "The brackets are the scheme's: 'Friesian' alone is enough, and 'Holstein Friesian' is equally acceptable." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p34-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p34-i0.png",
@@ -7503,6 +8015,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "C — Clover", marks: 4, contextNote: "The scheme prints 'Clover'. The word box the question tells you to choose from prints the same plant as 'White clover'." },
     { id: "r-4", kind: "point", verbatim: "D — Perennial Ryegrass", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p20-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p20-i1.png",
@@ -8148,6 +8670,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Moveable)(Electric) Fence", marks: 3, contextNote: "The field is drawn as four vertical bands shading from dark green on the left to pale on the right. Three cows and a trough stand in the third band, the two bands to their left are grazed down, and a grey square lettered A sits on the line between with a red arrow pointing right." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p03-art",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p03-art.png",
@@ -8170,6 +8702,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Strip grazing", marks: 2, contextNote: "The field is drawn as four vertical bands shading from dark green on the left to pale on the right. Three cows and a trough stand in the third band, the two bands to their left are grazed down, and a grey square lettered A sits on the line between with a red arrow pointing right." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p03-art",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p03-art.png",
@@ -8192,6 +8734,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Leafy grass or more digestible grass or less weeds or increase animal production", marks: 2, accepts: ["gives grass a chance to recover","less soil compaction","less poaching or damage to grass","less grass wastage"], contextNote: "The field is drawn as four vertical bands shading from dark green on the left to pale on the right. Three cows and a trough stand in the third band, the two bands to their left are grazed down, and a grey square lettered A sits on the line between with a red arrow pointing right." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-OL-paper-p03-art",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p03-art.png",
@@ -8214,6 +8766,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "4/10 x 100/1 = 40%", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2024-ol-paper-p019-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-ol-paper-p019-i0.png",
@@ -8222,20 +8784,6 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2024-ol-q2biii", topicId: "agsci-1-5", conceptId: "why-a-head-gate-matters",
-    section: "A", questionRef: "2024 OL Q2(b)(iii)",
-    stem: "Single file race Round crowd pen Wrong way Right way Headgate Cattle see place to go",
-    questionText: "Outline one reason why the head gate labelled in picture A above is important when handling animals.",
-    tariffModel: {"kind":"fixed","notation":"2 for any one"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Easy to operate", marks: 2, accepts: ["safe working with animals","administer medicine easily or any named treatment"] },
-    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -17066,6 +17614,283 @@ export const CARDS: SecCard[] = [
                 36
           ],
           "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-3-3-2"]), kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q1a", topicId: "agsci-3-3-2", conceptId: "strip-grazing-direction",
+    section: "A", questionRef: "2024 OL Q1(a)",
+    stem: "The diagram below shows a type of grazing system. Analyse the diagram and answer the questions that follow.",
+    questionText: "Place a tick (✓) in the correct box below to show the direction of grazing in the above diagram. [→ / ←]",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "←", marks: 3, contextNote: "The scheme ticks the box beside the left-pointing arrow; its printed answer shows after you reveal." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Ordinary — Q1(a)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    questionFigure: {
+          "candId": "agsci-2024-ol-paper-grazing-direction",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-paper-grazing-direction.png",
+          "srcHash": "c63cf2767a62da3518a9c67bdc607bab",
+          "alt": "Original Question 1 strip-grazing diagram and part (a): a field drawn as four vertical bands with three cows and a trough in the third band and a box A with a red arrow on its left boundary, above the instruction to tick the direction of grazing and two boxes, a right-pointing arrow and a left-pointing arrow.",
+          "lettersVisible": [],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission."
+    },
+    figure: {
+          "candId": "agsci-2024-ol-scheme-grazing-direction",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-scheme-grazing-direction.png",
+          "srcHash": "77618692e1d6a60d15d9d4054e1a4607",
+          "alt": "Official marking-scheme answer for Question 1(a): the box beside the left-pointing arrow is ticked.",
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level marking scheme, PDF page 12 — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-1-5"]), kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q2biii", topicId: "agsci-1-5", conceptId: "why-a-head-gate-matters",
+    section: "A", questionRef: "2024 OL Q2(b)(iii)",
+    stem: "Answer either (a) or (b). The picture shows different cattle handling facilities. Analyse the pictures and answer the questions that follow.",
+    questionText: "Outline one reason why the head gate labelled in picture A above is important when handling animals.",
+    tariffModel: {"kind":"fixed","notation":"2 for any one"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Easy to operate", marks: 2, accepts: ["safe working with animals","administer medicine easily or any named treatment"] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Ordinary — Q2(b)(iii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p05-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p05-i0.png",
+          "srcHash": "e98ac1a834f4f2e82a08a959fff28d52",
+          "alt": "Question 2(b), two cattle-handling facility pictures side by side, each headed by a bold capital. Picture A is a colour photograph of a galvanised steel cattle race/crush built along a concrete wall in a yard, made of horizontal bars in vertical posts, with a heavier vertical-barred gate structure at the far end; an orange callout box with white bold text \"Headgate\" and a yellow arrow points to that end structure. Picture B is a black-and-white plan-view (bird's-eye) line drawing of a curved handling system on a pale background: a straight channel labelled \"Single file race\" by a leader line runs to the right, turns through a 180 degree bend into a rounded pen at the far right labelled \"Round crowd pen\", and continues round a second bend at the bottom left; small stylised cattle drawn from above are spaced along the route. A solid line path is labelled in red \"Right way\" and a dashed line path is labelled in red \"Wrong way\", and the caption \"Cattle see place to go\" runs along the bottom. Three small circled numerals, 1, 2 and 3, mark points along the route. Below the pictures, sub-parts (i) and (ii) with empty answer boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-4-3-2"]), kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q11aii", topicId: "agsci-4-3-2", conceptId: "choosing-the-best-offspring",
+    section: "A", questionRef: "2024 OL Q11(a)(ii)",
+    stem: "Answer either (a) or (b). Selective breeding has been done for thousands of years to improve characteristics of plants and animals. Analyse the diagram in relation to egg production and answer the questions that follow.",
+    questionText: "In step 2, state which hen A, B or C is the best offspring to breed future generations.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A", marks: 3, contextNote: "Hen A." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Ordinary — Q11(a)(ii)",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2024-ol-paper-p014-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-ol-paper-p014-i0.png",
+          "srcHash": "67990abed49dca1bb41b372d97dd1d52",
+          "alt": "The four-step selective breeding flowchart for laying hens, inside a thin black frame. Step 1, 'Breed two organisms with desired characteristics', shows a blue-tailed cockerel and a tan hen joined by a multiplication sign. A black arrow runs right to step 2, 'Choose the best offspring and breed', where three hens headed A, B and C stand with eggs drawn at their feet - two eggs by A, two by B and three by C. A downward arrow leads to step 3, 'Repeat over many generations', another cockerel-by-hen pairing. A left-pointing arrow leads to step 4, 'Over time characteristic increases', a single speckled hen with three eggs beside her.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-1-3"]), kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q13biii", topicId: "agsci-1-3", conceptId: "choosing-a-chart",
+    section: "B", questionRef: "2024 OL Q13(b)(iii)",
+    stem: "The results from the investigation give the average % frequency of each plant across ten quadrat throws: dock leaf A, perennial ryegrass 100, nettle 30 and white clover 70.",
+    questionText: "Identify the most suitable chart or graph to display the above results by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B", marks: 6, contextNote: "The scheme ticks B, the bar chart." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Ordinary — Q13(b)(iii)",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2024-ol-paper-chart-choice",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-paper-chart-choice.png",
+          "srcHash": "27e0b2c2579ba1eef039917aa79e436d",
+          "alt": "Original Question 13(b)(iii): the instruction to tick the most suitable chart or graph, above three small charts lettered A, B and C, a line graph, a bar chart and a pie chart, each with an empty tick box.",
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper, PDF page 21 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-3-3-3"]), kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q14aii", topicId: "agsci-3-3-3", conceptId: "best-time-to-cut-silage",
+    section: "B", questionRef: "2024 OL Q14(a)(ii)",
+    stem: "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms.",
+    questionText: "Identify the best time of the year to cut grass for silage by placing an X on the diagram.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "X", marks: 3, contextNote: "The scheme places the X at the top of the first, higher peak of grass growth, under its Spring heading; its printed answer shows after you reveal." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Ordinary — Q14(a)(ii)",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    questionFigure: {
+          "candId": "agsci-2024-ol-paper-grass-growth",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-paper-grass-growth.png",
+          "srcHash": "570d03d377b4a46afd1849a3d6c1d25e",
+          "alt": "Original Question 14(a)(ii): the instruction to place an X at the best time of year to cut grass for silage, above a curve of grass growth against time of year from January to December with a tall first peak and a lower second peak.",
+          "lettersVisible": [],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper, PDF page 22 — © State Examinations Commission."
+    },
+    figure: {
+          "candId": "agsci-2024-ol-scheme-grass-growth-x",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-scheme-grass-growth-x.png",
+          "srcHash": "bc9e9e7e6dcb3a03ab51c21f54352df4",
+          "alt": "Official marking-scheme answer for Question 14(a)(ii): the grass-growth curve under Spring, Summer, Autumn and Winter headings, with the X placed above the top of the first, higher peak.",
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level marking scheme, PDF page 18 — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-3-3-3"]), kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q14bi", topicId: "agsci-3-3-3", conceptId: "silage-cutting-stage",
+    section: "B", questionRef: "2024 OL Q14(b)(i)",
+    stem: "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms.",
+    questionText: "Identify the correct stage of cutting the grass for silage by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B", marks: 2, contextNote: "The scheme ticks B." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Ordinary — Q14(b)(i)",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p22-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p22-i1.png",
+          "srcHash": "7a414c9b16b8c7f82aec8cbf29aa55cc",
+          "alt": "Question 14(b)(i), two close-up grass photographs to choose between, each headed by a bold capital. A: a grass sward that has run to seed - many tall stems carrying open, branched grey-green seed heads and panicles standing well above the leaves, the sward looking stemmy and pale. B: a dense, purely leafy sward of upright deep green grass blades, wet with dew and with no seed heads at all. Beneath the photographs is an empty two-cell tick table, one cell under each picture. Above them: \"(b)(i) Identify the correct stage of cutting the grass for silage by placing a tick in the correct box.\" The page footer \"Leaving Certificate Examination 2024 / Agricultural Science - Ordinary Level / 22\" appears at the bottom.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"left — a stemmy, pale sward that has run to seed, with many tall stems carrying open branched seed heads standing above the leaves","askedInThisQuestion":false},{"letter":"B","meaning":"right — a dense, deep-green sward of broad leaf blades with no stems or seed heads showing","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-3-3-3"]), kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q14cii", topicId: "agsci-3-3-3", conceptId: "silage-quality-assessment",
+    section: "B", questionRef: "2024 OL Q14(c)(ii)",
+    stem: "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. One measure of silage quality is its dry matter (DM)%.",
+    questionText: "Briefly describe two other ways to measure the quality of silage.",
+    tariffModel: {"kind":"fixed","notation":"2(2) + 2(2)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "pH / colour / smell / DM content / texture / leaf to stem", marks: 4, contextNote: "Name of each of your two ways, 2 marks each. The scheme notes \"Allow 2 + 2 for name or description\".", group: {"claimMax":2,"perOption":2,"options":["pH","colour","smell","DM content","texture","leaf to stem"]} },
+    { id: "r-2", kind: "anyN", verbatim: "squeeze liquid from silage / place pH probe into liquid and note the reading or dip pH paper in the liquid and compare to the colour chart / low pH indicates good quality / Yellow - green indicates good quality / dark green indicates poor quality / sharp acidic or vinegary indicates good quality / putrid or rancid indicates poor quality / squeeze with one hand / liquid removed indicates poor quality / wring with two hands / little or no liquid removed indicates good quality / rub the silage sample between your fingers / soft but firm or fibres do not wear easily indicates good quality / wet and slimy indicates poor quality / weigh sample of silage / separate leaves from the stems / weigh each separately / calculate the ratio of stem to leaves", marks: 4, contextNote: "Description of each of the same two ways, 2 marks each (2(2) + 2(2)). In order the options describe pH, colour, smell, DM content, texture and leaf to stem.", group: {"claimMax":2,"perOption":2,"options":["squeeze liquid from silage / place pH probe into liquid and note the reading or dip pH paper in the liquid and compare to the colour chart / low pH indicates good quality","Yellow - green indicates good quality / dark green indicates poor quality","sharp acidic or vinegary indicates good quality / putrid or rancid indicates poor quality","squeeze with one hand / liquid removed indicates poor quality / wring with two hands / little or no liquid removed indicates good quality","rub the silage sample between your fingers / soft but firm or fibres do not wear easily indicates good quality / wet and slimy indicates poor quality","weigh sample of silage / separate leaves from the stems / weigh each separately / calculate the ratio of stem to leaves"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Ordinary — Q14(c)(ii)",
+          "pages": [
+                23,
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-12"},
+    ...examCardCurriculum("agricultural-science", 2024, ["agsci-3-3-3"]), kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q14d", topicId: "agsci-3-3-3", conceptId: "hay-versus-silage-preservation",
+    section: "B", questionRef: "2024 OL Q14(d)",
+    stem: "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms.",
+    questionText: "Hay and silage are common feeds on livestock farms and are both a method of preserving grass. Compare the preserving of grass as hay and silage under the headings that follow using the list of words in the box. [Word list: Dehydration / 24 hours / Under plastic / Shed / 5 - 7 days / Fermentation. Headings: Length of drying, Method of preservation, Storage — each filled in for Hay and for Silage.]",
+    tariffModel: {"kind":"fixed","notation":"6(2)"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Length of drying, hay — 5 – 7 days", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Length of drying, silage — 24 hours", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "Method of preservation, hay — Dehydration", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "Method of preservation, silage — Fermentation", marks: 2 },
+    { id: "r-5", kind: "point", verbatim: "Storage, hay — Shed", marks: 2 },
+    { id: "r-6", kind: "point", verbatim: "Storage, silage — Under plastic", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2024 Ordinary — Q14(d)",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
     },
   } as SecCard,

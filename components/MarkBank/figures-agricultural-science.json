@@ -457,5 +457,90 @@
       0.456
     ],
     "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-ol-paper-grazing-direction": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-paper-grazing-direction.png",
+    "md5": "c63cf2767a62da3518a9c67bdc607bab",
+    "alt": "Original Question 1 strip-grazing diagram and part (a): a field drawn as four vertical bands with three cows and a trough in the third band and a box A with a red arrow on its left boundary, above the instruction to tick the direction of grazing and two boxes, a right-pointing arrow and a left-pointing arrow.",
+    "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024GLP000EV.pdf",
+    "sourceSha256": "dfdcb939847873c973368e2d59e01a1b9420a160d187398e4fed01131c273275",
+    "pdfPage": 3,
+    "cropRect": [
+      0.08,
+      0.16,
+      0.88,
+      0.578
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-ol-scheme-grazing-direction": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-scheme-grazing-direction.png",
+    "md5": "77618692e1d6a60d15d9d4054e1a4607",
+    "alt": "Official marking-scheme answer for Question 1(a): the box beside the left-pointing arrow is ticked.",
+    "attribution": "SEC Agricultural Science 2024 Ordinary Level marking scheme, PDF page 12 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2024/LC024GLP000EV.pdf",
+    "sourceSha256": "b728e72363e7d7b7123f38884f637fcfad73adf2e32c6aaf57dce95eae52690e",
+    "pdfPage": 12,
+    "cropRect": [
+      0.215,
+      0.137,
+      0.848,
+      0.195
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-ol-paper-chart-choice": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-paper-chart-choice.png",
+    "md5": "27e0b2c2579ba1eef039917aa79e436d",
+    "alt": "Original Question 13(b)(iii): the instruction to tick the most suitable chart or graph, above three small charts lettered A, B and C, a line graph, a bar chart and a pie chart, each with an empty tick box.",
+    "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper, PDF page 21 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024GLP000EV.pdf",
+    "sourceSha256": "dfdcb939847873c973368e2d59e01a1b9420a160d187398e4fed01131c273275",
+    "pdfPage": 21,
+    "cropRect": [
+      0.09,
+      0.222,
+      0.91,
+      0.434
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-ol-paper-grass-growth": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-paper-grass-growth.png",
+    "md5": "570d03d377b4a46afd1849a3d6c1d25e",
+    "alt": "Original Question 14(a)(ii): the instruction to place an X at the best time of year to cut grass for silage, above a curve of grass growth against time of year from January to December with a tall first peak and a lower second peak.",
+    "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper, PDF page 22 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024GLP000EV.pdf",
+    "sourceSha256": "dfdcb939847873c973368e2d59e01a1b9420a160d187398e4fed01131c273275",
+    "pdfPage": 22,
+    "cropRect": [
+      0.13,
+      0.31,
+      0.96,
+      0.522
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-ol-scheme-grass-growth-x": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-scheme-grass-growth-x.png",
+    "md5": "bc9e9e7e6dcb3a03ab51c21f54352df4",
+    "alt": "Official marking-scheme answer for Question 14(a)(ii): the grass-growth curve under Spring, Summer, Autumn and Winter headings, with the X placed above the top of the first, higher peak.",
+    "attribution": "SEC Agricultural Science 2024 Ordinary Level marking scheme, PDF page 18 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2024/LC024GLP000EV.pdf",
+    "sourceSha256": "b728e72363e7d7b7123f38884f637fcfad73adf2e32c6aaf57dce95eae52690e",
+    "pdfPage": 18,
+    "cropRect": [
+      0.33,
+      0.188,
+      0.76,
+      0.33
+    ],
+    "reviewedAt": "2026-10-11"
   }
 }

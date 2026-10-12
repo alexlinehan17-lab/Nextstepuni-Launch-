@@ -24891,97 +24891,6 @@
   "notes": "Tariff 3(4) = three points at four marks = 12, so three rows at 4. The scheme lists twelve solidus-separated steps; the nine not shown are carried in accepts on every row. Rows are the three steps that carry the method (fresh mass, oven-drying, the DM% calculation) rather than the first three in scheme order, since any three of the twelve score the same."
  },
  {
-  "id": "agsci-2024-ol-q14cii",
-  "topicId": "agsci-3-3-3",
-  "conceptId": "silage-quality-assessment",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2024 OL Q14(c)(ii)",
-  "stem": "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. One measure of silage quality is its dry matter (DM)%.",
-  "questionText": "Briefly describe two other ways to measure the quality of silage.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2(2) + 2(2)"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "pH — low pH indicates good quality",
-    "marks": 4,
-    "accepts": [
-     "squeeze liquid from silage",
-     "place pH probe into liquid and note the reading",
-     "dip pH paper in the liquid and compare to the colour chart",
-     "smell sharp acidic or vinegary indicates good quality, putrid or rancid indicates poor quality",
-     "DM content - squeeze with one hand or wring with two hands, little or no liquid removed indicates good quality",
-     "texture - rub the silage sample between your fingers, soft but firm or fibres do not wear easily indicates good quality, wet and slimy indicates poor quality",
-     "leaf to stem - weigh sample of silage, separate leaves from the stems, weigh each separately, calculate the ratio of stem to leaves"
-    ],
-    "contextNote": "Way 1. Scheme note: 'Allow 2 + 2 for name or description' - 2 marks for naming the test, 2 for the description. The scheme's other four methods are in accepts and score the same."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "colour: Yellow - green indicates good quality",
-    "marks": 4,
-    "accepts": [
-     "dark green indicates poor quality",
-     "smell sharp acidic or vinegary indicates good quality, putrid or rancid indicates poor quality",
-     "DM content - squeeze with one hand or wring with two hands, little or no liquid removed indicates good quality",
-     "texture - rub the silage sample between your fingers, soft but firm or fibres do not wear easily indicates good quality, wet and slimy indicates poor quality",
-     "leaf to stem - weigh sample of silage, separate leaves from the stems, weigh each separately, calculate the ratio of stem to leaves"
-    ],
-    "contextNote": "Way 2. 2 marks for naming colour, 2 for the description. The scheme's other four methods are in accepts and score the same."
-   }
-  ],
-  "notes": "Tariff '2(2) + 2(2)' with the scheme note 'Allow 2 + 2 for name or description' = two ways, each 2 for the name and 2 for the description = 8, so fixed with two rows at 4. The scheme prints a six-row table (pH / colour / smell / DM content / texture / leaf to stem) for a two-way tariff; the four methods not shown as rows are in accepts on both rows. Read off marking-scheme PDF p.19 because the markdown extraction interleaves the name column into the description text - in particular the scheme's texture line reads 'soft but firm or fibres do not wear easily indicates good quality', not 'texture or fibres...'."
- },
- {
-  "id": "agsci-2024-ol-q14d",
-  "topicId": "agsci-3-3-3",
-  "conceptId": "hay-versus-silage-preservation",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2024 OL Q14(d)",
-  "stem": "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms.",
-  "questionText": "Hay and silage are common feeds on livestock farms and are both a method of preserving grass. Compare the preserving of grass as hay and silage under the headings that follow using the list of words in the box. [Word list: Dehydration / 24 hours / Under plastic / Shed / 5 - 7 days / Fermentation. Headings: Length of drying, Method of preservation, Storage — each filled in for Hay and for Silage.]",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "6(2)"
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Length of drying — 5 – 7 days / 24 hours",
-    "marks": 4,
-    "contextNote": "Hay: 5 – 7 days. Silage: 24 hours. 2 marks per cell."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Method of preservation — Dehydration / Fermentation",
-    "marks": 4,
-    "contextNote": "Hay: Dehydration. Silage: Fermentation. 2 marks per cell."
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Storage — Shed / Under plastic",
-    "marks": 4,
-    "contextNote": "Hay: Shed. Silage: Under plastic. 2 marks per cell."
-   }
-  ],
-  "notes": "Tariff 6(2) = six table cells at two marks = 12. MAX_ROWS is five, so the two cells of each heading share one row worth 4 with both answers named in the verbatim and split out in the contextNote - the same compression the authored corpus already uses for a six-cell table. No answer content is lost and every row is scheme-traceable. The word box and table headings are plain text in the paper, so the part is fully reproducible without a figure."
- },
- {
   "id": "agsci-2024-ol-q15ai",
   "topicId": "agsci-4-3-3",
   "conceptId": "ewe-management-at-mating",
@@ -34375,35 +34284,6 @@
   "stem": "The results from the investigation are shown in the table below.",
   "notes": "The scheme allows all six for the answer alone and three where the working is shown but the answer is wrong.",
   "figureKey": "agricultural-science-2024-ol-paper-p019-i0"
- },
- {
-  "id": "agsci-2024-ol-q2biii",
-  "topicId": "agsci-1-5",
-  "conceptId": "why-a-head-gate-matters",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2024 OL Q2(b)(iii)",
-  "questionText": "Outline one reason why the head gate labelled in picture A above is important when handling animals.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 for any one"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Easy to operate",
-    "marks": 2,
-    "accepts": [
-     "safe working with animals",
-     "administer medicine easily or any named treatment"
-    ]
-   }
-  ],
-  "stem": "Single file race Round crowd pen Wrong way Right way Headgate Cattle see place to go"
  },
  {
   "id": "agsci-2025-hl-q1a",
@@ -72668,6 +72548,477 @@
   ],
   "stem": "With the EU's 'Farm to Fork Strategy' proposed to reduce by 50% the use of chemical pesticides, Integrated Pest Management (IPM) systems are becoming increasingly important. The IPM diagram is a pyramid: Prevention at the base, then Cultural / Sanitation, Physical / Mechanical, Biological, and Chemical (Pesticide) at the top.",
   "figureKey": "agsci-2024-hl-paper-ipm-pyramid",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2024-ol-q1a",
+  "subjectId": "agricultural-science",
+  "year": 2024,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2024 OL Q1(a)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-3-2"
+  ],
+  "conceptId": "strip-grazing-direction",
+  "questionText": "Place a tick (✓) in the correct box below to show the direction of grazing in the above diagram. [→ / ←]",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "←",
+    "marks": 3,
+    "contextNote": "The scheme ticks the box beside the left-pointing arrow; its printed answer shows after you reveal.",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2024 Ordinary — Q1(a)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "The diagram below shows a type of grazing system. Analyse the diagram and answer the questions that follow.",
+  "figureKey": "agsci-2024-ol-scheme-grazing-direction",
+  "questionFigureKey": "agsci-2024-ol-paper-grazing-direction",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2024-ol-q2biii",
+  "topicId": "agsci-1-5",
+  "conceptId": "why-a-head-gate-matters",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 OL Q2(b)(iii)",
+  "questionText": "Outline one reason why the head gate labelled in picture A above is important when handling animals.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 for any one"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Easy to operate",
+    "marks": 2,
+    "accepts": [
+     "safe working with animals",
+     "administer medicine easily or any named treatment"
+    ]
+   }
+  ],
+  "stem": "Answer either (a) or (b). The picture shows different cattle handling facilities. Analyse the pictures and answer the questions that follow.",
+  "figureKey": "agricultural-science-2024-OL-paper-p05-i0",
+  "curriculumNodeIds": [
+   "agsci-1-5"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2024 Ordinary — Q2(b)(iii)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2024-ol-q11aii",
+  "subjectId": "agricultural-science",
+  "year": 2024,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2024 OL Q11(a)(ii)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2"
+  ],
+  "conceptId": "choosing-the-best-offspring",
+  "questionText": "In step 2, state which hen A, B or C is the best offspring to breed future generations.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "A",
+    "marks": 3,
+    "contextNote": "Hen A.",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2024 Ordinary — Q11(a)(ii)",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer either (a) or (b). Selective breeding has been done for thousands of years to improve characteristics of plants and animals. Analyse the diagram in relation to egg production and answer the questions that follow.",
+  "figureKey": "agricultural-science-2024-ol-paper-p014-i0",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2024-ol-q13biii",
+  "subjectId": "agricultural-science",
+  "year": 2024,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2024 OL Q13(b)(iii)",
+  "topicId": "agsci-1-3",
+  "curriculumNodeIds": [
+   "agsci-1-3"
+  ],
+  "conceptId": "choosing-a-chart",
+  "questionText": "Identify the most suitable chart or graph to display the above results by placing a tick (✓) in the correct box.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 6,
+    "contextNote": "The scheme ticks B, the bar chart.",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2024 Ordinary — Q13(b)(iii)",
+   "pages": [
+    21
+   ],
+   "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "The results from the investigation give the average % frequency of each plant across ten quadrat throws: dock leaf A, perennial ryegrass 100, nettle 30 and white clover 70.",
+  "figureKey": "agsci-2024-ol-paper-chart-choice",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2024-ol-q14aii",
+  "subjectId": "agricultural-science",
+  "year": 2024,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2024 OL Q14(a)(ii)",
+  "topicId": "agsci-3-3-3",
+  "curriculumNodeIds": [
+   "agsci-3-3-3"
+  ],
+  "conceptId": "best-time-to-cut-silage",
+  "questionText": "Identify the best time of the year to cut grass for silage by placing an X on the diagram.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "X",
+    "marks": 3,
+    "contextNote": "The scheme places the X at the top of the first, higher peak of grass growth, under its Spring heading; its printed answer shows after you reveal.",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2024 Ordinary — Q14(a)(ii)",
+   "pages": [
+    22
+   ],
+   "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms.",
+  "figureKey": "agsci-2024-ol-scheme-grass-growth-x",
+  "questionFigureKey": "agsci-2024-ol-paper-grass-growth",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2024-ol-q14bi",
+  "subjectId": "agricultural-science",
+  "year": 2024,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2024 OL Q14(b)(i)",
+  "topicId": "agsci-3-3-3",
+  "curriculumNodeIds": [
+   "agsci-3-3-3"
+  ],
+  "conceptId": "silage-cutting-stage",
+  "questionText": "Identify the correct stage of cutting the grass for silage by placing a tick (✓) in the correct box.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 2,
+    "contextNote": "The scheme ticks B.",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2024 Ordinary — Q14(b)(i)",
+   "pages": [
+    22
+   ],
+   "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms.",
+  "figureKey": "agricultural-science-2024-OL-paper-p22-i1",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "left — a stemmy, pale sward that has run to seed, with many tall stems carrying open branched seed heads standing above the leaves",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "right — a dense, deep-green sward of broad leaf blades with no stems or seed heads showing",
+    "askedInThisQuestion": true
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2024-ol-q14cii",
+  "topicId": "agsci-3-3-3",
+  "conceptId": "silage-quality-assessment",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 OL Q14(c)(ii)",
+  "stem": "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. One measure of silage quality is its dry matter (DM)%.",
+  "questionText": "Briefly describe two other ways to measure the quality of silage.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(2) + 2(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "pH / colour / smell / DM content / texture / leaf to stem",
+    "marks": 4,
+    "contextNote": "Name of each of your two ways, 2 marks each. The scheme notes \"Allow 2 + 2 for name or description\".",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "pH",
+      "colour",
+      "smell",
+      "DM content",
+      "texture",
+      "leaf to stem"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "squeeze liquid from silage / place pH probe into liquid and note the reading or dip pH paper in the liquid and compare to the colour chart / low pH indicates good quality / Yellow - green indicates good quality / dark green indicates poor quality / sharp acidic or vinegary indicates good quality / putrid or rancid indicates poor quality / squeeze with one hand / liquid removed indicates poor quality / wring with two hands / little or no liquid removed indicates good quality / rub the silage sample between your fingers / soft but firm or fibres do not wear easily indicates good quality / wet and slimy indicates poor quality / weigh sample of silage / separate leaves from the stems / weigh each separately / calculate the ratio of stem to leaves",
+    "marks": 4,
+    "contextNote": "Description of each of the same two ways, 2 marks each (2(2) + 2(2)). In order the options describe pH, colour, smell, DM content, texture and leaf to stem.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "squeeze liquid from silage / place pH probe into liquid and note the reading or dip pH paper in the liquid and compare to the colour chart / low pH indicates good quality",
+      "Yellow - green indicates good quality / dark green indicates poor quality",
+      "sharp acidic or vinegary indicates good quality / putrid or rancid indicates poor quality",
+      "squeeze with one hand / liquid removed indicates poor quality / wring with two hands / little or no liquid removed indicates good quality",
+      "rub the silage sample between your fingers / soft but firm or fibres do not wear easily indicates good quality / wet and slimy indicates poor quality",
+      "weigh sample of silage / separate leaves from the stems / weigh each separately / calculate the ratio of stem to leaves"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-3-3-3"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2024 Ordinary — Q14(c)(ii)",
+   "pages": [
+    23,
+    24
+   ],
+   "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-12"
+  }
+ },
+ {
+  "id": "agsci-2024-ol-q14d",
+  "topicId": "agsci-3-3-3",
+  "conceptId": "hay-versus-silage-preservation",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 OL Q14(d)",
+  "stem": "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms.",
+  "questionText": "Hay and silage are common feeds on livestock farms and are both a method of preserving grass. Compare the preserving of grass as hay and silage under the headings that follow using the list of words in the box. [Word list: Dehydration / 24 hours / Under plastic / Shed / 5 - 7 days / Fermentation. Headings: Length of drying, Method of preservation, Storage — each filled in for Hay and for Silage.]",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Length of drying, hay — 5 – 7 days",
+    "marks": 2,
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Length of drying, silage — 24 hours",
+    "marks": 2,
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Method of preservation, hay — Dehydration",
+    "marks": 2,
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Method of preservation, silage — Fermentation",
+    "marks": 2,
+    "id": "r-4"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Storage, hay — Shed",
+    "marks": 2,
+    "id": "r-5"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Storage, silage — Under plastic",
+    "marks": 2,
+    "id": "r-6"
+   }
+  ],
+  "curriculumNodeIds": [
+   "agsci-3-3-3"
+  ],
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2024 Ordinary — Q14(d)",
+   "pages": [
+    24
+   ],
+   "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
   "qa": {
    "gates": [
     "verbatim",

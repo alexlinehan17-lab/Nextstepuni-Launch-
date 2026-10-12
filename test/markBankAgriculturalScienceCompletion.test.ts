@@ -38,7 +38,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(57);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(56);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
   });
 
@@ -390,7 +390,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(14);
+    expect(review.paperReviews).toHaveLength(15);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -657,6 +657,41 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(map.q.find(q => q.n === '18')?.schemeNote).toContain('54');
   });
 
+  it('reconciles all 77 original 2024 Ordinary cards and adds the five missing parts', () => {
+    const year = ordinary.filter(card => card.year === 2024);
+    expect(year).toHaveLength(82);
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2024 OL'));
+    expect(tasks).toHaveLength(82);
+    const states = tasks.map(task => (task as { originalCard?: string }).originalCard);
+    expect(states.filter(state => state === 'unchanged')).toHaveLength(74);
+    expect(states.filter(state => state === 'corrected-in-place')).toHaveLength(3);
+    expect(states.filter(state => state === 'added')).toHaveLength(5);
+    for (const key of ['q5a', 'q6ai', 'q6aii', 'q7a', 'q13aii']) {
+      expect(review.tasks.find(task => task.cardIds.includes(`agsci-2024-ol-${key}`))!.selection).toMatchObject({ kind: 'closed', pooled: true });
+    }
+    // Tick and X answers: the paper crop asks, the scheme crop answers after reveal.
+    for (const id of ['agsci-2024-ol-q1a', 'agsci-2024-ol-q14aii']) {
+      const card = ordinary.find(candidate => candidate.id === id)!;
+      expect(card.kind === 'diagram' || card.kind === 'question').toBe(true);
+      expect((card as { questionFigure?: { src: string } }).questionFigure?.src, id).toContain('agsci-2024-ol-paper-');
+      expect((card as { figure?: { solution?: boolean } }).figure?.solution, id).toBe(true);
+    }
+    expect(get('agsci-2024-ol-q13biii').rows[0].verbatim).toBe('B');
+    expect(get('agsci-2024-ol-q14bi').rows[0].verbatim).toBe('B');
+    expect(get('agsci-2024-ol-q11aii').rows[0].verbatim).toBe('A');
+    const ways = get('agsci-2024-ol-q14cii');
+    expect(ways.rows.map(row => row.group?.options.length)).toEqual([6, 6]);
+    expect(marksClaimed(ways, {}, { 'r-1': [0, 1] })).toBe(4);
+    expect(marksClaimed(ways, {}, { 'r-1': [0, 1], 'r-2': [0, 1] })).toBe(8);
+    const hay = get('agsci-2024-ol-q14d');
+    expect(hay.rows).toHaveLength(6);
+    expect(marksClaimed(hay, { 'r-1': 'yes' })).toBe(2);
+    expect(get('agsci-2024-ol-q2biii').stem).not.toContain('Single file race');
+    const units = census.questionMarkChecks.filter(check => check.year === 2024 && check.level === 'ordinary');
+    expect(units).toHaveLength(18);
+    for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
+  });
+
   it('refuses Agricultural Science route siblings that differ only in which printed items were chosen', () => {
     // A printed any-N-of-M choice is ONE practice card (coordinator rule,
     // 2026-10-12). Siblings sharing a question address are allowed only for
@@ -742,7 +777,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(784);
+    expect(atlas.markBankCards).toHaveLength(866);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

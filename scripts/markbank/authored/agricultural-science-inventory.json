@@ -5077,135 +5077,153 @@
         "sha256": "b728e72363e7d7b7123f38884f637fcfad73adf2e32c6aaf57dce95eae52690e",
         "pages": 26
       },
-      "authoredEnglishCardsForSitting": 77,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 82,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "f20ee9787884d6ee",
           "page": 2,
           "cue": "Answer ten",
           "context": "nded that you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer ten questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 m",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section A, ten of twelve independent questions. Every question and both sides of each internal choice are retained."
         },
         {
           "id": "377a00c3ba8ea2cd",
           "page": 2,
           "cue": "any four",
           "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Day, Month and Year of Birth in the boxes on the front cover. Write your answers in bl",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section B, four of six independent questions. Every question is retained."
         },
         {
           "id": "ae7e26ead376acf7",
           "page": 3,
           "cue": "any ten",
           "context": "ate Examination 2024 3 Agricultural Science – Ordinary Level A Section A 100 marks Answer any ten questions. Each question carries 10 marks. Question 1 The diagram below shows a type of grazing system. Analyse the diagram and answer the questions that follow. (a) Place a tick () in the correct box below to show the direction",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: ten independent 10-mark questions, all retained."
         },
         {
           "id": "f53c880b06b4d0ba",
           "page": 4,
           "cue": "either",
           "context": "ng Certificate Examination 2024 4 Agricultural Science – Ordinary Level Question 2 Answer either (a) or (b). (a) Identify the machine from the photographs below that is involved in the farming practices listed in the table. Plough Baler Plate cooler Slurry tanker Farming practice Machine name Spreading animal waste on land R",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q2 either (a) or (b): both independently marked alternatives are retained."
         },
         {
           "id": "72605f73bb19c4b3",
           "page": 7,
           "cue": "any three",
           "context": "ive system of a calf. Analyse the diagram and answer the questions that follow. (a) Label any three parts of the diagram using the words in the list below. Omasum Abomasum Rumen Reticulum (b) Identify the first feed required by the calf by placing a tick () in the correct box. Hay Colostrum Milk Barley A: B: C: D: A B C D Oeso",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q5(a): label any three of the four lettered stomach parts, 3(2). The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
         },
         {
           "id": "dcf430b417ad8fe4",
           "page": 8,
           "cue": "either",
           "context": "ng Certificate Examination 2024 8 Agricultural Science – Ordinary Level Question 6 Answer either (a) or (b). (a) (i) The photographs below show some breeds of sheep found on Irish farms. Identify any three of the following breeds using the list below. Texel Suffolk Charolais Border Leicester A B C D (ii) Outline one reason w",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q6 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "db8c5487f0a8935f",
           "page": 8,
           "cue": "any three",
           "context": "). (a) (i) The photographs below show some breeds of sheep found on Irish farms. Identify any three of the following breeds using the list below. Texel Suffolk Charolais Border Leicester A B C D (ii) Outline one reason why any named breed in part (i) above is suitable for sheep meat production. Named breed: A: B: C: D:",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q6(a)(i): identify any three of the four sheep breeds A–D, 3(2). The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
         },
         {
           "id": "7a495caeee110e18",
           "page": 10,
           "cue": "any three",
           "context": "e four headings in the diagram above in relation to soil compaction, briefly describe how any three affect the growth of crops on the land. (b) Identify the % air in the ideal soil composition below by placing a tick () in the correct box. 45% 25% 5% Machine size Soil water content Tillage system Crop rotation Soil Compaction ",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q7(a): any three of the four printed soil-compaction headings, 3(2). The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
         },
         {
           "id": "9851e46935218bd6",
           "page": 11,
           "cue": "any three",
           "context": "ake significant differences in the health and welfare of the animals. (a) Briefly outline any three advantages of using jackets to improve the health and welfare of animals under the headings provided in the diagram below. (b) Briefly explain how one piece of technology you have studied can improve animals’ health and welfare o",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q8(a): any three advantages of jackets framed by four printed headings; the scheme marks one pool of advantages, not a pool per heading, so the headings are not answer routes."
         },
         {
           "id": "40981c6586dd4843",
           "page": 12,
           "cue": "either",
           "context": "g Certificate Examination 2024 12 Agricultural Science – Ordinary Level Question 9 Answer either (a) or (b). (a) The diagram shows the structure of a plant. Analyse the diagram and answer the questions that follow. (i) Identify the part of the plant that is involved in nutrient absorption. (ii) List two nutrients absorbed by",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "b3c8d3bbf76a7542",
           "page": 14,
           "cue": "Choose",
           "context": " answer the questions that follow. 1. Breed two organisms with desired characteristics 2. Choose the best offspring and breed 4. Over time characteristic increases 3. Repeat over many generations (i) Identify the desired characteristic being selectively bred. (ii) In step 2, state which hen A, B or C is the best offspring to",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Text inside the Q11(a) flowchart (\"Choose the best offspring and breed\"); no response choice."
         },
         {
           "id": "f048f0379636bf19",
           "page": 14,
           "cue": "either",
           "context": "() in the correct boxes. Marbling in meat Milk volume Early maturing Milk protein Answer either (a) or (b)",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q11 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "21fc1411c480cdfc",
           "page": 15,
           "cue": "choose",
           "context": "aracteristics of the Belgian Blue. (ii) State with reason which cow A or B a farmer would choose to cross with the Belgian Blue bull shown in the picture above. A B 1. 2. Cow: Reason:",
-          "classification": "pending"
+          "classification": "answer-identification",
+          "reason": "Q11(b)(ii): state which cow, A or B, to choose; one correct answer (B), not a route."
         },
         {
           "id": "01b2b759eebc6ee1",
           "page": 19,
           "cue": "any four",
           "context": "cate Examination 2024 19 Agricultural Science – Ordinary Level Section B 200 marks Answer any four questions. Each question carries 50 marks. Question 13 (a) Lisa was renting 40 hectares of land for her organic dairy farm. She carried out a number of tests to determine its productivity. One of the areas Lisa decided to investi",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B heading: four of six independent 50-mark questions, all retained."
         },
         {
           "id": "151e5877fd6cd086",
           "page": 19,
           "cue": "One of",
           "context": " her organic dairy farm. She carried out a number of tests to determine its productivity. One of the areas Lisa decided to investigate was the botanical composition of the land. Describe with the aid of a labelled diagram how she would carry out this investigation. Labelled diagram:",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q13(a) stem (\"One of the areas Lisa decided to investigate\"); no response choice."
         },
         {
           "id": "2c775fcd995a6bd2",
           "page": 20,
           "cue": "any three",
           "context": " Science – Ordinary Level (ii) Lisa found the following plants in the grassland. Identify any three of the plants using the list of words in the box below. Broad leaf dock Perennial ryegrass Nettle White clover A B C D (b) The results from the investigation are shown in the table below. Analyse the table and answer the question",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q13(a)(ii): identify any three of the four plants A–D, 3(4). The original one-card form already lets any printed choice score, so it is kept unchanged (item-choice siblings are not separate practice identities)."
         },
         {
           "id": "86eb3a30d4e75f80",
           "page": 25,
           "cue": "either",
           "context": "on 2024 25 Agricultural Science – Ordinary Level Question 15 Answer both (a) and (b) with either (c) or (d). The breeding season is an important and busy time on sheep farms to ensure successful lamb production. (a) (i) Outline the management practices of the ewe at mating under the headings that follow. Feeding Health (ii) ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q15: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "95305b1ad7da523c",
           "page": 34,
           "cue": "either",
           "context": "on 2024 34 Agricultural Science – Ordinary Level Question 18 Answer both (a) and (b) with either (c) or (d). (a) Calving is a very busy time on all beef and dairy farms so it is important for farmers to prepared in advance. (i) Outline three ways dairy farmers can prepare for the calving season in order to ensure the surviva",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q18: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         }
       ]
     },
@@ -5224,7 +5242,7 @@
         "sha256": "df16c8be28d8089ff6528da5fb40bf2f8774a6b96e703ebb5c34224ba373ae27",
         "pages": 26
       },
-      "authoredEnglishCardsForSitting": 77,
+      "authoredEnglishCardsForSitting": 82,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

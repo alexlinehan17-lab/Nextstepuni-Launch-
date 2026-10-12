@@ -970,9 +970,106 @@ POOLS_2024_HIGHER = {
     'Q15(a)(iii)': (1, ['Animal-related factors', 'Environmental conditions']),
 }
 
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER}
+# 2024 Ordinary: Section A Q1-Q12 at 10 marks, Section B Q13-Q18 at 50.
+ORDINARY_2024 = '''
+Q1(a)|3|3|12|direction of grazing
+Q1(b)|3|3|12|(Moveable)(Electric) Fence
+Q1(c)|2|3|12|Strip grazing
+Q1(d)|2|3|12|Leafy grass or more digestible grass
+Q2(a)|10|4|12|Plate cooler
+Q2(b)(i)|3|5|12|Restrain animals or allow treatment
+Q2(b)(ii)|3|5|12|natural circling behaviour of cattle
+Q2(b)(iii)|2|5|12|Easy to operate
+Q2(b)(iv)|2|5|12|Be careful of swinging gates
+Q3|10|6|13|Topography refers to the slope of the land
+Q4|10|6|13|Red water fever
+Q5(a)|6|7|13|A: Omasum
+Q5(b)|4|7|13|Identify the first feed required by the calf
+Q6(a)(i)|6|8|13|B: Border Leicester
+Q6(a)(ii)|4|8|13|large amount of muscle / lean meat
+Q6(b)(i)|3|9|14|Explain selective grazers.
+Q6(b)(ii)|3|9|14|Allow plants to recover
+Q6(b)(iii)|4|9|14|Reduced overgrazing
+Q7(a)|6|10|14|Machine size: big heavy machines compact the soil
+Q7(b)|4|10|14|Identify the % air in the ideal soil composition.
+Q8(a)|6|11|14|Help animals regulate body temperature
+Q8(b)|4|11|14|Collars can read the temperature of the cow
+Q9(a)(i)|3|12|15|Root(hairs)
+Q9(a)(ii)|4|12|15|N / P / K / Ca / Mg / S / other valid answer
+Q9(a)(iii)|3|12|15|Identify the bacteria found in clover
+Q9(b)|10|12|15|Fertiliser spreading
+Q10(a)|2|13|15|Explain artisan product.
+Q10(b)|2|13|15|Identify the meaning of niche market.
+Q10(c)(i)|3|13|15|Using your knowledge of the composition of cow’s milk
+Q10(c)(ii)|3|13|15|Protein or casein or whey
+Q11(a)(i)|3|14|16|Egg production
+Q11(a)(ii)|3|14|16|In step 2, state which hen A, B or C is the best offspring
+Q11(a)(iii)|4|14|16|two characteristics of dairy cattle.
+Q11(b)(i)|6|15|16|Double muscled
+Q11(b)(ii)|4|15|16|Cow: B or Charolais
+Q12(a)|8|16|16|amount of fertiliser
+Q12(b)|2|16|16|the plant growth (rate)
+Q13(a)(i)|16|19|17|Throw pen at random
+Q13(a)(ii)|12|20|17|A: Nettle
+Q13(b)(i)|6|20|17|4/10 x 100/1 = 40%
+Q13(b)(ii)|4|21|17|State: Quantitative
+Q13(b)(iii)|6|21|17|Identify the most suitable chart or graph
+Q13(b)(iv)|6|21|17|Quadrat was thrown multiple times
+Q14(a)(i)|6|22|18|Fertiliser applied (6 weeks in advance)
+Q14(a)(ii)|3|22|18|Identify the best time of the year to cut grass for silage by placing an X on the diagram.
+Q14(a)(iii)|3|22|18|Less digestible / poor yield
+Q14(b)(i)|2|22|18|Identify the correct stage of cutting the grass for silage
+Q14(b)(ii)|2|23|18|Leafy grass / no seed heads / more digestible
+Q14(b)(iii)|2|23|18|Identify the growth stage of plant B
+Q14(c)(i)|12|23|18|Cut a number of grass samples
+Q14(c)(ii)|8|24|19|Allow 2 + 2 for name or description
+Q14(d)|12|24|19|Method of preservation
+Q15(a)(i)|8|25|20|Flushing or high plane of nutrition
+Q15(a)(ii)|12|25|20|Fallopian tube
+Q15(b)(i)|8|26|20|Feet or legs / mouth / testicles
+Q15(b)(ii)|6|26|20|To mark the ewes that have been served.
+Q15(b)(iii)|2|26|20|State how often a raddle colour would be changed
+Q15(b)(iv)|6|26|20|Yellow / C
+Q15(c)(i)|6|27|20|Identify the average ratio of rams to ewes
+Q15(c)(ii)|2|27|20|prevent injury to the ram
+Q15(d)|8|27|20|Explain seasonal polyoestrous.
+Q16(a)(i)|3|28|21|Explain organic matter.
+Q16(a)(ii)|6|28|21|Add FYM / slurry
+Q16(a)(iii)|6|28|21|improves water retention
+Q16(a)(iv)|6|28|21|Rainfall or soil moisture
+Q16(b)|12|29|21|place in a crucible
+Q16(c)(i)|6|30|21|25/100 x 100/1 = 25(% OM)
+Q16(c)(ii)|5|30|21|Peat soil
+Q16(c)(iii)|6|30|21|25 x 0.58 = 14.5(%)
+Q17(a)(i)|3|31|22|Farmer gets to choose the sex of the calf
+Q17(a)(ii)|3|31|22|Incorporate genetics from years ago
+Q17(a)(iii)|12|31|22|Disadvantages: heat detection
+Q17(b)(i)|8|32|22|Barley (or another valid crop):
+Q17(b)(ii)|8|32|23|Harvested: combine harvester
+Q17(b)(iii)|4|32|23|Be careful of PTO
+Q17(c)|12|33|23|fans or machine hygiene
+Q18(a)(i)|12|34|24|Have all equipment (calving jack etc.)
+Q18(a)(ii)|11|34|24|Iodine on navel
+Q18(a)(iii)|6|34|24|(Holstein) Friesian
+Q18(b)|15|35|24|1st housing
+Q18(c)|6|35|24|High plane of nutrition / concentrates
+Q18(d)|6|35|24|State the duration of each of the following in dairy cows.
+'''
+
+POOLS_2024_ORDINARY = {
+    'Q5(a)': (3, ['A', 'B', 'C', 'D']),
+    'Q6(a)(i)': (3, ['A', 'B', 'C', 'D']),
+    'Q6(a)(ii)': (1, ['Texel', 'Suffolk', 'Charolais', 'Border Leicester']),
+    'Q7(a)': (3, ['Machine size', 'Soil water content', 'Tillage system', 'Crop rotation']),
+    'Q13(a)(ii)': (3, ['A', 'B', 'C', 'D']),
+}
+
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY}
 
 SOURCES = [
+    (2024, 'ordinary', 'G', ORDINARY_2024,
+     'dfdcb939847873c973368e2d59e01a1b9420a160d187398e4fed01131c273275',
+     'b728e72363e7d7b7123f38884f637fcfad73adf2e32c6aaf57dce95eae52690e'),
     (2024, 'higher', 'A', HIGHER_2024,
      '6dce8f33e8e14be906d7d48b0585be29982238a2579ab0d1ac1cadb2a2f0cd84',
      'a3ae68c8d965d958bc13054ef527ddf64d8f8991053859aae5b4823d69b3f225'),
@@ -1044,7 +1141,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -1094,6 +1191,8 @@ MODERN_LAYOUTS = {
     (2025,'higher'): {'either':{'Q2','Q3','Q4','Q9'}, 'bothWithEither':{'Q13','Q14'},
                       'marks':lambda n: 10 if n<=12 else 50},
     (2025,'ordinary'): {'either':{'Q1','Q9','Q11','Q12'}, 'bothWithEither':{'Q15','Q17'},
+                        'marks':lambda n: 10 if n<=12 else 50},
+    (2024,'ordinary'): {'either':{'Q2','Q6','Q9','Q11'}, 'bothWithEither':{'Q15','Q18'},
                         'marks':lambda n: 10 if n<=12 else 50},
     (2024,'higher'): {'either':{'Q2','Q3','Q6','Q9'}, 'bothWithEither':{'Q13','Q14'},
                       'marks':lambda n: 10 if n<=12 else 50,
@@ -1171,7 +1270,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82. Remaining editions stay open.')
 
 
 if __name__=='__main__':

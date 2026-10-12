@@ -443,7 +443,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(additions.size).toBe(556);
+    expect(additions.size).toBe(561);
     const live = decks.flatMap(([, cards]) => cards);
     expect(live.filter(card => additions.has(card.id)).map(card => card.id).sort()).toEqual([...additions].sort());
     expect(baselineCards(live).length + withdrawnFor(live).length).toBe(10_495);
@@ -473,6 +473,9 @@ describe('Mark Bank card preservation', () => {
       'agsci-2024-hl-q17cii': 'Replaces a flattened results table in the stem with the paper\'s own lead-in.',
       'agsci-2024-hl-q17ciii': 'Replaces a flattened results table in the stem with the paper\'s own lead-in.',
       'agsci-2024-hl-q18aiii': 'Any two of six printed dominant features at 6+2, not black coat and coat pattern only.',
+      'agsci-2024-ol-q2biii': 'Replaces a stem of run-together diagram labels with the paper\'s lead-in and the picture crop.',
+      'agsci-2024-ol-q14cii': 'Restores the published 2 + 2 for name or description: two names and two descriptions at 2 each.',
+      'agsci-2024-ol-q14d': 'Restores the published 6(2): six hay/silage cells at 2 marks each, not three paired rows.',
     };
     expect([...agriculturalReview.correctedCardIds].sort()).toEqual(Object.keys(corrected).sort());
     const live = new Map(decks.flatMap(([, cards]) => cards.map(card => [card.id, card] as const)));
