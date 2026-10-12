@@ -2455,5 +2455,229 @@
     "alt": "SEC 2022 Ordinary marking scheme notes on reasons for a front porch, with a sketch of a porch.",
     "attribution": "SEC Leaving Certificate Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2021-HL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q1-original.png",
+    "md5": "69921747133bd9b88f8e9150c2e159c6",
+    "alt": "Original SEC 2021 Higher Construction Studies Question 1: the printed question with a sketch of an accessible sheeted external door.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-HL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q2-original.png",
+    "md5": "6ba39e1d1f4729b69ea59bf175e3895c",
+    "alt": "Original SEC 2021 Higher Construction Studies Question 2: the printed question with a sketch of workers on a construction site.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-HL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q3-original.png",
+    "md5": "53afdbf2b2b0be62a87d479782c8fc54",
+    "alt": "Original SEC 2021 Higher Construction Studies Question 3: the printed question with the ground-floor plan of a semi-detached house and its rear garden, wall A-A marked.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-HL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q4-original.png",
+    "md5": "2f10a400e3bb5d328d307e6178d21684",
+    "alt": "Original SEC 2021 Higher Construction Studies Question 4: the printed question with the site location map showing sites A and B.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-HL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q5-original.png",
+    "md5": "edeac55271d6d251beebabcc3d743820",
+    "alt": "Original SEC 2021 Higher Construction Studies Question 5: the printed question with a sketch of the brick-clad timber-frame wall and all the construction and thermal data.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-HL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q6-original.png",
+    "md5": "b644de4bc9b36545fea418fe7efc4973",
+    "alt": "Original SEC 2021 Higher Construction Studies Question 6: the printed question with the elevation and ground-floor plan of an urban terraced house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-HL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q7-original.png",
+    "md5": "4b1a36ba06f256cefb122ed5aa28e128",
+    "alt": "Original SEC 2021 Higher Construction Studies Question 7: the printed question with a sketch of a rendered chimney stack on a slated roof.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-HL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q8-original.png",
+    "md5": "a44c2338f6b3ec046708aaec4274d225",
+    "alt": "Original SEC 2021 Higher Construction Studies Question 8: the printed question with a sketch of a wood-burning stove.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-HL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q9-original.png",
+    "md5": "b7cb8d8720d0b0fde977b6209de78fb3",
+    "alt": "Original SEC 2021 Higher Construction Studies Question 9: the printed question with a sketch of sockets above a kitchen worktop.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-HL-q10-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q10-original.png",
+    "md5": "b685b8e5791a03eebd97dc9355cc80db",
+    "alt": "Original SEC 2021 Higher Construction Studies Question 10: the printed question with a sketch of a barn-inspired rural house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-HL-q10-alt-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q10-alt-original.png",
+    "md5": "79678ca8235484a1046e2039ef8d7267",
+    "alt": "Original SEC 2021 Higher Construction Studies alternative Question 10: the printed Roscommon County Council quotation on reusing historic buildings and its two parts.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2021-HL-q1-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q1-section.png",
+    "md5": "4826a9cc7e5a4fef97acae05b2f5e52a",
+    "alt": "SEC model vertical section through the accessible threshold, cavity wall, insulated floor and strip foundation, with the detail lists (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q1-thermal-bridge": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q1-thermal-bridge.png",
+    "md5": "79b603ae591d903ccc1714f2e0048b81",
+    "alt": "SEC model threshold detail with an arrow to the vertical insulation, labelled “(b) Vertical Insulation”.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q2-procedures": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q2-procedures.png",
+    "md5": "5fd3585e738b4aea734c3ee254b9a16d",
+    "alt": "SEC 2021 Higher marking scheme notes on safety procedures for chimney repair, overhead cables and site hygiene, with sketches of scaffolding, bunting and signs (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q3-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q3-layout.png",
+    "md5": "bc5315543c3850abd39d563b569178fb",
+    "alt": "SEC model layouts and sketches of the garden home office, with the notes on each design consideration (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q4-services": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q4-services.png",
+    "md5": "0c214d663ca85f0b73a98aec38e2af05",
+    "alt": "SEC 2021 Higher marking scheme notes on the availability of services, with sketches of overhead lines and service connections.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q4-trees": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q4-trees.png",
+    "md5": "859ef55148b85dd41a942edc2d18b2d9",
+    "alt": "SEC 2021 Higher marking scheme notes on existing trees and hedgerows, with a sketch of a house among mature hedgerows.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q4-topography": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q4-topography.png",
+    "md5": "ce1bf11626e95965d4c56483584bd5e7",
+    "alt": "SEC 2021 Higher marking scheme notes on site topography, with sketches of a house sheltered below the skyline.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q4-factors": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q4-factors.png",
+    "md5": "c88900cbfc3840b40d5afbbe0996a257",
+    "alt": "SEC 2021 Higher marking scheme notes and sketches for all three site factors: services, trees and hedgerows, and topography.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q4-sites": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q4-sites.png",
+    "md5": "7929d5561b76b43cb527a374243866ed",
+    "alt": "SEC 2021 Higher marking scheme considerations for site A and site B, with sketches of each site.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q4-site-plans": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q4-site-plans.png",
+    "md5": "2e41815842bb481293192a5bc9f1ff9d",
+    "alt": "SEC model site sketches for sites A and B showing the house location and orientation, road entrance and driveway, with the notes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q5-calculation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q5-calculation.png",
+    "md5": "34bae22fd3aa063552c283cca093427a",
+    "alt": "SEC worked solution: the U-value table giving a total resistance of 5.424 and U = 0.184 W/m²°C, and the additional insulation of 42 mm.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q5-layers": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q5-layers.png",
+    "md5": "7d6584b422f77902c9bdf0468d70f14a",
+    "alt": "SEC model sketch of a timber-frame wall with the breather membrane and vapour control layer marked, and the notes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q6-low-impact": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q6-low-impact.png",
+    "md5": "5dd31d92db5e695977e521c6b5e6c7e5",
+    "alt": "SEC 2021 Higher marking scheme notes on low-environmental-impact features, with sketches of the timber frame, plan and cladding.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q6-features": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q6-features.png",
+    "md5": "71722d1ba682e99dc8d8eeab3db70020",
+    "alt": "SEC 2021 Higher marking scheme notes on added energy-saving features — PV panels, evacuated tubes, MVHR, a heat pump, triple glazing and extra insulation — with sketches (three pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q7-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q7-section.png",
+    "md5": "643d0bbf3132542cf25d67543de50314",
+    "alt": "SEC model section through the chimney stack and roof with the moisture details marked B, the detail lists and the two design details.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q8-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q8-system.png",
+    "md5": "ed826ea72a4cedfc6db7c66ad0a03ad0",
+    "alt": "SEC model single-line diagram of the stove supplying the cylinder and two radiator zones, with the typical pipe sizes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q8-features": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q8-features.png",
+    "md5": "7f34596843974966a3f71cc803796485",
+    "alt": "SEC 2021 Higher marking scheme notes on heating efficiency features — thermostatic valves, room thermostats, radiator design and time switches — with sketches (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q8-heat-pump": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q8-heat-pump.png",
+    "md5": "b5dd5d4e61688b108ae6979cc5912cfa",
+    "alt": "SEC 2021 Higher marking scheme notes on air-to-water heat pumps and their advantages, with a sketch of the outdoor unit.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q9-ring-main": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q9-ring-main.png",
+    "md5": "ac84e1e453ca1d2ded493d4203d091ed",
+    "alt": "SEC model ring main circuit from the distribution board through three sockets, with the cable sizes and colours.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q10-shading": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q10-shading.png",
+    "md5": "ea2e80b72f95f7fc3059cc5765008bed",
+    "alt": "SEC 2021 Higher marking scheme notes on reducing overheating — overhangs, brise-soleil, shutters, thermal mass, vegetation and dynamic glass — with sketches.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2021-HL-q10-setting": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-HL-q10-setting.png",
+    "md5": "1f042c8ffd854c6f1a45054db7aca370",
+    "alt": "SEC 2021 Higher marking scheme notes on how the house responds to its rural setting, with sketches of a hay barn and the house plan.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    "solution": true
   }
 }
