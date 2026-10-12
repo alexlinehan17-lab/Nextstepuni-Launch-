@@ -39,10 +39,12 @@
   collapse sibling cards, so `C(n, k)` expansion floods the deck: it produced
   286 cards for one Politics question and 360 for one English task before this
   rule (October 2026).
-- A choose-one pool may stay as one card per printed option only when the
-  scheme marks the options differently (different rows, allocations or
-  structure); its question text stays verbatim and the option is named in
-  `questionRef`. Options sharing one grid are one card.
+- A choose-one pool may stay as one card per printed option when the scheme
+  marks the options differently (different rows, allocations or structure) OR
+  the options sit under different syllabus topics (e.g. Geography "rivers /
+  coasts / mass movement"), so each card files under its own Topic Atlas
+  heading. Its question text stays verbatim and the option is named in
+  `questionRef`. Options that share one grid AND one topic are one card.
 - Apply selection analysis inside every split task, not just at the outer
   numbered-question level, so a task-internal "any two of five" is recognised
   and carded as one choice card with the right slots and tariff.
