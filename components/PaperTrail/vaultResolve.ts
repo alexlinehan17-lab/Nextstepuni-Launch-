@@ -117,6 +117,7 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   'applied-mathematics|2026|LC020GLP000IV.pdf',
   ...accountingTaskRuntime.reviewedPapers,
   'irish|2022|LC001ALP200IV.pdf',
+  'irish|2023|LC001ALP100IV.pdf',
   'irish|2024|LC001ALP100IV.pdf',
   'irish|2024|LC001ALP200IV.pdf',
   'irish|2024|LC001GLP100IV.pdf',
