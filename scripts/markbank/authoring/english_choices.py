@@ -26,15 +26,8 @@ def fingerprint(text):
     return hashlib.sha256(text.encode('utf-8')).hexdigest()
 
 
-def expand(task, decision):
-    if decision['questionSha256'] != fingerprint(task['questionText']):
-        raise ValueError(task['id'] + ': reviewed question wording changed')
-    if not decision.get('reason', '').strip():
-        raise ValueError(task['id'] + ': missing written selection decision')
-    if decision['kind'] != 'finite':
-        if decision['kind'] not in ('open', 'flexible', 'required', 'context'):
-            raise ValueError(task['id'] + ': unclassified selection directive')
-        return [task]
+def selections(task, decision):
+    """Every printed combination a reviewed pool decision allows."""
     groups = []
     for pool in decision['pools']:
         options = pool['options']
@@ -43,11 +36,27 @@ def expand(task, decision):
         if not 0 < pool['take'] <= len(options):
             raise ValueError(task['id'] + ': impossible selection size')
         groups.append(list(combinations(options, pool['take'])))
-    routes = []
+    chosen = []
     for selection in product(*groups):
         keys = [option['id'] for group in selection for option in group]
         if decision.get('distinctAcrossPools') and len(set(keys)) < len(keys):
             continue
+        chosen.append(selection)
+    return chosen
+
+
+def printed_choice_requirement(decision):
+    """The task-check line for a printed choice marked identically for every option."""
+    parts = [f"{pool['label']}: {pool['take']} of {len(pool['options'])}" for pool in decision['pools']]
+    distinct = ', each a different one' if decision.get('distinctAcrossPools') else ''
+    return (f"Make the choice the paper prints ({'; '.join(parts)}{distinct}). "
+            'Every choice is marked on the same grid.')
+
+
+def route_variants(task, decision, expected_key='expectedRoutes'):
+    """One route per printed combination (finite decisions; also enumerates a printed choice)."""
+    routes = []
+    for selection in selections(task, decision):
         route = deepcopy(task)
         components = [pool['id'] + '-' + '-'.join(option['id'] for option in choices)
                       for pool, choices in zip(decision['pools'], selection)]
@@ -65,11 +74,51 @@ def expand(task, decision):
         # The route retains the original published tariff and source/context.
         # Never multiply marks by the number of alternative routes.
         routes.append(route)
-    if len(routes) != decision['expectedRoutes']:
-        raise ValueError(f"{task['id']}: {len(routes)} routes, expected {decision['expectedRoutes']}")
+    if len(routes) != decision[expected_key]:
+        raise ValueError(f"{task['id']}: {len(routes)} routes, expected {decision[expected_key]}")
     if len({route['id'] for route in routes}) != len(routes):
         raise ValueError(task['id'] + ': repeated route identity')
     return routes
+
+
+def expand(task, decision):
+    if decision['questionSha256'] != fingerprint(task['questionText']):
+        raise ValueError(task['id'] + ': reviewed question wording changed')
+    if not decision.get('reason', '').strip():
+        raise ValueError(task['id'] + ': missing written selection decision')
+    if decision['kind'] == 'printed-choice':
+        # A finite printed choice that the scheme marks with the same content
+        # for every option is ONE card, never one card per combination
+        # (coordinator rule, 2026-10-12). The combinations are still validated.
+        count = len(route_variants(task, decision, 'printedChoices'))
+        if count < 2:
+            raise ValueError(task['id'] + ': a printed choice needs at least two options')
+        card = deepcopy(task)
+        card['printedChoice'] = {'choices': count, 'requirement': printed_choice_requirement(decision)}
+        return [card]
+    if decision['kind'] != 'finite':
+        if decision['kind'] not in ('open', 'flexible', 'required', 'context'):
+            raise ValueError(task['id'] + ': unclassified selection directive')
+        return [task]
+    return route_variants(task, decision)
+
+
+def enumerate_choices(tasks, decisions):
+    """Like review(), but lists every combination of each printed choice.
+
+    For audits and tests that pin the reviewed pools; the runtime publishes one
+    card per printed choice (review()).
+    """
+    cards, unreviewed = review(tasks, decisions)
+    out = []
+    for card in cards:
+        decision = decisions.get(card.get('choiceParentId', card['id']))
+        if card.get('printedChoice'):
+            task = {key: value for key, value in card.items() if key != 'printedChoice'}
+            out.extend(route_variants(task, decision, 'printedChoices'))
+        else:
+            out.append(card)
+    return out, unreviewed
 
 
 def review(tasks, decisions):

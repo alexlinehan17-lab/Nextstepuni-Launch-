@@ -9,7 +9,8 @@
    "level": "higher",
    "paper": 1,
    "tasks": 19,
-   "cards": 20,
+   "cards": 19,
+   "printedDuplicates": 0,
    "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
    "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31"
   },
@@ -19,7 +20,8 @@
    "level": "higher",
    "paper": 2,
    "tasks": 27,
-   "cards": 28,
+   "cards": 27,
+   "printedDuplicates": 0,
    "paperSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
    "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31"
   },
@@ -29,7 +31,8 @@
    "level": "higher",
    "paper": 1,
    "tasks": 19,
-   "cards": 20,
+   "cards": 19,
+   "printedDuplicates": 0,
    "paperSha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
    "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9"
   },
@@ -40,6 +43,7 @@
    "paper": 2,
    "tasks": 27,
    "cards": 27,
+   "printedDuplicates": 0,
    "paperSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
    "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9"
   },
@@ -49,7 +53,8 @@
    "level": "higher",
    "paper": 1,
    "tasks": 19,
-   "cards": 20,
+   "cards": 19,
+   "printedDuplicates": 0,
    "paperSha256": "1688f7fbf03ad59b3c712a7c9203e87a05d63df21fe9bc323a6f136ad4b51d17",
    "schemeSha256": "a70bbdafde8f03a842b8b52b2c151894daa86697db73aa83730ef7b00c3e5d49"
   },
@@ -60,6 +65,7 @@
    "paper": 2,
    "tasks": 23,
    "cards": 23,
+   "printedDuplicates": 0,
    "paperSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
    "schemeSha256": "a70bbdafde8f03a842b8b52b2c151894daa86697db73aa83730ef7b00c3e5d49"
   },
@@ -69,7 +75,8 @@
    "level": "higher",
    "paper": 1,
    "tasks": 19,
-   "cards": 34,
+   "cards": 19,
+   "printedDuplicates": 0,
    "paperSha256": "a8736e7ab6a70df1c5082cbe4037013f7b0fe2185432e82d1854ca133962a6af",
    "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512"
   },
@@ -79,7 +86,8 @@
    "level": "higher",
    "paper": 1,
    "tasks": 19,
-   "cards": 25,
+   "cards": 19,
+   "printedDuplicates": 0,
    "paperSha256": "be5995502b96260d62f6b4daa0b456344fcb71eca68f46f298250f39799d436b",
    "schemeSha256": "e787bb50a66a33be8e13c89e21dad8b981c6e7be805aee61245fbe4b6ab7a0df"
   },
@@ -89,7 +97,8 @@
    "level": "higher",
    "paper": 2,
    "tasks": 23,
-   "cards": 25,
+   "cards": 23,
+   "printedDuplicates": 0,
    "paperSha256": "3b1ad7198f5d79c3403190a0cb409c6b32e55315da73f7249fc4cb674c60b747",
    "schemeSha256": "e787bb50a66a33be8e13c89e21dad8b981c6e7be805aee61245fbe4b6ab7a0df"
   },
@@ -99,7 +108,8 @@
    "level": "higher",
    "paper": 1,
    "tasks": 19,
-   "cards": 20,
+   "cards": 19,
+   "printedDuplicates": 0,
    "paperSha256": "c3d418ab7f8ad20e6315e40322a83e0e994b62c36afde8231206291405f0f941",
    "schemeSha256": "a7970f165e738600e8f3226db66d7f5a4da1f1238c34696830eddc0104efff1f"
   },
@@ -110,6 +120,7 @@
    "paper": 2,
    "tasks": 23,
    "cards": 23,
+   "printedDuplicates": 0,
    "paperSha256": "59e15cabf0be4dd6127abeb097ba200c03fc66d7d684edab032c9707d60355df",
    "schemeSha256": "a7970f165e738600e8f3226db66d7f5a4da1f1238c34696830eddc0104efff1f"
   },
@@ -119,7 +130,8 @@
    "level": "higher",
    "paper": 1,
    "tasks": 19,
-   "cards": 21,
+   "cards": 19,
+   "printedDuplicates": 0,
    "paperSha256": "03235bda5290e5627605b78e8d8d5b6fa81a21ff8b605c5016224b85b1073961",
    "schemeSha256": "70848054647dc6c9f6f15ac0c4efe2aa41aa3438524f4e2bb2764883087cf225"
   },
@@ -130,6 +142,7 @@
    "paper": 2,
    "tasks": 23,
    "cards": 23,
+   "printedDuplicates": 0,
    "paperSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
    "schemeSha256": "70848054647dc6c9f6f15ac0c4efe2aa41aa3438524f4e2bb2764883087cf225"
   },
@@ -139,7 +152,8 @@
    "level": "higher",
    "paper": 1,
    "tasks": 19,
-   "cards": 24,
+   "cards": 19,
+   "printedDuplicates": 0,
    "paperSha256": "fa2ee483a139b7a6bb6689d7ef894ef01052b32451a609539aff5b793b4f95ce",
    "schemeSha256": "ea583e9592832ae169f04bae190a0ccdcc52481d807dd44624495e52d22be320"
   },
@@ -150,6 +164,7 @@
    "paper": 2,
    "tasks": 23,
    "cards": 23,
+   "printedDuplicates": 0,
    "paperSha256": "98a560ad7b42bfa5f18ce25d02383ffde18091b1e62ef0c822a7bd8b4b1f2474",
    "schemeSha256": "ea583e9592832ae169f04bae190a0ccdcc52481d807dd44624495e52d22be320"
   },
@@ -159,7 +174,8 @@
    "level": "higher",
    "paper": 1,
    "tasks": 19,
-   "cards": 20,
+   "cards": 19,
+   "printedDuplicates": 0,
    "paperSha256": "f385793c803cd54ff0367395fb10d1230e32413ed99a40328b1ce341b57ace2a",
    "schemeSha256": "083fb122da5ff788e1005d01cce7aabafc1321fb1250038cbf188c79448e3354"
   },
@@ -170,6 +186,7 @@
    "paper": 2,
    "tasks": 23,
    "cards": 23,
+   "printedDuplicates": 0,
    "paperSha256": "bd44843d48b09cd867269e85034be8b202db63c3fb12071d4b7b985ea5215fa4",
    "schemeSha256": "083fb122da5ff788e1005d01cce7aabafc1321fb1250038cbf188c79448e3354"
   },
@@ -179,7 +196,8 @@
    "level": "higher",
    "paper": 1,
    "tasks": 19,
-   "cards": 20,
+   "cards": 19,
+   "printedDuplicates": 0,
    "paperSha256": "197fc287a180cc0c7e0fb4b9296bb0cb3fbf11308ce4d25f48b81ce3663cee33",
    "schemeSha256": "74474e375f2d158a1d2bb61a48eb0cc71cc8dc3ddf6d418a89d1d1dcbad54804"
   },
@@ -190,6 +208,7 @@
    "paper": 2,
    "tasks": 23,
    "cards": 23,
+   "printedDuplicates": 0,
    "paperSha256": "9555d2e507357e830a8d9e36e8c321cffca7ca44c21e0640193b027542637cac",
    "schemeSha256": "74474e375f2d158a1d2bb61a48eb0cc71cc8dc3ddf6d418a89d1d1dcbad54804"
   }
@@ -726,13 +745,12 @@
   "english-2025-hl-p2-unseen-q2"
  ],
  "bridgeAliases": {
-  "english-2025-hl-p1-composing-2": "english-2025-hl-p1-composing-2-route-selection-1",
   "english-2025-hl-p2-comparative-a-q1": "english-2025-hl-p2-comparative-a-q1-a",
   "english-2025-hl-p2-comparative-b-q1": "english-2025-hl-p2-comparative-b-q1-a",
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 442,
+ "cardCount": 405,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -1341,59 +1359,21 @@
    }
   },
   {
-   "id": "english-2026-hl-p1-composing-5-route-selection-1",
+   "id": "english-2026-hl-p1-composing-5",
    "year": 2026,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2026 HL Paper 1 Composing 5 · Selected task: For the motion: Social-media influencers are best ignored",
-   "questionText": "The theme of this examination paper is ‘Influence’. Write a speech for or against the motion that: “Social-media influencers are best ignored.”\n\nFor this practice response — Selected task: For the motion: Social-media influencers are best ignored.",
+   "questionRef": "2026 HL Paper 1 Composing 5",
+   "questionText": "The theme of this examination paper is ‘Influence’. Write a speech for or against the motion that: “Social-media influencers are best ignored.”",
    "totalMarks": 100,
    "topicId": "english-9-1",
    "conceptId": "english-composing-speech",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
     "Use the conventions and register of the requested speech.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
-   "choiceParentId": "english-2026-hl-p1-composing-5",
-   "choiceLabel": "Selected task: For the motion: Social-media influencers are best ignored",
-   "schemePages": [
-    14,
-    19
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2026-higher",
-    "allocation": {
-     "P": 30,
-     "C": 30,
-     "L": 30,
-     "M": 10
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "5"
-   }
-  },
-  {
-   "id": "english-2026-hl-p1-composing-5-route-selection-2",
-   "year": 2026,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2026 HL Paper 1 Composing 5 · Selected task: Against the motion: Social-media influencers are best ignored",
-   "questionText": "The theme of this examination paper is ‘Influence’. Write a speech for or against the motion that: “Social-media influencers are best ignored.”\n\nFor this practice response — Selected task: Against the motion: Social-media influencers are best ignored.",
-   "totalMarks": 100,
-   "topicId": "english-9-1",
-   "conceptId": "english-composing-speech",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2026-hl-p1-composing-5",
-   "choiceLabel": "Selected task: Against the motion: Social-media influencers are best ignored",
    "schemePages": [
     14,
     19
@@ -1929,52 +1909,21 @@
    }
   },
   {
-   "id": "english-2026-hl-p2-comparative-b-q1-a-route-selection-1",
+   "id": "english-2026-hl-p2-comparative-b-q1-a",
    "year": 2026,
    "level": "higher",
    "paper": 2,
-   "questionRef": "2026 HL Paper 2 Comparative B Q1(a) · Selected direction: Formed predominantly by my emotional response",
-   "questionText": "In the case of one text on your comparative course, discuss whether your perception of the general vision and viewpoint was formed predominantly by your emotional or by your rational response to elements of this text. Develop your response with reference to your chosen text.\n\nFor this practice response — Selected direction: Formed predominantly by my emotional response.",
+   "questionRef": "2026 HL Paper 2 Comparative B Q1(a)",
+   "questionText": "In the case of one text on your comparative course, discuss whether your perception of the general vision and viewpoint was formed predominantly by your emotional or by your rational response to elements of this text. Develop your response with reference to your chosen text.",
    "totalMarks": 30,
    "topicId": "english-7-4",
    "conceptId": "english-comparative-response",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
    "stem": "Comparative B · General Vision and Viewpoint · Q1",
-   "choiceParentId": "english-2026-hl-p2-comparative-b-q1-a",
-   "choiceLabel": "Selected direction: Formed predominantly by my emotional response",
-   "schemePages": [
-    37
-   ],
-   "assessment": {
-    "mode": "combined",
-    "grid": "2026-higher"
-   },
-   "paperFileid": "LC002ALP200EV",
-   "atlas": {
-    "fileid": "LC002ALP200EV.pdf",
-    "n": "16"
-   }
-  },
-  {
-   "id": "english-2026-hl-p2-comparative-b-q1-a-route-selection-2",
-   "year": 2026,
-   "level": "higher",
-   "paper": 2,
-   "questionRef": "2026 HL Paper 2 Comparative B Q1(a) · Selected direction: Formed predominantly by my rational response",
-   "questionText": "In the case of one text on your comparative course, discuss whether your perception of the general vision and viewpoint was formed predominantly by your emotional or by your rational response to elements of this text. Develop your response with reference to your chosen text.\n\nFor this practice response — Selected direction: Formed predominantly by my rational response.",
-   "totalMarks": 30,
-   "topicId": "english-7-4",
-   "conceptId": "english-comparative-response",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "stem": "Comparative B · General Vision and Viewpoint · Q1",
-   "choiceParentId": "english-2026-hl-p2-comparative-b-q1-a",
-   "choiceLabel": "Selected direction: Formed predominantly by my rational response",
    "schemePages": [
     37
    ],
@@ -2985,59 +2934,21 @@
    }
   },
   {
-   "id": "english-2025-hl-p1-composing-2-route-selection-1",
+   "id": "english-2025-hl-p1-composing-2",
    "year": 2025,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2025 HL Paper 1 Composing 2 · Selected task: For the motion: Truth has become a valueless currency in today’s world",
-   "questionText": "The theme of this examination, ‘Perspectives’, explores how we see things in different ways. Write a speech for or against the motion that: “Truth has become a valueless currency in today’s world.”\n\nFor this practice response — Selected task: For the motion: Truth has become a valueless currency in today’s world.",
+   "questionRef": "2025 HL Paper 1 Composing 2",
+   "questionText": "The theme of this examination, ‘Perspectives’, explores how we see things in different ways. Write a speech for or against the motion that: “Truth has become a valueless currency in today’s world.”",
    "totalMarks": 100,
    "topicId": "english-9-1",
    "conceptId": "english-composing-speech",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
     "Use the conventions and register of the requested speech.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
-   "choiceParentId": "english-2025-hl-p1-composing-2",
-   "choiceLabel": "Selected task: For the motion: Truth has become a valueless currency in today’s world",
-   "schemePages": [
-    13,
-    15
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2025-higher",
-    "allocation": {
-     "P": 30,
-     "C": 30,
-     "L": 30,
-     "M": 10
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "2"
-   }
-  },
-  {
-   "id": "english-2025-hl-p1-composing-2-route-selection-2",
-   "year": 2025,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2025 HL Paper 1 Composing 2 · Selected task: Against the motion: Truth has become a valueless currency in today’s world",
-   "questionText": "The theme of this examination, ‘Perspectives’, explores how we see things in different ways. Write a speech for or against the motion that: “Truth has become a valueless currency in today’s world.”\n\nFor this practice response — Selected task: Against the motion: Truth has become a valueless currency in today’s world.",
-   "totalMarks": 100,
-   "topicId": "english-9-1",
-   "conceptId": "english-composing-speech",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2025-hl-p1-composing-2",
-   "choiceLabel": "Selected task: Against the motion: Truth has become a valueless currency in today’s world",
    "schemePages": [
     13,
     15
@@ -4565,58 +4476,21 @@
    }
   },
   {
-   "id": "english-2018-hl-p1-t3-b-route-selection-1",
+   "id": "english-2018-hl-p1-t3-b",
    "year": 2018,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2018 HL Paper 1 Text 3 QB · Selected task: Recommend reading the written text first",
-   "questionText": "Write an article for your school website, in which you consider the experience of reading a text and watching a film adaptation of the same text. In your article you should identify at least one written text which has been adapted as a film. Consider the advantages and disadvantages of each of these formats, and explain which format you would recommend as the way in which to experience the text(s) for the first time. You may refer to any text(s) of your choice in your answer.\n\nFor this practice response — Selected task: Recommend reading the written text first.",
+   "questionRef": "2018 HL Paper 1 Text 3 QB",
+   "questionText": "Write an article for your school website, in which you consider the experience of reading a text and watching a film adaptation of the same text. In your article you should identify at least one written text which has been adapted as a film. Consider the advantages and disadvantages of each of these formats, and explain which format you would recommend as the way in which to experience the text(s) for the first time. You may refer to any text(s) of your choice in your answer.",
    "totalMarks": 50,
    "topicId": "english-10-1",
    "conceptId": "english-functional-writing",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
     "Use the conventions and register of the requested article.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
-   "choiceParentId": "english-2018-hl-p1-t3-b",
-   "choiceLabel": "Selected task: Recommend reading the written text first",
-   "schemePages": [
-    12
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2018-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "13"
-   }
-  },
-  {
-   "id": "english-2018-hl-p1-t3-b-route-selection-2",
-   "year": 2018,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2018 HL Paper 1 Text 3 QB · Selected task: Recommend watching the film adaptation first",
-   "questionText": "Write an article for your school website, in which you consider the experience of reading a text and watching a film adaptation of the same text. In your article you should identify at least one written text which has been adapted as a film. Consider the advantages and disadvantages of each of these formats, and explain which format you would recommend as the way in which to experience the text(s) for the first time. You may refer to any text(s) of your choice in your answer.\n\nFor this practice response — Selected task: Recommend watching the film adaptation first.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Use the conventions and register of the requested article.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2018-hl-p1-t3-b",
-   "choiceLabel": "Selected task: Recommend watching the film adaptation first",
    "schemePages": [
     12
    ],
@@ -5711,17 +5585,18 @@
    }
   },
   {
-   "id": "english-2016-hl-p1-t1-a-ii-route-selection-1",
+   "id": "english-2016-hl-p1-t1-a-ii",
    "year": 2016,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QA(ii) · Selected option: Poster 1",
-   "questionText": "From the four posters in the above text, choose the poster that you think is most effective in advertising a production of the play, The Comedy of Errors. Explain your choice with reference to the written text and the content and visual appeal of the poster.\n\nFor this practice response — Selected option: Poster 1.",
+   "questionRef": "2016 HL Paper 1 Text 1 QA(ii)",
+   "questionText": "From the four posters in the above text, choose the poster that you think is most effective in advertising a production of the play, The Comedy of Errors. Explain your choice with reference to the written text and the content and visual appeal of the poster.",
    "totalMarks": 15,
    "topicId": "english-10-0",
    "conceptId": "english-comprehending-insights",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 1 of 4). Every choice is marked on the same grid.",
     "Read and use the official source material supplied with the card.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
@@ -5736,131 +5611,6 @@
     "attribution": "Andrew Dickson — written text adapted from his book Worlds Elsewhere – Journeys Around Shakespeare’s Globe, with four posters for The Comedy of Errors. As reproduced in the SEC 2016 paper.",
     "presentationNote": "Official State Examinations Commission examination layout."
    },
-   "choiceParentId": "english-2016-hl-p1-t1-a-ii",
-   "choiceLabel": "Selected option: Poster 1",
-   "schemePages": [
-    5
-   ],
-   "assessment": {
-    "mode": "combined",
-    "grid": "2016-higher"
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "8"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-a-ii-route-selection-2",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QA(ii) · Selected option: Poster 2",
-   "questionText": "From the four posters in the above text, choose the poster that you think is most effective in advertising a production of the play, The Comedy of Errors. Explain your choice with reference to the written text and the content and visual appeal of the poster.\n\nFor this practice response — Selected option: Poster 2.",
-   "totalMarks": 15,
-   "topicId": "english-10-0",
-   "conceptId": "english-comprehending-insights",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-text",
-    "label": "TEXT 1",
-    "title": "A Dramatic Journey",
-    "pages": [
-     2,
-     3
-    ],
-    "attribution": "Andrew Dickson — written text adapted from his book Worlds Elsewhere – Journeys Around Shakespeare’s Globe, with four posters for The Comedy of Errors. As reproduced in the SEC 2016 paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-a-ii",
-   "choiceLabel": "Selected option: Poster 2",
-   "schemePages": [
-    5
-   ],
-   "assessment": {
-    "mode": "combined",
-    "grid": "2016-higher"
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "8"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-a-ii-route-selection-3",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QA(ii) · Selected option: Poster 3",
-   "questionText": "From the four posters in the above text, choose the poster that you think is most effective in advertising a production of the play, The Comedy of Errors. Explain your choice with reference to the written text and the content and visual appeal of the poster.\n\nFor this practice response — Selected option: Poster 3.",
-   "totalMarks": 15,
-   "topicId": "english-10-0",
-   "conceptId": "english-comprehending-insights",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-text",
-    "label": "TEXT 1",
-    "title": "A Dramatic Journey",
-    "pages": [
-     2,
-     3
-    ],
-    "attribution": "Andrew Dickson — written text adapted from his book Worlds Elsewhere – Journeys Around Shakespeare’s Globe, with four posters for The Comedy of Errors. As reproduced in the SEC 2016 paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-a-ii",
-   "choiceLabel": "Selected option: Poster 3",
-   "schemePages": [
-    5
-   ],
-   "assessment": {
-    "mode": "combined",
-    "grid": "2016-higher"
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "8"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-a-ii-route-selection-4",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QA(ii) · Selected option: Poster 4",
-   "questionText": "From the four posters in the above text, choose the poster that you think is most effective in advertising a production of the play, The Comedy of Errors. Explain your choice with reference to the written text and the content and visual appeal of the poster.\n\nFor this practice response — Selected option: Poster 4.",
-   "totalMarks": 15,
-   "topicId": "english-10-0",
-   "conceptId": "english-comprehending-insights",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-text",
-    "label": "TEXT 1",
-    "title": "A Dramatic Journey",
-    "pages": [
-     2,
-     3
-    ],
-    "attribution": "Andrew Dickson — written text adapted from his book Worlds Elsewhere – Journeys Around Shakespeare’s Globe, with four posters for The Comedy of Errors. As reproduced in the SEC 2016 paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-a-ii",
-   "choiceLabel": "Selected option: Poster 4",
    "schemePages": [
     5
    ],
@@ -5915,17 +5665,18 @@
    }
   },
   {
-   "id": "english-2016-hl-p1-t1-b-route-first-1--second-2",
+   "id": "english-2016-hl-p1-t1-b",
    "year": 2016,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QB · First prize: Poster 1 · Second prize: Poster 2",
-   "questionText": "Imagine that you are the adjudicator for a poster competition; entries must promote a production of Shakespeare’s play, The Comedy of Errors to a contemporary audience. The entries on Page 2 represent the finalists in the competition. Write a speech in which you announce the first and second prize winners. In your speech you should explain your judgement, commenting on the visual appeal of the first and second prize winning entries and their effectiveness in promoting a production of this Shakespearean play to a contemporary audience.\n\nFor this practice response — First prize: Poster 1. Second prize: Poster 2.",
+   "questionRef": "2016 HL Paper 1 Text 1 QB",
+   "questionText": "Imagine that you are the adjudicator for a poster competition; entries must promote a production of Shakespeare’s play, The Comedy of Errors to a contemporary audience. The entries on Page 2 represent the finalists in the competition. Write a speech in which you announce the first and second prize winners. In your speech you should explain your judgement, commenting on the visual appeal of the first and second prize winning entries and their effectiveness in promoting a production of this Shakespearean play to a contemporary audience.",
    "totalMarks": 50,
    "topicId": "english-10-1",
    "conceptId": "english-functional-writing",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (First prize: 1 of 4; Second prize: 1 of 4, each a different one). Every choice is marked on the same grid.",
     "Read and use the official source material supplied with the card.",
     "Use the conventions and register of the requested speech.",
     "Sustain a clear, purposeful response in an appropriate register."
@@ -5940,525 +5691,6 @@
     "attribution": "Four posters as reproduced in Text 1 of the SEC 2016 Higher Level English paper.",
     "presentationNote": "Official State Examinations Commission examination layout."
    },
-   "choiceParentId": "english-2016-hl-p1-t1-b",
-   "choiceLabel": "First prize: Poster 1 · Second prize: Poster 2",
-   "schemePages": [
-    6
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2016-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "9"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-b-route-first-1--second-3",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QB · First prize: Poster 1 · Second prize: Poster 3",
-   "questionText": "Imagine that you are the adjudicator for a poster competition; entries must promote a production of Shakespeare’s play, The Comedy of Errors to a contemporary audience. The entries on Page 2 represent the finalists in the competition. Write a speech in which you announce the first and second prize winners. In your speech you should explain your judgement, commenting on the visual appeal of the first and second prize winning entries and their effectiveness in promoting a production of this Shakespearean play to a contemporary audience.\n\nFor this practice response — First prize: Poster 1. Second prize: Poster 3.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-illustration",
-    "label": "POSTER FINALISTS",
-    "title": "The Comedy of Errors — four competition posters",
-    "pages": [
-     2
-    ],
-    "attribution": "Four posters as reproduced in Text 1 of the SEC 2016 Higher Level English paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-b",
-   "choiceLabel": "First prize: Poster 1 · Second prize: Poster 3",
-   "schemePages": [
-    6
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2016-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "9"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-b-route-first-1--second-4",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QB · First prize: Poster 1 · Second prize: Poster 4",
-   "questionText": "Imagine that you are the adjudicator for a poster competition; entries must promote a production of Shakespeare’s play, The Comedy of Errors to a contemporary audience. The entries on Page 2 represent the finalists in the competition. Write a speech in which you announce the first and second prize winners. In your speech you should explain your judgement, commenting on the visual appeal of the first and second prize winning entries and their effectiveness in promoting a production of this Shakespearean play to a contemporary audience.\n\nFor this practice response — First prize: Poster 1. Second prize: Poster 4.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-illustration",
-    "label": "POSTER FINALISTS",
-    "title": "The Comedy of Errors — four competition posters",
-    "pages": [
-     2
-    ],
-    "attribution": "Four posters as reproduced in Text 1 of the SEC 2016 Higher Level English paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-b",
-   "choiceLabel": "First prize: Poster 1 · Second prize: Poster 4",
-   "schemePages": [
-    6
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2016-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "9"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-b-route-first-2--second-1",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QB · First prize: Poster 2 · Second prize: Poster 1",
-   "questionText": "Imagine that you are the adjudicator for a poster competition; entries must promote a production of Shakespeare’s play, The Comedy of Errors to a contemporary audience. The entries on Page 2 represent the finalists in the competition. Write a speech in which you announce the first and second prize winners. In your speech you should explain your judgement, commenting on the visual appeal of the first and second prize winning entries and their effectiveness in promoting a production of this Shakespearean play to a contemporary audience.\n\nFor this practice response — First prize: Poster 2. Second prize: Poster 1.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-illustration",
-    "label": "POSTER FINALISTS",
-    "title": "The Comedy of Errors — four competition posters",
-    "pages": [
-     2
-    ],
-    "attribution": "Four posters as reproduced in Text 1 of the SEC 2016 Higher Level English paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-b",
-   "choiceLabel": "First prize: Poster 2 · Second prize: Poster 1",
-   "schemePages": [
-    6
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2016-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "9"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-b-route-first-2--second-3",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QB · First prize: Poster 2 · Second prize: Poster 3",
-   "questionText": "Imagine that you are the adjudicator for a poster competition; entries must promote a production of Shakespeare’s play, The Comedy of Errors to a contemporary audience. The entries on Page 2 represent the finalists in the competition. Write a speech in which you announce the first and second prize winners. In your speech you should explain your judgement, commenting on the visual appeal of the first and second prize winning entries and their effectiveness in promoting a production of this Shakespearean play to a contemporary audience.\n\nFor this practice response — First prize: Poster 2. Second prize: Poster 3.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-illustration",
-    "label": "POSTER FINALISTS",
-    "title": "The Comedy of Errors — four competition posters",
-    "pages": [
-     2
-    ],
-    "attribution": "Four posters as reproduced in Text 1 of the SEC 2016 Higher Level English paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-b",
-   "choiceLabel": "First prize: Poster 2 · Second prize: Poster 3",
-   "schemePages": [
-    6
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2016-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "9"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-b-route-first-2--second-4",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QB · First prize: Poster 2 · Second prize: Poster 4",
-   "questionText": "Imagine that you are the adjudicator for a poster competition; entries must promote a production of Shakespeare’s play, The Comedy of Errors to a contemporary audience. The entries on Page 2 represent the finalists in the competition. Write a speech in which you announce the first and second prize winners. In your speech you should explain your judgement, commenting on the visual appeal of the first and second prize winning entries and their effectiveness in promoting a production of this Shakespearean play to a contemporary audience.\n\nFor this practice response — First prize: Poster 2. Second prize: Poster 4.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-illustration",
-    "label": "POSTER FINALISTS",
-    "title": "The Comedy of Errors — four competition posters",
-    "pages": [
-     2
-    ],
-    "attribution": "Four posters as reproduced in Text 1 of the SEC 2016 Higher Level English paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-b",
-   "choiceLabel": "First prize: Poster 2 · Second prize: Poster 4",
-   "schemePages": [
-    6
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2016-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "9"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-b-route-first-3--second-1",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QB · First prize: Poster 3 · Second prize: Poster 1",
-   "questionText": "Imagine that you are the adjudicator for a poster competition; entries must promote a production of Shakespeare’s play, The Comedy of Errors to a contemporary audience. The entries on Page 2 represent the finalists in the competition. Write a speech in which you announce the first and second prize winners. In your speech you should explain your judgement, commenting on the visual appeal of the first and second prize winning entries and their effectiveness in promoting a production of this Shakespearean play to a contemporary audience.\n\nFor this practice response — First prize: Poster 3. Second prize: Poster 1.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-illustration",
-    "label": "POSTER FINALISTS",
-    "title": "The Comedy of Errors — four competition posters",
-    "pages": [
-     2
-    ],
-    "attribution": "Four posters as reproduced in Text 1 of the SEC 2016 Higher Level English paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-b",
-   "choiceLabel": "First prize: Poster 3 · Second prize: Poster 1",
-   "schemePages": [
-    6
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2016-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "9"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-b-route-first-3--second-2",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QB · First prize: Poster 3 · Second prize: Poster 2",
-   "questionText": "Imagine that you are the adjudicator for a poster competition; entries must promote a production of Shakespeare’s play, The Comedy of Errors to a contemporary audience. The entries on Page 2 represent the finalists in the competition. Write a speech in which you announce the first and second prize winners. In your speech you should explain your judgement, commenting on the visual appeal of the first and second prize winning entries and their effectiveness in promoting a production of this Shakespearean play to a contemporary audience.\n\nFor this practice response — First prize: Poster 3. Second prize: Poster 2.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-illustration",
-    "label": "POSTER FINALISTS",
-    "title": "The Comedy of Errors — four competition posters",
-    "pages": [
-     2
-    ],
-    "attribution": "Four posters as reproduced in Text 1 of the SEC 2016 Higher Level English paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-b",
-   "choiceLabel": "First prize: Poster 3 · Second prize: Poster 2",
-   "schemePages": [
-    6
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2016-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "9"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-b-route-first-3--second-4",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QB · First prize: Poster 3 · Second prize: Poster 4",
-   "questionText": "Imagine that you are the adjudicator for a poster competition; entries must promote a production of Shakespeare’s play, The Comedy of Errors to a contemporary audience. The entries on Page 2 represent the finalists in the competition. Write a speech in which you announce the first and second prize winners. In your speech you should explain your judgement, commenting on the visual appeal of the first and second prize winning entries and their effectiveness in promoting a production of this Shakespearean play to a contemporary audience.\n\nFor this practice response — First prize: Poster 3. Second prize: Poster 4.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-illustration",
-    "label": "POSTER FINALISTS",
-    "title": "The Comedy of Errors — four competition posters",
-    "pages": [
-     2
-    ],
-    "attribution": "Four posters as reproduced in Text 1 of the SEC 2016 Higher Level English paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-b",
-   "choiceLabel": "First prize: Poster 3 · Second prize: Poster 4",
-   "schemePages": [
-    6
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2016-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "9"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-b-route-first-4--second-1",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QB · First prize: Poster 4 · Second prize: Poster 1",
-   "questionText": "Imagine that you are the adjudicator for a poster competition; entries must promote a production of Shakespeare’s play, The Comedy of Errors to a contemporary audience. The entries on Page 2 represent the finalists in the competition. Write a speech in which you announce the first and second prize winners. In your speech you should explain your judgement, commenting on the visual appeal of the first and second prize winning entries and their effectiveness in promoting a production of this Shakespearean play to a contemporary audience.\n\nFor this practice response — First prize: Poster 4. Second prize: Poster 1.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-illustration",
-    "label": "POSTER FINALISTS",
-    "title": "The Comedy of Errors — four competition posters",
-    "pages": [
-     2
-    ],
-    "attribution": "Four posters as reproduced in Text 1 of the SEC 2016 Higher Level English paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-b",
-   "choiceLabel": "First prize: Poster 4 · Second prize: Poster 1",
-   "schemePages": [
-    6
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2016-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "9"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-b-route-first-4--second-2",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QB · First prize: Poster 4 · Second prize: Poster 2",
-   "questionText": "Imagine that you are the adjudicator for a poster competition; entries must promote a production of Shakespeare’s play, The Comedy of Errors to a contemporary audience. The entries on Page 2 represent the finalists in the competition. Write a speech in which you announce the first and second prize winners. In your speech you should explain your judgement, commenting on the visual appeal of the first and second prize winning entries and their effectiveness in promoting a production of this Shakespearean play to a contemporary audience.\n\nFor this practice response — First prize: Poster 4. Second prize: Poster 2.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-illustration",
-    "label": "POSTER FINALISTS",
-    "title": "The Comedy of Errors — four competition posters",
-    "pages": [
-     2
-    ],
-    "attribution": "Four posters as reproduced in Text 1 of the SEC 2016 Higher Level English paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-b",
-   "choiceLabel": "First prize: Poster 4 · Second prize: Poster 2",
-   "schemePages": [
-    6
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2016-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "9"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-t1-b-route-first-4--second-3",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Text 1 QB · First prize: Poster 4 · Second prize: Poster 3",
-   "questionText": "Imagine that you are the adjudicator for a poster competition; entries must promote a production of Shakespeare’s play, The Comedy of Errors to a contemporary audience. The entries on Page 2 represent the finalists in the competition. Write a speech in which you announce the first and second prize winners. In your speech you should explain your judgement, commenting on the visual appeal of the first and second prize winning entries and their effectiveness in promoting a production of this Shakespearean play to a contemporary audience.\n\nFor this practice response — First prize: Poster 4. Second prize: Poster 3.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-illustration",
-    "label": "POSTER FINALISTS",
-    "title": "The Comedy of Errors — four competition posters",
-    "pages": [
-     2
-    ],
-    "attribution": "Four posters as reproduced in Text 1 of the SEC 2016 Higher Level English paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2016-hl-p1-t1-b",
-   "choiceLabel": "First prize: Poster 4 · Second prize: Poster 3",
    "schemePages": [
     6
    ],
@@ -6947,59 +6179,21 @@
    }
   },
   {
-   "id": "english-2016-hl-p1-composing-5-route-selection-1",
+   "id": "english-2016-hl-p1-composing-5",
    "year": 2016,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2016 HL Paper 1 Composing 5 · Selected task: For the motion",
-   "questionText": "In TEXT 1, Shakespeare’s characters encounter many adventures on their travels. Write a speech, for a class debate for or against the motion: “Young people should travel and see the world before joining the workforce or furthering their education.”\n\nFor this practice response — Selected task: For the motion.",
+   "questionRef": "2016 HL Paper 1 Composing 5",
+   "questionText": "In TEXT 1, Shakespeare’s characters encounter many adventures on their travels. Write a speech, for a class debate for or against the motion: “Young people should travel and see the world before joining the workforce or furthering their education.”",
    "totalMarks": 100,
    "topicId": "english-9-1",
    "conceptId": "english-composing-speech",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
     "Use the conventions and register of the requested speech.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
-   "choiceParentId": "english-2016-hl-p1-composing-5",
-   "choiceLabel": "Selected task: For the motion",
-   "schemePages": [
-    15,
-    17
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2016-higher",
-    "allocation": {
-     "P": 30,
-     "C": 30,
-     "L": 30,
-     "M": 10
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "5"
-   }
-  },
-  {
-   "id": "english-2016-hl-p1-composing-5-route-selection-2",
-   "year": 2016,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2016 HL Paper 1 Composing 5 · Selected task: Against the motion",
-   "questionText": "In TEXT 1, Shakespeare’s characters encounter many adventures on their travels. Write a speech, for a class debate for or against the motion: “Young people should travel and see the world before joining the workforce or furthering their education.”\n\nFor this practice response — Selected task: Against the motion.",
-   "totalMarks": 100,
-   "topicId": "english-9-1",
-   "conceptId": "english-composing-speech",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2016-hl-p1-composing-5",
-   "choiceLabel": "Selected task: Against the motion",
    "schemePages": [
     15,
     17
@@ -7365,196 +6559,20 @@
    }
   },
   {
-   "id": "english-2015-hl-p1-t2-b-route-selection-1",
+   "id": "english-2015-hl-p1-t2-b",
    "year": 2015,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2015 HL Paper 1 Text 2 QB · Selected task: Detective fiction",
-   "questionText": "The writing group, to which you belong, has decided to develop a website, aimed at aspiring young writers. You have been asked to contribute an article on one of the following genres: detective fiction; travel writing; humour; romance; autobiography; the short story. Write the article you would contribute, discussing at least two important characteristics of your chosen genre and offering advice to young people wishing to engage in this type of writing.\n\nFor this practice response — Selected task: Detective fiction.",
+   "questionRef": "2015 HL Paper 1 Text 2 QB",
+   "questionText": "The writing group, to which you belong, has decided to develop a website, aimed at aspiring young writers. You have been asked to contribute an article on one of the following genres: detective fiction; travel writing; humour; romance; autobiography; the short story. Write the article you would contribute, discussing at least two important characteristics of your chosen genre and offering advice to young people wishing to engage in this type of writing.",
    "totalMarks": 50,
    "topicId": "english-10-1",
    "conceptId": "english-functional-writing",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 6). Every choice is marked on the same grid.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
-   "choiceParentId": "english-2015-hl-p1-t2-b",
-   "choiceLabel": "Selected task: Detective fiction",
-   "schemePages": [
-    11
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2015-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "11"
-   }
-  },
-  {
-   "id": "english-2015-hl-p1-t2-b-route-selection-2",
-   "year": 2015,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2015 HL Paper 1 Text 2 QB · Selected task: Travel writing",
-   "questionText": "The writing group, to which you belong, has decided to develop a website, aimed at aspiring young writers. You have been asked to contribute an article on one of the following genres: detective fiction; travel writing; humour; romance; autobiography; the short story. Write the article you would contribute, discussing at least two important characteristics of your chosen genre and offering advice to young people wishing to engage in this type of writing.\n\nFor this practice response — Selected task: Travel writing.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2015-hl-p1-t2-b",
-   "choiceLabel": "Selected task: Travel writing",
-   "schemePages": [
-    11
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2015-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "11"
-   }
-  },
-  {
-   "id": "english-2015-hl-p1-t2-b-route-selection-3",
-   "year": 2015,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2015 HL Paper 1 Text 2 QB · Selected task: Humour",
-   "questionText": "The writing group, to which you belong, has decided to develop a website, aimed at aspiring young writers. You have been asked to contribute an article on one of the following genres: detective fiction; travel writing; humour; romance; autobiography; the short story. Write the article you would contribute, discussing at least two important characteristics of your chosen genre and offering advice to young people wishing to engage in this type of writing.\n\nFor this practice response — Selected task: Humour.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2015-hl-p1-t2-b",
-   "choiceLabel": "Selected task: Humour",
-   "schemePages": [
-    11
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2015-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "11"
-   }
-  },
-  {
-   "id": "english-2015-hl-p1-t2-b-route-selection-4",
-   "year": 2015,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2015 HL Paper 1 Text 2 QB · Selected task: Romance",
-   "questionText": "The writing group, to which you belong, has decided to develop a website, aimed at aspiring young writers. You have been asked to contribute an article on one of the following genres: detective fiction; travel writing; humour; romance; autobiography; the short story. Write the article you would contribute, discussing at least two important characteristics of your chosen genre and offering advice to young people wishing to engage in this type of writing.\n\nFor this practice response — Selected task: Romance.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2015-hl-p1-t2-b",
-   "choiceLabel": "Selected task: Romance",
-   "schemePages": [
-    11
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2015-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "11"
-   }
-  },
-  {
-   "id": "english-2015-hl-p1-t2-b-route-selection-5",
-   "year": 2015,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2015 HL Paper 1 Text 2 QB · Selected task: Autobiography",
-   "questionText": "The writing group, to which you belong, has decided to develop a website, aimed at aspiring young writers. You have been asked to contribute an article on one of the following genres: detective fiction; travel writing; humour; romance; autobiography; the short story. Write the article you would contribute, discussing at least two important characteristics of your chosen genre and offering advice to young people wishing to engage in this type of writing.\n\nFor this practice response — Selected task: Autobiography.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2015-hl-p1-t2-b",
-   "choiceLabel": "Selected task: Autobiography",
-   "schemePages": [
-    11
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2015-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "11"
-   }
-  },
-  {
-   "id": "english-2015-hl-p1-t2-b-route-selection-6",
-   "year": 2015,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2015 HL Paper 1 Text 2 QB · Selected task: The short story",
-   "questionText": "The writing group, to which you belong, has decided to develop a website, aimed at aspiring young writers. You have been asked to contribute an article on one of the following genres: detective fiction; travel writing; humour; romance; autobiography; the short story. Write the article you would contribute, discussing at least two important characteristics of your chosen genre and offering advice to young people wishing to engage in this type of writing.\n\nFor this practice response — Selected task: The short story.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2015-hl-p1-t2-b",
-   "choiceLabel": "Selected task: The short story",
    "schemePages": [
     11
    ],
@@ -7871,57 +6889,20 @@
    }
   },
   {
-   "id": "english-2015-hl-p1-composing-5-route-selection-1",
+   "id": "english-2015-hl-p1-composing-5",
    "year": 2015,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2015 HL Paper 1 Composing 5 · Selected task: Time-traveller from the past",
-   "questionText": "In TEXT 3, Penelope Lively writes that she sometimes feels like an “observant time-traveller”. Write a descriptive essay which captures life in Ireland in 2015 from the point of view of an observant time-traveller. The time-traveller may be from the past or from the future.\n\nFor this practice response — Selected task: Time-traveller from the past.",
+   "questionRef": "2015 HL Paper 1 Composing 5",
+   "questionText": "In TEXT 3, Penelope Lively writes that she sometimes feels like an “observant time-traveller”. Write a descriptive essay which captures life in Ireland in 2015 from the point of view of an observant time-traveller. The time-traveller may be from the past or from the future.",
    "totalMarks": 100,
    "topicId": "english-9-1",
    "conceptId": "english-composing",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
-   "choiceParentId": "english-2015-hl-p1-composing-5",
-   "choiceLabel": "Selected task: Time-traveller from the past",
-   "schemePages": [
-    16,
-    18
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2015-higher",
-    "allocation": {
-     "P": 30,
-     "C": 30,
-     "L": 30,
-     "M": 10
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "5"
-   }
-  },
-  {
-   "id": "english-2015-hl-p1-composing-5-route-selection-2",
-   "year": 2015,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2015 HL Paper 1 Composing 5 · Selected task: Time-traveller from the future",
-   "questionText": "In TEXT 3, Penelope Lively writes that she sometimes feels like an “observant time-traveller”. Write a descriptive essay which captures life in Ireland in 2015 from the point of view of an observant time-traveller. The time-traveller may be from the past or from the future.\n\nFor this practice response — Selected task: Time-traveller from the future.",
-   "totalMarks": 100,
-   "topicId": "english-9-1",
-   "conceptId": "english-composing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2015-hl-p1-composing-5",
-   "choiceLabel": "Selected task: Time-traveller from the future",
    "schemePages": [
     16,
     18
@@ -8188,97 +7169,22 @@
    }
   },
   {
-   "id": "english-2015-hl-p2-single-c-ii-route-selection-1-2",
+   "id": "english-2015-hl-p2-single-c-ii",
    "year": 2015,
    "level": "higher",
    "paper": 2,
-   "questionRef": "2015 HL Paper 2 Single Text C(ii) · Selected characters: Kathy; Ruth",
-   "questionText": "“The steady and relentless erosion of the hopes and dreams of Kathy, Ruth and Tommy contribute to the tragic story in this novel.” Discuss this view of the novel, Never Let Me Go, supporting your answer with reference to two of the above characters.\n\nFor this practice response — Selected characters: Kathy; Ruth.",
+   "questionRef": "2015 HL Paper 2 Single Text C(ii)",
+   "questionText": "“The steady and relentless erosion of the hopes and dreams of Kathy, Ruth and Tommy contribute to the tragic story in this novel.” Discuss this view of the novel, Never Let Me Go, supporting your answer with reference to two of the above characters.",
    "totalMarks": 60,
    "topicId": "english-12-51",
    "conceptId": "english-single-text-response",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected characters: 2 of 3). Every choice is marked on the same grid.",
     "Support the response with relevant evidence from the named text or source.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
    "stem": "Never Let Me Go (Kazuo Ishiguro)",
-   "choiceParentId": "english-2015-hl-p2-single-c-ii",
-   "choiceLabel": "Selected characters: Kathy; Ruth",
-   "schemePages": [
-    24
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2015-higher",
-    "allocation": {
-     "P": 18,
-     "C": 18,
-     "L": 18,
-     "M": 6
-    }
-   },
-   "paperFileid": "LC002ALP200EV",
-   "atlas": {
-    "fileid": "LC002ALP200EV.pdf",
-    "n": "10"
-   }
-  },
-  {
-   "id": "english-2015-hl-p2-single-c-ii-route-selection-1-3",
-   "year": 2015,
-   "level": "higher",
-   "paper": 2,
-   "questionRef": "2015 HL Paper 2 Single Text C(ii) · Selected characters: Kathy; Tommy",
-   "questionText": "“The steady and relentless erosion of the hopes and dreams of Kathy, Ruth and Tommy contribute to the tragic story in this novel.” Discuss this view of the novel, Never Let Me Go, supporting your answer with reference to two of the above characters.\n\nFor this practice response — Selected characters: Kathy; Tommy.",
-   "totalMarks": 60,
-   "topicId": "english-12-51",
-   "conceptId": "english-single-text-response",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Support the response with relevant evidence from the named text or source.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "stem": "Never Let Me Go (Kazuo Ishiguro)",
-   "choiceParentId": "english-2015-hl-p2-single-c-ii",
-   "choiceLabel": "Selected characters: Kathy; Tommy",
-   "schemePages": [
-    24
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2015-higher",
-    "allocation": {
-     "P": 18,
-     "C": 18,
-     "L": 18,
-     "M": 6
-    }
-   },
-   "paperFileid": "LC002ALP200EV",
-   "atlas": {
-    "fileid": "LC002ALP200EV.pdf",
-    "n": "10"
-   }
-  },
-  {
-   "id": "english-2015-hl-p2-single-c-ii-route-selection-2-3",
-   "year": 2015,
-   "level": "higher",
-   "paper": 2,
-   "questionRef": "2015 HL Paper 2 Single Text C(ii) · Selected characters: Ruth; Tommy",
-   "questionText": "“The steady and relentless erosion of the hopes and dreams of Kathy, Ruth and Tommy contribute to the tragic story in this novel.” Discuss this view of the novel, Never Let Me Go, supporting your answer with reference to two of the above characters.\n\nFor this practice response — Selected characters: Ruth; Tommy.",
-   "totalMarks": 60,
-   "topicId": "english-12-51",
-   "conceptId": "english-single-text-response",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Support the response with relevant evidence from the named text or source.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "stem": "Never Let Me Go (Kazuo Ishiguro)",
-   "choiceParentId": "english-2015-hl-p2-single-c-ii",
-   "choiceLabel": "Selected characters: Ruth; Tommy",
    "schemePages": [
     24
    ],
@@ -9058,17 +7964,18 @@
    }
   },
   {
-   "id": "english-2014-hl-p1-t2-a-i-route-selection-1",
+   "id": "english-2014-hl-p1-t2-a-i",
    "year": 2014,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2014 HL Paper 1 Text 2 QA(i) · Selected option: Alan Warner",
-   "questionText": "Outline, in your own words, what either Alan Warner or John Lanchester has to say about his chosen art-form in the above text.\n\nFor this practice response — Selected option: Alan Warner.",
+   "questionRef": "2014 HL Paper 1 Text 2 QA(i)",
+   "questionText": "Outline, in your own words, what either Alan Warner or John Lanchester has to say about his chosen art-form in the above text.",
    "totalMarks": 15,
    "topicId": "english-10-0",
    "conceptId": "english-comprehending-insights",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 1 of 2). Every choice is marked on the same grid.",
     "Read and use the official source material supplied with the card.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
@@ -9083,49 +7990,6 @@
     "attribution": "Alan Warner and John Lanchester — The Joy of Influence contributions adapted from The Guardian, with the pop-music and video-game word clouds. As reproduced in the SEC2014 paper.",
     "presentationNote": "Official State Examinations Commission examination layout."
    },
-   "choiceParentId": "english-2014-hl-p1-t2-a-i",
-   "choiceLabel": "Selected option: Alan Warner",
-   "schemePages": [
-    8
-   ],
-   "assessment": {
-    "mode": "combined",
-    "grid": "2014-higher"
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "10"
-   }
-  },
-  {
-   "id": "english-2014-hl-p1-t2-a-i-route-selection-2",
-   "year": 2014,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2014 HL Paper 1 Text 2 QA(i) · Selected option: John Lanchester",
-   "questionText": "Outline, in your own words, what either Alan Warner or John Lanchester has to say about his chosen art-form in the above text.\n\nFor this practice response — Selected option: John Lanchester.",
-   "totalMarks": 15,
-   "topicId": "english-10-0",
-   "conceptId": "english-comprehending-insights",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-text",
-    "label": "TEXT 2",
-    "title": "Cultural Influences",
-    "pages": [
-     4,
-     5
-    ],
-    "attribution": "Alan Warner and John Lanchester — The Joy of Influence contributions adapted from The Guardian, with the pop-music and video-game word clouds. As reproduced in the SEC2014 paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2014-hl-p1-t2-a-i",
-   "choiceLabel": "Selected option: John Lanchester",
    "schemePages": [
     8
    ],
@@ -10921,59 +9785,21 @@
    }
   },
   {
-   "id": "english-2013-hl-p1-composing-1-route-selection-1",
+   "id": "english-2013-hl-p1-composing-1",
    "year": 2013,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2013 HL Paper 1 Composing 1 · Selected task: For the motion: We live in an un-heroic age",
-   "questionText": "In Text 2, William Trevor expresses his views on heroes. Write a speech in which you argue for or against the motion, We live in an un-heroic age.\n\nFor this practice response — Selected task: For the motion: We live in an un-heroic age.",
+   "questionRef": "2013 HL Paper 1 Composing 1",
+   "questionText": "In Text 2, William Trevor expresses his views on heroes. Write a speech in which you argue for or against the motion, We live in an un-heroic age.",
    "totalMarks": 100,
    "topicId": "english-9-1",
    "conceptId": "english-composing-speech",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
     "Use the conventions and register of the requested speech.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
-   "choiceParentId": "english-2013-hl-p1-composing-1",
-   "choiceLabel": "Selected task: For the motion: We live in an un-heroic age",
-   "schemePages": [
-    15,
-    16
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2013-higher",
-    "allocation": {
-     "P": 30,
-     "C": 30,
-     "L": 30,
-     "M": 10
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "1"
-   }
-  },
-  {
-   "id": "english-2013-hl-p1-composing-1-route-selection-2",
-   "year": 2013,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2013 HL Paper 1 Composing 1 · Selected task: Against the motion: We live in an un-heroic age",
-   "questionText": "In Text 2, William Trevor expresses his views on heroes. Write a speech in which you argue for or against the motion, We live in an un-heroic age.\n\nFor this practice response — Selected task: Against the motion: We live in an un-heroic age.",
-   "totalMarks": 100,
-   "topicId": "english-9-1",
-   "conceptId": "english-composing-speech",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Use the conventions and register of the requested speech.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2013-hl-p1-composing-1",
-   "choiceLabel": "Selected task: Against the motion: We live in an un-heroic age",
    "schemePages": [
     15,
     16
@@ -11030,59 +9856,21 @@
    }
   },
   {
-   "id": "english-2013-hl-p1-composing-3-route-selection-1",
+   "id": "english-2013-hl-p1-composing-3",
    "year": 2013,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2013 HL Paper 1 Composing 3 · Selected task: The central character is manipulated",
-   "questionText": "“...they make manipulation a virtue.” (TEXT 1) Write a short story in which a central character is either manipulated or is manipulative.\n\nFor this practice response — Selected task: The central character is manipulated.",
+   "questionRef": "2013 HL Paper 1 Composing 3",
+   "questionText": "“...they make manipulation a virtue.” (TEXT 1) Write a short story in which a central character is either manipulated or is manipulative.",
    "totalMarks": 100,
    "topicId": "english-9-1",
    "conceptId": "english-composing-short-story",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
     "Use the conventions and register of the requested short story.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
-   "choiceParentId": "english-2013-hl-p1-composing-3",
-   "choiceLabel": "Selected task: The central character is manipulated",
-   "schemePages": [
-    15,
-    16
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2013-higher",
-    "allocation": {
-     "P": 30,
-     "C": 30,
-     "L": 30,
-     "M": 10
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "3"
-   }
-  },
-  {
-   "id": "english-2013-hl-p1-composing-3-route-selection-2",
-   "year": 2013,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2013 HL Paper 1 Composing 3 · Selected task: The central character is manipulative",
-   "questionText": "“...they make manipulation a virtue.” (TEXT 1) Write a short story in which a central character is either manipulated or is manipulative.\n\nFor this practice response — Selected task: The central character is manipulative.",
-   "totalMarks": 100,
-   "topicId": "english-9-1",
-   "conceptId": "english-composing-short-story",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Use the conventions and register of the requested short story.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2013-hl-p1-composing-3",
-   "choiceLabel": "Selected task: The central character is manipulative",
    "schemePages": [
     15,
     16
@@ -12277,17 +11065,18 @@
    }
   },
   {
-   "id": "english-2012-hl-p1-t2-a-iii-route-selection-1-2",
+   "id": "english-2012-hl-p1-t2-a-iii",
    "year": 2012,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2012 HL Paper 1 Text 2 QA(iii) · Selected option: Image 1; Image 2",
-   "questionText": "Consider the three visual images that accompany this text. Which two of the images would you have chosen to project as a backdrop to Mary Robinson as she delivered the above speech? Explain your choice, discussing the impact you think these images would make on the audience. (In your answer, you should refer both to your chosen images and to the written text.)\n\nFor this practice response — Selected option: Image 1; Image 2.",
+   "questionRef": "2012 HL Paper 1 Text 2 QA(iii)",
+   "questionText": "Consider the three visual images that accompany this text. Which two of the images would you have chosen to project as a backdrop to Mary Robinson as she delivered the above speech? Explain your choice, discussing the impact you think these images would make on the audience. (In your answer, you should refer both to your chosen images and to the written text.)",
    "totalMarks": 20,
    "topicId": "english-10-0",
    "conceptId": "english-comprehending-style",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 2 of 3). Every choice is marked on the same grid.",
     "Read and use the official source material supplied with the card.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
@@ -12302,90 +11091,6 @@
     "attribution": "Mary Robinson — edited speech to an international conference on hunger, with three accompanying images. As reproduced in the SEC2012 paper.",
     "presentationNote": "Official State Examinations Commission examination layout."
    },
-   "choiceParentId": "english-2012-hl-p1-t2-a-iii",
-   "choiceLabel": "Selected option: Image 1; Image 2",
-   "schemePages": [
-    8
-   ],
-   "assessment": {
-    "mode": "combined",
-    "grid": "2012-higher"
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "10"
-   }
-  },
-  {
-   "id": "english-2012-hl-p1-t2-a-iii-route-selection-1-3",
-   "year": 2012,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2012 HL Paper 1 Text 2 QA(iii) · Selected option: Image 1; Image 3",
-   "questionText": "Consider the three visual images that accompany this text. Which two of the images would you have chosen to project as a backdrop to Mary Robinson as she delivered the above speech? Explain your choice, discussing the impact you think these images would make on the audience. (In your answer, you should refer both to your chosen images and to the written text.)\n\nFor this practice response — Selected option: Image 1; Image 3.",
-   "totalMarks": 20,
-   "topicId": "english-10-0",
-   "conceptId": "english-comprehending-style",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-text",
-    "label": "TEXT 2",
-    "title": "Shared Memories",
-    "pages": [
-     4,
-     5
-    ],
-    "attribution": "Mary Robinson — edited speech to an international conference on hunger, with three accompanying images. As reproduced in the SEC2012 paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2012-hl-p1-t2-a-iii",
-   "choiceLabel": "Selected option: Image 1; Image 3",
-   "schemePages": [
-    8
-   ],
-   "assessment": {
-    "mode": "combined",
-    "grid": "2012-higher"
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "10"
-   }
-  },
-  {
-   "id": "english-2012-hl-p1-t2-a-iii-route-selection-2-3",
-   "year": 2012,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2012 HL Paper 1 Text 2 QA(iii) · Selected option: Image 2; Image 3",
-   "questionText": "Consider the three visual images that accompany this text. Which two of the images would you have chosen to project as a backdrop to Mary Robinson as she delivered the above speech? Explain your choice, discussing the impact you think these images would make on the audience. (In your answer, you should refer both to your chosen images and to the written text.)\n\nFor this practice response — Selected option: Image 2; Image 3.",
-   "totalMarks": 20,
-   "topicId": "english-10-0",
-   "conceptId": "english-comprehending-style",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-text",
-    "label": "TEXT 2",
-    "title": "Shared Memories",
-    "pages": [
-     4,
-     5
-    ],
-    "attribution": "Mary Robinson — edited speech to an international conference on hunger, with three accompanying images. As reproduced in the SEC2012 paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2012-hl-p1-t2-a-iii",
-   "choiceLabel": "Selected option: Image 2; Image 3",
    "schemePages": [
     8
    ],
@@ -12473,17 +11178,18 @@
    }
   },
   {
-   "id": "english-2012-hl-p1-t3-a-ii-route-selection-1",
+   "id": "english-2012-hl-p1-t3-a-ii",
    "year": 2012,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2012 HL Paper 1 Text 3 QA(ii) · Selected option: Image A",
-   "questionText": "Which one of the visual images (A or B) do you think best illustrates the above text? In your response refer to both visual images.\n\nFor this practice response — Selected option: Image A.",
+   "questionRef": "2012 HL Paper 1 Text 3 QA(ii)",
+   "questionText": "Which one of the visual images (A or B) do you think best illustrates the above text? In your response refer to both visual images.",
    "totalMarks": 15,
    "topicId": "english-10-0",
    "conceptId": "english-comprehending-style",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 1 of 2). Every choice is marked on the same grid.",
     "Read and use the official source material supplied with the card.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
@@ -12498,49 +11204,6 @@
     "attribution": "Paul Theroux — edited extract from Ghost Train to the Eastern Star, with Images A and B. As reproduced in the SEC2012 paper.",
     "presentationNote": "Official State Examinations Commission examination layout."
    },
-   "choiceParentId": "english-2012-hl-p1-t3-a-ii",
-   "choiceLabel": "Selected option: Image A",
-   "schemePages": [
-    10
-   ],
-   "assessment": {
-    "mode": "combined",
-    "grid": "2012-higher"
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "12"
-   }
-  },
-  {
-   "id": "english-2012-hl-p1-t3-a-ii-route-selection-2",
-   "year": 2012,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2012 HL Paper 1 Text 3 QA(ii) · Selected option: Image B",
-   "questionText": "Which one of the visual images (A or B) do you think best illustrates the above text? In your response refer to both visual images.\n\nFor this practice response — Selected option: Image B.",
-   "totalMarks": 15,
-   "topicId": "english-10-0",
-   "conceptId": "english-comprehending-style",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-text",
-    "label": "TEXT 3",
-    "title": "A journey remembered and revisited",
-    "pages": [
-     6,
-     7
-    ],
-    "attribution": "Paul Theroux — edited extract from Ghost Train to the Eastern Star, with Images A and B. As reproduced in the SEC2012 paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2012-hl-p1-t3-a-ii",
-   "choiceLabel": "Selected option: Image B",
    "schemePages": [
     10
    ],
@@ -12594,56 +11257,20 @@
    }
   },
   {
-   "id": "english-2012-hl-p1-t3-b-route-selection-1",
+   "id": "english-2012-hl-p1-t3-b",
    "year": 2012,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2012 HL Paper 1 Text 3 QB · Selected task: Supporting the school outings",
-   "questionText": "Your school’s Student Council is currently discussing the issue of school outings, educational trips, theatre visits, etc. Write a persuasive article for your school website supporting or opposing such events.\n\nFor this practice response — Selected task: Supporting the school outings.",
+   "questionRef": "2012 HL Paper 1 Text 3 QB",
+   "questionText": "Your school’s Student Council is currently discussing the issue of school outings, educational trips, theatre visits, etc. Write a persuasive article for your school website supporting or opposing such events.",
    "totalMarks": 50,
    "topicId": "english-10-1",
    "conceptId": "english-functional-writing",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
-   "choiceParentId": "english-2012-hl-p1-t3-b",
-   "choiceLabel": "Selected task: Supporting the school outings",
-   "schemePages": [
-    12
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2012-higher",
-    "allocation": {
-     "P": 15,
-     "C": 15,
-     "L": 15,
-     "M": 5
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "13"
-   }
-  },
-  {
-   "id": "english-2012-hl-p1-t3-b-route-selection-2",
-   "year": 2012,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2012 HL Paper 1 Text 3 QB · Selected task: Opposing the school outings",
-   "questionText": "Your school’s Student Council is currently discussing the issue of school outings, educational trips, theatre visits, etc. Write a persuasive article for your school website supporting or opposing such events.\n\nFor this practice response — Selected task: Opposing the school outings.",
-   "totalMarks": 50,
-   "topicId": "english-10-1",
-   "conceptId": "english-functional-writing",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2012-hl-p1-t3-b",
-   "choiceLabel": "Selected task: Opposing the school outings",
    "schemePages": [
     12
    ],
@@ -12699,59 +11326,21 @@
    }
   },
   {
-   "id": "english-2012-hl-p1-composing-2-route-selection-1",
+   "id": "english-2012-hl-p1-composing-2",
    "year": 2012,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2012 HL Paper 1 Composing 2 · Selected task: Newspaper feature article",
-   "questionText": "“Memory is a ghost train too.” (TEXT 3) Write a feature article for a newspaper or magazine on the role played by memory and the past in our lives.\n\nFor this practice response — Selected task: Newspaper feature article.",
+   "questionRef": "2012 HL Paper 1 Composing 2",
+   "questionText": "“Memory is a ghost train too.” (TEXT 3) Write a feature article for a newspaper or magazine on the role played by memory and the past in our lives.",
    "totalMarks": 100,
    "topicId": "english-9-1",
    "conceptId": "english-composing-article",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
     "Use the conventions and register of the requested feature article.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
-   "choiceParentId": "english-2012-hl-p1-composing-2",
-   "choiceLabel": "Selected task: Newspaper feature article",
-   "schemePages": [
-    13,
-    14
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2012-higher",
-    "allocation": {
-     "P": 30,
-     "C": 30,
-     "L": 30,
-     "M": 10
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "2"
-   }
-  },
-  {
-   "id": "english-2012-hl-p1-composing-2-route-selection-2",
-   "year": 2012,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2012 HL Paper 1 Composing 2 · Selected task: Magazine feature article",
-   "questionText": "“Memory is a ghost train too.” (TEXT 3) Write a feature article for a newspaper or magazine on the role played by memory and the past in our lives.\n\nFor this practice response — Selected task: Magazine feature article.",
-   "totalMarks": 100,
-   "topicId": "english-9-1",
-   "conceptId": "english-composing-article",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Use the conventions and register of the requested feature article.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2012-hl-p1-composing-2",
-   "choiceLabel": "Selected task: Magazine feature article",
    "schemePages": [
     13,
     14
@@ -14249,59 +12838,21 @@
    }
   },
   {
-   "id": "english-2011-hl-p1-composing-2-route-selection-1",
+   "id": "english-2011-hl-p1-composing-2",
    "year": 2011,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2011 HL Paper 1 Composing 2 · Selected task: Serious newspaper",
-   "questionText": "“I don’t discriminate…” (TEXT 1) Write an article for a serious newspaper or magazine on the twin issues of discrimination and tolerance.\n\nFor this practice response — Selected task: Serious newspaper.",
+   "questionRef": "2011 HL Paper 1 Composing 2",
+   "questionText": "“I don’t discriminate…” (TEXT 1) Write an article for a serious newspaper or magazine on the twin issues of discrimination and tolerance.",
    "totalMarks": 100,
    "topicId": "english-9-1",
    "conceptId": "english-composing-article",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
     "Use the conventions and register of the requested article.",
     "Sustain a clear, purposeful response in an appropriate register."
    ],
-   "choiceParentId": "english-2011-hl-p1-composing-2",
-   "choiceLabel": "Selected task: Serious newspaper",
-   "schemePages": [
-    13,
-    14
-   ],
-   "assessment": {
-    "mode": "discrete",
-    "grid": "2011-higher",
-    "allocation": {
-     "P": 30,
-     "C": 30,
-     "L": 30,
-     "M": 10
-    }
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "2"
-   }
-  },
-  {
-   "id": "english-2011-hl-p1-composing-2-route-selection-2",
-   "year": 2011,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2011 HL Paper 1 Composing 2 · Selected task: Serious magazine",
-   "questionText": "“I don’t discriminate…” (TEXT 1) Write an article for a serious newspaper or magazine on the twin issues of discrimination and tolerance.\n\nFor this practice response — Selected task: Serious magazine.",
-   "totalMarks": 100,
-   "topicId": "english-9-1",
-   "conceptId": "english-composing-article",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Use the conventions and register of the requested article.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "choiceParentId": "english-2011-hl-p1-composing-2",
-   "choiceLabel": "Selected task: Serious magazine",
    "schemePages": [
     13,
     14
@@ -15642,17 +14193,18 @@
    }
   },
   {
-   "id": "english-2010-hl-p1-t3-a-ii-route-selection-1",
+   "id": "english-2010-hl-p1-t3-a-ii",
    "year": 2010,
    "level": "higher",
    "paper": 1,
-   "questionRef": "2010 HL Paper 1 Text 3 QA(ii) · Selected option: Left-hand book cover",
-   "questionText": "Which of the above book covers for Fahrenheit 451 do you find more interesting? In your response, compare and contrast both of these images.\n\nFor this practice response — Selected option: Left-hand book cover.",
+   "questionRef": "2010 HL Paper 1 Text 3 QA(ii)",
+   "questionText": "Which of the above book covers for Fahrenheit 451 do you find more interesting? In your response, compare and contrast both of these images.",
    "totalMarks": 15,
    "topicId": "english-10-0",
    "conceptId": "english-comprehending-insights",
    "taskRequirements": [
     "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 1 of 2). Every choice is marked on the same grid.",
     "Read and use the official source material supplied with the card.",
     "Make the comparison explicit across the number of texts requested.",
     "Sustain a clear, purposeful response in an appropriate register."
@@ -15667,49 +14219,6 @@
     "attribution": "Ray Bradbury; covers and photograph as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
     "presentationNote": "Official State Examinations Commission examination layout."
    },
-   "choiceParentId": "english-2010-hl-p1-t3-a-ii",
-   "choiceLabel": "Selected option: Left-hand book cover",
-   "schemePages": [
-    10
-   ],
-   "assessment": {
-    "mode": "combined",
-    "grid": "2010-higher"
-   },
-   "paperFileid": "LC002ALP100EV",
-   "atlas": {
-    "fileid": "LC002ALP100EV.pdf",
-    "n": "12"
-   }
-  },
-  {
-   "id": "english-2010-hl-p1-t3-a-ii-route-selection-2",
-   "year": 2010,
-   "level": "higher",
-   "paper": 1,
-   "questionRef": "2010 HL Paper 1 Text 3 QA(ii) · Selected option: Right-hand book cover",
-   "questionText": "Which of the above book covers for Fahrenheit 451 do you find more interesting? In your response, compare and contrast both of these images.\n\nFor this practice response — Selected option: Right-hand book cover.",
-   "totalMarks": 15,
-   "topicId": "english-10-0",
-   "conceptId": "english-comprehending-insights",
-   "taskRequirements": [
-    "Address every instruction in the printed task.",
-    "Read and use the official source material supplied with the card.",
-    "Make the comparison explicit across the number of texts requested.",
-    "Sustain a clear, purposeful response in an appropriate register."
-   ],
-   "sourceMaterial": {
-    "kind": "source-illustration",
-    "label": "TEXT 3",
-    "title": "Fahrenheit 451 — two book covers",
-    "pages": [
-     7
-    ],
-    "attribution": "Ray Bradbury; covers and photograph as reproduced in the SEC paper. Material as reproduced in the official SEC paper.",
-    "presentationNote": "Official State Examinations Commission examination layout."
-   },
-   "choiceParentId": "english-2010-hl-p1-t3-a-ii",
-   "choiceLabel": "Selected option: Right-hand book cover",
    "schemePages": [
     10
    ],

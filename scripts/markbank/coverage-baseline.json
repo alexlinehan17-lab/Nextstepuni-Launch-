@@ -135,19 +135,19 @@
   "refsHash": "99445e531f46b857"
  },
  "english": {
-  "cards": 2571,
-  "contentHash": "1f784834d726e086",
-  "coveragePct": 81.8,
-  "covered": 2581,
+  "cards": 1937,
+  "contentHash": "39205fd059e43bb8",
+  "coveragePct": 77.2,
+  "covered": 1947,
   "excluded": 0,
-  "leaves": 3156,
+  "leaves": 2522,
   "open": 575,
   "orphans": 0,
   "papers": {
    "count": 20,
    "hash": "5a9e0ab3f863aa4f"
   },
-  "refsHash": "00de6ebaa4bd6a12"
+  "refsHash": "67b05551bb98c9b1"
  },
  "geography": {
   "cards": 754,

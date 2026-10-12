@@ -6,7 +6,7 @@ from itertools import combinations, permutations
 from unittest import mock
 
 import english_full_cards as full_cards
-from english_choices import fingerprint, review
+from english_choices import enumerate_choices, fingerprint, review
 from english_complete import ROOT, inventory
 from english_full_cards import extract_record
 from english_task_review import reconcile as reconcile_schemes, task_fingerprint
@@ -23,7 +23,7 @@ class VisuallyReviewedEnglishPapersTest(unittest.TestCase):
     def routes(self, year):
         tasks = self.tasks[year]
         decisions = {task['id']: self.decisions[task['id']] for task in tasks if task['id'] in self.decisions}
-        routes, missing = review(tasks, decisions)
+        routes, missing = enumerate_choices(tasks, decisions)
         self.assertEqual(missing, [])
         return routes
 
@@ -255,7 +255,7 @@ class EnglishVerifiedRepairsTest(unittest.TestCase):
         for key, base, routes in [('english-2013-hl-p1', 19, 21), ('english-2013-ol-p1', 22, 32),
                                   ('english-2013-hl-p2', 23, 23)]:
             tasks = self.tasks[key]
-            resolved, pending = review(tasks, {t['id']: decisions[t['id']] for t in tasks})
+            resolved, pending = enumerate_choices(tasks, {t['id']: decisions[t['id']] for t in tasks})
             self.assertEqual((len(tasks), len(resolved), pending), (base, routes, []))
 
     def test_2014_comprehension_routes_and_shared_visual_context(self):
@@ -263,7 +263,7 @@ class EnglishVerifiedRepairsTest(unittest.TestCase):
         for level, base, count in [('hl', 19, 20), ('ol', 22, 26)]:
             key = f'english-2014-{level}-p1'
             tasks = self.tasks[key]
-            routes, pending = review(tasks, {t['id']: decisions[t['id']] for t in tasks})
+            routes, pending = enumerate_choices(tasks, {t['id']: decisions[t['id']] for t in tasks})
             self.assertEqual((len(tasks), len(routes), pending), (base, count, []))
             self.assertEqual(len({r['id'] for r in routes}), count)
             if level == 'hl':
@@ -293,7 +293,7 @@ class EnglishVerifiedRepairsTest(unittest.TestCase):
         for level, base in [('hl', 19), ('ol', 22)]:
             key = f'english-2015-{level}-p1'
             tasks = self.tasks[key]
-            routes, pending = review(tasks, {t['id']: decisions[t['id']] for t in tasks})
+            routes, pending = enumerate_choices(tasks, {t['id']: decisions[t['id']] for t in tasks})
             self.assertEqual((len(tasks), len(routes), pending), (base, 25, []))
             self.assertEqual(len({r['id'] for r in routes}), 25)
             subset = {'tasks': {t['id']: ledger['tasks'][t['id']] for t in tasks}}
@@ -324,7 +324,7 @@ class EnglishVerifiedRepairsTest(unittest.TestCase):
         for level, base, total in [('hl', 19, 34), ('ol', 22, 39)]:
             key = f'english-2016-{level}-p1'
             tasks = self.tasks[key]
-            routes, pending = review(tasks, {t['id']: decisions[t['id']] for t in tasks})
+            routes, pending = enumerate_choices(tasks, {t['id']: decisions[t['id']] for t in tasks})
             self.assertEqual((len(tasks), len(routes), len({r['id'] for r in routes}), pending), (base, total, total, []))
             subset = {'tasks': {t['id']: ledger['tasks'][t['id']] for t in tasks}}
             self.assertEqual(reconcile_schemes(tasks, inventory()['papers'], subset), [])
@@ -353,16 +353,16 @@ class EnglishVerifiedRepairsTest(unittest.TestCase):
                     self.assertEqual(criteria['allocation'], {'P+C': task['totalMarks'] * 6 // 10,
                                                               'L+M': task['totalMarks'] * 4 // 10})
         hl, ol = 'english-2016-hl-p1-', 'english-2016-ol-p1-'
-        posters = review([self.by_id[hl + 't1-b']], {hl + 't1-b': decisions[hl + 't1-b']})[0]
+        posters = enumerate_choices([self.by_id[hl + 't1-b']], {hl + 't1-b': decisions[hl + 't1-b']})[0]
         self.assertEqual({(r['choiceRoute']['selections']['first'][0], r['choiceRoute']['selections']['second'][0])
                           for r in posters}, set(permutations('1234', 2)))
         self.assertTrue(all(r['sourceMaterial']['pages'] == [2] for r in posters))
-        virtues = review([self.by_id[ol + 'composing-4']], {ol + 'composing-4': decisions[ol + 'composing-4']})[0]
+        virtues = enumerate_choices([self.by_id[ol + 'composing-4']], {ol + 'composing-4': decisions[ol + 'composing-4']})[0]
         self.assertEqual({tuple(r['choiceRoute']['selections']['virtues']) for r in virtues},
                          set(combinations('12345', 2)))
         self.assertEqual([o['text'] for o in decisions[ol + 'composing-4']['pools'][0]['options']],
                          ['Kindness', 'Patience', 'Generosity', 'Tolerance', 'Forgiveness'])
-        china = review([self.by_id[ol + 't1-a-ii']], {ol + 't1-a-ii': decisions[ol + 't1-a-ii']})[0]
+        china = enumerate_choices([self.by_id[ol + 't1-a-ii']], {ol + 't1-a-ii': decisions[ol + 't1-a-ii']})[0]
         self.assertEqual([r['id'] for r in china], [ol + 't1-a-ii-route-selection-1', ol + 't1-a-ii-route-selection-2'])
         self.assertIn('A mainly positive view of China', china[0]['questionText'])
         self.assertIn('A mainly negative view of China', china[1]['questionText'])
@@ -392,7 +392,7 @@ class EnglishVerifiedRepairsTest(unittest.TestCase):
         key = 'english-2015-hl-p2'
         tasks = self.tasks[key]
         decisions = json.loads((ROOT / 'scripts/markbank/authored/english-selection-review.json').read_text())['decisions']
-        routes, pending = review(tasks, {t['id']: decisions[t['id']] for t in tasks})
+        routes, pending = enumerate_choices(tasks, {t['id']: decisions[t['id']] for t in tasks})
         self.assertEqual((len(tasks), len(routes), pending), (23, 25, []))
         pairs = [r for r in routes if r.get('choiceParentId') == key + '-single-c-ii']
         self.assertEqual({tuple(r['choiceRoute']['selections']['selection']) for r in pairs},
@@ -414,7 +414,7 @@ class EnglishVerifiedRepairsTest(unittest.TestCase):
         for key, base, routes in [('english-2018-hl-p1', 19, 20), ('english-2018-ol-p1', 22, 24),
                                   ('english-2018-hl-p2', 23, 23)]:
             tasks = self.tasks[key]
-            resolved, pending = review(tasks, {t['id']: decisions[t['id']] for t in tasks})
+            resolved, pending = enumerate_choices(tasks, {t['id']: decisions[t['id']] for t in tasks})
             self.assertEqual((len(tasks), len(resolved), pending), (base, routes, []))
         self.assertEqual(decisions['english-2018-hl-p1-composing-7']['kind'], 'open')
         source = self.by_id['english-2018-hl-p1-t3-a-i']['sourceMaterial']
@@ -425,7 +425,7 @@ class EnglishVerifiedRepairsTest(unittest.TestCase):
         key = 'english-2014-hl-p2'
         decisions = json.loads((ROOT / 'scripts/markbank/authored/english-selection-review.json').read_text())['decisions']
         tasks = self.tasks[key]
-        routes, pending = review(tasks, {t['id']: decisions[t['id']] for t in tasks})
+        routes, pending = enumerate_choices(tasks, {t['id']: decisions[t['id']] for t in tasks})
         self.assertEqual((len(tasks), len(routes), pending), (23, 23, []))
         self.assertEqual(decisions[key + '-single-d-i']['kind'], 'flexible')
         self.assertIn('AT LEAST', decisions[key + '-single-d-i']['reason'])
@@ -442,7 +442,7 @@ class EnglishVerifiedRepairsTest(unittest.TestCase):
         for key, base, routes in [('english-2010-hl-p1', 19, 20), ('english-2010-ol-p1', 19, 29),
                                   ('english-2010-hl-p2', 23, 23)]:
             tasks = self.tasks[key]
-            resolved, pending = review(tasks, {t['id']: decisions[t['id']] for t in tasks})
+            resolved, pending = enumerate_choices(tasks, {t['id']: decisions[t['id']] for t in tasks})
             self.assertEqual((len(tasks), len(resolved), pending), (base, routes, []))
         self.assertTrue(self.by_id['english-2010-ol-p1-t1-b']['questionText'].startswith('People need'))
         self.assertEqual(self.by_id['english-2010-hl-p1-t3-a-ii']['sourceMaterial']['pages'], [7])
@@ -459,7 +459,7 @@ class EnglishVerifiedRepairsTest(unittest.TestCase):
         for key, base, routes in [('english-2011-hl-p1', 19, 20), ('english-2011-ol-p1', 19, 21),
                                   ('english-2011-hl-p2', 23, 23)]:
             tasks = self.tasks[key]
-            resolved, pending = review(tasks, {t['id']: decisions[t['id']] for t in tasks})
+            resolved, pending = enumerate_choices(tasks, {t['id']: decisions[t['id']] for t in tasks})
             self.assertEqual((len(tasks), len(resolved), pending), (base, routes, []))
         for number in (1, 2, 3):
             task = self.by_id[f'english-2011-ol-p1-t{number}-a-iii']
@@ -483,7 +483,7 @@ class EnglishVerifiedRepairsTest(unittest.TestCase):
         for key, base, routes in [('english-2012-hl-p1', 19, 24), ('english-2012-ol-p1', 22, 35),
                                   ('english-2012-hl-p2', 23, 23)]:
             tasks = self.tasks[key]
-            resolved, pending = review(tasks, {t['id']: decisions[t['id']] for t in tasks})
+            resolved, pending = enumerate_choices(tasks, {t['id']: decisions[t['id']] for t in tasks})
             self.assertEqual((len(tasks), len(resolved), pending), (base, routes, []))
             all_routes.extend(resolved)
         for parent, size, take, marks, pages in [
@@ -591,7 +591,7 @@ class English2026ReviewedPapersTest(unittest.TestCase):
 
     def routes(self, key):
         tasks = self.tasks[key]
-        routes, pending = review(tasks, {t['id']: self.decisions[t['id']] for t in tasks})
+        routes, pending = enumerate_choices(tasks, {t['id']: self.decisions[t['id']] for t in tasks})
         self.assertEqual(pending, [])
         return routes
 
@@ -786,6 +786,49 @@ class English2026ReviewedPapersTest(unittest.TestCase):
                 self.assertIsNone(source, suffix)
         subset = {'tasks': {t['id']: self.ledger['tasks'][t['id']] for t in tasks}}
         self.assertEqual(reconcile_schemes(tasks, inventory()['papers'], subset), [])
+
+
+class EnglishPrintedChoiceCollapseTest(unittest.TestCase):
+    """Coordinator rule 2026-10-12: a printed choice the scheme marks identically is ONE card."""
+
+    @classmethod
+    def setUpClass(cls):
+        authored = ROOT / 'scripts/markbank/authored'
+        cls.decisions = json.loads((authored / 'english-selection-review.json').read_text())['decisions']
+        cls.visual = {e['paperId']: e for e in json.loads((authored / 'english-visual-review.json').read_text())['papers']}
+        cls.records = {r['id']: r for r in inventory()['papers']}
+
+    def test_no_finite_decision_remains(self):
+        kinds = {decision['kind'] for decision in self.decisions.values()}
+        self.assertNotIn('finite', kinds)
+        printed = [d for d in self.decisions.values() if d['kind'] == 'printed-choice']
+        self.assertEqual(len(printed), 221)
+        self.assertTrue(all(d['printedChoices'] >= 2 and 'expectedRoutes' not in d for d in printed))
+        self.assertTrue(all(d['reason'].startswith('One card (coordinator rule, 2026-10-12)') for d in printed))
+
+    def test_advice_choice_is_one_card_with_the_printed_instruction(self):
+        key = 'english-2026-ol-p1'
+        tasks = extract_record(self.records[key])[1]
+        cards, pending = review(tasks, {t['id']: self.decisions[t['id']] for t in tasks})
+        self.assertEqual((len(tasks), len(cards), pending), (22, 22, []))
+        self.assertFalse(any('-route-' in card['id'] for card in cards))
+        advice = next(card for card in cards if card['id'] == key + '-t3-a-i')
+        self.assertEqual(advice['printedChoice']['choices'], 360)
+        self.assertEqual(advice['printedChoice']['requirement'],
+                         'Make the choice the paper prints (Most valuable: 2 of 10; Least valuable: 1 of 10, '
+                         'each a different one). Every choice is marked on the same grid.')
+        enumerated, _ = enumerate_choices(tasks, {t['id']: self.decisions[t['id']] for t in tasks})
+        self.assertEqual(len(enumerated), 390)
+
+    def test_tallies_count_one_card_per_printed_choice(self):
+        for key, entry in self.visual.items():
+            tally = entry.get('independentPaperTally')
+            if not tally or not entry['visualSweepComplete']:
+                continue
+            tasks = extract_record(self.records[key])[1]
+            cards, pending = review(tasks, {t['id']: self.decisions[t['id']] for t in tasks if t['id'] in self.decisions})
+            self.assertEqual((tally['baseTasks'], tally['finiteRoutes']), (len(tasks), len(cards)), key)
+            self.assertEqual(len(tasks), len(cards), key)
 
 
 class EnglishPrintedLabelsTest(unittest.TestCase):

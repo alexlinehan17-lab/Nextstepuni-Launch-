@@ -137,11 +137,9 @@
           "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
         },
         "english-2025-hl-p1-composing-2": {
-          "kind": "alias",
-          "to": "english-2025-hl-p1-composing-2-route-selection-1",
+          "kind": "same-id",
           "legacyQuestionRef": "2025 HL Paper 1 Composing 2",
-          "publishedQuestionRef": "2025 HL Paper 1 Composing 2 · Selected task: For the motion: Truth has become a valueless currency in today’s world",
-          "reason": "The legacy card was the whole speech “for or against the motion”. The reviewed paper publishes the two printed sides as routes (scheme PDF15: “argue on one side of the motion only”); the legacy id becomes a progress alias to the first route."
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
         },
         "english-2025-hl-p1-composing-3": {
           "kind": "same-id",

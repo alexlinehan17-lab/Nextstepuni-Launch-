@@ -393,15 +393,19 @@ const decks = [
    * cap rule. Every one of the 650 legacy 2021-2025 ids is unchanged; the
    * legacy-only hashes below are the previous frozen baselines verbatim. */
   /* 2026-10-11 (bridge): 2025 HL Paper 1 and Paper 2 are published from
-   * their independent review through english-legacy-bridge.json. 47 reviewed
-   * cards replace 42 legacy cards: 37 legacy ids are kept by the reviewed card
-   * and 5 (bundled parts or both sides of a motion) are explicit progress
-   * aliases in cardAliases.ts. Nothing is lost: the legacy proof below still
-   * reproduces the frozen 210-id hash from live and bridged ids. 605 -> 610. */
-  ['english:higher', ENGLISH_HIGHER, 610, 'd8181e84ca6c3b47615bc632dcbbd789e574f69021222de65d488053aa7c72c0'],
-  /* 2026-10-11 (later): + 2026 OL Paper 1, 390 cards added (360 of them the
-   * printed choose-two-plus-one advice routes), none removed. */
-  ['english:ordinary', ENGLISH_ORDINARY, 1961, 'e64f9b049d55ff649f4248b26915face4c9a531e2a38aa10a60e8f3a3fcf7fe5'],
+   * their independent review through english-legacy-bridge.json. Their 42
+   * legacy ids all survive: 38 are kept by the reviewed card and 4 (bundled
+   * Comparative Q1 and Unseen Q1 parts) are explicit progress aliases in
+   * cardAliases.ts. The legacy proof below still reproduces the frozen
+   * 210-id hash from live and bridged ids.
+   * 2026-10-12 (coordinator rule): a printed choice the scheme marks
+   * identically for every option is ONE card, and a task printed twice on one
+   * paper is one card. 778 route cards collapse into 150 printed-choice cards
+   * and 6 printed repeats merge; all of them existed only on the English
+   * branch (never on main), so no saved progress referred to them. No legacy
+   * id is touched. Higher 610 -> 573, Ordinary 1961 -> 1364. */
+  ['english:higher', ENGLISH_HIGHER, 573, '2cbf9c4fc0d2031107e521637fb01f151f1bf1d3f74621648f877eae18e65776'],
+  ['english:ordinary', ENGLISH_ORDINARY, 1364, 'a4824ee1eb898a7e02b1f06e9984aa80dbebcb185f70af424b59f4e45012853a'],
   /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
    * responses across 2021–2025 Higher and Ordinary are present, including
    * listening audio and the real PDF pages for passages and printed poems. */
@@ -445,12 +449,12 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(12_416);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(11_782);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(39);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(38);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -459,13 +463,15 @@ describe('Mark Bank card preservation', () => {
       .filter(([name]) => !name.startsWith('computer-science:')
         && !name.startsWith('engineering:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_653);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_018);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
     const published = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
       .map(card => card.id));
-    expect(published.size).toBe(1_963);
+    expect(published.size).toBe(1_329);
+    // No route card is published: a printed choice marked identically is one card.
+    expect([...published].some(id => id.includes('-route-'))).toBe(false);
     // Legacy ids of bridged papers (2025 HL) are no longer served as legacy
     // cards: each is kept by its reviewed published card or is a progress alias.
     const bridged = [...publishedEnglishHigher.bridgedLegacyIds, ...publishedEnglishOrdinary.bridgedLegacyIds];

@@ -22,11 +22,11 @@ const PUBLISHED = publishedJson as unknown as PublishedEnglishManifest;
  *
  * 2025 Paper 1 and Paper 2 are bridged (scripts/markbank/authored/
  * english-legacy-bridge.json): their reviewed published cards replace the
- * legacy ones. 37 legacy ids are kept by the published card itself; the five
- * legacy cards that bundled separately marked parts or both sides of a motion
- * (Paper 1 Composing 2, Paper 2 Comparative A/B/C Q1 and Unseen Q1) are
- * progress aliases in cardAliases.ts. The six 2025 Paper 1 cards that showed
- * indicative material keep it, now lifted verbatim from the scheme page.
+ * legacy ones. 38 legacy ids are kept by the published card itself; the four
+ * legacy cards that bundled separately marked parts (Paper 2 Comparative A/B/C
+ * Q1 and Unseen Q1) are progress aliases in cardAliases.ts. The six 2025
+ * Paper 1 cards that showed indicative material keep it, now lifted verbatim
+ * from the scheme page.
  */
 export const CARDS: SecRubricCard[] = [
   ...generatedCardsForLevel('higher', PUBLISHED.legacyAdditionalSources, PUBLISHED.bridgedLegacyIds),

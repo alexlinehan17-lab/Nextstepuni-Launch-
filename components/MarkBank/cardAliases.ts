@@ -6,8 +6,8 @@
  * Generated from scripts/markbank/card-corrections.json; old review memory is
  * read by the surviving canonical card and is never silently discarded.
  * English legacy-bridge aliases come from
- * scripts/markbank/authored/english-legacy-bridge.json (a bundled or
- * two-sided legacy card now published as separate reviewed tasks or routes);
+ * scripts/markbank/authored/english-legacy-bridge.json (a bundled legacy
+ * card now published as separately marked reviewed tasks);
  * english_publish.py refuses to publish a bridged paper until each is here.
  */
 export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
@@ -21,7 +21,6 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "english-2023-ol-p1-t3-a-iii-a": "english-2023-ol-p1-t1-a-iii-a",
   "english-2024-ol-p1-t2-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
   "english-2024-ol-p1-t3-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
-  "english-2025-hl-p1-composing-2": "english-2025-hl-p1-composing-2-route-selection-1",
   "english-2025-hl-p2-comparative-a-q1": "english-2025-hl-p2-comparative-a-q1-a",
   "english-2025-hl-p2-comparative-b-q1": "english-2025-hl-p2-comparative-b-q1-a",
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",

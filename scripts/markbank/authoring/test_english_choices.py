@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 import unittest
-from english_choices import expand, fingerprint, review
+from english_choices import expand, fingerprint, review, route_variants
 
 ROOT = Path(__file__).resolve().parents[3]
 DECISIONS = json.loads((ROOT / 'scripts/markbank/authored/english-selection-review.json').read_text())['decisions']
@@ -24,7 +24,10 @@ class EnglishChoiceRoutesTest(unittest.TestCase):
     def test_two_best_and_one_different_worst_is_360_not_120(self):
         id = 'english-2026-ol-p1-t3-a-i'
         task = fixture(id, ADVICE_QUESTION)
-        routes = expand(task, DECISIONS[id])
+        card, = expand(task, DECISIONS[id])
+        self.assertEqual(card['id'], id)
+        self.assertEqual(card['printedChoice']['choices'], 360)
+        routes = route_variants(task, DECISIONS[id], 'printedChoices')
         self.assertEqual(len(routes), 360)
         self.assertEqual(len({route['id'] for route in routes}), 360)
         self.assertIn(id + '-route-most-1-2--least-3', {route['id'] for route in routes})
@@ -45,7 +48,8 @@ class EnglishChoiceRoutesTest(unittest.TestCase):
         question = ('Based on your reading of TEXT 3, which three quotations, out of the ten, do you think have '
                     'the most important things to say about love? In each case, explain your answer with reference '
                     'to your chosen quotations.')
-        routes = expand(fixture(id, question), DECISIONS[id])
+        self.assertEqual(expand(fixture(id, question), DECISIONS[id])[0]['printedChoice']['choices'], 220)
+        routes = route_variants(fixture(id, question), DECISIONS[id], 'printedChoices')
         self.assertEqual(len(routes), 220)
         self.assertIn(id + '-route-selection-10-11-12', {route['id'] for route in routes})
         self.assertTrue(all(route['totalMarks'] == 15 for route in routes))
@@ -55,7 +59,7 @@ class EnglishChoiceRoutesTest(unittest.TestCase):
         question = ('Based on your reading of the above passage, choose three words from Image 1, each of which '
                     'you think describes a different aspect of the company, Google, or of its founders. '
                     'Explain each of your choices with evidence from the passage.')
-        routes = expand(fixture(id, question), DECISIONS[id])
+        routes = route_variants(fixture(id, question), DECISIONS[id], 'printedChoices')
         self.assertEqual(len(routes), 10)
         self.assertEqual({tuple(route['choiceRoute']['selections']['selection']) for route in routes}, {
             ('1', '2', '3'), ('1', '2', '4'), ('1', '2', '5'), ('1', '3', '4'), ('1', '3', '5'),

@@ -43,6 +43,7 @@ EXAM_TOPICS = ROOT / 'data/examTopics'
 GRIDS = AUTHORED / 'english-marking-grids.json'
 LEGACY_BRIDGE = AUTHORED / 'english-legacy-bridge.json'
 CARD_ALIASES = ROOT / 'components/MarkBank/cardAliases.ts'
+PRINTED_DUPLICATES = AUTHORED / 'english-printed-duplicates.json'
 CENSUS = AUTHORED / 'english-census.json'
 
 
@@ -160,8 +161,12 @@ def card_record(route, record, review, grids):
         'id': route['id'], 'year': record['year'], 'level': record['level'], 'paper': record['paper'],
         'questionRef': route['questionRef'], 'questionText': route['questionText'],
         'totalMarks': route['totalMarks'], 'topicId': route['topicId'], 'conceptId': route['conceptId'],
-        'taskRequirements': route['taskRequirements'],
+        'taskRequirements': list(route['taskRequirements']),
     }
+    if route.get('printedChoice'):
+        # One card for a printed choice the scheme marks identically: the task
+        # check states the choice the student makes (english_choices).
+        card['taskRequirements'].insert(1, route['printedChoice']['requirement'])
     stem = stem_for(route)
     if stem:
         card['stem'] = stem
@@ -217,6 +222,71 @@ def legacy_additional_sources(bridged=frozenset()):
 def squashed(text):
     """Whitespace-free, dash-unified text: a lifted item must match its print exactly otherwise."""
     return re.sub(r'\s', '', re.sub(r'[‐‑‒–—−]', '-', text.replace('\xa0', ' ')))
+
+
+def choice_signature(card):
+    """A route card with its choice label removed: what the student is marked on."""
+    label = card.get('choiceLabel', '')
+    stripped = {key: value for key, value in card.items() if key not in ('id', 'choiceParentId', 'choiceLabel')}
+    stripped['questionRef'] = stripped['questionRef'].replace(' · ' + label, '')
+    stripped['questionText'] = re.sub(r'\n\nFor this practice response — .*$', '', stripped['questionText'], flags=re.S)
+    return json.dumps(stripped, sort_keys=True, ensure_ascii=False)
+
+
+def refuse_label_only_routes(cards):
+    """Refuse route cards that differ only in their choice label (coordinator rule, 2026-10-12).
+
+    Route cards are allowed only when the scheme prints different marking
+    content per route; otherwise the task is one printed-choice card.
+    """
+    groups = {}
+    for card in cards:
+        if card.get('choiceParentId'):
+            groups.setdefault(card['choiceParentId'], []).append(card)
+    for parent, members in sorted(groups.items()):
+        if len({choice_signature(card) for card in members}) == 1:
+            raise ValueError(f'{parent}: {len(members)} route cards differ only in a choice label; '
+                             'publish one printed-choice card')
+
+
+def task_signature(card):
+    """What makes two printed tasks the same practice task."""
+    return json.dumps({key: card.get(key) for key in (
+        'questionText', 'totalMarks', 'assessment', 'sourceMaterial', 'additionalSourceMaterials',
+        'topicId', 'conceptId', 'stem', 'taskRequirements')}, sort_keys=True, ensure_ascii=False)
+
+
+def merge_printed_duplicates(key, cards, duplicates):
+    """Publish a task printed more than once on one paper as ONE card.
+
+    A declared duplicate must match its canonical card exactly (wording,
+    tariff, grid, reader, requirements); it is dropped and its printed place
+    is kept as an Atlas placement. An undeclared identical task is refused.
+    """
+    by_id = {card['id']: card for card in cards}
+    dropped = set()
+    for dup, entry in sorted(duplicates.items()):
+        if not dup.startswith(key + '-'):
+            continue
+        canonical = by_id.get(entry['canonical'])
+        if dup not in by_id or not canonical or not entry.get('reason', '').strip():
+            raise ValueError(f'{dup}: declared printed duplicate is not published beside its canonical card')
+        if task_signature(by_id[dup]) != task_signature(canonical):
+            raise ValueError(f'{dup}: declared printed duplicate differs from {entry["canonical"]}')
+        placements = canonical.setdefault('atlasPlacements', [])
+        place = by_id[dup]['atlas']
+        if place != canonical['atlas'] and place not in placements:
+            placements.append(place)
+        if not placements:
+            canonical.pop('atlasPlacements')
+        dropped.add(dup)
+    kept = [card for card in cards if card['id'] not in dropped]
+    seen = {}
+    for card in kept:
+        other = seen.setdefault(task_signature(card), card['id'])
+        if other != card['id']:
+            raise ValueError(f'{card["id"]}: printed identically to {other}; declare it in english-printed-duplicates.json')
+    return kept, len(dropped)
 
 
 def card_aliases():
@@ -280,6 +350,7 @@ def publish():
     legacy = legacy_papers()
     bridges = read(LEGACY_BRIDGE)['papers'] if LEGACY_BRIDGE.exists() else {}
     reviews = read(AUTHORED / 'english-task-review.json')['tasks']
+    printed_duplicates = read(PRINTED_DUPLICATES)['duplicates'] if PRINTED_DUPLICATES.exists() else {}
     visual = {entry['paperId']: entry for entry in read(AUTHORED / 'english-visual-review.json')['papers']}
 
     published, refused, cards = [], [], {'higher': [], 'ordinary': []}
@@ -305,11 +376,14 @@ def publish():
             if task_id not in by_task:
                 raise ValueError('Route without a reviewed task: ' + route['id'])
             emitted.append(card_record(route, record, reviews[task_id], grids))
+        refuse_label_only_routes(emitted)
+        emitted, duplicates = merge_printed_duplicates(key, emitted, printed_duplicates)
         if key in bridges:
             apply_bridge(key, bridges[key], record, emitted, read(CARDS_DIR / 'authored.json'))
         cards[record['level']].extend(emitted)
         published.append({'paperId': key, 'year': record['year'], 'level': record['level'],
                           'paper': record['paper'], 'tasks': report['baseTasks'], 'cards': len(emitted),
+                          'printedDuplicates': duplicates,
                           'paperSha256': record['questionPaper']['sha256'],
                           'schemeSha256': record['markingScheme']['sha256']})
 
@@ -464,13 +538,14 @@ def atlas_outputs(cards):
     for level in ('higher', 'ordinary'):
         for card in cards[level]:
             topics = topics_by_node[(level_code[level], card['topicId'])]
-            key = (level_code[level], 'e', card['year'], f'p{card["paper"]}', card['atlas']['fileid'], card['atlas']['n'])
-            mappings.setdefault(key, [])
-            for topic in topics:
-                if topic not in topic_ids:
-                    topic_ids.append(topic)
-                if topic_ids.index(topic) not in mappings[key]:
-                    mappings[key].append(topic_ids.index(topic))
+            for place in [card['atlas'], *card.get('atlasPlacements', [])]:
+                key = (level_code[level], 'e', card['year'], f'p{card["paper"]}', place['fileid'], place['n'])
+                mappings.setdefault(key, [])
+                for topic in topics:
+                    if topic not in topic_ids:
+                        topic_ids.append(topic)
+                    if topic_ids.index(topic) not in mappings[key]:
+                        mappings[key].append(topic_ids.index(topic))
     question_runtime = {
         'schemaVersion': 1, 'subjectId': 'english',
         'rule': ('Additive exact-booklet links for independently reviewed, published English papers. '

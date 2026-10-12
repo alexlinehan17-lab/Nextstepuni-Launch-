@@ -4,6 +4,7 @@ import json
 import unittest
 from unittest import mock
 
+import english_choices
 import english_full_cards as parser
 import english_publish as publish
 from english_complete import ROOT, inventory
@@ -21,7 +22,7 @@ class EnglishPaperGateTest(unittest.TestCase):
 
     def test_reviewed_paper_passes_its_own_gate_while_the_corpus_gate_refuses(self):
         report, routes = self.gate('english-2026-hl-p1', strict=True)
-        self.assertEqual((report['baseTasks'], len(routes)), (19, 20))
+        self.assertEqual((report['baseTasks'], len(routes)), (19, 19))
         self.assertFalse(any(report['pending'].values()))
 
     def test_unreviewed_paper_is_refused_with_its_pending_work(self):
@@ -49,7 +50,8 @@ class EnglishPublisherTest(unittest.TestCase):
 
     def test_only_reviewed_papers_publish_and_legacy_papers_need_a_bridge(self):
         self.assertEqual(len(self.published), 36)
-        self.assertEqual(sum(paper['cards'] for paper in self.published), 1963)
+        self.assertEqual(sum(paper['cards'] for paper in self.published), 1329)
+        self.assertEqual(sum(paper['printedDuplicates'] for paper in self.published), 6)
         reasons = {row['paperId']: row['reason'] for row in self.refused}
         bridged = {'english-2025-hl-p1', 'english-2025-hl-p2'}
         for year in range(2021, 2026):
@@ -115,6 +117,53 @@ class EnglishPublisherTest(unittest.TestCase):
         self.assertEqual(publish.legacy_additional_sources(), {})
 
 
+class EnglishPrintedChoiceRefusalTest(unittest.TestCase):
+    """Route cards that differ only in a choice label, and undeclared repeats, never publish."""
+
+    def setUp(self):
+        self.records = {record['id']: record for record in inventory()['papers']}
+        self.decisions = json.loads((ROOT / 'scripts/markbank/authored/english-selection-review.json').read_text())['decisions']
+
+    def test_label_only_route_group_is_refused(self):
+        key = 'english-2026-hl-p1'
+        original = publish.check_paper
+        decision = dict(self.decisions[key + '-composing-5'], kind='finite')
+        decision['expectedRoutes'] = decision.pop('printedChoices')
+
+        def as_routes(record, tasks, strict=False):
+            report, routes = original(record, tasks, strict=strict)
+            if record['id'] == key:
+                task = next(t for t in tasks if t['id'] == key + '-composing-5')
+                routes = [r for r in routes if r['id'] != task['id']] + english_choices.expand(task, decision)
+            return report, routes
+        with mock.patch.object(publish, 'check_paper', side_effect=as_routes):
+            with self.assertRaisesRegex(ValueError, 'differ only in a choice label'):
+                publish.publish()
+
+    def test_routes_that_differ_in_marking_content_are_allowed(self):
+        base = {'id': 'x-route-selection-1', 'choiceParentId': 'x', 'choiceLabel': 'Selected task: A',
+                'questionRef': 'Q · Selected task: A', 'questionText': 'Q\n\nFor this practice response — Selected task: A.',
+                'assessment': {'mode': 'combined', 'grid': 'g'}}
+        other = dict(base, id='x-route-selection-2', choiceLabel='Selected task: B', questionRef='Q · Selected task: B',
+                     questionText='Q\n\nFor this practice response — Selected task: B.')
+        with self.assertRaisesRegex(ValueError, 'differ only in a choice label'):
+            publish.refuse_label_only_routes([base, other])
+        publish.refuse_label_only_routes([base, dict(other, assessment={'mode': 'discrete', 'grid': 'g'})])
+
+    def test_printed_duplicates_are_declared_and_identical(self):
+        card = {'id': 'k-t1', 'questionText': 'Same', 'totalMarks': 10, 'atlas': {'fileid': 'f', 'n': '8'}}
+        twin = dict(card, id='k-t2', atlas={'fileid': 'f', 'n': '10'})
+        with self.assertRaisesRegex(ValueError, 'declare it in english-printed-duplicates.json'):
+            publish.merge_printed_duplicates('k', [card, twin], {})
+        kept, dropped = publish.merge_printed_duplicates(
+            'k', [dict(card), dict(twin)], {'k-t2': {'canonical': 'k-t1', 'reason': 'printed twice'}})
+        self.assertEqual(([c['id'] for c in kept], dropped), (['k-t1'], 1))
+        self.assertEqual(kept[0]['atlasPlacements'], [{'fileid': 'f', 'n': '10'}])
+        with self.assertRaisesRegex(ValueError, 'differs from'):
+            publish.merge_printed_duplicates('k', [card, dict(twin, totalMarks=15)],
+                                             {'k-t2': {'canonical': 'k-t1', 'reason': 'printed twice'}})
+
+
 class EnglishLegacyBridgeTest(unittest.TestCase):
     """A bridged legacy paper keeps every legacy id: on the published card or as an alias."""
 
@@ -143,7 +192,7 @@ class EnglishLegacyBridgeTest(unittest.TestCase):
         self.assertEqual(len(legacy_ids), 42)
         kept = [cid for cid in legacy_ids if cid in published]
         aliased = {cid: aliases[cid] for cid in legacy_ids if cid not in published}
-        self.assertEqual((len(kept), len(aliased)), (37, 5))
+        self.assertEqual((len(kept), len(aliased)), (38, 4))
         self.assertEqual(aliased, manifest['bridgeAliases'])
         self.assertTrue(all(target in published for target in aliased.values()))
 
@@ -164,10 +213,10 @@ class EnglishLegacyBridgeTest(unittest.TestCase):
                 self.apply('english-2025-hl-p2')
 
     def test_bridge_refuses_a_same_id_without_its_card(self):
-        bridge = copy.deepcopy(self.bridge['papers']['english-2025-hl-p1'])
-        bridge['legacyCards']['english-2025-hl-p1-composing-2'] = {'kind': 'same-id', 'reason': 'test'}
+        bridge = copy.deepcopy(self.bridge['papers']['english-2025-hl-p2'])
+        bridge['legacyCards']['english-2025-hl-p2-unseen-q1'] = {'kind': 'same-id', 'reason': 'test'}
         with self.assertRaisesRegex(ValueError, 'publishes no such card'):
-            self.apply('english-2025-hl-p1', bridge)
+            self.apply('english-2025-hl-p2', bridge)
 
     def test_bridge_refuses_a_different_printed_task(self):
         bridge = copy.deepcopy(self.bridge['papers']['english-2025-hl-p2'])

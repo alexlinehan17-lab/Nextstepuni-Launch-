@@ -42,9 +42,10 @@ type EnglishCard = SecRubricCard & { rubric: PclmRubric };
 interface PublishedRecord {
   id: string; year: number; level: 'higher' | 'ordinary'; paper: 1 | 2; topicId: string;
   atlas: { fileid: string; n: string };
+  atlasPlacements?: Array<{ fileid: string; n: string }>;
 }
 interface PublishedManifest {
-  papers: Array<{ paperId: string; tasks: number; cards: number }>;
+  papers: Array<{ paperId: string; tasks: number; cards: number; printedDuplicates: number }>;
   cards: PublishedRecord[];
   legacyAdditionalSources: Record<string, unknown[]>;
   bridgedPapers: string[];
@@ -64,7 +65,7 @@ const card = (id: string) => {
   if (!found) throw new Error(`missing published card ${id}`);
   return found;
 };
-const routesOf = (parent: string) => PUBLISHED.filter(entry => entry.id.startsWith(`${parent}-route-`));
+const placesOf = (record: PublishedRecord) => [record.atlas, ...(record.atlasPlacements ?? [])];
 const bandsOf = (assessment: PclmAssessment) => (assessment.mode === 'composite'
   ? assessment.components.flatMap(component => component.bands)
   : assessment.bands).map(band => [band.grade, band.marks] as const);
@@ -90,11 +91,14 @@ describe('English paper-by-paper publication', () => {
       const entry = reviewed.find(row => row.paperId === paper.paperId)!;
       const tally = (entry as unknown as { independentPaperTally: { baseTasks: number; finiteRoutes: number } })
         .independentPaperTally;
-      expect([paper.tasks, paper.cards], paper.paperId).toEqual([tally.baseTasks, tally.finiteRoutes]);
+      // One card per task (a printed choice is one card); a task printed twice
+      // on the paper is published once (english-printed-duplicates.json).
+      expect([paper.tasks, paper.cards + paper.printedDuplicates], paper.paperId)
+        .toEqual([tally.baseTasks, tally.finiteRoutes]);
       expect(RECORDS.filter(record => record.id.startsWith(`${paper.paperId}-`)), paper.paperId)
         .toHaveLength(paper.cards);
     }
-    expect(PUBLISHED).toHaveLength(1_963);
+    expect(PUBLISHED).toHaveLength(1_329);
   });
 
   it('never publishes an unreviewed or legacy-served paper', () => {
@@ -135,13 +139,12 @@ describe('English paper-by-paper publication', () => {
     expect(publishedOrdinary.legacyAdditionalSources).toEqual({});
   });
 
-  it('bridges 2025 Higher Level: 37 ids kept by their reviewed card, 5 explicit progress aliases', () => {
+  it('bridges 2025 Higher Level: 38 ids kept by their reviewed card, 4 explicit progress aliases', () => {
     const bridged = [...BRIDGED_IDS].sort();
     expect(bridged).toEqual(authoredJson.cards.map(entry => entry.id)
       .filter(id => /^english-2025-hl-p[12]-/.test(id)).sort());
     expect(bridged).toHaveLength(42);
     expect(BRIDGE_ALIASES).toEqual({
-      'english-2025-hl-p1-composing-2': 'english-2025-hl-p1-composing-2-route-selection-1',
       'english-2025-hl-p2-comparative-a-q1': 'english-2025-hl-p2-comparative-a-q1-a',
       'english-2025-hl-p2-comparative-b-q1': 'english-2025-hl-p2-comparative-b-q1-a',
       'english-2025-hl-p2-comparative-c-q1': 'english-2025-hl-p2-comparative-c-q1-a',
@@ -161,7 +164,7 @@ describe('English paper-by-paper publication', () => {
     // Every 2025 HL card is now a reviewed card; no legacy version is served twice.
     expect(ALL.filter(entry => entry.year === 2025 && entry.level === 'higher')
       .every(entry => PUBLISHED_IDS.has(entry.id))).toBe(true);
-    expect(PUBLISHED.filter(entry => entry.year === 2025)).toHaveLength(47);
+    expect(PUBLISHED.filter(entry => entry.year === 2025)).toHaveLength(46);
   });
 
   it('keeps the six 2025 Paper 1 indicative lists, lifted verbatim from the scheme', () => {
@@ -273,31 +276,48 @@ describe('English published cards use their own year’s printed grid and cap', 
   });
 });
 
-describe('English published routes and readers', () => {
-  it('expands finite printed choices into full-tariff routes with the parent reader', () => {
-    const posters = routesOf('english-2016-hl-p1-t1-b');
-    expect(posters).toHaveLength(12);
-    expect(posters.every(entry => entry.totalMarks === 50 && entry.sourceMaterial?.pages.join() === '2')).toBe(true);
-    const views = routesOf('english-2026-hl-p2-comparative-b-q1-a');
-    expect(views.map(entry => entry.totalMarks)).toEqual([30, 30]);
-    expect(views[0].questionText).toContain('predominantly by my emotional response');
-    expect(routesOf('english-2015-hl-p2-single-c-ii').map(entry => entry.totalMarks)).toEqual([60, 60, 60]);
-    expect(routesOf('english-2026-ol-p2-unseen-q2').every(entry => entry.sourceMaterial?.pages.join() === '14')).toBe(true);
-    // A parent of finite routes is never also a card.
-    expect(byId.has('english-2016-hl-p1-t1-b')).toBe(false);
+describe('English published printed choices and readers', () => {
+  it('publishes a printed choice the scheme marks identically as ONE card with the printed instruction', () => {
+    expect(PUBLISHED.some(entry => entry.id.includes('-route-'))).toBe(false);
+    const posters = card('english-2016-hl-p1-t1-b');
+    expect([posters.totalMarks, posters.sourceMaterial?.pages.join()]).toEqual([50, '2']);
+    expect(posters.rubric.taskRequirements).toContain(
+      'Make the choice the paper prints (First prize: 1 of 4; Second prize: 1 of 4, each a different one). '
+      + 'Every choice is marked on the same grid.');
+    const advice = card('english-2026-ol-p1-t3-a-i');
+    expect([advice.totalMarks, advice.sourceMaterial?.pages.join(), advice.questionText.includes('For this practice response')])
+      .toEqual([15, '6', false]);
+    expect(advice.rubric.taskRequirements[1]).toBe(
+      'Make the choice the paper prints (Most valuable: 2 of 10; Least valuable: 1 of 10, each a different one). '
+      + 'Every choice is marked on the same grid.');
+    expect(card('english-2026-hl-p2-comparative-b-q1-a').totalMarks).toBe(30);
+    expect(card('english-2015-hl-p2-single-c-ii').totalMarks).toBe(60);
+    expect(card('english-2026-ol-p2-unseen-q2').sourceMaterial?.pages.join()).toBe('14');
+    expect(PUBLISHED.filter(entry => entry.id.startsWith('english-2026-ol-p1-'))).toHaveLength(20);
+  });
+
+  it('publishes a task printed more than once on a paper once, keeping every printed placement', () => {
+    const either = RECORDS.find(record => record.id === 'english-2026-ol-p1-t1-a-iii-a')!;
+    expect(placesOf(either).map(place => place.n)).toEqual(['8', '10', '12']);
+    for (const id of ['english-2026-ol-p1-t2-a-iii-a', 'english-2026-ol-p1-t3-a-iii-a',
+      'english-2026-ol-p2-comparative-a-q2-b', 'english-2026-ol-p2-comparative-b-q2-b',
+      'english-2026-ol-p2-comparative-c-q2-b', 'english-2018-ol-p2-comparative-a-q2-b']) {
+      expect(byId.has(id), id).toBe(false);
+    }
+    for (const id of ['english-2026-ol-p2-comparative-a-q1-b', 'english-2018-ol-p2-comparative-a-q1-b']) {
+      expect(card(id).totalMarks, id).toBe(40);
+    }
   });
 
   it('carries the reviewed readers, companions and exclusions', () => {
-    const yeats = routesOf('english-2010-ol-p2-prescribed-d-q2-iii');
-    expect(yeats).toHaveLength(2);
-    expect(yeats.every(entry => entry.sourceMaterial?.kind === 'supplementary-text'
-      && (entry.sourceMaterial.texts?.length ?? 0) === 2)).toBe(true);
+    const yeats = card('english-2010-ol-p2-prescribed-d-q2-iii');
+    expect(yeats.sourceMaterial?.kind === 'supplementary-text'
+      && (yeats.sourceMaterial.texts?.length ?? 0) === 2).toBe(true);
     const hopkins = card('english-2011-ol-p2-prescribed-d-q2-iii');
     expect(hopkins.additionalSourceMaterials?.map(source => [source.title, source.sourceYear, source.pages]))
       .toEqual([['Inversnaid', 2021, [20]]]);
-    const plath = routesOf('english-2014-ol-p2-prescribed-c-q2-iii');
-    expect(plath.length).toBeGreaterThan(0);
-    expect(plath.every(entry => entry.additionalSourceMaterials?.[0]?.kind === 'linked-reading')).toBe(true);
+    const plath = card('english-2014-ol-p2-prescribed-c-q2-iii');
+    expect(plath.additionalSourceMaterials?.[0]?.kind).toBe('linked-reading');
     expect(card('english-2016-ol-p1-t1-a-iii-b').sourceMaterial).toBeUndefined();
     expect(card('english-2026-ol-p2-prescribed-c-q1-a').sourceMaterial).toMatchObject({ title: 'It’s Not', pages: [17] });
     expect(card('english-2010-ol-p2-comparative-a-q1-a').stem).toContain('Before beginning, name the texts');
@@ -308,10 +328,12 @@ describe('English Topic Atlas parity for published papers', () => {
   it('files every published card under a topic carrying its canonical node', () => {
     const missing: string[] = [];
     for (const record of RECORDS) {
-      const topics = examTopicIdsForQuestion('english', record.level, record.year, 'main', record.atlas.n,
-        `p${record.paper}`, 'ev', record.atlas.fileid);
-      if (!topics.some(topic => curriculumNodeIdsForExamTopic(topic).includes(record.topicId))) {
-        missing.push(`${record.id} -> ${record.atlas.fileid} Q${record.atlas.n}`);
+      for (const place of placesOf(record)) {
+        const topics = examTopicIdsForQuestion('english', record.level, record.year, 'main', place.n,
+          `p${record.paper}`, 'ev', place.fileid);
+        if (!topics.some(topic => curriculumNodeIdsForExamTopic(topic).includes(record.topicId))) {
+          missing.push(`${record.id} -> ${place.fileid} Q${place.n}`);
+        }
       }
     }
     expect(missing).toEqual([]);
@@ -351,7 +373,7 @@ describe('English Topic Atlas parity for published papers', () => {
       expect(hosted, paper).toBe(reviewed);
       const blocks = new Set((JSON.parse(hosted) as { q: Array<{ n: string }> }).q.map(question => question.n));
       for (const record of RECORDS.filter(entry => `${entry.year}|${entry.level}|${entry.atlas.fileid}` === paper)) {
-        expect(blocks.has(record.atlas.n), `${record.id} block ${record.atlas.n}`).toBe(true);
+        for (const place of placesOf(record)) expect(blocks.has(place.n), `${record.id} block ${place.n}`).toBe(true);
       }
     }
     const browsable = new Set(questionsForTopics('english', null)

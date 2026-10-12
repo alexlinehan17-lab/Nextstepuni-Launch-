@@ -45,8 +45,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 19,
-        "finiteRoutes": 20,
-        "basis": "Three texts each contain QA15/15/20 and B50; seven compositions100. HL Text3 QA(ii) prefers one of two covers but requires both in the comparison: one additional route."
+        "finiteRoutes": 19,
+        "basis": "Three texts each contain QA15/15/20 and B50; seven compositions100. HL Text3 QA(ii) prefers one of two covers but requires both in the comparison: one additional route. Coordinator rule 2026-10-12: 1 printed choice(s) marked identically for every option are one card each (2 combinations), so finite routes 20 -> 19."
       }
     },
     {
@@ -140,8 +140,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 19,
-        "finiteRoutes": 29,
-        "basis": "Three texts each contain QA15/15/20 and B50; seven compositions100. OL Text3 description has four choices, three-caption selection has C(4,3)=4, and least-liked situation has four: nine additional routes. Composition7 for/against adds one route. Brave/foolish/both is flexible."
+        "finiteRoutes": 19,
+        "basis": "Three texts each contain QA15/15/20 and B50; seven compositions100. OL Text3 description has four choices, three-caption selection has C(4,3)=4, and least-liked situation has four: nine additional routes. Composition7 for/against adds one route. Brave/foolish/both is flexible. Coordinator rule 2026-10-12: 4 printed choice(s) marked identically for every option are one card each (14 combinations), so finite routes 29 -> 19."
       }
     },
     {
@@ -210,8 +210,8 @@
       "openFindings": [],
       "independentPaperTally": {
         "baseTasks": 89,
-        "finiteRoutes": 115,
-        "basis": "Nine Single Text blocks each contain six leaf tasks (three10 and three30 alternatives):54. Comparative A has four tasks; B five including15+15+40:9. Unseen2. Four prescribed blocks six each:24. Base89. Additional closed routes:13 Single Text (including five Mundy sisters),13 poetry (including five favourite stanzas and five inherited exclusion choices). Total115."
+        "finiteRoutes": 89,
+        "basis": "Nine Single Text blocks each contain six leaf tasks (three10 and three30 alternatives):54. Comparative A has four tasks; B five including15+15+40:9. Unseen2. Four prescribed blocks six each:24. Base89. Additional closed routes:13 Single Text (including five Mundy sisters),13 poetry (including five favourite stanzas and five inherited exclusion choices). Total115. Coordinator rule 2026-10-12: 14 printed choice(s) marked identically for every option are one card each (40 combinations), so finite routes 115 -> 89."
       }
     },
     {
@@ -257,8 +257,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 19,
-        "finiteRoutes": 20,
-        "basis": "Three texts each contain QA15/15/20 and B50; seven compositions100:19 tasks. Composition2 offers newspaper/magazine2, adding one route:20. Mystery-genre suggestions and at-least stylistic features stay open."
+        "finiteRoutes": 19,
+        "basis": "Three texts each contain QA15/15/20 and B50; seven compositions100:19 tasks. Composition2 offers newspaper/magazine2, adding one route:20. Mystery-genre suggestions and at-least stylistic features stay open. Coordinator rule 2026-10-12: 1 printed choice(s) marked identically for every option are one card each (2 combinations), so finite routes 20 -> 19."
       }
     },
     {
@@ -351,8 +351,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 19,
-        "finiteRoutes": 21,
-        "basis": "Three texts each contain QA15/15/20 and B50; seven compositions100:19 tasks. Composition1 names three event settings (own life/school/local area), adding two routes:21. All three QA(iii) responses have linked a/b parts sharing20, confirmed in scheme. Open illustration media and free personal views do not add closed routes."
+        "finiteRoutes": 19,
+        "basis": "Three texts each contain QA15/15/20 and B50; seven compositions100:19 tasks. Composition1 names three event settings (own life/school/local area), adding two routes:21. All three QA(iii) responses have linked a/b parts sharing20, confirmed in scheme. Open illustration media and free personal views do not add closed routes. Coordinator rule 2026-10-12: 1 printed choice(s) marked identically for every option are one card each (3 combinations), so finite routes 21 -> 19."
       }
     },
     {
@@ -422,8 +422,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 91,
-        "finiteRoutes": 111,
-        "basis": "Independent tally: Single Text54 + Comparative10 + Unseen3 + Prescribed24 =91 tasks. Fixed routes add20: two place pairs(+2), Boatwright sisters(+2), for/against(+1), five women(+4), Hamlet relationships(+1), four three-phrase pools(+8), three seasons other than spring(+2). Total111 routes. Unseen any-two governs three separately marked10 tasks. Required two diary entries and paired image/title prompts each retain one published award."
+        "finiteRoutes": 91,
+        "basis": "Independent tally: Single Text54 + Comparative10 + Unseen3 + Prescribed24 =91 tasks. Fixed routes add20: two place pairs(+2), Boatwright sisters(+2), for/against(+1), five women(+4), Hamlet relationships(+1), four three-phrase pools(+8), three seasons other than spring(+2). Total111 routes. Unseen any-two governs three separately marked10 tasks. Required two diary entries and paired image/title prompts each retain one published award. Coordinator rule 2026-10-12: 11 printed choice(s) marked identically for every option are one card each (31 combinations), so finite routes 111 -> 91."
       }
     },
     {
@@ -470,8 +470,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 19,
-        "finiteRoutes": 24,
-        "basis": "Three QA groups of15/15/20 plus three B50 and seven composing100=19tasks. Internal expansions: choose2of3images(+2), chooseA/Billustration(+1), support/opposeoutings(+1), newspaper/magazine(+1)=24routes."
+        "finiteRoutes": 19,
+        "basis": "Three QA groups of15/15/20 plus three B50 and seven composing100=19tasks. Internal expansions: choose2of3images(+2), chooseA/Billustration(+1), support/opposeoutings(+1), newspaper/magazine(+1)=24routes. Coordinator rule 2026-10-12: 4 printed choice(s) marked identically for every option are one card each (9 combinations), so finite routes 24 -> 19."
       }
     },
     {
@@ -567,8 +567,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 22,
-        "finiteRoutes": 35,
-        "basis": "Three QA groups of15/15/10/10 plus three B50 and seven composing100=22tasks. Text1B has sporting ambition/fear/schoolplay/musical/debate=5routes(+4); Text3QAi chooses3of5printedwords=10routes(+9). Total35routes. Three diary entries remain a single50-mark award. All other choices concern open evidence, personal material or flexible judgements."
+        "finiteRoutes": 22,
+        "basis": "Three QA groups of15/15/10/10 plus three B50 and seven composing100=22tasks. Text1B has sporting ambition/fear/schoolplay/musical/debate=5routes(+4); Text3QAi chooses3of5printedwords=10routes(+9). Total35routes. Three diary entries remain a single50-mark award. All other choices concern open evidence, personal material or flexible judgements. Coordinator rule 2026-10-12: 2 printed choice(s) marked identically for every option are one card each (15 combinations), so finite routes 35 -> 22."
       }
     },
     {
@@ -642,8 +642,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 90,
-        "finiteRoutes": 113,
-        "basis": "Independent tally: Single Text54 + Comparative10 + Unseen2 + Prescribed24 =90 tasks. Fixed routes add23: five prescribed-opening pairs(+5), four three-statement pools(+8), Hamlet/Polonius(+1), four three-collection pools(+8), two Kinsella attitudes(+1). Total113 routes. Two unseen10 tasks are compulsory; paired diary entries each retain one30-mark award."
+        "finiteRoutes": 90,
+        "basis": "Independent tally: Single Text54 + Comparative10 + Unseen2 + Prescribed24 =90 tasks. Fixed routes add23: five prescribed-opening pairs(+5), four three-statement pools(+8), Hamlet/Polonius(+1), four three-collection pools(+8), two Kinsella attitudes(+1). Total113 routes. Two unseen10 tasks are compulsory; paired diary entries each retain one30-mark award. Coordinator rule 2026-10-12: 15 printed choice(s) marked identically for every option are one card each (38 combinations), so finite routes 113 -> 90."
       }
     },
     {
@@ -673,8 +673,8 @@
       "allFiniteRoutesReconciled": true,
       "independentPaperTally": {
         "baseTasks": 19,
-        "finiteRoutes": 21,
-        "basis": "Three texts each have three QA parts (15/15/20) and B50; seven compositions100. Debate sides and manipulated/manipulative story directions each add one route. Both images in Text1 QA(ii) are required; Text3 QA(ii) allows open written images with optional visual combination."
+        "finiteRoutes": 19,
+        "basis": "Three texts each have three QA parts (15/15/20) and B50; seven compositions100. Debate sides and manipulated/manipulative story directions each add one route. Both images in Text1 QA(ii) are required; Text3 QA(ii) allows open written images with optional visual combination. Coordinator rule 2026-10-12: 2 printed choice(s) marked identically for every option are one card each (4 combinations), so finite routes 21 -> 19."
       },
       "schemePagesTextChecked": [
         3,
@@ -773,8 +773,8 @@
       "allFiniteRoutesReconciled": true,
       "independentPaperTally": {
         "baseTasks": 22,
-        "finiteRoutes": 32,
-        "basis": "Three texts each have four QA parts (15/15/10/10) and B50; seven compositions100. Two three-word choose-two pools add four routes; four review formats add three; three essay topics add two; two debate sides add one."
+        "finiteRoutes": 22,
+        "basis": "Three texts each have four QA parts (15/15/10/10) and B50; seven compositions100. Two three-word choose-two pools add four routes; four review formats add three; three essay topics add two; two debate sides add one. Coordinator rule 2026-10-12: 5 printed choice(s) marked identically for every option are one card each (15 combinations), so finite routes 32 -> 22."
       },
       "schemePagesTextChecked": [
         3,
@@ -835,8 +835,8 @@
         "unseenPoetryTasks": 2,
         "prescribedPoetryTasks": 24,
         "baseTasks": 90,
-        "finiteRoutes": 107,
-        "basis": "Visually read all 20 pages. Single Text 9 x 6 tasks, four two-opening choices add four. Comparative each mode Q1 30+40 and Q2 20+20+30; Aspects of Story gives three routes for each of five marked tasks, adding ten. Unseen 2 x 10. Prescribed 4 x 6 tasks; Jungian Cows Q1(c) has two statements and The Fish Q1(a) three, adding three. Scheme boundaries and criteria cross-checked; raw directive scan fully reconciled."
+        "finiteRoutes": 90,
+        "basis": "Visually read all 20 pages. Single Text 9 x 6 tasks, four two-opening choices add four. Comparative each mode Q1 30+40 and Q2 20+20+30; Aspects of Story gives three routes for each of five marked tasks, adding ten. Unseen 2 x 10. Prescribed 4 x 6 tasks; Jungian Cows Q1(c) has two statements and The Fish Q1(a) three, adding three. Scheme boundaries and criteria cross-checked; raw directive scan fully reconciled. Coordinator rule 2026-10-12: 11 printed choice(s) marked identically for every option are one card each (28 combinations), so finite routes 107 -> 90."
       },
       "schemePagesTextChecked": [
         13,
@@ -919,8 +919,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 19,
-        "finiteRoutes": 20,
-        "basis": "Three QA groups of15/15/20 plus three B50 and seven composing100=19tasks. Outline of Warner or Lanchester creates two15-mark routes(+1), total20. Comparing their effectiveness allows equality; observations, optional register and beautiful/exotic remain open or flexible."
+        "finiteRoutes": 19,
+        "basis": "Three QA groups of15/15/20 plus three B50 and seven composing100=19tasks. Outline of Warner or Lanchester creates two15-mark routes(+1), total20. Comparing their effectiveness allows equality; observations, optional register and beautiful/exotic remain open or flexible. Coordinator rule 2026-10-12: 1 printed choice(s) marked identically for every option are one card each (2 combinations), so finite routes 20 -> 19."
       }
     },
     {
@@ -1015,8 +1015,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 22,
-        "finiteRoutes": 26,
-        "basis": "Three QA groups of15/15/10/10 plus three B50 and seven composing100=22tasks. Cover1/2(+1), lucky/unlucky story(+1), three essay topics(+2)=26routes. Cruel/amusing/both and painful/embarrassing permit nuanced or overlapping treatment, not fixed exclusive pools."
+        "finiteRoutes": 22,
+        "basis": "Three QA groups of15/15/10/10 plus three B50 and seven composing100=22tasks. Cover1/2(+1), lucky/unlucky story(+1), three essay topics(+2)=26routes. Cruel/amusing/both and painful/embarrassing permit nuanced or overlapping treatment, not fixed exclusive pools. Coordinator rule 2026-10-12: 3 printed choice(s) marked identically for every option are one card each (7 combinations), so finite routes 26 -> 22."
       }
     },
     {
@@ -1089,8 +1089,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 90,
-        "finiteRoutes": 117,
-        "basis": "Independent tally: Single54 + Comparative10 + Unseen2 + Prescribed24 =90 tasks. Nine three-word pools(+18), Kathy/Ruth/Tommy(+2), two compulsory comparative openings(+1), three Heaney favourites(+2), three Wyley collections(+2), three Plath favourites(+2) give117 routes. Flexible word-or-words pools and compulsory diary pairs are not split."
+        "finiteRoutes": 90,
+        "basis": "Independent tally: Single54 + Comparative10 + Unseen2 + Prescribed24 =90 tasks. Nine three-word pools(+18), Kathy/Ruth/Tommy(+2), two compulsory comparative openings(+1), three Heaney favourites(+2), three Wyley collections(+2), three Plath favourites(+2) give117 routes. Flexible word-or-words pools and compulsory diary pairs are not split. Coordinator rule 2026-10-12: 14 printed choice(s) marked identically for every option are one card each (41 combinations), so finite routes 117 -> 90."
       },
       "openFindings": []
     },
@@ -1141,8 +1141,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 19,
-        "finiteRoutes": 25,
-        "basis": "Three QA groups of15/15/20 plus three B50 and seven composing100=19tasks. Six writing genres(+5) and past/future traveller(+1)=25routes. Both covers AND passage compulsory for Aiii. Tone and number of endings remain flexible."
+        "finiteRoutes": 19,
+        "basis": "Three QA groups of15/15/20 plus three B50 and seven composing100=19tasks. Six writing genres(+5) and past/future traveller(+1)=25routes. Both covers AND passage compulsory for Aiii. Tone and number of endings remain flexible. Coordinator rule 2026-10-12: 2 printed choice(s) marked identically for every option are one card each (8 combinations), so finite routes 25 -> 19."
       }
     },
     {
@@ -1194,8 +1194,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 23,
-        "finiteRoutes": 25,
-        "basis": "Five Single Text works with two60-mark alternatives:10. Theme or Issue and Literary Genre each have Q1=70/Q2=30+40:6. Unseen10+10 or20:3. Four prescribed50:4. Total23 marked tasks. Never Let Me Go(ii) requires exactly two of Kathy/Ruth/Tommy, producing three60-mark routes(+2), total25. Surprised/shocked/both stays flexible. ComparativeB2(b) permits an earlier technique or any other, with no compulsory link back to2(a). Peter Street’s six tercets and its footnote are complete on PDF6."
+        "finiteRoutes": 23,
+        "basis": "Five Single Text works with two60-mark alternatives:10. Theme or Issue and Literary Genre each have Q1=70/Q2=30+40:6. Unseen10+10 or20:3. Four prescribed50:4. Total23 marked tasks. Never Let Me Go(ii) requires exactly two of Kathy/Ruth/Tommy, producing three60-mark routes(+2), total25. Surprised/shocked/both stays flexible. ComparativeB2(b) permits an earlier technique or any other, with no compulsory link back to2(a). Peter Street’s six tercets and its footnote are complete on PDF6. Coordinator rule 2026-10-12: 1 printed choice(s) marked identically for every option are one card each (3 combinations), so finite routes 25 -> 23."
       }
     },
     {
@@ -1238,8 +1238,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 22,
-        "finiteRoutes": 25,
-        "basis": "Three QA groups of15/15/10/10 plus three B50 and seven composing100=22tasks. Lizzie/Michael(+1), podcast/radio diary(+1), Cover1/Cover2 preference with BOTH descriptions(+1)=25routes. Word or words, numbers of devices/characters and qualified judgements remain flexible/open. Two diary entries form one50-mark response."
+        "finiteRoutes": 22,
+        "basis": "Three QA groups of15/15/10/10 plus three B50 and seven composing100=22tasks. Lizzie/Michael(+1), podcast/radio diary(+1), Cover1/Cover2 preference with BOTH descriptions(+1)=25routes. Word or words, numbers of devices/characters and qualified judgements remain flexible/open. Two diary entries form one50-mark response. Coordinator rule 2026-10-12: 3 printed choice(s) marked identically for every option are one card each (6 combinations), so finite routes 25 -> 22."
       }
     },
     {
@@ -1316,8 +1316,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 92,
-        "finiteRoutes": 128,
-        "basis": "Independent tally: Single54 + Comparative12 + Unseen2 + Prescribed24 =92 tasks. Nine three-statement pools(+18); comparative social-class/conflict twice(+2), shocked/impressed twice(+2), clever/cruel/brave twice(+4); three prescribed10-mark descriptor pools(+6), two prescribed20-mark collection/statement pools(+4):128routes. Open40-mark comparisons retain parent context without imposing the prior attribute as a fixed focus. One-or-more pools and happy/sad/both remain flexible."
+        "finiteRoutes": 92,
+        "basis": "Independent tally: Single54 + Comparative12 + Unseen2 + Prescribed24 =92 tasks. Nine three-statement pools(+18); comparative social-class/conflict twice(+2), shocked/impressed twice(+2), clever/cruel/brave twice(+4); three prescribed10-mark descriptor pools(+6), two prescribed20-mark collection/statement pools(+4):128routes. Open40-mark comparisons retain parent context without imposing the prior attribute as a fixed focus. One-or-more pools and happy/sad/both remain flexible. Coordinator rule 2026-10-12: 20 printed choice(s) marked identically for every option are one card each (56 combinations), so finite routes 128 -> 92."
       }
     },
     {
@@ -1368,8 +1368,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 19,
-        "finiteRoutes": 34,
-        "basis": "Three QA groups of 15/15/20 plus three B50 and seven composing100 = 19 tasks. Text 1 A(ii) one of four posters (+3), Text 1 B distinct first and second prizes from the four posters, ordered 4×3 = 12 (+11), composing 5 for/against (+1) = 34 routes. At-least-one Shakespearean play, to-what-extent and agree/disagree judgements and serious/amusing/both register stay open or flexible. Text 2 B keeps the printed “identity”."
+        "finiteRoutes": 19,
+        "basis": "Three QA groups of 15/15/20 plus three B50 and seven composing100 = 19 tasks. Text 1 A(ii) one of four posters (+3), Text 1 B distinct first and second prizes from the four posters, ordered 4×3 = 12 (+11), composing 5 for/against (+1) = 34 routes. At-least-one Shakespearean play, to-what-extent and agree/disagree judgements and serious/amusing/both register stay open or flexible. Text 2 B keeps the printed “identity”. Coordinator rule 2026-10-12: 3 printed choice(s) marked identically for every option are one card each (18 combinations), so finite routes 34 -> 19."
       }
     },
     {
@@ -1425,8 +1425,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 22,
-        "finiteRoutes": 39,
-        "basis": "Three QA groups of 15/15/10/10 plus three B50 and seven composing100 = 22 tasks. Text 1 A(ii) mainly positive or mainly negative view (+1, scheme PDF5), Chris/Anna (+1), four dates 24–27 April (+3), broadsheet/tabloid (+1), notebook/blog (+1), magazine/website (+1), any two of five virtues C(5,2) = 10 (+9) = 39 routes. Social-media agree/disagree/both and Ireland/abroad, three of Palin’s reasons, the holiday destination and at-least-one occasion remain open or flexible. Three Mars diary entries form one 100-mark composition."
+        "finiteRoutes": 22,
+        "basis": "Three QA groups of 15/15/10/10 plus three B50 and seven composing100 = 22 tasks. Text 1 A(ii) mainly positive or mainly negative view (+1, scheme PDF5), Chris/Anna (+1), four dates 24–27 April (+3), broadsheet/tabloid (+1), notebook/blog (+1), magazine/website (+1), any two of five virtues C(5,2) = 10 (+9) = 39 routes. Social-media agree/disagree/both and Ireland/abroad, three of Palin’s reasons, the holiday destination and at-least-one occasion remain open or flexible. Three Mars diary entries form one 100-mark composition. Coordinator rule 2026-10-12: 7 printed choice(s) marked identically for every option are one card each (24 combinations), so finite routes 39 -> 22."
       }
     },
     {
@@ -1532,8 +1532,8 @@
       "allFiniteRoutesReconciled": true,
       "independentPaperTally": {
         "baseTasks": 19,
-        "finiteRoutes": 20,
-        "basis": "Three texts each QA15/15/20 and B50; seven compositions100. Text3 B requires one of two formats as the first experience, adding one route. Composition7 permits a free judgement, not a formal side; composition1 allows some or all seasons."
+        "finiteRoutes": 19,
+        "basis": "Three texts each QA15/15/20 and B50; seven compositions100. Text3 B requires one of two formats as the first experience, adding one route. Composition7 permits a free judgement, not a formal side; composition1 allows some or all seasons. Coordinator rule 2026-10-12: 1 printed choice(s) marked identically for every option are one card each (2 combinations), so finite routes 20 -> 19."
       },
       "schemePagesTextChecked": [
         4,
@@ -1635,8 +1635,8 @@
       "allFiniteRoutesReconciled": true,
       "independentPaperTally": {
         "baseTasks": 22,
-        "finiteRoutes": 24,
-        "basis": "Three texts each QA15/15/10/10 and B50; seven compositions100. Text2 QA(ii) front-page/sports alternatives add one route; composition2 twin brothers/sisters adds one. Composition4 at least three of six areas remains flexible; composition7 personal reflection on siblings is open."
+        "finiteRoutes": 22,
+        "basis": "Three texts each QA15/15/10/10 and B50; seven compositions100. Text2 QA(ii) front-page/sports alternatives add one route; composition2 twin brothers/sisters adds one. Composition4 at least three of six areas remains flexible; composition7 personal reflection on siblings is open. Coordinator rule 2026-10-12: 2 printed choice(s) marked identically for every option are one card each (4 combinations), so finite routes 24 -> 22."
       },
       "schemePagesTextChecked": [
         4,
@@ -1696,8 +1696,8 @@
         "unseenPoetryTasks": 2,
         "prescribedPoetryTasks": 24,
         "baseTasks": 92,
-        "finiteRoutes": 104,
-        "basis": "Visually read all 20 pages: 9 Single Text options x 6 marked tasks; 2 comparative modes x 2 questions x 3 marked parts; 2 unseen tasks; 4 prescribed poems x 6 tasks. Nine named-character pairs and three loyalty/betrayal pairs each add one route. Phrase OR phrases is flexible. These counts still require scheme reconciliation."
+        "finiteRoutes": 92,
+        "basis": "Visually read all 20 pages: 9 Single Text options x 6 marked tasks; 2 comparative modes x 2 questions x 3 marked parts; 2 unseen tasks; 4 prescribed poems x 6 tasks. Nine named-character pairs and three loyalty/betrayal pairs each add one route. Phrase OR phrases is flexible. These counts still require scheme reconciliation. Coordinator rule 2026-10-12: 12 printed choice(s) marked identically for every option are one card each (24 combinations), so finite routes 104 -> 92."
       },
       "schemePagesTextChecked": [
         15,
@@ -2114,8 +2114,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 19,
-        "finiteRoutes": 20,
-        "basis": "Three QA groups of 15/15/20 plus three B 50 and seven composing 100 = 19 tasks. Only finite route: composing 2 for or against the motion (+1, scheme PDF15 “argue on one side of the motion only”) = 20 routes. Agree/disagree judgements, three/at-least-two points, four free style elements, more-than-one minimums and the B stances stay open; composing 1 printed and digital images are required together."
+        "finiteRoutes": 19,
+        "basis": "Three QA groups of 15/15/20 plus three B 50 and seven composing 100 = 19 tasks. Only finite route: composing 2 for or against the motion (+1, scheme PDF15 “argue on one side of the motion only”) = 20 routes. Agree/disagree judgements, three/at-least-two points, four free style elements, more-than-one minimums and the B stances stay open; composing 1 printed and digital images are required together. Coordinator rule 2026-10-12: 1 printed choice(s) marked identically for every option are one card each (2 combinations), so finite routes 20 -> 19."
       }
     },
     {
@@ -2319,8 +2319,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 19,
-        "finiteRoutes": 20,
-        "basis": "Three QA groups of 15/15/20 plus three B 50 and seven composing 100 = 19 tasks. Only finite route: composing 5 for or against the motion (+1, scheme PDF19 “argue on one side”) = 20 routes. How-valid judgements, three/at-least-two points, four free style features, either/both extracts or writers, serious/humorous/combination register and the B stances stay open or flexible."
+        "finiteRoutes": 19,
+        "basis": "Three QA groups of 15/15/20 plus three B 50 and seven composing 100 = 19 tasks. Only finite route: composing 5 for or against the motion (+1, scheme PDF19 “argue on one side”) = 20 routes. How-valid judgements, three/at-least-two points, four free style features, either/both extracts or writers, serious/humorous/combination register and the B stances stay open or flexible. Coordinator rule 2026-10-12: 1 printed choice(s) marked identically for every option are one card each (2 combinations), so finite routes 20 -> 19."
       }
     },
     {
@@ -2417,8 +2417,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 27,
-        "finiteRoutes": 28,
-        "basis": "Single Text 5 texts × (i)/(ii) 60 = 10; Comparative 3 modes × (Q1(a) 30 + Q1(b) 40 + Q2 70) = 9; Unseen Q1(a) 10, Q1(b) 10, Q2 20 = 3; Prescribed 5 poets × 50 = 5; 27 tasks. Only finite route: General Vision Q1(a) predominantly emotional or rational (+1, scheme PDF37 “should decide which is the more dominant”) = 28 routes. Limits/enhances, agree/disagree, combined views, at-least counts and the per-text emotional/rational comparison in Q1(b) stay open or flexible."
+        "finiteRoutes": 27,
+        "basis": "Single Text 5 texts × (i)/(ii) 60 = 10; Comparative 3 modes × (Q1(a) 30 + Q1(b) 40 + Q2 70) = 9; Unseen Q1(a) 10, Q1(b) 10, Q2 20 = 3; Prescribed 5 poets × 50 = 5; 27 tasks. Only finite route: General Vision Q1(a) predominantly emotional or rational (+1, scheme PDF37 “should decide which is the more dominant”) = 28 routes. Limits/enhances, agree/disagree, combined views, at-least counts and the per-text emotional/rational comparison in Q1(b) stay open or flexible. Coordinator rule 2026-10-12: 1 printed choice(s) marked identically for every option are one card each (2 combinations), so finite routes 28 -> 27."
       }
     },
     {
@@ -2492,8 +2492,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 22,
-        "finiteRoutes": 390,
-        "basis": "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks. Finite routes: TEXT 3 A(i) two most valuable and a distinct least valuable of the ten printed pieces of advice C(10,2) × 8 = 360 (+359); TEXT 3 A(ii) two of the four images C(4,2) = 6 (+5); the A(iii)(a) person-or-event choice printed under all three texts (+1 each, +3); composing 3 for/against (+1) = 390 routes. Serious/humorous registers, agree/disagree judgements, three points and the worst jobs stay open."
+        "finiteRoutes": 22,
+        "basis": "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks. Finite routes: TEXT 3 A(i) two most valuable and a distinct least valuable of the ten printed pieces of advice C(10,2) × 8 = 360 (+359); TEXT 3 A(ii) two of the four images C(4,2) = 6 (+5); the A(iii)(a) person-or-event choice printed under all three texts (+1 each, +3); composing 3 for/against (+1) = 390 routes. Serious/humorous registers, agree/disagree judgements, three points and the worst jobs stay open. Coordinator rule 2026-10-12: 6 printed choice(s) marked identically for every option are one card each (374 combinations), so finite routes 390 -> 22."
       }
     },
     {
@@ -2641,8 +2641,8 @@
       ],
       "independentPaperTally": {
         "baseTasks": 104,
-        "finiteRoutes": 105,
-        "basis": "Single Text 9 texts × (Q1(a)(b)(c) 10 each + Q2/Q3/Q4 30) = 54; Comparative 3 modes × 2 questions × ((a)(i) 15 + (a)(ii) 15 + (b) 40) = 18; Unseen 2 × 10; Prescribed 6 poems × (Q1(a)(b) 15 + Q2(i)/(ii)/(iii) 20) = 30; 104 tasks. Only finite route: Unseen Q2 sad or hopeful (+1, scheme PDF57 “ultimately choose one”) = 105 routes. Positive/negative/both tone (×6) is an and/or judgement, flexible as in reviewed 2010/2013/2014/2015 precedent; agree/disagree, good/bad power moments, relevant/not, stronger/weaker, respectful and hero/heroine/villain stay open."
+        "finiteRoutes": 104,
+        "basis": "Single Text 9 texts × (Q1(a)(b)(c) 10 each + Q2/Q3/Q4 30) = 54; Comparative 3 modes × 2 questions × ((a)(i) 15 + (a)(ii) 15 + (b) 40) = 18; Unseen 2 × 10; Prescribed 6 poems × (Q1(a)(b) 15 + Q2(i)/(ii)/(iii) 20) = 30; 104 tasks. Only finite route: Unseen Q2 sad or hopeful (+1, scheme PDF57 “ultimately choose one”) = 105 routes. Positive/negative/both tone (×6) is an and/or judgement, flexible as in reviewed 2010/2013/2014/2015 precedent; agree/disagree, good/bad power moments, relevant/not, stronger/weaker, respectful and hero/heroine/villain stay open. Coordinator rule 2026-10-12: 1 printed choice(s) marked identically for every option are one card each (2 combinations), so finite routes 105 -> 104."
       }
     }
   ]
