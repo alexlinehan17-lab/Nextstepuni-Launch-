@@ -26,7 +26,7 @@ const REVIEWED_2026_PATH = path.join(
 // bio_review_<year>_<level>.py). Their maps only ADD topics: a question keeps
 // every topic the factual reference snapshot gave it and gains the topics its
 // reviewed tasks need.
-const REVIEWED_EARLIER_YEARS = [2025, 2024];
+const REVIEWED_EARLIER_YEARS = [2025, 2024, 2023];
 const reviewedMapPath = year => path.join(
   ROOT, `data/examTopics/biology-${year}-exam-topic-map.json`,
 );

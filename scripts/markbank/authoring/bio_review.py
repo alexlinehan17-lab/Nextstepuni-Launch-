@@ -274,7 +274,9 @@ def build_row(lifter, spec, row_id, task_doc, sp, lo):
         else:
             t, meta = lifter.lift(spec['sel'], task_doc, sp, lo)
             starred_any |= '*' in t
-            options = [strip_stars(B.clean_option(x)) for x in t.split('/')]
+            # A menu printed as one "or" list ("Common cold virus or HIV or
+            # ...", "Name two") is cut at the scheme's own "or".
+            options = [strip_stars(B.clean_option(x)) for x in t.split(spec.get('sep') or '/')]
         open_list = any(o.lower() == 'other correct' for o in options)
         options = [o for o in options if o and o.lower() != 'other correct']
         # The scheme's trailing ellipsis ("oxygen……….") and a closing "or
@@ -316,6 +318,14 @@ def build_row(lifter, spec, row_id, task_doc, sp, lo):
     return row, units, worth
 
 
+def ladder_key(ledger, qn, letter):
+    """The LADDERS key a part belongs to: its question, or (question, letters)."""
+    for k in getattr(ledger, 'LADDERS', {}):
+        if k == qn or (isinstance(k, tuple) and k[0] == qn and letter and letter in k[1]):
+            return k
+    return None
+
+
 def build(ledger, year, level):
     lifter = Lifter(ledger)
     LT = B.LEVEL_TOKEN[level]
@@ -337,6 +347,7 @@ def build(ledger, year, level):
     # --- tasks ------------------------------------------------------------
     cards, audit_tasks, excluded = [], [], []
     units_by = defaultdict(Counter)
+    ladder_units = defaultdict(Counter)
     totals_q, totals_part = defaultdict(int), defaultdict(int)
     seen_ids = set()
     for t in ledger.TASKS:
@@ -412,9 +423,12 @@ def build(ledger, year, level):
         seen_ids.add(cid)
         # Route cards share one task: count its tariff once.
         first_route = not t['route'] or t['route'] == ledger.ROUTES[t['ref']][0]
+        lk = ladder_key(ledger, qn, letter)
         if first_route:
             ck = key_part if key_part in ledger.CHECKSUMS else qn
             units_by[ck].update(task_units)
+            if lk is not None:
+                ladder_units[lk].update(task_units)
             totals_q[qn] += t['total']
             if key_part in ledger.PART_TOTALS:
                 totals_part[key_part] += t['total']
@@ -426,7 +440,16 @@ def build(ledger, year, level):
         }
         if stem:
             card['stem'] = stem
-        card.update({'questionText': qtext, 'tariffModel': {'kind': 'fixed'},
+        tariff = {'kind': 'fixed'}
+        lspec = getattr(ledger, 'LADDERS', {}).get(lk) if lk is not None else None
+        if isinstance(lspec, dict) and lspec.get('notation'):
+            # "2(5) + 5(2)": what a response earns depends on how many came
+            # before it, so the rows carry no marks of their own; the card's
+            # total is its responses at the ladder's first rate.
+            tariff = {'kind': 'orderedSplit', 'notation': lspec['notation']}
+            for r in rows + [r for v in (variants or []) for r in v['rows']]:
+                r['marks'] = None
+        card.update({'questionText': qtext, 'tariffModel': tariff,
                      'totalMarks': t['total'], 'rows': rows})
         if variants:
             card['answerVariants'] = variants
@@ -487,23 +510,32 @@ def build(ledger, year, level):
     ladders = getattr(ledger, 'LADDERS', {})
     for qn, total in ledger.QUESTION_TOTALS.items():
         got = totals_q.get(qn, 0)
-        if qn in ladders:
-            # One ladder over the whole question ("6(3) + (2)"): each response
-            # is carded at the ladder's step, and the ladder, not the sum of
-            # the cards, makes the printed total. A ladder may sit beside a
-            # part the scheme prices on its own ("3(1)" then "5(3) + 2"):
-            # {'steps': [...], 'fixed': {mark: count}} names those units.
-            spec = ladders[qn]
-            steps, fixed = (spec['steps'], Counter(spec['fixed'])) if isinstance(spec, dict) \
-                else (spec, Counter())
-            units = units_by.get(qn, Counter()) - fixed
-            got_fixed = units_by.get(qn, Counter()) & fixed
-            units = sorted(units.elements())
-            fixed_total = sum(m * n for m, n in fixed.items())
-            if (len(units) != len(steps) or set(units) != {steps[0]} or got_fixed != fixed
-                    or sum(steps) + fixed_total != total):
-                problems.append(f'Q{qn}: {len(units)} responses at {set(units)} (+ fixed '
-                                f'{dict(got_fixed)}) do not fit the ladder {steps} to {total}')
+        lkeys = [k for k in ladders if k == qn or (isinstance(k, tuple) and k[0] == qn)]
+        if lkeys:
+            # A ladder ("6(3) + (2)", "2(5) + 5(2)"): each response is carded
+            # at the ladder's first step, and the ladder, not the sum of the
+            # cards, makes the printed total. A ladder may sit beside a part
+            # the scheme prices on its own ("3(1)" then "5(3) + 2"):
+            # {'steps': [...], 'fixed': {mark: count}} names those units; a
+            # question may hold two ladders, keyed (qn, 'letters'); and
+            # 'responses' allows more carded responses than steps, as in a
+            # best-five-of-six question.
+            ladder_total = 0
+            for lk in lkeys:
+                spec = ladders[lk]
+                steps, fixed = (spec['steps'], Counter(spec.get('fixed', {}))) \
+                    if isinstance(spec, dict) else (spec, Counter())
+                want = spec.get('responses', len(steps)) if isinstance(spec, dict) else len(steps)
+                units = ladder_units.get(lk, Counter()) - fixed
+                got_fixed = ladder_units.get(lk, Counter()) & fixed
+                units = sorted(units.elements())
+                fixed_total = sum(m * n for m, n in fixed.items())
+                ladder_total += sum(steps) + fixed_total
+                if len(units) != want or set(units) != {steps[0]} or got_fixed != fixed:
+                    problems.append(f'Q{qn} ladder {lk}: {len(units)} responses at {set(units)} (+ '
+                                    f'fixed {dict(got_fixed)}) do not fit {steps}')
+            if ladder_total != total:
+                problems.append(f'Q{qn}: ladders make {ladder_total}, paper prints {total}')
         elif qn in getattr(ledger, 'BEST_OF', {}):
             n, per = ledger.BEST_OF[qn]
             parts = [c for c in cards

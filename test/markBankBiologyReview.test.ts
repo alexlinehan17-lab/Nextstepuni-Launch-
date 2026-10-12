@@ -661,3 +661,121 @@ describe('Biology 2024 Ordinary — reviewed sitting, corrected in place', () =>
     expect(ol24ById.get('bio-2024-ol-q13-b-iii')!.figure?.solution).toBe(true);
   });
 });
+
+const hl23 = sittings['2023-hl'];
+const higher2023 = BIO_HIGHER.filter(card => card.year === 2023) as unknown as ReviewedCard[];
+const hl23ById = new Map(higher2023.map(card => [card.id, card]));
+
+describe('Biology 2023 Higher — reviewed sitting, corrected in place', () => {
+  const review = hl23.review!;
+
+  it('ships every reviewed task, and nothing else, for the sitting', () => {
+    expect(hl23.baseTaskCount).toBe(175);
+    expect(hl23.cardCount).toBe(176);
+    expect(higher2023).toHaveLength(176);
+    expect(new Set(hl23.tasks.map(task => task.id))).toEqual(new Set(hl23ById.keys()));
+  });
+
+  it('keeps every shipped id', () => {
+    expect(review.baselineCommit).toBe('38ac900f1');
+    expect([review.verified.length, review.corrected.length, review.added.length,
+      review.retained.length]).toEqual([8, 105, 63, 1]);
+    for (const id of [...review.verified, ...review.corrected.map(c => c.id), ...review.added]) {
+      expect(hl23ById.has(id), id).toBe(true);
+    }
+    // An authored figure twin of Q14(b)(ii) that the build never shipped:
+    // withdrawn, with no progress to carry.
+    expect(review.retained.map(r => r.id)).toEqual(['bio-2023-hl-q14-b-ii-fig']);
+    expect(hl23ById.has('bio-2023-hl-q14-b-ii-fig')).toBe(false);
+    expect(review.withdrawn['bio-2023-hl-q14-b-ii-fig'].replacementId).toBe('bio-2023-hl-q14-b-ii');
+  });
+
+  it('records what each corrected card showed before', () => {
+    for (const correction of review.corrected) {
+      expect(correction.changed.length, correction.id).toBeGreaterThan(0);
+      for (const field of correction.changed) {
+        expect(field in correction.fieldsBefore, `${correction.id}.${field}`).toBe(true);
+      }
+    }
+  });
+
+  it('leaves the cards the review verified exactly as they shipped', () => {
+    const verified = review.verified.map(id => hl23ById.get(id)!)
+      .sort((a, b) => a.id.localeCompare(b.id));
+    expect(contentHash(verified)).toBe('7e218a6c8e726737a53d4545c4f5405477541832c7a1a31bbcd5e38f7660e056');
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(hl23.sources['038'].sha256)
+      .toBe('cf3498bf77ee4254096fdd1c5a63b4315d97fa5cdedf687c7f1154a308910c89');
+    expect(hl23.sources['040'].sha256)
+      .toBe('d310ce617cae60431a5fc07c3bbc63186855831632fe4f82777061c0b877774e');
+    expect(hl23.sources.scheme.sha256)
+      .toBe('a432f615ff7e154d91a2151aad138eb0cb1bc92e128097a31a2e573f1b8bf50d');
+    expect([hl23.sources['038'].pages, hl23.sources['040'].pages, hl23.sources.scheme.pages])
+      .toEqual([40, 12, 36]);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const task of hl23.tasks) {
+      const card = hl23ById.get(task.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('prices Section A on its ordered splits', () => {
+    const notation = (id: string) =>
+      (hl23ById.get(id) as unknown as { tariffModel: { kind: string; notation?: string } }).tariffModel;
+    expect(notation('bio-2023-hl-q1-a')).toEqual({ kind: 'orderedSplit', notation: '3(6) + 2(1)' });
+    expect(notation('bio-2023-hl-q2-a')).toEqual({ kind: 'orderedSplit', notation: '2(5) + 5(2)' });
+    expect(notation('bio-2023-hl-q7-a-ii')).toEqual({ kind: 'orderedSplit', notation: '4 + 2(1)' });
+    expect(notation('bio-2023-hl-q7-b')).toEqual({ kind: 'orderedSplit', notation: '3(4) + 2(1)' });
+  });
+
+  it('adds up to the printed question totals', () => {
+    const firstRoute = new Set(Object.values(hl23.routes).map(routes => routes[0]));
+    const totals = new Map<number, number>();
+    for (const task of hl23.tasks) {
+      if (task.route && !firstRoute.has(task.route)) continue;   // one route per pool
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    // Section A cards each response at the ladder's first rate: Q1's six
+    // parts at 6 ("3(6) + 2(1)" makes 20), seven responses at 5 for Q2-Q6
+    // ("2(5) + 5(2)") and eight at 4 for Q7 ("4 + 2(1)" and "3(4) + 2(1)").
+    expect(totals.get(1)).toBe(36);
+    for (const q of [2, 3, 4, 5, 6]) expect(totals.get(q), `Q${q}`).toBe(35);
+    expect(totals.get(7)).toBe(32);
+    for (const q of [8, 9, 10]) expect(totals.get(q), `Q${q}`).toBe(30);
+    for (const q of [11, 12, 13, 14, 15]) expect(totals.get(q), `Q${q}`).toBe(60);
+    for (const q of [16, 17]) expect(totals.get(q), `Q${q}`).toBe(120);   // any two of four 30s
+  });
+
+  it('splits only the choice the scheme marks differently per option', () => {
+    expect(Object.keys(hl23.routes)).toEqual(['Q17(d)(vi)']);
+    expect(higher2023.filter(card => card.questionRef.startsWith('2023 HL Q17(d)(vi) — '))
+      .map(card => card.questionRef.split(' — ')[1]).sort()).toEqual(['phloem', 'xylem']);
+    // Paralysis or Parkinson's disease share one scheme row: one card.
+    expect(higher2023.filter(card => card.questionRef.startsWith('2023 HL Q17(b)(vii)'))).toHaveLength(1);
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|picture|graph)s?\b|\bpedigree chart\b/i;
+    for (const card of higher2023) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    // The underlined terms, the reaction and the equation are set as printed;
+    // the scheme's equation, cell, pyramid and outline wait for the reveal.
+    for (const id of ['bio-2023-hl-q13-b-i', 'bio-2023-hl-q12-a-ii', 'bio-2023-hl-q12-b-v']) {
+      expect(hl23ById.get(id)!.questionFigure, id).toBeTruthy();
+    }
+    for (const id of ['bio-2023-hl-q12-b-v', 'bio-2023-hl-q12-b-i', 'bio-2023-hl-q11-b-iv',
+      'bio-2023-hl-q17-a-iii']) {
+      expect(hl23ById.get(id)!.figure?.solution, id).toBe(true);
+    }
+  });
+});

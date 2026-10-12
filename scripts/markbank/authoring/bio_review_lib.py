@@ -91,6 +91,11 @@ def _decode_symbol(ch, font):
             return '\u2713'
     if 'Wingdings2' in font.replace(' ', '') and o == 0xF050:
         return '\u2713'
+    # Wingdings 3 right arrows, each cropped out of the 2023 Higher scheme and
+    # looked at: 0x67 in "ADP + P + Energy -> ATP + H2O" (derive_glyphs.py
+    # maps it the same way) and 0x8E in "Ash -> Moth -> Robin".
+    if 'Wingdings3' in font.replace(' ', '') and o in (0xF067, 0xF08E):
+        return '\u2192'
     return ch
 
 
@@ -257,11 +262,14 @@ def join_lines(segments):
 # The ledger is data. These constructors only record selectors; nothing is
 # lifted until build() runs against the PDFs.
 
-def Q(page, start, end=None, doc=None, after=None, before=None, nth=1, br=False):
+def Q(page, start, end=None, doc=None, after=None, before=None, nth=1, br=False, end_nth=1):
     """A slice of the QUESTION paper (doc defaults to the task's booklet).
-    `br` starts it on a new line, as the paper sets printed options."""
+    `br` starts it on a new line, as the paper sets printed options; `end_nth`
+    closes on the nth printed close of `end` (a sentence ending the same way
+    earlier in the ask)."""
     return {'src': 'paper', 'doc': doc, 'page': page, 'start': start, 'end': end,
-            'after': after, 'before': before, 'nth': nth, 'br': br}
+            'after': after, 'before': before, 'nth': nth, 'br': br,
+            **({'end_nth': end_nth} if end_nth != 1 else {})}
 
 
 def M(marker, page, doc=None):
@@ -294,13 +302,13 @@ def pt(sel, marks, label=None, kind=None, note=None, units=None, first_alt=False
             'note_sel': note_sel, 'note_lead': note_lead, 'whole': whole}
 
 
-def anyn(sel, claim, per, steps=None, note=None, options=None, note_sel=None, open_list=False):
+def anyn(sel, claim, per, steps=None, note=None, options=None, note_sel=None, open_list=False, sep=None):
     """A bounded menu: "Any two 2(3)". `sel` is the whole printed list, cut
     into options at the SEC's own solidus; or `options` is a list of
     selectors, one per option, for menus printed one per line. `open_list`
     marks a menu the scheme prints as examples ("e.g.")."""
     return {'type': 'anyn', 'sel': sel, 'claim': claim, 'per': per, 'steps': steps,
-            'note': note, 'options': options, 'note_sel': note_sel, 'open_list': open_list}
+            'note': note, 'options': options, 'note_sel': note_sel, 'open_list': open_list, 'sep': sep}
 
 
 def G(kind, page=None, clip=None, expect=None, **kw):
@@ -343,9 +351,16 @@ STOP = set('the a an of to in and or is are be for this that which what how why 
            'on as by its it with from at your you named name state give'.split())
 
 
+def _stem(w):
+    """Fold a word's inflection ("labelling", "locations") so a scheme reprint
+    that rewords the paper's own verbs still pairs with it. Applied to both
+    sides, it can only raise a score."""
+    return re.sub(r'(?:ling|ing|ed|es|s)$', '', w) if len(w) > 4 else w
+
+
 def overlap(a, b):
-    wa = [w for w in WORD.findall(a.lower()) if w not in STOP]
-    wb = set(w for w in WORD.findall(b.lower()) if w not in STOP)
+    wa = [_stem(w) for w in WORD.findall(a.lower()) if w not in STOP]
+    wb = set(_stem(w) for w in WORD.findall(b.lower()) if w not in STOP)
     if not wa:
         return 1.0
     return sum(1 for w in wa if w in wb) / len(wa)

@@ -1,4 +1,648 @@
 {
+ "biology-2023-hl-q10b-iv-2-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q10b-iv-2-scheme.png",
+  "md5": "af8d2601e44c444b789cda4804318834",
+  "alt": "The marking scheme's sketch: a circle with a ring of small separate bundles inside its edge.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q10(b)(iv)2",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   408,
+   555,
+   486,
+   642
+  ],
+  "solution": true
+ },
+ "biology-2023-hl-q11b-iv-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q11b-iv-scheme.png",
+  "md5": "954ffe855dbe93362971e62dd7061628",
+  "alt": "The marking scheme's pyramid of numbers: three stacked boxes, Ash on the bottom, a wider Moth box in the middle and Robin on top.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q11(b)(iv)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   115,
+   462,
+   212,
+   528
+  ],
+  "solution": true
+ },
+ "biology-2023-hl-q12a-ii-question": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q12a-ii-question.png",
+  "md5": "2e9f00e5a0e4f30b0f58fa8299c1c59c",
+  "alt": "The printed question: (ii) Is the reaction shown below an anabolic reaction or a catabolic reaction? Explain your answer. Below it: A, an arrow, then B + C + Energy.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(a)(ii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   108,
+   74,
+   505,
+   130
+  ]
+ },
+ "biology-2023-hl-q12b-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q12b-i-question.png",
+  "md5": "4cadb4abd4706fad8961abd3647bafdd",
+  "alt": "The printed question: (b) Aerobic respiration is a metabolic reaction that occurs in two stages in living cells. (i) Copy the diagram of the cell into your answerbook and indicate clearly the specific locations of stage 1 and stage 2. Beside it, a rounded cell: a small sausage-shaped organelle with folded inner membranes near the top, and an arrow labelled Nucleus pointing to the round body in the lower left.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(b)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   180,
+   541,
+   356
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    249,
+    360,
+    356
+   ]
+  ]
+ },
+ "biology-2023-hl-q12b-i-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q12b-i-scheme.png",
+  "md5": "95801c24a5afcdd45f58f96ff09ce72a",
+  "alt": "The marking scheme's copy of the cell: the label Stage 2 points to the sausage-shaped organelle near the top, Stage 1 to the cytoplasm around the nucleus, and the Nucleus is labelled.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(b)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   150,
+   292,
+   330,
+   372
+  ],
+  "solution": true
+ },
+ "biology-2023-hl-q12b-v-question": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q12b-v-question.png",
+  "md5": "ee8a5ea6f81a2167e9f72475615d3124",
+  "alt": "The printed question: (v) ATP is produced during respiration. Copy the following word equation into your answerbook and complete the missing parts of the equation. Below it: ADP + a blank + Energy, an arrow, then ATP + a blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(b)(v)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   108,
+   409,
+   515,
+   489
+  ]
+ },
+ "biology-2023-hl-q12b-v-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q12b-v-scheme.png",
+  "md5": "6f323e65a1b2e3964581b431053c3464",
+  "alt": "The marking scheme's equation: ADP + P + Energy, an arrow, ATP + H2O, with P and H2O underlined and the 2 set as a subscript.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(b)(v)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   110,
+   519,
+   266,
+   540
+  ],
+  "solution": true
+ },
+ "biology-2023-hl-q13-pedigree": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q13-pedigree.png",
+  "md5": "923aa6522e65139214f5fad4e07bbd95",
+  "alt": "A pedigree chart. Parents: person 1, a half-shaded circle (Heterozygous female), and person 2, an open square (Non-sufferer male). Their children, numbered 3 to 7: 3, a half-shaded circle; 4, a shaded square (Haemophiliac male); 5, a half-shaded circle; 6, a shaded square; 7, an open circle (Non-sufferer female). A key explains the four symbols.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q13(c)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   110,
+   415,
+   540,
+   542
+  ]
+ },
+ "biology-2023-hl-q13b-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q13b-i-question.png",
+  "md5": "e22261587862c499e5763b5ee01f1670",
+  "alt": "The printed passage and question: (b) Haemochromatosis is an inherited condition where iron levels in the body slowly build up over many years. Classic hereditary haemochromatosis is caused by a gene mutation whereby two recessive alleles are inherited. (i) Explain each of the underlined terms. The words gene and recessive are underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q13(b)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   108,
+   114,
+   541,
+   179
+  ]
+ },
+ "biology-2023-hl-q14-flower": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q14-flower.png",
+  "md5": "0b735b130b3753d2d5962b50d5e9536c",
+  "alt": "Diagram of an animal-pollinated flower cut in half. Arrow A points to the top of the central stalk; arrow B to a head on one of the stalks around it; arrow C to a small leaf-like part at the base of the flower. Labels Style, Filament and Ovule point to their parts.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q14(b)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   170,
+   190,
+   460,
+   380
+  ]
+ },
+ "biology-2023-hl-q15-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q15-graph.png",
+  "md5": "519682e816637bfb714fc0b0ca447d64",
+  "alt": "Graph of Levels in the blood against Days (1, 5, 14) for two hormones: dashed line A rises from about day 5 to a sharp peak just before day 14, falls, then rises again in a lower hump; solid line B stays low until about day 14, then rises to a large hump and falls back by the end.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q15(c)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   150,
+   430,
+   540,
+   588
+  ]
+ },
+ "biology-2023-hl-q15-sperm": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q15-sperm.png",
+  "md5": "8384440a4a9b6771df9bf23368d11cd8",
+  "alt": "Drawing of a human sperm cell: an oval head, a short ridged middle piece and a long, looping tail.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q15(b)(iii)1",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   350,
+   215,
+   541,
+   290
+  ]
+ },
+ "biology-2023-hl-q15b-iii-2-question": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q15b-iii-2-question.png",
+  "md5": "f116e49de3fc5cec37eeb4b168232241",
+  "alt": "The printed question: (iii) The diagram shows a human sperm cell. 2. Copy out the diagram of the human sperm cell into your answerbook and indicate on it the location of the mitochondria. Beside it, the sperm cell: an oval head, a short ridged middle piece and a long, looping tail.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q15(b)(iii)2",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   108,
+   219,
+   541,
+   323
+  ],
+  "maskedFurniture": [
+   [
+    138,
+    235,
+    350,
+    279
+   ]
+  ]
+ },
+ "biology-2023-hl-q15b-iii-2-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q15b-iii-2-scheme.png",
+  "md5": "c515e83b704e64bec3ea493c0d02e736",
+  "alt": "The marking scheme's sperm cell, with the label Mitochondria pointing to the short middle piece behind the head.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q15(b)(iii)2",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 24,
+  "sourceRect": [
+   135,
+   598,
+   275,
+   634
+  ],
+  "solution": true
+ },
+ "biology-2023-hl-q16-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q16-graph.png",
+  "md5": "da65ffd85f8f55693d5bd199a682abc6",
+  "alt": "Graph of Percentage (%) change in mass against Sugar concentration (g/100 cm3), from 0 to 12: the points fall from +20 at 0, through +4 at 2, to 0 at 4, then below zero, to about -11 at 12.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q16(a)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   140,
+   105,
+   490,
+   268
+  ]
+ },
+ "biology-2023-hl-q16-mushrooms": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q16-mushrooms.png",
+  "md5": "c68b58aa7cc498350891988762f43952",
+  "alt": "Two photographs of mushrooms. A: stout mushrooms with broad, scaly caps on thick stalks. B: slender, pale mushrooms with flat caps on tall stalks, each stalk with a ring.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q16(d)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   170,
+   397,
+   425,
+   482
+  ]
+ },
+ "biology-2023-hl-q16-ribosome": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q16-ribosome.png",
+  "md5": "b747a50289ff9461d3db7ce55c7d643f",
+  "alt": "Diagram of a ribosome on a strand, labelled Ribosome, with a chain of beads labelled Protein growing from it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q16(b)(iii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   355,
+   560,
+   541,
+   655
+  ]
+ },
+ "biology-2023-hl-q16-virus": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q16-virus.png",
+  "md5": "e39e166743c380a456d80af36c995c38",
+  "alt": "Diagram of a spherical virus: arrow X points to the thick outer circle, arrow Y to the coiled strand inside it.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q16(c)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   370,
+   58,
+   530,
+   188
+  ]
+ },
+ "biology-2023-hl-q17-breathing": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q17-breathing.png",
+  "md5": "488b1b48022d1e9adc06d5163fb35948",
+  "alt": "Two diagrams of the chest, X and Y. In X, arrows show the ribs moving outwards and the diaphragm moving down; in Y, arrows show the ribs moving inwards and the diaphragm moving up.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q17(c)(iii)1",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   350,
+   205,
+   541,
+   362
+  ]
+ },
+ "biology-2023-hl-q17-root": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q17-root.png",
+  "md5": "598e4a6a9cc349bf98e5e08e276d470a",
+  "alt": "Three-dimensional cutaway of part of a plant organ: arrow A points to the thin outer layer, arrow B to the tissue filling the cylinder, and arrow C to a fine hair growing from the surface; a label Vascular tissue points to the central core.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q17(d)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   170,
+   425,
+   470,
+   600
+  ]
+ },
+ "biology-2023-hl-q17-synapse": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q17-synapse.png",
+  "md5": "4537591e1aef741c20eb5125b9901ccb",
+  "alt": "Diagram of the ends of two neurons in close contact: arrow A points to small dots leaving one neuron, and arrow B to the narrow gap between the two.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q17(b)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   180,
+   415,
+   485,
+   553
+  ]
+ },
+ "biology-2023-hl-q17a-iii-question": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q17a-iii-question.png",
+  "md5": "7493f5dfc9da1cad5911f26491318d82",
+  "alt": "The printed question: (iii) Copy the outline of the human body into your answerbook. Draw in each of the following endocrine glands labelling them in their correct locations: 1. Pituitary gland 2. Thyroid gland 3. Adrenal glands. Beside it, an outline of the human body, front view, with no organs drawn in.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q17(a)(iii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   108,
+   86,
+   541,
+   280
+  ],
+  "maskedFurniture": [
+   [
+    108,
+    86,
+    432,
+    171
+   ]
+  ]
+ },
+ "biology-2023-hl-q17a-iii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q17a-iii-scheme.png",
+  "md5": "951962e4a860641882169357f408fa7e",
+  "alt": "The marking scheme's outline with the glands drawn in as small circles: Pituitary gland in the head, Thyroid gland in the neck, and Adrenal glands, two circles side by side in the abdomen.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q17(a)(iii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 30,
+  "sourceRect": [
+   190,
+   392,
+   400,
+   528
+  ],
+  "solution": true
+ },
+ "biology-2023-hl-q2-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q2-graph.png",
+  "md5": "024ab8757f30bf8d220a8a6a2bb9ca3d",
+  "alt": "Graph of Percentage (%) germination of grass seeds against Soil pH, from 0 to 10: a smooth hump rising from about pH 2, peaking at about pH 6.5 and falling again towards pH 10.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q2(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   150,
+   128,
+   480,
+   320
+  ]
+ },
+ "biology-2023-hl-q3-skeleton": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q3-skeleton.png",
+  "md5": "513a99e66431ba89c31a47a3ff6aaabb",
+  "alt": "Front-view drawing of the human skeleton, with a boxed letter X beside it at the upper right.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q3(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   355,
+   98,
+   541,
+   522
+  ]
+ },
+ "biology-2023-hl-q4-dna": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q4-dna.png",
+  "md5": "b1d4978af335302ff52359e0ed538148",
+  "alt": "Diagram of part of a DNA molecule: two backbones of circles and five-sided rings, one along the top and one along the bottom. Two bases hang from the lower backbone, labelled T and G, with dashed lines above them where their partners would join; an arrow labelled X points to the dashed lines above T.",
+  "lettersVisible": [
+   "T",
+   "G",
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q4(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   150,
+   78,
+   445,
+   318
+  ]
+ },
+ "biology-2023-hl-q5-bacterium": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q5-bacterium.png",
+  "md5": "8f949d74a0ce305f9ae9d6b1d8828f58",
+  "alt": "Transmission electron micrograph of a long, rounded bacterial cell pinching in two, with parts of other cells around it, and a boxed letter X at the top left.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q5(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   300,
+   78,
+   541,
+   226
+  ]
+ },
+ "biology-2023-hl-q5-curve": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q5-curve.png",
+  "md5": "b2b35b8fb8b541b52f1c9ecde71266c0",
+  "alt": "Partly drawn graph of Population against Time: the axes are drawn, and only the later part of the curve, a flat top that bends down into a steep fall, with an arrow labelled Z pointing to the falling section.",
+  "lettersVisible": [
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q5(f)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   205,
+   472,
+   480,
+   672
+  ]
+ },
+ "biology-2023-hl-q7-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q7-graph.png",
+  "md5": "0d84daf294c87fb7ae74c38c79b7a8f7",
+  "alt": "Graph of Absorption of light against Colour of light (violet, blue, green, yellow, orange, red), with a dotted line for chlorophyll a and a solid line for chlorophyll b. Both are high at the violet and blue end, the solid line peaking a little further into the blue; both are low through green and yellow; both rise again in the red, the dotted line higher.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q7(a)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   160,
+   105,
+   465,
+   302
+  ]
+ },
+ "biology-2023-hl-q8-apparatus": {
+  "src": "/exam-figures/biology/markbank/biology-2023-hl-q8-apparatus.png",
+  "md5": "9d393819927aa5900a13c8d097f817eb",
+  "alt": "Two pieces of apparatus. Left: a small container closed by a bung through which two bent tubes pass, labelled Tube A and Tube B, with a Gauze filter on the end of one tube inside. Right: a funnel held in a clamp stand, soil in the funnel under a Light bulb, and a beaker below.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q8(b)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   136,
+   262,
+   500,
+   395
+  ],
+  "maskedFurniture": [
+   [
+    136,
+    262,
+    300,
+    277
+   ]
+  ]
+ },
  "biology-2024-hl-q11-flower": {
   "src": "/exam-figures/biology/markbank/biology-2024-hl-q11-flower.png",
   "md5": "b1a96b4f6999d32b5aa47589065e8156",
