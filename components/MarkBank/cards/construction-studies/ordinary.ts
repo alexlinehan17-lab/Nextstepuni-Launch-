@@ -1436,65 +1436,220 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q1-a", topicId: "cons-2-4", conceptId: "vertical-section-through-strip-foundation-external",
+    id: "cons-2020-ol-q1-a", topicId: "cons-1-5", conceptId: "vertical-section-through-strip-foundation-external",
     section: "B", questionRef: "2020 OL Q1(a)",
+    stem: "A dwelling house has a 400 mm concrete block wall with a full-fill insulated cavity supported on a traditional strip foundation. The wall is plastered on both sides. The insulated concrete ground floor is finished with 20 mm floor tiles as shown.",
     questionText: "To a scale of 1:5, draw a vertical section through the strip foundation, external wall and ground floor. On your drawing show the typical construction details from the bottom of the foundation to a point 200 mm above finished floor level. Show an internal floor width of 900 mm and include four typical dimensions.",
-    tariffModel: {"kind":"bestNofParts","notation":"7 x 5","answer":7,"ofParts":13,"perPart":5}, totalMarks: 35,
+    tariffModel: {"kind":"fixed"}, totalMarks: 47,
     rows: [
-    { id: "cons-2020-ol-q1-a-r1", kind: "anyN", verbatim: "To a scale of 1:5, draw a vertical section through the strip foundation, external wall and ground floor. On your drawing", marks: 35, openList: true, group: {"claimMax":7,"perOption":5,"options":["Reinforced strip foundation 1200 mm x 400 mm","Concrete fill / foundation blocks","Hardcore and sand blinding","1200-gauge damp proof course/radon barrier","200 - 300 mm Floor insulation","150 mm Concrete floor slab taped and sealed at junction of wall and floor","Floor tiles 20 mm","Skirting board","Concrete block inner leaf with 13 mm internal plaster","200 mm Full fill cavity insulation","Wall ties","Concrete block outer leaf with 19 mm render","Any 4 typical dimensions"]} },
+    { id: "details", kind: "criterion", verbatim: "Any 7 x 5 marks", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: reinforced strip foundation 1200 × 400 mm; concrete fill / foundation blocks; hardcore and sand blinding; 1200-gauge DPC/radon barrier; 200–300 mm floor insulation; 150 mm concrete floor slab taped and sealed at the wall junction; 20 mm floor tiles; skirting board; block inner leaf with 13 mm plaster; 200 mm full-fill cavity insulation; wall ties; block outer leaf with 19 mm render.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "dimensions", kind: "criterion", verbatim: "Any 4 typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Strip foundation, external wall and ground floor section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the damp detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q1-original.png",
+          "srcHash": "af617efc36214c24299e5d708374fe84",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 1: the printed question with a sketch of the strip foundation, cavity wall and tiled insulated ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q1-scheme.png",
+          "srcHash": "2574e1ad3930502636f1ba80bd5969d8",
+          "alt": "SEC model section through the strip foundation, cavity wall and insulated ground floor with the damp proof membrane marked (b), the specification list and the notes for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q2-a", topicId: "cons-1-1", conceptId: "method-insulating-proposed-cavity-type-thickness",
+    id: "cons-2020-ol-q2-a", topicId: "cons-3-3", conceptId: "method-insulating-proposed-cavity-type-thickness",
     section: "B", questionRef: "2020 OL Q2(a)",
+    stem: "The proposed external wall for a new house has a 100 mm concrete block outer leaf, a 200 mm cavity and a 100 mm concrete block inner leaf as shown.",
     questionText: "Using notes and freehand sketches, show one suitable method of insulating the proposed cavity. Specify the type and thickness of insulation.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 5","answer":1,"ofParts":2,"perPart":5}, totalMarks: 5,
+    tariffModel: {"kind":"fixed"}, totalMarks: 26,
     rows: [
-    { id: "cons-2020-ol-q2-a-r1", kind: "anyN", verbatim: "Thickness of insulation", marks: 5, contextNote: "Thickness of insulation", openList: true, group: {"claimMax":1,"perOption":5,"options":["Full-filled cavity insulation - 200 mm insulation","Partial filled cavity - 150 mm insulation boards"]} },
+    { id: "method", kind: "criterion", verbatim: "Method of insulating wall note + sketch (8 + 8 marks)", marks: 16, contextNote: "Note 8 and sketch 8. Such as: rigid insulation boards installed as the blockwork is built; boards tongued and grooved to fit tightly; wall ties holding the boards tight against the inner leaf.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "type", kind: "criterion", verbatim: "Preferred insulation type for cavity wall", marks: 5, contextNote: "Such as: expanded polystyrene (EPS) boards; polyurethane boards; polyisocyanurate foam panels.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "thickness", kind: "criterion", verbatim: "Thickness of insulation", marks: 5, contextNote: "Such as: 200 mm for a full-filled cavity; 150 mm boards for a partial fill.", permittedMarks: [0,1,2,3,4,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating a cavity wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The insulating method, the insulation type and the additional insulation are open choices; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q2-original.png",
+          "srcHash": "aa9e8e89e296bc0a095c361ffcc0a78e",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 2: the printed question with a sketch of the 100 mm block outer leaf, 200 mm cavity and 100 mm block inner leaf.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q2-method",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q2-method.png",
+          "srcHash": "ada4823ca6ed5a7def9e7982ecb9f88e",
+          "alt": "SEC 2020 Ordinary marking scheme notes on insulating the cavity wall — method, type and thickness of insulation — with sketches of insulation boards in the cavity, and the advantages for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q2-b", topicId: "cons-1-1", conceptId: "list-advantages-installing-insulation-cavity",
+    id: "cons-2020-ol-q2-b", topicId: "cons-6-2", conceptId: "list-advantages-installing-insulation-cavity",
     section: "B", questionRef: "2020 OL Q2(b)",
+    stem: "The proposed external wall for a new house has a 100 mm concrete block outer leaf, a 200 mm cavity and a 100 mm concrete block inner leaf as shown.",
     questionText: "List two advantages of installing insulation in the cavity.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 4","answer":2,"ofParts":5,"perPart":4}, totalMarks: 8,
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "cons-2020-ol-q2-b-r1", kind: "anyN", verbatim: "List two advantages of installing insulation in the cavity.", marks: 8, openList: true, group: {"claimMax":2,"perOption":4,"options":["Insulation reduces the heat loss in the building","Increased thermal comfort for occupants","Energy bills are reduced","It is better for the environment with less use of fossil fuels","It improves the Building Energy Rating (BER)"]} },
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 4, contextNote: "Such as: less heat lost from the building; more thermal comfort for the occupants.", permittedMarks: [0,1,2,3,4] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 4, contextNote: "A second, different advantage. Such as: lower energy bills; less use of fossil fuels; a better Building Energy Rating (BER).", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating a cavity wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The insulating method, the insulation type and the additional insulation are open choices; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q2-original.png",
+          "srcHash": "aa9e8e89e296bc0a095c361ffcc0a78e",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 2: the printed question with a sketch of the 100 mm block outer leaf, 200 mm cavity and 100 mm block inner leaf.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q2-advantages",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q2-advantages.png",
+          "srcHash": "d75d24f28aba958608dab3ddc8615860",
+          "alt": "SEC 2020 Ordinary marking scheme notes listing advantages of installing cavity wall insulation.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q2-c", topicId: "cons-1-1", conceptId: "separate-method-providing-additional-insulation-this",
+    id: "cons-2020-ol-q2-c", topicId: "cons-6-2", conceptId: "separate-method-providing-additional-insulation-this",
     section: "B", questionRef: "2020 OL Q2(c)",
+    stem: "The proposed external wall for a new house has a 100 mm concrete block outer leaf, a 200 mm cavity and a 100 mm concrete block inner leaf as shown.",
     questionText: "On a separate sketch show, using notes and freehand sketches, one method of providing additional insulation to this wall to further improve its thermal insulation properties.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 16","answer":1,"ofParts":2,"perPart":16}, totalMarks: 16,
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "cons-2020-ol-q2-c-r1", kind: "anyN", verbatim: "On a separate sketch show, using notes and freehand sketches, one method of providing additional insulation to this wall", marks: 16, openList: true, group: {"claimMax":1,"perOption":16,"options":["External solution b","Internal solution"]} },
+    { id: "additional", kind: "criterion", verbatim: "Additional Insulating the wall detail note + sketch (8 + 8 marks)", marks: 16, contextNote: "Note 8 and sketch 8. Such as, external: insulation panels fixed and glued to the wall, at least 200 mm thick, finished with acrylic base and finish coats on mesh; internal: 50 × 50 mm battens at 400 mm centres with insulation between, a vapour barrier, and plasterboard or insulated plasterboard with a skim coat.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating a cavity wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The insulating method, the insulation type and the additional insulation are open choices; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q2-original.png",
+          "srcHash": "aa9e8e89e296bc0a095c361ffcc0a78e",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 2: the printed question with a sketch of the 100 mm block outer leaf, 200 mm cavity and 100 mm block inner leaf.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q2-additional",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q2-additional.png",
+          "srcHash": "880d5674c0739513e3bfdc95fdf58952",
+          "alt": "SEC 2020 Ordinary marking scheme notes and labelled sketches of external and internal methods of adding insulation to the wall.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q3-a", topicId: "cons-5-2", conceptId: "wood-burning-stove-can-used-heat",
+    id: "cons-2020-ol-q3-a", topicId: "cons-5-3", conceptId: "wood-burning-stove-can-used-heat",
     section: "B", questionRef: "2020 OL Q3(a)",
-    questionText: "A wood-burning stove can be used to heat radiators for a dwelling house. Draw a large freehand sketch of the given house and, on your sketch, show the pipework necessary to supply hot water from the stove to the ground floor radiators and also heat the water in the cylinder on the first floor. Include the following in your sketch: • wood-burning stove • hot water cylinder • pipework to cylinder • expansion tank / vessel • pipework to radiators • all necessary pumps and valves.",
-    tariffModel: {"kind":"bestNofParts","notation":"8 x 5","answer":8,"ofParts":10,"perPart":5}, totalMarks: 40,
+    questionText: "A wood-burning stove can be used to heat radiators for a dwelling house. Draw a large freehand sketch of the given house and, on your sketch, show the pipework necessary to supply hot water from the stove to the ground floor radiators and also heat the water in the cylinder on the first floor. Include the following in your sketch: wood-burning stove; hot water cylinder; pipework to cylinder; expansion tank / vessel; pipework to radiators; all necessary pumps and valves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 46,
     rows: [
-    { id: "cons-2020-ol-q3-a-r1", kind: "anyN", verbatim: "Typical details", marks: 40, contextNote: "Typical details", openList: true, group: {"claimMax":8,"perOption":5,"options":["15 mm cold feed to stove","Gate valves","22 mm flow to radiators","22 mm return from radiators","Pump and isolator","Radiators valves","22 mm primary flow to cylinder","Drain off valve","22 mm primary return to burner","22 mm overflow pipe"]} },
+    { id: "items", kind: "criterion", verbatim: "Any 8 x 5 marks", marks: 40, contextNote: "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: drawing the given sketch; 15 mm cold feed to the burner; 22 mm flow to the radiators; 22 mm return from the radiators; radiators; 22 mm primary flow to the cylinder; 22 mm primary return to the burner; 22 mm overflow pipe; 22 mm expansion pipe from the cylinder; valves / pumps.", permittedMarks: [0,5,10,15,20,25,30,35,40] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketch: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Wood-burning stove heating radiators and a cylinder",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-eight list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q3-original.png",
+          "srcHash": "4af50498f678d7a661b630845b222bed",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 3: the printed question with a section of a two-storey house with a wood-burning stove, radiators and a cylinder.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q3-system.png",
+          "srcHash": "ff95535a26331db2a7fc2dac63e028ca",
+          "alt": "SEC model sketch of the house with pipework from the wood-burning stove to the ground-floor radiators and the first-floor cylinder, with the typical details list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1504,62 +1659,214 @@ export const CARDS: SecCard[] = [
     id: "cons-2020-ol-q3-b", topicId: "cons-5-3", conceptId: "installation-underfloor-heating-system-now-alternative",
     section: "B", questionRef: "2020 OL Q3(b)",
     questionText: "The installation of an underfloor heating system is now an alternative to radiators. Discuss one advantage of installing an underfloor heating system.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":4,"perPart":4}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "cons-2020-ol-q3-b-r1", kind: "anyN", verbatim: "The installation of an underfloor heating system is now an alternative to radiators. Discuss one advantage of installing", marks: 4, openList: true, group: {"claimMax":1,"perOption":4,"options":["It distributes heat evenly and consistently around each room","A suitably sized system can heat a larger room than an individual radiator","It works at a lower temperature, so it can reduce your heating bills","It is under the floor so more space in rooms and allows for easier decoration and painting of walls"]} },
+    { id: "advantage", kind: "criterion", verbatim: "Advantage", marks: 4, contextNote: "Such as: heat spread evenly and consistently around each room; a suitably sized system heats a larger room than one radiator; a lower working temperature that can reduce heating bills; more wall space for furniture and decoration.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Wood-burning stove heating radiators and a cylinder",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-eight list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q3-original.png",
+          "srcHash": "4af50498f678d7a661b630845b222bed",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 3: the printed question with a section of a two-storey house with a wood-burning stove, radiators and a cylinder.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q3-underfloor",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q3-underfloor.png",
+          "srcHash": "93e11c8c0b79687e3e21f05f4f25c3c0",
+          "alt": "SEC 2020 Ordinary marking scheme notes on advantages of underfloor heating.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q4-a", topicId: "cons-1-1", conceptId: "reasons-why-construction-company-should-have",
+    id: "cons-2020-ol-q4-a", topicId: "cons-1-2", conceptId: "reasons-why-construction-company-should-have",
     section: "B", questionRef: "2020 OL Q4(a)",
+    stem: "Careful planning is required to manage waste on a construction site so as to reduce, re-use and recycle construction materials. The sketch shows one possible waste management method used to sort materials on a site.",
     questionText: "Discuss two reasons why a construction company should have a waste management plan for their site.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 8","answer":2,"ofParts":7,"perPart":8}, totalMarks: 16,
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "cons-2020-ol-q4-a-r1", kind: "anyN", verbatim: "Discuss two reasons why a construction company should have a waste management plan for their site.", marks: 16, openList: true, group: {"claimMax":2,"perOption":8,"options":["To prevent and minimise the quantity of waste of building sites","To develop a culture of reusing and recycling material instead of dumping it","To reduce the energy production in the manufacture of new material","To keep the building site area clean and clear to prevent accidents occurring","To prevent hazardous waste for contaminating local natural resources and water supplies","Landfill site are becoming full and are scarce","It reduces the overall cost of the building"]} },
+    { id: "reason-1", kind: "criterion", verbatim: "Reason 1", marks: 8, contextNote: "Such as: to prevent and minimise waste on building sites; to build a culture of re-using and recycling rather than dumping.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason 2", marks: 8, contextNote: "A second, different reason. Such as: less energy used making new material; a clean, clear site that prevents accidents; hazardous waste kept out of local water supplies; landfill sites are scarce; a lower overall building cost.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Waste management on a construction site",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Reasons, materials, re-uses and the sorting method are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q4-original.png",
+          "srcHash": "59145ca22ed0710aaf477db21bbc5942",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 4: the printed question with a sketch of coloured skips sorting waste on a site.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q4-reasons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q4-reasons.png",
+          "srcHash": "ea3d99763766cd97f562bf36c09c8da3",
+          "alt": "SEC 2020 Ordinary marking scheme notes on reasons for a site waste management plan.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q4-c", topicId: "cons-1-1", conceptId: "other-method-sorting-storing-waste-materials",
+    id: "cons-2020-ol-q4-c", topicId: "cons-1-2", conceptId: "other-method-sorting-storing-waste-materials",
     section: "B", questionRef: "2020 OL Q4(c)",
+    stem: "Careful planning is required to manage waste on a construction site so as to reduce, re-use and recycle construction materials. The sketch shows one possible waste management method used to sort materials on a site.",
     questionText: "Using notes and a freehand sketch, show one other method of sorting and storing waste materials on a construction site.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 16","answer":1,"ofParts":6,"perPart":16}, totalMarks: 16,
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "cons-2020-ol-q4-c-r1", kind: "anyN", verbatim: "Using notes and a freehand sketch, show one other method of sorting and storing waste materials on a construction site.", marks: 16, openList: true, group: {"claimMax":1,"perOption":16,"options":["Containers - used to protect metal from weather and other valuable waste materials","Pallets – store and sort bricks/blocks that can be easily lifted and transported","Barrels – store and sort lengths of waste timber and metal","Trailers – store soil and bedrock for transport at a later stage","Boxes – Sort and store small items for transport","Bulk bags – store soil and gravel for later transport or reuse on site"]} },
+    { id: "method", kind: "criterion", verbatim: "Method note + sketch (6 + 10 marks)", marks: 16, contextNote: "Note 6 and sketch 10. Such as: containers protecting metal and valuable waste from the weather; pallets for bricks and blocks; barrels for lengths of timber and metal; trailers for soil and bedrock; boxes for small items; bulk bags for soil and gravel.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Waste management on a construction site",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Reasons, materials, re-uses and the sorting method are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q4-original.png",
+          "srcHash": "59145ca22ed0710aaf477db21bbc5942",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 4: the printed question with a sketch of coloured skips sorting waste on a site.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q4-storage",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q4-storage.png",
+          "srcHash": "3c8b54b7cef80a2fe9452e21bb051f40",
+          "alt": "SEC 2020 Ordinary marking scheme notes on methods of sorting and storing site waste, with sketches of a pallet, a container and a covered store.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q5-a", topicId: "cons-3-8", conceptId: "vertical-section-through-roof-ridge-typical",
+    id: "cons-2020-ol-q5-a", topicId: "cons-1-5", conceptId: "vertical-section-through-roof-ridge-typical",
     section: "B", questionRef: "2020 OL Q5(a)",
+    stem: "The sketch shows portion of a pitched roof including the ridge. This traditional slated cut roof has a pitch of 45°. The slates are fixed to 50 mm × 20 mm battens, on a breather membrane, supported on 200 mm × 50 mm rafters. The roof is highly insulated at collar tie level with an insulated plasterboard ceiling beneath.",
     questionText: "To a scale of 1:5, draw a vertical section through the roof at the ridge. Show the typical construction details from the top of the ridge to a level 100 mm below the collar ties. The collar ties are positioned 900 mm below ridge level. Include three courses of slate at the ridge. Include three typical dimensions on your drawing.",
-    tariffModel: {"kind":"bestNofParts","notation":"7 x 5","answer":7,"ofParts":12,"perPart":5}, totalMarks: 35,
+    tariffModel: {"kind":"fixed"}, totalMarks: 46,
     rows: [
-    { id: "cons-2020-ol-q5-a-r1", kind: "anyN", verbatim: "To a scale of 1:5, draw a vertical section through the roof at the ridge. Show the typical construction details from the", marks: 35, openList: true, group: {"claimMax":7,"perOption":5,"options":["Ridge tile","Ridge vent","Roofing slates","Battens 50 mm x 35 mm","Breather membrane","Ridge board 275 mm x 32 mm","Rafter 200 mm x 50 mm","Collar tie 200 mm x 50 mm","Insulation between rafters","Airtight membrane","Insulated plasterboard","Plaster skim"]} },
+    { id: "details", kind: "criterion", verbatim: "Any 7 x 5 marks", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: ridge tile; ridge vent; roofing slates; 50 × 35 mm battens; breather membrane; 275 × 32 mm ridge board; 200 × 50 mm rafter; 200 × 50 mm collar tie; insulation between rafters; airtight membrane; insulated plasterboard; plaster skim.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "dimensions", kind: "criterion", verbatim: "Any three typical dimensions 3 x 1 mark", marks: 3, contextNote: "Three appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Cut roof ridge section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the ventilation detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q5-original.png",
+          "srcHash": "dfc82ea52b26cd7aa0c38da8e28eb5d2",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 5: the printed question with a sketch of a slated cut roof at the ridge.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q5-scheme.png",
+          "srcHash": "53fcec0f7cb2cbbad9bc6602ac4d682d",
+          "alt": "SEC model section through the cut roof at the ridge with the ridge vent marked (b), the specification list and the ventilation notes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q5-b", topicId: "cons-1-1", conceptId: "method-ventilating-roof",
+    id: "cons-2020-ol-q5-b", topicId: "cons-3-9", conceptId: "method-ventilating-roof",
     section: "B", questionRef: "2020 OL Q5(b)",
+    stem: "The sketch shows portion of a pitched roof including the ridge. This traditional slated cut roof has a pitch of 45°. The slates are fixed to 50 mm × 20 mm battens, on a breather membrane, supported on 200 mm × 50 mm rafters. The roof is highly insulated at collar tie level with an insulated plasterboard ceiling beneath.",
     questionText: "On your drawing show one method of ventilating the roof.",
-    tariffModel: {"kind":"fixed","notation":"4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "cons-2020-ol-q5-b-r1", kind: "point", verbatim: "Vent at ridge or Vent slate", marks: 4, openList: true },
+    { id: "ventilation", kind: "criterion", verbatim: "Vent at ridge or Vent slate", marks: 4, contextNote: "Show and identify a ridge vent at the ridge or vent slates fitted near the ridge, as in the scheme’s model section.", permittedMarks: [0,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Cut roof ridge section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the ventilation detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q5-original.png",
+          "srcHash": "dfc82ea52b26cd7aa0c38da8e28eb5d2",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 5: the printed question with a sketch of a slated cut roof at the ridge.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q5-scheme.png",
+          "srcHash": "53fcec0f7cb2cbbad9bc6602ac4d682d",
+          "alt": "SEC model section through the cut roof at the ridge with the ridge vent marked (b), the specification list and the ventilation notes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1568,11 +1875,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
     id: "cons-2020-ol-q6-a", topicId: "cons-1-8", conceptId: "large-safety-signs-highlighting-use-personal",
     section: "B", questionRef: "2020 OL Q6(a)",
-    questionText: "Using large freehand sketches, show three safety signs highlighting the use of personal protection equipment (PPE) that must be worn by all workers on a construction site.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    questionText: "Using large freehand sketches, show three safety signs highlighting the use of personal protection equipment (PPE) that must be worn by all workers on a construction site. For each sign, state how the personal protection equipment protects workers on the site.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
-    { id: "cons-2020-ol-q6-a-r1", kind: "anyN", verbatim: "Using large freehand sketches, show three safety signs highlighting the use of personal protection equipment (PPE) that ", marks: 6, openList: true, group: {"claimMax":3,"perOption":2,"options":["Steel toe cap boots","Hi Viz clothing","Hard hat","Protective eye wear","Ear protection","Hand protection"]} },
+    { id: "sign-1", kind: "criterion", verbatim: "Safety sign 1", marks: 8, contextNote: "Sign 6 and how it protects the worker 2 (the scheme’s \"Safety sign 1\" and \"Reason 1\"). Such as: steel toe cap boots (feet protected from dropped heavy materials); hi-viz clothing (workers visible to machine operators); hard hat (head protected from falling material); protective eye wear (eyes protected from debris, dust and power tools); ear protection (continuous noise of 85–90 dB or more); hand protection (sharp equipment, corrosive or toxic substances).", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "sign-2", kind: "criterion", verbatim: "Safety sign 2", marks: 8, contextNote: "A second, different sign 6 and how it protects the worker 2 (the scheme’s \"Safety sign 2\" and \"Reason 2\").", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "sign-3", kind: "criterion", verbatim: "Safety sign 3", marks: 8, contextNote: "A third, different sign 6 and how it protects the worker 2 (the scheme’s \"Safety sign 3\" and \"Reason 3\").", permittedMarks: [0,1,2,3,4,5,6,7,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "PPE signs, working at height and safety training",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original question retained. The three signs, two precautions and two reasons are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q6-original.png",
+          "srcHash": "cdedcb15855d3204b1a59e6c201a259c",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 6: the printed question with a sketch of workers on scaffolding at a house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q6-signs",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q6-signs.png",
+          "srcHash": "9b31c655c0ecef50f5d028af0a96161b",
+          "alt": "SEC 2020 Ordinary marking scheme table of PPE safety signs — boots, hi-viz clothing, hard hat, eye wear, ear and hand protection — and how each protects workers.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1582,10 +1920,40 @@ export const CARDS: SecCard[] = [
     id: "cons-2020-ol-q6-b", topicId: "cons-1-8", conceptId: "safety-precautions-workers-must-follow-when",
     section: "B", questionRef: "2020 OL Q6(b)",
     questionText: "Using notes and sketches, describe two safety precautions that workers must follow when working at height on a construction site.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 9","answer":2,"ofParts":10,"perPart":9}, totalMarks: 18,
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
-    { id: "cons-2020-ol-q6-b-r1", kind: "anyN", verbatim: "Safety precautions", marks: 18, contextNote: "Safety precautions", openList: true, group: {"claimMax":2,"perOption":9,"options":["Use scaffolding when working at heights above 1.5 metres","Ensure the scaffolding is level, supported and properly erected","Ensure a guard rail and working platforms are positioned at eaves level","Carefully plan the use of ladders","Limit the time workers are on the ladder","Properly secure ladders at the top and bottom","Position ladders at a slope of 1:4","Workers to use safety harness and other fall protection devices as necessary to provide additional fall protection","Use a lifting system such as a cherry picker/teleporter to reach high areas or areas that need to be worked on for an extended time period","Work in pairs to ensure each worker has a co-worker/buddy to help with any task that has a risk"]} },
+    { id: "precaution-1", kind: "criterion", verbatim: "Precaution one notes + sketch (5 + 4 marks)", marks: 9, contextNote: "Notes 5 and sketch 4. Such as: scaffolding above 1.5 m, level, supported and properly erected; guard rails and working platforms at eaves level; ladders secured top and bottom at a slope of 1:4.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "precaution-2", kind: "criterion", verbatim: "Precaution two notes + sketch (5 + 4 marks)", marks: 9, contextNote: "Notes 5 and sketch 4 for a second, different precaution. Such as: a safety harness and fall protection; a cherry picker or teleporter for extended work at height; working in pairs with a buddy.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "PPE signs, working at height and safety training",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original question retained. The three signs, two precautions and two reasons are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q6-original.png",
+          "srcHash": "cdedcb15855d3204b1a59e6c201a259c",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 6: the printed question with a sketch of workers on scaffolding at a house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q6-heights",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q6-heights.png",
+          "srcHash": "d692328d72b5391f74b2d07e35c3ce1c",
+          "alt": "SEC 2020 Ordinary marking scheme notes on working safely at height, with sketches of a guard rail, ladders, a cherry picker and a safety harness.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1595,10 +1963,40 @@ export const CARDS: SecCard[] = [
     id: "cons-2020-ol-q6-c", topicId: "cons-1-8", conceptId: "reasons-why-all-workers-must-undertake",
     section: "B", questionRef: "2020 OL Q6(c)",
     questionText: "Give two reasons why all workers must undertake a safety training course prior to working on a construction site.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 4","answer":2,"ofParts":5,"perPart":4}, totalMarks: 8,
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "cons-2020-ol-q6-c-r1", kind: "anyN", verbatim: "Possible Reasons", marks: 8, contextNote: "Possible Reasons", openList: true, group: {"claimMax":2,"perOption":4,"options":["Legal requirement to comply with Health and Safety regulations for all construction workers","Raise the standard of safety awareness on site","Ensure that all workers undergo basic health and safety awareness training to prevent accidents and avoid health hazards","Educates workers to assess risks and identify dangers on site","It promotes a safety culture for all construction workers"]} },
+    { id: "reason-1", kind: "criterion", verbatim: "Reason 1", marks: 4, contextNote: "Such as: a legal requirement under Health and Safety regulations; raises the standard of safety awareness on site.", permittedMarks: [0,1,2,3,4] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason 2", marks: 4, contextNote: "A second, different reason. Such as: basic training prevents accidents and avoids health hazards; workers learn to assess risks and identify dangers; it promotes a safety culture.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "PPE signs, working at height and safety training",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original question retained. The three signs, two precautions and two reasons are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q6-original.png",
+          "srcHash": "cdedcb15855d3204b1a59e6c201a259c",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 6: the printed question with a sketch of workers on scaffolding at a house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q6-training",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q6-training.png",
+          "srcHash": "e4de3f41db43f24c9f6d39eb7890157d",
+          "alt": "SEC 2020 Ordinary marking scheme notes on reasons for site safety training.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1607,34 +2005,43 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
     id: "cons-2020-ol-q7-a", topicId: "cons-5-6", conceptId: "given-design-preferred-location-bathroom-toilet",
     section: "B", questionRef: "2020 OL Q7(a)",
-    questionText: "Draw a freehand sketch of the given design and show your preferred location for each of the following in the bathroom: • toilet • wash basin • shower area. Give one reason for selecting each location.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 6","answer":4,"ofParts":12,"perPart":6}, totalMarks: 24,
+    stem: "A draft design for a bathroom, suitable for a person with limited mobility is shown. The position of a window and a door are included.",
+    questionText: "Draw a freehand sketch of the given design and show your preferred location for each of the following in the bathroom: toilet; wash basin; shower area. Give one reason for selecting each location.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
-    { id: "cons-2020-ol-q7-a-r1", kind: "anyN", verbatim: "Draw a freehand sketch of the given design and show your preferred location for each of the following in the bathroom: •", marks: 24, contextNote: "The scheme groups its answer under: Toilet; Wash basin; Shower area", openList: true, group: {"claimMax":4,"perOption":6,"options":["Located on an external wall making waste disposal easier to plumb","It has free space on the side to allow grab rails to be fixed to the wall","Fitted in this location to allow for a 1500 mm turning circle in bathroom","External wall to allow toilet to be fixed securely","There is a wall to allow it to be fixed securely","Fitted in this location to allow for a 1500 mm turning circle","Wall space to attach a mirror over the basin","Adequate wall space to install grab rails if necessary","It avoids the door opening and allows for moving space","It has natural light available","It has external walls to allow for fixtures and fittings to be attached securely","Fitted in this location to allow for a 1500mm turning circle in bathroom"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2020, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q7-b", topicId: "cons-5-6", conceptId: "homeowner-has-decided-install-grab-rails",
-    section: "B", questionRef: "2020 OL Q7(b)",
-    questionText: "The homeowner has decided to install grab-rails, like that shown, in the bathroom to aid ease of use for all users. Using notes and freehand sketches show two possible locations for grab-rails. Give one reason for each location.",
-    tariffModel: {"kind":"fixed","notation":"1 x 4 + 1 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
-    rows: [
-    { id: "cons-2020-ol-q7-b-r1", kind: "anyN", verbatim: "Toilet area", marks: 4, contextNote: "Toilet area", openList: true, group: {"claimMax":1,"perOption":4,"options":["Grab- rail securely attached to a solid wall","Horizontal grab rail at a height 700 mm from the ground","To improve safety and mobility when using the water closet","To provide extra support when lowering or rising from the water closet seat","To allow people with reduced mobility to use the water closet safely"]} },
-    { id: "cons-2020-ol-q7-b-r2", kind: "anyN", verbatim: "Shower area", marks: 4, contextNote: "Shower area", openList: true, group: {"claimMax":1,"perOption":4,"options":["Grab-rail securely attached to the tiles using fixings","Horizontal or vertical grab rails installed in the shower area","To provide extra support when using the shower area","To provide safety from slipping in the shower area","Allows person with reduced mobility to use the shower area safely and independently"]} },
+    { id: "sketch", kind: "criterion", verbatim: "Sketch of bathroom", marks: 6, contextNote: "A freehand sketch of the given bathroom design.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "toilet", kind: "criterion", verbatim: "Location and valid reason for toilet position (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: on an external wall for easier waste plumbing and secure fixing; free space beside it for grab rails; a 1500 mm turning circle kept clear.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "wash-basin", kind: "criterion", verbatim: "Location and valid reason for wash basin position (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: a wall to fix it securely; a 1500 mm turning circle kept clear; wall space for a mirror or grab rails.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "shower", kind: "criterion", verbatim: "Location and valid reason for shower area position (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: clear of the door opening; natural light; external walls for secure fixtures; a 1500 mm turning circle kept clear.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Bathroom for a person with limited mobility",
           "pages": [
+                1,
                 4
           ],
-          "attribution": "SEC Construction Studies 2020 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All three printed fittings in (a) are required in one sketch, each separately marked; the grab-rail locations and reasons are open responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q7-original.png",
+          "srcHash": "da90cfacd7f9379a633ae4d42f032b3c",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 7: the printed question with the draft bathroom plan and a sketch of a grab-rail.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q7-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q7-layout.png",
+          "srcHash": "d50154343608fceb24523d3f3852032f",
+          "alt": "SEC model bathroom layout with the toilet, wash basin and shower area placed, and the reasons for each location.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -1642,143 +2049,175 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q7-c", topicId: "cons-5-6", conceptId: "advantage-designing-bathroom-person-reduced-mobility",
+    id: "cons-2020-ol-q7-b", topicId: "cons-1-2", conceptId: "homeowner-has-decided-install-grab-rails",
+    section: "B", questionRef: "2020 OL Q7(b)",
+    stem: "A draft design for a bathroom, suitable for a person with limited mobility is shown. The position of a window and a door are included.",
+    questionText: "The homeowner has decided to install grab-rails, like that shown, in the bathroom to aid ease of use for all users. Using notes and freehand sketches show two possible locations for grab-rails. Give one reason for each location.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "location-1", kind: "criterion", verbatim: "Suitable location 1 note + sketch (2 + 4 marks)", marks: 6, contextNote: "Note 2 and sketch 4. Such as: a horizontal rail beside the toilet, fixed to a solid wall about 700 mm above the floor.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "reason-1", kind: "criterion", verbatim: "Reason 1", marks: 4, contextNote: "A reason for location 1. Such as: extra support lowering onto or rising from the toilet seat; safer, more independent use.", permittedMarks: [0,1,2,3,4] },
+    { id: "location-2", kind: "criterion", verbatim: "Suitable location 2 note + sketch (2 + 4 marks)", marks: 6, contextNote: "Note 2 and sketch 4 for a second, different location. Such as: horizontal or vertical rails in the shower area, fixed through the tiles.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason 2", marks: 4, contextNote: "A reason for location 2. Such as: support when using the shower; safety from slipping; safe, independent use of the shower.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Bathroom for a person with limited mobility",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All three printed fittings in (a) are required in one sketch, each separately marked; the grab-rail locations and reasons are open responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q7-original.png",
+          "srcHash": "da90cfacd7f9379a633ae4d42f032b3c",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 7: the printed question with the draft bathroom plan and a sketch of a grab-rail.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q7-grab-rails",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q7-grab-rails.png",
+          "srcHash": "2da3039b3c92096352f35cf769ae61fb",
+          "alt": "SEC 2020 Ordinary marking scheme notes on grab-rail locations at the toilet and in the shower, with sketches.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2020-ol-q7-c", topicId: "cons-1-2", conceptId: "advantage-designing-bathroom-person-reduced-mobility",
     section: "B", questionRef: "2020 OL Q7(c)",
+    stem: "A draft design for a bathroom, suitable for a person with limited mobility is shown. The position of a window and a door are included.",
     questionText: "Discuss one advantage of designing a bathroom suitable for a person with reduced mobility.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 6","answer":1,"ofParts":5,"perPart":6}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "cons-2020-ol-q7-c-r1", kind: "anyN", verbatim: "Discuss one advantage of designing a bathroom suitable for a person with reduced mobility.", marks: 6, openList: true, group: {"claimMax":1,"perOption":6,"options":["Future proofing the home so less modifications need to be made later","Later modifications, demolishing, and retrofitting are expensive and intrusive to the homeowners","Allow the homeowner and family to live in their home for their entire life","It allows the house to be used by the less mobile members of the family independently","Allows safe access to the bathroom by all"]} },
+    { id: "advantage", kind: "criterion", verbatim: "Advantage of designing bathroom suitable for people with reduced mobility", marks: 6, contextNote: "Such as: future-proofing the home so fewer costly, intrusive modifications are needed later; the family can live in the home for life; less mobile members use it independently; safe access for all.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Bathroom for a person with limited mobility",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All three printed fittings in (a) are required in one sketch, each separately marked; the grab-rail locations and reasons are open responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q7-original.png",
+          "srcHash": "da90cfacd7f9379a633ae4d42f032b3c",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 7: the printed question with the draft bathroom plan and a sketch of a grab-rail.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q7-advantage",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q7-advantage.png",
+          "srcHash": "450399347f0e974d146ad97b5c5a5323",
+          "alt": "SEC 2020 Ordinary marking scheme notes on advantages of a bathroom designed for reduced mobility.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q8-None-stud-partition", topicId: "cons-2-4", conceptId: "explain-five-stud-partition-domino-joint-stud-partition",
-    section: "B", questionRef: "2020 OL Q8 — Stud partition",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • stud partition.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    id: "cons-2020-ol-q8-None-stud-partition", topicId: "cons-4-5", conceptId: "explain-five-stud-partition-domino-joint-stud-partition",
+    section: "B", questionRef: "2020 OL Q8",
+    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: stud partition; domino joint; slump test; dynamic glass; pyrite; pile foundation; trimmer; butt hinge; solar panel.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
     rows: [
-    { id: "cons-2020-ol-q8-None-stud-partition-r1", kind: "anyN", verbatim: "Stud partition", marks: 10, contextNote: "Stud partition", openList: true, group: {"claimMax":2,"perOption":6,"options":["A stud wall comprises of a frame, timber, or metal studs, secured to the floor, ceiling and walls","The partition is made with vertical studs spanning from floor to ceiling","Horizontal members called headplates and soleplates sit at the top and bottom of the studs","Horizontal brace pieces between studs called noggins are used for rigidity","Studs are spaced at 400 mm centres and are covered with plasterboard","Stud partitions can be load bearing or non-load bearing"],"perOptionSteps":[6,4]} },
+    { id: "terms", kind: "anyN", verbatim: "Construction Terms", marks: 50, contextNote: "Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). Stud partition: a timber or metal stud frame fixed to the floor, ceiling and walls; vertical studs at 400 mm centres between head and sole plates, braced by noggins and covered with plasterboard; load bearing or non-load bearing. Domino joint: a woodworking joint cut with a domino joiner, used in modern furniture to butt, edge or corner join pieces of wood quickly; very strong with wood adhesive. Slump test: measures the workability of fresh concrete on site, batch by batch, and checks the water content; a truncated cone, tamping rod and meter stick; 0–50 mm slump low workability, 50–75 mm medium. Dynamic glass: a thin coating that changes from clear to tinted under a small DC voltage (electrochromic) or with the sun’s heat (thermochromic), reducing glare and overheating for the occupants’ comfort. Pyrite: a naturally occurring iron sulphide in sedimentary rock that cracks and expands when exposed to moisture and oxygen; in fill under a building it heaves ground floors and cracks walls. Pile foundation: supports and anchors a building where the soil has low bearing capacity or good soil is deep; end-bearing, friction or short-bored, drilled and poured or driven; a ground beam carries the walls onto the piles. Trimmer: a joist supporting the ends of trimmed joists or rafters around a stairwell or chimney opening, carried by trimming joists; carries more load, so usually 25 mm thicker than common joists. Butt hinge: a widely used hinge of two leaves and a central pin, 12–150 mm long, in brass, mild steel or stainless steel; the leaves sit in shallow trenches and are fixed with countersunk screws; for doors, windows and boxes. Solar Panel: evacuated tubes converting solar radiation to heat, or photovoltaic panels generating electricity; best on a south-facing roof at about 45° in Ireland; a sustainable source that cuts CO2 emissions.", group: {"claimMax":5,"perOption":10,"options":["Stud partition","Domino joint","Slump test","Dynamic glass","Pyrite","Pile foundation","Trimmer","Butt hinge","Solar Panel"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Construction terms",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Explain any five of the nine printed terms. Each term is marked separately at 10 marks; the scheme illustrations are examples of suitable sketches."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q8-original.png",
+          "srcHash": "eef814d0ca0bd3ac8803728255c4c02d",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 8: the printed instruction and the nine construction terms.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q8-terms",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q8-terms.png",
+          "srcHash": "ac81ddbf8576bdf1c615a00b8423ab4f",
+          "alt": "SEC 2020 Ordinary marking scheme notes and sketches for all nine terms: stud partition, domino joint, slump test, dynamic glass, pyrite, pile foundation, trimmer, butt hinge and solar panel (three pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q8-None-domino-joint", topicId: "cons-2-4", conceptId: "explain-five-stud-partition-domino-joint-domino-joint",
-    section: "B", questionRef: "2020 OL Q8 — Domino joint",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • domino joint.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2020-ol-q8-None-domino-joint-r1", kind: "anyN", verbatim: "Domino joint", marks: 10, contextNote: "Domino joint", openList: true, group: {"claimMax":2,"perOption":6,"options":["This joint is widely used in the manufacture of modern furniture","A domino joint is woodworking joint cut with a domino joiner","Used to quickly joint pieces of wood","The domino joint is used to butt, edge or corner join pieces of wood","The domino joint when used with wood adhesive produces a very strong joint"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2020, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q8-None-slump-test", topicId: "cons-2-4", conceptId: "explain-five-stud-partition-domino-joint-slump-test",
-    section: "B", questionRef: "2020 OL Q8 — Slump test",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • slump test.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2020-ol-q8-None-slump-test-r1", kind: "anyN", verbatim: "Slump test", marks: 10, contextNote: "Slump test", openList: true, group: {"claimMax":2,"perOption":6,"options":["The slump test is used to measure the workability of fresh concrete","The slump test is carried out on site on each batch of concrete that is to be used to check the uniformity of the mixtures","The slump test can be used to check that the correct amount of water has been added to the concrete mix","The slump test is carried out with a truncated cone, tamping rod, and meter stick","Results are recorded when the cone is removed and the sample slumps: o 0 - 50 mm slump = Low workability o 50 - 75mm slump = Medium workability"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2020, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q8-None-dynamic-glass", topicId: "cons-2-4", conceptId: "explain-five-stud-partition-domino-joint-dynamic-glass",
-    section: "B", questionRef: "2020 OL Q8 — Dynamic glass",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • dynamic glass.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2020-ol-q8-None-dynamic-glass-r1", kind: "anyN", verbatim: "Dynamic glass", marks: 10, contextNote: "Dynamic glass", openList: true, group: {"claimMax":2,"perOption":6,"options":["This technology enables a thin coating to change from clear to tinted when a small DC voltage is applied","Dynamic glass enables glass to change tint when necessary to reduce glare and overheating of the interior","Provides greater levels of comfort for the occupant","Electrochromic: metallic oxide layers fixed to the surface of glass","Thermochromic glass reacts and tints to the heat and intensity of the sun"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2020, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q8-None-pyrite", topicId: "cons-2-4", conceptId: "explain-five-stud-partition-domino-joint-pyrite",
-    section: "B", questionRef: "2020 OL Q8 — Pyrite",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • pyrite.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2020-ol-q8-None-pyrite-r1", kind: "anyN", verbatim: "Pyrite", marks: 10, contextNote: "Pyrite", openList: true, group: {"claimMax":2,"perOption":6,"options":["Pyrite is form of iron sulphide","Pyrite is a naturally occurring mineral in sedimentary rocks","Pyrite can undergo a chemical reaction when exposed to moisture and oxygen","This chemical reaction can cause the pyrite to crack and expand","When pyrite is used in the building of foundations it can cause the ground floors to heave, causing cracking and movement of walls causing cracks to appear on the wall surfaces"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2020, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q8-None-pile-foundation", topicId: "cons-2-4", conceptId: "explain-five-stud-partition-domino-joint-pile-foundation",
-    section: "B", questionRef: "2020 OL Q8 — Pile foundation",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • pile foundation.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2020-ol-q8-None-pile-foundation-r1", kind: "anyN", verbatim: "Pile foundation", marks: 10, contextNote: "Pile foundation", openList: true, group: {"claimMax":2,"perOption":6,"options":["Pile foundations are used to support and anchor a building to the ground","Pile foundations are used where the building is situated on Low bearing capacity soil or when good bearing capacity soil is deep underground","There are three types of Pile foundations: o End-bearing, friction and short-bored","Pile foundations can be drilled with concrete poured or be driven into the ground using a pile driver","A ground beam sits on top of the pile foundations","Load-bearing walls transmit their load onto the beam which in turn transmits its load onto the pile foundation"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2020, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q8-None-trimmer", topicId: "cons-2-4", conceptId: "explain-five-stud-partition-domino-joint-trimmer",
-    section: "B", questionRef: "2020 OL Q8 — Trimmer",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • trimmer.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2020-ol-q8-None-trimmer-r1", kind: "anyN", verbatim: "Trimmer", marks: 10, contextNote: "Trimmer", openList: true, group: {"claimMax":2,"perOption":6,"options":["A trimmer joist supports joists and rafters that cannot be supported at their ends","Trimmer joists run perpendicular to rafters and common joists","Trimmer joists support trimmed joists","Trimming joists support a trimmer joist","Trimmer joists are used around chimney openings and stairwells to allow sufficient clearance for the stairs or chimney to pass through the floor or roof","Trimmer joists carry more load than common joist so are usually thicker in size","Trimmer joists are usually 25 mm thicker than common joists"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2020, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q8-None-butt-hinge", topicId: "cons-2-4", conceptId: "explain-five-stud-partition-domino-joint-butt-hinge",
-    section: "B", questionRef: "2020 OL Q8 — Butt hinge",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • butt hinge.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2020-ol-q8-None-butt-hinge-r1", kind: "anyN", verbatim: "Butt hinge", marks: 10, contextNote: "Butt hinge", openList: true, group: {"claimMax":2,"perOption":6,"options":["It varies in length from 12 mm to 150 mm","A widely used hinge","It is made of brass, mild steel or stainless steel","Used for doors, windows, boxes etc","Consists of two leaves and a central pin","The leaves are fitted into two shallow trenches cut into the frame","Butt hinges are secured using countersink screws"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2020, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q8-None-solar-panel", topicId: "cons-2-4", conceptId: "explain-five-stud-partition-domino-joint-solar-panel",
-    section: "B", questionRef: "2020 OL Q8 — Solar Panel",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • solar panel.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2020-ol-q8-None-solar-panel-r1", kind: "anyN", verbatim: "Solar Panel", marks: 10, contextNote: "Solar Panel", openList: true, group: {"claimMax":2,"perOption":6,"options":["A solar panel may be in the form of a photovoltaic panel or evacuated tubes","An evacuated tube collects solar radiation and converts it into heat","A photovoltaic panel generate electricity by absorbing sunlight and using that light energy to create an electrical current","The solar panel is usually situated on a south facing roof, 45o angle is optimum to catch solar energy in Ireland","Solar panels may also be placed at ground level but risk being damaged, or the sunlight blocked due to trees or overgrowth","A solar panel is a sustainable energy source, environmentally friendly and helps reduce CO2 emissions","The panel can be mounted to follow the path of the sun"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2020, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q9-a", topicId: "cons-1-1", conceptId: "reasons-why-homeowner-would-build-extension",
+    id: "cons-2020-ol-q9-a", topicId: "cons-1-2", conceptId: "reasons-why-homeowner-would-build-extension",
     section: "B", questionRef: "2020 OL Q9(a)",
+    stem: "The sketch shows a semi-detached house with an extension to the rear. The extension is finished externally with wooden cladding.",
     questionText: "Discuss two reasons why a homeowner would build an extension to their house.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 6","answer":2,"ofParts":6,"perPart":6}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "cons-2020-ol-q9-a-r1", kind: "anyN", verbatim: "Discuss two reasons why a homeowner would build an extension to their house.", marks: 12, openList: true, group: {"claimMax":2,"perOption":6,"options":["Increase the indoor floor area to accommodate the needs of a growing household","To improve the level of natural lighting entering the existing building","Increase the value of the existing building","Cheaper to improve existing building rather than move to a new building","Change and personalise an older designed building to new needs","Improve the thermal performance of the existing building as new building materials will be more energy efficient"]} },
+    { id: "reason-1", kind: "criterion", verbatim: "Valid reason one", marks: 6, contextNote: "Such as: more floor area for a growing household; more natural light into the existing building.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "reason-2", kind: "criterion", verbatim: "Valid reason two", marks: 6, contextNote: "A second, different reason. Such as: a higher property value; cheaper than moving; personalising an older design; better thermal performance from new materials.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Extension with more natural light",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The reasons, modifications and advantages are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q9-original.png",
+          "srcHash": "a2ddc7b3db7f1ec25d0e6983abfda03a",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 9: the printed question with a sketch of a semi-detached house with a timber-clad rear extension.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q9-reasons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q9-reasons.png",
+          "srcHash": "c236e601d535f33a5e3579b632a40429",
+          "alt": "SEC 2020 Ordinary marking scheme notes on reasons for building an extension.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1787,11 +2226,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
     id: "cons-2020-ol-q9-b", topicId: "cons-7-4", conceptId: "modifications-extension-would-allow-more-natural",
     section: "B", questionRef: "2020 OL Q9(b)",
+    stem: "The sketch shows a semi-detached house with an extension to the rear. The extension is finished externally with wooden cladding.",
     questionText: "Using notes and freehand sketches, show two modifications to the extension that would allow more natural light enter the dwelling.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 13","answer":2,"ofParts":7,"perPart":13}, totalMarks: 26,
+    tariffModel: {"kind":"fixed"}, totalMarks: 26,
     rows: [
-    { id: "cons-2020-ol-q9-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, show two modifications to the extension that would allow more natural light enter the", marks: 26, openList: true, group: {"claimMax":2,"perOption":13,"options":["Remove internal walls to allow light to penetrate through to the internal rooms","Replace existing door with a sliding door or bi-fold doors to increase the light entering","Increase the size of the existing windows","Install floor to ceiling glazing walls to replace existing walls","The existing window could be replaced with larger taller unit","Install roof lights on the sloped roof of the extension","Install solar-tubes/sky tunnels in the roof"]} },
+    { id: "modification-1", kind: "criterion", verbatim: "Modification 1 to extension notes + sketch (4 + 9 marks)", marks: 13, contextNote: "Notes 4 and sketch 9. Such as: larger or taller windows; floor-to-ceiling glazing; a sliding or bi-fold door.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13] },
+    { id: "modification-2", kind: "criterion", verbatim: "Modification 2 to extension notes + sketch (4 + 9 marks)", marks: 13, contextNote: "Notes 4 and sketch 9 for a second, different modification. Such as: roof lights in the sloped roof; solar tubes or sky tunnels; removing internal walls to let light through.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Extension with more natural light",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The reasons, modifications and advantages are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q9-original.png",
+          "srcHash": "a2ddc7b3db7f1ec25d0e6983abfda03a",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 9: the printed question with a sketch of a semi-detached house with a timber-clad rear extension.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q9-light",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q9-light.png",
+          "srcHash": "a930c0406e11e56790dabf7b60bc61f5",
+          "alt": "SEC 2020 Ordinary marking scheme notes on modifications that let more natural light into the extension, with sketches of glazing, roof lights and folding doors.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1800,24 +2270,85 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
     id: "cons-2020-ol-q9-c", topicId: "cons-7-4", conceptId: "advantages-occupants-increasing-amount-natural-light",
     section: "B", questionRef: "2020 OL Q9(c)",
+    stem: "The sketch shows a semi-detached house with an extension to the rear. The extension is finished externally with wooden cladding.",
     questionText: "Discuss two advantages for the occupants by increasing the amount of natural light entering the dwelling.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 6","answer":2,"ofParts":6,"perPart":6}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "cons-2020-ol-q9-c-r1", kind: "anyN", verbatim: "Advantages", marks: 12, contextNote: "Advantages", openList: true, group: {"claimMax":2,"perOption":6,"options":["Reduced energy costs for lighting and heating","Less reliance on fossil fuels for lighting","Regulates Seasonal Affective Disorder (SAD)","Reduces eye strain and improves quality of illumination","Improves exposure to sunlight, hence improves Vitamin D levels","Increases the aesthetics of interior space"]} },
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 6, contextNote: "Such as: lower energy costs for lighting and heating; less reliance on fossil fuels for lighting.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 6, contextNote: "A second, different advantage. Such as: helps regulate Seasonal Affective Disorder; less eye strain and better illumination; more vitamin D; more attractive interiors.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Extension with more natural light",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The reasons, modifications and advantages are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q9-original.png",
+          "srcHash": "a2ddc7b3db7f1ec25d0e6983abfda03a",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 9: the printed question with a sketch of a semi-detached house with a timber-clad rear extension.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q9-advantages",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q9-advantages.png",
+          "srcHash": "364d6fb06013aaccfa8c607bcd11cab7",
+          "alt": "SEC 2020 Ordinary marking scheme notes on advantages of more natural light for the occupants.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2020-ol-q1-b", topicId: "cons-1-1", conceptId: "typical-design-detailing-prevent-dampness-entering",
+    id: "cons-2020-ol-q1-b", topicId: "cons-3-4", conceptId: "typical-design-detailing-prevent-dampness-entering",
     section: "B", questionRef: "2020 OL Q1(b)",
+    stem: "A dwelling house has a 400 mm concrete block wall with a full-fill insulated cavity supported on a traditional strip foundation. The wall is plastered on both sides. The insulated concrete ground floor is finished with 20 mm floor tiles as shown.",
     questionText: "On your drawing, show the typical design detailing to prevent dampness entering the building through the floor.",
-    tariffModel: {"kind":"fixed","notation":"3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 3,
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "cons-2020-ol-q1-b-r1", kind: "point", verbatim: "Damp proof membrane/Radon Barrier", marks: 3, openList: true },
+    { id: "membrane", kind: "criterion", verbatim: "Damp proof membrane/Radon Barrier", marks: 3, contextNote: "Show and identify a continuous damp proof membrane or radon barrier under the floor, lapped with the DPC in the walls, as in the scheme’s model section.", permittedMarks: [0,3] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Strip foundation, external wall and ground floor section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the damp detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q1-original.png",
+          "srcHash": "af617efc36214c24299e5d708374fe84",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 1: the printed question with a sketch of the strip foundation, cavity wall and tiled insulated ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q1-scheme.png",
+          "srcHash": "2574e1ad3930502636f1ba80bd5969d8",
+          "alt": "SEC model section through the strip foundation, cavity wall and insulated ground floor with the damp proof membrane marked (b), the specification list and the notes for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -11986,6 +12517,440 @@ export const CARDS: SecCard[] = [
           "srcHash": "9fdc2ae45606ccdf1261636cdb8390ef",
           "alt": "SEC 2021 Ordinary marking scheme notes on making the space usable in winter, with sketches of a windbreak and a roofed deck.",
           "attribution": "SEC Leaving Certificate Construction Studies 2021 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2020-ol-q1-complete", topicId: "cons-1-5", conceptId: "strip-foundation-ground-floor-section-complete",
+    section: "B", questionRef: "2020 OL Q1 — complete",
+    stem: "A dwelling house has a 400 mm concrete block wall with a full-fill insulated cavity supported on a traditional strip foundation. The wall is plastered on both sides. The insulated concrete ground floor is finished with 20 mm floor tiles as shown.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the strip foundation, external wall and ground floor. On your drawing show the typical construction details from the bottom of the foundation to a point 200 mm above finished floor level. Show an internal floor width of 900 mm and include four typical dimensions. (b) On your drawing, show the typical design detailing to prevent dampness entering the building through the floor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 7 x 5 marks", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: reinforced strip foundation 1200 × 400 mm; concrete fill / foundation blocks; hardcore and sand blinding; 1200-gauge DPC/radon barrier; 200–300 mm floor insulation; 150 mm concrete floor slab taped and sealed at the wall junction; 20 mm floor tiles; skirting board; block inner leaf with 13 mm plaster; 200 mm full-fill cavity insulation; wall ties; block outer leaf with 19 mm render.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Any 4 typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-membrane", kind: "criterion", verbatim: "Damp proof membrane/Radon Barrier", marks: 3, contextNote: "Show and identify a continuous damp proof membrane or radon barrier under the floor, lapped with the DPC in the walls, as in the scheme’s model section.", permittedMarks: [0,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2020-ol-q1-a","label":"a","marks":47,"rowIds":["a-details","a-dimensions","a-presentation"]},{"sourceCardId":"cons-2020-ol-q1-b","label":"b","marks":3,"rowIds":["b-membrane"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Strip foundation, external wall and ground floor section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the damp detail in (b) is marked separately. Any alternative detailing that complies with current Building Regulations is acceptable."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q1-original.png",
+          "srcHash": "af617efc36214c24299e5d708374fe84",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 1: the printed question with a sketch of the strip foundation, cavity wall and tiled insulated ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q1-scheme.png",
+          "srcHash": "2574e1ad3930502636f1ba80bd5969d8",
+          "alt": "SEC model section through the strip foundation, cavity wall and insulated ground floor with the damp proof membrane marked (b), the specification list and the notes for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2020-ol-q2-complete", topicId: "cons-3-3", conceptId: "cavity-wall-insulation-complete",
+    section: "B", questionRef: "2020 OL Q2 — complete",
+    stem: "The proposed external wall for a new house has a 100 mm concrete block outer leaf, a 200 mm cavity and a 100 mm concrete block inner leaf as shown.",
+    questionText: "(a) Using notes and freehand sketches, show one suitable method of insulating the proposed cavity. Specify the type and thickness of insulation. (b) List two advantages of installing insulation in the cavity. (c) On a separate sketch show, using notes and freehand sketches, one method of providing additional insulation to this wall to further improve its thermal insulation properties.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-method", kind: "criterion", verbatim: "Method of insulating wall note + sketch (8 + 8 marks)", marks: 16, contextNote: "Note 8 and sketch 8. Such as: rigid insulation boards installed as the blockwork is built; boards tongued and grooved to fit tightly; wall ties holding the boards tight against the inner leaf.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "a-type", kind: "criterion", verbatim: "Preferred insulation type for cavity wall", marks: 5, contextNote: "Such as: expanded polystyrene (EPS) boards; polyurethane boards; polyisocyanurate foam panels.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "a-thickness", kind: "criterion", verbatim: "Thickness of insulation", marks: 5, contextNote: "Such as: 200 mm for a full-filled cavity; 150 mm boards for a partial fill.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 4, contextNote: "Such as: less heat lost from the building; more thermal comfort for the occupants.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 4, contextNote: "A second, different advantage. Such as: lower energy bills; less use of fossil fuels; a better Building Energy Rating (BER).", permittedMarks: [0,1,2,3,4] },
+    { id: "c-additional", kind: "criterion", verbatim: "Additional Insulating the wall detail note + sketch (8 + 8 marks)", marks: 16, contextNote: "Note 8 and sketch 8. Such as, external: insulation panels fixed and glued to the wall, at least 200 mm thick, finished with acrylic base and finish coats on mesh; internal: 50 × 50 mm battens at 400 mm centres with insulation between, a vapour barrier, and plasterboard or insulated plasterboard with a skim coat.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2020-ol-q2-a","label":"a","marks":26,"rowIds":["a-method","a-type","a-thickness"]},{"sourceCardId":"cons-2020-ol-q2-b","label":"b","marks":8,"rowIds":["b-advantage-1","b-advantage-2"]},{"sourceCardId":"cons-2020-ol-q2-c","label":"c","marks":16,"rowIds":["c-additional"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating a cavity wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The insulating method, the insulation type and the additional insulation are open choices; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q2-original.png",
+          "srcHash": "aa9e8e89e296bc0a095c361ffcc0a78e",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 2: the printed question with a sketch of the 100 mm block outer leaf, 200 mm cavity and 100 mm block inner leaf.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q2-method",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q2-method.png",
+          "srcHash": "ada4823ca6ed5a7def9e7982ecb9f88e",
+          "alt": "SEC 2020 Ordinary marking scheme notes on insulating the cavity wall — method, type and thickness of insulation — with sketches of insulation boards in the cavity, and the advantages for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2020-ol-q3-complete", topicId: "cons-5-3", conceptId: "stove-heating-pipework-complete",
+    section: "B", questionRef: "2020 OL Q3 — complete",
+    questionText: "(a) A wood-burning stove can be used to heat radiators for a dwelling house. Draw a large freehand sketch of the given house and, on your sketch, show the pipework necessary to supply hot water from the stove to the ground floor radiators and also heat the water in the cylinder on the first floor. Include the following in your sketch: wood-burning stove; hot water cylinder; pipework to cylinder; expansion tank / vessel; pipework to radiators; all necessary pumps and valves. (b) The installation of an underfloor heating system is now an alternative to radiators. Discuss one advantage of installing an underfloor heating system.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-items", kind: "criterion", verbatim: "Any 8 x 5 marks", marks: 40, contextNote: "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: drawing the given sketch; 15 mm cold feed to the burner; 22 mm flow to the radiators; 22 mm return from the radiators; radiators; 22 mm primary flow to the cylinder; 22 mm primary return to the burner; 22 mm overflow pipe; 22 mm expansion pipe from the cylinder; valves / pumps.", permittedMarks: [0,5,10,15,20,25,30,35,40] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketch: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    { id: "b-advantage", kind: "criterion", verbatim: "Advantage", marks: 4, contextNote: "Such as: heat spread evenly and consistently around each room; a suitably sized system heats a larger room than one radiator; a lower working temperature that can reduce heating bills; more wall space for furniture and decoration.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2020-ol-q3-a","label":"a","marks":46,"rowIds":["a-items","a-presentation"]},{"sourceCardId":"cons-2020-ol-q3-b","label":"b","marks":4,"rowIds":["b-advantage"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Wood-burning stove heating radiators and a cylinder",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-eight list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q3-original.png",
+          "srcHash": "4af50498f678d7a661b630845b222bed",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 3: the printed question with a section of a two-storey house with a wood-burning stove, radiators and a cylinder.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q3-system.png",
+          "srcHash": "ff95535a26331db2a7fc2dac63e028ca",
+          "alt": "SEC model sketch of the house with pipework from the wood-burning stove to the ground-floor radiators and the first-floor cylinder, with the typical details list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2020-ol-q4-b", topicId: "cons-1-2", conceptId: "site-waste-management-b",
+    section: "B", questionRef: "2020 OL Q4(b)",
+    stem: "Careful planning is required to manage waste on a construction site so as to reduce, re-use and recycle construction materials. The sketch shows one possible waste management method used to sort materials on a site.",
+    questionText: "Name two construction materials that could be recycled and then re-used on a construction site. Give one suitable re-use for each material.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
+    rows: [
+    { id: "material-1", kind: "criterion", verbatim: "Construction material 1", marks: 4, contextNote: "Such as: bedrock, blocks and concrete; bricks; soil/subsoil; timber; slates/tiles; plasterboard; metal.", permittedMarks: [0,1,2,3,4] },
+    { id: "material-2", kind: "criterion", verbatim: "Construction material 2", marks: 4, contextNote: "A second, different material from the same kind of list.", permittedMarks: [0,1,2,3,4] },
+    { id: "reuse-1", kind: "criterion", verbatim: "Suitable re-use for material 1", marks: 5, contextNote: "A re-use matching material 1. Such as: infill during construction; restoration of heritage buildings; fill on site or replanting green areas; wood products or landscaping woodchips.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "reuse-2", kind: "criterion", verbatim: "Suitable re-use for material 2", marks: 5, contextNote: "A re-use matching material 2. Such as: re-used on the building to keep its character; waste gypsum recycled into new plasterboard; metal processed into new metal products.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Waste management on a construction site",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Reasons, materials, re-uses and the sorting method are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q4-original.png",
+          "srcHash": "59145ca22ed0710aaf477db21bbc5942",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 4: the printed question with a sketch of coloured skips sorting waste on a site.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q4-materials",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q4-materials.png",
+          "srcHash": "a69c64d5356d51b947152db688bd382d",
+          "alt": "SEC 2020 Ordinary marking scheme notes on recyclable construction materials and re-uses, with sketches of a bulk bag, a crate and a barrel.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2020-ol-q4-complete", topicId: "cons-1-2", conceptId: "site-waste-management-complete",
+    section: "B", questionRef: "2020 OL Q4 — complete",
+    stem: "Careful planning is required to manage waste on a construction site so as to reduce, re-use and recycle construction materials. The sketch shows one possible waste management method used to sort materials on a site.",
+    questionText: "(a) Discuss two reasons why a construction company should have a waste management plan for their site. (b) Name two construction materials that could be recycled and then re-used on a construction site. Give one suitable re-use for each material. (c) Using notes and a freehand sketch, show one other method of sorting and storing waste materials on a construction site.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-reason-1", kind: "criterion", verbatim: "Reason 1", marks: 8, contextNote: "Such as: to prevent and minimise waste on building sites; to build a culture of re-using and recycling rather than dumping.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-reason-2", kind: "criterion", verbatim: "Reason 2", marks: 8, contextNote: "A second, different reason. Such as: less energy used making new material; a clean, clear site that prevents accidents; hazardous waste kept out of local water supplies; landfill sites are scarce; a lower overall building cost.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-material-1", kind: "criterion", verbatim: "Construction material 1", marks: 4, contextNote: "Such as: bedrock, blocks and concrete; bricks; soil/subsoil; timber; slates/tiles; plasterboard; metal.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-material-2", kind: "criterion", verbatim: "Construction material 2", marks: 4, contextNote: "A second, different material from the same kind of list.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-reuse-1", kind: "criterion", verbatim: "Suitable re-use for material 1", marks: 5, contextNote: "A re-use matching material 1. Such as: infill during construction; restoration of heritage buildings; fill on site or replanting green areas; wood products or landscaping woodchips.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-reuse-2", kind: "criterion", verbatim: "Suitable re-use for material 2", marks: 5, contextNote: "A re-use matching material 2. Such as: re-used on the building to keep its character; waste gypsum recycled into new plasterboard; metal processed into new metal products.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-method", kind: "criterion", verbatim: "Method note + sketch (6 + 10 marks)", marks: 16, contextNote: "Note 6 and sketch 10. Such as: containers protecting metal and valuable waste from the weather; pallets for bricks and blocks; barrels for lengths of timber and metal; trailers for soil and bedrock; boxes for small items; bulk bags for soil and gravel.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2020-ol-q4-a","label":"a","marks":16,"rowIds":["a-reason-1","a-reason-2"]},{"sourceCardId":"cons-2020-ol-q4-b","label":"b","marks":18,"rowIds":["b-material-1","b-material-2","b-reuse-1","b-reuse-2"]},{"sourceCardId":"cons-2020-ol-q4-c","label":"c","marks":16,"rowIds":["c-method"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Waste management on a construction site",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Reasons, materials, re-uses and the sorting method are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q4-original.png",
+          "srcHash": "59145ca22ed0710aaf477db21bbc5942",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 4: the printed question with a sketch of coloured skips sorting waste on a site.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q4-storage",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q4-storage.png",
+          "srcHash": "3c8b54b7cef80a2fe9452e21bb051f40",
+          "alt": "SEC 2020 Ordinary marking scheme notes on methods of sorting and storing site waste, with sketches of a pallet, a container and a covered store.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2020-ol-q5-complete", topicId: "cons-1-5", conceptId: "roof-ridge-section-complete",
+    section: "B", questionRef: "2020 OL Q5 — complete",
+    stem: "The sketch shows portion of a pitched roof including the ridge. This traditional slated cut roof has a pitch of 45°. The slates are fixed to 50 mm × 20 mm battens, on a breather membrane, supported on 200 mm × 50 mm rafters. The roof is highly insulated at collar tie level with an insulated plasterboard ceiling beneath.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the roof at the ridge. Show the typical construction details from the top of the ridge to a level 100 mm below the collar ties. The collar ties are positioned 900 mm below ridge level. Include three courses of slate at the ridge. Include three typical dimensions on your drawing. (b) On your drawing show one method of ventilating the roof.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 7 x 5 marks", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: ridge tile; ridge vent; roofing slates; 50 × 35 mm battens; breather membrane; 275 × 32 mm ridge board; 200 × 50 mm rafter; 200 × 50 mm collar tie; insulation between rafters; airtight membrane; insulated plasterboard; plaster skim.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Any three typical dimensions 3 x 1 mark", marks: 3, contextNote: "Three appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-ventilation", kind: "criterion", verbatim: "Vent at ridge or Vent slate", marks: 4, contextNote: "Show and identify a ridge vent at the ridge or vent slates fitted near the ridge, as in the scheme’s model section.", permittedMarks: [0,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2020-ol-q5-a","label":"a","marks":46,"rowIds":["a-details","a-dimensions","a-presentation"]},{"sourceCardId":"cons-2020-ol-q5-b","label":"b","marks":4,"rowIds":["b-ventilation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Cut roof ridge section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction details, dimensions and draughting belong to part (a); the ventilation detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q5-original.png",
+          "srcHash": "dfc82ea52b26cd7aa0c38da8e28eb5d2",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 5: the printed question with a sketch of a slated cut roof at the ridge.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q5-scheme.png",
+          "srcHash": "53fcec0f7cb2cbbad9bc6602ac4d682d",
+          "alt": "SEC model section through the cut roof at the ridge with the ridge vent marked (b), the specification list and the ventilation notes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2020-ol-q6-complete", topicId: "cons-1-8", conceptId: "site-safety-ppe-heights-complete",
+    section: "B", questionRef: "2020 OL Q6 — complete",
+    questionText: "(a) Using large freehand sketches, show three safety signs highlighting the use of personal protection equipment (PPE) that must be worn by all workers on a construction site. For each sign, state how the personal protection equipment protects workers on the site. (b) Using notes and sketches, describe two safety precautions that workers must follow when working at height on a construction site. (c) Give two reasons why all workers must undertake a safety training course prior to working on a construction site.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-sign-1", kind: "criterion", verbatim: "Safety sign 1", marks: 8, contextNote: "Sign 6 and how it protects the worker 2 (the scheme’s \"Safety sign 1\" and \"Reason 1\"). Such as: steel toe cap boots (feet protected from dropped heavy materials); hi-viz clothing (workers visible to machine operators); hard hat (head protected from falling material); protective eye wear (eyes protected from debris, dust and power tools); ear protection (continuous noise of 85–90 dB or more); hand protection (sharp equipment, corrosive or toxic substances).", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-sign-2", kind: "criterion", verbatim: "Safety sign 2", marks: 8, contextNote: "A second, different sign 6 and how it protects the worker 2 (the scheme’s \"Safety sign 2\" and \"Reason 2\").", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-sign-3", kind: "criterion", verbatim: "Safety sign 3", marks: 8, contextNote: "A third, different sign 6 and how it protects the worker 2 (the scheme’s \"Safety sign 3\" and \"Reason 3\").", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-precaution-1", kind: "criterion", verbatim: "Precaution one notes + sketch (5 + 4 marks)", marks: 9, contextNote: "Notes 5 and sketch 4. Such as: scaffolding above 1.5 m, level, supported and properly erected; guard rails and working platforms at eaves level; ladders secured top and bottom at a slope of 1:4.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "b-precaution-2", kind: "criterion", verbatim: "Precaution two notes + sketch (5 + 4 marks)", marks: 9, contextNote: "Notes 5 and sketch 4 for a second, different precaution. Such as: a safety harness and fall protection; a cherry picker or teleporter for extended work at height; working in pairs with a buddy.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "c-reason-1", kind: "criterion", verbatim: "Reason 1", marks: 4, contextNote: "Such as: a legal requirement under Health and Safety regulations; raises the standard of safety awareness on site.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-reason-2", kind: "criterion", verbatim: "Reason 2", marks: 4, contextNote: "A second, different reason. Such as: basic training prevents accidents and avoids health hazards; workers learn to assess risks and identify dangers; it promotes a safety culture.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2020-ol-q6-a","label":"a","marks":24,"rowIds":["a-sign-1","a-sign-2","a-sign-3"]},{"sourceCardId":"cons-2020-ol-q6-b","label":"b","marks":18,"rowIds":["b-precaution-1","b-precaution-2"]},{"sourceCardId":"cons-2020-ol-q6-c","label":"c","marks":8,"rowIds":["c-reason-1","c-reason-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "PPE signs, working at height and safety training",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original question retained. The three signs, two precautions and two reasons are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q6-original.png",
+          "srcHash": "cdedcb15855d3204b1a59e6c201a259c",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 6: the printed question with a sketch of workers on scaffolding at a house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q6-signs",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q6-signs.png",
+          "srcHash": "9b31c655c0ecef50f5d028af0a96161b",
+          "alt": "SEC 2020 Ordinary marking scheme table of PPE safety signs — boots, hi-viz clothing, hard hat, eye wear, ear and hand protection — and how each protects workers.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2020-ol-q7-complete", topicId: "cons-5-6", conceptId: "accessible-bathroom-layout-complete",
+    section: "B", questionRef: "2020 OL Q7 — complete",
+    stem: "A draft design for a bathroom, suitable for a person with limited mobility is shown. The position of a window and a door are included.",
+    questionText: "(a) Draw a freehand sketch of the given design and show your preferred location for each of the following in the bathroom: toilet; wash basin; shower area. Give one reason for selecting each location. (b) The homeowner has decided to install grab-rails, like that shown, in the bathroom to aid ease of use for all users. Using notes and freehand sketches show two possible locations for grab-rails. Give one reason for each location. (c) Discuss one advantage of designing a bathroom suitable for a person with reduced mobility.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-sketch", kind: "criterion", verbatim: "Sketch of bathroom", marks: 6, contextNote: "A freehand sketch of the given bathroom design.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-toilet", kind: "criterion", verbatim: "Location and valid reason for toilet position (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: on an external wall for easier waste plumbing and secure fixing; free space beside it for grab rails; a 1500 mm turning circle kept clear.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-wash-basin", kind: "criterion", verbatim: "Location and valid reason for wash basin position (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: a wall to fix it securely; a 1500 mm turning circle kept clear; wall space for a mirror or grab rails.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-shower", kind: "criterion", verbatim: "Location and valid reason for shower area position (3 + 3 marks)", marks: 6, contextNote: "Location 3 and reason 3. Such as: clear of the door opening; natural light; external walls for secure fixtures; a 1500 mm turning circle kept clear.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-location-1", kind: "criterion", verbatim: "Suitable location 1 note + sketch (2 + 4 marks)", marks: 6, contextNote: "Note 2 and sketch 4. Such as: a horizontal rail beside the toilet, fixed to a solid wall about 700 mm above the floor.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-reason-1", kind: "criterion", verbatim: "Reason 1", marks: 4, contextNote: "A reason for location 1. Such as: extra support lowering onto or rising from the toilet seat; safer, more independent use.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-location-2", kind: "criterion", verbatim: "Suitable location 2 note + sketch (2 + 4 marks)", marks: 6, contextNote: "Note 2 and sketch 4 for a second, different location. Such as: horizontal or vertical rails in the shower area, fixed through the tiles.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-reason-2", kind: "criterion", verbatim: "Reason 2", marks: 4, contextNote: "A reason for location 2. Such as: support when using the shower; safety from slipping; safe, independent use of the shower.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-advantage", kind: "criterion", verbatim: "Advantage of designing bathroom suitable for people with reduced mobility", marks: 6, contextNote: "Such as: future-proofing the home so fewer costly, intrusive modifications are needed later; the family can live in the home for life; less mobile members use it independently; safe access for all.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2020-ol-q7-a","label":"a","marks":24,"rowIds":["a-sketch","a-toilet","a-wash-basin","a-shower"]},{"sourceCardId":"cons-2020-ol-q7-b","label":"b","marks":20,"rowIds":["b-location-1","b-reason-1","b-location-2","b-reason-2"]},{"sourceCardId":"cons-2020-ol-q7-c","label":"c","marks":6,"rowIds":["c-advantage"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Bathroom for a person with limited mobility",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All three printed fittings in (a) are required in one sketch, each separately marked; the grab-rail locations and reasons are open responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q7-original.png",
+          "srcHash": "da90cfacd7f9379a633ae4d42f032b3c",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 7: the printed question with the draft bathroom plan and a sketch of a grab-rail.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q7-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q7-layout.png",
+          "srcHash": "d50154343608fceb24523d3f3852032f",
+          "alt": "SEC model bathroom layout with the toilet, wash basin and shower area placed, and the reasons for each location.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2020-ol-q9-complete", topicId: "cons-1-2", conceptId: "extension-natural-light-complete",
+    section: "B", questionRef: "2020 OL Q9 — complete",
+    stem: "The sketch shows a semi-detached house with an extension to the rear. The extension is finished externally with wooden cladding.",
+    questionText: "(a) Discuss two reasons why a homeowner would build an extension to their house. (b) Using notes and freehand sketches, show two modifications to the extension that would allow more natural light enter the dwelling. (c) Discuss two advantages for the occupants by increasing the amount of natural light entering the dwelling.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-reason-1", kind: "criterion", verbatim: "Valid reason one", marks: 6, contextNote: "Such as: more floor area for a growing household; more natural light into the existing building.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-reason-2", kind: "criterion", verbatim: "Valid reason two", marks: 6, contextNote: "A second, different reason. Such as: a higher property value; cheaper than moving; personalising an older design; better thermal performance from new materials.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-modification-1", kind: "criterion", verbatim: "Modification 1 to extension notes + sketch (4 + 9 marks)", marks: 13, contextNote: "Notes 4 and sketch 9. Such as: larger or taller windows; floor-to-ceiling glazing; a sliding or bi-fold door.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13] },
+    { id: "b-modification-2", kind: "criterion", verbatim: "Modification 2 to extension notes + sketch (4 + 9 marks)", marks: 13, contextNote: "Notes 4 and sketch 9 for a second, different modification. Such as: roof lights in the sloped roof; solar tubes or sky tunnels; removing internal walls to let light through.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13] },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 6, contextNote: "Such as: lower energy costs for lighting and heating; less reliance on fossil fuels for lighting.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 6, contextNote: "A second, different advantage. Such as: helps regulate Seasonal Affective Disorder; less eye strain and better illumination; more vitamin D; more attractive interiors.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2020-ol-q9-a","label":"a","marks":12,"rowIds":["a-reason-1","a-reason-2"]},{"sourceCardId":"cons-2020-ol-q9-b","label":"b","marks":26,"rowIds":["b-modification-1","b-modification-2"]},{"sourceCardId":"cons-2020-ol-q9-c","label":"c","marks":12,"rowIds":["c-advantage-1","c-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Extension with more natural light",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The reasons, modifications and advantages are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2020-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q9-original.png",
+          "srcHash": "a2ddc7b3db7f1ec25d0e6983abfda03a",
+          "alt": "Original SEC 2020 Ordinary Construction Studies Question 9: the printed question with a sketch of a semi-detached house with a timber-clad rear extension.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2020-OL-q9-light",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q9-light.png",
+          "srcHash": "a930c0406e11e56790dabf7b60bc61f5",
+          "alt": "SEC 2020 Ordinary marking scheme notes on modifications that let more natural light into the extension, with sketches of glazing, roof lights and folding doors.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
           "solution": true,
           "lettersVisible": []
     },
