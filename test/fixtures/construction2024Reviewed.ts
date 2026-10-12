@@ -51,3 +51,41 @@ export const CONSTRUCTION_2024_HIGHER_CORRECTED_IDS = [
   'cons-2024-hl-q10-b-space-heating',
   'cons-2024-hl-q10-c'
 ];
+
+// Original 2024 Ordinary Q1–Q9: ADDED tasks (Q8 is one any-five card, never a route per combination) and the pre-audit
+// 2024 Ordinary cards CORRECTED in place under their original IDs.
+export const CONSTRUCTION_2024_ORDINARY_ADDED_IDS = [
+  'cons-2024-ol-q1-complete',
+  'cons-2024-ol-q2-b',
+  'cons-2024-ol-q2-complete',
+  'cons-2024-ol-q3-complete',
+  'cons-2024-ol-q4-c',
+  'cons-2024-ol-q4-complete',
+  'cons-2024-ol-q5-a',
+  'cons-2024-ol-q5-complete',
+  'cons-2024-ol-q6-complete',
+  'cons-2024-ol-q7-c',
+  'cons-2024-ol-q7-complete',
+  'cons-2024-ol-q9-a',
+  'cons-2024-ol-q9-complete'
+];
+
+export const CONSTRUCTION_2024_ORDINARY_CORRECTED_IDS = [
+  'cons-2024-ol-q1-a',
+  'cons-2024-ol-q1-b',
+  'cons-2024-ol-q2-a',
+  'cons-2024-ol-q2-c',
+  'cons-2024-ol-q3-a',
+  'cons-2024-ol-q3-b',
+  'cons-2024-ol-q4-a',
+  'cons-2024-ol-q4-b',
+  'cons-2024-ol-q5-b',
+  'cons-2024-ol-q6-a',
+  'cons-2024-ol-q6-b',
+  'cons-2024-ol-q6-c',
+  'cons-2024-ol-q7-a',
+  'cons-2024-ol-q7-b',
+  'cons-2024-ol-q8-None-site-planning-notice',
+  'cons-2024-ol-q9-b',
+  'cons-2024-ol-q9-c'
+];
