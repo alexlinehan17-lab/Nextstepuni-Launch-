@@ -106,6 +106,12 @@ const addedIrishOrdinaryRoutes = new Set([
     ];
     return routes.map(key => `irish-2026-ol-p2-${key}`);
   })(),
+  // 2025 Ordinary Paper 2 (reviewed 2026-10-12): the twenty reading parts beside the retained
+  // whole questions, and each prescribed poem's printed sub-questions (3A(a)(i) has three).
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => [`reading-${p}-q${q}-a`, `reading-${p}-q${q}-b`]))
+    .concat(['a','b','c'].flatMap(poem => ['i','ii','iii'].map(part => `poetry-3a-${poem}-${part}`)))
+    .concat(['a','b','c'].map(slot => `poetry-3a-a-i-${slot}`))
+    .map(key => `irish-2025-ol-p2-${key}`),
 ]);
 
 const decks = [

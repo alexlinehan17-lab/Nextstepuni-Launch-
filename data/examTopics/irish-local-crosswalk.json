@@ -27,15 +27,15 @@
     },
     "matchedLocalCardLinks": 744,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 2299,
-    "distinctStudentFacingQuestions": 2299,
+    "localPhysicalMappings": 2343,
+    "distinctStudentFacingQuestions": 2343,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 1613,
+    "retainedLocalQuestions": 1657,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 2013,
+    "newlyAddedPhysicalMappings": 2057,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -40079,6 +40079,578 @@
         "irish-ordinary-write-about-a-studied-poem-optional"
       ],
       "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2A-a",
+      "topicIds": [
+        "irish-ordinary-prescribed-prose-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2A-b",
+      "topicIds": [
+        "irish-ordinary-prescribed-prose-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2A-c",
+      "topicIds": [
+        "irish-ordinary-prescribed-prose-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2B-a",
+      "topicIds": [
+        "irish-ordinary-write-about-a-studied-prose-optional"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2B-b",
+      "topicIds": [
+        "irish-ordinary-write-about-a-studied-prose-optional"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2B-c",
+      "topicIds": [
+        "irish-ordinary-write-about-a-studied-prose-optional"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-a",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-b",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-c",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3B-a",
+      "topicIds": [
+        "irish-ordinary-write-about-a-studied-poem-optional"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3B-b",
+      "topicIds": [
+        "irish-ordinary-write-about-a-studied-poem-optional"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3B-c",
+      "topicIds": [
+        "irish-ordinary-write-about-a-studied-poem-optional"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-1-a",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-1-b",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-2-a",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-2-b",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-3-a",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-3-b",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-4-a",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-4-b",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-5-a",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-A-5-b",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-1-a",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-1-b",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-2-a",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-2-b",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-3-a",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-3-b",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-4-a",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-4-b",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-5-a",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "R-B-5-b",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-a-i",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-a-i-a",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-a-i-b",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-a-i-c",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-a-ii",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-a-iii",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-b-i",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-b-ii",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-b-iii",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-c-i",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-c-ii",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2025,
+      "fileid": "LC001GLP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-c-iii",
+      "topicIds": [
+        "irish-ordinary-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
     },
     {
       "level": "higher",
