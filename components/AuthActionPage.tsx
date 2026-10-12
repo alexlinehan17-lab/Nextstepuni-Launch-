@@ -43,7 +43,7 @@ async function confirmEmail(oobCode: string): Promise<Outcome> {
     return {
       kind: 'done',
       title: 'Email confirmed',
-      message: 'Thanks. Your email address is confirmed, so password reset emails will reach you.',
+      message: 'Thanks. Your email address is confirmed. You can sign in now.',
     };
   } catch (err) {
     const code = errorCode(err);
