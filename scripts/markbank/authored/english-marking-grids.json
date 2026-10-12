@@ -671,6 +671,222 @@
       },
       "note": "Printed as 100% / 30% / 10% rows per discrete tariff and one row per combined tariff."
     },
+    "hl-h1-h8-2022": {
+      "level": "higher",
+      "labels": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8"
+      ],
+      "discrete": {
+        "100": {
+          "total": [
+            "100-90",
+            "89-80",
+            "79-70",
+            "69-60",
+            "59-50",
+            "49-40",
+            "39-30",
+            "29-0"
+          ],
+          "thirty": [
+            "30-27",
+            "24",
+            "21",
+            "18",
+            "15",
+            "12",
+            "9",
+            "8-0"
+          ],
+          "ten": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ]
+        },
+        "70": {
+          "total": [
+            "70-63",
+            "62-56",
+            "55-49",
+            "48-42",
+            "41-35",
+            "34-28",
+            "27-21",
+            "20-0"
+          ],
+          "thirty": [
+            "21-19",
+            "17",
+            "15",
+            "13",
+            "11",
+            "9",
+            "7",
+            "6-0"
+          ],
+          "ten": [
+            "7",
+            "6",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2-0"
+          ]
+        },
+        "50": {
+          "total": [
+            "50-45",
+            "44-40",
+            "39-35",
+            "34-30",
+            "29-25",
+            "24-20",
+            "19-15",
+            "14-0"
+          ],
+          "thirty": [
+            "15-14",
+            "12",
+            "11",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4-0"
+          ],
+          "ten": [
+            "5",
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1-0"
+          ]
+        },
+        "40": {
+          "total": [
+            "40-36",
+            "35-32",
+            "31-28",
+            "27-24",
+            "23-20",
+            "19-16",
+            "15-12",
+            "11-0"
+          ],
+          "thirty": [
+            "12-11",
+            "10-10",
+            "9-9",
+            "8-8",
+            "7-6",
+            "5-5",
+            "4-4",
+            "3-0"
+          ],
+          "ten": [
+            "4-4",
+            "4-3",
+            "3-3",
+            "3-2",
+            "2-2",
+            "2-1",
+            "2-1",
+            "1-0"
+          ]
+        }
+      },
+      "combinedLabels": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8"
+      ],
+      "combined": {
+        "40": {
+          "total": [
+            "40-36",
+            "32",
+            "28",
+            "24",
+            "20",
+            "16",
+            "12",
+            "11-0"
+          ]
+        },
+        "30": {
+          "total": [
+            "30-27",
+            "24",
+            "21",
+            "18",
+            "15",
+            "12",
+            "9",
+            "8-0"
+          ]
+        },
+        "20": {
+          "total": [
+            "20-18",
+            "16",
+            "14",
+            "12",
+            "10",
+            "8",
+            "6",
+            "5-0"
+          ]
+        },
+        "12": {
+          "total": [
+            "12-11",
+            "10",
+            "9",
+            "8",
+            "7-6",
+            "5",
+            "4",
+            "3-0"
+          ]
+        },
+        "10": {
+          "total": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ]
+        }
+      },
+      "note": "2022 adjusted papers: Appendix 2 prints discrete 100/70/50 and combined 40/30/20/12/10; the 40-mark discrete grid is printed with each Paper 1 Question B."
+    },
     "ol-o1-o8-2018": {
       "level": "ordinary",
       "labels": [
@@ -1384,6 +1600,20 @@
       },
       "capRulePage": 3,
       "capRuleEvidence": "2018 OL PDF3 (viewed) prints the weights, the mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap and no Language rule."
+    },
+    "2022-higher": {
+      "family": "hl-h1-h8-2022",
+      "scheme": "paper-trail-corpus/markingschemes/2022/LC002ALP000EV.pdf",
+      "schemeSha256": "a9bc842c33564010b021af8c82220ae76eb93218272924b43bba200ce065c001",
+      "gridPages": [
+        6,
+        50
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
     },
     "2023-higher": {
       "family": "hl-h1-h8",

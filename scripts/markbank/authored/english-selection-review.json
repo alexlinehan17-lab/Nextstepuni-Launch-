@@ -1625,17 +1625,17 @@
     "english-2022-hl-p1-t1-a-ii": {
       "questionSha256": "588e7c9834421d91f998a353c97a097a9f318fe1631233b099ba58803eff8c42",
       "kind": "open",
-      "reason": "This is a reasoned evaluation with an open range of justifiable positions, not a prescribed list of answer options. Preserve the judgement and its supporting evidence as one task."
+      "reason": "Scheme PDF5: the extent to which the candidate agrees or disagrees that a diversity of youthful voices should be represented in public debate; “Allow for a wide variety of responses.” One 10-mark response."
     },
     "english-2022-hl-p1-t2-a-ii": {
       "questionSha256": "5c5eb0f7de7b510b0c89d59dc7681a674448521db2f13a2e0d7dd68010ad2cea",
       "kind": "open",
-      "reason": "This is a reasoned evaluation with an open range of justifiable positions, not a prescribed list of answer options. Preserve the judgement and its supporting evidence as one task."
+      "reason": "Scheme PDF7: the extent to which the candidate agrees or disagrees with Tom Gatti’s observation that music has a greater and longer lasting impact than books and films; “Allow for a wide variety of responses.” One 10-mark response."
     },
     "english-2022-hl-p1-t3-a-ii": {
       "questionSha256": "3850975854b907673d699f9c23b731ad255729b9a632a5c15143cb1ea3617ea1",
       "kind": "open",
-      "reason": "This is a reasoned evaluation with an open range of justifiable positions, not a prescribed list of answer options. Preserve the judgement and its supporting evidence as one task."
+      "reason": "Scheme PDF10: the extent to which the candidate agrees or disagrees that censorship, including contemporary cancel culture, should not be used to silence voices of protest; “Allow for a wide variety of responses.” One 10-mark response."
     },
     "english-2022-ol-p1-t1-a-ii": {
       "questionSha256": "26fc8a260467947e19e1c52d347415717aa6d7d0d97001f3934e114891ed538a",
@@ -2007,7 +2007,7 @@
     "english-2022-hl-p1-t1-b": {
       "questionSha256": "38694d65d9f554dcaddeed5d15ef7416652584e916db365cf705b3555f599139",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The open letter requires a chosen policy stance and rebuttal of the opposing position; these are the two stated alternatives.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF6 — an open letter on whether poetry “should be an optional or a compulsory element”, anticipating and refuting views opposed to “their chosen stance”; either stance is marked on one grid and all aspects are required, not necessarily equally. One 40-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -2353,12 +2353,12 @@
     "english-2022-hl-p1-t2-b": {
       "questionSha256": "4a2f6371eabe5aed1f49a2e3c90cc62379c1664350f837a3c572220437f241d9",
       "kind": "open",
-      "reason": "Examples illustrate the open choice of content. They are not an exhaustive list of required alternatives; retain all compulsory writing requirements together."
+      "reason": "Scheme PDF9: podcast text — the importance of music in the candidate’s life, pieces that make up their soundtrack, and the thoughts and feelings they evoke; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 40-mark response."
     },
     "english-2022-hl-p1-t3-b": {
       "questionSha256": "4e8e4f3f3bcf74b677e02fff74adfb9f9ff326cab4f132b298107a509b6f8ebe",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF12: an editorial — a response to the 2033 book burning, a warning of the dangers of attacking books, and an urging to peaceful protest; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 40-mark response."
     },
     "english-2022-ol-p1-t1-b": {
       "questionSha256": "829ae410cf493fcbbe7112d52f7ba5308ca6de4135f6e5950bdaa553afc46941",
@@ -3929,37 +3929,37 @@
     "english-2022-hl-p1-composing-1": {
       "questionSha256": "62f980d04bd4e0442918a1a2b3faeede092d5b6fb4b8a8f405afdd704a0ebfa2",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF14: a personal essay on items or objects that have become “faithful companions”; “a broad interpretation of ‘items’ and ‘objects’”. One 100-mark composition."
     },
     "english-2022-hl-p1-composing-2": {
       "questionSha256": "96b2de588b6320714922447d4d3f3c9ffdce27972dadd25a3fe981af8227cb5c",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF15: a presidential election speech outlining the social and cultural values the candidate would promote and the perception of Ireland they would cultivate abroad. One 100-mark composition."
     },
     "english-2022-hl-p1-composing-3": {
       "questionSha256": "f502155c15d2af16227eac15fd59c13baf2aa15b31a5505edbd14816374b2f69",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF16: a short story in which Dieter Knecht has a life changing experience as he attempts to rescue Rebellion. One 100-mark composition."
     },
     "english-2022-hl-p1-composing-4": {
       "questionSha256": "cfd20bdaace0825dcdf215c508d0e3e6c8341d5ac41703b64260521a0195ffeb",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF17: a feature article on our fascination with fashion and the stories we tell through our choices; a broad interpretation of “all things fashionable”. One 100-mark composition."
     },
     "english-2022-hl-p1-composing-5": {
       "questionSha256": "5b033ac752a1a1f2f7b1aa4c06796d47d5cfa887d73a1e204fc3026883a5a294",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF18: a discursive essay on some of the powerful voices in modern life and their influence. One 100-mark composition."
     },
     "english-2022-hl-p1-composing-6": {
       "questionSha256": "a54b271ea76cead08514e48671eb58c2729a94b97d69d707de1f342dd62c51e8",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF19: a personal essay on the value of all kinds of learning; “a broad interpretation of ‘learning’”. One 100-mark composition."
     },
     "english-2022-hl-p1-composing-7": {
       "questionSha256": "770147520715411bd2a6369e3f1e5469efb62ba9fec390eb3a330adb90f7864e",
       "kind": "flexible",
-      "reason": "A piece of music and song lyrics can overlap and the paper expressly permits one or more songs. It does not demand a fixed-size selection from a named repertoire."
+      "reason": "Scheme PDF20: a short story in which “a piece of music or the lyrics of a song (or songs)” play an important part. One 100-mark composition."
     },
     "english-2022-ol-p1-composing-1": {
       "questionSha256": "fd3a59c0c28dbebb4c5815629d3bcaa5e28924e52c6328912b0965d24113fd01",
@@ -16943,6 +16943,36 @@
       "questionSha256": "723af002dfb8b4cfeb56c8ca701c569ae4298af2b3ef442531c1cecc94d89f49",
       "kind": "open",
       "reason": "Scheme PDF61–62: the most important message in the candidate’s view; “Allow for a wide range of responses”. One 15-mark response."
+    },
+    "english-2022-hl-p1-t1-a-i": {
+      "questionSha256": "de450f6ca5a76c5f6aa911e05356651b195d69df7e05dd251b82fa45954fc1cf",
+      "kind": "open",
+      "reason": "Scheme PDF4: three insights of the candidate’s own into the power of poetry, supported from the text; the indicative material is not a pool. One 10-mark response."
+    },
+    "english-2022-hl-p1-t1-a-iii": {
+      "questionSha256": "22fb3b8c6abca62ffd7fc83d64b45c5634651cf57c7e43967bda7f4a99b77698",
+      "kind": "open",
+      "reason": "Scheme PDF5: four elements of the writer’s style chosen freely from the text, discussed for how they shaped the impression of Amanda Gorman as a poet and as a person. One 20-mark response."
+    },
+    "english-2022-hl-p1-t2-a-i": {
+      "questionSha256": "135fe00d6acf2ad9a88b4f6e7ea1d02f701063456e81bfff59e291981c09ffbf",
+      "kind": "open",
+      "reason": "Scheme PDF7: three insights of the candidate’s own into the power of music, from both extracts, supported from the text; the indicative material is not a pool. One 10-mark response."
+    },
+    "english-2022-hl-p1-t2-a-iii": {
+      "questionSha256": "5f13d2de918b248d371a1ef940c5c06fa776553d0c07278d8161569bb1d000e1",
+      "kind": "open",
+      "reason": "Scheme PDF8: four elements of Ben Okri’s writing style in Extract 2 chosen freely from the text, discussed for how effectively they craft a lyrically beautiful and engaging piece of personal writing. One 20-mark response."
+    },
+    "english-2022-hl-p1-t3-a-i": {
+      "questionSha256": "1094f0ce19e67c8034a6b5e8eb86b7ab4a22510dd39fd9b8a1e6b3ba1e7f6d5f",
+      "kind": "open",
+      "reason": "Scheme PDF10: three insights of the candidate’s own into the power of books, supported from the text; the indicative material is not a pool. One 10-mark response."
+    },
+    "english-2022-hl-p1-t3-a-iii": {
+      "questionSha256": "68f78e9e1d7fc92f6aeabccac447d470c806df50727c5f259586b8153a8d0d4a",
+      "kind": "open",
+      "reason": "Scheme PDF11: four features of the language of narration chosen freely from the text, discussed for how effectively they craft a dramatic and disturbing account of the book burning. One 20-mark response."
     }
   }
 }

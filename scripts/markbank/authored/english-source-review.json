@@ -202,15 +202,15 @@
     },
     "english-2022-hl-p1-t3-b": {
       "kind": "source-text",
-      "label": "SOURCE MATERIAL",
-      "title": "Book burning — Text 3",
+      "label": "TEXT 3",
+      "title": "The Powerful Voice of Books",
       "pages": [
         6,
         7
       ],
-      "attribution": "Source as reproduced in the official SEC English paper.",
-      "reason": "The imagined editorial responds to an event explicitly modelled on this extract.",
-      "questionSha256": "4e8e4f3f3bcf74b677e02fff74adfb9f9ff326cab4f132b298107a509b6f8ebe"
+      "attribution": "Hugo Hamilton — edited extracts from his novel The Pages, narrated by Joseph Roth’s novel Rebellion, with the image “Books are weapons in the war of ideas” (PDF6–7). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "4e8e4f3f3bcf74b677e02fff74adfb9f9ff326cab4f132b298107a509b6f8ebe",
+      "reason": "The editorial answers a book burning “similar to that described in TEXT 3”; the whole of TEXT 3 (PDF6–7) is retained."
     },
     "english-2023-hl-p1-t1-b": {
       "kind": "source-text",
@@ -260,15 +260,15 @@
     },
     "english-2022-hl-p1-composing-3": {
       "kind": "source-text",
-      "label": "SOURCE MATERIAL",
-      "title": "Dieter Knecht — rescuing Rebellion",
+      "label": "TEXT 3",
+      "title": "The Powerful Voice of Books",
       "pages": [
         6,
         7
       ],
-      "attribution": "Source as reproduced in the official SEC English paper.",
-      "reason": "The story must use the student and book-rescue incident in Text 3.",
-      "questionSha256": "f502155c15d2af16227eac15fd59c13baf2aa15b31a5505edbd14816374b2f69"
+      "attribution": "Hugo Hamilton — edited extracts from his novel The Pages, narrated by Joseph Roth’s novel Rebellion, with the image “Books are weapons in the war of ideas” (PDF6–7). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "f502155c15d2af16227eac15fd59c13baf2aa15b31a5505edbd14816374b2f69",
+      "reason": "The story features “the student featured in TEXT 3, Dieter Knecht” and his rescue of Rebellion (PDF6–7); the whole text is retained."
     },
     "english-2026-hl-p1-composing-6": {
       "kind": "source-text",
@@ -4057,6 +4057,114 @@
       "attribution": "Late Love — Jackie Kay, as reproduced in the SEC 2023 paper.",
       "questionSha256": "d3bfb3ae514ff4ef8c2c1348cb552eb2cb9de1eeed2d6c6df5084906f5f0d5af",
       "reason": "Paper PDF14 prints the instruction (“Read the following poem, by Jackie Kay”), the title, all five stanzas (4 + 4 + 4 + 4 + 1 lines) and the byline above both questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
+    },
+    "english-2022-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Young Poet’s Powerful Voice",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Meadhbh McGrath — adapted from the feature article “Poet. Fashion icon. Future president?” (magazine section of a weekend newspaper) on Amanda Gorman, with a photograph (PDF2–3). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "de450f6ca5a76c5f6aa911e05356651b195d69df7e05dd251b82fa45954fc1cf",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2022-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Young Poet’s Powerful Voice",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Meadhbh McGrath — adapted from the feature article “Poet. Fashion icon. Future president?” (magazine section of a weekend newspaper) on Amanda Gorman, with a photograph (PDF2–3). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "588e7c9834421d91f998a353c97a097a9f318fe1631233b099ba58803eff8c42",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2022-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Young Poet’s Powerful Voice",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Meadhbh McGrath — adapted from the feature article “Poet. Fashion icon. Future president?” (magazine section of a weekend newspaper) on Amanda Gorman, with a photograph (PDF2–3). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "22fb3b8c6abca62ffd7fc83d64b45c5634651cf57c7e43967bda7f4a99b77698",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2022-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Powerful Voice of Music",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Tom Gatti (ed.), Long Players — Extract 1 from Tom Gatti’s introduction and Extract 2, Ben Okri on Miles Davis’s Kind of Blue, with the album image (PDF4–5). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "135fe00d6acf2ad9a88b4f6e7ea1d02f701063456e81bfff59e291981c09ffbf",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2022-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Powerful Voice of Music",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Tom Gatti (ed.), Long Players — Extract 1 from Tom Gatti’s introduction and Extract 2, Ben Okri on Miles Davis’s Kind of Blue, with the album image (PDF4–5). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "5c5eb0f7de7b510b0c89d59dc7681a674448521db2f13a2e0d7dd68010ad2cea",
+      "reason": "The task cites “Extract 1” (Tom Gatti, PDF4); the whole of TEXT 2 (PDF4–5) is retained with its introduction."
+    },
+    "english-2022-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Powerful Voice of Music",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Tom Gatti (ed.), Long Players — Extract 1 from Tom Gatti’s introduction and Extract 2, Ben Okri on Miles Davis’s Kind of Blue, with the album image (PDF4–5). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "5f13d2de918b248d371a1ef940c5c06fa776553d0c07278d8161569bb1d000e1",
+      "reason": "The task cites “Extract 2” (Ben Okri), which runs from PDF4 to PDF5; the whole of TEXT 2 is retained."
+    },
+    "english-2022-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Powerful Voice of Books",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Hugo Hamilton — edited extracts from his novel The Pages, narrated by Joseph Roth’s novel Rebellion, with the image “Books are weapons in the war of ideas” (PDF6–7). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "1094f0ce19e67c8034a6b5e8eb86b7ab4a22510dd39fd9b8a1e6b3ba1e7f6d5f",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2022-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Powerful Voice of Books",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Hugo Hamilton — edited extracts from his novel The Pages, narrated by Joseph Roth’s novel Rebellion, with the image “Books are weapons in the war of ideas” (PDF6–7). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "3850975854b907673d699f9c23b731ad255729b9a632a5c15143cb1ea3617ea1",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2022-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Powerful Voice of Books",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Hugo Hamilton — edited extracts from his novel The Pages, narrated by Joseph Roth’s novel Rebellion, with the image “Books are weapons in the war of ideas” (PDF6–7). As reproduced in the SEC 2022 paper.",
+      "questionSha256": "68f78e9e1d7fc92f6aeabccac447d470c806df50727c5f259586b8153a8d0d4a",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
     }
   }
 }

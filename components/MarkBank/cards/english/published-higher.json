@@ -92,6 +92,17 @@
    "schemeSha256": "1f87d14f685446f36c40b6faa92ed50f043ff9e9a357c408212c4720c1c069c2"
   },
   {
+   "paperId": "english-2022-hl-p1",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "tasks": 19,
+   "cards": 19,
+   "printedDuplicates": 0,
+   "paperSha256": "d636df778b32aad6b402d2d16d646b237b1b9a1e68ec23bcdea9dc5a20c02c6d",
+   "schemeSha256": "a9bc842c33564010b021af8c82220ae76eb93218272924b43bba200ce065c001"
+  },
+  {
    "paperId": "english-2018-hl-p1",
    "year": 2018,
    "level": "higher",
@@ -633,6 +644,222 @@
      }
     },
     "note": "Printed as 100% / 30% / 10% rows per discrete tariff and one row per combined tariff."
+   },
+   "hl-h1-h8-2022": {
+    "level": "higher",
+    "labels": [
+     "H1",
+     "H2",
+     "H3",
+     "H4",
+     "H5",
+     "H6",
+     "H7",
+     "H8"
+    ],
+    "discrete": {
+     "100": {
+      "total": [
+       "100-90",
+       "89-80",
+       "79-70",
+       "69-60",
+       "59-50",
+       "49-40",
+       "39-30",
+       "29-0"
+      ],
+      "thirty": [
+       "30-27",
+       "24",
+       "21",
+       "18",
+       "15",
+       "12",
+       "9",
+       "8-0"
+      ],
+      "ten": [
+       "10-9",
+       "8",
+       "7",
+       "6",
+       "5",
+       "4",
+       "3",
+       "2-0"
+      ]
+     },
+     "70": {
+      "total": [
+       "70-63",
+       "62-56",
+       "55-49",
+       "48-42",
+       "41-35",
+       "34-28",
+       "27-21",
+       "20-0"
+      ],
+      "thirty": [
+       "21-19",
+       "17",
+       "15",
+       "13",
+       "11",
+       "9",
+       "7",
+       "6-0"
+      ],
+      "ten": [
+       "7",
+       "6",
+       "5",
+       "4",
+       "4",
+       "3",
+       "2",
+       "2-0"
+      ]
+     },
+     "50": {
+      "total": [
+       "50-45",
+       "44-40",
+       "39-35",
+       "34-30",
+       "29-25",
+       "24-20",
+       "19-15",
+       "14-0"
+      ],
+      "thirty": [
+       "15-14",
+       "12",
+       "11",
+       "9",
+       "8",
+       "6",
+       "5",
+       "4-0"
+      ],
+      "ten": [
+       "5",
+       "4",
+       "3",
+       "3",
+       "2",
+       "2",
+       "1",
+       "1-0"
+      ]
+     },
+     "40": {
+      "total": [
+       "40-36",
+       "35-32",
+       "31-28",
+       "27-24",
+       "23-20",
+       "19-16",
+       "15-12",
+       "11-0"
+      ],
+      "thirty": [
+       "12-11",
+       "10-10",
+       "9-9",
+       "8-8",
+       "7-6",
+       "5-5",
+       "4-4",
+       "3-0"
+      ],
+      "ten": [
+       "4-4",
+       "4-3",
+       "3-3",
+       "3-2",
+       "2-2",
+       "2-1",
+       "2-1",
+       "1-0"
+      ]
+     }
+    },
+    "combinedLabels": [
+     "H1",
+     "H2",
+     "H3",
+     "H4",
+     "H5",
+     "H6",
+     "H7",
+     "H8"
+    ],
+    "combined": {
+     "40": {
+      "total": [
+       "40-36",
+       "32",
+       "28",
+       "24",
+       "20",
+       "16",
+       "12",
+       "11-0"
+      ]
+     },
+     "30": {
+      "total": [
+       "30-27",
+       "24",
+       "21",
+       "18",
+       "15",
+       "12",
+       "9",
+       "8-0"
+      ]
+     },
+     "20": {
+      "total": [
+       "20-18",
+       "16",
+       "14",
+       "12",
+       "10",
+       "8",
+       "6",
+       "5-0"
+      ]
+     },
+     "12": {
+      "total": [
+       "12-11",
+       "10",
+       "9",
+       "8",
+       "7-6",
+       "5",
+       "4",
+       "3-0"
+      ]
+     },
+     "10": {
+      "total": [
+       "10-9",
+       "8",
+       "7",
+       "6",
+       "5",
+       "4",
+       "3",
+       "2-0"
+      ]
+     }
+    },
+    "note": "2022 adjusted papers: Appendix 2 prints discrete 100/70/50 and combined 40/30/20/12/10; the 40-mark discrete grid is printed with each Paper 1 Question B."
    }
   },
   "sittings": {
@@ -716,6 +943,17 @@
     },
     "capRulePage": 3
    },
+   "2022-higher": {
+    "family": "hl-h1-h8-2022",
+    "gridPages": [
+     6,
+     50
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2023-higher": {
     "family": "hl-h1-h8",
     "gridPages": [
@@ -761,6 +999,7 @@
  },
  "legacyAdditionalSources": {},
  "bridgedPapers": [
+  "english-2022-hl-p1",
   "english-2023-hl-p1",
   "english-2023-hl-p2",
   "english-2024-hl-p1",
@@ -769,6 +1008,25 @@
   "english-2025-hl-p2"
  ],
  "bridgedLegacyIds": [
+  "english-2022-hl-p1-composing-1",
+  "english-2022-hl-p1-composing-2",
+  "english-2022-hl-p1-composing-3",
+  "english-2022-hl-p1-composing-4",
+  "english-2022-hl-p1-composing-5",
+  "english-2022-hl-p1-composing-6",
+  "english-2022-hl-p1-composing-7",
+  "english-2022-hl-p1-t1-a-i",
+  "english-2022-hl-p1-t1-a-ii",
+  "english-2022-hl-p1-t1-a-iii",
+  "english-2022-hl-p1-t1-b",
+  "english-2022-hl-p1-t2-a-i",
+  "english-2022-hl-p1-t2-a-ii",
+  "english-2022-hl-p1-t2-a-iii",
+  "english-2022-hl-p1-t2-b",
+  "english-2022-hl-p1-t3-a-i",
+  "english-2022-hl-p1-t3-a-ii",
+  "english-2022-hl-p1-t3-a-iii",
+  "english-2022-hl-p1-t3-b",
   "english-2023-hl-p1-composing-1",
   "english-2023-hl-p1-composing-2",
   "english-2023-hl-p1-composing-3",
@@ -910,7 +1168,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 497,
+ "cardCount": 516,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -7453,6 +7711,739 @@
    "atlas": {
     "fileid": "LC002ALP200EV.pdf",
     "n": "5"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-t1-a-i",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Text 1 QA(i)",
+   "questionText": "Based on your reading of TEXT 1, explain three insights you gain into the power of poetry. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "A Young Poet’s Powerful Voice",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Meadhbh McGrath — adapted from the feature article “Poet. Fashion icon. Future president?” (magazine section of a weekend newspaper) on Amanda Gorman, with a photograph (PDF2–3). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    4
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-t1-a-ii",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Text 1 QA(ii)",
+   "questionText": "Amanda Gorman’s status as a powerful young voice was bolstered by her performance at the US presidential inauguration. Discuss the extent to which you agree or disagree that a diversity of youthful voices should be represented in public debate on all important issues in Irish society.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "A Young Poet’s Powerful Voice",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Meadhbh McGrath — adapted from the feature article “Poet. Fashion icon. Future president?” (magazine section of a weekend newspaper) on Amanda Gorman, with a photograph (PDF2–3). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-t1-a-iii",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Text 1 QA(iii)",
+   "questionText": "Identify four elements of the writer’s style, evident in the edited article above, and discuss how these stylistic elements helped to shape your impression of Amanda Gorman both as a poet and as a person. Support your answer with reference to TEXT 1.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "A Young Poet’s Powerful Voice",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Meadhbh McGrath — adapted from the feature article “Poet. Fashion icon. Future president?” (magazine section of a weekend newspaper) on Amanda Gorman, with a photograph (PDF2–3). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-t1-b",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Text 1 QB",
+   "questionText": "Some students believe that the study of poetry should be an optional rather than a compulsory element of the Leaving Certificate English course. Write an open letter, to be published on a popular social media platform, to encourage discussion on this topic. In your open letter you should: explain what, if any, value you found in the study of poetry as part of your Leaving Certificate English course, explore the reasons why you think the study of poetry should be an optional or a compulsory element of Leaving Certificate English in the future and seek to anticipate and refute views that might potentially be offered in opposition to your chosen stance.",
+   "totalMarks": 40,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Use the conventions and register of the requested open letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-higher",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-t2-a-i",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Text 2 QA(i)",
+   "questionText": "Based on your reading of both Extracts 1 and 2 of TEXT 2, explain three insights you gain into the power of music. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The Powerful Voice of Music",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Tom Gatti (ed.), Long Players — Extract 1 from Tom Gatti’s introduction and Extract 2, Ben Okri on Miles Davis’s Kind of Blue, with the album image (PDF4–5). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-t2-a-ii",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Text 2 QA(ii)",
+   "questionText": "In Extract 1, Tom Gatti observes that the music we listen to has a greater and a longer lasting impact on us than the books that we read and the films that we watch. Discuss the extent to which you agree or disagree with this observation.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The Powerful Voice of Music",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Tom Gatti (ed.), Long Players — Extract 1 from Tom Gatti’s introduction and Extract 2, Ben Okri on Miles Davis’s Kind of Blue, with the album image (PDF4–5). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-t2-a-iii",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Text 2 QA(iii)",
+   "questionText": "Identify four elements of Ben Okri’s writing style, evident in Extract 2, and discuss how effectively these stylistic elements are employed to craft a lyrically beautiful and engaging piece of personal writing. Support your answer with reference to Extract 2 of TEXT 2.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The Powerful Voice of Music",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Tom Gatti (ed.), Long Players — Extract 1 from Tom Gatti’s introduction and Extract 2, Ben Okri on Miles Davis’s Kind of Blue, with the album image (PDF4–5). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-t2-b",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Text 2 QB",
+   "questionText": "You have been invited to contribute to a podcast series entitled, The Music Playing in Me. The series will explore the importance of music in the lives of individuals. Write the text for the podcast in which you: reflect on the importance of music in your life, discuss some of the particular pieces of music (songs, albums, etc.) that make up the soundtrack to your own life and share the thoughts and feelings this music evokes in you.",
+   "totalMarks": 40,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-higher",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-t3-a-i",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Text 3 QA(i)",
+   "questionText": "Based on your reading of TEXT 3, explain three insights you gain into the power of books. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "The Powerful Voice of Books",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Hugo Hamilton — edited extracts from his novel The Pages, narrated by Joseph Roth’s novel Rebellion, with the image “Books are weapons in the war of ideas” (PDF6–7). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-t3-a-ii",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Text 3 QA(ii)",
+   "questionText": "In TEXT 3, we witness an exercise in censorship through the destruction of books. Discuss the extent to which you agree or disagree that censorship, including contemporary cancel culture, should not be used to silence voices of protest or disagreement in society.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "The Powerful Voice of Books",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Hugo Hamilton — edited extracts from his novel The Pages, narrated by Joseph Roth’s novel Rebellion, with the image “Books are weapons in the war of ideas” (PDF6–7). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-t3-a-iii",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Text 3 QA(iii)",
+   "questionText": "Identify four features of the language of narration, evident in TEXT 3, and discuss how effectively these features are employed to craft a dramatic and disturbing account of the book burning that occurred in Berlin in 1933. Support your answer with reference to TEXT 3.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "The Powerful Voice of Books",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Hugo Hamilton — edited extracts from his novel The Pages, narrated by Joseph Roth’s novel Rebellion, with the image “Books are weapons in the war of ideas” (PDF6–7). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-t3-b",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Text 3 QB",
+   "questionText": "It is 2033 and you are the editor of an internationally distributed newspaper. A book burning event, similar to that described in TEXT 3, has occurred in a major American city. You believe that respect for books of all kinds is vital to democracy and are horrified by this assault on them. Write an editorial in which you: give your response to this incident, warn your readers of the dangers inherent in attacking books in this way and urge them to engage in peaceful protest against this and any other form of censorship.",
+   "totalMarks": 40,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "The Powerful Voice of Books",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Hugo Hamilton — edited extracts from his novel The Pages, narrated by Joseph Roth’s novel Rebellion, with the image “Books are weapons in the war of ideas” (PDF6–7). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-higher",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-composing-1",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Composing 1",
+   "questionText": "In TEXT 2, Tom Gatti suggests that albums can become “faithful companions” in our lives. Write a personal essay in which you identify some of the items or objects that have become “faithful companions” in your life and reflect on the importance of these items or objects to you.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-composing-2",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Composing 2",
+   "questionText": "In TEXT 1, we learn that Amanda Gorman may be a candidate in the American presidential election in 2036. You are a candidate in the next election for the presidency of Ireland. Write a speech to be delivered during the election campaign, in which you outline the social and cultural values you would promote if elected and explain the perception of Ireland you would cultivate abroad, given the opportunity to do so.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested speech.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-composing-3",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Composing 3",
+   "questionText": "In TEXT 3, a student, Dieter Knecht, undertakes the perilous rescue of Joseph Roth’s novel, Rebellion, from destruction in the Nazi book burning in Berlin in 1933. Write a short story in which the student featured in TEXT 3, Dieter Knecht, has a life changing experience as he attempts to rescue Joseph Roth’s denounced novel, Rebellion, from the Nazi supporters who wish to see it destroyed.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "The Powerful Voice of Books",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Hugo Hamilton — edited extracts from his novel The Pages, narrated by Joseph Roth’s novel Rebellion, with the image “Books are weapons in the war of ideas” (PDF6–7). As reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    13,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-composing-4",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Composing 4",
+   "questionText": "In TEXT 1, we learn that Amanda Gorman recognises that fashion is itself a storytelling device. Write a feature article, for the magazine section of a weekend newspaper, in which you reflect on our fascination with all things fashionable and explore the stories we tell about ourselves, intentionally or unintentionally, through our fashion choices.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested feature article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-composing-5",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Composing 5",
+   "questionText": "The theme of this examination paper is “Powerful Voices”. Write a discursive essay in which you identify some of the powerful voices in modern life and discuss their influence on society.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-discursive",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested discursive essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-composing-6",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Composing 6",
+   "questionText": "In TEXT 3, the students in the story are described as “unlearning everything but the spirit of the nation”. Write a personal essay in which you reflect on the value of engaging in all kinds of learning and the pleasure, satisfaction and personal growth that can be derived from doing so.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2022-hl-p1-composing-7",
+   "year": 2022,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2022 HL Paper 1 Composing 7",
+   "questionText": "In TEXT 2, Ben Okri talks about, “the story at the plaintive heart of the music.” Write a short story in which a piece of music or the lyrics of a song (or songs) play(s) an important part in the narrative.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "7"
    }
   },
   {
