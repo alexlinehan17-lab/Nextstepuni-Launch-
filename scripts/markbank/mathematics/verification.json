@@ -1,8 +1,8 @@
 {
   "date": "2026-10-12",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1578,
-  "reviewedTasks": 1356,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1579,
+  "reviewedTasks": 1406,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 307,
+  "targetedRegressionTests": 310,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -792,5 +792,41 @@
     "schemePagesInspected": 29,
     "coverageBaseline": "1153/3474 asks covered, 0 orphans, 0 excluded, 2321 open",
     "validation": "Deck generation (1,578 built, 2 historical rejects), Atlas generation and --check (336 placements), audit --check-reviewed, scheme quote check of the 3 re-quoted or added cards, ten regression files (307/307), typecheck and diff whitespace check passed."
+  },
+  "ordinary2022p2": {
+    "paper": "2022 Ordinary Level Paper 2",
+    "paperFileid": "LC003GLP200EV.pdf",
+    "schemeFileid": "LC003GLP000EV.pdf",
+    "reviewedAt": "2026-10-12",
+    "independentlyReviewedTasks": 50,
+    "existingRuntimeCardsReviewed": 49,
+    "addedRuntimeCards": [
+      "maths-2022-ol-p2-q9-d"
+    ],
+    "restoredHeldBackCards": [],
+    "rowRepairs": [
+      "maths-2022-ol-p2-q5-b",
+      "maths-2022-ol-p2-q6-a-i",
+      "maths-2022-ol-p2-q6-a-iii",
+      "maths-2022-ol-p2-q7-a-ii",
+      "maths-2022-ol-p2-q8-a-ii",
+      "maths-2022-ol-p2-q8-b-i",
+      "maths-2022-ol-p2-q10-b-i",
+      "maths-2022-ol-p2-q10-b-iii",
+      "maths-2022-ol-p2-q10-e"
+    ],
+    "weldedNotesMovedToRowNote": 13,
+    "measurementToolAttached": [
+      "maths-2022-ol-p2-q9-d"
+    ],
+    "historicalRejectsRemaining": 2,
+    "targetedRegressionTests": 310,
+    "previousRuntimeIdsRetained": 1578,
+    "offeredMarks": 380,
+    "candidateMarks": 220,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 32,
+    "coverageBaseline": "1154/3474 asks covered, 0 orphans, 0 excluded, 2320 open",
+    "validation": "Deck generation (1,579 built, 2 historical rejects), Atlas generation and --check (346 placements), audit --check-reviewed, scheme quote check of the 10 re-quoted or added cards, ten regression files (310/310), typecheck and diff whitespace check passed."
   }
 }

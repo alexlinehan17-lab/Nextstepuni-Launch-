@@ -14423,7 +14423,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q1(a)(i)",
-  "questionText": "Find the slope of AC",
+  "questionText": "Find the slope of AC.",
   "figureKey": "maths-2022-OL-paper-p032-i0",
   "labelKey": [],
   "tariffModel": {
@@ -14458,8 +14458,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q1-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q1-a-i",
+  "stem": "Parts of the lines AC and BC are shown in the co-ordinate diagram below (not to scale): A is on the x-axis at (−2, 0), C is on the y-axis at (0, 3), and B is on the x-axis at (5, 0)."
  },
  {
   "id": "maths-2022-ol-p2-q1-a-ii",
@@ -14470,7 +14471,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q1(a)(ii)",
-  "questionText": "By using slopes, investigate if AC is perpendicular to BC. Justify your answer",
+  "questionText": "By using slopes, investigate if AC is perpendicular to BC. Justify your answer. (Tick one box only: AC is perpendicular to BC; AC is not perpendicular to BC.)",
   "figureKey": "maths-2022-OL-paper-p032-i1",
   "labelKey": [],
   "tariffModel": {
@@ -14488,13 +14489,13 @@
     "verbatim": "Work of merit e.g Correct Box Ticked\nSlope formula written\nShows an understanding of relationship between perpendicular lines and their slopes",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: Zero Credit: • Mention of 90°. Note: Watch out for consistent work here. Marked in order: Low Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: Zero Credit: • Mention of 90°. Note: Watch out for consistent work here. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Fully correct work but box not ticked.",
     "group": {
      "claimMax": 2,
      "perOption": 3,
      "options": [
       "Work of merit e.g Correct Box Ticked\nSlope formula written\nShows an understanding of relationship between perpendicular lines and their slopes",
-      "Answer correct and significant slope-related work presented.\nBrings down mAC from (a)(i) and calculates mBC in (a)(ii) Full Credit (-1):\nFully correct work but box not ticked"
+      "Answer correct and significant slope-related work presented.\nBrings down mAC from (a)(i) and calculates mBC in (a)(ii)"
      ],
      "perOptionSteps": [
       3,
@@ -14503,8 +14504,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q1-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q1-a-ii",
+  "stem": "Parts of the lines AC and BC are shown in the co-ordinate diagram below (not to scale): A is on the x-axis at (−2, 0), C is on the y-axis at (0, 3), and B is on the x-axis at (5, 0)."
  },
  {
   "id": "maths-2022-ol-p2-q1-b-i",
@@ -14515,7 +14517,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q1(b)(i), (ii)",
-  "questionText": "Find the length |LM|",
+  "questionText": "(i) Find the length |LM|. (ii) Write down the equation of the horizontal line LM.",
   "figureKey": "maths-2022-OL-paper-p033-i0",
   "labelKey": [],
   "tariffModel": {
@@ -14550,8 +14552,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q1-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q1-b-i",
+  "stem": "The triangle LMN is shown on the co-ordinate diagram below (not to scale). The point M has co-ordinates (9, 1). The triangle LMN is symmetrical about the y-axis."
  },
  {
   "id": "maths-2022-ol-p2-q1-b-iii",
@@ -14562,7 +14565,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q1(b)(iii)",
-  "questionText": "(iii) The line NM has equation x + 4y−13 = 0, where x, y∈ℝ",
+  "questionText": "The line NM has equation x + 4y − 13 = 0, where x, y ∈ ℝ. Use this equation to find the co-ordinates of the point N.",
   "figureKey": "maths-2022-OL-paper-p033-i1",
   "labelKey": [],
   "tariffModel": {
@@ -14580,13 +14583,13 @@
     "verbatim": "Work of merit e.g. indicates x = 0\nFinds a point on the given line other than the intercepts",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Answer not given as a pair of co-ordinates.",
     "group": {
      "claimMax": 2,
      "perOption": 3,
      "options": [
       "Work of merit e.g. indicates x = 0\nFinds a point on the given line other than the intercepts",
-      "Substitutes x = 0 in equation, accompanied by further work of merit\nSubstitutes y = 0 and correctly finds x Full Credit (–1):\nAnswer not given as a pair of co-ordinates"
+      "Substitutes x = 0 in equation, accompanied by further work of merit\nSubstitutes y = 0 and correctly finds x"
      ],
      "perOptionSteps": [
       3,
@@ -14595,8 +14598,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q1-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q1-b-iii",
+  "stem": "The triangle LMN is shown on the co-ordinate diagram below (not to scale). The point M has co-ordinates (9, 1). The triangle LMN is symmetrical about the y-axis."
  },
  {
   "id": "maths-2022-ol-p2-q2-a-i",
@@ -14607,7 +14611,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q2(a)(i)",
-  "questionText": "Write down the centre and radius of the circle k",
+  "questionText": "Write down the centre and radius of the circle k.",
   "figureKey": "maths-2022-OL-paper-p034-i0",
   "labelKey": [],
   "tariffModel": {
@@ -14625,13 +14629,13 @@
     "verbatim": "Work of merit e.g. indicates h, k, or r², or centre given as (−4,2)",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit. Full Credit −1 (a deduction, not a band): Answer as √169.",
     "group": {
      "claimMax": 3,
      "perOption": 3,
      "options": [
       "Work of merit e.g. indicates h, k, or r², or centre given as (−4,2)",
-      "Centre or radius correct Full Credit (–1):\nAnswer as √169",
+      "Centre or radius correct",
       "Correct answer without supporting work"
      ],
      "perOptionSteps": [
@@ -14642,8 +14646,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q2-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q2-a-i",
+  "stem": "The circle k has equation (x − 4)² + (y + 2)² = 169."
  },
  {
   "id": "maths-2022-ol-p2-q2-a-ii",
@@ -14654,7 +14659,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q2(a)(ii)",
-  "questionText": "Is the point (11, 10) on the circle k, inside the circle k, or outside the circle k? Show your working out",
+  "questionText": "Is the point (11, 10) on the circle k, inside the circle k, or outside the circle k? Show your working out. (Tick one box only.)",
   "figureKey": "maths-2022-OL-paper-p034-i1",
   "labelKey": [],
   "tariffModel": {
@@ -14672,13 +14677,13 @@
     "verbatim": "Work of merit\nCorrect answer with no supporting work\nCorrect relevant formula written",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Fully correct work but box not ticked.",
     "group": {
      "claimMax": 2,
      "perOption": 2,
      "options": [
       "Work of merit\nCorrect answer with no supporting work\nCorrect relevant formula written",
-      "Answer correct and significant work of merit in determining length of radius\nFully substituted equation of circle or formula for distance, but incorrect or omitted conclusion Full Credit (–1):\nFully correct work but box not ticked"
+      "Answer correct and significant work of merit in determining length of radius\nFully substituted equation of circle or formula for distance, but incorrect or omitted conclusion"
      ],
      "perOptionSteps": [
       2,
@@ -14687,8 +14692,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q2-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q2-a-ii",
+  "stem": "The circle k has equation (x − 4)² + (y + 2)² = 169."
  },
  {
   "id": "maths-2022-ol-p2-q2-b-i",
@@ -14699,7 +14705,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q2(b)(i)",
-  "questionText": "Find the co-ordinates of another point on the circle s, other than (12, 11)",
+  "questionText": "Find the co-ordinates of another point on the circle s, other than (12, 11).",
   "figureKey": "maths-2022-OL-paper-p035-i0",
   "labelKey": [],
   "tariffModel": {
@@ -14732,8 +14738,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q2-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q2-b-i",
+  "stem": "The diagram below shows two circles, s and t. The circle s has centre (22, 13). The two circles touch at the point (12, 11)."
  },
  {
   "id": "maths-2022-ol-p2-q2-b-ii",
@@ -14744,7 +14751,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q2(b)(ii)",
-  "questionText": "The radius of the circle t is half the radius of s. Find the co-ordinates of the centre of the circle t",
+  "questionText": "The radius of the circle t is half the radius of s. Find the co-ordinates of the centre of the circle t.",
   "figureKey": "maths-2022-OL-paper-p035-i1",
   "labelKey": [],
   "tariffModel": {
@@ -14779,8 +14786,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q2-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q2-b-ii",
+  "stem": "The diagram below shows two circles, s and t. The circle s has centre (22, 13). The two circles touch at the point (12, 11)."
  },
  {
   "id": "maths-2022-ol-p2-q3-a-i",
@@ -14791,7 +14799,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q3(a)(i)",
-  "questionText": "Find the mean of these 7 numbers, correct to 1 decimal place",
+  "questionText": "Find the mean of these 7 numbers, correct to 1 decimal place.",
   "figureKey": "maths-2022-OL-paper-p036-i0",
   "labelKey": [],
   "tariffModel": {
@@ -14809,13 +14817,13 @@
     "verbatim": "Work of merit e.g. Indicates some addition of the given numbers\nDivision by 7",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit. Full Credit −1 (a deduction, not a band): Error in addition and finishes correctly.",
     "group": {
      "claimMax": 3,
      "perOption": 2,
      "options": [
       "Work of merit e.g. Indicates some addition of the given numbers\nDivision by 7",
-      "Correct addition (Ans: = 95)\nFully correct substitution into mean formula. Full Credit (–1):\nError in addition and finishes correctly",
+      "Correct addition (Ans: = 95)\nFully correct substitution into mean formula.",
       "Correct answer without supporting work"
      ],
      "perOptionSteps": [
@@ -14826,8 +14834,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q3-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q3-a-i",
+  "stem": "A list of 7 numbers is shown below: 17, 8, 9, 8, 14, 11, 28"
  },
  {
   "id": "maths-2022-ol-p2-q3-a-ii",
@@ -14838,7 +14847,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q3(a)(ii)",
-  "questionText": "Find the median of these 7 numbers",
+  "questionText": "Find the median of these 7 numbers.",
   "figureKey": "maths-2022-OL-paper-p036-i1",
   "labelKey": [],
   "tariffModel": {
@@ -14866,8 +14875,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q3-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q3-a-ii",
+  "stem": "A list of 7 numbers is shown below: 17, 8, 9, 8, 14, 11, 28"
  },
  {
   "id": "maths-2022-ol-p2-q3-a-iii",
@@ -14878,7 +14888,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q3(a)(iii)",
-  "questionText": "(iii) One more number is added to the list.The new median is 10∙5. Find the number that was added to the list",
+  "questionText": "One more number is added to the list. The new median is 10·5. Find the number that was added to the list.",
   "figureKey": "maths-2022-OL-paper-p036-i2",
   "labelKey": [],
   "tariffModel": {
@@ -14913,8 +14923,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q3-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q3-a-iii",
+  "stem": "A list of 7 numbers is shown below: 17, 8, 9, 8, 14, 11, 28"
  },
  {
   "id": "maths-2022-ol-p2-q3-b-i",
@@ -14958,8 +14969,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q3-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q3-b-i",
+  "stem": "Ben has to choose three subjects to study. He must pick one subject from each of these three groups: Group A (3 subjects): French, Spanish, German. Group B (4 subjects): Biology, Physics, Chemistry, Business. Group C (5 subjects): Art, Accounting, History, Geography, Home Economics."
  },
  {
   "id": "maths-2022-ol-p2-q3-b-ii",
@@ -14970,7 +14982,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q3(b)(ii)",
-  "questionText": "The school is going to add one extra subject to one of these groups (A, B, or C). Which group should the extra subject be added to, in order to make the number of different choices of three subjects that Ben can make as large as possible? Justify your answer",
+  "questionText": "The school is going to add one extra subject to one of these groups (A, B, or C). Which group should the extra subject be added to, in order to make the number of different choices of three subjects that Ben can make as large as possible? Justify your answer.",
   "figureKey": "maths-2022-OL-paper-p037-i1",
   "labelKey": [],
   "tariffModel": {
@@ -15003,8 +15015,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q3-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q3-b-ii",
+  "stem": "Ben has to choose three subjects to study. He must pick one subject from each of these three groups: Group A (3 subjects): French, Spanish, German. Group B (4 subjects): Biology, Physics, Chemistry, Business. Group C (5 subjects): Art, Accounting, History, Geography, Home Economics."
  },
  {
   "id": "maths-2022-ol-p2-q4-a",
@@ -15015,7 +15028,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q4(a)",
-  "questionText": "A group of students sat an exam. Each student was given a grade. The following table shows how many students got each grade",
+  "questionText": "A group of students sat an exam. Each student was given a grade. The following table shows how many students got each grade: Distinction 8, High Merit 12, Merit 39, Achieved 13. Complete the pie chart below to show this information. Label each sector clearly. Show your working out. The sector for Distinction is already given. It has an angle of 40°.",
   "figureKey": "maths-2022-OL-paper-p038-i0",
   "labelKey": [],
   "tariffModel": {
@@ -15033,14 +15046,14 @@
     "verbatim": "Work of merit e.g. total number of students (= 72)\n72 or 360° or indicates multiplication by 5\nOne new angle identified",
     "marks": 15,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): One label missing.",
     "group": {
      "claimMax": 3,
      "perOption": 4,
      "options": [
       "Work of merit e.g. total number of students (= 72)\n72 or 360° or indicates multiplication by 5\nOne new angle identified",
       "All angles identified\nOne correctly labelled sector added to the Pie Chart",
-      "Fully correct labelled Pie Chart without work Full Credit (–1):\nOne label missing"
+      "Fully correct labelled Pie Chart without work"
      ],
      "perOptionSteps": [
       4,
@@ -15050,7 +15063,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-OL-ask-p2-q4-a"
  },
  {
@@ -15062,7 +15075,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q4(b)(i), (ii)",
-  "questionText": "What percentage of the people had scores between 80 and 120?",
+  "questionText": "(i) What percentage of the people had scores between 80 and 120? (ii) The top 2·5% of scores were given a grade of ‘Exceptional’. What was the least score that was needed to get this grade?",
   "figureKey": "maths-2022-OL-paper-p039-i0",
   "labelKey": [],
   "tariffModel": {
@@ -15097,8 +15110,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q4-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q4-b-i",
+  "stem": "A large group of people took a reading test. The scores were normally distributed, with a mean of 100 and a standard deviation of 20. Use the empirical rule to answer parts (b)(i) and (b)(ii)."
  },
  {
   "id": "maths-2022-ol-p2-q4-c",
@@ -15109,7 +15123,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q4(c)",
-  "questionText": "The scores of six people on this test were as follows: 104, 82, 94, 113, 98, 105 Find the range and the standard deviation of these numbers. Give the standard deviation correct to 1 decimal place",
+  "questionText": "The scores of six people on this test were as follows: 104, 82, 94, 113, 98, 105. Find the range and the standard deviation of these numbers. Give the standard deviation correct to 1 decimal place.",
   "figureKey": "maths-2022-OL-paper-p040-i0",
   "labelKey": [],
   "tariffModel": {
@@ -15127,13 +15141,13 @@
     "verbatim": "Work of merit\nAttempt at finding mean\nMaximum or minimum identified",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit. Full Credit −1 (a deduction, not a band): Standard deviation correct but Range given as Min and Max, instead of as a number; Incorrect rounding..",
     "group": {
      "claimMax": 3,
      "perOption": 2,
      "options": [
       "Work of merit\nAttempt at finding mean\nMaximum or minimum identified",
-      "Standard deviation or Range found correctly Full Credit (–1):\nStandard deviation correct but Range given as Min and Max, instead of as a number\nIncorrect rounding.",
+      "Standard deviation or Range found correctly",
       "Correct answers without supporting work"
      ],
      "perOptionSteps": [
@@ -15144,7 +15158,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-OL-ask-p2-q4-c"
  },
  {
@@ -15156,7 +15170,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q5(a)(i), (ii)",
-  "questionText": "Write down the size of the angle ∠ PQR",
+  "questionText": "(i) Write down the size of the angle ∠PQR. (ii) Show that the area of the triangle PQR is 16√3 cm².",
   "figureKey": "maths-2022-OL-paper-p041-i0",
   "labelKey": [],
   "tariffModel": {
@@ -15189,8 +15203,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q5-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q5-a-i",
+  "stem": "An equilateral triangle PQR has sides of length 8 cm."
  },
  {
   "id": "maths-2022-ol-p2-q5-a-iii",
@@ -15201,7 +15216,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q5(a)(iii)",
-  "questionText": "(iii) Hence, or otherwise, find the perpendicular height of the triangle PQR, taking PQ as the base. Give your answer in the form a√b cm, where a, b∈ℕ",
+  "questionText": "Hence, or otherwise, find the perpendicular height of the triangle PQR, taking PQ as the base. Give your answer in the form a√b cm, where a, b ∈ ℕ.",
   "figureKey": "maths-2022-OL-paper-p041-i1",
   "labelKey": [],
   "tariffModel": {
@@ -15219,13 +15234,13 @@
     "verbatim": "Indicates shortest distance on diagram with right angle\nCorrect relevant formula written",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Correct value for h, but not in required form.",
     "group": {
      "claimMax": 2,
      "perOption": 3,
      "options": [
       "Indicates shortest distance on diagram with right angle\nCorrect relevant formula written",
-      "A fully correctly-substituted relevant formula\nOne incorrect substitution and finished correctly Full Credit (–1):\nCorrect value for h, but not in required form"
+      "A fully correctly-substituted relevant formula\nOne incorrect substitution and finished correctly"
      ],
      "perOptionSteps": [
       3,
@@ -15234,8 +15249,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q5-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q5-a-iii",
+  "stem": "An equilateral triangle PQR has sides of length 8 cm. The area of the triangle PQR is 16√3 cm²."
  },
  {
   "id": "maths-2022-ol-p2-q5-b",
@@ -15246,40 +15262,72 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q5(b)",
-  "questionText": "GHK is a right-angled triangle. |∠GHK| = 90°, |GH| = 12 cm, and |GK| = 30 cm",
+  "questionText": "GHK is a right-angled triangle. |∠GHK| = 90°, |GH| = 12 cm, and |GK| = 30 cm. Using the theorem of Pythagoras, find the distance |HK|. Give your answer correct to 1 decimal place.",
   "figureKey": "maths-2022-OL-paper-p042-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2022-ol-p2-q5-b-r1",
-    "kind": "anyN",
-    "verbatim": "Pythagoras Theorem written",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "Pythagoras Theorem written",
-      "A fully correctly-substituted formula High • |HK| Partial = Credit:/√756 Full Credit (–1):\nCorrect answer, no unit or incorrect unit\nCorrect answer, incorrect rounding"
-     ],
-     "perOptionSteps": [
-      3,
-      7
-     ]
-    }
+    "id": "maths-2022-ol-p2-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |GK|² = |GH|² + |HK|²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — |HK|² = 756",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q5-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — |HK| = 27.5cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q5-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Pythagoras Theorem written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q5-b-solution-5",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — A fully correctly-substituted formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q5-b-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — |HK| = √756",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q5-b-solution-7",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — Correct answer, no unit or incorrect unit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q5-b-solution-8",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — Correct answer, incorrect rounding",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-OL-ask-p2-q5-b"
  },
  {
@@ -15291,39 +15339,32 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q6(a)(i)",
-  "questionText": "Write down |∠ ADB|, the size of the total angle at the point D",
+  "questionText": "Write down |∠ADB|, the size of the total angle at the point D.",
   "figureKey": "maths-2022-OL-paper-p043-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2022-ol-p2-q6-a-i-r1",
-    "kind": "anyN",
-    "verbatim": "Diagram:",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5. Note: Check Candidate’s Diagram for meritorious work throughout this question B • Hit or Miss. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 1,
-     "perOption": 5,
-     "options": [
-      "Diagram:",
-      "65^o",
-      "50^o",
-      "130°"
-     ]
-    }
+    "id": "maths-2022-ol-p2-q6-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 90°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q6-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Note — Hit or Miss",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q6-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q6-a-i",
+  "stem": "The circle c is shown in the diagram below (not to scale). Its centre is at the point O. The points A, B, and D lie on the circle, and [AB] is a diameter of the circle."
  },
  {
   "id": "maths-2022-ol-p2-q6-a-ii",
@@ -15334,7 +15375,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q6(a)(ii)",
-  "questionText": "|∠ AOD| = 130°. Work out the size of the angle marked X in the diagram",
+  "questionText": "|∠AOD| = 130°. Work out the size of the angle marked X in the diagram.",
   "figureKey": "maths-2022-OL-paper-p043-i1",
   "labelKey": [],
   "tariffModel": {
@@ -15367,8 +15408,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q6-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q6-a-ii",
+  "stem": "The circle c is shown in the diagram below (not to scale). Its centre is at the point O. The points A, B, and D lie on the circle, and [AB] is a diameter of the circle."
  },
  {
   "id": "maths-2022-ol-p2-q6-a-iii",
@@ -15379,44 +15421,88 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q6(a)(iii)",
-  "questionText": "(iii) The radius of the circle is 18 cm. Find the length of the arc AD. Give your answer in cm, in terms of 𝜋",
+  "questionText": "The radius of the circle is 18 cm. Find the length of the arc AD. Give your answer in cm, in terms of π.",
   "figureKey": "maths-2022-OL-paper-p044-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2022-ol-p2-q6-a-iii-r1",
-    "kind": "anyN",
-    "verbatim": "Minor arc:",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Note: Misreading(-1). These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Minor arc:",
-      "130/360 × 2𝜋(18) = 13𝜋 [cm]",
-      "Major arc:",
-      "(360−130)/360 × 2𝜋(18) = 23𝜋 [cm]"
-     ],
-     "perOptionSteps": [
-      3,
-      4,
-      3
-     ]
-    }
+    "id": "maths-2022-ol-p2-q6-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Minor arc:",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q6-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 130/360 × 2π(18) = 13π [cm]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q6-a-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — Major arc:",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q6-a-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — (360 − 130)/360 × 2π(18) = 23π [cm]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q6-a-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q6-a-iii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct relevant formula written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q6-a-iii-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finds circumference",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q6-a-iii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Fully correctly-substituted arc-length formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q6-a-iii-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Answer not in terms of π",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q6-a-iii-solution-10",
+    "kind": "point",
+    "verbatim": "Misreading (−1) — If a different arc is correctly calculated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q6-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q6-a-iii",
+  "stem": "The circle c is shown in the diagram below (not to scale). Its centre is at the point O. The points A, B, and D lie on the circle, and [AB] is a diameter of the circle. |∠AOD| = 130°."
  },
  {
   "id": "maths-2022-ol-p2-q6-b-i",
@@ -15427,7 +15513,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q6(b)(i), (ii)",
-  "questionText": "Statement A: If two triangles are similar, then they must be congruent",
+  "questionText": "For each statement, put a tick (✓) in the correct box to show if it is true or false. Give a reason for your answer in each case. (i) Statement A: If two triangles are similar, then they must be congruent. (ii) Statement B: If two triangles are congruent, then they must be similar.",
   "figureKey": "maths-2022-OL-paper-p044-i1",
   "labelKey": [],
   "tariffModel": {
@@ -15462,8 +15548,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q6-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q6-b-i",
+  "stem": "Two statements, A and B, are shown below."
  },
  {
   "id": "maths-2022-ol-p2-q7-a-i",
@@ -15474,7 +15561,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q7(a)(i)",
-  "questionText": "Draw a back-to-back stem-and-leaf plot to show this information",
+  "questionText": "Draw a back-to-back stem-and-leaf plot to show this information. (Key: 6 | 0 = 6·0 kg)",
   "figureKey": "maths-2022-OL-paper-p045-i0",
   "labelKey": [],
   "tariffModel": {
@@ -15509,8 +15596,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q7-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q7-a-i",
+  "stem": "An animal shelter takes cats and dogs. The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table below shows the weights of 10 dogs (labelled A to J) on these two days. Weight Day X (kg): 4·5, 4·9, 5·3, 5·3, 5·5, 5·7, 6·7, 6·9, 7·3, 7·4. Weight Day Y (kg): 4·8, 5·4, 5·5, 6·1, 6·3, 6·0, 7·0, 7·6, 8·1, 7·9."
  },
  {
   "id": "maths-2022-ol-p2-q7-a-ii",
@@ -15521,42 +15609,39 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q7(a)(ii)",
-  "questionText": "What does the stem-and-leaf plot show about the weights of the dogs on Day X and Day Y ?",
+  "questionText": "What does the stem-and-leaf plot show about the weights of the dogs on Day X and Day Y?",
   "figureKey": "maths-2022-OL-paper-p045-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2022-ol-p2-q7-a-ii-r1",
-    "kind": "anyN",
-    "verbatim": "Conclusion:",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Note: Word ”Increase” or similar must feature in conclusion. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "Conclusion:",
-      "That the weight of the dogs has increased from",
-      "Day X to Day Y"
-     ],
-     "perOptionSteps": [
-      2,
-      3
-     ]
-    }
+    "id": "maths-2022-ol-p2-q7-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — That the weight of the dogs has increased from Day X to Day Y",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q7-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — Work of merit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q7-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Note — Word ”Increase” or similar must feature in conclusion.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q7-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q7-a-ii",
+  "stem": "An animal shelter takes cats and dogs. The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table below shows the weights of 10 dogs (labelled A to J) on these two days. Weight Day X (kg): 4·5, 4·9, 5·3, 5·3, 5·5, 5·7, 6·7, 6·9, 7·3, 7·4. Weight Day Y (kg): 4·8, 5·4, 5·5, 6·1, 6·3, 6·0, 7·0, 7·6, 8·1, 7·9."
  },
  {
   "id": "maths-2022-ol-p2-q7-a-iii",
@@ -15567,7 +15652,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q7(a)(iii)",
-  "questionText": "(iii) r is the correlation coefficient between the weight on Day X and the weight on Day Y. Based on the data in the table, pick the most likely value of r from the list below",
+  "questionText": "r is the correlation coefficient between the weight on Day X and the weight on Day Y. Based on the data in the table, pick the most likely value of r from the list below. Give a reason for your answer, based on the data in the table. Most likely value of r (tick one box only): −0·9, −0·2, 0·2, 0·9.",
   "figureKey": "maths-2022-OL-paper-p045-i2",
   "labelKey": [],
   "tariffModel": {
@@ -15582,15 +15667,15 @@
    {
     "id": "maths-2022-ol-p2-q7-a-iii-r1",
     "kind": "anyN",
-    "verbatim": "Correct value of r without a reason or with an incorrect reason\nReason shows an understanding of r but no r value identified\nFinds r on calculator r = 0.979… and stops Full Credit (-1):\nFully correct reason but box not ticked",
+    "verbatim": "Correct value of r without a reason or with an incorrect reason\nReason shows an understanding of r but no r value identified\nFinds r on calculator r = 0.979… and stops",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Marked in order: Partial Credit; Full Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Marked in order: Partial Credit; Full Credit. Full Credit −1 (a deduction, not a band): Fully correct reason but box not ticked.",
     "group": {
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "Correct value of r without a reason or with an incorrect reason\nReason shows an understanding of r but no r value identified\nFinds r on calculator r = 0.979… and stops Full Credit (-1):\nFully correct reason but box not ticked",
+      "Correct value of r without a reason or with an incorrect reason\nReason shows an understanding of r but no r value identified\nFinds r on calculator r = 0.979… and stops",
       "Work given in the answer box identifies the value of r as 0 ∙9 accompanied with a valid reason"
      ],
      "perOptionSteps": [
@@ -15600,8 +15685,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q7-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q7-a-iii",
+  "stem": "An animal shelter takes cats and dogs. The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table below shows the weights of 10 dogs (labelled A to J) on these two days. Weight Day X (kg): 4·5, 4·9, 5·3, 5·3, 5·5, 5·7, 6·7, 6·9, 7·3, 7·4. Weight Day Y (kg): 4·8, 5·4, 5·5, 6·1, 6·3, 6·0, 7·0, 7·6, 8·1, 7·9."
  },
  {
   "id": "maths-2022-ol-p2-q7-b",
@@ -15612,7 +15698,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q7(b)",
-  "questionText": "Complete the table, by filling in the four missing values",
+  "questionText": "Complete the table, by filling in the four missing values.",
   "figureKey": "maths-2022-OL-paper-p046-i0",
   "labelKey": [],
   "tariffModel": {
@@ -15647,8 +15733,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q7-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q7-b",
+  "stem": "An animal shelter takes cats and dogs. The table below shows the breakdown of the animals in the shelter, by type of animal (cat or dog) and by sex (male or female), on a particular Monday. Cats: 5 male, 9 female, 14 in total. Dogs: 11 male. Total: 40 animals."
  },
  {
   "id": "maths-2022-ol-p2-q7-c-i",
@@ -15659,7 +15746,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q7(c)(i), (ii)",
-  "questionText": "Find the probability that the first animal picked was a cat",
+  "questionText": "(i) Find the probability that the first animal picked was a cat. (ii) Find the probability that all three animals picked were male dogs. Give your answer correct to 3 decimal places.",
   "figureKey": "maths-2022-OL-paper-p046-i1",
   "labelKey": [],
   "tariffModel": {
@@ -15677,14 +15764,14 @@
     "verbatim": "Correct numerator or denominator in (i)\nOne correct numerator or denominator in (ii)",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Incorrect rounding.",
     "group": {
      "claimMax": 3,
      "perOption": 2,
      "options": [
       "Correct numerator or denominator in (i)\nOne correct numerator or denominator in (ii)",
       "Part(i) correct\n2 correct fractions in (ii)\n3 numerators or 3 denominators correct in (ii)",
-      "(i) correct and 2 correct fractions in (ii)\n3 correct fractions in (ii)\nIncorrect operation used Full Credit (-1):\nIncorrect rounding"
+      "(i) correct and 2 correct fractions in (ii)\n3 correct fractions in (ii)\nIncorrect operation used"
      ],
      "perOptionSteps": [
       2,
@@ -15694,8 +15781,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q7-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q7-c-i",
+  "stem": "An animal shelter takes cats and dogs. The table below shows the breakdown of the animals in the shelter, by type of animal (cat or dog) and by sex (male or female), on a particular Monday. Cats: 5 male, 9 female, 14 in total. Dogs: 11 male. Total: 40 animals. Three different animals were picked at random from the animals in the shelter on this Monday."
  },
  {
   "id": "maths-2022-ol-p2-q7-d",
@@ -15706,7 +15794,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q7(d)",
-  "questionText": "The 9 female cats were put in 9 separate pens. Work out the number of ways in which this could have been done (that is, the number of different possible arrangements)",
+  "questionText": "The 9 female cats were put in 9 separate pens. Work out the number of ways in which this could have been done (that is, the number of different possible arrangements).",
   "figureKey": "maths-2022-OL-paper-p046-i2",
   "labelKey": [],
   "tariffModel": {
@@ -15734,8 +15822,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q7-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q7-d",
+  "stem": "An animal shelter takes cats and dogs. The table below shows the breakdown of the animals in the shelter, by type of animal (cat or dog) and by sex (male or female), on a particular Monday. Cats: 5 male, 9 female, 14 in total. Dogs: 11 male. Total: 40 animals."
  },
  {
   "id": "maths-2022-ol-p2-q7-e",
@@ -15746,7 +15835,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q7(e)",
-  "questionText": "By the end of this week, 10 of the animals had left the shelter, and no new animals had been taken in. If an animal was picked at random at the end of this week, the probability of picking a dog would be 11/15",
+  "questionText": "By the end of this week, 10 of the animals had left the shelter, and no new animals had been taken in. If an animal was picked at random at the end of this week, the probability of picking a dog would be 11/15. Work out how many cats left the shelter during this week.",
   "figureKey": "maths-2022-OL-paper-p047-i0",
   "labelKey": [],
   "tariffModel": {
@@ -15779,8 +15868,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q7-e"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q7-e",
+  "stem": "An animal shelter takes cats and dogs. The table below shows the breakdown of the animals in the shelter, by type of animal (cat or dog) and by sex (male or female), on a particular Monday. Cats: 5 male, 9 female, 14 in total. Dogs: 11 male. Total: 40 animals."
  },
  {
   "id": "maths-2022-ol-p2-q8-a-i",
@@ -15791,7 +15881,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q8(a)(i)",
-  "questionText": "Find the volume of the hemisphere. Give your answer in m³ in terms of 𝜋",
+  "questionText": "Find the volume of the hemisphere. Give your answer in m³ in terms of π.",
   "figureKey": "maths-2022-OL-paper-p048-i0",
   "labelKey": [],
   "tariffModel": {
@@ -15824,8 +15914,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q8-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q8-a-i",
+  "stem": "The top of a particular lighthouse is in the shape of a hemisphere on top of a cylinder. The hemisphere and the cylinder both have a radius of 3 m."
  },
  {
   "id": "maths-2022-ol-p2-q8-a-ii",
@@ -15836,43 +15927,60 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q8(a)(ii)",
-  "questionText": "The volume of the cylinder is 36𝜋 m³. Work out h, the height of the cylinder",
+  "questionText": "The volume of the cylinder is 36π m³. Work out h, the height of the cylinder.",
   "figureKey": "maths-2022-OL-paper-p048-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2022-ol-p2-q8-a-ii-r1",
-    "kind": "anyN",
-    "verbatim": "Formula for cylinder written with no substitution Substitutes r = 3 into cylinder\nformula Sets cylinder formula = 36𝜋",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Formula for cylinder written with no substitution Substitutes r = 3 into cylinder\nformula Sets cylinder formula = 36𝜋",
-      "Forms correct equation in h",
-      "Correct equation in h and further significant work of merit in solving for h"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
+    "id": "maths-2022-ol-p2-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — So h = 4 m",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q8-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Formula for cylinder written with no substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q8-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Substitutes r = 3 into cylinder formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q8-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Sets cylinder formula = 36π",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q8-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Forms correct equation in h",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q8-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct equation in h and further significant work of merit in solving for h",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q8-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q8-a-ii",
+  "stem": "The top of a particular lighthouse is in the shape of a hemisphere on top of a cylinder. The hemisphere and the cylinder both have a radius of 3 m."
  },
  {
   "id": "maths-2022-ol-p2-q8-b-i",
@@ -15883,41 +15991,60 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q8(b)(i)",
-  "questionText": "The height of the cone before the top part is removed is 47 m. Work out the size of the angle at the base of the cone, marked A in the diagram above. Give your answer correct to the nearest degree",
+  "questionText": "The height of the cone before the top part is removed is 47 m. Work out the size of the angle at the base of the cone, marked A in the diagram above. Give your answer correct to the nearest degree.",
   "figureKey": "maths-2022-OL-paper-p049-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 3, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2022-ol-p2-q8-b-i-r1",
-    "kind": "anyN",
-    "verbatim": "Correct trigonometric ratio a² = (7 ∙5)² + (47)²",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Rad = 1. Grad = 90. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "Correct trigonometric ratio a² = (7 ∙5)² + (47)²",
-      "Fully substituted trigonometric ratio\nIncorrect calculator mode but otherwise correct (only once in the paper)"
-     ],
-     "perOptionSteps": [
-      2,
-      3
-     ]
-    }
+    "id": "maths-2022-ol-p2-q8-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — A = 80·93349°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q8-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — A = 81°[nearest degree]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q8-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct trigonometric ratio",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q8-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — a² = (7·5)² + (47)²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q8-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Fully substituted trigonometric ratio",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q8-b-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Incorrect calculator mode but otherwise correct (only once in the paper)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q8-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q8-b-i",
+  "stem": "The diagram on the right below shows part of the base of the lighthouse (not to scale). It is in the shape of a cone of radius 7·5 m, from which the top part has been removed, leaving a horizontal circle of radius 3 m."
  },
  {
   "id": "maths-2022-ol-p2-q8-b-ii",
@@ -15928,7 +16055,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q8(b)(ii)",
-  "questionText": "Find the distance marked k on the diagram, the height after the top part is removed",
+  "questionText": "Find the distance marked k on the diagram, the height after the top part is removed.",
   "figureKey": "maths-2022-OL-paper-p049-i1",
   "labelKey": [],
   "tariffModel": {
@@ -15946,13 +16073,13 @@
     "verbatim": "One correct ratio of corresponding sides\nSome correct substitution\nCorrect trigonometric ratio",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Rad = 49 ∙433 Grad = 37 ∙248. Marked in order: Low Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Rad = 49 ∙433 Grad = 37 ∙248. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Correct value but no or incorrect unit.",
     "group": {
      "claimMax": 2,
      "perOption": 2,
      "options": [
       "One correct ratio of corresponding sides\nSome correct substitution\nCorrect trigonometric ratio",
-      "Correct equation in x\nError in setting up equation, but finishes correctly Full Credit(–1)\nCorrect value but no or incorrect unit"
+      "Correct equation in x\nError in setting up equation, but finishes correctly"
      ],
      "perOptionSteps": [
       2,
@@ -15961,8 +16088,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q8-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q8-b-ii",
+  "stem": "The diagram on the right below shows part of the base of the lighthouse (not to scale). It is in the shape of a cone of radius 7·5 m, from which the top part has been removed, leaving a horizontal circle of radius 3 m. The height of the cone before the top part is removed is 47 m."
  },
  {
   "id": "maths-2022-ol-p2-q8-c-i",
@@ -15973,7 +16101,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q8(c)(i)",
-  "questionText": "Work out the area of the circle within which the Fastnet lighthouse can be seen. Give your answer correct to the nearest km²",
+  "questionText": "Work out the area of the circle within which the Fastnet lighthouse can be seen. Give your answer correct to the nearest km².",
   "figureKey": "maths-2022-OL-paper-p050-i0",
   "labelKey": [],
   "tariffModel": {
@@ -15988,15 +16116,15 @@
    {
     "id": "maths-2022-ol-p2-q8-c-i-r1",
     "kind": "anyN",
-    "verbatim": "Area of circle formula written Full Credit(–1)\nIncorrect rounding",
+    "verbatim": "Area of circle formula written",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Marked in order: Partial Credit; Full Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Marked in order: Partial Credit; Full Credit. Full Credit −1 (a deduction, not a band): Incorrect rounding.",
     "group": {
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "Area of circle formula written Full Credit(–1)\nIncorrect rounding",
+      "Area of circle formula written",
       "Correct answer without supporting work"
      ],
      "perOptionSteps": [
@@ -16006,8 +16134,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q8-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q8-c-i",
+  "stem": "Assume that the Fastnet lighthouse can be seen from anywhere within a circle of radius 50 km."
  },
  {
   "id": "maths-2022-ol-p2-q8-c-ii",
@@ -16018,7 +16147,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q8(c)(ii)",
-  "questionText": "(ii)50 km = 27 nautical miles. Use this to work out how many km are in 1 nautical mile. Give your answer correct to 4 significant figures",
+  "questionText": "50 km = 27 nautical miles. Use this to work out how many km are in 1 nautical mile. Give your answer correct to 4 significant figures.",
   "figureKey": "maths-2022-OL-paper-p050-i1",
   "labelKey": [],
   "tariffModel": {
@@ -16033,22 +16162,23 @@
    {
     "id": "maths-2022-ol-p2-q8-c-ii-r1",
     "kind": "anyN",
-    "verbatim": "50/27\n27/50, and finishes correctly Full Credit (–1)\nCorrect value, but incorrect rounding",
+    "verbatim": "50/27\n27/50, and finishes correctly",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10. Marked in order: Partial Credit; Full Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10. Marked in order: Partial Credit; Full Credit. Full Credit −1 (a deduction, not a band): Correct value, but incorrect rounding.",
     "group": {
      "claimMax": 2,
      "perOption": 5,
      "options": [
-      "50/27\n27/50, and finishes correctly Full Credit (–1)\nCorrect value, but incorrect rounding",
+      "50/27\n27/50, and finishes correctly",
       "Correct answer without supporting work"
      ]
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q8-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q8-c-ii",
+  "stem": "Assume that the Fastnet lighthouse can be seen from anywhere within a circle of radius 50 km."
  },
  {
   "id": "maths-2022-ol-p2-q8-d",
@@ -16059,7 +16189,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q8(d)",
-  "questionText": "The top of the Fastnet lighthouse, F, is 49 m above sea level. The angle of elevation of the top of the lighthouse from a ship S is 1∙2°, as shown in the diagram below (not to scale)",
+  "questionText": "The top of the Fastnet lighthouse, F, is 49 m above sea level. The angle of elevation of the top of the lighthouse from a ship S is 1·2°, as shown in the diagram below (not to scale). Find the horizontal distance marked d below, from the ship to the base of the lighthouse. Give your answer in kilometres, correct to 2 decimal places.",
   "figureKey": "maths-2022-OL-paper-p050-i2",
   "labelKey": [],
   "tariffModel": {
@@ -16094,7 +16224,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-OL-ask-p2-q8-d"
  },
  {
@@ -16106,7 +16236,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q9(a)",
-  "questionText": "State which of the following statements is most likely to be true, and write down a possible height of Seán that would support your answer. Tick (✓) one box only",
+  "questionText": "State which of the following statements is most likely to be true, and write down a possible height of Seán that would support your answer. Tick (✓) one box only: The shed at the highest point is 3 times as high as Seán; 5 times as high as Seán; 8 times as high as Seán.",
   "figureKey": "maths-2022-OL-paper-p051-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16134,8 +16264,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q9-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q9-a",
+  "stem": "Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above the centre of its base. The front face is 12 m wide, its walls are 7 m high and its highest point is 8·5 m high; the shed is 18 m long."
  },
  {
   "id": "maths-2022-ol-p2-q9-b",
@@ -16146,7 +16277,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q9(b)",
-  "questionText": "Seán says that his shed has a capacity of over one million litres, where 1 m³ = 1000 litres. Work out the volume of Seán’s shed, to show that he is correct",
+  "questionText": "Seán says that his shed has a capacity of over one million litres, where 1 m³ = 1000 litres. Work out the volume of Seán’s shed, to show that he is correct.",
   "figureKey": "maths-2022-OL-paper-p051-i1",
   "labelKey": [],
   "tariffModel": {
@@ -16181,8 +16312,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q9-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q9-b",
+  "stem": "Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above the centre of its base. The front face is 12 m wide, its walls are 7 m high and its highest point is 8·5 m high; the shed is 18 m long."
  },
  {
   "id": "maths-2022-ol-p2-q9-c",
@@ -16193,7 +16325,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q9(c)",
-  "questionText": "Use the theorem of Pythagoras to find the length of the distance marked d in the diagram below, the slant length of the roof. Give your answer in metres, correct to 1 decimal place",
+  "questionText": "Use the theorem of Pythagoras to find the length of the distance marked d in the diagram below, the slant length of the roof. Give your answer in metres, correct to 1 decimal place.",
   "figureKey": "maths-2022-OL-paper-p052-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16228,8 +16360,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q9-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q9-c",
+  "stem": "Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above the centre of its base. The front face is 12 m wide, its walls are 7 m high and its highest point is 8·5 m high; the shed is 18 m long."
  },
  {
   "id": "maths-2022-ol-p2-q9-e-i",
@@ -16240,7 +16373,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q9(e)(i)",
-  "questionText": "Show that |BC| = 4∙65 m, correct to 2 decimal places",
+  "questionText": "Show that |BC| = 4·65 m, correct to 2 decimal places.",
   "figureKey": "maths-2022-OL-paper-p054-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16275,8 +16408,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q9-e-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q9-e-i",
+  "stem": "The diagram below shows part of the roof of a smaller shed (not to scale). Some measurements are marked on the diagram: |AB| = 3 m, |AC| = 7 m and |∠BAC| = 30°."
  },
  {
   "id": "maths-2022-ol-p2-q9-e-ii",
@@ -16287,7 +16421,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q9(e)(ii)",
-  "questionText": "Find |∠ ACB| , the angle that the roof makes at the point C. Give your answer correct to the nearest degree. Remember that |BC| = 4∙65 m, correct to 2 decimal places",
+  "questionText": "Find |∠ACB|, the angle that the roof makes at the point C. Give your answer correct to the nearest degree. Remember that |BC| = 4·65 m, correct to 2 decimal places.",
   "figureKey": "maths-2022-OL-paper-p055-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16320,8 +16454,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q9-e-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q9-e-ii",
+  "stem": "The diagram below shows part of the roof of a smaller shed (not to scale). Some measurements are marked on the diagram: |AB| = 3 m, |AC| = 7 m and |∠BAC| = 30°."
  },
  {
   "id": "maths-2022-ol-p2-q10-a",
@@ -16332,7 +16467,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q10(a)",
-  "questionText": "Write down one advantage and one disadvantage of carrying out a survey on a sample instead of a population",
+  "questionText": "Write down one advantage and one disadvantage of carrying out a survey on a sample instead of a population.",
   "figureKey": "maths-2022-OL-paper-p056-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16360,8 +16495,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q10-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q10-a",
+  "stem": "A survey was carried out to investigate the amount and type of exercise that adults in Ireland are taking in 2022. This survey was carried out on a sample of adults in Ireland."
  },
  {
   "id": "maths-2022-ol-p2-q10-b-i",
@@ -16372,45 +16508,74 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q10(b)(i)",
-  "questionText": "A random sample of 1500 people took part in the survey. Show that the margin of error for the survey is 2∙6%, correct to 1 decimal place",
+  "questionText": "A random sample of 1500 people took part in the survey. Show that the margin of error for the survey is 2·6%, correct to 1 decimal place.",
   "figureKey": "maths-2022-OL-paper-p056-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 3, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2022-ol-p2-q10-b-i-r1",
-    "kind": "anyN",
-    "verbatim": "(i) M. E. = 1/√n 1/√n",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "(i) M. E. = 1/√n 1/√n",
-      "M. E. = 1/√1500 1/√1500",
-      "= 0 ∙0258 × 100",
-      "= 2 ∙58 %",
-      "= 2 ∙6 %"
-     ],
-     "perOptionSteps": [
-      2,
-      1,
-      2
-     ]
-    }
+    "id": "maths-2022-ol-p2-q10-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — M.E. = 1/√1500",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·0258 × 100",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 2·58 %",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = 2·6 %",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1/√n written and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formula substituted correctly but not evaluated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-i-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Answer given as 0.0258",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-i-solution-8",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer with supporting work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q10-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q10-b-i",
+  "stem": "A survey was carried out to investigate the amount and type of exercise that adults in Ireland are taking in 2022. This survey was carried out on a sample of adults in Ireland."
  },
  {
   "id": "maths-2022-ol-p2-q10-b-ii",
@@ -16421,7 +16586,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q10(b)(ii)",
-  "questionText": "71% of the sample said that they walk for recreation. Find the number of people from the sample who said that they walk for recreation",
+  "questionText": "71% of the sample said that they walk for recreation. Find the number of people from the sample who said that they walk for recreation.",
   "figureKey": "maths-2022-OL-paper-p056-i2",
   "labelKey": [],
   "tariffModel": {
@@ -16454,8 +16619,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q10-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q10-b-ii",
+  "stem": "A survey was carried out to investigate the amount and type of exercise that adults in Ireland are taking in 2022. This survey was carried out on a sample of adults in Ireland. A random sample of 1500 people took part in the survey."
  },
  {
   "id": "maths-2022-ol-p2-q10-b-iii",
@@ -16466,51 +16632,95 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q10(b)(iii), (iv)",
-  "questionText": "(iii) Use the percentages given in (b)(i) and (b)(ii) to write down a 95% confidence interval for the percentage of all adults in Ireland who walk for recreation, in 2022",
+  "questionText": "(iii) Use the percentages given in (b)(i) and (b)(ii) to write down a 95% confidence interval for the percentage of all adults in Ireland who walk for recreation, in 2022. (iv) According to the 2019 Irish Sport Monitor Report, 65% of the adults in Ireland walked for recreation. Carry out a Hypothesis Test, at the 5% level of significance, to find out if this figure of 65% has changed in 2022, based on the results of the above survey. Clearly state your conclusion and give a reason for your conclusion.",
   "figureKey": "maths-2022-OL-paper-p057-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2022-ol-p2-q10-b-iii-r1",
-    "kind": "anyN",
-    "verbatim": "(iii) 71 −2∙6 ≤ p ≤ 71 + 2∙6",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 3,
-     "options": [
-      "(iii) 71 −2∙6 ≤ p ≤ 71 + 2∙6",
-      "68∙4 ≤ p ≤ 73∙6 [C.I.]",
-      "[H₀ = 65% ]",
-      "[H_A ≠ 65%].",
-      "Conclusion:",
-      "Reject the Null hypothesis and conclude",
-      "that the figure of 65% has changed",
-      "in 2022",
-      "Reason:",
-      "The figure 65% is outside the 95% C.I."
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      3,
-      2
-     ]
-    }
+    "id": "maths-2022-ol-p2-q10-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 71 − 2·6 ≤ p ≤ 71 + 2·6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 68·4 ≤ p ≤ 73·6 [C.I.]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — Reject the Null hypothesis and conclude that the figure of 65% has changed in 2022",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — The figure 65% is outside the 95% C.I.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-iii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Either lower or upper boundary as 68·4 or 73·6 in (iii)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-iii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Conclusion without reason correct in part (iv)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-iii-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Reason without interpretation knowledge shown in part (iv)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-iii-solution-9",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Either part (iii) or part (iv) correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-iii-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Significant work of merit in both parts (Correct substitution in both parts)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-b-iii-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Either part correct and significant work in the other part",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q10-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q10-b-iii",
+  "stem": "A survey was carried out to investigate the amount and type of exercise that adults in Ireland are taking in 2022. This survey was carried out on a sample of adults in Ireland. A random sample of 1500 people took part in the survey; the margin of error is 2·6%. 71% of the sample said that they walk for recreation."
  },
  {
   "id": "maths-2022-ol-p2-q10-c",
@@ -16521,7 +16731,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q10(c)",
-  "questionText": "Assume that 20% of adults in Ireland jog for recreation. Three adults are picked at random. Find the probability that exactly one of these adults jogs for recreation",
+  "questionText": "Assume that 20% of adults in Ireland jog for recreation. Three adults are picked at random. Find the probability that exactly one of these adults jogs for recreation.",
   "figureKey": "maths-2022-OL-paper-p057-i1",
   "labelKey": [],
   "tariffModel": {
@@ -16554,7 +16764,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-OL-ask-p2-q10-c"
  },
  {
@@ -16566,7 +16776,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q10(d)",
-  "questionText": "She could pay for individual classes, at €6 per class. Sinéad estimates that there is: • a 30% chance she will go to no classes in the year, • a 60% chance she will go to 1 class a week, so 52 classes in a year, and • a 10% chance she will go to 2 classes a week, so 104 classes a year",
+  "questionText": "She could pay for individual classes, at €6 per class. Sinéad estimates that there is: a 30% chance she will go to no classes in the year, a 60% chance she will go to 1 class a week, so 52 classes in a year, and a 10% chance she will go to 2 classes a week, so 104 classes a year. Use these figures to work out the expected value of the cost of the classes for a year.",
   "figureKey": "maths-2022-OL-paper-p057-i2",
   "labelKey": [],
   "tariffModel": {
@@ -16599,8 +16809,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q10-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q10-d",
+  "stem": "Sinéad is joining a gym. She will be able to use the gym, and also go to classes."
  },
  {
   "id": "maths-2022-ol-p2-q10-e",
@@ -16611,41 +16822,74 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q10(e)",
-  "questionText": "There are two price plans for the gym, Silver and Gold, as follows: Silver Gold €420 for the year. €670 for the year. Pay €6 for each class. All classes are free",
+  "questionText": "There are two price plans for the gym, Silver and Gold, as follows: Silver, €420 for the year and pay €6 for each class; Gold, €670 for the year and all classes are free. Work out the least number of classes that Sinéad would have to go to in a year, so that the Gold plan would cost less than the Silver plan.",
   "figureKey": "maths-2022-OL-paper-p058-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2022-ol-p2-q10-e-r1",
-    "kind": "anyN",
-    "verbatim": "One relevant operation e.g. 670 − 420 or 670/6 420 + 6n or similar",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Full Credit –1: Finds n, but no or incorrect rounding. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "One relevant operation e.g. 670 − 420 or 670/6 420 + 6n or similar",
-      "(670−420)/6\n420 + 6n > 670 and further work: finds 6n > 250 or mishandles 420 but divides by 6 to find n"
-     ],
-     "perOptionSteps": [
-      3,
-      7
-     ]
-    }
+    "id": "maths-2022-ol-p2-q10-e-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Gold − Silver = €670 − €420 = €250",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-e-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — So least number = 42 [classes]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-e-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 420 + 6n > 670",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-e-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — n = 42 [as n ∈ ℕ]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-e-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One relevant operation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-e-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 420 + 6n or similar",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-e-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 420 + 6n > 670 and further work: finds 6n > 250 or mishandles 420 but divides by 6 to find n",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q10-e-solution-8",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — Finds n, but no or incorrect rounding",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p2-q10-e"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q10-e",
+  "stem": "Sinéad is joining a gym. She will be able to use the gym, and also go to classes."
  },
  {
   "id": "maths-2023-hl-p1-q1-a",
@@ -63533,5 +63777,94 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2022-ol-p2-q9-d",
+  "topicId": "maths-2-4",
+  "conceptId": "p2-q9-d",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 2 Q9(d)",
+  "questionText": "A scale diagram of the front of the shed is shown below. One point on the diagram is marked A. Construct an enlargement of the diagram below, with centre A and a scale factor of 3. Show all of your construction lines clearly.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p2-q9-d-solution-1",
+    "kind": "point",
+    "verbatim": "Note — |AB| ≅ 4·0 cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q9-d-solution-2",
+    "kind": "point",
+    "verbatim": "Note — |AC| ≅ 4·6 cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q9-d-solution-3",
+    "kind": "point",
+    "verbatim": "Note — |AD| ≅ 3·5cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q9-d-solution-4",
+    "kind": "point",
+    "verbatim": "Note — |AE| ≅ 2·4 cm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q9-d-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q9-d-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Draws enlarged image correctly without construction line.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q9-d-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Draws THREE or FOUR rays with at least one image point marked",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q9-d-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Marks off any of the image points to satisfy the Scale Factor (3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q9-d-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Draws ray AD1 along with TWO other correct rays and at least ONE correct image point",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p2-q9-d-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Constructs D1 along with TWO other correct image points",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above the centre of its base. The front face is 12 m wide, its walls are 7 m high and its highest point is 8·5 m high; the shed is 18 m long."
  }
 ]

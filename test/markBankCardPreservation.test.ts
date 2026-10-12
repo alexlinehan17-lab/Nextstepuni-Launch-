@@ -447,6 +447,8 @@ const reviewedMathematicsAdditions = new Set([
   'maths-2022-hl-p2-q4-a-ii', 'maths-2022-hl-p2-q8-a-v', 'maths-2022-hl-p2-q2-a',
   // 2022 OL Paper 1 review: Q5(a)(i)-(ii) had no card.
   'maths-2022-ol-p1-q5-a',
+  // 2022 OL Paper 2 review: Q9(d) had no card.
+  'maths-2022-ol-p2-q9-d',
 ]);
 // Whole Higher/Ordinary papers reviewed independently from 2026-10-11 onward.
 // Each paper's new tasks are pinned by their own identity hash below.

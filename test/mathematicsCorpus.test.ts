@@ -35,6 +35,7 @@ import ordinary2023p2 from '../scripts/markbank/mathematics/reviews/2023-ordinar
 import higher2022p1 from '../scripts/markbank/mathematics/reviews/2022-higher-p1.json';
 import higher2022p2 from '../scripts/markbank/mathematics/reviews/2022-higher-p2.json';
 import ordinary2022p1 from '../scripts/markbank/mathematics/reviews/2022-ordinary-p1.json';
+import ordinary2022p2 from '../scripts/markbank/mathematics/reviews/2022-ordinary-p2.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
 import ordinary2026p1 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p1.json';
@@ -856,6 +857,7 @@ describe.each([
   { year: 2022, level: 'higher' as const, number: 1, count: 43, review: higher2022p1 },
   { year: 2022, level: 'higher' as const, number: 2, count: 43, review: higher2022p2 },
   { year: 2022, level: 'ordinary' as const, number: 1, count: 47, review: ordinary2022p1 },
+  { year: 2022, level: 'ordinary' as const, number: 2, count: 50, review: ordinary2022p2 },
 ])('$year $level Mathematics Paper $number independent source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
   const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
@@ -906,5 +908,14 @@ describe('2022 Higher Mathematics Paper 2 six-category scale and restored tasks'
     const verbatims = card('2-a').rows.map(row => row.verbatim);
     expect(verbatims).toContain('High Partial Credit — Fully correct substitution into formula');
     expect(verbatims).toContain('High Partial Credit — 8 + 4/5 (−1 − 8) and −4 + 4/5 (3 − (−4)), or equivalent');
+  });
+});
+
+describe('2022 Ordinary Mathematics Paper 2 added construction', () => {
+  it('attaches the page measuring tool only to the scaled enlargement', () => {
+    const measured = ORDINARY.filter(card => card.id.startsWith('maths-2022-ol-p2-') && card.sourceMaterial?.measurementRequired);
+    expect(measured.map(card => card.id)).toEqual(['maths-2022-ol-p2-q9-d']);
+    const hitOrMiss = ORDINARY.find(card => card.id === 'maths-2022-ol-p2-q6-a-i')!;
+    expect('mathematicsScale' in hitOrMiss && hitOrMiss.mathematicsScale?.marks).toEqual([0, 5]);
   });
 });
