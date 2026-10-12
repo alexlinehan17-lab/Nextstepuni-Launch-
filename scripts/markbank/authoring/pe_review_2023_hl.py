@@ -146,8 +146,7 @@ for part,*_ in TASKS:
     if part.startswith('13'):
         CONTEXT[part]='Read the coaching case study on original paper pages 15–16, including the coaching statistics, before answering this part.'
 
-VARIANTS={}
-VARIANT_REQUIREMENTS={}
+CHOICES={}
 SOURCE_POOLS={}
 EXPECTED_QUESTION_TOTALS={**{n:8 for n in range(1,13)},13:50,**{n:40 for n in range(14,19)}}
 EXPECTED_SELECTION_SCAN=[[2,'any 10'],[2,'any three'],[2,'or'],[3,'or'],[3,'any two'],[6,'named physical activity'],[9,'one of'],[12,'any two'],[15,'one of'],[15,'or'],[21,'any three'],[24,'any two'],[26,'one of'],[33,'one of'],[35,'or'],[47,'or'],[48,'or'],[48,'or']]

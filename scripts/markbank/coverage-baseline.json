@@ -603,8 +603,8 @@
     "refsHash": "98497719950dbd78"
   },
   "physical-education": {
-    "cards": 873,
-    "contentHash": "7defea753069bc7a",
+    "cards": 772,
+    "contentHash": "bf37bb69743b0e63",
     "coveragePct": 100.0,
     "covered": 741,
     "excluded": 0,
@@ -615,7 +615,7 @@
       "count": 13,
       "hash": "0dbddd431bb256fe"
     },
-    "refsHash": "7282e24c7bbdb8ca"
+    "refsHash": "95be090e951fe8e2"
   },
   "physics": {
     "cards": 1133,

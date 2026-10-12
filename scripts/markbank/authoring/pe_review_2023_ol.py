@@ -6,7 +6,6 @@ four separately marked items; their original IDs follow the first item.
 Q10: choose two of three (3 routes). Q16(c): choose two of four (6 routes).
 Verified old tariff corrections: Q5 5→8; Q14(a)(i) 4→8; Q16(c) 8→16.
 """
-from itertools import combinations
 
 PAPER_PAGE_COUNT=36
 SCHEME_PAGE_COUNT=44
@@ -171,12 +170,12 @@ CONTEXT['13diii']+=' Choose the three fitness components required in 13(d)(ii), 
 
 MARKETING=['Sports endorsement','Sports merchandising','Sports related advertising']
 PSYCHOLOGY=['Confidence','Anxiety','Motivation','Concentration']
-def pairs(options):
-    return [('-and-'.join(s.lower().replace(' ','-') for s in pair),' and '.join(pair)) for pair in combinations(options,2)]
-VARIANTS={'10':pairs(MARKETING),'16c':pairs(PSYCHOLOGY)}
-VARIANT_REQUIREMENTS={
- '10':'Explain both terms in this practice pair. The original paper asks for any two of the three printed terms; each pair carries eight marks.',
- '16c':'Explain both factors in this practice pair and describe the impact of each on performance. The original paper asks for any two of four printed factors; each pair carries sixteen marks.',
+# A printed choice is ONE card (AGENTS.md, 2026-10-12): the printed question
+# with its whole pool, the scheme's own grid, and for choose-N the printed
+# instruction plus one criterion per chosen item. pe_complete.py emits one card.
+CHOICES={
+ '10':{'choose':2,'pool':MARKETING,'instruction':'Explain two of the following terms:','slots':['First term you chose','Second term you chose']},
+ '16c':{'choose':2,'pool':PSYCHOLOGY,'instruction':'Explain two psychological factors from the list below and describe the impact that they can have on performance.','slots':['First factor you chose','Second factor you chose']},
 }
 SOURCE_POOLS={
  '10':[(8,'Explain two of the following terms:'),(8,'Sports endorsement'),(8,'Sports merchandising'),(8,'Sports related advertising')],
@@ -194,7 +193,7 @@ SELECTION_REVIEW=[
  {'pages':[2,10,36],'kind':'context-or-boilerplate','reason':'Pen colours, case-study descriptions/quotes and copyright text are not choices.'},
  {'pages':[3,4,18,20,21,26],'kind':'open-response','reason':'Fitness component, activity, structure/strategy/compositional element, learning stages, training principles, cycles/phases and roles are chosen from subject knowledge with no finite printed named pool. The two Q3 examples are excluded. Slash terms allow an appropriate kind of response, not a closed named option list.'},
  {'pages':[7,9],'kind':'individually-marked-items','reason':'Q9 has four two-mark matches with one correct answer per row. Q12 has four two-mark true/false statements. Split each item; options are possible answers, not alternative essay routes. Preserve all options on each matching item.'},
- {'pages':[8,23],'kind':'closed-choose-two','reason':'Q10 is C(3,2)=3 marketing pairs; Q16(c) is C(4,2)=6 psychology pairs. Each pair is generated mechanically with its complete tariff.'},
+ {'pages':[8,23],'kind':'closed-choose-two','reason':'Q10 asks for two of three printed terms (4 + 4) and Q16(c) two of four printed factors (2 x 8). One card each with two slots at the per-item tariff, never one card per pair.'},
  {'pages':[5,15,16,22,23,24],'kind':'required-response-components','reason':'Both supports and barriers, all three athletes, all three event phases, and both unfilled PED categories are required. Q13(d) and Q16(a) split at their printed roman boundaries. Human growth hormone is a supplied example, not an unanswered task or choice.'},
 ]
 

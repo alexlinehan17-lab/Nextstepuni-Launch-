@@ -209,17 +209,20 @@ CONTEXT = {
  '15ai':'Figure 5 shows common food sources of carbohydrates.',
  '16d':'Read Figure 6 and its accompanying text about Katie Ledecky’s world record and Michael Phelps’s silver medal on paper page 24. The relative headline sizes are part of the source.',
  '17aii':'Use all four continua on the original paper page 25; name your activity and skill.',
- '17cii':'Use the selected body-type illustration in Figure 8 on paper page 27.',
+ '17cii':'Question 17(c)(i): Label the body types shown in Figure 8.',
  '17d':'Hegemony means one group’s dominance over another, supported by legitimating norms and ideas. The paper compares the Irish men’s first international rugby game in 1875 with the women’s first in 1993.',
  **{part:'As part of your Leaving Certificate Physical Education class you organised an event/performance in a physical activity.' for part in ('18bi','18bii','18biii')},
  **{part:'Figure 9 shows the GPS heatmap and accompanying performance data for Aaron Connolly in Ireland’s UEFA Nations League game against Bulgaria. Read the full figure, numerical data and colour key on paper page 31.' for part in ('18ci','18cii')},
 }
-VARIANTS = {'17cii':[('left','Left-hand body type'),('centre','Middle body type'),('right','Right-hand body type')]}
-VARIANT_REQUIREMENTS = {'17cii':'Identify the selected illustration in Figure 8 and give a physical activity appropriate to that body type.'}
+# A printed choice is ONE card (AGENTS.md, 2026-10-12): the printed question
+# with its whole pool, the scheme's own grid, and for choose-N the printed
+# instruction plus one criterion per chosen item. pe_complete.py emits one card.
+# Figure 8 prints three unlabelled body types: the pool is positional, not printed text.
+CHOICES = {'17cii':{'choose':1,'pool':['Left-hand body type','Middle body type','Right-hand body type'],'poolPrinted':False,'stemPrinted':True}}
 SOURCE_POOLS = {'17cii':[(27,'Label the body types shown in Figure 8.'),(27,'For one of the body types identified by you')]}
 SELECTION_REVIEW = [
  {'parts':['instructions','section-a','section-c'],'decision':'exam-level-selection','reason':'Answer five short questions and two long questions; all questions and separately marked parts are included.'},
- {'parts':['17cii'],'decision':'expand','options':VARIANTS['17cii'],'reason':'Figure 8 prints three body types. Expand the follow-up one-of instruction into three six-mark routes, identified by their positions without supplying the preceding identification answers.'},
+ {'parts':['17cii'],'decision':'one-card','options':CHOICES['17cii']['pool'],'reason':'Figure 8 prints three body types; the follow-up asks about one of them and the scheme marks any with one six-mark grid: one card, without supplying the preceding identification answers.'},
  {'parts':['3a','3b','3c','3d'],'decision':'multiple-choice-answer','reason':'Each two-mark MCQ has one correct answer. Its distractors are answer options, not alternative examination tasks. Keep all printed answer options inside each task.'},
  {'parts':['1b','2','10a','10b','11','12b','14aii','15aii','15ciii','16c','17aii','17bi','17bii'],'decision':'open-response','reason':'Named activities, skills, practices, axes, tests, methods and initiatives are unrestricted knowledge responses; the paper prints no finite elective pool.'},
  {'parts':['13ei','13eii'],'decision':'candidate-response','reason':'The fitness components and follow-up training methods come from the candidate’s response; published scheme examples are not a finite printed elective pool.'},

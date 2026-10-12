@@ -88,6 +88,7 @@ import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politic
 import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/accounting/higher';
 import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
+import PE_FROZEN_MANIFEST from '../scripts/markbank/authored/physical-education.json';
 
 import { CARDS as BULGARIAN_HIGHER } from '../components/MarkBank/cards/bulgarian/higher';
 import { CARDS as CROATIAN_HIGHER } from '../components/MarkBank/cards/croatian/higher';
@@ -762,12 +763,15 @@ const decks = [
    * components are cards dcg-2022-hl-c5-3 .. -7. Nothing removed. */
   ['dcg:higher', DCG_HIGHER, 307, '0f693f13e6222711fc241d1d1c8c0e00d3dfd765530de8243d5117da0a1729fc'],
   ['dcg:ordinary', DCG_ORDINARY, 238, 'd0398830a5866de46dfbe76ed96ac0f924ee1764f6dad6728bc7260ae8e3e61a'],
-  /* Physical Education: all 13 paper/scheme pairs visually swept, separately
-   * marked tasks and every finite printed route reviewed. 741/741 raw asks
-   * reconciled with no exclusions, open asks or orphans. All 221 prior IDs
-   * retained; 652 added. Coursework remains outside the written-paper deck. */
-  ['physical-education:higher', PE_HIGHER, 443, '016e4e0fc8439483aa514e706583844defa97c381582bef2dd8f3534e6020d3c'],
-  ['physical-education:ordinary', PE_ORDINARY, 430, 'cc2cb42a83954fb54a963940544e041110c5a31dbe0cce4c4aff89877632ac21'],
+  /* Physical Education: the 221 IDs frozen on main (125 Higher / 96 Ordinary,
+   * main's original hashes) in the additive form: the frozen identity is every
+   * live ID of the frozen manifest plus any Physical Education alias key, and
+   * the reviewed corpus's additions are pinned separately below. 2026-10-12: a
+   * printed choice is one card, so 101 branch-only route cards were withdrawn;
+   * the five live route-family IDs (q15ci, q15cii 2020 HL; q14aii 2025 HL;
+   * q17cii 2021 OL; q16c 2023 OL) are the collapsed cards' own IDs. */
+  ['physical-education:higher', PE_HIGHER, 125, '2b937885f9ae0c9d7c2952d43c0c2cb44275bd31414d813dee6c98d20bb8525e'],
+  ['physical-education:ordinary', PE_ORDINARY, 96, '9f4fab469becb01ab3ce73e4b6301a270e68ea5310bd0225322b0cb65a1ca23f'],
   // New Accounting decks, enrolled after the complete paper/scheme sweep,
   // zero-open reconciliation and legacy Atlas/answer-ID preservation passed.
   ['accounting:higher', ACCOUNTING_HIGHER, 726, '711926a26f0abeb18a4c26f8b6be51263c7d69ac2738aff715f05b4f8431667f'],
@@ -778,11 +782,43 @@ const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
   .update(cards.map((card) => card.id).sort().join('\n'))
   .digest('hex');
 
+const idHash = (ids: readonly string[]) => createHash('sha256')
+  .update([...ids].sort().join('\n'))
+  .digest('hex');
+
+/* Additive, alias-aware decks: the frozen set is pinned with main's own count and
+ * hash, and reviewed additions are pinned separately, so a deliberate change to
+ * the additions can never rewrite or hide a frozen identity. */
+const peFrozen = new Set(PE_FROZEN_MANIFEST.map(card => card.id));
+const peAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('pe-'));
+const frozenIds = (name: string, cards: readonly { id: string }[]) => {
+  const ids = cards.map(card => card.id);
+  if (!name.startsWith('physical-education:')) return ids;
+  const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
+  return [...ids.filter(id => peFrozen.has(id)), ...peAliasIds.filter(id => id.includes(level))];
+};
+const peAdditions = {
+  higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
+  ordinary: [PE_ORDINARY, 294, '097f2e5140a024bf28633d1aa17898f041acbdb6ab658a5afd65eb8ba5681ac2'],
+} as const;
+
 describe('Mark Bank card preservation', () => {
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
-    expect(cards.length, `${name}: card count changed`).toBe(count);
-    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(count);
-    expect(identityHash(cards), `${name}: a card ID was removed or replaced`).toBe(hash);
+    const frozen = frozenIds(name, cards);
+    expect(frozen.length, `${name}: card count changed`).toBe(count);
+    expect(new Set(frozen).size, `${name}: duplicate frozen card IDs`).toBe(count);
+    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
+    expect(idHash(frozen), `${name}: a card ID was removed or replaced`).toBe(hash);
+  });
+
+  it.each(Object.entries(peAdditions))('pins the reviewed Physical Education %s additions beside the frozen set', (_, [cards, count, hash]) => {
+    // 2026-10-12: 652 -> 551 additions (443/430 -> 382/390 cards). Each printed
+    // choice is one card; the 101 per-option and per-pair route cards were
+    // branch-only and are withdrawn rather than aliased.
+    const additions = cards.map(card => card.id).filter(id => !peFrozen.has(id));
+    expect(additions).toHaveLength(count);
+    expect(additions.filter(id => peAliasIds.includes(id))).toEqual([]);
+    expect(idHash(additions)).toBe(hash);
   });
 
   it('protects the complete current bank', () => {
@@ -796,7 +832,9 @@ describe('Mark Bank card preservation', () => {
     // Politics adds 1,086 tasks; all previous subjects retain their IDs.
     // Politics then folds its branch-only choice routes into their printed
     // tasks, 1,086 -> 622 (2026-10-12): 23,539 - 464.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(23_075);
+    // Physical Education folds its 101 branch-only route cards into their
+    // printed tasks (2026-10-12): 23,075 - 101.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(22_974);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

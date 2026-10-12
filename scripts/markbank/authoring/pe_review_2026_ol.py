@@ -60,7 +60,7 @@ for i,(area,answer,topic) in enumerate([
     PART_REF_OVERRIDES[part]=f'Q7 · row {i}'
     TASKS.append((part,topic,[6],[7],f'Identify the appropriate analysis method or test for this performance area: {area}.\n\nMethods/tests: {METHODS}',[fixed('Method/test',2,answer+'.')]))
 TASKS += [
-('8','0-3',[7],[7],'Explain how one type of practice from this list could be used to improve a skill of your choice: Massed Practice; Part Practice; Variable Practice.',
+('8','0-3',[7],[7],'Explain how one type of practice, from the list below, could be used to improve a skill of your choice.\nMassed Practice\nPart Practice\nVariable Practice',
  [('Explanation',8,'Clear and accurate explanation of the selected method linked to improving a named skill: 6–8; accurate linked explanation: 4–5; appropriate method explanation: 1–3.')]),
 ('9','1-17',[7],[8],'Outline how one technological development has positively impacted a physical activity of your choice.',
  [fixed('Development',2,'Appropriate technological development.'),('Positive impact',6,'Clear and accurate outline of its positive impact on the named activity: 4–6; correct outline: 1–3.')]),
@@ -183,13 +183,12 @@ for part,*_ in TASKS:
         CONTEXT[part]='Read the complete “Figure Skating” case study, skating pattern, photograph and headline on page 10 about Kamila Valieva and the consequences of her positive doping test.'
 CONTEXT['13di']+=' Figure 1 illustrates use of space, which this task excludes.'
 CONTEXT['13dii']+=' Compare both Figure 4a (figure skater) and Figure 4b (artistic swimming team) on page 13.'
-VARIANTS={
- '8':[(x.lower().replace(' ','-'),x) for x in ['Massed Practice','Part Practice','Variable Practice']],
- '13ci':[(x.lower(),x) for x in ['Fairness','Integrity']],
-}
-VARIANT_REQUIREMENTS={
- '8':'Use the selected printed practice method and apply it to a skill of your choice.',
- '13ci':'Explain the selected printed ethical principle with reference to the complete figure-skating case study.',
+# A printed choice is ONE card (AGENTS.md, 2026-10-12): the printed question
+# with its whole pool, the scheme's own grid, and for choose-N the printed
+# instruction plus one criterion per chosen item. pe_complete.py emits one card.
+CHOICES={
+ '8':{'choose':1,'pool':['Massed Practice','Part Practice','Variable Practice']},
+ '13ci':{'choose':1,'pool':['Fairness','Integrity']},
 }
 SOURCE_POOLS={
  '8':[(7,'one type of practice, from the list below'),(7,'Massed Practice'),(7,'Part Practice'),(7,'Variable Practice')],
@@ -201,7 +200,7 @@ EXPECTED_POOL_SCAN=[[2,'any ten'],[2,'three of'],[3,'any ten'],[7,'from the list
 SELECTION_REVIEW=[
  {'pages':[1,2,3,14],'kind':'exam-attempt-rule-or-boilerplate','reason':'Section-level any ten/three and pen colour instructions are not task alternatives.'},
  {'pages':[3,5,6,15,17],'kind':'fixed-answer-matching-or-classification','reason':'Periodisation matches, anti-doping true/false, analysis-method matches, fixed HRF/PRF classifications and concept matches have correct answers, not freely selectable alternatives. Fixed printed rows split at their scheme tariffs; concept matches keep the associated example with each row.'},
- {'pages':[7,12],'kind':'closed-choose-one','reason':'Q8 has three explicitly listed practice methods; Q13(c)(i) has two named ethical principles. Generate all three and both routes respectively.'},
+ {'pages':[7,12],'kind':'closed-choose-one','reason':'Q8 lists three practice methods and Q13(c)(i) two ethical principles; each scheme grid is the same whichever is chosen, so each is one card.'},
  {'pages':[10,13,15,23],'kind':'descriptive-or-flexible-wording','reason':'Patterns or figures, artistic or aesthetic, food or drink and two of his fitness results are descriptive/flexible wording. The original performance comparison requires both images.'},
  {'pages':[4,5,8,9,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],'kind':'open-response-or-required-components','reason':'Own activities, symptoms, methods, components, tests, examples, characteristics and benefits are open knowledge. Weight/circuit training, local/national levels, all skill stages and both other lever classes are required components. Follow-up tests use the candidate’s own chosen components, not a finite printed pool.'},
  {'pages':[32],'kind':'copyright','reason':'Copyright or wording is not a choice directive.'},

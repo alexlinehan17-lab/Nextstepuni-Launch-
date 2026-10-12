@@ -3,7 +3,6 @@ Written scheme 4–25, project 26–33, performance 34–40, other pages
 introductory/blank/end matter. Two valid Q6 component pairings; two Q16(c)
 ethical concepts. The three components in Q17(d) are all compulsory.
 """
-from itertools import product
 PAPER_PAGE_COUNT=44
 SCHEME_PAGE_COUNT=42
 ACKNOWLEDGEMENT_PAGE=43
@@ -38,8 +37,8 @@ TASKS=[
  [('Explanation',4,'Accurate explanation of TUEs and when used: 4; correctly explains when used: 2.',[0,2,4])]),
 ('5b','1-9',[7],[7],'Identify two current Irish anti-doping rules.',
  [fixed(f'Rule {i}',2,'Correct Irish anti-doping rule applicable to this 2026 examination. See the published scheme’s rule list.') for i in (1,2)]),
-('6','0-10',[8],[8],'Choose one Health Related Fitness component and one Performance Related Fitness component from balance, coordination and flexibility. Outline one activity you could use as a combined approach to training to improve both chosen components. You may use a diagram.',
- [fixed('HRF component',1,'Flexibility.'),fixed('PRF component',1,'Balance or coordination, as selected for the practice route.'),('Combined activity',6,'Clear and accurate outline of one activity training both selected components: 4–6; relevant activity outlined: 1–3.')]),
+('6','0-10',[8],[8],'Choose one Health Related Fitness (HRF) component and one Performance Related Fitness (PRF) component from the following:\nbalance\ncoordination\nflexibility\nOutline one activity that you could use as a combined approach to training, to improve performance in the two chosen components of fitness. You may use a diagram if you wish.',
+ [fixed('HRF component',1,'Flexibility.'),fixed('PRF component',1,'Balance or coordination.'),('Combined activity',6,'Clear and accurate outline of one activity training both selected components: 4–6; relevant activity outlined: 1–3.')]),
 ('7','1-22',[9],[8],'Describe, using examples, two influences that impact on the participation patterns of boys in physical activity and sport.',
  [fixed(f'Influence {i}',1,'Relevant influence identified.') for i in (1,2)]+[fixed(f'Description {i}',3,'Accurate description of why and how this influence affects boys’ participation, with an example.') for i in (1,2)]),
 ('8a','0-10',[10],[9],'Identify two benefits of warming-up.',
@@ -133,13 +132,13 @@ CONTEXT={
 for part,*_ in TASKS:
     if part.startswith('13'):
         CONTEXT[part]='Read the complete “Dive into Swimming” case study and photograph on page 16, including Swim Ireland, Olympic/Paralympic swimmers, funding, training and technological developments.'
-VARIANTS={
- '6':[('-and-'.join(x.lower() for x in pair),' and '.join(pair)) for pair in product(['Flexibility'],['Balance','Coordination'])],
- '16c':[(x.lower(),x) for x in ['Sportsmanship','Gamesmanship']],
-}
-VARIANT_REQUIREMENTS={
- '6':'Classify both components in this practice pair and outline one activity that trains both together. Flexibility is the sole HRF option; balance and coordination are the two valid PRF options.',
- '16c':'Use the selected concept and two examples of it, as required by the paper’s either/or checkbox choice.',
+# A printed choice is ONE card (AGENTS.md, 2026-10-12): the printed question
+# with its whole pool, the scheme's own grid, and for choose-N the printed
+# instruction plus one criterion per chosen item. pe_complete.py emits one card.
+CHOICES={
+ # One HRF and one PRF component from three printed: the scheme's 1 + 1 marks are the two slots.
+ '6':{'choose':2,'pool':['balance','coordination','flexibility'],'instruction':'Choose one Health Related Fitness (HRF) component and one Performance Related Fitness (PRF) component from the following:'},
+ '16c':{'choose':1,'pool':['Sportsmanship','Gamesmanship']},
 }
 SOURCE_POOLS={
  '6':[(8,'Choose one Health Related Fitness (HRF) component and one Performance Related Fitness (PRF) component from the following:'),(8,'balance coordination flexibility')],
@@ -150,10 +149,10 @@ EXPECTED_SELECTION_SCAN=[[2,'any three'],[2,'or'],[8,'choose'],[14,'choose'],[21
 EXPECTED_POOL_SCAN=[[2,'any ten'],[2,'three of'],[3,'any ten'],[8,'from the following'],[34,'of the following']]
 SELECTION_REVIEW=[
  {'pages':[1,2,3,21],'kind':'exam-attempt-rule-or-boilerplate','reason':'Any ten/three section instructions and pen colour wording are not practice combinations. The scheme’s Section C heading says 80 in error; the paper and all five 40-mark allocations establish 120 attempted marks.'},
- {'pages':[8],'kind':'closed-constrained-pair','reason':'One HRF and one PRF from three printed components gives two valid pairs: flexibility with balance or coordination. Do not generate the invalid balance/coordination pair.'},
+ {'pages':[8],'kind':'closed-constrained-pair','reason':'One HRF and one PRF from three printed components (flexibility with balance or coordination), marked 1 + 1 + 6 whichever is chosen: one card.'},
  {'pages':[3,4,6,7,9,11,12,13,14,17,19,20,22,24,26,27,28,30,32,33,35,36,38],'kind':'open-response','reason':'Activities, demands, supports, levers, rules, principles, supplements, examples and strategies are open knowledge or the candidate’s own answer. The supplement ban and two distinct scoring systems constrain answers without creating finite printed pools.'},
  {'pages':[6,18,21,24,28,34],'kind':'required-components','reason':'All lever parts, both energy systems, all skill stages, both hegemonic concepts, all supplement columns and all three named fitness components are compulsory components, not alternatives.'},
  {'pages':[23],'kind':'flexible-wording-and-required-comparison','reason':'Aesthetic or artistic is flexible terminology, not a closed choice. The candidate must compare both printed performances.'},
- {'pages':[29],'kind':'closed-choose-one','reason':'Explicit either/or instruction and separate checkboxes create two ten-mark practice routes.'},
+ {'pages':[29],'kind':'closed-choose-one','reason':'Either sportsmanship or gamesmanship, ticked in a checkbox and marked by one ten-mark grid: one card.'},
  {'pages':[44],'kind':'copyright','reason':'Copyright or wording is not a choice directive.'},
 ]

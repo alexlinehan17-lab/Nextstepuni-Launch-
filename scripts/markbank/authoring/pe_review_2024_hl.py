@@ -146,8 +146,7 @@ CONTEXT={
 for part,*_ in TASKS:
     if part.startswith('13'):
         CONTEXT[part]='Read the complete Paris 2024 Olympics and Rhasidat Adeleke case study, with its images and numerical data, on original page 14.'
-VARIANTS={}
-VARIANT_REQUIREMENTS={}
+CHOICES={}
 SOURCE_POOLS={}
 EXPECTED_QUESTION_TOTALS={**{n:8 for n in range(1,13)},13:50,**{n:40 for n in range(14,19)}}
 EXPECTED_SELECTION_SCAN=[[2,'any three'],[2,'or'],[3,'and/or'],[6,'named physical activity'],[8,'named physical activity'],[9,'named physical activity'],[9,'one of'],[12,'named physical activity'],[13,'named physical activity'],[20,'any three'],[20,'named physical activity'],[20,'and/or'],[21,'named physical activity'],[26,'named physical activity'],[27,'named physical activity'],[28,'named physical activity'],[31,'named physical activity'],[44,'or'],[44,'or']]

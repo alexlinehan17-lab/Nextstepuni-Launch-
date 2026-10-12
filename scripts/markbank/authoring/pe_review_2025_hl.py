@@ -6,7 +6,6 @@ Scheme page 20's Section C heading mistakenly says 80 and omits Q17;
 the paper specifies 120, and all five forty-mark questions are represented.
 Old tariffs verified: Q12(b) 4→2, Q13(c)(iii) 4→2, Q17(a) 6→8.
 """
-from itertools import combinations
 PAPER_PAGE_COUNT=44
 SCHEME_PAGE_COUNT=56
 ACKNOWLEDGEMENT_PAGE=43
@@ -43,7 +42,7 @@ TASKS=[
  [('Application',4,'Detailed and accurate description of skill development using the principle: 4; some detail and accuracy: 2.',[0,2,4])]),
 ('7a','1-15',[8],[9], 'Explain adapted physical activity.',
  [('Explanation',2,'Detailed and accurate: 2; some detail and accuracy: 1.')]),
-('7b','1-15',[8],[9], 'Outline two ways that a school or community can provide for adapted physical activity. Choose which context you are answering in: school or community.',
+('7b','1-15',[8],[9], 'Outline two ways that a school or community can provide for adapted physical activity.\nTick the box to indicate which context you are answering in - school or community.\nSchool ☐  Community ☐',
  repeat('Provision',2,3,'Accurate outline relevant to the selected context: 3; some accuracy: 2; appropriate way identified: 1.')),
 ('8a','0-22',[9],[10], 'As part of your studies in Leaving Certificate Physical Education you compared your personal performance to that of a more skilled/model performer. Describe how you conducted this analysis.',
  [('Analysis method',4,'Detailed and accurate description of how the comparison was conducted: 4; some detail and accuracy: 2.',[0,2,4])]),
@@ -59,7 +58,7 @@ TASKS=[
  repeat('Benefit',2,2,'Detailed and accurate outline: 2; some accuracy: 1.')),
 ('10b','1-10',[11],[12], 'Name a sports supplement used by athletes and justify why athletes might use this supplement.',
  [fixed('Supplement',2,'Appropriate sports supplement named.'),('Justification',2,'Detailed and accurate: 2; some detail and accuracy: 1.')]),
-('11','0-14',[12],[13], 'Explain two structures or two strategies that can help an athlete or team succeed. Support your answer with physical activity examples. Choose which context you are answering in: structures or strategies.',
+('11','0-14',[12],[13], 'Explain two structures or two strategies than can help an athlete or team succeed.\nSupport your answer with physical activity examples.\nTick the box to indicate which context you are answering in - structures or strategies.\nStructures ☐  Strategies ☐',
  repeat('Example and explanation',2,4,'Detailed and accurate explanation of the chosen structure/strategy in a physical activity and how it helps success: 4; accurate explanation: 2.',[0,2,4])),
 ('12a','1-9',[13],[14], 'Identify three ways in which Irish anti-doping rules are enforced.',
  repeat('Enforcement method',3,2,'Accurate identification: 1–2 marks, as allocated in the published scheme.')),
@@ -87,13 +86,13 @@ TASKS=[
  [('Explanation',6,'Detailed and accurate explanation referring to two appropriate principles: 5–6; some detail and accuracy referring to one appropriate principle: 3–4; little detail or accuracy: 1–2.')]),
 ('14ai','0-6',[21],[20], 'Define all three components of health-related fitness: cardiorespiratory endurance; body composition; flexibility.',
  [fixed(label,2,'Clear and accurate definition.') for label in ('Cardiorespiratory endurance','Body composition','Flexibility')]),
-('14aii','0-10',[21],[20], 'Apply the FITT formula to one of the following components of health-related fitness: cardiorespiratory endurance; body composition; flexibility.',
+('14aii','0-10',[21],[20], 'Apply the FITT formula to one the following components of health-related fitness:\nCardiorespiratory endurance\nBody composition\nFlexibility',
  [fixed(label,1,'Correct application to the selected component of health-related fitness.') for label in ('Frequency','Intensity','Time','Type')]),
 ('14bi','1-12',[22],[21], 'Define one of the following terms: discrimination; stereotyping; inclusiveness; prejudice.',
  [('Definition',2,'Clear and accurate definition of the selected term: 2; somewhat accurate: 1.')]),
 ('14bii','1-6',[22],[21], 'Explain the concept of sportsmanship related to its influence on engagement in physical activity and sport.',
  [('Explanation',6,'Detailed and accurate explanation of sportsmanship and its influence on engagement: 5–6; some detail and accuracy: 3–4; little detail and accuracy: 1–2.')]),
-('14c','1-14',[23],[22], 'Discuss two developments in physical activity and sport, since 2005, for one of these groups: women; older adults; people with physical disability; people with intellectual disability; different ethnic groups; different socio-economic groups.',
+('14c','1-14',[23],[22], 'Discuss two developments in physical activity and sport, since 2005, for one of the following groups:\n• Women\n• Older Adults\n• People with physical disability\n• People with intellectual disability\n• Different ethnic groups\n• Different socio-economic groups',
  repeat('Development',2,5,'Very good detail and accuracy about developments for the selected group in the twenty years to the 2025 exam: 5; some detail and accuracy: 3–4; little detail and accuracy: 1–2.')),
 ('14d','1-17',[24],[22], 'Examine how advances in technology have impacted performers. Support your answer with physical activity examples.',
  [('Examination',12,'Excellent detail and accuracy with at least three physical activity examples: 10–12; good detail and accuracy with at least two examples: 7–9; some detail and accuracy with at least one example: 4–6; little detail or accuracy: 1–3.')]),
@@ -162,27 +161,18 @@ GROUPS=['Women','Older adults','People with physical disability','People with in
 FITNESS=['Cardiorespiratory endurance','Body composition','Flexibility']
 TERMS=['Discrimination','Stereotyping','Inclusiveness','Prejudice']
 ROLES=['Participant','Parent','Spectator','Coach','Club official']
-def slug(label):
-    return label.lower().replace(' ','-')
-def singles(options):
-    return [(slug(option),option) for option in options]
-VARIANTS={
- '7b':singles(['School','Community']),
- '11':singles(['Structures','Strategies']),
- '14aii':singles(FITNESS),
- '14bi':singles(TERMS),
- '14c':singles(GROUPS),
- '15aii':singles(ROLES),
- '18d':[('-and-'.join(map(slug,pair)),' and '.join(pair)) for pair in combinations(GROUPS,2)],
-}
-VARIANT_REQUIREMENTS={
- '7b':'Outline two ways to provide adapted activity in this selected context. The original paper requires one context; this route carries six marks.',
- '11':'Explain two examples in this selected category, with physical activity examples. The original paper requires one category; this route carries eight marks.',
- '14aii':'Apply all four FITT elements to this selected fitness component. Each of the three printed alternatives carries four marks.',
- '14bi':'Define this selected term. Each of the four printed alternatives carries two marks.',
- '14c':'Discuss two developments since 2005 for this selected group. Each of the six alternatives carries ten marks.',
- '15aii':'Explain the application of a code of ethics to this selected role. Each of the five alternatives carries four marks.',
- '18d':'Compare barriers for both groups in this practice pair. The original paper requires two of six groups; each of the fifteen pairs carries twelve marks.',
+# A printed choice is ONE card (AGENTS.md, 2026-10-12): the printed question
+# with its whole pool, the scheme's own grid, and for choose-N the printed
+# instruction plus one criterion per chosen item. pe_complete.py emits one card.
+CHOICES={
+ '7b':{'choose':1,'pool':['School','Community']},
+ '11':{'choose':1,'pool':['Structures','Strategies']},
+ '14aii':{'choose':1,'pool':FITNESS},
+ '14bi':{'choose':1,'pool':TERMS},
+ '14c':{'choose':1,'pool':GROUPS},
+ '15aii':{'choose':1,'pool':ROLES},
+ # The scheme prices one holistic 12-mark comparison of the two groups, not 6 + 6.
+ '18d':{'choose':2,'pool':GROUPS,'instruction':'Compare the barriers to physical activity participation for two of the following groups:','holistic':'Comparison of the barriers to physical activity participation for the two identified groups: one 12-mark grid.'},
 }
 SOURCE_POOLS={
  '7b':[(8,'Tick the box to indicate which context you are answering in - school or community.')],
@@ -205,8 +195,8 @@ SELECTION_REVIEW=[
  {'pages':[2,3,21],'kind':'exam-attempt-rule','reason':'Any ten/three chooses already represented questions, not combinations of examination attempts.'},
  {'pages':[2,43,44],'kind':'boilerplate-and-attribution','reason':'Pen colours, an RTÉ URL containing choose, and copyright text are not task choices.'},
  {'pages':[6,7,9,17,20,26,28,31,33,37],'kind':'open-response-and-exclusions','reason':'Practice/training principles, named activities, performance components and ethics principles have no finite printed option pool. Anabolic steroids and faking injury are excluded. Aesthetic/artistic and coach/choreographer are flexible wording. The athlete nominees illustrate model performers, not a required selection pool.'},
- {'pages':[8,12],'kind':'closed-binary-context','reason':'Q7(b) and Q11 explicitly require a checkbox selection of one of two named contexts. Generate both routes for each, preserving two responses within each selected context.'},
+ {'pages':[8,12],'kind':'closed-binary-context','reason':'Q7(b) and Q11 ask the candidate to tick one of two printed contexts; the scheme marks either with the same two-response grid. One card each, with the printed checkboxes.'},
  {'pages':[14,15,16],'kind':'case-study-context','reason':'Movement categories, illustrated skills and throwing disciplines provide source context. Q13(a)(i) extracts two concepts from the source; it does not offer a finite list of alternative essay routes.'},
  {'pages':[6,21,25,27,30,35],'kind':'required-headings','reason':'Both goals, all three HRF definitions, both analysis methods and tests, both coaching-quality headings, all three learning stages and all three school supports are compulsory response components.'},
- {'pages':[21,22,23,25,40],'kind':'closed-printed-pools','reason':'Q14(a)(ii) chooses one of three FITT components (paper omits the word of); Q14(b)(i) one of four terms; Q14(c) one of six groups; Q15(a)(ii) one of five roles; Q18(d) two of six groups. Generate every route and pair.'},
+ {'pages':[21,22,23,25,40],'kind':'closed-printed-pools','reason':'Q14(a)(ii) chooses one of three FITT components (the paper omits the word of, kept as printed); Q14(b)(i) one of four terms; Q14(c) one of six groups; Q15(a)(ii) one of five roles; Q18(d) two of six groups. Each scheme grid is the same whichever item is chosen, so each is one card; Q18(d) keeps the scheme’s single 12-mark comparison.'},
 ]

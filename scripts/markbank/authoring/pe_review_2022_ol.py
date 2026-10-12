@@ -4,7 +4,6 @@ Written scheme: PDF 4–21. Project: 22–30. Performance: 31–39. End: 40.
 Detailed allocations take precedence over inconsistent summary rows (Q5,
 Q15(c)(ii)). Q6's original composite ID follows its first two-mark item.
 """
-from itertools import combinations
 from pe_review_2020 import GROUPS
 
 PAPER_PAGE_COUNT=44
@@ -209,7 +208,7 @@ TASKS=[
  'Select any one of the groups from the list below. Describe a barrier and a support to participation for your chosen group: women; people with intellectual disability; older adults; different ethnic groups; people with physical disability; different socio-economic groups.',
  [(kind,3,'Correctly identified and described: 3; identified only: 2. Relevant to the selected group.',[0,2,3]) for kind in ('Barrier','Support')]),
 ('17c','1-18',[34],[19],
- 'Explain the role that the media could play in promoting the provision of physical activities for one of the following groups. You may not use the same group as used in (b). Groups: women; people with intellectual disability; older adults; different ethnic groups; people with physical disability; different socio-economic groups.',
+ 'Explain the role that the media could play in promoting the provision of physical activities for one of the following groups.\nYou may not use the same group as used in (b).\nWomen\nPeople with intellectual disability\nOlder adults\nDifferent ethnic groups\nPeople with physical disability\nDifferent socio-economic groups.',
  [('Explanation',8,'Very good with relevance to group and examples: 8; good with group relevance: 6; fair with no group reference or examples: 2. Use a different group from 17(b).',[0,2,6,8])]),
 ('17di','1-15',[35],[19],
  'Identify one example of how a physical activity of your choice could be adapted to include people with disabilities.',
@@ -274,16 +273,14 @@ CONTEXT={
  '18d':'Question 18(c) asks you to design a tip sheet for young adults encouraging lifelong physical activity, with at least four points. Explain how your sheet does this.',
 }
 PRINCIPLES=['Integrity','Respect','Fairness','Equity']
-VARIANTS={
- '9c':[('intrinsic','Intrinsic feedback'),('extrinsic','Extrinsic feedback')],
- '16c':[('-'.join(p.lower() for p in pair),' and '.join(pair)) for pair in combinations(PRINCIPLES,2)],
- '17b':GROUPS,'17c':GROUPS,
-}
-VARIANT_REQUIREMENTS={
- '9c':'Use the selected type of feedback in your example.',
- '16c':'Discuss both selected principles and their importance to the named physical activity.',
- '17b':'Describe both a barrier and a support for the selected group. If also answering 17(c), choose a different group there.',
- '17c':'Explain the media’s role for the selected group. If also answering 17(b), use a different group there.',
+# A printed choice is ONE card (AGENTS.md, 2026-10-12): the printed question
+# with its whole pool, the scheme's own grid, and for choose-N the printed
+# instruction plus one criterion per chosen item. pe_complete.py emits one card.
+CHOICES={
+ '9c':{'choose':1,'pool':['intrinsic','extrinsic']},
+ '16c':{'choose':2,'pool':PRINCIPLES,'instruction':'Discuss the importance of any two of these principles of ethical practice in relation to a named physical activity.',
+        'slots':['First principle you chose','Second principle you chose']},
+ '17b':{'choose':1,'pool':[label for _,label in GROUPS]},'17c':{'choose':1,'pool':[label for _,label in GROUPS]},
 }
 SOURCE_POOLS={
  '9c':[(11,'either intrinsic or extrinsic feedback')],
@@ -292,9 +289,9 @@ SOURCE_POOLS={
 }
 SELECTION_REVIEW=[
  {'parts':['instructions','section-a','section-c'],'decision':'exam-level-selection','reason':'All short and long questions and separately priced parts are included despite whole-exam selection rules.'},
- {'parts':['9c'],'decision':'expand','options':VARIANTS['9c'],'reason':'Either intrinsic or extrinsic is a closed two-route instruction.'},
- {'parts':['16c'],'decision':'expand','options':VARIANTS['16c'],'reason':'Any two of four named principles creates C(4,2)=6 distinct eight-mark routes, generated mechanically.'},
- {'parts':['17b','17c'],'decision':'expand','options':GROUPS,'reason':'Each part prints six groups. Include all six routes per task and retain the different-group restriction across the two parts.'},
+ {'parts':['9c'],'decision':'one-card','options':CHOICES['9c']['pool'],'reason':'Either intrinsic or extrinsic feedback, marked by one four-mark grid: one card.'},
+ {'parts':['16c'],'decision':'one-card','options':PRINCIPLES,'reason':'Any two of four printed principles, 2 x 4 marks: one card with two four-mark slots, never one card per pair.'},
+ {'parts':['17b','17c'],'decision':'one-card','options':GROUPS,'reason':'Each part prints six groups and the scheme marks the chosen group with one grid: one card per part, keeping the printed different-group restriction.'},
  {'parts':['6a','6b','6c','6d','14a','16bi'],'decision':'answer-classification','reason':'True/false, sportsmanship/gamesmanship and HRF/PRF are answer categories, not alternative examination tasks.'},
  {'parts':['11bi','11bii','11biii'],'decision':'open-knowledge-response','reason':'The paper asks the candidate to name another lever class; it prints no names or diagrams of the alternative classes. Follow-ups use the candidate’s chosen class. The correct class names in the scheme are answers, not a printed option pool.'},
  {'parts':['2b','5b','13aiii','13bii','13biii','13biv','13ciii','15cii','17aii','18bii','18d'],'decision':'candidate-response','reason':'These use candidate-selected tests, activities, aims, principles, strategies, skills, injuries, nutrients or the candidate’s tip sheet. The three-of-four training-principle choice is over the candidate’s own answers, not a finite printed pool.'},

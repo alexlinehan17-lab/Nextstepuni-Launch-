@@ -3,7 +3,6 @@ Written scheme 4–22, Irish bonus 23, project 24–32, performance 33–39,
 remaining pages introductory/end matter. Q18(b)(i) chooses two of three:
 three mechanically generated routes. Q6(a) is one four-mark MCQ.
 """
-from itertools import combinations
 PAPER_PAGE_COUNT=36
 SCHEME_PAGE_COUNT=40
 ACKNOWLEDGEMENT_PAGE=35
@@ -165,8 +164,10 @@ for part,*_ in TASKS:
 for part,dependency in {'13aii':'Choose one reason identified in 13(a)(i).','13bii':'Choose one characteristic identified in 13(b)(i).','13ciii':'Choose one recovery strategy identified in 13(c)(ii); that preceding task is included on page 14.','13dii':'Choose one way identified in 13(d)(i).'}.items():
     CONTEXT[part]+=' '+dependency
 HEADINGS=['Personal fitness','Psychological readiness','Personal attire']
-VARIANTS={'18bi':[('-and-'.join(s.lower().replace(' ','-') for s in pair),' and '.join(pair)) for pair in combinations(HEADINGS,2)]}
-VARIANT_REQUIREMENTS={'18bi':'Describe both demands in this practice pair. The original paper asks for any two of three printed headings; each pair carries eight marks.'}
+# A printed choice is ONE card (AGENTS.md, 2026-10-12): the printed question
+# with its whole pool, the scheme's own grid, and for choose-N the printed
+# instruction plus one criterion per chosen item. pe_complete.py emits one card.
+CHOICES={'18bi':{'choose':2,'pool':HEADINGS,'instruction':'Describe the demands of officiating under two of the following headings:','slots':['First heading you chose','Second heading you chose']}}
 SOURCE_POOLS={'18bi':[(32,'Describe the demands of officiating under two of the following headings:'),(32,'Personal fitness'),(32,'Psychological readiness'),(32,'Personal attire')]}
 EXPECTED_QUESTION_TOTALS={**{n:8 for n in range(1,13)},13:50,**{n:40 for n in range(14,19)}}
 EXPECTED_SELECTION_SCAN=[[2,'any three'],[2,'or'],[3,'named physical activity'],[4,'named physical activity'],[5,'one of'],[7,'named physical activity'],[7,'one of'],[8,'named physical activity'],[8,'or'],[8,'named physical activity'],[8,'one of'],[13,'one of'],[14,'one of'],[15,'one of'],[15,'one of'],[16,'or'],[16,'named physical activity'],[17,'any three'],[20,'named physical activity'],[22,'or'],[22,'named physical activity'],[25,'named physical activity'],[26,'named physical activity'],[29,'named physical activity'],[30,'named physical activity'],[31,'named physical activity'],[31,'or'],[31,'named physical activity'],[33,'one of'],[33,'named physical activity'],[36,'or'],[36,'or']]
@@ -177,7 +178,7 @@ SELECTION_REVIEW=[
  {'pages':[6],'kind':'single-answer-mcq','reason':'Periodisation has one correct statement among three distractor options. This is one four-mark task, not three alternative practice routes.'},
  {'pages':[8,16,22,31],'kind':'flexible-wording','reason':'Media or spectator, practice or performance, coach or choreographer, and scoring or recording describe permissible contexts; no fixed finite route selection is required.'},
  {'pages':[18,19,21,22,28,33],'kind':'required-components','reason':'Positive and negative responses, advantages and disadvantages, all three lever labels, and both nutritional phases are compulsory headings. Keep each printed task intact at its scheme boundary.'},
- {'pages':[32],'kind':'closed-choose-two','reason':'Q18(b)(i) explicitly chooses two of the three named officiating demands. Generate C(3,2)=3 eight-mark routes.'},
+ {'pages':[32],'kind':'closed-choose-two','reason':'Q18(b)(i) asks for two of the three printed headings, 2 x 4 marks: one card with two four-mark slots.'},
  {'pages':[36],'kind':'copyright','reason':'Copyright or wording is not a choice directive.'},
 ]
 

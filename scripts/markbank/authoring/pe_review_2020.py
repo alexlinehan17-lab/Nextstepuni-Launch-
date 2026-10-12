@@ -173,6 +173,10 @@ CONTEXT = {
  '13cii': 'Question 13(c)(i): List the demands of officiating rugby in terms of physical fitness.',
  '13dii': 'Question 13(d)(i): Describe different approaches to physical activity promotion outside of a school environment.',
 }
+# The printed 15(c) lead-in carries the group list both parts choose from.
+CONTEXT['15ci'] = CONTEXT['15cii'] = ('Note: You must answer part (i) and part (ii) of this question 15 (c), with reference to a different group for each part.\n'
+    'As part of your Leaving Certificate Physical Education course, you studied at least two of the following groups:\n'
+    '• Women\n• Older adults\n• People with physical disability\n• People with intellectual disability\n• Different ethnic groups\n• Different socio-economic groups')
 
 GROUPS = [
  ('women','Women'),('older-adults','Older adults'),
@@ -180,15 +184,17 @@ GROUPS = [
  ('intellectual-disability','People with intellectual disability'),
  ('ethnic-groups','Different ethnic groups'),('socio-economic-groups','Different socio-economic groups'),
 ]
-VARIANTS = {'15ci':GROUPS, '15cii':GROUPS}
-VARIANT_REQUIREMENTS = {part:'Use the selected group for this part. When answering both 15(c)(i) and 15(c)(ii), use a different group for the other part.' for part in VARIANTS}
-SOURCE_POOLS = {part:[(28,label) for _,label in GROUPS] + [(28,'at least two of')] for part in VARIANTS}
+# A printed choice is ONE card (AGENTS.md, 2026-10-12): the printed question
+# with its whole pool, the scheme's own grid, and for choose-N the printed
+# instruction plus one criterion per chosen item. pe_complete.py emits one card.
+CHOICES = {part:{'choose':1,'pool':[label for _,label in GROUPS],'stemPrinted':True} for part in ('15ci','15cii')}
+SOURCE_POOLS = {part:[(28,label) for _,label in GROUPS] + [(28,'at least two of')] for part in CHOICES}
 
 SELECTION_REVIEW = [
  {'parts':['paper-page-2','11biii','14c-source','14di','copyright'], 'decision':'incidental-or', 'reason':'Blue or black pen, no speed or endurance training, competitive or highly competitive, aesthetic or artistic (equivalent perspective labels), and copyright prose do not define elective response routes.'},
  {'parts':['13a-source'], 'decision':'incidental-prose', 'reason':'“One of the first women” in the Joy Neville profile describes an achievement; it is not a selection instruction.'},
  {'parts':['paper-instructions','section-c-instructions'], 'decision':'exam-level-selection', 'reason':'Answer any three of Q12–16 is an examination selection rule. All five questions and all their independently priced tasks are included.'},
- {'parts':['15ci','15cii'], 'decision':'expand', 'options':GROUPS, 'reason':'Each separately priced part offers six printed groups. Six routes per part cover every standalone task; the different-group rule is retained on both. Paired exam answers have 6 × 5 valid ordered combinations, not 18 marks for every variant.'},
+ {'parts':['15ci','15cii'], 'decision':'one-card', 'options':GROUPS, 'reason':'Each separately priced part asks about one of six printed groups, and the scheme marks either part with one grid for the chosen group. One card per part, carrying the printed 15(c) lead-in with the list and the different-group note.'},
  {'parts':['11bii'], 'decision':'open-response', 'reason':'The choice is from the candidate’s own previous observations, not a finite printed pool. Keep the predecessor prompt and source chart.'},
  {'parts':['16biii'], 'decision':'answer-selection', 'reason':'All three energy-system rows are compulsory. Selecting a correct event is the response to each row, not an alternative question route.'},
  {'parts':['14dii'], 'decision':'flexible-wording', 'reason':'Practice and/or perform is flexible wording, not a finite printed question selection.'},

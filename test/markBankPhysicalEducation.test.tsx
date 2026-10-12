@@ -21,6 +21,15 @@ import VaultQuestionCard from '../components/PaperTrail/VaultQuestionCard';
 vi.mock('../components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new Promise(() => {})) }));
 
 const reviewed2020 = REVIEWED_CARDS.filter(card => card.year === 2020);
+// A printed choice is ONE card (AGENTS.md, 2026-10-12): the printed question with
+// its whole pool and the scheme's own grid, never a card per option or pair.
+const expectOneChoiceCard = (id: string, marks: number) => {
+  const family = REVIEWED_CARDS.filter(card => card.id === id || card.id.startsWith(`${id}-`));
+  expect(family.map(card => card.id), id).toEqual([id]);
+  expect(family[0].totalMarks, id).toBe(marks);
+  expect(family[0].questionText, id).not.toMatch(/Practice route|practice pair/i);
+  return family[0];
+};
 const get = (part: string) => reviewed2020.find(card => card.id === `pe-2020-hl-q${part}`)!;
 
 describe('Physical Education independent paper review', () => {
@@ -30,7 +39,7 @@ describe('Physical Education independent paper review', () => {
     expect(legacy.filter(card => !live.some(entry => entry.id === card.id))).toEqual([]);
     expect(audit.status).toBe('complete');
     expect(audit.reviewedPapers).toHaveLength(13);
-    expect(live).toHaveLength(873);
+    expect(live).toHaveLength(772);
     expect(audit.retainedLegacyCardCount).toBe(221);
     for (const [level, hash] of [
       ['higher', '2b937885f9ae0c9d7c2952d43c0c2cb44275bd31414d813dee6c98d20bb8525e'],
@@ -42,8 +51,8 @@ describe('Physical Education independent paper review', () => {
     expect(audit.corpusPaperCount).toBe(13);
   });
 
-  it('covers the independently reviewed 2020 tasks and expands both six-group choices', () => {
-    expect(reviewed2020).toHaveLength(59);
+  it('covers the independently reviewed 2020 tasks and keeps each six-group choice as one card', () => {
+    expect(reviewed2020).toHaveLength(49);
     expect(audit.reviewedPapers[0].taskCount).toBe(49);
     // Published per-question maxima, independently checked on the scheme pages.
     const maxima = [2,6,6,8,8,8,8,10,12,12,50,40,40,40,40,40];
@@ -53,11 +62,11 @@ describe('Physical Education independent paper review', () => {
       expect(baseTasks.reduce((sum, card) => sum + card.totalMarks, 0), `Q${question}`).toBe(maxima[question-1]);
     }
     for (const part of ['15ci','15cii']) {
-      const routes = reviewed2020.filter(card => card.id === `pe-2020-hl-q${part}` || card.id.startsWith(`pe-2020-hl-q${part}-`));
-      expect(routes).toHaveLength(6);
-      expect(new Set(routes.map(card => card.questionText)).size).toBe(6);
-      expect(routes.every(card => card.totalMarks === (part === '15ci' ? 6 : 12))).toBe(true);
-      expect(routes.every(card => card.rubric.taskRequirements[0].includes('different group'))).toBe(true);
+      const card = expectOneChoiceCard(`pe-2020-hl-q${part}`, part === '15ci' ? 6 : 12);
+      // The printed 15(c) lead-in carries the group list and the different-group note.
+      expect(card.stem).toContain('with reference to a different group for each part');
+      expect(card.stem).toContain('• Different socio-economic groups');
+      expect(card.rubric.taskRequirements).toEqual([]);
     }
   });
 
@@ -74,19 +83,14 @@ describe('Physical Education independent paper review', () => {
 
   it('covers the 2021 Higher tasks, both alternative pools and published fixed scores', () => {
     const cards = REVIEWED_CARDS.filter(card => card.year === 2021 && card.level === 'higher');
-    expect(cards).toHaveLength(58);
+    expect(cards).toHaveLength(56);
     expect(audit.reviewedPapers.find(paper => paper.year === 2021)?.taskCount).toBe(56);
     const byPart = (part: string) => cards.find(card => card.id === `pe-2021-hl-q${part}`)!;
     for (let n=1; n<=18; n++) {
       const tasks=cards.filter(card => new RegExp(`^pe-2021-hl-q${n}(?:[a-z]+)?$`).test(card.id));
       expect(tasks.reduce((total, card) => total+card.totalMarks,0), `2021 Q${n}`).toBe(n<13?8:n===13?50:40);
     }
-    for (const part of ['10','13dii']) {
-      const routes=cards.filter(card => card.id===`pe-2021-hl-q${part}` || card.id.startsWith(`pe-2021-hl-q${part}-`));
-      expect(routes).toHaveLength(2);
-      expect(new Set(routes.map(card => card.questionText)).size).toBe(2);
-      expect(routes.every(card => card.totalMarks===(part==='10'?8:4))).toBe(true);
-    }
+    for (const part of ['10','13dii']) expectOneChoiceCard(`pe-2021-hl-q${part}`, part==='10'?8:4);
     expect(byPart('13e').totalMarks).toBe(9);
     expect(byPart('13e').sourceMaterial?.pages).toEqual([12,13,17]);
     expect(byPart('13b').totalMarks).toBe(8);
@@ -99,10 +103,10 @@ describe('Physical Education independent paper review', () => {
     expect(cards.every(tariffReconciles)).toBe(true);
   });
 
-  it('covers 2021 Ordinary tasks, separate MCQs and all three body-type routes', () => {
+  it('covers 2021 Ordinary tasks, separate MCQs and the body-type choice as one card', () => {
     const cards=REVIEWED_CARDS.filter(card => card.year===2021 && card.level==='ordinary');
     const paper=audit.reviewedPapers.find(paper => paper.year===2021 && paper.level==='ordinary')!;
-    expect(cards).toHaveLength(61);
+    expect(cards).toHaveLength(59);
     expect(paper.taskCount).toBe(59);
     for (let n=1; n<=18; n++) {
       const tasks=cards.filter(card => new RegExp(`^pe-2021-ol-q${n}(?:[a-z]+)?$`).test(card.id));
@@ -115,10 +119,9 @@ describe('Physical Education independent paper review', () => {
       expect(get(part).questionText).toContain('Choose one answer');
       expect(get(part).rubric.criteria[0].permittedMarks).toEqual([0,2]);
     }
-    const routes=cards.filter(card=>card.id.startsWith('pe-2021-ol-q17cii'));
-    expect(routes).toHaveLength(3);
-    expect(new Set(routes.map(card=>card.questionText)).size).toBe(3);
-    expect(routes.every(card=>card.totalMarks===6 && card.sourceMaterial?.pages[0]===27)).toBe(true);
+    const bodyType=expectOneChoiceCard('pe-2021-ol-q17cii',6);
+    expect(bodyType.sourceMaterial?.pages[0]).toBe(27);
+    expect(bodyType.stem).toBe('Question 17(c)(i): Label the body types shown in Figure 8.');
     expect(get('7').totalMarks).toBe(8);
     expect(get('14aii').totalMarks).toBe(12);
     expect(get('13eii').totalMarks).toBe(6);
@@ -131,21 +134,16 @@ describe('Physical Education independent paper review', () => {
     expect(cards.every(tariffReconciles)).toBe(true);
   });
 
-  it('covers 2022 Higher, including six-group pools, lever routes and visible scheme amendments', () => {
+  it('covers 2022 Higher, including six-group pools, the lever choice and visible scheme amendments', () => {
     const cards=REVIEWED_CARDS.filter(card => card.year===2022 && card.level==='higher');
     const get=(part:string)=>cards.find(card=>card.id===`pe-2022-hl-q${part}`)!;
-    expect(cards).toHaveLength(78);
+    expect(cards).toHaveLength(61);
     expect(audit.reviewedPapers.find(paper=>paper.year===2022 && paper.level==='higher')?.taskCount).toBe(61);
     for(let n=1;n<=18;n++) {
       const tasks=cards.filter(card=>new RegExp(`^pe-2022-hl-q${n}(?:[a-z]+)?$`).test(card.id));
       expect(tasks.reduce((total,card)=>total+card.totalMarks,0),`2022 HL Q${n}`).toBe(n<13?8:n===13?50:40);
     }
-    for(const part of ['5','15b','18b','18aii']) {
-      const routes=cards.filter(card=>card.id===`pe-2022-hl-q${part}` || card.id.startsWith(`pe-2022-hl-q${part}-`));
-      expect(routes).toHaveLength(part==='18aii'?3:6);
-      expect(new Set(routes.map(card=>card.questionText)).size).toBe(routes.length);
-      expect(routes.every(card=>card.totalMarks===(part==='18aii'?4:8))).toBe(true);
-    }
+    for(const part of ['5','15b','18b','18aii']) expectOneChoiceCard(`pe-2022-hl-q${part}`, part==='18aii'?4:8);
     expect(get('13ai').rubric.criteria[0].permittedMarks).toEqual([0,3]);
     expect(get('13b').totalMarks).toBe(9);
     expect(get('16c').totalMarks).toBe(12);
@@ -157,29 +155,25 @@ describe('Physical Education independent paper review', () => {
     expect(get('17c').rubric.criteria).toHaveLength(4);
   });
 
-  it('covers 2022 Ordinary with all ethics pairs, feedback routes and distinct group choices', () => {
+  it('covers 2022 Ordinary with the any-two ethics task, feedback choice and distinct group choices', () => {
     const cards=REVIEWED_CARDS.filter(card=>card.year===2022 && card.level==='ordinary');
     const get=(part:string)=>cards.find(card=>card.id===`pe-2022-ol-q${part}`)!;
-    expect(cards).toHaveLength(88);
+    expect(cards).toHaveLength(72);
     expect(audit.reviewedPapers.find(paper=>paper.year===2022 && paper.level==='ordinary')?.taskCount).toBe(72);
     for(let n=1;n<=18;n++) {
       const tasks=cards.filter(card=>new RegExp(`^pe-2022-ol-q${n}(?:[a-z]+)?$`).test(card.id));
       expect(tasks.reduce((total,card)=>total+card.totalMarks,0),`2022 OL Q${n}`).toBe(n<13?8:n===13?50:40);
     }
-    const principles=['Integrity','Respect','Fairness','Equity'];
-    const expected=principles.flatMap((first,i)=>principles.slice(i+1).map(second=>`${first} and ${second}`));
-    const ethics=cards.filter(card=>card.id==='pe-2022-ol-q16c'||card.id.startsWith('pe-2022-ol-q16c-'));
-    expect(ethics).toHaveLength(6);
-    expect(ethics.map(card=>card.questionText.split('Practice route: ')[1])).toEqual(expected.map(pair=>`${pair}.`));
-    expect(ethics.every(card=>card.totalMarks===8)).toBe(true);
+    const ethics=expectOneChoiceCard('pe-2022-ol-q16c',8);
+    expect(ethics.questionText).toContain('Integrity, respect, fairness and equity');
+    expect(ethics.rubric.taskRequirements).toEqual(['Discuss the importance of any two of these principles of ethical practice in relation to a named physical activity.']);
+    expect(ethics.rubric.criteria.map(c=>[c.label,c.maxMarks])).toEqual([['First principle you chose',4],['Second principle you chose',4]]);
     for(const part of ['17b','17c']) {
-      const routes=cards.filter(card=>card.id===`pe-2022-ol-q${part}`||card.id.startsWith(`pe-2022-ol-q${part}-`));
-      expect(routes).toHaveLength(6);
-      expect(new Set(routes.map(card=>card.questionText)).size).toBe(6);
-      expect(routes.every(card=>card.rubric.taskRequirements[0].includes('different group'))).toBe(true);
-      expect(routes.every(card=>card.totalMarks===(part==='17b'?6:8))).toBe(true);
+      const card=expectOneChoiceCard(`pe-2022-ol-q${part}`, part==='17b'?6:8);
+      expect(card.questionText).toMatch(/different socio-economic groups/i);
     }
-    expect(cards.filter(card=>card.id==='pe-2022-ol-q9c'||card.id.startsWith('pe-2022-ol-q9c-'))).toHaveLength(2);
+    expect(get('17c').questionText).toContain('You may not use the same group as used in (b).');
+    expectOneChoiceCard('pe-2022-ol-q9c',4);
     expect(get('6').questionRef).toBe('2022 OL Q6(a)');
     expect(['6','6b','6c','6d'].map(part=>get(part).totalMarks)).toEqual([2,2,2,2]);
     expect(get('18aii').totalMarks).toBe(2);
@@ -212,23 +206,22 @@ describe('Physical Education independent paper review', () => {
     expect(cards.every(card => card.rubric.taskRequirements?.length===0)).toBe(true);
   });
 
-  it('expands both 2023 Ordinary choice pools and splits the separately marked matching and true/false items', () => {
+  it('keeps both 2023 Ordinary choose-two tasks as one card and splits the separately marked matching and true/false items', () => {
     const cards=REVIEWED_CARDS.filter(card => card.year===2023 && card.level==='ordinary');
     const get=(part:string) => cards.find(card => card.id===`pe-2023-ol-q${part}`)!;
-    expect(cards).toHaveLength(67);
+    expect(cards).toHaveLength(60);
     for (let n=1;n<=18;n++) {
       const tasks=cards.filter(card => new RegExp(`^pe-2023-ol-q${n}(?:[a-z]+)?$`).test(card.id));
       expect(tasks.reduce((sum,card) => sum+card.totalMarks,0), `Q${n}`).toBe(n<13?8:n===13?50:40);
     }
-    for (const [part,pool,marks] of [
-      ['10',['Sports endorsement','Sports merchandising','Sports related advertising'],8],
-      ['16c',['Confidence','Anxiety','Motivation','Concentration'],16],
+    for (const [part,pool,marks,slot] of [
+      ['10',['sports endorsement','sports merchandising','sports related advertising'],8,'term'],
+      ['16c',['confidence','anxiety','motivation','concentration'],16,'factor'],
     ] as const) {
-      const routes=cards.filter(card => card.id===`pe-2023-ol-q${part}` || card.id.startsWith(`pe-2023-ol-q${part}-`));
-      const expected=pool.flatMap((a,i) => pool.slice(i+1).map(b => `${a} and ${b}`));
-      expect(routes.map(card => card.questionText.split('Practice route: ')[1])).toEqual(expected.map(pair => `${pair}.`));
-      expect(new Set(routes.map(card => card.id)).size).toBe(expected.length);
-      expect(routes.every(card => card.totalMarks===marks)).toBe(true);
+      const card=expectOneChoiceCard(`pe-2023-ol-q${part}`,marks);
+      for (const item of pool) expect(card.questionText).toContain(item);
+      expect(card.rubric.criteria.map(c => c.label)).toEqual([`First ${slot} you chose`,`Second ${slot} you chose`]);
+      expect(card.rubric.taskRequirements).toHaveLength(1);
     }
     expect(['9','9b','9c','9d'].map(part => get(part).totalMarks)).toEqual([2,2,2,2]);
     expect(['12','12b','12c','12d'].map(part => get(part).rubric.criteria[0].guidance[0])).toEqual(['True.','False.','False.','True.']);
@@ -269,24 +262,19 @@ describe('Physical Education independent paper review', () => {
     expect(cards.filter(card=>card.section==='B').every(card=>card.sourceMaterial?.pages.includes(14))).toBe(true);
   });
 
-  it('covers 2024 Ordinary, its officiating pairs, MCQ and original visual tasks', () => {
+  it('covers 2024 Ordinary, its any-two officiating task, MCQ and original visual tasks', () => {
     const cards=REVIEWED_CARDS.filter(card=>card.year===2024 && card.level==='ordinary');
     const get=(part:string)=>cards.find(card=>card.id===`pe-2024-ol-q${part}`)!;
-    expect(cards).toHaveLength(62);
+    expect(cards).toHaveLength(60);
     expect(audit.reviewedPapers.find(paper=>paper.year===2024 && paper.level==='ordinary')?.taskCount).toBe(60);
     for(let n=1;n<=18;n++) {
       const tasks=cards.filter(card=>new RegExp(`^pe-2024-ol-q${n}(?:[a-z]+)?$`).test(card.id));
       expect(tasks.reduce((total,card)=>total+card.totalMarks,0),`2024 OL Q${n}`).toBe(n<13?8:n===13?50:40);
     }
-    const routes=cards.filter(card=>card.id==='pe-2024-ol-q18bi'||card.id.startsWith('pe-2024-ol-q18bi-'));
-    expect(routes).toHaveLength(3);
-    expect(new Set(routes.map(card=>card.id)).size).toBe(3);
-    expect(routes.map(card=>card.questionText.split('Practice route: ')[1])).toEqual([
-      'Personal fitness and Psychological readiness.',
-      'Personal fitness and Personal attire.',
-      'Psychological readiness and Personal attire.',
-    ]);
-    expect(routes.every(card=>card.totalMarks===8 && card.sourceMaterial?.pages[0]===32)).toBe(true);
+    const officiating=expectOneChoiceCard('pe-2024-ol-q18bi',8);
+    expect(officiating.sourceMaterial?.pages[0]).toBe(32);
+    expect(officiating.questionText).toContain('personal fitness; psychological readiness; personal attire');
+    expect(officiating.rubric.criteria.map(c=>[c.label,c.maxMarks])).toEqual([['First heading you chose',4],['Second heading you chose',4]]);
     expect(get('6a').questionText).toContain('(iii)');
     expect(get('6a').rubric.criteria[0].permittedMarks).toEqual([0,4]);
     expect(get('1').totalMarks).toBe(8);
@@ -302,32 +290,25 @@ describe('Physical Education independent paper review', () => {
     expect(cards.filter(card=>card.section==='B').every(card=>card.sourceMaterial?.pages.includes(12)&&card.sourceMaterial?.pages.includes(13))).toBe(true);
   });
 
-  it('covers 2025 Higher and every printed route, including all fifteen group pairs', () => {
+  it('covers 2025 Higher with every printed choice as one card, including the two-of-six comparison', () => {
     const cards=REVIEWED_CARDS.filter(card=>card.year===2025 && card.level==='higher');
     const get=(part:string)=>cards.find(card=>card.id===`pe-2025-hl-q${part}`)!;
-    expect(cards).toHaveLength(90);
+    expect(cards).toHaveLength(60);
     expect(audit.reviewedPapers.find(paper=>paper.year===2025 && paper.level==='higher')?.taskCount).toBe(60);
     for(let n=1;n<=18;n++) {
       const tasks=cards.filter(card=>new RegExp(`^pe-2025-hl-q${n}(?:[a-z]+)?$`).test(card.id));
       expect(tasks.reduce((total,card)=>total+card.totalMarks,0),`2025 HL Q${n}`).toBe(n<13?8:n===13?50:40);
     }
-    const groups=['Women','Older adults','People with physical disability','People with intellectual disability','Different ethnic groups','Different socio-economic groups'];
-    const pools: Array<[string,string[],number]>=[
-      ['7b',['School','Community'],6],
-      ['11',['Structures','Strategies'],8],
-      ['14aii',['Cardiorespiratory endurance','Body composition','Flexibility'],4],
-      ['14bi',['Discrimination','Stereotyping','Inclusiveness','Prejudice'],2],
-      ['14c',groups,10],
-      ['15aii',['Participant','Parent','Spectator','Coach','Club official'],4],
-      ['18d',groups.flatMap((a,i)=>groups.slice(i+1).map(b=>`${a} and ${b}`)),12],
-    ];
-    for(const [part,labels,marks] of pools) {
-      const routes=cards.filter(card=>card.id===`pe-2025-hl-q${part}`||card.id.startsWith(`pe-2025-hl-q${part}-`));
-      expect(routes).toHaveLength(labels.length);
-      expect(new Set(routes.map(card=>card.id)).size).toBe(labels.length);
-      expect(routes.map(card=>card.questionText.split('Practice route: ')[1])).toEqual(labels.map(label=>`${label}.`));
-      expect(routes.every(card=>card.totalMarks===marks)).toBe(true);
+    for(const [part,marks] of [['7b',6],['11',8],['14aii',4],['14bi',2],['14c',10],['15aii',4],['18d',12]] as const) {
+      expectOneChoiceCard(`pe-2025-hl-q${part}`,marks);
     }
+    // Printed wording, including the paper's own slips ("than", "one the following").
+    expect(get('7b').questionText).toContain('Tick the box to indicate which context you are answering in - school or community.');
+    expect(get('11').questionText).toContain('two strategies than can help');
+    expect(get('14aii').questionText).toContain('to one the following components');
+    // The scheme prices one holistic 12-mark comparison of the two groups.
+    expect(get('18d').rubric.criteria.map(c=>[c.label,c.maxMarks])).toEqual([['Comparison',12]]);
+    expect(get('18d').rubric.taskRequirements).toEqual(['Compare the barriers to physical activity participation for two of the following groups:']);
     expect(get('12b').totalMarks).toBe(2);
     expect(get('13ciii').totalMarks).toBe(2);
     expect(get('17a').totalMarks).toBe(8);
@@ -344,7 +325,7 @@ describe('Physical Education independent paper review', () => {
     const cards=REVIEWED_CARDS.filter(card=>card.year===2025 && card.level==='ordinary');
     const paper=audit.reviewedPapers.find(paper=>paper.year===2025 && paper.level==='ordinary')!;
     const get=(part:string)=>cards.find(card=>card.id===`pe-2025-ol-q${part}`)!;
-    expect(cards).toHaveLength(87);
+    expect(cards).toHaveLength(77);
     expect(paper.taskCount).toBe(77);
     const baseTasks=[...new Map(paper.cards.map(card=>[card.part,card])).values()];
     for(let n=1;n<=18;n++) {
@@ -352,15 +333,11 @@ describe('Physical Education independent paper review', () => {
       expect(tasks.reduce((total,card)=>total+card.totalMarks,0),`2025 OL Q${n}`).toBe(n<13?8:n===13?50:40);
     }
     for(const part of ['15ci','15cii']) {
-      const routes=cards.filter(card=>card.id===`pe-2025-ol-q${part}`||card.id.startsWith(`pe-2025-ol-q${part}-`));
-      expect(routes).toHaveLength(6);
-      expect(new Set(routes.map(card=>card.id)).size).toBe(6);
-      expect(routes.map(card=>card.questionText.split('Practice route: ')[1])).toEqual([
-        'Women.','Older adults.','People with physical disability.','People with intellectual disability.','Different ethnic groups.','Different socio-economic groups.',
-      ]);
-      expect(routes.every(card=>card.totalMarks===(part==='15ci'?1:8))).toBe(true);
-      expect(routes.every(card=>card.sourceMaterial?.pages.includes(21))).toBe(true);
+      const card=expectOneChoiceCard(`pe-2025-ol-q${part}`,part==='15ci'?1:8);
+      expect(card.sourceMaterial?.pages).toContain(21);
     }
+    expect(get('15ci').questionText).toContain('On the timeline below, identify three major developments');
+    expect(get('15cii').stem).toContain('Question 15(c)(i): On the timeline below');
     for(let i=1;i<=8;i++) {
       const card=get(i===1?'18ai':`18ai-blank-${i}`);
       expect(card.questionText).toContain(`blank ${i}`);
@@ -388,8 +365,8 @@ describe('Physical Education independent paper review', () => {
     expect(cards.filter(card=>card.section==='B').every(card=>card.sourceMaterial?.pages.includes(10))).toBe(true);
   });
 
-  it('covers both 2026 papers with every valid constrained route and fixed table row', () => {
-    for(const [level,short,count,tasks] of [['higher','hl',48,46],['ordinary','ol',65,62]] as const) {
+  it('covers both 2026 papers with each printed choice as one card and every fixed table row', () => {
+    for(const [level,short,count,tasks] of [['higher','hl',46,46],['ordinary','ol',62,62]] as const) {
       const cards=REVIEWED_CARDS.filter(card=>card.year===2026 && card.level===level);
       const paper=audit.reviewedPapers.find(paper=>paper.year===2026 && paper.level===level)!;
       expect(cards).toHaveLength(count);
@@ -401,19 +378,11 @@ describe('Physical Education independent paper review', () => {
       expect(cards.filter(card=>card.section==='B').every(card=>card.sourceMaterial?.pages.includes(short==='hl'?16:10))).toBe(true);
     }
     const get=(short:string,part:string)=>REVIEWED_CARDS.find(card=>card.id===`pe-2026-${short}-q${part}`)!;
-    const pools: Array<[string,string,string[],number]>=[
-      ['hl','6',['Flexibility and Balance','Flexibility and Coordination'],8],
-      ['hl','16c',['Sportsmanship','Gamesmanship'],10],
-      ['ol','8',['Massed Practice','Part Practice','Variable Practice'],8],
-      ['ol','13ci',['Fairness','Integrity'],8],
-    ];
-    for(const [short,part,labels,marks] of pools) {
-      const routes=REVIEWED_CARDS.filter(card=>card.id===`pe-2026-${short}-q${part}`||card.id.startsWith(`pe-2026-${short}-q${part}-`));
-      expect(routes).toHaveLength(labels.length);
-      expect(new Set(routes.map(card=>card.id)).size).toBe(labels.length);
-      expect(routes.map(card=>card.questionText.split('Practice route: ')[1])).toEqual(labels.map(label=>`${label}.`));
-      expect(routes.every(card=>card.totalMarks===marks)).toBe(true);
+    for(const [short,part,marks] of [['hl','6',8],['hl','16c',10],['ol','8',8],['ol','13ci',8]] as const) {
+      expectOneChoiceCard(`pe-2026-${short}-q${part}`,marks);
     }
+    expect(get('hl','6').questionText).toContain('component from the following:\nbalance\ncoordination\nflexibility');
+    expect(get('ol','8').questionText).toContain('one type of practice, from the list below,');
     expect(get('hl','6').rubric.criteria.map(c=>c.maxMarks)).toEqual([1,1,6]);
     expect(get('hl','14a').rubric.criteria[0].permittedMarks).toEqual([0,1,2,4]);
     expect(get('hl','14d').sourceMaterial?.pages).toEqual([23]);
@@ -433,7 +402,7 @@ describe('Physical Education independent paper review', () => {
     }
   });
 
-  it('gives every reviewed Mark Bank route an Atlas task with the same canonical topic and specification', () => {
+  it('gives every reviewed Mark Bank card an Atlas task with the same canonical topic and specification', () => {
     const atlas=questionsForTopics('physical-education',null);
     const anchors = new Map<string, string[]>();
     expect(PHYSICAL_EDUCATION_TASKS).toHaveLength(REVIEWED_CARDS.length);
@@ -463,9 +432,9 @@ describe('Physical Education independent paper review', () => {
       // tags (the 2022 OL English paper has anchors but no legacy tag row).
       expect(anchors.get(anchorPath), task.cardId).toContain(task.parentQuestion);
     }
-    expect(atlas.filter(q => q.year===2020 && q.level==='higher')).toHaveLength(59);
-    expect(atlas.filter(q => q.year===2021 && q.level==='higher')).toHaveLength(58);
-    expect(atlas.filter(q => q.year===2021 && q.level==='ordinary')).toHaveLength(61);
+    expect(atlas.filter(q => q.year===2020 && q.level==='higher')).toHaveLength(49);
+    expect(atlas.filter(q => q.year===2021 && q.level==='higher')).toHaveLength(56);
+    expect(atlas.filter(q => q.year===2021 && q.level==='ordinary')).toHaveLength(59);
     expect(subjectAtlasStats('physical-education').questions).toBe(atlas.length);
     const biomech='physical-education-higher-1-learning-and-improving-skill-technique-biomechanics';
     expect(siblingsFor('physical-education',biomech).some(q => q.year===2021 && q.n==='14(a)')).toBe(false);
@@ -473,10 +442,11 @@ describe('Physical Education independent paper review', () => {
   });
 
   it('renders the shared task in Atlas without exposing its marking scheme before reveal', async () => {
-    const task=PHYSICAL_EDUCATION_TASKS.find(task => task.cardId==='pe-2021-hl-q13dii-wellness')!;
+    const task=PHYSICAL_EDUCATION_TASKS.find(task => task.cardId==='pe-2021-hl-q13dii')!;
     const save=vi.fn(), open=vi.fn();
     render(<VaultQuestionCard sibling={task} saved={false} onToggleReview={save} onOpenInPaper={open} />);
-    expect(await screen.findByText(/Practice route: Daily wellness parameters/)).toBeInTheDocument();
+    expect(await screen.findByText(/Outline how one of the measures named by you/)).toBeInTheDocument();
+    expect(screen.queryByText(/Practice route/)).not.toBeInTheDocument();
     expect(screen.queryByRole('button',{name:/published marking guide/i})).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('button',{name:'Add to daily review'}));
     expect(save).toHaveBeenCalledOnce();
@@ -486,6 +456,24 @@ describe('Physical Education independent paper review', () => {
     expect(screen.getByRole('button',{name:/published marking guide/i})).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button',{name:'Set Outline to 4 marks'}));
     expect(screen.getByRole('button',{name:'Set Outline to 4 marks'})).toHaveAttribute('aria-pressed','true');
+  });
+
+  it('never publishes a printed choice as route siblings', () => {
+    // A printed question is never published twice in one sitting, and no card
+    // names a practice route in place of the printed wording.
+    const refs = REVIEWED_CARDS.map(card => `${card.year}|${card.level}|${card.questionRef}`);
+    expect(refs.filter((ref, index) => refs.indexOf(ref) !== index)).toEqual([]);
+    expect(REVIEWED_CARDS.filter(card => /Practice route|practice pair/i.test(`${card.questionText} ${card.stem}`))).toEqual([]);
+    // One card per declared choice family; choose-N cards carry the printed
+    // instruction and either N per-item slots or the scheme's own holistic grid.
+    const choices = audit.reviewedPapers.flatMap(paper => paper.cards.filter(card => card.choice));
+    expect(choices).toHaveLength(29);
+    expect(choices.filter(card => card.choice!.choose > 1)).toHaveLength(6);
+    for (const entry of choices) {
+      const card = REVIEWED_CARDS.find(card => card.id === entry.cardId)!;
+      expectOneChoiceCard(entry.cardId, entry.totalMarks);
+      if (entry.choice!.choose > 1) expect(card.rubric.taskRequirements, entry.cardId).toEqual([entry.choice!.instruction]);
+    }
   });
 
   it('provides the complete question material, rotated chart and original answer diagrams', () => {

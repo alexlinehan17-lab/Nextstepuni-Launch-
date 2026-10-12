@@ -65,7 +65,7 @@ TASKS = [
  [('Description',4,'Accurate description of impact. Good: 4; fair: 2.',[0,2,4])]),
 ('10','0-14',[9],[8],
  'With reference to a named physical activity, describe two structures or two strategies that performers can use in competition.',
- twice('Description','Must be relevant to the named physical activity and the selected route. Good: 4; fair: 2.')),
+ twice('Description','Must be relevant to the named physical activity and to structures or strategies, as chosen. Good: 4; fair: 2.')),
 ('11','1-22',[10],[8],
  'Explain why a lack of media coverage of women’s sports might maintain gender stereotyping of women in sport.',
  [('Explanation',8,'Accurate explanation. Good: 8; fair: 6; poor: 4; very poor: 2.',[0,2,4,6,8])]),
@@ -210,13 +210,12 @@ CONTEXT = {
  '18di':'Figure 15 shows Jordan drinking Gatorade, which calls itself “The Sports Fuel Company”. Sports drinks are excluded from this response.',
  '18dii':'Question 18(d)(i): Name four supplements other than sports drinks that could enhance a basketball player’s performance.',
 }
-VARIANTS = {
- '10':[('structures','Two structures'),('strategies','Two strategies')],
- '13dii':[('perceived-exertion','Sessional rate of perceived exertion'),('wellness','Daily wellness parameters')],
-}
-VARIANT_REQUIREMENTS = {
- '10':'Describe two examples from the selected route in a named physical activity.',
- '13dii':'Use the selected monitoring measure from the case study and explain how it helps avoid overtraining.',
+# A printed choice is ONE card (AGENTS.md, 2026-10-12): the printed question
+# with its whole pool, the scheme's own grid, and for choose-N the printed
+# instruction plus one criterion per chosen item. pe_complete.py emits one card.
+CHOICES = {
+ '10':{'choose':1,'pool':['structures','strategies']},
+ '13dii':{'choose':1,'pool':['sessional rate of perceived exertion','daily wellness parameters']},
 }
 SOURCE_POOLS = {
  '10':[(9,'two structures or two strategies')],
@@ -224,8 +223,8 @@ SOURCE_POOLS = {
 }
 SELECTION_REVIEW = [
  {'parts':['instructions','section-a','section-c'], 'decision':'exam-level-selection','reason':'Answer five of twelve short questions and two of five long questions. Include every question and each separately priced part.'},
- {'parts':['10'], 'decision':'expand','options':VARIANTS['10'],'reason':'Printed two structures OR two strategies defines two alternative routes, each worth eight marks.'},
- {'parts':['13dii'], 'decision':'expand','options':VARIANTS['13dii'],'reason':'The case study supplies exactly two monitoring measures. Expand the follow-up choose-one instruction into both four-mark routes; preserve the preceding identification task separately.'},
+ {'parts':['10'], 'decision':'one-card','options':CHOICES['10']['pool'],'reason':'Two structures OR two strategies, both marked by the same 2 x 4 descriptors: one eight-mark card.'},
+ {'parts':['13dii'], 'decision':'one-card','options':CHOICES['13dii']['pool'],'reason':'The case study supplies exactly two monitoring measures and the scheme marks either with one four-mark grid: one card; the preceding identification task stays separate.'},
  {'parts':['5'], 'decision':'open-response','reason':'Any two phases is a knowledge response with no closed option pool printed in the paper. The scheme’s examples are answers, not question routes.'},
  {'parts':['2','4b','5','10','16ci','16d','18a','18b'], 'decision':'open-activity','reason':'Named activities and the named NGB are unrestricted candidate choices.'},
  {'parts':['13diii','13div','16cii','18dii'], 'decision':'candidate-response','reason':'Fitness components and technologies/supplements come from the candidate’s own answers. The paper does not supply a fixed elective pool; required explanations remain together.'},

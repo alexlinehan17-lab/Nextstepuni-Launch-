@@ -129,7 +129,7 @@ TASKS += [
  repeat('Factor',2,4,'Factor described: 3–4; some relevant information: 1–2.')),
 ('15biv','0-11',[19,20],[20],'Explain two ways an athlete can mentally prepare for performance.',
  repeat('Preparation',2,4,'Accurate explanation: 4; somewhat accurate: 2.',[0,2,4])),
-('15ci','1-14',[21],[20],'On the timeline, identify three major developments that have occurred in the last 20 years (2005–2025) for one of the following groups: women; older adults; people with physical disability; people with intellectual disability; different ethnic groups; different socio-economic groups.',
+('15ci','1-14',[21],[20],'On the timeline below, identify three major developments that have occurred in the last 20 years for one of the following groups:\n• Women\n• Older Adults\n• People with physical disability\n• People with intellectual disability\n• Different ethnic groups\n• Different socio-economic groups',
  [fixed('Three developments',1,'Three major developments for the selected group. The published allocation is one mark in total for this timeline task.')]),
 ('15cii','1-14',[21,22],[20],'Describe one of the developments you identified in Question 15(c)(i) and outline the impact it has had for the group you have chosen.',
  [('Development and impact',8,'Development described with impact: 6–8; development described with vague impact: 3–5; development identified without impact: 1–2.')]),
@@ -197,7 +197,7 @@ CONTEXT.update({
  '15biii':'The complete Rhys McClenaghan quotation about psychological preparation is included on page 19.',
  '15biv':'The complete Rhys McClenaghan quotation about psychological preparation is included on page 19.',
  '15ci':'Use the original 2005–2025 answer timeline. Figure 8 provides an illustrative LGBTQI+ Olympic timeline, not an additional selectable group.',
- '15cii':'For the selected practice group, identify developments from 2005–2025 as requested in 15(c)(i), then describe one and its impact. The original group list and timeline are included on page 21.',
+ '15cii':'Question 15(c)(i): On the timeline below, identify three major developments that have occurred in the last 20 years for one of the following groups: Women; Older Adults; People with physical disability; People with intellectual disability; Different ethnic groups; Different socio-economic groups.',
  '16ai':'Figure 9 shows all three results of a physical activity participation investigation in a rural Irish secondary school. Use the original charts and data on page 23.',
  '16aii':'Read the original Figure 9 data from a rural Irish secondary school on page 23.',
  '16aiii':'Use Result 3 in the original Figure 9 on page 23, including year groups and participation levels.',
@@ -216,9 +216,11 @@ for part,*_ in TASKS:
 CONTEXT['13aii']+=' Choose a performance-related component from your own answer to 13(a)(i), then name and describe a test for that same component.'
 CONTEXT['13bii']+=' Use a different plane and axis from the hammer rotation in 13(b)(i).'
 GROUPS=['Women','Older adults','People with physical disability','People with intellectual disability','Different ethnic groups','Different socio-economic groups']
-VARIANTS={part:[(g.lower().replace(' ','-'),g) for g in GROUPS] for part in ('15ci','15cii')}
-VARIANT_REQUIREMENTS={part:'Use the selected practice group from the six printed options. The follow-up in 15(c)(ii) uses that same group; your choice of development remains open.' for part in VARIANTS}
-SOURCE_POOLS={part:[(21,'for one of the following groups:'),(21,'Women'),(21,'Older Adults'),(21,'People with physical disability'),(21,'People with intellectual disability'),(21,'Different ethnic groups'),(21,'Different socio-economic groups')] for part in VARIANTS}
+# A printed choice is ONE card (AGENTS.md, 2026-10-12): the printed question
+# with its whole pool, the scheme's own grid, and for choose-N the printed
+# instruction plus one criterion per chosen item. pe_complete.py emits one card.
+CHOICES={part:{'choose':1,'pool':GROUPS,'stemPrinted':part=='15cii'} for part in ('15ci','15cii')}
+SOURCE_POOLS={part:[(21,'for one of the following groups:'),(21,'Women'),(21,'Older Adults'),(21,'People with physical disability'),(21,'People with intellectual disability'),(21,'Different ethnic groups'),(21,'Different socio-economic groups')] for part in CHOICES}
 EXPECTED_QUESTION_TOTALS={**{n:8 for n in range(1,13)},13:50,**{n:40 for n in range(14,19)}}
 EXPECTED_SELECTION_SCAN=[[2,'any three'],[2,'or'],[3,'or'],[4,'or'],[5,'choose'],[5,'or'],[5,'or'],[5,'or'],[6,'or'],[7,'named physical activity'],[7,'choose'],[10,'or'],[11,'any one'],[12,'named physical activity'],[15,'any three'],[16,'one of'],[17,'named physical activity'],[19,'named physical activity'],[21,'one of'],[22,'one of'],[25,'choose'],[25,'named physical activity'],[27,'one of'],[29,'named physical activity'],[30,'named physical activity'],[30,'one of'],[31,'or'],[31,'or'],[31,'or'],[32,'named physical activity'],[35,'choose'],[36,'or'],[36,'or']]
 EXPECTED_POOL_SCAN=[[2,'any ten'],[2,'three of'],[3,'any ten'],[3,'of the following'],[11,'one of'],[16,'one of'],[21,'one of'],[22,'one of'],[27,'one of'],[30,'one of']]
@@ -227,7 +229,7 @@ SELECTION_REVIEW=[
  {'pages':[3,5,6,7,31],'kind':'single-correct-answer-or-matching','reason':'True/false, vector/scalar, vocabulary matches, classification and cloze blanks have correct answers, not freely selectable essay routes. Split equally and independently marked rows/blanks; retain Q10 as one descending 3+3+2 matching task.'},
  {'pages':[4,10,25,31],'kind':'flexible-or-source-wording','reason':'Media or spectator, three or four hammer rotations, historical relay order choices, and or within the cloze passage are descriptive/flexible wording.'},
  {'pages':[7,11,12,16,17,19,22,25,27,29,30,32],'kind':'open-response-or-own-answer','reason':'Named activities, own fitness component/nutrient/development/analysis method and a different Newton law are open knowledge or selections from the candidate’s own answer, not a printed option pool.'},
- {'pages':[21,22],'kind':'closed-pool-with-inherited-choice','reason':'Six printed groups create six routes in 15(c)(i); the selected group carries into six routes in 15(c)(ii). LGBTQI+ timeline is an illustration, not a seventh option.'},
+ {'pages':[21,22],'kind':'closed-pool-with-inherited-choice','reason':'15(c)(i) asks about one of six printed groups and 15(c)(ii) continues with the group chosen; each scheme grid is the same for every group, so each part is one card. The LGBTQI+ timeline is an illustration, not a seventh option.'},
  {'pages':[16,18,27,29],'kind':'required-components','reason':'Both nutrients and food sources, both official roles, health-related fitness and psychological preparedness, and advantage/disadvantage are compulsory components.'},
  {'pages':[35,36],'kind':'acknowledgements-and-copyright','reason':'Choose in a credited website URL and copyright or are not selection directives.'},
 ]

@@ -243,8 +243,10 @@ CONTEXT = {
  '18b':'The paper quotes Sport Ireland’s call for NGBs and Local Sports Partnerships to combat discrimination.',
  '18di':'Read the tourism statement and Ryder Cup promotional images in Figures 18–19 on paper page 41.',
 }
-VARIANTS = {**{part:GROUPS for part in ('5','15b','18b')},'18aii':[(str(i),f'{label} class lever') for i,label in enumerate(('First','Second','Third'),1)]}
-VARIANT_REQUIREMENTS = {**{part:'Answer about the selected group from the printed list.' for part in ('5','15b','18b')},'18aii':'Explain the selected lever class using your activity and skill/technique from the preceding table.'}
+# A printed choice is ONE card (AGENTS.md, 2026-10-12): the printed question
+# with its whole pool, the scheme's own grid, and for choose-N the printed
+# instruction plus one criterion per chosen item. pe_complete.py emits one card.
+CHOICES = {**{part:{'choose':1,'pool':[label for _,label in GROUPS]} for part in ('5','15b','18b')},'18aii':{'choose':1,'pool':['1st','2nd','3rd']}}
 SOURCE_POOLS = {
  '5':[(7,'one of the following groups'),(7,'Women'),(7,'People with intellectual disability'),(7,'Older Adults'),(7,'Different ethnic groups'),(7,'People with physical disability'),(7,'Different socio‐economic groups')],
  '15b':[(27,'women or another group'),(27,'Older Adults'),(27,'Different ethnic groups'),(27,'People with physical disability'),(27,'Different socio‐economic groups'),(27,'People with intellectual disability')],
@@ -253,8 +255,8 @@ SOURCE_POOLS = {
 }
 SELECTION_REVIEW = [
  {'parts':['instructions','section-a','section-c'],'decision':'exam-level-selection','reason':'Include all twelve short questions and all five long questions with each separately marked part.'},
- {'parts':['5','15b','18b'],'decision':'expand','options':GROUPS,'reason':'Each task prints a closed six-group pool; Q15(b) includes women in its sentence plus five bullet options. Six routes per task, each retaining eight marks.'},
- {'parts':['18aii'],'decision':'expand','options':VARIANTS['18aii'],'reason':'The preceding required table prints three lever classes. Expand the follow-up selection to all three four-mark routes.'},
+ {'parts':['5','15b','18b'],'decision':'one-card','options':GROUPS,'reason':'Each task prints a closed six-group pool (Q15(b) has women in its sentence plus five bullets); the scheme marks the chosen group with one 2 x 4 grid. One eight-mark card per task.'},
+ {'parts':['18aii'],'decision':'one-card','options':CHOICES['18aii']['pool'],'reason':'The preceding required table prints three lever classes; the scheme marks the selected class with one four-mark grid: one card.'},
  {'parts':['6','9','13ci','15ciii','16aiii','16c','17bi','17bii'],'decision':'open-knowledge-response','reason':'The paper supplies no closed elective answer list for energy systems, concepts, training, psychological factors, ethical principles or drugs. Lists in the scheme are answers, not printed question options.'},
  {'parts':['13aii','13cii','15dii','17dii'],'decision':'candidate-response','reason':'These refer to answers supplied by the candidate. Q15(d)(ii) chooses two of the candidate’s own criteria; there is no fixed printed pool to enumerate.'},
  {'parts':['7a','7b','8c','8d'],'decision':'classification-or-flexible','reason':'Artistic and/or aesthetic is flexible terminology. Vector/scalar are answer categories, not alternative tasks. The surfing exclusion is a restriction, not a finite pool.'},

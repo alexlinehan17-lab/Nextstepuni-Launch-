@@ -46,6 +46,21 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def tokens(text):
+    return re.findall(r'[a-z0-9]+', text.casefold().replace('’', "'"))
+
+
+def unprinted_segments(text, pages):
+    """Segments of a lifted question whose words are not printed, in order, on its pages.
+
+    A segment is a line, a list item or a clause before a colon. Layout (bullets,
+    columns, case) may differ from the paper; a word may not.
+    """
+    hay = ' ' + ' '.join(tokens(' '.join(pages))) + ' '
+    segments = [segment for segment in re.split(r'\n|;|:\s', text) if tokens(segment)]
+    return [segment for segment in segments if ' ' + ' '.join(tokens(segment)) + ' ' not in hay]
+
+
 def build():
     entries = json.loads(subprocess.check_output([
         'node', '--input-type=module', '-e',
@@ -86,8 +101,9 @@ def build():
             assert len(doc) == review.SCHEME_PAGE_COUNT
         assert selection_scan == review.EXPECTED_SELECTION_SCAN, ('unclassified/stale selection',selection_scan)
         assert pool_scan == review.EXPECTED_POOL_SCAN, ('unclassified/stale pool wording',year,short,pool_scan)
-        assert set(review.VARIANTS) == set(review.SOURCE_POOLS)
-        assert set(review.VARIANTS) <= {task[0] for task in review.TASKS}
+        # A printed choice is ONE card (AGENTS.md): never one per option or pair.
+        assert set(review.CHOICES) == set(review.SOURCE_POOLS)
+        assert set(review.CHOICES) <= {task[0] for task in review.TASKS}
         for part, anchors in review.SOURCE_POOLS.items():
             for page, anchor in anchors:
                 assert anchor.casefold() in raw_pages[page], ('stale printed pool',year,short,part,page,anchor)
@@ -102,68 +118,88 @@ def build():
                 label, maximum, guidance, *scores = allocation
                 criteria.append(dict(id=f'c{i+1}', label=label, maxMarks=maximum,
                                      guidance=[guidance], permittedMarks=scores[0] if scores else list(range(maximum+1))))
-            variants = review.VARIANTS.get(part, [(None,None)])
-            for index, (route_id, route_label) in enumerate(variants):
-                ident = getattr(review,'CARD_ID_OVERRIDES',{}).get(part,f'pe-{year}-{short}-q{part}') + (f'-{route_id}' if index else '')
-                question_ref = f'{year} {short.upper()} {part_ref}'
-                requirements = []
-                question_text = prompt
-                if route_label:
-                    question_text += f'\n\nPractice route: {route_label}.'
-                    requirements = [review.VARIANT_REQUIREMENTS[part]]
-                source = dict(kind='exam-material', label=f'{part_ref} · original paper',
-                              title=f'{year} Physical Education · {short.upper()} · {part_ref}',
-                              pages=paper_pages, attribution=f'© State Examinations Commission. Third-party sources are acknowledged on paper page {review.ACKNOWLEDGEMENT_PAGE}.',
-                              presentationNote='The original examination pages, including all printed text, figures and tables.')
-                scheme = dict(kind='marking-scheme', label=f'{part_ref} · published marking guide',
-                              title=f'{question_ref} · marking scheme', pages=scheme_pages, sourceFileid=schemeid,
-                              attribution='© State Examinations Commission.',
-                              presentationNote='The original SEC marking scheme. Read the allocation for this part; examples are not exhaustive.')
-                rotations = {p:r for p,r in review.PAGE_ROTATIONS.items() if p in paper_pages}
-                if rotations:
-                    source['pageRotations'] = rotations
-                card = dict(id=ident, source='sec', kind='rubric', subjectId='physical-education',
-                            level=level, year=year, topicId='physical-education-'+topic,
-                            conceptId=previous.get(ident,{}).get('conceptId') or f'pe-{topic}-'+hashlib.sha256((question_text+' '+review.CONTEXT.get(part,'')).encode()).hexdigest()[:12],
-                            paperFileid=fileid.removesuffix('.pdf'),
-                            section='A' if number<review.CASE_STUDY_QUESTION else 'B' if number==review.CASE_STUDY_QUESTION else 'C',
-                            questionRef=question_ref, questionText=question_text, totalMarks=total,
-                            sourceMaterial=source, stem=review.CONTEXT.get(part,''),
-                            schemeCitation=f'SEC Physical Education {year} {short.upper()}, {part_ref}, PDF pages '+', '.join(map(str,scheme_pages))+' — © State Examinations Commission.',
-                            specVersion='physical-education:outgoing',
-                            qa=dict(gates=['visual-paper-sweep','visual-scheme-allocation','printed-choice-review','source-pages','canonical-topic'],humanReviewedBy='agent-visual-review',humanReviewedAt='2026-10-07'),
-                            rubric=dict(system='physical-education',taskRequirements=requirements,criteria=criteria,
-                                        schemeMaterial=scheme,
-                                        markingGuideNote='Apply the allocation to the complete response. The SEC’s suggestions and examples are not exhaustive; other valid answers may earn credit.'))
-                cards.append(card)
-                atlas_topics = [topic_id for topic_id, canonical in crosswalk.items()
-                                if topic_id.startswith(f'physical-education-{level}-')
-                                and '-new-course-' not in topic_id and card['topicId'] in canonical]
-                override = getattr(review,'ATLAS_TOPIC_OVERRIDES',{}).get(part)
-                if override:
-                    assert override in crosswalk, override
-                    atlas_topics = [override]
-                elif len(atlas_topics) > 1:
-                    # The existing crosswalk overlaps fitness assessment with
-                    # fitness planning. These tasks assess demands, not plans.
-                    assert topic in ('0-5','0-6','0-7','0-8','0-9'), (part,atlas_topics)
-                    atlas_topics = [f'physical-education-{level}-2-physical-demands-of-performance']
-                assert len(atlas_topics)==1, (year,short,part,atlas_topics)
-                # A task that genuinely examines a second specification topic
-                # (decided from the paper, scheme and NCCA wording) is also
-                # filed there. The primary topic stays first.
-                for extra in getattr(review,'ATLAS_TOPIC_ADDITIONS',{}).get(part,()):
-                    assert extra in crosswalk and extra.startswith(f'physical-education-{level}-') \
-                        and extra not in atlas_topics, (year,short,part,extra)
-                    atlas_topics.append(extra)
-                task_n = part_ref[1:] + (f' — {route_label}' if route_label else '')
-                atlas.append(dict(cardId=ident,subjectId='physical-education',level=level,lang='ev',year=year,
-                                  fileid=fileid,paperKey='single',n=task_n,parentQuestion=str(number),
-                                  canonicalTopicId=card['topicId'],specificationId=card['specVersion'],
-                                  examTopicIds=atlas_topics,paperPages=paper_pages,schemePages=scheme_pages,
-                                  pageRotations=rotations,questionRef=question_ref,totalMarks=total))
-                paper_cards.append(dict(cardId=ident, part=part, topicId=card['topicId'], totalMarks=total,
-                                        paperPages=paper_pages,schemePages=scheme_pages,route=route_id))
+            choice = review.CHOICES.get(part)
+            requirements = []
+            if choice:
+                printed = [raw_pages[page] for page in paper_pages]
+                assert 1 <= choice['choose'] < len(choice['pool']), (year,short,part)
+                if choice.get('poolPrinted', True):
+                    for label in choice['pool']:
+                        assert ' '.join(tokens(label)) in ' '.join(tokens(' '.join(printed))), ('unprinted pool item',year,short,part,label)
+                assert not unprinted_segments(prompt, printed), ('question not as printed',year,short,part,unprinted_segments(prompt, printed))
+                if choice.get('stemPrinted'):
+                    # A leading "Question 15(c)(i):" names the printed predecessor; the rest is lifted.
+                    lead_in = re.sub(r'^Question [0-9a-z()]+: ', '', review.CONTEXT[part])
+                    assert not unprinted_segments(lead_in, printed), ('lead-in not as printed',year,short,part,unprinted_segments(lead_in, printed))
+                if choice['choose'] > 1:
+                    assert not unprinted_segments(choice['instruction'], printed), ('instruction not as printed',year,short,part)
+                    requirements = [choice['instruction']]
+                    if choice.get('slots'):
+                        # One criterion per chosen item, at the scheme's per-item tariff.
+                        assert len(choice['slots']) == choice['choose'] == len(criteria), (year,short,part)
+                        assert len({criterion['maxMarks'] for criterion in criteria}) == 1, (year,short,part)
+                        for criterion, label in zip(criteria, choice['slots']):
+                            criterion['label'] = label
+                    else:
+                        # The scheme's own structure: a holistic grid, or fixed role slots.
+                        assert choice.get('holistic') or len(criteria) > choice['choose'], (year,short,part)
+            ident = getattr(review,'CARD_ID_OVERRIDES',{}).get(part,f'pe-{year}-{short}-q{part}')
+            question_ref = f'{year} {short.upper()} {part_ref}'
+            question_text = prompt
+            source = dict(kind='exam-material', label=f'{part_ref} · original paper',
+                          title=f'{year} Physical Education · {short.upper()} · {part_ref}',
+                          pages=paper_pages, attribution=f'© State Examinations Commission. Third-party sources are acknowledged on paper page {review.ACKNOWLEDGEMENT_PAGE}.',
+                          presentationNote='The original examination pages, including all printed text, figures and tables.')
+            scheme = dict(kind='marking-scheme', label=f'{part_ref} · published marking guide',
+                          title=f'{question_ref} · marking scheme', pages=scheme_pages, sourceFileid=schemeid,
+                          attribution='© State Examinations Commission.',
+                          presentationNote='The original SEC marking scheme. Read the allocation for this part; examples are not exhaustive.')
+            rotations = {p:r for p,r in review.PAGE_ROTATIONS.items() if p in paper_pages}
+            if rotations:
+                source['pageRotations'] = rotations
+            card = dict(id=ident, source='sec', kind='rubric', subjectId='physical-education',
+                        level=level, year=year, topicId='physical-education-'+topic,
+                        conceptId=previous.get(ident,{}).get('conceptId') or f'pe-{topic}-'+hashlib.sha256((question_text+' '+review.CONTEXT.get(part,'')).encode()).hexdigest()[:12],
+                        paperFileid=fileid.removesuffix('.pdf'),
+                        section='A' if number<review.CASE_STUDY_QUESTION else 'B' if number==review.CASE_STUDY_QUESTION else 'C',
+                        questionRef=question_ref, questionText=question_text, totalMarks=total,
+                        sourceMaterial=source, stem=review.CONTEXT.get(part,''),
+                        schemeCitation=f'SEC Physical Education {year} {short.upper()}, {part_ref}, PDF pages '+', '.join(map(str,scheme_pages))+' — © State Examinations Commission.',
+                        specVersion='physical-education:outgoing',
+                        qa=dict(gates=['visual-paper-sweep','visual-scheme-allocation','printed-choice-review','source-pages','canonical-topic'],humanReviewedBy='agent-visual-review',humanReviewedAt='2026-10-07'),
+                        rubric=dict(system='physical-education',taskRequirements=requirements,criteria=criteria,
+                                    schemeMaterial=scheme,
+                                    markingGuideNote='Apply the allocation to the complete response. The SEC’s suggestions and examples are not exhaustive; other valid answers may earn credit.'))
+            cards.append(card)
+            atlas_topics = [topic_id for topic_id, canonical in crosswalk.items()
+                            if topic_id.startswith(f'physical-education-{level}-')
+                            and '-new-course-' not in topic_id and card['topicId'] in canonical]
+            override = getattr(review,'ATLAS_TOPIC_OVERRIDES',{}).get(part)
+            if override:
+                assert override in crosswalk, override
+                atlas_topics = [override]
+            elif len(atlas_topics) > 1:
+                # The existing crosswalk overlaps fitness assessment with
+                # fitness planning. These tasks assess demands, not plans.
+                assert topic in ('0-5','0-6','0-7','0-8','0-9'), (part,atlas_topics)
+                atlas_topics = [f'physical-education-{level}-2-physical-demands-of-performance']
+            assert len(atlas_topics)==1, (year,short,part,atlas_topics)
+            # A task that genuinely examines a second specification topic
+            # (decided from the paper, scheme and NCCA wording) is also
+            # filed there. The primary topic stays first.
+            for extra in getattr(review,'ATLAS_TOPIC_ADDITIONS',{}).get(part,()):
+                assert extra in crosswalk and extra.startswith(f'physical-education-{level}-') \
+                    and extra not in atlas_topics, (year,short,part,extra)
+                atlas_topics.append(extra)
+            task_n = part_ref[1:]
+            atlas.append(dict(cardId=ident,subjectId='physical-education',level=level,lang='ev',year=year,
+                              fileid=fileid,paperKey='single',n=task_n,parentQuestion=str(number),
+                              canonicalTopicId=card['topicId'],specificationId=card['specVersion'],
+                              examTopicIds=atlas_topics,paperPages=paper_pages,schemePages=scheme_pages,
+                              pageRotations=rotations,questionRef=question_ref,totalMarks=total))
+            paper_cards.append(dict(cardId=ident, part=part, topicId=card['topicId'], totalMarks=total,
+                                    paperPages=paper_pages,schemePages=scheme_pages,
+                                    choice=dict(choose=choice['choose'],pool=choice['pool'],instruction=choice.get('instruction')) if choice else None))
         assert dict(totals) == review.EXPECTED_QUESTION_TOTALS, (totals,review.EXPECTED_QUESTION_TOTALS)
         previous_ids = {c['id'] for c in legacy if c['year']==year and c['level']==level}
         generated_ids = {c['cardId'] for c in paper_cards}
