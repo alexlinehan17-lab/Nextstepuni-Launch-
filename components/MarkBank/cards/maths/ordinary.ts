@@ -29,16 +29,29 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q1-a", topicId: "maths-3-3", conceptId: "television-costs-380-before-vat-has",
     section: "B", questionRef: "2021 OL Paper 1 Q1(a)",
-    questionText: "A television costs €380 before VAT at 21% has been added. Find the cost of the television after VAT has been added",
+    questionText: "A television costs €380 before VAT at 21% has been added. Find the cost of the television after VAT has been added.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q1-a-r1", kind: "anyN", verbatim: "380 × 21 or 7980\n380 × 121 and stops\nAny use of relevant %", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["380 × 21 or 7980\n380 × 121 and stops\nAny use of relevant %","380 × 21% = 79·80\n380 × 121 = 45980"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[8],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q1-a.png",
@@ -59,16 +72,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q1-b", topicId: "maths-3-3", conceptId: "when-vat-included-price-laptop-increases",
     section: "B", questionRef: "2021 OL Paper 1 Q1(b)",
-    questionText: "When VAT at 21% is included, the price of a laptop increases by €130∙20. Find the total cost of the laptop including VAT",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    questionText: "When VAT at 21% is included, the price of a laptop increases by €130·20. Find the total cost of the laptop including VAT.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-ol-p1-q1-b-r1", kind: "anyN", verbatim: "130∙2\n21 and stops\n130∙2 × 121 and stops\nAny use of relevant %", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["130∙2\n21 and stops\n130∙2 × 121 and stops\nAny use of relevant %","130∙2 21 = 6∙2\n130∙2 × 121%= 157∙54\n€620"],"perOptionSteps":[2,3]} },
+    { id: "maths-2021-ol-p1-q1-b-solution-1", kind: "point", verbatim: "Model solution — 130∙2/21 × 121 = €750∙20", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q1-b-solution-2", kind: "point", verbatim: "Low Partial Credit — 130∙2/21 and stops", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q1-b-solution-3", kind: "point", verbatim: "Low Partial Credit — 130∙2 × 121 and stops", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q1-b-solution-4", kind: "point", verbatim: "Low Partial Credit — Any use of relevant %", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q1-b-solution-5", kind: "point", verbatim: "High Partial Credit — 130∙2/21 = 6∙2", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q1-b-solution-6", kind: "point", verbatim: "High Partial Credit — 130∙2 × 121%= 157∙54", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q1-b-solution-7", kind: "point", verbatim: "High Partial Credit — €620", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q1-b-solution-8", kind: "point", verbatim: "Note — Accept correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[8],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q1-b.png",
@@ -89,16 +122,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q1-c", topicId: "maths-3-3", conceptId: "printer-priced-290-including-vat-how",
     section: "B", questionRef: "2021 OL Paper 1 Q1(c)",
-    questionText: "A printer is priced at €290·40 including VAT at 21%. Find how much VAT is included in the price of this printer",
+    questionText: "A printer is priced at €290·40 including VAT at 21%. Find how much VAT is included in the price of this printer.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q1-c-r1", kind: "anyN", verbatim: "290∙4 × 21\n290∙4/121 and stops\nAny use of relevant %", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["290∙4 × 21\n290∙4/121 and stops\nAny use of relevant %","290∙4/121 = 2∙4\n290∙4 × 21% = 60∙984"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[9],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q1-c",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q1-c.png",
@@ -119,21 +165,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q1-d", topicId: "maths-3-3", conceptId: "september-2020-standard-rate-vat-ireland",
     section: "B", questionRef: "2021 OL Paper 1 Q1(d)",
-    questionText: "On September 1, 2020 the Standard Rate of VAT in Ireland was reduced from 23% to 21%. A company bought 30 computers in September, all at the same price. The company calculated that it saved €336 due to the reduction in the VAT rate. Find the price of one computer before VAT had been added",
+    questionText: "On September 1, 2020 the Standard Rate of VAT in Ireland was reduced from 23% to 21%. A company bought 30 computers in September, all at the same price. The company calculated that it saved €336 due to the reduction in the VAT rate. Find the price of one computer before VAT had been added.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q1-d-r1", kind: "anyN", verbatim: "2%\nUse of 336\nFinds €11∙20\nAny use of relevant %", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["2%\nUse of 336\nFinds €11∙20\nAny use of relevant %","€16 800\n5∙6\n€1120"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[9],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q1-d",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q1-d.png",
           "srcHash": "9928358f34e7a0ad366793e4664d3459",
-          "alt": "The question as printed on the paper — On September 1, 2020 the Standard Rate of VAT in Ireland was reduced from 23% to 21%. A company bought 30 computers in September, all at the same price. The company calculated that it saved €336 due to the reduction in… Full card prompt: On September 1, 2020 the Standard Rate of VAT in Ireland was reduced from 23% to 21%. A company bought 30 computers in September, all at the same price. The company calculated that it saved €336 due to the reduction in the VAT rate. Find the price of one computer before VAT had been added",
+          "alt": "The question as printed on the paper — On September 1, 2020 the Standard Rate of VAT in Ireland was reduced from 23% to 21%. A company bought 30 computers in September, all at the same price. The company calculated that it saved €336 due to the reduction in… Full card prompt: On September 1, 2020 the Standard Rate of VAT in Ireland was reduced from 23% to 21%. A company bought 30 computers in September, all at the same price. The company calculated that it saved €336 due to the reduction in the VAT rate. Find the price of one computer before VAT had been added.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -149,16 +208,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q2-a", topicId: "maths-4-4", conceptId: "plot-label-argand-diagram",
     section: "B", questionRef: "2021 OL Paper 1 Q2(a)",
-    questionText: "Plot and label z1, z2, and z1+ z2 on the Argand Diagram",
+    stem: "z₁ = −3 + 4i and z₂ = 4 + 3i, where i² = −1.",
+    questionText: "Plot and label z₁, z₂, and z₁ + z₂ on the Argand Diagram.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q2-a-r1", kind: "anyN", verbatim: "One correct item\nSubstitutes for z₁ and / or z₂", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: 5 items: (z₁ + z₂ calculated, 3 plots, all plots labelled). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["One correct item\nSubstitutes for z₁ and / or z₂","Two correct items, with or without labels","Three correct items"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[10],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q2-a",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q2-a.png",
@@ -179,16 +252,81 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2021, level: "ordinary",
+    paperFileid: "LC003GLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2021-ol-p1-q2-b", topicId: "maths-4-4", conceptId: "form",
+    section: "B", questionRef: "2021 OL Paper 1 Q2(b)",
+    stem: "z₁ = −3 + 4i and z₂ = 4 + 3i, where i² = −1.",
+    questionText: "z₃ = z₁/z₂. Find z₃ in the form a + bi, where a, b ∈ ℤ.",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2021-ol-p1-q2-b-r1", kind: "anyN", verbatim: "Some correct substitution\nConjugate identified\nSome multiplication above and below by same number, even if incorrect conjugate", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some correct substitution\nConjugate identified\nSome multiplication above and below by same number, even if incorrect conjugate","(−3 + 4i)(4−3i)/(4 + 3i)(4−3i)"],"perOptionSteps":[3,7]} },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[10],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2021-OL-ask-p1-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q2-b.png",
+          "srcHash": "b4155f9dbca11d34f81a9534703d1e8a",
+          "alt": "The question as printed on the paper — z1= −3 + 4i and z2= 4 + 3i, Im where i2= −1. 7 z3= . Find z3 in the form a+ bi, where a, b∈ℤ. (b) 𝑧2",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2021-OL-paper-p009-i1",
+          "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p009-i1.png",
+          "srcHash": "3bb6d5e15184781a599319044c3c3c17",
+          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 1 Q2(a), typeset as the State Examinations Commission set it. It reads: z₁ + z₂ = 1 + 7i (diagram below)",
+          "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q2-c", topicId: "maths-4-4", conceptId: "form-complex-conjugate-complex-conjugate-form",
     section: "B", questionRef: "2021 OL Paper 1 Q2(c)",
-    questionText: "(c) Find Give |z̅₁ your − answer z₂|, where in the z̅₁ form is the complex/p√q, where conjugate p |z̅₁−z₂|, where z̅₁ is the complex conjugate of z₁. your answer in the form p√q, where p and q∈ℕ",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "z₁ = −3 + 4i and z₂ = 4 + 3i, where i² = −1.",
+    questionText: "Find |z̅₁ − z₂|, where z̅₁ is the complex conjugate of z₁. Give your answer in the form p√q, where p and q ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p1-q2-c-r1", kind: "anyN", verbatim: "(Work of)/(√a² + b²) relevance for z̅₁ − z₂", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. The full scale runs to 10. Note: Accept √98 for full credit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["(Work of)/(√a² + b²) relevance for z̅₁ − z₂","√(−7)² + (−7)² or √49 + 49"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-ol-p1-q2-c-solution-1", kind: "point", verbatim: "Model solution — z̅₁ − z₂ = −3 − 4i − (4 + 3i)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q2-c-solution-2", kind: "point", verbatim: "Model solution — = −7 − 7i", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q2-c-solution-3", kind: "point", verbatim: "Model solution — = √98", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q2-c-solution-4", kind: "point", verbatim: "Model solution — = 7√2", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q2-c-solution-5", kind: "point", verbatim: "Low Partial Credit — Work of relevance for z̅₁ − z₂", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q2-c-solution-6", kind: "point", verbatim: "Mid Partial Credit — z̅₁ − z₂ = −7 − 7i", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q2-c-solution-7", kind: "point", verbatim: "High Partial Credit — √((−7)² + (−7)²) or √49 + 49", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q2-c-solution-8", kind: "point", verbatim: "Note — Accept √98 for full credit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q2-c",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q2-c.png",
@@ -209,16 +347,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q3-a", topicId: "maths-4-2", conceptId: "solution-equation",
     section: "B", questionRef: "2021 OL Paper 1 Q3(a)",
-    questionText: "Show that x = 4 is a solution of the equation x²−2x−8 = 0",
+    questionText: "Show that x = 4 is a solution of the equation x² − 2x − 8 = 0.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q3-a-r1", kind: "anyN", verbatim: "Any partial substitution into equation\nf(4) or equivalent written\nQuadratic formula written\nAttempt at factorising\n(x−4)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Any partial substitution into equation\nf(4) or equivalent written\nQuadratic formula written\nAttempt at factorising\n(x−4)","f(4) fully substituted and not equated to 0\n(x – 4) and (x + 2)\nQuadratic formula fully substituted"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[12],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q3-a.png",
@@ -239,16 +390,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q3-b", topicId: "maths-4-2", conceptId: "equation-has-solutions-value-value",
     section: "B", questionRef: "2021 OL Paper 1 Q3(b)",
-    questionText: "The equation x² + ax + b = 0, where a, b∈ℤ, has solutions x = 5 and x = −2. Find the value of a and the value of b. a = b =",
+    questionText: "The equation x² + ax + b = 0, where a, b ∈ ℤ, has solutions x = 5 and x = −2. Find the value of a and the value of b.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q3-b-r1", kind: "anyN", verbatim: "f(5)\nf(−2)\nAny relevant equation in a and b (without x)\nEither factor\nMention of Sum and/or Product of Roots mentioned", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["f(5)\nf(−2)\nAny relevant equation in a and b (without x)\nEither factor\nMention of Sum and/or Product of Roots mentioned","Both equations in a and b\nBoth factors\nSum or Product of roots found","a or b found\nx²−3x−10 without further relevant work\nSum and Product of roots found"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[12],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q3-b",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q3-b.png",
@@ -269,16 +433,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q3-c", topicId: "maths-4-2", conceptId: "solutions-equation-each-correct-decimal-places",
     section: "B", questionRef: "2021 OL Paper 1 Q3(c)",
-    questionText: "Find the solutions of the equation 5x²−2x−9 = 0, where x∈ℝ. Give each answer correct to 2 decimal places",
+    questionText: "Find the solutions of the equation 5x² − 2x − 9 = 0, where x ∈ ℝ. Give each answer correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q3-c-r1", kind: "anyN", verbatim: "Correct quadratic formula\na or b or c explicitly identified\nCorrect answer without work", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Correct quadratic formula\na or b or c explicitly identified\nCorrect answer without work","Fully correct substitution into formula"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[12],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q3-c",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q3-c.png",
@@ -299,16 +476,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q4-a", topicId: "maths-4-2", conceptId: "solve-equation",
     section: "B", questionRef: "2021 OL Paper 1 Q4(a)",
-    questionText: "Solve the equation: 4(2x + 3) −7 = 3(x−5), where x∈ℝ",
+    questionText: "Solve the equation: 4(2x + 3) − 7 = 3(x − 5), where x ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q4-a-r1", kind: "anyN", verbatim: "Any correct multiplication into a bracket\nAny correct transposition\nCorrect answer without supporting work", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Any correct multiplication into a bracket\nAny correct transposition\nCorrect answer without supporting work","Multiplication fully correct"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[13],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q4-a",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q4-a.png",
@@ -329,16 +519,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q4-b", topicId: "maths-4-2", conceptId: "solve-simultaneous-equations",
     section: "B", questionRef: "2021 OL Paper 1 Q4(b)",
-    questionText: "Solve the simultaneous equations: 2x−y = 7 x² + y² = 49",
+    questionText: "Solve the simultaneous equations: 2x − y = 7; x² + y² = 49.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
     { id: "maths-2021-ol-p1-q4-b-r1", kind: "anyN", verbatim: "x or y isolated\nQuadratic formula written\nAny correct transposing", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10, three parts for 15. The full scale runs to 20. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["x or y isolated\nQuadratic formula written\nAny correct transposing","x² + (2x−7)² = 49 or equivalent equation in one variable","1 relevant value (root) found from quadratic"],"perOptionSteps":[5,5,10]} },
     ],
+    mathematicsScale: {"code":"20D","marks":[0,5,10,15,20],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[13],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q4-b.png",
@@ -359,16 +562,37 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q5-a", topicId: "maths-5-1", conceptId: "correct-decimal-places",
     section: "B", questionRef: "2021 OL Paper 1 Q5(a)",
-    questionText: "Find f(0∙67), correct to 2 decimal places",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "The function, f is defined as f(x) = 3x² − 6x + 7, where x ∈ ℝ.",
+    questionText: "Find f(0·67), correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p1-q5-a-r1", kind: "anyN", verbatim: "3(0∙67)²−6(0∙67) + 7", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Note: These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["3(0∙67)²−6(0∙67) + 7","= 4∙3267","= 4∙33"],"perOptionSteps":[3,4,3]} },
+    { id: "maths-2021-ol-p1-q5-a-solution-1", kind: "point", verbatim: "Model solution — 3(0∙67)² − 6(0∙67) + 7", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q5-a-solution-2", kind: "point", verbatim: "Model solution — = 4∙3267", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q5-a-solution-3", kind: "point", verbatim: "Model solution — = 4∙33", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q5-a-solution-4", kind: "point", verbatim: "Low Partial Credit — Any substitution into equation", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q5-a-solution-5", kind: "point", verbatim: "Low Partial Credit — x = 0·67", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q5-a-solution-6", kind: "point", verbatim: "High Partial Credit — f(0∙67) fully substituted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q5-a-solution-7", kind: "point", verbatim: "Note — Accept correct answer (4·33) without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q5-a-solution-8", kind: "point", verbatim: "Note — 4∙3267 without supporting work merits F*", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[14],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q5-a.png",
@@ -389,16 +613,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p1-q5-b", topicId: "maths-5-1", conceptId: "value-when",
+    id: "maths-2021-ol-p1-q5-b", topicId: "maths-4-2", conceptId: "value-when",
     section: "B", questionRef: "2021 OL Paper 1 Q5(b)",
-    questionText: "Find the value of x when f(x) = 4",
+    stem: "The function, f is defined as f(x) = 3x² − 6x + 7, where x ∈ ℝ.",
+    questionText: "Find the value of x when f(x) = 4.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q5-b-r1", kind: "anyN", verbatim: "3x²−6x + 7 = 4\n3x²−6x + 3 = 0\nCorrect quadratic formula\na or b or c explicitly identified\nx = 4 substituted into the equation\nCorrect answer without supporting work", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["3x²−6x + 7 = 4\n3x²−6x + 3 = 0\nCorrect quadratic formula\na or b or c explicitly identified\nx = 4 substituted into the equation\nCorrect answer without supporting work","Correct factors\nFully correct substitution into formula ."],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[14],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q5-b.png",
@@ -419,16 +657,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q5-c", topicId: "maths-5-2", conceptId: "calculus-ordinates-local-minimum-point",
     section: "B", questionRef: "2021 OL Paper 1 Q5(c)",
-    questionText: "Use calculus to find the co-ordinates of the local minimum point of f",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "The function, f is defined as f(x) = 3x² − 6x + 7, where x ∈ ℝ.",
+    questionText: "Use calculus to find the co-ordinates of the local minimum point of f.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p1-q5-c-r1", kind: "anyN", verbatim: "Any correct differentiation\ndy/dx = 0 or dy/dx or f′(x)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. The full scale runs to 10. Note: If differentiation is not used, award zero marks. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Any correct differentiation\ndy/dx = 0 or dy/dx or f′(x)","x co-ordinate found"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-ol-p1-q5-c-solution-1", kind: "point", verbatim: "Model solution — 6x − 6 = 0", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q5-c-solution-2", kind: "point", verbatim: "Model solution — Min Point = (1, 4)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q5-c-solution-3", kind: "point", verbatim: "Note — If differentiation is not used, award zero marks", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q5-c-solution-4", kind: "point", verbatim: "Low Partial Credit — Any correct differentiation", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q5-c-solution-5", kind: "point", verbatim: "Low Partial Credit — dy/dx = 0 or dy/dx or f′(x)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q5-c-solution-6", kind: "point", verbatim: "Mid Partial Credit — 6x − 6", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q5-c-solution-7", kind: "point", verbatim: "High Partial Credit — x co-ordinate found", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[15],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q5-c",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q5-c.png",
@@ -449,16 +707,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q6-a-i", topicId: "maths-4-1", conceptId: "otherwise-common-difference",
     section: "B", questionRef: "2021 OL Paper 1 Q6(a)(i)",
-    questionText: "Find k and hence or otherwise show that the common difference is 3",
+    stem: "The first three terms of an arithmetic sequence are −5, k, 1.",
+    questionText: "Find k and hence or otherwise show that the common difference is 3.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q6-a-i-r1", kind: "anyN", verbatim: "Tₙ formula written\nSome relevant substitution into formula\na = −5\n−5 + 3 + 3 = 1\nIf you see the number 6", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Common difference must be explicitly shown to be 3. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Tₙ formula written\nSome relevant substitution into formula\na = −5\n−5 + 3 + 3 = 1\nIf you see the number 6","k = −2 and stops\nRelevant equation in k and common difference = 3 shown\n2d = 6"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[16],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q6-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q6-a-i.png",
@@ -479,16 +751,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q6-a-ii", topicId: "maths-4-1", conceptId: "10th-term-sequence",
     section: "B", questionRef: "2021 OL Paper 1 Q6(a)(ii)",
-    questionText: "Find T₁₀, the 10th term in the sequence",
+    stem: "The first three terms of an arithmetic sequence are −5, k, 1.",
+    questionText: "Find T₁₀, the 10th term in the sequence.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q6-a-ii-r1", kind: "anyN", verbatim: "Some relevant substitution into Tₙ formula\nTₙ formula written\nList containing 4 correct terms or more\na and/or d identified", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Some relevant substitution into Tₙ formula\nTₙ formula written\nList containing 4 correct terms or more\na and/or d identified","Formula fully substituted\nList with more than 10 terms but T₁₀ = 22 not clearly identified"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[16],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q6-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q6-a-ii.png",
@@ -509,16 +795,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q6-a-iii", topicId: "maths-4-1", conceptId: "iii-which-term-sequence-has-value",
     section: "B", questionRef: "2021 OL Paper 1 Q6(a)(iii)",
-    questionText: "(iii) Find which term in the sequence has a value of 247",
+    stem: "The first three terms of an arithmetic sequence are −5, k, 1.",
+    questionText: "Find which term in the sequence has a value of 247.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q6-a-iii-r1", kind: "anyN", verbatim: "Some relevant substitution into Tₙ formula\nTₙ = 247\na and/or d identified\nTₙ formula written\nT247\nList method containing at least 4 terms", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some relevant substitution into Tₙ formula\nTₙ = 247\na and/or d identified\nTₙ formula written\nT247\nList method containing at least 4 terms","Tₙformula fully substituted and = 247"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q6-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q6-a-iii.png",
@@ -539,16 +839,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q6-b", topicId: "maths-4-1", conceptId: "first-three-terms-different-arithmetic-sequence",
     section: "B", questionRef: "2021 OL Paper 1 Q6(b)",
-    questionText: "The first three terms of a different arithmetic sequence are 4, 9, 14. Find S₅₀, the sum of the first 50 terms of the sequence",
+    questionText: "The first three terms of a different arithmetic sequence are 4, 9, 14. Find S₅₀, the sum of the first 50 terms of the sequence.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q6-b-r1", kind: "anyN", verbatim: "Some relevant substitution into Sₙ formula\nSₙ formula written\na or d explicitly identified\nAt least 4 terms listed", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some relevant substitution into Sₙ formula\nSₙ formula written\na or d explicitly identified\nAt least 4 terms listed","Formula fully substituted"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q6-b.png",
@@ -569,21 +882,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q7-a", topicId: "maths-3-3", conceptId: "what-level-annual-income-does-worker",
     section: "B", questionRef: "2021 OL Paper 1 Q7(a)",
+    stem: "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)",
     questionText: "At what level of annual income does a worker start paying the top rate of USC?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q7-a-r1", kind: "anyN", verbatim: "Any 2 of €12012 or €8472 or €49560 written or added", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Any 2 of €12012 or €8472 or €49560 written or added","Addition of 3 terms formulated"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[18],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q7-a",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q7-a.png",
           "srcHash": "f23b9dd2d88310ba660c53e6d1e3b453",
-          "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12… Full card prompt: At what level of annual income does a worker start paying the top rate of USC?",
+          "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12… Full card prompt: The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie) At what level of annual income does a worker start paying the top rate of USC?",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -599,21 +926,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p1-q7-b", topicId: "maths-5-2", conceptId: "how-much-usc-will-worker-have",
+    id: "maths-2021-ol-p1-q7-b", topicId: "maths-3-3", conceptId: "how-much-usc-will-worker-have",
     section: "B", questionRef: "2021 OL Paper 1 Q7(b)",
+    stem: "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)",
     questionText: "How much USC will a worker have paid in total if they pay the maximum amount due at each of the first three rates?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q7-b-r1", kind: "anyN", verbatim: "Any correct formulation of any USC rate (e.g. 0·5% of 12012 or 60∙06)\nAny use of relevant %", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Any correct formulation of any USC rate (e.g. 0·5% of 12012 or 60∙06)\nAny use of relevant %","Correct formulation of any 2 USC rates","Correct formulation of all 3 USC rates"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[18],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q7-b",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q7-b.png",
           "srcHash": "fc175a4dfe8ba57360881ae2994880df",
-          "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12… Full card prompt: How much USC will a worker have paid in total if they pay the maximum amount due at each of the first three rates?",
+          "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12… Full card prompt: The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie) How much USC will a worker have paid in total if they pay the maximum amount due at each of the first three rates?",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -629,21 +970,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q7-c", topicId: "maths-3-3", conceptId: "john-annual-income-800-amount-usc",
     section: "B", questionRef: "2021 OL Paper 1 Q7(c)",
-    questionText: "John’s annual income is €54 800. Find the amount of USC he will pay",
+    stem: "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)",
+    questionText: "John’s annual income is €54 800. Find the amount of USC he will pay.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q7-c-r1", kind: "anyN", verbatim: "60∙06 or 169·44 transferred from above\n34316 found\nAny use of relevant %\n20 484 found", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["60∙06 or 169·44 transferred from above\n34316 found\nAny use of relevant %\n20 484 found","4∙5% of 34316","Correct formulation of all 3 USC rates"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[18],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q7-c",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q7-c.png",
           "srcHash": "813a010f70cef0fd5d5f51650ef1c9a1",
-          "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12… Full card prompt: John’s annual income is €54 800. Find the amount of USC he will pay",
+          "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12… Full card prompt: The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie) John’s annual income is €54 800. Find the amount of USC he will pay.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -659,21 +1014,41 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q7-d", topicId: "maths-3-3", conceptId: "mary-pays-1602-usc-2020-her",
     section: "B", questionRef: "2021 OL Paper 1 Q7(d)",
-    questionText: "Mary pays €1602·72 in USC in 2020. Find her annual income",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)",
+    questionText: "Mary pays €1602·72 in USC in 2020. Find her annual income.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p1-q7-d-r1", kind: "anyN", verbatim: "60∙06 or 169·44 transferred from above\nAny use of relevant %", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["60∙06 or 169·44 transferred from above\nAny use of relevant %"]} },
+    { id: "maths-2021-ol-p1-q7-d-solution-1", kind: "point", verbatim: "Model solution — 1602∙72 − [60∙06 + 169∙44] =", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q7-d-solution-2", kind: "point", verbatim: "Model solution — 30516 + 12012 + 8472", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q7-d-solution-3", kind: "point", verbatim: "Model solution — = €51,000", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q7-d-solution-4", kind: "point", verbatim: "Low Partial Credit — 60∙06 or 169·44 transferred from above", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q7-d-solution-5", kind: "point", verbatim: "Low Partial Credit — Any use of relevant %", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q7-d-solution-6", kind: "point", verbatim: "Mid Partial Credit — 1373∙22", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q7-d-solution-7", kind: "point", verbatim: "High Partial Credit — 30 516", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[19],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q7-d",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q7-d.png",
           "srcHash": "06ed26b7d1d04706fe367de21163a3f2",
-          "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12… Full card prompt: Mary pays €1602·72 in USC in 2020. Find her annual income",
+          "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12… Full card prompt: The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie) Mary pays €1602·72 in USC in 2020. Find her annual income.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -689,21 +1064,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q7-e", topicId: "maths-3-3", conceptId: "patrick-has-annual-income-000-pays",
     section: "B", questionRef: "2021 OL Paper 1 Q7(e)",
-    questionText: "Patrick has an annual income of €83 000 and pays a total of €3496·18 in USC. Find the top rate of USC",
+    stem: "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)",
+    questionText: "Patrick has an annual income of €83 000 and pays a total of €3496·18 in USC. Find the top rate of USC.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 11, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2021-ol-p1-q7-e-r1", kind: "anyN", verbatim: "2459∙70 transferred from above\n70 044 transferred from above\nRelevant figures transferred from section (a) and / or (b)\nCorrect answer without supporting work", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 11. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["2459∙70 transferred from above\n70 044 transferred from above\nRelevant figures transferred from section (a) and / or (b)\nCorrect answer without supporting work","(3496∙18 −2459∙70)or 1036∙48\n(83000 −70044) or 12956","1036∙48 and 12956"],"perOptionSteps":[4,3,8]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[19],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q7-e",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q7-e.png",
           "srcHash": "dfc20fd0d5eebe78db1a4a627139434c",
-          "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12… Full card prompt: Patrick has an annual income of €83 000 and pays a total of €3496·18 in USC. Find the top rate of USC",
+          "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12… Full card prompt: The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie) Patrick has an annual income of €83 000 and pays a total of €3496·18 in USC. Find the top rate of USC.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -719,16 +1108,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p1-q8-a", topicId: "maths-4-1", conceptId: "length-breadth-height-box-shown-diagram",
+    id: "maths-2021-ol-p1-q8-a", topicId: "maths-3-4", conceptId: "length-breadth-height-box-shown-diagram",
     section: "B", questionRef: "2021 OL Paper 1 Q8(a)",
-    questionText: "The length (l), breadth (b) and height (h) of the box are shown in the diagram above. Write l, b, and h in terms of x",
+    stem: "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box.",
+    questionText: "The length (l), breadth (b) and height (h) of the box are shown in the diagram above. Write l, b, and h in terms of x.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q8-a-r1", kind: "anyN", verbatim: "One correct dimension explicitly formulated", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["One correct dimension explicitly formulated","Two correct dimensions given"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q8-a",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q8-a.png",
@@ -749,16 +1152,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q8-b", topicId: "maths-3-4", conceptId: "volume-box-can-written-40x-100x",
     section: "B", questionRef: "2021 OL Paper 1 Q8(b)",
-    questionText: "Show that the volume of the box can be written as V(x) = 4x³−40x² + 100x",
+    stem: "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box.",
+    questionText: "Show that the volume of the box can be written as V(x) = 4x³ − 40x² + 100x.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q8-b-r1", kind: "anyN", verbatim: "Correct Volume formula written\nSome relevant substitution into volume formula\nl or b or h explicitly identified", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Correct Volume formula written\nSome relevant substitution into volume formula\nl or b or h explicitly identified","Formula fully substituted","Formula fully substituted with 2 or more correct multiplications"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q8-b",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q8-b.png",
@@ -779,16 +1196,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p1-q8-c", topicId: "maths-5-2", conceptId: "explain-why-box-height-units-cannot",
+    id: "maths-2021-ol-p1-q8-c", topicId: "maths-3-4", conceptId: "explain-why-box-height-units-cannot",
     section: "B", questionRef: "2021 OL Paper 1 Q8(c)",
-    questionText: "Explain why a box of height 6 units cannot be made from the sheet of cardboard",
+    stem: "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box.",
+    questionText: "Explain why a box of height 6 units cannot be made from the sheet of cardboard.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q8-c-r1", kind: "anyN", verbatim: "Partial explanation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Partial explanation"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q8-c",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q8-c.png",
@@ -809,16 +1240,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p1-q8-d", topicId: "maths-3-1", conceptId: "complete-table-values-40x-100x-given",
-    section: "B", questionRef: "2021 OL Paper 1 Q8(d)",
-    questionText: "Complete the table below to show the values of V(x) = 4x³−40x² + 100x, where x∈ℝ, for the given values of x in the domain 0 ≤ x ≤ 5",
+    id: "maths-2021-ol-p1-q8-d", topicId: "maths-5-1", conceptId: "complete-table-values-40x-100x-given",
+    section: "B", questionRef: "2021 OL Paper 1 Q8(d), (e)",
+    stem: "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box.",
+    questionText: "(d) Complete the table below to show the values of V(x) = 4x³ − 40x² + 100x, where x ∈ ℝ, for the given values of x in the domain 0 ≤ x ≤ 5 (x = 0, 0·5, 1, …, 5; the table gives V(0·5) = 40·5 and V(4·5) = 4·5). (e) Draw the graph of the function V(x) on the grid below.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
     { id: "maths-2021-ol-p1-q8-d-r1", kind: "anyN", verbatim: "1 Item correct", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10, three parts for 15. The full scale runs to 20. Note: 2·5 3·5 4·5 4·5 31∙5 62∙5. Note: 21 items (9 table entries, 11 plot points, 1 join points). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["1 Item correct","9 Items correct","15 items correct"],"perOptionSteps":[5,5,10]} },
     ],
+    mathematicsScale: {"code":"20D","marks":[0,5,10,15,20],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[21],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q8-d",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q8-d.png",
@@ -839,16 +1284,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p1-q8-f-i", topicId: "maths-5-2", conceptId: "maximum-volume-box",
-    section: "B", questionRef: "2021 OL Paper 1 Q8(f)(i)–(iii)",
-    questionText: "The maximum volume of the box",
+    id: "maths-2021-ol-p1-q8-f-i", topicId: "maths-5-1", conceptId: "maximum-volume-box",
+    section: "B", questionRef: "2021 OL Paper 1 Q8(f)(i), (ii), (iii)",
+    stem: "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box. V(x) = 4x³ − 40x² + 100x, for 0 ≤ x ≤ 5.",
+    questionText: "Use your graph to estimate each of the following values. In each case show your work on the graph above. (i) The maximum volume of the box. (ii) The values of x which will create a box which has a volume of 30 units cubed. (iii) The volume of the box when x is 2·8 units.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q8-f-i-r1", kind: "anyN", verbatim: "Relevant work\nOne part correct without work", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Relevant work\nOne part correct without work","One part correct with corresponding correct graph work\nTwo parts correct without complete graph work","Two parts correct with corresponding correct graph work\nThree parts correct without complete graph work"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[22],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q8-f-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q8-f-i.png",
@@ -869,16 +1328,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q9-a-i", topicId: "maths-4-1", conceptId: "draw-fourth-pattern-sequence-into-box",
     section: "B", questionRef: "2021 OL Paper 1 Q9(a)(i)",
-    questionText: "Draw the fourth pattern in the sequence into the box below",
+    stem: "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses.",
+    questionText: "Draw the fourth pattern in the sequence into the box below.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q9-a-i-r1", kind: "anyN", verbatim: "Correct number of rows\nCorrect number of columns", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Correct number of rows\nCorrect number of columns","Correct number of dots\nCorrect number of crosses"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[23],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q9-a-i.png",
@@ -899,21 +1372,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q9-a-ii", topicId: "maths-4-1", conceptId: "formula-number-dots-pattern-sequence",
     section: "B", questionRef: "2021 OL Paper 1 Q9(a)(ii)",
-    questionText: "Find a formula, in n, for the number of dots in pattern n of the sequence (Tₙ)",
+    stem: "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses.",
+    questionText: "Find a formula, in n, for the number of dots in pattern n of the sequence (Tₙ).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q9-a-ii-r1", kind: "anyN", verbatim: "Tₙ formula written\na and/or d identified", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Tₙ formula written\na and/or d identified","Formula with some substitution"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[23],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q9-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q9-a-ii.png",
           "srcHash": "44abe05d5f4cd4d620fd9de15d6902c1",
-          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns containing dots and crosses are shown below. × × × × × × × × × × × × × × pattern 1 pattern 2 pattern 3 Draw the fourth pattern in the sequence into the box below. Find… Full card prompt: Find a formula, in n, for the number of dots in pattern n of the sequence (Tₙ)",
+          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns containing dots and crosses are shown below. × × × × × × × × × × × × × × pattern 1 pattern 2 pattern 3 Draw the fourth pattern in the sequence into the box below. Find… Full card prompt: The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses. Find a formula, in n, for the number of dots in pattern n of the sequence (Tₙ).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -929,21 +1416,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q9-a-iii", topicId: "maths-4-1", conceptId: "iii-total-number-dots-first-patterns",
     section: "B", questionRef: "2021 OL Paper 1 Q9(a)(iii)",
-    questionText: "(iii) Find the total number of dots in the first 20 patterns of the sequence",
+    stem: "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses.",
+    questionText: "Find the total number of dots in the first 20 patterns of the sequence.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q9-a-iii-r1", kind: "anyN", verbatim: "Sₙ formula written\nSₙ formula with some substitution\na and/or d identified\nList of 4 terms or more (1, 2, 3, 4, …)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Sₙ formula written\nSₙ formula with some substitution\na and/or d identified\nList of 4 terms or more (1, 2, 3, 4, …)","Formula fully substituted correctly\n20 terms listed with addition indicated (1 + 2 + 3 + 4 + … +20)"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[23],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q9-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q9-a-iii.png",
           "srcHash": "037760e174f201619967d730e2108a55",
-          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns containing dots and crosses are shown below. × × × × × × × × × × × × × × pattern 1 pattern 2 pattern 3 Draw the fourth pattern in the sequence into the box below. Find… Full card prompt: (iii) Find the total number of dots in the first 20 patterns of the sequence",
+          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns containing dots and crosses are shown below. × × × × × × × × × × × × × × pattern 1 pattern 2 pattern 3 Draw the fourth pattern in the sequence into the box below. Find… Full card prompt: The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses. Find the total number of dots in the first 20 patterns of the sequence.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -959,21 +1460,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q9-a-iv", topicId: "maths-4-1", conceptId: "table-shows-number-crosses-first-two",
     section: "B", questionRef: "2021 OL Paper 1 Q9(a)(iv)",
-    questionText: "(iv) The table shows the number of crosses for the first two patterns. Complete the table, and hence find a formula for the number of crosses in pattern n of the sequence. Pattern 1 2 3 4 5 6 Number 1 4 of crosses Number of crosses in pattern n =",
+    stem: "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses.",
+    questionText: "The table shows the number of crosses for the first two patterns (pattern 1: 1; pattern 2: 4). Complete the table for patterns 3 to 6, and hence find a formula for the number of crosses in pattern n of the sequence.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q9-a-iv-r1", kind: "anyN", verbatim: "One or two correct table entries", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["One or two correct table entries","Three correct table entries\nn²without table entries","Four correct table entries\nn²with any correct table entries"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[24],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q9-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q9-a-iv.png",
           "srcHash": "f113e7376db7cfe2962a5afaafb55f32",
-          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns containing dots and crosses are shown below. × × × × × × × × × × × × × × pattern 1 pattern 2 pattern 3 Draw the fourth pattern in the sequence into the box below. Find… Full card prompt: (iv) The table shows the number of crosses for the first two patterns. Complete the table, and hence find a formula for the number of crosses in pattern n of the sequence. Pattern 1 2 3 4 5 6 Number 1 4 of crosses Number of crosses in pattern n =",
+          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns containing dots and crosses are shown below. × × × × × × × × × × × × × × pattern 1 pattern 2 pattern 3 Draw the fourth pattern in the sequence into the box below. Find… Full card prompt: The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses. The table shows the number of crosses for the first two patterns (pattern 1: 1; pattern 2: 4). Complete the table for patterns 3 to 6, and hence find a formula for the number of crosses in pattern n of the sequence.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -989,21 +1504,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q9-a-v", topicId: "maths-4-1", conceptId: "number-crosses-pattern-sequence",
     section: "B", questionRef: "2021 OL Paper 1 Q9(a)(v)",
-    questionText: "Find the number of crosses in pattern 12 of the sequence",
+    stem: "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses.",
+    questionText: "Find the number of crosses in pattern 12 of the sequence.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q9-a-v-r1", kind: "anyN", verbatim: "n² written\nList of 6 terms or more (1, 4, 9, 16, 25, 36,…)\n49", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["n² written\nList of 6 terms or more (1, 4, 9, 16, 25, 36,…)\n49"]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[24],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q9-a-v",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q9-a-v.png",
           "srcHash": "67a28fc29ea2ecdc213b4b7fcc02154c",
-          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns containing dots and crosses are shown below. × × × × × × × × × × × × × × pattern 1 pattern 2 pattern 3 Draw the fourth pattern in the sequence into the box below. Find… Full card prompt: Find the number of crosses in pattern 12 of the sequence",
+          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns containing dots and crosses are shown below. × × × × × × × × × × × × × × pattern 1 pattern 2 pattern 3 Draw the fourth pattern in the sequence into the box below. Find… Full card prompt: The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses. Find the number of crosses in pattern 12 of the sequence.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -1019,21 +1548,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q9-a-vi", topicId: "maths-4-1", conceptId: "number-shapes-dots-crosses-pattern-sequence",
     section: "B", questionRef: "2021 OL Paper 1 Q9(a)(vi)",
-    questionText: "(vi) Find the number of shapes (dots and crosses) in pattern 10 of the sequence",
+    stem: "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses.",
+    questionText: "Find the number of shapes (dots and crosses) in pattern 10 of the sequence.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q9-a-vi-r1", kind: "anyN", verbatim: "a + (n−1)dornorn² written\nSome relevant substitution into Tₙ (dots)\nDots and crosses explicitly identified\nOne extra correct pattern", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["a + (n−1)dornorn² written\nSome relevant substitution into Tₙ (dots)\nDots and crosses explicitly identified\nOne extra correct pattern","Formulas fully substituted"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[24],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q9-a-vi",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q9-a-vi.png",
           "srcHash": "e4b07c2839917172d803fce2b3fd00b2",
-          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns containing dots and crosses are shown below. × × × × × × × × × × × × × × pattern 1 pattern 2 pattern 3 Draw the fourth pattern in the sequence into the box below. Find… Full card prompt: (vi) Find the number of shapes (dots and crosses) in pattern 10 of the sequence",
+          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns containing dots and crosses are shown below. × × × × × × × × × × × × × × pattern 1 pattern 2 pattern 3 Draw the fourth pattern in the sequence into the box below. Find… Full card prompt: The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses. Find the number of shapes (dots and crosses) in pattern 10 of the sequence.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -1049,21 +1592,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q9-b-i", topicId: "maths-4-1", conceptId: "substitution-write-terms-number",
     section: "B", questionRef: "2021 OL Paper 1 Q9(b)(i)",
-    questionText: "Use substitution for n to write T₁ and T₂ in terms of b, c, and a number",
+    stem: "The first two patterns in a sequence of patterns of crosses are shown below: pattern 1 has 1 cross; pattern 2 has 3 crosses. The number of crosses in pattern n is Tₙ. The general term describing Tₙ can be written in the form: Tₙ = n²/2 + bn + c, where b, c ∈ ℝ.",
+    questionText: "Use substitution for n to write T₁ and T₂ in terms of b, c, and a number.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q9-b-i-r1", kind: "anyN", verbatim: "Any relevant substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Any relevant substitution","One full substitution"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[25],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q9-b-i.png",
           "srcHash": "8b2f8e6f9fe442a6a5ffd52acff141a8",
-          "alt": "The question as printed on the paper — The first two patterns in a sequence of patterns of crosses are shown below. pattern 1 pattern 2 The number of crosses in pattern n is Tₙ. The general term describing Tₙ can be written in the form: Tₙ = n²/2 + bn + c,… Full card prompt: Use substitution for n to write T₁ and T₂ in terms of b, c, and a number",
+          "alt": "The question as printed on the paper — The first two patterns in a sequence of patterns of crosses are shown below. pattern 1 pattern 2 The number of crosses in pattern n is Tₙ. The general term describing Tₙ can be written in the form: Tₙ = n²/2 + bn + c,… Full card prompt: The first two patterns in a sequence of patterns of crosses are shown below: pattern 1 has 1 cross; pattern 2 has 3 crosses. The number of crosses in pattern n is Tₙ. The general term describing Tₙ can be written in the form: Tₙ = n²/2 + bn + c, where b, c ∈ ℝ. Use substitution for n to write T₁ and T₂ in terms of b, c, and a number.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -1079,21 +1636,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p1-q9-b-ii", topicId: "maths-4-1", conceptId: "otherwise-value-value",
+    id: "maths-2021-ol-p1-q9-b-ii", topicId: "maths-4-2", conceptId: "otherwise-value-value",
     section: "B", questionRef: "2021 OL Paper 1 Q9(b)(ii)",
-    questionText: "Hence, or otherwise, find the value of b and the value of c",
+    stem: "The first two patterns in a sequence of patterns of crosses are shown below: pattern 1 has 1 cross; pattern 2 has 3 crosses. The number of crosses in pattern n is Tₙ. The general term describing Tₙ can be written in the form: Tₙ = n²/2 + bn + c, where b, c ∈ ℝ.",
+    questionText: "Hence, or otherwise, find the value of b and the value of c.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q9-b-ii-r1", kind: "anyN", verbatim: "One or both equations from (b)(i) transferred", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["One or both equations from (b)(i) transferred","One variable found"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[25],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q9-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q9-b-ii.png",
           "srcHash": "728a1d505464c432c70543c3cf9d0653",
-          "alt": "The question as printed on the paper — The first two patterns in a sequence of patterns of crosses are shown below. pattern 1 pattern 2 The number of crosses in pattern n is Tₙ. The general term describing Tₙ can be written in the form: Tₙ = n²/2 + bn + c,… Full card prompt: Hence, or otherwise, find the value of b and the value of c",
+          "alt": "The question as printed on the paper — The first two patterns in a sequence of patterns of crosses are shown below. pattern 1 pattern 2 The number of crosses in pattern n is Tₙ. The general term describing Tₙ can be written in the form: Tₙ = n²/2 + bn + c,… Full card prompt: The first two patterns in a sequence of patterns of crosses are shown below: pattern 1 has 1 cross; pattern 2 has 3 crosses. The number of crosses in pattern n is Tₙ. The general term describing Tₙ can be written in the form: Tₙ = n²/2 + bn + c, where b, c ∈ ℝ. Hence, or otherwise, find the value of b and the value of c.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -1109,21 +1680,42 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p1-q10-a-i", topicId: "maths-2-3", conceptId: "how-long-takes-release-million-cubic",
+    id: "maths-2021-ol-p1-q10-a-i", topicId: "maths-3-3", conceptId: "how-long-takes-release-million-cubic",
     section: "B", questionRef: "2021 OL Paper 1 Q10(a)(i)",
-    questionText: "Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. Note 1 m³ = 1000 litres. Give your answer correct to the nearest minute",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "The water behind a dam is normally released at a rate of 250 000 litres per second.",
+    questionText: "Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. Note 1 m³ = 1000 litres. Give your answer correct to the nearest minute.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p1-q10-a-i-r1", kind: "anyN", verbatim: "10⁹ or equivalent\nx/250000 where x ≠ 10⁹\nCorrect answer without supporting work\nDivides by 1000\nUse of 60", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["10⁹ or equivalent\nx/250000 where x ≠ 10⁹\nCorrect answer without supporting work\nDivides by 1000\nUse of 60","10⁹\n250000 or 4000"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-ol-p1-q10-a-i-solution-1", kind: "point", verbatim: "Model solution — 10⁹/250000 = 4000 seconds", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-a-i-solution-2", kind: "point", verbatim: "Model solution — = 66·67 minutes", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-a-i-solution-3", kind: "point", verbatim: "Model solution — = 67 minutes", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-a-i-solution-4", kind: "point", verbatim: "Low Partial Credit — 10⁹ or equivalent", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-a-i-solution-5", kind: "point", verbatim: "Low Partial Credit — Correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-a-i-solution-6", kind: "point", verbatim: "Low Partial Credit — Divides by 1000", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-a-i-solution-7", kind: "point", verbatim: "Low Partial Credit — Use of 60", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-a-i-solution-8", kind: "point", verbatim: "High Partial Credit — 10⁹/250000 or 4000", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[26],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q10-a-i.png",
           "srcHash": "3d91353c8cdcd68b2dae2de859c457fc",
-          "alt": "The question as printed on the paper — The water behind a dam is normally released at a rate of 250 000 litres per second. Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. Note 1 m³ = 1000 litres. Give your answer correct to… Full card prompt: Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. Note 1 m³ = 1000 litres. Give your answer correct to the nearest minute",
+          "alt": "The question as printed on the paper — The water behind a dam is normally released at a rate of 250 000 litres per second. Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. Note 1 m³ = 1000 litres. Give your answer correct to… Full card prompt: The water behind a dam is normally released at a rate of 250 000 litres per second. Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. Note 1 m³ = 1000 litres. Give your answer correct to the nearest minute.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -1139,21 +1731,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p1-q10-a-ii", topicId: "maths-2-3", conceptId: "due-heavy-rainfall-operators-dam-decide",
+    id: "maths-2021-ol-p1-q10-a-ii", topicId: "maths-3-3", conceptId: "due-heavy-rainfall-operators-dam-decide",
     section: "B", questionRef: "2021 OL Paper 1 Q10(a)(ii)",
-    questionText: "Due to heavy rainfall, the operators of the dam decide to increase the flow by 10% for 24 hours. Find how many m³ of water were released in that 24 hour period. Give your answer in the form a × 10ⁿ, where 1 ≤ a < 10, and n∈ℕ. Give the value of a correct to 3 significant figures",
+    stem: "The water behind a dam is normally released at a rate of 250 000 litres per second.",
+    questionText: "Due to heavy rainfall, the operators of the dam decide to increase the flow by 10% for 24 hours. Find how many m³ of water were released in that 24 hour period. Give your answer in the form a × 10ⁿ, where 1 ≤ a < 10, and n ∈ ℕ. Give the value of a correct to 3 significant figures.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q10-a-ii-r1", kind: "anyN", verbatim: "1∙1 or 110% or 25000 or 250000\nCorrect answer without supporting work", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Award F* for 2∙376 × 10⁷. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["1∙1 or 110% or 25000 or 250000\nCorrect answer without supporting work","250000 × 110%\n275000","275 × 60 × 60 × 24 or 23760000"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[26],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q10-a-ii.png",
           "srcHash": "8cbeb241949220ea5da020b8a245cf83",
-          "alt": "The question as printed on the paper — The water behind a dam is normally released at a rate of 250 000 litres per second. Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. Note 1 m³ = 1000 litres. Give your answer correct to… Full card prompt: Due to heavy rainfall, the operators of the dam decide to increase the flow by 10% for 24 hours. Find how many m³ of water were released in that 24 hour period. Give your answer in the form a × 10ⁿ, where 1 ≤ a < 10, and n∈ℕ. Give the value of a correct to 3 significant figures",
+          "alt": "The question as printed on the paper — The water behind a dam is normally released at a rate of 250 000 litres per second. Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. Note 1 m³ = 1000 litres. Give your answer correct to… Full card prompt: The water behind a dam is normally released at a rate of 250 000 litres per second. Due to heavy rainfall, the operators of the dam decide to increase the flow by 10% for 24 hours. Find how many m³ of water were released in that 24 hour period. Give your answer in the form a × 10ⁿ, where 1 ≤ a < 10, and n ∈ ℕ. Give the value of a correct to 3 significant figures.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -1169,16 +1775,40 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p1-q10-b-i", topicId: "maths-3-3", conceptId: "john-walks-around-circular-trail-radius",
+    id: "maths-2021-ol-p1-q10-b-i", topicId: "maths-3-4", conceptId: "john-walks-around-circular-trail-radius",
     section: "B", questionRef: "2021 OL Paper 1 Q10(b)(i)",
-    questionText: "John walks around a circular trail of radius 0·5 km at a steady speed of 6 km/h. How long will it take him to complete 3 full circuits of the trail? Give your answer correct to the nearest minute",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    questionText: "John walks around a circular trail of radius 0·5 km at a steady speed of 6 km/h. How long will it take him to complete 3 full circuits of the trail? Give your answer correct to the nearest minute.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p1-q10-b-i-r1", kind: "anyN", verbatim: "D = 2𝜋(0∙5) = 3∙14 km", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["D = 2𝜋(0∙5) = 3∙14 km","T = 2𝜋(0∙5)3/6","= 1∙5707 hours or 1∙57","= 94∙2 mins","= 94 mins"],"perOptionSteps":[3,2,3,2]} },
+    { id: "maths-2021-ol-p1-q10-b-i-solution-1", kind: "point", verbatim: "Model solution — D = 2π(0∙5) = 3∙14 km", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-i-solution-2", kind: "point", verbatim: "Model solution — = 1∙5707 hours or 1∙57", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-i-solution-3", kind: "point", verbatim: "Model solution — = 94∙2 mins", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-i-solution-4", kind: "point", verbatim: "Model solution — = 94 mins", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-i-solution-5", kind: "point", verbatim: "Low Partial Credit — 2πr", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-i-solution-6", kind: "point", verbatim: "Low Partial Credit — 3∙14 km without work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-i-solution-7", kind: "point", verbatim: "Low Partial Credit — T = D/S or equivalent", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-i-solution-8", kind: "point", verbatim: "Low Partial Credit — πr² with r = 0∙5 inserted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-i-solution-9", kind: "point", verbatim: "Low Partial Credit — Correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-i-solution-10", kind: "point", verbatim: "Mid Partial Credit — 2π(0∙5)3/6", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-i-solution-11", kind: "point", verbatim: "Mid Partial Credit — 9∙4247 or 9∙42", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-i-solution-12", kind: "point", verbatim: "High Partial Credit — 1∙5707 hours or similar", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[26],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q10-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q10-b-i.png",
@@ -1199,21 +1829,44 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p1-q10-b-ii", topicId: "maths-2-3", conceptId: "mary-decides-walk-every-day-over",
+    id: "maths-2021-ol-p1-q10-b-ii", topicId: "maths-3-3", conceptId: "mary-decides-walk-every-day-over",
     section: "B", questionRef: "2021 OL Paper 1 Q10(b)(ii)",
-    questionText: "Mary decides to walk every day over a 5 day period. She walks a distance of 3 km on day one. She increases the length of her walk by 15% each day for the next four days. Her average speed on day 5 is 4 km/h. Find how long it will take her to complete her walk on day 5. Give your answer in minutes, correct to the nearest minute",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    questionText: "Mary decides to walk every day over a 5 day period. She walks a distance of 3 km on day one. She increases the length of her walk by 15% each day for the next four days. Her average speed on day 5 is 4 km/h. Find how long it will take her to complete her walk on day 5. Give your answer in minutes, correct to the nearest minute.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p1-q10-b-ii-r1", kind: "anyN", verbatim: "(ii) T = D/S", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["(ii) T = D/S","⇒ T = 3(1∙15⁴)/4 = 5·247/4","= 1∙3117 hours","= 1 hour and 18∙7 mins","= 78∙7","= 79 mins"],"perOptionSteps":[3,2,3,2]} },
+    { id: "maths-2021-ol-p1-q10-b-ii-solution-1", kind: "point", verbatim: "Model solution — = 1∙3117 hours", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-ii-solution-2", kind: "point", verbatim: "Model solution — = 1 hour and 18∙7 mins", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-ii-solution-3", kind: "point", verbatim: "Model solution — = 79 mins", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-ii-solution-4", kind: "point", verbatim: "Low Partial Credit — 1∙15 or 115%", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-ii-solution-5", kind: "point", verbatim: "Low Partial Credit — 3 × 15%", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-ii-solution-6", kind: "point", verbatim: "Low Partial Credit — 3 × 1∙15", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-ii-solution-7", kind: "point", verbatim: "Low Partial Credit — T = D/S or equivalent", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-ii-solution-8", kind: "point", verbatim: "Low Partial Credit — Correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-ii-solution-9", kind: "point", verbatim: "Mid Partial Credit — 3(1∙15⁴)/4", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-ii-solution-10", kind: "point", verbatim: "High Partial Credit — 1·3117 hours or similar", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2021-ol-p1-q10-b-ii-solution-11", kind: "point", verbatim: "Note — Award F* for Early Round Off which impacts the answer", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[27],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q10-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q10-b-ii.png",
           "srcHash": "97b474dc333fc7f4698e905929a855a8",
-          "alt": "The question as printed on the paper — Mary decides to walk every day over a 5 day period. She walks a distance of 3 km on day one. She increases the length of her walk by 15% each day for the next four days. Her average speed on day 5 is 4 km/h. Find how… Full card prompt: Mary decides to walk every day over a 5 day period. She walks a distance of 3 km on day one. She increases the length of her walk by 15% each day for the next four days. Her average speed on day 5 is 4 km/h. Find how long it will take her to complete her walk on day 5. Give your answer in minutes, correct to the nearest minute",
+          "alt": "The question as printed on the paper — Mary decides to walk every day over a 5 day period. She walks a distance of 3 km on day one. She increases the length of her walk by 15% each day for the next four days. Her average speed on day 5 is 4 km/h. Find how… Full card prompt: Mary decides to walk every day over a 5 day period. She walks a distance of 3 km on day one. She increases the length of her walk by 15% each day for the next four days. Her average speed on day 5 is 4 km/h. Find how long it will take her to complete her walk on day 5. Give your answer in minutes, correct to the nearest minute.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -1229,21 +1882,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2021, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q10-b-iii", topicId: "maths-3-3", conceptId: "one-day-during-john-walk-meets",
     section: "B", questionRef: "2021 OL Paper 1 Q10(b)(iii)",
-    questionText: "One day, during John's walk he meets Mary at point P on the trail. Mary is walking in the opposite direction at a steady speed of 4 km/h. John continues walking at 6 km/h. How far will he travel until he meets Mary again? Give your answer correct to the nearest metre",
+    stem: "John walks around a circular trail of radius 0·5 km at a steady speed of 6 km/h.",
+    questionText: "One day, during John’s walk he meets Mary at point P on the trail. Mary is walking in the opposite direction at a steady speed of 4 km/h. John continues walking at 6 km/h. How far will he travel until he meets Mary again? Give your answer correct to the nearest metre.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q10-b-iii-r1", kind: "anyN", verbatim: "3∙14 km or their length from (b)(i)\nD = S × T or equivalent\nCorrect answer without supporting work", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["3∙14 km or their length from (b)(i)\nD = S × T or equivalent\nCorrect answer without supporting work","6/10\n3∙14/10\n10T\n2∙5 D","T(John) = 0∙314 hours\nT(Mary) = 0∙314 hours\nMary’s distance is 1256·6"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[28],"generalNotesPages":[5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q10-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q10-b-iii.png",
           "srcHash": "ff940115e676567e85e0ec418f76e75f",
-          "alt": "The question as printed on the paper — (iii) One day, during John's walk he meets Mary at John point P on the trail. Mary P Mary is walking in the opposite direction at a Trail steady speed of 4 km/h. John continues walking at 6 km/h. How far will he travel… Full card prompt: One day, during John's walk he meets Mary at point P on the trail. Mary is walking in the opposite direction at a steady speed of 4 km/h. John continues walking at 6 km/h. How far will he travel until he meets Mary again? Give your answer correct to the nearest metre",
+          "alt": "The question as printed on the paper — (iii) One day, during John's walk he meets Mary at John point P on the trail. Mary P Mary is walking in the opposite direction at a Trail steady speed of 4 km/h. John continues walking at 6 km/h. How far will he travel… Full card prompt: John walks around a circular trail of radius 0·5 km at a steady speed of 6 km/h. One day, during John’s walk he meets Mary at point P on the trail. Mary is walking in the opposite direction at a steady speed of 4 km/h. John continues walking at 6 km/h. How far will he travel until he meets Mary again? Give your answer correct to the nearest metre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },

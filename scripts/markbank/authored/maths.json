@@ -4425,7 +4425,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q1(a)",
-  "questionText": "A television costs €380 before VAT at 21% has been added. Find the cost of the television after VAT has been added",
+  "questionText": "A television costs €380 before VAT at 21% has been added. Find the cost of the television after VAT has been added.",
   "figureKey": "maths-2021-OL-paper-p007-i0",
   "labelKey": [],
   "tariffModel": {
@@ -4458,7 +4458,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-OL-ask-p1-q1-a"
  },
  {
@@ -4470,40 +4470,72 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q1(b)",
-  "questionText": "When VAT at 21% is included, the price of a laptop increases by €130∙20. Find the total cost of the laptop including VAT",
+  "questionText": "When VAT at 21% is included, the price of a laptop increases by €130·20. Find the total cost of the laptop including VAT.",
   "figureKey": "maths-2021-OL-paper-p007-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 3, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q1-b-r1",
-    "kind": "anyN",
-    "verbatim": "130∙2\n21 and stops\n130∙2 × 121 and stops\nAny use of relevant %",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "130∙2\n21 and stops\n130∙2 × 121 and stops\nAny use of relevant %",
-      "130∙2 21 = 6∙2\n130∙2 × 121%= 157∙54\n€620"
-     ],
-     "perOptionSteps": [
-      2,
-      3
-     ]
-    }
+    "id": "maths-2021-ol-p1-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 130∙2/21 × 121 = €750∙20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 130∙2/21 and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q1-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 130∙2 × 121 and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q1-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any use of relevant %",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q1-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 130∙2/21 = 6∙2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q1-b-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 130∙2 × 121%= 157∙54",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q1-b-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — €620",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q1-b-solution-8",
+    "kind": "point",
+    "verbatim": "Note — Accept correct answer without supporting work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-OL-ask-p1-q1-b"
  },
  {
@@ -4515,7 +4547,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q1(c)",
-  "questionText": "A printer is priced at €290·40 including VAT at 21%. Find how much VAT is included in the price of this printer",
+  "questionText": "A printer is priced at €290·40 including VAT at 21%. Find how much VAT is included in the price of this printer.",
   "figureKey": "maths-2021-OL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
@@ -4548,7 +4580,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-OL-ask-p1-q1-c"
  },
  {
@@ -4560,7 +4592,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q1(d)",
-  "questionText": "On September 1, 2020 the Standard Rate of VAT in Ireland was reduced from 23% to 21%. A company bought 30 computers in September, all at the same price. The company calculated that it saved €336 due to the reduction in the VAT rate. Find the price of one computer before VAT had been added",
+  "questionText": "On September 1, 2020 the Standard Rate of VAT in Ireland was reduced from 23% to 21%. A company bought 30 computers in September, all at the same price. The company calculated that it saved €336 due to the reduction in the VAT rate. Find the price of one computer before VAT had been added.",
   "figureKey": "maths-2021-OL-paper-p008-i1",
   "labelKey": [],
   "tariffModel": {
@@ -4593,7 +4625,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-OL-ask-p1-q1-d"
  },
  {
@@ -4605,7 +4637,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q2(a)",
-  "questionText": "Plot and label z1, z2, and z1+ z2 on the Argand Diagram",
+  "questionText": "Plot and label z₁, z₂, and z₁ + z₂ on the Argand Diagram.",
   "figureKey": "maths-2021-OL-paper-p009-i0",
   "labelKey": [],
   "tariffModel": {
@@ -4640,8 +4672,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q2-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q2-a",
+  "stem": "z₁ = −3 + 4i and z₂ = 4 + 3i, where i² = −1."
  },
  {
   "id": "maths-2021-ol-p1-q2-b",
@@ -4652,7 +4685,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q2(b)",
-  "questionText": "z3= ௭1 ௭2 . Find z3 in the form a+ bi, where a, b∈ℤ",
+  "questionText": "z₃ = z₁/z₂. Find z₃ in the form a + bi, where a, b ∈ ℤ.",
   "figureKey": "maths-2021-OL-paper-p009-i1",
   "labelKey": [],
   "tariffModel": {
@@ -4685,8 +4718,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q2-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q2-b",
+  "stem": "z₁ = −3 + 4i and z₂ = 4 + 3i, where i² = −1."
  },
  {
   "id": "maths-2021-ol-p1-q2-c",
@@ -4697,41 +4731,74 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q2(c)",
-  "questionText": "(c) Find Give |z̅₁ your − answer z₂|, where in the z̅₁ form is the complex/p√q, where conjugate p |z̅₁−z₂|, where z̅₁ is the complex conjugate of z₁. your answer in the form p√q, where p and q∈ℕ",
+  "questionText": "Find |z̅₁ − z₂|, where z̅₁ is the complex conjugate of z₁. Give your answer in the form p√q, where p and q ∈ ℕ.",
   "figureKey": "maths-2021-OL-paper-p010-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q2-c-r1",
-    "kind": "anyN",
-    "verbatim": "(Work of)/(√a² + b²) relevance for z̅₁ − z₂",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. The full scale runs to 10. Note: Accept √98 for full credit. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "(Work of)/(√a² + b²) relevance for z̅₁ − z₂",
-      "√(−7)² + (−7)² or √49 + 49"
-     ],
-     "perOptionSteps": [
-      3,
-      7
-     ]
-    }
+    "id": "maths-2021-ol-p1-q2-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — z̅₁ − z₂ = −3 − 4i − (4 + 3i)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q2-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = −7 − 7i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q2-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = √98",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q2-c-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = 7√2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q2-c-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of relevance for z̅₁ − z₂",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q2-c-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — z̅₁ − z₂ = −7 − 7i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q2-c-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — √((−7)² + (−7)²) or √49 + 49",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q2-c-solution-8",
+    "kind": "point",
+    "verbatim": "Note — Accept √98 for full credit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q2-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q2-c",
+  "stem": "z₁ = −3 + 4i and z₂ = 4 + 3i, where i² = −1."
  },
  {
   "id": "maths-2021-ol-p1-q3-a",
@@ -4742,7 +4809,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q3(a)",
-  "questionText": "Show that x = 4 is a solution of the equation x²−2x−8 = 0",
+  "questionText": "Show that x = 4 is a solution of the equation x² − 2x − 8 = 0.",
   "figureKey": "maths-2021-OL-paper-p011-i0",
   "labelKey": [],
   "tariffModel": {
@@ -4775,7 +4842,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-OL-ask-p1-q3-a"
  },
  {
@@ -4787,7 +4854,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q3(b)",
-  "questionText": "The equation x² + ax + b = 0, where a, b∈ℤ, has solutions x = 5 and x = −2. Find the value of a and the value of b. a = b =",
+  "questionText": "The equation x² + ax + b = 0, where a, b ∈ ℤ, has solutions x = 5 and x = −2. Find the value of a and the value of b.",
   "figureKey": "maths-2021-OL-paper-p011-i1",
   "labelKey": [],
   "tariffModel": {
@@ -4822,7 +4889,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-OL-ask-p1-q3-b"
  },
  {
@@ -4834,7 +4901,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q3(c)",
-  "questionText": "Find the solutions of the equation 5x²−2x−9 = 0, where x∈ℝ. Give each answer correct to 2 decimal places",
+  "questionText": "Find the solutions of the equation 5x² − 2x − 9 = 0, where x ∈ ℝ. Give each answer correct to 2 decimal places.",
   "figureKey": "maths-2021-OL-paper-p011-i2",
   "labelKey": [],
   "tariffModel": {
@@ -4867,7 +4934,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-OL-ask-p1-q3-c"
  },
  {
@@ -4879,7 +4946,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q4(a)",
-  "questionText": "Solve the equation: 4(2x + 3) −7 = 3(x−5), where x∈ℝ",
+  "questionText": "Solve the equation: 4(2x + 3) − 7 = 3(x − 5), where x ∈ ℝ.",
   "figureKey": "maths-2021-OL-paper-p012-i0",
   "labelKey": [],
   "tariffModel": {
@@ -4912,7 +4979,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-OL-ask-p1-q4-a"
  },
  {
@@ -4924,7 +4991,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q4(b)",
-  "questionText": "Solve the simultaneous equations: 2x−y = 7 x² + y² = 49",
+  "questionText": "Solve the simultaneous equations: 2x − y = 7; x² + y² = 49.",
   "figureKey": "maths-2021-OL-paper-p012-i1",
   "labelKey": [],
   "tariffModel": {
@@ -4959,7 +5026,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-OL-ask-p1-q4-b"
  },
  {
@@ -4971,43 +5038,74 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q5(a)",
-  "questionText": "Find f(0∙67), correct to 2 decimal places",
+  "questionText": "Find f(0·67), correct to 2 decimal places.",
   "figureKey": "maths-2021-OL-paper-p013-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q5-a-r1",
-    "kind": "anyN",
-    "verbatim": "3(0∙67)²−6(0∙67) + 7",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Note: These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "3(0∙67)²−6(0∙67) + 7",
-      "= 4∙3267",
-      "= 4∙33"
-     ],
-     "perOptionSteps": [
-      3,
-      4,
-      3
-     ]
-    }
+    "id": "maths-2021-ol-p1-q5-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 3(0∙67)² − 6(0∙67) + 7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q5-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 4∙3267",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q5-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 4∙33",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q5-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any substitution into equation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q5-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — x = 0·67",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q5-a-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — f(0∙67) fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q5-a-solution-7",
+    "kind": "point",
+    "verbatim": "Note — Accept correct answer (4·33) without supporting work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q5-a-solution-8",
+    "kind": "point",
+    "verbatim": "Note — 4∙3267 without supporting work merits F*",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q5-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q5-a",
+  "stem": "The function, f is defined as f(x) = 3x² − 6x + 7, where x ∈ ℝ."
  },
  {
   "id": "maths-2021-ol-p1-q5-b",
@@ -5018,7 +5116,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q5(b)",
-  "questionText": "Find the value of x when f(x) = 4",
+  "questionText": "Find the value of x when f(x) = 4.",
   "figureKey": "maths-2021-OL-paper-p013-i1",
   "labelKey": [],
   "tariffModel": {
@@ -5051,8 +5149,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q5-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q5-b",
+  "stem": "The function, f is defined as f(x) = 3x² − 6x + 7, where x ∈ ℝ."
  },
  {
   "id": "maths-2021-ol-p1-q5-c",
@@ -5063,41 +5162,67 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q5(c)",
-  "questionText": "Use calculus to find the co-ordinates of the local minimum point of f",
+  "questionText": "Use calculus to find the co-ordinates of the local minimum point of f.",
   "figureKey": "maths-2021-OL-paper-p014-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q5-c-r1",
-    "kind": "anyN",
-    "verbatim": "Any correct differentiation\ndy/dx = 0 or dy/dx or f′(x)",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. The full scale runs to 10. Note: If differentiation is not used, award zero marks. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "Any correct differentiation\ndy/dx = 0 or dy/dx or f′(x)",
-      "x co-ordinate found"
-     ],
-     "perOptionSteps": [
-      3,
-      7
-     ]
-    }
+    "id": "maths-2021-ol-p1-q5-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 6x − 6 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q5-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Min Point = (1, 4)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q5-c-solution-3",
+    "kind": "point",
+    "verbatim": "Note — If differentiation is not used, award zero marks",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q5-c-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q5-c-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — dy/dx = 0 or dy/dx or f′(x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q5-c-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 6x − 6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q5-c-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — x co-ordinate found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q5-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q5-c",
+  "stem": "The function, f is defined as f(x) = 3x² − 6x + 7, where x ∈ ℝ."
  },
  {
   "id": "maths-2021-ol-p1-q6-a-i",
@@ -5108,7 +5233,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q6(a)(i)",
-  "questionText": "Find k and hence or otherwise show that the common difference is 3",
+  "questionText": "Find k and hence or otherwise show that the common difference is 3.",
   "figureKey": "maths-2021-OL-paper-p015-i0",
   "labelKey": [],
   "tariffModel": {
@@ -5141,8 +5266,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q6-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q6-a-i",
+  "stem": "The first three terms of an arithmetic sequence are −5, k, 1."
  },
  {
   "id": "maths-2021-ol-p1-q6-a-ii",
@@ -5153,7 +5279,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q6(a)(ii)",
-  "questionText": "Find T₁₀, the 10th term in the sequence",
+  "questionText": "Find T₁₀, the 10th term in the sequence.",
   "figureKey": "maths-2021-OL-paper-p015-i1",
   "labelKey": [],
   "tariffModel": {
@@ -5186,8 +5312,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q6-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q6-a-ii",
+  "stem": "The first three terms of an arithmetic sequence are −5, k, 1."
  },
  {
   "id": "maths-2021-ol-p1-q6-a-iii",
@@ -5198,7 +5325,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q6(a)(iii)",
-  "questionText": "(iii) Find which term in the sequence has a value of 247",
+  "questionText": "Find which term in the sequence has a value of 247.",
   "figureKey": "maths-2021-OL-paper-p016-i0",
   "labelKey": [],
   "tariffModel": {
@@ -5231,8 +5358,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q6-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q6-a-iii",
+  "stem": "The first three terms of an arithmetic sequence are −5, k, 1."
  },
  {
   "id": "maths-2021-ol-p1-q6-b",
@@ -5243,7 +5371,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q6(b)",
-  "questionText": "The first three terms of a different arithmetic sequence are 4, 9, 14. Find S₅₀, the sum of the first 50 terms of the sequence",
+  "questionText": "The first three terms of a different arithmetic sequence are 4, 9, 14. Find S₅₀, the sum of the first 50 terms of the sequence.",
   "figureKey": "maths-2021-OL-paper-p016-i1",
   "labelKey": [],
   "tariffModel": {
@@ -5276,7 +5404,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-OL-ask-p1-q6-b"
  },
  {
@@ -5321,8 +5449,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q7-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q7-a",
+  "stem": "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)"
  },
  {
   "id": "maths-2021-ol-p1-q7-b",
@@ -5368,8 +5497,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q7-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q7-b",
+  "stem": "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)"
  },
  {
   "id": "maths-2021-ol-p1-q7-c",
@@ -5380,7 +5510,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q7(c)",
-  "questionText": "John’s annual income is €54 800. Find the amount of USC he will pay",
+  "questionText": "John’s annual income is €54 800. Find the amount of USC he will pay.",
   "figureKey": "maths-2021-OL-paper-p017-i2",
   "labelKey": [],
   "tariffModel": {
@@ -5415,8 +5545,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q7-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q7-c",
+  "stem": "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)"
  },
  {
   "id": "maths-2021-ol-p1-q7-d",
@@ -5427,36 +5558,67 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q7(d)",
-  "questionText": "Mary pays €1602·72 in USC in 2020. Find her annual income",
+  "questionText": "Mary pays €1602·72 in USC in 2020. Find her annual income.",
   "figureKey": "maths-2021-OL-paper-p018-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q7-d-r1",
-    "kind": "anyN",
-    "verbatim": "60∙06 or 169·44 transferred from above\nAny use of relevant %",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 10. Marked in order: Low Partial Credit.",
-    "group": {
-     "claimMax": 1,
-     "perOption": 10,
-     "options": [
-      "60∙06 or 169·44 transferred from above\nAny use of relevant %"
-     ]
-    }
+    "id": "maths-2021-ol-p1-q7-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1602∙72 − [60∙06 + 169∙44] =",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q7-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 30516 + 12012 + 8472",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q7-d-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = €51,000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q7-d-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 60∙06 or 169·44 transferred from above",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q7-d-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any use of relevant %",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q7-d-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 1373∙22",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q7-d-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 30 516",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q7-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q7-d",
+  "stem": "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)"
  },
  {
   "id": "maths-2021-ol-p1-q7-e",
@@ -5467,7 +5629,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q7(e)",
-  "questionText": "Patrick has an annual income of €83 000 and pays a total of €3496·18 in USC. Find the top rate of USC",
+  "questionText": "Patrick has an annual income of €83 000 and pays a total of €3496·18 in USC. Find the top rate of USC.",
   "figureKey": "maths-2021-OL-paper-p018-i1",
   "labelKey": [],
   "tariffModel": {
@@ -5502,8 +5664,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q7-e"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q7-e",
+  "stem": "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)"
  },
  {
   "id": "maths-2021-ol-p1-q8-a",
@@ -5514,7 +5677,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q8(a)",
-  "questionText": "The length (l), breadth (b) and height (h) of the box are shown in the diagram above. Write l, b, and h in terms of x",
+  "questionText": "The length (l), breadth (b) and height (h) of the box are shown in the diagram above. Write l, b, and h in terms of x.",
   "figureKey": "maths-2021-OL-paper-p019-i0",
   "labelKey": [],
   "tariffModel": {
@@ -5547,8 +5710,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q8-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q8-a",
+  "stem": "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box."
  },
  {
   "id": "maths-2021-ol-p1-q8-b",
@@ -5559,7 +5723,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q8(b)",
-  "questionText": "Show that the volume of the box can be written as V(x) = 4x³−40x² + 100x",
+  "questionText": "Show that the volume of the box can be written as V(x) = 4x³ − 40x² + 100x.",
   "figureKey": "maths-2021-OL-paper-p019-i1",
   "labelKey": [],
   "tariffModel": {
@@ -5594,8 +5758,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q8-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q8-b",
+  "stem": "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box."
  },
  {
   "id": "maths-2021-ol-p1-q8-c",
@@ -5606,7 +5771,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q8(c)",
-  "questionText": "Explain why a box of height 6 units cannot be made from the sheet of cardboard",
+  "questionText": "Explain why a box of height 6 units cannot be made from the sheet of cardboard.",
   "figureKey": "maths-2021-OL-paper-p019-i2",
   "labelKey": [],
   "tariffModel": {
@@ -5634,8 +5799,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q8-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q8-c",
+  "stem": "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box."
  },
  {
   "id": "maths-2021-ol-p1-q8-d",
@@ -5645,8 +5811,8 @@
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 1 Q8(d)",
-  "questionText": "Complete the table below to show the values of V(x) = 4x³−40x² + 100x, where x∈ℝ, for the given values of x in the domain 0 ≤ x ≤ 5",
+  "questionRef": "2021 OL Paper 1 Q8(d), (e)",
+  "questionText": "(d) Complete the table below to show the values of V(x) = 4x³ − 40x² + 100x, where x ∈ ℝ, for the given values of x in the domain 0 ≤ x ≤ 5 (x = 0, 0·5, 1, …, 5; the table gives V(0·5) = 40·5 and V(4·5) = 4·5). (e) Draw the graph of the function V(x) on the grid below.",
   "figureKey": "maths-2021-OL-paper-p020-i0",
   "labelKey": [],
   "tariffModel": {
@@ -5681,8 +5847,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q8-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q8-d",
+  "stem": "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box."
  },
  {
   "id": "maths-2021-ol-p1-q8-f-i",
@@ -5692,8 +5859,8 @@
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 1 Q8(f)(i)–(iii)",
-  "questionText": "The maximum volume of the box",
+  "questionRef": "2021 OL Paper 1 Q8(f)(i), (ii), (iii)",
+  "questionText": "Use your graph to estimate each of the following values. In each case show your work on the graph above. (i) The maximum volume of the box. (ii) The values of x which will create a box which has a volume of 30 units cubed. (iii) The volume of the box when x is 2·8 units.",
   "figureKey": "maths-2021-OL-paper-p021-i0",
   "labelKey": [],
   "tariffModel": {
@@ -5728,8 +5895,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q8-f-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q8-f-i",
+  "stem": "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box. V(x) = 4x³ − 40x² + 100x, for 0 ≤ x ≤ 5."
  },
  {
   "id": "maths-2021-ol-p1-q9-a-i",
@@ -5740,7 +5908,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q9(a)(i)",
-  "questionText": "Draw the fourth pattern in the sequence into the box below",
+  "questionText": "Draw the fourth pattern in the sequence into the box below.",
   "figureKey": "maths-2021-OL-paper-p022-i0",
   "labelKey": [],
   "tariffModel": {
@@ -5773,8 +5941,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q9-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q9-a-i",
+  "stem": "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses."
  },
  {
   "id": "maths-2021-ol-p1-q9-a-ii",
@@ -5785,7 +5954,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q9(a)(ii)",
-  "questionText": "Find a formula, in n, for the number of dots in pattern n of the sequence (Tₙ)",
+  "questionText": "Find a formula, in n, for the number of dots in pattern n of the sequence (Tₙ).",
   "figureKey": "maths-2021-OL-paper-p022-i1",
   "labelKey": [],
   "tariffModel": {
@@ -5818,8 +5987,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q9-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q9-a-ii",
+  "stem": "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses."
  },
  {
   "id": "maths-2021-ol-p1-q9-a-iii",
@@ -5830,7 +6000,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q9(a)(iii)",
-  "questionText": "(iii) Find the total number of dots in the first 20 patterns of the sequence",
+  "questionText": "Find the total number of dots in the first 20 patterns of the sequence.",
   "figureKey": "maths-2021-OL-paper-p022-i2",
   "labelKey": [],
   "tariffModel": {
@@ -5863,8 +6033,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q9-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q9-a-iii",
+  "stem": "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses."
  },
  {
   "id": "maths-2021-ol-p1-q9-a-iv",
@@ -5875,7 +6046,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q9(a)(iv)",
-  "questionText": "(iv) The table shows the number of crosses for the first two patterns. Complete the table, and hence find a formula for the number of crosses in pattern n of the sequence. Pattern 1 2 3 4 5 6 Number 1 4 of crosses Number of crosses in pattern n = __________",
+  "questionText": "The table shows the number of crosses for the first two patterns (pattern 1: 1; pattern 2: 4). Complete the table for patterns 3 to 6, and hence find a formula for the number of crosses in pattern n of the sequence.",
   "figureKey": "maths-2021-OL-paper-p023-i0",
   "labelKey": [],
   "tariffModel": {
@@ -5910,8 +6081,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q9-a-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q9-a-iv",
+  "stem": "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses."
  },
  {
   "id": "maths-2021-ol-p1-q9-a-v",
@@ -5922,7 +6094,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q9(a)(v)",
-  "questionText": "Find the number of crosses in pattern 12 of the sequence",
+  "questionText": "Find the number of crosses in pattern 12 of the sequence.",
   "figureKey": "maths-2021-OL-paper-p023-i1",
   "labelKey": [],
   "tariffModel": {
@@ -5950,8 +6122,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q9-a-v"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q9-a-v",
+  "stem": "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses."
  },
  {
   "id": "maths-2021-ol-p1-q9-a-vi",
@@ -5962,7 +6135,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q9(a)(vi)",
-  "questionText": "(vi) Find the number of shapes (dots and crosses) in pattern 10 of the sequence",
+  "questionText": "Find the number of shapes (dots and crosses) in pattern 10 of the sequence.",
   "figureKey": "maths-2021-OL-paper-p023-i2",
   "labelKey": [],
   "tariffModel": {
@@ -5995,8 +6168,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q9-a-vi"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q9-a-vi",
+  "stem": "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses."
  },
  {
   "id": "maths-2021-ol-p1-q9-b-i",
@@ -6007,7 +6181,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q9(b)(i)",
-  "questionText": "Use substitution for n to write T₁ and T₂ in terms of b, c, and a number",
+  "questionText": "Use substitution for n to write T₁ and T₂ in terms of b, c, and a number.",
   "figureKey": "maths-2021-OL-paper-p024-i0",
   "labelKey": [],
   "tariffModel": {
@@ -6040,8 +6214,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q9-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q9-b-i",
+  "stem": "The first two patterns in a sequence of patterns of crosses are shown below: pattern 1 has 1 cross; pattern 2 has 3 crosses. The number of crosses in pattern n is Tₙ. The general term describing Tₙ can be written in the form: Tₙ = n²/2 + bn + c, where b, c ∈ ℝ."
  },
  {
   "id": "maths-2021-ol-p1-q9-b-ii",
@@ -6052,7 +6227,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q9(b)(ii)",
-  "questionText": "Hence, or otherwise, find the value of b and the value of c",
+  "questionText": "Hence, or otherwise, find the value of b and the value of c.",
   "figureKey": "maths-2021-OL-paper-p024-i1",
   "labelKey": [],
   "tariffModel": {
@@ -6085,8 +6260,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q9-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q9-b-ii",
+  "stem": "The first two patterns in a sequence of patterns of crosses are shown below: pattern 1 has 1 cross; pattern 2 has 3 crosses. The number of crosses in pattern n is Tₙ. The general term describing Tₙ can be written in the form: Tₙ = n²/2 + bn + c, where b, c ∈ ℝ."
  },
  {
   "id": "maths-2021-ol-p1-q10-a-i",
@@ -6097,41 +6273,74 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q10(a)(i)",
-  "questionText": "Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. Note 1 m³ = 1000 litres. Give your answer correct to the nearest minute",
+  "questionText": "Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. Note 1 m³ = 1000 litres. Give your answer correct to the nearest minute.",
   "figureKey": "maths-2021-OL-paper-p025-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q10-a-i-r1",
-    "kind": "anyN",
-    "verbatim": "10⁹ or equivalent\nx/250000 where x ≠ 10⁹\nCorrect answer without supporting work\nDivides by 1000\nUse of 60",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "10⁹ or equivalent\nx/250000 where x ≠ 10⁹\nCorrect answer without supporting work\nDivides by 1000\nUse of 60",
-      "10⁹\n250000 or 4000"
-     ],
-     "perOptionSteps": [
-      3,
-      7
-     ]
-    }
+    "id": "maths-2021-ol-p1-q10-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 10⁹/250000 = 4000 seconds",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 66·67 minutes",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 67 minutes",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 10⁹ or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct answer without supporting work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Divides by 1000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-a-i-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Use of 60",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-a-i-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 10⁹/250000 or 4000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q10-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q10-a-i",
+  "stem": "The water behind a dam is normally released at a rate of 250 000 litres per second."
  },
  {
   "id": "maths-2021-ol-p1-q10-a-ii",
@@ -6142,7 +6351,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q10(a)(ii)",
-  "questionText": "Due to heavy rainfall, the operators of the dam decide to increase the flow by 10% for 24 hours. Find how many m³ of water were released in that 24 hour period. Give your answer in the form a × 10ⁿ, where 1 ≤ a < 10, and n∈ℕ. Give the value of a correct to 3 significant figures",
+  "questionText": "Due to heavy rainfall, the operators of the dam decide to increase the flow by 10% for 24 hours. Find how many m³ of water were released in that 24 hour period. Give your answer in the form a × 10ⁿ, where 1 ≤ a < 10, and n ∈ ℕ. Give the value of a correct to 3 significant figures.",
   "figureKey": "maths-2021-OL-paper-p025-i1",
   "labelKey": [],
   "tariffModel": {
@@ -6177,8 +6386,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q10-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q10-a-ii",
+  "stem": "The water behind a dam is normally released at a rate of 250 000 litres per second."
  },
  {
   "id": "maths-2021-ol-p1-q10-b-i",
@@ -6189,45 +6399,100 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q10(b)(i)",
-  "questionText": "John walks around a circular trail of radius 0·5 km at a steady speed of 6 km/h. How long will it take him to complete 3 full circuits of the trail? Give your answer correct to the nearest minute",
+  "questionText": "John walks around a circular trail of radius 0·5 km at a steady speed of 6 km/h. How long will it take him to complete 3 full circuits of the trail? Give your answer correct to the nearest minute.",
   "figureKey": "maths-2021-OL-paper-p025-i2",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q10-b-i-r1",
-    "kind": "anyN",
-    "verbatim": "D = 2𝜋(0∙5) = 3∙14 km",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 3,
-     "options": [
-      "D = 2𝜋(0∙5) = 3∙14 km",
-      "T = 2𝜋(0∙5)3/6",
-      "= 1∙5707 hours or 1∙57",
-      "= 94∙2 mins",
-      "= 94 mins"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      3,
-      2
-     ]
-    }
+    "id": "maths-2021-ol-p1-q10-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — D = 2π(0∙5) = 3∙14 km",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 1∙5707 hours or 1∙57",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 94∙2 mins",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = 94 mins",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 2πr",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-i-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 3∙14 km without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-i-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — T = D/S or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-i-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — πr² with r = 0∙5 inserted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-i-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct answer without supporting work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-i-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 2π(0∙5)3/6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-i-solution-11",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 9∙4247 or 9∙42",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-i-solution-12",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 1∙5707 hours or similar",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-OL-ask-p1-q10-b-i"
  },
  {
@@ -6239,46 +6504,93 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q10(b)(ii)",
-  "questionText": "Mary decides to walk every day over a 5 day period. She walks a distance of 3 km on day one. She increases the length of her walk by 15% each day for the next four days. Her average speed on day 5 is 4 km/h. Find how long it will take her to complete her walk on day 5. Give your answer in minutes, correct to the nearest minute",
+  "questionText": "Mary decides to walk every day over a 5 day period. She walks a distance of 3 km on day one. She increases the length of her walk by 15% each day for the next four days. Her average speed on day 5 is 4 km/h. Find how long it will take her to complete her walk on day 5. Give your answer in minutes, correct to the nearest minute.",
   "figureKey": "maths-2021-OL-paper-p026-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q10-b-ii-r1",
-    "kind": "anyN",
-    "verbatim": "(ii) T = D/S",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 3,
-     "options": [
-      "(ii) T = D/S",
-      "⇒ T = 3(1∙15⁴)/4 = 5·247/4",
-      "= 1∙3117 hours",
-      "= 1 hour and 18∙7 mins",
-      "= 78∙7",
-      "= 79 mins"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      3,
-      2
-     ]
-    }
+    "id": "maths-2021-ol-p1-q10-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 1∙3117 hours",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 1 hour and 18∙7 mins",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 79 mins",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1∙15 or 115%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 3 × 15%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 3 × 1∙15",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — T = D/S or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-ii-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct answer without supporting work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 3(1∙15⁴)/4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-ii-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 1·3117 hours or similar",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2021-ol-p1-q10-b-ii-solution-11",
+    "kind": "point",
+    "verbatim": "Note — Award F* for Early Round Off which impacts the answer",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2021-OL-ask-p1-q10-b-ii"
  },
  {
@@ -6290,7 +6602,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q10(b)(iii)",
-  "questionText": "One day, during John's walk he meets Mary at point P on the trail. Mary is walking in the opposite direction at a steady speed of 4 km/h. John continues walking at 6 km/h. How far will he travel until he meets Mary again? Give your answer correct to the nearest metre",
+  "questionText": "One day, during John’s walk he meets Mary at point P on the trail. Mary is walking in the opposite direction at a steady speed of 4 km/h. John continues walking at 6 km/h. How far will he travel until he meets Mary again? Give your answer correct to the nearest metre.",
   "figureKey": "maths-2021-OL-paper-p027-i0",
   "labelKey": [],
   "tariffModel": {
@@ -6325,8 +6637,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p1-q10-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2021 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2021-OL-ask-p1-q10-b-iii",
+  "stem": "John walks around a circular trail of radius 0·5 km at a steady speed of 6 km/h."
  },
  {
   "id": "maths-2021-ol-p2-q1-a",

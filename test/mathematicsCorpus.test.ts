@@ -38,6 +38,8 @@ import ordinary2022p1 from '../scripts/markbank/mathematics/reviews/2022-ordinar
 import ordinary2022p2 from '../scripts/markbank/mathematics/reviews/2022-ordinary-p2.json';
 import higher2021p1 from '../scripts/markbank/mathematics/reviews/2021-higher-p1.json';
 import higher2021p2 from '../scripts/markbank/mathematics/reviews/2021-higher-p2.json';
+import ordinary2021p1 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p1.json';
+import glyphMap from '../scripts/markbank/authoring/glyphmap.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
 import ordinary2026p1 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p1.json';
@@ -862,6 +864,7 @@ describe.each([
   { year: 2022, level: 'ordinary' as const, number: 2, count: 50, review: ordinary2022p2 },
   { year: 2021, level: 'higher' as const, number: 1, count: 44, review: higher2021p1 },
   { year: 2021, level: 'higher' as const, number: 2, count: 42, review: higher2021p2 },
+  { year: 2021, level: 'ordinary' as const, number: 1, count: 42, review: ordinary2021p1 },
 ])('$year $level Mathematics Paper $number independent source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
   const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
@@ -921,5 +924,14 @@ describe('2022 Ordinary Mathematics Paper 2 added construction', () => {
     expect(measured.map(card => card.id)).toEqual(['maths-2022-ol-p2-q9-d']);
     const hitOrMiss = ORDINARY.find(card => card.id === 'maths-2022-ol-p2-q6-a-i')!;
     expect('mathematicsScale' in hitOrMiss && hitOrMiss.mathematicsScale?.marks).toEqual([0, 5]);
+  });
+});
+
+describe('2021 Ordinary Mathematics Paper 1 glyph repair', () => {
+  it('maps Cambria glyph 3053 (U+0BED), the z after y in the italic run, and ships Q2(b)', () => {
+    expect((glyphMap as Record<string, string>)['\u0bed']).toBe('\u{1D467}');
+    const card = ORDINARY.find(candidate => candidate.id === 'maths-2021-ol-p1-q2-b')!;
+    expect(card.questionText).toBe('z₃ = z₁/z₂. Find z₃ in the form a + bi, where a, b ∈ ℤ.');
+    expect(JSON.stringify(card)).not.toMatch(/[\u0B00-\u0DFF]/);
   });
 });

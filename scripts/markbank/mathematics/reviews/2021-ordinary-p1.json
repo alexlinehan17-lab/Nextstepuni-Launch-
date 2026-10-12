@@ -1,0 +1,1252 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2021,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003GLP100EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "60dfb68b828f2be13f31d2b42f4f863043c86139830c895e5cbfa64a8878903e",
+  "schemeSha256": "47f1e8757908dfd55fa946d1fca4b7c3e338cebc3f2d8ed4e0ba9f68dc467eee",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 28 question-paper pages and PDF pages 1–29 of the combined Ordinary Level scheme (cover, contents, the Paper 1 scale table on page 5, the summary of allocations on page 6, annotation palette, every Paper 1 model solution and marking note, and the Paper 2 title page). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    5,
+    6
+  ],
+  "sourceNotes": [
+    "The 2021 paper was adjusted for COVID-19 (220 marks): candidates answer any four of Q1–6 (30 marks each) and any two of Q7–10 (50 marks each), so 380 marks are offered and 220 count. Every question is retained.",
+    "42 independently marked units, matching the printed summary of allocations on scheme page 6. Shared scales keep their parts together: Q8(d)–(e) 20D and Q8(f)(i)–(iii) 10D.",
+    "Paper 1 bands from scheme page 5: 5B 0,2,5; 5C 0,2,3,5; 10C 0,3,7,10; 10D 0,3,5,8,10; 15D 0,4,7,11,15; 20D 0,5,10,15,20. The 15D ladder (0,4,7,11,15) differs from the later 0,4,8,12,15.",
+    "All 42 units were already authored; 41 shipped. Q2(b) was refused by the build because its prompt carried one unreadable glyph (U+0BED) from a broken font subset. The glyph is Cambria glyph id 3053, which sits directly after glyph 3052 (italic y) at the end of the italic small-letter run 3028 = a … 3052 = y and is never seen with a correct ToUnicode in any Maths paper or scheme; cropping it from paper page 6 shows the z of z₁ and z₂. It is recorded as italic z in derive_glyphs.py’s neighbour table and glyphmap.json, and the prompt is restored from the paper. Eight cards had marking points garbled by the text layer (stacked fractions dropped, a missing mid band on Q5(c) and Q7(d), solution lines shipped as credit notes) and are re-quoted from the printed scheme, labelled by band. All existing IDs are kept; topics are corrected as metadata.",
+    "The question booklet is LC003GLP100EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 2. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2021-ol-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "A television costs €380 before VAT at 21% has been added. Find the cost of the television after VAT has been added."
+    },
+    {
+      "id": "maths-2021-ol-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "When VAT at 21% is included, the price of a laptop increases by €130·20. Find the total cost of the laptop including VAT."
+    },
+    {
+      "id": "maths-2021-ol-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "A printer is priced at €290·40 including VAT at 21%. Find how much VAT is included in the price of this printer."
+    },
+    {
+      "id": "maths-2021-ol-p1-q1-d",
+      "printedParts": [
+        "Q1(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "On September 1, 2020 the Standard Rate of VAT in Ireland was reduced from 23% to 21%. A company bought 30 computers in September, all at the same price. The company calculated that it saved €336 due to the reduction in the VAT rate. Find the price of one computer before VAT had been added."
+    },
+    {
+      "id": "maths-2021-ol-p1-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "z₁ = −3 + 4i and z₂ = 4 + 3i, where i² = −1.",
+      "questionText": "Plot and label z₁, z₂, and z₁ + z₂ on the Argand Diagram."
+    },
+    {
+      "id": "maths-2021-ol-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "z₁ = −3 + 4i and z₂ = 4 + 3i, where i² = −1.",
+      "questionText": "z₃ = z₁/z₂. Find z₃ in the form a + bi, where a, b ∈ ℤ."
+    },
+    {
+      "id": "maths-2021-ol-p1-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "z₁ = −3 + 4i and z₂ = 4 + 3i, where i² = −1.",
+      "questionText": "Find |z̅₁ − z₂|, where z̅₁ is the complex conjugate of z₁. Give your answer in the form p√q, where p and q ∈ ℕ."
+    },
+    {
+      "id": "maths-2021-ol-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Show that x = 4 is a solution of the equation x² − 2x − 8 = 0."
+    },
+    {
+      "id": "maths-2021-ol-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "The equation x² + ax + b = 0, where a, b ∈ ℤ, has solutions x = 5 and x = −2. Find the value of a and the value of b."
+    },
+    {
+      "id": "maths-2021-ol-p1-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Find the solutions of the equation 5x² − 2x − 9 = 0, where x ∈ ℝ. Give each answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2021-ol-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the equation: 4(2x + 3) − 7 = 3(x − 5), where x ∈ ℝ."
+    },
+    {
+      "id": "maths-2021-ol-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the simultaneous equations: 2x − y = 7; x² + y² = 49."
+    },
+    {
+      "id": "maths-2021-ol-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "The function, f is defined as f(x) = 3x² − 6x + 7, where x ∈ ℝ.",
+      "questionText": "Find f(0·67), correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2021-ol-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "The function, f is defined as f(x) = 3x² − 6x + 7, where x ∈ ℝ.",
+      "questionText": "Find the value of x when f(x) = 4."
+    },
+    {
+      "id": "maths-2021-ol-p1-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "The function, f is defined as f(x) = 3x² − 6x + 7, where x ∈ ℝ.",
+      "questionText": "Use calculus to find the co-ordinates of the local minimum point of f."
+    },
+    {
+      "id": "maths-2021-ol-p1-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three terms of an arithmetic sequence are −5, k, 1.",
+      "questionText": "Find k and hence or otherwise show that the common difference is 3."
+    },
+    {
+      "id": "maths-2021-ol-p1-q6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three terms of an arithmetic sequence are −5, k, 1.",
+      "questionText": "Find T₁₀, the 10th term in the sequence."
+    },
+    {
+      "id": "maths-2021-ol-p1-q6-a-iii",
+      "printedParts": [
+        "Q6(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three terms of an arithmetic sequence are −5, k, 1.",
+      "questionText": "Find which term in the sequence has a value of 247."
+    },
+    {
+      "id": "maths-2021-ol-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "questionText": "The first three terms of a different arithmetic sequence are 4, 9, 14. Find S₅₀, the sum of the first 50 terms of the sequence."
+    },
+    {
+      "id": "maths-2021-ol-p1-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)",
+      "questionText": "At what level of annual income does a worker start paying the top rate of USC?"
+    },
+    {
+      "id": "maths-2021-ol-p1-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)",
+      "questionText": "How much USC will a worker have paid in total if they pay the maximum amount due at each of the first three rates?"
+    },
+    {
+      "id": "maths-2021-ol-p1-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)",
+      "questionText": "John’s annual income is €54 800. Find the amount of USC he will pay."
+    },
+    {
+      "id": "maths-2021-ol-p1-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)",
+      "questionText": "Mary pays €1602·72 in USC in 2020. Find her annual income."
+    },
+    {
+      "id": "maths-2021-ol-p1-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020: first €12 012 at 0·5%; next €8472 at 2%; next €49 560 at 4·5%; balance at the top rate. (Source: www.revenue.ie)",
+      "questionText": "Patrick has an annual income of €83 000 and pays a total of €3496·18 in USC. Find the top rate of USC."
+    },
+    {
+      "id": "maths-2021-ol-p1-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box.",
+      "questionText": "The length (l), breadth (b) and height (h) of the box are shown in the diagram above. Write l, b, and h in terms of x."
+    },
+    {
+      "id": "maths-2021-ol-p1-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box.",
+      "questionText": "Show that the volume of the box can be written as V(x) = 4x³ − 40x² + 100x."
+    },
+    {
+      "id": "maths-2021-ol-p1-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box.",
+      "questionText": "Explain why a box of height 6 units cannot be made from the sheet of cardboard."
+    },
+    {
+      "id": "maths-2021-ol-p1-q8-d",
+      "printedParts": [
+        "Q8(d)",
+        "Q8(e)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box.",
+      "questionText": "(d) Complete the table below to show the values of V(x) = 4x³ − 40x² + 100x, where x ∈ ℝ, for the given values of x in the domain 0 ≤ x ≤ 5 (x = 0, 0·5, 1, …, 5; the table gives V(0·5) = 40·5 and V(4·5) = 4·5). (e) Draw the graph of the function V(x) on the grid below."
+    },
+    {
+      "id": "maths-2021-ol-p1-q8-f-i",
+      "printedParts": [
+        "Q8(f)(i)",
+        "Q8(f)(ii)",
+        "Q8(f)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x ∈ ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the diagram below, in order to create the box. V(x) = 4x³ − 40x² + 100x, for 0 ≤ x ≤ 5.",
+      "questionText": "Use your graph to estimate each of the following values. In each case show your work on the graph above. (i) The maximum volume of the box. (ii) The values of x which will create a box which has a volume of 30 units cubed. (iii) The volume of the box when x is 2·8 units."
+    },
+    {
+      "id": "maths-2021-ol-p1-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses.",
+      "questionText": "Draw the fourth pattern in the sequence into the box below."
+    },
+    {
+      "id": "maths-2021-ol-p1-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses.",
+      "questionText": "Find a formula, in n, for the number of dots in pattern n of the sequence (Tₙ)."
+    },
+    {
+      "id": "maths-2021-ol-p1-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses.",
+      "questionText": "Find the total number of dots in the first 20 patterns of the sequence."
+    },
+    {
+      "id": "maths-2021-ol-p1-q9-a-iv",
+      "printedParts": [
+        "Q9(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses.",
+      "questionText": "The table shows the number of crosses for the first two patterns (pattern 1: 1; pattern 2: 4). Complete the table for patterns 3 to 6, and hence find a formula for the number of crosses in pattern n of the sequence."
+    },
+    {
+      "id": "maths-2021-ol-p1-q9-a-v",
+      "printedParts": [
+        "Q9(a)(v)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses.",
+      "questionText": "Find the number of crosses in pattern 12 of the sequence."
+    },
+    {
+      "id": "maths-2021-ol-p1-q9-a-vi",
+      "printedParts": [
+        "Q9(a)(vi)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns in a sequence of patterns containing dots and crosses are shown below. Pattern 1 has 1 dot above 1 cross; pattern 2 has 2 dots above a 2 × 2 block of crosses; pattern 3 has 3 dots above a 3 × 3 block of crosses.",
+      "questionText": "Find the number of shapes (dots and crosses) in pattern 10 of the sequence."
+    },
+    {
+      "id": "maths-2021-ol-p1-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series",
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "The first two patterns in a sequence of patterns of crosses are shown below: pattern 1 has 1 cross; pattern 2 has 3 crosses. The number of crosses in pattern n is Tₙ. The general term describing Tₙ can be written in the form: Tₙ = n²/2 + bn + c, where b, c ∈ ℝ.",
+      "questionText": "Use substitution for n to write T₁ and T₂ in terms of b, c, and a number."
+    },
+    {
+      "id": "maths-2021-ol-p1-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "The first two patterns in a sequence of patterns of crosses are shown below: pattern 1 has 1 cross; pattern 2 has 3 crosses. The number of crosses in pattern n is Tₙ. The general term describing Tₙ can be written in the form: Tₙ = n²/2 + bn + c, where b, c ∈ ℝ.",
+      "questionText": "Hence, or otherwise, find the value of b and the value of c."
+    },
+    {
+      "id": "maths-2021-ol-p1-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "The water behind a dam is normally released at a rate of 250 000 litres per second.",
+      "questionText": "Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. Note 1 m³ = 1000 litres. Give your answer correct to the nearest minute."
+    },
+    {
+      "id": "maths-2021-ol-p1-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "The water behind a dam is normally released at a rate of 250 000 litres per second.",
+      "questionText": "Due to heavy rainfall, the operators of the dam decide to increase the flow by 10% for 24 hours. Find how many m³ of water were released in that 24 hour period. Give your answer in the form a × 10ⁿ, where 1 ≤ a < 10, and n ∈ ℕ. Give the value of a correct to 3 significant figures."
+    },
+    {
+      "id": "maths-2021-ol-p1-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "John walks around a circular trail of radius 0·5 km at a steady speed of 6 km/h. How long will it take him to complete 3 full circuits of the trail? Give your answer correct to the nearest minute."
+    },
+    {
+      "id": "maths-2021-ol-p1-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "Mary decides to walk every day over a 5 day period. She walks a distance of 3 km on day one. She increases the length of her walk by 15% each day for the next four days. Her average speed on day 5 is 4 km/h. Find how long it will take her to complete her walk on day 5. Give your answer in minutes, correct to the nearest minute."
+    },
+    {
+      "id": "maths-2021-ol-p1-q10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "John walks around a circular trail of radius 0·5 km at a steady speed of 6 km/h.",
+      "questionText": "One day, during John’s walk he meets Mary at point P on the trail. Mary is walking in the opposite direction at a steady speed of 4 km/h. John continues walking at 6 km/h. How far will he travel until he meets Mary again? Give your answer correct to the nearest metre."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any four / any two questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained."
+    },
+    {
+      "pages": [
+        14,
+        22
+      ],
+      "wording": "hence or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task; no printed pool of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:6add43db1364664a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:61d2edd9d8426d56": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:77e23645c10a4b38": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "14:ed9b644bcdf070dd": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    },
+    "16:c9f15f4203e49347": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "22:c46e3e952014d7ab": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    }
+  }
+}

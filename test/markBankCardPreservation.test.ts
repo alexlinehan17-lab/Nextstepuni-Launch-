@@ -451,6 +451,8 @@ const reviewedMathematicsAdditions = new Set([
   'maths-2022-ol-p2-q9-d',
   // 2021 HL Paper 1 review: Q9(a)(i) had no card.
   'maths-2021-hl-p1-q9-a-i',
+  // 2021 OL Paper 1 review: Q2(b) was refused over an unreadable glyph, now mapped.
+  'maths-2021-ol-p1-q2-b',
 ]);
 // Whole Higher/Ordinary papers reviewed independently from 2026-10-11 onward.
 // Each paper's new tasks are pinned by their own identity hash below.

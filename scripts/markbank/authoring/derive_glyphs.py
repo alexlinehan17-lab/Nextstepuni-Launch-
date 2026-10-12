@@ -65,6 +65,10 @@ NEIGHBOUR = {
     '\u0d6c': '(',   # gid 3436, between 3435='(' and 3439=')': a size variant
     '\u0d70': ')',   # gid 3440, and it closes 3436 in "cos(t + 2npi) + isin(2pi
     '\u0bec': '\U0001d466',  # gid 3052, follows 3051='x': the y of dy/dx
+    '\u0bed': '\U0001d467',  # gid 3053, follows 3052='y' at the end of the italic-small run
+                             # 3028='a' .. 3052='y'; never seen with a sane ToUnicode in any
+                             # Maths paper or scheme. Cropped and read: 2021 OL Paper 1 Q2(b)
+                             # prints "z3 = z1/z2" with it.
     '\u0da7': '\u221a',  # gid 3495, beside 3493='v': a taller radical
     '\u0db1': '\u222b',  # gid 3505, beside 3493='v' and 3533='S': the integral
     '\u1246': '(',   # gid 4678, in the 4672='(' 4673=')' bracket run
