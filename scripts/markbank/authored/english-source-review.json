@@ -3412,6 +3412,28 @@
       "paperSha256": "3ff6b77cf7fb30f3c61cb07c74a16c95ad4e32b4bf8e664d31fb5bf47f0cff91",
       "questionSha256": "dfd0409301d62e3686b0d4a4db787c2df1d0173881013cfd020e999b3c1b29d2",
       "reason": "Self-contained: a moment when love was shown to the candidate or shown by them. Scheme PDF11 assesses the candidate’s own description and never refers to TEXT 3. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2025-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "First Day",
+      "pages": [
+        14
+      ],
+      "attribution": "First Day — Theo Dorgan, as reproduced in the SEC 2025 paper.",
+      "questionSha256": "0334ed85c49868f232d765bad18f8b10a45b00b8b2df80d279ad8aaf7a618614",
+      "reason": "Paper PDF14 prints the instruction (“Read the poem ‘First Day’ by Theo Dorgan”), the title, all seven stanzas (3 + 3 + 3 + 3 + 3 + 3 + 3 lines) and the byline above the two questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
+    },
+    "english-2025-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "First Day",
+      "pages": [
+        14
+      ],
+      "attribution": "First Day — Theo Dorgan, as reproduced in the SEC 2025 paper.",
+      "questionSha256": "6a98ad9756b6fc1cef63d92e30a60de45f167ce86368178d71f4b6e34533ea10",
+      "reason": "Paper PDF14 prints the instruction (“Read the poem ‘First Day’ by Theo Dorgan”), the title, all seven stanzas (3 + 3 + 3 + 3 + 3 + 3 + 3 lines) and the byline above the two questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
     }
   }
 }

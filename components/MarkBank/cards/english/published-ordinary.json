@@ -37,6 +37,17 @@
    "schemeSha256": "1ffaf4e11d7e4cf6576ac088ed540feb6d19fae29c13aaf4f35ea59b9e1a033b"
   },
   {
+   "paperId": "english-2025-ol-p2",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "tasks": 104,
+   "cards": 101,
+   "printedDuplicates": 3,
+   "paperSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782",
+   "schemeSha256": "1ffaf4e11d7e4cf6576ac088ed540feb6d19fae29c13aaf4f35ea59b9e1a033b"
+  },
+  {
    "paperId": "english-2018-ol-p1",
    "year": 2018,
    "level": "ordinary",
@@ -1111,7 +1122,8 @@
  },
  "legacyAdditionalSources": {},
  "bridgedPapers": [
-  "english-2025-ol-p1"
+  "english-2025-ol-p1",
+  "english-2025-ol-p2"
  ],
  "bridgedLegacyIds": [
   "english-2025-ol-p1-composing-1",
@@ -1133,13 +1145,102 @@
   "english-2025-ol-p1-t3-a-i",
   "english-2025-ol-p1-t3-a-ii",
   "english-2025-ol-p1-t3-a-iii-a",
-  "english-2025-ol-p1-t3-b"
+  "english-2025-ol-p1-t3-b",
+  "english-2025-ol-p2-comparative-a-q1",
+  "english-2025-ol-p2-comparative-a-q2",
+  "english-2025-ol-p2-comparative-b-q1",
+  "english-2025-ol-p2-comparative-b-q2",
+  "english-2025-ol-p2-comparative-c-q1",
+  "english-2025-ol-p2-comparative-c-q2",
+  "english-2025-ol-p2-prescribed-a-q1",
+  "english-2025-ol-p2-prescribed-a-q2-i",
+  "english-2025-ol-p2-prescribed-a-q2-ii",
+  "english-2025-ol-p2-prescribed-a-q2-iii",
+  "english-2025-ol-p2-prescribed-b-q1",
+  "english-2025-ol-p2-prescribed-b-q2-i",
+  "english-2025-ol-p2-prescribed-b-q2-ii",
+  "english-2025-ol-p2-prescribed-b-q2-iii",
+  "english-2025-ol-p2-prescribed-c-q1",
+  "english-2025-ol-p2-prescribed-c-q2-i",
+  "english-2025-ol-p2-prescribed-c-q2-ii",
+  "english-2025-ol-p2-prescribed-c-q2-iii",
+  "english-2025-ol-p2-prescribed-d-q1",
+  "english-2025-ol-p2-prescribed-d-q2-i",
+  "english-2025-ol-p2-prescribed-d-q2-ii",
+  "english-2025-ol-p2-prescribed-d-q2-iii",
+  "english-2025-ol-p2-prescribed-e-q1",
+  "english-2025-ol-p2-prescribed-e-q2-i",
+  "english-2025-ol-p2-prescribed-e-q2-ii",
+  "english-2025-ol-p2-prescribed-e-q2-iii",
+  "english-2025-ol-p2-prescribed-f-q1",
+  "english-2025-ol-p2-prescribed-f-q2-i",
+  "english-2025-ol-p2-prescribed-f-q2-ii",
+  "english-2025-ol-p2-prescribed-f-q2-iii",
+  "english-2025-ol-p2-single-a-q1",
+  "english-2025-ol-p2-single-a-q2",
+  "english-2025-ol-p2-single-a-q3",
+  "english-2025-ol-p2-single-a-q4",
+  "english-2025-ol-p2-single-b-q1",
+  "english-2025-ol-p2-single-b-q2",
+  "english-2025-ol-p2-single-b-q3",
+  "english-2025-ol-p2-single-b-q4",
+  "english-2025-ol-p2-single-c-q1",
+  "english-2025-ol-p2-single-c-q2",
+  "english-2025-ol-p2-single-c-q3",
+  "english-2025-ol-p2-single-c-q4",
+  "english-2025-ol-p2-single-d-q1",
+  "english-2025-ol-p2-single-d-q2",
+  "english-2025-ol-p2-single-d-q3",
+  "english-2025-ol-p2-single-d-q4",
+  "english-2025-ol-p2-single-e-q1",
+  "english-2025-ol-p2-single-e-q2",
+  "english-2025-ol-p2-single-e-q3",
+  "english-2025-ol-p2-single-e-q4",
+  "english-2025-ol-p2-single-f-q1",
+  "english-2025-ol-p2-single-f-q2",
+  "english-2025-ol-p2-single-f-q3",
+  "english-2025-ol-p2-single-f-q4",
+  "english-2025-ol-p2-single-g-q1",
+  "english-2025-ol-p2-single-g-q2",
+  "english-2025-ol-p2-single-g-q3",
+  "english-2025-ol-p2-single-g-q4",
+  "english-2025-ol-p2-single-h-q1",
+  "english-2025-ol-p2-single-h-q2",
+  "english-2025-ol-p2-single-h-q3",
+  "english-2025-ol-p2-single-h-q4",
+  "english-2025-ol-p2-single-i-q1",
+  "english-2025-ol-p2-single-i-q2",
+  "english-2025-ol-p2-single-i-q3",
+  "english-2025-ol-p2-single-i-q4",
+  "english-2025-ol-p2-unseen-q1",
+  "english-2025-ol-p2-unseen-q2"
  ],
  "bridgeAliases": {
   "english-2025-ol-p1-t2-a-iii-b": "english-2025-ol-p1-t1-a-iii-b",
-  "english-2025-ol-p1-t3-a-iii-b": "english-2025-ol-p1-t1-a-iii-b"
+  "english-2025-ol-p1-t3-a-iii-b": "english-2025-ol-p1-t1-a-iii-b",
+  "english-2025-ol-p2-comparative-a-q1": "english-2025-ol-p2-comparative-a-q1-a-i",
+  "english-2025-ol-p2-comparative-a-q2": "english-2025-ol-p2-comparative-a-q2-a-i",
+  "english-2025-ol-p2-comparative-b-q1": "english-2025-ol-p2-comparative-b-q1-a-i",
+  "english-2025-ol-p2-comparative-b-q2": "english-2025-ol-p2-comparative-b-q2-a-i",
+  "english-2025-ol-p2-comparative-c-q1": "english-2025-ol-p2-comparative-c-q1-a-i",
+  "english-2025-ol-p2-comparative-c-q2": "english-2025-ol-p2-comparative-c-q2-a-i",
+  "english-2025-ol-p2-prescribed-a-q1": "english-2025-ol-p2-prescribed-a-q1-a",
+  "english-2025-ol-p2-prescribed-b-q1": "english-2025-ol-p2-prescribed-b-q1-a",
+  "english-2025-ol-p2-prescribed-c-q1": "english-2025-ol-p2-prescribed-c-q1-a",
+  "english-2025-ol-p2-prescribed-d-q1": "english-2025-ol-p2-prescribed-d-q1-a",
+  "english-2025-ol-p2-prescribed-e-q1": "english-2025-ol-p2-prescribed-e-q1-a",
+  "english-2025-ol-p2-prescribed-f-q1": "english-2025-ol-p2-prescribed-f-q1-a",
+  "english-2025-ol-p2-single-a-q1": "english-2025-ol-p2-single-a-q1-a",
+  "english-2025-ol-p2-single-b-q1": "english-2025-ol-p2-single-b-q1-a",
+  "english-2025-ol-p2-single-c-q1": "english-2025-ol-p2-single-c-q1-a",
+  "english-2025-ol-p2-single-d-q1": "english-2025-ol-p2-single-d-q1-a",
+  "english-2025-ol-p2-single-e-q1": "english-2025-ol-p2-single-e-q1-a",
+  "english-2025-ol-p2-single-f-q1": "english-2025-ol-p2-single-f-q1-a",
+  "english-2025-ol-p2-single-g-q1": "english-2025-ol-p2-single-g-q1-a",
+  "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
+  "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 942,
+ "cardCount": 1043,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -6462,6 +6563,3789 @@
    "atlas": {
     "fileid": "LC002GLP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-a-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text A Q1(a)",
+   "questionText": "Describe a moment in Brontë’s novel, The Tenant of Wildfell Hall, when you felt sympathy for a character. Give a reason why you felt sympathy for this character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-28",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tenant of Wildfell Hall (Anne Brontë)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-a-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text A Q1(b)",
+   "questionText": "Describe a different moment in Brontë’s novel, The Tenant of Wildfell Hall, when an action taken by a character disappointed you. Give a reason why the character’s action disappointed you. You may use the same character you referred to in part (a) or a different character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-28",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tenant of Wildfell Hall (Anne Brontë)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-a-q1-c",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text A Q1(c)",
+   "questionText": "In her novel, The Tenant of Wildfell Hall, Brontë portrays people in a positive light. To what extent do you agree or disagree with this view? Give two reasons for your answer. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-28",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tenant of Wildfell Hall (Anne Brontë)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-a-q2",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text A Q2",
+   "questionText": "You and a friend present a monthly podcast called ‘Star Reads’ in which you review and rate novels and plays. At the end of each podcast, the text you are discussing is given a star rating, from one to five. A one‐star rating means – Give it a Miss! A five‐star rating means – Not to be Missed! This month you will be discussing Brontë’s novel, The Tenant of Wildfell Hall. Write the dialogue, for the podcast, between you and your friend, in which you discuss three compelling reasons why you arrive at your star rating for Brontë’s novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-28",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 5). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tenant of Wildfell Hall (Anne Brontë)",
+   "schemePages": [
+    22,
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-a-q3",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text A Q3",
+   "questionText": "In her novel, The Tenant of Wildfell Hall, Brontë explores many relationships between characters that are fascinating for the reader. Choose one relationship between two of the characters in the novel that you consider fascinating:  Describe how this relationship is first introduced in the novel  Explain what it is that you find fascinating about the relationship  Suggest one piece of beneficial advice you would give to either, or both of the characters in this relationship. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-28",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tenant of Wildfell Hall (Anne Brontë)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-a-q4",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text A Q4",
+   "questionText": "Your class is having a debate about the ending of Brontë’s novel, The Tenant of Wildfell Hall. Write the text of your contribution to the debate, beginning either with the line: I was satisfied with the ending of ‘The Tenant of Wildfell Hall’ because … or I was not satisfied with the ending of ‘The Tenant of Wildfell Hall’ because ... Argue three points in your response. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-28",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tenant of Wildfell Hall (Anne Brontë)",
+   "schemePages": [
+    23,
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-b-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text B Q1(a)",
+   "questionText": "Describe a moment in Doerr’s novel, All the Light We Cannot See, when you felt sympathy for a character. Give a reason why you felt sympathy for this character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    24,
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-b-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text B Q1(b)",
+   "questionText": "Describe a different moment in Doerr’s novel, All the Light We Cannot See, when an action taken by a character disappointed you. Give a reason why the character’s action disappointed you. You may use the same character you referred to in part (a) or a different character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-b-q1-c",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text B Q1(c)",
+   "questionText": "In his novel, All the Light We Cannot See, Doerr portrays people in a positive light. To what extent do you agree or disagree with this view? Give two reasons for your answer. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    25,
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-b-q2",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text B Q2",
+   "questionText": "You and a friend present a monthly podcast called ‘Star Reads’ in which you review and rate novels and plays. At the end of each podcast, the text you are discussing is given a star rating, from one to five. A one‐star rating means – Give it a Miss! A five‐star rating means – Not to be Missed! This month you will be discussing Doerr’s novel, All the Light We Cannot See. Write the dialogue, for the podcast, between you and your friend, in which you discuss three compelling reasons why you arrive at your star rating for Doerr’s novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 5). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-b-q3",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text B Q3",
+   "questionText": "In his novel, All the Light We Cannot See, Doerr explores many relationships between characters that are fascinating for the reader. Choose one relationship between two of the characters in the novel that you consider fascinating:  Describe how this relationship is first introduced in the novel  Explain what it is that you find fascinating about the relationship  Suggest one piece of beneficial advice you would give to either, or both of the characters in this relationship. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    26,
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-b-q4",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text B Q4",
+   "questionText": "Your class is having a debate about the ending of Doerr’s novel, All the Light We Cannot See. Write the text of your contribution to the debate, beginning either with the line: I was satisfied with the ending of ‘All the Light We Cannot See’, because … or I was not satisfied with the ending of ‘All the Light We Cannot See’, because ... Argue three points in your response. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-c-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text C Q1(a)",
+   "questionText": "Describe a moment in Hansberry’s play, A Raisin in the Sun, when you felt sympathy for a character. Give a reason why you felt sympathy for this character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-c-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text C Q1(b)",
+   "questionText": "Describe a different moment in Hansberry’s play, A Raisin in the Sun, when an action taken by a character disappointed you. Give a reason why the character’s action disappointed you. You may use the same character you referred to in part (a) or a different character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-c-q1-c",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text C Q1(c)",
+   "questionText": "In her play, A Raisin in the Sun, Hansberry portrays people in a positive light. To what extent do you agree or disagree with this view? Give two reasons for your answer. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-c-q2",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text C Q2",
+   "questionText": "You and a friend present a monthly podcast called ‘Star Reads’ in which you review and rate novels and plays. At the end of each podcast, the text you are discussing is given a star rating, from one to five. A one‐star rating means – Give it a Miss! A five‐star rating means – Not to be Missed! This month you will be discussing Hansberry’s play, A Raisin in the Sun. Write the dialogue, for the podcast, between you and your friend, in which you discuss three compelling reasons why you arrive at your star rating for Hansberry’s play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 5). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    29,
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-c-q3",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text C Q3",
+   "questionText": "In her play, A Raisin in the Sun, Hansberry explores many relationships between characters that are fascinating for the audience. Choose one relationship between two of the characters in the play that you consider fascinating:  Describe how this relationship is first introduced in the play  Explain what it is that you find fascinating about the relationship  Suggest one piece of beneficial advice you would give to either, or both of the characters in this relationship. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-c-q4",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text C Q4",
+   "questionText": "Your class is having a debate about the ending of Hansberry’s play, A Raisin in the Sun. Write the text of your contribution to the debate, beginning either with the line: I was satisfied with the ending of ‘A Raisin in the Sun’, because … or I was not satisfied with the ending of ‘A Raisin in the Sun’, because ... Argue three points in your response. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-7",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Raisin in the Sun (Lorraine Hansberry)",
+   "schemePages": [
+    30,
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-d-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text D Q1(a)",
+   "questionText": "Describe a moment in Keane’s play, Sive, when you felt sympathy for a character. Give a reason why you felt sympathy for this character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-19",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sive (John B. Keane)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-d-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text D Q1(b)",
+   "questionText": "Describe a different moment in Keane’s play, Sive, when an action taken by a character disappointed you. Give a reason why the character’s action disappointed you. You may use the same character you referred to in part (a) or a different character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-19",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sive (John B. Keane)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-d-q1-c",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text D Q1(c)",
+   "questionText": "In his play, Sive, Keane portrays people in a positive light. To what extent do you agree or disagree with this view? Give two reasons for your answer. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-19",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sive (John B. Keane)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-d-q2",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text D Q2",
+   "questionText": "You and a friend present a monthly podcast called ‘Star Reads’ in which you review and rate novels and plays. At the end of each podcast, the text you are discussing is given a star rating, from one to five. A one‐star rating means – Give it a Miss! A five‐star rating means – Not to be Missed! This month you will be discussing Keane’s play, Sive. Write the dialogue, for the podcast, between you and your friend, in which you discuss three compelling reasons why you arrive at your star rating for Keane’s play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-19",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 5). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sive (John B. Keane)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-d-q3",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text D Q3",
+   "questionText": "In his play, Sive, Keane explores many relationships between characters that are fascinating for the audience. Choose one relationship between two of the characters in the play that you consider fascinating:  Describe how this relationship is first introduced in the play  Explain what it is that you find fascinating about the relationship  Suggest one piece of beneficial advice you would give to either, or both of the characters in this relationship. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-19",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sive (John B. Keane)",
+   "schemePages": [
+    33,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-d-q4",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text D Q4",
+   "questionText": "Your class is having a debate about the ending of Keane’s play, Sive. Write the text of your contribution to the debate, beginning either with the line: I was satisfied with the ending of ‘Sive’, because … or I was not satisfied with the ending of ‘Sive’, because ... Argue three points in your response. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-19",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sive (John B. Keane)",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-e-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text E Q1(a)",
+   "questionText": "Describe a moment in Miller’s play, The Crucible, when you felt sympathy for a character. Give a reason why you felt sympathy for this character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-e-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text E Q1(b)",
+   "questionText": "Describe a different moment in Miller’s play, The Crucible, when an action taken by a character disappointed you. Give a reason why the character’s action disappointed you. You may use the same character you referred to in part (a) or a different character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-e-q1-c",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text E Q1(c)",
+   "questionText": "In his play, The Crucible, Miller portrays people in a positive light. To what extent do you agree or disagree with this view? Give two reasons for your answer. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    35,
+    36
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-e-q2",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text E Q2",
+   "questionText": "You and a friend present a monthly podcast called ‘Star Reads’ in which you review and rate novels and plays. At the end of each podcast, the text you are discussing is given a star rating, from one to five. A one‐star rating means – Give it a Miss! A five‐star rating means – Not to be Missed! This month you will be discussing Miller’s play, The Crucible. Write the dialogue, for the podcast, between you and your friend, in which you discuss three compelling reasons why you arrive at your star rating for Miller’s play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 5). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    36,
+    37
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-e-q3",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text E Q3",
+   "questionText": "In his play, The Crucible, Miller explores many relationships between characters that are fascinating for the audience. Choose one relationship between two of the characters in the play that you consider fascinating:  Describe how this relationship is first introduced in the play  Explain what it is that you find fascinating about the relationship  Suggest one piece of beneficial advice you would give to either, or both of the characters in this relationship. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-e-q4",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text E Q4",
+   "questionText": "Your class is having a debate about the ending of Miller’s play, The Crucible. Write the text of your contribution to the debate, beginning either with the line: I was satisfied with the ending of ‘The Crucible’, because … or I was not satisfied with the ending of ‘The Crucible’, because ... Argue three points in your response. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-21",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Crucible (Arthur Miller)",
+   "schemePages": [
+    37,
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-f-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text F Q1(a)",
+   "questionText": "Describe a moment in Rash’s novel, The Cove, when you felt sympathy for a character. Give a reason why you felt sympathy for this character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-f-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text F Q1(b)",
+   "questionText": "Describe a different moment in Rash’s novel, The Cove, when an action taken by a character disappointed you. Give a reason why the character’s action disappointed you. You may use the same character you referred to in part (a) or a different character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    38,
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-f-q1-c",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text F Q1(c)",
+   "questionText": "In his novel, The Cove, Rash portrays people in a positive light. To what extent do you agree or disagree with this view? Give two reasons for your answer. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-f-q2",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text F Q2",
+   "questionText": "You and a friend present a monthly podcast called ‘Star Reads’ in which you review and rate novels and plays. At the end of each podcast, the text you are discussing is given a star rating, from one to five. A one‐star rating means – Give it a Miss! A five‐star rating means – Not to be Missed! This month you will be discussing Rash’s novel, The Cove. Write the dialogue, for the podcast, between you and your friend, in which you discuss three compelling reasons why you arrive at your star rating for Rash’s novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 5). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    39,
+    40
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-f-q3",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text F Q3",
+   "questionText": "In his novel, The Cove, Rash explores many relationships between characters that are fascinating for the reader. Choose one relationship between two of the characters in the novel that you consider fascinating:  Describe how this relationship is first introduced in the novel  Explain what it is that you find fascinating about the relationship  Suggest one piece of beneficial advice you would give to either, or both of the characters in this relationship. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-f-q4",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text F Q4",
+   "questionText": "Your class is having a debate about the ending of Rash’s novel, The Cove. Write the text of your contribution to the debate, beginning either with the line: I was satisfied with the ending of ‘The Cove’, because … or I was not satisfied with the ending of ‘The Cove’, because ... Argue three points in your response. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-20",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cove (Ron Rash)",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-g-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text G Q1(a)",
+   "questionText": "Describe a moment in Shakespeare’s play, King Lear, when you felt sympathy for a character. Give a reason why you felt sympathy for this character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    41,
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-g-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text G Q1(b)",
+   "questionText": "Describe a different moment in Shakespeare’s play, King Lear, when an action taken by a character disappointed you. Give a reason why the character’s action disappointed you. You may use the same character you referred to in part (a) or a different character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-g-q1-c",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text G Q1(c)",
+   "questionText": "In his play, King Lear, Shakespeare portrays people in a positive light. To what extent do you agree or disagree with this view? Give two reasons for your answer. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    42,
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-g-q2",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text G Q2",
+   "questionText": "You and a friend present a monthly podcast called ‘Star Reads’ in which you review and rate novels and plays. At the end of each podcast, the text you are discussing is given a star rating, from one to five. A one‐star rating means – Give it a Miss! A five‐star rating means – Not to be Missed! This month you will be discussing Shakespeare’s play, King Lear. Write the dialogue, for the podcast, between you and your friend, in which you discuss three compelling reasons why you arrive at your star rating for Shakespeare’s play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 5). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-g-q3",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text G Q3",
+   "questionText": "In his play, King Lear, Shakespeare explores many relationships between characters that are fascinating for the audience. Choose one relationship between two of the characters in the play that you consider fascinating and:  Describe how this relationship is first introduced in the play  Explain what it is that you find fascinating about the relationship  Suggest one piece of beneficial advice you would give to either, or both of the characters in this relationship. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    43,
+    44
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-g-q4",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text G Q4",
+   "questionText": "Your class is having a debate about the ending of Shakespeare’s play, King Lear. Write the text of your contribution to the debate, beginning either with the line: I was satisfied with the ending of ‘King Lear’, because … or I was not satisfied with the ending of ‘King Lear’, because ... Argue three points in your response. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-h-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text H Q1(a)",
+   "questionText": "Describe a moment in Shelley’s novel, Frankenstein, when you felt sympathy for a character. Give a reason why you felt sympathy for this character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-h-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text H Q1(b)",
+   "questionText": "Describe a different moment in Shelley’s novel, Frankenstein, when an action taken by a character disappointed you. Give a reason why the character’s action disappointed you. You may use the same character you referred to in part (a) or a different character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-h-q1-c",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text H Q1(c)",
+   "questionText": "In her novel, Frankenstein Shelley portrays people in a positive light. To what extent do you agree or disagree with this view? Give two reasons for your answer. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-h-q2",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text H Q2",
+   "questionText": "You and a friend present a monthly podcast called ‘Star Reads’ in which you review and rate novels and plays. At the end of each podcast, the text you are discussing is given a star rating, from one to five. A one‐star rating means – Give it a Miss! A five‐star rating means – Not to be Missed! This month you will be discussing Shelley’s novel, Frankenstein. Write the dialogue, for the podcast, between you and your friend, in which you discuss three compelling reasons why you arrive at your star rating for Shelley’s novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 5). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    46,
+    47
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-h-q3",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text H Q3",
+   "questionText": "In her novel, Frankenstein, Shelley explores many relationships between characters that are fascinating for the reader. Choose one relationship between two of the characters in the novel that you consider fascinating:  Describe how this relationship is first introduced in the novel  Explain what it is that you find fascinating about the relationship  Suggest one piece of beneficial advice you would give to either, or both of the characters in this relationship. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-h-q4",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text H Q4",
+   "questionText": "Your class is having a debate about the ending of Shelley’s novel, Frankenstein. Write the text of your contribution to the debate, beginning either with the line: I was satisfied with the ending of ‘Frankenstein’, because … or I was not satisfied with the ending of ‘Frankenstein’, because ... Argue three points in your response. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    47,
+    48
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-i-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text I Q1(a)",
+   "questionText": "Describe a moment in Whitehead’s novel, The Underground Railroad, when you felt sympathy for a character. Give a reason why you felt sympathy for this character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-29",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Underground Railroad (Colson Whitehead)",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-i-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text I Q1(b)",
+   "questionText": "Describe a different moment in Whitehead’s novel, The Underground Railroad, when an action taken by a character disappointed you. Give a reason why the character’s action disappointed you. You may use the same character you referred to in part (a) or a different character. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-29",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Underground Railroad (Colson Whitehead)",
+   "schemePages": [
+    48,
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-i-q1-c",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text I Q1(c)",
+   "questionText": "In his novel, The Underground Railroad, Whitehead portrays people in a positive light. To what extent do you agree or disagree with this view? Give two reasons for your answer. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-29",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required two points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Underground Railroad (Colson Whitehead)",
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-i-q2",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text I Q2",
+   "questionText": "You and a friend present a monthly podcast called ‘Star Reads’ in which you review and rate novels and plays. At the end of each podcast, the text you are discussing is given a star rating, from one to five. A one‐star rating means – Give it a Miss! A five‐star rating means – Not to be Missed! This month you will be discussing Whitehead’s novel, The Underground Railroad. Write the dialogue, for the podcast, between you and your friend, in which you discuss three compelling reasons why you arrive at your star rating for Whitehead’s novel. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-29",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 5). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Underground Railroad (Colson Whitehead)",
+   "schemePages": [
+    49,
+    50
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-i-q3",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text I Q3",
+   "questionText": "In his novel, The Underground Railroad, Whitehead explores many relationships between characters that are fascinating for the reader. Choose one relationship between two of the characters in the novel that you consider fascinating:  Describe how this relationship is first introduced in the novel  Explain what it is that you find fascinating about the relationship  Suggest one piece of beneficial advice you would give to either, or both of the characters in this relationship. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-29",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Underground Railroad (Colson Whitehead)",
+   "schemePages": [
+    50,
+    51
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-single-i-q4",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Single Text I Q4",
+   "questionText": "Your class is having a debate about the ending of Whitehead’s novel, The Underground Railroad. Write the text of your contribution to the debate, beginning either with the line: I was satisfied with the ending of ‘The Underground Railroad’, because … or I was not satisfied with the ending of ‘The Underground Railroad’, because ... Argue three points in your response. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-29",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Underground Railroad (Colson Whitehead)",
+   "schemePages": [
+    51
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-a-q1-a-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative A Q1(a)(i)",
+   "questionText": "Name one of the texts on your comparative course and identify a theme that you have studied in that text. Explain how the author underlined the importance of your chosen theme in the opening sections of your text. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Theme",
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-a-q1-a-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative A Q1(a)(ii)",
+   "questionText": "Name another text on your comparative course. In relation to the same theme discussed in part (a) (i), explain how the author underlined the importance this theme in the opening sections of this text. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Theme",
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-a-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative A Q1(b)",
+   "questionText": "In relation to the theme you have discussed in part (a) above, compare how exploring this theme in at least two texts on your comparative course helped you to understand the positive or negative behaviour of a central character in each of your chosen texts. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Theme",
+   "schemePages": [
+    52,
+    53
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-a-q2-a-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative A Q2(a)(i)",
+   "questionText": "Name one of the texts on your comparative course and identify a theme that you have studied in that text. Do you think that what the text reveals about your chosen theme is relevant today? Use one or more key moment(s) to support your response. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Theme",
+   "schemePages": [
+    53
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-a-q2-a-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative A Q2(a)(ii)",
+   "questionText": "Name another text on your comparative course. Using the same theme you discussed in part (a) (i), do you think what this text reveals about your chosen theme is relevant today? Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Theme",
+   "schemePages": [
+    53
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-b-q1-a-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative B Q1(a)(i)",
+   "questionText": "Name one text on your comparative course. Identify a central character from this text. Explain how the social setting of this text affected the character’s ability to be content with life. Use one or more key moment(s) to support your response.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    54
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-b-q1-a-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative B Q1(a)(ii)",
+   "questionText": "Name another text on your comparative course. Identify a central character from this text. Explain how the social setting of this text affected the character’s ability to be content with life. Use one or more key moment(s) to support your response.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    54
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-b-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative B Q1(b)",
+   "questionText": "In relation to at least two texts on your comparative course, compare the extent to which the social settings in these texts encouraged characters to be considerate towards other characters in these texts. Support your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    54,
+    55
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-b-q2-a-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative B Q2(a)(i)",
+   "questionText": "Name one of the texts on your comparative course. Identify an important character from this text. To what extent do you think that the character you have chosen copes with the challenges created by the social setting in this text? Support your response with reference to at least one key moment in your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-b-q2-a-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative B Q2(a)(ii)",
+   "questionText": "Name another of the texts on your comparative course. Identify an important character from this text. To what extent do you think that the character you have chosen copes with the challenges created by the social setting in this text? Support your response with reference to at least one key moment in your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-c-q1-a-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative C Q1(a)(i)",
+   "questionText": "Name one of the texts on your comparative course. Identify an important relationship, between two characters, in your chosen text. Explain how your chosen relationship revealed fascinating insights about human nature to you. Support your response with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Relationships",
+   "schemePages": [
+    56
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-c-q1-a-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative C Q1(a)(ii)",
+   "questionText": "Name another of the texts on your comparative course. Identify an important relationship, between two characters, in this text. Explain how your chosen relationship revealed fascinating insights about human nature to you. Support your response with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Relationships",
+   "schemePages": [
+    56
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-c-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative C Q1(b)",
+   "questionText": "In relation to at least two texts on your comparative course, compare the reasons why an important relationship between two characters in each of your chosen texts did or did not change over the course of the texts. Support your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Relationships",
+   "schemePages": [
+    56,
+    57
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-c-q2-a-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative C Q2(a)(i)",
+   "questionText": "Name one text on your comparative course. Identify an important relationship, between two characters, in this text. Imagine you are one of the characters in this relationship and you are keeping a diary. Write two diary entries as your chosen character in which you, firstly, reflect on a positive aspect of the other’s character and, secondly, reflect on a negative aspect of the other’s character. Support your response with reference to a key moment or moments from your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Relationships",
+   "schemePages": [
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-comparative-c-q2-a-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Comparative C Q2(a)(ii)",
+   "questionText": "Name another text on your comparative course. Identify an important relationship, between two characters, in this text. Imagine you are one of the characters in this relationship and you are keeping a diary. Write two diary entries as your chosen character in which you, firstly, reflect on a positive aspect of the other’s character and, secondly, reflect on a negative aspect of the other’s character. Support your response with reference to a key moment or moments from your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Relationships",
+   "schemePages": [
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-unseen-q1",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Unseen Poetry Q1",
+   "questionText": "What impression do you get of the speaker in this poem? Explain your response with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "First Day",
+    "pages": [
+     14
+    ],
+    "attribution": "First Day — Theo Dorgan, as reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-unseen-q2",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Unseen Poetry Q2",
+   "questionText": "Do you think the poet’s use of language and imagery captures the view of a small boy effectively? Explain your response with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "First Day",
+    "pages": [
+     14
+    ],
+    "attribution": "First Day — Theo Dorgan, as reproduced in the SEC 2025 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-a-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry A Q1(a)",
+   "questionText": "Which line or phrase from Sinéad Morrissey’s poem ‘Genetics’ did you find most thought‐provoking? Give reasons for your answer, supporting them with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-33",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Genetics — Sinéad Morrissey",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Genetics",
+    "pages": [
+     15
+    ],
+    "attribution": "Genetics — Sinéad Morrissey.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    60
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-a-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry A Q1(b)",
+   "questionText": "“The poem ‘Genetics’ by Sinéad Morrissey left me feeling…” Identify two emotions you felt after reading Morrissey’s poem. Explain why you felt these emotions. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-33",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Genetics — Sinéad Morrissey",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Genetics",
+    "pages": [
+     15
+    ],
+    "attribution": "Genetics — Sinéad Morrissey.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    60
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-a-q2-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry A Q2(i)",
+   "questionText": "As a revision exercise, before the Leaving Certificate examination, your English teacher has asked you to deliver a brief presentation to your class about the poem you believe you will still remember in twenty years’ time. Write the text of your presentation, using ‘Genetics’ by Sinéad Morrissey as your chosen poem. Support your response with reference to ‘Genetics’. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-33",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Genetics — Sinéad Morrissey",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Genetics",
+    "pages": [
+     15
+    ],
+    "attribution": "Genetics — Sinéad Morrissey.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    60
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-a-q2-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry A Q2(ii)",
+   "questionText": "There has been an ongoing debate on a popular radio call‐in show about whether or not students of English should continue to study poetry in the future. Some callers have been arguing that there is little to be gained from studying poetry and that more relevant things should be taught in English class today. You disagree with this view and decide to call in, using ‘Genetics’ by Sinéad Morrissey to support your opinions. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-33",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Genetics — Sinéad Morrissey",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Genetics",
+    "pages": [
+     15
+    ],
+    "attribution": "Genetics — Sinéad Morrissey.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    61
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-a-q2-iii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry A Q2(iii)",
+   "questionText": "The imagery Sinéad Morrissey uses in her poem ‘Genetics’ helps the reader to understand the interesting themes in the poem. Do you agree or disagree with this view? Support your response with reference to ‘Genetics’. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-33",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Genetics — Sinéad Morrissey",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Genetics",
+    "pages": [
+     15
+    ],
+    "attribution": "Genetics — Sinéad Morrissey.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    61
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-b-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry B Q1(a)",
+   "questionText": "Which line or phrase from Eavan Boland’s poem ‘This Moment’ did you find most thought‐provoking? Give reasons for your answer, supporting them with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "This Moment — Eavan Boland",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "This Moment",
+    "pages": [
+     16
+    ],
+    "attribution": "This Moment — Eavan Boland.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    62
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-b-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry B Q1(b)",
+   "questionText": "“The poem ‘This Moment’ by Eavan Boland left me feeling…” Identify two emotions you felt after reading Boland’s poem. Explain why you felt these emotions. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "This Moment — Eavan Boland",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "This Moment",
+    "pages": [
+     16
+    ],
+    "attribution": "This Moment — Eavan Boland.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    62
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-b-q2-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry B Q2(i)",
+   "questionText": "As a revision exercise, before the Leaving Certificate examination, your English teacher has asked you to deliver a brief presentation to the class about the poem you believe you will still remember in twenty years’ time. Write the text of your presentation, using ‘This Moment’ by Eavan Boland as your chosen poem. Support your response with reference to ‘This Moment’. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "This Moment — Eavan Boland",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "This Moment",
+    "pages": [
+     16
+    ],
+    "attribution": "This Moment — Eavan Boland.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    62
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-b-q2-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry B Q2(ii)",
+   "questionText": "There has been an ongoing debate on a popular radio call‐in show about whether or not students of English should continue to study poetry in the future. Some callers have been arguing that there is little to be gained from studying poetry and that more relevant things should be taught in English class today. You disagree with this view and decide to call in, using ‘This Moment’ by Eavan Boland to support your opinions. Your response should demonstrate your knowledge of the poem",
+   "totalMarks": 20,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "This Moment — Eavan Boland",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "This Moment",
+    "pages": [
+     16
+    ],
+    "attribution": "This Moment — Eavan Boland.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    62,
+    63
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-b-q2-iii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry B Q2(iii)",
+   "questionText": "The imagery Eavan Boland uses in her poem ‘This Moment’ helps the reader to understand the interesting themes in the poem. Do you agree or disagree with this view? Support your response with reference to ‘This Moment’. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "This Moment — Eavan Boland",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "This Moment",
+    "pages": [
+     16
+    ],
+    "attribution": "This Moment — Eavan Boland.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    63
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-c-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry C Q1(a)",
+   "questionText": "Which line or phrase from this extract of T.S. Eliot’s poem ‘Preludes’ did you find most thought‐provoking? Give reasons for your answer, supporting them with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-5",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Preludes (extract) — T.S. Eliot",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Preludes (extract)",
+    "pages": [
+     17
+    ],
+    "attribution": "Preludes (extract) — T.S. Eliot.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    64
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-c-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry C Q1(b)",
+   "questionText": "“The poem ‘Preludes’ by T.S. Eliot left me feeling…” Identify two emotions you felt after reading Eliot’s poem. Explain why you felt these emotions. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-5",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Preludes (extract) — T.S. Eliot — N.B. You may refer to other parts of the entire poem in your responses to the following questions.",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Preludes (extract)",
+    "pages": [
+     17
+    ],
+    "attribution": "Preludes (extract) — T.S. Eliot.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    64
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-c-q2-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry C Q2(i)",
+   "questionText": "As a revision exercise, before the Leaving Certificate examination, your English teacher has asked you to deliver a brief presentation to the class about the poem you believe you will still remember in twenty years’ time. Write the text of your presentation, using ‘Preludes’ by T.S. Eliot as your chosen poem. Support your response with reference to ‘Preludes’. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-5",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Preludes (extract) — T.S. Eliot — N.B. You may refer to other parts of the entire poem in your responses to the following questions.",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Preludes (extract)",
+    "pages": [
+     17
+    ],
+    "attribution": "Preludes (extract) — T.S. Eliot.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    64
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-c-q2-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry C Q2(ii)",
+   "questionText": "There has been an ongoing debate on a popular radio call‐in show about whether or not students of English should continue to study poetry in the future. Some callers have been arguing that there is little to be gained from studying poetry and that more relevant things should be taught in English class today. You disagree with this view and decide to call in, using ‘Preludes’ by T.S. Eliot to support your opinions. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-5",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Preludes (extract) — T.S. Eliot — N.B. You may refer to other parts of the entire poem in your responses to the following questions.",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Preludes (extract)",
+    "pages": [
+     17
+    ],
+    "attribution": "Preludes (extract) — T.S. Eliot.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    65
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-c-q2-iii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry C Q2(iii)",
+   "questionText": "The imagery T.S. Eliot uses in his poem ‘Preludes’ helps the reader to understand the interesting themes in the poem. Do you agree or disagree with this view? Support your response with reference to ‘Preludes’. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-5",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Preludes (extract) — T.S. Eliot — N.B. You may refer to other parts of the entire poem in your responses to the following questions.",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Preludes (extract)",
+    "pages": [
+     17
+    ],
+    "attribution": "Preludes (extract) — T.S. Eliot.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    65
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-d-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry D Q1(a)",
+   "questionText": "Which line or phrase from Jessica Traynor’s poem ‘The Artane Band’ did you find most thought‐provoking? Give reasons for your answer, supporting them with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-44",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Artane Band — Jessica Traynor",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Artane Band",
+    "pages": [
+     18
+    ],
+    "attribution": "The Artane Band — Jessica Traynor.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    66
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-d-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry D Q1(b)",
+   "questionText": "“The poem ‘The Artane Band’ by Jessica Traynor left me feeling…” Identify two emotions you felt after reading Traynor’s poem. Explain why you felt these emotions. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-44",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Artane Band — Jessica Traynor",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Artane Band",
+    "pages": [
+     18
+    ],
+    "attribution": "The Artane Band — Jessica Traynor.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    66
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-d-q2-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry D Q2(i)",
+   "questionText": "As a revision exercise, before the Leaving Certificate examination, your English teacher has asked you to deliver a brief presentation to the class about the poem you believe you will still remember in twenty years’ time. Write the text of your presentation, using ‘The Artane Band’ by Jessica Traynor as your chosen poem. Support your response with reference to ‘The Artane Band’. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-44",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Artane Band — Jessica Traynor",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Artane Band",
+    "pages": [
+     18
+    ],
+    "attribution": "The Artane Band — Jessica Traynor.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    66
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-d-q2-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry D Q2(ii)",
+   "questionText": "There has been an ongoing debate on a popular radio call‐in show about whether or not students of English should continue to study poetry in the future. Some callers have been arguing that there is little to be gained from studying poetry and that more relevant things should be taught in English class today. You disagree with this view and decide to call in, using ‘The Artane Band’ to support your opinions. Your response should demonstrate your knowledge of the poem",
+   "totalMarks": 20,
+   "topicId": "english-11-44",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Artane Band — Jessica Traynor",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Artane Band",
+    "pages": [
+     18
+    ],
+    "attribution": "The Artane Band — Jessica Traynor.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    66,
+    67
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-d-q2-iii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry D Q2(iii)",
+   "questionText": "The imagery Jessica Traynor uses in her poem ‘The Artane Band’ helps the reader to understand the interesting themes in the poem. Do you agree or disagree with this view? Support your response with reference to ‘The Artane Band’. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-44",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Artane Band — Jessica Traynor",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Artane Band",
+    "pages": [
+     18
+    ],
+    "attribution": "The Artane Band — Jessica Traynor.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    67
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-e-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry E Q1(a)",
+   "questionText": "Which line or phrase from Emily Dickinson’s poem ‘I heard a Fly buzz – when I died’ did you find most thought‐provoking? Give reasons for your answer, supporting them with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "I Heard a Fly Buzz – When I Died — Emily Dickinson",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "I Heard a Fly Buzz – When I Died",
+    "pages": [
+     19
+    ],
+    "attribution": "I Heard a Fly Buzz – When I Died — Emily Dickinson.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    68
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-e-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry E Q1(b)",
+   "questionText": "“The poem, ’I heard a Fly buzz – when I died’ by Emily Dickinson left me feeling…” Identify two emotions you felt after reading Dickinson’s poem. Explain why you felt these emotions. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "I Heard a Fly Buzz – When I Died — Emily Dickinson",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "I Heard a Fly Buzz – When I Died",
+    "pages": [
+     19
+    ],
+    "attribution": "I Heard a Fly Buzz – When I Died — Emily Dickinson.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    68
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-e-q2-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry E Q2(i)",
+   "questionText": "As a revision exercise, before the Leaving Certificate examination, your English teacher has asked you to deliver a brief presentation to the class about the poem you believe you will still remember in twenty years’ time. Write the text of your presentation, using ‘I heard a Fly buzz – when I died’ by Emily Dickinson as your chosen poem. Support your response with reference to ‘I heard a Fly buzz – when I died’. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "I Heard a Fly Buzz – When I Died — Emily Dickinson",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "I Heard a Fly Buzz – When I Died",
+    "pages": [
+     19
+    ],
+    "attribution": "I Heard a Fly Buzz – When I Died — Emily Dickinson.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    68
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-e-q2-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry E Q2(ii)",
+   "questionText": "There has been an ongoing debate on a popular radio call‐in show about whether or not students of English should continue to study poetry in the future. Some callers have been arguing that there is little to be gained from studying poetry and that more relevant things should be taught in English class today. You disagree with this view and decide to call in, using ‘I heard a Fly buzz – when I died’ by Emily Dickinson to support your opinions. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "I Heard a Fly Buzz – When I Died — Emily Dickinson",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "I Heard a Fly Buzz – When I Died",
+    "pages": [
+     19
+    ],
+    "attribution": "I Heard a Fly Buzz – When I Died — Emily Dickinson.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    68,
+    69
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-e-q2-iii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry E Q2(iii)",
+   "questionText": "The imagery Emily Dickinson uses in her poem ‘I heard a Fly buzz – when I died’ helps the reader to understand the interesting themes in the poem. Do you agree or disagree with this view? Support your response with reference to ‘‘I heard a Fly buzz – when I died.’ Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "I Heard a Fly Buzz – When I Died — Emily Dickinson",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "I Heard a Fly Buzz – When I Died",
+    "pages": [
+     19
+    ],
+    "attribution": "I Heard a Fly Buzz – When I Died — Emily Dickinson.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    69
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-f-q1-a",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry F Q1(a)",
+   "questionText": "Which line or phrase from Liz Lockhead’s poem ‘Revelation’ did you find most thought‐provoking? Give reasons for your answer, supporting them with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-53",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Revelation — Liz Lochhead",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Revelation",
+    "pages": [
+     20
+    ],
+    "attribution": "Revelation — Liz Lochhead.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    70
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-f-q1-b",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry F Q1(b)",
+   "questionText": "“The poem, ‘Revelation’ by Liz Lockhead left me feeling…” Identify two emotions you felt after reading Lockhead’s poem. Explain why you felt these emotions. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-53",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Revelation — Liz Lochhead",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Revelation",
+    "pages": [
+     20
+    ],
+    "attribution": "Revelation — Liz Lochhead.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    70
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-f-q2-i",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry F Q2(i)",
+   "questionText": "As a revision exercise, before the Leaving Certificate examination, your English teacher has asked you to deliver a brief presentation to the class about a poem you believe you will still remember in twenty years’ time. Write the text of your presentation, using ‘Revelation’ by Liz Lockhead as your chosen poem. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-53",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Revelation — Liz Lochhead",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Revelation",
+    "pages": [
+     20
+    ],
+    "attribution": "Revelation — Liz Lochhead.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    70
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-f-q2-ii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry F Q2(ii)",
+   "questionText": "There has been an ongoing debate on a popular radio call‐in show about whether or not students of English should continue to study poetry in the future. Some callers have been arguing that there is little to be gained from studying poetry and that more relevant things should be taught in English class today. You disagree with this view and decide to call in, using ‘Revelation’ by Liz Lockhead to support your opinions. Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-53",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Revelation — Liz Lochhead",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Revelation",
+    "pages": [
+     20
+    ],
+    "attribution": "Revelation — Liz Lochhead.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    70,
+    71
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2025-ol-p2-prescribed-f-q2-iii",
+   "year": 2025,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2025 OL Paper 2 Prescribed Poetry F Q2(iii)",
+   "questionText": "The imagery Liz Lockhead uses in her poem ‘Revelation’ helps the reader to understand the interesting themes in the poem. Do you agree or disagree with this view? Support your response with reference to ‘Revelation.’ Your response should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-53",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Revelation — Liz Lochhead",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Revelation",
+    "pages": [
+     20
+    ],
+    "attribution": "Revelation — Liz Lochhead.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    71
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2025-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
    }
   },
   {

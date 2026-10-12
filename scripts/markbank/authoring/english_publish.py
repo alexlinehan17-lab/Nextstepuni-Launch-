@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
+import difflib
 import hashlib
 import json
 import re
@@ -290,6 +291,16 @@ def merge_printed_duplicates(key, cards, duplicates):
     return kept, len(dropped)
 
 
+def word_difference(old_text, new_text):
+    """Words a reviewed prompt adds to or drops from a legacy prompt (comparable form)."""
+    old_words, new_words = old_text.split(), new_text.split()
+    changes = []
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, old_words, new_words).get_opcodes():
+        if tag != 'equal':
+            changes.append({'legacy': ' '.join(old_words[i1:i2]), 'reviewed': ' '.join(new_words[j1:j2])})
+    return changes
+
+
 def card_aliases():
     return dict(re.findall(r'^\s*"([^"]+)": "([^"]+)",?$', CARD_ALIASES.read_text(), re.M))
 
@@ -338,7 +349,10 @@ def apply_bridge(key, bridge, record, emitted, legacy_manifest):
                 raise ValueError(f'{old}: unknown bridge kind {entry["kind"]}')
             legacy_text, target_text = comparable(legacy[old]['questionText']), comparable(target['questionText'])
             if legacy_text not in target_text and target_text not in legacy_text:
-                raise ValueError(f'{old}: legacy prompt and bridged card are not the same printed task')
+                # A repaired legacy prompt: allowed only when the ledger records the exact word difference.
+                if entry.get('textRepair') != word_difference(legacy_text, target_text) or \
+                        difflib.SequenceMatcher(None, legacy_text, target_text).ratio() < 0.9:
+                    raise ValueError(f'{old}: legacy prompt and bridged card are not the same printed task')
             if target['totalMarks'] > legacy[old]['totalMarks']:
                 raise ValueError(f'{old}: bridged card exceeds the legacy tariff')
             lifted = entry.get('indicativeMaterial')

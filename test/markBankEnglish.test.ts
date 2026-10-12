@@ -6,6 +6,7 @@ import { CARDS as HIGHER } from '../components/MarkBank/cards/english/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import authoredJson from '../components/MarkBank/cards/english/authored.json';
+import { generatedCardsForLevel } from '../components/MarkBank/cards/english/factory';
 import publishedHigher from '../components/MarkBank/cards/english/published-higher.json';
 import publishedOrdinary from '../components/MarkBank/cards/english/published-ordinary.json';
 import {
@@ -79,6 +80,10 @@ const LEGACY_HIGHER = HIGHER.filter(card => !PUBLISHED_IDS.has(card.id));
 const LEGACY_ORDINARY = ORDINARY.filter(card => !PUBLISHED_IDS.has(card.id));
 const ALL = [...LEGACY_HIGHER, ...LEGACY_ORDINARY] as EnglishCard[];
 const byId = new Map(ALL.map(card => [card.id, card]));
+// Every legacy runtime card as the factory builds it, bridged or not: the PCLM
+// scoring tests below exercise the factory and scorer, not which deck serves it.
+const LEGACY_BUILT = new Map([...generatedCardsForLevel('higher'), ...generatedCardsForLevel('ordinary')]
+  .map(card => [card.id, card as EnglishCard]));
 
 const comparable = (value: string) => value
   .normalize('NFKC')
@@ -362,7 +367,7 @@ describe('English PCLM cards', () => {
   });
 
   it('enforces the primacy-of-Purpose cap independently of the renderer', () => {
-    const card = ALL.find(entry =>
+    const card = [...LEGACY_BUILT.values()].find(entry =>
       entry.totalMarks === 50 && entry.rubric.assessment.mode === 'discrete')!;
     const scores = { purpose: 9, coherence: 15, language: 14, mechanics: 5 } as const;
     expect(effectivePclmScores(card, scores)).toEqual({
@@ -373,14 +378,14 @@ describe('English PCLM cards', () => {
   });
 
   it('uses one combined SEC grid for a short response', () => {
-    const card = byId.get('english-2024-hl-p1-t1-a-i')!;
+    const card = LEGACY_BUILT.get('english-2024-hl-p1-t1-a-i')!;
     expect(card.rubric.assessment.mode).toBe('combined');
     expect(pclmMarks(card, { combined: 12 })).toBe(12);
     expect(suggestPclmGrade(card, { combined: 12 })).toBe('got');
   });
 
   it('scores every compulsory linked part on its own grid', () => {
-    const single = byId.get('english-2025-ol-p2-single-a-q1')!;
+    const single = LEGACY_BUILT.get('english-2025-ol-p2-single-a-q1')!;
     expect(single.rubric.assessment.mode).toBe('composite');
     if (single.rubric.assessment.mode !== 'composite') throw new Error('unreachable');
     expect(single.rubric.assessment.components.map(component => [
@@ -392,7 +397,7 @@ describe('English PCLM cards', () => {
       'component:a': 10, 'component:b': 8, 'component:c': 6,
     })).toBe(24);
 
-    const comparative = byId.get('english-2025-ol-p2-comparative-a-q1')!;
+    const comparative = LEGACY_BUILT.get('english-2025-ol-p2-comparative-a-q1')!;
     expect(comparative.rubric.assessment.mode).toBe('composite');
     if (comparative.rubric.assessment.mode !== 'composite') throw new Error('unreachable');
     expect(comparative.rubric.assessment.components.map(component => [
@@ -421,7 +426,7 @@ describe('English PCLM cards', () => {
       'component:b:mechanics': 4,
     });
 
-    const higherComparative = byId.get('english-2024-hl-p2-comparative-a-q1')!;
+    const higherComparative = LEGACY_BUILT.get('english-2024-hl-p2-comparative-a-q1')!;
     expect(higherComparative.rubric.assessment.mode).toBe('composite');
     if (higherComparative.rubric.assessment.mode !== 'composite') throw new Error('unreachable');
     expect(higherComparative.rubric.assessment.components.map(component => [

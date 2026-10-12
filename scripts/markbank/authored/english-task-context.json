@@ -99,6 +99,39 @@
         "Before beginning, name the texts studied for your comparative course and name the theme that you are going to discuss."
       ],
       "reason": "Visually checked shared section instructions preceding the numbered tasks; retain them with every separately practicable part."
+    },
+    "english-2025-ol-p2-prescribed-c-q2-i": {
+      "questionSha256": "f9843d00b121902125d48108098d16519898a4007dea3a7cb2dc2d7d1acaa570",
+      "paperSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782",
+      "paperPages": [
+        17
+      ],
+      "notes": [
+        "N.B. You may refer to other parts of the entire poem in your responses to the following questions."
+      ],
+      "reason": "Visually checked on PDF17: the N.B. follows Q1(a) and applies to “the following questions”, i.e. Q1(b) and Q2 (i)–(iii)."
+    },
+    "english-2025-ol-p2-prescribed-c-q2-ii": {
+      "questionSha256": "05e11e4e24619533e5929a6588db92f2b979347bb18ac734349fbb709cbfdec1",
+      "paperSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782",
+      "paperPages": [
+        17
+      ],
+      "notes": [
+        "N.B. You may refer to other parts of the entire poem in your responses to the following questions."
+      ],
+      "reason": "Visually checked on PDF17: the N.B. follows Q1(a) and applies to “the following questions”, i.e. Q1(b) and Q2 (i)–(iii)."
+    },
+    "english-2025-ol-p2-prescribed-c-q2-iii": {
+      "questionSha256": "8be8bb45a48a4ecf4b7dd6f390897a95a9191e165961bd51cc7b8b05e726da87",
+      "paperSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782",
+      "paperPages": [
+        17
+      ],
+      "notes": [
+        "N.B. You may refer to other parts of the entire poem in your responses to the following questions."
+      ],
+      "reason": "Visually checked on PDF17: the N.B. follows Q1(a) and applies to “the following questions”, i.e. Q1(b) and Q2 (i)–(iii)."
     }
   }
 }

@@ -268,6 +268,10 @@ def locate_scheme_cards(cards, paper, scheme, year):
         # Comparative A's crop swallowed B's Q1(a)(i)/(ii) (viewed 2026-10-11).
         2018: {"Poetry C": (47, 0.0892), "Comparative B": (39, 0.4038)},
         2021: {"Single Text G": (37, 0.0888)},
+        # 2025: "F THE COVE" sits at y 0.3074 on PDF38; matching began inside
+        # its Q1(a) indicative list, so The Crucible's crop swallowed The
+        # Cove's heading and Q1(a) (viewed 2026-10-12).
+        2025: {"Single Text F": (37, 0.3074)},
         2023: {
             "Poetry A": (49, 0.5204),
             "Poetry B": (51, 0.5771),

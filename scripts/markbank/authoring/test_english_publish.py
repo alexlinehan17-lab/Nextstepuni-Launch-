@@ -241,6 +241,14 @@ class EnglishLegacyBridgeTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'bridged as a withdrawn alias'):
             self.apply('english-2025-ol-p1', bridge)
 
+    def test_a_repaired_legacy_prompt_needs_its_recorded_word_difference(self):
+        entries = self.bridge['papers']['english-2025-ol-p2']['legacyCards']
+        self.assertEqual(entries['english-2025-ol-p2-single-a-q4']['textRepair'], [{'legacy': '', 'reviewed': 'or'}])
+        bridge = copy.deepcopy(self.bridge['papers']['english-2025-ol-p2'])
+        del bridge['legacyCards']['english-2025-ol-p2-single-a-q4']['textRepair']
+        with self.assertRaisesRegex(ValueError, 'not the same printed task'):
+            self.apply('english-2025-ol-p2', bridge)
+
     def test_lifted_indicative_material_reaches_only_its_cards(self):
         manifest = self.outputs[publish.CARDS_DIR / 'published-higher.json']
         carrying = sorted(card['id'] for card in manifest['cards'] if card.get('indicativeMaterial'))
