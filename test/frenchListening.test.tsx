@@ -230,6 +230,7 @@ describe('reviewed French listening tasks', () => {
   });
   it('resolves every 2017 letter key and keeps the parents under their shared scoring rule', () => {
     const mcqs = cards.filter(card => card.year === 2017 && card.questionChoices);
+    expect(mcqs).toHaveLength(letterKeys(2017).length);
     expect(letterKeys(2017)).toEqual([
       ['(c) 5 marks', 'funny'], ['(d) 5 marks', 'having a snowball fight.'],
       ['(b) 5 marks', 'Daniel’s family moved house.'], ['(d) 5 marks', 'They are fed four times a day.'],
