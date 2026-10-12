@@ -386,7 +386,7 @@ def build(ledger, year, level):
         # Wording check: most of the scheme reprint's content words are in the ask
         # (or its stem: the scheme often reprints the lead-in with the ask).
         score = B.overlap(sq_text, qtext + ' ' + stem)
-        if score < 0.6:
+        if score < 0.6 and not (sq.get('paired') and score >= 0.25):
             problems.append(f'{t["key"]}: scheme reprint "{sq_text[:60]}" shares {score:.0%} of its '
                             f'words with the paper ask "{qtext[:60]}"')
         rows, task_units, worth = [], [], 0
@@ -498,6 +498,7 @@ def build(ledger, year, level):
             **({'item': item[1]} if item else {}), 'rows': len(rows),
             'figure': t['fig'], 'questionFigure': t['qfig'],
             'sourcePages': t['source_pages'], 'pairingScore': round(score, 2),
+            **({'pairedBy': sq['paired']} if sq.get('paired') else {}),
             'decision': t['decision'] or None, 'notes': t['notes'] or None,
         })
 

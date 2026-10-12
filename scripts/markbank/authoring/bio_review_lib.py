@@ -99,14 +99,24 @@ def _decode_symbol(ch, font):
     return ch
 
 
+def _span_text(spans, i):
+    """One span's text. The 2021 and 2022 booklets set the degree sign as a
+    superscript letter o before the C ("4 oC" in the text layer); the page
+    shows a degree sign, so that span reads "°". Nothing else is changed."""
+    sp = spans[i]
+    nxt = spans[i + 1]['text'] if i + 1 < len(spans) else ''
+    if sp['flags'] & 1 and sp['text'].strip() == 'o' and nxt.lstrip().startswith('C'):
+        return '°'
+    return ''.join(_decode_symbol(c, sp['font']) for c in sp['text'])
+
+
 def _page_lines(page):
     """The page's printed lines, as page.get_text() returns them, with each
     symbol-font glyph decoded by its own font."""
     out = []
     for b in page.get_text('dict')['blocks']:
         for ln in b.get('lines', []):
-            out.append(''.join(''.join(_decode_symbol(c, sp['font']) for c in sp['text'])
-                               for sp in ln['spans']))
+            out.append(''.join(_span_text(ln['spans'], i) for i in range(len(ln['spans']))))
     return out
 
 
@@ -142,8 +152,20 @@ class Src:
         """As find_box, but case-sensitive: the box must read exactly `text`
         (PyMuPDF's search ignores case, so "True" also finds "true or false")."""
         pg = self.doc[page - 1]
-        return [b for b in self.find_box(page, text, clip)
-                if _norm(pg.get_textbox(b)) == text]
+        # One hit comes back in pieces where its line changes font part-way
+        # (the 2022 schemes set each "or" in bold): pieces that continue one
+        # another on the same line are joined back into the one hit.
+        hits = []
+        for h in (fitz.Rect(r) for r in pg.search_for(text)):
+            prev = hits[-1] if hits else None
+            if (prev is not None and h.y0 < prev.y1 and h.y1 > prev.y0 and -2 < h.x0 - prev.x1 < 12
+                    and (h.x0 - prev.x1 < 1
+                         or not pg.get_textbox(fitz.Rect(prev.x1 + 0.5, prev.y0, h.x0 - 0.5, prev.y1)).strip())):
+                hits[-1] = prev | h
+            else:
+                hits.append(h)
+        return [b for b in hits if (clip is None or self._inside(b, clip))
+                and _norm(pg.get_textbox(b)) == text]
 
     # A glyph belongs to a clip when its CENTRE is inside it. PyMuPDF's own
     # clip keeps anything that merely touches the rectangle, so two adjacent
@@ -281,9 +303,14 @@ def M(marker, page, doc=None):
     return {'src': 'marker', 'text': marker, 'page': page, 'doc': doc}
 
 
-def SQ(page, start, end=None, after=None, nth=1):
-    """The scheme's reprint of the task's question: the pairing anchor."""
-    return {'page': page, 'start': start, 'end': end, 'after': after, 'nth': nth}
+def SQ(page, start, end=None, after=None, nth=1, paired=None):
+    """The scheme's reprint of the task's question: the pairing anchor.
+    `paired` is the reviewer's reason for a pairing whose reprint rewords the
+    paper's ask too far for the wording check (the scheme's "Put steps in
+    correct order." for the paper's "Place each of the numbers ..."); it is
+    recorded in the audit and still needs a quarter of the words shared."""
+    return {'page': page, 'start': start, 'end': end, 'after': after, 'nth': nth,
+            **({'paired': paired} if paired else {})}
 
 
 def S(start, end=None, page=None, after=None, before=None, nth=1):

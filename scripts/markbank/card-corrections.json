@@ -50,48 +50,6 @@
     "section": "C"
    }
   },
-  "bio-2022-ol-q6-a": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
-  },
-  "bio-2022-ol-q6-b": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
-  },
-  "bio-2022-ol-q6-c": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
-  },
-  "bio-2022-ol-q6-d": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
-  },
-  "bio-2022-ol-q6-e": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
-  },
-  "bio-2022-ol-q6-f": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
-  },
-  "bio-2022-ol-q6-g": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
-  },
   "bio-2025-hl-q3-a-fig": {
    "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q3-a, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
    "drop": true,
@@ -181,6 +139,11 @@
    "reason": "Never shipped: a figure twin of bio-2022-hl-q16-b-iii, which carries the reviewed task and its figure.",
    "drop": true,
    "replacementId": "bio-2022-hl-q16-b-iii"
+  },
+  "bio-2022-ol-q16-a-ii-fig": {
+   "reason": "Never shipped: a figure twin of bio-2022-ol-q16-a-ii, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2022-ol-q16-a-ii"
   }
  },
  "physics": {

@@ -399,6 +399,445 @@
    ]
   ]
  },
+ "biology-2022-ol-q10-germination": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q10-germination.png",
+  "md5": "4fd444b244c1175e56339f194e9b8c05",
+  "alt": "Four test tubes of seeds: A, seeds in dry cotton wool at 20 °C; B, seeds in wet cotton wool at 20 °C; C, seeds in boiled water at 20 °C under an oil layer; D, seeds in wet cotton wool at 4 °C.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q10(b)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   110,
+   223,
+   548,
+   390
+  ]
+ },
+ "biology-2022-ol-q11-food-web": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q11-food-web.png",
+  "md5": "b97828c81efbf332568d312e98683e5b",
+  "alt": "Food web drawn with arrows: Grass, Blackberry, Grasshopper, Hare, Aphid, Shrew, Spider, Blackbird, Owl and Fox, each pictured and named, with arrows running from each food to the animals that eat it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q11(b)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   340,
+   196,
+   545,
+   426
+  ]
+ },
+ "biology-2022-ol-q11c-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q11c-i-question.png",
+  "md5": "5c020975c051375d9e380d00506ff3c9",
+  "alt": "The printed question: (c) Read the following passage and answer the questions that follow, the EPA passage on nitrogen in Ireland's rivers in which the words ecosystems and flora are underlined, then (i) Explain the two underlined terms.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q11(c)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   80,
+   456,
+   545,
+   602
+  ]
+ },
+ "biology-2022-ol-q12b-iii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q12b-iii-scheme.png",
+  "md5": "302a0501f84a0b517d653f6f6160952d",
+  "alt": "The marking scheme's Punnett square: N and n along the top, N and n down the side; the boxes read (NN) and (Nn) in the top row, (Nn) and nn in the bottom row, with nn in bold; below it, 25%.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q12(b)(iii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   100,
+   282,
+   225,
+   350
+  ],
+  "solution": true
+ },
+ "biology-2022-ol-q12c-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q12c-i-question.png",
+  "md5": "a5859e49eba12da5a2a529adaebcc2bd",
+  "alt": "The printed question: (c) The cell cycle consists of two stages, interphase and mitosis (cell division). The word interphase is underlined. (i) Explain the underlined term.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q12(c)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   514,
+   480,
+   551
+  ]
+ },
+ "biology-2022-ol-q13-breathing": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q13-breathing.png",
+  "md5": "7d12c8f80968df8b49d5edfae598b9e4",
+  "alt": "Drawing of the human breathing system: arrow A points to the box-like structure at the top of the windpipe, arrow B to one of the two tubes the windpipe divides into, arrow C to the smaller branching tubes inside a lung; labels point to the Trachea, the Small air-sacs and the Muscles between the ribs and below the lungs.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q13(b)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   330,
+   112,
+   545,
+   332
+  ]
+ },
+ "biology-2022-ol-q14-cells": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q14-cells.png",
+  "md5": "4b9cd33924c4173676600d5ab918df58",
+  "alt": "Two plant cells. A: the cell contents fill the cell wall. B: the contents have shrunk away from the wall. Labels point to the Nucleus and the Cell membrane, and arrows labelled X point to the large central space in each cell.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(c)(ii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   160,
+   480,
+   460,
+   608
+  ]
+ },
+ "biology-2022-ol-q14b-iv-question": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q14b-iv-question.png",
+  "md5": "e0e9cde395859e80429f0c698833bc75",
+  "alt": "The printed question: (iv) Cx(H2O)y is the general formula for one of the products of photosynthesis, with x, 2 and y set as subscripts. What group of biomolecules does this general formula represent?",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(b)(iv)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   108,
+   206,
+   510,
+   242
+  ]
+ },
+ "biology-2022-ol-q15-flower": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q15-flower.png",
+  "md5": "8001eccfb00a9bce494b8cdffdd17460",
+  "alt": "Drawing of a section through a flower: arrow X points to the tip of the central stalk, arrow Y to the head of one of the stalks around it, arrow Z to one of the small leaf-like parts at the base.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q15(c)(i)1",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   220,
+   468,
+   445,
+   620
+  ]
+ },
+ "biology-2022-ol-q15-stem": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q15-stem.png",
+  "md5": "8fd723e0b19267d54042fe5e548f3d45",
+  "alt": "Drawing of a section through a plant stem: a circle with a ring of small oval bundles near its edge; arrow A points to the outer edge of the circle, arrow B to the tissue filling the centre, and a bracket C marks one of the oval bundles.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q15(b)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   180,
+   135,
+   420,
+   297
+  ]
+ },
+ "biology-2022-ol-q16-grafting": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q16-grafting.png",
+  "md5": "5f336d370a4ef7542fe066dcfb01912e",
+  "alt": "Drawing of grafting: a young plant with arrow A pointing to one of its leaves and arrow B to its main upright part; a box on it is shown enlarged beside it, a cut piece fitted into a notch and bound in place.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q16(d)(iii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   205,
+   405,
+   410,
+   600
+  ]
+ },
+ "biology-2022-ol-q16-male": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q16-male.png",
+  "md5": "57bc68dd95d5cfd2c14c072c75dce77b",
+  "alt": "Drawing of the human male reproductive system, side view: a label points to the Bladder; arrow A points to the organ hanging at the front, arrow B to the tube looping up from below, arrow C to the oval body in the sac, arrow D to the tube running through the organ at the front.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q16(a)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   178,
+   105,
+   400,
+   360
+  ]
+ },
+ "biology-2022-ol-q16-skeleton": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q16-skeleton.png",
+  "md5": "e9efe1834a7c0618404e2e7fe3ad6884",
+  "alt": "Photograph of a human skeleton, standing, front view.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q16(c)(ii)1",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   395,
+   52,
+   525,
+   340
+  ]
+ },
+ "biology-2022-ol-q16c-iii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q16c-iii-scheme.png",
+  "md5": "dc0bde1990e95e6f5418c6631409310e",
+  "alt": "The marking scheme's labelled long bone: a bone with a knob at each end, Compact bone labelled along the shaft wall, Spongy bone at one end and Bone marrow in the hollow centre of the shaft.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q16(c)(iii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 22,
+  "sourceRect": [
+   80,
+   198,
+   374,
+   280
+  ],
+  "solution": true
+ },
+ "biology-2022-ol-q17-blood": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q17-blood.png",
+  "md5": "247b31ac402a1a655e553c2ec8011018",
+  "alt": "Two kinds of blood cell. X: several smooth discs, dented in the middle. Y: a single larger rounded cell with a lobed dark centre.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q17(c)(ii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   185,
+   150,
+   440,
+   272
+  ]
+ },
+ "biology-2022-ol-q17-spinal-cord": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q17-spinal-cord.png",
+  "md5": "6bb4c2363fbd42e821aa26d3b40336b1",
+  "alt": "Drawing of a section through the spinal cord: grey matter shaped like a butterfly inside white matter, labelled. A nerve pathway runs from a Sense organ on the right, arrow A pointing to the nerve cell carrying it in, arrow B to the short cell inside the grey matter, and arrow C to the cell leading out to the Effector.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q17(a)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   115,
+   105,
+   540,
+   282
+  ]
+ },
+ "biology-2022-ol-q17b-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q17b-i-question.png",
+  "md5": "9e99121b83ccd68b91a87cadef8f3780",
+  "alt": "The printed question: (b) The theory of evolution by natural selection was developed by two famous biologists. The words evolution and natural selection are underlined. (i) Explain the underlined terms.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q17(b)(i) — Evolution",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   530,
+   540,
+   567
+  ]
+ },
+ "biology-2022-ol-q3-rhizopus": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q3-rhizopus.png",
+  "md5": "8d156c9e21473d12aa7009b99e462421",
+  "alt": "Drawing of Rhizopus: upright stalks rising from a branching network, each ending in a round head; arrow A points to one round head, arrow B to a horizontal thread running along the surface, arrow C to the branched threads growing down at the base, and arrows labelled Spores point to the dots released from a burst head.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q3(a)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   140,
+   88,
+   445,
+   350
+  ]
+ },
+ "biology-2022-ol-q4-skin": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q4-skin.png",
+  "md5": "2bbd11f2859851c7f9507ec1ff8311d2",
+  "alt": "Drawing of a section through human skin: arrow A points to a hair rising out of the surface, arrow B to a small bulging structure beside the hair below the surface; labels point to a coiled Sweat gland on the left and a looped Blood vessel on the right.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q4(a)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   130,
+   86,
+   492,
+   336
+  ]
+ },
+ "biology-2022-ol-q5-profiles": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q5-profiles.png",
+  "md5": "8d5dbb4d8093c8d090c74097bf156fec",
+  "alt": "DNA profiles: a column of dark bands labelled Crime scene, and beside it three columns of bands labelled A, B and C, each with its own pattern of bands at different heights.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q5(a)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   145,
+   100,
+   480,
+   343
+  ]
+ },
+ "biology-2022-ol-q8-table": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-q8-table.png",
+  "md5": "b51f8a38af487aa2aa61d84bbb13f546",
+  "alt": "Table of ticks at five stations: Plantain ticked at stations 2, 4 and 5; Daisy at stations 1, 2, 3 and 5; Dandelion at stations 1 and 3.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q8(b)(ii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   111,
+   473,
+   542,
+   583
+  ]
+ },
  "biology-2023-hl-q10b-iv-2-scheme": {
   "src": "/exam-figures/biology/markbank/biology-2023-hl-q10b-iv-2-scheme.png",
   "md5": "af8d2601e44c444b789cda4804318834",

@@ -1016,3 +1016,142 @@ describe('Biology 2022 Higher — reviewed sitting, corrected in place', () => {
     }
   });
 });
+
+const ol22 = sittings['2022-ol'];
+const ordinary2022 = BIO_ORDINARY.filter(card => card.year === 2022) as unknown as ReviewedCard[];
+const ol22ById = new Map(ordinary2022.map(card => [card.id, card]));
+const ol22Verbatims = (id: string) => (ol22ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
+  .map(row => row.verbatim);
+
+describe('Biology 2022 Ordinary — reviewed sitting, corrected in place', () => {
+  const review = ol22.review!;
+
+  it('ships every reviewed task, and nothing else, for the sitting', () => {
+    expect(ol22.baseTaskCount).toBe(184);
+    expect(ol22.cardCount).toBe(184);
+    expect(ordinary2022).toHaveLength(184);
+    expect(new Set(ol22.tasks.map(task => task.id))).toEqual(new Set(ol22ById.keys()));
+  });
+
+  it('keeps every shipped id', () => {
+    expect(review.baselineCommit).toBe('2cf70f227');
+    expect([review.verified.length, review.corrected.length, review.added.length,
+      review.retained.length]).toEqual([10, 156, 18, 1]);
+    for (const id of [...review.verified, ...review.corrected.map(c => c.id), ...review.added]) {
+      expect(ol22ById.has(id), id).toBe(true);
+    }
+    // An authored figure twin of Q16(a)(ii) that the build never shipped:
+    // withdrawn, with no progress to carry.
+    expect(review.retained.map(r => r.id)).toEqual(['bio-2022-ol-q16-a-ii-fig']);
+    expect(ol22ById.has('bio-2022-ol-q16-a-ii-fig')).toBe(false);
+    expect(review.withdrawn['bio-2022-ol-q16-a-ii-fig'].replacementId).toBe('bio-2022-ol-q16-a-ii');
+    // Old bundles keep their ids for the first part they carried.
+    expect(ol22ById.get('bio-2022-ol-q7-a-e')!.questionRef).toBe('2022 OL Q7(a)');
+    expect(ol22ById.get('bio-2022-ol-q11-a')!.questionRef).toBe('2022 OL Q11(a)(i)');
+    expect(ol22ById.get('bio-2022-ol-q13-c-i-asthma')!.questionRef).toBe('2022 OL Q13(c)(i)1 — asthma');
+  });
+
+  it('records what each corrected card showed before', () => {
+    for (const correction of review.corrected) {
+      expect(correction.changed.length, correction.id).toBeGreaterThan(0);
+      for (const field of correction.changed) {
+        expect(field in correction.fieldsBefore, `${correction.id}.${field}`).toBe(true);
+      }
+    }
+  });
+
+  it('leaves the cards the review verified exactly as they shipped', () => {
+    const verified = review.verified.map(id => ol22ById.get(id)!)
+      .sort((a, b) => a.id.localeCompare(b.id));
+    expect(contentHash(verified)).toBe('ecdadde7aee858ac7eb928abe983d36f1d2e5cd28b2d07f57ed28c87baa2c2a2');
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(ol22.sources['038'].sha256)
+      .toBe('452a9748ea5733b932cc3fda0b4a3f4b7d85a7614ac5a0b2dbc6131b8e0ba454');
+    expect(ol22.sources['040'].sha256)
+      .toBe('b35173bd0b7af6e00fab438730e5cf6f7e11b9aaee8116a7d4cec3a194d63f71');
+    expect(ol22.sources.scheme.sha256)
+      .toBe('57840b70d4a9bdcce5646474e6a7ca095410ae76c170afcce274278738bfaee9');
+    expect([ol22.sources['038'].pages, ol22.sources['040'].pages, ol22.sources.scheme.pages])
+      .toEqual([40, 12, 28]);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const task of ol22.tasks) {
+      const card = ol22ById.get(task.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('prices each part as its scheme prints it', () => {
+    const tariff = (id: string) =>
+      (ol22ById.get(id) as unknown as { tariffModel: { kind: string; notation?: string } }).tariffModel;
+    expect(tariff('bio-2022-ol-q1-a').kind).toBe('fixed');      // "5(4)"
+    expect(tariff('bio-2022-ol-q7-d').kind).toBe('fixed');      // "5(4)"
+    expect(tariff('bio-2022-ol-q2-a')).toEqual({ kind: 'orderedSplit', notation: '6(3) + 2' });
+    expect(tariff('bio-2022-ol-q8-b-i').kind).toBe('fixed');    // a mark per row
+    expect(tariff('bio-2022-ol-q11-a-ii')).toEqual({ kind: 'orderedSplit', notation: '5 + 2(2)' });
+    expect(tariff('bio-2022-ol-q11-b-iv')).toEqual({ kind: 'orderedSplit', notation: '3(5) + 6(2)' });
+    expect(tariff('bio-2022-ol-q12-c-ii')).toEqual({ kind: 'orderedSplit', notation: '2(6) + 6(2)' });
+    expect(tariff('bio-2022-ol-q17-b-iv')).toEqual({ kind: 'orderedSplit', notation: '2(7) + 8(2)' });
+  });
+
+  it('adds up to the printed question totals at each ladder\'s first rate', () => {
+    const firstRoute = new Set(Object.values(ol22.routes).map(routes => routes[0]));
+    const totals = new Map<number, number>();
+    for (const task of ol22.tasks) {
+      if (task.route && !firstRoute.has(task.route)) continue;   // one route per pool
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    for (const q of [1, 7]) expect(totals.get(q), `Q${q}`).toBe(20);   // "5(4)"
+    // "6(3) + 2": seven responses each carded at 3, so 21 against the ladder's 20.
+    for (const q of [2, 3, 4, 5, 6]) expect(totals.get(q), `Q${q}`).toBe(21);
+    for (const q of [8, 9, 10]) expect(totals.get(q), `Q${q}`).toBe(30);
+    // Section C at the first rate: (a) 3 at 5, (b) 9 at 5, (c) 8 at 6. Q11(b)
+    // and Q12(b) print eight answers under a nine-response table.
+    for (const q of [11, 12]) expect(totals.get(q), `Q${q}`).toBe(103);
+    for (const q of [13, 14, 15]) expect(totals.get(q), `Q${q}`).toBe(108);
+    for (const q of [16, 17]) expect(totals.get(q), `Q${q}`).toBe(280);   // ten at 7 in each of four parts
+  });
+
+  it('splits only the choice the scheme marks differently per option', () => {
+    const routesOf = (ref: string) => ordinary2022
+      .filter(card => card.questionRef.startsWith(`2022 OL ${ref} — `))
+      .map(card => card.questionRef.split(' — ')[1]).sort();
+    for (const n of [1, 2, 3]) expect(routesOf(`Q13(c)(i)${n}`)).toEqual(['asthma', 'bronchitis']);
+    // "Either breathing or pulse rate" is marked on one set of rows: one card each.
+    expect(ordinary2022.filter(card => card.questionRef.startsWith('2022 OL Q13(c)(ii)'))).toHaveLength(1);
+    expect(ordinary2022.filter(card => card.questionRef.startsWith('2022 OL Q13(c)(iv)'))).toHaveLength(1);
+  });
+
+  it('reads the true/false ticks from the scheme', () => {
+    expect(['a', 'b', 'c', 'd', 'e', 'f', 'g'].map(x => ol22Verbatims(`bio-2022-ol-q6-${x}`)[0]))
+      .toEqual(['True', 'True', 'False', 'False', 'True', 'False', 'True']);
+  });
+
+  it('shows the degree sign the booklets set as a superscript o', () => {
+    expect(ol22ById.get('bio-2022-ol-q10-b-iv')!.questionText).toContain('4 °C');
+    expect(ol22Verbatims('bio-2022-ol-q9-b-iii')).toEqual(['17°C to 32°C']);
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph|table)s?\b|\bdata table\b/i;
+    for (const card of ordinary2022) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    // Underlined terms and the subscripted formula are set as printed.
+    for (const id of ['bio-2022-ol-q11-c-i', 'bio-2022-ol-q12-c-i', 'bio-2022-ol-q14-b-iv',
+      'bio-2022-ol-q17-b-i-evolution', 'bio-2022-ol-q17-b-i-natural-selection']) {
+      expect(ol22ById.get(id)!.questionFigure, id).toBeTruthy();
+    }
+    // The scheme's Punnett square and labelled long bone wait for the reveal.
+    expect(ol22ById.get('bio-2022-ol-q12-b-iii')!.figure?.solution).toBe(true);
+    expect(ol22ById.get('bio-2022-ol-q16-c-iii')!.figure?.solution).toBe(true);
+  });
+});
