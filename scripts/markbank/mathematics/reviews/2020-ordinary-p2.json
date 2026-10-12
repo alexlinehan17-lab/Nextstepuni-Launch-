@@ -1,0 +1,1210 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2020,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "d4f6a42b0c2022c20fa9f71fd6dbf153333b0218e6eb9bbe23192522e715c995",
+  "schemeSha256": "39ca5c244b17af1edbdc6b4edd50b851afd84c56f102677220c76e00396a874d",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 28 question-paper pages and PDF pages 21–44 of the combined Ordinary Level scheme (the Paper 2 title page 21, the Paper 2 scale table on page 22, the summary of mark allocations on page 23, every Paper 2 model solution and marking note on pages 24–41, the Irish-language bonus table on page 42 and the blank back pages). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "schemePagesInspected": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 55,
+    "8": 55,
+    "9": 40
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    22,
+    23
+  ],
+  "sourceNotes": [
+    "The 2020 Leaving Certificate examinations were cancelled and replaced by Calculated Grades, but the SEC published this paper and its marking scheme. The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 55 marks, Q8 55 marks, Q9 40 marks). Every question is retained.",
+    "40 independently marked units, matching the printed summary of allocations on scheme page 23.",
+    "Bands from the Paper 2 scale table on scheme page 22 and the ladders printed beside each part: 5A 0,5; 5B 0,2,5; 5C 0,3,4,5; 5D 0,2,3,4,5; 10B 0,5,10; 10C 0,4,8,10; 10D 0,3,5,8,10; 20D 0,5,10,15,20. The page 22 table misprints the 10D ladder as “0, 3, 15, 8, 10”; every 10D part prints “Scale 10D (0, 3, 5, 8, 10)” beside its solution, which the cards follow.",
+    "This paper had no authored cards before this review; all 40 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from. Where the scheme stacks a fraction across lines that the provenance reader cannot rejoin, a bullet is quoted in two consecutive pieces (Q8(a)(i) high partial credit). Data tables are carried in the stem as the printed values. Q8(b)(v) is a pie-chart drawing; its card carries the printed credit criteria.",
+    "The question booklet is LC003GLP200EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 1. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2020-ol-p2-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "A restaurant is offering a three-course meal consisting of one starter, one main course and one dessert. There are 4 different starters, 6 different main courses and 8 different desserts to choose from.",
+      "questionText": "How many different three-course meal combinations are available?"
+    },
+    {
+      "id": "maths-2020-ol-p2-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "A restaurant is offering a three-course meal consisting of one starter, one main course and one dessert. There are 4 different starters, 6 different main courses and 8 different desserts to choose from.",
+      "questionText": "When Jack visits the restaurant he discovers that the restaurant still has the 4 starters and the 6 main courses available but is sold out of some of the desserts. Jack now has 120 different three-course meal combinations to choose from. How many different desserts are still available to Jack?"
+    },
+    {
+      "id": "maths-2020-ol-p2-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "In a large population 1 in 8 of the people play tennis.",
+      "questionText": "Four people are chosen at random from the population. What is the probability that the fourth person chosen is the only one to play tennis?"
+    },
+    {
+      "id": "maths-2020-ol-p2-q1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "In a large population 1 in 8 of the people play tennis.",
+      "questionText": "Three people are chosen at random from the population. What is the probability that exactly two of them play tennis?"
+    },
+    {
+      "id": "maths-2020-ol-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points A(4, 6), B(−2, 2) and C(10, 0) are the vertices of the triangle ABC shown below.",
+      "questionText": "Find |AB|, the length of [AB]. Give your answer in the form a√b units, where a, b ∈ ℕ."
+    },
+    {
+      "id": "maths-2020-ol-p2-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points A(4, 6), B(−2, 2) and C(10, 0) are the vertices of the triangle ABC shown below.",
+      "questionText": "Find the coordinates of D, the midpoint of [AB]."
+    },
+    {
+      "id": "maths-2020-ol-p2-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points A(4, 6), B(−2, 2) and C(10, 0) are the vertices of the triangle ABC shown below. Part (b)(i): Find the coordinates of D, the midpoint of [AB].",
+      "questionText": "In the triangle ABC, the point E(7, 3) is the midpoint of [AC]. Show that DE is parallel to BC."
+    },
+    {
+      "id": "maths-2020-ol-p2-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The points A(4, 6), B(−2, 2) and C(10, 0) are the vertices of the triangle ABC shown below.",
+      "questionText": "Find the area of the triangle ABC."
+    },
+    {
+      "id": "maths-2020-ol-p2-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "In a survey, 1000 people are selected at random and asked some questions about online shopping.",
+      "questionText": "Find the margin of error of the survey. Give your answer as a percentage correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2020-ol-p2-q3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "In a survey, 1000 people are selected at random and asked some questions about online shopping.",
+      "questionText": "Of those asked, 762 said they believe it is safe to give their credit card details when shopping online. Use your answer to Part a(i) above to create a 95% confidence interval for the percentage of people who believe it is safe to give their credit card details when shopping online."
+    },
+    {
+      "id": "maths-2020-ol-p2-q3-a-iii",
+      "printedParts": [
+        "Q3(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "In a survey, 1000 people are selected at random and asked some questions about online shopping. Of those asked, 762 said they believe it is safe to give their credit card details when shopping online.",
+      "questionText": "An online media company claims that 80% of people believe it is safe to give their credit card details when shopping online. Conduct a hypothesis test, at the 5% level of significance, to test the company's claim. Give your conclusion in the context of the question and give a reason for your conclusion."
+    },
+    {
+      "id": "maths-2020-ol-p2-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "An aptitude test was taken by 6500 candidates. The test scores were normally distributed. The mean score was 480 and the standard deviation was 90. On the distribution shown below, the shaded area represents all candidates who were within one standard deviation of the mean.",
+      "questionText": "Write the value of A and the value of B into the boxes below."
+    },
+    {
+      "id": "maths-2020-ol-p2-q3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "An aptitude test was taken by 6500 candidates. The test scores were normally distributed. The mean score was 480 and the standard deviation was 90. On the distribution shown below, the shaded area represents all candidates who were within one standard deviation of the mean.",
+      "questionText": "Use the Empirical Rule to estimate the number of candidates in the shaded region."
+    },
+    {
+      "id": "maths-2020-ol-p2-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle c has equation (x − 1)² + (y + 4)² = 25.",
+      "questionText": "Find the centre and radius of c."
+    },
+    {
+      "id": "maths-2020-ol-p2-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "The circle c has equation (x − 1)² + (y + 4)² = 25.",
+      "questionText": "The point (1, k) is on c. Find the two possible values of k."
+    },
+    {
+      "id": "maths-2020-ol-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle",
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The circle s has equation x² + y² = 13. The point A(3, −2) is on s. Find the equation of t, the tangent to the circle at the point A. Give your answer in the form ax + by + c = 0, where a, b, c ∈ ℤ."
+    },
+    {
+      "id": "maths-2020-ol-p2-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Two swimmers A and B stand at the same point X, on one shore of a long, still rectangular shaped lake that is 100 m wide, as shown below. (Diagram not to scale.) Both swim to the opposite side of the lake.",
+      "questionText": "Swimmer A swims to the left, making an angle of 55° with the side of the lake as shown. Find the distance that A swims to reach the other side. Give you answer correct to the nearest metre."
+    },
+    {
+      "id": "maths-2020-ol-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Two swimmers A and B stand at the same point X, on one shore of a long, still rectangular shaped lake that is 100 m wide, as shown below. (Diagram not to scale.) Both swim to the opposite side of the lake.",
+      "questionText": "Swimmer B swims to the right and travels a distance of 200 m to reach the other side, making an angle of θ degrees with the bank on the other side of the lake, as shown. Find the value of θ."
+    },
+    {
+      "id": "maths-2020-ol-p2-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Two swimmers A and B stand at the same point X, on one shore of a long, still rectangular shaped lake that is 100 m wide, as shown below. (Diagram not to scale.) Both swim to the opposite side of the lake.",
+      "questionText": "The next day the swimmers again swim to the opposite side of the lake but in slightly different directions. Swimmer A swims to the left, making an angle of 45° with the side of the lake and travels 141·4 metres as shown. Swimmer B swims to the right, making an angle of 40° with the side of the lake and travels 155·6 metres as shown. Find d, the distance both swimmers are apart when they reach the opposite side of the lake. Give you answer correct to the nearest metre."
+    },
+    {
+      "id": "maths-2020-ol-p2-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "In the diagram below: |∠CAB| = 80° and |∠DCE| = 60°. |∠ABC| = (x + y)° and |∠BCA| = (3x + y)°, where x, y ∈ ℕ.",
+      "questionText": "Find the value of x and the value of y."
+    },
+    {
+      "id": "maths-2020-ol-p2-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "In the diagram below, DE is parallel to FG. |DH| = 5 cm. |HE| = 12 cm. |HG| = 30 cm. The distance from D to F is x cm. Find the value of x."
+    },
+    {
+      "id": "maths-2020-ol-p2-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A vertical mobile phone mast, [DC], of height h m, is secured with two cables: [AC] of length x m, and [BC] of length y m, as shown in the diagram. The angle of elevation to the top of the mast from A is 30° and from B is 45°.",
+      "questionText": "Explain why |∠BCA| is 105°."
+    },
+    {
+      "id": "maths-2020-ol-p2-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A vertical mobile phone mast, [DC], of height h m, is secured with two cables: [AC] of length x m, and [BC] of length y m, as shown in the diagram. The angle of elevation to the top of the mast from A is 30° and from B is 45°.",
+      "questionText": "The horizontal distance from A to B is 100 m. Use the triangle ABC to find the length of y. Give your answer correct to one decimal place."
+    },
+    {
+      "id": "maths-2020-ol-p2-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A vertical mobile phone mast, [DC], of height h m, is secured with two cables: [AC] of length x m, and [BC] of length y m, as shown in the diagram. The angle of elevation to the top of the mast from A is 30° and from B is 45°. The horizontal distance from A to B is 100 m.",
+      "questionText": "Using your answer to Part (a)(ii) or otherwise, find the value of h and the value of x. Give your answers correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2020-ol-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "A vertical mobile phone mast, [DC], of height h m, is secured with two cables: [AC] of length x m, and [BC] of length y m, as shown in the diagram. The angle of elevation to the top of the mast from A is 30° and from B is 45°. The horizontal distance from A to B is 100 m.",
+      "questionText": "The two cables to secure the mast costs €25 per metre. The mast itself costs €580 per metre. VAT at 23% is then added in each case. Calculate the total cost of the cables and mast after VAT is included."
+    },
+    {
+      "id": "maths-2020-ol-p2-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-trigonometry"
+      ],
+      "questionText": "The mast can provide a strong signal for an area in the shape of a regular hexagon of side 8 km, as shown in the diagram. Find the area of the hexagon. Give your answer in km², correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2020-ol-p2-q7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The mast can provide a strong signal for an area in the shape of a regular hexagon of side 8 km, as shown in the diagram.",
+      "questionText": "A circle which touches all vertices of the hexagon can show areas where the signal is weak. One of these areas is shaded in the diagram. Find this shaded area. Give your answer in km², correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2020-ol-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows data (measured in kilotonnes) on how municipal waste was dealt with in Ireland from 2005 to 2011. Year, Total Waste Collected (Kilotonnes), Waste Sent to Landfill (Kilotonnes): 2005, 2779, 1833; 2006, 3100, 1981; 2007, 3175, 2015; 2008, 3104, 1939; 2009, 2825, 1724; 2010, 2580, 1496; 2011, 2547, 1344. Source: Environmental Protection Agency.",
+      "questionText": "Find the difference between the percentage of the waste collected which was sent to landfill in 2005 and the percentage of waste sent to landfill in 2011. Give your answer correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2020-ol-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows data (measured in kilotonnes) on how municipal waste was dealt with in Ireland from 2005 to 2011. Year, Total Waste Collected (Kilotonnes), Waste Sent to Landfill (Kilotonnes): 2005, 2779, 1833; 2006, 3100, 1981; 2007, 3175, 2015; 2008, 3104, 1939; 2009, 2825, 1724; 2010, 2580, 1496; 2011, 2547, 1344. Source: Environmental Protection Agency.",
+      "questionText": "Find the mean amount of waste collected each year, from 2005 to 2011. Give your answer correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2020-ol-p2-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "The table below shows data (measured in kilotonnes) on how municipal waste was dealt with in Ireland from 2005 to 2011. Year, Total Waste Collected (Kilotonnes), Waste Sent to Landfill (Kilotonnes): 2005, 2779, 1833; 2006, 3100, 1981; 2007, 3175, 2015; 2008, 3104, 1939; 2009, 2825, 1724; 2010, 2580, 1496; 2011, 2547, 1344. Source: Environmental Protection Agency.",
+      "questionText": "The mean amount of waste sent to landfill in the 4 years from 2009 to 2012 was 1398 kilotonnes. Find the amount of waste sent to landfill in 2012."
+    },
+    {
+      "id": "maths-2020-ol-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the percentages of all the different types of energy sources used in each of 13 European countries during 2014. % of total energy — Country: Renewable, Oil, Solid Fuel, Gas, Electricity, Other. Austria: 25, 31, 8, 17, 13, 6. Bulgaria: 8, 19, 28, 11, 11, 23. Cyprus: 5, 82, 0, 0, 13, 0. Denmark: _, 31, 11, 13, 12, 13. France: 7, 26, 3, 11, 12, 41. Germany: 10, 29, 22, 17, 12, 10. Greece: 9, 43, 24, 9, 15, 0. Ireland: 6, 42, 13, 24, 15, 0. Latvia: 31, 26, 1, 20, 11, 11. Luxembourg: 4, 61, 1, 19, 12, 3. Malta: 2, 82, 0, 0, 16, 0. Netherlands: 4, 38, 10, 33, 10, 5. Portugal: 21, 38, 10, 13, 15, 3. Source: Eurostat.",
+      "questionText": "What percentage of the energy used in Denmark in 2014 was renewable?"
+    },
+    {
+      "id": "maths-2020-ol-p2-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the percentages of all the different types of energy sources used in each of 13 European countries during 2014. % of total energy — Country: Renewable, Oil, Solid Fuel, Gas, Electricity, Other. Austria: 25, 31, 8, 17, 13, 6. Bulgaria: 8, 19, 28, 11, 11, 23. Cyprus: 5, 82, 0, 0, 13, 0. Denmark: _, 31, 11, 13, 12, 13. France: 7, 26, 3, 11, 12, 41. Germany: 10, 29, 22, 17, 12, 10. Greece: 9, 43, 24, 9, 15, 0. Ireland: 6, 42, 13, 24, 15, 0. Latvia: 31, 26, 1, 20, 11, 11. Luxembourg: 4, 61, 1, 19, 12, 3. Malta: 2, 82, 0, 0, 16, 0. Netherlands: 4, 38, 10, 33, 10, 5. Portugal: 21, 38, 10, 13, 15, 3. Source: Eurostat.",
+      "questionText": "Name the four countries that used a lower percentage of renewable energy than Ireland."
+    },
+    {
+      "id": "maths-2020-ol-p2-q8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the percentages of all the different types of energy sources used in each of 13 European countries during 2014. % of total energy — Country: Renewable, Oil, Solid Fuel, Gas, Electricity, Other. Austria: 25, 31, 8, 17, 13, 6. Bulgaria: 8, 19, 28, 11, 11, 23. Cyprus: 5, 82, 0, 0, 13, 0. Denmark: _, 31, 11, 13, 12, 13. France: 7, 26, 3, 11, 12, 41. Germany: 10, 29, 22, 17, 12, 10. Greece: 9, 43, 24, 9, 15, 0. Ireland: 6, 42, 13, 24, 15, 0. Latvia: 31, 26, 1, 20, 11, 11. Luxembourg: 4, 61, 1, 19, 12, 3. Malta: 2, 82, 0, 0, 16, 0. Netherlands: 4, 38, 10, 33, 10, 5. Portugal: 21, 38, 10, 13, 15, 3. Source: Eurostat.",
+      "questionText": "Name a country which did not use gas as a fuel source."
+    },
+    {
+      "id": "maths-2020-ol-p2-q8-b-iv",
+      "printedParts": [
+        "Q8(b)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the percentage of the different types of energy that were used in Ireland during 2014. It also shows one of the angles in a pie chart to represent this data. The angle for renewable energy (6%) is 22°. Type, Percentage, Angle: Renewable, 6, 22°; Oil, 42, _; Solid Fuel, 13, _; Gas, 24, _; Electricity, 15, _.",
+      "questionText": "Complete the table to show the angle for each energy type. Give each angle correct to the nearest degree."
+    },
+    {
+      "id": "maths-2020-ol-p2-q8-b-v",
+      "printedParts": [
+        "Q8(b)(v)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the percentage of the different types of energy that were used in Ireland during 2014. It also shows one of the angles in a pie chart to represent this data. The angle for renewable energy (6%) is 22°. Type, Percentage, Angle: Renewable, 6, 22°; Oil, 42, _; Solid Fuel, 13, _; Gas, 24, _; Electricity, 15, _.",
+      "questionText": "Complete the pie chart below to show the energy types used in Ireland in 2014. Label each section clearly."
+    },
+    {
+      "id": "maths-2020-ol-p2-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A rectangular sheet of aluminium is used to make a cylindrical can of radius r cm and height 10 cm, as shown below. The aluminium does not overlap in the finished can.",
+      "questionText": "Show that r, the radius of the cylinder, is 3 cm."
+    },
+    {
+      "id": "maths-2020-ol-p2-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A rectangular sheet of aluminium is used to make a cylindrical can of radius r cm and height 10 cm, as shown below. The aluminium does not overlap in the finished can.",
+      "questionText": "Find the distance y. Give your answer correct to the nearest centimetre."
+    },
+    {
+      "id": "maths-2020-ol-p2-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A rectangular sheet of aluminium is used to make a cylindrical can of radius r cm and height 10 cm, as shown below. The aluminium does not overlap in the finished can.",
+      "questionText": "Find the area, in cm², of the waste aluminium after the top, bottom and side of the cylindrical can have been removed from the rectangular sheet. Give your answer correct to the nearest cm²."
+    },
+    {
+      "id": "maths-2020-ol-p2-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Find the volume of a spherical ice cube of radius 1·5 cm. Give your answer in terms of π."
+    },
+    {
+      "id": "maths-2020-ol-p2-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Three of the spherical ice cubes of radius 1·5 cm are added to a cylinder of internal radius 3·5 cm which is partially filled with water. All of the ice cubes are completely submerged in the water and the water does not overflow. Find the rise, h cm, in the water level. Give your answer correct to 1 decimal place."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        4
+      ],
+      "wording": "desserts to choose from / meal combinations to choose from",
+      "classification": "mathematical-counting",
+      "reason": "The menu is the sample space to be counted; the task asks for the number of combinations."
+    },
+    {
+      "pages": [
+        17
+      ],
+      "wording": "Using your answer to Part (a)(ii) or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task, with no printed pool of prompts."
+    },
+    {
+      "pages": [
+        18,
+        21
+      ],
+      "wording": "One of these areas is shaded / one of the angles in a pie chart",
+      "classification": "given-context",
+      "reason": "The shaded region and the given angle are data for one required task, not a choice between prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:4bcb6b2e6058aa0d": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "4:533a5f779d02482c": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "4:64fec00fb7183385": {
+      "classification": "mathematical-counting",
+      "reason": "The menu is the mathematical sample space; the candidate counts combinations rather than choosing a prompt."
+    },
+    "4:b5c38f2be09929ec": {
+      "classification": "mathematical-counting",
+      "reason": "The menu is the mathematical sample space; the candidate counts combinations rather than choosing a prompt."
+    },
+    "16:578267b92f779d5f": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "17:5f0738499bf3a3c7": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    },
+    "18:3a943fb875ae0f0a": {
+      "classification": "given-context",
+      "reason": "Names the shaded region or the given pie-chart angle: data for one required task, not a choice between prompts."
+    },
+    "21:da2bbbdbfe2d2751": {
+      "classification": "given-context",
+      "reason": "Names the shaded region or the given pie-chart angle: data for one required task, not a choice between prompts."
+    }
+  }
+}
