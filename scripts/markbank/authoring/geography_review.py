@@ -620,9 +620,14 @@ SELECTION_PATTERN = re.compile(
 
 
 def selection_scan(sitting: Sitting) -> list[list[Any]]:
-    """Every raw selection directive on every page of both booklets."""
+    """Every raw selection directive on every page of both booklets (once,
+    as part 1, when one booklet prints both parts)."""
     out = []
+    seen: list[Document] = []
     for part, document in sitting.papers.items():
+        if any(document is earlier for earlier in seen):
+            continue
+        seen.append(document)
         for page in range(1, len(document) + 1):
             for match in SELECTION_PATTERN.finditer(document.page_text(page)):
                 out.append([part, page, match.group(0).lower()])

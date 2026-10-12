@@ -1254,11 +1254,17 @@ def reviewed_sitting(year: int, level: str, review: Any,
                    for t in review.TASKS if t.legacy and t.sub
                    for card_id in dict.fromkeys(
                        [t.card_id, *(r.card_id for r in t.routes if r.legacy)])]
+    # Before 2020 one booklet printed both parts. Paper Trail and the shipped
+    # join know that booklet's questions only as its Part Two numbers under
+    # the paper key "single"; a Part One question has no question identity
+    # there to file under (its cards still carry their own Atlas topics).
+    single = fileids[(year, level, 1)] == fileids[(year, level, 2)]
     atlas_rows = [
-        {'level': level, 'year': year, 'paperKey': f'p{part}',
+        {'level': level, 'year': year, 'paperKey': 'single' if single else f'p{part}',
          'fileid': fileids[(year, level, part)] + '.pdf', 'n': n,
          'topicIds': sorted(weights, key=lambda topic: (-weights[topic], topic))}
-        for (part, n), weights in sorted(atlas.items(), key=lambda kv: (kv[0][0], int(kv[0][1])))]
+        for (part, n), weights in sorted(atlas.items(), key=lambda kv: (kv[0][0], int(kv[0][1])))
+        if not (single and part == 1)]
     audit = {
         'year': year, 'level': level, 'lang': 'ev', 'status': 'reviewed',
         'reviewedAt': '2026-10-11', 'sources': sources,
