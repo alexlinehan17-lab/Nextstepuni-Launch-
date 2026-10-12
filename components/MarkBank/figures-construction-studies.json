@@ -3113,5 +3113,208 @@
     "alt": "SEC model MVHR layout on the given plan with the unit, ducts and airflow, and notes on how the system works.",
     "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2020-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q1-original.png",
+    "md5": "af617efc36214c24299e5d708374fe84",
+    "alt": "Original SEC 2020 Ordinary Construction Studies Question 1: the printed question with a sketch of the strip foundation, cavity wall and tiled insulated ground floor.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q2-original.png",
+    "md5": "aa9e8e89e296bc0a095c361ffcc0a78e",
+    "alt": "Original SEC 2020 Ordinary Construction Studies Question 2: the printed question with a sketch of the 100 mm block outer leaf, 200 mm cavity and 100 mm block inner leaf.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q3-original.png",
+    "md5": "4af50498f678d7a661b630845b222bed",
+    "alt": "Original SEC 2020 Ordinary Construction Studies Question 3: the printed question with a section of a two-storey house with a wood-burning stove, radiators and a cylinder.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q4-original.png",
+    "md5": "59145ca22ed0710aaf477db21bbc5942",
+    "alt": "Original SEC 2020 Ordinary Construction Studies Question 4: the printed question with a sketch of coloured skips sorting waste on a site.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q5-original.png",
+    "md5": "dfc82ea52b26cd7aa0c38da8e28eb5d2",
+    "alt": "Original SEC 2020 Ordinary Construction Studies Question 5: the printed question with a sketch of a slated cut roof at the ridge.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q6-original.png",
+    "md5": "cdedcb15855d3204b1a59e6c201a259c",
+    "alt": "Original SEC 2020 Ordinary Construction Studies Question 6: the printed question with a sketch of workers on scaffolding at a house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q7-original.png",
+    "md5": "da90cfacd7f9379a633ae4d42f032b3c",
+    "alt": "Original SEC 2020 Ordinary Construction Studies Question 7: the printed question with the draft bathroom plan and a sketch of a grab-rail.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q8-original.png",
+    "md5": "eef814d0ca0bd3ac8803728255c4c02d",
+    "alt": "Original SEC 2020 Ordinary Construction Studies Question 8: the printed instruction and the nine construction terms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q9-original.png",
+    "md5": "a2ddc7b3db7f1ec25d0e6983abfda03a",
+    "alt": "Original SEC 2020 Ordinary Construction Studies Question 9: the printed question with a sketch of a semi-detached house with a timber-clad rear extension.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2020-OL-q1-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q1-scheme.png",
+    "md5": "2574e1ad3930502636f1ba80bd5969d8",
+    "alt": "SEC model section through the strip foundation, cavity wall and insulated ground floor with the damp proof membrane marked (b), the specification list and the notes for part (b).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q2-method": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q2-method.png",
+    "md5": "ada4823ca6ed5a7def9e7982ecb9f88e",
+    "alt": "SEC 2020 Ordinary marking scheme notes on insulating the cavity wall — method, type and thickness of insulation — with sketches of insulation boards in the cavity, and the advantages for part (b).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q2-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q2-advantages.png",
+    "md5": "d75d24f28aba958608dab3ddc8615860",
+    "alt": "SEC 2020 Ordinary marking scheme notes listing advantages of installing cavity wall insulation.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q2-additional": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q2-additional.png",
+    "md5": "880d5674c0739513e3bfdc95fdf58952",
+    "alt": "SEC 2020 Ordinary marking scheme notes and labelled sketches of external and internal methods of adding insulation to the wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q3-system.png",
+    "md5": "ff95535a26331db2a7fc2dac63e028ca",
+    "alt": "SEC model sketch of the house with pipework from the wood-burning stove to the ground-floor radiators and the first-floor cylinder, with the typical details list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q3-underfloor": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q3-underfloor.png",
+    "md5": "93e11c8c0b79687e3e21f05f4f25c3c0",
+    "alt": "SEC 2020 Ordinary marking scheme notes on advantages of underfloor heating.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q4-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q4-reasons.png",
+    "md5": "ea3d99763766cd97f562bf36c09c8da3",
+    "alt": "SEC 2020 Ordinary marking scheme notes on reasons for a site waste management plan.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q4-materials": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q4-materials.png",
+    "md5": "a69c64d5356d51b947152db688bd382d",
+    "alt": "SEC 2020 Ordinary marking scheme notes on recyclable construction materials and re-uses, with sketches of a bulk bag, a crate and a barrel.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q4-storage": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q4-storage.png",
+    "md5": "3c8b54b7cef80a2fe9452e21bb051f40",
+    "alt": "SEC 2020 Ordinary marking scheme notes on methods of sorting and storing site waste, with sketches of a pallet, a container and a covered store.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q5-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q5-scheme.png",
+    "md5": "53fcec0f7cb2cbbad9bc6602ac4d682d",
+    "alt": "SEC model section through the cut roof at the ridge with the ridge vent marked (b), the specification list and the ventilation notes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q6-signs": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q6-signs.png",
+    "md5": "9b31c655c0ecef50f5d028af0a96161b",
+    "alt": "SEC 2020 Ordinary marking scheme table of PPE safety signs — boots, hi-viz clothing, hard hat, eye wear, ear and hand protection — and how each protects workers.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q6-heights": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q6-heights.png",
+    "md5": "d692328d72b5391f74b2d07e35c3ce1c",
+    "alt": "SEC 2020 Ordinary marking scheme notes on working safely at height, with sketches of a guard rail, ladders, a cherry picker and a safety harness.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q6-training": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q6-training.png",
+    "md5": "e4de3f41db43f24c9f6d39eb7890157d",
+    "alt": "SEC 2020 Ordinary marking scheme notes on reasons for site safety training.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q7-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q7-layout.png",
+    "md5": "d50154343608fceb24523d3f3852032f",
+    "alt": "SEC model bathroom layout with the toilet, wash basin and shower area placed, and the reasons for each location.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q7-grab-rails": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q7-grab-rails.png",
+    "md5": "2da3039b3c92096352f35cf769ae61fb",
+    "alt": "SEC 2020 Ordinary marking scheme notes on grab-rail locations at the toilet and in the shower, with sketches.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q7-advantage": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q7-advantage.png",
+    "md5": "450399347f0e974d146ad97b5c5a5323",
+    "alt": "SEC 2020 Ordinary marking scheme notes on advantages of a bathroom designed for reduced mobility.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q8-terms": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q8-terms.png",
+    "md5": "ac81ddbf8576bdf1c615a00b8423ab4f",
+    "alt": "SEC 2020 Ordinary marking scheme notes and sketches for all nine terms: stud partition, domino joint, slump test, dynamic glass, pyrite, pile foundation, trimmer, butt hinge and solar panel (three pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q9-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q9-reasons.png",
+    "md5": "c236e601d535f33a5e3579b632a40429",
+    "alt": "SEC 2020 Ordinary marking scheme notes on reasons for building an extension.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q9-light": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q9-light.png",
+    "md5": "a930c0406e11e56790dabf7b60bc61f5",
+    "alt": "SEC 2020 Ordinary marking scheme notes on modifications that let more natural light into the extension, with sketches of glazing, roof lights and folding doors.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2020-OL-q9-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-OL-q9-advantages.png",
+    "md5": "364d6fb06013aaccfa8c607bcd11cab7",
+    "alt": "SEC 2020 Ordinary marking scheme notes on advantages of more natural light for the occupants.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }

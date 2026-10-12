@@ -125,4 +125,14 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "cons-2021-ol-q8-None-roof-light": "cons-2021-ol-q8-None-joist-bridging",
   "cons-2021-ol-q8-None-ridge-board": "cons-2021-ol-q8-None-joist-bridging",
   "cons-2021-ol-q8-None-building-energy-rating": "cons-2021-ol-q8-None-joist-bridging",
+  /* 2026-10-12. Construction Studies 2020 Ordinary: each printed choice is one card (choice is not a route); the
+   * pre-audit per-item cards are consolidated into cons-2020-ol-q8-None-stud-partition and their progress goes to it. */
+  "cons-2020-ol-q8-None-domino-joint": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-slump-test": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-dynamic-glass": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-pyrite": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-pile-foundation": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-trimmer": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-butt-hinge": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-solar-panel": "cons-2020-ol-q8-None-stud-partition",
 };

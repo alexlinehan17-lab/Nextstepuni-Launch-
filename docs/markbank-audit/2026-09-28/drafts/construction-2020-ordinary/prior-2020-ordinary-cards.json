@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "cons-2020-ol-q1-a",
+    "topicId": "cons-2-4",
+    "conceptId": "vertical-section-through-strip-foundation-external",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q1(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the strip foundation, external wall and ground floor. On your drawing show the typical construction details from the bottom of the foundation to a point 200 mm above finished floor level. Show an internal floor width of 900 mm and include four typical dimensions.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 13,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q1-a-r1",
+        "kind": "anyN",
+        "verbatim": "To a scale of 1:5, draw a vertical section through the strip foundation, external wall and ground floor. On your drawing",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "Reinforced strip foundation 1200 mm x 400 mm",
+            "Concrete fill / foundation blocks",
+            "Hardcore and sand blinding",
+            "1200-gauge damp proof course/radon barrier",
+            "200 - 300 mm Floor insulation",
+            "150 mm Concrete floor slab taped and sealed at junction of wall and floor",
+            "Floor tiles 20 mm",
+            "Skirting board",
+            "Concrete block inner leaf with 13 mm internal plaster",
+            "200 mm Full fill cavity insulation",
+            "Wall ties",
+            "Concrete block outer leaf with 19 mm render",
+            "Any 4 typical dimensions"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q2-a",
+    "topicId": "cons-1-1",
+    "conceptId": "method-insulating-proposed-cavity-type-thickness",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q2(a)",
+    "questionText": "Using notes and freehand sketches, show one suitable method of insulating the proposed cavity. Specify the type and thickness of insulation.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 5",
+      "answer": 1,
+      "ofParts": 2,
+      "perPart": 5
+    },
+    "totalMarks": 5,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q2-a-r1",
+        "kind": "anyN",
+        "verbatim": "Thickness of insulation",
+        "marks": 5,
+        "openList": true,
+        "contextNote": "Thickness of insulation",
+        "group": {
+          "claimMax": 1,
+          "perOption": 5,
+          "options": [
+            "Full-filled cavity insulation - 200 mm insulation",
+            "Partial filled cavity - 150 mm insulation boards"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 26 marks for this part. The 5 on this card are the marks it states answers for; the other 21 go to Method of insulating wall note + sketch (16); Thickness of insulation (5) — the drawing itself and anything the scheme prices without saying what earns it."
+  },
+  {
+    "id": "cons-2020-ol-q2-b",
+    "topicId": "cons-1-1",
+    "conceptId": "list-advantages-installing-insulation-cavity",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q2(b)",
+    "questionText": "List two advantages of installing insulation in the cavity.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q2-b-r1",
+        "kind": "anyN",
+        "verbatim": "List two advantages of installing insulation in the cavity.",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Insulation reduces the heat loss in the building",
+            "Increased thermal comfort for occupants",
+            "Energy bills are reduced",
+            "It is better for the environment with less use of fossil fuels",
+            "It improves the Building Energy Rating (BER)"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q2-c",
+    "topicId": "cons-1-1",
+    "conceptId": "separate-method-providing-additional-insulation-this",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q2(c)",
+    "questionText": "On a separate sketch show, using notes and freehand sketches, one method of providing additional insulation to this wall to further improve its thermal insulation properties.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 16",
+      "answer": 1,
+      "ofParts": 2,
+      "perPart": 16
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q2-c-r1",
+        "kind": "anyN",
+        "verbatim": "On a separate sketch show, using notes and freehand sketches, one method of providing additional insulation to this wall",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 16,
+          "options": [
+            "External solution b",
+            "Internal solution"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q3-a",
+    "topicId": "cons-5-2",
+    "conceptId": "wood-burning-stove-can-used-heat",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q3(a)",
+    "questionText": "A wood-burning stove can be used to heat radiators for a dwelling house. Draw a large freehand sketch of the given house and, on your sketch, show the pipework necessary to supply hot water from the stove to the ground floor radiators and also heat the water in the cylinder on the first floor. Include the following in your sketch: • wood-burning stove • hot water cylinder • pipework to cylinder • expansion tank / vessel • pipework to radiators • all necessary pumps and valves.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "8 x 5",
+      "answer": 8,
+      "ofParts": 10,
+      "perPart": 5
+    },
+    "totalMarks": 40,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "Typical details",
+        "marks": 40,
+        "openList": true,
+        "contextNote": "Typical details",
+        "group": {
+          "claimMax": 8,
+          "perOption": 5,
+          "options": [
+            "15 mm cold feed to stove",
+            "Gate valves",
+            "22 mm flow to radiators",
+            "22 mm return from radiators",
+            "Pump and isolator",
+            "Radiators valves",
+            "22 mm primary flow to cylinder",
+            "Drain off valve",
+            "22 mm primary return to burner",
+            "22 mm overflow pipe"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q3-b",
+    "topicId": "cons-5-3",
+    "conceptId": "installation-underfloor-heating-system-now-alternative",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q3(b)",
+    "questionText": "The installation of an underfloor heating system is now an alternative to radiators. Discuss one advantage of installing an underfloor heating system.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 4",
+      "answer": 1,
+      "ofParts": 4,
+      "perPart": 4
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "The installation of an underfloor heating system is now an alternative to radiators. Discuss one advantage of installing",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "It distributes heat evenly and consistently around each room",
+            "A suitably sized system can heat a larger room than an individual radiator",
+            "It works at a lower temperature, so it can reduce your heating bills",
+            "It is under the floor so more space in rooms and allows for easier decoration and painting of walls"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q4-a",
+    "topicId": "cons-1-1",
+    "conceptId": "reasons-why-construction-company-should-have",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q4(a)",
+    "questionText": "Discuss two reasons why a construction company should have a waste management plan for their site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 8",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 8
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q4-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons why a construction company should have a waste management plan for their site.",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 8,
+          "options": [
+            "To prevent and minimise the quantity of waste of building sites",
+            "To develop a culture of reusing and recycling material instead of dumping it",
+            "To reduce the energy production in the manufacture of new material",
+            "To keep the building site area clean and clear to prevent accidents occurring",
+            "To prevent hazardous waste for contaminating local natural resources and water supplies",
+            "Landfill site are becoming full and are scarce",
+            "It reduces the overall cost of the building"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q4-c",
+    "topicId": "cons-1-1",
+    "conceptId": "other-method-sorting-storing-waste-materials",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q4(c)",
+    "questionText": "Using notes and a freehand sketch, show one other method of sorting and storing waste materials on a construction site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 16",
+      "answer": 1,
+      "ofParts": 6,
+      "perPart": 16
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q4-c-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and a freehand sketch, show one other method of sorting and storing waste materials on a construction site.",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 16,
+          "options": [
+            "Containers - used to protect metal from weather and other valuable waste materials",
+            "Pallets – store and sort bricks/blocks that can be easily lifted and transported",
+            "Barrels – store and sort lengths of waste timber and metal",
+            "Trailers – store soil and bedrock for transport at a later stage",
+            "Boxes – Sort and store small items for transport",
+            "Bulk bags – store soil and gravel for later transport or reuse on site"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q5-a",
+    "topicId": "cons-3-8",
+    "conceptId": "vertical-section-through-roof-ridge-typical",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q5(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the roof at the ridge. Show the typical construction details from the top of the ridge to a level 100 mm below the collar ties. The collar ties are positioned 900 mm below ridge level. Include three courses of slate at the ridge. Include three typical dimensions on your drawing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 12,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q5-a-r1",
+        "kind": "anyN",
+        "verbatim": "To a scale of 1:5, draw a vertical section through the roof at the ridge. Show the typical construction details from the",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "Ridge tile",
+            "Ridge vent",
+            "Roofing slates",
+            "Battens 50 mm x 35 mm",
+            "Breather membrane",
+            "Ridge board 275 mm x 32 mm",
+            "Rafter 200 mm x 50 mm",
+            "Collar tie 200 mm x 50 mm",
+            "Insulation between rafters",
+            "Airtight membrane",
+            "Insulated plasterboard",
+            "Plaster skim"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q5-b",
+    "topicId": "cons-1-1",
+    "conceptId": "method-ventilating-roof",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q5(b)",
+    "questionText": "On your drawing show one method of ventilating the roof.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q5-b-r1",
+        "kind": "point",
+        "verbatim": "Vent at ridge or Vent slate",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q6-a",
+    "topicId": "cons-1-8",
+    "conceptId": "large-safety-signs-highlighting-use-personal",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q6(a)",
+    "questionText": "Using large freehand sketches, show three safety signs highlighting the use of personal protection equipment (PPE) that must be worn by all workers on a construction site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 2",
+      "answer": 3,
+      "ofParts": 6,
+      "perPart": 2
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q6-a-r1",
+        "kind": "anyN",
+        "verbatim": "Using large freehand sketches, show three safety signs highlighting the use of personal protection equipment (PPE) that ",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 2,
+          "options": [
+            "Steel toe cap boots",
+            "Hi Viz clothing",
+            "Hard hat",
+            "Protective eye wear",
+            "Ear protection",
+            "Hand protection"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 24 marks for this part. The 6 on this card are the marks it states answers for; the other 18 go to Safety sign 1 (6); Safety sign 2 (6); Safety sign 3 (6) — the drawing itself and anything the scheme prices without saying what earns it."
+  },
+  {
+    "id": "cons-2020-ol-q6-b",
+    "topicId": "cons-1-8",
+    "conceptId": "safety-precautions-workers-must-follow-when",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q6(b)",
+    "questionText": "Using notes and sketches, describe two safety precautions that workers must follow when working at height on a construction site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 9",
+      "answer": 2,
+      "ofParts": 10,
+      "perPart": 9
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "Safety precautions",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "Safety precautions",
+        "group": {
+          "claimMax": 2,
+          "perOption": 9,
+          "options": [
+            "Use scaffolding when working at heights above 1.5 metres",
+            "Ensure the scaffolding is level, supported and properly erected",
+            "Ensure a guard rail and working platforms are positioned at eaves level",
+            "Carefully plan the use of ladders",
+            "Limit the time workers are on the ladder",
+            "Properly secure ladders at the top and bottom",
+            "Position ladders at a slope of 1:4",
+            "Workers to use safety harness and other fall protection devices as necessary to provide additional fall protection",
+            "Use a lifting system such as a cherry picker/teleporter to reach high areas or areas that need to be worked on for an extended time period",
+            "Work in pairs to ensure each worker has a co-worker/buddy to help with any task that has a risk"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q6-c",
+    "topicId": "cons-1-8",
+    "conceptId": "reasons-why-all-workers-must-undertake",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q6(c)",
+    "questionText": "Give two reasons why all workers must undertake a safety training course prior to working on a construction site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Possible Reasons",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Possible Reasons",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Legal requirement to comply with Health and Safety regulations for all construction workers",
+            "Raise the standard of safety awareness on site",
+            "Ensure that all workers undergo basic health and safety awareness training to prevent accidents and avoid health hazards",
+            "Educates workers to assess risks and identify dangers on site",
+            "It promotes a safety culture for all construction workers"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q7-a",
+    "topicId": "cons-5-6",
+    "conceptId": "given-design-preferred-location-bathroom-toilet",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q7(a)",
+    "questionText": "Draw a freehand sketch of the given design and show your preferred location for each of the following in the bathroom: • toilet • wash basin • shower area. Give one reason for selecting each location.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 6",
+      "answer": 4,
+      "ofParts": 12,
+      "perPart": 6
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "Draw a freehand sketch of the given design and show your preferred location for each of the following in the bathroom: •",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "The scheme groups its answer under: Toilet; Wash basin; Shower area",
+        "group": {
+          "claimMax": 4,
+          "perOption": 6,
+          "options": [
+            "Located on an external wall making waste disposal easier to plumb",
+            "It has free space on the side to allow grab rails to be fixed to the wall",
+            "Fitted in this location to allow for a 1500 mm turning circle in bathroom",
+            "External wall to allow toilet to be fixed securely",
+            "There is a wall to allow it to be fixed securely",
+            "Fitted in this location to allow for a 1500 mm turning circle",
+            "Wall space to attach a mirror over the basin",
+            "Adequate wall space to install grab rails if necessary",
+            "It avoids the door opening and allows for moving space",
+            "It has natural light available",
+            "It has external walls to allow for fixtures and fittings to be attached securely",
+            "Fitted in this location to allow for a 1500mm turning circle in bathroom"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q7-b",
+    "topicId": "cons-5-6",
+    "conceptId": "homeowner-has-decided-install-grab-rails",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q7(b)",
+    "questionText": "The homeowner has decided to install grab-rails, like that shown, in the bathroom to aid ease of use for all users. Using notes and freehand sketches show two possible locations for grab-rails. Give one reason for each location.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 4 + 1 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "Toilet area",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Toilet area",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Grab- rail securely attached to a solid wall",
+            "Horizontal grab rail at a height 700 mm from the ground",
+            "To improve safety and mobility when using the water closet",
+            "To provide extra support when lowering or rising from the water closet seat",
+            "To allow people with reduced mobility to use the water closet safely"
+          ]
+        }
+      },
+      {
+        "id": "cons-2020-ol-q7-b-r2",
+        "kind": "anyN",
+        "verbatim": "Shower area",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Shower area",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Grab-rail securely attached to the tiles using fixings",
+            "Horizontal or vertical grab rails installed in the shower area",
+            "To provide extra support when using the shower area",
+            "To provide safety from slipping in the shower area",
+            "Allows person with reduced mobility to use the shower area safely and independently"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 20 marks for this part. The 8 on this card are the marks it states answers for; the other 12 go to Suitable location 1 note + sketch (6); Suitable location 2 note + sketch (6) — the drawing itself and anything the scheme prices without saying what earns it."
+  },
+  {
+    "id": "cons-2020-ol-q7-c",
+    "topicId": "cons-5-6",
+    "conceptId": "advantage-designing-bathroom-person-reduced-mobility",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q7(c)",
+    "questionText": "Discuss one advantage of designing a bathroom suitable for a person with reduced mobility.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 5,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q7-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss one advantage of designing a bathroom suitable for a person with reduced mobility.",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Future proofing the home so less modifications need to be made later",
+            "Later modifications, demolishing, and retrofitting are expensive and intrusive to the homeowners",
+            "Allow the homeowner and family to live in their home for their entire life",
+            "It allows the house to be used by the less mobile members of the family independently",
+            "Allows safe access to the bathroom by all"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q8-None-stud-partition",
+    "topicId": "cons-2-4",
+    "conceptId": "explain-five-stud-partition-domino-joint-stud-partition",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q8 — Stud partition",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • stud partition.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q8-None-stud-partition-r1",
+        "kind": "anyN",
+        "verbatim": "Stud partition",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Stud partition",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A stud wall comprises of a frame, timber, or metal studs, secured to the floor, ceiling and walls",
+            "The partition is made with vertical studs spanning from floor to ceiling",
+            "Horizontal members called headplates and soleplates sit at the top and bottom of the studs",
+            "Horizontal brace pieces between studs called noggins are used for rigidity",
+            "Studs are spaced at 400 mm centres and are covered with plasterboard",
+            "Stud partitions can be load bearing or non-load bearing"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q8-None-domino-joint",
+    "topicId": "cons-2-4",
+    "conceptId": "explain-five-stud-partition-domino-joint-domino-joint",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q8 — Domino joint",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • domino joint.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q8-None-domino-joint-r1",
+        "kind": "anyN",
+        "verbatim": "Domino joint",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Domino joint",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "This joint is widely used in the manufacture of modern furniture",
+            "A domino joint is woodworking joint cut with a domino joiner",
+            "Used to quickly joint pieces of wood",
+            "The domino joint is used to butt, edge or corner join pieces of wood",
+            "The domino joint when used with wood adhesive produces a very strong joint"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q8-None-slump-test",
+    "topicId": "cons-2-4",
+    "conceptId": "explain-five-stud-partition-domino-joint-slump-test",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q8 — Slump test",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • slump test.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q8-None-slump-test-r1",
+        "kind": "anyN",
+        "verbatim": "Slump test",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Slump test",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "The slump test is used to measure the workability of fresh concrete",
+            "The slump test is carried out on site on each batch of concrete that is to be used to check the uniformity of the mixtures",
+            "The slump test can be used to check that the correct amount of water has been added to the concrete mix",
+            "The slump test is carried out with a truncated cone, tamping rod, and meter stick",
+            "Results are recorded when the cone is removed and the sample slumps: o 0 - 50 mm slump = Low workability o 50 - 75mm slump = Medium workability"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q8-None-dynamic-glass",
+    "topicId": "cons-2-4",
+    "conceptId": "explain-five-stud-partition-domino-joint-dynamic-glass",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q8 — Dynamic glass",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • dynamic glass.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q8-None-dynamic-glass-r1",
+        "kind": "anyN",
+        "verbatim": "Dynamic glass",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Dynamic glass",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "This technology enables a thin coating to change from clear to tinted when a small DC voltage is applied",
+            "Dynamic glass enables glass to change tint when necessary to reduce glare and overheating of the interior",
+            "Provides greater levels of comfort for the occupant",
+            "Electrochromic: metallic oxide layers fixed to the surface of glass",
+            "Thermochromic glass reacts and tints to the heat and intensity of the sun"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q8-None-pyrite",
+    "topicId": "cons-2-4",
+    "conceptId": "explain-five-stud-partition-domino-joint-pyrite",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q8 — Pyrite",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • pyrite.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q8-None-pyrite-r1",
+        "kind": "anyN",
+        "verbatim": "Pyrite",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Pyrite",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Pyrite is form of iron sulphide",
+            "Pyrite is a naturally occurring mineral in sedimentary rocks",
+            "Pyrite can undergo a chemical reaction when exposed to moisture and oxygen",
+            "This chemical reaction can cause the pyrite to crack and expand",
+            "When pyrite is used in the building of foundations it can cause the ground floors to heave, causing cracking and movement of walls causing cracks to appear on the wall surfaces"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q8-None-pile-foundation",
+    "topicId": "cons-2-4",
+    "conceptId": "explain-five-stud-partition-domino-joint-pile-foundation",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q8 — Pile foundation",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • pile foundation.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q8-None-pile-foundation-r1",
+        "kind": "anyN",
+        "verbatim": "Pile foundation",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Pile foundation",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Pile foundations are used to support and anchor a building to the ground",
+            "Pile foundations are used where the building is situated on Low bearing capacity soil or when good bearing capacity soil is deep underground",
+            "There are three types of Pile foundations: o End-bearing, friction and short-bored",
+            "Pile foundations can be drilled with concrete poured or be driven into the ground using a pile driver",
+            "A ground beam sits on top of the pile foundations",
+            "Load-bearing walls transmit their load onto the beam which in turn transmits its load onto the pile foundation"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q8-None-trimmer",
+    "topicId": "cons-2-4",
+    "conceptId": "explain-five-stud-partition-domino-joint-trimmer",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q8 — Trimmer",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • trimmer.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q8-None-trimmer-r1",
+        "kind": "anyN",
+        "verbatim": "Trimmer",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Trimmer",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A trimmer joist supports joists and rafters that cannot be supported at their ends",
+            "Trimmer joists run perpendicular to rafters and common joists",
+            "Trimmer joists support trimmed joists",
+            "Trimming joists support a trimmer joist",
+            "Trimmer joists are used around chimney openings and stairwells to allow sufficient clearance for the stairs or chimney to pass through the floor or roof",
+            "Trimmer joists carry more load than common joist so are usually thicker in size",
+            "Trimmer joists are usually 25 mm thicker than common joists"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q8-None-butt-hinge",
+    "topicId": "cons-2-4",
+    "conceptId": "explain-five-stud-partition-domino-joint-butt-hinge",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q8 — Butt hinge",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • butt hinge.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q8-None-butt-hinge-r1",
+        "kind": "anyN",
+        "verbatim": "Butt hinge",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Butt hinge",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "It varies in length from 12 mm to 150 mm",
+            "A widely used hinge",
+            "It is made of brass, mild steel or stainless steel",
+            "Used for doors, windows, boxes etc",
+            "Consists of two leaves and a central pin",
+            "The leaves are fitted into two shallow trenches cut into the frame",
+            "Butt hinges are secured using countersink screws"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q8-None-solar-panel",
+    "topicId": "cons-2-4",
+    "conceptId": "explain-five-stud-partition-domino-joint-solar-panel",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q8 — Solar Panel",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • solar panel.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q8-None-solar-panel-r1",
+        "kind": "anyN",
+        "verbatim": "Solar Panel",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Solar Panel",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A solar panel may be in the form of a photovoltaic panel or evacuated tubes",
+            "An evacuated tube collects solar radiation and converts it into heat",
+            "A photovoltaic panel generate electricity by absorbing sunlight and using that light energy to create an electrical current",
+            "The solar panel is usually situated on a south facing roof, 45o angle is optimum to catch solar energy in Ireland",
+            "Solar panels may also be placed at ground level but risk being damaged, or the sunlight blocked due to trees or overgrowth",
+            "A solar panel is a sustainable energy source, environmentally friendly and helps reduce CO2 emissions",
+            "The panel can be mounted to follow the path of the sun"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q9-a",
+    "topicId": "cons-1-1",
+    "conceptId": "reasons-why-homeowner-would-build-extension",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q9(a)",
+    "questionText": "Discuss two reasons why a homeowner would build an extension to their house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q9-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons why a homeowner would build an extension to their house.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Increase the indoor floor area to accommodate the needs of a growing household",
+            "To improve the level of natural lighting entering the existing building",
+            "Increase the value of the existing building",
+            "Cheaper to improve existing building rather than move to a new building",
+            "Change and personalise an older designed building to new needs",
+            "Improve the thermal performance of the existing building as new building materials will be more energy efficient"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q9-b",
+    "topicId": "cons-7-4",
+    "conceptId": "modifications-extension-would-allow-more-natural",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q9(b)",
+    "questionText": "Using notes and freehand sketches, show two modifications to the extension that would allow more natural light enter the dwelling.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 13",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 13
+    },
+    "totalMarks": 26,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q9-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show two modifications to the extension that would allow more natural light enter the",
+        "marks": 26,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 13,
+          "options": [
+            "Remove internal walls to allow light to penetrate through to the internal rooms",
+            "Replace existing door with a sliding door or bi-fold doors to increase the light entering",
+            "Increase the size of the existing windows",
+            "Install floor to ceiling glazing walls to replace existing walls",
+            "The existing window could be replaced with larger taller unit",
+            "Install roof lights on the sloped roof of the extension",
+            "Install solar-tubes/sky tunnels in the roof"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q9-c",
+    "topicId": "cons-7-4",
+    "conceptId": "advantages-occupants-increasing-amount-natural-light",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q9(c)",
+    "questionText": "Discuss two advantages for the occupants by increasing the amount of natural light entering the dwelling.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q9-c-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Advantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Reduced energy costs for lighting and heating",
+            "Less reliance on fossil fuels for lighting",
+            "Regulates Seasonal Affective Disorder (SAD)",
+            "Reduces eye strain and improves quality of illumination",
+            "Improves exposure to sunlight, hence improves Vitamin D levels",
+            "Increases the aesthetics of interior space"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2020-ol-q1-b",
+    "topicId": "cons-1-1",
+    "conceptId": "typical-design-detailing-prevent-dampness-entering",
+    "level": "ordinary",
+    "year": 2020,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2020 OL Q1(b)",
+    "questionText": "On your drawing, show the typical design detailing to prevent dampness entering the building through the floor.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "3",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "cons-2020-ol-q1-b-r1",
+        "kind": "point",
+        "verbatim": "Damp proof membrane/Radon Barrier",
+        "marks": 3,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  }
+]
