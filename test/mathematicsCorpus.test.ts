@@ -42,6 +42,7 @@ import higher2021p2 from '../scripts/markbank/mathematics/reviews/2021-higher-p2
 import ordinary2021p1 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p1.json';
 import ordinary2021p2 from '../scripts/markbank/mathematics/reviews/2021-ordinary-p2.json';
 import higher2020p1 from '../scripts/markbank/mathematics/reviews/2020-higher-p1.json';
+import higher2018p1 from '../scripts/markbank/mathematics/reviews/2018-higher-p1.json';
 import schemeRowFigures from '../scripts/markbank/authored/maths-scheme-row-figures-catalogue.json';
 import ordinary2019p2 from '../scripts/markbank/mathematics/reviews/2019-ordinary-p2.json';
 import ordinary2019p1 from '../scripts/markbank/mathematics/reviews/2019-ordinary-p1.json';
@@ -983,6 +984,7 @@ describe.each([
   { year: 2019, level: 'higher' as const, number: 2, count: 32, review: higher2019p2 },
   { year: 2019, level: 'ordinary' as const, number: 1, count: 36, review: ordinary2019p1 },
   { year: 2019, level: 'ordinary' as const, number: 2, count: 39, review: ordinary2019p2 },
+  { year: 2018, level: 'higher' as const, number: 1, count: 33, review: higher2018p1 },
 ])('$year $level Mathematics Paper $number new-paper source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
   const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
@@ -1030,6 +1032,34 @@ describe('2019–2020 Mathematics scheme glyph repair', () => {
   });
 });
 
+describe('2018 Higher scheme rows that cannot be lifted as text', () => {
+  // A stacked-fraction numerator in the 2018 HL scheme extracts as a lone "1", which the
+  // provenance reader filters as a mark cell, and some model solutions are printed as a
+  // table or graph image. These parts carry the SEC's own print of their scheme row
+  // (model solution and every credit band) after the reveal.
+  const cards = HIGHER.filter(card => card.year === 2018 && card.id.startsWith('maths-2018-hl-'));
+  const withRow = cards.filter(card => 'figure' in card && card.figure?.candId.startsWith('maths-2018-HL-scheme-'));
+  const crops = schemeRowFigures.filter(entry => entry.file.startsWith('maths-2018-HL-scheme-'));
+
+  it('binds each printed scheme-row crop to exactly one card, held back until the reveal', () => {
+    expect(crops.length).toBeGreaterThanOrEqual(10);
+    expect(withRow).toHaveLength(crops.length);
+    expect(new Set(withRow.map(card => 'figure' in card && card.figure?.candId)))
+      .toEqual(new Set(crops.map(entry => entry.file.replace(/\.png$/, ''))));
+    for (const card of withRow) {
+      expect('figure' in card && card.figure?.solution, card.id).toBe(true);
+      expect('figure' in card && card.figure?.src, card.id).toMatch(/^\/exam-figures\/maths\/markbank\/maths-2018-HL-scheme-p\d{3}-i\d\.png$/);
+    }
+  });
+
+  it('covers Paper 1 Q8, whose f(x), f′(x) and f′′(x) working cannot be quoted, and the image-only Q9(a) table', () => {
+    const ids = withRow.map(card => card.id);
+    expect(ids).toEqual(expect.arrayContaining(['maths-2018-hl-p1-q6-b-ii', 'maths-2018-hl-p1-q7-c', 'maths-2018-hl-p1-q7-d',
+      'maths-2018-hl-p1-q7-e-ii', 'maths-2018-hl-p1-q8-a', 'maths-2018-hl-p1-q8-b', 'maths-2018-hl-p1-q8-c', 'maths-2018-hl-p1-q8-d',
+      'maths-2018-hl-p1-q9-a', 'maths-2018-hl-p1-q9-c-i']));
+  });
+});
+
 describe('2019 Ordinary scheme rows that cannot be lifted as text', () => {
   // The 2019 OL scheme's text layer flattens sub/superscripts to ASCII and the provenance
   // reader filters a stacked fraction's denominator, so these parts carry the SEC's own
@@ -1037,11 +1067,13 @@ describe('2019 Ordinary scheme rows that cannot be lifted as text', () => {
   const cards = ORDINARY.filter(card => card.year === 2019 && card.id.startsWith('maths-2019-ol-'));
   const withRow = cards.filter(card => 'figure' in card && card.figure?.candId.startsWith('maths-2019-OL-scheme-'));
 
+  const crops = schemeRowFigures.filter(entry => entry.file.startsWith('maths-2019-OL-scheme-'));
+
   it('binds each of the 47 printed scheme-row crops to exactly one card, held back until the reveal', () => {
-    expect(schemeRowFigures).toHaveLength(47);
+    expect(crops).toHaveLength(47);
     expect(withRow).toHaveLength(47);
     expect(new Set(withRow.map(card => 'figure' in card && card.figure?.candId)))
-      .toEqual(new Set(schemeRowFigures.map(entry => entry.file.replace(/\.png$/, ''))));
+      .toEqual(new Set(crops.map(entry => entry.file.replace(/\.png$/, ''))));
     for (const card of withRow) {
       expect('figure' in card && card.figure?.solution, card.id).toBe(true);
       expect('figure' in card && card.figure?.src, card.id).toMatch(/^\/exam-figures\/maths\/markbank\/maths-2019-OL-scheme-p\d{3}-i\d\.png$/);

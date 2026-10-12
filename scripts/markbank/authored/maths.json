@@ -84548,5 +84548,2659 @@
   "notes": "Prompt, grouped parts and context visually checked against the original 2019 Ordinary Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "stem": "R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°. In the triangle RST, θ = |∠TRS| = 106°.",
   "figureKey": "maths-2019-OL-scheme-p045-i0"
+ },
+ {
+  "id": "maths-2018-hl-p1-q1-a",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q1-a",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q1(a)",
+  "questionText": "Solve the simultaneous equations. 2x + 3y − z = −4; 3x + 2y + 2z = 14; x − 3z = −13.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 2x + 3y − z = −4 × (2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 3x + 2y + 2z = 14 × (−3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 4x + 6y − 2z = −8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — −9x − 6y − 6z = −42",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — −5x − 8z = −50",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — x − 3z = −13 × (5)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — 5x − 15z = −65",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-8",
+    "kind": "point",
+    "verbatim": "Model solution — −23z = −115",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-9",
+    "kind": "point",
+    "verbatim": "Model solution — z = 5 ⇒ x = 2 ⇒ y = −1 {2, −1, 5}",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-10",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Matches coefficient of 1 variable in 2 equations",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-11",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Writes x in terms of z in eq (iii)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-12",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 1 unknown found with errors",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-13",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Eliminates one unknown",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-14",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 1 unknown found and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-a-solution-15",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 2 unknowns found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2018-hl-p1-q1-b",
+  "topicId": "maths-4-3",
+  "conceptId": "p1-q1-b",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q1(b)",
+  "questionText": "Solve the inequality (2x − 3)/(x + 2) ≥ 3, where x ∈ ℝ and x ≠ −2.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (2x − 3)/(x + 2) ≥ 3 × (x + 2)²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (2x − 3)(x + 2) ≥ 3(x + 2)²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 2x² + x − 6 ≥ 3x² + 12x + 12",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — x² + 11x + 18 ≤ 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — (x + 2)(x + 9) ≤ 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-b-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — −9 ≤ x < −2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-b-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Use of (x + 2)²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-b-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Relevant work but with linear inequality",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-b-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Squares both sides with some subsequent work (low partial credit at most)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-b-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Quadratic inequality involving 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-b-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Roots of quadratic found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q1-b-solution-12",
+    "kind": "point",
+    "verbatim": "Note — Accept −9 ≤ x ≤ −2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2018-hl-p1-q2-a",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q2-a",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q2(a)",
+  "questionText": "The first three terms of a geometric series are x², 5x − 8, and x + 8, where x ∈ ℝ. Use the common ratio to show that x³ − 17x² + 80x − 64 = 0.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (5x − 8)/x² = (x + 8)/(5x − 8)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (5x − 8)² = x²(x + 8)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 25x² − 80x + 64 = x³ + 8x²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — x³ − 17x² + 80x − 64 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (5x − 8)/x² or (x + 8)/(5x − 8)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some effort at finding r in a geometric sequence (must use at least one of the terms)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-a-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — r = Tn/Tn−1 or similar",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-a-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (5x − 8)/x² = (x + 8)/(5x − 8)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-a-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (5x − 8)² and x²(x + 8)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-a-solution-10",
+    "kind": "point",
+    "verbatim": "Zero Credit — Treats as an arithmetic sequence",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2018-hl-p1-q2-b",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q2-b",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q2(b)",
+  "questionText": "If f(x) = x³ − 17x² + 80x − 64, x ∈ ℝ, show that f(1) = 0, and find another value of x for which f(x) = 0.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — f(1) = (1)³ − 17(1)² + 80(1) − 64 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒ (x − 1) is a factor",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — x²(x − 1) − 16x(x − 1) + 64(x − 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — x² − 16x + 64 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — (x − 8)(x − 8) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-b-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — x = 8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-b-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Shows f(1) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-b-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-b-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Quotient in quadratic form found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-b-solution-10",
+    "kind": "point",
+    "verbatim": "Note — Accept x = 8 without work if f(1) = 0 has been shown",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2018-hl-p1-q2-c",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q2-c",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q2(c)",
+  "questionText": "In the case of one of the values of x from part (b), the terms in part (a) will generate a geometric series with a finite sum to infinity. Find this value of x and hence find the sum to infinity.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q2-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — x = 1: 1², 5(1) − 8, 1 + 8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 1, −3, 9 which doesn′t have a sum to infinity (|r| > 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — x = 8: 8², 5(8) − 8, 8 + 8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-c-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 64, 32, 16 …. a = 64 and r = 1/2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-c-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — S∞ = a/(1 − r) = 64/(1 − 1/2) = 64/(1/2) = 128",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-c-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Substitution used to identify x = 8 as the required value",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-c-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Substitution used to exclude x = 1 as the required value",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-c-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Finds a/(1 − r) for x = 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-c-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — S∞ = x²/(1 − (5x − 8)/x²)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-c-solution-10",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Relevant substitution into correct formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-c-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — GP identified (a and r)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-c-solution-12",
+    "kind": "point",
+    "verbatim": "High Partial Credit — If the candidate works with both x = 1 and x = 8 but fails to eliminate x = 1 or chooses the incorrect answer",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q2-c-solution-13",
+    "kind": "point",
+    "verbatim": "Note — if |r| > 1 then Low Partial Credit at most",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The first three terms of a geometric series are x², 5x − 8, and x + 8, where x ∈ ℝ. Part (b): If f(x) = x³ − 17x² + 80x − 64, x ∈ ℝ, show that f(1) = 0, and find another value of x for which f(x) = 0."
+ },
+ {
+  "id": "maths-2018-hl-p1-q3-a",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q3-a",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q3(a)",
+  "questionText": "Let h(x) = cos(2x), where x ∈ ℝ. A tangent is drawn to the graph of h(x) at the point where x = π/3. Find the angle that this tangent makes with the positive sense of the x-axis.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ′(x) = −2 sin(2x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — At x = π/3: ℎ′(π/3) = −2 sin(2π/3) = −2(√3/2) = −√3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — tan θ = −√3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — θ = 120°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Differentiation indicated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Use of 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-a-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Derivative found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-a-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — tan θ = evaluated derivative",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-a-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — θ = −60°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-a-solution-10",
+    "kind": "point",
+    "verbatim": "Note — Must use differentiation to gain any credit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-a-solution-11",
+    "kind": "point",
+    "verbatim": "Note — If integration symbol appears then 0 credit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2018-hl-p1-q3-b",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q3-b",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q3(b)",
+  "questionText": "Find the average value of h(x) over the interval 0 ≤ x ≤ π/4, x ∈ ℝ. Give your answer in terms of π.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1/(π/4 − 0) ∫ cos(2x) dx",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 4/π (sin(2x)/2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 4/π (sin(π/2)/2 − sin 0/2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = 4/π (1/2) = 2/π",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-b-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Integration indicated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-b-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — cos 2x integrated correctly (sin(2x)/2)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-b-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — −2 sin 2x and finishes correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-b-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Substitutes limits into integral and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-b-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Integral evaluated at x = π/4 (i.e. omits 1/(π/4 − 0)) and finishes",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-b-solution-10",
+    "kind": "point",
+    "verbatim": "Note — errors in integration could include An error in the trig function (including sign)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-b-solution-11",
+    "kind": "point",
+    "verbatim": "Note — An error in the angle",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-b-solution-12",
+    "kind": "point",
+    "verbatim": "Note — An error in the application of the chain rule",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q3-b-solution-13",
+    "kind": "point",
+    "verbatim": "Note — Must have integration to gain any credit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Let h(x) = cos(2x), where x ∈ ℝ.",
+  "figureKey": "maths-2018-HL-scheme-p011-i0"
+ },
+ {
+  "id": "maths-2018-hl-p1-q4-a",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q4-a",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q4(a)",
+  "questionText": "Prove, using induction, that if n is a positive integer then (cos θ + i sin θ)^n = cos(nθ) + i sin(nθ), where i² = −1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — P(1) (cos θ + i sin θ)¹ = cos(1θ) + i sin(1θ)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — P(k): Assume (cos θ + i sin θ)^k = cos(kθ) + i sin(kθ)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — Test P(k + 1): (cos θ + i sin θ)^(k+1) = = cos(k + 1)θ + i sin(k + 1)θ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — (cos θ + i sin θ)^(k+1) = (cos θ + i sin θ)^k . (cos θ + i sin θ)¹",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — = (cos(kθ) + i sin(kθ)). (cos θ + i sin θ)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — = [cos(kθ) cos θ − sin(kθ) sin θ] + i[cos(kθ) sin θ + cos θ sin(kθ)]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — = cos(k + 1)θ + i sin(k + 1)θ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-8",
+    "kind": "point",
+    "verbatim": "Model solution — Thus the proposition is true for n = k + 1 provided it is true for n = k but it is true for n = 1 and therefore true for all positive integers.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Step P(1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Step P(k) or Step P(k + 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Uses Step P(k) to prove Step P(k + 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-12",
+    "kind": "point",
+    "verbatim": "Note — Accept Step P(1), Step P(k), Step P(k + 1) in any order",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-13",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — Omits conclusion but otherwise correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-a-solution-14",
+    "kind": "point",
+    "verbatim": "Full Credit — [r(cos θ + i sin θ)]^n = r^n (cos(nθ) + i sin(nθ)) proved correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2018-hl-p1-q4-b",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q4-b",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q4(b)",
+  "questionText": "Hence, or otherwise, find (−1/2 + (√3/2)i)³ in its simplest form.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — (−1/2 + (√3/2)i)³ = 1(cos 2π/3 + i sin 2π/3)³",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = (cos(3) 2π/3 + i sin(3) 2π/3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = (cos 2π + i sin 2π) = 1 + 0i = 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Modulus or argument correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-b-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some correct multiplication",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-b-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Apply De Moivre correctly with incorrect modulus and argument",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-b-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (cos(3) 2π/3 + i sin(3) 2π/3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-b-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Multiplication correct but un-simplified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-b-solution-9",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — cos 2π + i sin 2π or cos 360° + i sin 360°",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q4-b-solution-10",
+    "kind": "point",
+    "verbatim": "Accept — Answer with reference to cube root of unity",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Part (a): Prove, using induction, that if n is a positive integer then (cos θ + i sin θ)^n = cos(nθ) + i sin(nθ), where i² = −1."
+ },
+ {
+  "id": "maths-2018-hl-p1-q5-a-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q5-a-i",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q5(a)(i)",
+  "questionText": "Find the difference between the sums of the first 45 terms in the first two rows.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q5-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — row 2: S45 = 45/2 [14 + 44(5)] = 5265",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — row 1: S45 = 45/2 [8 + 44(3)] = 3150",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — ∴ Difference = 2115",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Formulates S45 for row 1 or row 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 3+5+7 …",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Identifies a or r for either row 1 or row 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-i-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — S45 found for row 1 or row 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-i-solution-8",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — Fails to subtract",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The Sieve of Sundaram is an infinite table of arithmetic sequences. The terms in the first 4 rows and the first 4 columns of the table are shown below. 4, 7, 10, 13; 7, 12, 17, 22; 10, 17, 24, 31; 13, 22, 31, 40."
+ },
+ {
+  "id": "maths-2018-hl-p1-q5-a-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q5-a-ii",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q5(a)(ii)",
+  "questionText": "Find the number which is in the 60th row and 70th column of the table.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q5-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — T1 (in row 60): T60 = 4 + (60 − 1)3 = 181",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — T2 (in row 60) = T60 of 7, 12, 17, 22 ….",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — T60 = 7 + (60 − 1)5 = 302",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — ∴ T70 of 181, 302, … …. = 181 + (70 − 1)121 = 8530",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Identifies T60 in column 1 or T70 In row 1 or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into correct formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Identifies a or d for either row 1 or row 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-ii-solution-8",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Finds a in row 60 or row 70",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Finds d in row 60 or row 70",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-ii-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formulates substituted expression for T70 in row 60 or T60 in column 70",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-a-ii-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finds both a and d in row 60 or row 70",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The Sieve of Sundaram is an infinite table of arithmetic sequences. The terms in the first 4 rows and the first 4 columns of the table are shown below. 4, 7, 10, 13; 7, 12, 17, 22; 10, 17, 24, 31; 13, 22, 31, 40."
+ },
+ {
+  "id": "maths-2018-hl-p1-q5-b",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q5-b",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q5(b)",
+  "questionText": "The first two terms of a sequence are a₁ = 4 and a₂ = 2. The general term is defined by aₙ = aₙ₋₁ − aₙ₋₂, when n ≥ 3. Write out the next 6 terms of the sequence and hence find the value of a₂₀₁₉.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — a₃ = a₂ − a₁ = 2 − 4 = −2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — a₄ = a₃ − a₂ = −2 − 2 = −4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — a₅ = a₄ − a₃ = −4 − (−2) = −2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — a₆ = a₅ − a₄ = −2 − (−4) = 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — a₇ = a₆ − a₅ = 2 − (−2) = 4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-b-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — a₈ = a₇ − a₆ = 4 − 2 = 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-b-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — Therefore, the sequence consists of a repeating pattern of 4, 2, −2, −4, −2, 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-b-solution-8",
+    "kind": "point",
+    "verbatim": "Model solution — ∴ a₂₀₁₆ = 2 (multiple of 6)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-b-solution-9",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒ a₂₀₁₉ = −2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-b-solution-10",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — a₃ = −2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-b-solution-11",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — a₃ = a₂ − a₁ or similar",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-b-solution-12",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Any 4 from a₃, a₄, a₅, a₆, a₇ and a₈ found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q5-b-solution-13",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — a₃, a₄, a₅, a₆, and a₂₀₁₉ found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2018-hl-p1-q6-a",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q6-a",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q6(a)",
+  "questionText": "Find the co-ordinates of the points of intersection of the graphs of the two functions.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — x³ = x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — ⟹ x³ − x = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — ⟹ x(x² − 1) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — x(x − 1)(x + 1) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-a-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — x = 0 or x = ±1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-a-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — (−1, −1), (0, 0), (1, 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-a-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Equation written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-a-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct solution from the graph",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-a-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Solution of the form (a, a) where a ≠ 0, 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-a-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Equation factorised (3 factors)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-a-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 2 correct points",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-a-solution-12",
+    "kind": "point",
+    "verbatim": "High Partial Credit — x values only",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Parts of the graphs of the functions h(x) = x and k(x) = x³, x ∈ ℝ, are shown in the diagram below."
+ },
+ {
+  "id": "maths-2018-hl-p1-q6-b-i",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q6-b-i",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q6(b)(i)",
+  "questionText": "Find the total area enclosed between the graphs of the two functions.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q6-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution, limits 0 to 1 — 2 ∫ x − x³ dx",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 2[x²/2 − x⁴/4] = 2[1/2 − 1/4 − 0] = 1/2 unit²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Integral indicated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One relevant area found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Integral evaluated at x = 1 (upper limit)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-b-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit, limits −1 to 1 — ∫ x − x³ dx = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Parts of the graphs of the functions h(x) = x and k(x) = x³, x ∈ ℝ, are shown in the diagram below."
+ },
+ {
+  "id": "maths-2018-hl-p1-q6-b-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q6-b-ii",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 HL Paper 1 Q6(b)(ii)",
+  "questionText": "On the diagram on the previous page, using symmetry or otherwise, draw the graph of k⁻¹, the inverse function of k.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q6-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — k⁻¹(x) = x^(1/3)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — Incomplete image",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q6-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — 2 correct image points",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Parts of the graphs of the functions h(x) = x and k(x) = x³, x ∈ ℝ, are shown in the diagram below.",
+  "figureKey": "maths-2018-HL-scheme-p014-i0"
+ },
+ {
+  "id": "maths-2018-hl-p1-q7-a",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q7-a",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q7(a)",
+  "questionText": "Based on the function t(x), Jack can learn to type 35 wpm in 35·96 days. Write the function above in terms of k and hence show that k = −62·5, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q7-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 35·96 = k ln(1 − 35/80)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 35·96 = k ln(45/80)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — k = 35·96/ln(45/80)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — k = −62·5 to one place of decimals",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Effort at transposing",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some substitution into function",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-a-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Full substitution and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-a-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Function written in terms of k and fully substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-a-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One incorrect substitution worked correctly and with some reference to k ≠ −62·5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The time, in days of practice, it takes Jack to learn to type x words per minute (wpm) can be modelled by the function: t(x) = k[ln(1 − x/80)], where 0 ≤ x ≤ 70, x ∈ ℝ, and k is a constant."
+ },
+ {
+  "id": "maths-2018-hl-p1-q7-b",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q7-b",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q7(b)",
+  "questionText": "Find the number of wpm that Jack can learn to type with 100 days of practice. Give your answer correct to the nearest whole number.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 100 = −62·5 ln(1 − x/80)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 100/(−62·5) = ln(1 − x/80)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — e^(100/(−62·5)) = 1 − x/80",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — x = −80(e^(100/(−62·5)) − 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — x = 64 wpm (To the nearest whole number)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-b-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some substitution into function",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-b-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Trial and improvement (more than 1 iteration)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-b-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-b-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — e^(100/(−62·5)) = 1 − x/80",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-b-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Equation rewritten in terms of x or x/80 =",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The time, in days of practice, it takes Jack to learn to type x words per minute (wpm) can be modelled by the function: t(x) = k[ln(1 − x/80)], where 0 ≤ x ≤ 70, x ∈ ℝ, and k is a constant. Part (a): Based on the function t(x), Jack can learn to type 35 wpm in 35·96 days. Write the function above in terms of k and hence show that k = −62·5, correct to 1 decimal place."
+ },
+ {
+  "id": "maths-2018-hl-p1-q7-c",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q7-c",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q7(c)",
+  "questionText": "Complete the table below, correct to the nearest whole number and hence draw the graph of t(x) for 0 ≤ x ≤ 70, x ∈ ℝ. x (wpm): 0, 10, 20, 30, 40, 50, 60, 70. t(x) (days): _, _, _, _, _, _, _, _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q7-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 0, 8, 18, 29, 43, 61, 87, 130",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-c-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One entry correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-c-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One plot (from candidates table) correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-c-solution-4",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 4 entries correct and 4 plots of table values",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-c-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — All plots consistent with candidates table values (with at least 1 correct value)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-c-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Table correct but incorrect plots",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The time, in days of practice, it takes Jack to learn to type x words per minute (wpm) can be modelled by the function: t(x) = k[ln(1 − x/80)], where 0 ≤ x ≤ 70, x ∈ ℝ, and k is a constant. Part (a): Based on the function t(x), Jack can learn to type 35 wpm in 35·96 days. Write the function above in terms of k and hence show that k = −62·5, correct to 1 decimal place.",
+  "figureKey": "maths-2018-HL-scheme-p015-i0"
+ },
+ {
+  "id": "maths-2018-hl-p1-q7-d",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q7-d",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q7(d)",
+  "questionText": "A simpler function that could also be used to model the number of days needed to attain x wpm is p(x) = 1·5x. Draw, on the diagram above, the graph of p(x) for 0 ≤ x ≤ 70, x ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q7-d-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One point on line identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-d-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One point (not origin) plotted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-d-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 2 points on line identified and plotted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The time, in days of practice, it takes Jack to learn to type x words per minute (wpm) can be modelled by the function: t(x) = k[ln(1 − x/80)], where 0 ≤ x ≤ 70, x ∈ ℝ, and k is a constant. Part (a): Based on the function t(x), Jack can learn to type 35 wpm in 35·96 days. Write the function above in terms of k and hence show that k = −62·5, correct to 1 decimal place. Part (c): Complete the table below, correct to the nearest whole number and hence draw the graph of t(x) for 0 ≤ x ≤ 70, x ∈ ℝ.",
+  "figureKey": "maths-2018-HL-scheme-p016-i0"
+ },
+ {
+  "id": "maths-2018-hl-p1-q7-e-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q7-e-i",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q7(e)(i)",
+  "questionText": "Let h(x) = p(x) − t(x). Use your graphs above to estimate the solution to h(x) = 0 for x > 0.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q7-e-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Approx 62 wpm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-i-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — Point of intersection indicated on graph",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-i-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — h(x) written in terms of x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-i-solution-4",
+    "kind": "point",
+    "verbatim": "Note — Tolerance: ± 2 wpm",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The time, in days of practice, it takes Jack to learn to type x words per minute (wpm) can be modelled by the function: t(x) = k[ln(1 − x/80)], where 0 ≤ x ≤ 70, x ∈ ℝ, and k is a constant. Part (a): Based on the function t(x), Jack can learn to type 35 wpm in 35·96 days. Write the function above in terms of k and hence show that k = −62·5, correct to 1 decimal place. Part (c): Complete the table below, correct to the nearest whole number and hence draw the graph of t(x) for 0 ≤ x ≤ 70, x ∈ ℝ. Part (d): A simpler function that could also be used to model the number of days needed to attain x wpm is p(x) = 1·5x. Draw, on the diagram above, the graph of p(x) for 0 ≤ x ≤ 70, x ∈ ℝ."
+ },
+ {
+  "id": "maths-2018-hl-p1-q7-e-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q7-e-ii",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q7(e)(ii)",
+  "questionText": "Let h(x) = p(x) − t(x). Use calculus to find the maximum value of h(x) for 0 ≤ x ≤ 70, x ∈ ℝ. Give your answer correct to the nearest whole number.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q7-e-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — For Maximum Value: Set ℎ′(x) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ(x) = 1·5x + 62·5 ln(1 − x/80)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 62·5/(80 − x) = 1·5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — x = 80 − 62·5/1·5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — x = 38·3 = 38 words",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ(38 1/3) = 1·5(38 1/3) + 62·5 ln(1 − (38 1/3)/80) = 16·73",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — = 17 days",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-ii-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — ℎ(x) = 1·5x + 62·5 ln(1 − x/80)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-ii-solution-10",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — ℎ′(x) = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-ii-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Differentiation correct but un-simplified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q7-e-ii-solution-12",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Value for x and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The time, in days of practice, it takes Jack to learn to type x words per minute (wpm) can be modelled by the function: t(x) = k[ln(1 − x/80)], where 0 ≤ x ≤ 70, x ∈ ℝ, and k is a constant. Part (a): Based on the function t(x), Jack can learn to type 35 wpm in 35·96 days. Write the function above in terms of k and hence show that k = −62·5, correct to 1 decimal place. Part (d): A simpler function that could also be used to model the number of days needed to attain x wpm is p(x) = 1·5x. Draw, on the diagram above, the graph of p(x) for 0 ≤ x ≤ 70, x ∈ ℝ.",
+  "figureKey": "maths-2018-HL-scheme-p016-i1"
+ },
+ {
+  "id": "maths-2018-hl-p1-q8-a",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-a",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q8(a)",
+  "questionText": "Find the co-ordinates of A, the point where the graph intersects the y-axis. Give your answer in terms of π.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q8-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = (1/√(2π))(1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — ∴ (0, 1/√(2π)) is the y intercept",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — x = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Value for x substituted into f(x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-a-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 1/√(2π)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-a-solution-6",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — (0, 0·3989)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The graph of the symmetric function f(x) = (1/√(2π)) e^(−(1/2)x²) is shown below.",
+  "figureKey": "maths-2018-HL-scheme-p017-i0"
+ },
+ {
+  "id": "maths-2018-hl-p1-q8-b",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-b",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q8(b)",
+  "questionText": "The co-ordinates of B are (−1, 1/√(2πe)). Find the area of the shaded rectangle in the diagram above. Give your answer correct to 3 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·484 Units²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-b-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — length = 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-b-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Width = [y co-ordinate]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-b-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — [(1)(1/√(2πe))]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-b-solution-5",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — Area = −0·484",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-b-solution-6",
+    "kind": "point",
+    "verbatim": "Zero Credit — Integrating original function",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The graph of the symmetric function f(x) = (1/√(2π)) e^(−(1/2)x²) is shown below.",
+  "figureKey": "maths-2018-HL-scheme-p017-i1"
+ },
+ {
+  "id": "maths-2018-hl-p1-q8-c",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-c",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q8(c)",
+  "questionText": "Use calculus to show that f(x) is decreasing at C.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q8-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — C(1, 1/√(2πe)) due to symmetry",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — ⟹ Decreasing",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-c-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — x = 1 identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-c-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some correct differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-c-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Indicates significance of dy/dx < 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-c-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Derivative found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The graph of the symmetric function f(x) = (1/√(2π)) e^(−(1/2)x²) is shown below. Part (b): The co-ordinates of B are (−1, 1/√(2πe)).",
+  "figureKey": "maths-2018-HL-scheme-p017-i2"
+ },
+ {
+  "id": "maths-2018-hl-p1-q8-d",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-d",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q8(d)",
+  "questionText": "Show that the graph of f(x) has a point of inflection at B.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q8-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — f′′(−1) = 0 as 1² − 1 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — ⟹ point of inflection at x = −1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-d-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — f′(x) transferred or found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-d-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Mention of f′′(x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-d-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Identifies x = −1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-d-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — f′′(x) identified and some correct differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-d-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — f′′(x) found",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q8-d-solution-8",
+    "kind": "point",
+    "verbatim": "Note — if the product rule and chain rule are not applied in finding f′′(x) then the candidate can be awarded mid partial credit at most",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The graph of the symmetric function f(x) = (1/√(2π)) e^(−(1/2)x²) is shown below. Part (b): The co-ordinates of B are (−1, 1/√(2πe)).",
+  "figureKey": "maths-2018-HL-scheme-p018-i0"
+ },
+ {
+  "id": "maths-2018-hl-p1-q9-a",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-a",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q9(a)",
+  "questionText": "The table below shows the number of black triangles at each of the first 4 steps and the fraction of the original triangle remaining at each step. Complete the table. Step: 0, 1, 2, 3. Number of black triangles: 1, _, _, _. Fraction of the original triangle remaining: 1, _, 9/16, _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q9-a-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct entry",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-a-solution-2",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Three correct entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-a-solution-3",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — Answers as decimals",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step.",
+  "figureKey": "maths-2018-HL-scheme-p019-i0"
+ },
+ {
+  "id": "maths-2018-hl-p1-q9-b-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-b-i",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q9(b)(i)",
+  "questionText": "Write an expression in terms of n for the number of black triangles in step n of the pattern.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q9-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 3^n",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — 3n written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — n³ written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — 3^(n−1) written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step."
+ },
+ {
+  "id": "maths-2018-hl-p1-q9-b-ii",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q9-b-ii",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q9(b)(ii)",
+  "questionText": "Step k is the first step of the pattern in which the number of black triangles exceeds one thousand million (i.e. 1 × 10⁹) for the first time. Find the value of k.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q9-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 3^k > 1,000,000,000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — log₃ 3^k > log₃ 1 000 000 000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — k log₃ 3 > log₃ 1 000 000 000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — k > log₃ 1 × 10⁹",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-b-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — k > 18·863",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-b-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — k = 19",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-b-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 3^k > 1,000,000,000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-b-ii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Inequality with k not written as an index",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-b-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Note — if 3k or k³ from above used fully here then award low partial credit at most",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step."
+ },
+ {
+  "id": "maths-2018-hl-p1-q9-c-i",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q9-c-i",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q9(c)(i)",
+  "questionText": "Step h is the first step of the pattern in which the fraction of the original triangle remaining is less than 1/100 of the original triangle. Find the value of h.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q9-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — ln (3/4)^ℎ < ln 1/100",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ ln (3/4) < ln 1/100",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ > ln(1/100)/ln(3/4)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ > 16·007",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-i-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — ⇒ ℎ = 17",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-i-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-i-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — (3/4)^ℎ or candidates ratio to the power of ℎ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-i-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — r = 3/4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-i-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Lists two or more terms",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-i-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Inequality with ℎ not written as an index",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-i-solution-11",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — (3/4)^(ℎ−1) < 1/100 and finishes correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step.",
+  "figureKey": "maths-2018-HL-scheme-p020-i0"
+ },
+ {
+  "id": "maths-2018-hl-p1-q9-c-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-c-ii",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q9(c)(ii)",
+  "questionText": "What fraction of the original triangle remains after an infinite number of steps of the pattern?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q9-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — lim n→∞ (3/4)^n = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — ⟹ Fraction remaining = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — lim n→∞",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Partial Credit — Some use of 3/4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Full Credit — Correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-c-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Full Credit — 1/∞ or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step."
+ },
+ {
+  "id": "maths-2018-hl-p1-q9-d-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-d-i",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q9(d)(i)",
+  "questionText": "The side length of the triangle in Step 0 is 1 unit. The table below shows the total perimeter of all the black triangles in each of the first 5 steps. Complete the table below. Step: 0, 1, 2, 3, 4. Perimeter: 3, _, 27/4, _, _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q9-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 3, 9/2, 27/4, 81/8, 243/16",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One correct entry",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — All numerators correct with all incorrect denominators",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — All denominators correct with all incorrect numerators",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Two correct entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step."
+ },
+ {
+  "id": "maths-2018-hl-p1-q9-d-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-d-ii",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q9(d)(ii)",
+  "questionText": "Find the total perimeter of the black triangles in step 35 of the pattern. Give your answer correct to the nearest unit.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q9-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Pattern: 3¹/2⁰, 3²/2¹, 3³/2² … … …. 3^(n+1)/2^n",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — ∴ step 35 = 3³⁶/2³⁵",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 4 368 329",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — Or T35 = (9/2)(3/2)³⁴ = 4 368 329",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — Or T35 = (3)(3/2)³⁵ = 4 368 329",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Pattern identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Recognises r = 3/2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-ii-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some relevant substitution into Tn = ar^(n−1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-ii-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — a = 3 or a = 4·5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-ii-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Step 35 = 3³⁶/2³⁵ or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-ii-solution-11",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — T35 = (3)(3/2)³⁴",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step. Part (d)(i): The side length of the triangle in Step 0 is 1 unit. The table below shows the total perimeter of all the black triangles in each of the first 5 steps."
+ },
+ {
+  "id": "maths-2018-hl-p1-q9-d-iii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-d-iii",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 HL Paper 1 Q9(d)(iii)",
+  "questionText": "Use your answers to part (c)(ii) and part (d)(ii) to comment on the total area and the total perimeter of the black triangles in step n of the pattern, as n tends to infinity.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-hl-p1-q9-d-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Area = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — lim n→∞ (3^(n+1)/2^n) = ∞",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — ⟹ Perimeter → ∞",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — lim n→∞ (3^(n+1)/2^n) or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-iii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Area is getting smaller",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-iii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Perimeter is increasing",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-iii-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Area approaches 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-iii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Perimeter → ∞ identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2018-hl-p1-q9-d-iii-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Area is getting smaller and Perimeter is increasing",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2018 Higher Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step. Part (d)(i): The side length of the triangle in Step 0 is 1 unit. The table below shows the total perimeter of all the black triangles in each of the first 5 steps."
  }
 ]

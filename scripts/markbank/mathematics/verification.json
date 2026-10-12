@@ -1,8 +1,8 @@
 {
   "date": "2026-10-12",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, 2019 Ordinary Level Paper 1, 2019 Ordinary Level Paper 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1870,
-  "reviewedTasks": 1870,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, 2019 Ordinary Level Paper 1, 2019 Ordinary Level Paper 2, 2018 Higher Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1903,
+  "reviewedTasks": 1903,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 348,
+  "targetedRegressionTests": 355,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -1254,5 +1254,28 @@
     "alsoLifted": "2019 OL P1 Q9(c)(ii) high partial credit bullet '1285·37 × 0·0012 or equivalent = 1·5'",
     "browser": "Chrome desktop and mobile: crop absent before reveal, loaded after reveal, no page errors (Q2(a)(iii) P1, Q8(b)(i) P2)",
     "validation": "Deck 1,870 built, 0 dropped; ten regression files 350/350; typecheck; markBankStore + markBankAuthoringToolkit 46/46; Atlas --check; audit --check-reviewed; diff check."
+  },
+  "higher2018p1": {
+    "paper": "2018 Higher Level Paper 1",
+    "paperFileid": "LC003ALP100EV.pdf",
+    "schemeFileid": "LC003ALP000EV.pdf",
+    "reviewedAt": "2026-10-12",
+    "newPaper": true,
+    "independentlyReviewedTasks": 33,
+    "existingRuntimeCardsReviewed": 0,
+    "addedRuntimeCards": 33,
+    "historicalRejectsRemaining": 0,
+    "targetedRegressionTests": 355,
+    "previousRuntimeIdsRetained": 1870,
+    "offeredMarks": 300,
+    "candidateMarks": 300,
+    "paperPagesInspected": 20,
+    "schemePagesInspected": 23,
+    "scaleNote": "2018 Paper 1 ladders: 5B 0,2,5; 5C 0,3,4,5; 10C 0,4,8,10; 10D 0,3,5,8,10; 15C 0,5,10,15; 15D 0,5,7,11,15; 20D 0,5,10,15,20.",
+    "schemeMarkdownAdded": "examiner-reports/maths/schemes/2018-hl.md (pure extraction by the same page-text + block-order method)",
+    "glyphMapAdditions": "14 entries derived by derive_glyphs.py from the 2018/2017 schemes, additions only (no existing entry changed); U+0302 deliberately not added (a real combining circumflex)",
+    "schemeRowFigures": "11 parts carry the scheme-row crop (Q3(b), Q6(b)(ii), Q7(c), Q7(d), Q7(e)(ii), Q8(a)-(d), Q9(a), Q9(c)(i)): stacked-fraction numerators extract as a lone 1, integral limits drop, and the Q9(a) table and three graphs are images. scheme_row_figures.py now spans continuation rows (2019 OL row ranges unchanged, checked by diffing its output before and after).",
+    "coverageBaseline": "1484/3474 asks covered, 0 orphans, 0 excluded, 1990 open",
+    "validation": "Deck generation (1,903 built, 0 dropped), Atlas generation and --check (467 placements), audit --check-reviewed, scheme quote check of all 33 cards, generator re-run rebuilds all 33 cards identically, ten regression files (355/355), typecheck and diff whitespace check passed; all 11 crops opened and checked."
   }
 }

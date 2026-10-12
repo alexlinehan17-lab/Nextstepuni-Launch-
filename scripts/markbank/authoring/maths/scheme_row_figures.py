@@ -1,6 +1,6 @@
 """Crop a Mathematics part's whole printed scheme row -- model solution AND marking notes.
 
-    python3 scripts/markbank/authoring/maths/scheme_row_figures.py 2019 ol [--write]
+    python3 scripts/markbank/authoring/maths/scheme_row_figures.py <year> <hl|ol> [--write | --publish]
 
 Why: the 2019 Ordinary Level scheme's text layer cannot carry everything it
 prints. Its subscripts and superscripts extract as unrelated ASCII (z2 reads as
@@ -63,6 +63,15 @@ AFFECTED = {
         'maths-2019-ol-p2-q8-a-iii', 'maths-2019-ol-p2-q8-b-i', 'maths-2019-ol-p2-q8-b-ii', 'maths-2019-ol-p2-q8-b-iii',
         'maths-2019-ol-p2-q9-a', 'maths-2019-ol-p2-q9-b', 'maths-2019-ol-p2-q9-c', 'maths-2019-ol-p2-q9-d-i',
         'maths-2019-ol-p2-q9-d-ii', 'maths-2019-ol-p2-q9-d-iii',
+    ],
+    # 2018 Higher: model-solution lines whose stacked-fraction numerator extracts
+    # as a lone "1" (filtered as a mark cell), integral limits the text layer
+    # drops (Q3(b)), and model solutions printed as images (the Q9(a) table, the
+    # Q6(b)(ii), Q7(c) and Q7(d) graphs).
+    (2018, 'hl'): [
+        'maths-2018-hl-p1-q3-b', 'maths-2018-hl-p1-q6-b-ii', 'maths-2018-hl-p1-q7-c', 'maths-2018-hl-p1-q7-d', 'maths-2018-hl-p1-q7-e-ii',
+        'maths-2018-hl-p1-q8-a', 'maths-2018-hl-p1-q8-b', 'maths-2018-hl-p1-q8-c', 'maths-2018-hl-p1-q8-d',
+        'maths-2018-hl-p1-q9-a', 'maths-2018-hl-p1-q9-c-i',
     ],
 }
 BANDS = ['Low Partial Credit', 'Mid Partial Credit', 'High Partial Credit', 'Partial Credit', 'Full Credit',
@@ -133,22 +142,35 @@ def vertical_xs(page):
 
 
 def find_row(page, label):
-    """The ruled row whose label-column words read `label`."""
+    """The ruled row whose label-column words read `label`, with its continuation rows.
+
+    A part's scheme content can run over more than one ruled row: a model-solution
+    table in one row and its marking notes in an unlabelled row below it (2018
+    Higher Q9(a)), or the same label printed again over a second row holding the
+    graph (2018 Higher Q7(c)). Rows that follow the labelled row and read either
+    nothing or the same label belong to the part; the span stops at the first row
+    labelled with anything else.
+    """
     want = norm_label(label)
     xs = vertical_xs(page)
     label_right = xs[1] + 1
     words = [w for w in page.get_text('words') if w[2] <= label_right]
     rs = rules(page)
-    hits = []
+    rows = []
     for top, bottom in zip(rs, rs[1:]):
         if bottom - top < 15:
             continue
         got = norm_label(''.join(w[4] for w in sorted(words, key=lambda w: (round(w[1]), w[0])) if top <= w[1] < bottom))
-        if got == want:
-            hits.append((top, bottom))
-    if len(hits) != 1:
-        raise SystemExit(f'label {label!r}: {len(hits)} ruled rows read that label on page {page.number + 1}')
-    return hits[0]
+        rows.append((top, bottom, got))
+    hits = [i for i, r in enumerate(rows) if r[2] == want]
+    if not hits:
+        raise SystemExit(f'label {label!r}: no ruled row reads that label on page {page.number + 1}')
+    i = j = hits[0]
+    while j + 1 < len(rows) and rows[j + 1][2] in ('', want) and rows[j + 1][0] == rows[j][1]:
+        j += 1
+    if any(h > j for h in hits):
+        raise SystemExit(f'label {label!r}: {len(hits)} separate ruled rows read that label on page {page.number + 1}')
+    return rows[i][0], rows[j][1]
 
 
 def main():
@@ -158,8 +180,9 @@ def main():
     doc = pymupdf.open(os.path.join(ROOT, 'paper-trail-corpus', 'markingschemes', str(year), SCHEME[lv]))
     tasks = {}
     for key in ('p1', 'p2'):
-        review = json.load(open(os.path.join(ROOT, 'scripts', 'markbank', 'mathematics', 'reviews', f'{year}-{LEVEL[lv]}-{key}.json')))
-        tasks.update({c['id']: c for c in review['cards']})
+        path = os.path.join(ROOT, 'scripts', 'markbank', 'mathematics', 'reviews', f'{year}-{LEVEL[lv]}-{key}.json')
+        if os.path.exists(path):
+            tasks.update({c['id']: c for c in json.load(open(path))['cards']})
     out_dir = os.path.join(ROOT, 'exam-papers', 'maths', 'figures', f'{year}-{lv}')
     if write:
         os.makedirs(out_dir, exist_ok=True)
