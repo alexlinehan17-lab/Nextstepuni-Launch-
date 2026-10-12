@@ -1,38 +1,38 @@
 {
   "subjectId": "accounting",
-  "verifiedAt": "2026-10-07",
+  "verifiedAt": "2026-10-12",
   "accountingChecksPassed": true,
   "scope": "Local Paper Trail Accounting corpus, 2010–2026, both levels and both language editions. Translations are reconciled to the same logical tasks.",
   "tasks": {
-    "higher": 726,
+    "higher": 721,
     "ordinary": 644,
-    "total": 1370
+    "total": 1365
   },
-  "atlasLogicalRows": 1661,
+  "atlasLogicalRows": 1656,
   "preservedLogicalParentQuestions": 306,
   "openAccountingIssues": [],
   "orphanAccountingTasks": [],
   "checks": {
-    "targetedAndSharedReaderRegressions": "293 tests passed across 9 files, one worker",
-    "applicationTypecheck": "passed",
-    "productionBuild": "passed (existing mixed-import and chunk-size warnings)",
-    "changedFilesLint": "passed, zero warnings",
-    "diffWhitespace": "passed",
-    "sourceReconciliation": "18,624 checks passed",
-    "browser": "desktop 1440×1000, phone and Atlas 390×844; reveal gating, PDF loading, 270-degree table correction, graph display, 300% zoom, horizontal/vertical pan, navigation, Escape and focus restoration passed"
+    "targetedAndSharedReaderRegressions": "399 tests passed across the same 9 files, one worker (markBankAccounting, markBankCardPreservation, curriculumRegistry, markBankDeck, examTopicRegistry, markBankEnglish, markBankIrish, markBankSession, paperRegion; --maxWorkers=1)",
+    "applicationTypecheck": "passed (npm run typecheck, 0 errors)",
+    "testTypecheck": "passed (npm run typecheck:test, 0 errors)",
+    "productionBuild": "passed (existing chunk-size warning)",
+    "changedFilesLint": "passed, zero warnings (the recorded 16-file eslint command with --max-warnings 0; npm run lint over the whole repository also passed)",
+    "diffWhitespace": "passed: git diff --check is clean on the working tree, and the branch diff from main 6652f80cc is clean for every verified code and data file. Only the 34 generated scheme text extracts (examiner-reports/accounting/schemes/*.md, the PDF text written verbatim by build.py) carry the PDF’s trailing spaces.",
+    "sourceReconciliation": "19,944 checks passed; 68 editions; 1,365 tasks; zero open issues or orphan tasks",
+    "browser": "5 scenarios (2022 HL Q6(c), 2010 OL Q2, 2025 HL Q8(f), 2023 HL Q4, 2022 OL Q4) x 5 views: desktop 1440×1000, phone 390×844 light and dark, Atlas phone 390×844 light and dark (the Atlas card stays white in dark mode by design). Reveal gating, PDF loading, 270-degree table correction (2010 OL Q2, 2023 HL Q4, 2022 OL Q4), graph display (2025 HL Q8(f)), 300% zoom, horizontal/vertical pan, next page, Escape and focus restoration all passed; 25/25 runs with zero page or console errors, no failed requests and no horizontal overflow. Screenshots visually inspected.",
+    "fullSuite": "npx vitest run: 310/311 files and 6,439/6,440 tests passed. The one failure is test/musicExamTopics.test.ts timing out at 30 s under full-suite load (it shells out to Python); run alone it passes 21/21. Unrelated to Accounting."
   },
   "unrelatedRepositoryLimitation": {
-    "command": "npm run typecheck:test",
+    "command": "npx vitest run",
     "errors": [
-      "test/programmeAnalyticsClient.test.ts:32 TS2493",
-      "test/programmeAnalyticsClient.test.ts:56 TS2493",
-      "utils/programmeAnalytics.ts:50 TS2339"
+      "test/musicExamTopics.test.ts: timed out in 30000 ms under full-suite load"
     ],
-    "note": "These files are unchanged from the worktree baseline. The application typecheck and all selected regression tests pass."
+    "note": "Music corpus test; passes alone (21/21). npm run typecheck:test, recorded here on 2026-10-07 as failing on three programme-analytics errors, now passes with 0 errors."
   },
   "schemeFallbacks": "2020 Irish Higher and Ordinary schemes are absent from the local corpus. Their translated papers were visually compared task by task; the reviewed English schemes are explicitly recorded as fallbacks.",
-  "cardIdsSha256": "3a040fb9e23a13f517f2468c37deda7585af5a603e3042ed58c703745942186c",
-  "cardDataSha256": "90eac1c625fccbfec791e75c2bb8be930484e580f73633690111cc80a38113a7",
+  "cardIdsSha256": "948eca8b9e7bdb291865c7f94afeb880c13c6597cb1e11512c7591bef77ca415",
+  "cardDataSha256": "6b8c82b04570092f0607650ea6a330d84c703448515a5fba5540782cb20526dc",
   "browserEvidence": [
     {
       "scenario": "browser-2010-2-ordinary",
@@ -193,22 +193,952 @@
           "scrollLeft": 748
         }
       ]
+    },
+    {
+      "scenario": "browser-2010-2-ordinary",
+      "recordedAt": "2026-10-12",
+      "results": [
+        {
+          "name": "desktop",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 1440,
+            "innerWidth": 1440,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 3228,
+            "height": 2281
+          },
+          "before": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 1064,
+            "height": 752
+          },
+          "after": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 3228,
+            "height": 2281
+          },
+          "panRange": {
+            "width": 1118,
+            "total": 3282
+          },
+          "scrollLeft": 2164,
+          "scrollTop": 1599,
+          "nextPage": true
+        },
+        {
+          "name": "phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        }
+      ]
+    },
+    {
+      "scenario": "browser-2022-4-ordinary",
+      "recordedAt": "2026-10-12",
+      "results": [
+        {
+          "name": "desktop",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 1440,
+            "innerWidth": 1440,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 3228,
+            "height": 2281
+          },
+          "before": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 1064,
+            "height": 752
+          },
+          "after": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 3228,
+            "height": 2281
+          },
+          "panRange": {
+            "width": 1118,
+            "total": 3282
+          },
+          "scrollLeft": 2164,
+          "scrollTop": 1599,
+          "nextPage": true
+        },
+        {
+          "name": "phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        }
+      ]
+    },
+    {
+      "scenario": "browser-2022-6(c)-higher",
+      "recordedAt": "2026-10-12",
+      "results": [
+        {
+          "name": "desktop",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 1440,
+            "innerWidth": 1440,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 3145,
+            "height": 4450
+          },
+          "before": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 1064,
+            "height": 1505
+          },
+          "after": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 3145,
+            "height": 4450
+          },
+          "panRange": {
+            "width": 1118,
+            "total": 3282
+          },
+          "scrollLeft": 2164,
+          "scrollTop": 3768,
+          "nextPage": true
+        },
+        {
+          "name": "phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        },
+        {
+          "name": "phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        }
+      ]
+    },
+    {
+      "scenario": "browser-2023-4-higher",
+      "recordedAt": "2026-10-12",
+      "results": [
+        {
+          "name": "desktop",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 1440,
+            "innerWidth": 1440,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 3228,
+            "height": 2281
+          },
+          "before": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 1064,
+            "height": 752
+          },
+          "after": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 3228,
+            "height": 2281
+          },
+          "panRange": {
+            "width": 1118,
+            "total": 3282
+          },
+          "scrollLeft": 2164,
+          "scrollTop": 1599,
+          "nextPage": true
+        },
+        {
+          "name": "phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        }
+      ]
+    },
+    {
+      "scenario": "browser-2025-8(f)-higher",
+      "recordedAt": "2026-10-12",
+      "results": [
+        {
+          "name": "desktop",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 1440,
+            "innerWidth": 1440,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 3145,
+            "height": 4450
+          },
+          "before": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 1064,
+            "height": 1505
+          },
+          "after": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 3145,
+            "height": 4450
+          },
+          "panRange": {
+            "width": 1118,
+            "total": 3282
+          },
+          "scrollLeft": 2164,
+          "scrollTop": 3768,
+          "nextPage": true
+        },
+        {
+          "name": "phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        },
+        {
+          "name": "phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        }
+      ]
     }
   ],
   "verifiedFiles": {
     "components/MarkBank/AccountingAssessment.tsx": "8d188fc11b3d5665ec44f2eac9b55f4e8575e08e5c881cf550d32b5a766f9505",
-    "components/MarkBank/SessionScreen.tsx": "25a13ad6b8529ceaa012d3b4566aca1eb0105eac04777619a2bfcce95ddc2777",
-    "components/MarkBank/SourceMaterialReader.tsx": "3f9271aab4613f3529124e899ca9464bf6bd1205fefb1f684d54619c131a9178",
-    "components/MarkBank/cards/accounting/factory.ts": "de47e3b75e2bf471a02e7bc71a2a321b997b53fa56b1fad50fd544d40c0eeee2",
+    "components/MarkBank/SessionScreen.tsx": "b8c41ae0d9e7a21053477d911ac626be110da73433378d4afce5fd8593377769",
+    "components/MarkBank/SourceMaterialReader.tsx": "3a8c132a3111b408387ec16f7f6ca6ab591c6d75135261155149d468b52adeea",
+    "components/MarkBank/cards/accounting/factory.ts": "35325a828677c36a2ece300317b48cf9a54387920db52af11a597764c65a509a",
     "components/MarkBank/cards/accounting/higher.ts": "70a17ae9efd917c3c115e463eb1295caa1504cfe1124459b2633f1ed4d0d0dae",
     "components/MarkBank/cards/accounting/ordinary.ts": "0dac37bd085ab08418ba05eacf8564be5291abf703ba0c44edbff659647f5d05",
-    "components/MarkBank/cards/sizes.json": "c4b726aa3024a46a4df9a8dbf2f55c91fc35b0f9751b9020f17216f11ebe8c5b",
-    "components/MarkBank/deck.ts": "1bc73d47d40b5ace388197b3a290f37506eac4deba02eb35ebe7a33986da4b97",
-    "components/PaperTrail/CropView.tsx": "2e3b9582286960cc39bdc8dd81bfae5c5f4777cad11c82fe9b1a3d1c4e4c56bf",
-    "components/PaperTrail/VaultQuestionCard.tsx": "cb50d1d573408e7d422807ac343cc75cc626b3410f91a3345f60f1b6763702cd",
-    "components/PaperTrail/vaultResolve.ts": "822404f906c9c3410493bebf4ab9689f547109f8060f398af6ba91f9e39745c7",
-    "data/examTopics/accounting-task-runtime.json": "7c0e92d705a4b1b939df2806c981ee356ebdd7273167369e1d7717241c2123b3",
-    "data/examTopics/registry.ts": "574934435dd84b7d3cdd3a4dd48f4328dc5839c8d868a1532bbb311660cf430b",
+    "components/MarkBank/cards/sizes.json": "b3195cb3eddcfe61081afa95c86c5f60dadeeb652dc3ebfd67de3505a9d05c51",
+    "components/MarkBank/deck.ts": "ccb1a696d415d6bc897d701f54650ec085c61d9205577c04ff595e6a0eb7523c",
+    "components/PaperTrail/CropView.tsx": "01a1bf1fd6c4e0b06e5dba7c195975a4aa6cb4e9b8ee841015a4caf435652535",
+    "components/PaperTrail/VaultQuestionCard.tsx": "7bdadd38f62cf74787f9be3e837b7e0e9bf39a941084abab7111bfe99bb0e667",
+    "components/PaperTrail/vaultResolve.ts": "20caa21dda24ad442a5ca62dca22546a69e174b5f42d758e83f423a7b9404392",
+    "data/examTopics/accounting-task-runtime.json": "1860ea50fe9f3a26c57f43ebe68174eefd5051a6ace8eaf4acfd2c16cccd8a45",
+    "data/examTopics/registry.ts": "ae1b9b79007a0b49ef561647502a29b647d9ef2891a829428e47b5ff38b54319",
     "examiner-reports/accounting/schemes/2010-hl.md": "0b572efcf2eb84e0977f812393b2113bff72e2853c4585cb9cb48a2435b6ba8e",
     "examiner-reports/accounting/schemes/2010-ol.md": "4a32a5eb97e1f32beda8535a079588d7e9605b5078a42c510a3880bae0ad1b72",
     "examiner-reports/accounting/schemes/2011-hl.md": "70f207a820c327ca35059f82de9fd2642e9cdf837c1f434d332f1a60fbd5b0f4",
@@ -243,7 +1173,7 @@
     "examiner-reports/accounting/schemes/2025-ol.md": "df692869e4f5c8ba63fe5701ef133c617a8f489a05204ca2f723b79dbc8dedb7",
     "examiner-reports/accounting/schemes/2026-hl.md": "3f75f38855c1e6aeee30340d5ba55fbe6bca1ef1f591c69f718d10e0eff89c91",
     "examiner-reports/accounting/schemes/2026-ol.md": "9b80885dfd99e22614c36c084db719f675e49f5b4e439ed4456a65d20901fa46",
-    "index.css": "d0b3c28f79c9e5439c89f67ea238d8b3b3688b3b0ee05c17faa5159943759ed4",
+    "index.css": "838db77c1c6c01f175ec7e2a6b0632fb2cc10efc8ee54bd8a59ee707a80fc2e8",
     "public/paper-answers/2010/LC032ALP000EV.pdf.json": "db2d35d06fc7e2fc16a1ff2a9670cb946e328a2382b38c211532bf0ff12abeb7",
     "public/paper-answers/2010/LC032GLP000EV.pdf.json": "a14203790149b645802f09bce9fdb40c72527a9d688011815fedaa30e7d7d217",
     "public/paper-answers/2011/LC032ALP000EV.pdf.json": "85abb590f1606e0f83ed84f5da3a3a2e7718af8a64f36915ec4b9b454756c4fe",
@@ -268,7 +1198,7 @@
     "public/paper-answers/2020/LC032GLP000EV.pdf.json": "d5e7b8a949d7ec96b3420516cc6e5873f68edb43cfe416b6517e23333b535015",
     "public/paper-answers/2021/LC032ALP000EV.pdf.json": "5372342b338a4ffbd9c7382be01dc451ee644abf18d93f13772f0f8336c660bf",
     "public/paper-answers/2021/LC032GLP000EV.pdf.json": "c78a50cfd1a2c31df1cd1e890106aa9f36f25928ef2bbe31d207567e0248e114",
-    "public/paper-answers/2022/LC032ALP000EV.pdf.json": "dee57bf17eb289fa6f853a1db648ef1d20f0d14db9ab9571ef0cea177659e879",
+    "public/paper-answers/2022/LC032ALP000EV.pdf.json": "b264cc75d4dc7b737bd3d649be709ca7a4de5dcc8fb4eee5796495bd1b04994f",
     "public/paper-answers/2022/LC032GLP000EV.pdf.json": "02079cc746fb414f300fc05c9be9c320af2c98d0730d765633b740352dc43a17",
     "public/paper-answers/2023/LC032ALP000EV.pdf.json": "653c2c90d1a30aa63ef55e311e9fe473fdac5e13dd9dc806f73136fff7dc8bca",
     "public/paper-answers/2023/LC032GLP000EV.pdf.json": "ff1765a69c893b821c064eba60caccad5260804a38d8a90ec18fe1629d1b8a2b",
@@ -278,7 +1208,7 @@
     "public/paper-answers/2025/LC032GLP000EV.pdf.json": "6c456359ce111be55722beca6b478c22f1969cf8e5aec5385999c7ebb3b6f309",
     "public/paper-answers/2026/LC032ALP000EV.pdf.json": "35fa92a281f790cd1944c115743705cf686ce4696bcef4b76585a1f941edfd17",
     "public/paper-answers/2026/LC032GLP000EV.pdf.json": "e9951d55a4c8685a5051bdf3495902b633c8011b753994f419d2d5ec6e91a9d4",
-    "scripts/markbank/accounting/build.py": "c09f4d3a8d81b8be6b86aac11f8a415396a4c0b3decff864747befbb427ce046",
+    "scripts/markbank/accounting/build.py": "469a0d364c6c4a0cb236193ecff9cbc0665c4732130e497a973c99945322ecaf",
     "scripts/markbank/accounting/correspondence/2010-higher-irish.json": "dc1b7c1d29f28dcc9b195f315afe021c86df9d99303c2fdc88bb0cc554432475",
     "scripts/markbank/accounting/correspondence/2010-ordinary-irish.json": "a73c0f0f52af76e1f5452012bbde7de5779983a5463e41ff33e15b5e74b87f1a",
     "scripts/markbank/accounting/correspondence/2011-higher-irish.json": "e708e1da210b9c8d04f33ee0275c96518432ca44e4b069a70475a492dd290250",
@@ -303,7 +1233,7 @@
     "scripts/markbank/accounting/correspondence/2020-ordinary-irish.json": "090259bc68b29c597d0df307dfab444f91af2133774619de249977550d5f6ce5",
     "scripts/markbank/accounting/correspondence/2021-higher-irish.json": "5d27563b61cb6ca380068ea9a7202c7fb4d836fb8c7aebfc7f0d2e620bd41635",
     "scripts/markbank/accounting/correspondence/2021-ordinary-irish.json": "c08758f37aecdd6c88f9288644e363f8b4abc6d88c3b9cd04114b73944a3b592",
-    "scripts/markbank/accounting/correspondence/2022-higher-irish.json": "378bc9c3f63c5a81901a631aba07640b2fc146ee5daab765375110c3bcb6d36c",
+    "scripts/markbank/accounting/correspondence/2022-higher-irish.json": "cc1ebafe488a34f5568366629a6e3fb1fb38555d99bb7d197ab324c32cf56c7a",
     "scripts/markbank/accounting/correspondence/2022-ordinary-irish.json": "16159b3660b8d2ffa796daccd71beb0db652e29db8c145e320aad1f32d03e162",
     "scripts/markbank/accounting/correspondence/2023-higher-irish.json": "078478c24ae697dba08ce0d6774a036679f203a7c3896dd8fba5033a9d3591c8",
     "scripts/markbank/accounting/correspondence/2023-ordinary-irish.json": "328bf741e78d4703ed53f190330d304c7ea6cd88ff14c12edc2bd6983763372c",
@@ -314,7 +1244,7 @@
     "scripts/markbank/accounting/correspondence/2026-higher-irish.json": "66c1a3a779feae65371b051f7eb7172c2c88500a7eb38db4a2f3c43ebea80f42",
     "scripts/markbank/accounting/correspondence/2026-ordinary-irish.json": "08551cc066c22d26f6671e9ed9dbfd10a4d1197252c958b164f4517e7b763a9f",
     "scripts/markbank/accounting/inventory.json": "99bb30c71903f197904a3511cbca759960cbbd73f97daa46c0fdcb35e8ee14a0",
-    "scripts/markbank/accounting/reconcile.py": "f2196a6878709775d3091fb1f0bee79b97d106e9065fffd27792f19990ebfa89",
+    "scripts/markbank/accounting/reconcile.py": "7babfc0c3653889830414b20487ec28b25e2643eb269ab13f42ee963e688ce74",
     "scripts/markbank/accounting/reviewed/2010-higher.json": "456e8fed2620f98860e7c60e6ea7aee61686e6c330f41c17c753c168b2c2f307",
     "scripts/markbank/accounting/reviewed/2010-ordinary.json": "b6b5810a86233b00334a3187aaefeec3a10fc1e980a444d2135cade7db0084d2",
     "scripts/markbank/accounting/reviewed/2011-higher.json": "5299d2df9a704441069580a6334301ff5fd18b188357ba9285074e3227279c82",
@@ -339,7 +1269,7 @@
     "scripts/markbank/accounting/reviewed/2020-ordinary.json": "d74aa1048d93dc67c73331343bba610dca138647c53bd9266e9782de6e9f1602",
     "scripts/markbank/accounting/reviewed/2021-higher.json": "cacdc211e812d8c702994bdcfa1304f03b4d2e5bfd2989d2b42b548d8e33f96a",
     "scripts/markbank/accounting/reviewed/2021-ordinary.json": "2b36e143015dce0797b2d350ab4d0f9c243a47b7ef46f0ce22c257a84e1c4ca9",
-    "scripts/markbank/accounting/reviewed/2022-higher.json": "a816fc11419d3913b149f2d7277027bc307e6c71ecc7e672da182bdfeac01697",
+    "scripts/markbank/accounting/reviewed/2022-higher.json": "fb90ce425583b7e0b8112e0787986bfdbc7f33b97f75daab08c3da379d151b64",
     "scripts/markbank/accounting/reviewed/2022-ordinary.json": "8e0401f645cf62bdb5af9e741b8b618d3c4d694efad9a1543839f755a8370bba",
     "scripts/markbank/accounting/reviewed/2023-higher.json": "67e15173f62a21874d2393d1923161a120b0fa51fae63f8e3064850c7367ec52",
     "scripts/markbank/accounting/reviewed/2023-ordinary.json": "a9d67f48b0d48ab7f0ed76d7fa23a70b321ba149198bf0c1057e39c76f7fd924",
@@ -349,10 +1279,10 @@
     "scripts/markbank/accounting/reviewed/2025-ordinary.json": "f39a2fb512c2edb34d5ef3901709b0ce8e47166a5921c0c52416a383a8893c40",
     "scripts/markbank/accounting/reviewed/2026-higher.json": "67359175c63f6377f7805ee136ccdf45aa52ca6a7b5f989bf6fb89368b6ef278",
     "scripts/markbank/accounting/reviewed/2026-ordinary.json": "0e2933e87f8a663584465af22adf0f18acf26e92129ca8cc243f0b9325dc241d",
-    "test/markBankAccounting.test.tsx": "9727f542c8b380849d7d09390f9fe5b7c13a0432d05fcefd908364f8d0c1c69e",
-    "test/markBankCardPreservation.test.ts": "dac4da7d3023cc3f8bebca67589d27c6d6840309c2334a914ebfea71c97aafab",
-    "test/markBankDeck.test.ts": "ccd9c9ed7ef7462db2c18705afe4a682c0f5815963603e7a0378b67e3e16dd54",
-    "types/markBank.ts": "5307c50249987c65af3599cae89ff1f553a19eb70ac318be8bfc7b44c3e00c59",
+    "test/markBankAccounting.test.tsx": "108ece06d10a350d87850388187030157e756d6da88368775295296f2cb36b55",
+    "test/markBankCardPreservation.test.ts": "d6ab4bf70aed4187b5d596dc22eaaba0bbe4856439831a3565f329972d2e82fd",
+    "test/markBankDeck.test.ts": "0618e12a07e3404330d555afce6e821917abef64dc818048f2a5804216e3211d",
+    "types/markBank.ts": "73eb28887d9c122325c6c322e0fc35e827b0c1edf4a20418d37d46dec354a55d",
     "types/paperTrail.ts": "8acb2d1cde4b3cfe3a80a9247aa05e8486b575b35d492b3bd65f30ac4fc5db6e"
   }
 }
