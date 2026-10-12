@@ -12282,43 +12282,60 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q1(a), (b)",
-  "questionText": "Using the Argand diagram: z₂ and z₃ are two other complex numbers. z₂ = −5 + 3i and z₃ = 4 −2i, where i² = −1",
+  "questionText": "(a) Using the Argand diagram: (i) write down the values of z₁ and z̅₁, where z̅₁ is the complex conjugate of z₁; (ii) plot and label z̅₁ on the Argand diagram above. (b) z₂ and z₃ are two other complex numbers. z₂ = −5 + 3i and z₃ = 4 − 2i, where i² = −1. Plot and label z₂ and z₃ on the Argand diagram on the previous page.",
   "figureKey": "maths-2022-OL-paper-p007-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 4, 8, 12, 15)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 15,
   "rows": [
    {
-    "id": "maths-2022-ol-p1-q1-a-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit, for example, real or imaginary part of z₁ or z₁̅correct, or real or imaginary part of z₂ or z₃ plotted correctly\n1 part correct",
-    "marks": 15,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. NOTE: Apply F* if labels omitted. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 4,
-     "options": [
-      "Work of merit, for example, real or imaginary part of z₁ or z₁̅correct, or real or imaginary part of z₂ or z₃ plotted correctly\n1 part correct",
-      "2 parts correct",
-      "Re\n4 parts correct"
-     ],
-     "perOptionSteps": [
-      4,
-      4,
-      7
-     ]
-    }
+    "id": "maths-2022-ol-p1-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — z₁ = −2 − 3i and z̅₁ = −2 + 3i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q1-a-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit, for example, real or imaginary part of z₁ or z̅₁ correct, or real or imaginary part of z₂ or z₃ plotted correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q1-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1 part correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q1-a-solution-4",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 2 parts correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q1-a-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 4 parts correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q1-a-solution-6",
+    "kind": "point",
+    "verbatim": "Note — Apply F* if labels omitted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q1-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q1-a",
+  "stem": "The complex number z₁ is shown on the Argand diagram below."
  },
  {
   "id": "maths-2022-ol-p1-q1-c",
@@ -12329,7 +12346,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q1(c)",
-  "questionText": "Write z₂−z₃ in the form a + bi, where a, b∈ℝ, i² = −1, and hence find |z₂−z₃|",
+  "questionText": "Write z₂ − z₃ in the form a + bi, where a, b ∈ ℝ, i² = −1, and hence find |z₂ − z₃|.",
   "figureKey": "maths-2022-OL-paper-p007-i1",
   "labelKey": [],
   "tariffModel": {
@@ -12364,8 +12381,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q1-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q1-c",
+  "stem": "The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = −5 + 3i and z₃ = 4 − 2i, where i² = −1."
  },
  {
   "id": "maths-2022-ol-p1-q1-d",
@@ -12376,7 +12394,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q1(d)",
-  "questionText": "Investigate if z₃ = 4 −2i is a solution of the equation z² + 2iz−7i = 0",
+  "questionText": "Investigate if z₃ = 4 − 2i is a solution of the equation z² + 2iz − 7i = 0.",
   "figureKey": "maths-2022-OL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
@@ -12409,8 +12427,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q1-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q1-d",
+  "stem": "The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = −5 + 3i and z₃ = 4 − 2i, where i² = −1."
  },
  {
   "id": "maths-2022-ol-p1-q2-a",
@@ -12421,7 +12440,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q2(a)",
-  "questionText": "Solve the following equation in x: 2(3x−5) + 8 = 4x−5",
+  "questionText": "Solve the following equation in x: 2(3x − 5) + 8 = 4x − 5",
   "figureKey": "maths-2022-OL-paper-p009-i0",
   "labelKey": [],
   "tariffModel": {
@@ -12454,7 +12473,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-OL-ask-p1-q2-a"
  },
  {
@@ -12466,7 +12485,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q2(b)",
-  "questionText": "Write (34)5 36 in the form 3k , where k∈ℝ",
+  "questionText": "Write (3⁴)⁵/3⁶ in the form 3^k, where k ∈ ℝ.",
   "figureKey": "maths-2022-OL-paper-p009-i1",
   "labelKey": [],
   "tariffModel": {
@@ -12494,7 +12513,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-OL-ask-p1-q2-b"
  },
  {
@@ -12506,7 +12525,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q2(c)",
-  "questionText": "Solve the simultaneous equations below to find the value of x and the value of y",
+  "questionText": "Solve the simultaneous equations below to find the value of x and the value of y: 3x + 2y = 1; 7x + 5y = −2",
   "figureKey": "maths-2022-OL-paper-p009-i2",
   "labelKey": [],
   "tariffModel": {
@@ -12541,7 +12560,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-OL-ask-p1-q2-c"
  },
  {
@@ -12553,7 +12572,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q3(a)",
-  "questionText": "Joe’s gross annual income is €27 500. Joe only pays tax at the lower rate. Work out Joe’s net annual income",
+  "questionText": "Joe’s gross annual income is €27 500. Joe only pays tax at the lower rate. Work out Joe’s net annual income.",
   "figureKey": "maths-2022-OL-paper-p010-i0",
   "labelKey": [],
   "tariffModel": {
@@ -12586,8 +12605,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q3-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q3-a",
+  "stem": "Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €3300. Their tax rates and bands are shown in the table below: annual income, first €35 300 taxed at 20%; balance taxed at 40%. Assume that no other deductions are made from their income."
  },
  {
   "id": "maths-2022-ol-p1-q3-b",
@@ -12598,7 +12618,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q3(b)",
-  "questionText": "Émile’s gross annual income is €43 450. Work out Émile’s net annual income",
+  "questionText": "Émile’s gross annual income is €43 450. Work out Émile’s net annual income.",
   "figureKey": "maths-2022-OL-paper-p010-i1",
   "labelKey": [],
   "tariffModel": {
@@ -12633,8 +12653,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q3-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q3-b",
+  "stem": "Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €3300. Their tax rates and bands are shown in the table below: annual income, first €35 300 taxed at 20%; balance taxed at 40%. Assume that no other deductions are made from their income."
  },
  {
   "id": "maths-2022-ol-p1-q3-c",
@@ -12645,46 +12666,95 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q3(c)",
-  "questionText": "Wei’s gross annual income is over €35 300, so she pays tax at both rates",
+  "questionText": "Wei’s gross annual income is over €35 300, so she pays tax at both rates. Wei is looking for a pay rise. She wants her net income to increase by €80 each month. Work out how much her gross annual income will need to increase by, in order for this to happen.",
   "figureKey": "maths-2022-OL-paper-p011-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2022-ol-p1-q3-c-r1",
-    "kind": "anyN",
-    "verbatim": "80 × 12 = €960 total annual increase",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. NOTE: Full Credit. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "80 × 12 = €960 total annual increase",
-      "60% of increase = €960",
-      "1% of increase = 960/60 = 16",
-      "100% of increase = 16 × 100 = [€]1600",
-      "Trial and improvement leading to solution",
-      "Need to show solving using a variable?"
-     ],
-     "perOptionSteps": [
-      3,
-      4,
-      3
-     ]
-    }
+    "id": "maths-2022-ol-p1-q3-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 80 × 12 = €960 total annual increase",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q3-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 60% of increase = €960",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q3-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 1% of increase = 960/60 = 16",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q3-c-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 100% of increase = 16 × 100 = [€]1600",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q3-c-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — Trial and improvement leading to solution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q3-c-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit, for example, finds 960",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q3-c-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Indicates 60%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q3-c-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Shows use of trial and improvement",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q3-c-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct answer based on monthly increase",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q3-c-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finds total 960 and indicates 60%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q3-c-solution-11",
+    "kind": "point",
+    "verbatim": "Full Credit — Using trial and improvement leading to correct answer",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q3-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q3-c",
+  "stem": "Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €3300. Their tax rates and bands are shown in the table below: annual income, first €35 300 taxed at 20%; balance taxed at 40%. Assume that no other deductions are made from their income."
  },
  {
   "id": "maths-2022-ol-p1-q4-a-i",
@@ -12695,7 +12765,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q4(a)(i)",
-  "questionText": "Work out the value of g(5)",
+  "questionText": "Work out the value of g(5).",
   "figureKey": "maths-2022-OL-paper-p012-i0",
   "labelKey": [],
   "tariffModel": {
@@ -12728,8 +12798,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q4-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q4-a-i",
+  "stem": "g(x) = x³ − 7x² + x − 12, where x ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q4-a-ii",
@@ -12740,7 +12811,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q4(a)(ii)",
-  "questionText": "Find g′(x), the derivative of g(x)",
+  "questionText": "Find g′(x), the derivative of g(x).",
   "figureKey": "maths-2022-OL-paper-p012-i1",
   "labelKey": [],
   "tariffModel": {
@@ -12768,8 +12839,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q4-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q4-a-ii",
+  "stem": "g(x) = x³ − 7x² + x − 12, where x ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q4-a-iii",
@@ -12780,7 +12852,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q4(a)(iii)",
-  "questionText": "(iii) g′(5) = 6. Use this to find the equation of the tangent to the curve y = g(x) when x = 5. Give your answer in the form ax + by + c = 0, where a, b, c∈ℝ",
+  "questionText": "g′(5) = 6. Use this to find the equation of the tangent to the curve y = g(x) when x = 5. Give your answer in the form ax + by + c = 0, where a, b, c ∈ ℝ.",
   "figureKey": "maths-2022-OL-paper-p012-i2",
   "labelKey": [],
   "tariffModel": {
@@ -12813,8 +12885,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q4-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q4-a-iii",
+  "stem": "g(x) = x³ − 7x² + x − 12, where x ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q4-b-i",
@@ -12825,7 +12898,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q4(b)(i), (ii)",
-  "questionText": "Using the graph, write down a value of x for which u′(x) is negative",
+  "questionText": "(i) Using the graph, write down a value of x for which u′(x) is negative. (ii) On the diagram above, draw the tangent to u(x) at the point (4, 2) and use the tangent that you draw to work out an estimate for the value of u′(4).",
   "figureKey": "maths-2022-OL-paper-p012-i3",
   "labelKey": [],
   "tariffModel": {
@@ -12858,8 +12931,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q4-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q4-b-i",
+  "stem": "The graph of the function y = u(x) is shown below, for 0 ≤ x ≤ 10, x ∈ ℝ. u′(x) is the derivative of u(x)."
  },
  {
   "id": "maths-2022-ol-p1-q5-b",
@@ -12870,7 +12944,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q5(b)",
-  "questionText": "A falcon can dive at a speed of up to 120 miles per hour. 1 mile is approximately 1∙6 kilometres",
+  "questionText": "A falcon can dive at a speed of up to 120 miles per hour. 1 mile is approximately 1·6 kilometres. Use this to work out how long it would take the falcon to travel 100 metres, when diving at this speed. Give your answer in seconds, correct to one decimal place.",
   "figureKey": "maths-2022-OL-paper-p014-i1",
   "labelKey": [],
   "tariffModel": {
@@ -12905,7 +12979,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-OL-ask-p1-q5-b"
  },
  {
@@ -12917,7 +12991,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q5(c)(i), (ii)",
-  "questionText": "the two values of x for which m(x) = 0 x= or x=",
+  "questionText": "Use the graphs to estimate each of the following, for 0 ≤ x ≤ 5: (i) the two values of x for which m(x) = 0; (ii) the range of values of x for which k(x) is less than m(x).",
   "figureKey": "maths-2022-OL-paper-p015-i0",
   "labelKey": [],
   "tariffModel": {
@@ -12952,8 +13026,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q5-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q5-c-i",
+  "stem": "The diagram below shows the graphs of the functions k(x) and m(x), for 0 ≤ x ≤ 5, x ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q6-a-i",
@@ -12964,7 +13039,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q6(a)(i)",
-  "questionText": "Find the value of T₁ , the first term of this sequence",
+  "questionText": "Find the value of T₁, the first term of this sequence.",
   "figureKey": "maths-2022-OL-paper-p016-i0",
   "labelKey": [],
   "tariffModel": {
@@ -12992,8 +13067,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q6-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q6-a-i",
+  "stem": "The nth term of an arithmetic sequence is given by the following expression, for n ∈ ℕ: Tₙ = −254 + (n − 1)(4)"
  },
  {
   "id": "maths-2022-ol-p1-q6-a-ii",
@@ -13004,7 +13080,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q6(a)(ii)",
-  "questionText": "Find the value of the common difference for this sequence (that is, T₂−T₁)",
+  "questionText": "Find the value of the common difference for this sequence (that is, T₂ − T₁).",
   "figureKey": "maths-2022-OL-paper-p016-i1",
   "labelKey": [],
   "tariffModel": {
@@ -13037,8 +13113,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q6-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q6-a-ii",
+  "stem": "The nth term of an arithmetic sequence is given by the following expression, for n ∈ ℕ: Tₙ = −254 + (n − 1)(4)"
  },
  {
   "id": "maths-2022-ol-p1-q6-b",
@@ -13049,7 +13126,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q6(b)",
-  "questionText": "Find the smallest value of n∈ℕ for which −254 + (n−1)(4) >0 Answer: n= ___________",
+  "questionText": "Find the smallest value of n ∈ ℕ for which −254 + (n − 1)(4) > 0",
   "figureKey": "maths-2022-OL-paper-p016-i2",
   "labelKey": [],
   "tariffModel": {
@@ -13082,8 +13159,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q6-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q6-b",
+  "stem": "The nth term of an arithmetic sequence is given by the following expression, for n ∈ ℕ: Tₙ = −254 + (n − 1)(4)"
  },
  {
   "id": "maths-2022-ol-p1-q6-c",
@@ -13094,7 +13172,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q6(c)",
-  "questionText": "The sum of the first n terms of this sequence is given by Sₙ = Solve the following equation for n∈ℕ. Note that n ≠ 0",
+  "questionText": "The sum of the first n terms of this sequence is given by Sₙ = (n/2)[2(−254) + 4n − 4]. Solve the following equation for n ∈ ℕ. Note that n ≠ 0. (n/2)[2(−254) + 4n − 4] = 0",
   "figureKey": "maths-2022-OL-paper-p017-i0",
   "labelKey": [],
   "tariffModel": {
@@ -13127,8 +13205,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q6-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q6-c",
+  "stem": "The nth term of an arithmetic sequence is given by the following expression, for n ∈ ℕ: Tₙ = −254 + (n − 1)(4)"
  },
  {
   "id": "maths-2022-ol-p1-q7-a-i",
@@ -13139,7 +13218,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q7(a)(i), (ii)",
-  "questionText": "Complete the table below to show the values of h(x) for the given values of x. Give each value of h(x) correct to the nearest whole number",
+  "questionText": "(i) Complete the table below to show the values of h(x) for the given values of x (0 to 6 minutes; the table gives 160 at 1 minute, 171 at 3 minutes and 169 at 6 minutes). Give each value of h(x) correct to the nearest whole number. (ii) Draw the graph of y = h(x) on the axes below, for 0 ≤ x ≤ 6, x ∈ ℝ. Note that the point A (6, 169) is on the graph.",
   "figureKey": "maths-2022-OL-paper-p018-i0",
   "labelKey": [],
   "tariffModel": {
@@ -13174,8 +13253,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q7-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q7-a-i",
+  "stem": "Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q7-b",
@@ -13186,7 +13266,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q7(b)",
-  "questionText": "Explain what the co-ordinates of the point A (6, 169) represent, in the context of Joseph’s heart-rate",
+  "questionText": "Explain what the co-ordinates of the point A (6, 169) represent, in the context of Joseph’s heart-rate.",
   "figureKey": "maths-2022-OL-paper-p018-i1",
   "labelKey": [],
   "tariffModel": {
@@ -13214,8 +13294,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q7-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q7-b",
+  "stem": "Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q7-c",
@@ -13226,7 +13307,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q7(c)",
-  "questionText": "Using the same axes and scales, continue your graph on the previous page to show the following information. From the point represented by A (6, 169), Joseph’s heart-rate: • stays at the same level for the next 2 minutes, and then • decreases at a steady rate of 10 BPM per minute for 2 minutes",
+  "questionText": "Using the same axes and scales, continue your graph on the previous page to show the following information. From the point represented by A (6, 169), Joseph’s heart-rate: stays at the same level for the next 2 minutes, and then decreases at a steady rate of 10 BPM per minute for 2 minutes.",
   "figureKey": "maths-2022-OL-paper-p018-i2",
   "labelKey": [],
   "tariffModel": {
@@ -13259,8 +13340,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q7-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q7-c",
+  "stem": "Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q7-d",
@@ -13271,7 +13353,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q7(d)",
-  "questionText": "During his training session, the number of calories per minute that Joseph is burning after x minutes can be modelled by c(x) as follows, where h(x) is Joseph’s heart-rate at that time: c(x) = 0∙1 h(x) −7 Using the information in the table or graph, work out c(6), the number of calories per minute that Joseph is burning 6 minutes after the start of the session",
+  "questionText": "During his training session, the number of calories per minute that Joseph is burning after x minutes can be modelled by c(x) as follows, where h(x) is Joseph’s heart-rate at that time: c(x) = 0·1 h(x) − 7. Using the information in the table or graph, work out c(6), the number of calories per minute that Joseph is burning 6 minutes after the start of the session.",
   "figureKey": "maths-2022-OL-paper-p019-i0",
   "labelKey": [],
   "tariffModel": {
@@ -13299,8 +13381,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q7-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q7-d",
+  "stem": "Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q7-e",
@@ -13311,7 +13394,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q7(e)",
-  "questionText": "Joseph has a smart watch that beeps every 15 seconds during the session. It beeps for the first time at exactly 2: 55 p.m., as Joseph starts his session. It beeps for the last time at exactly 3: 23 p.m., as Joseph finishes his session",
+  "questionText": "Joseph has a smart watch that beeps every 15 seconds during the session. It beeps for the first time at exactly 2:55 p.m., as Joseph starts his session. It beeps for the last time at exactly 3:23 p.m., as Joseph finishes his session. Work out how many times, in total, the smart watch beeps during the session, including the first and last beep.",
   "figureKey": "maths-2022-OL-paper-p019-i1",
   "labelKey": [],
   "tariffModel": {
@@ -13339,8 +13422,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q7-e"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q7-e",
+  "stem": "Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q7-f",
@@ -13351,7 +13435,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q7(f)",
-  "questionText": "Solve the equation h′(x) = − 1∙14x² + 5∙2x−0∙13 = 0 to find how long after the start of the session Joseph’s heart-rate is at a maximum, for 0 ≤ x ≤ 6, x∈ℝ. Give your answer in minutes, correct to 2 decimal places",
+  "questionText": "Solve the equation h′(x) = −1·14x² + 5·2x − 0·13 = 0 to find how long after the start of the session Joseph’s heart-rate is at a maximum, for 0 ≤ x ≤ 6, x ∈ ℝ. Give your answer in minutes, correct to 2 decimal places.",
   "figureKey": "maths-2022-OL-paper-p020-i0",
   "labelKey": [],
   "tariffModel": {
@@ -13384,8 +13468,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q7-f"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q7-f",
+  "stem": "Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q8-a-i",
@@ -13396,7 +13481,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q8(a)(i)",
-  "questionText": "Work out how many ml of acid are in 200 ml of liquid from Bottle A",
+  "questionText": "Work out how many ml of acid are in 200 ml of liquid from Bottle A.",
   "figureKey": "maths-2022-OL-paper-p021-i0",
   "labelKey": [],
   "tariffModel": {
@@ -13424,8 +13509,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q8-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q8-a-i",
+  "stem": "Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A, concentration 12%; Bottle B, concentration 5%. This means that, for example, in every 100 ml of liquid in Bottle A, there are 12 ml of acid."
  },
  {
   "id": "maths-2022-ol-p1-q8-a-ii",
@@ -13436,7 +13522,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q8(a)(ii)",
-  "questionText": "Jessica mixes 200 ml of liquid from Bottle A with 300 ml of liquid from Bottle B. Work out the overall concentration of the acid in Jessica’s mixture. Give your answer as a percentage",
+  "questionText": "Jessica mixes 200 ml of liquid from Bottle A with 300 ml of liquid from Bottle B. Work out the overall concentration of the acid in Jessica’s mixture. Give your answer as a percentage.",
   "figureKey": "maths-2022-OL-paper-p021-i1",
   "labelKey": [],
   "tariffModel": {
@@ -13469,8 +13555,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q8-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q8-a-ii",
+  "stem": "Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A, concentration 12%; Bottle B, concentration 5%. This means that, for example, in every 100 ml of liquid in Bottle A, there are 12 ml of acid."
  },
  {
   "id": "maths-2022-ol-p1-q8-a-iii",
@@ -13481,7 +13568,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q8(a)(iii)",
-  "questionText": "(iii) Explain why Jessica could not make a solution with a 4% concentration of acid by mixing liquid from Bottle A and Bottle B",
+  "questionText": "Explain why Jessica could not make a solution with a 4% concentration of acid by mixing liquid from Bottle A and Bottle B.",
   "figureKey": "maths-2022-OL-paper-p021-i2",
   "labelKey": [],
   "tariffModel": {
@@ -13509,8 +13596,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q8-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q8-a-iii",
+  "stem": "Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A, concentration 12%; Bottle B, concentration 5%. This means that, for example, in every 100 ml of liquid in Bottle A, there are 12 ml of acid."
  },
  {
   "id": "maths-2022-ol-p1-q8-a-iv",
@@ -13521,7 +13609,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q8(a)(iv)",
-  "questionText": "(iv) When she is making another mixture, Jessica makes a mistake in measuring. She wants to measure out 250 ml but she measures out 260 ml instead",
+  "questionText": "When she is making another mixture, Jessica makes a mistake in measuring. She wants to measure out 250 ml but she measures out 260 ml instead. Work out the percentage error in this measurement.",
   "figureKey": "maths-2022-OL-paper-p021-i3",
   "labelKey": [],
   "tariffModel": {
@@ -13554,8 +13642,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q8-a-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q8-a-iv",
+  "stem": "Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A, concentration 12%; Bottle B, concentration 5%. This means that, for example, in every 100 ml of liquid in Bottle A, there are 12 ml of acid."
  },
  {
   "id": "maths-2022-ol-p1-q8-b-i",
@@ -13566,7 +13655,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q8(b)(i)",
-  "questionText": "Write down the values of C, E, and F for a cube, and show that C−E+ F= 2 for these values",
+  "questionText": "Write down the values of C, E, and F for a cube, and show that C − E + F = 2 for these values. The value for E has already been filled in: E = 12.",
   "figureKey": "maths-2022-OL-paper-p022-i0",
   "labelKey": [],
   "tariffModel": {
@@ -13599,8 +13688,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q8-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q8-b-i",
+  "stem": "If a solid is made up of faces with straight edges, then the following identity is often true: C − E + F = 2, where C is the number of corners, E is the number of edges, and F is the number of faces."
  },
  {
   "id": "maths-2022-ol-p1-q8-b-ii",
@@ -13611,7 +13701,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q8(b)(ii)",
-  "questionText": "Each of the faces of a different solid is in the shape of a triangle of area 5 cm²",
+  "questionText": "Each of the faces of a different solid is in the shape of a triangle of area 5 cm². This solid has 12 corners (C) and 30 edges (E), and C − E + F = 2 for this solid. Work out the surface area of this solid, in cm².",
   "figureKey": "maths-2022-OL-paper-p022-i1",
   "labelKey": [],
   "tariffModel": {
@@ -13644,8 +13734,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q8-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q8-b-ii",
+  "stem": "If a solid is made up of faces with straight edges, then the following identity is often true: C − E + F = 2, where C is the number of corners, E is the number of edges, and F is the number of faces."
  },
  {
   "id": "maths-2022-ol-p1-q8-b-iii",
@@ -13656,7 +13747,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q8(b)(iii)",
-  "questionText": "(iii) The surface of a third solid is made up of h hexagons and p pentagons, where h, p∈ℕ. For this solid: (6h + 5p)/3 − p = 2 2 Use this equation to find the number of pentagons in the surface of this solid (that is, the value of p)",
+  "questionText": "The surface of a third solid is made up of h hexagons and p pentagons, where h, p ∈ ℕ. For this solid: (6h + 5p)/3 − (6h + 5p)/2 + h + p = 2. Use this equation to find the number of pentagons in the surface of this solid (that is, the value of p).",
   "figureKey": "maths-2022-OL-paper-p022-i2",
   "labelKey": [],
   "tariffModel": {
@@ -13691,8 +13782,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q8-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q8-b-iii",
+  "stem": "If a solid is made up of faces with straight edges, then the following identity is often true: C − E + F = 2, where C is the number of corners, E is the number of edges, and F is the number of faces."
  },
  {
   "id": "maths-2022-ol-p1-q9-a-i",
@@ -13703,7 +13795,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q9(a)(i)",
-  "questionText": "Use the graph to write down V(0), the initial value of Brian’s car, and V(1), the value of Brian’s car after 1 year",
+  "questionText": "Use the graph to write down V(0), the initial value of Brian’s car, and V(1), the value of Brian’s car after 1 year.",
   "figureKey": "maths-2022-OL-paper-p023-i0",
   "labelKey": [],
   "tariffModel": {
@@ -13731,8 +13823,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q9-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q9-a-i",
+  "stem": "Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year."
  },
  {
   "id": "maths-2022-ol-p1-q9-a-ii",
@@ -13743,7 +13836,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q9(a)(ii)",
-  "questionText": "Show that the value of the car will reduce by 20% in its first year, according to this model",
+  "questionText": "Show that the value of the car will reduce by 20% in its first year, according to this model.",
   "figureKey": "maths-2022-OL-paper-p023-i1",
   "labelKey": [],
   "tariffModel": {
@@ -13776,8 +13869,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q9-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q9-a-ii",
+  "stem": "Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year."
  },
  {
   "id": "maths-2022-ol-p1-q9-b-i",
@@ -13788,7 +13882,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q9(b)(i)",
-  "questionText": "Based on this model, write a formula for V(t), the value of Brian’s car after t years, in terms of the age of the car (t)",
+  "questionText": "Based on this model, write a formula for V(t), the value of Brian’s car after t years, in terms of the age of the car (t). Use the fact that the value decreases by 20% each year.",
   "figureKey": "maths-2022-OL-paper-p023-i2",
   "labelKey": [],
   "tariffModel": {
@@ -13821,8 +13915,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q9-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q9-b-i",
+  "stem": "Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year."
  },
  {
   "id": "maths-2022-ol-p1-q9-b-ii",
@@ -13833,7 +13928,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q9(b)(ii)",
-  "questionText": "Hence, or otherwise, work out the value of Brian’s car after 4 years, according to this model. Show your working out",
+  "questionText": "Hence, or otherwise, work out the value of Brian’s car after 4 years, according to this model. Show your working out.",
   "figureKey": "maths-2022-OL-paper-p023-i3",
   "labelKey": [],
   "tariffModel": {
@@ -13866,8 +13961,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q9-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q9-b-ii",
+  "stem": "Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year."
  },
  {
   "id": "maths-2022-ol-p1-q9-c-i",
@@ -13878,7 +13974,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q9(c)(i), (ii)",
-  "questionText": "Draw a line on the diagram above, passing through the first two points on the graph with whole-number values of t (t = 0 and t = 1). Continue your line until it reaches the horizontal axis",
+  "questionText": "The graph from part (a) is shown again below. A different (linear) model assumes that the value of the car reduces (depreciates) by a fixed amount each year. The value of the car will also reduce by 20% in its first year, according to this model. (i) Draw a line on the diagram above, passing through the first two points on the graph with whole-number values of t (t = 0 and t = 1). Continue your line until it reaches the horizontal axis. (ii) Hence, or otherwise, estimate T, the age of Brian’s car when its value would be €0, according to this new model.",
   "figureKey": "maths-2022-OL-paper-p024-i0",
   "labelKey": [],
   "tariffModel": {
@@ -13906,8 +14002,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q9-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q9-c-i",
+  "stem": "Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year."
  },
  {
   "id": "maths-2022-ol-p1-q9-d",
@@ -13918,7 +14015,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q9(d)",
-  "questionText": "Eva buys a new car that has a price of €19 445",
+  "questionText": "Eva buys a new car that has a price of €19 445. She pays 30% of this price as a deposit and makes repayments of €206·97 each month for the following 3 years. At the end of the 3 years, she pays an additional lump sum of €7389. Work out the total cost of the car for Eva.",
   "figureKey": "maths-2022-OL-paper-p024-i1",
   "labelKey": [],
   "tariffModel": {
@@ -13953,7 +14050,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-OL-ask-p1-q9-d"
  },
  {
@@ -13965,7 +14062,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q9(e)",
-  "questionText": "Eva drives her car home from the garage, a distance of 12 km",
+  "questionText": "Eva drives her car home from the garage, a distance of 12 km. Eva usually drives this journey at an average speed of 60 km/hr. On this day, there are roadworks, so her average speed is only 40 km/hr for the journey. Work out the percentage increase in the time it takes Eva to drive home, because of the roadworks.",
   "figureKey": "maths-2022-OL-paper-p024-i2",
   "labelKey": [],
   "tariffModel": {
@@ -13998,7 +14095,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-OL-ask-p1-q9-e"
  },
  {
@@ -14038,8 +14135,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q10-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q10-a-i",
+  "stem": "Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1·2, where h is the height of the ball, in metres, t seconds after being hit, and t ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q10-a-ii",
@@ -14050,7 +14148,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q10(a)(ii)",
-  "questionText": "(ii) The ball was caught after 2∙4 seconds. How high, in metres, was the ball when it was caught?",
+  "questionText": "The ball was caught after 2·4 seconds. How high, in metres, was the ball when it was caught?",
   "figureKey": "maths-2022-OL-paper-p025-i1",
   "labelKey": [],
   "tariffModel": {
@@ -14078,8 +14176,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q10-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q10-a-ii",
+  "stem": "Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1·2, where h is the height of the ball, in metres, t seconds after being hit, and t ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q10-a-iii",
@@ -14090,7 +14189,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q10(a)(iii)",
-  "questionText": "(iii) When the ball passed over the halfway line, it was at a height of 3∙2 metres and its height was decreasing",
+  "questionText": "When the ball passed over the halfway line, it was at a height of 3·2 metres and its height was decreasing. How many seconds after it was hit did the ball pass over the halfway line? Remember that h = −2t² + 5t + 1·2.",
   "figureKey": "maths-2022-OL-paper-p025-i2",
   "labelKey": [],
   "tariffModel": {
@@ -14125,8 +14224,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q10-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q10-a-iii",
+  "stem": "Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1·2, where h is the height of the ball, in metres, t seconds after being hit, and t ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q10-a-iv",
@@ -14137,7 +14237,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q10(a)(iv)",
-  "questionText": "Find dℎ dt and hence find how long it took the ball to reach its greatest height",
+  "questionText": "Find dh/dt and hence find how long it took the ball to reach its greatest height. Give your answer in seconds.",
   "figureKey": "maths-2022-OL-paper-p026-i0",
   "labelKey": [],
   "tariffModel": {
@@ -14170,8 +14270,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q10-a-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q10-a-iv",
+  "stem": "Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1·2, where h is the height of the ball, in metres, t seconds after being hit, and t ∈ ℝ."
  },
  {
   "id": "maths-2022-ol-p1-q10-b",
@@ -14182,7 +14283,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q10(b)",
-  "questionText": "Later in the game, Keith hit the ball again. This time, the height of the ball t seconds after it was hit could be modelled by a different quadratic function, y = k(t), where k is in metres",
+  "questionText": "Later in the game, Keith hit the ball again. This time, the height of the ball t seconds after it was hit could be modelled by a different quadratic function, y = k(t), where k is in metres. This time, the ball was 1 metre high when Keith hit it. Its greatest height was 5 metres, which it reached after 2 seconds. It hit the ground without being caught. Using the information above, write down the co-ordinates of three points that must be on the graph of y = k(t), and draw the graph of y = k(t) on the axes below, from when the ball is hit until it hits the ground.",
   "figureKey": "maths-2022-OL-paper-p026-i1",
   "labelKey": [],
   "tariffModel": {
@@ -14217,8 +14318,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q10-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q10-b",
+  "stem": "Keith plays hurling."
  },
  {
   "id": "maths-2022-ol-p1-q10-c-i",
@@ -14229,7 +14331,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q10(c)(i)",
-  "questionText": "Keith buys a new hurl. It usually costs €33. Keith gets a student discount of 15%. Work out the price Keith pays for the hurl",
+  "questionText": "Keith buys a new hurl. It usually costs €33. Keith gets a student discount of 15%. Work out the price Keith pays for the hurl.",
   "figureKey": "maths-2022-OL-paper-p027-i0",
   "labelKey": [],
   "tariffModel": {
@@ -14262,8 +14364,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q10-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q10-c-i",
+  "stem": "Keith plays hurling."
  },
  {
   "id": "maths-2022-ol-p1-q10-c-ii",
@@ -14274,7 +14377,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q10(c)(ii)",
-  "questionText": "Keith also buys a jersey. This costs €49∙50, including VAT at 23%. Work out the VAT on this jersey. Give your answer correct to the nearest cent",
+  "questionText": "Keith also buys a jersey. This costs €49·50, including VAT at 23%. Work out the VAT on this jersey. Give your answer correct to the nearest cent.",
   "figureKey": "maths-2022-OL-paper-p027-i1",
   "labelKey": [],
   "tariffModel": {
@@ -14307,8 +14410,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-OL-ask-p1-q10-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q10-c-ii",
+  "stem": "Keith plays hurling."
  },
  {
   "id": "maths-2022-ol-p2-q1-a-i",
@@ -63376,5 +63480,58 @@
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "stem": "Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway. City (m/g): A 22, B 27, C 24, D 16, E 15, F 21, G 30, H 17. Motorway (m/g): A 34, B 38, C 34, D 27, E 24, F 30, G 40, H 30."
+ },
+ {
+  "id": "maths-2022-ol-p1-q5-a",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q5-a",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 Q5(a)(i), (a)(ii)",
+  "questionText": "Write each of the following values in the form a × 10ⁿ where 1 ≤ a < 10 and n ∈ ℤ. (i) 1200 (ii) 0·27",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-q5-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1·2 × 10³",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q5-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 2·7 × 10⁻¹",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q5-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit, for example, a or n correct in one part, or one number correctly written in form a × 10ⁿ but where a < 1 or a > 10",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q5-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1000 or 1/10",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-ol-p1-q5-a-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — One part correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review."
  }
 ]

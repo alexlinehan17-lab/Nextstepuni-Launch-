@@ -1,8 +1,8 @@
 {
   "date": "2026-10-12",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1577,
-  "reviewedTasks": 1309,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1578,
+  "reviewedTasks": 1356,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 305,
+  "targetedRegressionTests": 307,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -767,5 +767,30 @@
     "schemePagesInspected": 30,
     "coverageBaseline": "1151/3474 asks covered, 0 orphans, 0 excluded, 2323 open",
     "validation": "Deck generation (1,577 built, 2 historical rejects), Atlas generation and --check (326 placements), audit --check-reviewed, scheme quote check of the 8 re-quoted or added cards, ten regression files (305/305), typecheck and diff whitespace check passed."
+  },
+  "ordinary2022p1": {
+    "paper": "2022 Ordinary Level Paper 1",
+    "paperFileid": "LC003GLP100EV.pdf",
+    "schemeFileid": "LC003GLP000EV.pdf",
+    "reviewedAt": "2026-10-12",
+    "independentlyReviewedTasks": 47,
+    "existingRuntimeCardsReviewed": 46,
+    "addedRuntimeCards": [
+      "maths-2022-ol-p1-q5-a"
+    ],
+    "restoredHeldBackCards": [],
+    "rowRepairs": [
+      "maths-2022-ol-p1-q1-a",
+      "maths-2022-ol-p1-q3-c"
+    ],
+    "historicalRejectsRemaining": 2,
+    "targetedRegressionTests": 307,
+    "previousRuntimeIdsRetained": 1577,
+    "offeredMarks": 380,
+    "candidateMarks": 220,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 29,
+    "coverageBaseline": "1153/3474 asks covered, 0 orphans, 0 excluded, 2321 open",
+    "validation": "Deck generation (1,578 built, 2 historical rejects), Atlas generation and --check (336 placements), audit --check-reviewed, scheme quote check of the 3 re-quoted or added cards, ten regression files (307/307), typecheck and diff whitespace check passed."
   }
 }

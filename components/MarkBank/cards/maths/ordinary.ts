@@ -2669,21 +2669,41 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q1-a", topicId: "maths-4-4", conceptId: "using-argand-diagram-two-other-complex",
     section: "B", questionRef: "2022 OL Paper 1 Q1(a), (b)",
-    questionText: "Using the Argand diagram: z₂ and z₃ are two other complex numbers. z₂ = −5 + 3i and z₃ = 4 −2i, where i² = −1",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    stem: "The complex number z₁ is shown on the Argand diagram below.",
+    questionText: "(a) Using the Argand diagram: (i) write down the values of z₁ and z̅₁, where z̅₁ is the complex conjugate of z₁; (ii) plot and label z̅₁ on the Argand diagram above. (b) z₂ and z₃ are two other complex numbers. z₂ = −5 + 3i and z₃ = 4 − 2i, where i² = −1. Plot and label z₂ and z₃ on the Argand diagram on the previous page.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
     rows: [
-    { id: "maths-2022-ol-p1-q1-a-r1", kind: "anyN", verbatim: "Work of merit, for example, real or imaginary part of z₁ or z₁̅correct, or real or imaginary part of z₂ or z₃ plotted correctly\n1 part correct", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. NOTE: Apply F* if labels omitted. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, real or imaginary part of z₁ or z₁̅correct, or real or imaginary part of z₂ or z₃ plotted correctly\n1 part correct","2 parts correct","Re\n4 parts correct"],"perOptionSteps":[4,4,7]} },
+    { id: "maths-2022-ol-p1-q1-a-solution-1", kind: "point", verbatim: "Model solution — z₁ = −2 − 3i and z̅₁ = −2 + 3i", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q1-a-solution-2", kind: "point", verbatim: "Low Partial Credit — Work of merit, for example, real or imaginary part of z₁ or z̅₁ correct, or real or imaginary part of z₂ or z₃ plotted correctly", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q1-a-solution-3", kind: "point", verbatim: "Low Partial Credit — 1 part correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q1-a-solution-4", kind: "point", verbatim: "Mid Partial Credit — 2 parts correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q1-a-solution-5", kind: "point", verbatim: "High Partial Credit — 4 parts correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q1-a-solution-6", kind: "point", verbatim: "Note — Apply F* if labels omitted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q1-a.png",
           "srcHash": "b2681d95655ef6aef5074e569d4e0b17",
-          "alt": "The question as printed on the paper — The complex number z₁ is shown on the Argand diagram below. Im 4 3 2 1 Re -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 z₁ -4 Using the Argand diagram: write down the values of z₁ and z₁̅ , where z₁̅ is the complex conjugate of… Full card prompt: Using the Argand diagram: z₂ and z₃ are two other complex numbers. z₂ = −5 + 3i and z₃ = 4 −2i, where i² = −1",
+          "alt": "The question as printed on the paper — The complex number z₁ is shown on the Argand diagram below. Im 4 3 2 1 Re -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 z₁ -4 Using the Argand diagram: write down the values of z₁ and z₁̅ , where z₁̅ is the complex conjugate of… Full card prompt: The complex number z₁ is shown on the Argand diagram below. (a) Using the Argand diagram: (i) write down the values of z₁ and z̅₁, where z̅₁ is the complex conjugate of z₁; (ii) plot and label z̅₁ on the Argand diagram above. (b) z₂ and z₃ are two other complex numbers. z₂ = −5 + 3i and z₃ = 4 − 2i, where i² = −1. Plot and label z₂ and z₃ on the Argand diagram on the previous page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -2699,21 +2719,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q1-c", topicId: "maths-3-1", conceptId: "write-form",
+    id: "maths-2022-ol-p1-q1-c", topicId: "maths-4-4", conceptId: "write-form",
     section: "B", questionRef: "2022 OL Paper 1 Q1(c)",
-    questionText: "Write z₂−z₃ in the form a + bi, where a, b∈ℝ, i² = −1, and hence find |z₂−z₃|",
+    stem: "The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = −5 + 3i and z₃ = 4 − 2i, where i² = −1.",
+    questionText: "Write z₂ − z₃ in the form a + bi, where a, b ∈ ℝ, i² = −1, and hence find |z₂ − z₃|.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q1-c-r1", kind: "anyN", verbatim: "Work of merit in one part, for example, some correct work in substitution for z₂−z₃, or formula for Modulus", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: 2 parts in the solution 1. Finds z₂−z₃ in form a + bi 2. Finds |z₂−z₃|. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in one part, for example, some correct work in substitution for z₂−z₃, or formula for Modulus","One part correct\nWork of merit in both parts","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q1-c",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q1-c.png",
           "srcHash": "ab005fed34624ab7b5f7b690c5b6f1e0",
-          "alt": "The question as printed on the paper — The complex number z₁ is shown on the Argand diagram below. Im 4 3 2 1 Re -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 z₁ -4 Using the Argand diagram: write down the values of z₁ and z₁̅ , where z₁̅ is the complex conjugate of… Full card prompt: Write z₂−z₃ in the form a + bi, where a, b∈ℝ, i² = −1, and hence find |z₂−z₃|",
+          "alt": "The question as printed on the paper — The complex number z₁ is shown on the Argand diagram below. Im 4 3 2 1 Re -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 z₁ -4 Using the Argand diagram: write down the values of z₁ and z₁̅ , where z₁̅ is the complex conjugate of… Full card prompt: The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = −5 + 3i and z₃ = 4 − 2i, where i² = −1. Write z₂ − z₃ in the form a + bi, where a, b ∈ ℝ, i² = −1, and hence find |z₂ − z₃|.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -2729,21 +2763,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q1-d", topicId: "maths-4-2", conceptId: "investigate-solution-equation-2iz",
+    id: "maths-2022-ol-p1-q1-d", topicId: "maths-4-4", conceptId: "investigate-solution-equation-2iz",
     section: "B", questionRef: "2022 OL Paper 1 Q1(d)",
-    questionText: "Investigate if z₃ = 4 −2i is a solution of the equation z² + 2iz−7i = 0",
+    stem: "The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = −5 + 3i and z₃ = 4 − 2i, where i² = −1.",
+    questionText: "Investigate if z₃ = 4 − 2i is a solution of the equation z² + 2iz − 7i = 0.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q1-d-r1", kind: "anyN", verbatim: "Work of merit, for example, substitutes in 4 −2i for z, or makes attempt to solve given equation\n- b formula without substitution or partially substituted", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. NOTE: Apply F* if finds 16 −15i, but fails to make a correct conclusion. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, substitutes in 4 −2i for z, or makes attempt to solve given equation\n- b formula without substitution or partially substituted","Fully substituted −b formula\nFully substitutes in 4 −2i for z, and carries out some further correct work"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q1-d",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q1-d.png",
           "srcHash": "9aba2b34ac0b6da1cf266b21042256ed",
-          "alt": "The question as printed on the paper — The complex number z₁ is shown on the Argand diagram below. Im 4 3 2 1 Re -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 z₁ -4 Using the Argand diagram: write down the values of z₁ and z₁̅ , where z₁̅ is the complex conjugate of… Full card prompt: Investigate if z₃ = 4 −2i is a solution of the equation z² + 2iz−7i = 0",
+          "alt": "The question as printed on the paper — The complex number z₁ is shown on the Argand diagram below. Im 4 3 2 1 Re -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 z₁ -4 Using the Argand diagram: write down the values of z₁ and z₁̅ , where z₁̅ is the complex conjugate of… Full card prompt: The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = −5 + 3i and z₃ = 4 − 2i, where i² = −1. Investigate if z₃ = 4 − 2i is a solution of the equation z² + 2iz − 7i = 0.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -2759,16 +2807,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q2-a", topicId: "maths-4-2", conceptId: "solve-equation",
     section: "B", questionRef: "2022 OL Paper 1 Q2(a)",
-    questionText: "Solve the following equation in x: 2(3x−5) + 8 = 4x−5",
+    questionText: "Solve the following equation in x: 2(3x − 5) + 8 = 4x − 5",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q2-a-r1", kind: "anyN", verbatim: "Carries out some relevant correct operation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Carries out some relevant correct operation","Correctly has x on one side and constants on other side\nOne error, for example, error in transposing but finishes correctly"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q2-a",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q2-a.png",
@@ -2789,16 +2850,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q2-b", topicId: "maths-3-1", conceptId: "write-form",
+    id: "maths-2022-ol-p1-q2-b", topicId: "maths-3-2", conceptId: "write-form",
     section: "B", questionRef: "2022 OL Paper 1 Q2(b)",
-    questionText: "Write (34)5 36 in the form 3k , where k∈ℝ",
+    questionText: "Write (3⁴)⁵/3⁶ in the form 3^k, where k ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q2-b-r1", kind: "anyN", verbatim: "Writes answer of 4,782,969 or 3486784401\nShows relevant understanding of indices, for example, indicates that 3⁶ = 3 × 3 × 3 × 3 × 3 × 3, or that power of 6 should be subtracted, or indicates 3⁴^×⁵\n14 or 20 written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. NOTE: Accept correct answer without supporting work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Writes answer of 4,782,969 or 3486784401\nShows relevant understanding of indices, for example, indicates that 3⁶ = 3 × 3 × 3 × 3 × 3 × 3, or that power of 6 should be subtracted, or indicates 3⁴^×⁵\n14 or 20 written"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q2-b.png",
@@ -2819,16 +2893,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q2-c", topicId: "maths-4-2", conceptId: "solve-simultaneous-equations-value-value",
     section: "B", questionRef: "2022 OL Paper 1 Q2(c)",
-    questionText: "Solve the simultaneous equations below to find the value of x and the value of y",
+    questionText: "Solve the simultaneous equations below to find the value of x and the value of y: 3x + 2y = 1; 7x + 5y = −2",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2022-ol-p1-q2-c-r1", kind: "anyN", verbatim: "Some work of merit, for example, relevant work in isolating one variable in one equation, or indicates multiplying one equation by a constant", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Note: 4 steps Involved in solution 1. Multiplies equation(s) so that 1 variable will cancel / express one variable in terms of the other 2. Produce one equation in one variable 3. Find value of one variable 4. Find value of second variable. Note: depending on method, step 3 may be automatically done when step 2 is completed. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Some work of merit, for example, relevant work in isolating one variable in one equation, or indicates multiplying one equation by a constant","2 steps correct","3 steps correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q2-c",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q2-c.png",
@@ -2849,21 +2936,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q3-a", topicId: "maths-3-3", conceptId: "joe-gross-annual-income-500-joe",
     section: "B", questionRef: "2022 OL Paper 1 Q3(a)",
-    questionText: "Joe’s gross annual income is €27 500. Joe only pays tax at the lower rate. Work out Joe’s net annual income",
+    stem: "Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €3300. Their tax rates and bands are shown in the table below: annual income, first €35 300 taxed at 20%; balance taxed at 40%. Assume that no other deductions are made from their income.",
+    questionText: "Joe’s gross annual income is €27 500. Joe only pays tax at the lower rate. Work out Joe’s net annual income.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q3-a-r1", kind: "anyN", verbatim: "Some relevant operation, eg, 0∙2, 0∙8\nFinds 5500", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: 3 steps Involved in solution 1. Finds 5500 2. Correctly handles gross tax and tax credits 3. Finishes correctly to get 25,300. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some relevant operation, eg, 0∙2, 0∙8\nFinds 5500","Two steps correct (Using €35300 as the gross annual income is treated as work of merit in step 1 rather than a misreading)\nFinds €22,000"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q3-a.png",
           "srcHash": "2fc14103e03f3463c052883450c2227d",
-          "alt": "The question as printed on the paper — Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €30. Their tax rates and bands are shown in the table below. Assume that no other deductions are made from their income. Annual Income… Full card prompt: Joe’s gross annual income is €27 500. Joe only pays tax at the lower rate. Work out Joe’s net annual income",
+          "alt": "The question as printed on the paper — Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €30. Their tax rates and bands are shown in the table below. Assume that no other deductions are made from their income. Annual Income… Full card prompt: Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €3300. Their tax rates and bands are shown in the table below: annual income, first €35 300 taxed at 20%; balance taxed at 40%. Assume that no other deductions are made from their income. Joe’s gross annual income is €27 500. Joe only pays tax at the lower rate. Work out Joe’s net annual income.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -2879,21 +2980,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q3-b", topicId: "maths-3-3", conceptId: "mile-gross-annual-income-450-work",
     section: "B", questionRef: "2022 OL Paper 1 Q3(b)",
-    questionText: "Émile’s gross annual income is €43 450. Work out Émile’s net annual income",
+    stem: "Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €3300. Their tax rates and bands are shown in the table below: annual income, first €35 300 taxed at 20%; balance taxed at 40%. Assume that no other deductions are made from their income.",
+    questionText: "Émile’s gross annual income is €43 450. Work out Émile’s net annual income.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q3-b-r1", kind: "anyN", verbatim: "Some relevant operation, or 0.2 or 0.4\n1 step correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: 4 steps Involved in solution 1. Finds tax at 20% 2. Finds tax at 40% 3. Finds gross tax 4. Finishes correctly. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some relevant operation, or 0.2 or 0.4\n1 step correct","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q3-b",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q3-b.png",
           "srcHash": "500947626e185edf0d5b3f5c896ad445",
-          "alt": "The question as printed on the paper — Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €30. Their tax rates and bands are shown in the table below. Assume that no other deductions are made from their income. Annual Income… Full card prompt: Émile’s gross annual income is €43 450. Work out Émile’s net annual income",
+          "alt": "The question as printed on the paper — Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €30. Their tax rates and bands are shown in the table below. Assume that no other deductions are made from their income. Annual Income… Full card prompt: Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €3300. Their tax rates and bands are shown in the table below: annual income, first €35 300 taxed at 20%; balance taxed at 40%. Assume that no other deductions are made from their income. Émile’s gross annual income is €43 450. Work out Émile’s net annual income.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -2909,21 +3024,45 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q3-c", topicId: "maths-3-3", conceptId: "wei-gross-annual-income-over-300",
     section: "B", questionRef: "2022 OL Paper 1 Q3(c)",
-    questionText: "Wei’s gross annual income is over €35 300, so she pays tax at both rates",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €3300. Their tax rates and bands are shown in the table below: annual income, first €35 300 taxed at 20%; balance taxed at 40%. Assume that no other deductions are made from their income.",
+    questionText: "Wei’s gross annual income is over €35 300, so she pays tax at both rates. Wei is looking for a pay rise. She wants her net income to increase by €80 each month. Work out how much her gross annual income will need to increase by, in order for this to happen.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p1-q3-c-r1", kind: "anyN", verbatim: "80 × 12 = €960 total annual increase", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. NOTE: Full Credit. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["80 × 12 = €960 total annual increase","60% of increase = €960","1% of increase = 960/60 = 16","100% of increase = 16 × 100 = [€]1600","Trial and improvement leading to solution","Need to show solving using a variable?"],"perOptionSteps":[3,4,3]} },
+    { id: "maths-2022-ol-p1-q3-c-solution-1", kind: "point", verbatim: "Model solution — 80 × 12 = €960 total annual increase", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q3-c-solution-2", kind: "point", verbatim: "Model solution — 60% of increase = €960", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q3-c-solution-3", kind: "point", verbatim: "Model solution — 1% of increase = 960/60 = 16", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q3-c-solution-4", kind: "point", verbatim: "Model solution — 100% of increase = 16 × 100 = [€]1600", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q3-c-solution-5", kind: "point", verbatim: "Model solution — Trial and improvement leading to solution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q3-c-solution-6", kind: "point", verbatim: "Low Partial Credit — Work of merit, for example, finds 960", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q3-c-solution-7", kind: "point", verbatim: "Low Partial Credit — Indicates 60%", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q3-c-solution-8", kind: "point", verbatim: "Low Partial Credit — Shows use of trial and improvement", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q3-c-solution-9", kind: "point", verbatim: "High Partial Credit — Correct answer based on monthly increase", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q3-c-solution-10", kind: "point", verbatim: "High Partial Credit — Finds total 960 and indicates 60%", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q3-c-solution-11", kind: "point", verbatim: "Full Credit — Using trial and improvement leading to correct answer", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q3-c",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q3-c.png",
           "srcHash": "0ff9d5085a6e128a19f79cc8626418eb",
-          "alt": "The question as printed on the paper — Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €30. Their tax rates and bands are shown in the table below. Assume that no other deductions are made from their income. Annual Income… Full card prompt: Wei’s gross annual income is over €35 300, so she pays tax at both rates",
+          "alt": "The question as printed on the paper — Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €30. Their tax rates and bands are shown in the table below. Assume that no other deductions are made from their income. Annual Income… Full card prompt: Joe, Émile, and Wei are all PAYE workers. Each of them has an annual tax credit of €3300. Their tax rates and bands are shown in the table below: annual income, first €35 300 taxed at 20%; balance taxed at 40%. Assume that no other deductions are made from their income. Wei’s gross annual income is over €35 300, so she pays tax at both rates. Wei is looking for a pay rise. She wants her net income to increase by €80 each month. Work out how much her gross annual income will need to increase by, in order for this to happen.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -2939,16 +3078,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q4-a-i", topicId: "maths-5-2", conceptId: "work-out-value",
+    id: "maths-2022-ol-p1-q4-a-i", topicId: "maths-5-1", conceptId: "work-out-value",
     section: "B", questionRef: "2022 OL Paper 1 Q4(a)(i)",
-    questionText: "Work out the value of g(5)",
+    stem: "g(x) = x³ − 7x² + x − 12, where x ∈ ℝ.",
+    questionText: "Work out the value of g(5).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q4-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. NOTE: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, some correct substitution","Fully correct substitution"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q4-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q4-a-i.png",
@@ -2969,16 +3122,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q4-a-ii", topicId: "maths-5-2", conceptId: "derivative",
     section: "B", questionRef: "2022 OL Paper 1 Q4(a)(ii)",
-    questionText: "Find g′(x), the derivative of g(x)",
+    stem: "g(x) = x³ − 7x² + x − 12, where x ∈ ℝ.",
+    questionText: "Find g′(x), the derivative of g(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q4-a-ii-r1", kind: "anyN", verbatim: "Some correct differentiation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Some correct differentiation"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q4-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q4-a-ii.png",
@@ -2999,16 +3166,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q4-a-iii", topicId: "maths-5-2", conceptId: "iii-equation-tangent-curve-when-form",
     section: "B", questionRef: "2022 OL Paper 1 Q4(a)(iii)",
-    questionText: "(iii) g′(5) = 6. Use this to find the equation of the tangent to the curve y = g(x) when x = 5. Give your answer in the form ax + by + c = 0, where a, b, c∈ℝ",
+    stem: "g(x) = x³ − 7x² + x − 12, where x ∈ ℝ.",
+    questionText: "g′(5) = 6. Use this to find the equation of the tangent to the curve y = g(x) when x = 5. Give your answer in the form ax + by + c = 0, where a, b, c ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q4-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, identifies m, or x₁, or y₁\nEquation of a line formula with some or no substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. NOTE: Full credit minus 1, fails to rearrange equation of the line. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, identifies m, or x₁, or y₁\nEquation of a line formula with some or no substitution","Fully correct substitution"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q4-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q4-a-iii.png",
@@ -3029,21 +3210,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q4-b-i", topicId: "maths-5-2", conceptId: "using-graph-write-down-value-which",
     section: "B", questionRef: "2022 OL Paper 1 Q4(b)(i), (ii)",
-    questionText: "Using the graph, write down a value of x for which u′(x) is negative",
+    stem: "The graph of the function y = u(x) is shown below, for 0 ≤ x ≤ 10, x ∈ ℝ. u′(x) is the derivative of u(x).",
+    questionText: "(i) Using the graph, write down a value of x for which u′(x) is negative. (ii) On the diagram above, draw the tangent to u(x) at the point (4, 2) and use the tangent that you draw to work out an estimate for the value of u′(4).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q4-b-i-r1", kind: "anyN", verbatim: "1 part correct\nIndicates (4,2) on the diagram\nSlope formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["1 part correct\nIndicates (4,2) on the diagram\nSlope formula","1 part correct plus work of merit in the other"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[13,14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q4-b-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q4-b-i.png",
           "srcHash": "858daa551bdb4ff6221fc6f3a6a7b893",
-          "alt": "The question as printed on the paper — The graph of the function y = u(x) is shown below, for 0 ≤ x ≤ 10, x∈ℝ. y 3 2 y = u(x) 1 x 2 4 6 8 10 -1 -2 -3 u′(x) is the derivative of u(x). Using the graph, write down a value of x for which u′(x) is negative. x =… Full card prompt: Using the graph, write down a value of x for which u′(x) is negative",
+          "alt": "The question as printed on the paper — The graph of the function y = u(x) is shown below, for 0 ≤ x ≤ 10, x∈ℝ. y 3 2 y = u(x) 1 x 2 4 6 8 10 -1 -2 -3 u′(x) is the derivative of u(x). Using the graph, write down a value of x for which u′(x) is negative. x =… Full card prompt: The graph of the function y = u(x) is shown below, for 0 ≤ x ≤ 10, x ∈ ℝ. u′(x) is the derivative of u(x). (i) Using the graph, write down a value of x for which u′(x) is negative. (ii) On the diagram above, draw the tangent to u(x) at the point (4, 2) and use the tangent that you draw to work out an estimate for the value of u′(4).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3059,21 +3254,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q5-b", topicId: "maths-3-3", conceptId: "falcon-can-dive-speed-120-miles",
     section: "B", questionRef: "2022 OL Paper 1 Q5(b)",
-    questionText: "A falcon can dive at a speed of up to 120 miles per hour. 1 mile is approximately 1∙6 kilometres",
+    questionText: "A falcon can dive at a speed of up to 120 miles per hour. 1 mile is approximately 1·6 kilometres. Use this to work out how long it would take the falcon to travel 100 metres, when diving at this speed. Give your answer in seconds, correct to one decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q5-b-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant use of 60", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: 4 steps Involved in solution 1. Convert hours to seconds 2. Convert miles to km or metres 3. Time for 1 metre 4. Time for 10 metres. NOTE: Apply F* if fails to round off,. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, relevant use of 60","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q5-b.png",
           "srcHash": "9b8c264648ac056183fd806063d8ba1a",
-          "alt": "The question as printed on the paper — A falcon can dive at a speed of up to 120 miles per hour. 1 mile is approximately 1∙6 kilometres. Use this to work out how long it would take the falcon to travel 100 metres, when diving at this speed. Give your answer… Full card prompt: A falcon can dive at a speed of up to 120 miles per hour. 1 mile is approximately 1∙6 kilometres",
+          "alt": "The question as printed on the paper — A falcon can dive at a speed of up to 120 miles per hour. 1 mile is approximately 1∙6 kilometres. Use this to work out how long it would take the falcon to travel 100 metres, when diving at this speed. Give your answer… Full card prompt: A falcon can dive at a speed of up to 120 miles per hour. 1 mile is approximately 1·6 kilometres. Use this to work out how long it would take the falcon to travel 100 metres, when diving at this speed. Give your answer in seconds, correct to one decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3089,21 +3297,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q5-c-i", topicId: "maths-3-3", conceptId: "two-values-which",
+    id: "maths-2022-ol-p1-q5-c-i", topicId: "maths-5-1", conceptId: "two-values-which",
     section: "B", questionRef: "2022 OL Paper 1 Q5(c)(i), (ii)",
-    questionText: "the two values of x for which m(x) = 0 x= or x=",
+    stem: "The diagram below shows the graphs of the functions k(x) and m(x), for 0 ≤ x ≤ 5, x ∈ ℝ.",
+    questionText: "Use the graphs to estimate each of the following, for 0 ≤ x ≤ 5: (i) the two values of x for which m(x) = 0; (ii) the range of values of x for which k(x) is less than m(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q5-c-i-r1", kind: "anyN", verbatim: "Work of merit, for example, one value correct in (i), or a value of x in (ii) for which k(x) < m(x)\nPoint(s) marked on graph for one or both parts", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: 4 values correct, but includes endpoints in the range, ie 2 ≤ x ≤ 3∙5; “From 2 to 3∙5”. NOTE: 4 values are required, the 2 values in (i) and the 2 endpoints in (ii). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, one value correct in (i), or a value of x in (ii) for which k(x) < m(x)\nPoint(s) marked on graph for one or both parts","2 values correct","3 values correct\n4 values correct but no range indicated"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q5-c-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q5-c-i.png",
           "srcHash": "3b7f4ad67e11c6b1b961efef96729af2",
-          "alt": "The question as printed on the paper — The diagram below shows the graphs of the functions k(x) and m(x), for 0 ≤ x ≤ 5, x∈ℝ. y 3 y = k(x) 2 1 x 1 2 3 4 5 y = m(x) -1 -2 -3 Use the graphs to estimate each of the following, for 0 ≤ x ≤ 5: the two values of x… Full card prompt: the two values of x for which m(x) = 0 x= or x=",
+          "alt": "The question as printed on the paper — The diagram below shows the graphs of the functions k(x) and m(x), for 0 ≤ x ≤ 5, x∈ℝ. y 3 y = k(x) 2 1 x 1 2 3 4 5 y = m(x) -1 -2 -3 Use the graphs to estimate each of the following, for 0 ≤ x ≤ 5: the two values of x… Full card prompt: The diagram below shows the graphs of the functions k(x) and m(x), for 0 ≤ x ≤ 5, x ∈ ℝ. Use the graphs to estimate each of the following, for 0 ≤ x ≤ 5: (i) the two values of x for which m(x) = 0; (ii) the range of values of x for which k(x) is less than m(x).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3119,16 +3341,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q6-a-i", topicId: "maths-4-1", conceptId: "value-first-term-sequence",
     section: "B", questionRef: "2022 OL Paper 1 Q6(a)(i)",
-    questionText: "Find the value of T₁ , the first term of this sequence",
+    stem: "The nth term of an arithmetic sequence is given by the following expression, for n ∈ ℕ: Tₙ = −254 + (n − 1)(4)",
+    questionText: "Find the value of T₁, the first term of this sequence.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q6-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, substitutes 1 for n, or indicates n = 1\nTₙ formula written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. NOTE: Accept correct answer without supporting work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, substitutes 1 for n, or indicates n = 1\nTₙ formula written"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q6-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q6-a-i.png",
@@ -3149,21 +3385,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q6-a-ii", topicId: "maths-4-1", conceptId: "value-common-difference-sequence",
     section: "B", questionRef: "2022 OL Paper 1 Q6(a)(ii)",
-    questionText: "Find the value of the common difference for this sequence (that is, T₂−T₁)",
+    stem: "The nth term of an arithmetic sequence is given by the following expression, for n ∈ ℕ: Tₙ = −254 + (n − 1)(4)",
+    questionText: "Find the value of the common difference for this sequence (that is, T₂ − T₁).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q6-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, substitutes 2 for n, or indicates n = 2\nBrings down answer from (a)(i)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. NOTE: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, substitutes 2 for n, or indicates n = 2\nBrings down answer from (a)(i)","Finds T₂\nError in finding T₂, but continues to find d correctly"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q6-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q6-a-ii.png",
           "srcHash": "e1cb227d0bfa11a13b987560f4e62bf4",
-          "alt": "The question as printed on the paper — The n th term of an arithmetic sequence is given by the following expression, for n∈ℕ: Tₙ = −254 + (n−1)(4) Find the value of T₁ , the first term of this sequence. Find the value of the common difference for this… Full card prompt: Find the value of the common difference for this sequence (that is, T₂−T₁)",
+          "alt": "The question as printed on the paper — The n th term of an arithmetic sequence is given by the following expression, for n∈ℕ: Tₙ = −254 + (n−1)(4) Find the value of T₁ , the first term of this sequence. Find the value of the common difference for this… Full card prompt: The nth term of an arithmetic sequence is given by the following expression, for n ∈ ℕ: Tₙ = −254 + (n − 1)(4) Find the value of the common difference for this sequence (that is, T₂ − T₁).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3179,16 +3429,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q6-b", topicId: "maths-3-1", conceptId: "smallest-value-which-254",
+    id: "maths-2022-ol-p1-q6-b", topicId: "maths-4-3", conceptId: "smallest-value-which-254",
     section: "B", questionRef: "2022 OL Paper 1 Q6(b)",
-    questionText: "Find the smallest value of n∈ℕ for which −254 + (n−1)(4) >0 Answer: n=",
+    stem: "The nth term of an arithmetic sequence is given by the following expression, for n ∈ ℕ: Tₙ = −254 + (n − 1)(4)",
+    questionText: "Find the smallest value of n ∈ ℕ for which −254 + (n − 1)(4) > 0",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q6-b-r1", kind: "anyN", verbatim: "One correct operation carried out\nTrial and Improvement", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. NOTE: Leaves answer as 64∙5, apply F*. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["One correct operation carried out\nTrial and Improvement","Correctly isolates n (i.e. 4n > 254 + 4)\nOne error, and finishes correctly"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q6-b.png",
@@ -3209,21 +3473,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q6-c", topicId: "maths-4-2", conceptId: "sum-first-terms-sequence-given-solve",
     section: "B", questionRef: "2022 OL Paper 1 Q6(c)",
-    questionText: "The sum of the first n terms of this sequence is given by Sₙ = Solve the following equation for n∈ℕ. Note that n ≠ 0",
+    stem: "The nth term of an arithmetic sequence is given by the following expression, for n ∈ ℕ: Tₙ = −254 + (n − 1)(4)",
+    questionText: "The sum of the first n terms of this sequence is given by Sₙ = (n/2)[2(−254) + 4n − 4]. Solve the following equation for n ∈ ℕ. Note that n ≠ 0. (n/2)[2(−254) + 4n − 4] = 0",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q6-c-r1", kind: "anyN", verbatim: "Work of merit, for example, sets second factor = 0, or some correct work in simplifying second factor\nAny correct multiplication\nIndicates n/2 = 0\nTrial and Improvement", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, sets second factor = 0, or some correct work in simplifying second factor\nAny correct multiplication\nIndicates n/2 = 0\nTrial and Improvement","One error, otherwise correct"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q6-c",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q6-c.png",
           "srcHash": "4dbacd48c4b7352120eb152f423856ce",
-          "alt": "The question as printed on the paper — The n th term of an arithmetic sequence is given by the following expression, for n∈ℕ: Tₙ = −254 + (n−1)(4) Find the value of T₁ , the first term of this sequence. Find the value of the common difference for this… Full card prompt: The sum of the first n terms of this sequence is given by Sₙ = Solve the following equation for n∈ℕ. Note that n ≠ 0",
+          "alt": "The question as printed on the paper — The n th term of an arithmetic sequence is given by the following expression, for n∈ℕ: Tₙ = −254 + (n−1)(4) Find the value of T₁ , the first term of this sequence. Find the value of the common difference for this… Full card prompt: The nth term of an arithmetic sequence is given by the following expression, for n ∈ ℕ: Tₙ = −254 + (n − 1)(4) The sum of the first n terms of this sequence is given by Sₙ = (n/2)[2(−254) + 4n − 4]. Solve the following equation for n ∈ ℕ. Note that n ≠ 0. (n/2)[2(−254) + 4n − 4] = 0",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3239,21 +3517,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q7-a-i", topicId: "maths-5-1", conceptId: "complete-table-values-given-values-each",
     section: "B", questionRef: "2022 OL Paper 1 Q7(a)(i), (ii)",
-    questionText: "Complete the table below to show the values of h(x) for the given values of x. Give each value of h(x) correct to the nearest whole number",
+    stem: "Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ.",
+    questionText: "(i) Complete the table below to show the values of h(x) for the given values of x (0 to 6 minutes; the table gives 160 at 1 minute, 171 at 3 minutes and 169 at 6 minutes). Give each value of h(x) correct to the nearest whole number. (ii) Draw the graph of y = h(x) on the axes below, for 0 ≤ x ≤ 6, x ∈ ℝ. Note that the point A (6, 169) is on the graph.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2022-ol-p1-q7-a-i-r1", kind: "anyN", verbatim: "1 element correct", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit –1: 9 elements correct, and an appropriate curve, including A. Note: Solution requires 11 elements 4 values in table, and 6 integer- valued points to be plotted, joined by an appropriate curve (which must include the point A). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["1 element correct","4 elements correct","8 elements correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q7-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q7-a-i.png",
           "srcHash": "ade5d4be8f4f1045a4a9839f68df0e32",
-          "alt": "The question as printed on the paper — Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = − 0∙38x³ +… Full card prompt: Complete the table below to show the values of h(x) for the given values of x. Give each value of h(x) correct to the nearest whole number",
+          "alt": "The question as printed on the paper — Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = − 0∙38x³ +… Full card prompt: Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ. (i) Complete the table below to show the values of h(x) for the given values of x (0 to 6 minutes; the table gives 160 at 1 minute, 171 at 3 minutes and 169 at 6 minutes). Give each value of h(x) correct to the nearest whole number. (ii) Draw the graph of y = h(x) on the axes below, for 0 ≤ x ≤ 6, x ∈ ℝ. Note that the point A (6, 169) is on the graph.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3269,21 +3561,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q7-b", topicId: "maths-2-2", conceptId: "explain-what-ordinates-point-169-represent",
+    id: "maths-2022-ol-p1-q7-b", topicId: "maths-5-1", conceptId: "explain-what-ordinates-point-169-represent",
     section: "B", questionRef: "2022 OL Paper 1 Q7(b)",
-    questionText: "Explain what the co-ordinates of the point A (6, 169) represent, in the context of Joseph’s heart-rate",
+    stem: "Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ.",
+    questionText: "Explain what the co-ordinates of the point A (6, 169) represent, in the context of Joseph’s heart-rate.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q7-b-r1", kind: "anyN", verbatim: "“6 minutes after start of session”\nor/“heart rate is 169 BPM”", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["“6 minutes after start of session”\nor/“heart rate is 169 BPM”"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q7-b",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q7-b.png",
           "srcHash": "9ad3d73ad1415b019902fd75fa807ad6",
-          "alt": "The question as printed on the paper — Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = − 0∙38x³ +… Full card prompt: Explain what the co-ordinates of the point A (6, 169) represent, in the context of Joseph’s heart-rate",
+          "alt": "The question as printed on the paper — Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = − 0∙38x³ +… Full card prompt: Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ. Explain what the co-ordinates of the point A (6, 169) represent, in the context of Joseph’s heart-rate.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3299,21 +3605,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q7-c", topicId: "maths-5-1", conceptId: "using-same-axes-scales-continue-graph",
     section: "B", questionRef: "2022 OL Paper 1 Q7(c)",
-    questionText: "Using the same axes and scales, continue your graph on the previous page to show the following information. From the point represented by A (6, 169), Joseph’s heart-rate: • stays at the same level for the next 2 minutes, and then • decreases at a steady rate of 10 BPM per minute for 2 minutes",
+    stem: "Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ.",
+    questionText: "Using the same axes and scales, continue your graph on the previous page to show the following information. From the point represented by A (6, 169), Joseph’s heart-rate: stays at the same level for the next 2 minutes, and then decreases at a steady rate of 10 BPM per minute for 2 minutes.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q7-c-r1", kind: "anyN", verbatim: "1 correct point, written or plotted on graph", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["1 correct point, written or plotted on graph","Deals correctly with 6 ≤ x ≤ 8, or with 8 ≤ x ≤ 10\nCorrect plots for x = (7), 8, (9), and 10, but not joined appropriately"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[19,20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q7-c",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q7-c.png",
           "srcHash": "fd4545f98c71569ec1b125dce838e1b1",
-          "alt": "The question as printed on the paper — Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = − 0∙38x³ +… Full card prompt: Using the same axes and scales, continue your graph on the previous page to show the following information. From the point represented by A (6, 169), Joseph’s heart-rate: • stays at the same level for the next 2 minutes, and then • decreases at a steady rate of 10 BPM per minute for 2 minutes",
+          "alt": "The question as printed on the paper — Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = − 0∙38x³ +… Full card prompt: Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ. Using the same axes and scales, continue your graph on the previous page to show the following information. From the point represented by A (6, 169), Joseph’s heart-rate: stays at the same level for the next 2 minutes, and then decreases at a steady rate of 10 BPM per minute for 2 minutes.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3329,21 +3650,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q7-d", topicId: "maths-5-1", conceptId: "during-his-training-session-number-calories",
     section: "B", questionRef: "2022 OL Paper 1 Q7(d)",
-    questionText: "During his training session, the number of calories per minute that Joseph is burning after x minutes can be modelled by c(x) as follows, where h(x) is Joseph’s heart-rate at that time: c(x) = 0∙1 h(x) −7 Using the information in the table or graph, work out c(6), the number of calories per minute that Joseph is burning 6 minutes after the start of the session",
+    stem: "Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ.",
+    questionText: "During his training session, the number of calories per minute that Joseph is burning after x minutes can be modelled by c(x) as follows, where h(x) is Joseph’s heart-rate at that time: c(x) = 0·1 h(x) − 7. Using the information in the table or graph, work out c(6), the number of calories per minute that Joseph is burning 6 minutes after the start of the session.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q7-d-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates h(6), or mention of 169", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Time, in minutes (x). Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, indicates h(6), or mention of 169"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q7-d",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q7-d.png",
           "srcHash": "a655abd14eac2179da282581fd01c8e5",
-          "alt": "The question as printed on the paper — Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = − 0∙38x³ +… Full card prompt: During his training session, the number of calories per minute that Joseph is burning after x minutes can be modelled by c(x) as follows, where h(x) is Joseph’s heart-rate at that time: c(x) = 0∙1 h(x) −7 Using the information in the table or graph, work out c(6), the number of calories per minute that Joseph is burning 6 minutes after the start of the session",
+          "alt": "The question as printed on the paper — Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = − 0∙38x³ +… Full card prompt: Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ. During his training session, the number of calories per minute that Joseph is burning after x minutes can be modelled by c(x) as follows, where h(x) is Joseph’s heart-rate at that time: c(x) = 0·1 h(x) − 7. Using the information in the table or graph, work out c(6), the number of calories per minute that Joseph is burning 6 minutes after the start of the session.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3359,21 +3694,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q7-e", topicId: "maths-5-1", conceptId: "joseph-has-smart-watch-beeps-every",
+    id: "maths-2022-ol-p1-q7-e", topicId: "maths-3-3", conceptId: "joseph-has-smart-watch-beeps-every",
     section: "B", questionRef: "2022 OL Paper 1 Q7(e)",
-    questionText: "Joseph has a smart watch that beeps every 15 seconds during the session. It beeps for the first time at exactly 2: 55 p.m., as Joseph starts his session. It beeps for the last time at exactly 3: 23 p.m., as Joseph finishes his session",
+    stem: "Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ.",
+    questionText: "Joseph has a smart watch that beeps every 15 seconds during the session. It beeps for the first time at exactly 2:55 p.m., as Joseph starts his session. It beeps for the last time at exactly 3:23 p.m., as Joseph finishes his session. Work out how many times, in total, the smart watch beeps during the session, including the first and last beep.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q7-e-r1", kind: "anyN", verbatim: "Work of merit, for example, finds 4 or 28 or 1680\n112 or 114 without work", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit –1: Answer of 112 or 114, with work. NOTE: Accept correct answer of 113 without supporting work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, finds 4 or 28 or 1680\n112 or 114 without work"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q7-e",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q7-e.png",
           "srcHash": "0da6c1e982fb1ab79915a79f4f84c103",
-          "alt": "The question as printed on the paper — Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = − 0∙38x³ +… Full card prompt: Joseph has a smart watch that beeps every 15 seconds during the session. It beeps for the first time at exactly 2: 55 p.m., as Joseph starts his session. It beeps for the last time at exactly 3: 23 p.m., as Joseph finishes his session",
+          "alt": "The question as printed on the paper — Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = − 0∙38x³ +… Full card prompt: Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ. Joseph has a smart watch that beeps every 15 seconds during the session. It beeps for the first time at exactly 2:55 p.m., as Joseph starts his session. It beeps for the last time at exactly 3:23 p.m., as Joseph finishes his session. Work out how many times, in total, the smart watch beeps during the session, including the first and last beep.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3389,21 +3738,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q7-f", topicId: "maths-5-2", conceptId: "solve-equation-14x-how-long-after",
     section: "B", questionRef: "2022 OL Paper 1 Q7(f)",
-    questionText: "Solve the equation h′(x) = − 1∙14x² + 5∙2x−0∙13 = 0 to find how long after the start of the session Joseph’s heart-rate is at a maximum, for 0 ≤ x ≤ 6, x∈ℝ. Give your answer in minutes, correct to 2 decimal places",
+    stem: "Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ.",
+    questionText: "Solve the equation h′(x) = −1·14x² + 5·2x − 0·13 = 0 to find how long after the start of the session Joseph’s heart-rate is at a maximum, for 0 ≤ x ≤ 6, x ∈ ℝ. Give your answer in minutes, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q7-f-r1", kind: "anyN", verbatim: "Work of merit, for example, identifies a, b, or c\n- b formula without or partially substituted", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Full Credit –1: Calculates both solutions to the equation, and fails to indicate which is the answer; Incorrect rounding. Note: 3 steps Involved in solution 1. Identifies a, b, and c 2. Fully substituted formula 3. Correctly evaluated. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, identifies a, b, or c\n- b formula without or partially substituted","2 steps correct\nFormula fully substituted correctly"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q7-f",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q7-f.png",
           "srcHash": "a7870f915f1efda9380c8a15b183681e",
-          "alt": "The question as printed on the paper — Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = − 0∙38x³ +… Full card prompt: Solve the equation h′(x) = − 1∙14x² + 5∙2x−0∙13 = 0 to find how long after the start of the session Joseph’s heart-rate is at a maximum, for 0 ≤ x ≤ 6, x∈ℝ. Give your answer in minutes, correct to 2 decimal places",
+          "alt": "The question as printed on the paper — Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = − 0∙38x³ +… Full card prompt: Joseph is doing a training session. During the session, his heart-rate, h(x), is measured in beats per minute (BPM). For part of the session, h(x) can be modelled using the following function: h(x) = −0·38x³ + 2·6x² − 0·13x + 158, where x is the time, in minutes, from the start of the session, and 0 ≤ x ≤ 6, x ∈ ℝ. Solve the equation h′(x) = −1·14x² + 5·2x − 0·13 = 0 to find how long after the start of the session Joseph’s heart-rate is at a maximum, for 0 ≤ x ≤ 6, x ∈ ℝ. Give your answer in minutes, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3419,21 +3782,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q8-a-i", topicId: "maths-3-3", conceptId: "work-out-how-many-acid-200",
     section: "B", questionRef: "2022 OL Paper 1 Q8(a)(i)",
-    questionText: "Work out how many ml of acid are in 200 ml of liquid from Bottle A",
+    stem: "Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A, concentration 12%; Bottle B, concentration 5%. This means that, for example, in every 100 ml of liquid in Bottle A, there are 12 ml of acid.",
+    questionText: "Work out how many ml of acid are in 200 ml of liquid from Bottle A.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q8-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, a correct operation (including 0∙12 or 12/100 )", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. NOTE: Accept correct answer without supporting work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, a correct operation (including 0∙12 or 12/100 )"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q8-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q8-a-i.png",
           "srcHash": "996a9c6a05737c39da74d9afdb631a83",
-          "alt": "The question as printed on the paper — Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A Bottle B Concentration: 12% Concentration: 5% This means that,… Full card prompt: Work out how many ml of acid are in 200 ml of liquid from Bottle A",
+          "alt": "The question as printed on the paper — Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A Bottle B Concentration: 12% Concentration: 5% This means that,… Full card prompt: Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A, concentration 12%; Bottle B, concentration 5%. This means that, for example, in every 100 ml of liquid in Bottle A, there are 12 ml of acid. Work out how many ml of acid are in 200 ml of liquid from Bottle A.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3449,21 +3826,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q8-a-ii", topicId: "maths-3-3", conceptId: "jessica-mixes-200-liquid-bottle-300",
     section: "B", questionRef: "2022 OL Paper 1 Q8(a)(ii)",
-    questionText: "Jessica mixes 200 ml of liquid from Bottle A with 300 ml of liquid from Bottle B. Work out the overall concentration of the acid in Jessica’s mixture. Give your answer as a percentage",
+    stem: "Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A, concentration 12%; Bottle B, concentration 5%. This means that, for example, in every 100 ml of liquid in Bottle A, there are 12 ml of acid.",
+    questionText: "Jessica mixes 200 ml of liquid from Bottle A with 300 ml of liquid from Bottle B. Work out the overall concentration of the acid in Jessica’s mixture. Give your answer as a percentage.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q8-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, finds volume of acid from B, or finds total volume of mixture\nAnswer (a)(i) written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, finds volume of acid from B, or finds total volume of mixture\nAnswer (a)(i) written","One error, otherwise correct, for example, fails to multiply by 100\nFinds 39 and 500"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q8-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q8-a-ii.png",
           "srcHash": "7549a75a139bdddd7c7e7dbc59a93b8f",
-          "alt": "The question as printed on the paper — Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A Bottle B Concentration: 12% Concentration: 5% This means that,… Full card prompt: Jessica mixes 200 ml of liquid from Bottle A with 300 ml of liquid from Bottle B. Work out the overall concentration of the acid in Jessica’s mixture. Give your answer as a percentage",
+          "alt": "The question as printed on the paper — Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A Bottle B Concentration: 12% Concentration: 5% This means that,… Full card prompt: Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A, concentration 12%; Bottle B, concentration 5%. This means that, for example, in every 100 ml of liquid in Bottle A, there are 12 ml of acid. Jessica mixes 200 ml of liquid from Bottle A with 300 ml of liquid from Bottle B. Work out the overall concentration of the acid in Jessica’s mixture. Give your answer as a percentage.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3479,21 +3870,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q8-a-iii", topicId: "maths-4-2", conceptId: "iii-explain-why-jessica-could-not",
+    id: "maths-2022-ol-p1-q8-a-iii", topicId: "maths-3-3", conceptId: "iii-explain-why-jessica-could-not",
     section: "B", questionRef: "2022 OL Paper 1 Q8(a)(iii)",
-    questionText: "(iii) Explain why Jessica could not make a solution with a 4% concentration of acid by mixing liquid from Bottle A and Bottle B",
+    stem: "Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A, concentration 12%; Bottle B, concentration 5%. This means that, for example, in every 100 ml of liquid in Bottle A, there are 12 ml of acid.",
+    questionText: "Explain why Jessica could not make a solution with a 4% concentration of acid by mixing liquid from Bottle A and Bottle B.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q8-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates 5 or 12", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, indicates 5 or 12"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q8-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q8-a-iii.png",
           "srcHash": "11313f8cb39351aa6673a1edf02897ec",
-          "alt": "The question as printed on the paper — Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A Bottle B Concentration: 12% Concentration: 5% This means that,… Full card prompt: (iii) Explain why Jessica could not make a solution with a 4% concentration of acid by mixing liquid from Bottle A and Bottle B",
+          "alt": "The question as printed on the paper — Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A Bottle B Concentration: 12% Concentration: 5% This means that,… Full card prompt: Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A, concentration 12%; Bottle B, concentration 5%. This means that, for example, in every 100 ml of liquid in Bottle A, there are 12 ml of acid. Explain why Jessica could not make a solution with a 4% concentration of acid by mixing liquid from Bottle A and Bottle B.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3509,21 +3914,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q8-a-iv", topicId: "maths-3-3", conceptId: "when-she-making-another-mixture-jessica",
     section: "B", questionRef: "2022 OL Paper 1 Q8(a)(iv)",
-    questionText: "(iv) When she is making another mixture, Jessica makes a mistake in measuring. She wants to measure out 250 ml but she measures out 260 ml instead",
+    stem: "Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A, concentration 12%; Bottle B, concentration 5%. This means that, for example, in every 100 ml of liquid in Bottle A, there are 12 ml of acid.",
+    questionText: "When she is making another mixture, Jessica makes a mistake in measuring. She wants to measure out 250 ml but she measures out 260 ml instead. Work out the percentage error in this measurement.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q8-a-iv-r1", kind: "anyN", verbatim: "1 correct operation\n% error formula written\nCorrect answer without supporting work", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["1 correct operation\n% error formula written\nCorrect answer without supporting work","2 correct operations, for example, (260−250)/250 or (260−250)/260 × 100 or 104"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q8-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q8-a-iv.png",
           "srcHash": "eb06ab49c7e8ee166553e551e63de954",
-          "alt": "The question as printed on the paper — Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A Bottle B Concentration: 12% Concentration: 5% This means that,… Full card prompt: (iv) When she is making another mixture, Jessica makes a mistake in measuring. She wants to measure out 250 ml but she measures out 260 ml instead",
+          "alt": "The question as printed on the paper — Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A Bottle B Concentration: 12% Concentration: 5% This means that,… Full card prompt: Jessica is a scientist. Jessica is making up a solution of acid. She has two different bottles, each with the following concentration of the acid: Bottle A, concentration 12%; Bottle B, concentration 5%. This means that, for example, in every 100 ml of liquid in Bottle A, there are 12 ml of acid. When she is making another mixture, Jessica makes a mistake in measuring. She wants to measure out 250 ml but she measures out 260 ml instead. Work out the percentage error in this measurement.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3539,16 +3958,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q8-b-i", topicId: "maths-3-3", conceptId: "write-down-values-cube-these-values",
+    id: "maths-2022-ol-p1-q8-b-i", topicId: "maths-3-4", conceptId: "write-down-values-cube-these-values",
     section: "B", questionRef: "2022 OL Paper 1 Q8(b)(i)",
-    questionText: "Write down the values of C, E, and F for a cube, and show that C−E+ F= 2 for these values",
+    stem: "If a solid is made up of faces with straight edges, then the following identity is often true: C − E + F = 2, where C is the number of corners, E is the number of edges, and F is the number of faces.",
+    questionText: "Write down the values of C, E, and F for a cube, and show that C − E + F = 2 for these values. The value for E has already been filled in: E = 12.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q8-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, C or F correct, or at least one value filled into given identity", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, C or F correct, or at least one value filled into given identity","C and F correct\nC or F correct, and at least 2 values filled into given identity"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q8-b-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q8-b-i.png",
@@ -3569,16 +4002,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q8-b-ii", topicId: "maths-2-3", conceptId: "each-faces-different-solid-shape-triangle",
+    id: "maths-2022-ol-p1-q8-b-ii", topicId: "maths-3-4", conceptId: "each-faces-different-solid-shape-triangle",
     section: "B", questionRef: "2022 OL Paper 1 Q8(b)(ii)",
-    questionText: "Each of the faces of a different solid is in the shape of a triangle of area 5 cm²",
+    stem: "If a solid is made up of faces with straight edges, then the following identity is often true: C − E + F = 2, where C is the number of corners, E is the number of edges, and F is the number of faces.",
+    questionText: "Each of the faces of a different solid is in the shape of a triangle of area 5 cm². This solid has 12 corners (C) and 30 edges (E), and C − E + F = 2 for this solid. Work out the surface area of this solid, in cm².",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q8-b-ii-r1", kind: "anyN", verbatim: "C and/or E filled into given identity\nIndicates 5F", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["C and/or E filled into given identity\nIndicates 5F","Finds F\nFinds F with an error, then finds 5F"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q8-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q8-b-ii.png",
@@ -3599,16 +4046,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q8-b-iii", topicId: "maths-3-1", conceptId: "iii-surface-third-solid-made-hexagons",
+    id: "maths-2022-ol-p1-q8-b-iii", topicId: "maths-4-2", conceptId: "iii-surface-third-solid-made-hexagons",
     section: "B", questionRef: "2022 OL Paper 1 Q8(b)(iii)",
-    questionText: "(iii) The surface of a third solid is made up of h hexagons and p pentagons, where h, p∈ℕ. For this solid: (6h + 5p)/3 − p = 2 2 Use this equation to find the number of pentagons in the surface of this solid (that is, the value of p)",
+    stem: "If a solid is made up of faces with straight edges, then the following identity is often true: C − E + F = 2, where C is the number of corners, E is the number of edges, and F is the number of faces.",
+    questionText: "The surface of a third solid is made up of h hexagons and p pentagons, where h, p ∈ ℕ. For this solid: (6h + 5p)/3 − (6h + 5p)/2 + h + p = 2. Use this equation to find the number of pentagons in the surface of this solid (that is, the value of p).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q8-b-iii-r1", kind: "anyN", verbatim: "Some mention of 6", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some mention of 6","Correctly multiplies across by 6","Multiplies out the equation correctly"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q8-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q8-b-iii.png",
@@ -3629,21 +4090,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q9-a-i", topicId: "maths-3-3", conceptId: "graph-write-down-initial-value-brian",
     section: "B", questionRef: "2022 OL Paper 1 Q9(a)(i)",
-    questionText: "Use the graph to write down V(0), the initial value of Brian’s car, and V(1), the value of Brian’s car after 1 year",
+    stem: "Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year.",
+    questionText: "Use the graph to write down V(0), the initial value of Brian’s car, and V(1), the value of Brian’s car after 1 year.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q9-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, one value correct\nCorrect indication on graph", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. NOTE: Accept correct answer without work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, one value correct\nCorrect indication on graph"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q9-a-i.png",
           "srcHash": "64c25378ac00e8189484b1506c5106de",
-          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Use the graph to write down V(0), the initial value of Brian’s car, and V(1), the value of Brian’s car after 1 year",
+          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year. Use the graph to write down V(0), the initial value of Brian’s car, and V(1), the value of Brian’s car after 1 year.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3659,21 +4134,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q9-a-ii", topicId: "maths-3-3", conceptId: "value-car-will-reduce-its-first",
     section: "B", questionRef: "2022 OL Paper 1 Q9(a)(ii)",
-    questionText: "Show that the value of the car will reduce by 20% in its first year, according to this model",
+    stem: "Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year.",
+    questionText: "Show that the value of the car will reduce by 20% in its first year, according to this model.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q9-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, finds 6000 or 6000/(30 000)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, finds 6000 or 6000/(30 000)","Finds 6000/(30 000) × 100 but fails to finish"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q9-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q9-a-ii.png",
           "srcHash": "47b5f482e4a84205851dfa9a7c1867fb",
-          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Show that the value of the car will reduce by 20% in its first year, according to this model",
+          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year. Show that the value of the car will reduce by 20% in its first year, according to this model.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3689,21 +4179,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q9-b-i", topicId: "maths-4-1", conceptId: "based-model-write-formula-value-brian",
+    id: "maths-2022-ol-p1-q9-b-i", topicId: "maths-3-3", conceptId: "based-model-write-formula-value-brian",
     section: "B", questionRef: "2022 OL Paper 1 Q9(b)(i)",
-    questionText: "Based on this model, write a formula for V(t), the value of Brian’s car after t years, in terms of the age of the car (t)",
+    stem: "Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year.",
+    questionText: "Based on this model, write a formula for V(t), the value of Brian’s car after t years, in terms of the age of the car (t). Use the fact that the value decreases by 20% each year.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q9-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, 0∙2 or 30000 × something\nCorrect depreciation formula written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 0∙2 or 30000 × something\nCorrect depreciation formula written","2 elements of formula correct (30000, 0∙8, or power of t)"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q9-b-i.png",
           "srcHash": "d34e97fad441be76099ac633896e93c4",
-          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Based on this model, write a formula for V(t), the value of Brian’s car after t years, in terms of the age of the car (t)",
+          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year. Based on this model, write a formula for V(t), the value of Brian’s car after t years, in terms of the age of the car (t). Use the fact that the value decreases by 20% each year.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3719,21 +4223,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q9-b-ii", topicId: "maths-3-3", conceptId: "otherwise-work-out-value-brian-car",
     section: "B", questionRef: "2022 OL Paper 1 Q9(b)(ii)",
-    questionText: "Hence, or otherwise, work out the value of Brian’s car after 4 years, according to this model. Show your working out",
+    stem: "Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year.",
+    questionText: "Hence, or otherwise, work out the value of Brian’s car after 4 years, according to this model. Show your working out.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q9-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, writes t = 4, or works out 20% of V(1)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, writes t = 4, or works out 20% of V(1)","Finds V(3)\nMethod 2, one consistent error in calculating V(2), V(3), and V(4)"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q9-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q9-b-ii.png",
           "srcHash": "cb5bc741ea4e921cc5782f0d1d374e47",
-          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Hence, or otherwise, work out the value of Brian’s car after 4 years, according to this model. Show your working out",
+          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year. Hence, or otherwise, work out the value of Brian’s car after 4 years, according to this model. Show your working out.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3749,21 +4267,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q9-c-i", topicId: "maths-3-3", conceptId: "draw-line-diagram-passing-through-first",
+    id: "maths-2022-ol-p1-q9-c-i", topicId: "maths-5-1", conceptId: "draw-line-diagram-passing-through-first",
     section: "B", questionRef: "2022 OL Paper 1 Q9(c)(i), (ii)",
-    questionText: "Draw a line on the diagram above, passing through the first two points on the graph with whole-number values of t (t = 0 and t = 1). Continue your line until it reaches the horizontal axis",
+    stem: "Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year.",
+    questionText: "The graph from part (a) is shown again below. A different (linear) model assumes that the value of the car reduces (depreciates) by a fixed amount each year. The value of the car will also reduce by 20% in its first year, according to this model. (i) Draw a line on the diagram above, passing through the first two points on the graph with whole-number values of t (t = 0 and t = 1). Continue your line until it reaches the horizontal axis. (ii) Hence, or otherwise, estimate T, the age of Brian’s car when its value would be €0, according to this new model.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q9-c-i-r1", kind: "anyN", verbatim: "One part correct or some work of merit", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. NOTE: Allow a tolerance of + /- ∙5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["One part correct or some work of merit"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q9-c-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q9-c-i.png",
           "srcHash": "c604544edce7fb9be701c0deed804f34",
-          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Draw a line on the diagram above, passing through the first two points on the graph with whole-number values of t (t = 0 and t = 1). Continue your line until it reaches the horizontal axis",
+          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed percentage each year. The graph from part (a) is shown again below. A different (linear) model assumes that the value of the car reduces (depreciates) by a fixed amount each year. The value of the car will also reduce by 20% in its first year, according to this model. (i) Draw a line on the diagram above, passing through the first two points on the graph with whole-number values of t (t = 0 and t = 1). Continue your line until it reaches the horizontal axis. (ii) Hence, or otherwise, estimate T, the age of Brian’s car when its value would be €0, according to this new model.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3779,21 +4311,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q9-d", topicId: "maths-3-3", conceptId: "eva-buys-new-car-has-price",
     section: "B", questionRef: "2022 OL Paper 1 Q9(d)",
-    questionText: "Eva buys a new car that has a price of €19 445",
+    questionText: "Eva buys a new car that has a price of €19 445. She pays 30% of this price as a deposit and makes repayments of €206·97 each month for the following 3 years. At the end of the 3 years, she pays an additional lump sum of €7389. Work out the total cost of the car for Eva.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q9-d-r1", kind: "anyN", verbatim: "Work of merit, for example, 1 correct operation, including 30/100", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: 3 steps Involved in solution 1. Finds 30% 2. Finds total cost of 36 repayments 3. Finds overall total cost. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, 1 correct operation, including 30/100","1 step correct","2 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q9-d",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q9-d.png",
           "srcHash": "42113078f30a5d39b1c3bacb0e5cb393",
-          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Eva buys a new car that has a price of €19 445",
+          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Eva buys a new car that has a price of €19 445. She pays 30% of this price as a deposit and makes repayments of €206·97 each month for the following 3 years. At the end of the 3 years, she pays an additional lump sum of €7389. Work out the total cost of the car for Eva.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3809,21 +4354,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q9-e", topicId: "maths-3-3", conceptId: "eva-drives-her-car-home-garage",
     section: "B", questionRef: "2022 OL Paper 1 Q9(e)",
-    questionText: "Eva drives her car home from the garage, a distance of 12 km",
+    questionText: "Eva drives her car home from the garage, a distance of 12 km. Eva usually drives this journey at an average speed of 60 km/hr. On this day, there are roadworks, so her average speed is only 40 km/hr for the journey. Work out the percentage increase in the time it takes Eva to drive home, because of the roadworks.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q9-e-r1", kind: "anyN", verbatim: "One correct relevant fraction, or 12 or 18", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["One correct relevant fraction, or 12 or 18","Finds both times, ie ∙2 and ∙3, or 12 minutes and 18 minutes\nConsistent error finding both times, but finishes correctly\nFinds 1∙5 or equivalent, from 60/40 in 2nd method"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q9-e",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q9-e.png",
           "srcHash": "e34da230822004831bffa004f2b31508",
-          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Eva drives her car home from the garage, a distance of 12 km",
+          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, V, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed… Full card prompt: Eva drives her car home from the garage, a distance of 12 km. Eva usually drives this journey at an average speed of 60 km/hr. On this day, there are roadworks, so her average speed is only 40 km/hr for the journey. Work out the percentage increase in the time it takes Eva to drive home, because of the roadworks.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3839,21 +4397,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q10-a-i", topicId: "maths-3-3", conceptId: "how-high-metres-was-ball-when",
+    id: "maths-2022-ol-p1-q10-a-i", topicId: "maths-5-1", conceptId: "how-high-metres-was-ball-when",
     section: "B", questionRef: "2022 OL Paper 1 Q10(a)(i)",
+    stem: "Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1·2, where h is the height of the ball, in metres, t seconds after being hit, and t ∈ ℝ.",
     questionText: "How high, in metres, was the ball when it was hit (when t = 0)?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q10-a-i-r1", kind: "anyN", verbatim: "0 substituted in for t", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. NOTE: Accept correct answer without supporting work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["0 substituted in for t"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q10-a-i.png",
           "srcHash": "a6b3d991866ae6b81685e1c65a4184d2",
-          "alt": "The question as printed on the paper — Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1∙2 where h is the height of the ball, in metres, t… Full card prompt: How high, in metres, was the ball when it was hit (when t = 0)?",
+          "alt": "The question as printed on the paper — Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1∙2 where h is the height of the ball, in metres, t… Full card prompt: Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1·2, where h is the height of the ball, in metres, t seconds after being hit, and t ∈ ℝ. How high, in metres, was the ball when it was hit (when t = 0)?",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3869,21 +4441,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q10-a-ii", topicId: "maths-3-3", conceptId: "ball-was-caught-after-seconds-how",
+    id: "maths-2022-ol-p1-q10-a-ii", topicId: "maths-5-1", conceptId: "ball-was-caught-after-seconds-how",
     section: "B", questionRef: "2022 OL Paper 1 Q10(a)(ii)",
-    questionText: "(ii) The ball was caught after 2∙4 seconds. How high, in metres, was the ball when it was caught?",
+    stem: "Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1·2, where h is the height of the ball, in metres, t seconds after being hit, and t ∈ ℝ.",
+    questionText: "The ball was caught after 2·4 seconds. How high, in metres, was the ball when it was caught?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q10-a-ii-r1", kind: "anyN", verbatim: "2∙4 substituted in for t", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. NOTE: Accept correct answer without supporting work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["2∙4 substituted in for t"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q10-a-ii.png",
           "srcHash": "3d59d856dc4d9390b16f216eadd1a1ad",
-          "alt": "The question as printed on the paper — Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1∙2 where h is the height of the ball, in metres, t… Full card prompt: (ii) The ball was caught after 2∙4 seconds. How high, in metres, was the ball when it was caught?",
+          "alt": "The question as printed on the paper — Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1∙2 where h is the height of the ball, in metres, t… Full card prompt: Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1·2, where h is the height of the ball, in metres, t seconds after being hit, and t ∈ ℝ. The ball was caught after 2·4 seconds. How high, in metres, was the ball when it was caught?",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3899,21 +4485,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q10-a-iii", topicId: "maths-3-3", conceptId: "iii-when-ball-passed-over-halfway",
+    id: "maths-2022-ol-p1-q10-a-iii", topicId: "maths-4-2", conceptId: "iii-when-ball-passed-over-halfway",
     section: "B", questionRef: "2022 OL Paper 1 Q10(a)(iii)",
-    questionText: "(iii) When the ball passed over the halfway line, it was at a height of 3∙2 metres and its height was decreasing",
+    stem: "Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1·2, where h is the height of the ball, in metres, t seconds after being hit, and t ∈ ℝ.",
+    questionText: "When the ball passed over the halfway line, it was at a height of 3·2 metres and its height was decreasing. How many seconds after it was hit did the ball pass over the halfway line? Remember that h = −2t² + 5t + 1·2.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q10-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, one step correct?\n-b formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: Finds both values of t, but does not indicate that t = 2 or discount t = 1/2. Note: 4 steps Involved in solution 1. Sets h = 3 ∙2 2. Rearranges (one side = 0) 3. Factorises / subs in -b formula 4. Solves. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, one step correct?\n-b formula","2 steps correct","3 steps correct, based on h = 3 ∙2"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q10-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q10-a-iii.png",
           "srcHash": "b760470f7e84f496a655dfedc8f49370",
-          "alt": "The question as printed on the paper — Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1∙2 where h is the height of the ball, in metres, t… Full card prompt: (iii) When the ball passed over the halfway line, it was at a height of 3∙2 metres and its height was decreasing",
+          "alt": "The question as printed on the paper — Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1∙2 where h is the height of the ball, in metres, t… Full card prompt: Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1·2, where h is the height of the ball, in metres, t seconds after being hit, and t ∈ ℝ. When the ball passed over the halfway line, it was at a height of 3·2 metres and its height was decreasing. How many seconds after it was hit did the ball pass over the halfway line? Remember that h = −2t² + 5t + 1·2.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3929,21 +4529,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q10-a-iv", topicId: "maths-3-3", conceptId: "how-long-took-ball-reach-its",
+    id: "maths-2022-ol-p1-q10-a-iv", topicId: "maths-5-2", conceptId: "how-long-took-ball-reach-its",
     section: "B", questionRef: "2022 OL Paper 1 Q10(a)(iv)",
-    questionText: "Find dℎ dt and hence find how long it took the ball to reach its greatest height",
+    stem: "Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1·2, where h is the height of the ball, in metres, t seconds after being hit, and t ∈ ℝ.",
+    questionText: "Find dh/dt and hence find how long it took the ball to reach its greatest height. Give your answer in seconds.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q10-a-iv-r1", kind: "anyN", verbatim: "Some correct differentiation\ndℎ/dt = 0", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: there must be some correct differentiation in order to award any credit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some correct differentiation\ndℎ/dt = 0","dℎ/dt correct, and sets = 0\nWork of merit in finding dℎ/dt, finishes correctly"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[27],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q10-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q10-a-iv.png",
           "srcHash": "f36a2c91719256edbde92f1785a413cf",
-          "alt": "The question as printed on the paper — Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1∙2 where h is the height of the ball, in metres, t… Full card prompt: Find dℎ dt and hence find how long it took the ball to reach its greatest height",
+          "alt": "The question as printed on the paper — Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1∙2 where h is the height of the ball, in metres, t… Full card prompt: Keith plays hurling. During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: h = −2t² + 5t + 1·2, where h is the height of the ball, in metres, t seconds after being hit, and t ∈ ℝ. Find dh/dt and hence find how long it took the ball to reach its greatest height. Give your answer in seconds.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3959,16 +4573,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q10-b", topicId: "maths-4-2", conceptId: "later-game-keith-hit-ball-again",
+    id: "maths-2022-ol-p1-q10-b", topicId: "maths-5-1", conceptId: "later-game-keith-hit-ball-again",
     section: "B", questionRef: "2022 OL Paper 1 Q10(b)",
-    questionText: "Later in the game, Keith hit the ball again. This time, the height of the ball t seconds after it was hit could be modelled by a different quadratic function, y = k(t), where k is in metres",
+    stem: "Keith plays hurling.",
+    questionText: "Later in the game, Keith hit the ball again. This time, the height of the ball t seconds after it was hit could be modelled by a different quadratic function, y = k(t), where k is in metres. This time, the ball was 1 metre high when Keith hit it. Its greatest height was 5 metres, which it reached after 2 seconds. It hit the ground without being caught. Using the information above, write down the co-ordinates of three points that must be on the graph of y = k(t), and draw the graph of y = k(t) on the axes below, from when the ball is hit until it hits the ground.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q10-b-r1", kind: "anyN", verbatim: "Work of merit, for example, 1 co- ordinate of 1 point correctly written; or 1 point correctly plotted", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: 6 elements correct, and an appropriate curve, but not extended to the x-axis. Note: Correct solution requires 7 elements: 3 co-ordinates written, these 3 points plotted on the answer grid, curve drawn between these points and extended to the x-axis. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, 1 co- ordinate of 1 point correctly written; or 1 point correctly plotted","3 elements correct","4 elements correct, and an appropriate curve\n6 elements correct, but no curve or a curve that is not appropriate"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[27,28],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q10-b",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q10-b.png",
@@ -3989,16 +4617,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q10-c-i", topicId: "maths-3-3", conceptId: "keith-buys-new-hurl-usually-costs",
     section: "B", questionRef: "2022 OL Paper 1 Q10(c)(i)",
-    questionText: "Keith buys a new hurl. It usually costs €33. Keith gets a student discount of 15%. Work out the price Keith pays for the hurl",
+    stem: "Keith plays hurling.",
+    questionText: "Keith buys a new hurl. It usually costs €33. Keith gets a student discount of 15%. Work out the price Keith pays for the hurl.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q10-c-i-r1", kind: "anyN", verbatim: "One correct operation, for example ∙15 or ∙85 or 15/100 or 85/100", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: (4, 1). NOTE: Accept correct answer without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["One correct operation, for example ∙15 or ∙85 or 15/100 or 85/100","Finds 15% (4∙95)"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[28],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q10-c-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q10-c-i.png",
@@ -4019,16 +4661,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q10-c-ii", topicId: "maths-3-3", conceptId: "keith-also-buys-jersey-costs-including",
     section: "B", questionRef: "2022 OL Paper 1 Q10(c)(ii)",
-    questionText: "Keith also buys a jersey. This costs €49∙50, including VAT at 23%. Work out the VAT on this jersey. Give your answer correct to the nearest cent",
+    stem: "Keith plays hurling.",
+    questionText: "Keith also buys a jersey. This costs €49·50, including VAT at 23%. Work out the VAT on this jersey. Give your answer correct to the nearest cent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q10-c-ii-r1", kind: "anyN", verbatim: "Indicates 123", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. NOTE: Apply F* if fails to round off correctly. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Indicates 123","Finds 1% or 100% (40∙24)"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[28],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q10-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q10-c-ii.png",
@@ -19526,6 +20182,36 @@ export const CARDS: SecCard[] = [
           ],
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-q5-a", topicId: "maths-3-2", conceptId: "p1-q5-a",
+    section: "A", questionRef: "2022 OL Paper 1 Q5(a)(i), (a)(ii)",
+    questionText: "Write each of the following values in the form a × 10ⁿ where 1 ≤ a < 10 and n ∈ ℤ. (i) 1200 (ii) 0·27",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-q5-a-solution-1", kind: "point", verbatim: "Model solution — 1·2 × 10³", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q5-a-solution-2", kind: "point", verbatim: "Model solution — 2·7 × 10⁻¹", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q5-a-solution-3", kind: "point", verbatim: "Low Partial Credit — Work of merit, for example, a or n correct in one part, or one number correctly written in form a × 10ⁿ but where a < 1 or a > 10", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q5-a-solution-4", kind: "point", verbatim: "Low Partial Credit — 1000 or 1/10", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-ol-p1-q5-a-solution-5", kind: "point", verbatim: "High Partial Credit — One part correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
   } as SecCard,
