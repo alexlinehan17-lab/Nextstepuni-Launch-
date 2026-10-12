@@ -1141,7 +1141,12 @@ def reviewed_sitting(year: int, level: str, review: Any,
     tasks_out, base_tasks, selection_rows = [], [], []
     absorbed_pairs: list[tuple[str, str]] = []
     totals: dict[tuple[int, str], int] = {}
-    atlas: dict[tuple[int, str], set[str]] = {}
+    # Per printed question, each Atlas topic's share of the marks its reviewed
+    # cards carry (alternative routes split their task's marks). Paper Trail
+    # takes a question's primary and secondary syllabus nodes from the row's
+    # order, so a question the shipped join already filed keeps its shipped
+    # order and a question it omitted lists what it mostly examines first.
+    atlas: dict[tuple[int, str], dict[str, float]] = {}
     for task in review.TASKS:
         task_cards = GR.build_task_cards(
             sitting, task, fileids[(year, level, task.part)], companions, topic_ids)
@@ -1155,8 +1160,10 @@ def reviewed_sitting(year: int, level: str, review: Any,
         cards.extend(task_cards)
         totals[(task.part, task.question)] = totals.get((task.part, task.question), 0) + task.marks
         number = re.match(r'\d+', task.question).group()
-        atlas.setdefault((task.part, number), set()).update(
-            atlas_id for card in task_cards for atlas_id in card['atlasTopicIds'])
+        weights = atlas.setdefault((task.part, number), {})
+        for card in task_cards:
+            for atlas_id in card['atlasTopicIds']:
+                weights[atlas_id] = weights.get(atlas_id, 0) + card['totalMarks'] / len(task_cards)
         ref = GR.ref_label(year, level, task)
         base_tasks.append({'id': task.card_id, 'year': year, 'level': level,
                            'part': task.part, 'questionRef': ref,
@@ -1222,8 +1229,9 @@ def reviewed_sitting(year: int, level: str, review: Any,
                        [t.card_id, *(r.card_id for r in t.routes if r.legacy)])]
     atlas_rows = [
         {'level': level, 'year': year, 'paperKey': f'p{part}',
-         'fileid': fileids[(year, level, part)] + '.pdf', 'n': n, 'topicIds': sorted(ids_)}
-        for (part, n), ids_ in sorted(atlas.items(), key=lambda kv: (kv[0][0], int(kv[0][1])))]
+         'fileid': fileids[(year, level, part)] + '.pdf', 'n': n,
+         'topicIds': sorted(weights, key=lambda topic: (-weights[topic], topic))}
+        for (part, n), weights in sorted(atlas.items(), key=lambda kv: (kv[0][0], int(kv[0][1])))]
     audit = {
         'year': year, 'level': level, 'lang': 'ev', 'status': 'reviewed',
         'reviewedAt': '2026-10-11', 'sources': sources,
@@ -1451,15 +1459,17 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
     }
     with open(REFERENCE_ATLAS, encoding='utf-8') as handle:
         reference = json.load(handle)
-    shipped: dict[tuple[str, int, str, str, str], set[str]] = {}
+    shipped: dict[tuple[str, int, str, str, str], list[str]] = {}
     for level_code, lang_code, year, paper_key, fileid, n, indexes in reference['questionMappings']:
         if lang_code != 'e':
             continue
         key = ('higher' if level_code == 'h' else 'ordinary', year, paper_key, fileid, str(n))
-        shipped.setdefault(key, set()).update(reference['topicIds'][i] for i in indexes)
+        shipped.setdefault(key, []).extend(reference['topicIds'][i] for i in indexes)
     for row in atlas_rows:
         key = (row['level'], row['year'], row['paperKey'], row['fileid'], row['n'])
-        row['topicIds'] = sorted(set(row['topicIds']) | shipped.get(key, set()))
+        # The shipped topics first, in the shipped order, then each topic the
+        # review adds by weight: a review adds, never removes or reorders.
+        row['topicIds'] = list(dict.fromkeys([*shipped.get(key, []), *row['topicIds']]))
     topic_list = sorted({topic for row in atlas_rows for topic in row['topicIds']})
     atlas = {
         'schemaVersion': 1,
