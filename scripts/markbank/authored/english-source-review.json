@@ -214,15 +214,15 @@
     },
     "english-2023-hl-p1-t1-b": {
       "kind": "source-text",
-      "label": "SOURCE MATERIAL",
-      "title": "Salim in London — Text 1",
+      "label": "TEXT 1",
+      "title": "Between Two Worlds: Village and City",
       "pages": [
         2,
         3
       ],
-      "attribution": "Source as reproduced in the official SEC English paper.",
-      "reason": "The task adopts Salim’s identity and relationship with his mother from the extract.",
-      "questionSha256": "6f341b922bbd820ef499c843b5eeb397bf43e49dd00ab82505d644140755a5f0"
+      "attribution": "Abdulrazak Gurnah — edited extract from his novel Gravel Heart (2021 Nobel Prize winner for literature), with the book cover and a photograph of the author (PDF2–3). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "6f341b922bbd820ef499c843b5eeb397bf43e49dd00ab82505d644140755a5f0",
+      "reason": "The task adopts Salim’s identity, his mother and his first months in London from TEXT 1 (whose two letters to Mama are the model); the whole text is retained (PDF2–3)."
     },
     "english-2010-ol-p1-composing-7": {
       "kind": "source-illustration",
@@ -3746,6 +3746,112 @@
       "attribution": "The Hundred Names of Love — Annie Lighthart, as reproduced in the SEC 2024 paper.",
       "questionSha256": "f8d7ece3572cf11057d914658bcc55a75cd555150d50b630bfacd21ffd185313",
       "reason": "Paper PDF14 prints the instruction (“Read the following poem by Annie Lighthart”, with the introduction on parents of very young children at bedtime), the title, all three stanzas (6 + 5 + 5 lines) and the byline above both questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
+    },
+    "english-2023-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Between Two Worlds: Village and City",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Abdulrazak Gurnah — edited extract from his novel Gravel Heart (2021 Nobel Prize winner for literature), with the book cover and a photograph of the author (PDF2–3). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "fe3bb33e7894cfa72595600d2dbdaae06b4f934878b90209b7723e10a11240e8",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2023-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Between Two Worlds: Village and City",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Abdulrazak Gurnah — edited extract from his novel Gravel Heart (2021 Nobel Prize winner for literature), with the book cover and a photograph of the author (PDF2–3). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "00b17dd9bb6bd03504b59ddfc10c583336e84cb8dfc56da7529ca93b940fd3d4",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2023-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Between Two Worlds: Village and City",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Abdulrazak Gurnah — edited extract from his novel Gravel Heart (2021 Nobel Prize winner for literature), with the book cover and a photograph of the author (PDF2–3). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "eb7e0997264e82c0c9fff0a4f92c9b2676bc4560e03aedaf199e109585897710",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2023-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Between Two Worlds: Through Words and Pictures",
+      "pages": [
+        4
+      ],
+      "attribution": "Henry Eliot — edited text “This Must be the Place” on literary locations (PDF4), with Alfred Stieglitz’s 1907 photograph and its caption (PDF5). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "ba8abf4dbb041b3cda3538e3470bf2ffbf1612c9e364e349d8da98cae7290d64",
+      "reason": "The task reads “TEXT 2 on page 4”: the heading, introduction and Henry Eliot’s text, all printed on PDF4."
+    },
+    "english-2023-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Between Two Worlds: Through Words and Pictures",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Henry Eliot — edited text “This Must be the Place” on literary locations (PDF4), with Alfred Stieglitz’s 1907 photograph and its caption (PDF5). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "caeec0fb9f6603292ef85c5503ad95b4f47db9b2b3f596fec580fff0142065b2",
+      "reason": "The task is about “Alfred Stieglitz’s photograph above” (PDF5, with its caption); the introduction on PDF4 presents it, so both pages are retained."
+    },
+    "english-2023-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Between Two Worlds: Through Words and Pictures",
+      "pages": [
+        4
+      ],
+      "attribution": "Henry Eliot — edited text “This Must be the Place” on literary locations (PDF4), with Alfred Stieglitz’s 1907 photograph and its caption (PDF5). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "cdb1bfc0c9a56b4eec681595ef8baeca49c9cd7f2110abbb69bc7b8ba29e4c2c",
+      "reason": "The task is about Henry Eliot’s language “(in the written text)”: the heading, introduction and text, all on PDF4."
+    },
+    "english-2023-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Between Two Worlds: Human and Technological",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Patricia Scanlon (The Irish Times) and Ben Spencer (The Sunday Times magazine, “I’m better than the Bard.”) — two edited articles on Artificial Intelligence published in July 2022, with two images (PDF6–7). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "0b7e05f835dab4169669435d176a3102913aee882efd307afedaccc7e7044411",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2023-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Between Two Worlds: Human and Technological",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Patricia Scanlon (The Irish Times) and Ben Spencer (The Sunday Times magazine, “I’m better than the Bard.”) — two edited articles on Artificial Intelligence published in July 2022, with two images (PDF6–7). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "74edd3628e299d86c3c50ab1fabab6c63e68f2d57f1bcbf243dda97d3a8afb79",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2023-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Between Two Worlds: Human and Technological",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Patricia Scanlon (The Irish Times) and Ben Spencer (The Sunday Times magazine, “I’m better than the Bard.”) — two edited articles on Artificial Intelligence published in July 2022, with two images (PDF6–7). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "9ad1e545cebf70f0bbf2ce120aecde618b41816c321078f39dc459d37a67899e",
+      "reason": "Full 12-page visual sweep: printed heading (in capitals), introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
     }
   }
 }

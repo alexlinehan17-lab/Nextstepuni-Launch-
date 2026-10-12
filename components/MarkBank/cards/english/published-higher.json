@@ -70,6 +70,17 @@
    "schemeSha256": "470ddca344cc7b0941cf6e10f4d1e1a13e27db7ca6b58501d6997a8289b5a82b"
   },
   {
+   "paperId": "english-2023-hl-p1",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "tasks": 19,
+   "cards": 19,
+   "printedDuplicates": 0,
+   "paperSha256": "baab746a1a80e6cd21625755136f6b38a4b2f907bb43f6d62e58407a0e66d1d8",
+   "schemeSha256": "1f87d14f685446f36c40b6faa92ed50f043ff9e9a357c408212c4720c1c069c2"
+  },
+  {
    "paperId": "english-2018-hl-p1",
    "year": 2018,
    "level": "higher",
@@ -694,6 +705,16 @@
     },
     "capRulePage": 3
    },
+   "2023-higher": {
+    "family": "hl-h1-h8",
+    "gridPages": [
+     50
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2024-higher": {
     "family": "hl-h1-h8",
     "gridPages": [
@@ -729,12 +750,32 @@
  },
  "legacyAdditionalSources": {},
  "bridgedPapers": [
+  "english-2023-hl-p1",
   "english-2024-hl-p1",
   "english-2024-hl-p2",
   "english-2025-hl-p1",
   "english-2025-hl-p2"
  ],
  "bridgedLegacyIds": [
+  "english-2023-hl-p1-composing-1",
+  "english-2023-hl-p1-composing-2",
+  "english-2023-hl-p1-composing-3",
+  "english-2023-hl-p1-composing-4",
+  "english-2023-hl-p1-composing-5",
+  "english-2023-hl-p1-composing-6",
+  "english-2023-hl-p1-composing-7",
+  "english-2023-hl-p1-t1-a-i",
+  "english-2023-hl-p1-t1-a-ii",
+  "english-2023-hl-p1-t1-a-iii",
+  "english-2023-hl-p1-t1-b",
+  "english-2023-hl-p1-t2-a-i",
+  "english-2023-hl-p1-t2-a-ii",
+  "english-2023-hl-p1-t2-a-iii",
+  "english-2023-hl-p1-t2-b",
+  "english-2023-hl-p1-t3-a-i",
+  "english-2023-hl-p1-t3-a-ii",
+  "english-2023-hl-p1-t3-a-iii",
+  "english-2023-hl-p1-t3-b",
   "english-2024-hl-p1-composing-1",
   "english-2024-hl-p1-composing-2",
   "english-2024-hl-p1-composing-3",
@@ -830,7 +871,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 451,
+ "cardCount": 470,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -5751,6 +5792,724 @@
    "atlas": {
     "fileid": "LC002ALP200EV.pdf",
     "n": "5"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-t1-a-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 1 QA(i)",
+   "questionText": "Based on your reading of TEXT 1, explain three insights you gain into Salim’s character. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Between Two Worlds: Village and City",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Abdulrazak Gurnah — edited extract from his novel Gravel Heart (2021 Nobel Prize winner for literature), with the book cover and a photograph of the author (PDF2–3). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    4
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-t1-a-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 1 QA(ii)",
+   "questionText": "To what extent do you agree with Uncle Amir’s view that making money is an important consideration when choosing a course to study in college? Develop three points to support your response.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Between Two Worlds: Village and City",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Abdulrazak Gurnah — edited extract from his novel Gravel Heart (2021 Nobel Prize winner for literature), with the book cover and a photograph of the author (PDF2–3). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-t1-a-iii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 1 QA(iii)",
+   "questionText": "Features of both narrative writing and descriptive writing are used effectively by Abdulrazak Gurnah to capture the world Salim encounters in this passage. Discuss this statement, supporting your response with reference to four language features in the text. You may include features of narrative writing, features of descriptive writing, or both in your discussion.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Between Two Worlds: Village and City",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Abdulrazak Gurnah — edited extract from his novel Gravel Heart (2021 Nobel Prize winner for literature), with the book cover and a photograph of the author (PDF2–3). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-t1-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 1 QB",
+   "questionText": "Imagine you are Salim and you have been in London for over a year. Write a new personal letter to your mother in which you: describe a number of experiences you have had that you believe will fascinate your mother, reflect on both the positive and negative insights you have gained into human nature as an outsider in London, and consider some of the ways you believe your experience in this city has altered you as a person.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Between Two Worlds: Village and City",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Abdulrazak Gurnah — edited extract from his novel Gravel Heart (2021 Nobel Prize winner for literature), with the book cover and a photograph of the author (PDF2–3). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-t2-a-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 2 QA(i)",
+   "questionText": "Based on your reading of TEXT 2 on page 4, explain three insights you gain, from Henry Eliot, into how reading novels can be an enriching experience. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Between Two Worlds: Through Words and Pictures",
+    "pages": [
+     4
+    ],
+    "attribution": "Henry Eliot — edited text “This Must be the Place” on literary locations (PDF4), with Alfred Stieglitz’s 1907 photograph and its caption (PDF5). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-t2-a-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 2 QA(ii)",
+   "questionText": "Do you think that Between Two Worlds (the theme for this paper) would be a good title for Alfred Stieglitz’s photograph above? Develop three points to support your response. In your response you should consider the subject matter and visual aspects of the photograph.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Between Two Worlds: Through Words and Pictures",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Henry Eliot — edited text “This Must be the Place” on literary locations (PDF4), with Alfred Stieglitz’s 1907 photograph and its caption (PDF5). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-t2-a-iii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 2 QA(iii)",
+   "questionText": "Features of both personal writing and informative writing are used effectively by Henry Eliot (in the written text) to explore the relationship between works of fiction and the worlds in which they are set. Discuss this statement, supporting your response with reference to four language features in the text. You may include features of personal writing, features of informative writing, or both in your discussion.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Between Two Worlds: Through Words and Pictures",
+    "pages": [
+     4
+    ],
+    "attribution": "Henry Eliot — edited text “This Must be the Place” on literary locations (PDF4), with Alfred Stieglitz’s 1907 photograph and its caption (PDF5). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-t2-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 2 QB",
+   "questionText": "You have been asked to write a personal reflection for an educational history magazine. The reflection should recall an experience you had of visiting a place of historic interest. In the reflection you should: outline the expectations you had before your visit to the place of historic interest, describe some of the thoughts and feelings you had in response to this place during the visit and, argue the case for making trips to historic places compulsory for students in Irish schools today.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-t3-a-i",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 3 QA(i)",
+   "questionText": "Based on your reading of both articles in TEXT 3, explain three insights you gain into the world of Artificial Intelligence. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Between Two Worlds: Human and Technological",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Patricia Scanlon (The Irish Times) and Ben Spencer (The Sunday Times magazine, “I’m better than the Bard.”) — two edited articles on Artificial Intelligence published in July 2022, with two images (PDF6–7). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-t3-a-ii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 3 QA(ii)",
+   "questionText": "Do you find yourself in agreement with the view expressed in both articles in TEXT 3 that an ethical (moral) approach to the development of Artificial Intelligence is needed? Develop three points to support your response.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Between Two Worlds: Human and Technological",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Patricia Scanlon (The Irish Times) and Ben Spencer (The Sunday Times magazine, “I’m better than the Bard.”) — two edited articles on Artificial Intelligence published in July 2022, with two images (PDF6–7). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-t3-a-iii",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 3 QA(iii)",
+   "questionText": "Features of both persuasive writing and informative writing are used effectively in TEXT 3 to give a clear and engaging perspective into the world of Artificial Intelligence. Discuss this statement, supporting your response with reference to four language features. You may include features of persuasive language, features of informative language, or both in your discussion. You may refer to either or both of the writers in your response.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Between Two Worlds: Human and Technological",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Patricia Scanlon (The Irish Times) and Ben Spencer (The Sunday Times magazine, “I’m better than the Bard.”) — two edited articles on Artificial Intelligence published in July 2022, with two images (PDF6–7). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-t3-b",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Text 3 QB",
+   "questionText": "It is Science Week and you have been asked to write an article for your school’s website about the increasing role played by technology in schools. In your article you should: describe some of the positive ways technology is utilised in schools today, discuss whether or not, in your view, technology can be a negative influence in schools, and speculate about the role you think technology will play in schools in the future. Your article may be serious or humorous or both.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-composing-1",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 1",
+   "questionText": "In TEXT 2, Henry Eliot describes Prague as “mysterious and impenetrable”. Write a short story which features a confused character in a mysterious setting.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-composing-2",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 2",
+   "questionText": "TEXT 1 gives us the protagonist’s view of the city of London as he encountered it. Write a feature article, for a popular magazine, describing your hometown, city, village or area, in which you consider some of the following: the place, its people, values, atmosphere and general way of life.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested feature article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-composing-3",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 3",
+   "questionText": "In TEXT 1, Salim makes a resolution and refuses to be discouraged. Write a personal essay in which you reflect on an occasion or occasions when you made a resolution and refused to be discouraged.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-composing-4",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 4",
+   "questionText": "TEXT 3 expresses concern about a world that, “has no knowledge of ethics (morality), of decency, of the law”. You are taking part in an international debating competition where the motion is: “Society today lacks ethics (morality), decency and respect for the law.” Write your speech for or against this motion.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-composing-5",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 5",
+   "questionText": "In TEXT 1, Salim tells us that he did not have the courage to challenge his uncle’s plans for him. Write a short story that features a complex relationship between two characters, where one character disagrees completely with the views of the other.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-composing-6",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 6",
+   "questionText": "In TEXT 2, Henry Eliot describes how he gets, “a particular thrill from visiting literary locations”. Write a personal essay in which you describe and reflect on some of the things that bring excitement and wonder into your life.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2023-hl-p1-composing-7",
+   "year": 2023,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2023 HL Paper 1 Composing 7",
+   "questionText": "TEXT 3 refers to George Orwell and Roald Dahl who were, in different ways, influential writers in the twentieth century. Write a discursive essay about the impact of influential individuals in today’s world. Your chosen individuals may have positive or negative impacts or a combination of both.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-discursive",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested discursive essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "7"
    }
   },
   {

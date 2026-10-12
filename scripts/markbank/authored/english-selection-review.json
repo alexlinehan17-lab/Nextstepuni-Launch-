@@ -1665,17 +1665,17 @@
     "english-2023-hl-p1-t1-a-iii": {
       "questionSha256": "eb7e0997264e82c0c9fff0a4f92c9b2676bc4560e03aedaf199e109585897710",
       "kind": "flexible",
-      "reason": "The paper explicitly permits a flexible mixture or number of aspects. These are not mutually exclusive fixed-size answer routes."
+      "reason": "Paper and scheme PDF5: four language features, “features of narrative writing, features of descriptive writing, or both” — “any four features … or a combination of both”, effective or ineffective. One 20-mark response."
     },
     "english-2023-hl-p1-t2-a-iii": {
       "questionSha256": "cdb1bfc0c9a56b4eec681595ef8baeca49c9cd7f2110abbb69bc7b8ba29e4c2c",
       "kind": "flexible",
-      "reason": "The paper explicitly permits a flexible mixture or number of aspects. These are not mutually exclusive fixed-size answer routes."
+      "reason": "Paper and scheme PDF8: four language features, “features of personal writing, features of informative writing, or both” — “any four features … or a combination of both”, effective or ineffective. One 20-mark response."
     },
     "english-2023-hl-p1-t3-a-iii": {
       "questionSha256": "9ad1e545cebf70f0bbf2ce120aecde618b41816c321078f39dc459d37a67899e",
       "kind": "flexible",
-      "reason": "The paper explicitly permits a flexible mixture or number of aspects. These are not mutually exclusive fixed-size answer routes."
+      "reason": "Paper and scheme PDF11: four language features, “features of persuasive writing, features of informative writing, or both” — “any four features … or a combination of both”, effective or ineffective. One 20-mark response. Either or both writers."
     },
     "english-2023-ol-p1-t2-a-ii": {
       "questionSha256": "36425b02c60b07c0288855a125ddf4fe88fc89f9d2c50d62152d1fa28d088567",
@@ -2378,17 +2378,17 @@
     "english-2023-hl-p1-t1-b": {
       "questionSha256": "6f341b922bbd820ef499c843b5eeb397bf43e49dd00ab82505d644140755a5f0",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF6: a new letter from Salim to his mother — new experiences, both positive and negative insights into human nature, and how the city has altered him; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 50-mark response."
     },
     "english-2023-hl-p1-t2-b": {
       "questionSha256": "6674c02aede4468f5e4558a9051de6deafb52b520ce737dd18a91e900bea626a",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF9: a personal reflection on a visit to a place of historic interest — expectations before, thoughts and feelings during, and the case for compulsory trips; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 50-mark response."
     },
     "english-2023-hl-p1-t3-b": {
       "questionSha256": "8dac7565ddce7479c910fc44f687b5358874c58e731d970ed3cb61bf6191fb70",
       "kind": "flexible",
-      "reason": "The register may be serious, humorous, or a mixture; this flexible direction does not prescribe a fixed answer-route selection. The other listed content is required."
+      "reason": "Scheme PDF12: a Science Week article — positive uses of technology in schools, whether or not it can be a negative influence, and its future role; “serious or humorous or both” is a free register; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 50-mark response."
     },
     "english-2023-ol-p1-t1-b": {
       "questionSha256": "1b3ff7fbe40643cf48511533d2c27f7227a2e4a5a1fc44a367786d0797650ab5",
@@ -2975,7 +2975,7 @@
     "english-2023-hl-p1-composing-4": {
       "questionSha256": "ed16ca16e788b077a7537e0400ecb9fccc7d29db7dbcd025ae9d744604c599e5",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF17 — “a speech for or against the motion”; both sides are marked on one grid, and candidates “may concentrate on one/two/three elements … or consider the motion as a general statement”. One 100-mark composition.",
       "pools": [
         {
           "id": "selection",
@@ -3989,32 +3989,32 @@
     "english-2023-hl-p1-composing-1": {
       "questionSha256": "661545e23fcc7665732b8e012400beebf03d35d0a4049b72638fdf2ddf9a6c57",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF14: a short story featuring a confused character in a mysterious setting; a broad interpretation of “mysterious”. One 100-mark composition."
     },
     "english-2023-hl-p1-composing-2": {
       "questionSha256": "31e10984e95bfbb5fb2ca27f881e4cf5ecce6f1c39a5e1e18ce58c3f2123cec6",
-      "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "kind": "flexible",
+      "reason": "Scheme PDF15: a feature article on the candidate’s own place; “some of the following aspects”, or “additional relevant aspects” — a flexible selection, not routes. One 100-mark composition."
     },
     "english-2023-hl-p1-composing-3": {
       "questionSha256": "2ff4dd1031b272d58c18d50743d27b8eda05025f511cad6333a932ecba21b5a2",
-      "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "kind": "flexible",
+      "reason": "Scheme PDF16: a personal essay reflecting on “an occasion or occasions” of resolution; a broad interpretation of “resolution”. One 100-mark composition."
     },
     "english-2023-hl-p1-composing-5": {
       "questionSha256": "fb7d23a8e6e9b4ff5dba8876989f62a572f28a5d8485c6b894fd57873702747c",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF18: a short story about a complex relationship where one character disagrees completely with the other. One 100-mark composition."
     },
     "english-2023-hl-p1-composing-6": {
       "questionSha256": "85f2ad14c46816237ec0e72b9462fe8310d8316fa5f2ebbb9cf57ba2bce4f225",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF19: a personal essay describing and reflecting on things that bring excitement and wonder. One 100-mark composition."
     },
     "english-2023-hl-p1-composing-7": {
       "questionSha256": "a3ba53347b47e06ec42f24cc981db887b0e65100d9ebb8da439edc5b67b69f93",
       "kind": "flexible",
-      "reason": "Optional register, perspective or number of examples remains flexible; the paper does not require an exclusive fixed-size selection from named options."
+      "reason": "Scheme PDF20: a discursive essay on influential individuals, “historical or contemporary”, with “positive or negative impacts or a combination of both”. One 100-mark composition."
     },
     "english-2023-ol-p1-composing-1": {
       "questionSha256": "a29592eb351a09cefff924e4490bf163f13adc8be460e6cf5e367ef94d8731a9",
@@ -16678,6 +16678,36 @@
       "questionSha256": "93e75315f85b6c8a2c9e288ea421895761873ef896e0e2ad1a02644b25abdcad",
       "kind": "open",
       "reason": "Scheme PDF60–61: three occasions of the candidate’s own when the poet uses language skilfully, and why they are worthy of praise. One 20-mark response."
+    },
+    "english-2023-hl-p1-t1-a-i": {
+      "questionSha256": "fe3bb33e7894cfa72595600d2dbdaae06b4f934878b90209b7723e10a11240e8",
+      "kind": "open",
+      "reason": "Scheme PDF4: three insights of the candidate’s own into Salim’s character, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2023-hl-p1-t1-a-ii": {
+      "questionSha256": "00b17dd9bb6bd03504b59ddfc10c583336e84cb8dfc56da7529ca93b940fd3d4",
+      "kind": "open",
+      "reason": "Scheme PDF5: “the extent to which they agree or disagree” that making money is an important consideration when choosing a course, with three developed points — a graded judgement, not routes. One 15-mark response."
+    },
+    "english-2023-hl-p1-t2-a-i": {
+      "questionSha256": "ba8abf4dbb041b3cda3538e3470bf2ffbf1612c9e364e349d8da98cae7290d64",
+      "kind": "open",
+      "reason": "Scheme PDF7: three insights of the candidate’s own into how reading novels can be an enriching experience (the written element), supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2023-hl-p1-t2-a-ii": {
+      "questionSha256": "caeec0fb9f6603292ef85c5503ad95b4f47db9b2b3f596fec580fff0142065b2",
+      "kind": "open",
+      "reason": "Scheme PDF7: three points that Between Two Worlds “would/would not be a good title for the photograph”, informed by its subject matter and visual aspects — a graded judgement. One 15-mark response."
+    },
+    "english-2023-hl-p1-t3-a-i": {
+      "questionSha256": "0b7e05f835dab4169669435d176a3102913aee882efd307afedaccc7e7044411",
+      "kind": "open",
+      "reason": "Scheme PDF10: three insights of the candidate’s own into the world of Artificial Intelligence, from “either/both articles”, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2023-hl-p1-t3-a-ii": {
+      "questionSha256": "74edd3628e299d86c3c50ab1fabab6c63e68f2d57f1bcbf243dda97d3a8afb79",
+      "kind": "open",
+      "reason": "Scheme PDF10: “the extent to which they agree or disagree” that an ethical approach to the development of AI is needed, with three developed points — a graded judgement, not routes. One 15-mark response."
     }
   }
 }
