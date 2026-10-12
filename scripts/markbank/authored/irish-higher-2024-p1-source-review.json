@@ -1,0 +1,219 @@
+{
+  "year": 2024,
+  "level": "higher",
+  "paperFileid": "LC001ALP100IV.pdf",
+  "schemeFileid": "LC001ALP000IV.pdf",
+  "paperSha256": "c878102b89f4325bd92388b6dc0b4d380bf159ed50eee5cd19e31ff2995d97d8",
+  "schemeSha256": "c2d30b98b2a6e6b2747b8479b9df527609652b52ce5e352f356fab9bdac1c27e",
+  "reviewDate": "2026-10-12",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    51
+  ],
+  "schemeScope": "Combined Paper 1 and Paper 2 scheme. PDF 1–2 cover and note; 3 listening tariffs; 4–6 listening transcript (never shown to students); 7–11 listening answers; 12–17 composition marking, annotation symbols, Stíl/Ábhar/Gaeilge bands and S1–S4 grades; 51 modified marking (SMM). PDF 18–50 are Paper 2; 52–56 blank or Paper 2 tables.",
+  "reviewMethod": "Visual inspection of every paper page (answer-booklet pages 8–19 are ruled writing space) and every applicable scheme page; cross-checked extracted text.",
+  "audio": {
+    "url": "https://www.examinations.ie/archive/exampapers/2024/LC001ZLP017IV.mp3",
+    "verified": "2026-10-11",
+    "evidence": "scripts/markbank/authored/irish-listening-audio-verification.json",
+    "note": "One SEC recording serves the Higher and Ordinary 2024 listening test; all 2024 listening cards already play it (commit ef1a7e550)."
+  },
+  "selectionDecisions": [
+    {
+      "page": 2,
+      "raw": "Scríobh do chuid freagraí le peann gorm nó le peann dubh. Ní ceadmhach peann luaidhe a úsáid.",
+      "decision": "Pen colour instruction, not an answer route."
+    },
+    {
+      "page": 2,
+      "raw": "Tá dhá chuid sa scrúdú seo.",
+      "decision": "Paper structure statement: both parts required."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair gach cuid – A, B, C – sa fhreagarleabhar seo. Caithfidh do chuid freagraí uile sa triail",
+      "decision": "Required answers; no finite task menu."
+    },
+    {
+      "page": 3,
+      "raw": "seo a bheith i nGaeilge, ach amháin nuair nach gá sin.",
+      "decision": "Required answers; no finite task menu."
+    },
+    {
+      "page": 3,
+      "raw": "3. Luaigh rud amháin a dhéanfaidh oifigigh ón scéim Gaelbhratach le linn a gcuairteanna",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 3,
+      "raw": "2. Scríobh síos dhá rud a fhoghlaimeoidh an cuairteoir ó na taispeántais sa mhúsaem.",
+      "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 3,
+      "raw": "3. Luaigh rud amháin is féidir leis an gcuairteoir a dhéanamh sa zón idirghníomhach.",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 4,
+      "raw": "Cloisfidh tú dhá chomhrá sa chuid seo. Cloisfidh tú gach comhrá díobh faoi dhó. Cloisfidh tú",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 4,
+      "raw": "1. Scríobh síos pointe amháin eolais faoin tonn teasa a bhí san Iodáil nuair a bhí Aoife",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 4,
+      "raw": "1. Scríobh síos dhá phointe eolais faoin damáiste a rinne na tinte uafásacha i gceantair",
+      "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 5,
+      "raw": "2. Scríobh síos an dá chúis a gcodlaíonn daoine taobh amuigh mar chuid den fheachtas",
+      "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 5,
+      "raw": "3. Luaigh ábhar amháin a bhíonn sna tuairiscí a léann Peadar ar líne.",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 5,
+      "raw": "1. Scríobh síos cúis amháin nach bhfuair Áine mórán codlata an oíche a chaith sí amuigh",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 5,
+      "raw": "2. Tabhair dhá cheacht a d’fhoghlaim Áine ón oíche a chodail sí amuigh.",
+      "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 6,
+      "raw": "2. Scríobh síos an dá dheis a thug an dúshlán seo do dhaoine.",
+      "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 6,
+      "raw": "3. Luaigh pointe amháin eolais atá sa taighde a rinneadh le déanaí.",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 7,
+      "raw": "Freagair do rogha CEANN AMHÁIN de A, B nó C anseo thíos.",
+      "decision": "Closed choose-one of A, B, C; with the printed titles this gives nine whole 100-mark title cards: A(a)–(e), B(a)–(b), C(a)–(b)."
+    },
+    {
+      "page": 7,
+      "raw": "Treoracha: Ní gá níos mó ná 500‐600 focal nó mar sin a scríobh i gcás ar bith.",
+      "decision": "Length guidance (500–600 words), not a selection."
+    },
+    {
+      "page": 7,
+      "raw": "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t‐ábhar",
+      "decision": "Instruction to keep the chosen title connected; the selection itself is classified on the title lines."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh AISTE nó ALT NUACHTÁIN/IRISE ar cheann amháin de na hábhair seo.",
+      "decision": "AISTE nó ALT is a writing-form choice inside one response (same Stíl/Ábhar/Gaeilge marking); not a separate card. Each printed title A(a)–(e) is its own card."
+    },
+    {
+      "page": 7,
+      "raw": "Ceap SCÉAL a mbeadh do rogha ceann amháin díobh seo oiriúnach mar theideal air.",
+      "decision": "Closed choose-one of A, B, C; with the printed titles this gives nine whole 100-mark title cards: A(a)–(e), B(a)–(b), C(a)–(b). Two titles (a)–(b) for B."
+    },
+    {
+      "page": 7,
+      "raw": "Freagair do rogha ceann amháin díobh seo.",
+      "decision": "Closed choose-one of A, B, C; with the printed titles this gives nine whole 100-mark title cards: A(a)–(e), B(a)–(b), C(a)–(b). C(a) or C(b)."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh an chaint a dhéanfá i ndíospóireacht scoile ar son an rúin seo a leanas nó ina aghaidh:",
+      "decision": "Stance for or against the motion is the argument direction inside one speech, marked identically; not a separate card."
+    },
+    {
+      "page": 7,
+      "raw": "A AISTE nó ALT NUACHTÁIN/IRISE 100 marc",
+      "decision": "AISTE nó ALT is a writing-form choice inside one response (same Stíl/Ábhar/Gaeilge marking); not a separate card. Each printed title A(a)–(e) is its own card."
+    },
+    {
+      "page": 20,
+      "raw": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe Stáit",
+      "decision": "Copyright statement, not a task."
+    },
+    {
+      "page": 20,
+      "raw": "Cearta Gaolmhara, 2000. Ní údaraítear aon úsáid dá éis chun aon chríche ach amháin chun na críche dá bhfuil sé",
+      "decision": "Copyright statement, not a task."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Listening: “Scríobh síos dhá …/Tabhair dhá …” asks for two points at 2 + 2; the scheme lists more accepted points than required. These are answer keys for one task, not task routes.",
+    "Card unit for listening: the eight retained legacy segment cards (Fógra, Mír, Píosa) keep their IDs and stay the card unit, because the Bank plays one recording section as one exercise; every printed question is a separate criterion at its published 2 or 2 + 2 tariff (23 questions, 60 marks). Separate question cards are not added: they would repeat the same prompts inside that exercise.",
+    "Composition: A–C is a closed choose-one; the nine printed titles were already carded as their own cards (live IDs retained). AISTE nó ALT (form) and the debate stance (ar son nó ina aghaidh) stay inside one response.",
+    "The modified marking scheme changes assessment for eligible candidates, not the printed tasks."
+  ],
+  "sourceFindings": [
+    "Paper 1 = 160: Cuid I listening 60 (Cuid A 18 = Fógra 1 10 + Fógra 2 8; Cuid B 28 = Comhrá 1 14 (Mír 1 6 + Mír 2 8) + Comhrá 2 14 (Mír 1 8 + Mír 2 6); Cuid C 14 = Píosa 1 8 + Píosa 2 6), every question 2 marks or 2 + 2; Cuid II composition 100 (choose one of A, B, C).",
+    "Listening language: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge” (scheme PDF 3 and 11) is one section-level deduction; each card states it without applying it.",
+    "Píosa a hAon Q1: the scheme prints “uair an chlog” where the paper has “uair an chloig”; the card keeps the paper wording.",
+    "Composition S4 (“Easnamhach”) applies only to A(c), A(d) and A(e) in 2024 (scheme PDF 17).",
+    "Legacy corrections (IDs, totals and topics unchanged): each segment card had one undivided criterion; the nine composition cards carried paraphrased English marking notes and no S1–S4 grades. All now carry the lifted 2024 scheme text and per-question tariffs."
+  ],
+  "remainingWork": [],
+  "runtimeVerification": {
+    "date": "2026-10-12",
+    "viewport": [
+      390,
+      844
+    ],
+    "markBankRoutes": 4,
+    "atlasRoutes": 5,
+    "sourceReader": "The full listening test (first exercise Cuid A), one segment card and two composition titles rendered their paper page; navigation, close/focus return and overflow checks passed.",
+    "atlas": "Segment and title routes rendered their paper page plus reviewed scheme pages (listening 1+1 and 1+2, composition 1+6); the frozen Cuid A section kept its original crop.",
+    "audio": "Official SEC 2024 Higher/Ordinary recording (LC001ZLP017IV.mp3) played in Bank and Atlas, duration 1356.796719 seconds.",
+    "browserErrors": []
+  }
+}
