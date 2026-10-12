@@ -503,27 +503,6 @@
     "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
     "solution": false
   },
-  "construction-studies-2026-HL-q4-stone-wall": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-stone-wall.png",
-    "md5": "fe20ec15790428913f389a5cda97b44b",
-    "alt": "SEC 2026 Higher marking scheme page on upgrading a solid stone wall, with sections showing breathable insulation and lime plaster on the inside face.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2026-HL-q4-cut-roof": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-cut-roof.png",
-    "md5": "46235df0bd69a5a573f653d223871dbb",
-    "alt": "SEC 2026 Higher marking scheme page on upgrading a traditional cut roof, with sketches of spliced rafter repairs and an insulated slated roof at the eaves.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2026-HL-q4-sash-windows": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q4-sash-windows.png",
-    "md5": "aca0e9475cd8101f47f70fac974e8463",
-    "alt": "SEC 2026 Higher marking scheme page on repairing sliding sash windows, with sketches of a sash window and of secondary glazing.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
   "construction-studies-2026-HL-q5-original": {
     "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q5-original.png",
     "md5": "5ea6943a56c42fd1913da2bcb830fb49",
@@ -607,34 +586,6 @@
     "alt": "Original SEC 2026 Higher Construction Studies Question 9: the printed question with a wall section showing four circled locations at the eaves, window head, window cill and ground floor.",
     "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
     "solution": false
-  },
-  "construction-studies-2026-HL-q9-wall-roof": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-wall-roof.png",
-    "md5": "7ac4104df62230ead477d9265f98feb4",
-    "alt": "SEC model detail at the wall and roof junction showing continuous wall and roof insulation at the eaves.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2026-HL-q9-window-head": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-window-head.png",
-    "md5": "94271c0366dff22e500bcaa8057ed25c",
-    "alt": "SEC model detail at the window head showing the insulated head and cavity closer.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2026-HL-q9-window-cill": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-window-cill.png",
-    "md5": "28396b3a609cc9d3bcdfb19bde1e763d",
-    "alt": "SEC model detail at the window cill showing insulation continued under the cill.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-    "solution": true
-  },
-  "construction-studies-2026-HL-q9-wall-floor": {
-    "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-wall-floor.png",
-    "md5": "ce8ffeb77a3fb2bd8168ad621f388824",
-    "alt": "SEC model detail at the wall and floor junction showing perimeter insulation meeting the cavity insulation.",
-    "attribution": "SEC Leaving Certificate Construction Studies 2026 Higher Level — © State Examinations Commission.",
-    "solution": true
   },
   "construction-studies-2026-HL-q9-details": {
     "src": "/exam-figures/construction-studies/markbank/construction-studies-2026-HL-q9-details.png",

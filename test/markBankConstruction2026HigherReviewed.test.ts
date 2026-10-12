@@ -16,14 +16,14 @@ const review = JSON.parse(fs.readFileSync('scripts/markbank/authored/constructio
 describe('Construction Studies 2026 Higher source-reviewed Q1–Q10 and alternative Q10', () => {
   it('reconciles original wording, tariffs, every finite route, figures and selection directives', () => {
     const result = JSON.parse(execFileSync('python3', ['scripts/markbank/authoring/construction_2026_higher.py'], { encoding: 'utf8' }));
-    expect(result).toEqual({tasks: 69, leafTasks: 36, wholeQuestionRoutes: 22, q4Routes: 9, q9Routes: 4, sourceFigures: 36, paperComplete: true});
+    expect(result).toEqual({tasks: 41, leafTasks: 29, wholeQuestions: 11, anyNChoiceCards: 3, sourceFigures: 29, paperComplete: true});
   });
 
-  it('pins every reviewed card identity, including every Q4 and Q9 route and the alternative Q10', () => {
+  it('pins every reviewed card identity; each printed choice is one anyN card, and the alternative Q10 is separate', () => {
     expect(review.tasks.map(t => t.card.id)).toEqual(CONSTRUCTION_2026_HIGHER_REVIEWED_IDS);
-    expect(new Set(CONSTRUCTION_2026_HIGHER_REVIEWED_IDS).size).toBe(69);
-    expect(CONSTRUCTION_2026_HIGHER_REVIEWED_IDS.filter(id => id.startsWith('cons-2026-hl-q4-complete-'))).toHaveLength(9);
-    expect(CONSTRUCTION_2026_HIGHER_REVIEWED_IDS.filter(id => id.startsWith('cons-2026-hl-q9-complete-'))).toHaveLength(4);
+    expect(new Set(CONSTRUCTION_2026_HIGHER_REVIEWED_IDS).size).toBe(41);
+    expect(CONSTRUCTION_2026_HIGHER_REVIEWED_IDS.filter(id => id.startsWith('cons-2026-hl-q4-'))).toEqual(['cons-2026-hl-q4-a', 'cons-2026-hl-q4-b', 'cons-2026-hl-q4-complete']);
+    expect(CONSTRUCTION_2026_HIGHER_REVIEWED_IDS.filter(id => id.startsWith('cons-2026-hl-q9-'))).toEqual(['cons-2026-hl-q9-a', 'cons-2026-hl-q9-b', 'cons-2026-hl-q9-complete']);
     expect(CONSTRUCTION_2026_HIGHER_REVIEWED_IDS.filter(id => id.startsWith('cons-2026-hl-q10-alt-'))).toHaveLength(3);
   });
 

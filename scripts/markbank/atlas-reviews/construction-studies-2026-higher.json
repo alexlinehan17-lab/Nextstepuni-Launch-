@@ -12,8 +12,8 @@
     "paper-trail-corpus/exampapers/2026/LC029ALP000EV.pdf": "c470bc9009af7f39b2f4bd6c5e1182dd9ccf3190daa15ea8e3c4b75c3cebe0a4",
     "paper-trail-corpus/markingschemes/2026/LC029ALP000EV.pdf": "e78fab89d53f74c61721efaee0e3371312bc52080ecfa45e5008e98c6905cd0d"
   },
-  "expectedRuntimeCards": 69,
-  "reason": "2026 Higher main English theory: all ten printed questions and the alternative Question 10 (sharing the original Q10 anchor); 69 source-reviewed tasks with every finite route. Practical/Irish/other papers remain open.",
+  "expectedRuntimeCards": 41,
+  "reason": "2026 Higher main English theory: all ten printed questions and the alternative Question 10 (sharing the original Q10 anchor); 41 source-reviewed tasks with every finite route. Practical/Irish/other papers remain open.",
   "questions": [
     {
       "n": "1",
@@ -300,72 +300,34 @@
       ]
     },
     {
-      "cardId": "cons-2026-hl-q4-a-stone-wall",
+      "cardId": "cons-2026-hl-q4-a",
       "markBankTopicId": "cons-1-1",
       "canonicalTopicIds": [
         "cons-1-1",
         "cons-3-3",
-        "cons-6-2"
+        "cons-6-2",
+        "cons-3-9",
+        "cons-3-5",
+        "cons-3-6"
       ],
-      "canonicalTopicReview": "Conserving an historic building (1.1) by upgrading its solid external wall (3.3) with breathable insulation (6.2).",
+      "canonicalTopicReview": "The union of the three printed areas: Conserving an historic building (1.1) by upgrading its solid external wall (3.3) with breathable insulation (6.2). Conserving an historic roof (1.1) while adding breathable roof insulation under natural slate (3.9, 6.2). Conserving historic windows (1.1): sash window repair (3.5) and glazing upgrades (3.6).",
       "questionNumber": "4",
       "atlasTopicIds": [
         "construction-studies-higher-conservation-restoration",
         "construction-studies-higher-walls",
-        "construction-studies-higher-heat-loss-insulation"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-a-cut-roof",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-3-9",
-        "cons-6-2"
-      ],
-      "canonicalTopicReview": "Conserving an historic roof (1.1) while adding breathable roof insulation under natural slate (3.9, 6.2).",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
+        "construction-studies-higher-heat-loss-insulation",
         "construction-studies-higher-roofs",
-        "construction-studies-higher-heat-loss-insulation"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-a-sash-windows",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-3-5",
-        "cons-3-6"
-      ],
-      "canonicalTopicReview": "Conserving historic windows (1.1): sash window repair (3.5) and glazing upgrades (3.6).",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
         "construction-studies-higher-windows-light"
       ]
     },
     {
-      "cardId": "cons-2026-hl-q4-b-conservation-original-materials",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1"
-      ],
-      "canonicalTopicReview": "Conservation of historic fabric (1.1).",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-b-breathable-structure",
+      "cardId": "cons-2026-hl-q4-b",
       "markBankTopicId": "cons-1-1",
       "canonicalTopicIds": [
         "cons-1-1",
         "cons-6-6"
       ],
-      "canonicalTopicReview": "Conservation (1.1) of a vapour-open fabric that avoids condensation (6.6).",
+      "canonicalTopicReview": "The union of the three printed principles: Conservation of historic fabric (1.1). Conservation (1.1) of a vapour-open fabric that avoids condensation (6.6). Respect for historic buildings (1.1).",
       "questionNumber": "4",
       "atlasTopicIds": [
         "construction-studies-higher-conservation-restoration",
@@ -373,178 +335,13 @@
       ]
     },
     {
-      "cardId": "cons-2026-hl-q4-b-respect-built-heritage",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1"
-      ],
-      "canonicalTopicReview": "Respect for historic buildings (1.1).",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-a-stone-wall-and-cut-roof",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-3-3",
-        "cons-6-2",
-        "cons-3-9"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
-        "construction-studies-higher-walls",
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-roofs"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-a-stone-wall-and-sash-windows",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-3-3",
-        "cons-6-2",
-        "cons-3-5",
-        "cons-3-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
-        "construction-studies-higher-walls",
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-windows-light"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-a-cut-roof-and-sash-windows",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-3-9",
-        "cons-6-2",
-        "cons-3-5",
-        "cons-3-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
-        "construction-studies-higher-roofs",
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-windows-light"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-b-conservation-original-materials-and-breathable-structure",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-6-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
-        "construction-studies-higher-condensation-air-tightness"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-b-conservation-original-materials-and-respect-built-heritage",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-b-breathable-structure-and-respect-built-heritage",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-6-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
-        "construction-studies-higher-condensation-air-tightness"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-complete-stone-wall-and-cut-roof--conservation-original-materials-and-breathable-structure",
+      "cardId": "cons-2026-hl-q4-complete",
       "markBankTopicId": "cons-1-1",
       "canonicalTopicIds": [
         "cons-1-1",
         "cons-3-3",
         "cons-6-2",
         "cons-3-9",
-        "cons-6-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
-        "construction-studies-higher-walls",
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-roofs",
-        "construction-studies-higher-condensation-air-tightness"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-complete-stone-wall-and-cut-roof--conservation-original-materials-and-respect-built-heritage",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-3-3",
-        "cons-6-2",
-        "cons-3-9"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
-        "construction-studies-higher-walls",
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-roofs"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-complete-stone-wall-and-cut-roof--breathable-structure-and-respect-built-heritage",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-3-3",
-        "cons-6-2",
-        "cons-3-9",
-        "cons-6-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
-        "construction-studies-higher-walls",
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-roofs",
-        "construction-studies-higher-condensation-air-tightness"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-complete-stone-wall-and-sash-windows--conservation-original-materials-and-breathable-structure",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-3-3",
-        "cons-6-2",
         "cons-3-5",
         "cons-3-6",
         "cons-6-6"
@@ -555,107 +352,7 @@
         "construction-studies-higher-conservation-restoration",
         "construction-studies-higher-walls",
         "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-windows-light",
-        "construction-studies-higher-condensation-air-tightness"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-complete-stone-wall-and-sash-windows--conservation-original-materials-and-respect-built-heritage",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-3-3",
-        "cons-6-2",
-        "cons-3-5",
-        "cons-3-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
-        "construction-studies-higher-walls",
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-windows-light"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-complete-stone-wall-and-sash-windows--breathable-structure-and-respect-built-heritage",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-3-3",
-        "cons-6-2",
-        "cons-3-5",
-        "cons-3-6",
-        "cons-6-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
-        "construction-studies-higher-walls",
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-windows-light",
-        "construction-studies-higher-condensation-air-tightness"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-complete-cut-roof-and-sash-windows--conservation-original-materials-and-breathable-structure",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-3-9",
-        "cons-6-2",
-        "cons-3-5",
-        "cons-3-6",
-        "cons-6-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
         "construction-studies-higher-roofs",
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-windows-light",
-        "construction-studies-higher-condensation-air-tightness"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-complete-cut-roof-and-sash-windows--conservation-original-materials-and-respect-built-heritage",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-3-9",
-        "cons-6-2",
-        "cons-3-5",
-        "cons-3-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
-        "construction-studies-higher-roofs",
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-windows-light"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q4-complete-cut-roof-and-sash-windows--breathable-structure-and-respect-built-heritage",
-      "markBankTopicId": "cons-1-1",
-      "canonicalTopicIds": [
-        "cons-1-1",
-        "cons-3-9",
-        "cons-6-2",
-        "cons-3-5",
-        "cons-3-6",
-        "cons-6-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "4",
-      "atlasTopicIds": [
-        "construction-studies-higher-conservation-restoration",
-        "construction-studies-higher-roofs",
-        "construction-studies-higher-heat-loss-insulation",
         "construction-studies-higher-windows-light",
         "construction-studies-higher-condensation-air-tightness"
       ]
@@ -859,88 +556,7 @@
       ]
     },
     {
-      "cardId": "cons-2026-hl-q9-a-wall-roof",
-      "markBankTopicId": "cons-6-2",
-      "canonicalTopicIds": [
-        "cons-6-2",
-        "cons-3-10",
-        "cons-3-3"
-      ],
-      "canonicalTopicReview": "Thermal bridging (6.2) at the eaves (3.10) of the external wall (3.3).",
-      "questionNumber": "9",
-      "atlasTopicIds": [
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-roofs",
-        "construction-studies-higher-walls"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q9-a-window-head",
-      "markBankTopicId": "cons-6-2",
-      "canonicalTopicIds": [
-        "cons-6-2",
-        "cons-3-6",
-        "cons-3-4"
-      ],
-      "canonicalTopicReview": "Thermal bridging (6.2) at the window head (3.6) and lintel (3.4).",
-      "questionNumber": "9",
-      "atlasTopicIds": [
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-windows-light",
-        "construction-studies-higher-walls"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q9-a-window-cill",
-      "markBankTopicId": "cons-6-2",
-      "canonicalTopicIds": [
-        "cons-6-2",
-        "cons-3-6"
-      ],
-      "canonicalTopicReview": "Thermal bridging (6.2) at the window cill (3.6).",
-      "questionNumber": "9",
-      "atlasTopicIds": [
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-windows-light"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q9-a-wall-floor",
-      "markBankTopicId": "cons-6-2",
-      "canonicalTopicIds": [
-        "cons-6-2",
-        "cons-4-2",
-        "cons-3-3"
-      ],
-      "canonicalTopicReview": "Thermal bridging (6.2) at the ground floor (4.2) to external wall (3.3) junction.",
-      "questionNumber": "9",
-      "atlasTopicIds": [
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-floors",
-        "construction-studies-higher-walls"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q9-a-wall-roof-window-head-window-cill",
-      "markBankTopicId": "cons-6-2",
-      "canonicalTopicIds": [
-        "cons-6-2",
-        "cons-3-10",
-        "cons-3-3",
-        "cons-3-6",
-        "cons-3-4"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "9",
-      "atlasTopicIds": [
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-roofs",
-        "construction-studies-higher-walls",
-        "construction-studies-higher-windows-light"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q9-a-wall-roof-window-head-wall-floor",
+      "cardId": "cons-2026-hl-q9-a",
       "markBankTopicId": "cons-6-2",
       "canonicalTopicIds": [
         "cons-6-2",
@@ -950,52 +566,13 @@
         "cons-3-4",
         "cons-4-2"
       ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "canonicalTopicReview": "The union of the four circled locations: Thermal bridging (6.2) at the eaves (3.10) of the external wall (3.3). Thermal bridging (6.2) at the window head (3.6) and lintel (3.4). Thermal bridging (6.2) at the window cill (3.6). Thermal bridging (6.2) at the ground floor (4.2) to external wall (3.3) junction.",
       "questionNumber": "9",
       "atlasTopicIds": [
         "construction-studies-higher-heat-loss-insulation",
         "construction-studies-higher-roofs",
         "construction-studies-higher-walls",
         "construction-studies-higher-windows-light",
-        "construction-studies-higher-floors"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q9-a-wall-roof-window-cill-wall-floor",
-      "markBankTopicId": "cons-6-2",
-      "canonicalTopicIds": [
-        "cons-6-2",
-        "cons-3-10",
-        "cons-3-3",
-        "cons-3-6",
-        "cons-4-2"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "9",
-      "atlasTopicIds": [
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-roofs",
-        "construction-studies-higher-walls",
-        "construction-studies-higher-windows-light",
-        "construction-studies-higher-floors"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q9-a-window-head-window-cill-wall-floor",
-      "markBankTopicId": "cons-6-2",
-      "canonicalTopicIds": [
-        "cons-6-2",
-        "cons-3-6",
-        "cons-3-4",
-        "cons-4-2",
-        "cons-3-3"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "9",
-      "atlasTopicIds": [
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-windows-light",
-        "construction-studies-higher-walls",
         "construction-studies-higher-floors"
       ]
     },
@@ -1014,28 +591,7 @@
       ]
     },
     {
-      "cardId": "cons-2026-hl-q9-complete-wall-roof-window-head-window-cill",
-      "markBankTopicId": "cons-6-2",
-      "canonicalTopicIds": [
-        "cons-6-2",
-        "cons-3-10",
-        "cons-3-3",
-        "cons-3-6",
-        "cons-3-4",
-        "cons-6-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "9",
-      "atlasTopicIds": [
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-roofs",
-        "construction-studies-higher-walls",
-        "construction-studies-higher-windows-light",
-        "construction-studies-higher-condensation-air-tightness"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q9-complete-wall-roof-window-head-wall-floor",
+      "cardId": "cons-2026-hl-q9-complete",
       "markBankTopicId": "cons-6-2",
       "canonicalTopicIds": [
         "cons-6-2",
@@ -1053,49 +609,6 @@
         "construction-studies-higher-roofs",
         "construction-studies-higher-walls",
         "construction-studies-higher-windows-light",
-        "construction-studies-higher-floors",
-        "construction-studies-higher-condensation-air-tightness"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q9-complete-wall-roof-window-cill-wall-floor",
-      "markBankTopicId": "cons-6-2",
-      "canonicalTopicIds": [
-        "cons-6-2",
-        "cons-3-10",
-        "cons-3-3",
-        "cons-3-6",
-        "cons-4-2",
-        "cons-6-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "9",
-      "atlasTopicIds": [
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-roofs",
-        "construction-studies-higher-walls",
-        "construction-studies-higher-windows-light",
-        "construction-studies-higher-floors",
-        "construction-studies-higher-condensation-air-tightness"
-      ]
-    },
-    {
-      "cardId": "cons-2026-hl-q9-complete-window-head-window-cill-wall-floor",
-      "markBankTopicId": "cons-6-2",
-      "canonicalTopicIds": [
-        "cons-6-2",
-        "cons-3-6",
-        "cons-3-4",
-        "cons-4-2",
-        "cons-3-3",
-        "cons-6-6"
-      ],
-      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
-      "questionNumber": "9",
-      "atlasTopicIds": [
-        "construction-studies-higher-heat-loss-insulation",
-        "construction-studies-higher-windows-light",
-        "construction-studies-higher-walls",
         "construction-studies-higher-floors",
         "construction-studies-higher-condensation-air-tightness"
       ]
