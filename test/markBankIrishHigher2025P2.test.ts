@@ -137,7 +137,7 @@ print('source guard passed')
     const row = inventory.papers.find(p => p.key === '2025|higher|LC001ALP200IV.pdf')!;
     expect(row.markBankCardIds.slice().sort()).toEqual(cards.map(c => c.id).sort());
     expect(row).toMatchObject({ fullVisualReview: 'complete', bankAtlasTaskParity: 'complete', partAndSelectionReconciliation: 'complete' });
-    expect(inventory.summary.papersPendingFullReview).toBe(63);
+    expect(inventory.summary.papersPendingFullReview).toBe(62);
     expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });
