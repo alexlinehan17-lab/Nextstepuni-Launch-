@@ -33,6 +33,7 @@ import ordinary2024p2 from '../scripts/markbank/mathematics/reviews/2024-ordinar
 import ordinary2023p1 from '../scripts/markbank/mathematics/reviews/2023-ordinary-p1.json';
 import ordinary2023p2 from '../scripts/markbank/mathematics/reviews/2023-ordinary-p2.json';
 import higher2022p1 from '../scripts/markbank/mathematics/reviews/2022-higher-p1.json';
+import higher2022p2 from '../scripts/markbank/mathematics/reviews/2022-higher-p2.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
 import ordinary2026p1 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p1.json';
@@ -852,6 +853,7 @@ describe('2023 Ordinary Mathematics Paper 2 marking-point repairs', () => {
 // COVID-19 (220 marks to count) but every question is offered and retained.
 describe.each([
   { year: 2022, level: 'higher' as const, number: 1, count: 43, review: higher2022p1 },
+  { year: 2022, level: 'higher' as const, number: 2, count: 43, review: higher2022p2 },
 ])('$year $level Mathematics Paper $number independent source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
   const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
@@ -887,5 +889,20 @@ describe.each([
         expect((row.group?.options ?? []).join(' '), card.id).not.toMatch(/Full Credit ?[(]?[-−–]1|Zero Credit/);
       }
     }
+  });
+});
+
+describe('2022 Higher Mathematics Paper 2 six-category scale and restored tasks', () => {
+  const card = (suffix: string) => HIGHER.find(candidate => candidate.id === `maths-2022-hl-p2-q${suffix}`)!;
+
+  it('awards Q10(e) on the published six-category 15E scale', () => {
+    const marathon = card('10-e');
+    expect('mathematicsScale' in marathon && marathon.mathematicsScale).toMatchObject({ code: '15E', marks: [0, 3, 6, 9, 12, 15] });
+  });
+
+  it('ships Q2(a) with each high-partial bullet quoted on its own line', () => {
+    const verbatims = card('2-a').rows.map(row => row.verbatim);
+    expect(verbatims).toContain('High Partial Credit — Fully correct substitution into formula');
+    expect(verbatims).toContain('High Partial Credit — 8 + 4/5 (−1 − 8) and −4 + 4/5 (3 − (−4)), or equivalent');
   });
 });

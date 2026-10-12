@@ -10153,7 +10153,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q1(a)(i)",
-  "questionText": "Fill in the three missing values to complete the table above",
+  "questionText": "Fill in the three missing values to complete the table above.",
   "figureKey": "maths-2022-HL-paper-p034-i0",
   "labelKey": [],
   "tariffModel": {
@@ -10186,8 +10186,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q1-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q1-a-i",
+  "stem": "The table below gives some details on the number of different types of student in a university. There are 22 714 students in the university in total. Undergraduate: 12 785 aged 23 or younger, 2922 aged 24 or older, 15 707 in total. Postgraduate: 1353 aged 23 or younger. Total aged 24 or older: 8576. The other three cells of the table are blank."
  },
  {
   "id": "maths-2022-hl-p2-q1-a-ii",
@@ -10198,7 +10199,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q1(a)(ii)",
-  "questionText": "One student is picked at random from the students in the university. Let O be the event that the student is 24 years old, or older. Let U be the event that the student is an undergraduate",
+  "questionText": "One student is picked at random from the students in the university. Let O be the event that the student is 24 years old, or older. Let U be the event that the student is an undergraduate. Are the events O and U independent? Justify your answer.",
   "figureKey": "maths-2022-HL-paper-p035-i0",
   "labelKey": [],
   "tariffModel": {
@@ -10233,8 +10234,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q1-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q1-a-ii",
+  "stem": "The table below gives some details on the number of different types of student in a university. There are 22 714 students in the university in total. Undergraduate: 12 785 aged 23 or younger, 2922 aged 24 or older, 15 707 in total. Postgraduate: 1353 aged 23 or younger. Total aged 24 or older: 8576. The other three cells of the table are blank."
  },
  {
   "id": "maths-2022-hl-p2-q1-b",
@@ -10245,7 +10247,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q1(b)",
-  "questionText": "Three people are picked at random from a class. Find the probability that all three were born on the same day of the week. Assume that the probability of being born on each day is the same",
+  "questionText": "Three people are picked at random from a class. Find the probability that all three were born on the same day of the week. Assume that the probability of being born on each day is the same.",
   "figureKey": "maths-2022-HL-paper-p035-i1",
   "labelKey": [],
   "tariffModel": {
@@ -10278,7 +10280,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q1-b"
  },
  {
@@ -10290,7 +10292,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q1(c)",
-  "questionText": "There are b boys and g girls in a class, where b, g∈ℕ. 3/5 of the students in the class are girls",
+  "questionText": "There are b boys and g girls in a class, where b, g ∈ ℕ. 3/5 of the students in the class are girls. 4 boys and 4 girls join the class. One student is then picked at random from the whole class. The probability that this student is a girl is now 4/7. Find the value of b and the value of g.",
   "figureKey": "maths-2022-HL-paper-p036-i0",
   "labelKey": [],
   "tariffModel": {
@@ -10325,7 +10327,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q1-c"
  },
  {
@@ -10337,40 +10339,79 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q2(a)",
-  "questionText": "The points A (8, −4) and B (−1, 3) are the endpoints of the line segment [AB]",
+  "questionText": "The points A (8, −4) and B (−1, 3) are the endpoints of the line segment [AB]. Find the coordinates of the point C, which divides [AB] internally in the ratio 4 : 1.",
   "figureKey": "maths-2022-HL-paper-p037-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2022-hl-p2-q2-a-r1",
-    "kind": "anyN",
-    "verbatim": "Correct formula with some substitution\nValue from formula explicitly identified (a, b, x₁, y₁, x₂, y₂)\nRecognises 9 steps for x or 7 steps for y\nPlots both points on a set of axes",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "Correct formula with some substitution\nValue from formula explicitly identified (a, b, x₁, y₁, x₂, y₂)\nRecognises 9 steps for x or 7 steps for y\nPlots both points on a set of axes",
-      "Fully correct substitution into formula\n8 + 4/5 (−1 − 8) and −4 + 4/5 (3 − (−4)), or equivalent"
-     ],
-     "perOptionSteps": [
-      3,
-      7
-     ]
-    }
+    "id": "maths-2022-hl-p2-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — x: 9 steps back [8 to −1]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — So x_C = 8 − 4/5 (9) = 4/5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q2-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — y: 7 steps up [−4 to 3]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q2-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct formula with some substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q2-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Value from formula explicitly identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q2-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Recognises 9 steps for x or 7 steps for y",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q2-a-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Plots both points on a set of axes",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q2-a-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Fully correct substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q2-a-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 8 + 4/5 (−1 − 8) and −4 + 4/5 (3 − (−4)), or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q2-a"
  },
  {
@@ -10382,7 +10423,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q2(b)",
-  "questionText": "The line l has a slope of m and contains the point (q, r), where m, q, r∈ℝ are all positive. Find the co-ordinates of the point where l cuts the y-axis, in terms of m, q, and r",
+  "questionText": "The line l has a slope of m and contains the point (q, r), where m, q, r ∈ ℝ are all positive. Find the co-ordinates of the point where l cuts the y-axis, in terms of m, q, and r.",
   "figureKey": "maths-2022-HL-paper-p037-i1",
   "labelKey": [],
   "tariffModel": {
@@ -10415,7 +10456,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q2-b"
  },
  {
@@ -10427,7 +10468,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q2(c)",
-  "questionText": "The line k has a slope of −2. The line j makes an angle of 30° with k",
+  "questionText": "The line k has a slope of −2. The line j makes an angle of 30° with k. Find one possible value of the slope of the line j. Give your answer in the form d + e√f, where d, e, f ∈ ℤ.",
   "figureKey": "maths-2022-HL-paper-p038-i0",
   "labelKey": [],
   "tariffModel": {
@@ -10462,7 +10503,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q2-c"
  },
  {
@@ -10474,7 +10515,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q3(a)",
-  "questionText": "The circle c has equation x2+ y2−2x+ 8y+ k= 0, where k∈ℝ. The radius of c is 5√3",
+  "questionText": "The circle c has equation x² + y² − 2x + 8y + k = 0, where k ∈ ℝ. The radius of c is 5√3. Find the value of k.",
   "figureKey": "maths-2022-HL-paper-p039-i0",
   "labelKey": [],
   "tariffModel": {
@@ -10507,7 +10548,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q3-a"
  },
  {
@@ -10519,7 +10560,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q3(b)",
-  "questionText": "The circle (x−5)² + (y + 2)² = 20 has a tangent at the point (9, −4). Find the slope of this tangent",
+  "questionText": "The circle (x − 5)² + (y + 2)² = 20 has a tangent at the point (9, −4). Find the slope of this tangent.",
   "figureKey": "maths-2022-HL-paper-p039-i1",
   "labelKey": [],
   "tariffModel": {
@@ -10552,7 +10593,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q3-b"
  },
  {
@@ -10564,7 +10605,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q3(c)",
-  "questionText": "Two circles each have both the x-axis and the y-axis as tangents, and each contains the point (1, −8), as shown in the diagram on the right (not to scale)",
+  "questionText": "Two circles each have both the x-axis and the y-axis as tangents, and each contains the point (1, −8), as shown in the diagram on the right (not to scale). Find the equation of each of these circles.",
   "figureKey": "maths-2022-HL-paper-p040-i0",
   "labelKey": [],
   "tariffModel": {
@@ -10599,7 +10640,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q3-c"
  },
  {
@@ -10611,7 +10652,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q4(a)(i)",
-  "questionText": "Prove that tan(A−B) = tanA−tanB 1+tanAtanB",
+  "questionText": "Prove that tan(A − B) = (tan A − tan B)/(1 + tan A tan B).",
   "figureKey": "maths-2022-HL-paper-p041-i0",
   "labelKey": [],
   "tariffModel": {
@@ -10644,7 +10685,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q4-a-i"
  },
  {
@@ -10656,7 +10697,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q4(b)",
-  "questionText": "The triangle ABC is shown in the diagram below",
+  "questionText": "The triangle ABC is shown in the diagram below. |AC| = |BC| and |∠ACB| = 45°. |AB| = 10√(2 − √2), as shown. Find the length |AC|.",
   "figureKey": "maths-2022-HL-paper-p043-i0",
   "labelKey": [],
   "tariffModel": {
@@ -10689,7 +10730,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q4-b"
  },
  {
@@ -10701,44 +10742,67 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q5(a)(i), (ii)",
-  "questionText": "Work out the proportion of the sample that preferred remote learning",
+  "questionText": "(i) Work out the proportion of the sample that preferred remote learning. (ii) Use the margin of error (1/√n) to create a 95% confidence interval for the proportion of the population that preferred remote learning.",
   "figureKey": "maths-2022-HL-paper-p044-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2022-hl-p2-q5-a-i-r1",
-    "kind": "anyN",
-    "verbatim": "(a) (i) p̂ = 135/400 = 0∙3375",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Note: In (i), accept correct answer without work. Note: Accept answers given as percentages, correct to 2 or 4 decimal places. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "(a) (i) p̂ = 135/400 = 0∙3375",
-      "(ii) 0∙3375 ± 1/√400 1/√400",
-      "= 0∙3375 ± 0∙05",
-      "= [0∙2875, 0∙3875]"
-     ],
-     "perOptionSteps": [
-      3,
-      4,
-      3
-     ]
-    }
+    "id": "maths-2022-hl-p2-q5-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — p̂ = 135/400 = 0·3375",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q5-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·3375 ± 0·05",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q5-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = [0·2875, 0·3875]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q5-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Note — In (i), accept correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q5-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Note — Accept answers given as percentages, correct to 2 or 4 decimal places",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q5-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit, for example, indicates 1/√400 in (ii)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q5-a-i-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (i) or (ii) correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q5-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q5-a-i",
+  "stem": "A survey on remote learning was carried out on a random sample of 400 students. 135 of the students preferred remote learning over in-person learning. For parts (a)(i), (a)(ii), and (a)(iii), give all solutions as decimals, correct to 4 decimal places."
  },
  {
   "id": "maths-2022-hl-p2-q5-a-iii",
@@ -10749,7 +10813,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q5(a)(iii)",
-  "questionText": "(iii) Using the proportion from part (a)(i), create a 95% confidence interval for this population proportion that is more accurate than the 95% confidence interval based on the margin of error",
+  "questionText": "Using the proportion from part (a)(i), create a 95% confidence interval for this population proportion that is more accurate than the 95% confidence interval based on the margin of error.",
   "figureKey": "maths-2022-HL-paper-p044-i1",
   "labelKey": [],
   "tariffModel": {
@@ -10782,8 +10846,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q5-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q5-a-iii",
+  "stem": "A survey on remote learning was carried out on a random sample of 400 students. 135 of the students preferred remote learning over in-person learning. For parts (a)(i), (a)(ii), and (a)(iii), give all solutions as decimals, correct to 4 decimal places."
  },
  {
   "id": "maths-2022-hl-p2-q5-b",
@@ -10794,7 +10859,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q5(b)",
-  "questionText": "In 2019, people with a pre-pay mobile phone plan spent an average (mean) of €20∙79 on their mobile phone each month (source: www.comreg.ie)",
+  "questionText": "In 2019, people with a pre-pay mobile phone plan spent an average (mean) of €20·79 on their mobile phone each month (source: www.comreg.ie). In 2021, some students carried out a survey to see if this figure had changed. They surveyed a random sample of 500 people with pre-pay mobile phone plans. For this sample, the mean amount spent per month was €22·16 and the standard deviation was €8·12. Carry out a hypothesis test at the 5% level of significance to see if this shows a change in the mean monthly spend on mobile phones for people with a pre-pay plan. State your null hypothesis and your alternative hypothesis, state your conclusion, and give a reason for your conclusion.",
   "figureKey": "maths-2022-HL-paper-p044-i2",
   "labelKey": [],
   "tariffModel": {
@@ -10829,7 +10894,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q5-b"
  },
  {
@@ -10841,7 +10906,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q6(a)",
-  "questionText": "Construct the circumcentre of the triangle XYZ shown below, using only a compass and straight edge. Label the circumcentre C. Show your construction lines clearly",
+  "questionText": "Construct the circumcentre of the triangle XYZ shown below, using only a compass and straight edge. Label the circumcentre C. Show your construction lines clearly.",
   "figureKey": "maths-2022-HL-paper-p045-i0",
   "labelKey": [],
   "tariffModel": {
@@ -10876,7 +10941,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q6-a"
  },
  {
@@ -10888,7 +10953,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q6(b)",
-  "questionText": "The points A, B, C, and D lie on a circle, as shown in the diagram on the right (not to scale)",
+  "questionText": "The points A, B, C, and D lie on a circle, as shown in the diagram on the right (not to scale). [AB] is a diameter of the circle. |∠DAC| = 40°, as shown. The triangle ABD is isosceles. Find |∠ADC|.",
   "figureKey": "maths-2022-HL-paper-p046-i0",
   "labelKey": [],
   "tariffModel": {
@@ -10923,7 +10988,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q6-b"
  },
  {
@@ -10935,7 +11000,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q6(c)",
-  "questionText": "Prove that O cannot be inside the triangle PQR",
+  "questionText": "Prove that O cannot be inside the triangle PQR. If you are proving this by contradiction, your first line should be: “Assume that O is inside the triangle PQR.”",
   "figureKey": "maths-2022-HL-paper-p046-i1",
   "labelKey": [],
   "tariffModel": {
@@ -10963,8 +11028,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q6-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q6-c",
+  "stem": "The diagram on the right shows the triangle PQR (not to scale). The angle at R is greater than 90°. k is the circumcircle of PQR, as shown, and O is the circumcentre. O is not shown in the diagram."
  },
  {
   "id": "maths-2022-hl-p2-q7-a",
@@ -10975,7 +11041,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q7(a)",
-  "questionText": "A candle in the shape of a cylinder has a diameter of 10 cm and a volume of 450𝜋 cm³. Work out the height of this candle",
+  "questionText": "A candle in the shape of a cylinder has a diameter of 10 cm and a volume of 450π cm³. Work out the height of this candle.",
   "figureKey": "maths-2022-HL-paper-p047-i0",
   "labelKey": [],
   "tariffModel": {
@@ -11008,8 +11074,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q7-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q7-a",
+  "stem": "A company makes and sells candles of different shapes and sizes."
  },
  {
   "id": "maths-2022-hl-p2-q7-b",
@@ -11020,7 +11087,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q7(b)",
-  "questionText": "A small candle in the shape of a cone has a volume of 12𝜋 cm³. A large candle, also in the shape of a cone, has a volume of 150𝜋 cm³. The height of the small candle is h, and the height of the large candle is 2h. The large candle has a radius that is k times that of the small candle, where k∈ℝ",
+  "questionText": "A small candle in the shape of a cone has a volume of 12π cm³. A large candle, also in the shape of a cone, has a volume of 150π cm³. The height of the small candle is h, and the height of the large candle is 2h. The large candle has a radius that is k times that of the small candle, where k ∈ ℝ. Work out the value of k.",
   "figureKey": "maths-2022-HL-paper-p047-i1",
   "labelKey": [],
   "tariffModel": {
@@ -11055,8 +11122,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q7-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q7-b",
+  "stem": "A company makes and sells candles of different shapes and sizes."
  },
  {
   "id": "maths-2022-hl-p2-q7-c",
@@ -11067,7 +11135,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q7(c)",
-  "questionText": "A third conical candle has its curved surface area covered in cloth",
+  "questionText": "A third conical candle has its curved surface area covered in cloth. The net of the cloth is shown in the diagram below (not to scale). This net covers the cone perfectly, with no overlapping material. In the diagram, |∠BOA| = 216°, as shown. |OA| = 8 cm. Find the length of the arc from B to A, in terms of π, and hence find the radius of the cone. Give both answers in cm.",
   "figureKey": "maths-2022-HL-paper-p048-i0",
   "labelKey": [],
   "tariffModel": {
@@ -11102,8 +11170,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q7-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q7-c",
+  "stem": "A company makes and sells candles of different shapes and sizes."
  },
  {
   "id": "maths-2022-hl-p2-q7-d-i",
@@ -11114,7 +11183,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q7(d)(i)",
-  "questionText": "A spherical ball of wax is used as a candle. The radius of the sphere is 2∙7 cm. Find the volume of the sphere, correct to 3 decimal places",
+  "questionText": "A spherical ball of wax is used as a candle. The radius of the sphere is 2·7 cm. Find the volume of the sphere, correct to 3 decimal places.",
   "figureKey": "maths-2022-HL-paper-p048-i1",
   "labelKey": [],
   "tariffModel": {
@@ -11142,8 +11211,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q7-d-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q7-d-i",
+  "stem": "A company makes and sells candles of different shapes and sizes."
  },
  {
   "id": "maths-2022-hl-p2-q7-d-ii",
@@ -11154,7 +11224,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q7(d)(ii)",
-  "questionText": "A horizontal slice is cut off this sphere so that the candle will balance on level surfaces",
+  "questionText": "A horizontal slice is cut off this sphere so that the candle will balance on level surfaces. The area of the circular base of this candle is 5·4 cm². Find the value of l, the vertical distance from the top of the candle to where the cut is made. As shown in the diagram on the right, l > 2·7 cm. Give your answer in cm, correct to the nearest mm.",
   "figureKey": "maths-2022-HL-paper-p049-i0",
   "labelKey": [],
   "tariffModel": {
@@ -11189,8 +11259,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q7-d-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q7-d-ii",
+  "stem": "A company makes and sells candles of different shapes and sizes. A spherical ball of wax is used as a candle. The radius of the sphere is 2·7 cm."
  },
  {
   "id": "maths-2022-hl-p2-q7-e",
@@ -11201,47 +11272,74 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q7(e)",
-  "questionText": "Part of the logo of the company is shown below. ABCD is a square, with sides of length 30 cm. The points E and F are the midpoints of [AB] and [AD], respectively. The lines EC and FB are perpendicular, and meet at the point O",
+  "questionText": "Part of the logo of the company is shown below. ABCD is a square, with sides of length 30 cm. The points E and F are the midpoints of [AB] and [AD], respectively. The lines EC and FB are perpendicular, and meet at the point O. Using similar triangles or trigonometry, find the length |EO|. Give your answer in the form a√b cm, where a, b ∈ ℕ.",
   "figureKey": "maths-2022-HL-paper-p049-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 3, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2022-hl-p2-q7-e-r1",
-    "kind": "anyN",
-    "verbatim": "(e) |EB| |EC| = = 15/(√15² + 30²) = 15√5",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Full Credit –1: Correct value found, but not in the correct form; Finds |OB| (which is 6√5 cm). These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "(e) |EB| |EC| = = 15/(√15² + 30²) = 15√5",
-      "ΔEOB is similar to ΔEBC, so |EO|/|EB| = |EB|/|EC|",
-      "|EO| = 15²/15√5 = 3√5 [cm]",
-      "|∠EBO| = |∠BCE| and tan BCE = 1/2",
-      "sin EBO = |EO|/15 and",
-      "sin EBO = sin BCE = 1/(√1² + 2²) 1/(√1² + 2²) = 1/√5 1/√5",
-      "So |EO| = 15/√5 15/√5 = 3√5 [cm]"
-     ],
-     "perOptionSteps": [
-      2,
-      1,
-      2
-     ]
-    }
+    "id": "maths-2022-hl-p2-q7-e-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |EB| = 15",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q7-e-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — |EC| = √(15² + 30²) = 15√5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q7-e-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — ΔEOB is similar to ΔEBC",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q7-e-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — |EO| = 15²/(15√5) = 3√5 [cm]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q7-e-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit, for example, indicates two similar triangles, or two equal angles, or a correct trigonometric ratio of a relevant angle, or 15",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q7-e-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — States |EO|/|EB| = |EB|/|EC| and has also found |EB| and |EC|",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q7-e-solution-7",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — Correct value found, but not in the correct form",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q7-e-solution-8",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — Finds |OB| (which is 6√5 cm)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q7-e"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q7-e",
+  "stem": "A company makes and sells candles of different shapes and sizes."
  },
  {
   "id": "maths-2022-hl-p2-q8-a-i",
@@ -11252,7 +11350,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q8(a)(i), (ii)",
-  "questionText": "The scatterplot below shows this data for cars A to F",
+  "questionText": "(i) The scatterplot below shows this data for cars A to F. Using the data in the table above, plot and label points to represent cars G and H on the scatterplot below. (ii) On the scatterplot, draw the line of best fit for the data, by eye.",
   "figureKey": "maths-2022-HL-paper-p050-i0",
   "labelKey": [],
   "tariffModel": {
@@ -11285,8 +11383,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q8-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q8-a-i",
+  "stem": "Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway. City (m/g): A 22, B 27, C 24, D 16, E 15, F 21, G 30, H 17. Motorway (m/g): A 34, B 38, C 34, D 27, E 24, F 30, G 40, H 30."
  },
  {
   "id": "maths-2022-hl-p2-q8-a-iii",
@@ -11297,7 +11396,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q8(a)(iii), (iv)",
-  "questionText": "(iii) Two other cars, K and L, have the miles per gallon values given in the following table",
+  "questionText": "(iii) Two other cars, K and L, have the miles per gallon values given in the following table: K has a city value of 20; L has a motorway value of 60. Use your line of best fit on the scatterplot to fill in an estimate for each of the two missing values in the table below. Show your work on the scatterplot. (iv) Based on the data given, would you be more confident in the value you estimated for K or for L? Give a reason for your answer. (Tick one box only.)",
   "figureKey": "maths-2022-HL-paper-p050-i1",
   "labelKey": [],
   "tariffModel": {
@@ -11330,8 +11429,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q8-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q8-a-iii",
+  "stem": "Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway. City (m/g): A 22, B 27, C 24, D 16, E 15, F 21, G 30, H 17. Motorway (m/g): A 34, B 38, C 34, D 27, E 24, F 30, G 40, H 30."
  },
  {
   "id": "maths-2022-hl-p2-q8-c",
@@ -11342,7 +11442,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q8(c)",
-  "questionText": "13 customers rated their experience in a garage, by giving a whole-number score out of 100. The mean score was 52. The median score was 54. No two scores were the same",
+  "questionText": "13 customers rated their experience in a garage, by giving a whole-number score out of 100. The mean score was 52. The median score was 54. No two scores were the same. The table below shows the score for each of the 13 customers (in no particular order): 46, 68, 24, 74, 42, 30, 61, 54, 28, 50, 57, S, M. Stephen gave a score of S and Mary gave a score of M, where S, M ∈ ℕ. Find the least value and the greatest value that S could be.",
   "figureKey": "maths-2022-HL-paper-p051-i1",
   "labelKey": [],
   "tariffModel": {
@@ -11377,7 +11477,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q8-c"
  },
  {
@@ -11389,7 +11489,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q8(d)(i)",
-  "questionText": "If the head gasket blows, John will have to replace his car, at an estimated cost of €20 000. If the head gasket is replaced now, it will cost €1450, and the probability that it blows in the next year will be reduced to 0∙005",
+  "questionText": "If the head gasket blows, John will have to replace his car, at an estimated cost of €20 000. If the head gasket is replaced now, it will cost €1450, and the probability that it blows in the next year will be reduced to 0·005. Based on these figures, use expected values to work out if it is worth replacing the head gasket now, or not.",
   "figureKey": "maths-2022-HL-paper-p052-i0",
   "labelKey": [],
   "tariffModel": {
@@ -11422,8 +11522,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q8-d-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q8-d-i",
+  "stem": "John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year: head gasket blows, 0·095; timing belt goes, 0·041; air filters break, 0·073."
  },
  {
   "id": "maths-2022-hl-p2-q8-d-ii",
@@ -11434,7 +11535,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q8(d)(ii)",
-  "questionText": "Work out the probability that at least one of the events in the table above happens to John’s car this year, taking these events to be independent. Give your answer correct to 3 decimal places",
+  "questionText": "Work out the probability that at least one of the events in the table above happens to John’s car this year, taking these events to be independent. Give your answer correct to 3 decimal places.",
   "figureKey": "maths-2022-HL-paper-p052-i1",
   "labelKey": [],
   "tariffModel": {
@@ -11467,8 +11568,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q8-d-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q8-d-ii",
+  "stem": "John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year: head gasket blows, 0·095; timing belt goes, 0·041; air filters break, 0·073."
  },
  {
   "id": "maths-2022-hl-p2-q9-a",
@@ -11479,7 +11581,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q9(a)",
-  "questionText": "Find the area of Field 1 and, hence, find the area of Field 2. Give each answer correct to the nearest m²",
+  "questionText": "Find the area of Field 1 and, hence, find the area of Field 2. Give each answer correct to the nearest m².",
   "figureKey": "maths-2022-HL-paper-p053-i0",
   "labelKey": [],
   "tariffModel": {
@@ -11514,8 +11616,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q9-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q9-a",
+  "stem": "Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in the diagram below (not to scale). B lies on the line AD. |AB| = 30 m, |BD| = 10 m, |AC| = 35 m, and |∠CAD| = 50°. Note: the angle ABC is not a right angle."
  },
  {
   "id": "maths-2022-hl-p2-q9-b",
@@ -11526,7 +11629,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q9(b)",
-  "questionText": "Find the length of the perimeter of Field 1. Give your answer correct to the nearest metre",
+  "questionText": "Find the length of the perimeter of Field 1. Give your answer correct to the nearest metre.",
   "figureKey": "maths-2022-HL-paper-p053-i1",
   "labelKey": [],
   "tariffModel": {
@@ -11559,8 +11662,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q9-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q9-b",
+  "stem": "Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in the diagram below (not to scale). B lies on the line AD. |AB| = 30 m, |BD| = 10 m, |AC| = 35 m, and |∠CAD| = 50°. Note: the angle ABC is not a right angle."
  },
  {
   "id": "maths-2022-hl-p2-q9-c-i",
@@ -11571,7 +11675,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q9(c)(i)",
-  "questionText": "As the airplane flies, its engine makes noise. It takes some time for this sound to reach Oscar. Use the information in Diagram 1 to show that it takes 41 seconds for the sound the airplane makes at P₁ to reach Oscar, correct to the nearest second",
+  "questionText": "As the airplane flies, its engine makes noise. It takes some time for this sound to reach Oscar. Use the information in Diagram 1 to show that it takes 41 seconds for the sound the airplane makes at P₁ to reach Oscar, correct to the nearest second.",
   "figureKey": "maths-2022-HL-paper-p054-i0",
   "labelKey": [],
   "tariffModel": {
@@ -11604,8 +11708,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q9-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q9-c-i",
+  "stem": "Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air."
  },
  {
   "id": "maths-2022-hl-p2-q9-c-ii",
@@ -11616,7 +11721,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q9(c)(ii)",
-  "questionText": "The airplane P is flying at a constant speed of 255 metres per second. By the time Oscar hears the sound the airplane made at the point P₁ , the airplane has flown on to the point P₂ , as shown in Diagram 2 above",
+  "questionText": "The airplane P is flying at a constant speed of 255 metres per second. By the time Oscar hears the sound the airplane made at the point P₁, the airplane has flown on to the point P₂, as shown in Diagram 2 above. Work out the size of the angle marked θ in Diagram 2, correct to 1 decimal place.",
   "figureKey": "maths-2022-HL-paper-p054-i1",
   "labelKey": [],
   "tariffModel": {
@@ -11649,8 +11754,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q9-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q9-c-ii",
+  "stem": "Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air."
  },
  {
   "id": "maths-2022-hl-p2-q9-d-i",
@@ -11661,7 +11767,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q9(d)(i)",
-  "questionText": "Explain briefly why the following equation holds: √100/0∙343 d² 2d 0∙255",
+  "questionText": "Explain briefly why the following equation holds: √(100 + d²)/0·343 = 2d/0·255",
   "figureKey": "maths-2022-HL-paper-p054-i2",
   "labelKey": [],
   "tariffModel": {
@@ -11689,8 +11795,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q9-d-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q9-d-i",
+  "stem": "Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air. P₃ and P₄ are two other points on the flightpath of airplane P. By the time Oscar hears the sound the airplane made at the point P₃, the airplane has flown on to the point P₄, as shown in the diagram below (not to scale). P₃ and P₄ are both a distance of d km from the y-axis."
  },
  {
   "id": "maths-2022-hl-p2-q9-d-ii",
@@ -11701,7 +11808,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q9(d)(ii)",
-  "questionText": "Solve the equation above to find the value of d, correct to 1 decimal place",
+  "questionText": "Solve the equation above to find the value of d, correct to 1 decimal place.",
   "figureKey": "maths-2022-HL-paper-p055-i0",
   "labelKey": [],
   "tariffModel": {
@@ -11736,8 +11843,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q9-d-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q9-d-ii",
+  "stem": "Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air. P₃ and P₄ are two other points on the flightpath of airplane P. By the time Oscar hears the sound the airplane made at the point P₃, the airplane has flown on to the point P₄, as shown in the diagram below (not to scale). P₃ and P₄ are both a distance of d km from the y-axis. The equation is √(100 + d²)/0·343 = 2d/0·255."
  },
  {
   "id": "maths-2022-hl-p2-q10-a-i",
@@ -11748,43 +11856,95 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q10(a)(i)",
-  "questionText": "Find the percentage of runners in these heats who took more than 240 seconds to run the 1500 m",
+  "questionText": "Find the percentage of runners in these heats who took more than 240 seconds to run the 1500 m.",
   "figureKey": "maths-2022-HL-paper-p056-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2022-hl-p2-q10-a-i-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates 𝜇 or 𝜎",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: 1. Find z-score 2. Find 0∙894 3. Find solution. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates 𝜇 or 𝜎",
-      "Finds z-score ( )/12 240−225",
-      "Finds z-score and further work, for example, finds 0∙8944, or indicates 1 −P(x < 240) or similar"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
+    "id": "maths-2022-hl-p2-q10-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — = 1·25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — P(x > 240) = P(z > 1·25)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 1 − 0·8944",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — = 0·1056",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — Answer: 10·56%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "Step — Find z-score",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-a-i-solution-7",
+    "kind": "point",
+    "verbatim": "Step — Find 0·8944",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-a-i-solution-8",
+    "kind": "point",
+    "verbatim": "Step — Find solution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-a-i-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates μ or σ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-a-i-solution-10",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Finds z-score ((240 − 225)/12)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-a-i-solution-11",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finds z-score and further work, for example, finds 0·8944, or indicates 1 − P(x < 240) or similar",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q10-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q10-a-i",
+  "stem": "In an athletics competition, there were a number of heats of the 1500 m race. In the heats, the times that it took the runners to complete the 1500 m were approximately normally distributed, with a mean time of 225 seconds and a standard deviation of 12 seconds."
  },
  {
   "id": "maths-2022-hl-p2-q10-a-ii",
@@ -11795,7 +11955,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q10(a)(ii)",
-  "questionText": "The 20% of runners with the fastest times qualified for the final. Assuming the race times were normally distributed as described above, work out the time needed to qualify for the final, correct to the nearest second",
+  "questionText": "The 20% of runners with the fastest times qualified for the final. Assuming the race times were normally distributed as described above, work out the time needed to qualify for the final, correct to the nearest second.",
   "figureKey": "maths-2022-HL-paper-p056-i1",
   "labelKey": [],
   "tariffModel": {
@@ -11828,8 +11988,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2022-HL-ask-p2-q10-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q10-a-ii",
+  "stem": "In an athletics competition, there were a number of heats of the 1500 m race. In the heats, the times that it took the runners to complete the 1500 m were approximately normally distributed, with a mean time of 225 seconds and a standard deviation of 12 seconds."
  },
  {
   "id": "maths-2022-hl-p2-q10-b",
@@ -11840,7 +12001,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q10(b)",
-  "questionText": "Sally takes part in a number of different races in the competition. The probability that she makes a false start in any given race is 5%. Find the probability that she makes her first false start in her fourth race. Give your answer correct to 4 decimal places",
+  "questionText": "Sally takes part in a number of different races in the competition. The probability that she makes a false start in any given race is 5%. Find the probability that she makes her first false start in her fourth race. Give your answer correct to 4 decimal places.",
   "figureKey": "maths-2022-HL-paper-p056-i2",
   "labelKey": [],
   "tariffModel": {
@@ -11873,7 +12034,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q10-b"
  },
  {
@@ -11885,7 +12046,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q10(c)",
-  "questionText": "20 relay teams took part in the competition. For any particular team, the probability that they drop the baton at some point during the competition is 0∙1",
+  "questionText": "20 relay teams took part in the competition. For any particular team, the probability that they drop the baton at some point during the competition is 0·1. Find the probability that at most 2 teams drop the baton during the competition. Give your answer correct to 4 decimal places.",
   "figureKey": "maths-2022-HL-paper-p057-i0",
   "labelKey": [],
   "tariffModel": {
@@ -11920,7 +12081,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q10-c"
  },
  {
@@ -11932,46 +12093,79 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q10(d)",
-  "questionText": "300 runners take part in a road race. Each runner has a number, from 1 to 300 inclusive. No two runners have the same number",
+  "questionText": "300 runners take part in a road race. Each runner has a number, from 1 to 300 inclusive. No two runners have the same number. Two runners are picked at random from the runners in this race. Work out the probability that the sum of their numbers is 101. Give your answer as a fraction in its simplest form.",
   "figureKey": "maths-2022-HL-paper-p057-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 3, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2022-hl-p2-q10-d-r1",
-    "kind": "anyN",
-    "verbatim": "50 possible pairs of numbers add to 101:",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "50 possible pairs of numbers add to 101:",
-      "1 + 100, 2 + 99, ... , 50 + 51",
-      "300C2 = 44 850 pairs in total.",
-      "So P = 50/(44 850) = 1/897",
-      "100 different 1st numbers could be picked;",
-      "for each, only one 2nd number will give 101:",
-      "P = 100/300 × 1/299 = 1/897"
-     ],
-     "perOptionSteps": [
-      2,
-      1,
-      2
-     ]
-    }
+    "id": "maths-2022-hl-p2-q10-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 50 possible pairs of numbers add to 101:",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 1 + 100, 2 + 99, ... , 50 + 51",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-d-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 300C2 = 44 850 pairs in total.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-d-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — So P = 50/44 850 = 1/897",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-d-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — 100 different 1st numbers could be picked;",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-d-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — for each, only one 2nd number will give 101:",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-d-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — P = 100/300 × 1/299 = 1/897",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-d-solution-8",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit, for example, indicates at least two possible pairs adding to 101, or 300C2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-d-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finds 50 and puts over a relevant number",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q10-d"
  },
  {
@@ -11983,40 +12177,100 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q10(e)",
-  "questionText": "Sorcha ran two different marathons: the Windy Marathon and the Sunny Marathon. The table below gives some details on the finishing times for the two marathons. For each marathon, the finishing times of the runners were approximately normally distributed",
+  "questionText": "Sorcha ran two different marathons: the Windy Marathon and the Sunny Marathon. The table below gives some details on the finishing times for the two marathons. For each marathon, the finishing times of the runners were approximately normally distributed. Sorcha’s position in each marathon was based on her finishing time. Sorcha came 5265th in the Windy Marathon, so exactly 5264 of the 6000 runners had a finishing time that was less than Sorcha’s. Sorcha’s finishing time for both marathons was the same. Use this fact, and the details in the table, to estimate Sorcha’s position in the Sunny Marathon. Show all of your working out. Windy Marathon: mean finishing time 254 minutes, standard deviation 38 minutes, 6000 runners, Sorcha’s position 5265th. Sunny Marathon: mean 247 minutes, standard deviation 29 minutes, 2000 runners.",
   "figureKey": "maths-2022-HL-paper-p058-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 6, 9, 12, 15)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 15,
   "rows": [
    {
-    "id": "maths-2022-hl-p2-q10-e-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit, for example, draws a relevant diagram, indicates 𝜇 or 𝜎 Low Mid Partial Credit\n2 steps correct High Mid Partial Credit\n3 steps correct",
-    "marks": 15,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 6. The full scale runs to 15. Note: 5265 6000 1. Finds 2. Finds the z-score for the Windy marathon 3. Finds the time for the marathons 4. Finds the z-score for the Sunny marathon 5. Finds the finishing position. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "Work of merit, for example, draws a relevant diagram, indicates 𝜇 or 𝜎 Low Mid Partial Credit\n2 steps correct High Mid Partial Credit\n3 steps correct",
-      "4 steps correct"
-     ],
-     "perOptionSteps": [
-      3,
-      12
-     ]
-    }
+    "id": "maths-2022-hl-p2-q10-e-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 5265/6000 = 0·8775",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-e-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — So z = 1·16 or 1·17",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-e-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — So Time = 254 + 1·16(38) = 298·08",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-e-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — i.e. 1921th or 1922th",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-e-solution-5",
+    "kind": "point",
+    "verbatim": "Step 2 — Finds the z-score for the Windy marathon",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-e-solution-6",
+    "kind": "point",
+    "verbatim": "Step 3 — Finds the time for the marathons",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-e-solution-7",
+    "kind": "point",
+    "verbatim": "Step 4 — Finds the z-score for the Sunny marathon",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-e-solution-8",
+    "kind": "point",
+    "verbatim": "Step 5 — Finds the finishing position",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-e-solution-9",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit, for example, draws a relevant diagram, indicates μ or σ",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-e-solution-10",
+    "kind": "point",
+    "verbatim": "Low Mid Partial Credit — 2 steps correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-e-solution-11",
+    "kind": "point",
+    "verbatim": "High Mid Partial Credit — 3 steps correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q10-e-solution-12",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 4 steps correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2022-HL-ask-p2-q10-e"
  },
  {
@@ -62959,5 +63213,168 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2022-hl-p2-q4-a-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q4-a-ii",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 HL Paper 2 Q4(a)(ii)",
+  "questionText": "Write tan 15° in the form (√a − 1)/(√a + 1), where a ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p2-q4-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — tan 15 = tan(60 − 45)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q4-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — = (√3 − 1)/(√3 + 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q4-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — tan 15 = tan(45 − 30)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q4-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Note — accept solution of: tan 15° = −√3 + 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q4-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Work of merit, for example, 60 − 45, or some correct substitution into relevant formula, or top line of relevant formula substituted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q4-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — −√3 + 2 with no supporting work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q4-a-ii-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (tan 60 − tan 45)/(1 + tan 60 tan 45) or equivalent",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q4-a-ii-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Makes error(s) in arriving at (tan 60 − tan 45)/(1 + tan 60 tan 45) (or equivalent) from relevant expression, but finishes correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q4-a-ii-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (√3 − 1)/(√3 + 1) without supporting work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q4-a-ii-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — (1 − 1/√3)/(1 + 1/√3) or −√3 + 2, with supporting work (equivalent to that in model solutions)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2022-hl-p2-q8-a-v",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q8-a-v",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 2 Q8(a)(v), (b)",
+  "questionText": "(a)(v) Find the value of r, the correlation coefficient between city and motorway miles per gallon. Use only the values for the 8 cars A to H in the table on the previous page. Give your answer correct to 3 decimal places. (b) The scatterplot on the right shows some values of fuel consumption (F) for the given values of engine speed (S), for a particular car. For the points in this scatterplot, F can be closely approximated by a quadratic function of S. r_FS is the correlation coefficient between F and S, based on the points in this scatterplot. Give a reason why you might think that r_FS is very close to 0.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p2-q8-a-v-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 0·9659 … = 0·966 [3 D.P.]",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q8-a-v-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Any valid reason, for example:",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q8-a-v-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — Correlation is related to linear relationships, and this is quadratic",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q8-a-v-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — The line of best fit is close to horizontal",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q8-a-v-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — The data is symmetrical: it is decreasing first, and then increasing in a symmetrical way",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q8-a-v-solution-6",
+    "kind": "point",
+    "verbatim": "Note — In (a)(v), accept correct answer without supporting work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q8-a-v-solution-7",
+    "kind": "point",
+    "verbatim": "Partial Credit — Work of merit, for example, in (a)(v), fully substituted correct formula; or, in (b), draws axis of symmetry or line of best fit",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2022-hl-p2-q8-a-v-solution-8",
+    "kind": "point",
+    "verbatim": "Full Credit −1 (deduction) — (b) correct and 0·965 or 0·96 or 0·97 given in (a)(v)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2022 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "stem": "Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway. City (m/g): A 22, B 27, C 24, D 16, E 15, F 21, G 30, H 17. Motorway (m/g): A 34, B 38, C 34, D 27, E 24, F 30, G 40, H 30."
  }
 ]

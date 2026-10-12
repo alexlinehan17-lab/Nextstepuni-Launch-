@@ -852,7 +852,8 @@ export function tariffReconciles(card: SecCard): boolean {
   const { tariffModel: t, rows, totalMarks } = card;
   if (card.mathematicsScale) {
     const scale = card.mathematicsScale;
-    return /^\d+[ABCD]$/.test(scale.code)
+    // A–E: the SEC names its scales by category count; E (six categories) appears on 2021–2022 papers.
+    return /^\d+[ABCDE]$/.test(scale.code)
       && Number.parseInt(scale.code, 10) === totalMarks
       && scale.marks[0] === 0 && scale.marks.at(-1) === totalMarks
       && scale.marks.every((mark, index) => Number.isInteger(mark)

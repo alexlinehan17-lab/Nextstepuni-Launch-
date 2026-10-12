@@ -25,7 +25,9 @@ const MathematicsScalePanel: React.FC<{
   const labels = scale.marks.length === 2 ? ['No credit', 'Full credit']
     : scale.marks.length === 3 ? ['No credit', 'Partial credit', 'Full credit']
       : scale.marks.length === 4 ? ['No credit', 'Low partial credit', 'High partial credit', 'Full credit']
-        : ['No credit', 'Low partial credit', 'Mid partial credit', 'High partial credit', 'Full credit'];
+        : scale.marks.length === 5 ? ['No credit', 'Low partial credit', 'Mid partial credit', 'High partial credit', 'Full credit']
+          // Six-category E scales, named as the SEC scheme names them.
+          : ['No credit', 'Low partial credit', 'Low mid partial credit', 'High mid partial credit', 'High partial credit', 'Full credit'];
   const choices = scale.marks.map((marks, index) => ({ marks, label: labels[index] }));
   if (scale.fullCreditMinusOne && !scale.marks.includes(card.totalMarks - 1)) {
     choices.splice(-1, 0, { marks: card.totalMarks - 1, label: 'Full credit −1' });

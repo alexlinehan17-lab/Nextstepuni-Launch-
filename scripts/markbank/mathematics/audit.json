@@ -30,16 +30,15 @@
       "higher",
       "ordinary"
     ],
-    "runtimeCards": 1574,
-    "authoredCards": 1577,
-    "authoredNotInRuntime": 3,
-    "reviewedPaperEditions": 31,
-    "reviewedMarkedTasks": 1266
+    "runtimeCards": 1577,
+    "authoredCards": 1579,
+    "authoredNotInRuntime": 2,
+    "reviewedPaperEditions": 32,
+    "reviewedMarkedTasks": 1309
   },
   "authoredNotInRuntime": [
     "maths-2021-ol-p1-q2-b",
-    "maths-2021-ol-p2-q5-b-ii",
-    "maths-2022-hl-p2-q2-a"
+    "maths-2021-ol-p2-q5-b-ii"
   ],
   "reviewErrors": [
     "2020/LC003BLP000IV.pdf: missing primary source",
@@ -1512,8 +1511,8 @@
       "schemeAvailable": true,
       "paperPages": 32,
       "answerSidecarAvailable": true,
-      "reviewed": false,
-      "reviewedTaskCount": 0,
+      "reviewed": true,
+      "reviewedTaskCount": 43,
       "selectionCandidates": [
         {
           "id": "3:6add43db1364664a",

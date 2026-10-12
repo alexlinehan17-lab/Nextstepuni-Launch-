@@ -40,8 +40,10 @@ export function applyMathematicsReview(authored) {
       || (authored.stem ?? '') !== (card.stem ?? ''))) {
     throw new Error(`${authored.id}: prompt disagrees with the independently reviewed text`);
   }
-  if (!/^[0-9]+[ABCD]$/.test(card.scale)
-      || card.permittedMarks.length !== 'ABCD'.indexOf(card.scale.at(-1)) + 2
+  // A–E: the SEC labels scales by their number of categories (2–6). The six-category
+  // E scale appears on some adjusted papers (2021–2022), for example 2022 HL Paper 2 Q10(e).
+  if (!/^[0-9]+[ABCDE]$/.test(card.scale)
+      || card.permittedMarks.length !== 'ABCDE'.indexOf(card.scale.at(-1)) + 2
       || Number.parseInt(card.scale, 10) !== card.totalMarks
       || card.permittedMarks[0] !== 0
       || card.permittedMarks.at(-1) !== card.totalMarks

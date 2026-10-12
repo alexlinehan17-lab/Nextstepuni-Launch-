@@ -4501,21 +4501,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q1-a-i", topicId: "maths-1-2", conceptId: "fill-three-missing-values-complete-table",
     section: "B", questionRef: "2022 HL Paper 2 Q1(a)(i)",
-    questionText: "Fill in the three missing values to complete the table above",
+    stem: "The table below gives some details on the number of different types of student in a university. There are 22 714 students in the university in total. Undergraduate: 12 785 aged 23 or younger, 2922 aged 24 or older, 15 707 in total. Postgraduate: 1353 aged 23 or younger. Total aged 24 or older: 8576. The other three cells of the table are blank.",
+    questionText: "Fill in the three missing values to complete the table above.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p2-q1-a-i-r1", kind: "anyN", verbatim: "1 value correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answers without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["1 value correct","2 values correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[35],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q1-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q1-a-i.png",
           "srcHash": "7517abb0b6bf373223685fb95dfeb8f1",
-          "alt": "The question as printed on the paper — The table below gives some details on the number of different types of student in a university. There are 22 714 students in the university in total. Age (years) Total 23 or younger 24 or older 12 785 2922 15 707… Full card prompt: Fill in the three missing values to complete the table above",
+          "alt": "The question as printed on the paper — The table below gives some details on the number of different types of student in a university. There are 22 714 students in the university in total. Age (years) Total 23 or younger 24 or older 12 785 2922 15 707… Full card prompt: The table below gives some details on the number of different types of student in a university. There are 22 714 students in the university in total. Undergraduate: 12 785 aged 23 or younger, 2922 aged 24 or older, 15 707 in total. Postgraduate: 1353 aged 23 or younger. Total aged 24 or older: 8576. The other three cells of the table are blank. Fill in the three missing values to complete the table above.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -4531,21 +4545,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q1-a-ii", topicId: "maths-1-2", conceptId: "one-student-picked-random-students-university",
     section: "B", questionRef: "2022 HL Paper 2 Q1(a)(ii)",
-    questionText: "One student is picked at random from the students in the university. Let O be the event that the student is 24 years old, or older. Let U be the event that the student is an undergraduate",
+    stem: "The table below gives some details on the number of different types of student in a university. There are 22 714 students in the university in total. Undergraduate: 12 785 aged 23 or younger, 2922 aged 24 or older, 15 707 in total. Postgraduate: 1353 aged 23 or younger. Total aged 24 or older: 8576. The other three cells of the table are blank.",
+    questionText: "One student is picked at random from the students in the university. Let O be the event that the student is 24 years old, or older. Let U be the event that the student is an undergraduate. Are the events O and U independent? Justify your answer.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q1-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, correct conclusion, or makes a relevant statement, or finds a relevant probability", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Accept without “≠P(O). P(U)” or similar, if conclusion is correct. Note: calculations that do not involve probabilities are not awarded credit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, correct conclusion, or makes a relevant statement, or finds a relevant probability","Finds two of P(O), P(U), P(O) × P(U), or P(O∩U)\nFinds P(O|U) or P(U|O)","Enough calculations to support a correct conclusion, but no conclusion\nCorrect conclusion and finds P(O) × P(U)\nCorrect conclusion and finds P(O), P(U), and P(O∩U)\nCorrect conclusion and finds P(O|U) or P(U|O)"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[36],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q1-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q1-a-ii.png",
           "srcHash": "94f0e2a211837244651ed51d47a08cf5",
-          "alt": "The question as printed on the paper — The table below gives some details on the number of different types of student in a university. There are 22 714 students in the university in total. Age (years) Total 23 or younger 24 or older 12 785 2922 15 707… Full card prompt: One student is picked at random from the students in the university. Let O be the event that the student is 24 years old, or older. Let U be the event that the student is an undergraduate",
+          "alt": "The question as printed on the paper — The table below gives some details on the number of different types of student in a university. There are 22 714 students in the university in total. Age (years) Total 23 or younger 24 or older 12 785 2922 15 707… Full card prompt: The table below gives some details on the number of different types of student in a university. There are 22 714 students in the university in total. Undergraduate: 12 785 aged 23 or younger, 2922 aged 24 or older, 15 707 in total. Postgraduate: 1353 aged 23 or younger. Total aged 24 or older: 8576. The other three cells of the table are blank. One student is picked at random from the students in the university. Let O be the event that the student is 24 years old, or older. Let U be the event that the student is an undergraduate. Are the events O and U independent? Justify your answer.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -4561,16 +4589,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q1-b", topicId: "maths-1-2", conceptId: "three-people-picked-random-class-probability",
     section: "B", questionRef: "2022 HL Paper 2 Q1(b)",
-    questionText: "Three people are picked at random from a class. Find the probability that all three were born on the same day of the week. Assume that the probability of being born on each day is the same",
+    questionText: "Three people are picked at random from a class. Find the probability that all three were born on the same day of the week. Assume that the probability of being born on each day is the same.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p2-q1-b-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct probability", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: 49Scale 5C (0,2,3,5) 7) =. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, one correct probability","1/7 × 1/7 × 1/7 or 1/343"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[36],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q1-b.png",
@@ -4591,16 +4632,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q1-c", topicId: "maths-3-1", conceptId: "there-boys-girls-class-students-class",
+    id: "maths-2022-hl-p2-q1-c", topicId: "maths-1-2", conceptId: "there-boys-girls-class-students-class",
     section: "B", questionRef: "2022 HL Paper 2 Q1(c)",
-    questionText: "There are b boys and g girls in a class, where b, g∈ℕ. 3/5 of the students in the class are girls",
+    questionText: "There are b boys and g girls in a class, where b, g ∈ ℕ. 3/5 of the students in the class are girls. 4 boys and 4 girls join the class. One student is then picked at random from the whole class. The probability that this student is a girl is now 4/7. Find the value of b and the value of g.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q1-c-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates 2/5, or indicates b + g, or some part of fraction involving b and g correct, or indicates use of additional 4 boys or girls or total of 8 in a relevant probability", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: Finds one variable (b or g). Note: 1. Initial equation in b and g 2. Subsequent equation in b and g 3. Finds b 4. Finds g. Note: Accept verified correct answer (gives b and g, finds b + 4 and g + 4, and verifies that probability is correct). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, indicates 2/5, or indicates b + g, or some part of fraction involving b and g correct, or indicates use of additional 4 boys or girls or total of 8 in a relevant probability","1 step correct\n2 or more incorrect possibilities for b and g tested (by adding 4 to each and finding resulting probability)","2 steps correct\n2 correct linear equations in 2 unknowns\nCorrect answer without supporting work or verification"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[37],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q1-c",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q1-c.png",
@@ -4621,16 +4675,80 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-q2-a", topicId: "maths-2-2", conceptId: "points-endpoints-line-segment",
+    section: "B", questionRef: "2022 HL Paper 2 Q2(a)",
+    questionText: "The points A (8, −4) and B (−1, 3) are the endpoints of the line segment [AB]. Find the coordinates of the point C, which divides [AB] internally in the ratio 4 : 1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-q2-a-solution-1", kind: "point", verbatim: "Model solution — x: 9 steps back [8 to −1]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q2-a-solution-2", kind: "point", verbatim: "Model solution — So x_C = 8 − 4/5 (9) = 4/5", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q2-a-solution-3", kind: "point", verbatim: "Model solution — y: 7 steps up [−4 to 3]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q2-a-solution-4", kind: "point", verbatim: "Low Partial Credit — Correct formula with some substitution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q2-a-solution-5", kind: "point", verbatim: "Low Partial Credit — Value from formula explicitly identified", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q2-a-solution-6", kind: "point", verbatim: "Low Partial Credit — Recognises 9 steps for x or 7 steps for y", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q2-a-solution-7", kind: "point", verbatim: "Low Partial Credit — Plots both points on a set of axes", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q2-a-solution-8", kind: "point", verbatim: "High Partial Credit — Fully correct substitution into formula", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q2-a-solution-9", kind: "point", verbatim: "High Partial Credit — 8 + 4/5 (−1 − 8) and −4 + 4/5 (3 − (−4)), or equivalent", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[38],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-HL-ask-p2-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q2-a.png",
+          "srcHash": "c9f8f759696261ca4b051b5c61a50f57",
+          "alt": "The question as printed on the paper — The points A (8, −4) and B (−1, 3) are the endpoints of the line segment [AB]. Find the coordinates of the point C, which divides [AB] internally in the ratio 4 ∶1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-HL-paper-p037-i0",
+          "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p037-i0.png",
+          "srcHash": "adf6f1b3a1a8eb3264749f79eb6df5b8",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q2(a), typeset as the State Examinations Commission set it. It reads: (a) C = (/(4 + 1) 1(8) + 4(−1) , )/(4 + 1) 1(−4) + 4(3) C = (/5 4 , 8/5) OR x: 9 steps back [8 to −1] So x_C = 8 − 4/5 (9) = 4/5 y: 7 steps up [−4 to 3] So y_C = −4 + 4/5 (7) = 8/5 C = (/5 4 , 8/5)",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q2-b", topicId: "maths-2-2", conceptId: "line-has-slope-contains-point-all",
     section: "B", questionRef: "2022 HL Paper 2 Q2(b)",
-    questionText: "The line l has a slope of m and contains the point (q, r), where m, q, r∈ℝ are all positive. Find the co-ordinates of the point where l cuts the y-axis, in terms of m, q, and r",
+    questionText: "The line l has a slope of m and contains the point (q, r), where m, q, r ∈ ℝ are all positive. Find the co-ordinates of the point where l cuts the y-axis, in terms of m, q, and r.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p2-q2-b-r1", kind: "anyN", verbatim: "Work of merit, for example, equation of line formula (accept m as substitution), or indicates distance q or r correctly on diagram, or indicates x = 0", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Correct values for x and y, but not given as co-ordinates of a point. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, equation of line formula (accept m as substitution), or indicates distance q or r correctly on diagram, or indicates x = 0","States x = 0 and work of merit towards finding y\nCorrect y-value found"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[38],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q2-b.png",
@@ -4651,21 +4769,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q2-c", topicId: "maths-2-2", conceptId: "line-has-slope-line-makes-angle",
     section: "B", questionRef: "2022 HL Paper 2 Q2(c)",
-    questionText: "The line k has a slope of −2. The line j makes an angle of 30° with k",
+    questionText: "The line k has a slope of −2. The line j makes an angle of 30° with k. Find one possible value of the slope of the line j. Give your answer in the form d + e√f, where d, e, f ∈ ℤ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2022-hl-p2-q2-c-r1", kind: "anyN", verbatim: "Work of merit, for example, formula for tan 𝜃 with substitution for given slope, or tan 30° indicated\nIndicates tan^(−1)(−2) or 116∙5 … °", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit –1: Correct value for slope, but not in required form. Note: 1. Subs in 30 or −2 2. Fully substituted formula (30 and −2) 3. Eliminate fractions and expands 4. Find slope. Note: A solution based on tan^(−1)(−2) = 116∙5 … ° is awarded at most. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, formula for tan 𝜃 with substitution for given slope, or tan 30° indicated\nIndicates tan^(−1)(−2) or 116∙5 … °","2 steps correct\nSets 30 = (−2−m₂)/(1−2m2) and finishes correctly","3 steps correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[39],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q2-c",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q2-c.png",
           "srcHash": "7279a91156b9aff9fd16b50127d87879",
-          "alt": "The question as printed on the paper — The line k has a slope of −2. The line j makes an angle of 30° with k. Find Give one your possible answer in value the of form the d slope + of/e√f, the where line one possible value of the slope of the line j. your… Full card prompt: The line k has a slope of −2. The line j makes an angle of 30° with k",
+          "alt": "The question as printed on the paper — The line k has a slope of −2. The line j makes an angle of 30° with k. Find Give one your possible answer in value the of form the d slope + of/e√f, the where line one possible value of the slope of the line j. your… Full card prompt: The line k has a slope of −2. The line j makes an angle of 30° with k. Find one possible value of the slope of the line j. Give your answer in the form d + e√f, where d, e, f ∈ ℤ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -4681,16 +4812,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q3-a", topicId: "maths-3-1", conceptId: "circle-has-equation-radius",
+    id: "maths-2022-hl-p2-q3-a", topicId: "maths-2-2", conceptId: "circle-has-equation-radius",
     section: "B", questionRef: "2022 HL Paper 2 Q3(a)",
-    questionText: "The circle c has equation x2+ y2−2x+ 8y+ k= 0, where k∈ℝ. The radius of c is 5√3",
+    questionText: "The circle c has equation x² + y² − 2x + 8y + k = 0, where k ∈ ℝ. The radius of c is 5√3. Find the value of k.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p2-q3-a-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into a relevant formula, or centre identified, or completes square for x or y in the equation of the circle", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some correct substitution into a relevant formula, or centre identified, or completes square for x or y in the equation of the circle","Finds an equation in k"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[40],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q3-a.png",
@@ -4711,16 +4855,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q3-b", topicId: "maths-2-2", conceptId: "circle-has-tangent-point-slope-tangent",
     section: "B", questionRef: "2022 HL Paper 2 Q3(b)",
-    questionText: "The circle (x−5)² + (y + 2)² = 20 has a tangent at the point (9, −4). Find the slope of this tangent",
+    questionText: "The circle (x − 5)² + (y + 2)² = 20 has a tangent at the point (9, −4). Find the slope of this tangent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q3-b-r1", kind: "anyN", verbatim: "Work of merit, for example, some substitution into slope or line formula, or identifies centre, or some correct differentiation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: First solution: 1. Identifies centre correctly 2. Finds slope of normal correctly 3. Finds slope of tangent correctly. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, some substitution into slope or line formula, or identifies centre, or some correct differentiation","2 steps correct\ndy/dx = (−x + 5)/(y + 2)\nFinds equation of tangent (without explicitly finding the slope)"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[40],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q3-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q3-b.png",
@@ -4741,16 +4898,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q3-c", topicId: "maths-2-2", conceptId: "two-circles-each-have-both-axis",
     section: "B", questionRef: "2022 HL Paper 2 Q3(c)",
-    questionText: "Two circles each have both the x-axis and the y-axis as tangents, and each contains the point (1, −8), as shown in the diagram on the right (not to scale)",
+    questionText: "Two circles each have both the x-axis and the y-axis as tangents, and each contains the point (1, −8), as shown in the diagram on the right (not to scale). Find the equation of each of these circles.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2022-hl-p2-q3-c-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates centre is (r, −r), or some substitution of (1, −8) into equation of circle, or finds c = g², or |g| = |f|", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, indicates centre is (r, −r), or some substitution of (1, −8) into equation of circle, or finds c = g², or |g| = |f|","Finds correct quadratic in one variable (r, g, f, or c), fully expanded","Finds both values of r, f, or g\nFinds one value of r, f, and g, and the equation of the associated circle"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[41],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q3-c",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q3-c.png",
@@ -4771,16 +4941,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q4-a-i", topicId: "maths-2-3", conceptId: "prove-tan-tana-tanb-tanatanb",
     section: "B", questionRef: "2022 HL Paper 2 Q4(a)(i)",
-    questionText: "Prove that tan(A−B) = tanA−tanB 1+tanAtanB",
+    questionText: "Prove that tan(A − B) = (tan A − tan B)/(1 + tan A tan B).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q4-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates that A−B = A + (−B), or writes tan A = (sin A)/(cos A)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, indicates that A−B = A + (−B), or writes tan A = (sin A)/(cos A)","(tan A + tan (−B))/(1−tan A tan(−B))\n(sin A cos B−cos A sin B)/(cos A cos B + sin A sin B)"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[42],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q4-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q4-a-i.png",
@@ -4801,16 +4984,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q4-b", topicId: "maths-2-3", conceptId: "triangle-abc-shown-diagram",
     section: "B", questionRef: "2022 HL Paper 2 Q4(b)",
-    questionText: "The triangle ABC is shown in the diagram below",
+    questionText: "The triangle ABC is shown in the diagram below. |AC| = |BC| and |∠ACB| = 45°. |AB| = 10√(2 − √2), as shown. Find the length |AC|.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q4-b-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into a relevant formula, or finds angle at A or B, or draws perpendicular from C (right angle indicated)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Full Credit –1: Early rounding and finishes correctly. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, some correct substitution into a relevant formula, or finds angle at A or B, or draws perpendicular from C (right angle indicated)","Fully substituted formula (Sine Rule, Cosine Rule, or cos 67∙5)"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[44],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q4-b.png",
@@ -4831,21 +5027,41 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q5-a-i", topicId: "maths-1-5", conceptId: "work-out-proportion-sample-preferred-remote",
+    id: "maths-2022-hl-p2-q5-a-i", topicId: "maths-1-7", conceptId: "work-out-proportion-sample-preferred-remote",
     section: "B", questionRef: "2022 HL Paper 2 Q5(a)(i), (ii)",
-    questionText: "Work out the proportion of the sample that preferred remote learning",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "A survey on remote learning was carried out on a random sample of 400 students. 135 of the students preferred remote learning over in-person learning. For parts (a)(i), (a)(ii), and (a)(iii), give all solutions as decimals, correct to 4 decimal places.",
+    questionText: "(i) Work out the proportion of the sample that preferred remote learning. (ii) Use the margin of error (1/√n) to create a 95% confidence interval for the proportion of the population that preferred remote learning.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-hl-p2-q5-a-i-r1", kind: "anyN", verbatim: "(a) (i) p̂ = 135/400 = 0∙3375", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Note: In (i), accept correct answer without work. Note: Accept answers given as percentages, correct to 2 or 4 decimal places. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["(a) (i) p̂ = 135/400 = 0∙3375","(ii) 0∙3375 ± 1/√400 1/√400","= 0∙3375 ± 0∙05","= [0∙2875, 0∙3875]"],"perOptionSteps":[3,4,3]} },
+    { id: "maths-2022-hl-p2-q5-a-i-solution-1", kind: "point", verbatim: "Model solution — p̂ = 135/400 = 0·3375", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q5-a-i-solution-2", kind: "point", verbatim: "Model solution — = 0·3375 ± 0·05", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q5-a-i-solution-3", kind: "point", verbatim: "Model solution — = [0·2875, 0·3875]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q5-a-i-solution-4", kind: "point", verbatim: "Note — In (i), accept correct answer without work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q5-a-i-solution-5", kind: "point", verbatim: "Note — Accept answers given as percentages, correct to 2 or 4 decimal places", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q5-a-i-solution-6", kind: "point", verbatim: "Low Partial Credit — Work of merit, for example, indicates 1/√400 in (ii)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q5-a-i-solution-7", kind: "point", verbatim: "High Partial Credit — (i) or (ii) correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[45],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q5-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q5-a-i.png",
           "srcHash": "dc686a2d11bfe1564e868debc3700cd5",
-          "alt": "The question as printed on the paper — A survey on remote learning was carried out on a random sample of 400 students. 135 of the students preferred remote learning over in-person learning. For parts (a)(i), (a)(ii), and (a)(iii), give all solutions as… Full card prompt: Work out the proportion of the sample that preferred remote learning",
+          "alt": "The question as printed on the paper — A survey on remote learning was carried out on a random sample of 400 students. 135 of the students preferred remote learning over in-person learning. For parts (a)(i), (a)(ii), and (a)(iii), give all solutions as… Full card prompt: A survey on remote learning was carried out on a random sample of 400 students. 135 of the students preferred remote learning over in-person learning. For parts (a)(i), (a)(ii), and (a)(iii), give all solutions as decimals, correct to 4 decimal places. (i) Work out the proportion of the sample that preferred remote learning. (ii) Use the margin of error (1/√n) to create a 95% confidence interval for the proportion of the population that preferred remote learning.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -4861,21 +5077,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q5-a-iii", topicId: "maths-1-7", conceptId: "iii-using-proportion-part-create-confidence",
     section: "B", questionRef: "2022 HL Paper 2 Q5(a)(iii)",
-    questionText: "(iii) Using the proportion from part (a)(i), create a 95% confidence interval for this population proportion that is more accurate than the 95% confidence interval based on the margin of error",
+    stem: "A survey on remote learning was carried out on a random sample of 400 students. 135 of the students preferred remote learning over in-person learning. For parts (a)(i), (a)(ii), and (a)(iii), give all solutions as decimals, correct to 4 decimal places.",
+    questionText: "Using the proportion from part (a)(i), create a 95% confidence interval for this population proportion that is more accurate than the 95% confidence interval based on the margin of error.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p2-q5-a-iii-r1", kind: "anyN", verbatim: "Some substitution into correct formula, or substantial part thereof\nIndicates 1∙96, or 1 −p̂", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Some substitution into correct formula, or substantial part thereof\nIndicates 1∙96, or 1 −p̂","Fully substituted correct formula\nFinds the maximum or minimum of the confidence interval"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[45],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q5-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q5-a-iii.png",
           "srcHash": "fbe138c919633df5648a84b2a70d641e",
-          "alt": "The question as printed on the paper — A survey on remote learning was carried out on a random sample of 400 students. 135 of the students preferred remote learning over in-person learning. For parts (a)(i), (a)(ii), and (a)(iii), give all solutions as… Full card prompt: (iii) Using the proportion from part (a)(i), create a 95% confidence interval for this population proportion that is more accurate than the 95% confidence interval based on the margin of error",
+          "alt": "The question as printed on the paper — A survey on remote learning was carried out on a random sample of 400 students. 135 of the students preferred remote learning over in-person learning. For parts (a)(i), (a)(ii), and (a)(iii), give all solutions as… Full card prompt: A survey on remote learning was carried out on a random sample of 400 students. 135 of the students preferred remote learning over in-person learning. For parts (a)(i), (a)(ii), and (a)(iii), give all solutions as decimals, correct to 4 decimal places. Using the proportion from part (a)(i), create a 95% confidence interval for this population proportion that is more accurate than the 95% confidence interval based on the margin of error.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -4891,16 +5121,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q5-b", topicId: "maths-1-6", conceptId: "2019-people-pre-pay-mobile-phone",
+    id: "maths-2022-hl-p2-q5-b", topicId: "maths-1-7", conceptId: "2019-people-pre-pay-mobile-phone",
     section: "B", questionRef: "2022 HL Paper 2 Q5(b)",
-    questionText: "In 2019, people with a pre-pay mobile phone plan spent an average (mean) of €20∙79 on their mobile phone each month (source: www.comreg.ie)",
+    questionText: "In 2019, people with a pre-pay mobile phone plan spent an average (mean) of €20·79 on their mobile phone each month (source: www.comreg.ie). In 2021, some students carried out a survey to see if this figure had changed. They surveyed a random sample of 500 people with pre-pay mobile phone plans. For this sample, the mean amount spent per month was €22·16 and the standard deviation was €8·12. Carry out a hypothesis test at the 5% level of significance to see if this shows a change in the mean monthly spend on mobile phones for people with a pre-pay plan. State your null hypothesis and your alternative hypothesis, state your conclusion, and give a reason for your conclusion.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2022-hl-p2-q5-b-r1", kind: "anyN", verbatim: "Work of merit, for example, one hypothesis stated correctly, some relevant calculation indicated, identifies 𝜇 or 𝜎, hypotheses swapped", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Note: 1. Hypotheses 2. Calculations (sufficient to support a conclusion) 3. Conclusion (not considered correct without some relevant calculations) 4. Reason (must match calculations). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, one hypothesis stated correctly, some relevant calculation indicated, identifies 𝜇 or 𝜎, hypotheses swapped","Calculations correct\n2 steps correct","Calculations correct and one other step"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[45],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q5-b.png",
@@ -4921,16 +5164,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q6-a", topicId: "maths-2-3", conceptId: "construct-circumcentre-triangle-xyz-shown-using",
+    id: "maths-2022-hl-p2-q6-a", topicId: "maths-2-1", conceptId: "construct-circumcentre-triangle-xyz-shown-using",
     section: "B", questionRef: "2022 HL Paper 2 Q6(a)",
-    questionText: "Construct the circumcentre of the triangle XYZ shown below, using only a compass and straight edge. Label the circumcentre C. Show your construction lines clearly",
+    questionText: "Construct the circumcentre of the triangle XYZ shown below, using only a compass and straight edge. Label the circumcentre C. Show your construction lines clearly.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2022-hl-p2-q6-a-r1", kind: "anyN", verbatim: "Some indication of understanding of perpendicular bisector or midpoint, or some evidence of relevant use of compass\nWork towards finding the incentre, orthocentre, or centroid", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit –1: 2 intersecting perpendicular bisectors constructed (with construction lines), but circumcentre not labelled. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Some indication of understanding of perpendicular bisector or midpoint, or some evidence of relevant use of compass\nWork towards finding the incentre, orthocentre, or centroid","1 perpendicular bisector constructed (with construction lines)\n2 non-intersecting perpendicular bisectors drawn, without construction lines","2 non-intersecting perpendicular bisectors constructed (with construction lines)\n2 intersecting perpendicular bisectors drawn, without construction lines\nCentre correct, no construction lines"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[46],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q6-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q6-a.png",
@@ -4951,21 +5207,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q6-b", topicId: "maths-2-2", conceptId: "points-lie-circle-shown-diagram-right",
+    id: "maths-2022-hl-p2-q6-b", topicId: "maths-2-1", conceptId: "points-lie-circle-shown-diagram-right",
     section: "B", questionRef: "2022 HL Paper 2 Q6(b)",
-    questionText: "The points A, B, C, and D lie on a circle, as shown in the diagram on the right (not to scale)",
+    questionText: "The points A, B, C, and D lie on a circle, as shown in the diagram on the right (not to scale). [AB] is a diameter of the circle. |∠DAC| = 40°, as shown. The triangle ABD is isosceles. Find |∠ADC|.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q6-b-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates 90° or right angle or |AD| = |DB|", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, indicates 90° or right angle or |AD| = |DB|","Finds 45° angle(s) in triangle ADB\nIndicates two equal angles standing on same arc","Indicates two equal angles standing on same arc, and indicates 90° or uses given isosceles triangle"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[47],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q6-b.png",
           "srcHash": "62be86738c3abc92c3fcfd5a1f6dbd84",
-          "alt": "The question as printed on the paper — The points A, B, C, and D lie on a circle, as shown in the diagram 40° on the right (not to scale). [AB] is a diameter of the circle. |∠DAC| = 40°, as shown. The triangle ABD is isosceles. Find |∠ ADC|. There is space… Full card prompt: The points A, B, C, and D lie on a circle, as shown in the diagram on the right (not to scale)",
+          "alt": "The question as printed on the paper — The points A, B, C, and D lie on a circle, as shown in the diagram 40° on the right (not to scale). [AB] is a diameter of the circle. |∠DAC| = 40°, as shown. The triangle ABD is isosceles. Find |∠ ADC|. There is space… Full card prompt: The points A, B, C, and D lie on a circle, as shown in the diagram on the right (not to scale). [AB] is a diameter of the circle. |∠DAC| = 40°, as shown. The triangle ABD is isosceles. Find |∠ADC|.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -4981,16 +5251,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q6-c", topicId: "maths-2-3", conceptId: "prove-cannot-inside-triangle-pqr",
+    id: "maths-2022-hl-p2-q6-c", topicId: "maths-2-1", conceptId: "prove-cannot-inside-triangle-pqr",
     section: "B", questionRef: "2022 HL Paper 2 Q6(c)",
-    questionText: "Prove that O cannot be inside the triangle PQR",
+    stem: "The diagram on the right shows the triangle PQR (not to scale). The angle at R is greater than 90°. k is the circumcircle of PQR, as shown, and O is the circumcentre. O is not shown in the diagram.",
+    questionText: "Prove that O cannot be inside the triangle PQR. If you are proving this by contradiction, your first line should be: “Assume that O is inside the triangle PQR.”",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p2-q6-c-r1", kind: "anyN", verbatim: "Performs construction / description of construction that would support proof, but proof not given\nRelevant statement made, for example, “if R is a right angle, centre is on PQ.”", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: if proof by contradiction is presented, assume that given first line has been used, even if not stated by candidate. No Credit • Writes down given first line and no other relevant work • Draws / constructs perpendicular bisector of any / all sides. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Performs construction / description of construction that would support proof, but proof not given\nRelevant statement made, for example, “if R is a right angle, centre is on PQ.”"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[47],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q6-c",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q6-c.png",
@@ -5011,16 +5295,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q7-a", topicId: "maths-3-4", conceptId: "candle-shape-cylinder-has-diameter-volume",
     section: "B", questionRef: "2022 HL Paper 2 Q7(a)",
-    questionText: "A candle in the shape of a cylinder has a diameter of 10 cm and a volume of 450𝜋 cm³. Work out the height of this candle",
+    stem: "A company makes and sells candles of different shapes and sizes.",
+    questionText: "A candle in the shape of a cylinder has a diameter of 10 cm and a volume of 450π cm³. Work out the height of this candle.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q7-a-r1", kind: "anyN", verbatim: "Work of merit, for example, finds radius, or sets formula for volume equal to 450𝜋", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Full Credit –1: Correct answer but no or incorrect unit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, finds radius, or sets formula for volume equal to 450𝜋","Fully substituted correct equation\nUses an incorrect volume formula, but finishes correctly\nMishandles diameter / radius, but finishes correctly"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[48],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q7-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q7-a.png",
@@ -5041,16 +5339,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q7-b", topicId: "maths-3-4", conceptId: "small-candle-shape-cone-has-volume",
     section: "B", questionRef: "2022 HL Paper 2 Q7(b)",
-    questionText: "A small candle in the shape of a cone has a volume of 12𝜋 cm³. A large candle, also in the shape of a cone, has a volume of 150𝜋 cm³. The height of the small candle is h, and the height of the large candle is 2h. The large candle has a radius that is k times that of the small candle, where k∈ℝ",
+    stem: "A company makes and sells candles of different shapes and sizes.",
+    questionText: "A small candle in the shape of a cone has a volume of 12π cm³. A large candle, also in the shape of a cone, has a volume of 150π cm³. The height of the small candle is h, and the height of the large candle is 2h. The large candle has a radius that is k times that of the small candle, where k ∈ ℝ. Work out the value of k.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q7-b-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into volume formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: 1. Sets up equation based on Vsmall 2. Sets up equation based on Vlarge 3. Creates single equation in k² 4. Finds k from equation in k². Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some correct substitution into volume formula","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[48],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q7-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q7-b.png",
@@ -5071,21 +5383,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q7-c", topicId: "maths-3-4", conceptId: "third-conical-candle-has-its-curved",
     section: "B", questionRef: "2022 HL Paper 2 Q7(c)",
-    questionText: "A third conical candle has its curved surface area covered in cloth",
+    stem: "A company makes and sells candles of different shapes and sizes.",
+    questionText: "A third conical candle has its curved surface area covered in cloth. The net of the cloth is shown in the diagram below (not to scale). This net covers the cone perfectly, with no overlapping material. In the diagram, |∠BOA| = 216°, as shown. |OA| = 8 cm. Find the length of the arc from B to A, in terms of π, and hence find the radius of the cone. Give both answers in cm.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q7-c-r1", kind: "anyN", verbatim: "Work of merit, for example, correct substitution into a relevant formula, or indicates that the arc-length from B to A is the circumference of the cone", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Accept length of major or minor arc. However, length of minor arc cannot be used directly to find radius of cone. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, correct substitution into a relevant formula, or indicates that the arc-length from B to A is the circumference of the cone","Length of arc fully substituted","Length of arc correct, and work of merit in the other part\nFinds radius of cone based on length of minor arc\nFinds radius of cone based on curved surface area, without finding length of arc"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[49],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q7-c",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q7-c.png",
           "srcHash": "c30afc78fafcf49c74b8d8b8daadf700",
-          "alt": "The question as printed on the paper — A third conical candle has its curved surface area covered in cloth. The net of the cloth is shown in the diagram below (not to scale). This net covers the cone perfectly, with no overlapping material. In the diagram,… Full card prompt: A third conical candle has its curved surface area covered in cloth",
+          "alt": "The question as printed on the paper — A third conical candle has its curved surface area covered in cloth. The net of the cloth is shown in the diagram below (not to scale). This net covers the cone perfectly, with no overlapping material. In the diagram,… Full card prompt: A company makes and sells candles of different shapes and sizes. A third conical candle has its curved surface area covered in cloth. The net of the cloth is shown in the diagram below (not to scale). This net covers the cone perfectly, with no overlapping material. In the diagram, |∠BOA| = 216°, as shown. |OA| = 8 cm. Find the length of the arc from B to A, in terms of π, and hence find the radius of the cone. Give both answers in cm.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5101,16 +5427,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q7-d-i", topicId: "maths-3-4", conceptId: "spherical-ball-wax-used-candle-radius",
     section: "B", questionRef: "2022 HL Paper 2 Q7(d)(i)",
-    questionText: "A spherical ball of wax is used as a candle. The radius of the sphere is 2∙7 cm. Find the volume of the sphere, correct to 3 decimal places",
+    stem: "A company makes and sells candles of different shapes and sizes.",
+    questionText: "A spherical ball of wax is used as a candle. The radius of the sphere is 2·7 cm. Find the volume of the sphere, correct to 3 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p2-q7-d-i-r1", kind: "anyN", verbatim: "Fully substituted formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Accept correct answer without supporting work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Fully substituted formula"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[49],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q7-d-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q7-d-i.png",
@@ -5131,21 +5471,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q7-d-ii", topicId: "maths-3-4", conceptId: "horizontal-slice-cut-off-sphere-candle",
     section: "B", questionRef: "2022 HL Paper 2 Q7(d)(ii)",
-    questionText: "A horizontal slice is cut off this sphere so that the candle will balance on level surfaces",
+    stem: "A company makes and sells candles of different shapes and sizes. A spherical ball of wax is used as a candle. The radius of the sphere is 2·7 cm.",
+    questionText: "A horizontal slice is cut off this sphere so that the candle will balance on level surfaces. The area of the circular base of this candle is 5·4 cm². Find the value of l, the vertical distance from the top of the candle to where the cut is made. As shown in the diagram on the right, l > 2·7 cm. Give your answer in cm, correct to the nearest mm.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q7-d-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, marking 2 ∙7 correctly, or showing l > 2 ∙7 on diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: Finds x correctly, but fails to find l. Note: 1. Sets up equation involving area of circular base 2. Finds radius of circular base 3. Sets up quadratic equation in x 4. Finds x and hence finds l. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, marking 2 ∙7 correctly, or showing l > 2 ∙7 on diagram","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[50],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q7-d-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q7-d-ii.png",
           "srcHash": "db8e7644f84d7ea2495612d345ab6d30",
-          "alt": "The question as printed on the paper — A horizontal slice is cut off this sphere so that the candle will balance on level surfaces. The area of the circular base of this candle is 5∙4 cm². l Find the value of l, the vertical distance from the top of the… Full card prompt: A horizontal slice is cut off this sphere so that the candle will balance on level surfaces",
+          "alt": "The question as printed on the paper — A horizontal slice is cut off this sphere so that the candle will balance on level surfaces. The area of the circular base of this candle is 5∙4 cm². l Find the value of l, the vertical distance from the top of the… Full card prompt: A company makes and sells candles of different shapes and sizes. A spherical ball of wax is used as a candle. The radius of the sphere is 2·7 cm. A horizontal slice is cut off this sphere so that the candle will balance on level surfaces. The area of the circular base of this candle is 5·4 cm². Find the value of l, the vertical distance from the top of the candle to where the cut is made. As shown in the diagram on the right, l > 2·7 cm. Give your answer in cm, correct to the nearest mm.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5161,16 +5515,37 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q7-e", topicId: "maths-3-4", conceptId: "part-logo-company-shown-abcd-square",
+    id: "maths-2022-hl-p2-q7-e", topicId: "maths-2-1", conceptId: "part-logo-company-shown-abcd-square",
     section: "B", questionRef: "2022 HL Paper 2 Q7(e)",
-    questionText: "Part of the logo of the company is shown below. ABCD is a square, with sides of length 30 cm. The points E and F are the midpoints of [AB] and [AD], respectively. The lines EC and FB are perpendicular, and meet at the point O",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "A company makes and sells candles of different shapes and sizes.",
+    questionText: "Part of the logo of the company is shown below. ABCD is a square, with sides of length 30 cm. The points E and F are the midpoints of [AB] and [AD], respectively. The lines EC and FB are perpendicular, and meet at the point O. Using similar triangles or trigonometry, find the length |EO|. Give your answer in the form a√b cm, where a, b ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2022-hl-p2-q7-e-r1", kind: "anyN", verbatim: "(e) |EB| |EC| = = 15/(√15² + 30²) = 15√5", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Full Credit –1: Correct value found, but not in the correct form; Finds |OB| (which is 6√5 cm). These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["(e) |EB| |EC| = = 15/(√15² + 30²) = 15√5","ΔEOB is similar to ΔEBC, so |EO|/|EB| = |EB|/|EC|","|EO| = 15²/15√5 = 3√5 [cm]","|∠EBO| = |∠BCE| and tan BCE = 1/2","sin EBO = |EO|/15 and","sin EBO = sin BCE = 1/(√1² + 2²) 1/(√1² + 2²) = 1/√5 1/√5","So |EO| = 15/√5 15/√5 = 3√5 [cm]"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2022-hl-p2-q7-e-solution-1", kind: "point", verbatim: "Model solution — |EB| = 15", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q7-e-solution-2", kind: "point", verbatim: "Model solution — |EC| = √(15² + 30²) = 15√5", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q7-e-solution-3", kind: "point", verbatim: "Model solution — ΔEOB is similar to ΔEBC", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q7-e-solution-4", kind: "point", verbatim: "Model solution — |EO| = 15²/(15√5) = 3√5 [cm]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q7-e-solution-5", kind: "point", verbatim: "Low Partial Credit — Work of merit, for example, indicates two similar triangles, or two equal angles, or a correct trigonometric ratio of a relevant angle, or 15", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q7-e-solution-6", kind: "point", verbatim: "High Partial Credit — States |EO|/|EB| = |EB|/|EC| and has also found |EB| and |EC|", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q7-e-solution-7", kind: "point", verbatim: "Full Credit −1 (deduction) — Correct value found, but not in the correct form", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q7-e-solution-8", kind: "point", verbatim: "Full Credit −1 (deduction) — Finds |OB| (which is 6√5 cm)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[50],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q7-e",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q7-e.png",
@@ -5191,21 +5566,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q8-a-i", topicId: "maths-1-6", conceptId: "scatterplot-shows-data-cars",
     section: "B", questionRef: "2022 HL Paper 2 Q8(a)(i), (ii)",
-    questionText: "The scatterplot below shows this data for cars A to F",
+    stem: "Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway. City (m/g): A 22, B 27, C 24, D 16, E 15, F 21, G 30, H 17. Motorway (m/g): A 34, B 38, C 34, D 27, E 24, F 30, G 40, H 30.",
+    questionText: "(i) The scatterplot below shows this data for cars A to F. Using the data in the table above, plot and label points to represent cars G and H on the scatterplot below. (ii) On the scatterplot, draw the line of best fit for the data, by eye.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q8-a-i-r1", kind: "anyN", verbatim: "Work of merit in plotting G or H, for example, one ordinate correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Full Credit –1: Points and line correctly plotted, but no or incorrect labels on points. Note: In (i), accept x_H plotted between 15 and 20 In (ii), accept line of best fit with some values on each side and with reasonable slope. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit in plotting G or H, for example, one ordinate correct","(i) or (ii) correct"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[51],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q8-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q8-a-i.png",
           "srcHash": "ac3f578a8420466bc3c95d5e241c3bdf",
-          "alt": "The question as printed on the paper — Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per… Full card prompt: The scatterplot below shows this data for cars A to F",
+          "alt": "The question as printed on the paper — Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per… Full card prompt: Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway. City (m/g): A 22, B 27, C 24, D 16, E 15, F 21, G 30, H 17. Motorway (m/g): A 34, B 38, C 34, D 27, E 24, F 30, G 40, H 30. (i) The scatterplot below shows this data for cars A to F. Using the data in the table above, plot and label points to represent cars G and H on the scatterplot below. (ii) On the scatterplot, draw the line of best fit for the data, by eye.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5221,21 +5611,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q8-a-iii", topicId: "maths-1-2", conceptId: "iii-two-other-cars-have-miles",
+    id: "maths-2022-hl-p2-q8-a-iii", topicId: "maths-1-6", conceptId: "iii-two-other-cars-have-miles",
     section: "B", questionRef: "2022 HL Paper 2 Q8(a)(iii), (iv)",
-    questionText: "(iii) Two other cars, K and L, have the miles per gallon values given in the following table",
+    stem: "Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway. City (m/g): A 22, B 27, C 24, D 16, E 15, F 21, G 30, H 17. Motorway (m/g): A 34, B 38, C 34, D 27, E 24, F 30, G 40, H 30.",
+    questionText: "(iii) Two other cars, K and L, have the miles per gallon values given in the following table: K has a city value of 20; L has a motorway value of 60. Use your line of best fit on the scatterplot to fill in an estimate for each of the two missing values in the table below. Show your work on the scatterplot. (iv) Based on the data given, would you be more confident in the value you estimated for K or for L? Give a reason for your answer. (Tick one box only.)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p2-q8-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, in (iii): relevant work on the graph, or in (iv): gives K, or reason shows some relevant knowledge", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Correct answers and reason, but without supporting work on the graph for (iii). Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, in (iii): relevant work on the graph, or in (iv): gives K, or reason shows some relevant knowledge","One part correct\nWork of merit in both parts"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[51],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q8-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q8-a-iii.png",
           "srcHash": "963ba9f90674ab6cd1d9ec87e5f83d8b",
-          "alt": "The question as printed on the paper — Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per… Full card prompt: (iii) Two other cars, K and L, have the miles per gallon values given in the following table",
+          "alt": "The question as printed on the paper — Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per… Full card prompt: Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway. City (m/g): A 22, B 27, C 24, D 16, E 15, F 21, G 30, H 17. Motorway (m/g): A 34, B 38, C 34, D 27, E 24, F 30, G 40, H 30. (iii) Two other cars, K and L, have the miles per gallon values given in the following table: K has a city value of 20; L has a motorway value of 60. Use your line of best fit on the scatterplot to fill in an estimate for each of the two missing values in the table below. Show your work on the scatterplot. (iv) Based on the data given, would you be more confident in the value you estimated for K or for L? Give a reason for your answer. (Tick one box only.)",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5251,16 +5655,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q8-c", topicId: "maths-1-6", conceptId: "customers-rated-their-experience-garage-giving",
     section: "B", questionRef: "2022 HL Paper 2 Q8(c)",
-    questionText: "13 customers rated their experience in a garage, by giving a whole-number score out of 100. The mean score was 52. The median score was 54. No two scores were the same",
+    questionText: "13 customers rated their experience in a garage, by giving a whole-number score out of 100. The mean score was 52. The median score was 54. No two scores were the same. The table below shows the score for each of the 13 customers (in no particular order): 46, 68, 24, 74, 42, 30, 61, 54, 28, 50, 57, S, M. Stephen gave a score of S and Mary gave a score of M, where S, M ∈ ℕ. Find the least value and the greatest value that S could be.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q8-c-r1", kind: "anyN", verbatim: "Work of merit, for example, finds total of the scores (including or excluding S and/or M), or work towards finding the median (for example, rewriting the values in ascending order)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, finds total of the scores (including or excluding S and/or M), or work towards finding the median (for example, rewriting the values in ascending order)","Correct equation in S and M\nLeast value = 55","Correct equation in S and M and indicates effort to find values greater than 54\nFinds answers of 54 and 88, 56 and 86, etc. (that is, S + M = 142 and incorrect values, both ≥ 54, found)\nCorrect answers (55 and 87) with insufficient supporting work"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[52],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q8-c",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q8-c.png",
@@ -5281,21 +5698,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q8-d-i", topicId: "maths-1-2", conceptId: "head-gasket-blows-john-will-have",
+    id: "maths-2022-hl-p2-q8-d-i", topicId: "maths-1-3", conceptId: "head-gasket-blows-john-will-have",
     section: "B", questionRef: "2022 HL Paper 2 Q8(d)(i)",
-    questionText: "If the head gasket blows, John will have to replace his car, at an estimated cost of €20 000. If the head gasket is replaced now, it will cost €1450, and the probability that it blows in the next year will be reduced to 0∙005",
+    stem: "John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year: head gasket blows, 0·095; timing belt goes, 0·041; air filters break, 0·073.",
+    questionText: "If the head gasket blows, John will have to replace his car, at an estimated cost of €20 000. If the head gasket is replaced now, it will cost €1450, and the probability that it blows in the next year will be reduced to 0·005. Based on these figures, use expected values to work out if it is worth replacing the head gasket now, or not.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q8-d-i-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates one relevant operation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: No Credit • Correct conclusion with no supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, indicates one relevant operation","Both expected values found, no or incorrect conclusion\nOne correct and one incorrect expected value found, with the correct (consistent) conclusion"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[53],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q8-d-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q8-d-i.png",
           "srcHash": "4d04c5f423f53659f02086b133c33f7f",
-          "alt": "The question as printed on the paper — John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year. Event Probability 0∙095 Head gasket blows… Full card prompt: If the head gasket blows, John will have to replace his car, at an estimated cost of €20 000. If the head gasket is replaced now, it will cost €1450, and the probability that it blows in the next year will be reduced to 0∙005",
+          "alt": "The question as printed on the paper — John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year. Event Probability 0∙095 Head gasket blows… Full card prompt: John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year: head gasket blows, 0·095; timing belt goes, 0·041; air filters break, 0·073. If the head gasket blows, John will have to replace his car, at an estimated cost of €20 000. If the head gasket is replaced now, it will cost €1450, and the probability that it blows in the next year will be reduced to 0·005. Based on these figures, use expected values to work out if it is worth replacing the head gasket now, or not.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5311,21 +5742,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q8-d-ii", topicId: "maths-1-2", conceptId: "work-out-probability-least-one-events",
     section: "B", questionRef: "2022 HL Paper 2 Q8(d)(ii)",
-    questionText: "Work out the probability that at least one of the events in the table above happens to John’s car this year, taking these events to be independent. Give your answer correct to 3 decimal places",
+    stem: "John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year: head gasket blows, 0·095; timing belt goes, 0·041; air filters break, 0·073.",
+    questionText: "Work out the probability that at least one of the events in the table above happens to John’s car this year, taking these events to be independent. Give your answer correct to 3 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q8-d-ii-r1", kind: "anyN", verbatim: "1 relevant probability found\n1st line of solution\n0∙095 × 0∙041 × 0∙073", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["1 relevant probability found\n1st line of solution\n0∙095 × 0∙041 × 0∙073","0∙905 × 0∙959 × 0∙927"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[53],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q8-d-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q8-d-ii.png",
           "srcHash": "c85352f5b39da82eb8fb2a82ace763c5",
-          "alt": "The question as printed on the paper — John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year. Event Probability 0∙095 Head gasket blows… Full card prompt: Work out the probability that at least one of the events in the table above happens to John’s car this year, taking these events to be independent. Give your answer correct to 3 decimal places",
+          "alt": "The question as printed on the paper — John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year. Event Probability 0∙095 Head gasket blows… Full card prompt: John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year: head gasket blows, 0·095; timing belt goes, 0·041; air filters break, 0·073. Work out the probability that at least one of the events in the table above happens to John’s car this year, taking these events to be independent. Give your answer correct to 3 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5341,21 +5786,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q9-a", topicId: "maths-3-4", conceptId: "area-field-area-field-each-correct",
+    id: "maths-2022-hl-p2-q9-a", topicId: "maths-2-3", conceptId: "area-field-area-field-each-correct",
     section: "B", questionRef: "2022 HL Paper 2 Q9(a)",
-    questionText: "Find the area of Field 1 and, hence, find the area of Field 2. Give each answer correct to the nearest m²",
+    stem: "Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in the diagram below (not to scale). B lies on the line AD. |AB| = 30 m, |BD| = 10 m, |AC| = 35 m, and |∠CAD| = 50°. Note: the angle ABC is not a right angle.",
+    questionText: "Find the area of Field 1 and, hence, find the area of Field 2. Give each answer correct to the nearest m².",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q9-a-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into formula for area of a triangle", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some correct substitution into formula for area of a triangle","Finds the area of Field 1 or total area\nError(s) in finding the area of Field 1, but correctly finds the area of Field 2 from this","Finds the area of Field 1, and either establishes the ratio relationship in area between both fields or forms the expression for the total area"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[54],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q9-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-a.png",
           "srcHash": "4cbc84fb0540b06be5938939208864a5",
-          "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in… Full card prompt: Find the area of Field 1 and, hence, find the area of Field 2. Give each answer correct to the nearest m²",
+          "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in… Full card prompt: Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in the diagram below (not to scale). B lies on the line AD. |AB| = 30 m, |BD| = 10 m, |AC| = 35 m, and |∠CAD| = 50°. Note: the angle ABC is not a right angle. Find the area of Field 1 and, hence, find the area of Field 2. Give each answer correct to the nearest m².",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5371,21 +5830,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q9-b", topicId: "maths-3-4", conceptId: "length-perimeter-field-correct-nearest-metre",
+    id: "maths-2022-hl-p2-q9-b", topicId: "maths-2-3", conceptId: "length-perimeter-field-correct-nearest-metre",
     section: "B", questionRef: "2022 HL Paper 2 Q9(b)",
-    questionText: "Find the length of the perimeter of Field 1. Give your answer correct to the nearest metre",
+    stem: "Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in the diagram below (not to scale). B lies on the line AD. |AB| = 30 m, |BD| = 10 m, |AC| = 35 m, and |∠CAD| = 50°. Note: the angle ABC is not a right angle.",
+    questionText: "Find the length of the perimeter of Field 1. Give your answer correct to the nearest metre.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q9-b-r1", kind: "anyN", verbatim: "Some correct substitution into Cosine Rule", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Full Credit –1: Finds |CB| but fails to find the perimeter. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some correct substitution into Cosine Rule","Fully substituted Cosine Rule"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[54],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q9-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-b.png",
           "srcHash": "6c8620400d8b307ef07d7b82711218d3",
-          "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in… Full card prompt: Find the length of the perimeter of Field 1. Give your answer correct to the nearest metre",
+          "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in… Full card prompt: Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in the diagram below (not to scale). B lies on the line AD. |AB| = 30 m, |BD| = 10 m, |AC| = 35 m, and |∠CAD| = 50°. Note: the angle ABC is not a right angle. Find the length of the perimeter of Field 1. Give your answer correct to the nearest metre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5401,21 +5874,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q9-c-i", topicId: "maths-3-3", conceptId: "airplane-flies-its-engine-makes-noise",
+    id: "maths-2022-hl-p2-q9-c-i", topicId: "maths-2-3", conceptId: "airplane-flies-its-engine-makes-noise",
     section: "B", questionRef: "2022 HL Paper 2 Q9(c)(i)",
-    questionText: "As the airplane flies, its engine makes noise. It takes some time for this sound to reach Oscar. Use the information in Diagram 1 to show that it takes 41 seconds for the sound the airplane makes at P₁ to reach Oscar, correct to the nearest second",
+    stem: "Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air.",
+    questionText: "As the airplane flies, its engine makes noise. It takes some time for this sound to reach Oscar. Use the information in Diagram 1 to show that it takes 41 seconds for the sound the airplane makes at P₁ to reach Oscar, correct to the nearest second.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p2-q9-c-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into a relevant formula, or a correct relevant conversion, or indicates a relevant measurement on the diagram, or 343 × 41", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Finds T, but doesn’t round appropriately or give conclusion; Calculator in incorrect mode, otherwise correct. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some correct substitution into a relevant formula, or a correct relevant conversion, or indicates a relevant measurement on the diagram, or 343 × 41","Finds |P₁O| in metres\nError in finding |P₁O|, but continues to find T"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[55],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q9-c-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-c-i.png",
           "srcHash": "9934c7478490b72295da2f429574e2e6",
-          "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in… Full card prompt: As the airplane flies, its engine makes noise. It takes some time for this sound to reach Oscar. Use the information in Diagram 1 to show that it takes 41 seconds for the sound the airplane makes at P₁ to reach Oscar, correct to the nearest second",
+          "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in… Full card prompt: Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air. As the airplane flies, its engine makes noise. It takes some time for this sound to reach Oscar. Use the information in Diagram 1 to show that it takes 41 seconds for the sound the airplane makes at P₁ to reach Oscar, correct to the nearest second.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5431,21 +5918,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q9-c-ii", topicId: "maths-3-3", conceptId: "airplane-flying-constant-speed-255-metres",
+    id: "maths-2022-hl-p2-q9-c-ii", topicId: "maths-2-3", conceptId: "airplane-flying-constant-speed-255-metres",
     section: "B", questionRef: "2022 HL Paper 2 Q9(c)(ii)",
-    questionText: "The airplane P is flying at a constant speed of 255 metres per second. By the time Oscar hears the sound the airplane made at the point P₁ , the airplane has flown on to the point P₂ , as shown in Diagram 2 above",
+    stem: "Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air.",
+    questionText: "The airplane P is flying at a constant speed of 255 metres per second. By the time Oscar hears the sound the airplane made at the point P₁, the airplane has flown on to the point P₂, as shown in Diagram 2 above. Work out the size of the angle marked θ in Diagram 2, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q9-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into a relevant formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Note: accept use of 41 seconds or more accurate value from (c)(i). Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, some correct substitution into a relevant formula","Finds |P₁P₂|\nError in finding |P₁P₂|, but finishes correctly"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[55],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q9-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-c-ii.png",
           "srcHash": "4cd2faa97909af5b89d4aad1240b6a77",
-          "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in… Full card prompt: The airplane P is flying at a constant speed of 255 metres per second. By the time Oscar hears the sound the airplane made at the point P₁ , the airplane has flown on to the point P₂ , as shown in Diagram 2 above",
+          "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in… Full card prompt: Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air. The airplane P is flying at a constant speed of 255 metres per second. By the time Oscar hears the sound the airplane made at the point P₁, the airplane has flown on to the point P₂, as shown in Diagram 2 above. Work out the size of the angle marked θ in Diagram 2, correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5461,21 +5962,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q9-d-i", topicId: "maths-3-3", conceptId: "explain-briefly-why-equation-holds-100",
+    id: "maths-2022-hl-p2-q9-d-i", topicId: "maths-2-3", conceptId: "explain-briefly-why-equation-holds-100",
     section: "B", questionRef: "2022 HL Paper 2 Q9(d)(i)",
-    questionText: "Explain briefly why the following equation holds: √100/0∙343 d² 2d 0∙255",
+    stem: "Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air. P₃ and P₄ are two other points on the flightpath of airplane P. By the time Oscar hears the sound the airplane made at the point P₃, the airplane has flown on to the point P₄, as shown in the diagram below (not to scale). P₃ and P₄ are both a distance of d km from the y-axis.",
+    questionText: "Explain briefly why the following equation holds: √(100 + d²)/0·343 = 2d/0·255",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p2-q9-d-i-r1", kind: "anyN", verbatim: "Work of merit, for example, implies LHS and / or RHS bears a relationship with time, or makes a relevant connection to distance or speed", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, implies LHS and / or RHS bears a relationship with time, or makes a relevant connection to distance or speed"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[55],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q9-d-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-d-i.png",
           "srcHash": "6aa08e2c9e0de80fa8e0b2dd5f7ba57d",
-          "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in… Full card prompt: Explain briefly why the following equation holds: √100/0∙343 d² 2d 0∙255",
+          "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in… Full card prompt: Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air. P₃ and P₄ are two other points on the flightpath of airplane P. By the time Oscar hears the sound the airplane made at the point P₃, the airplane has flown on to the point P₄, as shown in the diagram below (not to scale). P₃ and P₄ are both a distance of d km from the y-axis. Explain briefly why the following equation holds: √(100 + d²)/0·343 = 2d/0·255",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5491,21 +6006,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q9-d-ii", topicId: "maths-4-2", conceptId: "solve-equation-value-correct-decimal-place",
     section: "B", questionRef: "2022 HL Paper 2 Q9(d)(ii)",
-    questionText: "Solve the equation above to find the value of d, correct to 1 decimal place",
+    stem: "Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air. P₃ and P₄ are two other points on the flightpath of airplane P. By the time Oscar hears the sound the airplane made at the point P₃, the airplane has flown on to the point P₄, as shown in the diagram below (not to scale). P₃ and P₄ are both a distance of d km from the y-axis. The equation is √(100 + d²)/0·343 = 2d/0·255.",
+    questionText: "Solve the equation above to find the value of d, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q9-d-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct rearrangement, or indicates squaring", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: 1. Squares both sides and expands 2. Writes a × d² = b, for a, b∈ℝ 3. Find d. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some correct rearrangement, or indicates squaring","1 step correct","2 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[56],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q9-d-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-d-ii.png",
           "srcHash": "31325b6b53a88b52f572870a5e318ed6",
-          "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in… Full card prompt: Solve the equation above to find the value of d, correct to 1 decimal place",
+          "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in… Full card prompt: Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air. P₃ and P₄ are two other points on the flightpath of airplane P. By the time Oscar hears the sound the airplane made at the point P₃, the airplane has flown on to the point P₄, as shown in the diagram below (not to scale). P₃ and P₄ are both a distance of d km from the y-axis. The equation is √(100 + d²)/0·343 = 2d/0·255. Solve the equation above to find the value of d, correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5521,21 +6050,45 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q10-a-i", topicId: "maths-3-3", conceptId: "percentage-runners-these-heats-who-took",
+    id: "maths-2022-hl-p2-q10-a-i", topicId: "maths-1-7", conceptId: "percentage-runners-these-heats-who-took",
     section: "B", questionRef: "2022 HL Paper 2 Q10(a)(i)",
-    questionText: "Find the percentage of runners in these heats who took more than 240 seconds to run the 1500 m",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "In an athletics competition, there were a number of heats of the 1500 m race. In the heats, the times that it took the runners to complete the 1500 m were approximately normally distributed, with a mean time of 225 seconds and a standard deviation of 12 seconds.",
+    questionText: "Find the percentage of runners in these heats who took more than 240 seconds to run the 1500 m.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-hl-p2-q10-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates 𝜇 or 𝜎", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: 1. Find z-score 2. Find 0∙894 3. Find solution. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates 𝜇 or 𝜎","Finds z-score ( )/12 240−225","Finds z-score and further work, for example, finds 0∙8944, or indicates 1 −P(x < 240) or similar"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2022-hl-p2-q10-a-i-solution-1", kind: "point", verbatim: "Model solution — = 1·25", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-a-i-solution-2", kind: "point", verbatim: "Model solution — P(x > 240) = P(z > 1·25)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-a-i-solution-3", kind: "point", verbatim: "Model solution — = 1 − 0·8944", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-a-i-solution-4", kind: "point", verbatim: "Model solution — = 0·1056", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-a-i-solution-5", kind: "point", verbatim: "Model solution — Answer: 10·56%", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-a-i-solution-6", kind: "point", verbatim: "Step — Find z-score", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-a-i-solution-7", kind: "point", verbatim: "Step — Find 0·8944", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-a-i-solution-8", kind: "point", verbatim: "Step — Find solution", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-a-i-solution-9", kind: "point", verbatim: "Low Partial Credit — Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates μ or σ", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-a-i-solution-10", kind: "point", verbatim: "Mid Partial Credit — Finds z-score ((240 − 225)/12)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-a-i-solution-11", kind: "point", verbatim: "High Partial Credit — Finds z-score and further work, for example, finds 0·8944, or indicates 1 − P(x < 240) or similar", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[57],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q10-a-i.png",
           "srcHash": "91cadf4fc38a9694b35530959a7237e9",
-          "alt": "The question as printed on the paper — In an athletics competition, there were a number of heats of the 1500 m race. In the heats, the times that it took the runners to complete the 1500 m were approximately normally distributed, with a mean time of 225… Full card prompt: Find the percentage of runners in these heats who took more than 240 seconds to run the 1500 m",
+          "alt": "The question as printed on the paper — In an athletics competition, there were a number of heats of the 1500 m race. In the heats, the times that it took the runners to complete the 1500 m were approximately normally distributed, with a mean time of 225… Full card prompt: In an athletics competition, there were a number of heats of the 1500 m race. In the heats, the times that it took the runners to complete the 1500 m were approximately normally distributed, with a mean time of 225 seconds and a standard deviation of 12 seconds. Find the percentage of runners in these heats who took more than 240 seconds to run the 1500 m.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5551,21 +6104,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q10-a-ii", topicId: "maths-4-4", conceptId: "runners-fastest-times-qualified-final-assuming",
+    id: "maths-2022-hl-p2-q10-a-ii", topicId: "maths-1-7", conceptId: "runners-fastest-times-qualified-final-assuming",
     section: "B", questionRef: "2022 HL Paper 2 Q10(a)(ii)",
-    questionText: "The 20% of runners with the fastest times qualified for the final. Assuming the race times were normally distributed as described above, work out the time needed to qualify for the final, correct to the nearest second",
+    stem: "In an athletics competition, there were a number of heats of the 1500 m race. In the heats, the times that it took the runners to complete the 1500 m were approximately normally distributed, with a mean time of 225 seconds and a standard deviation of 12 seconds.",
+    questionText: "The 20% of runners with the fastest times qualified for the final. Assuming the race times were normally distributed as described above, work out the time needed to qualify for the final, correct to the nearest second.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p2-q10-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates 𝜇 or 𝜎", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates 𝜇 or 𝜎","Finds z-score and further work, for example, some correct substitution into relevant formula, or relevant diagram drawn"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[57],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q10-a-ii.png",
           "srcHash": "fef57e8b84472ba995446530cc7f6e07",
-          "alt": "The question as printed on the paper — In an athletics competition, there were a number of heats of the 1500 m race. In the heats, the times that it took the runners to complete the 1500 m were approximately normally distributed, with a mean time of 225… Full card prompt: The 20% of runners with the fastest times qualified for the final. Assuming the race times were normally distributed as described above, work out the time needed to qualify for the final, correct to the nearest second",
+          "alt": "The question as printed on the paper — In an athletics competition, there were a number of heats of the 1500 m race. In the heats, the times that it took the runners to complete the 1500 m were approximately normally distributed, with a mean time of 225… Full card prompt: In an athletics competition, there were a number of heats of the 1500 m race. In the heats, the times that it took the runners to complete the 1500 m were approximately normally distributed, with a mean time of 225 seconds and a standard deviation of 12 seconds. The 20% of runners with the fastest times qualified for the final. Assuming the race times were normally distributed as described above, work out the time needed to qualify for the final, correct to the nearest second.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5581,21 +6148,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q10-b", topicId: "maths-1-2", conceptId: "sally-takes-part-number-different-races",
     section: "B", questionRef: "2022 HL Paper 2 Q10(b)",
-    questionText: "Sally takes part in a number of different races in the competition. The probability that she makes a false start in any given race is 5%. Find the probability that she makes her first false start in her fourth race. Give your answer correct to 4 decimal places",
+    questionText: "Sally takes part in a number of different races in the competition. The probability that she makes a false start in any given race is 5%. Find the probability that she makes her first false start in her fourth race. Give your answer correct to 4 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p2-q10-b-r1", kind: "anyN", verbatim: "Work of merit, for example, 1 − 0∙05, or some correct substitution into a relevant formula, or lists NNNY or similar", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 1 − 0∙05, or some correct substitution into a relevant formula, or lists NNNY or similar","Fully substituted correct formula\nOne probability missing or extra, and evaluates\nSwaps 0∙05 and 0∙95, otherwise correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[57],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q10-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q10-b.png",
           "srcHash": "d6ac825a4e22649b7ff90c55bba2d23b",
-          "alt": "The question as printed on the paper — Sally takes part in a number of different races in the competition. The probability that she makes a false start in any given race is 5%. Find the probability that she makes her first false start in her fourth race.… Full card prompt: Sally takes part in a number of different races in the competition. The probability that she makes a false start in any given race is 5%. Find the probability that she makes her first false start in her fourth race. Give your answer correct to 4 decimal places",
+          "alt": "The question as printed on the paper — Sally takes part in a number of different races in the competition. The probability that she makes a false start in any given race is 5%. Find the probability that she makes her first false start in her fourth race.… Full card prompt: Sally takes part in a number of different races in the competition. The probability that she makes a false start in any given race is 5%. Find the probability that she makes her first false start in her fourth race. Give your answer correct to 4 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -5611,16 +6191,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q10-c", topicId: "maths-1-2", conceptId: "relay-teams-took-part-competition-any",
     section: "B", questionRef: "2022 HL Paper 2 Q10(c)",
-    questionText: "20 relay teams took part in the competition. For any particular team, the probability that they drop the baton at some point during the competition is 0∙1",
+    questionText: "20 relay teams took part in the competition. For any particular team, the probability that they drop the baton at some point during the competition is 0·1. Find the probability that at most 2 teams drop the baton during the competition. Give your answer correct to 4 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q10-c-r1", kind: "anyN", verbatim: "1st line of solution\nFinds 0∙9", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["1st line of solution\nFinds 0∙9","Fully substituted formulae for two of P(0), P(1), and P(2)","Fully substituted formulae for P(0), P(1), and P(2)"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[58],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q10-c",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q10-c.png",
@@ -5641,16 +6234,37 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q10-d", topicId: "maths-4-4", conceptId: "300-runners-take-part-road-race",
+    id: "maths-2022-hl-p2-q10-d", topicId: "maths-1-1", conceptId: "300-runners-take-part-road-race",
     section: "B", questionRef: "2022 HL Paper 2 Q10(d)",
-    questionText: "300 runners take part in a road race. Each runner has a number, from 1 to 300 inclusive. No two runners have the same number",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    questionText: "300 runners take part in a road race. Each runner has a number, from 1 to 300 inclusive. No two runners have the same number. Two runners are picked at random from the runners in this race. Work out the probability that the sum of their numbers is 101. Give your answer as a fraction in its simplest form.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2022-hl-p2-q10-d-r1", kind: "anyN", verbatim: "50 possible pairs of numbers add to 101:", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["50 possible pairs of numbers add to 101:","1 + 100, 2 + 99, ... , 50 + 51","300C2 = 44 850 pairs in total.","So P = 50/(44 850) = 1/897","100 different 1st numbers could be picked;","for each, only one 2nd number will give 101:","P = 100/300 × 1/299 = 1/897"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2022-hl-p2-q10-d-solution-1", kind: "point", verbatim: "Model solution — 50 possible pairs of numbers add to 101:", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-d-solution-2", kind: "point", verbatim: "Model solution — 1 + 100, 2 + 99, ... , 50 + 51", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-d-solution-3", kind: "point", verbatim: "Model solution — 300C2 = 44 850 pairs in total.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-d-solution-4", kind: "point", verbatim: "Model solution — So P = 50/44 850 = 1/897", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-d-solution-5", kind: "point", verbatim: "Model solution — 100 different 1st numbers could be picked;", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-d-solution-6", kind: "point", verbatim: "Model solution — for each, only one 2nd number will give 101:", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-d-solution-7", kind: "point", verbatim: "Model solution — P = 100/300 × 1/299 = 1/897", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-d-solution-8", kind: "point", verbatim: "Low Partial Credit — Work of merit, for example, indicates at least two possible pairs adding to 101, or 300C2", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-d-solution-9", kind: "point", verbatim: "High Partial Credit — Finds 50 and puts over a relevant number", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[58],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q10-d",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q10-d.png",
@@ -5671,21 +6285,45 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
     year: 2022, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q10-e", topicId: "maths-4-4", conceptId: "sorcha-ran-two-different-marathons-windy",
+    id: "maths-2022-hl-p2-q10-e", topicId: "maths-1-7", conceptId: "sorcha-ran-two-different-marathons-windy",
     section: "B", questionRef: "2022 HL Paper 2 Q10(e)",
-    questionText: "Sorcha ran two different marathons: the Windy Marathon and the Sunny Marathon. The table below gives some details on the finishing times for the two marathons. For each marathon, the finishing times of the runners were approximately normally distributed",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 6, 9, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    questionText: "Sorcha ran two different marathons: the Windy Marathon and the Sunny Marathon. The table below gives some details on the finishing times for the two marathons. For each marathon, the finishing times of the runners were approximately normally distributed. Sorcha’s position in each marathon was based on her finishing time. Sorcha came 5265th in the Windy Marathon, so exactly 5264 of the 6000 runners had a finishing time that was less than Sorcha’s. Sorcha’s finishing time for both marathons was the same. Use this fact, and the details in the table, to estimate Sorcha’s position in the Sunny Marathon. Show all of your working out. Windy Marathon: mean finishing time 254 minutes, standard deviation 38 minutes, 6000 runners, Sorcha’s position 5265th. Sunny Marathon: mean 247 minutes, standard deviation 29 minutes, 2000 runners.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
     rows: [
-    { id: "maths-2022-hl-p2-q10-e-r1", kind: "anyN", verbatim: "Work of merit, for example, draws a relevant diagram, indicates 𝜇 or 𝜎 Low Mid Partial Credit\n2 steps correct High Mid Partial Credit\n3 steps correct", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 6. The full scale runs to 15. Note: 5265 6000 1. Finds 2. Finds the z-score for the Windy marathon 3. Finds the time for the marathons 4. Finds the z-score for the Sunny marathon 5. Finds the finishing position. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, draws a relevant diagram, indicates 𝜇 or 𝜎 Low Mid Partial Credit\n2 steps correct High Mid Partial Credit\n3 steps correct","4 steps correct"],"perOptionSteps":[3,12]} },
+    { id: "maths-2022-hl-p2-q10-e-solution-1", kind: "point", verbatim: "Model solution — 5265/6000 = 0·8775", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-e-solution-2", kind: "point", verbatim: "Model solution — So z = 1·16 or 1·17", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-e-solution-3", kind: "point", verbatim: "Model solution — So Time = 254 + 1·16(38) = 298·08", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-e-solution-4", kind: "point", verbatim: "Model solution — i.e. 1921th or 1922th", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-e-solution-5", kind: "point", verbatim: "Step 2 — Finds the z-score for the Windy marathon", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-e-solution-6", kind: "point", verbatim: "Step 3 — Finds the time for the marathons", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-e-solution-7", kind: "point", verbatim: "Step 4 — Finds the z-score for the Sunny marathon", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-e-solution-8", kind: "point", verbatim: "Step 5 — Finds the finishing position", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-e-solution-9", kind: "point", verbatim: "Low Partial Credit — Work of merit, for example, draws a relevant diagram, indicates μ or σ", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-e-solution-10", kind: "point", verbatim: "Low Mid Partial Credit — 2 steps correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-e-solution-11", kind: "point", verbatim: "High Mid Partial Credit — 3 steps correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q10-e-solution-12", kind: "point", verbatim: "High Partial Credit — 4 steps correct", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
     ],
+    mathematicsScale: {"code":"15E","marks":[0,3,6,9,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[59],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q10-e",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q10-e.png",
           "srcHash": "35b84d51397a3fa73012b3283e52f7d2",
-          "alt": "The question as printed on the paper — Sorcha ran two different marathons: the Windy Marathon and the Sunny Marathon. The table below gives some details on the finishing times for the two marathons. For each marathon, the finishing times of the runners were… Full card prompt: Sorcha ran two different marathons: the Windy Marathon and the Sunny Marathon. The table below gives some details on the finishing times for the two marathons. For each marathon, the finishing times of the runners were approximately normally distributed",
+          "alt": "The question as printed on the paper — Sorcha ran two different marathons: the Windy Marathon and the Sunny Marathon. The table below gives some details on the finishing times for the two marathons. For each marathon, the finishing times of the runners were… Full card prompt: Sorcha ran two different marathons: the Windy Marathon and the Sunny Marathon. The table below gives some details on the finishing times for the two marathons. For each marathon, the finishing times of the runners were approximately normally distributed. Sorcha’s position in each marathon was based on her finishing time. Sorcha came 5265th in the Windy Marathon, so exactly 5264 of the 6000 runners had a finishing time that was less than Sorcha’s. Sorcha’s finishing time for both marathons was the same. Use this fact, and the details in the table, to estimate Sorcha’s position in the Sunny Marathon. Show all of your working out. Windy Marathon: mean finishing time 254 minutes, standard deviation 38 minutes, 6000 runners, Sorcha’s position 5265th. Sunny Marathon: mean 247 minutes, standard deviation 29 minutes, 2000 runners.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -18839,6 +19477,76 @@ export const CARDS: SecCard[] = [
           ],
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-q4-a-ii", topicId: "maths-2-3", conceptId: "p2-q4-a-ii",
+    section: "A", questionRef: "2022 HL Paper 2 Q4(a)(ii)",
+    questionText: "Write tan 15° in the form (√a − 1)/(√a + 1), where a ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-q4-a-ii-solution-1", kind: "point", verbatim: "Model solution — tan 15 = tan(60 − 45)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q4-a-ii-solution-2", kind: "point", verbatim: "Model solution — = (√3 − 1)/(√3 + 1)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q4-a-ii-solution-3", kind: "point", verbatim: "Model solution — tan 15 = tan(45 − 30)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q4-a-ii-solution-4", kind: "point", verbatim: "Note — accept solution of: tan 15° = −√3 + 2", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q4-a-ii-solution-5", kind: "point", verbatim: "Low Partial Credit — Work of merit, for example, 60 − 45, or some correct substitution into relevant formula, or top line of relevant formula substituted", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q4-a-ii-solution-6", kind: "point", verbatim: "Low Partial Credit — −√3 + 2 with no supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q4-a-ii-solution-7", kind: "point", verbatim: "High Partial Credit — (tan 60 − tan 45)/(1 + tan 60 tan 45) or equivalent", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q4-a-ii-solution-8", kind: "point", verbatim: "High Partial Credit — Makes error(s) in arriving at (tan 60 − tan 45)/(1 + tan 60 tan 45) (or equivalent) from relevant expression, but finishes correctly", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q4-a-ii-solution-9", kind: "point", verbatim: "High Partial Credit — (√3 − 1)/(√3 + 1) without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q4-a-ii-solution-10", kind: "point", verbatim: "High Partial Credit — (1 − 1/√3)/(1 + 1/√3) or −√3 + 2, with supporting work (equivalent to that in model solutions)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[43],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-q8-a-v", topicId: "maths-1-6", conceptId: "p2-q8-a-v",
+    section: "B", questionRef: "2022 HL Paper 2 Q8(a)(v), (b)",
+    stem: "Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway. City (m/g): A 22, B 27, C 24, D 16, E 15, F 21, G 30, H 17. Motorway (m/g): A 34, B 38, C 34, D 27, E 24, F 30, G 40, H 30.",
+    questionText: "(a)(v) Find the value of r, the correlation coefficient between city and motorway miles per gallon. Use only the values for the 8 cars A to H in the table on the previous page. Give your answer correct to 3 decimal places. (b) The scatterplot on the right shows some values of fuel consumption (F) for the given values of engine speed (S), for a particular car. For the points in this scatterplot, F can be closely approximated by a quadratic function of S. r_FS is the correlation coefficient between F and S, based on the points in this scatterplot. Give a reason why you might think that r_FS is very close to 0.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-q8-a-v-solution-1", kind: "point", verbatim: "Model solution — 0·9659 … = 0·966 [3 D.P.]", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q8-a-v-solution-2", kind: "point", verbatim: "Model solution — Any valid reason, for example:", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q8-a-v-solution-3", kind: "point", verbatim: "Model solution — Correlation is related to linear relationships, and this is quadratic", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q8-a-v-solution-4", kind: "point", verbatim: "Model solution — The line of best fit is close to horizontal", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q8-a-v-solution-5", kind: "point", verbatim: "Model solution — The data is symmetrical: it is decreasing first, and then increasing in a symmetrical way", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q8-a-v-solution-6", kind: "point", verbatim: "Note — In (a)(v), accept correct answer without supporting work", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q8-a-v-solution-7", kind: "point", verbatim: "Partial Credit — Work of merit, for example, in (a)(v), fully substituted correct formula; or, in (b), draws axis of symmetry or line of best fit", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2022-hl-p2-q8-a-v-solution-8", kind: "point", verbatim: "Full Credit −1 (deduction) — (b) correct and 0·965 or 0·96 or 0·97 given in (a)(v)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[52],"generalNotesPages":[32,33]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21,
+                22
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
   } as SecCard,
