@@ -3885,6 +3885,156 @@
       "attribution": "Guest Room — Victoria Kennefick, as reproduced in the SEC 2023 paper.",
       "questionSha256": "3ec266893974bae45a9ebc0920b5367425b84c60f83d3977b730118080922f15",
       "reason": "Paper PDF6 prints the instruction (“Read the following poem by Victoria Kennefick and answer either Question 1 or Question 2”), the title, the whole poem (two stanzas of 10 lines) and the byline above the questions; visually verified."
+    },
+    "english-2023-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Lessons Learned on the Road to Success",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Liam Mackey — edited extracts from an article in the Irish Examiner in which Irish international soccer player Denise O’Sullivan reflects on her life and career, with two photographs, A and B (PDF2–3). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "1f6fe3b8b36f49dbb1fab46ae384f2c361b8b61721656023bb26f47f71abf09b",
+      "reason": "The task reads “the written part of TEXT 1”: paragraphs 1–6 on PDF2 and paragraph 7 on PDF3, so both pages are retained (the photographs sit with paragraph 7)."
+    },
+    "english-2023-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Lessons Learned on the Road to Success",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Liam Mackey — edited extracts from an article in the Irish Examiner in which Irish international soccer player Denise O’Sullivan reflects on her life and career, with two photographs, A and B (PDF2–3). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "eafa5495d9516532f9312c02f72480dbdf4bf1f4a816d3d5c15727a5bf80e20c",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2023-ol-p1-t1-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Lessons Learned on the Road to Success",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Liam Mackey — edited extracts from an article in the Irish Examiner in which Irish international soccer player Denise O’Sullivan reflects on her life and career, with two photographs, A and B (PDF2–3). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "096c66fdea93d2e7bf64b0cb471287dc118ed0c3ab918eee64185986ff813420",
+      "reason": "The task chooses between the two photographs of Denise O’Sullivan, A and B, printed on PDF3 within TEXT 1; the whole text is retained."
+    },
+    "english-2023-ol-p1-t1-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "LESSONS LEARNED ON THE ROAD TO SUCCESS",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "questionSha256": "0ba5987b7340517bd4f91fb62c58b58bbbe784fb4780a5e5a218e7a0976925df",
+      "reason": "Self-contained: the most valuable lesson the candidate has learned in their own life and why. Scheme PDF6 — “Candidates are free to offer any lesson they consider valuable” — never refers to TEXT 1. The same task is printed under all three texts."
+    },
+    "english-2023-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Lessons for the Future",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "George Saunders — edited extracts from a speech to students graduating from Syracuse University, with two images, A and B (PDF4–5). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "4c85cf777ea779fba48c913e09f97a46bfb373162997557f7a96e3f38752385e",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2023-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Lessons for the Future",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "George Saunders — edited extracts from a speech to students graduating from Syracuse University, with two images, A and B (PDF4–5). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "36425b02c60b07c0288855a125ddf4fe88fc89f9d2c50d62152d1fa28d088567",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2023-ol-p1-t2-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Lessons for the Future",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "George Saunders — edited extracts from a speech to students graduating from Syracuse University, with two images, A and B (PDF4–5). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "8d46e6c8c93b4021127c62d28c281dbfc147b9450e477d33c562b8efc40cb6a3",
+      "reason": "The task chooses between the two images, A and B, printed on PDF5 under paragraph 8 of the speech; the whole text is retained."
+    },
+    "english-2023-ol-p1-t2-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "LESSONS FOR THE FUTURE",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "questionSha256": "0ba5987b7340517bd4f91fb62c58b58bbbe784fb4780a5e5a218e7a0976925df",
+      "reason": "Self-contained: the most valuable lesson the candidate has learned in their own life and why. Scheme PDF7 — “Candidates are free to offer any lesson they consider valuable” — never refers to TEXT 2. The same task is printed under all three texts."
+    },
+    "english-2023-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Life Lessons Through Art",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Will Ellsworth-Jones — based on an article in The Smithsonian about the graffiti artist Banksy, with two images by Banksy, A (PDF6) and B (PDF7). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "fa7083b2f7a9bfc9461e7e2d586345b2af959b203f8bdaa0d52dadd5959f5191",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2023-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Life Lessons Through Art",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Will Ellsworth-Jones — based on an article in The Smithsonian about the graffiti artist Banksy, with two images by Banksy, A (PDF6) and B (PDF7). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "3dde5e74e38b4e99f5b7cc89485e506c4b5b418924de6c6eb82368495f92e66c",
+      "reason": "The task needs both images by Banksy: A on PDF6 and B on PDF7."
+    },
+    "english-2023-ol-p1-t3-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Life Lessons Through Art",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Will Ellsworth-Jones — based on an article in The Smithsonian about the graffiti artist Banksy, with two images by Banksy, A (PDF6) and B (PDF7). As reproduced in the SEC 2023 paper.",
+      "questionSha256": "5b3fabe1416174ba388a35ff98c9d32c961fd81d13a5196569f26276c7d3db9a",
+      "reason": "“You may refer to the text if you wish”: the whole of TEXT 3 (PDF6–7) is retained."
+    },
+    "english-2023-ol-p1-t3-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "LIFE LESSONS THROUGH ART",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "questionSha256": "0ba5987b7340517bd4f91fb62c58b58bbbe784fb4780a5e5a218e7a0976925df",
+      "reason": "Self-contained: the most valuable lesson the candidate has learned in their own life and why. Scheme PDF9 — “Candidates are free to offer any lesson they consider valuable” — never refers to TEXT 3. The same task is printed under all three texts."
     }
   }
 }

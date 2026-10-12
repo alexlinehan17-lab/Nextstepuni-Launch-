@@ -664,7 +664,7 @@
     "english-2023-ol-p1-t1-a-ii": {
       "questionSha256": "eafa5495d9516532f9312c02f72480dbdf4bf1f4a816d3d5c15727a5bf80e20c",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 3 printed choices are one response, not 3 cards. Printed choice as reviewed: The task requires a fixed selection from the specifically printed options. Every unordered selection is a separate practice route, retaining the complete published tariff.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF5 — “which two of the listed words most accurately describe the article in their opinion”; every pair is marked on one grid (the indicative material heads the third word “Articulate”). One 15-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -691,7 +691,7 @@
     "english-2023-ol-p1-t1-a-iii-b": {
       "questionSha256": "096c66fdea93d2e7bf64b0cb471287dc118ed0c3ab918eee64185986ff813420",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The task requires a fixed selection from the specifically printed options. Every unordered selection is a separate practice route, retaining the complete published tariff.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF6 — “Candidates should choose one of the images” and explain why it would make a strong impression; Picture A and Picture B are marked on one grid. One 10-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -714,7 +714,7 @@
     "english-2023-ol-p1-t2-a-iii-b": {
       "questionSha256": "8d46e6c8c93b4021127c62d28c281dbfc147b9450e477d33c562b8efc40cb6a3",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The task requires a fixed selection from the specifically printed options. Every unordered selection is a separate practice route, retaining the complete published tariff.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF7–8 — “Candidates are free to refer to both images in their response but must nominate one image primarily”; Picture A and Picture B are marked on one grid. One 10-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -1680,7 +1680,7 @@
     "english-2023-ol-p1-t2-a-ii": {
       "questionSha256": "36425b02c60b07c0288855a125ddf4fe88fc89f9d2c50d62152d1fa28d088567",
       "kind": "open",
-      "reason": "This is a reasoned evaluation with an open range of justifiable positions, not a prescribed list of answer options. Preserve the judgement and its supporting evidence as one task."
+      "reason": "Scheme PDF7: features that make the speech “suitable or unsuitable” for a graduation ceremony — a graded judgement, not routes. One 15-mark response."
     },
     "english-2024-hl-p1-t3-a-ii": {
       "questionSha256": "84b33025b8a665a68c0bbed879425019bfb52aa8a90193052ec326752c197a1c",
@@ -2393,17 +2393,17 @@
     "english-2023-ol-p1-t1-b": {
       "questionSha256": "1b3ff7fbe40643cf48511533d2c27f7227a2e4a5a1fc44a367786d0797650ab5",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF6: a first-person blog, “a single entry or a series of entries”, on leaving home, difficulties and lessons — “the three areas … though not necessarily treating them equally”. One 50-mark response."
     },
     "english-2023-ol-p1-t2-b": {
       "questionSha256": "ea91bda3ad3b4cd78b4ef797d4103006c4dda448507cce71412593094219652c",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF8: an interview script with an older person — an eventful episode, something they would do differently, one piece of advice; “the three areas … though not necessarily treating them equally”, additional questions free. One 50-mark response."
     },
     "english-2023-ol-p1-t3-b": {
       "questionSha256": "b7c31c29b52c30f284e4fd036e9775efd13e1dcf4355b78363b88b324466c8fe",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF10: a letter to a local newspaper — what the graffiti looks like, the candidate’s views on the controversy, and a suggestion for local authorities; “the three areas … though not necessarily treating them equally”. One 50-mark response."
     },
     "english-2024-hl-p1-t2-b": {
       "questionSha256": "8bb6856532ad79842555d98eeb987f9cec6dc54a5cb8c40b6737aa4516b7a987",
@@ -2998,7 +2998,7 @@
     "english-2023-ol-p1-composing-3": {
       "questionSha256": "617f88f884a56e5adb5678e2171e57d71b45b60b94a68601f688fdef47426ee8",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF14 — a speech arguing “for or against the motion”; both sides are marked on one grid. One 100-mark composition.",
       "pools": [
         {
           "id": "selection",
@@ -4018,33 +4018,33 @@
     },
     "english-2023-ol-p1-composing-1": {
       "questionSha256": "a29592eb351a09cefff924e4490bf163f13adc8be460e6cf5e367ef94d8731a9",
-      "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "kind": "flexible",
+      "reason": "Scheme PDF12: a personal essay on things the candidate is passionate about; “They must reflect on at least two things.” One 100-mark composition."
     },
     "english-2023-ol-p1-composing-2": {
       "questionSha256": "3b65ed8aab640f8c32207ce056b1996438339e3f58dd83db152c533d45d31bbb",
-      "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "kind": "flexible",
+      "reason": "Scheme PDF13: a short story about an act of kindness with a surprising or unexpected outcome; “The story may be serious or humorous or both.” One 100-mark composition."
     },
     "english-2023-ol-p1-composing-4": {
       "questionSha256": "075f54715b28555b51e99dc3e42211ceace2cef84977dcfe83bc16cda6bb25b9",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF15: a personal essay on important people who have influenced the candidate and their impact. One 100-mark composition."
     },
     "english-2023-ol-p1-composing-5": {
       "questionSha256": "3d9577fed47f7a766e3f818ba949735a8b4053ba891f94ffc27bfdb3e10e43fc",
       "kind": "flexible",
-      "reason": "Optional register, perspective or number of examples remains flexible; the paper does not require an exclusive fixed-size selection from named options."
+      "reason": "Scheme PDF16: a magazine article “Celebrities – Love Them or Hate Them!” on celebrity culture; “serious or humorous or both” is a free register. One 100-mark composition."
     },
     "english-2023-ol-p1-composing-6": {
       "questionSha256": "b35eaa0376181370bbff7e4a37d65d1bccc2448ece915b293975a524e4bdf768",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF17: a talk to first-year students, “You can’t get it right all of the time in life!”, aiming to put them at ease. One 100-mark composition."
     },
     "english-2023-ol-p1-composing-7": {
       "questionSha256": "d6bbcd817a4ca569071142408a01b05d42ea6868c4b82b8809406d6c38c5b381",
-      "kind": "required",
-      "reason": "The stated subjects or perspectives are required together. They do not form optional alternative tasks."
+      "kind": "open",
+      "reason": "Scheme PDF18: a short story in which two rival characters compete, with disastrous consequences for both. One 100-mark composition."
     },
     "english-2024-hl-p1-composing-2": {
       "questionSha256": "cfadfe880a736992fb0f7ca8d33b6e942b4d093414fd9e0ba20463824e41a648",
@@ -16748,6 +16748,46 @@
       "questionSha256": "aa6ac056f96567f4b39ac937d23ee4dd89e2751d4448afad12638dff9bb787f3",
       "kind": "open",
       "reason": "Scheme PDF43, 47: freedom of choice of poems studied; discuss the statement or question. One 50-mark response."
+    },
+    "english-2023-ol-p1-t1-a-i": {
+      "questionSha256": "1f6fe3b8b36f49dbb1fab46ae384f2c361b8b61721656023bb26f47f71abf09b",
+      "kind": "open",
+      "reason": "Scheme PDF5: three impressions of the candidate’s own of Denise O’Sullivan (the written part), supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2023-ol-p1-t1-a-iii-a": {
+      "questionSha256": "0ba5987b7340517bd4f91fb62c58b58bbbe784fb4780a5e5a218e7a0976925df",
+      "kind": "open",
+      "reason": "Scheme PDF6: “Candidates are free to offer any lesson they consider valuable”, explaining why. One 10-mark response."
+    },
+    "english-2023-ol-p1-t2-a-iii-a": {
+      "questionSha256": "0ba5987b7340517bd4f91fb62c58b58bbbe784fb4780a5e5a218e7a0976925df",
+      "kind": "open",
+      "reason": "Scheme PDF7: “Candidates are free to offer any lesson they consider valuable”, explaining why. One 10-mark response."
+    },
+    "english-2023-ol-p1-t3-a-iii-a": {
+      "questionSha256": "0ba5987b7340517bd4f91fb62c58b58bbbe784fb4780a5e5a218e7a0976925df",
+      "kind": "open",
+      "reason": "Scheme PDF9: “Candidates are free to offer any lesson they consider valuable”, explaining why. One 10-mark response."
+    },
+    "english-2023-ol-p1-t2-a-i": {
+      "questionSha256": "4c85cf777ea779fba48c913e09f97a46bfb373162997557f7a96e3f38752385e",
+      "kind": "open",
+      "reason": "Scheme PDF7: three impressions of the candidate’s own of George Saunders, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2023-ol-p1-t3-a-i": {
+      "questionSha256": "fa7083b2f7a9bfc9461e7e2d586345b2af959b203f8bdaa0d52dadd5959f5191",
+      "kind": "open",
+      "reason": "Scheme PDF9: three impressions of the candidate’s own of Banksy, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2023-ol-p1-t3-a-ii": {
+      "questionSha256": "3dde5e74e38b4e99f5b7cc89485e506c4b5b418924de6c6eb82368495f92e66c",
+      "kind": "required",
+      "reason": "Paper PDF7 and scheme PDF9: “In the case of both of the images” — what is visually striking and the life lessons, for A and B; “not required to treat each image equally”. One 15-mark response."
+    },
+    "english-2023-ol-p1-t3-a-iii-b": {
+      "questionSha256": "5b3fabe1416174ba388a35ff98c9d32c961fd81d13a5196569f26276c7d3db9a",
+      "kind": "open",
+      "reason": "Scheme PDF10: reasons of the candidate’s own why Banksy has tried to remain anonymous; the text may be used. One 10-mark response."
     }
   }
 }

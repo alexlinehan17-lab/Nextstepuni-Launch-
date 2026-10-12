@@ -70,6 +70,17 @@
    "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce"
   },
   {
+   "paperId": "english-2023-ol-p1",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "tasks": 22,
+   "cards": 20,
+   "printedDuplicates": 2,
+   "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+   "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf"
+  },
+  {
    "paperId": "english-2018-ol-p1",
    "year": 2018,
    "level": "ordinary",
@@ -1118,6 +1129,17 @@
     },
     "capRulePage": 3
    },
+   "2023-ordinary": {
+    "family": "ol-o1-o8-2018",
+    "gridPages": [
+     64,
+     65
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2024-ordinary": {
     "family": "ol-o1-o8-2018",
     "gridPages": [
@@ -1155,12 +1177,33 @@
  },
  "legacyAdditionalSources": {},
  "bridgedPapers": [
+  "english-2023-ol-p1",
   "english-2024-ol-p1",
   "english-2024-ol-p2",
   "english-2025-ol-p1",
   "english-2025-ol-p2"
  ],
  "bridgedLegacyIds": [
+  "english-2023-ol-p1-composing-1",
+  "english-2023-ol-p1-composing-2",
+  "english-2023-ol-p1-composing-3",
+  "english-2023-ol-p1-composing-4",
+  "english-2023-ol-p1-composing-5",
+  "english-2023-ol-p1-composing-6",
+  "english-2023-ol-p1-composing-7",
+  "english-2023-ol-p1-t1-a-i",
+  "english-2023-ol-p1-t1-a-ii",
+  "english-2023-ol-p1-t1-a-iii-a",
+  "english-2023-ol-p1-t1-a-iii-b",
+  "english-2023-ol-p1-t1-b",
+  "english-2023-ol-p1-t2-a-i",
+  "english-2023-ol-p1-t2-a-ii",
+  "english-2023-ol-p1-t2-a-iii-b",
+  "english-2023-ol-p1-t2-b",
+  "english-2023-ol-p1-t3-a-i",
+  "english-2023-ol-p1-t3-a-ii",
+  "english-2023-ol-p1-t3-a-iii-b",
+  "english-2023-ol-p1-t3-b",
   "english-2024-ol-p1-composing-1",
   "english-2024-ol-p1-composing-2",
   "english-2024-ol-p1-composing-3",
@@ -1339,6 +1382,8 @@
   "english-2025-ol-p2-unseen-q2"
  ],
  "bridgeAliases": {
+  "english-2023-ol-p1-t2-a-iii-a": "english-2023-ol-p1-t1-a-iii-a",
+  "english-2023-ol-p1-t3-a-iii-a": "english-2023-ol-p1-t1-a-iii-a",
   "english-2024-ol-p1-t2-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
   "english-2024-ol-p1-t3-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
   "english-2024-ol-p2-comparative-a-q1": "english-2024-ol-p2-comparative-a-q1-a-i",
@@ -1386,7 +1431,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1164,
+ "cardCount": 1184,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -15004,6 +15049,788 @@
    "atlas": {
     "fileid": "LC002GLP200EV.pdf",
     "n": "19"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-t1-a-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Text 1 QA(i)",
+   "questionText": "Based on your reading of the written part of TEXT 1, what impression do you form of Denise O’Sullivan? Make three points in your response. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Lessons Learned on the Road to Success",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Liam Mackey — edited extracts from an article in the Irish Examiner in which Irish international soccer player Denise O’Sullivan reflects on her life and career, with two photographs, A and B (PDF2–3). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-t1-a-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Text 1 QA(ii)",
+   "questionText": "In your opinion, which two of the following words do you think accurately describe the above article? Inspiring Thought-provoking Well-written Explain your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 2 of 3). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Lessons Learned on the Road to Success",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Liam Mackey — edited extracts from an article in the Irish Examiner in which Irish international soccer player Denise O’Sullivan reflects on her life and career, with two photographs, A and B (PDF2–3). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-t1-a-iii-a",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Text 1 QA(iii)(a)",
+   "questionText": "What would you consider to be the most valuable lesson that you have learned in your life? Explain why you consider this lesson to be so valuable.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   },
+   "atlasPlacements": [
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "10"
+    },
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "12"
+    }
+   ]
+  },
+  {
+   "id": "english-2023-ol-p1-t1-a-iii-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Text 1 QA(iii)(b)",
+   "questionText": "Which one of the two images of Denise O’Sullivan in TEXT 1 would you choose to accompany this article in the newspaper in order to make a strong impression on a reader? Give reasons for your answer.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Lessons Learned on the Road to Success",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Liam Mackey — edited extracts from an article in the Irish Examiner in which Irish international soccer player Denise O’Sullivan reflects on her life and career, with two photographs, A and B (PDF2–3). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-t1-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Text 1 QB",
+   "questionText": "Imagine you have completed your Leaving Certificate and have moved away from home. You decide to write a blog over the course of your first year away from home, recording what life is like for you. Write the blog detailing your experiences. In it you should write about: how you felt leaving home, some of the difficulties you experienced during the year and some of the things that you learned by the end of the year.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-t2-a-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Text 2 QA(i)",
+   "questionText": "Based on your reading of TEXT 2, what impression do you form of George Saunders? Make three points in your response. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Lessons for the Future",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "George Saunders — edited extracts from a speech to students graduating from Syracuse University, with two images, A and B (PDF4–5). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-t2-a-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Text 2 QA(ii)",
+   "questionText": "What features of the above speech do you believe make it suitable or not suitable to be delivered to students at a graduation ceremony? Explain your answer.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Lessons for the Future",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "George Saunders — edited extracts from a speech to students graduating from Syracuse University, with two images, A and B (PDF4–5). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-t2-a-iii-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Text 2 QA(iii)(b)",
+   "questionText": "Imagine that one of the images accompanying this text was projected on a screen behind George Saunders as he delivered this speech. Which one of the two images would you choose in order to make a strong impression on the audience? Give reasons for your answer.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Lessons for the Future",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "George Saunders — edited extracts from a speech to students graduating from Syracuse University, with two images, A and B (PDF4–5). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7,
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-t2-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Text 2 QB",
+   "questionText": "Imagine you are conducting a radio interview with an older person who has had an eventful life. Write the text for the interview, including the responses that you think the interviewee might give. In the interview you should ask them: to describe an eventful episode that made them think, to reflect on something they would do differently and to offer one piece of advice they think would be beneficial for the listeners.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-t3-a-i",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Text 3 QA(i)",
+   "questionText": "Based on your reading of TEXT 3 what impression do you form of Banksy? Make three points in your response. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Life Lessons Through Art",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Will Ellsworth-Jones — based on an article in The Smithsonian about the graffiti artist Banksy, with two images by Banksy, A (PDF6) and B (PDF7). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-t3-a-ii",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Text 3 QA(ii)",
+   "questionText": "Graffiti can be both visually striking and thought-provoking. In the case of both of the images by Banksy, describe what is visually striking about each image and explain what life lessons you gained from them.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Life Lessons Through Art",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Will Ellsworth-Jones — based on an article in The Smithsonian about the graffiti artist Banksy, with two images by Banksy, A (PDF6) and B (PDF7). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-t3-a-iii-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Text 3 QA(iii)(b)",
+   "questionText": "Why do you think the artist Banksy has tried to remain anonymous? Give reasons for your answer. You may refer to the text if you wish.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Life Lessons Through Art",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Will Ellsworth-Jones — based on an article in The Smithsonian about the graffiti artist Banksy, with two images by Banksy, A (PDF6) and B (PDF7). As reproduced in the SEC 2023 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-t3-b",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Text 3 QB",
+   "questionText": "Graffiti has started to appear on walls and other surfaces in your local area. It has become a source of controversy, with some people considering it to be art and others considering it vandalism. Write a letter to your local newspaper in which you respond to the issue. In your letter you should: describe what some of the graffiti looks like, explain what your own views are on the controversy and make a suggestion as to what actions local authorities should take in relation to it.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-composing-1",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Composing 1",
+   "questionText": "TEXT 1 details Denise O’Sullivan’s passionate love of football. Write a personal essay in which you describe some of the things in life that you are passionate about and explain why these things are so important to you.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-composing-2",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Composing 2",
+   "questionText": "In the speech in TEXT 2 the audience is encouraged to “try to be kinder”. Write a short story in which a person carries out an act of kindness which has a surprising or unexpected outcome.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    13
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-composing-3",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Composing 3",
+   "questionText": "In the opening of TEXT 2 George Saunders refers to people making “a series of dreadful mistakes” in life. Imagine you are taking part in a schools’ debating competition. Write a speech in which you argue for or against the motion: “Human beings never learn from their mistakes.”",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Use the conventions and register of the requested speech.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-composing-4",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Composing 4",
+   "questionText": "TEXT 3 refers to a list of the world’s 100 most influential people. Write a personal essay in which you describe some of the important people who have had an influence on you, and explain the impact they have had on your life.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-composing-5",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Composing 5",
+   "questionText": "The artist Banksy who features in TEXT 3 is sometimes referred to as a ‘celebrity artist’. Write a magazine article entitled, “Celebrities – Love Them or Hate Them!” in which you discuss the influence of celebrity culture in today’s world. Your article may be serious or humorous or both.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-composing-6",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Composing 6",
+   "questionText": "In TEXT 2, George Saunders describes an embarrassing moment in his life. You have been asked to give a talk to the first-year students starting in your school entitled, “You can’t get it right all of the time in life!” Your talk aims to put the first-year students at ease as they start life in their new school.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2023-ol-p1-composing-7",
+   "year": 2023,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2023 OL Paper 1 Composing 7",
+   "questionText": "In TEXT 1, being competitive is important to Denise O’Sullivan. Write a short story in which two rival characters compete against each other, leading to disastrous consequences for them both.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2023-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "7"
    }
   },
   {

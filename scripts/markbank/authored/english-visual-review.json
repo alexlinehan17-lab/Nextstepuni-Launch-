@@ -2118,17 +2118,76 @@
       "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
       "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
       "paperPagesInspected": [
+        1,
         2,
         3,
         4,
-        5
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ],
-      "visualSweepComplete": false,
+      "visualSweepComplete": true,
       "notes": [
-        "Text 1 has three named adjectives, choose two, and photos A/B. Text 2 images A/B. Both image choices at 10 marks."
+        "Text 1 has three named adjectives, choose two, and photos A/B. Text 2 images A/B. Both image choices at 10 marks.",
+        "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks, one card each (Text 1 A(ii) two of three words, Text 1 and Text 2 A(iii)(b) one of two images and composing 3 for/against are printed choices marked on one grid). A(iii)(a) is printed identically under all three texts and published once (two printed repeats).",
+        "Readers under printed headings: TEXT 1 Lessons Learned on the Road to Success PDF2–3, TEXT 2 Lessons for the Future PDF4–5, TEXT 3 Life Lessons Through Art PDF6–7. A(iii)(a) needs no reader. C/L ≤ P (PDF3); grids PDF64–65 (2018 OL print)."
       ],
-      "allTaskBoundariesSchemeChecked": false,
-      "allFiniteRoutesReconciled": false
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        63,
+        64,
+        65,
+        66
+      ],
+      "schemePagesVisuallyChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        63,
+        64,
+        65,
+        66
+      ],
+      "independentPaperTally": {
+        "baseTasks": 22,
+        "finiteRoutes": 22,
+        "basis": "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks, one card each (Text 1 A(ii) two of three words, Text 1 and Text 2 A(iii)(b) one of two images and composing 3 for/against are printed choices marked on one grid). A(iii)(a) is printed identically under all three texts and published once (two printed repeats)."
+      }
     },
     {
       "paperId": "english-2023-ol-p2",

@@ -39802,6 +39802,562 @@
         "notes": "2023 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF50."
       },
       "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1(a) 30 and Q1(b) 40 one combined mark from the single H1–H8 row printed with the task (Appendix 2 combined grid PDF50), Q2 70 discrete 21/21/21/7; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Task pages print H-band anchors in the 100% row of the 50/60/70 grids; Appendix 2 PDF50 prints the continuous totals."
+    },
+    "english-2023-ol-p1-t1-a-i": {
+      "taskSha256": "fd046d6457a63d42ec75eafbaf3eb336aca7478c7b26a3a4f8cda2d625579242",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 15,
+      "schemePages": [
+        5
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2023 OL combined grid (PDF64–65, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-t1-a-ii": {
+      "taskSha256": "6940f80cb621a6d584fdc0b8d5caeeef4c6f755cceb7dffdbd16dab528d94ea7",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 15,
+      "schemePages": [
+        5
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2023 OL combined grid (PDF64–65, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks. Scheme PDF5 heads the indicative material for the printed “Well-written” as “Articulate”; the paper wording is retained."
+    },
+    "english-2023-ol-p1-t1-a-iii-a": {
+      "taskSha256": "02f408b8573e8f79132618fa42b212b4e6bd0bd0101175d8b5bd4bf6b931ada4",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 10,
+      "schemePages": [
+        6
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2023 OL combined grid (PDF64–65, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-t1-a-iii-b": {
+      "taskSha256": "57b9f41abb433d1aa3960fd790b086ad86b064af30a23868ccc23135e1b966e4",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 10,
+      "schemePages": [
+        6
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2023 OL combined grid (PDF64–65, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks. Scheme PDF6 reprints “the two images in TEXT 1”; the paper (PDF3) prints “the two images of Denise O’Sullivan in TEXT 1”. Paper wording retained."
+    },
+    "english-2023-ol-p1-t1-b": {
+      "taskSha256": "ecad720a57f115cf2a3660c2c01371eeb54810b281b304cd8f76a668bdb7d436",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 50,
+      "schemePages": [
+        6
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2023 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF64–65 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-t2-a-i": {
+      "taskSha256": "166fcfd8f8725f0fcbc9a6443805024107466dce38ea61cb82de19fa7adf962f",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 15,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2023 OL combined grid (PDF64–65, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-t2-a-ii": {
+      "taskSha256": "da2a9aca30c45a3885825d791e56c72cde36c9df455a00c11d32e3d521032206",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 15,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2023 OL combined grid (PDF64–65, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-t2-a-iii-a": {
+      "taskSha256": "a5822fd9f072bcc23fd42c8b3fb20e3da89936fbfc8377f4822176ca1841cccb",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 10,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2023 OL combined grid (PDF64–65, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-t2-a-iii-b": {
+      "taskSha256": "fa4918b6f451969d23acf566e9ad9f9038dbc94f907b9b05dcc08407439cc791",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 10,
+      "schemePages": [
+        7,
+        8
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2023 OL combined grid (PDF64–65, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-t2-b": {
+      "taskSha256": "539517ebd500a72e607eb712ebe1bed55d08c2790cfcccf7df867b3d82daba93",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 50,
+      "schemePages": [
+        8
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2023 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF64–65 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-t3-a-i": {
+      "taskSha256": "ee43343e7417f8474f6e90be6c318846a08b9eef97ca94a437f7380238dde971",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 15,
+      "schemePages": [
+        9
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2023 OL combined grid (PDF64–65, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-t3-a-ii": {
+      "taskSha256": "03865c72beec0a253716e5f134d417da838faae567cc1db6ba1d0b78bc4230bb",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 15,
+      "schemePages": [
+        9
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2023 OL combined grid (PDF64–65, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-t3-a-iii-a": {
+      "taskSha256": "d11c9f41356c1cefb7ed5fa0a4c2869a775840688c8669fcf4852c22ad212466",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 10,
+      "schemePages": [
+        9
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2023 OL combined grid (PDF64–65, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-t3-a-iii-b": {
+      "taskSha256": "a306cbd4acdbacda49a813d6f447012112cbd3d53f7cfddcf379cc52d0e8e1ac",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 10,
+      "schemePages": [
+        10
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2023 OL combined grid (PDF64–65, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-t3-b": {
+      "taskSha256": "546cc9dbb5e6e6c90616690d5d61d86877565f1221cd720ba4de61d7d1379e4d",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 50,
+      "schemePages": [
+        10
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2023 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF64–65 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks. The 50-mark row on scheme PDF10 prints O2 as “45 - 40”, overlapping O1 “50 - 45”; Appendix 2 (PDF64) prints O2 44 - 40, as on PDF6 and PDF8."
+    },
+    "english-2023-ol-p1-composing-1": {
+      "taskSha256": "95cdb021d74deffcb33d1bc9390e2cd423e55f87f27b54cbdb04495ecf475a53",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 100,
+      "schemePages": [
+        11,
+        12
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2023 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF64–65 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-composing-2": {
+      "taskSha256": "4ee9f1f4b8680282a5f551b9feefb8471b6cd62e60fef63c253d31be083b9abd",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 100,
+      "schemePages": [
+        11,
+        13
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2023 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF64–65 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-composing-3": {
+      "taskSha256": "db6bb3ff6b452be550102337bd783981eff78627c9385140ced00c053ba9c3c8",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 100,
+      "schemePages": [
+        11,
+        14
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2023 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF64–65 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-composing-4": {
+      "taskSha256": "227aa40e153e70f98973317881f3df29e8a27610cdb2f2db83b5f984ce487873",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 100,
+      "schemePages": [
+        11,
+        15
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2023 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF64–65 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-composing-5": {
+      "taskSha256": "baec01904effb254a8a9faca76a3fcfa03de5054cfb08d9cf3d019fcef53440d",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 100,
+      "schemePages": [
+        11,
+        16
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2023 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF64–65 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-composing-6": {
+      "taskSha256": "9599cccc0f315cc4c622b922b1f96df0fdd50cc62043f825f00034e6ed229489",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 100,
+      "schemePages": [
+        11,
+        17
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2023 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF64–65 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
+    },
+    "english-2023-ol-p1-composing-7": {
+      "taskSha256": "46b933412e62d2d4a970410ed0cce8b881ea50676d5f5671e6de41123fa56d2c",
+      "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "totalMarks": 100,
+      "schemePages": [
+        11,
+        18
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        64,
+        65
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2023 OL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete grid PDF64–65 (O1–O8)."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P + C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition). Appendix 2 grids PDF64–65. No invented splits or submarks."
     }
   }
 }

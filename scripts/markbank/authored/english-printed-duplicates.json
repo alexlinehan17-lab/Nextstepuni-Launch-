@@ -13,6 +13,14 @@
       "canonical": "english-2018-ol-p2-comparative-a-q1-b",
       "reason": "Q1(b) and Q2(b) are printed with identical wording and tariff (40) under one mode, on the same page (paper PDF11) and marked from the same scheme page; one practice identity, keeping both printed placements in the Atlas."
     },
+    "english-2023-ol-p1-t2-a-iii-a": {
+      "canonical": "english-2023-ol-p1-t1-a-iii-a",
+      "reason": "Printed identically after TEXT 1, TEXT 2 and TEXT 3 (paper PDF3, PDF5, PDF7), same tariff (10), grid and no reader; one practice identity as in the legacy deck (withdrawn aliases), keeping all three printed placements in the Atlas."
+    },
+    "english-2023-ol-p1-t3-a-iii-a": {
+      "canonical": "english-2023-ol-p1-t1-a-iii-a",
+      "reason": "Printed identically after TEXT 1, TEXT 2 and TEXT 3 (paper PDF3, PDF5, PDF7), same tariff (10), grid and no reader; one practice identity as in the legacy deck (withdrawn aliases), keeping all three printed placements in the Atlas."
+    },
     "english-2024-ol-p1-t2-a-iii-a": {
       "canonical": "english-2024-ol-p1-t1-a-iii-a",
       "reason": "Printed identically after TEXT 1, TEXT 2 and TEXT 3 (paper PDF3, PDF5, PDF7), same tariff (10), grid and no reader; one practice identity as in the legacy deck (withdrawn aliases), keeping all three printed placements in the Atlas."
