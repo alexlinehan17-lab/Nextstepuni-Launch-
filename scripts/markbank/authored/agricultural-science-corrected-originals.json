@@ -4615,5 +4615,1423 @@
   },
   "originalSha256": "bddec46d46f6629bd6cb3b23d152f658a590cff11f5b637f0d99fb5cd6ca73f5",
   "snapshotFrom": "codex/agricultural-science-completion-20261007 at 69934e58 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q1b": {
+  "original": {
+   "id": "agsci-2021-hl-q1b",
+   "topicId": "agsci-3-2",
+   "conceptId": "annual-vs-biennial-lifecycle",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q1(b)",
+   "questionText": "Using a named example, other than the plants shown at part (a) above, distinguish between annual and biennial lifecycles.",
+   "stem": "Part (a) of this question printed photographs of three plants labelled A, B and C. They are A = buttercup, B = thistle, C = dock — those are the plants your named example must avoid.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2 + 1+1"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Annual ‐ (plants that complete their lifecycle in) one year or valid description of life cycle",
+     "marks": 2,
+     "contextNote": "The scheme awards 2 for one of the two definitions and 1 + 1 for the other definition plus its named example. The split is symmetric — a candidate who defines biennial first scores the same way."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Biennial ‐ plants that complete their lifecycle in 2 years or valid description of life cycle",
+     "marks": 1
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "Some examples: ‐ Potatoes, Ragwort, Sugar beet, Carrots, Kale, Italian Ryegrass or other valid example.",
+     "marks": 1,
+     "openList": true,
+     "accepts": [
+      "Some examples: ‐ Barley, Wheat, Oats, Peas, Beans, Maize or other valid example."
+     ]
+    }
+   ],
+   "notes": "Part (a) of Q1 is a plant-identification photograph and is skipped; its three answers (buttercup, thistle, dock) are carried in the stem so the 'other than the plants shown at part (a)' constraint is not a dangling reference. The scheme prints the tariff as '2' and '1+1' beside the instruction 'Definition of one of annual or biennial for 2 and two marks for the other with a named example' — 4 marks in total, which is what the paper allots (Q1 = 10 = 6 for part (a) + 4 here). Row 3's example pool is the biennial one because it pairs with the 1-mark biennial definition; the annual pool is carried in accepts since the split is symmetric.",
+   "figureKey": "agricultural-science-2021-HL-paper-p03-i1"
+  },
+  "originalSha256": "e6c590b69d730938fa917956516fd1ffb5f2190d2cdf6af25b455a657ac17f7c",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q3ai": {
+  "original": {
+   "id": "agsci-2021-hl-q3ai",
+   "topicId": "agsci-1-5",
+   "conceptId": "farm-safety-sign-symbols",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q3(a)(i)",
+   "questionText": "State the meaning of symbols A and B on the sign.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "A = Beware of bull",
+     "marks": 2,
+     "accepts": [
+      "beware: livestock can be dangerous"
+     ],
+     "contextNote": "On the reproduced notice, A is the yellow panel beside a triangular warning pictogram of a bull, and B the red panel beside a pictogram of an adult and child. The other two panels are already captioned."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "B = This is not a playground",
+     "marks": 2
+    }
+   ],
+   "stem": "Farm Safety Notice No unauthorised persons allowed beyond this point CAUTION Farm machinery in operation THINK SAFETY FIRST! Or",
+   "figureKey": "agricultural-science-2021-HL-paper-p06-i0",
+   "labelKey": [
+    {
+     "letter": "A",
+     "meaning": "Beware of bull",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "B",
+     "meaning": "This is not a playground",
+     "askedInThisQuestion": true
+    }
+   ]
+  },
+  "originalSha256": "b46654d1935df5a6479cfc32de064b25bd9890302a8418dbbea038f99d6fb8b0",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q3aii": {
+  "original": {
+   "id": "agsci-2021-hl-q3aii",
+   "topicId": "agsci-1-5",
+   "conceptId": "animal-husbandry-equipment",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q3(a)(ii)",
+   "questionText": "State the function of C and D.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "C = castrating male animals/ tail docking",
+     "marks": 2,
+     "contextNote": "C is a long-handled pincer tool with blue grips; D a hinged metal frame with a ratcheted bar and two red cords."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "D = to assist cows when giving birth (calving)",
+     "marks": 2
+    }
+   ],
+   "stem": "Farm Safety Notice No unauthorised persons allowed beyond this point CAUTION Farm machinery in operation THINK SAFETY FIRST! Or",
+   "figureKey": "agricultural-science-2021-HL-paper-p06-i1",
+   "labelKey": [
+    {
+     "letter": "C",
+     "meaning": "castrating male animals/ tail docking",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "D",
+     "meaning": "to assist cows when giving birth (calving)",
+     "askedInThisQuestion": true
+    }
+   ]
+  },
+  "originalSha256": "be1ec2e98937c9652d9bd2bb15a9738d44f2b6422246431c77e07f49a7b7787d",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q3aiii": {
+  "original": {
+   "id": "agsci-2021-hl-q3aiii",
+   "topicId": "agsci-1-5",
+   "conceptId": "castration-and-farm-sustainability",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q3(a)(iii)",
+   "questionText": "In relation to picture C at part (ii) above, state one advantage of using this piece of equipment to enhance sustainability of the farm.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Castrate male animals on the farm to prevent unwanted breeding (of poor performing animals)",
+     "marks": 2,
+     "accepts": [
+      "removes requirements for keeping bulls on farm",
+      "limited market for bull beef"
+     ]
+    }
+   ],
+   "stem": "Farm Safety Notice No unauthorised persons allowed beyond this point CAUTION Farm machinery in operation THINK SAFETY FIRST! Or",
+   "notes": "The question points back at picture C from part (ii), so the card carries the same figure.",
+   "figureKey": "agricultural-science-2021-HL-paper-p06-i1"
+  },
+  "originalSha256": "371d51c9d5cc454e9adf928b55504e4f070ad44ac95209639a6c5c318baf4de5",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q3bii": {
+  "original": {
+   "id": "agsci-2021-hl-q3bii",
+   "topicId": "agsci-3-3-2",
+   "conceptId": "tracked-tractor-advantage",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q3(b)(ii)",
+   "questionText": "The tractor in picture A is fitted with two tracks instead of four wheels. Suggest one advantage of using a tractor fitted with tracks.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Decreased compaction (due to increased surface area)",
+     "marks": 2,
+     "accepts": [
+      "less damage to soil structure",
+      "reduced risk of tractor turning over on steep hillsides or better stability",
+      "machine capable of pulling heavier loads"
+     ]
+    }
+   ],
+   "notes": "Any one advantage scores the 2 marks; the scheme prints four.",
+   "figureKey": "agricultural-science-2021-HL-paper-p07-i0"
+  },
+  "originalSha256": "e76a260410eda8bf4471a02b95c68a3b489338f93f5c1d6aa0d4f5dff1500bc2",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q3biii": {
+  "original": {
+   "id": "agsci-2021-hl-q3biii",
+   "topicId": "agsci-3-3-2",
+   "conceptId": "one-pass-environmental-benefit",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q3(b)(iii)",
+   "questionText": "State one way machine A can enhance environmental sustainability.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Reduces water run‐off",
+     "marks": 2,
+     "accepts": [
+      "reduces sediment loss",
+      "increases soil organic matter (C sink)",
+      "fewer number of passes leads to less emissions"
+     ]
+    }
+   ],
+   "figureKey": "agricultural-science-2021-HL-paper-p07-i0"
+  },
+  "originalSha256": "78b6f3e8d789f607ad261e4d4fe021fc3f67b378aaab8213fe144099d075e91c",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q4c": {
+  "original": {
+   "id": "agsci-2021-hl-q4c",
+   "topicId": "agsci-4-3-1",
+   "conceptId": "farmyard-environmental-improvements",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q4(c)",
+   "questionText": "Apart from your answer to part (a) above, suggest two ways in which the farmer could make the farmyard more environmentally sustainable.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(2)"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "sow wild flowers (on bank beside the shed) for pollinators (or biodiversity) or create a wildlife pond",
+     "marks": 2,
+     "accepts": [
+      "cover the open lagoon to avoid it filling up quickly and becoming diluted",
+      "water harvesting to reduce water consumption",
+      "install bird boxes",
+      "install bat boxes",
+      "install insect hotels increase biodiversity",
+      "any energy saving measure that a student has not given as an answer to part (a)",
+      "pit silage instead of bales to reduce plastic waste"
+     ],
+     "contextNote": "Scheme tariff is 2(2): any two of the printed ways score 2 marks each."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "cover the collecting yard to prevent any run‐off when raining (bales on concrete)",
+     "marks": 2,
+     "accepts": [
+      "cover the open lagoon to avoid it filling up quickly and becoming diluted",
+      "water harvesting to reduce water consumption",
+      "install bird boxes",
+      "install bat boxes",
+      "install insect hotels increase biodiversity",
+      "any energy saving measure that a student has not given as an answer to part (a)",
+      "pit silage instead of bales to reduce plastic waste"
+     ]
+    }
+   ],
+   "stem": "Study the photograph of the farm layout below and answer the questions which follow.",
+   "notes": "The scheme's first line welds a rubric — that the answer may not repeat part (a) — onto its first suggestion, so that line is left off the card rather than shown as an answer. The rubric itself is in the question.",
+   "figureKey": "agricultural-science-2021-HL-paper-p08-i0"
+  },
+  "originalSha256": "0037e92d599932ce0bf78908a89d4b051492ba8182db4f47f0efab9b02455725",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q5a": {
+  "original": {
+   "id": "agsci-2021-hl-q5a",
+   "topicId": "agsci-3-3-2",
+   "conceptId": "catch-crop-sustainability",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q5(a)",
+   "questionText": "Describe two ways in which the production of your chosen crop contributes to sustainability.",
+   "stem": "In relation to a catch crop or energy crop you have studied answer the following questions. Name of chosen crop: ______",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(2)"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Kale or stubble turnips ‐ protection of soil structure against soil erosion (from heavy rain)",
+     "marks": 2,
+     "openList": true,
+     "contextNote": "There are no marks for naming the crop, but the points must match the crop named. The scheme prints separate pools for kale/stubble turnips, oilseed rape and miscanthus and closes 'OR valid answer for other named valid crop(s)'.",
+     "accepts": [
+      "increased soil organic matter (whose main constituent soil organic carbon removes CO2 from the atmosphere)",
+      "prevents mineral leaching as it uses up nutrients",
+      "act as a break crop for weeds, pests and diseases (so less chemicals required)",
+      "animals out‐wintered or extends the grazing season ‐ less slurry storage or less housing requirements or less winter feed",
+      "high protein ‐ less concentrates needed",
+      "earthworm activity increased",
+      "Oilseed rape ‐weed control ‐less herbicides required",
+      "strong tap root development ‐ reduced soil compaction",
+      "improve soil structure which controls drainage and aeration (maintains optimum N mineralisation rates)",
+      "prevention of nitrogen leaching as it uses up nutrients",
+      "prevent soil erosion as root system binds soil",
+      "can be used as a biofuel reducing diesel requirements reducing the burning of fossil fuels",
+      "Miscanthus ‐ carbon neutral crop or reduces greenhouse gas emissions",
+      "low fertiliser requirement",
+      "no serious pest problems so pesticide use is limited",
+      "increases wildlife biodiversity"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "reduced soil compaction or easier subsequent cultivation as roots which break up the soil",
+     "marks": 2,
+     "openList": true,
+     "accepts": [
+      "increased soil organic matter (whose main constituent soil organic carbon removes CO2 from the atmosphere)",
+      "prevents mineral leaching as it uses up nutrients",
+      "act as a break crop for weeds, pests and diseases (so less chemicals required)",
+      "animals out‐wintered or extends the grazing season ‐ less slurry storage or less housing requirements or less winter feed",
+      "high protein ‐ less concentrates needed",
+      "earthworm activity increased",
+      "Oilseed rape ‐weed control ‐less herbicides required",
+      "strong tap root development ‐ reduced soil compaction",
+      "improve soil structure which controls drainage and aeration (maintains optimum N mineralisation rates)",
+      "prevention of nitrogen leaching as it uses up nutrients",
+      "prevent soil erosion as root system binds soil",
+      "can be used as a biofuel reducing diesel requirements reducing the burning of fossil fuels",
+      "Miscanthus ‐ carbon neutral crop or reduces greenhouse gas emissions",
+      "low fertiliser requirement",
+      "no serious pest problems so pesticide use is limited",
+      "increases wildlife biodiversity"
+     ]
+    }
+   ],
+   "notes": "2(2) = two points at 2 each. The scheme heads this part 'No marks for name of crop – crop must be referenced as named crop or within the question'. The two row verbatims are the kale/stubble-turnip pool's first two points; every point the scheme prints for oilseed rape and miscanthus is carried in accepts so a candidate who named a different crop can still mark their own answer, and openList is set because the scheme closes 'OR valid answer for other named valid crop(s)'."
+  },
+  "originalSha256": "1c91815dcfe226226473ffe73dacdc9bce7079b0804b880ce7bf2df1df35ae1e",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q5b": {
+  "original": {
+   "id": "agsci-2021-hl-q5b",
+   "topicId": "agsci-3-3-2",
+   "conceptId": "catch-crop-pest-damage",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q5(b)",
+   "questionText": "Describe the damage caused by a named pest to your chosen crop.",
+   "stem": "In relation to a catch crop or energy crop you have studied answer the following questions. Name of chosen crop: ______  Named pest: ______",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Kale or stubble turnip ‐Flea beetle eats holes (in the emerging seedlings, stems of) leaves of plant",
+     "marks": 2,
+     "openList": true,
+     "contextNote": "There are no marks for naming the pest — the 2 marks are for the damage described, and it must match the pest and crop named.",
+     "accepts": [
+      "diamondback moth or white cabbage butterfly caterpillar feeds on the leaves of the crop",
+      "aphids suck sap damaging leaves",
+      "slugs or rabbits eat leaves of crop",
+      "OSR ‐ Bird damage over winter, pick at (small tender) leaves",
+      "flea beetle eat holes in leaves or larvae burrow into the stem",
+      "Miscanthus ‐ Larvae (caterpillar) of common rustic moth or ghost moth feed on roots of crop",
+      "wireworms bite holes in the stems or shoots"
+     ]
+    }
+   ],
+   "notes": "A single 2-mark point. The scheme heads the part 'No marks for named pest' and prints damage descriptions for kale/stubble turnip, oilseed rape and miscanthus, closing 'OR valid answer for other named valid crop(s)' — hence openList and the full cross-crop accepts list."
+  },
+  "originalSha256": "c53f16c45fca9b8be88f21a4b568fbbaddba46532b95726262b81822905d4c29",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q5c": {
+  "original": {
+   "id": "agsci-2021-hl-q5c",
+   "topicId": "agsci-3-1",
+   "conceptId": "first-two-growth-stages",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q5(c)",
+   "questionText": "Describe the first two growth cycle stages of your chosen crop.",
+   "stem": "In relation to a catch crop or energy crop you have studied answer the following questions. Name of chosen crop: ______",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(2)"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Germination ‐ cotyledon (seed leaf) emerge from the soil",
+     "marks": 2,
+     "openList": true,
+     "contextNote": "The stages must match the crop named. The scheme's parallel wordings are for oilseed rape and miscanthus.",
+     "accepts": [
+      "Germination and emergence ‐ cotyledon (seed leaf) emergence above ground",
+      "After establishment: shoots emerge from underground rhizomes in spring"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Vegetative stage: true leaves produced (with uptake of nitrogen to stage where crop is in utilisation stage suitable for grazing in situ)",
+     "marks": 2,
+     "openList": true,
+     "accepts": [
+      "Vegetative stage ‐ leaf development and side shoot formation ( occurs once 1st true leaves emerge produces multiple side shoots)",
+      "Vegetative growth: in summer producing leaf and stem growth (reaching a height of 3m)"
+     ]
+    }
+   ],
+   "notes": "2(2) = two points at 2 each; these two are genuinely sequential (stage 1 then stage 2), not alternatives. Row verbatims are the kale/stubble-turnip wordings; the oilseed rape and miscanthus wordings for the same two stages are in accepts. The scheme's numbering ('1.', '2.') is dropped from the verbatim so the row text is not read as a tariff. openList is set because the scheme closes 'OR valid answer for other named valid crop(s)'."
+  },
+  "originalSha256": "f90ab4adca507eb0be39f736b8744736818d2bc6447473e8a4e806c4cb89c109",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q6bii": {
+  "original": {
+   "id": "agsci-2021-hl-q6bii",
+   "topicId": "agsci-2-3",
+   "conceptId": "tillage-vs-grassland-organic-matter",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q6(b)(ii)",
+   "questionText": "Compare two effects of continuous tillage and permanent grassland on the soil organic matter content.",
+   "stem": "",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(2)"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Continuous tillage (Permanent grassland) ‐decreased organic matter (increased organic matter)",
+     "marks": 2,
+     "contextNote": "The scheme prints the continuous-tillage effect first with the permanent-grassland effect in brackets. A comparison needs both sides."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "more recycling of organic matter through crop presence and animal manures",
+     "marks": 2,
+     "contextNote": "The scheme states this second point as a pair: 'stripping of nutrients or straw removal leads to less organic matter' under continuous tillage, against '(more recycling of organic matter through crop presence and animal manures)' under permanent grassland."
+    }
+   ],
+   "notes": "2(2) = two comparison points at 2 each. Row 2's verbatim is the grassland half of the pair, taken as a contiguous span of the scheme; the tillage half is quoted in its contextNote because a marks digit is typeset mid-line between the two halves in the extraction."
+  },
+  "originalSha256": "ac8e3615d267bf03b95b350fe3c2e2b980531006c78c16bc0af1e5bbcad0d6d9",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q9a": {
+  "original": {
+   "id": "agsci-2021-hl-q9a",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "genomic-selection",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q9(a)",
+   "questionText": "Explain genomic selection.",
+   "stem": "",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Animals or plants selected based on their DNA (or genetic material)",
+     "marks": 2,
+     "contextNote": "The scheme's sentence finishes '…examined and compared to reference data.' — the comparison against reference data is part of the same single 2-mark definition."
+    }
+   ],
+   "notes": "A single 2-mark definition. The verbatim is the leading contiguous span of the scheme's sentence; its closing clause is quoted in the contextNote because the marks digit is typeset between the two lines in the extraction."
+  },
+  "originalSha256": "bb3568349313efe044b41066a0d0cc3ccb7ae34292e9e18439dea66e6fe852a6",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q9c": {
+  "original": {
+   "id": "agsci-2021-hl-q9c",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "selection-on-physical-traits",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q9(c)",
+   "questionText": "Describe how farmers have made genetic improvements in their animal enterprise based on physical traits of their animals.",
+   "stem": "",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Farmer identifies trait (double muscle, udder, sound feet, conformation, good mouth, polled )",
+     "marks": 2,
+     "contextNote": "The scheme's full point continues: '…then the farmer (selectively, deliberately) breeds from these (superior) animals (to achieve superior offspring)'.",
+     "accepts": [
+      "breed from animals with better FCR which costs farmer less money (to feed leaving higher profit)"
+     ]
+    }
+   ],
+   "notes": "One 2-mark point with two solidus-separated wordings. The row verbatim is the opening contiguous span of the first wording; its continuation is quoted in the contextNote because a marks digit is typeset mid-sentence in the extraction."
+  },
+  "originalSha256": "4b34ddf56c5bfad71a979305bbb2cf05b633d2407e2de8427dc9ab65a2dec24d",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q10a": {
+  "original": {
+   "id": "agsci-2021-hl-q10a",
+   "topicId": "agsci-4-3-1",
+   "conceptId": "artisan-produce-vs-niche-market",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q10(a)",
+   "questionText": "Distinguish between artisan produce and a niche market.",
+   "stem": "The Murphy family operate one of Ireland's sheep dairy farms in Co. Galway. They produce artisan products for a niche market. Their produce is available in approximately 50 shops and in some of Ireland's top restaurants.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2 + 2"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "AP ‐ food produced in microenterprise with unique characteristics",
+     "marks": 2,
+     "contextNote": "The scheme adds '(usually handmade with a distinctive flavour)' — bracketed, so context rather than a requirement."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "NM ‐ small specialised market for a particular product or service",
+     "marks": 2
+    }
+   ],
+   "notes": "AP and NM are the scheme's own abbreviations for artisan produce and niche market. Two 2-mark definitions. Row 1 stops at 'characteristics' because the marks digit is typeset between that line and the bracketed continuation in the extraction; the continuation is on the row's contextNote."
+  },
+  "originalSha256": "69ae3eb8897faba82ebe74b54694963d8323731caa0017befef84a74430f88e4",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q10c": {
+  "original": {
+   "id": "agsci-2021-hl-q10c",
+   "topicId": "agsci-4-3-1",
+   "conceptId": "sheep-vs-cow-milk-water",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q10(c)",
+   "questionText": "Compare the composition of sheep's milk given above to your knowledge of cow's milk in relation to the water content.",
+   "stem": "The paper prints a pie chart headed 'Sheep Milk Composition' (adapted from Nutritionbridge, 2020). Its values are: Water 84%, Protein 4%, Fat 7%, Lactose 5%.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Sheep’s milk has 84% water compared to 87‐88% water in cow’s milk",
+     "marks": 2,
+     "accepts": [
+      "sheep milk has less water than cow’s milk"
+     ]
+    }
+   ],
+   "notes": "The pie chart's only content is its four printed percentages, which are reproduced in the stem and verified against the paper, so the question is fully answerable without the image; a later figure wave could still attach the real chart. One 2-mark point with two wordings, which the scheme separates with 'or' (the front-matter convention for a part where only one answer is required) — hence one row with the second wording in accepts."
+  },
+  "originalSha256": "3ccc41481b02ff7e8000b21c6adee3747d274893ed7c7e3e38decb9cdd092db3",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q11bii": {
+  "original": {
+   "id": "agsci-2021-hl-q11bii",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "ruminant-digestive-disorder",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 HL Q11(b)(ii)",
+   "questionText": "Briefly describe a named disorder of the ruminant digestive system under the following headings: Symptoms, Treatment, Prevention.",
+   "stem": "Named disorder: ______",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2 + 2 + 2"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Bloat ‐ gas build up in rumen and (left side of the) abdomen becomes distended (swollen)",
+     "marks": 2,
+     "openList": true,
+     "contextNote": "This row is the SYMPTOMS heading. There are no marks for naming the condition, but every point must match the disorder named. The scheme's worked examples are bloat and acidosis, introduced with 'e.g.', so another valid ruminant digestive disorder described correctly also scores.",
+     "accepts": [
+      "Acidosis ‐ rumen stops moving leading to loss in appetite due to high levels of lactic acid produced"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Bloat ‐ antacid or antifoaming solution / tube inserted through mouth to release gas / insert a trocar and canula (into the rumen) or trocar is removed and canula remains to allow gas escape",
+     "marks": 2,
+     "openList": true,
+     "contextNote": "This row is the TREATMENT heading. The solidus-separated items are alternative treatments for the same single 2-mark heading, not extra marks.",
+     "accepts": [
+      "Acidosis ‐ dose with bicarbonate (bread soda) solution or magnesium oxide solution to neutralise the pH in the rumen"
+     ]
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "Bloat ‐ Limit amount of time spent grazing in early spring or provide additional fibre (silage) / antifoaming treatment in the water / limit grazing on high clover swards",
+     "marks": 2,
+     "openList": true,
+     "contextNote": "This row is the PREVENTION heading. The solidus-separated items are alternative preventions for the same single 2-mark heading, not extra marks.",
+     "accepts": [
+      "Acidosis ‐ ensure adequate fibre fed especially on high concentrate diets / increase concentrate feeding levels gradually"
+     ]
+    }
+   ],
+   "notes": "The paper prints three headings each carrying 2 marks, total 6, which is what Q11(b) allots alongside part (i)'s 4. The scheme prints 'Symptoms', 'Treatment' and 'Prevention' as standalone headings above their answer lines, so the headings are carried in contextNotes rather than inside the verbatim spans. openList is set because the scheme introduces bloat and acidosis with 'e.g.'."
+  },
+  "originalSha256": "c2842e0ef1af77a6ca6001480311128611641bd1a71d64e3ab591a567893177b",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q14bi": {
+  "original": {
+   "id": "agsci-2021-hl-q14bi",
+   "topicId": "agsci-4-1",
+   "conceptId": "identifying-cattle-and-sheep-breeds",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q14(b)(i)",
+   "questionText": "Identify each of the following cattle and sheep breeds.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "4(1)"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "A = Suffolk",
+     "marks": 1
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "B = Shorthorn",
+     "marks": 1
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "C = Belgian blue",
+     "marks": 1
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "D = Texel",
+     "marks": 1
+    }
+   ],
+   "stem": "1. 2. Name of breed",
+   "notes": "Unlike the Ordinary Level plate the same year, this question prints no word bank — the breeds are expected from knowledge.",
+   "figureKey": "agricultural-science-2021-HL-paper-p27-art",
+   "labelKey": [
+    {
+     "letter": "A",
+     "meaning": "Suffolk",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "B",
+     "meaning": "Shorthorn",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "C",
+     "meaning": "Belgian blue",
+     "askedInThisQuestion": true
+    },
+    {
+     "letter": "D",
+     "meaning": "Texel",
+     "askedInThisQuestion": true
+    }
+   ]
+  },
+  "originalSha256": "bee8449c5b4592337b717e9c0a0edac4e9ad11274528070132e3e2c54e498ff6",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q14bii": {
+  "original": {
+   "id": "agsci-2021-hl-q14bii",
+   "topicId": "agsci-4-2",
+   "conceptId": "breed-characteristics-for-intensive-production",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q14(b)(ii)",
+   "stem": "Question 14 part (b) is a set of breed and husbandry questions. Part (b)(ii) asks you to choose two breeds of a single species you have studied — pig, horse or poultry — and compare them. The paper prints a small table with a row for the name of each breed and two numbered lines under each for the characteristics.",
+   "questionText": "In relation to two named breeds of pig or horse or poultry that you have studied, compare two characteristics of each breed which make them suitable for intensive production.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "2(2+1)"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Landrace ‐ excellent ham",
+     "marks": null,
+     "openList": true,
+     "contextNote": "First characteristic of the FIRST named breed. The scheme states there are no direct marks for naming the breeds, and awards 2(2+1) — for each of the two breeds, 2 marks for the first characteristic and 1 for the second — so a row's value depends on its position in your answer, not on which characteristic it is. Accepts carry the scheme's first-breed pools for all three species routes.",
+     "accepts": [
+      "high carcase weight",
+      "good milk production",
+      "high prolificacy",
+      "good conformation",
+      "Rhode island red ‐ hardy breed",
+      "produce well on marginal feed",
+      "lay 200 to 300 eggs per year (prolific)",
+      "produce large eggs",
+      "eggs pale brown colour (market demands)",
+      "produce medium weight eggs",
+      "Irish sport horse ‐ athleticism",
+      "jumping ability",
+      "courage",
+      "intelligence",
+      "soundness",
+      "Or other valid names and associated valid characteristics"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "high carcase weight",
+     "marks": null,
+     "openList": true,
+     "contextNote": "Second characteristic of the same first breed — a different point from r-1, drawn from the same breed's pool.",
+     "accepts": [
+      "Landrace ‐ excellent ham",
+      "good milk production",
+      "high prolificacy",
+      "good conformation",
+      "Rhode island red ‐ hardy breed",
+      "produce well on marginal feed",
+      "lay 200 to 300 eggs per year (prolific)",
+      "produce large eggs",
+      "eggs pale brown colour (market demands)",
+      "produce medium weight eggs",
+      "Irish sport horse ‐ athleticism",
+      "jumping ability",
+      "courage",
+      "intelligence",
+      "soundness",
+      "Or other valid names and associated valid characteristics"
+     ]
+    },
+    {
+     "id": "r-3",
+     "kind": "alt",
+     "verbatim": "Large white ‐ high growth rate",
+     "marks": null,
+     "openList": true,
+     "contextNote": "First characteristic of the SECOND named breed. Accepts carry the scheme's second-breed pools for all three species routes.",
+     "accepts": [
+      "high lean meat %",
+      "good uniformity of pigs",
+      "prolific",
+      "good at converting feed",
+      "good conformation",
+      "White leghorn ‐ lay 280 to 320 eggs per year (very prolific)",
+      "produce white eggs",
+      "produce heavy eggs",
+      "can withstand cold conditions (ideal for free range or organic enterprises)",
+      "Irish draught horse ‐ versatile",
+      "powerful stride",
+      "athletic animal",
+      "excellent conformation quality",
+      "Or other valid names and associated valid characteristics"
+     ]
+    },
+    {
+     "id": "r-4",
+     "kind": "alt",
+     "verbatim": "high lean meat %",
+     "marks": null,
+     "openList": true,
+     "contextNote": "Second characteristic of the same second breed — a different point from r-3.",
+     "accepts": [
+      "Large white ‐ high growth rate",
+      "good uniformity of pigs",
+      "prolific",
+      "good at converting feed",
+      "good conformation",
+      "White leghorn ‐ lay 280 to 320 eggs per year (very prolific)",
+      "produce white eggs",
+      "produce heavy eggs",
+      "can withstand cold conditions (ideal for free range or organic enterprises)",
+      "Irish draught horse ‐ versatile",
+      "powerful stride",
+      "athletic animal",
+      "excellent conformation quality",
+      "Or other valid names and associated valid characteristics"
+     ]
+    }
+   ],
+   "notes": "2(2+1) = two breeds, each scoring 2 for the first characteristic and 1 for the second = 6 marks. Because the value follows the order the characteristics are given, no row has a defined value and every row carries marks: null. Four rows, one per characteristic the question asks for. The scheme offers three mutually exclusive species routes (pig / poultry / horse); rather than three sets of rows the pig route is shown and the poultry and horse pools are carried in accepts, paired first-breed-with-first-breed so a candidate who did poultry or horses can still self-mark. openList is set on every row because each species block closes 'Or other valid names and associated valid characteristics'. REVIEWER NOTE: 'good terminal sires' (Large white) is omitted entirely because the typeset '2(2+1)' marks cell falls between 'terminal' and 'sires' in the extraction."
+  },
+  "originalSha256": "472e469e70d706a5a4c4e92272843a02a54cd2dc1588a40aaff25eb393f68180",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q14cii": {
+  "original": {
+   "id": "agsci-2021-hl-q14cii",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "lung-score-interpretation",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q14(c)(ii)",
+   "stem": "The following is a Beef HealthCheck report, compiled from abattoir post mortem meat inspection data to help control losses due to liver fluke and pneumonia. LIVER SCORES: 1 normal liver; 2 liver damage by fluke but no live fluke; 3 liver damage by fluke and live fluke; 4 liver other (e.g. tumours); 5 liver abscess. LUNG SCORES (lung lesions result in reduced performance): 1 Normal lung: no lung abnormalities detected. 2 Limited lung damage: this animal had limited lung damage as a result of pneumonia (viral / bacterial infection). 3 Extensive lung damage: this animal had extensive lung damage as a result of pneumonia (viral / bacterial infection). 4 Lung other: lung damage due to other causes, e.g. abscess or tumour. THE REPORT — Tag | Sex | Age (months) | Carcase (kg) | Liver Score | Lung Score: IE 1234567-8-0001 | E | 20 | 330 | 1 | 3 · IE 1234567-8-0002 | C | 22 | 360 | 3 / 5 | 1 · IE 1234567-8-0003 | D | 40 | 400 | 2 | 1 · IE 1234567-8-0004 | B | 44 | 500 | 1 | 2 · IE 1234567-8-0005 | E | 19 | 340 | 3 | 1 · IE 1234567-8-0006 | C | 20 | 350 | 2 | 4 · IE 1234567-8-0007 | D | 56 | 410 | 4 | 1. Sex key: A = young bull, B = bull, C = steer, D = cow, E = heifer. (Adapted from Animal Health Ireland, 2019)",
+   "questionText": "Determine the lung score for the 20 month old heifer and state one conclusion you can make about the lung health of the heifer based on the lung score.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "3"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Lung score ‐ 3",
+     "marks": null,
+     "contextNote": "Read off the report in the stem: tag IE 1234567-8-0001 is the 20 month old heifer (E = heifer) and carries lung score 3. The other 20 month animal, IE 1234567-8-0006, is a steer — that is the trap in this part."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Conclusion: heifer has extensive lung damage as a result of — pneumonia (viral / bacterial infection) ‐ lung lesions result in reduced performance of the animal",
+     "marks": null,
+     "contextNote": "The scheme prints this as one continuous sentence: 'Conclusion: heifer has extensive lung damage as a result of pneumonia (viral / bacterial infection) ‐ lung lesions result in reduced performance of the animal'. The long dash marks where the typeset 3-mark cell falls inside that sentence in the extraction. No words have been added or removed."
+    }
+   ],
+   "notes": "Report table reproduced in the stem, so no figure is needed. Same tariff situation as (c)(i): a single '3' covers both the score and the conclusion with no printed split, so both rows carry marks: null under orderedSplit rather than an invented division. REVIEWER: check the long dash in r-2 — it is a bridge over the point where the marks cell interrupts the sentence in the extracted scheme, not scheme punctuation, and it is explained on the row itself."
+  },
+  "originalSha256": "c4feea6f4c8d6a821da2dcdd891bb0fb58b5dacd4d6c45f0ebeaec6c10fe4858",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q14ciii": {
+  "original": {
+   "id": "agsci-2021-hl-q14ciii",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "herd-level-health-interpretation",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q14(c)(iii)",
+   "stem": "The following is a Beef HealthCheck report, compiled from abattoir post mortem meat inspection data. Liver scores: 1 normal liver; 2 liver damage by fluke but no live fluke; 3 liver damage by fluke and live fluke; 4 liver other (e.g. tumours); 5 liver abscess. Lung scores: 1 normal lung; 2 limited lung damage from pneumonia; 3 extensive lung damage from pneumonia; 4 lung other (e.g. abscess or tumour). THE REPORT — Tag | Sex | Age (months) | Carcase (kg) | Liver Score | Lung Score: IE 1234567-8-0001 | E | 20 | 330 | 1 | 3 · IE 1234567-8-0002 | C | 22 | 360 | 3 / 5 | 1 · IE 1234567-8-0003 | D | 40 | 400 | 2 | 1 · IE 1234567-8-0004 | B | 44 | 500 | 1 | 2 · IE 1234567-8-0005 | E | 19 | 340 | 3 | 1 · IE 1234567-8-0006 | C | 20 | 350 | 2 | 4 · IE 1234567-8-0007 | D | 56 | 410 | 4 | 1. Sex key: A = young bull, B = bull, C = steer, D = cow, E = heifer. (Adapted from Animal Health Ireland, 2019)",
+   "questionText": "Comment briefly on the overall health of the seven animals based on the report.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "4"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "There is a lot of liver damage across the age of cattle on the farm — and the lung health is better for the majority of cattle",
+     "marks": 4,
+     "contextNote": "One comment, 4 marks, and it must cover BOTH organs: widespread liver damage regardless of age, set against generally better lungs. The evidence is in the report — six of the seven animals score 2 or worse on liver, while five of seven score 1 on lung. The long dash marks where the typeset 4-mark cell falls inside the scheme's single continuous sentence; no words have been added or removed."
+    }
+   ],
+   "notes": "The scheme prints one continuous sentence against a single '4', so this is ONE 4-mark marking point and the model is fixed with a single row — not two rows at an invented 2 + 2. Report table reproduced in the stem, so no figure is needed. REVIEWER: the long dash in the verbatim bridges the point where the marks cell interrupts the sentence in the extraction, and is explained on the row."
+  },
+  "originalSha256": "123844d8a10af3bc139a6e8ea2bfdda70f7ae05afdb8260d3535b8207607dbca",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q15ai": {
+  "original": {
+   "id": "agsci-2021-hl-q15ai",
+   "topicId": "agsci-1-1",
+   "conceptId": "stating-a-hypothesis",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q15(a)(i)",
+   "stem": "A student carried out an investigation to compare how application rates and source of organic fertiliser in autumn will affect grass dry matter (DM), earthworm population and spring soil nutrient availability in the hope of increasing food production, in‐line with Foodwise 2025.",
+   "questionText": "State a hypothesis for this investigation.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Applying organic fertiliser in autumn will increase grass yield — (DM%), earthworm population and spring nutrient availability",
+     "marks": 3,
+     "contextNote": "One testable statement, 3 marks. It must link the manipulated variable (autumn application of organic fertiliser) to the measured outcomes the stem names. The scheme prints this as one continuous line; the long dash marks where the typeset 3-mark cell falls inside it in the extraction, and no words have been added or removed."
+    }
+   ],
+   "notes": "Single 3-mark point, so fixed with one row. REVIEWER: the long dash bridges the marks cell that lands between 'grass yield' and '(DM%)' in the extracted scheme. Q15 reconciles at 50: (a) 3 + 6 + 8 + 12 + 3 = 32, (b) 3 + 5 + 4 + 6 = 18. All four parts of (b) are answered off a printed graph and are skipped."
+  },
+  "originalSha256": "1845e59d143fd96c966ecdda0c0e6008f9df31f8de15cbb2ec5673a6cbfd7c55",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q15aii": {
+  "original": {
+   "id": "agsci-2021-hl-q15aii",
+   "topicId": "agsci-1-2",
+   "conceptId": "independent-and-dependent-variables",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q15(a)(ii)",
+   "stem": "A student carried out an investigation to compare how application rates and source of organic fertiliser in autumn will affect grass dry matter (DM), earthworm population and spring soil nutrient availability in the hope of increasing food production, in‐line with Foodwise 2025.",
+   "questionText": "Identify the independent and dependent variables in this investigation.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3 + 3"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Independent: application rates and source of organic fertiliser",
+     "marks": 3,
+     "contextNote": "The variable the student changes. Both halves are needed — HOW MUCH is applied and WHICH organic fertiliser it is; naming only one of them is a half answer."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Dependent: grass DM% and earthworm population and spring soil — nutrient availability",
+     "marks": 3,
+     "contextNote": "The scheme prints this as one line, 'Dependent: grass DM% and earthworm population and spring soil nutrient availability'. The long dash marks where the typeset 3-mark cell falls inside that line in the extraction; no words have been added or removed."
+    }
+   ],
+   "notes": "The scheme prints a '3' beside the independent variable and a separate '3' beside the dependent variable, so this is fixed with two rows of 3 summing exactly to the 6 the part is worth. REVIEWER: the long dash in r-2 bridges the marks cell that lands between 'spring soil' and 'nutrient availability'; it is not scheme punctuation and is explained on the row."
+  },
+  "originalSha256": "583edecc095798c25d39f136435969c9a005371fa659fd28ba3c991765f9f016",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q15bi": {
+  "original": {
+   "id": "agsci-2021-hl-q15bi",
+   "topicId": "agsci-3-2",
+   "conceptId": "best-organic-fertiliser-for-steady-herbage",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q15(b)(i)",
+   "questionText": "Identify which treatment is the most beneficial organic fertiliser for a steady supply of herbage over the five month period.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "FYM ‐ High",
+     "marks": 3
+    }
+   ],
+   "stem": "800 1000 1200 1400 1600 1800 2000 2200 2400 2600 2800 3000 3200 3400 3600 3800 4000 Total Available kg DM / Ha November December January February March Time (Months) Control Slurry (Low ‐ 22,000 litres / hectare) Slurry (High ‐ 33,000 litres / hectare) Farmyard Manure (Low ‐ 12 tonnes / hectare) Farmyard Manure (High ‐ 25 tonnes / hectare) Most beneficial treatment calculations Control treatment calculations"
+  },
+  "originalSha256": "1a947ec1aa56a4c168a61ff58f2ae6079f1e8d9968137db649466e1992b6cc4f",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q15biii": {
+  "original": {
+   "id": "agsci-2021-hl-q15biii",
+   "topicId": "agsci-3-2",
+   "conceptId": "fertiliser-advice-for-early-spring-grass",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q15(b)(iii)",
+   "questionText": "A beef farmer wants to have early spring grass for his spring calving herd to turnout in late February. Using evidence from the data, outline the advice you would give him in relation to the source and application rates of organic fertiliser.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Advice would be for farmers to put high levels of FYM (25 ton / ha) on the land in autumn to get good quality grass at turnout (The highest Kg DM per ha availability in Feb for early turnout in spring was in the FYM High (25 ton / ha) treatment as there was 3200 kg DM per ha available for grazing )",
+     "marks": 4
+    }
+   ],
+   "stem": "800 1000 1200 1400 1600 1800 2000 2200 2400 2600 2800 3000 3200 3400 3600 3800 4000 Total Available kg DM / Ha November December January February March Time (Months) Control Slurry (Low ‐ 22,000 litres / hectare) Slurry (High ‐ 33,000 litres / hectare) Farmyard Manure (Low ‐ 12 tonnes / hectare) Farmyard Manure (High ‐ 25 tonnes / hectare) Most beneficial treatment calculations Control treatment calculations"
+  },
+  "originalSha256": "223a3eaa6194dba61de3eb849e05528f564b37f0aacd57255f5204449d567ec0",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q15biv": {
+  "original": {
+   "id": "agsci-2021-hl-q15biv",
+   "topicId": "agsci-3-2",
+   "conceptId": "what-the-fertiliser-trial-shows",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q15(b)(iv)",
+   "questionText": "Using the findings of the students investigation over the five month period, discuss what advice you would give the farmer in relation to the source and application rates of these organic fertilisers. Your advice should include at least three specific recommendations.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3 at 2 marks each"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "anyN",
+     "verbatim": "Applying FYM provides more DM per ha compared to slurry",
+     "marks": 2
+    },
+    {
+     "id": "r-2",
+     "kind": "anyN",
+     "verbatim": "lower amounts slurry provide more DM than high amounts",
+     "marks": 2
+    },
+    {
+     "id": "r-3",
+     "kind": "anyN",
+     "verbatim": "higher amounts of FYM provide more DM than lower amounts until March",
+     "marks": 2
+    }
+   ],
+   "stem": "800 1000 1200 1400 1600 1800 2000 2200 2400 2600 2800 3000 3200 3400 3600 3800 4000 Total Available kg DM / Ha November December January February March Time (Months) Control Slurry (Low ‐ 22,000 litres / hectare) Slurry (High ‐ 33,000 litres / hectare) Farmyard Manure (Low ‐ 12 tonnes / hectare) Farmyard Manure (High ‐ 25 tonnes / hectare) Most beneficial treatment calculations Control treatment calculations",
+   "notes": "The scheme asks for three recommendations and lists five, and requires each to be backed by evidence from the graph."
+  },
+  "originalSha256": "af3274949e56ac0f6b755f72a47595f06452c5184e1e2f89eb28f3eeb03a87ab",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q16aiii": {
+  "original": {
+   "id": "agsci-2021-hl-q16aiii",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "reducing-tbc-and-scc-in-milk",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q16(a)(iii)",
+   "stem": "Question 16 — answer both (a) and (b) with either (c) or (d). (a) Two dairy farmers (Dan and Joe) are comparing what they are paid for their milk. Joe's farm bulk sample results for 5/11/2020, and the creamery's advice on them, are in the table below.",
+   "questionText": "Joe received his monthly statement on milk quality and noticed that his total bacterial count (TBC) and somatic cell count (SCC) were higher than anticipated. Construct a plan for the advice you would give Joe in order to reduce the TBC and SCC levels in his milk in order to achieve the best quality milk. Your plan should include at least three specific recommendations.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3(3)"
+   },
+   "totalMarks": 9,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "cool milk to <4oC as quickly as possible",
+     "marks": 3,
+     "contextNote": "A TBC point. The scheme prints '*At least one point from each of TBC and SCC' — three recommendations all drawn from one list do not score the full 9.",
+     "accepts": [
+      "Lime on cubicles",
+      "change liners of clusters in milking parlour regularly (twice a year)",
+      "add plate cooler",
+      "milk filters (to reduce amount of debris in milk)",
+      "dry cow therapy (teat seals) (to kill any bacteria in udder)(prevent bacteria from entering the udder)",
+      "clipping of cows tail (to keep the teats and udder clean)",
+      "washing and drying udder prior to milking (to remove any excess dirt)",
+      "(hot) washing milking parlour or bulk tank (with dump temperature above 50oC) (to kill any bacteria in milk lines (without use of chlorine based sterilising products which can leave trichloromethane ‐ TCM residue)"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "milk infected cows last to stop transfer of bacteria to other cows (disinfect clusters)",
+     "marks": 3,
+     "contextNote": "An SCC point. The scheme prints '*At least one point from each of TBC and SCC'.",
+     "accepts": [
+      "Lime on cubicles (to kill bacteria under the cows udder)",
+      "cull persistently infected cows or older cows with high SCC (identified by milk recording) (to prevent disease being passed to other cows)",
+      "to identify cows with cell count (clinical or sub‐clinical) ‐ withhold milk from infected cows",
+      "clean, dry bedding (straw) in dry cow house (to reduce amount of bacteria cow is exposed to)",
+      "dry cow antibiotics (teat seal) (to kill any bacteria present over a period of time) (prevent bacteria from entering the teat)",
+      "‘strip’ fore milk to detect any signs of clinical mastitis and treat cow with antibiotics"
+     ]
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "teat dipping (pre and post milking)",
+     "marks": 3,
+     "contextNote": "The scheme prints teat dipping in BOTH the TBC list and the SCC list, so it is the one recommendation that works whichever side you are short on.",
+     "accepts": [
+      "teat dipping (pre and post milking) (to kill any bacteria present on or in the cow’s teats)"
+     ]
+    }
+   ],
+   "notes": "3(3) — any three recommendations at 3 marks each. The scheme's asterisked rider '*At least one point from each of TBC and SCC' is carried as a contextNote on the two rows rather than as a row of its own, because it is a constraint, not an answer. Row 3 is 'teat dipping (pre and post milking)', which the scheme prints in BOTH lists. The bulk-sample figures and the creamery's advice bands are transcribed into the stem so the part stands alone without the paper's table; the answer itself is generic milking-hygiene and mastitis-control knowledge and needs no figure.",
+   "figureKey": "agricultural-science-2021-HL-paper-p36-i0"
+  },
+  "originalSha256": "2685e85b7e6b3de5bc7d22d5a8d10b51b11e30e348ceb245acf21f4a214fb3a6",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q16b": {
+  "original": {
+   "id": "agsci-2021-hl-q16b",
+   "topicId": "agsci-1-2",
+   "conceptId": "investigating-milk-quality-over-time",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q16(b)",
+   "stem": "Question 16 — answer both (a) and (b) with either (c) or (d). Joe is the dairy farmer from part (a), whose bulk milk sample came back with a higher total bacterial count than he expected.",
+   "questionText": "Joe wants to investigate and get results in relation to the quality of a sample of milk over time. Describe, with the aid of a labelled diagram, how Joe could carry out this investigation in a school laboratory or on his farm.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "4(3)"
+   },
+   "totalMarks": 12,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Place equal amounts of one milk sample into a number of sterile containers",
+     "marks": 3,
+     "contextNote": "The scheme prints 4(3): any FOUR steps score, 3 marks each, and adds '(Points may be presented on a labelled diagram)'. It offers a second complete route — a total bacterial count by serial dilution and plate count — and notes there are other valid tests (% protein, Gerber butterfat, thermoduric bacteria, Devlo antibiotic test, California Mastitis Test, % solids). Steps from whichever route you took score.",
+     "openList": true,
+     "accepts": [
+      "Carry out a serial dilution of one milk sample by adding 1ml of milk into 9ml of sterile water and shake to mix."
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "leave the other samples to test over time – (e.g. test at 5 hours, 24 hours, 48 hours, 72 hours )",
+     "marks": 3,
+     "openList": true,
+     "accepts": [
+      "test samples (average) immediately",
+      "repeat steps 2 ‐ 6 from same milk sample (e.g. at 5 hours, 24 hours, 48 hours, 72 hours) to determine the quality of a sample of milk over time"
+     ]
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "Add (1 cm3) of Resazurin to samples",
+     "marks": 3,
+     "openList": true,
+     "accepts": [
+      "place in water bath at 37oC for 15 minutes",
+      "take 1ml of milk from the last test tube and place on a prepared nutrient agar plate under aseptic conditions.",
+      "leave one agar plate unopened as a control.",
+      "place in incubator for 72 hours at 25oC."
+     ]
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "record colour of samples",
+     "marks": 3,
+     "contextNote": "The scheme asks for the result as well: 'State at least two colours and corresponding conclusion'.",
+     "openList": true,
+     "accepts": [
+      "Fresh – blue – good quality (low TBC)",
+      "Blue – deep mauve = good",
+      "Deep pink = fair",
+      "Light pink = poor",
+      "White = poor",
+      "remove plate and record number of bacteria colonies on the plate and multiply by 106 to get the number of CFU’s / ml of milk."
+     ]
+    }
+   ],
+   "notes": "4(3) — any four steps at 3 marks each. The scheme offers a second complete route (serial dilution and plate count for a total bacterial count) and then says outright that other valid tests score, so the four rows carry the Resazurin route (the standard school method) and the plate-count equivalents sit in accepts with openList set on every row. MAX_ROWS is 5, so both routes cannot be shown as separate route groups; the contextNote names the alternative explicitly instead. Reviewer check: the colour scale and its conclusions are in accepts on the 'record colour' row, since the scheme requires 'at least two colours and corresponding conclusion'."
+  },
+  "originalSha256": "e1d19f49e56f26f478778f9f2d00144503f6743f34f0722c6ca89ee75c2f404c",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q17bi": {
+  "original": {
+   "id": "agsci-2021-hl-q17bi",
+   "topicId": "agsci-3-1",
+   "conceptId": "reading-p-and-k-soil-indexes",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q17(b)(i)",
+   "questionText": "Determine the P and K soil indexes for field 2.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "P = 3 K = 4",
+     "marks": 3
+    }
+   ],
+   "stem": "554115 Field 1 – Permanent pasture (mainly silage production) Fertiliser Recommendations pH 5.3 6.5 – 7.5 Lime Requirement Test Parameters Result Very Low Low Normal High Target Response to Value Fertiliser t/ha 5.2 Phosphorus (P) mg/l 1.77 8.00 Definite 39 kg/ha P Potassium (K) mg/l 28.4 150 Definite 85 kg/ha K 554116 Field 2 – Permanent pasture (main grazing block) Fertiliser Recommendations pH 6 6.5 – 7.5 Lime Requirement Test Parameters Result Very Low Low Normal High Target Response to Value Fertiliser t/ha 3.75 Phosphorus (P) mg/l 6.42 8.00 Unlikely 19 kg/ha P Potassium (K) mg/l 157 150 None 0 kg/ha K Nutrient Field 2 Field 1 P Field 2 K Reference Soil Index Soil test range for each Soil Index Description Response to fertilisers index (mg/l) P K 1 Very low Definite 0 – 3.0 0 ‐ 50 2 Low Likely 3.1 – 5.0 51 ‐ 100 3 Medium Unlikely 5.1 – 8.0 101 – 150 4 High None ≥ 8.1 ≥ 151",
+   "notes": "The scheme gives nothing for one right and one wrong."
+  },
+  "originalSha256": "fa80f3315944abcb8384343b3dca8ecd5a0ea764fe5d2531e1af253baf6c92bc",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q17biv": {
+  "original": {
+   "id": "agsci-2021-hl-q17biv",
+   "topicId": "agsci-3-1",
+   "conceptId": "macronutrient-roles-in-plant-growth",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q17(b)(iv)",
+   "stem": "Question 17 (b) prints two soil sample reports. Each tests only pH, lime requirement, phosphorus (P) and potassium (K) — so P and K are the only macronutrients on the table.",
+   "questionText": "Some macronutrients do not appear on the table. Identify any two other macronutrients and state their role in plant growth.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3+3+1+1"
+   },
+   "totalMarks": 8,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Sulfur ‐ forms enzymes or assists in formation of plant proteins",
+     "marks": 4,
+     "contextNote": "The scheme prints 3+3+1+1 — 3 marks for each role and 1 mark for each macronutrient named, so a nutrient named WITH its role is worth 4. Naming two nutrients and giving no role scores 2 of 8.",
+     "accepts": [
+      "closely associated with N uptake or efficiency",
+      "Calcium ‐ formation of cell walls or cell membranes",
+      "Magnesium ‐ helps capture sun’s energy for photosynthesis",
+      "part of chlorophyll (molecule)",
+      "helps to activate specific enzyme systems",
+      "Nitrogen ‐ main component of chlorophyll which traps light in photosynthesis",
+      "main component of amino acids or protein",
+      "leafy growth"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Calcium ‐ formation of cell walls or cell membranes",
+     "marks": 4,
+     "accepts": [
+      "Sulfur ‐ forms enzymes or assists in formation of plant proteins",
+      "closely associated with N uptake or efficiency",
+      "Magnesium ‐ helps capture sun’s energy for photosynthesis",
+      "part of chlorophyll (molecule)",
+      "helps to activate specific enzyme systems",
+      "Nitrogen ‐ main component of chlorophyll which traps light in photosynthesis",
+      "main component of amino acids or protein",
+      "leafy growth"
+     ]
+    }
+   ],
+   "notes": "The scheme prints '3+3+1+1' = 8: 3 marks for each role and 1 for each macronutrient named. Modelled as fixed with two rows of 4, each row being one nutrient WITH its role, which is what a student actually claims — rather than four rows of which two would be one-word nutrient names. The contextNote states the split so a student who named two nutrients and gave no role can see they scored 2 of 8. Reviewer check: this is the one tariff on the three questions where the scheme's notation had to be interpreted rather than read off. Tagged agsci-3-1 because what is examined is the role in plant growth, not the soil test."
+  },
+  "originalSha256": "1d93325ec27a1f753e7e118e597a427366d5eb5c5841115b36fc304da0d06952",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-hl-q18a-crop-preservation": {
+  "original": {
+   "id": "agsci-2021-hl-q18a-crop-preservation",
+   "topicId": "agsci-3-3-3",
+   "conceptId": "crop-preservation-effect-on-productivity",
+   "level": "higher",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 HL Q18(a) Crop preservation",
+   "stem": "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. The paper prints a 'Named Crop:' line and then two headings, Soil quality and Crop preservation, with two answer lines under each.",
+   "questionText": "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. Crop preservation:",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(2)"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Crops should have certain moisture content at harvest (e.g. Barley ~ 15%) ‐ otherwise seeds will heat and germinate and spoil ‐ may need drying after harvest or suitable storage (ventilation, cool conditions) for preservation",
+     "marks": 2,
+     "contextNote": "The scheme prints 2(2) for this heading: any TWO points, 2 marks each — but they must be preservation points for the crop you NAMED. The scheme gives three separate pools, one for grain crops (shown here), one for potatoes and one for grass, each of which answers the heading on its own.",
+     "openList": true,
+     "accepts": [
+      "acid treatment (or crimping) to prevent germination of seed for long term storage of feed (throughout the winter) or treated with sprouting inhibitor",
+      "control of vermin to prevent losses or damage to crop",
+      "Harvest in dry conditions to prevent rot",
+      "store in darkness or cool conditions or frost free or well ventilated to prevent spoilage and losses",
+      "vermin free to prevent spoilage and losses",
+      "sprout inhibitor to prevent losses",
+      "remove damaged tubers to prevent spoilage",
+      "Fermentation of grass (lactobacillus bacteria feed off the sugars in the grass) to produce lactic acid which decreases the pH to 4 ‐ fermentation process to preserve the grass (silage) ‐ leads to increased DMD of the silage or palatability",
+      "dehydration (hay) reduces moisture content below 20% preventing spoilage (or loss)",
+      "cut in afternoon or double chop or leafy grass for increased sugar or wilting grass to increase sugar or reduces nitrates for DMD or palatability",
+      "airtight silage pit (or bales) to ensure anaerobic conditions to prevent spoilage (or loss)",
+      "additive to promote fermentation for high DMD or palatability"
+     ]
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "control of vermin to prevent losses or damage to crop",
+     "marks": 2,
+     "openList": true,
+     "accepts": [
+      "acid treatment (or crimping) to prevent germination of seed for long term storage of feed (throughout the winter) or treated with sprouting inhibitor",
+      "Harvest in dry conditions to prevent rot",
+      "store in darkness or cool conditions or frost free or well ventilated to prevent spoilage and losses",
+      "vermin free to prevent spoilage and losses",
+      "sprout inhibitor to prevent losses",
+      "remove damaged tubers to prevent spoilage",
+      "Fermentation of grass (lactobacillus bacteria feed off the sugars in the grass) to produce lactic acid which decreases the pH to 4 ‐ fermentation process to preserve the grass (silage) ‐ leads to increased DMD of the silage or palatability",
+      "dehydration (hay) reduces moisture content below 20% preventing spoilage (or loss)",
+      "cut in afternoon or double chop or leafy grass for increased sugar or wilting grass to increase sugar or reduces nitrates for DMD or palatability",
+      "airtight silage pit (or bales) to ensure anaerobic conditions to prevent spoilage (or loss)",
+      "additive to promote fermentation for high DMD or palatability"
+     ]
+    }
+   ],
+   "notes": "The second 2(2) of Q18(a), carded separately from Soil quality because it carries its own tariff and its own topic (post-harvest handling, agsci-3-3-3). The scheme prints three crop-specific pools separated by OR — grain, potatoes, grass/silage — each of which answers the heading alone. Rows show the grain pool (the scheme's named-crop list opens Barley / Wheat / Oats) and the potato and silage pools sit in accepts, with a contextNote saying the two points must belong to the crop the candidate named. MAX_ROWS is 5, so the three pools cannot be shown as three separate route groups. MOVED FROM STEM (scheme side only): The scheme accepts Barley / Wheat / Oats / Potatoes / Grass etc., and awards no marks directly for naming the crop."
+  },
+  "originalSha256": "ade50cb42df0f7017a5681f86326c1551893d4b42c711b83ca20f515854dca12",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
  }
 }

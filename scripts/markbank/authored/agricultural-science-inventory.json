@@ -2961,100 +2961,113 @@
         "sha256": "6a1ad8c18dcabcd40f63f9b10f28ea23089a29bf4c34cd22ce097c8e988e99a8",
         "pages": 39
       },
-      "authoredEnglishCardsForSitting": 101,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 106,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "93c0169ea23ec09c",
           "page": 2,
           "cue": "any seven",
           "context": "at you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer any seven questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any three questions from this section. There is internal choice in two questions. Each question carries 50 ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section A, seven of twelve independent questions. Every question and both sides of each internal choice are retained."
         },
         {
           "id": "588519d631c6a81d",
           "page": 2,
           "cue": "any three",
           "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any three questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Day and Month of Birth in the boxes on the front cover. Write your answers in blue or ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section B, three of six independent questions. Every question is retained."
         },
         {
           "id": "9ac5fdd7ce4a092d",
           "page": 3,
           "cue": "any seven",
           "context": "tificate Examination 2021 3 Agricultural Science – Higher Level Section A 70 marks Answer any seven questions. Each question carries 10 marks. Question 1 (a) Identify each of the following plants. A B C (b) Using a named example, other than the plants shown at part (a) above, distinguish between annual and biennial lifecycles. ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: seven independent 10-mark questions, all retained."
         },
         {
           "id": "a335f8a2555520a2",
           "page": 4,
           "cue": "either",
           "context": "ving Certificate Examination 2021 4 Agricultural Science – Higher Level Question 2 Answer either (a) or (b). Herbicide resistance confirmed in wild oats The wild oat is one of the most widely recognised weeds in Ireland’s tillage fields. If left unchecked, this predominantly spring‐germinating self‐pollinating weed can subst",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q2 either (a) or (b): both independently marked alternatives are retained."
         },
         {
           "id": "3b837fd3a3b243b2",
           "page": 4,
           "cue": "one of",
           "context": "n 2 Answer either (a) or (b). Herbicide resistance confirmed in wild oats The wild oat is one of the most widely recognised weeds in Ireland’s tillage fields. If left unchecked, this predominantly spring‐germinating self‐pollinating weed can substantially reduce crop yields due to its competitiveness. Control of wild oats in",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q2 article (\"one of the most widely recognised weeds\"); no response choice."
         },
         {
           "id": "53e9fb7555990b75",
           "page": 6,
           "cue": "either",
           "context": "ving Certificate Examination 2021 6 Agricultural Science – Higher Level Question 3 Answer either (a) or (b). (a) The following is an example of a farm safety notice displayed at the entrance to a farm. (i) State the meaning of symbols A and B on the sign. (ii) State the function of C and D. C D (iii) In relation to picture C",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q3 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "38aed7a703a1c97c",
           "page": 10,
           "cue": "either",
           "context": "ing Certificate Examination 2021 10 Agricultural Science – Higher Level Question 6 Answer either (a) or (b). (a) (i) Identify the part of the plant where respiration takes place by placing a tick () in the correct box. (ii) Outline two ways in which a farmer can increase airflow through soil to allow for increased respirati",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q6 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "528cc8e4bae3e9aa",
           "page": 15,
           "cue": "one of",
           "context": "ination 2021 15 Agricultural Science – Higher Level Question 10 The Murphy family operate one of Ireland’s sheep dairy farms in Co. Galway. They produce artisan products for a niche market. Their produce is available in approximately 50 shops and in some of Ireland’s top restaurants. (a) Distinguish between artisan produce a",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q10 lead-in (\"operate one of Ireland's sheep dairy farms\"); no response choice."
         },
         {
           "id": "521052cc84f8b9f4",
           "page": 16,
           "cue": "either",
           "context": "ng Certificate Examination 2021 16 Agricultural Science – Higher Level Question 11 Answer either (a) or (b). (a) (i) Distinguish between the duration of oestrus and the oestrous cycle in cattle. (ii) Identify the part of the female reproductive system where ovulation occurs. (iii) Describe two advantages of artificial insemi",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q11 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "d248ebc99079542b",
           "page": 22,
           "cue": "any three",
           "context": "ficate Examination 2021 22 Agricultural Science – Higher Level Section B 150 marks Answer any three questions. Each question carries 50 marks. Question 13 Answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production an",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B heading: three of six independent 50-mark questions, all retained."
         },
         {
           "id": "e5d33bfb49764ae1",
           "page": 22,
           "cue": "either",
           "context": "s Answer any three questions. Each question carries 50 marks. Question 13 Answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production and lamb weight gain in flocks grazing multi‐species swards The definition of mu",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: (a) with either (b) or (c). Every part, including both (b) and (c), is retained."
         },
         {
           "id": "6777398652c30a1f",
           "page": 35,
           "cue": "either",
           "context": "tion 2021 35 Agricultural Science – Higher Level Question 16 Answer both (a) and (b) with either (c) or (d). (a) Two dairy farmers (Dan and Joe) are comparing the amount of money they are getting paid for their milk. Analyse the data in the table and answer the questions which follow. Dan Joe Supply (litres, kg) 50,000 L (51",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q16: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "7653e96a119afe36",
           "page": 42,
           "cue": "any two",
           "context": "ural Science – Higher Level (iv) Some macronutrients do not appear on the table. Identify any two other macronutrients and state their role in plant growth. (v) Outline two ways in which farmers can increase the K levels on their land. (vi) Briefly describe two ways a farmer can prevent P leaching from the soil and potentiall",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q17(b)(iv): any two macronutrients that are not on the table. The paper prints no list; the scheme's sulfur, calcium, magnesium and nitrogen are a marking menu."
         }
       ]
     },
@@ -3073,7 +3086,7 @@
         "sha256": "c2a4b051ea34a00cdbba38368157b7a44f361ae0a8037168b1b499e74a6adeeb",
         "pages": 40
       },
-      "authoredEnglishCardsForSitting": 101,
+      "authoredEnglishCardsForSitting": 106,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

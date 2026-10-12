@@ -443,7 +443,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(additions.size).toBe(580);
+    expect(additions.size).toBe(585);
     const live = decks.flatMap(([, cards]) => cards);
     expect(live.filter(card => additions.has(card.id)).map(card => card.id).sort()).toEqual([...additions].sort());
     expect(baselineCards(live).length + withdrawnFor(live).length).toBe(10_495);
@@ -545,6 +545,36 @@ describe('Mark Bank card preservation', () => {
       'agsci-2022-ol-q17aiii': 'Six disadvantages listed one each at 4+2.',
       'agsci-2022-ol-q18ai': 'Six traits listed one each at 3(4).',
       'agsci-2022-ol-q18bi': 'Seven seedbed steps listed one each at 3(2).',
+      'agsci-2021-hl-q1b': 'The first definition earns 2, the other definition and the example 1 each (2 + 1+1); drops the part (a) answers from the stem.',
+      'agsci-2021-hl-q3ai': 'Replaces the sign text run together in the stem with the paper\'s lead-in.',
+      'agsci-2021-hl-q3aii': 'Replaces the sign text run together in the stem with the paper\'s instruction.',
+      'agsci-2021-hl-q3aiii': 'Restores the omitted bloodless-castration advantage; every published advantage listed.',
+      'agsci-2021-hl-q3bii': 'Restores the omitted wet-land advantage; every published advantage listed.',
+      'agsci-2021-hl-q3biii': 'Restores the omitted soil-structure way; every published way listed.',
+      'agsci-2021-hl-q4c': 'Restores the omitted first way (plant more trees or hedges); every published way listed.',
+      'agsci-2021-hl-q5a': 'Kale or stubble turnips, oilseed rape and Miscanthus as answer routes, not one mixed pool.',
+      'agsci-2021-hl-q5b': 'Each crop\'s pests as an answer route, not one mixed pool.',
+      'agsci-2021-hl-q5c': 'Each crop\'s two growth stages as an answer route.',
+      'agsci-2021-hl-q6bii': 'Restores the tillage half of the second comparison.',
+      'agsci-2021-hl-q9a': 'Restores the end of the genomic selection definition.',
+      'agsci-2021-hl-q9c': 'Restores the breeding step after the list of traits.',
+      'agsci-2021-hl-q10a': 'Restores the end of the artisan produce definition.',
+      'agsci-2021-hl-q10c': 'The paper\'s wording with the pie chart cropped from the paper.',
+      'agsci-2021-hl-q11bii': 'Bloat and acidosis as answer routes, each with its own symptom, treatment and prevention.',
+      'agsci-2021-hl-q14bi': 'Drops the next part\'s table debris from the stem.',
+      'agsci-2021-hl-q14bii': 'Pig, poultry and horse as answer routes at 2(2+1); restores "good terminal sires".',
+      'agsci-2021-hl-q14cii': 'Removes a dash the scheme does not print.',
+      'agsci-2021-hl-q14ciii': 'Removes a dash the scheme does not print.',
+      'agsci-2021-hl-q15ai': 'Removes a dash the scheme does not print.',
+      'agsci-2021-hl-q15aii': 'Removes a dash the scheme does not print.',
+      'agsci-2021-hl-q15bi': 'Replaces axis and legend debris in the stem with the paper\'s lead-in and the bar chart.',
+      'agsci-2021-hl-q15biii': 'Replaces axis and legend debris in the stem with the paper\'s lead-in and the bar chart.',
+      'agsci-2021-hl-q15biv': 'All five published recommendations at 3(2), with the bar chart.',
+      'agsci-2021-hl-q16aiii': 'Every TBC and SCC recommendation listed at 3(3), not a fixed third row.',
+      'agsci-2021-hl-q16b': 'The resazurin test and the total bacterial count as answer routes, every published step listed.',
+      'agsci-2021-hl-q17bi': 'Field 2 results in the stem and the reference soil index cropped from the paper.',
+      'agsci-2021-hl-q17biv': 'Names 1 each and roles 3 each (3+3+1+1), not 4 per nutrient-and-role.',
+      'agsci-2021-hl-q18a-crop-preservation': 'Grain, potato and grass preservation as answer routes, not one mixed pool.',
     };
     expect([...agriculturalReview.correctedCardIds].sort()).toEqual(Object.keys(corrected).sort());
     const live = new Map(decks.flatMap(([, cards]) => cards.map(card => [card.id, card] as const)));
@@ -578,6 +608,9 @@ describe('Mark Bank card preservation', () => {
     for (const [id, marks] of [['agsci-2022-ol-q4b', 10], ['agsci-2022-ol-q14civ', 11], ['agsci-2022-ol-q16bii', 15], ['agsci-2022-ol-q18ai', 12],
       ['agsci-2022-ol-q2ai', 6], ['agsci-2022-ol-q7aiii', 4]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
     for (const key of ['i', 'ii', 'iii', 'iv', 'v']) expect(live.has(`agsci-2022-ol-q4b${key}`)).toBe(false);
+    // 2021 Higher corrections keep each original's ID and total.
+    for (const [id, marks] of [['agsci-2021-hl-q1b', 4], ['agsci-2021-hl-q11bii', 6], ['agsci-2021-hl-q14bii', 6], ['agsci-2021-hl-q16b', 12],
+      ['agsci-2021-hl-q17biv', 8], ['agsci-2021-hl-q18a-crop-preservation', 4]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {

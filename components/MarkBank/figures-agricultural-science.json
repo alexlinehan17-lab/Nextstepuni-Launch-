@@ -678,5 +678,56 @@
       0.38
     ],
     "reviewedAt": "2026-10-12"
+  },
+  "agsci-2021-hl-paper-sheep-milk-pie": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2021-hl-paper-sheep-milk-pie.png",
+    "md5": "a0fa7a3cf3b6414bb0eb87889925d6ab",
+    "alt": "Original Question 10(c) pie chart, Sheep Milk Composition: water 84%, fat 7%, lactose 5% and protein 4%.",
+    "attribution": "SEC Agricultural Science 2021 Higher Level examination paper, PDF page 15 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2021/LC024ALP000EV.pdf",
+    "sourceSha256": "d60e656eff0863123d5c8152f114bcd323ed0cf81144676becf1f367c2b9d4e3",
+    "pdfPage": 15,
+    "cropRect": [
+      0.52,
+      0.495,
+      0.92,
+      0.82
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2021-hl-paper-organic-fertiliser-dm-graph": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2021-hl-paper-organic-fertiliser-dm-graph.png",
+    "md5": "13c35ec469773a51f1fbd3682b58ca23",
+    "alt": "Original Question 15(b) bar chart: total available kg DM / ha (800 to 4000) from November to March for five autumn treatments. Control 1000, 1200, 2000, 2400, 3400; slurry low (22,000 litres / hectare) 1200, 1600, 2700, 3100, 3800; slurry high (33,000 litres / hectare) 1300, 1700, 2600, 3000, 3500; farmyard manure low (12 tonnes / hectare) 1100, 1500, 2300, 2800, 3900; farmyard manure high (25 tonnes / hectare) 1400, 1800, 2800, 3200, 3700.",
+    "attribution": "SEC Agricultural Science 2021 Higher Level examination paper, PDF page 33 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2021/LC024ALP000EV.pdf",
+    "sourceSha256": "d60e656eff0863123d5c8152f114bcd323ed0cf81144676becf1f367c2b9d4e3",
+    "pdfPage": 33,
+    "cropRect": [
+      0.06,
+      0.12,
+      0.94,
+      0.425
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2021-hl-paper-reference-soil-index": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2021-hl-paper-reference-soil-index.png",
+    "md5": "febc3d7f3bee552949630547ed6dd592",
+    "alt": "Original Question 17(b)(i): a blank answer table (Nutrient: P, K; Field 2), an aerial map marking Field 1 and Field 2, and the Reference Soil Index table. Index 1 very low, response to fertilisers definite, P 0 – 3.0, K 0 - 50; index 2 low, likely, P 3.1 – 5.0, K 51 - 100; index 3 medium, unlikely, P 5.1 – 8.0, K 101 – 150; index 4 high, none, P ≥ 8.1, K ≥ 151 (soil test range for each index, mg/l).",
+    "attribution": "SEC Agricultural Science 2021 Higher Level examination paper, PDF page 41 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2021/LC024ALP000EV.pdf",
+    "sourceSha256": "d60e656eff0863123d5c8152f114bcd323ed0cf81144676becf1f367c2b9d4e3",
+    "pdfPage": 41,
+    "cropRect": [
+      0.06,
+      0.095,
+      0.94,
+      0.41
+    ],
+    "reviewedAt": "2026-10-12"
   }
 }

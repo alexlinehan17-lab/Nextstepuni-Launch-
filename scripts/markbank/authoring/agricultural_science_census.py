@@ -1479,9 +1479,134 @@ POOLS_2022_ORDINARY = {
     'Q12(a)': (3, ['Parent material', 'Topography', 'Time', 'Climate', 'Organisms']),
 }
 
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY}
+# 2021 Higher: Section A Q1-Q12 at 10 marks (any seven), Section B Q13-Q18 at 50 (any three).
+# Q13(a)(iii) keeps its name (4) and advantages (4+2) boundaries; Q14(a) and Q18(a)
+# are priced by printed heading (4+2 and 2(2)), one task per heading.
+HIGHER_2021 = '''
+Q1(a)|6|3|11|Buttercup
+Q1(b)|4|3|11|Definition of one of annual or biennial for 2
+Q2(a)(i)|2|4|11|does not kill the (targeted) plant
+Q2(a)(ii)|4|4|11|minimum cultivation does not disturb dormant seeds
+Q2(a)(iii)|4|4|11|Decreased yield (or food production)
+Q2(b)(i)|2|5|12|travel up the compacted soil further
+Q2(b)(ii)|6|5|12|Put cotton wool or muslin cloth
+Q2(b)(iii)|2|5|12|Record the exact mass
+Q3(a)(i)|4|6|12|Beware of bull
+Q3(a)(ii)|4|6|12|castrating male animals
+Q3(a)(iii)|2|6|12|Castrate male animals on the farm
+Q3(b)(i)|4|7|13|Seed drill
+Q3(b)(ii)|2|7|13|Decreased compaction
+Q3(b)(iii)|2|7|13|Reduces water run
+Q3(b)(iv)|2|7|13|Stressed animals
+Q4(a)|2|8|13|Solar panels
+Q4(b)|4|8|13|Sheds are situated close together
+Q4(c)|4|8|13|Plant more trees or hedges
+Q5(a)|4|9|14|protection of soil structure against soil erosion
+Q5(b)|2|9|14|Flea beetle eats holes
+Q5(c)|4|9|15|Germination
+Q6(a)(i)|2|10|15|Mitochondria*
+Q6(a)(ii)|4|10|15|Subsoiler or plough or harrow
+Q6(a)(iii)|4|10|15|soil compaction destroys soil aggregates
+Q6(b)(i)|2|11|15|Animals eat plants
+Q6(b)(ii)|4|11|15|decreased organic matter
+Q6(b)(iii)|4|11|15|Grow perennial pasture
+Q7(a)|2|12|16|Variety of plant and animal life
+Q7(b)|2|12|16|Soil or water conservation
+Q7(c)|6|12|16|Leave (whitethorn) tree in hedges
+Q8(a)|2|13|16|Shape and muscle distribution
+Q8(b)|4|13|16|367 x 415
+Q8(c)|4|13|16|Heifer ‐ LM
+Q9(a)|2|14|17|selected based on their DNA
+Q9(b)|4|14|17|Increased animal performance
+Q9(c)|2|14|17|Farmer identifies trait
+Q9(d)|2|14|17|Better hygiene or management
+Q10(a)|4|15|17|small specialised market
+Q10(b)|4|15|17|Ireland has large quantities of grass
+Q10(c)|2|15|17|84% water
+Q11(a)(i)|4|16|18|21 days
+Q11(a)(ii)|2|16|18|Ovary*
+Q11(a)(iii)|4|16|18|Increased choice of genetically superior sires
+Q11(b)(i)|4|17|18|4 stomach chambers
+Q11(b)(ii)|6|17|19|gas build up in rumen
+Q12(a)|2|18|19|Anaemia*
+Q12(b)|2|18|19|Lack of iron
+Q12(c)|2|18|19|Iron injection
+Q12(d)|4|18|19|Closed herd
+Q13(a)(i)|4|22|20|clover or legumes
+Q13(a)(ii)|6|22|20|Rotation grazing or named rotational grazing system
+Q13(a)(iii) Name|4|22|20|Rotational or paddock grazing system
+Q13(a)(iii) Advantages|6|22|20|Gives the sward time to recover
+Q13(a)(iv)|8|23|20|By using multi
+Q13(a)(v)|16|24|21|Quadrat
+Q13(b)|6|25|21|converts nitrite ions
+Q13(c)|6|25|21|Chemical use
+Q14(a) Housing|6|26|22|Housing
+Q14(a) Nutrition|6|26|22|Nutrition
+Q14(a) Production targets|6|26|22|Production Targets
+Q14(b)(i)|4|27|25|Suffolk
+Q14(b)(ii)|6|27|25|Landrace
+Q14(b)(iii)|6|27|26|Housing or freedom from discomfort
+Q14(c)(i)|3|29|26|Liver score
+Q14(c)(ii)|3|29|27|Lung score
+Q14(c)(iii)|4|29|27|There is a lot of liver damage
+Q14(c)(iv)|6|30|27|Farmer should get fluke tested
+Q15(a)(i)|3|31|28|Applying organic fertiliser in autumn
+Q15(a)(ii)|6|31|28|application rates and source of organic fertiliser
+Q15(a)(iii)|8|31|28|Trailing shoe or shallow injection
+Q15(a)(iv)|12|32|28|Cut a number of grass samples
+Q15(a)(v)|3|32|28|Electronic balance not calibrated
+Q15(b)(i)|3|33|29|FYM ‐ High
+Q15(b)(ii)|5|33|29|Solution 1
+Q15(b)(iii)|4|34|29|Advice would be for farmers to put high levels of FYM
+Q15(b)(iv)|6|34|29|Applying FYM provides more DM
+Q16(a)(i)|6|35|30|9316 + 6830
+Q16(a)(ii)|6|35|30|Breeding high EBI cows
+Q16(a)(iii)|9|36|30|Reducing TBC
+Q16(b)|12|37|31|Place equal amounts of one milk sample
+Q16(c)(i)|3|38|32|Low emission slurry spreading
+Q16(c)(ii)|2|38|32|unique selling points
+Q16(c)(iii)|4|38|32|Creamy yellow butter
+Q16(c)(iv)|8|38|32|Quality assurance scheme
+Q16(d)(i)|6|39|33|Lower fencing cost
+Q16(d)(ii)|4|39|33|Animals can become stressed
+Q16(d)(iii)|4|39|33|Rotational grazing (21 day)
+Q16(d)(iv)|3|39|33|Wear gloves and mask
+Q17(a)|6|40|33|W shape
+Q17(b)(i)|3|41|33|both answers must be correct for 3 marks
+Q17(b)(ii)|3|41|33|Mainly used for silage production
+Q17(b)(iii)|6|41|34|Farmer needs to add 5 ton
+Q17(b)(iv)|8|42|34|Calcium
+Q17(b)(v)|6|42|34|Spreading slurry
+Q17(b)(vi)|6|42|34|Create buffer or riparian zones
+Q17(c)|12|43|34|potassium chloride
+Q18(a) Soil quality|4|44|35|Drainage and aeration
+Q18(a) Crop preservation|4|44|35|Crops should have certain moisture content
+Q18(b)|9|44|36|Have to use some of her tillage land
+Q18(c)(i)|4|45|37|Period of time when cow is not producing milk
+Q18(c)(ii)|4|45|37|Daily requirement of a cow
+Q18(c)(iii)|6|46|37|Feeding concentrates
+Q18(c)(iv)|4|46|37|reproductive cycle may not have started
+Q18(c)(v)|6|46|37|grass only diet
+Q18(c)(vi)|4|46|37|305 days
+Q18(c)(vii)|5|46|37|Observation
+'''
+CROPS_2021 = ['Kale or stubble turnips', 'Oilseed rape (OSR)', 'Miscanthus']
+SYSTEMS_2021 = ['Liquid milk v creamery milk', 'Calf to beef v suckler beef', 'Mid-season lamb v early lamb']
+POOLS_2021_HIGHER = {
+    'Q5(a)': (1, CROPS_2021), 'Q5(b)': (1, CROPS_2021), 'Q5(c)': (1, CROPS_2021),
+    'Q11(b)(ii)': (1, ['Bloat', 'Acidosis']),
+    'Q14(a) Housing': (1, SYSTEMS_2021), 'Q14(a) Nutrition': (1, SYSTEMS_2021), 'Q14(a) Production targets': (1, SYSTEMS_2021),
+    'Q14(b)(ii)': (1, ['Pig', 'Poultry', 'Horse']),
+    'Q15(b)(ii)': (1, ["Solution 1: each treatment's own November value", 'Solution 2: the November control value for both']),
+    'Q16(b)': (1, ['Resazurin test', 'Total bacterial count']),
+    'Q18(a) Crop preservation': (1, ['Grain crops (e.g. barley)', 'Potatoes', 'Grass (silage or hay)']),
+}
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER}
 
 SOURCES = [
+    (2021, 'higher', 'A', HIGHER_2021,
+     'd60e656eff0863123d5c8152f114bcd323ed0cf81144676becf1f367c2b9d4e3',
+     '6a1ad8c18dcabcd40f63f9b10f28ea23089a29bf4c34cd22ce097c8e988e99a8'),
     (2022, 'ordinary', 'G', ORDINARY_2022,
      '93a3be61e0ec5891f6ac6a2660fc1a98732fc9ff21a4b3c1e50681db1fe14194',
      'cb6dac4e3b45f824dfd75bf82443d62dc807fdbbf1e5406713be32e51c22e916'),
@@ -1568,7 +1693,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -1619,6 +1744,8 @@ MODERN_LAYOUTS = {
                       'marks':lambda n: 10 if n<=12 else 50},
     (2025,'ordinary'): {'either':{'Q1','Q9','Q11','Q12'}, 'bothWithEither':{'Q15','Q17'},
                         'marks':lambda n: 10 if n<=12 else 50},
+    (2021,'higher'): {'either':{'Q2','Q3','Q6','Q11'}, 'bothWithEither':{'Q16'}, 'oneWithEither':{'Q13'},
+                      'marks':lambda n: 10 if n<=12 else 50},
     (2022,'ordinary'): {'either':{'Q2','Q4','Q7','Q11'}, 'bothWithEither':{'Q16'}, 'oneWithEither':{'Q13'},
                         'marks':lambda n: 10 if n<=12 else 50},
     (2022,'higher'): {'either':{'Q1','Q9','Q11','Q12'}, 'bothWithEither':{'Q14','Q17'},
@@ -1709,7 +1836,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106. Remaining editions stay open.')
 
 
 if __name__=='__main__':

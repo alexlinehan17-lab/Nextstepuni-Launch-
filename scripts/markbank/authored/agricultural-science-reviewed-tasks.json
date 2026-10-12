@@ -581,10 +581,45 @@
     "agsci-2022-ol-q15aii",
     "agsci-2022-ol-q16aii",
     "agsci-2022-ol-q17bi",
-    "agsci-2022-ol-q17biii"
+    "agsci-2022-ol-q17biii",
+    "agsci-2021-hl-q14a-housing",
+    "agsci-2021-hl-q14a-nutrition",
+    "agsci-2021-hl-q14a-production-targets",
+    "agsci-2021-hl-q15bii",
+    "agsci-2021-hl-q16ai"
   ],
   "correctedCardIds": [
     "agsci-2025-ol-q8b",
+    "agsci-2021-hl-q10a",
+    "agsci-2021-hl-q10c",
+    "agsci-2021-hl-q11bii",
+    "agsci-2021-hl-q14bi",
+    "agsci-2021-hl-q14bii",
+    "agsci-2021-hl-q14cii",
+    "agsci-2021-hl-q14ciii",
+    "agsci-2021-hl-q15ai",
+    "agsci-2021-hl-q15aii",
+    "agsci-2021-hl-q15bi",
+    "agsci-2021-hl-q15biii",
+    "agsci-2021-hl-q15biv",
+    "agsci-2021-hl-q16aiii",
+    "agsci-2021-hl-q16b",
+    "agsci-2021-hl-q17bi",
+    "agsci-2021-hl-q17biv",
+    "agsci-2021-hl-q18a-crop-preservation",
+    "agsci-2021-hl-q1b",
+    "agsci-2021-hl-q3ai",
+    "agsci-2021-hl-q3aii",
+    "agsci-2021-hl-q3aiii",
+    "agsci-2021-hl-q3bii",
+    "agsci-2021-hl-q3biii",
+    "agsci-2021-hl-q4c",
+    "agsci-2021-hl-q5a",
+    "agsci-2021-hl-q5b",
+    "agsci-2021-hl-q5c",
+    "agsci-2021-hl-q6bii",
+    "agsci-2021-hl-q9a",
+    "agsci-2021-hl-q9c",
     "agsci-2022-hl-q10b",
     "agsci-2022-hl-q10c",
     "agsci-2022-hl-q15ai",
@@ -685,6 +720,324 @@
     "agsci-2025-hl-q12e": "agsci-2025-hl-q12a"
   },
   "corrections": {
+    "agsci-2021-hl-q10a": {
+      "originalSha256": "69ae3eb8897faba82ebe74b54694963d8323731caa0017befef84a74430f88e4",
+      "originalQuestionRef": "2021 HL Q10(a)",
+      "originalQuestionText": "Distinguish between artisan produce and a niche market.",
+      "originalTotalMarks": 4,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "2 + 2"
+      },
+      "reason": "Visually verified paper PDF page 15 (\"Distinguish between artisan produce and a niche market.\") and scheme PDF page 17 (\"AP ‐ food produced in microenterprise with unique characteristics (usually handmade with a distinctive flavour)\", 2 + 2). The original artisan-produce answer stopped at \"unique characteristics\". Same ID, boundary and 4 marks."
+    },
+    "agsci-2021-hl-q10c": {
+      "originalSha256": "3ccc41481b02ff7e8000b21c6adee3747d274893ed7c7e3e38decb9cdd092db3",
+      "originalQuestionRef": "2021 HL Q10(c)",
+      "originalQuestionText": "Compare the composition of sheep's milk given above to your knowledge of cow's milk in relation to the water content.",
+      "originalTotalMarks": 2,
+      "originalTariffModel": {
+        "kind": "fixed"
+      },
+      "reason": "Visually verified paper PDF page 15 (\"Compare the composition of sheep’s milk shown in the pie chart to your knowledge of cow’s milk in relation to the water content.\", the Sheep Milk Composition pie chart) and scheme PDF page 17 (2). The original rewrote the question as \"given above\" and replaced the chart with a description. Same ID, rows, boundary and 2 marks; the question is the paper's wording with the chart cropped from the paper."
+    },
+    "agsci-2021-hl-q11bii": {
+      "originalSha256": "c2842e0ef1af77a6ca6001480311128611641bd1a71d64e3ab591a567893177b",
+      "originalQuestionRef": "2021 HL Q11(b)(ii)",
+      "originalQuestionText": "Briefly describe a named disorder of the ruminant digestive system under the following headings: Symptoms, Treatment, Prevention.",
+      "originalTotalMarks": 6,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "2 + 2 + 2"
+      },
+      "reason": "Visually verified paper PDF page 17 (\"Briefly describe a named disorder of the ruminant digestive system under the following headings.\", Named disorder, Symptoms, Treatment and Prevention lines) and scheme PDF page 19 (\"Points must match disorder named\", bloat and acidosis answers under each heading, 2 + 2 + 2). The original rows were bloat answers with the acidosis answers as accepted alternatives on each heading, so a bloat symptom could be combined with an acidosis treatment. Same ID, boundary and 6 marks; each disorder is an answer route the student chooses before reveal, with its own symptom, treatment and prevention."
+    },
+    "agsci-2021-hl-q14bi": {
+      "originalSha256": "bee8449c5b4592337b717e9c0a0edac4e9ad11274528070132e3e2c54e498ff6",
+      "originalQuestionRef": "2021 HL Q14(b)(i)",
+      "originalQuestionText": "Identify each of the following cattle and sheep breeds.",
+      "originalTotalMarks": 4,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "4(1)"
+      },
+      "reason": "Visually verified paper PDF page 27 (\"(b) (i) Identify each of the following cattle and sheep breeds.\", photographs A–D) and scheme PDF page 25 (A Suffolk, B Shorthorn, C Belgian blue, D Texel, \"4(1)\"). The original stem was debris from the next part's table (\"1. 2. Name of breed\"). Same ID, rows, figure, label key, boundary and 4 marks; the stem is removed."
+    },
+    "agsci-2021-hl-q14bii": {
+      "originalSha256": "472e469e70d706a5a4c4e92272843a02a54cd2dc1588a40aaff25eb393f68180",
+      "originalQuestionRef": "2021 HL Q14(b)(ii)",
+      "originalQuestionText": "In relation to two named breeds of pig or horse or poultry that you have studied, compare two characteristics of each breed which make them suitable for intensive production.",
+      "originalTotalMarks": 6,
+      "originalTariffModel": {
+        "kind": "orderedSplit",
+        "notation": "2(2+1)"
+      },
+      "reason": "Visually verified paper PDF page 27 (\"In relation to two named breeds of pig or horse or poultry that you have studied, compare two characteristics of each breed which make them suitable for intensive production.\") and scheme PDF page 25 (Landrace and Large white, \"OR\" Rhode island red and White leghorn, \"OR\" Irish sport horse and Irish draught horse, each \"2(2+1)\"). The original mixed every species' characteristics into four positional rows, so a pig characteristic could be combined with a poultry one, and it left out \"good terminal sires\". Same ID, boundary and 6 marks; each species is an answer route the student chooses before reveal, with each breed's characteristics at 2+1."
+    },
+    "agsci-2021-hl-q14cii": {
+      "originalSha256": "c4feea6f4c8d6a821da2dcdd891bb0fb58b5dacd4d6c45f0ebeaec6c10fe4858",
+      "originalQuestionRef": "2021 HL Q14(c)(ii)",
+      "originalQuestionText": "Determine the lung score for the 20 month old heifer and state one conclusion you can make about the lung health of the heifer based on the lung score.",
+      "originalTotalMarks": 3,
+      "originalTariffModel": {
+        "kind": "orderedSplit",
+        "notation": "3"
+      },
+      "reason": "Visually verified paper PDF page 29 and scheme PDF page 27 (\"Conclusion: heifer has extensive lung damage as a result of pneumonia (viral / bacterial infection) ‐ lung lesions result in reduced performance of the animal\"). The original inserted a dash the scheme does not print into the middle of the sentence. Same ID, boundary and marks."
+    },
+    "agsci-2021-hl-q14ciii": {
+      "originalSha256": "123844d8a10af3bc139a6e8ea2bfdda70f7ae05afdb8260d3535b8207607dbca",
+      "originalQuestionRef": "2021 HL Q14(c)(iii)",
+      "originalQuestionText": "Comment briefly on the overall health of the seven animals based on the report.",
+      "originalTotalMarks": 4,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "4"
+      },
+      "reason": "Visually verified paper PDF page 29 and scheme PDF page 27 (\"There is a lot of liver damage across the age of cattle on the farm and the lung health is better for the majority of cattle\"). The original inserted a dash the scheme does not print into the middle of the sentence. Same ID, boundary and marks."
+    },
+    "agsci-2021-hl-q15ai": {
+      "originalSha256": "1845e59d143fd96c966ecdda0c0e6008f9df31f8de15cbb2ec5673a6cbfd7c55",
+      "originalQuestionRef": "2021 HL Q15(a)(i)",
+      "originalQuestionText": "State a hypothesis for this investigation.",
+      "originalTotalMarks": 3,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "3"
+      },
+      "reason": "Visually verified paper PDF page 31 and scheme PDF page 28 (\"Applying organic fertiliser in autumn will increase grass yield (DM%), earthworm population and spring nutrient availability\"). The original inserted a dash the scheme does not print into the middle of the answer. Same ID, boundary and marks."
+    },
+    "agsci-2021-hl-q15aii": {
+      "originalSha256": "583edecc095798c25d39f136435969c9a005371fa659fd28ba3c991765f9f016",
+      "originalQuestionRef": "2021 HL Q15(a)(ii)",
+      "originalQuestionText": "Identify the independent and dependent variables in this investigation.",
+      "originalTotalMarks": 6,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "3 + 3"
+      },
+      "reason": "Visually verified paper PDF page 31 and scheme PDF page 28 (\"Dependent: grass DM% and earthworm population and spring soil nutrient availability\"). The original inserted a dash the scheme does not print into the middle of the answer. Same ID, boundary and marks."
+    },
+    "agsci-2021-hl-q15bi": {
+      "originalSha256": "1a947ec1aa56a4c168a61ff58f2ae6079f1e8d9968137db649466e1992b6cc4f",
+      "originalQuestionRef": "2021 HL Q15(b)(i)",
+      "originalQuestionText": "Identify which treatment is the most beneficial organic fertiliser for a steady supply of herbage over the five month period.",
+      "originalTotalMarks": 3,
+      "originalTariffModel": {
+        "kind": "fixed"
+      },
+      "reason": "Visually verified paper PDF page 33 (the (b) lead-in, the bar chart and \"(i) Identify which treatment is the most beneficial organic fertiliser for a steady supply of herbage over the five month period.\") and scheme PDF page 29 (\"FYM ‐ High\", 3). The original stem was the chart's axis labels and legend run together (\"800 1000 1200 ... Control treatment calculations\") with no chart. Same ID, rows, boundary and 3 marks; the stem is the paper's lead-in and the chart is cropped from the paper."
+    },
+    "agsci-2021-hl-q15biii": {
+      "originalSha256": "223a3eaa6194dba61de3eb849e05528f564b37f0aacd57255f5204449d567ec0",
+      "originalQuestionRef": "2021 HL Q15(b)(iii)",
+      "originalQuestionText": "A beef farmer wants to have early spring grass for his spring calving herd to turnout in late February. Using evidence from the data, outline the advice you would give him in relation to the source and application rates of organic fertiliser.",
+      "originalTotalMarks": 4,
+      "originalTariffModel": {
+        "kind": "fixed"
+      },
+      "reason": "Visually verified paper PDF page 34 (\"A beef farmer wants to have early spring grass for his spring calving herd to turnout in late February...\") with the chart on PDF page 33, and scheme PDF page 29 (4). The original stem was the chart's axis labels and legend run together (\"800 1000 1200 ... Control treatment calculations\") with no chart. Same ID, rows, boundary and 4 marks; the stem is the paper's lead-in and the chart is cropped from the paper."
+    },
+    "agsci-2021-hl-q15biv": {
+      "originalSha256": "af3274949e56ac0f6b755f72a47595f06452c5184e1e2f89eb28f3eeb03a87ab",
+      "originalQuestionRef": "2021 HL Q15(b)(iv)",
+      "originalQuestionText": "Using the findings of the students investigation over the five month period, discuss what advice you would give the farmer in relation to the source and application rates of these organic fertilisers. Your advice should include at least three specific recommendations.",
+      "originalTotalMarks": 6,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "3 at 2 marks each"
+      },
+      "reason": "Visually verified paper PDF page 34 and scheme PDF page 29 (\"Your advice should include at least three specific recommendations\", five recommendations, \"3(2)\"). The original listed three of the five recommendations as notation \"3 at 2 marks each\". The original stem was the chart's axis labels and legend run together (\"800 1000 1200 ... Control treatment calculations\") with no chart. Same ID, boundary and 6 marks; one row lists every published point."
+    },
+    "agsci-2021-hl-q16aiii": {
+      "originalSha256": "2685e85b7e6b3de5bc7d22d5a8d10b51b11e30e348ceb245acf21f4a214fb3a6",
+      "originalQuestionRef": "2021 HL Q16(a)(iii)",
+      "originalQuestionText": "Joe received his monthly statement on milk quality and noticed that his total bacterial count (TBC) and somatic cell count (SCC) were higher than anticipated. Construct a plan for the advice you would give Joe in order to reduce the TBC and SCC levels in his milk in order to achieve the best quality milk. Your plan should include at least three specific recommendations.",
+      "originalTotalMarks": 9,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "3(3)"
+      },
+      "reason": "Visually verified paper PDF page 36 and scheme PDF page 30 (\"Your plan should include at least three specific recommendations\", ten TBC and eight SCC recommendations, \"3(3)\"). The original fixed its third row to teat dipping, so a third recommendation such as clipping the cow's tail could not be ticked. Same ID, boundary and 9 marks; one row lists every published point."
+    },
+    "agsci-2021-hl-q16b": {
+      "originalSha256": "e1d19f49e56f26f478778f9f2d00144503f6743f34f0722c6ca89ee75c2f404c",
+      "originalQuestionRef": "2021 HL Q16(b)",
+      "originalQuestionText": "Joe wants to investigate and get results in relation to the quality of a sample of milk over time. Describe, with the aid of a labelled diagram, how Joe could carry out this investigation in a school laboratory or on his farm.",
+      "originalTotalMarks": 12,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "4(3)"
+      },
+      "reason": "Visually verified paper PDF page 37 (\"Describe, with the aid of a labelled diagram, how Joe could carry out this investigation in a school laboratory or on his farm.\") and scheme PDF page 31 (a resazurin method, \"OR Joe could do a total bacterial count on the sample\", \"OR There are other valid tests\", \"4(3)\"). The original mixed resazurin and plate-count steps in the same rows and left out the plate spreader, the repeats and the plate-count result. Same ID, boundary and 12 marks; each method is an answer route the student chooses before reveal, listing every published step, any four at 3 marks."
+    },
+    "agsci-2021-hl-q17bi": {
+      "originalSha256": "fa80f3315944abcb8384343b3dca8ecd5a0ea764fe5d2531e1af253baf6c92bc",
+      "originalQuestionRef": "2021 HL Q17(b)(i)",
+      "originalQuestionText": "Determine the P and K soil indexes for field 2.",
+      "originalTotalMarks": 3,
+      "originalTariffModel": {
+        "kind": "fixed"
+      },
+      "reason": "Visually verified paper PDF page 41 with the field 2 results on PDF page 40 (P 6.42 mg/l and K 157 mg/l, then \"(i) Determine the P and K soil indexes for field 2.\" above the Reference Soil Index table) and scheme PDF page 33 (\"P = 3 K = 4\", 3). The original stem was field 1's table run together (\"554115 Field 1 – Permanent pasture ... Test Parameters Result Very Low ...\") and the card carried no reference index to read the answer from. Same ID, rows, boundary and 3 marks; the stem is the paper's lead-in with field 2's two results, and the reference index is cropped from the paper."
+    },
+    "agsci-2021-hl-q17biv": {
+      "originalSha256": "1d93325ec27a1f753e7e118e597a427366d5eb5c5841115b36fc304da0d06952",
+      "originalQuestionRef": "2021 HL Q17(b)(iv)",
+      "originalQuestionText": "Some macronutrients do not appear on the table. Identify any two other macronutrients and state their role in plant growth.",
+      "originalTotalMarks": 8,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "3+3+1+1"
+      },
+      "reason": "Visually verified paper PDF page 42 (\"Some macronutrients do not appear on the table. Identify any two other macronutrients and state their role in plant growth.\") and scheme PDF page 34 (sulfur, calcium, magnesium and nitrogen with their roles, \"3+3+1+1\"). The original priced each nutrient and its role together at 4, so a correctly named nutrient with a wrong role earned nothing. Same ID, boundary and 8 marks; the names earn 1 each and the roles 3 each. Its stem, which the shipped card already hid, is removed."
+    },
+    "agsci-2021-hl-q18a-crop-preservation": {
+      "originalSha256": "ade50cb42df0f7017a5681f86326c1551893d4b42c711b83ca20f515854dca12",
+      "originalQuestionRef": "2021 HL Q18(a) Crop preservation",
+      "originalQuestionText": "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. Crop preservation:",
+      "originalTotalMarks": 4,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "2(2)"
+      },
+      "reason": "Visually verified paper PDF page 44 (\"Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading.\", a Named Crop line and the Crop preservation heading) and scheme PDF page 35 (three crop preservation pools separated by \"OR\": grain, potatoes and grass, \"2(2)\"). The original mixed the grain and potato points in the same rows, so points for different crops could be combined. Same ID, boundary and 4 marks; each crop is an answer route the student chooses before reveal, listing every published point, any two at 2 marks."
+    },
+    "agsci-2021-hl-q1b": {
+      "originalSha256": "e6c590b69d730938fa917956516fd1ffb5f2190d2cdf6af25b455a657ac17f7c",
+      "originalQuestionRef": "2021 HL Q1(b)",
+      "originalQuestionText": "Using a named example, other than the plants shown at part (a) above, distinguish between annual and biennial lifecycles.",
+      "originalTotalMarks": 4,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "2 + 1+1"
+      },
+      "reason": "Visually verified paper PDF page 3 (\"Using a named example, other than the plants shown at part (a) above, distinguish between annual and biennial lifecycles.\") and scheme PDF page 11 (\"Definition of one of annual or biennial for 2 and two marks for the other with a named example\", \"2 1+1\") with its PDF page 4 rule. The original pinned the 2 marks to the annual definition, so a biennial definition given first earned 1, and its stem named the three plants that part (a) asks the student to identify. Same ID, boundary, figure and 4 marks; the first definition earns 2 and the other definition and the example 1 each."
+    },
+    "agsci-2021-hl-q3ai": {
+      "originalSha256": "b46654d1935df5a6479cfc32de064b25bd9890302a8418dbbea038f99d6fb8b0",
+      "originalQuestionRef": "2021 HL Q3(a)(i)",
+      "originalQuestionText": "State the meaning of symbols A and B on the sign.",
+      "originalTotalMarks": 4,
+      "originalTariffModel": {
+        "kind": "fixed"
+      },
+      "reason": "Visually verified paper PDF page 6 (\"The following is an example of a farm safety notice displayed at the entrance to a farm. (i) State the meaning of symbols A and B on the sign.\") and scheme PDF page 12 (A 2, B 2). The original stem was the sign's text run together with the next page's \"Or\" (\"Farm Safety Notice No unauthorised persons ... THINK SAFETY FIRST! Or\"). Same ID, rows, figure, boundary and 4 marks; the stem is the paper's lead-in."
+    },
+    "agsci-2021-hl-q3aii": {
+      "originalSha256": "be1ec2e98937c9652d9bd2bb15a9738d44f2b6422246431c77e07f49a7b7787d",
+      "originalQuestionRef": "2021 HL Q3(a)(ii)",
+      "originalQuestionText": "State the function of C and D.",
+      "originalTotalMarks": 4,
+      "originalTariffModel": {
+        "kind": "fixed"
+      },
+      "reason": "Visually verified paper PDF page 6 (\"(ii) State the function of C and D.\", photographs C and D) and scheme PDF page 12 (C 2, D 2). The original stem was the safety sign's text run together with \"Or\", which has nothing to do with C and D. Same ID, rows, figure, boundary and 4 marks; the stem is the paper's instruction."
+    },
+    "agsci-2021-hl-q3aiii": {
+      "originalSha256": "371d51c9d5cc454e9adf928b55504e4f070ad44ac95209639a6c5c318baf4de5",
+      "originalQuestionRef": "2021 HL Q3(a)(iii)",
+      "originalQuestionText": "In relation to picture C at part (ii) above, state one advantage of using this piece of equipment to enhance sustainability of the farm.",
+      "originalTotalMarks": 2,
+      "originalTariffModel": {
+        "kind": "fixed"
+      },
+      "reason": "Visually verified paper PDF page 6 and scheme PDF page 12 (\"In relation to picture C at part (ii) above, state one advantage of using this piece of equipment to enhance sustainability of the farm\", four advantages, \"2\"). The original left out \"bloodless castration or tail docking reduces risk of infection\" and its stem was the safety sign's text run together with \"Or\". Same ID, boundary and 2 marks; one row lists every published point."
+    },
+    "agsci-2021-hl-q3bii": {
+      "originalSha256": "e76a260410eda8bf4471a02b95c68a3b489338f93f5c1d6aa0d4f5dff1500bc2",
+      "originalQuestionRef": "2021 HL Q3(b)(ii)",
+      "originalQuestionText": "The tractor in picture A is fitted with two tracks instead of four wheels. Suggest one advantage of using a tractor fitted with tracks.",
+      "originalTotalMarks": 2,
+      "originalTariffModel": {
+        "kind": "fixed"
+      },
+      "reason": "Visually verified paper PDF page 7 and scheme PDF page 13 (\"Suggest one advantage of using a tractor fitted with tracks\", five advantages, \"2\"). The original left out \"can travel on wet land or better floatation\". Same ID, boundary and 2 marks; one row lists every published point."
+    },
+    "agsci-2021-hl-q3biii": {
+      "originalSha256": "78b6f3e8d789f607ad261e4d4fe021fc3f67b378aaab8213fe144099d075e91c",
+      "originalQuestionRef": "2021 HL Q3(b)(iii)",
+      "originalQuestionText": "State one way machine A can enhance environmental sustainability.",
+      "originalTotalMarks": 2,
+      "originalTariffModel": {
+        "kind": "fixed"
+      },
+      "reason": "Visually verified paper PDF page 7 and scheme PDF page 13 (\"State one way machine A can enhance environmental sustainability\", five ways, \"2\"). The original left out \"improved soil structure or reduces compaction\". Same ID, boundary and 2 marks; one row lists every published point."
+    },
+    "agsci-2021-hl-q4c": {
+      "originalSha256": "0037e92d599932ce0bf78908a89d4b051492ba8182db4f47f0efab9b02455725",
+      "originalQuestionRef": "2021 HL Q4(c)",
+      "originalQuestionText": "Apart from your answer to part (a) above, suggest two ways in which the farmer could make the farmyard more environmentally sustainable.",
+      "originalTotalMarks": 4,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "2(2)"
+      },
+      "reason": "Visually verified paper PDF page 8 and scheme PDF page 13 (\"Apart from your answer to part (a) above, suggest two ways in which the farmer could make the farmyard more environmentally sustainable\", ten ways, \"2(2)\"). The original left out the first published way, planting more trees or hedges. Same ID, boundary and 4 marks; one row lists every published point."
+    },
+    "agsci-2021-hl-q5a": {
+      "originalSha256": "1c91815dcfe226226473ffe73dacdc9bce7079b0804b880ce7bf2df1df35ae1e",
+      "originalQuestionRef": "2021 HL Q5(a)",
+      "originalQuestionText": "Describe two ways in which the production of your chosen crop contributes to sustainability.",
+      "originalTotalMarks": 4,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "2(2)"
+      },
+      "reason": "Visually verified paper PDF page 9 (\"In relation to a catch crop or energy crop you have studied\", \"Describe two ways in which the production of your chosen crop contributes to sustainability\") and scheme PDF page 14 (separate kale or stubble turnip, oilseed rape and Miscanthus pools, \"2(2)\"). The original rows were two kale points with every oilseed rape and Miscanthus point mixed into their accepted wordings, so points from different crops could be combined. Same ID, boundary and 4 marks; each crop the scheme answers for is an answer route the student chooses before reveal, listing every published point, any two at 2 marks."
+    },
+    "agsci-2021-hl-q5b": {
+      "originalSha256": "c53f16c45fca9b8be88f21a4b568fbbaddba46532b95726262b81822905d4c29",
+      "originalQuestionRef": "2021 HL Q5(b)",
+      "originalQuestionText": "Describe the damage caused by a named pest to your chosen crop.",
+      "originalTotalMarks": 2,
+      "originalTariffModel": {
+        "kind": "fixed"
+      },
+      "reason": "Visually verified paper PDF page 9 (\"Describe the damage caused by a named pest to your chosen crop.\", a Named pest line) and scheme PDF page 14 (separate kale or stubble turnip, OSR and Miscanthus pests, 2). The original row was the kale flea beetle with every other crop's pest mixed into its accepted wordings. Same ID, boundary and 2 marks; each crop is an answer route the student chooses before reveal, listing every published damage."
+    },
+    "agsci-2021-hl-q5c": {
+      "originalSha256": "f90ab4adca507eb0be39f736b8744736818d2bc6447473e8a4e806c4cb89c109",
+      "originalQuestionRef": "2021 HL Q5(c)",
+      "originalQuestionText": "Describe the first two growth cycle stages of your chosen crop.",
+      "originalTotalMarks": 4,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "2(2)"
+      },
+      "reason": "Visually verified paper PDF page 9 (\"Describe the first two growth cycle stages of your chosen crop.\") and scheme PDF page 15 (kale or stubble turnip, OSR and Miscanthus stages, \"2(2)\"). The original rows were the kale stages with the oilseed rape and Miscanthus stages mixed into their accepted wordings. Same ID, boundary and 4 marks; each crop is an answer route the student chooses before reveal, with its own two published stages at 2 marks each."
+    },
+    "agsci-2021-hl-q6bii": {
+      "originalSha256": "ac8e3615d267bf03b95b350fe3c2e2b980531006c78c16bc0af1e5bbcad0d6d9",
+      "originalQuestionRef": "2021 HL Q6(b)(ii)",
+      "originalQuestionText": "Compare two effects of continuous tillage and permanent grassland on the soil organic matter content.",
+      "originalTotalMarks": 4,
+      "originalTariffModel": {
+        "kind": "fixed",
+        "notation": "2(2)"
+      },
+      "reason": "Visually verified paper PDF page 11 (\"Compare two effects of continuous tillage and permanent grassland on the soil organic matter content.\") and scheme PDF page 15 (\"...(increased organic matter) / stripping of nutrients or straw removal leads to less organic matter (more recycling of organic matter through crop presence and animal manures)\", \"2(2)\"). The original second point kept only the bracketed grassland half, dropping the tillage effect it compares. Same ID, boundary and 4 marks."
+    },
+    "agsci-2021-hl-q9a": {
+      "originalSha256": "bb3568349313efe044b41066a0d0cc3ccb7ae34292e9e18439dea66e6fe852a6",
+      "originalQuestionRef": "2021 HL Q9(a)",
+      "originalQuestionText": "Explain genomic selection.",
+      "originalTotalMarks": 2,
+      "originalTariffModel": {
+        "kind": "fixed"
+      },
+      "reason": "Visually verified paper PDF page 14 (\"Explain genomic selection.\") and scheme PDF page 17 (\"Animals or plants selected based on their DNA (or genetic material) examined and compared to reference data.\", 2). The original answer stopped at \"(or genetic material)\". Same ID, boundary and 2 marks."
+    },
+    "agsci-2021-hl-q9c": {
+      "originalSha256": "4b34ddf56c5bfad71a979305bbb2cf05b633d2407e2de8427dc9ab65a2dec24d",
+      "originalQuestionRef": "2021 HL Q9(c)",
+      "originalQuestionText": "Describe how farmers have made genetic improvements in their animal enterprise based on physical traits of their animals.",
+      "originalTotalMarks": 2,
+      "originalTariffModel": {
+        "kind": "fixed"
+      },
+      "reason": "Visually verified paper PDF page 14 (\"Describe how farmers have made genetic improvements in their animal enterprise based on physical traits of their animals.\") and scheme PDF page 17 (\"Farmer identifies trait (...) then the farmer (selectively, deliberately) breeds from these (superior) animals (to achieve superior offspring)\", 2). The original answer stopped after the list of traits, leaving out the breeding step that the question asks for. Same ID, boundary and 2 marks."
+    },
     "agsci-2022-hl-q10b": {
       "originalSha256": "1c60f1a61a4a877d02233594b434562810887cc606530d30f93307aa29b3d884",
       "originalQuestionRef": "2022 HL Q10(b)",
@@ -69827,6 +70180,5511 @@
       "evidence": "All 40 paper and 28 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
       "marksPerRoute": 4,
       "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q1(a)",
+      "paperPage": 3,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.155,
+            1,
+            0.515
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.137,
+            1,
+            0.212
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q1a": "1001"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q1a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-classification-of-animals-plants"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q1(b)",
+      "paperPage": 3,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.155,
+            1,
+            0.41
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.52,
+            1,
+            0.565
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.212,
+            1,
+            0.448
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q1b": "1002"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q1b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-classification-of-animals-plants",
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q2(a)(i)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.44
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.452,
+            1,
+            0.535
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q2ai": "1003"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q2ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q2(a)(ii)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.11
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.475,
+            1,
+            0.6
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.535,
+            1,
+            0.665
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q2aii": "1004"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q2aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q2(a)(iii)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.11
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.63,
+            1,
+            0.672
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.665,
+            1,
+            0.855
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q2aiii": "1005"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q2aiii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q2(b)(i)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.24
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.202
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q2bi": "1006"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q2bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q2(b)(ii)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.135
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.305,
+            1,
+            0.335
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.202,
+            1,
+            0.372
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q2bii": "1007"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q2bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q2(b)(iii)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.135
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.703,
+            1,
+            0.73
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.372,
+            1,
+            0.455
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q2biii": "1008"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q2biii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q3(a)(i)",
+      "paperPage": 6,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.36
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.462,
+            1,
+            0.527
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q3ai": "1009"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q3ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q3(a)(ii)",
+      "paperPage": 6,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.485,
+            1,
+            0.76
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.527,
+            1,
+            0.591
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q3aii": "1010"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q3aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q3(a)(iii)",
+      "paperPage": 6,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.51,
+            1,
+            0.7
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.765,
+            1,
+            0.81
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.591,
+            1,
+            0.69
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q3aiii": "1011"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q3aiii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q3(b)(i)",
+      "paperPage": 7,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.4
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.165
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q3bi": "1012"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q3bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production",
+        "agricultural-science-higher-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q3(b)(ii)",
+      "paperPage": 7,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.095,
+            1,
+            0.335
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.405,
+            1,
+            0.448
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.165,
+            1,
+            0.257
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q3bii": "1013"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q3bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production",
+        "agricultural-science-higher-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q3(b)(iii)",
+      "paperPage": 7,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.095,
+            1,
+            0.335
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.515,
+            1,
+            0.54
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.257,
+            1,
+            0.331
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q3biii": "1014"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q3biii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production",
+        "agricultural-science-higher-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q3(b)(iv)",
+      "paperPage": 7,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.095,
+            1,
+            0.335
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.608,
+            1,
+            0.652
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.331,
+            1,
+            0.46
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q3biv": "1015"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q3biv"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q4(a)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.455
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.467,
+            1,
+            0.541
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q4a": "1016"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q4a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q4(b)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.425
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.52,
+            1,
+            0.548
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.541,
+            1,
+            0.633
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q4b": "1017"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q4b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q4(c)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.425
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.675,
+            1,
+            0.72
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.633,
+            1,
+            0.855
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q4c": "1018"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q4c"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q5(a)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.197
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.488
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q5a": "1019"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q5a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-energy-crop-catch-crop"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Kale or stubble turnips",
+          "Oilseed rape (OSR)",
+          "Miscanthus"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q5(b)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.165
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.39,
+            1,
+            0.442
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.488,
+            1,
+            0.71
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q5b": "1020"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q5b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-energy-crop-catch-crop"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Kale or stubble turnips",
+          "Oilseed rape (OSR)",
+          "Miscanthus"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q5(c)",
+      "paperPage": 9,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.165
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.55,
+            1,
+            0.572
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.35
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q5c": "1021"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q5c"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-energy-crop-catch-crop"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Kale or stubble turnips",
+          "Oilseed rape (OSR)",
+          "Miscanthus"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q6(a)(i)",
+      "paperPage": 10,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.215
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.355,
+            1,
+            0.377
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q6ai": "1022"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q6ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q6(a)(ii)",
+      "paperPage": 10,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.215,
+            1,
+            0.258
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.377,
+            1,
+            0.499
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q6aii": "1023"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q6aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q6(a)(iii)",
+      "paperPage": 10,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.388,
+            1,
+            0.412
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.499,
+            1,
+            0.595
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q6aiii": "1024"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q6aiii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q6(b)(i)",
+      "paperPage": 11,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.113
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.595,
+            1,
+            0.685
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q6bi": "1025"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q6bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles",
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q6(b)(ii)",
+      "paperPage": 11,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.215,
+            1,
+            0.255
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.685,
+            1,
+            0.79
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q6bii": "1026"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q6bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles",
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q6(b)(iii)",
+      "paperPage": 11,
+      "schemePage": 15,
+      "paperRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.508,
+            1,
+            0.53
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.79,
+            1,
+            0.87
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q6biii": "1027"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q6biii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles",
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q7(a)",
+      "paperPage": 12,
+      "schemePage": 16,
+      "paperRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.113
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.132
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q7a": "1028"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q7a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q7(b)",
+      "paperPage": 12,
+      "schemePage": 16,
+      "paperRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.213,
+            1,
+            0.237
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.132,
+            1,
+            0.265
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q7b": "1029"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q7b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q7(c)",
+      "paperPage": 12,
+      "schemePage": 16,
+      "paperRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.337,
+            1,
+            0.362
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.265,
+            1,
+            0.49
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q7c": "1030"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q7c"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q8(a)",
+      "paperPage": 13,
+      "schemePage": 16,
+      "paperRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.278
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.496,
+            1,
+            0.539
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q8a": "1031"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q8a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q8(b)",
+      "paperPage": 13,
+      "schemePage": 16,
+      "paperRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.255
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.348,
+            1,
+            0.478
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.539,
+            1,
+            0.624
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q8b": "1032"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q8b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q8(c)",
+      "paperPage": 13,
+      "schemePage": 16,
+      "paperRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.255
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.348,
+            1,
+            0.478
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.632,
+            1,
+            0.69
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.624,
+            1,
+            0.75
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q8c": "1033"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q8c"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q9(a)",
+      "paperPage": 14,
+      "schemePage": 17,
+      "paperRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.113
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.146
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q9a": "1034"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q9a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q9(b)",
+      "paperPage": 14,
+      "schemePage": 17,
+      "paperRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.19,
+            1,
+            0.244
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.146,
+            1,
+            0.323
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q9b": "1035"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q9b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q9(c)",
+      "paperPage": 14,
+      "schemePage": 17,
+      "paperRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.449,
+            1,
+            0.491
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.323,
+            1,
+            0.422
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q9c": "1036"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q9c"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q9(d)",
+      "paperPage": 14,
+      "schemePage": 17,
+      "paperRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.628,
+            1,
+            0.687
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.422,
+            1,
+            0.585
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q9d": "1037"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q9d"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-animal-diseases",
+        "agricultural-science-higher-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q10(a)",
+      "paperPage": 15,
+      "schemePage": 17,
+      "paperRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.2
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.592,
+            1,
+            0.678
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q10a": "1038"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q10a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-sheep"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q10(b)",
+      "paperPage": 15,
+      "schemePage": 17,
+      "paperRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.172
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.332,
+            1,
+            0.355
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.678,
+            1,
+            0.773
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q10b": "1039"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q10b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-sheep"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q10(c)",
+      "paperPage": 15,
+      "schemePage": 17,
+      "paperRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.172
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.487,
+            1,
+            0.815
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.773,
+            1,
+            0.835
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q10c": "1040"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q10c"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-sheep"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q11(a)(i)",
+      "paperPage": 16,
+      "schemePage": 18,
+      "paperRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.113
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.202
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q11ai": "1041"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q11ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-reproductive-systems"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q11(a)(ii)",
+      "paperPage": 16,
+      "schemePage": 18,
+      "paperRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.306,
+            1,
+            0.328
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.202,
+            1,
+            0.242
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q11aii": "1042"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q11aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-reproductive-systems"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q11(a)(iii)",
+      "paperPage": 16,
+      "schemePage": 18,
+      "paperRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 16,
+          "r": [
+            0,
+            0.37,
+            1,
+            0.422
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.242,
+            1,
+            0.495
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q11aiii": "1043"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q11aiii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-reproductive-systems"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q11(b)(i)",
+      "paperPage": 17,
+      "schemePage": 18,
+      "paperRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.113
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.505,
+            1,
+            0.64
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q11bi": "1044"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q11bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q11(b)(ii)",
+      "paperPage": 17,
+      "schemePage": 19,
+      "paperRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.09
+          ]
+        },
+        {
+          "p": 17,
+          "r": [
+            0,
+            0.245,
+            1,
+            0.316
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.465
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q11bii": "1045"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q11bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Bloat",
+          "Acidosis"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q12(a)",
+      "paperPage": 18,
+      "schemePage": 19,
+      "paperRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.239
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0.473,
+            1,
+            0.512
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q12a": "1046"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q12a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-pigs",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q12(b)",
+      "paperPage": 18,
+      "schemePage": 19,
+      "paperRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.172
+          ]
+        },
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.278,
+            1,
+            0.303
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0.512,
+            1,
+            0.552
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q12b": "1047"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q12b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-pigs",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q12(c)",
+      "paperPage": 18,
+      "schemePage": 19,
+      "paperRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.172
+          ]
+        },
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.372,
+            1,
+            0.397
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0.552,
+            1,
+            0.592
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q12c": "1048"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q12c"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-pigs",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q12(d)",
+      "paperPage": 18,
+      "schemePage": 19,
+      "paperRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.172
+          ]
+        },
+        {
+          "p": 18,
+          "r": [
+            0,
+            0.466,
+            1,
+            0.491
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0.592,
+            1,
+            0.825
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q12d": "1049"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q12d"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-pigs",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q13(a)(i)",
+      "paperPage": 22,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.155,
+            1,
+            0.457
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.137,
+            1,
+            0.179
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q13ai": "1050"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q13ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q13(a)(ii)",
+      "paperPage": 22,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.155,
+            1,
+            0.435
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.496,
+            1,
+            0.538
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.179,
+            1,
+            0.323
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q13aii": "1051"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q13aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q13(a)(iii) Name",
+      "paperPage": 22,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.155,
+            1,
+            0.205
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.668,
+            1,
+            0.71
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.323,
+            1,
+            0.388
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q13aiii-name": "1052"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q13aiii-name"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q13(a)(iii) Advantages",
+      "paperPage": 22,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.155,
+            1,
+            0.205
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.668,
+            1,
+            0.71
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.388,
+            1,
+            0.532
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q13aiii-adv": "1053"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q13aiii-adv"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q13(a)(iv)",
+      "paperPage": 22,
+      "schemePage": 20,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.155,
+            1,
+            0.435
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0.062,
+            1,
+            0.158
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0.532,
+            1,
+            0.85
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q13aiv": "1054"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q13aiv"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 8,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q13(a)(v)",
+      "paperPage": 22,
+      "schemePage": 21,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.155,
+            1,
+            0.205
+          ]
+        },
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.062,
+            1,
+            0.106
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.153
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q13av": "1055"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q13av"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 16,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q13(b)",
+      "paperPage": 22,
+      "schemePage": 21,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.155,
+            1,
+            0.18
+          ]
+        },
+        {
+          "p": 25,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.32
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.153,
+            1,
+            0.287
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q13b": "1056"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q13b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q13(c)",
+      "paperPage": 22,
+      "schemePage": 21,
+      "paperRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.155,
+            1,
+            0.18
+          ]
+        },
+        {
+          "p": 25,
+          "r": [
+            0,
+            0.415,
+            1,
+            0.454
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0.287,
+            1,
+            0.673
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q13c": "1057"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q13c"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production",
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q14(a) Housing",
+      "paperPage": 26,
+      "schemePage": 22,
+      "paperRegions": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.255
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.3
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.32,
+            1,
+            0.458
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0.1,
+            1,
+            0.386
+          ]
+        },
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.1,
+            1,
+            0.289
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q14a-housing": "1058"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q14a-housing"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-sheep"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Liquid milk v creamery milk",
+          "Calf to beef v suckler beef",
+          "Mid-season lamb v early lamb"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "added"
+    },
+    {
+      "questionRef": "2021 HL Q14(a) Nutrition",
+      "paperPage": 26,
+      "schemePage": 22,
+      "paperRegions": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.215
+          ]
+        },
+        {
+          "p": 26,
+          "r": [
+            0,
+            0.448,
+            1,
+            0.475
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.3
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.32,
+            1,
+            0.342
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.455,
+            1,
+            0.605
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0.1,
+            1,
+            0.125
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0.385,
+            1,
+            0.568
+          ]
+        },
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.1,
+            1,
+            0.125
+          ]
+        },
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.288,
+            1,
+            0.422
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q14a-nutrition": "1059"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q14a-nutrition"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-sheep"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Liquid milk v creamery milk",
+          "Calf to beef v suckler beef",
+          "Mid-season lamb v early lamb"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "added"
+    },
+    {
+      "questionRef": "2021 HL Q14(a) Production targets",
+      "paperPage": 26,
+      "schemePage": 22,
+      "paperRegions": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.215
+          ]
+        },
+        {
+          "p": 26,
+          "r": [
+            0,
+            0.668,
+            1,
+            0.695
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.3
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.32,
+            1,
+            0.342
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0.603,
+            1,
+            0.68
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0.1,
+            1,
+            0.125
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0.567,
+            1,
+            0.75
+          ]
+        },
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.1,
+            1,
+            0.125
+          ]
+        },
+        {
+          "p": 24,
+          "r": [
+            0,
+            0.42,
+            1,
+            0.545
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q14a-production-targets": "1060"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q14a-production-targets"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-sheep"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Liquid milk v creamery milk",
+          "Calf to beef v suckler beef",
+          "Mid-season lamb v early lamb"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "added"
+    },
+    {
+      "questionRef": "2021 HL Q14(b)(i)",
+      "paperPage": 27,
+      "schemePage": 25,
+      "paperRegions": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0.062,
+            1,
+            0.21
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 25,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.178
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q14bi": "1061"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q14bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-sheep"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q14(b)(ii)",
+      "paperPage": 27,
+      "schemePage": 25,
+      "paperRegions": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0.338,
+            1,
+            0.435
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 25,
+          "r": [
+            0,
+            0.178,
+            1,
+            0.66
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q14bii": "1062"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q14bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-pigs"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Pig",
+          "Poultry",
+          "Horse"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q14(b)(iii)",
+      "paperPage": 27,
+      "schemePage": 26,
+      "paperRegions": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0.585,
+            1,
+            0.627
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.49
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q14biii": "1063"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q14biii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q14(c)(i)",
+      "paperPage": 28,
+      "schemePage": 26,
+      "paperRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.775
+          ]
+        },
+        {
+          "p": 29,
+          "r": [
+            0,
+            0.062,
+            1,
+            0.106
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0.49,
+            1,
+            0.84
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q14ci": "1064"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q14ci"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q14(c)(ii)",
+      "paperPage": 28,
+      "schemePage": 27,
+      "paperRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.775
+          ]
+        },
+        {
+          "p": 29,
+          "r": [
+            0,
+            0.206,
+            1,
+            0.247
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.18
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q14cii": "1065"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q14cii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q14(c)(iii)",
+      "paperPage": 28,
+      "schemePage": 27,
+      "paperRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.775
+          ]
+        },
+        {
+          "p": 29,
+          "r": [
+            0,
+            0.347,
+            1,
+            0.372
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0.18,
+            1,
+            0.241
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q14ciii": "1066"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q14ciii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q14(c)(iv)",
+      "paperPage": 28,
+      "schemePage": 27,
+      "paperRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.775
+          ]
+        },
+        {
+          "p": 30,
+          "r": [
+            0,
+            0.062,
+            1,
+            0.123
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0.241,
+            1,
+            0.63
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q14civ": "1067"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q14civ"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q15(a)(i)",
+      "paperPage": 31,
+      "schemePage": 28,
+      "paperRegions": [
+        {
+          "p": 31,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.24
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.149
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q15ai": "1068"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q15ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q15(a)(ii)",
+      "paperPage": 31,
+      "schemePage": 28,
+      "paperRegions": [
+        {
+          "p": 31,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.212
+          ]
+        },
+        {
+          "p": 31,
+          "r": [
+            0,
+            0.31,
+            1,
+            0.334
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.149,
+            1,
+            0.238
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q15aii": "1069"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q15aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q15(a)(iii)",
+      "paperPage": 31,
+      "schemePage": 28,
+      "paperRegions": [
+        {
+          "p": 31,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.212
+          ]
+        },
+        {
+          "p": 31,
+          "r": [
+            0,
+            0.464,
+            1,
+            0.506
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.238,
+            1,
+            0.55
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q15aiii": "1070"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q15aiii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 8,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q15(a)(iv)",
+      "paperPage": 31,
+      "schemePage": 28,
+      "paperRegions": [
+        {
+          "p": 31,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.212
+          ]
+        },
+        {
+          "p": 32,
+          "r": [
+            0,
+            0.062,
+            1,
+            0.106
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.55,
+            1,
+            0.752
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q15aiv": "1071"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q15aiv"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 12,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q15(a)(v)",
+      "paperPage": 31,
+      "schemePage": 28,
+      "paperRegions": [
+        {
+          "p": 31,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.212
+          ]
+        },
+        {
+          "p": 32,
+          "r": [
+            0,
+            0.69,
+            1,
+            0.732
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0.752,
+            1,
+            0.835
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q15av": "1072"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q15av"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q15(b)(i)",
+      "paperPage": 33,
+      "schemePage": 29,
+      "paperRegions": [
+        {
+          "p": 33,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.473
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 29,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.139
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q15bi": "1073"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q15bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q15(b)(ii)",
+      "paperPage": 33,
+      "schemePage": 29,
+      "paperRegions": [
+        {
+          "p": 33,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.425
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0.542,
+            1,
+            0.6
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 29,
+          "r": [
+            0,
+            0.139,
+            1,
+            0.388
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q15bii": "1074"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q15bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Solution 1: each treatment's own November value",
+          "Solution 2: the November control value for both"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 5,
+      "originalCard": "added"
+    },
+    {
+      "questionRef": "2021 HL Q15(b)(iii)",
+      "paperPage": 33,
+      "schemePage": 29,
+      "paperRegions": [
+        {
+          "p": 33,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.425
+          ]
+        },
+        {
+          "p": 34,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.123
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 29,
+          "r": [
+            0,
+            0.388,
+            1,
+            0.512
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q15biii": "1075"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q15biii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q15(b)(iv)",
+      "paperPage": 33,
+      "schemePage": 29,
+      "paperRegions": [
+        {
+          "p": 33,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.425
+          ]
+        },
+        {
+          "p": 34,
+          "r": [
+            0,
+            0.286,
+            1,
+            0.36
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 29,
+          "r": [
+            0,
+            0.512,
+            1,
+            0.66
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q15biv": "1076"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q15biv"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q16(a)(i)",
+      "paperPage": 35,
+      "schemePage": 30,
+      "paperRegions": [
+        {
+          "p": 35,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.438
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 30,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.27
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q16ai": "1077"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q16ai"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "added"
+    },
+    {
+      "questionRef": "2021 HL Q16(a)(ii)",
+      "paperPage": 35,
+      "schemePage": 30,
+      "paperRegions": [
+        {
+          "p": 35,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.148
+          ]
+        },
+        {
+          "p": 35,
+          "r": [
+            0,
+            0.614,
+            1,
+            0.636
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 30,
+          "r": [
+            0,
+            0.27,
+            1,
+            0.396
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q16aii": "1078"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q16aii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q16(a)(iii)",
+      "paperPage": 35,
+      "schemePage": 30,
+      "paperRegions": [
+        {
+          "p": 35,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.148
+          ]
+        },
+        {
+          "p": 36,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.335
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 30,
+          "r": [
+            0,
+            0.396,
+            1,
+            0.835
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q16aiii": "1079"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q16aiii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 9,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q16(b)",
+      "paperPage": 37,
+      "schemePage": 31,
+      "paperRegions": [
+        {
+          "p": 37,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.123
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 31,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.68
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q16b": "1080"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q16b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Resazurin test",
+          "Total bacterial count"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 12,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q16(c)(i)",
+      "paperPage": 38,
+      "schemePage": 32,
+      "paperRegions": [
+        {
+          "p": 38,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.32
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 32,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.203
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q16ci": "1081"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q16ci"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q16(c)(ii)",
+      "paperPage": 38,
+      "schemePage": 32,
+      "paperRegions": [
+        {
+          "p": 38,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.297
+          ]
+        },
+        {
+          "p": 38,
+          "r": [
+            0,
+            0.409,
+            1,
+            0.451
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 32,
+          "r": [
+            0,
+            0.203,
+            1,
+            0.285
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q16cii": "1082"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q16cii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 2,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q16(c)(iii)",
+      "paperPage": 38,
+      "schemePage": 32,
+      "paperRegions": [
+        {
+          "p": 38,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.106
+          ]
+        },
+        {
+          "p": 38,
+          "r": [
+            0,
+            0.517,
+            1,
+            0.541
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 32,
+          "r": [
+            0,
+            0.285,
+            1,
+            0.384
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q16ciii": "1083"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q16ciii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q16(c)(iv)",
+      "paperPage": 38,
+      "schemePage": 32,
+      "paperRegions": [
+        {
+          "p": 38,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.106
+          ]
+        },
+        {
+          "p": 38,
+          "r": [
+            0,
+            0.663,
+            1,
+            0.702
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 32,
+          "r": [
+            0,
+            0.384,
+            1,
+            0.64
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q16civ": "1084"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q16civ"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 8,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q16(d)(i)",
+      "paperPage": 39,
+      "schemePage": 33,
+      "paperRegions": [
+        {
+          "p": 39,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.3
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 33,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.182
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q16di": "1085"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q16di"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-innovation-and-biotechnology-in-agriculture",
+        "agricultural-science-higher-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q16(d)(ii)",
+      "paperPage": 39,
+      "schemePage": 33,
+      "paperRegions": [
+        {
+          "p": 39,
+          "r": [
+            0,
+            0.09,
+            1,
+            0.235
+          ]
+        },
+        {
+          "p": 39,
+          "r": [
+            0,
+            0.429,
+            1,
+            0.453
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 33,
+          "r": [
+            0,
+            0.182,
+            1,
+            0.243
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q16dii": "1086"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q16dii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-innovation-and-biotechnology-in-agriculture",
+        "agricultural-science-higher-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q16(d)(iii)",
+      "paperPage": 39,
+      "schemePage": 33,
+      "paperRegions": [
+        {
+          "p": 39,
+          "r": [
+            0,
+            0.09,
+            1,
+            0.112
+          ]
+        },
+        {
+          "p": 39,
+          "r": [
+            0,
+            0.523,
+            1,
+            0.564
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 33,
+          "r": [
+            0,
+            0.243,
+            1,
+            0.405
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q16diii": "1087"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q16diii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-beef-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q16(d)(iv)",
+      "paperPage": 39,
+      "schemePage": 33,
+      "paperRegions": [
+        {
+          "p": 39,
+          "r": [
+            0,
+            0.09,
+            1,
+            0.112
+          ]
+        },
+        {
+          "p": 39,
+          "r": [
+            0,
+            0.748,
+            1,
+            0.79
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 33,
+          "r": [
+            0,
+            0.405,
+            1,
+            0.52
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q16div": "1088"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q16div"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-innovation-and-biotechnology-in-agriculture",
+        "agricultural-science-higher-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q17(a)",
+      "paperPage": 40,
+      "schemePage": 33,
+      "paperRegions": [
+        {
+          "p": 40,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.17
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 33,
+          "r": [
+            0,
+            0.531,
+            1,
+            0.64
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q17a": "1089"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q17a"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q17(b)(i)",
+      "paperPage": 40,
+      "schemePage": 33,
+      "paperRegions": [
+        {
+          "p": 40,
+          "r": [
+            0,
+            0.3,
+            1,
+            0.725
+          ]
+        },
+        {
+          "p": 41,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.41
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 33,
+          "r": [
+            0,
+            0.64,
+            1,
+            0.69
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q17bi": "1090"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q17bi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q17(b)(ii)",
+      "paperPage": 40,
+      "schemePage": 33,
+      "paperRegions": [
+        {
+          "p": 40,
+          "r": [
+            0,
+            0.3,
+            1,
+            0.725
+          ]
+        },
+        {
+          "p": 41,
+          "r": [
+            0,
+            0.43,
+            1,
+            0.47
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 33,
+          "r": [
+            0,
+            0.69,
+            1,
+            0.875
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q17bii": "1091"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q17bii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 3,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q17(b)(iii)",
+      "paperPage": 40,
+      "schemePage": 34,
+      "paperRegions": [
+        {
+          "p": 40,
+          "r": [
+            0,
+            0.3,
+            1,
+            0.53
+          ]
+        },
+        {
+          "p": 41,
+          "r": [
+            0,
+            0.572,
+            1,
+            0.611
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 34,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.258
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q17biii": "1092"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q17biii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q17(b)(iv)",
+      "paperPage": 40,
+      "schemePage": 34,
+      "paperRegions": [
+        {
+          "p": 40,
+          "r": [
+            0,
+            0.3,
+            1,
+            0.725
+          ]
+        },
+        {
+          "p": 42,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.106
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 34,
+          "r": [
+            0,
+            0.258,
+            1,
+            0.447
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q17biv": "1093"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q17biv"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 8,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q17(b)(v)",
+      "paperPage": 40,
+      "schemePage": 34,
+      "paperRegions": [
+        {
+          "p": 40,
+          "r": [
+            0,
+            0.3,
+            1,
+            0.53
+          ]
+        },
+        {
+          "p": 42,
+          "r": [
+            0,
+            0.299,
+            1,
+            0.321
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 34,
+          "r": [
+            0,
+            0.447,
+            1,
+            0.51
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q17bv": "1094"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q17bv"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q17(b)(vi)",
+      "paperPage": 40,
+      "schemePage": 34,
+      "paperRegions": [
+        {
+          "p": 40,
+          "r": [
+            0,
+            0.3,
+            1,
+            0.725
+          ]
+        },
+        {
+          "p": 42,
+          "r": [
+            0,
+            0.514,
+            1,
+            0.554
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 34,
+          "r": [
+            0,
+            0.51,
+            1,
+            0.609
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q17bvi": "1095"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q17bvi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles",
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q17(c)",
+      "paperPage": 43,
+      "schemePage": 34,
+      "paperRegions": [
+        {
+          "p": 43,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.106
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 34,
+          "r": [
+            0,
+            0.609,
+            1,
+            0.832
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q17c": "1096"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q17c"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 12,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q18(a) Soil quality",
+      "paperPage": 44,
+      "schemePage": 35,
+      "paperRegions": [
+        {
+          "p": 44,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.235
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 35,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.39
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q18a-soil-quality": "1097"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q18a-soil-quality"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q18(a) Crop preservation",
+      "paperPage": 44,
+      "schemePage": 35,
+      "paperRegions": [
+        {
+          "p": 44,
+          "r": [
+            0,
+            0.065,
+            1,
+            0.165
+          ]
+        },
+        {
+          "p": 44,
+          "r": [
+            0,
+            0.343,
+            1,
+            0.38
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 35,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.16
+          ]
+        },
+        {
+          "p": 35,
+          "r": [
+            0,
+            0.39,
+            1,
+            0.83
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q18a-crop-preservation": "1098"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q18a-crop-preservation"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Grain crops (e.g. barley)",
+          "Potatoes",
+          "Grass (silage or hay)"
+        ],
+        "pooled": true
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "corrected-in-place"
+    },
+    {
+      "questionRef": "2021 HL Q18(b)",
+      "paperPage": 44,
+      "schemePage": 36,
+      "paperRegions": [
+        {
+          "p": 44,
+          "r": [
+            0,
+            0.502,
+            1,
+            0.562
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 36,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.445
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q18b": "1099"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q18b"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 9,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q18(c)(i)",
+      "paperPage": 45,
+      "schemePage": 37,
+      "paperRegions": [
+        {
+          "p": 45,
+          "r": [
+            0,
+            0.24,
+            1,
+            0.596
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 37,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.128
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q18ci": "1100"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q18ci"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q18(c)(ii)",
+      "paperPage": 45,
+      "schemePage": 37,
+      "paperRegions": [
+        {
+          "p": 45,
+          "r": [
+            0,
+            0.24,
+            1,
+            0.57
+          ]
+        },
+        {
+          "p": 45,
+          "r": [
+            0,
+            0.665,
+            1,
+            0.69
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 37,
+          "r": [
+            0,
+            0.128,
+            1,
+            0.206
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q18cii": "1101"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q18cii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q18(c)(iii)",
+      "paperPage": 45,
+      "schemePage": 37,
+      "paperRegions": [
+        {
+          "p": 45,
+          "r": [
+            0,
+            0.24,
+            1,
+            0.57
+          ]
+        },
+        {
+          "p": 46,
+          "r": [
+            0,
+            0.062,
+            1,
+            0.088
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 37,
+          "r": [
+            0,
+            0.206,
+            1,
+            0.284
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q18ciii": "1102"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q18ciii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q18(c)(iv)",
+      "paperPage": 45,
+      "schemePage": 37,
+      "paperRegions": [
+        {
+          "p": 45,
+          "r": [
+            0,
+            0.24,
+            1,
+            0.57
+          ]
+        },
+        {
+          "p": 46,
+          "r": [
+            0,
+            0.219,
+            1,
+            0.26
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 37,
+          "r": [
+            0,
+            0.284,
+            1,
+            0.338
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q18civ": "1103"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q18civ"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-animal-physiology-reproductive-systems"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q18(c)(v)",
+      "paperPage": 45,
+      "schemePage": 37,
+      "paperRegions": [
+        {
+          "p": 45,
+          "r": [
+            0,
+            0.24,
+            1,
+            0.57
+          ]
+        },
+        {
+          "p": 46,
+          "r": [
+            0,
+            0.33,
+            1,
+            0.389
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 37,
+          "r": [
+            0,
+            0.338,
+            1,
+            0.416
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q18cv": "1104"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q18cv"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 6,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q18(c)(vi)",
+      "paperPage": 45,
+      "schemePage": 37,
+      "paperRegions": [
+        {
+          "p": 45,
+          "r": [
+            0,
+            0.24,
+            1,
+            0.57
+          ]
+        },
+        {
+          "p": 46,
+          "r": [
+            0,
+            0.58,
+            1,
+            0.604
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 37,
+          "r": [
+            0,
+            0.416,
+            1,
+            0.459
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q18cvi": "1105"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q18cvi"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 4,
+      "originalCard": "unchanged"
+    },
+    {
+      "questionRef": "2021 HL Q18(c)(vii)",
+      "paperPage": 45,
+      "schemePage": 37,
+      "paperRegions": [
+        {
+          "p": 45,
+          "r": [
+            0,
+            0.24,
+            1,
+            0.28
+          ]
+        },
+        {
+          "p": 46,
+          "r": [
+            0,
+            0.644,
+            1,
+            0.668
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 37,
+          "r": [
+            0,
+            0.459,
+            1,
+            0.765
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2021-hl-q18cvii": "1106"
+      },
+      "cardIds": [
+        "agsci-2021-hl-q18cvii"
+      ],
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-animal-physiology-reproductive-systems"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response at a published boundary. Scheme alternatives remain marking menus."
+      },
+      "evidence": "All 52 paper and 39 scheme pages visually inspected. Boundary and tariff checked against the independently transcribed census.",
+      "marksPerRoute": 5,
+      "originalCard": "unchanged"
     }
   ],
   "paperReviews": [
@@ -74070,6 +79928,313 @@
       ],
       "sourceNotes": [],
       "independentBoundaryReview": "98 base tasks, one card each (Q2(b)(ii) and Q13(b)(i) reviewed in an earlier batch). Of the 95 original cards, 71 match a published boundary and tariff unchanged; 19 are corrected in place (Q1(a), Q2(a)(i), Q2(a)(ii), Q3(a), Q3(b), Q4(b), Q5(a), Q7(a)(iii), Q7(b)(ii), Q9(c), Q10(c), Q11(a)(iii), Q14(c)(iv), Q16(b)(ii), Q17(a)(i), Q17(a)(ii), Q17(a)(iii), Q18(a)(i), Q18(b)(i)); the five per-statement Q4(b) cards are withdrawn as aliases of the Q4(b) table card; six cards are added for the missing Q10(a), Q12(a), Q15(a)(ii), Q16(a)(ii), Q17(b)(i) and Q17(b)(iii).",
+      "cropVisualReview": "Every distinct paper/scheme crop pair rendered and inspected.",
+      "runtimeReview": "Integrated production-component cases at 1200px and 390px. Signed-in full-app navigation remains open.",
+      "remaining": [
+        "Irish edition comparison (deferred)",
+        "Full application navigation review",
+        "Corpus-wide reconciliation"
+      ]
+    },
+    {
+      "year": 2021,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "hashes": {
+        "exampapers": "d60e656eff0863123d5c8152f114bcd323ed0cf81144676becf1f367c2b9d4e3",
+        "markingschemes": "6a1ad8c18dcabcd40f63f9b10f28ea23089a29bf4c34cd22ce097c8e988e99a8"
+      },
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "selectionDirectives": [
+        {
+          "id": "93c0169ea23ec09c",
+          "page": 2,
+          "cue": "any seven",
+          "context": "at you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer any seven questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any three questions from this section. There is internal choice in two questions. Each question carries 50 ",
+          "classification": "exam-selection",
+          "reason": "Instructions: Section A, seven of twelve independent questions. Every question and both sides of each internal choice are retained."
+        },
+        {
+          "id": "588519d631c6a81d",
+          "page": 2,
+          "cue": "any three",
+          "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any three questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Day and Month of Birth in the boxes on the front cover. Write your answers in blue or ",
+          "classification": "exam-selection",
+          "reason": "Instructions: Section B, three of six independent questions. Every question is retained."
+        },
+        {
+          "id": "9ac5fdd7ce4a092d",
+          "page": 3,
+          "cue": "any seven",
+          "context": "tificate Examination 2021 3 Agricultural Science – Higher Level Section A 70 marks Answer any seven questions. Each question carries 10 marks. Question 1 (a) Identify each of the following plants. A B C (b) Using a named example, other than the plants shown at part (a) above, distinguish between annual and biennial lifecycles. ",
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: seven independent 10-mark questions, all retained."
+        },
+        {
+          "id": "a335f8a2555520a2",
+          "page": 4,
+          "cue": "either",
+          "context": "ving Certificate Examination 2021 4 Agricultural Science – Higher Level Question 2 Answer either (a) or (b). Herbicide resistance confirmed in wild oats The wild oat is one of the most widely recognised weeds in Ireland’s tillage fields. If left unchecked, this predominantly spring‐germinating self‐pollinating weed can subst",
+          "classification": "independent-task-selection",
+          "reason": "Q2 either (a) or (b): both independently marked alternatives are retained."
+        },
+        {
+          "id": "3b837fd3a3b243b2",
+          "page": 4,
+          "cue": "one of",
+          "context": "n 2 Answer either (a) or (b). Herbicide resistance confirmed in wild oats The wild oat is one of the most widely recognised weeds in Ireland’s tillage fields. If left unchecked, this predominantly spring‐germinating self‐pollinating weed can substantially reduce crop yields due to its competitiveness. Control of wild oats in",
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q2 article (\"one of the most widely recognised weeds\"); no response choice."
+        },
+        {
+          "id": "53e9fb7555990b75",
+          "page": 6,
+          "cue": "either",
+          "context": "ving Certificate Examination 2021 6 Agricultural Science – Higher Level Question 3 Answer either (a) or (b). (a) The following is an example of a farm safety notice displayed at the entrance to a farm. (i) State the meaning of symbols A and B on the sign. (ii) State the function of C and D. C D (iii) In relation to picture C",
+          "classification": "independent-task-selection",
+          "reason": "Q3 either (a) or (b): both alternatives are retained."
+        },
+        {
+          "id": "38aed7a703a1c97c",
+          "page": 10,
+          "cue": "either",
+          "context": "ing Certificate Examination 2021 10 Agricultural Science – Higher Level Question 6 Answer either (a) or (b). (a) (i) Identify the part of the plant where respiration takes place by placing a tick () in the correct box. (ii) Outline two ways in which a farmer can increase airflow through soil to allow for increased respirati",
+          "classification": "independent-task-selection",
+          "reason": "Q6 either (a) or (b): both alternatives are retained."
+        },
+        {
+          "id": "528cc8e4bae3e9aa",
+          "page": 15,
+          "cue": "one of",
+          "context": "ination 2021 15 Agricultural Science – Higher Level Question 10 The Murphy family operate one of Ireland’s sheep dairy farms in Co. Galway. They produce artisan products for a niche market. Their produce is available in approximately 50 shops and in some of Ireland’s top restaurants. (a) Distinguish between artisan produce a",
+          "classification": "not-a-selection",
+          "reason": "Prose in the Q10 lead-in (\"operate one of Ireland's sheep dairy farms\"); no response choice."
+        },
+        {
+          "id": "521052cc84f8b9f4",
+          "page": 16,
+          "cue": "either",
+          "context": "ng Certificate Examination 2021 16 Agricultural Science – Higher Level Question 11 Answer either (a) or (b). (a) (i) Distinguish between the duration of oestrus and the oestrous cycle in cattle. (ii) Identify the part of the female reproductive system where ovulation occurs. (iii) Describe two advantages of artificial insemi",
+          "classification": "independent-task-selection",
+          "reason": "Q11 either (a) or (b): both alternatives are retained."
+        },
+        {
+          "id": "d248ebc99079542b",
+          "page": 22,
+          "cue": "any three",
+          "context": "ficate Examination 2021 22 Agricultural Science – Higher Level Section B 150 marks Answer any three questions. Each question carries 50 marks. Question 13 Answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production an",
+          "classification": "exam-selection",
+          "reason": "Section B heading: three of six independent 50-mark questions, all retained."
+        },
+        {
+          "id": "e5d33bfb49764ae1",
+          "page": 22,
+          "cue": "either",
+          "context": "s Answer any three questions. Each question carries 50 marks. Question 13 Answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production and lamb weight gain in flocks grazing multi‐species swards The definition of mu",
+          "classification": "independent-task-selection",
+          "reason": "Q13: (a) with either (b) or (c). Every part, including both (b) and (c), is retained."
+        },
+        {
+          "id": "6777398652c30a1f",
+          "page": 35,
+          "cue": "either",
+          "context": "tion 2021 35 Agricultural Science – Higher Level Question 16 Answer both (a) and (b) with either (c) or (d). (a) Two dairy farmers (Dan and Joe) are comparing the amount of money they are getting paid for their milk. Analyse the data in the table and answer the questions which follow. Dan Joe Supply (litres, kg) 50,000 L (51",
+          "classification": "independent-task-selection",
+          "reason": "Q16: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
+        },
+        {
+          "id": "7653e96a119afe36",
+          "page": 42,
+          "cue": "any two",
+          "context": "ural Science – Higher Level (iv) Some macronutrients do not appear on the table. Identify any two other macronutrients and state their role in plant growth. (v) Outline two ways in which farmers can increase the K levels on their land. (vi) Briefly describe two ways a farmer can prevent P leaching from the soil and potentiall",
+          "classification": "open",
+          "reason": "Q17(b)(iv): any two macronutrients that are not on the table. The paper prints no list; the scheme's sulfur, calcium, magnesium and nitrogen are a marking menu."
+        }
+      ],
+      "supplementarySelections": [
+        {
+          "page": 9,
+          "wording": "In relation to a catch crop or energy crop you have studied",
+          "classification": "closed",
+          "reason": "Q5(a)-(c): a student-named catch or energy crop; the scheme answers for kale or stubble turnips, oilseed rape and Miscanthus, kept as answer routes on one card each."
+        },
+        {
+          "page": 17,
+          "wording": "Briefly describe a named disorder of the ruminant digestive system",
+          "classification": "closed",
+          "reason": "Q11(b)(ii): a student-named disorder; the scheme answers for bloat and acidosis, kept as answer routes on one card."
+        },
+        {
+          "page": 26,
+          "wording": "Compare two different systems of animal production for a chosen livestock enterprise",
+          "classification": "closed",
+          "reason": "Q14(a): a chosen enterprise and pair of systems; the scheme answers for liquid v creamery milk, calf to beef v suckler beef and mid-season v early lamb, kept as answer routes on each heading card."
+        },
+        {
+          "page": 27,
+          "wording": "In relation to two named breeds of pig or horse or poultry",
+          "classification": "closed",
+          "reason": "Q14(b)(ii): two breeds of one species; the scheme answers for pigs, poultry and horses, kept as answer routes on one card."
+        },
+        {
+          "page": 37,
+          "wording": "Describe, with the aid of a labelled diagram, how Joe could carry out this investigation",
+          "classification": "closed",
+          "reason": "Q16(b): the scheme answers with a resazurin test or a total bacterial count, kept as answer routes on one card."
+        },
+        {
+          "page": 44,
+          "wording": "Discuss the effect of each of the following on the productivity of a named crop",
+          "classification": "closed",
+          "reason": "Q18(a): a student-named crop; the scheme's crop preservation answers are separate grain, potato and grass pools, kept as answer routes on that heading's card."
+        },
+        {
+          "page": 14,
+          "wording": "Outline two advantages of using genomically selected animals in a named animal enterprise",
+          "classification": "open",
+          "reason": "Q9(b): no marks for naming the enterprise; the scheme's advantages are one pool."
+        },
+        {
+          "page": 16,
+          "wording": "Describe two advantages of artificial insemination (AI) in cattle or sheep or pigs",
+          "classification": "open",
+          "reason": "Q11(a)(iii): no marks for naming the animal; the scheme's advantages are one pool."
+        },
+        {
+          "page": 10,
+          "wording": "by placing a tick",
+          "classification": "answer-identification",
+          "reason": "Q6(a)(i): one correct box (mitochondria)."
+        },
+        {
+          "page": 13,
+          "wording": "Calculate which heifers were worth more money to John",
+          "classification": "answer-identification",
+          "reason": "Q8(c): one correct conclusion (the Limousine heifers)."
+        },
+        {
+          "page": 33,
+          "wording": "Identify which treatment is the most beneficial organic fertiliser",
+          "classification": "answer-identification",
+          "reason": "Q15(b)(i): one correct treatment (FYM high)."
+        },
+        {
+          "page": 35,
+          "wording": "Calculate which farmer (Dan or Joe) earns a higher price for their milk",
+          "classification": "answer-identification",
+          "reason": "Q16(a)(i): one correct farmer (Dan)."
+        }
+      ],
+      "sourceNotes": [
+        {
+          "questionN": "14",
+          "questionRef": "Q14(a)",
+          "note": "Scheme PDF pages 22 to 24 price each heading 4+2 and answer it from three stage tables (liquid v creamery milk, calf to beef v suckler beef, mid-season v early lamb) and \"Other valid comparisons\"."
+        },
+        {
+          "questionN": "15",
+          "questionRef": "Q15(b)(ii)",
+          "note": "Scheme PDF page 29 accepts two calculations (from each treatment's own November value, or from the November control value for both) and awards marks \"based on the answer given by candidate in part (i)\"."
+        }
+      ],
+      "independentBoundaryReview": "106 base tasks, one card each (Q13(a)(iii) keeps its name and advantages boundaries; Q14(a) and Q18(a) are carded by printed heading). 71 original cards match a published boundary and tariff unchanged. 30 are corrected in place (Q1(b), Q3(a)(i), Q3(a)(ii), Q3(a)(iii), Q3(b)(ii), Q3(b)(iii), Q4(c), Q5(a), Q5(b), Q5(c), Q6(b)(ii), Q9(a), Q9(c), Q10(a), Q10(c), Q11(b)(ii), Q14(b)(i), Q14(b)(ii), Q14(c)(ii), Q14(c)(iii), Q15(a)(i), Q15(a)(ii), Q15(b)(i), Q15(b)(iii), Q15(b)(iv), Q16(a)(iii), Q16(b), Q17(b)(i), Q17(b)(iv), Q18(a) Crop preservation); five cards are added for the missing Q14(a) Housing, Nutrition and Production targets, Q15(b)(ii) and Q16(a)(i).",
       "cropVisualReview": "Every distinct paper/scheme crop pair rendered and inspected.",
       "runtimeReview": "Integrated production-component cases at 1200px and 390px. Signed-in full-app navigation remains open.",
       "remaining": [

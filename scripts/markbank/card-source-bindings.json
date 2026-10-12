@@ -1,5 +1,50 @@
 {
   "agricultural-science": {
+    "agsci-2021-hl-q10b": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2021-hl-q11ai": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2021-hl-q11aii": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2021-hl-q11aiii": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2021-hl-q11bi": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2021-hl-q12a": {
+      "pages": [
+        18
+      ]
+    },
+    "agsci-2021-hl-q12b": {
+      "pages": [
+        18
+      ]
+    },
+    "agsci-2021-hl-q12c": {
+      "pages": [
+        18
+      ]
+    },
+    "agsci-2021-hl-q12d": {
+      "pages": [
+        18
+      ]
+    },
     "agsci-2021-hl-q13ai": {
       "kind": "text",
       "pages": [
@@ -42,6 +87,57 @@
       ],
       "stripStem": true
     },
+    "agsci-2021-hl-q13b": {
+      "pages": [
+        22,
+        25
+      ]
+    },
+    "agsci-2021-hl-q13c": {
+      "pages": [
+        22,
+        25
+      ]
+    },
+    "agsci-2021-hl-q14biii": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2021-hl-q14ci": {
+      "pages": [
+        28,
+        29
+      ]
+    },
+    "agsci-2021-hl-q14civ": {
+      "pages": [
+        28,
+        30
+      ]
+    },
+    "agsci-2021-hl-q15aiii": {
+      "pages": [
+        31
+      ]
+    },
+    "agsci-2021-hl-q15aiv": {
+      "pages": [
+        31,
+        32
+      ]
+    },
+    "agsci-2021-hl-q15av": {
+      "pages": [
+        31,
+        32
+      ]
+    },
+    "agsci-2021-hl-q16aii": {
+      "pages": [
+        35
+      ]
+    },
     "agsci-2021-hl-q16ci": {
       "kind": "text",
       "pages": [
@@ -49,17 +145,245 @@
       ],
       "stripStem": true
     },
-    "agsci-2021-hl-q17biv": {
+    "agsci-2021-hl-q16cii": {
       "pages": [
+        38
+      ]
+    },
+    "agsci-2021-hl-q16ciii": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2021-hl-q16civ": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2021-hl-q16di": {
+      "pages": [
+        39
+      ]
+    },
+    "agsci-2021-hl-q16dii": {
+      "pages": [
+        39
+      ]
+    },
+    "agsci-2021-hl-q16diii": {
+      "pages": [
+        39
+      ]
+    },
+    "agsci-2021-hl-q16div": {
+      "pages": [
+        39
+      ]
+    },
+    "agsci-2021-hl-q17a": {
+      "pages": [
+        40
+      ]
+    },
+    "agsci-2021-hl-q17bii": {
+      "pages": [
+        40,
+        41
+      ]
+    },
+    "agsci-2021-hl-q17biii": {
+      "pages": [
+        40,
+        41
+      ]
+    },
+    "agsci-2021-hl-q17bv": {
+      "pages": [
+        40,
         42
-      ],
-      "stripStem": true
+      ]
+    },
+    "agsci-2021-hl-q17bvi": {
+      "pages": [
+        40,
+        42
+      ]
+    },
+    "agsci-2021-hl-q17c": {
+      "pages": [
+        43
+      ]
+    },
+    "agsci-2021-hl-q18a-soil-quality": {
+      "pages": [
+        44
+      ]
+    },
+    "agsci-2021-hl-q18b": {
+      "pages": [
+        44
+      ]
+    },
+    "agsci-2021-hl-q18ci": {
+      "pages": [
+        45
+      ]
+    },
+    "agsci-2021-hl-q18cii": {
+      "pages": [
+        45
+      ]
+    },
+    "agsci-2021-hl-q18ciii": {
+      "pages": [
+        45,
+        46
+      ]
+    },
+    "agsci-2021-hl-q18civ": {
+      "pages": [
+        45,
+        46
+      ]
+    },
+    "agsci-2021-hl-q18cv": {
+      "pages": [
+        45,
+        46
+      ]
+    },
+    "agsci-2021-hl-q18cvi": {
+      "pages": [
+        45,
+        46
+      ]
+    },
+    "agsci-2021-hl-q18cvii": {
+      "pages": [
+        45,
+        46
+      ]
+    },
+    "agsci-2021-hl-q1a": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2021-hl-q2ai": {
+      "pages": [
+        4
+      ]
+    },
+    "agsci-2021-hl-q2aii": {
+      "pages": [
+        4
+      ]
+    },
+    "agsci-2021-hl-q2aiii": {
+      "pages": [
+        4
+      ]
+    },
+    "agsci-2021-hl-q2bi": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2021-hl-q2bii": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2021-hl-q2biii": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2021-hl-q3bi": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2021-hl-q3biv": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2021-hl-q4a": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2021-hl-q4b": {
+      "pages": [
+        8
+      ]
     },
     "agsci-2021-hl-q6ai": {
       "pages": [
         10
       ],
       "stripStem": true
+    },
+    "agsci-2021-hl-q6aii": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2021-hl-q6aiii": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2021-hl-q6bi": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2021-hl-q6biii": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2021-hl-q7a": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2021-hl-q7b": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2021-hl-q7c": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2021-hl-q8a": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2021-hl-q8b": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2021-hl-q8c": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2021-hl-q9b": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2021-hl-q9d": {
+      "pages": [
+        14
+      ]
     },
     "agsci-2021-ol-q13a-iii": {
       "kind": "text",
