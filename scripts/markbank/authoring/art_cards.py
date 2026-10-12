@@ -72,6 +72,16 @@ YEARS = tuple(range(2021, 2027))
 # checks each sits inside a drawn answer box, so no question wording can be
 # dropped by this rule.
 ANSWER_BOX_LABELS: dict[tuple[int, str, int], tuple[str, ...]] = {
+    # 2023: each labels the answer area for a heading, artwork or hat the
+    # printed part already names ("using the following headings: ...").
+    (2023, 'higher', 2): ('Imagery:', 'Mood:'),
+    (2023, 'higher', 3): ('Artwork:', 'Artist:'),
+    (2023, 'higher', 6): ('Style:', 'Composition and use of surface:'),
+    (2023, 'ordinary', 1): ('Colour, composition:',),
+    (2023, 'ordinary', 3): ('Imagery:', 'Composition:', 'Colour:'),
+    (2023, 'ordinary', 5): ('Lettering:', 'Imagery:', 'Colour:'),
+    (2023, 'ordinary', 6): ('Hat A – form, materials:', 'Hat B – form, materials:', 'Hat A – function:', 'Hat B – function:'),
+    (2023, 'ordinary', 7): ('Scale:', 'Treatment of the human figure:', 'Use of materials:'),
     # "Identify a contemporary living sculptor that you have studied ..."
     (2024, 'higher', 3): ('Name of sculptor:',),
     # "(b) Name an organisation ... Explain how this organisation could ..."
@@ -88,7 +98,7 @@ ANSWER_BOX_LABELS: dict[tuple[int, str, int], tuple[str, ...]] = {
 # Years whose SEC-attributed strings are all lifted from the printed page and
 # gated by tests/test_art_sec_wording.py. The other years keep the earlier
 # condensed descriptors (factory.ts) until their own audit.
-AUDITED_YEARS = (2024, 2025, 2026)
+AUDITED_YEARS = (2023, 2024, 2025, 2026)
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
@@ -457,6 +467,10 @@ SPACE_CHARS = ('\xa0', '\u2007', '\u202f')
 LIGATURES = {
     '\u00ad': '', '\ufb00': 'ff', '\ufb01': 'fi', '\ufb02': 'fl',
     '\ufb03': 'ffi', '\ufb04': 'ffl',
+    # Wingdings 0xFC, stored at 0xF000 + its code: the printed tick in
+    # "Use a tick (✓) to indicate your answer" (2023 OL Q5(b)), checked on the
+    # rendered page; derive_glyphs.py maps the same code point the same way.
+    '\uf0fc': '✓',
 }
 
 
@@ -576,11 +590,15 @@ def clean_prompt(value: str) -> str:
     value = re.sub(r'(?m)^\s*[•]\s*', '\n@@BULLET@@ ', value)
     value = re.sub(r'(?mi)^\s*(\([abc]\))\s+', r'\n@@PART@@\1 ', value)
     value = re.sub(r'(?mi)^\s*and\s*$', '\n@@AND@@\n', value)
+    # Tick-box options printed on their own line ("Yes [ ]  No [ ]") keep it,
+    # so they do not run into the sentences either side (2023 OL Q5(b)).
+    value = re.sub(r'(?m)^[ \t]*Yes[ \t]+No[ \t]*$', '\n@@BOXES@@\n', value)
     value = re.sub(r'[ \t]+', ' ', value)
     value = re.sub(r'\s*\n\s*', ' ', value)
     value = value.replace('@@BULLET@@ ', '\n• ')
     value = value.replace('@@PART@@', '\n')
     value = value.replace('@@AND@@', '\nand')
+    value = re.sub(r'\s*@@BOXES@@\s*', '\nYes No\n', value)
     value = re.sub(r'\s+([?.!,;:])', r'\1', value)
     value = re.sub(r'[ \t]+\n', '\n', value)
     value = re.sub(r'\n[ \t]+', '\n', value)
@@ -1066,6 +1084,8 @@ def printed_requirements(question_text: str, assessment: str, stem: str | None =
         lines = lines[1:]
     asks = [sentence for sentence in re.split(r'(?<=[.?!])\s+', stem or '')
             if re.match(r'^(?:Name|Identify|Choose|Select)\b', sentence)]
+    # A tick-box options line is where the answer goes, not an ask.
+    lines = [line for line in lines if line.strip() != 'Yes No']
     out = asks + [re.sub(r'^•\s*', '', line).strip() for line in lines]
     if not out or any(not line for line in out):
         raise AssertionError(f'no printed requirement lines in {question_text!r}')

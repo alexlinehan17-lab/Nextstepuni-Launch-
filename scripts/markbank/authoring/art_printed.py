@@ -38,8 +38,9 @@ def clean(text: str) -> str:
 
 
 def normal(text: str) -> str:
-    """Comparison form: hyphen code points and spacing are layout, not words."""
-    text = text.replace('‐', '-').replace('‑', '-').replace('\xa0', ' ')
+    """Comparison form: hyphen code points and spacing are layout, not words,
+    and a Wingdings tick (0xF000 + 0xFC) is the tick it draws."""
+    text = text.replace('‐', '-').replace('‑', '-').replace('\xa0', ' ').replace('\uf0fc', '✓')
     return ' '.join(text.split())
 
 

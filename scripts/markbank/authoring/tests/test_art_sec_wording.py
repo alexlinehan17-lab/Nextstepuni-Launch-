@@ -58,6 +58,8 @@ class ArtSecWordingTest(unittest.TestCase):
             for kind, text in checks:
                 if not P.printed(paper, text):
                     failures.append((card['id'], kind, text))
+            if re.search('[\ue000-\uf8ff]', json.dumps(card, ensure_ascii=False)):
+                failures.append((card['id'], 'private-use glyph', ''))
             if not page_has(paper, card['paperPage'], lines[0]):
                 failures.append((card['id'], 'paperPage', card['paperPage']))
             for criterion in card.get('criteria', []):
@@ -118,6 +120,14 @@ class ArtSecWordingTest(unittest.TestCase):
     # art_cards.ANSWER_BOX_LABELS, so no question wording can be dropped by
     # the same rule without this list changing.
     PINNED_LABELS = {
+        (2023, 'higher', 2): ('Imagery:', 'Mood:'),
+        (2023, 'higher', 3): ('Artwork:', 'Artist:'),
+        (2023, 'higher', 6): ('Style:', 'Composition and use of surface:'),
+        (2023, 'ordinary', 1): ('Colour, composition:',),
+        (2023, 'ordinary', 3): ('Imagery:', 'Composition:', 'Colour:'),
+        (2023, 'ordinary', 5): ('Lettering:', 'Imagery:', 'Colour:'),
+        (2023, 'ordinary', 6): ('Hat A – form, materials:', 'Hat B – form, materials:', 'Hat A – function:', 'Hat B – function:'),
+        (2023, 'ordinary', 7): ('Scale:', 'Treatment of the human figure:', 'Use of materials:'),
         (2024, 'higher', 3): ('Name of sculptor:',),
         (2024, 'ordinary', 2): ('Name of organisation:', 'Explain:'),
         (2024, 'ordinary', 6): ('Name of film, TV show or theatrical performance:', 'Name of character:',
@@ -157,6 +167,10 @@ class ArtSecWordingTest(unittest.TestCase):
                 continue
             number = int(re.search(r'Q(\d+)', card['questionRef']).group(1))
             allowed = atlas.get((card['year'], card['level'][0], number))
+            if allowed == {'art-6-4'}:
+                # The Atlas files the question only under the catch-all
+                # (2023 HL Section A); the card needs a specific Section A topic.
+                allowed = {'art-6-0', 'art-6-1', 'art-6-2', 'art-6-3'}
             if not allowed or card['topicId'] not in allowed:
                 failures.append((card['id'], card['topicId'], sorted(allowed or [])))
         self.assertEqual(failures, [])

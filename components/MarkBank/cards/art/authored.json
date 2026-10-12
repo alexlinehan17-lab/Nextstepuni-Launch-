@@ -3,11 +3,500 @@
   "corpus": "All separately marked written-examination tasks, 2021–2026; a printed choice is one card",
   "cardCount": 446,
   "auditedYears": [
+    2023,
     2024,
     2025,
     2026
   ],
   "descriptors": {
+    "2023-higher": {
+      "short": {
+        "page": 17,
+        "lead": "The response shows evidence of the following where appropriate:",
+        "bands": {
+          "low": [
+            "Limited understanding of the requirements of the question.",
+            "Limited application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A limited level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Limited analysis, interpretation and evaluation of any given stimulus material.",
+            "Limited presentation of accurate and/or relevant arguments, explanations and ideas which are based on little or no evidence.",
+            "Presentation of an answer with limited and/or no coherence and focus.",
+            "Use of visual art terminology and/or sketches with limited accuracy and relevance."
+          ],
+          "moderate": [
+            "Good understanding of the requirements of the question.",
+            "Good application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A good level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Good analysis, interpretation and evaluation of any given stimulus material.",
+            "Good presentation of accurate and relevant arguments, explanations and ideas which are in the main based on evidence.",
+            "Presentation of a good coherent and focused answer.",
+            "Good, accurate and relevant use of visual art terminology and/ or sketches."
+          ],
+          "high": [
+            "Thorough understanding of the requirements of the question.",
+            "Thorough application of accurate and well-informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A thorough level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Consistent and well-informed analysis, interpretation and evaluation of any given stimulus material.",
+            "Thorough presentation of accurate and relevant arguments, explanations and ideas based on evidence.",
+            "Thorough presentation of a coherent and focused answer.",
+            "Thorough, accurate and relevant use of visual art terminology and/ or sketches."
+          ]
+        }
+      },
+      "long": [
+        {
+          "id": "coherence-focus",
+          "label": "Coherence and focus",
+          "maxMarks": 10,
+          "page": 22,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited ability to understand the demands of the question and to create an answer based on the question posed.",
+                "A limited ability to form and present reasonable, sequential and logical arguments and ideas. Work is based on very limited or no evidence.",
+                "A limited ability to articulate a personal understanding in the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good ability to understand the demands of the question and to create an appropriate answer based on the question posed.",
+                "A good ability to form and present reasonable, sequential and logical arguments and ideas which are for the most part based on evidence.",
+                "A good ability to articulate a personal understanding in the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough ability to understand the demands of the question and to create a high-level answer based on the question posed.",
+                "A thorough ability to form and present reasonable, sequential and logical arguments and ideas which are clearly based on evidence.",
+                "A thorough ability to articulate a personal understanding in the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "subject-knowledge",
+          "label": "Subject Knowledge",
+          "maxMarks": 20,
+          "page": 23,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "A limited level of recall, knowledge and understanding of the section of focus.",
+                "A limited level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A limited critical or perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "guidance": [
+                "A good level of recall, knowledge and understanding of the section of focus.",
+                "A good level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A good critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "high": {
+              "marks": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "A thorough level of recall, knowledge and understanding of the section of focus.",
+                "A thorough level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A thorough critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            }
+          }
+        },
+        {
+          "id": "relevant-examples",
+          "label": "Relevant Examples",
+          "maxMarks": 10,
+          "page": 24,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited choice of artists, and examples of artworks/artefacts with limited relevance/not recognised and support a very limited response.",
+                "A limited understanding of the selected artists used and a limited understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good choice of artists, and examples of artworks/artefacts that are mostly relevant/recognised and support a mostly accurate response.",
+                "A good understanding of the selected artists used and a good understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough choice of artists, and examples of artworks/artefacts that are most relevant/recognised and support a highly accurate response.",
+                "A thorough understanding of the selected artists used and a thorough understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "visual-language",
+          "label": "Visual Language (terminology and/or sketches)",
+          "maxMarks": 10,
+          "page": 25,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited use and understanding of terminology to communicate ideas.",
+                "If sketches are used: the sketches demonstrate a limited ability to support the answer and communicate ideas."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good use and understanding of terminology which is accurate and relevant and adds to the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a good ability to support the answer and communicate ideas. The sketches are mostly accurate and relevant."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough use and understanding of terminology which is accurate, relevant and supports the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a thorough ability to support the answer and communicate ideas. The sketches are thorough, accurate and relevant."
+              ]
+            }
+          }
+        }
+      ],
+      "notes": {
+        "current-short-descriptors": {
+          "page": 16,
+          "text": [
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        },
+        "current-long-descriptors": {
+          "page": 21,
+          "text": [
+            "Candidates may choose from a wide range of relevant examples and content to answer a question. Relevant content must be credited.",
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        }
+      }
+    },
+    "2023-ordinary": {
+      "short": {
+        "page": 17,
+        "lead": "The response shows evidence of the following where appropriate:",
+        "bands": {
+          "low": [
+            "Limited understanding of the requirements of the question.",
+            "Limited application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A limited level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Limited analysis, interpretation and evaluation of any given stimulus material.",
+            "Limited presentation of accurate and/or relevant arguments, explanations and ideas which are based on little or no evidence.",
+            "Presentation of an answer with limited and/or no coherence and focus.",
+            "Use of visual art terminology and/or sketches with limited accuracy and relevance."
+          ],
+          "moderate": [
+            "Good understanding of the requirements of the question.",
+            "Good application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A good level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Good analysis, interpretation and evaluation of any given stimulus material.",
+            "Good presentation of accurate and relevant arguments, explanations and ideas which are in the main based on evidence.",
+            "Presentation of a coherent and focused answer.",
+            "Good accurate and relevant use of visual art terminology and/ or sketches."
+          ],
+          "high": [
+            "Thorough understanding of the requirements of the question.",
+            "Thorough application of accurate and well-informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A thorough level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Consistent and well-informed analysis, interpretation and evaluation of any given stimulus material.",
+            "Thorough presentation of accurate and relevant arguments, explanations and ideas based on evidence.",
+            "Thorough presentation of a coherent and focused answer.",
+            "Thorough, accurate and relevant use of visual art terminology and/ or sketches."
+          ]
+        }
+      },
+      "long": [
+        {
+          "id": "coherence-focus",
+          "label": "Coherence and focus",
+          "maxMarks": 10,
+          "page": 22,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited ability to understand the demands of the question and to create an answer based on the question posed.",
+                "A limited ability to form and present reasonable, sequential and logical arguments and ideas. Work is based on very limited or no evidence.",
+                "A limited ability to articulate a personal understanding in the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good ability to understand the demands of the question and to create an appropriate answer based on the question posed.",
+                "A good ability to form and present reasonable, sequential and logical arguments and ideas which are for the most part based on evidence.",
+                "A good ability to articulate a personal understanding in the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough ability to understand the demands of the question and to create a high-level answer based on the question posed.",
+                "A thorough ability to form and present reasonable, sequential and logical arguments and ideas which are clearly based on evidence.",
+                "A thorough ability to articulate a personal understanding in the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "subject-knowledge",
+          "label": "Subject Knowledge",
+          "maxMarks": 20,
+          "page": 23,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "A limited level of recall, knowledge and understanding of the section of focus.",
+                "A limited level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A limited critical or perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "guidance": [
+                "A good level of recall, knowledge and understanding of the section of focus.",
+                "A good level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A good critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "high": {
+              "marks": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "A thorough level of recall, knowledge and understanding of the section of focus.",
+                "A thorough level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A thorough critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            }
+          }
+        },
+        {
+          "id": "relevant-examples",
+          "label": "Relevant Examples",
+          "maxMarks": 10,
+          "page": 24,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited choice of artists, and examples of artworks/artefacts with limited relevance/not recognised and support a very limited response.",
+                "A limited understanding of the selected artists used and a limited understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good choice of artists, and examples of artworks/artefacts that are mostly relevant/recognised and support a mostly accurate response.",
+                "A good understanding of the selected artists used and a good understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough choice of artists and examples of artworks/artefacts that are most relevant/recognised and support a highly accurate response.",
+                "A thorough understanding of the selected artists used and a thorough understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "visual-language",
+          "label": "Visual Language (terminology and/or sketches)",
+          "maxMarks": 10,
+          "page": 25,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited use and understanding of terminology to communicate ideas.",
+                "If sketches are used: the sketches demonstrate a limited ability to support the answer and communicate ideas."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good use and understanding of terminology which is accurate and relevant and adds to the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a good ability to support the answer and communicate ideas. The sketches are mostly accurate and relevant."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough use and understanding of terminology which is accurate, relevant and supports the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a thorough ability to support the answer and communicate ideas. The sketches are thorough, accurate and relevant."
+              ]
+            }
+          }
+        }
+      ],
+      "notes": {
+        "current-short-descriptors": {
+          "page": 16,
+          "text": [
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        },
+        "current-long-descriptors": {
+          "page": 21,
+          "text": [
+            "Candidates may choose from a wide range of relevant examples and content to answer a question. Relevant content must be credited.",
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        }
+      }
+    },
     "2024-higher": {
       "short": {
         "page": 17,
@@ -17057,7 +17546,11 @@
       "paperPage": 3,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 5,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q1-hl-a",
       "taskRequirements": [
@@ -17119,7 +17612,11 @@
       "paperPage": 3,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 5,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q1-hl-b",
       "taskRequirements": [
@@ -17177,15 +17674,19 @@
       "level": "higher",
       "section": "A",
       "questionRef": "2023 HL Q2(a)",
-      "questionText": "(a) Describe this still using the following headings: imagery, mood. Imagery: Mood:",
+      "questionText": "(a) Describe this still using the following headings: imagery, mood.",
       "paperPage": 4,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 6,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q2-hl-a",
       "taskRequirements": [
-        "(a) Describe this still using the following headings: imagery, mood. Imagery: Mood:"
+        "(a) Describe this still using the following headings: imagery, mood."
       ],
       "assessment": "current-short-descriptors",
       "criteria": [
@@ -17245,7 +17746,11 @@
       "paperPage": 4,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 4,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q2-hl-b",
       "taskRequirements": [
@@ -17305,10 +17810,15 @@
       "paperPage": 5,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 4,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-2",
       "conceptId": "art-2023-q3-hl-a",
       "taskRequirements": [
+        "Identify an artwork by a named artist which is based on art as social commentary and answer the following questions.",
         "(a) Outline the issues communicated by the artwork."
       ],
       "assessment": "current-short-descriptors",
@@ -17342,7 +17852,7 @@
           }
         }
       ],
-      "stem": "Identify an artwork by a named artist which is based on art as social commentary and answer the following questions. Artwork: Artist:"
+      "stem": "Identify an artwork by a named artist which is based on art as social commentary and answer the following questions."
     },
     {
       "id": "art-2023-hl-q3-b",
@@ -17354,10 +17864,15 @@
       "paperPage": 5,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 6,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-2",
       "conceptId": "art-2023-q3-hl-b",
       "taskRequirements": [
+        "Identify an artwork by a named artist which is based on art as social commentary and answer the following questions.",
         "(b) How did this artwork communicate the issues outlined in part (a) above? Refer to subject matter, media and materials, processes, and location, as appropriate."
       ],
       "assessment": "current-short-descriptors",
@@ -17395,7 +17910,7 @@
           }
         }
       ],
-      "stem": "Identify an artwork by a named artist which is based on art as social commentary and answer the following questions. Artwork: Artist:"
+      "stem": "Identify an artwork by a named artist which is based on art as social commentary and answer the following questions."
     },
     {
       "id": "art-2023-hl-q4-a",
@@ -17407,7 +17922,11 @@
       "paperPage": 6,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 6,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-3",
       "conceptId": "art-2023-q4-hl-a",
       "taskRequirements": [
@@ -17471,7 +17990,11 @@
       "paperPage": 6,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 4,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-3",
       "conceptId": "art-2023-q4-hl-b",
       "taskRequirements": [
@@ -17531,7 +18054,11 @@
       "paperPage": 7,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 5,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2023-q5-hl-a",
       "taskRequirements": [
@@ -17582,7 +18109,11 @@
       "paperPage": 7,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 5,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2023-q5-hl-b",
       "taskRequirements": [
@@ -17629,15 +18160,19 @@
       "level": "higher",
       "section": "A",
       "questionRef": "2023 HL Q6(a)",
-      "questionText": "(a) Describe the artwork on this footwear using the following headings: style, composition and use of surface. Style: Composition and use of surface:",
+      "questionText": "(a) Describe the artwork on this footwear using the following headings: style, composition and use of surface.",
       "paperPage": 8,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 6,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q6-hl-a",
       "taskRequirements": [
-        "(a) Describe the artwork on this footwear using the following headings: style, composition and use of surface. Style: Composition and use of surface:"
+        "(a) Describe the artwork on this footwear using the following headings: style, composition and use of surface."
       ],
       "assessment": "current-short-descriptors",
       "criteria": [
@@ -17697,7 +18232,11 @@
       "paperPage": 8,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 4,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q6-hl-b",
       "taskRequirements": [
@@ -17757,7 +18296,11 @@
       "paperPage": 9,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 6,
-      "schemePage": 20,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
       "topicId": "art-6-3",
       "conceptId": "art-2023-q7-hl-a",
       "taskRequirements": [
@@ -17821,7 +18364,11 @@
       "paperPage": 9,
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 4,
-      "schemePage": 20,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
       "topicId": "art-6-3",
       "conceptId": "art-2023-q7-hl-b",
       "taskRequirements": [
@@ -17882,6 +18429,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -17890,7 +18438,9 @@
       "topicId": "art-4-0",
       "conceptId": "art-2023-q8-hl-response",
       "taskRequirements": [
-        "Romanesque and Gothic (c.1000 – 1500s) Discuss the influence of pilgrimage on the art and architecture of the Romanesque period.; Refer to specific examples of art and architecture in your answer.; Include discussion of context, art elements and design principles, subject matter, materials and techniques."
+        "Discuss the influence of pilgrimage on the art and architecture of the Romanesque period.",
+        "Refer to specific examples of art and architecture in your answer.",
+        "Include discussion of context, art elements and design principles, subject matter, materials and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -17905,6 +18455,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -17913,7 +18464,9 @@
       "topicId": "art-4-1",
       "conceptId": "art-2023-q9-hl-response",
       "taskRequirements": [
-        "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s) Discuss how representation of the human form developed during the period.; Refer to named artists and their artworks in your answer.; Include discussion of context, art elements and design principles, innovation and invention."
+        "Discuss how representation of the human form developed during the period.",
+        "Refer to named artists and their artworks in your answer.",
+        "Include discussion of context, art elements and design principles, innovation and invention."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -17928,6 +18481,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -17936,7 +18490,9 @@
       "topicId": "art-4-2",
       "conceptId": "art-2023-q10-hl-response",
       "taskRequirements": [
-        "Baroque (c.1600 – 1700s) What influence did religion have on the art and/or architecture of the Baroque period?; Refer to named artists and their artworks and/or their architecture in your answer.; Include discussion of context, art elements and design principles, materials and techniques."
+        "What influence did religion have on the art and/or architecture of the Baroque period?",
+        "Refer to named artists and their artworks and/or their architecture in your answer.",
+        "Include discussion of context, art elements and design principles, materials and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -17951,6 +18507,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -17959,7 +18516,9 @@
       "topicId": "art-4-3",
       "conceptId": "art-2023-q11-hl-response",
       "taskRequirements": [
-        "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s) Discuss how innovation and invention impacted on the art of this period.; Refer to named artists and their artworks in your answer.; Include discussion of context, subject matter, art elements and design principles, materials and techniques."
+        "Discuss how innovation and invention impacted on the art of this period.",
+        "Refer to named artists and their artworks in your answer.",
+        "Include discussion of context, subject matter, art elements and design principles, materials and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -17974,6 +18533,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -17982,7 +18542,9 @@
       "topicId": "art-4-4",
       "conceptId": "art-2023-q12-hl-response",
       "taskRequirements": [
-        "Modernism (c.1900 – 1960s) Discuss how artists moved away from realistic depictions of subject matter in the first half of the twentieth century.; Refer to named artists and their artworks in your answer.; Include discussion of context, art elements and design principles, materials and techniques."
+        "Discuss how artists moved away from realistic depictions of subject matter in the first half of the twentieth century.",
+        "Refer to named artists and their artworks in your answer.",
+        "Include discussion of context, art elements and design principles, materials and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -17997,6 +18559,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -18005,7 +18568,9 @@
       "topicId": "art-4-5",
       "conceptId": "art-2023-q13-hl-response",
       "taskRequirements": [
-        "Post 1960 Discuss the work of two conceptual artists from this period who embraced innovation and invention.; Refer to two named artists and their artworks in your answer.; Include discussion of context, art elements and design principles, media and processes."
+        "Discuss the work of two conceptual artists from this period who embraced innovation and invention.",
+        "Refer to two named artists and their artworks in your answer.",
+        "Include discussion of context, art elements and design principles, media and processes."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -18020,6 +18585,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -18028,7 +18594,9 @@
       "topicId": "art-5-0",
       "conceptId": "art-2023-q14-hl-response",
       "taskRequirements": [
-        "Pre-Christian (c.4000 BCE – 500 CE) How did the spiritual beliefs of Stone Age people influence the form and decoration of their built structures?; Refer in your answer to named structures.; Include discussion of context, materials and techniques, art elements and design principles, innovation and invention."
+        "How did the spiritual beliefs of Stone Age people influence the form and decoration of their built structures?",
+        "Refer in your answer to named structures.",
+        "Include discussion of context, materials and techniques, art elements and design principles, innovation and invention."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -18043,6 +18611,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -18051,7 +18620,9 @@
       "topicId": "art-5-1",
       "conceptId": "art-2023-q15-hl-response",
       "taskRequirements": [
-        "Insular Art (c.500 – 1100s) Discuss the use of interlace in manuscripts, metalwork and sculpture of the period.; Refer in your answer to named examples.; Include discussion of context, materials and techniques, art elements and design principles."
+        "Discuss the use of interlace in manuscripts, metalwork and sculpture of the period.",
+        "Refer in your answer to named examples.",
+        "Include discussion of context, materials and techniques, art elements and design principles."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -18066,6 +18637,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -18074,7 +18646,9 @@
       "topicId": "art-5-2",
       "conceptId": "art-2023-q16-hl-response",
       "taskRequirements": [
-        "Late Medieval Architecture and Art (c.1100 – 1550s) Discuss the architectural features and sculptural decoration of religious structures from this period.; Refer in your answer to named examples.; Include discussion of context, materials and techniques, art elements and design principles."
+        "Discuss the architectural features and sculptural decoration of religious structures from this period.",
+        "Refer in your answer to named examples.",
+        "Include discussion of context, materials and techniques, art elements and design principles."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -18089,6 +18663,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -18097,7 +18672,9 @@
       "topicId": "art-5-3",
       "conceptId": "art-2023-q17-hl-response",
       "taskRequirements": [
-        "Georgian period (c.1720 – 1800s) Discuss the development of Georgian domestic architecture and decoration during this period.; Refer to specific examples of town houses and/or country houses in your answer.; Include discussion of context, innovation and invention, art elements and design principles."
+        "Discuss the development of Georgian domestic architecture and decoration during this period.",
+        "Refer to specific examples of town houses and/or country houses in your answer.",
+        "Include discussion of context, innovation and invention, art elements and design principles."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -18112,6 +18689,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -18120,7 +18698,9 @@
       "topicId": "art-5-4",
       "conceptId": "art-2023-q18-hl-response",
       "taskRequirements": [
-        "Irish Art and Modernism (c.1880 – 1960s) Analyse how themes of nationalism were explored and represented in Irish Art during this period.; Refer to named artists and their artworks in your answer.; Include discussion of context, materials and techniques, art elements and design principles."
+        "Analyse how themes of nationalism were explored and represented in Irish Art during this period.",
+        "Refer to named artists and their artworks in your answer.",
+        "Include discussion of context, materials and techniques, art elements and design principles."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -18135,6 +18715,7 @@
       "paperFileid": "LC014ALP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -18143,7 +18724,9 @@
       "topicId": "art-5-5",
       "conceptId": "art-2023-q19-hl-response",
       "taskRequirements": [
-        "Post 1960 Discuss the work of two Post 1960 Irish artists, whose work communicates any social and/or political messages.; Refer to two named artists and their artworks in your answer.; Include discussion of context, innovation and invention, materials, art elements and design principles."
+        "Discuss the work of two Post 1960 Irish artists, whose work communicates any social and/or political messages.",
+        "Refer to two named artists and their artworks in your answer.",
+        "Include discussion of context, innovation and invention, materials, art elements and design principles."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -18153,15 +18736,19 @@
       "level": "ordinary",
       "section": "A",
       "questionRef": "2023 OL Q1(a)",
-      "questionText": "(a) Describe this painting using the following headings: colour, composition. Colour, composition:",
+      "questionText": "(a) Describe this painting using the following headings: colour, composition.",
       "paperPage": 3,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 6,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q1-ol-a",
       "taskRequirements": [
-        "(a) Describe this painting using the following headings: colour, composition. Colour, composition:"
+        "(a) Describe this painting using the following headings: colour, composition."
       ],
       "assessment": "current-short-descriptors",
       "criteria": [
@@ -18221,7 +18808,11 @@
       "paperPage": 3,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 4,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q1-ol-b",
       "taskRequirements": [
@@ -18281,7 +18872,11 @@
       "paperPage": 4,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 6,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2023-q2-ol-a",
       "taskRequirements": [
@@ -18333,7 +18928,11 @@
       "paperPage": 4,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 4,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2023-q2-ol-b",
       "taskRequirements": [
@@ -18377,15 +18976,19 @@
       "level": "ordinary",
       "section": "A",
       "questionRef": "2023 OL Q3(a)",
-      "questionText": "(a) Describe this mural using the following headings: imagery, composition, colour. Imagery: Composition: Colour:",
+      "questionText": "(a) Describe this mural using the following headings: imagery, composition, colour.",
       "paperPage": 5,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 6,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-2",
       "conceptId": "art-2023-q3-ol-a",
       "taskRequirements": [
-        "(a) Describe this mural using the following headings: imagery, composition, colour. Imagery: Composition: Colour:"
+        "(a) Describe this mural using the following headings: imagery, composition, colour."
       ],
       "assessment": "current-short-descriptors",
       "criteria": [
@@ -18445,7 +19048,11 @@
       "paperPage": 5,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 4,
-      "schemePage": 18,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
       "topicId": "art-6-2",
       "conceptId": "art-2023-q3-ol-b",
       "taskRequirements": [
@@ -18505,7 +19112,11 @@
       "paperPage": 6,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 5,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2023-q4-ol-a",
       "taskRequirements": [
@@ -18555,7 +19166,11 @@
       "paperPage": 6,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 5,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-0",
       "conceptId": "art-2023-q4-ol-b",
       "taskRequirements": [
@@ -18601,15 +19216,19 @@
       "level": "ordinary",
       "section": "A",
       "questionRef": "2023 OL Q5(a)",
-      "questionText": "(a) Describe this design using the following headings: lettering, imagery, colour. Lettering: Imagery: Colour:",
+      "questionText": "(a) Describe this design using the following headings: lettering, imagery, colour.",
       "paperPage": 7,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 6,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q5-ol-a",
       "taskRequirements": [
-        "(a) Describe this design using the following headings: lettering, imagery, colour. Lettering: Imagery: Colour:"
+        "(a) Describe this design using the following headings: lettering, imagery, colour."
       ],
       "assessment": "current-short-descriptors",
       "criteria": [
@@ -18665,15 +19284,20 @@
       "level": "ordinary",
       "section": "A",
       "questionRef": "2023 OL Q5(b)",
-      "questionText": "(b) Do you think this packaging design is effective? Use a tick () to indicate your answer. Yes No Give reasons for your answer.",
+      "questionText": "(b) Do you think this packaging design is effective? Use a tick (✓) to indicate your answer.\nYes No\nGive reasons for your answer.",
       "paperPage": 7,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 4,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q5-ol-b",
       "taskRequirements": [
-        "(b) Do you think this packaging design is effective? Use a tick () to indicate your answer. Yes No Give reasons for your answer."
+        "(b) Do you think this packaging design is effective? Use a tick (✓) to indicate your answer.",
+        "Give reasons for your answer."
       ],
       "assessment": "current-short-descriptors",
       "criteria": [
@@ -18725,15 +19349,19 @@
       "level": "ordinary",
       "section": "A",
       "questionRef": "2023 OL Q6(a)",
-      "questionText": "(a) Describe each hat using the following headings: form, materials. Hat A – form, materials: Hat B – form, materials:",
+      "questionText": "(a) Describe each hat using the following headings: form, materials.",
       "paperPage": 8,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 6,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q6-ol-a",
       "taskRequirements": [
-        "(a) Describe each hat using the following headings: form, materials. Hat A – form, materials: Hat B – form, materials:"
+        "(a) Describe each hat using the following headings: form, materials."
       ],
       "assessment": "current-short-descriptors",
       "criteria": [
@@ -18789,15 +19417,19 @@
       "level": "ordinary",
       "section": "A",
       "questionRef": "2023 OL Q6(b)",
-      "questionText": "(b) These hats have very different functions. What are the functions of each hat? Give reasons for your answer. Hat A – function: Hat B – function:",
+      "questionText": "(b) These hats have very different functions. What are the functions of each hat? Give reasons for your answer.",
       "paperPage": 8,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 4,
-      "schemePage": 19,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q6-ol-b",
       "taskRequirements": [
-        "(b) These hats have very different functions. What are the functions of each hat? Give reasons for your answer. Hat A – function: Hat B – function:"
+        "(b) These hats have very different functions. What are the functions of each hat? Give reasons for your answer."
       ],
       "assessment": "current-short-descriptors",
       "criteria": [
@@ -18849,15 +19481,19 @@
       "level": "ordinary",
       "section": "A",
       "questionRef": "2023 OL Q7(a)",
-      "questionText": "(a) Describe this sculpture using the following headings: scale, treatment of the human figure, use of materials. Scale: Treatment of the human figure: Use of materials:",
+      "questionText": "(a) Describe this sculpture using the following headings: scale, treatment of the human figure, use of materials.",
       "paperPage": 9,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 6,
-      "schemePage": 20,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q7-ol-a",
       "taskRequirements": [
-        "(a) Describe this sculpture using the following headings: scale, treatment of the human figure, use of materials. Scale: Treatment of the human figure: Use of materials:"
+        "(a) Describe this sculpture using the following headings: scale, treatment of the human figure, use of materials."
       ],
       "assessment": "current-short-descriptors",
       "criteria": [
@@ -18917,7 +19553,11 @@
       "paperPage": 9,
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 4,
-      "schemePage": 20,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
       "topicId": "art-6-1",
       "conceptId": "art-2023-q7-ol-b",
       "taskRequirements": [
@@ -18978,6 +19618,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -18986,7 +19627,9 @@
       "topicId": "art-4-0",
       "conceptId": "art-2023-q8-ol-response",
       "taskRequirements": [
-        "Romanesque and Gothic (c.1000 – 1500s) Give an account of the characteristics of Romanesque architecture and sculpture.; Refer to one named church or cathedral and one named sculpture.; Include discussion of context, art elements and design principles, materials and techniques."
+        "Give an account of the characteristics of Romanesque architecture and sculpture.",
+        "Refer to one named church or cathedral and one named sculpture.",
+        "Include discussion of context, art elements and design principles, materials and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -19001,6 +19644,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -19009,7 +19653,9 @@
       "topicId": "art-4-1",
       "conceptId": "art-2023-q9-ol-response",
       "taskRequirements": [
-        "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s) How did Humanism and its focus on the individual and the classical world impact on Renaissance Art?; Refer to named artists and two named artworks.; Include discussion of context, subject matter, innovation and invention."
+        "How did Humanism and its focus on the individual and the classical world impact on Renaissance Art?",
+        "Refer to named artists and two named artworks.",
+        "Include discussion of context, subject matter, innovation and invention."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -19024,6 +19670,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -19032,7 +19679,9 @@
       "topicId": "art-4-2",
       "conceptId": "art-2023-q10-ol-response",
       "taskRequirements": [
-        "Baroque (c.1600 – 1700s) How did the artwork of the Baroque period stir emotion in the viewer?; Refer to named artists and two named artworks.; Include discussion of subject matter, media and processes, art elements and design principles."
+        "How did the artwork of the Baroque period stir emotion in the viewer?",
+        "Refer to named artists and two named artworks.",
+        "Include discussion of subject matter, media and processes, art elements and design principles."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -19047,6 +19696,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -19055,7 +19705,9 @@
       "topicId": "art-4-3",
       "conceptId": "art-2023-q11-ol-response",
       "taskRequirements": [
-        "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s) How did the camera impact on the artwork of the period?; Refer to named artists and two named artworks.; Include discussion of subject matter, art elements and design principles, media and techniques."
+        "How did the camera impact on the artwork of the period?",
+        "Refer to named artists and two named artworks.",
+        "Include discussion of subject matter, art elements and design principles, media and techniques."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -19070,6 +19722,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -19078,7 +19731,9 @@
       "topicId": "art-4-4",
       "conceptId": "art-2023-q12-ol-response",
       "taskRequirements": [
-        "Modernism (c.1900 – 1960s) Identify and discuss the influences that shaped Modernism.; Refer to two named artists and their artworks.; Include discussion of context, media and techniques, art elements and design principles."
+        "Identify and discuss the influences that shaped Modernism.",
+        "Refer to two named artists and their artworks.",
+        "Include discussion of context, media and techniques, art elements and design principles."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -19093,6 +19748,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -19101,7 +19757,9 @@
       "topicId": "art-4-5",
       "conceptId": "art-2023-q13-ol-response",
       "taskRequirements": [
-        "Post 1960 Discuss the similarities and differences between the artworks of two artists from this period.; Refer to two named artists and at least one artwork from each.; Include discussion of context, theme, subject matter, art elements and design principles."
+        "Discuss the similarities and differences between the artworks of two artists from this period.",
+        "Refer to two named artists and at least one artwork from each.",
+        "Include discussion of context, theme, subject matter, art elements and design principles."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -19116,6 +19774,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -19124,7 +19783,9 @@
       "topicId": "art-5-0",
       "conceptId": "art-2023-q14-ol-response",
       "taskRequirements": [
-        "Pre-Christian (c.4000 BCE – 500 CE) Give an account of the development of Stone Age architecture in Ireland.; Refer in your answer to at least two named Stone Age structures.; Include discussion of context, decoration, materials and techniques, innovation and invention."
+        "Give an account of the development of Stone Age architecture in Ireland.",
+        "Refer in your answer to at least two named Stone Age structures.",
+        "Include discussion of context, decoration, materials and techniques, innovation and invention."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -19139,6 +19800,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -19147,7 +19809,9 @@
       "topicId": "art-5-1",
       "conceptId": "art-2023-q15-ol-response",
       "taskRequirements": [
-        "Insular Art (c.500 – 1100s) Give an account of the processes used in metalwork during this period in Ireland.; Refer in your answer to two named metal artefacts you have studied.; Include discussion of context, decoration, materials and techniques used."
+        "Give an account of the processes used in metalwork during this period in Ireland.",
+        "Refer in your answer to two named metal artefacts you have studied.",
+        "Include discussion of context, decoration, materials and techniques used."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -19162,6 +19826,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -19170,7 +19835,9 @@
       "topicId": "art-5-2",
       "conceptId": "art-2023-q16-ol-response",
       "taskRequirements": [
-        "Late Medieval Architecture and Art (c.1100 – 1550s) Discuss the decoration seen in the religious buildings of the period.; Refer in your answer to two named religious buildings you have studied.; Include discussion of context, structure, materials, techniques and decoration."
+        "Discuss the decoration seen in the religious buildings of the period.",
+        "Refer in your answer to two named religious buildings you have studied.",
+        "Include discussion of context, structure, materials, techniques and decoration."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -19185,6 +19852,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -19193,7 +19861,9 @@
       "topicId": "art-5-3",
       "conceptId": "art-2023-q17-ol-response",
       "taskRequirements": [
-        "Georgian period (c.1720 – 1800s) Compare a town house of the period with a country house of the period.; Refer to two specific buildings in your answer.; Include discussion of context, structure, materials, techniques and decoration."
+        "Compare a town house of the period with a country house of the period.",
+        "Refer to two specific buildings in your answer.",
+        "Include discussion of context, structure, materials, techniques and decoration."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -19208,6 +19878,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -19216,7 +19887,9 @@
       "topicId": "art-5-4",
       "conceptId": "art-2023-q18-ol-response",
       "taskRequirements": [
-        "Irish Art and Modernism (c.1880 – 1960s) Name one artist from this period and give an account of how a new approach to art elements and design principles influenced their work.; In your answer refer to two named works by your chosen artist.; Include discussion of context, innovation and invention, media and areas of practice."
+        "Name one artist from this period and give an account of how a new approach to art elements and design principles influenced their work.",
+        "In your answer refer to two named works by your chosen artist.",
+        "Include discussion of context, innovation and invention, media and areas of practice."
       ],
       "assessment": "current-long-descriptors"
     },
@@ -19231,6 +19904,7 @@
       "paperFileid": "LC014GLP000EV",
       "totalMarks": 50,
       "schemePage": [
+        21,
         22,
         23,
         24,
@@ -19239,7 +19913,9 @@
       "topicId": "art-5-5",
       "conceptId": "art-2023-q19-ol-response",
       "taskRequirements": [
-        "Post 1960 Name one important artist from the period and discuss their contribution to Irish art.; In your answer refer to two named works by your chosen artist.; Include discussion of context, subject matter, art elements and design principles, media and areas of practice."
+        "Name one important artist from the period and discuss their contribution to Irish art.",
+        "In your answer refer to two named works by your chosen artist.",
+        "Include discussion of context, subject matter, art elements and design principles, media and areas of practice."
       ],
       "assessment": "current-long-descriptors"
     },
