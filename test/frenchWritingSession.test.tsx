@@ -35,7 +35,7 @@ describe('French writing presentation', () => {
     expect(screen.getAllByText('2 / 4').length).toBeGreaterThan(0);
   });
   it('renders the actual language bands and an explicit attempt control for the form', () => {
-    const card = cards.find(c => c.id.endsWith('b1b-route-678'))! as SecRubricCard & { rubric: FrenchRubric };
+    const card = cards.find(c => c.id === 'fr-2026-ol-writing-b1b-route-6789')! as SecRubricCard & { rubric: FrenchRubric };
     const onScore = vi.fn();
     const { rerender } = render(<FrenchRubricPanel card={card} scores={{}} onScore={onScore} />);
     expect(screen.getByLabelText('Language mark')).toBeDisabled();

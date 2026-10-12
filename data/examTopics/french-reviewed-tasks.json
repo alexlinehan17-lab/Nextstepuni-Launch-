@@ -4278,7 +4278,7 @@
     "label": "Section B · Q1(b) · field 5"
   },
   {
-    "cardId": "fr-2021-ol-writing-b1b-route-678",
+    "cardId": "fr-2021-ol-writing-b1b-route-6789",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2021,
@@ -4286,7 +4286,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-678",
+    "n": "B1B-route-6789",
     "parent": "B1B",
     "topicIds": [
       "french-ordinary-fill-in-a-form"
@@ -4295,10 +4295,10 @@
     "pages": [
       13
     ],
-    "label": "Section B · Q1(b) · points 6, 7, 8"
+    "label": "Section B · Q1(b) · points 6, 7, 8, 9"
   },
   {
-    "cardId": "fr-2021-ol-writing-b1b-route-679",
+    "cardId": "fr-2021-ol-writing-b2a",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2021,
@@ -4306,67 +4306,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-679",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 6, 7, 9"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b1b-route-689",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-689",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 6, 8, 9"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b1b-route-789",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-789",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 7, 8, 9"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2a-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-123",
+    "n": "B2A",
     "parent": "B2A",
     "topicIds": [
       "french-ordinary-write-a-message"
@@ -4375,10 +4315,10 @@
     "pages": [
       14
     ],
-    "label": "Section B · Q2(a) · points 1, 2, 3"
+    "label": "Section B · Q2(a)"
   },
   {
-    "cardId": "fr-2021-ol-writing-b2a-route-124",
+    "cardId": "fr-2021-ol-writing-b2b",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2021,
@@ -4386,187 +4326,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-124",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2a-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-125",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2a-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-134",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2a-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-135",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2a-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-145",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2a-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-234",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2a-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-235",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2a-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-245",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2a-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-345",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2b-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-123",
+    "n": "B2B",
     "parent": "B2B",
     "topicIds": [
       "french-ordinary-write-a-postcard"
@@ -4575,10 +4335,10 @@
     "pages": [
       14
     ],
-    "label": "Section B · Q2(b) · points 1, 2, 3"
+    "label": "Section B · Q2(b)"
   },
   {
-    "cardId": "fr-2021-ol-writing-b2b-route-124",
+    "cardId": "fr-2021-ol-writing-b3a",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2021,
@@ -4586,187 +4346,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-124",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2b-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-125",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2b-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-134",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2b-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-135",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2b-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-145",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2b-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-234",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2b-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-235",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2b-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-245",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b2b-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-345",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3a-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-123",
+    "n": "B3A",
     "parent": "B3A",
     "topicIds": [
       "french-ordinary-write-a-diary"
@@ -4775,10 +4355,10 @@
     "pages": [
       16
     ],
-    "label": "Section B · Q3(a) · points 1, 2, 3"
+    "label": "Section B · Q3(a)"
   },
   {
-    "cardId": "fr-2021-ol-writing-b3a-route-124",
+    "cardId": "fr-2021-ol-writing-b3b",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2021,
@@ -4786,187 +4366,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-124",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3a-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-125",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3a-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-134",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3a-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-135",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3a-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-145",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3a-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-234",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3a-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-235",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3a-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-245",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3a-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-345",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3b-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-123",
+    "n": "B3B",
     "parent": "B3B",
     "topicIds": [
       "french-ordinary-write-a-letter"
@@ -4975,187 +4375,7 @@
     "pages": [
       16
     ],
-    "label": "Section B · Q3(b) · points 1, 2, 3"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3b-route-124",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-124",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3b-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-125",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3b-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-134",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3b-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-135",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3b-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-145",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3b-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-234",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3b-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-235",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3b-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-245",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2021-ol-writing-b3b-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2021,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-345",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 3, 4, 5"
+    "label": "Section B · Q3(b)"
   },
   {
     "cardId": "fr-2022-hl-writing-b1a",
@@ -5424,7 +4644,7 @@
     "label": "Section B · Q1(b) · field 5"
   },
   {
-    "cardId": "fr-2022-ol-writing-b1b-route-678",
+    "cardId": "fr-2022-ol-writing-b1b-route-6789",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2022,
@@ -5432,7 +4652,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-678",
+    "n": "B1B-route-6789",
     "parent": "B1B",
     "topicIds": [
       "french-ordinary-fill-in-a-form"
@@ -5441,10 +4661,10 @@
     "pages": [
       13
     ],
-    "label": "Section B · Q1(b) · points 6, 7, 8"
+    "label": "Section B · Q1(b) · points 6, 7, 8, 9"
   },
   {
-    "cardId": "fr-2022-ol-writing-b1b-route-679",
+    "cardId": "fr-2022-ol-writing-b2a",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2022,
@@ -5452,67 +4672,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-679",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 6, 7, 9"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b1b-route-689",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-689",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 6, 8, 9"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b1b-route-789",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-789",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 7, 8, 9"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2a-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-123",
+    "n": "B2A",
     "parent": "B2A",
     "topicIds": [
       "french-ordinary-write-a-message"
@@ -5521,10 +4681,10 @@
     "pages": [
       14
     ],
-    "label": "Section B · Q2(a) · points 1, 2, 3"
+    "label": "Section B · Q2(a)"
   },
   {
-    "cardId": "fr-2022-ol-writing-b2a-route-124",
+    "cardId": "fr-2022-ol-writing-b2b",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2022,
@@ -5532,187 +4692,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-124",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2a-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-125",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2a-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-134",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2a-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-135",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2a-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-145",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2a-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-234",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2a-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-235",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2a-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-245",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2a-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-345",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2b-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-123",
+    "n": "B2B",
     "parent": "B2B",
     "topicIds": [
       "french-ordinary-write-a-postcard"
@@ -5721,10 +4701,10 @@
     "pages": [
       14
     ],
-    "label": "Section B · Q2(b) · points 1, 2, 3"
+    "label": "Section B · Q2(b)"
   },
   {
-    "cardId": "fr-2022-ol-writing-b2b-route-124",
+    "cardId": "fr-2022-ol-writing-b3a",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2022,
@@ -5732,187 +4712,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-124",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2b-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-125",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2b-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-134",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2b-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-135",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2b-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-145",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2b-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-234",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2b-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-235",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2b-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-245",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b2b-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-345",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3a-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-123",
+    "n": "B3A",
     "parent": "B3A",
     "topicIds": [
       "french-ordinary-write-a-diary"
@@ -5921,10 +4721,10 @@
     "pages": [
       16
     ],
-    "label": "Section B · Q3(a) · points 1, 2, 3"
+    "label": "Section B · Q3(a)"
   },
   {
-    "cardId": "fr-2022-ol-writing-b3a-route-124",
+    "cardId": "fr-2022-ol-writing-b3b",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2022,
@@ -5932,187 +4732,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-124",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3a-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-125",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3a-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-134",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3a-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-135",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3a-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-145",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3a-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-234",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3a-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-235",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3a-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-245",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3a-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-345",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3b-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-123",
+    "n": "B3B",
     "parent": "B3B",
     "topicIds": [
       "french-ordinary-write-a-letter"
@@ -6121,187 +4741,7 @@
     "pages": [
       16
     ],
-    "label": "Section B · Q3(b) · points 1, 2, 3"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3b-route-124",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-124",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3b-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-125",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3b-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-134",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3b-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-135",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3b-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-145",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3b-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-234",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3b-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-235",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3b-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-245",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2022-ol-writing-b3b-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2022,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-345",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 3, 4, 5"
+    "label": "Section B · Q3(b)"
   },
   {
     "cardId": "fr-2023-hl-writing-b1a",
@@ -6572,7 +5012,7 @@
     "label": "Section B · Q1(b) · field 5"
   },
   {
-    "cardId": "fr-2023-ol-writing-b1b-route-678",
+    "cardId": "fr-2023-ol-writing-b1b-route-6789",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2023,
@@ -6580,7 +5020,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-678",
+    "n": "B1B-route-6789",
     "parent": "B1B",
     "topicIds": [
       "french-ordinary-fill-in-a-form"
@@ -6589,10 +5029,10 @@
     "pages": [
       13
     ],
-    "label": "Section B · Q1(b) · points 6, 7, 8"
+    "label": "Section B · Q1(b) · points 6, 7, 8, 9"
   },
   {
-    "cardId": "fr-2023-ol-writing-b1b-route-679",
+    "cardId": "fr-2023-ol-writing-b2a",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2023,
@@ -6600,67 +5040,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-679",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 6, 7, 9"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b1b-route-689",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-689",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 6, 8, 9"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b1b-route-789",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-789",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 7, 8, 9"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2a-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-123",
+    "n": "B2A",
     "parent": "B2A",
     "topicIds": [
       "french-ordinary-write-a-message"
@@ -6669,10 +5049,10 @@
     "pages": [
       14
     ],
-    "label": "Section B · Q2(a) · points 1, 2, 3"
+    "label": "Section B · Q2(a)"
   },
   {
-    "cardId": "fr-2023-ol-writing-b2a-route-124",
+    "cardId": "fr-2023-ol-writing-b2b",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2023,
@@ -6680,187 +5060,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-124",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2a-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-125",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2a-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-134",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2a-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-135",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2a-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-145",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2a-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-234",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2a-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-235",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2a-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-245",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2a-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-345",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2b-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-123",
+    "n": "B2B",
     "parent": "B2B",
     "topicIds": [
       "french-ordinary-write-a-postcard"
@@ -6869,10 +5069,10 @@
     "pages": [
       14
     ],
-    "label": "Section B · Q2(b) · points 1, 2, 3"
+    "label": "Section B · Q2(b)"
   },
   {
-    "cardId": "fr-2023-ol-writing-b2b-route-124",
+    "cardId": "fr-2023-ol-writing-b3a",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2023,
@@ -6880,187 +5080,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-124",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2b-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-125",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2b-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-134",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2b-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-135",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2b-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-145",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2b-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-234",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2b-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-235",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2b-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-245",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b2b-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-345",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3a-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-123",
+    "n": "B3A",
     "parent": "B3A",
     "topicIds": [
       "french-ordinary-write-a-diary"
@@ -7069,10 +5089,10 @@
     "pages": [
       16
     ],
-    "label": "Section B · Q3(a) · points 1, 2, 3"
+    "label": "Section B · Q3(a)"
   },
   {
-    "cardId": "fr-2023-ol-writing-b3a-route-124",
+    "cardId": "fr-2023-ol-writing-b3b",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2023,
@@ -7080,187 +5100,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-124",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3a-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-125",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3a-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-134",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3a-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-135",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3a-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-145",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3a-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-234",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3a-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-235",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3a-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-245",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3a-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-345",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3b-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-123",
+    "n": "B3B",
     "parent": "B3B",
     "topicIds": [
       "french-ordinary-write-a-letter"
@@ -7269,187 +5109,7 @@
     "pages": [
       16
     ],
-    "label": "Section B · Q3(b) · points 1, 2, 3"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3b-route-124",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-124",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3b-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-125",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3b-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-134",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3b-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-135",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3b-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-145",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3b-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-234",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3b-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-235",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3b-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-245",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2023-ol-writing-b3b-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2023,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-345",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 3, 4, 5"
+    "label": "Section B · Q3(b)"
   },
   {
     "cardId": "fr-2024-hl-writing-b1a",
@@ -7718,7 +5378,7 @@
     "label": "Section B · Q1(b) · field 5"
   },
   {
-    "cardId": "fr-2024-ol-writing-b1b-route-678",
+    "cardId": "fr-2024-ol-writing-b1b-route-6789",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2024,
@@ -7726,7 +5386,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-678",
+    "n": "B1B-route-6789",
     "parent": "B1B",
     "topicIds": [
       "french-ordinary-fill-in-a-form"
@@ -7735,10 +5395,10 @@
     "pages": [
       13
     ],
-    "label": "Section B · Q1(b) · points 6, 7, 8"
+    "label": "Section B · Q1(b) · points 6, 7, 8, 9"
   },
   {
-    "cardId": "fr-2024-ol-writing-b1b-route-679",
+    "cardId": "fr-2024-ol-writing-b2a",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2024,
@@ -7746,67 +5406,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-679",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 6, 7, 9"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b1b-route-689",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-689",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 6, 8, 9"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b1b-route-789",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-789",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 7, 8, 9"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2a-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-123",
+    "n": "B2A",
     "parent": "B2A",
     "topicIds": [
       "french-ordinary-write-a-message"
@@ -7815,10 +5415,10 @@
     "pages": [
       14
     ],
-    "label": "Section B · Q2(a) · points 1, 2, 3"
+    "label": "Section B · Q2(a)"
   },
   {
-    "cardId": "fr-2024-ol-writing-b2a-route-124",
+    "cardId": "fr-2024-ol-writing-b2b",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2024,
@@ -7826,187 +5426,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-124",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2a-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-125",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2a-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-134",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2a-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-135",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2a-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-145",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2a-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-234",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2a-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-235",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2a-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-245",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2a-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-345",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2b-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-123",
+    "n": "B2B",
     "parent": "B2B",
     "topicIds": [
       "french-ordinary-write-a-postcard"
@@ -8015,10 +5435,10 @@
     "pages": [
       14
     ],
-    "label": "Section B · Q2(b) · points 1, 2, 3"
+    "label": "Section B · Q2(b)"
   },
   {
-    "cardId": "fr-2024-ol-writing-b2b-route-124",
+    "cardId": "fr-2024-ol-writing-b3a",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2024,
@@ -8026,187 +5446,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-124",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2b-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-125",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2b-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-134",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2b-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-135",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2b-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-145",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2b-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-234",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2b-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-235",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2b-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-245",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b2b-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-345",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3a-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-123",
+    "n": "B3A",
     "parent": "B3A",
     "topicIds": [
       "french-ordinary-write-a-diary"
@@ -8215,10 +5455,10 @@
     "pages": [
       16
     ],
-    "label": "Section B · Q3(a) · points 1, 2, 3"
+    "label": "Section B · Q3(a)"
   },
   {
-    "cardId": "fr-2024-ol-writing-b3a-route-124",
+    "cardId": "fr-2024-ol-writing-b3b",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2024,
@@ -8226,187 +5466,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-124",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3a-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-125",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3a-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-134",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3a-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-135",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3a-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-145",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3a-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-234",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3a-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-235",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3a-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-245",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3a-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-345",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3b-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-123",
+    "n": "B3B",
     "parent": "B3B",
     "topicIds": [
       "french-ordinary-write-a-letter"
@@ -8415,187 +5475,7 @@
     "pages": [
       16
     ],
-    "label": "Section B · Q3(b) · points 1, 2, 3"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3b-route-124",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-124",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3b-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-125",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3b-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-134",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3b-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-135",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3b-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-145",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3b-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-234",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3b-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-235",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3b-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-245",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2024-ol-writing-b3b-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2024,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-345",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 3, 4, 5"
+    "label": "Section B · Q3(b)"
   },
   {
     "cardId": "fr-2025-hl-writing-b1a",
@@ -8864,7 +5744,7 @@
     "label": "Section B · Q1(b) · field 5"
   },
   {
-    "cardId": "fr-2025-ol-writing-b1b-route-678",
+    "cardId": "fr-2025-ol-writing-b1b-route-6789",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2025,
@@ -8872,7 +5752,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-678",
+    "n": "B1B-route-6789",
     "parent": "B1B",
     "topicIds": [
       "french-ordinary-fill-in-a-form"
@@ -8881,10 +5761,10 @@
     "pages": [
       13
     ],
-    "label": "Section B · Q1(b) · points 6, 7, 8"
+    "label": "Section B · Q1(b) · points 6, 7, 8, 9"
   },
   {
-    "cardId": "fr-2025-ol-writing-b1b-route-679",
+    "cardId": "fr-2025-ol-writing-b2a",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2025,
@@ -8892,67 +5772,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-679",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 6, 7, 9"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b1b-route-689",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-689",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 6, 8, 9"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b1b-route-789",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-789",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 7, 8, 9"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2a-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-123",
+    "n": "B2A",
     "parent": "B2A",
     "topicIds": [
       "french-ordinary-write-a-message"
@@ -8961,10 +5781,10 @@
     "pages": [
       14
     ],
-    "label": "Section B · Q2(a) · points 1, 2, 3"
+    "label": "Section B · Q2(a)"
   },
   {
-    "cardId": "fr-2025-ol-writing-b2a-route-124",
+    "cardId": "fr-2025-ol-writing-b2b",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2025,
@@ -8972,187 +5792,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-124",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2a-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-125",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2a-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-134",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2a-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-135",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2a-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-145",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2a-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-234",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2a-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-235",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2a-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-245",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2a-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-345",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2b-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-123",
+    "n": "B2B",
     "parent": "B2B",
     "topicIds": [
       "french-ordinary-write-a-postcard"
@@ -9161,10 +5801,10 @@
     "pages": [
       14
     ],
-    "label": "Section B · Q2(b) · points 1, 2, 3"
+    "label": "Section B · Q2(b)"
   },
   {
-    "cardId": "fr-2025-ol-writing-b2b-route-124",
+    "cardId": "fr-2025-ol-writing-b3a",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2025,
@@ -9172,187 +5812,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-124",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2b-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-125",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2b-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-134",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2b-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-135",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2b-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-145",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2b-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-234",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2b-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-235",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2b-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-245",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b2b-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-345",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3a-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-123",
+    "n": "B3A",
     "parent": "B3A",
     "topicIds": [
       "french-ordinary-write-a-diary"
@@ -9361,10 +5821,10 @@
     "pages": [
       16
     ],
-    "label": "Section B · Q3(a) · points 1, 2, 3"
+    "label": "Section B · Q3(a)"
   },
   {
-    "cardId": "fr-2025-ol-writing-b3a-route-124",
+    "cardId": "fr-2025-ol-writing-b3b",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2025,
@@ -9372,187 +5832,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-124",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3a-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-125",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3a-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-134",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3a-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-135",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3a-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-145",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3a-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-234",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3a-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-235",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3a-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-245",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3a-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-345",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3b-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-123",
+    "n": "B3B",
     "parent": "B3B",
     "topicIds": [
       "french-ordinary-write-a-letter"
@@ -9561,187 +5841,7 @@
     "pages": [
       16
     ],
-    "label": "Section B · Q3(b) · points 1, 2, 3"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3b-route-124",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-124",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3b-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-125",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3b-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-134",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3b-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-135",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3b-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-145",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3b-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-234",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3b-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-235",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3b-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-245",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2025-ol-writing-b3b-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2025,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-345",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 3, 4, 5"
+    "label": "Section B · Q3(b)"
   },
   {
     "cardId": "fr-2026-hl-writing-b1a",
@@ -10010,7 +6110,7 @@
     "label": "Section B · Q1(b) · field 5"
   },
   {
-    "cardId": "fr-2026-ol-writing-b1b-route-678",
+    "cardId": "fr-2026-ol-writing-b1b-route-6789",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2026,
@@ -10018,7 +6118,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-678",
+    "n": "B1B-route-6789",
     "parent": "B1B",
     "topicIds": [
       "french-ordinary-fill-in-a-form"
@@ -10027,10 +6127,10 @@
     "pages": [
       13
     ],
-    "label": "Section B · Q1(b) · points 6, 7, 8"
+    "label": "Section B · Q1(b) · points 6, 7, 8, 9"
   },
   {
-    "cardId": "fr-2026-ol-writing-b1b-route-679",
+    "cardId": "fr-2026-ol-writing-b2a",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2026,
@@ -10038,67 +6138,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-679",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 6, 7, 9"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b1b-route-689",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-689",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 6, 8, 9"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b1b-route-789",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B1B-route-789",
-    "parent": "B1B",
-    "topicIds": [
-      "french-ordinary-fill-in-a-form"
-    ],
-    "topicId": "french-6-5",
-    "pages": [
-      13
-    ],
-    "label": "Section B · Q1(b) · points 7, 8, 9"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2a-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-123",
+    "n": "B2A",
     "parent": "B2A",
     "topicIds": [
       "french-ordinary-write-a-message"
@@ -10107,10 +6147,10 @@
     "pages": [
       14
     ],
-    "label": "Section B · Q2(a) · points 1, 2, 3"
+    "label": "Section B · Q2(a)"
   },
   {
-    "cardId": "fr-2026-ol-writing-b2a-route-124",
+    "cardId": "fr-2026-ol-writing-b2b",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2026,
@@ -10118,187 +6158,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-124",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2a-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-125",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2a-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-134",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2a-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-135",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2a-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-145",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2a-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-234",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2a-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-235",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2a-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-245",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2a-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2A-route-345",
-    "parent": "B2A",
-    "topicIds": [
-      "french-ordinary-write-a-message"
-    ],
-    "topicId": "french-6-2",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(a) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2b-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-123",
+    "n": "B2B",
     "parent": "B2B",
     "topicIds": [
       "french-ordinary-write-a-postcard"
@@ -10307,10 +6167,10 @@
     "pages": [
       14
     ],
-    "label": "Section B · Q2(b) · points 1, 2, 3"
+    "label": "Section B · Q2(b)"
   },
   {
-    "cardId": "fr-2026-ol-writing-b2b-route-124",
+    "cardId": "fr-2026-ol-writing-b3a",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2026,
@@ -10318,187 +6178,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-124",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2b-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-125",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2b-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-134",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2b-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-135",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2b-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-145",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2b-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-234",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2b-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-235",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2b-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-245",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b2b-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B2B-route-345",
-    "parent": "B2B",
-    "topicIds": [
-      "french-ordinary-write-a-postcard"
-    ],
-    "topicId": "french-6-4",
-    "pages": [
-      14
-    ],
-    "label": "Section B · Q2(b) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3a-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-123",
+    "n": "B3A",
     "parent": "B3A",
     "topicIds": [
       "french-ordinary-write-a-diary"
@@ -10507,10 +6187,10 @@
     "pages": [
       16
     ],
-    "label": "Section B · Q3(a) · points 1, 2, 3"
+    "label": "Section B · Q3(a)"
   },
   {
-    "cardId": "fr-2026-ol-writing-b3a-route-124",
+    "cardId": "fr-2026-ol-writing-b3b",
     "subjectId": "french",
     "level": "ordinary",
     "year": 2026,
@@ -10518,187 +6198,7 @@
     "paperKey": "single",
     "lang": "ev",
     "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-124",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3a-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-125",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3a-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-134",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3a-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-135",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3a-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-145",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3a-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-234",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3a-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-235",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3a-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-245",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3a-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3A-route-345",
-    "parent": "B3A",
-    "topicIds": [
-      "french-ordinary-write-a-diary"
-    ],
-    "topicId": "french-6-0",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(a) · points 3, 4, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3b-route-123",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-123",
+    "n": "B3B",
     "parent": "B3B",
     "topicIds": [
       "french-ordinary-write-a-letter"
@@ -10707,187 +6207,7 @@
     "pages": [
       16
     ],
-    "label": "Section B · Q3(b) · points 1, 2, 3"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3b-route-124",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-124",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 2, 4"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3b-route-125",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-125",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 2, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3b-route-134",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-134",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 3, 4"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3b-route-135",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-135",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 3, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3b-route-145",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-145",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 1, 4, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3b-route-234",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-234",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 3, 4"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3b-route-235",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-235",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 3, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3b-route-245",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-245",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 2, 4, 5"
-  },
-  {
-    "cardId": "fr-2026-ol-writing-b3b-route-345",
-    "subjectId": "french",
-    "level": "ordinary",
-    "year": 2026,
-    "sitting": "main",
-    "paperKey": "single",
-    "lang": "ev",
-    "fileid": "LC010GLP000BV.pdf",
-    "n": "B3B-route-345",
-    "parent": "B3B",
-    "topicIds": [
-      "french-ordinary-write-a-letter"
-    ],
-    "topicId": "french-6-1",
-    "pages": [
-      16
-    ],
-    "label": "Section B · Q3(b) · points 3, 4, 5"
+    "label": "Section B · Q3(b)"
   },
   {
     "cardId": "fr-2026-hl-reading-a1-q1-a",

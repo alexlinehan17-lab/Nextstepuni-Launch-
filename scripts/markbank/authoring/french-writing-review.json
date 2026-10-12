@@ -1,7 +1,7 @@
 {
   "status": "partial-corpus-review",
   "reviewedAt": "2026-10-07",
-  "cards": 540,
+  "cards": 306,
   "review": [
     {
       "year": 2010,
@@ -9,7 +9,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 11
     },
@@ -19,7 +19,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 12
     },
@@ -29,7 +29,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 13
     },
@@ -39,7 +39,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 14
     },
@@ -49,7 +49,7 @@
       "question": "B1B",
       "choose": 4,
       "poolSize": 4,
-      "routes": 1,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 11,
       "schemePage": 9
@@ -93,7 +93,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 11
     },
@@ -103,7 +103,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 12
     },
@@ -113,7 +113,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 13
     },
@@ -123,7 +123,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 14
     },
@@ -133,7 +133,7 @@
       "question": "B1B",
       "choose": 4,
       "poolSize": 4,
-      "routes": 1,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 11,
       "schemePage": 9
@@ -177,7 +177,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 11
     },
@@ -187,7 +187,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 12
     },
@@ -197,7 +197,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 13
     },
@@ -207,7 +207,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 14
     },
@@ -217,7 +217,7 @@
       "question": "B1B",
       "choose": 4,
       "poolSize": 4,
-      "routes": 1,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 11,
       "schemePage": 9
@@ -261,7 +261,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 12
     },
@@ -271,7 +271,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 13
     },
@@ -281,7 +281,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 14
     },
@@ -291,7 +291,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 15
     },
@@ -301,7 +301,7 @@
       "question": "B1B",
       "choose": 4,
       "poolSize": 4,
-      "routes": 1,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 11,
       "schemePage": 10
@@ -345,7 +345,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 12
     },
@@ -355,7 +355,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 13
     },
@@ -365,7 +365,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 14
     },
@@ -375,7 +375,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 15
     },
@@ -385,7 +385,7 @@
       "question": "B1B",
       "choose": 4,
       "poolSize": 4,
-      "routes": 1,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 11,
       "schemePage": 10
@@ -429,7 +429,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 12
     },
@@ -439,7 +439,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 13
     },
@@ -449,7 +449,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 14
     },
@@ -459,7 +459,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 15
     },
@@ -469,7 +469,7 @@
       "question": "B1B",
       "choose": 4,
       "poolSize": 4,
-      "routes": 1,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 11,
       "schemePage": 10
@@ -513,7 +513,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 12
     },
@@ -523,7 +523,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 13
     },
@@ -533,7 +533,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 14
     },
@@ -543,7 +543,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 15
     },
@@ -553,7 +553,7 @@
       "question": "B1B",
       "choose": 4,
       "poolSize": 4,
-      "routes": 1,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 11,
       "schemePage": 10
@@ -597,7 +597,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 14
     },
@@ -607,7 +607,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 15
     },
@@ -617,7 +617,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 16
     },
@@ -627,7 +627,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 17
     },
@@ -637,7 +637,7 @@
       "question": "B1B",
       "choose": 4,
       "poolSize": 4,
-      "routes": 1,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 11,
       "schemePage": 12
@@ -681,7 +681,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 14
     },
@@ -691,7 +691,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 15
     },
@@ -701,7 +701,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 16
     },
@@ -711,7 +711,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 17
     },
@@ -721,7 +721,7 @@
       "question": "B1B",
       "choose": 4,
       "poolSize": 4,
-      "routes": 1,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 11,
       "schemePage": 12
@@ -765,7 +765,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 12
     },
@@ -775,7 +775,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 12,
       "schemePage": 13
     },
@@ -785,7 +785,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 14
     },
@@ -795,7 +795,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 15
     },
@@ -805,7 +805,7 @@
       "question": "B1B",
       "choose": 4,
       "poolSize": 4,
-      "routes": 1,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 11,
       "schemePage": 10
@@ -849,7 +849,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 14
     },
@@ -859,7 +859,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 15
     },
@@ -869,7 +869,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 16
     },
@@ -879,7 +879,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 3,
-      "routes": 1,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 17
     },
@@ -889,7 +889,7 @@
       "question": "B1B",
       "choose": 4,
       "poolSize": 4,
-      "routes": 1,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 13,
       "schemePage": 13
@@ -933,7 +933,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 14
     },
@@ -943,7 +943,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 15
     },
@@ -953,7 +953,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 16
     },
@@ -963,7 +963,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 17
     },
@@ -973,7 +973,7 @@
       "question": "B1B",
       "choose": 3,
       "poolSize": 4,
-      "routes": 4,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 13,
       "schemePage": 13
@@ -1016,7 +1016,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 13
     },
@@ -1026,7 +1026,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 14
     },
@@ -1036,7 +1036,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 15
     },
@@ -1046,7 +1046,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 16
     },
@@ -1056,7 +1056,7 @@
       "question": "B1B",
       "choose": 3,
       "poolSize": 4,
-      "routes": 4,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 13,
       "schemePage": 12
@@ -1099,7 +1099,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 13
     },
@@ -1109,7 +1109,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 14
     },
@@ -1119,7 +1119,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 15
     },
@@ -1129,7 +1129,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 16
     },
@@ -1139,7 +1139,7 @@
       "question": "B1B",
       "choose": 3,
       "poolSize": 4,
-      "routes": 4,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 13,
       "schemePage": 12
@@ -1182,7 +1182,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 15
     },
@@ -1192,7 +1192,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 16
     },
@@ -1202,7 +1202,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 17
     },
@@ -1212,7 +1212,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 18
     },
@@ -1222,7 +1222,7 @@
       "question": "B1B",
       "choose": 3,
       "poolSize": 4,
-      "routes": 4,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 13,
       "schemePage": 14
@@ -1265,7 +1265,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 14
     },
@@ -1275,7 +1275,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 15
     },
@@ -1285,7 +1285,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 16
     },
@@ -1295,7 +1295,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 17
     },
@@ -1305,7 +1305,7 @@
       "question": "B1B",
       "choose": 3,
       "poolSize": 4,
-      "routes": 4,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 13,
       "schemePage": 13
@@ -1348,7 +1348,7 @@
       "question": "B2A",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 16
     },
@@ -1358,7 +1358,7 @@
       "question": "B2B",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 14,
       "schemePage": 17
     },
@@ -1368,7 +1368,7 @@
       "question": "B3A",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 18
     },
@@ -1378,7 +1378,7 @@
       "question": "B3B",
       "choose": 3,
       "poolSize": 5,
-      "routes": 10,
+      "cards": 1,
       "paperPage": 16,
       "schemePage": 19
     },
@@ -1388,7 +1388,7 @@
       "question": "B1B",
       "choose": 3,
       "poolSize": 4,
-      "routes": 4,
+      "cards": 1,
       "separatelyMarkedFields": 5,
       "paperPage": 13,
       "schemePage": 15

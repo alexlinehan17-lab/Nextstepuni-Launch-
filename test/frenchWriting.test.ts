@@ -17,11 +17,11 @@ const deck = [...higher, ...ordinary];
 const correctedReadingIds = new Set(readingReview.papers.flatMap(paper => Object.values(paper.preservedCardIds ?? {})));
 
 describe('reviewed 2010–2026 French writing tasks', () => {
-  it('adds all 540 reviewed units while preserving the 260 existing identities', () => {
-    expect(cards).toHaveLength(540);
+  it('adds all 306 reviewed units while preserving the 260 existing identities', () => {
+    expect(cards).toHaveLength(306);
     expect(cards.filter(card => card.level === 'higher')).toHaveLength(136);
-    expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(404);
-    expect(deck).toHaveLength(2354);
+    expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(170);
+    expect(deck).toHaveLength(2120);
     expect(new Set(deck.map(card => card.id)).size).toBe(deck.length);
     for (const old of legacy) {
       const live = deck.find(card => card.id === old.id)!;
@@ -39,43 +39,75 @@ describe('reviewed 2010–2026 French writing tasks', () => {
     }
   });
 
-  it.each([2021, 2022, 2023, 2024, 2025, 2026].flatMap(year => ['B2A', 'B2B', 'B3A', 'B3B'].map(parent => [year, parent] as const)))('expands %s %s into precisely ten choose-three routes', (year, parent) => {
+  it.each([2021, 2022, 2023, 2024, 2025, 2026].flatMap(year => ['B2A', 'B2B', 'B3A', 'B3B'].map(parent => [year, parent] as const)))('publishes %s %s as one card with every printed point', (year, parent) => {
+    // The student chooses which three of the five printed points to include:
+    // one card, never one card per combination.
     const variants = tasks.filter(task => task.parent === parent && task.level === 'ordinary' && task.year === year);
-    expect(variants.map(task => task.n)).toEqual(
-      ['123', '124', '125', '134', '135', '145', '234', '235', '245', '345'].map(route => `${parent}-route-${route}`),
-    );
-    const questionTexts = new Set<string>();
-    for (const task of variants) {
-      const card = cards.find(card => card.id === task.cardId)!;
-      expect(card.totalMarks).toBe(30);
-      questionTexts.add(card.questionText);
-      const chosen = task.n.split('-').at(-1)!.split('');
-      expect(card.rubric.criteria.filter(c => c.id.startsWith('communication-')).map(c => c.id))
-        .toEqual(chosen.map(i => `communication-${i}`));
-      expect(card.questionText.match(/• /g)).toHaveLength(3);
-      const pool = sources.find(source => source.year === year)!.pools.find(pool => pool[0] === parent)!;
-      const points = pool[4] as string[];
-      const answers = pool[5] as string[];
-      points.forEach((point, index) => {
-        expect(card.questionText.includes(`• ${point}`), `${card.id}: point ${index + 1}`)
-          .toBe(chosen.includes(String(index + 1)));
-      });
-      for (const index of chosen.map(Number)) {
-        expect(card.rubric.criteria.find(c => c.id === `communication-${index}`)?.guidance[0])
-          .toBe(answers[index - 1]);
-      }
+    expect(variants.map(task => task.n)).toEqual([parent]);
+    const card = cards.find(card => card.id === variants[0].cardId)!;
+    expect(card.id).toBe(`fr-${year}-ol-writing-${parent.toLowerCase()}`);
+    expect(card.questionRef).toBe(`${year} OL Section B Q${parent[1]}(${parent[2].toLowerCase()})`);
+    expect(card.totalMarks).toBe(30);
+    const pool = sources.find(source => source.year === year)!.pools.find(pool => pool[0] === parent)!;
+    const points = pool[4] as string[];
+    const answers = pool[5] as string[];
+    expect(card.questionText.match(/• /g)).toHaveLength(5);
+    for (const point of points) expect(card.questionText).toContain(`• ${point}`);
+    const instruction = card.rubric.taskRequirements.find(line => line.includes('three of the following'))!;
+    expect(instruction, card.id).toBeDefined();
+    expect(card.questionText.split('\n\n')[0]).toContain(instruction);
+    const communication = card.rubric.criteria.filter(c => c.id.startsWith('communication-'));
+    expect(communication.map(c => c.label)).toEqual(['first', 'second', 'third'].map(ordinal => `Communication · ${ordinal} point you chose`));
+    for (const criterion of communication) {
+      expect(criterion.guidance.slice(0, 5)).toEqual(points.map((point, index) => `${point} — ${answers[index]}`));
     }
-    expect(questionTexts.size).toBe(10);
+    expect(card.rubric.criteria.at(-1)?.id).toBe('language');
+    expect(card.rubric.practiceNotes![0]).toBe('Choose any three of the five printed points. Each Communication mark is for one point you chose; one point cannot earn two of them.');
   });
 
-  it.each([2021, 2022, 2023, 2024, 2025, 2026])('keeps %s form fields and its four sentence routes at the published tariffs', year => {
+  it.each([2021, 2022, 2023, 2024, 2025, 2026])('keeps %s form fields and publishes its four printed questions as one choose-three card', year => {
     const form = tasks.filter(task => task.parent === 'B1B' && task.level === 'ordinary' && task.year === year);
     expect(form.filter(task => task.n.includes('-field-')).map(task => cards.find(card => card.id === task.cardId)!.totalMarks))
       .toEqual([2, 2, 2, 2, 2]);
-    expect(form.filter(task => task.n.includes('-route-')).map(task => task.n))
-      .toEqual(['B1B-route-678', 'B1B-route-679', 'B1B-route-689', 'B1B-route-789']);
-    expect(form.filter(task => task.n.includes('-route-')).map(task => cards.find(card => card.id === task.cardId)!.totalMarks))
-      .toEqual([20, 20, 20, 20]);
+    expect(form.filter(task => task.n.includes('-route-')).map(task => task.n)).toEqual(['B1B-route-6789']);
+    const card = cards.find(card => card.id === `fr-${year}-ol-writing-b1b-route-6789`)!;
+    expect(card.totalMarks).toBe(20);
+    expect(card.questionText.match(/^[6-9]\. /gm)).toHaveLength(4);
+    expect(card.rubric.criteria.map(c => [c.id, c.maxMarks])).toEqual([
+      ['communication-first', 4], ['communication-second', 4], ['communication-third', 4], ['language', 8],
+    ]);
+    for (const criterion of card.rubric.criteria.slice(0, 3)) {
+      expect(criterion.guidance.slice(0, 4)).toEqual(card.questionText.split('\n').filter(line => /^[6-9]\. /.test(line)));
+    }
+  });
+
+  it('refuses route siblings: two cards of one printed task that differ only in the points they show', () => {
+    // Same paper and question, the same rubric shape, the same printed stem:
+    // the student's choice of points must be one card, not one per combination.
+    const shape = (card: { totalMarks: number; rubric?: unknown }) => {
+      const criteria = (card.rubric as { criteria?: { maxMarks: number; permittedMarks: number[] }[] } | undefined)?.criteria ?? [];
+      return JSON.stringify([card.totalMarks, criteria.map(c => [c.maxMarks, c.permittedMarks])]);
+    };
+    const isPoint = (line: string) => /^(?:• |[6-9]\. )/.test(line);
+    const siblings = (pool: typeof deck) => {
+      const groups = new Map<string, typeof deck>();
+      for (const card of pool) {
+        const key = [card.paperFileid, card.questionRef.replace(/ · points [\d, ]+$/, ''), shape(card),
+          (card.questionText ?? '').split('\n').filter(line => !isPoint(line)).join('\n')].join('|');
+        groups.set(key, [...(groups.get(key) ?? []), card]);
+      }
+      return [...groups.values()].filter(group => group.length > 1
+        && new Set(group.map(card => (card.questionText ?? '').split('\n').filter(isPoint).join('\n'))).size > 1);
+    };
+    expect(siblings(deck).map(group => group.map(card => card.id))).toEqual([]);
+    // The guard does refuse the old layout: two routes of the 2021 message.
+    const card = cards.find(card => card.id === 'fr-2021-ol-writing-b2a')!;
+    const lines = card.questionText.split('\n');
+    const route = (keep: number[], suffix: string) => ({
+      ...card, id: `${card.id}-route-${suffix}`, questionRef: `${card.questionRef} · points ${keep.join(', ')}`,
+      questionText: lines.filter(line => !isPoint(line) || keep.includes(lines.filter(isPoint).indexOf(line) + 1)).join('\n'),
+    });
+    expect(siblings([route([1, 2, 3], '123'), route([1, 2, 4], '124')])).toHaveLength(1);
   });
 
   it('uses complete published grids, source documents and the same exact topic in Atlas', () => {
@@ -101,17 +133,17 @@ describe('reviewed 2010–2026 French writing tasks', () => {
     // 2010–2021 schemes print "Two points" on every task; from 2022 the message and
     // postcard (B2A/B2B) print "Two parts" while the diary and letter keep "Two points".
     const seen = new Map<string, number>();
-    for (const card of cards.filter(card => /-writing-b[23][ab]-route-/.test(card.id))) {
+    for (const card of cards.filter(card => /-ol-writing-b[23][ab](?:-route-|$)/.test(card.id))) {
       const task = card.id.split('-writing-')[1].split('-route-')[0];
       const word = card.year >= 2022 && ['b2a', 'b2b'].includes(task) ? 'parts' : 'points';
       // Printed without a closing stop.
       const tariff = task === 'b3b' ? '4 marks (2 + 2)' : '5 marks (3 + 2)';
       for (const criterion of card.rubric.criteria.filter(c => c.id.startsWith('communication-'))) {
-        expect(criterion.guidance[1]).toBe(`Two ${word} required for ${tariff}`);
+        expect(criterion.guidance.find(line => line.includes('required for'))).toBe(`Two ${word} required for ${tariff}`);
         seen.set(word, (seen.get(word) ?? 0) + 1);
       }
     }
-    expect(Object.fromEntries(seen)).toEqual({ points: 552, parts: 300 });
+    expect(Object.fromEntries(seen)).toEqual({ points: 174, parts: 30 });
   });
 
   it('keeps the 2015 email, boxed quotation and task-specific language descriptors', () => {
@@ -158,11 +190,11 @@ describe('reviewed 2010–2026 French writing tasks', () => {
     expect(letter.rubric.criteria.find(c => c.id === 'communication-1')!.guidance.slice(-2))
       .toEqual(['1st Category 0 - 1 - message not clear.', '2nd Category 2 - message clear.']);
     expect(letter.rubric.practiceNotes).toContain('Use the formal letter layout and the supplied addresses.');
-    expect(byId('fr-2026-ol-writing-b1b-route-678').rubric.taskRequirements)
+    expect(byId('fr-2026-ol-writing-b1b-route-6789').rubric.taskRequirements)
       .toEqual(['Pour 6, 7, 8 et 9 : Choisissez trois questions et répondez par des phrases complètes.']);
-    expect(byId('fr-2025-ol-writing-b1b-route-678').rubric.taskRequirements)
+    expect(byId('fr-2025-ol-writing-b1b-route-6789').rubric.taskRequirements)
       .toEqual(['Pour 6, 7, 8 et 9 : choisissez trois questions et répondez par des phrases complètes.']);
-    expect(byId('fr-2026-ol-writing-b2a-route-135').rubric.practiceNotes![0]).toBe('This practice route uses three of the five printed points.');
+    expect(byId('fr-2026-ol-writing-b2a').rubric.practiceNotes![0]).toBe('Choose any three of the five printed points. Each Communication mark is for one point you chose; one point cannot earn two of them.');
     expect(byId('fr-2021-hl-writing-b4').rubric.criteria[0].guidance).toEqual(['Q. 4 No particular layout required']);
     expect(byId('fr-2026-hl-writing-b3').rubric.criteria[0].guidance).toEqual(['Q. 3 – no particular layout required']);
     expect(byId('fr-2014-hl-writing-b1a').rubric.taskRequirements).toEqual([]);
@@ -174,7 +206,7 @@ describe('reviewed 2010–2026 French writing tasks', () => {
       expect(cards.find(card => card.id === `fr-${year}-hl-writing-b2b`)!.questionText.endsWith('\n(about 75 words)')).toBe(true);
     }
     expect(cards.filter(card => card.questionText.includes('(about 75 words)'))).toHaveLength(6);
-    for (const card of cards.filter(card => card.id.includes('-ol-writing-b3a-route-'))) {
+    for (const card of cards.filter(card => /-ol-writing-b3a(?:-route-|$)/.test(card.id))) {
       const instruction = card.year >= 2021 ? 'Note three of the following five points in French in your diary:'
         : card.year >= 2017 ? 'Note the following in French in your diary:' : 'Note the following in your diary:';
       expect(card.questionText.split('\n\n')[0].endsWith(` ${instruction}`), card.id).toBe(true);
@@ -186,7 +218,7 @@ describe('reviewed 2010–2026 French writing tasks', () => {
     expect(byId('fr-2013-ol-writing-b1b-route-6789').rubric.criteria.at(-1)?.bands?.[2].guidance)
       .toEqual(['Most verb endings, tenses, agreements incorrect', 'Most words misspelt', 'No sense of register']);
     expect(byId('fr-2015-ol-writing-b3b-route-123').rubric.criteria[0].guidance).toContain('Include “Irlande”. Accept “Ireland” / “Éire”.');
-    expect(byId('fr-2026-ol-writing-b3b-route-123').rubric.criteria[0].guidance).toContain('Include Irlande, accept “Ireland” / “Éire”.');
+    expect(byId('fr-2026-ol-writing-b3b').rubric.criteria[0].guidance).toContain('Include Irlande, accept “Ireland” / “Éire”.');
     expect(byId('fr-2017-ol-writing-b2a-route-123').rubric.criteria[0].guidance[0]).toBe('You have a toothache / and you can’t eat');
   });
 
@@ -471,14 +503,14 @@ describe('reviewed 2010–2026 French writing tasks', () => {
   });
 
   it('includes formal-letter appendix rules and that year’s language descriptors', () => {
-    for (const card of cards.filter(card => card.id.includes('ol-writing-b3b-route-'))) {
+    for (const card of cards.filter(card => /ol-writing-b3b(?:-route-|$)/.test(card.id))) {
       expect(card.rubric.criteria.find(c => c.id === 'language')?.requiresAttempt).toBe(true);
       expect(card.rubric.criteria.find(c => c.id === 'format-close')?.guidance)
         .toContain('Formal ending required.');
       expect(card.rubric.criteria.find(c => c.id === 'format-top')?.guidance)
         .toContain('2 mistakes - deduct 1 mark.');
     }
-    const latest = cards.find(card => card.id === 'fr-2026-ol-writing-b2a-route-123')!;
+    const latest = cards.find(card => card.id === 'fr-2026-ol-writing-b2a')!;
     expect(latest.rubric.criteria.find(c => c.id === 'language')?.bands?.[2].guidance[0])
       .toBe('very limited to limited use of vocabulary of vocabulary');
   });
@@ -491,7 +523,7 @@ describe('reviewed 2010–2026 French writing tasks', () => {
       expect(group[3].rubric.criteria.map(c => c.maxMarks)).toEqual([15, 15]);
       expect(group[3].rubric.criteria[0].bands?.[0].marks).toEqual([11, 12, 13, 14, 15]);
     }
-    const form = cards.find(card => card.id === 'fr-2021-ol-writing-b1b-route-678')!;
+    const form = cards.find(card => card.id === 'fr-2021-ol-writing-b1b-route-6789')!;
     expect(form.rubric.criteria.at(-1)?.bands?.[2].guidance).toEqual([
       'most verb endings, tenses, agreements incorrect', 'most words misspelt', 'no sense of register',
     ]);
@@ -501,7 +533,7 @@ describe('reviewed 2010–2026 French writing tasks', () => {
   });
 
   it('applies the form language gate without confusing an unclear answer with no attempt', () => {
-    const card = cards.find(c => c.id.endsWith('ol-writing-b1b-route-678'))!;
+    const card = cards.find(c => c.id === 'fr-2026-ol-writing-b1b-route-6789')!;
     expect(frenchMarks(card, { [frenchScoreId('language')]: 8 })).toBe(0);
     expect(frenchMarks(card, { [frenchScoreId('language')]: 8, [FRENCH_ATTEMPT_ID]: 1 })).toBe(8);
     expect(frenchMarks(card, { [frenchScoreId('language')]: 99, [FRENCH_ATTEMPT_ID]: 1 })).toBe(0);
