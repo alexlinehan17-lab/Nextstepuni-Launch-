@@ -72,6 +72,13 @@ YEARS = tuple(range(2021, 2027))
 # checks each sits inside a drawn answer box, so no question wording can be
 # dropped by this rule.
 ANSWER_BOX_LABELS: dict[tuple[int, str, int], tuple[str, ...]] = {
+    # "Identify a contemporary living sculptor that you have studied ..."
+    (2024, 'higher', 3): ('Name of sculptor:',),
+    # "(b) Name an organisation ... Explain how this organisation could ..."
+    (2024, 'ordinary', 2): ('Name of organisation:', 'Explain:'),
+    # "(a) Describe the costume of one character from a film, TV show or ..."
+    (2024, 'ordinary', 6): ('Name of film, TV show or theatrical performance:', 'Name of character:',
+                            'Description of costume:'),
     # "Name one artwork that you have seen in a gallery, arts centre or museum."
     (2025, 'ordinary', 3): ('Name of gallery, arts centre or museum:', 'Name of artwork:'),
     # "(a) Describe this embroidery using any two of the following headings: ..."
@@ -81,7 +88,7 @@ ANSWER_BOX_LABELS: dict[tuple[int, str, int], tuple[str, ...]] = {
 # Years whose SEC-attributed strings are all lifted from the printed page and
 # gated by tests/test_art_sec_wording.py. The other years keep the earlier
 # condensed descriptors (factory.ts) until their own audit.
-AUDITED_YEARS = (2025, 2026)
+AUDITED_YEARS = (2024, 2025, 2026)
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
@@ -349,7 +356,9 @@ CURRENT_SHORT_TOPICS: dict[tuple[int, str, int], str] = {}
 for _year, _level, _topics in (
     (2023, 'higher', ('art-6-1', 'art-6-1', 'art-6-2', 'art-6-3', 'art-6-0', 'art-6-1', 'art-6-3')),
     (2023, 'ordinary', ('art-6-1', 'art-6-0', 'art-6-2', 'art-6-0', 'art-6-1', 'art-6-1', 'art-6-1')),
-    (2024, 'higher', ('art-6-1', 'art-6-1', 'art-6-0', 'art-6-1', 'art-6-0', 'art-6-3', 'art-6-2')),
+    # Q3 (a living sculptor: themes, media, scale) and Q7 (Faber-Castell's
+    # advertising poster) take the topic the Atlas gives them, art-6-1.
+    (2024, 'higher', ('art-6-1', 'art-6-1', 'art-6-1', 'art-6-1', 'art-6-0', 'art-6-3', 'art-6-1')),
     (2024, 'ordinary', ('art-6-1', 'art-6-0', 'art-6-1', 'art-6-2', 'art-6-2', 'art-6-1', 'art-6-3')),
     (2025, 'higher', ('art-6-3', 'art-6-1', 'art-6-0', 'art-6-1', 'art-6-0', 'art-6-1', 'art-6-1')),
     (2025, 'ordinary', ('art-6-2', 'art-6-2', 'art-6-0', 'art-6-1', 'art-6-1', 'art-6-0', 'art-6-1')),

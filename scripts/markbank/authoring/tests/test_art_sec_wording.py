@@ -118,6 +118,10 @@ class ArtSecWordingTest(unittest.TestCase):
     # art_cards.ANSWER_BOX_LABELS, so no question wording can be dropped by
     # the same rule without this list changing.
     PINNED_LABELS = {
+        (2024, 'higher', 3): ('Name of sculptor:',),
+        (2024, 'ordinary', 2): ('Name of organisation:', 'Explain:'),
+        (2024, 'ordinary', 6): ('Name of film, TV show or theatrical performance:', 'Name of character:',
+                                'Description of costume:'),
         (2025, 'ordinary', 3): ('Name of gallery, arts centre or museum:', 'Name of artwork:'),
         (2025, 'ordinary', 4): ('Heading 1:', 'Heading 2:'),
     }
