@@ -13,6 +13,13 @@ checks a ledger before `bio_review.py <year> <level> --write`.
   python3 bio_tools.py pointers YEAR LEVEL          cards whose text points at a printed figure but carry none
   python3 bio_tools.py crops YEAR LEVEL [KEY ...]   render the ledger's crops
   python3 bio_tools.py montage [KEY ...]            four crops to a sheet, for viewing
+  python3 bio_tools.py topics YEAR LEVEL [ADDS] [--replace]
+                                                    write a sitting's Topic Atlas entries: the reference
+                                                    topics per question plus ADDS ("5:24-immunity;8:...",
+                                                    "-topic" drops a wrong reference topic); refuses to
+                                                    change a level already mapped unless --replace
+  python3 bio_tools.py identity [YEAR-LEVEL ...]    re-run --write for every reviewed sitting (except those
+                                                    named) and report whether the bank comes back byte-identical
 
 Output (sheets, crops, montages) goes to $BIO_REVIEW_OUT, default
 <tmpdir>/bio-review. Run from anywhere; paths resolve from this file.
@@ -228,6 +235,96 @@ def cmd_montage(*names):
         out = os.path.join(OUT, f'montage-{gi // 4}.png')
         page.get_pixmap().save(out)
         print(out)
+
+
+def cmd_topics(year, level, adds='', *flags):
+    """data/examTopics/biology-<year>-exam-topic-map.json: each question of the
+    sitting keeps every topic the reference snapshot (data/examTopics/biology.json
+    headings) gives it and gains ADDS, written "q:topic,topic;q:topic" with
+    topics named without their "biology-<level>-new-course-" prefix; "-topic"
+    drops a reference topic the reviewed tasks show is wrong. A level already in
+    the file is left alone unless the result matches it or --replace is given,
+    so a reviewed map is never silently rebuilt."""
+    from collections import defaultdict
+    if adds == '--replace':
+        adds, flags = '', ('--replace',) + flags
+    year = int(year)
+    word = {'hl': 'higher', 'ol': 'ordinary'}.get(level, level)
+    full = lambda t: t if t.startswith('biology-') else f'biology-{word}-new-course-{t}'
+    extra, drop = {}, {}
+    for part in filter(None, adds.split(';')):
+        q, ts = part.split(':')
+        ts = ts.split(',')
+        extra[int(q)] = [full(t) for t in ts if not t.startswith('-')]
+        drop[int(q)] = {full(t[1:]) for t in ts if t.startswith('-')}
+    ref_doc = json.load(open(os.path.join(ROOT, 'data/examTopics/biology.json')))
+    cw = json.load(open(os.path.join(ROOT, 'data/examTopics/biology-curriculum-crosswalk.json')))
+    ref = defaultdict(list)
+    for var in (f'{word}-new-course', f'{word}-old-course'):
+        for t in ref_doc['variants'][var]['topics']:
+            for h in t.get('officialQuestionHeadings', []):
+                m = re.search(r'Question\s+(\d+)', h) if h.startswith(f'{year} ') else None
+                if m and t['id'] not in ref[int(m.group(1))]:
+                    ref[int(m.group(1))].append(t['id'])
+    path = os.path.join(ROOT, f'data/examTopics/biology-{year}-exam-topic-map.json')
+    doc = json.load(open(path)) if os.path.exists(path) else {
+        'schemaVersion': 1, 'subjectId': 'biology', 'year': year, 'authority': 'State Examinations Commission',
+        'scope': 'Top-level question-to-reference-topic mapping reviewed directly from the official English paper '
+                 'booklets and marking schemes, task by task (scripts/markbank/authoring/bio_review_'
+                 f'{year}_<level>.py). Each question keeps every topic the factual reference snapshot already gave '
+                 'it and gains the topics its reviewed tasks need.', 'questions': {}}
+    before = {k: v for k, v in doc['questions'].items() if k.startswith(f'{word}|')}
+    for q in range(1, 18):
+        for t in extra.get(q, []):
+            if t not in cw:
+                raise SystemExit(f'{t} is not in the curriculum crosswalk')
+        for t in drop.get(q, set()) - set(ref[q]):
+            raise SystemExit(f'Q{q}: {t} is not a reference topic, so there is nothing to drop')
+        kept = [t for t in ref[q] if t not in drop.get(q, set())]
+        doc['questions'][f'{word}|{q}'] = kept + [t for t in extra.get(q, []) if t not in kept]
+        print(q, sorted({n for t in doc['questions'][f'{word}|{q}'] for n in cw.get(t, []) if n.startswith('bio-')}))
+    after = {k: v for k, v in doc['questions'].items() if k.startswith(f'{word}|')}
+    if before and before != after and '--replace' not in flags:
+        for k in sorted(set(before) | set(after), key=lambda k: int(k.split('|')[1])):
+            if before.get(k) != after.get(k):
+                print(f'  {k}: mapped {before.get(k)} -> would be {after.get(k)}')
+        raise SystemExit(f'{year} {word} is already mapped and this would change it; pass --replace to rewrite it')
+    head = {k: v for k, v in doc.items() if k != 'questions'}
+    lines = ['{'] + [f'  {json.dumps(k)}: {json.dumps(v, ensure_ascii=False)},' for k, v in head.items()]
+    lines.append('  "questions": {')
+    qs = list(doc['questions'].items())
+    for i, (k, v) in enumerate(qs):
+        lines.append(f'    {json.dumps(k)}: {json.dumps(v, ensure_ascii=False)}' + (',' if i < len(qs) - 1 else ''))
+    lines += ['  }', '}']
+    open(path, 'w').write('\n'.join(lines) + '\n')
+
+
+def cmd_identity(*skip):
+    """A reader or runner change must not move a reviewed sitting it was not
+    made for: re-write every reviewed sitting and compare the bank's files."""
+    import glob
+    import hashlib
+    import subprocess
+    watched = ['scripts/markbank/authored/biology.json', 'scripts/markbank/authored/biology-review-audit.json',
+               'components/MarkBank/figures-biology.json', 'scripts/markbank/card-corrections.json']
+
+    def snapshot():
+        files = watched + sorted(os.path.relpath(f, ROOT) for f in glob.glob(
+            os.path.join(ROOT, 'public/exam-figures/biology/markbank/biology-20*.png')))
+        return {f: hashlib.sha256(open(os.path.join(ROOT, f), 'rb').read()).hexdigest() for f in files}
+    before = snapshot()
+    sittings = sorted({re.match(r'bio_review_(\d{4})_(hl|ol)\.py', os.path.basename(f)).groups()
+                       for f in glob.glob(os.path.join(HERE, 'bio_review_20??_??.py'))}, reverse=True)
+    for year, level in sittings:
+        if f'{year}-{level}' in skip:
+            continue
+        out = subprocess.run([sys.executable, os.path.join(HERE, 'bio_review.py'), year, level, '--write'],
+                             capture_output=True, text=True)
+        lines = out.stdout.strip().splitlines() or [out.stderr.strip()]
+        print(f'{year} {level}:', ([l for l in lines if 'reviewed tasks' in l] or lines)[-1][:110])
+    after = snapshot()
+    moved = sorted(f for f in set(before) | set(after) if before.get(f) != after.get(f))
+    print('byte-identical' if not moved else 'CHANGED: ' + ', '.join(moved))
 
 
 COMMANDS = {k[4:]: v for k, v in globals().items() if k.startswith('cmd_')}
