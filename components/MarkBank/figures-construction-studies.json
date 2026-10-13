@@ -3498,5 +3498,229 @@
     "alt": "SEC 2019 Higher marking scheme notes and sketches on retrofitting the bungalow to EnerPHit — envelope, heat recovery ventilation, airtightness, comfort, renewables and solar gain (two pages).",
     "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2019-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q1-original.png",
+    "md5": "b291938b40ba0d0bf9254489630c41ab",
+    "alt": "Original SEC 2019 Ordinary Construction Studies Question 1: the printed question with a sketch of a casement window in a rendered cavity wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q2-original.png",
+    "md5": "996d793f2d1dc9529e149f4b7836f918",
+    "alt": "Original SEC 2019 Ordinary Construction Studies Question 2: the printed question with a sketch of the ceiling joists and the attic trapdoor.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q3-original.png",
+    "md5": "9853423c25fc5e64fd716a7eb03948a0",
+    "alt": "Original SEC 2019 Ordinary Construction Studies Question 3: the printed question with a section of a two-storey house and a sketch of a toilet isolating valve.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q4-original.png",
+    "md5": "bb990b0825b3df59118b06796143c3bc",
+    "alt": "Original SEC 2019 Ordinary Construction Studies Question 4: the printed question with a sketch of a cavity wall on a reinforced concrete strip foundation.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q5-original.png",
+    "md5": "cbed6b58232356cc5b55fef07d80ebdd",
+    "alt": "Original SEC 2019 Ordinary Construction Studies Question 5: the printed question with a sketch of a stud partition on a floating timber floor.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-original.png",
+    "md5": "4319c15a5594e185b04cfde0a1f9cf7a",
+    "alt": "Original SEC 2019 Ordinary Construction Studies Question 6: the printed question with a sketch of a bandsaw.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q7-original.png",
+    "md5": "bfdad2a1d4743caf3b6de0b90f67bb5a",
+    "alt": "Original SEC 2019 Ordinary Construction Studies Question 7: the printed question with the draft plan of the kitchen area A and dining area B.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q8-original.png",
+    "md5": "1da076600ef8ca182eddf1adaa9bfef7",
+    "alt": "Original SEC 2019 Ordinary Construction Studies Question 8: the printed instruction and the nine construction terms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q9-original.png",
+    "md5": "13bd7d00d6bd8dac42bdc7556284a2af",
+    "alt": "Original SEC 2019 Ordinary Construction Studies Question 9: the printed question with a sketch of a timber-clad home office in a garden.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-OL-q1-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q1-scheme.png",
+    "md5": "8c3f604566f8aa869c20187404be18ba",
+    "alt": "SEC model section through the window head with the cavity closer marked (b), the specification list and the notes for part (b).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q2-attic": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q2-attic.png",
+    "md5": "a8cf4c64491741f0795922c62d96e342",
+    "alt": "SEC model sketch of the insulated attic with the method, insulation types and 350 mm minimum thickness.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q2-trapdoor": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q2-trapdoor.png",
+    "md5": "9c8b871200ff23154a5efd2565206268",
+    "alt": "SEC 2019 Ordinary marking scheme notes and sketches on insulating and sealing the attic trapdoor.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q2-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q2-reasons.png",
+    "md5": "b085f89272836b85c0650e18d4f4ef0a",
+    "alt": "SEC 2019 Ordinary marking scheme notes on reasons to begin by insulating the attic.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q3-system.png",
+    "md5": "8306cb6db924541c5cc5c462ceaae75d",
+    "alt": "SEC model sketch of the cold water supply from the rising main to the storage tank, kitchen sink and toilet cistern, with the typical details list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q3-valve": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q3-valve.png",
+    "md5": "4d87de07132a46f3d708af7d32357ce1",
+    "alt": "SEC model sketch of the isolating valve beside the toilet cistern, with the reasons.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q3-dual-flush": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q3-dual-flush.png",
+    "md5": "0af5c40cfbcf5bae2da361038bd8bd22",
+    "alt": "SEC 2019 Ordinary marking scheme notes on advantages of a dual-flush toilet cistern.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q4-foundation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q4-foundation.png",
+    "md5": "52b433abecc8bcb8b7ba92d90d9903c6",
+    "alt": "SEC model sketches of the 1100 × 350 mm reinforced strip foundation with the wall centred and the steel near the bottom, with notes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q4-ties": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q4-ties.png",
+    "md5": "fe610f3999cdfbcfa73a0340ea4e8615",
+    "alt": "SEC 2019 Ordinary marking scheme notes and sketch on wall ties connecting the inner and outer leaves.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q4-ready-mix": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q4-ready-mix.png",
+    "md5": "ca6323596a2a52daaa7c6603ca85f929",
+    "alt": "SEC 2019 Ordinary marking scheme notes on advantages of ready-mixed concrete for foundations.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q5-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q5-scheme.png",
+    "md5": "96b2c45b39db972ebed72ccbf5feb533",
+    "alt": "SEC model section through the floor and stud partition with the partition insulation marked (b), the specification list and the notes for part (b).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q6-adhesive": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-adhesive.png",
+    "md5": "bae31663306115a86cd822989063f920",
+    "alt": "SEC 2019 Ordinary marking scheme notes on safety precautions when using a contact adhesive to glue veneers.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q6-screwdriver": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-screwdriver.png",
+    "md5": "6b679d2693af0f718241e085258a8a12",
+    "alt": "SEC 2019 Ordinary marking scheme notes on safety precautions when using a battery-powered screwdriver.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q6-precautions": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-precautions.png",
+    "md5": "6a8ae3cca7a39ec6788f622561fbbc5e",
+    "alt": "SEC 2019 Ordinary marking scheme notes on safety precautions for both situations: contact adhesive and battery-powered screwdriver.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q6-bandsaw": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-bandsaw.png",
+    "md5": "93f793cd202656f80d4314a5366fc3ab",
+    "alt": "SEC 2019 Ordinary marking scheme table of bandsaw safety precautions and reasons, with sketches of the bandsaw, a push stick and safety glasses (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q6-instruction": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-instruction.png",
+    "md5": "8422b1c3dc24dabee32875fbb319cb35",
+    "alt": "SEC 2019 Ordinary marking scheme notes on reasons for safety instruction before using machinery.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q7-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q7-layout.png",
+    "md5": "f2baacdfef3287c007cd8aa8a970d209",
+    "alt": "SEC model kitchen layout with the sink, cooker and fridge in a work triangle, and the reasons for each location.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q7-floors": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q7-floors.png",
+    "md5": "dce795eea31d55d6f58f0fe6e1e3a3cb",
+    "alt": "SEC 2019 Ordinary marking scheme notes on floor types for kitchen area A and dining area B (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q7-island": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q7-island.png",
+    "md5": "4c0815b0d7cb7af2e05df86c39e8d4d9",
+    "alt": "SEC model kitchen plan with an island unit, and the advantages of an island unit.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q8-terms": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q8-terms.png",
+    "md5": "e68c36a1a0e818926f8e89cd2466ce08",
+    "alt": "SEC 2019 Ordinary marking scheme notes and sketches for all nine terms: carbon monoxide alarm, laminated safety glass, sapwood, grab rail, eaves gutter, bridle joint, furniture castor, balusters and fluorescent lighting (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q9-cladding": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q9-cladding.png",
+    "md5": "0f6c3717d622bdf563360c3adf1d6e76",
+    "alt": "SEC 2019 Ordinary marking scheme notes on suitable woods for external cladding and the reasons, with a sketch of the home office.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q9-modification": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q9-modification.png",
+    "md5": "29e5baa1d3279f73c0569cc1d2ed324e",
+    "alt": "SEC 2019 Ordinary marking scheme notes on modifications linking the office to the garden, with sketches of glazed doors and full-height glazing.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-OL-q9-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q9-advantages.png",
+    "md5": "f7c47427a17ae6d06421488dca895a89",
+    "alt": "SEC 2019 Ordinary marking scheme notes on advantages of a visual connection with the garden.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }

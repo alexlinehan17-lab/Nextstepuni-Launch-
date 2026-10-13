@@ -1144,37 +1144,131 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
     id: "cons-2019-ol-q1-a", topicId: "cons-1-5", conceptId: "vertical-section-through-top-portion-window",
     section: "B", questionRef: "2019 OL Q1(a)",
+    stem: "The external wall of a dwelling house is a 400 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. A triple glazed timber casement window is fixed in the external wall, as shown. The fixed frame of the window is 150 mm × 80 mm.",
     questionText: "To a scale of 1:5, draw a vertical section through the top portion of the window. Show the wall, the concrete lintels and the fixed frame of the window. On your drawing, show the typical construction details from a level 300 mm below to a level 400 mm above the concrete lintels. Include four typical dimensions.",
-    tariffModel: {"kind":"bestNofParts","notation":"7 x 5","answer":7,"ofParts":10,"perPart":5}, totalMarks: 35,
+    tariffModel: {"kind":"fixed"}, totalMarks: 39,
     rows: [
-    { id: "cons-2019-ol-q1-a-r1", kind: "anyN", verbatim: "Specification – typical detail", marks: 35, contextNote: "Specification – typical detail", openList: true, group: {"claimMax":7,"perOption":5,"options":["19 mm external render","Concrete block outer leaf 100 mm","Full-fill insulated cavity","Stepped DPC","Concrete block inner leaf 100 mm","15 mm internal plaster","Prestressed concrete lintels 100 × 70 mm","Window head 150 × 80 mm","Triple glazing low e glass","Glazing bead"]} },
+    { id: "details", kind: "criterion", verbatim: "Any 7 of the above details (5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 19 mm external plaster; 100 mm block outer leaf; 200 mm thermal insulation; stepped DPC/cavity tie; 100 mm block inner leaf; 15 mm internal plaster; prestressed concrete lintels 100 × 70 mm; window head 150 × 80 mm; triple glazing with low-e glass.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "dimensions", kind: "criterion", verbatim: "Any 4 typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Window head and cavity wall section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band under part (b)’s sub-total, so it is marked with the cavity-closer detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q1-original.png",
+          "srcHash": "b291938b40ba0d0bf9254489630c41ab",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 1: the printed question with a sketch of a casement window in a rendered cavity wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q1-scheme.png",
+          "srcHash": "8c3f604566f8aa869c20187404be18ba",
+          "alt": "SEC model section through the window head with the cavity closer marked (b), the specification list and the notes for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q2-b", topicId: "cons-1-1", conceptId: "trapdoor-also-insulated-well-sealed-insulation",
+    id: "cons-2019-ol-q2-b", topicId: "cons-6-2", conceptId: "trapdoor-also-insulated-well-sealed-insulation",
     section: "B", questionRef: "2019 OL Q2(b)",
+    stem: "A young couple have bought an old, uninsulated house. They wish to improve the insulation properties of the house and have decided to start by insulating the attic space. The sketch shows the ceiling joists and the trapdoor to the attic. The ceiling joists are 200 mm × 40 mm.",
     questionText: "The trapdoor is also to be insulated and well-sealed. Using notes and freehand sketches show the insulation to the trapdoor. Show also one method of sealing the trapdoor.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 5","answer":2,"ofParts":5,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
-    { id: "cons-2019-ol-q2-b-r1", kind: "anyN", verbatim: "Show one method of insulating the trapdoor", marks: 10, contextNote: "Show one method of insulating the trapdoor", openList: true, group: {"claimMax":2,"perOption":5,"options":["Fit pre-insulated trapdoor","Layers of solid insulation fitted to the upper face","Layers glued to the trapdoor","Fit weather stripping around the edge of the trap door","Seal any gaps between the frame and the joists to prevent any air penetration"]} },
+    { id: "insulating", kind: "criterion", verbatim: "Insulating the trapdoor Valid detail one", marks: 5, contextNote: "Such as: a pre-insulated trapdoor; layers of solid insulation fitted and glued to its upper face.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "sealing", kind: "criterion", verbatim: "Sealing the trapdoor Valid detail two", marks: 5, contextNote: "Such as: weather stripping around the edge of the trapdoor; gaps between the frame and the joists sealed against air penetration.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating an attic and its trapdoor",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both the insulation and the sealing of the trapdoor in (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q2-original.png",
+          "srcHash": "996d793f2d1dc9529e149f4b7836f918",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 2: the printed question with a sketch of the ceiling joists and the attic trapdoor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q2-trapdoor",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q2-trapdoor.png",
+          "srcHash": "9c8b871200ff23154a5efd2565206268",
+          "alt": "SEC 2019 Ordinary marking scheme notes and sketches on insulating and sealing the attic trapdoor.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q2-c", topicId: "cons-3-9", conceptId: "reasons-why-couple-should-begin-insulating",
+    id: "cons-2019-ol-q2-c", topicId: "cons-6-3", conceptId: "reasons-why-couple-should-begin-insulating",
     section: "B", questionRef: "2019 OL Q2(c)",
+    stem: "A young couple have bought an old, uninsulated house. They wish to improve the insulation properties of the house and have decided to start by insulating the attic space. The sketch shows the ceiling joists and the trapdoor to the attic. The ceiling joists are 200 mm × 40 mm.",
     questionText: "Discuss two reasons why the couple should begin by insulating the attic space.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 3","answer":2,"ofParts":10,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "cons-2019-ol-q2-c-r1", kind: "anyN", verbatim: "Discuss two reasons why the couple should begin by insulating the attic space.", marks: 6, openList: true, group: {"claimMax":2,"perOption":3,"options":["The greatest heat loss is through the roof, up to 30% of heat is lost","Insulation reduces the heat loss","Most effective way to save energy inside the home","It is relativity easy to insulate the attic and can be carried out by the home owner provided the necessary precautions are taken","Increased thermal comfort for occupants","Energy bills are reduced","It is better for the environment","It improves the Building Energy Rating (BER)","The house will be warmer","Storage tank and associated piping is generally in the attic"]} },
+    { id: "reason-1", kind: "criterion", verbatim: "Advantage 1", marks: 3, contextNote: "Such as: the greatest heat loss, up to 30%, is through the roof; the most effective way to save energy.", permittedMarks: [0,1,2,3] },
+    { id: "reason-2", kind: "criterion", verbatim: "Advantage 2", marks: 3, contextNote: "A second, different reason. Such as: relatively easy for the home owner to do; lower bills, a warmer house and a better BER.", permittedMarks: [0,1,2,3] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating an attic and its trapdoor",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both the insulation and the sealing of the trapdoor in (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q2-original.png",
+          "srcHash": "996d793f2d1dc9529e149f4b7836f918",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 2: the printed question with a sketch of the ceiling joists and the attic trapdoor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q2-reasons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q2-reasons.png",
+          "srcHash": "b085f89272836b85c0650e18d4f4ef0a",
+          "alt": "SEC 2019 Ordinary marking scheme notes on reasons to begin by insulating the attic.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1183,20 +1277,40 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
     id: "cons-2019-ol-q3-a", topicId: "cons-5-2", conceptId: "dwelling-should-have-clean-water-supply",
     section: "B", questionRef: "2019 OL Q3(a)",
-    questionText: "A dwelling should have a clean water supply for domestic consumption. Draw a large freehand sketch of the given house and, on your sketch, show the pipework necessary to supply cold water to the kitchen sink on the ground floor and to the toilet on the first floor. Include the following in your diagram: • rising main • pipework to the kitchen sink • insulated cold water storage tank • pipework to toilet cistern • all necessary valves.",
-    tariffModel: {"kind":"bestNofParts","notation":"7 x 4","answer":7,"ofParts":10,"perPart":4}, totalMarks: 28,
+    questionText: "A dwelling should have a clean water supply for domestic consumption. Draw a large freehand sketch of the given house and, on your sketch, show the pipework necessary to supply cold water to the kitchen sink on the ground floor and to the toilet on the first floor. Include the following in your diagram: rising main; pipework to the kitchen sink; insulated cold water storage tank; pipework to toilet cistern; all necessary valves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 34,
     rows: [
-    { id: "cons-2019-ol-q3-a-r1", kind: "anyN", verbatim: "Typical details", marks: 28, contextNote: "Typical details", openList: true, group: {"claimMax":7,"perOption":4,"options":["Stop valve","Connection to kitchen sink","15 mm rising main","Ball-valve","Cold water storage tank 230 litres min","Insulation around storage tank","28 mm overflow","Gate valve","15 mm cold water supply","Connection to WC"]} },
+    { id: "items", kind: "criterion", verbatim: "Any 7 of the above details (4 marks each)", marks: 28, contextNote: "Credit the best SEVEN acceptable items at 4 marks each, capped at 28. Marked items: drawing the given sketch; 15 mm rising main; 15 mm cold water feed to the kitchen sink; water storage tank; ball valve in the tank; 28 mm overflow; insulation around the tank; 15 mm cold water supply to the cistern; valves.", permittedMarks: [0,4,8,12,16,20,24,28] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketch: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Cold water supply to a sink and toilet",
           "pages": [
+                1,
                 2
           ],
-          "attribution": "SEC Construction Studies 2019 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketches retained. The listed components are required content, not a choice; the best-seven list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q3-original.png",
+          "srcHash": "9853423c25fc5e64fd716a7eb03948a0",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 3: the printed question with a section of a two-storey house and a sketch of a toilet isolating valve.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q3-system.png",
+          "srcHash": "8306cb6db924541c5cc5c462ceaae75d",
+          "alt": "SEC model sketch of the cold water supply from the rising main to the storage tank, kitchen sink and toilet cistern, with the typical details list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -1204,23 +1318,43 @@ export const CARDS: SecCard[] = [
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q3-b", topicId: "cons-5-6", conceptId: "shows-valve-usually-used-turn-off",
+    id: "cons-2019-ol-q3-b", topicId: "cons-5-2", conceptId: "shows-valve-usually-used-turn-off",
     section: "B", questionRef: "2019 OL Q3(b)",
     questionText: "The sketch shows a valve usually used to turn off the water supply to a toilet. Using notes and freehand sketches show the preferred location of the valve. Give one reason for choosing this location for the valve.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "cons-2019-ol-q3-b-location", kind: "point", verbatim: "The valve is fitted close to the cistern", marks: 3 },
-    { id: "cons-2019-ol-q3-b-reason", kind: "point", verbatim: "The valve is fitted within easy reach to operate the valve", marks: 3 },
+    { id: "location", kind: "criterion", verbatim: "Location", marks: 3, contextNote: "The isolating valve shown on the supply pipe close to the cistern.", permittedMarks: [0,1,2,3] },
+    { id: "reason", kind: "criterion", verbatim: "Reason", marks: 3, contextNote: "Such as: fitted close to the cistern; within easy reach to operate.", permittedMarks: [0,1,2,3] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketches: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Cold water supply to a sink and toilet",
           "pages": [
+                1,
                 2
           ],
-          "attribution": "SEC Construction Studies 2019 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketches retained. The listed components are required content, not a choice; the best-seven list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q3-original.png",
+          "srcHash": "9853423c25fc5e64fd716a7eb03948a0",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 3: the printed question with a section of a two-storey house and a sketch of a toilet isolating valve.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q3-valve",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q3-valve.png",
+          "srcHash": "4d87de07132a46f3d708af7d32357ce1",
+          "alt": "SEC model sketch of the isolating valve beside the toilet cistern, with the reasons.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -1231,49 +1365,171 @@ export const CARDS: SecCard[] = [
     id: "cons-2019-ol-q3-c", topicId: "cons-5-6", conceptId: "advantage-installing-dual-flush-toilet",
     section: "B", questionRef: "2019 OL Q3(c)",
     questionText: "Discuss one advantage of installing a dual-flush toilet.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":6,"perPart":4}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "cons-2019-ol-q3-c-r1", kind: "anyN", verbatim: "Discuss one advantage of installing a dual-flush toilet.", marks: 4, openList: true, group: {"claimMax":1,"perOption":4,"options":["The cistern has two buttons allowing the user to choose between two water flush settings","A larger flush of about 6-9 litres is designed for solid waste","The smaller flush of 3-4 litres is designed for liquid waste","The cistern is more environmentally friendly than conventional cisterns","This type of cistern reduces the amount of water used","It also reduces the amount of water entering waste treatment and sewage systems"]} },
+    { id: "advantage", kind: "criterion", verbatim: "Advantage", marks: 4, contextNote: "Such as: two flush settings, about 6–9 litres for solid and 3–4 litres for liquid waste; less water used; less water entering treatment and sewage systems.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Cold water supply to a sink and toilet",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketches retained. The listed components are required content, not a choice; the best-seven list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q3-original.png",
+          "srcHash": "9853423c25fc5e64fd716a7eb03948a0",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 3: the printed question with a section of a two-storey house and a sketch of a toilet isolating valve.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q3-dual-flush",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q3-dual-flush.png",
+          "srcHash": "0af5c40cfbcf5bae2da361038bd8bd22",
+          "alt": "SEC 2019 Ordinary marking scheme notes on advantages of a dual-flush toilet cistern.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q4-b", topicId: "cons-1-1", conceptId: "method-connecting-inner-outer-leaves-wall",
+    id: "cons-2019-ol-q4-b", topicId: "cons-3-3", conceptId: "method-connecting-inner-outer-leaves-wall",
     section: "B", questionRef: "2019 OL Q4(b)",
+    stem: "The sketch shows a reinforced concrete strip foundation, and a 400 mm cavity wall for a new house.",
     questionText: "Using notes and freehand sketches, show one method of connecting the inner and outer leaves of the wall.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":6,"perPart":4}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "cons-2019-ol-q4-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, show one method of connecting the inner and outer leaves of the wall.", marks: 4, openList: true, group: {"claimMax":1,"perOption":4,"options":["Wall ties are used in cavity walls","Wall ties are used to join the two leaves of a cavity wall together","Wall ties provide stability to cavity walls","Wall ties are built into the leaves during construction","The wall ties are made from corrosion and fire resistant materials","Basalt fibre wall ties are used in high insulated walls"]} },
+    { id: "method", kind: "criterion", verbatim: "Method of connecting inner and outer leafs", marks: 4, contextNote: "Such as: corrosion- and fire-resistant wall ties built into both leaves as the wall rises, giving stability; basalt fibre ties in highly insulated walls.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketches: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Reinforced strip foundation and cavity wall",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wall position and the steel reinforcement in (a) are both required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q4-original.png",
+          "srcHash": "bb990b0825b3df59118b06796143c3bc",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 4: the printed question with a sketch of a cavity wall on a reinforced concrete strip foundation.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q4-ties",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q4-ties.png",
+          "srcHash": "fe610f3999cdfbcfa73a0340ea4e8615",
+          "alt": "SEC 2019 Ordinary marking scheme notes and sketch on wall ties connecting the inner and outer leaves.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q4-c", topicId: "cons-1-1", conceptId: "advantages-ready-mixed-concrete-foundations-dwelling",
+    id: "cons-2019-ol-q4-c", topicId: "cons-2-7", conceptId: "advantages-ready-mixed-concrete-foundations-dwelling",
     section: "B", questionRef: "2019 OL Q4(c)",
+    stem: "The sketch shows a reinforced concrete strip foundation, and a 400 mm cavity wall for a new house.",
     questionText: "Discuss two advantages of using ready-mixed concrete in the foundations of a dwelling house.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 4","answer":2,"ofParts":8,"perPart":4}, totalMarks: 8,
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "cons-2019-ol-q4-c-r1", kind: "anyN", verbatim: "Discuss two advantages of using ready-mixed concrete in the foundations of a dwelling house.", marks: 8, openList: true, group: {"claimMax":2,"perOption":4,"options":["The quality of the concrete is more consistent","Ready mixed concrete is produced under controlled conditions","The cost of labour to produce concrete is eliminated","Wastage of concrete materials is down to a minimum","Ready mixed concrete is a fast and reliable method of producing concrete","Not necessary to store concrete materials on site","Dust pollution is reduced on site – ready mixed concrete uses bulk cement instead of bags of cement","Ready mixed concrete is environmentally friendly"]} },
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 4, contextNote: "Such as: more consistent quality, produced under controlled conditions; no labour cost of mixing on site.", permittedMarks: [0,1,2,3,4] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 4, contextNote: "A second, different advantage. Such as: minimal waste; fast and reliable; no materials stored on site; less dust from bagged cement.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Reinforced strip foundation and cavity wall",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wall position and the steel reinforcement in (a) are both required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q4-original.png",
+          "srcHash": "bb990b0825b3df59118b06796143c3bc",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 4: the printed question with a sketch of a cavity wall on a reinforced concrete strip foundation.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q4-ready-mix",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q4-ready-mix.png",
+          "srcHash": "ca6323596a2a52daaa7c6603ca85f929",
+          "alt": "SEC 2019 Ordinary marking scheme notes on advantages of ready-mixed concrete for foundations.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q5-a", topicId: "cons-4-3", conceptId: "vertical-section-parallel-joists-through-floor",
+    id: "cons-2019-ol-q5-a", topicId: "cons-1-5", conceptId: "vertical-section-parallel-joists-through-floor",
     section: "B", questionRef: "2019 OL Q5(a)",
+    stem: "A non-loadbearing stud partition separates two bedrooms on the first floor of a dwelling house, as shown. The partition is supported on 225 mm × 50 mm flooring joists, and the first floor is a floating tongue and groove wooden floor on 20 mm plywood decking, with a plasterboard ceiling beneath.",
     questionText: "To a scale of 1:5 draw a vertical section, parallel to the joists, through the floor and the stud partition. Show the typical construction details from the plasterboard ceiling, through the first floor and the stud partition up to a level 400 mm above the finished floor. Show a floor width of 500 mm on each side of the partition. Include three typical dimensions on your drawing.",
-    tariffModel: {"kind":"bestNofParts","notation":"7 x 5","answer":7,"ofParts":11,"perPart":5}, totalMarks: 35,
+    tariffModel: {"kind":"fixed"}, totalMarks: 38,
     rows: [
-    { id: "cons-2019-ol-q5-a-r1", kind: "anyN", verbatim: "Specifications", marks: 35, contextNote: "Specifications", openList: true, group: {"claimMax":7,"perOption":5,"options":["Stud partition 63 to 100 mm × 38 to 50 mm","Insulation between studs","Plasterboard 12.5 mm","Skirting board 120 mm × 20 mm","Floating tongued and grooved timber floor","Floor underlay","Plywood 25 mm","Joists 200 mm × 50 mm","Insulation between joists 150 mm","Vapour barrier","Plasterboard, plaster"]} },
+    { id: "details", kind: "criterion", verbatim: "Any 7 of the above details (5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: upper floor joists 200 × 50 mm; 150 mm insulation between joists; 25 mm plywood; ceiling plasterboard, plaster and vapour barrier; stud partition 100 × 50 mm; stud soleplate 100 × 50 mm; 12.5 mm plasterboard on the partition; floor underlay; floating tongued and grooved timber floor; skirting board 120 × 20 mm.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "dimensions", kind: "criterion", verbatim: "Any three typical dimensions", marks: 3, contextNote: "Three appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Stud partition on a floating timber floor",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band under part (b)’s sub-total, so it is marked with the partition insulation."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q5-original.png",
+          "srcHash": "cbed6b58232356cc5b55fef07d80ebdd",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 5: the printed question with a sketch of a stud partition on a floating timber floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q5-scheme.png",
+          "srcHash": "96b2c45b39db972ebed72ccbf5feb533",
+          "alt": "SEC model section through the floor and stud partition with the partition insulation marked (b), the specification list and the notes for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1282,128 +1538,440 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
     id: "cons-2019-ol-q5-b", topicId: "cons-4-5", conceptId: "position-insulation-partition",
     section: "B", questionRef: "2019 OL Q5(b)",
+    stem: "A non-loadbearing stud partition separates two bedrooms on the first floor of a dwelling house, as shown. The partition is supported on 225 mm × 50 mm flooring joists, and the first floor is a floating tongue and groove wooden floor on 20 mm plywood decking, with a plasterboard ceiling beneath.",
     questionText: "On your drawing show the position of the insulation in the partition.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":2,"perPart":4}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "cons-2019-ol-q5-b-r1", kind: "anyN", verbatim: "Show on your drawing the position of the insulation in the partition", marks: 4, contextNote: "Show on your drawing the position of the insulation in the partition", openList: true, group: {"claimMax":1,"perOption":4,"options":["The insulation is fitted between the studs","Insulated plasterboard fixed to both sides of the stud partition"]} },
+    { id: "insulation", kind: "criterion", verbatim: "Insulation in stud partition", marks: 4, contextNote: "Show and identify the insulation fitted between the studs (or insulated plasterboard on both sides), as in the scheme’s model section.", permittedMarks: [0,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band under part (b)’s sub-total.", permittedMarks: [0,4,6,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Stud partition on a floating timber floor",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band under part (b)’s sub-total, so it is marked with the partition insulation."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q5-original.png",
+          "srcHash": "cbed6b58232356cc5b55fef07d80ebdd",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 5: the printed question with a sketch of a stud partition on a floating timber floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q5-scheme.png",
+          "srcHash": "96b2c45b39db972ebed72ccbf5feb533",
+          "alt": "SEC model section through the floor and stud partition with the partition insulation marked (b), the specification list and the notes for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q6-a-using-a-contact-adhesive-to-glue-veneers", topicId: "cons-1-8", conceptId: "specific-safety-precautions-observed-construction-studies-using-a-contact-adhesive-to-glue-veneers",
-    section: "B", questionRef: "2019 OL Q6(a) — Using a contact adhesive to glue veneers",
-    questionText: "State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations: • using a contact adhesive to glue veneers.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 4","answer":2,"ofParts":8,"perPart":4}, totalMarks: 8,
+    id: "cons-2019-ol-q6-a-using-a-contact-adhesive-to-glue-veneers", topicId: "cons-9-4", conceptId: "specific-safety-precautions-observed-construction-studies-using-a-contact-adhesive-to-glue-veneers",
+    section: "B", questionRef: "2019 OL Q6(a) — using-a-contact-adhesive-to-glue-veneers",
+    questionText: "State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations: using a contact adhesive to glue veneers; using a battery powered screwdriver. — Using a contact adhesive to glue veneers",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "cons-2019-ol-q6-a-using-a-contact-adhesive-to-glue-veneers-r1", kind: "anyN", verbatim: "Using a contact adhesive to glue veneers", marks: 8, contextNote: "Using a contact adhesive to glue veneers", openList: true, group: {"claimMax":2,"perOption":4,"options":["Carry out the work in a well-ventilated area","Keep the glue away from sources of ignition","Put on safety goggles, a mask and latex gloves","Read the instructions on the container for use and storage","Do not inhale the fumes","Avoid contact with the skin","Keep out of the reach of children","Discard any glue that has expired in an appropriate and safe way"]} },
+    { id: "precaution-1", kind: "criterion", verbatim: "Precaution 1", marks: 4, contextNote: "Such as: work in a well-ventilated area; keep the glue away from sources of ignition.", permittedMarks: [0,1,2,3,4] },
+    { id: "precaution-2", kind: "criterion", verbatim: "Precaution 2", marks: 4, contextNote: "A second, different precaution. Such as: wear goggles, a mask and latex gloves; do not inhale the fumes or let it touch the skin; follow the container’s instructions.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Safety in the Construction Studies room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed situations in (a) are required, each with two precautions and separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-original.png",
+          "srcHash": "4319c15a5594e185b04cfde0a1f9cf7a",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 6: the printed question with a sketch of a bandsaw.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q6-adhesive",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-adhesive.png",
+          "srcHash": "bae31663306115a86cd822989063f920",
+          "alt": "SEC 2019 Ordinary marking scheme notes on safety precautions when using a contact adhesive to glue veneers.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q6-a-using-a-battery-powered-screwdriver", topicId: "cons-1-8", conceptId: "specific-safety-precautions-observed-construction-studies-using-a-battery-powered-screwdriver",
-    section: "B", questionRef: "2019 OL Q6(a) — Using a battery-powered screwdriver",
-    questionText: "State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations: • using a battery powered screwdriver.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 4","answer":2,"ofParts":9,"perPart":4}, totalMarks: 8,
+    id: "cons-2019-ol-q6-a-using-a-battery-powered-screwdriver", topicId: "cons-9-4", conceptId: "specific-safety-precautions-observed-construction-studies-using-a-battery-powered-screwdriver",
+    section: "B", questionRef: "2019 OL Q6(a) — using-a-battery-powered-screwdriver",
+    questionText: "State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations: using a contact adhesive to glue veneers; using a battery powered screwdriver. — Using a battery-powered screwdriver",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "cons-2019-ol-q6-a-using-a-battery-powered-screwdriver-r1", kind: "anyN", verbatim: "Using a battery-powered screwdriver", marks: 8, contextNote: "Using a battery-powered screwdriver", openList: true, group: {"claimMax":2,"perOption":4,"options":["Ensure the work is firmly held on a solid surface or fixed in a vice","Never hold the piece you are working on in your hand","Select the correct size of bit for the screw being used","The screwdriver tip should be fitted fully into the screw head before starting the battery powered screwdriver","Apply firm pressure and press the trigger lightly when starting","Set to the highest torque when removing screws","Concentrate on the work being carried out","Make sure your finger is away from the trigger when changing bits","Always store the charger unit away safely when finished"]} },
+    { id: "precaution-1", kind: "criterion", verbatim: "Precaution 1", marks: 4, contextNote: "Such as: hold the work firmly on a solid surface or in a vice, never in the hand; use the correct size of bit.", permittedMarks: [0,1,2,3,4] },
+    { id: "precaution-2", kind: "criterion", verbatim: "Precaution 2", marks: 4, contextNote: "A second, different precaution. Such as: seat the tip fully in the screw head before starting; keep the finger off the trigger when changing bits; store the charger safely.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Safety in the Construction Studies room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed situations in (a) are required, each with two precautions and separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-original.png",
+          "srcHash": "4319c15a5594e185b04cfde0a1f9cf7a",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 6: the printed question with a sketch of a bandsaw.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q6-screwdriver",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-screwdriver.png",
+          "srcHash": "6b679d2693af0f718241e085258a8a12",
+          "alt": "SEC 2019 Ordinary marking scheme notes on safety precautions when using a battery-powered screwdriver.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q6-b", topicId: "cons-1-8", conceptId: "specific-safety-precautions-observed-when-operating",
+    id: "cons-2019-ol-q6-b", topicId: "cons-9-4", conceptId: "specific-safety-precautions-observed-when-operating",
     section: "B", questionRef: "2019 OL Q6(b)",
     questionText: "Using notes and freehand sketches, describe three specific safety precautions to be observed when operating a bandsaw to cut a piece of wood in the Construction Studies room. Give one reason for each safety precaution outlined.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 6","answer":3,"ofParts":3,"perPart":6}, totalMarks: 18,
+    tariffModel: {"kind":"fixed"}, totalMarks: 26,
     rows: [
-    { id: "cons-2019-ol-q6-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, describe three specific safety precautions to be observed when operating a bandsaw to", marks: 18, openList: true, group: {"claimMax":3,"perOption":6,"options":["Precaution one and valid reason","Precaution two and valid reason","Precaution three and valid reason"]} },
+    { id: "precaution-1", kind: "criterion", verbatim: "Precaution one and valid reason", marks: 6, contextNote: "Precaution and reason. Such as: the blade guard set within 3–6 mm of the wood with the motor off, so the guard is in place before starting.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "precaution-2", kind: "criterion", verbatim: "Precaution two and valid reason", marks: 6, contextNote: "A second, different precaution and reason. Such as: hands never closer than 100 mm to the blade, with a push stick for small stock, to avoid cutting the hands.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "precaution-3", kind: "criterion", verbatim: "Precaution three and valid reason", marks: 6, contextNote: "A third, different precaution and reason. Such as: wait until the motor is at full speed before cutting, to prevent jamming; eye protection against splinters and dust; long hair and loose clothing contained.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Safety in the Construction Studies room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed situations in (a) are required, each with two precautions and separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-original.png",
+          "srcHash": "4319c15a5594e185b04cfde0a1f9cf7a",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 6: the printed question with a sketch of a bandsaw.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q6-bandsaw",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-bandsaw.png",
+          "srcHash": "93f793cd202656f80d4314a5366fc3ab",
+          "alt": "SEC 2019 Ordinary marking scheme table of bandsaw safety precautions and reasons, with sketches of the bandsaw, a push stick and safety glasses (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q6-c", topicId: "cons-1-8", conceptId: "reasons-why-safety-instruction-necessary-all",
+    id: "cons-2019-ol-q6-c", topicId: "cons-9-4", conceptId: "reasons-why-safety-instruction-necessary-all",
     section: "B", questionRef: "2019 OL Q6(c)",
     questionText: "Discuss two reasons why safety instruction is necessary for all students prior to using machinery in a Construction Studies room.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":4,"perPart":4}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "cons-2019-ol-q6-c-r1", kind: "anyN", verbatim: "Possible Reasons", marks: 4, contextNote: "Possible Reasons", openList: true, group: {"claimMax":1,"perOption":4,"options":["To avoid accidents when using machinery in a Construction Room","To prevent serious injury being caused by moving parts of machinery","To make sure all users understand the dangers of machinery in a Construction room","To provide a safe environment for all students using machinery in a Construction"]} },
+    { id: "reason-1", kind: "criterion", verbatim: "Reason 1", marks: 4, contextNote: "Such as: to avoid accidents and serious injury from moving parts of machinery.", permittedMarks: [0,1,2,3,4] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason 2", marks: 4, contextNote: "A second, different reason. Such as: all users understand the dangers; a safe environment for all students; compliance with Health and Safety regulations.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Safety in the Construction Studies room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed situations in (a) are required, each with two precautions and separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-original.png",
+          "srcHash": "4319c15a5594e185b04cfde0a1f9cf7a",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 6: the printed question with a sketch of a bandsaw.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q6-instruction",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-instruction.png",
+          "srcHash": "8422b1c3dc24dabee32875fbb319cb35",
+          "alt": "SEC 2019 Ordinary marking scheme notes on reasons for safety instruction before using machinery.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q7-b", topicId: "cons-1-1", conceptId: "select-floor-type-kitchen-area-another",
+    id: "cons-2019-ol-q7-b", topicId: "cons-4-2", conceptId: "select-floor-type-kitchen-area-another",
     section: "B", questionRef: "2019 OL Q7(b)",
+    stem: "A draft design for a small open-plan kitchen and dining area for a new house is shown. The positions of the window and doors are included.",
     questionText: "Select a suitable floor type for the kitchen area A and another appropriate floor type for the dining area B. Discuss one reason for each floor type selected.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 3","answer":4,"ofParts":6,"perPart":3}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "cons-2019-ol-q7-b-r1", kind: "anyN", verbatim: "Select a suitable floor type for the kitchen area A and another appropriate floor type for the dining area B. Discuss on", marks: 12, openList: true, group: {"claimMax":4,"perOption":3,"options":["Ceramic tiles","Stone","Marmoleum","Wood laminate","Vinyl","Marmoleum"]} },
+    { id: "kitchen-floor", kind: "criterion", verbatim: "Suitable flooring type for Kitchen area A", marks: 3, contextNote: "Such as: ceramic tiles; stone (granite, marble, limestone, slate); marmoleum.", permittedMarks: [0,1,2,3] },
+    { id: "kitchen-reason", kind: "criterion", verbatim: "Reason for flooring type in Kitchen A", marks: 3, contextNote: "A reason matching the kitchen floor. Such as: hard-wearing, impervious to water, easy to maintain.", permittedMarks: [0,1,2,3] },
+    { id: "dining-floor", kind: "criterion", verbatim: "Suitable flooring type for Dining area B", marks: 3, contextNote: "A different floor type. Such as: wood laminate; vinyl; marmoleum.", permittedMarks: [0,1,2,3] },
+    { id: "dining-reason", kind: "criterion", verbatim: "Reason for flooring type in Dining B", marks: 3, contextNote: "A reason matching the dining floor. Such as: durable and cheaper than solid wood; resists scuffs and stains; easy to maintain.", permittedMarks: [0,1,2,3] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Small open-plan kitchen and dining area",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All three printed appliances in (a) are required in one sketch, each separately marked; floor types are open choices."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q7-original.png",
+          "srcHash": "bfdad2a1d4743caf3b6de0b90f67bb5a",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 7: the printed question with the draft plan of the kitchen area A and dining area B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q7-floors",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q7-floors.png",
+          "srcHash": "dce795eea31d55d6f58f0fe6e1e3a3cb",
+          "alt": "SEC 2019 Ordinary marking scheme notes on floor types for kitchen area A and dining area B (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q7-c", topicId: "cons-1-1", conceptId: "design-showing-position-island-unit-kitchen",
+    id: "cons-2019-ol-q7-c", topicId: "cons-1-2", conceptId: "design-showing-position-island-unit-kitchen",
     section: "B", questionRef: "2019 OL Q7(c)",
+    stem: "A draft design for a small open-plan kitchen and dining area for a new house is shown. The positions of the window and doors are included.",
     questionText: "Draw a sketch of an outline design showing the position of an island unit suitable for the kitchen area A. Discuss one advantage of including an island unit in the kitchen.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 4","answer":2,"ofParts":5,"perPart":4}, totalMarks: 8,
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
-    { id: "cons-2019-ol-q7-c-r1", kind: "anyN", verbatim: "Discuss one advantage of including an island unit in the kitchen", marks: 8, contextNote: "Discuss one advantage of including an island unit in the kitchen", openList: true, group: {"claimMax":2,"perOption":4,"options":["An island unit allows extra seating in the kitchen area","Extra storage space in the kitchen","Appliances could be incorporated in the island unit","Additional worktop space","Greater design flexibility in the kitchen area"]} },
+    { id: "island", kind: "criterion", verbatim: "Outline design and position of island unit", marks: 4, contextNote: "An outline island unit positioned in kitchen area A, as in the scheme’s model plan.", permittedMarks: [0,1,2,3,4] },
+    { id: "advantage", kind: "criterion", verbatim: "Advantage of including island unit", marks: 4, contextNote: "Such as: extra seating; extra storage; appliances built in; more worktop; greater design flexibility.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketches: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Small open-plan kitchen and dining area",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All three printed appliances in (a) are required in one sketch, each separately marked; floor types are open choices."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q7-original.png",
+          "srcHash": "bfdad2a1d4743caf3b6de0b90f67bb5a",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 7: the printed question with the draft plan of the kitchen area A and dining area B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q7-island",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q7-island.png",
+          "srcHash": "4c0815b0d7cb7af2e05df86c39e8d4d9",
+          "alt": "SEC model kitchen plan with an island unit, and the advantages of an island unit.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q9-a", topicId: "cons-3-3", conceptId: "wood-external-cladding-reasons-choice",
+    id: "cons-2019-ol-q9-a", topicId: "cons-3-2", conceptId: "wood-external-cladding-reasons-choice",
     section: "B", questionRef: "2019 OL Q9(a)",
+    stem: "The sketch shows an eco-friendly home office in a garden setting. The office is of timber frame construction with an external wooden cladding.",
     questionText: "Specify a suitable wood for the external cladding, and give two reasons for your choice.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 6","answer":3,"ofParts":4,"perPart":6}, totalMarks: 18,
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
-    { id: "cons-2019-ol-q9-a-r1", kind: "anyN", verbatim: "Specify a suitable wood for the external cladding, and give two reasons for your choice.", marks: 18, openList: true, group: {"claimMax":3,"perOption":6,"options":["Specify a suitable wood for the external cladding","Cedar","Larch","Red deal or Scots pine"]} },
+    { id: "wood", kind: "criterion", verbatim: "Suitable wood for external cladding", marks: 6, contextNote: "Such as: cedar; larch; red deal or Scots pine; any pressure-impregnated softwood.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "reason-1", kind: "criterion", verbatim: "Valid reason one", marks: 6, contextNote: "A reason matching the wood. Such as, cedar: very resistant to decay, light and easy to work; larch: naturally durable outdoors and grown in Ireland.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "reason-2", kind: "criterion", verbatim: "Valid reason two", marks: 6, contextNote: "A second, different reason. Such as: a pleasant appearance; easily finished with oil; red deal: reasonably priced, strong and stable.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Eco-friendly garden home office",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wood, the modification and the advantages are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q9-original.png",
+          "srcHash": "13bd7d00d6bd8dac42bdc7556284a2af",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 9: the printed question with a sketch of a timber-clad home office in a garden.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q9-cladding",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q9-cladding.png",
+          "srcHash": "0f6c3717d622bdf563360c3adf1d6e76",
+          "alt": "SEC 2019 Ordinary marking scheme notes on suitable woods for external cladding and the reasons, with a sketch of the home office.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q9-b", topicId: "cons-1-1", conceptId: "home-office-modified-provide-greater-views",
+    id: "cons-2019-ol-q9-b", topicId: "cons-3-5", conceptId: "home-office-modified-provide-greater-views",
     section: "B", questionRef: "2019 OL Q9(b)",
+    stem: "The sketch shows an eco-friendly home office in a garden setting. The office is of timber frame construction with an external wooden cladding.",
     questionText: "The home office is to be modified to provide greater views of the surrounding garden. Using notes and freehand sketches, show one modification to the existing design that would increase the visual connection between the office and the garden.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 12","answer":1,"ofParts":5,"perPart":12}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "cons-2019-ol-q9-b-r1", kind: "anyN", verbatim: "The home office is to be modified to provide greater views of the surrounding garden. Using notes and freehand sketches,", marks: 12, openList: true, group: {"claimMax":1,"perOption":12,"options":["Replace existing door with a sliding door","The area outside the door could be changed into a porch or patio","Double glazed clear glass full height panels","The existing window could be replaced with a larger taller unit","All units would be double, or triple glazed"]} },
+    { id: "modification", kind: "criterion", verbatim: "Modification to existing office (6 notes + 6 sketches)", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: a sliding door in place of the existing door; full-height double-glazed clear panels; a larger, taller window; a porch or patio outside the door.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Eco-friendly garden home office",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wood, the modification and the advantages are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q9-original.png",
+          "srcHash": "13bd7d00d6bd8dac42bdc7556284a2af",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 9: the printed question with a sketch of a timber-clad home office in a garden.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q9-modification",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q9-modification.png",
+          "srcHash": "29e5baa1d3279f73c0569cc1d2ed324e",
+          "alt": "SEC 2019 Ordinary marking scheme notes on modifications linking the office to the garden, with sketches of glazed doors and full-height glazing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q9-c", topicId: "cons-1-1", conceptId: "advantages-home-office-user-increasing-visual",
+    id: "cons-2019-ol-q9-c", topicId: "cons-1-2", conceptId: "advantages-home-office-user-increasing-visual",
     section: "B", questionRef: "2019 OL Q9(c)",
+    stem: "The sketch shows an eco-friendly home office in a garden setting. The office is of timber frame construction with an external wooden cladding.",
     questionText: "Discuss two advantages for the home office user of increasing the visual connection with the surrounding garden.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 6","answer":2,"ofParts":7,"perPart":6}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "cons-2019-ol-q9-c-r1", kind: "anyN", verbatim: "Advantages", marks: 12, contextNote: "Advantages", openList: true, group: {"claimMax":2,"perOption":6,"options":["The double-glazed glass will provide a warmer structure","Make the garden area part of the office","They create a bigger floor area","They create a connection with the garden area","People arriving into have a rest area","Allows sunlight and light into the building","Allows wheelchair access"]} },
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 6, contextNote: "Such as: the garden becomes part of the office; a connection with the garden area.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 6, contextNote: "A second, different advantage. Such as: more sunlight and light into the building; a warmer structure with double glazing; wheelchair access.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Eco-friendly garden home office",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wood, the modification and the advantages are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q9-original.png",
+          "srcHash": "13bd7d00d6bd8dac42bdc7556284a2af",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 9: the printed question with a sketch of a timber-clad home office in a garden.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q9-advantages",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q9-advantages.png",
+          "srcHash": "f7c47427a17ae6d06421488dca895a89",
+          "alt": "SEC 2019 Ordinary marking scheme notes on advantages of a visual connection with the garden.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1412,24 +1980,89 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
     id: "cons-2019-ol-q1-b", topicId: "cons-3-6", conceptId: "clearly-typical-design-detailing-ensure-cavity",
     section: "B", questionRef: "2019 OL Q1(b)",
+    stem: "The external wall of a dwelling house is a 400 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. A triple glazed timber casement window is fixed in the external wall, as shown. The fixed frame of the window is 150 mm × 80 mm.",
     questionText: "Show clearly on your drawing the typical design detailing to ensure that the cavity is closed at the window head.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 3","answer":1,"ofParts":2,"perPart":3}, totalMarks: 3,
+    tariffModel: {"kind":"fixed"}, totalMarks: 11,
     rows: [
-    { id: "cons-2019-ol-q1-b-r1", kind: "anyN", verbatim: "Show clearly on your drawing the typical design detailing to ensure that the cavity is closed at the window head.", marks: 3, openList: true, group: {"claimMax":1,"perOption":3,"options":["Fitting a proprietary fire stop cavity closer in the cavity above the window head","Fixing plasterboard to inside reveal"]} },
+    { id: "closer", kind: "criterion", verbatim: "Cavity closer detail", marks: 3, contextNote: "Show and identify a proprietary fire-stop cavity closer in the cavity above the window head, as in the scheme’s model section.", permittedMarks: [0,3] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band under part (b)’s sub-total.", permittedMarks: [0,4,6,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Window head and cavity wall section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band under part (b)’s sub-total, so it is marked with the cavity-closer detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q1-original.png",
+          "srcHash": "b291938b40ba0d0bf9254489630c41ab",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 1: the printed question with a sketch of a casement window in a rendered cavity wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q1-scheme.png",
+          "srcHash": "8c3f604566f8aa869c20187404be18ba",
+          "alt": "SEC model section through the window head with the cavity closer marked (b), the specification list and the notes for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2019-ol-q7-a", topicId: "cons-1-1", conceptId: "given-design-preferred-location-kitchen-area",
+    id: "cons-2019-ol-q7-a", topicId: "cons-1-2", conceptId: "given-design-preferred-location-kitchen-area",
     section: "B", questionRef: "2019 OL Q7(a)",
-    questionText: "Draw a freehand sketch of the given design and show your preferred location for each of the following in the kitchen area: • cooker • fridge • sink.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 4","answer":4,"ofParts":14,"perPart":4}, totalMarks: 16,
+    stem: "A draft design for a small open-plan kitchen and dining area for a new house is shown. The positions of the window and doors are included.",
+    questionText: "Draw a freehand sketch of the given design and show your preferred location for each of the following in the kitchen area: cooker; fridge; sink. Give one reason for selecting each location.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
-    { id: "cons-2019-ol-q7-a-r1", kind: "anyN", verbatim: "Draw a freehand sketch of the given design and show your preferred location for each of the following in the kitchen are", marks: 16, contextNote: "The scheme groups its answer under: Sink; Cooker; Fridge", openList: true, group: {"claimMax":4,"perOption":4,"options":["Natural light is available to the sink S at the window","It is pleasant for the person using the sink","It is close to the cooker, less than 2 metres","It is good to have a view to the garden or lawn","It forms part of the triangle design for kitchens","There is ample worktop space at either side","There is worktop space at either side of the cooker C","It forms part of the triangle for kitchen layout","It avoids crossing the kitchen with hot pans or pots","It is a safe location in relation to the door opening","It is within easy reach of the sink","The fridge F is near the sink for food preparation","It forms part of the working triangle","It has worktop space at either side"]} },
+    { id: "sketch", kind: "criterion", verbatim: "Draw sketch of the given kitchen and dining area", marks: 4, contextNote: "A freehand sketch of the given kitchen and dining design.", permittedMarks: [0,1,2,3,4] },
+    { id: "cooker", kind: "criterion", verbatim: "Location and valid reason for cooker position (3 + 1 marks)", marks: 4, contextNote: "Location 3 and reason 1. Such as: worktop on either side; part of the work triangle; no crossing the kitchen with hot pans; safe in relation to the door.", permittedMarks: [0,1,2,3,4] },
+    { id: "fridge", kind: "criterion", verbatim: "Location and valid reason for fridge position (3 + 1 marks)", marks: 4, contextNote: "Location 3 and reason 1. Such as: near the sink for food preparation; part of the work triangle; worktop to unpack shopping.", permittedMarks: [0,1,2,3,4] },
+    { id: "sink", kind: "criterion", verbatim: "Location and valid reason for sink position (3 + 1 marks)", marks: 4, contextNote: "Location 3 and reason 1. Such as: natural light and a view at the window; close to the cooker; worktop on either side.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Small open-plan kitchen and dining area",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All three printed appliances in (a) are required in one sketch, each separately marked; floor types are open choices."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q7-original.png",
+          "srcHash": "bfdad2a1d4743caf3b6de0b90f67bb5a",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 7: the printed question with the draft plan of the kitchen area A and dining area B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q7-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q7-layout.png",
+          "srcHash": "f2baacdfef3287c007cd8aa8a970d209",
+          "alt": "SEC model kitchen layout with the sink, cooker and fridge in a work triangle, and the reasons for each location.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12951,6 +13584,590 @@ export const CARDS: SecCard[] = [
           "srcHash": "a930c0406e11e56790dabf7b60bc61f5",
           "alt": "SEC 2020 Ordinary marking scheme notes on modifications that let more natural light into the extension, with sketches of glazing, roof lights and folding doors.",
           "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2019-ol-q1-complete", topicId: "cons-1-5", conceptId: "window-head-section-complete",
+    section: "B", questionRef: "2019 OL Q1 — complete",
+    stem: "The external wall of a dwelling house is a 400 mm concrete block wall with a full-fill insulated cavity. The wall is plastered on both sides. A triple glazed timber casement window is fixed in the external wall, as shown. The fixed frame of the window is 150 mm × 80 mm.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the top portion of the window. Show the wall, the concrete lintels and the fixed frame of the window. On your drawing, show the typical construction details from a level 300 mm below to a level 400 mm above the concrete lintels. Include four typical dimensions. (b) Show clearly on your drawing the typical design detailing to ensure that the cavity is closed at the window head.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 7 of the above details (5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 19 mm external plaster; 100 mm block outer leaf; 200 mm thermal insulation; stepped DPC/cavity tie; 100 mm block inner leaf; 15 mm internal plaster; prestressed concrete lintels 100 × 70 mm; window head 150 × 80 mm; triple glazing with low-e glass.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Any 4 typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-closer", kind: "criterion", verbatim: "Cavity closer detail", marks: 3, contextNote: "Show and identify a proprietary fire-stop cavity closer in the cavity above the window head, as in the scheme’s model section.", permittedMarks: [0,3] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band under part (b)’s sub-total.", permittedMarks: [0,4,6,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2019-ol-q1-a","label":"a","marks":39,"rowIds":["a-details","a-dimensions"]},{"sourceCardId":"cons-2019-ol-q1-b","label":"b","marks":11,"rowIds":["b-closer","b-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Window head and cavity wall section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band under part (b)’s sub-total, so it is marked with the cavity-closer detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q1-original.png",
+          "srcHash": "b291938b40ba0d0bf9254489630c41ab",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 1: the printed question with a sketch of a casement window in a rendered cavity wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q1-scheme.png",
+          "srcHash": "8c3f604566f8aa869c20187404be18ba",
+          "alt": "SEC model section through the window head with the cavity closer marked (b), the specification list and the notes for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2019-ol-q2-a", topicId: "cons-3-9", conceptId: "attic-insulation-a",
+    section: "B", questionRef: "2019 OL Q2(a)",
+    stem: "A young couple have bought an old, uninsulated house. They wish to improve the insulation properties of the house and have decided to start by insulating the attic space. The sketch shows the ceiling joists and the trapdoor to the attic. The ceiling joists are 200 mm × 40 mm.",
+    questionText: "Draw a large freehand sketch of the triangular attic space. On your sketch show the typical design detailing necessary to highly insulate the attic at ceiling joist level. Recommend a preferred insulation type and give its typical thickness.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 26,
+    rows: [
+    { id: "sketch", kind: "criterion", verbatim: "Draw sketch of insulated attic space", marks: 8, contextNote: "A large freehand sketch of the attic with insulation quilt between the joists above the plasterboard and a further layer across the joists.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "type", kind: "criterion", verbatim: "Preferred insulation type for attic space", marks: 5, contextNote: "Such as: fibreglass insulation; rock wool; hemp insulation.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "thickness", kind: "criterion", verbatim: "Thickness of insulation", marks: 5, contextNote: "Such as: a minimum of 350 mm.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating an attic and its trapdoor",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both the insulation and the sealing of the trapdoor in (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q2-original.png",
+          "srcHash": "996d793f2d1dc9529e149f4b7836f918",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 2: the printed question with a sketch of the ceiling joists and the attic trapdoor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q2-attic",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q2-attic.png",
+          "srcHash": "a8cf4c64491741f0795922c62d96e342",
+          "alt": "SEC model sketch of the insulated attic with the method, insulation types and 350 mm minimum thickness.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2019-ol-q2-complete", topicId: "cons-3-9", conceptId: "attic-insulation-complete",
+    section: "B", questionRef: "2019 OL Q2 — complete",
+    stem: "A young couple have bought an old, uninsulated house. They wish to improve the insulation properties of the house and have decided to start by insulating the attic space. The sketch shows the ceiling joists and the trapdoor to the attic. The ceiling joists are 200 mm × 40 mm.",
+    questionText: "(a) Draw a large freehand sketch of the triangular attic space. On your sketch show the typical design detailing necessary to highly insulate the attic at ceiling joist level. Recommend a preferred insulation type and give its typical thickness. (b) The trapdoor is also to be insulated and well-sealed. Using notes and freehand sketches show the insulation to the trapdoor. Show also one method of sealing the trapdoor. (c) Discuss two reasons why the couple should begin by insulating the attic space.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-sketch", kind: "criterion", verbatim: "Draw sketch of insulated attic space", marks: 8, contextNote: "A large freehand sketch of the attic with insulation quilt between the joists above the plasterboard and a further layer across the joists.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-type", kind: "criterion", verbatim: "Preferred insulation type for attic space", marks: 5, contextNote: "Such as: fibreglass insulation; rock wool; hemp insulation.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "a-thickness", kind: "criterion", verbatim: "Thickness of insulation", marks: 5, contextNote: "Such as: a minimum of 350 mm.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-insulating", kind: "criterion", verbatim: "Insulating the trapdoor Valid detail one", marks: 5, contextNote: "Such as: a pre-insulated trapdoor; layers of solid insulation fitted and glued to its upper face.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-sealing", kind: "criterion", verbatim: "Sealing the trapdoor Valid detail two", marks: 5, contextNote: "Such as: weather stripping around the edge of the trapdoor; gaps between the frame and the joists sealed against air penetration.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "c-reason-1", kind: "criterion", verbatim: "Advantage 1", marks: 3, contextNote: "Such as: the greatest heat loss, up to 30%, is through the roof; the most effective way to save energy.", permittedMarks: [0,1,2,3] },
+    { id: "c-reason-2", kind: "criterion", verbatim: "Advantage 2", marks: 3, contextNote: "A second, different reason. Such as: relatively easy for the home owner to do; lower bills, a warmer house and a better BER.", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2019-ol-q2-a","label":"a","marks":26,"rowIds":["a-sketch","a-type","a-thickness","a-presentation"]},{"sourceCardId":"cons-2019-ol-q2-b","label":"b","marks":18,"rowIds":["b-insulating","b-sealing","b-presentation"]},{"sourceCardId":"cons-2019-ol-q2-c","label":"c","marks":6,"rowIds":["c-reason-1","c-reason-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating an attic and its trapdoor",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both the insulation and the sealing of the trapdoor in (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q2-original.png",
+          "srcHash": "996d793f2d1dc9529e149f4b7836f918",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 2: the printed question with a sketch of the ceiling joists and the attic trapdoor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q2-attic",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q2-attic.png",
+          "srcHash": "a8cf4c64491741f0795922c62d96e342",
+          "alt": "SEC model sketch of the insulated attic with the method, insulation types and 350 mm minimum thickness.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2019-ol-q3-complete", topicId: "cons-5-2", conceptId: "cold-water-supply-toilet-complete",
+    section: "B", questionRef: "2019 OL Q3 — complete",
+    questionText: "(a) A dwelling should have a clean water supply for domestic consumption. Draw a large freehand sketch of the given house and, on your sketch, show the pipework necessary to supply cold water to the kitchen sink on the ground floor and to the toilet on the first floor. Include the following in your diagram: rising main; pipework to the kitchen sink; insulated cold water storage tank; pipework to toilet cistern; all necessary valves. (b) The sketch shows a valve usually used to turn off the water supply to a toilet. Using notes and freehand sketches show the preferred location of the valve. Give one reason for choosing this location for the valve. (c) Discuss one advantage of installing a dual-flush toilet.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-items", kind: "criterion", verbatim: "Any 7 of the above details (4 marks each)", marks: 28, contextNote: "Credit the best SEVEN acceptable items at 4 marks each, capped at 28. Marked items: drawing the given sketch; 15 mm rising main; 15 mm cold water feed to the kitchen sink; water storage tank; ball valve in the tank; 28 mm overflow; insulation around the tank; 15 mm cold water supply to the cistern; valves.", permittedMarks: [0,4,8,12,16,20,24,28] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketch: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    { id: "b-location", kind: "criterion", verbatim: "Location", marks: 3, contextNote: "The isolating valve shown on the supply pipe close to the cistern.", permittedMarks: [0,1,2,3] },
+    { id: "b-reason", kind: "criterion", verbatim: "Reason", marks: 3, contextNote: "Such as: fitted close to the cistern; within easy reach to operate.", permittedMarks: [0,1,2,3] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketches: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    { id: "c-advantage", kind: "criterion", verbatim: "Advantage", marks: 4, contextNote: "Such as: two flush settings, about 6–9 litres for solid and 3–4 litres for liquid waste; less water used; less water entering treatment and sewage systems.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2019-ol-q3-a","label":"a","marks":34,"rowIds":["a-items","a-presentation"]},{"sourceCardId":"cons-2019-ol-q3-b","label":"b","marks":12,"rowIds":["b-location","b-reason","b-presentation"]},{"sourceCardId":"cons-2019-ol-q3-c","label":"c","marks":4,"rowIds":["c-advantage"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Cold water supply to a sink and toilet",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketches retained. The listed components are required content, not a choice; the best-seven list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q3-original.png",
+          "srcHash": "9853423c25fc5e64fd716a7eb03948a0",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 3: the printed question with a section of a two-storey house and a sketch of a toilet isolating valve.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q3-system.png",
+          "srcHash": "8306cb6db924541c5cc5c462ceaae75d",
+          "alt": "SEC model sketch of the cold water supply from the rising main to the storage tank, kitchen sink and toilet cistern, with the typical details list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2019-ol-q4-a", topicId: "cons-2-4", conceptId: "reinforced-strip-foundation-a",
+    section: "B", questionRef: "2019 OL Q4(a)",
+    stem: "The sketch shows a reinforced concrete strip foundation, and a 400 mm cavity wall for a new house.",
+    questionText: "Using notes and freehand sketches show the typical construction details of the strip foundation supporting the concrete block wall. Indicate the position of the wall on the foundation and the location of the steel reinforcement in the foundation. Include three typical dimensions in your sketch.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 32,
+    rows: [
+    { id: "sketch", kind: "criterion", verbatim: "Sketch of a strip foundation", marks: 11, contextNote: "A sketch of the reinforced strip foundation under the cavity wall, such as 1100 × 350 mm.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11] },
+    { id: "wall-position", kind: "criterion", verbatim: "Position of walls on strip foundation", marks: 6, contextNote: "The wall centred on the foundation, with equal projections on both sides.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "reinforcement", kind: "criterion", verbatim: "Location of steel reinforcement", marks: 6, contextNote: "Such as: roped steel bars near the bottom of the trench where the tensile strength is needed — generally five 12 mm rods — held about 75 mm up on concrete bricks while the concrete is poured and compacted.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "dimensions", kind: "criterion", verbatim: "Three typical dimensions", marks: 3, contextNote: "Three typical dimensions, 1 each.", permittedMarks: [0,1,2,3] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketches: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Reinforced strip foundation and cavity wall",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wall position and the steel reinforcement in (a) are both required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q4-original.png",
+          "srcHash": "bb990b0825b3df59118b06796143c3bc",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 4: the printed question with a sketch of a cavity wall on a reinforced concrete strip foundation.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q4-foundation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q4-foundation.png",
+          "srcHash": "52b433abecc8bcb8b7ba92d90d9903c6",
+          "alt": "SEC model sketches of the 1100 × 350 mm reinforced strip foundation with the wall centred and the steel near the bottom, with notes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2019-ol-q4-complete", topicId: "cons-2-4", conceptId: "reinforced-strip-foundation-complete",
+    section: "B", questionRef: "2019 OL Q4 — complete",
+    stem: "The sketch shows a reinforced concrete strip foundation, and a 400 mm cavity wall for a new house.",
+    questionText: "(a) Using notes and freehand sketches show the typical construction details of the strip foundation supporting the concrete block wall. Indicate the position of the wall on the foundation and the location of the steel reinforcement in the foundation. Include three typical dimensions in your sketch. (b) Using notes and freehand sketches, show one method of connecting the inner and outer leaves of the wall. (c) Discuss two advantages of using ready-mixed concrete in the foundations of a dwelling house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-sketch", kind: "criterion", verbatim: "Sketch of a strip foundation", marks: 11, contextNote: "A sketch of the reinforced strip foundation under the cavity wall, such as 1100 × 350 mm.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11] },
+    { id: "a-wall-position", kind: "criterion", verbatim: "Position of walls on strip foundation", marks: 6, contextNote: "The wall centred on the foundation, with equal projections on both sides.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-reinforcement", kind: "criterion", verbatim: "Location of steel reinforcement", marks: 6, contextNote: "Such as: roped steel bars near the bottom of the trench where the tensile strength is needed — generally five 12 mm rods — held about 75 mm up on concrete bricks while the concrete is poured and compacted.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Three typical dimensions", marks: 3, contextNote: "Three typical dimensions, 1 each.", permittedMarks: [0,1,2,3] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketches: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    { id: "b-method", kind: "criterion", verbatim: "Method of connecting inner and outer leafs", marks: 4, contextNote: "Such as: corrosion- and fire-resistant wall ties built into both leaves as the wall rises, giving stability; basalt fibre ties in highly insulated walls.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketches: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 4, contextNote: "Such as: more consistent quality, produced under controlled conditions; no labour cost of mixing on site.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 4, contextNote: "A second, different advantage. Such as: minimal waste; fast and reliable; no materials stored on site; less dust from bagged cement.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2019-ol-q4-a","label":"a","marks":32,"rowIds":["a-sketch","a-wall-position","a-reinforcement","a-dimensions","a-presentation"]},{"sourceCardId":"cons-2019-ol-q4-b","label":"b","marks":10,"rowIds":["b-method","b-presentation"]},{"sourceCardId":"cons-2019-ol-q4-c","label":"c","marks":8,"rowIds":["c-advantage-1","c-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Reinforced strip foundation and cavity wall",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wall position and the steel reinforcement in (a) are both required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q4-original.png",
+          "srcHash": "bb990b0825b3df59118b06796143c3bc",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 4: the printed question with a sketch of a cavity wall on a reinforced concrete strip foundation.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q4-foundation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q4-foundation.png",
+          "srcHash": "52b433abecc8bcb8b7ba92d90d9903c6",
+          "alt": "SEC model sketches of the 1100 × 350 mm reinforced strip foundation with the wall centred and the steel near the bottom, with notes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2019-ol-q5-complete", topicId: "cons-1-5", conceptId: "stud-partition-floor-section-complete",
+    section: "B", questionRef: "2019 OL Q5 — complete",
+    stem: "A non-loadbearing stud partition separates two bedrooms on the first floor of a dwelling house, as shown. The partition is supported on 225 mm × 50 mm flooring joists, and the first floor is a floating tongue and groove wooden floor on 20 mm plywood decking, with a plasterboard ceiling beneath.",
+    questionText: "(a) To a scale of 1:5 draw a vertical section, parallel to the joists, through the floor and the stud partition. Show the typical construction details from the plasterboard ceiling, through the first floor and the stud partition up to a level 400 mm above the finished floor. Show a floor width of 500 mm on each side of the partition. Include three typical dimensions on your drawing. (b) On your drawing show the position of the insulation in the partition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 7 of the above details (5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: upper floor joists 200 × 50 mm; 150 mm insulation between joists; 25 mm plywood; ceiling plasterboard, plaster and vapour barrier; stud partition 100 × 50 mm; stud soleplate 100 × 50 mm; 12.5 mm plasterboard on the partition; floor underlay; floating tongued and grooved timber floor; skirting board 120 × 20 mm.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Any three typical dimensions", marks: 3, contextNote: "Three appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3] },
+    { id: "b-insulation", kind: "criterion", verbatim: "Insulation in stud partition", marks: 4, contextNote: "Show and identify the insulation fitted between the studs (or insulated plasterboard on both sides), as in the scheme’s model section.", permittedMarks: [0,4] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band under part (b)’s sub-total.", permittedMarks: [0,4,6,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2019-ol-q5-a","label":"a","marks":38,"rowIds":["a-details","a-dimensions"]},{"sourceCardId":"cons-2019-ol-q5-b","label":"b","marks":12,"rowIds":["b-insulation","b-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Stud partition on a floating timber floor",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band under part (b)’s sub-total, so it is marked with the partition insulation."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q5-original.png",
+          "srcHash": "cbed6b58232356cc5b55fef07d80ebdd",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 5: the printed question with a sketch of a stud partition on a floating timber floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q5-scheme.png",
+          "srcHash": "96b2c45b39db972ebed72ccbf5feb533",
+          "alt": "SEC model section through the floor and stud partition with the partition insulation marked (b), the specification list and the notes for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2019-ol-q6-a", topicId: "cons-9-4", conceptId: "workshop-safety-a",
+    section: "B", questionRef: "2019 OL Q6(a)",
+    questionText: "State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations: using a contact adhesive to glue veneers; using a battery powered screwdriver.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "a-using-a-contact-adhesive-to-glue-veneers-precaution-1", kind: "criterion", verbatim: "Precaution 1", marks: 4, contextNote: "Such as: work in a well-ventilated area; keep the glue away from sources of ignition.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-using-a-contact-adhesive-to-glue-veneers-precaution-2", kind: "criterion", verbatim: "Precaution 2", marks: 4, contextNote: "A second, different precaution. Such as: wear goggles, a mask and latex gloves; do not inhale the fumes or let it touch the skin; follow the container’s instructions.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-using-a-battery-powered-screwdriver-precaution-1", kind: "criterion", verbatim: "Precaution 1", marks: 4, contextNote: "Such as: hold the work firmly on a solid surface or in a vice, never in the hand; use the correct size of bit.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-using-a-battery-powered-screwdriver-precaution-2", kind: "criterion", verbatim: "Precaution 2", marks: 4, contextNote: "A second, different precaution. Such as: seat the tip fully in the screw head before starting; keep the finger off the trigger when changing bits; store the charger safely.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2019-ol-q6-a-using-a-contact-adhesive-to-glue-veneers","label":"Using a contact adhesive to glue veneers","marks":8,"rowIds":["a-using-a-contact-adhesive-to-glue-veneers-precaution-1","a-using-a-contact-adhesive-to-glue-veneers-precaution-2"]},{"sourceCardId":"cons-2019-ol-q6-a-using-a-battery-powered-screwdriver","label":"Using a battery-powered screwdriver","marks":8,"rowIds":["a-using-a-battery-powered-screwdriver-precaution-1","a-using-a-battery-powered-screwdriver-precaution-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Safety in the Construction Studies room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed situations in (a) are required, each with two precautions and separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-original.png",
+          "srcHash": "4319c15a5594e185b04cfde0a1f9cf7a",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 6: the printed question with a sketch of a bandsaw.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q6-precautions",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-precautions.png",
+          "srcHash": "6a8ae3cca7a39ec6788f622561fbbc5e",
+          "alt": "SEC 2019 Ordinary marking scheme notes on safety precautions for both situations: contact adhesive and battery-powered screwdriver.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2019-ol-q6-complete", topicId: "cons-9-4", conceptId: "workshop-safety-complete",
+    section: "B", questionRef: "2019 OL Q6 — complete",
+    questionText: "(a) State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations: using a contact adhesive to glue veneers; using a battery powered screwdriver. (b) Using notes and freehand sketches, describe three specific safety precautions to be observed when operating a bandsaw to cut a piece of wood in the Construction Studies room. Give one reason for each safety precaution outlined. (c) Discuss two reasons why safety instruction is necessary for all students prior to using machinery in a Construction Studies room.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-a-using-a-contact-adhesive-to-glue-veneers-precaution-1", kind: "criterion", verbatim: "Precaution 1", marks: 4, contextNote: "Such as: work in a well-ventilated area; keep the glue away from sources of ignition.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-a-using-a-contact-adhesive-to-glue-veneers-precaution-2", kind: "criterion", verbatim: "Precaution 2", marks: 4, contextNote: "A second, different precaution. Such as: wear goggles, a mask and latex gloves; do not inhale the fumes or let it touch the skin; follow the container’s instructions.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-a-using-a-battery-powered-screwdriver-precaution-1", kind: "criterion", verbatim: "Precaution 1", marks: 4, contextNote: "Such as: hold the work firmly on a solid surface or in a vice, never in the hand; use the correct size of bit.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-a-using-a-battery-powered-screwdriver-precaution-2", kind: "criterion", verbatim: "Precaution 2", marks: 4, contextNote: "A second, different precaution. Such as: seat the tip fully in the screw head before starting; keep the finger off the trigger when changing bits; store the charger safely.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-precaution-1", kind: "criterion", verbatim: "Precaution one and valid reason", marks: 6, contextNote: "Precaution and reason. Such as: the blade guard set within 3–6 mm of the wood with the motor off, so the guard is in place before starting.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-precaution-2", kind: "criterion", verbatim: "Precaution two and valid reason", marks: 6, contextNote: "A second, different precaution and reason. Such as: hands never closer than 100 mm to the blade, with a push stick for small stock, to avoid cutting the hands.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-precaution-3", kind: "criterion", verbatim: "Precaution three and valid reason", marks: 6, contextNote: "A third, different precaution and reason. Such as: wait until the motor is at full speed before cutting, to prevent jamming; eye protection against splinters and dust; long hair and loose clothing contained.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "c-reason-1", kind: "criterion", verbatim: "Reason 1", marks: 4, contextNote: "Such as: to avoid accidents and serious injury from moving parts of machinery.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-reason-2", kind: "criterion", verbatim: "Reason 2", marks: 4, contextNote: "A second, different reason. Such as: all users understand the dangers; a safe environment for all students; compliance with Health and Safety regulations.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2019-ol-q6-a","label":"a","marks":16,"rowIds":["a-a-using-a-contact-adhesive-to-glue-veneers-precaution-1","a-a-using-a-contact-adhesive-to-glue-veneers-precaution-2","a-a-using-a-battery-powered-screwdriver-precaution-1","a-a-using-a-battery-powered-screwdriver-precaution-2"]},{"sourceCardId":"cons-2019-ol-q6-b","label":"b","marks":26,"rowIds":["b-precaution-1","b-precaution-2","b-precaution-3","b-presentation"]},{"sourceCardId":"cons-2019-ol-q6-c","label":"c","marks":8,"rowIds":["c-reason-1","c-reason-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Safety in the Construction Studies room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed situations in (a) are required, each with two precautions and separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-original.png",
+          "srcHash": "4319c15a5594e185b04cfde0a1f9cf7a",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 6: the printed question with a sketch of a bandsaw.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q6-bandsaw",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q6-bandsaw.png",
+          "srcHash": "93f793cd202656f80d4314a5366fc3ab",
+          "alt": "SEC 2019 Ordinary marking scheme table of bandsaw safety precautions and reasons, with sketches of the bandsaw, a push stick and safety glasses (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2019-ol-q7-complete", topicId: "cons-1-2", conceptId: "kitchen-dining-layout-complete",
+    section: "B", questionRef: "2019 OL Q7 — complete",
+    stem: "A draft design for a small open-plan kitchen and dining area for a new house is shown. The positions of the window and doors are included.",
+    questionText: "(a) Draw a freehand sketch of the given design and show your preferred location for each of the following in the kitchen area: cooker; fridge; sink. Give one reason for selecting each location. (b) Select a suitable floor type for the kitchen area A and another appropriate floor type for the dining area B. Discuss one reason for each floor type selected. (c) Draw a sketch of an outline design showing the position of an island unit suitable for the kitchen area A. Discuss one advantage of including an island unit in the kitchen.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-sketch", kind: "criterion", verbatim: "Draw sketch of the given kitchen and dining area", marks: 4, contextNote: "A freehand sketch of the given kitchen and dining design.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-cooker", kind: "criterion", verbatim: "Location and valid reason for cooker position (3 + 1 marks)", marks: 4, contextNote: "Location 3 and reason 1. Such as: worktop on either side; part of the work triangle; no crossing the kitchen with hot pans; safe in relation to the door.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-fridge", kind: "criterion", verbatim: "Location and valid reason for fridge position (3 + 1 marks)", marks: 4, contextNote: "Location 3 and reason 1. Such as: near the sink for food preparation; part of the work triangle; worktop to unpack shopping.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-sink", kind: "criterion", verbatim: "Location and valid reason for sink position (3 + 1 marks)", marks: 4, contextNote: "Location 3 and reason 1. Such as: natural light and a view at the window; close to the cooker; worktop on either side.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-kitchen-floor", kind: "criterion", verbatim: "Suitable flooring type for Kitchen area A", marks: 3, contextNote: "Such as: ceramic tiles; stone (granite, marble, limestone, slate); marmoleum.", permittedMarks: [0,1,2,3] },
+    { id: "b-kitchen-reason", kind: "criterion", verbatim: "Reason for flooring type in Kitchen A", marks: 3, contextNote: "A reason matching the kitchen floor. Such as: hard-wearing, impervious to water, easy to maintain.", permittedMarks: [0,1,2,3] },
+    { id: "b-dining-floor", kind: "criterion", verbatim: "Suitable flooring type for Dining area B", marks: 3, contextNote: "A different floor type. Such as: wood laminate; vinyl; marmoleum.", permittedMarks: [0,1,2,3] },
+    { id: "b-dining-reason", kind: "criterion", verbatim: "Reason for flooring type in Dining B", marks: 3, contextNote: "A reason matching the dining floor. Such as: durable and cheaper than solid wood; resists scuffs and stains; easy to maintain.", permittedMarks: [0,1,2,3] },
+    { id: "c-island", kind: "criterion", verbatim: "Outline design and position of island unit", marks: 4, contextNote: "An outline island unit positioned in kitchen area A, as in the scheme’s model plan.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-advantage", kind: "criterion", verbatim: "Advantage of including island unit", marks: 4, contextNote: "Such as: extra seating; extra storage; appliances built in; more worktop; greater design flexibility.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketches: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2019-ol-q7-a","label":"a","marks":24,"rowIds":["a-sketch","a-cooker","a-fridge","a-sink","a-presentation"]},{"sourceCardId":"cons-2019-ol-q7-b","label":"b","marks":12,"rowIds":["b-kitchen-floor","b-kitchen-reason","b-dining-floor","b-dining-reason"]},{"sourceCardId":"cons-2019-ol-q7-c","label":"c","marks":14,"rowIds":["c-island","c-advantage","c-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Small open-plan kitchen and dining area",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. All three printed appliances in (a) are required in one sketch, each separately marked; floor types are open choices."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q7-original.png",
+          "srcHash": "bfdad2a1d4743caf3b6de0b90f67bb5a",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 7: the printed question with the draft plan of the kitchen area A and dining area B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q7-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q7-layout.png",
+          "srcHash": "f2baacdfef3287c007cd8aa8a970d209",
+          "alt": "SEC model kitchen layout with the sink, cooker and fridge in a work triangle, and the reasons for each location.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2019-ol-q8-terms", topicId: "cons-1-9", conceptId: "construction-terms-terms",
+    section: "B", questionRef: "2019 OL Q8",
+    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: carbon monoxide alarm; grab rail; furniture castor; laminated safety glass; eaves gutter; balusters; sapwood; bridle joint; fluorescent lighting.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "terms", kind: "anyN", verbatim: "Construction Terms", marks: 50, contextNote: "Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). Carbon monoxide alarm: detects carbon monoxide and sounds an alarm before dangerous levels build up in a room, preventing poisoning by a colourless, tasteless, odourless \"silent killer\". Grab rail: a safety rail, usually stainless steel, chromed or plastic-coated metal, giving support and balance, lessening fatigue and something to grip in a slip or fall. Furniture castor: a wheel with a fixing plate or screw, fitted to tables, chairs and desks for easy movement; made of cast iron, plastic, nylon, steel or aluminium. Laminated safety glass: glass that holds together when shattered, held by a polyvinyl butyral (PVB) or ethylene-vinyl acetate (EVA) interlayer between the sheets. Eaves gutter: fixed to the fascia, it collects rainwater from pitched or flat roofs and discharges it to an outlet or downpipe; cast iron, uPVC, aluminium, galvanised steel, copper or zinc. Balusters: vertical hardwood or softwood members between the string and the handrail, supporting the handrail; generally 38 × 38 or 44 × 44 mm, square or turned, no more than 100 mm apart. Sapwood: the outer, newer wood of a tree’s cross section, carrying the sap; lighter in colour, softer and less durable than heartwood. Bridle joint: a strong woodworking joint, tee or corner, used in furniture and frame construction, such as joining table rails to uprights. Fluorescent lighting: a low-pressure mercury-vapour discharge lamp whose ultraviolet light makes a phosphor coating glow; dearer to buy but cheaper to run; used in workplaces and homes.", group: {"claimMax":5,"perOption":10,"options":["Carbon monoxide alarm","Grab rail","Furniture castor","Laminated safety glass","Eaves gutter","Balusters","Sapwood","Bridle joint","Fluorescent lighting"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Construction terms",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Explain any five of the nine printed terms. Each term is marked separately at 10 marks; the scheme illustrations are examples of suitable sketches."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q8-original.png",
+          "srcHash": "1da076600ef8ca182eddf1adaa9bfef7",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 8: the printed instruction and the nine construction terms.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q8-terms",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q8-terms.png",
+          "srcHash": "e68c36a1a0e818926f8e89cd2466ce08",
+          "alt": "SEC 2019 Ordinary marking scheme notes and sketches for all nine terms: carbon monoxide alarm, laminated safety glass, sapwood, grab rail, eaves gutter, bridle joint, furniture castor, balusters and fluorescent lighting (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2019-ol-q9-complete", topicId: "cons-3-2", conceptId: "garden-home-office-complete",
+    section: "B", questionRef: "2019 OL Q9 — complete",
+    stem: "The sketch shows an eco-friendly home office in a garden setting. The office is of timber frame construction with an external wooden cladding.",
+    questionText: "(a) Specify a suitable wood for the external cladding, and give two reasons for your choice. (b) The home office is to be modified to provide greater views of the surrounding garden. Using notes and freehand sketches, show one modification to the existing design that would increase the visual connection between the office and the garden. (c) Discuss two advantages for the home office user of increasing the visual connection with the surrounding garden.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-wood", kind: "criterion", verbatim: "Suitable wood for external cladding", marks: 6, contextNote: "Such as: cedar; larch; red deal or Scots pine; any pressure-impregnated softwood.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-reason-1", kind: "criterion", verbatim: "Valid reason one", marks: 6, contextNote: "A reason matching the wood. Such as, cedar: very resistant to decay, light and easy to work; larch: naturally durable outdoors and grown in Ireland.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-reason-2", kind: "criterion", verbatim: "Valid reason two", marks: 6, contextNote: "A second, different reason. Such as: a pleasant appearance; easily finished with oil; red deal: reasonably priced, strong and stable.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-modification", kind: "criterion", verbatim: "Modification to existing office (6 notes + 6 sketches)", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: a sliding door in place of the existing door; full-height double-glazed clear panels; a larger, taller window; a porch or patio outside the door.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 6, contextNote: "Such as: the garden becomes part of the office; a connection with the garden area.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 6, contextNote: "A second, different advantage. Such as: more sunlight and light into the building; a warmer structure with double glazing; wheelchair access.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2019-ol-q9-a","label":"a","marks":18,"rowIds":["a-wood","a-reason-1","a-reason-2"]},{"sourceCardId":"cons-2019-ol-q9-b","label":"b","marks":20,"rowIds":["b-modification","b-presentation"]},{"sourceCardId":"cons-2019-ol-q9-c","label":"c","marks":12,"rowIds":["c-advantage-1","c-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Eco-friendly garden home office",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wood, the modification and the advantages are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2019-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q9-original.png",
+          "srcHash": "13bd7d00d6bd8dac42bdc7556284a2af",
+          "alt": "Original SEC 2019 Ordinary Construction Studies Question 9: the printed question with a sketch of a timber-clad home office in a garden.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2019-OL-q9-modification",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-OL-q9-modification.png",
+          "srcHash": "29e5baa1d3279f73c0569cc1d2ed324e",
+          "alt": "SEC 2019 Ordinary marking scheme notes on modifications linking the office to the garden, with sketches of glazed doors and full-height glazing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
           "solution": true,
           "lettersVisible": []
     },

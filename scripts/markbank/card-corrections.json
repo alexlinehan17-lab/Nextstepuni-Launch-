@@ -1056,29 +1056,6 @@
      }
     ]
    }
-  },
-  "cons-2019-ol-q3-b": {
-   "reason": "The scheme has two compulsory 3-mark entries—location and reason—not an any-two menu headed only 'Reason'.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 6,
-    "rows": [
-     {
-      "id": "cons-2019-ol-q3-b-location",
-      "kind": "point",
-      "verbatim": "The valve is fitted close to the cistern",
-      "marks": 3
-     },
-     {
-      "id": "cons-2019-ol-q3-b-reason",
-      "kind": "point",
-      "verbatim": "The valve is fitted within easy reach to operate the valve",
-      "marks": 3
-     }
-    ]
-   }
   }
  },
  "home-economics": {
