@@ -277,6 +277,12 @@ def build_row(lifter, spec, row_id, task_doc, sp, lo):
             # A menu printed as one "or" list ("Common cold virus or HIV or
             # ...", "Name two") is cut at the scheme's own "or".
             options = [strip_stars(B.clean_option(x)) for x in t.split(spec.get('sep') or '/')]
+            # The scheme's tally ("Any three") printed at the end of the menu's
+            # last line is not an option: it goes to the row's note.
+            tally = re.search(r'\s+(Any (?:one|two|three|four|five|six))$', options[-1]) if options else None
+            if tally:
+                notes.append(tally.group(1))
+                options[-1] = options[-1][:tally.start()]
         open_list = any(o.lower() == 'other correct' for o in options)
         options = [o for o in options if o and o.lower() != 'other correct']
         # The scheme's trailing ellipsis ("oxygen……….") and a closing "or

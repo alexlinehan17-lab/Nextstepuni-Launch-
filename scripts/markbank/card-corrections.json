@@ -144,6 +144,26 @@
    "reason": "Never shipped: a figure twin of bio-2022-ol-q16-a-ii, which carries the reviewed task and its figure.",
    "drop": true,
    "replacementId": "bio-2022-ol-q16-a-ii"
+  },
+  "bio-2021-ol-q14-b-iv-fig": {
+   "reason": "Never shipped: a figure twin of bio-2021-ol-q14-b-iv, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2021-ol-q14-b-iv"
+  },
+  "bio-2021-ol-q15-b-v-fig": {
+   "reason": "Never shipped: a figure twin of bio-2021-ol-q15-b-v, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2021-ol-q15-b-v"
+  },
+  "bio-2021-ol-q15-b-vi-fig": {
+   "reason": "Never shipped: a figure twin of bio-2021-ol-q15-b-vi, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2021-ol-q15-b-vi"
+  },
+  "bio-2021-ol-q16d-iv-fig": {
+   "reason": "Never shipped: a figure twin of bio-2021-ol-q16d-iv, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2021-ol-q16d-iv"
   }
  },
  "physics": {

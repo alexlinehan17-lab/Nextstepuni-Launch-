@@ -1265,3 +1265,140 @@ describe('Biology 2021 Higher — reviewed sitting, corrected in place', () => {
     expect(hl21ById.get('bio-2021-hl-q13-a-ii')!.figure?.solution).toBe(true);
   });
 });
+
+const ol21 = sittings['2021-ol'];
+const ordinary2021 = BIO_ORDINARY.filter(card => card.year === 2021) as unknown as ReviewedCard[];
+const ol21ById = new Map(ordinary2021.map(card => [card.id, card]));
+const ol21Verbatims = (id: string) => (ol21ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
+  .map(row => row.verbatim);
+
+describe('Biology 2021 Ordinary — reviewed sitting, corrected in place', () => {
+  const review = ol21.review!;
+
+  it('ships every reviewed task, and nothing else, for the sitting', () => {
+    expect(ol21.baseTaskCount).toBe(196);
+    expect(ol21.cardCount).toBe(196);
+    expect(ordinary2021).toHaveLength(196);
+    expect(new Set(ol21.tasks.map(task => task.id))).toEqual(new Set(ol21ById.keys()));
+  });
+
+  it('keeps every shipped id', () => {
+    expect(review.baselineCommit).toBe('85935123c');
+    expect([review.verified.length, review.corrected.length, review.added.length,
+      review.retained.length]).toEqual([11, 153, 32, 4]);
+    for (const id of [...review.verified, ...review.corrected.map(c => c.id), ...review.added]) {
+      expect(ol21ById.has(id), id).toBe(true);
+    }
+    // Four authored figure twins the build never shipped: withdrawn, with no progress to carry.
+    for (const id of ['bio-2021-ol-q14-b-iv-fig', 'bio-2021-ol-q15-b-v-fig', 'bio-2021-ol-q15-b-vi-fig',
+      'bio-2021-ol-q16d-iv-fig']) {
+      expect(ol21ById.has(id), id).toBe(false);
+      expect(review.withdrawn[id].replacementId).toBe(id.replace('-fig', ''));
+    }
+    // Old bundles keep their ids for the first part they carried.
+    expect(ol21ById.get('bio-2021-ol-q3-cde')!.questionRef).toBe('2021 OL Q3(c)');
+    expect(ol21ById.get('bio-2021-ol-q6-def')!.questionRef).toBe('2021 OL Q6(d)');
+    expect(ol21ById.get('bio-2021-ol-q7-f')!.questionRef).toBe('2021 OL Q7(f)(i) — arthritis');
+  });
+
+  it('records what each corrected card showed before', () => {
+    for (const correction of review.corrected) {
+      expect(correction.changed.length, correction.id).toBeGreaterThan(0);
+      for (const field of correction.changed) {
+        expect(field in correction.fieldsBefore, `${correction.id}.${field}`).toBe(true);
+      }
+    }
+  });
+
+  it('leaves the cards the review verified exactly as they shipped', () => {
+    const verified = review.verified.map(id => ol21ById.get(id)!)
+      .sort((a, b) => a.id.localeCompare(b.id));
+    expect(contentHash(verified)).toBe('3984bc57c323b2ad3a61340d8748b5a14589e42ab398af2a2566ceee03f10760');
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(ol21.sources['038'].sha256)
+      .toBe('d4ad67d49220aa4902fb08d3852ab3bef6be9778e7a1de4d6d7cfa2c16c42354');
+    expect(ol21.sources['040'].sha256)
+      .toBe('a8c1c7b25b3cc337f2f6711d49d5c0d987e469c29025ef37f2316f05dfa86ae7');
+    expect(ol21.sources.scheme.sha256)
+      .toBe('7bbe606661c393fbc8f663b60f434550a4c30df1b633f6af6ad7cc07cddae602');
+    expect([ol21.sources['038'].pages, ol21.sources['040'].pages, ol21.sources.scheme.pages])
+      .toEqual([40, 12, 28]);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const task of ol21.tasks) {
+      const card = ol21ById.get(task.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('prices each part as its scheme prints it', () => {
+    const tariff = (id: string) =>
+      (ol21ById.get(id) as unknown as { tariffModel: { kind: string; notation?: string } }).tariffModel;
+    expect(tariff('bio-2021-ol-q1-a')).toEqual({ kind: 'orderedSplit', notation: '2(8) + 2 + 2(1)' });
+    expect(tariff('bio-2021-ol-q2-a')).toEqual({ kind: 'orderedSplit', notation: '2(6) + 3(2) + 2(1)' });
+    expect(tariff('bio-2021-ol-q8-a-i')).toEqual({ kind: 'orderedSplit', notation: '5 + 1' });
+    expect(tariff('bio-2021-ol-q8-b-ii')).toEqual({ kind: 'orderedSplit', notation: '2(9) + 6(1)' });
+    expect(tariff('bio-2021-ol-q11-b-ii').kind).toBe('fixed');   // Section C: a mark per row
+  });
+
+  it('adds up to the printed question totals at each ladder\'s first rate', () => {
+    const firstRoute = new Set(Object.values(ol21.routes).map(routes => routes[0]));
+    const totals = new Map<number, number>();
+    for (const task of ol21.tasks) {
+      if (task.route && !firstRoute.has(task.route)) continue;   // one route per pool
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    for (const q of [1, 3]) expect(totals.get(q), `Q${q}`).toBe(40);         // five at 8
+    for (const q of [2, 4, 5, 6, 7]) expect(totals.get(q), `Q${q}`).toBe(42); // seven at 6
+    for (const q of [8, 9, 10]) expect(totals.get(q), `Q${q}`).toBe(82);      // 2 at 5 + 8 at 9
+    for (const q of [11, 12, 13, 14, 15]) expect(totals.get(q), `Q${q}`).toBe(60);
+    for (const q of [16, 17]) expect(totals.get(q), `Q${q}`).toBe(120);
+  });
+
+  it('splits only the choices the scheme marks differently per option', () => {
+    const routesOf = (ref: string) => ordinary2021
+      .filter(card => card.questionRef.startsWith(`2021 OL ${ref} — `))
+      .map(card => card.questionRef.split(' — ')[1]).sort();
+    expect(routesOf('Q7(f)(i)')).toEqual(['arthritis', 'osteoporosis']);
+    expect(routesOf('Q7(f)(ii)')).toEqual(['arthritis', 'osteoporosis']);
+    expect(routesOf('Q16(b)(vi)')).toEqual(['carbon-dioxide', 'ethanol']);
+    // "Agriculture or industry or the home", "the ear or the eye": shared rows, one card each.
+    expect(ordinary2021.filter(card => card.questionRef.startsWith('2021 OL Q11(c)(ii)'))).toHaveLength(1);
+    expect(ordinary2021.filter(card => card.questionRef.startsWith('2021 OL Q16(a)(vi)'))).toHaveLength(1);
+  });
+
+  it('reads the true/false ticks from the scheme', () => {
+    expect(['abc', 'b', 'c', 'def', 'e', 'f', 'g'].map(x => ol21Verbatims(`bio-2021-ol-q6-${x}`)[0]))
+      .toEqual(['True', 'False', 'False', 'False', 'True', 'True', 'False']);
+  });
+
+  it('keeps the tally printed at the end of a menu out of its options', () => {
+    const row = (ol21ById.get('bio-2021-ol-q8-b-ii')!.rows as unknown as Array<{
+      group: { options: string[] }; contextNote?: string }>)[0];
+    expect(row.group.options[row.group.options.length - 1]).toBe('(slowly) lowered a cover slip');
+    expect(row.contextNote).toContain('Any three');
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph|table)s?\b/i;
+    for (const card of ordinary2021) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    // The table to complete, the underlined terms and the printed axes are set as printed.
+    for (const id of ['bio-2021-ol-q4-abc', 'bio-2021-ol-q9-a-ii', 'bio-2021-ol-q9-b-vii', 'bio-2021-ol-q14-c-i']) {
+      expect(ol21ById.get(id)!.questionFigure, id).toBeTruthy();
+    }
+    // The scheme's completed table, cell-cycle chart and gland outline wait for the reveal.
+    for (const id of ['bio-2021-ol-q4-abc', 'bio-2021-ol-q12-c-iv', 'bio-2021-ol-q14-c-ii']) {
+      expect(ol21ById.get(id)!.figure?.solution, id).toBe(true);
+    }
+  });
+});

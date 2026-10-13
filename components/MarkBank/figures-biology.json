@@ -482,6 +482,467 @@
    722
   ]
  },
+ "biology-2021-ol-q10-dishes": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q10-dishes.png",
+  "md5": "e4a024782b7cd566b1954e187d030dc7",
+  "alt": "Two dishes of agar and test reagent. Dish A, untreated seeds: each seed sits in a clear patch. Dish B, treated seeds: labelled Boiled seeds, with no clear patches.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q10(b)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   116,
+   188,
+   538,
+   375
+  ]
+ },
+ "biology-2021-ol-q12-watson-crick": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q12-watson-crick.png",
+  "md5": "b41842c24f2b70cd37c72d78c1c7ce77",
+  "alt": "Black-and-white photograph of two men beside a tall model of DNA, captioned DNA model in 1953, BBC News.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q12(b)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   198,
+   186,
+   398,
+   398
+  ]
+ },
+ "biology-2021-ol-q12c-iv-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q12c-iv-scheme.png",
+  "md5": "131bdab4b122930744605346d24b6ff8",
+  "alt": "The marking scheme's diagram: a circle divided into a small slice labelled Mitosis and the large remainder labelled Interphase.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q12(c)(iv)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   138,
+   344,
+   270,
+   462
+  ],
+  "solution": true
+ },
+ "biology-2021-ol-q13-heart": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q13-heart.png",
+  "md5": "69d7f5f01ad5c182ec4431aba7e46d45",
+  "alt": "Drawing of a section through the heart: labels point to the Right atrium and the Left ventricle; arrow A points to the large vessel entering at the top left, arrow B to a vessel leaving at the top, arrow C to the vessel arching at the top right, arrow D to a valve on the left side, and arrow E to the wall dividing the two sides.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q13(b)(i)1",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   305,
+   147,
+   548,
+   367
+  ],
+  "maskedFurniture": [
+   [
+    305,
+    324,
+    329,
+    367
+   ]
+  ]
+ },
+ "biology-2021-ol-q14-digestive": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q14-digestive.png",
+  "md5": "f619559dc966f2caef8b1ca1d69eeaa5",
+  "alt": "Drawing of the human digestive system: arrow B points to the large organ at the top left, a label Gall bladder to the small sac beneath it, arrow A to the tube leading from below it, arrow C to the bag-shaped organ at the top right, arrow D to the organ beneath it, and arrow E to the wide tube around the coiled intestine.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(b)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   140,
+   155,
+   440,
+   404
+  ]
+ },
+ "biology-2021-ol-q14c-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q14c-i-question.png",
+  "md5": "6baae881657b916eded10976fbc1af3c",
+  "alt": "The printed question: (c) The human endocrine system produces hormones. The word hormones is underlined. (i) Explain the underlined term.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(c)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   80,
+   509,
+   545,
+   545
+  ]
+ },
+ "biology-2021-ol-q14c-ii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q14c-ii-scheme.png",
+  "md5": "cbd77048650639baeba84b111c3d46f2",
+  "alt": "The marking scheme's outline of the human body with the glands labelled: Pituitary in the head, Thyroid in the neck, Adrenals and Pancreas in the abdomen, Ovaries low in the abdomen and Testes below.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(c)(ii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 21,
+  "sourceRect": [
+   180,
+   155,
+   410,
+   400
+  ],
+  "solution": true
+ },
+ "biology-2021-ol-q15-leaf": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q15-leaf.png",
+  "md5": "f6907ab54f379443879d81c4e555dc87",
+  "alt": "Drawing of the under surface of a leaf: a sheet of cells labelled Dermal cells, with small oval openings; arrow X points to an opening and arrow Y to one of the two cells around it.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q15(c)(iii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   334,
+   546,
+   535,
+   708
+  ]
+ },
+ "biology-2021-ol-q15-root": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q15-root.png",
+  "md5": "333f5af2bec625761e6ad15ed660a1f0",
+  "alt": "Drawing of water moving from the soil into a root: labels point to Soil particles, arrow A to a long thin outgrowth reaching between them, and arrows show water passing through the cells to a bracketed group of tubes B at the right, beside a narrower bracketed group C.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q15(b)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   62,
+   110,
+   502,
+   300
+  ]
+ },
+ "biology-2021-ol-q16-ear": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q16-ear.png",
+  "md5": "00146dce6f02ef652549c3685e870f17",
+  "alt": "Drawing of the human ear: arrow A points to the looped canals at the top of the inner ear, arrow B to the coiled structure below them, and arrow C to the thin membrane at the end of the ear canal; labels point to the Auditory nerve, the Eustachian tube and the Middle ear.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q16(a)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   110,
+   118,
+   485,
+   340
+  ]
+ },
+ "biology-2021-ol-q16-urinary": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q16-urinary.png",
+  "md5": "b5037c3c78398632c305558e641df643",
+  "alt": "Drawing of the human urinary system: arrow A points to one of the two bean-shaped organs, arrow B to the tube running down from it, arrow C to the sac at the bottom, and a label Urethra to the tube leaving the sac.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q16(d)(ii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   196,
+   322,
+   450,
+   575
+  ]
+ },
+ "biology-2021-ol-q17-bacterium": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q17-bacterium.png",
+  "md5": "adee4847d0eba2ad73630a923d11a675",
+  "alt": "Drawing of a rod-shaped bacterium: arrow A points to the outer layer, arrow B to the tangled strand in the middle, and arrow C to the dotted fluid filling the cell.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q17(c)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   157,
+   74,
+   432,
+   218
+  ]
+ },
+ "biology-2021-ol-q17-foetus": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q17-foetus.png",
+  "md5": "c1883c15202003c0ec27889480e8b4fd",
+  "alt": "Drawing of a foetus in the womb: arrow A points to one of the tubes at the top, arrow B to the oval body at the end of a tube, arrow C to the narrow opening at the bottom of the womb; labels point to the Placenta, the Umbilical cord and the Womb wall.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q17(a)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   138,
+   120,
+   462,
+   364
+  ]
+ },
+ "biology-2021-ol-q17-neuron": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q17-neuron.png",
+  "md5": "c3bb48e15aa9446c993d356c8ec8aa80",
+  "alt": "Drawing of a neuron: arrow A points to the cell body, arrows B to its branching extensions, arrow C to one of the sheath segments along the fibre, and arrow D to the fibre between two segments.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q17(d)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   128,
+   372,
+   466,
+   520
+  ]
+ },
+ "biology-2021-ol-q4-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q4-scheme.png",
+  "md5": "9f1f515fb0af07722e116a61538ae4f6",
+  "alt": "The marking scheme's completed table: parents Bb x bb; possible gametes B and b, and b; genotypes of offspring Bb and bb; phenotypes Black and Grey.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q4(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   105,
+   448,
+   502,
+   600
+  ],
+  "solution": true
+ },
+ "biology-2021-ol-q4-table": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q4-table.png",
+  "md5": "36dbb36ee2826c266bbe508a09e558a9",
+  "alt": "The printed table to complete: Genotypes of parents Bb x bb, then rows (a) Possible gametes, (b) Genotype of offspring and (c) Phenotype of offspring, each with empty boxes under each parent.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q4(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   80,
+   438,
+   482,
+   596
+  ]
+ },
+ "biology-2021-ol-q5-virus": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q5-virus.png",
+  "md5": "08b8bd2b3cbcb749a2d5a612db20612d",
+  "alt": "Drawing of a virus: a round outer coat studded with spikes, arrow A pointing to the coat and arrow B to the coiled strand inside it.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q5(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   188,
+   78,
+   495,
+   282
+  ]
+ },
+ "biology-2021-ol-q7-skeleton": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q7-skeleton.png",
+  "md5": "7dc36ae78caa832d6a0fec9392f8580a",
+  "alt": "Photograph of a human skeleton, front view, with a label pointing to the Skull.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q7(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   357,
+   58,
+   545,
+   410
+  ]
+ },
+ "biology-2021-ol-q8-microscope": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q8-microscope.png",
+  "md5": "7d62c2eafabce3279abba09762544b9e",
+  "alt": "Drawing of a light microscope seen from the side.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q8(a)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   382,
+   120,
+   545,
+   378
+  ]
+ },
+ "biology-2021-ol-q9a-ii-question": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q9a-ii-question.png",
+  "md5": "a388e33593843b385ed8315af0adfd3a",
+  "alt": "The printed question: 9. (a) Enzymes play an important role in the body's metabolism. The word metabolism is underlined. (ii) Explain the underlined word.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q9(a)(ii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   58,
+   545,
+   148
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    76,
+    545,
+    131
+   ]
+  ]
+ },
+ "biology-2021-ol-q9b-vii-question": {
+  "src": "/exam-figures/biology/markbank/biology-2021-ol-q9b-vii-question.png",
+  "md5": "5eb5bc01016ee56780b86bdf6114ac9d",
+  "alt": "The printed question: (vii) Sketch a graph to show the results of your investigation using the axis provided. Below it, a blank pair of axes: Rate of enzyme activity up the side, pH along the bottom.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q9(b)(vii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   108,
+   540,
+   545,
+   742
+  ]
+ },
  "biology-2022-hl-q12c-iii-question": {
   "src": "/exam-figures/biology/markbank/biology-2022-hl-q12c-iii-question.png",
   "md5": "06bcc0cff0ef56d693cce5a343cfd032",

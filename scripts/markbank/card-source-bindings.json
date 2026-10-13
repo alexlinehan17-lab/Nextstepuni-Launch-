@@ -563,14 +563,7 @@
       "stripStem": true
     }
   },
-  "biology": {
-    "bio-2021-ol-q11-b-iv": {
-      "pages": [
-        2
-      ],
-      "stripStem": true
-    }
-  },
+  "biology": {},
   "business": {
     "bus-2021-ol-s1-q10": {
       "pages": [
