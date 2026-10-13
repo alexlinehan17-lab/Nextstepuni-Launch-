@@ -30,14 +30,14 @@
     "referenceOfficialAssociations": 690,
     "referenceMockAssociations": 609,
     "referenceProviderSampleAssociations": 0,
-    "matchedAssociations": 570,
+    "matchedAssociations": 565,
     "sourceBlockedAssociations": 98,
-    "referenceAnomalyAssociations": 22,
-    "matchedLogicalCards": 522,
-    "reviewedLogicalCards": 19,
-    "reviewedOptionTopics": 84,
-    "reviewedSpecificTopics": 25,
-    "matchedQuestionTopicLinks": 562,
+    "referenceAnomalyAssociations": 27,
+    "matchedLogicalCards": 517,
+    "reviewedLogicalCards": 24,
+    "reviewedOptionTopics": 98,
+    "reviewedSpecificTopics": 30,
+    "matchedQuestionTopicLinks": 557,
     "retainedLocalLogicalCards": 536,
     "retainedWrittenLogicalCards": 144,
     "retainedPracticalLogicalCards": 392,
@@ -5254,7 +5254,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "6",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -5262,7 +5262,9 @@
         "paperKey": "single",
         "fileid": "LC014ALP013EV.pdf",
         "questionNumber": "6"
-      }
+      },
+      "filedUnder": "art-higher-post-1960s-art-in-ireland",
+      "reason": "StudyClix files this 2016 higher heading under art-higher-irish-art-and-modernism. Decided 2026-10-12 from the SEC paper: Q6 is \"Alice Maher (b.1956) creates artworks in a wide variety of media\", with 'Berry Dress': the work of an artist born in 1956 is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s). NextStepUni files the question under art-higher-post-1960s-art-in-ireland, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-higher-irish-art-and-modernism",
@@ -9026,7 +9028,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "13",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9034,7 +9036,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP013EV.pdf",
         "questionNumber": "13"
-      }
+      },
+      "filedUnder": "art-ordinary-europe-modernism-c-1900-1960s",
+      "reason": "StudyClix files this 2016 ordinary heading under art-ordinary-europe-realism-impressionism-and-post-impressionism. Decided 2026-10-12 from the SEC paper: Q13 is 'The Red Room (Harmony in Red)' by Henri Matisse (1869 - 1954), illustrated on the accompanying sheet: Matisse's work is Modernism (c. 1900-1960s), not Post-Impressionism. NextStepUni files the question under art-ordinary-europe-modernism-c-1900-1960s, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-europe-realism-impressionism-and-post-impressionism",
@@ -9890,7 +9894,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "11",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9898,7 +9902,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP013EV.pdf",
         "questionNumber": "11"
-      }
+      },
+      "filedUnder": "art-ordinary-the-baroque-c-1600-1700s",
+      "reason": "StudyClix files this 2016 ordinary heading under art-ordinary-europe-the-renaissance-c-1300-1600s. Decided 2026-10-12 from the SEC paper: Q11 is 'Supper at Emmaus' by Caravaggio (1571 - 1610), illustrated on the accompanying sheet: Caravaggio is The Baroque (c. 1600-1700s), not The Renaissance, as the paper itself says in 2017 and 2019. NextStepUni files the question under art-ordinary-the-baroque-c-1600-1700s, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
@@ -11184,7 +11190,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "6",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -11192,7 +11198,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP013EV.pdf",
         "questionNumber": "6"
-      }
+      },
+      "filedUnder": "art-ordinary-post-1960s-art-in-ireland",
+      "reason": "StudyClix files this 2016 ordinary heading under art-ordinary-irish-art-and-modernism. Decided 2026-10-12 from the SEC paper: Q6 is \"Robert Ballagh (b.1943) is one of Ireland's best known contemporary artists\": the paper itself calls him contemporary, so Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s). NextStepUni files the question under art-ordinary-post-1960s-art-in-ireland, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-irish-art-and-modernism",
@@ -11220,7 +11228,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "12",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -11228,7 +11236,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP013EV.pdf",
         "questionNumber": "12"
-      }
+      },
+      "filedUnder": "art-ordinary-europe-realism-impressionism-and-post-impressionism",
+      "reason": "StudyClix files this 2016 ordinary heading under art-ordinary-irish-art-and-modernism. Decided 2026-10-12 from the SEC paper: Q12 is in Section 2 (European Art): \"Choose one work that you have studied by Claude Monet (1840 - 1926)\" is Impressionism, not Irish Art and Modernism. NextStepUni files the question under art-ordinary-europe-realism-impressionism-and-post-impressionism, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-irish-art-and-modernism",
@@ -20423,6 +20433,146 @@
   "reviewedOptionTopics": [
     {
       "level": "higher",
+      "year": 2016,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a painting by Cimabue (c.1240 - c.1302)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2016 - Question 14 - a painting by Cimabue (c.1240 - c.1302)"
+    },
+    {
+      "level": "higher",
+      "year": 2016,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a painting by Hieronymus Bosch (died 1516)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2016 - Question 14 - a painting by Hieronymus Bosch (died 1516)"
+    },
+    {
+      "level": "higher",
+      "year": 2016,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a painting by Caravaggio (1571 - 1610)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-higher-the-baroque-c-1600-1700s",
+      "heading": "2016 - Question 14 - a painting by Caravaggio (1571 - 1610)"
+    },
+    {
+      "level": "higher",
+      "year": 2016,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a painting by Mondrian (1872 - 1944)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2016 - Question 14 - a painting by Mondrian (1872 - 1944)"
+    },
+    {
+      "level": "higher",
+      "year": 2016,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a sculpture by Henry Moore (1898 - 1986)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2016 - Question 14 - a sculpture by Henry Moore (1898 - 1986)"
+    },
+    {
+      "level": "higher",
+      "year": 2016,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "International Gothic",
+      "canonicalNodeId": "art-4-0",
+      "topicId": "art-higher-romanesque-and-gothic",
+      "heading": "2016 - Question 15 - International Gothic"
+    },
+    {
+      "level": "higher",
+      "year": 2016,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Romanticism",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-higher-section-b-generic-questions",
+      "heading": "2016 - Question 15 - Romanticism"
+    },
+    {
+      "level": "higher",
+      "year": 2016,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "The Pre-Raphaelite Brotherhood",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-higher-realism-impressionism-and-post-impressionism",
+      "heading": "2016 - Question 15 - The Pre-Raphaelite Brotherhood"
+    },
+    {
+      "level": "higher",
+      "year": 2016,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Die Brücke",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2016 - Question 15 - Die Brücke"
+    },
+    {
+      "level": "ordinary",
+      "year": 2016,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“The Arnolfini Portrait” by Jan van Eyck (died 1441)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2016 - Question 14 - “The Arnolfini Portrait” by Jan van Eyck (died 1441)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2016,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“School of Athens” by Raphael (1483 - 1520)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2016 - Question 14 - “School of Athens” by Raphael (1483 - 1520)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2016,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“Oath of the Horatii” by Jacques-Louis David (1748 - 1825)",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-ordinary-section-b-generic-questions",
+      "heading": "2016 - Question 14 - “Oath of the Horatii” by Jacques-Louis David (1748 - 1825)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2016,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“Vision after the Sermon” by Paul Gauguin (1848 - 1903)",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-ordinary-europe-realism-impressionism-and-post-impressionism",
+      "heading": "2016 - Question 14 - “Vision after the Sermon” by Paul Gauguin (1848 - 1903)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2016,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“The Persistence of Memory” by Salvador Dalí (1904 - 1989)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-ordinary-europe-modernism-c-1900-1960s",
+      "heading": "2016 - Question 14 - “The Persistence of Memory” by Salvador Dalí (1904 - 1989)"
+    },
+    {
+      "level": "higher",
       "year": 2017,
       "fileid": "LC014ALP013EV.pdf",
       "questionNumber": "14",
@@ -21484,6 +21634,51 @@
         "art-ordinary-the-baroque-c-1600-1700s"
       ],
       "basis": "retained-local"
+    },
+    {
+      "level": "higher",
+      "year": 2016,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "17",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2016,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "18",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2016,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "19",
+      "topicIds": [
+        "art-higher-art-and-the-environment"
+      ]
+    },
+    {
+      "level": "ordinary",
+      "year": 2016,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "8",
+      "topicIds": [
+        "art-ordinary-europe-romanesque-and-gothic"
+      ]
+    },
+    {
+      "level": "ordinary",
+      "year": 2016,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "9",
+      "topicIds": [
+        "art-ordinary-europe-the-renaissance-c-1300-1600s"
+      ]
     },
     {
       "level": "higher",

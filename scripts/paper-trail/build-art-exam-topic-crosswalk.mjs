@@ -341,6 +341,36 @@ const REVIEWED_REFERENCE_ANOMALIES = [
     topicId: 'art-ordinary-the-baroque-c-1600-1700s',
     evidence: "Q11 is 'The Ecstasy of Saint Teresa' by Gian Lorenzo Bernini (1598-1680), with \"(b) Briefly describe and discuss the Baroque style\": the paper itself places it in the Baroque (c. 1600-1700s), not The Renaissance.",
   },
+  {
+    level: 'higher', year: 2016, n: '6',
+    referenceTopicId: 'art-higher-irish-art-and-modernism',
+    topicId: 'art-higher-post-1960s-art-in-ireland',
+    evidence: "Q6 is \"Alice Maher (b.1956) creates artworks in a wide variety of media\", with 'Berry Dress': the work of an artist born in 1956 is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2016, n: '6',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is \"Robert Ballagh (b.1943) is one of Ireland's best known contemporary artists\": the paper itself calls him contemporary, so Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2016, n: '11',
+    referenceTopicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    topicId: 'art-ordinary-the-baroque-c-1600-1700s',
+    evidence: "Q11 is 'Supper at Emmaus' by Caravaggio (1571 - 1610), illustrated on the accompanying sheet: Caravaggio is The Baroque (c. 1600-1700s), not The Renaissance, as the paper itself says in 2017 and 2019.",
+  },
+  {
+    level: 'ordinary', year: 2016, n: '12',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    evidence: "Q12 is in Section 2 (European Art): \"Choose one work that you have studied by Claude Monet (1840 - 1926)\" is Impressionism, not Irish Art and Modernism.",
+  },
+  {
+    level: 'ordinary', year: 2016, n: '13',
+    referenceTopicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    topicId: 'art-ordinary-europe-modernism-c-1900-1960s',
+    evidence: "Q13 is 'The Red Room (Harmony in Red)' by Henri Matisse (1869 - 1954), illustrated on the accompanying sheet: Matisse's work is Modernism (c. 1900-1960s), not Post-Impressionism.",
+  },
 ];
 const anomalyFor = (level, year, n, topicId) => REVIEWED_REFERENCE_ANOMALIES.find(item => (
   item.level === level && item.year === year && item.n === n && item.referenceTopicId === topicId
@@ -766,15 +796,15 @@ if (
   throw new Error('Every logical Art card must be exactly matched, reviewed, or explicitly retained');
 }
 if (
-  matchedAssociations.length !== 570
+  matchedAssociations.length !== 565
   || sourceBlockedAssociations.length !== 98
-  || referenceAnomalyAssociations.length !== 22
-  || exactTopicsByCard.size !== 522
-  || reviewedTopicsByCard.size !== 21
-  || reviewedOnlyCards.length !== 19
-  || matchedQuestionTopicLinks !== 562
-  || reviewedOptionTopics.length !== 84
-  || reviewedSpecificTopics.length !== 25
+  || referenceAnomalyAssociations.length !== 27
+  || exactTopicsByCard.size !== 517
+  || reviewedTopicsByCard.size !== 26
+  || reviewedOnlyCards.length !== 24
+  || matchedQuestionTopicLinks !== 557
+  || reviewedOptionTopics.length !== 98
+  || reviewedSpecificTopics.length !== 30
   || retainedLocalCards.length !== 536
   || retainedWrittenLogicalCards !== 144
   || retainedPracticalLogicalCards !== 392

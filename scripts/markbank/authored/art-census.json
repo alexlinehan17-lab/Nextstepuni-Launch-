@@ -1,6 +1,7 @@
 {
   "subjectId": "art",
   "years": [
+    2016,
     2017,
     2018,
     2019,
@@ -18,11 +19,1098 @@
   ],
   "selectionUnit": "One card per separately marked printed task. Where the student chooses among printed items, the task is one card showing every option; holistic Section B/C essays remain intact.",
   "expectedCards": {
-    "higher": 476,
-    "ordinary": 446,
-    "total": 922
+    "higher": 538,
+    "ordinary": 503,
+    "total": 1041
   },
   "papers": [
+    {
+      "year": 2016,
+      "level": "higher",
+      "paperFileid": "LC014ALP013EV",
+      "expectedCards": 62,
+      "cards": [
+        {
+          "number": 1,
+          "cardId": "art-2016-hl-q1-task1",
+          "questionRef": "2016 HL Q1 · task 1",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 1,
+          "cardId": "art-2016-hl-q1-task2",
+          "questionRef": "2016 HL Q1 · task 2",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 2,
+          "cardId": "art-2016-hl-q2-task1",
+          "questionRef": "2016 HL Q2 · task 1",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2016-hl-q2-task2",
+          "questionRef": "2016 HL Q2 · task 2",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 3,
+          "cardId": "art-2016-hl-q3-task1",
+          "questionRef": "2016 HL Q3 · task 1",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 35,
+          "hasIllustration": true
+        },
+        {
+          "number": 3,
+          "cardId": "art-2016-hl-q3-task2",
+          "questionRef": "2016 HL Q3 · task 2",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 15,
+          "hasIllustration": true
+        },
+        {
+          "number": 4,
+          "cardId": "art-2016-hl-q4-task1",
+          "questionRef": "2016 HL Q4 · task 1",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 4,
+          "cardId": "art-2016-hl-q4-task2",
+          "questionRef": "2016 HL Q4 · task 2",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 5,
+          "cardId": "art-2016-hl-q5-task1",
+          "questionRef": "2016 HL Q5 · task 1",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 5,
+          "cardId": "art-2016-hl-q5-task2",
+          "questionRef": "2016 HL Q5 · task 2",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 6,
+          "cardId": "art-2016-hl-q6-task1",
+          "questionRef": "2016 HL Q6 · task 1",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 6,
+          "cardId": "art-2016-hl-q6-task2",
+          "questionRef": "2016 HL Q6 · task 2",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 7,
+          "cardId": "art-2016-hl-q7",
+          "questionRef": "2016 HL Q7",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 8,
+          "cardId": "art-2016-hl-q8-task1",
+          "questionRef": "2016 HL Q8 · task 1",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 8,
+          "cardId": "art-2016-hl-q8-task2",
+          "questionRef": "2016 HL Q8 · task 2",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 9,
+          "cardId": "art-2016-hl-q9-task1",
+          "questionRef": "2016 HL Q9 · task 1",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 9,
+          "cardId": "art-2016-hl-q9-task2",
+          "questionRef": "2016 HL Q9 · task 2",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 10,
+          "cardId": "art-2016-hl-q10-task1",
+          "questionRef": "2016 HL Q10 · task 1",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 10,
+          "cardId": "art-2016-hl-q10-task2",
+          "questionRef": "2016 HL Q10 · task 2",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 11,
+          "cardId": "art-2016-hl-q11-task1",
+          "questionRef": "2016 HL Q11 · task 1",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 11,
+          "cardId": "art-2016-hl-q11-task2",
+          "questionRef": "2016 HL Q11 · task 2",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 12,
+          "cardId": "art-2016-hl-q12-task1",
+          "questionRef": "2016 HL Q12 · task 1",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 12,
+          "cardId": "art-2016-hl-q12-task2",
+          "questionRef": "2016 HL Q12 · task 2",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 13,
+          "cardId": "art-2016-hl-q13-task1",
+          "questionRef": "2016 HL Q13 · task 1",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 13,
+          "cardId": "art-2016-hl-q13-task2",
+          "questionRef": "2016 HL Q13 · task 2",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-a-cimabue",
+          "questionRef": "2016 HL Q14(a) · a painting by Cimabue (c.1240 - c.1302)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-b-cimabue",
+          "questionRef": "2016 HL Q14(b) · a painting by Cimabue (c.1240 - c.1302)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-c-cimabue",
+          "questionRef": "2016 HL Q14(c) · a painting by Cimabue (c.1240 - c.1302)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-a-hieronymus-bosch",
+          "questionRef": "2016 HL Q14(a) · a painting by Hieronymus Bosch (died 1516)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-b-hieronymus-bosch",
+          "questionRef": "2016 HL Q14(b) · a painting by Hieronymus Bosch (died 1516)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-c-hieronymus-bosch",
+          "questionRef": "2016 HL Q14(c) · a painting by Hieronymus Bosch (died 1516)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-a-caravaggio",
+          "questionRef": "2016 HL Q14(a) · a painting by Caravaggio (1571 - 1610)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-b-caravaggio",
+          "questionRef": "2016 HL Q14(b) · a painting by Caravaggio (1571 - 1610)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-c-caravaggio",
+          "questionRef": "2016 HL Q14(c) · a painting by Caravaggio (1571 - 1610)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-a-mondrian",
+          "questionRef": "2016 HL Q14(a) · a painting by Mondrian (1872 - 1944)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-b-mondrian",
+          "questionRef": "2016 HL Q14(b) · a painting by Mondrian (1872 - 1944)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-c-mondrian",
+          "questionRef": "2016 HL Q14(c) · a painting by Mondrian (1872 - 1944)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-a-henry-moore",
+          "questionRef": "2016 HL Q14(a) · a sculpture by Henry Moore (1898 - 1986)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-b-henry-moore",
+          "questionRef": "2016 HL Q14(b) · a sculpture by Henry Moore (1898 - 1986)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-hl-q14-c-henry-moore",
+          "questionRef": "2016 HL Q14(c) · a sculpture by Henry Moore (1898 - 1986)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-hl-q15-a-international-gothic",
+          "questionRef": "2016 HL Q15(a) · International Gothic",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-hl-q15-b-international-gothic",
+          "questionRef": "2016 HL Q15(b) · International Gothic",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-hl-q15-c-international-gothic",
+          "questionRef": "2016 HL Q15(c) · International Gothic",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-hl-q15-a-romanticism",
+          "questionRef": "2016 HL Q15(a) · Romanticism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-hl-q15-b-romanticism",
+          "questionRef": "2016 HL Q15(b) · Romanticism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-hl-q15-c-romanticism",
+          "questionRef": "2016 HL Q15(c) · Romanticism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-hl-q15-a-pre-raphaelite-brotherhood",
+          "questionRef": "2016 HL Q15(a) · The Pre-Raphaelite Brotherhood",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-hl-q15-b-pre-raphaelite-brotherhood",
+          "questionRef": "2016 HL Q15(b) · The Pre-Raphaelite Brotherhood",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-hl-q15-c-pre-raphaelite-brotherhood",
+          "questionRef": "2016 HL Q15(c) · The Pre-Raphaelite Brotherhood",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-hl-q15-a-die-brucke",
+          "questionRef": "2016 HL Q15(a) · Die Brücke",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-hl-q15-b-die-brucke",
+          "questionRef": "2016 HL Q15(b) · Die Brücke",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-hl-q15-c-die-brucke",
+          "questionRef": "2016 HL Q15(c) · Die Brücke",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 16,
+          "cardId": "art-2016-hl-q16-task1",
+          "questionRef": "2016 HL Q16 · task 1",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 16,
+          "cardId": "art-2016-hl-q16-task2",
+          "questionRef": "2016 HL Q16 · task 2",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 17,
+          "cardId": "art-2016-hl-q17-task1",
+          "questionRef": "2016 HL Q17 · task 1",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 17,
+          "cardId": "art-2016-hl-q17-task2",
+          "questionRef": "2016 HL Q17 · task 2",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 18,
+          "cardId": "art-2016-hl-q18-task1",
+          "questionRef": "2016 HL Q18 · task 1",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 18,
+          "cardId": "art-2016-hl-q18-task2",
+          "questionRef": "2016 HL Q18 · task 2",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 19,
+          "cardId": "art-2016-hl-q19-task1",
+          "questionRef": "2016 HL Q19 · task 1",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 19,
+          "cardId": "art-2016-hl-q19-task2",
+          "questionRef": "2016 HL Q19 · task 2",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 20,
+          "cardId": "art-2016-hl-q20-task1",
+          "questionRef": "2016 HL Q20 · task 1",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 20,
+          "cardId": "art-2016-hl-q20-task2",
+          "questionRef": "2016 HL Q20 · task 2",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 20,
+          "hasIllustration": true
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "paperFileid": "LC014GLP013EV",
+      "expectedCards": 57,
+      "cards": [
+        {
+          "number": 1,
+          "cardId": "art-2016-ol-q1-a",
+          "questionRef": "2016 OL Q1(a)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 10,
+          "hasIllustration": true
+        },
+        {
+          "number": 1,
+          "cardId": "art-2016-ol-q1-b",
+          "questionRef": "2016 OL Q1(b)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 1,
+          "cardId": "art-2016-ol-q1-c",
+          "questionRef": "2016 OL Q1(c)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2016-ol-q2-a",
+          "questionRef": "2016 OL Q2(a)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 10,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2016-ol-q2-b",
+          "questionRef": "2016 OL Q2(b)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2016-ol-q2-c",
+          "questionRef": "2016 OL Q2(c)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 3,
+          "cardId": "art-2016-ol-q3-a",
+          "questionRef": "2016 OL Q3(a)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 10,
+          "hasIllustration": true
+        },
+        {
+          "number": 3,
+          "cardId": "art-2016-ol-q3-b",
+          "questionRef": "2016 OL Q3(b)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 3,
+          "cardId": "art-2016-ol-q3-c",
+          "questionRef": "2016 OL Q3(c)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 4,
+          "cardId": "art-2016-ol-q4-a",
+          "questionRef": "2016 OL Q4(a)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 4,
+          "cardId": "art-2016-ol-q4-b",
+          "questionRef": "2016 OL Q4(b)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 4,
+          "cardId": "art-2016-ol-q4-c",
+          "questionRef": "2016 OL Q4(c)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 5,
+          "cardId": "art-2016-ol-q5-a",
+          "questionRef": "2016 OL Q5(a)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 5,
+          "cardId": "art-2016-ol-q5-b",
+          "questionRef": "2016 OL Q5(b)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 10,
+          "hasIllustration": true
+        },
+        {
+          "number": 5,
+          "cardId": "art-2016-ol-q5-c",
+          "questionRef": "2016 OL Q5(c)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 6,
+          "cardId": "art-2016-ol-q6-a",
+          "questionRef": "2016 OL Q6(a)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 6,
+          "cardId": "art-2016-ol-q6-b",
+          "questionRef": "2016 OL Q6(b)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 6,
+          "cardId": "art-2016-ol-q6-c",
+          "questionRef": "2016 OL Q6(c)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 7,
+          "cardId": "art-2016-ol-q7-a",
+          "questionRef": "2016 OL Q7(a)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 7,
+          "cardId": "art-2016-ol-q7-b",
+          "questionRef": "2016 OL Q7(b)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 7,
+          "cardId": "art-2016-ol-q7-c",
+          "questionRef": "2016 OL Q7(c)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 8,
+          "cardId": "art-2016-ol-q8-a",
+          "questionRef": "2016 OL Q8(a)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 8,
+          "cardId": "art-2016-ol-q8-b",
+          "questionRef": "2016 OL Q8(b)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 9,
+          "cardId": "art-2016-ol-q9-a",
+          "questionRef": "2016 OL Q9(a)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 9,
+          "cardId": "art-2016-ol-q9-b",
+          "questionRef": "2016 OL Q9(b)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 10,
+          "cardId": "art-2016-ol-q10-a",
+          "questionRef": "2016 OL Q10(a)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 10,
+          "cardId": "art-2016-ol-q10-b",
+          "questionRef": "2016 OL Q10(b)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 11,
+          "cardId": "art-2016-ol-q11-a",
+          "questionRef": "2016 OL Q11(a)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 11,
+          "cardId": "art-2016-ol-q11-b",
+          "questionRef": "2016 OL Q11(b)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 12,
+          "cardId": "art-2016-ol-q12-a",
+          "questionRef": "2016 OL Q12(a)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 12,
+          "cardId": "art-2016-ol-q12-b",
+          "questionRef": "2016 OL Q12(b)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 13,
+          "cardId": "art-2016-ol-q13-a",
+          "questionRef": "2016 OL Q13(a)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 13,
+          "cardId": "art-2016-ol-q13-b",
+          "questionRef": "2016 OL Q13(b)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-ol-q14-a-arnolfini-portrait",
+          "questionRef": "2016 OL Q14(a) · “The Arnolfini Portrait” by Jan van Eyck (died 1441)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-ol-q14-b-arnolfini-portrait",
+          "questionRef": "2016 OL Q14(b) · “The Arnolfini Portrait” by Jan van Eyck (died 1441)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-ol-q14-a-school-of-athens",
+          "questionRef": "2016 OL Q14(a) · “School of Athens” by Raphael (1483 - 1520)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-ol-q14-b-school-of-athens",
+          "questionRef": "2016 OL Q14(b) · “School of Athens” by Raphael (1483 - 1520)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-ol-q14-a-oath-of-the-horatii",
+          "questionRef": "2016 OL Q14(a) · “Oath of the Horatii” by Jacques-Louis David (1748 - 1825)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-ol-q14-b-oath-of-the-horatii",
+          "questionRef": "2016 OL Q14(b) · “Oath of the Horatii” by Jacques-Louis David (1748 - 1825)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-ol-q14-a-vision-after-the-sermon",
+          "questionRef": "2016 OL Q14(a) · “Vision after the Sermon” by Paul Gauguin (1848 - 1903)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-ol-q14-b-vision-after-the-sermon",
+          "questionRef": "2016 OL Q14(b) · “Vision after the Sermon” by Paul Gauguin (1848 - 1903)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-ol-q14-a-persistence-of-memory",
+          "questionRef": "2016 OL Q14(a) · “The Persistence of Memory” by Salvador Dalí (1904 - 1989)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2016-ol-q14-b-persistence-of-memory",
+          "questionRef": "2016 OL Q14(b) · “The Persistence of Memory” by Salvador Dalí (1904 - 1989)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-ol-q15-a",
+          "questionRef": "2016 OL Q15(a)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2016-ol-q15-b",
+          "questionRef": "2016 OL Q15(b)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 16,
+          "cardId": "art-2016-ol-q16-a",
+          "questionRef": "2016 OL Q16(a)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 16,
+          "cardId": "art-2016-ol-q16-b",
+          "questionRef": "2016 OL Q16(b)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 17,
+          "cardId": "art-2016-ol-q17-a",
+          "questionRef": "2016 OL Q17(a)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 25,
+          "hasIllustration": true
+        },
+        {
+          "number": 17,
+          "cardId": "art-2016-ol-q17-b",
+          "questionRef": "2016 OL Q17(b)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 25,
+          "hasIllustration": true
+        },
+        {
+          "number": 18,
+          "cardId": "art-2016-ol-q18-a",
+          "questionRef": "2016 OL Q18(a)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 25,
+          "hasIllustration": true
+        },
+        {
+          "number": 18,
+          "cardId": "art-2016-ol-q18-b",
+          "questionRef": "2016 OL Q18(b)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 25,
+          "hasIllustration": true
+        },
+        {
+          "number": 19,
+          "cardId": "art-2016-ol-q19-a",
+          "questionRef": "2016 OL Q19(a)",
+          "section": "3",
+          "paperPage": 7,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 19,
+          "cardId": "art-2016-ol-q19-b",
+          "questionRef": "2016 OL Q19(b)",
+          "section": "3",
+          "paperPage": 7,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 20,
+          "cardId": "art-2016-ol-q20-a",
+          "questionRef": "2016 OL Q20(a)",
+          "section": "3",
+          "paperPage": 7,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 20,
+          "cardId": "art-2016-ol-q20-b",
+          "questionRef": "2016 OL Q20(b)",
+          "section": "3",
+          "paperPage": 7,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 21,
+          "cardId": "art-2016-ol-q21-a",
+          "questionRef": "2016 OL Q21(a)",
+          "section": "3",
+          "paperPage": 7,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 21,
+          "cardId": "art-2016-ol-q21-b",
+          "questionRef": "2016 OL Q21(b)",
+          "section": "3",
+          "paperPage": 7,
+          "totalMarks": 20,
+          "hasIllustration": true
+        }
+      ]
+    },
     {
       "year": 2017,
       "level": "higher",
