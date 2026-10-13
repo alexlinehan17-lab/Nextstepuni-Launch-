@@ -13,6 +13,7 @@ import reviewedHigher2025P1 from '../scripts/markbank/authored/irish-higher-2025
 import reviewedHigher2024P1 from '../scripts/markbank/authored/irish-higher-2024-p1-component-review.json';
 import reviewedHigher2023P1 from '../scripts/markbank/authored/irish-higher-2023-p1-component-review.json';
 import reviewedOrdinary2024P1 from '../scripts/markbank/authored/irish-ordinary-2024-p1-component-review.json';
+import reviewedOrdinary2023P1 from '../scripts/markbank/authored/irish-ordinary-2023-p1-component-review.json';
 import reviewedHigher2025P2 from '../components/MarkBank/cards/irish/higher-2025-p2-authored.json';
 import reviewedHigher2023P2 from '../components/MarkBank/cards/irish/higher-2023-p2-authored.json';
 import reviewedOrdinary2025P1 from '../scripts/markbank/authored/irish-ordinary-2025-p1-component-review.json';
@@ -94,13 +95,13 @@ const HIGHER = HIGHER_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 // Reviewed legacy components keep their cards here, corrected in place (IDs unchanged).
 // 2025, 2024 and 2023 HL Paper 1 and 2025/2024 OL Paper 1 also attached each retained card's printed page; 2025 OL Paper 2
 // attached the printed question page to its six prose options and three optional poems.
-const SOURCED_BY_REVIEW = new Set<string>([...reviewedHigher2025P1.cardIds, ...reviewedHigher2024P1.cardIds, ...reviewedHigher2023P1.cardIds, ...reviewedOrdinary2025P1.cardIds, ...reviewedOrdinary2024P1.cardIds,
+const SOURCED_BY_REVIEW = new Set<string>([...reviewedHigher2025P1.cardIds, ...reviewedHigher2024P1.cardIds, ...reviewedHigher2023P1.cardIds, ...reviewedOrdinary2025P1.cardIds, ...reviewedOrdinary2024P1.cardIds, ...reviewedOrdinary2023P1.cardIds,
   ...[...reviewedOrdinary2025P2.review.legacyCardIds, ...reviewedOrdinary2024P2.review.legacyCardIds].filter(id => /-(prose-2[ab]|poetry-3b)-/.test(id))]);
 // Retained listening segments and whole reading questions now mark each printed part separately.
 const REVIEWED_MULTI = new Set<string>([...reviewedHigher2025P1.listeningSegmentCardIds, ...reviewedHigher2024P1.listeningSegmentCardIds, ...reviewedHigher2023P1.listeningSegmentCardIds, ...reviewedHigher2025P2.review.readingWholeCardIds, ...reviewedHigher2023P2.review.readingWholeCardIds,
-  ...reviewedOrdinary2025P1.listeningSegmentCardIds, ...reviewedOrdinary2024P1.listeningSegmentCardIds, ...reviewedOrdinary2025P2.review.readingWholeCardIds, ...reviewedOrdinary2024P2.review.readingWholeCardIds]);
+  ...reviewedOrdinary2025P1.listeningSegmentCardIds, ...reviewedOrdinary2024P1.listeningSegmentCardIds, ...reviewedOrdinary2023P1.listeningSegmentCardIds, ...reviewedOrdinary2025P2.review.readingWholeCardIds, ...reviewedOrdinary2024P2.review.readingWholeCardIds]);
 // Reviewed Ordinary compositions use the full 0–40 scale: the printed short-attempt columns include odd values.
-const FULL_SCALE_COMPOSITION = new Set<string>([...reviewedOrdinary2025P1.compositionRouteCardIds, ...reviewedOrdinary2024P1.compositionRouteCardIds]);
+const FULL_SCALE_COMPOSITION = new Set<string>([...reviewedOrdinary2025P1.compositionRouteCardIds, ...reviewedOrdinary2024P1.compositionRouteCardIds, ...reviewedOrdinary2023P1.compositionRouteCardIds]);
 const ORDINARY = ORDINARY_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 const ALL: SecRubricCard[] = [...HIGHER, ...ORDINARY];
 const byId = new Map(ALL.map(card => [card.id, card]));
