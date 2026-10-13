@@ -487,5 +487,64 @@
     "choiceCardIds": [
       "cons-2019-hl-q4-b"
     ]
+  },
+  {
+    "year": 2019,
+    "level": "ordinary",
+    "validator": "scripts/markbank/authoring/construction_2019_ordinary.py",
+    "result": {
+      "tasks": 33,
+      "addedTasks": 12,
+      "correctedTasks": 21,
+      "consolidatedLegacy": 0,
+      "leafTasks": 24,
+      "wholeQuestions": 9,
+      "anyNChoiceCards": 1,
+      "sourceFigures": 32,
+      "paperComplete": true
+    },
+    "priorCount": 847,
+    "addedIds": [
+      "cons-2019-ol-q1-complete",
+      "cons-2019-ol-q2-a",
+      "cons-2019-ol-q2-complete",
+      "cons-2019-ol-q3-complete",
+      "cons-2019-ol-q4-a",
+      "cons-2019-ol-q4-complete",
+      "cons-2019-ol-q5-complete",
+      "cons-2019-ol-q6-a",
+      "cons-2019-ol-q6-complete",
+      "cons-2019-ol-q7-complete",
+      "cons-2019-ol-q8-terms",
+      "cons-2019-ol-q9-complete"
+    ],
+    "correctedIds": [
+      "cons-2019-ol-q1-a",
+      "cons-2019-ol-q1-b",
+      "cons-2019-ol-q2-b",
+      "cons-2019-ol-q2-c",
+      "cons-2019-ol-q3-a",
+      "cons-2019-ol-q3-b",
+      "cons-2019-ol-q3-c",
+      "cons-2019-ol-q4-b",
+      "cons-2019-ol-q4-c",
+      "cons-2019-ol-q5-a",
+      "cons-2019-ol-q5-b",
+      "cons-2019-ol-q6-a-using-a-contact-adhesive-to-glue-veneers",
+      "cons-2019-ol-q6-a-using-a-battery-powered-screwdriver",
+      "cons-2019-ol-q6-b",
+      "cons-2019-ol-q6-c",
+      "cons-2019-ol-q7-a",
+      "cons-2019-ol-q7-b",
+      "cons-2019-ol-q7-c",
+      "cons-2019-ol-q9-a",
+      "cons-2019-ol-q9-b",
+      "cons-2019-ol-q9-c"
+    ],
+    "withdrawnIds": [],
+    "keptChoiceIds": [],
+    "choiceCardIds": [
+      "cons-2019-ol-q8-terms"
+    ]
   }
 ]
