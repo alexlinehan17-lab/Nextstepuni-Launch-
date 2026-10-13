@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T21:07:41.222Z",
+  "generatedAt": "2026-10-13T21:35:54.339Z",
   "scope": {
     "included": "Factual State-exam topic associations captured from every current StudyClix Leaving Certificate topic page.",
     "excluded": "Commercial mock questions and all provider-owned question text, solutions, notes, media and PDFs.",
@@ -11,9 +11,9 @@
     "subjectsWithExactCrosswalks": 32,
     "referenceTopics": 1609,
     "referenceOfficialAssociations": 37105,
-    "matched": 27220,
+    "matched": 27215,
     "sourceBlocked": 9856,
-    "referenceAnomaly": 29,
+    "referenceAnomaly": 34,
     "unreviewed": 0,
     "sourceUnavailableTopics": 2,
     "topicsWithGaps": 1341
@@ -3154,9 +3154,9 @@
       "totals": {
         "referenceTopics": 32,
         "referenceOfficialAssociations": 690,
-        "matched": 565,
+        "matched": 560,
         "sourceBlocked": 98,
-        "referenceAnomaly": 27,
+        "referenceAnomaly": 32,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
         "topicsWithGaps": 27
@@ -3447,9 +3447,9 @@
           "label": "Section B: Generic Questions",
           "sourcePath": "/leaving-certificate/art/higher/section-b-europe-and-the-world/section-b-generic-questions",
           "referenceOfficialAssociations": 32,
-          "matched": 25,
+          "matched": 24,
           "sourceBlocked": 7,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3479,6 +3479,10 @@
             {
               "heading": "2009 - Section 2 - Question 15",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 7",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3567,9 +3571,9 @@
           "label": "Irish Art and Modernism",
           "sourcePath": "/leaving-certificate/art/higher/section-c-ireland-and-its-place-in-the-wider-world/irish-art-and-modernism",
           "referenceOfficialAssociations": 38,
-          "matched": 30,
+          "matched": 28,
           "sourceBlocked": 4,
-          "referenceAnomaly": 4,
+          "referenceAnomaly": 6,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3587,6 +3591,14 @@
             {
               "heading": "2023 - Sample Paper - Section C - Question 17",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
             },
             {
               "heading": "2016 - Section 1 - Question 6",
@@ -3799,9 +3811,9 @@
           "label": "Europe - Realism, Impressionism and Post-Impressionism",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/europe-realism-impressionism-and-post-impressionism",
           "referenceOfficialAssociations": 26,
-          "matched": 22,
+          "matched": 21,
           "sourceBlocked": 2,
-          "referenceAnomaly": 2,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3811,6 +3823,10 @@
             {
               "heading": "2009 - Paper - Section 2 - Question 14",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 11",
+              "resolution": "reference-anomaly"
             },
             {
               "heading": "2016 - Section 1 - Question 13",
@@ -4030,14 +4046,18 @@
           "label": "Pre-Christian Ireland (c 4000BC-AD500)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-c-ireland-and-its-place-in-the-wider-world/pre-christian-ireland-c-4000bc-ad500",
           "referenceOfficialAssociations": 23,
-          "matched": 22,
+          "matched": 21,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2009 - Paper - Section 1 - Question 1",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
             }
           ]
         }

@@ -30,14 +30,14 @@
     "referenceOfficialAssociations": 690,
     "referenceMockAssociations": 609,
     "referenceProviderSampleAssociations": 0,
-    "matchedAssociations": 565,
+    "matchedAssociations": 560,
     "sourceBlockedAssociations": 98,
-    "referenceAnomalyAssociations": 27,
-    "matchedLogicalCards": 517,
-    "reviewedLogicalCards": 24,
-    "reviewedOptionTopics": 98,
-    "reviewedSpecificTopics": 30,
-    "matchedQuestionTopicLinks": 557,
+    "referenceAnomalyAssociations": 32,
+    "matchedLogicalCards": 512,
+    "reviewedLogicalCards": 29,
+    "reviewedOptionTopics": 112,
+    "reviewedSpecificTopics": 36,
+    "matchedQuestionTopicLinks": 552,
     "retainedLocalLogicalCards": 536,
     "retainedWrittenLogicalCards": 144,
     "retainedPracticalLogicalCards": 392,
@@ -3543,7 +3543,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "7",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -3551,7 +3551,9 @@
         "paperKey": "single",
         "fileid": "LC014ALP013EV.pdf",
         "questionNumber": "7"
-      }
+      },
+      "filedUnder": "art-higher-irish-art-and-modernism",
+      "reason": "StudyClix files this 2015 higher heading under art-higher-section-b-generic-questions. Decided 2026-10-12 from the SEC paper: Q7 is in Section I (Art in Ireland), a choice of Irish artists from John Hogan (1800-1858) to Caroline McCarthy (b.1971): it is not a European (Section B) question, and like every other year's Q7 list it files under Irish Art and Modernism. NextStepUni files the question under art-higher-irish-art-and-modernism, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-higher-section-b-generic-questions",
@@ -5292,7 +5294,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "3",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -5300,7 +5302,9 @@
         "paperKey": "single",
         "fileid": "LC014ALP013EV.pdf",
         "questionNumber": "3"
-      }
+      },
+      "filedUnder": "art-higher-late-medieval-architecture-and-art-c1100-1550s",
+      "reason": "StudyClix files this 2015 higher heading under art-higher-irish-art-and-modernism. Decided 2026-10-12 from the SEC paper: Q3 is \"The simple design of stone churches in Early Christian Ireland developed into a more complex Irish Romanesque style\": Irish Romanesque church building (12th century) is Late Medieval Architecture and Art (c. 1100-1550s), not Irish Art and Modernism. NextStepUni files the question under art-higher-late-medieval-architecture-and-art-c1100-1550s, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-higher-irish-art-and-modernism",
@@ -5328,7 +5332,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "6",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -5336,7 +5340,9 @@
         "paperKey": "single",
         "fileid": "LC014ALP013EV.pdf",
         "questionNumber": "6"
-      }
+      },
+      "filedUnder": "art-higher-post-1960s-art-in-ireland",
+      "reason": "StudyClix files this 2015 higher heading under art-higher-irish-art-and-modernism. Decided 2026-10-12 from the SEC paper: Q6 is \"Rowan Gillespie (b.1953) creates sculptures ...\", with 'Famine' illustrated on the accompanying sheet: the work of an artist born in 1953 is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s). NextStepUni files the question under art-higher-post-1960s-art-in-ireland, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-higher-irish-art-and-modernism",
@@ -9066,7 +9072,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "11",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9074,7 +9080,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP013EV.pdf",
         "questionNumber": "11"
-      }
+      },
+      "filedUnder": "art-ordinary-the-baroque-c-1600-1700s",
+      "reason": "StudyClix files this 2015 ordinary heading under art-ordinary-europe-realism-impressionism-and-post-impressionism. Decided 2026-10-12 from the SEC paper: Q11 is the 'Return of the Prodigal Son' by Rembrandt van Rijn (1606-1669), illustrated on the accompanying sheet: Rembrandt is The Baroque (c. 1600-1700s), not Realism, Impressionism and Post-Impressionism. NextStepUni files the question under art-ordinary-the-baroque-c-1600-1700s, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-europe-realism-impressionism-and-post-impressionism",
@@ -11850,7 +11858,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "3",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -11858,7 +11866,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP013EV.pdf",
         "questionNumber": "3"
-      }
+      },
+      "filedUnder": "art-ordinary-insular-art-c-500-1100s",
+      "reason": "StudyClix files this 2015 ordinary heading under art-ordinary-pre-christian-ireland-c-4000bc-ad500. Decided 2026-10-12 from the SEC paper: Q3 is the 'Cross of the Scriptures' at Clonmacnoise, Co. Offaly, illustrated on the accompanying sheet: an Early Christian high cross is Insular Art (c. 500-1100s), not Pre-Christian Ireland. NextStepUni files the question under art-ordinary-insular-art-c-500-1100s, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-pre-christian-ireland-c-4000bc-ad500",
@@ -12567,7 +12577,8 @@
         "art-2-2"
       ],
       "topicIds": [
-        "art-higher-art-as-social-commentary-or-commentator"
+        "art-higher-art-as-social-commentary-or-commentator",
+        "art-higher-artists-theory-and-thinking"
       ],
       "resolution": "retained-local",
       "reason": "Entitled SEC written-paper card preserved locally although the factual reference snapshot has no association for this top-level question."
@@ -12584,7 +12595,9 @@
       ],
       "topicIds": [
         "art-ordinary-section-b-generic-questions",
-        "art-ordinary-europe-realism-impressionism-and-post-impressionism"
+        "art-ordinary-europe-realism-impressionism-and-post-impressionism",
+        "art-ordinary-europe-the-renaissance-c-1300-1600s",
+        "art-ordinary-the-baroque-c-1600-1700s"
       ],
       "resolution": "retained-local",
       "reason": "Entitled SEC written-paper card preserved locally although the factual reference snapshot has no association for this top-level question."
@@ -20433,6 +20446,146 @@
   "reviewedOptionTopics": [
     {
       "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a painting by Hans Holbein the Younger (c.1497-1543)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2015 - Question 14 - a painting by Hans Holbein the Younger (c.1497-1543)"
+    },
+    {
+      "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a sculpture by Gian Lorenzo Bernini (1598-1680)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-higher-the-baroque-c-1600-1700s",
+      "heading": "2015 - Question 14 - a sculpture by Gian Lorenzo Bernini (1598-1680)"
+    },
+    {
+      "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a painting by Francisco de Goya (1746-1828)",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-higher-section-b-generic-questions",
+      "heading": "2015 - Question 14 - a painting by Francisco de Goya (1746-1828)"
+    },
+    {
+      "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a sculpture by Auguste Rodin (1840-1917)",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-higher-realism-impressionism-and-post-impressionism",
+      "heading": "2015 - Question 14 - a sculpture by Auguste Rodin (1840-1917)"
+    },
+    {
+      "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a painting by Gustav Klimt (1862-1918)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2015 - Question 14 - a painting by Gustav Klimt (1862-1918)"
+    },
+    {
+      "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Rococo",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-higher-the-baroque-c-1600-1700s",
+      "heading": "2015 - Question 15 - Rococo"
+    },
+    {
+      "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Neoclassicism",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-higher-section-b-generic-questions",
+      "heading": "2015 - Question 15 - Neoclassicism"
+    },
+    {
+      "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Realism",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-higher-realism-impressionism-and-post-impressionism",
+      "heading": "2015 - Question 15 - Realism"
+    },
+    {
+      "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Fauvism",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2015 - Question 15 - Fauvism"
+    },
+    {
+      "level": "ordinary",
+      "year": 2015,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“The Lamentation” by Giotto di Bondone (c.1267-1337)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2015 - Question 14 - “The Lamentation” by Giotto di Bondone (c.1267-1337)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2015,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“The Ecstasy of St Teresa” by Gian Lorenzo Bernini (1598-1680)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-ordinary-the-baroque-c-1600-1700s",
+      "heading": "2015 - Question 14 - “The Ecstasy of St Teresa” by Gian Lorenzo Bernini (1598-1680)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2015,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“A Lady Writing a Letter, with her Maid” by Johannes Vermeer (1632-1675)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-ordinary-the-baroque-c-1600-1700s",
+      "heading": "2015 - Question 14 - “A Lady Writing a Letter, with her Maid” by Johannes Vermeer (1632-1675)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2015,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“The Hay Wain” by John Constable (1776-1837)",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-ordinary-section-b-generic-questions",
+      "heading": "2015 - Question 14 - “The Hay Wain” by John Constable (1776-1837)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2015,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“The Starry Night” by Vincent van Gogh (1853-1890)",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-ordinary-europe-realism-impressionism-and-post-impressionism",
+      "heading": "2015 - Question 14 - “The Starry Night” by Vincent van Gogh (1853-1890)"
+    },
+    {
+      "level": "higher",
       "year": 2016,
       "fileid": "LC014ALP013EV.pdf",
       "questionNumber": "14",
@@ -21679,6 +21832,63 @@
       "topicIds": [
         "art-ordinary-europe-the-renaissance-c-1300-1600s"
       ]
+    },
+    {
+      "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "13",
+      "topicIds": [
+        "art-higher-modernism-c-1900-1960s"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "17",
+      "topicIds": [
+        "art-higher-artists-theory-and-thinking"
+      ],
+      "basis": "retained-local"
+    },
+    {
+      "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "18",
+      "topicIds": [
+        "art-higher-art-and-the-environment"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "19",
+      "topicIds": [
+        "art-higher-art-and-the-environment"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2015,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "20",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
+      ]
+    },
+    {
+      "level": "ordinary",
+      "year": 2015,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "topicIds": [
+        "art-ordinary-europe-the-renaissance-c-1300-1600s",
+        "art-ordinary-the-baroque-c-1600-1700s"
+      ],
+      "basis": "retained-local"
     },
     {
       "level": "higher",

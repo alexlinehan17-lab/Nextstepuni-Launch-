@@ -371,6 +371,36 @@ const REVIEWED_REFERENCE_ANOMALIES = [
     topicId: 'art-ordinary-europe-modernism-c-1900-1960s',
     evidence: "Q13 is 'The Red Room (Harmony in Red)' by Henri Matisse (1869 - 1954), illustrated on the accompanying sheet: Matisse's work is Modernism (c. 1900-1960s), not Post-Impressionism.",
   },
+  {
+    level: 'higher', year: 2015, n: '3',
+    referenceTopicId: 'art-higher-irish-art-and-modernism',
+    topicId: 'art-higher-late-medieval-architecture-and-art-c1100-1550s',
+    evidence: "Q3 is \"The simple design of stone churches in Early Christian Ireland developed into a more complex Irish Romanesque style\": Irish Romanesque church building (12th century) is Late Medieval Architecture and Art (c. 1100-1550s), not Irish Art and Modernism.",
+  },
+  {
+    level: 'higher', year: 2015, n: '6',
+    referenceTopicId: 'art-higher-irish-art-and-modernism',
+    topicId: 'art-higher-post-1960s-art-in-ireland',
+    evidence: "Q6 is \"Rowan Gillespie (b.1953) creates sculptures ...\", with 'Famine' illustrated on the accompanying sheet: the work of an artist born in 1953 is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'higher', year: 2015, n: '7',
+    referenceTopicId: 'art-higher-section-b-generic-questions',
+    topicId: 'art-higher-irish-art-and-modernism',
+    evidence: 'Q7 is in Section I (Art in Ireland), a choice of Irish artists from John Hogan (1800-1858) to Caroline McCarthy (b.1971): it is not a European (Section B) question, and like every other year\'s Q7 list it files under Irish Art and Modernism.',
+  },
+  {
+    level: 'ordinary', year: 2015, n: '3',
+    referenceTopicId: 'art-ordinary-pre-christian-ireland-c-4000bc-ad500',
+    topicId: 'art-ordinary-insular-art-c-500-1100s',
+    evidence: "Q3 is the 'Cross of the Scriptures' at Clonmacnoise, Co. Offaly, illustrated on the accompanying sheet: an Early Christian high cross is Insular Art (c. 500-1100s), not Pre-Christian Ireland.",
+  },
+  {
+    level: 'ordinary', year: 2015, n: '11',
+    referenceTopicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    topicId: 'art-ordinary-the-baroque-c-1600-1700s',
+    evidence: "Q11 is the 'Return of the Prodigal Son' by Rembrandt van Rijn (1606-1669), illustrated on the accompanying sheet: Rembrandt is The Baroque (c. 1600-1700s), not Realism, Impressionism and Post-Impressionism.",
+  },
 ];
 const anomalyFor = (level, year, n, topicId) => REVIEWED_REFERENCE_ANOMALIES.find(item => (
   item.level === level && item.year === year && item.n === n && item.referenceTopicId === topicId
@@ -796,15 +826,15 @@ if (
   throw new Error('Every logical Art card must be exactly matched, reviewed, or explicitly retained');
 }
 if (
-  matchedAssociations.length !== 565
+  matchedAssociations.length !== 560
   || sourceBlockedAssociations.length !== 98
-  || referenceAnomalyAssociations.length !== 27
-  || exactTopicsByCard.size !== 517
-  || reviewedTopicsByCard.size !== 26
-  || reviewedOnlyCards.length !== 24
-  || matchedQuestionTopicLinks !== 557
-  || reviewedOptionTopics.length !== 98
-  || reviewedSpecificTopics.length !== 30
+  || referenceAnomalyAssociations.length !== 32
+  || exactTopicsByCard.size !== 512
+  || reviewedTopicsByCard.size !== 31
+  || reviewedOnlyCards.length !== 29
+  || matchedQuestionTopicLinks !== 552
+  || reviewedOptionTopics.length !== 112
+  || reviewedSpecificTopics.length !== 36
   || retainedLocalCards.length !== 536
   || retainedWrittenLogicalCards !== 144
   || retainedPracticalLogicalCards !== 392
