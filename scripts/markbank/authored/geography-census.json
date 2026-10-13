@@ -15,10 +15,10 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 2039,
-  "includedBaseTasks": 2038,
+  "paperBaseTasks": 2163,
+  "includedBaseTasks": 2162,
   "excludedBaseTasks": 1,
-  "authoredCards": 2183,
+  "authoredCards": 2314,
   "baseTasks": [
     {
       "id": "geography-2018-hl-p1-q1",
@@ -1116,6 +1116,1122 @@
       "part": 2,
       "questionRef": "2018 HL Part 2 Q24",
       "title": "The Atmosphere – Ocean Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q1",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q1(i)",
+      "title": "Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q1-ii-a",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q1(ii)(a)",
+      "title": "Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q1-ii-b",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q1(ii)(b)",
+      "title": "Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q2",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q2(i)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q2-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q2(ii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q3",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q3",
+      "title": "Physical Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q4",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q4",
+      "title": "Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q5",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q5(i)",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q5-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q5(ii)",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q6",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q6(i)",
+      "title": "Weather Chart",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q6-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q6(ii)",
+      "title": "Weather Chart",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q6-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q6(iii)",
+      "title": "Weather Chart",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q6-iv",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q6(iv)",
+      "title": "Weather Chart",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q6-v",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q6(v)",
+      "title": "Weather Chart",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q7",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q7(i)",
+      "title": "Human Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q7-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q7(ii)",
+      "title": "Human Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q7-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q7(iii)",
+      "title": "Human Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q7-iv",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q7(iv)",
+      "title": "Human Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q7-v",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q7(v)",
+      "title": "Human Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q8",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q8(i)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q8-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q8(ii)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q8-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q8(iii)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q8-iv",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q8(iv)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q8-v",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q8(v)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q9",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q9(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q9-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q9(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q10",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q10(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q10-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q10(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q10-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q10(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q11",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q11",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q12",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q12(i)",
+      "title": "Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q12-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q12(ii)",
+      "title": "Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q12-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q12(iii)",
+      "title": "Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q12-iv",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q12(iv)",
+      "title": "Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p1-q12-v",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2018 OL Part 1 Q12(v)",
+      "title": "Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q1a",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q1A(i)",
+      "title": "Mass Movement",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q1a-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q1A(ii)",
+      "title": "Mass Movement",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q1a-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q1A(iii)",
+      "title": "Mass Movement",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q1a-iv",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q1A(iv)",
+      "title": "Mass Movement",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q1b",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q1B(i)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q1b-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q1B(ii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q1b-iii-igneous-rocks",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q1B(iii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q1c",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q1C(i)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q1c-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q1C(ii)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q1c-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q1C(iii)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q2a",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q2A(i)",
+      "title": "Plate Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q2a-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q2A(ii)",
+      "title": "Plate Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q2a-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q2A(iii)",
+      "title": "Plate Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q2a-iv",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q2A(iv)",
+      "title": "Plate Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q2a-v",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q2A(v)",
+      "title": "Plate Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q2a-vi",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q2A(vi)",
+      "title": "Plate Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q2b-route-i",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q2B",
+      "title": "Landform Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q2c-quarrying",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q2C",
+      "title": "Human Interaction with the Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q3a",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q3A",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q3b",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q3B(i)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q3b-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q3B(ii)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q3b-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q3B(iii)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q3c-river-processes",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q3C",
+      "title": "Human Interaction with Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q4a",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q4A",
+      "title": "Map Skills",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q4b",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q4B(i)",
+      "title": "Secondary Economic Activity in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q4b-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q4B(ii)",
+      "title": "Secondary Economic Activity in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q4b-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q4B(iii)",
+      "title": "Secondary Economic Activity in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q4c",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q4C",
+      "title": "Urban Growth in a European Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q5a",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q5A(i)",
+      "title": "Irish Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q5a-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q5A(ii)",
+      "title": "Irish Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q5a-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q5A(iii)",
+      "title": "Irish Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q5a-iv",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q5A(iv)",
+      "title": "Irish Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q5a-v",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q5A(v)",
+      "title": "Irish Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q5a-vi",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q5A(vi)",
+      "title": "Irish Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q5b",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q5B",
+      "title": "Tertiary Economic Activities – European Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q5c",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q5C",
+      "title": "Economic Activities – Continental / Sub-Continental Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q6a",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q6A",
+      "title": "Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q6b",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q6B(i)",
+      "title": "Agriculture in a European Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q6b-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q6B(ii)",
+      "title": "Agriculture in a European Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q6c",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q6C(i)",
+      "title": "Concept of a Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q6c-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q6C(ii)",
+      "title": "Concept of a Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q7a",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q7A(i)",
+      "title": "Economic Activity – The Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q7a-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q7A(ii)",
+      "title": "Economic Activity – The Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q7b",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q7B(i)",
+      "title": "Economic Development – Developed Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q7b-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q7B(ii)",
+      "title": "Economic Development – Developed Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q7b-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q7B(iii)",
+      "title": "Economic Development – Developed Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q7b-iv",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q7B(iv)",
+      "title": "Economic Development – Developed Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q7c",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q7C(i)",
+      "title": "Economic Activity and Conflict",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q7c-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q7C(ii)",
+      "title": "Economic Activity and Conflict",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q8a",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q8A(i)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q8a-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q8A(ii)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q8a-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q8A(iii)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q8a-iv",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q8A(iv)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q8a-v",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q8A(v)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q8b",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q8B(i)",
+      "title": "Economic Activity – Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q8b-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q8B(ii)",
+      "title": "Economic Activity – Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q8b-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q8B(iii)",
+      "title": "Economic Activity – Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q8c",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q8C(i)",
+      "title": "Renewable Energy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q8c-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q8C(ii)",
+      "title": "Renewable Energy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q9a",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q9A",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q9b",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q9B(i)",
+      "title": "European Union Policies",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q9b-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q9B(ii)",
+      "title": "European Union Policies",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q9b-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q9B(iii)",
+      "title": "European Union Policies",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q9b-iv",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q9B(iv)",
+      "title": "European Union Policies",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q9c",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q9C(i)",
+      "title": "Multinational Company (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q9c-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q9C(ii)",
+      "title": "Multinational Company (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q9c-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q9C(iii)",
+      "title": "Multinational Company (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q9c-iv",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q9C(iv)",
+      "title": "Multinational Company (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q10a",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q10A",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q10b",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q10B(i)",
+      "title": "Urban Land-Use",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q10b-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q10B(ii)",
+      "title": "Urban Land-Use",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q10c",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q10C(i)",
+      "title": "Migration – Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q10c-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q10C(ii)",
+      "title": "Migration – Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q10c-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q10C(iii)",
+      "title": "Migration – Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q11a",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q11A(i)",
+      "title": "Traffic",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q11a-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q11A(ii)",
+      "title": "Traffic",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q11a-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q11A(iii)",
+      "title": "Traffic",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q11a-iv",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q11A(iv)",
+      "title": "Traffic",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q11a-v",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q11A(v)",
+      "title": "Traffic",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q11a-vi",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q11A(vi)",
+      "title": "Traffic",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q11b",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q11B",
+      "title": "Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q11c",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q11C(i)",
+      "title": "Settlement Distribution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q11c-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q11C(ii)",
+      "title": "Settlement Distribution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q11c-iii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q11C(iii)",
+      "title": "Settlement Distribution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q11c-iv",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q11C(iv)",
+      "title": "Settlement Distribution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q12a",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q12A(i)",
+      "title": "Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q12a-ii",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q12A(ii)",
+      "title": "Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q12b",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q12B",
+      "title": "Urban Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2018-ol-p2-q12c",
+      "year": 2018,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2018 OL Part 2 Q12C",
+      "title": "Urban Problems",
       "status": "authored"
     },
     {
@@ -18383,6 +19499,15 @@
       "reviewed": true
     },
     {
+      "year": 2018,
+      "level": "ordinary",
+      "paperBaseTasks": 124,
+      "includedBaseTasks": 124,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 131,
+      "reviewed": true
+    },
+    {
       "year": 2019,
       "level": "higher",
       "paperBaseTasks": 113,
@@ -18597,6 +19722,65 @@
     },
     {
       "questionRef": "2018 HL Part 2 Q23",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 3
+    },
+    {
+      "questionRef": "2018 OL Part 2 Q1B(iii)",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2018 OL Part 2 Q2B",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2018 OL Part 2 Q2C",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2018 OL Part 2 Q3C",
+      "classification": "finite-expanded",
+      "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2018 OL Part 2 Q5C",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
+    },
+    {
+      "questionRef": "2018 OL Part 2 Q6B(ii)",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
+    },
+    {
+      "questionRef": "2018 OL Part 2 Q12C",
       "classification": "single-card-choice",
       "variants": 1,
       "kinds": [
