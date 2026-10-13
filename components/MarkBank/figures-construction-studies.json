@@ -3316,5 +3316,187 @@
     "alt": "SEC 2020 Ordinary marking scheme notes on advantages of more natural light for the occupants.",
     "attribution": "SEC Leaving Certificate Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2019-HL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q1-original.png",
+    "md5": "a566f26dd1a31c5d43982e738cbe9466",
+    "alt": "Original SEC 2019 Higher Construction Studies Question 1: the printed question with a sketch of a triple-glazed window below a larch-clad panel in a rendered wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-HL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q2-original.png",
+    "md5": "1576c66717494df28ea990445e39479e",
+    "alt": "Original SEC 2019 Higher Construction Studies Question 2: the printed question with a sketch of a rural house and the outline of the proposed extension.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-HL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q3-original.png",
+    "md5": "232ccd01e6d7374d5b354eef5b5b0b3d",
+    "alt": "Original SEC 2019 Higher Construction Studies Question 3: the printed question with the elevation and first-floor plan of a detached house, wall A-A marked.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-HL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q4-original.png",
+    "md5": "80fc3f5867f4ebecbd96d3344dd9e03e",
+    "alt": "Original SEC 2019 Higher Construction Studies Question 4: the printed question with a sketch of a row of brick terraced townhouses and the three surveyed areas.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-HL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q5-original.png",
+    "md5": "f006965f0702769c0a435e20d7849217",
+    "alt": "Original SEC 2019 Higher Construction Studies Question 5: the printed question with sketches of the partially filled cavity wall and the external insulation, and all the thermal data.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-HL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q6-original.png",
+    "md5": "6ee5fd26d6a71c6d7d446aac23b45f96",
+    "alt": "Original SEC 2019 Higher Construction Studies Question 6: the printed question with the elevation and ground floor plan of a low environmental impact house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-HL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q7-original.png",
+    "md5": "770a59a81d03513d65eddde54f4124ce",
+    "alt": "Original SEC 2019 Higher Construction Studies Question 7: the printed question with a sketch of a closed riser stairs with a bullnose bottom step.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-HL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q8-original.png",
+    "md5": "dd2dd9fa8b08ee8acc5f6fe28aa45c8b",
+    "alt": "Original SEC 2019 Higher Construction Studies Question 8: the printed question with the site layout map showing the new house and driveway on site A.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-HL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q9-original.png",
+    "md5": "44f450b591642969a1fbaf530f30307f",
+    "alt": "Original SEC 2019 Higher Construction Studies Question 9: the printed question with an outline section through an external door with three locations circled.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-HL-q10-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q10-original.png",
+    "md5": "424ca4a5f236e4e7c905fcb330a6ff93",
+    "alt": "Original SEC 2019 Higher Construction Studies Question 10: the printed question with the elevation and plan of a 1970s bungalow, wall B-B marked.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-HL-q10-alt-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q10-alt-original.png",
+    "md5": "fbc3e1d5bf88165a224ad22de1b482c3",
+    "alt": "Original SEC 2019 Higher Construction Studies alternative Question 10: the printed quotation from Henry Skates on global warming and carbon footprints, and the task.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2019-HL-q1-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q1-section.png",
+    "md5": "2770e8c0175d4215da6b99b3a91d658a",
+    "alt": "SEC model vertical section through the triple-glazed window, the timber frame wall with its block outer leaf and the larch-clad panel above, with the cill detail for part (b) (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q1-cill": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q1-cill.png",
+    "md5": "1c2c8d003c9ad986c01f1c4386f35299",
+    "alt": "SEC model cill detail with the wrap-around DPC marked “(b) DPC”.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q2-profiles": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q2-profiles.png",
+    "md5": "e7dfa49e523192b0183e0bf1c7313352",
+    "alt": "SEC 2019 Higher marking scheme sketches of four possible roof profiles for the extension — pitched, pitched with roof lights, flat green roof and curved roof.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q3-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q3-layout.png",
+    "md5": "403535d383ca0b92f148e7db57ec88d8",
+    "alt": "SEC model first-floor layouts for the bedroom and en suite with notes on furniture, access, storage, flexibility, ergonomics and the senses (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q3-external": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q3-external.png",
+    "md5": "fcc464289a8bf6f8b1a82bd10c6f5cb4",
+    "alt": "SEC 2019 Higher marking scheme notes and sketches of external designs for the extension (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q4-upgrades": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q4-upgrades.png",
+    "md5": "478f86e824f4c336e651d401ef31ae17",
+    "alt": "SEC 2019 Higher marking scheme notes and sketches for upgrading all three areas — the slated roof, the sliding sash windows and the solid brick walls with lime render (five pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q5-calculation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q5-calculation.png",
+    "md5": "011404d5375993099f657d03df6cd08f",
+    "alt": "SEC worked solution: the U-value table giving a total resistance of 1.939 and U = 0.516 W/m²°C, and the annual heat-loss cost of €199.60 by two methods.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q5-thickness": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q5-thickness.png",
+    "md5": "2666793d8af92403ebfcba6391909b33",
+    "alt": "SEC worked solution for the thickness of external expanded polystyrene: 147 mm.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q6-features": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q6-features.png",
+    "md5": "e09689c4814dccd888ed574cab1932af",
+    "alt": "SEC 2019 Higher marking scheme notes on low environmental impact features, with sketches of solar shading, the plan and photovoltaic panels.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q6-renewables": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q6-renewables.png",
+    "md5": "13c9ef777aaeee4ac8222ba0c10c3fef",
+    "alt": "SEC 2019 Higher marking scheme notes and sketches on evacuated tubes, wind turbines and photovoltaic cells, and how each makes a home more eco-friendly (three pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q7-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q7-section.png",
+    "md5": "0cbe56d55b1a54d6624bb56ef59f282c",
+    "alt": "SEC model section through the closed string stairs with the typical member sizes, the Ø100 mm sphere and the 840–900 mm handrail height, and the safety features for part (b).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q8-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q8-layout.png",
+    "md5": "052487681e0b09f5d130523df5686621",
+    "alt": "SEC model site layout of the septic tank and percolation area with the minimum distances.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q8-alternative": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q8-alternative.png",
+    "md5": "064b7597d5ddb0d655a687fc944efae8",
+    "alt": "SEC 2019 Higher marking scheme notes and sketches of three alternative wastewater systems: a raised percolation area, a constructed wetland and a peat filter.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q9-details": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q9-details.png",
+    "md5": "2ea747695840c8ea47fdab495d1901d3",
+    "alt": "SEC model details preventing thermal bridges at the wallplate, the door head and the door threshold in a full-fill cavity wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2019-HL-q10-retrofit": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-HL-q10-retrofit.png",
+    "md5": "00f147d5735da1db6a2a74c4d514743e",
+    "alt": "SEC 2019 Higher marking scheme notes and sketches on retrofitting the bungalow to EnerPHit — envelope, heat recovery ventilation, airtightness, comfort, renewables and solar gain (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+    "solution": true
   }
 }

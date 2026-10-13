@@ -7639,1085 +7639,1665 @@
   },
   {
     "id": "cons-2019-hl-q1-b",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
     "topicId": "cons-3-6",
     "conceptId": "typical-design-detailing-prevent-ingress-rainwater",
-    "level": "higher",
-    "year": 2019,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2019 HL Q1(b)",
+    "stem": "A triple glazed window with a wooden frame is fitted in the external wall of a dwelling house as shown. The fixed frame of the window is 100 mm × 80 mm. The wall is of timber frame construction with an external concrete block leaf. The internal timber frame is 250 mm × 50 mm and the outer leaf is of 100 mm concrete block construction with an external render finish. A 50 mm service cavity is also provided at the internal surface. Above the window head, an inset wooden panel is sheeted with vertical larch cladding of 130 mm × 20 mm to form an external rainscreen, as shown. The window is 600 mm in height and has a thermally broken insulated frame.",
     "questionText": "On your drawing, show the typical design detailing to prevent the ingress of rainwater at the window cill.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "fixed",
-      "notation": "4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
+      "kind": "fixed"
     },
     "totalMarks": 4,
     "rows": [
       {
-        "id": "cons-2019-hl-q1-b-r1",
-        "kind": "point",
-        "verbatim": "Design detail to prevent the ingress of rainwater at window cill",
+        "id": "cill",
+        "kind": "criterion",
+        "verbatim": "wrap around DPC",
         "marks": 4,
-        "openList": true,
-        "contextNote": ""
+        "contextNote": "Show and identify a DPC wrapped around the cill under the window frame, as in the scheme’s model detail.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q1-cill",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "Triple-glazed window in a timber frame wall",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction and scale/drafting marks belong to part (a); the cill detail in (b) is marked separately."
+    }
   },
   {
     "id": "cons-2019-hl-q3-a",
-    "topicId": "cons-5-6",
-    "conceptId": "design-considerations-proposed-bedroom-suite-bathroom",
-    "level": "higher",
-    "year": 2019,
     "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
     "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "design-considerations-proposed-bedroom-suite-bathroom",
     "questionRef": "2019 HL Q3(a)",
+    "stem": "The drawing shows the elevation of a detached house and the plan of its first floor. The front wall A-A is south facing. The owners intend to apply for planning permission to build an additional bedroom and en suite bathroom. It is proposed to remove the roof of the single storey extension on the left and build the bedroom and bathroom over it.",
     "questionText": "Discuss in detail, three design considerations for the proposed bedroom and en suite bathroom.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 6",
-      "answer": 3,
-      "ofParts": 9,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 18,
     "rows": [
       {
-        "id": "cons-2019-hl-q3-a-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss in detail, three design considerations for the proposed bedroom and en suite bathroom.",
-        "marks": 18,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 3,
-          "perOption": 6,
-          "options": [
-            "Furniture Layout",
-            "Access & Escape",
-            "Storage",
-            "Future Flexibility",
-            "Ergonomics",
-            "Visual",
-            "Auditory",
-            "Tactile",
-            "Olfactory"
-          ]
-        }
+        "id": "consideration-1",
+        "kind": "criterion",
+        "verbatim": "Design consideration 1 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "Point 3 and discussion 3. Such as: furniture layout for the bed, lockers and wardrobe, with the en suite fittings close to existing drainage; access and escape, with a second means of egress such as an escape window.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "consideration-2",
+        "kind": "criterion",
+        "verbatim": "Design consideration 2 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A second, different consideration. Such as: storage in wardrobes or a walk-in wardrobe; future flexibility in sockets, lights and multi-functional space; ergonomics around doors and drawers.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "consideration-3",
+        "kind": "criterion",
+        "verbatim": "Design consideration 3 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A third, different consideration. Such as: the human senses — natural light from the south (visual), triple glazing against noise (auditory), insulation and thermostats (tactile), ventilation of bedroom and en suite (olfactory).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Second-storey bedroom and en suite extension",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. Considerations, layouts and the external design are open responses; the scheme gives model layouts and designs."
+    }
   },
   {
     "id": "cons-2019-hl-q3-b",
-    "topicId": "cons-5-6",
-    "conceptId": "proposed-internal-layout-bedroom-suite-bathroom",
-    "level": "higher",
-    "year": 2019,
     "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
     "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "proposed-internal-layout-bedroom-suite-bathroom",
     "questionRef": "2019 HL Q3(b)",
+    "stem": "The drawing shows the elevation of a detached house and the plan of its first floor. The front wall A-A is south facing. The owners intend to apply for planning permission to build an additional bedroom and en suite bathroom. It is proposed to remove the roof of the single storey extension on the left and build the bedroom and bathroom over it.",
     "questionText": "Using notes and freehand sketches, show a proposed internal layout for the bedroom and en suite bathroom that incorporates each of the design considerations you outlined at 3(a) above. Justify your choices.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 3",
-      "answer": 3,
-      "ofParts": 9,
-      "perPart": 3
+      "kind": "fixed"
     },
-    "totalMarks": 9,
+    "totalMarks": 26,
     "rows": [
       {
-        "id": "cons-2019-hl-q3-b-r1",
-        "kind": "anyN",
-        "verbatim": "Using notes and freehand sketches, show a proposed internal layout for the bedroom and en suite bathroom that incorporat",
-        "marks": 9,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 3,
-          "perOption": 3,
-          "options": [
-            "Furniture Layout",
-            "Access & Egress",
-            "Storage",
-            "Future Flexibility",
-            "Ergonomics",
-            "Visual",
-            "Auditory",
-            "Tactile",
-            "Olfactory"
-          ]
-        }
+        "id": "layout",
+        "kind": "criterion",
+        "verbatim": "Internal layout design (Bedroom + en-suite)",
+        "marks": 14,
+        "contextNote": "A layout of the bedroom and en suite, as in the scheme’s model plans: furniture placed with circulation space; en suite fittings near the existing waste pipes or on an external wall; a stud partition to the en suite and walk-in wardrobe.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "id": "consideration-1",
+        "kind": "criterion",
+        "verbatim": "Design Consideration 1",
+        "marks": 3,
+        "contextNote": "The first consideration from (a) shown in the layout.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "consideration-2",
+        "kind": "criterion",
+        "verbatim": "Design Consideration 2",
+        "marks": 3,
+        "contextNote": "The second consideration from (a) shown in the layout.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "consideration-3",
+        "kind": "criterion",
+        "verbatim": "Design Consideration 3",
+        "marks": 3,
+        "contextNote": "The third consideration from (a) shown in the layout.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "justification",
+        "kind": "criterion",
+        "verbatim": "Justification",
+        "marks": 3,
+        "contextNote": "The choices justified, such as large south windows for light and heat, an escape window and a ventilated en suite.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
       }
     ],
-    "notes": "The scheme awards 26 marks for this part. The 9 on this card are the marks it states answers for; the other 17 go to Internal layout design (Bedroom + en-suite) (14); Justification (3) — the drawing itself and anything the scheme prices without saying what earns it."
+    "questionFigureKey": "construction-studies-2019-HL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q3-layout",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Second-storey bedroom and en suite extension",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. Considerations, layouts and the external design are open responses; the scheme gives model layouts and designs."
+    }
   },
   {
     "id": "cons-2019-hl-q4-a",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
     "topicId": "cons-1-1",
     "conceptId": "benefits-local-community-refurbishing-townhouses-family",
-    "level": "higher",
-    "year": 2019,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2019 HL Q4(a)",
+    "stem": "The sketch shows a row of terraced townhouses built over 100 years ago. A young couple have purchased one of the houses and have decided to refurbish it as their family home.",
     "questionText": "Discuss three benefits to the local community of refurbishing one of the townhouses as a family home.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 8",
-      "answer": 3,
-      "ofParts": 7,
-      "perPart": 8
+      "kind": "fixed"
     },
     "totalMarks": 24,
     "rows": [
       {
-        "id": "cons-2019-hl-q4-a-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss three benefits to the local community of refurbishing one of the townhouses as a family home.",
-        "marks": 24,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 3,
-          "perOption": 8,
-          "options": [
-            "Maintain and develop the local social community – local schools, amities, parks, playgrounds, etc",
-            "Improve the local economy of urban areas – shops, cafes, restaurants, etc",
-            "Maintain and improve the physical structure of the neighbourhood for everyone living there",
-            "Help alleviate the current housing shortage in urban areas",
-            "Engender pride in the local area and encourage neighbouring premises to upgrade",
-            "Maintaining the existing, residential, architectural heritage of the urban area",
-            "Encourage regeneration of the area"
-          ]
-        }
+        "id": "benefit-1",
+        "kind": "criterion",
+        "verbatim": "Benefit 1 (4 for point, 4 for discussion)",
+        "marks": 8,
+        "contextNote": "Point 4 and discussion 4. Such as: sustaining the local social community — schools, parks and playgrounds; supporting local shops and cafés.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "benefit-2",
+        "kind": "criterion",
+        "verbatim": "Benefit 2 (4 for point, 4 for discussion)",
+        "marks": 8,
+        "contextNote": "A second, different benefit. Such as: improving the physical fabric of the neighbourhood; easing the urban housing shortage.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "benefit-3",
+        "kind": "criterion",
+        "verbatim": "Benefit 3 (4 for point, 4 for discussion)",
+        "marks": 8,
+        "contextNote": "A third, different benefit. Such as: pride that encourages neighbours to upgrade; keeping the residential architectural heritage; regeneration of the area.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Refurbishing a terraced townhouse",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Part (b) is a closed choice of any two of the three printed areas: one card holding all three."
+    }
   },
   {
     "id": "cons-2019-hl-q5-a",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
     "topicId": "cons-6-1",
     "conceptId": "calculate-value-wall-given-construction-has",
-    "level": "higher",
-    "year": 2019,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2019 HL Q5(a)",
-    "questionText": "Calculate the U-value of the wall, given the construction has the following sequence and data: External render thickness 16 mm Concrete block outer leaf thickness 100 mm Clear cavity width 50 mm Polystyrene insulation thickness 50 mm Concrete block inner leaf thickness 100 mm Internal plaster thickness 12 mm Thermal data of the external wall: Resistance of external surface (R) 0.048 m2 °C/W Resistivity of external render (r) 2.170 m °C/W Conductivity of concrete external blockwork (k) 1.440 W/m °C Resistance of clear cavity (R) 0.170 m2 °C/W Conductivity of insulation (k) 0.037 W/m °C Conductivity of concrete internal blockwork (k) 1.440 W/m °C Resistivity of internal plaster (r) 6.250 m °C/W Resistance of internal surface (R) 0.122 m2 °C/W",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "stem": "The external wall of a house built in the 1990s is of 100 mm concrete block construction with a 100 mm partially filled cavity, as shown.",
+    "questionText": "Calculate the U-value of the wall, given the construction has the following sequence and data: External render thickness 16 mm; Concrete block outer leaf thickness 100 mm; Clear cavity width 50 mm; Polystyrene insulation thickness 50 mm; Concrete block inner leaf thickness 100 mm; Internal plaster thickness 12 mm.\nThermal data of the external wall: Resistance of external surface (R) 0.048 m2 °C/W; Resistivity of external render (r) 2.170 m °C/W; Conductivity of concrete external blockwork (k) 1.440 W/m °C; Resistance of clear cavity (R) 0.170 m2 °C/W; Conductivity of insulation (k) 0.037 W/m °C; Conductivity of concrete internal blockwork (k) 1.440 W/m °C; Resistivity of internal plaster (r) 6.250 m °C/W; Resistance of internal surface (R) 0.122 m2 °C/W.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "9 x 3",
-      "answer": 9,
-      "ofParts": 9,
-      "perPart": 3
-    },
-    "totalMarks": 27,
-    "rows": [
-      {
-        "id": "cons-2019-hl-q5-a-r1",
-        "kind": "anyN",
-        "verbatim": "Calculate the U-value of the wall, given the construction has the following sequence and data: External render thickness",
-        "marks": 27,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 9,
-          "perOption": 3,
-          "options": [
-            "External surface resistance",
-            "External render",
-            "External blockwork",
-            "Clear cavity",
-            "Polystyrene insulation",
-            "Internal blockwork",
-            "Internal plaster",
-            "Internal surface resistance",
-            "Calculation of U- value"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2019-hl-q5-b",
-    "topicId": "cons-6-1",
-    "conceptId": "value-wall-obtained-above-data-calculate",
-    "level": "higher",
-    "year": 2019,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2019 HL Q5(b)",
-    "questionText": "Using the U-value of the wall obtained at 5(a) above and the following data, calculate the cost of heat lost annually through this wall: • area of external wall 135 m2 • average internal temperature 19 °C • average external temperature 5 °C • heating period 9 hours daily for 36 weeks per annum • cost of oil 94 cent per litre • calorific value of oil 37350 kJ per litre • 1000 Watts 1 kJ per second.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "5 x 3",
-      "answer": 5,
-      "ofParts": 5,
-      "perPart": 3
-    },
-    "totalMarks": 15,
-    "rows": [
-      {
-        "id": "cons-2019-hl-q5-b-r1",
-        "kind": "anyN",
-        "verbatim": "Using the U-value of the wall obtained at 5(a) above and the following data, calculate the cost of heat lost annually th",
-        "marks": 15,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 5,
-          "perOption": 3,
-          "options": [
-            "Heat loss formula and calculations",
-            "Heating duration for one year",
-            "k/Joules calculation for one year",
-            "Litres of oil for one year",
-            "Annual cost of heat loss"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2019-hl-q5-c",
-    "topicId": "cons-6-3",
-    "conceptId": "proposed-upgrade-thermal-properties-above-wall",
-    "level": "higher",
-    "year": 2019,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2019 HL Q5(c)",
-    "questionText": "It is proposed to upgrade the thermal properties of the above wall, to meet the Passive House standard, by fixing expanded polystyrene to the external surface, as shown.",
-    "stem": "",
-    "figureKey": "construction-studies-2019-hl-paper-p004-i0",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "5 x 3",
-      "answer": 5,
-      "ofParts": 5,
-      "perPart": 3
-    },
-    "totalMarks": 15,
-    "rows": [
-      {
-        "id": "cons-2019-hl-q5-c-r1",
-        "kind": "anyN",
-        "verbatim": "It is proposed to upgrade the thermal properties of the above wall, to meet the Passive House standard, by fixing expand",
-        "marks": 15,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 5,
-          "perOption": 3,
-          "options": [
-            "Resistance for U- value for 0.15Wm2K (using R=1/U)",
-            "Resistance from calculated U-value from part (a)",
-            "Difference in resistances (required resistance)",
-            "Application of formula R = T/k",
-            "Required thickness of insulation"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2019-hl-q6-a",
-    "topicId": "cons-6-3",
-    "conceptId": "reference-design-shown-features-design-contribute",
-    "level": "higher",
-    "year": 2019,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2019 HL Q6(a)",
-    "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
-    "stem": "",
-    "figureKey": "construction-studies-2019-hl-paper-p005-i0",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "6 x 5",
-      "answer": 6,
-      "ofParts": 9,
-      "perPart": 5
+      "kind": "fixed"
     },
     "totalMarks": 30,
     "rows": [
       {
-        "id": "cons-2019-hl-q6-a-r1",
-        "kind": "anyN",
-        "verbatim": "Three features of the design that contribute to the house having a low environment impact",
-        "marks": 30,
-        "openList": true,
-        "contextNote": "Three features of the design that contribute to the house having a low environment impact",
-        "group": {
-          "claimMax": 6,
-          "perOption": 5,
-          "options": [
-            "Large south facing glazed windows and doors to allow maximum sunlight to enter the house naturally heating the internal space and therefore reducing heating costs and dependency on non-renewable fossil fuels",
-            "Trees on the south side to provide natural solar shading during summer months and reduce overheating internally",
-            "Wood burning stove contributes to the reduction of direct draughts associated with open fireplaces. They are also carbon neutral and more efficient",
-            "High thermal mass chimney stack is central to the design so maximum heat can be retained internally and heat is not lost to an external wall",
-            "High levels of insulation in the walls reducing heat loss",
-            "Small windows on the north elevation reducing heat loss potential and conserving energy",
-            "Photovoltaic cells installed on the roof to generate renewable energy",
-            "Timber frame construction, which has low embodied energy",
-            "Attic space used for additional living quarters without using additional building products and reducing the footprint of the building"
-          ]
-        }
+        "id": "resistances",
+        "kind": "criterion",
+        "verbatim": "Formulae: R=T/k R=T × r",
+        "marks": 24,
+        "contextNote": "Eight resistances, 3 each, by R = T/k (or R = T × r for render and plaster): external surface 0.048 (given); render 0.016 × 2.170 = 0.035; external blockwork 0.1/1.44 = 0.069; clear cavity 0.170 (given); insulation 0.05/0.037 = 1.351; internal blockwork 0.1/1.44 = 0.069; plaster 0.012 × 6.25 = 0.075; internal surface 0.122 (given). All in m²°C/W.",
+        "permittedMarks": [
+          0,
+          3,
+          6,
+          9,
+          12,
+          15,
+          18,
+          21,
+          24
+        ]
+      },
+      {
+        "id": "total-resistance",
+        "kind": "criterion",
+        "verbatim": "Total resistance",
+        "marks": 3,
+        "contextNote": "Total resistance Rt = 1.939 m²°C/W.",
+        "permittedMarks": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": "u-value",
+        "kind": "criterion",
+        "verbatim": "Calculation of U- value",
+        "marks": 3,
+        "contextNote": "U = 1 ÷ Rt = 1 ÷ 1.939 = 0.516 W/m²°C, with units.",
+        "permittedMarks": [
+          0,
+          3
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q5-calculation",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Cavity wall U-value, heat-loss cost and external insulation",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.516 W/m²°C, an annual cost of €199.60 and 147 mm of expanded polystyrene."
+    }
+  },
+  {
+    "id": "cons-2019-hl-q5-b",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-3",
+    "conceptId": "value-wall-obtained-above-data-calculate",
+    "questionRef": "2019 HL Q5(b)",
+    "stem": "The external wall of a house built in the 1990s is of 100 mm concrete block construction with a 100 mm partially filled cavity, as shown.",
+    "questionText": "Using the U-value of the wall obtained at 5(a) above and the following data, calculate the cost of heat lost annually through this wall: area of external wall 135 m2; average internal temperature 19 °C; average external temperature 5 °C; heating period 9 hours daily for 36 weeks per annum; cost of oil 94 cent per litre; calorific value of oil 37350 kJ per litre; 1000 Watts 1 kJ per second.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 15,
+    "rows": [
+      {
+        "id": "heat-loss",
+        "kind": "criterion",
+        "verbatim": "Heat loss formula and calculations",
+        "marks": 3,
+        "contextNote": "Heat loss = U-value × area × temperature difference = 0.516 × 135 × (19 − 5) = 975.24 watts (joules per second).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "duration",
+        "kind": "criterion",
+        "verbatim": "Heating duration for one year",
+        "marks": 3,
+        "contextNote": "Heating period = 60 × 60 × 9 × 7 × 36 = 8,164,800 seconds (2,268 hours).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "energy",
+        "kind": "criterion",
+        "verbatim": "k/Joules calculation for one year",
+        "marks": 3,
+        "contextNote": "Energy = 8,164,800 × 975.24 ÷ 1000 = 7,962,639.552 kJ per year.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "oil",
+        "kind": "criterion",
+        "verbatim": "Litres of oil for one year",
+        "marks": 3,
+        "contextNote": "Oil = 7,962,639.552 ÷ 37,350 = 212.34 litres per year.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "cost",
+        "kind": "criterion",
+        "verbatim": "Annual cost of heat loss",
+        "marks": 3,
+        "contextNote": "Annual cost = 212.34 × €0.94 = €199.60. The scheme’s alternative one-line method gives the same €199.60.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q5-calculation",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Cavity wall U-value, heat-loss cost and external insulation",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.516 W/m²°C, an annual cost of €199.60 and 147 mm of expanded polystyrene."
+    }
+  },
+  {
+    "id": "cons-2019-hl-q5-c",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-1",
+    "conceptId": "proposed-upgrade-thermal-properties-above-wall",
+    "questionRef": "2019 HL Q5(c)",
+    "stem": "The external wall of a house built in the 1990s is of 100 mm concrete block construction with a 100 mm partially filled cavity, as shown.",
+    "questionText": "It is proposed to upgrade the thermal properties of the above wall, to meet the Passive House standard, by fixing expanded polystyrene to the external surface, as shown. Given the thermal conductivity (k) of expanded polystyrene as 0.031 W/m°C, calculate the thickness of expanded polystyrene required to achieve a U-value of 0.15 W/m2 °C.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 15,
+    "rows": [
+      {
+        "id": "required-resistance",
+        "kind": "criterion",
+        "verbatim": "Resistance for U- value for 0.15Wm2K (using R=1/U)",
+        "marks": 3,
+        "contextNote": "Required resistance = 1 ÷ 0.15 = 6.666 m²K/W.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "existing-resistance",
+        "kind": "criterion",
+        "verbatim": "Resistance from calculated U-value from part (a)",
+        "marks": 3,
+        "contextNote": "Existing resistance = 1 ÷ 0.516 = 1.939 m²K/W (the scheme prints the divisor as 0.156).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "difference",
+        "kind": "criterion",
+        "verbatim": "Difference in resistances (required resistance)",
+        "marks": 3,
+        "contextNote": "Difference = 6.666 − 1.939 = 4.727 m²K/W.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "formula",
+        "kind": "criterion",
+        "verbatim": "Application of formula R = T/k",
+        "marks": 3,
+        "contextNote": "R = T/k, so 4.727 = T/0.031.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "thickness",
+        "kind": "criterion",
+        "verbatim": "Required thickness of insulation",
+        "marks": 3,
+        "contextNote": "T = 4.727 × 0.031 = 0.146537 m: 147 mm of expanded polystyrene (146 or 147 mm accepted).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q5-thickness",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Cavity wall U-value, heat-loss cost and external insulation",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.516 W/m²°C, an annual cost of €199.60 and 147 mm of expanded polystyrene."
+    }
+  },
+  {
+    "id": "cons-2019-hl-q6-a",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "reference-design-shown-features-design-contribute",
+    "questionRef": "2019 HL Q6(a)",
+    "stem": "The elevation and ground floor plan of a house are shown. The house has two bedrooms and a bathroom upstairs. The external walls are of timber frame construction with a rendered concrete block and timber cladding finish. The house is designed to have low environmental impact.",
+    "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "feature-1",
+        "kind": "criterion",
+        "verbatim": "Design Feature 1",
+        "marks": 10,
+        "contextNote": "Notes 5 and sketches 5. Such as: large south-facing glazing for sunlight and heat; trees to the south for summer shading.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "feature-2",
+        "kind": "criterion",
+        "verbatim": "Design Feature 2",
+        "marks": 10,
+        "contextNote": "A second, different feature. Such as: a wood-burning stove in a central high-thermal-mass chimney; high insulation; small north windows.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "feature-3",
+        "kind": "criterion",
+        "verbatim": "Design Feature 3",
+        "marks": 10,
+        "contextNote": "A third, different feature. Such as: photovoltaic cells on the roof; a low-embodied-energy timber frame; the attic used as living space, reducing the footprint.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q6-features",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Low environmental impact house and renewable energy",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. All three printed technologies in (b) are required, each separately marked."
+    }
   },
   {
     "id": "cons-2019-hl-q6-b",
-    "topicId": "cons-1-1",
-    "conceptId": "renewable-energy-technologies-identify-how-contributes",
-    "level": "higher",
-    "year": 2019,
     "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
     "section": "B",
+    "topicId": "cons-5-3",
+    "conceptId": "renewable-energy-technologies-identify-how-contributes",
     "questionRef": "2019 HL Q6(b)",
-    "questionText": "Using notes and freehand sketches, discuss in detail each of the following renewable energy technologies and identify how each contributes to making a home more eco-friendly: • evacuated tubes • wind turbines • photovoltaic panels.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "stem": "The elevation and ground floor plan of a house are shown. The house has two bedrooms and a bathroom upstairs. The external walls are of timber frame construction with a rendered concrete block and timber cladding finish. The house is designed to have low environmental impact.",
+    "questionText": "Using notes and freehand sketches, discuss in detail each of the following renewable energy technologies and identify how each contributes to making a home more eco-friendly: evacuated tubes; wind turbines; photovoltaic panels.",
     "tariffModel": {
-      "kind": "fixed",
-      "notation": "2 x 3 + 2 x 3 + 2 x 3",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
+      "kind": "fixed"
     },
     "totalMarks": 18,
     "rows": [
       {
-        "id": "cons-2019-hl-q6-b-r1",
-        "kind": "anyN",
-        "verbatim": "2. Wind turbine",
+        "id": "evacuated-tubes",
+        "kind": "criterion",
+        "verbatim": "Evacuated Tubes",
         "marks": 6,
-        "openList": true,
-        "contextNote": "2. Wind turbine",
-        "group": {
-          "claimMax": 2,
-          "perOption": 3,
-          "options": [
-            "Wind activates the turning of the blades and rotor. They spin the main shaft and gearbox, which spins the generator resulting in electrical output",
-            "They can be connected to batteries or the national grid",
-            "When the wind flows across the blade, the air pressure on one side of the blade decreases. The difference in air pressure across the two sides of the blade creates both lift and drag. The force of the lift is stronger than the drag and this causes the rotor to spin",
-            "An inverter is needed to convert the direct current (DC) voltage from the turbine to match the alternating current (AC) voltage required for domestic use",
-            "The control box is used to protect the invertor and turbine in strong winds. If the wind becomes too strong the control box will slow the turbine down",
-            "If the turbine sits on a tower, then a concrete foundation is generally required",
-            "Planning permission may however be required if it is thought that the turbine would interfere with the character of the landscape or a special amenity"
-          ]
-        }
+        "contextNote": "Notes/discussion 3 and sketch 3. Such as: tubes in a vacuum, each with a copper heat pipe whose fluid vaporises and gives up its heat at the manifold to the water from the storage tank; heating hot water with less fossil fuel.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       },
       {
-        "id": "cons-2019-hl-q6-b-r2",
-        "kind": "anyN",
-        "verbatim": "3. Photovoltaic cells",
+        "id": "wind-turbines",
+        "kind": "criterion",
+        "verbatim": "Wind Turbines",
         "marks": 6,
-        "openList": true,
-        "contextNote": "3. Photovoltaic cells",
-        "group": {
-          "claimMax": 2,
-          "perOption": 3,
-          "options": [
-            "A photovoltaic panel is a collection of photovoltaic (PV) cells. Multiple panels can be wired together to form an array. In general, the larger the area of a module or array, the more electricity that will be produced",
-            "The solar panel system uses particles of light from the sun (photons) to separate electrons from atoms. The process of separating electrons causes the electrons to hit off metal conductor strips on the outside of the PV cells thus generating electricity",
-            "Excess electricity can be stored in batteries or sent back to the grid"
-          ]
-        }
+        "contextNote": "Notes/discussion 3 and sketch 3. Such as: wind turns the blades, rotor and generator; an inverter converts DC to AC for the home, batteries or the grid; a control box protects it in strong winds; less demand on fossil-fuelled grid electricity.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       },
       {
-        "id": "cons-2019-hl-q6-b-r3",
-        "kind": "anyN",
-        "verbatim": "Renewable energy systems contribute to making a house more eco-friendly in a number of ways",
+        "id": "photovoltaic-panels",
+        "kind": "criterion",
+        "verbatim": "Photovoltaic Panels",
         "marks": 6,
-        "openList": true,
-        "contextNote": "Renewable energy systems contribute to making a house more eco-friendly in a number of ways",
-        "group": {
-          "claimMax": 2,
-          "perOption": 3,
-          "options": [
-            "Reducing its dependency on non-renewable methods of energy production",
-            "producing free and clean energy",
-            "Greenhouse gas emissions are reduced",
-            "They do not require the burning of depleting fossil fuels",
-            "No harmful gases or CO² is produced which has a negative impact on the ozone layer",
-            "No waste product is generated",
-            "No habitats are affected or destroyed Solar Photovoltaic Panels convert solar energy into electricity. The majority of mains electricity is generated by burning fossil fuels or other combustible material that releases CO² into the atmosphere. The generation of electricity from a renewable source such as photovoltaic panels reduces dependency on mains supply therefore reducing carbon emissions"
-          ]
-        }
+        "contextNote": "Notes/discussion 3 and sketch 3. Such as: light frees electrons in the PV cells, giving direct current; an inverter supplies AC to the home; excess stored in batteries or sent to the grid; clean electricity without CO₂.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q6-renewables",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Low environmental impact house and renewable energy",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. All three printed technologies in (b) are required, each separately marked."
+    }
   },
   {
     "id": "cons-2019-hl-q6-c",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
     "topicId": "cons-1-1",
     "conceptId": "advantages-local-craft-skills-when-building",
-    "level": "higher",
-    "year": 2019,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2019 HL Q6(c)",
+    "stem": "The elevation and ground floor plan of a house are shown. The house has two bedrooms and a bathroom upstairs. The external walls are of timber frame construction with a rendered concrete block and timber cladding finish. The house is designed to have low environmental impact.",
     "questionText": "Discuss in detail two advantages of using local craft skills when building the house shown.",
-    "stem": "",
-    "figureKey": "construction-studies-2019-hl-paper-p005-i0",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 6",
-      "answer": 2,
-      "ofParts": 7,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 12,
     "rows": [
       {
-        "id": "cons-2019-hl-q6-c-r1",
-        "kind": "anyN",
-        "verbatim": "Advantages",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "Advantages",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "It preserves traditional knowledge and skill for future generations to learn from",
-            "It creates a sense of place and pride by availing of skills specific to your locality",
-            "Employment is generated in the locality",
-            "Families remain in the locality and contribute to community life and events",
-            "Local workers will know where to source materials needed locally",
-            "If local workers and local materials are utilised- then it reduces the embodied energy of the house",
-            "It will help prevent the migration of rural labour to urban centres and give them a reason to stay and earn while preventing loss of skills"
-          ]
-        }
+        "id": "advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1 (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "Point 3 and discussion 3. Such as: traditional knowledge and skills preserved for future generations; a sense of place and pride.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2 (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A second, different advantage. Such as: local employment, keeping families in the locality; local materials sourced, reducing embodied energy.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Low environmental impact house and renewable energy",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. All three printed technologies in (b) are required, each separately marked."
+    }
   },
   {
     "id": "cons-2019-hl-q7-a",
-    "topicId": "cons-4-4",
-    "conceptId": "vertical-section-through-centre-stairs-section",
-    "level": "higher",
-    "year": 2019,
     "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
     "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "vertical-section-through-centre-stairs-section",
     "questionRef": "2019 HL Q7(a)",
+    "stem": "The main hall of a two-storey dwelling has a closed riser wooden stairs. The bottom of the stairs has a bullnose step as shown. The newel post is 120 mm × 120 mm and the rise of a step should not exceed 175 mm.",
     "questionText": "To a scale of 1:5, draw a vertical section through the centre of the stairs. The section should show the typical construction detail through the bottom three steps of the stairs, showing the newel post, string, balusters and handrail. Include the typical dimensions of three structural members of the stairs.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "8 x 5",
-      "answer": 8,
-      "ofParts": 9,
-      "perPart": 5
+      "kind": "fixed"
     },
-    "totalMarks": 40,
+    "totalMarks": 54,
     "rows": [
       {
-        "id": "cons-2019-hl-q7-a-r1",
-        "kind": "anyN",
-        "verbatim": "Closed string stairs – typical detailing",
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "8 x 5 marks",
         "marks": 40,
-        "openList": true,
-        "contextNote": "Closed string stairs – typical detailing",
-        "group": {
-          "claimMax": 8,
-          "perOption": 5,
-          "options": [
-            "String 250 mm × 50 mm (or similar)",
-            "Newel post 120 mm × 120 mm",
-            "Thread 250 mm × 25 mm (or similar)",
-            "Riser 175 mm × 20 mm (or similar)",
-            "Nosing to thread 25mm (or similar)",
-            "Balusters 40 mm × 40 mm (or similar)",
-            "Handrail to stairs 40 mm × 40 mm (or similar)",
-            "Glue block 60 mm × 60 mm (or similar)",
-            "Wedges to threads and risers"
-          ]
-        }
+        "contextNote": "Best eight details, 5 each. Menu: bullnose step; newel post; string; string capping; riser; tread; wedges; glue blocks; handrail; balusters; nosing line/pitch line; handrail-to-newel joint; string-to-newel joint.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ]
+      },
+      {
+        "id": "dimensions",
+        "kind": "criterion",
+        "verbatim": "Three dimensions of the stairs",
+        "marks": 6,
+        "contextNote": "Typical dimensions of three structural members, 2 each, such as string 250 × 50 mm, newel 120 × 120 mm, tread 250 × 25 mm, riser 175 × 20 mm, balusters and handrail 40 × 40 mm.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Scale and drafting marks (Excellent, Good, Fair)",
+        "marks": 8,
+        "contextNote": "Scale and drafting, assessed together: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q7-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Closed riser stairs with a bullnose step",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the safety features in (b) are marked separately."
+    }
   },
   {
     "id": "cons-2019-hl-q7-b",
-    "topicId": "cons-1-1",
-    "conceptId": "indicate-design-features-ensure-stairs-safe",
-    "level": "higher",
-    "year": 2019,
     "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
     "section": "B",
+    "topicId": "cons-4-4",
+    "conceptId": "indicate-design-features-ensure-stairs-safe",
     "questionRef": "2019 HL Q7(b)",
+    "stem": "The main hall of a two-storey dwelling has a closed riser wooden stairs. The bottom of the stairs has a bullnose step as shown. The newel post is 120 mm × 120 mm and the rise of a step should not exceed 175 mm.",
     "questionText": "Indicate on your drawing three design features that ensure the stairs is safe for users.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 2",
-      "answer": 3,
-      "ofParts": 8,
-      "perPart": 2
+      "kind": "fixed"
     },
     "totalMarks": 6,
     "rows": [
       {
-        "id": "cons-2019-hl-q7-b-r1",
-        "kind": "anyN",
-        "verbatim": "Any three indicated on the drawing",
+        "id": "safety",
+        "kind": "criterion",
+        "verbatim": "Design details (3 x 2 marks)",
         "marks": 6,
-        "openList": true,
-        "contextNote": "Any three indicated on the drawing",
-        "group": {
-          "claimMax": 3,
-          "perOption": 2,
-          "options": [
-            "Maximum pitch 420 (Range from 38 – 42 degrees)",
-            "Min. Going 220 mm",
-            "Max. Rise 200 mm",
-            "Sphere Ø 100 mm not to pass between balusters",
-            "Min. handrail height 840 mm",
-            "Max. 16 risers in any one straight/ continuous flight of stairs",
-            "Min. stairs width 800 mm",
-            "Any other relevant features"
-          ]
-        }
+        "contextNote": "Any three, 2 each, indicated on the drawing. Such as: maximum pitch 42°; minimum going 220 mm; maximum rise 200 mm; a Ø100 mm sphere must not pass between balusters; minimum handrail height 840 mm; at most 16 risers in a flight; minimum width 800 mm.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q7-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Closed riser stairs with a bullnose step",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the safety features in (b) are marked separately."
+    }
   },
   {
     "id": "cons-2019-hl-q8-a",
-    "topicId": "cons-1-3",
-    "conceptId": "considerations-ensure-proper-treatment-disposal-sewage",
-    "level": "higher",
-    "year": 2019,
     "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
     "section": "B",
+    "topicId": "cons-5-5",
+    "conceptId": "considerations-ensure-proper-treatment-disposal-sewage",
     "questionRef": "2019 HL Q8(a)",
-    "questionText": "Discuss three considerations to ensure the proper treatment and disposal of sewage when selecting a site for a house in a rural location.",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "Discuss three considerations to ensure the proper treatment and disposal of sewage when selecting a site for a house in a rural location.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 6",
-      "answer": 3,
-      "ofParts": 11,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 18,
     "rows": [
       {
-        "id": "cons-2019-hl-q8-a-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss three considerations to ensure the proper treatment and disposal of sewage when selecting a site for a house in ",
-        "marks": 18,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 3,
-          "perOption": 6,
-          "options": [
-            "Soil type: The soil present on the site will determine how effective the percolation will take place in breaking down and treating the waste",
-            "Topography of the site",
-            "Water table: At what level is the water table present on the site. If there is a high -water table there would be potential for contamination from the system",
-            "Neighbouring buildings, roads, rivers, lakes, water sources",
-            "Number of residences in the house",
-            "Protection: Protect humans from contact with waste - water",
-            "Odours: Minimise the generation of foul odours",
-            "Correct capacity of tank (2725litres minimum)",
-            "Gradient of pipework 1:60",
-            "Soil Vent Pipe open at top to vent gasses",
-            "Long radius bend to base of soil vent pipe"
-          ]
-        }
+        "id": "consideration-1",
+        "kind": "criterion",
+        "verbatim": "Consideration 1 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "Point 3 and discussion 3. Such as: the soil type and how well it percolates; the topography of the site.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "consideration-2",
+        "kind": "criterion",
+        "verbatim": "Consideration 2 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A second, different consideration. Such as: a high water table risking contamination; distances to neighbouring buildings, roads, rivers, lakes and water sources.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "consideration-3",
+        "kind": "criterion",
+        "verbatim": "Consideration 3 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A third, different consideration. Such as: the number of residents and a tank of at least 2725 litres; pipework at 1:60 with a vented soil pipe; odours.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Rural wastewater treatment",
+      "pages": [
+        1,
+        6
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original site layout map retained. Considerations and the alternative method are open responses; the scheme gives a model layout and three alternative systems."
+    }
   },
   {
     "id": "cons-2019-hl-q8-c",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
     "topicId": "cons-5-5",
     "conceptId": "alternative-method-other-than-typical-percolation",
-    "level": "higher",
-    "year": 2019,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2019 HL Q8(c)",
-    "questionText": "Using notes and freehand sketches, discuss an alternative method, other than a typical percolation area to ensure the safe treatment of wastewater from a dwelling house.",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "Using notes and freehand sketches, discuss an alternative method, other than a typical percolation area to ensure the safe treatment of wastewater from a dwelling house.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 8",
-      "answer": 2,
-      "ofParts": 2,
-      "perPart": 8
+      "kind": "fixed"
     },
     "totalMarks": 16,
     "rows": [
       {
-        "id": "cons-2019-hl-q8-c-r1",
-        "kind": "anyN",
-        "verbatim": "Using notes and freehand sketches, discuss an alternative method, other than a typical percolation area to ensure the sa",
-        "marks": 16,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 8,
-          "options": [
-            "Notes",
-            "Sketch"
-          ]
-        }
+        "id": "notes",
+        "kind": "criterion",
+        "verbatim": "Notes",
+        "marks": 8,
+        "contextNote": "Notes on one alternative system. Such as: a raised percolation area with imported topsoil mounded over the ground; a constructed wetland (reed bed); a peat filter system dosed from the septic tank.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 8,
+        "contextNote": "Freehand sketch of the alternative system.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q8-alternative",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Rural wastewater treatment",
+      "pages": [
+        1,
+        6
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original site layout map retained. Considerations and the alternative method are open responses; the scheme gives a model layout and three alternative systems."
+    }
   },
   {
     "id": "cons-2019-hl-q9-b",
-    "topicId": "cons-1-1",
-    "conceptId": "negative-impacts-thermal-bridging-result-poor",
-    "level": "higher",
-    "year": 2019,
     "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
     "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "negative-impacts-thermal-bridging-result-poor",
     "questionRef": "2019 HL Q9(b)",
+    "stem": "Thermal envelope continuity is essential to ensure a dwelling house is thermal bridge free. The drawing shows an outline section through the external door of a single-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a traditional cut roof with an insulated solid concrete ground floor. The external door and frame are thermally broken.",
     "questionText": "Discuss two negative impacts of thermal bridging as a result of poor design detailing.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 6",
-      "answer": 2,
-      "ofParts": 6,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 12,
     "rows": [
       {
-        "id": "cons-2019-hl-q9-b-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss two negative impacts of thermal bridging as a result of poor design detailing.",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "The negative effects of thermal bridging occur when warm air meets with a colder surface. The warm air is then cooled to its dew point leaving water as moisture on the surface",
-            "Mould can grow on the damp internal surfaces of the dwelling",
-            "Airborne spores from the mould can be inhaled into the respiratory system and be is harmful to human health",
-            "Mould growth in a home is unsightly, it produces odours, causes staining and rapid deterioration of materials and finishes",
-            "Plaster, wood, steel and other building materials can be compromised and fail as a result of thermal bridging over long periods of time",
-            "Heat is lost when thermal bridging occurs which increases the overall energy demand and the use of resources for heating making the building less sustainable"
-          ]
-        }
+        "id": "impact-1",
+        "kind": "criterion",
+        "verbatim": "Impact 1 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "Point 3 and discussion 3. Such as: warm air meeting the cold surface condenses, and mould grows on the damp surfaces, harming health.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "impact-2",
+        "kind": "criterion",
+        "verbatim": "Impact 2 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A second, different impact. Such as: staining and decay of finishes and materials; more heat lost and a higher energy demand.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Thermal bridging at a door, wallplate and threshold",
+      "pages": [
+        1,
+        6
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original section retained. Every circled location in (a) is required, each separately marked under the scheme’s heading for it."
+    }
   },
   {
     "id": "cons-2019-hl-q10-a",
-    "topicId": "cons-6-3",
-    "conceptId": "design-considerations-necessary-achieve-enerphit-passive",
-    "level": "higher",
-    "year": 2019,
     "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
     "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "design-considerations-necessary-achieve-enerphit-passive",
     "questionRef": "2019 HL Q10(a)",
+    "stem": "The plan and elevation of a bungalow built in the 1970s are shown. The wall B-B is south facing. The owners intend to carry out a deep retrofit upgrade of their house to meet the EnerPHit Passive House standard.",
     "questionText": "Using notes and freehand sketches, outline three design considerations necessary to achieve the EnerPHit Passive House design standard.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "6 x 4",
-      "answer": 6,
-      "ofParts": 6,
-      "perPart": 4
+      "kind": "fixed"
     },
     "totalMarks": 24,
     "rows": [
       {
-        "id": "cons-2019-hl-q10-a-r1",
-        "kind": "anyN",
-        "verbatim": "Possible design considerations for deep retrofit",
-        "marks": 24,
-        "openList": true,
-        "contextNote": "Possible design considerations for deep retrofit",
-        "group": {
-          "claimMax": 6,
-          "perOption": 4,
-          "options": [
-            "Thermal efficiency of the external envelope of the building – insulation, windows, doors, porch",
-            "Appropriate ventilation using a heat recovery system",
-            "Airtightness of the building",
-            "Maximise solar gains",
-            "Optimum levels of thermal comfort for occupants",
-            "Renewable energy systems to reduce energy consumption and carbon emissions"
-          ]
-        }
+        "id": "consideration-1",
+        "kind": "criterion",
+        "verbatim": "Design consideration 1",
+        "marks": 8,
+        "contextNote": "Notes 4 and sketches 4. Such as: the thermal efficiency of the envelope — insulation, windows, doors, porch.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "consideration-2",
+        "kind": "criterion",
+        "verbatim": "Design consideration 2",
+        "marks": 8,
+        "contextNote": "A second, different consideration. Such as: ventilation with heat recovery; airtightness (EnerPHit: 1.0 air changes per hour).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "consideration-3",
+        "kind": "criterion",
+        "verbatim": "Design consideration 3",
+        "marks": 8,
+        "contextNote": "A third, different consideration. Such as: maximising solar gains; optimum thermal comfort (heating demand 25 kWh/m²/yr); renewable energy systems.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q10-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10",
+      "title": "EnerPHit deep retrofit of a 1970s bungalow",
+      "pages": [
+        1,
+        7
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original plan and elevation retained. Part (b) develops each consideration given in (a)."
+    }
   },
   {
     "id": "cons-2019-hl-q10-b",
-    "topicId": "cons-6-3",
-    "conceptId": "how-you-would-retrofit-given-house",
-    "level": "higher",
-    "year": 2019,
     "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
     "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "how-you-would-retrofit-given-house",
     "questionRef": "2019 HL Q10(b)",
+    "stem": "The plan and elevation of a bungalow built in the 1970s are shown. The wall B-B is south facing. The owners intend to carry out a deep retrofit upgrade of their house to meet the EnerPHit Passive House standard.",
     "questionText": "Discuss in detail, using notes and freehand sketches, how you would retrofit the given house to include each consideration you specified at 10(a) above.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "fixed",
-      "notation": "1 x 4 + 1 x 4 + 1 x 4 + 1 x 4 + 1 x 4 + 1 x 4",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
+      "kind": "fixed"
     },
     "totalMarks": 24,
     "rows": [
       {
-        "id": "cons-2019-hl-q10-b-r1",
-        "kind": "anyN",
-        "verbatim": "Thermal efficiency of the external envelope of the building",
-        "marks": 4,
-        "openList": true,
-        "contextNote": "Thermal efficiency of the external envelope of the building",
-        "group": {
-          "claimMax": 1,
-          "perOption": 4,
-          "options": [
-            "Increase the levels of insulation in the walls, roof and floor",
-            "EnerPHit Requirements for roof/top floor Ceiling U ≤ 0.120 W/m2K",
-            "Insulation can be increased in the walls using cavity wall insulation methods, external wall insulation or internally by dry lining - space permitting",
-            "Replace windows with Passive House triple glazed windows",
-            "EnerPHit Requirements for the window as a whole, UW installed ≤ 0.85 W/m2K",
-            "Replace external door with energy efficient doors",
-            "EnerPHit Requirements: UD, installed ≤ 0.80 W/m2K",
-            "The quality of the materials and the workmanship is vital in the above areas so that thermal bridging does not occur"
-          ]
-        }
+        "id": "upgrade-1",
+        "kind": "criterion",
+        "verbatim": "Retrofit upgrade 1",
+        "marks": 8,
+        "contextNote": "Notes 4 and sketches 4, for the first consideration. Such as: more insulation in walls, roof (ceiling U ≤ 0.120) and floor; Passive House triple-glazed windows (Uw ≤ 0.85) and doors (Ud ≤ 0.80).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
       },
       {
-        "id": "cons-2019-hl-q10-b-r2",
-        "kind": "anyN",
-        "verbatim": "Appropriate ventilation using a heat recovery system",
-        "marks": 4,
-        "openList": true,
-        "contextNote": "Appropriate ventilation using a heat recovery system",
-        "group": {
-          "claimMax": 1,
-          "perOption": 4,
-          "options": [
-            "Install a highly efficient heat recovery and ventilation system with an outlet to supply or extract air from all rooms. This will reduce heat loss, moisture content and the energy consumption of the building",
-            "EnerPHit Requirements: Ventilation η HR,eff ≥ 75%,"
-          ]
-        }
+        "id": "upgrade-2",
+        "kind": "criterion",
+        "verbatim": "Retrofit upgrade 2",
+        "marks": 8,
+        "contextNote": "Notes 4 and sketches 4, for the second consideration. Such as: a heat recovery ventilation system (efficiency ≥ 75%); sealing penetrations and frames, a stove in place of the open fire, a storm porch.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
       },
       {
-        "id": "cons-2019-hl-q10-b-r3",
-        "kind": "anyN",
-        "verbatim": "Airtightness of the building",
-        "marks": 4,
-        "openList": true,
-        "contextNote": "Airtightness of the building",
-        "group": {
-          "claimMax": 1,
-          "perOption": 4,
-          "options": [
-            "Seal any holes in the fabric such as pipes penetrating the external walls, joints between wall/ceiling/floor surfaces, openings around electrical services etc",
-            "Adjust the frames of doors and windows so they close tightly",
-            "Install a wood burning stove to reduce heat loss through the open fireplace",
-            "Install a storm porch to the west entrance to prevent direct access and reduce heat loss"
-          ]
-        }
-      },
-      {
-        "id": "cons-2019-hl-q10-b-r4",
-        "kind": "anyN",
-        "verbatim": "Optimum levels of thermal comfort for occupants",
-        "marks": 4,
-        "openList": true,
-        "contextNote": "Optimum levels of thermal comfort for occupants",
-        "group": {
-          "claimMax": 1,
-          "perOption": 4,
-          "options": [
-            "The heating demand requirement should be ≤ 25 kWh/(m2a)",
-            "Upgrade boilers and heating controls with more efficient systems"
-          ]
-        }
-      },
-      {
-        "id": "cons-2019-hl-q10-b-r5",
-        "kind": "anyN",
-        "verbatim": "Install renewable energy systems such as",
-        "marks": 4,
-        "openList": true,
-        "contextNote": "Install renewable energy systems such as",
-        "group": {
-          "claimMax": 1,
-          "perOption": 4,
-          "options": [
-            "solar photovoltaic cells to generate electricity for domestic consumption",
-            "wind turbine to generate electricity",
-            "solar water heating systems such as evacuated tubes to produce hot water for domestic consumption or for space heating"
-          ]
-        }
-      },
-      {
-        "id": "cons-2019-hl-q10-b-r6",
-        "kind": "anyN",
-        "verbatim": "Maximise solar gains",
-        "marks": 4,
-        "openList": true,
-        "contextNote": "Maximise solar gains",
-        "group": {
-          "claimMax": 1,
-          "perOption": 4,
-          "options": [
-            "Install new windows on the south facing wall of the house",
-            "Remove the wall between the dining room and kitchen so both light and heat from the sun can enter further into the house"
-          ]
-        }
+        "id": "upgrade-3",
+        "kind": "criterion",
+        "verbatim": "Retrofit upgrade 3",
+        "marks": 8,
+        "contextNote": "Notes 4 and sketches 4, for the third consideration. Such as: new south windows and the dining/kitchen wall removed for solar gain; upgraded heating controls; PV, a wind turbine or evacuated tubes.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q10-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q10-retrofit",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10",
+      "title": "EnerPHit deep retrofit of a 1970s bungalow",
+      "pages": [
+        1,
+        7
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original plan and elevation retained. Part (b) develops each consideration given in (a)."
+    }
   },
   {
     "id": "cons-2019-hl-q10-c",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
     "topicId": "cons-6-3",
     "conceptId": "advantages-retrofitting-existing-house-meet-enerphit",
-    "level": "higher",
-    "year": 2019,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2019 HL Q10(c)",
+    "stem": "The plan and elevation of a bungalow built in the 1970s are shown. The wall B-B is south facing. The owners intend to carry out a deep retrofit upgrade of their house to meet the EnerPHit Passive House standard.",
     "questionText": "Discuss two advantages of retrofitting an existing house to meet the EnerPHit standard.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 6",
-      "answer": 2,
-      "ofParts": 7,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 12,
     "rows": [
       {
-        "id": "cons-2019-hl-q10-c-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss two advantages of retrofitting an existing house to meet the EnerPHit standard.",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 6,
-          "options": [
-            "Reduced heating costs",
-            "Improve energy efficiency of the building",
-            "Reduced carbon emissions",
-            "Increased savings on the overall cost of running the home",
-            "Improved wellbeing and quality of life for the inhabitants",
-            "Reusing existing buildings in the community",
-            "Contributing to your moral responsibility to the natural environment and future generations"
-          ]
-        }
+        "id": "advantage-1",
+        "kind": "criterion",
+        "verbatim": "Impact 1 – (3 for name, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "Name 3 and discussion 3. Such as: reduced heating costs; better energy efficiency.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "advantage-2",
+        "kind": "criterion",
+        "verbatim": "Impact 2 – (3 for name, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A second, different advantage. Such as: reduced carbon emissions; improved wellbeing; existing buildings reused in the community.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q10-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10",
+      "title": "EnerPHit deep retrofit of a 1970s bungalow",
+      "pages": [
+        1,
+        7
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original plan and elevation retained. Part (b) develops each consideration given in (a)."
+    }
   },
   {
     "id": "cons-2019-hl-q2-a",
-    "topicId": "cons-1-1",
-    "conceptId": "functional-requirements-roof-domestic-dwelling-house",
-    "level": "higher",
-    "year": 2019,
     "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
     "section": "B",
+    "topicId": "cons-3-8",
+    "conceptId": "functional-requirements-roof-domestic-dwelling-house",
     "questionRef": "2019 HL Q2(a)",
-    "questionText": "Discuss in detail, using notes and freehand sketches, three functional requirements of a roof suitable for a domestic dwelling house.",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "Discuss in detail, using notes and freehand sketches, three functional requirements of a roof suitable for a domestic dwelling house.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 6",
-      "answer": 3,
-      "ofParts": 6,
-      "perPart": 6
+      "kind": "fixed"
     },
     "totalMarks": 18,
     "rows": [
       {
-        "id": "cons-2019-hl-q2-a-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss in detail, using notes and freehand sketches, three functional requirements of a roof suitable for a domestic dw",
-        "marks": 18,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 3,
-          "perOption": 6,
-          "options": [
-            "Weather resistant: The roof should be able to protect the building from all external elements (rain, snow, wind and sun)",
-            "Structural stability: The roof structure must be capable of supporting all imposed loads (dead and live) and resist lateral movement of the roof",
-            "Thermal insulation: It should provide a high of thermal comfort for the occupants, keep heat in during the winter and resist excessive heat gain during the summer",
-            "Durability: The roofing members should be long lasting and require little maintenance. Selection of appropriate material for roof members and application of preservatives",
-            "Ventilation: The roof profile must be adequately ventilated in order to prevent condensation build up and possible fungal attack",
-            "Airtightness: The roof structure detailing should contain and maintain the airtightness layer in the building"
-          ]
-        }
+        "id": "requirement-1",
+        "kind": "criterion",
+        "verbatim": "Design Feature 1",
+        "marks": 6,
+        "contextNote": "Notes 3 and sketches 3. Such as: weather resistance against rain, snow, wind and sun; structural stability under dead and live loads and lateral movement.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "requirement-2",
+        "kind": "criterion",
+        "verbatim": "Design Feature 2",
+        "marks": 6,
+        "contextNote": "A second, different requirement. Such as: thermal insulation for comfort in winter and against summer heat gain; durability with little maintenance and treated members.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "requirement-3",
+        "kind": "criterion",
+        "verbatim": "Design Feature 3",
+        "marks": 6,
+        "contextNote": "A third, different requirement. Such as: ventilation against condensation and fungal attack; an unbroken airtightness layer.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Roof requirements, profiles and materials",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Requirements, profiles and materials are open responses; the scheme shows four example profiles."
+    }
   },
   {
     "id": "cons-2019-hl-q2-c",
-    "topicId": "cons-1-1",
-    "conceptId": "select-different-roofing-material-roof-types",
-    "level": "higher",
-    "year": 2019,
     "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
     "section": "B",
+    "topicId": "cons-3-9",
+    "conceptId": "select-different-roofing-material-roof-types",
     "questionRef": "2019 HL Q2(c)",
-    "questionText": "Select a different roofing material for each of the three roof types you have shown at 2(b). Give one advantage and one disadvantage for each material selected.",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "Select a different roofing material for each of the three roof types you have shown at 2(b). Give one advantage and one disadvantage for each material selected.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 4",
-      "answer": 3,
-      "ofParts": 12,
-      "perPart": 4
+      "kind": "fixed"
     },
     "totalMarks": 12,
     "rows": [
       {
-        "id": "cons-2019-hl-q2-c-r1",
-        "kind": "anyN",
-        "verbatim": "Possible roofing materials for the roof profiles presented",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "Possible roofing materials for the roof profiles presented",
-        "group": {
-          "claimMax": 3,
-          "perOption": 4,
-          "options": [
-            "Natural Slates",
-            "Thatch",
-            "Fibre cement slates",
-            "Corrugated steel",
-            "Concrete tiles",
-            "Roofing felt",
-            "Clay tiles",
-            "Asphalt",
-            "Zinc sheeting",
-            "Single-Ply Membrane (EPDM Rubber)",
-            "Wood shingle",
-            "Any other appropriate material Appropriate advantage and disadvantage for each material chosen"
-          ]
-        }
+        "id": "material-1",
+        "kind": "criterion",
+        "verbatim": "Material 1 - identify (2 marks), adv (1 mark), disadv (1 mark)",
+        "marks": 4,
+        "contextNote": "Identify 2, advantage 1, disadvantage 1, for the first profile. Such as: natural slates; fibre cement slates; concrete or clay tiles.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "material-2",
+        "kind": "criterion",
+        "verbatim": "Material 2 - identify (2 marks), adv (1 mark), disadv (1 mark)",
+        "marks": 4,
+        "contextNote": "A different material for the second profile. Such as: zinc sheeting; wood shingle; thatch; corrugated steel.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "material-3",
+        "kind": "criterion",
+        "verbatim": "Material 3 - identify (2 marks), adv (1 mark), disadv (1 mark)",
+        "marks": 4,
+        "contextNote": "A different material for the third profile. Such as: roofing felt; asphalt; single-ply membrane (EPDM rubber).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Roof requirements, profiles and materials",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Requirements, profiles and materials are open responses; the scheme shows four example profiles."
+    }
   },
   {
     "id": "cons-2019-hl-q8-b",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
     "topicId": "cons-5-5",
     "conceptId": "shows-site-layout-map-new-house",
-    "level": "higher",
-    "year": 2019,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2019 HL Q8(b)",
-    "questionText": "The drawing shows a site layout map. The outline of a new house and driveway is shown on site A. Using notes and freehand sketches, show the design layout necessary for a typical wastewater treatment system and percolation area on this site. Include typical dimensions for the system.",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "The drawing shows a site layout map. The outline of a new house and driveway is shown on site A. Using notes and freehand sketches, show the design layout necessary for a typical wastewater treatment system and percolation area on this site. Include typical dimensions for the system.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 10",
-      "answer": 2,
-      "ofParts": 6,
-      "perPart": 10
+      "kind": "fixed"
     },
-    "totalMarks": 20,
+    "totalMarks": 26,
     "rows": [
       {
-        "id": "cons-2019-hl-q8-b-r1",
-        "kind": "anyN",
-        "verbatim": "The drawing shows a site layout map. The outline of a new house and driveway is shown on site A. Using notes and freehan",
-        "marks": 20,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 10,
-          "options": [
-            "Diameter of pipes 100 – 110mm",
-            "Minimum distance of percolation to house 10m",
-            "Maximum length of percolation pipe 18m",
-            "Minimum separation distance between percolation trenches 2m",
-            "Minimum distance of systems to site boundary 3m",
-            "Minimum distance of system to a road 4m"
-          ]
-        }
+        "id": "notes",
+        "kind": "criterion",
+        "verbatim": "Notes",
+        "marks": 10,
+        "contextNote": "Notes on the layout of dwelling, tank and percolation area, as in the scheme’s model map.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 10,
+        "contextNote": "Freehand sketch of the treatment system and percolation area on site A.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "dimensions",
+        "kind": "criterion",
+        "verbatim": "Dimensions - Any three",
+        "marks": 6,
+        "contextNote": "Any three, 2 each. Such as: pipes 100–110 mm; septic tank at least 7 m from the house; percolation area at least 10 m from the house; percolation pipe at most 18 m long; trenches at least 2 m apart; at least 3 m to the boundary and 4 m to a road.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2019-HL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q8-layout",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Rural wastewater treatment",
+      "pages": [
+        1,
+        6
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original site layout map retained. Considerations and the alternative method are open responses; the scheme gives a model layout and three alternative systems."
+    }
   },
   {
     "id": "cons-2019-ol-q1-a",
@@ -71707,6 +72287,2678 @@
         "rowIds": [
           "c-advantage-1",
           "c-advantage-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2019-hl-q1-a",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "timber-frame-window-section-a",
+    "questionRef": "2019 HL Q1(a)",
+    "stem": "A triple glazed window with a wooden frame is fitted in the external wall of a dwelling house as shown. The fixed frame of the window is 100 mm × 80 mm. The wall is of timber frame construction with an external concrete block leaf. The internal timber frame is 250 mm × 50 mm and the outer leaf is of 100 mm concrete block construction with an external render finish. A 50 mm service cavity is also provided at the internal surface. Above the window head, an inset wooden panel is sheeted with vertical larch cladding of 130 mm × 20 mm to form an external rainscreen, as shown. The window is 600 mm in height and has a thermally broken insulated frame.",
+    "questionText": "To a scale of 1:5, draw a vertical section through the fixed frame of the window and the external wall of the house. Show the typical construction detail from a level 400 mm below the window cill, through the window frame, up to a level 500 mm above the window head.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 56,
+    "rows": [
+      {
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "Any 12 × 4marks",
+        "marks": 48,
+        "contextNote": "Best twelve details, 4 each, across three menus. External timber frame wall: external render; concrete block; air space/residual cavity; cavity closer; breather membrane; racking board; 250 stud/insulation; sheeting; air barrier membrane; insulated service cavity; plasterboard/skim. Triple glazing: concrete window cill; wrap-around DPC; thermally broken frame cill; window board; triple glazing; thermally broken frame head; airtight tapes at head and cill. Sheeting/panel/lintel: larch cladding; soffit; battens; counter battens; DPC; batten for DPC; timber lintels.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Scale 4 marks: Drafting 4 marks:",
+        "marks": 8,
+        "contextNote": "Scale 4 and drafting 4, assessed together: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q1-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "Triple-glazed window in a timber frame wall",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction and scale/drafting marks belong to part (a); the cill detail in (b) is marked separately."
+    }
+  },
+  {
+    "id": "cons-2019-hl-q1-complete",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "timber-frame-window-section-complete",
+    "questionRef": "2019 HL Q1 — complete",
+    "stem": "A triple glazed window with a wooden frame is fitted in the external wall of a dwelling house as shown. The fixed frame of the window is 100 mm × 80 mm. The wall is of timber frame construction with an external concrete block leaf. The internal timber frame is 250 mm × 50 mm and the outer leaf is of 100 mm concrete block construction with an external render finish. A 50 mm service cavity is also provided at the internal surface. Above the window head, an inset wooden panel is sheeted with vertical larch cladding of 130 mm × 20 mm to form an external rainscreen, as shown. The window is 600 mm in height and has a thermally broken insulated frame.",
+    "questionText": "(a) To a scale of 1:5, draw a vertical section through the fixed frame of the window and the external wall of the house. Show the typical construction detail from a level 400 mm below the window cill, through the window frame, up to a level 500 mm above the window head.\n\n(b) On your drawing, show the typical design detailing to prevent the ingress of rainwater at the window cill.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "Any 12 × 4marks",
+        "marks": 48,
+        "contextNote": "Best twelve details, 4 each, across three menus. External timber frame wall: external render; concrete block; air space/residual cavity; cavity closer; breather membrane; racking board; 250 stud/insulation; sheeting; air barrier membrane; insulated service cavity; plasterboard/skim. Triple glazing: concrete window cill; wrap-around DPC; thermally broken frame cill; window board; triple glazing; thermally broken frame head; airtight tapes at head and cill. Sheeting/panel/lintel: larch cladding; soffit; battens; counter battens; DPC; batten for DPC; timber lintels.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Scale 4 marks: Drafting 4 marks:",
+        "marks": 8,
+        "contextNote": "Scale 4 and drafting 4, assessed together: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "b-cill",
+        "kind": "criterion",
+        "verbatim": "wrap around DPC",
+        "marks": 4,
+        "contextNote": "Show and identify a DPC wrapped around the cill under the window frame, as in the scheme’s model detail.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q1-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "Triple-glazed window in a timber frame wall",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction and scale/drafting marks belong to part (a); the cill detail in (b) is marked separately."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2019-hl-q1-a",
+        "label": "a",
+        "marks": 56,
+        "rowIds": [
+          "a-details",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q1-b",
+        "label": "b",
+        "marks": 4,
+        "rowIds": [
+          "b-cill"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2019-hl-q2-b",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-3-8",
+    "conceptId": "roof-profiles-materials-b",
+    "questionRef": "2019 HL Q2(b)",
+    "stem": "",
+    "questionText": "The owners of a house located in a rural setting wish to build an extension to create an additional living space. The sketch shows the existing house and the proposed outline of the new extension at design stage. Using notes and freehand sketches, show the design for three different, distinct roof profiles suitable for the proposed extension. Recommend a preferred roof profile for the proposed extension and justify your recommendation.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "profile-1",
+        "kind": "criterion",
+        "verbatim": "Roof profile 1",
+        "marks": 8,
+        "contextNote": "Notes 2 and sketches 6. Such as, from the scheme’s sketches: a pitched gable roof matching the house.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "profile-2",
+        "kind": "criterion",
+        "verbatim": "Roof profile 2",
+        "marks": 8,
+        "contextNote": "A second, distinct profile: notes 2 and sketches 6. Such as: a pitched roof with roof lights; a flat green roof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "profile-3",
+        "kind": "criterion",
+        "verbatim": "Roof profile 3",
+        "marks": 8,
+        "contextNote": "A third, distinct profile: notes 2 and sketches 6. Such as: a curved (barrel) roof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "recommendation",
+        "kind": "criterion",
+        "verbatim": "Recommendation for a roof profile",
+        "marks": 3,
+        "contextNote": "One preferred profile recommended.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "justification",
+        "kind": "criterion",
+        "verbatim": "Justification for recommendation",
+        "marks": 3,
+        "contextNote": "The recommendation justified for the rural extension.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q2-profiles",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Roof requirements, profiles and materials",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Requirements, profiles and materials are open responses; the scheme shows four example profiles."
+    }
+  },
+  {
+    "id": "cons-2019-hl-q2-complete",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-3-8",
+    "conceptId": "roof-profiles-materials-complete",
+    "questionRef": "2019 HL Q2 — complete",
+    "stem": "",
+    "questionText": "(a) Discuss in detail, using notes and freehand sketches, three functional requirements of a roof suitable for a domestic dwelling house.\n\n(b) The owners of a house located in a rural setting wish to build an extension to create an additional living space. The sketch shows the existing house and the proposed outline of the new extension at design stage. Using notes and freehand sketches, show the design for three different, distinct roof profiles suitable for the proposed extension. Recommend a preferred roof profile for the proposed extension and justify your recommendation.\n\n(c) Select a different roofing material for each of the three roof types you have shown at 2(b). Give one advantage and one disadvantage for each material selected.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-requirement-1",
+        "kind": "criterion",
+        "verbatim": "Design Feature 1",
+        "marks": 6,
+        "contextNote": "Notes 3 and sketches 3. Such as: weather resistance against rain, snow, wind and sun; structural stability under dead and live loads and lateral movement.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-requirement-2",
+        "kind": "criterion",
+        "verbatim": "Design Feature 2",
+        "marks": 6,
+        "contextNote": "A second, different requirement. Such as: thermal insulation for comfort in winter and against summer heat gain; durability with little maintenance and treated members.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-requirement-3",
+        "kind": "criterion",
+        "verbatim": "Design Feature 3",
+        "marks": 6,
+        "contextNote": "A third, different requirement. Such as: ventilation against condensation and fungal attack; an unbroken airtightness layer.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-profile-1",
+        "kind": "criterion",
+        "verbatim": "Roof profile 1",
+        "marks": 8,
+        "contextNote": "Notes 2 and sketches 6. Such as, from the scheme’s sketches: a pitched gable roof matching the house.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-profile-2",
+        "kind": "criterion",
+        "verbatim": "Roof profile 2",
+        "marks": 8,
+        "contextNote": "A second, distinct profile: notes 2 and sketches 6. Such as: a pitched roof with roof lights; a flat green roof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-profile-3",
+        "kind": "criterion",
+        "verbatim": "Roof profile 3",
+        "marks": 8,
+        "contextNote": "A third, distinct profile: notes 2 and sketches 6. Such as: a curved (barrel) roof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-recommendation",
+        "kind": "criterion",
+        "verbatim": "Recommendation for a roof profile",
+        "marks": 3,
+        "contextNote": "One preferred profile recommended.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-justification",
+        "kind": "criterion",
+        "verbatim": "Justification for recommendation",
+        "marks": 3,
+        "contextNote": "The recommendation justified for the rural extension.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "c-material-1",
+        "kind": "criterion",
+        "verbatim": "Material 1 - identify (2 marks), adv (1 mark), disadv (1 mark)",
+        "marks": 4,
+        "contextNote": "Identify 2, advantage 1, disadvantage 1, for the first profile. Such as: natural slates; fibre cement slates; concrete or clay tiles.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-material-2",
+        "kind": "criterion",
+        "verbatim": "Material 2 - identify (2 marks), adv (1 mark), disadv (1 mark)",
+        "marks": 4,
+        "contextNote": "A different material for the second profile. Such as: zinc sheeting; wood shingle; thatch; corrugated steel.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-material-3",
+        "kind": "criterion",
+        "verbatim": "Material 3 - identify (2 marks), adv (1 mark), disadv (1 mark)",
+        "marks": 4,
+        "contextNote": "A different material for the third profile. Such as: roofing felt; asphalt; single-ply membrane (EPDM rubber).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q2-profiles",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Roof requirements, profiles and materials",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Requirements, profiles and materials are open responses; the scheme shows four example profiles."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2019-hl-q2-a",
+        "label": "a",
+        "marks": 18,
+        "rowIds": [
+          "a-requirement-1",
+          "a-requirement-2",
+          "a-requirement-3"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q2-b",
+        "label": "b",
+        "marks": 30,
+        "rowIds": [
+          "b-profile-1",
+          "b-profile-2",
+          "b-profile-3",
+          "b-recommendation",
+          "b-justification"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q2-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-material-1",
+          "c-material-2",
+          "c-material-3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2019-hl-q3-c",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "bedroom-ensuite-extension-c",
+    "questionRef": "2019 HL Q3(c)",
+    "stem": "The drawing shows the elevation of a detached house and the plan of its first floor. The front wall A-A is south facing. The owners intend to apply for planning permission to build an additional bedroom and en suite bathroom. It is proposed to remove the roof of the single storey extension on the left and build the bedroom and bathroom over it.",
+    "questionText": "Using notes and freehand sketches, show an external design for your extension that will enhance the overall visual appearance of the house.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "notes",
+        "kind": "criterion",
+        "verbatim": "Notes",
+        "marks": 4,
+        "contextNote": "Such as: brick and slates in keeping with the house; the same pitch so eaves and ridge lines align; matching window proportions; or a deliberate contrast — a flat roof with larch cladding, or a zinc-clad dormer in a hipped roof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "sketches",
+        "kind": "criterion",
+        "verbatim": "Sketches",
+        "marks": 12,
+        "contextNote": "Freehand sketches of the external design of the extension on the house.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q3-external",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Second-storey bedroom and en suite extension",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. Considerations, layouts and the external design are open responses; the scheme gives model layouts and designs."
+    }
+  },
+  {
+    "id": "cons-2019-hl-q3-complete",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "bedroom-ensuite-extension-complete",
+    "questionRef": "2019 HL Q3 — complete",
+    "stem": "The drawing shows the elevation of a detached house and the plan of its first floor. The front wall A-A is south facing. The owners intend to apply for planning permission to build an additional bedroom and en suite bathroom. It is proposed to remove the roof of the single storey extension on the left and build the bedroom and bathroom over it.",
+    "questionText": "(a) Discuss in detail, three design considerations for the proposed bedroom and en suite bathroom.\n\n(b) Using notes and freehand sketches, show a proposed internal layout for the bedroom and en suite bathroom that incorporates each of the design considerations you outlined at 3(a) above. Justify your choices.\n\n(c) Using notes and freehand sketches, show an external design for your extension that will enhance the overall visual appearance of the house.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-consideration-1",
+        "kind": "criterion",
+        "verbatim": "Design consideration 1 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "Point 3 and discussion 3. Such as: furniture layout for the bed, lockers and wardrobe, with the en suite fittings close to existing drainage; access and escape, with a second means of egress such as an escape window.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-consideration-2",
+        "kind": "criterion",
+        "verbatim": "Design consideration 2 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A second, different consideration. Such as: storage in wardrobes or a walk-in wardrobe; future flexibility in sockets, lights and multi-functional space; ergonomics around doors and drawers.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-consideration-3",
+        "kind": "criterion",
+        "verbatim": "Design consideration 3 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A third, different consideration. Such as: the human senses — natural light from the south (visual), triple glazing against noise (auditory), insulation and thermostats (tactile), ventilation of bedroom and en suite (olfactory).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-layout",
+        "kind": "criterion",
+        "verbatim": "Internal layout design (Bedroom + en-suite)",
+        "marks": 14,
+        "contextNote": "A layout of the bedroom and en suite, as in the scheme’s model plans: furniture placed with circulation space; en suite fittings near the existing waste pipes or on an external wall; a stud partition to the en suite and walk-in wardrobe.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "id": "b-consideration-1",
+        "kind": "criterion",
+        "verbatim": "Design Consideration 1",
+        "marks": 3,
+        "contextNote": "The first consideration from (a) shown in the layout.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-consideration-2",
+        "kind": "criterion",
+        "verbatim": "Design Consideration 2",
+        "marks": 3,
+        "contextNote": "The second consideration from (a) shown in the layout.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-consideration-3",
+        "kind": "criterion",
+        "verbatim": "Design Consideration 3",
+        "marks": 3,
+        "contextNote": "The third consideration from (a) shown in the layout.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-justification",
+        "kind": "criterion",
+        "verbatim": "Justification",
+        "marks": 3,
+        "contextNote": "The choices justified, such as large south windows for light and heat, an escape window and a ventilated en suite.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "c-notes",
+        "kind": "criterion",
+        "verbatim": "Notes",
+        "marks": 4,
+        "contextNote": "Such as: brick and slates in keeping with the house; the same pitch so eaves and ridge lines align; matching window proportions; or a deliberate contrast — a flat roof with larch cladding, or a zinc-clad dormer in a hipped roof.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-sketches",
+        "kind": "criterion",
+        "verbatim": "Sketches",
+        "marks": 12,
+        "contextNote": "Freehand sketches of the external design of the extension on the house.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q3-layout",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Second-storey bedroom and en suite extension",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. Considerations, layouts and the external design are open responses; the scheme gives model layouts and designs."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2019-hl-q3-a",
+        "label": "a",
+        "marks": 18,
+        "rowIds": [
+          "a-consideration-1",
+          "a-consideration-2",
+          "a-consideration-3"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q3-b",
+        "label": "b",
+        "marks": 26,
+        "rowIds": [
+          "b-layout",
+          "b-consideration-1",
+          "b-consideration-2",
+          "b-consideration-3",
+          "b-justification"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q3-c",
+        "label": "c",
+        "marks": 16,
+        "rowIds": [
+          "c-notes",
+          "c-sketches"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2019-hl-q4-b",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-1",
+    "conceptId": "townhouse-refurbishment-b",
+    "questionRef": "2019 HL Q4(b)",
+    "stem": "The sketch shows a row of terraced townhouses built over 100 years ago. A young couple have purchased one of the houses and have decided to refurbish it as their family home.",
+    "questionText": "The owners commissioned a survey of the house which revealed the following: traditional cut roof with natural slates; softwood sliding sash windows with single-glazing; solid external walls of brick construction, uninsulated and with internal lime render. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading each area selected in a manner that respects the appearance and character of the original townhouses.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 36,
+    "rows": [
+      {
+        "id": "areas",
+        "kind": "anyN",
+        "verbatim": "Two areas for upgrading",
+        "marks": 36,
+        "contextNote": "Any two of the three printed areas, each notes 10 and sketches 8 = 18. Traditional cut roof with natural slates: remove the slates carefully, clean only their undersides of lime parging, weigh and grade them and refit the heaviest at the eaves; replace decayed rafter ends, wallplate and fascia in the same species and profiles; a vapour-diffuse breathable membrane with counter battens; cast-iron rainwater goods; hygroscopic insulation such as sheep’s wool with woodfibre board, and a thoroughly ventilated roof. Softwood sliding sash windows with single - glazing: repair rather than replace, by a specialist conservation joiner; remove the sashes and glass carefully and record their positions; replace rotten timber in the same species with traditional joints and animal glue; free the pulleys, renew the cords and reuse the counter-balance weights; non-toxic paint; discreet secondary glazing. Solid external walls of brick construction, uninsulated and with internal lime render: never cement mortar; have the lime mortar analysed and matched (NHL strength, sand); rake out by hand to twice the joint width and repoint in stages, protected with hessian; internally, hempcrete or an insulating lime plaster system with a three-coat lime render.",
+        "group": {
+          "claimMax": 2,
+          "perOption": 18,
+          "options": [
+            "Traditional cut roof with natural slates",
+            "Softwood sliding sash windows with single - glazing",
+            "Solid external walls of brick construction, uninsulated and with internal lime render"
+          ]
+        }
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q4-upgrades",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Refurbishing a terraced townhouse",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Part (b) is a closed choice of any two of the three printed areas: one card holding all three."
+    }
+  },
+  {
+    "id": "cons-2019-hl-q4-complete",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-1",
+    "conceptId": "townhouse-refurbishment-complete",
+    "questionRef": "2019 HL Q4 — complete",
+    "stem": "The sketch shows a row of terraced townhouses built over 100 years ago. A young couple have purchased one of the houses and have decided to refurbish it as their family home.",
+    "questionText": "(a) Discuss three benefits to the local community of refurbishing one of the townhouses as a family home.\n\n(b) The owners commissioned a survey of the house which revealed the following: traditional cut roof with natural slates; softwood sliding sash windows with single-glazing; solid external walls of brick construction, uninsulated and with internal lime render. Select any two of the above areas and, using notes and freehand sketches, describe in detail the steps involved in upgrading each area selected in a manner that respects the appearance and character of the original townhouses.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-benefit-1",
+        "kind": "criterion",
+        "verbatim": "Benefit 1 (4 for point, 4 for discussion)",
+        "marks": 8,
+        "contextNote": "Point 4 and discussion 4. Such as: sustaining the local social community — schools, parks and playgrounds; supporting local shops and cafés.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "a-benefit-2",
+        "kind": "criterion",
+        "verbatim": "Benefit 2 (4 for point, 4 for discussion)",
+        "marks": 8,
+        "contextNote": "A second, different benefit. Such as: improving the physical fabric of the neighbourhood; easing the urban housing shortage.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "a-benefit-3",
+        "kind": "criterion",
+        "verbatim": "Benefit 3 (4 for point, 4 for discussion)",
+        "marks": 8,
+        "contextNote": "A third, different benefit. Such as: pride that encourages neighbours to upgrade; keeping the residential architectural heritage; regeneration of the area.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-areas",
+        "kind": "anyN",
+        "verbatim": "Two areas for upgrading",
+        "marks": 36,
+        "contextNote": "Any two of the three printed areas, each notes 10 and sketches 8 = 18. Traditional cut roof with natural slates: remove the slates carefully, clean only their undersides of lime parging, weigh and grade them and refit the heaviest at the eaves; replace decayed rafter ends, wallplate and fascia in the same species and profiles; a vapour-diffuse breathable membrane with counter battens; cast-iron rainwater goods; hygroscopic insulation such as sheep’s wool with woodfibre board, and a thoroughly ventilated roof. Softwood sliding sash windows with single - glazing: repair rather than replace, by a specialist conservation joiner; remove the sashes and glass carefully and record their positions; replace rotten timber in the same species with traditional joints and animal glue; free the pulleys, renew the cords and reuse the counter-balance weights; non-toxic paint; discreet secondary glazing. Solid external walls of brick construction, uninsulated and with internal lime render: never cement mortar; have the lime mortar analysed and matched (NHL strength, sand); rake out by hand to twice the joint width and repoint in stages, protected with hessian; internally, hempcrete or an insulating lime plaster system with a three-coat lime render.",
+        "group": {
+          "claimMax": 2,
+          "perOption": 18,
+          "options": [
+            "Traditional cut roof with natural slates",
+            "Softwood sliding sash windows with single - glazing",
+            "Solid external walls of brick construction, uninsulated and with internal lime render"
+          ]
+        }
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q4-upgrades",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Refurbishing a terraced townhouse",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Part (b) is a closed choice of any two of the three printed areas: one card holding all three."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2019-hl-q4-a",
+        "label": "a",
+        "marks": 24,
+        "rowIds": [
+          "a-benefit-1",
+          "a-benefit-2",
+          "a-benefit-3"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q4-b",
+        "label": "b",
+        "marks": 36,
+        "rowIds": [
+          "b-areas"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2019-hl-q5-complete",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-1",
+    "conceptId": "cavity-wall-u-value-complete",
+    "questionRef": "2019 HL Q5 — complete",
+    "stem": "The external wall of a house built in the 1990s is of 100 mm concrete block construction with a 100 mm partially filled cavity, as shown.",
+    "questionText": "(a) Calculate the U-value of the wall, given the construction has the following sequence and data: External render thickness 16 mm; Concrete block outer leaf thickness 100 mm; Clear cavity width 50 mm; Polystyrene insulation thickness 50 mm; Concrete block inner leaf thickness 100 mm; Internal plaster thickness 12 mm.\nThermal data of the external wall: Resistance of external surface (R) 0.048 m2 °C/W; Resistivity of external render (r) 2.170 m °C/W; Conductivity of concrete external blockwork (k) 1.440 W/m °C; Resistance of clear cavity (R) 0.170 m2 °C/W; Conductivity of insulation (k) 0.037 W/m °C; Conductivity of concrete internal blockwork (k) 1.440 W/m °C; Resistivity of internal plaster (r) 6.250 m °C/W; Resistance of internal surface (R) 0.122 m2 °C/W.\n\n(b) Using the U-value of the wall obtained at 5(a) above and the following data, calculate the cost of heat lost annually through this wall: area of external wall 135 m2; average internal temperature 19 °C; average external temperature 5 °C; heating period 9 hours daily for 36 weeks per annum; cost of oil 94 cent per litre; calorific value of oil 37350 kJ per litre; 1000 Watts 1 kJ per second.\n\n(c) It is proposed to upgrade the thermal properties of the above wall, to meet the Passive House standard, by fixing expanded polystyrene to the external surface, as shown. Given the thermal conductivity (k) of expanded polystyrene as 0.031 W/m°C, calculate the thickness of expanded polystyrene required to achieve a U-value of 0.15 W/m2 °C.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-resistances",
+        "kind": "criterion",
+        "verbatim": "Formulae: R=T/k R=T × r",
+        "marks": 24,
+        "contextNote": "Eight resistances, 3 each, by R = T/k (or R = T × r for render and plaster): external surface 0.048 (given); render 0.016 × 2.170 = 0.035; external blockwork 0.1/1.44 = 0.069; clear cavity 0.170 (given); insulation 0.05/0.037 = 1.351; internal blockwork 0.1/1.44 = 0.069; plaster 0.012 × 6.25 = 0.075; internal surface 0.122 (given). All in m²°C/W.",
+        "permittedMarks": [
+          0,
+          3,
+          6,
+          9,
+          12,
+          15,
+          18,
+          21,
+          24
+        ]
+      },
+      {
+        "id": "a-total-resistance",
+        "kind": "criterion",
+        "verbatim": "Total resistance",
+        "marks": 3,
+        "contextNote": "Total resistance Rt = 1.939 m²°C/W.",
+        "permittedMarks": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": "a-u-value",
+        "kind": "criterion",
+        "verbatim": "Calculation of U- value",
+        "marks": 3,
+        "contextNote": "U = 1 ÷ Rt = 1 ÷ 1.939 = 0.516 W/m²°C, with units.",
+        "permittedMarks": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": "b-heat-loss",
+        "kind": "criterion",
+        "verbatim": "Heat loss formula and calculations",
+        "marks": 3,
+        "contextNote": "Heat loss = U-value × area × temperature difference = 0.516 × 135 × (19 − 5) = 975.24 watts (joules per second).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-duration",
+        "kind": "criterion",
+        "verbatim": "Heating duration for one year",
+        "marks": 3,
+        "contextNote": "Heating period = 60 × 60 × 9 × 7 × 36 = 8,164,800 seconds (2,268 hours).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-energy",
+        "kind": "criterion",
+        "verbatim": "k/Joules calculation for one year",
+        "marks": 3,
+        "contextNote": "Energy = 8,164,800 × 975.24 ÷ 1000 = 7,962,639.552 kJ per year.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-oil",
+        "kind": "criterion",
+        "verbatim": "Litres of oil for one year",
+        "marks": 3,
+        "contextNote": "Oil = 7,962,639.552 ÷ 37,350 = 212.34 litres per year.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-cost",
+        "kind": "criterion",
+        "verbatim": "Annual cost of heat loss",
+        "marks": 3,
+        "contextNote": "Annual cost = 212.34 × €0.94 = €199.60. The scheme’s alternative one-line method gives the same €199.60.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "c-required-resistance",
+        "kind": "criterion",
+        "verbatim": "Resistance for U- value for 0.15Wm2K (using R=1/U)",
+        "marks": 3,
+        "contextNote": "Required resistance = 1 ÷ 0.15 = 6.666 m²K/W.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "c-existing-resistance",
+        "kind": "criterion",
+        "verbatim": "Resistance from calculated U-value from part (a)",
+        "marks": 3,
+        "contextNote": "Existing resistance = 1 ÷ 0.516 = 1.939 m²K/W (the scheme prints the divisor as 0.156).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "c-difference",
+        "kind": "criterion",
+        "verbatim": "Difference in resistances (required resistance)",
+        "marks": 3,
+        "contextNote": "Difference = 6.666 − 1.939 = 4.727 m²K/W.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "c-formula",
+        "kind": "criterion",
+        "verbatim": "Application of formula R = T/k",
+        "marks": 3,
+        "contextNote": "R = T/k, so 4.727 = T/0.031.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "c-thickness",
+        "kind": "criterion",
+        "verbatim": "Required thickness of insulation",
+        "marks": 3,
+        "contextNote": "T = 4.727 × 0.031 = 0.146537 m: 147 mm of expanded polystyrene (146 or 147 mm accepted).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q5-calculation",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Cavity wall U-value, heat-loss cost and external insulation",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.516 W/m²°C, an annual cost of €199.60 and 147 mm of expanded polystyrene."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2019-hl-q5-a",
+        "label": "a",
+        "marks": 30,
+        "rowIds": [
+          "a-resistances",
+          "a-total-resistance",
+          "a-u-value"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q5-b",
+        "label": "b",
+        "marks": 15,
+        "rowIds": [
+          "b-heat-loss",
+          "b-duration",
+          "b-energy",
+          "b-oil",
+          "b-cost"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q5-c",
+        "label": "c",
+        "marks": 15,
+        "rowIds": [
+          "c-required-resistance",
+          "c-existing-resistance",
+          "c-difference",
+          "c-formula",
+          "c-thickness"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2019-hl-q6-complete",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "low-impact-renewables-complete",
+    "questionRef": "2019 HL Q6 — complete",
+    "stem": "The elevation and ground floor plan of a house are shown. The house has two bedrooms and a bathroom upstairs. The external walls are of timber frame construction with a rendered concrete block and timber cladding finish. The house is designed to have low environmental impact.",
+    "questionText": "(a) With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.\n\n(b) Using notes and freehand sketches, discuss in detail each of the following renewable energy technologies and identify how each contributes to making a home more eco-friendly: evacuated tubes; wind turbines; photovoltaic panels.\n\n(c) Discuss in detail two advantages of using local craft skills when building the house shown.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-feature-1",
+        "kind": "criterion",
+        "verbatim": "Design Feature 1",
+        "marks": 10,
+        "contextNote": "Notes 5 and sketches 5. Such as: large south-facing glazing for sunlight and heat; trees to the south for summer shading.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "a-feature-2",
+        "kind": "criterion",
+        "verbatim": "Design Feature 2",
+        "marks": 10,
+        "contextNote": "A second, different feature. Such as: a wood-burning stove in a central high-thermal-mass chimney; high insulation; small north windows.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "a-feature-3",
+        "kind": "criterion",
+        "verbatim": "Design Feature 3",
+        "marks": 10,
+        "contextNote": "A third, different feature. Such as: photovoltaic cells on the roof; a low-embodied-energy timber frame; the attic used as living space, reducing the footprint.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "b-evacuated-tubes",
+        "kind": "criterion",
+        "verbatim": "Evacuated Tubes",
+        "marks": 6,
+        "contextNote": "Notes/discussion 3 and sketch 3. Such as: tubes in a vacuum, each with a copper heat pipe whose fluid vaporises and gives up its heat at the manifold to the water from the storage tank; heating hot water with less fossil fuel.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-wind-turbines",
+        "kind": "criterion",
+        "verbatim": "Wind Turbines",
+        "marks": 6,
+        "contextNote": "Notes/discussion 3 and sketch 3. Such as: wind turns the blades, rotor and generator; an inverter converts DC to AC for the home, batteries or the grid; a control box protects it in strong winds; less demand on fossil-fuelled grid electricity.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-photovoltaic-panels",
+        "kind": "criterion",
+        "verbatim": "Photovoltaic Panels",
+        "marks": 6,
+        "contextNote": "Notes/discussion 3 and sketch 3. Such as: light frees electrons in the PV cells, giving direct current; an inverter supplies AC to the home; excess stored in batteries or sent to the grid; clean electricity without CO₂.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1 (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "Point 3 and discussion 3. Such as: traditional knowledge and skills preserved for future generations; a sense of place and pride.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2 (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A second, different advantage. Such as: local employment, keeping families in the locality; local materials sourced, reducing embodied energy.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q6-features",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "Low environmental impact house and renewable energy",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. All three printed technologies in (b) are required, each separately marked."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2019-hl-q6-a",
+        "label": "a",
+        "marks": 30,
+        "rowIds": [
+          "a-feature-1",
+          "a-feature-2",
+          "a-feature-3"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q6-b",
+        "label": "b",
+        "marks": 18,
+        "rowIds": [
+          "b-evacuated-tubes",
+          "b-wind-turbines",
+          "b-photovoltaic-panels"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q6-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-advantage-1",
+          "c-advantage-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2019-hl-q7-complete",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "bullnose-stairs-section-complete",
+    "questionRef": "2019 HL Q7 — complete",
+    "stem": "The main hall of a two-storey dwelling has a closed riser wooden stairs. The bottom of the stairs has a bullnose step as shown. The newel post is 120 mm × 120 mm and the rise of a step should not exceed 175 mm.",
+    "questionText": "(a) To a scale of 1:5, draw a vertical section through the centre of the stairs. The section should show the typical construction detail through the bottom three steps of the stairs, showing the newel post, string, balusters and handrail. Include the typical dimensions of three structural members of the stairs.\n\n(b) Indicate on your drawing three design features that ensure the stairs is safe for users.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "8 x 5 marks",
+        "marks": 40,
+        "contextNote": "Best eight details, 5 each. Menu: bullnose step; newel post; string; string capping; riser; tread; wedges; glue blocks; handrail; balusters; nosing line/pitch line; handrail-to-newel joint; string-to-newel joint.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ]
+      },
+      {
+        "id": "a-dimensions",
+        "kind": "criterion",
+        "verbatim": "Three dimensions of the stairs",
+        "marks": 6,
+        "contextNote": "Typical dimensions of three structural members, 2 each, such as string 250 × 50 mm, newel 120 × 120 mm, tread 250 × 25 mm, riser 175 × 20 mm, balusters and handrail 40 × 40 mm.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Scale and drafting marks (Excellent, Good, Fair)",
+        "marks": 8,
+        "contextNote": "Scale and drafting, assessed together: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "b-safety",
+        "kind": "criterion",
+        "verbatim": "Design details (3 x 2 marks)",
+        "marks": 6,
+        "contextNote": "Any three, 2 each, indicated on the drawing. Such as: maximum pitch 42°; minimum going 220 mm; maximum rise 200 mm; a Ø100 mm sphere must not pass between balusters; minimum handrail height 840 mm; at most 16 risers in a flight; minimum width 800 mm.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q7-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Closed riser stairs with a bullnose step",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the safety features in (b) are marked separately."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2019-hl-q7-a",
+        "label": "a",
+        "marks": 54,
+        "rowIds": [
+          "a-details",
+          "a-dimensions",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q7-b",
+        "label": "b",
+        "marks": 6,
+        "rowIds": [
+          "b-safety"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2019-hl-q8-complete",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-5-5",
+    "conceptId": "rural-wastewater-treatment-complete",
+    "questionRef": "2019 HL Q8 — complete",
+    "stem": "",
+    "questionText": "(a) Discuss three considerations to ensure the proper treatment and disposal of sewage when selecting a site for a house in a rural location.\n\n(b) The drawing shows a site layout map. The outline of a new house and driveway is shown on site A. Using notes and freehand sketches, show the design layout necessary for a typical wastewater treatment system and percolation area on this site. Include typical dimensions for the system.\n\n(c) Using notes and freehand sketches, discuss an alternative method, other than a typical percolation area to ensure the safe treatment of wastewater from a dwelling house.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-consideration-1",
+        "kind": "criterion",
+        "verbatim": "Consideration 1 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "Point 3 and discussion 3. Such as: the soil type and how well it percolates; the topography of the site.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-consideration-2",
+        "kind": "criterion",
+        "verbatim": "Consideration 2 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A second, different consideration. Such as: a high water table risking contamination; distances to neighbouring buildings, roads, rivers, lakes and water sources.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-consideration-3",
+        "kind": "criterion",
+        "verbatim": "Consideration 3 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A third, different consideration. Such as: the number of residents and a tank of at least 2725 litres; pipework at 1:60 with a vented soil pipe; odours.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-notes",
+        "kind": "criterion",
+        "verbatim": "Notes",
+        "marks": 10,
+        "contextNote": "Notes on the layout of dwelling, tank and percolation area, as in the scheme’s model map.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "b-sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 10,
+        "contextNote": "Freehand sketch of the treatment system and percolation area on site A.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "b-dimensions",
+        "kind": "criterion",
+        "verbatim": "Dimensions - Any three",
+        "marks": 6,
+        "contextNote": "Any three, 2 each. Such as: pipes 100–110 mm; septic tank at least 7 m from the house; percolation area at least 10 m from the house; percolation pipe at most 18 m long; trenches at least 2 m apart; at least 3 m to the boundary and 4 m to a road.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-notes",
+        "kind": "criterion",
+        "verbatim": "Notes",
+        "marks": 8,
+        "contextNote": "Notes on one alternative system. Such as: a raised percolation area with imported topsoil mounded over the ground; a constructed wetland (reed bed); a peat filter system dosed from the septic tank.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "c-sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 8,
+        "contextNote": "Freehand sketch of the alternative system.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q8-layout",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Rural wastewater treatment",
+      "pages": [
+        1,
+        6
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original site layout map retained. Considerations and the alternative method are open responses; the scheme gives a model layout and three alternative systems."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2019-hl-q8-a",
+        "label": "a",
+        "marks": 18,
+        "rowIds": [
+          "a-consideration-1",
+          "a-consideration-2",
+          "a-consideration-3"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q8-b",
+        "label": "b",
+        "marks": 26,
+        "rowIds": [
+          "b-notes",
+          "b-sketch",
+          "b-dimensions"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q8-c",
+        "label": "c",
+        "marks": 16,
+        "rowIds": [
+          "c-notes",
+          "c-sketch"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2019-hl-q9-a",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "thermal-bridge-door-section-a",
+    "questionRef": "2019 HL Q9(a)",
+    "stem": "Thermal envelope continuity is essential to ensure a dwelling house is thermal bridge free. The drawing shows an outline section through the external door of a single-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a traditional cut roof with an insulated solid concrete ground floor. The external door and frame are thermally broken.",
+    "questionText": "Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at each location circled on the drawing.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 48,
+    "rows": [
+      {
+        "id": "wallplate",
+        "kind": "criterion",
+        "verbatim": "Wallplate position detail",
+        "marks": 16,
+        "contextNote": "Notes 8 and sketches 8, as in the scheme’s model detail: the ceiling insulation carried over the wallplate to meet the cavity insulation, with ventilation kept at the eaves.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "id": "door-head",
+        "kind": "criterion",
+        "verbatim": "Head of door detail",
+        "marks": 16,
+        "contextNote": "Notes 8 and sketches 8, as in the scheme’s model detail: the cavity insulation carried down over the lintels to the thermally broken frame, with a cavity closer at the head.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "id": "threshold",
+        "kind": "criterion",
+        "verbatim": "Threshold of door detail",
+        "marks": 16,
+        "contextNote": "Notes 8 and sketches 8, as in the scheme’s model detail: the floor and cavity insulation linked under the threshold with insulating blocks, the frame in line with the insulation and a drainage channel outside.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q9-details",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Thermal bridging at a door, wallplate and threshold",
+      "pages": [
+        1,
+        6
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original section retained. Every circled location in (a) is required, each separately marked under the scheme’s heading for it."
+    }
+  },
+  {
+    "id": "cons-2019-hl-q9-complete",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "thermal-bridge-door-section-complete",
+    "questionRef": "2019 HL Q9 — complete",
+    "stem": "Thermal envelope continuity is essential to ensure a dwelling house is thermal bridge free. The drawing shows an outline section through the external door of a single-storey house having a 450 mm external concrete block wall with a 250 mm full-fill insulated cavity. The house has a traditional cut roof with an insulated solid concrete ground floor. The external door and frame are thermally broken.",
+    "questionText": "(a) Using notes and freehand sketches, show best practice design detailing that will prevent the formation of a thermal bridge at each location circled on the drawing.\n\n(b) Discuss two negative impacts of thermal bridging as a result of poor design detailing.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-wallplate",
+        "kind": "criterion",
+        "verbatim": "Wallplate position detail",
+        "marks": 16,
+        "contextNote": "Notes 8 and sketches 8, as in the scheme’s model detail: the ceiling insulation carried over the wallplate to meet the cavity insulation, with ventilation kept at the eaves.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "id": "a-door-head",
+        "kind": "criterion",
+        "verbatim": "Head of door detail",
+        "marks": 16,
+        "contextNote": "Notes 8 and sketches 8, as in the scheme’s model detail: the cavity insulation carried down over the lintels to the thermally broken frame, with a cavity closer at the head.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "id": "a-threshold",
+        "kind": "criterion",
+        "verbatim": "Threshold of door detail",
+        "marks": 16,
+        "contextNote": "Notes 8 and sketches 8, as in the scheme’s model detail: the floor and cavity insulation linked under the threshold with insulating blocks, the frame in line with the insulation and a drainage channel outside.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "id": "b-impact-1",
+        "kind": "criterion",
+        "verbatim": "Impact 1 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "Point 3 and discussion 3. Such as: warm air meeting the cold surface condenses, and mould grows on the damp surfaces, harming health.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-impact-2",
+        "kind": "criterion",
+        "verbatim": "Impact 2 - (3 for point, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A second, different impact. Such as: staining and decay of finishes and materials; more heat lost and a higher energy demand.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q9-details",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Thermal bridging at a door, wallplate and threshold",
+      "pages": [
+        1,
+        6
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original section retained. Every circled location in (a) is required, each separately marked under the scheme’s heading for it."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2019-hl-q9-a",
+        "label": "a",
+        "marks": 48,
+        "rowIds": [
+          "a-wallplate",
+          "a-door-head",
+          "a-threshold"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q9-b",
+        "label": "b",
+        "marks": 12,
+        "rowIds": [
+          "b-impact-1",
+          "b-impact-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2019-hl-q10-complete",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "enerphit-retrofit-complete",
+    "questionRef": "2019 HL Q10 — complete",
+    "stem": "The plan and elevation of a bungalow built in the 1970s are shown. The wall B-B is south facing. The owners intend to carry out a deep retrofit upgrade of their house to meet the EnerPHit Passive House standard.",
+    "questionText": "(a) Using notes and freehand sketches, outline three design considerations necessary to achieve the EnerPHit Passive House design standard.\n\n(b) Discuss in detail, using notes and freehand sketches, how you would retrofit the given house to include each consideration you specified at 10(a) above.\n\n(c) Discuss two advantages of retrofitting an existing house to meet the EnerPHit standard.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-consideration-1",
+        "kind": "criterion",
+        "verbatim": "Design consideration 1",
+        "marks": 8,
+        "contextNote": "Notes 4 and sketches 4. Such as: the thermal efficiency of the envelope — insulation, windows, doors, porch.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "a-consideration-2",
+        "kind": "criterion",
+        "verbatim": "Design consideration 2",
+        "marks": 8,
+        "contextNote": "A second, different consideration. Such as: ventilation with heat recovery; airtightness (EnerPHit: 1.0 air changes per hour).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "a-consideration-3",
+        "kind": "criterion",
+        "verbatim": "Design consideration 3",
+        "marks": 8,
+        "contextNote": "A third, different consideration. Such as: maximising solar gains; optimum thermal comfort (heating demand 25 kWh/m²/yr); renewable energy systems.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-upgrade-1",
+        "kind": "criterion",
+        "verbatim": "Retrofit upgrade 1",
+        "marks": 8,
+        "contextNote": "Notes 4 and sketches 4, for the first consideration. Such as: more insulation in walls, roof (ceiling U ≤ 0.120) and floor; Passive House triple-glazed windows (Uw ≤ 0.85) and doors (Ud ≤ 0.80).",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-upgrade-2",
+        "kind": "criterion",
+        "verbatim": "Retrofit upgrade 2",
+        "marks": 8,
+        "contextNote": "Notes 4 and sketches 4, for the second consideration. Such as: a heat recovery ventilation system (efficiency ≥ 75%); sealing penetrations and frames, a stove in place of the open fire, a storm porch.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-upgrade-3",
+        "kind": "criterion",
+        "verbatim": "Retrofit upgrade 3",
+        "marks": 8,
+        "contextNote": "Notes 4 and sketches 4, for the third consideration. Such as: new south windows and the dining/kitchen wall removed for solar gain; upgraded heating controls; PV, a wind turbine or evacuated tubes.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "c-advantage-1",
+        "kind": "criterion",
+        "verbatim": "Impact 1 – (3 for name, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "Name 3 and discussion 3. Such as: reduced heating costs; better energy efficiency.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-advantage-2",
+        "kind": "criterion",
+        "verbatim": "Impact 2 – (3 for name, 3 for discussion)",
+        "marks": 6,
+        "contextNote": "A second, different advantage. Such as: reduced carbon emissions; improved wellbeing; existing buildings reused in the community.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q10-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2019-HL-q10-retrofit",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10",
+      "title": "EnerPHit deep retrofit of a 1970s bungalow",
+      "pages": [
+        1,
+        7
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original plan and elevation retained. Part (b) develops each consideration given in (a)."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2019-hl-q10-a",
+        "label": "a",
+        "marks": 24,
+        "rowIds": [
+          "a-consideration-1",
+          "a-consideration-2",
+          "a-consideration-3"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q10-b",
+        "label": "b",
+        "marks": 24,
+        "rowIds": [
+          "b-upgrade-1",
+          "b-upgrade-2",
+          "b-upgrade-3"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q10-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-advantage-1",
+          "c-advantage-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2019-hl-q10-alt-discussion",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "sustainable-carbon-footprint-discussion",
+    "questionRef": "2019 HL Q10-alt — discussion",
+    "stem": "“Global warming is now a generally recognised phenomenon and sustainability is recognised as being a necessity, not an option. One of the main culprits blamed for global warming is carbon dioxide (CO2), so it is worth taking a look at what can be done about it. CO2 is produced by each of us every day, and our personal carbon footprint is a measure of how many tonnes of CO2 are emitted directly or indirectly, as a result of the consumption of goods and services. When building your own home you should take every opportunity to build in the most sustainable way so as to minimise your own carbon footprint.” Adapted from: Building Your Own Sustainable and Energy Efficient House. by Henry Skates Published by: The Crowood Press Ltd. ISBN: 978-1-84797-258-3",
+    "questionText": "Discuss the above statement in detail.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "point-1",
+        "kind": "criterion",
+        "verbatim": "Discussion: Point 1 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: global warming from human CO₂ emissions — melting ice caps, extreme weather, forest fires, food and health security.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "point-2",
+        "kind": "criterion",
+        "verbatim": "Discussion: Point 2 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: sustainable development as defined by the Brundtland Report; the Paris Agreement’s targets to hold warming below 2 °C.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "point-3",
+        "kind": "criterion",
+        "verbatim": "Discussion: Point 3 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: the built environment causing about half of climate damage; personal carbon footprints cut by consuming less and choosing local, low-embodied-energy, natural materials. Three distinct, well-argued points are needed.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q10-alt-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+      "title": "Building sustainably to minimise a carbon footprint (alternative Question 10)",
+      "pages": [
+        1,
+        7
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the EnerPHit question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    }
+  },
+  {
+    "id": "cons-2019-hl-q10-alt-guidelines",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "sustainable-carbon-footprint-guidelines",
+    "questionRef": "2019 HL Q10-alt — guidelines",
+    "stem": "“Global warming is now a generally recognised phenomenon and sustainability is recognised as being a necessity, not an option. One of the main culprits blamed for global warming is carbon dioxide (CO2), so it is worth taking a look at what can be done about it. CO2 is produced by each of us every day, and our personal carbon footprint is a measure of how many tonnes of CO2 are emitted directly or indirectly, as a result of the consumption of goods and services. When building your own home you should take every opportunity to build in the most sustainable way so as to minimise your own carbon footprint.” Adapted from: Building Your Own Sustainable and Energy Efficient House. by Henry Skates Published by: The Crowood Press Ltd. ISBN: 978-1-84797-258-3",
+    "questionText": "Propose three best practice guidelines that would ensure that buildings are built in the most sustainable way possible and thus minimise their carbon footprint.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "guideline-1",
+        "kind": "criterion",
+        "verbatim": "Guideline 1: (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: grant-aided renewable energy — solar panels, on-site generation, small wind turbines; heat pumps; energy-saving fittings and A-rated appliances.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "guideline-2",
+        "kind": "criterion",
+        "verbatim": "Guideline 2: (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: planning regulations and clear local guidelines for sustainable homes; on-site water harvesting.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "guideline-3",
+        "kind": "criterion",
+        "verbatim": "Guideline 3: (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: designing out high-embodied-energy materials like concrete and steel; training professionals in airtight, low-energy construction with materials such as cob, rammed earth and hemp-lime. Three distinct guidelines are needed.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q10-alt-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+      "title": "Building sustainably to minimise a carbon footprint (alternative Question 10)",
+      "pages": [
+        1,
+        7
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the EnerPHit question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    }
+  },
+  {
+    "id": "cons-2019-hl-q10-alt-complete",
+    "subjectId": "construction-studies",
+    "year": 2019,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "sustainable-carbon-footprint-complete",
+    "questionRef": "2019 HL Q10-alt — complete",
+    "stem": "“Global warming is now a generally recognised phenomenon and sustainability is recognised as being a necessity, not an option. One of the main culprits blamed for global warming is carbon dioxide (CO2), so it is worth taking a look at what can be done about it. CO2 is produced by each of us every day, and our personal carbon footprint is a measure of how many tonnes of CO2 are emitted directly or indirectly, as a result of the consumption of goods and services. When building your own home you should take every opportunity to build in the most sustainable way so as to minimise your own carbon footprint.” Adapted from: Building Your Own Sustainable and Energy Efficient House. by Henry Skates Published by: The Crowood Press Ltd. ISBN: 978-1-84797-258-3",
+    "questionText": "Discuss the above statement in detail and propose three best practice guidelines that would ensure that buildings are built in the most sustainable way possible and thus minimise their carbon footprint.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "discussion-point-1",
+        "kind": "criterion",
+        "verbatim": "Discussion: Point 1 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: global warming from human CO₂ emissions — melting ice caps, extreme weather, forest fires, food and health security.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "discussion-point-2",
+        "kind": "criterion",
+        "verbatim": "Discussion: Point 2 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: sustainable development as defined by the Brundtland Report; the Paris Agreement’s targets to hold warming below 2 °C.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "discussion-point-3",
+        "kind": "criterion",
+        "verbatim": "Discussion: Point 3 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: the built environment causing about half of climate damage; personal carbon footprints cut by consuming less and choosing local, low-embodied-energy, natural materials. Three distinct, well-argued points are needed.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "guidelines-guideline-1",
+        "kind": "criterion",
+        "verbatim": "Guideline 1: (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: grant-aided renewable energy — solar panels, on-site generation, small wind turbines; heat pumps; energy-saving fittings and A-rated appliances.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "guidelines-guideline-2",
+        "kind": "criterion",
+        "verbatim": "Guideline 2: (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: planning regulations and clear local guidelines for sustainable homes; on-site water harvesting.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "guidelines-guideline-3",
+        "kind": "criterion",
+        "verbatim": "Guideline 3: (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: designing out high-embodied-energy materials like concrete and steel; training professionals in airtight, low-energy construction with materials such as cob, rammed earth and hemp-lime. Three distinct guidelines are needed.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2019-HL-q10-alt-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+      "title": "Building sustainably to minimise a carbon footprint (alternative Question 10)",
+      "pages": [
+        1,
+        7
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+      "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the EnerPHit question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2019-hl-q10-alt-discussion",
+        "label": "Discussion of the statement",
+        "marks": 30,
+        "rowIds": [
+          "discussion-point-1",
+          "discussion-point-2",
+          "discussion-point-3"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2019-hl-q10-alt-guidelines",
+        "label": "Three best practice guidelines",
+        "marks": 30,
+        "rowIds": [
+          "guidelines-guideline-1",
+          "guidelines-guideline-2",
+          "guidelines-guideline-3"
         ]
       }
     ]
