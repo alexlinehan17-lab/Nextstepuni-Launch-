@@ -81,6 +81,12 @@ const addedIrishRoutes = new Set([
     .concat([`reading-${p}-q6-a`, `reading-${p}-q6-b`, `reading-${p}-q6-b-1`, `reading-${p}-q6-b-2`]))
     .concat(['reading-a-q5-bi','reading-b-q2-bi','reading-b-q4-bi','reading-b-q5-bi','reading-b-q5-bii'].flatMap(key => [`${key}-1`, `${key}-2`]))
     .map(key => `irish-2025-hl-p2-${key}`),
+  // 2023 Higher Paper 2 (reviewed 2026-10-12): every published reading part, the 1 + 1 answer
+  // slots and the A 6(b) trait slots (B 6(b) is opinion + two points inside one response).
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => ['a','bi','bii'].map(part => `reading-${p}-q${q}-${part}`))
+    .concat([`reading-${p}-q6-a`, `reading-${p}-q6-b`]))
+    .concat(['reading-a-q6-b','reading-a-q3-bi','reading-a-q4-bi','reading-b-q2-bii','reading-b-q3-bi','reading-b-q3-bii'].flatMap(key => [`${key}-1`, `${key}-2`]))
+    .map(key => `irish-2023-hl-p2-${key}`),
 ]);
 
 // Paper-reviewed Ordinary additions are tracked the same way beside the frozen

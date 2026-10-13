@@ -1,0 +1,3281 @@
+{
+  "review": {
+    "year": 2023,
+    "level": "higher",
+    "paperFileid": "LC001ALP200IV.pdf",
+    "schemeFileid": "LC001ALP000IV.pdf",
+    "paperSha256": "24ef3ff77f567f5e72773a1df97d3dbb64bdbf8307673eeb14022d6363012e23",
+    "schemeSha256": "4088eb120e0d61d9e4ad1ab54f80829b55d89dc5ef57bdcb58129ee58dce5089",
+    "reviewedPaperPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "reviewedSchemePages": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "schemeScope": "Combined Paper 1 and Paper 2 scheme. PDF 18 reading notes and annotation key; 19–22 Léamhthuiscint A; 22–26 Léamhthuiscint B; 27 literature annotation key; 28 literature notes, Gaeilge 5 and prose 25/18 tables; 29–31 prose; 32–39 poetry; 40 Ceist 4 notes and 35/25 table; 41–49 additional literature; 50 modified marking (SMM). PDF 1–17 belong to Paper 1; 51–52 blank.",
+    "reviewDate": "2026-10-12",
+    "status": "reviewed",
+    "fullPaperAndApplicableSchemeVisualSweep": true,
+    "selectionDecisions": [
+      {
+        "page": 3,
+        "raw": "Freagair gach ceist (Ceist 1, Ceist 2, Ceist 3 agus Ceist 4).",
+        "decision": "Required answers; no finite task menu."
+      },
+      {
+        "page": 3,
+        "raw": "Ceist 1: Freagair Léamhthuiscint A (50 marc) agus Léamhthuiscint B (50 marc).",
+        "decision": "Both reading passages and every question in each are required; each printed part is also a practice card."
+      },
+      {
+        "page": 3,
+        "raw": "Tá Ceist 1 - 5 ar aon mharc. Glacfar le freagraí i d’fhocail féin nó",
+        "decision": "Equal 7-mark questions 1–5; answer-language rule, not a selection."
+      },
+      {
+        "page": 3,
+        "raw": "Freagair Ceist 2A (30 marc) nó Ceist 2B (30 marc).",
+        "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Oisín i dTír na nÓg, Dís, optional folktale, optional short story)."
+      },
+      {
+        "page": 3,
+        "raw": "Freagair ceist amháin as do rogha de 2A (a) nó 2A (b).",
+        "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Oisín i dTír na nÓg, Dís, optional folktale, optional short story)."
+      },
+      {
+        "page": 3,
+        "raw": "nó",
+        "decision": "Separates printed alternatives (2A/2B and 3A/3B on page 3; 2A(a)/(b), 2B(a)/(b), 3A(a)/(b), 3B(a)/(b) on pages 8–11); each is a whole route, never combined."
+      },
+      {
+        "page": 3,
+        "raw": "2B. Prós Roghnach",
+        "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Oisín i dTír na nÓg, Dís, optional folktale, optional short story)."
+      },
+      {
+        "page": 3,
+        "raw": "Freagair ceist amháin as do rogha de 2B (a) nó 2B (b).",
+        "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Oisín i dTír na nÓg, Dís, optional folktale, optional short story)."
+      },
+      {
+        "page": 3,
+        "raw": "Freagair Ceist 3A (30 marc) nó Ceist 3B (30 marc).",
+        "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+      },
+      {
+        "page": 3,
+        "raw": "Freagair ceist amháin as do rogha de 3A (a) nó 3A (b).",
+        "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+      },
+      {
+        "page": 3,
+        "raw": "3B. Filíocht Roghnach",
+        "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+      },
+      {
+        "page": 3,
+        "raw": "Freagair ceist amháin as do rogha de 3B (a) nó 3B (b).",
+        "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+      },
+      {
+        "page": 3,
+        "raw": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F).",
+        "decision": "Closed choose-one of 4A–4F: six whole 40-mark routes."
+      },
+      {
+        "page": 4,
+        "raw": "Freagair Léamhthuiscint A agus Léamhthuiscint B anseo.",
+        "decision": "Both reading passages and every question in each are required; each printed part is also a practice card."
+      },
+      {
+        "page": 4,
+        "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+        "decision": "Both reading passages and every question in each are required; each printed part is also a practice card."
+      },
+      {
+        "page": 4,
+        "raw": "don gheimhreadh ar Oileán Ross. Roghnaigh",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 4,
+        "raw": "Bhain tubaiste do Tom lá amháin. Ba bheag",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 4,
+        "raw": "Theas a bhuachan. Roghnaigh sé Tom Crean mar",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 4,
+        "raw": "ar Crean nuair nár roghnaíodh eisean agus bhí air",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 5,
+        "raw": "(b) (i) Scríobh síos cineál amháin taighde a bheidh ar siúl ag na heolaithe mara ar an RV Tom Crean.",
+        "decision": "One required answer; the accepted list is the key for one task."
+      },
+      {
+        "page": 5,
+        "raw": "2. (a) Scríobh síos dhá phointe eolais faoi mhuintir Tom Crean agus é ag fás aníos gar d’Abhainn an Scáil",
+        "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3."
+      },
+      {
+        "page": 5,
+        "raw": "(b) (i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas",
+        "decision": "Two required answers inside one printed part, priced 1 mharc + 1 mharc: each answer is also a one-mark practice slot."
+      },
+      {
+        "page": 5,
+        "raw": "(ii) Cén tubaiste a bhain do Tom Crean lá amháin agus é ag cabhrú leis an long a scaoileadh?",
+        "decision": "“lá amháin” is part of the question wording (one day), not a count of answers; one required answer."
+      },
+      {
+        "page": 5,
+        "raw": "(b) (i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg",
+        "decision": "Two required answers inside one printed part, priced 1 mharc + 1 mharc: each answer is also a one-mark practice slot."
+      },
+      {
+        "page": 5,
+        "raw": "(b) (i) Tabhair pointe amháin eolais faoin turas farraige a rinne Shackleton agus a chriú ó Oileán",
+        "decision": "One required answer; the accepted list is the key for one task."
+      },
+      {
+        "page": 5,
+        "raw": "(b) Bunaithe ar an eolas sa sliocht thuas, déan plé ar dhá thréith de chuid Tom Crean, dar leat.",
+        "decision": "Two independent six-mark traits (trait 2 + support 4 each): practice slots plus the whole part; own words required."
+      },
+      {
+        "page": 5,
+        "raw": "Bíodh sampla amháin ón sliocht agat, i d’fhocail féin, ag tacú le gach tréith a luann tú",
+        "decision": "One supporting example per trait, inside each six-mark trait award; not a selection."
+      },
+      {
+        "page": 5,
+        "raw": "le hithe aige ach trí bhriosca agus dhá phíosa",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 6,
+        "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+        "decision": "Both reading passages and every question in each are required; each printed part is also a practice card."
+      },
+      {
+        "page": 6,
+        "raw": "1. D’ainmnigh an Coimisiún Eorpach an bhliain",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 6,
+        "raw": "agus áitiúla in 2024 nó a bheith páirteach san",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 7,
+        "raw": "(b) (i) Scríobh síos príomhchuspóir amháin a leagadh amach do Bhliain Eorpach na hÓige. (Alt 1)",
+        "decision": "One required answer; the accepted list is the key for one task."
+      },
+      {
+        "page": 7,
+        "raw": "2. (a) Luaigh dhá aidhm de chuid na n-imeachtaí a d’eagraigh an eagraíocht Léargas in Éirinn le linn",
+        "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3."
+      },
+      {
+        "page": 7,
+        "raw": "3. (a) Scríobh síos dhá shlí a mbaineann mic léinn na n-institiúidí tríú leibhéal tairbhe as clár Erasmus+.",
+        "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3."
+      },
+      {
+        "page": 7,
+        "raw": "(b) (i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa",
+        "decision": "Two required answers inside one printed part, priced 1 mharc + 1 mharc: each answer is also a one-mark practice slot."
+      },
+      {
+        "page": 7,
+        "raw": "(ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra",
+        "decision": "Two required answers inside one printed part, priced 1 mharc + 1 mharc: each answer is also a one-mark practice slot."
+      },
+      {
+        "page": 7,
+        "raw": "4. (a) Scríobh síos dhá rud a dúirt Harry McCann faoin gcaoi ar chuir paindéim Covid-19 isteach",
+        "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3."
+      },
+      {
+        "page": 7,
+        "raw": "(b) (i) Scríobh síos pointe amháin eolais faoi óige dhaonra an Aontais Eorpaigh. (Alt 5)",
+        "decision": "One required answer; the accepted list is the key for one task."
+      },
+      {
+        "page": 7,
+        "raw": "dar leat? Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht, mar thacaíocht le do fhreagra.",
+        "decision": "Opinion (2) and two supported points (5 + 5) stay inside one response, as in 2026 B 6(b); own words required."
+      },
+      {
+        "page": 8,
+        "raw": "Freagair Ceist 2A (Prós Ainmnithe) nó Ceist 2B (Prós Roghnach).",
+        "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Oisín i dTír na nÓg, Dís, optional folktale, optional short story)."
+      },
+      {
+        "page": 8,
+        "raw": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+        "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Oisín i dTír na nÓg, Dís, optional folktale, optional short story). Printed for 2A, 2B (page 8) and 3B (page 11)."
+      },
+      {
+        "page": 8,
+        "raw": "Déan plé ar an dá thréith is mó, dar leat, a bhaineann le hOisín mar a léirítear iad",
+        "decision": "2A(a): two traits discussed inside one 25-mark Eolas award (18 if only one trait); not a selection."
+      },
+      {
+        "page": 8,
+        "raw": "nó",
+        "decision": "Separates printed alternatives (2A/2B and 3A/3B on page 3; 2A(a)/(b), 2B(a)/(b), 3A(a)/(b), 3B(a)/(b) on pages 8–11); each is a whole route, never combined."
+      },
+      {
+        "page": 8,
+        "raw": "Prós Roghnach",
+        "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Oisín i dTír na nÓg, Dís, optional folktale, optional short story)."
+      },
+      {
+        "page": 8,
+        "raw": "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
+        "decision": "Restriction on content, not a route."
+      },
+      {
+        "page": 8,
+        "raw": "Maidir le scéal béaloidis roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé ar an",
+        "decision": "Optional folktale chosen by the candidate: open content inside one route (two traits of the main character)."
+      },
+      {
+        "page": 8,
+        "raw": "Maidir le gearrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, déan plé ar mheon",
+        "decision": "Optional short story chosen by the candidate: open content inside one route."
+      },
+      {
+        "page": 8,
+        "raw": "PRÓS AINMNITHE nó PRÓS ROGHNACH 30 marc",
+        "decision": "Section heading / structure statement, not a separate route."
+      },
+      {
+        "page": 9,
+        "raw": "Freagair Ceist 3A (Filíocht Ainmnithe) nó Ceist 3B (Filíocht Roghnach).",
+        "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+      },
+      {
+        "page": 9,
+        "raw": "Freagair do rogha ceann amháin de (a) nó (b).",
+        "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+      },
+      {
+        "page": 9,
+        "raw": "(Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.)",
+        "decision": "Required content within the selected poem route; “pointe amháin” is the minimum support, not a selection."
+      },
+      {
+        "page": 9,
+        "raw": "FILÍOCHT AINMNITHE nó FILÍOCHT ROGHNACH 30 marc",
+        "decision": "Section heading / structure statement, not a separate route."
+      },
+      {
+        "page": 9,
+        "raw": "(nó ar chrann ar bith)",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 10,
+        "raw": "nó",
+        "decision": "Separates printed alternatives (2A/2B and 3A/3B on page 3; 2A(a)/(b), 2B(a)/(b), 3A(a)/(b), 3B(a)/(b) on pages 8–11); each is a whole route, never combined."
+      },
+      {
+        "page": 10,
+        "raw": "(Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.)",
+        "decision": "Required content within the selected poem route; “pointe amháin” is the minimum support, not a selection."
+      },
+      {
+        "page": 10,
+        "raw": "(iii) Cén mheadaracht atá sa dán seo? Scríobh pointe amháin eolais faoin meadaracht seo",
+        "decision": "Required content within the selected poem route; “pointe amháin” is the minimum support, not a selection."
+      },
+      {
+        "page": 11,
+        "raw": "Filíocht Roghnach",
+        "decision": "Closed choice: Q3A or Q3B, then (a) or (b): four whole 30-mark routes, each answering (i), (ii) and (iii)."
+      },
+      {
+        "page": 11,
+        "raw": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+        "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach), then (a) or (b): four whole 30-mark routes (Oisín i dTír na nÓg, Dís, optional folktale, optional short story). Printed for 2A, 2B (page 8) and 3B (page 11)."
+      },
+      {
+        "page": 11,
+        "raw": "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach.",
+        "decision": "Restriction on content, not a route."
+      },
+      {
+        "page": 11,
+        "raw": "Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa,",
+        "decision": "Optional poem chosen by the candidate: open content inside one route."
+      },
+      {
+        "page": 11,
+        "raw": "(Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.)",
+        "decision": "Required content within the selected poem route; “pointe amháin” is the minimum support, not a selection."
+      },
+      {
+        "page": 11,
+        "raw": "nó",
+        "decision": "Separates printed alternatives (2A/2B and 3A/3B on page 3; 2A(a)/(b), 2B(a)/(b), 3A(a)/(b), 3B(a)/(b) on pages 8–11); each is a whole route, never combined."
+      },
+      {
+        "page": 11,
+        "raw": "Maidir le dán seanaimseartha roghnach (dán a cumadh sa tréimhse roimh 1850) a ndearna tú",
+        "decision": "Optional poem chosen by the candidate: open content inside one route."
+      },
+      {
+        "page": 11,
+        "raw": "Tabhair dhá phointe eolais faoin teicníc sin sa dán.",
+        "decision": "Required content within the selected poem route (technique 1 + two points 3 + 3); not a selection."
+      },
+      {
+        "page": 12,
+        "raw": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F) thíos.",
+        "decision": "Closed choose-one of 4A–4F: six whole 40-mark routes."
+      },
+      {
+        "page": 12,
+        "raw": "Freagair (i), (ii) agus (iii) thíos.",
+        "decision": "4F: all three parts required in one route."
+      },
+      {
+        "page": 12,
+        "raw": "Is leor dhá phointe eolais. Bíodh tagairtí cruinne agat do théacs an dáin i do fhreagra.",
+        "decision": "4F(iii): two required points inside one 9-mark part (5 + 4); not a selection."
+      },
+      {
+        "page": 13,
+        "raw": "Nó sin é deir sibh liom –",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 13,
+        "raw": "Níl baint agam le rogha bhúr gcroí –",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 13,
+        "raw": "Níl rogha agam i bhúr dtodhchaí",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 16,
+        "raw": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe",
+        "decision": "Copyright statement, not a task."
+      },
+      {
+        "page": 16,
+        "raw": "Chóipcheart agus Cearta Gaolmhara, 2000. Ní údaraítear aon úsáid dá éis chun aon chríche ach amháin",
+        "decision": "Copyright statement, not a task."
+      }
+    ],
+    "readingPracticeCardIds": [
+      "irish-2023-hl-p2-reading-a-q1-a",
+      "irish-2023-hl-p2-reading-a-q1-bi",
+      "irish-2023-hl-p2-reading-a-q1-bii",
+      "irish-2023-hl-p2-reading-a-q2-a",
+      "irish-2023-hl-p2-reading-a-q2-bi",
+      "irish-2023-hl-p2-reading-a-q2-bii",
+      "irish-2023-hl-p2-reading-a-q3-a",
+      "irish-2023-hl-p2-reading-a-q3-bi",
+      "irish-2023-hl-p2-reading-a-q3-bi-1",
+      "irish-2023-hl-p2-reading-a-q3-bi-2",
+      "irish-2023-hl-p2-reading-a-q3-bii",
+      "irish-2023-hl-p2-reading-a-q4-a",
+      "irish-2023-hl-p2-reading-a-q4-bi",
+      "irish-2023-hl-p2-reading-a-q4-bi-1",
+      "irish-2023-hl-p2-reading-a-q4-bi-2",
+      "irish-2023-hl-p2-reading-a-q4-bii",
+      "irish-2023-hl-p2-reading-a-q5-a",
+      "irish-2023-hl-p2-reading-a-q5-bi",
+      "irish-2023-hl-p2-reading-a-q5-bii",
+      "irish-2023-hl-p2-reading-a-q6-a",
+      "irish-2023-hl-p2-reading-a-q6-b",
+      "irish-2023-hl-p2-reading-a-q6-b-1",
+      "irish-2023-hl-p2-reading-a-q6-b-2",
+      "irish-2023-hl-p2-reading-b-q1-a",
+      "irish-2023-hl-p2-reading-b-q1-bi",
+      "irish-2023-hl-p2-reading-b-q1-bii",
+      "irish-2023-hl-p2-reading-b-q2-a",
+      "irish-2023-hl-p2-reading-b-q2-bi",
+      "irish-2023-hl-p2-reading-b-q2-bii",
+      "irish-2023-hl-p2-reading-b-q2-bii-1",
+      "irish-2023-hl-p2-reading-b-q2-bii-2",
+      "irish-2023-hl-p2-reading-b-q3-a",
+      "irish-2023-hl-p2-reading-b-q3-bi",
+      "irish-2023-hl-p2-reading-b-q3-bi-1",
+      "irish-2023-hl-p2-reading-b-q3-bi-2",
+      "irish-2023-hl-p2-reading-b-q3-bii",
+      "irish-2023-hl-p2-reading-b-q3-bii-1",
+      "irish-2023-hl-p2-reading-b-q3-bii-2",
+      "irish-2023-hl-p2-reading-b-q4-a",
+      "irish-2023-hl-p2-reading-b-q4-bi",
+      "irish-2023-hl-p2-reading-b-q4-bii",
+      "irish-2023-hl-p2-reading-b-q5-a",
+      "irish-2023-hl-p2-reading-b-q5-bi",
+      "irish-2023-hl-p2-reading-b-q5-bii",
+      "irish-2023-hl-p2-reading-b-q6-a",
+      "irish-2023-hl-p2-reading-b-q6-b"
+    ],
+    "legacyCardIds": [
+      "irish-2023-hl-p2-reading-a-q1",
+      "irish-2023-hl-p2-reading-a-q2",
+      "irish-2023-hl-p2-reading-a-q3",
+      "irish-2023-hl-p2-reading-a-q4",
+      "irish-2023-hl-p2-reading-a-q5",
+      "irish-2023-hl-p2-reading-a-q6",
+      "irish-2023-hl-p2-reading-b-q1",
+      "irish-2023-hl-p2-reading-b-q2",
+      "irish-2023-hl-p2-reading-b-q3",
+      "irish-2023-hl-p2-reading-b-q4",
+      "irish-2023-hl-p2-reading-b-q5",
+      "irish-2023-hl-p2-reading-b-q6",
+      "irish-2023-hl-p2-prose-2a-a",
+      "irish-2023-hl-p2-prose-2a-b",
+      "irish-2023-hl-p2-prose-2b-a",
+      "irish-2023-hl-p2-prose-2b-b",
+      "irish-2023-hl-p2-poetry-3a-a",
+      "irish-2023-hl-p2-poetry-3a-b",
+      "irish-2023-hl-p2-poetry-3b-a",
+      "irish-2023-hl-p2-poetry-3b-b",
+      "irish-2023-hl-p2-literature-4-a",
+      "irish-2023-hl-p2-literature-4-b",
+      "irish-2023-hl-p2-literature-4-c",
+      "irish-2023-hl-p2-literature-4-d",
+      "irish-2023-hl-p2-literature-4-e",
+      "irish-2023-hl-p2-literature-4-f"
+    ],
+    "readingWholeCardIds": [
+      "irish-2023-hl-p2-reading-a-q1",
+      "irish-2023-hl-p2-reading-a-q2",
+      "irish-2023-hl-p2-reading-a-q3",
+      "irish-2023-hl-p2-reading-a-q4",
+      "irish-2023-hl-p2-reading-a-q5",
+      "irish-2023-hl-p2-reading-a-q6",
+      "irish-2023-hl-p2-reading-b-q1",
+      "irish-2023-hl-p2-reading-b-q2",
+      "irish-2023-hl-p2-reading-b-q3",
+      "irish-2023-hl-p2-reading-b-q4",
+      "irish-2023-hl-p2-reading-b-q5",
+      "irish-2023-hl-p2-reading-b-q6"
+    ],
+    "examStructure": {
+      "readingA": 50,
+      "readingB": 50,
+      "prose": 30,
+      "poetry": 30,
+      "additionalLiterature": 40,
+      "total": 200
+    },
+    "nonPoolDecisions": [
+      "Reading: all twelve questions are required; each printed part is a practice card at its published tariff. “1 mharc + 1 mharc” answers expose one-mark slots (A3(b)(i), A4(b)(i), B2(b)(ii), B3(b)(i), B3(b)(ii)); “2 mharc + 1 mharc” items (A2(a), B2(a), B3(a), B4(a), B5(a) and both 6(a)) stay whole as 0/2/3.",
+      "A 6(b) has two independent six-mark traits (trait 2 + support 4) with practice slots; B 6(b) is an opinion (2) and two supported points (5 + 5) inside one response (no slots, as in 2026 B 6(b)). Both must be in the candidate’s own words.",
+      "Single-answer parts allow only the mark values the scheme prints for them (0, the printed partials and the full tariff); A3(a) prints its partial as “bronntar 2 mharc”.",
+      "Prose, poetry and Q4 choices are closed printed routes (4 + 4 + 6) and were already carded (IDs retained); the optional folktale, short story or poem itself is open content chosen by the candidate.",
+      "Scheme lists of accepted points and supporting notes are indicative answer keys, not route pools.",
+      "The modified marking scheme changes assessment for eligible candidates, not the printed tasks."
+    ],
+    "openIssues": [],
+    "caveats": [
+      "Paper 2 = 200: Léamhthuiscint A 50 + B 50 (Q1–5 at 7 = (a) 3 + (b)(i) 2 + (b)(ii) 2; Q6 at 15 = (a) 3 + (b) 12), Prós 30, Filíocht 30, Litríocht Bhreise 40.",
+      "Reading A “Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh” (paper 4–5, scheme PDF 19–22); B “2022: Bliain Eorpach na hÓige” (paper 6–7, scheme PDF 22–26).",
+      "Literature language: 5 marks for Gaeilge in every literature answer (scheme PDF 28); prose 25 Eolas (18 column for a one-aspect answer); poetry printed (i) 15, (ii) 6, (iii) 9 on the paper, assessed as Eolas 13, 5, 7 plus Gaeilge 5 once; Q4 Eolas 35 (25 for 4A with one character); 4F printed (i) 20, (ii) 10, (iii) 10, assessed as Eolas 19, 7, 9 (5 + 4) plus Gaeilge 5.",
+      "Paper vs scheme wording: A1(b)(ii) the scheme adds “soir” (cuairt ghearr soir); B6(b) the paper says “Bliain Eorpach na hÓige 2022”, the scheme omits “2022”; 4F(iii) the paper adds “sa dán”. Cards keep the paper wording.",
+      "Scheme layout: the text layer stores each poetry band table (Plé 11/13, Marc as 5) and the 4F Marc as 7 table after the following sub-question; the generator returns each table to the sub-question it is printed beside.",
+      "Cover (PDF 1, printed as an image): the 2023 papers were adjusted to compensate for COVID-19 learning disruption. The cards follow the printed 2023 structure; the note offers no choice.",
+      "Legacy corrections (IDs, totals and topics unchanged): the twelve whole reading questions each had one undivided criterion; the four poetry routes had one undivided 25-mark Eolas criterion, and for both prescribed poems (3A) its guidance began at (ii), with the (i) scheme missing; every literature route carried a paraphrased Gaeilge band (“sásúil”) instead of the printed table. All now carry the lifted 2023 scheme text and part tariffs."
+    ],
+    "boundaries": "12 retained whole reading questions with 34 published parts, 10 independent one-mark answer slots and 2 six-mark trait slots; 4 retained prose, 4 poetry and 6 additional-literature routes."
+  },
+  "cards": [
+    {
+      "id": "irish-2023-hl-p2-reading-a-q1-a",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-1-a",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 1(a)",
+      "questionText": "1(a) Cén fáth a bhfuil clú agus cáil ar Tom Crean? (Alt 1)",
+      "totalMarks": 3,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q1-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. (a) Cén fáth a bhfuil clú agus cáil ar Tom Crean? (Alt 1) {3 mharc} • Mar gheall ar na trí thuras taiscéalaíochta a rinne sé go dtí an tAntartach i mblianta tosaigh an fichiú haois = 3 mharc • Mar gheall ar na trí thuras taiscéalaíochta a rinne sé go dtí an tAntartach = 3 mharc • Mar gheall ar na trí thuras taiscéalaíochta a rinne sé i mblianta tosaigh an fichiú haois = 2 mharc • Mar gheall ar na trí thuras taiscéalaíochta a rinne sé = 2 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q1-bi",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-1-bi",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 1(b)(i)",
+      "questionText": "1(b)(i) Scríobh síos cineál amháin taighde a bheidh ar siúl ag na heolaithe mara ar an RV Tom Crean. (Alt 1)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q1-bi",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Scríobh síos cineál amháin taighde a bheidh ar siúl ag na heolaithe mara ar an RV Tom Crean. (Alt 1) (Cineál amháin taighde) {2 mharc} • Déanfaidh siad suirbhéireacht ar chineálacha éagsúla iasc = 2 mharc • Déanfaidh siad monatóireacht ar chomhshaol na mara = 2 mharc • Déanfaidh siad suirbhéireacht = 1 mharc • Suirbhéireacht = 1 mharc • Déanfaidh siad monatóireacht = 1 mharc • Monatóireacht = 1 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q1-bii",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-1-bii",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 1(b)(ii)",
+      "questionText": "1(b)(ii) Cén fáth ar thug an RV Tom Crean cuairt ghearr ar an Min Aird an lá tar éis a choimisiúnaithe? (Alt 1)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q1-bii",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cén fáth ar thug an RV Tom Crean cuairt ghearr soir ar an Min Aird an lá tar éis a choimisiúnaithe? (Alt 1) {2 mharc} • Ba ansin a chuir Tom Crean tús lena chuid aistear farraige féin (in 1893) = 2 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q2-a",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-2-a",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 2(a)",
+      "questionText": "2(a) Scríobh síos dhá phointe eolais faoi mhuintir Tom Crean agus é ag fás aníos gar d’Abhainn an Scáil in iarthar Chiarraí. (Alt 2)",
+      "totalMarks": 3,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q2-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. (a) Scríobh síos dhá phointe eolais faoi mhuintir Tom Crean agus é ag fás aníos gar d’Abhainn an Scáil in iarthar Chiarraí. (Alt 2) (Dhá phointe eolais) {3 mharc: 2 mharc + 1 mharc} An chéad phointe eolais atá ceart = 2 mharc; an dara pointe eolais atá ceart = 1 mharc • Ba dhuine d’aon duine dhéag clainne é • Bhí feirm bheag ag a mhuintir • (Cosúil le formhór na dteaghlach eile sa cheantar), bhí siad ag síorstreachailt leis an mbochtaineacht • Bhí cuimhne láidir sa phobal ar an nGorta Mór fós",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
+            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q2-bi",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-2-bi",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 2(b)(i)",
+      "questionText": "2(b)(i) Cén fáth ar mheall gairm an Chabhlaigh Ríoga go leor fear óg mar Tom Crean ag an am sin? (Alt 2)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q2-bi",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Cén fáth ar mheall gairm an Chabhlaigh Ríoga go leor fear óg mar Tom Crean ag an am sin? (Alt 2) {2 mharc} • Deis a bhí ann dóibh éalú ón saol ainnis sa bhaile = 2 mharc • Deis a bhí ann dóibh saibhreas a lorg i bhfad i gcéin = 2 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q2-bii",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-2-bii",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 2(b)(ii)",
+      "questionText": "2(b)(ii) Cén aidhm a bhí ag Robert Falcon Scott agus é ar a bhealach go dtí an tAntartach ar an long thaiscéalaíochta, Discovery? (Alt 2)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q2-bii",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 19,
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cén aidhm a bhí ag Robert Falcon Scott agus é ar a bhealach go dtí an tAntartach ar an long thaiscéalaíochta, Discovery? (Alt 2) {2 mharc} • A bheith ar an gcéad duine a leagfadh cos ar an Mol Theas = 2 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q3-a",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-3-a",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 3(a)",
+      "questionText": "3(a) Cad a spreag Tom Crean le dul ar an turas taiscéalaíochta ar an Discovery? (Alt 3)",
+      "totalMarks": 3,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q3-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "3. (a) Cad a spreag Tom Crean le dul ar an turas taiscéalaíochta ar an Discovery? (Alt 3) {3 mharc} • Fonn eachtraíochta a spreag é agus fonn taisteal chuig críocha anaithnide = 3 mharc Mura mbíonn ach ceann amháin den dá mhír eolais: fonn eachtraíochta nó fonn taisteal chuig críocha anaithnide sa fhreagra, bronntar 2 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q3-bi",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-3-bi",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 3(b)(i)",
+      "questionText": "3(b)(i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q3-bi",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Bhí ualach an-trom le tarraingt acu (ar thalamh reoite) • Bhí an aimsir feanntach fuar • Bhí a mbeatha i mbaol (i rith an ama) • Bhí eagla orthu go minic go dtitfeadh siad trí na scoilteanna san oighear",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q3-bi-1",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-3-bi-1",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 3(b)(i) · Freagra 1",
+      "questionText": "3(b)(i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q3-bi-1",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi-1",
+          "label": "Freagra 1",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Bhí ualach an-trom le tarraingt acu (ar thalamh reoite) • Bhí an aimsir feanntach fuar • Bhí a mbeatha i mbaol (i rith an ama) • Bhí eagla orthu go minic go dtitfeadh siad trí na scoilteanna san oighear",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q3-bi-2",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-3-bi-2",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 3(b)(i) · Freagra 2",
+      "questionText": "3(b)(i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q3-bi-2",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi-2",
+          "label": "Freagra 2",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Bhí ualach an-trom le tarraingt acu (ar thalamh reoite) • Bhí an aimsir feanntach fuar • Bhí a mbeatha i mbaol (i rith an ama) • Bhí eagla orthu go minic go dtitfeadh siad trí na scoilteanna san oighear",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q3-bii",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-3-bii",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 3(b)(ii)",
+      "questionText": "3(b)(ii) Cén tubaiste a bhain do Tom Crean lá amháin agus é ag cabhrú leis an long a scaoileadh? (Alt 3)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q3-bii",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cén tubaiste a bhain do Tom Crean lá amháin agus é ag cabhrú leis an long a scaoileadh? (Alt 3) {2 mharc} • Ba bheag nár cailleadh é nuair a thit sé tríd an oighear isteach san uisce thíos faoi, ach tarraingíodh slán é = 2 mharc • Thit sé tríd an oighear = 2 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q4-a",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-4-a",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 4(a)",
+      "questionText": "4(a) Cén obair a rinne Tom Crean agus na fir eile nuair a thaistil siad amach ón mbunchampa leis na capaillíní a bhí leo? (Alt 4)",
+      "totalMarks": 3,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q4-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "4. (a) Cén obair a rinne Tom Crean agus na fir eile nuair a thaistil siad amach ón mbunchampa leis na capaillíní a bhí leo? (Alt 4) {3 mharc} • Leag siad soláthairtí bia agus fearas in ionaid stórais ar an mbealach chuig an Mol Theas",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q4-bi",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-4-bi",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 4(b)(i)",
+      "questionText": "4(b)(i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q4-bi",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Shiúil sé féin chuig an mbunchampa • Shiúil sé 56 ciliméadar • Shiúil sé trasna na hoighearmhá • Shiúil sé ar feadh beagnach ocht n-uair déag an chloig • Gan le hithe aige ach trí bhriosca agus dhá phíosa seacláide",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q4-bi-1",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-4-bi-1",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 4(b)(i) · Freagra 1",
+      "questionText": "4(b)(i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q4-bi-1",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi-1",
+          "label": "Freagra 1",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Shiúil sé féin chuig an mbunchampa • Shiúil sé 56 ciliméadar • Shiúil sé trasna na hoighearmhá • Shiúil sé ar feadh beagnach ocht n-uair déag an chloig • Gan le hithe aige ach trí bhriosca agus dhá phíosa seacláide",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q4-bi-2",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-4-bi-2",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 4(b)(i) · Freagra 2",
+      "questionText": "4(b)(i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q4-bi-2",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi-2",
+          "label": "Freagra 2",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Shiúil sé féin chuig an mbunchampa • Shiúil sé 56 ciliméadar • Shiúil sé trasna na hoighearmhá • Shiúil sé ar feadh beagnach ocht n-uair déag an chloig • Gan le hithe aige ach trí bhriosca agus dhá phíosa seacláide",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q4-bii",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-4-bii",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 4(b)(ii)",
+      "questionText": "4(b)(ii) Cén fáth ar bronnadh bonn Rí Albert ar Tom Crean i 1913? (Alt 4)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q4-bii",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 20,
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cén fáth ar bronnadh bonn Rí Albert ar Tom Crean i 1913? (Alt 4) {2 mharc} • I ngeall ar a ghaiscí nuair a shábháil sé beatha a chomrádaí, Teddy Evans = 2 mharc • I ngeall ar a ghaiscí nuair a shábháil sé beatha a chomrádaí = 2 mharc • I ngeall ar a ghaiscí nuair a shábháil sé beatha Teddy Evans = 2 mharc • I ngeall ar a ghaiscí = 1 mharc • Shábháil sé beatha a chomrádaí = 1 mharc • Shábháil sé beatha Teddy Evans = 1 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q5-a",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-5-a",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 5(a)",
+      "questionText": "5(a) Cad a theastaigh ó Ernest Shackleton a dhéanamh ar an turas taiscéalaíochta go dtí an tAntartach ar an long Endurance i 1914? (Alt 5)",
+      "totalMarks": 3,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q5-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 21,
+      "schemePages": [
+        21
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "5. (a) Cad a theastaigh ó Ernest Shackleton a dhéanamh ar an turas taiscéalaíochta go dtí an tAntartach ar an long Endurance i 1914? (Alt 5) {3 mharc} • Siúl trasna mhór-roinn an Antartaigh ó chósta go cósta, turas 3,000 ciliméadar nach ndearnadh cheana = 3 mharc • Siúl trasna mhór-roinn an Antartaigh, turas nach ndearnadh cheana = 3 mharc • Siúl trasna mhór-roinn an Antartaigh = 2 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q5-bi",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-5-bi",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 5(b)(i)",
+      "questionText": "5(b)(i) Tabhair pointe amháin eolais faoin turas farraige a rinne Shackleton agus a chriú ó Oileán Eilifinte go Seoirsia Theas agus iad ag lorg cabhrach. (Alt 5)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q5-bi",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 21,
+      "schemePages": [
+        21
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Tabhair pointe amháin eolais faoin turas farraige a rinne Shackleton agus a chriú ó Oileán Eilifinte go Seoirsia Theas agus iad ag lorg cabhrach. (Alt 5) {2 mharc} • Rinne siad é i mbád beag iomartha • Turas 1,300 ciliméadar a bhí ann • Chaith siad seacht lá dhéag ar an bhfarraige (gharbh dhainséarach)",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q5-bii",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-5-bii",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 5(b)(ii)",
+      "questionText": "5(b)(ii) Cén fáth a ndeirtear sa sliocht go mairfidh cáil Tom Crean mar laoch Antartach go deo? (Alt 5)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q5-bii",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 21,
+      "schemePages": [
+        21
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cén fáth a ndeirtear sa sliocht go mairfidh cáil Tom Crean mar laoch Antartach go deo? (Alt 5) {2 mharc} • Tá a ainm ar oighearshruth ar Sheoirsia Theas, ar chnoc san Antartach agus, anois, ar bhád taighde in Éirinn = 2 mharc • Tá a ainm ar oighearshruth ar Sheoirsia Theas = 2 mharc • Tá a ainm ar chnoc san Antartach = 2 mharc • Tá a ainm ar bhád taighde in Éirinn = 2 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q6-a",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-6-a",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 6(a)",
+      "questionText": "6(a) Aimsigh sampla de bhriathar san Aimsir Fháistineach in Alt 1 agus sampla d’ainmfhocal firinscneach sa tuiseal ginideach uatha in Alt 3.",
+      "totalMarks": 3,
+      "topicId": "irish-3-3",
+      "additionalTopicIds": [
+        "irish-3-0"
+      ],
+      "conceptId": "irish-hl-p2-reading-a-q6-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 21,
+      "schemePages": [
+        21
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "grammar",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "6. (a) Aimsigh sampla de bhriathar san Aimsir Fháistineach in Alt 1 agus sampla d’ainmfhocal firinscneach sa tuiseal ginideach uatha in Alt 3. {3 mharc: 2 mharc + 1 mharc} Tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Sampla de bhriathar san Aimsir Fháistineach in Alt 1: (a) bheidh; beidh; bainfidh; déanfaidh Sampla d’ainmfhocal firinscneach sa tuiseal ginideach uatha in Alt 3: adhmaid; Antartaigh; oighir; sleamhnáin; ama",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
+            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q6-b",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-6-b",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 6(b)",
+      "questionText": "6(b) Bunaithe ar an eolas sa sliocht thuas, déan plé ar dhá thréith de chuid Tom Crean, dar leat. Bíodh sampla amháin ón sliocht agat, i d’fhocail féin, ag tacú le gach tréith a luann tú i do fhreagra. (Is leor 60 focal.)",
+      "totalMarks": 12,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q6-b",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 21,
+      "schemePages": [
+        21,
+        22
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "trait-1",
+          "label": "Tréith 1",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Bunaithe ar an eolas sa sliocht thuas, déan plé ar dhá thréith de chuid Tom Crean, dar leat. Bíodh sampla amháin ón sliocht agat, i d’fhocail féin, ag tacú le gach tréith a luann tú i do fhreagra. (Is leor 60 focal.) {6 mharc + 6 mharc} Dhá thréith = 6 mharc + 6 mharc Tréith 1 a lua = 2 mharc + sampla den tréith sin (eolas cruinn as an sliocht mar thacú léi) = 4 mharc Tréith 2 a lua = 2 mharc + sampla den tréith sin (eolas cruinn as an sliocht mar thacú léi) = 4 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Gan tréith(e) luaite, ní féidir glacadh leis an sampla/na samplaí. Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. • Cróga: Tharraing Tom agus a chomhghleacaithe ualach bia agus earraí ar thalamh a bhí crua ón sioc agus bhí sé thar a bheith contúirteach freisin… • Dílis: Shiúil sé ina aonar ar feadh 56 ciliméadar gan mórán bia aige chun cabhair a fháil dá chomhghleacaí a bhí breoite… • Díograiseach: Chaith sé 17 lá ag iomramh ar an bhfarraige le ceathrar eile agus ansin ag siúl ar shléibhte agus ar an leac oighir chun teacht ar chabhair… • Dóchasach: Nuair a d’fhág sé an saol bocht sa bhaile chun dul sa Chabhlach Ríoga bhí sé dóchasach go n-éireodh leis dul chun cinn a dhéanamh sa saol… • Bhí Crean ag súil go roghnófaí é ar fhoireann Scott sa pháirt dheireanach den turas chuig an Mol…níor roghnaíodh é agus bhí an-díomá air… • Oibrí foirne ba ea Tom Crean a d’oibrigh go maith lena chomh-mhairneálaigh… Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar thréithe eile agus ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais.",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        },
+        {
+          "id": "trait-2",
+          "label": "Tréith 2",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Bunaithe ar an eolas sa sliocht thuas, déan plé ar dhá thréith de chuid Tom Crean, dar leat. Bíodh sampla amháin ón sliocht agat, i d’fhocail féin, ag tacú le gach tréith a luann tú i do fhreagra. (Is leor 60 focal.) {6 mharc + 6 mharc} Dhá thréith = 6 mharc + 6 mharc Tréith 1 a lua = 2 mharc + sampla den tréith sin (eolas cruinn as an sliocht mar thacú léi) = 4 mharc Tréith 2 a lua = 2 mharc + sampla den tréith sin (eolas cruinn as an sliocht mar thacú léi) = 4 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Gan tréith(e) luaite, ní féidir glacadh leis an sampla/na samplaí. Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. • Cróga: Tharraing Tom agus a chomhghleacaithe ualach bia agus earraí ar thalamh a bhí crua ón sioc agus bhí sé thar a bheith contúirteach freisin… • Dílis: Shiúil sé ina aonar ar feadh 56 ciliméadar gan mórán bia aige chun cabhair a fháil dá chomhghleacaí a bhí breoite… • Díograiseach: Chaith sé 17 lá ag iomramh ar an bhfarraige le ceathrar eile agus ansin ag siúl ar shléibhte agus ar an leac oighir chun teacht ar chabhair… • Dóchasach: Nuair a d’fhág sé an saol bocht sa bhaile chun dul sa Chabhlach Ríoga bhí sé dóchasach go n-éireodh leis dul chun cinn a dhéanamh sa saol… • Bhí Crean ag súil go roghnófaí é ar fhoireann Scott sa pháirt dheireanach den turas chuig an Mol…níor roghnaíodh é agus bhí an-díomá air… • Oibrí foirne ba ea Tom Crean a d’oibrigh go maith lena chomh-mhairneálaigh… Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar thréithe eile agus ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais.",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q6-b-1",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-6-b-1",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 6(b) · Tréith 1",
+      "questionText": "6(b) Bunaithe ar an eolas sa sliocht thuas, déan plé ar dhá thréith de chuid Tom Crean, dar leat. Bíodh sampla amháin ón sliocht agat, i d’fhocail féin, ag tacú le gach tréith a luann tú i do fhreagra. (Is leor 60 focal.) Don chárta seo: déan plé ar thréith amháin agus tabhair sampla amháin ón sliocht, i d’fhocail féin (tréith 1, 6 mharc).",
+      "totalMarks": 6,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q6-b-1",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 21,
+      "schemePages": [
+        21,
+        22
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "trait-1",
+          "label": "Tréith 1",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Bunaithe ar an eolas sa sliocht thuas, déan plé ar dhá thréith de chuid Tom Crean, dar leat. Bíodh sampla amháin ón sliocht agat, i d’fhocail féin, ag tacú le gach tréith a luann tú i do fhreagra. (Is leor 60 focal.) {6 mharc + 6 mharc} Dhá thréith = 6 mharc + 6 mharc Tréith 1 a lua = 2 mharc + sampla den tréith sin (eolas cruinn as an sliocht mar thacú léi) = 4 mharc Tréith 2 a lua = 2 mharc + sampla den tréith sin (eolas cruinn as an sliocht mar thacú léi) = 4 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Gan tréith(e) luaite, ní féidir glacadh leis an sampla/na samplaí. Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. • Cróga: Tharraing Tom agus a chomhghleacaithe ualach bia agus earraí ar thalamh a bhí crua ón sioc agus bhí sé thar a bheith contúirteach freisin… • Dílis: Shiúil sé ina aonar ar feadh 56 ciliméadar gan mórán bia aige chun cabhair a fháil dá chomhghleacaí a bhí breoite… • Díograiseach: Chaith sé 17 lá ag iomramh ar an bhfarraige le ceathrar eile agus ansin ag siúl ar shléibhte agus ar an leac oighir chun teacht ar chabhair… • Dóchasach: Nuair a d’fhág sé an saol bocht sa bhaile chun dul sa Chabhlach Ríoga bhí sé dóchasach go n-éireodh leis dul chun cinn a dhéanamh sa saol… • Bhí Crean ag súil go roghnófaí é ar fhoireann Scott sa pháirt dheireanach den turas chuig an Mol…níor roghnaíodh é agus bhí an-díomá air… • Oibrí foirne ba ea Tom Crean a d’oibrigh go maith lena chomh-mhairneálaigh… Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar thréithe eile agus ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais.",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "The scheme prices the two traits 6 + 6 independently (trait 2 + support 4); this card practises one of them. SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-a-q6-b-2",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-6-b-2",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 6(b) · Tréith 2",
+      "questionText": "6(b) Bunaithe ar an eolas sa sliocht thuas, déan plé ar dhá thréith de chuid Tom Crean, dar leat. Bíodh sampla amháin ón sliocht agat, i d’fhocail féin, ag tacú le gach tréith a luann tú i do fhreagra. (Is leor 60 focal.) Don chárta seo: déan plé ar thréith amháin agus tabhair sampla amháin ón sliocht, i d’fhocail féin (tréith 2, 6 mharc).",
+      "totalMarks": 6,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-hl-p2-reading-a-q6-b-2",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 21,
+      "schemePages": [
+        21,
+        22
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "trait-2",
+          "label": "Tréith 2",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Bunaithe ar an eolas sa sliocht thuas, déan plé ar dhá thréith de chuid Tom Crean, dar leat. Bíodh sampla amháin ón sliocht agat, i d’fhocail féin, ag tacú le gach tréith a luann tú i do fhreagra. (Is leor 60 focal.) {6 mharc + 6 mharc} Dhá thréith = 6 mharc + 6 mharc Tréith 1 a lua = 2 mharc + sampla den tréith sin (eolas cruinn as an sliocht mar thacú léi) = 4 mharc Tréith 2 a lua = 2 mharc + sampla den tréith sin (eolas cruinn as an sliocht mar thacú léi) = 4 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Gan tréith(e) luaite, ní féidir glacadh leis an sampla/na samplaí. Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. • Cróga: Tharraing Tom agus a chomhghleacaithe ualach bia agus earraí ar thalamh a bhí crua ón sioc agus bhí sé thar a bheith contúirteach freisin… • Dílis: Shiúil sé ina aonar ar feadh 56 ciliméadar gan mórán bia aige chun cabhair a fháil dá chomhghleacaí a bhí breoite… • Díograiseach: Chaith sé 17 lá ag iomramh ar an bhfarraige le ceathrar eile agus ansin ag siúl ar shléibhte agus ar an leac oighir chun teacht ar chabhair… • Dóchasach: Nuair a d’fhág sé an saol bocht sa bhaile chun dul sa Chabhlach Ríoga bhí sé dóchasach go n-éireodh leis dul chun cinn a dhéanamh sa saol… • Bhí Crean ag súil go roghnófaí é ar fhoireann Scott sa pháirt dheireanach den turas chuig an Mol…níor roghnaíodh é agus bhí an-díomá air… • Oibrí foirne ba ea Tom Crean a d’oibrigh go maith lena chomh-mhairneálaigh… Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar thréithe eile agus ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais.",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "The scheme prices the two traits 6 + 6 independently (trait 2 + support 4); this card practises one of them. SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Tom Crean – Taiscéalaí Ciarraíoch an Antartaigh",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q1-a",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-1-a",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 1(a)",
+      "questionText": "1(a) Cén fáth a bhfuil fís agus rannpháirtíocht na nEorpach óg ríthábhachtach, de réir an phreasráitis a chuir an Coimisiún Eorpach amach? (Alt 1)",
+      "totalMarks": 3,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q1-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 22,
+      "schemePages": [
+        22
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. (a) Cén fáth a bhfuil fís agus rannpháirtíocht na nEorpach óg ríthábhachtach, de réir an phreasráitis a chuir an Coimisiún Eorpach amach? (Alt 1) {3 mharc} • Chun todhchaí níos fearr a thógáil, todhchaí a bheidh níos glaise, níos cuimsithí agus níos digití = 3 mharc • Chun todhchaí níos fearr a thógáil agus ceann amháin díobh seo: todhchaí a bheidh níos glaise nó todhchaí a bheidh níos cuimsithí nó todhchaí a bheidh níos digití = 3 mharc • Chun todhchaí níos fearr a thógáil = 2 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q1-bi",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-1-bi",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 1(b)(i)",
+      "questionText": "1(b)(i) Scríobh síos príomhchuspóir amháin a leagadh amach do Bhliain Eorpach na hÓige. (Alt 1)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q1-bi",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 22,
+      "schemePages": [
+        22
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Scríobh síos príomhchuspóir amháin a leagadh amach do Bhliain Eorpach na hÓige. (Alt 1) (Príomhchuspóir amháin) {2 mharc} • Daoine óga a spreagadh lena dtuairimí a roinnt chun go gcuirfear san áireamh iad nuair a bhíonn beartais an Aontais Eorpaigh á gceapadh = 2 mharc • Cabhrú le daoine óga a bheith ina saoránaigh rannpháirteacha de chuid an Aontais Eorpaigh = 2 mharc • Na deiseanna atá ar fáil do dhaoine óga san Aontas Eorpach a chur chun cinn = 2 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q1-bii",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-1-bii",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 1(b)(ii)",
+      "questionText": "1(b)(ii) Cén fáth ar chóir daoine óga a mholadh, dar le Mariya Gabriel? (Alt 1)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q1-bii",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 22,
+      "schemePages": [
+        22
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cén fáth ar chóir daoine óga a mholadh, dar le Mariya Gabriel? (Alt 1) {2 mharc} • As a ndúthracht agus iad gníomhach ag seasamh i mbealaí nua ar son na rudaí a gcreideann siad iontu = 2 mharc • As a ndúthracht = 1 mharc • Iad gníomhach ag seasamh i mbealaí nua ar son na rudaí a gcreideann siad iontu = 1 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q2-a",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-2-a",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 2(a)",
+      "questionText": "2(a) Luaigh dhá aidhm de chuid na n-imeachtaí a d’eagraigh an eagraíocht Léargas in Éirinn le linn Bhliain Eorpach na hÓige. (Alt 2)",
+      "totalMarks": 3,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q2-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 23,
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. (a) Luaigh dhá aidhm de chuid na n-imeachtaí a d’eagraigh an eagraíocht Léargas in Éirinn le linn Bhliain Eorpach na hÓige. (Alt 2) (Dhá aidhm) {3 mharc: 2 mharc + 1 mharc} An chéad aidhm atá ceart = 2 mharc; an dara haidhm atá ceart = 1 mharc • Deis a thabhairt do dhaoine óga as gach cúlra teacht le chéile agus a gcuid smaointe faoi na dúshláin mhóra atá rompu sa todhchaí a chur in iúl = dhá aidhm • Spéis daoine óga a mhúscailt ina bheith mar thoscairí ag comhdhálacha éagsúla na hóige = aidhm amháin • Daoine óga a spreagadh le bheith ina ngníomhairí ar son an athraithe = aidhm amháin",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
+            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q2-bi",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-2-bi",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(i)",
+      "questionText": "2(b)(i) Céard a mhínigh Maria Walsh do na daoine óga a bhí i láthair ag an gcomhdháil i mí Feabhra? (Alt 2)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q2-bi",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 23,
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Céard a mhínigh Maria Walsh do na daoine óga a bhí i láthair ag an gcomhdháil i mí Feabhra? (Alt 2) {2 mharc} • Cé chomh tábhachtach is a bheadh sé níos mó daoine óga a bheith ina n-iarrthóirí sna toghcháin Eorpacha agus áitiúla in 2024 = 2 mharc • Cé chomh tábhachtach is a bheadh sé níos mó daoine óga a bheith ina n-iarrthóirí sna toghcháin Eorpacha nó áitiúla in 2024 = 2 mharc • Cé chomh tábhachtach is a bheadh sé níos mó daoine óga a bheith ina n-iarrthóirí sna toghcháin Eorpacha nó áitiúla = 1 mharc (gan ‘in 2024’ sa fhreagra) • Cé chomh tábhachtach is a bheadh sé níos mó daoine óga a bheith páirteach san fheachtasaíocht ar son iarrthóirí eile sna toghcháin Eorpacha agus áitiúla in 2024 = 2 mharc • Cé chomh tábhachtach is a bheadh sé níos mó daoine óga a bheith páirteach san fheachtasaíocht ar son iarrthóirí eile sna toghcháin Eorpacha nó áitiúla = 1 mharc (gan ‘in 2024’ sa fhreagra)",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q2-bii",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-2-bii",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(ii)",
+      "questionText": "2(b)(ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q2-bii",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 23,
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2) (Dhá ábhar) {2 mharc: 1 mharc + 1 mharc} • An cuimsiú = 1 mharc • An comhionannas = 1 mharc • An t-athrú aeráide = 1 mharc • An taisteal inbhuanaithe = 1 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q2-bii-1",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-2-bii-1",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(ii) · Freagra 1",
+      "questionText": "2(b)(ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q2-bii-1",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 23,
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii-1",
+          "label": "Freagra 1",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2) (Dhá ábhar) {2 mharc: 1 mharc + 1 mharc} • An cuimsiú = 1 mharc • An comhionannas = 1 mharc • An t-athrú aeráide = 1 mharc • An taisteal inbhuanaithe = 1 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q2-bii-2",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-2-bii-2",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(ii) · Freagra 2",
+      "questionText": "2(b)(ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q2-bii-2",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 23,
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii-2",
+          "label": "Freagra 2",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2) (Dhá ábhar) {2 mharc: 1 mharc + 1 mharc} • An cuimsiú = 1 mharc • An comhionannas = 1 mharc • An t-athrú aeráide = 1 mharc • An taisteal inbhuanaithe = 1 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q3-a",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-3-a",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 3(a)",
+      "questionText": "3(a) Scríobh síos dhá shlí a mbaineann mic léinn na n-institiúidí tríú leibhéal tairbhe as clár Erasmus+. (Alt 3)",
+      "totalMarks": 3,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q3-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 23,
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "3. (a) Scríobh síos dhá shlí a mbaineann mic léinn na n-institiúidí tríú leibhéal tairbhe as clár Erasmus+. (Alt 3) (Dhá shlí) {3 mharc: 2 mharc + 1 mharc} An chéad slí atá ceart = 2 mharc; an dara slí atá ceart = 1 mharc • Forbraítear féinmhuinín na mac léinn • Foghlaimíonn siad faoi chultúir éagsúla • Cruthaítear caidreamh gairmiúil le daoine ó thíortha eile • Neartaítear a bhféiniúlacht Eorpach",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
+            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q3-bi",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-3-bi",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(i)",
+      "questionText": "3(b)(i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q3-bi",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 24,
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Tugann na daoine óga seo cúnamh sna háiteanna is mó a bhfuil gá leis • Cuidíonn siad leis na pobail siúd atá i ngátar • Déanann siad leas na bpobal sin atá i ngátar",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q3-bi-1",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-3-bi-1",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(i) · Freagra 1",
+      "questionText": "3(b)(i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q3-bi-1",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 24,
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi-1",
+          "label": "Freagra 1",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Tugann na daoine óga seo cúnamh sna háiteanna is mó a bhfuil gá leis • Cuidíonn siad leis na pobail siúd atá i ngátar • Déanann siad leas na bpobal sin atá i ngátar",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q3-bi-2",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-3-bi-2",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(i) · Freagra 2",
+      "questionText": "3(b)(i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q3-bi-2",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 24,
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi-2",
+          "label": "Freagra 2",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Tugann na daoine óga seo cúnamh sna háiteanna is mó a bhfuil gá leis • Cuidíonn siad leis na pobail siúd atá i ngátar • Déanann siad leas na bpobal sin atá i ngátar",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q3-bii",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-3-bii",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(ii)",
+      "questionText": "3(b)(ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q3-bii",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 24,
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3) (Dhá rud) {2 mharc: 1 mharc + 1 mharc} An chéad rud atá ceart = 1 mharc; an dara rud atá ceart = 1 mharc • Foghlaimíonn siad faoi ról Pharlaimint na hEorpa • Foghlaimíonn siad faoina gcearta mar shaoránaigh de chuid an Aontais Eorpaigh",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q3-bii-1",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-3-bii-1",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(ii) · Freagra 1",
+      "questionText": "3(b)(ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q3-bii-1",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 24,
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii-1",
+          "label": "Freagra 1",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3) (Dhá rud) {2 mharc: 1 mharc + 1 mharc} An chéad rud atá ceart = 1 mharc; an dara rud atá ceart = 1 mharc • Foghlaimíonn siad faoi ról Pharlaimint na hEorpa • Foghlaimíonn siad faoina gcearta mar shaoránaigh de chuid an Aontais Eorpaigh",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q3-bii-2",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-3-bii-2",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(ii) · Freagra 2",
+      "questionText": "3(b)(ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q3-bii-2",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 24,
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii-2",
+          "label": "Freagra 2",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3) (Dhá rud) {2 mharc: 1 mharc + 1 mharc} An chéad rud atá ceart = 1 mharc; an dara rud atá ceart = 1 mharc • Foghlaimíonn siad faoi ról Pharlaimint na hEorpa • Foghlaimíonn siad faoina gcearta mar shaoránaigh de chuid an Aontais Eorpaigh",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q4-a",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-4-a",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 4(a)",
+      "questionText": "4(a) Scríobh síos dhá rud a dúirt Harry McCann faoin gcaoi ar chuir paindéim Covid-19 isteach ar shaol na hóige. (Alt 4)",
+      "totalMarks": 3,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q4-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 24,
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "4. (a) Scríobh síos dhá rud a dúirt Harry McCann faoin gcaoi ar chuir paindéim Covid-19 isteach ar shaol na hóige. (Alt 4) (Dhá rud) {3 mharc: 2 mharc + 1 mharc} An chéad rud atá ceart = 2 mharc; an dara rud atá ceart = 1 mharc • Bhí ar dhaoine óga go leor íobairtí a dhéanamh = rud amháin • Bhí ar dhaoine óga a saol, a n-ionchais agus a n-aislingí a chur ar athlá = dhá rud • Bhí ar dhaoine óga a saol a chur ar athlá = rud amháin • Bhí ar dhaoine óga a n-ionchais a chur ar athlá = rud amháin • Bhí ar dhaoine óga a n-aislingí a chur ar athlá = rud amháin • Bhí orthu fás aníos i saol ‘nua-normálta’ = rud amháin",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
+            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q4-bi",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-4-bi",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(i)",
+      "questionText": "4(b)(i) Cén fáth a mbíonn an t-aos óg ag gníomhú go paiseanta san fheachtas Fridays for Future? (Alt 4)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q4-bi",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 24,
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Cén fáth a mbíonn an t-aos óg ag gníomhú go paiseanta san fheachtas Fridays for Future? (Alt 4) {2 mharc} • Le brú a chur ar dhaoine fásta agus ar na polaiteoirí dul i ngleic le géarchéim na haeráide = 2 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q4-bii",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-4-bii",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(ii)",
+      "questionText": "4(b)(ii) Cén fáth ar chomhairligh Harry McCann don ghlúin óg seasamh le chéile agus a dtuairimí a nochtadh? (Alt 4)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q4-bii",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 24,
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cén fáth ar chomhairligh Harry McCann don ghlúin óg seasamh le chéile agus a dtuairimí a nochtadh? (Alt 4) {2 mharc} • Chun deimhin a dhéanamh de go n-éistfidh lucht déanta na bpolasaithe leo agus go mbeidh an todhchaí níos gile dá bharr = 2 mharc • Chun deimhin a dhéanamh de go n-éistfidh lucht déanta na bpolasaithe leo = 1 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q5-a",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-5-a",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 5(a)",
+      "questionText": "5(a) Cad iad na rudaí atá tábhachtach má táimid le hEoraip ionchuimsitheach dhigiteach a bhaint amach? (Alt 5)",
+      "totalMarks": 3,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q5-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 24,
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "5. (a) Cad iad na rudaí atá tábhachtach má táimid le hEoraip ionchuimsitheach dhigiteach a bhaint amach? (Alt 5) (Dhá rud) {3 mharc: 2 mharc + 1 mharc} An chéad rud atá ceart = 2 mharc; an dara rud atá ceart = 1 mharc • Oideachas agus cúram sláinte meabhrach a bheith ar fáil do chách = dhá rud • Oideachas a bheith ar fáil do chách = rud amháin • Cúram sláinte meabhrach a bheith ar fáil do chách = rud amháin",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
+            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q5-bi",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-5-bi",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(i)",
+      "questionText": "5(b)(i) Scríobh síos pointe amháin eolais faoi óige dhaonra an Aontais Eorpaigh. (Alt 5)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q5-bi",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Scríobh síos pointe amháin eolais faoi óige dhaonra an Aontais Eorpaigh. (Alt 5) {2 mharc} • Is daoine óga iad fiche a cúig faoin gcéad den daonra (ní gá an tAontas Eorpach a lua sa fhreagra) • Is í Éire an stát ina bhfuil an daonra is óige (de na seacht mballstát is fiche)",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q5-bii",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-5-bii",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(ii)",
+      "questionText": "5(b)(ii) Cad leis a bhfuiltear ag súil agus Bliain Eorpach na hÓige thart? (Alt 5)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q5-bii",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cad leis a bhfuiltear ag súil agus Bliain Eorpach na hÓige thart? (Alt 5) {2 mharc} • Go bhfuil borradh curtha faoi iarrachtaí an Aontais Eorpaigh daoine óga a chumasú chun sochaí Eorpach níos fearr a chruthú = 2 mharc • Go bhfuil borradh curtha faoi iarrachtaí an Aontais Eorpaigh daoine óga a chumasú = 1 mharc",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q6-a",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-6-a",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 6(a)",
+      "questionText": "6(a) Aimsigh sampla d’ainmfhocal baininscneach sa tuiseal ginideach uatha in Alt 2 agus sampla den bhriathar saor san Aimsir Chaite in Alt 4.",
+      "totalMarks": 3,
+      "topicId": "irish-3-3",
+      "additionalTopicIds": [
+        "irish-3-1"
+      ],
+      "conceptId": "irish-hl-p2-reading-b-q6-a",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "grammar",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "6. (a) Aimsigh sampla d’ainmfhocal baininscneach sa tuiseal ginideach uatha in Alt 2 agus sampla den bhriathar saor san Aimsir Chaite in Alt 4. {3 mharc: 2 mharc + 1 mharc} Tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Sampla d’ainmfhocal baininscneach sa tuiseal ginideach uatha in Alt 2: na hÓige, na hEorpa, Feabhra, aeráide Sampla den bhriathar saor san Aimsir Chaite in Alt 4: cruthaíodh",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
+            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2023-hl-p2-reading-b-q6-b",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-6-b",
+      "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 6(b)",
+      "questionText": "6(b) Bunaithe ar an eolas sa sliocht thuas, arbh fhiú Bliain Eorpach na hÓige 2022 a bheith ann, dar leat? Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht, mar thacaíocht le do fhreagra. (Is leor 60 focal.)",
+      "totalMarks": 12,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-hl-p2-reading-b-q6-b",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25,
+        26
+      ],
+      "reviewedAt": "2026-10-12",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "opinion",
+          "label": "Tuairim",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Bunaithe ar an eolas sa sliocht thuas, arbh fhiú Bliain Eorpach na hÓige a bheith ann, dar leat? Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht, mar thacaíocht le do fhreagra. (Is leor 60 focal.) Tuairim a nochtadh = 2 mharc B’fhiú/Níorbh fhiú… Pointe eolais 1 = Plé ar an bpointe le tagairt chruinn as an sliocht mar thacú leis = 5 mharc Pointe eolais 2 = Plé ar an bpointe le tagairt chruinn as an sliocht mar thacú leis = 5 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. B’fhiú Bliain Eorpach na hÓige a bheith ann Pointí eolais féideartha • Tarraingíodh aird ar dhaoine óga…guth na nEorpach óg tábhachtach… • Cinntí a dhéanfar, tá sé tábhachtach go mbeidh tionchar ag daoine óga orthu… • Bhí sé mar aidhm ag an mBliain an fócas a chur ar na cláir agus na deiseanna atá ar fáil do dhaoine óga… • An todhchaí…an tábhacht a bhaineann leis an óige a bheith páirteach san Aontas chun é a mhúnlú… • Bhí deiseanna ar fáil bualadh le hionadaithe tofa… • Comhdhálacha agus scéimeanna a thug deiseanna do dhaoine óga bualadh le chéile agus a dtuairimí a chur in iúl do dhaoine óga eile/a roinnt le daoine óga eile… • An tábhacht a bhaineann le hionadaithe óga mar chuid den Aontas… Níorbh fhiú Bliain Eorpach na hÓige a bheith ann Pointí eolais féideartha • Tarraingíodh aird ar dhaoine óga…guth na nEorpach óg tábhachtach le linn Bhliain Eorpach na hÓige ach an leanfar leis an gcur chuige sin ach na cinntí á ndéanamh… • An todhchaí…an tábhacht a bhaineann leis an óige a bheith páirteach sna toghcháin áitiúla agus Eorpacha in 2024, dar le Maria Walsh…ach an nglacfaidh go leor daoine óga páirt sna toghcháin sin?... Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais.",
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
+          ]
+        },
+        {
+          "id": "point-1",
+          "label": "Pointe eolais 1",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Bunaithe ar an eolas sa sliocht thuas, arbh fhiú Bliain Eorpach na hÓige a bheith ann, dar leat? Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht, mar thacaíocht le do fhreagra. (Is leor 60 focal.) Tuairim a nochtadh = 2 mharc B’fhiú/Níorbh fhiú… Pointe eolais 1 = Plé ar an bpointe le tagairt chruinn as an sliocht mar thacú leis = 5 mharc Pointe eolais 2 = Plé ar an bpointe le tagairt chruinn as an sliocht mar thacú leis = 5 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. B’fhiú Bliain Eorpach na hÓige a bheith ann Pointí eolais féideartha • Tarraingíodh aird ar dhaoine óga…guth na nEorpach óg tábhachtach… • Cinntí a dhéanfar, tá sé tábhachtach go mbeidh tionchar ag daoine óga orthu… • Bhí sé mar aidhm ag an mBliain an fócas a chur ar na cláir agus na deiseanna atá ar fáil do dhaoine óga… • An todhchaí…an tábhacht a bhaineann leis an óige a bheith páirteach san Aontas chun é a mhúnlú… • Bhí deiseanna ar fáil bualadh le hionadaithe tofa… • Comhdhálacha agus scéimeanna a thug deiseanna do dhaoine óga bualadh le chéile agus a dtuairimí a chur in iúl do dhaoine óga eile/a roinnt le daoine óga eile… • An tábhacht a bhaineann le hionadaithe óga mar chuid den Aontas… Níorbh fhiú Bliain Eorpach na hÓige a bheith ann Pointí eolais féideartha • Tarraingíodh aird ar dhaoine óga…guth na nEorpach óg tábhachtach le linn Bhliain Eorpach na hÓige ach an leanfar leis an gcur chuige sin ach na cinntí á ndéanamh… • An todhchaí…an tábhacht a bhaineann leis an óige a bheith páirteach sna toghcháin áitiúla agus Eorpacha in 2024, dar le Maria Walsh…ach an nglacfaidh go leor daoine óga páirt sna toghcháin sin?... Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        },
+        {
+          "id": "point-2",
+          "label": "Pointe eolais 2",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Bunaithe ar an eolas sa sliocht thuas, arbh fhiú Bliain Eorpach na hÓige a bheith ann, dar leat? Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht, mar thacaíocht le do fhreagra. (Is leor 60 focal.) Tuairim a nochtadh = 2 mharc B’fhiú/Níorbh fhiú… Pointe eolais 1 = Plé ar an bpointe le tagairt chruinn as an sliocht mar thacú leis = 5 mharc Pointe eolais 2 = Plé ar an bpointe le tagairt chruinn as an sliocht mar thacú leis = 5 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. B’fhiú Bliain Eorpach na hÓige a bheith ann Pointí eolais féideartha • Tarraingíodh aird ar dhaoine óga…guth na nEorpach óg tábhachtach… • Cinntí a dhéanfar, tá sé tábhachtach go mbeidh tionchar ag daoine óga orthu… • Bhí sé mar aidhm ag an mBliain an fócas a chur ar na cláir agus na deiseanna atá ar fáil do dhaoine óga… • An todhchaí…an tábhacht a bhaineann leis an óige a bheith páirteach san Aontas chun é a mhúnlú… • Bhí deiseanna ar fáil bualadh le hionadaithe tofa… • Comhdhálacha agus scéimeanna a thug deiseanna do dhaoine óga bualadh le chéile agus a dtuairimí a chur in iúl do dhaoine óga eile/a roinnt le daoine óga eile… • An tábhacht a bhaineann le hionadaithe óga mar chuid den Aontas… Níorbh fhiú Bliain Eorpach na hÓige a bheith ann Pointí eolais féideartha • Tarraingíodh aird ar dhaoine óga…guth na nEorpach óg tábhachtach le linn Bhliain Eorpach na hÓige ach an leanfar leis an gcur chuige sin ach na cinntí á ndéanamh… • An todhchaí…an tábhacht a bhaineann leis an óige a bheith páirteach sna toghcháin áitiúla agus Eorpacha in 2024, dar le Maria Walsh…ach an nglacfaidh go leor daoine óga páirt sna toghcháin sin?... Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "2022: Bliain Eorpach na hÓige",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    }
+  ]
+}

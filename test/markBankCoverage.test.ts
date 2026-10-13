@@ -128,8 +128,9 @@ describe('Mark Bank paper-coverage ratchet', () => {
           // Generated 2021–2025 corpus plus the reviewed components: listening
           // segments and their printed questions (the 2026 papers drop the
           // "Cluastuiscint" prefix), reading parts down to an answer slot,
-          // and Irish-headed literature routes named after their text.
-          return !/^\d{4} (?:HL|OL) Paper [12] (?:(?:Cluastuiscint )?Cuid [ABC] · (?:Fógra|Comhrá|Píosa) a (?:hAon|Dó)(?: · An (?:Chéad Mhír|Dara Mír))?(?: · Ceist [1-9](?:\([a-e]\))?)?|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6](?:\([ab]\)(?:\((?:i|ii)\))?)?(?: · (?:Pointe|Freagra|Léargas|Dúshlán|Sampla|Ceist|Cúis) [1-9])?|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\)|(?:Prós 2|Filíocht 3)[AB]\([a-c]\) · .+|Litríocht 4[A-F](?: ·|\.) .+)$/.test(ref);
+          // and Irish-headed literature routes named after their text. A slot is
+          // named by the scheme's own unit (2023 HL A 6(b) prices "Tréith 1/2").
+          return !/^\d{4} (?:HL|OL) Paper [12] (?:(?:Cluastuiscint )?Cuid [ABC] · (?:Fógra|Comhrá|Píosa) a (?:hAon|Dó)(?: · An (?:Chéad Mhír|Dara Mír))?(?: · Ceist [1-9](?:\([a-e]\))?)?|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6](?:\([ab]\)(?:\((?:i|ii)\))?)?(?: · (?:Pointe|Freagra|Léargas|Dúshlán|Sampla|Ceist|Cúis|Tréith) [1-9])?|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\)|(?:Prós 2|Filíocht 3)[AB]\([a-c]\) · .+|Litríocht 4[A-F](?: ·|\.) .+)$/.test(ref);
         }
         if (subject === 'geography') {
           return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?: · .+)?$/.test(ref);

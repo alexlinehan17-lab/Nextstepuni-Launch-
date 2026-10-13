@@ -100,6 +100,6 @@ describe('2024 Higher prescribed poetry and additional literature source review'
     const row=inventory.papers.find(p=>p.key==='2024|higher|LC001ALP200IV.pdf')!;
     expect(row.fullVisualReview).toBe('complete');
     expect(row.bankAtlasTaskParity).toBe('complete');
-    expect(inventory.summary.papersPendingFullReview).toBe(60);
+    expect(inventory.summary.papersPendingFullReview).toBe(59);
   });
 });
