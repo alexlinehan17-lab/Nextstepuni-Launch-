@@ -173,7 +173,11 @@ const decks = [
    * Every crop was opened and looked at before it was bound, and the alt text
    * on each was written from that -- a generated description would be a guess
    * about a picture, and it is the only thing a screen reader gets. */
-  ['chemistry:higher', CHEM_HIGHER, 496, 'ef4c5a891f86986b4ba3091bb89a527ac4019d01f1f2590b8c465e35f2db71cc'],
+  /* 2026-10-13: chemistry higher 496 -> 621. The 2026 Higher paper, 125
+   * cards from chem_2026_hl.py, every one under the new chem-2026-hl- prefix.
+   * The 2021-2025 identity set is pinned unchanged in the 2026 Chemistry test
+   * below, so this count rising cannot hide a removal. */
+  ['chemistry:higher', CHEM_HIGHER, 621, '81ecd5fb709cd76e6f128c83f42aaf9fc310d885215faa6cde28548f9ddf94d5'],
   ['chemistry:ordinary', CHEM_ORDINARY, 380, 'f15304f5ef306c5d0002c1cacd3ce85f3d8e83ccece53772a739f7a2d9460eb8'],
   /* 2026-08-23: physics drops from 487/477 to 486/475. Three cards -- one
    * Higher (2021 q13a(v)) and two Ordinary (2022 q3(ii) and q3(viii)) -- quote
@@ -767,7 +771,8 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_453);
+    // 19,328 + 125: the 2026 Higher Chemistry paper. Nothing removed.
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -826,7 +831,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
+    // 9,768 + 125 for the 2026 Higher Chemistry paper, whose ids are all new.
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_893);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
@@ -839,6 +845,16 @@ describe('Mark Bank card preservation', () => {
       .toBe('db478deb519637edeacce1fd96db3cf50e893e7cf1e8a72cc28c40694b0281ea');
     expect(identityHash(GEOGRAPHY_ORDINARY.filter(card => card.year <= 2025)))
       .toBe('2f6f346262b91ac1385b55c194b7940d927c207403fa00c0ada08e087fd227a9');
+  });
+
+  it('adds 2026 Chemistry without replacing a prior card id', () => {
+    const added = CHEM_HIGHER.filter(card => card.id.startsWith('chem-2026-hl-'));
+    expect(added.length).toBe(125);
+    expect(added.every(card => card.year === 2026)).toBe(true);
+    expect(identityHash(CHEM_HIGHER.filter(card => card.year <= 2025)))
+      .toBe('ef4c5a891f86986b4ba3091bb89a527ac4019d01f1f2590b8c465e35f2db71cc');
+    expect(identityHash(CHEM_ORDINARY.filter(card => card.year <= 2025)))
+      .toBe('f15304f5ef306c5d0002c1cacd3ce85f3d8e83ccece53772a739f7a2d9460eb8');
   });
 
   it('adds the Art choose-two routes without replacing any existing card id', () => {

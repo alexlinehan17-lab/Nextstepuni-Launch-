@@ -1,0 +1,137 @@
+[
+ {
+  "file": "chemistry-2026-HL-paper-q2a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Apparatus for preparing ethyne and collecting it over water: a dropping funnel with a tap fitted into a conical flask that holds solid lumps; a delivery tube from the flask's side arm runs into a trough of water, where bubbles rise into an inverted test tube filled with water.",
+  "questionRef": "2026 HL Q2(a)"
+ },
+ {
+  "file": "chemistry-2026-HL-paper-q4i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Skeletal structure of hydroxyhydroquinone as printed on the right of the question: a benzene ring with an OH group on each of the two top carbon atoms (labelled HO and OH) and a third OH group on the lower right carbon atom.",
+  "questionRef": "2026 HL Q4(i)"
+ },
+ {
+  "file": "chemistry-2026-HL-paper-q6b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The three oil-refining processes the question refers to, labelled A, B and C: A, C6H14 → X + 4H2; B, C18H38 → C6H14 + C4H8 + C2H4 + 2Y; C, C5H12 → C5H12.",
+  "questionRef": "2026 HL Q6(b)"
+ },
+ {
+  "file": "chemistry-2026-HL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Reaction scheme drawn as boxes and arrows: C2H5OH is converted to C2H4 by conversion W; C2H4 is converted to C2H6 by H2 and, by reaction X, to polymer P; C2H6 is converted to C2H5Cl by reaction Y.",
+  "questionRef": "2026 HL Q8"
+ },
+ {
+  "file": "chemistry-2026-HL-paper-q9a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Data table for the decomposition of NO2: time (s) 0, 50, 100, 300, 400 and 600 against concentration of NO2 (mol L−1) 0.010, 0.0079, 0.0065, 0.0038, 0.0034 and 0.0030.",
+  "questionRef": "2026 HL Q9(a)"
+ },
+ {
+  "file": "chemistry-2026-HL-paper-q9c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Diagram for the oxidation of methanol with a platinum wire catalyst: a conical flask with a coiled wire hanging down into it from a grey bar laid across its mouth.",
+  "questionRef": "2026 HL Q9(c)"
+ },
+ {
+  "file": "chemistry-2026-HL-paper-q11a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Reaction scheme: a box labelled alcohol X with an arrow labelled A pointing to a box labelled propanone.",
+  "questionRef": "2026 HL Q11(a)"
+ },
+ {
+  "file": "chemistry-2026-HL-paper-q11c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Table with the columns acid, initial concentration and pH at 25 °C: HCl, 0.1 M, 1.0; CH3COOH, 0.1 M, 2.8.",
+  "questionRef": "2026 HL Q11(c)"
+ },
+ {
+  "file": "chemistry-2026-HL-paper-q11d-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Diagram of the electrolytic cell for extracting aluminium: three block electrodes hanging from a bar labelled anode dip into a shaded layer labelled electrolyte; the tank lining is labelled cathode, and a spout at the lower right carries off a layer labelled aluminium.",
+  "questionRef": "2026 HL Q11(d)B"
+ },
+ {
+  "file": "chemistry-2026-HL-scheme-q7b-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Q7(b)(iv), as the State Examinations Commission printed it: the Kc expression set as a fraction, [CO][H2]3 over [CH4][H2O], beside the note [award 3 marks if round brackets are used] and the mark [6].",
+  "questionRef": "2026 HL Q7(b)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-HL-scheme-q7b-v.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2026 HL Q7(b)(v), as printed: convert to moles per litre (÷4) [3]; i.e. 0.8 over 4 = 0.2 (mol L−1 of CH4), 3.6 over 4 = 0.9 (mol L−1 of H2O), 6.8 over 4 = 1.7 (mol L−1 CO), 20.4 over 4 = 5.1 (mol L−1 H2); Kc = [1.7][5.1]3 over [0.2][0.9] = 1252.8 (mol2 L−2) [3].",
+  "questionRef": "2026 HL Q7(b)(v)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-HL-scheme-q4c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Q4(c), as the State Examinations Commission printed it: the nuclear equation carbon-14 (mass number 14, atomic number 6) gives nitrogen-14 (mass number 14, atomic number 7) plus an electron written with mass number 0 and charge −1, or a beta particle written the same way.",
+  "questionRef": "2026 HL Q4(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-HL-scheme-q4k.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Q4(k), as printed: the full structural formula of methyl ethanoate, CH3–C(=O)–O–CH3, with every atom and bond drawn, the carbonyl oxygen double-bonded above the second carbon.",
+  "questionRef": "2026 HL Q4(k)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-HL-scheme-q5b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Q5(b)(iii), as printed: a dot and cross diagram of AsH3 with three H atoms each sharing a dot and a cross with As and a lone pair of two crosses on As, above the note [maximum 3 marks if lone pair is omitted from As].",
+  "questionRef": "2026 HL Q5(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-HL-scheme-q6b-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Q6(b)(iv), as printed: the three isomers of C5H12 drawn with all atoms and bonds, separated by //: the straight chain of five carbons, a four-carbon chain with a CH3 branch on the second carbon, and a three-carbon chain with two CH3 branches on the middle carbon.",
+  "questionRef": "2026 HL Q6(b)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-HL-scheme-q8b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Q8(b)(i), as printed: two repeating units of poly(ethene), a chain of four carbon atoms each bonded to two hydrogen atoms above and below, with open bonds at both ends, beside the note [allow 3 marks for omission of C– at ends].",
+  "questionRef": "2026 HL Q8(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-HL-scheme-q11a-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Q11(a)(iv), as printed: the full structure of propan-2-ol with all atoms and bonds, the O–H bond and the C–H bond on the central carbon each circled in red as the bonds broken.",
+  "questionRef": "2026 HL Q11(a)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-HL-scheme-q11a-v.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Q11(a)(v), as printed: the full structure of propanone with all atoms and bonds, the second bond of the C=O double bond circled in red as the bond formed.",
+  "questionRef": "2026 HL Q11(a)(v)",
+  "solution": true
+ }
+]
