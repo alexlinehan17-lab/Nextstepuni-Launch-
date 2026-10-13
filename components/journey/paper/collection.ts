@@ -1,5 +1,5 @@
 export const coastalMap =
-  "/art/journey-atlas-stickers/2026-09-13/pencil-map.png";
+  "/art/journey-atlas-stickers/2026-09-13/pencil-map.webp";
 export const legends = [
   {
     id: "roaming-observatory",
@@ -77,4 +77,4 @@ export type LegendId = Legend["id"];
 export const legendById = Object.fromEntries(
   legends.map((item) => [item.id, item]),
 ) as Record<LegendId, Legend>;
-export const stickerSrc = (id: LegendId) => `/journey-art/stickers/${id}.webp`;
+export const stickerSrc = (id: LegendId) => `/journey-art/stickers-v2/${id}.webp`;
