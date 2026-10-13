@@ -111,9 +111,10 @@ describe('Geography exam-topic registry', () => {
     // review, Part One Q6, Q7 and Q8, which it also omitted; and from the
     // 2020 Higher review, Part One Q3, Q6, Q7, Q8 and Q9 (omitted) and Q1
     // (new-course only in the reference), and the 2020 Ordinary review, Part
-    // One Q5, Q6, Q7 and Q12 (omitted). The 2019 Higher and Ordinary reviews
-    // add topics to the Part Two questions already filed (24 and 12) and no
-    // new question: a shared booklet files no Part One question.
+    // One Q5, Q6, Q7 and Q12 (omitted). The 2019 Higher and Ordinary and
+    // 2018 Higher reviews add topics to the Part Two questions already filed
+    // (24, 12 and 24) and no new question: a shared booklet files no Part One
+    // question.
     expect(examQuestionTopicMappingsForSubject('geography')).toHaveLength(1345);
     const taxonomyById = new Map(taxonomy.topics.map(topic => [topic.id, topic]));
     for (const paper of papers) {
