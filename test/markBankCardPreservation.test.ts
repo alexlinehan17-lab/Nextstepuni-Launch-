@@ -880,13 +880,14 @@ describe('Mark Bank card preservation', () => {
      * (+63), 2025 Ordinary (+79), 2024 Higher (+61), 2024 Ordinary (+93),
      * 2023 Higher (+68), 2023 Ordinary (+80), 2022 Higher (+67), 2022
      * Ordinary (+89), 2021 Higher (+65), 2021 Ordinary (+87), 2020 Higher
-     * (+125), 2020 Ordinary (+125; no 2020 card shipped before) and 2019
-     * Higher (+121; none shipped before either), the 2019-2025 sittings
+     * (+125), 2020 Ordinary (+125; no 2020 card shipped before), 2019
+     * Higher (+121) and 2019 Ordinary (+138; none shipped before either),
+     * the 2019-2025 sittings
      * including the tasks whose map/legend/aerial companions are now wired,
      * each reviewed page by page against its scheme. Every addition is a new, unique ID that never reuses an
      * original ID; every reviewed sitting's shipped IDs are still present,
      * live or (a choose-N combination card) through a progress alias. */
-    expect(geographyAdditionIds.size).toBe(1254);
+    expect(geographyAdditionIds.size).toBe(1392);
     const all = [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY];
     const ids = all.map(card => card.id);
     expect(new Set(ids).size).toBe(ids.length);
