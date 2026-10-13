@@ -11205,589 +11205,589 @@
       "textSha256": "e7b823f1ada1406345ee628f2e2de0196cb36b95ec1d04ac0587fe38bb5f6832",
       "contextSha256": "3b33996d08726b9ce4fd2d5a88d8633098ee490c787cafd1babbc7f0cbb9adbf",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-a-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-a-q1-b": "358dcb125ac4c67fe9ce1cfb0482ce4fe7d671656b35498eb3a6cf5f742cdf56"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p2-pdf-16-c3b31e10a957": {
       "textSha256": "c3b31e10a957a8ef52ee19ee276be990089eceffcafb08af9a1c7254c09e984f",
       "contextSha256": "c69c92f47b4e8254de5012d57ea414268584e26a62d330c66c8306cd55f24c86",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-a-q1-c"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-a-q1-c": "9b891e13bafe4a06cc42cb222ad130f23fac09a41bef5795ae21961268af856d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p2-pdf-19-4f5b1e203b96": {
       "textSha256": "4f5b1e203b963e96aaab2e1daa8ecc378bcf7974d10da7f6e859409588b025e5",
       "contextSha256": "f2cd13448800ecf47cc8177d1fa639bf56bc1e65aa636955c52119f67617fbb4",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-a-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-a-q2": "043806dc995bd798c704ff0116ea0a499c38cb683305df63061c4556d07a8fbf"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p2-pdf-20-833751bdf92c": {
       "textSha256": "833751bdf92c1dde3c917bd2b9f83346bec2c5fb54049d847c2ca6bfd85b1fdb",
       "contextSha256": "e6b38965cf5c6a8e1f2d9630e09165a2f23174af30a86e21b82088080626fba3",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-a-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-a-q2": "043806dc995bd798c704ff0116ea0a499c38cb683305df63061c4556d07a8fbf"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p2-pdf-35-86bbcfc86098": {
       "textSha256": "86bbcfc8609833e5d30ca27dd74f6ed1ed4557b0c620800e094786d98086d561",
       "contextSha256": "9abf31aa244345a163d874c44018c91dc73e04e170cd0ce6b9ffe2075da10fee",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-a-q4"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-a-q4": "8f649dc85f741c6b6d5203c486b53b689190abe9bb228ad55a1803f06ed7457b"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p3-pdf-10-e7b823f1ada1": {
       "textSha256": "e7b823f1ada1406345ee628f2e2de0196cb36b95ec1d04ac0587fe38bb5f6832",
       "contextSha256": "5293cfdad6796aae0318ace201c4f149571987207e909d84c3f8f9585cf80fac",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-b-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-b-q1-b": "358dcb125ac4c67fe9ce1cfb0482ce4fe7d671656b35498eb3a6cf5f742cdf56"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p3-pdf-14-c3b31e10a957": {
       "textSha256": "c3b31e10a957a8ef52ee19ee276be990089eceffcafb08af9a1c7254c09e984f",
       "contextSha256": "48f12e9d1ba132c2f67d1f3d4562cd2df6606960831f5aa736de0a58f3999ffd",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-b-q1-c"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-b-q1-c": "9b891e13bafe4a06cc42cb222ad130f23fac09a41bef5795ae21961268af856d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p3-pdf-18-4f5b1e203b96": {
       "textSha256": "4f5b1e203b963e96aaab2e1daa8ecc378bcf7974d10da7f6e859409588b025e5",
       "contextSha256": "08ee0d8d11d354bcaae949dd4a1242a6e635a28ed904bf2eb62590726ba12fce",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-b-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-b-q2": "ad29e9a0dfef5fdf87e8605eb3a47c0796f9f5b940138e8954a0495245aeabcb"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p3-pdf-19-833751bdf92c": {
       "textSha256": "833751bdf92c1dde3c917bd2b9f83346bec2c5fb54049d847c2ca6bfd85b1fdb",
       "contextSha256": "972cc6db0f4644a46f9ff9503848d21fbdeae42b8db670bcbc12c4818d8e562b",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-b-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-b-q2": "ad29e9a0dfef5fdf87e8605eb3a47c0796f9f5b940138e8954a0495245aeabcb"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p3-pdf-36-309d70d15b9a": {
       "textSha256": "309d70d15b9ae6379fc85e2af067effa86d37e201dee59a53631f8119b1141b5",
       "contextSha256": "eacfcac9387b1a5413b36065c07c22038fd95eecaa3ff9f4f418f809d68534d4",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-b-q4"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-b-q4": "f6be064df2c82745904797e7262f34f19edbae01de5aea5a2eb95d946b2450c1"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p4-pdf-9-e7b823f1ada1": {
       "textSha256": "e7b823f1ada1406345ee628f2e2de0196cb36b95ec1d04ac0587fe38bb5f6832",
       "contextSha256": "51d7096b44ea1e9f1ceea4df9455ac2cbd520bb89cca04e4bb1b8ec3af92ab00",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-c-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-c-q1-b": "358dcb125ac4c67fe9ce1cfb0482ce4fe7d671656b35498eb3a6cf5f742cdf56"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p4-pdf-13-c3b31e10a957": {
       "textSha256": "c3b31e10a957a8ef52ee19ee276be990089eceffcafb08af9a1c7254c09e984f",
       "contextSha256": "5d2435c15dfcd7c59cfd6c837f9e2cf36d3193b0f37e001d033ffcafb751da42",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-c-q1-c"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-c-q1-c": "9b891e13bafe4a06cc42cb222ad130f23fac09a41bef5795ae21961268af856d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p4-pdf-17-4f5b1e203b96": {
       "textSha256": "4f5b1e203b963e96aaab2e1daa8ecc378bcf7974d10da7f6e859409588b025e5",
       "contextSha256": "0c99a826fdf34d84a292505f882f58ed22c57508b79f053bb1ac6e5372dc22d0",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-c-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-c-q2": "6ef82c3b6c20d94835ad24ce5ed5707e329793fa40ce0693f78ef05496453f23"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p4-pdf-18-833751bdf92c": {
       "textSha256": "833751bdf92c1dde3c917bd2b9f83346bec2c5fb54049d847c2ca6bfd85b1fdb",
       "contextSha256": "6872f0f0e27f299d082d0659354a5645f60e54db4f6f2c353fbd218e02e0222b",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-c-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-c-q2": "6ef82c3b6c20d94835ad24ce5ed5707e329793fa40ce0693f78ef05496453f23"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p4-pdf-30-4681fbc8f57e": {
       "textSha256": "4681fbc8f57eb6781c73d5acdc7dfd4ec3999b2c0cf7476e52996eb750872f3c",
       "contextSha256": "1f3210f49e847cf804c14a30407acfae018b20344e47a5c9a0b5f7fec125afdc",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-c-q3"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-c-q3": "5d2b5807f3fe61f19588cd6f956ad0a5ebb620a142662e08203f9425e713e044"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p4-pdf-37-57a40dc42b44": {
       "textSha256": "57a40dc42b4409cfa515606185af42a26ab5dccba58c8247c8d2e8a444bfdf78",
       "contextSha256": "5b79eea595a4ddf1619422d4ace7d744385e98cb0222fbc7d15d8c3ebed3a177",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-c-q4"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-c-q4": "7c7dfd09d14e244763a5532ef4db1c612d2928eaae057a2928bac7f9e35d4f4d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p5-pdf-8-e7b823f1ada1": {
       "textSha256": "e7b823f1ada1406345ee628f2e2de0196cb36b95ec1d04ac0587fe38bb5f6832",
       "contextSha256": "dd3678d37164211456eedfc90eddd65f7723966aec06ac4bfc254580c499df86",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-d-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-d-q1-b": "358dcb125ac4c67fe9ce1cfb0482ce4fe7d671656b35498eb3a6cf5f742cdf56"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p5-pdf-12-c3b31e10a957": {
       "textSha256": "c3b31e10a957a8ef52ee19ee276be990089eceffcafb08af9a1c7254c09e984f",
       "contextSha256": "346c927652de1fa20f122f128527435621b6b2d18ed08aa61eeae67a6de8626a",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-d-q1-c"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-d-q1-c": "9b891e13bafe4a06cc42cb222ad130f23fac09a41bef5795ae21961268af856d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p5-pdf-16-4f5b1e203b96": {
       "textSha256": "4f5b1e203b963e96aaab2e1daa8ecc378bcf7974d10da7f6e859409588b025e5",
       "contextSha256": "7d8a6e45f3d369fe2c1b9ecd61928a8842c14d48d97891dee8ebbed7042f0318",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-d-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-d-q2": "4f1c44ded82007b102cd13ce11ac2e47e6d45e52ff75c593b2da3082b1aa7cf3"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p5-pdf-17-833751bdf92c": {
       "textSha256": "833751bdf92c1dde3c917bd2b9f83346bec2c5fb54049d847c2ca6bfd85b1fdb",
       "contextSha256": "1368eaa27a7ed7420af81565fc43187fabe317a5a7b40fd8bfab9619402922ab",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-d-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-d-q2": "4f1c44ded82007b102cd13ce11ac2e47e6d45e52ff75c593b2da3082b1aa7cf3"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p5-pdf-33-d0655899e9de": {
       "textSha256": "d0655899e9de012b686294c5d3078836cf0d14ec941951f9696efa0ace5cbe58",
       "contextSha256": "6bb0e27bd93aa81af25cba1d7abe589aa1c8c9f20a6c09b489559793f22a7811",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-d-q4"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-d-q4": "10778d0ba4f52684c2aeef3b794f58a18df3ad4d55581b2e2a47c24046649738"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p6-pdf-9-e7b823f1ada1": {
       "textSha256": "e7b823f1ada1406345ee628f2e2de0196cb36b95ec1d04ac0587fe38bb5f6832",
       "contextSha256": "a569bf04d0916188968406df76b6a8cfeacf1676b76b07094e532a7f4dc1728f",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-e-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-e-q1-b": "358dcb125ac4c67fe9ce1cfb0482ce4fe7d671656b35498eb3a6cf5f742cdf56"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p6-pdf-13-c3b31e10a957": {
       "textSha256": "c3b31e10a957a8ef52ee19ee276be990089eceffcafb08af9a1c7254c09e984f",
       "contextSha256": "29255734e9b1d2be1560d4820cacecaab6c82575d2215d2492b94bde15b62f7e",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-e-q1-c"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-e-q1-c": "9b891e13bafe4a06cc42cb222ad130f23fac09a41bef5795ae21961268af856d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p6-pdf-16-4f5b1e203b96": {
       "textSha256": "4f5b1e203b963e96aaab2e1daa8ecc378bcf7974d10da7f6e859409588b025e5",
       "contextSha256": "cb14356b0d35f36670b18bc899429d140c4c8a24e1a865a84a591847ab471031",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-e-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-e-q2": "9cc020fd4789800906d2a4bcda5846fdf2efbfdf077a0b957a2e7b8f0d45a53d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p6-pdf-17-833751bdf92c": {
       "textSha256": "833751bdf92c1dde3c917bd2b9f83346bec2c5fb54049d847c2ca6bfd85b1fdb",
       "contextSha256": "6679bc8d770cac321a58c58881d8cd42575fda21e0be7dc40ef3c1740e7075e1",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-e-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-e-q2": "9cc020fd4789800906d2a4bcda5846fdf2efbfdf077a0b957a2e7b8f0d45a53d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p6-pdf-32-1e9b030c802c": {
       "textSha256": "1e9b030c802ca5b6b181743a2bd7238bc23f5e8d1ce27567746e0e657ac4528e",
       "contextSha256": "7d81864bafb82fe54f704e49b1cbfd74a6bd23855d448cb403b0b68fbb076fac",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-e-q4"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-e-q4": "009356390d5f5cd18406e6161169a77bc0f3c8aaaf6f9c403629b866b9a00c53"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p7-pdf-9-e7b823f1ada1": {
       "textSha256": "e7b823f1ada1406345ee628f2e2de0196cb36b95ec1d04ac0587fe38bb5f6832",
       "contextSha256": "77ecbc97be1fc3d889bde87978e5463e8b6729f758e9d723138973c054b654d1",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-f-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-f-q1-b": "358dcb125ac4c67fe9ce1cfb0482ce4fe7d671656b35498eb3a6cf5f742cdf56"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p7-pdf-13-c3b31e10a957": {
       "textSha256": "c3b31e10a957a8ef52ee19ee276be990089eceffcafb08af9a1c7254c09e984f",
       "contextSha256": "29255734e9b1d2be1560d4820cacecaab6c82575d2215d2492b94bde15b62f7e",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-f-q1-c"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-f-q1-c": "9b891e13bafe4a06cc42cb222ad130f23fac09a41bef5795ae21961268af856d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p7-pdf-16-4f5b1e203b96": {
       "textSha256": "4f5b1e203b963e96aaab2e1daa8ecc378bcf7974d10da7f6e859409588b025e5",
       "contextSha256": "c3c02fd62be3ab2a1159394b07564b2ef845ef325c1edba2ff21c1fa1edd0446",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-f-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-f-q2": "b79403c5d09c17cdab2658815e0d174521e90cd920fbbe3bf49ab032a4c7e84f"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p7-pdf-17-833751bdf92c": {
       "textSha256": "833751bdf92c1dde3c917bd2b9f83346bec2c5fb54049d847c2ca6bfd85b1fdb",
       "contextSha256": "90d3356f367cdced200dcbf6eba6dde881466409a6e099b84b37c2eee7081330",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-f-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-f-q2": "b79403c5d09c17cdab2658815e0d174521e90cd920fbbe3bf49ab032a4c7e84f"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p7-pdf-32-1e9b030c802c": {
       "textSha256": "1e9b030c802ca5b6b181743a2bd7238bc23f5e8d1ce27567746e0e657ac4528e",
       "contextSha256": "16e29b6ca42ab64dc0b2ec4a3c9fdf337bb3354fa6bf2511180f1e84525ac55f",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-f-q4"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-f-q4": "2dcaa23cb19d124c9c74e8e3500c5cc6f55b083d2a45d6c1c33c550ce0539464"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p8-pdf-10-e7b823f1ada1": {
       "textSha256": "e7b823f1ada1406345ee628f2e2de0196cb36b95ec1d04ac0587fe38bb5f6832",
       "contextSha256": "ce8d31887dee03fec53fb5d6704d9cd5f3705ff975bed94b49e91bec98507fc4",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-g-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-g-q1-b": "358dcb125ac4c67fe9ce1cfb0482ce4fe7d671656b35498eb3a6cf5f742cdf56"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p8-pdf-14-c3b31e10a957": {
       "textSha256": "c3b31e10a957a8ef52ee19ee276be990089eceffcafb08af9a1c7254c09e984f",
       "contextSha256": "5d2435c15dfcd7c59cfd6c837f9e2cf36d3193b0f37e001d033ffcafb751da42",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-g-q1-c"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-g-q1-c": "9b891e13bafe4a06cc42cb222ad130f23fac09a41bef5795ae21961268af856d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p8-pdf-18-4f5b1e203b96": {
       "textSha256": "4f5b1e203b963e96aaab2e1daa8ecc378bcf7974d10da7f6e859409588b025e5",
       "contextSha256": "4863481f890f6c6aac8df2d8dbfd545f1f8e6eb068345e1da2e22f9e42e83fd4",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-g-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-g-q2": "96c27d31686e835afae95d7b46fcd7b3a58cef5028afe3db62da3221a9693c1a"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p8-pdf-19-833751bdf92c": {
       "textSha256": "833751bdf92c1dde3c917bd2b9f83346bec2c5fb54049d847c2ca6bfd85b1fdb",
       "contextSha256": "e556b48c572e0c2439e7dd8fcc8a9db1263a972b5034833d30a3a5499318473c",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-g-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-g-q2": "96c27d31686e835afae95d7b46fcd7b3a58cef5028afe3db62da3221a9693c1a"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p8-pdf-20-77e0c9b7c86a": {
       "textSha256": "77e0c9b7c86a131a8a9a0111e95dcf78474045a0c759c35b1cb25f5e52c6f9a1",
       "contextSha256": "e11f9ee9b006f3140693f5b26aff58d59300c6afd44f437ec9462f604e6641b6",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-g-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-g-q2": "96c27d31686e835afae95d7b46fcd7b3a58cef5028afe3db62da3221a9693c1a"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p8-pdf-34-1e9b030c802c": {
       "textSha256": "1e9b030c802ca5b6b181743a2bd7238bc23f5e8d1ce27567746e0e657ac4528e",
       "contextSha256": "c9f3e5da55d65faec0057c6b46a4074db07a472eb252ac076bbfab4c56be6e69",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-g-q4"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-g-q4": "67c423736a12cd75e13d17f7e5f856d444e483eb3bee8172b7602cc3d23303ae"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p9-pdf-9-b1d0d1262231": {
       "textSha256": "b1d0d1262231c420238ab7edca1cb61c2ddc89eb3c083e842fded05627f1988c",
       "contextSha256": "188c3e00b8db9991bdbf04b954a5690f94da5f70835a476bedc65ef58697c7c7",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-h-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-h-q1-b": "358dcb125ac4c67fe9ce1cfb0482ce4fe7d671656b35498eb3a6cf5f742cdf56"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p9-pdf-12-53a1bef7250c": {
       "textSha256": "53a1bef7250cb1cae147fe8c7fb8e95e1fff170865c9a53fcf10731a71caba6a",
       "contextSha256": "cd2c3ac7bac35559088c851842430ec3d78627f5ac3b28403df89f45d2546c92",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-h-q1-c"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-h-q1-c": "9b891e13bafe4a06cc42cb222ad130f23fac09a41bef5795ae21961268af856d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p9-pdf-15-4f5b1e203b96": {
       "textSha256": "4f5b1e203b963e96aaab2e1daa8ecc378bcf7974d10da7f6e859409588b025e5",
       "contextSha256": "2f393b52a9f9e2f6e52b415d54db6e840920b3d937805994cd1dec53451ca787",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-h-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-h-q2": "9e41ed408bf05e4a9d3e9383f351ce85ba93133d6ae082d750bd353f127512ff"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p9-pdf-16-833751bdf92c": {
       "textSha256": "833751bdf92c1dde3c917bd2b9f83346bec2c5fb54049d847c2ca6bfd85b1fdb",
       "contextSha256": "23f4a9083e2c84422254237ec003d1ba8d254d82d4576754ed1c651df4255b39",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-h-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-h-q2": "9e41ed408bf05e4a9d3e9383f351ce85ba93133d6ae082d750bd353f127512ff"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p9-pdf-32-c7d758add5ce": {
       "textSha256": "c7d758add5ce2803ead9bbe799b58cdea7db7030cb8ebd8a4c5f09439bc290cf",
       "contextSha256": "1e62247a33669f143863956d5a4503144165b1ef216b15d33663a3ed66a866e8",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-h-q4"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-h-q4": "cc7270dd9753f74ccee0b371b495e8165371c56e8f79bfa4cbd8d8fcd6050690"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p10-pdf-10-e7b823f1ada1": {
       "textSha256": "e7b823f1ada1406345ee628f2e2de0196cb36b95ec1d04ac0587fe38bb5f6832",
       "contextSha256": "7f92926a7770df0817b43e8992be44cd97ff4800f96ebf3279ae9e4dc7ca5fe6",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-i-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-i-q1-b": "358dcb125ac4c67fe9ce1cfb0482ce4fe7d671656b35498eb3a6cf5f742cdf56"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p10-pdf-14-c3b31e10a957": {
       "textSha256": "c3b31e10a957a8ef52ee19ee276be990089eceffcafb08af9a1c7254c09e984f",
       "contextSha256": "c69c92f47b4e8254de5012d57ea414268584e26a62d330c66c8306cd55f24c86",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-i-q1-c"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-i-q1-c": "9b891e13bafe4a06cc42cb222ad130f23fac09a41bef5795ae21961268af856d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p10-pdf-17-4f5b1e203b96": {
       "textSha256": "4f5b1e203b963e96aaab2e1daa8ecc378bcf7974d10da7f6e859409588b025e5",
       "contextSha256": "c2d487d7af91340e32b6548098bb622df63d97010e1a928086dbf7bddd5fe245",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-i-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-i-q2": "0f7593b6575d6c34b17149e69a95ec483825a68ccd20e828e254b2bfbdee9a1e"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p10-pdf-18-833751bdf92c": {
       "textSha256": "833751bdf92c1dde3c917bd2b9f83346bec2c5fb54049d847c2ca6bfd85b1fdb",
       "contextSha256": "4e762c8668a5bc2c87ec8541bfe756731510c1dbae471266e7c827051964c477",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-i-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-i-q2": "0f7593b6575d6c34b17149e69a95ec483825a68ccd20e828e254b2bfbdee9a1e"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p10-pdf-25-7156de47da82": {
       "textSha256": "7156de47da82aa9bacac233324d54f1ec745e6e339156a8a72efdd2ae39d04b8",
       "contextSha256": "a3f581e2b943d7367cb299ebc859b0cc334d50c6f9a7ea53613ce8d6bdffa7e3",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-i-q3"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-i-q3": "e8bc9a2ac2910322f80e163fce72250c2f958b98cfd7f213dd69e88e8192cdb1"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p10-pdf-29-d3793296c8e9": {
       "textSha256": "d3793296c8e96ce9b1b1bcbf4748b7a3e13d277207de8716f2846b0a0f78b09c",
       "contextSha256": "383aa490ef35761dd86439e5a44df7da1886dce944468f1ae3137c6d2d381881",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-i-q3"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-i-q3": "e8bc9a2ac2910322f80e163fce72250c2f958b98cfd7f213dd69e88e8192cdb1"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p10-pdf-36-3ace3047e0da": {
       "textSha256": "3ace3047e0da527a5c104ae67fa42405e06b57b51f5c11d937faa93d75999ff5",
       "contextSha256": "139cb8a02f71d2d26998133bac0d705b7e50a6bf0e717a61fca6c29e8dbad1f4",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2022-ol-p2-single-i-q4"
       ],
       "taskSha256": {
         "english-2022-ol-p2-single-i-q4": "7f743c880a769cec687cd377e5f9bc991ef5896f23c7b343b29991623b54a687"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2023-hl-p1-p3-pdf-57-5f0e97bbb536": {
       "textSha256": "5f0e97bbb5365d52b58493dd6c9daac6fc6dfe4e9aefbf573e4780b92ef4d098",
@@ -22550,602 +22550,556 @@
       "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p11-pdf-16-286b8a7a39a8": {
-      "kind": "tasks",
       "textSha256": "286b8a7a39a8e69f9cfd16f046bed1b47273c447162057eb6c54e68e52538f6d",
       "contextSha256": "819d7fb2cd7f59b2c21f6affac7c2bb48049210ce3b7bcc1cb4b072104b292c7",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-a-q1-a-i",
-        "english-2022-ol-p2-comparative-a-q1-a-ii"
+        "english-2022-ol-p2-comparative-a-q1-a-i"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-a-q1-a-i": "a1a7cad6010de2d28ddf19396549867376b625cd9739fc82bf35f0ef466975fd",
-        "english-2022-ol-p2-comparative-a-q1-a-ii": "308b9b437ca34bb84d6bd5755e9832834e6d5ba8cb7c2bbc545f1dd5450f61b4"
+        "english-2022-ol-p2-comparative-a-q1-a-i": "a1a7cad6010de2d28ddf19396549867376b625cd9739fc82bf35f0ef466975fd"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p11-pdf-21-286b8a7a39a8": {
-      "kind": "tasks",
       "textSha256": "286b8a7a39a8e69f9cfd16f046bed1b47273c447162057eb6c54e68e52538f6d",
       "contextSha256": "17a40480a278e9e0a8972f749b8e9685c83d8e2607f232c091d0bf27f9e7e630",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-a-q1-a-i",
         "english-2022-ol-p2-comparative-a-q1-a-ii"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-a-q1-a-i": "a1a7cad6010de2d28ddf19396549867376b625cd9739fc82bf35f0ef466975fd",
         "english-2022-ol-p2-comparative-a-q1-a-ii": "308b9b437ca34bb84d6bd5755e9832834e6d5ba8cb7c2bbc545f1dd5450f61b4"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p11-pdf-24-aa96e7e92f9e": {
-      "kind": "tasks",
       "textSha256": "aa96e7e92f9ed2880e18b495e458c19a6dd7fe710e12cb90caa884928b8a8eb8",
       "contextSha256": "bbf8104fb8a7df2b1fee62a66097f8ac4319b1f5b2da3fabef2d20d9ec058b82",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-a-q1-b",
-        "english-2022-ol-p2-comparative-a-q2-b"
+        "english-2022-ol-p2-comparative-a-q1-b"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-a-q1-b": "066dcec8760ac0267318ae929a3abe88ce21b6ffbf81609ae498f969116b8c90",
-        "english-2022-ol-p2-comparative-a-q2-b": "066dcec8760ac0267318ae929a3abe88ce21b6ffbf81609ae498f969116b8c90"
+        "english-2022-ol-p2-comparative-a-q1-b": "066dcec8760ac0267318ae929a3abe88ce21b6ffbf81609ae498f969116b8c90"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p11-pdf-31-3b074854067d": {
-      "kind": "tasks",
       "textSha256": "3b074854067d259509903af7c6000d534d10787da693bb86d1865206e965b9b5",
       "contextSha256": "38758163f4db5975d72bb6897a1dce6835faa9129ad170231d4e47b65acc3d10",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-a-q2-a-i",
-        "english-2022-ol-p2-comparative-a-q2-a-ii"
+        "english-2022-ol-p2-comparative-a-q2-a-i"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-a-q2-a-i": "5f9b1a29ae92db9481334aceeff795b2552f1d6b744d45d0ee1a41168f852d56",
-        "english-2022-ol-p2-comparative-a-q2-a-ii": "fcd923c92b133934d01b4218d1382da726230619bea4698863755b1753d5a842"
+        "english-2022-ol-p2-comparative-a-q2-a-i": "5f9b1a29ae92db9481334aceeff795b2552f1d6b744d45d0ee1a41168f852d56"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p11-pdf-32-17d545e056ab": {
-      "kind": "tasks",
       "textSha256": "17d545e056ab99f1bf6c3439c22d8c0066b9e025b5361d3807ee3205bd674216",
       "contextSha256": "66b339a0b21d9e2d83df0c7b250ef82708a192e0ef36a6e4c340054e7d0a3fc1",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-a-q2-a-i",
-        "english-2022-ol-p2-comparative-a-q2-a-ii"
+        "english-2022-ol-p2-comparative-a-q2-a-i"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-a-q2-a-i": "5f9b1a29ae92db9481334aceeff795b2552f1d6b744d45d0ee1a41168f852d56",
-        "english-2022-ol-p2-comparative-a-q2-a-ii": "fcd923c92b133934d01b4218d1382da726230619bea4698863755b1753d5a842"
+        "english-2022-ol-p2-comparative-a-q2-a-i": "5f9b1a29ae92db9481334aceeff795b2552f1d6b744d45d0ee1a41168f852d56"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p11-pdf-35-19cd70565085": {
-      "kind": "tasks",
       "textSha256": "19cd70565085737b6d0a63587e052d76189ebe5ef05205c549b2ddc4219dc2ee",
       "contextSha256": "268e4190fd0c40c3b2a2de5a683affa36b6f58b370af8834d0031c093e480168",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-a-q2-a-i",
         "english-2022-ol-p2-comparative-a-q2-a-ii"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-a-q2-a-i": "5f9b1a29ae92db9481334aceeff795b2552f1d6b744d45d0ee1a41168f852d56",
         "english-2022-ol-p2-comparative-a-q2-a-ii": "fcd923c92b133934d01b4218d1382da726230619bea4698863755b1753d5a842"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p11-pdf-36-17d545e056ab": {
-      "kind": "tasks",
       "textSha256": "17d545e056ab99f1bf6c3439c22d8c0066b9e025b5361d3807ee3205bd674216",
       "contextSha256": "df6ef3216ef54e4ba828df9f1e0ad467e3cd9ee6a017989a4e5dfbc840912fba",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-a-q2-a-i",
         "english-2022-ol-p2-comparative-a-q2-a-ii"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-a-q2-a-i": "5f9b1a29ae92db9481334aceeff795b2552f1d6b744d45d0ee1a41168f852d56",
         "english-2022-ol-p2-comparative-a-q2-a-ii": "fcd923c92b133934d01b4218d1382da726230619bea4698863755b1753d5a842"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p11-pdf-39-aa96e7e92f9e": {
-      "kind": "tasks",
       "textSha256": "aa96e7e92f9ed2880e18b495e458c19a6dd7fe710e12cb90caa884928b8a8eb8",
       "contextSha256": "bbf8104fb8a7df2b1fee62a66097f8ac4319b1f5b2da3fabef2d20d9ec058b82",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-a-q1-b",
         "english-2022-ol-p2-comparative-a-q2-b"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-a-q1-b": "066dcec8760ac0267318ae929a3abe88ce21b6ffbf81609ae498f969116b8c90",
         "english-2022-ol-p2-comparative-a-q2-b": "066dcec8760ac0267318ae929a3abe88ce21b6ffbf81609ae498f969116b8c90"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p12-pdf-5-1c15e0d465d9": {
-      "kind": "tasks",
       "textSha256": "1c15e0d465d934de18797e7d06eb615892b0d6e46df1c66e0c32156e2d4dc0d1",
       "contextSha256": "1a272c978e02d72c499b68b2674b86456b41507e9e282e5e31e52170b91ba855",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-b-q1-a-i",
-        "english-2022-ol-p2-comparative-b-q1-a-ii"
+        "english-2022-ol-p2-comparative-b-q1-a-i"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-b-q1-a-i": "63d0c84fb700ce06c05af55c629ec1c8f070f76af82aa3718ae0ff86c150f64e",
-        "english-2022-ol-p2-comparative-b-q1-a-ii": "a68f156ca9fcbd9c6203b6ec74c4e7001c23b26086eeeca869d33501d9b7e00a"
+        "english-2022-ol-p2-comparative-b-q1-a-i": "63d0c84fb700ce06c05af55c629ec1c8f070f76af82aa3718ae0ff86c150f64e"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p12-pdf-6-b3aec5fa3ea2": {
-      "kind": "tasks",
       "textSha256": "b3aec5fa3ea2b31c576e0ae6cd81404ec26c4b643eed631b9b44e8cc657c88ec",
       "contextSha256": "be7731aa595733d45ecf3eaa17229295fa85fe8035db8c00efc8772d222833ca",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-b-q1-a-i",
-        "english-2022-ol-p2-comparative-b-q1-a-ii"
+        "english-2022-ol-p2-comparative-b-q1-a-i"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-b-q1-a-i": "63d0c84fb700ce06c05af55c629ec1c8f070f76af82aa3718ae0ff86c150f64e",
-        "english-2022-ol-p2-comparative-b-q1-a-ii": "a68f156ca9fcbd9c6203b6ec74c4e7001c23b26086eeeca869d33501d9b7e00a"
+        "english-2022-ol-p2-comparative-b-q1-a-i": "63d0c84fb700ce06c05af55c629ec1c8f070f76af82aa3718ae0ff86c150f64e"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p12-pdf-9-4c73a56edc78": {
-      "kind": "tasks",
       "textSha256": "4c73a56edc78f62975a220ea2a9e1469001d3b214b450dba1687d02efea2a6e0",
       "contextSha256": "3ee0c52d429d71c8036110673c1fbf846083c7f7be83aa4b261a0b4b4ecb7716",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-b-q1-a-i",
         "english-2022-ol-p2-comparative-b-q1-a-ii"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-b-q1-a-i": "63d0c84fb700ce06c05af55c629ec1c8f070f76af82aa3718ae0ff86c150f64e",
         "english-2022-ol-p2-comparative-b-q1-a-ii": "a68f156ca9fcbd9c6203b6ec74c4e7001c23b26086eeeca869d33501d9b7e00a"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-5-427392191a65": {
-      "kind": "tasks",
       "textSha256": "427392191a65286b543b741d5efe50d307f3fd15c64a723734690c7c464a1d27",
       "contextSha256": "198694cb3f08c5087dcd3263d0907ff1408eb8c7f339f5f76591b9ee213dcd23",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-c-q1-a-i",
-        "english-2022-ol-p2-comparative-c-q1-a-ii"
+        "english-2022-ol-p2-comparative-c-q1-a-i"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-c-q1-a-i": "f68fa1f901de105f80a69f77998494b7010c50370707fa7cb379e1abf1ce1f59",
-        "english-2022-ol-p2-comparative-c-q1-a-ii": "859f86c8a782fe7448d1de8fac38a69a3f87e73087b2afdfc44d7275b0444867"
+        "english-2022-ol-p2-comparative-c-q1-a-i": "f68fa1f901de105f80a69f77998494b7010c50370707fa7cb379e1abf1ce1f59"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-9-adc5b1ce2fbb": {
-      "kind": "tasks",
       "textSha256": "adc5b1ce2fbb4e0e0c70eb8d61c46cd4cadff2ef3288a4c26df09603c40903e9",
       "contextSha256": "3b2d28b4cfb6ded50977e93d07948f0c130024db253de363e2781db50c6b465e",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-comparative-c-q1-a-ii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-comparative-c-q1-a-ii": "859f86c8a782fe7448d1de8fac38a69a3f87e73087b2afdfc44d7275b0444867"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-10-427392191a65": {
-      "kind": "tasks",
       "textSha256": "427392191a65286b543b741d5efe50d307f3fd15c64a723734690c7c464a1d27",
       "contextSha256": "83dd7c48b9f4836f0b30c6d9f38c3e7c9deedeae86154b85960b19526abd8f06",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-c-q1-a-i",
         "english-2022-ol-p2-comparative-c-q1-a-ii"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-c-q1-a-i": "f68fa1f901de105f80a69f77998494b7010c50370707fa7cb379e1abf1ce1f59",
         "english-2022-ol-p2-comparative-c-q1-a-ii": "859f86c8a782fe7448d1de8fac38a69a3f87e73087b2afdfc44d7275b0444867"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-14-4579ffd1f13b": {
-      "kind": "tasks",
       "textSha256": "4579ffd1f13b6df9904d9a6ea153200da83404642c434c6a60de5e97b1db7c35",
       "contextSha256": "0fd8534af742086b0da09037b95b927b10d172d661bc013d8929a8b96e7a2e39",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-c-q1-b",
-        "english-2022-ol-p2-comparative-c-q2-b"
+        "english-2022-ol-p2-comparative-c-q1-b"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-c-q1-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b",
-        "english-2022-ol-p2-comparative-c-q2-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b"
+        "english-2022-ol-p2-comparative-c-q1-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-15-2c57eec673fe": {
-      "kind": "tasks",
       "textSha256": "2c57eec673feb1e33e55c9303b3c9cf9a4d7956016b01501c3f8ad2225c4dfe0",
       "contextSha256": "906733e2f967a585d6a34ca011df32ddbb79ea943698bbcea9aa779a7ee22718",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-c-q1-b",
-        "english-2022-ol-p2-comparative-c-q2-b"
+        "english-2022-ol-p2-comparative-c-q1-b"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-c-q1-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b",
-        "english-2022-ol-p2-comparative-c-q2-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b"
+        "english-2022-ol-p2-comparative-c-q1-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-16-0041f336b526": {
-      "kind": "tasks",
       "textSha256": "0041f336b526d7c4572847ed9f50d2fe325b244b4155bf8bacb4e9e819f07180",
       "contextSha256": "c2db0e8223feb20eb93c985297dcf3f12324ce6afc2f21d7d1d44ff123dec3c5",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-c-q1-b",
-        "english-2022-ol-p2-comparative-c-q2-b"
+        "english-2022-ol-p2-comparative-c-q1-b"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-c-q1-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b",
-        "english-2022-ol-p2-comparative-c-q2-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b"
+        "english-2022-ol-p2-comparative-c-q1-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-21-0d890e2eb595": {
-      "kind": "tasks",
       "textSha256": "0d890e2eb595c781035f9faf3746a16b6141f774a7d3f28e1c4c704755ca7abc",
       "contextSha256": "2850e269799aa3cc426fd69e7bffd7281cbdff57e14d90376a005912d0304bcc",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-c-q2-a-i",
-        "english-2022-ol-p2-comparative-c-q2-a-ii"
+        "english-2022-ol-p2-comparative-c-q2-a-i"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-c-q2-a-i": "9f79007e082286ac176e950093a0c283e26ea0a12a1b796bf61b17d355718f81",
-        "english-2022-ol-p2-comparative-c-q2-a-ii": "b8b394c1e87d966b2ca80771a7a26dfa578387e16a42560934d8acdb0f5f1f84"
+        "english-2022-ol-p2-comparative-c-q2-a-i": "9f79007e082286ac176e950093a0c283e26ea0a12a1b796bf61b17d355718f81"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-22-6c0e452b75a0": {
-      "kind": "tasks",
       "textSha256": "6c0e452b75a01b29eac08d0d00984e1832289abb361a508a07070c4abf57fa26",
       "contextSha256": "a67642f74f2439547786c9a6e86794d1041a339faef0041fddf57538b60495d0",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-c-q2-a-i",
-        "english-2022-ol-p2-comparative-c-q2-a-ii"
+        "english-2022-ol-p2-comparative-c-q2-a-i"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-c-q2-a-i": "9f79007e082286ac176e950093a0c283e26ea0a12a1b796bf61b17d355718f81",
-        "english-2022-ol-p2-comparative-c-q2-a-ii": "b8b394c1e87d966b2ca80771a7a26dfa578387e16a42560934d8acdb0f5f1f84"
+        "english-2022-ol-p2-comparative-c-q2-a-i": "9f79007e082286ac176e950093a0c283e26ea0a12a1b796bf61b17d355718f81"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-24-3dc76e5c1683": {
-      "kind": "tasks",
       "textSha256": "3dc76e5c16837cfd5558f3addf8d61cd91cc5feb1b43463781a5b0262ca7265d",
       "contextSha256": "b84671fb822063390c16c19b9a0991ef6c8f55bfc750e8a4b95ffe178f052ec1",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-comparative-c-q2-a-ii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-comparative-c-q2-a-ii": "b8b394c1e87d966b2ca80771a7a26dfa578387e16a42560934d8acdb0f5f1f84"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-25-ebea80d30997": {
-      "kind": "tasks",
       "textSha256": "ebea80d309973bc98eec48a47483bb0d24330167cf65faa62843df5ecec9e1f0",
       "contextSha256": "2dd9a9fd9503fb4e3688b8e70ba8f7199198062470a369675bd59fef9bf0fe23",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-c-q2-a-i",
         "english-2022-ol-p2-comparative-c-q2-a-ii"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-c-q2-a-i": "9f79007e082286ac176e950093a0c283e26ea0a12a1b796bf61b17d355718f81",
         "english-2022-ol-p2-comparative-c-q2-a-ii": "b8b394c1e87d966b2ca80771a7a26dfa578387e16a42560934d8acdb0f5f1f84"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-26-022156855139": {
-      "kind": "tasks",
       "textSha256": "0221568551391bc5b80ccf592ea1a5f9b94f6b13eff1188d4015962d0dc0f596",
       "contextSha256": "2be67b8e6468c63b59be94e5a806c48fef60ce4841033a88dd15456dbd32d1fe",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-c-q2-a-i",
         "english-2022-ol-p2-comparative-c-q2-a-ii"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-c-q2-a-i": "9f79007e082286ac176e950093a0c283e26ea0a12a1b796bf61b17d355718f81",
         "english-2022-ol-p2-comparative-c-q2-a-ii": "b8b394c1e87d966b2ca80771a7a26dfa578387e16a42560934d8acdb0f5f1f84"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-28-4579ffd1f13b": {
-      "kind": "tasks",
       "textSha256": "4579ffd1f13b6df9904d9a6ea153200da83404642c434c6a60de5e97b1db7c35",
       "contextSha256": "464702a2686a398760eb015bf6523e3a3ed04390055085b713a57171a15170ca",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-c-q1-b",
         "english-2022-ol-p2-comparative-c-q2-b"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-c-q1-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b",
         "english-2022-ol-p2-comparative-c-q2-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-29-2c57eec673fe": {
-      "kind": "tasks",
       "textSha256": "2c57eec673feb1e33e55c9303b3c9cf9a4d7956016b01501c3f8ad2225c4dfe0",
       "contextSha256": "26ce03780ce46a6c6849a92710da4fb851caf5fedd3373c8766b304b5a38eff6",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-c-q1-b",
         "english-2022-ol-p2-comparative-c-q2-b"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-c-q1-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b",
         "english-2022-ol-p2-comparative-c-q2-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p13-pdf-30-0041f336b526": {
-      "kind": "tasks",
       "textSha256": "0041f336b526d7c4572847ed9f50d2fe325b244b4155bf8bacb4e9e819f07180",
       "contextSha256": "ab71df510e55f23ba0e9075c763dfe51ca22a99b15f55cd592c6c4eb3f9e7ca1",
+      "kind": "tasks",
       "taskIds": [
-        "english-2022-ol-p2-comparative-c-q1-b",
         "english-2022-ol-p2-comparative-c-q2-b"
       ],
       "taskSha256": {
-        "english-2022-ol-p2-comparative-c-q1-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b",
         "english-2022-ol-p2-comparative-c-q2-b": "6b0d39f5818a8e535dbac44c07d471a1f06654c46e7c16d13056ecb80d3df49b"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p14-pdf-37-2e7660d4dc50": {
-      "kind": "tasks",
       "textSha256": "2e7660d4dc50aacd5b20f3f99b31c2be41afabf8dafe500e0c5a721409269fe7",
       "contextSha256": "651100acae70a76f44c3c8cd9b0b45816f883f128f52ae4a75593b47ab715afa",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-unseen-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-unseen-q2": "3f042d148cda4b3e7dedc457c6ed51d41367ba4bf9ecc1debeddee3398db1bc9"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p14-pdf-38-27b6f36ba13b": {
-      "kind": "tasks",
       "textSha256": "27b6f36ba13bf6be34e41f2312db2a09b582edf7a87a5a275348373c259e9843",
       "contextSha256": "88a8c828fa1200d9954433f0b6e632eb7d523ff5006bd6511f30a1e474f2a612",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-unseen-q2"
       ],
       "taskSha256": {
         "english-2022-ol-p2-unseen-q2": "3f042d148cda4b3e7dedc457c6ed51d41367ba4bf9ecc1debeddee3398db1bc9"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p15-pdf-22-fcd7e4cefa5e": {
-      "kind": "tasks",
       "textSha256": "fcd7e4cefa5e89243cf2ae3675a0e09ea93382ac2e665ea1826f0e8b9e154183",
       "contextSha256": "a8d44b285bac227e2a7ee07b90b977b786544898a32eb040a0d0551e867826c3",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-a-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-a-q1-b": "bdd51ae07bc085bb4fdd9c31c91f53ccbcd4be7c892bcfb11c42d3e46685f57c"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p15-pdf-33-a1e133cda526": {
-      "kind": "tasks",
       "textSha256": "a1e133cda5269d92754cc990ea0aae42b2b7f2bf5b4a985ed6a0d63e3eb34379",
       "contextSha256": "02369374837a279cde76f90bada51dfe5c3696415461345554d72e07a81d7c47",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-a-q2-ii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-a-q2-ii": "b3ce28d7321f42b68c94127d8e336f8898fa6e7aecd99add8665141a961682b2"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p15-pdf-38-dcadd13c19e2": {
-      "kind": "tasks",
       "textSha256": "dcadd13c19e276bf7c7492c000406901082b295d548b547b5c51baeef21113b4",
       "contextSha256": "eb70acad4330a4a3a534b815765ac927bfa703244a14ab622a8f8d3aea82261e",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-a-q2-iii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-a-q2-iii": "418c04c1c470f755e3417eb49643687d054f09e0e7d14251a311ead2b27d1cf3"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p16-pdf-29-fcd7e4cefa5e": {
-      "kind": "tasks",
       "textSha256": "fcd7e4cefa5e89243cf2ae3675a0e09ea93382ac2e665ea1826f0e8b9e154183",
       "contextSha256": "1ea530d334490c572ad261dc76296e72b544302fe5b13a7ce8da30e490c5b6fd",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-b-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-b-q1-b": "7062a40cb2701d54bcee6c1f806531b9f1f8f2f4bb50e1a440d534e4ea66d8b8"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p16-pdf-41-b4e5ae4bac40": {
-      "kind": "tasks",
       "textSha256": "b4e5ae4bac40a4e92a9b606ffbfb1ded66a7ca70db548d8f88b170bcd1adf9f5",
       "contextSha256": "9bb7d01033e1d76ee8b680a9c8b6344f6daef36371bc0fcd470b3b01339e512b",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-b-q2-ii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-b-q2-ii": "bd3758ceeda3964e83d53caa68855df46e158f29346beafb66879206c19647ef"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p16-pdf-46-dcadd13c19e2": {
-      "kind": "tasks",
       "textSha256": "dcadd13c19e276bf7c7492c000406901082b295d548b547b5c51baeef21113b4",
       "contextSha256": "436e46475af40a2a003fa9810eab0d7e93da014c8cbf6285ca3ed51f1fa97734",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-b-q2-iii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-b-q2-iii": "d3fa239988545665bfa77c104a8db27c7192639256f9009c6537a513cf595ed1"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p17-pdf-27-fcd7e4cefa5e": {
-      "kind": "tasks",
       "textSha256": "fcd7e4cefa5e89243cf2ae3675a0e09ea93382ac2e665ea1826f0e8b9e154183",
       "contextSha256": "e5fe4380cb398e55f708a1143e93c767d7c36cdac519039cc08a64985e482b29",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-c-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-c-q1-b": "1379f42b8b50b145c5ec196400d6ee24366ea974ca8e505ceca779d9836d1f8d"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p17-pdf-38-c124d235c8c0": {
-      "kind": "tasks",
       "textSha256": "c124d235c8c06942c9bc54d2a8735d543f903b018e55511366fd03dd6f4a9cb1",
       "contextSha256": "8ed02176b3026bd431f077808dae1b13882c766b21a2dbd8b7366de82d626acc",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-c-q2-ii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-c-q2-ii": "f62a1b1196f19e8fb0e814ba048e114dcd630eb338a8052da566adb713b2c862"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p17-pdf-43-dcadd13c19e2": {
-      "kind": "tasks",
       "textSha256": "dcadd13c19e276bf7c7492c000406901082b295d548b547b5c51baeef21113b4",
       "contextSha256": "2b61f8884305cda13a30225334c9c6df9282c8636951eec7836036ccf21d6511",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-c-q2-iii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-c-q2-iii": "9e8267d27c34a0a1deee9e46c247e9cb84139a188dfe39d96c87cf33a6ca6f37"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p17-pdf-47-cc7bc7171258": {
-      "kind": "tasks",
       "textSha256": "cc7bc717125880148498ccf112f2993b85457a068831c38f59ca649bd97e3dd6",
       "contextSha256": "4322a0fc272212e40391e301844e55c870ee91b116df7cb4ccbf405d83a226d1",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-c-q2-iii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-c-q2-iii": "9e8267d27c34a0a1deee9e46c247e9cb84139a188dfe39d96c87cf33a6ca6f37"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p18-pdf-33-d3a64795ce57": {
-      "kind": "tasks",
       "textSha256": "d3a64795ce570c19980e577fd1f8526709ab55b4c8c6ceb6a8c10e7a24dfa52c",
       "contextSha256": "1e19606231f580ce98e949ce2cbbcf984945ccd04e720dafd0c432374775ce60",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-d-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-d-q1-b": "348fa717c160743530b367c11904f6bea262791a61b1ba0013dde6db037132c8"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p18-pdf-45-339441ff9610": {
-      "kind": "tasks",
       "textSha256": "339441ff961046955ebd66e8173cd8308603c406109bb6dbb06d9bb87f75a9fb",
       "contextSha256": "05192a656c77152dbb8d83a063905754673769d3540b5aa00d238e0de13bbb10",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-d-q2-ii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-d-q2-ii": "09d6d3b7c8cfc6f4ebb2dcdabf0fa78fb00ff8af31f22241725994cac3c53a72"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p18-pdf-50-dcadd13c19e2": {
-      "kind": "tasks",
       "textSha256": "dcadd13c19e276bf7c7492c000406901082b295d548b547b5c51baeef21113b4",
       "contextSha256": "814a29201eb9a62702b335ca47082008d0272e33286f46492ff63a534bd51bfb",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-d-q2-iii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-d-q2-iii": "6bc3ac9f41152f1207115afba890efd83170478ef31a530550d5eaab924707e6"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p19-pdf-33-9e55d20d3dd0": {
-      "kind": "tasks",
       "textSha256": "9e55d20d3dd0a2aab9efa5cebe7a8d8209807d9194c06457becb00ecb910923e",
       "contextSha256": "197d60199b6d287181e133ff292ee467833f2a4c1991ff71f8d2827fb7d8b716",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-e-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-e-q1-b": "a298a6d3d621539720e18344abd6741d2ccc53798842f8bec28d4badca843e6f"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p19-pdf-45-ef39557fecc5": {
-      "kind": "tasks",
       "textSha256": "ef39557fecc5b55ac2df8a9d2d666f7172e3447404c1043ee6a51e2da1a242a7",
       "contextSha256": "cf0f7e01a1b17b29a12d04f249b0ca25835e41d64c1388d4eed8d1c5d2c16b75",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-e-q2-ii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-e-q2-ii": "fa112be9781cd3dfcf8ae0deffa61fcfabeedbba76413553bb80e99482d84030"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p19-pdf-51-dcadd13c19e2": {
-      "kind": "tasks",
       "textSha256": "dcadd13c19e276bf7c7492c000406901082b295d548b547b5c51baeef21113b4",
       "contextSha256": "e7695f3774e77d0ddb23968d4cc590fedb4f81ec21bde65668ccbb8e626ff1a5",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-e-q2-iii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-e-q2-iii": "4ba40c64f779f649fcc6921c81a668d501d479b44cc2662bade6c7d77c503956"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p20-pdf-32-fcd7e4cefa5e": {
-      "kind": "tasks",
       "textSha256": "fcd7e4cefa5e89243cf2ae3675a0e09ea93382ac2e665ea1826f0e8b9e154183",
       "contextSha256": "9c72af459daa14a6b53425b408b5c2ce475b37c2590ab463dfb95063877ed7e1",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-f-q1-b"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-f-q1-b": "d232f37e19ceb2f5602b891fd83754e91b1aefbaa9a434a00901bbd111658861"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p20-pdf-44-d22e4ebd666b": {
-      "kind": "tasks",
       "textSha256": "d22e4ebd666b7dbafdb43ef3d2493f467c7bc912ba3d052de8e39e71d05e4efc",
       "contextSha256": "6babc9f4da620d58ef46785ae503d4038988a8f9decb573891c4cf37ea58862b",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-f-q2-ii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-f-q2-ii": "c124a7989191e0dcf7e43fd3cc92a5cc44fce5d76682ad9e711a9d9f78c3d228"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2022-ol-p2-p20-pdf-50-dcadd13c19e2": {
-      "kind": "tasks",
       "textSha256": "dcadd13c19e276bf7c7492c000406901082b295d548b547b5c51baeef21113b4",
       "contextSha256": "aca9dd3f280e7036ecbb778b51d647f45139fa87c211caf9c9172c0a4b6167af",
+      "kind": "tasks",
       "taskIds": [
         "english-2022-ol-p2-prescribed-f-q2-iii"
       ],
       "taskSha256": {
         "english-2022-ol-p2-prescribed-f-q2-iii": "900957eb16b31228ad702c8bdce3d031a81e3ef537a4339898bf5a7ccb562cb0"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2023-hl-p2-p4-pdf-20-9c7441ab7ff4": {
       "textSha256": "9c7441ab7ff4025a7cb57ecb829512dfb6748a95d8ef2d6c9d7a98ac61d2eab8",
@@ -37860,6 +37814,300 @@
     "english-2022-ol-p1-p12-pdf-24-fcd02c5a3dcf": {
       "textSha256": "fcd02c5a3dcfa50c2564b9cdeb6f85b634a5fd7665ecec429a0d945e2768970e",
       "contextSha256": "5358d63dc350179e04d5b2d2e3be19c8a0ba4f5870211b607759ed5af94bdda9",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2022-ol-p2-p1-pdf-9-01d05e417585": {
+      "textSha256": "01d05e4175856835bc1dbb07ac6ca54a727e770d8a3ab9a372256353d82c25d0",
+      "contextSha256": "0ecb147a7202f5d273f63b9e290dbe0946b9897b95fe90388b640184a61fba1f",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p1-pdf-10-f3e51dcfaf84": {
+      "textSha256": "f3e51dcfaf84be5e55dc19d83e7faa9ce10f1a9a3dff846b03504324741e5ec1",
+      "contextSha256": "5f07249dc429e9a99573577c1ad60fec0bba2a427cc61e66b77b56bf76b66e7a",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p2-pdf-5-f00d9cb064c9": {
+      "textSha256": "f00d9cb064c91cd7cb3f06b614acdaaeaf26d63420b80d4b44be1a72b4454ddf",
+      "contextSha256": "fe3bf135bb4e32dce641a4496642a629f19e61f7709859253f02f8aa9059c7e3",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p3-pdf-3-f00d9cb064c9": {
+      "textSha256": "f00d9cb064c91cd7cb3f06b614acdaaeaf26d63420b80d4b44be1a72b4454ddf",
+      "contextSha256": "ec636e7e1d98e2401895c268bc2922618e817b86b5d93b89116c117c86639655",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p4-pdf-3-f00d9cb064c9": {
+      "textSha256": "f00d9cb064c91cd7cb3f06b614acdaaeaf26d63420b80d4b44be1a72b4454ddf",
+      "contextSha256": "c2d3a7c8ec54b103f70af892b5cb8a66b5fcfd734c5b9e19be8ecb8b1a2c4550",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p5-pdf-2-f00d9cb064c9": {
+      "textSha256": "f00d9cb064c91cd7cb3f06b614acdaaeaf26d63420b80d4b44be1a72b4454ddf",
+      "contextSha256": "876070d53d3936e741960cbf2331b86a44ed03e7f9b793dcde8b73d48f0f2865",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p6-pdf-3-f00d9cb064c9": {
+      "textSha256": "f00d9cb064c91cd7cb3f06b614acdaaeaf26d63420b80d4b44be1a72b4454ddf",
+      "contextSha256": "184f2cdc0a921d2fd04e576ce57b9100e92cb82a1fb79aca25a7b2ed5bb30116",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p7-pdf-3-f00d9cb064c9": {
+      "textSha256": "f00d9cb064c91cd7cb3f06b614acdaaeaf26d63420b80d4b44be1a72b4454ddf",
+      "contextSha256": "b3f24e824138927e87000b303956ec5545eec9d17df6b0f9de1ab1622c520f25",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p8-pdf-3-f00d9cb064c9": {
+      "textSha256": "f00d9cb064c91cd7cb3f06b614acdaaeaf26d63420b80d4b44be1a72b4454ddf",
+      "contextSha256": "0c9ba66099edbff046c63a3e5fd3bbd38c392d71167de64c2292fec9fa3c3572",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p9-pdf-3-f00d9cb064c9": {
+      "textSha256": "f00d9cb064c91cd7cb3f06b614acdaaeaf26d63420b80d4b44be1a72b4454ddf",
+      "contextSha256": "b0ec99e31774c4d62eedb6232c12fa64c32365b99fe571cda82cded899484aeb",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p10-pdf-3-f00d9cb064c9": {
+      "textSha256": "f00d9cb064c91cd7cb3f06b614acdaaeaf26d63420b80d4b44be1a72b4454ddf",
+      "contextSha256": "9684934a92e64ce068268167a6839e072c5f14287484c048afc5acf35144d05e",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p11-pdf-2-a3a046e912eb": {
+      "textSha256": "a3a046e912ebf84a27503539f7d486928eb0e969cbf4096b6ea46c1fd3a2e84a",
+      "contextSha256": "d61aadb836bff91acbf58c594784785599c730694bc75e766c63a7642b705f90",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p11-pdf-28-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "bdb8c2811fc3c1cd79f84ead90e22d1a2a561e3eca6f71e95bb65de5920cae8c",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p12-pdf-4-265d3aadbf30": {
+      "textSha256": "265d3aadbf30486c23c7e17522bc3fed72e7ec6a742e777f36810880435e35e0",
+      "contextSha256": "f72bae3b9f748e5462567e05124bc647d61077da2a75e120e6b461cd9ce253cd",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-ol-p2-comparative-b-q1-a-i"
+      ],
+      "taskSha256": {
+        "english-2022-ol-p2-comparative-b-q1-a-i": "63d0c84fb700ce06c05af55c629ec1c8f070f76af82aa3718ae0ff86c150f64e"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-ol-p2-p12-pdf-17-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "da9b16ac6704568f3ceb5f3a394de35e31b46928a3d218c3119874b250d3dd02",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p13-pdf-4-a043c5c07c05": {
+      "textSha256": "a043c5c07c056861d6c0308cbb43a03ccd5434c5433e89fd21ce223638c79195",
+      "contextSha256": "b11bba3a930ce4e9b25f85a31895f652d83c54d1e2817d7f7e0557956eaefcee",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-ol-p2-comparative-c-q1-a-i"
+      ],
+      "taskSha256": {
+        "english-2022-ol-p2-comparative-c-q1-a-i": "f68fa1f901de105f80a69f77998494b7010c50370707fa7cb379e1abf1ce1f59"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-ol-p2-p13-pdf-18-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "82a3638899a2d98c4818e3c5e39fdd20c24d125a3262be6709f83ae21138f181",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p13-pdf-20-d708f3c94191": {
+      "textSha256": "d708f3c9419127d59e1bd5c8be960e352f44ca494a984263c224fe7f3a5e5f50",
+      "contextSha256": "2782d5522c4c0a3b0fc73c8540388a629e7ed63b24f2564ba4d2805033b5439e",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2022-ol-p2-comparative-c-q2-a-i"
+      ],
+      "taskSha256": {
+        "english-2022-ol-p2-comparative-c-q2-a-i": "9f79007e082286ac176e950093a0c283e26ea0a12a1b796bf61b17d355718f81"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2022-ol-p2-p14-pdf-2-f423cf87d537": {
+      "textSha256": "f423cf87d5378e1aca5fbd1209ec6f95f75162e5890477c37c7ac7c10d318e85",
+      "contextSha256": "7592c654b9bbbaa0cb362eef84f86b6a21a796f1dd139dd45a5e171afd412c04",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p14-pdf-5-70337a2b8b58": {
+      "textSha256": "70337a2b8b58d480c6578f5fc44c4eb48b71a90284c34773e6e8fc2751477170",
+      "contextSha256": "72655816bd1ac7c4c1323aa0fc9d722037132d14d16ebc64d7c221ce65829e3e",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-ol-p2-p15-pdf-2-9662f230051b": {
+      "textSha256": "9662f230051b07772f7b27655fa59f5e5407b6f53beed78ffcc226da5267a3e0",
+      "contextSha256": "d163c82adfc7510d543f0e02fa8e8e09a3d5eb0973a1cd382e1cf16d1fbcc21d",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p15-pdf-14-9ce3bfbd0ab5": {
+      "textSha256": "9ce3bfbd0ab5e52fd259adcd2bf24b30c1eca7a35557cb7e4834678f10ad6ec9",
+      "contextSha256": "aea1de2321dd0c8e57765faa7b21156895fd7ae7fde1ac06b4281ae1d501540d",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-ol-p2-p15-pdf-26-e582fec8ec27": {
+      "textSha256": "e582fec8ec2756e2854b83d8d9707154dae129a8f794a0d41aab94af2934b210",
+      "contextSha256": "cef97cbfd15359f6610753fa24e58a30576418229e9a1a34df8aca959ffd3c9b",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p15-pdf-31-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "80e9e91b79d41e2b979c0c37a882b52ae3f2fcf83570f0b6fd7c0b17d084bb27",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p15-pdf-36-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "47a722156cad229ab58ccb1e2dbf9b7d7a1cd23cff1ba468e5151f578d71e026",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p16-pdf-34-e582fec8ec27": {
+      "textSha256": "e582fec8ec2756e2854b83d8d9707154dae129a8f794a0d41aab94af2934b210",
+      "contextSha256": "e435308362eba330fb4e05f6026ddf210ef46de58b9447463ed9f72c205fa686",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p16-pdf-39-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "d848e1d3965949abc68ca9d037198b468fedf7faf64763a655952a9102e38b15",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p16-pdf-44-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "80cbc93909b0a4ec250486a95bae734024ebfba7dc44efd7f8003abb4681327e",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p17-pdf-31-e582fec8ec27": {
+      "textSha256": "e582fec8ec2756e2854b83d8d9707154dae129a8f794a0d41aab94af2934b210",
+      "contextSha256": "cef97cbfd15359f6610753fa24e58a30576418229e9a1a34df8aca959ffd3c9b",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p17-pdf-36-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "6e1c9b4e9a3d04cc58c88817f76c9bb8b5b650449467df6859dc690a36235d54",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p17-pdf-41-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "0e6bf9468186f7f05c2fbdcd27caac960087cecfbe99864f8a41050a2ecea3b7",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p18-pdf-21-20cc44364a2a": {
+      "textSha256": "20cc44364a2a004433aa7fbc2f5b4edc83f5f86ec8835527add0d67e4d128b31",
+      "contextSha256": "2eb0ec0f93ac1738f88daec367f8352e2b853716bd5474e5a2a37d0fe067988e",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-ol-p2-p18-pdf-38-e582fec8ec27": {
+      "textSha256": "e582fec8ec2756e2854b83d8d9707154dae129a8f794a0d41aab94af2934b210",
+      "contextSha256": "e435308362eba330fb4e05f6026ddf210ef46de58b9447463ed9f72c205fa686",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p18-pdf-43-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "6a64141f59b1f61a594f87b1090acefdd40e2e7331590e2dd3f843eca9d85070",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p18-pdf-48-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "47a722156cad229ab58ccb1e2dbf9b7d7a1cd23cff1ba468e5151f578d71e026",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p19-pdf-2-1098fb7584fb": {
+      "textSha256": "1098fb7584fbcd9e742b9c64594834665766df71dd9f690cc636474989bd3ae6",
+      "contextSha256": "9730a4bad4446b82e31d0bfabd2423546f15db31f30da929a388bacca2b338dc",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-ol-p2-p19-pdf-9-f32b460dd6bc": {
+      "textSha256": "f32b460dd6bc7ec5fc1d746648d2598049b57990989d7b442ed3be726844d1da",
+      "contextSha256": "782fdc3394132f1e3ba6808da281c458492c8c1c95483a65c4b61aa369a51154",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2022-ol-p2-p19-pdf-38-e582fec8ec27": {
+      "textSha256": "e582fec8ec2756e2854b83d8d9707154dae129a8f794a0d41aab94af2934b210",
+      "contextSha256": "e435308362eba330fb4e05f6026ddf210ef46de58b9447463ed9f72c205fa686",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p19-pdf-43-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "cb3eb1729139b39d734eb0d23e81afedd2f3701a1aa2edddb8cbcdc962e9b51d",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p19-pdf-48-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "724a2750c2afb2caf0b3c52d81680ba348d7cf95802951c5d4f822e877762af8",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p20-pdf-37-e582fec8ec27": {
+      "textSha256": "e582fec8ec2756e2854b83d8d9707154dae129a8f794a0d41aab94af2934b210",
+      "contextSha256": "95ff6e52a159b18b6dcf41277f3f6b494583c2289b5296ed774694ef5bc13001",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p20-pdf-42-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "9be5f4688319ee588fa3dab6cb4312705ec520aa4e5194070632791d98a1667b",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p20-pdf-47-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "724a2750c2afb2caf0b3c52d81680ba348d7cf95802951c5d4f822e877762af8",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2022-ol-p2-p20-pdf-56-0f0b55883faa": {
+      "textSha256": "0f0b55883faaaa214949b2df25832f2940084d04eec72e6b32ac8aa92dd67625",
+      "contextSha256": "e05fac6d7ad2e776b431643ae3ee7fa74b04c90b48566d596185d2cae17a95b2",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2022-ol-p2-p20-pdf-58-ec6be85d8ec1": {
+      "textSha256": "ec6be85d8ec1012fc89ce79e31da96dc66f08b15860e8e0f536b83848f649c3e",
+      "contextSha256": "1aac7862107f9b7faa11495e7869f9303c6bbf20193f99eb9e1027c081f3ef46",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2022-ol-p2-p20-pdf-59-fc1ef163eb2b": {
+      "textSha256": "fc1ef163eb2b8bd9b50eea17adfb52d40a0779ece28102bc640b3f66f9ed7f57",
+      "contextSha256": "0a11a7500b03d205d1c865538e99ea564c903fbe90aa2f7db28fc8ef2bc5a654",
       "kind": "non-selection",
       "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
     }

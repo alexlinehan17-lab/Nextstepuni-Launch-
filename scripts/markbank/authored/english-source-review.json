@@ -4354,6 +4354,28 @@
       "paperSha256": "2f9b85a97eb75a741cee4847b574d3d9702d78f92a3a8658632fb073d989669c",
       "questionSha256": "71f7b47293d0ccfd1aac7618e8aadbc0492bfef0c130a15394895976b929c21e",
       "reason": "Self-contained: one way International Friendship Day could be celebrated in the candidate’s school or workplace. Scheme PDF10 never refers to TEXT 3. The same task is printed under all three texts."
+    },
+    "english-2022-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Library Van",
+      "pages": [
+        14
+      ],
+      "attribution": "The Library Van — Elaine Gaston, as reproduced in the SEC 2022 paper.",
+      "questionSha256": "0c345f15c2ccbd8e3f7fe74418e4c1029b03b8874c03ca1d45c6287e09520311",
+      "reason": "Paper PDF14 prints the introduction (Elaine Gaston remembers visits from the mobile library to her home in Antrim), the title, both stanzas (11 + 11 lines), the byline and the two glosses (the Sperrins; the cardboard ticket) above both questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
+    },
+    "english-2022-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Library Van",
+      "pages": [
+        14
+      ],
+      "attribution": "The Library Van — Elaine Gaston, as reproduced in the SEC 2022 paper.",
+      "questionSha256": "3f042d148cda4b3e7dedc457c6ed51d41367ba4bf9ecc1debeddee3398db1bc9",
+      "reason": "Paper PDF14 prints the introduction (Elaine Gaston remembers visits from the mobile library to her home in Antrim), the title, both stanzas (11 + 11 lines), the byline and the two glosses (the Sperrins; the cardboard ticket) above both questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
     }
   }
 }

@@ -103,6 +103,17 @@
    "schemeSha256": "d3eb474c27b644da5779765503e9634eff5d9ac414e56199e6a00c76073bbd85"
   },
   {
+   "paperId": "english-2022-ol-p2",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "tasks": 104,
+   "cards": 101,
+   "printedDuplicates": 3,
+   "paperSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+   "schemeSha256": "d3eb474c27b644da5779765503e9634eff5d9ac414e56199e6a00c76073bbd85"
+  },
+  {
    "paperId": "english-2018-ol-p1",
    "year": 2018,
    "level": "ordinary",
@@ -1495,6 +1506,7 @@
  "legacyAdditionalSources": {},
  "bridgedPapers": [
   "english-2022-ol-p1",
+  "english-2022-ol-p2",
   "english-2023-ol-p1",
   "english-2023-ol-p2",
   "english-2024-ol-p1",
@@ -1521,6 +1533,74 @@
   "english-2022-ol-p1-t3-a-i",
   "english-2022-ol-p1-t3-a-ii",
   "english-2022-ol-p1-t3-b",
+  "english-2022-ol-p2-comparative-a-q1",
+  "english-2022-ol-p2-comparative-a-q2",
+  "english-2022-ol-p2-comparative-b-q1",
+  "english-2022-ol-p2-comparative-b-q2",
+  "english-2022-ol-p2-comparative-c-q1",
+  "english-2022-ol-p2-comparative-c-q2",
+  "english-2022-ol-p2-prescribed-a-q1",
+  "english-2022-ol-p2-prescribed-a-q2-i",
+  "english-2022-ol-p2-prescribed-a-q2-ii",
+  "english-2022-ol-p2-prescribed-a-q2-iii",
+  "english-2022-ol-p2-prescribed-b-q1",
+  "english-2022-ol-p2-prescribed-b-q2-i",
+  "english-2022-ol-p2-prescribed-b-q2-ii",
+  "english-2022-ol-p2-prescribed-b-q2-iii",
+  "english-2022-ol-p2-prescribed-c-q1",
+  "english-2022-ol-p2-prescribed-c-q2-i",
+  "english-2022-ol-p2-prescribed-c-q2-ii",
+  "english-2022-ol-p2-prescribed-c-q2-iii",
+  "english-2022-ol-p2-prescribed-d-q1",
+  "english-2022-ol-p2-prescribed-d-q2-i",
+  "english-2022-ol-p2-prescribed-d-q2-ii",
+  "english-2022-ol-p2-prescribed-d-q2-iii",
+  "english-2022-ol-p2-prescribed-e-q1",
+  "english-2022-ol-p2-prescribed-e-q2-i",
+  "english-2022-ol-p2-prescribed-e-q2-ii",
+  "english-2022-ol-p2-prescribed-e-q2-iii",
+  "english-2022-ol-p2-prescribed-f-q1",
+  "english-2022-ol-p2-prescribed-f-q2-i",
+  "english-2022-ol-p2-prescribed-f-q2-ii",
+  "english-2022-ol-p2-prescribed-f-q2-iii",
+  "english-2022-ol-p2-single-a-q1",
+  "english-2022-ol-p2-single-a-q2",
+  "english-2022-ol-p2-single-a-q3",
+  "english-2022-ol-p2-single-a-q4",
+  "english-2022-ol-p2-single-b-q1",
+  "english-2022-ol-p2-single-b-q2",
+  "english-2022-ol-p2-single-b-q3",
+  "english-2022-ol-p2-single-b-q4",
+  "english-2022-ol-p2-single-c-q1",
+  "english-2022-ol-p2-single-c-q2",
+  "english-2022-ol-p2-single-c-q3",
+  "english-2022-ol-p2-single-c-q4",
+  "english-2022-ol-p2-single-d-q1",
+  "english-2022-ol-p2-single-d-q2",
+  "english-2022-ol-p2-single-d-q3",
+  "english-2022-ol-p2-single-d-q4",
+  "english-2022-ol-p2-single-e-q1",
+  "english-2022-ol-p2-single-e-q2",
+  "english-2022-ol-p2-single-e-q3",
+  "english-2022-ol-p2-single-e-q4",
+  "english-2022-ol-p2-single-f-q1",
+  "english-2022-ol-p2-single-f-q2",
+  "english-2022-ol-p2-single-f-q3",
+  "english-2022-ol-p2-single-f-q4",
+  "english-2022-ol-p2-single-g-q1",
+  "english-2022-ol-p2-single-g-q2",
+  "english-2022-ol-p2-single-g-q3",
+  "english-2022-ol-p2-single-g-q4",
+  "english-2022-ol-p2-single-h-q1",
+  "english-2022-ol-p2-single-h-q2",
+  "english-2022-ol-p2-single-h-q3",
+  "english-2022-ol-p2-single-h-q4",
+  "english-2022-ol-p2-single-i-q1",
+  "english-2022-ol-p2-single-i-q2",
+  "english-2022-ol-p2-single-i-q3",
+  "english-2022-ol-p2-single-i-q4",
+  "english-2022-ol-p2-unseen-q1",
+  "english-2022-ol-p2-unseen-q2",
   "english-2023-ol-p1-composing-1",
   "english-2023-ol-p1-composing-2",
   "english-2023-ol-p1-composing-3",
@@ -1791,6 +1871,27 @@
   "english-2022-ol-p1-t2-a-iii-b": "english-2022-ol-p1-t1-a-iii-b",
   "english-2022-ol-p1-t3-a-iii-a": "english-2022-ol-p1-t1-a-iii-a",
   "english-2022-ol-p1-t3-a-iii-b": "english-2022-ol-p1-t1-a-iii-b",
+  "english-2022-ol-p2-comparative-a-q1": "english-2022-ol-p2-comparative-a-q1-a-i",
+  "english-2022-ol-p2-comparative-a-q2": "english-2022-ol-p2-comparative-a-q2-a-i",
+  "english-2022-ol-p2-comparative-b-q1": "english-2022-ol-p2-comparative-b-q1-a-i",
+  "english-2022-ol-p2-comparative-b-q2": "english-2022-ol-p2-comparative-b-q2-a-i",
+  "english-2022-ol-p2-comparative-c-q1": "english-2022-ol-p2-comparative-c-q1-a-i",
+  "english-2022-ol-p2-comparative-c-q2": "english-2022-ol-p2-comparative-c-q2-a-i",
+  "english-2022-ol-p2-prescribed-a-q1": "english-2022-ol-p2-prescribed-a-q1-a",
+  "english-2022-ol-p2-prescribed-b-q1": "english-2022-ol-p2-prescribed-b-q1-a",
+  "english-2022-ol-p2-prescribed-c-q1": "english-2022-ol-p2-prescribed-c-q1-a",
+  "english-2022-ol-p2-prescribed-d-q1": "english-2022-ol-p2-prescribed-d-q1-a",
+  "english-2022-ol-p2-prescribed-e-q1": "english-2022-ol-p2-prescribed-e-q1-a",
+  "english-2022-ol-p2-prescribed-f-q1": "english-2022-ol-p2-prescribed-f-q1-a",
+  "english-2022-ol-p2-single-a-q1": "english-2022-ol-p2-single-a-q1-a",
+  "english-2022-ol-p2-single-b-q1": "english-2022-ol-p2-single-b-q1-a",
+  "english-2022-ol-p2-single-c-q1": "english-2022-ol-p2-single-c-q1-a",
+  "english-2022-ol-p2-single-d-q1": "english-2022-ol-p2-single-d-q1-a",
+  "english-2022-ol-p2-single-e-q1": "english-2022-ol-p2-single-e-q1-a",
+  "english-2022-ol-p2-single-f-q1": "english-2022-ol-p2-single-f-q1-a",
+  "english-2022-ol-p2-single-g-q1": "english-2022-ol-p2-single-g-q1-a",
+  "english-2022-ol-p2-single-h-q1": "english-2022-ol-p2-single-h-q1-a",
+  "english-2022-ol-p2-single-i-q1": "english-2022-ol-p2-single-i-q1-a",
   "english-2023-ol-p1-t2-a-iii-a": "english-2023-ol-p1-t1-a-iii-a",
   "english-2023-ol-p1-t3-a-iii-a": "english-2023-ol-p1-t1-a-iii-a",
   "english-2023-ol-p2-comparative-a-q1": "english-2023-ol-p2-comparative-a-q1-a-i",
@@ -1861,7 +1962,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1303,
+ "cardCount": 1404,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -20705,6 +20806,3740 @@
    "atlas": {
     "fileid": "LC002GLP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-a-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text A Q1(a)",
+   "questionText": "Identify a relationship, between two characters, that you found fascinating in Marina Carr’s play, By the Bog of Cats. Explain one reason why this relationship fascinated you. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-a-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text A Q1(b)",
+   "questionText": "Identify a moment in the text which revealed something important about this relationship and explain what this moment taught you about the relationship. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-a-q1-c",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text A Q1(c)",
+   "questionText": "Did this relationship change or remain the same during the course of the text? Explain your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-a-q2",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text A Q2",
+   "questionText": "Write the text of a talk you would deliver to your English class in which you explain the reasons why you do or do not agree with the following assertion:  Carthage should share some of the blame for Hester’s actions. Make three points in your response. Your talk should demonstrate your knowledge and understanding of Marina Carr’s play, By the Bog of Cats.",
+   "totalMarks": 35,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Use the conventions and register of the requested talk.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-a-q3",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text A Q3",
+   "questionText": "As the director of an amateur drama group, you have been interviewed by a local radio station ahead of the opening night of your production of Marina Carr’s play, By the Bog of Cats. In the interview you were asked to:  give listeners an overview of what the play is about  explain the greatest challenge you had to overcome in staging the play  give reasons why you think listeners should go to see the production. Write the text of the interview you gave. Your interview should demonstrate your knowledge and understanding of Marina Carr’s play, By the Bog of Cats.",
+   "totalMarks": 35,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    21,
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-a-q4",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text A Q4",
+   "questionText": "Marina Carr’s play, By the Bog of Cats, has been described as, “cruel, frightening and unforgettable”. Explain the reasons why you do or do not agree that this is an accurate description of the play. Support your answer with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-b-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text B Q1(a)",
+   "questionText": "Identify a relationship, between two characters, in Anthony Doerr’s novel, All the Light We Cannot See, that you found fascinating and explain one reason why this relationship fascinated you. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-b-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text B Q1(b)",
+   "questionText": "Identify a moment in the text which revealed something important about this relationship and explain what this moment taught you about the relationship. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-b-q1-c",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text B Q1(c)",
+   "questionText": "Did this relationship change or remain the same during the course of the text? Explain your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-b-q2",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text B Q2",
+   "questionText": "Write the text of a talk you would deliver to your English class in which you explain the reasons why you do or do not agree with the following assertion:  Werner Pfennig is an entirely evil character. Make three points in your response. Your talk should demonstrate your knowledge and understanding of Anthony Doerr’s novel, All the Light We Cannot See.",
+   "totalMarks": 35,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Use the conventions and register of the requested talk.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-b-q3",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text B Q3",
+   "questionText": "You are Marie-Laure LeBlanc and you have been interviewed for a radio documentary about people who lived through World War II. In the interview you were asked to:  give listeners a sense of what your life was like before the war  explain how your life changed during the course of the war  share some of your most vivid memories from the war years. Write the text of the interview you gave. Your interview should demonstrate your knowledge and understanding of Anthony Doerr’s novel, All the Light We Cannot See.",
+   "totalMarks": 35,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-b-q4",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text B Q4",
+   "questionText": "Anthony Doerr’s novel, All the Light We Cannot See, has been described as, “realistic, frightening and inspiring”. Explain the reasons why you do or do not agree that this is an accurate description of the novel. Support your answer with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-8",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "All the Light We Cannot See (Anthony Doerr)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-c-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text C Q1(a)",
+   "questionText": "Identify a relationship, between two characters, in Emma Donoghue’s novel, Room, that you found fascinating and explain one reason why this relationship fascinated you. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-c-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text C Q1(b)",
+   "questionText": "Identify a moment in the text which revealed something important about this relationship and explain what this moment taught you about the relationship. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-c-q1-c",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text C Q1(c)",
+   "questionText": "Did this relationship change or remain the same during the course of the text? Explain your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-c-q2",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text C Q2",
+   "questionText": "Write the text of a talk you would deliver to your English class in which you explain the reasons why you do or do not agree with the following assertion:  Ma and Jack were treated very badly by the media in Emma Donoghue’s novel, Room. Make three points in your response. Your talk should demonstrate your knowledge and understanding of Emma Donoghue’s novel, Room.",
+   "totalMarks": 35,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Use the conventions and register of the requested talk.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-c-q3",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text C Q3",
+   "questionText": "You are Police Officer Oh and you have been interviewed as part of a radio documentary about the rescue of Ma and Jack. In the interview you were asked to:  give some information about how Ma was rescued after Jack’s escape from Room  describe the conditions under which Ma and Jack were forced to live in Room  share the impression you formed of both Ma and Jack. Write the text of the interview you gave. Your interview should demonstrate your knowledge and understanding of Emma Donoghue’s novel, Room.",
+   "totalMarks": 35,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    27,
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-c-q4",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text C Q4",
+   "questionText": "Emma Donoghue’s novel, Room, has been described as, “realistic, disturbing and unforgettable”. Explain the reasons why you do or do not agree that this is an accurate description of the novel. Support your answer with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-d-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text D Q1(a)",
+   "questionText": "Identify a relationship, between two characters, in Brian Friel’s play, Philadelphia, Here I Come!, that you found fascinating and explain one reason why this relationship fascinated you. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-d-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text D Q1(b)",
+   "questionText": "Identify a moment in the text which revealed something important about this relationship and explain what this moment taught you about the relationship. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-d-q1-c",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text D Q1(c)",
+   "questionText": "Did this relationship change or remain the same during the course of the text? Explain your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-d-q2",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text D Q2",
+   "questionText": "Write the text of a talk you would deliver to your English class in which you explain the reasons why you do or do not agree with the following assertion:  We feel enormous sympathy for Madge. Make three points in your response. Your talk should demonstrate your knowledge and understanding of Friel’s play, Philadelphia, Here I Come!.",
+   "totalMarks": 35,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Use the conventions and register of the requested talk.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-d-q3",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text D Q3",
+   "questionText": "As the director of an amateur drama group, you have been interviewed by a local radio station ahead of the opening night of your production of Brian Friel’s play, Philadelphia, Here I Come!. In the interview you were asked to:  give listeners an overview of what the play is about  explain the greatest challenge you had to overcome in staging the play  give reasons why you think listeners should go to see the production. Write the text of the interview you gave. Your interview should demonstrate your knowledge and understanding of Brian Friel’s play, Philadelphia, Here I Come!.",
+   "totalMarks": 35,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-d-q4",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text D Q4",
+   "questionText": "Brian Friel’s play, Philadelphia, Here I Come!, has been described as, “realistic, moving and unforgettable”. Explain the reasons why you do or do not agree that this is an accurate description of the play. Support your answer with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-e-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text E Q1(a)",
+   "questionText": "Identify a relationship, between two characters, in Henrik Ibsen’s play, A Doll’s House, that you found fascinating and explain one reason why this relationship fascinated you. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-e-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text E Q1(b)",
+   "questionText": "Identify a moment in the text which revealed something important about this relationship and explain what this moment taught you about the relationship. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-e-q1-c",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text E Q1(c)",
+   "questionText": "Did this relationship change or remain the same during the course of the text? Explain your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-e-q2",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text E Q2",
+   "questionText": "Write the text of a talk you would deliver to your English class in which you explain the reasons why you do or do not agree with the following assertion:  Nora was right to leave her family at the end of the play. Make three points in your response. Your talk should demonstrate your knowledge and understanding of Henrik Ibsen’s play, A Doll’s House.",
+   "totalMarks": 35,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Use the conventions and register of the requested talk.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-e-q3",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text E Q3",
+   "questionText": "As the director of an amateur drama group, you have been interviewed by a local radio station ahead of the opening night of your production of Henrik Ibsen’s play, A Doll’s House. In the interview you were asked to:  give listeners an overview of what the play is about  explain the greatest challenge you had to overcome in staging the play  give reasons why you think listeners should go to see the production. Write the text of the interview you gave. Your interview should demonstrate your knowledge and understanding of Henrik Ibsen’s play, A Doll’s House.",
+   "totalMarks": 35,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-e-q4",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text E Q4",
+   "questionText": "Henrik Ibsen’s play, A Doll’s House, has been described as, “thought-provoking, disturbing and unforgettable”. Explain the reasons why you do or do not agree that this is an accurate description of the play. Support your answer with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-f-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text F Q1(a)",
+   "questionText": "Identify a relationship, between two characters, in Shakespeare’s play, Othello, that you found fascinating and explain one reason why this relationship fascinated you. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-3",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Othello (Shakespeare)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-f-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text F Q1(b)",
+   "questionText": "Identify a moment in the text which revealed something important about this relationship and explain what this moment taught you about the relationship. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-3",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Othello (Shakespeare)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-f-q1-c",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text F Q1(c)",
+   "questionText": "Did this relationship change or remain the same during the course of the text? Explain your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-3",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Othello (Shakespeare)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-f-q2",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text F Q2",
+   "questionText": "Write the text of a talk you would deliver to your English class in which you explain the reasons why you do or do not agree with the following assertion:  Iago is not particularly clever, he is just extremely lucky. Make three points in your response. Your talk should demonstrate your knowledge and understanding of Shakespeare’s play, Othello.",
+   "totalMarks": 35,
+   "topicId": "english-12-3",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Use the conventions and register of the requested talk.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Othello (Shakespeare)",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-f-q3",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text F Q3",
+   "questionText": "As the director of an amateur drama group, you have been interviewed by a local radio station ahead of the opening night of your production of Shakespeare’s play, Othello. In the interview you were asked to:  give listeners an overview of what the play is about  explain the greatest challenge you had to overcome in staging the play  give reasons why you think listeners should go to see the production. Write the text of the interview you gave. Your interview should demonstrate your knowledge and understanding of Shakespeare’s play, Othello.",
+   "totalMarks": 35,
+   "topicId": "english-12-3",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Othello (Shakespeare)",
+   "schemePages": [
+    36,
+    37
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-f-q4",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text F Q4",
+   "questionText": "Shakespeare’s play, Othello, has been described as, “thought-provoking, disturbing and unforgettable”. Explain the reasons why you do or do not agree that this is an accurate description of the play. Support your answer with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-3",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Othello (Shakespeare)",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-g-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text G Q1(a)",
+   "questionText": "Identify a relationship, between two characters, in Mary Shelley’s novel, Frankenstein, that you found fascinating and explain one reason why this relationship fascinated you. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-g-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text G Q1(b)",
+   "questionText": "Identify a moment in the text which revealed something important about this relationship and explain what this moment taught you about the relationship. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-g-q1-c",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text G Q1(c)",
+   "questionText": "Did this relationship change or remain the same during the course of the text? Explain your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-g-q2",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text G Q2",
+   "questionText": "Write the text of a talk you would deliver to your English class in which you explain the reasons why you do or do not agree with the following assertion:  It is difficult to feel any sympathy for Victor Frankenstein. Make three points in your response. Your talk should demonstrate your knowledge and understanding of Mary Shelley’s novel, Frankenstein.",
+   "totalMarks": 35,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Use the conventions and register of the requested talk.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-g-q3",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text G Q3",
+   "questionText": "You are Robert Walton and you have been interviewed for a newspaper article about your encounter with Victor Frankenstein. In the interview you were asked to:  explain to readers how you came to meet Victor Frankenstein  give readers an insight into aspects of his character  share some of the extraordinary things that he told you. Write the text of the interview you gave. Your interview should demonstrate your knowledge and understanding of Mary Shelley’s novel, Frankenstein.",
+   "totalMarks": 35,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-g-q4",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text G Q4",
+   "questionText": "Mary Shelley’s novel, Frankenstein, has been described as, “thought-provoking, disturbing and unforgettable”. Explain the reasons why you do or do not agree that this is an accurate description of the novel. Support your answer with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-12",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Frankenstein (Mary Shelley)",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-h-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text H Q1(a)",
+   "questionText": "Identify a relationship, between two characters, in Sara Taylor’s novel, The Lauras, that you found fascinating and explain one reason why this relationship fascinated you. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-24",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lauras (Sara Taylor)",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-h-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text H Q1(b)",
+   "questionText": "Identify a moment in the text which revealed something important about this relationship and explain what this moment taught you about the relationship. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-24",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lauras (Sara Taylor)",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-h-q1-c",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text H Q1(c)",
+   "questionText": "Did this relationship change or remain the same during the course of the text? Explain your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-24",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lauras (Sara Taylor)",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-h-q2",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text H Q2",
+   "questionText": "Write the text of a talk you would deliver to your English class in which you explain the reasons why you do or do not agree with the following assertion:  Alex’s mother should not have taken Alex on an unnecessary and dangerous adventure. Make three points in your response. Your talk should demonstrate your knowledge and understanding of Sara Taylor’s novel, The Lauras.",
+   "totalMarks": 35,
+   "topicId": "english-12-24",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Use the conventions and register of the requested talk.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lauras (Sara Taylor)",
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-h-q3",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text H Q3",
+   "questionText": "You are Alex and you have been interviewed for a series of radio documentaries about interesting journeys. In the interview you were asked to:  explain the purpose of the journey undertaken by you and your mother  give listeners an overview of some of the places you travelled to together  share some of the important lessons you learned during the course of the journey. Write the text of the interview you gave. Your interview should demonstrate your knowledge and understanding of Sara Taylor’s novel, The Lauras.",
+   "totalMarks": 35,
+   "topicId": "english-12-24",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lauras (Sara Taylor)",
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-h-q4",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text H Q4",
+   "questionText": "Sara Taylor’s novel, The Lauras, has been described as, “thought-provoking, disturbing and realistic”. Explain the reasons why you do or do not agree that this is an accurate description of the novel. Support your answer with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-24",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lauras (Sara Taylor)",
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-i-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text I Q1(a)",
+   "questionText": "Identify a relationship, between two characters, in Oscar Wilde’s novel, The Picture of Dorian Gray, that you found fascinating and explain one reason why this relationship fascinated you. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-i-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text I Q1(b)",
+   "questionText": "Identify a moment in the text which revealed something important about this relationship and explain what this moment taught you about the relationship. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-i-q1-c",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text I Q1(c)",
+   "questionText": "Did this relationship change or remain the same during the course of the text? Explain your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-i-q2",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text I Q2",
+   "questionText": "Write the text of a talk you would deliver to your English class in which you explain the reasons why you do or do not agree with the following assertion:  Lord Henry Wotton should share some of the blame for Dorian Gray’s actions. Make three points in your response. Your talk should demonstrate your knowledge and understanding of Oscar Wilde’s novel, The Picture of Dorian Gray.",
+   "totalMarks": 35,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Use the conventions and register of the requested talk.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-i-q3",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text I Q3",
+   "questionText": "You are Dorian Gray’s servant, Francis, and you have been interviewed for a newspaper article about Dorian Gray, following his recent death in mysterious circumstances. In the interview you were asked to:  give readers an insight into aspects of Dorian Gray’s character  describe the lifestyle of your former employer  share some of the strange or unusual things you had noticed about him. Write the text of the interview you gave. Your interview should demonstrate your knowledge and understanding of Oscar Wilde’s novel, The Picture of Dorian Gray.",
+   "totalMarks": 35,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-single-i-q4",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Single Text I Q4",
+   "questionText": "Oscar Wilde’s novel, The Picture of Dorian Gray, has been described as, “far-fetched, frightening and highly entertaining”. Explain the reasons why you do or do not agree that this is an accurate description of the novel. Support your answer with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-25",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Picture of Dorian Gray (Oscar Wilde)",
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-a-q1-a-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative A Q1(a)(i)",
+   "questionText": "Name one comparative text you have studied. Identify an aspect of the social setting of this text you would like to change if you had the power to do so. Explain why you would choose to make this particular change. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Social Setting",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-a-q1-a-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative A Q1(a)(ii)",
+   "questionText": "Name another comparative text you have studied. Identify an aspect of the social setting of this text you would like to change if you had the power to do so. Explain why you would choose to make this particular change. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Social Setting",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-a-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative A Q1(b)",
+   "questionText": "Compare the reasons why you would or would not like to live in the world you encountered in each of at least two texts on your comparative course. Support your answer with reference to the social settings evident in your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Social Setting",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-a-q2-a-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative A Q2(a)(i)",
+   "questionText": "Name one comparative text you have studied and identify an aspect of the social setting in this text that surprised or shocked you. Explain what you found surprising or shocking about this aspect of the social setting. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Social Setting",
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-a-q2-a-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative A Q2(a)(ii)",
+   "questionText": "Name another of your comparative texts and identify an aspect of the social setting in this text that surprised or shocked you. Explain what you found surprising or shocking about this aspect of the social setting. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Social Setting",
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-b-q1-a-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative B Q1(a)(i)",
+   "questionText": "Name one of the comparative texts you have studied and identify a relationship in it. Use one or more key moments to help explain whether this was an equal or an unequal relationship. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Relationships",
+   "schemePages": [
+    50
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-b-q1-a-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative B Q1(a)(ii)",
+   "questionText": "Name another comparative text you have studied and identify a relationship in it. Use one or more key moments to help explain whether this was an equal or an unequal relationship. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Relationships",
+   "schemePages": [
+    50
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-b-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative B Q1(b)",
+   "questionText": "Identify one relationship in each of at least two texts on your comparative course. Compare what you learned about developing positive relationships from studying both the good and the bad aspects of the relationships you have identified. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Relationships",
+   "schemePages": [
+    50
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-b-q2-a-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative B Q2(a)(i)",
+   "questionText": "Name one text you studied as part of your comparative course and identify a relationship in it. Outline one piece of advice you would offer to those involved in this relationship at an important moment in their relationship. Explain why you think this advice would be helpful at this time. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Relationships",
+   "schemePages": [
+    51
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-b-q2-a-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative B Q2(a)(ii)",
+   "questionText": "Name another text you studied as part of your comparative course and identify a relationship in it. Outline one piece of advice you would offer to those involved in this relationship at an important moment in their relationship. Explain why you think this advice would be helpful at this time. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Relationships",
+   "schemePages": [
+    51
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-c-q1-a-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative C Q1(a)(i)",
+   "questionText": "Name one text on your comparative course and identify a hero or a heroine or a villain you studied in it. Explain at least one reason why you do or do not believe this character is a good role model for teenagers. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Hero, Heroine, Villain",
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-c-q1-a-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative C Q1(a)(ii)",
+   "questionText": "Name another text on your comparative course and identify a hero or a heroine or a villain you studied in it. Explain at least one reason why you do or do not believe this character is a good role model for teenagers. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Hero, Heroine, Villain",
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-c-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative C Q1(b)",
+   "questionText": "Most characters, whether heroic or villainous, possess some kind of flaw or weakness. Identify a hero, heroine or villain from each of at least two texts on your comparative course and compare the flaws or weaknesses evident in each of these characters. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Hero, Heroine, Villain",
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-c-q2-a-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative C Q2(a)(i)",
+   "questionText": "Name one of your comparative texts and identify a hero, heroine or villain in it. Use one or more key moments to demonstrate how this character helped to make this text dramatic or exciting.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Hero, Heroine, Villain",
+   "schemePages": [
+    53
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-comparative-c-q2-a-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Comparative C Q2(a)(ii)",
+   "questionText": "Name another of your comparative texts and identify a hero, heroine or villain in it. Use one or more key moments to demonstrate how this character helped to make this text dramatic or exciting.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Hero, Heroine, Villain",
+   "schemePages": [
+    53
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-unseen-q1",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Unseen Poetry Q1",
+   "questionText": "Based on your reading of the above poem, explain how you know that the poet loved books and reading when she was young. Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "The Library Van",
+    "pages": [
+     14
+    ],
+    "attribution": "The Library Van — Elaine Gaston, as reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    54
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-unseen-q2",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Unseen Poetry Q2",
+   "questionText": "Identify two images from the above poem that you found attractive or appealing. Explain why you found these images to be attractive or appealing.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "The Library Van",
+    "pages": [
+     14
+    ],
+    "attribution": "The Library Van — Elaine Gaston, as reproduced in the SEC 2022 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    54,
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-a-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry A Q1(a)",
+   "questionText": "What impression of the island of Innisfree do you form from reading this poem? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-23",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lake Isle of Innisfree — W.B. Yeats",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Lake Isle of Innisfree",
+    "pages": [
+     15
+    ],
+    "attribution": "The Lake Isle of Innisfree — W.B. Yeats.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-a-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry A Q1(b)",
+   "questionText": "In your opinion, which of the following word or words best describe(s) the feelings Innisfree inspires in Yeats? Longing Love Calm. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-23",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lake Isle of Innisfree — W.B. Yeats",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Lake Isle of Innisfree",
+    "pages": [
+     15
+    ],
+    "attribution": "The Lake Isle of Innisfree — W.B. Yeats.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-a-q2-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry A Q2(i)",
+   "questionText": "Identify your two favourite stanzas from the above poem and explain why these stanzas appeal to you. Support your answer with reference to the content and language of your chosen stanzas.",
+   "totalMarks": 20,
+   "topicId": "english-11-23",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lake Isle of Innisfree — W.B. Yeats",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Lake Isle of Innisfree",
+    "pages": [
+     15
+    ],
+    "attribution": "The Lake Isle of Innisfree — W.B. Yeats.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    56
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-a-q2-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry A Q2(ii)",
+   "questionText": "Explain why, in your opinion, Yeats’s use of vivid imagery does or does not add to the appeal of the above poem. Support your answer with reference to the poet’s use of vivid imagery in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-23",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lake Isle of Innisfree — W.B. Yeats",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Lake Isle of Innisfree",
+    "pages": [
+     15
+    ],
+    "attribution": "The Lake Isle of Innisfree — W.B. Yeats.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    56
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-a-q2-iii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry A Q2(iii)",
+   "questionText": "Your class is creating a book of students’ favourite poems. Each student has been invited to write a piece for inclusion in the book in which they: nominate their favourite poem, introduce the poem to readers and explain why this poem is their favourite. You have chosen Yeats’s poem, “The Lake Isle of Innisfree”, as your favourite. Write the piece you would contribute to the book.",
+   "totalMarks": 20,
+   "topicId": "english-11-23",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Lake Isle of Innisfree — W.B. Yeats",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Lake Isle of Innisfree",
+    "pages": [
+     15
+    ],
+    "attribution": "The Lake Isle of Innisfree — W.B. Yeats.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-b-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry B Q1(a)",
+   "questionText": "What impression of the person speaking in the above poem do you form from your reading of the poem? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Russian Doll — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Russian Doll",
+    "pages": [
+     16
+    ],
+    "attribution": "Russian Doll — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    58
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-b-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry B Q1(b)",
+   "questionText": "In your opinion, which of the following word or words best describe(s) the Russian doll featured in the above poem? Colourful Special Attractive. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Russian Doll — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Russian Doll",
+    "pages": [
+     16
+    ],
+    "attribution": "Russian Doll — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    58
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-b-q2-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry B Q2(i)",
+   "questionText": "Identify your two favourite stanzas from the above poem and explain why these stanzas appeal to you. Support your answer with reference to the content and language of your chosen stanzas.",
+   "totalMarks": 20,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Russian Doll — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Russian Doll",
+    "pages": [
+     16
+    ],
+    "attribution": "Russian Doll — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    58
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-b-q2-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry B Q2(ii)",
+   "questionText": "Explain why, in your opinion, Paula Meehan’s use of vivid imagery does or does not add to the appeal of the above poem. Support your answer with reference to the poet’s use of vivid imagery in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Russian Doll — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Russian Doll",
+    "pages": [
+     16
+    ],
+    "attribution": "Russian Doll — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-b-q2-iii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry B Q2(iii)",
+   "questionText": "Your class is creating a book of students’ favourite poems. Each student has been invited to write a piece for inclusion in the book in which they: nominate their favourite poem, introduce the poem to readers and explain why this poem is their favourite. You have chosen Paula Meehan’s poem, “Russian Doll”, as your favourite. Write the piece you would contribute to the book.",
+   "totalMarks": 20,
+   "topicId": "english-11-16",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Russian Doll — Paula Meehan",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Russian Doll",
+    "pages": [
+     16
+    ],
+    "attribution": "Russian Doll — Paula Meehan.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-c-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry C Q1(a)",
+   "questionText": "What impression of the zoo animals’ overnight behaviour do you form from reading this extract? Support your answer with reference to the extract.",
+   "totalMarks": 15,
+   "topicId": "english-11-43",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Zoo Morning — Penelope Shuttle",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Zoo Morning",
+    "pages": [
+     17
+    ],
+    "attribution": "Zoo Morning — Penelope Shuttle.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    60
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-c-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry C Q1(b)",
+   "questionText": "In your opinion, which of the following word or words best describe(s) the animals’ behaviour during the day? Predictable Natural Unremarkable. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-43",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Zoo Morning — Penelope Shuttle",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Zoo Morning",
+    "pages": [
+     17
+    ],
+    "attribution": "Zoo Morning — Penelope Shuttle.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    60
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-c-q2-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry C Q2(i)",
+   "questionText": "Identify your two favourite stanzas from the above poem and explain why these stanzas appeal to you. Support your answer with reference to the content and language of your chosen stanzas.",
+   "totalMarks": 20,
+   "topicId": "english-11-43",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Zoo Morning — Penelope Shuttle",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Zoo Morning",
+    "pages": [
+     17
+    ],
+    "attribution": "Zoo Morning — Penelope Shuttle.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    60
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-c-q2-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry C Q2(ii)",
+   "questionText": "Explain why, in your opinion, Penelope Shuttle’s use of vivid imagery does or does not add to the appeal of the above poem. Support your response with reference to the poet’s use of vivid imagery in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-43",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Zoo Morning — Penelope Shuttle",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Zoo Morning",
+    "pages": [
+     17
+    ],
+    "attribution": "Zoo Morning — Penelope Shuttle.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    61
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-c-q2-iii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry C Q2(iii)",
+   "questionText": "Your class is creating a book of students’ favourite poems. Each student has been invited to write a piece for inclusion in the book in which they: nominate their favourite poem, introduce the poem to readers and explain why this poem is their favourite. You have chosen Penelope Shuttle’s poem, “Zoo Morning”, as your favourite. In your answer you may refer to the entire poem or just to the extract above. Write the piece you would contribute to the book.",
+   "totalMarks": 20,
+   "topicId": "english-11-43",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Zoo Morning — Penelope Shuttle",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Zoo Morning",
+    "pages": [
+     17
+    ],
+    "attribution": "Zoo Morning — Penelope Shuttle.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    61
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-d-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry D Q1(a)",
+   "questionText": "What impression of the Uncle do you form from reading this poem? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-20",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Uncle Speaks in the Drawing Room — Adrienne Rich",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Uncle Speaks in the Drawing Room",
+    "pages": [
+     18
+    ],
+    "attribution": "The Uncle Speaks in the Drawing Room — Adrienne Rich.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    62
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-d-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry D Q1(b)",
+   "questionText": "In your opinion, which of the following word or words best describe(s) the mood of the mob in the above poem? Angry Frustrated Tense. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-20",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Uncle Speaks in the Drawing Room — Adrienne Rich",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Uncle Speaks in the Drawing Room",
+    "pages": [
+     18
+    ],
+    "attribution": "The Uncle Speaks in the Drawing Room — Adrienne Rich.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    62
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-d-q2-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry D Q2(i)",
+   "questionText": "Identify your two favourite stanzas from the above poem and explain why these stanzas appeal to you. Support your answer with reference to the content and language of your chosen stanzas.",
+   "totalMarks": 20,
+   "topicId": "english-11-20",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Uncle Speaks in the Drawing Room — Adrienne Rich",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Uncle Speaks in the Drawing Room",
+    "pages": [
+     18
+    ],
+    "attribution": "The Uncle Speaks in the Drawing Room — Adrienne Rich.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    62
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-d-q2-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry D Q2(ii)",
+   "questionText": "Explain why, in your opinion, Rich’s use of vivid imagery does or does not add to the appeal of the above poem. Support your answer with reference to the poet’s use of vivid imagery in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-20",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Uncle Speaks in the Drawing Room — Adrienne Rich",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Uncle Speaks in the Drawing Room",
+    "pages": [
+     18
+    ],
+    "attribution": "The Uncle Speaks in the Drawing Room — Adrienne Rich.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    63
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-d-q2-iii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry D Q2(iii)",
+   "questionText": "Your class is creating a book of students’ favourite poems. Each student has been invited to write a piece for inclusion in the book in which they: nominate their favourite poem, introduce the poem to readers and explain why this poem is their favourite. You have chosen Adrienne Rich’s poem, “The Uncle Speaks in the Drawing Room”, as your favourite. Write the piece you would contribute to the book.",
+   "totalMarks": 20,
+   "topicId": "english-11-20",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Uncle Speaks in the Drawing Room — Adrienne Rich",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "The Uncle Speaks in the Drawing Room",
+    "pages": [
+     18
+    ],
+    "attribution": "The Uncle Speaks in the Drawing Room — Adrienne Rich.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    63
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-e-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry E Q1(a)",
+   "questionText": "What impression of the hawk do you form from reading this poem? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-50",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hawk Roosting — Ted Hughes",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Hawk Roosting",
+    "pages": [
+     19
+    ],
+    "attribution": "Hawk Roosting — Ted Hughes.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    64
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-e-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry E Q1(b)",
+   "questionText": "In your opinion, which of the following word or words best captures(s) the poet’s view of the natural world in the above poem? Savage Timeless Inspiring. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-50",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hawk Roosting — Ted Hughes",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Hawk Roosting",
+    "pages": [
+     19
+    ],
+    "attribution": "Hawk Roosting — Ted Hughes.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    64
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-e-q2-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry E Q2(i)",
+   "questionText": "Identify your two favourite stanzas from the above poem and explain why these stanzas appeal to you. Support your answer with reference to the content and language of your chosen stanzas.",
+   "totalMarks": 20,
+   "topicId": "english-11-50",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hawk Roosting — Ted Hughes",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Hawk Roosting",
+    "pages": [
+     19
+    ],
+    "attribution": "Hawk Roosting — Ted Hughes.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    64
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-e-q2-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry E Q2(ii)",
+   "questionText": "Explain why, in your opinion, Ted Hughes’ use of vivid imagery does or does not add to the appeal of the above poem. Support your answer with reference to the poet’s use of vivid imagery in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-50",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hawk Roosting — Ted Hughes",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Hawk Roosting",
+    "pages": [
+     19
+    ],
+    "attribution": "Hawk Roosting — Ted Hughes.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    65
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-e-q2-iii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry E Q2(iii)",
+   "questionText": "Your class is creating a book of students’ favourite poems. Each student has been invited to write a piece for inclusion in the book in which they: nominate their favourite poem, introduce the poem to readers and explain why this poem is their favourite. You have chosen Ted Hughes’ poem, “Hawk Roosting”, as your favourite. Write the piece you would contribute to the book.",
+   "totalMarks": 20,
+   "topicId": "english-11-50",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hawk Roosting — Ted Hughes",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Hawk Roosting",
+    "pages": [
+     19
+    ],
+    "attribution": "Hawk Roosting — Ted Hughes.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    65
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-f-q1-a",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry F Q1(a)",
+   "questionText": "What impression of the primeval world do you form from reading this poem? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-14",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Humming-Bird — D.H. Lawrence",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Humming-Bird",
+    "pages": [
+     20
+    ],
+    "attribution": "Humming-Bird — D.H. Lawrence.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    66
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-f-q1-b",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry F Q1(b)",
+   "questionText": "In your opinion, which of the following word or words best describe(s) the Humming-bird depicted in the poem? Frightening Lively Astonishing. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-14",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Humming-Bird — D.H. Lawrence",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Humming-Bird",
+    "pages": [
+     20
+    ],
+    "attribution": "Humming-Bird — D.H. Lawrence.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    66
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-f-q2-i",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry F Q2(i)",
+   "questionText": "Identify your two favourite stanzas from the five stanzas in the above poem and explain why these stanzas appeal to you. Support your answer with reference to the content and language of your chosen stanzas.",
+   "totalMarks": 20,
+   "topicId": "english-11-14",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Humming-Bird — D.H. Lawrence",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Humming-Bird",
+    "pages": [
+     20
+    ],
+    "attribution": "Humming-Bird — D.H. Lawrence.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    66
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-f-q2-ii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry F Q2(ii)",
+   "questionText": "Explain why, in your opinion, Lawrence’s use of vivid imagery does or does not add to the appeal of the above poem. Support your answer with reference to the poet’s use of vivid imagery in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-14",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Humming-Bird — D.H. Lawrence",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Humming-Bird",
+    "pages": [
+     20
+    ],
+    "attribution": "Humming-Bird — D.H. Lawrence.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    67
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2022-ol-p2-prescribed-f-q2-iii",
+   "year": 2022,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2022 OL Paper 2 Prescribed Poetry F Q2(iii)",
+   "questionText": "Your class is creating a book of students’ favourite poems. Each student has been invited to write a piece for inclusion in the book in which they: nominate their favourite poem, introduce the poem to readers and explain why this poem is their favourite. You have chosen D.H. Lawrence’s poem, “Humming-Bird”, as your favourite. Write the piece you would contribute to the book.",
+   "totalMarks": 20,
+   "topicId": "english-11-14",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Humming-Bird — D.H. Lawrence",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Humming-Bird",
+    "pages": [
+     20
+    ],
+    "attribution": "Humming-Bird — D.H. Lawrence.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    67
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2022-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
    }
   },
   {

@@ -761,6 +761,26 @@
     "english-8-0",
     "english-11-12"
    ]
+  },
+  {
+   "id": "english-ordinary-poetry-lawrence-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-lawrence",
+   "label": "Poetry - Lawrence",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-14"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-by-the-bog-of-cats-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-by-the-bog-of-cats",
+   "label": "Text - By the Bog of Cats",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-9"
+   ]
   }
  ]
 }

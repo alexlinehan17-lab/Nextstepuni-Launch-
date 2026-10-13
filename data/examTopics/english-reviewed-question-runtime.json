@@ -106,6 +106,14 @@
   "english-ordinary-poetry-shakespeare",
   "english-ordinary-poetry-mahon",
   "english-ordinary-poetry-kavanagh",
+  "english-ordinary-text-by-the-bog-of-cats-reviewed-archive",
+  "english-ordinary-text-room",
+  "english-ordinary-othello",
+  "english-ordinary-poetry-yeats",
+  "english-ordinary-poetry-shuttle-reviewed-archive",
+  "english-ordinary-poetry-rich",
+  "english-ordinary-poetry-hughes",
+  "english-ordinary-poetry-lawrence-reviewed-archive",
   "english-ordinary-text-circle-of-friends-reviewed-archive",
   "english-ordinary-text-wuthering-heights",
   "english-ordinary-text-the-great-gatsby",
@@ -115,14 +123,12 @@
   "english-ordinary-text-the-plough-and-the-stars-reviewed-archive",
   "english-ordinary-text-the-spinning-heart",
   "english-ordinary-poetry-larkin-reviewed-archive",
-  "english-ordinary-poetry-hughes",
   "english-ordinary-poetry-coady-reviewed-archive",
   "english-ordinary-text-pride-and-prejudice-reviewed-archive",
   "english-ordinary-text-never-let-me-go-reviewed-archive",
   "english-ordinary-text-how-many-miles-to-babylon-reviewed-archive",
   "english-ordinary-text-home-before-night-reviewed-archive",
   "english-ordinary-text-juno-and-the-paycock-reviewed-archive",
-  "english-ordinary-othello",
   "english-ordinary-poetry-montague-reviewed-archive",
   "english-ordinary-poetry-wall-reviewed-archive",
   "english-ordinary-poetry-ni-chuilleanain",
@@ -134,7 +140,6 @@
   "english-ordinary-text-antigone-reviewed-archive",
   "english-ordinary-comparative-aspects-of-story-reviewed-archive",
   "english-ordinary-poetry-muldoon",
-  "english-ordinary-poetry-shuttle-reviewed-archive",
   "english-ordinary-text-emma-reviewed-archive",
   "english-ordinary-text-dancing-at-lughnasa-reviewed-archive",
   "english-ordinary-text-the-lonesome-west-reviewed-archive",
@@ -151,8 +156,7 @@
   "english-ordinary-text-lies-of-silence-reviewed-archive",
   "english-ordinary-text-panther-in-the-basement-reviewed-archive",
   "english-ordinary-text-the-blackwater-lightship-reviewed-archive",
-  "english-ordinary-poetry-adcock",
-  "english-ordinary-poetry-yeats"
+  "english-ordinary-poetry-adcock"
  ],
  "questionMappings": [
   [
@@ -3687,6 +3691,215 @@
    ]
   ],
   [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "1",
+   [
+    103
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "2",
+   [
+    77
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "3",
+   [
+    104
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "4",
+   [
+    88
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "5",
+   [
+    96
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "6",
+   [
+    105
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "7",
+   [
+    79
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "8",
+   [
+    97
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "9",
+   [
+    106
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "10",
+   [
+    94
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "11",
+   [
+    107
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "12",
+   [
+    108
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "13",
+   [
+    109
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "14",
+   [
+    110
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "15",
+   [
+    90
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "16",
+   [
+    67
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "17",
+   [
+    68
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "18",
+   [
+    69
+   ]
+  ],
+  [
+   "o",
+   "e",
+   2022,
+   "p2",
+   "LC002GLP200EV.pdf",
+   "19",
+   [
+    70
+   ]
+  ],
+  [
    "h",
    "e",
    2018,
@@ -4200,7 +4413,7 @@
    "LC002GLP200EV.pdf",
    "1",
    [
-    103
+    111
    ]
   ],
   [
@@ -4211,7 +4424,7 @@
    "LC002GLP200EV.pdf",
    "2",
    [
-    104
+    112
    ]
   ],
   [
@@ -4222,7 +4435,7 @@
    "LC002GLP200EV.pdf",
    "3",
    [
-    105
+    113
    ]
   ],
   [
@@ -4233,7 +4446,7 @@
    "LC002GLP200EV.pdf",
    "4",
    [
-    106
+    114
    ]
   ],
   [
@@ -4244,7 +4457,7 @@
    "LC002GLP200EV.pdf",
    "5",
    [
-    107
+    115
    ]
   ],
   [
@@ -4255,7 +4468,7 @@
    "LC002GLP200EV.pdf",
    "6",
    [
-    108
+    116
    ]
   ],
   [
@@ -4266,7 +4479,7 @@
    "LC002GLP200EV.pdf",
    "7",
    [
-    109
+    117
    ]
   ],
   [
@@ -4277,7 +4490,7 @@
    "LC002GLP200EV.pdf",
    "8",
    [
-    110
+    118
    ]
   ],
   [
@@ -4332,7 +4545,7 @@
    "LC002GLP200EV.pdf",
    "13",
    [
-    111
+    119
    ]
   ],
   [
@@ -4343,7 +4556,7 @@
    "LC002GLP200EV.pdf",
    "14",
    [
-    112
+    109
    ]
   ],
   [
@@ -4365,7 +4578,7 @@
    "LC002GLP200EV.pdf",
    "16",
    [
-    113
+    120
    ]
   ],
   [
@@ -5168,7 +5381,7 @@
    "LC002GLP200EV.pdf",
    "1",
    [
-    114
+    121
    ]
   ],
   [
@@ -5179,7 +5392,7 @@
    "LC002GLP200EV.pdf",
    "2",
    [
-    103
+    111
    ]
   ],
   [
@@ -5190,7 +5403,7 @@
    "LC002GLP200EV.pdf",
    "3",
    [
-    105
+    113
    ]
   ],
   [
@@ -5201,7 +5414,7 @@
    "LC002GLP200EV.pdf",
    "4",
    [
-    115
+    122
    ]
   ],
   [
@@ -5212,7 +5425,7 @@
    "LC002GLP200EV.pdf",
    "5",
    [
-    116
+    123
    ]
   ],
   [
@@ -5223,7 +5436,7 @@
    "LC002GLP200EV.pdf",
    "6",
    [
-    117
+    124
    ]
   ],
   [
@@ -5234,7 +5447,7 @@
    "LC002GLP200EV.pdf",
    "7",
    [
-    107
+    115
    ]
   ],
   [
@@ -5245,7 +5458,7 @@
    "LC002GLP200EV.pdf",
    "8",
    [
-    118
+    125
    ]
   ],
   [
@@ -5256,7 +5469,7 @@
    "LC002GLP200EV.pdf",
    "9",
    [
-    119
+    105
    ]
   ],
   [
@@ -5300,7 +5513,7 @@
    "LC002GLP200EV.pdf",
    "13",
    [
-    120
+    126
    ]
   ],
   [
@@ -5322,7 +5535,7 @@
    "LC002GLP200EV.pdf",
    "15",
    [
-    121
+    127
    ]
   ],
   [
@@ -5333,7 +5546,7 @@
    "LC002GLP200EV.pdf",
    "16",
    [
-    122
+    128
    ]
   ],
   [
@@ -5850,7 +6063,7 @@
    "LC002GLP200EV.pdf",
    "1",
    [
-    114
+    121
    ]
   ],
   [
@@ -5861,7 +6074,7 @@
    "LC002GLP200EV.pdf",
    "2",
    [
-    103
+    111
    ]
   ],
   [
@@ -5872,7 +6085,7 @@
    "LC002GLP200EV.pdf",
    "3",
    [
-    123
+    129
    ]
   ],
   [
@@ -5883,7 +6096,7 @@
    "LC002GLP200EV.pdf",
    "4",
    [
-    124
+    130
    ]
   ],
   [
@@ -5894,7 +6107,7 @@
    "LC002GLP200EV.pdf",
    "5",
    [
-    115
+    122
    ]
   ],
   [
@@ -5905,7 +6118,7 @@
    "LC002GLP200EV.pdf",
    "6",
    [
-    116
+    123
    ]
   ],
   [
@@ -5927,7 +6140,7 @@
    "LC002GLP200EV.pdf",
    "8",
    [
-    117
+    124
    ]
   ],
   [
@@ -5993,7 +6206,7 @@
    "LC002GLP200EV.pdf",
    "14",
    [
-    125
+    131
    ]
   ],
   [
@@ -6015,7 +6228,7 @@
    "LC002GLP200EV.pdf",
    "16",
    [
-    126
+    132
    ]
   ],
   [
@@ -6532,7 +6745,7 @@
    "LC002GLP200EV.pdf",
    "1",
    [
-    103
+    111
    ]
   ],
   [
@@ -6543,7 +6756,7 @@
    "LC002GLP200EV.pdf",
    "2",
    [
-    104
+    112
    ]
   ],
   [
@@ -6554,7 +6767,7 @@
    "LC002GLP200EV.pdf",
    "3",
    [
-    105
+    113
    ]
   ],
   [
@@ -6565,7 +6778,7 @@
    "LC002GLP200EV.pdf",
    "4",
    [
-    116
+    123
    ]
   ],
   [
@@ -6587,7 +6800,7 @@
    "LC002GLP200EV.pdf",
    "6",
    [
-    117
+    124
    ]
   ],
   [
@@ -6598,7 +6811,7 @@
    "LC002GLP200EV.pdf",
    "7",
    [
-    127
+    133
    ]
   ],
   [
@@ -6620,7 +6833,7 @@
    "LC002GLP200EV.pdf",
    "9",
    [
-    128
+    134
    ]
   ],
   [
@@ -6642,7 +6855,7 @@
    "LC002GLP200EV.pdf",
    "11",
    [
-    129
+    135
    ]
   ],
   [
@@ -6664,7 +6877,7 @@
    "LC002GLP200EV.pdf",
    "13",
    [
-    130
+    136
    ]
   ],
   [
@@ -6675,7 +6888,7 @@
    "LC002GLP200EV.pdf",
    "14",
    [
-    131
+    107
    ]
   ],
   [
@@ -7214,7 +7427,7 @@
    "LC002GLP200EV.pdf",
    "1",
    [
-    132
+    137
    ]
   ],
   [
@@ -7225,7 +7438,7 @@
    "LC002GLP200EV.pdf",
    "2",
    [
-    123
+    129
    ]
   ],
   [
@@ -7236,7 +7449,7 @@
    "LC002GLP200EV.pdf",
    "3",
    [
-    103
+    111
    ]
   ],
   [
@@ -7247,7 +7460,7 @@
    "LC002GLP200EV.pdf",
    "4",
    [
-    133
+    138
    ]
   ],
   [
@@ -7269,7 +7482,7 @@
    "LC002GLP200EV.pdf",
    "6",
    [
-    116
+    123
    ]
   ],
   [
@@ -7280,7 +7493,7 @@
    "LC002GLP200EV.pdf",
    "7",
    [
-    134
+    139
    ]
   ],
   [
@@ -7302,7 +7515,7 @@
    "LC002GLP200EV.pdf",
    "9",
    [
-    135
+    140
    ]
   ],
   [
@@ -7368,7 +7581,7 @@
    "LC002GLP200EV.pdf",
    "15",
    [
-    136
+    141
    ]
   ],
   [
@@ -7379,7 +7592,7 @@
    "LC002GLP200EV.pdf",
    "16",
    [
-    137
+    142
    ]
   ],
   [
@@ -7896,7 +8109,7 @@
    "LC002GLP200EV.pdf",
    "1",
    [
-    103
+    111
    ]
   ],
   [
@@ -7907,7 +8120,7 @@
    "LC002GLP200EV.pdf",
    "2",
    [
-    104
+    112
    ]
   ],
   [
@@ -7929,7 +8142,7 @@
    "LC002GLP200EV.pdf",
    "4",
    [
-    116
+    123
    ]
   ],
   [
@@ -7940,7 +8153,7 @@
    "LC002GLP200EV.pdf",
    "5",
    [
-    138
+    143
    ]
   ],
   [
@@ -7951,7 +8164,7 @@
    "LC002GLP200EV.pdf",
    "6",
    [
-    139
+    144
    ]
   ],
   [
@@ -7962,7 +8175,7 @@
    "LC002GLP200EV.pdf",
    "7",
    [
-    109
+    117
    ]
   ],
   [
@@ -7984,7 +8197,7 @@
    "LC002GLP200EV.pdf",
    "9",
    [
-    140
+    145
    ]
   ],
   [
@@ -8039,7 +8252,7 @@
    "LC002GLP200EV.pdf",
    "14",
    [
-    141
+    146
    ]
   ],
   [
@@ -8050,7 +8263,7 @@
    "LC002GLP200EV.pdf",
    "15",
    [
-    142
+    147
    ]
   ],
   [
@@ -8061,7 +8274,7 @@
    "LC002GLP200EV.pdf",
    "16",
    [
-    143
+    148
    ]
   ],
   [
@@ -8578,7 +8791,7 @@
    "LC002GLP200EV.pdf",
    "1",
    [
-    104
+    112
    ]
   ],
   [
@@ -8589,7 +8802,7 @@
    "LC002GLP200EV.pdf",
    "2",
    [
-    133
+    138
    ]
   ],
   [
@@ -8611,7 +8824,7 @@
    "LC002GLP200EV.pdf",
    "4",
    [
-    144
+    149
    ]
   ],
   [
@@ -8622,7 +8835,7 @@
    "LC002GLP200EV.pdf",
    "5",
    [
-    145
+    150
    ]
   ],
   [
@@ -8633,7 +8846,7 @@
    "LC002GLP200EV.pdf",
    "6",
    [
-    146
+    151
    ]
   ],
   [
@@ -8655,7 +8868,7 @@
    "LC002GLP200EV.pdf",
    "8",
    [
-    140
+    145
    ]
   ],
   [
@@ -8666,7 +8879,7 @@
    "LC002GLP200EV.pdf",
    "9",
    [
-    148
+    153
    ]
   ],
   [
@@ -8699,7 +8912,7 @@
    "LC002GLP200EV.pdf",
    "12",
    [
-    149
+    106
    ]
   ],
   [
@@ -8710,7 +8923,7 @@
    "LC002GLP200EV.pdf",
    "13",
    [
-    147
+    152
    ]
   ],
   [

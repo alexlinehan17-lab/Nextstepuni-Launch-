@@ -2731,7 +2731,10 @@
       "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
       "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
       "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF15.",
-      "titlePrintedPage": 15
+      "titlePrintedPage": 15,
+      "sourcePages": [
+        15
+      ]
     },
     "english-2022-ol-p2-prescribed-b": {
       "topicId": "english-11-16",
@@ -2740,7 +2743,10 @@
       "observedHeading": "Poetry B · Russian Doll",
       "paperPage": 16,
       "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
-      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "sourcePages": [
+        16
+      ]
     },
     "english-2022-ol-p2-prescribed-c": {
       "topicId": "english-11-43",
@@ -2749,7 +2755,10 @@
       "observedHeading": "Poetry C · Zoo Morning",
       "paperPage": 17,
       "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
-      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "sourcePages": [
+        17
+      ]
     },
     "english-2022-ol-p2-prescribed-d": {
       "topicId": "english-11-20",
@@ -2760,7 +2769,10 @@
       "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
       "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
       "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF18.",
-      "titlePrintedPage": 18
+      "titlePrintedPage": 18,
+      "sourcePages": [
+        18
+      ]
     },
     "english-2022-ol-p2-prescribed-e": {
       "topicId": "english-11-50",
@@ -2769,7 +2781,10 @@
       "observedHeading": "Poetry E · Hawk Roosting",
       "paperPage": 19,
       "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
-      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "sourcePages": [
+        19
+      ]
     },
     "english-2022-ol-p2-prescribed-f": {
       "topicId": "english-11-14",
@@ -2778,7 +2793,10 @@
       "observedHeading": "Poetry F · Humming-Bird",
       "paperPage": 20,
       "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
-      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "sourcePages": [
+        20
+      ]
     },
     "english-2023-hl-p2-single-a": {
       "topicId": "english-12-8",

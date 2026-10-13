@@ -1938,6 +1938,394 @@
         }
       }
     },
+    "english-2022-ol-p2": {
+      "paperSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "legacyRuntime": "Served before the bridge by 68 authored.json cards; 21 bundled separately marked parts (Single Text Q1, Comparative Q1/Q2, Prescribed Q1).",
+      "legacyCards": {
+        "english-2022-ol-p2-single-a-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-single-a-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text A Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Single Text A Q1(a)",
+          "reason": "The legacy card bundled (a) 10 marks, (b) 10 marks, (c) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-single-a-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text A Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-a-q3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text A Q3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-a-q4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text A Q4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-b-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-single-b-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text B Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Single Text B Q1(a)",
+          "reason": "The legacy card bundled (a) 10 marks, (b) 10 marks, (c) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-single-b-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text B Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-b-q3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text B Q3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-b-q4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text B Q4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-c-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-single-c-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text C Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Single Text C Q1(a)",
+          "reason": "The legacy card bundled (a) 10 marks, (b) 10 marks, (c) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-single-c-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text C Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-c-q3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text C Q3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-c-q4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text C Q4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-d-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-single-d-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text D Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Single Text D Q1(a)",
+          "reason": "The legacy card bundled (a) 10 marks, (b) 10 marks, (c) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-single-d-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text D Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-d-q3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text D Q3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-d-q4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text D Q4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-e-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-single-e-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text E Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Single Text E Q1(a)",
+          "reason": "The legacy card bundled (a) 10 marks, (b) 10 marks, (c) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-single-e-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text E Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-e-q3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text E Q3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-e-q4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text E Q4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-f-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-single-f-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text F Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Single Text F Q1(a)",
+          "reason": "The legacy card bundled (a) 10 marks, (b) 10 marks, (c) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-single-f-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text F Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-f-q3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text F Q3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-f-q4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text F Q4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-g-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-single-g-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text G Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Single Text G Q1(a)",
+          "reason": "The legacy card bundled (a) 10 marks, (b) 10 marks, (c) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-single-g-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text G Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-g-q3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text G Q3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-g-q4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text G Q4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-h-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-single-h-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text H Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Single Text H Q1(a)",
+          "reason": "The legacy card bundled (a) 10 marks, (b) 10 marks, (c) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-single-h-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text H Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-h-q3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text H Q3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-h-q4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text H Q4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-i-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-single-i-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text I Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Single Text I Q1(a)",
+          "reason": "The legacy card bundled (a) 10 marks, (b) 10 marks, (c) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-single-i-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text I Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-i-q3": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text I Q3",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-single-i-q4": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Single Text I Q4",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-comparative-a-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-comparative-a-q1-a-i",
+          "legacyQuestionRef": "2022 OL Paper 2 Comparative A Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Comparative A Q1(a)(i)",
+          "reason": "The legacy card bundled (a)(i) 15 marks, (a)(ii) 15 marks, (b) 40 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-comparative-a-q2": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-comparative-a-q2-a-i",
+          "legacyQuestionRef": "2022 OL Paper 2 Comparative A Q2",
+          "publishedQuestionRef": "2022 OL Paper 2 Comparative A Q2(a)(i)",
+          "reason": "The legacy card bundled (a)(i) 15 marks, (a)(ii) 15 marks, (b) 40 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-comparative-b-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-comparative-b-q1-a-i",
+          "legacyQuestionRef": "2022 OL Paper 2 Comparative B Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Comparative B Q1(a)(i)",
+          "reason": "The legacy card bundled (a)(i) 15 marks, (a)(ii) 15 marks, (b) 40 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-comparative-b-q2": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-comparative-b-q2-a-i",
+          "legacyQuestionRef": "2022 OL Paper 2 Comparative B Q2",
+          "publishedQuestionRef": "2022 OL Paper 2 Comparative B Q2(a)(i)",
+          "reason": "The legacy card bundled (a)(i) 15 marks, (a)(ii) 15 marks, (b) 40 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-comparative-c-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-comparative-c-q1-a-i",
+          "legacyQuestionRef": "2022 OL Paper 2 Comparative C Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Comparative C Q1(a)(i)",
+          "reason": "The legacy card bundled (a)(i) 15 marks, (a)(ii) 15 marks, (b) 40 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-comparative-c-q2": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-comparative-c-q2-a-i",
+          "legacyQuestionRef": "2022 OL Paper 2 Comparative C Q2",
+          "publishedQuestionRef": "2022 OL Paper 2 Comparative C Q2(a)(i)",
+          "reason": "The legacy card bundled (a)(i) 15 marks, (a)(ii) 15 marks, (b) 40 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-unseen-q1": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Unseen Poetry Q1",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-unseen-q2": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Unseen Poetry Q2",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-a-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-prescribed-a-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry A Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Prescribed Poetry A Q1(a)",
+          "reason": "The legacy card bundled (a) 15 marks, (b) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-prescribed-a-q2-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry A Q2(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-a-q2-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry A Q2(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-a-q2-iii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry A Q2(iii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-b-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-prescribed-b-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry B Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Prescribed Poetry B Q1(a)",
+          "reason": "The legacy card bundled (a) 15 marks, (b) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-prescribed-b-q2-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry B Q2(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-b-q2-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry B Q2(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-b-q2-iii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry B Q2(iii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-c-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-prescribed-c-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry C Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Prescribed Poetry C Q1(a)",
+          "reason": "The legacy card bundled (a) 15 marks, (b) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-prescribed-c-q2-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry C Q2(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-c-q2-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry C Q2(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-c-q2-iii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry C Q2(iii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-d-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-prescribed-d-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry D Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Prescribed Poetry D Q1(a)",
+          "reason": "The legacy card bundled (a) 15 marks, (b) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-prescribed-d-q2-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry D Q2(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-d-q2-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry D Q2(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-d-q2-iii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry D Q2(iii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-e-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-prescribed-e-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry E Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Prescribed Poetry E Q1(a)",
+          "reason": "The legacy card bundled (a) 15 marks, (b) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-prescribed-e-q2-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry E Q2(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-e-q2-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry E Q2(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-e-q2-iii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry E Q2(iii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-f-q1": {
+          "kind": "alias",
+          "to": "english-2022-ol-p2-prescribed-f-q1-a",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry F Q1",
+          "publishedQuestionRef": "2022 OL Paper 2 Prescribed Poetry F Q1(a)",
+          "reason": "The legacy card bundled (a) 15 marks, (b) 15 marks, which the scheme marks separately (each part has its own tariff and grid box). The reviewed paper publishes each part as its own task; the legacy id becomes a progress alias to the first part."
+        },
+        "english-2022-ol-p2-prescribed-f-q2-i": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry F Q2(i)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-f-q2-ii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry F Q2(ii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        },
+        "english-2022-ol-p2-prescribed-f-q2-iii": {
+          "kind": "same-id",
+          "legacyQuestionRef": "2022 OL Paper 2 Prescribed Poetry F Q2(iii)",
+          "reason": "The reviewed task has the same id, printed address and tariff, so the published card keeps the legacy id and its saved progress."
+        }
+      }
+    },
     "english-2023-ol-p1": {
       "paperSha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
       "legacyRuntime": "Served before the bridge by 20 authored.json cards; Text 2 and Text 3 A(iii)(a) were already withdrawn aliases of Text 1 A(iii)(a), the same task printed three times.",
