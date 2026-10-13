@@ -164,8 +164,11 @@ class Src:
                 hits[-1] = prev | h
             else:
                 hits.append(h)
+        # A large symbol glyph printed just under a header (an examiner's tick
+        # under "True") can reach into the header's box; symbol-font glyphs
+        # are not words, so they are left out of the comparison.
         return [b for b in hits if (clip is None or self._inside(b, clip))
-                and _norm(pg.get_textbox(b)) == text]
+                and _norm(re.sub('[\uf000-\uf0ff]', '', pg.get_textbox(b))) == text]
 
     # A glyph belongs to a clip when its CENTRE is inside it. PyMuPDF's own
     # clip keeps anything that merely touches the rectangle, so two adjacent
@@ -298,7 +301,7 @@ def M(marker, page, doc=None):
     """A printed part marker ("(ii)", "1.") placed before a lifted earlier ask
     in a stem, so the stem reads as the paper sets it. Checked to be a marker
     and to be printed on that page."""
-    if not re.fullmatch(r'\((?:[a-h]|i|ii|iii|iv|v|vi|vii|viii)\)|\d\.', marker):
+    if not re.fullmatch(r'\((?:[a-h]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)|\d\.', marker):
         raise ValueError(f'{marker!r} is not a part marker')
     return {'src': 'marker', 'text': marker, 'page': page, 'doc': doc}
 
@@ -407,7 +410,7 @@ ROMAN = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii']
 
 def parse_ref(ref):
     """'Q11(b)(iii)1' -> (11, 'b', 'iii', '1')."""
-    m = re.fullmatch(r'Q(\d+)(?:\(([a-h])\))?(?:\(((?:i|ii|iii|iv|v|vi|vii|viii))\))?(\d)?', ref)
+    m = re.fullmatch(r'Q(\d+)(?:\(([a-h])\))?(?:\(((?:i|ii|iii|iv|v|vi|vii|viii|ix|x))\))?(\d)?', ref)
     if not m:
         raise ValueError(f'unparseable ref {ref!r}')
     return int(m.group(1)), m.group(2), m.group(3), m.group(4)

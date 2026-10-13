@@ -1155,3 +1155,113 @@ describe('Biology 2022 Ordinary — reviewed sitting, corrected in place', () =>
     expect(ol22ById.get('bio-2022-ol-q16-c-iii')!.figure?.solution).toBe(true);
   });
 });
+
+const hl21 = sittings['2021-hl'];
+const higher2021 = BIO_HIGHER.filter(card => card.year === 2021) as unknown as ReviewedCard[];
+const hl21ById = new Map(higher2021.map(card => [card.id, card]));
+const hl21Verbatims = (id: string) => (hl21ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
+  .map(row => row.verbatim);
+
+describe('Biology 2021 Higher — reviewed sitting, corrected in place', () => {
+  const review = hl21.review!;
+
+  it('ships every reviewed task, and nothing else, for the sitting', () => {
+    expect(hl21.baseTaskCount).toBe(188);
+    expect(hl21.cardCount).toBe(188);
+    expect(higher2021).toHaveLength(188);
+    expect(new Set(hl21.tasks.map(task => task.id))).toEqual(new Set(hl21ById.keys()));
+  });
+
+  it('keeps every shipped id', () => {
+    expect(review.baselineCommit).toBe('a585b6d89');
+    expect([review.verified.length, review.corrected.length, review.added.length,
+      review.retained.length]).toEqual([9, 168, 11, 0]);
+    for (const id of [...review.verified, ...review.corrected.map(c => c.id), ...review.added]) {
+      expect(hl21ById.has(id), id).toBe(true);
+    }
+    // Old bundles keep their ids for the first item they carried.
+    expect(hl21ById.get('bio-2021-hl-q12-c-ii')!.questionRef).toBe('2021 HL Q12(c)(ii)1');
+    expect(hl21ById.get('bio-2021-hl-q16-b-ii')!.questionRef).toBe('2021 HL Q16(b)(ii)1');
+  });
+
+  it('records what each corrected card showed before', () => {
+    for (const correction of review.corrected) {
+      expect(correction.changed.length, correction.id).toBeGreaterThan(0);
+      for (const field of correction.changed) {
+        expect(field in correction.fieldsBefore, `${correction.id}.${field}`).toBe(true);
+      }
+    }
+  });
+
+  it('leaves the cards the review verified exactly as they shipped', () => {
+    const verified = review.verified.map(id => hl21ById.get(id)!)
+      .sort((a, b) => a.id.localeCompare(b.id));
+    expect(contentHash(verified)).toBe('1e08d3d38bc62ecee91e18568bbae3c15296bbbc470e3e39025eb4741ec476e4');
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(hl21.sources['038'].sha256)
+      .toBe('73adc0bfbd91031ed7072cf1c7b84e3c69a2a7bb3865c789ffa4f64c0183432e');
+    expect(hl21.sources['040'].sha256)
+      .toBe('8270273dec85fd363078779d5369e57145f1e521ae29ed7b820db79b339f1dbc');
+    expect(hl21.sources.scheme.sha256)
+      .toBe('734448a721f9216d91ab7a07d2148339d9bff10245160aa3c20e4511f762031a');
+    expect([hl21.sources['038'].pages, hl21.sources['040'].pages, hl21.sources.scheme.pages])
+      .toEqual([40, 12, 28]);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const task of hl21.tasks) {
+      const card = hl21ById.get(task.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('adds up to the printed question totals', () => {
+    const totals = new Map<number, number>();
+    for (const task of hl21.tasks) {
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    expect(totals.get(1)).toBe(24);   // best five of six parts at 4
+    // "6(3) + 2": seven responses each carded at 3, so 21 against the ladder's 20.
+    for (const q of [2, 3, 4, 5, 6]) expect(totals.get(q), `Q${q}`).toBe(21);
+    expect(totals.get(7)).toBe(20);   // "10(2)"
+    for (const q of [8, 9, 10]) expect(totals.get(q), `Q${q}`).toBe(30);
+    for (const q of [11, 12, 13, 14, 15]) expect(totals.get(q), `Q${q}`).toBe(60);
+    for (const q of [16, 17]) expect(totals.get(q), `Q${q}`).toBe(120);   // any two of four 30s
+  });
+
+  it('splits no choice: every option shares its scheme rows', () => {
+    expect(Object.keys(hl21.routes)).toEqual([]);
+    expect(higher2021.filter(card => card.questionRef.includes(' — '))).toHaveLength(0);
+    // Moving or sessile animals: two printed step lists, answer variants of one card.
+    const variants = (hl21ById.get('bio-2021-hl-q11-c-iii-2') as unknown as {
+      answerVariants?: Array<{ id: string }> }).answerVariants;
+    expect(variants?.map(v => v.id)).toEqual(['moving-animals', 'sessile-animals']);
+  });
+
+  it('reads the true/false ticks from the scheme', () => {
+    expect(['a', 'b', 'c', 'd', 'e', 'f', 'g'].map(x => hl21Verbatims(`bio-2021-hl-q6-${x}`)[0]))
+      .toEqual(['True', 'True', 'False', 'False', 'True', 'False', 'True']);
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph|table)s?\b/i;
+    for (const card of higher2021) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    // Underlined terms, the drawn food chain, the results table and the printed axes are set as printed.
+    for (const id of ['bio-2021-hl-q11-a-i', 'bio-2021-hl-q12-b-iv', 'bio-2021-hl-q12-c-i', 'bio-2021-hl-q15-a-i',
+      'bio-2021-hl-q15-c-i', 'bio-2021-hl-q9-b-iv']) {
+      expect(hl21ById.get(id)!.questionFigure, id).toBeTruthy();
+    }
+    // The scheme's pyramid shapes and equation wait for the reveal.
+    expect(hl21ById.get('bio-2021-hl-q11-a-i')!.figure?.solution).toBe(true);
+    expect(hl21ById.get('bio-2021-hl-q13-a-ii')!.figure?.solution).toBe(true);
+  });
+});

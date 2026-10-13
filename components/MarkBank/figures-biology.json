@@ -1,4 +1,487 @@
 {
+ "biology-2021-hl-q10-table": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q10-table.png",
+  "md5": "b90ed05a1f88bd0966807e1c76e24d83",
+  "alt": "Table of plates. A: Unopened, 0 colonies. B: 5 leaf discs from an ash tree from a quiet rural setting, 10 colonies. C: 5 leaf discs from an ash tree from a busy urban setting, 4 colonies.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q10(b)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   110,
+   199,
+   542,
+   273
+  ]
+ },
+ "biology-2021-hl-q11a-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q11a-i-question.png",
+  "md5": "5fd936e5a76d33f5ee2e64717edc2fac",
+  "alt": "The printed question: 11. (a) (i) Draw a pyramid of numbers from the following food chain: Cowslips, an arrow, Moth, an arrow, Bat, an arrow, Mites.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q11(a)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   80,
+   115,
+   545,
+   160
+  ]
+ },
+ "biology-2021-hl-q11a-i-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q11a-i-scheme.png",
+  "md5": "03b32a5e6dcafcfa64c4814aed7ded5a",
+  "alt": "The marking scheme's three accepted pyramid shapes, separated by 'or': each is a stack of four bars, the bottom bar narrow with a wide bar above it in the first two and the widest bar at the bottom in the third.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q11(a)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   115,
+   110,
+   385,
+   153
+  ],
+  "solution": true
+ },
+ "biology-2021-hl-q12b-iv-question": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q12b-iv-question.png",
+  "md5": "ed73a42650839b44fd35b7bed5ebe303",
+  "alt": "The printed question: (iv) The plant at part (i) above was crossed with a plant homozygous recessive for both seed shape and seed colour. Show using a Punnet square how the following results were obtained. A table: 115 plants with round yellow seeds, 115 plants with wrinkled yellow seeds, 114 plants with round green seeds, 116 plants with wrinkled green seeds.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q12(b)(iv)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   108,
+   236,
+   545,
+   352
+  ]
+ },
+ "biology-2021-hl-q12c-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q12c-i-question.png",
+  "md5": "9db6a9bdb3e23f2824d1213477b10226",
+  "alt": "The printed question: (c) The haemophilia gene (n) is sex-linked and recessive. There is currently no cure for haemophilia but recently in trials, genetic engineering has been used to transfer a working copy of the human gene to affected people. The words gene, sex-linked and genetic engineering are underlined. (i) Explain the three underlined terms.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q12(c)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   425,
+   545,
+   499
+  ]
+ },
+ "biology-2021-hl-q13-respiration": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q13-respiration.png",
+  "md5": "361576126c83585d3878000d29c293dd",
+  "alt": "Flow diagram of respiration: a 6-carbon sugar splits in Stage 1, releasing V on both sides, into a 3-carbon molecule. On the left (if O2 not used) it goes to Human muscle cells and then Z; on the right (if O2 used) it Enters an organelle W, becomes 2-carbon molecule X and then enters a circular series labelled Y.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q13(b)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   150,
+   136,
+   445,
+   382
+  ]
+ },
+ "biology-2021-hl-q13a-ii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q13a-ii-scheme.png",
+  "md5": "60714e16e1212c19d042a6d5e2c481c9",
+  "alt": "The marking scheme's equation: C6H12O6 + 6O2, an arrow, 6CO2 + 6H2O, with the small numbers in the formulae set as subscripts.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q13(a)(ii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   115,
+   108,
+   320,
+   125
+  ],
+  "solution": true
+ },
+ "biology-2021-hl-q14-villus": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q14-villus.png",
+  "md5": "125f14b230c5225fed0e884c26d629aa",
+  "alt": "Drawing of a longitudinal section of villi: finger-like folds, a label Epithelium pointing to the outer layer, arrow X pointing to the central vessel running up inside a villus, and a label Blood capillary pointing to the network of vessels around it.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q14(b)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   360,
+   155,
+   545,
+   416
+  ]
+ },
+ "biology-2021-hl-q14c-table": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q14c-table.png",
+  "md5": "170c45c48156a4a62ae241d439c30749",
+  "alt": "The printed sentence: The stomatal density (number of stomata per mm², the 2 set as a superscript) from the leaves of three different plants was measured and the results shown in the table. The table: plant A 43, plant B 28, plant C 68.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q14(c)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   108,
+   494,
+   545,
+   610
+  ]
+ },
+ "biology-2021-hl-q15-flower": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q15-flower.png",
+  "md5": "558c4719d2e5ee5648f4ac31835b5d84",
+  "alt": "Drawing of a flower seen from the side: long stalks hang out of the flower with arrow A pointing to the tip of one and arrow B to the stalk itself; arrow C points to the base inside the flower and arrow D to a feathery structure hanging below it.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q15(b)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   160,
+   168,
+   410,
+   356
+  ]
+ },
+ "biology-2021-hl-q15a-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q15a-i-question.png",
+  "md5": "0ba7fd007622f2ece49f280c0fff7abc",
+  "alt": "The printed question: 15. (a) Organisms can respond to changes in their external and internal environment in different ways including through homeostasis. The word homeostasis is underlined. (i) Explain the underlined term.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q15(a)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   80,
+   58,
+   545,
+   108
+  ]
+ },
+ "biology-2021-hl-q15c-i-question": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q15c-i-question.png",
+  "md5": "a244eef528269edd6fa0aadbb3e2f6a5",
+  "alt": "The printed question: (c) Germination in seeds follows dispersal and a period of dormancy. The words germination, dispersal and dormancy are underlined. (i) Explain each of the underlined terms.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q15(c)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   80,
+   543,
+   545,
+   585
+  ]
+ },
+ "biology-2021-hl-q16-skin": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q16-skin.png",
+  "md5": "35eec1f64ba0150ef2ff095c49e376e9",
+  "alt": "Drawing of a block of human skin with hairs: arrow A points to a hair in its follicle, arrow B to a looped blood vessel near the surface, and arrow C to a coiled tube deep in the skin.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q16(a)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   188,
+   122,
+   444,
+   322
+  ]
+ },
+ "biology-2021-hl-q16c-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q16c-graph.png",
+  "md5": "70dbde25c68447119201e5a230b343f5",
+  "alt": "Graph of relative antibody concentration against time (days): from A the curve rises slowly to a small low peak and falls back; from B it rises steeply to a much higher peak before falling.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q16(c)(v)1",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   120,
+   272,
+   480,
+   420
+  ]
+ },
+ "biology-2021-hl-q17-amoeba": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q17-amoeba.png",
+  "md5": "2ce510f7bf3b01e52b65466658872266",
+  "alt": "Drawing of a single-celled organism with an irregular outline: arrow B points to a clear round space, a label Nucleus to the dark round body, a bracket A marks extensions of the cell closing around a small cell labelled Euglena, and arrow C points to a small space holding a taken-in particle.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q17(b)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   165,
+   425,
+   495,
+   568
+  ]
+ },
+ "biology-2021-hl-q17-onion-cells": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q17-onion-cells.png",
+  "md5": "ec28451a5a55777e519e5ed85247239f",
+  "alt": "Two micrographs of red onion epidermal cells. A: Epidermal cells in solution A, each filled by its dark grey vacuole. B: Epidermal cells in solution B, the dark grey vacuoles shrunk into the middle of each cell.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q17(d)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   112,
+   445,
+   512,
+   570
+  ]
+ },
+ "biology-2021-hl-q17-rhizopus": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q17-rhizopus.png",
+  "md5": "54e86ca481596bb4db64e2c8eef8a693",
+  "alt": "Drawing of a mould: upright stalks end in round heads, with Spores scattering from one; arrow A points to one upright stalk, arrows B to the threads running along the surface, and a label Rhizoid points to the branched threads below.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q17(a)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   212,
+   92,
+   418,
+   262
+  ]
+ },
+ "biology-2021-hl-q17-spinal-cord": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q17-spinal-cord.png",
+  "md5": "9f55064d6d0eb3ccc8e9d933cbcc61a7",
+  "alt": "Drawing of a cross section of the spinal cord with neurons: arrow X points to the outer covering of the cord; Neuron B runs in from a Receptor, Neuron C lies inside the cord, and Neuron A runs out to an Effector.",
+  "lettersVisible": [
+   "X",
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q17(c)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   140,
+   98,
+   475,
+   275
+  ]
+ },
+ "biology-2021-hl-q2-nitrogen-cycle": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q2-nitrogen-cycle.png",
+  "md5": "e2b8bb7915e30a982ad3c9590ec339df",
+  "alt": "Diagram of part of the nitrogen cycle: boxes for Atmospheric nitrogen, Soil nitrates, Pea plants, Animals, Soil ammonia and Soil nitrites joined by arrows; arrows labelled A run from atmospheric nitrogen to soil nitrates and to the pea plants, the arrow labelled B runs from soil nitrites up to atmospheric nitrogen, and arrows labelled C run from soil ammonia to soil nitrites and from soil nitrites to soil nitrates.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q2(a)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   148,
+   92,
+   470,
+   306
+  ]
+ },
+ "biology-2021-hl-q3-mitosis": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q3-mitosis.png",
+  "md5": "4b8e8aab2c4187571cad9954d886dbd1",
+  "alt": "Drawing of a nucleus during mitosis: fibres run from each pole to the chromosomes, which are being drawn apart towards the two poles; arrow X points to the fibres at the top pole, and a label Chromosome (sister chromatid) points to one chromosome.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q3(a)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   112,
+   86,
+   400,
+   238
+  ]
+ },
+ "biology-2021-hl-q4-enzyme": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q4-enzyme.png",
+  "md5": "aa83c643e31be809b1a79fd7a47e8421",
+  "alt": "Three drawings joined by arrows: an enzyme labelled Enzyme with a small molecule A beside its opening; the two fitted together, bracketed B; then the enzyme beside two separate smaller pieces, arrows labelled C pointing to them.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q4(a)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   95,
+   88,
+   515,
+   182
+  ]
+ },
+ "biology-2021-hl-q5-embryo": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q5-embryo.png",
+  "md5": "3b12f3c49f06d3d04bb770db87db58cc",
+  "alt": "Drawing of an ovary, fallopian tube and uterus: arrow A points to an egg leaving the ovary, a label Fertilisation marks the egg and sperm in the tube with an enlarged view above, arrow B points to a small ball of cells further along the tube, arrow C to a hollow ball nearer the uterus, and arrow D to the ball attached to the uterus wall with an enlarged view below.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q5(a)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   140,
+   86,
+   480,
+   368
+  ]
+ },
+ "biology-2021-hl-q9b-iv-question": {
+  "src": "/exam-figures/biology/markbank/biology-2021-hl-q9b-iv-question.png",
+  "md5": "a6d75d9dd619fc7c3d35284bdac0650a",
+  "alt": "The printed question: (iv) Label the axes below and draw a curve to show how the rate of enzyme activity varies with temperature. Below it, a blank pair of axes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q9(b)(iv)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   108,
+   537,
+   540,
+   722
+  ]
+ },
  "biology-2022-hl-q12c-iii-question": {
   "src": "/exam-figures/biology/markbank/biology-2022-hl-q12c-iii-question.png",
   "md5": "06bcc0cff0ef56d693cce5a343cfd032",
