@@ -1,0 +1,105 @@
+"""Render, hash and catalogue the reviewed Agricultural Science paper and scheme crops into
+components/MarkBank/figures-agricultural-science.json. Inspect every PNG it writes.
+usage: python3 scripts/markbank/agricultural-science-audit/make_figures.py [figure-key ...]   (no keys: render all)"""
+import fitz, hashlib, json, pathlib, sys
+ROOT = pathlib.Path('.')
+MANIFEST = ROOT/'components/MarkBank/figures-agricultural-science.json'
+# A figure keeps the review date it was first catalogued with; new figures take this one.
+REVIEWED_AT = '2026-10-13'
+FIGS = {
+  # 2026
+  'agsci-2026-hl-scheme-cow-reproductive-system': dict(kind='markingschemes', year=2026, fileid='LC024ALP000EV.pdf', page=25, rect=[0.30,0.612,0.725,0.762], solution=True,
+      alt='Official labelled diagram of the cow’s reproductive system: uterus, cervix, vagina, vulva, ovary, oviduct and uterine horns.',
+      attribution='SEC Agricultural Science 2026 Higher Level marking scheme, PDF page 25 — © State Examinations Commission.'),
+  'agsci-2026-ol-scheme-root-hair': dict(kind='markingschemes', year=2026, fileid='LC024GLP000EV.pdf', page=13, rect=[0.555,0.123,0.80,0.219], solution=True,
+      alt='Official root diagram with the root-hair region on the right-hand side outlined in red: the scheme accepts an R placed anywhere on or around the root hair.',
+      attribution='SEC Agricultural Science 2026 Ordinary Level marking scheme, PDF page 13 — © State Examinations Commission.'),
+  'agsci-2026-ol-scheme-weaning-region': dict(kind='markingschemes', year=2026, fileid='LC024GLP000EV.pdf', page=18, rect=[0.285,0.387,0.80,0.545], solution=True,
+      alt='Official sheep production timeline (housing, mid-season lambing, finishing, finishing, breeding) with the accepted weaning region marked in yellow on the red line beneath the two finishing stages.',
+      attribution='SEC Agricultural Science 2026 Ordinary Level marking scheme, PDF page 18 — © State Examinations Commission.'),
+  'agsci-2026-ol-paper-farm-hazards': dict(kind='exampapers', year=2026, fileid='LC024GLP000EV.pdf', page=6, rect=[0.22,0.172,0.748,0.546], solution=False,
+      alt='Original hand-sketched farmyard map: livestock shed, milking parlour and handling unit, feed storage area, slurry tank, silage pit, machinery shed and farmhouse, with hazard triangles A, B and C.',
+      attribution='SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.'),
+  'agsci-2026-ol-paper-sedimentation': dict(kind='exampapers', year=2026, fileid='LC024GLP000EV.pdf', page=15, rect=[0.215,0.14,0.885,0.41], solution=False,
+      alt='Original sedimentation set-up: two cylinders with funnels and beakers of soil being poured, soil samples 1 and 2, and leader lines labelled A and B.',
+      attribution='SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 15 — © State Examinations Commission.'),
+  'agsci-2026-ol-paper-udder': dict(kind='exampapers', year=2026, fileid='LC024GLP000EV.pdf', page=35, rect=[0.12,0.165,0.90,0.515], solution=False,
+      alt='Original cut-away udder diagram with arrows labelled A, B, C and D.',
+      attribution='SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 35 — © State Examinations Commission.'),
+  'agsci-2026-ol-paper-pig-digestive': dict(kind='exampapers', year=2026, fileid='LC024GLP000EV.pdf', page=13, rect=[0.09,0.205,0.885,0.552], solution=False,
+      alt='Original pig digestive-system diagram labelled oesophagus, duodenum, ileum and appendix, with pointers A, B and C on unlabelled organs.',
+      attribution='SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 13 — © State Examinations Commission.'),
+  # 2024
+  'agsci-2024-hl-paper-indicator-plants': dict(kind='exampapers', year=2024, fileid='LC024ALP000EV.pdf', page=22, rect=[0.13,0.112,0.90,0.294], solution=False,
+      alt='Original Question 13(a)(ii) plate: the word list Ragwort, Meadow Thistle, Nettle and Primrose above four colour photographs lettered A to D: pale yellow flowers among crinkled leaves, a dense clump of serrated green leaves, tall stems of bright yellow daisy-like flowers, and a single purple thistle head.',
+      attribution='SEC Agricultural Science 2024 Higher Level examination paper, PDF page 22 — © State Examinations Commission.'),
+  'agsci-2024-hl-paper-liveweight-graph': dict(kind='exampapers', year=2024, fileid='LC024ALP000EV.pdf', page=30, rect=[0.12,0.135,0.91,0.392], solution=False,
+      alt='Original line graph, Average Liveweight Gain of Dairy Beef Calves: liveweight (kg) against age (weeks) from 0 to 15, each point labelled 40, 45, 51, 57, 62, 68, 74, 80, 86, 92, 98, 103, 108, 113, 119 and 125 kg.',
+      attribution='SEC Agricultural Science 2024 Higher Level examination paper, PDF page 30 — © State Examinations Commission.'),
+  'agsci-2024-hl-paper-ipm-pyramid': dict(kind='exampapers', year=2024, fileid='LC024ALP000EV.pdf', page=39, rect=[0.40,0.065,0.915,0.258], solution=False,
+      alt='Original Integrated Pest Management pyramid: Prevention at the base, then Cultural / Sanitation, Physical / Mechanical, Biological, and Chemical (Pesticide) at the narrow top.',
+      attribution='SEC Agricultural Science 2024 Higher Level examination paper, PDF page 39 — © State Examinations Commission.'),
+  'agsci-2024-hl-paper-soil-structure': dict(kind='exampapers', year=2024, fileid='LC024ALP000EV.pdf', page=14, rect=[0.14,0.470,0.87,0.666], solution=False,
+      alt='Original Question 9(b) plate: the list Moderate quality, Poor quality, Good quality above three circular photographs of soil lettered A, B and C, each with a ruler for scale: A a fine, dark, crumbly soil with roots, B smaller angular clods, C large pale blocky clods.',
+      attribution='SEC Agricultural Science 2024 Higher Level examination paper, PDF page 14 — © State Examinations Commission.'),
+  'agsci-2024-hl-paper-breeds-ab': dict(kind='exampapers', year=2024, fileid='LC024ALP000EV.pdf', page=37, rect=[0.15,0.262,0.85,0.456], solution=False,
+      alt='Original Question 18(a)(ii) photographs: A a deep red-brown bull with a white face, belly and legs wearing a halter; B a black-and-white cow standing side-on in grass.',
+      attribution='SEC Agricultural Science 2024 Higher Level examination paper, PDF page 37 — © State Examinations Commission.'),
+  'agsci-2024-ol-paper-grazing-direction': dict(kind='exampapers', year=2024, fileid='LC024GLP000EV.pdf', page=3, rect=[0.08,0.160,0.88,0.578], solution=False,
+      alt='Original Question 1 strip-grazing diagram and part (a): a field drawn as four vertical bands with three cows and a trough in the third band and a box A with a red arrow on its left boundary, above the instruction to tick the direction of grazing and two boxes, a right-pointing arrow and a left-pointing arrow.',
+      attribution='SEC Agricultural Science 2024 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.'),
+  'agsci-2024-ol-scheme-grazing-direction': dict(kind='markingschemes', year=2024, fileid='LC024GLP000EV.pdf', page=12, rect=[0.215,0.137,0.848,0.195], solution=True,
+      alt='Official marking-scheme answer for Question 1(a): the box beside the left-pointing arrow is ticked.',
+      attribution='SEC Agricultural Science 2024 Ordinary Level marking scheme, PDF page 12 — © State Examinations Commission.'),
+  'agsci-2024-ol-paper-chart-choice': dict(kind='exampapers', year=2024, fileid='LC024GLP000EV.pdf', page=21, rect=[0.09,0.222,0.91,0.434], solution=False,
+      alt='Original Question 13(b)(iii): the instruction to tick the most suitable chart or graph, above three small charts lettered A, B and C, a line graph, a bar chart and a pie chart, each with an empty tick box.',
+      attribution='SEC Agricultural Science 2024 Ordinary Level examination paper, PDF page 21 — © State Examinations Commission.'),
+  'agsci-2024-ol-paper-grass-growth': dict(kind='exampapers', year=2024, fileid='LC024GLP000EV.pdf', page=22, rect=[0.13,0.310,0.96,0.522], solution=False,
+      alt='Original Question 14(a)(ii): the instruction to place an X at the best time of year to cut grass for silage, above a curve of grass growth against time of year from January to December with a tall first peak and a lower second peak.',
+      attribution='SEC Agricultural Science 2024 Ordinary Level examination paper, PDF page 22 — © State Examinations Commission.'),
+  'agsci-2024-ol-scheme-grass-growth-x': dict(kind='markingschemes', year=2024, fileid='LC024GLP000EV.pdf', page=18, rect=[0.33,0.188,0.76,0.330], solution=True,
+      alt='Official marking-scheme answer for Question 14(a)(ii): the grass-growth curve under Spring, Summer, Autumn and Winter headings, with the X placed above the top of the first, higher peak.',
+      attribution='SEC Agricultural Science 2024 Ordinary Level marking scheme, PDF page 18 — © State Examinations Commission.'),
+  # 2023
+  'agsci-2023-ol-paper-ewe-mothering': dict(kind='exampapers', year=2023, fileid='LC024GLP000EV.pdf', page=10, rect=[0.06,0.136,0.94,0.742], solution=False,
+      alt='Original Question 7 diagram and table. Ewe Mothering Ability, scored on the attentive behaviour of the ewe toward her lambs, on a line from 1 to 5: 1 Very poor, no interest in lambs; 2 Poor; 3 Average, moderately attentive but not protective; 4 Good; 5 Very Good, very attentive and protective. Below, the table: ewe 106, score 5, the worked example "Very good, attentive mother and will protect lambs from predators and the weather"; ewe 107, score 3, implication blank; ewe 108, score 1, implication blank.',
+      attribution='SEC Agricultural Science 2023 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.'),
+  'agsci-2023-ol-paper-compacted-soil': dict(kind='exampapers', year=2023, fileid='LC024GLP000EV.pdf', page=26, rect=[0.22,0.341,0.82,0.502], solution=False,
+      alt='Original Question 15(a)(ii) diagrams with a key: soil particle (orange), water (blue outline) and air (empty). Sample A is a loose layer of rounded particles each ringed with water and with air spaces between them; sample B is a thinner layer of the same particles packed tightly together with little air space.',
+      attribution='SEC Agricultural Science 2023 Ordinary Level examination paper, PDF page 26 — © State Examinations Commission.'),
+  # 2022
+  'agsci-2022-ol-paper-grass-growth-curve': dict(kind='exampapers', year=2022, fileid='LC024GLP000EV.pdf', page=29, rect=[0.06,0.112,0.94,0.38], solution=False,
+      alt='Original Question 16(a) line graph, Grass Growth Curve and Feed Demand: yield of DM (kg/ha) from 0 to 90 against the months February to November. The solid blue grass-growth line rises from 10 in February to a peak of 78 in May, falls to 50 in July, rises to 60 in August and falls to 5 in November; the dashed red feed-demand line runs from about 58 in April to 60 in June, 42 in July, 46 in August, 30 in September and 33 in November.',
+      attribution='SEC Agricultural Science 2022 Ordinary Level examination paper, PDF page 29 — © State Examinations Commission.'),
+  'agsci-2022-hl-paper-calf-shed-airflow': dict(kind='exampapers', year=2022, fileid='LC024ALP000EV.pdf', page=25, rect=[0.10,0.533,0.92,0.897], solution=False,
+      alt='Original Question 14(c)(ii): a photograph of a farmer letting off a smoke bomb among calves in a shed, and below it a cross-section of a calf shed with an open ridge at the top of the pitched roof, open sides under the eaves, two pens of calves on straw and an arrow from the smoke bomb marked X on the floor between them.',
+      attribution='SEC Agricultural Science 2022 Higher Level examination paper, PDF page 25 — © State Examinations Commission.'),
+  'agsci-2022-hl-scheme-calf-shed-airflow': dict(kind='markingschemes', year=2022, fileid='LC024ALP000EV.pdf', page=26, rect=[0.08,0.430,0.95,0.672], solution=True,
+      alt='Official marking-scheme answer for Question 14(c)(ii): the shed cross-section with arrows coming in at each side under the eaves, rising diagonally towards the centre and going out through the open ridge in the roof; "Correct indication of arrows coming in at side / going out through roof", 4 + 1.',
+      attribution='SEC Agricultural Science 2022 Higher Level marking scheme, PDF page 26 — © State Examinations Commission.'),
+  # 2021
+  'agsci-2021-hl-paper-sheep-milk-pie': dict(kind='exampapers', year=2021, fileid='LC024ALP000EV.pdf', page=15, rect=[0.52,0.495,0.92,0.82], solution=False,
+      alt='Original Question 10(c) pie chart, Sheep Milk Composition: water 84%, fat 7%, lactose 5% and protein 4%.',
+      attribution='SEC Agricultural Science 2021 Higher Level examination paper, PDF page 15 — © State Examinations Commission.'),
+  'agsci-2021-hl-paper-organic-fertiliser-dm-graph': dict(kind='exampapers', year=2021, fileid='LC024ALP000EV.pdf', page=33, rect=[0.06,0.12,0.94,0.425], solution=False,
+      alt='Original Question 15(b) bar chart: total available kg DM / ha (800 to 4000) from November to March for five autumn treatments. Control 1000, 1200, 2000, 2400, 3400; slurry low (22,000 litres / hectare) 1200, 1600, 2700, 3100, 3800; slurry high (33,000 litres / hectare) 1300, 1700, 2600, 3000, 3500; farmyard manure low (12 tonnes / hectare) 1100, 1500, 2300, 2800, 3900; farmyard manure high (25 tonnes / hectare) 1400, 1800, 2800, 3200, 3700.',
+      attribution='SEC Agricultural Science 2021 Higher Level examination paper, PDF page 33 — © State Examinations Commission.'),
+  'agsci-2021-hl-paper-reference-soil-index': dict(kind='exampapers', year=2021, fileid='LC024ALP000EV.pdf', page=41, rect=[0.06,0.095,0.94,0.41], solution=False,
+      alt='Original Question 17(b)(i): a blank answer table (Nutrient: P, K; Field 2), an aerial map marking Field 1 and Field 2, and the Reference Soil Index table. Index 1 very low, response to fertilisers definite, P 0 – 3.0, K 0 - 50; index 2 low, likely, P 3.1 – 5.0, K 51 - 100; index 3 medium, unlikely, P 5.1 – 8.0, K 101 – 150; index 4 high, none, P ≥ 8.1, K ≥ 151 (soil test range for each index, mg/l).',
+      attribution='SEC Agricultural Science 2021 Higher Level examination paper, PDF page 41 — © State Examinations Commission.'),
+}
+only = set(sys.argv[1:])
+manifest = json.loads(MANIFEST.read_text())
+for key, f in FIGS.items():
+    if only and key not in only: continue
+    pdf = ROOT/f'paper-trail-corpus/{f["kind"]}/{f["year"]}/{f["fileid"]}'
+    with fitz.open(pdf) as d:
+        p = d[f['page']-1]; W, H = p.rect.width, p.rect.height; a, b, c, e = f['rect']
+        pix = p.get_pixmap(matrix=fitz.Matrix(3, 3), clip=fitz.Rect(a*W, b*H, c*W, e*H))
+    out = ROOT/f'public/exam-figures/agricultural-science/markbank/{key}.png'
+    pix.save(out)
+    manifest[key] = {'src': f'/exam-figures/agricultural-science/markbank/{key}.png', 'md5': hashlib.md5(out.read_bytes()).hexdigest(),
+                     'alt': f['alt'], 'attribution': f['attribution'], 'solution': f['solution'], 'sourcePdf': str(pdf),
+                     'sourceSha256': hashlib.sha256(pdf.read_bytes()).hexdigest(), 'pdfPage': f['page'], 'cropRect': f['rect'], 'reviewedAt': manifest.get(key, {}).get('reviewedAt', REVIEWED_AT)}
+    print(key, pix.width, pix.height)
+MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
