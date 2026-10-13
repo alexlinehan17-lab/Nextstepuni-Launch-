@@ -30,14 +30,14 @@
     "referenceOfficialAssociations": 690,
     "referenceMockAssociations": 609,
     "referenceProviderSampleAssociations": 0,
-    "matchedAssociations": 572,
+    "matchedAssociations": 570,
     "sourceBlockedAssociations": 98,
-    "referenceAnomalyAssociations": 20,
-    "matchedLogicalCards": 524,
-    "reviewedLogicalCards": 17,
-    "reviewedOptionTopics": 70,
-    "reviewedSpecificTopics": 19,
-    "matchedQuestionTopicLinks": 564,
+    "referenceAnomalyAssociations": 22,
+    "matchedLogicalCards": 522,
+    "reviewedLogicalCards": 19,
+    "reviewedOptionTopics": 84,
+    "reviewedSpecificTopics": 25,
+    "matchedQuestionTopicLinks": 562,
     "retainedLocalLogicalCards": 536,
     "retainedWrittenLogicalCards": 144,
     "retainedPracticalLogicalCards": 392,
@@ -9852,7 +9852,7 @@
       "sitting": "main",
       "section": "2",
       "questionNumber": "11",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9860,7 +9860,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP013EV.pdf",
         "questionNumber": "11"
-      }
+      },
+      "filedUnder": "art-ordinary-the-baroque-c-1600-1700s",
+      "reason": "StudyClix files this 2017 ordinary heading under art-ordinary-europe-the-renaissance-c-1300-1600s. Decided 2026-10-12 from the SEC paper: Q11 is 'The Ecstasy of Saint Teresa' by Gian Lorenzo Bernini (1598-1680), with \"(b) Briefly describe and discuss the Baroque style\": the paper itself places it in the Baroque (c. 1600-1700s), not The Renaissance. NextStepUni files the question under art-ordinary-the-baroque-c-1600-1700s, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
@@ -11126,7 +11128,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "6",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -11134,7 +11136,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP013EV.pdf",
         "questionNumber": "6"
-      }
+      },
+      "filedUnder": "art-ordinary-post-1960s-art-in-ireland",
+      "reason": "StudyClix files this 2017 ordinary heading under art-ordinary-irish-art-and-modernism. Decided 2026-10-12 from the SEC paper: Q6 is 'Coffin Ship' by John Behan (b. 1938), illustrated on the accompanying sheet: the National Famine Memorial sculpture (1997) is Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s). NextStepUni files the question under art-ordinary-post-1960s-art-in-ireland, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-irish-art-and-modernism",
@@ -12454,7 +12458,9 @@
       ],
       "topicIds": [
         "art-higher-section-b-generic-questions",
-        "art-higher-the-renaissance-c-1300-1600s"
+        "art-higher-the-renaissance-c-1300-1600s",
+        "art-higher-the-baroque-c-1600-1700s",
+        "art-higher-modernism-c-1900-1960s"
       ],
       "resolution": "retained-local",
       "reason": "Entitled SEC written-paper card preserved locally although the factual reference snapshot has no association for this top-level question."
@@ -12471,7 +12477,8 @@
       ],
       "topicIds": [
         "art-higher-artists-processes-and-media",
-        "art-higher-art-as-social-commentary-or-commentator"
+        "art-higher-art-as-social-commentary-or-commentator",
+        "art-higher-artists-theory-and-thinking"
       ],
       "resolution": "retained-local",
       "reason": "Entitled SEC written-paper card preserved locally although the factual reference snapshot has no association for this top-level question."
@@ -12488,7 +12495,9 @@
       ],
       "topicIds": [
         "art-ordinary-section-b-generic-questions",
-        "art-ordinary-europe-realism-impressionism-and-post-impressionism"
+        "art-ordinary-europe-realism-impressionism-and-post-impressionism",
+        "art-ordinary-europe-the-renaissance-c-1300-1600s",
+        "art-ordinary-the-baroque-c-1600-1700s"
       ],
       "resolution": "retained-local",
       "reason": "Entitled SEC written-paper card preserved locally although the factual reference snapshot has no association for this top-level question."
@@ -20414,6 +20423,146 @@
   "reviewedOptionTopics": [
     {
       "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "Giotto (c.1267/76-1337)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2017 - Question 14 - Giotto (c.1267/76-1337)"
+    },
+    {
+      "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "Titian (c.1488-1576)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2017 - Question 14 - Titian (c.1488-1576)"
+    },
+    {
+      "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "Pieter Bruegel the Elder (c.1525-1569)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2017 - Question 14 - Pieter Bruegel the Elder (c.1525-1569)"
+    },
+    {
+      "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "Jean-Honoré Fragonard (1732-1806)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-higher-the-baroque-c-1600-1700s",
+      "heading": "2017 - Question 14 - Jean-Honoré Fragonard (1732-1806)"
+    },
+    {
+      "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "Vasily Kandinsky (1866-1944)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2017 - Question 14 - Vasily Kandinsky (1866-1944)"
+    },
+    {
+      "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Baroque",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-higher-the-baroque-c-1600-1700s",
+      "heading": "2017 - Question 15 - Baroque"
+    },
+    {
+      "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Neoclassicism",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-higher-section-b-generic-questions",
+      "heading": "2017 - Question 15 - Neoclassicism"
+    },
+    {
+      "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Art Nouveau",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-higher-realism-impressionism-and-post-impressionism",
+      "heading": "2017 - Question 15 - Art Nouveau"
+    },
+    {
+      "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Dada",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2017 - Question 15 - Dada"
+    },
+    {
+      "level": "ordinary",
+      "year": 2017,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“Birth of Venus” by Sandro Botticelli (c.1445-1510)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2017 - Question 14 - “Birth of Venus” by Sandro Botticelli (c.1445-1510)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2017,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“Night Watch” by Rembrandt van Rijn (1606-1669)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-ordinary-the-baroque-c-1600-1700s",
+      "heading": "2017 - Question 14 - “Night Watch” by Rembrandt van Rijn (1606-1669)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2017,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“The Third of May 1808” by Francisco de Goya (1746-1828)",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-ordinary-section-b-generic-questions",
+      "heading": "2017 - Question 14 - “The Third of May 1808” by Francisco de Goya (1746-1828)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2017,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“The Fighting Temeraire” by J.M.W. Turner (1775-1851)",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-ordinary-section-b-generic-questions",
+      "heading": "2017 - Question 14 - “The Fighting Temeraire” by J.M.W. Turner (1775-1851)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2017,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“The Starry Night” by Vincent van Gogh (1853-1890)",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-ordinary-europe-realism-impressionism-and-post-impressionism",
+      "heading": "2017 - Question 14 - “The Starry Night” by Vincent van Gogh (1853-1890)"
+    },
+    {
+      "level": "higher",
       "year": 2018,
       "fileid": "LC014ALP013EV.pdf",
       "questionNumber": "14",
@@ -21276,6 +21425,65 @@
       "topicIds": [
         "art-ordinary-europe-the-renaissance-c-1300-1600s"
       ]
+    },
+    {
+      "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "topicIds": [
+        "art-higher-the-baroque-c-1600-1700s",
+        "art-higher-modernism-c-1900-1960s"
+      ],
+      "basis": "retained-local"
+    },
+    {
+      "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "16",
+      "topicIds": [
+        "art-higher-artists-theory-and-thinking"
+      ],
+      "basis": "retained-local"
+    },
+    {
+      "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "17",
+      "topicIds": [
+        "art-higher-art-and-the-environment"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "19",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2017,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "20",
+      "topicIds": [
+        "art-higher-art-and-the-environment"
+      ]
+    },
+    {
+      "level": "ordinary",
+      "year": 2017,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "topicIds": [
+        "art-ordinary-europe-the-renaissance-c-1300-1600s",
+        "art-ordinary-the-baroque-c-1600-1700s"
+      ],
+      "basis": "retained-local"
     },
     {
       "level": "higher",

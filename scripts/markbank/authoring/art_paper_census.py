@@ -27,7 +27,7 @@ SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 FURNITURE = re.compile(
     r'Leaving Certificate Examination \d{4}|Art\s*[–-]\s*(?:Visual Studies|History and Appreciation of Art)\s*[–-]\s*'
     r'(?:Higher|Ordinary) Level|Optional (?:Planning|Answer) Space.*|Additional Answer Space.*|'
-    r'Answer for Question|Label all work clearly with the question number and part\.?')
+    r'Answer for Question|Label all work clearly with the question number and part\.?|Page \d+ of \d+|Blank Page')
 DIRECTIVE = re.compile(
     r'\b(?:choose|select|either|(?:one|any) of the following|any (?:one|two|three|four|five))\b', re.I)
 
@@ -57,7 +57,10 @@ def census(year: int, level: str) -> dict:
         if number in questions:
             continue  # the instructions page names questions it does not print
         parts = sorted(set(re.findall(r'(?m)^\s*\(([a-d])\)\s', body)))
-        linked = bool(re.search(r'(?mi)^\s*and\s*$|^\s*and\s+(?=[A-Z])', body)) and year <= 2022
+        # A printed "and" between two tasks stands on its own line (or opens a
+        # capitalised sentence); a wrapped line that merely begins with "and"
+        # ("and influences.", 2017 HL Q7) is not a task boundary.
+        linked = bool(re.search(r'(?m)^[ \t]*[Aa]nd[ \t]*$|^[ \t]*and[ \t]+(?=[A-Z])', body)) and year <= 2022
         tasks = [f'({p})' for p in parts] if parts else (['task 1', 'task 2'] if linked else ['response'])
         directives = sorted({m.group(0).lower() for m in DIRECTIVE.finditer(' '.join(body.split()))})
         questions[number] = {'page': page, 'tasks': tasks, 'directives': directives}

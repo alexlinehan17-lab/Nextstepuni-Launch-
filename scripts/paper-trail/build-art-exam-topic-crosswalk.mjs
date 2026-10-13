@@ -329,6 +329,18 @@ const REVIEWED_REFERENCE_ANOMALIES = [
     topicId: 'art-ordinary-the-baroque-c-1600-1700s',
     evidence: "Q11 is \"Choose one work by Caravaggio (1571-1610)\" with \"(b) Briefly describe and discuss Caravaggio's use of light\": Caravaggio is The Baroque (c. 1600-1700s), not The Renaissance.",
   },
+  {
+    level: 'ordinary', year: 2017, n: '6',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is 'Coffin Ship' by John Behan (b. 1938), illustrated on the accompanying sheet: the National Famine Memorial sculpture (1997) is Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2017, n: '11',
+    referenceTopicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    topicId: 'art-ordinary-the-baroque-c-1600-1700s',
+    evidence: "Q11 is 'The Ecstasy of Saint Teresa' by Gian Lorenzo Bernini (1598-1680), with \"(b) Briefly describe and discuss the Baroque style\": the paper itself places it in the Baroque (c. 1600-1700s), not The Renaissance.",
+  },
 ];
 const anomalyFor = (level, year, n, topicId) => REVIEWED_REFERENCE_ANOMALIES.find(item => (
   item.level === level && item.year === year && item.n === n && item.referenceTopicId === topicId
@@ -754,15 +766,15 @@ if (
   throw new Error('Every logical Art card must be exactly matched, reviewed, or explicitly retained');
 }
 if (
-  matchedAssociations.length !== 572
+  matchedAssociations.length !== 570
   || sourceBlockedAssociations.length !== 98
-  || referenceAnomalyAssociations.length !== 20
-  || exactTopicsByCard.size !== 524
-  || reviewedTopicsByCard.size !== 19
-  || reviewedOnlyCards.length !== 17
-  || matchedQuestionTopicLinks !== 564
-  || reviewedOptionTopics.length !== 70
-  || reviewedSpecificTopics.length !== 19
+  || referenceAnomalyAssociations.length !== 22
+  || exactTopicsByCard.size !== 522
+  || reviewedTopicsByCard.size !== 21
+  || reviewedOnlyCards.length !== 19
+  || matchedQuestionTopicLinks !== 562
+  || reviewedOptionTopics.length !== 84
+  || reviewedSpecificTopics.length !== 25
   || retainedLocalCards.length !== 536
   || retainedWrittenLogicalCards !== 144
   || retainedPracticalLogicalCards !== 392

@@ -10,21 +10,23 @@ import { artMarks, suggestRubricGrade } from '../components/MarkBank/SessionScre
 
 const CARDS = [...HIGHER, ...ORDINARY];
 
-describe('complete Art corpus, 2018–2026', () => {
-  it('cards every separately marked task on all eighteen papers', () => {
-    expect(HIGHER).toHaveLength(414);
-    expect(ORDINARY).toHaveLength(389);
-    expect(CARDS).toHaveLength(803);
-    expect(new Set(CARDS.map(card => card.id)).size).toBe(803);
+describe('complete Art corpus, 2017–2026', () => {
+  it('cards every separately marked task on all twenty papers', () => {
+    expect(HIGHER).toHaveLength(476);
+    expect(ORDINARY).toHaveLength(446);
+    expect(CARDS).toHaveLength(922);
+    expect(new Set(CARDS.map(card => card.id)).size).toBe(922);
 
     const censusIds = census.papers.flatMap(paper => paper.cards.map(card => card.cardId));
     expect([...CARDS.map(card => card.id)].sort()).toEqual([...censusIds].sort());
-    expect(census.papers).toHaveLength(18);
-    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(803);
+    expect(census.papers).toHaveLength(20);
+    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(922);
   });
 
   it('keeps the audited task census for each paper', () => {
     const expected = {
+      '2017-higher': 62,
+      '2017-ordinary': 57,
       '2018-higher': 62,
       '2018-ordinary': 57,
       '2019-higher': 62,
@@ -170,8 +172,8 @@ describe('complete Art corpus, 2018–2026', () => {
     const requiringIllustration = CARDS.filter(card =>
       /accompanying sheet/i.test(`${card.stem ?? ''} ${card.questionText}`));
     const withIllustration = CARDS.filter(card => card.sourceMaterial);
-    expect(requiringIllustration).toHaveLength(293);
-    expect(withIllustration).toHaveLength(308);
+    expect(requiringIllustration).toHaveLength(336);
+    expect(withIllustration).toHaveLength(355);
     expect(requiringIllustration.filter(card => !card.sourceMaterial).map(card => card.id)).toEqual([]);
 
     for (const card of withIllustration) {
@@ -207,7 +209,7 @@ describe('complete Art corpus, 2018–2026', () => {
     };
     const printed = authored.descriptors as Record<string, Printed>;
     const audited = new Set<number>(authored.auditedYears);
-    expect([...audited]).toEqual([2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]);
+    expect([...audited]).toEqual([2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]);
     // The condensed wording these cards used to show is gone from them.
     const condensed = 'Limited coherence, focus, visual-art terminology and/or relevant sketches.';
     const written = 'Understand the demands of the chosen question and build the response around it.';
