@@ -6033,5 +6033,1531 @@
   },
   "originalSha256": "ade50cb42df0f7017a5681f86326c1551893d4b42c711b83ca20f515854dca12",
   "snapshotFrom": "codex/agricultural-science-completion-20261007 at 0c7f7925 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q1a": {
+  "original": {
+   "id": "agsci-2021-ol-q1a",
+   "topicId": "agsci-3-2",
+   "conceptId": "identifying-crop-and-sward-plants",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q1(a)",
+   "questionText": "Identify each of the following plants by placing a tick () in the correct box.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2 each"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Oilseed rape",
+     "marks": 2
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "Barley",
+     "marks": 2
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "Clover",
+     "marks": 2
+    }
+   ],
+   "stem": "Soyabean Cocksfoot Or",
+   "notes": "The scheme marks each of these essential, so a near miss scores nothing: the barley is told from wheat by the long awns on the ears.",
+   "figureKey": "agricultural-science-2021-OL-paper-p03-art"
+  },
+  "originalSha256": "2910c634a090fea13f38460d31600791343909d455e6a6ac0bbc38608f13f5dd",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q3a-i": {
+  "original": {
+   "id": "agsci-2021-ol-q3a-i",
+   "topicId": "agsci-3-3-2",
+   "conceptId": "crop-rotation-defined",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q3(a)(i)",
+   "questionText": "Explain the underlined term.",
+   "stem": "Crop rotation is a common practice on Irish tillage farms. (The term underlined on the paper is 'Crop rotation'.)",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Growth of crops in a defined sequence",
+     "marks": 2,
+     "accepts": [
+      "correct named example of sequence"
+     ],
+     "contextNote": "The scheme's other alternatives are 'growing different crops in a field every year (in a particular order)' and a correct named example of a sequence - any one of the three earns the 2 marks."
+    }
+   ],
+   "notes": "The paper underlines 'Crop rotation' in the lead-in; the parenthetical in the stem is an EDITORIAL GLOSS, not paper text, and exists because underlining cannot survive into a plain-string stem - without it the card asks a student to explain a term the card never identifies. questionText is verbatim. A single 2-mark point: the solidi here are alternative wordings of one definition, so one row with accepts, not three rows. The 'growing different crops in a field every year' wording is quoted in the contextNote only, because the scheme's '2' marks cell is typeset in the middle of that phrase (verified: the string is not contiguous in the scheme markdown)."
+  },
+  "originalSha256": "26fd2e84dac216ea0cc665452fe96961088f0bce84790b45bec28277a614c678",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q3a-iii": {
+  "original": {
+   "id": "agsci-2021-ol-q3a-iii",
+   "topicId": "agsci-3-3-2",
+   "conceptId": "chemical-spray-disadvantages",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q3(a)(iii)",
+   "questionText": "Suggest two disadvantages of using chemical sprays in crop production.",
+   "stem": "",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "3+1"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Toxic (harmful to human health)",
+     "marks": null,
+     "accepts": [
+      "build‐up of toxins in food chain",
+      "cause pollution",
+      "pollution of air or soil",
+      "volatilisation of fertiliser (e.g. urea) can kill germinating seedlings",
+      "resistance to chemical",
+      "cost"
+     ],
+     "contextNote": "Any one disadvantage from the scheme's list scores here; 3 marks for the first correct one, 1 for the second - the value follows the order, not the point. Also credited: 'kill other plant or animal species (e.g. pollinators - bees) or harmful to the environment'."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "build‐up of toxins in food chain",
+     "marks": null,
+     "accepts": [
+      "Toxic (harmful to human health)",
+      "cause pollution",
+      "pollution of air or soil",
+      "volatilisation of fertiliser (e.g. urea) can kill germinating seedlings",
+      "resistance to chemical",
+      "cost"
+     ],
+     "contextNote": "A second, different disadvantage. Also credited: 'kill other plant or animal species (e.g. pollinators - bees) or harmful to the environment'."
+    }
+   ],
+   "notes": "Two of an eight-item pool credited at 3 then 1. Exactly ONE entry - 'kill other plant or animal species (e.g. pollinators - bees) or harmful to the environment' - cannot be reproduced as a contiguous string because the typeset '3+1' marks cell falls inside it, so it is carried in the contextNotes; every other entry is in accepts. The scheme's list is closed (it ends at 'cost'), so openList is deliberately not set. BUILD: orderedSplit - emit both rows with marks: null or build-deck.mjs drops the card."
+  },
+  "originalSha256": "d143cf626d83e09b7fd2d62bab67c247325977515f1120e866431c07e7ebfee2",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q3b-iii": {
+  "original": {
+   "id": "agsci-2021-ol-q3b-iii",
+   "topicId": "agsci-3-3-2",
+   "conceptId": "biological-control-advantages",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q3(b)(iii)",
+   "questionText": "Outline two advantages of using biological controls in crop production.",
+   "stem": "",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "3+1"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "No chemicals used",
+     "marks": null,
+     "accepts": [
+      "no entry of chemicals into food chain (soil) or water source",
+      "lower cost to farmer",
+      "no resistance build up",
+      "self‐sustaining or long term solution",
+      "improves biodiversity"
+     ],
+     "contextNote": "Any one advantage from the scheme's list; 3 marks for the first correct one, 1 for the second - the value follows the order, not the point."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "lower cost to farmer",
+     "marks": null,
+     "accepts": [
+      "No chemicals used",
+      "no entry of chemicals into food chain (soil) or water source",
+      "no resistance build up",
+      "self‐sustaining or long term solution",
+      "improves biodiversity"
+     ],
+     "contextNote": "A second, different advantage. 'Less labour required' is also on the scheme's list."
+    }
+   ],
+   "notes": "Seven-item pool, any two credited at 3 then 1. 'less labour required' is quoted in the contextNote rather than as a verbatim row because the scheme's '3+1' marks cell is typeset in the middle of that phrase."
+  },
+  "originalSha256": "d436fa220bf7e919390e22074b59c48ef13b8dc5a5bd44a6eeba027ef0968852",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q4b": {
+  "original": {
+   "id": "agsci-2021-ol-q4b",
+   "topicId": "agsci-2-1",
+   "conceptId": "uses-of-a-brown-earth-soil",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q4(b)",
+   "questionText": "Outline one use for soil A.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "(Tillage) crops",
+     "marks": 2,
+     "accepts": [
+      "horticulture",
+      "grazing pasture (grassland)",
+      "silage or hay"
+     ]
+    }
+   ],
+   "stem": "Diagrams A and B show the profiles of two common soil types in Ireland. Humus, rich dark brown colour Pale grey, heavily leached Darker brown, leached minerals Stony Parent rock Parent rock",
+   "notes": "Any one use scores the 2 marks; the scheme prints four.",
+   "figureKey": "agricultural-science-2021-OL-paper-p07-i1"
+  },
+  "originalSha256": "1196933dcac15b84d89e8895101ec5d6d2ac44b4c22645ca38f54002052f2e3a",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q4c": {
+  "original": {
+   "id": "agsci-2021-ol-q4c",
+   "topicId": "agsci-2-1",
+   "conceptId": "disadvantages-of-a-podzol",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q4(c)",
+   "questionText": "Describe two disadvantages associated with the use of soil B.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3+1"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Poor drainage (due to the impermeable iron pan)",
+     "marks": 3,
+     "accepts": [
+      "acidic or low pH (due to poor decomposition of organic matter)",
+      "poor fertility (low CEC) (due to acid leaching)",
+      "poor root penetration (due to iron pan)",
+      "reduced crop yield (due to acidic nature of soil or poor drainage or poor aeration or waterlogging of soil)",
+      "poor establishment or yield or growth"
+     ],
+     "contextNote": "Scheme tariff is 3+1: the first disadvantage scores 3 and the second 1, so the order the answers are given in decides the total."
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "poor aeration (as air spaces fill with water)",
+     "marks": 1,
+     "accepts": [
+      "acidic or low pH (due to poor decomposition of organic matter)",
+      "poor fertility (low CEC) (due to acid leaching)",
+      "poor root penetration (due to iron pan)",
+      "reduced crop yield (due to acidic nature of soil or poor drainage or poor aeration or waterlogging of soil)",
+      "poor establishment or yield or growth"
+     ]
+    }
+   ],
+   "stem": "Diagrams A and B show the profiles of two common soil types in Ireland. Humus, rich dark brown colour Pale grey, heavily leached Darker brown, leached minerals Stony Parent rock Parent rock",
+   "figureKey": "agricultural-science-2021-OL-paper-p07-i1"
+  },
+  "originalSha256": "f975713ba45634513f716a4b440b961aefc02dc9f639eaeca9f1c2273144cbf9",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q5b": {
+  "original": {
+   "id": "agsci-2021-ol-q5b",
+   "topicId": "agsci-1-2",
+   "conceptId": "measuring-infiltration-rate",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q5(b)",
+   "questionText": "Describe how they measured the infiltration rate in this investigation.",
+   "stem": "A student carries out an investigation to compare the infiltration rate of two soils; a compacted soil and an uncompacted soil.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "3+1"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Use (same amount of) soil for each",
+     "marks": null,
+     "accepts": [
+      "(each) sample in a funnel",
+      "(lined) with filter paper",
+      "add (same volume of) water (using graduated cylinder or beaker)",
+      "compare volume of water collected from each sample"
+     ],
+     "contextNote": "Any one procedural point from the scheme's list; 3 marks for the first correct point and 1 for the second, so the value follows the order."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "(each) sample in a funnel",
+     "marks": null,
+     "accepts": [
+      "Use (same amount of) soil for each",
+      "(lined) with filter paper",
+      "add (same volume of) water (using graduated cylinder or beaker)",
+      "compare volume of water collected from each sample"
+     ],
+     "contextNote": "A second, different procedural point. Also credited: 'record time for (all) water to pass through (both samples) (into graduated cylinder or container)'."
+    }
+   ],
+   "notes": "Here the solidi separate distinct procedural points rather than synonyms, but only two are credited (3 then 1), so the card carries two rows and the rest sit in accepts. The 'record time for all water to pass through' point is quoted in the contextNote only, because the scheme's '3+1' marks cell interrupts that phrase in the printed answer."
+  },
+  "originalSha256": "36a91ba6b9e95411c40bd7afcb31291a412aa853524780633a04dd3e025c6168",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q8a-iii": {
+  "original": {
+   "id": "agsci-2021-ol-q8a-iii",
+   "topicId": "agsci-1-5",
+   "conceptId": "ppe-for-spraying",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q8(a)(iii)",
+   "questionText": "Suggest two pieces of PPE that you would recommend he wears.",
+   "stem": "A farmer is planning to spray his crops with herbicide and is looking for your advice on what personal protective equipment (PPE) he would need.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2(2)"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Gloves",
+     "marks": 2,
+     "accepts": [
+      "respirator or mask",
+      "overalls (apron)",
+      "goggles"
+     ],
+     "openList": true,
+     "contextNote": "Wellington (rubber) boots are also on the scheme's list, and it closes with 'or any two valid examples'."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "goggles",
+     "marks": 2,
+     "accepts": [
+      "Gloves",
+      "respirator or mask",
+      "overalls (apron)"
+     ],
+     "openList": true,
+     "contextNote": "A second, different item of PPE. Any two valid examples are accepted."
+    }
+   ],
+   "notes": "The scheme prints '2(2)': two pieces of PPE, each worth 2, so two rows of 2 reconcile to the 4-mark tariff - the pool of five items is not multiplied out. 'wellington (rubber) boots' is quoted in a contextNote rather than used as a verbatim row because the '2(2)' marks cell is typeset in the middle of that phrase."
+  },
+  "originalSha256": "f9cd40c6333a3d10bf17e2d677317b2504e160556c8d419d24b81a76b7af2c37",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q8a-iv": {
+  "original": {
+   "id": "agsci-2021-ol-q8a-iv",
+   "topicId": "agsci-1-5",
+   "conceptId": "ringworm-transmission-precaution",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q8(a)(iv)",
+   "questionText": "Briefly explain one precaution she should take to prevent transmission of ringworm to her from the cattle.",
+   "stem": "Sarah was dosing her cattle for endo‐parasites and noticed a few of them have ringworm.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Wear gloves or wash hands afterwards",
+     "marks": 2,
+     "accepts": [
+      "infected area on the cattle"
+     ],
+     "contextNote": "The scheme's other alternative is 'avoid touching the infected area on the cattle'."
+    }
+   ],
+   "notes": "One precaution asked for, so one 2-mark row with the alternative in accepts. That alternative is quoted in full in the contextNote because the scheme's '2' marks cell falls inside the phrase 'avoid touching the / infected area on the cattle'."
+  },
+  "originalSha256": "52e12569480a81d37d98d76aefed4de69d92d72e6631d9500072449d7fe415e7",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q8b-ii": {
+  "original": {
+   "id": "agsci-2021-ol-q8b-ii",
+   "topicId": "agsci-1-5",
+   "conceptId": "handling-cow-post-calving",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q8(b)(ii)",
+   "questionText": "Describe one safety precaution a farmer would take when handling the cow and calf immediately post‐calving.",
+   "stem": "",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Have a clear exit plan",
+     "marks": 2,
+     "accepts": [
+      "have stick or fork with you",
+      "never turn your back on the cow"
+     ],
+     "openList": true,
+     "contextNote": "Also credited: 'keep all children and dogs away or do not make loud noises or sudden movements'. The scheme closes with 'other valid answer'."
+    }
+   ],
+   "notes": "The paper prints a photograph of a cow post calving beside this part, but it is illustrative - the question text states the situation, so the card stands without it. One precaution asked for, so one 2-mark row."
+  },
+  "originalSha256": "3e1be13ce840bb19c8386e3b9c355901058abe46165d7f92cf5b941e55d1c081",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q8b-iii": {
+  "original": {
+   "id": "agsci-2021-ol-q8b-iii",
+   "topicId": "agsci-1-5",
+   "conceptId": "slurry-agitation-safety",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q8(b)(iii)",
+   "questionText": "Outline three safety precautions he should take when agitating and spreading the slurry.",
+   "stem": "A farmer is planning on spreading slurry.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "3+2+1"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Remove all animals from the shed",
+     "marks": null,
+     "accepts": [
+      "ventilate the shed",
+      "open tractor windows",
+      "use a gas monitor",
+      "do not enter shed while agitating",
+      "ensure another person is present",
+      "stay clear of all agitation points or open hatches",
+      "spread on a windy day",
+      "keep all persons and animals away during spreading",
+      "cover on PTO",
+      "ear safety equipment"
+     ],
+     "openList": true,
+     "contextNote": "Any one precaution from the scheme's list. The scheme awards 3 + 2 + 1, so a point's value depends on how many precautions were earned, not on which one is given. Also credited: \"don't spread near electric wires (when using the splash plate)\"."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "ventilate the shed",
+     "marks": null,
+     "accepts": [
+      "Remove all animals from the shed",
+      "open tractor windows",
+      "use a gas monitor",
+      "do not enter shed while agitating",
+      "ensure another person is present",
+      "stay clear of all agitation points or open hatches",
+      "spread on a windy day",
+      "keep all persons and animals away during spreading",
+      "cover on PTO",
+      "ear safety equipment"
+     ],
+     "openList": true,
+     "contextNote": "A second, different precaution. Also credited: \"don't spread near electric wires (when using the splash plate)\"."
+    },
+    {
+     "id": "r-3",
+     "kind": "alt",
+     "verbatim": "use a gas monitor",
+     "marks": null,
+     "accepts": [
+      "Remove all animals from the shed",
+      "ventilate the shed",
+      "open tractor windows",
+      "do not enter shed while agitating",
+      "ensure another person is present",
+      "stay clear of all agitation points or open hatches",
+      "spread on a windy day",
+      "keep all persons and animals away during spreading",
+      "cover on PTO",
+      "ear safety equipment"
+     ],
+     "openList": true,
+     "contextNote": "A third, different precaution. Also credited: \"don't spread near electric wires (when using the splash plate)\". The scheme closes with 'other valid answer', hence openList."
+    }
+   ],
+   "notes": "Twelve printed precautions plus 'other valid answer'; any three are credited at 3 + 2 + 1, so three rows and the card totals the printed 6 marks. Every row now carries the whole reproducible pool in accepts - a student's third precaution must be claimable from the third row. The electric-wires point is quoted only in the contextNotes because the '3+2+1' marks cell is typeset inside that phrase (verified: not contiguous in the scheme markdown). BUILD: orderedSplit - emit every row with marks: null or build-deck.mjs drops the card; the 3/2/1 shown is the scheme's ordered sequence, not per-row values."
+  },
+  "originalSha256": "d21013b153ec5025057775a61fb9be1d09a1beee047330fdc2fb4af3ce8ce68c",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q9b": {
+  "original": {
+   "id": "agsci-2021-ol-q9b",
+   "topicId": "agsci-4-3-1",
+   "conceptId": "agricultural-greenhouse-gas-sources",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q9(b)",
+   "questionText": "List two sources of greenhouse gases from agriculture.",
+   "stem": "",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "3+1"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Animal (respiration)",
+     "marks": null,
+     "accepts": [
+      "slurry",
+      "FYM",
+      "synthetic fertiliser",
+      "lime",
+      "soils",
+      "machinery (fuel)"
+     ],
+     "contextNote": "Any one source from the scheme's list; 3 marks for the first correct source and 1 for the second, so the value follows the order."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "slurry",
+     "marks": null,
+     "accepts": [
+      "Animal (respiration)",
+      "FYM",
+      "synthetic fertiliser",
+      "lime",
+      "soils",
+      "machinery (fuel)"
+     ],
+     "contextNote": "A second, different source. Also credited: 'soils or soil cultivation (ploughing)' and 'ruminant digestion (enteric fermentation)'."
+    }
+   ],
+   "notes": "Q9(a) asks the student to rank agriculture's share on a pie chart and is skipped (needs figure); (b) and (c) are recall questions that stand alone, so the chart is not carried. 'ruminant digestion (enteric fermentation)' is quoted only in a contextNote because the '3+1' marks cell is typeset inside that phrase. The topic is an approximate fit - the taxonomy has no sustainability unit and the largest listed sources are animal ones."
+  },
+  "originalSha256": "d8d78bb781731a3da797b1402505a190f0be382bc95829ba4565cad8d7437df5",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q10b": {
+  "original": {
+   "id": "agsci-2021-ol-q10b",
+   "topicId": "agsci-4-1",
+   "conceptId": "ovary-function",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q10(b)",
+   "questionText": "Outline the function of the part labelled A.",
+   "stem": "Question 10 prints a side-view line drawing of the reproductive system of a cow, with the bladder and the vulva named on the drawing and one further structure picked out by a short red arrow labelled A. Part (a) asked you to name A. Describe what the structure the arrow points to does.",
+   "figureKey": "agricultural-science-2021-OL-paper-p13-i0",
+   "labelKey": [
+    {
+     "letter": "A",
+     "meaning": "the short red arrow left of centre. It points to the small oval body at the tip of the coiled horn on the left of the drawing — the structure whose function this part asks for.",
+     "askedInThisQuestion": true
+    }
+   ],
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "(Produces) eggs or ovulation or produces oestrogen",
+     "marks": 2,
+     "accepts": [
+      "(Produces) progesterone"
+     ],
+     "contextNote": "Four alternatives for ONE 2-mark point: produces eggs, ovulation, produces oestrogen, or produces progesterone. Any single one carries the whole 2 — the 'or's are alternatives, not separate marks."
+    }
+   ],
+   "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p13-i0 shows the whole drawing, the red A arrow, the Bladder and Vulva callouts and the (a), (b) and (c) instructions. Bound because 'the part labelled A' means nothing without the drawing. The scheme's fourth alternative, progesterone, is now claimable through accepts; it cannot be appended to the row verbatim because the scheme file typesets the marks cell inside the phrase ('… produces oestrogen or 2' then 'progesterone'), which I confirmed against the file and against the build's traceability check — accepts is not traceability-checked, so the wording belongs there. The label key no longer names the structure: part (a) on the same figure asks the student to name it and this part asks what it does, so naming it in the key would hand over both. MOVED FROM STEM (scheme side only): The scheme scores (a) and (b) as separate 2-mark points, so this mark does not depend on having named A correctly."
+  },
+  "originalSha256": "95d090ccb274abee5b259fd06bbcb943e1029109700505f5364bd3be31362d8e",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q10d": {
+  "original": {
+   "id": "agsci-2021-ol-q10d",
+   "topicId": "agsci-4-2",
+   "conceptId": "where-the-insemination-gun-must-reach",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q10(d)",
+   "questionText": "A stage in artificial insemination involves placing an insemination gun inside the reproductive tract of the cow. Indicate by placing an X on the diagram exactly where the top of the insemination gun needs to be positioned.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "X on the diagram (must reach cervix)",
+     "marks": 2
+    }
+   ],
+   "stem": "The following is the reproductive system of a cow. Look at the diagram and answer the questions which follow. Vulva Bladder",
+   "figureKey": "agricultural-science-2021-OL-paper-p13-i0"
+  },
+  "originalSha256": "d770cda4ede651e83db37599ab2ec695c7d764f588dd1e9366df6c1ebfa84f2a",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q11b-i": {
+  "original": {
+   "id": "agsci-2021-ol-q11b-i",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "isolation-area-purpose",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q11(b)(i)",
+   "questionText": "Explain why they have included an isolation area on the plan.",
+   "stem": "Claire and John plan to convert their suckler farm to a dairy farm, using a combined robot milking unit and cow housing.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "If animal (cow) is sick or injured (must have isolation area to put them in during treatment)",
+     "marks": 2,
+     "accepts": [
+      "animals or humans"
+     ],
+     "contextNote": "The scheme's other alternative is \"don't pass disease (infection) to other animals or humans\"."
+    }
+   ],
+   "notes": "Q11 offers (a) or (b); (a) is entirely 3D-plan reading and is skipped, as is (b)(iv), which asks for an X on the plan. This part is answerable from the text - the question itself states that an isolation area is on the plan and asks why. The stem lightly rewords the paper's lead-in ('The following is a plan view of...') so the card does not point at a plan it cannot show; the questionText is verbatim. The 'don't pass disease' alternative is quoted in the contextNote because the '2' marks cell is typeset inside it."
+  },
+  "originalSha256": "4b90373889449ac408d18ee100e35fa2a628f8a3d4660ff75359d11e9d6a2cf2",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q11b-iii": {
+  "original": {
+   "id": "agsci-2021-ol-q11b-iii",
+   "topicId": "agsci-4-3-1",
+   "conceptId": "robotic-milking-advantages",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q11(b)(iii)",
+   "questionText": "Outline one reason why Claire and John would have opted to install a robotic milking machine rather than a traditional herringbone or rotary parlour.",
+   "stem": "Claire and John plan to convert their suckler farm to a dairy farm, using a combined robot milking unit and cow housing.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Better work‐life balance",
+     "marks": 2,
+     "accepts": [
+      "less labour needed"
+     ],
+     "contextNote": "The scheme's third alternative is 'increased milk yield from cows'."
+    }
+   ],
+   "notes": "One reason asked for, so one 2-mark row with the alternatives in accepts. 'increased milk yield from cows' is quoted in the contextNote because the '2' marks cell is typeset inside that phrase."
+  },
+  "originalSha256": "2180048bb03ba1a9dd5880b218f3e1342d0f0c4d3a0fe652c4a75eb7702cbe63",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q12a": {
+  "original": {
+   "id": "agsci-2021-ol-q12a",
+   "topicId": "agsci-4-1",
+   "conceptId": "identifying-cattle-and-sheep-breeds",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q12(a)",
+   "questionText": "The photographs show some common breeds of cattle and sheep. Identify each breed using the list of names and write your answer in the space provided. A B C D Limousin Jacob Border Leicester Charolais",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2 each"
+   },
+   "totalMarks": 8,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "A = Charolais*",
+     "marks": 2
+    },
+    {
+     "id": "r-2",
+     "kind": "point",
+     "verbatim": "B = Limousin*",
+     "marks": 2
+    },
+    {
+     "id": "r-3",
+     "kind": "point",
+     "verbatim": "C = Jacob*",
+     "marks": 2
+    },
+    {
+     "id": "r-4",
+     "kind": "point",
+     "verbatim": "D = Border Leicester*",
+     "marks": 2
+    }
+   ],
+   "figureKey": "agricultural-science-2021-OL-paper-p16-art"
+  },
+  "originalSha256": "46843b092d303ad162875e63ae9269c8a1ce519e44923c542c73ecd50779b877",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q12b": {
+  "original": {
+   "id": "agsci-2021-ol-q12b",
+   "topicId": "agsci-4-2",
+   "conceptId": "breed-characteristics",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "A",
+   "questionRef": "2021 OL Q12(b)",
+   "questionText": "Describe one characteristic of a named breed of either pig or horse or poultry that you have studied.",
+   "stem": "",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Landrace ‐ floppy ears / long body / good conformation / light forequarters / excellent ham development",
+     "marks": 2,
+     "accepts": [
+      "high carcase weight",
+      "good milk production",
+      "prolificacy",
+      "Large White ‐ upright ears / pale skin / high growth rate / high lean meat % / good terminal sires / good uniformity of pigs / prolific & good at converting feed",
+      "Rhode Island Red ‐ red‐orange eyes / reddish‐brown beaks / yellow feet and legs / hardy breed / produce well on marginal feed / lay 200 ‐ 300 eggs per year (prolific) / produce large eggs / eggs pale brown colour (market demands) / produce medium weight eggs",
+      "Irish Sport Horse ‐ athleticism / jumping ability / courage / intelligence / soundness"
+     ],
+     "openList": true,
+     "contextNote": "The scheme awards 0 marks for naming the breed - the 2 marks are for the characteristic. Any one characteristic of any of the named breeds scores, and the scheme closes with 'Or other valid answer'. The first three accepts entries are the remaining Landrace characteristics."
+    }
+   ],
+   "notes": "Q12(a) identifies four breeds from photographs and is skipped. Part (b) needs one characteristic of one named breed, so it is a single 2-mark point with the scheme's four breed lists in accepts - the solidi are alternative characteristics, not separate marks. Each breed list is now a whole contiguous scheme string (verified against the scheme markdown); the earlier version cut two of them mid-phrase, leaving 'yellow' dangling and 'feet and legs' reading as a characteristic in its own right. The '(0m for naming breed)' instruction is carried on the row because a student who names a breed and stops has earned nothing."
+  },
+  "originalSha256": "d666223cb6c3235d57b2d048079c0102b885a9a01e3634495c15d8b1bc071a60",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q13c-iv": {
+  "original": {
+   "id": "agsci-2021-ol-q13c-iv",
+   "topicId": "agsci-4-3-3",
+   "conceptId": "farm-biosecurity-practices",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q13(c)(iv)",
+   "stem": "Question 13 is an animal health question. Parts (a) and (b) deal with liver fluke; part (c) moves on to notifiable disease, biosecurity and animal welfare at housing.",
+   "questionText": "State three practices farmers could employ to ensure good biosecurity on their farm.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "2+2+1"
+   },
+   "totalMarks": 5,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Operate closed herd (breed own replacements)",
+     "marks": null,
+     "accepts": [
+      "footbath or disposable footwear and clothing",
+      "limit visitors",
+      "fence boundaries",
+      "quarantine new animals or isolate sick animals",
+      "disinfect trailers (machinery)",
+      "use of AI (Artificial Insemination)",
+      "information signage"
+     ],
+     "openList": true,
+     "contextNote": "Any one biosecurity practice from the scheme's pool, or another sound one, since the list closes with 'other valid answer'. The scheme awards 2 + 2 + 1, so a point's value follows the order, not which practice is named. Also credited: 'do not share equipment or machinery or colostrum' - quoted here rather than in accepts because the '2+2+1' marks cell is typeset in the middle of that phrase."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "quarantine new animals or isolate sick animals",
+     "marks": null,
+     "accepts": [
+      "Operate closed herd (breed own replacements)",
+      "footbath or disposable footwear and clothing",
+      "limit visitors",
+      "fence boundaries",
+      "disinfect trailers (machinery)",
+      "use of AI (Artificial Insemination)",
+      "information signage"
+     ],
+     "openList": true,
+     "contextNote": "A second, different practice from the same pool. Also credited: 'do not share equipment or machinery or colostrum' - quoted here rather than in accepts because the '2+2+1' marks cell is typeset in the middle of that phrase."
+    },
+    {
+     "id": "r-3",
+     "kind": "alt",
+     "verbatim": "footbath or disposable footwear and clothing",
+     "marks": null,
+     "accepts": [
+      "Operate closed herd (breed own replacements)",
+      "limit visitors",
+      "fence boundaries",
+      "quarantine new animals or isolate sick animals",
+      "disinfect trailers (machinery)",
+      "use of AI (Artificial Insemination)",
+      "information signage"
+     ],
+     "openList": true,
+     "contextNote": "A third, different practice from the same pool. Also credited: 'do not share equipment or machinery or colostrum' - quoted here rather than in accepts because the '2+2+1' marks cell is typeset in the middle of that phrase."
+    }
+   ],
+   "notes": "Nine printed practices plus 'other valid answer'; any three credited at 2 + 2 + 1, so three rows and the card totals the printed 5 marks. Every reproducible pool item sits in accepts on all three rows so a student's third practice is claimable from the third row; 'do not share equipment or machinery or colostrum' is quoted in the contextNotes only, because the marks cell interrupts it in the scheme. BUILD: orderedSplit, so every row must carry marks: null."
+  },
+  "originalSha256": "e266a6e84d182352d419dd1e51194c85e5ef90e33c16aec92bb681244c70722f",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q14b-ii": {
+  "original": {
+   "id": "agsci-2021-ol-q14b-ii",
+   "topicId": "agsci-1-2",
+   "conceptId": "resazurin-milk-quality-method",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q14(b)(ii)",
+   "stem": "Question 14 is about dairy production. Part (b) reads: \"The dairy farmer wanted to carry out an investigation to test the hygienic quality of a milk sample over time.\"",
+   "questionText": "Describe, using a labelled diagram, a method the farmer could use to carry out this investigation.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3(3)"
+   },
+   "totalMarks": 9,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Place (equal amounts of) milk into the test tubes or suitable container",
+     "marks": 3,
+     "accepts": [
+      "add (few drops 1 cm3) of Resazurin",
+      "place (in water bath) at 37oC",
+      "repeat (test on the same milk sample of various ages over time",
+      "(record) colour change or stated colour change"
+     ],
+     "contextNote": "The scheme credits 'Diagram or text showing the following', so a written method scores as well as a drawn one. '15 to 30 minutes' is also a creditable step but is quoted here rather than in accepts, because the '3(3)' marks cell is typeset inside that phrase."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "add (few drops 1 cm3) of Resazurin",
+     "marks": 3,
+     "accepts": [
+      "Place (equal amounts of) milk into the test tubes or suitable container",
+      "place (in water bath) at 37oC",
+      "repeat (test on the same milk sample of various ages over time",
+      "(record) colour change or stated colour change"
+     ],
+     "contextNote": "A second, different step. The scheme's colour key: fresh blue = good quality (low TBC), blue to deep mauve = good, deep pink = fair, light pink = poor, white = poor."
+    },
+    {
+     "id": "r-3",
+     "kind": "alt",
+     "verbatim": "place (in water bath) at 37oC",
+     "marks": 3,
+     "accepts": [
+      "Place (equal amounts of) milk into the test tubes or suitable container",
+      "add (few drops 1 cm3) of Resazurin",
+      "repeat (test on the same milk sample of various ages over time",
+      "(record) colour change or stated colour change"
+     ],
+     "contextNote": "A third, different step. The scheme also accepts a different milk-quality investigation altogether instead of the Resazurin test: total bacterial count by serial dilution on an agar plate, SCC by California Mastitis Test, an antibiotic (Delvo) test, % solids, thermoduric count, % protein plus % butterfat, or Methylene Blue."
+    }
+   ],
+   "notes": "The scheme prints '3(3)': three steps, each worth 3, so three rows of 3 reconcile to the 9-mark tariff and the six-step pool is not multiplied out. The paper asks for a labelled diagram, but the scheme explicitly credits 'Diagram or text', which is why this is carded as a text card rather than skipped; no figure printed in the paper is needed to answer it. REVIEWER: the alternative OR route (a completely different milk-quality test) is carried in a contextNote rather than as route-tagged rows, because the scheme prints that alternative as a list of test NAMES, not as a second set of marking steps."
+  },
+  "originalSha256": "d2fc7f3a11fb8295f0d6d399243f6050029e2ca3aa88218f4c13c58af30072bd",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q14b-iii": {
+  "original": {
+   "id": "agsci-2021-ol-q14b-iii",
+   "topicId": "agsci-1-2",
+   "conceptId": "experimental-error-and-reduction",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q14(b)(iii)",
+   "stem": "Question 14 is about dairy production. Part (b) reads: \"The dairy farmer wanted to carry out an investigation to test the hygienic quality of a milk sample over time.\" The paper prints two answer lines for this part, Error: and Reduce error:",
+   "questionText": "State one error that could occur during this investigation and outline one way that this error could be reduced if doing this investigation again.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2+1"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Wrong temperature on water bath",
+     "marks": 2,
+     "accepts": [
+      "incorrect amount of Resazurin or milk",
+      "non sterile or dirty test tubes or containers",
+      "correct observation of time"
+     ],
+     "contextNote": "The scheme prints '2+1', meaning the first correct answer encountered scores 2 and the second scores 1. The paper's answer boxes put the error first, so the error carries 2 and the way of reducing it carries 1."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "use thermometer to check temperature",
+     "marks": 1,
+     "accepts": [
+      "use pipette or dropper",
+      "use sterile test tubes or containers",
+      "use a watch or timer"
+     ],
+     "contextNote": "The reduction must match the error claimed above: wrong water-bath temperature goes with a thermometer, wrong amount of Resazurin or milk with a pipette or dropper, dirty tubes with sterile tubes, timing with a watch or timer."
+    }
+   ],
+   "notes": "The scheme prints the four possibilities as error-and-fix PAIRS. They are split here into an error row and a reduction row because that is how the paper's own answer boxes are laid out (Error: / Reduce error:) and how the '2+1' falls - first answer encountered 2, second 1. The pairing is spelled out in row 2's contextNote so a student cannot tick a fix that does not match their error."
+  },
+  "originalSha256": "13f09cc8c4b7804419fbcec05e617b32416d29dbe48a0eb57afef08f146bf84d",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q14b-iv": {
+  "original": {
+   "id": "agsci-2021-ol-q14b-iv",
+   "topicId": "agsci-1-3",
+   "conceptId": "qualitative-versus-quantitative-results",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q14(b)(iv)",
+   "stem": "Question 14 is about dairy production. Part (b) reads: \"The dairy farmer wanted to carry out an investigation to test the hygienic quality of a milk sample over time.\" At part (ii) you described a method for that investigation; this part asks about the results it would give. The paper prints two answer lines, Result: and Justification:",
+   "questionText": "State whether the results obtained from the investigation at part (ii) above are quantitative or qualitative. Justify your answer.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2+1"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Result ‐ Qualitative (Resazurin test)",
+     "marks": 2,
+     "accepts": [
+      "Quantitative ‐ TBC"
+     ],
+     "contextNote": "Which answer is right depends on the method described at part (ii): the Resazurin test gives qualitative results, a total bacterial count gives quantitative ones. The scheme instructs the examiner to 'accept matching answer to valid test'."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "Justify Result ‐ colour change not measured numerically",
+     "marks": 1,
+     "accepts": [
+      "no. of CFU’s"
+     ],
+     "contextNote": "The justification must match the result claimed above: colour change not measured numerically justifies 'qualitative', counting colony-forming units justifies 'quantitative'."
+    }
+   ],
+   "notes": "The scheme prints '2+1' against a Result line and a Justify line, so the result carries 2 and the justification 1 - that is the order the paper's own answer boxes impose. Both rows hold the scheme's two matched alternatives (Resazurin/qualitative and TBC/quantitative)."
+  },
+  "originalSha256": "9083f6e2bc56e47b33b8414a655c6f5705ee27dcbe83a04f050487cd490b3fbf",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q15c-iii": {
+  "original": {
+   "id": "agsci-2021-ol-q15c-iii",
+   "topicId": "agsci-3-3-3",
+   "conceptId": "achieving-target-silage-ph",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q15(c)(iii)",
+   "stem": "Question 15 is about making good quality grass silage on a beef farm. Part (c) reads: \"The table below shows the analysis of the farmer's silage. Use these results to answer the questions which follow.\" The printed table gives, as farmer's analysis against target analysis - Dry Matter (DM): ? against 25%; Dry Matter Digestibility (DMD): 67% against 70% +; Crude protein: 12% against 15% +; pH: 4.7 against 3.8 to 4.2.",
+   "questionText": "Outline two ways the farmer could have achieved the target pH during the production of the silage in line with the target analysis.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "4+2"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Cut at leafy stage to increase sugar for fermentation",
+     "marks": null,
+     "accepts": [
+      "do not cut during or after rainfall as water dilutes the sugar content",
+      "cut in the afternoon as photosynthesis produces more sugar",
+      "ensure pit (bales) packed tightly to remove air",
+      "allow grass to wilt to increase sugar content",
+      "use additive (molasses or acid or inoculants) to achieve correct pH"
+     ],
+     "contextNote": "Every route to the target pH works either through sugar for lactic-acid fermentation or through excluding air. The scheme awards 4 for the first correct way and 2 for the second, so the value follows the order."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "allow grass to wilt to increase sugar content",
+     "marks": null,
+     "accepts": [
+      "Cut at leafy stage to increase sugar for fermentation",
+      "do not cut during or after rainfall as water dilutes the sugar content",
+      "cut in the afternoon as photosynthesis produces more sugar",
+      "ensure pit (bales) packed tightly to remove air",
+      "use additive (molasses or acid or inoculants) to achieve correct pH"
+     ],
+     "contextNote": "A second, different way. The scheme's full wording for the packing point is 'ensure pit (bales) packed tightly to remove air to promote growth of anaerobic bacteria (lactobacillus)', truncated in accepts because the '4+2' marks cell is typeset inside that phrase."
+    }
+   ],
+   "notes": "Six printed ways, any two credited at 4 then 2, hence two rows totalling the printed 6 marks. The stem carries the analysis table so 'the target analysis' (pH 3.8 to 4.2 against the farmer's 4.7) is not a dangling reference. BUILD: orderedSplit, so rows must carry marks: null.",
+   "figureKey": "agricultural-science-2021-ol-paper-p026-i0"
+  },
+  "originalSha256": "0633776dcb3a6eb30bf88dc9152a2516a9642ee09a0739e17a27fd989f3b99c3",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q16b-ii": {
+  "original": {
+   "id": "agsci-2021-ol-q16b-ii",
+   "topicId": "agsci-2-3",
+   "conceptId": "soil-sampling-method",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q16(b)(ii)",
+   "stem": "Question 16 — Answer both (a) and (b) with either (c) or (d).",
+   "questionText": "Outline two steps involved in collecting samples of soil for analysis.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "4+2"
+   },
+   "totalMarks": 6,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Divide the area (to be sampled into regions) (2 ‐ 4 ha in size)",
+     "marks": null,
+     "accepts": [
+      "Sample at correct depth (where crop roots are growing) (5 ‐ 10 cm)",
+      "W shape",
+      "random",
+      "min 20 samples",
+      "stay away from water troughs or ditches or wet marshy ground",
+      "soil auger"
+     ],
+     "contextNote": "Any one step from the scheme's pool scores here; the scheme awards 4 for the first correct step and 2 for the second, so the value depends on order, not on which step."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "Sample at correct depth (where crop roots are growing) (5 ‐ 10 cm)",
+     "marks": null,
+     "accepts": [
+      "Divide the area (to be sampled into regions) (2 ‐ 4 ha in size)",
+      "W shape",
+      "random",
+      "min 20 samples",
+      "stay away from water troughs or ditches or wet marshy ground",
+      "soil auger"
+     ],
+     "contextNote": "A second, different step. The scheme also credits 'take account of different soil types or slopes or previous cropping history', quoted here only because its typeset marks cell splits the phrase."
+    }
+   ],
+   "notes": "Two rows for a pool of eight steps, credited 4 then 2. orderedSplit per the scheme's own definition of the '+' notation, so both rows carry marks: null."
+  },
+  "originalSha256": "6f501b12220d064e6417ef5ba32f4178b8d0eb8d2988495e2da259340325ec80",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q16c-ii": {
+  "original": {
+   "id": "agsci-2021-ol-q16c-ii",
+   "topicId": "agsci-2-2-3",
+   "conceptId": "soil-ph-earthworms-and-grass-growth",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q16(c)(ii)",
+   "stem": "Question 16 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is getting soil samples tested for pH and percentage (%) water content.",
+   "questionText": "After analysis, the soil sample results showed a pH of 5.1. Outline the effect this pH level has on the number of earthworms in the field and the advice you would give the farmer to ensure good grass growth.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "3 + 2"
+   },
+   "totalMarks": 5,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Number: Low earthworm numbers",
+     "marks": 3
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "Advice: Lime regularly or reduce slurry",
+     "marks": 2,
+     "accepts": [
+      "raise pH >6"
+     ],
+     "contextNote": "The scheme's third wording for the advice box is 'poor grass growth as pH too low'; it is quoted here only because the typeset marks cell splits the phrase."
+    }
+   ],
+   "notes": "fixed, not a positional split: the scheme prints a 3 against its own 'Number:' line and a 2 against its own 'Advice:' line, so each box has a value of its own and the two rows sum to the 5 marks. The paper prints the same two answer boxes ('Number of earthworms:' and 'Good grass growth:')."
+  },
+  "originalSha256": "88bbda180672400fc570e972ebcfc30af6162bd22dcfde50953a5721a73a452d",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q16c-v": {
+  "original": {
+   "id": "agsci-2021-ol-q16c-v",
+   "topicId": "agsci-2-3",
+   "conceptId": "wet-soil-management-implications",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q16(c)(v)",
+   "stem": "Question 16 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is getting soil samples tested for pH and percentage (%) water content. (Using the results in the table below, part (iii) works the sample out at 58.33 % water.)",
+   "questionText": "State one implication the result has on the management of the field and give one reason for your answer.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "2+2"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Implication — Compaction or poaching",
+     "marks": 2,
+     "accepts": [
+      "late or failed germination of crops or lower yields of crops or later harvesting dates",
+      "higher incident of disease"
+     ],
+     "contextNote": "Any one implication scores the 2 marks."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "Reason — soft ground",
+     "marks": 2,
+     "accepts": [
+      "liverfluke"
+     ],
+     "contextNote": "The reason must match the implication given: soft ground goes with compaction or poaching; 'cold soil temperatures' goes with late or failed germination (quoted here only because the typeset marks cell splits it); liverfluke goes with a higher incidence of disease."
+    }
+   ],
+   "notes": "The paper asks for one implication AND one reason, and the scheme prints '2+2' — two units of equal value, so fixed with 2 + 2 rather than an ordered split (an equal split has a defined per-row value). The scheme prints three implication-reason pairs joined by solidi; splitting them into six rows would invent marking points, so the pairs live in accepts and contextNote.",
+   "figureKey": "agricultural-science-2021-OL-paper-p28-i0"
+  },
+  "originalSha256": "3e9d8299eb51714ffbaac357c2992b3684e82ea75a0987aa77ce04537bf358d8",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q16d-i": {
+  "original": {
+   "id": "agsci-2021-ol-q16d-i",
+   "topicId": "agsci-4-3-1",
+   "conceptId": "organic-food-production-principles",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q16(d)(i)",
+   "stem": "Question 16 — Answer both (a) and (b) with either (c) or (d).",
+   "questionText": "State two principles of organic food production.",
+   "tariffModel": {
+    "kind": "fixed",
+    "notation": "4+4"
+   },
+   "totalMarks": 8,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "No GMO’s",
+     "marks": 4,
+     "accepts": [
+      "no chemicals used (herbicides or pesticides or antibiotics or fertilisers)",
+      "tillage practices which increase OM or increase soil stability or soil health",
+      "use organic fertilisers (e.g. slurry, seaweed)",
+      "use organic certified seed"
+     ],
+     "contextNote": "Any one principle from the scheme's pool scores here. The scheme also credits 'tillage practices to prevent compaction and erosion', quoted here only because its typeset marks cell splits the phrase."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "no chemicals used (herbicides or pesticides or antibiotics or fertilisers)",
+     "marks": 4,
+     "accepts": [
+      "No GMO’s",
+      "tillage practices which increase OM or increase soil stability or soil health",
+      "use organic fertilisers (e.g. slurry, seaweed)",
+      "use organic certified seed"
+     ],
+     "contextNote": "A second, different principle from the same pool."
+    }
+   ],
+   "notes": "Pool of six principles, any two credited. The split is '4+4' — equal, so each row has a defined value of 4 and the model is fixed rather than orderedSplit; the two rows sum to the printed 8 marks. Two rows, not six: the solidi separate alternatives within one pool."
+  },
+  "originalSha256": "8ab985dad882ac61d1c7099550acf8c86bb28f542b6a67338a0313a420e50364",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q17a-iii": {
+  "original": {
+   "id": "agsci-2021-ol-q17a-iii",
+   "topicId": "agsci-1-2",
+   "conceptId": "controlled-variables-germination",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q17(a)(iii)",
+   "stem": "A student was asked to investigate the effect of temperature on the percentage germination of certified grass seeds. The student conducted the investigation at five set temperatures (15 °C, 20 °C, 25 °C, 30 °C and 35 °C). At each temperature 100 seeds were sown. The student repeated the investigation four times and calculated the mean (average) percentage germination.",
+   "questionText": "List two factors that the student kept constant (fixed) during the investigation.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "4+3"
+   },
+   "totalMarks": 7,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Amount or type of seeds",
+     "marks": null,
+     "accepts": [
+      "same soil type",
+      "volume of soil",
+      "time"
+     ],
+     "contextNote": "Any one controlled factor scores here; the scheme awards 4 for the first and 3 for the second. 'volume of water' is also on the scheme's list — quoted here only because the typeset marks cell splits the phrase."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "same soil type",
+     "marks": null,
+     "accepts": [
+      "Amount or type of seeds",
+      "volume of soil",
+      "time"
+     ],
+     "contextNote": "A second, different controlled factor from the same list."
+    }
+   ],
+   "notes": "Five factors in the pool, any two credited at 4 then 3 — two rows, so the card shows exactly the 7 marks. orderedSplit per the scheme's positional '+' notation."
+  },
+  "originalSha256": "bafe44171b29d15baf31705ccf54d8e21510b8bc0d46b8244a300d67efacd8a8",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q17a-iv": {
+  "original": {
+   "id": "agsci-2021-ol-q17a-iv",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "sowing-depth-and-germination",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q17(a)(iv)",
+   "stem": "A student was asked to investigate the effect of temperature on the percentage germination of certified grass seeds. The student conducted the investigation at five set temperatures (15 °C, 20 °C, 25 °C, 30 °C and 35 °C). At each temperature 100 seeds were sown. The student repeated the investigation four times and calculated the mean (average) percentage germination.",
+   "questionText": "How would the depth of sowing of the seeds affect the germination rate?",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "if sown too deep the seeds won’t (have enough energy) to get above ground",
+     "marks": 3,
+     "accepts": [
+      "more prone to attack from birds or drying out (desiccation)"
+     ],
+     "contextNote": "The scheme's second alternative in full is 'if not sown deep enough they are more prone to attack from birds or drying out (desiccation)' — either direction earns the 3 marks."
+    }
+   ],
+   "notes": "One 3-mark point: the solidus separates the too-deep case from the too-shallow case as alternative answers to the same question, so one row with the alternative in accepts rather than two rows."
+  },
+  "originalSha256": "19b1ed51a63c959afb468fd20c23b13428553cee785093f9e28fa1a0f9e03480",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q17b-ii": {
+  "original": {
+   "id": "agsci-2021-ol-q17b-ii",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "optimum-sowing-temperature-advice",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q17(b)(ii)",
+   "stem": "A student was asked to investigate the effect of temperature on the percentage germination of certified grass seeds. At each of five set temperatures 100 seeds were sown, and the investigation was repeated four times. The student's results are shown in the table below. The 20 °C figure is the value calculated at part (a): 60 % germination.",
+   "questionText": "State one piece of advice you would give to farmers on the sowing of grass seed based on your conclusion and also supported by the results of this investigation.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 3,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Sowing seeds at 25oC will give best germination rates",
+     "marks": 3,
+     "contextNote": "The scheme's alternative wording is 'increase soil temp (25oC) get majority of seeds to germinate' — quoted here only because the typeset marks cell splits the phrase."
+    }
+   ],
+   "notes": "The paper prints these results as a table and as a bar chart; the TABLE is transcribed into the stem so the advice can be justified from the card alone, and the 20 °C value (60 %) is the answer to part (a)(v). REVIEWER CHECK: confirm the inlined results table is acceptable here — the chart itself is not needed to answer, but this part does depend on seeing the results. One 3-mark point; the solidus separates two wordings of the same advice.",
+   "figureKey": "agricultural-science-2021-OL-paper-p32-i1"
+  },
+  "originalSha256": "becec239e5657f5342ed69eef89fdfd7dc7bf6b43f56593f9e5abd0e6498ac04",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q18a-i-seedbed": {
+  "original": {
+   "id": "agsci-2021-ol-q18a-i-seedbed",
+   "topicId": "agsci-3-3-1",
+   "conceptId": "seedbed-preparation",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q18(a)(i) Seedbed preparation",
+   "stem": "Question 18 — Answer both (a) and (b) with either (c) or (d).",
+   "questionText": "Discuss the production of a named crop that you have studied under the heading: Seedbed preparation.",
+   "tariffModel": {
+    "kind": "orderedSplit",
+    "notation": "4+3"
+   },
+   "totalMarks": 7,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Plough",
+     "marks": null,
+     "accepts": [
+      "harrow to produce fine tilth",
+      "produce fine firm seedbed or ridge (potatoes only)",
+      "min‐till to minimise travelling or minimise compaction or minimise soil disturbance (tillage only)"
+     ],
+     "contextNote": "Any one seedbed step scores here; the scheme awards 4 for the first correct step and 3 for the second. The scheme also credits 'pick stones to prevent damage to crop (potatoes only)' — quoted here only because the typeset marks cell splits the phrase."
+    },
+    {
+     "id": "r-2",
+     "kind": "alt",
+     "verbatim": "harrow to produce fine tilth",
+     "marks": null,
+     "accepts": [
+      "Plough",
+      "produce fine firm seedbed or ridge (potatoes only)",
+      "min‐till to minimise travelling or minimise compaction or minimise soil disturbance (tillage only)"
+     ],
+     "contextNote": "A second, different seedbed step. Steps marked '(potatoes only)' or '(tillage only)' score only for a crop of that kind."
+    }
+   ],
+   "notes": "Q18(a)(i) prints three headings, each separately tariffed — Named crop 2, Seedbed preparation 4+3, Weed control 4 — so it is carded as one card per tariffed heading rather than one 13-mark card. The 'Named crop 2' heading is NOT carded: its scheme entry reads 'Named crop', which states a tariff and contains no answer (LAW 3)."
+  },
+  "originalSha256": "ea40bc87d930077cd33ecaef62bc83fa4a916c815048643a43b616c2e6a3d1b7",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q18b-i": {
+  "original": {
+   "id": "agsci-2021-ol-q18b-i",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "natural-selection",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q18(b)(i)",
+   "stem": "Question 18 — Answer both (a) and (b) with either (c) or (d).",
+   "questionText": "Explain natural selection.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "point",
+     "verbatim": "Process through which populations of living organisms adapt and change",
+     "marks": 2,
+     "contextNote": "The scheme's alternative wording is 'organisms better adapted to their environment tend to survive and produce more offspring' — quoted here only because the typeset marks cell splits the phrase."
+    }
+   ],
+   "notes": "One 2-mark definition. The 'or' in the scheme joins two wordings of the same point, so one row."
+  },
+  "originalSha256": "b7d363efc5fdca615f116579f59315ed9713ffd49b4cf1c9457fcddba605f9df",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q18c-iii": {
+  "original": {
+   "id": "agsci-2021-ol-q18c-iii",
+   "topicId": "agsci-4-3-2",
+   "conceptId": "lamb-growth-rate-interpretation",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q18(c)(iii)",
+   "stem": "Question 18 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is producing early lambs for the Easter market. The lambs were born in January with an average birthweight of 4 kg. The lambs were weighed every two weeks, and their average liveweights were: week 0, 4 kg; week 2, 10 kg; week 4, 16 kg; week 6, 22 kg; week 8, 28 kg; week 10, 34 kg; week 12, 40 kg; week 14, 45 kg; week 16, 51 kg.",
+   "questionText": "The graph of these liveweights against age is almost a straight line. Briefly describe what this information tells the farmer about the growth rate of the lambs.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 4,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Lambs are putting weight on in a consistent manner",
+     "marks": 4,
+     "accepts": [
+      "growth rate and age are proportional"
+     ],
+     "contextNote": "The scheme's third wording is 'putting on similar weight every week' — quoted here only because the typeset marks cell splits the phrase."
+    }
+   ],
+   "notes": "The paper reads 'The graph at part (ii) is almost a straight line'; questionText names what the graph plots instead of pointing at it, because the fact the question turns on — that the line is straight — is given in words and no figure is needed to answer. One 4-mark point with solidus-separated alternative wordings."
+  },
+  "originalSha256": "f0860ef851627cdfb166325ecc7c7a38ddc36564d4c10c7f4a434d09ddf7e6e2",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
+ },
+ "agsci-2021-ol-q18d-iii": {
+  "original": {
+   "id": "agsci-2021-ol-q18d-iii",
+   "topicId": "agsci-1-2",
+   "conceptId": "measuring-shoot-length",
+   "level": "ordinary",
+   "year": 2021,
+   "subjectId": "agricultural-science",
+   "section": "B",
+   "questionRef": "2021 OL Q18(d)(iii)",
+   "stem": "Question 18 — Answer both (a) and (b) with either (c) or (d). (d) A student carried out an investigation to see if nutrients, N, P, K effected the growth rate of grass and barley plants. The student recorded the shoot length of multiple plants, calculated the mean (average) and graphed the results.",
+   "questionText": "Outline one way in which the student could have measured the shoot length of the barley / grass plant.",
+   "tariffModel": {
+    "kind": "fixed"
+   },
+   "totalMarks": 2,
+   "rows": [
+    {
+     "id": "r-1",
+     "kind": "alt",
+     "verbatim": "Cut shoot at base of plant and measure length with a ruler",
+     "marks": 2,
+     "accepts": [
+      "hold the shoot straight and measure the length with a ruler"
+     ],
+     "contextNote": "The scheme's third method is 'use a thread (string) to measure plant and then measure with a ruler' — quoted here only because the typeset marks cell splits the phrase."
+    }
+   ],
+   "notes": "One 2-mark point: the scheme's three methods are joined by 'or' as alternatives for the same point, so one row with the alternatives in accepts."
+  },
+  "originalSha256": "486cd11513d7d5cba8ddb8e792f7449d3902ec35a6f474579daf6acf4bd7737e",
+  "snapshotFrom": "codex/agricultural-science-completion-20261007 at 35942260 (unchanged since the original 869-card bank)"
  }
 }

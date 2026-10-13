@@ -39,7 +39,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(51);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(50);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
   });
 
@@ -391,7 +391,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(20);
+    expect(review.paperReviews).toHaveLength(21);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -902,6 +902,37 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(units.find(check => check.question === 'Q13')!.rule).toBe('(a) with either (b) or (c)');
   });
 
+  it('reconciles all 111 original 2021 Ordinary cards and adds the two missing parts', () => {
+    const year = ordinary.filter(card => card.year === 2021);
+    expect(year).toHaveLength(113);
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2021 OL'));
+    expect(tasks).toHaveLength(113);
+    const states = tasks.map(task => (task as { originalCard?: string }).originalCard);
+    expect(states.filter(state => state === 'unchanged')).toHaveLength(77);
+    expect(states.filter(state => state === 'corrected-in-place')).toHaveLength(34);
+    expect(states.filter(state => state === 'added')).toHaveLength(2);
+    const variantsOf = (id: string) => (get(id) as { answerVariants?: Array<{ id: string; rows: ReturnType<typeof get>['rows'] }> }).answerVariants ?? [];
+    for (const [key, ids] of [['q12b', ['landrace', 'large-white', 'rhode-island-red', 'irish-sport-horse']],
+      ['q14b-iii', ['temperature', 'amount', 'sterile', 'timing']], ['q14b-iv', ['resazurin', 'tbc']],
+      ['q16c-v', ['compaction', 'germination', 'disease']], ['q18b-iii', ['conformation', 'polled', 'smaller-calves']]] as const) {
+      const id = `agsci-2021-ol-${key}`;
+      expect(variantsOf(id).map(variant => variant.id), id).toEqual(ids);
+      expect(review.tasks.find(task => task.cardIds.includes(id))!.selection).toMatchObject({ kind: 'closed', pooled: true });
+      for (const variant of variantsOf(id)) expect(tariffReconciles({ ...get(id), rows: variant.rows }), `${id} ${variant.id}`).toBe(true);
+    }
+    // Q18(a)(i) carries the scheme's "Named crop 2", so Question 18 totals 50.
+    expect(get('agsci-2021-ol-q18a-i-seedbed').totalMarks).toBe(9);
+    expect(get('agsci-2021-ol-q4c').rows[0].group?.perOptionSteps).toEqual([3, 1]);
+    expect(get('agsci-2021-ol-q11b-iv').figure?.src).toContain('agricultural-science-2021-OL-paper-p15-i0');
+    expect(get('agsci-2021-ol-q18b-iii').figure?.src).toContain('agricultural-science-2021-OL-paper-p34-i0');
+    // The census reader no longer files Q17(b)(ii)/(iii) under (a): the two former orphans are covered.
+    for (const key of ['q17b-ii', 'q17b-iii']) expect(review.tasks.find(task => task.cardIds.includes(`agsci-2021-ol-${key}`))!.questionRef).toMatch(/Q17\(b\)/);
+    const units = census.questionMarkChecks.filter(check => check.year === 2021 && check.level === 'ordinary');
+    expect(units).toHaveLength(18);
+    for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
+    expect(units.find(check => check.question === 'Q18')!.rule).toBe('both (a) and (b) with either (c) or (d)');
+  });
+
   it('refuses Agricultural Science route siblings that differ only in which printed items were chosen', () => {
     // A printed any-N-of-M choice is ONE practice card (coordinator rule,
     // 2026-10-12). Siblings sharing a question address are allowed only for
@@ -987,7 +1018,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(1334);
+    expect(atlas.markBankCards).toHaveLength(1447);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

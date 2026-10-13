@@ -43,6 +43,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Biennial – (complete lifecycle) grows in 2 years", marks: null },
     { id: "r-2", kind: "point", verbatim: "Perennial ‐ plants that grow (complete their life cycle) every year (over many seasons) (producing flowers and seeds)", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -58,20 +68,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Breakdown food or cellulose or roughage or fibre", marks: null, accepts: ["make vitamins","synthesis (make) amino acids","produce (volatile) fatty acids"], contextNote: "Any one function from the scheme's list scores here. The scheme awards 3 for the first correct function and 1 for the second, so the value depends on order, not on which function is given." },
     { id: "r-2", kind: "alt", verbatim: "make vitamins", marks: null, accepts: ["Breakdown food or cellulose or roughage or fibre","synthesis (make) amino acids","produce (volatile) fatty acids"], contextNote: "A second, different function. Scheme qualifiers: vitamins '(B and K)'; amino acids '(from non-protein sources)'; fatty acids '(used as energy for maintenance and milk production)'." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q3a-i", topicId: "agsci-3-3-2", conceptId: "crop-rotation-defined",
-    section: "A", questionRef: "2021 OL Q3(a)(i)",
-    stem: "Crop rotation is a common practice on Irish tillage farms. (The term underlined on the paper is 'Crop rotation'.)",
-    questionText: "Explain the underlined term.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Growth of crops in a defined sequence", marks: 2, accepts: ["correct named example of sequence"], contextNote: "The scheme's other alternatives are 'growing different crops in a field every year (in a particular order)' and a correct named example of a sequence - any one of the three earns the 2 marks." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -87,20 +93,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Manage soil fertility", marks: null, accepts: ["reduce erosion","improve soil health","increase nutrient availability for crops","prevent build‐up of pests and diseases","weed control","improve soil structure"], contextNote: "Any one advantage from the scheme's list scores here; the scheme awards 3 for the first correct advantage and 1 for the second, so the value depends on order, not on which advantage." },
     { id: "r-2", kind: "alt", verbatim: "reduce erosion", marks: null, accepts: ["Manage soil fertility","improve soil health","increase nutrient availability for crops","prevent build‐up of pests and diseases","weed control","improve soil structure"], contextNote: "A second, different advantage from the same list." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q3a-iii", topicId: "agsci-3-3-2", conceptId: "chemical-spray-disadvantages",
-    section: "A", questionRef: "2021 OL Q3(a)(iii)",
-    questionText: "Suggest two disadvantages of using chemical sprays in crop production.",
-    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Toxic (harmful to human health)", marks: null, accepts: ["build‐up of toxins in food chain","cause pollution","pollution of air or soil","volatilisation of fertiliser (e.g. urea) can kill germinating seedlings","resistance to chemical","cost"], contextNote: "Any one disadvantage from the scheme's list scores here; 3 marks for the first correct one, 1 for the second - the value follows the order, not the point. Also credited: 'kill other plant or animal species (e.g. pollinators - bees) or harmful to the environment'." },
-    { id: "r-2", kind: "alt", verbatim: "build‐up of toxins in food chain", marks: null, accepts: ["Toxic (harmful to human health)","cause pollution","pollution of air or soil","volatilisation of fertiliser (e.g. urea) can kill germinating seedlings","resistance to chemical","cost"], contextNote: "A second, different disadvantage. Also credited: 'kill other plant or animal species (e.g. pollinators - bees) or harmful to the environment'." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -114,6 +116,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Control of a pest by introduction of natural enemy or predator", marks: 2, accepts: ["use of one living thing to control another","or valid example"], contextNote: "The scheme closes this point with 'or valid example', so a correct worked example of biological control also earns the 2 marks.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -128,20 +140,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Ladybird (eat) greenfly", marks: null, accepts: ["parasitic wasp (eat) greenfly","ducks or geese (eat) mud‐snail","cats (prey on or eats) mice or rats"], contextNote: "Any one example from the scheme's list, or another valid example. 3 marks for the first correct example and 1 for the second - the value follows the order.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "parasitic wasp (eat) greenfly", marks: null, accepts: ["Ladybird (eat) greenfly","ducks or geese (eat) mud‐snail","cats (prey on or eats) mice or rats"], contextNote: "A second, different example. The scheme ends the list with 'other valid examples'.", openList: true },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q3b-iii", topicId: "agsci-3-3-2", conceptId: "biological-control-advantages",
-    section: "A", questionRef: "2021 OL Q3(b)(iii)",
-    questionText: "Outline two advantages of using biological controls in crop production.",
-    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "No chemicals used", marks: null, accepts: ["no entry of chemicals into food chain (soil) or water source","lower cost to farmer","no resistance build up","self‐sustaining or long term solution","improves biodiversity"], contextNote: "Any one advantage from the scheme's list; 3 marks for the first correct one, 1 for the second - the value follows the order, not the point." },
-    { id: "r-2", kind: "alt", verbatim: "lower cost to farmer", marks: null, accepts: ["No chemicals used","no entry of chemicals into food chain (soil) or water source","no resistance build up","self‐sustaining or long term solution","improves biodiversity"], contextNote: "A second, different advantage. 'Less labour required' is also on the scheme's list." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -156,21 +164,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Infiltration rate", marks: 2, accepts: ["drainage","soil (structure)"], contextNote: "Scheme prints: 'Infiltration rate or drainage or soil (structure)' - any one of the three earns the 2 marks." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q5b", topicId: "agsci-1-2", conceptId: "measuring-infiltration-rate",
-    section: "A", questionRef: "2021 OL Q5(b)",
-    stem: "A student carries out an investigation to compare the infiltration rate of two soils; a compacted soil and an uncompacted soil.",
-    questionText: "Describe how they measured the infiltration rate in this investigation.",
-    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Use (same amount of) soil for each", marks: null, accepts: ["(each) sample in a funnel","(lined) with filter paper","add (same volume of) water (using graduated cylinder or beaker)","compare volume of water collected from each sample"], contextNote: "Any one procedural point from the scheme's list; 3 marks for the first correct point and 1 for the second, so the value follows the order." },
-    { id: "r-2", kind: "alt", verbatim: "(each) sample in a funnel", marks: null, accepts: ["Use (same amount of) soil for each","(lined) with filter paper","add (same volume of) water (using graduated cylinder or beaker)","compare volume of water collected from each sample"], contextNote: "A second, different procedural point. Also credited: 'record time for (all) water to pass through (both samples) (into graduated cylinder or container)'." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -185,6 +188,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Uncompacted soil", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -198,6 +211,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Ploughing", marks: 2, accepts: ["subsoiling","liming","manuring or composting","sanding","dig drains","reduce heavy machinery use"], contextNote: "One way only is asked for, so one point is credited; any single entry from the scheme's list earns the 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -216,6 +239,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Pregnancy toxaemia — Twin lamb disease", marks: 2 },
     { id: "r-5", kind: "point", verbatim: "Calcium is added to the ration of the ewes prior to lambing to prevent — Milk fever", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -345,78 +378,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Prevent children or animal accessing them", marks: 2, accepts: ["poisonous","expensive"], contextNote: "One reason only is asked for; any one of the scheme's three earns the 2 marks." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q8a-iii", topicId: "agsci-1-5", conceptId: "ppe-for-spraying",
-    section: "A", questionRef: "2021 OL Q8(a)(iii)",
-    stem: "A farmer is planning to spray his crops with herbicide and is looking for your advice on what personal protective equipment (PPE) he would need.",
-    questionText: "Suggest two pieces of PPE that you would recommend he wears.",
-    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Gloves", marks: 2, accepts: ["respirator or mask","overalls (apron)","goggles"], contextNote: "Wellington (rubber) boots are also on the scheme's list, and it closes with 'or any two valid examples'.", openList: true },
-    { id: "r-2", kind: "alt", verbatim: "goggles", marks: 2, accepts: ["Gloves","respirator or mask","overalls (apron)"], contextNote: "A second, different item of PPE. Any two valid examples are accepted.", openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q8a-iv", topicId: "agsci-1-5", conceptId: "ringworm-transmission-precaution",
-    section: "A", questionRef: "2021 OL Q8(a)(iv)",
-    stem: "Sarah was dosing her cattle for endo‐parasites and noticed a few of them have ringworm.",
-    questionText: "Briefly explain one precaution she should take to prevent transmission of ringworm to her from the cattle.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Wear gloves or wash hands afterwards", marks: 2, accepts: ["infected area on the cattle"], contextNote: "The scheme's other alternative is 'avoid touching the infected area on the cattle'." },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q8b-ii", topicId: "agsci-1-5", conceptId: "handling-cow-post-calving",
-    section: "A", questionRef: "2021 OL Q8(b)(ii)",
-    questionText: "Describe one safety precaution a farmer would take when handling the cow and calf immediately post‐calving.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Have a clear exit plan", marks: 2, accepts: ["have stick or fork with you","never turn your back on the cow"], contextNote: "Also credited: 'keep all children and dogs away or do not make loud noises or sudden movements'. The scheme closes with 'other valid answer'.", openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q8b-iii", topicId: "agsci-1-5", conceptId: "slurry-agitation-safety",
-    section: "A", questionRef: "2021 OL Q8(b)(iii)",
-    stem: "A farmer is planning on spreading slurry.",
-    questionText: "Outline three safety precautions he should take when agitating and spreading the slurry.",
-    tariffModel: {"kind":"orderedSplit","notation":"3+2+1"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Remove all animals from the shed", marks: null, accepts: ["ventilate the shed","open tractor windows","use a gas monitor","do not enter shed while agitating","ensure another person is present","stay clear of all agitation points or open hatches","spread on a windy day","keep all persons and animals away during spreading","cover on PTO","ear safety equipment"], contextNote: "Any one precaution from the scheme's list. The scheme awards 3 + 2 + 1, so a point's value depends on how many precautions were earned, not on which one is given. Also credited: \"don't spread near electric wires (when using the splash plate)\".", openList: true },
-    { id: "r-2", kind: "alt", verbatim: "ventilate the shed", marks: null, accepts: ["Remove all animals from the shed","open tractor windows","use a gas monitor","do not enter shed while agitating","ensure another person is present","stay clear of all agitation points or open hatches","spread on a windy day","keep all persons and animals away during spreading","cover on PTO","ear safety equipment"], contextNote: "A second, different precaution. Also credited: \"don't spread near electric wires (when using the splash plate)\".", openList: true },
-    { id: "r-3", kind: "alt", verbatim: "use a gas monitor", marks: null, accepts: ["Remove all animals from the shed","ventilate the shed","open tractor windows","do not enter shed while agitating","ensure another person is present","stay clear of all agitation points or open hatches","spread on a windy day","keep all persons and animals away during spreading","cover on PTO","ear safety equipment"], contextNote: "A third, different precaution. Also credited: \"don't spread near electric wires (when using the splash plate)\". The scheme closes with 'other valid answer', hence openList.", openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q9b", topicId: "agsci-4-3-1", conceptId: "agricultural-greenhouse-gas-sources",
-    section: "A", questionRef: "2021 OL Q9(b)",
-    questionText: "List two sources of greenhouse gases from agriculture.",
-    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Animal (respiration)", marks: null, accepts: ["slurry","FYM","synthetic fertiliser","lime","soils","machinery (fuel)"], contextNote: "Any one source from the scheme's list; 3 marks for the first correct source and 1 for the second, so the value follows the order." },
-    { id: "r-2", kind: "alt", verbatim: "slurry", marks: null, accepts: ["Animal (respiration)","FYM","synthetic fertiliser","lime","soils","machinery (fuel)"], contextNote: "A second, different source. Also credited: 'soils or soil cultivation (ploughing)' and 'ruminant digestion (enteric fermentation)'." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -432,6 +403,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Leave tree in hedges", marks: null, accepts: ["plant more native hedgerows or trees","cut hedges at correct time of year","cut hedges 1 in 3 years","cut hedges in pyramid shape rather than box shape to allow for nesting birds","leave field margins and grassy areas","replace drinking points with an alternative water supply or move drinking troughs away from drains","install bird or bat boxes or insect boxes","(identify and control) invasive species","sow wild flowers (to increase pollinators)","sow multi‐species swards (polycultures rather than monocultures)","clean water sources in an environmentally friendly manner","grow crops for wildlife","no ploughing","no chemical usage (herbicide or fertiliser)"], contextNote: "Any one way from the scheme's list; 3 marks for the first correct way and 1 for the second, so the value follows the order. The scheme closes with 'other valid answer', so a sound measure outside the list also scores.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "plant more native hedgerows or trees", marks: null, accepts: ["Leave tree in hedges","cut hedges at correct time of year","cut hedges 1 in 3 years","cut hedges in pyramid shape rather than box shape to allow for nesting birds","leave field margins and grassy areas","replace drinking points with an alternative water supply or move drinking troughs away from drains","install bird or bat boxes or insect boxes","(identify and control) invasive species","sow wild flowers (to increase pollinators)","sow multi‐species swards (polycultures rather than monocultures)","clean water sources in an environmentally friendly manner","grow crops for wildlife","no ploughing","no chemical usage (herbicide or fertiliser)"], contextNote: "A second, different way. The scheme closes with 'other valid answer'.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -446,20 +427,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Gestation length = 279 ‐ 291 days", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "Oestrous cycle length = 21 days", marks: 2 },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q11b-i", topicId: "agsci-4-3-3", conceptId: "isolation-area-purpose",
-    section: "A", questionRef: "2021 OL Q11(b)(i)",
-    stem: "Claire and John plan to convert their suckler farm to a dairy farm, using a combined robot milking unit and cow housing.",
-    questionText: "Explain why they have included an isolation area on the plan.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "If animal (cow) is sick or injured (must have isolation area to put them in during treatment)", marks: 2, accepts: ["animals or humans"], contextNote: "The scheme's other alternative is \"don't pass disease (infection) to other animals or humans\"." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -474,33 +451,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Disinfect or clean boots", marks: 2, accepts: ["biosecurity"], contextNote: "Scheme prints: 'Disinfect or clean boots (to prevent entry of diseases on to or off the farm) / biosecurity'." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q11b-iii", topicId: "agsci-4-3-1", conceptId: "robotic-milking-advantages",
-    section: "A", questionRef: "2021 OL Q11(b)(iii)",
-    stem: "Claire and John plan to convert their suckler farm to a dairy farm, using a combined robot milking unit and cow housing.",
-    questionText: "Outline one reason why Claire and John would have opted to install a robotic milking machine rather than a traditional herringbone or rotary parlour.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Better work‐life balance", marks: 2, accepts: ["less labour needed"], contextNote: "The scheme's third alternative is 'increased milk yield from cows'." },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q12b", topicId: "agsci-4-2", conceptId: "breed-characteristics",
-    section: "A", questionRef: "2021 OL Q12(b)",
-    questionText: "Describe one characteristic of a named breed of either pig or horse or poultry that you have studied.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Landrace ‐ floppy ears / long body / good conformation / light forequarters / excellent ham development", marks: 2, accepts: ["high carcase weight","good milk production","prolificacy","Large White ‐ upright ears / pale skin / high growth rate / high lean meat % / good terminal sires / good uniformity of pigs / prolific & good at converting feed","Rhode Island Red ‐ red‐orange eyes / reddish‐brown beaks / yellow feet and legs / hardy breed / produce well on marginal feed / lay 200 ‐ 300 eggs per year (prolific) / produce large eggs / eggs pale brown colour (market demands) / produce medium weight eggs","Irish Sport Horse ‐ athleticism / jumping ability / courage / intelligence / soundness"], contextNote: "The scheme awards 0 marks for naming the breed - the 2 marks are for the characteristic. Any one characteristic of any of the named breeds scores, and the scheme closes with 'Or other valid answer'. The first three accepts entries are the remaining Landrace characteristics.", openList: true },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2910,6 +2870,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "gate", verbatim: "90 million", marks: 4, contextNote: "Printed in the scheme as '90 million*'. The SEC asterisk means only this exact figure scores, and a surplus wrong figure written alongside it cancels this row. The figure is lifted straight from the article ('over €90 million annually')." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2924,6 +2894,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Waterlogged or wet (poorly drained) areas or excess water", marks: 4, contextNote: "One condition is asked for and the scheme prints one 4-mark answer with its own alternative wordings, so 'waterlogged', 'wet (poorly drained) areas' or 'excess water' each score the full 4." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2963,6 +2943,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Lower rainfall or higher rain in northern counties", marks: 4, accepts: ["drier land","lower incidence of mud snail"], contextNote: "One reason is asked for and the whole 4 marks sit on it, so any one of the scheme's three alternatives scores in full." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p20-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p20-i0.png",
@@ -2985,6 +2975,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Disease that must be reported (immediately to authorities)", marks: 3, contextNote: "The scheme continues the line '(DAFM or DVO) (as it is contagious or infectious)'. That bracketed detail is context rather than a requirement of the answer, and it is quoted here rather than inside the row because the scheme's '3' marks cell is typeset in the middle of the phrase." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3000,6 +3000,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "TB", marks: 4, accepts: ["Swine Flu","Foot and Mouth","BSE","Brucellosis","BVD","Scrapie","sheep scab"], contextNote: "Any one notifiable disease from the scheme's list, or another valid one, since the list closes with 'other valid answer'.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "Foot and Mouth", marks: 4, accepts: ["TB","Swine Flu","BSE","Brucellosis","BVD","Scrapie","sheep scab"], contextNote: "A second, different notifiable disease.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3014,22 +3024,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Disease is infectious or contagious", marks: 3, accepts: ["may pose threat to humans or zoonosis","risk to national herds"], contextNote: "The scheme qualifies the first point '(could be passed onto animals very easily)', quoted here rather than inside the row because the '3' marks cell is typeset in the middle of that phrase. One reason carries the whole 3 marks, so any of the three alternatives scores in full." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q13c-iv", topicId: "agsci-4-3-3", conceptId: "farm-biosecurity-practices",
-    section: "B", questionRef: "2021 OL Q13(c)(iv)",
-    stem: "Question 13 is an animal health question. Parts (a) and (b) deal with liver fluke; part (c) moves on to notifiable disease, biosecurity and animal welfare at housing.",
-    questionText: "State three practices farmers could employ to ensure good biosecurity on their farm.",
-    tariffModel: {"kind":"orderedSplit","notation":"2+2+1"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Operate closed herd (breed own replacements)", marks: null, accepts: ["footbath or disposable footwear and clothing","limit visitors","fence boundaries","quarantine new animals or isolate sick animals","disinfect trailers (machinery)","use of AI (Artificial Insemination)","information signage"], contextNote: "Any one biosecurity practice from the scheme's pool, or another sound one, since the list closes with 'other valid answer'. The scheme awards 2 + 2 + 1, so a point's value follows the order, not which practice is named. Also credited: 'do not share equipment or machinery or colostrum' - quoted here rather than in accepts because the '2+2+1' marks cell is typeset in the middle of that phrase.", openList: true },
-    { id: "r-2", kind: "alt", verbatim: "quarantine new animals or isolate sick animals", marks: null, accepts: ["Operate closed herd (breed own replacements)","footbath or disposable footwear and clothing","limit visitors","fence boundaries","disinfect trailers (machinery)","use of AI (Artificial Insemination)","information signage"], contextNote: "A second, different practice from the same pool. Also credited: 'do not share equipment or machinery or colostrum' - quoted here rather than in accepts because the '2+2+1' marks cell is typeset in the middle of that phrase.", openList: true },
-    { id: "r-3", kind: "alt", verbatim: "footbath or disposable footwear and clothing", marks: null, accepts: ["Operate closed herd (breed own replacements)","limit visitors","fence boundaries","quarantine new animals or isolate sick animals","disinfect trailers (machinery)","use of AI (Artificial Insemination)","information signage"], contextNote: "A third, different practice from the same pool. Also credited: 'do not share equipment or machinery or colostrum' - quoted here rather than in accepts because the '2+2+1' marks cell is typeset in the middle of that phrase.", openList: true },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3046,6 +3050,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "good ventilation (to prevent pneumonia (chill))", marks: null, accepts: ["Adequate feeding / lying space","clean water (available for all animals to prevent disease)","house animals same age and size","draft free (to decrease the animal’s chance of getting pneumonia (chill))","clean dry bedding or mats (to prevent any infection or disease)","lime on floor (to prevent infection)"], contextNote: "A second, different housing practice from the same pool.", openList: true },
     { id: "r-3", kind: "alt", verbatim: "clean dry bedding or mats (to prevent any infection or disease)", marks: null, accepts: ["Adequate feeding / lying space","clean water (available for all animals to prevent disease)","house animals same age and size","good ventilation (to prevent pneumonia (chill))","draft free (to decrease the animal’s chance of getting pneumonia (chill))","lime on floor (to prevent infection)"], contextNote: "A third, different housing practice from the same pool.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3061,6 +3075,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Holstein Friesian", marks: null, accepts: ["British Friesian","Jersey","Brown Swiss","Shorthorn","Ayrshire"], contextNote: "Any one dairy breed from the scheme's list, or another valid dairy breed, since the list ends 'other valid answer'. The scheme awards 5 for the first correct breed and 3 for the second, so the value follows the order, not the breed.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "Jersey", marks: null, accepts: ["Holstein Friesian","British Friesian","Brown Swiss","Shorthorn","Ayrshire"], contextNote: "A second, different dairy breed.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3077,6 +3101,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "teat dipping (pre and post milking)", marks: null, accepts: ["Wash udders (prior to milking or stripping)","clean (collecting) yard or parlour","milk filters","service milking machine regularly","change cluster liners (twice a year)","store milk <4oC","plate cooler","lime on cubicles","clean, dry bedding","operator wear gloves or wash hands","milk or keep infected cows (high cell count) cows separately"], contextNote: "A second, different hygiene practice from the same pool." },
     { id: "r-3", kind: "alt", verbatim: "clean (collecting) yard or parlour", marks: null, accepts: ["Wash udders (prior to milking or stripping)","teat dipping (pre and post milking)","milk filters","service milking machine regularly","change cluster liners (twice a year)","store milk <4oC","plate cooler","lime on cubicles","clean, dry bedding","operator wear gloves or wash hands","milk or keep infected cows (high cell count) cows separately"], contextNote: "A third, different hygiene practice from the same pool." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3092,6 +3126,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "% fat", marks: null, accepts: ["% protein","(excess) water","sediment","antibiotic","TBC","SCC","TCM","thermoduric bacteria"], contextNote: "Any one milk test from the scheme's pool. The scheme's eighth item reads 'TCM (trichloromethane)' with the '4+3' marks cell typeset between 'TCM' and the bracket, so only the abbreviation is reproducible here - TCM is trichloromethane. The scheme awards 4 for the first correct test and 3 for the second, so the value follows the order." },
     { id: "r-2", kind: "alt", verbatim: "% protein", marks: null, accepts: ["% fat","(excess) water","sediment","antibiotic","TBC","SCC","TCM","thermoduric bacteria"], contextNote: "A second, different milk test. TBC = total bacterial count, SCC = somatic cell count, TCM = trichloromethane." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3107,6 +3151,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Feed cows good quality feed (highly digestible leafy grass or good quality silage (72 ‐ 75%)", marks: null, accepts: ["use genomic bulls","clover (protein) in sward","14 ‐ 15% protein ration","breed from high quality (only high EBI) cows (in the herd )","use breeds with high % fat and % protein or named valid breed","cull infected cows (mastitis / high SCC)"], contextNote: "Any one way from the scheme's pool. The scheme awards 4 for the first correct way and 3 for the second, so the value follows the order." },
     { id: "r-2", kind: "alt", verbatim: "breed from high quality (only high EBI) cows (in the herd )", marks: null, accepts: ["Feed cows good quality feed (highly digestible leafy grass or good quality silage (72 ‐ 75%)","use genomic bulls","clover (protein) in sward","14 ‐ 15% protein ration","use breeds with high % fat and % protein or named valid breed","cull infected cows (mastitis / high SCC)"], contextNote: "A second, different way from the same pool. EBI = Economic Breeding Index." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3121,52 +3175,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Milk quality", marks: 3, accepts: ["time","same amount of milk","same amount of Resazurin","temperature","same equipment (condition of equipment (sterile))"], contextNote: "The scheme adds '(variable can be independent or dependent or control)', so naming any one of these scores the full 3 marks; the question does not specify which type of variable." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q14b-ii", topicId: "agsci-1-2", conceptId: "resazurin-milk-quality-method",
-    section: "B", questionRef: "2021 OL Q14(b)(ii)",
-    stem: "Question 14 is about dairy production. Part (b) reads: \"The dairy farmer wanted to carry out an investigation to test the hygienic quality of a milk sample over time.\"",
-    questionText: "Describe, using a labelled diagram, a method the farmer could use to carry out this investigation.",
-    tariffModel: {"kind":"fixed","notation":"3(3)"}, totalMarks: 9,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Place (equal amounts of) milk into the test tubes or suitable container", marks: 3, accepts: ["add (few drops 1 cm3) of Resazurin","place (in water bath) at 37oC","repeat (test on the same milk sample of various ages over time","(record) colour change or stated colour change"], contextNote: "The scheme credits 'Diagram or text showing the following', so a written method scores as well as a drawn one. '15 to 30 minutes' is also a creditable step but is quoted here rather than in accepts, because the '3(3)' marks cell is typeset inside that phrase." },
-    { id: "r-2", kind: "alt", verbatim: "add (few drops 1 cm3) of Resazurin", marks: 3, accepts: ["Place (equal amounts of) milk into the test tubes or suitable container","place (in water bath) at 37oC","repeat (test on the same milk sample of various ages over time","(record) colour change or stated colour change"], contextNote: "A second, different step. The scheme's colour key: fresh blue = good quality (low TBC), blue to deep mauve = good, deep pink = fair, light pink = poor, white = poor." },
-    { id: "r-3", kind: "alt", verbatim: "place (in water bath) at 37oC", marks: 3, accepts: ["Place (equal amounts of) milk into the test tubes or suitable container","add (few drops 1 cm3) of Resazurin","repeat (test on the same milk sample of various ages over time","(record) colour change or stated colour change"], contextNote: "A third, different step. The scheme also accepts a different milk-quality investigation altogether instead of the Resazurin test: total bacterial count by serial dilution on an agar plate, SCC by California Mastitis Test, an antibiotic (Delvo) test, % solids, thermoduric count, % protein plus % butterfat, or Methylene Blue." },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q14b-iii", topicId: "agsci-1-2", conceptId: "experimental-error-and-reduction",
-    section: "B", questionRef: "2021 OL Q14(b)(iii)",
-    stem: "Question 14 is about dairy production. Part (b) reads: \"The dairy farmer wanted to carry out an investigation to test the hygienic quality of a milk sample over time.\" The paper prints two answer lines for this part, Error: and Reduce error:",
-    questionText: "State one error that could occur during this investigation and outline one way that this error could be reduced if doing this investigation again.",
-    tariffModel: {"kind":"fixed","notation":"2+1"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Wrong temperature on water bath", marks: 2, accepts: ["incorrect amount of Resazurin or milk","non sterile or dirty test tubes or containers","correct observation of time"], contextNote: "The scheme prints '2+1', meaning the first correct answer encountered scores 2 and the second scores 1. The paper's answer boxes put the error first, so the error carries 2 and the way of reducing it carries 1." },
-    { id: "r-2", kind: "alt", verbatim: "use thermometer to check temperature", marks: 1, accepts: ["use pipette or dropper","use sterile test tubes or containers","use a watch or timer"], contextNote: "The reduction must match the error claimed above: wrong water-bath temperature goes with a thermometer, wrong amount of Resazurin or milk with a pipette or dropper, dirty tubes with sterile tubes, timing with a watch or timer." },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q14b-iv", topicId: "agsci-1-3", conceptId: "qualitative-versus-quantitative-results",
-    section: "B", questionRef: "2021 OL Q14(b)(iv)",
-    stem: "Question 14 is about dairy production. Part (b) reads: \"The dairy farmer wanted to carry out an investigation to test the hygienic quality of a milk sample over time.\" At part (ii) you described a method for that investigation; this part asks about the results it would give. The paper prints two answer lines, Result: and Justification:",
-    questionText: "State whether the results obtained from the investigation at part (ii) above are quantitative or qualitative. Justify your answer.",
-    tariffModel: {"kind":"fixed","notation":"2+1"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Result ‐ Qualitative (Resazurin test)", marks: 2, accepts: ["Quantitative ‐ TBC"], contextNote: "Which answer is right depends on the method described at part (ii): the Resazurin test gives qualitative results, a total bacterial count gives quantitative ones. The scheme instructs the examiner to 'accept matching answer to valid test'." },
-    { id: "r-2", kind: "alt", verbatim: "Justify Result ‐ colour change not measured numerically", marks: 1, accepts: ["no. of CFU’s"], contextNote: "The justification must match the result claimed above: colour change not measured numerically justifies 'qualitative', counting colony-forming units justifies 'quantitative'." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3182,6 +3200,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "PRG", marks: null, accepts: ["IRG","hybrid rye grass"], contextNote: "PRG = perennial ryegrass, IRG = Italian ryegrass. The scheme closes with 'other valid answer', so another suitable silage grass also scores. It awards 4 for the first correct grass and 2 for the second, so the value follows the order.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "IRG", marks: null, accepts: ["PRG","hybrid rye grass"], contextNote: "A second, different grass.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3196,6 +3224,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Good yield or fast growing", marks: 4, accepts: ["persistent","high quality (DMD) grass","good establishment","palatable","uniform growth"], contextNote: "One reason is asked for and the whole 4 marks sit on it, so any one of the scheme's six alternatives scores in full." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3211,6 +3249,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Stage ‐ Vegetative stage or leafy stage", marks: 4, contextNote: "The scheme prints '4+2': the first correct answer encountered scores 4 and the second 2, and the paper puts the Stage line first, so the stage carries 4." },
     { id: "r-2", kind: "alt", verbatim: "Justification ‐ most digestible", marks: 2, accepts: ["leafy stage","high sugar content","high protein content","stem remains compact at base of stem","plant tillers (constant number of leaves on plant)"], contextNote: "Any one justification from the scheme's list scores the 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3225,6 +3273,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Time of cutting ‐ May / (early) June", marks: 4, contextNote: "One date carries the whole 4 marks; the solidus separates two acceptable answers to the same point, so either May or early June scores in full." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3239,6 +3297,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Fertiliser requirement – soil test for nutrient requirement", marks: 4, accepts: ["(compound) fertilizer (18‐6‐12 or urea (protected urea) or 10 ‐10 ‐ 20)","spread manure or slurry","6‐8 weeks prior to cutting"], contextNote: "Any one point under this heading carries the whole 4 marks. The scheme's second option reads 'apply (compound) fertilizer (18‐6‐12 or urea (protected urea) or 10 ‐10 ‐ 20)'; the leading 'apply' is dropped from the accepted wording because the scheme's '4' marks cell is typeset between 'apply' and the rest of that phrase." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3255,6 +3323,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "wilt for 24 hours", marks: null, accepts: ["do not cut during or after rainfall","cut in the afternoon","conditioner or precision chop mower","ensile (bale) ‐ harvester (baler)","pit ‐ pack to remove air","use additives","cover pit (wrap bales)","stack bales"], contextNote: "A second, different step from the same pool." },
     { id: "r-3", kind: "alt", verbatim: "pit ‐ pack to remove air", marks: null, accepts: ["do not cut during or after rainfall","cut in the afternoon","conditioner or precision chop mower","wilt for 24 hours","ensile (bale) ‐ harvester (baler)","use additives","cover pit (wrap bales)","stack bales"], contextNote: "A third, different step. The scheme's full wording here is 'pit ‐ pack to remove air (anaerobic conditions)'; the qualifier is quoted rather than included because the '4+4+2' marks cell is typeset inside that phrase." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3269,6 +3347,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "29.83%", marks: 4, contextNote: "Dried weight divided by fresh weight, times 100. The scheme allows partial credit: 'If a calculation is shown (37/124 x 100/1) but answer calculated is incorrect award 3 marks', so showing the working is worth 3 of the 4 even when the arithmetic goes wrong." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-ol-paper-p026-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-ol-paper-p026-i1.png",
@@ -3292,29 +3380,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "DMD not high enough (67%), will need to feed concentrates", marks: null, accepts: ["concentrates with high protein % (14 ‐ 16%) as silage protein low","poor preservation, not enough lactic acid produced as pH too high"], contextNote: "Each reason has to be tied back to a figure in the table. The scheme awards 3 for the first correct reason and 1 for the second, so the value follows the order." },
     { id: "r-2", kind: "alt", verbatim: "concentrates with high protein % (14 ‐ 16%) as silage protein low", marks: null, accepts: ["DMD not high enough (67%), will need to feed concentrates","poor preservation, not enough lactic acid produced as pH too high"], contextNote: "A second, different reason from the same pool." },
     ],
-    figure: {
-          "candId": "agricultural-science-2021-ol-paper-p026-i0",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-ol-paper-p026-i0.png",
-          "srcHash": "3f83c27a46a5186fb6caf1275fef9396",
-          "alt": "The silage analysis table, three columns by five rows. Two peach-shaded header cells read 'Farmer's analysis' and 'Target analysis' above the value columns, with the row-label column left blank. The four bold row labels are Dry Matter (DM), Dry Matter Digestibility (DMD), Crude protein and pH. The farmer's DM cell is highlighted bright yellow and holds a question mark against a target of 25%; DMD is 67% against 70% +, crude protein is 12% against 15% +, and pH is 4.7 against 3.8 - 4.2.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
     },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q15c-iii", topicId: "agsci-3-3-3", conceptId: "achieving-target-silage-ph",
-    section: "B", questionRef: "2021 OL Q15(c)(iii)",
-    stem: "Question 15 is about making good quality grass silage on a beef farm. Part (c) reads: \"The table below shows the analysis of the farmer's silage. Use these results to answer the questions which follow.\" The printed table gives, as farmer's analysis against target analysis - Dry Matter (DM): ? against 25%; Dry Matter Digestibility (DMD): 67% against 70% +; Crude protein: 12% against 15% +; pH: 4.7 against 3.8 to 4.2.",
-    questionText: "Outline two ways the farmer could have achieved the target pH during the production of the silage in line with the target analysis.",
-    tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Cut at leafy stage to increase sugar for fermentation", marks: null, accepts: ["do not cut during or after rainfall as water dilutes the sugar content","cut in the afternoon as photosynthesis produces more sugar","ensure pit (bales) packed tightly to remove air","allow grass to wilt to increase sugar content","use additive (molasses or acid or inoculants) to achieve correct pH"], contextNote: "Every route to the target pH works either through sugar for lactic-acid fermentation or through excluding air. The scheme awards 4 for the first correct way and 2 for the second, so the value follows the order." },
-    { id: "r-2", kind: "alt", verbatim: "allow grass to wilt to increase sugar content", marks: null, accepts: ["Cut at leafy stage to increase sugar for fermentation","do not cut during or after rainfall as water dilutes the sugar content","cut in the afternoon as photosynthesis produces more sugar","ensure pit (bales) packed tightly to remove air","use additive (molasses or acid or inoculants) to achieve correct pH"], contextNote: "A second, different way. The scheme's full wording for the packing point is 'ensure pit (bales) packed tightly to remove air to promote growth of anaerobic bacteria (lactobacillus)', truncated in accepts because the '4+2' marks cell is typeset inside that phrase." },
-    ],
     figure: {
           "candId": "agricultural-science-2021-ol-paper-p026-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-ol-paper-p026-i0.png",
@@ -3337,6 +3412,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Lactobacillus", marks: 2, contextNote: "The scheme reads 'Lactobacillus or valid named species', so another correctly named silage bacterium also scores. Lactobacillus is the anaerobic bacterium whose lactic acid drops the pH.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3354,6 +3439,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "Organic matter content — Clay soil has higher OM content (than sandy soil)", marks: 4, accepts: ["lower OM (than clay soil)"], contextNote: "The scheme's other wording is 'sandy soil has lower OM (than clay soil)'." },
     { id: "r-4", kind: "alt", verbatim: "Tillage suitability — Sandy soil has good drainage or warms up earlier in spring or easier to cultivate or lacks fertility", marks: 4, accepts: ["Clay has poorer drainage or takes longer to warm up in spring or more difficult to cultivate or is more fertile soil"], contextNote: "The scheme prints a sandy statement and a clay statement against one mark cell — either side of the comparison earns the 4 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3370,21 +3465,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "min till or use less heavy machinery (decreased fossil fuels or decreased compaction)", marks: null, accepts: ["Sowing cover crops (to prevent leaching or soil erosion)","ploughing back in straw (increased OM in soil)","aerating soil or drain land (restore soil air in compacted soil or restore soil health)","remove animals from land during wet weather","addition of FYM (slurry) or slurry seeding (to increase number of earthworms)","soil test on annual basis (to ensure correct pH and nutrient)","crop rotation (for nutrient management or maintain organic matter)"], contextNote: "A second, different practice from the same pool." },
     { id: "r-3", kind: "alt", verbatim: "ploughing back in straw (increased OM in soil)", marks: null, accepts: ["Sowing cover crops (to prevent leaching or soil erosion)","min till or use less heavy machinery (decreased fossil fuels or decreased compaction)","aerating soil or drain land (restore soil air in compacted soil or restore soil health)","remove animals from land during wet weather","addition of FYM (slurry) or slurry seeding (to increase number of earthworms)","soil test on annual basis (to ensure correct pH and nutrient)","crop rotation (for nutrient management or maintain organic matter)"], contextNote: "A third, different practice from the same pool. 'remove animals from land during wet weather' is qualified '(to prevent poaching)' in the scheme; the qualifier is cut off by the typeset marks cell." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q16b-ii", topicId: "agsci-2-3", conceptId: "soil-sampling-method",
-    section: "B", questionRef: "2021 OL Q16(b)(ii)",
-    stem: "Question 16 — Answer both (a) and (b) with either (c) or (d).",
-    questionText: "Outline two steps involved in collecting samples of soil for analysis.",
-    tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Divide the area (to be sampled into regions) (2 ‐ 4 ha in size)", marks: null, accepts: ["Sample at correct depth (where crop roots are growing) (5 ‐ 10 cm)","W shape","random","min 20 samples","stay away from water troughs or ditches or wet marshy ground","soil auger"], contextNote: "Any one step from the scheme's pool scores here; the scheme awards 4 for the first correct step and 2 for the second, so the value depends on order, not on which step." },
-    { id: "r-2", kind: "alt", verbatim: "Sample at correct depth (where crop roots are growing) (5 ‐ 10 cm)", marks: null, accepts: ["Divide the area (to be sampled into regions) (2 ‐ 4 ha in size)","W shape","random","min 20 samples","stay away from water troughs or ditches or wet marshy ground","soil auger"], contextNote: "A second, different step. The scheme also credits 'take account of different soil types or slopes or previous cropping history', quoted here only because its typeset marks cell splits the phrase." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3400,21 +3490,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Mix soil sample with (distilled) water", marks: null, accepts: ["(filter sample through) filter paper in funnel","test filtrate with pH probe or universal indicator","take reading or observe colour change"], contextNote: "Any one step from the scheme's pool scores here; the scheme awards 4 for the first correct step and 3 for the second. The indicator option is qualified '(paper)' in the scheme." },
     { id: "r-2", kind: "alt", verbatim: "(filter sample through) filter paper in funnel", marks: null, accepts: ["Mix soil sample with (distilled) water","test filtrate with pH probe or universal indicator","take reading or observe colour change"], contextNote: "A second, different step from the same pool." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q16c-ii", topicId: "agsci-2-2-3", conceptId: "soil-ph-earthworms-and-grass-growth",
-    section: "B", questionRef: "2021 OL Q16(c)(ii)",
-    stem: "Question 16 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is getting soil samples tested for pH and percentage (%) water content.",
-    questionText: "After analysis, the soil sample results showed a pH of 5.1. Outline the effect this pH level has on the number of earthworms in the field and the advice you would give the farmer to ensure good grass growth.",
-    tariffModel: {"kind":"fixed","notation":"3 + 2"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Number: Low earthworm numbers", marks: 3 },
-    { id: "r-2", kind: "alt", verbatim: "Advice: Lime regularly or reduce slurry", marks: 2, accepts: ["raise pH >6"], contextNote: "The scheme's third wording for the advice box is 'poor grass growth as pH too low'; it is quoted here only because the typeset marks cell splits the phrase." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3429,6 +3514,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "58.33%", marks: 3, contextNote: "The scheme awards 2 of the 3 marks where the calculation (70/120 x 100/1) is shown but the answer worked out is incorrect." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3443,6 +3538,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Soil is very wet or needs to be drained or compacted", marks: 4, accepts: ["air spaces in the soil are filled with water"], contextNote: "The scheme's second wording in full is 'nearly all the air spaces in the soil are filled with water'." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p28-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p28-i0.png",
@@ -3451,44 +3556,6 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q16c-v", topicId: "agsci-2-3", conceptId: "wet-soil-management-implications",
-    section: "B", questionRef: "2021 OL Q16(c)(v)",
-    stem: "Question 16 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is getting soil samples tested for pH and percentage (%) water content. (Using the results in the table below, part (iii) works the sample out at 58.33 % water.)",
-    questionText: "State one implication the result has on the management of the field and give one reason for your answer.",
-    tariffModel: {"kind":"fixed","notation":"2+2"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Implication — Compaction or poaching", marks: 2, accepts: ["late or failed germination of crops or lower yields of crops or later harvesting dates","higher incident of disease"], contextNote: "Any one implication scores the 2 marks." },
-    { id: "r-2", kind: "alt", verbatim: "Reason — soft ground", marks: 2, accepts: ["liverfluke"], contextNote: "The reason must match the implication given: soft ground goes with compaction or poaching; 'cold soil temperatures' goes with late or failed germination (quoted here only because the typeset marks cell splits it); liverfluke goes with a higher incidence of disease." },
-    ],
-    figure: {
-          "candId": "agricultural-science-2021-OL-paper-p28-i0",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p28-i0.png",
-          "srcHash": "9548e59f7ade7f1fa681b6d51afed738",
-          "alt": "A table from the exam paper. Columns: Weight of soil before drying, 120g. Rows: Weight of soil after drying, % Soil Water. 3 rows by 2 columns, as printed in the paper.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q16d-i", topicId: "agsci-4-3-1", conceptId: "organic-food-production-principles",
-    section: "B", questionRef: "2021 OL Q16(d)(i)",
-    stem: "Question 16 — Answer both (a) and (b) with either (c) or (d).",
-    questionText: "State two principles of organic food production.",
-    tariffModel: {"kind":"fixed","notation":"4+4"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "No GMO’s", marks: 4, accepts: ["no chemicals used (herbicides or pesticides or antibiotics or fertilisers)","tillage practices which increase OM or increase soil stability or soil health","use organic fertilisers (e.g. slurry, seaweed)","use organic certified seed"], contextNote: "Any one principle from the scheme's pool scores here. The scheme also credits 'tillage practices to prevent compaction and erosion', quoted here only because its typeset marks cell splits the phrase." },
-    { id: "r-2", kind: "alt", verbatim: "no chemicals used (herbicides or pesticides or antibiotics or fertilisers)", marks: 4, accepts: ["No GMO’s","tillage practices which increase OM or increase soil stability or soil health","use organic fertilisers (e.g. slurry, seaweed)","use organic certified seed"], contextNote: "A second, different principle from the same pool." },
-    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3505,6 +3572,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "no GMO crops", marks: null, accepts: ["Animals reared on land free from chemicals","free‐range","soil structure protected with addition of green manures (slurry or FYM)","decreased pollution risk","increased biodiversity","maintenance of habitat","increased housing space for animals","higher price for product"], contextNote: "A second, different advantage from the same pool." },
     { id: "r-3", kind: "alt", verbatim: "soil structure protected with addition of green manures (slurry or FYM)", marks: null, accepts: ["Animals reared on land free from chemicals","free‐range","no GMO crops","decreased pollution risk","increased biodiversity","maintenance of habitat","increased housing space for animals","higher price for product"], contextNote: "A third, different advantage from the same pool." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3521,6 +3598,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "drain the land ‐ improves pH and increase N", marks: null, accepts: ["Add lime ‐ increase pH","add clover (legumes) or mixed species to sward ‐ increase N","spread slurry or farmyard manure or compost ‐ increase N","use sheep on land to increase N content through dung"], contextNote: "A second, different recommendation from the same pool." },
     { id: "r-3", kind: "alt", verbatim: "add clover (legumes) or mixed species to sward ‐ increase N", marks: null, accepts: ["Add lime ‐ increase pH","drain the land ‐ improves pH and increase N","spread slurry or farmyard manure or compost ‐ increase N","use sheep on land to increase N content through dung"], contextNote: "A third, different recommendation from the same pool." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3536,6 +3623,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Germination ‐ growth of (plant from) seed", marks: null },
     { id: "r-2", kind: "alt", verbatim: "Certified grass seed ‐ weed free", marks: null, accepts: ["high guaranteed germination","high purity"], contextNote: "Any one of the three descriptions earns this term's marks; the scheme qualifies 'high purity' as '(true to type)'." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3550,35 +3647,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "By increasing the temperature of the soil (to a certain point) then there will be a higher germination or growth rate", marks: 4, contextNote: "The scheme's wording continues '(as seeds require heat for germination)'; the reason is bracketed, so it contextualises the hypothesis rather than being required." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q17a-iii", topicId: "agsci-1-2", conceptId: "controlled-variables-germination",
-    section: "B", questionRef: "2021 OL Q17(a)(iii)",
-    stem: "A student was asked to investigate the effect of temperature on the percentage germination of certified grass seeds. The student conducted the investigation at five set temperatures (15 °C, 20 °C, 25 °C, 30 °C and 35 °C). At each temperature 100 seeds were sown. The student repeated the investigation four times and calculated the mean (average) percentage germination.",
-    questionText: "List two factors that the student kept constant (fixed) during the investigation.",
-    tariffModel: {"kind":"orderedSplit","notation":"4+3"}, totalMarks: 7,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Amount or type of seeds", marks: null, accepts: ["same soil type","volume of soil","time"], contextNote: "Any one controlled factor scores here; the scheme awards 4 for the first and 3 for the second. 'volume of water' is also on the scheme's list — quoted here only because the typeset marks cell splits the phrase." },
-    { id: "r-2", kind: "alt", verbatim: "same soil type", marks: null, accepts: ["Amount or type of seeds","volume of soil","time"], contextNote: "A second, different controlled factor from the same list." },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q17a-iv", topicId: "agsci-3-3-1", conceptId: "sowing-depth-and-germination",
-    section: "B", questionRef: "2021 OL Q17(a)(iv)",
-    stem: "A student was asked to investigate the effect of temperature on the percentage germination of certified grass seeds. The student conducted the investigation at five set temperatures (15 °C, 20 °C, 25 °C, 30 °C and 35 °C). At each temperature 100 seeds were sown. The student repeated the investigation four times and calculated the mean (average) percentage germination.",
-    questionText: "How would the depth of sowing of the seeds affect the germination rate?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "if sown too deep the seeds won’t (have enough energy) to get above ground", marks: 3, accepts: ["more prone to attack from birds or drying out (desiccation)"], contextNote: "The scheme's second alternative in full is 'if not sown deep enough they are more prone to attack from birds or drying out (desiccation)' — either direction earns the 3 marks." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3593,6 +3671,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "60", marks: 3, contextNote: "100 seeds were sown at each temperature, so the mean number germinated is the mean percentage. The scheme awards 2 of the 3 marks where the calculation (62+59+61+58 = 240/4) is shown but the answer worked out is incorrect." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30,
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3607,6 +3696,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "To get more accurate results", marks: 3, accepts: ["more fair results"], contextNote: "The scheme's two wordings are alternatives for the same point — either earns the 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30,
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3622,27 +3722,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Wear gloves when handling compost or wash hands afterwards", marks: null, accepts: ["overheat switch on incubator","keep water away from incubator","care when handling glassware"], contextNote: "Any one precaution scores here; the scheme awards 4 for the first correct precaution and 2 for the second. The incubator-water point is qualified '(electric)'.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "overheat switch on incubator", marks: null, accepts: ["Wear gloves when handling compost or wash hands afterwards","keep water away from incubator","care when handling glassware"], contextNote: "A second, different precaution from the same list.", openList: true },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q17b-ii", topicId: "agsci-3-3-1", conceptId: "optimum-sowing-temperature-advice",
-    section: "B", questionRef: "2021 OL Q17(b)(ii)",
-    stem: "A student was asked to investigate the effect of temperature on the percentage germination of certified grass seeds. At each of five set temperatures 100 seeds were sown, and the investigation was repeated four times. The student's results are shown in the table below. The 20 °C figure is the value calculated at part (a): 60 % germination.",
-    questionText: "State one piece of advice you would give to farmers on the sowing of grass seed based on your conclusion and also supported by the results of this investigation.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Sowing seeds at 25oC will give best germination rates", marks: 3, contextNote: "The scheme's alternative wording is 'increase soil temp (25oC) get majority of seeds to germinate' — quoted here only because the typeset marks cell splits the phrase." },
-    ],
-    figure: {
-          "candId": "agricultural-science-2021-OL-paper-p32-i1",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p32-i1.png",
-          "srcHash": "8eb813aa67987384503889a10a82fb10",
-          "alt": "A table from the exam paper. Columns: Temperature (oC), 15, 20, 25, 30, 35. Rows: % Germination. 2 rows by 6 columns, as printed in the paper.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30,
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
     },
   } as SecCard,
   {
@@ -3661,21 +3750,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Factor 2 — Oxygen", marks: 2 },
     { id: "r-4", kind: "alt", verbatim: "Practice — till the soil prior to sowing", marks: 2, accepts: ["aerate soil (plough, sub‐soiler)","drain the soil"], contextNote: "Any one practice that gets air into the soil earns these 2 marks." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q18a-i-seedbed", topicId: "agsci-3-3-1", conceptId: "seedbed-preparation",
-    section: "B", questionRef: "2021 OL Q18(a)(i) Seedbed preparation",
-    stem: "Question 18 — Answer both (a) and (b) with either (c) or (d).",
-    questionText: "Discuss the production of a named crop that you have studied under the heading: Seedbed preparation.",
-    tariffModel: {"kind":"orderedSplit","notation":"4+3"}, totalMarks: 7,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Plough", marks: null, accepts: ["harrow to produce fine tilth","produce fine firm seedbed or ridge (potatoes only)","min‐till to minimise travelling or minimise compaction or minimise soil disturbance (tillage only)"], contextNote: "Any one seedbed step scores here; the scheme awards 4 for the first correct step and 3 for the second. The scheme also credits 'pick stones to prevent damage to crop (potatoes only)' — quoted here only because the typeset marks cell splits the phrase." },
-    { id: "r-2", kind: "alt", verbatim: "harrow to produce fine tilth", marks: null, accepts: ["Plough","produce fine firm seedbed or ridge (potatoes only)","min‐till to minimise travelling or minimise compaction or minimise soil disturbance (tillage only)"], contextNote: "A second, different seedbed step. Steps marked '(potatoes only)' or '(tillage only)' score only for a crop of that kind." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3690,6 +3774,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Herbicide or weed killer", marks: 4, accepts: ["shading or earthing up (potatoes only)","stubble cleaning (tillage only)","crop rotation","hand pulling or dig"], contextNote: "The scheme prints one 4 against the whole weed-control list, so any one valid method earns the 4 marks. Methods marked '(potatoes only)' or '(tillage only)' score only for a crop of that kind." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3704,6 +3798,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Beware of machinery", marks: 4, accepts: ["clothes are tight fighting so they don’t get caught in machines","be careful of machinery around power lines"], contextNote: "Any one precaution earns the 4 marks. ('tight fighting' is the scheme's own typo for 'tight fitting'.)", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3719,20 +3823,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Accurate or even spreading", marks: null, accepts: ["economic benefit (saves on fertiliser)","less chance of pollution (run off)","more environmentally friendly"], contextNote: "Any one advantage scores here; the scheme awards 4 for the first correct advantage and 2 for the second. The environmental point is qualified '(sustainable as less fertiliser required)'." },
     { id: "r-2", kind: "alt", verbatim: "economic benefit (saves on fertiliser)", marks: null, accepts: ["Accurate or even spreading","less chance of pollution (run off)","more environmentally friendly"], contextNote: "A second, different advantage from the same pool." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q18b-i", topicId: "agsci-4-3-2", conceptId: "natural-selection",
-    section: "B", questionRef: "2021 OL Q18(b)(i)",
-    stem: "Question 18 — Answer both (a) and (b) with either (c) or (d).",
-    questionText: "Explain natural selection.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Process through which populations of living organisms adapt and change", marks: 2, contextNote: "The scheme's alternative wording is 'organisms better adapted to their environment tend to survive and produce more offspring' — quoted here only because the typeset marks cell splits the phrase." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3748,6 +3848,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Using AI", marks: 2, accepts: ["performance or progeny tested bull","breed top EBI bulls","use genomic bulls","breed from top EBI cows","use of gene editing","DNA markers","sexed semen"], contextNote: "Any one method from the scheme's pool earns 2 marks." },
     { id: "r-2", kind: "alt", verbatim: "performance or progeny tested bull", marks: 2, accepts: ["Using AI","breed top EBI bulls","use genomic bulls","breed from top EBI cows","use of gene editing","DNA markers","sexed semen"], contextNote: "A second, different method from the same pool." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3762,27 +3872,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "0.42kg / day", marks: 4, contextNote: "The scheme awards 2 of the 4 marks where the calculation (51 ‐ 4 = 47/112) is shown but the answer worked out is incorrect." },
     ],
-    figure: {
-          "candId": "agricultural-science-2021-OL-paper-p35-i1",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p35-i1.png",
-          "srcHash": "8e2d17ef468e4d8cbdcdae582080ae9b",
-          "alt": "The upper region of Question 18 part (c). The stem reads: A farmer is producing early lambs for the Easter market. The lambs were born in January with an average birthweight of 4 kg. The lambs were weighed every two weeks and the table below shows the average liveweights of these animals. To the right of the stem is a colour photograph of a single lamb lying on green grass, with a dense white fleece and a completely black face and black lower legs. Below the text is a two-row data table with a pale cream header row: the first row is labelled Weeks with entries 0, 2, 4, 6, 8, 10, 12, 14, 16, and the second row is labelled Average Liveweight (kg) with entries 4, 10, 16, 22, 28, 34, 40, 45, 51. Beneath the table is part (i), Calculate the average daily liveweight gain (DLG) of the lambs over the 16-week period (112 days), and the top of an answer box beginning Calculation:.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q18c-iii", topicId: "agsci-4-3-2", conceptId: "lamb-growth-rate-interpretation",
-    section: "B", questionRef: "2021 OL Q18(c)(iii)",
-    questionText: "The graph of these liveweights against age is almost a straight line. Briefly describe what this information tells the farmer about the growth rate of the lambs.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Lambs are putting weight on in a consistent manner", marks: 4, accepts: ["growth rate and age are proportional"], contextNote: "The scheme's third wording is 'putting on similar weight every week' — quoted here only because the typeset marks cell splits the phrase." },
-    ],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "OFFICIAL QUESTION PAGE",
@@ -3792,6 +3881,14 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p35-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p35-i1.png",
+          "srcHash": "8e2d17ef468e4d8cbdcdae582080ae9b",
+          "alt": "The upper region of Question 18 part (c). The stem reads: A farmer is producing early lambs for the Easter market. The lambs were born in January with an average birthweight of 4 kg. The lambs were weighed every two weeks and the table below shows the average liveweights of these animals. To the right of the stem is a colour photograph of a single lamb lying on green grass, with a dense white fleece and a completely black face and black lower legs. Below the text is a two-row data table with a pale cream header row: the first row is labelled Weeks with entries 0, 2, 4, 6, 8, 10, 12, 14, 16, and the second row is labelled Average Liveweight (kg) with entries 4, 10, 16, 22, 28, 34, 40, 45, 51. Beneath the table is part (i), Calculate the average daily liveweight gain (DLG) of the lambs over the 16-week period (112 days), and the top of an answer box beginning Calculation:.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -3808,6 +3905,17 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Colostrum", marks: null, accepts: ["hay","milk (milk replacer)","concentrates (creep feed)","grass (silage)"], contextNote: "Any one feed from the scheme's list scores here; the scheme awards 4 for the first correct feed and 1 for the second, so the value depends on order." },
     { id: "r-2", kind: "alt", verbatim: "milk (milk replacer)", marks: null, accepts: ["Colostrum","hay","concentrates (creep feed)","grass (silage)"], contextNote: "A second, different feed from the same list." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                35,
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3822,20 +3930,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "More accurate results or more fair result", marks: 1 },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q18d-iii", topicId: "agsci-1-2", conceptId: "measuring-shoot-length",
-    section: "B", questionRef: "2021 OL Q18(d)(iii)",
-    stem: "Question 18 — Answer both (a) and (b) with either (c) or (d). (d) A student carried out an investigation to see if nutrients, N, P, K effected the growth rate of grass and barley plants. The student recorded the shoot length of multiple plants, calculated the mean (average) and graphed the results.",
-    questionText: "Outline one way in which the student could have measured the shoot length of the barley / grass plant.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Cut shoot at base of plant and measure length with a ruler", marks: 2, accepts: ["hold the shoot straight and measure the length with a ruler"], contextNote: "The scheme's third method is 'use a thread (string) to measure plant and then measure with a ruler' — quoted here only because the typeset marks cell splits the phrase." },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3853,6 +3957,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "allOf", verbatim: "Storage ‐ tank (under slats) / dung stead or manure pit or slab or dung heap", marks: 3, contextNote: "Slurry in a tank under slats; farmyard manure on a dung stead, manure pit, slab or dung heap." },
     { id: "r-4", kind: "allOf", verbatim: "Application ‐ slurry tanker or umbilical cord or trailing shoe", marks: 3, accepts: ["injector","muck or side or dung spreader"], contextNote: "Slurry: slurry tanker, umbilical cord, trailing shoe or injector. Farmyard manure: muck, side or dung spreader. The scheme's marks cell splits this line, so the verbatim stops at 'trailing shoe' and the rest sits here." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                38
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7511,6 +7625,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "C = Buttercup", marks: 2 },
     { id: "r-4", kind: "point", verbatim: "D = Thistle", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p04-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p04-i0.png",
@@ -7539,6 +7663,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Spray (with herbicide or weed killer)", marks: 2, accepts: ["digging up or ploughing (to remove weeds)","crop rotation to disturb (break) weed cycle"], contextNote: "The solidi separate three wordings of ONE 2-mark point, not three marks. Only one method is asked for and it carries the whole 2." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p04-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p04-i0.png",
@@ -7569,6 +7703,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "B = Abomasum", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "C = Omasum", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p05-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p05-i0.png",
@@ -7597,6 +7741,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "A = Brown earth", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "B = Podzol", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p07-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p07-i1.png",
@@ -7624,6 +7778,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "1st (highest ranking) or most or top", marks: 2, contextNote: "The 'or's are three wordings of one answer, not three marks. A rank is wanted, not the percentage — but a student who writes '34%, the largest sector' has said the same thing and the examiner is directed to consider answers on their merits." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p12-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p12-i0.png",
@@ -7646,6 +7810,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "gate", verbatim: "Ovary", marks: 2, contextNote: "Printed in the scheme as 'Ovary*'. The SEC asterisk means only this exact term scores — 'egg sac' or a description does not — and a surplus wrong name written alongside it cancels this mark." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p13-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p13-i0.png",
@@ -7671,6 +7845,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Silage (pit)", marks: 2, contextNote: "'Pit' is bracketed in the scheme, so 'silage' on its own scores; 'silage clamp' says the same thing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p14-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p14-i0.png",
@@ -7697,6 +7881,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Environmental hazard = (silage effluent) run off (into water sources)", marks: null, accepts: ["plastic wrapping"], contextNote: "The scheme prints '3+1' across the two hazards: the first correct hazard the examiner meets scores 3 and the second scores 1, so neither line can be given a fixed value. The solidus offers 'plastic wrapping' as an alternative environmental hazard, not as an extra mark." },
     { id: "r-2", kind: "alt", verbatim: "Safety hazard = fall off silage pit or walls (no safety rails)", marks: null, accepts: ["machinery injury"], contextNote: "One safety hazard is wanted. 'machinery injury' is the scheme's alternative wording, not a second mark." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p14-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p14-i0.png",
@@ -7722,6 +7916,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "gate", verbatim: "Louth (at 17%)", marks: 4, contextNote: "Printed in the scheme as 'Louth* (at 17%)'. The SEC asterisk means only this county scores; the percentage in brackets contextualises it rather than being required. A surplus wrong county named alongside Louth cancels the mark." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p20-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p20-i0.png",
@@ -7745,6 +7949,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Correct bar drawn at 20oC up to 60", marks: 3, contextNote: "The scheme awards 2 of these 3 marks where the value calculated at part (a)(v) was wrong but that wrong value is then plotted correctly — the plotting mark survives a bad calculation." },
     { id: "r-2", kind: "point", verbatim: "Correct bar drawn at 30oC up to 65", marks: 3, contextNote: "Read straight off the results table printed under the graph; no calculation is involved in this one." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p32-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p32-i0.png",
@@ -7767,6 +7981,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "14 ( can be indicated on the graph)", marks: 4, contextNote: "The bracketed note is the examiner's: a candidate who marks the point on the graph instead of writing the number still scores. 'Minimum' matters — the lambs pass 45 kg at week 14, so week 16 is not the answer even though the lambs are heavier by then." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p35-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p35-i0.png",
@@ -7789,6 +8013,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "All nutrients (NPK)", marks: 2, contextNote: "The group the chart labels 'Nutrients - NPK'. It is the tallest pair on the chart for BOTH species, which is what makes it the answer — naming a group that is tallest for only one species does not score." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p37-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p37-i0.png",
@@ -8650,6 +8884,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Danger overhead power lines", marks: 2, accepts: ["caution electric fence","electric shock risk"], contextNote: "The solidi separate three wordings of ONE 2-mark point — the sign has one meaning, and any one of the three carries the whole 2. A second, wrong meaning written beside a right one cancels the mark." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p10-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p10-i0.png",
@@ -8664,31 +8908,6 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q10b", topicId: "agsci-4-1", conceptId: "ovary-function",
-    section: "A", questionRef: "2021 OL Q10(b)",
-    stem: "Question 10 prints a side-view line drawing of the reproductive system of a cow, with the bladder and the vulva named on the drawing and one further structure picked out by a short red arrow labelled A. Part (a) asked you to name A. Describe what the structure the arrow points to does.",
-    questionText: "Outline the function of the part labelled A.",
-    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "(Produces) eggs or ovulation or produces oestrogen", marks: 2, accepts: ["(Produces) progesterone"], contextNote: "Four alternatives for ONE 2-mark point: produces eggs, ovulation, produces oestrogen, or produces progesterone. Any single one carries the whole 2 — the 'or's are alternatives, not separate marks." },
-    ],
-    figure: {
-          "candId": "agricultural-science-2021-OL-paper-p13-i0",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p13-i0.png",
-          "srcHash": "d1b95294948f47d9cf490f13ac4850f6",
-          "alt": "Question 10 with a black-and-white line drawing of the reproductive tract of a cow, viewed from the side, drawn in outline with hatched shading. The stem reads: The following is the reproductive system of a cow. Look at the diagram and answer the questions which follow. Two parts are named in black text with thin pointer arrows: Vulva, arrowed from the upper right to the flared opening at the far right end of the tract, and Bladder, arrowed from below to the elongated oval organ lying underneath the tract towards the right. One further part is marked with a thick red horizontal arrow and a bold red capital A, sitting at the middle of the drawing and pointing left into the narrow constricted region where the tubular body of the tract meets the coiled and horned structures on the left of the diagram. Below the drawing are part (a), Name the part labelled A on the diagram, with a blank answer box; part (b), Outline the function of the part labelled A, with a two-row blank answer box; and part (c), State the gestation length and the oestrous cycle length (number of days) of a cow, with the pale green table header cell Number of days visible at the bottom.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"the short red arrow left of centre. It points to the small oval body at the tip of the coiled horn on the left of the drawing — the structure whose function this part asks for.","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q11a-iii", topicId: "agsci-4-3-1", conceptId: "farmyard-layout-economic-sustainability",
     section: "A", questionRef: "2021 OL Q11(a)(iii)",
     stem: "Question 11 offers a choice of (a) or (b); this is part (a)(iii). The figure is a 3D aerial render of a farmyard set in open fields. The paper labels two features on it — 'Cow cubicle house' and 'Dairy cow collecting yard' — and a red pointer picks out a third as B, which parts (a)(i) and (a)(ii) asked about. This part steps back to the layout as a whole: one observation is wanted, and the marks are for something you can read off the render.",
@@ -8697,6 +8916,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Buildings (structures) are close together (easy access)", marks: 2, accepts: ["labour saving","good access roads through the farm"], contextNote: "Three wordings of ONE 2-mark point, and the scheme then adds 'other valid answer' — so a different observation read off this layout can also score. That is why this row is an open list: self-marking here is a judgement about whether what you wrote is a real economic-sustainability feature of the layout, not a lookup.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p14-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p14-i0.png",
@@ -8722,6 +8951,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Automatic calf feeder", marks: 2, accepts: ["robotic milking machine or rotary parlour","automatic scrapers","automatics drafting system","automatic feeding system"], contextNote: "All 2 marks sit on ONE named technology; the alternatives listed are wordings of that single point, not extra marks. The scheme closes with 'other valid named piece of technology', so any named labour-saving technology that would suit this yard scores — which is why this row is an open list. ('automatics drafting system' is the scheme's own spelling.)", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p14-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p14-i0.png",
@@ -8819,75 +9058,6 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q4b", topicId: "agsci-2-1", conceptId: "uses-of-a-brown-earth-soil",
-    section: "A", questionRef: "2021 OL Q4(b)",
-    stem: "Diagrams A and B show the profiles of two common soil types in Ireland. Humus, rich dark brown colour Pale grey, heavily leached Darker brown, leached minerals Stony Parent rock Parent rock",
-    questionText: "Outline one use for soil A.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "(Tillage) crops", marks: 2, accepts: ["horticulture","grazing pasture (grassland)","silage or hay"] },
-    ],
-    figure: {
-          "candId": "agricultural-science-2021-OL-paper-p07-i1",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p07-i1.png",
-          "srcHash": "b6b27aacc91d00f3375fd6ebe6124608",
-          "alt": "The same Question 4 soil profile figure as p07-i0, but the crop starts higher so it includes the bold heading Question 4 above the line Diagrams A and B show the profiles of two common soil types in Ireland, and ends lower down at the first row of the answer grid. The pale green banner heads the left column A and the right column B. Profile A shows a dark chocolate-brown top horizon bracketed A labelled Humus, rich dark brown colour, an orange-brown stony middle horizon full of pale rounded stones bracketed B labelled Stony, and a grey-blue brickwork base bracketed C labelled Parent rock, with a 3 m depth bar. Profile B shows a plain pale grey top horizon bracketed A labelled Pale grey, heavily leached, a rust-orange middle horizon bracketed B labelled Darker brown, leached minerals, and the same grey-blue brickwork base bracketed C labelled Parent rock, with a 2 m depth bar. Part (a), Identify the two types of soils shown in profile diagrams A and B above, appears at the bottom with the answer row beginning A: sliced by the crop edge.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q4c", topicId: "agsci-2-1", conceptId: "disadvantages-of-a-podzol",
-    section: "A", questionRef: "2021 OL Q4(c)",
-    stem: "Diagrams A and B show the profiles of two common soil types in Ireland. Humus, rich dark brown colour Pale grey, heavily leached Darker brown, leached minerals Stony Parent rock Parent rock",
-    questionText: "Describe two disadvantages associated with the use of soil B.",
-    tariffModel: {"kind":"fixed","notation":"3+1"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Poor drainage (due to the impermeable iron pan)", marks: 3, accepts: ["acidic or low pH (due to poor decomposition of organic matter)","poor fertility (low CEC) (due to acid leaching)","poor root penetration (due to iron pan)","reduced crop yield (due to acidic nature of soil or poor drainage or poor aeration or waterlogging of soil)","poor establishment or yield or growth"], contextNote: "Scheme tariff is 3+1: the first disadvantage scores 3 and the second 1, so the order the answers are given in decides the total." },
-    { id: "r-2", kind: "point", verbatim: "poor aeration (as air spaces fill with water)", marks: 1, accepts: ["acidic or low pH (due to poor decomposition of organic matter)","poor fertility (low CEC) (due to acid leaching)","poor root penetration (due to iron pan)","reduced crop yield (due to acidic nature of soil or poor drainage or poor aeration or waterlogging of soil)","poor establishment or yield or growth"] },
-    ],
-    figure: {
-          "candId": "agricultural-science-2021-OL-paper-p07-i1",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p07-i1.png",
-          "srcHash": "b6b27aacc91d00f3375fd6ebe6124608",
-          "alt": "The same Question 4 soil profile figure as p07-i0, but the crop starts higher so it includes the bold heading Question 4 above the line Diagrams A and B show the profiles of two common soil types in Ireland, and ends lower down at the first row of the answer grid. The pale green banner heads the left column A and the right column B. Profile A shows a dark chocolate-brown top horizon bracketed A labelled Humus, rich dark brown colour, an orange-brown stony middle horizon full of pale rounded stones bracketed B labelled Stony, and a grey-blue brickwork base bracketed C labelled Parent rock, with a 3 m depth bar. Profile B shows a plain pale grey top horizon bracketed A labelled Pale grey, heavily leached, a rust-orange middle horizon bracketed B labelled Darker brown, leached minerals, and the same grey-blue brickwork base bracketed C labelled Parent rock, with a 2 m depth bar. Part (a), Identify the two types of soils shown in profile diagrams A and B above, appears at the bottom with the answer row beginning A: sliced by the crop edge.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q12a", topicId: "agsci-4-1", conceptId: "identifying-cattle-and-sheep-breeds",
-    section: "A", questionRef: "2021 OL Q12(a)",
-    questionText: "The photographs show some common breeds of cattle and sheep. Identify each breed using the list of names and write your answer in the space provided. A B C D Limousin Jacob Border Leicester Charolais",
-    tariffModel: {"kind":"fixed","notation":"2 each"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A = Charolais*", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "B = Limousin*", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "C = Jacob*", marks: 2 },
-    { id: "r-4", kind: "point", verbatim: "D = Border Leicester*", marks: 2 },
-    ],
-    figure: {
-          "candId": "agricultural-science-2021-OL-paper-p16-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p16-art.png",
-          "srcHash": "280b3f2fb213d00b8034f6f7d6b22e50",
-          "alt": "Four colour photographs of livestock arranged two by two, each with a bold capital letter above it, and a blue word bank beneath them. A: a heavily muscled cream-white bull standing side-on on grass, wearing a black halter, a stone wall behind. B: a heavily muscled deep russet-brown bull side-on on grass in a black halter with a pink lead rope, bare winter trees behind. C: a horned sheep side-on with a broken brown-and-white fleece and a white blaze down a dark face, a drystone wall and green hills behind. D: two white-faced sheep with heavy cream fleeces and upright ears, standing on grass. The word bank below reads, in four boxes: Limousin, Jacob, Border Leicester, Charolais.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q8bi", topicId: "agsci-1-5", conceptId: "reading-a-farm-safety-sign",
     section: "A", questionRef: "2021 OL Q8(b)(i)",
     questionText: "Explain this farm safety sign.",
@@ -8895,57 +9065,21 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Caution farm machinery", marks: 2, accepts: ["beware of moving machinery"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p11-art",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p11-art.png",
           "srcHash": "49c92bffa7cbe4ebb54c5ae5fefd29cf",
           "alt": "A single warning sign: an upright equilateral triangle with a thick black border and a bright yellow field, containing a black silhouette of a tractor seen from the side with a cab, a large rear wheel and a smaller front wheel. No words appear on the sign.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q1a", topicId: "agsci-3-2", conceptId: "identifying-crop-and-sward-plants",
-    section: "A", questionRef: "2021 OL Q1(a)",
-    stem: "Soyabean Cocksfoot Or",
-    questionText: "Identify each of the following plants by placing a tick (✓) in the correct box.",
-    tariffModel: {"kind":"fixed","notation":"2 each"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Oilseed rape", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "Barley", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "Clover", marks: 2 },
-    ],
-    figure: {
-          "candId": "agricultural-science-2021-OL-paper-p03-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p03-art.png",
-          "srcHash": "fec683e54b764d371929c91c270996ea",
-          "alt": "Three colour photographs stacked down the page, each marked (i), (ii) or (iii) to its left and followed on the right by four named tick boxes. (i) a field in full yellow flower stretching to the horizon with a wheeled sprayer working across it, boom extended; its four boxes read Soyabean, Cocksfoot, Oilseed Rape, Maize. (ii) close-up of ripe golden cereal ears against a blue sky, each ear carrying long straight bristles much longer than the grain; its boxes read Wheat, Barley, Linseed, Oats. (iii) close-up of dense green ground cover of rounded three-lobed leaves beaded with water, with a single white globe flower at the left; its boxes read Plantain, Clover, Dandelion, Chicory. Every tick box is empty.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2021-ol-q10d", topicId: "agsci-4-2", conceptId: "where-the-insemination-gun-must-reach",
-    section: "A", questionRef: "2021 OL Q10(d)",
-    stem: "The following is the reproductive system of a cow. Look at the diagram and answer the questions which follow. Vulva Bladder",
-    questionText: "A stage in artificial insemination involves placing an insemination gun inside the reproductive tract of the cow. Indicate by placing an X on the diagram exactly where the top of the insemination gun needs to be positioned.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "X on the diagram (must reach cervix)", marks: 2 },
-    ],
-    figure: {
-          "candId": "agricultural-science-2021-OL-paper-p13-i0",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p13-i0.png",
-          "srcHash": "d1b95294948f47d9cf490f13ac4850f6",
-          "alt": "Question 10 with a black-and-white line drawing of the reproductive tract of a cow, viewed from the side, drawn in outline with hatched shading. The stem reads: The following is the reproductive system of a cow. Look at the diagram and answer the questions which follow. Two parts are named in black text with thin pointer arrows: Vulva, arrowed from the upper right to the flared opening at the far right end of the tract, and Bladder, arrowed from below to the elongated oval organ lying underneath the tract towards the right. One further part is marked with a thick red horizontal arrow and a bold red capital A, sitting at the middle of the drawing and pointing left into the narrow constricted region where the tubular body of the tract meets the coiled and horned structures on the left of the diagram. Below the drawing are part (a), Name the part labelled A on the diagram, with a blank answer box; part (b), Outline the function of the part labelled A, with a two-row blank answer box; and part (c), State the gestation length and the oestrous cycle length (number of days) of a cow, with the pale green table header cell Number of days visible at the bottom.",
           "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -19917,6 +20051,1381 @@ export const CARDS: SecCard[] = [
                 35
           ],
           "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-3-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q1a", topicId: "agsci-3-2", conceptId: "identifying-crop-and-sward-plants",
+    section: "A", questionRef: "2021 OL Q1(a)",
+    stem: "Answer either (a) or (b).",
+    questionText: "Identify each of the following plants by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed","notation":"2 each"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oilseed rape", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Barley", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "Clover", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q1(a)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p03-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p03-art.png",
+          "srcHash": "fec683e54b764d371929c91c270996ea",
+          "alt": "Three colour photographs stacked down the page, each marked (i), (ii) or (iii) to its left and followed on the right by four named tick boxes. (i) a field in full yellow flower stretching to the horizon with a wheeled sprayer working across it, boom extended; its four boxes read Soyabean, Cocksfoot, Oilseed Rape, Maize. (ii) close-up of ripe golden cereal ears against a blue sky, each ear carrying long straight bristles much longer than the grain; its boxes read Wheat, Barley, Linseed, Oats. (iii) close-up of dense green ground cover of rounded three-lobed leaves beaded with water, with a single white globe flower at the left; its boxes read Plantain, Clover, Dandelion, Chicory. Every tick box is empty.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-3-3-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q3a-i", topicId: "agsci-3-3-2", conceptId: "crop-rotation-defined",
+    section: "A", questionRef: "2021 OL Q3(a)(i)",
+    stem: "Crop rotation is a common practice on Irish tillage farms. (The term underlined on the paper is 'Crop rotation'.)",
+    questionText: "Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Growth of crops in a defined sequence / growing different crops in a field every year (in a particular order) / correct named example of sequence", marks: 2, contextNote: "One explanation, 2 marks.", group: {"claimMax":1,"perOption":2,"options":["Growth of crops in a defined sequence","growing different crops in a field every year (in a particular order)","correct named example of sequence"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q3(a)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-3-3-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q3a-iii", topicId: "agsci-3-3-2", conceptId: "chemical-spray-disadvantages",
+    section: "A", questionRef: "2021 OL Q3(a)(iii)",
+    questionText: "Suggest two disadvantages of using chemical sprays in crop production.",
+    tariffModel: {"kind":"fixed","notation":"3+1"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Toxic (harmful to human health) / build‐up of toxins in food chain / cause pollution / kill other plant or animal species (e.g. pollinators ‐ bees) or harmful to the environment / pollution of air or soil / volatilisation of fertiliser (e.g. urea) can kill germinating seedlings / resistance to chemical / cost", marks: 4, contextNote: "Any 2: the first correct earns 3 and the next 1 (3+1). The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next.", group: {"claimMax":2,"perOption":3,"options":["Toxic (harmful to human health)","build‐up of toxins in food chain","cause pollution","kill other plant or animal species (e.g. pollinators ‐ bees) or harmful to the environment","pollution of air or soil","volatilisation of fertiliser (e.g. urea) can kill germinating seedlings","resistance to chemical","cost"],"perOptionSteps":[3,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q3(a)(iii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-3-3-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q3b-iii", topicId: "agsci-3-3-2", conceptId: "biological-control-advantages",
+    section: "A", questionRef: "2021 OL Q3(b)(iii)",
+    questionText: "Outline two advantages of using biological controls in crop production.",
+    tariffModel: {"kind":"fixed","notation":"3+1"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "No chemicals used / no entry of chemicals into food chain (soil) or water source / lower cost to farmer / no resistance build up / less labour required / self‐sustaining or long term solution / improves biodiversity", marks: 4, contextNote: "Any 2: the first correct earns 3 and the next 1 (3+1). The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next.", group: {"claimMax":2,"perOption":3,"options":["No chemicals used","no entry of chemicals into food chain (soil) or water source","lower cost to farmer","no resistance build up","less labour required","self‐sustaining or long term solution","improves biodiversity"],"perOptionSteps":[3,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q3(b)(iii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-2-1"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q4b", topicId: "agsci-2-1", conceptId: "uses-of-a-brown-earth-soil",
+    section: "A", questionRef: "2021 OL Q4(b)",
+    stem: "Diagrams A and B show the profiles of two common soil types in Ireland.",
+    questionText: "Outline one use for soil A.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "(Tillage) crops", marks: 2, accepts: ["horticulture","grazing pasture (grassland)","silage or hay"] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q4(b)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p07-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p07-i1.png",
+          "srcHash": "b6b27aacc91d00f3375fd6ebe6124608",
+          "alt": "The same Question 4 soil profile figure as p07-i0, but the crop starts higher so it includes the bold heading Question 4 above the line Diagrams A and B show the profiles of two common soil types in Ireland, and ends lower down at the first row of the answer grid. The pale green banner heads the left column A and the right column B. Profile A shows a dark chocolate-brown top horizon bracketed A labelled Humus, rich dark brown colour, an orange-brown stony middle horizon full of pale rounded stones bracketed B labelled Stony, and a grey-blue brickwork base bracketed C labelled Parent rock, with a 3 m depth bar. Profile B shows a plain pale grey top horizon bracketed A labelled Pale grey, heavily leached, a rust-orange middle horizon bracketed B labelled Darker brown, leached minerals, and the same grey-blue brickwork base bracketed C labelled Parent rock, with a 2 m depth bar. Part (a), Identify the two types of soils shown in profile diagrams A and B above, appears at the bottom with the answer row beginning A: sliced by the crop edge.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-2-1"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q4c", topicId: "agsci-2-1", conceptId: "disadvantages-of-a-podzol",
+    section: "A", questionRef: "2021 OL Q4(c)",
+    stem: "Diagrams A and B show the profiles of two common soil types in Ireland.",
+    questionText: "Describe two disadvantages associated with the use of soil B.",
+    tariffModel: {"kind":"fixed","notation":"3+1"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Poor drainage (due to the impermeable iron pan) / poor aeration (as air spaces fill with water) / acidic or low pH (due to poor decomposition of organic matter) / poor fertility (low CEC) (due to acid leaching) / poor root penetration (due to iron pan) / reduced crop yield (due to acidic nature of soil or poor drainage or poor aeration or waterlogging of soil) / poor establishment or yield or growth", marks: 4, contextNote: "Any 2: the first correct earns 3 and the next 1 (3+1). The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next.", group: {"claimMax":2,"perOption":3,"options":["Poor drainage (due to the impermeable iron pan)","poor aeration (as air spaces fill with water)","acidic or low pH (due to poor decomposition of organic matter)","poor fertility (low CEC) (due to acid leaching)","poor root penetration (due to iron pan)","reduced crop yield (due to acidic nature of soil or poor drainage or poor aeration or waterlogging of soil)","poor establishment or yield or growth"],"perOptionSteps":[3,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q4(c)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p07-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p07-i1.png",
+          "srcHash": "b6b27aacc91d00f3375fd6ebe6124608",
+          "alt": "The same Question 4 soil profile figure as p07-i0, but the crop starts higher so it includes the bold heading Question 4 above the line Diagrams A and B show the profiles of two common soil types in Ireland, and ends lower down at the first row of the answer grid. The pale green banner heads the left column A and the right column B. Profile A shows a dark chocolate-brown top horizon bracketed A labelled Humus, rich dark brown colour, an orange-brown stony middle horizon full of pale rounded stones bracketed B labelled Stony, and a grey-blue brickwork base bracketed C labelled Parent rock, with a 3 m depth bar. Profile B shows a plain pale grey top horizon bracketed A labelled Pale grey, heavily leached, a rust-orange middle horizon bracketed B labelled Darker brown, leached minerals, and the same grey-blue brickwork base bracketed C labelled Parent rock, with a 2 m depth bar. Part (a), Identify the two types of soils shown in profile diagrams A and B above, appears at the bottom with the answer row beginning A: sliced by the crop edge.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-1-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q5b", topicId: "agsci-1-2", conceptId: "measuring-infiltration-rate",
+    section: "A", questionRef: "2021 OL Q5(b)",
+    stem: "A student carries out an investigation to compare the infiltration rate of two soils; a compacted soil and an uncompacted soil.",
+    questionText: "Describe how they measured the infiltration rate in this investigation.",
+    tariffModel: {"kind":"fixed","notation":"3+1"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Use (same amount of) soil for each / (each) sample in a funnel / (lined) with filter paper / add (same volume of) water (using graduated cylinder or beaker) / record time for (all) water to pass through (both samples) (into graduated cylinder or container) or compare volume of water collected from each sample", marks: 4, contextNote: "Any 2: the first correct earns 3 and the next 1 (3+1). The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next.", group: {"claimMax":2,"perOption":3,"options":["Use (same amount of) soil for each","(each) sample in a funnel","(lined) with filter paper","add (same volume of) water (using graduated cylinder or beaker)","record time for (all) water to pass through (both samples) (into graduated cylinder or container) or compare volume of water collected from each sample"],"perOptionSteps":[3,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q5(b)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-1-5"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q8a-iii", topicId: "agsci-1-5", conceptId: "ppe-for-spraying",
+    section: "A", questionRef: "2021 OL Q8(a)(iii)",
+    stem: "A farmer is planning to spray his crops with herbicide and is looking for your advice on what personal protective equipment (PPE) he would need.",
+    questionText: "Suggest two pieces of PPE that you would recommend he wears.",
+    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Gloves / respirator or mask / overalls (apron) / goggles / wellington (rubber) boots", marks: 4, contextNote: "Any two pieces of PPE, 2 marks each (2(2)). The scheme adds \"or any two valid examples\".", openList: true, group: {"claimMax":2,"perOption":2,"options":["Gloves","respirator or mask","overalls (apron)","goggles","wellington (rubber) boots"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q8(a)(iii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-1-5"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q8a-iv", topicId: "agsci-1-5", conceptId: "ringworm-transmission-precaution",
+    section: "A", questionRef: "2021 OL Q8(a)(iv)",
+    stem: "Sarah was dosing her cattle for endo‐parasites and noticed a few of them have ringworm.",
+    questionText: "Briefly explain one precaution she should take to prevent transmission of ringworm to her from the cattle.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Wear gloves or wash hands afterwards / avoid touching the infected area on the cattle", marks: 2, contextNote: "One precaution, 2 marks.", group: {"claimMax":1,"perOption":2,"options":["Wear gloves or wash hands afterwards","avoid touching the infected area on the cattle"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q8(a)(iv)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-1-5"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q8b-ii", topicId: "agsci-1-5", conceptId: "handling-cow-post-calving",
+    section: "A", questionRef: "2021 OL Q8(b)(ii)",
+    questionText: "Describe one safety precaution a farmer would take when handling the cow and calf immediately post‐calving.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Have a clear exit plan / have stick or fork with you / keep all children and dogs away or do not make loud noises or sudden movements / never turn your back on the cow", marks: 2, contextNote: "One precaution, 2 marks. The scheme adds \"other valid answer\".", openList: true, group: {"claimMax":1,"perOption":2,"options":["Have a clear exit plan","have stick or fork with you","keep all children and dogs away or do not make loud noises or sudden movements","never turn your back on the cow"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q8(b)(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-1-5"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q8b-iii", topicId: "agsci-1-5", conceptId: "slurry-agitation-safety",
+    section: "A", questionRef: "2021 OL Q8(b)(iii)",
+    stem: "A farmer is planning on spreading slurry.",
+    questionText: "Outline three safety precautions he should take when agitating and spreading the slurry.",
+    tariffModel: {"kind":"fixed","notation":"3+2+1"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Remove all animals from the shed / ventilate the shed / open tractor windows / use a gas monitor / do not enter shed while agitating / ensure another person is present / stay clear of all agitation points or open hatches / spread on a windy day / don’t spread near electric wires (when using the splash plate) / keep all persons and animals away during spreading / cover on PTO / ear safety equipment", marks: 6, contextNote: "Any 3: the first correct earns 3 and the next 2, 1 (3+2+1). The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next. The scheme adds \"other valid answer\".", openList: true, group: {"claimMax":3,"perOption":3,"options":["Remove all animals from the shed","ventilate the shed","open tractor windows","use a gas monitor","do not enter shed while agitating","ensure another person is present","stay clear of all agitation points or open hatches","spread on a windy day","don’t spread near electric wires (when using the splash plate)","keep all persons and animals away during spreading","cover on PTO","ear safety equipment"],"perOptionSteps":[3,2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q8(b)(iii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-4-3-1"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q9b", topicId: "agsci-4-3-1", conceptId: "agricultural-greenhouse-gas-sources",
+    section: "A", questionRef: "2021 OL Q9(b)",
+    questionText: "List two sources of greenhouse gases from agriculture.",
+    tariffModel: {"kind":"fixed","notation":"3+1"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Animal (respiration) / slurry / FYM / synthetic fertiliser / lime / soils or soil cultivation (ploughing) / machinery (fuel) / ruminant digestion (enteric fermentation)", marks: 4, contextNote: "Any 2: the first correct earns 3 and the next 1 (3+1). The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next.", group: {"claimMax":2,"perOption":3,"options":["Animal (respiration)","slurry","FYM","synthetic fertiliser","lime","soils or soil cultivation (ploughing)","machinery (fuel)","ruminant digestion (enteric fermentation)"],"perOptionSteps":[3,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q9(b)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-4-1"]), kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q10b", topicId: "agsci-4-1", conceptId: "ovary-function",
+    section: "A", questionRef: "2021 OL Q10(b)",
+    stem: "Question 10 prints a side-view line drawing of the reproductive system of a cow, with the bladder and the vulva named on the drawing and one further structure picked out by a short red arrow labelled A. Part (a) asked you to name A. Describe what the structure the arrow points to does.",
+    questionText: "Outline the function of the part labelled A.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Produces) eggs or ovulation or produces oestrogen or progesterone", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q10(b)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p13-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p13-i0.png",
+          "srcHash": "d1b95294948f47d9cf490f13ac4850f6",
+          "alt": "Question 10 with a black-and-white line drawing of the reproductive tract of a cow, viewed from the side, drawn in outline with hatched shading. The stem reads: The following is the reproductive system of a cow. Look at the diagram and answer the questions which follow. Two parts are named in black text with thin pointer arrows: Vulva, arrowed from the upper right to the flared opening at the far right end of the tract, and Bladder, arrowed from below to the elongated oval organ lying underneath the tract towards the right. One further part is marked with a thick red horizontal arrow and a bold red capital A, sitting at the middle of the drawing and pointing left into the narrow constricted region where the tubular body of the tract meets the coiled and horned structures on the left of the diagram. Below the drawing are part (a), Name the part labelled A on the diagram, with a blank answer box; part (b), Outline the function of the part labelled A, with a two-row blank answer box; and part (c), State the gestation length and the oestrous cycle length (number of days) of a cow, with the pale green table header cell Number of days visible at the bottom.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"the short red arrow left of centre. It points to the small oval body at the tip of the coiled horn on the left of the drawing — the structure whose function this part asks for.","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-4-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q10d", topicId: "agsci-4-2", conceptId: "where-the-insemination-gun-must-reach",
+    section: "A", questionRef: "2021 OL Q10(d)",
+    stem: "The following is the reproductive system of a cow. Look at the diagram and answer the questions which follow.",
+    questionText: "A stage in artificial insemination involves placing an insemination gun inside the reproductive tract of the cow. Indicate by placing an X on the diagram exactly where the top of the insemination gun needs to be positioned.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "X on the diagram (must reach cervix)", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q10(d)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p13-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p13-i0.png",
+          "srcHash": "d1b95294948f47d9cf490f13ac4850f6",
+          "alt": "Question 10 with a black-and-white line drawing of the reproductive tract of a cow, viewed from the side, drawn in outline with hatched shading. The stem reads: The following is the reproductive system of a cow. Look at the diagram and answer the questions which follow. Two parts are named in black text with thin pointer arrows: Vulva, arrowed from the upper right to the flared opening at the far right end of the tract, and Bladder, arrowed from below to the elongated oval organ lying underneath the tract towards the right. One further part is marked with a thick red horizontal arrow and a bold red capital A, sitting at the middle of the drawing and pointing left into the narrow constricted region where the tubular body of the tract meets the coiled and horned structures on the left of the diagram. Below the drawing are part (a), Name the part labelled A on the diagram, with a blank answer box; part (b), Outline the function of the part labelled A, with a two-row blank answer box; and part (c), State the gestation length and the oestrous cycle length (number of days) of a cow, with the pale green table header cell Number of days visible at the bottom.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-4-3-3"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q11b-i", topicId: "agsci-4-3-3", conceptId: "isolation-area-purpose",
+    section: "A", questionRef: "2021 OL Q11(b)(i)",
+    stem: "Answer either (a) or (b). (b) The following is a plan view of a combined robot milking unit and cow housing for Claire and John who plan to convert their suckler farm to a dairy farm.",
+    questionText: "Explain why they have included an isolation area on the plan.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "If animal (cow) is sick or injured (must have isolation area to put them in during treatment) / don’t pass disease (infection) to other animals or humans", marks: 2, contextNote: "One reason, 2 marks.", group: {"claimMax":1,"perOption":2,"options":["If animal (cow) is sick or injured (must have isolation area to put them in during treatment)","don’t pass disease (infection) to other animals or humans"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q11(b)(i)",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p15-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p15-i0.png",
+          "srcHash": "1030af09e57c171e2c9b7744e7602583",
+          "alt": "Question 11 part (b), headed Or, with the stem The following is a plan view of a combined robot milking unit and cow housing for Claire and John who plan to convert their suckler farm to a dairy farm. The figure is a detailed architectural plan view (bird's eye CAD drawing) of a cow housing and robotic milking layout, drawn in fine black line with small black cow silhouettes standing in the pens and passages, magenta and green service lines, and dimension arrows. Long parallel cubicle rows run left to right with a wide central passage between them; a milking robot unit and handling area sit at the left end; a separate small block with a round tank sits at the far right. Six areas are named in labelled boxes: Isolation area (pale blue box, orange arrow to a pen at the top left), Foot bath (pale blue box, orange arrow to a narrow race at the left), Straw separation (pale orange vertical box over a block left of centre), Centre feed passage (pale green box over the wide central passage), Not milked (pale blue box over a pen at the lower left) and Water (bold black text beneath the lower left area). Dimension figures printed on the plan include 4.4m, 5.2m, 4.6m, 3.5m, 25m, 2.5m, 4.2m, 4.6m, 1.2m, 1.8m, 4.5m and repeated 2.4m cubicle widths. In italics at the lower right is the source line (Adapted from Farmers Journal, 2020). Below the plan are part (i), Explain why they have included an isolation area on the plan, and part (ii), Describe the purpose of the footbath, each with blank answer boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-4-3-1"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q11b-iii", topicId: "agsci-4-3-1", conceptId: "robotic-milking-advantages",
+    section: "A", questionRef: "2021 OL Q11(b)(iii)",
+    stem: "Claire and John plan to convert their suckler farm to a dairy farm, using a combined robot milking unit and cow housing.",
+    questionText: "Outline one reason why Claire and John would have opted to install a robotic milking machine rather than a traditional herringbone or rotary parlour.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Better work‐life balance / less labour needed / increased milk yield from cows", marks: 2, contextNote: "One reason, 2 marks.", group: {"claimMax":1,"perOption":2,"options":["Better work‐life balance","less labour needed","increased milk yield from cows"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q11(b)(iii)",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-4-3-3"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q11b-iv", topicId: "agsci-4-3-3", conceptId: "siting-slatted-tanks",
+    section: "A", questionRef: "2021 OL Q11(b)(iv)",
+    stem: "Answer either (a) or (b). (b) The following is a plan view of a combined robot milking unit and cow housing for Claire and John who plan to convert their suckler farm to a dairy farm.",
+    questionText: "Place an X on the plan view above to show one place where you would advise Claire and John to install slatted tanks. Give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Where cows stand in the feeding passage / passage behind cubicles / entry or exit point to graze way", marks: 2, contextNote: "X on the diagram, 2 marks: any one of the scheme's places.", group: {"claimMax":1,"perOption":2,"options":["Where cows stand in the feeding passage","passage behind cubicles","entry or exit point to graze way"]} },
+    { id: "r-2", kind: "point", verbatim: "Reason ‐ areas with high levels of slurry or cows are feeding or cows are there longer", marks: 2, contextNote: "Reason, 2 marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q11(b)(iv)",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p15-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p15-i0.png",
+          "srcHash": "1030af09e57c171e2c9b7744e7602583",
+          "alt": "Question 11 part (b), headed Or, with the stem The following is a plan view of a combined robot milking unit and cow housing for Claire and John who plan to convert their suckler farm to a dairy farm. The figure is a detailed architectural plan view (bird's eye CAD drawing) of a cow housing and robotic milking layout, drawn in fine black line with small black cow silhouettes standing in the pens and passages, magenta and green service lines, and dimension arrows. Long parallel cubicle rows run left to right with a wide central passage between them; a milking robot unit and handling area sit at the left end; a separate small block with a round tank sits at the far right. Six areas are named in labelled boxes: Isolation area (pale blue box, orange arrow to a pen at the top left), Foot bath (pale blue box, orange arrow to a narrow race at the left), Straw separation (pale orange vertical box over a block left of centre), Centre feed passage (pale green box over the wide central passage), Not milked (pale blue box over a pen at the lower left) and Water (bold black text beneath the lower left area). Dimension figures printed on the plan include 4.4m, 5.2m, 4.6m, 3.5m, 25m, 2.5m, 4.2m, 4.6m, 1.2m, 1.8m, 4.5m and repeated 2.4m cubicle widths. In italics at the lower right is the source line (Adapted from Farmers Journal, 2020). Below the plan are part (i), Explain why they have included an isolation area on the plan, and part (ii), Describe the purpose of the footbath, each with blank answer boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-4-1"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q12a", topicId: "agsci-4-1", conceptId: "identifying-cattle-and-sheep-breeds",
+    section: "A", questionRef: "2021 OL Q12(a)",
+    questionText: "The photographs show some common breeds of cattle and sheep. Identify each breed using the list of names and write your answer in the space provided: Limousin, Jacob, Border Leicester, Charolais.",
+    tariffModel: {"kind":"fixed","notation":"2 each"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Charolais*", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B = Limousin*", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C = Jacob*", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "D = Border Leicester*", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q12(a)",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p16-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p16-art.png",
+          "srcHash": "280b3f2fb213d00b8034f6f7d6b22e50",
+          "alt": "Four colour photographs of livestock arranged two by two, each with a bold capital letter above it, and a blue word bank beneath them. A: a heavily muscled cream-white bull standing side-on on grass, wearing a black halter, a stone wall behind. B: a heavily muscled deep russet-brown bull side-on on grass in a black halter with a pink lead rope, bare winter trees behind. C: a horned sheep side-on with a broken brown-and-white fleece and a white blaze down a dark face, a drystone wall and green hills behind. D: two white-faced sheep with heavy cream fleeces and upright ears, standing on grass. The word bank below reads, in four boxes: Limousin, Jacob, Border Leicester, Charolais.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-4-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q12b", topicId: "agsci-4-2", conceptId: "breed-characteristics",
+    section: "A", questionRef: "2021 OL Q12(b)",
+    questionText: "Describe one characteristic of a named breed of either pig or horse or poultry that you have studied.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "floppy ears / long body / good conformation / light forequarters / excellent ham development / high carcase weight / good milk production / prolificacy", marks: 2, contextNote: "Landrace: one characteristic, 2 marks. No marks for naming the breed. The scheme adds \"Or other valid answer\".", openList: true, group: {"claimMax":1,"perOption":2,"options":["floppy ears","long body","good conformation","light forequarters","excellent ham development","high carcase weight","good milk production","prolificacy"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "landrace",
+                "label": "Landrace",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "floppy ears / long body / good conformation / light forequarters / excellent ham development / high carcase weight / good milk production / prolificacy",
+                            "marks": 2,
+                            "contextNote": "Landrace: one characteristic, 2 marks. No marks for naming the breed. The scheme adds \"Or other valid answer\".",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 2,
+                                  "options": [
+                                        "floppy ears",
+                                        "long body",
+                                        "good conformation",
+                                        "light forequarters",
+                                        "excellent ham development",
+                                        "high carcase weight",
+                                        "good milk production",
+                                        "prolificacy"
+                                  ]
+                            },
+                            "openList": true,
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "large-white",
+                "label": "Large White",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "upright ears / pale skin / high growth rate / high lean meat % / good terminal sires / good uniformity of pigs / prolific & good at converting feed",
+                            "marks": 2,
+                            "contextNote": "Large White: one characteristic, 2 marks. No marks for naming the breed. The scheme adds \"Or other valid answer\".",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 2,
+                                  "options": [
+                                        "upright ears",
+                                        "pale skin",
+                                        "high growth rate",
+                                        "high lean meat %",
+                                        "good terminal sires",
+                                        "good uniformity of pigs",
+                                        "prolific & good at converting feed"
+                                  ]
+                            },
+                            "openList": true,
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "rhode-island-red",
+                "label": "Rhode Island Red",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "red‐orange eyes / reddish‐brown beaks / yellow feet and legs / hardy breed / produce well on marginal feed / lay 200 ‐ 300 eggs per year (prolific) / produce large eggs / eggs pale brown colour (market demands) / produce medium weight eggs",
+                            "marks": 2,
+                            "contextNote": "Rhode Island Red: one characteristic, 2 marks. No marks for naming the breed. The scheme adds \"Or other valid answer\".",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 2,
+                                  "options": [
+                                        "red‐orange eyes",
+                                        "reddish‐brown beaks",
+                                        "yellow feet and legs",
+                                        "hardy breed",
+                                        "produce well on marginal feed",
+                                        "lay 200 ‐ 300 eggs per year (prolific)",
+                                        "produce large eggs",
+                                        "eggs pale brown colour (market demands)",
+                                        "produce medium weight eggs"
+                                  ]
+                            },
+                            "openList": true,
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "irish-sport-horse",
+                "label": "Irish Sport Horse",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "athleticism / jumping ability / courage / intelligence / soundness",
+                            "marks": 2,
+                            "contextNote": "Irish Sport Horse: one characteristic, 2 marks. No marks for naming the breed. The scheme adds \"Or other valid answer\".",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 2,
+                                  "options": [
+                                        "athleticism",
+                                        "jumping ability",
+                                        "courage",
+                                        "intelligence",
+                                        "soundness"
+                                  ]
+                            },
+                            "openList": true,
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q12(b)",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-4-3-3"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q13c-iv", topicId: "agsci-4-3-3", conceptId: "farm-biosecurity-practices",
+    section: "B", questionRef: "2021 OL Q13(c)(iv)",
+    stem: "Question 13 is an animal health question. Parts (a) and (b) deal with liver fluke; part (c) moves on to notifiable disease, biosecurity and animal welfare at housing.",
+    questionText: "State three practices farmers could employ to ensure good biosecurity on their farm.",
+    tariffModel: {"kind":"fixed","notation":"2+2+1"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Operate closed herd (breed own replacements) / footbath or disposable footwear and clothing / limit visitors / fence boundaries / quarantine new animals or isolate sick animals / do not share equipment or machinery or colostrum / disinfect trailers (machinery) / use of AI (Artificial Insemination) / information signage", marks: 5, contextNote: "Any 3: the first correct earns 2 and the next 2, 1 (2+2+1). The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next. The scheme adds \"other valid answer\".", openList: true, group: {"claimMax":3,"perOption":2,"options":["Operate closed herd (breed own replacements)","footbath or disposable footwear and clothing","limit visitors","fence boundaries","quarantine new animals or isolate sick animals","do not share equipment or machinery or colostrum","disinfect trailers (machinery)","use of AI (Artificial Insemination)","information signage"],"perOptionSteps":[2,2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q13(c)(iv)",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-1-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q14b-ii", topicId: "agsci-1-2", conceptId: "resazurin-milk-quality-method",
+    section: "B", questionRef: "2021 OL Q14(b)(ii)",
+    stem: "Question 14 is about dairy production. Part (b) reads: \"The dairy farmer wanted to carry out an investigation to test the hygienic quality of a milk sample over time.\"",
+    questionText: "Describe, using a labelled diagram, a method the farmer could use to carry out this investigation.",
+    tariffModel: {"kind":"fixed","notation":"3(3)"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Place (equal amounts of) milk into the test tubes or suitable container / add (few drops 1 cm3) of Resazurin / place (in water bath) at 37oC / 15 to 30 minutes / repeat (test on the same milk sample of various ages over time (immediately / at 5 hours / 24 hours / 48 hours / 72 hours) / (record) colour change or stated colour change (fresh ‐ blue = good quality (low TBC) / blue ‐ deep mauve = good /deep pink = fair / light pink = poor /white = poor )", marks: 9, contextNote: "Any three steps, 3 marks each (3(3)); \"Diagram or text showing the following\". The scheme adds \"OR Diagram showing an investigation relating to milk quality: Total Bacterial Count (TBC) using a serial dilution + growing on agar plate / SCC ‐ California Mastitis Test (CMT) / antibiotics (Delvo) / % Solids ‐ excess water / thermoduric ‐ serial dilution & agar plate / % protein + % butterfat / Methylene Blue\".", openList: true, group: {"claimMax":3,"perOption":3,"options":["Place (equal amounts of) milk into the test tubes or suitable container","add (few drops 1 cm3) of Resazurin","place (in water bath) at 37oC","15 to 30 minutes","repeat (test on the same milk sample of various ages over time (immediately / at 5 hours / 24 hours / 48 hours / 72 hours)","(record) colour change or stated colour change (fresh ‐ blue = good quality (low TBC) / blue ‐ deep mauve = good /deep pink = fair / light pink = poor /white = poor )"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q14(b)(ii)",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-1-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q14b-iii", topicId: "agsci-1-2", conceptId: "experimental-error-and-reduction",
+    section: "B", questionRef: "2021 OL Q14(b)(iii)",
+    stem: "Question 14 is about dairy production. Part (b) reads: \"The dairy farmer wanted to carry out an investigation to test the hygienic quality of a milk sample over time.\" The paper prints two answer lines for this part, Error: and Reduce error:",
+    questionText: "State one error that could occur during this investigation and outline one way that this error could be reduced if doing this investigation again.",
+    tariffModel: {"kind":"fixed","notation":"2+1"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Wrong temperature on water bath", marks: 2, contextNote: "Error, 2 marks." },
+    { id: "r-2", kind: "point", verbatim: "use thermometer to check temperature", marks: 1, contextNote: "Reducing that error, 1 mark (2+1)." },
+    ],
+    answerVariants: [
+          {
+                "id": "temperature",
+                "label": "Water bath temperature",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Wrong temperature on water bath",
+                            "marks": 2,
+                            "contextNote": "Error, 2 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "use thermometer to check temperature",
+                            "marks": 1,
+                            "contextNote": "Reducing that error, 1 mark (2+1).",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "amount",
+                "label": "Amount of Resazurin or milk",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "incorrect amount of Resazurin or milk",
+                            "marks": 2,
+                            "contextNote": "Error, 2 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "use pipette or dropper",
+                            "marks": 1,
+                            "contextNote": "Reducing that error, 1 mark (2+1).",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "sterile",
+                "label": "Dirty test tubes or containers",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "non sterile or dirty test tubes or containers",
+                            "marks": 2,
+                            "contextNote": "Error, 2 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "use sterile test tubes or containers",
+                            "marks": 1,
+                            "contextNote": "Reducing that error, 1 mark (2+1).",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "timing",
+                "label": "Observation of time",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "correct observation of time",
+                            "marks": 2,
+                            "contextNote": "Error, 2 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "use a watch or timer",
+                            "marks": 1,
+                            "contextNote": "Reducing that error, 1 mark (2+1).",
+                            "id": "r-2"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q14(b)(iii)",
+          "pages": [
+                23,
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-1-3"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q14b-iv", topicId: "agsci-1-3", conceptId: "qualitative-versus-quantitative-results",
+    section: "B", questionRef: "2021 OL Q14(b)(iv)",
+    stem: "Question 14 is about dairy production. Part (b) reads: \"The dairy farmer wanted to carry out an investigation to test the hygienic quality of a milk sample over time.\" At part (ii) you described a method for that investigation; this part asks about the results it would give. The paper prints two answer lines, Result: and Justification:",
+    questionText: "State whether the results obtained from the investigation at part (ii) above are quantitative or qualitative. Justify your answer.",
+    tariffModel: {"kind":"fixed","notation":"2+1"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Result ‐ Qualitative (Resazurin test)", marks: 2, contextNote: "Result, 2 marks." },
+    { id: "r-2", kind: "point", verbatim: "Justify Result ‐ colour change not measured numerically", marks: 1, contextNote: "Justification, 1 mark (2+1). The scheme adds \"(accept matching answer to valid test)\"." },
+    ],
+    answerVariants: [
+          {
+                "id": "resazurin",
+                "label": "Qualitative (resazurin test)",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Result ‐ Qualitative (Resazurin test)",
+                            "marks": 2,
+                            "contextNote": "Result, 2 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Justify Result ‐ colour change not measured numerically",
+                            "marks": 1,
+                            "contextNote": "Justification, 1 mark (2+1). The scheme adds \"(accept matching answer to valid test)\".",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "tbc",
+                "label": "Quantitative (total bacterial count)",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Quantitative ‐ TBC",
+                            "marks": 2,
+                            "contextNote": "Result, 2 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "no. of CFU’s",
+                            "marks": 1,
+                            "contextNote": "Justification, 1 mark (2+1).",
+                            "id": "r-2"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q14(b)(iv)",
+          "pages": [
+                23,
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-3-3-3"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q15c-iii", topicId: "agsci-3-3-3", conceptId: "achieving-target-silage-ph",
+    section: "B", questionRef: "2021 OL Q15(c)(iii)",
+    stem: "Question 15 is about making good quality grass silage on a beef farm. Part (c) reads: \"The table below shows the analysis of the farmer's silage. Use these results to answer the questions which follow.\" The printed table gives, as farmer's analysis against target analysis - Dry Matter (DM): ? against 25%; Dry Matter Digestibility (DMD): 67% against 70% +; Crude protein: 12% against 15% +; pH: 4.7 against 3.8 to 4.2.",
+    questionText: "Outline two ways the farmer could have achieved the target pH during the production of the silage in line with the target analysis.",
+    tariffModel: {"kind":"fixed","notation":"4+2"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Cut at leafy stage to increase sugar for fermentation / do not cut during or after rainfall as water dilutes the sugar content / cut in the afternoon as photosynthesis produces more sugar / ensure pit (bales) packed tightly to remove air to promote growth of anaerobic bacteria (lactobacillus) / allow grass to wilt to increase sugar content / use additive (molasses or acid or inoculants) to achieve correct pH", marks: 6, contextNote: "Any 2: the first correct earns 4 and the next 2 (4+2). The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next.", group: {"claimMax":2,"perOption":4,"options":["Cut at leafy stage to increase sugar for fermentation","do not cut during or after rainfall as water dilutes the sugar content","cut in the afternoon as photosynthesis produces more sugar","ensure pit (bales) packed tightly to remove air to promote growth of anaerobic bacteria (lactobacillus)","allow grass to wilt to increase sugar content","use additive (molasses or acid or inoculants) to achieve correct pH"],"perOptionSteps":[4,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q15(c)(iii)",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-ol-paper-p026-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-ol-paper-p026-i0.png",
+          "srcHash": "3f83c27a46a5186fb6caf1275fef9396",
+          "alt": "The silage analysis table, three columns by five rows. Two peach-shaded header cells read 'Farmer's analysis' and 'Target analysis' above the value columns, with the row-label column left blank. The four bold row labels are Dry Matter (DM), Dry Matter Digestibility (DMD), Crude protein and pH. The farmer's DM cell is highlighted bright yellow and holds a question mark against a target of 25%; DMD is 67% against 70% +, crude protein is 12% against 15% +, and pH is 4.7 against 3.8 - 4.2.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-2-3"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q16b-ii", topicId: "agsci-2-3", conceptId: "soil-sampling-method",
+    section: "B", questionRef: "2021 OL Q16(b)(ii)",
+    stem: "Question 16 — Answer both (a) and (b) with either (c) or (d).",
+    questionText: "Outline two steps involved in collecting samples of soil for analysis.",
+    tariffModel: {"kind":"fixed","notation":"4+2"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Divide the area (to be sampled into regions) (2 ‐ 4 ha in size) / Sample at correct depth (where crop roots are growing) (5 ‐ 10 cm) / take account of different soil types or slopes or previous cropping history / W shape / random / min 20 samples / stay away from water troughs or ditches or wet marshy ground / soil auger", marks: 6, contextNote: "Any 2: the first correct earns 4 and the next 2 (4+2). The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next.", group: {"claimMax":2,"perOption":4,"options":["Divide the area (to be sampled into regions) (2 ‐ 4 ha in size)","Sample at correct depth (where crop roots are growing) (5 ‐ 10 cm)","take account of different soil types or slopes or previous cropping history","W shape","random","min 20 samples","stay away from water troughs or ditches or wet marshy ground","soil auger"],"perOptionSteps":[4,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q16(b)(ii)",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-2-2-3"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q16c-ii", topicId: "agsci-2-2-3", conceptId: "soil-ph-earthworms-and-grass-growth",
+    section: "B", questionRef: "2021 OL Q16(c)(ii)",
+    stem: "Question 16 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is getting soil samples tested for pH and percentage (%) water content.",
+    questionText: "After analysis, the soil sample results showed a pH of 5.1. Outline the effect this pH level has on the number of earthworms in the field and the advice you would give the farmer to ensure good grass growth.",
+    tariffModel: {"kind":"fixed","notation":"3 + 2"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Number: Low earthworm numbers", marks: 3 },
+    { id: "r-2", kind: "anyN", verbatim: "Lime regularly or reduce slurry / raise pH >6 / poor grass growth as pH too low", marks: 2, contextNote: "Advice, 2 marks: any one.", group: {"claimMax":1,"perOption":2,"options":["Lime regularly or reduce slurry","raise pH >6","poor grass growth as pH too low"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q16(c)(ii)",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-2-3"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q16c-v", topicId: "agsci-2-3", conceptId: "wet-soil-management-implications",
+    section: "B", questionRef: "2021 OL Q16(c)(v)",
+    stem: "Question 16 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is getting soil samples tested for pH and percentage (%) water content. (Using the results in the table below, part (iii) works the sample out at 58.33 % water.)",
+    questionText: "State one implication the result has on the management of the field and give one reason for your answer.",
+    tariffModel: {"kind":"fixed","notation":"2+2"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Implication — Compaction or poaching", marks: 2, contextNote: "Implication, 2 marks." },
+    { id: "r-2", kind: "point", verbatim: "Reason — soft ground", marks: 2, contextNote: "Its reason, 2 marks (2+2)." },
+    ],
+    answerVariants: [
+          {
+                "id": "compaction",
+                "label": "Compaction or poaching",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Implication — Compaction or poaching",
+                            "marks": 2,
+                            "contextNote": "Implication, 2 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Reason — soft ground",
+                            "marks": 2,
+                            "contextNote": "Its reason, 2 marks (2+2).",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "germination",
+                "label": "Late or failed germination or lower yields",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Implication — late or failed germination of crops or lower yields of crops or later harvesting dates",
+                            "marks": 2,
+                            "contextNote": "Implication, 2 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Reason — cold soil temperatures",
+                            "marks": 2,
+                            "contextNote": "Its reason, 2 marks (2+2).",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "disease",
+                "label": "Higher incidence of disease",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Implication — higher incident of disease",
+                            "marks": 2,
+                            "contextNote": "Implication, 2 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Reason — liverfluke",
+                            "marks": 2,
+                            "contextNote": "Its reason, 2 marks (2+2).",
+                            "id": "r-2"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q16(c)(v)",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p28-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p28-i0.png",
+          "srcHash": "9548e59f7ade7f1fa681b6d51afed738",
+          "alt": "A table from the exam paper. Columns: Weight of soil before drying, 120g. Rows: Weight of soil after drying, % Soil Water. 3 rows by 2 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-4-3-1"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q16d-i", topicId: "agsci-4-3-1", conceptId: "organic-food-production-principles",
+    section: "B", questionRef: "2021 OL Q16(d)(i)",
+    stem: "Question 16 — Answer both (a) and (b) with either (c) or (d).",
+    questionText: "State two principles of organic food production.",
+    tariffModel: {"kind":"fixed","notation":"4+4"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "No GMO’s / no chemicals used (herbicides or pesticides or antibiotics or fertilisers) / tillage practices which increase OM or increase soil stability or soil health / tillage practices to prevent compaction and erosion / use organic fertilisers (e.g. slurry, seaweed) / use organic certified seed", marks: 8, contextNote: "Any two principles, 4 marks each (4+4).", group: {"claimMax":2,"perOption":4,"options":["No GMO’s","no chemicals used (herbicides or pesticides or antibiotics or fertilisers)","tillage practices which increase OM or increase soil stability or soil health","tillage practices to prevent compaction and erosion","use organic fertilisers (e.g. slurry, seaweed)","use organic certified seed"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q16(d)(i)",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-1-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q17a-iii", topicId: "agsci-1-2", conceptId: "controlled-variables-germination",
+    section: "B", questionRef: "2021 OL Q17(a)(iii)",
+    stem: "A student was asked to investigate the effect of temperature on the percentage germination of certified grass seeds. The student conducted the investigation at five set temperatures (15 °C, 20 °C, 25 °C, 30 °C and 35 °C). At each temperature 100 seeds were sown. The student repeated the investigation four times and calculated the mean (average) percentage germination.",
+    questionText: "List two factors that the student kept constant (fixed) during the investigation.",
+    tariffModel: {"kind":"fixed","notation":"4+3"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Amount or type of seeds / same soil type / volume of soil / volume of water / time", marks: 7, contextNote: "Any 2: the first correct earns 4 and the next 3 (4+3). The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next.", group: {"claimMax":2,"perOption":4,"options":["Amount or type of seeds","same soil type","volume of soil","volume of water","time"],"perOptionSteps":[4,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q17(a)(iii)",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-3-3-1"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q17a-iv", topicId: "agsci-3-3-1", conceptId: "sowing-depth-and-germination",
+    section: "B", questionRef: "2021 OL Q17(a)(iv)",
+    stem: "A student was asked to investigate the effect of temperature on the percentage germination of certified grass seeds. The student conducted the investigation at five set temperatures (15 °C, 20 °C, 25 °C, 30 °C and 35 °C). At each temperature 100 seeds were sown. The student repeated the investigation four times and calculated the mean (average) percentage germination.",
+    questionText: "How would the depth of sowing of the seeds affect the germination rate?",
+    tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "if sown too deep the seeds won’t (have enough energy) to get above ground / if not sown deep enough they are more prone to attack from birds or drying out (desiccation)", marks: 3, contextNote: "One effect, 3 marks.", group: {"claimMax":1,"perOption":3,"options":["if sown too deep the seeds won’t (have enough energy) to get above ground","if not sown deep enough they are more prone to attack from birds or drying out (desiccation)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q17(a)(iv)",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-3-3-1"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q17b-ii", topicId: "agsci-3-3-1", conceptId: "optimum-sowing-temperature-advice",
+    section: "B", questionRef: "2021 OL Q17(b)(ii)",
+    stem: "A student was asked to investigate the effect of temperature on the percentage germination of certified grass seeds. At each of five set temperatures 100 seeds were sown, and the investigation was repeated four times. The student's results are shown in the table below. The 20 °C figure is the value calculated at part (a): 60 % germination.",
+    questionText: "State one piece of advice you would give to farmers on the sowing of grass seed based on your conclusion and also supported by the results of this investigation.",
+    tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Sowing seeds at 25oC will give best germination rates / increase soil temp (25oC) get majority of seeds to germinate", marks: 3, contextNote: "One piece of advice, 3 marks.", group: {"claimMax":1,"perOption":3,"options":["Sowing seeds at 25oC will give best germination rates","increase soil temp (25oC) get majority of seeds to germinate"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q17(b)(ii)",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p32-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p32-i1.png",
+          "srcHash": "8eb813aa67987384503889a10a82fb10",
+          "alt": "A table from the exam paper. Columns: Temperature (oC), 15, 20, 25, 30, 35. Rows: % Germination. 2 rows by 6 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-3-3-1"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q18a-i-seedbed", topicId: "agsci-3-3-1", conceptId: "seedbed-preparation",
+    section: "B", questionRef: "2021 OL Q18(a)(i) Seedbed preparation",
+    stem: "Answer both (a) and (b) with either (c) or (d). The paper prints a Named Crop line above the Seedbed preparation and Weed control headings.",
+    questionText: "Discuss the production of a named crop that you have studied under the heading: Seedbed preparation.",
+    tariffModel: {"kind":"fixed","notation":"2 + 4+3"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Named crop", marks: 2, contextNote: "Naming the crop, 2 marks; the seedbed and weed-control points must suit the crop named." },
+    { id: "r-2", kind: "anyN", verbatim: "Plough / harrow to produce fine tilth / pick stones to prevent damage to crop (potatoes only) / produce fine firm seedbed or ridge (potatoes only) / min‐till to minimise travelling or minimise compaction or minimise soil disturbance (tillage only)", marks: 7, contextNote: "Seedbed preparation: Any 2: the first correct earns 4 and the next 3 (4+3). The scheme's own rule (PDF page 4): \"the first correct answer encountered is awarded\" the first mark, and each later correct answer the next.", group: {"claimMax":2,"perOption":4,"options":["Plough","harrow to produce fine tilth","pick stones to prevent damage to crop (potatoes only)","produce fine firm seedbed or ridge (potatoes only)","min‐till to minimise travelling or minimise compaction or minimise soil disturbance (tillage only)"],"perOptionSteps":[4,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q18(a)(i) Seedbed preparation",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-4-3-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q18b-i", topicId: "agsci-4-3-2", conceptId: "natural-selection",
+    section: "B", questionRef: "2021 OL Q18(b)(i)",
+    stem: "Question 18 — Answer both (a) and (b) with either (c) or (d).",
+    questionText: "Explain natural selection.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Process through which populations of living organisms adapt and change / organisms better adapted to their environment tend to survive and produce more offspring", marks: 2, contextNote: "One explanation, 2 marks.", group: {"claimMax":1,"perOption":2,"options":["Process through which populations of living organisms adapt and change","organisms better adapted to their environment tend to survive and produce more offspring"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q18(b)(i)",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-4-3-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q18b-iii", topicId: "agsci-4-3-2", conceptId: "selectively-bred-beef-traits",
+    section: "B", questionRef: "2021 OL Q18(b)(iii)",
+    stem: "Answer both (a) and (b) with either (c) or (d).",
+    questionText: "The following are pictures of two beef cattle breeds, Aberdeen Angus and Belgian Blue. Both breeds have been selectively bred based on physical traits. State one physical trait, in either of the animals above, and give one reason why this trait is an advantage to beef farmers.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "BB or AA ‐ good conformation (double muscle gene)", marks: 2, contextNote: "Physical trait, 2 marks." },
+    { id: "r-2", kind: "point", verbatim: "high % lean meat or high price", marks: 2, contextNote: "Its advantage to beef farmers, 2 marks." },
+    ],
+    answerVariants: [
+          {
+                "id": "conformation",
+                "label": "Good conformation",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "BB or AA ‐ good conformation (double muscle gene)",
+                            "marks": 2,
+                            "contextNote": "Physical trait, 2 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "high % lean meat or high price",
+                            "marks": 2,
+                            "contextNote": "Its advantage to beef farmers, 2 marks.",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "polled",
+                "label": "Polled (no horns)",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "AA ‐ polled (no horns)",
+                            "marks": 2,
+                            "contextNote": "Physical trait, 2 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "less dangerous",
+                            "marks": 2,
+                            "contextNote": "Its advantage to beef farmers, 2 marks.",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "smaller-calves",
+                "label": "Smaller calves",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "smaller calves",
+                            "marks": 2,
+                            "contextNote": "Physical trait, 2 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "lower mortality rates",
+                            "marks": 2,
+                            "contextNote": "Its advantage to beef farmers, 2 marks.",
+                            "id": "r-2"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q18(b)(iii)",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p34-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p34-i0.png",
+          "srcHash": "bf4865e057ec8215cce016f826a4811e",
+          "alt": "Question 18 part (b)(iii). The stem reads: The following are pictures of two beef cattle breeds, Aberdeen Angus and Belgian Blue. Both breeds have been selectively bred based on physical traits. Two colour photographs sit side by side, neither carrying a letter or caption. The left photograph shows a side-on, entirely solid black bull with a smooth short coat, no visible horns, a broad deep body and a yellow ear tag in each ear, standing on grass in front of a pale corrugated shed. The right photograph shows a side-on bull with a white coat heavily patched and speckled with black and grey (blue roan), displaying extreme double muscling - hugely bulging, cleft hindquarters and shoulder, a pale underline, an orange ear tag and a halter - standing in a green field with a wire fence and trees behind; a small illegible watermark sits at the bottom left of this photograph. Below the photographs is the instruction State one physical trait, in either of the animals above, and give one reason why this trait is an advantage to beef farmers, followed by an answer grid with the rows Physical trait: and Reason:.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-4-3-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q18c-iii", topicId: "agsci-4-3-2", conceptId: "lamb-growth-rate-interpretation",
+    section: "B", questionRef: "2021 OL Q18(c)(iii)",
+    stem: "Question 18 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is producing early lambs for the Easter market. The lambs were born in January with an average birthweight of 4 kg. The lambs were weighed every two weeks, and their average liveweights were: week 0, 4 kg; week 2, 10 kg; week 4, 16 kg; week 6, 22 kg; week 8, 28 kg; week 10, 34 kg; week 12, 40 kg; week 14, 45 kg; week 16, 51 kg.",
+    questionText: "The graph at part (ii) is almost a straight line. Briefly describe what this information tells the farmer about the growth rate of the lambs.",
+    tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Lambs are putting weight on in a consistent manner / putting on similar weight every week / growth rate and age are proportional", marks: 4, contextNote: "One description, 4 marks.", group: {"claimMax":1,"perOption":4,"options":["Lambs are putting weight on in a consistent manner","putting on similar weight every week","growth rate and age are proportional"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q18(c)(iii)",
+          "pages": [
+                35,
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p35-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p35-i0.png",
+          "srcHash": "7982e81c94fb51defb59848a64d5382a",
+          "alt": "Question 18 part (c)(ii) and its graph. The text above reads: The farmer aims to sell the lambs at a minimum average liveweight of 45 kg. Using the graph, determine the minimum number of weeks for the lambs to reach this liveweight. The figure is a line graph on a pale blue gradient panel titled in blue Average Liveweight Gain of Lambs from Birth to Slaughter. The vertical axis is labelled Average Liveweight (kg) and runs 0 to 55 in steps of 5 with horizontal gridlines. The horizontal axis is labelled Age (weeks) with categories Birth, 2, 4, 6, 8, 10, 12, 14 and 16. A single mid-blue straight-running line with round markers rises steadily from left to right, with markers reading approximately 4 kg at Birth, 10 at week 2, 16 at week 4, 22 at week 6, 28 at week 8, 34 at week 10, 40 at week 12, 45 at week 14 and 51 at week 16. Below the graph is a single-row answer box beginning Minimum number of weeks:, and the remainder of the crop is blank white page.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2021, ["agsci-1-2"]), kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q18d-iii", topicId: "agsci-1-2", conceptId: "measuring-shoot-length",
+    section: "B", questionRef: "2021 OL Q18(d)(iii)",
+    stem: "Question 18 — Answer both (a) and (b) with either (c) or (d). (d) A student carried out an investigation to see if nutrients, N, P, K effected the growth rate of grass and barley plants. The student recorded the shoot length of multiple plants, calculated the mean (average) and graphed the results.",
+    questionText: "Outline one way in which the student could have measured the shoot length of the barley / grass plant.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Cut shoot at base of plant and measure length with a ruler / hold the shoot straight and measure the length with a ruler / use a thread (string) to measure plant and then measure with a ruler", marks: 2, contextNote: "One way, 2 marks.", group: {"claimMax":1,"perOption":2,"options":["Cut shoot at base of plant and measure length with a ruler","hold the shoot straight and measure the length with a ruler","use a thread (string) to measure plant and then measure with a ruler"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2021 Ordinary — Q18(d)(iii)",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
     },
   } as SecCard,

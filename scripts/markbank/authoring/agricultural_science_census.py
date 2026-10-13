@@ -1601,9 +1601,138 @@ POOLS_2021_HIGHER = {
     'Q16(b)': (1, ['Resazurin test', 'Total bacterial count']),
     'Q18(a) Crop preservation': (1, ['Grain crops (e.g. barley)', 'Potatoes', 'Grass (silage or hay)']),
 }
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER}
+# 2021 Ordinary: Section A Q1-Q12 at 10 marks (any seven), Section B Q13-Q18 at 50 (any three).
+# Q1(a)(i)-(iii) and Q6(a)-(e) are one task each under one instruction; Q15(b) and
+# Q18(a)(i) are priced by printed heading. Q18(a)(i) carries "Named crop 2" on its
+# Seedbed preparation task, which is what makes Question 18 total 50.
+ORDINARY_2021 = '''
+Q1(a)|6|3|11|Oilseed rape*
+Q1(a)(iv)|4|3|11|Biennial – (complete lifecycle) grows in 2 years
+Q1(b)(i)|8|4|11|A = Daisy
+Q1(b)(ii)|2|4|11|crop rotation to disturb (break) weed cycle
+Q2(a)|6|5|11|A = Rumen
+Q2(b)|4|5|11|Breakdown food or cellulose or roughage or fibre
+Q3(a)(i)|2|6|11|Growth of crops in a defined sequence
+Q3(a)(ii)|4|6|11|Manage soil fertility
+Q3(a)(iii)|4|6|11|Toxic (harmful to human health)
+Q3(b)(i)|2|6|12|Control of a pest by introduction of natural enemy or predator
+Q3(b)(ii)|4|6|12|Ladybird (eat) greenfly
+Q3(b)(iii)|4|6|12|No chemicals used
+Q4(a)|4|7|12|A = Brown earth
+Q4(b)|2|7|12|grazing pasture (grassland)
+Q4(c)|4|7|12|Poor drainage (due to the impermeable iron pan)
+Q5(a)|2|8|12|Infiltration rate or drainage or soil (structure)
+Q5(b)|4|8|12|Use (same amount of) soil for each
+Q5(c)|2|8|12|Uncompacted soil
+Q5(d)|2|8|12|Ploughing
+Q6(a)–(e)|10|9|13|Twin lamb disease
+Q7(a)|2|9|13|Indicate whether True or False
+Q7(b)|2|9|13|(b) False
+Q7(c)|2|9|13|(c) True
+Q7(d)|2|9|13|(d) True
+Q7(e)|2|9|13|(e) True
+Q8(a)(i)|2|10|13|Prevent children or animal accessing them
+Q8(a)(ii)|2|10|13|Danger overhead power lines
+Q8(a)(iii)|4|10|13|respirator or mask
+Q8(a)(iv)|2|10|13|Wear gloves or wash hands afterwards
+Q8(b)(i)|2|11|13|Caution farm machinery
+Q8(b)(ii)|2|11|13|Have a clear exit plan
+Q8(b)(iii)|6|11|13|Remove all animals from the shed
+Q9(a)|2|12|14|(highest ranking) or most or top
+Q9(b)|4|12|14|Animal (respiration)
+Q9(c)|4|12|14|Leave tree in hedges
+Q10(a)|2|13|14|Ovary*
+Q10(b)|2|13|14|(Produces) eggs or ovulation
+Q10(c)|4|13|14|Gestation length
+Q10(d)|2|13|14|X on the diagram (must reach cervix)
+Q11(a)(i)|2|14|15|Silage (pit)
+Q11(a)(ii)|4|14|15|Environmental hazard
+Q11(a)(iii)|2|14|15|Buildings (structures) are close together
+Q11(a)(iv)|2|14|15|Automatic calf feeder
+Q11(b)(i)|2|15|15|If animal (cow) is sick or injured
+Q11(b)(ii)|2|15|15|Disinfect or clean boots
+Q11(b)(iii)|2|15|15|less labour needed
+Q11(b)(iv)|4|15|15|passage behind cubicles
+Q12(a)|8|16|16|A = Charolais*
+Q12(b)|2|16|16|0m for naming breed
+Q13(a)(i)|4|19|17|90 million*
+Q13(a)(ii)|4|19|17|Waterlogged or wet (poorly drained) areas or excess water
+Q13(a)(iii)|5|19|17|Fence off wet areas
+Q13(b)(i)|4|20|17|Louth*
+Q13(b)(ii)|4|20|17|lower incidence of mud snail
+Q13(c)(i)|3|20|17|Disease that must be reported
+Q13(c)(ii)|8|20|17|Foot and Mouth
+Q13(c)(iii)|3|20|17|may pose threat to humans or zoonosis
+Q13(c)(iv)|5|21|17|Operate closed herd (breed own replacements)
+Q13(c)(v)|10|21|17|lime on floor
+Q14(a)(i)|8|22|18|Holstein Friesian
+Q14(a)(ii)|10|22|18|Wash udders
+Q14(a)(iii)|7|22|18|thermoduric bacteria
+Q14(a)(iv)|7|22|18|use genomic bulls
+Q14(b)(i)|3|23|18|same amount of Resazurin
+Q14(b)(ii)|9|23|18|Diagram or text showing the following
+Q14(b)(iii)|3|24|18|Wrong temperature on water bath
+Q14(b)(iv)|3|24|18|colour change not measured numerically
+Q15(a)(i)|6|25|19|hybrid rye grass
+Q15(a)(ii)|4|25|19|Good yield or fast growing
+Q15(a)(iii)|6|25|19|Vegetative stage or leafy stage
+Q15(b) Time of year of cutting|4|25|19|Time of cutting
+Q15(b) Fertiliser requirements|4|25|19|soil test for nutrient requirement
+Q15(b) Harvesting and storage|10|25|19|do not cut during or after rainfall
+Q15(c)(i)|4|26|19|29.83%
+Q15(c)(ii)|4|26|19|DMD not high enough (67%)
+Q15(c)(iii)|6|26|19|Cut at leafy stage to increase sugar for fermentation
+Q15(c)(iv)|2|26|19|Lactobacillus or valid named species
+Q16(a)|16|27|20|Clay is more fertile (than sandy soil)
+Q16(b)(i)|5|27|20|Sowing cover crops
+Q16(b)(ii)|6|27|20|Divide the area
+Q16(c)(i)|7|28|21|Mix soil sample with (distilled) water
+Q16(c)(ii)|5|28|21|Low earthworm numbers
+Q16(c)(iii)|3|28|21|58.33%
+Q16(c)(iv)|4|28|21|Soil is very wet
+Q16(c)(v)|4|28|21|Compaction or poaching
+Q16(d)(i)|8|29|21|No GMO
+Q16(d)(ii)|7|29|21|Animals reared on land free from chemicals
+Q16(d)(iii)|8|29|21|use sheep on land to increase N content through dung
+Q17(a)(i)|7|30|22|growth of (plant from) seed
+Q17(a)(ii)|4|30|22|By increasing the temperature of the soil
+Q17(a)(iii)|7|30|22|Amount or type of seeds
+Q17(a)(iv)|3|30|22|if sown too deep
+Q17(a)(v)|3|31|22|62+59+61+58
+Q17(a)(vi)|3|31|22|To get more accurate results
+Q17(a)(vii)|6|31|22|overheat switch on incubator
+Q17(b)(i)|6|32|22|Correct bar drawn at 20
+Q17(b)(ii)|3|32|22|will give best germination rates
+Q17(b)(iii)|8|32|22|water the seeds
+Q18(a)(i) Seedbed preparation|9|33|23|Named crop
+Q18(a)(i) Weed control|4|33|23|Herbicide or weed killer
+Q18(a)(ii)|4|33|23|Beware of machinery
+Q18(a)(iii)|6|33|23|Accurate or even spreading
+Q18(b)(i)|2|34|23|Process through which populations of living organisms adapt
+Q18(b)(ii)|4|34|23|performance or progeny tested bull
+Q18(b)(iii)|4|34|23|good conformation (double muscle gene)
+Q18(c)(i)|4|35|24|0.42kg / day
+Q18(c)(ii)|4|35|24|can be indicated on the graph
+Q18(c)(iii)|4|36|24|Lambs are putting weight on in a consistent manner
+Q18(c)(iv)|5|36|24|milk (milk replacer)
+Q18(d)(i)|1|37|24|More accurate results or more fair result
+Q18(d)(ii)|2|37|24|All nutrients (NPK)
+Q18(d)(iii)|2|37|24|Cut shoot at base of plant
+Q18(d)(iv)|12|38|24|dung stead or manure pit
+'''
+POOLS_2021_ORDINARY = {
+    'Q12(b)': (1, ['Landrace', 'Large White', 'Rhode Island Red', 'Irish Sport Horse']),
+    'Q14(b)(iii)': (1, ['Water bath temperature', 'Amount of Resazurin or milk', 'Dirty test tubes or containers', 'Observation of time']),
+    'Q14(b)(iv)': (1, ['Qualitative (resazurin test)', 'Quantitative (total bacterial count)']),
+    'Q16(c)(v)': (1, ['Compaction or poaching', 'Late or failed germination or lower yields', 'Higher incidence of disease']),
+    'Q18(b)(iii)': (1, ['Good conformation', 'Polled (no horns)', 'Smaller calves']),
+}
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY}
 
 SOURCES = [
+    (2021, 'ordinary', 'G', ORDINARY_2021,
+     'e4cad5e9b9c5a3bd923da963916baebeaa7d49044bfb856434a318bd1755df59',
+     'efec540781423841de14dfde99b9c751e7f04c6240e4f8db7fd8db9e0855ee8c'),
     (2021, 'higher', 'A', HIGHER_2021,
      'd60e656eff0863123d5c8152f114bcd323ed0cf81144676becf1f367c2b9d4e3',
      '6a1ad8c18dcabcd40f63f9b10f28ea23089a29bf4c34cd22ce097c8e988e99a8'),
@@ -1693,7 +1822,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -1743,6 +1872,8 @@ MODERN_LAYOUTS = {
     (2025,'higher'): {'either':{'Q2','Q3','Q4','Q9'}, 'bothWithEither':{'Q13','Q14'},
                       'marks':lambda n: 10 if n<=12 else 50},
     (2025,'ordinary'): {'either':{'Q1','Q9','Q11','Q12'}, 'bothWithEither':{'Q15','Q17'},
+                        'marks':lambda n: 10 if n<=12 else 50},
+    (2021,'ordinary'): {'either':{'Q1','Q3','Q8','Q11'}, 'bothWithEither':{'Q16','Q18'},
                         'marks':lambda n: 10 if n<=12 else 50},
     (2021,'higher'): {'either':{'Q2','Q3','Q6','Q11'}, 'bothWithEither':{'Q16'}, 'oneWithEither':{'Q13'},
                       'marks':lambda n: 10 if n<=12 else 50},
@@ -1836,7 +1967,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113. Remaining editions stay open.')
 
 
 if __name__=='__main__':

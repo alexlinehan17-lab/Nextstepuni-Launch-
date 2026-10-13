@@ -443,7 +443,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(additions.size).toBe(585);
+    expect(additions.size).toBe(587);
     const live = decks.flatMap(([, cards]) => cards);
     expect(live.filter(card => additions.has(card.id)).map(card => card.id).sort()).toEqual([...additions].sort());
     expect(baselineCards(live).length + withdrawnFor(live).length).toBe(10_495);
@@ -575,6 +575,40 @@ describe('Mark Bank card preservation', () => {
       'agsci-2021-hl-q17bi': 'Field 2 results in the stem and the reference soil index cropped from the paper.',
       'agsci-2021-hl-q17biv': 'Names 1 each and roles 3 each (3+3+1+1), not 4 per nutrient-and-role.',
       'agsci-2021-hl-q18a-crop-preservation': 'Grain, potato and grass preservation as answer routes, not one mixed pool.',
+      'agsci-2021-ol-q1a': 'Replaces tick-box debris in the stem with the paper\'s instruction.',
+      'agsci-2021-ol-q3a-i': 'Restores the omitted second explanation; every published explanation listed.',
+      'agsci-2021-ol-q3a-iii': 'Restores the omitted fourth disadvantage; every published disadvantage listed at 3+1.',
+      'agsci-2021-ol-q3b-iii': 'Restores the omitted "less labour required"; every published advantage listed at 3+1.',
+      'agsci-2021-ol-q4b': 'Replaces diagram-label debris in the stem with the paper\'s lead-in.',
+      'agsci-2021-ol-q4c': 'First-correct 3+1 across every published disadvantage, not 3 pinned to poor drainage.',
+      'agsci-2021-ol-q5b': 'Restores the omitted timing step; every published step listed at 3+1.',
+      'agsci-2021-ol-q8a-iii': 'Restores the omitted wellington boots; every published piece listed at 2(2).',
+      'agsci-2021-ol-q8a-iv': 'Restores the whole second precaution ("avoid touching the infected area on the cattle").',
+      'agsci-2021-ol-q8b-ii': 'Restores the omitted "keep all children and dogs away" precaution.',
+      'agsci-2021-ol-q8b-iii': 'Restores the omitted electric-wires precaution; every published precaution listed at 3+2+1.',
+      'agsci-2021-ol-q9b': 'Restores "soils or soil cultivation (ploughing)" and enteric fermentation; every source listed at 3+1.',
+      'agsci-2021-ol-q10b': 'One answer in the scheme\'s words, not split at oestrogen.',
+      'agsci-2021-ol-q10d': 'Drops diagram labels from the stem.',
+      'agsci-2021-ol-q11b-i': 'Restores the whole second reason and the plan view.',
+      'agsci-2021-ol-q11b-iii': 'Restores the omitted "increased milk yield from cows".',
+      'agsci-2021-ol-q12a': 'Drops photograph letters and the word list run into the question; the list is quoted.',
+      'agsci-2021-ol-q12b': 'Landrace, Large White, Rhode Island Red and Irish Sport Horse as answer routes.',
+      'agsci-2021-ol-q13c-iv': 'Restores the omitted "do not share equipment" practice; every practice listed at 2+2+1.',
+      'agsci-2021-ol-q14b-ii': 'Every published resazurin step listed at 3(3); other milk tests open.',
+      'agsci-2021-ol-q14b-iii': 'Each error paired with its own remedy as an answer route.',
+      'agsci-2021-ol-q14b-iv': 'Qualitative (resazurin) and quantitative (TBC) as answer routes with their justifications.',
+      'agsci-2021-ol-q15c-iii': 'Restores the end of the packing point; every published way listed at 4+2.',
+      'agsci-2021-ol-q16b-ii': 'Restores the omitted soil-types step; every published step listed at 4+2.',
+      'agsci-2021-ol-q16c-ii': 'Restores the omitted third piece of advice.',
+      'agsci-2021-ol-q16c-v': 'Each implication paired with its own reason as an answer route.',
+      'agsci-2021-ol-q16d-i': 'Restores the omitted compaction-and-erosion principle; every principle listed at 4+4.',
+      'agsci-2021-ol-q17a-iii': 'Restores the omitted "volume of water"; every factor listed at 4+3.',
+      'agsci-2021-ol-q17a-iv': 'Restores the whole second effect of sowing depth.',
+      'agsci-2021-ol-q17b-ii': 'Restores the omitted second piece of advice.',
+      'agsci-2021-ol-q18a-i-seedbed': 'Restores the 2 marks for naming the crop (9, not 7) and the potato stones point.',
+      'agsci-2021-ol-q18b-i': 'Restores the second published explanation of natural selection.',
+      'agsci-2021-ol-q18c-iii': 'The paper\'s wording with the lamb growth graph; restores the omitted description.',
+      'agsci-2021-ol-q18d-iii': 'Restores the omitted thread-and-ruler method.',
     };
     expect([...agriculturalReview.correctedCardIds].sort()).toEqual(Object.keys(corrected).sort());
     const live = new Map(decks.flatMap(([, cards]) => cards.map(card => [card.id, card] as const)));
@@ -611,6 +645,9 @@ describe('Mark Bank card preservation', () => {
     // 2021 Higher corrections keep each original's ID and total.
     for (const [id, marks] of [['agsci-2021-hl-q1b', 4], ['agsci-2021-hl-q11bii', 6], ['agsci-2021-hl-q14bii', 6], ['agsci-2021-hl-q16b', 12],
       ['agsci-2021-hl-q17biv', 8], ['agsci-2021-hl-q18a-crop-preservation', 4]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
+    // 2021 Ordinary corrections keep each original's ID; Q18(a)(i) Seedbed preparation regains the named-crop 2 marks.
+    for (const [id, marks] of [['agsci-2021-ol-q18a-i-seedbed', 9], ['agsci-2021-ol-q12b', 2], ['agsci-2021-ol-q14b-iii', 3], ['agsci-2021-ol-q16c-v', 4],
+      ['agsci-2021-ol-q4c', 4], ['agsci-2021-ol-q8b-iii', 6]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {

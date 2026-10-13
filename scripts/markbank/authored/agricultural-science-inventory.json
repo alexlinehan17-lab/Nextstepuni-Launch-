@@ -3247,121 +3247,137 @@
         "sha256": "efec540781423841de14dfde99b9c751e7f04c6240e4f8db7fd8db9e0855ee8c",
         "pages": 26
       },
-      "authoredEnglishCardsForSitting": 111,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 113,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "bb826982be26b3fd",
           "page": 2,
           "cue": "any seven",
           "context": "at you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer any seven questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any three questions from this section. There is internal choice in two questions. Each question carries 50 ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section A, seven of twelve independent questions. Every question and both sides of each internal choice are retained."
         },
         {
           "id": "cae58822c07e7e8f",
           "page": 2,
           "cue": "any three",
           "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any three questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Day and Month of Birth in the boxes on the front cover. Write your answers in blue or ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Instructions: Section B, three of six independent questions. Every question is retained."
         },
         {
           "id": "9499c498ff4b44c5",
           "page": 3,
           "cue": "any seven",
           "context": "ficate Examination 2021 3 Agricultural Science – Ordinary Level Section A 70 marks Answer any seven questions. Each question carries 10 marks. Question 1 Answer either (a) or (b). (a) Identify each of the following plants by placing a tick () in the correct box. (iv) Plants can be classified by their life cycle. Distinguish be",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: seven independent 10-mark questions, all retained."
         },
         {
           "id": "6a51f955bb7c716d",
           "page": 3,
           "cue": "either",
           "context": " A 70 marks Answer any seven questions. Each question carries 10 marks. Question 1 Answer either (a) or (b). (a) Identify each of the following plants by placing a tick () in the correct box. (iv) Plants can be classified by their life cycle. Distinguish between biennial and perennial plants. (i) Soyabean Cocksfoot Oilseed ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1 either (a) or (b): both independently marked alternatives are retained."
         },
         {
           "id": "11fe9c7f90da3413",
           "page": 6,
           "cue": "either",
           "context": "ng Certificate Examination 2021 6 Agricultural Science – Ordinary Level Question 3 Answer either (a) or (b). (a) Crop rotation is a common practice on Irish tillage farms. (i) Explain the underlined term. (ii) State two advantages of crop rotation. (iii) Suggest two disadvantages of using chemical sprays in crop production. ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q3 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "6d1fc746a03ac8cc",
           "page": 10,
           "cue": "either",
           "context": "g Certificate Examination 2021 10 Agricultural Science – Ordinary Level Question 8 Answer either (a) or (b). (a) As part of the Bord Bia Quality Assurance Schemes, farmers must ensure that all of their medicines are locked away in a medicine cabinet. (i) Outline one reason why all medicines must be locked away. (ii) What is ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "2f2efcba6a37013a",
           "page": 14,
           "cue": "either",
           "context": " Certificate Examination 2021 14 Agricultural Science – Ordinary Level Question 11 Answer either (a) or (b). (a) The use of 3D plans are likely to become more common in the future development of new infrastructure of farms. (i) Identify the structure located at B. (ii) Describe one environmental hazard and one potential safe",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q11 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "e6b887262892b9a6",
           "page": 16,
           "cue": "either",
           "context": "answer in the space provided. A B C D (b) Describe one characteristic of a named breed of either pig or horse or poultry that you have studied. Limousin Jacob Border Leicester Charolais A: B: C: D: Named breed:",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q12(b): a characteristic of a named pig, horse or poultry breed; the scheme answers for Landrace, Large White, Rhode Island Red and Irish Sport Horse, kept as answer routes on one card."
         },
         {
           "id": "91da7ffbc8313021",
           "page": 19,
           "cue": "any three",
           "context": "cate Examination 2021 19 Agricultural Science – Ordinary Level Section B 150 marks Answer any three questions. Each question carries 50 marks. Question 13 (a) Read the following article on liver fluke and answer the questions which follow. Liver fluke thrive in the Irish wet climate. It is estimated to cost Irish farmers over €",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B heading: three of six independent 50-mark questions, all retained."
         },
         {
           "id": "7298acb588a1ac0f",
           "page": 22,
           "cue": "choose",
           "context": "al Science – Ordinary Level Question 14 (a) (i) Name two dairy breeds that a farmer would choose to produce good quality milk for the dairy industry. (ii) Maintaining hygiene before, during and after milking is important for both cow health and achieving a good milk price. Outline any three ways a farmer can maintain high le",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "\"a farmer would choose\" in Q14(a)(i) is the farmer's breeding decision, not a response choice; the scheme's breeds are a marking menu."
         },
         {
           "id": "48656172bf06e787",
           "page": 22,
           "cue": "any three",
           "context": "d after milking is important for both cow health and achieving a good milk price. Outline any three ways a farmer can maintain high levels of hygiene. (iii) Dairy farmers obtain a price for their milk based on the quality of their milk. List any two tests carried out on milk that are used in calculating the milk price paid to t",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q14(a)(ii): any three hygiene ways from the scheme's list; a marking menu, not a printed item choice."
         },
         {
           "id": "2336d1655183ff65",
           "page": 22,
           "cue": "any two",
           "context": "iii) Dairy farmers obtain a price for their milk based on the quality of their milk. List any two tests carried out on milk that are used in calculating the milk price paid to the farmer. (iv) Apart from hygiene practices, briefly explain two ways dairy farmers could improve the quality of the milk on their farm. 1. 2. 1. 2. ",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q14(a)(iii): any two milk tests from the scheme's list; a marking menu, not a printed item choice."
         },
         {
           "id": "fbdb6acf218bdd9b",
           "page": 25,
           "cue": "any one",
           "context": ") List two grasses commonly used for silage production. (ii) Outline one reason for using any one of the grasses named at part (i) above. (iii) State at what stage of the grass growth cycle the grass should be cut for good quality silage and justify your answer. (b) Advise a beef farmer of the different steps involved in maki",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q15(a)(ii): a reason for any grass the student named at part (i); a marking menu."
         },
         {
           "id": "641f3d80ee58032d",
           "page": 27,
           "cue": "either",
           "context": "on 2021 27 Agricultural Science – Ordinary Level Question 16 Answer both (a) and (b) with either (c) or (d). (a) Compare sandy and clay soil types under the following headings. (b) (i) Suggest three examples of soil management practices for sustainable land use. (ii) Outline two steps involved in collecting samples of soil f",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q16: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "b74a4f78e4b2ce70",
           "page": 33,
           "cue": "either",
           "context": "on 2021 33 Agricultural Science – Ordinary Level Question 18 Answer both (a) and (b) with either (c) or (d). (a) (i) Discuss the production of a named crop that you have studied under the following headings. (ii) Briefly describe one safety precaution taken by a farmer during harvest of the named crop at part (i) above. (iii",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q18: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "9be212ee2fd9a1a1",
           "page": 34,
           "cue": "either",
           "context": " breeds have been selectively bred based on physical traits. State one physical trait, in either of the animals above, and give one reason why this trait is an advantage to beef farmers. 1. 2. Physical trait: Reason:",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q18(b)(iii): one physical trait of either animal with its reason; the scheme's good conformation, polled and smaller calves traits are kept as answer routes on one card."
         }
       ]
     },
@@ -3380,7 +3396,7 @@
         "sha256": "8b4d5fb23ff0c80ddd90b855fe146e98ff75b162efb05e3a6fc6c566845f6e96",
         "pages": 27
       },
-      "authoredEnglishCardsForSitting": 111,
+      "authoredEnglishCardsForSitting": 113,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

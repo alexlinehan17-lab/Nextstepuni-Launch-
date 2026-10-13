@@ -385,6 +385,51 @@
         14
       ]
     },
+    "agsci-2021-ol-q10a": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2021-ol-q10c": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2021-ol-q11a-i": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2021-ol-q11a-ii": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2021-ol-q11a-iii": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2021-ol-q11a-iv": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2021-ol-q11b-ii": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2021-ol-q13a-i": {
+      "pages": [
+        19
+      ]
+    },
+    "agsci-2021-ol-q13a-ii": {
+      "pages": [
+        19
+      ]
+    },
     "agsci-2021-ol-q13a-iii": {
       "kind": "text",
       "pages": [
@@ -392,11 +437,294 @@
       ],
       "stripStem": true
     },
-    "agsci-2021-ol-q18c-iii": {
+    "agsci-2021-ol-q13b-i": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2021-ol-q13b-ii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2021-ol-q13c-i": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2021-ol-q13c-ii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2021-ol-q13c-iii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2021-ol-q13c-v": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2021-ol-q14a-i": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2021-ol-q14a-ii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2021-ol-q14a-iii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2021-ol-q14a-iv": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2021-ol-q14b-i": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2021-ol-q15a-i": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2021-ol-q15a-ii": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2021-ol-q15a-iii": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2021-ol-q15b-fertiliser": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2021-ol-q15b-harvest": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2021-ol-q15b-time": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2021-ol-q15c-i": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2021-ol-q15c-ii": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2021-ol-q15c-iv": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2021-ol-q16a": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2021-ol-q16b-i": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2021-ol-q16c-i": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2021-ol-q16c-iii": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2021-ol-q16c-iv": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2021-ol-q16d-ii": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2021-ol-q16d-iii": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2021-ol-q17a-i": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2021-ol-q17a-ii": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2021-ol-q17a-v": {
+      "pages": [
+        30,
+        31
+      ]
+    },
+    "agsci-2021-ol-q17a-vi": {
+      "pages": [
+        30,
+        31
+      ]
+    },
+    "agsci-2021-ol-q17a-vii": {
+      "pages": [
+        30,
+        31
+      ]
+    },
+    "agsci-2021-ol-q17b-i": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2021-ol-q17b-iii": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2021-ol-q18a-i-weeds": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2021-ol-q18a-ii": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2021-ol-q18a-iii": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2021-ol-q18b-ii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2021-ol-q18c-i": {
       "pages": [
         35
-      ],
-      "stripStem": true
+      ]
+    },
+    "agsci-2021-ol-q18c-ii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2021-ol-q18c-iv": {
+      "pages": [
+        35,
+        36
+      ]
+    },
+    "agsci-2021-ol-q18d-i": {
+      "pages": [
+        37
+      ]
+    },
+    "agsci-2021-ol-q18d-ii": {
+      "pages": [
+        37
+      ]
+    },
+    "agsci-2021-ol-q18d-iv": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2021-ol-q1a-iv": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2021-ol-q1b-i": {
+      "pages": [
+        4
+      ]
+    },
+    "agsci-2021-ol-q1b-ii": {
+      "pages": [
+        4
+      ]
+    },
+    "agsci-2021-ol-q2a": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2021-ol-q2b": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2021-ol-q3a-ii": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2021-ol-q3b-i": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2021-ol-q3b-ii": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2021-ol-q4a": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2021-ol-q5a": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2021-ol-q5c": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2021-ol-q5d": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2021-ol-q6": {
+      "pages": [
+        9
+      ]
     },
     "agsci-2021-ol-q7a": {
       "pages": [
@@ -427,6 +755,31 @@
         9
       ],
       "stripStem": true
+    },
+    "agsci-2021-ol-q8a-i": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2021-ol-q8a-ii": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2021-ol-q8bi": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2021-ol-q9a": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2021-ol-q9c": {
+      "pages": [
+        12
+      ]
     },
     "agsci-2022-hl-q10a": {
       "pages": [
