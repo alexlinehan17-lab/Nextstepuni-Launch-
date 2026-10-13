@@ -564,7 +564,9 @@ def integrate(m, here, alt_text, anchor_from_sidecar=False):
     read = lambda p: json.loads(Path(p).read_text())  # noqa: E731
 
     def save(p, d):
-        Path(p).write_text(json.dumps(d, ensure_ascii=False, indent=2) + '\n')
+        # Keep a shared file's own indentation (card-corrections.json is indent 1, most others indent 2).
+        indent = 1 if Path(p).exists() and Path(p).read_text().startswith('{\n "') else 2
+        Path(p).write_text(json.dumps(d, ensure_ascii=False, indent=indent) + '\n')
 
     draft = read(here / f'{level}-{year}-draft.json')
     report = validate(draft, m, figure_dir=here, integrated=False)
