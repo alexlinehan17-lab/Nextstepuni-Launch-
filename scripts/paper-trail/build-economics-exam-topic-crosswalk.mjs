@@ -11,6 +11,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -27,6 +28,9 @@ const reference = JSON.parse(fs.readFileSync(REFERENCE_PATH, 'utf8'));
 const curriculumCrosswalk = JSON.parse(fs.readFileSync(CROSSWALK_PATH, 'utf8'));
 const localPapers = JSON.parse(fs.readFileSync(TAGS_PATH, 'utf8'));
 const preservationBaseline = JSON.parse(fs.readFileSync(BASELINE_PATH, 'utf8'));
+const secTopicReviews = JSON.parse(fs.readFileSync(
+  path.join(ROOT, 'data/examTopics/economics-sec-topic-reviews.json'), 'utf8',
+));
 const LEVELS = ['higher', 'ordinary'];
 
 const allTopics = LEVELS.flatMap(level => reference.levels[level].topics);
@@ -225,6 +229,25 @@ const fallbackTopicForNode = (level, nodeId) => {
 const questionMappings = [];
 const retainedLocalCards = [];
 const retainedLogical = new Set();
+const reviewedQuestionKeys = new Set();
+for (const review of secTopicReviews.questions) {
+  const key = [review.level, review.lang, review.year, review.fileid, review.n].join('|');
+  if (reviewedQuestionKeys.has(key)) throw new Error(`Duplicate SEC topic review: ${key}`);
+  reviewedQuestionKeys.add(key);
+  if (!review.reason || !review.pages.length || !review.canonicalNodeIds.length) {
+    throw new Error(`Incomplete SEC topic review: ${key}`);
+  }
+  const reviewedPdf = path.join(ROOT, 'paper-trail-corpus/exampapers', String(review.year), review.fileid);
+  if (createHash('sha256').update(fs.readFileSync(reviewedPdf)).digest('hex') !== review.paperSha256) {
+    throw new Error(`SEC topic review source changed: ${key}`);
+  }
+  if (!localPapers.some(paper => paper.level === review.level && paper.lang === review.lang
+    && paper.year === review.year && paper.fileid === review.fileid
+    && paper.q.some(question => question.n === review.n))) {
+    throw new Error(`Orphan SEC topic review: ${key}`);
+  }
+}
+let appliedSecReviews = 0;
 for (const paper of localPapers) {
   for (const question of paper.q) {
     const logicalKey = [paper.level, paper.year, question.n].join('|');
@@ -248,6 +271,16 @@ for (const paper of localPapers) {
         });
       }
     }
+    // The official question itself outranks an external heading snapshot. Keep
+    // that snapshot in the evidence, but correct the student-facing mapping.
+    // Reviews are language/file scoped: inspecting EV does not claim IV review.
+    const review = secTopicReviews.questions.find(item => item.level === paper.level
+      && item.lang === paper.lang && item.year === paper.year
+      && item.fileid === paper.fileid && item.n === question.n);
+    if (review) {
+      indexes = [...new Set(review.canonicalNodeIds.map(nodeId => fallbackTopicForNode(paper.level, nodeId)))];
+      appliedSecReviews += 1;
+    }
     if (!indexes.length) throw new Error(`${paperIdentity(paper)} Q${question.n}: empty topic mapping`);
     questionMappings.push([
       paper.level === 'higher' ? 'h' : 'o',
@@ -258,6 +291,35 @@ for (const paper of localPapers) {
     ]);
   }
 }
+if (appliedSecReviews !== secTopicReviews.questions.length) {
+  throw new Error('Not every SEC topic review was applied exactly once');
+}
+
+// A heading the SEC-paper review contradicts is a reviewed reference anomaly.
+// The official question outranks the snapshot (the student-facing mapping above
+// already follows the review), so the heading no longer counts as a match for
+// its topic; it stays in the evidence with its target and the reviewer's
+// reason. Card tags and the runtime question mappings are unchanged.
+const reviewedTopics = new Map(secTopicReviews.questions
+  .filter(review => review.lang === 'ev')
+  .map(review => [
+    [review.level, review.year, review.fileid, review.n].join('|'),
+    {
+      topicIds: new Set(review.canonicalNodeIds
+        .map(nodeId => allTopics[fallbackTopicForNode(review.level, nodeId)].id)),
+      reason: review.reason,
+    },
+  ]));
+for (const association of associations) {
+  if (association.resolution !== 'matched') continue;
+  const review = reviewedTopics.get([
+    association.level, association.year, association.target.fileid, association.target.questionNumber,
+  ].join('|'));
+  if (!review || review.topicIds.has(association.topicId)) continue;
+  association.resolution = 'reference-anomaly';
+  association.reason = `Reviewed SEC source: ${review.reason}`;
+}
+const referenceAnomalyAssociations = associations.filter(item => item.resolution === 'reference-anomaly');
 
 const matchedAssociations = associations.filter(item => item.resolution === 'matched');
 const sourceBlockedAssociations = associations.filter(item => item.resolution === 'source-blocked');
@@ -272,8 +334,9 @@ const distinctStudentFacingQuestions = localPapers
   .reduce((sum, paper) => sum + paper.q.length, 0);
 const physicalMappings = localPapers.reduce((sum, paper) => sum + paper.q.length, 0);
 
-if (matchedAssociations.length !== 903 || sourceBlockedAssociations.length !== 217) {
-  throw new Error(`Unexpected Economics reconciliation split: ${matchedAssociations.length}/${sourceBlockedAssociations.length}`);
+if (matchedAssociations.length + referenceAnomalyAssociations.length !== 903
+  || sourceBlockedAssociations.length !== 217) {
+  throw new Error(`Unexpected Economics reconciliation split: ${matchedAssociations.length}+${referenceAnomalyAssociations.length}/${sourceBlockedAssociations.length}`);
 }
 if (exactTopicsByCard.size !== 517 || retainedLocalCards.length !== 32) {
   throw new Error(`Expected 517 matched + 32 retained logical cards, found ${exactTopicsByCard.size} + ${retainedLocalCards.length}`);
@@ -313,7 +376,7 @@ const partReferences = associations.map(association => [
   topicIndex.get(association.topicId),
   association.year,
   sittingCode[association.sitting],
-  association.resolution === 'matched'
+  association.target
     ? association.target.questionNumber
     : referenceNumber(association),
   association.heading,
@@ -326,6 +389,7 @@ const summary = {
   referenceMockAssociations,
   matchedAssociations: matchedAssociations.length,
   sourceBlockedAssociations: sourceBlockedAssociations.length,
+  referenceAnomalyAssociations: referenceAnomalyAssociations.length,
   matchedLogicalCards: exactTopicsByCard.size,
   matchedQuestionTopicLinks,
   retainedLocalLogicalCards: retainedLocalCards.length,
@@ -353,6 +417,7 @@ const evidence = {
   curriculumCrosswalk,
   associations,
   retainedLocalCards,
+  secTopicReviews,
 };
 const runtime = {
   v: 1,
@@ -363,6 +428,14 @@ const runtime = {
   topics: runtimeTopics,
   partReferences,
   questionMappings,
+  secReviewedQuestionMappings: secTopicReviews.questions.map(review => [
+    review.level === 'higher' ? 'h' : 'o',
+    review.lang === 'ev' ? 'e' : 'i',
+    review.year,
+    review.fileid,
+    review.n,
+    [...new Set(review.canonicalNodeIds.map(nodeId => fallbackTopicForNode(review.level, nodeId)))],
+  ]),
   summary,
 };
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T11:26:26.081Z",
+  "generatedAt": "2026-10-14T18:27:45.354Z",
   "scope": {
     "included": "Factual State-exam topic associations captured from every current StudyClix Leaving Certificate topic page.",
     "excluded": "Commercial mock questions and all provider-owned question text, solutions, notes, media and PDFs.",
@@ -11,12 +11,12 @@
     "subjectsWithExactCrosswalks": 32,
     "referenceTopics": 1609,
     "referenceOfficialAssociations": 37105,
-    "matched": 27026,
+    "matched": 26945,
     "sourceBlocked": 9856,
-    "referenceAnomaly": 223,
+    "referenceAnomaly": 304,
     "unreviewed": 0,
     "sourceUnavailableTopics": 2,
-    "topicsWithGaps": 1343
+    "topicsWithGaps": 1346
   },
   "subjects": [
     {
@@ -23958,12 +23958,12 @@
       "totals": {
         "referenceTopics": 40,
         "referenceOfficialAssociations": 1120,
-        "matched": 903,
+        "matched": 822,
         "sourceBlocked": 217,
-        "referenceAnomaly": 0,
+        "referenceAnomaly": 81,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
-        "topicsWithGaps": 31
+        "topicsWithGaps": 34
       },
       "topics": [
         {
@@ -23971,9 +23971,9 @@
           "label": "1.1 Economic Concepts",
           "sourcePath": "/leaving-certificate/economics/higher/11-economic-concepts",
           "referenceOfficialAssociations": 25,
-          "matched": 19,
+          "matched": 15,
           "sourceBlocked": 6,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 4,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23999,6 +23999,22 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 2",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 3 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section A - Question 7 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section B - Question 16 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section A - Question 9",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24007,9 +24023,9 @@
           "label": "1.2 Sustainability",
           "sourcePath": "/leaving-certificate/economics/higher/12-sustainability",
           "referenceOfficialAssociations": 12,
-          "matched": 10,
+          "matched": 8,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24019,6 +24035,14 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 7",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2026 - Section A - Question 4 - Part B,C",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24027,9 +24051,9 @@
           "label": "2.1 The Market Economy",
           "sourcePath": "/leaving-certificate/economics/higher/21-the-market-economy",
           "referenceOfficialAssociations": 53,
-          "matched": 37,
+          "matched": 34,
           "sourceBlocked": 16,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24095,6 +24119,18 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 8",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 3 - Part A-B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 16 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section A - Question 3",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24103,9 +24139,9 @@
           "label": "2.2 Elasticity",
           "sourcePath": "/leaving-certificate/economics/higher/22-elasticity",
           "referenceOfficialAssociations": 25,
-          "matched": 21,
+          "matched": 20,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24123,6 +24159,10 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 3",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2025 - Section A - Question 2 - Part A,B",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24131,9 +24171,9 @@
           "label": "2.3 Costs of Production, Revenue & Profit",
           "sourcePath": "/leaving-certificate/economics/higher/23-costs-of-production-revenue-profit",
           "referenceOfficialAssociations": 33,
-          "matched": 25,
+          "matched": 23,
           "sourceBlocked": 8,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24167,6 +24207,14 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 9",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Section B - Question 13 - Part b",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section A - Question 9",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24175,9 +24223,9 @@
           "label": "2.4 Government Intervention",
           "sourcePath": "/leaving-certificate/economics/higher/24-government-intervention",
           "referenceOfficialAssociations": 48,
-          "matched": 40,
+          "matched": 38,
           "sourceBlocked": 8,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24211,6 +24259,14 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 7",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 4 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section B - Question 11 - Part C",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24219,9 +24275,9 @@
           "label": "3.1 Market Structures",
           "sourcePath": "/leaving-certificate/economics/higher/31-market-structures",
           "referenceOfficialAssociations": 53,
-          "matched": 42,
+          "matched": 41,
           "sourceBlocked": 11,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24267,6 +24323,10 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section  B - Question 12",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 15 - Part a",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24275,9 +24335,9 @@
           "label": "3.2 The Labour Market",
           "sourcePath": "/leaving-certificate/economics/higher/32-the-labour-market",
           "referenceOfficialAssociations": 30,
-          "matched": 22,
+          "matched": 20,
           "sourceBlocked": 8,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24311,6 +24371,14 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section  B - Question 13",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Section B - Question 14 - Part a,b",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2026 - Section B - Question 15 - Part C",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24319,14 +24387,18 @@
           "label": "3.3 Market Failure",
           "sourcePath": "/leaving-certificate/economics/higher/33-market-failure",
           "referenceOfficialAssociations": 10,
-          "matched": 9,
+          "matched": 8,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2007 - Section A - Question 8",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2026 - Section A - Question 7 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24335,9 +24407,9 @@
           "label": "4.1 National Income",
           "sourcePath": "/leaving-certificate/economics/higher/41-national-income",
           "referenceOfficialAssociations": 51,
-          "matched": 40,
+          "matched": 36,
           "sourceBlocked": 11,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 4,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24383,6 +24455,22 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 6",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 7 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 13 - Part a",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section A - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2026 - Section A - Question 8 - Part B",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24391,9 +24479,9 @@
           "label": "4.2 Fiscal Policy and the Budget Framework",
           "sourcePath": "/leaving-certificate/economics/higher/42-fiscal-policy-and-the-budget-framework",
           "referenceOfficialAssociations": 70,
-          "matched": 58,
+          "matched": 53,
           "sourceBlocked": 12,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 5,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24443,6 +24531,26 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section  B - Question 16 - Part B",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section B - Question 14 - Part B(II)",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section A - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 14 - Part c (iii)",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 15 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section B - Question 12 - Part c",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24491,9 +24599,9 @@
           "label": "4.4 Monetary Policy and Price Level",
           "sourcePath": "/leaving-certificate/economics/higher/44-monetary-policy-and-price-level",
           "referenceOfficialAssociations": 35,
-          "matched": 25,
+          "matched": 24,
           "sourceBlocked": 10,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24535,6 +24643,10 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 10",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 5 - Part B",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24575,9 +24687,9 @@
           "label": "5.1 Economic Growth and Development",
           "sourcePath": "/leaving-certificate/economics/higher/51-economic-growth-and-development",
           "referenceOfficialAssociations": 33,
-          "matched": 22,
+          "matched": 20,
           "sourceBlocked": 11,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24623,6 +24735,14 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 5",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 12 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 15 - Part c",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24631,14 +24751,22 @@
           "label": "5.2 Globalisation",
           "sourcePath": "/leaving-certificate/economics/higher/52-globalisation",
           "referenceOfficialAssociations": 10,
-          "matched": 9,
+          "matched": 7,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2009 - Section B - Question 3 - Part c",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 13 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section B - Question 14 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24711,9 +24839,9 @@
           "label": "6.1 Topical Questions and Statistics",
           "sourcePath": "/leaving-certificate/economics/higher/61-topical-questions-and-statistics",
           "referenceOfficialAssociations": 31,
-          "matched": 27,
+          "matched": 9,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 18,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24731,6 +24859,78 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section  B - Question 14",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section B - Question 12 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section B - Question 16 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section A - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section A - Question 5",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section A - Question 8",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section A - Question 9",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 11 - Part a",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 11 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 12 - Part a",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 12 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 13 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 14 - Part a",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 14 - Part c (iii)",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 15 - Part a",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 15 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section B - Question 13 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section B - Question 13 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section B - Question 16 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24750,42 +24950,85 @@
           "label": "1.1 Economics as a Way of Thinking",
           "sourcePath": "/leaving-certificate/economics/ordinary/11-economics-as-a-way-of-thinking",
           "referenceOfficialAssociations": 6,
-          "matched": 6,
+          "matched": 1,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 5,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2021 - Section B - Question 14 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section B - Question 16 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section A - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section A - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section A - Question 3",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "economics-ordinary-12-the-economic-concepts-of-scarcity-and-choice",
           "label": "1.2 The Economic Concepts of Scarcity and Choice",
           "sourcePath": "/leaving-certificate/economics/ordinary/12-the-economic-concepts-of-scarcity-and-choice",
           "referenceOfficialAssociations": 7,
-          "matched": 7,
+          "matched": 5,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2024 - Section A - Question 4",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section A - Question 7",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "economics-ordinary-13-sustainability",
           "label": "1.3 Sustainability",
           "sourcePath": "/leaving-certificate/economics/ordinary/13-sustainability",
           "referenceOfficialAssociations": 12,
-          "matched": 12,
+          "matched": 9,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2021 - Section B - Question 11 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section A - Question 8",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2026 - Section A - Question 2",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "economics-ordinary-21-the-market-economy",
           "label": "2.1 The Market Economy",
           "sourcePath": "/leaving-certificate/economics/ordinary/21-the-market-economy",
           "referenceOfficialAssociations": 52,
-          "matched": 43,
+          "matched": 42,
           "sourceBlocked": 9,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24823,6 +25066,10 @@
             {
               "heading": "2009 - Section B - Question 2",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Section A - Question 2 - Part a",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24859,9 +25106,9 @@
           "label": "2.3 Costs of Production, Revenue & Profit",
           "sourcePath": "/leaving-certificate/economics/ordinary/23-costs-of-production-revenue-profit",
           "referenceOfficialAssociations": 20,
-          "matched": 18,
+          "matched": 16,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24871,6 +25118,14 @@
             {
               "heading": "2009 - Section A - Question 5",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section B - Question 16 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section A - Question 6",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24879,9 +25134,9 @@
           "label": "2.4 Government Intervention",
           "sourcePath": "/leaving-certificate/economics/ordinary/24-government-intervention",
           "referenceOfficialAssociations": 82,
-          "matched": 68,
+          "matched": 61,
           "sourceBlocked": 14,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 7,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24939,6 +25194,34 @@
             {
               "heading": "2009 - Section B - Question 6",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section A - Question 10 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section A - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section A - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section A - Question 7",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section B - Question 11 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2026 - Section A - Question 8",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24987,9 +25270,9 @@
           "label": "3.2 The Labour Market",
           "sourcePath": "/leaving-certificate/economics/ordinary/32-the-labour-market",
           "referenceOfficialAssociations": 38,
-          "matched": 29,
+          "matched": 26,
           "sourceBlocked": 9,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -25027,6 +25310,18 @@
             {
               "heading": "2009 - Section B - Question 3",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section B - Question 16 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section B - Question 14 - Part a",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section B - Question 15 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -25046,9 +25341,9 @@
           "label": "4.1 National Income",
           "sourcePath": "/leaving-certificate/economics/ordinary/41-national-income",
           "referenceOfficialAssociations": 36,
-          "matched": 31,
+          "matched": 29,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -25070,6 +25365,14 @@
             {
               "heading": "2009 - Section B - Question 5",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section B - Question 15 - Part C",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -25078,9 +25381,9 @@
           "label": "4.2 Fiscal Policy & the Budget Framework",
           "sourcePath": "/leaving-certificate/economics/ordinary/42-fiscal-policy-the-budget-framework",
           "referenceOfficialAssociations": 48,
-          "matched": 44,
+          "matched": 43,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -25098,6 +25401,10 @@
             {
               "heading": "2009 - Section B - Question 4",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 5",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -25144,9 +25451,9 @@
           "label": "5.1 Economic Growth & Development",
           "sourcePath": "/leaving-certificate/economics/ordinary/51-economic-growth-development",
           "referenceOfficialAssociations": 42,
-          "matched": 36,
+          "matched": 35,
           "sourceBlocked": 6,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -25172,6 +25479,10 @@
             {
               "heading": "2009 - Section B - Question 6",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 5",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -25235,9 +25546,9 @@
           "label": "Acronyms",
           "sourcePath": "/leaving-certificate/economics/ordinary/acronyms",
           "referenceOfficialAssociations": 31,
-          "matched": 26,
+          "matched": 25,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -25259,6 +25570,10 @@
             {
               "heading": "2009 - Section B - Question 5",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 2",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -25267,9 +25582,9 @@
           "label": "Formulas",
           "sourcePath": "/leaving-certificate/economics/ordinary/formulas",
           "referenceOfficialAssociations": 23,
-          "matched": 18,
+          "matched": 15,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -25291,6 +25606,18 @@
             {
               "heading": "2009 - Section B - Question 5",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section A - Question 4",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section A - Question 7",
+              "resolution": "reference-anomaly"
             }
           ]
         },

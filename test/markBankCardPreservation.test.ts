@@ -823,14 +823,120 @@ const frenchAdditionIds = new Set([
   ...FRENCH_READING_CARDS.filter(card => card.id.includes('-reading-')),
   ...FRENCH_CLOZE_CARDS, ...FRENCH_LISTENING_CARDS,
 ].map(card => card.id));
+/* Economics keeps its 697 pre-review IDs frozen (383 Higher + 314 Ordinary, the
+ * original identity hashes above). The paper-by-paper physical review
+ * (2021-2026, English editions; Irish attachments unchanged) does two things on
+ * top of that set, and nothing else:
+ *   - a frozen card that was one heading of a required pair is withdrawn and its
+ *     ID becomes an explicit cardAliases.ts key resolving to the combined card,
+ *     so the frozen identity = live frozen IDs + Economics alias keys;
+ *   - every reviewed route, split or missing task that did not exist before is
+ *     an explicit addition below. An addition never reuses a frozen ID or an
+ *     alias key, so the frozen hash still proves no original ID was replaced. */
+const economicsAdditionIds = new Set([
+  // 2021 Ordinary: 1
+  'econ-2021-ol-q14-b-ii-services',
+  // 2022 Higher: 4
+  'econ-2022-hl-q16-b-ii-citizens', 'econ-2022-hl-sa-q4-c', 'econ-2022-hl-sa-q6-a-b',
+  'econ-2022-hl-sa-q6-a-c',
+  // 2022 Ordinary: 1
+  'econ-2022-ol-q13-a-ii-capital',
+  // 2023 Higher: 3
+  'econ-2023-hl-q15-b-iii-euro-no', 'econ-2023-hl-q16-a-i', 'econ-2023-hl-sa-q10-c',
+  // 2023 Ordinary: 1
+  'econ-2023-ol-q13-b-ii-trade',
+  // 2024 Higher: 7
+  'econ-2024-hl-q11-b-i-meaning', 'econ-2024-hl-q11-c-i-diagram',
+  'econ-2024-hl-q11-c-ii-diagram', 'econ-2024-hl-q11-c-iii-diagram',
+  'econ-2024-hl-q14-b-i-explanation', 'econ-2024-hl-q16-b-ii-meaning',
+  'econ-2024-hl-sa-q6-a-diagram',
+  // 2024 Ordinary: 1
+  'econ-2024-ol-q14-a-i-education',
+  // 2025 Higher: 6
+  'econ-2025-hl-q11-b-i-explanation', 'econ-2025-hl-q12-a-i-gdp', 'econ-2025-hl-q14-b-ii',
+  'econ-2025-hl-q16-b-i-diseconomies', 'econ-2025-hl-q16-b-ii-explanation',
+  'econ-2025-hl-q16-c-ii',
+  // 2025 Ordinary: 4
+  'econ-2025-ol-q13-b-ii-mr', 'econ-2025-ol-q13-c-i',
+  'econ-2025-ol-q14-b-i-negative', 'econ-2025-ol-q14-b-i-positive',
+  // 2026 Higher: 90
+  'econ-2026-hl-q11-a-i', 'econ-2026-hl-q11-a-ii', 'econ-2026-hl-q11-b-i',
+  'econ-2026-hl-q11-b-i-explanation', 'econ-2026-hl-q11-b-ii', 'econ-2026-hl-q11-c-i',
+  'econ-2026-hl-q11-c-i-meaning', 'econ-2026-hl-q11-c-ii-agree',
+  'econ-2026-hl-q11-c-ii-disagree', 'econ-2026-hl-q11-c-iii', 'econ-2026-hl-q12-a-i-exports',
+  'econ-2026-hl-q12-a-i-imports', 'econ-2026-hl-q12-a-ii-benefit',
+  'econ-2026-hl-q12-a-ii-challenge', 'econ-2026-hl-q12-a-iii', 'econ-2026-hl-q12-b-i',
+  'econ-2026-hl-q12-b-ii', 'econ-2026-hl-q12-b-iii', 'econ-2026-hl-q12-c-i',
+  'econ-2026-hl-q12-c-i-influence', 'econ-2026-hl-q12-c-ii-option-a',
+  'econ-2026-hl-q12-c-ii-option-b', 'econ-2026-hl-q12-c-iii', 'econ-2026-hl-q13-a-i',
+  'econ-2026-hl-q13-a-ii', 'econ-2026-hl-q13-b-i', 'econ-2026-hl-q13-b-ii',
+  'econ-2026-hl-q13-b-iii', 'econ-2026-hl-q13-c-i', 'econ-2026-hl-q13-c-ii',
+  'econ-2026-hl-q13-c-iii-agree', 'econ-2026-hl-q13-c-iii-disagree', 'econ-2026-hl-q14-a-i',
+  'econ-2026-hl-q14-a-ii', 'econ-2026-hl-q14-a-iii', 'econ-2026-hl-q14-b-i',
+  'econ-2026-hl-q14-b-ii', 'econ-2026-hl-q14-b-iii-agree', 'econ-2026-hl-q14-b-iii-disagree',
+  'econ-2026-hl-q14-c-i', 'econ-2026-hl-q14-c-ii', 'econ-2026-hl-q14-c-iii',
+  'econ-2026-hl-q15-a-i', 'econ-2026-hl-q15-a-ii', 'econ-2026-hl-q15-a-iii',
+  'econ-2026-hl-q15-b-i', 'econ-2026-hl-q15-b-ii', 'econ-2026-hl-q15-b-iii-agree',
+  'econ-2026-hl-q15-b-iii-disagree', 'econ-2026-hl-q15-c-i', 'econ-2026-hl-q15-c-ii',
+  'econ-2026-hl-q15-c-iii-narrow', 'econ-2026-hl-q15-c-iii-widen', 'econ-2026-hl-q16-a-i',
+  'econ-2026-hl-q16-a-ii', 'econ-2026-hl-q16-a-iii', 'econ-2026-hl-q16-b-i',
+  'econ-2026-hl-q16-b-ii', 'econ-2026-hl-q16-b-iii', 'econ-2026-hl-q16-c-i',
+  'econ-2026-hl-q16-c-ii', 'econ-2026-hl-q16-c-iii', 'econ-2026-hl-sa-q1-a',
+  'econ-2026-hl-sa-q1-b', 'econ-2026-hl-sa-q10-a', 'econ-2026-hl-sa-q10-b',
+  'econ-2026-hl-sa-q2-a-events', 'econ-2026-hl-sa-q2-a-streaming', 'econ-2026-hl-sa-q2-b',
+  'econ-2026-hl-sa-q2-c', 'econ-2026-hl-sa-q3-a-agree', 'econ-2026-hl-sa-q3-a-disagree',
+  'econ-2026-hl-sa-q3-b', 'econ-2026-hl-sa-q3-c', 'econ-2026-hl-sa-q4-a',
+  'econ-2026-hl-sa-q4-b', 'econ-2026-hl-sa-q4-c', 'econ-2026-hl-sa-q5-a-irrational',
+  'econ-2026-hl-sa-q5-a-rational', 'econ-2026-hl-sa-q5-b', 'econ-2026-hl-sa-q6-a',
+  'econ-2026-hl-sa-q6-b', 'econ-2026-hl-sa-q7-a-subsidy', 'econ-2026-hl-sa-q7-a-tax',
+  'econ-2026-hl-sa-q7-b-no', 'econ-2026-hl-sa-q7-b-yes', 'econ-2026-hl-sa-q8-a',
+  'econ-2026-hl-sa-q8-b', 'econ-2026-hl-sa-q9-a', 'econ-2026-hl-sa-q9-b',
+  // 2026 Ordinary: 74
+  'econ-2026-ol-q11-a-i', 'econ-2026-ol-q11-a-ii', 'econ-2026-ol-q11-b-i',
+  'econ-2026-ol-q11-b-ii', 'econ-2026-ol-q11-b-iii', 'econ-2026-ol-q11-c-i',
+  'econ-2026-ol-q11-c-ii-agree', 'econ-2026-ol-q11-c-ii-disagree', 'econ-2026-ol-q12-a-i',
+  'econ-2026-ol-q12-a-ii', 'econ-2026-ol-q12-b-i', 'econ-2026-ol-q12-b-ii',
+  'econ-2026-ol-q12-c-i', 'econ-2026-ol-q12-c-ii', 'econ-2026-ol-q12-c-iii',
+  'econ-2026-ol-q13-a-i', 'econ-2026-ol-q13-a-ii', 'econ-2026-ol-q13-a-ii-negative',
+  'econ-2026-ol-q13-a-ii-positive', 'econ-2026-ol-q13-a-iii', 'econ-2026-ol-q13-b-i-economy',
+  'econ-2026-ol-q13-b-i-households', 'econ-2026-ol-q13-b-ii', 'econ-2026-ol-q13-b-iii-agree',
+  'econ-2026-ol-q13-b-iii-disagree', 'econ-2026-ol-q13-c-i', 'econ-2026-ol-q13-c-ii',
+  'econ-2026-ol-q14-a-i', 'econ-2026-ol-q14-a-ii-no', 'econ-2026-ol-q14-a-ii-yes',
+  'econ-2026-ol-q14-b-i-employee', 'econ-2026-ol-q14-b-i-employer', 'econ-2026-ol-q14-b-ii',
+  'econ-2026-ol-q14-b-iii', 'econ-2026-ol-q14-c-i', 'econ-2026-ol-q14-c-ii',
+  'econ-2026-ol-q14-c-iii', 'econ-2026-ol-q15-a-i', 'econ-2026-ol-q15-a-ii-agree',
+  'econ-2026-ol-q15-a-ii-disagree', 'econ-2026-ol-q15-b-i', 'econ-2026-ol-q15-b-ii',
+  'econ-2026-ol-q15-b-iii', 'econ-2026-ol-q15-c-i', 'econ-2026-ol-q15-c-ii',
+  'econ-2026-ol-q16-a-i', 'econ-2026-ol-q16-a-ii', 'econ-2026-ol-q16-a-iii',
+  'econ-2026-ol-q16-b-i', 'econ-2026-ol-q16-b-ii', 'econ-2026-ol-q16-b-iii',
+  'econ-2026-ol-q16-c-i', 'econ-2026-ol-q16-c-ii', 'econ-2026-ol-q16-c-iii',
+  'econ-2026-ol-sa-q1-i', 'econ-2026-ol-sa-q1-ii', 'econ-2026-ol-sa-q10-i',
+  'econ-2026-ol-sa-q10-ii', 'econ-2026-ol-sa-q2-a-private', 'econ-2026-ol-sa-q2-a-social',
+  'econ-2026-ol-sa-q2-b-government', 'econ-2026-ol-sa-q2-b-retailers',
+  'econ-2026-ol-sa-q3-a', 'econ-2026-ol-sa-q3-b', 'econ-2026-ol-sa-q4-a',
+  'econ-2026-ol-sa-q4-b-advantage', 'econ-2026-ol-sa-q4-b-disadvantage',
+  'econ-2026-ol-sa-q5-advantage', 'econ-2026-ol-sa-q5-disadvantage', 'econ-2026-ol-sa-q6',
+  'econ-2026-ol-sa-q7', 'econ-2026-ol-sa-q8-agree', 'econ-2026-ol-sa-q8-disagree',
+  'econ-2026-ol-sa-q9',
+]);
+const economicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('econ-'));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
+  if (name.startsWith('economics:')) {
+    const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
+    return [
+      ...ids.filter(id => !economicsAdditionIds.has(id)),
+      ...economicsAliasIds.filter(id => id.includes(level)),
+    ];
+  }
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
   if (!name.startsWith('physical-education:')) return ids;
   const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
   return [...ids.filter(id => peFrozen.has(id)), ...peAliasIds.filter(id => id.includes(level))];
 };
+const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
+  name.startsWith('economics:') ? cards.filter(card => !economicsAdditionIds.has(card.id)).length : cards.length;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
   ordinary: [PE_ORDINARY, 294, '097f2e5140a024bf28633d1aa17898f041acbdb6ab658a5afd65eb8ba5681ac2'],
@@ -873,12 +979,19 @@ describe('Mark Bank card preservation', () => {
     // Business and French keep their original card sets frozen (checked per
     // deck above); their reviewed additions are counted on top of the bank.
     // Business: 2010-2026 source-reviewed additions (2026-10-14), 1,382.
+    // Economics keeps its 697 pre-review IDs frozen the same way; its frozen
+    // form is its live cards less its reviewed additions plus its
+    // consolidated halves, each now an alias key.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
-    expect(decks.reduce((total, [name, cards]) => total + cards.length - businessAdded(name, cards), 0))
-      .toBe(22_970 + frenchAdditionIds.size);
+    const economicsFrozenDelta = (name: string, cards: readonly { id: string }[]) =>
+      name.startsWith('economics:') ? frozenIds(name, cards).length - cards.length : 0;
+    expect(decks.reduce((total, [name, cards]) => (
+      total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
+    ), 0)).toBe(22_970 + frenchAdditionIds.size);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(22_970 + frenchAdditionIds.size + businessAdditionIds.size);
+      .toBe(22_970 + frenchAdditionIds.size + businessAdditionIds.size
+        + economicsAdditionIds.size - economicsAliasIds.length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -916,9 +1029,74 @@ describe('Mark Bank card preservation', () => {
     }
   });
 
+  it('adds the reviewed Economics routes on top of the frozen 697 and resolves every withdrawn ID', () => {
+    const higher = new Map(ECON_HIGHER.map(card => [card.id, card]));
+    const ordinary = new Map(ECON_ORDINARY.map(card => [card.id, card]));
+    expect(economicsAdditionIds.size).toBe(192);
+    expect(economicsAliasIds).toHaveLength(36);
+    for (const id of economicsAdditionIds) {
+      const deck = id.includes('-hl-') ? higher : ordinary;
+      expect(deck.has(id), `${id}: addition missing from its level`).toBe(true);
+      expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
+    }
+    for (const oldId of economicsAliasIds) {
+      const canonical = CARD_ID_ALIASES[oldId];
+      const deck = oldId.includes('-hl-') ? higher : ordinary;
+      expect(higher.has(oldId) || ordinary.has(oldId), `${oldId} should be withdrawn`).toBe(false);
+      expect(deck.has(canonical), `${oldId} -> ${canonical} must be live at the same level`).toBe(true);
+      expect(canonical in CARD_ID_ALIASES, `${oldId} must resolve in one step`).toBe(false);
+      expect(canonical.slice(0, 12), `${oldId} must stay in its year and level`).toBe(oldId.slice(0, 12));
+    }
+    const additions = (level: string) => [...economicsAdditionIds].filter(id => id.includes(level)).length;
+    const aliased = (level: string) => economicsAliasIds.filter(id => id.includes(level)).length;
+    expect([additions('-hl-'), aliased('-hl-'), additions('-ol-'), aliased('-ol-')]).toEqual([110, 24, 82, 12]);
+    expect(ECON_HIGHER).toHaveLength(383 - aliased('-hl-') + additions('-hl-'));
+    expect(ECON_ORDINARY).toHaveLength(314 - aliased('-ol-') + additions('-ol-'));
+  });
+
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(54);
+    /* 54 aliases on main + 36 Economics consolidations from the 2021-2025
+     * physical review, each a frozen half of a jointly priced answer (or a
+     * duplicate route) withdrawn onto the card that now carries its progress:
+   *   econ-2021-hl-q12-a-ii-neg -> q12-a-ii-pos
+   *   econ-2021-hl-q16-b-ii-economic -> q16-b-ii-social
+   *   econ-2022-hl-sa-q6-a-i -> sa-q6-a-b
+   *   econ-2022-hl-sa-q6-a-ii -> sa-q6-a-b
+   *   econ-2022-hl-q11-c-iii-against -> q11-c-iii-for
+   *   econ-2022-ol-q12-a-ii -> q12-a-i
+   *   econ-2022-ol-sa-q3-ii -> sa-q3-i
+   *   econ-2022-ol-sa-q8-ii -> sa-q8-i
+   *   econ-2022-ol-q14-b-ii-water -> q14-b-i
+   *   econ-2023-hl-sa-q2-c-dis -> sa-q2-c-adv
+   *   econ-2023-hl-q11-a-iii-pos -> q11-a-iii-neg
+   *   econ-2023-hl-q12-b-iii-dis -> q12-b-iii-adv
+   *   econ-2023-hl-q16-c-i-against -> q16-c-i-for
+   *   econ-2023-ol-sa-q10-social -> sa-q10-private
+   *   econ-2023-ol-q14-a-ii-effect -> q14-a-ii-reason
+   *   econ-2024-hl-sa-q6-b-up -> sa-q6-b-down
+   *   econ-2024-hl-sa-q9-a-benefit -> sa-q9-a-cost
+   *   econ-2024-hl-q13-b-iii-neg -> q13-b-iii-pos
+   *   econ-2024-hl-q13-c-iii-neg -> q13-c-iii-pos
+   *   econ-2024-hl-q14-c-i-debt -> q14-c-i-spending
+   *   econ-2024-hl-q15-c-ii-social -> q15-c-ii-economic
+   *   econ-2024-hl-q16-c-ii-benefit -> q16-c-ii-cost
+   *   econ-2024-hl-q16-c-iii-disadvantage -> q16-c-iii-advantage
+   *   econ-2025-hl-sa-q1-a-against -> sa-q1-a-for
+   *   econ-2025-hl-sa-q4-a-bad -> sa-q4-a-good
+   *   econ-2025-hl-sa-q4-b-cons -> sa-q4-b-gov
+   *   econ-2025-hl-q11-b-iii-dis -> q11-b-iii-adv
+   *   econ-2025-hl-q12-a-ii-gov -> q12-a-ii-tax
+   *   econ-2025-hl-q12-c-i-employer -> q12-c-i-employee
+   *   econ-2025-hl-q13-a-ii-challenge -> q13-a-ii-benefit
+   *   econ-2025-ol-sa-q6-social -> sa-q6-private
+   *   econ-2025-ol-sa-q8-ii -> seca-q8-i-ticks
+   *   econ-2025-ol-q16-b-i-ind -> q16-b-i-ag
+   *   econ-2024-ol-sa-q1-ii -> sa-q1-i
+   *   econ-2024-ol-sa-q8-ii -> sa-q8-i
+   *   econ-2024-ol-q16-b-ii-dis -> q16-b-ii-adv
+     */
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(90);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -963,7 +1141,10 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:')
         && !name.startsWith('politics-and-society:') && !name.startsWith('accounting:'))
-      .reduce((total, [name, cards]) => total + (name.startsWith('business:') ? frozenIds(name, cards).length : cards.length), 0);
+      // Business counts its frozen set; Economics its live frozen cards, its
+      // withdrawn halves counted once, as the alias keys below.
+      .reduce((total, [name, cards]) => total + (name.startsWith('business:')
+        ? frozenIds(name, cards).length : liveFrozenCount(name, cards)), 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
 

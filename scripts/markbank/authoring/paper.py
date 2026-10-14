@@ -149,6 +149,13 @@ MISPRINTS = {
     ('biology', 2023, 'hl'): [
         ('16. (i) Draw a large diagram', lambda t: '(b) ' + t[4:]),
     ],
+    # 2026 OL Economics page 8 sets Question 8's head in the same block as the
+    # last cell of Question 7's answer table ("Explanation 2", where 2 is the
+    # completed example), so the head is glued behind a bare number and never
+    # read. The cell is the paper's worked example, not an ask; drop it.
+    ('economics', 2026, 'ol'): [
+        ('Explanation 2 Question 8', lambda t: t[len('Explanation 2 '):]),
+    ],
 }
 # Chemistry prints 'Leaving Certificate Examination, 2021' (comma), Physics
 # 'Leaving Certificate, 2021' — the strict form let footers leak into leaf

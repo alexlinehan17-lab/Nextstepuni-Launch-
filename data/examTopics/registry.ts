@@ -337,6 +337,8 @@ interface EconomicsRuntime {
   partReferences: Array<[number, number, 'm' | 'd' | 's', string, string]>;
   /** [h/o, e/i, year, local card number, topic indexes] */
   questionMappings: Array<['h' | 'o', 'e' | 'i', number, string, number[]]>;
+  /** Official-paper corrections take precedence over the retained reference snapshot. */
+  secReviewedQuestionMappings: Array<['h' | 'o', 'e' | 'i', number, string, string, number[]]>;
 }
 
 interface ArtRuntime {
@@ -3397,6 +3399,7 @@ const TAXONOMIES = new Map<string, ExamTopicTaxonomy>([
 const TOPICS_BY_ID = new Map<string, ExamTopicDefinition>();
 const QUESTION_TOPICS = new Map<string, string[]>();
 const FILE_QUESTION_TOPICS = new Map<string, string[]>();
+const SEC_REVIEWED_QUESTION_TOPICS = new Map<string, { fileid: string; topicIds: string[] }>();
 
 // Geography and Physical Education already expose their replacement-course
 // menus, but the local SEC archive currently ends before those courses' first
@@ -3705,6 +3708,14 @@ for (const [levelCode, langCode, year, n, topicIndexes] of economicsRuntime.ques
       if (!topicId) throw new Error(`Unknown Economics runtime topic index: ${topicIndex}`);
       return topicId;
     }),
+  );
+}
+
+for (const [levelCode, langCode, year, fileid, n, indexes] of economicsRuntime.secReviewedQuestionMappings) {
+  SEC_REVIEWED_QUESTION_TOPICS.set(
+    questionKey('economics', levelCode === 'h' ? 'higher' : 'ordinary', year,
+      'main', n, 'single', langCode === 'e' ? 'ev' : 'iv'),
+    { fileid, topicIds: indexes.map(index => economicsRuntime.topics[index][0]) },
   );
 }
 
@@ -4590,6 +4601,16 @@ export function examTopicIdsForQuestion(
   lang?: PaperLang,
   fileid?: string,
 ): string[] {
+  // Do not merge a corrected SEC classification with the erroneous shared
+  // heading that it replaces. The source snapshot remains available for audit.
+  if (lang) {
+    const reviewed = SEC_REVIEWED_QUESTION_TOPICS.get(
+      questionKey(subjectId, level, year, sitting, n, paperKey, lang),
+    );
+    if (reviewed && (!fileid || fileid.replace(/\.pdf$/i, '') === reviewed.fileid.replace(/\.pdf$/i, ''))) {
+      return [...reviewed.topicIds];
+    }
+  }
   if (fileid) {
     const fileShared = FILE_QUESTION_TOPICS.get(fileQuestionKey(
       subjectId,

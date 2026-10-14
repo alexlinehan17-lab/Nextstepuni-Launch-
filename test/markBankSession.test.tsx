@@ -27,6 +27,8 @@ import SessionScreen, {
 import { tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
 import { CARDS as ART_HIGHER } from '@/components/MarkBank/cards/art/higher';
 import { CARDS as IRISH_HIGHER } from '@/components/MarkBank/cards/irish/higher';
+import { CARDS as ECONOMICS_HIGHER } from '@/components/MarkBank/cards/economics/higher';
+import { CARDS as ECONOMICS_ORDINARY } from '@/components/MarkBank/cards/economics/ordinary';
 
 vi.mock('@/components/PaperTrail/vaultDocs', () => ({
   // Source-reader interaction is independent of PDF rasterisation. Keep the
@@ -280,6 +282,95 @@ describe('the question comes first and stays', () => {
     fireEvent.keyDown(screen.getByRole('dialog'), { key: 'Escape' });
     expect(screen.queryByRole('dialog', { name: /The Underdog Effect/i })).not.toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Reveal the marking scheme/i })).toBeInTheDocument();
+  });
+
+  test('opens the Economics demand graph before reveal while keeping the worked calculation hidden', () => {
+    const economicsCard = ECONOMICS_HIGHER.find(item => item.id === 'econ-2022-hl-sa-q1-a')!;
+    renderSession([economicsCard]);
+    expect(economicsCard.kind).toBe('question');
+    if (economicsCard.kind !== 'question' || !economicsCard.figure) throw new Error('Missing solution figure');
+    expect(economicsCard.figure.solution).toBe(true);
+    expect(screen.queryByAltText(economicsCard.figure.alt)).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Read ENGLISH QUESTION PAGE/i }));
+    expect(screen.getByRole('dialog', { name: 'English question 1' })).toBeInTheDocument();
+    // The reader labels every page by its PDF page number (main, #232).
+    expect(screen.getByText('PDF page 3')).toBeInTheDocument();
+    fireEvent.keyDown(screen.getByRole('dialog'), { key: 'Escape' });
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Reveal the marking scheme/i })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByAltText(economicsCard.figure.alt)).toBeInTheDocument();
+  });
+
+  test('closes the source reader with Escape after the last-page control loses focus', () => {
+    const economicsCard = ECONOMICS_HIGHER.find(item => item.id === 'econ-2022-hl-sa-q6-a-b')!;
+    renderSession([economicsCard]);
+    fireEvent.click(screen.getByRole('button', { name: /Read IRISH QUESTION PAGE/i }));
+    const next = screen.getByRole('button', { name: 'Next source page' });
+    next.focus();
+    fireEvent.click(next);
+    expect(next).toBeDisabled();
+    expect(screen.getByLabelText('Page 2 of 2')).toBeInTheDocument();
+    // Chrome blurs a focused navigation control when it becomes disabled.
+    next.blur();
+    fireEvent.keyDown(document.body, { key: 'Escape' });
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    expect(document.body.style.overflow).not.toBe('hidden');
+  });
+
+  test.each(['econ-2022-hl-q12-b-ii', 'econ-2022-hl-q15-a-iii', 'econ-2022-hl-q16-c-i'])(
+    'reveals the completed Economics diagram only with the answer: %s', id => {
+      const card = ECONOMICS_HIGHER.find(item => item.id === id)!;
+      if (card.kind !== 'question' || !card.figure) throw new Error('Missing solution diagram');
+      renderSession([card]);
+      expect(screen.queryByAltText(card.figure.alt)).not.toBeInTheDocument();
+      if (card.questionFigure) expect(screen.getByAltText(card.questionFigure.alt)).toBeInTheDocument();
+      fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+      expect(screen.getByAltText(card.figure.alt)).toBeInTheDocument();
+    },
+  );
+
+  test('assesses the FDI response as a whole without asking for every example', () => {
+    const economicsCard = ECONOMICS_HIGHER.find(item => item.id === 'econ-2022-hl-sa-q4-c')!;
+    renderSession([economicsCard]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText('Check your complete response.')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Select all/ })).not.toBeInTheDocument();
+    expect(screen.getByText(/Give two reasons.*not three compulsory points/)).toBeInTheDocument();
+  });
+
+  test('assesses a definition and example together at the confirmed eight-mark boundary', () => {
+    const economicsCard = ECONOMICS_ORDINARY.find(item => item.id === 'econ-2022-ol-q16-c-ii')!;
+    renderSession([economicsCard]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText('Check your complete response.')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Select all/ })).not.toBeInTheDocument();
+    expect(screen.getByText(/Explain the hidden economy and give one example other than/)).toBeInTheDocument();
+    expect(screen.getByText(/Assess your complete answer against the 8-mark total/)).toBeInTheDocument();
+  });
+
+  test('keeps a multi-row complete route under one published total', () => {
+    const economicsCard = ECONOMICS_HIGHER.find(item => item.id === 'econ-2022-hl-sa-q6-a-b')!;
+    renderSession([economicsCard]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText('Check your complete response.')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Select all/ })).not.toBeInTheDocument();
+    expect(screen.getByText(/Explain the market diagram: supernormal profit attracts entry/)).toBeInTheDocument();
+    expect(screen.getByText(/Answer \(b\) as well as both diagrams and their explanations/)).toBeInTheDocument();
+    expect(screen.getByText(/Assess your complete answer against the 15-mark total/)).toBeInTheDocument();
+  });
+
+  test('opens the Irish edition and reveals its distinct labels only with the answer', () => {
+    const economicsCard = ECONOMICS_ORDINARY.find(item => item.id === 'econ-2022-ol-sa-q2-i')!;
+    renderSession([economicsCard]);
+    expect(screen.queryByText(/Príomhoifig Staidrimh/)).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Read IRISH QUESTION PAGE/ }));
+    expect(screen.getByRole('dialog', { name: /Irish question 2/ })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Open the original illustration sheet/ }))
+      .toHaveAttribute('href', expect.stringContaining('LC034GLP000IV.pdf'));
+    fireEvent.keyDown(document.body, { key: 'Escape' });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText(/POS stands for Príomhoifig Staidrimh/)).toBeInTheDocument();
   });
 
   test('opens Art imagery from the companion booklet, not the question paper', () => {

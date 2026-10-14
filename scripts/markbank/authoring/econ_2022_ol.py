@@ -1,586 +1,606 @@
 #!/usr/bin/env python3
-"""Economics 2022 Ordinary Level — Section B.
+"""Economics 2022 Ordinary Level, Sections A and B.
 
-Authored against econ_parts; see econ_2021_hl.py for what `drop` is for.
+Re-authored from the independent census in drafts/economics-2022-ol-ev.json,
+made from a visual sweep of all 32 paper pages and 36 scheme pages. Every card
+ID the earlier extractors shipped is kept (student progress follows the ID).
+The census differs from the earlier one in three places: Q3, Q8 and Q14(b) each
+print one "1st x n, 2nd x m" tariff across two printed parts, so each is one
+task with unpriced rows (as 2023 OL Q9 and 2024 OL Q1 already are), and the
+second-part cards resolve by alias. The 2022 Ordinary Irish review mirrors those
+route changes only.
+
+Question wording and stems are sliced from the question paper; every marking
+point is sliced from the scheme (econ_2026_lib.py). Ordinary Level sets its
+responses as a bullet list, so menus are split at the bullets; the lists the
+scheme sets as headed paragraphs are split where each heading begins. The only
+prose written here is guidance: tariffs, route labels and what a figure or a
+calculation shows. The Irish label notes the earlier review placed on three
+English asks and on Q2(i) are kept as they were. Scheme PDF page = printed + 1.
 """
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from econ_auto import Paper  # noqa: E402
-from econ_lib import anyN, as_option, block, bullets, card, load, point, tidy  # noqa: E402
+from econ_2026_lib import Deck, Sheet, show_before_reveal  # noqa: E402
+from econ_lib import anyN, as_option, bullets, defurnish, emit, heads, point  # noqa: E402
 
-P = Paper(2022, 'ordinary')
-SCAFFOLD = ('Possible responses', 'Suggested responses', 'Minimum Unit Price for A')
-
-P.menu('advantages for consumers of many firms providing streaming', 'econ-2022-ol-q11-a-ii',
-       'economics-2-0', 'advantages-of-many-firms-for-consumers',
-       'Outline two advantages for consumers of many firms providing streaming services in this '
-       'market.',
-       'An advantage to consumers — any two',
-       'Two advantages, the first paid 8 and the second 4.',
-       claim=2, per=8, steps=[8, 4], drop=SCAFFOLD,
-       stem='Set on a chart of US streaming services by number of users — YouTube highest, '
-            'Vimeo lowest.')
-
-P.menu('Firms who may wish to enter a monopoly industry face barriers', 'econ-2022-ol-q11-c-ii',
-       'economics-2-0', 'barriers-to-entry',
-       'Firms who may wish to enter a monopoly industry face barriers to entry. Outline two '
-       'possible barriers to entry.',
-       'A barrier to entry — any two',
-       'Two barriers, 4 marks each.',
-       drop=SCAFFOLD)
-
-P.menu('two ways that a business could be more sustainable', 'econ-2022-ol-q12-c-ii',
-       'economics-0-2', 'ways-a-business-can-be-sustainable',
-       'Suggest two ways that a business could be more sustainable.',
-       'A way to be more sustainable — any two',
-       'Two ways, 7 marks each.',
-       drop=SCAFFOLD)
-
-P.menu('features/characteristics of a less developed nation', 'econ-2022-ol-q13-a-i',
-       'economics-4-0', 'features-of-a-less-developed-nation',
-       'Outline two features/characteristics of a less developed nation.',
-       'A feature of a less developed nation — any two',
-       'Two features, 8 marks each.',
-       drop=SCAFFOLD)
-
-P.menu('reasons why the Irish government gives aid', 'econ-2022-ol-q13-a-ii',
-       'economics-4-0', 'why-ireland-gives-aid',
-       'Outline two reasons why the Irish government gives aid to less developed nations.',
-       'A reason Ireland gives aid — any two',
-       'Two reasons, 4 marks each.',
-       drop=SCAFFOLD)
-
-P.menu('reasons why TikTok would locate in Ireland', 'econ-2022-ol-q14-a-ii',
-       'economics-4-1', 'why-mncs-locate-in-ireland-ol',
-       'Outline two reasons why TikTok would locate in Ireland.',
-       'A reason an MNC locates in Ireland — any two',
-       'Two reasons, 4 marks each.',
-       drop=SCAFFOLD)
-
-P.menu('economic benefits to the local community of a Multi-National', 'econ-2022-ol-q14-a-iii',
-       'economics-4-1', 'local-benefits-of-an-mnc',
-       'Describe two possible economic benefits to the local community of a Multi-National '
-       'Company locating there.',
-       'A benefit to the local community — any two',
-       'Two benefits, 4 marks each.',
-       drop=SCAFFOLD)
-
-P.menu('benefits to the Irish economy of exporting', 'econ-2022-ol-q14-b-ii',
-       'economics-4-2', 'benefits-of-exporting',
-       'Outline two benefits to the Irish economy of exporting to other countries.',
-       'A benefit of exporting — any two',
-       'Two benefits, 8 marks each.',
-       drop=SCAFFOLD, cap=5)
-
-P.menu('reasons why the government introduced minimum pricing', 'econ-2022-ol-q15-a-i',
-       'economics-1-3', 'minimum-pricing-on-alcohol',
-       'Outline two reasons why the government introduced minimum pricing on alcohol.',
-       'A reason for minimum pricing — any two',
-       'Two reasons, 6 marks each.',
-       drop=SCAFFOLD)
-
-P.menu('one social benefit and one private benefit of the government increasing the tax on cigaret',
-       'econ-2022-ol-q15-a-iii-social', 'economics-2-2', 'social-benefits-of-cigarette-tax',
-       'Outline one social benefit of the government increasing the tax on cigarettes.',
-       'A social benefit — any one',
-       'One social benefit, 4 marks; the paper pays a private benefit at 4 as well.',
-       ref='2022 OL Q15(a)(iii) — social benefit',
-       claim=1, per=4, drop=SCAFFOLD, stop='Private Benefits',
-       notes='The scheme heads the social benefits and the private benefits separately, and the '
-             'question wants one of each, so each side is its own card.')
-
-P.menu('one social benefit and one private benefit of the government increasing the tax on cigaret',
-       'econ-2022-ol-q15-a-iii-private', 'economics-2-2', 'private-benefits-of-cigarette-tax',
-       'Outline one private benefit of the government increasing the tax on cigarettes.',
-       'A private benefit — any one',
-       'One private benefit, 4 marks.',
-       ref='2022 OL Q15(a)(iii) — private benefit',
-       claim=1, per=4,
-       drop=SCAFFOLD + ('Greater productivity', 'Reduction in cancer', 'Reduced pressure on hosp',
-                        'Population healthier', 'Improved environment', 'Private Benefits'))
-
-# The id counts the wrong part: the paper prints this question at Q16(b)(ii) —
-# (a)(ii) is the smoking-measures question, carded below as
-# econ-2022-ol-q16-a-ii-smoking. The id is left alone (review history is keyed
-# on it) and the citation is corrected here, the same call econ_refs.py makes
-# for the nineteen cards whose id counts the wrong question.
-P.menu('economic effects which this rate of price inflation may have', 'econ-2022-ol-q16-a-ii',
-       'economics-3-3', 'effects-of-inflation-on-citizens',
-       'Discuss two economic effects which this rate of price inflation may have on Irish '
-       'citizens.',
-       'An effect on citizens — any two',
-       'Two effects, 8 marks each.',
-       ref='2022 OL Q16(b)(ii)', drop=SCAFFOLD)
-
-P.menu('governments can intervene in the market', 'econ-2022-ol-q11-c-iii',
-       'economics-1-3', 'government-intervention-dominant-firm',
-       'Suggest one way governments can intervene in the market if one firm becomes too dominant.',
-       'A way government can intervene — either one',
-       'One way, 4 marks. The scheme names two: regulate the firm, or legislate against the '
-       'behaviour.',
-       claim=1, per=4, drop=SCAFFOLD)
+O = Sheet(2022, 'ordinary', 'LC034GLP000EV')
+D = Deck(2022, 'ordinary')
+cards, add, pick, heading, ref = D.cards, D.add, D.pick, D.heading, D.ref
+A = dict(section='A')
+SOL = 'economics-2022-OL-scheme-'
+PAP = 'economics-2022-OL-paper-'
 
 
-# ── A figure card ───────────────────────────────────────────────────────────
-P.cards.append(card(
-    'econ-2022-ol-q11-b-i', 2022, 'ordinary', 'economics-2-0', 'labelling-a-monopoly-diagram',
-    '2022 OL Q11(b)(i)',
-    'The diagram shows a firm operating under conditions of monopoly. Write out in full what '
-    'each of the three numbered items represents.',
-    'fixed', 21,
-    [point('r-1', 'Price', 7, 'Item 1 — the vertical axis.'),
-     point('r-2', 'Marginal Cost', 7, 'Item 2 — the U-shaped curve rising to the right, above AC.'),
-     point('r-3', 'Marginal Revenue', 7, 'Item 3 — the steeper of the two downward-sloping lines. '
-                                         'AC and AR are already labelled on the diagram.')],
-    'Abbreviations are not accepted.', tariff_kind='fixed',
-    figure_key='economics-2022-OL-paper-p11-i0',
-    label_key=[{'letter': '1', 'meaning': 'Price', 'askedInThisQuestion': True},
-               {'letter': '2', 'meaning': 'Marginal Cost', 'askedInThisQuestion': True},
-               {'letter': '3', 'meaning': 'Marginal Revenue', 'askedInThisQuestion': True},
-               {'letter': 'AC', 'meaning': 'Average Cost', 'askedInThisQuestion': False},
-               {'letter': 'AR', 'meaning': 'Average Revenue', 'askedInThisQuestion': False}]))
+def bl(start, end, occ=None):
+    """The scheme's bullet-listed responses between two anchors."""
+    return bullets(O.chunk(start, end, occ))
 
 
-# ── Section B, second pass ──────────────────────────────────────────────────
-# The plain id 'econ-2022-ol-q13-a-ii' is taken by a card citing 2022 OL
-# Q14(c)(ii) — one of the nineteen whose id counts the wrong question, left
-# alone because review history is keyed on it. See econ_refs.py.
-P.menu('Explain current OR capital government expenditure', 'econ-2022-ol-q13-a-ii-expenditure',
-       'economics-3-1', 'current-versus-capital-spending',
-       'Explain current OR capital government expenditure, using a relevant example to support '
-       'your answer.',
-       'One of the two kinds of spending — either one',
-       'One explanation with an example, 9 marks. Capital spending buys something that lasts; '
-       'current spending is the day-to-day bill.',
-       ref='2022 OL Q13(a)(ii)', claim=1, per=9,
-       drop=SCAFFOLD + ('support your answer. Tick',))
+def at(start, end, firsts, occ=None):
+    """Responses printed as headed paragraphs, split where each one begins."""
+    return [as_option(o) for o in heads(O.chunk(start, end, occ), firsts)]
 
-P.menu('reason for the increase in consumer spending', 'econ-2022-ol-q13-c-i',
-       'economics-1-1', 'why-consumer-spending-rose',
-       'Outline one possible reason for the increase in consumer spending in Ireland in 2023.',
-       'A reason spending rose — any one', 'One reason, 10 marks.',
-       ref='2022 OL Q13(c)(i)', claim=1, per=10, drop=SCAFFOLD)
 
-P.menu('economic argument in favour of the reintroduction of water charges',
-       'econ-2022-ol-q14-b-i', 'economics-1-3', 'the-case-for-water-charges',
-       'Outline one economic argument in favour of the reintroduction of water charges.',
-       'An argument for water charges — any one', 'One argument, 7 marks.',
-       ref='2022 OL Q14(b)(i)', claim=1, per=7, drop=SCAFFOLD)
+def line(start):
+    """One whole line of the scheme file that opens with `start` (the recovered
+    table cells keep a cell on one line where the primary extraction splits it)."""
+    hits = [ln.strip() for ln in O.full_md.splitlines() if ln.strip().startswith(start)]
+    if not hits:
+        raise ValueError(f'no scheme line opens with {start!r}')
+    return defurnish(hits[0])
 
-P.menu('benefits of the government collecting corporation tax', 'econ-2022-ol-q15-a-ii',
-       'economics-3-1', 'what-corporation-tax-pays-for',
-       'Explain the benefits of the government collecting corporation tax.',
-       'A benefit of the revenue — any one', 'One benefit, 9 marks.',
-       ref='2022 OL Q15(a)(ii)', claim=1, per=9, drop=SCAFFOLD)
 
-# 2022 OL Q16(b)(ii), the inflation effects, is carded above as
-# econ-2022-ol-q16-a-ii — the id counts the wrong part and the citation is
-# corrected on the call. Duplicate TEXT is the check that stops it being carded
-# twice — a duplicate id would not have caught it, the ids differ.
+def paras(options):
+    """A list of the scheme's examples printed as one marking point."""
+    return '\n\n'.join(options)
 
-# ── Section B, third pass ──────────────────────────────────────────────────
-P.menu('consumers behaving rationally', 'econ-2022-ol-q13-c-ii',
-       'economics-1-1', 'what-a-rational-consumer-does',
-       'Explain the concept of consumers behaving rationally, using an example to support '
-       'your answer.',
-       'The explanation and an example — both of these',
-       'Explanation 6 and example 4.',
-       ref='2022 OL Q13(c)(ii)', claim=2, per=6, steps=[6, 4], drop=SCAFFOLD)
 
-P.menu('Explain the term indirect tax giving', 'econ-2022-ol-q16-c-i',
-       'economics-3-1', 'what-an-indirect-tax-is',
-       'Explain the term indirect tax, giving an example other than excise duties.',
-       'The explanation and an example — both of these',
-       'Explanation and example, 8 marks between them.',
-       ref='2022 OL Q16(c)(i)', claim=2, per=4, drop=SCAFFOLD)
+def shared(rid, label, options, note):
+    """A required answer inside a jointly priced response (1st x n, 2nd x m)."""
+    return point(rid, paras(options), None, f'{label}. {note}')
 
-P.menu('Explain the term hidden economy', 'econ-2022-ol-q16-c-ii',
-       'economics-3-1', 'what-the-hidden-economy-is',
-       'Explain the term hidden economy, giving one other example of such an activity.',
-       'The explanation and an example — both of these',
-       'Explanation and example, 8 marks each.',
-       ref='2022 OL Q16(c)(ii)', claim=2, per=8, drop=SCAFFOLD)
 
-P.menu('Have been consistent to the US with no major changes',
-       'econ-2022-ol-q15-c-i', 'economics-4-2', 'reading-irish-export-trends',
-       "Comment on the trends in Ireland's exports to the US and to the UK using the figures "
-       'in the graph.',
-       'The trend on each side — both of these', 'US 6 and UK 6.',
-       ref='2022 OL Q15(c)(i)', claim=2, per=6,
-       drop=SCAFFOLD + ('Exports to the UK',))
+def steps(rid, label, options, first, second, what):
+    """Two responses paid first-then-second (1st x 9, 2nd x 6)."""
+    return anyN(rid, label, None, 2, first, options,
+                f'Two {what}: the first correct one {first} marks and the second {second}.',
+                steps=[first, second])
 
-# ── Section B, fourth pass: the non-menu parts ─────────────────────────────
-# Definitions with one printed answer, and menu parts whose tariff cell the
-# extractor left in a neighbouring segment, so econ_parts cannot see them.
-# Sliced from the scheme directly, the way econ_2023_ol_seca.py builds its Q10.
-BODY = tidy(load(2022, 'ordinary'))
 
-P.cards.append(card(
-    'econ-2022-ol-q11-c-i', 2022, 'ordinary', 'economics-2-0', 'what-a-monopoly-is',
-    '2022 OL Q11(c)(i)',
-    'Explain the term monopoly and give one example of a monopoly that you are familiar with '
-    'in Ireland.',
-    'fixed', 9,
-    [point('r-1', 'A monopoly firm arises when there is only one firm in the industry.', 5,
-           'The explanation, 5 marks.'),
-     point('r-2', 'An example — An Post, Irish Rail, Irish Water, a sole pub in your village.', 4,
-           'Any one example, 4 marks.')],
-    '', tariff_kind='fixed'))
+# ═════════════════════════════════ SECTION A ══════════════════════════════════
 
-P.cards.append(card(
-    'econ-2022-ol-q12-b-i', 2022, 'ordinary', 'economics-1-1', 'what-shifts-demand',
-    '2022 OL Q12(b)(i)',
-    'If a celebrity was featured on a social media platform (TikTok) wearing Gym + Coffee '
-    'clothing how might this effect the demand for Gym + Coffee clothing?',
-    'fixed', 8,
-    [point('r-1', 'This would lead to an increase in the quantity demanded for Gym + Coffee '
-                  'clothing. The celebrity endorsement would make the clothing more attractive '
-                  'to the consumer. Appearing on the social media platform is advertising the '
-                  'clothing and makes it more well-known so the demand for the clothing would '
-                  'increase.', 8, 'The effect and why, 8 marks.')],
-    'Parts (ii) and (iii) mark the shift and the new equilibrium on the printed diagram and '
-    'are not carded.',
-    stem='Set beside a demand-and-supply diagram for Gym + Coffee clothing.',
-    tariff_kind='fixed'))
+# Q1 ─ forecast growth
+q1_stem = O.ask(3, 'The diagram below shows the forecast growth in the Irish economy', ' www.centralbank.ie')
+q1_fig = PAP + 'p03-q1-infographic'
+add('sa-q1-i', '3-5', 'highest-and-lowest-forecast-growth-years', ref(1, '(i)', sa=True),
+    O.ask(3, 'Using the information above, complete the table below.', ' Economic growth:')
+    .removesuffix(' (ii) Explain the term economic growth.'), '9', 9,
+    [point('r-highest', '2022', None, 'Highest: 2022, at 7.1%.'),
+     point('r-lowest', '2020', None,
+           'Lowest: 2020, at −4.9%, a fall in output. The scheme prices the two together as 6 + 3, '
+           'the first correct answer 6 and the second 3.')],
+    kind='questionTotal', stem=q1_stem, figure=q1_fig, **A)
+add('sa-q1-ii', '3-5', 'what-economic-growth-is', ref(1, '(ii)', sa=True),
+    O.ask(3, 'Explain the term economic growth.', ' Economic growth:'), '6', 6,
+    [point('r-1', O.run('It is the increase in GNP / output', '2. In April 2022'), 6,
+           'Explain the term, 6 marks; any of the wordings separated by a slash. The chart shows rates '
+           'of change: the negative rate in 2020 is a contraction, a smaller positive rate slower growth.')],
+    stem=q1_stem, figure=q1_fig, **A)
 
-P.cards.append(card(
-    'econ-2022-ol-q12-c-i', 2022, 'ordinary', 'economics-0-2', 'what-sustainability-is',
-    '2022 OL Q12(c)(i)',
-    'Nineteen30 café in Limerick offers its customers a fresh and sustainable approach to '
-    'convenience coffee. Explain the term sustainability.',
-    '1 @ 5', 5,
-    [anyN('r-1', 'The definition — either wording', 5, 1, 5,
-          ['Achieving economic growth without harming society or the environment.',
-           'Meeting the current needs of humanity without compromising the ability of future '
-           'generations to meet their needs.'],
-          'One definition, 5 marks: 3 for the definition and 2 for development.')],
-    ''))
+# Q2 ─ the census
+q2_stem = O.ask(4, 'In April 2022 the CSO conducted a census', ' (i)')
+add('sa-q2-i', '0-0', 'what-the-cso-is', ref(2, '(i)', sa=True),
+    O.ask(4, 'What do the initials CSO stand for?', ' (ii)') + ' (POS in the Irish paper)', '9', 9,
+    [point('r-1', 'Central Statistics Office', 9, 'Write the name out in full, 9 marks.')],
+    stem=q2_stem, **A)
+pick('sa-q2-ii', '0-0', 'what-the-census-is-used-for', ref(2, '(ii)', sa=True),
+     O.ask(4, 'Explain one use the Irish Government would make', ' Question 3'),
+     'A use of the census information — any one',
+     bl('• Helps the government plan future infrastructural', '4 | P a g e'),
+     1, 6, 'One developed use, 6 marks.', stem=q2_stem, **A)
 
-P.cards.append(card(
-    'econ-2022-ol-q13-b-i', 2022, 'ordinary', 'economics-3-0', 'the-national-income-formula',
-    '2022 OL Q13(b)(i)',
-    'National Income is calculated using the formula: National Income = Consumption + I + '
-    'Government Spending + X – M. State what each of the letters I, X and M stand for.',
-    'fixed', 12,
-    [point('r-1', 'I: Investment X: Exports M: Imports', 12,
-           'All three letters. The scheme prints 12 for the part with no per-letter split, so '
-           'the three answers are held as one point.')],
-    '', tariff_kind='fixed'))
+# Q3 ─ online shopping
+add('sa-q3-i', '1-1', 'online-shopping-cause-and-retailer-disadvantage', ref(3, sa=True),
+    O.ask(4, 'Outline one possible reason for this development.', ' One reason:') + ' '
+    + O.ask(4, 'Outline one possible disadvantage of this development', ' One disadvantage:'), '15', 15,
+    [shared('r-reason', 'One reason more consumers shopped online',
+            bl('• Lockdowns due to Covid-19:', '(ii) Outline one possible disadvantage'),
+            'Complete BOTH parts. The scheme prices (i) and (ii) together as one 15: the first correct '
+            'answer 9 marks (6 + 3) and the second 6 (3 + 3), with no fixed share for either part.'),
+     shared('r-disadvantage', 'One disadvantage for local retailers',
+            bl('• Reduced sales / profits:', '4. Apple released'),
+            'A disadvantage for local shops.')],
+    kind='questionTotal',
+    stem=O.ask(4, 'During 2020 and 2021 more Irish consumers shopped online.', ' (i)'), **A)
 
-P.cards.append(card(
-    'econ-2022-ol-q13-b-iii', 2022, 'ordinary', 'economics-3-0', 'meaning-of-the-multiplier',
-    '2022 OL Q13(b)(iii)',
-    'The multiplier formula for an open economy is 1 ÷ (MPS + MPM). Assume that MPS is 0.1 '
-    'and MPM is 0.4, giving a multiplier of 2. Explain the economic meaning of the figure you '
-    'have calculated for the multiplier.',
-    '1 @ 6', 6,
-    [anyN('r-1', 'The meaning — either wording', 6, 1, 6,
-          ['For any €1 injected into the economy, national income will double.',
-           'For each euro spent in the economy, National Income will increase by €2.'],
-          'The meaning of the figure, 6 marks.')],
-    'Part (ii), the calculation itself, is the worked arithmetic and is not carded; its '
-    'result is folded into the question so this part stands alone.'))
+# Q4 ─ substitutes and complements
+add('seca-q4-ticks', '1-1', 'substitutes-and-complements-for-the-iphone', ref(4, sa=True),
+    O.ask(5, 'Apple released the iPhone 13 in September 2021.', ' Substitute Goods'), '15', 15,
+    [point('r-samsung', 'Substitute — Samsung S21', None, 'Samsung S21: SUBSTITUTE, a rival phone.'),
+     point('r-case', 'Complementary — iPhone 13 case', None, 'iPhone 13 case: COMPLEMENTARY, used with the phone.'),
+     point('r-plug', 'Complementary — iPhone charging plug', None,
+           'iPhone charging plug: COMPLEMENTARY.'),
+     point('r-pixel', 'Substitute — Google Pixel 4A smartphone', None,
+           'Google Pixel 4A: SUBSTITUTE. The scheme prices the four ticks together as 15, the first '
+           'correct 9 and the other three 2 each; the completed table is shown in the figure.')],
+    kind='questionTotal', figure=SOL + 'p06-q4-ticks', **A)
 
-# The plain ids econ-2022-ol-q14-a-ii and -q14-a-iii are taken by cards citing
-# 2022 OL Q15(b)(ii) and Q15(b)(iii) — see econ_refs.py — so the true Q14(a)
-# parts ride a suffix.
-P.cards.append(card(
-    'econ-2022-ol-q14-a-ii-scarce', 2022, 'ordinary', 'economics-0-1',
-    'what-a-scarce-resource-is',
-    '2022 OL Q14(a)(ii)',
-    'Glenisk extracts water from local ponds, and filters it for use in its production as '
-    'they acknowledge that water is a scarce resource. Explain what a scarce resource is.',
-    '1 @ 3', 3,
-    [anyN('r-1', 'The definition — any wording', 3, 1, 3,
-          ['There is not enough water / the supply of water is finite to meet the needs of '
-           'everyone.',
-           'The supply of a resource / factor of production is limited the demand is unlimited.',
-           'Quantity of goods and services people like to have exceeded the amount which the '
-           'economy’s resources are capable of producing.'],
-          'The definition, 3 marks.')],
-    ''))
+# Q5 ─ the minimum wage
+q5_stem = O.ask(5, 'The government increased the minimum wage by 30c', ' (a)')
+add('sa-q5-a', '2-1', 'advantages-of-a-higher-minimum-wage', ref(5, '(a)', sa=True),
+    O.ask(5, 'Outline two advantages for the Irish economy of increasing', ' 1. 2.'), '9 + 6', 15,
+    [steps('r-1', 'An advantage for the Irish economy — any two',
+           bl('• Increase in tax revenue:', 'OR\n(b) Outline two advantages'), 9, 6, 'advantages')],
+    stem=q5_stem, notes='Answer either (a) or (b).', **A)
+add('sa-q5-b', '2-1', 'employee-advantages-of-a-higher-minimum-wage', ref(5, '(b)', sa=True),
+    O.ask(5, 'Outline two advantages for employees of this increase', ' 1. 2.'), '9 + 6', 15,
+    [steps('r-1', 'An advantage for employees — any two',
+           bl('• Increased standard of living:', '6 | P a g e'), 9, 6, 'advantages')],
+    stem=q5_stem, notes='Answer either (a) or (b).', **A)
 
-P.cards.append(card(
-    'econ-2022-ol-q14-a-iii-water', 2022, 'ordinary', 'economics-0-2', 'sustainable-use-of-water',
-    '2022 OL Q14(a)(iii)',
-    'Comment on Glenisk’s approach to water usage as a scarce resource.',
-    'fixed', 7,
-    [point('r-1', 'The company tries to minimise the wastage of water and use a sustainable '
-                  'approach to the consumption of water for their factory. This approach '
-                  'reduces the negative impact on the environment.', 7,
-           'The comment, 7 marks.')],
-    '',
-    stem='Glenisk extracts water from local ponds and filters it for use in its production, '
-         'acknowledging that water is a scarce resource.',
-    tariff_kind='fixed'))
+# Q6 ─ unemployment
+q6_stem = O.ask(6, 'The graph below shows the monthly number of people unemployed', ' Number of people unemployed')
+q6_fig = PAP + 'p06-i0'
+add('seca-q6-i', '3-2', 'peak-months-of-unemployment', ref(6, '(i)', sa=True),
+    O.ask(6, 'Identify the two months when the number of people unemployed', ' Month 1:'), '9', 9,
+    [point('r-1', 'Month 1: March (2021)', None, 'March 2021, the top of the curve.'),
+     point('r-2', 'Month 2: April (2021)', None,
+           'April 2021. The scheme prices the two together as 6 + 3, the first correct answer 6 and '
+           'the second 3.')],
+    kind='questionTotal', stem=q6_stem, figure=q6_fig, **A)
+add('sa-q6-ii', '3-2', 'why-unemployment-rose-in-lockdown', ref(6, '(ii)', sa=True),
+    O.ask(6, 'Outline one reason for the increase in unemployment', ' Leaving'), '6', 6,
+    [point('r-1', O.run('The imposition of a national lockdown', '7 | P a g e'), 6,
+           'The reason, 6 marks: the lockdown forced businesses to let workers go.')],
+    stem=q6_stem, figure=q6_fig, **A)
 
-# Q14(b)'s tariff is printed beside the question head, Section A style: 1st x 10
-# (6+4) belongs to part (i) and 2nd x 7 (4+3) to part (ii) — together the 17
-# marks Q14 leaves for (b). The (ii) segment itself carries no cell, which is
-# why econ_parts cannot see this part.
-P.cards.append(card(
-    'econ-2022-ol-q14-b-ii-water', 2022, 'ordinary', 'economics-1-3',
-    'why-citizens-oppose-water-charges',
-    '2022 OL Q14(b)(ii)',
-    'Explain why some citizens in Ireland would be unhappy if water charges were reintroduced.',
-    '1 @ 7', 7,
-    [anyN('r-1', 'A reason citizens would be unhappy — any one', 7, 1, 7,
-          bullets(block(BODY, 'Lower standard of living', '22 | P a g e')),
-          'One explanation, 7 marks: 4 for the point and 3 for developing it.')],
-    'The plain id econ-2022-ol-q14-b-ii is taken by a card citing 2022 OL Q15(c)(ii); see '
-    'econ_refs.py.'))
+# Q7 ─ costs of a bakery
+add('sa-q7-a-i', '1-5', 'what-fixed-costs-are', ref(7, '(a)(i)', sa=True),
+    O.ask(7, 'Explain the term fixed costs.', ' (ii)'), '5', 5,
+    [point('r-1', O.run('Costs which do not change as output changes', '(ii) Indicate by means'), 5,
+           'Explain the term, 5 marks.')],
+    notes='Answer either (a) or (b).', **A)
+add('seca-q7-a-ii-ticks', '1-5', 'sorting-fixed-and-variable-costs', ref(7, '(a)(ii)', sa=True),
+    O.ask(7, 'Indicate by means of a tick', ' Fixed Cost Variable Cost'), '4 + 4 + 1 + 1', 10,
+    [point('r-wages', 'Variable — Wages €1,000', None, 'Wages: VARIABLE, they rise with output.'),
+     point('r-materials', 'Variable — Raw Materials €1,500', None, 'Raw materials: VARIABLE.'),
+     point('r-light', 'Variable — Light & Heat €300', None, 'Light and heat: VARIABLE.'),
+     point('r-rent', 'Fixed — Rent of the premises €750', None,
+           'Rent: FIXED, owed whatever the output. The scheme prices the four together as 4 + 4 + 1 + '
+           '1 without naming which row earns which; the completed table is shown in the figure.')],
+    kind='questionTotal', figure=SOL + 'p09-q7aii-ticks', notes='Answer either (a) or (b).', **A)
+q7b_stem = O.ask(7, 'A bakery receives €5,000 in total', ' (i)')
+add('sa-q7-b-i', '1-5', 'adding-up-a-bakerys-total-cost-for-the-week', ref(7, '(b)(i)', sa=True),
+    O.ask(7, 'The total cost of operating the bakery for the week.', ' (ii)') + ' '
+    + O.ask(7, 'Show your workings.', ' Total Cost:'), '5 x 2', 10,
+    [point('r-1', '€1,000 + €1,500 + €300 + €750 = €3,550', 10,
+           'Add every cost in the table, fixed and variable: €3,550. Five steps at 2 marks; deduct 1 if '
+           'the € is omitted.')],
+    stem=q7b_stem, figure=PAP + 'p07-i0', notes='Answer either (a) or (b).', **A)
+add('sa-q7-b-ii', '1-5', 'net-profit-from-total-revenue-and-total-cost', ref(7, '(b)(ii)', sa=True),
+    O.ask(7, 'The net profit the bakery earned in the week.', ' Show') + ' '
+    + O.ask(7, 'Show your workings.', ' Total Cost:'), '2 + 2 + 1', 5,
+    [point('r-1', 'Total revenue – Total Costs = Net Profit', 5,
+           'Net profit = €5,000 − €3,550 = €1,450, the total cost carried from (i). The scheme awards '
+           '2 + 2 + 1 and deducts 1 if the € is omitted; the official working is shown in the figure.')],
+    stem=q7b_stem, figure=SOL + 'p09-q7bii-working', notes='Answer either (a) or (b).', **A)
 
-# Carded like econ-2022-ol-q15-c-i: the scheme prints the trend statement, so
-# the card holds it rather than leaving the part as a chart read.
-P.cards.append(card(
-    'econ-2022-ol-q15-a-i-trend', 2022, 'ordinary', 'economics-3-1',
-    'reading-corporation-tax-trends',
-    '2022 OL Q15(a)(i)',
-    'Explain the trend in corporation tax received by the Irish government during the period '
-    '2011 to 2020, using the figures in the graph.',
-    'fixed', 10,
-    [point('r-1', 'There has been a steady increase in the amount of money received by the '
-                  'Irish state from corporation tax. It has increased from approx. €4m in 2011 '
-                  'to approx. €12m in 2020.', 10,
-           '10 marks: 6 for the trend and 4 for supporting figures.')],
-    'The plain id econ-2022-ol-q15-a-i is taken by a card citing 2022 OL Q16(a)(i); see '
-    'econ_refs.py.',
-    stem='Set on a bar chart of corporation tax receipts in € millions, 2011 to 2020.',
-    tariff_kind='fixed'))
+# Q8 ─ vaccines
+add('sa-q8-i', '2-2', 'vaccination-externality-and-opportunity-cost', ref(8, sa=True),
+    O.ask(8, 'State one example of a positive externality', ' (ii)') + ' '
+    + O.ask(8, 'Outline one opportunity cost for the Irish government', ' Question 9'), '15', 15,
+    [shared('r-externality', 'One positive externality of vaccination',
+            bl('• Protection of others from contracting the virus:', '(ii) Outline one opportunity cost'),
+            'Complete BOTH parts. The scheme prices (i) and (ii) together as one 15: the first correct '
+            'answer 9 marks (6 + 3) and the second 6 (3 + 3), with no fixed share for either part.'),
+     shared('r-opportunity-cost', 'One opportunity cost for the government',
+            [O.run('The money the government could have used', '9 | P a g e')],
+            'Name what else the money could have paid for.')],
+    kind='questionTotal',
+    stem=O.ask(8, '51.6% of the world population has received', ' Adapted from'), **A)
 
-# The scheme's list of MNC names, one option per name. 'Coca Cola' is printed
-# twice (once hyphenated), so the fold on hyphens keeps one of the pair.
-_mncs, _seen = [], set()
-for _n in block(BODY, 'Apple, Google, Facebook', '(ii) Outline two reasons why TikTok').split(','):
-    _n = tidy(_n).rstrip('.')
-    _k = _n.replace('-', ' ').lower()
-    if _n and _k not in _seen:
-        _seen.add(_k)
-        _mncs.append(_n)
-P.cards.append(card(
-    'econ-2022-ol-q15-b-i', 2022, 'ordinary', 'economics-4-1', 'mncs-in-ireland',
-    '2022 OL Q15(b)(i)',
-    'Name two other Multi-National Corporations operating in Ireland.',
-    '2 @ 6', 12,
-    [anyN('r-1', 'A Multi-National Corporation in Ireland — any two', 12, 2, 6, _mncs,
-          'Two names, 6 marks each.')],
-    '', stem='TikTok had shortlisted five Dublin sites for its new headquarters.'))
+# Q9 ─ price elasticity of demand
+q9_stem = O.ask(8, 'The price of an iPad falls from €750 to €500.', ' ∆Q')
+add('seca-q9-i', '1-4', 'working-the-ped-formula', ref(9, '(i)', sa=True),
+    O.ask(8, 'Using the formula above, complete the workings', ' Workings:'), '13', 13,
+    [point('r-1', '- 1', 13,
+           'PED = (ΔQ ÷ ΔP) × ((P1 + P2) ÷ (Q1 + Q2)) = (15,000 ÷ −250) × (1,250 ÷ 75,000) = −1. Keep '
+           'the minus sign. The calculation is worth 13 marks; the official working is shown in the '
+           'figure.')],
+    stem=q9_stem, figure=SOL + 'p11-q9i-working', **A)
+add('sa-q9-ii', '1-4', 'interpreting-a-ped-value', ref(9, '(ii)', sa=True),
+    O.ask(8, 'Indicate if the demand is price elastic', ' Answer: Leaving'), '2', 2,
+    [point('r-1', 'UNIT ELASTIC', 2, 'Unit elastic, 2 marks: the PED from (i) is exactly −1.')],
+    stem=q9_stem, **A)
 
-# The real Q16(a)(ii): the plain id econ-2022-ol-q16-a-ii is taken by the
-# inflation-effects card above, whose citation the paper puts at Q16(b)(ii).
-P.menu('increased the price of a packet of cigarettes by 50c in Budget',
-       'econ-2022-ol-q16-a-ii-smoking', 'economics-1-3', 'measures-to-reduce-smoking',
-       'The government increased the price of a packet of cigarettes by 50c in Budget 2022. '
-       'Suggest one other measure the government could take to help reduce the consumption '
-       'of cigarettes.',
-       'A measure to reduce smoking — any one',
-       'One measure, 7 marks: 4 for the point and 3 for developing it.',
-       ref='2022 OL Q16(a)(ii)', claim=1, per=7,
-       drop=SCAFFOLD + ('Suggest one other measure',))
+# Q10 ─ interest on the national debt
+q10_stem = O.ask(9, 'The graph below shows the amount of interest paid', ' General Government')
+q10_fig = PAP + 'p09-q10-chart'
+add('sa-q10-a', '3-1', 'comparing-debt-interest-payments', ref(10, '(a)', sa=True),
+    O.ask(9, 'Compare the interest paid on the national debt in 2018', ' Compare:'), '9 + 3 + 3', 15,
+    [point('r-1', O.run('The interest to be paid on the National Debt in 2024', 'OR\n(b) Explain the term'), 15,
+           'The comparison and its two figures, 15 marks (9 + 3 + 3): the 2024 forecast, €3.51bn, is '
+           'well below the €5.32bn paid in 2018.')],
+    stem=q10_stem, figure=q10_fig, notes='Answer either (a) or (b).', **A)
+pick('sa-q10-b', '3-1', 'what-the-national-debt-is', ref(10, '(b)', sa=True),
+     O.ask(9, 'Explain the term National Debt.', ' National Debt:'),
+     'The national debt — either wording',
+     at('Refers to the total amount of government borrowing', '11 | P a g e',
+        ['Refers to the total amount of government borrowing', 'Refers to the total amount of money']),
+     1, 15, 'Explain the term, 15 marks (9 + 3 + 3). Answer either (a) or (b).', stem=q10_stem,
+     figure=q10_fig, **A)
 
-P.cards.append(card(
-    'econ-2022-ol-q16-b-i', 2022, 'ordinary', 'economics-3-3', 'what-price-inflation-is',
-    '2022 OL Q16(b)(i)',
-    'The annual rate of price inflation in Ireland rose by 5.5% in December 2021. Explain '
-    'the term price inflation.',
-    '1 @ 8', 8,
-    [anyN('r-1', 'The definition — either wording', 8, 1, 8,
-          ['An increase in the general level of prices for goods & services over a period '
-           'of time',
-           'A decrease in the value of money / people can buy less with their money.'],
-          'One definition, 8 marks: 6 for the definition and 2 for development.')],
-    ''))
 
-# econ_excluded records '2022 OL Q16(c)(iii)' as coursework grading bands. That
-# entry describes the Student Research Project block the extractor welded onto
-# this part's segment, not the part the paper prints, which the scheme answers
-# with the six effects sliced here.
-P.cards.append(card(
-    'econ-2022-ol-q16-c-iii', 2022, 'ordinary', 'economics-3-1',
-    'effects-of-the-hidden-economy',
-    '2022 OL Q16(c)(iii)',
-    'Outline one economic effect for the Irish economy of activities taking place in the '
-    'hidden economy.',
-    '1 @ 8', 8,
-    [anyN('r-1', 'An economic effect — any one', 8, 1, 8,
-          bullets(block(BODY, 'Loss of revenue to the government', 'Student Research Project')),
-          'One effect, 8 marks.')],
-    ''))
+# ═════════════════════════════════ SECTION B ══════════════════════════════════
 
-# ── Worked calculations the scheme prints in full ──────────────────────────
-# The scheme sets a fraction as a stacked 2-D layout, so extraction flattens it:
-# the numerator and the answer come out on one line and the denominator after
-# them. Nothing is missing and nothing is added — the note on each card says how
-# to read the order, which is the honest fix for a layout the text layer cannot
-# preserve.
+# Q11 ─ streaming; monopoly
+q11_stem = O.ask(10, 'The graph below shows the breakdown of streaming services in the US.', ' Streaming')
+q11_fig = PAP + 'p10-art'
+add('q11-a-i', '2-0', 'highest-and-lowest-market-share-in-streaming', ref(11, '(a)(i)'),
+    O.ask(10, 'Using the data above complete the table below:', ' (ii)'), '9 + 3', 12,
+    [point('r-highest', 'YouTube', None, 'Highest: YouTube, about 164 million users.'),
+     point('r-lowest', 'Vimeo', None,
+           'Lowest: Vimeo, about 15 million, just below Amazon Prime Video. The scheme prices the two '
+           'together as 9 + 3, the first correct answer 9 and the second 3.')],
+    kind='questionTotal', stem=q11_stem, figure=q11_fig)
+add('q11-a-ii', '2-0', 'advantages-of-many-firms-for-consumers', ref(11, '(a)(ii)'),
+    O.ask(10, 'Outline two advantages for consumers of many firms', ' 1. 2.'), '8 + 4', 12,
+    [steps('r-1', 'An advantage for consumers — any two',
+           bl('• Gives the consumer more choice', '12 | P a g e'), 8, 4, 'advantages')],
+    stem=q11_stem, figure=q11_fig)
+q11b_stem = O.ask(11, 'If Netflix were to buy out (take over)', ' (i)')
+q11b_fig = PAP + 'p11-q11b-diagram'
+c = add('q11-b-i', '2-0', 'labelling-a-monopoly-diagram', ref(11, '(b)(i)'),
+        O.ask(11, 'Write out in full what each of the three numbered items', ' 1. 2. 3.'), '3 x 7', 21,
+        [point('r-1', 'Price', 7, 'Item 1, the vertical axis, 7 marks.'),
+         point('r-2', 'Marginal Cost', 7, 'Item 2, the steeper U-shaped curve through G, 7 marks.'),
+         point('r-3', 'Marginal Revenue', 7,
+               'Item 3, the steeper downward-sloping line, 7 marks. AC and AR are printed; write each '
+               'item in full.')],
+        stem=q11b_stem, figure=q11b_fig)
+c['labelKey'] = [{'letter': '1', 'meaning': 'Price', 'askedInThisQuestion': True},
+                 {'letter': '2', 'meaning': 'Marginal cost', 'askedInThisQuestion': True},
+                 {'letter': '3', 'meaning': 'Marginal revenue', 'askedInThisQuestion': True},
+                 {'letter': 'AC', 'meaning': 'Average cost', 'askedInThisQuestion': False},
+                 {'letter': 'AR', 'meaning': 'Average revenue', 'askedInThisQuestion': False}]
+add('q11-b-ii', '2-0', 'marking-output-price-and-average-cost-on-a-monopoly-diagram', ref(11, '(b)(ii)'),
+    O.ask(11, 'Equilibrium occurs at the point G on the diagram above.', ' Leaving')
+    + ' On the Irish paper use C₁ for output and Co₁ for average cost; the price label is P₁.', '4 + 4 + 1', 9,
+    [point('r-q1', O.run('• The output the firm will produce in equilibrium', '• The price the firm will').removeprefix('• '), 4,
+           'Q1, 4 marks: drop straight down from G, where MC cuts MR, to the quantity axis.'),
+     point('r-p1', O.run('• The price the firm will charge', '• The average cost of producing').removeprefix('• '), 4,
+           'P1, 4 marks: go up from Q1 to the AR curve and across to the price axis; the price is read '
+           'off AR, not off G.'),
+     point('r-c1', O.run('• The average cost of producing this output', '13 | P a g e').removeprefix('• '), 1,
+           'C1, 1 mark: average cost read off AC above the same Q1, below P1. The official diagram is '
+           'shown in the figure.')],
+    stem=q11b_stem, figure=SOL + 'p14-q11bii-diagram')
+q11c_stem = O.ask(12, 'In some industries a firm can become a monopoly.', ' (i)')
+add('q11-c-i', '2-0', 'what-a-monopoly-is', ref(11, '(c)(i)'),
+    O.ask(12, 'Explain the term monopoly and give one example', ' Explanation:'), '5 + 4', 9,
+    [point('r-definition', 'A monopoly firm arises when there is only one firm in the industry.', 5,
+           'Explain the term, 5 marks.'),
+     point('r-example', 'An example — An Post, Irish Rail, Irish Water, a sole pub in your village.', 4,
+           'One Irish example, 4 marks; the scheme accepts these.')],
+    stem=q11c_stem)
+pick('q11-c-ii', '2-0', 'barriers-to-entry', ref(11, '(c)(ii)'),
+     O.ask(12, 'Firms who may wish to enter a monopoly industry', ' 1. 2.'),
+     'A barrier to entry — any two', bl('• The Government may grant a company', '(iii) Suggest one way'),
+     2, 4, 'Two barriers, 4 marks each (2 + 2).', stem=q11c_stem)
+pick('q11-c-iii', '1-3', 'government-intervention-dominant-firm', ref(11, '(c)(iii)'),
+     O.ask(12, 'Outline one way, governments can intervene', ' 75 marks'),
+     'A way the government can intervene — either one', bl('• Regulation:', '14 | P a g e'),
+     1, 4, 'One developed way, 4 marks (2 + 2).', stem=q11c_stem)
 
-P.cards.append(card(
-    'econ-2022-ol-q13-a-i-percentage', 2022, 'ordinary', 'economics-3-1',
-    'current-spending-as-a-share-of-total-expenditure', '2022 OL Q13(a)(i)',
-    'Calculate current expenditure as a percentage of total government expenditure. Show your '
-    'workings.',
-    '16', 16,
-    [point('r-1', as_option(block(BODY, '\u20ac71.82 bn x 100 = 86.61',
-                                  '(ii) Explain current OR capital')), 16,
-           'Read as a fraction: \u20ac71.82bn over \u20ac82.92bn, times 100. The scheme stacks '
-           'it, so extraction puts the denominator last. The total is the WHOLE pie, not the '
-           'capital slice \u2014 dividing by \u20ac11.1bn is the usual error.')],
-    'The plain id econ-2022-ol-q13-a-i is taken by a card citing 2022 OL Q14(c)(i), and an id '
-    'is never renamed because it keys a student\u2019s review history \u2014 hence the suffix. '
-    'The pie prints current and capital separately and the total in its heading, so the '
-    'denominator has to be recognised before any arithmetic happens.',
-    tariff_kind='fixed',
-    figure_key='economics-2022-OL-paper-p16-i0'))
+# Q12 ─ coffee cups; Gym + Coffee; sustainability
+add('q12-a-i', '1-0', 'plotting-demand-supply-and-market-equilibrium', ref(12, '(a)(i)–(iii)'),
+    O.ask(13, 'Using the above information and on one diagram', ' Demand and Supply Curves')
+    + ' On the Irish paper use C₁ for quantity; the price label is P₁.', '28 (14 x 2)', 28,
+    [point('r-diagram', 'Demand and Supply Curves Reusable Coffee Cups', 28,
+           'The diagram, 28 marks (14 x 2): plot demand falling from 10,000 cups at €9 to 50,000 at €5 '
+           'and supply rising from 10,000 at €5 to 50,000 at €9, label them D and S, and mark P1 = €7 '
+           'and Q1 = 30,000 where they cross (the horizontal axis is in thousands). The official graph is '
+           'shown in the figure.')],
+    stem=O.ask(13, 'The information below represents the market demand and supply schedules', ' Price (€)'),
+    figure=SOL + 'p16-q12a-diagram')
+q12b_stem = O.ask(14, 'The diagram below shows the demand and supply curves for Gym', ' S D')
+q12b_sol = SOL + 'p17-q12b-diagram'
+add('q12-b-i', '1-1', 'what-shifts-demand', ref(12, '(b)(i)'),
+    O.ask(14, 'If a celebrity was featured on a social media platform', ' (ii)'), '8', 8,
+    [point('r-1', O.run('This would lead to an increase in the quantity demanded', '(ii) Show, on the above'), 8,
+           'The effect and why, 8 marks: the endorsement makes the clothing more attractive and better '
+           'known, so demand rises.')],
+    stem=q12b_stem, figure=PAP + 'p14-q12b-diagram')
+add('q12-b-ii', '1-1', 'showing-a-demand-shift-after-a-celebrity-endorsement', ref(12, '(b)(ii)'),
+    O.ask(14, 'Show, on the above diagram how the change in (i)', ' (iii)'), '8', 8,
+    [point('r-1', 'Demand curve would shift to the right – D2 above on diagram.', 8,
+           'Shift demand right to D2, 8 marks: tastes changed, not the price, so the whole curve moves. '
+           'The official diagram is shown in the figure.')],
+    stem=q12b_stem, figure=q12b_sol)
+add('q12-b-iii', '1-0', 'reading-the-new-equilibrium-after-a-demand-shift', ref(12, '(b)(iii)'),
+    O.ask(14, 'Show, on the above diagram, the new equilibrium price', ' Leaving')
+    + ' On the Irish paper use C₂ for the new quantity; the new price label is P₂.', '6 + 6', 12,
+    [point('r-price', 'the new equilibrium price (P2)', 6,
+           'P2, 6 marks: the higher price where D2 meets the unchanged supply curve.'),
+     point('r-quantity', 'the new equilibrium quantity (Q2)', 6,
+           'Q2, 6 marks: the higher quantity at the same new intersection.')],
+    stem=q12b_stem, figure=q12b_sol)
+q12c_stem = O.ask(15, 'Nineteen30 café in Limerick was founded in 2021.', ' Adapted from')
+pick('q12-c-i', '0-2', 'what-sustainability-is', ref(12, '(c)(i)'),
+     O.ask(15, 'Explain the term sustainability.', ' (ii)'),
+     'Sustainability — either wording',
+     at('Achieving economic growth without harming', '(ii) Suggest two ways',
+        ['Achieving economic growth', 'Meeting the current needs']),
+     1, 5, 'Explain the term, 5 marks (3 + 2).', stem=q12c_stem)
+pick('q12-c-ii', '0-2', 'ways-a-business-can-be-sustainable', ref(12, '(c)(ii)'),
+     O.ask(15, 'Suggest two ways that a business could be more sustainable.', ' 1. 2.'),
+     'A way to be more sustainable — any two', bl('• Encourage use of own cups:', '17 | P a g e'),
+     2, 7, 'Two ways, 7 marks each (4 + 3).', stem=q12c_stem)
 
-P.cards.append(card(
-    'econ-2022-ol-q13-b-ii', 2022, 'ordinary', 'economics-3-0',
-    'calculating-the-multiplier-in-an-open-economy', '2022 OL Q13(b)(ii)',
-    'The multiplier formula for an open economy is: 1 / (MPS + MPM). Assume that MPS is 0.1 '
-    'and MPM is 0.4. Calculate, using the above formula, the size of the multiplier.',
-    '12', 12,
-    [point('r-1', as_option(block(BODY, '0.1 + 0.4 = 2',
-                                  '(iii) Explain the economic meaning of the figure')), 12,
-           'The two leakages are ADDED first, then divided into 1. Adding the multipliers of each '
-           'leakage separately, or dividing 1 by each in turn, is the usual way this goes wrong.')],
-    'The scheme prints this as a fraction with 1 above the line, so the flat text reads '
-    '\u201c0.1 + 0.4 = 2\u201d \u2014 which is why the scheme\u2019s own working rides with '
-    'the card as a picture.',
-    tariff_kind='fixed',
-    figure_key='economics-2022-OL-scheme-p20-q13bii-working'))
+# Q13 ─ government expenditure; national income; consumers
+q13_stem = O.ask(16, 'The pie chart below gives the forecasted government current', ' Total Government')
+add('q13-a-i-percentage', '3-1', 'current-spending-as-a-share-of-total-expenditure', ref(13, '(a)(i)'),
+    O.ask(16, 'Calculate current expenditure as a percentage', ' Workings:'), '16', 16,
+    [point('r-1', '86.61%', 16,
+           'Current expenditure ÷ total expenditure × 100 = €71.82bn ÷ €82.92bn × 100 = 86.61%, 16 '
+           'marks; the official working is shown in the figure.')],
+    stem=q13_stem, figure=SOL + 'p19-q13ai-working')
+q13a2_ask = O.ask(16, 'Explain current or capital government expenditure', ' Current expenditure:')
+for cid, name, route, start, end, ex_start, ex_end in [
+        ('q13-a-ii-expenditure', 'current', 'current expenditure', 'Current expenditure is spending',
+         'Example: salaries', 'Example: salaries of state employees', '18 | P a g e'),
+        ('q13-a-ii-capital', 'capital', 'capital expenditure', 'Capital expenditure is spending',
+         'Example: building a school', 'Example: building a school', 'OR\nCurrent expenditure')]:
+    add(cid, '3-1', f'{name}-government-expenditure', ref(13, '(a)(ii)', route),
+        f'{q13a2_ask} Answer for: {route.upper()}.', '6 + 3', 9,
+        [point('r-definition', O.run(start, end), 6, f'Explain {route}, 6 marks.'),
+         point('r-example', O.run(ex_start, ex_end), 3, 'One relevant example, 3 marks.')],
+        stem=q13_stem, figure=PAP + 'p16-q13-chart',
+        notes='The paper asks for current OR capital expenditure; each is its own route.')
+q13b_stem = O.ask(17, 'National Income is calculated using the following formula:', ' (i)')
+add('q13-b-i', '3-0', 'the-national-income-formula', ref(13, '(b)(i)'),
+    O.ask(17, 'State what each of the letters I, X and M stand for.', ' I:'), '12', 12,
+    [point('r-i', 'Investment', None, 'I: investment.'),
+     point('r-x', 'Exports', None, 'X: exports.'),
+     point('r-m', 'Imports', None, 'M: imports. The scheme gives 12 for the three letters, with no '
+           'published split.')],
+    kind='questionTotal', stem=q13b_stem)
+add('q13-b-ii', '3-0', 'calculating-the-multiplier-in-an-open-economy', ref(13, '(b)(ii)'),
+    O.ask(17, 'Assume that MPS is 0.1 and MPM is 0.4.', ' Workings:'), '12', 12,
+    [point('r-1', '2', 12,
+           'Multiplier = 1 ÷ (MPS + MPM) = 1 ÷ (0.1 + 0.4) = 1 ÷ 0.5 = 2, 12 marks; the official working '
+           'is shown in the figure.')],
+    stem='The multiplier formula for an open economy is: 1 ÷ (MPS + MPM)', figure=SOL + 'p20-q13bii-working')
+add('q13-b-iii', '3-0', 'meaning-of-the-multiplier', ref(13, '(b)(iii)'),
+    O.ask(17, 'Explain the economic meaning of the figure you have calculated', ' Explanation:'), '6', 6,
+    [point('r-1', 'For each euro spent in the economy, National Income will increase by €2.', 6,
+           'Explain, 6 marks: each extra €1 injected raises national income by €2 in total. The scheme’s '
+           'other line, that national income “will double”, overstates it: the existing national income '
+           'does not double.')])
+q13c_stem = O.ask(18, 'Domestic demand is forecast to grow by 7.1% in 2023.', ' Adapted from')
+pick('q13-c-i', '1-1', 'why-consumer-spending-rose', ref(13, '(c)(i)'),
+     O.ask(18, 'Outline one possible reason for the expected increase in consumer spending', ' (ii)'),
+     'A reason for the increase in consumer spending — any one',
+     bl('• The easing of health restrictions:', '(ii) It is assumed that consumers'),
+     1, 10, 'One developed reason, 10 marks (6 + 4).', stem=q13c_stem)
+add('q13-c-ii', '1-1', 'what-a-rational-consumer-does', ref(13, '(c)(ii)'),
+    O.ask(18, 'Explain the concept of consumers behaving rationally', ' Explanation:'), '10', 10,
+    [shared('r-definition', 'What behaving rationally means',
+            [O.run('Behaving rationally means the consumer acts', 'Example: If a consumer')],
+            'Complete BOTH: the explanation and an example. The scheme prices the two together as one '
+            '10: the first correct element 6 marks and the second 4.'),
+     shared('r-example', 'One example of a rational choice',
+            at('Example: If a consumer prefers', '20 | P a g e',
+               ['Example: If a consumer prefers', 'If the trainers are for sale']),
+            'The scheme gives these two.')],
+    kind='questionTotal',
+    stem=O.ask(18, 'It is assumed that consumers taking part in economic activity', ' Explain the concept'))
 
-P.cards.append(card(
-    'econ-2022-ol-q11-a-i', 2022, 'ordinary', 'economics-2-0',
-    'highest-and-lowest-market-share-in-streaming', '2022 OL Q11(a)(i)',
-    'Using the data above complete the table below: Which service has the highest market share? '
-    'Which service has the lowest market share?',
-    'fixed', 12,
-    [point('r-1', as_option(block(BODY, 'Which service has the highest market share? YouTube',
-                                  '\u27e89+3\u27e9')), 9,
-           'The first answer carries 9. YouTube is about 164 million users, more than three '
-           'times the next service.'),
-     point('r-2', as_option(block(BODY, 'Which service has the lowest market share? Vimeo',
-                                  '(ii) Outline two advantages')), 3,
-           'The second answer carries 3. Vimeo at about 15 million is just below Amazon Prime '
-           'Video, so the two shortest bars have to be compared rather than glanced at.')],
-    'The bars are unlabelled, so both answers are read against the axis. The gap between the '
-    'bottom two is small enough that the order matters.',
-    tariff_kind='fixed',
-    figure_key='economics-2022-OL-paper-p10-art'))
+# Q14 ─ Glenisk: factors, water, development
+q14_stem = O.ask(19, 'For three decades the Cleary family', ' Adapted from')
+add('q14-a-i', '0-1', 'the-four-factors-of-production-in-a-yogurt-plant', ref(14, '(a)(i)'),
+    O.ask(19, 'Complete the table below to show your understanding', ' Factor of'), '4 x 6', 24,
+    [point('r-land', paras([line('Anything supplied by nature which helps in the production of yogurt. Ground'),
+                            line('Milk Sugar Berries')]), 6,
+           'Row 1, Land: explain it and give an example (milk, sugar or berries), 6 marks.'),
+     point('r-labour', 'LABOUR — ' + line('The human effort involved in the production of yogurt. The workers'), 6,
+           'Row 2: name the factor, Labour, and explain it, 6 marks.'),
+     point('r-capital', paras([line('Man-made items used to produce Glenisk organic yogurt.'),
+                               line('Machinery Equipment Vehicles The factory building')]), 6,
+           'Row 3, Capital: explain it and give an example, 6 marks.'),
+     point('r-enterprise', 'ENTERPRISE — The Cleary Family', 6,
+           'Row 4: name the factor, Enterprise, and give an example, the Cleary family, 6 marks. The '
+           'scheme prices each row 6, the first blank 4 and the second 2; the completed table is shown '
+           'in the figure.')],
+    stem=q14_stem, figure=SOL + 'p22-q14ai-table')
+q14a2_stem = O.ask(20, 'Glenisk extracts water from local ponds', ' Adapted from')
+pick('q14-a-ii-scarce', '0-1', 'what-a-scarce-resource-is', ref(14, '(a)(ii)'),
+     O.ask(20, 'Explain what a scarce resource is.', ' Scarce resource:'),
+     'A scarce resource — any wording',
+     at('There is not enough water', '(iii) Comment on Glenisk',
+        ['There is not enough water', 'The supply of a resource', 'Quantity of goods and services']),
+     1, 3, 'Explain the term, 3 marks.', stem=q14a2_stem)
+add('q14-a-iii-water', '0-2', 'sustainable-use-of-water', ref(14, '(a)(iii)'),
+    O.ask(20, 'Comment on Glenisk’s approach to water usage', ' (b)'), '7', 7,
+    [point('r-1', O.run('The company tries to minimise the wastage of water', '(b) The Organisation'), 7,
+           'Comment, 7 marks: Glenisk cuts waste and uses water sustainably, reducing its impact on the '
+           'environment.')],
+    stem=q14a2_stem)
+add('q14-b-i', '1-3', 'the-case-for-and-against-water-charges', ref(14, '(b)'),
+    O.ask(20, 'Outline one economic argument in favour of the reintroduction', ' Leaving') + ' '
+    + O.ask(21, 'Explain why some citizens in Ireland would be unhappy', ' Explanation:'), '17', 17,
+    [shared('r-for', 'One argument for water charges',
+            bl('• Better use of a scare resource:', '(ii) Explain why some citizens'),
+            'Complete BOTH parts. The scheme prices (i) and (ii) together as one 17: the first correct '
+            'answer 10 marks (6 + 4) and the second 7 (4 + 3), with no fixed share for either part.'),
+     shared('r-against', 'Why some citizens would be unhappy',
+            bl('• Lower standard of living:', '22 | P a g e'),
+            'A reason citizens would object.')],
+    kind='questionTotal',
+    stem=O.ask(20, 'The Organisation for Economic Co-operation and Development', ' Adapted from'))
+q14c_stem = O.ask(21, 'Glenisk partnered with the international development charity', ' Adapted from')
+pick('q13-a-i', '4-0', 'features-of-a-less-developed-nation', ref(14, '(c)(i)'),
+     O.ask(21, 'Outline two features/characteristics of a less developed nation.', ' 1. 2.'),
+     'A feature of a less developed nation — any two',
+     at('High population growth rates:', '23 | P a g e',
+        ['High population growth rates:', 'Famine / low life expectancy:', 'High foreign debts',
+         'Over-dependence on one crop:', 'High percentage of the population', 'Poor infrastructure:',
+         'Poverty / low income per capita:', 'Poor levels of education', 'Exploitation by MNCs',
+         'Political corruption:']),
+     2, 8, 'Two features, 8 marks each (4 + 4).', stem=q14c_stem)
+pick('q13-a-ii', '4-0', 'why-ireland-gives-aid', ref(14, '(c)(ii)'),
+     O.ask(21, 'Outline two reasons why the Irish government gives aid', ' 1. 2.'),
+     'A reason Ireland gives aid — any two',
+     at('Promote economic development:', '24 | P a g e',
+        ['Promote economic development:', 'Humanitarian reasons:', 'Reduce poverty, hunger etc:',
+         'Support citizens cope', 'Improve access and quality of education:',
+         'Provide access to clean water', 'Meet UN target']),
+     2, 4, 'Two reasons, 4 marks each (2 + 2).', stem=q14c_stem)
 
-# ── Drawings, answered by the scheme's own model diagram ───────────────────
-# The scheme answers these graphically, so the crop of its completed diagram is
-# the card's solution figure — the mechanism the tick tables use. Where the
-# scheme prints its marks ON the diagram (2022 OL Q12(b): an 8 beside D2, a 6
-# beside P2, a 6 beside Q2) that is the tariff, and it settles a split the flat
-# text leaves ambiguous.
+# Q15 ─ corporation tax; MNCs; exports
+q15_stem = O.ask(22, 'The graph below shows the corporation tax received', ' Corporation Tax')
+q15_fig = PAP + 'p22-q15a-chart'
+add('q15-a-i-trend', '3-1', 'reading-corporation-tax-trends', ref(15, '(a)(i)'),
+    O.ask(22, 'Explain the trend in corporation tax received', ' Explanation:'), '6 + 4', 10,
+    [point('r-1', O.run('There has been a steady increase in the amount of money', 'It has increased from approx.'), 10,
+           'The trend 6 and figures 4: a steady rise from about €3,500 million in 2011 to about €12,000 '
+           'million in 2020 (about €3.5bn to €12bn). The scheme writes “€4m to €12m”; the axis is in '
+           'millions of euro.')],
+    stem=q15_stem, figure=q15_fig)
+add('q15-a-ii', '3-1', 'what-corporation-tax-pays-for', ref(15, '(a)(ii)'),
+    O.ask(22, 'Explain the benefits of the government collecting corporation tax.', ' Leaving'), '6 + 3', 9,
+    [point('r-revenue', O.run('Provides revenue for the government', 'Provide public services:'), 6,
+           'Increased revenue for the government, 6 marks.'),
+     heading('r-services', 'What the revenue provides — any one',
+             at('Provide public services:', '2 concepts:',
+                ['Provide public services:', 'Help to re-distribute wealth:', 'Promote / support industry:']), 3,
+             'Link it to the services it pays for, 3 marks. The scheme marks two linked concepts: '
+             'increased revenue 6, to provide additional services for citizens 3.')],
+    stem=q15_stem, figure=q15_fig)
+q15b_stem = O.ask(23, 'TikTok shortlists five Dublin sites for new headquarters.', ' Adapted from')
+pick('q15-b-i', '4-1', 'mncs-in-ireland', ref(15, '(b)(i)'),
+     O.ask(23, 'Name two other Multi-National Corporations operating in Ireland.', ' 1. 2.'),
+     'A multinational operating in Ireland — any two',
+     ['Apple', 'Google', 'Facebook', 'Coca-Cola', 'PayPal', 'Microsoft', 'Twitter', 'Pfizer', 'Intel',
+      'Dell', 'IBM', 'Glanbia', 'Kerry Group', 'Ryanair'],
+     2, 6, 'Two other multinationals, 6 marks each; these are the scheme’s examples.', stem=q15b_stem)
+pick('q14-a-ii', '4-1', 'why-mncs-locate-in-ireland-ol', ref(15, '(b)(ii)'),
+     O.ask(23, 'Outline two reasons why TikTok would locate in Ireland.', ' 1. 2.'),
+     'A reason TikTok would locate in Ireland — any two',
+     at('Availability of a skilled educated', '(iii) Describe two possible economic benefits',
+        ['Availability of a skilled educated', 'Low rates of taxation:', 'Access to EU market',
+         'Availability of state incentives:', 'Good industrial relations:', 'Stable rate of economic growth:',
+         'Stable economic climate:']),
+     2, 4, 'Two reasons, 4 marks each (2 + 2).', stem=q15b_stem)
+pick('q14-a-iii', '4-1', 'local-benefits-of-an-mnc', ref(15, '(b)(iii)'),
+     O.ask(23, 'Describe two possible economic benefits to the local community', ' 1. 2.'),
+     'A benefit to the local community — any two',
+     at('Creation of employment:', '26 | P a g e',
+        ['Creation of employment:', 'Increased economic growth:', 'Increase in economic activity locally:',
+         'More vibrant local communities:', 'Improvements in the local infrastructure:']),
+     2, 4, 'Two benefits, 4 marks each (2 + 2).', stem=q15b_stem)
+q15c_stem = O.ask(24, 'The graph below shows exports out of Ireland to the US', ' Exports from Ireland')
+add('q15-c-i', '4-2', 'reading-irish-export-trends', ref(15, '(c)(i)'),
+    O.ask(24, 'Comment on the trends in Irelands exports', ' 1.Exports'), '6 + 6', 12,
+    [point('r-us', O.run('Have been consistent to the US', 'Exports to the UK'), 6,
+           'Exports to the US, 6 marks: a trend with figures, about €4bn or more most months.'),
+     point('r-uk', O.run('Exports between €1bn and approx. €2bn', '(ii) Outline two benefits'), 6,
+           'Exports to the UK, 6 marks: between about €1bn and €2bn, much lower than to the US.')],
+    stem=q15c_stem, figure=PAP + 'p24-q15c-chart')
+pick('q14-b-ii', '4-2', 'benefits-of-exporting', ref(15, '(c)(ii)'),
+     O.ask(24, 'Outline two benefits to the Irish economy of exporting', ' 1. 2.'),
+     'A benefit of exporting — any two',
+     at('Employment creation:', '27 | P a g e',
+        ['Employment creation:', 'Increased GNP / economic growth:', 'Government finances:',
+         'Attract investment:', 'Increased sales / profits:']),
+     2, 8, 'Two benefits, 8 marks each (4 + 4).', stem=q15c_stem, figure=PAP + 'p24-q15c-chart')
 
-P.cards.append(card(
-    'econ-2022-ol-q11-b-ii', 2022, 'ordinary', 'economics-2-0',
-    'marking-output-price-and-average-cost-on-a-monopoly-diagram', '2022 OL Q11(b)(ii)',
-    'Equilibrium occurs at the point G on the diagram above. Clearly show and label on the '
-    'above diagram: the output the firm will produce in equilibrium (use label Q1); the price '
-    'the firm will charge for its output (use label P1); the average cost of producing this '
-    'output (use point C1).',
-    'fixed', 9,
-    [point('r-1', as_option(block(BODY, 'The output the firm will produce in equilibrium (use label Q1)',
-                                  '\u2022 The price the firm will charge')), 4,
-           'Four marks. G is where MC cuts MR, and the output is found by dropping STRAIGHT DOWN '
-           'from G to the quantity axis \u2014 not by reading across from it.'),
-     point('r-2', as_option(block(BODY, 'The price the firm will charge for its output (use label P1)',
-                                  '\u2022 The average cost of producing')), 4,
-           'Four marks. The price is read off the AVERAGE REVENUE curve above Q1, not off G '
-           'itself. This is the step most often missed: the firm sets output where MC = MR but '
-           'charges what the demand curve will bear.'),
-     point('r-3', as_option(block(BODY, 'The average cost of producing this output (use point C1)',
-                                  '13 | P a g e')), 1,
-           'One mark. Average cost is read off AC above the same Q1, which puts C1 below P1 '
-           '\u2014 and the gap between them is the profit per unit.')],
-    'Three readings off ONE vertical line at Q1: the quantity below it, the price where it meets '
-    'AR, the cost where it meets AC. Reading the price off point G is the classic error, and it '
-    'is worth four of the nine marks.',
-    tariff_kind='fixed',
-    figure_key='economics-2022-OL-scheme-p14-q11bii-diagram'))
+# Q16 ─ minimum unit pricing and cigarettes; inflation; indirect tax and the hidden economy
+q16_stem = O.ask(25, 'The table below shows the effect on alcohol prices', ' Minimum Unit Price for')
+pick('q15-a-i', '1-3', 'minimum-pricing-on-alcohol', ref(16, '(a)(i)'),
+     O.ask(25, 'Outline two reasons why the government introduced minimum pricing', ' 1. 2.'),
+     'A reason for minimum pricing — any two',
+     bl('• To reduce alcohol abuse / consumption', '(ii) The government increased the price'),
+     2, 6, 'Two reasons, 6 marks each (3 + 3).', stem=q16_stem, figure=PAP + 'p25-i0')
+pick('q16-a-ii-smoking', '1-3', 'measures-to-reduce-smoking', ref(16, '(a)(ii)'),
+     O.ask(25, 'The government increased the price of a packet of cigarettes', ' Leaving'),
+     'Another measure to reduce smoking — any one',
+     bl('• Consumer awareness / education:', '28 | P a g e'),
+     1, 7, 'One developed measure, 7 marks (4 + 3).')
+q16a3_ask = O.ask(26, 'Outline one social benefit and one private benefit', ' Social benefit:')
+for cid, label, route, start, end, concept in [
+        ('q15-a-iii-social', 'Social benefit:', 'social benefit', '• Greater productivity/reduction',
+         'Private Benefits:', 'social-benefits-of-cigarette-tax'),
+        ('q15-a-iii-private', 'Private benefit:', 'private benefit', '• Increased disposable incomes:',
+         '29 | P a g e', 'private-benefits-of-cigarette-tax')]:
+    pick(cid, '2-2', concept, ref(16, '(a)(iii)', route), f'{q16a3_ask} {label}',
+         f'A {route} — any one', bl(start, end), 1, 4,
+         f'One {route}, 4 marks (2 + 2). The question asks for one of each and the scheme prices each 4.')
+q16b_stem = O.ask(26, 'The annual rate of price inflation in Ireland rose by 5.5%', ' Adapted from')
+pick('q16-b-i', '3-3', 'what-price-inflation-is', ref(16, '(b)(i)'),
+     O.ask(26, 'Explain the term price inflation.', ' (ii)'),
+     'Price inflation — either wording',
+     at('An increase in the general level of prices', '(ii) Discuss two economic effects',
+        ['An increase in the general level', 'A decrease in the value of money']),
+     1, 8, 'Explain the term, 8 marks (6 + 2).', stem=q16b_stem)
+pick('q16-a-ii', '3-3', 'effects-of-inflation-on-citizens', ref(16, '(b)(ii)'),
+     O.ask(26, 'Discuss two economic effects which this rate of price inflation', ' 1. 2.'),
+     'An effect on Irish citizens — any two',
+     bl('• Reduction in purchasing power:', '30 | P a g e'),
+     2, 8, 'Two effects, 8 marks each (4 + 4).', stem=q16b_stem)
+q16c_stem = O.ask(27, 'Excise duties rose by €100 million to almost €1.7bn last year.', ' Adapted from')
+add('q16-c-i', '3-1', 'what-an-indirect-tax-is', ref(16, '(c)(i)'),
+    O.ask(27, 'Excise duties are an example of an indirect tax.', ' Explanation:'), '8', 8,
+    [point('r-response', O.run('An indirect tax is a tax on the consumption', '(ii) The smuggling'), None,
+           'Explain indirect tax and give one example other than excise duties. The scheme gives one 8 '
+           'for the explanation and the example together, with no published split.')],
+    kind='questionTotal', stem=q16c_stem)
+add('q16-c-ii', '3-0', 'what-the-hidden-economy-is', ref(16, '(c)(ii)'),
+    O.ask(27, 'Explain the term hidden economy, giving one other example', ' Explanation:'), '8', 8,
+    [point('r-definition-example', O.run('The hidden economy refers to economic activity', '(iii) Outline one economic'),
+           None, 'Explain the hidden economy and give one example other than cigarette smuggling. The '
+           'scheme gives one 8 for both (its English layout prints this 8 beside the example; the Irish '
+           'scheme places an 8 beside each of (i), (ii) and (iii)).')],
+    kind='questionTotal',
+    stem=O.ask(27, 'The smuggling of cigarettes into Ireland is an example', ' Explain the term'))
+pick('q16-c-iii', '3-0', 'effects-of-the-hidden-economy', ref(16, '(c)(iii)'),
+     O.ask(27, 'Outline one economic effect for the Irish economy of activities', ' One economic effect:'),
+     'An economic effect of the hidden economy — any one',
+     bl('• Loss of revenue to the government:', '31 | P a g e'),
+     1, 8, 'One developed effect, 8 marks.', stem=q16c_stem)
 
-P.cards.append(card(
-    'econ-2022-ol-q12-a-i', 2022, 'ordinary', 'economics-1-1',
-    'plotting-a-market-demand-curve-from-a-schedule', '2022 OL Q12(a)(i)',
-    'Using the above information and on one diagram on the graph paper below, draw and label '
-    'the market demand curve for reusable coffee cups.',
-    '14', 14,
-    [point('r-1', as_option(block(BODY, '5 Q1 D 0 10 20 30 40 50 60', '15 | P a g e')), 14,
-           'Fourteen marks for this curve \u2014 the scheme prints one cell for the whole '
-           'diagram, 28 at 14 per curve. Demand falls as price rises, so the curve runs from '
-           '\u20ac9 at 10,000 units down to \u20ac5 at 50,000, and it has to be LABELLED D.')],
-    'Both curves go on one diagram, and the schedule gives the demand column and the supply '
-    'column side by side. Plotting the wrong column produces a curve sloping the wrong way.',
-    tariff_kind='fixed',
-    figure_key='economics-2022-OL-scheme-p16-q12a-diagram'))
+# A card whose figure slot holds its solution carries the whole printed question.
+for cid, fig in [('seca-q4-ticks', 'p05-q4-question'), ('seca-q7-a-ii-ticks', 'p07-q7aii-question'),
+                 ('sa-q7-b-ii', 'p07-q7b-question'), ('seca-q9-i', 'p08-q9i-question'),
+                 ('q11-b-ii', 'p11-q11bii-question'), ('q12-a-i', 'p13-q12a-question'),
+                 ('q12-b-ii', 'p14-q12b-question'), ('q12-b-iii', 'p14-q12b-question'),
+                 ('q13-a-i-percentage', 'p16-q13ai-question'), ('q13-b-ii', 'p17-q13bii-question'),
+                 ('q14-a-i', 'p19-q14ai-question')]:
+    show_before_reveal(next(c for c in cards if c['id'] == D.prefix + cid), None, PAP + fig)
 
-P.cards.append(card(
-    'econ-2022-ol-q12-a-ii', 2022, 'ordinary', 'economics-1-2',
-    'plotting-a-market-supply-curve-from-a-schedule', '2022 OL Q12(a)(ii)',
-    'Using the above information and on one diagram on the graph paper below, draw and label '
-    'the market supply curve for reusable coffee cups.',
-    '14', 14,
-    [point('r-1', as_option(block(BODY, 'Demand and Supply Curves Reusable Coffee Cups',
-                                  '\u27e828\u27e9')), 14,
-           'Fourteen marks, the second half of the scheme\u2019s 28 at 14 per curve. Supply '
-           'RISES with price \u2014 10,000 units at \u20ac5 up to 50,000 at \u20ac9 \u2014 '
-           'and the curve has to be labelled S.')],
-    'Supply and demand come off the same schedule and cross at \u20ac7 and 30,000 units, the '
-    'one row where the two quantities are equal. That row is the check that both curves are '
-    'plotted right.',
-    tariff_kind='fixed',
-    figure_key='economics-2022-OL-scheme-p16-q12a-diagram'))
 
-P.cards.append(card(
-    'econ-2022-ol-q12-b-ii', 2022, 'ordinary', 'economics-1-1',
-    'showing-a-demand-shift-after-a-celebrity-endorsement', '2022 OL Q12(b)(ii)',
-    'Show, on the above diagram how the change in (i) above might affect the demand curve.',
-    '8', 8,
-    [point('r-1', as_option(block(BODY, 'Demand curve would shift to the right',
-                                  '(iii) Show, on the above diagram, the new equilibrium price')), 8,
-           'Eight marks, and the scheme prints the 8 on the diagram beside D2. More demand at '
-           'every price means the WHOLE curve moves right \u2014 it is a shift, not a slide '
-           'along the old curve.')],
-    'A celebrity endorsement changes tastes, which is a non-price determinant, so the curve '
-    'moves. Moving along the existing curve would mean the price had changed, and nothing here '
-    'says it has.',
-    tariff_kind='fixed',
-    figure_key='economics-2022-OL-scheme-p17-q12b-diagram'))
+# ── Withdrawn halves ──────────────────────────────────────────────────────────
+# Earlier extractors split four jointly priced answers into one card per part.
+# Each half is still emitted, lifted from its own part, so that
+# card-corrections.json can withdraw it by ID and name the combined card that
+# now carries its saved progress (cardAliases.ts). None of these ships.
+WITHDRAWN = [
+    ('q12-a-ii', 'q12-a-i', 'The market supply curve', ['Demand and Supply Curves Reusable Coffee Cups'], 14),
+    ('sa-q3-ii', 'sa-q3-i', 'One disadvantage for local retailers',
+     bl('• Reduced sales / profits:', '4. Apple released'), 6),
+    ('sa-q8-ii', 'sa-q8-i', 'One opportunity cost for the government',
+     [O.run('The money the government could have used', '9 | P a g e')], 6),
+    ('q14-b-ii-water', 'q14-b-i', 'Why some citizens would be unhappy',
+     bl('• Lower standard of living:', '22 | P a g e'), 7),
+]
+for old, canonical, label, options, per in WITHDRAWN:
+    base = next(c for c in cards if c['id'] == D.prefix + canonical)
+    pick(old, base['topicId'].removeprefix('economics-'), base['conceptId'] + '-withdrawn-half',
+         base['questionRef'], f"{base['questionText']} Withdrawn half: {label}.", label, options, 1, per,
+         f'Withdrawn: this part is answered within {D.prefix + canonical}.', stem=base.get('stem', ''),
+         section=base['section'])
 
-P.cards.append(card(
-    'econ-2022-ol-q12-b-iii', 2022, 'ordinary', 'economics-1-0',
-    'reading-the-new-equilibrium-after-a-demand-shift', '2022 OL Q12(b)(iii)',
-    'Show, on the above diagram, the new equilibrium price (P2) and the new equilibrium '
-    'quantity (Q2) as a result of (ii) above.',
-    '6 + 6', 12,
-    [point('r-1', as_option(block(BODY, 'D2 8 D Q1 Q2 6 Quantity', '(i) If a celebrity')), 12,
-           'Six for P2 and six for Q2 \u2014 the scheme prints both figures on the diagram '
-           'itself. The new equilibrium is where D2 cuts the UNCHANGED supply curve, so both '
-           'price and quantity rise.')],
-    'Supply has not moved, so the new crossing point slides UP the existing S curve. Students '
-    'who shift supply as well end up with a quantity change and no price change.',
-    tariff_kind='fixed',
-    figure_key='economics-2022-OL-scheme-p17-q12b-diagram'))
-
-P.cards.append(card(
-    'econ-2022-ol-q14-a-i', 2022, 'ordinary', 'economics-0-1',
-    'the-four-factors-of-production-in-a-yogurt-plant', '2022 OL Q14(a)(i)',
-    'Complete the table below to show your understanding of the factors of production used in '
-    'the production of yogurt. Some of the information has been completed for you.',
-    '4 x 6', 24,
-    [point('r-1', as_option(block(BODY, '2. LABOUR The human effort involved in the production of',
-                                  'Machinery')), 24,
-           'Four factors at six marks each. LAND is anything supplied by nature \u2014 which '
-           'here means the milk and berries as well as the ground; CAPITAL is what people have '
-           'MADE to produce with; ENTERPRISE is the risk-taker, the Cleary family.')],
-    'The trap is Land: students read it as the site only. In economics it is every natural '
-    'resource that goes in, which is why milk, sugar and berries are its examples and the '
-    'factory building belongs to Capital instead.',
-    tariff_kind='fixed',
-    figure_key='economics-2022-OL-scheme-p22-q14ai-table'))
-
-P.emit()
+if __name__ == '__main__':
+    emit(cards)
