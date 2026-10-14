@@ -18630,4 +18630,1190 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q1-a", topicId: "cons-1-5", conceptId: "flat-roof-eaves-section-a",
+    section: "B", questionRef: "2013 OL Q1(a)",
+    stem: "The eaves of a timber flat roof for a bathroom is constructed as shown in the sketch. The roof is covered with layers of bituminous felt on plywood decking on 200 mm × 50 mm roof joists. The roof is insulated and there is a plasterboard ceiling beneath. The external wall supporting the flat roof is a 350 mm concrete block wall with an insulated cavity.",
+    questionText: "To a scale of 1:5, draw a vertical section through the eaves of the flat roof and through the external wall. The section should show the typical construction details from 400 mm below the wallplate, through the wall, fascia, soffit and roof joists and include the roof surface. Show 1.5 metres length of roof joist and include four typical dimensions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 39,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 7 of the above details ( 5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: three layers of bituminous felt; plywood decking 25 mm; 50 × 50 mm counter battens on a firring piece; roof/ceiling joists 200 × 50 mm; at least 150 mm insulation; 12.5 mm insulated foil-backed plasterboard and skim; an airtightness seal taped to the masonry; a 100 × 75 mm wallplate with straps; a cavity barrier or non-combustible tile or slate; 15 mm internal plaster; 100 mm inner leaf; cavity insulation; 100 mm outer leaf; 19 mm render; fascia and soffit.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "dimensions", kind: "criterion", verbatim: "Four typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Timber flat roof eaves section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the rainwater detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q1-original.png",
+          "srcHash": "5eaf434354bdba475bb1056dbe387b58",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 1: the printed question with a sketch of the felted flat roof at the eaves.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q1-section.png",
+          "srcHash": "0f29ed2feb642efefdb3c7237115a5d0",
+          "alt": "SEC model sections through the flat roof eaves on the cavity wall, with the specification list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q1-b", topicId: "cons-3-10", conceptId: "flat-roof-eaves-section-b",
+    section: "B", questionRef: "2013 OL Q1(b)",
+    stem: "The eaves of a timber flat roof for a bathroom is constructed as shown in the sketch. The roof is covered with layers of bituminous felt on plywood decking on 200 mm × 50 mm roof joists. The roof is insulated and there is a plasterboard ceiling beneath. The external wall supporting the flat roof is a 350 mm concrete block wall with an insulated cavity.",
+    questionText: "On your drawing, show how rainwater is removed from the flat roof.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 11,
+    rows: [
+    { id: "rainwater", kind: "criterion", verbatim: "Eave gutter and downpipe", marks: 3, contextNote: "Show the eaves gutter and downpipe, as in the scheme: the felt turned down over a 50 × 25 mm drip batten into the gutter fixed to the fascia, the firring giving the fall, and a downpipe to ground level.", permittedMarks: [0,1,2,3] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Timber flat roof eaves section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the rainwater detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q1-original.png",
+          "srcHash": "5eaf434354bdba475bb1056dbe387b58",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 1: the printed question with a sketch of the felted flat roof at the eaves.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q1-rainwater",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q1-rainwater.png",
+          "srcHash": "e87bcd24b8d97c4f5a8c17e9e05a56cc",
+          "alt": "SEC 2013 Ordinary marking scheme notes on removing rainwater from the flat roof.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q1-complete", topicId: "cons-1-5", conceptId: "flat-roof-eaves-section-complete",
+    section: "B", questionRef: "2013 OL Q1 — complete",
+    stem: "The eaves of a timber flat roof for a bathroom is constructed as shown in the sketch. The roof is covered with layers of bituminous felt on plywood decking on 200 mm × 50 mm roof joists. The roof is insulated and there is a plasterboard ceiling beneath. The external wall supporting the flat roof is a 350 mm concrete block wall with an insulated cavity.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the eaves of the flat roof and through the external wall. The section should show the typical construction details from 400 mm below the wallplate, through the wall, fascia, soffit and roof joists and include the roof surface. Show 1.5 metres length of roof joist and include four typical dimensions. (b) On your drawing, show how rainwater is removed from the flat roof.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 7 of the above details ( 5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: three layers of bituminous felt; plywood decking 25 mm; 50 × 50 mm counter battens on a firring piece; roof/ceiling joists 200 × 50 mm; at least 150 mm insulation; 12.5 mm insulated foil-backed plasterboard and skim; an airtightness seal taped to the masonry; a 100 × 75 mm wallplate with straps; a cavity barrier or non-combustible tile or slate; 15 mm internal plaster; 100 mm inner leaf; cavity insulation; 100 mm outer leaf; 19 mm render; fascia and soffit.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Four typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-rainwater", kind: "criterion", verbatim: "Eave gutter and downpipe", marks: 3, contextNote: "Show the eaves gutter and downpipe, as in the scheme: the felt turned down over a 50 × 25 mm drip batten into the gutter fixed to the fascia, the firring giving the fall, and a downpipe to ground level.", permittedMarks: [0,1,2,3] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.", permittedMarks: [0,4,6,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2013-ol-q1-a","label":"a","marks":39,"rowIds":["a-details","a-dimensions"]},{"sourceCardId":"cons-2013-ol-q1-b","label":"b","marks":11,"rowIds":["b-rainwater","b-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Timber flat roof eaves section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the rainwater detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q1-original.png",
+          "srcHash": "5eaf434354bdba475bb1056dbe387b58",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 1: the printed question with a sketch of the felted flat roof at the eaves.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q1-section.png",
+          "srcHash": "0f29ed2feb642efefdb3c7237115a5d0",
+          "alt": "SEC model sections through the flat roof eaves on the cavity wall, with the specification list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q2-a", topicId: "cons-6-2", conceptId: "cavity-internal-insulation-a",
+    section: "B", questionRef: "2013 OL Q2(a)",
+    stem: "The sketch shows a dwelling house which was built over ten years ago. The external walls of the house are 300 mm concrete block walls with an un-insulated cavity. It is proposed to improve the insulation properties of the external walls by: insulating the cavity and adding a system of insulation to the inside of the walls.",
+    questionText: "Using notes and neat freehand sketches, show how to apply each system of insulation to the wall. For each system of insulation, specify the insulation material used and include details of the internal surface finish of the wall.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "cavity-notes", kind: "criterion", verbatim: "Insulating the cavity – Notes", marks: 12, contextNote: "Two valid descriptions 4 each, and the insulation type and internal finish 4. Such as: 22 mm holes drilled through the outer leaf at 800 mm horizontally and 1350 mm vertically, with extra holes under cills and over heads; polystyrene beads pumped in with a light glue by a specialist; the holes filled and painted to match.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "cavity-sketch", kind: "criterion", verbatim: "Quality of sketch and details (excellent, good, fair)", marks: 8, contextNote: "Quality of the cavity-fill sketch and details: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "internal-notes", kind: "criterion", verbatim: "Adding a system of insulating to the inside of the walls – Notes", marks: 12, contextNote: "Two valid descriptions 4 each, and the insulation type and internal finish 4. Such as: 50 × 50 mm battens at 400 mm centres with insulation between, a vapour barrier and 12 mm plasterboard and skim; or insulated dry-lining board glued and mechanically fixed, joints taped and filled, and emulsion paint. Insulation such as fibreglass, polystyrene, polyurethane, cork, hemp or sheep’s wool.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "internal-sketch", kind: "criterion", verbatim: "Quality of sketch and details (excellent, good, fair)", marks: 8, contextNote: "Quality of the internal-insulation sketch and details: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Cavity fill and internal insulation of external walls",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed systems of insulation in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q2-original.png",
+          "srcHash": "f354d65035dfae0408b35c6bfa840255",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 2: the printed question with a sketch of the dwelling house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q2-systems",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q2-systems.png",
+          "srcHash": "279b977cae7853f8e7eab512b6686d5e",
+          "alt": "SEC 2013 Ordinary marking scheme notes and sketches on filling the cavity and on insulating the inside of the walls.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q2-b", topicId: "cons-6-3", conceptId: "cavity-internal-insulation-b",
+    section: "B", questionRef: "2013 OL Q2(b)",
+    stem: "The sketch shows a dwelling house which was built over ten years ago. The external walls of the house are 300 mm concrete block walls with an un-insulated cavity. It is proposed to improve the insulation properties of the external walls by: insulating the cavity and adding a system of insulation to the inside of the walls.",
+    questionText: "List two advantages of improving the insulation properties of the external walls of the house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 5, contextNote: "Such as: less heat loss; a warmer house and a better indoor environment.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 5, contextNote: "A second, different advantage. Such as: lower energy bills, better for the environment; a better U-value and Building Energy Rating.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Cavity fill and internal insulation of external walls",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed systems of insulation in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q2-original.png",
+          "srcHash": "f354d65035dfae0408b35c6bfa840255",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 2: the printed question with a sketch of the dwelling house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q2-advantages",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q2-advantages.png",
+          "srcHash": "177a02ee071e531ed49fe0891ae8f8ad",
+          "alt": "SEC 2013 Ordinary marking scheme notes on the advantages of insulating the external walls.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q2-complete", topicId: "cons-6-2", conceptId: "cavity-internal-insulation-complete",
+    section: "B", questionRef: "2013 OL Q2 — complete",
+    stem: "The sketch shows a dwelling house which was built over ten years ago. The external walls of the house are 300 mm concrete block walls with an un-insulated cavity. It is proposed to improve the insulation properties of the external walls by: insulating the cavity and adding a system of insulation to the inside of the walls.",
+    questionText: "(a) Using notes and neat freehand sketches, show how to apply each system of insulation to the wall. For each system of insulation, specify the insulation material used and include details of the internal surface finish of the wall. (b) List two advantages of improving the insulation properties of the external walls of the house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-cavity-notes", kind: "criterion", verbatim: "Insulating the cavity – Notes", marks: 12, contextNote: "Two valid descriptions 4 each, and the insulation type and internal finish 4. Such as: 22 mm holes drilled through the outer leaf at 800 mm horizontally and 1350 mm vertically, with extra holes under cills and over heads; polystyrene beads pumped in with a light glue by a specialist; the holes filled and painted to match.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-cavity-sketch", kind: "criterion", verbatim: "Quality of sketch and details (excellent, good, fair)", marks: 8, contextNote: "Quality of the cavity-fill sketch and details: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "a-internal-notes", kind: "criterion", verbatim: "Adding a system of insulating to the inside of the walls – Notes", marks: 12, contextNote: "Two valid descriptions 4 each, and the insulation type and internal finish 4. Such as: 50 × 50 mm battens at 400 mm centres with insulation between, a vapour barrier and 12 mm plasterboard and skim; or insulated dry-lining board glued and mechanically fixed, joints taped and filled, and emulsion paint. Insulation such as fibreglass, polystyrene, polyurethane, cork, hemp or sheep’s wool.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-internal-sketch", kind: "criterion", verbatim: "Quality of sketch and details (excellent, good, fair)", marks: 8, contextNote: "Quality of the internal-insulation sketch and details: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 5, contextNote: "Such as: less heat loss; a warmer house and a better indoor environment.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 5, contextNote: "A second, different advantage. Such as: lower energy bills, better for the environment; a better U-value and Building Energy Rating.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2013-ol-q2-a","label":"a","marks":40,"rowIds":["a-cavity-notes","a-cavity-sketch","a-internal-notes","a-internal-sketch"]},{"sourceCardId":"cons-2013-ol-q2-b","label":"b","marks":10,"rowIds":["b-advantage-1","b-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Cavity fill and internal insulation of external walls",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed systems of insulation in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q2-original.png",
+          "srcHash": "f354d65035dfae0408b35c6bfa840255",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 2: the printed question with a sketch of the dwelling house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q2-systems",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q2-systems.png",
+          "srcHash": "279b977cae7853f8e7eab512b6686d5e",
+          "alt": "SEC 2013 Ordinary marking scheme notes and sketches on filling the cavity and on insulating the inside of the walls.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q3-a", topicId: "cons-5-2", conceptId: "basin-bath-water-supply-a",
+    section: "B", questionRef: "2013 OL Q3(a)",
+    questionText: "Using a single-line labelled diagram, show the pipework necessary to supply hot and cold water to a wash hand basin and a bath, as shown in the sketch. Include the following in your diagram: water storage tank and overflow; rising main; hot water cylinder and pipework; insulation to the water storage tank and to all pipework; location of all necessary valves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 43,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 7 of the above details (5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: rising main; ballvalve; cold water storage tank; overflow; cold feed from the storage tank to the indirect cylinder; indirect hot water cylinder; expansion pipe from the cylinder; hot water supply to the appliances; cold water supply from the storage tank to the appliances; valves; insulation to the tank, cylinder and pipework; labelling.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Hot and cold water to a basin and bath, and an easy-use tap",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-seven list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q3-original.png",
+          "srcHash": "237a45a696060f56f48980029e94ca10",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 3: the printed question with a sketch of a bathroom with a bath and wash hand basin.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q3-system.png",
+          "srcHash": "074e50b184db1f82a8ee7f9ee53ee48e",
+          "alt": "SEC single-line diagram of the hot and cold supply to the bath and basin, with the list of components.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q3-b", topicId: "cons-5-6", conceptId: "basin-bath-water-supply-b",
+    section: "B", questionRef: "2013 OL Q3(b)",
+    questionText: "Show, using notes and neat freehand sketches, a design for a tap which will be easy to use by a person with limited hand mobility.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "primary", kind: "criterion", verbatim: "Primary communication of relevant information", marks: 4, contextNote: "Such as: a spatula lever tap needing a quarter turn from off to full flow; a tall swivel-neck mixer for filling large containers.", permittedMarks: [0,1,2,3,4] },
+    { id: "other", kind: "criterion", verbatim: "Other communication of relevant information", marks: 3, contextNote: "Such as: taps placed within easy reach, perhaps to the side; water pressure adjusted so it does not spray or splash.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Hot and cold water to a basin and bath, and an easy-use tap",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-seven list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q3-original.png",
+          "srcHash": "237a45a696060f56f48980029e94ca10",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 3: the printed question with a sketch of a bathroom with a bath and wash hand basin.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q3-tap",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q3-tap.png",
+          "srcHash": "fd481c07e2448d299ecabf8c81ae6d19",
+          "alt": "SEC 2013 Ordinary marking scheme notes and sketches of lever taps for limited hand mobility.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q3-complete", topicId: "cons-5-2", conceptId: "basin-bath-water-supply-complete",
+    section: "B", questionRef: "2013 OL Q3 — complete",
+    questionText: "(a) Using a single-line labelled diagram, show the pipework necessary to supply hot and cold water to a wash hand basin and a bath, as shown in the sketch. Include the following in your diagram: water storage tank and overflow; rising main; hot water cylinder and pipework; insulation to the water storage tank and to all pipework; location of all necessary valves. (b) Show, using notes and neat freehand sketches, a design for a tap which will be easy to use by a person with limited hand mobility.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 7 of the above details (5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: rising main; ballvalve; cold water storage tank; overflow; cold feed from the storage tank to the indirect cylinder; indirect hot water cylinder; expansion pipe from the cylinder; hot water supply to the appliances; cold water supply from the storage tank to the appliances; valves; insulation to the tank, cylinder and pipework; labelling.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-primary", kind: "criterion", verbatim: "Primary communication of relevant information", marks: 4, contextNote: "Such as: a spatula lever tap needing a quarter turn from off to full flow; a tall swivel-neck mixer for filling large containers.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-other", kind: "criterion", verbatim: "Other communication of relevant information", marks: 3, contextNote: "Such as: taps placed within easy reach, perhaps to the side; water pressure adjusted so it does not spray or splash.", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2013-ol-q3-a","label":"a","marks":43,"rowIds":["a-details","a-presentation"]},{"sourceCardId":"cons-2013-ol-q3-b","label":"b","marks":7,"rowIds":["b-primary","b-other"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Hot and cold water to a basin and bath, and an easy-use tap",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-seven list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q3-original.png",
+          "srcHash": "237a45a696060f56f48980029e94ca10",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 3: the printed question with a sketch of a bathroom with a bath and wash hand basin.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q3-system.png",
+          "srcHash": "074e50b184db1f82a8ee7f9ee53ee48e",
+          "alt": "SEC single-line diagram of the hot and cold supply to the bath and basin, with the list of components.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q4-a", topicId: "cons-2-1", conceptId: "setting-out-strip-foundation-a",
+    section: "B", questionRef: "2013 OL Q4(a)",
+    questionText: "One corner of a trench for a strip foundation is shown in the sketch. Describe, using notes and neat freehand sketches, the setting-out of a typical strip foundation under the following headings: levelling the profiles; locating the position of the trench; squaring the corner of the trench; locating the finished level of the concrete in the foundation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 36,
+    rows: [
+    { id: "profiles", kind: "criterion", verbatim: "Levelling the profiles", marks: 9, contextNote: "Primary communication 5 and other communication 4. Such as: profiles of two uprights and a cross rail, levelled from a secured datum point with a laser, optical or water level, the top usually at finished floor level.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "trench", kind: "criterion", verbatim: "Locating the position of the trench", marks: 9, contextNote: "Primary communication 5 and other communication 4. Such as: lines stretched across the profile rails at the four corners locate the outside of the wall; the wall and trench widths marked on the profiles.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "square", kind: "criterion", verbatim: "Squaring the corner of the trench", marks: 9, contextNote: "Primary communication 5 and other communication 4. Such as: lines at right angles to the building line set with a 3, 4, 5 triangle; the rectangle checked by measuring the diagonals.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "level", kind: "criterion", verbatim: "Locating the finished level of the concrete in the foundation", marks: 9, contextNote: "Primary communication 5 and other communication 4. Such as: pegs driven in the trench with their tops level with the top of the foundation, set by laser or with boning rods and a traveller.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Setting out and a strip foundation",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All four printed headings in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q4-original.png",
+          "srcHash": "e6e0a65211bb7ab16a24457b1a5b4201",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 4: the printed question with a sketch of the corner of a foundation trench with its profiles.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q4-setting-out",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q4-setting-out.png",
+          "srcHash": "daf13122ff55385f7f3255911a8f50de",
+          "alt": "SEC 2013 Ordinary marking scheme notes and sketches on levelling the profiles, locating and squaring the trench and setting the concrete level.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q4-b", topicId: "cons-2-4", conceptId: "setting-out-strip-foundation-b",
+    section: "B", questionRef: "2013 OL Q4(b)",
+    questionText: "Draw a sketch of a typical strip foundation for a 350 mm concrete block external wall and show the position of the reinforcing in the foundation. Include three typical dimensions in your sketch.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "reinforcement", kind: "criterion", verbatim: "Position of reinforcement", marks: 3, contextNote: "The reinforcing steel shown in the lower part of the foundation, as in the scheme’s model sketch.", permittedMarks: [0,1,2,3] },
+    { id: "dimensions", kind: "criterion", verbatim: "Typical dimensions", marks: 3, contextNote: "Three typical dimensions, 1 each.", permittedMarks: [0,1,2,3] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Setting out and a strip foundation",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All four printed headings in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q4-original.png",
+          "srcHash": "e6e0a65211bb7ab16a24457b1a5b4201",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 4: the printed question with a sketch of the corner of a foundation trench with its profiles.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q4-strip",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q4-strip.png",
+          "srcHash": "95d45bcd07c520a7d69d77f76996df57",
+          "alt": "SEC model sketch of a reinforced strip foundation with dimensions.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q4-complete", topicId: "cons-2-1", conceptId: "setting-out-strip-foundation-complete",
+    section: "B", questionRef: "2013 OL Q4 — complete",
+    questionText: "(a) One corner of a trench for a strip foundation is shown in the sketch. Describe, using notes and neat freehand sketches, the setting-out of a typical strip foundation under the following headings: levelling the profiles; locating the position of the trench; squaring the corner of the trench; locating the finished level of the concrete in the foundation. (b) Draw a sketch of a typical strip foundation for a 350 mm concrete block external wall and show the position of the reinforcing in the foundation. Include three typical dimensions in your sketch.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-profiles", kind: "criterion", verbatim: "Levelling the profiles", marks: 9, contextNote: "Primary communication 5 and other communication 4. Such as: profiles of two uprights and a cross rail, levelled from a secured datum point with a laser, optical or water level, the top usually at finished floor level.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "a-trench", kind: "criterion", verbatim: "Locating the position of the trench", marks: 9, contextNote: "Primary communication 5 and other communication 4. Such as: lines stretched across the profile rails at the four corners locate the outside of the wall; the wall and trench widths marked on the profiles.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "a-square", kind: "criterion", verbatim: "Squaring the corner of the trench", marks: 9, contextNote: "Primary communication 5 and other communication 4. Such as: lines at right angles to the building line set with a 3, 4, 5 triangle; the rectangle checked by measuring the diagonals.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "a-level", kind: "criterion", verbatim: "Locating the finished level of the concrete in the foundation", marks: 9, contextNote: "Primary communication 5 and other communication 4. Such as: pegs driven in the trench with their tops level with the top of the foundation, set by laser or with boning rods and a traveller.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "b-reinforcement", kind: "criterion", verbatim: "Position of reinforcement", marks: 3, contextNote: "The reinforcing steel shown in the lower part of the foundation, as in the scheme’s model sketch.", permittedMarks: [0,1,2,3] },
+    { id: "b-dimensions", kind: "criterion", verbatim: "Typical dimensions", marks: 3, contextNote: "Three typical dimensions, 1 each.", permittedMarks: [0,1,2,3] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2013-ol-q4-a","label":"a","marks":36,"rowIds":["a-profiles","a-trench","a-square","a-level"]},{"sourceCardId":"cons-2013-ol-q4-b","label":"b","marks":14,"rowIds":["b-reinforcement","b-dimensions","b-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Setting out and a strip foundation",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All four printed headings in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q4-original.png",
+          "srcHash": "e6e0a65211bb7ab16a24457b1a5b4201",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 4: the printed question with a sketch of the corner of a foundation trench with its profiles.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q4-setting-out",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q4-setting-out.png",
+          "srcHash": "daf13122ff55385f7f3255911a8f50de",
+          "alt": "SEC 2013 Ordinary marking scheme notes and sketches on levelling the profiles, locating and squaring the trench and setting the concrete level.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q5-section", topicId: "cons-1-5", conceptId: "stud-partition-floor-section-section",
+    section: "B", questionRef: "2013 OL Q5",
+    stem: "A non load-bearing stud partition separates two upstairs bedrooms in a dwelling house. The floor and partition are supported on a 215 mm solid block wall, as shown in the sketch. The floor is a floating tongued and grooved oak floor on plywood, on 200 mm × 50 mm joists with a plasterboard ceiling beneath.",
+    questionText: "To a scale of 1:5, draw a vertical section through the stud partition and the floor. Show the typical construction details from a level 300 mm below the plasterboard ceiling, through the wall, floor and partition to a point 400 mm above the finished floor level. Include three typical dimensions on your drawing. Note: Show a floor width of 500 mm at each side of the partition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 6 of the above details ( 6 marks each)", marks: 36, contextNote: "Credit the best SIX acceptable details at 6 marks each, capped at 36. Marked details: stud partition 100 × 50 mm; insulation between the studs; 12.5 mm plasterboard; 120 × 20 mm skirting; floating tongued and grooved oak floor; bubble underlay or matting; 18–25 mm plywood; 200 × 50 mm joists; at least 150 mm insulation between the joists; plasterboard, plaster and vapour barrier; 15 mm plaster; 215 mm solid block wall.", permittedMarks: [0,6,12,18,24,30,36] },
+    { id: "dimensions", kind: "criterion", verbatim: "Three typical dimensions", marks: 6, contextNote: "Three typical dimensions, 2 each.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the section: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Stud partition on a timber floor section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Question 5 has no lettered parts: one drawing, marked as a whole."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q5-original.png",
+          "srcHash": "733695460cd18b6341927b084f1decaa",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 5: the printed question with a sketch of the stud partition on the timber floor and block wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q5-scheme.png",
+          "srcHash": "f1becbb8e9e3eb333e3fb984d5b8f7a0",
+          "alt": "SEC model section through the stud partition and the timber floor, with the specification list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q6-a", topicId: "cons-1-8", conceptId: "site-ppe-a",
+    section: "B", questionRef: "2013 OL Q6(a)",
+    questionText: "For each of the following, draw the particular safety sign to indicate that the following personal protective equipment (ppe) must be worn on a construction site: eye protection; ear protection; safety gloves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
+    rows: [
+    { id: "eye-sign", kind: "criterion", verbatim: "Eye protection Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "The mandatory blue sign for eye protection, as in the scheme: quality of the sketch, excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    { id: "ear-sign", kind: "criterion", verbatim: "Ear protection Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "The mandatory blue sign for ear protection, as in the scheme: quality of the sketch, excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    { id: "gloves-sign", kind: "criterion", verbatim: "Safety gloves Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "The mandatory blue sign for safety gloves, as in the scheme: quality of the sketch, excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Personal protective equipment on site",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed items in (a) and (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q6-original.png",
+          "srcHash": "9dcdf05fc2d8564a62e82d13aafd4b46",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 6: the printed question with a sketch of a building site.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q6-signs",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q6-signs.png",
+          "srcHash": "51d6d7411a529efcf576a171099c7450",
+          "alt": "SEC safety signs for eye protection, ear protection and safety gloves.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q6-b", topicId: "cons-1-8", conceptId: "site-ppe-b",
+    section: "B", questionRef: "2013 OL Q6(b)",
+    questionText: "For each item of personal protective equipment listed at 6(a) above, outline one specific task on a building site where workers must wear the personal protective equipment.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
+    rows: [
+    { id: "eye", kind: "criterion", verbatim: "Eye protection", marks: 6, contextNote: "Such as: drilling or cutting concrete or steel; chipping paint; using a hammer, angle grinder or nail gun; welding.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "ear", kind: "criterion", verbatim: "Ear protection", marks: 6, contextNote: "Such as: using machinery, drills or pneumatic tools; cutting equipment; continuous noise of 85–90 decibels or more.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "gloves", kind: "criterion", verbatim: "Safety gloves", marks: 6, contextNote: "Such as: handling sharp edges such as glass; hot bitumen on flat roofs; vibrating machinery; corrosive or toxic substances.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Personal protective equipment on site",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed items in (a) and (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q6-original.png",
+          "srcHash": "9dcdf05fc2d8564a62e82d13aafd4b46",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 6: the printed question with a sketch of a building site.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q6-tasks",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q6-tasks.png",
+          "srcHash": "ddaf0f8fbc2ae961712bc8cce58fe641",
+          "alt": "SEC 2013 Ordinary marking scheme notes on tasks needing eye protection, ear protection and safety gloves.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q6-c", topicId: "cons-1-8", conceptId: "site-ppe-c",
+    section: "B", questionRef: "2013 OL Q6(c)",
+    questionText: "List one other item of personal protective equipment that must be worn at all times on a construction site and discuss the reasons why the wearing of this item is compulsory.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "item", kind: "criterion", verbatim: "Item of personal protection equipment", marks: 6, contextNote: "Such as: a high visibility jacket; a safety helmet; steel cap boots.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "reason-1", kind: "criterion", verbatim: "Valid reason one", marks: 4, contextNote: "A reason matching the item. Such as: a high visibility jacket keeps workers visible, especially near machinery; a helmet protects the head from falling objects.", permittedMarks: [0,1,2,3,4] },
+    { id: "reason-2", kind: "criterion", verbatim: "Valid reason two", marks: 4, contextNote: "A second, different reason. Such as: extra safety for workers; steel caps protect the toes from falling items.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Personal protective equipment on site",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed items in (a) and (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q6-original.png",
+          "srcHash": "9dcdf05fc2d8564a62e82d13aafd4b46",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 6: the printed question with a sketch of a building site.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q6-other",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q6-other.png",
+          "srcHash": "03e5cdd8b0e439736f34a5e5ab916510",
+          "alt": "SEC 2013 Ordinary marking scheme notes on a high visibility jacket, a safety helmet and steel cap boots (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q6-complete", topicId: "cons-1-8", conceptId: "site-ppe-complete",
+    section: "B", questionRef: "2013 OL Q6 — complete",
+    questionText: "(a) For each of the following, draw the particular safety sign to indicate that the following personal protective equipment (ppe) must be worn on a construction site: eye protection; ear protection; safety gloves. (b) For each item of personal protective equipment listed at 6(a) above, outline one specific task on a building site where workers must wear the personal protective equipment. (c) List one other item of personal protective equipment that must be worn at all times on a construction site and discuss the reasons why the wearing of this item is compulsory.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-eye-sign", kind: "criterion", verbatim: "Eye protection Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "The mandatory blue sign for eye protection, as in the scheme: quality of the sketch, excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    { id: "a-ear-sign", kind: "criterion", verbatim: "Ear protection Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "The mandatory blue sign for ear protection, as in the scheme: quality of the sketch, excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    { id: "a-gloves-sign", kind: "criterion", verbatim: "Safety gloves Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "The mandatory blue sign for safety gloves, as in the scheme: quality of the sketch, excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    { id: "b-eye", kind: "criterion", verbatim: "Eye protection", marks: 6, contextNote: "Such as: drilling or cutting concrete or steel; chipping paint; using a hammer, angle grinder or nail gun; welding.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-ear", kind: "criterion", verbatim: "Ear protection", marks: 6, contextNote: "Such as: using machinery, drills or pneumatic tools; cutting equipment; continuous noise of 85–90 decibels or more.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-gloves", kind: "criterion", verbatim: "Safety gloves", marks: 6, contextNote: "Such as: handling sharp edges such as glass; hot bitumen on flat roofs; vibrating machinery; corrosive or toxic substances.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-item", kind: "criterion", verbatim: "Item of personal protection equipment", marks: 6, contextNote: "Such as: a high visibility jacket; a safety helmet; steel cap boots.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-reason-1", kind: "criterion", verbatim: "Valid reason one", marks: 4, contextNote: "A reason matching the item. Such as: a high visibility jacket keeps workers visible, especially near machinery; a helmet protects the head from falling objects.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-reason-2", kind: "criterion", verbatim: "Valid reason two", marks: 4, contextNote: "A second, different reason. Such as: extra safety for workers; steel caps protect the toes from falling items.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2013-ol-q6-a","label":"a","marks":18,"rowIds":["a-eye-sign","a-ear-sign","a-gloves-sign"]},{"sourceCardId":"cons-2013-ol-q6-b","label":"b","marks":18,"rowIds":["b-eye","b-ear","b-gloves"]},{"sourceCardId":"cons-2013-ol-q6-c","label":"c","marks":14,"rowIds":["c-item","c-reason-1","c-reason-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Personal protective equipment on site",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed items in (a) and (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q6-original.png",
+          "srcHash": "9dcdf05fc2d8564a62e82d13aafd4b46",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 6: the printed question with a sketch of a building site.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q6-signs",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q6-signs.png",
+          "srcHash": "51d6d7411a529efcf576a171099c7450",
+          "alt": "SEC safety signs for eye protection, ear protection and safety gloves.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q7-a", topicId: "cons-4-2", conceptId: "ground-floor-junction-a",
+    section: "B", questionRef: "2013 OL Q7(a)",
+    stem: "A dwelling house has an insulated solid concrete ground floor which abuts a 350 mm concrete block external wall with an insulated cavity, as shown in the sketch. The floor has a sand/cement fine screed finish.",
+    questionText: "Show, using notes and neat freehand sketches, the typical design detailing at the junction of the floor and wall. Label the floor components and include three typical dimensions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 4, contextNote: "Such as: a 25–50 mm screed on a 100–150 mm slab, taped to the wall for airtightness.", permittedMarks: [0,1,2,3,4] },
+    { id: "detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 4, contextNote: "A second, different detail. Such as: 200 mm floor insulation on a DPM/radon barrier, on sand blinding and at least 150 mm hardcore.", permittedMarks: [0,1,2,3,4] },
+    { id: "dimensions", kind: "criterion", verbatim: "Three typical dimensions", marks: 6, contextNote: "Three typical dimensions, 2 each.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "labelling", kind: "criterion", verbatim: "Labelling the floor components and other details", marks: 8, contextNote: "The floor components labelled, as in the scheme’s model sketch.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Insulated solid ground floor junction and bathroom floor covering",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The floor covering is an open response; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q7-original.png",
+          "srcHash": "8c854180952e2ea08cc221a938ccf3a7",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 7: the printed question with a sketch of the ground floor meeting the cavity wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q7-floor",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q7-floor.png",
+          "srcHash": "45886df976cc39b7f7e9f78d852f765c",
+          "alt": "SEC model sketch of the insulated solid ground floor at the cavity wall, with the specification list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q7-b", topicId: "cons-6-2", conceptId: "ground-floor-junction-b",
+    section: "B", questionRef: "2013 OL Q7(b)",
+    stem: "A dwelling house has an insulated solid concrete ground floor which abuts a 350 mm concrete block external wall with an insulated cavity, as shown in the sketch. The floor has a sand/cement fine screed finish.",
+    questionText: "Show clearly on your sketch the typical design detailing which will prevent the formation of a cold bridge at the junction of the floor and the wall.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "cold-bridge", kind: "criterion", verbatim: "Shown on sketch", marks: 5, contextNote: "Such as: vertical perimeter insulation between the slab and the inner leaf, overlapping the wall insulation by 150–225 mm; lightweight insulating blocks in the inner leaf from the floor insulation to floor level.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Insulated solid ground floor junction and bathroom floor covering",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The floor covering is an open response; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q7-original.png",
+          "srcHash": "8c854180952e2ea08cc221a938ccf3a7",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 7: the printed question with a sketch of the ground floor meeting the cavity wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q7-cold-bridge",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q7-cold-bridge.png",
+          "srcHash": "c701c122e9185d4089a0b73ab5b041fd",
+          "alt": "SEC 2013 Ordinary marking scheme notes on preventing a cold bridge at the floor and wall junction.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q7-c", topicId: "cons-4-2", conceptId: "ground-floor-junction-c",
+    section: "B", questionRef: "2013 OL Q7(c)",
+    stem: "A dwelling house has an insulated solid concrete ground floor which abuts a 350 mm concrete block external wall with an insulated cavity, as shown in the sketch. The floor has a sand/cement fine screed finish.",
+    questionText: "Recommend a suitable floor covering for a bathroom on the ground floor of the house and give two reasons for your choice of floor covering.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "covering", kind: "criterion", verbatim: "Type of floor covering", marks: 5, contextNote: "Such as: ceramic tiles; vinyl; cork tiles; heavy-duty linoleum; marmoleum; natural stone.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "reason-1", kind: "criterion", verbatim: "Reason one", marks: 5, contextNote: "A reason matching the covering. Such as: ceramic tiles are durable, with textured, less slippery finishes; vinyl resists water, stains and scuffs.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason two", marks: 5, contextNote: "A second, different reason. Such as: easy to clean and low maintenance; warm underfoot and resistant to mould (cork); affordable, in a wide range of colours.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Insulated solid ground floor junction and bathroom floor covering",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The floor covering is an open response; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q7-original.png",
+          "srcHash": "8c854180952e2ea08cc221a938ccf3a7",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 7: the printed question with a sketch of the ground floor meeting the cavity wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q7-covering",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q7-covering.png",
+          "srcHash": "7faa95c43d41daefa305448cf7e4b0a7",
+          "alt": "SEC 2013 Ordinary marking scheme notes on bathroom floor coverings — ceramic tiles, vinyl, cork, linoleum, marmoleum and natural stone.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q7-complete", topicId: "cons-4-2", conceptId: "ground-floor-junction-complete",
+    section: "B", questionRef: "2013 OL Q7 — complete",
+    stem: "A dwelling house has an insulated solid concrete ground floor which abuts a 350 mm concrete block external wall with an insulated cavity, as shown in the sketch. The floor has a sand/cement fine screed finish.",
+    questionText: "(a) Show, using notes and neat freehand sketches, the typical design detailing at the junction of the floor and wall. Label the floor components and include three typical dimensions. (b) Show clearly on your sketch the typical design detailing which will prevent the formation of a cold bridge at the junction of the floor and the wall. (c) Recommend a suitable floor covering for a bathroom on the ground floor of the house and give two reasons for your choice of floor covering.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 4, contextNote: "Such as: a 25–50 mm screed on a 100–150 mm slab, taped to the wall for airtightness.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 4, contextNote: "A second, different detail. Such as: 200 mm floor insulation on a DPM/radon barrier, on sand blinding and at least 150 mm hardcore.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Three typical dimensions", marks: 6, contextNote: "Three typical dimensions, 2 each.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-labelling", kind: "criterion", verbatim: "Labelling the floor components and other details", marks: 8, contextNote: "The floor components labelled, as in the scheme’s model sketch.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-cold-bridge", kind: "criterion", verbatim: "Shown on sketch", marks: 5, contextNote: "Such as: vertical perimeter insulation between the slab and the inner leaf, overlapping the wall insulation by 150–225 mm; lightweight insulating blocks in the inner leaf from the floor insulation to floor level.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-covering", kind: "criterion", verbatim: "Type of floor covering", marks: 5, contextNote: "Such as: ceramic tiles; vinyl; cork tiles; heavy-duty linoleum; marmoleum; natural stone.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-reason-1", kind: "criterion", verbatim: "Reason one", marks: 5, contextNote: "A reason matching the covering. Such as: ceramic tiles are durable, with textured, less slippery finishes; vinyl resists water, stains and scuffs.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-reason-2", kind: "criterion", verbatim: "Reason two", marks: 5, contextNote: "A second, different reason. Such as: easy to clean and low maintenance; warm underfoot and resistant to mould (cork); affordable, in a wide range of colours.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2013-ol-q7-a","label":"a","marks":30,"rowIds":["a-detail-1","a-detail-2","a-dimensions","a-labelling","a-presentation"]},{"sourceCardId":"cons-2013-ol-q7-b","label":"b","marks":5,"rowIds":["b-cold-bridge"]},{"sourceCardId":"cons-2013-ol-q7-c","label":"c","marks":15,"rowIds":["c-covering","c-reason-1","c-reason-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Insulated solid ground floor junction and bathroom floor covering",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The floor covering is an open response; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q7-original.png",
+          "srcHash": "8c854180952e2ea08cc221a938ccf3a7",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 7: the printed question with a sketch of the ground floor meeting the cavity wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q7-floor",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q7-floor.png",
+          "srcHash": "45886df976cc39b7f7e9f78d852f765c",
+          "alt": "SEC model sketch of the insulated solid ground floor at the cavity wall, with the specification list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q8-terms", topicId: "cons-6-4", conceptId: "construction-terms-terms",
+    section: "B", questionRef: "2013 OL Q8",
+    questionText: "Explain with the aid of notes and neat freehand sketches, any five of the following: solar panel; dovetail halving joint; sash cramp; flue liner; purlin; water-table; wind turbine; low-e coating; vapour barrier.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "terms", kind: "anyN", verbatim: "Terms", marks: 50, contextNote: "Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). Solar panel: collects solar radiation and converts it to heat; generally on a south-facing sloping roof, or on secure fixings at ground level; flat plate or evacuated tube; used with other heating; helps reduce CO₂. Dovetail halving joint: like a tee halving with a dovetail slope added, half the thickness taken from each piece; strong, resists pulling and has a large gluing area; slope 1:8 for hardwoods, 1:6 for softwoods. Sash cramp: a steel bar with a threaded mechanism at one end and a movable shoe, used to put pressure on wooden members while glue sets, as in furniture making; in various lengths. Flue liner: a conduit carrying smoke from the fire or stove, built in as the chimney is constructed or fitted to an existing chimney for a new stove; usually ceramic clay, or flexible stainless steel. Purlin: the member stretching under the rafters to support a traditional cut roof, typically 150 × 75 mm, carried on struts to an internal load-bearing wall or on an RSJ; it helps attic development. Water table: the natural level of underground water: rain percolates through the topsoil and subsoil; it rises and falls with rainfall, with springs appearing as it rises; below it water is held in aquifers reached by deep wells. Wind turbine: converts the energy of the wind into mechanical energy to generate electricity, small scale or commercial; a clean source of energy; blades, generator and support tower. Low-e coating: a very thin transparent metal or metal-oxide coating on the inner pane of double glazing that reflects heat back into the house while admitting solar gain; dearer, but reduces heat loss. Vapour barrier: a continuous membrane on the warm side of the insulation, slowing water vapour into it; used in timber frame walls, flat roofs and attic conversions; often part of insulated plasterboard.", group: {"claimMax":5,"perOption":10,"options":["Solar panel","Dovetail halving joint","Sash cramp","Flue liner","Purlin","Water table","Wind turbine","Low-e coating","Vapour barrier"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Construction terms",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Explain any five of the nine printed terms. Each term is marked separately at 10 marks; the scheme illustrations are examples of suitable sketches."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q8-original.png",
+          "srcHash": "43b34d56bb322a0d43c76a54817d452f",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q8-terms",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q8-terms.png",
+          "srcHash": "76ece4f34c94cac4bf772c3c8c45efaa",
+          "alt": "SEC 2013 Ordinary marking scheme notes and sketches for all nine terms — solar panel, flue liner, wind turbine, dovetail halving joint, purlin, low-e coating, sash cramp, water table and vapour barrier (three pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q9-a", topicId: "cons-3-7", conceptId: "glazed-oak-doors-a",
+    section: "B", questionRef: "2013 OL Q9(a)",
+    stem: "Two solid oak doors with glazed panels are fitted in the dividing wall between a sitting room and a kitchen, as shown in the sketch.",
+    questionText: "Show, using notes and neat freehand sketches, a suitable joint for joining the top rail to the vertical stile of the door.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "detail-1", kind: "criterion", verbatim: "Valid detail - one", marks: 6, contextNote: "Such as: a haunched, rebated mortise and tenon — the traditional joint for good joinery; a mortise with a haunch in the upper stile.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "detail-2", kind: "criterion", verbatim: "Valid detail - two", marks: 6, contextNote: "A second, different detail. Such as: a tenon with a haunch on the top rail; rebates on the rail and stile to take the glass; strong, with a high glue area, resisting twisting.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent good fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Glazed solid oak double doors",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The joint is an open choice; the scheme gives a haunched or rebated mortise and tenon."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q9-original.png",
+          "srcHash": "31a33212815b5cf42d0684ef2571c1b7",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 9: the printed question with a sketch of the glazed oak double doors.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q9-joint",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q9-joint.png",
+          "srcHash": "f9df304da5456e1c125a53eaa6644b52",
+          "alt": "SEC 2013 Ordinary marking scheme notes and sketches of the haunched, rebated mortise and tenon joint.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q9-b", topicId: "cons-3-6", conceptId: "glazed-oak-doors-b",
+    section: "B", questionRef: "2013 OL Q9(b)",
+    stem: "Two solid oak doors with glazed panels are fitted in the dividing wall between a sitting room and a kitchen, as shown in the sketch.",
+    questionText: "Show, using notes and neat freehand sketches, how to fit one glass panel safely in the door.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 6, contextNote: "Such as: the panel size checked against the frame; help engaged; the door steadied with a wedge; the rebate cleaned.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 6, contextNote: "A second, different detail. Such as: clear silicone in the rebate and a spacer at the bottom; the panel lifted in wearing safety gloves; the stops fitted to hold it; surplus silicone trimmed and the glass cleaned.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent good fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Glazed solid oak double doors",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The joint is an open choice; the scheme gives a haunched or rebated mortise and tenon."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q9-original.png",
+          "srcHash": "31a33212815b5cf42d0684ef2571c1b7",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 9: the printed question with a sketch of the glazed oak double doors.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q9-glass",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q9-glass.png",
+          "srcHash": "b422c80277334ce6b5c768dae7eef1bb",
+          "alt": "SEC 2013 Ordinary marking scheme notes and step sketches on fitting a glass panel in the door.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q9-c", topicId: "cons-3-7", conceptId: "glazed-oak-doors-c",
+    section: "B", questionRef: "2013 OL Q9(c)",
+    stem: "Two solid oak doors with glazed panels are fitted in the dividing wall between a sitting room and a kitchen, as shown in the sketch.",
+    questionText: "Discuss two advantages of fitting glazed double doors between the sitting room and the kitchen in a dwelling house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 5, contextNote: "Such as: opened for extra space and people; the glass lets light through to both rooms.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 5, contextNote: "A second, different advantage. Such as: closed to cut heating costs or keep cooking separate; a confined area for children; better use of the total area.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Glazed solid oak double doors",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The joint is an open choice; the scheme gives a haunched or rebated mortise and tenon."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q9-original.png",
+          "srcHash": "31a33212815b5cf42d0684ef2571c1b7",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 9: the printed question with a sketch of the glazed oak double doors.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q9-advantages",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q9-advantages.png",
+          "srcHash": "d3be51de16c907b57d49289e685d7f32",
+          "alt": "SEC 2013 Ordinary marking scheme notes on the advantages of glazed double doors.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2013-ol-q9-complete", topicId: "cons-3-7", conceptId: "glazed-oak-doors-complete",
+    section: "B", questionRef: "2013 OL Q9 — complete",
+    stem: "Two solid oak doors with glazed panels are fitted in the dividing wall between a sitting room and a kitchen, as shown in the sketch.",
+    questionText: "(a) Show, using notes and neat freehand sketches, a suitable joint for joining the top rail to the vertical stile of the door. (b) Show, using notes and neat freehand sketches, how to fit one glass panel safely in the door. (c) Discuss two advantages of fitting glazed double doors between the sitting room and the kitchen in a dwelling house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-detail-1", kind: "criterion", verbatim: "Valid detail - one", marks: 6, contextNote: "Such as: a haunched, rebated mortise and tenon — the traditional joint for good joinery; a mortise with a haunch in the upper stile.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-detail-2", kind: "criterion", verbatim: "Valid detail - two", marks: 6, contextNote: "A second, different detail. Such as: a tenon with a haunch on the top rail; rebates on the rail and stile to take the glass; strong, with a high glue area, resisting twisting.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent good fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 6, contextNote: "Such as: the panel size checked against the frame; help engaged; the door steadied with a wedge; the rebate cleaned.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 6, contextNote: "A second, different detail. Such as: clear silicone in the rebate and a spacer at the bottom; the panel lifted in wearing safety gloves; the stops fitted to hold it; surplus silicone trimmed and the glass cleaned.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent good fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 5, contextNote: "Such as: opened for extra space and people; the glass lets light through to both rooms.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 5, contextNote: "A second, different advantage. Such as: closed to cut heating costs or keep cooking separate; a confined area for children; better use of the total area.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2013-ol-q9-a","label":"a","marks":20,"rowIds":["a-detail-1","a-detail-2","a-presentation"]},{"sourceCardId":"cons-2013-ol-q9-b","label":"b","marks":20,"rowIds":["b-detail-1","b-detail-2","b-presentation"]},{"sourceCardId":"cons-2013-ol-q9-c","label":"c","marks":10,"rowIds":["c-advantage-1","c-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Glazed solid oak double doors",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The joint is an open choice; the scheme gives a haunched or rebated mortise and tenon."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2013-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q9-original.png",
+          "srcHash": "31a33212815b5cf42d0684ef2571c1b7",
+          "alt": "Original SEC 2013 Ordinary Construction Studies Question 9: the printed question with a sketch of the glazed oak double doors.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2013-OL-q9-joint",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q9-joint.png",
+          "srcHash": "f9df304da5456e1c125a53eaa6644b52",
+          "alt": "SEC 2013 Ordinary marking scheme notes and sketches of the haunched, rebated mortise and tenon joint.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

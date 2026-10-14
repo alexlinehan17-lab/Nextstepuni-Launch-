@@ -5773,5 +5773,201 @@
     "alt": "SEC 2013 Higher marking scheme notes on energy conservation, maintenance, noise and aesthetics in locating the MHRV unit.",
     "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2013-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q1-original.png",
+    "md5": "5eaf434354bdba475bb1056dbe387b58",
+    "alt": "Original SEC 2013 Ordinary Construction Studies Question 1: the printed question with a sketch of the felted flat roof at the eaves.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2013-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q2-original.png",
+    "md5": "f354d65035dfae0408b35c6bfa840255",
+    "alt": "Original SEC 2013 Ordinary Construction Studies Question 2: the printed question with a sketch of the dwelling house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2013-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q3-original.png",
+    "md5": "237a45a696060f56f48980029e94ca10",
+    "alt": "Original SEC 2013 Ordinary Construction Studies Question 3: the printed question with a sketch of a bathroom with a bath and wash hand basin.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2013-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q4-original.png",
+    "md5": "e6e0a65211bb7ab16a24457b1a5b4201",
+    "alt": "Original SEC 2013 Ordinary Construction Studies Question 4: the printed question with a sketch of the corner of a foundation trench with its profiles.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2013-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q5-original.png",
+    "md5": "733695460cd18b6341927b084f1decaa",
+    "alt": "Original SEC 2013 Ordinary Construction Studies Question 5: the printed question with a sketch of the stud partition on the timber floor and block wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2013-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q6-original.png",
+    "md5": "9dcdf05fc2d8564a62e82d13aafd4b46",
+    "alt": "Original SEC 2013 Ordinary Construction Studies Question 6: the printed question with a sketch of a building site.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2013-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q7-original.png",
+    "md5": "8c854180952e2ea08cc221a938ccf3a7",
+    "alt": "Original SEC 2013 Ordinary Construction Studies Question 7: the printed question with a sketch of the ground floor meeting the cavity wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2013-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q8-original.png",
+    "md5": "43b34d56bb322a0d43c76a54817d452f",
+    "alt": "Original SEC 2013 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2013-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q9-original.png",
+    "md5": "31a33212815b5cf42d0684ef2571c1b7",
+    "alt": "Original SEC 2013 Ordinary Construction Studies Question 9: the printed question with a sketch of the glazed oak double doors.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2013-OL-q1-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q1-section.png",
+    "md5": "0f29ed2feb642efefdb3c7237115a5d0",
+    "alt": "SEC model sections through the flat roof eaves on the cavity wall, with the specification list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q1-rainwater": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q1-rainwater.png",
+    "md5": "e87bcd24b8d97c4f5a8c17e9e05a56cc",
+    "alt": "SEC 2013 Ordinary marking scheme notes on removing rainwater from the flat roof.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q2-systems": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q2-systems.png",
+    "md5": "279b977cae7853f8e7eab512b6686d5e",
+    "alt": "SEC 2013 Ordinary marking scheme notes and sketches on filling the cavity and on insulating the inside of the walls.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q2-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q2-advantages.png",
+    "md5": "177a02ee071e531ed49fe0891ae8f8ad",
+    "alt": "SEC 2013 Ordinary marking scheme notes on the advantages of insulating the external walls.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q3-system.png",
+    "md5": "074e50b184db1f82a8ee7f9ee53ee48e",
+    "alt": "SEC single-line diagram of the hot and cold supply to the bath and basin, with the list of components.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q3-tap": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q3-tap.png",
+    "md5": "fd481c07e2448d299ecabf8c81ae6d19",
+    "alt": "SEC 2013 Ordinary marking scheme notes and sketches of lever taps for limited hand mobility.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q4-setting-out": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q4-setting-out.png",
+    "md5": "daf13122ff55385f7f3255911a8f50de",
+    "alt": "SEC 2013 Ordinary marking scheme notes and sketches on levelling the profiles, locating and squaring the trench and setting the concrete level.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q4-strip": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q4-strip.png",
+    "md5": "95d45bcd07c520a7d69d77f76996df57",
+    "alt": "SEC model sketch of a reinforced strip foundation with dimensions.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q5-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q5-scheme.png",
+    "md5": "f1becbb8e9e3eb333e3fb984d5b8f7a0",
+    "alt": "SEC model section through the stud partition and the timber floor, with the specification list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q6-signs": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q6-signs.png",
+    "md5": "51d6d7411a529efcf576a171099c7450",
+    "alt": "SEC safety signs for eye protection, ear protection and safety gloves.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q6-tasks": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q6-tasks.png",
+    "md5": "ddaf0f8fbc2ae961712bc8cce58fe641",
+    "alt": "SEC 2013 Ordinary marking scheme notes on tasks needing eye protection, ear protection and safety gloves.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q6-other": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q6-other.png",
+    "md5": "03e5cdd8b0e439736f34a5e5ab916510",
+    "alt": "SEC 2013 Ordinary marking scheme notes on a high visibility jacket, a safety helmet and steel cap boots (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q7-floor": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q7-floor.png",
+    "md5": "45886df976cc39b7f7e9f78d852f765c",
+    "alt": "SEC model sketch of the insulated solid ground floor at the cavity wall, with the specification list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q7-cold-bridge": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q7-cold-bridge.png",
+    "md5": "c701c122e9185d4089a0b73ab5b041fd",
+    "alt": "SEC 2013 Ordinary marking scheme notes on preventing a cold bridge at the floor and wall junction.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q7-covering": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q7-covering.png",
+    "md5": "7faa95c43d41daefa305448cf7e4b0a7",
+    "alt": "SEC 2013 Ordinary marking scheme notes on bathroom floor coverings — ceramic tiles, vinyl, cork, linoleum, marmoleum and natural stone.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q8-terms": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q8-terms.png",
+    "md5": "76ece4f34c94cac4bf772c3c8c45efaa",
+    "alt": "SEC 2013 Ordinary marking scheme notes and sketches for all nine terms — solar panel, flue liner, wind turbine, dovetail halving joint, purlin, low-e coating, sash cramp, water table and vapour barrier (three pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q9-joint": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q9-joint.png",
+    "md5": "f9df304da5456e1c125a53eaa6644b52",
+    "alt": "SEC 2013 Ordinary marking scheme notes and sketches of the haunched, rebated mortise and tenon joint.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q9-glass": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q9-glass.png",
+    "md5": "b422c80277334ce6b5c768dae7eef1bb",
+    "alt": "SEC 2013 Ordinary marking scheme notes and step sketches on fitting a glass panel in the door.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2013-OL-q9-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2013-OL-q9-advantages.png",
+    "md5": "d3be51de16c907b57d49289e685d7f32",
+    "alt": "SEC 2013 Ordinary marking scheme notes on the advantages of glazed double doors.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2013 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }

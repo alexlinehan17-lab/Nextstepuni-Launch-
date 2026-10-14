@@ -111,8 +111,10 @@ def observed_selections(P):
 
 def region(P, qkey, paper_page, tails=None, alt=False, unnumbered=()):
     """The printed text of one question: from its number to the next question's (Q10 splits at OR when an
-    alternative is printed). tails maps a question to a marker after which the text layer places more of it.
-    unnumbered names questions printed without the full stop after their number ("5 (a)")."""
+    alternative is printed). tails maps a question to a marker after which the text layer places more of it;
+    a (marker, anchor) pair puts that text back after the anchor, where the page prints it (2013 OL Q6(a)'s
+    bullets sit in the text layer after Q9). unnumbered names questions printed without the full stop after
+    their number ("5 (a)")."""
     text = printed(page_text(P, paper_page[qkey]))
     if alt and qkey == '10':
         return text[text.index(' 10. '):text.index(' OR ')]
@@ -123,7 +125,13 @@ def region(P, qkey, paper_page, tails=None, alt=False, unnumbered=()):
     nxt = [text.index(mark(n), start) for n in map(str, range(int(qkey) + 1, 11)) if mark(n) in text[start:]]
     body = text[start:min(nxt) if nxt else len(text)]
     if tails and qkey in tails:
-        body += text[text.index(tails[qkey]) + len(tails[qkey]):]
+        marker, anchor = tails[qkey] if isinstance(tails[qkey], tuple) else (tails[qkey], None)
+        tail = text[text.index(marker) + len(marker):]
+        if anchor is None:
+            body += tail
+        else:
+            assert body.count(anchor) == 1, (qkey, anchor)
+            body = body.replace(anchor, anchor + tail.rstrip())
     return body
 
 
@@ -226,7 +234,8 @@ class Draft:
         return '\n\n'.join(f'({letter}) {text}' for letter, text in pairs)
 
     def finish(self, ledger, finite_choices, reasons, consolidated=None, taxonomy_gaps=(), marked_alike=None, whole_choices=()):
-        """whole_choices: keys of choice cards that are a whole question on their own (an Ordinary Q8 term list)."""
+        """whole_choices: keys of cards that are a whole question on their own: a choice card (an Ordinary Q8 term
+        list) or an unlettered question (2013 Ordinary Q5, one drawing)."""
         observed = observed_selections(self.P)
         assert [(o[0], o[2]) for o in observed] == [(x[0], x[1]) for x in ledger], [(o[0], o[2]) for o in observed]
         selection_ledger = dict(pattern=PATTERN, unclassified=0, sourceHashes=self.hashes,
@@ -236,11 +245,13 @@ class Draft:
             selection_ledger['optionSelectionsMarkedAlike'] = marked_alike
         consolidated = consolidated or {}
         kept_whole = set(whole_choices)
+        choice_cards = {v['cardId'] for v in finite_choices.values()}
         whole = {}
         for t in self.tasks:
             c = t['card']
             if c['id'].endswith('-complete') or c['id'].removeprefix(self.PREFIX) in kept_whole:
-                parts = [g['label'] for g in c.get('taskGroups', [])] or ['one card over every printed item']
+                parts = [g['label'] for g in c.get('taskGroups', [])] or (['one card over every printed item'] if c['id'] in choice_cards
+                                                                          else ['the whole unlettered question'])
                 whole.setdefault('10-alt' if t['alternative'] else t['questionNumber'], []).append(dict(id=c['id'], parts=parts, marks=c['totalMarks']))
         assert set(reasons) | set(consolidated) == {k.removeprefix(self.PREFIX) for k in self.legacy}, \
             sorted({k.removeprefix(self.PREFIX) for k in self.legacy} ^ (set(reasons) | set(consolidated)))
@@ -397,7 +408,7 @@ def validate(d, m, images=True, figure_dir=FIGURE_DIR, integrated=True):
     # One whole route per question: a complete card (or the one choice card that is the whole question), each worth the full marks.
     ledgers = d['questionRouteLedgers']
     full = 60 if level == 'higher' else 50
-    kept_whole = set(_get(m, 'WHOLE_CHOICES', set()))
+    kept_whole = set(_get(m, 'WHOLE_CHOICES', set()))  # choice cards and unlettered questions that are a whole question
     for qk in [str(i) for i in range(1, len(m.QUESTIONS) + 1)] + (['10-alt'] if alt else []):
         whole = sorted(k for k in cards if qkey_of(k) == qk and (k.endswith('-complete') or k in kept_whole))
         assert len(whole) == 1 and [w['id'] for w in ledgers[qk]['wholeRoutes']] == [PREFIX + k for k in whole], qk
