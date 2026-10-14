@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T09:55:18.717Z",
+  "generatedAt": "2026-10-14T10:41:52.667Z",
   "scope": {
     "included": "Factual State-exam topic associations captured from every current StudyClix Leaving Certificate topic page.",
     "excluded": "Commercial mock questions and all provider-owned question text, solutions, notes, media and PDFs.",
@@ -11,9 +11,9 @@
     "subjectsWithExactCrosswalks": 32,
     "referenceTopics": 1609,
     "referenceOfficialAssociations": 37105,
-    "matched": 27210,
+    "matched": 27209,
     "sourceBlocked": 9856,
-    "referenceAnomaly": 39,
+    "referenceAnomaly": 40,
     "unreviewed": 0,
     "sourceUnavailableTopics": 2,
     "topicsWithGaps": 1341
@@ -3154,9 +3154,9 @@
       "totals": {
         "referenceTopics": 32,
         "referenceOfficialAssociations": 690,
-        "matched": 555,
+        "matched": 554,
         "sourceBlocked": 98,
-        "referenceAnomaly": 37,
+        "referenceAnomaly": 38,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
         "topicsWithGaps": 27
@@ -3819,9 +3819,9 @@
           "label": "Europe - Realism, Impressionism and Post-Impressionism",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/europe-realism-impressionism-and-post-impressionism",
           "referenceOfficialAssociations": 26,
-          "matched": 20,
+          "matched": 19,
           "sourceBlocked": 2,
-          "referenceAnomaly": 4,
+          "referenceAnomaly": 5,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3831,6 +3831,10 @@
             {
               "heading": "2009 - Paper - Section 2 - Question 14",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2011 - Section 2 - Question 14",
+              "resolution": "reference-anomaly"
             },
             {
               "heading": "2014 - Section 1 - Question 9",

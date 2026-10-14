@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the complete Art Mark Bank corpus, 2012–2026.
+"""Build the complete Art Mark Bank corpus, 2011–2026.
 
 The question papers supply the exact prompts.  The marking schemes supply the
 published component allocations (to 2022) and descriptor bands (2023–2026).
@@ -19,10 +19,10 @@ files under its own heading.  A choose-N (N >= 2) list is always one card.  The
 four-criterion Section B/C essay remains intact because the SEC applies that
 rubric holistically.
 
-The complete corpus is therefore 1525 cards across thirty papers:
+The complete corpus is therefore 1641 cards across thirty-two papers:
 
-  * Higher Level:   785 cards (see EXPECTED_CARDS_BY_YEAR_LEVEL)
-  * Ordinary Level: 740 cards
+  * Higher Level:   844 cards (see EXPECTED_CARDS_BY_YEAR_LEVEL)
+  * Ordinary Level: 797 cards
 
 An audited year (AUDITED_YEARS) shows only the SEC's printed wording under the
 SEC's name: the descriptor bullets, criterion labels, scheme rows and marking
@@ -62,7 +62,7 @@ SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'art', 'schemes')
 OUT = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'art', 'authored.json')
 CENSUS_OUT = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.json')
 
-YEARS = tuple(range(2012, 2027))
+YEARS = tuple(range(2011, 2027))
 
 # A label printed inside an answer box ("Name of artwork:", "Heading 1:")
 # marks where an answer goes for an ask the question already makes, so it is
@@ -98,12 +98,14 @@ ANSWER_BOX_LABELS: dict[tuple[int, str, int], tuple[str, ...]] = {
 # Years whose SEC-attributed strings are all lifted from the printed page and
 # gated by tests/test_art_sec_wording.py: every year. The factory has no
 # written fallback, so a new year must join this tuple to build at all.
-AUDITED_YEARS = (2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
+AUDITED_YEARS = (2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
 
 EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
+    (2011, 'higher'): 20,
+    (2011, 'ordinary'): 21,
     (2012, 'higher'): 20,
     (2012, 'ordinary'): 21,
     (2013, 'higher'): 20,
@@ -137,6 +139,8 @@ EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
 }
 
 EXPECTED_CARDS_BY_YEAR_LEVEL = {
+    (2011, 'higher'): 59,
+    (2011, 'ordinary'): 57,
     (2012, 'higher'): 55,
     (2012, 'ordinary'): 55,
     (2013, 'higher'): 64,
@@ -176,6 +180,33 @@ EXPECTED_CARDS_BY_YEAR_LEVEL = {
 # label is printed in the question, and the first option's key keeps the
 # card's stable id (the withdrawn per-option ids are aliased in cardAliases.ts).
 PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
+    (2011, 'higher', 14): (
+        ('dancers', 'a painting that depicts dancers'),
+        ('musical-instrument', 'a painting that includes a musical instrument'),
+        ('ghiberti', 'a work by Ghiberti (1378-1455)'),
+        ('peter-paul-rubens', 'a work by Peter Paul Rubens (1577-1640)'),
+        ('le-corbusier', 'a building by Le Corbusier (1887-1965)'),
+    ),
+    (2011, 'higher', 15): (
+        ('international-gothic', 'The International Gothic style'),
+        ('neoclassicism', 'Neoclassicism'),
+        ('pointillism', 'Pointillism'),
+        ('the-bauhaus', 'The Bauhaus'),
+    ),
+    (2011, 'ordinary', 7): (
+        ('harry-clarke', 'Harry Clarke'),
+        ('jack-b-yeats', 'Jack B. Yeats'),
+        ('louis-le-brocquy', 'Louis le Brocquy'),
+        ('robert-ballagh', 'Robert Ballagh'),
+        ('pauline-bewick', 'Pauline Bewick'),
+    ),
+    (2011, 'ordinary', 11): (
+        ('mary-magdalene', 'Mary Magdalene by Donatello (1386-1466)'),
+        ('the-tribute-money', 'The Tribute Money by Masaccio (1401-1428)'),
+        ('the-ambassadors', 'The Ambassadors by Hans Holbein (1497/8-1543)'),
+        ('impression-sunrise', 'Impression of Morning Sunrise by Claude Monet (1840-1926)'),
+        ('the-persistence-of-memory', 'The Persistence of Memory by Salvador Dali (1904-1989)'),
+    ),
     # Three Georgian country houses, one heading: one card per part.
     # "Wesport House" is the paper's spelling.
     (2012, 'higher', 4): (
@@ -714,6 +745,20 @@ PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
 # Irish Q7 artists, the Georgian buildings. A list in this table must span at
 # least two headings; the build fails on one that does not.
 OPTION_TOPICS: dict[tuple[int, str, int], dict[str, str]] = {
+    # 2011: dancers, a musical instrument and Neoclassicism have no heading;
+    # Rubens is the Baroque; Le Corbusier and the Bauhaus are Modernism.
+    (2011, 'higher', 14): {
+        'dancers': 'art-4-6', 'musical-instrument': 'art-4-6', 'ghiberti': 'art-4-1',
+        'peter-paul-rubens': 'art-4-2', 'le-corbusier': 'art-4-4',
+    },
+    (2011, 'higher', 15): {
+        'international-gothic': 'art-4-0', 'neoclassicism': 'art-4-6', 'pointillism': 'art-4-3',
+        'the-bauhaus': 'art-4-4',
+    },
+    (2011, 'ordinary', 11): {
+        'mary-magdalene': 'art-4-1', 'the-tribute-money': 'art-4-1', 'the-ambassadors': 'art-4-1',
+        'impression-sunrise': 'art-4-3', 'the-persistence-of-memory': 'art-4-4',
+    },
     # 2012: a work with a horse and genre painting (a subject, painted in
     # every period) have no heading; Rodin with the late 19th century, Art
     # Nouveau as in 2017 HL Q15.
@@ -896,6 +941,15 @@ REVIEWED_NON_ENUMERABLE_POOLS: dict[tuple[int, str, int], str] = {
 # cannot enter silently, while these reviewed open or logistical choices stay
 # faithful to the paper instead of being over-expanded.
 REVIEWED_OPEN_SELECTIONS: dict[tuple[int, str, int], str] = {
+    (2011, 'higher', 5): (
+        '"Write a brief account of either artist": one of the two artists the '
+        'question itself compares, Barret and O’Connor, one heading; no list.'),
+    (2011, 'higher', 16): (
+        '"any one of Pixar’s productions, such as Toy Story ...": examples of '
+        'any Pixar production, not a closed list.'),
+    (2011, 'ordinary', 14): (
+        '"Choose any work that you have studied by Henri Matisse": any work; the '
+        'paper prints no finite list to enumerate.'),
     (2012, 'ordinary', 1): (
         '"Name another work from this period in either stone or metal": any '
         'work in either material; no list to enumerate.'),
@@ -955,6 +1009,15 @@ REVIEWED_OPEN_SELECTIONS: dict[tuple[int, str, int], str] = {
 # Page numbers are one-based within the separate official illustration PDF.
 # Every binding below was checked visually against the rendered sheet.
 ILLUSTRATION_PAGES: dict[tuple[int, str], dict[int, int]] = {
+    # 2011 sheets embed low-resolution photographs, complete and legible.
+    (2011, 'higher'): {
+        1: 1, 4: 1, 5: 1, 7: 1, 13: 1, 19: 1,
+        9: 2, 10: 2, 11: 2, 12: 2,
+    },
+    (2011, 'ordinary'): {
+        1: 1, 3: 1, 5: 1, 6: 1, 13: 1, 19: 1,
+        9: 2, 10: 2, 12: 2,
+    },
     (2012, 'higher'): {
         2: 1, 3: 1, 5: 1, 12: 1, 18: 1,
         7: 2, 8: 2, 9: 2, 11: 2,
@@ -1094,6 +1157,27 @@ for _year, _level, _topics in (
 # to give the question this heading; where the reference contradicts the
 # paper, the Atlas builder records a reviewed anomaly).
 LEGACY_QUESTION_TOPICS: dict[tuple[int, str], tuple[str, ...]] = {
+    (2011, 'higher'): (
+        # Q5 Barret (1741-1806) and O'Connor (c.1792-1841); Q7 Ballagh's
+        # 'Portrait of Noel Browne': Post-1960s Art in Ireland.
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-3', 'art-5-4', 'art-5-5',
+        # Q11 Metsu, 17th-century Dutch; Q13 Cubism.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-2', 'art-4-3', 'art-4-4',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        # Q17 bridges in their environment; Q18 a gallery exhibition; Q19
+        # nature as a source for design and craft; Q20 recycled materials.
+        'art-6-1', 'art-6-3', 'art-6-0', 'art-6-1', 'art-6-3',
+    ),
+    (2011, 'ordinary'): (
+        # Q6 'Famine' by Rowan Gillespie (b.1953): Post 1960s Art in Ireland.
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5', 'art-5-4',
+        'art-4-0', 'art-4-1', 'art-4-1',
+        'art-4-6',  # Q11: per option (OPTION_TOPICS)
+        # Q13 Gauguin; Q14 Matisse (1869-1954): Modernism.
+        'art-4-3', 'art-4-3', 'art-4-4',
+        # Q16 a teenager's bedroom and Q19 a park: spaces.
+        'art-6-0', 'art-6-3', 'art-6-1', 'art-6-1', 'art-6-3', 'art-6-1', 'art-6-1',
+    ),
     (2012, 'higher'): (
         # Q2 two Bronze Age gold objects (a disc and a dress-fastener); Q5
         # Oisín Kelly (1915-1981); Q7 a roadside sculpture (the Pikemen):
@@ -2213,6 +2297,18 @@ def legacy_criterion_groups(criteria: list[dict[str, Any]],
 # number of consecutive scheme components each printed task takes. The build
 # fails on an entry the word overlap would already reproduce.
 REVIEWED_COMPONENT_RUNS: dict[tuple[int, str, int], tuple[tuple[int, ...], str]] = {
+    (2011, 'higher', 5): ((3, 2), (
+        'The first task, "Discuss this statement while comparing the works", takes A and B '
+        '(each painting) and C "Brief comparison of the two works illustrated"; "Write a brief '
+        'account of either artist" takes D "Brief account of either artist" and E "Sketches".')),
+    (2011, 'higher', 16): ((2, 2), (
+        'The first task, "Discuss this statement with reference to any one of Pixar’s '
+        'productions", takes A "Discussion of the given statement" and B "Discussion of the chosen '
+        'Pixar film"; the second, two film-making techniques, takes C and D "Sketches".')),
+    (2011, 'ordinary', 19): ((2, 1), (
+        '(a) "Describe and sketch your ideas for the overall design of this park" takes A and '
+        'B "Sketches", printed second in the scheme; (b) "Discuss the security and safety '
+        'considerations" takes C. The sketches do not travel with the last task here.')),
     (2012, 'ordinary', 10): ((2, 2), (
         '(a) "Name, describe and discuss one work of your choice by Michelangelo" takes '
         'A "Name of work" and B "Describe and discuss one work"; (b) "Give a brief account '
@@ -2253,7 +2349,8 @@ def printed_requirements(question_text: str, assessment: str, stem: str | None =
         lines = lines[1:]
     asks = [sentence
             for stem_line in (stem or '').split('\n') if not stem_line.startswith('• ')
-            for sentence in re.split(r'(?<=[.?!])\s+', stem_line)
+            # Not after an initial: "Jack B. Yeats" (2011 OL Q7) is one name.
+            for sentence in re.split(r'(?<=[.?!])(?<!\s[A-Z]\.)\s+', stem_line)
             if re.match(r'^(?:Name|Identify|Choose|Select)\b', sentence)]
     # The option a per-option card practises, where the stem prints the list.
     # A per-option card's option is a bullet, or its own unmarked line (2012 OL Q11).
@@ -2550,7 +2647,7 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
 
     runtime = {
         'subjectId': 'art',
-        'corpus': 'All separately marked written-examination tasks, 2012–2026; a printed choice is one card',
+        'corpus': 'All separately marked written-examination tasks, 2011–2026; a printed choice is one card',
         'cardCount': len(cards),
         'auditedYears': list(AUDITED_YEARS),
         # Lifted from each audited year's scheme by art_printed.py; the cards

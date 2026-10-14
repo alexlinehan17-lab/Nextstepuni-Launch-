@@ -431,6 +431,12 @@ const REVIEWED_REFERENCE_ANOMALIES = [
     topicId: 'art-higher-artists-theory-and-thinking',
     evidence: "Q17 is \"A curator's work involves planning all aspects of an exhibition\": (a) the main steps a curator took in planning and mounting a named exhibition and (b) curating an exhibition of Transition Year artwork. It comments on no social issue; it is a curating and exhibition question, filed with the gallery questions under Artists: Theory and Thinking (as 2024 HL Q5(a) \"the role of the curator\"), not Art as Social Commentary or Commentator.",
   },
+  {
+    level: 'ordinary', year: 2011, n: '14',
+    referenceTopicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    topicId: 'art-ordinary-europe-modernism-c-1900-1960s',
+    evidence: "Q14 is \"Choose any work that you have studied by Henri Matisse (1869-1954)\": Matisse's work is Modernism (c. 1900-1960s), as for 2019 HL Q13, not Post-Impressionism.",
+  },
 ];
 const anomalyFor = (level, year, n, topicId) => REVIEWED_REFERENCE_ANOMALIES.find(item => (
   item.level === level && item.year === year && item.n === n && item.referenceTopicId === topicId
@@ -856,15 +862,15 @@ if (
   throw new Error('Every logical Art card must be exactly matched, reviewed, or explicitly retained');
 }
 if (
-  matchedAssociations.length !== 555
+  matchedAssociations.length !== 554
   || sourceBlockedAssociations.length !== 98
-  || referenceAnomalyAssociations.length !== 37
-  || exactTopicsByCard.size !== 507
-  || reviewedTopicsByCard.size !== 36
-  || reviewedOnlyCards.length !== 34
-  || matchedQuestionTopicLinks !== 547
-  || reviewedOptionTopics.length !== 148
-  || reviewedSpecificTopics.length !== 48
+  || referenceAnomalyAssociations.length !== 38
+  || exactTopicsByCard.size !== 506
+  || reviewedTopicsByCard.size !== 37
+  || reviewedOnlyCards.length !== 35
+  || matchedQuestionTopicLinks !== 546
+  || reviewedOptionTopics.length !== 158
+  || reviewedSpecificTopics.length !== 52
   || retainedLocalCards.length !== 536
   || retainedWrittenLogicalCards !== 144
   || retainedPracticalLogicalCards !== 392
