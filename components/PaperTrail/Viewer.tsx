@@ -62,7 +62,7 @@ import type { PaperTopicTags } from '../../types/paperTrailTopics';
 import type { PaperAnswerMap, PaperAnswerQuestion } from '../../types/paperTrail';
 import type { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist';
 // pdf.js lazy singleton + region renderer — shared with the Topic Vault.
-import { loadPdfjs, type PdfjsModule } from './pdfjsLoader';
+import { loadPdfjs, openPdfDocument, type PdfjsModule } from './pdfjsLoader';
 import CropView from './CropView';
 import MobileQuestionTools from './MobileQuestionTools';
 import { questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
@@ -433,8 +433,8 @@ const Viewer: React.FC<ViewerProps> = ({
         );
         if (!mountedRef.current) return;
         const task = bytes
-          ? pdfjs.getDocument({ data: new Uint8Array(bytes) })
-          : pdfjs.getDocument({ url: target.url });
+          ? openPdfDocument(pdfjs, { data: new Uint8Array(bytes) })
+          : openPdfDocument(pdfjs, { url: target.url });
         s.task = task;
         const pdf = await withTimeout(task.promise, LOAD_TIMEOUT_MS);
         if (!mountedRef.current) {

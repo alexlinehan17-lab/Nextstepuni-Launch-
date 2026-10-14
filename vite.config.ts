@@ -4,9 +4,10 @@ import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 import { standaloneDocumentRoutes } from './utils/pwaNavigation';
-import { readFileSync } from 'node:fs';
+import { createReadStream, readdirSync, readFileSync, statSync } from 'node:fs';
 import type { LegalDoc } from './components/legal/legalContent';
 import { renderLegalPage } from './components/legal/legalPage';
+import { PDFJS_RESOURCE_DIRS, pdfjsResourceFile, pdfjsResourceRoot } from './components/PaperTrail/pdfjsResources';
 
 // The app and public documents share the same copy, renderer helpers and CSS.
 const legalStyles = () => readFileSync(new URL('./components/legal/legal-document.css', import.meta.url), 'utf8');
@@ -57,6 +58,41 @@ function legalStaticPages(): Plugin {
   };
 }
 
+/**
+ * pdf.js runtime data (wasm decoders, CMaps, standard fonts) at the versioned
+ * path the Paper Trail passes to getDocument. Served from node_modules in dev,
+ * emitted into dist for production. Why the app needs it:
+ * components/PaperTrail/pdfjsResources.ts.
+ */
+function pdfjsResources(): Plugin {
+  const pkgDir = path.resolve(__dirname, 'node_modules/pdfjs-dist');
+  const { version } = JSON.parse(readFileSync(path.join(pkgDir, 'package.json'), 'utf8')) as { version: string };
+  const contentTypes: Record<string, string> = { '.wasm': 'application/wasm', '.js': 'text/javascript', '.ttf': 'font/ttf' };
+  return {
+    name: 'pdfjs-resources',
+    configureServer(server) {
+      server.middlewares.use((req: IncomingMessage, res: ServerResponse, next: () => void) => {
+        const file = pdfjsResourceFile((req.url || '').split('?')[0], version);
+        if (!file) return next();
+        const abs = path.join(pkgDir, file);
+        let found = false;
+        try { found = statSync(abs).isFile(); } catch { /* missing */ }
+        if (!found) { res.statusCode = 404; res.end(); return; }
+        res.setHeader('Content-Type', contentTypes[path.extname(abs)] ?? 'application/octet-stream');
+        createReadStream(abs).pipe(res);
+      });
+    },
+    generateBundle() {
+      const root = pdfjsResourceRoot(version).slice(1);
+      for (const dir of PDFJS_RESOURCE_DIRS) {
+        for (const name of readdirSync(path.join(pkgDir, dir))) {
+          this.emitFile({ type: 'asset', fileName: `${root}${dir}/${name}`, source: readFileSync(path.join(pkgDir, dir, name)) });
+        }
+      }
+    },
+  };
+}
+
 export default defineConfig(() => {
     return {
       server: {
@@ -67,6 +103,7 @@ export default defineConfig(() => {
         react(),
         landingRoute(),
         legalStaticPages(),
+        pdfjsResources(),
         VitePWA({
           registerType: 'autoUpdate',
           // Don't auto-inject the SW registration. We register manually in
@@ -129,6 +166,9 @@ export default defineConfig(() => {
         // every deploy. Bad trade; they are runtime-cached instead.
         globIgnores: [
           '**/pdf.worker*.js', '**/vendor-pdfjs*.js', '**/DiagramVault*.js',
+          // pdf.js decoders and fonts, fetched by the worker only when a paper
+          // needs them (vite.config.ts pdfjsResources).
+          '**/pdfjs-*/**',
           '**/higher-*.js', '**/ordinary-*.js',
           '**/catchUpLaneData*.js', '**/commandWordData*.js',
           '**/vendor-three*.js',
