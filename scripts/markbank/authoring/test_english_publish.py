@@ -44,6 +44,18 @@ class EnglishPublisherTest(unittest.TestCase):
     def setUpClass(cls):
         cls.outputs, cls.published, cls.refused = publish.publish()
 
+    def test_no_published_text_carries_a_private_use_glyph(self):
+        # SymbolMT list markers extract as U+F0B7/U+F02D and render as a missing-glyph box.
+        import unicodedata
+        for level in ('higher', 'ordinary'):
+            manifest = self.outputs[publish.CARDS_DIR / f'published-{level}.json']
+            for card in manifest['cards']:
+                blob = json.dumps(card, ensure_ascii=False)
+                self.assertFalse([ch for ch in blob if unicodedata.category(ch) == 'Co'], card['id'])
+        ordinary = {c['id']: c for c in self.outputs[publish.CARDS_DIR / 'published-ordinary.json']['cards']}
+        self.assertIn('assertion: • Werner Pfennig', ordinary['english-2022-ol-p2-single-b-q2']['questionText'])
+        self.assertIn('Friends: – I found the novel entertaining', ordinary['english-2018-ol-p2-single-a-q3-ii']['questionText'])
+
     def test_generated_files_are_current(self):
         for path, value in self.outputs.items():
             self.assertEqual(path.read_text(), publish.dump(value), str(path.relative_to(ROOT)))

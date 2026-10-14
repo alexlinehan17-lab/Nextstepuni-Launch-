@@ -7836,7 +7836,7 @@
       "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
     },
     "english-2018-ol-p2-single-a-q3-ii": {
-      "questionSha256": "84624ff4e7614663e2107617cc77e4432fee3e42365bdce45d8cf79348dec9e1",
+      "questionSha256": "21968adf2c94f5ee51b50bf68ca6c6897c64074bef0f3574a4e488d248d5f58e",
       "kind": "flexible",
       "reason": "Although three response phrases are printed, the paper permits a phrase OR phrases. The selection size is deliberately flexible, so this is not a closed choose-one or choose-k task."
     },
@@ -7851,7 +7851,7 @@
       "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
     },
     "english-2018-ol-p2-single-b-q3-ii": {
-      "questionSha256": "e8a7889f2dc8dce0d6a9c4e81fb5d767457bb95055183dc54ca739b3da2c0f04",
+      "questionSha256": "29c3e310e7a468cde8d31abb8ce07d94ba932e3ec683e4055bdc3343a6bc43ff",
       "kind": "flexible",
       "reason": "Although three response phrases are printed, the paper permits a phrase OR phrases. The selection size is deliberately flexible, so this is not a closed choose-one or choose-k task."
     },
@@ -7866,7 +7866,7 @@
       "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
     },
     "english-2018-ol-p2-single-c-q3-ii": {
-      "questionSha256": "c8e819770c9056a99dda3e4e6dead6fa990a53edaae339c661bfe71faf3961a0",
+      "questionSha256": "d4f56ef2974d04a4fe65dcbfb24ee7b5ca095f0c138b5fa9ebbbbd86c8a860c3",
       "kind": "flexible",
       "reason": "Although three response phrases are printed, the paper permits a phrase OR phrases. The selection size is deliberately flexible, so this is not a closed choose-one or choose-k task."
     },
@@ -7881,7 +7881,7 @@
       "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
     },
     "english-2018-ol-p2-single-d-q3-ii": {
-      "questionSha256": "4412ed46526a740f4e6dc9a5d2e7f234e9ae7e88c27f10c65aed86da867e1e7e",
+      "questionSha256": "71334c0b88fb9cbe2861f24b56f232d78a065fc0885dd3e6db0740341da84969",
       "kind": "flexible",
       "reason": "Although three response phrases are printed, the paper permits a phrase OR phrases. The selection size is deliberately flexible, so this is not a closed choose-one or choose-k task."
     },
@@ -7891,7 +7891,7 @@
       "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
     },
     "english-2018-ol-p2-single-e-q3-ii": {
-      "questionSha256": "dee7dbd230b3ae25ba315a158ff164e436fa5f385c0993f2aca142400956cf5b",
+      "questionSha256": "415a70b553286927cfe7cba19a8d358a7aa8b3546668f810f61c841776e8e04b",
       "kind": "flexible",
       "reason": "Although three response phrases are printed, the paper permits a phrase OR phrases. The selection size is deliberately flexible, so this is not a closed choose-one or choose-k task."
     },
@@ -7906,7 +7906,7 @@
       "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
     },
     "english-2018-ol-p2-single-f-q3-ii": {
-      "questionSha256": "35af710f1fe7529779f03ea21c979f0b50f46472da16561b74ef443fccac8cd4",
+      "questionSha256": "2b0d14e5f2574a02cba565e6263e0d2da09352f108ca5a9b8cec0dfafc6fc474",
       "kind": "flexible",
       "reason": "Although three response phrases are printed, the paper permits a phrase OR phrases. The selection size is deliberately flexible, so this is not a closed choose-one or choose-k task."
     },
@@ -7916,7 +7916,7 @@
       "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
     },
     "english-2018-ol-p2-single-g-q3-ii": {
-      "questionSha256": "7f3fef4c8cb21dbb52dd38b93967c28d4a93aa33a3067d4c70aad713af3f320e",
+      "questionSha256": "2d77ed1c69f01465ac86d46a359e5c21f35f36fc9186a5104eceae2267aac1a1",
       "kind": "flexible",
       "reason": "Although three response phrases are printed, the paper permits a phrase OR phrases. The selection size is deliberately flexible, so this is not a closed choose-one or choose-k task."
     },
@@ -7931,7 +7931,7 @@
       "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
     },
     "english-2018-ol-p2-single-h-q3-ii": {
-      "questionSha256": "ab2eb55f4a75d715d5090da339cc01a6fb5aff8b1d68913acd914c9d3850d8eb",
+      "questionSha256": "e3e036dd7acff6c334635ece8da7db97985e7319e47bc2e1cd770d8e4493cbd3",
       "kind": "flexible",
       "reason": "Although three response phrases are printed, the paper permits a phrase OR phrases. The selection size is deliberately flexible, so this is not a closed choose-one or choose-k task."
     },
@@ -7941,7 +7941,7 @@
       "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
     },
     "english-2018-ol-p2-single-i-q3-ii": {
-      "questionSha256": "31e2c942235d01fbaa6dea212bbfb53d08e208868a518387396a787a1f43376a",
+      "questionSha256": "cd1a8fcd75e94452985576c81ab48cfe0676b5e8dbcf0ad9ae85a2a64e1550db",
       "kind": "flexible",
       "reason": "Although three response phrases are printed, the paper permits a phrase OR phrases. The selection size is deliberately flexible, so this is not a closed choose-one or choose-k task."
     },
@@ -8641,7 +8641,7 @@
       "reason": "Scheme PDF20–22: “whether the relationship they have identified changed or remained the same” — one explained judgement (“may evolve/end/improve/worsen/remain the same”). One 15-mark response."
     },
     "english-2022-ol-p2-single-a-q2": {
-      "questionSha256": "043806dc995bd798c704ff0116ea0a499c38cb683305df63061c4556d07a8fbf",
+      "questionSha256": "71fb1a51395eb9253d807249367f0532167dcbadd29857638ac89915301cc76f",
       "kind": "open",
       "reason": "Scheme PDF20–22: a talk making three points “agreeing or disagreeing with the assertion” — a reasoned judgement on one grid, not routes. One 35-mark response."
     },
@@ -8661,7 +8661,7 @@
       "reason": "Scheme PDF23–25: “whether the relationship they have identified changed or remained the same” — one explained judgement (“may evolve/end/improve/worsen/remain the same”). One 15-mark response."
     },
     "english-2022-ol-p2-single-b-q2": {
-      "questionSha256": "ad29e9a0dfef5fdf87e8605eb3a47c0796f9f5b940138e8954a0495245aeabcb",
+      "questionSha256": "7b25e3db9375382b5fbf0c7cc9595096a51c8febb0ba075b7854f00b181a7065",
       "kind": "open",
       "reason": "Scheme PDF23–25: a talk making three points “agreeing or disagreeing with the assertion” — a reasoned judgement on one grid, not routes. One 35-mark response."
     },
@@ -8681,12 +8681,12 @@
       "reason": "Scheme PDF26–28: “whether the relationship they have identified changed or remained the same” — one explained judgement (“may evolve/end/improve/worsen/remain the same”). One 15-mark response."
     },
     "english-2022-ol-p2-single-c-q2": {
-      "questionSha256": "6ef82c3b6c20d94835ad24ce5ed5707e329793fa40ce0693f78ef05496453f23",
+      "questionSha256": "f3da8e6633e8e7c6a1b69c86720702a3b3b66670e06ae253c55f0aa67afd5334",
       "kind": "open",
       "reason": "Scheme PDF26–28: a talk making three points “agreeing or disagreeing with the assertion” — a reasoned judgement on one grid, not routes. One 35-mark response."
     },
     "english-2022-ol-p2-single-c-q3": {
-      "questionSha256": "5d2b5807f3fe61f19588cd6f956ad0a5ebb620a142662e08203f9425e713e044",
+      "questionSha256": "dc3585c63c3f88b0df5f8d0318b80d527ca6972d3f4dc8a7f4607811f8ff5756",
       "kind": "required",
       "reason": "Scheme PDF26–28: an interview in the printed persona covering all three bulleted requests. One 35-mark response."
     },
@@ -8706,7 +8706,7 @@
       "reason": "Scheme PDF29–31: “whether the relationship they have identified changed or remained the same” — one explained judgement (“may evolve/end/improve/worsen/remain the same”). One 15-mark response."
     },
     "english-2022-ol-p2-single-d-q2": {
-      "questionSha256": "4f1c44ded82007b102cd13ce11ac2e47e6d45e52ff75c593b2da3082b1aa7cf3",
+      "questionSha256": "7ef6f5d1538a56c1ccb8e03c48e8000f2403844db9a4087d56219e0ffbddbd74",
       "kind": "open",
       "reason": "Scheme PDF29–31: a talk making three points “agreeing or disagreeing with the assertion” — a reasoned judgement on one grid, not routes. One 35-mark response."
     },
@@ -8726,7 +8726,7 @@
       "reason": "Scheme PDF32–34: “whether the relationship they have identified changed or remained the same” — one explained judgement (“may evolve/end/improve/worsen/remain the same”). One 15-mark response."
     },
     "english-2022-ol-p2-single-e-q2": {
-      "questionSha256": "9cc020fd4789800906d2a4bcda5846fdf2efbfdf077a0b957a2e7b8f0d45a53d",
+      "questionSha256": "a9ae708d6e2f12c1ca5c617521d79dec1b6a891d289de64cec1cfca417bfcec1",
       "kind": "open",
       "reason": "Scheme PDF32–34: a talk making three points “agreeing or disagreeing with the assertion” — a reasoned judgement on one grid, not routes. One 35-mark response."
     },
@@ -8746,7 +8746,7 @@
       "reason": "Scheme PDF35–37: “whether the relationship they have identified changed or remained the same” — one explained judgement (“may evolve/end/improve/worsen/remain the same”). One 15-mark response."
     },
     "english-2022-ol-p2-single-f-q2": {
-      "questionSha256": "b79403c5d09c17cdab2658815e0d174521e90cd920fbbe3bf49ab032a4c7e84f",
+      "questionSha256": "f15adb253acafc604b9269383b2828e08db0b95aaa87eea39e2d0b52d27f5eca",
       "kind": "open",
       "reason": "Scheme PDF35–37: a talk making three points “agreeing or disagreeing with the assertion” — a reasoned judgement on one grid, not routes. One 35-mark response."
     },
@@ -8766,7 +8766,7 @@
       "reason": "Scheme PDF38–40: “whether the relationship they have identified changed or remained the same” — one explained judgement (“may evolve/end/improve/worsen/remain the same”). One 15-mark response."
     },
     "english-2022-ol-p2-single-g-q2": {
-      "questionSha256": "96c27d31686e835afae95d7b46fcd7b3a58cef5028afe3db62da3221a9693c1a",
+      "questionSha256": "b147df966aaec531152ce27327835f89caeb49ce8619e0f2b2a3dcae0f02d60b",
       "kind": "open",
       "reason": "Scheme PDF38–40: a talk making three points “agreeing or disagreeing with the assertion” — a reasoned judgement on one grid, not routes. One 35-mark response."
     },
@@ -8786,7 +8786,7 @@
       "reason": "Scheme PDF41–43: “whether the relationship they have identified changed or remained the same” — one explained judgement (“may evolve/end/improve/worsen/remain the same”). One 15-mark response."
     },
     "english-2022-ol-p2-single-h-q2": {
-      "questionSha256": "9e41ed408bf05e4a9d3e9383f351ce85ba93133d6ae082d750bd353f127512ff",
+      "questionSha256": "f6dcba7251dd07a53e4e6ae4302482b6ed3de516ca2214ba5a06c4d38210ce71",
       "kind": "open",
       "reason": "Scheme PDF41–43: a talk making three points “agreeing or disagreeing with the assertion” — a reasoned judgement on one grid, not routes. One 35-mark response."
     },
@@ -8806,12 +8806,12 @@
       "reason": "Scheme PDF44–46: “whether the relationship they have identified changed or remained the same” — one explained judgement (“may evolve/end/improve/worsen/remain the same”). One 15-mark response."
     },
     "english-2022-ol-p2-single-i-q2": {
-      "questionSha256": "0f7593b6575d6c34b17149e69a95ec483825a68ccd20e828e254b2bfbdee9a1e",
+      "questionSha256": "a4462db3dfa7230f88363297e0d7b49fd4895ac674d237c6d13fa19b1af5277e",
       "kind": "open",
       "reason": "Scheme PDF44–46: a talk making three points “agreeing or disagreeing with the assertion” — a reasoned judgement on one grid, not routes. One 35-mark response."
     },
     "english-2022-ol-p2-single-i-q3": {
-      "questionSha256": "e8bc9a2ac2910322f80e163fce72250c2f958b98cfd7f213dd69e88e8192cdb1",
+      "questionSha256": "e3dfe8ac64437d826b18b850985f68c6a458f6d6120ad0e18b2c1e56eb9e1e7f",
       "kind": "required",
       "reason": "Scheme PDF44–46: an interview in the printed persona covering all three bulleted requests. One 35-mark response."
     },
@@ -9251,7 +9251,7 @@
       "reason": "Scheme: “Candidates are free to agree/disagree or agree/disagree in part”, with two reasons drawn from the text in its entirety. A graded judgement, not routes. One 10-mark response."
     },
     "english-2025-ol-p2-single-a-q3": {
-      "questionSha256": "8c26c81a290193c8ba2a2af0e2cce4cda2418d48ce27faff6dc182eb81c2376f",
+      "questionSha256": "83ec0aaf9339d196594d649c5ded38c04f6e8f8bbf60623329da59507842266b",
       "kind": "open",
       "reason": "Scheme: one relationship between two characters, freely chosen; all three bulleted tasks (how it is introduced, what is fascinating, one piece of advice to either or both) are required. One 30-mark response."
     },
@@ -9266,7 +9266,7 @@
       "reason": "Scheme: “Candidates are free to agree/disagree or agree/disagree in part”, with two reasons drawn from the text in its entirety. A graded judgement, not routes. One 10-mark response."
     },
     "english-2025-ol-p2-single-b-q3": {
-      "questionSha256": "c6e7c1e1124bccb0115a32f89d41551f5d6fc8bc51d10ae1479e4f5b3e80bd3e",
+      "questionSha256": "861b585b351f9d9d856b3f0e145c86feefe9bd8f4bd2babc93313bcae8df6604",
       "kind": "open",
       "reason": "Scheme: one relationship between two characters, freely chosen; all three bulleted tasks (how it is introduced, what is fascinating, one piece of advice to either or both) are required. One 30-mark response."
     },
@@ -9281,7 +9281,7 @@
       "reason": "Scheme: “Candidates are free to agree/disagree or agree/disagree in part”, with two reasons drawn from the text in its entirety. A graded judgement, not routes. One 10-mark response."
     },
     "english-2025-ol-p2-single-c-q3": {
-      "questionSha256": "a5980bfc81c65127ba8efe7887e95798c8fac7b71fd81ff1e66c607ec038a860",
+      "questionSha256": "f10e0c2ecaac1adee8a1b508180814d40ed65acc2ceeae7a1e9563f8f665865d",
       "kind": "open",
       "reason": "Scheme: one relationship between two characters, freely chosen; all three bulleted tasks (how it is introduced, what is fascinating, one piece of advice to either or both) are required. One 30-mark response."
     },
@@ -9296,7 +9296,7 @@
       "reason": "Scheme: “Candidates are free to agree/disagree or agree/disagree in part”, with two reasons drawn from the text in its entirety. A graded judgement, not routes. One 10-mark response."
     },
     "english-2025-ol-p2-single-d-q3": {
-      "questionSha256": "9cf772a530ff6ff9d0bdd3598ccbf78716d41763f2aaa27e6a692e83f7655f89",
+      "questionSha256": "196c0028f1ce06a4d819af69d11c8fe60956c891036192fe635b9198654b6f42",
       "kind": "open",
       "reason": "Scheme: one relationship between two characters, freely chosen; all three bulleted tasks (how it is introduced, what is fascinating, one piece of advice to either or both) are required. One 30-mark response."
     },
@@ -9311,7 +9311,7 @@
       "reason": "Scheme: “Candidates are free to agree/disagree or agree/disagree in part”, with two reasons drawn from the text in its entirety. A graded judgement, not routes. One 10-mark response."
     },
     "english-2025-ol-p2-single-e-q3": {
-      "questionSha256": "1d8631aa645c77a1b86e7b4a93621ab8202ba2cb555a127a27fbc507a9c01315",
+      "questionSha256": "724231e992366b82e6d1632f8dcd8496f603eceb9d81e00bafe31c1e427ba846",
       "kind": "open",
       "reason": "Scheme: one relationship between two characters, freely chosen; all three bulleted tasks (how it is introduced, what is fascinating, one piece of advice to either or both) are required. One 30-mark response."
     },
@@ -9326,7 +9326,7 @@
       "reason": "Scheme: “Candidates are free to agree/disagree or agree/disagree in part”, with two reasons drawn from the text in its entirety. A graded judgement, not routes. One 10-mark response."
     },
     "english-2025-ol-p2-single-f-q3": {
-      "questionSha256": "48cf31103ababcdcbcc53b4275fa6575e90e0c1bd8c1928d6c18c836bbb63327",
+      "questionSha256": "42d533e74859a0f91b169ef0ba61d780f4ed148ec020420fe8cfabc37ecd5e92",
       "kind": "open",
       "reason": "Scheme: one relationship between two characters, freely chosen; all three bulleted tasks (how it is introduced, what is fascinating, one piece of advice to either or both) are required. One 30-mark response."
     },
@@ -9341,7 +9341,7 @@
       "reason": "Scheme: “Candidates are free to agree/disagree or agree/disagree in part”, with two reasons drawn from the text in its entirety. A graded judgement, not routes. One 10-mark response."
     },
     "english-2025-ol-p2-single-g-q3": {
-      "questionSha256": "c4c68294af800882c4d8b5c6db20adedc2a79aee12c0fd04a049451f9d0114a7",
+      "questionSha256": "b9797ecf09eb26d48c7f4e1407e0dff26bdcefa8151a942a442183e50d736e33",
       "kind": "open",
       "reason": "Scheme: one relationship between two characters, freely chosen; all three bulleted tasks (how it is introduced, what is fascinating, one piece of advice to either or both) are required. One 30-mark response."
     },
@@ -9356,7 +9356,7 @@
       "reason": "Scheme: “Candidates are free to agree/disagree or agree/disagree in part”, with two reasons drawn from the text in its entirety. A graded judgement, not routes. One 10-mark response."
     },
     "english-2025-ol-p2-single-h-q3": {
-      "questionSha256": "6b03fcc80d4f2f5ad603aab83c07afe463a060166af66cb2b5d71c603d1b6dee",
+      "questionSha256": "60a2d2a356d40b03a1fa267270fbe4e617b9720e2fad91227e5ef6e7fa402b28",
       "kind": "open",
       "reason": "Scheme: one relationship between two characters, freely chosen; all three bulleted tasks (how it is introduced, what is fascinating, one piece of advice to either or both) are required. One 30-mark response."
     },
@@ -9371,7 +9371,7 @@
       "reason": "Scheme: “Candidates are free to agree/disagree or agree/disagree in part”, with two reasons drawn from the text in its entirety. A graded judgement, not routes. One 10-mark response."
     },
     "english-2025-ol-p2-single-i-q3": {
-      "questionSha256": "f87751e21b397f3f2d6a08b4be495dd75f17d1d28c6d867fbb23e50d63655a35",
+      "questionSha256": "fe8ad2aa2a05ec3e0384b0db91d6538b838cfe2040987284b76fa4d4d845ea26",
       "kind": "open",
       "reason": "Scheme: one relationship between two characters, freely chosen; all three bulleted tasks (how it is introduced, what is fascinating, one piece of advice to either or both) are required. One 30-mark response."
     },
@@ -17065,7 +17065,7 @@
       "reason": "Scheme PDF20–22: a relationship between two characters that the candidate found fascinating, and one reason why. One 10-mark response."
     },
     "english-2022-ol-p2-single-a-q3": {
-      "questionSha256": "67c54e01cd1580370bacf352ea33f9eebec37db858eba83fc883b1a6a4b6800e",
+      "questionSha256": "6b5ff6738bc9f59827acd5e2f25939da92a8eeb660dc80dd289c2a53da18dfd3",
       "kind": "required",
       "reason": "Scheme PDF20–22: an interview in the printed persona covering all three bulleted requests. One 35-mark response."
     },
@@ -17075,7 +17075,7 @@
       "reason": "Scheme PDF23–25: a relationship between two characters that the candidate found fascinating, and one reason why. One 10-mark response."
     },
     "english-2022-ol-p2-single-b-q3": {
-      "questionSha256": "a2792c597e1eea6df56c0c5223510badb7d0d928d16b6f77ab9e1134a003963a",
+      "questionSha256": "eaccd387fbbe5b8d3c336a92af4a82bcce66587ed169de08ea815fb0e9eb6630",
       "kind": "required",
       "reason": "Scheme PDF23–25: an interview in the printed persona covering all three bulleted requests. One 35-mark response."
     },
@@ -17090,7 +17090,7 @@
       "reason": "Scheme PDF29–31: a relationship between two characters that the candidate found fascinating, and one reason why. One 10-mark response."
     },
     "english-2022-ol-p2-single-d-q3": {
-      "questionSha256": "7bd89b939e1ea49597b72524f5e03734103102d9fb4fed8cca0f6a4c2f6063c2",
+      "questionSha256": "27055d40b7f245ac2aced65202b9257a9fd2765e952cb2aa71f63ef31258bc75",
       "kind": "required",
       "reason": "Scheme PDF29–31: an interview in the printed persona covering all three bulleted requests. One 35-mark response."
     },
@@ -17100,7 +17100,7 @@
       "reason": "Scheme PDF32–34: a relationship between two characters that the candidate found fascinating, and one reason why. One 10-mark response."
     },
     "english-2022-ol-p2-single-e-q3": {
-      "questionSha256": "f665dd4d6d50f099a936dddc67e435c45c0fb147c33d488edbb10acb43cfa5f9",
+      "questionSha256": "cc53a5c9af5757422fa3418d8486c03046ba406e9db7ac0f541bc74a37683b3f",
       "kind": "required",
       "reason": "Scheme PDF32–34: an interview in the printed persona covering all three bulleted requests. One 35-mark response."
     },
@@ -17110,7 +17110,7 @@
       "reason": "Scheme PDF35–37: a relationship between two characters that the candidate found fascinating, and one reason why. One 10-mark response."
     },
     "english-2022-ol-p2-single-f-q3": {
-      "questionSha256": "90d17f02169f1a09eb41a73c01bde7bdf87ecd02de9f38fa6f9a5873a190f57c",
+      "questionSha256": "7f8644fd3d8cd61e4579d872229e63c374757cd407f8973a730a5e4101a69580",
       "kind": "required",
       "reason": "Scheme PDF35–37: an interview in the printed persona covering all three bulleted requests. One 35-mark response."
     },
@@ -17120,7 +17120,7 @@
       "reason": "Scheme PDF38–40: a relationship between two characters that the candidate found fascinating, and one reason why. One 10-mark response."
     },
     "english-2022-ol-p2-single-g-q3": {
-      "questionSha256": "4f465ba13f857245b944f6b96fc1554e6f8d15bfac11797759a5b83ddc0e9935",
+      "questionSha256": "d719fe79f3509c884375a47f0922649a404fa8764f4c17b35b0d537afbb246dc",
       "kind": "required",
       "reason": "Scheme PDF38–40: an interview in the printed persona covering all three bulleted requests. One 35-mark response."
     },
@@ -17130,7 +17130,7 @@
       "reason": "Scheme PDF41–43: a relationship between two characters that the candidate found fascinating, and one reason why. One 10-mark response."
     },
     "english-2022-ol-p2-single-h-q3": {
-      "questionSha256": "2c399ddac5708f6d0a9348dac33f015620f0cb6b145b02e85b6d75e3ad79ed02",
+      "questionSha256": "f9247df50969cbe692515e41236b4683798dbb654839ef1863cfed953cddbab1",
       "kind": "required",
       "reason": "Scheme PDF41–43: an interview in the printed persona covering all three bulleted requests. One 35-mark response."
     },

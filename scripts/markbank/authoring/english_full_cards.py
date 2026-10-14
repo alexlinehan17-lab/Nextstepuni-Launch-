@@ -98,6 +98,9 @@ def printed_title(record, doc, identity, key):
     return title
 
 
+SYMBOL_MARKERS = str.maketrans({'\uf0b7': '•', '\uf02d': '–'})
+
+
 def region_text(doc, regions):
     chunks = []
     for region in regions:
@@ -141,6 +144,9 @@ def region_text(doc, regions):
                 continue
             if re.fullmatch(r'(?:[A-I]\s*)?\(continued\)', text, re.I):
                 continue
+            # SymbolMT list markers extract as private-use code points and render as a missing glyph;
+            # the paper prints a bullet (U+F0B7) and a dash (U+F02D), as other prompts show them.
+            text = text.translate(SYMBOL_MARKERS)
             for repair_record in TEXT_REPAIRS:
                 if Path(doc.name).resolve() != (ROOT / repair_record['source']).resolve():
                     continue
