@@ -75213,5 +75213,4546 @@
   "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2020_ol.py.",
   "year": 2020,
   "level": "ordinary"
+ },
+ {
+  "id": "bio-2019-hl-q1-a",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "why-food-is-needed",
+  "section": "A",
+  "questionRef": "2019 HL Q1(a)",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "State the two main reasons why food is required by all living organisms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Energy (source) or (cellular) respiration",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "(Raw materials for) growth or (raw materials for) repair (of tissue)",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q1-b",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "h-to-o-ratio",
+  "section": "A",
+  "questionRef": "2019 HL Q1(b)",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "What is the ratio of hydrogen atoms to oxygen atoms in a carbohydrate?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "2:1",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q1-c",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "structural-role-of-lipids",
+  "section": "A",
+  "questionRef": "2019 HL Q1(c)",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "Give a structural role of lipids in cells.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Component of) membrane(s)",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q1-d",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "metabolic-role-of-lipids",
+  "section": "A",
+  "questionRef": "2019 HL Q1(d)",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "Give a metabolic role of lipids in cells.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Energy (source or store)",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q1-e",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "fat-soluble-vitamins",
+  "section": "A",
+  "questionRef": "2019 HL Q1(e)",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "Give an example of a fat‐soluble vitamin.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A, D, E, K",
+    "marks": 4,
+    "contextNote": "[allow letters or names]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q1-f",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "vitamin-deficiency-disorders",
+  "section": "A",
+  "questionRef": "2019 HL Q1(f)",
+  "stem": "Answer any five of the following parts (a) to (f): (e) Give an example of a fat‐soluble vitamin.",
+  "questionText": "Name a disorder due to a dietary deficiency of the vitamin referred to in (e).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "A = e.g. Night blindness D = e.g. Osteomalacia or osteoporosis (adults)/ or rickets (children) E = e.g. Anaemia K = e.g. Bleeding (or easy bruising)",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q2-a",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "hypothesis",
+  "section": "A",
+  "questionRef": "2019 HL Q2(a)",
+  "stem": "In relation to the principles of experimentation:",
+  "questionText": "What is meant by the term hypothesis?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Proposed (or possible) explanation or an explanation of an observation or an educated guess or untested (or unproven) idea or prediction",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q2-b",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "double-blind-testing",
+  "section": "A",
+  "questionRef": "2019 HL Q2(b)",
+  "stem": "In relation to the principles of experimentation:",
+  "questionText": "Explain what is meant by double‐blind testing.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Neither the tester nor the subject knows who gets the drug (or who gets the placebo)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q2-c",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "random-selection",
+  "section": "A",
+  "questionRef": "2019 HL Q2(c)",
+  "stem": "In relation to the principles of experimentation:",
+  "questionText": "Explain the necessity for random selection.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Reduces bias or greater reliability or greater validity (or accuracy) (of results or of data) or fair (test)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q2-d",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "good-experimental-design",
+  "section": "A",
+  "questionRef": "2019 HL Q2(d)",
+  "stem": "In relation to the principles of experimentation:",
+  "questionText": "Give two other features of good experimental design.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "A control / only one variable / safe (procedure) / large sample size / repeatable / replicates",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "A control",
+      "only one variable",
+      "safe (procedure)",
+      "large sample size",
+      "repeatable",
+      "replicates"
+     ]
+    },
+    "contextNote": "[do not allow random selection or double-blind testing]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q2-e",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "publishing-results",
+  "section": "A",
+  "questionRef": "2019 HL Q2(e)",
+  "stem": "In relation to the principles of experimentation:",
+  "questionText": "Where are the results of scientific research usually first published?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "A scientific journal (or publication or website) or named scientific journal",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q2-f",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "why-publish",
+  "section": "A",
+  "questionRef": "2019 HL Q2(f)",
+  "stem": "In relation to the principles of experimentation:",
+  "questionText": "Why is it important that scientists publish the results of their research?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "For peer review or so that others can learn (from their work) or so others can repeat it or information made widely available",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q3-a",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "tissue",
+  "section": "A",
+  "questionRef": "2019 HL Q3(a)",
+  "stem": "Organisation is one of the characteristics of life. This includes organisation of cells.",
+  "questionText": "What is meant by the term tissue?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(A group of) cells with the same function or (a group of) cells working together",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q3-b",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "animal-tissues",
+  "section": "A",
+  "questionRef": "2019 HL Q3(b)",
+  "stem": "Organisation is one of the characteristics of life. This includes organisation of cells.",
+  "questionText": "Name two types of animal tissue.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Epithelial (or epidermis) / muscle / connective / nervous / adipose / blood / bone / cartilage / tendon / ligament",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Epithelial (or epidermis)",
+      "muscle",
+      "connective",
+      "nervous",
+      "adipose",
+      "blood",
+      "bone",
+      "cartilage",
+      "tendon",
+      "ligament"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q3-c",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "tissue-adaptations",
+  "section": "A",
+  "questionRef": "2019 HL Q3(c)",
+  "stem": "Organisation is one of the characteristics of life. This includes organisation of cells. (b) Name two types of animal tissue.",
+  "questionText": "State how each of these tissue types is adapted to carry out its function.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Correct adaptation matching named tissues",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q3-d",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "tissue-culture",
+  "section": "A",
+  "questionRef": "2019 HL Q3(d)",
+  "stem": "Organisation is one of the characteristics of life. This includes organisation of cells.",
+  "questionText": "Stem cell research is an application of tissue culture. What is meant by the term tissue culture?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Growth of cells on (or in) a medium or growth of cells in vitro",
+    "marks": null,
+    "contextNote": "[Allow growth of cells outside an organism or growth of cells outside the body]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q3-e",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "uses-of-tissue-culture",
+  "section": "A",
+  "questionRef": "2019 HL Q3(e)",
+  "stem": "Organisation is one of the characteristics of life. This includes organisation of cells.",
+  "questionText": "Give one other application of tissue culture.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Plant breeding / micro-propagation or example / plant propagation / vegetative propagation / skin grafts / cancer research or example of cancer research / IVF or described / vaccine production / antibody production / replacement organs",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Plant breeding",
+      "micro-propagation or example",
+      "plant propagation",
+      "vegetative propagation",
+      "skin grafts",
+      "cancer research or example of cancer research",
+      "IVF or described",
+      "vaccine production",
+      "antibody production",
+      "replacement organs"
+     ]
+    },
+    "contextNote": "[Do not allow any reference to stem cells]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q4-a",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "light-microscope",
+  "section": "A",
+  "questionRef": "2019 HL Q4(a)",
+  "stem": "The photograph below is of plant cells undergoing different stages of mitosis. The cells are not shown in any particular order.",
+  "questionText": "Which type of microscope is used in the school laboratory to observe cells like these?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Light (microscope)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q4-mitosis"
+ },
+ {
+  "id": "bio-2019-hl-q4-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "prophase",
+  "section": "A",
+  "questionRef": "2019 HL Q4(b)",
+  "stem": "The photograph below is of plant cells undergoing different stages of mitosis. The cells are not shown in any particular order.",
+  "questionText": "The first cell is in prophase. Give two observable events that happen during prophase.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Nuclear membrane disappears (or breaks down) / spindle forms / chromosomes are visible or chromosomes become shorter (or thicker) / chromosomes are double stranded",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Nuclear membrane disappears (or breaks down)",
+      "spindle forms",
+      "chromosomes are visible or chromosomes become shorter (or thicker)",
+      "chromosomes are double stranded"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q4-mitosis"
+ },
+ {
+  "id": "bio-2019-hl-q4-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "metaphase",
+  "section": "A",
+  "questionRef": "2019 HL Q4(c)",
+  "stem": "The photograph below is of plant cells undergoing different stages of mitosis. The cells are not shown in any particular order.",
+  "questionText": "On the photograph, use the letter M to label a cell that is undergoing metaphase.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Sixth cell from LH end",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q4-mitosis"
+ },
+ {
+  "id": "bio-2019-hl-q4-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "anaphase",
+  "section": "A",
+  "questionRef": "2019 HL Q4(d)",
+  "stem": "The photograph below is of plant cells undergoing different stages of mitosis. The cells are not shown in any particular order.",
+  "questionText": "On the photograph, use the letter A to label a cell that is undergoing anaphase.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Second cell from LH end",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q4-mitosis"
+ },
+ {
+  "id": "bio-2019-hl-q4-e",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "cytokinesis",
+  "section": "A",
+  "questionRef": "2019 HL Q4(e)",
+  "questionText": "After mitosis, the cell divides in two. This happens differently in animal cells and in plant cells. Describe what happens in animal cells and in plant cells during this stage.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "In animal cells — Cleavage (or furrow) or described",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "In plant cells — (Cell) plate or described",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q5-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "biconcave",
+  "section": "A",
+  "questionRef": "2019 HL Q5(a)",
+  "stem": "Some typical human red blood cells are shown below. They are disc shaped.",
+  "questionText": "What word is used to describe the shape of the two faces of these cells?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Concave or biconcave",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q5-red-cells"
+ },
+ {
+  "id": "bio-2019-hl-q5-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "flexible-red-cells",
+  "section": "A",
+  "questionRef": "2019 HL Q5(b)",
+  "stem": "Some typical human red blood cells are shown below. They are disc shaped.",
+  "questionText": "Red blood cells are wider than some capillaries. What feature of red blood cells allows them to pass through the narrow capillaries?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Flexible or described",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q5-red-cells"
+ },
+ {
+  "id": "bio-2019-hl-q5-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "haemoglobin",
+  "section": "A",
+  "questionRef": "2019 HL Q5(c)",
+  "stem": "Some typical human red blood cells are shown below. They are disc shaped.",
+  "questionText": "Name the molecule in red blood cells that carries oxygen.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Haemoglobin",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q5-red-cells"
+ },
+ {
+  "id": "bio-2019-hl-q5-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "red-cell-lifespan",
+  "section": "A",
+  "questionRef": "2019 HL Q5(d)",
+  "stem": "Some typical human red blood cells are shown below. They are disc shaped.",
+  "questionText": "Human red blood cells live for about 120 days. Give a reason for this, based on the composition of these cells.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "No nucleus or no mitochondria or no organelles or cannot reproduce",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q5-red-cells"
+ },
+ {
+  "id": "bio-2019-hl-q5-e-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "where-red-cells-are-made",
+  "section": "A",
+  "questionRef": "2019 HL Q5(e)1",
+  "stem": "Some typical human red blood cells are shown below. They are disc shaped. Give a location in the body where red blood cells are:",
+  "questionText": "1. Produced.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Bone) marrow",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q5-red-cells"
+ },
+ {
+  "id": "bio-2019-hl-q5-e-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "where-red-cells-are-broken-down",
+  "section": "A",
+  "questionRef": "2019 HL Q5(e)2",
+  "stem": "Some typical human red blood cells are shown below. They are disc shaped. Give a location in the body where red blood cells are:",
+  "questionText": "2. Usually broken down.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Liver or spleen",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q5-red-cells"
+ },
+ {
+  "id": "bio-2019-hl-q5-f",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "lymph",
+  "section": "A",
+  "questionRef": "2019 HL Q5(f)",
+  "stem": "Some typical human red blood cells are shown below. They are disc shaped.",
+  "questionText": "Red blood cells are transported in the blood plasma. Name the transport fluid in humans that does not contain red blood cells.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Lymph",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q5-red-cells"
+ },
+ {
+  "id": "bio-2019-hl-q6-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "pulmonary-artery",
+  "section": "A",
+  "questionRef": "2019 HL Q6(a)",
+  "stem": "The diagram shows microscopic detail of an alveolus and a capillary from the human lung.",
+  "questionText": "Name the blood vessel from which the capillary arises.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pulmonary artery (arteriole)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q6-alveolus"
+ },
+ {
+  "id": "bio-2019-hl-q6-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "gas-exchange-surfaces",
+  "section": "A",
+  "questionRef": "2019 HL Q6(b)",
+  "stem": "The diagram shows microscopic detail of an alveolus and a capillary from the human lung.",
+  "questionText": "Give any three features of alveoli or their capillaries that allow for efficient gas exchange.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Membrane (or wall) is thin (or is 1 cell thick) / Large surface area / Large numbers / Moist surface / Wall is thin (or is 1 cell thick) / Close contact with alveoli / Large number or (capillary) network or highly branched / large surface area",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Membrane (or wall) is thin (or is 1 cell thick)",
+      "Large surface area",
+      "Large numbers",
+      "Moist surface",
+      "Wall is thin (or is 1 cell thick)",
+      "Close contact with alveoli",
+      "Large number or (capillary) network or highly branched",
+      "large surface area"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme sets the features in two columns, alveoli and capillaries, each with its own \"large surface area\"; one menu of both, the alveoli column first (column membership layout-checked). Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q6-alveolus"
+ },
+ {
+  "id": "bio-2019-hl-q6-c-asthma",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "asthma-cause-and-treatment",
+  "section": "A",
+  "questionRef": "2019 HL Q6(c) — asthma",
+  "questionText": "Name a disorder of the human breathing system and suggest how it is caused and treated.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Disorder — Asthma",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Cause — Pet dander or allergens or smoke or dust",
+    "marks": null
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Treatment — An inhaler (bronchodilator)",
+    "marks": null,
+    "contextNote": "[allow named ones]"
+   }
+  ],
+  "notes": "Asthma or bronchitis: the scheme prints a separate column of causes and treatments for each, so each is a route card. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q6-c-bronchitis",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "bronchitis-cause-and-treatment",
+  "section": "A",
+  "questionRef": "2019 HL Q6(c) — bronchitis",
+  "questionText": "Name a disorder of the human breathing system and suggest how it is caused and treated.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Disorder — Bronchitis",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Cause — Viruses or bacteria or smoke or airborne particles",
+    "marks": null
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "Treatment — Cough medicine or inhalers or bronchodilators or mucolytics or anti-inflammatories or antibiotics",
+    "marks": null
+   }
+  ],
+  "notes": "Asthma or bronchitis: the scheme prints a separate column of causes and treatments for each, so each is a route card. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q7-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "use-of-biuret",
+  "section": "B",
+  "questionRef": "2019 HL Q7(a)(i)",
+  "stem": "State a use of each of the following in the biology laboratory.",
+  "questionText": "Biuret reagent (a solution containing copper sulfate and sodium hydroxide).",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(To test for) protein",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q7-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "use-of-benedicts",
+  "section": "B",
+  "questionRef": "2019 HL Q7(a)(ii)",
+  "stem": "State a use of each of the following in the biology laboratory.",
+  "questionText": "Benedict’s (or Fehling’s) solution.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(To test for) reducing sugar",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q7-b-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "coverslip",
+  "section": "B",
+  "questionRef": "2019 HL Q7(b)(i)1",
+  "stem": "When preparing a sample of cheek cells on a microscope slide, why did you:",
+  "questionText": "1. Place a coverslip over the cells?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 2 + 8"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To prevent (the cells) from drying out or to protect the (objective) lens (from water or from stain) or to hold sample in place or easier to see",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q7-b-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "methylene-blue",
+  "section": "B",
+  "questionRef": "2019 HL Q7(b)(i)2",
+  "stem": "When preparing a sample of cheek cells on a microscope slide, why did you:",
+  "questionText": "2. Apply methylene blue to the cells?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 2 + 8"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To stain (the cells) or to make (the cells) easier to see",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q7-b-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "washing-up-liquid",
+  "section": "B",
+  "questionRef": "2019 HL Q7(b)(ii)1",
+  "stem": "When extracting DNA from plant tissue, why did you use:",
+  "questionText": "1. Washing‐up liquid?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 2 + 8"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Breakdown membrane",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q7-b-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "freezer-cold-ethanol",
+  "section": "B",
+  "questionRef": "2019 HL Q7(b)(ii)2",
+  "stem": "When extracting DNA from plant tissue, why did you use:",
+  "questionText": "2. Freezer‐cold ethanol?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 2 + 2 + 8"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To precipitate (the DNA) or to make (the DNA) insoluble or take (the DNA) out of solution or to make (the DNA) visible",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q8-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "fermentation-and-oxygen",
+  "section": "B",
+  "questionRef": "2019 HL Q8(a)(i)",
+  "stem": "Yeast cells produce alcohol (ethanol) in a process called fermentation.",
+  "questionText": "Is oxygen necessary for this process?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "No",
+    "marks": null,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q8-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "where-fermentation-happens",
+  "section": "B",
+  "questionRef": "2019 HL Q8(a)(ii)",
+  "stem": "Yeast cells produce alcohol (ethanol) in a process called fermentation.",
+  "questionText": "Where in the cell does this process take place?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Cytosol or cytoplasm",
+    "marks": null,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q8-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "fermentation-apparatus",
+  "section": "B",
+  "questionRef": "2019 HL Q8(b)(i)",
+  "stem": "Answer the following in relation to a laboratory activity you carried out to prepare alcohol using yeast, and to show its presence.",
+  "questionText": "Draw a labelled diagram of the apparatus you used.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Reaction vessel with liquid surface and anaerobic condition",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "Airlock or oil / yeast / sugar (or named sugar) (solution)",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Airlock or oil",
+      "yeast",
+      "sugar (or named sugar) (solution)"
+     ]
+    },
+    "contextNote": "Any one"
+   }
+  ],
+  "notes": "The drawing and its label are priced at 3 each beside the (b) ladder. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q8-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "substrate-for-fermentation",
+  "section": "B",
+  "questionRef": "2019 HL Q8(b)(ii)",
+  "stem": "Answer the following in relation to a laboratory activity you carried out to prepare alcohol using yeast, and to show its presence.",
+  "questionText": "From which substance did the yeast make the alcohol?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Glucose or sugar or other named sugar [allow starch]",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q8-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "fermentation-temperature",
+  "section": "B",
+  "questionRef": "2019 HL Q8(b)(iii)",
+  "stem": "Answer the following in relation to a laboratory activity you carried out to prepare alcohol using yeast, and to show its presence.",
+  "questionText": "What is the optimum temperature for this fermentation process?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Any temperature or range within 20 °C – 35 °C",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q8-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "keeping-temperature-constant",
+  "section": "B",
+  "questionRef": "2019 HL Q8(b)(iv)",
+  "stem": "Answer the following in relation to a laboratory activity you carried out to prepare alcohol using yeast, and to show its presence.",
+  "questionText": "How did you maintain this temperature at a constant level for the duration of the fermentation?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Water bath or incubator",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q8-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "end-of-fermentation",
+  "section": "B",
+  "questionRef": "2019 HL Q8(b)(v)",
+  "stem": "Answer the following in relation to a laboratory activity you carried out to prepare alcohol using yeast, and to show its presence.",
+  "questionText": "How did you know when the fermentation was finished?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "No more gas (carbon dioxide) produced / no more bubbles",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q8-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "testing-for-alcohol",
+  "section": "B",
+  "questionRef": "2019 HL Q8(b)(vi)",
+  "stem": "Answer the following in relation to a laboratory activity you carried out to prepare alcohol using yeast, and to show its presence.",
+  "questionText": "How did you test for the presence of alcohol?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Iodoform test or (potassium) iodide (or I-) and (sodium) hypochlorite (or ClO-)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q8-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "positive-iodoform-test",
+  "section": "B",
+  "questionRef": "2019 HL Q8(b)(vii)",
+  "stem": "Answer the following in relation to a laboratory activity you carried out to prepare alcohol using yeast, and to show its presence.",
+  "questionText": "Give the colour of the positive result of the test.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Yellow",
+    "marks": null,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q9-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "dicotyledonous",
+  "section": "B",
+  "questionRef": "2019 HL Q9(a)",
+  "stem": "In the course of your practical studies you prepared and examined with a microscope a transverse section (T.S.) of a dicotyledonous (dicot) plant stem.",
+  "questionText": "What is meant by the term dicotyledonous?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Two",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Seed leaves",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prices the definition as two responses on the \"4 + 2\" split. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q9-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "a-dicot",
+  "section": "B",
+  "questionRef": "2019 HL Q9(b)(i)",
+  "stem": "Answer the following questions in relation to your preparation and microscopic examination of a transverse section of a dicotyledonous stem.",
+  "questionText": "Name the plant you used.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Buttercup or sunflower or rose or ivy or busy lizzy or geranium or other named dicot",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q9-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "thin-sections",
+  "section": "B",
+  "questionRef": "2019 HL Q9(b)(ii)",
+  "stem": "Answer the following questions in relation to your preparation and microscopic examination of a transverse section of a dicotyledonous stem.",
+  "questionText": "Why is it important to use a very thin section when examining the tissues in the stem?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To allow light to pass through (effectively or well) or to see (the cells) clearly",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q9-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "cutting-safely",
+  "section": "B",
+  "questionRef": "2019 HL Q9(b)(iii)",
+  "stem": "Answer the following questions in relation to your preparation and microscopic examination of a transverse section of a dicotyledonous stem.",
+  "questionText": "Describe two steps you took to cut the stem safely.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Microtome or (backed or safety) blade or scalpel or sharp knife / stem held in pith (or named support) / cut away from body",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Microtome or (backed or safety) blade or scalpel or sharp knife",
+      "stem held in pith (or named support)",
+      "cut away from body"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q9-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "transferring-the-section",
+  "section": "B",
+  "questionRef": "2019 HL Q9(b)(iv)",
+  "stem": "Answer the following questions in relation to your preparation and microscopic examination of a transverse section of a dicotyledonous stem.",
+  "questionText": "How did you transfer the section to the microscope slide?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Paintbrush or forceps or tweezers or blade or finger",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q9-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "focusing",
+  "section": "B",
+  "questionRef": "2019 HL Q9(b)(v)",
+  "stem": "Answer the following questions in relation to your preparation and microscopic examination of a transverse section of a dicotyledonous stem.",
+  "questionText": "Name the part of the microscope you used to bring the section into a sharp focus.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2 + 2 + 2 + 2 + 6"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Fine (or coarse) wheel (or knob or adjuster)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q9-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "drawing-a-dicot-stem",
+  "section": "B",
+  "questionRef": "2019 HL Q9(b)(vi)",
+  "stem": "Answer the following questions in relation to your preparation and microscopic examination of a transverse section of a dicotyledonous stem.",
+  "questionText": "Draw a labelled diagram of the section that you observed under the microscope.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Epidermis and vascular bundles in a ring",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Vascular (bundle or tissue) or xylem or phloem or dermal or ground",
+    "marks": 3
+   }
+  ],
+  "notes": "The drawing and its label are priced at 3 each beside the (b) ladder. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "why-recycle-elements",
+  "section": "C",
+  "questionRef": "2019 HL Q10(a)(i)",
+  "questionText": "What is the importance in nature of recycling elements such as carbon and nitrogen?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To return (elements) to environment or so that (elements) can be reused (by organisms) or finite amount",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "nitrogen-cycle-bacteria",
+  "section": "C",
+  "questionRef": "2019 HL Q10(a)(ii)",
+  "questionText": "Name two of the types of bacteria that play a role in the nitrogen cycle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Nitrogen fixing / nitrifying / denitrifying / decomposers or saprophytes",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Nitrogen fixing",
+      "nitrifying",
+      "denitrifying",
+      "decomposers or saprophytes"
+     ]
+    },
+    "contextNote": "Any two"
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-b-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "predation",
+  "section": "C",
+  "questionRef": "2019 HL Q10(b)(i)1",
+  "stem": "Invasive mammals have been shown to have a detrimental impact on island biodiversity. Worldwide, invasive mammal species have led to the decline or extinction of bird and other species through predation and competition. Under an EU directive, Lough Mask in county Mayo is designated as a candidate Special Protection Area for wild birds. Both common and black‐headed gulls have significant nesting colonies on islands in Lough Mask. Both are considered to be species of conservation concern because their national breeding populations have declined by 25 ‒ 50% in the last 25 years. The reasons for the decline in these breeding colonies are not fully known, but it is considered that predation by the American mink is a problem. Mink are known to visit colonies and kill both adults and chicks. Adapted from www.invasivespeciesireland.com",
+  "questionText": "Explain what is meant by the terms\n1. Predation",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Catching (or hunting) and killing and eating another organism",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-b-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "conservation",
+  "section": "C",
+  "questionRef": "2019 HL Q10(b)(i)2",
+  "stem": "Invasive mammals have been shown to have a detrimental impact on island biodiversity. Worldwide, invasive mammal species have led to the decline or extinction of bird and other species through predation and competition. Under an EU directive, Lough Mask in county Mayo is designated as a candidate Special Protection Area for wild birds. Both common and black‐headed gulls have significant nesting colonies on islands in Lough Mask. Both are considered to be species of conservation concern because their national breeding populations have declined by 25 ‒ 50% in the last 25 years. The reasons for the decline in these breeding colonies are not fully known, but it is considered that predation by the American mink is a problem. Mink are known to visit colonies and kill both adults and chicks. Adapted from www.invasivespeciesireland.com",
+  "questionText": "Explain what is meant by the terms\n2. Conservation (of species).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Management of the environment (or of ecosystem or of habitat) or management of species (or of plants and animals) or maintenance of biodiversity or protect a species or prevention of extinction",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "mink-as-predator",
+  "section": "C",
+  "questionRef": "2019 HL Q10(b)(ii)",
+  "stem": "Invasive mammals have been shown to have a detrimental impact on island biodiversity. Worldwide, invasive mammal species have led to the decline or extinction of bird and other species through predation and competition. Under an EU directive, Lough Mask in county Mayo is designated as a candidate Special Protection Area for wild birds. Both common and black‐headed gulls have significant nesting colonies on islands in Lough Mask. Both are considered to be species of conservation concern because their national breeding populations have declined by 25 ‒ 50% in the last 25 years. The reasons for the decline in these breeding colonies are not fully known, but it is considered that predation by the American mink is a problem. Mink are known to visit colonies and kill both adults and chicks. Adapted from www.invasivespeciesireland.com",
+  "questionText": "Suggest why the mink has become a successful predator of the gulls.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Mink have adaptations suitable (for catching gulls) or example or can kill both adults and chicks or chicks have no adaptations to escape or to avoid capture or gulls have never encountered mink before or lack of competition",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "omnivory",
+  "section": "C",
+  "questionRef": "2019 HL Q10(b)(iii)",
+  "stem": "Invasive mammals have been shown to have a detrimental impact on island biodiversity. Worldwide, invasive mammal species have led to the decline or extinction of bird and other species through predation and competition. Under an EU directive, Lough Mask in county Mayo is designated as a candidate Special Protection Area for wild birds. Both common and black‐headed gulls have significant nesting colonies on islands in Lough Mask. Both are considered to be species of conservation concern because their national breeding populations have declined by 25 ‒ 50% in the last 25 years. The reasons for the decline in these breeding colonies are not fully known, but it is considered that predation by the American mink is a problem. Mink are known to visit colonies and kill both adults and chicks. Adapted from www.invasivespeciesireland.com",
+  "questionText": "Mink are omnivores. Why is this an advantage when mink invade an island?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "They can benefit from both animal and plant matter as food or able to survive from a greater range of food",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "mink-and-gull-decline",
+  "section": "C",
+  "questionRef": "2019 HL Q10(b)(iv)",
+  "stem": "Invasive mammals have been shown to have a detrimental impact on island biodiversity. Worldwide, invasive mammal species have led to the decline or extinction of bird and other species through predation and competition. Under an EU directive, Lough Mask in county Mayo is designated as a candidate Special Protection Area for wild birds. Both common and black‐headed gulls have significant nesting colonies on islands in Lough Mask. Both are considered to be species of conservation concern because their national breeding populations have declined by 25 ‒ 50% in the last 25 years. The reasons for the decline in these breeding colonies are not fully known, but it is considered that predation by the American mink is a problem. Mink are known to visit colonies and kill both adults and chicks. Adapted from www.invasivespeciesireland.com",
+  "questionText": "Other than predation, suggest a way in which the mink could cause a decline in the populations of these gulls.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Introduce disease or introduce a parasite or eat the food that gulls normally eat or disturbance",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "mink-and-food-chains",
+  "section": "C",
+  "questionRef": "2019 HL Q10(b)(v)",
+  "stem": "Invasive mammals have been shown to have a detrimental impact on island biodiversity. Worldwide, invasive mammal species have led to the decline or extinction of bird and other species through predation and competition. Under an EU directive, Lough Mask in county Mayo is designated as a candidate Special Protection Area for wild birds. Both common and black‐headed gulls have significant nesting colonies on islands in Lough Mask. Both are considered to be species of conservation concern because their national breeding populations have declined by 25 ‒ 50% in the last 25 years. The reasons for the decline in these breeding colonies are not fully known, but it is considered that predation by the American mink is a problem. Mink are known to visit colonies and kill both adults and chicks. Adapted from www.invasivespeciesireland.com",
+  "questionText": "Suggest another impact on food chains in this ecosystem caused by the presence of mink on these islands.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Could lead to an overpopulation of the gull’s prey or overpopulation of primary consumers or the population of producers could decline or decline in other predators",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "predator-prey-graph",
+  "section": "C",
+  "questionRef": "2019 HL Q10(b)(vi)",
+  "questionText": "Sketch and label a graph to show the typical relationship between the populations of a predator and its prey.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Two curves with indication of a repeating cycle",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Predator showing lower peaks or predator curve showing time lag [Either predator or prey line must be labelled for this point]",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "Time on horizontal axis and Population on vertical axis",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-c-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "quantitative-survey",
+  "section": "C",
+  "questionRef": "2019 HL Q10(c)(i)1",
+  "questionText": "From your knowledge of ecological surveys, explain the meaning of the terms:\n1. Quantitative",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Number of (or amount of or measurement of) organisms (or species or plants or animals present) or measurement of an abiotic factor",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-c-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "qualitative-survey",
+  "section": "C",
+  "questionRef": "2019 HL Q10(c)(i)2",
+  "questionText": "From your knowledge of ecological surveys, explain the meaning of the terms:\n2. Qualitative.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Presence of (or absence) an organism (or species or plant or animal)",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-c-ii-quadrat",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "quadrat-survey",
+  "section": "C",
+  "questionRef": "2019 HL Q10(c)(ii) — quadrat",
+  "questionText": "In the course of your ecological studies you investigated an ecosystem. Name this ecosystem and describe how you conducted a quantitative survey of flora present in it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Named ecosystem",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "Quadrat / Random (sample) / how random / repeat a number of times / count (or record or take average or note)",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Quadrat",
+      "Random (sample)",
+      "how random",
+      "repeat a number of times",
+      "count (or record or take average or note)"
+     ]
+    }
+   }
+  ],
+  "notes": "Quadrat or transect: the scheme prints a separate menu of steps for each, joined by \"OR\", so each is a route card. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-c-ii-transect",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "transect-survey",
+  "section": "C",
+  "questionRef": "2019 HL Q10(c)(ii) — transect",
+  "questionText": "In the course of your ecological studies you investigated an ecosystem. Name this ecosystem and describe how you conducted a quantitative survey of flora present in it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Named ecosystem",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "Transect / select starting position / why selected / (survey) regular points / count (or record or note)",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Transect",
+      "select starting position",
+      "why selected",
+      "(survey) regular points",
+      "count (or record or note)"
+     ]
+    }
+   }
+  ],
+  "notes": "Quadrat or transect: the scheme prints a separate menu of steps for each, joined by \"OR\", so each is a route card. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "presenting-results",
+  "section": "C",
+  "questionRef": "2019 HL Q10(c)(iii)",
+  "questionText": "How did you present the results of your survey?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Table or chart or graph",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q10-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "survey-errors",
+  "section": "C",
+  "questionRef": "2019 HL Q10(c)(iv)",
+  "questionText": "Suggest a possible source of error in your survey.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Not random or sample too small or plant misidentified or miscounting or Miscalculating",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q11-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "deoxyribose",
+  "section": "C",
+  "questionRef": "2019 HL Q11(a)(i)",
+  "questionText": "Name the sugar present in DNA.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Deoxyribose",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q11-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "dna-and-rna",
+  "section": "C",
+  "questionRef": "2019 HL Q11(a)(ii)",
+  "questionText": "Other than the sugar, give two structural differences between DNA and RNA.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "DNA is double-stranded or RNA is single-stranded",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "DNA has Thymine or RNA has Uracil",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q11-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "where-transcription-happens",
+  "section": "C",
+  "questionRef": "2019 HL Q11(b)(i)",
+  "stem": "Protein synthesis is a complex process, involving both transcription and translation, that occurs in all cells.",
+  "questionText": "Where does transcription occur in animal and plant cells?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Nucleus",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q11-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "where-translation-happens",
+  "section": "C",
+  "questionRef": "2019 HL Q11(b)(ii)",
+  "stem": "Protein synthesis is a complex process, involving both transcription and translation, that occurs in all cells.",
+  "questionText": "Where precisely in the cell does translation occur?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Ribosome",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q11-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "types-of-rna",
+  "section": "C",
+  "questionRef": "2019 HL Q11(b)(iii)",
+  "stem": "Protein synthesis is a complex process, involving both transcription and translation, that occurs in all cells.",
+  "questionText": "Name the three types of RNA involved in protein synthesis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Messenger RNA (or mRNA)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Ribosomal RNA (or rRNA)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Transfer RNA (or tRNA)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q11-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "translation",
+  "section": "C",
+  "questionRef": "2019 HL Q11(b)(iv)",
+  "stem": "Protein synthesis is a complex process, involving both transcription and translation, that occurs in all cells.",
+  "questionText": "Describe the events that occur during translation, leading to the formation of a functional protein.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "mRNA (transcribed DNA code) goes to a ribosome / tRNA molecules bring amino acids to the ribosome / tRNA binds to mRNA / with matching codon or anticodon / sequence of amino acids assembles or peptide bond formed / (The chain) folds / mention of start (or stop) codon",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "mRNA (transcribed DNA code) goes to a ribosome",
+      "tRNA molecules bring amino acids to the ribosome",
+      "tRNA binds to mRNA",
+      "with matching codon or anticodon",
+      "sequence of amino acids assembles or peptide bond formed",
+      "(The chain) folds",
+      "mention of start (or stop) codon"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q11-c-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "sex-linkage",
+  "section": "C",
+  "questionRef": "2019 HL Q11(c)(i)1",
+  "questionText": "Explain the following terms used in genetics:\n1. Sex linkage",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "A gene (or genes) present on the X (or Y, or sex) chromosome",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q11-c-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "heterozygous",
+  "section": "C",
+  "questionRef": "2019 HL Q11(c)(i)2",
+  "questionText": "Explain the following terms used in genetics:\n2. Heterozygous",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "When two alleles (for a trait) are different or alleles for a trait are different or dominant and recessive alleles (or genes) present (for a trait)",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q11-c-i-3",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "genotype",
+  "section": "C",
+  "questionRef": "2019 HL Q11(c)(i)3",
+  "questionText": "Explain the following terms used in genetics:\n3. Genotype.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "The genetic make-up or the genes present",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q11-c-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "parents-genotypes",
+  "section": "C",
+  "questionRef": "2019 HL Q11(c)(ii)1",
+  "stem": "The diagram below shows the pattern of inheritance of haemophilia in a family. The haemophilia gene (n) is sex‐linked and recessive.",
+  "questionText": "1. What are the genotypes of the parents for both sex and haemophilia?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1. XNXn",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "2. XNY",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q11-pedigree"
+ },
+ {
+  "id": "bio-2019-hl-q11-c-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "daughters-father",
+  "section": "C",
+  "questionRef": "2019 HL Q11(c)(ii)2",
+  "stem": "The diagram below shows the pattern of inheritance of haemophilia in a family. The haemophilia gene (n) is sex‐linked and recessive.",
+  "questionText": "• If person 7 has a carrier daughter, give the phenotype and full genotype of the daughter’s father.\n• What was the chance of that couple having a carrier daughter?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Phenotype — (Male) haemophiliac",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Genotype — XnY",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "(From all possible daughters:) 100% or (from all possible children:) 50%",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q11-pedigree"
+ },
+ {
+  "id": "bio-2019-hl-q12-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-1",
+  "conceptId": "metabolism",
+  "section": "C",
+  "questionRef": "2019 HL Q12(a)(i)",
+  "questionText": "What is meant by the term metabolism?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(All) the chemical reactions in an organism (or in cells or in the body)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q12-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "anabolic-and-catabolic",
+  "section": "C",
+  "questionRef": "2019 HL Q12(a)(ii)",
+  "questionText": "Give an example of one anabolic reaction and one catabolic reaction in animals.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Anabolic reaction in animals — Protein synthesis or DNA replication (synthesis) or other described",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Catabolic reaction in animals — Respiration or digestion or other described",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q12-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzyme",
+  "section": "C",
+  "questionRef": "2019 HL Q12(b)(i)",
+  "stem": "“The single most important property of enzymes is their ability to increase the rates of reactions occurring in living organisms” Adapted from “Enzyme Activity”, section 18.7, Introduction to Chemistry: General, Organic, and Biological",
+  "questionText": "What is an enzyme?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Biological catalyst or protein catalyst",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q12-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzymes-are-proteins",
+  "section": "C",
+  "questionRef": "2019 HL Q12(b)(ii)",
+  "stem": "“The single most important property of enzymes is their ability to increase the rates of reactions occurring in living organisms” Adapted from “Enzyme Activity”, section 18.7, Introduction to Chemistry: General, Organic, and Biological",
+  "questionText": "Which type of biomolecule are enzymes?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Protein",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q12-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "factors-affecting-enzymes",
+  "section": "C",
+  "questionRef": "2019 HL Q12(b)(iii)",
+  "stem": "“The single most important property of enzymes is their ability to increase the rates of reactions occurring in living organisms” Adapted from “Enzyme Activity”, section 18.7, Introduction to Chemistry: General, Organic, and Biological",
+  "questionText": "Name two factors that affect enzyme action.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Temperature / pH",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Temperature",
+      "pH"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q12-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "specificity",
+  "section": "C",
+  "questionRef": "2019 HL Q12(b)(iv)",
+  "stem": "“The single most important property of enzymes is their ability to increase the rates of reactions occurring in living organisms” Adapted from “Enzyme Activity”, section 18.7, Introduction to Chemistry: General, Organic, and Biological",
+  "questionText": "What is meant by the term specificity in relation to enzyme activity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(An enzyme) can act on only one (or on a particular or a certain) substrate (group) (or molecule) [allow food type for substrate]",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q12-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "active-site",
+  "section": "C",
+  "questionRef": "2019 HL Q12(b)(v)",
+  "stem": "“The single most important property of enzymes is their ability to increase the rates of reactions occurring in living organisms” Adapted from “Enzyme Activity”, section 18.7, Introduction to Chemistry: General, Organic, and Biological",
+  "questionText": "Name the part of an enzyme responsible for its specificity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Active site",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q12-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "how-enzymes-work",
+  "section": "C",
+  "questionRef": "2019 HL Q12(b)(vi)",
+  "stem": "“The single most important property of enzymes is their ability to increase the rates of reactions occurring in living organisms” Adapted from “Enzyme Activity”, section 18.7, Introduction to Chemistry: General, Organic, and Biological",
+  "questionText": "Give a detailed account of how enzymes work.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Active site complementary shape to substrate / Active site changes shape to allow a perfect fit or induced fit / enzyme-substrate complex / Products formed or products released / enzyme (or active site) unaltered (or unchanged) or enzyme returns to / original shape or enzyme (or active site) can be reused",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Active site complementary shape to substrate",
+      "Active site changes shape to allow a perfect fit or induced fit",
+      "enzyme-substrate complex",
+      "Products formed or products released",
+      "enzyme (or active site) unaltered (or unchanged) or enzyme returns to / original shape or enzyme (or active site) can be reused"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q12-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "chloroplast",
+  "section": "C",
+  "questionRef": "2019 HL Q12(c)(i)",
+  "stem": "Photosysthesis occurs in two stages, the light‐dependent stage and the light‐independent (dark) stage. Two structures found in plant cells are shown below.",
+  "questionText": "In which of the two structures, A or B, does photosynthesis occur?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "B",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "biology-2019-hl-q12-organelles"
+ },
+ {
+  "id": "bio-2019-hl-q12-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "photosynthesis-equation",
+  "section": "C",
+  "questionRef": "2019 HL Q12(c)(ii)",
+  "stem": "Photosysthesis occurs in two stages, the light‐dependent stage and the light‐independent (dark) stage.",
+  "questionText": "Give a balanced chemical equation to summarise the process of photosynthesis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "6CO2 + 6H2O → C6H12O6 + 6O2",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints the equation once at \"3 + 3\": one row worth both marks. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q12-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "light-stage-products",
+  "section": "C",
+  "questionRef": "2019 HL Q12(c)(iii)",
+  "stem": "Photosysthesis occurs in two stages, the light‐dependent stage and the light‐independent (dark) stage.",
+  "questionText": "Name two products of the light‐dependent stage of photosynthesis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "ATP / NADPH or protons (or H+ or H ions) or electrons) / oxygen",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "ATP",
+      "NADPH or protons (or H+ or H ions) or electrons)",
+      "oxygen"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q12-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "dark-stage",
+  "section": "C",
+  "questionRef": "2019 HL Q12(c)(iv)",
+  "stem": "Photosysthesis occurs in two stages, the light‐dependent stage and the light‐independent (dark) stage.",
+  "questionText": "Some of the products of the light‐dependent stage are used in the light‐independent stage. Outline the events of the light‐independent stage.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "ATP to ADP (+ P) or ATP supplies energy",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "NADPH to NADP or NADPH provides electrons or NADPH provides H or NADPH provides H+ (or H ions or protons)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "CO2 converted to glucose (or other named carbohydrate)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q13-a-natural",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "natural-contraception",
+  "section": "C",
+  "questionRef": "2019 HL Q13(a) — Natural",
+  "stem": "Answer the following questions from your knowledge of human reproduction. Contraception can include natural, mechanical, and chemical methods.",
+  "questionText": "Give one example of each of the above types of contraception.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Withdrawal or abstinence or rhythm",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q13-a-mechanical",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "mechanical-contraception",
+  "section": "C",
+  "questionRef": "2019 HL Q13(a) — Mechanical",
+  "stem": "Answer the following questions from your knowledge of human reproduction. Contraception can include natural, mechanical, and chemical methods.",
+  "questionText": "Give one example of each of the above types of contraception.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Condom or diaphragm or coil (or IUD) or vasectomy or tube ligation",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q13-a-chemical",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "chemical-contraception",
+  "section": "C",
+  "questionRef": "2019 HL Q13(a) — Chemical",
+  "stem": "Answer the following questions from your knowledge of human reproduction. Contraception can include natural, mechanical, and chemical methods.",
+  "questionText": "Give one example of each of the above types of contraception.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Pill or hormonal or vaginal ring or spermicide or implant",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q13-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "drawing-the-female-system",
+  "section": "C",
+  "questionRef": "2019 HL Q13(b)(i)",
+  "stem": "Answer the following questions from your knowledge of human reproduction.",
+  "questionText": "Draw a large diagram of the human female reproductive system. On your diagram, label the following parts.\noviduct (Fallopian tube) cervix ovary vagina uterus endometrium",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Ovaries + oviducts + uterus + vagina",
+    "marks": 6,
+    "contextNote": "6, 3, 0"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "Oviduct (Fallopian tube) / cervix / ovary / vagina / uterus / endometrium",
+    "marks": null,
+    "group": {
+     "claimMax": 6,
+     "perOption": 1,
+     "options": [
+      "Oviduct (Fallopian tube)",
+      "cervix",
+      "ovary",
+      "vagina",
+      "uterus",
+      "endometrium"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q13-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "meiosis-and-fertilisation-sites",
+  "section": "C",
+  "questionRef": "2019 HL Q13(b)(ii)",
+  "stem": "Answer the following questions from your knowledge of human reproduction.",
+  "questionText": "On your diagram, use the letter M to label the site of meiosis, use the letter F to label the usual site of fertilisation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "M on location of meiosis — Ovary",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "F on usual location of fertilisation — Oviduct (Fallopian tube)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q13-b-iii-fibroids",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "fibroids-cause-and-treatment",
+  "section": "C",
+  "questionRef": "2019 HL Q13(b)(iii) — fibroids",
+  "stem": "Answer the following questions from your knowledge of human reproduction.",
+  "questionText": "Name a human female menstrual disorder. For this disorder give:\n1. A possible cause\n2. A method of treatment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Fibroids",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "1. Cause — Abnormal hormonal response or genetic",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "2. Treatment — Surgery or HRT",
+    "marks": 3
+   }
+  ],
+  "notes": "Fibroids or endometriosis: the scheme prints a separate column for each, so each is a route card. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q13-b-iii-endometriosis",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "endometriosis-cause-and-treatment",
+  "section": "C",
+  "questionRef": "2019 HL Q13(b)(iii) — endometriosis",
+  "stem": "Answer the following questions from your knowledge of human reproduction.",
+  "questionText": "Name a human female menstrual disorder. For this disorder give:\n1. A possible cause\n2. A method of treatment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Endometriosis",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "1. Cause — Menstrual blood flowing into oviduct or genetic",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "2. Treatment — Surgery or HRT",
+    "marks": 3
+   }
+  ],
+  "notes": "Fibroids or endometriosis: the scheme prints a separate column for each, so each is a route card. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q13-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "implantation",
+  "section": "C",
+  "questionRef": "2019 HL Q13(c)(i)",
+  "questionText": "What is meant by the term implantation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Embedding (or attaching) (of the fertilised egg) (in)to the endometrium (or lining of uterus)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q13-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "stages-before-implantation",
+  "section": "C",
+  "questionRef": "2019 HL Q13(c)(ii)",
+  "questionText": "Name, in the correct order, the developmental stages from the fertilised egg to implantation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1. Morula 2. Blastocyst",
+    "marks": 6,
+    "contextNote": "[must be in correct order]"
+   }
+  ],
+  "notes": "One row priced \"6, 3, 0\": both stages in order. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q13-c-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "progesterone-after-implantation",
+  "section": "C",
+  "questionRef": "2019 HL Q13(c)(iii)1",
+  "stem": "Outline what happens to each of the following after implantation has taken place:",
+  "questionText": "1. The level of the hormone progesterone in the blood",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Increases",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q13-c-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "endometrium-after-implantation",
+  "section": "C",
+  "questionRef": "2019 HL Q13(c)(iii)2",
+  "stem": "Outline what happens to each of the following after implantation has taken place:",
+  "questionText": "2. The endometrium.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Is maintained or thickens",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q13-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "germ-layers",
+  "section": "C",
+  "questionRef": "2019 HL Q13(c)(iv)",
+  "questionText": "Embryo cells organise into three germ layers. Name each of these layers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Ectoderm",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "Mesoderm",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r3",
+    "kind": "gate",
+    "verbatim": "Endoderm",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-a-i-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "brain-part-a",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(i) — A",
+  "questionText": "The diagram shows parts of the human central nervous system and some related structures. In your answer book, match each of the parts labelled A ‒ F to one of the names from the list below.\ncerebrum medulla oblongata pituitary gland cerebellum hypothalamus spinal cord",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Cerebellum",
+    "marks": 1
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. The names to choose from are printed as a spaced row, so the ask is shown as the question's own print. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "questionFigureKey": "biology-2019-hl-q14a-i",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cerebellum",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Cerebrum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Pituitary gland",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Medulla oblongata",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "E",
+    "meaning": "Spinal cord",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "F",
+    "meaning": "Hypothalamus",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2019-hl-q14-a-i-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "brain-part-b",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(i) — B",
+  "questionText": "The diagram shows parts of the human central nervous system and some related structures. In your answer book, match each of the parts labelled A ‒ F to one of the names from the list below.\ncerebrum medulla oblongata pituitary gland cerebellum hypothalamus spinal cord",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Cerebrum",
+    "marks": 1
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. The names to choose from are printed as a spaced row, so the ask is shown as the question's own print. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "questionFigureKey": "biology-2019-hl-q14a-i",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cerebellum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cerebrum",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Pituitary gland",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Medulla oblongata",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "E",
+    "meaning": "Spinal cord",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "F",
+    "meaning": "Hypothalamus",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2019-hl-q14-a-i-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "brain-part-c",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(i) — C",
+  "questionText": "The diagram shows parts of the human central nervous system and some related structures. In your answer book, match each of the parts labelled A ‒ F to one of the names from the list below.\ncerebrum medulla oblongata pituitary gland cerebellum hypothalamus spinal cord",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pituitary gland",
+    "marks": 1
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. The names to choose from are printed as a spaced row, so the ask is shown as the question's own print. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "questionFigureKey": "biology-2019-hl-q14a-i",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cerebellum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cerebrum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Pituitary gland",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Medulla oblongata",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "E",
+    "meaning": "Spinal cord",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "F",
+    "meaning": "Hypothalamus",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2019-hl-q14-a-i-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "brain-part-d",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(i) — D",
+  "questionText": "The diagram shows parts of the human central nervous system and some related structures. In your answer book, match each of the parts labelled A ‒ F to one of the names from the list below.\ncerebrum medulla oblongata pituitary gland cerebellum hypothalamus spinal cord",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Medulla oblongata",
+    "marks": 1
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. The names to choose from are printed as a spaced row, so the ask is shown as the question's own print. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "questionFigureKey": "biology-2019-hl-q14a-i",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cerebellum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cerebrum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Pituitary gland",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Medulla oblongata",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "E",
+    "meaning": "Spinal cord",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "F",
+    "meaning": "Hypothalamus",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2019-hl-q14-a-i-e",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "brain-part-e",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(i) — E",
+  "questionText": "The diagram shows parts of the human central nervous system and some related structures. In your answer book, match each of the parts labelled A ‒ F to one of the names from the list below.\ncerebrum medulla oblongata pituitary gland cerebellum hypothalamus spinal cord",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Spinal cord",
+    "marks": 1
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. The names to choose from are printed as a spaced row, so the ask is shown as the question's own print. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "questionFigureKey": "biology-2019-hl-q14a-i",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cerebellum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cerebrum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Pituitary gland",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Medulla oblongata",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "E",
+    "meaning": "Spinal cord",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "F",
+    "meaning": "Hypothalamus",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2019-hl-q14-a-i-f",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "brain-part-f",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(i) — F",
+  "questionText": "The diagram shows parts of the human central nervous system and some related structures. In your answer book, match each of the parts labelled A ‒ F to one of the names from the list below.\ncerebrum medulla oblongata pituitary gland cerebellum hypothalamus spinal cord",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Hypothalamus",
+    "marks": 1
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. The names to choose from are printed as a spaced row, so the ask is shown as the question's own print. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "questionFigureKey": "biology-2019-hl-q14a-i",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cerebellum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cerebrum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Pituitary gland",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Medulla oblongata",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "E",
+    "meaning": "Spinal cord",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "F",
+    "meaning": "Hypothalamus",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2019-hl-q14-a-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "medulla-oblongata",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(ii)1",
+  "questionText": "1. Give a function of the medulla oblongata.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Controls (or regulates) involuntary actions or controls (or regulates) breathing (or heart function or digestion or sneezing or coughing or swallowing or blood pressure or vomiting)",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-a-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "cerebellum",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(ii)2",
+  "questionText": "2. Give a function of the cerebellum.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Controls (or regulates) voluntary movements or Controls (or regulates) posture (or balance or walking or writing or fine muscle movements or speech) or coordination",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-a-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "grey-matter",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(iii)1",
+  "stem": "The brain is composed of both grey matter and white matter.",
+  "questionText": "1. Why is grey matter so called?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Composed of cell bodies",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-a-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "white-matter",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(iii)2",
+  "stem": "The brain is composed of both grey matter and white matter.",
+  "questionText": "2. Why is white matter so called?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Composed of myelin or composed of axons",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "endocrine",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(iv)",
+  "questionText": "Endocrine glands produce hormones. What is meant by the term endocrine?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Ductless or secretes directly into blood (or into lymph)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-a-v-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "pituitary-hormones",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(v)1",
+  "stem": "The pituitary gland is an example of an endocrine gland.",
+  "questionText": "1. Name a hormone secreted by the pituitary gland.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "ACTH or FSH or GH or LH or TSH or ADH (vasopressin) or oxytocin or prolactin or MSH",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-a-v-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "function-of-a-pituitary-hormone",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(v)2",
+  "stem": "The pituitary gland is an example of an endocrine gland. 1. Name a hormone secreted by the pituitary gland.",
+  "questionText": "2. Give a function of this hormone in the human body.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Correct matching function",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-a-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "endocrine-and-exocrine",
+  "section": "C",
+  "questionRef": "2019 HL Q14(a)(vi)",
+  "questionText": "Name one gland in the human body that has both endocrine and exocrine function.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Pancreas or testis or ovary or liver or kidney",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "antibiotic-resistance",
+  "section": "C",
+  "questionRef": "2019 HL Q14(b)(ii)",
+  "stem": "Write notes on three of the following topics:",
+  "questionText": "Antibiotic resistance in bacteria.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(Antibiotic resistant bacteria) are not affected (by antibiotics) / Can be caused by overuse (or misuse) (of antibiotics) or by failure to complete a course (of antibiotics) / bacteria mutate (or evolve or change) / Plasmid carries resistant gene or (resistance) acquired by bacteria from / other bacteria / resistant population (or example) / antibiotics) produced by microorganisms, which kill (or slow down the growth of) bacteria (or fungi or microorganisms)",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "(Antibiotic resistant bacteria) are not affected (by antibiotics)",
+      "Can be caused by overuse (or misuse) (of antibiotics) or by failure to complete a course (of antibiotics)",
+      "bacteria mutate (or evolve or change)",
+      "Plasmid carries resistant gene or (resistance) acquired by bacteria from / other bacteria",
+      "resistant population (or example)",
+      "antibiotics) produced by microorganisms, which kill (or slow down the growth of) bacteria (or fungi or microorganisms)"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints \"other bacteria/ resistant population (or example)\" twice in a row; the menu carries it once. \"acquired by bacteria from / other bacteria\" is one option, cut at the solidus before it, not at its own. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "vaccination",
+  "section": "C",
+  "questionRef": "2019 HL Q14(b)(i)",
+  "stem": "Write notes on three of the following topics:",
+  "questionText": "Vaccination.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "A non-harmful (or attenuated or weakened or dead) dose of the pathogen (or antigen) introduced (or injected) into an organism (or into the body) / Stimulates (active) immunity / Production of antibodies / Production of memory cells (or T cells or B cells) / Prevents infectious disease or prevents spread of disease",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "A non-harmful (or attenuated or weakened or dead) dose of the pathogen (or antigen) introduced (or injected) into an organism (or into the body)",
+      "Stimulates (active) immunity",
+      "Production of antibodies",
+      "Production of memory cells (or T cells or B cells)",
+      "Prevents infectious disease or prevents spread of disease"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "batch-processing",
+  "section": "C",
+  "questionRef": "2019 HL Q14(b)(iv)",
+  "stem": "Write notes on three of the following topics:",
+  "questionText": "Batch food processing.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Carried out in a bioreactor / Certain amount of micro-organisms (or bacteria or fungi) (or food or nutrients or substrate) / Added at the start (of the process) / Micro-organisms (or bacteria or fungi) go through lag, log and stationary stages or micro-organisms (or bacteria or fungi) go through all stages / Product is removed (at the end of the process)",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Carried out in a bioreactor",
+      "Certain amount of micro-organisms (or bacteria or fungi) (or food or nutrients or substrate)",
+      "Added at the start (of the process)",
+      "Micro-organisms (or bacteria or fungi) go through lag, log and stationary stages or micro-organisms (or bacteria or fungi) go through all stages",
+      "Product is removed (at the end of the process)"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "heart-sounds",
+  "section": "C",
+  "questionRef": "2019 HL Q14(b)(v)",
+  "stem": "Write notes on three of the following topics:",
+  "questionText": "The sounds created during the cardiac cycle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "The sounds are ‘lub’ + ‘dub’ / Caused by valves closing / Tricuspid and bicuspid (or sinoatrial valves) close / Causes ‘lub’ sound or creates first sound / Semilunar valves clos / Causes ‘dub’ sound or creates second sound",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "The sounds are ‘lub’ + ‘dub’",
+      "Caused by valves closing",
+      "Tricuspid and bicuspid (or sinoatrial valves) close",
+      "Causes ‘lub’ sound or creates first sound",
+      "Semilunar valves clos",
+      "Causes ‘dub’ sound or creates second sound"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-b-iii-phototropism",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "phototropism-mechanism",
+  "section": "C",
+  "questionRef": "2019 HL Q14(b)(iii) — phototropism",
+  "stem": "Write notes on three of the following topics:",
+  "questionText": "The mechanism of phototropism or of geotropism in plants.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Auxin produced in shoot tip (or meristem) / Plant shoot exposed to (more) light on one side / Auxin diffuses (moves) down the shaded (dark) side of the shoot / More elongation (or growth) of the shaded side (cells) / (Shoot) grows (or bends) towards the light",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Auxin produced in shoot tip (or meristem)",
+      "Plant shoot exposed to (more) light on one side",
+      "Auxin diffuses (moves) down the shaded (dark) side of the shoot",
+      "More elongation (or growth) of the shaded side (cells)",
+      "(Shoot) grows (or bends) towards the light"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "Phototropism, or geotropism in the root or in the shoot: the scheme prints a separate menu for each, joined by \"OR\", so each is a route card. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-b-iii-geotropism-in-root",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "geotropism-in-root-mechanism",
+  "section": "C",
+  "questionRef": "2019 HL Q14(b)(iii) — geotropism-in-root",
+  "stem": "Write notes on three of the following topics:",
+  "questionText": "The mechanism of phototropism or of geotropism in plants.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Auxin produced in root tip (or in meristem) / (More) auxin on the lower side of root / Because of gravity / Less elongation in lower root cells / (Root) growth (or bend) downwards",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Auxin produced in root tip (or in meristem)",
+      "(More) auxin on the lower side of root",
+      "Because of gravity",
+      "Less elongation in lower root cells",
+      "(Root) growth (or bend) downwards"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "Phototropism, or geotropism in the root or in the shoot: the scheme prints a separate menu for each, joined by \"OR\", so each is a route card. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-b-iii-geotropism-in-shoot",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "geotropism-in-shoot-mechanism",
+  "section": "C",
+  "questionRef": "2019 HL Q14(b)(iii) — geotropism-in-shoot",
+  "stem": "Write notes on three of the following topics:",
+  "questionText": "The mechanism of phototropism or of geotropism in plants.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Auxin produced in shoot tip (or in meristem) / (More) auxin on the lower side of shoot / Because of gravity / More elongation in shoot cells / (Shoot) grow (or bends) upwards",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Auxin produced in shoot tip (or in meristem)",
+      "(More) auxin on the lower side of shoot",
+      "Because of gravity",
+      "More elongation in shoot cells",
+      "(Shoot) grow (or bends) upwards"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "Phototropism, or geotropism in the root or in the shoot: the scheme prints a separate menu for each, joined by \"OR\", so each is a route card. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "functions-of-the-skeleton",
+  "section": "C",
+  "questionRef": "2019 HL Q14(c)(i)",
+  "stem": "Answer the following questions from your knowledge of the human musculoskeletal system.",
+  "questionText": "Give two functions of the skeleton.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Movement / protection (of internal organs) / support (or shape) / production of blood cells",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Movement",
+      "protection (of internal organs)",
+      "support (or shape)",
+      "production of blood cells"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "girdles",
+  "section": "C",
+  "questionRef": "2019 HL Q14(c)(ii)",
+  "stem": "Answer the following questions from your knowledge of the human musculoskeletal system.",
+  "questionText": "Name the two main parts of the appendicular skeleton, to which the limbs are attached.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pectoral girdle (or shoulders)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Pelvis (or pelvic girdle or hips)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "bones-of-the-foot",
+  "section": "C",
+  "questionRef": "2019 HL Q14(c)(iii)",
+  "stem": "Answer the following questions from your knowledge of the human musculoskeletal system.",
+  "questionText": "Name two of the types of bones that make up the foot.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Tarsals / metatarsals / phalanges (or digits)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Tarsals",
+      "metatarsals",
+      "phalanges (or digits)"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "antagonistic-pairs",
+  "section": "C",
+  "questionRef": "2019 HL Q14(c)(iv)",
+  "stem": "Answer the following questions from your knowledge of the human musculoskeletal system.",
+  "questionText": "What is meant by the term antagonistic muscle pair?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(Two) muscles that work with opposing actions or (two) muscles that have opposite effects or when one contracts the other relaxes",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "an-antagonistic-pair",
+  "section": "C",
+  "questionRef": "2019 HL Q14(c)(v)",
+  "stem": "Answer the following questions from your knowledge of the human musculoskeletal system.",
+  "questionText": "Name an antagonistic muscle pair in the human body.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Biceps and triceps",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q14-c-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "how-antagonistic-pairs-work",
+  "section": "C",
+  "questionRef": "2019 HL Q14(c)(vi)",
+  "stem": "Answer the following questions from your knowledge of the human musculoskeletal system. (v) Name an antagonistic muscle pair in the human body.",
+  "questionText": "Describe in full how this antagonistic muscle pair works.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(Biceps) contract to flex (or raise or bend) the arm (or elbow)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "(Triceps) contract to extend (or lower or straighten) the arm (or elbow)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "drawing-rhizopus",
+  "section": "C",
+  "questionRef": "2019 HL Q15(a)(i)",
+  "questionText": "Draw a large labelled diagram to show the structure of Rhizopus during asexual reproduction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Stolon and sporangiophore and sporangium and rhizoids",
+    "marks": 6,
+    "contextNote": "6, 3, 0"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "Mycelium / rhizoid / hypha / stolon / sporangiophore / apophysis / columella / sporangium / sporangiospores (spores)",
+    "marks": null,
+    "group": {
+     "claimMax": 6,
+     "perOption": 1,
+     "options": [
+      "Mycelium",
+      "rhizoid",
+      "hypha",
+      "stolon",
+      "sporangiophore",
+      "apophysis",
+      "columella",
+      "sporangium",
+      "sporangiospores (spores)"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "rhizopus-nutrition",
+  "section": "C",
+  "questionRef": "2019 HL Q15(a)(ii)",
+  "questionText": "What mode of nutrition does Rhizopus use?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Saprophytic (saprophyte) or heterotrophic",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "trigger-for-sexual-reproduction",
+  "section": "C",
+  "questionRef": "2019 HL Q15(a)(iii)",
+  "questionText": "Describe an environmental condition that would cause Rhizopus to reproduce sexually.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Lack of water or unsuitable (or adverse or extreme) temperature or unsuitable (or adverse or extreme) pH or lack of nutrients",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "sexual-reproduction-in-rhizopus",
+  "section": "C",
+  "questionRef": "2019 HL Q15(a)(iv)",
+  "questionText": "Describe in detail the process of sexual reproduction in Rhizopus.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Opposite ( or + and - ) strains (of hypha) / Swellings form (or nuclei move into swellings) / Production of progametangia / Formation of gametangia / Fusion of nuclei (or fertilisation or zygote formation) / Zygospore formation / Germination of zygospore / By meiosis",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Opposite ( or + and - ) strains (of hypha)",
+      "Swellings form (or nuclei move into swellings)",
+      "Production of progametangia",
+      "Formation of gametangia",
+      "Fusion of nuclei (or fertilisation or zygote formation)",
+      "Zygospore formation",
+      "Germination of zygospore",
+      "By meiosis"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "digestion",
+  "section": "C",
+  "questionRef": "2019 HL Q15(b)(i)",
+  "stem": "Answer the following questions from your knowledge of the human digestive system.",
+  "questionText": "What is meant by the term digestion?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Breaking down food",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "why-digest-food",
+  "section": "C",
+  "questionRef": "2019 HL Q15(b)(ii)",
+  "stem": "Answer the following questions from your knowledge of the human digestive system.",
+  "questionText": "Give two reasons why digestion is necessary.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "To make food soluble / easier to absorb / easier to transport",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "To make food soluble",
+      "easier to absorb",
+      "easier to transport"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "peristalsis",
+  "section": "C",
+  "questionRef": "2019 HL Q15(b)(iii)",
+  "stem": "Answer the following questions from your knowledge of the human digestive system.",
+  "questionText": "Name and describe the method by which food is passed along the alimentary canal.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Peristalsis",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Description of peristalsis — Muscular contractions (of the walls of the alimentary canal)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "protease",
+  "section": "C",
+  "questionRef": "2019 HL Q15(b)(iv)",
+  "stem": "Answer the following questions from your knowledge of the human digestive system.",
+  "questionText": "Name an enzyme that digests dietary protein.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Protease or pepsin (or other named protease)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "where-protease-is-made",
+  "section": "C",
+  "questionRef": "2019 HL Q15(b)(v)",
+  "stem": "Answer the following questions from your knowledge of the human digestive system. (iv) Name an enzyme that digests dietary protein.",
+  "questionText": "Where is this enzyme produced?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Stomach or small intestine or duodenum or ileum or pancreas",
+    "marks": 3,
+    "contextNote": "[must match answer (iv)]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "where-protease-works",
+  "section": "C",
+  "questionRef": "2019 HL Q15(b)(vi)",
+  "stem": "Answer the following questions from your knowledge of the human digestive system. (iv) Name an enzyme that digests dietary protein.",
+  "questionText": "Where is this enzyme active?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Stomach or small intestine or duodenum or ileum",
+    "marks": 3,
+    "contextNote": "[must match answer (iv) and must also match (v) where (v) is answered correctly]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "amino-acids",
+  "section": "C",
+  "questionRef": "2019 HL Q15(b)(vii)",
+  "stem": "Answer the following questions from your knowledge of the human digestive system.",
+  "questionText": "Name the products formed by the complete digestion of a protein molecule.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Amino acids",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-b-viii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "hepatic-portal-vein",
+  "section": "C",
+  "questionRef": "2019 HL Q15(b)(viii)",
+  "stem": "Answer the following questions from your knowledge of the human digestive system.",
+  "questionText": "These products are transported to the liver. Name the blood vessel that transports these digestion products to the liver.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Hepatic portal vein",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "embryo-sac-development",
+  "section": "C",
+  "questionRef": "2019 HL Q15(c)(i)",
+  "stem": "Answer the following questions from your knowledge of sexual reproduction in flowering plants.",
+  "questionText": "Describe in detail the development of the embryo sac from a megaspore mother‐cell.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(Diploid megaspore mother-cell) divides by meiosis / Giving four haploid (daughter) cells / Only one survives or three die / This becomes the embryo sac / (The embryo sac) nucleus divides by mitosis / Three times or gives eight (haploid) nuclei / Two (of the haploid nuclei) become the polar nuclei / One (haploid nucleus) becomes the egg (nucleus).",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "(Diploid megaspore mother-cell) divides by meiosis",
+      "Giving four haploid (daughter) cells",
+      "Only one survives or three die",
+      "This becomes the embryo sac",
+      "(The embryo sac) nucleus divides by mitosis",
+      "Three times or gives eight (haploid) nuclei",
+      "Two (of the haploid nuclei) become the polar nuclei",
+      "One (haploid nucleus) becomes the egg (nucleus)."
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-c-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "double-fertilisation",
+  "section": "C",
+  "questionRef": "2019 HL Q15(c)(ii)1",
+  "stem": "Answer the following questions from your knowledge of sexual reproduction in flowering plants. A double fertilisation occurs in the embryo sac.",
+  "questionText": "1. Outline what happens during each fertilisation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "One (male) gamete (or sperm nucleus) fuses (or joins or combines) with the egg",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "One (male) gamete (or sperm nucleus) fuses (or joins or combines) with the (two) polar nuclei",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-c-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "products-of-fertilisation",
+  "section": "C",
+  "questionRef": "2019 HL Q15(c)(ii)2",
+  "stem": "Answer the following questions from your knowledge of sexual reproduction in flowering plants. A double fertilisation occurs in the embryo sac. 1. Outline what happens during each fertilisation.",
+  "questionText": "2. State what is produced by each fertilisation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A (diploid) zygote",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "A triploid nucleus or a triploid endosperm",
+    "marks": 3,
+    "contextNote": "[if order not agreeing with 1, must say which fusion gives which result]"
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2019-hl-q15-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "drawing-a-seed",
+  "section": "C",
+  "questionRef": "2019 HL Q15(c)(iii)",
+  "stem": "Answer the following questions from your knowledge of sexual reproduction in flowering plants.",
+  "questionText": "Draw a large diagram of a seed and label the following parts:\ntesta plumule radicle",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Testa and plumule and radicle",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "Testa / plumule / radicle",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "Testa",
+      "plumule",
+      "radicle"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-14 against the paper and scheme; ledger bio_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
  }
 ]

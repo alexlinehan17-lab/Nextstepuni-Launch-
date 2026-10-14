@@ -1,4 +1,125 @@
 {
+ "biology-2019-hl-q11-pedigree": {
+  "src": "/exam-figures/biology/markbank/biology-2019-hl-q11-pedigree.png",
+  "md5": "05384953069bc259c0c49c072dbee7f0",
+  "alt": "Pedigree of haemophilia in a family: parents 1 (a carrier female) and 2 (a normal male); their children 3 (carrier female), 4 (haemophiliac male), 5 (carrier female), 6 (haemophiliac male) and 7 (normal female), with a phenotypes key for normal female, carrier female, normal male and haemophiliac male.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q11(c)(ii)1",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   110,
+   392,
+   535,
+   518
+  ]
+ },
+ "biology-2019-hl-q12-organelles": {
+  "src": "/exam-figures/biology/markbank/biology-2019-hl-q12-organelles.png",
+  "md5": "6e534dd02c93e3c9579d944b53d25de9",
+  "alt": "Two cut-away cell structures: A, a long oval body with folded inner membranes; B, a rounded body containing stacks of discs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q12(c)(i)",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   145,
+   350,
+   492,
+   468
+  ]
+ },
+ "biology-2019-hl-q14a-i": {
+  "src": "/exam-figures/biology/markbank/biology-2019-hl-q14a-i.png",
+  "md5": "5a1ec198bdc670e397f40bf65c03fcde",
+  "alt": "Part (a)(i) as printed: \"The diagram shows parts of the human central nervous system and some related structures. In your answer book, match each of the parts labelled A ‒ F to one of the names from the list below.\" Below it the names cerebrum, medulla oblongata, pituitary gland, cerebellum, hypothalamus and spinal cord, and a section through the human brain and the top of the spinal cord with six label lines: A to the folded structure at the back below the main brain, B to the large folded upper part, C to a small body hanging below the centre, D to the stalk at the base of the brain, E to the cord running down from it, and F to a region at the centre just above C.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q14(a)(i) — A",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   80,
+   80,
+   545,
+   329
+  ]
+ },
+ "biology-2019-hl-q4-mitosis": {
+  "src": "/exam-figures/biology/markbank/biology-2019-hl-q4-mitosis.png",
+  "md5": "c068e0e1b03a09caf414d54e86e4ac0a",
+  "alt": "Photograph of a row of plant cells at different stages of mitosis, the first labelled Prophase.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q4(a)",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   75,
+   112,
+   548,
+   210
+  ]
+ },
+ "biology-2019-hl-q5-red-cells": {
+  "src": "/exam-figures/biology/markbank/biology-2019-hl-q5-red-cells.png",
+  "md5": "fcd6df297b383503918478a4ef357f55",
+  "alt": "Drawing of three human red blood cells seen at an angle.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q5(a)",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   218,
+   104,
+   376,
+   248
+  ]
+ },
+ "biology-2019-hl-q6-alveolus": {
+  "src": "/exam-figures/biology/markbank/biology-2019-hl-q6-alveolus.png",
+  "md5": "4140187240f2a24e8467997415bd9ee1",
+  "alt": "Microscopic detail of an alveolus wrapped by a capillary, labelled Capillary, Alveolus and Blood flow, with an arrow showing the direction of blood flow.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q6(a)",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   86,
+   86,
+   537,
+   286
+  ]
+ },
  "biology-2020-hl-q11-leaf": {
   "src": "/exam-figures/biology/markbank/biology-2020-hl-q11-leaf.png",
   "md5": "74a629184b02eb0cdb9e13bf5b178452",

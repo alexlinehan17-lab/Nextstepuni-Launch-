@@ -681,7 +681,10 @@ def build(ledger, year, level):
         view['atlasTopics'] = topics
         view['taskTopics'].add(t['topic'])
         filed = getattr(ledger, 'ATLAS_UNIT_EQUIV', {}).get(t['topic'], t['topic'])
-        if filed not in nodes:
+        # An excluded task makes no card, so nothing is filed under its topic:
+        # a part the SEC withdrew as outside the syllabus must not pull its
+        # topic onto the question's Atlas entry.
+        if filed not in nodes and not t.get('excluded'):
             problems.append(f'{t["key"]}: topic {t["topic"]} is not among the Atlas topics for '
                             f'Q{qn} ({sorted(nodes)})')
 

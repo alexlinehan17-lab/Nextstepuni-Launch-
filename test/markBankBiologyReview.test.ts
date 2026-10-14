@@ -1582,3 +1582,132 @@ describe('Biology 2020 Ordinary — carded from a paper-by-paper review', () => 
     }
   });
 });
+
+const hl19 = sittings['2019-hl'];
+const higher2019 = BIO_HIGHER.filter(card => card.year === 2019) as unknown as ReviewedCard[];
+const hl19ById = new Map(higher2019.map(card => [card.id, card]));
+const hl19Verbatims = (id: string) => (hl19ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
+  .map(row => row.verbatim);
+const hl19Options = (id: string) => (hl19ById.get(id)!.rows as unknown as Array<{
+  group?: { options?: string[] } }>)[0].group?.options;
+
+describe('Biology 2019 Higher — carded from a paper-by-paper review', () => {
+  it('ships every carded task, and nothing else, for the sitting', () => {
+    expect(hl19.baseTaskCount).toBe(147);
+    expect(hl19.cardCount).toBe(148);
+    expect(higher2019).toHaveLength(148);
+    const carded = hl19.tasks.filter(task => task.status === 'carded');
+    expect(new Set(carded.map(task => task.id))).toEqual(new Set(hl19ById.keys()));
+    expect(hl19.review).toBeUndefined();
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(hl19.sources['038'].sha256)
+      .toBe('bae9656e62f7955c71fc5903ff8d1799ff4e0dbd2d3219f61dfbade24110d218');
+    expect(hl19.sources['040'].sha256)
+      .toBe('45f45b9faa113fb0b32bbc17cb8aed43565c611225a45061e24c7766fdd79b87');
+    expect(hl19.sources.scheme.sha256)
+      .toBe('635cd0de3b01f43bb55b2bffe6a0b3743ee7e659aaac4f1963b45c47f8dfd4a8');
+    expect([hl19.sources['038'].pages, hl19.sources['040'].pages, hl19.sources.scheme.pages])
+      .toEqual([12, 8, 28]);
+  });
+
+  it('keeps out the two parts the SEC withdrew, with the scheme\'s own evidence', () => {
+    // The scheme's footnote: Q7(b)(iii) and (iv) were outside the syllabus,
+    // not examinable, and credited to every candidate who attempted Q7(b).
+    const withdrawn = ['iii-1', 'iii-2', 'iv-1', 'iv-2'].map(x => `bio-2019-hl-q7-b-${x}`);
+    expect(hl19.tasks.filter(task => task.status === 'excluded').map(task => task.id)).toEqual(withdrawn);
+    for (const id of withdrawn) expect(hl19ById.has(id), id).toBe(false);
+    for (const exclusion of hl19.checks.excluded) {
+      expect(exclusion.reason).toMatch(/outside the range of the Biology syllabus/);
+      expect(exclusion.evidence).toMatch(/deemed to be outside the range of the Biology Syllabus and not examinable/);
+      expect(exclusion.schemeRows).toHaveLength(1);
+    }
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const card of higher2019) {
+      const task = hl19.tasks.find(t => t.id === card.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('adds up to the printed question totals', () => {
+    const first = new Map(Object.entries(hl19.routes).map(([part, options]) => [part, options[0]]));
+    const totals = new Map<number, number>();
+    for (const task of hl19.tasks) {
+      const part = task.questionRef.replace('2019 HL ', '').split(' — ')[0];
+      if (task.route && first.get(part) !== task.route) continue;   // one route per pool
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    expect(totals.get(1)).toBe(24);   // best five of six parts at 4
+    // "4 + 2 + 2 + 2 + 2 + 2 + 6": seven responses carded at the first rate, 4.
+    for (const q of [2, 3, 4, 5, 6]) expect(totals.get(q), `Q${q}`).toBe(28);
+    expect(totals.get(7)).toBe(40);   // (a) 2 at 4, (b) eight items at 4, four of them withdrawn
+    for (const q of [8, 9]) expect(totals.get(q), `Q${q}`).toBe(38);   // the drawing priced 3 + 3 beside the ladder
+    for (const q of [10, 11, 12, 13]) expect(totals.get(q), `Q${q}`).toBe(60);
+    expect(totals.get(14)).toBe(110);   // (a) 30, five notes at 10 (any three), (c) 30
+    expect(totals.get(15)).toBe(90);    // any two of three 30s
+    expect(hl19.tasks.some(task => / Q1[67]/.test(task.questionRef))).toBe(false);
+  });
+
+  it('links each card to the booklet its question is printed in', () => {
+    for (const card of higher2019) {
+      expect(card.paperFileid, card.id).toBe(card.section === 'C' ? 'LC025ALP040EV' : 'LC025ALP038EV');
+    }
+  });
+
+  it('splits only the choices the scheme marks differently per option', () => {
+    expect(hl19.routes).toEqual({
+      'Q6(c)': ['asthma', 'bronchitis'],
+      'Q10(c)(ii)': ['quadrat', 'transect'],
+      'Q13(b)(iii)': ['fibroids', 'endometriosis'],
+      'Q14(b)(iii)': ['phototropism', 'geotropism-in-root', 'geotropism-in-shoot'],
+    });
+    for (const part of Object.keys(hl19.routes)) {
+      const routes = higher2019.filter(card => card.questionRef.startsWith(`2019 HL ${part} — `));
+      expect(routes, part).toHaveLength(hl19.routes[part].length);
+      expect(new Set(routes.map(card => card.questionText)).size, part).toBe(1);
+    }
+    expect(hl19Verbatims('bio-2019-hl-q6-c-asthma')[1]).toBe('Cause — Pet dander or allergens or smoke or dust');
+    expect(hl19Verbatims('bio-2019-hl-q13-b-iii-endometriosis')[1])
+      .toBe('1. Cause — Menstrual blood flowing into oviduct or genetic');
+  });
+
+  it('cards each separately priced entry of a printed list on its own', () => {
+    expect(higher2019.filter(card => card.questionRef.startsWith('2019 HL Q14(a)(i) — ')).map(card => card.id))
+      .toEqual(['a', 'b', 'c', 'd', 'e', 'f'].map(x => `bio-2019-hl-q14-a-i-${x}`));
+    expect(['natural', 'mechanical', 'chemical'].map(x => hl19ById.has(`bio-2019-hl-q13-a-${x}`)))
+      .toEqual([true, true, true]);
+    expect(hl19Verbatims('bio-2019-hl-q11-c-ii-1')).toEqual(['1. XNXn', '2. XNY']);
+  });
+
+  it('reads menus at the scheme\'s separators, without its printed slips', () => {
+    // A solidus inside the last option ("enzyme returns to / original shape").
+    expect(hl19Options('bio-2019-hl-q12-b-vi')).toHaveLength(5);
+    expect(hl19Options('bio-2019-hl-q12-b-vi')![4]).toMatch(/^enzyme \(or active site\) unaltered.*can be reused$/);
+    // "other bacteria/ resistant population (or example)" printed twice in a row, carried once.
+    const resistance = hl19Options('bio-2019-hl-q14-b-ii')!;
+    expect(resistance).toHaveLength(6);
+    expect(new Set(resistance).size).toBe(6);
+    expect(resistance[3]).toBe('Plasmid carries resistant gene or (resistance) acquired by bacteria from / other bacteria');
+    // The scheme's two columns, alveoli first, each with its own "large surface area".
+    expect(hl19Options('bio-2019-hl-q6-b')).toHaveLength(8);
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph|table)s?\b|\bshown below\b/i;
+    for (const card of higher2019) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    // The names to match are printed as a spaced row: the ask is shown as printed, with its diagram.
+    for (const x of ['a', 'b', 'c', 'd', 'e', 'f']) {
+      expect(hl19ById.get(`bio-2019-hl-q14-a-i-${x}`)!.questionFigure, x).toBeTruthy();
+    }
+  });
+});

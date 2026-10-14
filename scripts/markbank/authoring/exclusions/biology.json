@@ -1,0 +1,12 @@
+[
+ {
+  "ref": "2019 HL Q7(b)(iii)",
+  "reason": "the SEC withdrew this part: its marks were credited to every candidate who attempted any part of Q7(b), and the scheme deems it outside the range of the Biology syllabus and not examinable. The scheme prints its answers only as \"possible answers\", not as a marking scheme; reviewed and priced in bio_review_2019_hl.py and kept out of the bank.",
+  "evidence": "Scheme LC025ALP000EV p11, footnote 1 to the \"1(iii)\" and \"1(iv)\" headings: \"Candidate’s that attempted any part of Q7(b), were credited with the marks assigned for parts (iii) and (iv) for these questions. These questions were deemed to be outside the range of the Biology Syllabus and not examinable. The information presented here are possible answers to the questions.\""
+ },
+ {
+  "ref": "2019 HL Q7(b)(iv)",
+  "reason": "the SEC withdrew this part: its marks were credited to every candidate who attempted any part of Q7(b), and the scheme deems it outside the range of the Biology syllabus and not examinable. The scheme prints its answers only as \"possible answers\", not as a marking scheme; reviewed and priced in bio_review_2019_hl.py and kept out of the bank.",
+  "evidence": "Scheme LC025ALP000EV p11, footnote 1 to the \"1(iii)\" and \"1(iv)\" headings: \"Candidate’s that attempted any part of Q7(b), were credited with the marks assigned for parts (iii) and (iv) for these questions. These questions were deemed to be outside the range of the Biology Syllabus and not examinable. The information presented here are possible answers to the questions.\""
+ }
+]
