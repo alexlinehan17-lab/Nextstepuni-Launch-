@@ -292,11 +292,12 @@ describe('reviewed Construction Studies boundaries stay on their printed tasks',
     expect(card && isPointCard(card)).toBe(true);
     if (!card || !isPointCard(card)) return;
 
+    // Source-reviewed (construction_2017_ordinary.py): the two printed advantages, 5 each.
     expect(card.totalMarks).toBe(10);
     expect(card.questionText).toMatch(/external patio/i);
-    expect(card.rows[0].group).toMatchObject({ claimMax: 2, perOption: 5 });
-    expect(card.rows[0].group?.options).toHaveLength(8);
-    expect(card.rows.map(row => row.verbatim).join(' ')).not.toMatch(/practical project|craft skills|portfolio/i);
+    expect(card.rows.map(row => [row.verbatim, row.marks])).toEqual([['Advantage one', 5], ['Advantage two', 5]]);
+    expect(card.rows.map(row => `${row.verbatim} ${row.contextNote ?? ''}`).join(' '))
+      .not.toMatch(/practical project|craft skills|portfolio/i);
   });
 });
 

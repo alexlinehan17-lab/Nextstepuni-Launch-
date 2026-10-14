@@ -4422,5 +4422,215 @@
     "alt": "SEC 2017 Higher marking scheme notes on advantages of siting the MHRV unit in the hallway.",
     "attribution": "SEC Leaving Certificate Construction Studies 2017 Higher Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2017-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q1-original.png",
+    "md5": "5cf66dfd62f75be717c395fae1195716",
+    "alt": "Original SEC 2017 Ordinary Construction Studies Question 1: the printed question with a sketch of an insulated wooden door with vertical sheeting.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2017-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q2-original.png",
+    "md5": "09a31990ec8fc3575b89beeb7543f7df",
+    "alt": "Original SEC 2017 Ordinary Construction Studies Question 2: the printed question with a sketch of a block outer leaf and timber frame inner leaf.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2017-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q3-original.png",
+    "md5": "a51e700a02019734f86e70322b53fe3d",
+    "alt": "Original SEC 2017 Ordinary Construction Studies Question 3: the printed question with a section of a house with a solar panel and cylinder.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2017-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q4-original.png",
+    "md5": "a139506834051a0bc7dbb68f958c00a7",
+    "alt": "Original SEC 2017 Ordinary Construction Studies Question 4: the printed question with a sketch of waste materials from a house under repair.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2017-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q5-original.png",
+    "md5": "89071903a7079f9d3c685bd554cfcfc1",
+    "alt": "Original SEC 2017 Ordinary Construction Studies Question 5: the printed question with a sketch of a casement window and cill.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2017-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q6-original.png",
+    "md5": "402f15bb06c224d192cd27be811f9130",
+    "alt": "Original SEC 2017 Ordinary Construction Studies Question 6: the printed question with a sketch of a site entrance with safety signs.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2017-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q7-original.png",
+    "md5": "14e70e10327ab6f698ad01d5e6f54d7b",
+    "alt": "Original SEC 2017 Ordinary Construction Studies Question 7: the printed question with a sketch of an attic being converted to a bedroom.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2017-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q8-original.png",
+    "md5": "09b934ccab060a74d688fb36a1ea6ca0",
+    "alt": "Original SEC 2017 Ordinary Construction Studies Question 8: the printed instruction and the nine construction terms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2017-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q9-original.png",
+    "md5": "bb7e40326a318030a7f3446c11defa3e",
+    "alt": "Original SEC 2017 Ordinary Construction Studies Question 9: the printed question with a sketch of sliding doors opening on to a timber-decked patio.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2017-OL-q1-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q1-scheme.png",
+    "md5": "937ae39c2ebfeb59950b1daaebe168e4",
+    "alt": "SEC model sections through the door head, lintels and cavity wall with the DPC marked (b), the specification list and the notes for part (b).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q2-method": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q2-method.png",
+    "md5": "fdd408c4a8a13e736354de697bbdd466",
+    "alt": "SEC 2017 Ordinary marking scheme notes and sketch on insulating the timber frame inner leaf, with insulation types and thickness.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q2-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q2-advantages.png",
+    "md5": "a14e8980851cd5ea8292f75c77ec959e",
+    "alt": "SEC 2017 Ordinary marking scheme notes on advantages of insulating the inner leaf.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q2-finish": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q2-finish.png",
+    "md5": "11f04da3945d7284c4c3309b69074811",
+    "alt": "SEC 2017 Ordinary marking scheme sketches of taping joints and skimming plasterboard.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q3-system.png",
+    "md5": "274ee2cfb02ef5c5181aee24c213b25e",
+    "alt": "SEC model sketch of the solar panel, cylinder and pipework supplying hot water to a kitchen sink, with typical sizes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q3-solar": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q3-solar.png",
+    "md5": "1a479da1203072ac4fa0a7c2a159abba",
+    "alt": "SEC 2017 Ordinary marking scheme notes on advantages of solar water heating.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q3-tap": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q3-tap.png",
+    "md5": "374d8f2e1fc91fba83a73b1498e85216",
+    "alt": "SEC 2017 Ordinary marking scheme notes and sketches of lever and swivel-neck taps for limited hand mobility.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q4-sorting": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q4-sorting.png",
+    "md5": "a56ca5445ec7c388648e8b514802d521",
+    "alt": "SEC 2017 Ordinary marking scheme sketches and notes on sorting and storing waste on site.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q4-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q4-reasons.png",
+    "md5": "b888b918303365522dbe58d10c1acd5a",
+    "alt": "SEC 2017 Ordinary marking scheme notes on reasons to minimise waste on site.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q4-uses": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q4-uses.png",
+    "md5": "75d321422578ff7786fa4cf47a7f0355",
+    "alt": "SEC 2017 Ordinary marking scheme notes on reusing sorted wood and the reasons (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q5-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q5-scheme.png",
+    "md5": "f021dcfcff35987fde1a4a0fea5c30d6",
+    "alt": "SEC model sections through the window cill and cavity wall with the insulation behind the cill marked (b), and the detail list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q6-signs": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q6-signs.png",
+    "md5": "3e71fa8efbd6ebd691a5d7edef1c9e0b",
+    "alt": "SEC 2017 Ordinary marking scheme notes on reasons for safety signs at a site entrance.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q6-ppe": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q6-ppe.png",
+    "md5": "a9cb0fa0b0cff360ba04f0f5c2806a98",
+    "alt": "SEC 2017 Ordinary marking scheme notes, signs and reasons for a hard hat, safety boots and a high-visibility vest.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q6-power-tools": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q6-power-tools.png",
+    "md5": "81e21b373aee8aaf44e9ddbf9dc8f336",
+    "alt": "SEC 2017 Ordinary marking scheme notes on safety precautions with electric power tools.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q7-joists": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q7-joists.png",
+    "md5": "254fc860eb021681ac2676b7f06da1d8",
+    "alt": "SEC 2017 Ordinary marking scheme sketches and notes on herringbone and solid strutting between floor joists.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q7-joint": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q7-joint.png",
+    "md5": "c881a3f37b167f52f9163badfcda7ca5",
+    "alt": "SEC 2017 Ordinary marking scheme sketches and notes on tongue-and-groove flooring.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q7-attic": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q7-attic.png",
+    "md5": "d2411a019f2b56649aecd5395f85d894",
+    "alt": "SEC 2017 Ordinary marking scheme notes on an advantage and a disadvantage of an attic conversion.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q8-terms": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q8-terms.png",
+    "md5": "459bff67772b62ad7e3a7a61f66951d8",
+    "alt": "SEC 2017 Ordinary marking scheme notes and sketches for all nine terms: hand rail, damp-proof course, wind turbine, box dovetail joint, ball valve, joist hanger, purlin, energy rating and service cavity (four pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q9-decking": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q9-decking.png",
+    "md5": "403ae66f9aa29cb1093dc20f3b70fe49",
+    "alt": "SEC 2017 Ordinary marking scheme sketches and notes on fixing decking boards to the joists.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q9-finish": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q9-finish.png",
+    "md5": "2f12a864d3150f9b87614a7f16b57e9b",
+    "alt": "SEC 2017 Ordinary marking scheme notes and sketches on applying a finish to the decking.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2017-OL-q9-patio": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-OL-q9-patio.png",
+    "md5": "2a0b8367c4ca3c195883563693a8676a",
+    "alt": "SEC 2017 Ordinary marking scheme notes on advantages of an external patio.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }
