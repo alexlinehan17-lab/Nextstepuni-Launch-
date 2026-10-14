@@ -19816,4 +19816,1273 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q1-a", topicId: "cons-1-5", conceptId: "tiled-roof-eaves-section-a",
+    section: "B", questionRef: "2012 OL Q1(a)",
+    stem: "The sketch shows a tiled roof of a dwelling house, which is supported on a 350 mm external concrete block wall with an insulated cavity. The roof is a traditional cut roof and has a pitch of 45°.",
+    questionText: "To a scale of 1:5, draw a vertical section through the eaves of the tiled roof and the external wall. Show the typical construction details from a level 400 mm below the wall plate, through the eaves and include three courses of tiles at eaves. Include the roof insulation and show clearly the ventilation path to the roof structure at the eaves. Include three typical dimensions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 7 of the above details (5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete tiles; 44 × 35 mm battens; breathable membrane; rafters 150–250 × 40 mm; roof insulation; 150 × 40 mm ceiling joists; 12.5 mm foil-backed plasterboard and skim; 100 × 75 mm wallplate; internal plaster and external render; 100 mm inner leaf; wall insulation; 50 mm residual cavity; 100 mm outer leaf; fascia and soffit; 100 mm eaves gutter; ventilation path.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "dimensions", kind: "criterion", verbatim: "Three typical dimensions", marks: 5, contextNote: "Three typical dimensions on the section.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Tiled cut roof eaves section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the cavity closer."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q1-original.png",
+          "srcHash": "8e1b3c1ba676074958db694fe3f3271f",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 1: the printed question with a sketch of the tiled roof at the eaves.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q1-section.png",
+          "srcHash": "e1e3558d15ecb4d88b8f6c47d0093c49",
+          "alt": "SEC model sections through the tiled roof at the eaves on the cavity wall, with the specification list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q1-b", topicId: "cons-3-10", conceptId: "tiled-roof-eaves-section-b",
+    section: "B", questionRef: "2012 OL Q1(b)",
+    stem: "The sketch shows a tiled roof of a dwelling house, which is supported on a 350 mm external concrete block wall with an insulated cavity. The roof is a traditional cut roof and has a pitch of 45°.",
+    questionText: "On your drawing, show one method of closing the cavity at eaves level.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "closer", kind: "criterion", verbatim: "Method of closing cavity at eaves level", marks: 4, contextNote: "Such as: a proprietary cavity closer at the top of the wall; or a slate fixed across the cavity to both leaves.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 6, contextNote: "Draughting, accuracy and scale of the whole section: excellent 6, good 4, fair 2. The scheme prints this band after the part (b) row.", permittedMarks: [0,2,4,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Tiled cut roof eaves section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the cavity closer."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q1-original.png",
+          "srcHash": "8e1b3c1ba676074958db694fe3f3271f",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 1: the printed question with a sketch of the tiled roof at the eaves.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q1-closer",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q1-closer.png",
+          "srcHash": "11464f203be197fb5140c3a939d54087",
+          "alt": "SEC 2012 Ordinary marking scheme notes on closing the cavity at eaves level.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q1-complete", topicId: "cons-1-5", conceptId: "tiled-roof-eaves-section-complete",
+    section: "B", questionRef: "2012 OL Q1 — complete",
+    stem: "The sketch shows a tiled roof of a dwelling house, which is supported on a 350 mm external concrete block wall with an insulated cavity. The roof is a traditional cut roof and has a pitch of 45°.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the eaves of the tiled roof and the external wall. Show the typical construction details from a level 400 mm below the wall plate, through the eaves and include three courses of tiles at eaves. Include the roof insulation and show clearly the ventilation path to the roof structure at the eaves. Include three typical dimensions. (b) On your drawing, show one method of closing the cavity at eaves level.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 7 of the above details (5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete tiles; 44 × 35 mm battens; breathable membrane; rafters 150–250 × 40 mm; roof insulation; 150 × 40 mm ceiling joists; 12.5 mm foil-backed plasterboard and skim; 100 × 75 mm wallplate; internal plaster and external render; 100 mm inner leaf; wall insulation; 50 mm residual cavity; 100 mm outer leaf; fascia and soffit; 100 mm eaves gutter; ventilation path.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Three typical dimensions", marks: 5, contextNote: "Three typical dimensions on the section.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-closer", kind: "criterion", verbatim: "Method of closing cavity at eaves level", marks: 4, contextNote: "Such as: a proprietary cavity closer at the top of the wall; or a slate fixed across the cavity to both leaves.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 6, contextNote: "Draughting, accuracy and scale of the whole section: excellent 6, good 4, fair 2. The scheme prints this band after the part (b) row.", permittedMarks: [0,2,4,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-ol-q1-a","label":"a","marks":40,"rowIds":["a-details","a-dimensions"]},{"sourceCardId":"cons-2012-ol-q1-b","label":"b","marks":10,"rowIds":["b-closer","b-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Tiled cut roof eaves section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the cavity closer."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q1-original.png",
+          "srcHash": "8e1b3c1ba676074958db694fe3f3271f",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 1: the printed question with a sketch of the tiled roof at the eaves.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q1-section.png",
+          "srcHash": "e1e3558d15ecb4d88b8f6c47d0093c49",
+          "alt": "SEC model sections through the tiled roof at the eaves on the cavity wall, with the specification list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q2-a", topicId: "cons-6-2", conceptId: "external-insulation-system-a",
+    section: "B", questionRef: "2012 OL Q2(a)",
+    stem: "A dwelling house, as shown in the sketch, has a 300 mm external block wall with 50 mm expanded polystyrene insulation in the cavity. The wall has a smooth external render finish. It is proposed to improve the insulation properties of the wall by adding an external system of insulation.",
+    questionText: "Using notes and neat freehand sketches, show one suitable method of applying an external insulation system to the wall. Specify the insulation material used, indicate its typical thickness and include details of the external surface finish to the insulation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "description-1", kind: "criterion", verbatim: "Valid description one", marks: 6, contextNote: "Such as: slabs of insulation fixed to the wall with adhesive and mechanical fixings.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "description-2", kind: "criterion", verbatim: "Valid description two", marks: 6, contextNote: "A second, different step. Such as: an acrylic basecoat with a fibre mesh embedded for impact resistance; a coloured primer.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "finish", kind: "criterion", verbatim: "Details of external surface finish to the insulation", marks: 6, contextNote: "Such as: a coloured, textured acrylic render, trowelled or sprayed, durable and in a range of colours.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "insulation", kind: "criterion", verbatim: "Type and thickness of insulation (3 marks + 3marks)", marks: 6, contextNote: "Type 3 and thickness 3. Such as: expanded polystyrene, at least 120 mm and up to 300 mm; phenolic foam, at least 75 mm; or Gutex or cork.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "sketch", kind: "criterion", verbatim: "External insulation – Sketch", marks: 16, contextNote: "Two valid details on the sketch, 4 each, and the quality of the sketch, excellent 8, good 6, fair 4.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "External insulation of an existing wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one suitable method\" is an open choice of method; the scheme gives a typical system."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q2-original.png",
+          "srcHash": "0962d82b449048e2ea96e4c82a52c8c3",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 2: the printed question with a sketch of the rendered house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q2-method",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q2-method.png",
+          "srcHash": "624a51593df9f872059e66f167141166",
+          "alt": "SEC 2012 Ordinary marking scheme notes and sketch on an external insulation system and its insulation materials.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q2-b", topicId: "cons-6-3", conceptId: "external-insulation-system-b",
+    section: "B", questionRef: "2012 OL Q2(b)",
+    stem: "A dwelling house, as shown in the sketch, has a 300 mm external block wall with 50 mm expanded polystyrene insulation in the cavity. The wall has a smooth external render finish. It is proposed to improve the insulation properties of the wall by adding an external system of insulation.",
+    questionText: "List two advantages of applying an external system of insulation to the walls of an existing house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 5, contextNote: "Such as: less heat loss; lower bills and CO₂; no loss of floor area and no disruption inside.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 5, contextNote: "A second, different advantage. Such as: the wall becomes a heat store; a practical way to insulate an existing building; a new finish that hides all the fixings.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "External insulation of an existing wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one suitable method\" is an open choice of method; the scheme gives a typical system."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q2-original.png",
+          "srcHash": "0962d82b449048e2ea96e4c82a52c8c3",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 2: the printed question with a sketch of the rendered house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q2-advantages",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q2-advantages.png",
+          "srcHash": "72db14c855bdf8d04c39dc05c169aa79",
+          "alt": "SEC 2012 Ordinary marking scheme notes on the advantages of external wall insulation.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q2-complete", topicId: "cons-6-2", conceptId: "external-insulation-system-complete",
+    section: "B", questionRef: "2012 OL Q2 — complete",
+    stem: "A dwelling house, as shown in the sketch, has a 300 mm external block wall with 50 mm expanded polystyrene insulation in the cavity. The wall has a smooth external render finish. It is proposed to improve the insulation properties of the wall by adding an external system of insulation.",
+    questionText: "(a) Using notes and neat freehand sketches, show one suitable method of applying an external insulation system to the wall. Specify the insulation material used, indicate its typical thickness and include details of the external surface finish to the insulation. (b) List two advantages of applying an external system of insulation to the walls of an existing house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-description-1", kind: "criterion", verbatim: "Valid description one", marks: 6, contextNote: "Such as: slabs of insulation fixed to the wall with adhesive and mechanical fixings.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-description-2", kind: "criterion", verbatim: "Valid description two", marks: 6, contextNote: "A second, different step. Such as: an acrylic basecoat with a fibre mesh embedded for impact resistance; a coloured primer.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-finish", kind: "criterion", verbatim: "Details of external surface finish to the insulation", marks: 6, contextNote: "Such as: a coloured, textured acrylic render, trowelled or sprayed, durable and in a range of colours.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-insulation", kind: "criterion", verbatim: "Type and thickness of insulation (3 marks + 3marks)", marks: 6, contextNote: "Type 3 and thickness 3. Such as: expanded polystyrene, at least 120 mm and up to 300 mm; phenolic foam, at least 75 mm; or Gutex or cork.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-sketch", kind: "criterion", verbatim: "External insulation – Sketch", marks: 16, contextNote: "Two valid details on the sketch, 4 each, and the quality of the sketch, excellent 8, good 6, fair 4.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "b-advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 5, contextNote: "Such as: less heat loss; lower bills and CO₂; no loss of floor area and no disruption inside.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 5, contextNote: "A second, different advantage. Such as: the wall becomes a heat store; a practical way to insulate an existing building; a new finish that hides all the fixings.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-ol-q2-a","label":"a","marks":40,"rowIds":["a-description-1","a-description-2","a-finish","a-insulation","a-sketch"]},{"sourceCardId":"cons-2012-ol-q2-b","label":"b","marks":10,"rowIds":["b-advantage-1","b-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "External insulation of an existing wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one suitable method\" is an open choice of method; the scheme gives a typical system."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q2-original.png",
+          "srcHash": "0962d82b449048e2ea96e4c82a52c8c3",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 2: the printed question with a sketch of the rendered house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q2-method",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q2-method.png",
+          "srcHash": "624a51593df9f872059e66f167141166",
+          "alt": "SEC 2012 Ordinary marking scheme notes and sketch on an external insulation system and its insulation materials.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q3-a", topicId: "cons-5-1", conceptId: "mains-cold-water-supply-a",
+    section: "B", questionRef: "2012 OL Q3(a)",
+    stem: "A dwelling house is connected to the public water supply system to provide clean, treated water for the household.",
+    questionText: "Using a single-line labelled diagram, show the pipework required to supply cold water to a kitchen sink, as shown in the sketch. Include the following in your diagram: pipework from public mains to kitchen sink; location of valves; material and typical size of pipework.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 38,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 6 of the above details (5 marks each)", marks: 30, contextNote: "Credit the best SIX acceptable details at 5 marks each, capped at 30. Marked details: connection to the water mains; stop valve; water supply pipe; external wall; protective sleeve for the supply; service pipe insulation; stop valve inside; rising main; connection to the kitchen sink; typical material; typical pipe size.", permittedMarks: [0,5,10,15,20,25,30] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Mains cold water to a kitchen sink",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-six list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q3-original.png",
+          "srcHash": "23f5a929fab89d1eca77e62ff82036b3",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 3: the printed question with a sketch of the kitchen sink and tap.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q3-system.png",
+          "srcHash": "3a94f6bc5499dcf2ee7e23e8c66c5aee",
+          "alt": "SEC single-line diagram of the mains supply through the wall to the kitchen sink, with the list of components.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q3-b", topicId: "cons-5-1", conceptId: "mains-cold-water-supply-b",
+    section: "B", questionRef: "2012 OL Q3(b)",
+    stem: "A dwelling house is connected to the public water supply system to provide clean, treated water for the household.",
+    questionText: "Include in your sketch two design details that would prevent the water in the mains supply from freezing during very cold weather.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "frost", kind: "criterion", verbatim: "Designs details (2 × 3 marks)", marks: 6, contextNote: "Two details, 3 each. Such as: the pipe laid about one metre deep, at least 750 mm; the last 600 mm of the service pipe insulated; heavy-duty polyethylene or PVC pipe.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Mains cold water to a kitchen sink",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-six list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q3-original.png",
+          "srcHash": "23f5a929fab89d1eca77e62ff82036b3",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 3: the printed question with a sketch of the kitchen sink and tap.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q3-frost",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q3-frost.png",
+          "srcHash": "d1fe360db9dc701a2457093b2c7aa5d3",
+          "alt": "SEC 2012 Ordinary marking scheme notes on protecting the mains supply from frost.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q3-c", topicId: "cons-5-2", conceptId: "mains-cold-water-supply-c",
+    section: "B", questionRef: "2012 OL Q3(c)",
+    stem: "A dwelling house is connected to the public water supply system to provide clean, treated water for the household.",
+    questionText: "Outline two ways in which the household could reduce the use of treated water from the public water supply.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "ways", kind: "criterion", verbatim: "Two ways (2 × 3 marks)", marks: 6, contextNote: "Two ways, 3 each. Such as: a displacement bottle in the cistern; push taps; a conical sink; dual-flush cisterns; rainwater harvesting; an aerated shower head; recycled grey water for flushing and gardening.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Mains cold water to a kitchen sink",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-six list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q3-original.png",
+          "srcHash": "23f5a929fab89d1eca77e62ff82036b3",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 3: the printed question with a sketch of the kitchen sink and tap.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q3-saving",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q3-saving.png",
+          "srcHash": "20b37dea1842d14fad9f7b8cfcad0bcb",
+          "alt": "SEC 2012 Ordinary marking scheme notes and sketch on reducing the use of treated water.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q3-complete", topicId: "cons-5-1", conceptId: "mains-cold-water-supply-complete",
+    section: "B", questionRef: "2012 OL Q3 — complete",
+    stem: "A dwelling house is connected to the public water supply system to provide clean, treated water for the household.",
+    questionText: "(a) Using a single-line labelled diagram, show the pipework required to supply cold water to a kitchen sink, as shown in the sketch. Include the following in your diagram: pipework from public mains to kitchen sink; location of valves; material and typical size of pipework. (b) Include in your sketch two design details that would prevent the water in the mains supply from freezing during very cold weather. (c) Outline two ways in which the household could reduce the use of treated water from the public water supply.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 6 of the above details (5 marks each)", marks: 30, contextNote: "Credit the best SIX acceptable details at 5 marks each, capped at 30. Marked details: connection to the water mains; stop valve; water supply pipe; external wall; protective sleeve for the supply; service pipe insulation; stop valve inside; rising main; connection to the kitchen sink; typical material; typical pipe size.", permittedMarks: [0,5,10,15,20,25,30] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-frost", kind: "criterion", verbatim: "Designs details (2 × 3 marks)", marks: 6, contextNote: "Two details, 3 each. Such as: the pipe laid about one metre deep, at least 750 mm; the last 600 mm of the service pipe insulated; heavy-duty polyethylene or PVC pipe.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-ways", kind: "criterion", verbatim: "Two ways (2 × 3 marks)", marks: 6, contextNote: "Two ways, 3 each. Such as: a displacement bottle in the cistern; push taps; a conical sink; dual-flush cisterns; rainwater harvesting; an aerated shower head; recycled grey water for flushing and gardening.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-ol-q3-a","label":"a","marks":38,"rowIds":["a-details","a-presentation"]},{"sourceCardId":"cons-2012-ol-q3-b","label":"b","marks":6,"rowIds":["b-frost"]},{"sourceCardId":"cons-2012-ol-q3-c","label":"c","marks":6,"rowIds":["c-ways"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Mains cold water to a kitchen sink",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-six list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q3-original.png",
+          "srcHash": "23f5a929fab89d1eca77e62ff82036b3",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 3: the printed question with a sketch of the kitchen sink and tap.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q3-system.png",
+          "srcHash": "3a94f6bc5499dcf2ee7e23e8c66c5aee",
+          "alt": "SEC single-line diagram of the mains supply through the wall to the kitchen sink, with the list of components.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q4-a", topicId: "cons-2-4", conceptId: "strip-foundation-design-a",
+    section: "B", questionRef: "2012 OL Q4(a)",
+    stem: "A strip foundation is designed to support a 350 mm external wall of a dwelling house. The wall is of concrete block construction with an insulated cavity, as shown in the sketch.",
+    questionText: "Describe, using notes and neat freehand sketches, the design of a typical strip foundation for the above external wall under the following headings: width and depth of trench; finished level of concrete in foundation; reinforcement of foundation; position of wall on strip foundation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "trench", kind: "criterion", verbatim: "Width and depth of trench", marks: 10, contextNote: "Primary communication 6 and other communication 4. Such as: at least three times the wall thickness, 1050 mm for a 350 mm wall; as deep as the ground needs, at least 600 mm to the top of the concrete, below the frost line.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "level", kind: "criterion", verbatim: "Finish level of concrete in foundation", marks: 10, contextNote: "Primary communication 6 and other communication 4. Such as: pegs driven into the trench base, projecting by the foundation thickness, levelled with a straight edge and laser level.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "reinforcement", kind: "criterion", verbatim: "Reinforcement of foundation", marks: 10, contextNote: "Primary communication 6 and other communication 4. Such as: ribbed mild steel bars supported 75 mm from the bottom, where the tension is; concrete poured, vibrated and compacted around them; or steel mesh.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "position", kind: "criterion", verbatim: "Position of wall on strip foundation", marks: 10, contextNote: "Primary communication 6 and other communication 4. Such as: the wall central on the foundation, with equal projections on both sides.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Strip foundation design",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All four printed headings in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q4-original.png",
+          "srcHash": "63098a8b48dea7de68406f0c1c3e1a6b",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 4: the printed question with a sketch of the cavity wall on its strip foundation.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q4-design",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q4-design.png",
+          "srcHash": "cb5a7d4cff49031fcfc4997d0c57466c",
+          "alt": "SEC 2012 Ordinary marking scheme notes and sketches on the trench, concrete level, reinforcement and wall position of a strip foundation (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q4-b", topicId: "cons-2-4", conceptId: "strip-foundation-design-b",
+    section: "B", questionRef: "2012 OL Q4(b)",
+    stem: "A strip foundation is designed to support a 350 mm external wall of a dwelling house. The wall is of concrete block construction with an insulated cavity, as shown in the sketch.",
+    questionText: "Discuss two environmental reasons why a strip foundation is the preferred foundation type for the external wall of the house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "reason-1", kind: "criterion", verbatim: "Reason one", marks: 5, contextNote: "Such as: less concrete than a raft foundation; minimum excavation, using less energy.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason two", marks: 5, contextNote: "A second, different reason. Such as: less steel; a lower carbon footprint than other foundations; environmentally sustainable.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Strip foundation design",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All four printed headings in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q4-original.png",
+          "srcHash": "63098a8b48dea7de68406f0c1c3e1a6b",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 4: the printed question with a sketch of the cavity wall on its strip foundation.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q4-reasons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q4-reasons.png",
+          "srcHash": "88f40d5001626be5dc260554d4dd8e4a",
+          "alt": "SEC 2012 Ordinary marking scheme notes on the environmental reasons for a strip foundation.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q4-complete", topicId: "cons-2-4", conceptId: "strip-foundation-design-complete",
+    section: "B", questionRef: "2012 OL Q4 — complete",
+    stem: "A strip foundation is designed to support a 350 mm external wall of a dwelling house. The wall is of concrete block construction with an insulated cavity, as shown in the sketch.",
+    questionText: "(a) Describe, using notes and neat freehand sketches, the design of a typical strip foundation for the above external wall under the following headings: width and depth of trench; finished level of concrete in foundation; reinforcement of foundation; position of wall on strip foundation. (b) Discuss two environmental reasons why a strip foundation is the preferred foundation type for the external wall of the house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-trench", kind: "criterion", verbatim: "Width and depth of trench", marks: 10, contextNote: "Primary communication 6 and other communication 4. Such as: at least three times the wall thickness, 1050 mm for a 350 mm wall; as deep as the ground needs, at least 600 mm to the top of the concrete, below the frost line.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "a-level", kind: "criterion", verbatim: "Finish level of concrete in foundation", marks: 10, contextNote: "Primary communication 6 and other communication 4. Such as: pegs driven into the trench base, projecting by the foundation thickness, levelled with a straight edge and laser level.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "a-reinforcement", kind: "criterion", verbatim: "Reinforcement of foundation", marks: 10, contextNote: "Primary communication 6 and other communication 4. Such as: ribbed mild steel bars supported 75 mm from the bottom, where the tension is; concrete poured, vibrated and compacted around them; or steel mesh.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "a-position", kind: "criterion", verbatim: "Position of wall on strip foundation", marks: 10, contextNote: "Primary communication 6 and other communication 4. Such as: the wall central on the foundation, with equal projections on both sides.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-reason-1", kind: "criterion", verbatim: "Reason one", marks: 5, contextNote: "Such as: less concrete than a raft foundation; minimum excavation, using less energy.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-reason-2", kind: "criterion", verbatim: "Reason two", marks: 5, contextNote: "A second, different reason. Such as: less steel; a lower carbon footprint than other foundations; environmentally sustainable.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-ol-q4-a","label":"a","marks":40,"rowIds":["a-trench","a-level","a-reinforcement","a-position"]},{"sourceCardId":"cons-2012-ol-q4-b","label":"b","marks":10,"rowIds":["b-reason-1","b-reason-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Strip foundation design",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All four printed headings in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q4-original.png",
+          "srcHash": "63098a8b48dea7de68406f0c1c3e1a6b",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 4: the printed question with a sketch of the cavity wall on its strip foundation.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q4-design",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q4-design.png",
+          "srcHash": "cb5a7d4cff49031fcfc4997d0c57466c",
+          "alt": "SEC 2012 Ordinary marking scheme notes and sketches on the trench, concrete level, reinforcement and wall position of a strip foundation (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q5-a", topicId: "cons-1-5", conceptId: "window-cill-section-a",
+    section: "B", questionRef: "2012 OL Q5(a)",
+    stem: "A triple-glazed timber casement window, as shown in the sketch, is fixed in a 350 mm external concrete block wall with an insulated cavity. The fixed frame of the window is 150 mm × 80 mm. The wall is plastered on both sides.",
+    questionText: "To a scale of 1:5, draw a vertical section through the bottom portion of the window showing the fixed frame of the window and the concrete cill. Show the typical construction details from 300 mm below to a level 250 mm above the concrete cill. Indicate the typical sizes of three main components.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 7 of the above details (5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 25 mm window board; 150 × 80 mm frame; triple low-e glazing; precast concrete cill; mastic or taped seals; DPC; 15 mm plaster outside and in; 100 mm outer leaf; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; proprietary cavity closer.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "dimensions", kind: "criterion", verbatim: "Three typical dimensions", marks: 5, contextNote: "Typical sizes of three main components.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Triple-glazed window cill section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the cold-bridge detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q5-original.png",
+          "srcHash": "3a496c251345adb5bcb57811b9fd90d4",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 5: the printed question with a sketch of the triple-glazed casement window.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q5-scheme.png",
+          "srcHash": "1d4fd2b537cb16a1ace573b18f421b4d",
+          "alt": "SEC model section through the window cill in the cavity wall, with the specification list and the cold-bridge detail.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q5-b", topicId: "cons-6-2", conceptId: "window-cill-section-b",
+    section: "B", questionRef: "2012 OL Q5(b)",
+    stem: "A triple-glazed timber casement window, as shown in the sketch, is fixed in a 350 mm external concrete block wall with an insulated cavity. The fixed frame of the window is 150 mm × 80 mm. The wall is plastered on both sides.",
+    questionText: "Include in your drawing the typical design detailing that would prevent the formation of a thermal/cold bridge at the concrete cill.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "cold-bridge", kind: "criterion", verbatim: "Valid design detail", marks: 4, contextNote: "Such as: insulation brought up behind the concrete cill; an insulated cavity closer.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 6, contextNote: "Draughting, accuracy and scale of the whole section: excellent 6, good 4, fair 2. The scheme prints this band after the part (b) row.", permittedMarks: [0,2,4,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Triple-glazed window cill section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the cold-bridge detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q5-original.png",
+          "srcHash": "3a496c251345adb5bcb57811b9fd90d4",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 5: the printed question with a sketch of the triple-glazed casement window.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q5-scheme.png",
+          "srcHash": "1d4fd2b537cb16a1ace573b18f421b4d",
+          "alt": "SEC model section through the window cill in the cavity wall, with the specification list and the cold-bridge detail.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q5-complete", topicId: "cons-1-5", conceptId: "window-cill-section-complete",
+    section: "B", questionRef: "2012 OL Q5 — complete",
+    stem: "A triple-glazed timber casement window, as shown in the sketch, is fixed in a 350 mm external concrete block wall with an insulated cavity. The fixed frame of the window is 150 mm × 80 mm. The wall is plastered on both sides.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the bottom portion of the window showing the fixed frame of the window and the concrete cill. Show the typical construction details from 300 mm below to a level 250 mm above the concrete cill. Indicate the typical sizes of three main components. (b) Include in your drawing the typical design detailing that would prevent the formation of a thermal/cold bridge at the concrete cill.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 7 of the above details (5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 25 mm window board; 150 × 80 mm frame; triple low-e glazing; precast concrete cill; mastic or taped seals; DPC; 15 mm plaster outside and in; 100 mm outer leaf; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; proprietary cavity closer.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Three typical dimensions", marks: 5, contextNote: "Typical sizes of three main components.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-cold-bridge", kind: "criterion", verbatim: "Valid design detail", marks: 4, contextNote: "Such as: insulation brought up behind the concrete cill; an insulated cavity closer.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 6, contextNote: "Draughting, accuracy and scale of the whole section: excellent 6, good 4, fair 2. The scheme prints this band after the part (b) row.", permittedMarks: [0,2,4,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-ol-q5-a","label":"a","marks":40,"rowIds":["a-details","a-dimensions"]},{"sourceCardId":"cons-2012-ol-q5-b","label":"b","marks":10,"rowIds":["b-cold-bridge","b-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Triple-glazed window cill section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the cold-bridge detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q5-original.png",
+          "srcHash": "3a496c251345adb5bcb57811b9fd90d4",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 5: the printed question with a sketch of the triple-glazed casement window.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q5-scheme.png",
+          "srcHash": "1d4fd2b537cb16a1ace573b18f421b4d",
+          "alt": "SEC model section through the window cill in the cavity wall, with the specification list and the cold-bridge detail.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q6-a", topicId: "cons-1-8", conceptId: "site-safety-lifting-concrete-a",
+    section: "B", questionRef: "2012 OL Q6(a)",
+    questionText: "List two specific safety precautions that should be observed in each of the following situations and give one reason for each safety precaution listed: manually lifting a load from a floor; placing concrete in a foundation trench from a ready-mix truck.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "lifting", kind: "criterion", verbatim: "Safety precautions when lifting a load", marks: 10, contextNote: "Two precautions 4 each and reasons 2. Such as: stand close, back straight, bend the knees; test the load and get help if too heavy; keep it close to the body; do not twist; a clear, tidy area — protecting your back.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "concrete", kind: "criterion", verbatim: "Safety precautions when placing concrete in a foundation", marks: 10, contextNote: "Two precautions 4 each and reasons 2. Such as: a high visibility jacket, boots and helmet; the driver able to see the work; the truck kept back from the trench edge in wet weather; a deep trench supported; only qualified workers with Safe Pass.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Lifting, placing concrete and protective equipment",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Both printed situations in (a) are required, each separately marked; the two items of equipment in (b) are an open response."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q6-original.png",
+          "srcHash": "5a8d3850a77f32c03b3cc24ffcd712f0",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 6: the printed question with a sketch of a worker carrying a load.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q6-precautions",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q6-precautions.png",
+          "srcHash": "bb5cf3d0fa46310208a2e78459c83798",
+          "alt": "SEC 2012 Ordinary marking scheme notes and sketch on safe lifting and on placing concrete from a ready-mix truck (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q6-b", topicId: "cons-1-8", conceptId: "site-safety-lifting-concrete-b",
+    section: "B", questionRef: "2012 OL Q6(b)",
+    questionText: "Using notes and neat freehand sketches, describe two items of personal protective equipment that must be worn on a building site and discuss the importance of each item to ensure the personal safety of workers on a building site.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "item-1", kind: "criterion", verbatim: "Item One", marks: 15, contextNote: "Note 5, sketch 5 (excellent 5, good 3, fair 2) and importance 5. Such as: a high visibility jacket or vest with reflective strips, so workers are seen, especially near machinery.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "item-2", kind: "criterion", verbatim: "Item two", marks: 15, contextNote: "A second, different item: note 5, sketch 5 (5/3/2) and importance 5. Such as: a safety helmet protecting the head from falling objects; steel cap boots protecting the feet.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Lifting, placing concrete and protective equipment",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Both printed situations in (a) are required, each separately marked; the two items of equipment in (b) are an open response."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q6-original.png",
+          "srcHash": "5a8d3850a77f32c03b3cc24ffcd712f0",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 6: the printed question with a sketch of a worker carrying a load.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q6-ppe",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q6-ppe.png",
+          "srcHash": "1a5be57e2699af434c6150f17e7aaca6",
+          "alt": "SEC 2012 Ordinary marking scheme notes and sketches on a high visibility jacket, a safety helmet and steel cap boots.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q6-complete", topicId: "cons-1-8", conceptId: "site-safety-lifting-concrete-complete",
+    section: "B", questionRef: "2012 OL Q6 — complete",
+    questionText: "(a) List two specific safety precautions that should be observed in each of the following situations and give one reason for each safety precaution listed: manually lifting a load from a floor; placing concrete in a foundation trench from a ready-mix truck. (b) Using notes and neat freehand sketches, describe two items of personal protective equipment that must be worn on a building site and discuss the importance of each item to ensure the personal safety of workers on a building site.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-lifting", kind: "criterion", verbatim: "Safety precautions when lifting a load", marks: 10, contextNote: "Two precautions 4 each and reasons 2. Such as: stand close, back straight, bend the knees; test the load and get help if too heavy; keep it close to the body; do not twist; a clear, tidy area — protecting your back.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "a-concrete", kind: "criterion", verbatim: "Safety precautions when placing concrete in a foundation", marks: 10, contextNote: "Two precautions 4 each and reasons 2. Such as: a high visibility jacket, boots and helmet; the driver able to see the work; the truck kept back from the trench edge in wet weather; a deep trench supported; only qualified workers with Safe Pass.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-item-1", kind: "criterion", verbatim: "Item One", marks: 15, contextNote: "Note 5, sketch 5 (excellent 5, good 3, fair 2) and importance 5. Such as: a high visibility jacket or vest with reflective strips, so workers are seen, especially near machinery.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "b-item-2", kind: "criterion", verbatim: "Item two", marks: 15, contextNote: "A second, different item: note 5, sketch 5 (5/3/2) and importance 5. Such as: a safety helmet protecting the head from falling objects; steel cap boots protecting the feet.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-ol-q6-a","label":"a","marks":20,"rowIds":["a-lifting","a-concrete"]},{"sourceCardId":"cons-2012-ol-q6-b","label":"b","marks":30,"rowIds":["b-item-1","b-item-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Lifting, placing concrete and protective equipment",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Both printed situations in (a) are required, each separately marked; the two items of equipment in (b) are an open response."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q6-original.png",
+          "srcHash": "5a8d3850a77f32c03b3cc24ffcd712f0",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 6: the printed question with a sketch of a worker carrying a load.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q6-precautions",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q6-precautions.png",
+          "srcHash": "bb5cf3d0fa46310208a2e78459c83798",
+          "alt": "SEC 2012 Ordinary marking scheme notes and sketch on safe lifting and on placing concrete from a ready-mix truck (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q7-a", topicId: "cons-1-3", conceptId: "garage-conversion-planning-a",
+    section: "B", questionRef: "2012 OL Q7(a)",
+    stem: "A homeowner wishes to obtain planning permission to convert an existing garage to a living room, as shown in the accompanying sketch.",
+    questionText: "Discuss two reasons why it is necessary to apply for planning permission to convert the garage to a living room.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "reason-1", kind: "criterion", verbatim: "Reason one", marks: 6, contextNote: "Such as: a change of use; the front appearance of the house changes, with a new window.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason two", marks: 6, contextNote: "A second, different reason. Such as: a legal requirement when changing the front elevation; others may object or make a submission.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Planning permission for a garage conversion",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q7-original.png",
+          "srcHash": "d24350704d1e940f33e8d4435a66040f",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 7: the printed question with a sketch of the house and garage to be converted.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q7-reasons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q7-reasons.png",
+          "srcHash": "ff12512d13c0c1c21d1bae01fb58f1ca",
+          "alt": "SEC 2012 Ordinary marking scheme notes on why planning permission is needed for the conversion.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q7-b", topicId: "cons-1-3", conceptId: "garage-conversion-planning-b",
+    section: "B", questionRef: "2012 OL Q7(b)",
+    stem: "A homeowner wishes to obtain planning permission to convert an existing garage to a living room, as shown in the accompanying sketch.",
+    questionText: "Outline the information that must be contained in each of the following documents when making a planning application to the planning authority: site location map; copy of site notice.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "map", kind: "criterion", verbatim: "Site location map", marks: 15, contextNote: "Three valid details, 5 each. Such as: the Ordnance Survey sheet number; north; the townland; nearby features; boundaries in red, adjoining land owned in blue, wayleaves in yellow; the site notice location.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "notice", kind: "criterion", verbatim: "Site notice", marks: 15, contextNote: "Three valid details, 5 each. Such as: the applicant’s name and address; the type of permission and date; a description of the development; whether it is a protected structure; that it may be inspected at the planning authority within 5 weeks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Planning permission for a garage conversion",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q7-original.png",
+          "srcHash": "d24350704d1e940f33e8d4435a66040f",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 7: the printed question with a sketch of the house and garage to be converted.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q7-documents",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q7-documents.png",
+          "srcHash": "932200c0a9da924b5b72c8e521ec8cd9",
+          "alt": "SEC 2012 Ordinary marking scheme notes on the site location map and the site notice.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q7-c", topicId: "cons-1-3", conceptId: "garage-conversion-planning-c",
+    section: "B", questionRef: "2012 OL Q7(c)",
+    stem: "A homeowner wishes to obtain planning permission to convert an existing garage to a living room, as shown in the accompanying sketch.",
+    questionText: "Discuss one reason why a planning authority might refuse planning permission for the proposed conversion.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "refusal", kind: "criterion", verbatim: "Valid detail", marks: 8, contextNote: "Such as: it changes the front elevation; defective specifications such as floor-to-ceiling height; windows overlooking a neighbour; a design out of character; a substandard structure.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Planning permission for a garage conversion",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q7-original.png",
+          "srcHash": "d24350704d1e940f33e8d4435a66040f",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 7: the printed question with a sketch of the house and garage to be converted.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q7-refusal",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q7-refusal.png",
+          "srcHash": "d5e1ee9c7e085176dfdb82cb7bb201e4",
+          "alt": "SEC 2012 Ordinary marking scheme notes on reasons to refuse permission for the conversion.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q7-complete", topicId: "cons-1-3", conceptId: "garage-conversion-planning-complete",
+    section: "B", questionRef: "2012 OL Q7 — complete",
+    stem: "A homeowner wishes to obtain planning permission to convert an existing garage to a living room, as shown in the accompanying sketch.",
+    questionText: "(a) Discuss two reasons why it is necessary to apply for planning permission to convert the garage to a living room. (b) Outline the information that must be contained in each of the following documents when making a planning application to the planning authority: site location map; copy of site notice. (c) Discuss one reason why a planning authority might refuse planning permission for the proposed conversion.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-reason-1", kind: "criterion", verbatim: "Reason one", marks: 6, contextNote: "Such as: a change of use; the front appearance of the house changes, with a new window.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-reason-2", kind: "criterion", verbatim: "Reason two", marks: 6, contextNote: "A second, different reason. Such as: a legal requirement when changing the front elevation; others may object or make a submission.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-map", kind: "criterion", verbatim: "Site location map", marks: 15, contextNote: "Three valid details, 5 each. Such as: the Ordnance Survey sheet number; north; the townland; nearby features; boundaries in red, adjoining land owned in blue, wayleaves in yellow; the site notice location.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "b-notice", kind: "criterion", verbatim: "Site notice", marks: 15, contextNote: "Three valid details, 5 each. Such as: the applicant’s name and address; the type of permission and date; a description of the development; whether it is a protected structure; that it may be inspected at the planning authority within 5 weeks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "c-refusal", kind: "criterion", verbatim: "Valid detail", marks: 8, contextNote: "Such as: it changes the front elevation; defective specifications such as floor-to-ceiling height; windows overlooking a neighbour; a design out of character; a substandard structure.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-ol-q7-a","label":"a","marks":12,"rowIds":["a-reason-1","a-reason-2"]},{"sourceCardId":"cons-2012-ol-q7-b","label":"b","marks":30,"rowIds":["b-map","b-notice"]},{"sourceCardId":"cons-2012-ol-q7-c","label":"c","marks":8,"rowIds":["c-refusal"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Planning permission for a garage conversion",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q7-original.png",
+          "srcHash": "d24350704d1e940f33e8d4435a66040f",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 7: the printed question with a sketch of the house and garage to be converted.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q7-documents",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q7-documents.png",
+          "srcHash": "932200c0a9da924b5b72c8e521ec8cd9",
+          "alt": "SEC 2012 Ordinary marking scheme notes on the site location map and the site notice.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q8-terms", topicId: "cons-5-4", conceptId: "construction-terms-terms",
+    section: "B", questionRef: "2012 OL Q8",
+    questionText: "Explain, with the aid of notes and neat freehand sketches, any five of the following: rainwater butt; box dovetail joint; compression joint; wall tie; gully trap; angle bead; newel post; through and through sawing; biscuit joint.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "terms", kind: "anyN", verbatim: "Terms", marks: 50, contextNote: "Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). Rainwater butt: a barrel or tank connected to the downpipe to collect rainwater from the roof, with an overflow and a tap at the base; 100–300 litres; part of rainwater harvesting. Box Dovetail Joint: a joint for box shapes and drawers in quality furniture, by hand or machine; slope 1:6 for softwood, 1:8 for hardwood; decorative, with contrasting woods. Compression joint: a brass or PVC plumbing joint for copper or PVC pipe: the ends cut square, the nut and olive slipped on, and the nut tightened to compress the olive into a watertight joint. Wall tie: a stainless steel fitting holding the two leaves of a cavity wall together so they act as one, and holding the insulation; at 900 mm horizontally and 450 mm vertically. Gully trap: a PVC fitting at the head of an underground drain collecting waste or rainwater, with a grid against leaves and a water seal keeping odours and gases in the drain; it may have a back inlet. Angle bead: a stainless, galvanised steel or plastic bead with a solid rib and mesh flanges, fixed with nails or plaster dabs to give a true, reinforced plaster corner inside or out. Newel Post: a hardwood or softwood post, usually 75 × 75 or 100 × 100 mm, at the top or bottom of the stairs string or at a landing, supporting the handrail; square or round, often shaped or carved. Through and through sawing: plain sawing: the log cut straight through into boards, with little waste and the widest boards, but boards likely to cup in seasoning and no particular grain pattern. Biscuit joint: a biscuit joiner cuts crescent grooves in the edges for compressed beech biscuits, glued and cramped; ideal for joining boards edge to edge.", group: {"claimMax":5,"perOption":10,"options":["Rainwater butt","Box Dovetail Joint","Compression joint","Wall tie","Gully trap","Angle bead","Newel Post","Through and through sawing","Biscuit joint"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Construction terms",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Explain any five of the nine printed terms. Each term is marked separately at 10 marks; the scheme illustrations are examples of suitable sketches."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q8-original.png",
+          "srcHash": "d01dc8c4fe2bd1d23a074110ba8b4768",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q8-terms",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q8-terms.png",
+          "srcHash": "e7293cdaa1b14fbd77f734873b81e8cb",
+          "alt": "SEC 2012 Ordinary marking scheme notes and sketches for all nine terms — rainwater butt, wall tie, newel post, box dovetail joint, gully trap, through and through sawing, compression joint, angle bead and biscuit joint (three pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q9-a", topicId: "cons-10-1", conceptId: "oak-table-restoration-a",
+    section: "B", questionRef: "2012 OL Q9(a)",
+    stem: "The sketch shows a traditional dining table made from solid oak.",
+    questionText: "Show, using notes and neat freehand sketches, a suitable method of jointing the front rail to the leg and discuss why the method of jointing shown is suitable.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 4, contextNote: "Such as: a haunched mortise and tenon; a dowel joint.", permittedMarks: [0,1,2,3,4] },
+    { id: "suitability", kind: "criterion", verbatim: "Suitability of joint", marks: 4, contextNote: "Such as, the haunched mortise and tenon: the traditional, strong and sturdy joint for quality work, with a high glue area, resisting twisting; dowels are weaker.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent good fair)", marks: 6, contextNote: "Quality of the sketch of the joint: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Restoring a solid oak dining table",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The joint and the finish are open choices; the scheme gives typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q9-original.png",
+          "srcHash": "f43fa687fad3df3115cd74abbbc52404",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 9: the printed question with a sketch of the solid oak dining table.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q9-joint",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q9-joint.png",
+          "srcHash": "16f47a67f09443b3b598b0115492b2d6",
+          "alt": "SEC 2012 Ordinary marking scheme notes and sketches of a haunched mortise and tenon and a dowel joint.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q9-b", topicId: "cons-10-7", conceptId: "oak-table-restoration-b",
+    section: "B", questionRef: "2012 OL Q9(b)",
+    stem: "The sketch shows a traditional dining table made from solid oak.",
+    questionText: "It has been decided to restore the tabletop, which has become damaged over time, as shown. Show, using notes and neat freehand sketches, the steps involved in removing the marks and in preparing the tabletop for the application of a new applied finish.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 6, contextNote: "Such as: the surface cleaned, with paint or varnish remover if needed; sanded with medium to fine glasspaper or an electric sander.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 6, contextNote: "A second, different step. Such as: deep marks repaired or lightly planed out; steel wool for a smooth finish; cleaned with white spirit and lightly sanded again.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent good fair)", marks: 4, contextNote: "Quality of the sketch: excellent 4, good 3, fair 2.", permittedMarks: [0,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Restoring a solid oak dining table",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The joint and the finish are open choices; the scheme gives typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q9-original.png",
+          "srcHash": "f43fa687fad3df3115cd74abbbc52404",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 9: the printed question with a sketch of the solid oak dining table.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q9-restore",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q9-restore.png",
+          "srcHash": "7f0d4a30a176808dbad59bce1502f5b7",
+          "alt": "SEC 2012 Ordinary marking scheme notes and sketches on restoring the tabletop.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q9-c", topicId: "cons-10-7", conceptId: "oak-table-restoration-c",
+    section: "B", questionRef: "2012 OL Q9(c)",
+    stem: "The sketch shows a traditional dining table made from solid oak.",
+    questionText: "Recommend a suitable applied finish for the tabletop. Describe, using notes and neat freehand sketches, the steps to be followed when applying the recommended finish.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "finish", kind: "criterion", verbatim: "Name of finish", marks: 4, contextNote: "Such as: varnish; wax; oil or Danish oil; lacquer.", permittedMarks: [0,1,2,3,4] },
+    { id: "detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 6, contextNote: "A step matching the finish. Such as: varnish applied with a good brush, lightly sanded and a second coat applied; oil applied with a lint-free cloth.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 6, contextNote: "A second, different step. Such as: wax applied in very light layers, dried and buffed, layer by layer; lacquer sprayed on for a high quality finish.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent good fair)", marks: 4, contextNote: "Quality of the sketches: excellent 4, good 3, fair 2.", permittedMarks: [0,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Restoring a solid oak dining table",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The joint and the finish are open choices; the scheme gives typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q9-original.png",
+          "srcHash": "f43fa687fad3df3115cd74abbbc52404",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 9: the printed question with a sketch of the solid oak dining table.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q9-finish",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q9-finish.png",
+          "srcHash": "5820985496c18ee702c691d03db2f344",
+          "alt": "SEC 2012 Ordinary marking scheme notes and sketches on varnish, lacquer, wax and oil finishes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2012-ol-q9-complete", topicId: "cons-10-1", conceptId: "oak-table-restoration-complete",
+    section: "B", questionRef: "2012 OL Q9 — complete",
+    stem: "The sketch shows a traditional dining table made from solid oak.",
+    questionText: "(a) Show, using notes and neat freehand sketches, a suitable method of jointing the front rail to the leg and discuss why the method of jointing shown is suitable. (b) It has been decided to restore the tabletop, which has become damaged over time, as shown. Show, using notes and neat freehand sketches, the steps involved in removing the marks and in preparing the tabletop for the application of a new applied finish. (c) Recommend a suitable applied finish for the tabletop. Describe, using notes and neat freehand sketches, the steps to be followed when applying the recommended finish.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-name", kind: "criterion", verbatim: "Name", marks: 4, contextNote: "Such as: a haunched mortise and tenon; a dowel joint.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-suitability", kind: "criterion", verbatim: "Suitability of joint", marks: 4, contextNote: "Such as, the haunched mortise and tenon: the traditional, strong and sturdy joint for quality work, with a high glue area, resisting twisting; dowels are weaker.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent good fair)", marks: 6, contextNote: "Quality of the sketch of the joint: excellent 6, good 4, fair 2.", permittedMarks: [0,2,4,6] },
+    { id: "b-detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 6, contextNote: "Such as: the surface cleaned, with paint or varnish remover if needed; sanded with medium to fine glasspaper or an electric sander.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 6, contextNote: "A second, different step. Such as: deep marks repaired or lightly planed out; steel wool for a smooth finish; cleaned with white spirit and lightly sanded again.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent good fair)", marks: 4, contextNote: "Quality of the sketch: excellent 4, good 3, fair 2.", permittedMarks: [0,2,3,4] },
+    { id: "c-finish", kind: "criterion", verbatim: "Name of finish", marks: 4, contextNote: "Such as: varnish; wax; oil or Danish oil; lacquer.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 6, contextNote: "A step matching the finish. Such as: varnish applied with a good brush, lightly sanded and a second coat applied; oil applied with a lint-free cloth.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 6, contextNote: "A second, different step. Such as: wax applied in very light layers, dried and buffed, layer by layer; lacquer sprayed on for a high quality finish.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent good fair)", marks: 4, contextNote: "Quality of the sketches: excellent 4, good 3, fair 2.", permittedMarks: [0,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-ol-q9-a","label":"a","marks":14,"rowIds":["a-name","a-suitability","a-presentation"]},{"sourceCardId":"cons-2012-ol-q9-b","label":"b","marks":16,"rowIds":["b-detail-1","b-detail-2","b-presentation"]},{"sourceCardId":"cons-2012-ol-q9-c","label":"c","marks":20,"rowIds":["c-finish","c-detail-1","c-detail-2","c-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Restoring a solid oak dining table",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The joint and the finish are open choices; the scheme gives typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q9-original.png",
+          "srcHash": "f43fa687fad3df3115cd74abbbc52404",
+          "alt": "Original SEC 2012 Ordinary Construction Studies Question 9: the printed question with a sketch of the solid oak dining table.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-OL-q9-restore",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q9-restore.png",
+          "srcHash": "7f0d4a30a176808dbad59bce1502f5b7",
+          "alt": "SEC 2012 Ordinary marking scheme notes and sketches on restoring the tabletop.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

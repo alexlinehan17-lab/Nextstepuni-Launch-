@@ -1,24 +1,24 @@
 {
   "subjectId": "construction-studies",
-  "measuredAt": "2026-10-14T14:23:59.258503+00:00",
+  "measuredAt": "2026-10-14T17:01:28.655105+00:00",
   "command": "python3 scripts/markbank/authoring/reconcile.py construction-studies --baseline write",
   "baseline": {
-    "cards": 1100,
-    "contentHash": "289cab90f331fd94",
-    "coveragePct": 86.6,
-    "covered": 732,
+    "cards": 1128,
+    "contentHash": "0dbd4a0f60be0f8a",
+    "coveragePct": 89.0,
+    "covered": 752,
     "excluded": 0,
     "leaves": 845,
-    "open": 113,
+    "open": 93,
     "orphans": 0,
     "papers": {
       "count": 63,
       "hash": "7a382fe186c759ea"
     },
-    "refsHash": "1ed9e323bf270925"
+    "refsHash": "6abb6a109f2f3134"
   },
-  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2012 Higher, 2013 Higher, 2013 Ordinary, 2014 Higher, 2014 Ordinary, 2015 Higher, 2015 Ordinary, 2016 Higher, 2016 Ordinary, 2017 Higher, 2017 Ordinary, 2018 Higher, 2018 Ordinary, 2019 Higher, 2019 Ordinary, 2020 Higher, 2020 Ordinary, 2021 Higher, 2021 Ordinary, 2022 Higher, 2022 Ordinary, 2023 Higher, 2023 Ordinary, 2024 Higher, 2024 Ordinary, 2025 Higher, 2025 Ordinary, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
-  "openTotal": 113,
+  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2012 Higher, 2012 Ordinary, 2013 Higher, 2013 Ordinary, 2014 Higher, 2014 Ordinary, 2015 Higher, 2015 Ordinary, 2016 Higher, 2016 Ordinary, 2017 Higher, 2017 Ordinary, 2018 Higher, 2018 Ordinary, 2019 Higher, 2019 Ordinary, 2020 Higher, 2020 Ordinary, 2021 Higher, 2021 Ordinary, 2022 Higher, 2022 Ordinary, 2023 Higher, 2023 Ordinary, 2024 Higher, 2024 Ordinary, 2025 Higher, 2025 Ordinary, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
+  "openTotal": 93,
   "papers": [
     {
       "year": 2010,
@@ -156,29 +156,8 @@
       "year": 2012,
       "level": "ol",
       "leaves": 20,
-      "covered": 0,
-      "open": [
-        "Q1(a)",
-        "Q1(b)",
-        "Q2(a)",
-        "Q2(b)",
-        "Q3(a)",
-        "Q3(b)",
-        "Q3(c)",
-        "Q4(a)",
-        "Q4(b)",
-        "Q5(a)",
-        "Q5(b)",
-        "Q6(a)",
-        "Q6(b)",
-        "Q7(a)",
-        "Q7(b)",
-        "Q7(c)",
-        "Q8",
-        "Q9(a)",
-        "Q9(b)",
-        "Q9(c)"
-      ]
+      "covered": 20,
+      "open": []
     },
     {
       "year": 2013,
