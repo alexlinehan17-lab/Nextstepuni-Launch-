@@ -17245,4 +17245,1389 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q1-a", topicId: "cons-1-5", conceptId: "wall-first-floor-section-a",
+    section: "B", questionRef: "2014 OL Q1(a)",
+    stem: "The sketch shows a portion of the external wall and the first floor of a two storey dwelling house. The external wall is a 350 mm concrete block wall. The cavity is filled with blown polystyrene beads. The first floor is a floating tongued and grooved hardwood floor, on 20 mm plywood, on 225 mm × 40 mm joists with a plasterboard ceiling beneath.",
+    questionText: "To a scale of 1:5, draw a vertical section through the external wall and the first floor. The section should show the typical construction details from a level 300 mm below the plasterboard ceiling, through the wall, joists and floor, to a level 400 mm above the finished floor. Include four typical dimensions on your drawing. Show 1.0 metre width of floor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 9 of the above details ( 4 marks each)", marks: 36, contextNote: "Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: external render 19 mm; external leaf solid block 100 mm; 150 mm full-fill cavity insulation; cavity ties; internal leaf solid block 100 mm; internal plaster 15 mm; skirting board; floating tongued and grooved hardwood floor; acoustic or adhesive layer for fixing the floor boards; plywood deck 20 mm; adhesive tape to the wall and plywood; floor joists 225 × 40 mm; plasterboard taped to the wall and plaster skim.", permittedMarks: [0,4,8,12,16,20,24,28,32,36] },
+    { id: "dimensions", kind: "criterion", verbatim: "Four typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "External wall and first floor section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the joist bridging detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q1-original.png",
+          "srcHash": "46f33e6cc12ee230f6ee0ca2d31b762a",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 1: the printed question with a cutaway sketch of the cavity wall and the timber first floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q1-scheme.png",
+          "srcHash": "ad4d30383af47d55b37939cc14066352",
+          "alt": "SEC model sections through the cavity wall and first floor joists, minimum standard and best practice with service cavities, with the detail list and joist bridging (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q1-b", topicId: "cons-4-3", conceptId: "wall-first-floor-section-b",
+    section: "B", questionRef: "2014 OL Q1(b)",
+    stem: "The sketch shows a portion of the external wall and the first floor of a two storey dwelling house. The external wall is a 350 mm concrete block wall. The cavity is filled with blown polystyrene beads. The first floor is a floating tongued and grooved hardwood floor, on 20 mm plywood, on 225 mm × 40 mm joists with a plasterboard ceiling beneath.",
+    questionText: "On your drawing show one method to prevent the floor joists from twisting.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "bridging", kind: "criterion", verbatim: "Bridging", marks: 2, contextNote: "Show and identify the bridging, as in the scheme: herringbone bridging, 50 × 40 mm or proprietary metal bridging, or solid bridging, 225 × 40 mm.", permittedMarks: [0,2] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "External wall and first floor section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the joist bridging detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q1-original.png",
+          "srcHash": "46f33e6cc12ee230f6ee0ca2d31b762a",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 1: the printed question with a cutaway sketch of the cavity wall and the timber first floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q1-scheme.png",
+          "srcHash": "ad4d30383af47d55b37939cc14066352",
+          "alt": "SEC model sections through the cavity wall and first floor joists, minimum standard and best practice with service cavities, with the detail list and joist bridging (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q1-complete", topicId: "cons-1-5", conceptId: "wall-first-floor-section-complete",
+    section: "B", questionRef: "2014 OL Q1 — complete",
+    stem: "The sketch shows a portion of the external wall and the first floor of a two storey dwelling house. The external wall is a 350 mm concrete block wall. The cavity is filled with blown polystyrene beads. The first floor is a floating tongued and grooved hardwood floor, on 20 mm plywood, on 225 mm × 40 mm joists with a plasterboard ceiling beneath.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the external wall and the first floor. The section should show the typical construction details from a level 300 mm below the plasterboard ceiling, through the wall, joists and floor, to a level 400 mm above the finished floor. Include four typical dimensions on your drawing. Show 1.0 metre width of floor. (b) On your drawing show one method to prevent the floor joists from twisting.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 9 of the above details ( 4 marks each)", marks: 36, contextNote: "Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: external render 19 mm; external leaf solid block 100 mm; 150 mm full-fill cavity insulation; cavity ties; internal leaf solid block 100 mm; internal plaster 15 mm; skirting board; floating tongued and grooved hardwood floor; acoustic or adhesive layer for fixing the floor boards; plywood deck 20 mm; adhesive tape to the wall and plywood; floor joists 225 × 40 mm; plasterboard taped to the wall and plaster skim.", permittedMarks: [0,4,8,12,16,20,24,28,32,36] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Four typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-bridging", kind: "criterion", verbatim: "Bridging", marks: 2, contextNote: "Show and identify the bridging, as in the scheme: herringbone bridging, 50 × 40 mm or proprietary metal bridging, or solid bridging, 225 × 40 mm.", permittedMarks: [0,2] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.", permittedMarks: [0,4,6,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2014-ol-q1-a","label":"a","marks":40,"rowIds":["a-details","a-dimensions"]},{"sourceCardId":"cons-2014-ol-q1-b","label":"b","marks":10,"rowIds":["b-bridging","b-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "External wall and first floor section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the joist bridging detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q1-original.png",
+          "srcHash": "46f33e6cc12ee230f6ee0ca2d31b762a",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 1: the printed question with a cutaway sketch of the cavity wall and the timber first floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q1-scheme.png",
+          "srcHash": "ad4d30383af47d55b37939cc14066352",
+          "alt": "SEC model sections through the cavity wall and first floor joists, minimum standard and best practice with service cavities, with the detail list and joist bridging (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q2-a", topicId: "cons-6-2", conceptId: "external-wall-insulation-a",
+    section: "B", questionRef: "2014 OL Q2(a)",
+    stem: "The sketch shows a single storey extension to a dwelling house. The external wall of the extension is a single leaf, 215 mm solid concrete block wall. The wall has an external render but it is not insulated. It is proposed to improve the insulation properties of the external wall of the extension by fixing insulation, 200 mm in thickness, to the outside of the wall.",
+    questionText: "Using notes and freehand sketches show one method of fixing the insulation to the solid block wall of the extension. Specify the insulation material to be used.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "description-1", kind: "criterion", verbatim: "Valid description one", marks: 4, contextNote: "Such as: a stainless steel base track fixed to the wall at DPC level carries the first row of boards; the boards are fixed with a special adhesive.", permittedMarks: [0,1,2,3,4] },
+    { id: "description-2", kind: "criterion", verbatim: "Valid description two", marks: 4, contextNote: "A second, different step. Such as: the next rows fixed in a staggered pattern; mechanical fixings, typically seven per square metre, drilled through the insulation into the wall and hammered home.", permittedMarks: [0,1,2,3,4] },
+    { id: "insulation", kind: "criterion", verbatim: "Type of insulation", marks: 4, contextNote: "Such as: polystyrene; mineral fibre board; phenolic foam.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "External insulation to a solid block wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one method\" in (a) is an open choice of method; the scheme gives a typical method."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q2-original.png",
+          "srcHash": "252411bbb2cc3ec100b7888ddc54158b",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 2: the printed question with a sketch of a house with a single storey extension.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q2-fixing",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q2-fixing.png",
+          "srcHash": "d82fca3de589d38d57b5b9df13c9a232",
+          "alt": "SEC 2014 Ordinary marking scheme notes and sketch on fixing external insulation boards to the solid block wall.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q2-b", topicId: "cons-6-2", conceptId: "external-wall-insulation-b",
+    section: "B", questionRef: "2014 OL Q2(b)",
+    stem: "The sketch shows a single storey extension to a dwelling house. The external wall of the extension is a single leaf, 215 mm solid concrete block wall. The wall has an external render but it is not insulated. It is proposed to improve the insulation properties of the external wall of the extension by fixing insulation, 200 mm in thickness, to the outside of the wall.",
+    questionText: "Using notes and freehand sketches show the steps involved in applying a reinforced mesh and an external surface finish to the insulation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "step-1", kind: "criterion", verbatim: "Valid step one", marks: 4, contextNote: "Such as: the indent at each fixing filled with base coat; a base coat of acrylic plaster applied to the insulation.", permittedMarks: [0,1,2,3,4] },
+    { id: "step-2", kind: "criterion", verbatim: "Valid step two", marks: 4, contextNote: "A second, different step. Such as: the reinforcing mesh pressed into the wet base coat, and around the openings; a further base coat or primer before the finish.", permittedMarks: [0,1,2,3,4] },
+    { id: "finish", kind: "criterion", verbatim: "Valid finish", marks: 4, contextNote: "Such as: a final acrylic finish applied with a steel trowel over a complete area, without breaks; a proprietary finish in a range of colours.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "External insulation to a solid block wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one method\" in (a) is an open choice of method; the scheme gives a typical method."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q2-original.png",
+          "srcHash": "252411bbb2cc3ec100b7888ddc54158b",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 2: the printed question with a sketch of a house with a single storey extension.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q2-finish",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q2-finish.png",
+          "srcHash": "752dfafb5e72cdb3b55740b628822644",
+          "alt": "SEC 2014 Ordinary marking scheme notes and sketch on applying the base coat, reinforcing mesh and acrylic finish to the insulation.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q2-c", topicId: "cons-6-3", conceptId: "external-wall-insulation-c",
+    section: "B", questionRef: "2014 OL Q2(c)",
+    stem: "The sketch shows a single storey extension to a dwelling house. The external wall of the extension is a single leaf, 215 mm solid concrete block wall. The wall has an external render but it is not insulated. It is proposed to improve the insulation properties of the external wall of the extension by fixing insulation, 200 mm in thickness, to the outside of the wall.",
+    questionText: "List two advantages of improving the insulation properties of the external wall of the extension.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 5, contextNote: "Such as: less heat loss; lower energy bills; lower CO₂ emissions.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 5, contextNote: "A second, different advantage. Such as: a better U-value and BER; a warmer house; no loss of internal floor area; the household is not disturbed, as the work is outside.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "External insulation to a solid block wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one method\" in (a) is an open choice of method; the scheme gives a typical method."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q2-original.png",
+          "srcHash": "252411bbb2cc3ec100b7888ddc54158b",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 2: the printed question with a sketch of a house with a single storey extension.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q2-advantages",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q2-advantages.png",
+          "srcHash": "de903778105e883bfec3c05f020a7ead",
+          "alt": "SEC 2014 Ordinary marking scheme notes on the advantages of insulating the external walls.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q2-complete", topicId: "cons-6-2", conceptId: "external-wall-insulation-complete",
+    section: "B", questionRef: "2014 OL Q2 — complete",
+    stem: "The sketch shows a single storey extension to a dwelling house. The external wall of the extension is a single leaf, 215 mm solid concrete block wall. The wall has an external render but it is not insulated. It is proposed to improve the insulation properties of the external wall of the extension by fixing insulation, 200 mm in thickness, to the outside of the wall.",
+    questionText: "(a) Using notes and freehand sketches show one method of fixing the insulation to the solid block wall of the extension. Specify the insulation material to be used. (b) Using notes and freehand sketches show the steps involved in applying a reinforced mesh and an external surface finish to the insulation. (c) List two advantages of improving the insulation properties of the external wall of the extension.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-description-1", kind: "criterion", verbatim: "Valid description one", marks: 4, contextNote: "Such as: a stainless steel base track fixed to the wall at DPC level carries the first row of boards; the boards are fixed with a special adhesive.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-description-2", kind: "criterion", verbatim: "Valid description two", marks: 4, contextNote: "A second, different step. Such as: the next rows fixed in a staggered pattern; mechanical fixings, typically seven per square metre, drilled through the insulation into the wall and hammered home.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-insulation", kind: "criterion", verbatim: "Type of insulation", marks: 4, contextNote: "Such as: polystyrene; mineral fibre board; phenolic foam.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-step-1", kind: "criterion", verbatim: "Valid step one", marks: 4, contextNote: "Such as: the indent at each fixing filled with base coat; a base coat of acrylic plaster applied to the insulation.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-step-2", kind: "criterion", verbatim: "Valid step two", marks: 4, contextNote: "A second, different step. Such as: the reinforcing mesh pressed into the wet base coat, and around the openings; a further base coat or primer before the finish.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-finish", kind: "criterion", verbatim: "Valid finish", marks: 4, contextNote: "Such as: a final acrylic finish applied with a steel trowel over a complete area, without breaks; a proprietary finish in a range of colours.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 5, contextNote: "Such as: less heat loss; lower energy bills; lower CO₂ emissions.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 5, contextNote: "A second, different advantage. Such as: a better U-value and BER; a warmer house; no loss of internal floor area; the household is not disturbed, as the work is outside.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2014-ol-q2-a","label":"a","marks":20,"rowIds":["a-description-1","a-description-2","a-insulation","a-presentation"]},{"sourceCardId":"cons-2014-ol-q2-b","label":"b","marks":20,"rowIds":["b-step-1","b-step-2","b-finish","b-presentation"]},{"sourceCardId":"cons-2014-ol-q2-c","label":"c","marks":10,"rowIds":["c-advantage-1","c-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "External insulation to a solid block wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one method\" in (a) is an open choice of method; the scheme gives a typical method."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q2-original.png",
+          "srcHash": "252411bbb2cc3ec100b7888ddc54158b",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 2: the printed question with a sketch of a house with a single storey extension.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q2-fixing",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q2-fixing.png",
+          "srcHash": "d82fca3de589d38d57b5b9df13c9a232",
+          "alt": "SEC 2014 Ordinary marking scheme notes and sketch on fixing external insulation boards to the solid block wall.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q3-a", topicId: "cons-5-2", conceptId: "stove-back-boiler-hot-water-a",
+    section: "B", questionRef: "2014 OL Q3(a)",
+    questionText: "A modern wood burning stove, as shown in the sketch, is fitted with a back boiler. The back boiler is connected to an indirect cylinder to provide hot water for a dwelling house. Using a single-line labelled diagram, show the pipework necessary to supply hot water to the kitchen sink. Include the following on your diagram: water storage tank and overflow pipe; rising main; stove and back boiler; hot water cylinder and pipework; location of all necessary valves. On your diagram, show the insulation to the water storage tank and to all the pipework.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 44,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 9 of the above details (4 marks each)", marks: 36, contextNote: "Credit the best NINE acceptable details at 4 marks each, capped at 36. Secondary circulation: rising main; cold water storage tank and ball valve; overflow; cold feed from storage to the indirect cylinder; indirect hot water cylinder; expansion pipe from the cylinder; supply to the sink. Primary circulation: supply to the expansion tank; expansion tank and ball valve; overflow; cold water feed and primary return; wood burning stove and back boiler; expansion pipe and primary flow; valves; insulation to the storage tank and pipework; labelling.", permittedMarks: [0,4,8,12,16,20,24,28,32,36] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Stove and back boiler hot water to the sink",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-nine list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q3-original.png",
+          "srcHash": "5d844ad02208bfd38fda0975be0fed31",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 3: the printed question with a sketch of a modern wood burning stove.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q3-system.png",
+          "srcHash": "b7a45c0f7024ef721815db72d0adc7f3",
+          "alt": "SEC single-line diagram of the hot water supply to the sink from a wood burning stove and indirect cylinder, with the secondary and primary circulation lists.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q3-b", topicId: "cons-6-4", conceptId: "stove-back-boiler-hot-water-b",
+    section: "B", questionRef: "2014 OL Q3(b)",
+    questionText: "Discuss two advantages of adding a solar panel to supply hot water to a dwelling house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 3, contextNote: "Such as: lower costs of heating water; free solar energy once the panels are bought and installed.", permittedMarks: [0,1,2,3] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 3, contextNote: "A second, different advantage. Such as: environmentally friendly and sustainable; less use of the boiler, as the water is not heated from cold; usable in remote areas off the grid.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Stove and back boiler hot water to the sink",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-nine list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q3-original.png",
+          "srcHash": "5d844ad02208bfd38fda0975be0fed31",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 3: the printed question with a sketch of a modern wood burning stove.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q3-solar",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q3-solar.png",
+          "srcHash": "96e51142d0e5110aaac6e232116aa0b4",
+          "alt": "SEC 2014 Ordinary marking scheme notes on the advantages of a solar panel for domestic hot water.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q3-complete", topicId: "cons-5-2", conceptId: "stove-back-boiler-hot-water-complete",
+    section: "B", questionRef: "2014 OL Q3 — complete",
+    questionText: "(a) A modern wood burning stove, as shown in the sketch, is fitted with a back boiler. The back boiler is connected to an indirect cylinder to provide hot water for a dwelling house. Using a single-line labelled diagram, show the pipework necessary to supply hot water to the kitchen sink. Include the following on your diagram: water storage tank and overflow pipe; rising main; stove and back boiler; hot water cylinder and pipework; location of all necessary valves. On your diagram, show the insulation to the water storage tank and to all the pipework. (b) Discuss two advantages of adding a solar panel to supply hot water to a dwelling house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 9 of the above details (4 marks each)", marks: 36, contextNote: "Credit the best NINE acceptable details at 4 marks each, capped at 36. Secondary circulation: rising main; cold water storage tank and ball valve; overflow; cold feed from storage to the indirect cylinder; indirect hot water cylinder; expansion pipe from the cylinder; supply to the sink. Primary circulation: supply to the expansion tank; expansion tank and ball valve; overflow; cold water feed and primary return; wood burning stove and back boiler; expansion pipe and primary flow; valves; insulation to the storage tank and pipework; labelling.", permittedMarks: [0,4,8,12,16,20,24,28,32,36] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 3, contextNote: "Such as: lower costs of heating water; free solar energy once the panels are bought and installed.", permittedMarks: [0,1,2,3] },
+    { id: "b-advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 3, contextNote: "A second, different advantage. Such as: environmentally friendly and sustainable; less use of the boiler, as the water is not heated from cold; usable in remote areas off the grid.", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2014-ol-q3-a","label":"a","marks":44,"rowIds":["a-details","a-presentation"]},{"sourceCardId":"cons-2014-ol-q3-b","label":"b","marks":6,"rowIds":["b-advantage-1","b-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Stove and back boiler hot water to the sink",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-nine list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q3-original.png",
+          "srcHash": "5d844ad02208bfd38fda0975be0fed31",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 3: the printed question with a sketch of a modern wood burning stove.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q3-system.png",
+          "srcHash": "b7a45c0f7024ef721815db72d0adc7f3",
+          "alt": "SEC single-line diagram of the hot water supply to the sink from a wood burning stove and indirect cylinder, with the secondary and primary circulation lists.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q4-a", topicId: "cons-4-5", conceptId: "stud-partition-skim-a",
+    section: "B", questionRef: "2014 OL Q4(a)",
+    stem: "A non load-bearing timber stud partition, with plasterboard on both sides, separates a kitchen and living room, as shown in the sketch.",
+    questionText: "Using notes and freehand sketches show the typical construction details of the timber stud partition. Name the main components and give their typical dimensions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "detail-1", kind: "criterion", verbatim: "Valid construction detail one", marks: 4, contextNote: "Such as: a sole piece or base plate, 75 × 50 or 100 × 50 mm.", permittedMarks: [0,1,2,3,4] },
+    { id: "detail-2", kind: "criterion", verbatim: "Valid construction detail two", marks: 4, contextNote: "A second, different detail. Such as: studs at 400 mm centres; noggings or bridging for stability; a head plate.", permittedMarks: [0,1,2,3,4] },
+    { id: "detail-3", kind: "criterion", verbatim: "Valid construction detail three", marks: 4, contextNote: "A third, different detail. Such as: a fixing piece for electrical services; insulation between the studs; plasterboard 2400 × 1200 × 12.5 mm fixed with zinc-coated nails or screws, and a plaster skim.", permittedMarks: [0,1,2,3,4] },
+    { id: "dimensions", kind: "criterion", verbatim: "Typical dimensions", marks: 4, contextNote: "Typical dimensions for the named components, as in the scheme’s list.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Timber stud partition, socket and skim finish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one method\" in (b) is an open choice of method; the scheme gives two typical methods."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q4-original.png",
+          "srcHash": "f2d4865355d4258b848faebe49b43268",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 4: the printed question with a sketch of the stud partition between the kitchen and living room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q4-partition",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q4-partition.png",
+          "srcHash": "2a6880e71fe46dbe710c8dbbbf0eec44",
+          "alt": "SEC 2014 Ordinary marking scheme notes and sketch of the timber stud partition with typical sizes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q4-b", topicId: "cons-5-8", conceptId: "stud-partition-skim-b",
+    section: "B", questionRef: "2014 OL Q4(b)",
+    stem: "A non load-bearing timber stud partition, with plasterboard on both sides, separates a kitchen and living room, as shown in the sketch.",
+    questionText: "Show one method of fixing a double electrical socket in the stud partition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "detail", kind: "criterion", verbatim: "Valid detail", marks: 6, contextNote: "Such as: a metal socket box fixed to a batten set back between the studs so the box is flush with the studs, the plasterboard marked and cut out with a pad saw; or a dry lining back box fitted to a cut-out in the plasterboard, its side clips gripping the board as the screws are tightened.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Timber stud partition, socket and skim finish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one method\" in (b) is an open choice of method; the scheme gives two typical methods."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q4-original.png",
+          "srcHash": "f2d4865355d4258b848faebe49b43268",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 4: the printed question with a sketch of the stud partition between the kitchen and living room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q4-socket",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q4-socket.png",
+          "srcHash": "aa8d3f9ffc8e85dc732e429d4b79e79b",
+          "alt": "SEC 2014 Ordinary marking scheme notes and sketches on fixing a metal socket box or a dry lining back box in the partition.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q4-c", topicId: "cons-4-1", conceptId: "stud-partition-skim-c",
+    section: "B", questionRef: "2014 OL Q4(c)",
+    stem: "A non load-bearing timber stud partition, with plasterboard on both sides, separates a kitchen and living room, as shown in the sketch.",
+    questionText: "Using notes and freehand sketches, show the steps involved in applying a plaster skim finish to one side of the stud partition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 4, contextNote: "Such as: sheeting over the floor; the joints taped and the partition sealed to the walls and ceiling; plaster added to water in a clean bucket and mixed free of lumps.", permittedMarks: [0,1,2,3,4] },
+    { id: "detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 4, contextNote: "A second, different step. Such as: the plaster spread from the hawk with a trowel in smooth strokes, 1 to 2 mm thick, and levelled while soft; a second coat.", permittedMarks: [0,1,2,3,4] },
+    { id: "detail-3", kind: "criterion", verbatim: "Valid detail three", marks: 4, contextNote: "A third, different step. Such as: left until firm, then polished with a wet trowel in sweeping strokes for a fine finish; the tools washed at once.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent good fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Timber stud partition, socket and skim finish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one method\" in (b) is an open choice of method; the scheme gives two typical methods."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q4-original.png",
+          "srcHash": "f2d4865355d4258b848faebe49b43268",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 4: the printed question with a sketch of the stud partition between the kitchen and living room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q4-skim",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q4-skim.png",
+          "srcHash": "ec9f93520e4d31a632c40cfee549549c",
+          "alt": "SEC 2014 Ordinary marking scheme notes and sketches on the steps of applying a plaster skim finish (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q4-complete", topicId: "cons-4-5", conceptId: "stud-partition-skim-complete",
+    section: "B", questionRef: "2014 OL Q4 — complete",
+    stem: "A non load-bearing timber stud partition, with plasterboard on both sides, separates a kitchen and living room, as shown in the sketch.",
+    questionText: "(a) Using notes and freehand sketches show the typical construction details of the timber stud partition. Name the main components and give their typical dimensions. (b) Show one method of fixing a double electrical socket in the stud partition. (c) Using notes and freehand sketches, show the steps involved in applying a plaster skim finish to one side of the stud partition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-detail-1", kind: "criterion", verbatim: "Valid construction detail one", marks: 4, contextNote: "Such as: a sole piece or base plate, 75 × 50 or 100 × 50 mm.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-detail-2", kind: "criterion", verbatim: "Valid construction detail two", marks: 4, contextNote: "A second, different detail. Such as: studs at 400 mm centres; noggings or bridging for stability; a head plate.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-detail-3", kind: "criterion", verbatim: "Valid construction detail three", marks: 4, contextNote: "A third, different detail. Such as: a fixing piece for electrical services; insulation between the studs; plasterboard 2400 × 1200 × 12.5 mm fixed with zinc-coated nails or screws, and a plaster skim.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Typical dimensions", marks: 4, contextNote: "Typical dimensions for the named components, as in the scheme’s list.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-detail", kind: "criterion", verbatim: "Valid detail", marks: 6, contextNote: "Such as: a metal socket box fixed to a batten set back between the studs so the box is flush with the studs, the plasterboard marked and cut out with a pad saw; or a dry lining back box fitted to a cut-out in the plasterboard, its side clips gripping the board as the screws are tightened.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 4, contextNote: "Such as: sheeting over the floor; the joints taped and the partition sealed to the walls and ceiling; plaster added to water in a clean bucket and mixed free of lumps.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 4, contextNote: "A second, different step. Such as: the plaster spread from the hawk with a trowel in smooth strokes, 1 to 2 mm thick, and levelled while soft; a second coat.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-detail-3", kind: "criterion", verbatim: "Valid detail three", marks: 4, contextNote: "A third, different step. Such as: left until firm, then polished with a wet trowel in sweeping strokes for a fine finish; the tools washed at once.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent good fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2014-ol-q4-a","label":"a","marks":24,"rowIds":["a-detail-1","a-detail-2","a-detail-3","a-dimensions","a-presentation"]},{"sourceCardId":"cons-2014-ol-q4-b","label":"b","marks":6,"rowIds":["b-detail"]},{"sourceCardId":"cons-2014-ol-q4-c","label":"c","marks":20,"rowIds":["c-detail-1","c-detail-2","c-detail-3","c-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Timber stud partition, socket and skim finish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one method\" in (b) is an open choice of method; the scheme gives two typical methods."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q4-original.png",
+          "srcHash": "f2d4865355d4258b848faebe49b43268",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 4: the printed question with a sketch of the stud partition between the kitchen and living room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q4-partition",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q4-partition.png",
+          "srcHash": "2a6880e71fe46dbe710c8dbbbf0eec44",
+          "alt": "SEC 2014 Ordinary marking scheme notes and sketch of the timber stud partition with typical sizes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q5-a", topicId: "cons-1-5", conceptId: "cut-roof-ridge-section-a",
+    section: "B", questionRef: "2014 OL Q5(a)",
+    stem: "A dwelling house has a traditional cut roof pitched at 45°, as shown in the sketch. The roof is covered with concrete tiles, which are supported on 200 mm × 50 mm rafters.",
+    questionText: "To a scale of 1:5, draw a vertical section through the portion of the roof at the ridge. Show the typical construction details from the top of the ridge to a level 150 mm below the collar ties. Include the ridge tile and three courses of tiles at the ridge. Label the roof components and include three typical dimensions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 39,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 6 of the above details (6 marks each)", marks: 36, contextNote: "Credit the best SIX acceptable details at 6 marks each, capped at 36. Marked details: ridge tile; ridge vent; ridge board 300 × 32 mm; tiles; battens 50 × 30 mm; vapour barrier or vapour diffusion membrane; rafters 200 × 50 mm; collar tie 150–200 × 50 mm; insulation; plasterboard; labelling.", permittedMarks: [0,6,12,18,24,30,36] },
+    { id: "dimensions", kind: "criterion", verbatim: "Three typical dimensions", marks: 3, contextNote: "Three appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Cut roof section at the ridge",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the ventilation detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q5-original.png",
+          "srcHash": "ac9e7c16b9324e3f196205a2558ebec7",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 5: the printed question with a sketch of the tiled cut roof at the ridge.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q5-scheme.png",
+          "srcHash": "ffcb437fa4834c7cdc229b5b19c56ea6",
+          "alt": "SEC model sections through the cut roof at the ridge, typical and best practice, with the specification list (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q5-b", topicId: "cons-3-9", conceptId: "cut-roof-ridge-section-b",
+    section: "B", questionRef: "2014 OL Q5(b)",
+    stem: "A dwelling house has a traditional cut roof pitched at 45°, as shown in the sketch. The roof is covered with concrete tiles, which are supported on 200 mm × 50 mm rafters.",
+    questionText: "On your drawing, show one method of ventilating the roof structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 11,
+    rows: [
+    { id: "ventilation", kind: "criterion", verbatim: "Valid design detail", marks: 3, contextNote: "Such as: ridge vents fitted on the ridge; vent tiles fitted near the ridge.", permittedMarks: [0,1,2,3] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Cut roof section at the ridge",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the ventilation detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q5-original.png",
+          "srcHash": "ac9e7c16b9324e3f196205a2558ebec7",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 5: the printed question with a sketch of the tiled cut roof at the ridge.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q5-vent",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q5-vent.png",
+          "srcHash": "83bd26cab9aabd45b493019ebc1f8eae",
+          "alt": "SEC 2014 Ordinary marking scheme notes on ventilating the roof with ridge vents or vent tiles.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q5-complete", topicId: "cons-1-5", conceptId: "cut-roof-ridge-section-complete",
+    section: "B", questionRef: "2014 OL Q5 — complete",
+    stem: "A dwelling house has a traditional cut roof pitched at 45°, as shown in the sketch. The roof is covered with concrete tiles, which are supported on 200 mm × 50 mm rafters.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the portion of the roof at the ridge. Show the typical construction details from the top of the ridge to a level 150 mm below the collar ties. Include the ridge tile and three courses of tiles at the ridge. Label the roof components and include three typical dimensions. (b) On your drawing, show one method of ventilating the roof structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 6 of the above details (6 marks each)", marks: 36, contextNote: "Credit the best SIX acceptable details at 6 marks each, capped at 36. Marked details: ridge tile; ridge vent; ridge board 300 × 32 mm; tiles; battens 50 × 30 mm; vapour barrier or vapour diffusion membrane; rafters 200 × 50 mm; collar tie 150–200 × 50 mm; insulation; plasterboard; labelling.", permittedMarks: [0,6,12,18,24,30,36] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Three typical dimensions", marks: 3, contextNote: "Three appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3] },
+    { id: "b-ventilation", kind: "criterion", verbatim: "Valid design detail", marks: 3, contextNote: "Such as: ridge vents fitted on the ridge; vent tiles fitted near the ridge.", permittedMarks: [0,1,2,3] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.", permittedMarks: [0,4,6,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2014-ol-q5-a","label":"a","marks":39,"rowIds":["a-details","a-dimensions"]},{"sourceCardId":"cons-2014-ol-q5-b","label":"b","marks":11,"rowIds":["b-ventilation","b-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Cut roof section at the ridge",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the ventilation detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q5-original.png",
+          "srcHash": "ac9e7c16b9324e3f196205a2558ebec7",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 5: the printed question with a sketch of the tiled cut roof at the ridge.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q5-scheme.png",
+          "srcHash": "ffcb437fa4834c7cdc229b5b19c56ea6",
+          "alt": "SEC model sections through the cut roof at the ridge, typical and best practice, with the specification list (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q6-a", topicId: "cons-1-8", conceptId: "site-ppe-a",
+    section: "B", questionRef: "2014 OL Q6(a)",
+    questionText: "For each of the following, draw the particular safety sign to indicate that the following personal protective equipment (ppe) must be worn on a construction site: safety helmet; high visibility vest; safety boots.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "helmet", kind: "criterion", verbatim: "Safety helmet Quality of sketch (excellent good fair)", marks: 8, contextNote: "The mandatory blue sign for the safety helmet, as in the scheme: quality of the sketch, excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "vest", kind: "criterion", verbatim: "High visibility vest Quality of sketch (excellent good fair)", marks: 8, contextNote: "The mandatory blue sign for the high visibility vest, as in the scheme: quality of the sketch, excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "boots", kind: "criterion", verbatim: "Safety boots Quality of sketch (excellent good fair)", marks: 8, contextNote: "The mandatory blue sign for the safety boots, as in the scheme: quality of the sketch, excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Personal protective equipment on site",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketches retained. All three printed signs in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q6-original.png",
+          "srcHash": "38cf0e82c92df0c6ff945378d170bab3",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 6: the printed question with a sketch of a site office in front of houses under construction.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q6-signs",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q6-signs.png",
+          "srcHash": "82998c2924cacd74a289508aa1e53197",
+          "alt": "SEC safety signs for a safety helmet, a high visibility vest and safety boots.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q6-b", topicId: "cons-1-8", conceptId: "site-ppe-b",
+    section: "B", questionRef: "2014 OL Q6(b)",
+    questionText: "State one reason why each item of personal protective equipment listed at 6(a) above must be worn on a building site.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "helmet", kind: "criterion", verbatim: "Safety helmet", marks: 4, contextNote: "Such as: it protects the head from falling objects, or from striking a solid object; mandatory for workers and visitors.", permittedMarks: [0,1,2,3,4] },
+    { id: "vest", kind: "criterion", verbatim: "High visibility vest", marks: 4, contextNote: "Such as: workers are clearly visible on site, especially to machinery operators; mandatory for workers and visitors.", permittedMarks: [0,1,2,3,4] },
+    { id: "boots", kind: "criterion", verbatim: "Safety boots", marks: 4, contextNote: "Such as: the steel cap protects the feet from falling objects; mandatory for workers and visitors.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Personal protective equipment on site",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketches retained. All three printed signs in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q6-original.png",
+          "srcHash": "38cf0e82c92df0c6ff945378d170bab3",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 6: the printed question with a sketch of a site office in front of houses under construction.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q6-reasons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q6-reasons.png",
+          "srcHash": "cdbd8ecb0ff89b3b32dfcc8741313165",
+          "alt": "SEC 2014 Ordinary marking scheme notes on why a safety helmet, a high visibility vest and safety boots must be worn (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q6-c", topicId: "cons-1-8", conceptId: "site-ppe-c",
+    section: "B", questionRef: "2014 OL Q6(c)",
+    questionText: "Discuss two reasons why visitors must report to the site office on entering a construction site.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "reason-1", kind: "criterion", verbatim: "Valid reason one", marks: 7, contextNote: "Such as: management must know who is on site at any one time, in case of an accident; arrival and departure must be recorded.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    { id: "reason-2", kind: "criterion", verbatim: "Valid reason two", marks: 7, contextNote: "A second, different reason. Such as: visitors collect a vest, helmet and boots and are told the safety requirements; a guide takes them round, as parts of the site may be closed to them.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Personal protective equipment on site",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketches retained. All three printed signs in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q6-original.png",
+          "srcHash": "38cf0e82c92df0c6ff945378d170bab3",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 6: the printed question with a sketch of a site office in front of houses under construction.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q6-visitors",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q6-visitors.png",
+          "srcHash": "5f5e455f18f57f9d5da93c98da58642f",
+          "alt": "SEC 2014 Ordinary marking scheme notes on why visitors must report to the site office.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q6-complete", topicId: "cons-1-8", conceptId: "site-ppe-complete",
+    section: "B", questionRef: "2014 OL Q6 — complete",
+    questionText: "(a) For each of the following, draw the particular safety sign to indicate that the following personal protective equipment (ppe) must be worn on a construction site: safety helmet; high visibility vest; safety boots. (b) State one reason why each item of personal protective equipment listed at 6(a) above must be worn on a building site. (c) Discuss two reasons why visitors must report to the site office on entering a construction site.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-helmet", kind: "criterion", verbatim: "Safety helmet Quality of sketch (excellent good fair)", marks: 8, contextNote: "The mandatory blue sign for the safety helmet, as in the scheme: quality of the sketch, excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "a-vest", kind: "criterion", verbatim: "High visibility vest Quality of sketch (excellent good fair)", marks: 8, contextNote: "The mandatory blue sign for the high visibility vest, as in the scheme: quality of the sketch, excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "a-boots", kind: "criterion", verbatim: "Safety boots Quality of sketch (excellent good fair)", marks: 8, contextNote: "The mandatory blue sign for the safety boots, as in the scheme: quality of the sketch, excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-helmet", kind: "criterion", verbatim: "Safety helmet", marks: 4, contextNote: "Such as: it protects the head from falling objects, or from striking a solid object; mandatory for workers and visitors.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-vest", kind: "criterion", verbatim: "High visibility vest", marks: 4, contextNote: "Such as: workers are clearly visible on site, especially to machinery operators; mandatory for workers and visitors.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-boots", kind: "criterion", verbatim: "Safety boots", marks: 4, contextNote: "Such as: the steel cap protects the feet from falling objects; mandatory for workers and visitors.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-reason-1", kind: "criterion", verbatim: "Valid reason one", marks: 7, contextNote: "Such as: management must know who is on site at any one time, in case of an accident; arrival and departure must be recorded.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    { id: "c-reason-2", kind: "criterion", verbatim: "Valid reason two", marks: 7, contextNote: "A second, different reason. Such as: visitors collect a vest, helmet and boots and are told the safety requirements; a guide takes them round, as parts of the site may be closed to them.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2014-ol-q6-a","label":"a","marks":24,"rowIds":["a-helmet","a-vest","a-boots"]},{"sourceCardId":"cons-2014-ol-q6-b","label":"b","marks":12,"rowIds":["b-helmet","b-vest","b-boots"]},{"sourceCardId":"cons-2014-ol-q6-c","label":"c","marks":14,"rowIds":["c-reason-1","c-reason-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Personal protective equipment on site",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketches retained. All three printed signs in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q6-original.png",
+          "srcHash": "38cf0e82c92df0c6ff945378d170bab3",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 6: the printed question with a sketch of a site office in front of houses under construction.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q6-signs",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q6-signs.png",
+          "srcHash": "82998c2924cacd74a289508aa1e53197",
+          "alt": "SEC safety signs for a safety helmet, a high visibility vest and safety boots.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q7-a", topicId: "cons-5-4", conceptId: "rainwater-harvesting-a",
+    section: "B", questionRef: "2014 OL Q7(a)",
+    stem: "A two-storey house with a slated roof is shown in the sketch. It has been decided to collect and store the rainwater from the roof for reuse.",
+    questionText: "Using notes and freehand sketches, show how the rainwater could be collected from the roof and stored for reuse.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 26,
+    rows: [
+    { id: "detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 6, contextNote: "Such as: rainwater from the roof flows into the gutter and down the downpipe to a gully, or is diverted into a water butt.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 6, contextNote: "A second, different detail. Such as: a filter between the gully and the underground storage tank traps sediment and is accessible for cleaning; the butt has a tap near the bottom and sits on a stand.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "detail-3", kind: "criterion", verbatim: "Valid detail three", marks: 6, contextNote: "A third, different detail. Such as: a submersible pump lifts the water to the attic tank under a control unit, topped up from the mains when rainwater is low; the stored water is reused as grey water only.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent good fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Rainwater harvesting and water meters",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The collection method is an open response; the scheme gives an underground tank and a water butt."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q7-original.png",
+          "srcHash": "445eb7b32450bcad0cda330bb8975c69",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 7: the printed question with a sketch of a two-storey house with a slated roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q7-collection",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q7-collection.png",
+          "srcHash": "ce271e1c4aeb97f9a69a99c6d6d59d7c",
+          "alt": "SEC 2014 Ordinary marking scheme notes and sketches on collecting rainwater in an underground storage tank or a water butt (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q7-b", topicId: "cons-1-2", conceptId: "rainwater-harvesting-b",
+    section: "B", questionRef: "2014 OL Q7(b)",
+    stem: "A two-storey house with a slated roof is shown in the sketch. It has been decided to collect and store the rainwater from the roof for reuse.",
+    questionText: "List two advantages of storing rainwater and suggest two suitable uses for the stored rainwater.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 4, contextNote: "Such as: lower water bills where meters are installed; free of many chemicals in ground water; an independent supply.", permittedMarks: [0,1,2,3,4] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 4, contextNote: "A second, different advantage. Such as: supplements the mains; water in a drought; large stores reduce flooding; less demand on wells.", permittedMarks: [0,1,2,3,4] },
+    { id: "use-1", kind: "criterion", verbatim: "Suitable use one", marks: 4, contextNote: "Such as: flushing toilets; washing clothes or cars.", permittedMarks: [0,1,2,3,4] },
+    { id: "use-2", kind: "criterion", verbatim: "Suitable use two", marks: 4, contextNote: "A second, different use. Such as: the garden; agriculture and livestock; irrigation; any use where non-drinking water is suitable.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Rainwater harvesting and water meters",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The collection method is an open response; the scheme gives an underground tank and a water butt."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q7-original.png",
+          "srcHash": "445eb7b32450bcad0cda330bb8975c69",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 7: the printed question with a sketch of a two-storey house with a slated roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q7-uses",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q7-uses.png",
+          "srcHash": "fa40e9b2e36f3fca54be9228bf7a042e",
+          "alt": "SEC 2014 Ordinary marking scheme notes on the advantages of storing rainwater and its uses.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q7-c", topicId: "cons-5-1", conceptId: "rainwater-harvesting-c",
+    section: "B", questionRef: "2014 OL Q7(c)",
+    stem: "A two-storey house with a slated roof is shown in the sketch. It has been decided to collect and store the rainwater from the roof for reuse.",
+    questionText: "Discuss one advantage and one disadvantage of fitting a water meter to the mains water supply of a dwelling house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "advantage", kind: "criterion", verbatim: "One advantage", marks: 4, contextNote: "Such as: encourages users to conserve water and fit water-saving devices; helps detect leaks; people pay for exactly what they use.", permittedMarks: [0,1,2,3,4] },
+    { id: "disadvantage", kind: "criterion", verbatim: "One disadvantage", marks: 4, contextNote: "Such as: paying for water that was once free; meters need maintenance; the cost of buying and installing them; difficult or unfair in apartment blocks.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Rainwater harvesting and water meters",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The collection method is an open response; the scheme gives an underground tank and a water butt."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q7-original.png",
+          "srcHash": "445eb7b32450bcad0cda330bb8975c69",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 7: the printed question with a sketch of a two-storey house with a slated roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q7-meter",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q7-meter.png",
+          "srcHash": "d5e309853dc0bf1551b91749b3534ca7",
+          "alt": "SEC 2014 Ordinary marking scheme notes on an advantage and a disadvantage of a water meter.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q7-complete", topicId: "cons-5-4", conceptId: "rainwater-harvesting-complete",
+    section: "B", questionRef: "2014 OL Q7 — complete",
+    stem: "A two-storey house with a slated roof is shown in the sketch. It has been decided to collect and store the rainwater from the roof for reuse.",
+    questionText: "(a) Using notes and freehand sketches, show how the rainwater could be collected from the roof and stored for reuse. (b) List two advantages of storing rainwater and suggest two suitable uses for the stored rainwater. (c) Discuss one advantage and one disadvantage of fitting a water meter to the mains water supply of a dwelling house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 6, contextNote: "Such as: rainwater from the roof flows into the gutter and down the downpipe to a gully, or is diverted into a water butt.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 6, contextNote: "A second, different detail. Such as: a filter between the gully and the underground storage tank traps sediment and is accessible for cleaning; the butt has a tap near the bottom and sits on a stand.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-detail-3", kind: "criterion", verbatim: "Valid detail three", marks: 6, contextNote: "A third, different detail. Such as: a submersible pump lifts the water to the attic tank under a control unit, topped up from the mains when rainwater is low; the stored water is reused as grey water only.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent good fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 4, contextNote: "Such as: lower water bills where meters are installed; free of many chemicals in ground water; an independent supply.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 4, contextNote: "A second, different advantage. Such as: supplements the mains; water in a drought; large stores reduce flooding; less demand on wells.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-use-1", kind: "criterion", verbatim: "Suitable use one", marks: 4, contextNote: "Such as: flushing toilets; washing clothes or cars.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-use-2", kind: "criterion", verbatim: "Suitable use two", marks: 4, contextNote: "A second, different use. Such as: the garden; agriculture and livestock; irrigation; any use where non-drinking water is suitable.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-advantage", kind: "criterion", verbatim: "One advantage", marks: 4, contextNote: "Such as: encourages users to conserve water and fit water-saving devices; helps detect leaks; people pay for exactly what they use.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-disadvantage", kind: "criterion", verbatim: "One disadvantage", marks: 4, contextNote: "Such as: paying for water that was once free; meters need maintenance; the cost of buying and installing them; difficult or unfair in apartment blocks.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2014-ol-q7-a","label":"a","marks":26,"rowIds":["a-detail-1","a-detail-2","a-detail-3","a-presentation"]},{"sourceCardId":"cons-2014-ol-q7-b","label":"b","marks":16,"rowIds":["b-advantage-1","b-advantage-2","b-use-1","b-use-2"]},{"sourceCardId":"cons-2014-ol-q7-c","label":"c","marks":8,"rowIds":["c-advantage","c-disadvantage"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Rainwater harvesting and water meters",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The collection method is an open response; the scheme gives an underground tank and a water butt."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q7-original.png",
+          "srcHash": "445eb7b32450bcad0cda330bb8975c69",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 7: the printed question with a sketch of a two-storey house with a slated roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q7-collection",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q7-collection.png",
+          "srcHash": "ce271e1c4aeb97f9a69a99c6d6d59d7c",
+          "alt": "SEC 2014 Ordinary marking scheme notes and sketches on collecting rainwater in an underground storage tank or a water butt (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q8-terms", topicId: "cons-2-4", conceptId: "construction-terms-terms",
+    section: "B", questionRef: "2014 OL Q8",
+    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: strip foundation; housing joint; laser beam; thermostatic valve; collar tie; radon sump; roof-light window; smart meter; external ramp.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "terms", kind: "anyN", verbatim: "Terms", marks: 50, contextNote: "Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). Strip Foundation: a simple, common and economical concrete foundation, reinforced with steel bars, supporting a solid or cavity wall centrally; typically three times the wall thickness wide and as thick as the wall; the load spreads at 45 degrees to the ground. Housing joint: a basic joint joining two pieces at right angles: a trench removed from one piece takes the other, glued for strength; used in cabinets, bookcases and shelving; simple, strong and easy to make. Laser beam: a light beam used in printers, cutting and welding and barcode scanning; on site a laser projector sends out the beam and a staff with an adjustable sensor detects it, giving levels at different points on the site or on internal walls. Thermostatic Valve: a valve fitted to a radiator in a central heating system, controlling its heat output to give the desired room temperature; inexpensive, it reduces heating costs and CO₂ emissions. Collar tie: a member in tension stretching from rafter to rafter, tying them into a triangle for structural stability; purlins may rest on it; typically 200 × 50 mm; it may form the ceiling in an attic conversion. Radon sump: a compartment placed centrally in the hardcore under the ground floor to collect radon gas through gaps in its walls; pipes from its connectors carry the gas outside the building, where it dissipates. Roof-light window: a window fitted in a sloping roof (or a special roof light for a flat roof), letting light and ventilation into an attic; double or triple glazed and highly insulated, fitting neatly into the roof surface; top or pivot hung. Smart meter: records the electricity used in the home and shows its cost at any time, giving the householder control; may be topped up with credit; can also record gas or water. External ramp: a sloping path for easy access for people with restricted mobility, wheelchairs and buggies: gradient 1:20, sections no longer than 9.0 m, at least 1200 mm clear width, non-slip, lit from the sides.", group: {"claimMax":5,"perOption":10,"options":["Strip Foundation","Housing joint","Laser beam","Thermostatic Valve","Collar tie","Radon sump","Roof-light window","Smart meter","External ramp"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Construction terms",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Explain any five of the nine printed terms. Each term is marked separately at 10 marks; the scheme illustrations are examples of suitable sketches."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q8-original.png",
+          "srcHash": "129e2e96b399e543f2cee6fd7df5ebc3",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q8-terms",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q8-terms.png",
+          "srcHash": "94fce2bf4c272504c771048210e37c36",
+          "alt": "SEC 2014 Ordinary marking scheme notes and sketches for all nine terms — strip foundation, thermostatic valve, roof-light window, housing joint, collar tie, smart meter, laser beam, radon sump and external ramp (three pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q9-a", topicId: "cons-1-2", conceptId: "kitchen-layout-worktops-a",
+    section: "B", questionRef: "2014 OL Q9(a)",
+    stem: "The plan of a small kitchen in a new dwelling house is shown. The position of the worktop is shown at A. The location of the windows is also shown.",
+    questionText: "Draw a freehand sketch of the given plan and on your sketch show your preferred location for each of the following: sink, cooker and fridge. Give reasons for selecting each location.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent good fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "sink", kind: "criterion", verbatim: "Sink", marks: 4, contextNote: "Such as: natural light and a view of the garden through the window; close to the cooker; worktop space at either side; part of the working triangle.", permittedMarks: [0,1,2,3,4] },
+    { id: "cooker", kind: "criterion", verbatim: "Cooker", marks: 4, contextNote: "Such as: worktop space at either side; no crossing the kitchen with hot pots; safe in relation to the door; within easy reach of the sink; an extractor on the external wall.", permittedMarks: [0,1,2,3,4] },
+    { id: "fridge", kind: "criterion", verbatim: "Fridge", marks: 4, contextNote: "Such as: close to the sink for food preparation; worktop space beside it to unpack shopping; part of the working triangle. Other suitable locations are accepted.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Kitchen layout, painted cabinets and worktops",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. The locations, the paint finish and the preferred worktop are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q9-original.png",
+          "srcHash": "3ee63fed215441214211a77286ba587a",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 9: the printed question with the plan of the small kitchen, the worktop A and the windows.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q9-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q9-layout.png",
+          "srcHash": "a72af5c38d3fd43a660b950a1a87b5a7",
+          "alt": "SEC 2014 Ordinary marking scheme kitchen plan with the sink, cooker and fridge located, and the reasons for each.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q9-b", topicId: "cons-10-7", conceptId: "kitchen-layout-worktops-b",
+    section: "B", questionRef: "2014 OL Q9(b)",
+    stem: "The plan of a small kitchen in a new dwelling house is shown. The position of the worktop is shown at A. The location of the windows is also shown.",
+    questionText: "The kitchen cabinets are hand painted wooden cabinets. Describe, using notes and freehand sketches, the steps involved in preparing the wood and in applying a high quality hand painted finish to one of the cabinet doors.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 4, contextNote: "Such as: the surface cleaned and sanded with fine glass paper; the dust removed with a clean cloth and white spirit.", permittedMarks: [0,1,2,3,4] },
+    { id: "detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 4, contextNote: "A second, different step. Such as: a primer applied with a good brush, dried and lightly sanded; an undercoat, sanded; the final coat, and a second if needed; or a water-based all-in-one paint and a gloss or satin finish coat.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent good fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Kitchen layout, painted cabinets and worktops",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. The locations, the paint finish and the preferred worktop are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q9-original.png",
+          "srcHash": "3ee63fed215441214211a77286ba587a",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 9: the printed question with the plan of the small kitchen, the worktop A and the windows.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q9-paint",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q9-paint.png",
+          "srcHash": "c5338267c69ec955e3933584fee28518",
+          "alt": "SEC 2014 Ordinary marking scheme notes and sketches on preparing and hand painting a cabinet door.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q9-c", topicId: "cons-10-7", conceptId: "kitchen-layout-worktops-c",
+    section: "B", questionRef: "2014 OL Q9(c)",
+    stem: "The plan of a small kitchen in a new dwelling house is shown. The position of the worktop is shown at A. The location of the windows is also shown.",
+    questionText: "A choice is to be made between a polished granite worktop and a solid wood worktop. Discuss one advantage and one disadvantage of each worktop. Recommend a preferred worktop and give two reasons for your recommendation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "granite", kind: "criterion", verbatim: "Granite worktop Advantage and disadvantage", marks: 4, contextNote: "One advantage and one disadvantage. Such as: natural, elegant, hard wearing, heat and waterproof and low maintenance; but expensive, heavy, can chip or crack, needs sealing and has high embodied energy.", permittedMarks: [0,1,2,3,4] },
+    { id: "wood", kind: "criterion", verbatim: "Solid worktop Advantage and disadvantage", marks: 4, contextNote: "One advantage and one disadvantage. Such as: attractive and warm, absorbs sound, easily cut and replaced, low embodied energy; but stains easily, must be oiled and maintained, and needs protection from hot items.", permittedMarks: [0,1,2,3,4] },
+    { id: "preferred", kind: "criterion", verbatim: "Preferred worktop", marks: 2, contextNote: "Granite or wood.", permittedMarks: [0,1,2] },
+    { id: "reason-1", kind: "criterion", verbatim: "Reason one", marks: 2, contextNote: "A reason for the recommendation.", permittedMarks: [0,1,2] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason two", marks: 2, contextNote: "A second, different reason.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Kitchen layout, painted cabinets and worktops",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. The locations, the paint finish and the preferred worktop are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q9-original.png",
+          "srcHash": "3ee63fed215441214211a77286ba587a",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 9: the printed question with the plan of the small kitchen, the worktop A and the windows.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q9-worktop",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q9-worktop.png",
+          "srcHash": "b05edbe290ab698061fcff9f81e5be4a",
+          "alt": "SEC 2014 Ordinary marking scheme notes on the advantages and disadvantages of granite and solid wood worktops and the recommendation (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2014-ol-q9-complete", topicId: "cons-1-2", conceptId: "kitchen-layout-worktops-complete",
+    section: "B", questionRef: "2014 OL Q9 — complete",
+    stem: "The plan of a small kitchen in a new dwelling house is shown. The position of the worktop is shown at A. The location of the windows is also shown.",
+    questionText: "(a) Draw a freehand sketch of the given plan and on your sketch show your preferred location for each of the following: sink, cooker and fridge. Give reasons for selecting each location. (b) The kitchen cabinets are hand painted wooden cabinets. Describe, using notes and freehand sketches, the steps involved in preparing the wood and in applying a high quality hand painted finish to one of the cabinet doors. (c) A choice is to be made between a polished granite worktop and a solid wood worktop. Discuss one advantage and one disadvantage of each worktop. Recommend a preferred worktop and give two reasons for your recommendation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent good fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "a-sink", kind: "criterion", verbatim: "Sink", marks: 4, contextNote: "Such as: natural light and a view of the garden through the window; close to the cooker; worktop space at either side; part of the working triangle.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-cooker", kind: "criterion", verbatim: "Cooker", marks: 4, contextNote: "Such as: worktop space at either side; no crossing the kitchen with hot pots; safe in relation to the door; within easy reach of the sink; an extractor on the external wall.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-fridge", kind: "criterion", verbatim: "Fridge", marks: 4, contextNote: "Such as: close to the sink for food preparation; worktop space beside it to unpack shopping; part of the working triangle. Other suitable locations are accepted.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 4, contextNote: "Such as: the surface cleaned and sanded with fine glass paper; the dust removed with a clean cloth and white spirit.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 4, contextNote: "A second, different step. Such as: a primer applied with a good brush, dried and lightly sanded; an undercoat, sanded; the final coat, and a second if needed; or a water-based all-in-one paint and a gloss or satin finish coat.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent good fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "c-granite", kind: "criterion", verbatim: "Granite worktop Advantage and disadvantage", marks: 4, contextNote: "One advantage and one disadvantage. Such as: natural, elegant, hard wearing, heat and waterproof and low maintenance; but expensive, heavy, can chip or crack, needs sealing and has high embodied energy.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-wood", kind: "criterion", verbatim: "Solid worktop Advantage and disadvantage", marks: 4, contextNote: "One advantage and one disadvantage. Such as: attractive and warm, absorbs sound, easily cut and replaced, low embodied energy; but stains easily, must be oiled and maintained, and needs protection from hot items.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-preferred", kind: "criterion", verbatim: "Preferred worktop", marks: 2, contextNote: "Granite or wood.", permittedMarks: [0,1,2] },
+    { id: "c-reason-1", kind: "criterion", verbatim: "Reason one", marks: 2, contextNote: "A reason for the recommendation.", permittedMarks: [0,1,2] },
+    { id: "c-reason-2", kind: "criterion", verbatim: "Reason two", marks: 2, contextNote: "A second, different reason.", permittedMarks: [0,1,2] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2014-ol-q9-a","label":"a","marks":20,"rowIds":["a-presentation","a-sink","a-cooker","a-fridge"]},{"sourceCardId":"cons-2014-ol-q9-b","label":"b","marks":16,"rowIds":["b-detail-1","b-detail-2","b-presentation"]},{"sourceCardId":"cons-2014-ol-q9-c","label":"c","marks":14,"rowIds":["c-granite","c-wood","c-preferred","c-reason-1","c-reason-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Kitchen layout, painted cabinets and worktops",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. The locations, the paint finish and the preferred worktop are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2014-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q9-original.png",
+          "srcHash": "3ee63fed215441214211a77286ba587a",
+          "alt": "Original SEC 2014 Ordinary Construction Studies Question 9: the printed question with the plan of the small kitchen, the worktop A and the windows.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2014-OL-q9-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q9-layout.png",
+          "srcHash": "a72af5c38d3fd43a660b950a1a87b5a7",
+          "alt": "SEC 2014 Ordinary marking scheme kitchen plan with the sink, cooker and fridge located, and the reasons for each.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];
