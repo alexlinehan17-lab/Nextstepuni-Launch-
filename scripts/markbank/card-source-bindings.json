@@ -1007,24 +1007,6 @@
     }
   },
   "construction-studies": {
-    "cons-2016-hl-q6-a": {
-      "pages": [
-        3
-      ],
-      "stripStem": true
-    },
-    "cons-2016-hl-q10-b": {
-      "pages": [
-        5
-      ],
-      "stripStem": true
-    },
-    "cons-2016-hl-q7-b": {
-      "pages": [
-        4
-      ],
-      "stripStem": true
-    },
     "cons-2016-ol-q3-a": {
       "pages": [
         2
