@@ -1860,9 +1860,77 @@ POOLS_2020_ORDINARY = {
 }
 # The Ordinary question whose lettered parts are a printed any-two choice.
 OL_PART_CHOICE = {2020: 'Q13'}
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY}
+# 2019 Higher (legacy syllabus), transcribed from the SEC paper and scheme.
+HIGHER_2019 = '''
+Q1(a)|10|2|5|Target yields in tonnes per hectare of
+Q1(b)|10|2|5|Why dense planting in Irish forests:
+Q1(c)|10|2|5|Vegetative reproduction:
+Q1(d)|10|2|5|Characteristics of loam:
+Q1(e)|10|2|5|Zoonosis: Disease that can be transmitted from animals to humans
+Q1(f)|10|2|5|Test for nitrates: Diphenylamine
+Q1(g)|10|2|5|Functions of the liver:
+Q1(h)(i)|6|2|5|Biological control: Control of pests by predators
+Q1(h)(ii)|4|2|5|Rodent or named by cat or dog
+Q1(i)|10|2|5|Location of nephron: Kidney
+Q1(j)|10|2|5|Value of sheep dipping and pour-on:
+Q2(a)(i)|6|3|6|Moisture stress:
+Q2(a)(ii)|9|3|6|Available water capacity:
+Q2(b)(i)|12|3|6|Causes of increasing soil acidity over time:
+Q2(b)(ii)|6|3|6|Detail for any one answer from (i):
+Q2(c)|15|3|6|To show flocculation:
+Q3 Option One (a)(i)|4|4|7|Breeds used to produce cross-breed sucklers:
+Q3 Option One (a)(ii)|6|4|7|Benefits of cross-breeds:
+Q3 Option One (a)(iii)|6|4|7|Reproductive efficiency:
+Q3 Option One (b)(i)|4|4|7|Comparing calf growth rates
+Q3 Option One (b)(ii)|12|4|7|Grazing management:
+Q3 Option One (c)|16|4|8|Comparing beef production systems
+Q3 Option Two (a)(i)|4|4|8|Photosynthesis equation:
+Q3 Option Two (a)(ii)|12|4|8|How leaf structure suited to photosynthesis:
+Q3 Option Two (b)|16|4|8|How photosynthesis and microorganism activity affect silage feeding value:
+Q3 Option Two (c)|16|4|8|Positive effects of microorganisms:
+Q4(a)|24|5|9|Effect of a mineral deficiency on crop growth:
+Q4(b)|24|5|9|Percentage water and solids in milk:
+Q4(c)|24|5|9|Presence of microorganisms in clover roots:
+Q4(d)|24|5|9|Digestibility of silage:
+Q5(a)(i)|4|5|10|Soil preparation:
+Q5(a)(ii)|4|5|10|Planting:
+Q5(a)(iii)|4|5|10|Weed control:
+Q5(a)(iv)|4|5|10|Harvesting:
+Q5(b)(i)|4|5|10|Catch crops:
+Q5(b)(ii)|6|5|10|Rotation with catch crop:
+Q5(b)(iii)|6|5|10|Catch crop benefits other than fodder:
+Q5(c)(i)|4|5|10|Situations in which to use broad-spectrum weedkillers:
+Q5(c)(ii)|12|5|10|Precautions when using sprays:
+Q6(a)(i)|4|6|11|Causes of soil compaction:
+Q6(a)(ii)|8|6|11|Effects of soil compaction:
+Q6(a)(iii)|3|6|11|Remedy for soil compaction:
+Q6(b)(i)|9|6|11|Benefits of clover:
+Q6(b)(ii)|12|6|11|Why different clovers in different seed mixtures
+Q6(c)|12|6|11|Comparing slurry and FYM
+Q7(a)(i)|4|6|12|Pedigree herd: All animals descended from a purebreeding line
+Q7(a)(ii)|4|6|12|Recessive allele:
+Q7(a)(iii)|4|6|12|Natural service:
+Q7(a)(iv)|4|6|12|Independent assortment:
+Q7(b)|16|6|12|Parental genotype: WwFf
+Q7(c)(i)|8|6|12|Why Drosophila used:
+Q7(c)(ii)|8|6|12|Lambing percentage:
+Q8(a)|24|7|13|Liver fluke life cycle
+Q8(b)(i)|12|7|13|Diagram of TS of dicot stem
+Q8(b)(ii)|12|7|13|Differences between monocot and dicot stem TSs:
+Q8(c)|24|7|13|Distinguish between the members of any three of the pairs
+Q9(a)|12|7|14|Change in grass digestibility:
+Q9(b)|12|7|14|Culling older dairy cows:
+Q9(c)|12|7|14|Low rate of establishment in wet spring:
+Q9(d)|12|7|14|Hedgerow conservation:
+Q9(e)|12|7|14|Flushing ewes:
+'''
+POOLS_2019_HIGHER = {'Q2(b)(ii)': (1, ['Rainfall', 'Acid rain', 'Crop production', 'Animal urine', 'Leaching', 'Some fertilisers', 'Cation exchange', 'Manures', 'Pine needles', 'Waterlogging']), 'Q3 Option One (b)(ii)': (1, ['Paddock grazing', 'Strip grazing', 'Block grazing', 'Set stocking', 'Zero grazing', 'Leader-follower', 'Creep grazing', 'Mixed grazing']), 'Q4(a)': (1, ['Flask method', 'Soil method'])}
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER}
 
 SOURCES = [
+    (2019, 'higher', 'A', HIGHER_2019,
+     '2afa8bbcd1d0c6a2f00808e35eb08dec57f7a078c88a1665c827320b9d273f75',
+     '7514b3e21ea16acc7f17e9089eb189576853ce75badcace2e8bd54a92adf08b4'),
     (2020, 'ordinary', 'G', ORDINARY_2020,
      'ad07041e0062736f05423d160ee9bd758976c40ef0911391cb78d06da487f247',
      'e54816cb1236808d572ec878c58e031ab2e533f9d8c4916b3d0fdc45cea99d8e'),
@@ -1961,7 +2029,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -2106,7 +2174,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61. Remaining editions stay open.')
 
 
 if __name__=='__main__':

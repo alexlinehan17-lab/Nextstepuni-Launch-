@@ -2401,65 +2401,73 @@
         "sha256": "7514b3e21ea16acc7f17e9089eb189576853ce75badcace2e8bd54a92adf08b4",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 61,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "15eead8d9cf785a3",
           "page": 1,
           "cue": "any six",
           "context": "__________________ MONDAY 17 JUNE – AFTERNOON 2:00 – 4:30 ________________________ Answer any six questions Question 1 carries 60 marks All other questions carry 48 marks each Write all your answers in the answer book Total marks 300 marks",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Six of nine independent examination questions; every question is retained."
         },
         {
           "id": "8825d399020b1b34",
           "page": 2,
           "cue": "any six",
           "context": "Leaving Certificate Examination 2019 2 Agricultural Science – Higher Level 1. Answer any six of the parts (a) – (j). (a) Give the target yield in tonnes per hectare of each of the following spring cereal crops: (i) Barley (ii) Wheat (iii) Oats. (b) Give three reasons for the dense planting of Irish coniferous forests. (c",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1: six of ten separately priced lettered parts; all ten are retained."
         },
         {
           "id": "a8d82cbee557eab7",
           "page": 3,
           "cue": "any four",
           "context": "ns for your answer. (b) Agricultural land usually becomes more acidic over time. (i) List any four causes of increasing soil acidity over time. (ii) Explain in detail how any one of the above causes increases soil acidity. (c) Describe an experiment to show flocculation in a soil sample. (48 marks)",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q2(b)(i): any four causes of soil acidity from the scheme pool; a marking menu."
         },
         {
           "id": "22914d5f718927a0",
           "page": 3,
           "cue": "any one",
           "context": "(i) List any four causes of increasing soil acidity over time. (ii) Explain in detail how any one of the above causes increases soil acidity. (c) Describe an experiment to show flocculation in a soil sample. (48 marks)",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q2(b)(ii): any one cause from (i), explained. The scheme gives two points for each cause (\"two points from any one category\"), kept as answer routes on one card."
         },
         {
           "id": "a7c8b62fcdd55c4e",
           "page": 5,
           "cue": "any two",
           "context": "ving Certificate Examination 2019 5 Agricultural Science – Higher Level 4. In the case of any two of the following, describe a laboratory or a field method: (a) To show the effect of a mineral deficiency on crop growth. (b) To estimate the percentages of water and solids in a sample of milk. (c) To show the presence of micro‐",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4: two of four independently priced 24-mark methods; all four are retained."
         },
         {
           "id": "3df80576aaf9c89b",
           "page": 7,
           "cue": "any two",
           "context": "Leaving Certificate Examination 2019 7 Agricultural Science – Higher Level 8. Answer any two of (a), (b), (c). (a) Describe, with the aid of a labelled diagram, the life cycle of the liver fluke (Fasciola hepatica). (b) (i) Draw a labelled diagram of a transverse section (T.S.) of a dicotyledonous (dicot) stem. (ii) Outl",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8: two of three independently priced 24-mark parts; all three are retained."
         },
         {
           "id": "d7ff31562bea3b03",
           "page": 7,
           "cue": "any three",
           "context": "verse sections of monocot and dicot stems. (c) Distinguish clearly between the members of any three of the following pairs of terms: (i) Omasum and abomasum (ii) Ureter and urethra (iii) Split dressing and top dressing (iv) Maintenance ration and production ration. (48 marks) 9. Give scientific explanations for any four of the ",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q8(c): any three of four printed pairs of terms. One card lists the eight members as parts and counts the best six (three pairs)."
         },
         {
           "id": "c7aca7d6f7fa2f7c",
           "page": 7,
           "cue": "any four",
           "context": " Maintenance ration and production ration. (48 marks) 9. Give scientific explanations for any four of the following: (a) The change in the digestibility of grass over the growing season. (b) The culling of older cows from the dairy herd. (c) A low rate of establishment of seedlings during a very wet spring. (d) The practice of",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9: four of five independently priced 12-mark explanations; all five are retained."
         }
       ]
     },
@@ -2478,7 +2486,7 @@
         "sha256": "8fbba02590321bb2ebdc29eb5c9f0d61ea2a79385ce545333489d6a742e282b2",
         "pages": 20
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 61,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

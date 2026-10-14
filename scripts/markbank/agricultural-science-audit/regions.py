@@ -17,13 +17,12 @@ import fitz
 
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
 LETTERS = 'abcdefghijklmnop'
-breaks = []  # (page, y) of each OR printed at the margin between alternatives (a centred OR inside a
-            # part separates two methods of one answer), or a section heading; a part never runs past one
-SECTION = re.compile(r'^SECTION\s+(?:ONE|TWO|THREE|A|B|C)\b')
+breaks = []  # (page, y) of each printed OR or section heading; see spans() for when one ends a part
+SECTION = re.compile(r'^SECTION\s+(?:ONE|TWO|THREE|A|B|C)\b', re.I)
 HEAD = re.compile(r'^(?:Q(?:uestion)?\s*)?(\d{1,2})(?:\s*\.|(?=\s+(?:\(|Option|Any|Two|Four|Answer|[A-Z]))|\s*$)\s*')
 MARKER = re.compile(r'^\(\s*([a-z]{1,4})\s*\)\s*')
 OPTION = re.compile(r'^Option\s+(One|Two)\b\.?\s*', re.I)
-FURNITURE = re.compile(r'^(Leaving Certificate|Agricultural Science\s*[–-]|Marking scheme Agricultural|Page \d+|\d{1,2}$|There is no examination material)', re.I)
+FURNITURE = re.compile(r'^(Leaving Certificate|Agricultural Science\s*[–-]|Marking scheme Agricultural|Page \d+|\d{1,2}$|There is no examination material|\[OVER\]$)', re.I)
 
 
 def _lines(pdf):
@@ -58,15 +57,18 @@ def parse(pdf, max_question=20):
     q = opt = letter = roman = None
     bounds = [_content_bounds(rows) for rows in pages]
     breaks.clear()
+    # A paper that names its questions ("Question 2.") numbers lists inside them with bare
+    # digits ("2. Explain your answer."): there, only a named head opens a question.
+    named = any(re.match(r'^Question\s+\d+\s*\.', r[3]) for rows in pages for r in rows)
     for p, rows in enumerate(pages, 1):
         for i, (y0, y1, x, text) in enumerate(rows):
-            if (re.fullmatch(r'OR|Or', text) and x < 0.15) or SECTION.match(text):
+            if re.fullmatch(r'OR|Or', text) or SECTION.match(text):
                 breaks.append((p, y0))
             if FURNITURE.match(text) or x > 0.30:
                 continue
             s = text
             m = HEAD.match(s)
-            if m and x < 0.16:
+            if m and x < 0.16 and (not named or s.startswith('Q')):
                 n = int(m.group(1))
                 rest = s[m.end():]
                 ahead = rest or (rows[i + 1][3] if i + 1 < len(rows) else '')
@@ -99,6 +101,18 @@ def parse(pdf, max_question=20):
                     head = later.split('(ii)')[0] if '(ii)' in later else later
                     as_roman = '(ii)' in later and following not in head
                     as_letter = not as_roman
+                if not as_letter and not as_roman and letter and tok == letter:
+                    # A letter printed twice (2018 OL Q13 prints a second "(a)" where the
+                    # scheme has (b)): when the letter after the missing one follows before
+                    # the missing one or the next question, the repeat is the missing letter.
+                    missing = LETTERS[LETTERS.index(letter) + 1]
+                    for later in [r[3] for r in rows[i + 1:]] + [r[3] for page in pages[p:] for r in page]:
+                        mk2 = MARKER.match(later)
+                        if HEAD.match(later) and later.startswith('Q') or (mk2 and mk2.group(1) == missing):
+                            break
+                        if mk2 and mk2.group(1) == LETTERS[LETTERS.index(missing) + 1]:
+                            tok, as_letter = missing, True
+                            break
                 if as_letter:
                     letter, roman = tok, None
                 elif as_roman:
@@ -148,7 +162,13 @@ def spans(pdf):
         end_idx = next((j for j in range(idx + 1, len(events)) if not _descends(events[j][0], key)), len(events))
         first_child = idx + 1 if idx + 1 < len(events) and _descends(events[idx + 1][0], key) else None
         end = _point(events, end_idx, bounds)
-        stop = next((b for b in sorted(breaks) if (page, y) < b < end), None)
+        # An OR between two Options (or a section heading) ends a part; an OR inside a part's
+        # answer (two methods of one experiment) does not. The difference is what follows it:
+        # a question or Option head, or just the next lettered part.
+        def separates(b):
+            nxt = next((e for e in events if (e[1], e[2]) > b), None)
+            return nxt is None or nxt[0][2] is None
+        stop = next((b for b in sorted(breaks) if (page, y) < b < end and separates(b)), None)
         out[key_label(key)] = dict(key=key, start=(page, y), end=stop or end,
                                    stem_end=_point(events, first_child, bounds) if first_child else None)
     return out, list(bounds) + [pdf]  # the source pdf rides last, for boundary snapping
