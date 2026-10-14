@@ -314,6 +314,9 @@ def build():
 
     decisions = selection_decisions(paper)
     assert len(cards) == 71 and len({c['id'] for c in cards}) == 71, len(cards)
+    # Boxed page headings inside lifted keys (irish_furniture.py): exact strings only, count pinned.
+    from irish_furniture import strip_card
+    assert sum(strip_card(card) for card in cards) == 2
     assert len({c['atlasQuestionId'] for c in cards}) == 71
     assert sum(c['totalMarks'] for c in cards if re.fullmatch(r'R-[AB]-\d', c['atlasQuestionId'])) == 100
     for card in cards:

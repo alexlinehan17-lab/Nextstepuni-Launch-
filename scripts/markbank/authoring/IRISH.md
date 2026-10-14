@@ -174,3 +174,7 @@ Everything needed to rebuild or audit the committed Irish cards lives in the rep
 - `irish_tools/preservation.py` is the per-paper preservation audit, `test_all.sh` runs the full
   Irish test set, and `qa.sh SPEC OUT` runs the mobile Mark Bank / Atlas browser check
   (`browser_qa.mjs`) against the preview in `irish_tools/preview/` on port 5703.
+- `irish_furniture.py` removes the scheme's boxed page headings ("Ceist 3 FILÍOCHT 30 marc", "A – (50 marc)" …)
+  from reviewed keys by exact pinned string only; `irish_cards.py` and the additions builders pin how many each
+  paper loses, and `test/irishSchemeFurniture.test.ts` pins the list. `irish_tools/heading_strip_audit.py BASE`
+  proves a strip changed nothing else (every other card byte-identical, Atlas and maps unchanged).

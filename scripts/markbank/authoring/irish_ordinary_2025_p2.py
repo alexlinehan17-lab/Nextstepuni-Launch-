@@ -429,6 +429,9 @@ def build():
                         f'One printed {marks_sub}-mark question inside 3A(a)(i). Scheme: “{m["lang_lit"]}” applies to the whole 25-mark answer.', src)
 
     assert len(cards) == 32 and len({c['id'] for c in cards}) == 32 and len({c['atlasQuestionId'] for c in cards}) == 32
+    # Boxed page headings inside lifted keys (irish_furniture.py): exact strings only, count pinned.
+    from irish_furniture import strip_card
+    assert sum(strip_card(card) for card in cards) == 2
     for card in cards:
         for c in card['criteria']:
             assert c['guidance'] and all(not re.search('[\uf000-\uf0ff]|Siombailí Anótála', g) for g in c['guidance']), (card['id'], c['id'])

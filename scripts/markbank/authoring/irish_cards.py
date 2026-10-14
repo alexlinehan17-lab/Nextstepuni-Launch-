@@ -50,6 +50,11 @@ from irish_higher_2023_p1 import apply_legacy_review as apply_higher_2023_p1_rev
 from irish_higher_2023_p2 import apply_legacy_review as apply_higher_2023_p2_review
 from irish_ordinary_2023_p1 import apply_legacy_review as apply_ordinary_2023_p1_review
 from irish_ordinary_2023_p2 import apply_legacy_review as apply_ordinary_2023_p2_review
+from irish_furniture import strip_card
+
+# Boxed page headings removed from reviewed keys (irish_furniture.py): exact strings only, counts pinned per paper.
+HEADING_SCOPE = {(2022, 'higher', 2): 4, (2023, 'higher', 2): 2, (2024, 'higher', 2): 10, (2025, 'higher', 2): 2,
+                 (2024, 'ordinary', 1): 9, (2025, 'ordinary', 1): 9, (2024, 'ordinary', 2): 2, (2025, 'ordinary', 2): 2}
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -1319,6 +1324,12 @@ def main() -> int:
     cards, _ = apply_higher_2023_p2_review(cards)
     cards, _ = apply_ordinary_2023_p1_review(cards)
     cards, _ = apply_ordinary_2023_p2_review(cards)
+    stripped = {}
+    for card in cards:
+        key = (card['year'], card['level'], card['paper'])
+        if card.get('reviewedAt') and key in HEADING_SCOPE:
+            stripped[key] = stripped.get(key, 0) + strip_card(card)
+    assert stripped == HEADING_SCOPE, stripped
     manifest = serialise(cards)
     ledger = json.dumps(census(cards), ensure_ascii=False, indent=2) + '\n'
     schemes = scheme_text_exports()
