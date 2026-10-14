@@ -34,6 +34,9 @@ interface SourceMaterialReaderProps {
   documentKind?: 'paper' | 'scheme';
   /** The trigger sits between paragraphs rather than at a card's foot. */
   inline?: boolean;
+  /** The label already names the document ("OFFICIAL MARKING SCHEME"), so the
+   *  reader's heading does not repeat the material name after it. */
+  labelNamesMaterial?: boolean;
 }
 
 const withPdfExtension = (fileid: string) =>
@@ -65,7 +68,7 @@ const CloseIcon = () => (
 );
 
 const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
-  source, subjectId, year, paperFileid, documentKind = 'paper', inline = false,
+  source, subjectId, year, paperFileid, documentKind = 'paper', inline = false, labelNamesMaterial = false,
 }) => {
   const isIllustration = source.kind === 'source-illustration';
   const isScheme = documentKind === 'scheme' || source.kind === 'marking-scheme' || source.kind === 'source-scheme';
@@ -248,7 +251,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       >
         <header className="mb-source-reader-header">
           <div className="mb-source-reader-heading">
-            <span>{source.label} · {materialLabel}</span>
+            <span>{labelNamesMaterial ? source.label : `${source.label} · ${materialLabel}`}</span>
             <h2 id="mb-source-reader-title">{source.title}</h2>
           </div>
           <div className="mb-source-reader-tools" aria-label="Page display controls">

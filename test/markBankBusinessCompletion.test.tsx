@@ -14,7 +14,7 @@ import selectionReviews from '../scripts/markbank/authored/business-selection-re
 import { expandBusinessRoutePools } from '../components/MarkBank/cards/business/routes.mjs';
 import SessionScreen, { rubricMarks } from '../components/MarkBank/SessionScreen';
 import { businessMarks, businessScoreId, type BusinessScores } from '../components/MarkBank/businessRubric';
-import { isRubricCard, tariffReconciles } from '../types/markBank';
+import { isRubricCard, tariffReconciles, type BusinessRubric, type SecCard, type SecRubricCard } from '../types/markBank';
 import { examQuestionPartReferencesForSubject, curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/examTopics/registry';
 import { vaultPdf } from '../components/PaperTrail/vaultDocs';
 
@@ -23,10 +23,14 @@ vi.mock('../components/PaperTrail/vaultDocs', () => ({
 }));
 
 const cards = [...HIGHER, ...ORDINARY];
+// The rubric union also holds systems with no scheme file or guidance list, so
+// narrow to Business by type, not only by value.
+const isBusinessRubric = (card: SecCard): card is SecRubricCard & { rubric: BusinessRubric } =>
+  isRubricCard(card) && card.rubric.system === 'business';
 // Direct SEC review files questions under the examined 1999 syllabus; provider
 // joins to the redeveloped (2027) course remain attached beside them.
 const outgoing = (ids: string[]) => ids.filter(id => !id.startsWith('business-2027-'));
-const businessRubrics = HIGHER.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+const businessRubrics = HIGHER.filter(isBusinessRubric);
 const reviewed = businessRubrics.filter(card => card.section === '2');
 const enterprise = reviewed.find(card => card.id === 'bus-2025-hl-s2-abq-a')!;
 const hasPdfParser = (() => {
@@ -896,7 +900,7 @@ print(json.dumps(results))
 
   it('binds every reviewed task to the inspected source hashes and reconciled tariff', () => {
     // Reviews cover both levels; an Ordinary review's cards live in the Ordinary deck.
-    const bothLevels = cards.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+    const bothLevels = cards.filter(isBusinessRubric);
     expect(bothLevels.every(tariffReconciles)).toBe(true);
     for (const review of supplement.reviews) {
       expect(review.selectionAnalysis).toContain('open examples');
@@ -1479,7 +1483,7 @@ describe('Business 2021 Higher full paper', () => {
 });
 
 describe('Business 2010 Higher full paper outside the ABQ', () => {
-  const higherRubrics = HIGHER.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const higherRubrics = HIGHER.filter(isBusinessRubric);
   const y2010 = higherRubrics.filter(card => card.year === 2010 && card.section !== '2');
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -1535,7 +1539,7 @@ describe('Business 2010 Higher full paper outside the ABQ', () => {
 });
 
 describe('Business 2011 Higher full paper outside the ABQ', () => {
-  const higherRubrics = HIGHER.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const higherRubrics = HIGHER.filter(isBusinessRubric);
   const y2011 = higherRubrics.filter(card => card.year === 2011 && card.section !== '2');
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -1589,7 +1593,7 @@ describe('Business 2011 Higher full paper outside the ABQ', () => {
 });
 
 describe('Business 2012 Higher full paper outside the ABQ', () => {
-  const higherRubrics = HIGHER.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const higherRubrics = HIGHER.filter(isBusinessRubric);
   const y2012 = higherRubrics.filter(card => card.year === 2012 && card.section !== '2');
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -1647,7 +1651,7 @@ describe('Business 2012 Higher full paper outside the ABQ', () => {
 });
 
 describe('Business 2026 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2026 = ordinaryRubrics.filter(card => card.year === 2026);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -1726,7 +1730,7 @@ describe('Business 2026 Ordinary full paper', () => {
 });
 
 describe('Business 2025 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2025 = ordinaryRubrics.filter(card => card.year === 2025);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -1823,7 +1827,7 @@ describe('Business 2025 Ordinary full paper', () => {
 });
 
 describe('Business 2024 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2024 = ordinaryRubrics.filter(card => card.year === 2024);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -1910,7 +1914,7 @@ describe('Business 2024 Ordinary full paper', () => {
 });
 
 describe('Business 2023 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2023 = ordinaryRubrics.filter(card => card.year === 2023);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -1995,7 +1999,7 @@ describe('Business 2023 Ordinary full paper', () => {
 });
 
 describe('Business 2022 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2022 = ordinaryRubrics.filter(card => card.year === 2022);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2077,7 +2081,7 @@ describe('Business 2022 Ordinary full paper', () => {
 });
 
 describe('Business 2021 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2021 = ordinaryRubrics.filter(card => card.year === 2021);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2174,7 +2178,7 @@ describe('Business 2021 Ordinary full paper', () => {
 });
 
 describe('Business 2010 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2010 = ordinaryRubrics.filter(card => card.year === 2010);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2249,7 +2253,7 @@ describe('Business 2010 Ordinary full paper', () => {
 });
 
 describe('Business 2011 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2011 = ordinaryRubrics.filter(card => card.year === 2011);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2334,7 +2338,7 @@ describe('Business 2011 Ordinary full paper', () => {
 });
 
 describe('Business 2012 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2012 = ordinaryRubrics.filter(card => card.year === 2012);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2422,7 +2426,7 @@ describe('Business 2012 Ordinary full paper', () => {
 });
 
 describe('Business 2013 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2013 = ordinaryRubrics.filter(card => card.year === 2013);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2496,7 +2500,7 @@ describe('Business 2013 Ordinary full paper', () => {
 });
 
 describe('Business 2014 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2014 = ordinaryRubrics.filter(card => card.year === 2014);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2567,7 +2571,7 @@ describe('Business 2014 Ordinary full paper', () => {
 });
 
 describe('Business 2015 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2015 = ordinaryRubrics.filter(card => card.year === 2015);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2643,7 +2647,7 @@ describe('Business 2015 Ordinary full paper', () => {
 });
 
 describe('Business 2016 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2016 = ordinaryRubrics.filter(card => card.year === 2016);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2719,7 +2723,7 @@ describe('Business 2016 Ordinary full paper', () => {
 });
 
 describe('Business 2017 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2017 = ordinaryRubrics.filter(card => card.year === 2017);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2805,7 +2809,7 @@ describe('Business 2017 Ordinary full paper', () => {
 });
 
 describe('Business 2018 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2018 = ordinaryRubrics.filter(card => card.year === 2018);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2898,7 +2902,7 @@ describe('Business 2018 Ordinary full paper', () => {
 });
 
 describe('Business 2019 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2019 = ordinaryRubrics.filter(card => card.year === 2019);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2972,7 +2976,7 @@ describe('Business 2019 Ordinary full paper', () => {
 });
 
 describe('Business 2020 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
   const y2020 = ordinaryRubrics.filter(card => card.year === 2020);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -3047,7 +3051,7 @@ describe('Business 2020 Ordinary full paper', () => {
 });
 
 describe('Business printed choices are one card each (choice is not a route)', () => {
-  const all = [...HIGHER, ...ORDINARY].filter(isRubricCard).filter(card => card.rubric.system === 'business');
+  const all = [...HIGHER, ...ORDINARY].filter(isBusinessRubric);
   const find = (id: string) => {
     const card = all.find(item => item.id === id)!;
     if (card.rubric.system !== 'business') throw new Error('Wrong rubric');

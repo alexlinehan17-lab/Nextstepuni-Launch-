@@ -32,7 +32,7 @@ export default function BusinessRubricPanel({ card, scores, onScore }: Props) {
           presentationNote: 'Read the published possible responses and mark allocation, then compare them with your own answer.',
         }}
         subjectId={card.subjectId} year={card.year}
-        paperFileid={rubric.schemeFileid} documentKind="scheme" inline
+        paperFileid={rubric.schemeFileid} documentKind="scheme" inline labelNamesMaterial
       />
       {rubric.guidance.map(note => (
         <p key={note} style={{ fontSize: 12, lineHeight: 1.5, color: 'var(--mb-muted)' }}>{note}</p>

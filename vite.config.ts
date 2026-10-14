@@ -173,6 +173,9 @@ export default defineConfig(() => {
           // Subject factories and Atlas registries are fetched with their lazy
           // tools and cached by app-chunks; keep growing corpora out of install.
           '**/factory-*.js', '**/reviewed-*.js',
+          // Reviewed Business rubric cards (cards/business/rubric.ts), shared
+          // by both Business level decks and past the 3 MB precache ceiling.
+          '**/rubric-*.js',
           '**/exam-topic-data-*.js', '**/paper-topic-data-*.js',
           '**/catchUpLaneData*.js', '**/commandWordData*.js',
           '**/vendor-three*.js',
