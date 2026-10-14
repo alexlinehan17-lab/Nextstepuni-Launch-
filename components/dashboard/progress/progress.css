@@ -233,3 +233,36 @@
 .nsu-progress .pr-today-actions > button { min-height:44px; height:auto; white-space:normal; font:400 14px/1.5 'DM Sans',sans-serif; padding:12px; }
 .pr-today-body > div:last-child > p { font:400 13px/1.65 'DM Sans',sans-serif; }
 @media(max-width:600px) { .nsu-progress .pr-editorial-panel > div:first-child,.nsu-progress .pr-editorial-panel > div:last-child { padding:24px; } }
+
+/* CAO points against the student's own goal (feedback, 12 Oct 2026). */
+.nsu-progress .pr-goal-wrap { margin:30px 0 0; }
+.pr-goal { display:grid; grid-template-columns:minmax(170px,auto) minmax(0,1fr) auto; align-items:center; gap:30px; padding:26px 30px; }
+.pr-goal .pr-eyebrow { margin:0 0 10px; }
+.pr-goal-figures dl { display:flex; gap:28px; margin:0; }
+.pr-goal-figures dl > div { display:flex; flex-direction:column; gap:2px; }
+.pr-goal-figures dt { font-size:12px; color:var(--muted-foreground); }
+.pr-goal-figures dd { margin:0; }
+.pr-goal-number { font:500 clamp(30px,3vw,40px)/1.05 var(--rs-serif); letter-spacing:-.8px; font-variant-numeric:tabular-nums; color:var(--foreground); }
+.pr-goal-chart { min-width:0; }
+.pr-goal-gap { margin:0 0 10px; font-size:15px; font-weight:500; color:var(--foreground); }
+.pr-goal-bar { position:relative; padding-top:20px; }
+.pr-goal-track { height:12px; border:1.5px solid var(--foreground); border-radius:999px; overflow:hidden; background:var(--muted); }
+.pr-goal-track > i { display:block; height:100%; border-radius:999px; background:color-mix(in srgb,var(--rs-orange) 55%,transparent); transition:width .4s ease; }
+.pr-goal-track > i[data-reached=true] { background:var(--rs-orange); }
+.dark .pr-goal-track > i { background:color-mix(in srgb,var(--rs-orange) 82%,transparent); }
+.dark .pr-goal-track > i[data-reached=true] { background:var(--rs-orange); }
+.pr-goal-marker { position:absolute; top:2px; bottom:-5px; width:0; border-left:2px solid var(--foreground); transform:translateX(-1px); }
+.pr-goal-marker > b { position:absolute; top:-3px; left:6px; font-size:11px; font-weight:500; white-space:nowrap; color:var(--foreground); }
+.pr-goal-marker[data-edge=true] > b { left:auto; right:6px; }
+.pr-goal-scale { display:flex; justify-content:space-between; margin-top:7px; font-size:11px; color:var(--muted-foreground); font-variant-numeric:tabular-nums; }
+.pr-goal-source { margin:8px 0 0; font-size:12px; line-height:1.5; color:var(--muted-foreground); }
+.pr-goal-actions { display:flex; flex-direction:column; align-items:stretch; gap:6px; }
+.pr-goal-empty { grid-template-columns:minmax(0,1fr) auto; }
+.pr-goal-empty h2 { font:400 clamp(22px,2.4vw,28px)/1.25 var(--rs-serif); letter-spacing:-.4px; margin:0 0 8px; }
+.pr-goal-empty h2 .pr-goal-number { font-size:inherit; }
+.pr-goal-empty p { margin:0; font-size:14px; line-height:1.6; color:var(--muted-foreground); max-width:58ch; }
+@media (max-width:900px) {
+  .pr-goal, .pr-goal-empty { grid-template-columns:1fr; gap:18px; padding:22px; }
+  .pr-goal-actions { flex-direction:row; flex-wrap:wrap; }
+}
+@media (prefers-reduced-motion: reduce) { .pr-goal-track > i { transition:none; } }
