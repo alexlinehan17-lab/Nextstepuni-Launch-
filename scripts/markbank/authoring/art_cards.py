@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the complete Art Mark Bank corpus, 2013–2026.
+"""Build the complete Art Mark Bank corpus, 2012–2026.
 
 The question papers supply the exact prompts.  The marking schemes supply the
 published component allocations (to 2022) and descriptor bands (2023–2026).
@@ -19,10 +19,10 @@ files under its own heading.  A choose-N (N >= 2) list is always one card.  The
 four-criterion Section B/C essay remains intact because the SEC applies that
 rubric holistically.
 
-The complete corpus is therefore 1415 cards across twenty-eight papers:
+The complete corpus is therefore 1525 cards across thirty papers:
 
-  * Higher Level:   730 cards (see EXPECTED_CARDS_BY_YEAR_LEVEL)
-  * Ordinary Level: 685 cards
+  * Higher Level:   785 cards (see EXPECTED_CARDS_BY_YEAR_LEVEL)
+  * Ordinary Level: 740 cards
 
 An audited year (AUDITED_YEARS) shows only the SEC's printed wording under the
 SEC's name: the descriptor bullets, criterion labels, scheme rows and marking
@@ -62,7 +62,7 @@ SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'art', 'schemes')
 OUT = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'art', 'authored.json')
 CENSUS_OUT = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.json')
 
-YEARS = tuple(range(2013, 2027))
+YEARS = tuple(range(2012, 2027))
 
 # A label printed inside an answer box ("Name of artwork:", "Heading 1:")
 # marks where an answer goes for an ask the question already makes, so it is
@@ -98,12 +98,14 @@ ANSWER_BOX_LABELS: dict[tuple[int, str, int], tuple[str, ...]] = {
 # Years whose SEC-attributed strings are all lifted from the printed page and
 # gated by tests/test_art_sec_wording.py: every year. The factory has no
 # written fallback, so a new year must join this tuple to build at all.
-AUDITED_YEARS = (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
+AUDITED_YEARS = (2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
 
 EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
+    (2012, 'higher'): 20,
+    (2012, 'ordinary'): 21,
     (2013, 'higher'): 20,
     (2013, 'ordinary'): 21,
     (2014, 'higher'): 20,
@@ -135,6 +137,8 @@ EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
 }
 
 EXPECTED_CARDS_BY_YEAR_LEVEL = {
+    (2012, 'higher'): 55,
+    (2012, 'ordinary'): 55,
     (2013, 'higher'): 64,
     (2013, 'ordinary'): 68,
     (2014, 'higher'): 65,
@@ -172,6 +176,71 @@ EXPECTED_CARDS_BY_YEAR_LEVEL = {
 # label is printed in the question, and the first option's key keeps the
 # card's stable id (the withdrawn per-option ids are aliased in cardAliases.ts).
 PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
+    # Three Georgian country houses, one heading: one card per part.
+    # "Wesport House" is the paper's spelling.
+    (2012, 'higher', 4): (
+        ('russborough-house', 'Russborough House, Co. Wicklow'),
+        ('castletown-house', 'Castletown House, Co. Kildare'),
+        ('wesport-house', 'Wesport House, Co. Mayo'),
+    ),
+    (2012, 'higher', 6): (
+        ('roderic-oconor', 'Roderic O’Conor (1860 – 1940)'),
+        ('paul-henry', 'Paul Henry (1876 – 1958)'),
+        ('louis-le-brocquy', 'Louis Le Brocquy (1916 – 2012)'),
+        ('brian-maguire', 'Brian Maguire (b. 1951)'),
+        ('gwen-odowd', 'Gwen O’Dowd (b. 1957)'),
+        ('willie-doherty', 'Willie Doherty (b. 1959)'),
+        ('philip-treacy', 'Philip Treacy (b.1967)'),
+    ),
+    (2012, 'higher', 14): (
+        ('horse', 'a work which includes a horse or horses'),
+        ('filippo-brunelleschi', 'a building by Filippo Brunelleschi (1377-1446)'),
+        ('ghiberti', 'a work by Ghiberti (1378-1455)'),
+        ('auguste-rodin', 'a sculpture by Auguste Rodin (1840-1917)'),
+    ),
+    (2012, 'higher', 15): (
+        ('baroque-sculpture', 'Baroque sculpture'),
+        ('genre-painting', 'Genre painting'),
+        ('rococo-art', 'Rococo art'),
+        ('art-nouveau', 'Art Nouveau'),
+    ),
+    (2012, 'ordinary', 7): (
+        ('evie-hone', 'Evie Hone'),
+        ('louis-le-brocquy', 'Louis le Brocquy'),
+        ('martin-gale', 'Martin Gale'),
+        ('jim-fitzpatrick', 'Jim Fitzpatrick'),
+    ),
+    # The four works print one per line with no bullet marker.
+    (2012, 'ordinary', 11): (
+        ('primavera', '“Primavera” by Botticelli (c.1445-1510)'),
+        ('the-mona-lisa', '“The Mona Lisa” by Leonardo da Vinci (1452-1519)'),
+        ('the-arnolfini-wedding', '“The Arnolfini Wedding” by Jan van Eyck (died 1441)'),
+        ('les-demoiselles-davignon', '“Les Demoiselles d’Avignon” by Pablo Picasso (1881-1973)'),
+    ),
+    # Outlets, shed activities, occasions and clubs: each list one heading,
+    # one card per part.
+    (2012, 'ordinary', 18): (
+        ('chemist-shop', 'a chemist shop'),
+        ('fruit-and-vegetable-shop', 'a fruit and vegetable shop'),
+        ('electrical-shop', 'an electrical shop'),
+    ),
+    (2012, 'ordinary', 19): (
+        ('music', 'music'),
+        ('hobby', 'a hobby of your choice'),
+        ('teenagers-den', 'a teenager’s den'),
+    ),
+    (2012, 'ordinary', 20): (
+        ('job-interview', 'a job interview'),
+        ('fancy-dress-party', 'a fancy dress party'),
+        ('concert', 'a concert'),
+        ('debs-ball', 'a debs’ ball'),
+    ),
+    (2012, 'ordinary', 21): (
+        ('drama-club', 'a drama club'),
+        ('hot-rod-club', 'a hot-rod club'),
+        ('fishing-club', 'a fishing club'),
+        ('gym', 'a gym'),
+    ),
     (2013, 'higher', 7): (
         ('harry-clarke', 'Harry Clarke (1889 -1931)'),
         ('sean-keating', 'Seán Keating (1889 -1977)'),
@@ -645,6 +714,21 @@ PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
 # Irish Q7 artists, the Georgian buildings. A list in this table must span at
 # least two headings; the build fails on one that does not.
 OPTION_TOPICS: dict[tuple[int, str, int], dict[str, str]] = {
+    # 2012: a work with a horse and genre painting (a subject, painted in
+    # every period) have no heading; Rodin with the late 19th century, Art
+    # Nouveau as in 2017 HL Q15.
+    (2012, 'higher', 14): {
+        'horse': 'art-4-6', 'filippo-brunelleschi': 'art-4-1', 'ghiberti': 'art-4-1',
+        'auguste-rodin': 'art-4-3',
+    },
+    (2012, 'higher', 15): {
+        'baroque-sculpture': 'art-4-2', 'genre-painting': 'art-4-6', 'rococo-art': 'art-4-2',
+        'art-nouveau': 'art-4-3',
+    },
+    (2012, 'ordinary', 11): {
+        'primavera': 'art-4-1', 'the-mona-lisa': 'art-4-1', 'the-arnolfini-wedding': 'art-4-1',
+        'les-demoiselles-davignon': 'art-4-4',
+    },
     # 2013: a self-portrait, Goya and Romanticism have no heading; Le
     # Corbusier and Cubism are Modernism; Giotto with the Renaissance (Proto),
     # as in 2016 and 2018 OL Q9.
@@ -812,6 +896,15 @@ REVIEWED_NON_ENUMERABLE_POOLS: dict[tuple[int, str, int], str] = {
 # cannot enter silently, while these reviewed open or logistical choices stay
 # faithful to the paper instead of being over-expanded.
 REVIEWED_OPEN_SELECTIONS: dict[tuple[int, str, int], str] = {
+    (2012, 'ordinary', 1): (
+        '"Name another work from this period in either stone or metal": any '
+        'work in either material; no list to enumerate.'),
+    (2012, 'ordinary', 4): (
+        '"Select any townhouse of your choice from the Georgian period": any '
+        'townhouse; the paper prints no finite list to enumerate.'),
+    (2012, 'ordinary', 13): (
+        '"Choose any work you have studied by Edvard Munch": any work; the '
+        'paper prints no finite list to enumerate.'),
     (2013, 'ordinary', 13): (
         '"Choose any work you have studied by Pablo Picasso": any work; the '
         'paper prints no finite list to enumerate.'),
@@ -862,6 +955,14 @@ REVIEWED_OPEN_SELECTIONS: dict[tuple[int, str, int], str] = {
 # Page numbers are one-based within the separate official illustration PDF.
 # Every binding below was checked visually against the rendered sheet.
 ILLUSTRATION_PAGES: dict[tuple[int, str], dict[int, int]] = {
+    (2012, 'higher'): {
+        2: 1, 3: 1, 5: 1, 12: 1, 18: 1,
+        7: 2, 8: 2, 9: 2, 11: 2,
+    },
+    (2012, 'ordinary'): {
+        1: 1, 2: 1, 3: 1, 5: 1, 14: 1, 17: 1,
+        6: 2, 9: 2, 12: 2,
+    },
     (2013, 'higher'): {
         1: 1, 3: 1, 4: 1, 11: 1, 19: 1,
         5: 2, 6: 2, 9: 2, 10: 2,
@@ -993,6 +1094,30 @@ for _year, _level, _topics in (
 # to give the question this heading; where the reference contradicts the
 # paper, the Atlas builder records a reviewed anomaly).
 LEGACY_QUESTION_TOPICS: dict[tuple[int, str], tuple[str, ...]] = {
+    (2012, 'higher'): (
+        # Q2 two Bronze Age gold objects (a disc and a dress-fastener); Q5
+        # Oisín Kelly (1915-1981); Q7 a roadside sculpture (the Pikemen):
+        # contemporary public art.
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-4', 'art-5-5',
+        # Q8 Gislebertus's Last Judgement and Sluter's Well of Moses; Q12
+        # Turner, Romanticism: no heading of its own (as 2019 HL Q11).
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-2', 'art-4-6', 'art-4-3',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        # Q16 galleries against the internet; Q17 film; Q18 a commemorative
+        # coin; Q19 a home office; Q20 the corner shop in a town's character.
+        'art-6-0', 'art-6-1', 'art-6-1', 'art-6-3', 'art-6-3',
+    ),
+    (2012, 'ordinary'): (
+        # Q3 the Ardagh Chalice; Q6 'Women of Belfast' by F.E. McWilliam,
+        # the 1972-73 series: Post 1960s Art in Ireland.
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5', 'art-5-4',
+        # Q8 a Romanesque church; Q9 Giotto; Q13 Munch (1863-1944).
+        'art-4-0', 'art-4-1', 'art-4-1',
+        'art-4-6',  # Q11: per option (OPTION_TOPICS)
+        'art-4-3', 'art-4-3', 'art-4-4',
+        # Q19 converting a garden shed: a space, as the canteen and office.
+        'art-6-1', 'art-6-0', 'art-6-1', 'art-6-1', 'art-6-3', 'art-6-1', 'art-6-1',
+    ),
     (2013, 'higher'): (
         # Q3 the Derrynaflan Paten and the Cross of Cong: Insular metalwork;
         # Q5 Frederic Burton's 'The Meeting on the Turret Stairs'.
@@ -1304,7 +1429,8 @@ def is_furniture(line: str, year: int) -> bool:
         rf'^Leaving Certificate Examination,?\s*{year}\b',
         r'^Art\s*[-–]\s*(?:Visual Studies|History and Appreciation)',
         r'^Section\s+[ABC]\s+(?:Today.s world|Europe and the wider world|Ireland and its place)',
-        r'^Section\s+(?:I|II|III)\s*[-–]',
+        # "Section 111 – Appreciation of Art" is how 2011 Higher prints III.
+        r'^Section\s+(?:I|II|III|111)\s*[-–]',
         r'^Answer any five questions in this section\.?$',
         r'^Answer one question from this section\.?$',
         r'^Optional (?:Planning|Answer) Space',
@@ -1357,6 +1483,9 @@ def paper_text(path: str, year: int) -> PagedPaper:
 
 def clean_prompt(value: str, sentence_lines: bool = False) -> str:
     value = clean_unicode(value)
+    # A hyphenated word broken over two lines keeps its hyphen and loses the
+    # break ("eye-" / "catching" in 2012 OL Q18(a)), as art_printed reads it.
+    value = re.sub(r'(\w[‐-])[ \t]*\n\s*(?=\w)', r'\1', value)
     # The final question has no following question marker to stop its slice.
     # Cut at the first back-matter heading rather than absorbing credits,
     # copyright notices and blank-page instructions into Q19/Q20/Q21.
@@ -1378,6 +1507,16 @@ def clean_prompt(value: str, sentence_lines: bool = False) -> str:
     # Tick-box options printed on their own line ("Yes [ ]  No [ ]") keep it,
     # so they do not run into the sentences either side (2023 OL Q5(b)).
     value = re.sub(r'(?m)^[ \t]*Yes[ \t]+No[ \t]*$', '\n@@BOXES@@\n', value)
+    # A choose-one directive printed without a colon, its options one per
+    # line with no bullet marker (2012 OL Q11 "Choose one of the following
+    # works and answer (a) and (b)", then four titled works): each option
+    # keeps its own line, as printed.
+    value = re.sub(
+        r'(?mi)^([^\n]*\bone of\s+the following \w+ and answer \(a\)[^\n:]*)\n'
+        r'((?:(?![ \t]*(?:\n|@@PART@@))[^\n]*\n)+)',
+        lambda match: match.group(1) + '\n' + ''.join(
+            f'@@LINE@@{line}\n' for line in match.group(2).split('\n')[:-1]),
+        value)
     if sentence_lines:
         # The 2021-2022 papers begin each sentence of a task on its own line
         # ("Discuss this statement ...", "Illustrate your answer."): a line
@@ -1385,6 +1524,11 @@ def clean_prompt(value: str, sentence_lines: bool = False) -> str:
         # blank line may follow the sentence ("• Colin Davidson (b.1968).",
         # blank, "Describe and discuss ..." in 2013 HL Q7).
         value = re.sub(r'([.?!])[ \t]*\n(?=(?:[ \t]*\n)*[ \t]*[A-Z‘“\'(])', r'\1\n@@LINE@@', value)
+        # The closing instruction is its own line even after a bullet printed
+        # without a full stop ("• use of colour/light", then "Use sketches to
+        # illustrate your answer." in 2011 OL Q14).
+        value = re.sub(r'(?m)^[ \t]*(?=(?:Use sketches to illustrate|Illustrate) your answer)',
+                       '@@LINE@@', value)
     value = re.sub(r'[ \t]+', ' ', value)
     value = re.sub(r'\s*\n\s*', ' ', value)
     value = value.replace('@@BULLET@@ ', '\n• ')
@@ -1810,8 +1954,10 @@ def verify_printed_choices(prompt: str, choices: tuple[tuple[str, str], ...]) ->
     OL Q20(b) "one of the following objects to suit your own needs: a table
     lamp, a hand-held torch or a set of head phones")."""
     labels = [label for _, label in choices]
-    bullets = [line[2:] for line in prompt.splitlines() if line.startswith('• ')]
-    printed = [label for label in labels if any(body.startswith(label) for body in bullets)]
+    # A bulleted option, or one printed on its own line without a marker
+    # (2012 OL Q11).
+    bodies = [line[2:] if line.startswith('• ') else line for line in prompt.splitlines()]
+    printed = [label for label in labels if any(body.startswith(label) for body in bodies)]
     inline = re.compile(r'one of the following[^:.\n]*: '
                         + r'(?:,? or |, )'.join(re.escape(label) for label in labels))
     if printed != labels and not inline.search(prompt):
@@ -1930,14 +2076,20 @@ def audit_closed_choice_directives(year: int, level: str,
 
 def meaningful_preamble(value: str) -> str | None:
     """Retain artwork/context prose but drop a bare ``Answer (a)…`` direction,
-    printed after the context or, as in 2013 HL Q17, on its own line before it."""
+    printed after the context or, as in 2013 HL Q17, on its own line before it.
+
+    The direction is its own sentence. Inside a sentence it stays, so the
+    sentence keeps its end: "Choose one Georgian building that you have
+    studied and answer (a), (b) and (c)." (2017 OL Q4; 2012 OL Q4)."""
     direction = (r'Answer\s+\(a\)'
                  r'(?:\s*,?\s*(?:and\s*)?\(b\))?'
                  r'(?:\s*,?\s*(?:and\s*)?\(c\))?'
                  r'\.?')
     value = value.strip()
-    value = re.sub(r'(?i)(?:^|\s+)' + direction + r'\s*$', '', value).strip()
-    value = re.sub(r'(?i)^' + direction + r'[ \t]*\n', '', value).strip()
+    value = re.sub(r'(?:^|\s+)' + direction + r'\s*$', '', value).strip()
+    # Before the context: on its own line, or run into the context sentence
+    # ("Answer (a) and (b) Your art class has been asked ..." in 2011 OL Q21).
+    value = re.sub(r'^' + direction + r'(?:[ \t]*\n|[ \t]+(?=[A-Z‘“]))', '', value).strip()
     return value or None
 
 
@@ -2056,6 +2208,34 @@ def legacy_criterion_groups(criteria: list[dict[str, Any]],
     return [[criteria[ci] for ci in range(m) if assign[ci] == k] for k in range(n)]
 
 
+# Where the word overlap between a scheme component and the printed tasks
+# ties, the run boundary is reviewed against the paper and pinned here: the
+# number of consecutive scheme components each printed task takes. The build
+# fails on an entry the word overlap would already reproduce.
+REVIEWED_COMPONENT_RUNS: dict[tuple[int, str, int], tuple[tuple[int, ...], str]] = {
+    (2012, 'ordinary', 10): ((2, 2), (
+        '(a) "Name, describe and discuss one work of your choice by Michelangelo" takes '
+        'A "Name of work" and B "Describe and discuss one work"; (b) "Give a brief account '
+        'of Michelangelo’s work in general" takes C "Brief account of Michelangelo’s '
+        'work" and D "Sketches". B shares only "work" with either task.')),
+}
+
+
+def reviewed_component_runs(key: tuple[int, str, int], criteria: list[dict[str, Any]],
+                            units: list[dict[str, Any]]) -> list[list[dict[str, Any]]]:
+    runs, _reason = REVIEWED_COMPONENT_RUNS[key]
+    if len(runs) != len(units) or sum(runs) != len(criteria) or min(runs) < 1:
+        raise AssertionError(f'{key}: reviewed component runs {runs} do not fit '
+                             f'{len(criteria)} components over {len(units)} tasks')
+    groups, start = [], 0
+    for size in runs:
+        groups.append(criteria[start:start + size])
+        start += size
+    if groups == legacy_criterion_groups(criteria, units):
+        raise AssertionError(f'{key}: stale reviewed component runs; the word overlap agrees')
+    return groups
+
+
 def compact_requirement(question_text: str) -> str:
     return compact(question_text.replace('\n• ', '; '))
 
@@ -2076,8 +2256,9 @@ def printed_requirements(question_text: str, assessment: str, stem: str | None =
             for sentence in re.split(r'(?<=[.?!])\s+', stem_line)
             if re.match(r'^(?:Name|Identify|Choose|Select)\b', sentence)]
     # The option a per-option card practises, where the stem prints the list.
-    asks += [stem_line[2:] for stem_line in (stem or '').split('\n')
-             if chosen and stem_line.startswith('• ') and stem_line[2:].startswith(chosen)]
+    # A per-option card's option is a bullet, or its own unmarked line (2012 OL Q11).
+    asks += [re.sub(r'^• ', '', stem_line) for stem_line in (stem or '').split('\n')
+             if chosen and re.sub(r'^• ', '', stem_line).startswith(chosen)]
     # A tick-box options line is where the answer goes, not an ask; a printed
     # option of a choice ("• Paolo Uccello (c.1397-1475)") is not an ask
     # either, except the option a per-option card practises.
@@ -2221,6 +2402,9 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
             if len(units) != 2 or len(outer['criteria']) != 2:
                 raise AssertionError(f"{outer['id']}: Section A must split into (a) and (b)")
             criterion_groups = [[criterion] for criterion in outer['criteria']]
+        elif (year, level, number) in REVIEWED_COMPONENT_RUNS:
+            criterion_groups = reviewed_component_runs(
+                (year, level, number), outer['criteria'], units)
         else:
             criterion_groups = legacy_criterion_groups(outer['criteria'], units)
 
@@ -2366,7 +2550,7 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
 
     runtime = {
         'subjectId': 'art',
-        'corpus': 'All separately marked written-examination tasks, 2013–2026; a printed choice is one card',
+        'corpus': 'All separately marked written-examination tasks, 2012–2026; a printed choice is one card',
         'cardCount': len(cards),
         'auditedYears': list(AUDITED_YEARS),
         # Lifted from each audited year's scheme by art_printed.py; the cards

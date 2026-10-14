@@ -113,8 +113,8 @@ describe('Art exam-topic registry', () => {
       referenceAnomalyAssociations: 37,
       matchedLogicalCards: 507,
       reviewedLogicalCards: 34,
-      reviewedOptionTopics: 140,
-      reviewedSpecificTopics: 42,
+      reviewedOptionTopics: 148,
+      reviewedSpecificTopics: 48,
       matchedQuestionTopicLinks: 547,
       retainedLocalLogicalCards: 536,
       retainedWrittenLogicalCards: 144,
@@ -295,10 +295,10 @@ describe('Art exam-topic registry', () => {
     });
     // 462 before printed choices sharing one Atlas heading became one card;
     // the 68 withdrawn per-option ids are cardAliases.ts keys. The 2026 papers
-    // add 52 (26 Higher, 26 Ordinary) and each further year (2013-2020) its own (ART_ADDED in the preservation test).
-    expect(authoredArt.cardCount).toBe(1415);
-    expect(ART_HIGHER).toHaveLength(730);
-    expect(ART_ORDINARY).toHaveLength(685);
-    expect(new Set([...ART_HIGHER, ...ART_ORDINARY].map(card => card.id)).size).toBe(1415);
+    // add 52 (26 Higher, 26 Ordinary) and each further year (2012-2020) its own (ART_ADDED in the preservation test).
+    expect(authoredArt.cardCount).toBe(1525);
+    expect(ART_HIGHER).toHaveLength(785);
+    expect(ART_ORDINARY).toHaveLength(740);
+    expect(new Set([...ART_HIGHER, ...ART_ORDINARY].map(card => card.id)).size).toBe(1525);
   });
 });

@@ -197,8 +197,9 @@ class ArtSecWordingTest(unittest.TestCase):
                         printed_refs.add(f'{year} {REF_LEVEL[level]} Q{number}{suffix}')
                     if question['directives']:
                         directive_questions.add(int(number))
-                deck_refs = {card['questionRef'].split(' · ')[0] if ' · task' not in card['questionRef']
-                             else card['questionRef']
+                # The printed task, without the option a per-option card names
+                # ("2012 HL Q15 · task 1 · Baroque sculpture" is task 1).
+                deck_refs = {re.match(r'[^·]*?(?: · task \d+)?(?= · |$)', card['questionRef']).group(0)
                              for card in AUTHORED['cards'] if card['year'] == year and card['level'] == level}
                 self.assertEqual(deck_refs, printed_refs, (year, level))
                 reviewed = {key[2] for key in (*art_cards.PRINTED_CHOICES, *art_cards.REVIEWED_OPEN_SELECTIONS,

@@ -35,8 +35,8 @@
     "referenceAnomalyAssociations": 37,
     "matchedLogicalCards": 507,
     "reviewedLogicalCards": 34,
-    "reviewedOptionTopics": 140,
-    "reviewedSpecificTopics": 42,
+    "reviewedOptionTopics": 148,
+    "reviewedSpecificTopics": 48,
     "matchedQuestionTopicLinks": 547,
     "retainedLocalLogicalCards": 536,
     "retainedWrittenLogicalCards": 144,
@@ -12804,7 +12804,8 @@
       ],
       "topicIds": [
         "art-higher-realism-impressionism-and-post-impressionism",
-        "art-higher-modernism-c-1900-1960s"
+        "art-higher-modernism-c-1900-1960s",
+        "art-higher-section-b-generic-questions"
       ],
       "resolution": "retained-local",
       "reason": "Entitled SEC written-paper card preserved locally although the factual reference snapshot has no association for this top-level question."
@@ -18876,7 +18877,9 @@
       ],
       "topicIds": [
         "art-ordinary-section-b-generic-questions",
-        "art-ordinary-section-a-todays-world"
+        "art-ordinary-section-a-todays-world",
+        "art-ordinary-europe-the-renaissance-c-1300-1600s",
+        "art-ordinary-europe-modernism-c-1900-1960s"
       ],
       "resolution": "retained-local",
       "reason": "Entitled SEC written-paper card preserved locally although the factual reference snapshot has no association for this top-level question."
@@ -20457,6 +20460,86 @@
     }
   ],
   "reviewedOptionTopics": [
+    {
+      "level": "higher",
+      "year": 2012,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a work which includes a horse or horses",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-higher-section-b-generic-questions",
+      "heading": "2012 - Question 14 - a work which includes a horse or horses"
+    },
+    {
+      "level": "higher",
+      "year": 2012,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a building by Filippo Brunelleschi (1377-1446)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2012 - Question 14 - a building by Filippo Brunelleschi (1377-1446)"
+    },
+    {
+      "level": "higher",
+      "year": 2012,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a work by Ghiberti (1378-1455)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2012 - Question 14 - a work by Ghiberti (1378-1455)"
+    },
+    {
+      "level": "higher",
+      "year": 2012,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a sculpture by Auguste Rodin (1840-1917)",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-higher-realism-impressionism-and-post-impressionism",
+      "heading": "2012 - Question 14 - a sculpture by Auguste Rodin (1840-1917)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2012,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "11",
+      "option": "“Primavera” by Botticelli (c.1445-1510)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2012 - Question 11 - “Primavera” by Botticelli (c.1445-1510)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2012,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "11",
+      "option": "“The Mona Lisa” by Leonardo da Vinci (1452-1519)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2012 - Question 11 - “The Mona Lisa” by Leonardo da Vinci (1452-1519)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2012,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "11",
+      "option": "“The Arnolfini Wedding” by Jan van Eyck (died 1441)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2012 - Question 11 - “The Arnolfini Wedding” by Jan van Eyck (died 1441)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2012,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "11",
+      "option": "“Les Demoiselles d’Avignon” by Pablo Picasso (1881-1973)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-ordinary-europe-modernism-c-1900-1960s",
+      "heading": "2012 - Question 11 - “Les Demoiselles d’Avignon” by Pablo Picasso (1881-1973)"
+    },
     {
       "level": "higher",
       "year": 2013,
@@ -22224,6 +22307,44 @@
     },
     {
       "level": "higher",
+      "year": 2012,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "12",
+      "topicIds": [
+        "art-higher-section-b-generic-questions"
+      ],
+      "basis": "retained-local"
+    },
+    {
+      "level": "higher",
+      "year": 2012,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "topicIds": [
+        "art-higher-the-baroque-c-1600-1700s",
+        "art-higher-realism-impressionism-and-post-impressionism"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2012,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "17",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2012,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "19",
+      "topicIds": [
+        "art-higher-art-and-the-environment"
+      ]
+    },
+    {
+      "level": "higher",
       "year": 2019,
       "fileid": "LC014ALP000EV.pdf",
       "questionNumber": "17",
@@ -22248,6 +22369,26 @@
       "topicIds": [
         "art-higher-artists-processes-and-media"
       ]
+    },
+    {
+      "level": "ordinary",
+      "year": 2012,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "8",
+      "topicIds": [
+        "art-ordinary-europe-romanesque-and-gothic"
+      ]
+    },
+    {
+      "level": "ordinary",
+      "year": 2012,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "11",
+      "topicIds": [
+        "art-ordinary-europe-the-renaissance-c-1300-1600s",
+        "art-ordinary-europe-modernism-c-1900-1960s"
+      ],
+      "basis": "retained-local"
     }
   ]
 }

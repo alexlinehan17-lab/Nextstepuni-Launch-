@@ -863,8 +863,8 @@ if (
   || reviewedTopicsByCard.size !== 36
   || reviewedOnlyCards.length !== 34
   || matchedQuestionTopicLinks !== 547
-  || reviewedOptionTopics.length !== 140
-  || reviewedSpecificTopics.length !== 42
+  || reviewedOptionTopics.length !== 148
+  || reviewedSpecificTopics.length !== 48
   || retainedLocalCards.length !== 536
   || retainedWrittenLogicalCards !== 144
   || retainedPracticalLogicalCards !== 392
