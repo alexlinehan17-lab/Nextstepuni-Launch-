@@ -217,4 +217,5 @@ p.review(marks,
         else ('method-choice', 'Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts.') if 'or otherwise' in t
         else ('mathematical-context', 'One of the two values of x found in part (b) gives a finite sum to infinity; identifying it is part of the one required task, not a choice between printed prompts.') if 'one of the values' in t else None)
 p.apply(ROWS, '2018 Higher Level Paper 1', expect_added=[c['id'] for c in p.cards],
-        card_overrides={k: {'figureKey': v} for k, v in SCHEME_ROW_FIGURES.items()})
+        card_overrides={k: {'figureKey': v} for k, v in SCHEME_ROW_FIGURES.items()},
+        question_figures=True)

@@ -153,4 +153,5 @@ p.review(marks,
       'reason': 'The quoted instruction is the counting problem itself (choose 3 of 6 and 4 of 8), not an instruction to the candidate sitting this paper.'}],
     lambda t: ('all-questions-required', 'All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained.') if 'Answer all' in t
         else ('mathematical-counting', 'The quoted exam instruction is the data of a counting task (choose 3 of 6 and 4 of 8); it does not select prompts on this paper.') if 'any three other questions' in t or 'any four questions' in t else None)
-p.apply(ROWS, '2019 Higher Level Paper 2', expect_added=[c['id'] for c in p.cards])
+p.apply(ROWS, '2019 Higher Level Paper 2', expect_added=[c['id'] for c in p.cards],
+        question_figures=True)

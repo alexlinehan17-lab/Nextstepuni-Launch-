@@ -177,4 +177,5 @@ p.review(marks,
     lambda t: ('all-questions-required', 'All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained.') if 'Answer all' in t
         else ('method-choice', 'Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts.') if 'or otherwise' in t else None)
 p.apply(ROWS, '2019 Ordinary Level Paper 1', expect_added=[c['id'] for c in p.cards],
-        card_overrides={k: {'figureKey': v} for k, v in SCHEME_ROW_FIGURES.items()})
+        card_overrides={k: {'figureKey': v} for k, v in SCHEME_ROW_FIGURES.items()},
+        question_figures=True)

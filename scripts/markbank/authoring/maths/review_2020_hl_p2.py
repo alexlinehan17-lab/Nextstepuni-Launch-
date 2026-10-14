@@ -158,4 +158,5 @@ p.review(marks,
     lambda t: ('all-questions-required', 'All nine questions are required, including all six Section A questions; every published scale unit is retained.') if 'Answer all' in t
         else ('given-context', 'Every cup is the same cone; “one of these cups” names the single situation to calculate, not a choice between prompts.') if 'one of these cups' in t
         else ('mathematical-context', '“Any two adjacent numbers” is a condition on every adjacent pair in the list, not a choice between prompts.') if 'any two adjacent' in t else None)
-p.apply(ROWS, '2020 Higher Level Paper 2', expect_added=[c['id'] for c in p.cards])
+p.apply(ROWS, '2020 Higher Level Paper 2', expect_added=[c['id'] for c in p.cards],
+        question_figures=True)

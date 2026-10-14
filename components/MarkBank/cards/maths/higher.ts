@@ -20890,6 +20890,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q1-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q1-a-i.png",
+          "srcHash": "f2e662b869d4e840ba4a07f9a0b0502a",
+          "alt": "The question as printed on the paper — f(x) = x² + 5x + p where x∈ℝ, −3 ≤ p ≤ 8, and p∈ℤ. Find the value of p for which x + 3 is a factor of f(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -20931,6 +20939,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q1-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q1-a-ii.png",
+          "srcHash": "9de67d7bb387616ec1a865c352833f46",
+          "alt": "The question as printed on the paper — f(x) = x² + 5x + p where x∈ℝ, −3 ≤ p ≤ 8, and p∈ℤ. Find the value of p for which f(x) has roots which differ by 3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -20967,6 +20983,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q1-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q1-a-iii.png",
+          "srcHash": "62af00efddd3e05ee75043402a972ecf",
+          "alt": "The question as printed on the paper — f(x) = x² + 5x + p where x∈ℝ, −3 ≤ p ≤ 8, and p∈ℤ. (iii) Find the two values of p for which the graph of f(x) will not cross the x-axis.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21009,6 +21033,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q1-b.png",
+          "srcHash": "f36fdfe9b1f234cbec44a478d0b08cec",
+          "alt": "The question as printed on the paper — Find the range of values of x for which |2x + 5| −1 ≤ 0, where x∈ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21046,6 +21078,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q2-a.png",
+          "srcHash": "c66753908318f3d90a977eb5b8e1dd56",
+          "alt": "The question as printed on the paper — Find the two complex numbers z₁ and z₂ that satisfy the following simultaneous equations, where i² = −1: i₁ = −4 + 3i 3z₁ −z₂ = 11 + 17i. Write your answers in the form a + b where a, b∈ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21076,6 +21116,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q2-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q2-b-i.png",
+          "srcHash": "12dbf7473a402775477e825efe4ed735",
+          "alt": "The question as printed on the paper — The complex numbers 3 + 2i and 5 −i are the first two terms of a geometric sequence. Find r, the common ratio of the sequence. Write your answer in the form a + b where a, b∈ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21114,6 +21162,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q2-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q2-b-ii.png",
+          "srcHash": "470a008adb80499e6198dc9ddb9aba5b",
+          "alt": "The question as printed on the paper — The complex numbers 3 + 2i and 5 −i are the first two terms of a geometric sequence. (ii) Use de Moivre’s Theorem to find T₉, the ninth term of the sequence. Write your answer in the form a + b, where a, b∈ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21143,6 +21199,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q3-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q3-a.png",
+          "srcHash": "05bbabdf1247be65c6b2a6266586b85f",
+          "alt": "The question as printed on the paper — x+5 (a) f(x) = 6x−5 and g(x) = 6 . Investigate if f(g(x))= g(f(x)).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21175,6 +21239,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q3-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q3-b-i.png",
+          "srcHash": "f175d28010bdc362e4ae753ce2af4d08",
+          "alt": "The question as printed on the paper — The real variables y and x are related by y = 5x². The equation y = 5x² can be rewritten in the form log₅ y = a + blog₅ x. Find the value of a and the value of b.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21211,6 +21283,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q3-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q3-b-ii.png",
+          "srcHash": "64de56659e7579af7882f545adeddb8d",
+          "alt": "The question as printed on the paper — The real variables y and x are related by y = 5x². The equation y = 5x² can be rewritten in the form log₅ y = a + blog₅ x. Find the value of a and the value of b. (ii) Hence, or otherwise, find the real values of y for which 126 25 x−1). log5y= 2 + log5 (",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21245,6 +21325,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q4-a.png",
+          "srcHash": "b276dc9e063fd1b4b29d8c9a0f49f7e1",
+          "alt": "The question as printed on the paper — The diagram below shows two functions f(x) and g(x). The function f(x) is given by the formula f(x) = x³ + kx² + 15x + 8, where k∈ℤ, and x∈ℝ. y f(x) x g(x) Given that f′(3) = −12, show that k = −9, where f′(3) is the derivative of f(x) at x = 3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21283,6 +21371,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q4-b.png",
+          "srcHash": "7111ca8ceffa3fef6a206ed8971bbe0e",
+          "alt": "The question as printed on the paper — The diagram below shows two functions f(x) and g(x). The function f(x) is given by the formula f(x) = x³ + kx² + 15x + 8, where k∈ℤ, and x∈ℝ. y f(x) x g(x) The function g(x) is the line that passes through the two turning points of f(x) = x³ −9x² + 15x + 8, as shown on the previous page. Find the equation of g(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21319,6 +21415,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q4-c",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q4-c.png",
+          "srcHash": "1670630a3e59dbdfe04c4609843d67f1",
+          "alt": "The question as printed on the paper — The diagram below shows two functions f(x) and g(x). The function f(x) is given by the formula f(x) = x³ + kx² + 15x + 8, where k∈ℤ, and x∈ℝ. y f(x) x g(x) Show that the graph of g(x) contains the point of inflection of f(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21348,6 +21452,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q5-a.png",
+          "srcHash": "900880ef8319d75808076fd6e84575f3",
+          "alt": "The question as printed on the paper — A couple agree to take out a €250 000 mortgage in order to purchase a new home. The loan is to be paid back monthly over 25 years with the repayments due at the end of each month. The bank charges an annual percentage rate (APR) which is equivalent to a monthly rate of 0·287%. Using the amortisation formula, or otherwise, find the couples’ monthly repayment on the mortgage. Give your answer in euro correct to the nearest cent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21379,6 +21491,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q5-b.png",
+          "srcHash": "487520545f21ec02df3042243b5b2e3e",
+          "alt": "The question as printed on the paper — Another couple agree to take out a mortgage of €350 000, at a rate of 0·3% per month, in order to purchase a new home. This loan is also to be paid back monthly over 25 years with the repayments due at the end of each month. The amount of each repayment is €1771. After exactly 11 years of repayments, the couple receive a financial windfall. They decide to repay the remaining balance on the mortgage. Write down a series (including the first two and last two terms) which shows the total of the present values of all the remaining monthly repayments due over the remaining 14 years of the mortgage (after the last monthly repayment at the end of year 11). Hence, find how much the couple will need to repay in order to clear their mortgage entirely. Give your answer correct to the nearest cent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21416,6 +21536,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q6-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q6-a.png",
+          "srcHash": "470a9d245277b76b8c21edcf06d6a470",
+          "alt": "The question as printed on the paper — Differentiate (3x−5)(2x + 4) with respect to x from first principles.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21445,6 +21573,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q6-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q6-b-i.png",
+          "srcHash": "9cc08aa4d302f7f0a7748185c013733d",
+          "alt": "The question as printed on the paper — 2 ln(2x + 3) + C, where C is a constant. 1 (b) (i) h(x) = Find h′(x), the derivative of h(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21483,6 +21619,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q6-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q6-b-ii.png",
+          "srcHash": "723089fef24759ee190c2712cbfc5760",
+          "alt": "The question as printed on the paper — The diagram below shows part of the graph of the function h′(x). The shaded region in the diagram is between the graph and the x-axis, from x = 0 to x = A. This shaded region has an area of l square units. Find the value of A. y h′(x) x (0, 0)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21511,6 +21655,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q7-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q7-a-i.png",
+          "srcHash": "f43d4ab546dfe128ba7dc961697f0a88",
+          "alt": "The question as printed on the paper — A number of the form 1 + 2 + 3 + ⋯+ n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers. T₃ = 1 + 2 + 3 = 6 T₁ = 1 T₂ = 1 + 2 = 3 Complete the table below to list the next five triangular numbers. Term T₅ T₆ T₇ T₈ T₁ T₂ T₃ T₄ Triangular 1 3 6 Number",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21545,6 +21697,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q7-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q7-a-ii.png",
+          "srcHash": "cf5d1c9f127d9789627ab57ead225fe6",
+          "alt": "The question as printed on the paper — A number of the form 1 + 2 + 3 + ⋯+ n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers. T₃ = 1 + 2 + 3 = 6 T₁ = 1 T₂ = 1 + 2 = 3 Term T₅ T₆ T₇ T₈ T₁ T₂ T₃ T₄ Triangular 1 3 6 Number The nth triangular number can be found directly using the formula n(n + 1) Tₙ = . 2 Is 1275 a triangular number? Give a reason for your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21577,6 +21737,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q7-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q7-b-i.png",
+          "srcHash": "97c3b3ce280cc46c7bbc43c8b60f9018",
+          "alt": "The question as printed on the paper — The (n + 1)th triangular number can be written as Tₙ₊₁ = Tₙ + (n + 1), where n∈ℕ. Write the expression (nn(nn + 1))/2 + (nn + as a single fraction in its simplest form.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21612,6 +21780,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q7-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q7-b-ii.png",
+          "srcHash": "6dbfd26773aa40ec2c70b63e5886da39",
+          "alt": "The question as printed on the paper — (ii) Prove that the sum of any two consecutive triangular numbers will always be a square number (a number in the form k², where k∈ℕ).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21646,6 +21822,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q7-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q7-b-iii.png",
+          "srcHash": "c926f727d30a8b8d102522b60d518139",
+          "alt": "The question as printed on the paper — (iii) Two consecutive triangular numbers sum to 12 544. Find the smaller of these two numbers.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21675,6 +21859,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q7-c",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q7-c.png",
+          "srcHash": "b90823db1f21467ac72fae57a2a2ce32",
+          "alt": "The question as printed on the paper — A number of the form 1 + 2 + 3 + ⋯ + n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers: T₁ = 1, T₂ = 1 + 2 = 3, T₃ = 1 + 2 + 3 = 6. Some numbers are both triangular and square, for example 36. Leonhard Euler (1778) discovered the following formula for these numbers: Nₖ = (((3 + 2√2)^k − (3 − 2√2)^k)/(4√2))², where Nₖ is the kth number that is both triangular and square. Use Euler’s formula to find N₃, the third number that is both triangular and square.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21713,6 +21905,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q7-d",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q7-d.png",
+          "srcHash": "15bd8714639c71118644755bd4593932",
+          "alt": "The question as printed on the paper — (d) Prove using induction that, for all n∈ℕ, the sum of the first n square numbers can be found using the formula: n(n+1)(2n+1) 12 + 22 + 32 + 42 + ⋯+ n2 = . 6",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21746,6 +21946,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q8-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q8-a-i.png",
+          "srcHash": "8f0960544821529b9ff013e0264a44af",
+          "alt": "The question as printed on the paper — A rectangle is inscribed in a circle of radius 5 units and centre O(0, 0) as shown below. Let R(x, y), where x, y ∈ ℝ, be the vertex of the rectangle in the first quadrant as shown. 𝜋 Let 𝜃 be the angle between [O] and the positive x-axis, where 0 ≤ 𝜃≤ 2. y R(x, y) 5 x 𝜃 O The point R(x, y) can be written as (a cos 𝜃, bsin 𝜃), where a, b ∈ ℝ. Find the value of a and the value of b.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21778,6 +21986,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q8-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q8-a-ii.png",
+          "srcHash": "4b9255b203d3721cba7b3a507030512f",
+          "alt": "The question as printed on the paper — A rectangle is inscribed in a circle of radius 5 units and centre O(0, 0) as shown below. Let R(x, y), where x, y ∈ ℝ, be the vertex of the rectangle in the first quadrant as shown. 𝜋 Let 𝜃 be the angle between [O] and the positive x-axis, where 0 ≤ 𝜃≤ 2. y R(x, y) 5 x 𝜃 O Show that A(𝜃), the area of the rectangle, measured in square units, can be written as A(𝜃) = 50 sin 2𝜃.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21819,6 +22035,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q8-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q8-a-iii.png",
+          "srcHash": "4fa7b002fa7aa3e5c75309307beb8584",
+          "alt": "The question as printed on the paper — A rectangle is inscribed in a circle of radius 5 units and centre O(0, 0) as shown below. Let R(x, y), where x, y ∈ ℝ, be the vertex of the rectangle in the first quadrant as shown. 𝜋 Let 𝜃 be the angle between [O] and the positive x-axis, where 0 ≤ 𝜃≤ 2. y R(x, y) 5 x 𝜃 O (iii) Use calculus to show that the rectangle with maximum area is a square.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21851,6 +22075,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q8-a-iv",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q8-a-iv.png",
+          "srcHash": "0ac2d0771ef7979f0695e5c9d1dfd70b",
+          "alt": "The question as printed on the paper — A rectangle is inscribed in a circle of radius 5 units and centre O(0, 0) as shown below. Let R(x, y), where x, y ∈ ℝ, be the vertex of the rectangle in the first quadrant as shown. 𝜋 Let 𝜃 be the angle between [O] and the positive x-axis, where 0 ≤ 𝜃≤ 2. y R(x, y) 5 x 𝜃 O Show that A(𝜃), the area of the rectangle, measured in square units, can be written as A(𝜃) = 50 sin 2𝜃. (iii) Use calculus to show that the rectangle with maximum area is a square. (iv) Find this maximum area.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21890,6 +22122,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q8-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q8-b.png",
+          "srcHash": "10a3afecef330ebad419b0c439d3f628",
+          "alt": "The question as printed on the paper — A person who is 2 m tall is walking towards a streetlight of height 5 m at a speed of 1·5 m/s. Find the rate, in m/s, at which the length of the person’s shadow (x), cast by the streetlight, is changing. 5 m 1·5 m/s 2 m x l",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21921,6 +22161,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q9-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q9-a-i.png",
+          "srcHash": "a9ebcc8c9f9a9aa88e38640e29c7c841",
+          "alt": "The question as printed on the paper — The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0∙065t) where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t. Find the number of bacteria in the colony after 4·5 hours. Give your answer correct to the nearest whole number.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -21956,6 +22204,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q9-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q9-a-ii.png",
+          "srcHash": "7f6d3f4e0990f63fffcbe9c4df7cc940",
+          "alt": "The question as printed on the paper — The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0∙065t) where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t. Find the time, in hours, that it takes the colony to grow to 790 bacteria. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21987,6 +22243,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q9-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q9-b.png",
+          "srcHash": "faa984578c58bcccf79f8500c592ec4d",
+          "alt": "The question as printed on the paper — The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0∙065t) where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t. (b) Using the function N(t) = 450e^(0∙065t), find the average number of bacteria in the colony during the period from t = 3 to t = 12. Give your answer correct to the nearest whole number.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22022,6 +22286,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q9-c",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q9-c.png",
+          "srcHash": "a143355ced15b41342eb6ea8b62a9495",
+          "alt": "The question as printed on the paper — Find the rate at which N(t) = 450e^(0∙065t) is changing when t = 12. Give your answer correct to one decimal place. Interpret this value in the context of the question.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22056,6 +22328,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q9-d",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q9-d.png",
+          "srcHash": "0f03d08082f21b79f43e10eaa15be8f9",
+          "alt": "The question as printed on the paper — The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0∙065t) where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t. After k hours, the rate of increase of N(t) is greater than 90 bacteria per hour. Find the least value of k, where k∈ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22088,6 +22368,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p1-q9-e",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p1-q9-e.png",
+          "srcHash": "1fb7d09c319c0eaf7da90f0e548c1e82",
+          "alt": "The question as printed on the paper — The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0∙065t) where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t. The number of bacteria in the early stages of a different colony of bacteria can be approximated using the function: P(t) = 220e^(0·17t) where P(t) is the number of bacteria and t is measured in hours. Assume that both colonies start growing at the same time. Find the time, to the nearest hour, at which the number of bacteria in both colonies will be equal.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22124,6 +22412,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q1-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q1-a.png",
+          "srcHash": "c3f204edb77e26c3fd308a439f465795",
+          "alt": "The question as printed on the paper — The coordinates of three points are A(2, −6), B(6, −12), and C(−4, 3). Find the perpendicular distance from A to BC. Based on your answer, what can you conclude about the relationship between the points A, B, and C?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22163,6 +22459,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q1-b.png",
+          "srcHash": "4369d5b56b258066264292acceee93a9",
+          "alt": "The question as printed on the paper — The diagram below shows two lines a and b. The equation of a is x−2y + 1 = 0. The acute angle between a and b is 𝜃. Line b makes an angle of 60° with the positive sense of the x-axis, as shown in the diagram. Find the value of 𝜃, in degrees, correct to 3 decimal places. y x 60°",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22195,6 +22499,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q2-a.png",
+          "srcHash": "5c060af8799d3d21f5ea224dcced05d9",
+          "alt": "The question as printed on the paper — The circle c has equation x² + y²−4x + 2y−4 = 0. B(5, 8) The point A is the centre of the circle. The line l is a tangent to c at the point T, as shown in the diagram. The point B(5, 8) is on l. Find |BT|. T l",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22236,6 +22548,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q2-b.png",
+          "srcHash": "9c596057c5ce910a1e16474906c15bdd",
+          "alt": "The question as printed on the paper — Two circles, c₁ and c₂, have their centres on the x-axis. Each circle has a radius of 5 units. The point (1, 4) lies on each circle. Find the equation of c₁ and the equation of c₂.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22272,6 +22592,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q3-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q3-a.png",
+          "srcHash": "b8971873c3ff175e718501c057704acd",
+          "alt": "The question as printed on the paper — A flagpole [GH], shown in the diagram, is vertical and the ground is (a) H inclined at an angle of 5° to the horizontal between E and G. The angles of elevation from E and F to the top of the pole are 35° and 52° respectively. The distance from E to F along the incline is 6 m. Find how far F is from the base of the pole ( G) along the incline. Give your answer correct to two decimal places. 52° G 6 m 35° F E 5°",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22307,6 +22635,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q3-b.png",
+          "srcHash": "5428dccd6b568073202d1df48690ed7c",
+          "alt": "The question as printed on the paper — (b) In the diagram the large circle s has centre O and the small circle c has centre D. B s The circle c touches the circle s at the point C. OA and OB are tangents to c as shown. c The radius of c is r. C |∠BOA| = 60°. The ratio of the area of s D to the area of c is k∶1. r Find the value of k. ∟ A O",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22345,6 +22681,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q4-a.png",
+          "srcHash": "45d45caa6ba00f6a57961b2c0eb36488",
+          "alt": "The question as printed on the paper — Find the two values of 𝜃 for which tan 2 = − √3 , where 0 ≤ 𝜃≤4𝜋. (a)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22380,6 +22724,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q4-b.png",
+          "srcHash": "dc0dc912d9dd897429f0fb00ef138d24",
+          "alt": "The question as printed on the paper — The diagram shows OAB, a sector of a circle of radius 7 cm with centre O. (b) In the sector, |∠BOA| = 1·2 radians. A The area of the shaded region is 21 cm². Find |BC|. Give your answer correct to 1 decimal place. 21 cm2 1·2 B C O 7 cm",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22409,6 +22761,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q5-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q5-a-i.png",
+          "srcHash": "6370e0287e1b457b63762bfa6c50cf89",
+          "alt": "The question as printed on the paper — Two events A and B are such that P(A) = 4 and P(A∩B) = 2. (a) Find P(B|A). Give your answer as a fraction in its simplest form. (i) 11",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22446,6 +22806,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q5-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q5-a-ii.png",
+          "srcHash": "9f5121d2144529a7b6e84abfaf9abdef",
+          "alt": "The question as printed on the paper — Two events A and B are such that P(A) = 4 and P(A∩B) = 2. (a) (ii) P(A ∪ B) = 11/12. Investigate if the events A and B are independent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22475,6 +22843,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q5-b.png",
+          "srcHash": "6400c7ff3833e30bcd641cd994fc0a2f",
+          "alt": "The question as printed on the paper — A spinner consists of 4 segments, as shown. Each segment is equally likely to be landed on. Liam, Sorcha and Lee play a game in which the spinner 1 1 is spun twice and the numbers landed on are added together. The result is divided by 3 and the remainder is recorded. If the remainder is 0 then Liam wins the game. If the remainder is 1 then Sorcha wins the game. 3 2 If the remainder is 2 then Lee wins the game. Is this a fair game? (i.e. Are all 3 participants equally likely to win?) Justify your answer by relevant calculations.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22506,6 +22882,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q6-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q6-a.png",
+          "srcHash": "584002d003d0b6b61578f9fa97df6110",
+          "alt": "The question as printed on the paper — A class group carried out a study of the makes and fuel types of cars in a large carpark. It found that 30% of the cars ran on diesel and 70% of these diesel cars were Volkswagen. It found that 60% of the cars ran on petrol and 25% of these petrol cars were Volkswagen. It found that 10% of the cars were hybrid/electric and 9% of these cars were Volkswagen. One car is selected at random from the car park. Find the probability that it is a Volkswagen car.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22534,6 +22918,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q6-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q6-b-i.png",
+          "srcHash": "c5d87d2a87b59df9debd185cafe280f2",
+          "alt": "The question as printed on the paper — The Road Safety Authority has data on driving test pass rates at all its test centres. In a particular Driving Test Centre the probability that a person taking the test for the first time will pass is 1/4. All of the test results are independent. In this centre on a particular day Joe, along with 5 others, takes the test. All six are taking the test for the first time. Find the probability that Joe passes the test along with exactly 2 others. 14",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22567,6 +22959,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q6-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q6-b-ii.png",
+          "srcHash": "c4d351934a59173eedbc5bc74fe1853b",
+          "alt": "The question as printed on the paper — The Road Safety Authority has data on driving test pass rates at all its test centres. (ii) The overall pass rate for all drivers at another centre is 2 (Whether it is their first attempt or a subsequent attempt). On a particular day, n people take the test in this centre. The probability that two people or less than two people pass the test can be written in the form an2+ bn+ c 2n+1 where a, b, c∈ℕ. Find the value of a, the value of b, and the value of c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22598,6 +22998,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q7-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q7-a-i.png",
+          "srcHash": "6f950d2d4b5c56ba653b7286b51d4b09",
+          "alt": "The question as printed on the paper — A company makes biodegradable paper cups in the shape of a right circular cone. Each cup has a radius of 3∙3 cm and a slant height of 9 cm, as shown. Show that the vertical height of the cup is 8·37 cm, correct 9 cm to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22626,6 +23034,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q7-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q7-a-ii.png",
+          "srcHash": "5c68406cfefe8b969948ccad8cac40b8",
+          "alt": "The question as printed on the paper — A company makes biodegradable paper cups in the shape of a right circular cone. Each cup has a radius of 3∙3 cm and a slant height of 9 cm, as shown. 3·3 cm 9 cm Find the curved surface area of the cup correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22657,6 +23073,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q7-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q7-a-iii.png",
+          "srcHash": "c072f9df3c2c62a3a18a741b6568c06b",
+          "alt": "The question as printed on the paper — A company makes biodegradable paper cups in the shape of a right circular cone. Each cup has a radius of 3∙3 cm and a slant height of 9 cm, as shown. 3·3 cm 9 cm (iii) The diagram shows the net of the cup. Find, in degrees, the size of the angle 𝜃. 𝜃",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22693,6 +23117,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q7-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q7-b.png",
+          "srcHash": "9418e74906fa770d823fb3e328ab89fa",
+          "alt": "The question as printed on the paper — In order to avoid spillages each cup is marked with a dotted line at F which is 1 cm vertically below 1 cm the top of the cup, as shown. r cm Find the volume of water in the cup when it is filled 7∙37 cm as far as the dotted line. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22725,6 +23157,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q7-c",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q7-c.png",
+          "srcHash": "1cf77e3a5acdac41a409cc2ff39c61ae",
+          "alt": "The question as printed on the paper — Water flows into one of these cups through a cylindrical pipe of radius 0∙8 cm at a flow rate of 2·5 cm/sec. Find, to the nearest second, how long it will take to fill the cup to the line at F. 1 cm",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22759,6 +23199,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q7-d",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q7-d.png",
+          "srcHash": "2b584c48a9c157c2d4a24114bef80f3e",
+          "alt": "The question as printed on the paper — The company decides to change the position of the 3·3 cm line F in order to limit the capacity of the cup x to 60 cm³. How far, vertically below the rim of the cup, should the line F be drawn? Give your answer, in cm, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22791,6 +23239,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q8-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q8-a-i.png",
+          "srcHash": "92f9dc47036d4ef7de8d6959329cd6b8",
+          "alt": "The question as printed on the paper — An airline company Trans-sky Airways has designed an aptitude test for people applying for jobs as trainee pilots. The aptitude test is scored out of 500 marks. The results are normally distributed with a mean score of 280 and a standard deviation of 90. The top 25% of people taking the aptitude test are invited back for an interview. Find the minimum mark needed on the test in order to be invited back for interview.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22829,6 +23285,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q8-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q8-a-ii.png",
+          "srcHash": "6d29f3130cb87b1f67df70e224556256",
+          "alt": "The question as printed on the paper — An airline company Trans-sky Airways has designed an aptitude test for people applying for jobs as trainee pilots. The aptitude test is scored out of 500 marks. The results are normally distributed with a mean score of 280 and a standard deviation of 90. Anyone who scores above the 40th percentile can re-sit the test later. Eileen scored 260 marks in the test. Find out whether or not Eileen is eligible to re-sit the test.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22855,6 +23319,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q8-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q8-b-i.png",
+          "srcHash": "8c5b85d429e60588d3540506ce678594",
+          "alt": "The question as printed on the paper — Explain the relevance of the z-scores −1∙96 and 1∙96 in the standard normal distribution.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22889,6 +23361,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q8-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q8-b-ii.png",
+          "srcHash": "893300cee7999b0d98d64c0f9f4076ae",
+          "alt": "The question as printed on the paper — Trans-sky Airways surveyed 2500 of its passengers about a new service it proposed to introduce. The variable p̂ is the proportion of respondents in the survey who said they would use the new service. The radius of the 95% confidence interval of the survey was 0·01568. Find the value of p̂, where 0∙5 < p̂ ≤1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22922,6 +23402,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q8-c",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q8-c.png",
+          "srcHash": "0150bd4d9fa54522df617360d7542ef9",
+          "alt": "The question as printed on the paper — The weight of the Airline passengers’ carry-on luggage is normally distributed with a mean of 12 kg. The Airline has recently introduced a fee for non-carry-on luggage. After the fee was introduced, the Airline expected the mean weight of the carry-on luggage to change. They selected a random sample of 80 passengers and weighed their carry-on luggage. The sample mean was 13∙1 kg and the sample standard deviation was 4∙5 kg. Test the hypothesis, at the 5% level of significance, that the mean weight of the carry-on luggage has changed. State the null hypothesis and the alternative hypothesis. Give your conclusion in the context of the question.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22959,6 +23447,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q8-d",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q8-d.png",
+          "srcHash": "956735a3202be2413d1e3334cb79e135",
+          "alt": "The question as printed on the paper — The company bus can carry passengers up to a total maximum weight allowance of 3000 kg. The weight of passengers is normally distributed with a mean of 73 kg and a standard deviation of 12 kg. 40 passengers board the bus. Find the probability that the total passenger weight will be over the maximum weight allowance. Give your answer as a percentage correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22999,6 +23495,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q8-e",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q8-e.png",
+          "srcHash": "c3fa07fecd391e5709a5e9861ab22187",
+          "alt": "The question as printed on the paper — (e) A list consists of eight whole numbers. They are labelled from A to H as shown below. The numbers are all greater than zero and are ordered from smallest to largest. The difference between any two adjacent numbers is 2 or more. The median of the list is 12·5. The lower quartile (the median of the 4 lowest numbers) of the list is 7·5. The interquartile range is 12. The second largest number is 23, as shown. The range of the list is 21. The mean of the list is 13·5. Find the numbers which satisfy all of the above conditions and write them into the boxes below. A B C D E F G H 23",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23031,6 +23535,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q9-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q9-a.png",
+          "srcHash": "99698349120623309a43e164657585db",
+          "alt": "The question as printed on the paper — Two ships set sail at the same time, Ship A from Port A and Ship B from Port B. Port A is 90 km due west of Port B, as shown below. Ship A is traveling due east at a speed of 15 km/h. Ship B is travelling due south at a speed of 30 km/h. 90 km 15 km/h 30 km/h Find the distance between the two ships 30 minutes after they set sail. Give your answer in km, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23062,6 +23574,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q9-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q9-b.png",
+          "srcHash": "4d0d333e59dba508388ce534f0dff45a",
+          "alt": "The question as printed on the paper — Two ships set sail at the same time, Ship A from Port A and Ship B from Port B. Port A is 90 km due west of Port B, as shown below. Ship A is traveling due east at a speed of 15 km/h. Ship B is travelling due south at a speed of 30 km/h. 90 km 15 km/h 30 km/h t is the time in hours after the ships set sail. Show that the distance between the ships at time t can be given by the function + 8100) 1/2, s(t) = (1125t²−2700t + 8100) where 0 ≤ t ≤ 6.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23097,6 +23617,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-HL-ask-p2-q9-c",
+          "src": "/exam-figures/maths/markbank/maths-2020-HL-ask-p2-q9-c.png",
+          "srcHash": "352ef2dcf162d54fa1476df2bd5296cb",
+          "alt": "The question as printed on the paper — Two ships set sail at the same time, Ship A from Port A and Ship B from Port B. Port A is 90 km due west of Port B, as shown below. Ship A is traveling due east at a speed of 15 km/h. Ship B is travelling due south at a speed of 30 km/h. 90 km 15 km/h 30 km/h Use calculus to find the value of t when the ships are closest to each other, and find the distance between the ships at your value of t. Give the distance in km, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23137,6 +23665,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q1-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q1-a.png",
+          "srcHash": "95eb2b5e5573f49731f221d1414a35ea",
+          "alt": "The question as printed on the paper — In the expansion of (2x + 1)(x² + px + 4), where p ∈ ℕ, the coefficient of x is twice the coefficient of x². Find the value of p.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23176,6 +23712,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q1-b.png",
+          "srcHash": "ab3cd088b3b65727d3471c1299e8c697",
+          "alt": "The question as printed on the paper — 3 2 2 1 1 (b) Solve the equation 3x−1where x ≠ − 3, and xℝ. 2x + 1 + 5 = 2,",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23206,6 +23750,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q2-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q2-a-i.png",
+          "srcHash": "c8250ea3cefab24bb25f7db83796d974",
+          "alt": "The question as printed on the paper — The graph of the function f(x) = 3^x, where x ∈ ℝ, cuts the y-axis at (0, 1) as shown in the diagram below. Draw the graph of the function g(x) = 4x + 1 on the diagram.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23238,6 +23790,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q2-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q2-a-ii.png",
+          "srcHash": "a0574be4eba322706b7be0242afff492",
+          "alt": "The question as printed on the paper — The graph of the function f(x) = 3^x, where x ∈ ℝ, cuts the y-axis at (0, 1) as shown in the diagram below. Part (a)(i): Draw the graph of the function g(x) = 4x + 1 on the diagram. Use substitution to verify that f(x) < g(x), for x = 1·9.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23280,6 +23840,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q2-b.png",
+          "srcHash": "7efb9af894c61c22a2fbcefe75bc5183",
+          "alt": "The question as printed on the paper — The graph of the function f(x) = 3^x, where x ∈ ℝ, cuts the y-axis at (0, 1) as shown in the diagram below. Part (a)(i): Draw the graph of the function g(x) = 4x + 1 on the diagram. Prove, using induction, that f(n) ≥ g(n), where n ≥ 2 and n ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23306,6 +23874,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q3-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q3-a.png",
+          "srcHash": "2728d6f3aa8ca5a703b00403614f5fd8",
+          "alt": "The question as printed on the paper — Factorise fully: 3x−9x + 4y−12.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23347,6 +23923,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q3-b.png",
+          "srcHash": "86d56d2320c4d607d3c24b10657787fb",
+          "alt": "The question as printed on the paper — Part (a): Factorise fully: 3xy − 9x + 4y − 12. g(x) = 3x ln x − 9x + 4 ln x − 12. Using your answer to part (a) or otherwise, solve g(x) = 0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23380,6 +23964,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q3-c",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q3-c.png",
+          "srcHash": "029cbc749872a8e2f206ff0f6d6181b8",
+          "alt": "The question as printed on the paper — g(x) = 3xlnx−9x + 4lnx−12. Evaluate g′(e)correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23407,6 +23999,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q4-a.png",
+          "srcHash": "97a213baa99aca5609dffd7d9232f081",
+          "alt": "The question as printed on the paper — Find ∫(4x³ − 6x + 10) dx.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23442,6 +24042,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q4-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q4-b-i.png",
+          "srcHash": "cdb86edfdd10e2fe884feab24c353a5d",
+          "alt": "The question as printed on the paper — Part of the graph of a cubic function f(x) is shown below (graph not to scale). The graph cuts the x-axis at the three points A(2, 0), B, and C. Given that f′(x) = 6x² − 54x + 109, show that f(x) = 2x³ − 27x² + 109x − 126.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23484,6 +24092,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q4-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q4-b-ii.png",
+          "srcHash": "16e5ac8520fccce8640d28fbf646ab4d",
+          "alt": "The question as printed on the paper — Part of the graph of a cubic function f(x)is shown below (graph not to scale). The graph cuts the x‐axis at the three points A(2, 0), B, and C. y f(x) x A(2, 0) Find the co‐ordinates of the point B and the point C.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23524,6 +24140,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q5-a.png",
+          "srcHash": "413bbf2bb1efc1ef80df92c9b06e2e26",
+          "alt": "The question as printed on the paper — 3 + 2iis a root of z² + pz + q = 0, where pqℝ, and i² = −1. Find the value of pand the value of q.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23557,6 +24181,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q5-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q5-b-i.png",
+          "srcHash": "6b8c4dee9d4505e031a41ba573a02bca",
+          "alt": "The question as printed on the paper — v = 2 −2√3i. Write vin the form r(cos 𝜃+iiin 𝜃), where rℝand 0 ≤ 𝜃≤2𝜋.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23593,6 +24225,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q5-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q5-b-ii.png",
+          "srcHash": "a8bf6aa450153751651b27c426df31a9",
+          "alt": "The question as printed on the paper — v = 2 −2√3i. Write vin the form r(cos 𝜃+iiin 𝜃), where rℝand 0 ≤ 𝜃≤2𝜋. Use your answer to part (b)(i) to find the two possible values of w, where w² = v. Give your answers in the form a + i, where abℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23632,6 +24272,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q6-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q6-a-i.png",
+          "srcHash": "0d62cd8dc148d025b32f432b14ce04ba",
+          "alt": "The question as printed on the paper — (a) (i) Given that x−√32 = √128 −5x, find the value of x, where xℝ. Give your answer in the form a√2, where aℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23664,6 +24312,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q6-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q6-a-ii.png",
+          "srcHash": "0dae4c7659baab018c5e8b492161f30c",
+          "alt": "The question as printed on the paper — A = ቄ√32k², √50k², √128k², √98k²ቅ, where kℕ. Show that the mean of set A is equal to the median of set A.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23703,6 +24359,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q6-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q6-b.png",
+          "srcHash": "421d89964cbc7b0446bc2e80bb08401e",
+          "alt": "The question as printed on the paper — Prove, using contradiction, that √2 is not a rational number.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23736,6 +24400,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q7-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q7-a-i.png",
+          "srcHash": "60eb91521caf1a14407136b150e4f8cf",
+          "alt": "The question as printed on the paper — The closed line segment [0, 1] is shown below. The first three steps in the construction of the Cantor Set are also shown: •Step 1 removes the open middle third of the line segment [0, 1] leaving two closed line segments (i.e. the end points of the segments remain in the Cantor Set) •Step 2 removes the middle third of the two remaining segments leaving four closed line segments Step 3 removes the middle third of the four remaining segments leaving eight closed line • segments. The process continues indefinitely. The set of points in the line segment [0, 1] that are not removed during the process is the Cantor Set. 0 1 1 A 0 1 3 Step 1 1 2 1 B D C 0 1 9 3 3 Step 2 1 1 1 2 1 E F 27 9 0 3 3 Step 3 Complete the table below to show the length of the line segment(s) removed at each step for the first 5 steps. Give your answers as fractions. Step Step 5 Step1 Step 2 Step 3 Step 4 Length Removed 1/3 2/9",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23767,6 +24439,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q7-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q7-a-ii.png",
+          "srcHash": "6710b919004961d44e2d0ab9eb8b35ae",
+          "alt": "The question as printed on the paper — The closed line segment [0, 1] is shown below. The first three steps in the construction of the Cantor Set are also shown: •Step 1 removes the open middle third of the line segment [0, 1] leaving two closed line segments (i.e. the end points of the segments remain in the Cantor Set) •Step 2 removes the middle third of the two remaining segments leaving four closed line segments Step 3 removes the middle third of the four remaining segments leaving eight closed line • segments. The process continues indefinitely. The set of points in the line segment [0, 1] that are not removed during the process is the Cantor Set. 0 1 1 A 0 1 3 Step 1 1 2 1 B D C 0 1 9 3 3 Step 2 1 1 1 2 1 E F 27 9 0 3 3 Step 3 Find the total length of all of the line segments removed from the initial line segment of length 1 unit, after a finite number (n) of steps in the process. Give your answer in terms of n.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23802,6 +24482,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q7-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q7-a-iii.png",
+          "srcHash": "e1b7e1ea3001eff59d5cd5fcdd13ebd5",
+          "alt": "The question as printed on the paper — The closed line segment [0, 1] is shown below. The first three steps in the construction of the Cantor Set are also shown: •Step 1 removes the open middle third of the line segment [0, 1] leaving two closed line segments (i.e. the end points of the segments remain in the Cantor Set) •Step 2 removes the middle third of the two remaining segments leaving four closed line segments Step 3 removes the middle third of the four remaining segments leaving eight closed line • segments. The process continues indefinitely. The set of points in the line segment [0, 1] that are not removed during the process is the Cantor Set. 0 1 1 A 0 1 3 Step 1 1 2 1 B D C 0 1 9 3 3 Step 2 1 1 1 2 1 E F 27 9 0 3 3 Step 3 Find the total length removed, from the initial line segment, after an infinite number of steps of the process.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23833,6 +24521,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q7-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q7-b-i.png",
+          "srcHash": "6628c935c0e3f7ebef973f44a0ba9f3d",
+          "alt": "The question as printed on the paper — The closed line segment [0, 1] is shown below. The first three steps in the construction of the Cantor Set are also shown: •Step 1 removes the open middle third of the line segment [0, 1] leaving two closed line segments (i.e. the end points of the segments remain in the Cantor Set) •Step 2 removes the middle third of the two remaining segments leaving four closed line segments Step 3 removes the middle third of the four remaining segments leaving eight closed line • segments. The process continues indefinitely. The set of points in the line segment [0, 1] that are not removed during the process is the Cantor Set. 0 1 1 A 0 1 3 Step 1 1 2 1 B D C 0 1 9 3 3 Step 2 1 1 1 2 1 E F 27 9 0 3 3 Step 3 (b) (i) Complete the table below to identify the end‐points labelled in the diagram. Give your answers as fractions. Label E F A B C D End‐point",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23862,6 +24558,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q7-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q7-b-ii.png",
+          "srcHash": "648da0af1fa1ec016330103a1e91eb65",
+          "alt": "The question as printed on the paper — The closed line segment [0, 1] is shown below. The first three steps in the construction of the Cantor Set are also shown: •Step 1 removes the open middle third of the line segment [0, 1] leaving two closed line segments (i.e. the end points of the segments remain in the Cantor Set) •Step 2 removes the middle third of the two remaining segments leaving four closed line segments Step 3 removes the middle third of the four remaining segments leaving eight closed line • segments. The process continues indefinitely. The set of points in the line segment [0, 1] that are not removed during the process is the Cantor Set. 0 1 1 A 0 1 3 Step 1 1 2 1 B D C 0 1 9 3 3 Step 2 1 1 1 2 1 E F 27 9 0 3 3 Step 3 (ii) Give a reason why 1/3 − 1/9 + 1/27 − 1/81 is a point in the Cantor Set.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23896,6 +24600,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q7-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q7-b-iii.png",
+          "srcHash": "a878e83008061a1646f8b542927691f4",
+          "alt": "The question as printed on the paper — The closed line segment [0, 1] is shown below. The first three steps in the construction of the Cantor Set are also shown: •Step 1 removes the open middle third of the line segment [0, 1] leaving two closed line segments (i.e. the end points of the segments remain in the Cantor Set) •Step 2 removes the middle third of the two remaining segments leaving four closed line segments Step 3 removes the middle third of the four remaining segments leaving eight closed line • segments. The process continues indefinitely. The set of points in the line segment [0, 1] that are not removed during the process is the Cantor Set. 0 1 1 A 0 1 3 Step 1 1 2 1 B D C 0 1 9 3 3 Step 2 1 1 1 2 1 E F 27 9 0 3 3 Step 3 (iii) The limit of the series 1/3 − 1/9 + 1/27 − ڮ is a point in the Cantor Set. Find this point.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23928,6 +24640,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q8-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q8-a.png",
+          "srcHash": "6c6913c022fd300b76c6f6293c10c588",
+          "alt": "The question as printed on the paper — The weekly revenue produced by a company manufacturing air conditioning units is seasonal. The revenue (in euro) can be approximated by the function: r(t) = 22 500 cos((π/26)t) + 37 500, t ≥ 0, where t is the number of weeks measured from the beginning of July and ((π/26)t) is in radians. Find the approximate revenue produced 20 weeks after the beginning of July. Give your answer correct to the nearest euro.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23963,6 +24683,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q8-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q8-b.png",
+          "srcHash": "d62a69a4e2e063c1f9ffbc9f472e913e",
+          "alt": "The question as printed on the paper — The weekly revenue produced by a company manufacturing air conditioning units is seasonal. The revenue (in euro) can be approximated by the function: r(t) = 22 500 cos((π/26)t) + 37 500, t ≥ 0, where t is the number of weeks measured from the beginning of July and ((π/26)t) is in radians. Find the two values of the time t, within the first 52 weeks, when the revenue is approximately €26 250.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23992,6 +24720,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q8-c",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q8-c.png",
+          "srcHash": "986882842ee6271aa7e0013d1c388090",
+          "alt": "The question as printed on the paper — The weekly revenue produced by a company manufacturing air conditioning units is seasonal. The revenue (in euro) can be approximated by the function: r(t) = 22 500 cos((π/26)t) + 37 500, t ≥ 0, where t is the number of weeks measured from the beginning of July and ((π/26)t) is in radians. Find r′(t), the derivative of r(t) = 22 500 cos((π/26)t) + 37 500.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24027,6 +24763,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q8-d",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q8-d.png",
+          "srcHash": "4be66b332799e00e2f0e0bc492c07b2a",
+          "alt": "The question as printed on the paper — The weekly revenue produced by a company manufacturing air conditioning units is seasonal. The revenue (in euro) can be approximated by the function: r(t) = 22 500 cos((π/26)t) + 37 500, t ≥ 0, where t is the number of weeks measured from the beginning of July and ((π/26)t) is in radians. Use calculus to show that the revenue is increasing 30 weeks after the beginning of July.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24066,6 +24810,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q8-e",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q8-e.png",
+          "srcHash": "34a72a56461adeb4154f0bd8d247992f",
+          "alt": "The question as printed on the paper — The weekly revenue produced by a company manufacturing air conditioning units is seasonal. The revenue (in euro) can be approximated by the function: r(t) = 22 500 cos((π/26)t) + 37 500, t ≥ 0, where t is the number of weeks measured from the beginning of July and ((π/26)t) is in radians. Find a value for the time t, within the first 52 weeks, when the revenue is at a minimum. Use r′′(t), to verify your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24096,6 +24848,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q9-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q9-a-i.png",
+          "srcHash": "9647172e53d7c9803d9a1bf8692284bd",
+          "alt": "The question as printed on the paper — y Photograph by Lionel Wall. x http://greatenglishchurches.co.uk/html/castle_rising/html Norman windows consist of a rectangle topped by a semi‐circle as shown above. Let the height of the rectangle be ymetres and the radius of the semi‐circle be xmetres as shown. The perimeter of the window is P. Write P in terms of xy, and 𝜋.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24130,6 +24890,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q9-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q9-a-ii.png",
+          "srcHash": "516f42698e217417622445556df98cbb",
+          "alt": "The question as printed on the paper — Norman windows consist of a rectangle topped by a semi-circle as shown above. Let the height of the rectangle be y metres and the radius of the semi-circle be x metres as shown. The perimeter of the window is P. In a particular Norman window the perimeter P = 12 metres. Show that y = (12 − (2 + π)x)/2 for 0 ≤ x ≤ 12/(2 + π) where x ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24163,6 +24931,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q9-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q9-b-i.png",
+          "srcHash": "7a2fb4343be871319f580c6c4de58b2c",
+          "alt": "The question as printed on the paper — Norman windows consist of a rectangle topped by a semi-circle as shown above. Let the height of the rectangle be y metres and the radius of the semi-circle be x metres as shown. The perimeter of the window is P. Part (a)(ii): In a particular Norman window the perimeter P = 12 metres. Show that y = (12 − (2 + π)x)/2 for 0 ≤ x ≤ 12/(2 + π) where x ∈ ℝ. (i) Complete the table on the right. x: 0, 12/(2 + π). y = (12 − (2 + π)x)/2: _, _. (ii) On the diagram below, draw the graph of the linear function, y = (12 − (2 + π)x)/2 for 0 ≤ x ≤ 12/(2 + π) where x ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24199,6 +24975,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q9-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q9-b-iii.png",
+          "srcHash": "01644780cd25e4437760bf854b59b2dc",
+          "alt": "The question as printed on the paper — y Photograph by Lionel Wall. x http://greatenglishchurches.co.uk/html/castle_rising/html Norman windows consist of a rectangle topped by a semi‐circle as shown above. Let the height of the rectangle be ymetres and the radius of the semi‐circle be xmetres as shown. The perimeter of the window is P. Find the slope of the graph of y, correct to 2 decimal places. Interpret this slope in the context of the question.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24230,6 +25014,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q9-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q9-c-i.png",
+          "srcHash": "ee15e006c4a3b0894712a3a3ff46c538",
+          "alt": "The question as printed on the paper — The Norman window shown below has a perimeter of 12 metres and yy = 12−(2 + 𝜋)x ./2 Show that the function aa(xx) = (24x−(𝜋+4)x²)/2 a(x) = represents the area of the window, in terms of xand 𝜋.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24258,6 +25050,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q9-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q9-c-ii.png",
+          "srcHash": "3f1c6df0893c1f4019be56a5891e826b",
+          "alt": "The question as printed on the paper — The Norman window shown below has a perimeter of 12 metres and yy = 12−(2 + 𝜋)x ./2 Show that the function aa(xx) = (24x−(𝜋+4)x²)/2 a(x) = represents the area of the window, in terms of xand 𝜋. (ii) Find a′(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24294,6 +25094,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p1-q9-c-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p1-q9-c-iii.png",
+          "srcHash": "7757e8953073c6804dda44beda3cc96b",
+          "alt": "The question as printed on the paper — The Norman window shown below has a perimeter of 12 metres and yy = 12−(2 + 𝜋)x ./2 Show that the function aa(xx) = (24x−(𝜋+4)x²)/2 a(x) = represents the area of the window, in terms of xand 𝜋. Find the relationship between xand ywhen the area of the window in part (c)(i) is at its maximum.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24325,6 +25133,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q1-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q1-a-i.png",
+          "srcHash": "4e5848c1fd8c4630cffa696f14f273dc",
+          "alt": "The question as printed on the paper — A class consists of 12 boys and 8 girls. Two students are selected at random from the class. What is the probability that the two students selected will be a boy and a girl in any order?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24358,6 +25174,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q1-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q1-a-ii.png",
+          "srcHash": "c0efdccbf82831aaa72d5d07898da703",
+          "alt": "The question as printed on the paper — A class consists of 12 boys and 8 girls. Four students are selected, one at a time, at random from the class. What is the probability that the first three students selected will be boys and the fourth will be a girl?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24386,6 +25210,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q1-b.png",
+          "srcHash": "553b931e2b109d851504eb7031176458",
+          "alt": "The question as printed on the paper — An examination paper is made up of two sections, Section A consisting of 7 questions and Section B consisting of 8 questions. The paper contains the following instruction: “From section A you must answer question 1 and any three other questions. From Section B you must also answer any four questions.” Find how many different combinations of questions may be answered if a candidate follows this instruction.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24423,6 +25255,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q2-a.png",
+          "srcHash": "7ebea47f30fd95a3d0318e6f1b452a37",
+          "alt": "The question as printed on the paper — The line pmakes an intercept on the x-axis at (a0) and on the y-axis at (0, b), where ab0. x/a + y/b = 1. Show that the equation of pcan be written as y (0, b) p x (a0) (a0)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24451,6 +25291,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q2-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q2-b-i.png",
+          "srcHash": "6bf970c2e679f75a63fd1a9183730f16",
+          "alt": "The question as printed on the paper — The line lhas a slope m, and contains the point A6, 0). Write the equation of the line lin terms of m.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24485,6 +25333,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q2-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q2-b-ii.png",
+          "srcHash": "5f50fe78b61e4f34e068d44e91234a16",
+          "alt": "The question as printed on the paper — The line lhas a slope m, and contains the point A6, 0). The line lcuts the line k4x + 3y25 at P. Find the co-ordinates of Pin terms of m. Give each co-ordinate as a fraction in its simplest form.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24517,6 +25373,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q3-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q3-a.png",
+          "srcHash": "135c2dda951adee2926aa56e4869022d",
+          "alt": "The question as printed on the paper — The point (−2, k) is on the circle (x2)² + (y3)² = 65. Find the two possible values of k, where kℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24557,6 +25421,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q3-b.png",
+          "srcHash": "a18c504cd814a979fdf48ac4a3c3ab5b",
+          "alt": "The question as printed on the paper — The circle sis in the first quadrant. It touches both the x-axis and the y-axis. The line t3x−4y6 = 0 is a tangent to sas shown. Find the equation of s. y s t x",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24591,6 +25463,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q4-a.png",
+          "srcHash": "e8a60f2d4bb31d04d5b0f2a2dd07b401",
+          "alt": "The question as printed on the paper — Show that cos 2𝜃1 −2 sin²𝜃.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24624,6 +25504,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q4-b.png",
+          "srcHash": "337bd45cb30cb1489b9c79e7c035815d",
+          "alt": "The question as printed on the paper — Find the cosine of the acute angle between two diagonals of a cube.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24653,6 +25541,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q5-a.png",
+          "srcHash": "81c3699e8540d98ba65c43b1e7e302f2",
+          "alt": "The question as printed on the paper — (a) Construct and label the orthocentre of the triangle ABC in the diagram below. Show any construction lines or arcs clearly. C B A",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24688,6 +25584,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q5-b.png",
+          "srcHash": "4647c6a704953b30ffcded846987383c",
+          "alt": "The question as printed on the paper — (b) In the diagram below O is the centre of circle s. [AB] is a diameter of s. BE is a tangent to s at point B. [CD] is a chord of circle s. 1 |CD| = 1/2 |AB| and CD is parallel to AB. |CD| = Find, with justification, |∠BEA|. A s D O C B E",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24720,6 +25624,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q6-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q6-a.png",
+          "srcHash": "160014124d284dba7b32410e09fb731e",
+          "alt": "The question as printed on the paper — (a) Two independent events F and S are represented in the Venn diagram shown below. 1 1 PF ∖S) = 4, PF ⋂S) = 5, PS ∖F) = x, and PF ∪S)′ = y, where xy0. Find the value of xand the value of y. S F 1 1 x 4 5 y",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24760,6 +25672,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q6-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q6-b.png",
+          "srcHash": "b0414d3774dc28f7bc7d45a8d55b87cd",
+          "alt": "The question as printed on the paper — In a club there are German, Irish and Spanish children only. There are 10 Spanish children. There are twice as many Irish children as German children. They are all in a group waiting to get on a swing. One child will be selected at random to go first and will not re-join the group. Then a second child will be selected at random to go next. The probability that the first child selected will be German and that the second child selected will not be German is 1/6 Find how many children are in the club.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24792,6 +25712,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q7-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q7-a-i.png",
+          "srcHash": "c0a7c88abbb86d22ffeca9007301b404",
+          "alt": "The question as printed on the paper — (a) A cattle feeding trough of uniform cross section and 2·5 m in length, is shown in Figure 1. The front of the trough (segment ABC) is shown in Figure 2. The front of the trough is a segment of a circle of radius 90 cm. The height of the trough, |DB|, is 30 cm. |OA| = |OC| = |OB| = 90 cm. [OB]⊥[AC]. O C D A A C 30 cm B B Figure 2 Figure 1 Find |AD|. Give your answer in the form a√bcm, where abℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24823,6 +25751,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q7-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q7-a-ii.png",
+          "srcHash": "7ae8a86f5c85662d724b0907d5e07d32",
+          "alt": "The question as printed on the paper — A cattle feeding trough of uniform cross section and 2·5 m in length, is shown in Figure 1. The front of the trough (segment ABC) is shown in Figure 2. The front of the trough is a segment of a circle of radius 90 cm. The height of the trough, |DB|, is 30 cm. |OA| = |OC| = |OB| = 90 cm. [OB] ⊥ [AC]. Find |∠DOA|. Give your answer in radians, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24859,6 +25795,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q7-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q7-a-iii.png",
+          "srcHash": "0a33f662e34833b32a6d5d7a89eed7d8",
+          "alt": "The question as printed on the paper — (a) A cattle feeding trough of uniform cross section and 2·5 m in length, is shown in Figure 1. The front of the trough (segment ABC) is shown in Figure 2. The front of the trough is a segment of a circle of radius 90 cm. The height of the trough, |DB|, is 30 cm. |OA| = |OC| = |OB| = 90 cm. [OB]⊥[AC]. O C D A A C 30 cm B B Figure 2 Figure 1 Find the area of the segment ABC. Give your answer in m² correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24890,6 +25834,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q7-a-iv",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q7-a-iv.png",
+          "srcHash": "4adddca16f9a10786ba0d5f6723f393c",
+          "alt": "The question as printed on the paper — (a) A cattle feeding trough of uniform cross section and 2·5 m in length, is shown in Figure 1. The front of the trough (segment ABC) is shown in Figure 2. The front of the trough is a segment of a circle of radius 90 cm. The height of the trough, |DB|, is 30 cm. |OA| = |OC| = |OB| = 90 cm. [OB]⊥[AC]. O C D A A C 30 cm B B Figure 2 Figure 1 Find the volume of the trough. Give your answer in m³, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24920,6 +25872,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q7-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q7-b-i.png",
+          "srcHash": "b4f0baec96a9ed99b6726f9d4c1efbb8",
+          "alt": "The question as printed on the paper — A sand timer for games is shown in the diagram. Each half of the timer consists of a hemisphere, 1·25 cm a cylinder of height 3·5 cm and a cone of height 1·5 cm. All of the parts have a radius of 1·25 cm. 3·5 cm 1·5 cm The upper half of the timer is full of sand. Find the volume of sand in the upper half of the timer. Give your answer in cm³ correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24954,6 +25914,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q7-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q7-b-ii.png",
+          "srcHash": "26e95555d99c3600817400fd9a46dcc2",
+          "alt": "The question as printed on the paper — A sand timer for games is shown in the diagram. Each half of the timer consists of a hemisphere, 1·25 cm a cylinder of height 3·5 cm and a cone of height 1·5 cm. All of the parts have a radius of 1·25 cm. 3·5 cm Sand flows from the top half of the timer into the bottom part. As it flows the top surfaces in both parts remain level. At a certain time, 98% of the sand has flowed into the bottom half of the timer. Find h, the height of the remaining sand (in the conical part of the top of the timer). Give your answer in cm, correct to 2 decimal places. 1·25 cm r cm 1·5 cm h cm",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24985,6 +25953,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q8-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q8-a-i.png",
+          "srcHash": "ccb22edb6ef7a09cb96c4f1d8afc8360",
+          "alt": "The question as printed on the paper — A motoring magazine collected data on cars on a particular stretch of road. Certain details on 800 cars were recorded. The ages of the 800 cars were recorded. 174 of them were new (less than 1 year old). Find the 95% confidence interval for the proportion of new cars on this road. Give your answer correct to 4 significant figures.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25019,6 +25995,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q8-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q8-a-ii.png",
+          "srcHash": "469a165fba85bee84b3a93200d2fe872",
+          "alt": "The question as printed on the paper — A motoring magazine collected data on cars on a particular stretch of road. Certain details on 800 cars were recorded. The data on the speeds of these 800 vehicles is normally distributed with an average speed of 87·3 km per hour and a standard deviation of 12 km per hour. What proportion of cars on this stretch of road would you expect to find travelling at over 95 km per hour?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25051,6 +26035,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q8-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q8-a-iii.png",
+          "srcHash": "52b398fdb418cf845f1e44c53833845f",
+          "alt": "The question as printed on the paper — A motoring magazine collected data on cars on a particular stretch of road. Certain details on 800 cars were recorded. The driver of a car was told that 70% of all the speeds recorded were higher than his speed. Find the speed at which this driver was recorded. Give your answer correct to the nearest whole number.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25079,6 +26071,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q8-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q8-b-i.png",
+          "srcHash": "bdbffe5b9eb171e6bd64c754d5506b08",
+          "alt": "The question as printed on the paper — A road safety programme was carried out in the area using posters, signs and radio slots. After the programme the motoring magazine recorded the speeds of 100 passing cars. The magazine carried out a hypothesis test, at the 5% level of significance, to determine whether the average speed had changed. The p-value of the test was 0·024. What can the magazine conclude based on this p-value? Give a reason for your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25115,6 +26115,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q8-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q8-b-ii.png",
+          "srcHash": "375738ef528911e5da42b7f465566b97",
+          "alt": "The question as printed on the paper — The magazine found that the average speed of this sample was lower than the previously established average speed of 87·3 km per hour. Find the average speed of the cars in this sample, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25147,6 +26155,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q9-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q9-a.png",
+          "srcHash": "b1111ed8ab6842847653c75db0b580a4",
+          "alt": "The question as printed on the paper — The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P. S P r 68° Find |SG|. Give your answer in metres, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25178,6 +26194,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q9-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q9-b.png",
+          "srcHash": "8064fda2b0cbb1256533a6db031f4658",
+          "alt": "The question as printed on the paper — The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P. S P r 68° Find |∠HSG|. Give your answer in degrees, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25206,6 +26230,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q9-c",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q9-c.png",
+          "srcHash": "3751fae990bb518cd6ffd37ea02b7966",
+          "alt": "The question as printed on the paper — The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P. S P r 68° Find the area of ∆SGH. Give your answer in m², correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25236,6 +26268,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q9-d-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q9-d-i.png",
+          "srcHash": "0bae569f57759ef7b6bdbf6a822e9abe",
+          "alt": "The question as printed on the paper — The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P. S P r 68° Find the area of ∆HSP, in terms of r, where ris the radius of the helicopter pad.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25268,6 +26308,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q9-d-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q9-d-ii.png",
+          "srcHash": "210feeb782f942d63c4c833cfb2f6035",
+          "alt": "The question as printed on the paper — The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P. S P r 68° Show that the area of ∆SGH, in terms of r, can be written as 71·2rm².",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25297,6 +26345,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q9-d-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q9-d-iii.png",
+          "srcHash": "eb157eb90558f86b99d8ec95be7bc15b",
+          "alt": "The question as printed on the paper — The diagram below shows a triangular patch of ground ∆SGH, with |SH| = 58 m, |GH| = 30 m, and |∠GHS| = 68°. The circle is a helicopter pad. It is the incircle of ∆SGH and has centre P. S P r 68° Find the value of r. Give your answer in metres, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25330,6 +26386,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-HL-ask-p2-q9-e",
+          "src": "/exam-figures/maths/markbank/maths-2019-HL-ask-p2-q9-e.png",
+          "srcHash": "12af1728f4941e92ca2cfe1881f47818",
+          "alt": "The question as printed on the paper — [ST]is a vertical pole at the point S. The angle of elevation of the top of the pole from the point P is 14°. Find the height of the pole. T Give your answer, in metres, correct to 1 decimal place. S P",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25371,6 +26435,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q1-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q1-a.png",
+          "srcHash": "7a2e40c37cbcc536d72183893459d6f9",
+          "alt": "The question as printed on the paper — (a) Solve the simultaneous equations. 2x+ 3y− z = −4 3x+ 2y+ 2z = 14 x −3z = −13 Solve the inequality 2x−3",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25408,6 +26480,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q1-b.png",
+          "srcHash": "6b543734096f9ac3a0d8c57ee33eb45e",
+          "alt": "The question as printed on the paper — x + 2 ≥ 3, where x∈ℝ and x ≠ −2. (b)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25443,6 +26523,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q2-a.png",
+          "srcHash": "412fd3bae33dc99ff67ddc8ddea3fa44",
+          "alt": "The question as printed on the paper — The first three terms of a geometric series are x², 5x−8, and x + 8, where x∈ℝ. Use the common ratio to show that x³−17x² + 80x−64 = 0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25477,6 +26565,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q2-b.png",
+          "srcHash": "cb614e0677db0f15595d38cc7dc441a2",
+          "alt": "The question as printed on the paper — If f(x) = x³−17x² + 80x−64, x∈ℝ, show that f(1) = 0, and find another value of x for which f(x) = 0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25518,6 +26614,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q2-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q2-c.png",
+          "srcHash": "a690e3ea0ee2f221d3d30fdbe540c787",
+          "alt": "The question as printed on the paper — In the case of one of the values of x from part (b), the terms in part (a) will generate a geometric series with a finite sum to infinity. Find this value of x and hence find the sum to infinity.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25553,6 +26657,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q3-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q3-a.png",
+          "srcHash": "a20409599e6ed66e579e6cd56f71fe7d",
+          "alt": "The question as printed on the paper — Let h(x) = cos(2x), where x∈ℝ. (a) 𝜋 A tangent is drawn to the graph of h(x) at the point where x = 3. Find the angle that this tangent makes with the positive sense of the x-axis. 𝜋",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25592,6 +26704,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q3-b.png",
+          "srcHash": "3287b584f36f96eb8dcee4b0fec1861f",
+          "alt": "The question as printed on the paper — Let h(x) = cos(2x), where x∈ℝ. (a) 𝜋 A tangent is drawn to the graph of h(x) at the point where x = 3. Find the angle that this tangent makes with the positive sense of the x-axis. 𝜋 Find the average value of h(x) over the interval 0 ≤ x ≤ 4, x∈ℝ. (b) Give your answer in terms of 𝜋.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-HL-scheme-p011-i0",
@@ -25641,6 +26761,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q4-a.png",
+          "srcHash": "3ccdd78d6b4e9196b4974cfe743437d2",
+          "alt": "The question as printed on the paper — Prove, using induction, that if n is a positive integer then (cos 𝜃+ isin 𝜃)ⁿ = cos (n𝜃) + isin(n𝜃), where i² = −1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25677,6 +26805,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q4-b.png",
+          "srcHash": "cd50e7ed9eb8f2141adb1473a80e3287",
+          "alt": "The question as printed on the paper — Hence, or otherwise, find (− 2i) (b) in its simplest form.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25710,6 +26846,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q5-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q5-a-i.png",
+          "srcHash": "1b6ef2bd4230a6cc054f1e9b53908246",
+          "alt": "The question as printed on the paper — (a) The Sieve of Sundaram is an infinite table of arithmetic sequences. The terms in the first 4 rows and the first 4 columns of the table are shown below. 4 7 10 13 7 12 17 22 10 17 24 31 13 22 31 40 Find the difference between the sums of the first 45 terms in the first two rows.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25747,6 +26891,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q5-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q5-a-ii.png",
+          "srcHash": "0624d6d37625d54cb6e4ab8db87edb38",
+          "alt": "The question as printed on the paper — (a) The Sieve of Sundaram is an infinite table of arithmetic sequences. The terms in the first 4 rows and the first 4 columns of the table are shown below. 4 7 10 13 7 12 17 22 10 17 24 31 13 22 31 40 Find the number which is in the 60th row and 70th column of the table.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25786,6 +26938,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q5-b.png",
+          "srcHash": "0ca66a58dcba08bfda7d86f7224708c2",
+          "alt": "The question as printed on the paper — (b) The first two terms of a sequence are a₁ = 4 and a₂ = 2. The general term is defined by aₙ = aₙ₋₁−aₙ₋₂, when n ≥ 3. Write out the next 6 terms of the sequence and hence find the value of a₂₀₁₉",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25824,6 +26984,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q6-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q6-a.png",
+          "srcHash": "c7c0d5a5509bb5fa9ee778224ea30c25",
+          "alt": "The question as printed on the paper — Parts of the graphs of the functions h(x) = x andk(x) = x³, x∈ℝ, are shown in the diagram below. y h(x) = x k(x) = x³ x (a) Find the co-ordinates of the points of intersection of the graphs of the two functions.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25857,6 +27025,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q6-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q6-b-i.png",
+          "srcHash": "848d785fec14111ff2ec2b9e7d34f40f",
+          "alt": "The question as printed on the paper — Parts of the graphs of the functions h(x) = x andk(x) = x³, x∈ℝ, are shown in the diagram below. y h(x) = x k(x) = x³ x Find the total area enclosed between the graphs of the two functions.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25886,6 +27062,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q6-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q6-b-ii.png",
+          "srcHash": "9274662020901e92a8c0131a3c6181bc",
+          "alt": "The question as printed on the paper — Parts of the graphs of the functions h(x) = x andk(x) = x³, x∈ℝ, are shown in the diagram below. y h(x) = x k(x) = x³ x On the diagram on the previous page, using symmetry or otherwise, draw the graph of k^(−1), the inverse function of k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-HL-scheme-p014-i0",
@@ -25931,6 +27115,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q7-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q7-a.png",
+          "srcHash": "a37e232a43106d9407ab47731759dd04",
+          "alt": "The question as printed on the paper — The time, in days of practice, it takes Jack to learn to type x words per minute (wpm) can be modelled by the function: t(x) = k [ln (1 − x/80)], where 0 ≤ x ≤ 70, x∈ℝ, and k is a constant. Based on the function t(x), Jack can learn to type 35 wpm in 35∙96 days. Write the function above in terms of k and hence show that k = −62∙5, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25967,6 +27159,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q7-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q7-b.png",
+          "srcHash": "594ea3e6e36215ffe2632321e2e71518",
+          "alt": "The question as printed on the paper — The time, in days of practice, it takes Jack to learn to type x words per minute (wpm) can be modelled by the function: t(x) = k [ln (1 − x/80)], where 0 ≤ x ≤ 70, x∈ℝ, and k is a constant. Find the number of wpm that Jack can learn to type with 100 days of practice. Give your answer correct to the nearest whole number.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25999,6 +27199,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q7-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q7-c.png",
+          "srcHash": "e8543faee3e061b5143af80e90cf64a2",
+          "alt": "The question as printed on the paper — The time, in days of practice, it takes Jack to learn to type x words per minute (wpm) can be modelled by the function: t(x) = k [ln (1 − x/80)], where 0 ≤ x ≤ 70, x∈ℝ, and k is a constant. (c) Complete the table below, correct to the nearest whole number and hence draw the graph of t(x) for 0 ≤x≤70, x∈ℝ. x 0 10 20 30 40 50 60 70 (wpm) t(x) (days) t(x) 140 120 100 Days of practice 80 60 40 20 x 10 20 30 40 50 60 70 Words per minute (wpm)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-HL-scheme-p015-i0",
@@ -26038,6 +27246,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q7-d",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q7-d.png",
+          "srcHash": "64733876bd2067e188ac23aeafc48ef0",
+          "alt": "The question as printed on the paper — The time, in days of practice, it takes Jack to learn to type x words per minute (wpm) can be modelled by the function: t(x) = k [ln (1 − x/80)], where 0 ≤ x ≤ 70, x∈ℝ, and k is a constant. (c) Complete the table below, correct to the nearest whole number and hence draw the graph of t(x) for 0 ≤x≤70, x∈ℝ. x 0 10 20 30 40 50 60 70 (wpm) t(x) (days) t(x) 140 120 100 Days of practice 80 60 40 20 x 10 20 30 40 50 60 70 Words per minute (wpm) A simpler function that could also be used to model the number of days needed to attain x wpm is p(x) = 1∙5x. Draw, on the diagram above, the graph of p(x) for 0 ≤ x ≤ 70, x∈ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-HL-scheme-p016-i0",
@@ -26079,6 +27295,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q7-e-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q7-e-i.png",
+          "srcHash": "0f2c50333e23fc3b57aa5fd7fecf2ecd",
+          "alt": "The question as printed on the paper — The time, in days of practice, it takes Jack to learn to type x words per minute (wpm) can be modelled by the function: t(x) = k [ln (1 − x/80)], where 0 ≤ x ≤ 70, x∈ℝ, and k is a constant. A simpler function that could also be used to model the number of days needed to attain x wpm is p(x) = 1∙5x. Draw, on the diagram above, the graph of p(x) for 0 ≤ x ≤ 70, x∈ℝ. (e) Let h(x) = p(x) −t(x). Use your graphs above to estimate the solution to h(x) = 0 for x > 0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26117,6 +27341,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q7-e-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q7-e-ii.png",
+          "srcHash": "585f5641eb38b6c116899383d7fe3d56",
+          "alt": "The question as printed on the paper — The time, in days of practice, it takes Jack to learn to type x words per minute (wpm) can be modelled by the function: t(x) = k [ln (1 − x/80)], where 0 ≤ x ≤ 70, x∈ℝ, and k is a constant. A simpler function that could also be used to model the number of days needed to attain x wpm is p(x) = 1∙5x. Draw, on the diagram above, the graph of p(x) for 0 ≤ x ≤ 70, x∈ℝ. (e) Let h(x) = p(x) −t(x). Use calculus to find the maximum value of h(x) for 0 ≤ x ≤ 70, x∈ℝ. Give your answer correct to the nearest whole number.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-HL-scheme-p016-i1",
@@ -26159,6 +27391,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q8-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q8-a.png",
+          "srcHash": "9740c8af19e04e24e283beece19b5e8d",
+          "alt": "The question as printed on the paper — ¹/2x2 is shown below. √2𝜋e− ¹ The graph of the symmetric function f(x) = 1/√2𝜋 e− y x Find the co-ordinates of A, the point where the graph intersects the y-axis. Give your answer in terms of 𝜋. (b) The co-ordinates of B are (−1, 1/√2𝜋e). Find the area of the shaded rectangle in the diagram",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2018-HL-scheme-p017-i0",
           "src": "/exam-figures/maths/markbank/maths-2018-HL-scheme-p017-i0.png",
@@ -26200,6 +27440,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q8-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q8-b.png",
+          "srcHash": "12cdf5508cf4f01d531c9bbef337f9b1",
+          "alt": "The question as printed on the paper — ¹/2x2 is shown below. √2𝜋e− ¹ The graph of the symmetric function f(x) = 1/√2𝜋 e− y x (b) The co-ordinates of B are (−1, 1/√2𝜋e). Find the area of the shaded rectangle in the diagram above. Give your answer correct to 3 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2018-HL-scheme-p017-i1",
           "src": "/exam-figures/maths/markbank/maths-2018-HL-scheme-p017-i1.png",
@@ -26240,6 +27488,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q8-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q8-c.png",
+          "srcHash": "0cadf0add8a1f93835805d59d36bda73",
+          "alt": "The question as printed on the paper — ¹/2x2 is shown below. √2𝜋e− ¹ The graph of the symmetric function f(x) = 1/√2𝜋 e− y x Use calculus to show that f(x) is decreasing at C.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-HL-scheme-p017-i2",
@@ -26285,6 +27541,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q8-d",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q8-d.png",
+          "srcHash": "60bf99da783f2bb5c2e6b7f8ff185e53",
+          "alt": "The question as printed on the paper — ¹/2x2 is shown below. √2𝜋e− ¹ The graph of the symmetric function f(x) = 1/√2𝜋 e− y x Show that the graph of f(x) has a point of inflection at B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2018-HL-scheme-p018-i0",
           "src": "/exam-figures/maths/markbank/maths-2018-HL-scheme-p018-i0.png",
@@ -26322,6 +27586,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q9-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q9-a.png",
+          "srcHash": "4a91ea6d68d36c138ce4a2420ddd3ccd",
+          "alt": "The question as printed on the paper — The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step. Step 0 Step 1 Step 2 Step 3 The table below shows the number of black triangles at each of the first 4 steps and the fraction of the original triangle remaining at each step. Complete the table. Step 0 1 2 3 Number of black triangles 1 9/16 Fraction of the original triangle remaining",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-HL-scheme-p019-i0",
@@ -26362,6 +27634,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q9-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q9-b-i.png",
+          "srcHash": "7a0f2a55c3d2a6acafdf8de70fe524e6",
+          "alt": "The question as printed on the paper — The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step. Step 0 Step 1 Step 2 Step 3 Write an expression in terms of n for the number of black triangles in step n of the pattern.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26396,6 +27676,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q9-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q9-b-ii.png",
+          "srcHash": "c9061312c88404a8d74bd3be5819ac3f",
+          "alt": "The question as printed on the paper — The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step. Step 0 Step 1 Step 2 Step 3 Step k is the first step of the pattern in which the number of black triangles exceeds one thousand million (i.e. 1 × 10⁹ ) for the first time. Find the value of k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -26434,6 +27722,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q9-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q9-c-i.png",
+          "srcHash": "5e1fad6f2748f065445b6206aa915048",
+          "alt": "The question as printed on the paper — The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step. Step 0 Step 1 Step 2 Step 3 Step h is the first step of the pattern in which the fraction of the original triangle remaining is less than 1/100 of the original triangle. Find the value of h.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-HL-scheme-p020-i0",
@@ -26477,6 +27773,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q9-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q9-c-ii.png",
+          "srcHash": "071ecd66921419ce56b392a909c87d42",
+          "alt": "The question as printed on the paper — The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step. Step 0 Step 1 Step 2 Step 3 What fraction of the original triangle remains after an infinite number of steps of the pattern?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26508,6 +27812,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q9-d-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q9-d-i.png",
+          "srcHash": "58fa3cbce018892577766f405b0dd8b4",
+          "alt": "The question as printed on the paper — The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step. Step 0 Step 1 Step 2 Step 3 The side length of the triangle in Step 0 is 1 unit. The table below shows the total perimeter of all the black triangles in each of the first 5 steps. Complete the table below. Step 0 1 2 3 4 27/4 3 Perimeter",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -26547,6 +27859,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q9-d-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q9-d-ii.png",
+          "srcHash": "7773868b1f75907a53c5fc6d2ecd88c4",
+          "alt": "The question as printed on the paper — The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step. Step 0 Step 1 Step 2 Step 3 Find the total perimeter of the black triangles in step 35 of the pattern. Give your answer correct to the nearest unit.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26584,6 +27904,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p1-q9-d-iii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p1-q9-d-iii.png",
+          "srcHash": "7509b10df9374c888d8c4e12813dff56",
+          "alt": "The question as printed on the paper — The diagram below shows the first 4 steps of an infinite pattern which creates the Sierpinski Triangle. The sequence begins with a black equilateral triangle. Each step is formed by removing an equilateral triangle from the centre of each black triangle in the previous step, as shown. Each equilateral triangle that is removed is formed by joining the midpoints of the sides of a black triangle from the previous step. Step 0 Step 1 Step 2 Step 3 (d) (i) The side length of the triangle in Step 0 is 1 unit. The table below shows the total perimeter of all the black triangles in each of the first 5 steps. Complete the table below. Step 0 1 2 3 4 27 3 Perimeter 4 (ii) Find the total perimeter of the black triangles in step 35 of the pattern. Give your answer correct to the nearest unit. (iii) Use your answers to part (c)(ii) and part (d)(ii) to comment on the total area and the total perimeter of the black triangles in step n of the pattern, as n tends to infinity.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26617,6 +27945,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q1-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q1-a.png",
+          "srcHash": "303ba0bbc3875ae77ffe1ef163f6405f",
+          "alt": "The question as printed on the paper — 1 1 In a competition Mary has a probability of 20 of winning, a probability of 10 of finishing in second 1 place, and a probability of 4 of finishing in third place. If she wins the competition she gets €9000. If she comes second she gets €7000 and if she comes third she gets €3000. In all other cases she gets nothing. Each participant in the competition must pay €2000 to enter. Find the expected value of Mary’s loss if she enters the competition.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -26659,6 +27995,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q1-b.png",
+          "srcHash": "2e3f68c2d3ed325cecd541d589df17de",
+          "alt": "The question as printed on the paper — 1 1 In a competition Mary has a probability of 20 of winning, a probability of 10 of finishing in second 1 place, and a probability of 4 of finishing in third place. If she wins the competition she gets €9000. If she comes second she gets €7000 and if she comes third she gets €3000. In all other cases she gets nothing. Each participant in the competition must pay €2000 to enter. Each of the 3 prizes in the competition above is increased by the same amount (€x) but the entry fee is unchanged. For example, if Mary wins the competition now, she would get €(9000 + x). Mary now expects to break even. Find the value of x.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26686,6 +28030,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q2-a.png",
+          "srcHash": "7d2c8055251474647fd26c8206812837",
+          "alt": "The question as printed on the paper — The diagram shows the standard normal curve. The shaded area represents 67% of the data. Find the value of z₁. z₁ 0",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -26721,6 +28073,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q2-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q2-b-i.png",
+          "srcHash": "c41a1cdc65a4065054d2d5d430160387",
+          "alt": "The question as printed on the paper — The percentage results in a Maths exam for a class had a mean mark of 70 with a standard deviation of 15. The percentage results in an English exam for the same class had a mean mark of 72 with a standard deviation of 10. The results in both exams were normally distributed. Mary got 65 in Maths and 68 in English. In which exam did Mary do better relative to the other students in the class? Justify your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26755,6 +28115,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q2-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q2-b-ii.png",
+          "srcHash": "cc96de9a9cd4be9db6b006ec0f043e12",
+          "alt": "The question as printed on the paper — The percentage results in a Maths exam for a class had a mean mark of 70 with a standard deviation of 15. The percentage results in an English exam for the same class had a mean mark of 72 with a standard deviation of 10. The results in both exams were normally distributed. In English the top 15% of students were awarded an A grade. Find the least whole number mark that merited the award of an A grade in English.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -26799,6 +28167,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q2-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q2-b-iii.png",
+          "srcHash": "721d55c6d44312c223d0acca9e8ac5eb",
+          "alt": "The question as printed on the paper — The percentage results in a Maths exam for a class had a mean mark of 70 with a standard deviation of 15. The percentage results in an English exam for the same class had a mean mark of 72 with a standard deviation of 10. The results in both exams were normally distributed. (iii) Using the empirical rule, or otherwise, estimate the percentage of students in the class who scored between 52 and 82 in the English test.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26830,6 +28206,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q3-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q3-a-i.png",
+          "srcHash": "d632062f2aea2274c41c7e5f960d5796",
+          "alt": "The question as printed on the paper — A security code consists of six digits chosen at random from the digits 0 to 9. The code may begin with zero and digits may be repeated. For example is a valid code. 0 7 1 7 3 7 Find how many of the possible codes will end with a zero.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26858,6 +28242,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q3-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q3-a-ii.png",
+          "srcHash": "84e27d96f5391b115b3c696e07382e83",
+          "alt": "The question as printed on the paper — A security code consists of six digits chosen at random from the digits 0 to 9. The code may begin with zero and digits may be repeated. For example is a valid code. 0 7 1 7 3 7 (ii) Find how many of the possible codes will contain the digits 2 0 1 8 together and in this order. (n+3)! (n+2)!",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -26897,6 +28289,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q3-b.png",
+          "srcHash": "f8baf65e89dcac75abd9cd228934e961",
+          "alt": "The question as printed on the paper — (n + 1)!(n + 1)! = an3 + bn2 + cn + d, where a, b, c, and d∈ℕ. Find a, b, c, and d, if (b)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26930,6 +28330,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q4-a.png",
+          "srcHash": "af558969971d516df99330e612d83b6b",
+          "alt": "The question as printed on the paper — 2 , where 0° ≤x≤360°. Find all the values of x for which cos(2x) = − (a) y",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -26970,6 +28378,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q4-b.png",
+          "srcHash": "d47c6a612517f56a16664fa45b7c1f6a",
+          "alt": "The question as printed on the paper — (b) Let cos A = y/2 , where 0° < A < 90°. Write sin(2A) in terms of y.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2018-HL-scheme-p031-i0",
           "src": "/exam-figures/maths/markbank/maths-2018-HL-scheme-p031-i0.png",
@@ -27007,6 +28423,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q5-a.png",
+          "srcHash": "a9bad57fc0e48141a35dfeadc860f412",
+          "alt": "The question as printed on the paper — The line m: 2x + 3y + 1 = 0 is parallel to the line n: 2x + 3y−51 = 0. Verify that A(−2, 1) is on m.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -27049,6 +28473,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q5-b.png",
+          "srcHash": "11863c0e8aa613558c6e9115dada1147",
+          "alt": "The question as printed on the paper — The line m: 2x + 3y + 1 = 0 is parallel to the line n: 2x + 3y−51 = 0. (b) Find the coordinates of B, the point on the line n closest to A, as shown below. n B m A",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27089,6 +28521,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q5-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q5-c.png",
+          "srcHash": "eff914d2b2389fe19f137831574ef5fe",
+          "alt": "The question as printed on the paper — Two touching circles, s and t, are shown in the diagram. m is a tangent to s at A and n is a n tangent to t at B.The ratio of the radius of s to the radius of t is 1 ∶3. Find the equation of s. m t s",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27123,6 +28563,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q6-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q6-a.png",
+          "srcHash": "b0d6a25b3abdcdb39ac73a83abfdff50",
+          "alt": "The question as printed on the paper — Let ∆ABC be a triangle. Prove that if a line l is parallel to BC and cuts [AB] in the ratio s∶t, where s, t∈ℕ, then it also cuts [AC] in the same ratio.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-HL-scheme-p034-i0",
@@ -27169,6 +28617,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q6-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q6-b.png",
+          "srcHash": "091e6704ed8aa4461a4b5d38e2b5582e",
+          "alt": "The question as printed on the paper — In the triangle ABC shown below: |∠CAB| = 90°, |AX| = 4 cm, |AY| = 3 cm, XY ∥ BC, XZ ∥ AC, and |AX| : |XB| = 1 : 2. Find |BZ|.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27209,6 +28665,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q7-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q7-a.png",
+          "srcHash": "7f43f0ceb2754050aaaea5d1594bf598",
+          "alt": "The question as printed on the paper — A section of a garden railing is shown below. This section consists of nine cylindrical bars, labelled A to I, with a solid sphere attached to the centre of the top of each bar. The volume of each sphere from B to E is 1∙75 times the volume of the previous sphere. H I G B A C D F E The radius of sphere A is 3 cm. Find the sum of the volumes of the five spheres A, B, C, D, and E. Give your answer correct to the nearest cm³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27243,6 +28707,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q7-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q7-b-i.png",
+          "srcHash": "055abaae28349dbee42eeaccc210b0f5",
+          "alt": "The question as printed on the paper — A section of a garden railing is shown below. This section consists of nine cylindrical bars, labelled A to I, with a solid sphere attached to the centre of the top of each bar. The volume of each sphere from B to E is 1∙75 times the volume of the previous sphere. H I G B A C D F E The surface area of sphere E can be taken to be 503 cm². The height of the railing at E (i.e. the sum of the heights of bar E and sphere E) is 1∙2 metres. Find the height of bar E, in cm, correct to 1 decimal place. 1∙2 m The radius of each bar is 1 cm. The volume of bar A is 71∙3𝜋 cm³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -27280,6 +28752,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q7-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q7-b-ii.png",
+          "srcHash": "69d42d1d87c3adbea169e6cb76d1e604",
+          "alt": "The question as printed on the paper — A section of a garden railing is shown below. This section consists of nine cylindrical bars, labelled A to I, with a solid sphere attached to the centre of the top of each bar. The volume of each sphere from B to E is 1∙75 times the volume of the previous sphere. H I G B A C D F E The radius of each bar is 1 cm. The volume of bar A is 71∙3𝜋 cm³. The heights of the bars A, B, C, D, and E form an arithmetic sequence. Find, in cm, the height of each bar.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27312,6 +28792,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q7-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q7-c.png",
+          "srcHash": "783680df6430c1367cec2ff69c5250b5",
+          "alt": "The question as printed on the paper — A section of a garden railing is shown below. This section consists of nine cylindrical bars, labelled A to I, with a solid sphere attached to the centre of the top of each bar. The volume of each sphere from B to E is 1∙75 times the volume of the previous sphere. H I G B A C D F E There is a wall on each side of the section of railing, as shown in the diagram below which is not to drawn to scale. The distance from wall to wall is 1∙5 m. The distance from the wall to bar A is 20 cm and similarly from the other wall to bar I is 20 cm. The radius of each bar is 1 cm. The gap between each bar is identical. Find the size of this gap. 1∙5 m 20 cm 20 cm",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -27354,6 +28842,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q7-d",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q7-d.png",
+          "srcHash": "49cd78241271116614cba342994aa0ed",
+          "alt": "The question as printed on the paper — A section of a garden railing is shown below. This section consists of nine cylindrical bars, labelled A to I, with a solid sphere attached to the centre of the top of each bar. The volume of each sphere from B to E is 1∙75 times the volume of the previous sphere. H I G B A C D F E The sphere on bar A and the sphere on bar B are to be joined by a straight rod as shown in the diagram below which is not to drawn to scale. Find the length of the shortest rod that will join sphere A to sphere B. Give your answer in cm, correct to 1 decimal place. Rod A B",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-HL-scheme-p037-i0",
@@ -27400,6 +28896,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q8-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q8-a-i.png",
+          "srcHash": "6ad530b4cbc7cbcd0d974f3ae125228c",
+          "alt": "The question as printed on the paper — Acme Confectionery makes cakes and chocolate bars. Acme Confectionery has launched a new bar called Chocolate Crunch. The weights of these new bars are normally distributed with a mean of 4·64 g and a standard deviation of 0·12 g. A sample of 10 bars is selected at random and the mean weight of the sample is found. Find the probability that the mean weight of the sample is between 4·6 g and 4·7 g.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27435,6 +28939,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q8-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q8-a-ii.png",
+          "srcHash": "456a25287b4056c5bcf90db356c39065",
+          "alt": "The question as printed on the paper — Acme Confectionery makes cakes and chocolate bars. A company surveyed 400 people, chosen from the population of people who had bought at least one Chocolate Crunch bar. Of those surveyed, 324 of them said they liked the new bar. Create the 95% confidence interval for the population proportion who liked the new bar. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27467,6 +28979,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q8-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q8-b-i.png",
+          "srcHash": "ed7911d0fc50025380666e42cbf1c119",
+          "alt": "The question as printed on the paper — Acme Confectionery makes cakes and chocolate bars. Put one tick into the table for each statement to indicate whether the statement is Always True, Sometimes True or Never True. In the table, n is the size of the sample and p̂ is the sample proportion. Always Sometimes Never Statement True True True 1. When forming confidence intervals (for fixed n and p̂), an increased confidence level implies a wider interval. 2. As the value of p̂ increases (for fixed n), the estimated standard error of the population proportion increases. 3. As the value of p̂(1 −p̂) increases (for fixed n), the estimated standard error of the population proportion increases. 4. As n, the number of people sampled, increases (for fixed p̂), the estimated standard error of the population proportion increases.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-HL-scheme-p039-i0",
@@ -27519,6 +29039,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q8-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q8-b-ii.png",
+          "srcHash": "9d6f7fa963c60487ab5af46849e1b977",
+          "alt": "The question as printed on the paper — Acme Confectionery makes cakes and chocolate bars. Put one tick into the table for each statement to indicate whether the statement is Always True, Sometimes True or Never True. In the table, n is the size of the sample and p̂ is the sample proportion. Always Sometimes Never Statement True True True 1. When forming confidence intervals (for fixed n and p̂), an increased confidence level implies a wider interval. 2. As the value of p̂ increases (for fixed n), the estimated standard error of the population proportion increases. 3. As the value of p̂(1 −p̂) increases (for fixed n), the estimated standard error of the population proportion increases. 4. As n, the number of people sampled, increases (for fixed p̂), the estimated standard error of the population proportion increases. Using calculus or otherwise, find the maximum value of p̂(1 −p̂). (iii) Hence, find the largest possible value of the radius of the 95% confidence interval for a population proportion, given a random sample of size 800.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27554,6 +29082,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q8-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q8-c.png",
+          "srcHash": "ff112e76ff4b8f14a404d91f22b07d5e",
+          "alt": "The question as printed on the paper — Acme Confectionery makes cakes and chocolate bars. Acme Confectionery has an employee pension plan. For an employee who qualifies for the full pension, Acme Confectionery will pay a sum of €20 000 on the day of retirement. It will then pay a sum on the same date each subsequent year for the next 25 years. Each year the employee is paid a sum that is 1% more than the amount paid in the previous year. What sum of money must the company have set aside on the day of retirement in order to fund this pension? Assume an annual interest rate (AER) of 2·4%.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-HL-scheme-p040-i0",
@@ -27596,6 +29132,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q9-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q9-a.png",
+          "srcHash": "de53426765c6cd492a83ea5d01e6a738",
+          "alt": "The question as printed on the paper — In engineering, a crank-and-slider mechanism can be used to change circular motion into motion back and forth in a straight line. crank slider In the diagrams below, the crank [OD] rotates about the fixed point O. The point C slides back and forth in a horizontal line. [CD] is the rod that connects C to the crank. The diagrams below show three of the possible positions for C and D. |OD| = 10 cm and |DC| = 30 cm. Diagram 3 Diagram 1 Diagram 2 (Starting position) D C D O C C O O D The diagram below shows a particular position of the mechanism with |∠DCO| = 15°. Find |∠COD|, correct to the nearest degree. 10 cm 15° O",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27627,6 +29171,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q9-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q9-b-i.png",
+          "srcHash": "b06aa60f11a97fa345d8855820d51b5d",
+          "alt": "The question as printed on the paper — In engineering, a crank-and-slider mechanism can be used to change circular motion into motion back and forth in a straight line. In the diagrams below, the crank [OD] rotates about the fixed point O. The point C slides back and forth in a horizontal line. [CD] is the rod that connects C to the crank. The diagrams below show three of the possible positions for C and D. |OD| = 10 cm and |DC| = 30 cm. Part (b): As D moves in a circle around O, the angle α in the diagram below increases. The distance |CX| can be considered to be a function of α and written as f(α). Write down the period and range of f.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27657,6 +29209,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q9-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q9-b-ii.png",
+          "srcHash": "909d714ce5677ec3d6310c4e4f39ac82",
+          "alt": "The question as printed on the paper — In engineering, a crank-and-slider mechanism can be used to change circular motion into motion back and forth in a straight line. In the diagrams below, the crank [OD] rotates about the fixed point O. The point C slides back and forth in a horizontal line. [CD] is the rod that connects C to the crank. The diagrams below show three of the possible positions for C and D. |OD| = 10 cm and |DC| = 30 cm. Part (b): As D moves in a circle around O, the angle α in the diagram below increases. The distance |CX| can be considered to be a function of α and written as f(α). Complete the table below for f(α). Give your answers correct to 2 decimal places where appropriate. (Note: Diagram 1 at the start of this question represents α = 0°). α: 0°, 90°, 180°, 270°, 360°. f(α) (cm): 30, _, _, _, _.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27685,6 +29245,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q9-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q9-b-iii.png",
+          "srcHash": "0c49099f3c02ba9ef97297a77e3b2b13",
+          "alt": "The question as printed on the paper — In engineering, a crank-and-slider mechanism can be used to change circular motion into motion back and forth in a straight line. In the diagrams below, the crank [OD] rotates about the fixed point O. The point C slides back and forth in a horizontal line. [CD] is the rod that connects C to the crank. The diagrams below show three of the possible positions for C and D. |OD| = 10 cm and |DC| = 30 cm. Part (b): As D moves in a circle around O, the angle α in the diagram below increases. The distance |CX| can be considered to be a function of α and written as f(α). Part (b)(ii): Complete the table below for f(α). α: 0°, 90°, 180°, 270°, 360°. f(α) (cm): 30, _, _, _, _. Use your values from the table to draw a rough sketch of f in the domain 0° ≤ α ≤ 360°.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-HL-scheme-p042-i0",
@@ -27726,6 +29294,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q9-b-iv",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q9-b-iv.png",
+          "srcHash": "da7f6602b393b793284ff98049b265e1",
+          "alt": "The question as printed on the paper — In engineering, a crank-and-slider mechanism can be used to change circular motion into motion back and forth in a straight line. In the diagrams below, the crank [OD] rotates about the fixed point O. The point C slides back and forth in a horizontal line. [CD] is the rod that connects C to the crank. The diagrams below show three of the possible positions for C and D. |OD| = 10 cm and |DC| = 30 cm. Part (b): As D moves in a circle around O, the angle α in the diagram below increases. The distance |CX| can be considered to be a function of α and written as f(α). Referring to Diagrams 1, 2, and 3 near the start of this question, for which of the three positions of the mechanism will a 1 degree change in α cause the greatest change in the position of C? Explain your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -27769,6 +29345,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-HL-ask-p2-q9-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-HL-ask-p2-q9-c.png",
+          "srcHash": "3f91111a5d6d4746f4e887262b56214b",
+          "alt": "The question as printed on the paper — In engineering, a crank-and-slider mechanism can be used to change circular motion into motion back and forth in a straight line. In the diagrams below, the crank [OD] rotates about the fixed point O. The point C slides back and forth in a horizontal line. [CD] is the rod that connects C to the crank. The diagrams below show three of the possible positions for C and D. |OD| = 10 cm and |DC| = 30 cm. The diagram below shows another crank-and-slider mechanism with different dimensions. In the diagram, |AB| = 36 cm, |AX| = 31 cm, and |∠BAO| = 10°. (Note: |∠OBA| ≠ 90°) Find r, the length of the crank. Give your answer in cm, correct to the nearest cm.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27800,6 +29384,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q1-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q1-a.png",
+          "srcHash": "edea1018e0bb82462a6a8a506cb51466",
+          "alt": "The question as printed on the paper — Write the function f(x) = 2x²−7x−10, where x∈ℝ, in the form a(x + h)² + k, where a, h, and k ∈ ℚ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27827,6 +29419,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q1-b.png",
+          "srcHash": "d4d91cfb207ba53da681095acfafaac3",
+          "alt": "The question as printed on the paper — Write the function f(x) = 2x²−7x−10, where x∈ℝ, in the form a(x + h)² + k, where a, h, and k ∈ ℚ. Hence, write the minimum point of f.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -27861,6 +29461,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q1-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q1-c-i.png",
+          "srcHash": "ab06d2b2a48f33ddbb65a9fe1600bca6",
+          "alt": "The question as printed on the paper — Write the function f(x) = 2x²−7x−10, where x∈ℝ, in the form a(x + h)² + k, where a, h, and k ∈ ℚ. Explain why f must have two real roots.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27894,6 +29502,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q1-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q1-c-ii.png",
+          "srcHash": "7d55a2286a7b1f09f4ee79081cfb36d9",
+          "alt": "The question as printed on the paper — Write the function f(x) = 2x²−7x−10, where x∈ℝ, in the form a(x + h)² + k, where a, h, and k ∈ ℚ. Write the roots of f(x) = 0 in the form p± √q, where p and q ∈ℚ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p009-i0",
@@ -27938,6 +29554,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q2-a.png",
+          "srcHash": "8a32aa5642d7cb73dfcb74c6d773e410",
+          "alt": "The question as printed on the paper — z= −√3 + i, where i2= −1. Use De Moivre’s Theorem to write z⁴ in the form a + b√c i, where a, b, and c ∈ ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27978,6 +29602,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q2-b.png",
+          "srcHash": "b87e6d7daa19fe262e85f3ec79077f95",
+          "alt": "The question as printed on the paper — The complex number w is such that |w| = 3 and w makes an angle of 30° with the positive sense of the real axis. If t = zw, write t in its simplest form.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28012,6 +29644,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q3-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q3-a.png",
+          "srcHash": "e724fc0334e7a002bfef1faacbe915a9",
+          "alt": "The question as printed on the paper — (a) Differentiate 1/3 x² − x + 3 from first principles with respect to x.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28048,6 +29688,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q3-b.png",
+          "srcHash": "95da9c15a473aef085ff91b256752274",
+          "alt": "The question as printed on the paper — f(x) = ln(3x² + 2) and g(x) = x + 5, where x ∈ ℝ. (b) 1 Find the value of the derivative of f(g(x)) at x = 4 . Give your answer correct to 3 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p012-i0",
@@ -28098,6 +29746,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q4-a.png",
+          "srcHash": "e8ef683547726dd9912b37742b855a60",
+          "alt": "The question as printed on the paper — (a) The amount of a substance remaining in a solution reduces exponentially over time. An experiment measures the percentage of the substance remaining in the solution. The percentage is measured at the same time each day. The data collected over the first 4 days are given in the table below. Based on the data in the table, estimate which is the first day on which the percentage of the substance in the solution will be less than 0·01%. Day 1 2 3 4 42·75 19·2375 8·6569 Percentage of substance (%) 95",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28131,6 +29787,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q4-b.png",
+          "srcHash": "ea90b270973d3173abbd01f8f5597a4f",
+          "alt": "The question as printed on the paper — A square has sides of length 2 cm. The midpoints of the sides of this square are joined to form another square. This process is continued. The first three squares in the process are shown below. Find the sum of the perimeters of the squares if this process is continued indefinitely. Give your answer in the form a + b√c cm, where a, b, and c ∈ ℕ. 2 cm",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p013-i0",
@@ -28176,6 +29840,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q5-a.png",
+          "srcHash": "b0970cac9fcf9a3abda7f0682e4f2047",
+          "alt": "The question as printed on the paper — The function f is such that f(x) = 2x³ + 5x²−4x−3, where x ∈ ℝ. Show that x = −3 is a root of f(x) and find the other two roots.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p014-i0",
@@ -28224,6 +29896,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q5-b.png",
+          "srcHash": "5e5d89ac8148e93fe49ef1d09f05e0b5",
+          "alt": "The question as printed on the paper — The function f is such that f(x) = 2x³ + 5x²−4x−3, where x ∈ ℝ. Find the co-ordinates of the local maximum point and the local minimum point of the function f.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28253,6 +29933,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q5-c",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q5-c.png",
+          "srcHash": "712744b6603e3ce953f0f765960a27c3",
+          "alt": "The question as printed on the paper — The function f is such that f(x) = 2x³ + 5x²−4x−3, where x ∈ ℝ. f(x) + a, where a is a constant, has only one real root. Find the range of possible values of a.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28284,6 +29972,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q6-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q6-a.png",
+          "srcHash": "be8e7211ccfae62c2f17a436a75e9ef6",
+          "alt": "The question as printed on the paper — The graph of the function g(x) = e^x, x ∈ ℝ, 0 ≤ x ≤ 1, is shown on the diagram below. (a) On the same diagram, draw the graph of h(x) = e^(−x), x ∈ ℝ, in the domain 0 ≤ x ≤ 1. y 3 g(x) = e^x 2 1 x 0∙2 0∙4 0∙6 0∙8 1∙0",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p016-i0",
@@ -28327,6 +30023,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q6-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q6-b.png",
+          "srcHash": "574c085015bc3ea30257914ea6b15661",
+          "alt": "The question as printed on the paper — Find the area enclosed by g(x) = e^x, h(x) = e^(−x), and the line x = 0∙75. Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-HL-scheme-p017-i0",
           "src": "/exam-figures/maths/markbank/maths-2017-HL-scheme-p017-i0.png",
@@ -28365,6 +30069,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q7-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q7-a.png",
+          "srcHash": "6441b551cf0b474acb7aa2e6240e62ea",
+          "alt": "The question as printed on the paper — Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0∙1)^t × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3∙9ekt × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants. The population in Sapphire City at the beginning of 2010 is 1 100 000 people. Find the value of S.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28394,6 +30106,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q7-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q7-b.png",
+          "srcHash": "e4e0d97879954097bae67214a49f81ec",
+          "alt": "The question as printed on the paper — Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0∙1)^t × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3∙9ekt × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants. Find the predicted population in Sapphire City at the beginning of 2015.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28430,6 +30150,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q7-c",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q7-c.png",
+          "srcHash": "24c88d1d42b202a279ca9b5944c97d95",
+          "alt": "The question as printed on the paper — Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0∙1)^t × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3∙9ekt × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants. (c) Find the predicted change in the population in Sapphire City during 2015.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28464,6 +30192,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q7-d",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q7-d.png",
+          "srcHash": "78498bdb599339886e640d8ae3ac7758",
+          "alt": "The question as printed on the paper — Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0∙1)^t × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3∙9ekt × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants. (d) The predicted population in Avalon at the beginning of 2011 is 3 709 795 people. Write down and solve an equation in k to show that k = −0∙05, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28502,6 +30238,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q7-e",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q7-e.png",
+          "srcHash": "0d47e381ae0ee0b6e8db07f213a60760",
+          "alt": "The question as printed on the paper — Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0∙1)^t × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3∙9ekt × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants. Find the year during which the populations in both cities will be equal.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28532,6 +30276,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q7-f",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q7-f.png",
+          "srcHash": "6fec445fa30b27d94bb3b69811c074b0",
+          "alt": "The question as printed on the paper — Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0∙1)^t × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3∙9ekt × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants. Find the predicted average population in Avalon from the beginning of 2010 to the beginning of 2025.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p019-i0",
@@ -28575,6 +30327,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q7-g",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q7-g.png",
+          "srcHash": "2c27052dcbce01a8ee1928b35017c56b",
+          "alt": "The question as printed on the paper — Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0∙1)^t × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3∙9ekt × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants. Use the function q(t) = 3·9e^(−0∙05t) × 10⁶ to find the predicted rate of change of the population in Avalon at the beginning of 2018.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28603,6 +30363,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q8-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q8-a.png",
+          "srcHash": "3bb549a8110270bd27b390932fa14eb2",
+          "alt": "The question as printed on the paper — When a loan of €P is repaid in equal repayments of amount €A, at the end of each of t equal periods of time, where i is the periodic compound interest rate (expressed as a decimal), the formula below can be used to find the amount of each repayment. i(1 + i)^t A = P ((1 + i)^t−1) Show how this formula is derived. You may use the formula for the sum of a finite geometric series.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p020-i0",
@@ -28641,6 +30409,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q8-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q8-b-i.png",
+          "srcHash": "e9ed2c56a888f0b4096e85c8a86ae9b5",
+          "alt": "The question as printed on the paper — Alex has a credit card debt of €5000. One method of clearing this debt is to make a fixed repayment at the end of each month. The amount of this repayment is 2∙5% of the original debt. What is the fixed monthly repayment, €A, required to pay the debt of €5000?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28669,6 +30445,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q8-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q8-b-ii.png",
+          "srcHash": "3695606e45aefe5df5873102f7a85e87",
+          "alt": "The question as printed on the paper — Alex has a credit card debt of €5000. One method of clearing this debt is to make a fixed repayment at the end of each month. The amount of this repayment is 2∙5% of the original debt. The annual percentage rate (APR) charged on debt by the credit card company is 21∙75%, fixed for the term of the debt. Find as a percentage, correct to 3 significant figures, the monthly interest rate that is equivalent to an APR of 21∙75%.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28701,6 +30485,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q8-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q8-b-iii.png",
+          "srcHash": "2e84eebb544df5373d3dc5fa54dfaf10",
+          "alt": "The question as printed on the paper — Alex has a credit card debt of €5000. One method of clearing this debt is to make a fixed repayment at the end of each month. The amount of this repayment is 2∙5% of the original debt. (iii) Assume Alex pays the fixed monthly repayment, €A, each month and does not have any further transactions on that card. Complete the table below to show how the balance of the debt of €5000 is reducing each month for the first three months, assuming an APR of 21∙75%, charged and compounded monthly. €A Fixed monthly Payment New balance of payment, Previous balance number debt (€) €A Interest reduced by (€) 0 5000 42∙50 4957∙50 1 2 3",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28743,6 +30535,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q8-b-iv",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q8-b-iv.png",
+          "srcHash": "4cad2e83f2815dd1d6bfe52e637fac93",
+          "alt": "The question as printed on the paper — Alex has a credit card debt of €5000. One method of clearing this debt is to make a fixed repayment at the end of each month. The amount of this repayment is 2∙5% of the original debt. The annual percentage rate (APR) charged on debt by the credit card company is 21∙75%, fixed for the term of the debt. Find as a percentage, correct to 3 significant figures, the monthly interest rate that is equivalent to an APR of 21∙75%. (iv) Using the formula you derived on the previous page, or otherwise, find how long it would take to pay off a credit card debt of €5000, using the repayment method outlined at the beginning of part (b) above. Give your answer in months, correct to the nearest month.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28776,6 +30576,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q8-b-v",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q8-b-v.png",
+          "srcHash": "ab41f4433694867fcb1d9f7789aa4717",
+          "alt": "The question as printed on the paper — Alex has a credit card debt of €5000. One method of clearing this debt is to make a fixed repayment at the end of each month. The amount of this repayment is 2∙5% of the original debt. Alex decides to borrow €5000 from the local Credit Union to pay off this credit card debt of €5000. The APR charge for the Credit Union loan is 8∙5% fixed for the term of the loan. The loan is to be repaid in equal weekly repayments, at the end of each week, for 156 weeks. Find the amount of each weekly repayment.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p022-i0",
@@ -28816,6 +30624,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q8-b-vi",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q8-b-vi.png",
+          "srcHash": "6015a8b81f76e22348885411e33488a6",
+          "alt": "The question as printed on the paper — Alex has a credit card debt of €5000. One method of clearing this debt is to make a fixed repayment at the end of each month. The amount of this repayment is 2∙5% of the original debt. What is the fixed monthly repayment, €A, required to pay the debt of €5000? Alex decides to borrow €5000 from the local Credit Union to pay off this credit card debt of €5000. The APR charge for the Credit Union loan is 8∙5% fixed for the term of the loan. The loan is to be repaid in equal weekly repayments, at the end of each week, for 156 weeks. Find the amount of each weekly repayment. (vi) How much will Alex save by paying off the credit card debt using the loan from the Credit Union instead of paying the fixed repayment from part (b)(i) each month to the credit card company?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28846,6 +30662,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q9-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q9-a.png",
+          "srcHash": "ba47254e805a06f602707f5cb4530423",
+          "alt": "The question as printed on the paper — The depth of water, in metres, at a certain point in a harbour varies with the tide and can be modelled by a function of the form f(t) = a + bcos ct where t is the time in hours from the first high tide on a particular Saturday and a, b, and c are constants. (Note: ct is expressed in radians.) On that Saturday, the following were noted: • The depth of the water in the harbour at high tide was 5·5 m • The depth of the water in the harbour at low tide was 1·7 m • High tide occurred at 02:00 and again at 14:34. Use the information you are given to add, as accurately as you can, labelled and scaled axes to the diagram below to show the graph of f over a portion of that Saturday. The point P should represent the depth of the water in the harbour at high tide on that Saturday morning. P",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p023-i0",
@@ -28891,6 +30715,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q9-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q9-b-i.png",
+          "srcHash": "adba9e4eba3a07e60c1f7a3d8cae22f5",
+          "alt": "The question as printed on the paper — The depth of water, in metres, at a certain point in a harbour varies with the tide and can be modelled by a function of the form f(t) = a + bcos ct where t is the time in hours from the first high tide on a particular Saturday and a, b, and c are constants. (Note: ct is expressed in radians.) On that Saturday, the following were noted: • The depth of the water in the harbour at high tide was 5·5 m • The depth of the water in the harbour at low tide was 1·7 m • High tide occurred at 02:00 and again at 14:34. Find the value of a and the value of b.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28922,6 +30754,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q9-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q9-b-ii.png",
+          "srcHash": "27460198c1438e84b45ce3bc5500109e",
+          "alt": "The question as printed on the paper — The depth of water, in metres, at a certain point in a harbour varies with the tide and can be modelled by a function of the form f(t) = a + bcos ct where t is the time in hours from the first high tide on a particular Saturday and a, b, and c are constants. (Note: ct is expressed in radians.) On that Saturday, the following were noted: • The depth of the water in the harbour at high tide was 5·5 m • The depth of the water in the harbour at low tide was 1·7 m • High tide occurred at 02:00 and again at 14:34. Show that c = 0∙5, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p024-i0",
@@ -28971,6 +30811,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p1-q9-c",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p1-q9-c.png",
+          "srcHash": "2a14ad3e695e6d7282e76ba1ac1c5246",
+          "alt": "The question as printed on the paper — The depth of water, in metres, at a certain point in a harbour varies with the tide and can be modelled by a function of the form f(t) = a + bcos ct where t is the time in hours from the first high tide on a particular Saturday and a, b, and c are constants. (Note: ct is expressed in radians.) On that Saturday, the following were noted: • The depth of the water in the harbour at high tide was 5·5 m • The depth of the water in the harbour at low tide was 1·7 m • High tide occurred at 02:00 and again at 14:34. Use the equation f(t) = a + bcos ct to find the times on that Saturday afternoon when the depth of the water in the harbour was exactly 5·2 m. Give each answer correct to the nearest minute.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28997,6 +30845,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q1-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q1-a.png",
+          "srcHash": "11f19ef11ba1aaadd5440bc7484628bb",
+          "alt": "The question as printed on the paper — 1 . When Conor rings Ciara’s house, the probability that Ciara answers the phone is 5 Conor rings Ciara’s house once every day for 7 consecutive days.Find the probability that she will answer the phone on the 2nd, 4th, and 6th days but not on the other days.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p028-i0",
@@ -29034,6 +30890,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q1-b.png",
+          "srcHash": "6e2adcb6c07962c19b424226adc63ad6",
+          "alt": "The question as printed on the paper — 1 . When Conor rings Ciara’s house, the probability that Ciara answers the phone is 5 Find the probability that she will answer the phone for the 4th time on the 7th day.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-HL-scheme-p028-i1",
           "src": "/exam-figures/maths/markbank/maths-2017-HL-scheme-p028-i1.png",
@@ -29070,6 +30934,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q1-c",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q1-c.png",
+          "srcHash": "bf0058a13ee1f2e2917d3f5b56fd78a6",
+          "alt": "The question as printed on the paper — 1 . When Conor rings Ciara’s house, the probability that Ciara answers the phone is 5 Conor rings her house once every day for n days. Write, in terms of n, the probability that Ciara will answer the phone at least… Full card prompt: When Conor rings Ciara’s house, the probability that Ciara answers the phone is 1/5. Conor rings her house once every day for n days. Write, in terms of n, the probability that Ciara will answer the phone at least once.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p029-i0",
@@ -29113,6 +30985,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q1-d",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q1-d.png",
+          "srcHash": "7a5b093d3cce79ac73eb51349feef3f6",
+          "alt": "The question as printed on the paper — 1 . When Conor rings Ciara’s house, the probability that Ciara answers the phone is 5 Find the minimum value of n for which the probability that Ciara will answer the phone at least once is greater than 99%.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-HL-scheme-p029-i1",
           "src": "/exam-figures/maths/markbank/maths-2017-HL-scheme-p029-i1.png",
@@ -29149,6 +31029,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q2-a.png",
+          "srcHash": "6c61abd2802151c94804e6b9a5b4182f",
+          "alt": "The question as printed on the paper — An experiment measures the fuel consumption at various speeds for a particular model of car. The data collected are shown in Table 1 below. Table 1 Speed (km/hour) 40 48 56 64 88 96 112 Fuel consumption 21 16 18 16 13 11 9 (km/litre) Find the correlation coefficient of the data in Table 1, correct to 3 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29179,6 +31067,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q2-b.png",
+          "srcHash": "f544040d2f2ee9aa820bb253ea49dc91",
+          "alt": "The question as printed on the paper — An experiment measures the fuel consumption at various speeds for a particular model of car. The data collected are shown in Table 1 below. Table 1 Speed (km/hour) 40 48 56 64 88 96 112 Fuel consumption 21 16 18 16 13 11 9 (km/litre) Plot the points from the table on the grid below and draw the line of best fit (by eye). 25 Fuel consumption (km/litre) 20 15 10 5 40 56 64 72 80 88 96 104 112 48 Speed (km/h)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p030-i0",
@@ -29219,6 +31115,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q2-c",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q2-c.png",
+          "srcHash": "1087d7da30c64eb6b9c714a0e8bfd645",
+          "alt": "The question as printed on the paper — An experiment measures the fuel consumption at various speeds for a particular model of car. The data collected are shown in Table 1 below. Table 1 Speed (km/hour) 40 48 56 64 88 96 112 Fuel consumption 21 16 18 16 13 11 9 (km/litre) The slope of the line of best fit is found to be −0∙15. What does this value represent in the context of the data?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29247,6 +31151,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q2-d-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q2-d-i.png",
+          "srcHash": "0085e80a1342bcc82dde0ff6ba34ff25",
+          "alt": "The question as printed on the paper — An experiment measures the fuel consumption at various speeds for a particular model of car. The data collected are shown in Table 1 below. Table 1 Speed (km/hour) 40 48 56 64 88 96 112 Fuel consumption 21 16 18 16 13 11 9 (km/litre) Mary drove from Cork to Dublin at an average speed of 96 km/h. Jane drove the same journey at an average speed of 112 km/h. Each travelled 260 km and paid 132⋅9 cents per litre for the fuel. Both used the model of car used to generate the data in Table 1. Find how much longer it took Mary to complete the journey. Give your answer correct to the nearest minute.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p030-i1",
@@ -29284,6 +31196,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q2-d-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q2-d-ii.png",
+          "srcHash": "8837c006a14d3545c1633810474db557",
+          "alt": "The question as printed on the paper — An experiment measures the fuel consumption at various speeds for a particular model of car. The data collected are shown in Table 1 below. Table 1 Speed (km/hour) 40 48 56 64 88 96 112 Fuel consumption 21 16 18 16 13 11 9 (km/litre) Mary drove from Cork to Dublin at an average speed of 96 km/h. Jane drove the same journey at an average speed of 112 km/h. Each travelled 260 km and paid 132⋅9 cents per litre for the fuel. Both used the model of car used to generate the data in Table 1. Based on the data in Table 1 and their average speeds, find how much more Jane spent on fuel during the course of this journey.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p030-i2",
@@ -29325,6 +31245,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q3-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q3-a.png",
+          "srcHash": "4b94adbc959f2af596c729ca5cfb5a42",
+          "alt": "The question as printed on the paper — ABC is a triangle where the co-ordinates of A and C are (0, 6) and (4, 2) respectively. G (/3 2 , 4/3 ) is the centroid of the triangle ABC. AG intersects BC at the point P. |AG| : |GP| = 2 : 1. A (0, 6) C(4, 2) G(2 3 , 4 3 ) B Find the co-ordinates of P.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p031-i0",
@@ -29368,6 +31296,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q3-b.png",
+          "srcHash": "ec06ce2ed95d6fd22cbad7af69f8f731",
+          "alt": "The question as printed on the paper — ABC is a triangle where the co-ordinates of A and C are (0, 6) and (4, 2) respectively. G (/3 2 , 4/3 ) is the centroid of the triangle ABC. AG intersects BC at the point P. |AG| : |GP| = 2 : 1. A (0, 6) C(4, 2) G(2 3 , 4 3 ) B Find the co-ordinates of B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p031-i1",
@@ -29416,6 +31352,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q3-c",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q3-c.png",
+          "srcHash": "43269d30fc848b6c22775e1f34cb0dbf",
+          "alt": "The question as printed on the paper — ABC is a triangle where the co-ordinates of A and C are (0, 6) and (4, 2) respectively. G (/3 2 , 4/3 ) is the centroid of the triangle ABC. AG intersects BC at the point P. |AG| : |GP| = 2 : 1. A (0, 6) C(4, 2) G(2 3 , 4 3 ) B Prove that C is the orthocentre of the triangle ABC.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p032-i0",
@@ -29467,6 +31411,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q4-a.png",
+          "srcHash": "c21acc195cf0aa03ffb3f6c18b4cfdbe",
+          "alt": "The question as printed on the paper — A(0, 0), B(6∙5, 0) and C(10, 7) are three points on a circle. (a) Find the equation of the circle.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-HL-scheme-p033-i0",
           "src": "/exam-figures/maths/markbank/maths-2017-HL-scheme-p033-i0.png",
@@ -29510,6 +31462,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q4-b.png",
+          "srcHash": "f3e1b62920c231ec7ee30a03917d25e3",
+          "alt": "The question as printed on the paper — A(0, 0), B(6∙5, 0) and C(10, 7) are three points on a circle. Find |∠BCA|. Give your answer in degrees, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p034-i0",
@@ -29556,6 +31516,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q5-a.png",
+          "srcHash": "a4b527ae1e9bb06b56f50c0ead279b66",
+          "alt": "The question as printed on the paper — ABCD is a rectangle. F ∈ [AB], G ∈ [BC], [FD]∩ [AG] = {E}, and FD ⊥ AG. |AE| = 12 cm, |EG| = 27 cm, and |FE| = 5 cm. D A 12 5 E F C Prove that ∆AFE and ∆DAE are similar (equiangular).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29584,6 +31552,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q5-b.png",
+          "srcHash": "901a133c27328a7241d76f5b7db34002",
+          "alt": "The question as printed on the paper — ABCD is a rectangle. F ∈ [AB], G ∈ [BC], [FD]∩ [AG] = {E}, and FD ⊥ AG. |AE| = 12 cm, |EG| = 27 cm, and |FE| = 5 cm. D A 12 5 E F C (b) Find |AD|.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p035-i0",
@@ -29622,6 +31598,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q5-c",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q5-c.png",
+          "srcHash": "91256a6ae68c7a2b52de3c6ad8ad2f8a",
+          "alt": "The question as printed on the paper — ABCD is a rectangle. F ∈ [AB], G ∈ [BC], [FD]∩ [AG] = {E}, and FD ⊥ AG. |AE| = 12 cm, |EG| = 27 cm, and |FE| = 5 cm. D A 12 5 E F C ∆AFE and ∆AGB are similar. Show that |AB| = 36 cm.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p035-i1",
@@ -29668,6 +31652,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q5-d",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q5-d.png",
+          "srcHash": "84f2147ca01a96526e53124740a83464",
+          "alt": "The question as printed on the paper — ABCD is a rectangle. F ∈ [AB], G ∈ [BC], [FD]∩ [AG] = {E}, and FD ⊥ AG. |AE| = 12 cm, |EG| = 27 cm, and |FE| = 5 cm. D A 12 5 E F C Find the area of the quadrilateral GCDE.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-HL-scheme-p036-i0",
           "src": "/exam-figures/maths/markbank/maths-2017-HL-scheme-p036-i0.png",
@@ -29709,6 +31701,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q6-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q6-a.png",
+          "srcHash": "98f51b3ec4edaa6cc7da1cd1b96c277d",
+          "alt": "The question as printed on the paper — Take the earth as a sphere with radius 6371 km. J Jack is standing on the Cliffs of Moher at the 6371 km point J which is 214 metres above sea level. He is looking out to sea at a point H on the horizon. 214 m Taking A as the centre of the earth, find |JH|, the distance from Jack to the horizon. Give your answer correct to the nearest km.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29739,6 +31739,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q6-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q6-b.png",
+          "srcHash": "c71a47ba268b5f74b8a9d2f3fe6d4831",
+          "alt": "The question as printed on the paper — The Cliffs of Moher, at point C, are at latitude 53° north of the equator. s₁ On the diagram, s₁ represents the circle that is at latitude 53^o. s₂ 53° s₂ represents the equator (which is at latitude 0°). A is the centre of the earth. 6371 km s₁ and s₂ are on parallel planes. Find the length of the circle s₁. Give your answer correct to the nearest km.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p037-i0",
@@ -29777,6 +31785,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q7-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q7-a.png",
+          "srcHash": "75499c63d75902aca7abb3d1b0ce3b93",
+          "alt": "The question as printed on the paper — Two solid cones, each of radius R cm and height R cm are welded together at their vertices and placed in the smallest possible hollow cylinder, as shown in Figure 1 below. Figure 1 Figure 2 R R R R Show that the capacity (volume) of the empty space in the cylinder is equal to the capacity of an empty sphere of radius R cm (Figure 2).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p038-i0",
@@ -29817,6 +31833,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q7-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q7-b-i.png",
+          "srcHash": "bf8a24061d8e074da636f8857de65884",
+          "alt": "The question as printed on the paper — Two solid cones, each of radius R cm and height R cm are welded together at their vertices and placed in the smallest possible hollow cylinder, as shown in Figure 1 below. Figure 1 Figure 2 R R R R In the remainder of this question, R = 12 cm. Water is poured into both the cylinder and the sphere to a depth of 6 cm as shown below (Figure 3 and Figure 4 respectively). (i) Find |AB|, the radius of the circular surface of the water in the sphere (Figure 4). Give your answer in the form a√b cm, where a, b ∈ ℕ. Figure 3 Figure 4 12 12 D C A B 6 6",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29848,6 +31872,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q7-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q7-b-ii.png",
+          "srcHash": "0629ec8d1dce106083f2b0c816f8a969",
+          "alt": "The question as printed on the paper — In the remainder of this question, R = 12 cm. Water is poured into both the cylinder and the sphere to a depth of 6 cm as shown below (Figure 3 and Figure 4 respectively). Figure 3 Figure 4 12 12 D C A B 6 6 Find |CD|, the radius of the cone at water level, as shown in Figure 3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p038-i1",
@@ -29890,6 +31922,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q7-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q7-b-iii.png",
+          "srcHash": "06d7e0dce0c656993af30bcb74bac41f",
+          "alt": "The question as printed on the paper — In the remainder of this question, R = 12 cm. Water is poured into both the cylinder and the sphere to a depth of 6 cm as shown below (Figure 3 and Figure 4 respectively). Figure 3 Figure 4 12 12 D C A B 6 6 (iii) Verify that the area of the surface of the water in the sphere is equal to the area of the surface of the water in the cylinder.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29924,6 +31964,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q7-c",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q7-c.png",
+          "srcHash": "bdb610489ab6b59956563374ad137b8b",
+          "alt": "The question as printed on the paper — Two solid cones, each of radius R cm and height R cm are welded together at their vertices and placed in the smallest possible hollow cylinder, as shown in Figure 1 below. Figure 1 Figure 2 R R R R The mathematician Cavalieri discovered that, at the same depth, the volume of water in the available space in the cylinder is equal to the volume of water in the sphere. Use this discovery to find the volume of water in the sphere when the depth is 6 cm. Give your answer in terms of 𝜋.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p038-i2",
@@ -29967,6 +32015,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q8-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q8-a-i.png",
+          "srcHash": "f432209671e050a6bba2a1fbe48fb7a8",
+          "alt": "The question as printed on the paper — In 2015, in a particular country, the weights of 15 year olds were normally distributed with a mean of 63⋅5 kg and a standard deviation of 10 kg. In 2015, Mariska was a 15 year old in that country. Her weight was 50 kg. Find the percentage of 15 year olds in that country who weighed more than Mariska.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-HL-scheme-p039-i0",
           "src": "/exam-figures/maths/markbank/maths-2017-HL-scheme-p039-i0.png",
@@ -30009,6 +32065,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q8-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q8-a-ii.png",
+          "srcHash": "ba30b730127cc593704cbaaa553914fb",
+          "alt": "The question as printed on the paper — In 2015, in a particular country, the weights of 15 year olds were normally distributed with a mean of 63⋅5 kg and a standard deviation of 10 kg. In 2015, Kamal was a 15 year old in that country. 1⋅5% of 15 year olds in that country were heavier than Kamal. Find Kamal’s weight.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p039-i1",
@@ -30061,6 +32125,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q8-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q8-a-iii.png",
+          "srcHash": "2558fb6a3fac75996da2b6578500d28f",
+          "alt": "The question as printed on the paper — In 2015, in a particular country, the weights of 15 year olds were normally distributed with a mean of 63⋅5 kg and a standard deviation of 10 kg. (iii) In 2016, 150 of the 15 year olds in that country were randomly selected and their weights recorded. It was found that their weights were normally distributed with a mean weight of 62 kg and a standard deviation of 10 kg. Test the hypothesis, at the 5% level of significance, that the mean weight of 15 year olds, in that country, had not changed from 2015 to 2016. State the null hypothesis and your alternative hypothesis. Give your conclusion in the context of the question. 1",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-HL-scheme-p039-i2",
           "src": "/exam-figures/maths/markbank/maths-2017-HL-scheme-p039-i2.png",
@@ -30097,6 +32169,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q8-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q8-b-i.png",
+          "srcHash": "5204e5e2c754e40d7801c6addbc4b91a",
+          "alt": "The question as printed on the paper — (b) In Galway, rain falls in the morning on 3 of the school days in the year. 1 When it is raining the probability of heavy traffic is 2 . 1 When it is not raining the probability of heavy traffic is 4 . 1 When it is raining and there is heavy traffic, the probability of being late for school is 2 . 1 When it is not raining and there is no heavy traffic, the probability of being late for school is 8 . 1 In any other situation the probability of being late for school is 5 . Some of this information is shown in the tree diagram below. Write the probability associated with each branch of the tree diagram and the probability of each outcome into the blank boxes provided. Give each answer in the form a/b , where a, b∈ℕ. Key Rain = R Heavy traffic = T Late = L No rain = no R Not heavy traffic = no T Not late = no L 1/2 L 1/2 T no L R 1/5 L 1/3 no T no L Random school day in L Galway 1/4 T no L no R 1/8 L no T no L",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p040-i0",
@@ -30136,6 +32216,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q8-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q8-b-ii.png",
+          "srcHash": "e26e2426d4a6ce2fa3e801e6fa200c86",
+          "alt": "The question as printed on the paper — 1 (b) In Galway, rain falls in the morning on 3 of the school days in the year. 1 When it is raining the probability of heavy traffic is 2 . 1 When it is not raining the probability of heavy traffic is 4 . 1 When it is raining and there is heavy traffic, the probability of being late for school is 2 . 1 When it is not raining and there is no heavy traffic, the probability of being late for school is 8 . 1 In any other situation the probability of being late for school is 5 . Some of this information is shown in the tree diagram below. Key Rain = R Heavy traffic = T Late = L No rain = no R Not heavy traffic = no T Not late = no L 1/2 L 1/2 T no L R 1/5 L 1/3 no T no L Random school day in L Galway 1/4 T no L no R 1/8 L no T no L On a random school day in Galway, find the probability of being late for school.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p041-i0",
@@ -30177,6 +32265,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q8-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q8-b-iii.png",
+          "srcHash": "7a4beae877bc25781d0cbcaa2134ace0",
+          "alt": "The question as printed on the paper — 1 (b) In Galway, rain falls in the morning on 3 of the school days in the year. 1 When it is raining the probability of heavy traffic is 2 . 1 When it is not raining the probability of heavy traffic is 4 . 1 When it is raining and there is heavy traffic, the probability of being late for school is 2 . 1 When it is not raining and there is no heavy traffic, the probability of being late for school is 8 . 1 In any other situation the probability of being late for school is 5 . Some of this information is shown in the tree diagram below. Key Rain = R Heavy traffic = T Late = L No rain = no R Not heavy traffic = no T Not late = no L 1/2 L 1/2 T no L R 1/5 L 1/3 no T no L Random school day in L Galway 1/4 T no L no R 1/8 L no T no L (iii) On a random school day in Galway, find the probability that it rained in the morning, given that you were late for school.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-HL-scheme-p041-i1",
           "src": "/exam-figures/maths/markbank/maths-2017-HL-scheme-p041-i1.png",
@@ -30215,6 +32311,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q9-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q9-a.png",
+          "srcHash": "595e47370d244fccd35dce1843f615cb",
+          "alt": "The question as printed on the paper — E N D River Conor's property T C T F 30° D 60° 15 C Figure 1 Figure 2 Conor’s property is bounded by the straight bank of a river, as shown in Figure 1 above. T is the base of a vertical tree that is growing near the opposite bank of the river. |TE| is the height of the tree, as shown in Figure 2 above. From the point C, which is due west of the tree, the angle of elevation of E, the top of the tree, is 60°. From the point D, which is 15 m due north of C, the angle of elevation of E is 30° (see Figure 2). The land on both sides of the river is flat and at the same level. Use triangle ECT, to express |TE| in the form √a|CT| metres, where a∈ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-HL-scheme-p042-i0",
           "src": "/exam-figures/maths/markbank/maths-2017-HL-scheme-p042-i0.png",
@@ -30252,6 +32356,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q9-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q9-b.png",
+          "srcHash": "f432a04d6023921b8ac5e13bc2a88623",
+          "alt": "The question as printed on the paper — E N D River Conor's property T C T F 30° D 60° 15 C Figure 1 Figure 2 Conor’s property is bounded by the straight bank of a river, as shown in Figure 1 above. T is the base of a vertical tree that is growing near the opposite bank of the river. |TE| is the height of the tree, as shown in Figure 2 above. From the point C, which is due west of the tree, the angle of elevation of E, the top of the tree, is 60°. From the point D, which is 15 m due north of C, the angle of elevation of E is 30° (see Figure 2). The land on both sides of the river is flat and at the same level. (b) metres. 3",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p042-i1",
@@ -30293,6 +32405,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q9-c",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q9-c.png",
+          "srcHash": "c4b972d9d606152a13c227e5d4e8ac79",
+          "alt": "The question as printed on the paper — E N D River Conor's property T C T F 30° D 60° 15 C Figure 1 Figure 2 Conor’s property is bounded by the straight bank of a river, as shown in Figure 1 above. T is the base of a vertical tree that is growing near the opposite bank of the river. |TE| is the height of the tree, as shown in Figure 2 above. From the point C, which is due west of the tree, the angle of elevation of E, the top of the tree, is 60°. From the point D, which is 15 m due north of C, the angle of elevation of E is 30° (see Figure 2). The land on both sides of the river is flat and at the same level. Hence find |CT|, the distance from the base of the tree to the bank of the river at Conor’s side. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-HL-scheme-p042-i2",
           "src": "/exam-figures/maths/markbank/maths-2017-HL-scheme-p042-i2.png",
@@ -30331,6 +32451,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q9-d",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q9-d.png",
+          "srcHash": "6f4ee4291cb6e8c91f9ab424303ea3fe",
+          "alt": "The question as printed on the paper — E N D River Conor's property T C T F 30° D 60° 15 C Figure 1 Figure 2 Conor’s property is bounded by the straight bank of a river, as shown in Figure 1 above. T is the base of a vertical tree that is growing near the opposite bank of the river. |TE| is the height of the tree, as shown in Figure 2 above. From the point C, which is due west of the tree, the angle of elevation of E, the top of the tree, is 60°. From the point D, which is 15 m due north of C, the angle of elevation of E is 30° (see Figure 2). The land on both sides of the river is flat and at the same level. Find |TE|, the height of the tree. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -30360,6 +32488,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q9-e",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q9-e.png",
+          "srcHash": "164c00980ec151f0d8b402f86f4ad579",
+          "alt": "The question as printed on the paper — E N D River Conor's property T C T F 30° D 60° 15 C Figure 1 Figure 2 Conor’s property is bounded by the straight bank of a river, as shown in Figure 1 above. T is the base of a vertical tree that is growing near the opposite bank of the river. |TE| is the height of the tree, as shown in Figure 2 above. From the point C, which is due west of the tree, the angle of elevation of E, the top of the tree, is 60°. From the point D, which is 15 m due north of C, the angle of elevation of E is 30° (see Figure 2). The land on both sides of the river is flat and at the same level. The tree falls across the river and hits the bank at Conor’s side at the point F. Find the maximum size of the angle FTC. Give your answer in degrees, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p043-i0",
@@ -30401,6 +32537,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-HL-ask-p2-q9-f",
+          "src": "/exam-figures/maths/markbank/maths-2017-HL-ask-p2-q9-f.png",
+          "srcHash": "2a8ce0b01f783a1d6fc3aacecd0ce4bd",
+          "alt": "The question as printed on the paper — E N D River Conor's property T C T F 30° D 60° 15 C Figure 1 Figure 2 Conor’s property is bounded by the straight bank of a river, as shown in Figure 1 above. T is the base of a vertical tree that is growing near the opposite bank of the river. |TE| is the height of the tree, as shown in Figure 2 above. From the point C, which is due west of the tree, the angle of elevation of E, the top of the tree, is 60°. From the point D, which is 15 m due north of C, the angle of elevation of E is 30° (see Figure 2). The land on both sides of the river is flat and at the same level. If the tree was equally likely to fall in any direction, find the probability that it would hit the bank at Conor’s side, when it falls. Give your answer as a percentage, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Higher Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-HL-scheme-p043-i1",

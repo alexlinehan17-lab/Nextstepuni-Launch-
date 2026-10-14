@@ -68,13 +68,17 @@ class Paper:
         out = Path(f'scripts/markbank/mathematics/reviews/{self.year}-{LEVEL[self.lv]}-{self.key}.json')
         out.write_text(json.dumps(r, ensure_ascii=False, indent=2) + '\n')
 
-    def apply(self, rows, label, added=(), ref_overrides=None, expect_added=(), card_overrides=None):
+    def apply(self, rows, label, added=(), ref_overrides=None, expect_added=(), card_overrides=None,
+              question_figures=False):
         """Write the paper's cards into the authored deck.
 
         expect_added: ids this paper ADDS. On the first run they are appended; on a
         re-run they already exist and are rebuilt and compared, never appended twice.
         card_overrides: {id: {field: value}} applied after the card is built, for a
         later, recorded decision about a card (e.g. a withdrawal note).
+        question_figures: stamp each ADDED card with the printed-question crop that
+        maths_question_figures.py recorded for it in maths-question-figures.json
+        (the crops are opened and checked before the sidecar is committed).
         """
         ap = Path('scripts/markbank/authored/maths.json'); authored = json.loads(ap.read_text())
         byid = {c['id']: c for c in authored}
@@ -83,6 +87,9 @@ class Paper:
         ref_overrides = ref_overrides or {}
         card_overrides = card_overrides or {}
         expect_added = list(expect_added)
+        qfig = {}
+        if question_figures:
+            qfig = json.loads(Path('scripts/markbank/authored/maths-question-figures.json').read_text())
         def pts(cid): return [dict(id=f'{cid}-solution-{i+1}', kind='point', verbatim=q, marks=None, contextNote=CTX) for i, q in enumerate(rows[cid])]
         def fresh(c):
             parts = ', '.join(p if i == 0 else p[len(re.match(r'Q\d+', p)[0]):] for i, p in enumerate(c['printedParts']))
@@ -90,6 +97,7 @@ class Paper:
                      subjectId='maths', section='A' if int(re.match(r'Q(\d+)', c['printedParts'][0])[1]) <= 6 else 'B',
                      questionRef=f"{self.year} {self.lv.upper()} Paper {self.key[1:]} {parts}", questionText=c['questionText'],
                      tariffModel={'kind': 'questionTotal'}, totalMarks=c['totalMarks'], rows=pts(c['id']), notes=note)
+            if qfig.get(c['id']): a['questionFigureKey'] = qfig[c['id']]
             if c.get('stem'): a['stem'] = c['stem']
             a.update(card_overrides.get(c['id'], {}))
             return a

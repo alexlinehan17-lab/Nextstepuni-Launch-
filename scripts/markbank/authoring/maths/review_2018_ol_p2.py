@@ -243,4 +243,5 @@ p.review(marks,
         else ('mathematical-context', 'The car chosen being a Ford car or a car which is not red is the event whose probability is asked for, not a choice between printed prompts.') if 'Renault' in t
         else ('answer-selection', 'The candidate ticks one of four printed correlation values as the answer to one required task; it does not offer alternative practice prompts.') if 'scatterplot' in t else None)
 p.apply(ROWS, '2018 Ordinary Level Paper 2', expect_added=[c['id'] for c in p.cards],
-        card_overrides={k: {'figureKey': v} for k, v in SCHEME_ROW_FIGURES.items()})
+        card_overrides={k: {'figureKey': v} for k, v in SCHEME_ROW_FIGURES.items()},
+        question_figures=True)

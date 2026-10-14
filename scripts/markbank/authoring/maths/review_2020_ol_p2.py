@@ -182,4 +182,5 @@ p.review(marks,
         else ('mathematical-counting', 'The menu is the mathematical sample space; the candidate counts combinations rather than choosing a prompt.') if 'choose from' in t
         else ('method-choice', 'Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts.') if 'or otherwise' in t
         else ('given-context', 'Names the shaded region or the given pie-chart angle: data for one required task, not a choice between prompts.') if ('One of these areas' in t or 'one of the angles' in t) else None)
-p.apply(ROWS, '2020 Ordinary Level Paper 2', expect_added=[c['id'] for c in p.cards])
+p.apply(ROWS, '2020 Ordinary Level Paper 2', expect_added=[c['id'] for c in p.cards],
+        question_figures=True)

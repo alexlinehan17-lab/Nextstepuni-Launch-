@@ -216,4 +216,5 @@ p.review(marks,
       'reason': 'Every question on the paper is required; every published scale unit is retained.'}],
     lambda t: ('all-questions-required', 'All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained.') if 'Answer all' in t else None)
 p.apply(ROWS, '2017 Higher Level Paper 2', expect_added=[c['id'] for c in p.cards],
-        card_overrides={k: {'figureKey': v} for k, v in SCHEME_ROW_FIGURES.items()})
+        card_overrides={k: {'figureKey': v} for k, v in SCHEME_ROW_FIGURES.items()},
+        question_figures=True)

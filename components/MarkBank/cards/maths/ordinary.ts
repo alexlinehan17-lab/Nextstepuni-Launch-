@@ -22465,6 +22465,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q1-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q1-a-i.png",
+          "srcHash": "54b762dd873a04dfc56d0e6110c27270",
+          "alt": "The question as printed on the paper — John works as part of a sales team. He earns a basic rate of €12·60 per hour. In addition to his hourly pay, he earns a commission of 22% on any sales he makes above €200 each week. During a particular week, John worked 45 hours at the basic rate and made sales amounting to €350. Find John’s gross pay for this week.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22497,6 +22505,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q1-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q1-a-ii.png",
+          "srcHash": "84cffd8e7fdc886b23e1a5b41fd02d65",
+          "alt": "The question as printed on the paper — John works as part of a sales team. He earns a basic rate of €12·60 per hour. In addition to his hourly pay, he earns a commission of 22% on any sales he makes above €200 each week. (ii) During the following week John worked 51 hours. This included 3 hours on Sunday. If John works on a Sunday he receives 1·5 times the basic rate for those hours. His gross pay for that week was €713·20. Find the amount of sales John made in that week.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22533,6 +22549,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q1-b.png",
+          "srcHash": "a660491f33f521334a114c85d8d97573",
+          "alt": "The question as printed on the paper — John pays tax at the Standard Rate of 20% and at the Higher Rate of 40%. He has a weekly Tax Credit of €26. The weekly Standard Rate Cut-off Point is €678. Find John’s net income for the week where his salary was €713·20.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22565,6 +22589,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q2-a.png",
+          "srcHash": "c87945287e9f41ed5c6f774f22e399fc",
+          "alt": "The question as printed on the paper — (a) Solve the equation: 9x−6 3x−14 9x + = 4. 2 3",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22602,6 +22634,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q2-b.png",
+          "srcHash": "6cb547be0935c8623bb1a8990d06cab2",
+          "alt": "The question as printed on the paper — Solve the simultaneous equations: 3x−y = 4 4x²−3xy = 4.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22635,6 +22675,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q3-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q3-a-i.png",
+          "srcHash": "1e3cfedb6f274adf7aaca82b58e702bc",
+          "alt": "The question as printed on the paper — Write z₃ in the form a + bi, where a, b∈ℤ. (a) (i) Im Plot z1, z2 and z3 on the given 5 (ii) Argand Diagram. 4 Label each point clearly. 3 2 1 Re -4 -3 -2 -1 1 2 4 3 -1 -2 -3 -4 -5",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22663,6 +22711,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q3-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q3-a-iii.png",
+          "srcHash": "7d5e62a943431f7e751da1f44c9d5055",
+          "alt": "The question as printed on the paper — (iii) Find |z1|.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22698,6 +22754,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q3-b.png",
+          "srcHash": "7710fea5baa337e6374ad3bc12a8a8d8",
+          "alt": "The question as printed on the paper — z₁ = 3 − 4i, z₂ = −2 + i and z₃ = 2iz₂, where i² = −1. If z₁ × z₄ = 29 + 3i, write z₄ in the form a + bi, where a, b ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22730,6 +22794,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q4-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q4-a-i.png",
+          "srcHash": "24777f607c7adf8f3325d910a817edaf",
+          "alt": "The question as printed on the paper — The Golden Gate Bridge in San Francisco is constantly being repainted. It is estimated that the surface area of exposed steel 1 m = 3·28 ft that needs to be painted is approximately 10 million square feet. Given that 1 metre is equal to 3·28 feet, convert the surface area of the bridge into square metres, giving your answer in the form a × 10ⁿ, where 1 ≤ a < 10 and n∈ℕ. Give the value of a correct to two significant figures. 1 m = 3·28 ft",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22760,6 +22832,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q4-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q4-a-ii.png",
+          "srcHash": "746105b36ebe2a525d89678ff72e2812",
+          "alt": "The question as printed on the paper — The Golden Gate Bridge in San Francisco is constantly being repainted. It is estimated that the surface area of exposed steel 1 m = 3·28 ft that needs to be painted is approximately 10 million square feet. A litre of the paint used on the Golden Gate Bridge will cover approximately 5 square metres. This paint comes in 25 litre tins. Find the minimum number of tins of paint that will be needed to paint the entire bridge.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22792,6 +22872,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q4-b.png",
+          "srcHash": "dc55388e062e4c7f63bd3bcf115d4f75",
+          "alt": "The question as printed on the paper — Solve the equation 2^(9x−1) = 8^(2x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22828,6 +22916,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q5-a.png",
+          "srcHash": "bbac59636b9cf1356935a43c80ed55ab",
+          "alt": "The question as printed on the paper — Solve the equation x²−3x−4 = 0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22855,6 +22951,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q5-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q5-b-i.png",
+          "srcHash": "c0cf584f495611cc57f75e5aaa810adc",
+          "alt": "The question as printed on the paper — Complete the table below to show the value of the function f(x) = −x²−x + 6 for each of the given values of x. x −4 −3 −2 −1 0 1 2 f(x) 4",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22884,6 +22988,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q5-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q5-b-ii.png",
+          "srcHash": "e1610b027540ac560fe2fa64da835e50",
+          "alt": "The question as printed on the paper — Complete the table below to show the value of the function f(x) = −x²−x + 6 for each of the given values of x. x −4 −3 −2 −1 0 1 2 f(x) 4 Hence draw the graph of f in the domain −4 ≤ x ≤ 2, where x∈ℝ, on the diagram y below. 7 6 5 4 3 2 1 x -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 -4 -5 -6 -7",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22911,6 +23023,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q5-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q5-b-iii.png",
+          "srcHash": "58ab8ee8ac7576de6a6cd7361deca9d9",
+          "alt": "The question as printed on the paper — (iii) On the same diagram as the function f, draw the graph of the function g(x) = f(x−2), in the domain −2 ≤ x ≤ 4, where x∈ℝ. Label the graphs of f(x) and g(x) clearly.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22941,6 +23061,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q6-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q6-a-i.png",
+          "srcHash": "8ac1718b54795949c6f8e0aac5bfc5c3",
+          "alt": "The question as printed on the paper — Differentiate the function f(x) = 4x³−3x² + x−7, where x∈ℝ, with respect to x.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22969,6 +23097,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q6-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q6-a-ii.png",
+          "srcHash": "4866146614f207cc5720ff7e1e39d6d9",
+          "alt": "The question as printed on the paper — Find the slope of the tangent to the graph of f(x) = 4x³−3x² + x−7 at the point (1, −5).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -22999,6 +23135,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q6-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q6-a-iii.png",
+          "srcHash": "d923407140d30a5741b6789ae5e5241e",
+          "alt": "The question as printed on the paper — Differentiate the function f(x) = 4x³−3x² + x−7, where x∈ℝ, with respect to x. (a) (i) Find the slope of the tangent to the graph of f(x) = 4x³−3x² + x−7 (ii) at the point (1, −5). (iii) Hence find the equation of the tangent to the graph at this point.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23036,6 +23180,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q6-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q6-b.png",
+          "srcHash": "4aeab574cb4eeb269f4bd4ba90b4d6ae",
+          "alt": "The question as printed on the paper — The function g(x) = 2x² + px + q, where p, q∈ℤ, and x∈ℝ. Given that g(2) = 6 and g′(3) = 9, find the value of p and the value of q. Note: g′(3) is the value of the derivative of g(x) at x = 3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23065,6 +23217,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q7-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q7-a-i.png",
+          "srcHash": "ff0221ccfbebca378bd640ae08994a10",
+          "alt": "The question as printed on the paper — Pat buys a new car for €32 000. He trades in his old car and is given an allowance of €20 000 by the garage. He borrows the balance of the money from the credit union. His fixed monthly repayment over three years is €443·66 per month. How much money does Pat pay in total to the credit union for the loan?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23093,6 +23253,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q7-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q7-a-ii.png",
+          "srcHash": "dbb0e4f5dc1c3e3c6305e59e5fa53fa0",
+          "alt": "The question as printed on the paper — Pat buys a new car for €32 000. He trades in his old car and is given an allowance of €20 000 by the garage. He borrows the balance of the money from the credit union. His fixed monthly repayment over three years is €443·66 per month. Show the amount that Pat repays as a percentage of the amount that he borrows from the credit union is 133·1%, correct to one decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23124,6 +23292,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q7-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q7-b.png",
+          "srcHash": "848d67047122b0d46313dcb1e1da2080",
+          "alt": "The question as printed on the paper — A sum of money is invested at r% per annum compound interest for 3 years. At the end of the 3 years the value of the investment has increased by 33·1%. Find the value of r.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23152,6 +23328,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q7-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q7-c-i.png",
+          "srcHash": "599414214eb18dbc5e2a31509a724f90",
+          "alt": "The question as printed on the paper — It is estimated that the value of cars depreciates at a compound rate of 20% per year. Use this percentage to find the value of Pat's car after three years (original price €32 000).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23183,6 +23367,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q7-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q7-c-ii.png",
+          "srcHash": "05cb36a8d1b9e53afcc9c2f69e7e3a0c",
+          "alt": "The question as printed on the paper — Pat's friend Caitlín bought a new car three years ago. Its value also depreciated by 20% per year. It is now worth €17 920. Find the original value of the car.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23210,6 +23402,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q8-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q8-a.png",
+          "srcHash": "ffa9fe7b29e784967266aafaa9cb7a36",
+          "alt": "The question as printed on the paper — A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = 1/60 x2 − 1/4 x + 3/5 . In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x∈ℝ and h(x) is measured in metres. Find the height of the block above the water.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23240,6 +23440,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q8-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q8-b-i.png",
+          "srcHash": "6d506292f9d7c4b03f1855296eb293f9",
+          "alt": "The question as printed on the paper — A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = 1/60 x2 − 1/4 x + 3/5 . In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x∈ℝ and h(x) is measured in metres. Show that the swimmer is on the surface of the water (i.e. h(x) = 0) when she is 12 metres from the starting block.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23273,6 +23481,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q8-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q8-b-ii.png",
+          "srcHash": "dc3db71b5be66108e9a30f90d3c6b80d",
+          "alt": "The question as printed on the paper — A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = 1/60 x2 − 1/4 x + 3/5 . In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x∈ℝ and h(x) is measured in metres. (ii) Find the horizontal distance, in metres, from the starting block to the point where the swimmer enters the water. 1 1 3",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23302,6 +23518,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q8-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q8-c-i.png",
+          "srcHash": "6297b6cfbf00c72a0de8b8f7193c5a48",
+          "alt": "The question as printed on the paper — Find h′(x), the derivative of h(x) = 60x2− 4x+ (c) (i) 5 .",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23333,6 +23557,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q8-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q8-c-ii.png",
+          "srcHash": "710cc8a8fc6c4b2e4d62f716d980cc01",
+          "alt": "The question as printed on the paper — A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = 1/60 x2 − 1/4 x + 3/5 . In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x∈ℝ and h(x) is measured in metres. Find h′(x), the derivative of h(x) = 60x2− 4x+ (c) (i) 5 . Use your answer to Part (c)(i) to find the horizontal distance (x), in metres, from the starting block to the point at which the swimmer reaches her greatest depth.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23363,6 +23595,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q8-c-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q8-c-iii.png",
+          "srcHash": "4e50be2e6a36593131397dcefbb37934",
+          "alt": "The question as printed on the paper — A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = 1/60 x2 − 1/4 x + 3/5 . In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x∈ℝ and h(x) is measured in metres. Find h′(x), the derivative of h(x) = 60x2− 4x + (c) (i) 5 . Use your answer to Part (c)(i) to find the horizontal distance (x), in metres, from the starting block to the point at which the swimmer reaches her greatest depth. (iii) Hence find this greatest depth.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23392,6 +23632,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q8-d-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q8-d-i.png",
+          "srcHash": "4805c55e4f22d07bc8118ccf81482490",
+          "alt": "The question as printed on the paper — In the 2016 Summer Olympics, Michael Phelps, won the 200 m Butterfly final in a time of 1 minute and 53∙36 seconds ( 1: 53·36). The time it took to swim each of the four 50 m sections of the race (split time) is given in the table below. The percentage increase in the time taken to swim one section is also given. Thus, it took the swimmer 14·7% longer to swim the second 50 metres compared to the first 50 metres. Race Section Split Time (secs) Percentage Increase 24·85 0 – 50 m 28·5 14·7% 50 – 100 m 29·33 100 – 150 m 30·68 150 – 200 m 1:53·36 Total Complete the table by finding the percentage increase in split time by comparing each split time with the previous one. Give your answers correct to one decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23430,6 +23678,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q8-d-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q8-d-ii.png",
+          "srcHash": "3f98c584d824b33e780bb957ec8d6a39",
+          "alt": "The question as printed on the paper — In the 2016 Summer Olympics, Michael Phelps, won the 200 m Butterfly final in a time of 1 minute and 53∙36 seconds ( 1: 53·36). The time it took to swim each of the four 50 m sections of the race (split time) is given in the table below. The percentage increase in the time taken to swim one section is also given. Thus, it took the swimmer 14·7% longer to swim the second 50 metres compared to the first 50 metres. Race Section Split Time (secs) Percentage Increase 24·85 0 – 50 m 28·5 14·7% 50 – 100 m 29·33 100 – 150 m 30·68 150 – 200 m 1:53·36 Total Another swimmer in the race completed the first 50 m in a time of 25·01 seconds. His subsequent 50 m split times increased at the same rates as each of Michael Phelps’ times. Using the table below, or otherwise, find the difference between his finishing time and that of Michael Phelps. Give your answers in seconds correct to 2 decimal places. Race Section Split Time (secs) Percentage Increase 25·01 0 – 50 m 14·7% 50 – 100 m 100 – 150 m 150 – 200 m Total",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23459,6 +23715,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q9-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q9-a.png",
+          "srcHash": "0f4f74fdd2f3583e0ce3f0f69867b986",
+          "alt": "The question as printed on the paper — The following sequence of patterns is created using matchsticks to form equilateral triangles. Pattern 1 Pattern 3 Pattern 2 Complete the table below to show the number of matchsticks required to make each of the first six patterns of the above sequence. Pattern Number 1 2 3 4 5 6 Number of Matchsticks 3 7",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23487,6 +23751,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q9-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q9-b-i.png",
+          "srcHash": "75b9290c80ea2b0be5754ef398e8a28d",
+          "alt": "The question as printed on the paper — The following sequence of patterns is created using matchsticks to form equilateral triangles. Pattern 1 Pattern 3 Pattern 2 How many matchsticks are required to make pattern 10 of the sequence?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23518,6 +23790,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q9-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q9-b-ii.png",
+          "srcHash": "0a148b4c6867f09a29e503317647b601",
+          "alt": "The question as printed on the paper — The following sequence of patterns is created using matchsticks to form equilateral triangles. Pattern 1 Pattern 3 Pattern 2 Find a formula for Tₙ, the number of matchsticks required to make pattern n of the sequence.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23547,6 +23827,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q9-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q9-b-iii.png",
+          "srcHash": "da9a6a62dacfa3f3b2d5eecdee16f7bf",
+          "alt": "The question as printed on the paper — The following sequence of patterns is created using matchsticks to form equilateral triangles. Pattern 1 Pattern 3 Pattern 2 (iii) Pattern k has 147 matchsticks, where k∈ℕ. Find the value of k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23578,6 +23866,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q9-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q9-c-i.png",
+          "srcHash": "bf2040826d200b01e57a8cc8d227622f",
+          "alt": "The question as printed on the paper — The following sequence of patterns is created using matchsticks to form equilateral triangles. Pattern 1 Pattern 3 Pattern 2 Find a formula for Sₙ, the total number of matchsticks required to make the first n patterns.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23614,6 +23910,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q9-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q9-c-ii.png",
+          "srcHash": "d7b8b8b60f3c7d933a3c58cd26002540",
+          "alt": "The question as printed on the paper — The following sequence of patterns is created using matchsticks to form equilateral triangles. Pattern 1 Pattern 3 Pattern 2 Find the total number of complete patterns in the sequence that can be made using 820 matchsticks.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23642,6 +23946,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q9-d-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q9-d-i.png",
+          "srcHash": "77fc3ee69032c20ef1b2ad81fb1a235a",
+          "alt": "The question as printed on the paper — The following sequence of patterns is created using matchsticks to form equilateral triangles. Pattern 1 Pattern 3 Pattern 2 The table below shows the number of triangles formed by each pattern for the first two patterns. Complete the table to show the number of triangles formed for patterns three to six. Pattern Number 1 2 3 4 5 6 Number of Triangles 1 3 Pattern 1 Pattern 3 Pattern 2",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23676,6 +23988,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p1-q9-d-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p1-q9-d-ii.png",
+          "srcHash": "07fc25ccb63ef5fc468b7430fe5b6eef",
+          "alt": "The question as printed on the paper — The following sequence of patterns is created using matchsticks to form equilateral triangles. Pattern 1 Pattern 3 Pattern 2 The area of each triangle is 4√3 cm². Find, correct to the nearest cm², the combined total area covered by the first 15 patterns in the sequence.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23706,6 +24026,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q1-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q1-a-i.png",
+          "srcHash": "1f711fbee14268140bee3640d7448743",
+          "alt": "The question as printed on the paper — A restaurant is offering a three-course meal consisting of one starter, one main course and one dessert. There are 4 different starters, 6 different main courses and 8 different desserts to choose from. How many different three-course meal combinations are available?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23735,6 +24063,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q1-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q1-a-ii.png",
+          "srcHash": "6dfdb7ff1eebf54684c28ab289371787",
+          "alt": "The question as printed on the paper — A restaurant is offering a three-course meal consisting of one starter, one main course and one dessert. There are 4 different starters, 6 different main courses and 8 different desserts to choose from. When Jack visits the restaurant he discovers that the restaurant still has the 4 starters and the 6 main courses available but is sold out of some of the desserts. Jack now has 120 different three-course meal combinations to choose from. How many different desserts are still available to Jack?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23767,6 +24103,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q1-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q1-b-i.png",
+          "srcHash": "d93d3139b64bceb880c668d44405fe60",
+          "alt": "The question as printed on the paper — In a large population 1 in 8 of the people play tennis. Four people are chosen at random from the population. What is the probability that the fourth person chosen is the only one to play tennis?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23796,6 +24140,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q1-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q1-b-ii.png",
+          "srcHash": "b71ff904b399ede2b9c511427984a598",
+          "alt": "The question as printed on the paper — In a large population 1 in 8 of the people play tennis. Three people are chosen at random from the population. What is the probability that exactly two of them play tennis?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23832,6 +24184,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q2-a.png",
+          "srcHash": "673bf0b1c768b58f73790d7ad0993f9f",
+          "alt": "The question as printed on the paper — The points A(4, 6), B(–2, 2) and C(10, 0) are the vertices of the triangle ABC shown below. Find |AB|, the length of [AB]. Give your answer in the form a√b units, where a, b∈ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23865,6 +24225,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q2-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q2-b-i.png",
+          "srcHash": "dce677b239d0855fc4548881d85d9e5a",
+          "alt": "The question as printed on the paper — The points A(4, 6), B(–2, 2) and C(10, 0) are the vertices of the triangle ABC shown below. Find the coordinates of D, the midpoint of [AB].",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23896,6 +24264,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q2-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q2-b-ii.png",
+          "srcHash": "277f1ef4330acc8e597d5faa6994cae1",
+          "alt": "The question as printed on the paper — The points A(4, 6), B(–2, 2) and C(10, 0) are the vertices of the triangle ABC shown below. In the triangle ABC , the point E(7, 3) is the midpoint of [AC]. (ii) Show that DE is parallel to BC. A D E(7, 3) B C",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -23935,6 +24311,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q2-c",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q2-c.png",
+          "srcHash": "16c7ba988a6939ff8540a57d898fec0d",
+          "alt": "The question as printed on the paper — The points A(4, 6), B(–2, 2) and C(10, 0) are the vertices of the triangle ABC shown below. Find the area of the triangle ABC.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23968,6 +24352,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q3-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q3-a-i.png",
+          "srcHash": "e8949cec6bd27c72ed68c2aeab5321c5",
+          "alt": "The question as printed on the paper — In a survey, 1000 people are selected at random and asked some questions about online shopping. Find the margin of error of the survey. Give your answer as a percentage correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24004,6 +24396,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q3-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q3-a-ii.png",
+          "srcHash": "b4acd99a55aaee609900637325139632",
+          "alt": "The question as printed on the paper — In a survey, 1000 people are selected at random and asked some questions about online shopping. Find the margin of error of the survey. Give your answer as a percentage correct to 1 decimal place. Of those asked, 762 said they believe it is safe to give their credit card details when shopping online.Use your answer to Part a(i) above to create a 95% confidence interval for the percentage of people who believe it is safe to give their credit card details when shopping online.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24038,6 +24438,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q3-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q3-a-iii.png",
+          "srcHash": "754a57ea1aa9276b95d0f68f9d024941",
+          "alt": "The question as printed on the paper — In a survey, 1000 people are selected at random and asked some questions about online shopping. (iii) An online media company claims that 80% of people believe it is safe to give their credit card details when shopping online. Conduct a hypothesis test, at the 5% level of significance, to test the company's claim. Give your conclusion in the context of the question and give a reason for your conclusion.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24065,6 +24473,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q3-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q3-b-i.png",
+          "srcHash": "caf924fa66a52b809fd4347a751adf88",
+          "alt": "The question as printed on the paper — (b) (i) An aptitude test was taken by 6500 candidates. The test scores were normally distributed. The mean score was 480 and the standard deviation was 90. On the distribution shown below, the shaded area represents all candidates who were within one standard deviation of the mean. Write the value of A and the value of B into the boxes below. 480 A B",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24099,6 +24515,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q3-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q3-b-ii.png",
+          "srcHash": "5aa0dcbbe64ea4f982b599ffb26429ae",
+          "alt": "The question as printed on the paper — (b) (i) An aptitude test was taken by 6500 candidates. The test scores were normally distributed. The mean score was 480 and the standard deviation was 90. On the distribution shown below, the shaded area represents all candidates who were within one standard deviation of the mean. Write the value of A and the value of B into the boxes below. 480 A B Use the Empirical Rule to estimate the number of candidates in the shaded region.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24128,6 +24552,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q4-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q4-a-i.png",
+          "srcHash": "4acca2a6f1383920adc72fd458dc0f57",
+          "alt": "The question as printed on the paper — The circle c has equation (x−1)² + (y + 4)² = 25. Find the centre and radius of c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24166,6 +24598,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q4-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q4-a-ii.png",
+          "srcHash": "2d7b3c0bb9b6dd8f9f9b2bd3bd8e6923",
+          "alt": "The question as printed on the paper — The circle c has equation (x−1)² + (y + 4)² = 25. The point (1, k) is on c. Find the two possible values of k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24202,6 +24642,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q4-b.png",
+          "srcHash": "500d3d73efaf884f3148d4d74db15ca0",
+          "alt": "The question as printed on the paper — The circle s has equation x² + y² = 13. The point A(3, −2) is on s. Find the equation of t, the tangent to the circle s at the point A. Give your answer in the form t ax + by + c = 0, where a, b, c∈ℤ. x (0, 0)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24235,6 +24683,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q5-a.png",
+          "srcHash": "89b82df8e95c2e1be242e7c07e1f7b17",
+          "alt": "The question as printed on the paper — Two swimmers A and B stand at the same point X, on one shore of a long, still rectangular shaped lake that is 100 m wide, as shown below. (Diagram not to scale.) Both swim to the opposite side of the lake. 𝜃 100 m 55° X Swimmer A swims to the left, making an angle of 55° with the side of the lake as shown. Find the distance that A swims to reach the other side. Give you answer correct to the nearest metre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24265,6 +24721,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q5-b.png",
+          "srcHash": "af1f78b1190c6756b8101952c2a1534a",
+          "alt": "The question as printed on the paper — Two swimmers A and B stand at the same point X, on one shore of a long, still rectangular shaped lake that is 100 m wide, as shown below. (Diagram not to scale.) Both swim to the opposite side of the lake. 𝜃 100 m 55° X Swimmer B swims to the right and travels a distance of 200 m to reach the other side, making an angle of 𝜃 degrees with the bank on the other side of the lake, as shown. Find the value of 𝜃.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24300,6 +24764,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q5-c",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q5-c.png",
+          "srcHash": "7056264ce145c46ad968863b1e99c3c7",
+          "alt": "The question as printed on the paper — Two swimmers A and B stand at the same point X, on one shore of a long, still rectangular shaped lake that is 100 m wide, as shown below. (Diagram not to scale.) Both swim to the opposite side of the lake. 𝜃 100 m 55° X The next day the swimmers again swim to the opposite side of the lake but in slightly different directions. Swimmer A swims to the left, making an angle of 45° with the side of the lake and travels 141·4 metres as shown. Swimmer B swims to the right, making an angle of 40° with the side of the lake and travels 155·6 metres as shown. Find d, the distance both swimmers are apart when they reach the opposite side of the lake. Give you answer correct to the nearest metre. 100 m 40° 45° X",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24339,6 +24811,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q6-a",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q6-a.png",
+          "srcHash": "fe48fa85c627d7843eb761865ea22099",
+          "alt": "The question as printed on the paper — In the diagram below: |∠CAB| = 80° and |∠DCE| = 60°. |∠ABC| = (x + y)° and |∠BCA| = (3x + y)°, where x, y∈ℕ. A 80° D (3x+ y)° C 60° B E Find the value of x and the value of y.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24370,6 +24850,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q6-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q6-b.png",
+          "srcHash": "6bf279386cd3176b49c76b8c3110ff66",
+          "alt": "The question as printed on the paper — In the diagram below, DE is parallel to FG. |DH| = 5 cm. |HE| = 12 cm. |HG| = 30 cm. (b) The distance from D to F is x cm. Find the value of x. F x cm D 5 cm E 12 cm G H 30 cm",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24398,6 +24886,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q7-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q7-a-i.png",
+          "srcHash": "e5882eed6b186c3074b191e8941e3aad",
+          "alt": "The question as printed on the paper — A vertical mobile phone mast, [DC], of height h m, is secured with two cables: [AC] of length x m, and [BC] of length y m, as shown in the diagram. The angle of elevation to the top of the mast from A is 30° and from B is 45°. C x h y 30° 45° A D B Explain why |∠BCA| is 105°.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24430,6 +24926,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q7-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q7-a-ii.png",
+          "srcHash": "d265715eff85da26578d8c9bd2b3c11b",
+          "alt": "The question as printed on the paper — A vertical mobile phone mast, [DC], of height h m, is secured with two cables: [AC] of length x m, and [BC] of length y m, as shown in the diagram. The angle of elevation to the top of the mast from A is 30° and from B is 45°. C x h y 30° 45° A D B The horizontal distance from A to B is 100 m. Use the triangle ABC to find the length of y. Give your answer correct to one decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24466,6 +24970,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q7-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q7-a-iii.png",
+          "srcHash": "50681ce89596aafba96fb5ab053f08e4",
+          "alt": "The question as printed on the paper — A vertical mobile phone mast, [DC], of height h m, is secured with two cables: [AC] of length x m, and [BC] of length y m, as shown in the diagram. The angle of elevation to the top of the mast from A is 30° and from B is 45°. C x h y 30° 45° A D B (iii) Using your answer to Part (a)(ii) or otherwise, find the value of h and the value of x. Give your answers correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24497,6 +25009,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q7-b",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q7-b.png",
+          "srcHash": "b8193c08459ba57a83f8262738fc8505",
+          "alt": "The question as printed on the paper — A vertical mobile phone mast, [DC], of height h m, is secured with two cables: [AC] of length x m, and [BC] of length y m, as shown in the diagram. The angle of elevation to the top of the mast from A is 30° and from B is 45°. C x h y 30° 45° A D B The two cables to secure the mast costs €25 per metre. The mast itself costs €580 per metre. VAT at 23% is then added in each case. Calculate the total cost of the cables and mast after VAT is included.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24527,6 +25047,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q7-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q7-c-i.png",
+          "srcHash": "60b59fd3b3dcb79425d4340148d2eb92",
+          "alt": "The question as printed on the paper — The mast can provide a strong signal for an area in the shape of a regular hexagon of side 8 km, as shown in the diagram. Find the area of the hexagon. Give your answer in km², correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24560,6 +25088,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q7-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q7-c-ii.png",
+          "srcHash": "0d89746f06dd14c889a825d27abf0be1",
+          "alt": "The question as printed on the paper — The mast can provide a strong signal for an area in the shape of a regular hexagon of side 8 km, as shown in the diagram. Find the area of the hexagon. Give your answer in km², correct to 2 decimal places. A circle which touches all vertices of the hexagon can show areas where the signal is weak. One of these areas is shaded in the diagram. Find this shaded area. Give your answer in km², correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24592,6 +25128,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q8-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q8-a-i.png",
+          "srcHash": "37c54bd8a1746d2a9a1e0a678175a991",
+          "alt": "The question as printed on the paper — The table below shows data (measured in kilotonnes) on how municipal waste was dealt with in Ireland from 2005 to 2011. Total Waste Collected Waste Sent to Landfill Year (Kilotonnes) (Kilotonnes) 2005 2779 1833 2006 3100 1981 2007 3175 2015 2008 3104 1939 2009 2825 1724 2010 2580 1496 1344 2011 2547 Source: Environmental Protection Agency Find the difference between the percentage of the waste collected which was sent to landfill in 2005 and the percentage of waste sent to landfill in 2011. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24627,6 +25171,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q8-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q8-a-ii.png",
+          "srcHash": "3c1ec9e5c459f1137c37d69a0e0789b3",
+          "alt": "The question as printed on the paper — The table below shows data (measured in kilotonnes) on how municipal waste was dealt with in Ireland from 2005 to 2011. Total Waste Collected Waste Sent to Landfill Year (Kilotonnes) (Kilotonnes) 2005 2779 1833 2006 3100 1981 2007 3175 2015 2008 3104 1939 2009 2825 1724 2010 2580 1496 1344 2011 2547 Source: Environmental Protection Agency Find the mean amount of waste collected each year, from 2005 to 2011. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24659,6 +25211,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q8-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q8-a-iii.png",
+          "srcHash": "e4bb2a2c15020e137d0eca9c0220eb6c",
+          "alt": "The question as printed on the paper — The table below shows data (measured in kilotonnes) on how municipal waste was dealt with in Ireland from 2005 to 2011. Total Waste Collected Waste Sent to Landfill Year (Kilotonnes) (Kilotonnes) 2005 2779 1833 2006 3100 1981 2007 3175 2015 2008 3104 1939 2009 2825 1724 2010 2580 1496 1344 2011 2547 Source: Environmental Protection Agency (iii) The mean amount of waste sent to landfill in the 4 years from 2009 to 2012 was 1398 kilotonnes. Find the amount of waste sent to landfill in 2012.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24688,6 +25248,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q8-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q8-b-i.png",
+          "srcHash": "45db07b42f8d7cdda785245d75e9c040",
+          "alt": "The question as printed on the paper — The table below shows the percentages of all the different types of energy sources used in each of 13 European countries during 2014. % of total energy Country Renewable Oil Solid Fuel Gas Electricity Other Austria 25 31 8 17 13 6 Bulgaria 8 19 28 11 11 23 Cyprus 5 82 0 0 13 0 Denmark 31 11 13 12 13 France 7 26 3 11 12 41 Germany 10 29 22 17 12 10 Greece 9 43 24 9 15 0 Ireland 6 42 13 24 15 0 Latvia 31 26 1 20 11 11 Luxembourg 4 61 1 19 12 3 Malta 2 82 0 0 16 0 Netherlands 4 38 10 33 10 5 3 Portugal 21 38 10 13 15 Source: Eurostat What percentage of the energy used in Denmark in 2014 was renewable?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24719,6 +25287,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q8-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q8-b-ii.png",
+          "srcHash": "4525b3074c466b0d81435bf4f3537ee4",
+          "alt": "The question as printed on the paper — The table below shows the percentages of all the different types of energy sources used in each of 13 European countries during 2014. % of total energy Country Renewable Oil Solid Fuel Gas Electricity Other Austria 25 31 8 17 13 6 Bulgaria 8 19 28 11 11 23 Cyprus 5 82 0 0 13 0 Denmark 31 11 13 12 13 France 7 26 3 11 12 41 Germany 10 29 22 17 12 10 Greece 9 43 24 9 15 0 Ireland 6 42 13 24 15 0 Latvia 31 26 1 20 11 11 Luxembourg 4 61 1 19 12 3 Malta 2 82 0 0 16 0 Netherlands 4 38 10 33 10 5 3 Portugal 21 38 10 13 15 Source: Eurostat Name the four countries that used a lower percentage of renewable energy than Ireland.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24745,6 +25321,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q8-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q8-b-iii.png",
+          "srcHash": "310989509bdff65971d755e4d891a4c8",
+          "alt": "The question as printed on the paper — The table below shows the percentages of all the different types of energy sources used in each of 13 European countries during 2014. % of total energy Country Renewable Oil Solid Fuel Gas Electricity Other Austria 25 31 8 17 13 6 Bulgaria 8 19 28 11 11 23 Cyprus 5 82 0 0 13 0 Denmark 31 11 13 12 13 France 7 26 3 11 12 41 Germany 10 29 22 17 12 10 Greece 9 43 24 9 15 0 Ireland 6 42 13 24 15 0 Latvia 31 26 1 20 11 11 Luxembourg 4 61 1 19 12 3 Malta 2 82 0 0 16 0 Netherlands 4 38 10 33 10 5 3 Portugal 21 38 10 13 15 Source: Eurostat (iii) Name a country which did not use gas as a fuel source.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24781,6 +25365,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q8-b-iv",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q8-b-iv.png",
+          "srcHash": "105cf5076e84b7d2bbfa531569f65227",
+          "alt": "The question as printed on the paper — The table below shows the percentages of all the different types of energy sources used in each of 13 European countries during 2014. % of total energy Country Renewable Oil Solid Fuel Gas Electricity Other Austria 25 31 8 17 13 6 Bulgaria 8 19 28 11 11 23 Cyprus 5 82 0 0 13 0 Denmark 31 11 13 12 13 France 7 26 3 11 12 41 Germany 10 29 22 17 12 10 Greece 9 43 24 9 15 0 Ireland 6 42 13 24 15 0 Latvia 31 26 1 20 11 11 Luxembourg 4 61 1 19 12 3 Malta 2 82 0 0 16 0 Netherlands 4 38 10 33 10 5 3 Portugal 21 38 10 13 15 Source: Eurostat (iv) The table below shows the percentage of the different types of energy that were used in Ireland during 2014. It also shows one of the angles in a pie chart to represent this data. The angle for renewable energy (6%) is 22°. Complete the table to show the angle for each energy type. Give each angle correct to the nearest degree. Type Percentage Angle 22° Renewable 6 Oil 42 Solid Fuel 13 Gas 24 Electricity 15",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24809,6 +25401,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q8-b-v",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q8-b-v.png",
+          "srcHash": "9284d2769cd65b2e9d8e835ae79acc1c",
+          "alt": "The question as printed on the paper — The table below shows the percentages of all the different types of energy sources used in each of 13 European countries during 2014. % of total energy Country Renewable Oil Solid Fuel Gas Electricity Other Austria 25 31 8 17 13 6 Bulgaria 8 19 28 11 11 23 Cyprus 5 82 0 0 13 0 Denmark 31 11 13 12 13 France 7 26 3 11 12 41 Germany 10 29 22 17 12 10 Greece 9 43 24 9 15 0 Ireland 6 42 13 24 15 0 Latvia 31 26 1 20 11 11 Luxembourg 4 61 1 19 12 3 Malta 2 82 0 0 16 0 Netherlands 4 38 10 33 10 5 3 Portugal 21 38 10 13 15 Source: Eurostat Type Percentage Angle 22° Renewable 6 Oil 42 Solid Fuel 13 Gas 24 Electricity 15 Complete the pie chart below to show the energy types used in Ireland in 2014. Label each section clearly. Renewable 22°",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24841,6 +25441,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q9-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q9-a-i.png",
+          "srcHash": "ca24a17be4aa5061b9fbdb2e0718212a",
+          "alt": "The question as printed on the paper — A rectangular sheet of aluminium is used to make a cylindrical can of radius r cm and height 10 cm, as shown below. The aluminium does not overlap in the finished can. r cm r cm 16 cm 10 cm y cm Show that r, the radius of the cylinder, is 3 cm. (a) (i)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24872,6 +25480,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q9-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q9-a-ii.png",
+          "srcHash": "a88422df298da0e9c2037dfcb777e029",
+          "alt": "The question as printed on the paper — A rectangular sheet of aluminium is used to make a cylindrical can of radius r cm and height 10 cm, as shown below. The aluminium does not overlap in the finished can. r cm r cm 16 cm 10 cm y cm Find the distance y. Give your answer correct to the nearest centimetre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24907,6 +25523,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q9-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q9-a-iii.png",
+          "srcHash": "e058ddb279b57870a41bdc13ea0a3304",
+          "alt": "The question as printed on the paper — A rectangular sheet of aluminium is used to make a cylindrical can of radius r cm and height 10 cm, as shown below. The aluminium does not overlap in the finished can. r cm r cm 16 cm 10 cm y cm (iii) Find the area, in cm², of the waste aluminium after the top, bottom and side of the cylindrical can have been removed from the rectangular sheet. Give your answer correct to the nearest cm².",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24937,6 +25561,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q9-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q9-b-i.png",
+          "srcHash": "dd6c58f673b5c4903d4475df079eb318",
+          "alt": "The question as printed on the paper — Find the volume of a spherical ice cube of radius 1·5 cm. Give your answer in terms of 𝜋. h cm",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -24970,6 +25602,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2020 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2020-OL-ask-p2-q9-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2020-OL-ask-p2-q9-b-ii.png",
+          "srcHash": "5dbcea48cc3bcd781c1b6af5af0c8144",
+          "alt": "The question as printed on the paper — h cm Three of the spherical ice cubes of radius 1·5 cm are added to a cylinder of internal radius 3·5 cm which is partially filled with water. All of the ice cubes are completely submerged in the water and the water does not overflow. Find the rise, h cm, in the water level. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2020 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25006,6 +25646,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q1-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q1-a.png",
+          "srcHash": "f3aa78faf68266f3408aa826ebdea6a6",
+          "alt": "The question as printed on the paper — Eimear earns a gross wage of €40 000 per annum with Company A. Eimear pays income tax at a rate of 20% on income up to the standard rate cut-off point of €35 300. She pays tax at a rate of 40% on the remainder. She has annual tax credits of €1650. Find how much income tax she pays per annum.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25036,6 +25684,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q1-b.png",
+          "srcHash": "c84254dfb1dd73acbe5fd8dc4dbe9d4c",
+          "alt": "The question as printed on the paper — Eimear earns a gross wage of €40 000 per annum with Company A. Eimear pays her health insurance which costs her €1500 net. Find her annual income after paying income tax and health insurance (i.e. her net annual… Full card prompt: Eimear earns a gross wage of €40 000 per annum with Company A. Eimear pays income tax at a rate of 20% on income up to the standard rate cut-off point of €35 300. She pays tax at a rate of 40% on the remainder. She has annual tax credits of €1650. Eimear pays her health insurance which costs her €1500 net. Find her annual income after paying income tax and health insurance (i.e. her net annual income).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25072,6 +25728,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q1-c",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q1-c.png",
+          "srcHash": "252c0f271b01cda398e9059b1bb777ed",
+          "alt": "The question as printed on the paper — Eimear earns a gross wage of €40 000 per annum with Company A. Eimear is planning to change jobs. She is offered a job by Company B with a gross wage of €38 000 and a bonus of €1500 (tax free to Eimear) to be paid by the company, which she would use to pay her health insurance. Her tax rates and credits would remain the same. Find by how much Eimear’s net annual income (after paying income tax and health insurance) will increase if she accepts the job with Company B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25102,6 +25766,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q2-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q2-a-i.png",
+          "srcHash": "86afbe192706131eb91f86fd24d2cc72",
+          "alt": "The question as printed on the paper — The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below. Im (a) (i) z2= 2z1. 4 Find the value of z₂, and plot and 3 label it on the Argand Diagram. 2 z1 1 Re -2 -1 1 2 3 4 5 -1 -2 -3 (ii) z₁is the complex conjugate of z₁. Write down the value of z₁, and plot and label it on the Argand Diagram. z1=",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p010-i0",
@@ -25139,6 +25811,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q2-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q2-a-iii.png",
+          "srcHash": "6bb3c9d3dab32d61c56fd86a1f0bf096",
+          "alt": "The question as printed on the paper — The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below. (a) (i) z2= 2z1. Investigate if |z₂| = |z₁ + z̅₁|.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p010-i1",
@@ -25181,6 +25861,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q2-b.png",
+          "srcHash": "4dedd85a25553f9edbe0227f6ab95d3b",
+          "alt": "The question as printed on the paper — The complex number z₁ = 2 + i, where i² = −1, is shown on the Argand Diagram below. Im Show that z₁ = 2 + iis a solution of the equation z²−4z5 = 0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p011-i0",
@@ -25225,6 +25913,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q3-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q3-a-i.png",
+          "srcHash": "e0fea9258b676aff0342ff52acaf26c7",
+          "alt": "The question as printed on the paper — The function fis defined as f(x) = −x³ + 4x² + x−2, where xℝ. Complete the table below for the values of fin the domain −1 ≤ x ≤ 4 and hence draw the graph of the function fxin the domain −1 ≤ x ≤ 4, x∈ℝ. –1 0 1 2 3 4 x 10 f(x) y 12 10 8 6 4 2 x -1 1 2 3 4 -2 -4",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25252,6 +25948,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q3-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q3-a-ii.png",
+          "srcHash": "e47cf1c54fc3181844ee65b80b3991ba",
+          "alt": "The question as printed on the paper — The function fis defined as f(x) = −x³ + 4x² + x−2, where xℝ. Use your graph to estimate the two roots of fxwhich are in the domain −1 ≤ x ≤ 4.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25281,6 +25985,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q3-b.png",
+          "srcHash": "2d91c371885b03992c6a88c6a1cff5ad",
+          "alt": "The question as printed on the paper — The function fis defined as f(x) = −x³ + 4x² + x−2, where xℝ. Find the value of xfor which f′′(x) = 0, where f′′(x) is the second derivative of f(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p013-i0",
@@ -25324,6 +26036,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q4-a.png",
+          "srcHash": "c887f84fcc86634065a74e6c5d797a69",
+          "alt": "The question as printed on the paper — (a) Solve for x: 3x+ 1 + x2 = 47 5 2 10",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25355,6 +26075,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q4-b.png",
+          "srcHash": "c573fa92e854c5f17b07659952af3bd2",
+          "alt": "The question as printed on the paper — Solve the simultaneous equations: x5y = −13 x² + y² = 13.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p014-i0",
@@ -25396,6 +26124,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q5-a.png",
+          "srcHash": "81f2fc0a50fc792d1b2e6ee660616cff",
+          "alt": "The question as printed on the paper — Harry draws a scale diagram of the portion of his garden that is covered in lawn. His diagram is shown below. Each box on the grid is 1 cm × 0·5 cm. Each cm on Harry’s diagram represents 3 m. In order to estimate the area of the lawn Harry divides the diagram into eight sections. Use the trapezoidal rule to estimate the area of the lawn using the scale: 1 cm = 3 m. 0 0",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p015-i0",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p015-i0.png",
@@ -25435,6 +26171,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q5-b.png",
+          "srcHash": "08073d6ade2f20800f71920ca8182e56",
+          "alt": "The question as printed on the paper — Nuala can walk at a speed of 1·6 metres per second. Write this speed in kilometres per hour.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25467,6 +26211,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q6-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q6-a.png",
+          "srcHash": "8594c4f3fbffbe2cff981dc33e8e43e5",
+          "alt": "The question as printed on the paper — Solve the following inequality for xℝand show your solution on the numberline below: 2(3 −x) < 8. -5 -4 -3 -2 -1 0 1 2 3 4 5",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25497,6 +26249,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q6-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q6-b.png",
+          "srcHash": "598bbeb8834edcd6f80b5df93b9c57f9",
+          "alt": "The question as printed on the paper — Solve for x: 2^(2x−1) = 64.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p016-i0",
@@ -25536,6 +26296,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q7-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q7-a.png",
+          "srcHash": "ceeb0f1304666580ac124f58df278e3f",
+          "alt": "The question as printed on the paper — A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t∈ℝ, where tis the time, in seconds, from when the ball is hit and ftwas the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. At what height was the ball when it was hit by the goalkeeper?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25568,6 +26336,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q7-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q7-b-i.png",
+          "srcHash": "aa1f48b01d6e5484000a3dedb4e5cd5a",
+          "alt": "The question as printed on the paper — A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t∈ℝ, where tis the time, in seconds, from when the ball is hit and ftwas the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. (b) (i) Complete the table below to show the height of the ball at various intervals during the first 4 seconds of its flight. Time (t) 0 0·5 1 1·5 2 2·5 3 3·5 4 Height (m) 16 (ii) On the grid below draw a graph to show the height of the ball while it was in the air. 18 16 14 12 Height (m) 10 8 6 4 2 1 2 3 4 5 Time (t)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25596,6 +26372,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q7-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q7-c-i.png",
+          "srcHash": "4fd6f63f2b9f9e7e4c8f44375dd2060f",
+          "alt": "The question as printed on the paper — A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t∈ℝ, where tis the time, in seconds, from when the ball is hit and ftwas the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. On the grid below draw a graph to show the height of the ball while it was in the air. 18 16 14 12 Height (m) 10 8 6 4 2 1 2 3 4 5 Time (t) Use your graph to estimate: (Show your work on the graph above) the length of time the ball was in the air from the time it was hit until it landed on the ground",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p018-i0",
@@ -25637,6 +26421,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q7-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q7-c-ii.png",
+          "srcHash": "c1e1bd10dbba6bd9ca0a469b6cd7c235",
+          "alt": "The question as printed on the paper — A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t∈ℝ, where tis the time, in seconds, from when the ball is hit and ftwas the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. On the grid below draw a graph to show the height of the ball while it was in the air. 18 16 14 12 Height (m) 10 8 6 4 2 1 2 3 4 5 Time (t) Use your graph to estimate: (Show your work on the graph above) the length of time the ball was 10 m, or more, above the ground.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25664,6 +26456,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q7-d-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q7-d-i.png",
+          "srcHash": "cf6e1fa5e42a58cc55969c74a8df7c29",
+          "alt": "The question as printed on the paper — Find f′(t), the derivative of f(t) = −4t² + 16t + 1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p019-i0",
@@ -25702,6 +26502,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q7-d-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q7-d-ii.png",
+          "srcHash": "82581b6ecb52685bb46f396f6231df9e",
+          "alt": "The question as printed on the paper — A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t∈ℝ, where tis the time, in seconds, from when the ball is hit and ftwas the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. Find f′(t), the derivative of f(t) = −4t² + 16t + 1. Use your answer from part (d)(i) to find the speed of the ball when it had been in the air for 4 seconds. Give your answer in metres per second.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p019-i1",
@@ -25742,6 +26550,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q7-d-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q7-d-iii.png",
+          "srcHash": "a37b0868040ae567b96ce953875ab638",
+          "alt": "The question as printed on the paper — A camogie goalkeeper, on a level pitch, hit a ball straight up into the air. The path that the ball travelled can be modelled by the function: f(t) = −4t² + 16t + 1, t∈ℝ, where tis the time, in seconds, from when the ball is hit and ftwas the height of the ball, in metres, above the pitch. The ball landed on the ground without being hit again. (d) (i) Find f′(t), the derivative of f(t) = −4t² + 16t + 1. (ii) Use your answer from part (d)(i) to find the speed of the ball when it had been in the air for 4 seconds. Give your answer in metres per second. Use your answer from part (d)(i) to find the value of tfor which the ball was descending and travelling at a speed of 8 metres per second.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p019-i2",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p019-i2.png",
@@ -25781,6 +26597,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q8-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q8-a-i.png",
+          "srcHash": "1c6b9dc3cd2a5b1e7604eb7b125e34ad",
+          "alt": "The question as printed on the paper — The power (P) of an engine is measured in horsepower using the formula: (R × T)/5252 P = R × T where R is the engine speed measured in revolutions per minute (RPM) and T is the torque measured in appropriate units. Find the power of an engine that generates 480 units of torque at 2500 RPM. Give your answer correct to the nearest whole number.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p020-i0",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p020-i0.png",
@@ -25819,6 +26643,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q8-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q8-a-ii.png",
+          "srcHash": "274696d00d52fab00279b897314385fd",
+          "alt": "The question as printed on the paper — The power (P) of an engine is measured in horsepower using the formula: (R × T)/5252 P = R × T where R is the engine speed measured in revolutions per minute (RPM) and T is the torque measured in appropriate units. Rearrange the formula to write R in terms of P and T.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25847,6 +26679,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q8-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q8-b-i.png",
+          "srcHash": "3c9a2c17d45966f0dbe502649b063501",
+          "alt": "The question as printed on the paper — A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. Complete the table below to show the company’s loss/profit for each of the first six months of trading. Month 1 2 3 4 5 6 Profit (€) −4000 −3750 −3250",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -25877,6 +26717,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q8-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q8-b-ii.png",
+          "srcHash": "9c8a35e0ffb506c9b479166f1c8a8ad1",
+          "alt": "The question as printed on the paper — A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. Show that the profit the company makes in month nis given by the formula Tₙ = 250n−4250.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p020-i1",
@@ -25917,6 +26765,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q8-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q8-b-iii.png",
+          "srcHash": "17121db33d5342a457b63946719de845",
+          "alt": "The question as printed on the paper — A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. What profit does the company make in January 2018 (i.e. month 25)?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p021-i0",
@@ -25959,6 +26815,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q8-b-iv",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q8-b-iv.png",
+          "srcHash": "599d8feb81c0eeb6711471aa57886f9c",
+          "alt": "The question as printed on the paper — A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. Find the month in which the company breaks even (i.e. €0 profit).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p021-i1",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p021-i1.png",
@@ -25999,6 +26863,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q8-b-v",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q8-b-v.png",
+          "srcHash": "d023e793020e6f62fc06ef43a673bd79",
+          "alt": "The question as printed on the paper — A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. Find Sₙ, the general term for the total profit of the company after nmonths.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p021-i2",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p021-i2.png",
@@ -26037,6 +26909,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q8-b-vi",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q8-b-vi.png",
+          "srcHash": "8a3f2cb28dc396ca1be7393eb532e4b5",
+          "alt": "The question as printed on the paper — A company was set up in January 2016 to repair engines. In the first month of its existence the company made a loss of €4000. This loss reduced by €250 a month for each month that the company traded. Show that the profit the company makes in month nis given by the formula Tₙ = 250n−4250. Find Sₙ, the general term for the total profit of the company after nmonths. Hence, or otherwise, find the total profit of the company at the end of January 2019 (i.e. month 37).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p021-i3",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p021-i3.png",
@@ -26074,6 +26954,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q9-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q9-a.png",
+          "srcHash": "40f716f6e5851efcc5a452bfbc0f8c76",
+          "alt": "The question as printed on the paper — Avril has a website. For a certain period of time, the total number of registered users of the website, Um), can be estimated by using the formula: U(m) = 3000(1·8)^m where m is the number of months from when the website was launched. Use the formula to estimate the number of registered users 8 months after the website was launched.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p022-i0",
@@ -26115,6 +27003,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q9-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q9-b.png",
+          "srcHash": "59b6bbf6ff141770bb2f7e2c98f6787b",
+          "alt": "The question as printed on the paper — Avril has a website. For a certain period of time, the total number of registered users of the website, Um), can be estimated by using the formula: U(m) = 3000(1·8)^m where m is the number of months from when the website was launched. There are 31 493 registered users at the end of a particular month. Estimate how many users there will be one month later.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p022-i1",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p022-i1.png",
@@ -26153,6 +27049,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q9-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q9-c-i.png",
+          "srcHash": "379be7a2d8e6c787aabfd78ea0282638",
+          "alt": "The question as printed on the paper — Avril has a website. For a certain period of time, the total number of registered users of the website, Um), can be estimated by using the formula: U(m) = 3000(1·8)^m where m is the number of months from when the website was launched. Users can register free of charge on the website. Through advertising, Avril earns €0∙0012 each month, for every user who is registered. How much would she earn in a month when there were 600 000 registered users?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26183,6 +27087,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q9-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q9-c-ii.png",
+          "srcHash": "72904a1dcbb77f1cf04de76c486a9654",
+          "alt": "The question as printed on the paper — Avril has a website. For a certain period of time, the total number of registered users of the website, Um), can be estimated by using the formula: U(m) = 3000(1·8)^m where m is the number of months from when the website was launched. Users can register free of charge on the website. Through advertising, Avril earns €0∙0012 each month, for every user who is registered. Avril earns €1285·37 for a particular month. How many registered users did the website have in that month.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -26220,6 +27132,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q9-c-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q9-c-iii.png",
+          "srcHash": "dd59865b2edd07a73de9d1ee86cfe006",
+          "alt": "The question as printed on the paper — Avril has a website. For a certain period of time, the total number of registered users of the website, Um), can be estimated by using the formula: U(m) = 3000(1·8)^m where m is the number of months from when the website was launched. Users can register free of charge on the website. Through advertising, Avril earns €0∙0012 each month, for every user who is registered. A web design company charges Avril €80 per month to maintain and host the site. How much will Avril make or lose in month 4 and in month 12 from the website.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p023-i0",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p023-i0.png",
@@ -26256,6 +27176,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p1-q9-d",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p1-q9-d.png",
+          "srcHash": "ef641606cccd6dd96404f6190ce91dd8",
+          "alt": "The question as printed on the paper — Avril has a website. For a certain period of time, the total number of registered users of the website, Um), can be estimated by using the formula: U(m) = 3000(1·8)^m where m is the number of months from when the website was launched. Another web design company in the UK offers to host and maintain her website for £55 sterling per month. Avril uses the exchange rate on a particular day to find how much this would cost in euro. She finds that it would cost €62∙70. Find the exchange rate for 1 euro on that day. Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p023-i1",
@@ -26297,6 +27225,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q1-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q1-a.png",
+          "srcHash": "cac3888c22d30d43ec9845f509aea785",
+          "alt": "The question as printed on the paper — A business has 28 employees. 1 Their ages, in years, are given below. 2 32 41 57 64 19 21 35 3 18 43 54 63 65 33 22 4 39 58 18 42 20 34 21 5 49 33 55 34 57 43 63 6 KEY: 1|9 = 19 years of age. Complete the stem-and-leaf diagram, showing the ages of all 28 employees.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p028-i0",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p028-i0.png",
@@ -26337,6 +27273,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q1-b.png",
+          "srcHash": "21f2bf7c195ec227200f51b1c71c39b5",
+          "alt": "The question as printed on the paper — A business has 28 employees. 1 Their ages, in years, are given below. 2 32 41 57 64 19 21 35 3 18 43 54 63 65 33 22 4 39 58 18 42 20 34 21 5 49 33 55 34 57 43 63 6 KEY: 1|9 = 19 years of age. Find the percentage of employees who are older than 40 years of age.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p028-i1",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p028-i1.png",
@@ -26375,6 +27319,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q1-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q1-c-i.png",
+          "srcHash": "d4fac526ff04b2bd7d5101807c21caac",
+          "alt": "The question as printed on the paper — A business has 28 employees. 1 Their ages, in years, are given below. 2 32 41 57 64 19 21 35 3 18 43 54 63 65 33 22 4 39 58 18 42 20 34 21 5 49 33 55 34 57 43 63 6 KEY: 1|9 = 19 years of age. One employee is chosen at random on a day when all employees are present at work. Find the probability that the employee is a teenager (<20 years of age).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p029-i0",
@@ -26415,6 +27367,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q1-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q1-c-ii.png",
+          "srcHash": "25b8214dbce581ad7c9bae162f524856",
+          "alt": "The question as printed on the paper — A business has 28 employees. 1 Their ages, in years, are given below. 2 32 41 57 64 19 21 35 3 18 43 54 63 65 33 22 4 39 58 18 42 20 34 21 5 49 33 55 34 57 43 63 6 KEY: 1|9 = 19 years of age. One employee is chosen at random on a day when all employees are present at work. Find the probability that the employee chosen is a person in their thirties whose age is even or a person in their forties whose age is odd.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p029-i1",
@@ -26458,6 +27418,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q2-a.png",
+          "srcHash": "b130baf51ce02456dfdc84be153b4fac",
+          "alt": "The question as printed on the paper — The diagram shows the line PQ and the line QR. R The co-ordinates of the points are P(4, 2), Q(8, 5) and R(2, 11). Find the slope of PQ. Q P",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p030-i0",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p030-i0.png",
@@ -26500,6 +27468,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q2-b.png",
+          "srcHash": "bbbb04b303d14cf66548cc3241921d1b",
+          "alt": "The question as printed on the paper — The diagram shows the line PQ and the line QR. R The co-ordinates of the points are P(4, 2), Q(8, 5) and R(2, 11). Find the equation of the line PQ. Give your answer in the form a + byc0, where abcℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p030-i1",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p030-i1.png",
@@ -26538,6 +27514,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q2-c",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q2-c.png",
+          "srcHash": "948564b3d84355e7f8bc1938ae7cd4b4",
+          "alt": "The question as printed on the paper — The diagram shows the line PQ and the line QR. R The co-ordinates of the points are P(4, 2), Q(8, 5) and R(2, 11). Write down the slope of any line perpendicular to PQ. Slope =",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26574,6 +27558,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q2-d",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q2-d.png",
+          "srcHash": "486cefc7b3883591e27141022db37980",
+          "alt": "The question as printed on the paper — The diagram shows the line PQ and the line QR. R The co-ordinates of the points are P(4, 2), Q(8, 5) and R(2, 11). Find the area of the triangle PQR.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p031-i0",
@@ -26614,6 +27606,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q3-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q3-a.png",
+          "srcHash": "31f52607f5b57bd35b35803ac6e1bf86",
+          "alt": "The question as printed on the paper — In a population, the probability that a person has blue eyes is 0·7. One person is chosen at random from the population. What is the probability that this person does not have blue eyes?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26645,6 +27645,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q3-b.png",
+          "srcHash": "78ec2067707a0c6177ab0ef03888364a",
+          "alt": "The question as printed on the paper — In a population, the probability that a person has blue eyes is 0·7. Two people are chosen at random. What is the probability that both have blue eyes?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -26679,6 +27687,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q3-c",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q3-c.png",
+          "srcHash": "85ad1121845d48732453b2464cba18ed",
+          "alt": "The question as printed on the paper — In a population, the probability that a person has blue eyes is 0·7. Three people are chosen at random. What is the probability that exactly two of them have blue eyes?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26709,6 +27725,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q3-d",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q3-d.png",
+          "srcHash": "093f908df7e62ffc88eaf91c004850c2",
+          "alt": "The question as printed on the paper — In a population, the probability that a person has blue eyes is 0·7. Four people are chosen at random, one after another. What is the probability that the fourth person of the four chosen is the only one to have blue eyes?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p033-i0",
@@ -26753,6 +27777,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q4-a.png",
+          "srcHash": "31a78e517068dc57b6531b2515f98b7c",
+          "alt": "The question as printed on the paper — The circle c is enclosed in the square PQRS and touches all four sides, as shown in the diagram. The co-ordinates of three of the vertices are P(2, 3), R(4, 17), and S(–4, 11). R(4, 17) S(–4, 11) P(2, 3) Find the co-ordinates of Q.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26784,6 +27816,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q4-b.png",
+          "srcHash": "e674fddc127301ea2ccacce76871de83",
+          "alt": "The question as printed on the paper — The circle c is enclosed in the square PQRS and touches all four sides, as shown in the diagram. The co-ordinates of three of the vertices are P(2, 3), R(4, 17), and S(–4, 11). R(4, 17) S(–4, 11) P(2, 3) Find the co-ordinates of the centre of c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p034-i0",
@@ -26826,6 +27866,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q4-c",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q4-c.png",
+          "srcHash": "025363297417ee396c99bf2f7836fa0a",
+          "alt": "The question as printed on the paper — The circle c is enclosed in the square PQRS and touches all four sides, as shown in the diagram. The co-ordinates of three of the vertices are P(2, 3), R(4, 17), and S(–4, 11). R(4, 17) S(–4, 11) P(2, 3) Find the length of the radius of c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p034-i1",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p034-i1.png",
@@ -26866,6 +27914,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q4-d",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q4-d.png",
+          "srcHash": "fe5c69c6f383f36459ab54d8ed10ff3f",
+          "alt": "The question as printed on the paper — The circle c is enclosed in the square PQRS and touches all four sides, as shown in the diagram. The co-ordinates of three of the vertices are P(2, 3), R(4, 17), and S(–4, 11). R(4, 17) S(–4, 11) P(2, 3) Find the equation of circle c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p035-i0",
@@ -26913,6 +27969,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q5-a.png",
+          "srcHash": "47890b188e1680248c3769f193125dae",
+          "alt": "The question as printed on the paper — The crescent, shown in the shaded part of the diagram, was created by removing a disc of radius 2·5 cm from a disc of radius 3 cm. Find the area and the perimeter of the crescent. Give each answer correct to two decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p036-i0",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p036-i0.png",
@@ -26957,6 +28021,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q5-b.png",
+          "srcHash": "3c505329dbd4b000c29d5ab964b1b969",
+          "alt": "The question as printed on the paper — An empty inverted cone of vertical height 12 cm and radius 7 cm is filled with water from a pipe. 7 cm The water flows from the pipe at a steady rate of 0·5 litres per minute. Find the time it takes to fill the cone. 12 cm Give your answer correct to the nearest second.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p036-i1",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p036-i1.png",
@@ -26995,6 +28067,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q6-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q6-a-i.png",
+          "srcHash": "978156716cfa1966bbee558e1fa0a6d5",
+          "alt": "The question as printed on the paper — Construct the parallelogram PQRS, where |PQ| = 9 cm, |PS| = 5 cm and |∠SPQ| = 65°. The point P has been marked in for you. Show all your construction lines, arcs and labels clearly. P",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27030,6 +28110,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q6-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q6-a-ii.png",
+          "srcHash": "2d768242885dfea8207a7a5c284741ec",
+          "alt": "The question as printed on the paper — Construct the parallelogram PQRS, where |PQ| = 9 cm, |PS| = 5 cm and |∠SPQ| = 65°. The point P has been marked in for you. Show all your construction lines, arcs and labels clearly. Find the area of the parallelogram PQRS. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27064,6 +28152,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q6-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q6-b.png",
+          "srcHash": "15ac2ec49ef7937e4b8d0a14b08c95ae",
+          "alt": "The question as printed on the paper — In the diagram O is the centre of the circle s. Y Find the value of 𝛼and the value of 𝛽. 𝛼 W 52° s O 2𝛽 X",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27094,6 +28190,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q7-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q7-a.png",
+          "srcHash": "6f5c28c1021a51192ed516f1335d2995",
+          "alt": "The question as printed on the paper — Table A below shows the price index for thirteen countries in four food categories for the year 2015. (Source: Central Statistics Office.) It shows, for example, that if you paid €132 for meat in Austria, then the same quantity of similar meat would cost you €117 in Germany, €106 in Ireland, €63 in Lithuania and so on. The description is the same for the other food categories. Table A (€) Fruits, Milk, Cheese Country Meat Fish Vegetables and Eggs and Potatoes Austria 132 125 105 125 Germany 117 109 91 111 Ireland 106 108 128 136 Lithuania 63 73 85 77 Macedonia 56 59 71 48 Netherlands 111 99 93 104 Norway 157 117 175 150 Poland 54 64 65 62 Spain 85 89 96 95 Sweden 131 115 116 137 Switzerland 254 177 148 172 Turkey 78 105 122 86 United Kingdom 112 105 118 116 Complete Table B below, to show the maximum value, the minimum value and the range of the data for the four food categories. Table B (€) Fruits, Milk, Cheese Meat Fish Vegetables and Eggs and Potatoes Maximum 254 Minimum 54 Range 200",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -27130,6 +28234,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q7-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q7-b.png",
+          "srcHash": "33df1adb87e3ce300e77f3525902d380",
+          "alt": "The question as printed on the paper — Table A below shows the price index for thirteen countries in four food categories for the year 2015. (Source: Central Statistics Office.) It shows, for example, that if you paid €132 for meat in Austria, then the same quantity of similar meat would cost you €117 in Germany, €106 in Ireland, €63 in Lithuania and so on. The description is the same for the other food categories. Table A (€) Fruits, Milk, Cheese Country Meat Fish Vegetables and Eggs and Potatoes Austria 132 125 105 125 Germany 117 109 91 111 Ireland 106 108 128 136 Lithuania 63 73 85 77 Macedonia 56 59 71 48 Netherlands 111 99 93 104 Norway 157 117 175 150 Poland 54 64 65 62 Spain 85 89 96 95 Sweden 131 115 116 137 Switzerland 254 177 148 172 Turkey 78 105 122 86 United Kingdom 112 105 118 116 Write the data for the Fruits, Vegetables and Potatoes category in increasing order and hence find the median for that food category.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27161,6 +28273,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q7-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q7-c-i.png",
+          "srcHash": "b3c383febb732e6e0539dc0ca73caa5a",
+          "alt": "The question as printed on the paper — Table A below shows the price index for thirteen countries in four food categories for the year 2015. (Source: Central Statistics Office.) It shows, for example, that if you paid €132 for meat in Austria, then the same quantity of similar meat would cost you €117 in Germany, €106 in Ireland, €63 in Lithuania and so on. The description is the same for the other food categories. Table A (€) Fruits, Milk, Cheese Country Meat Fish Vegetables and Eggs and Potatoes Austria 132 125 105 125 Germany 117 109 91 111 Ireland 106 108 128 136 Lithuania 63 73 85 77 Macedonia 56 59 71 48 Netherlands 111 99 93 104 Norway 157 117 175 150 Poland 54 64 65 62 Spain 85 89 96 95 Sweden 131 115 116 137 Switzerland 254 177 148 172 Turkey 78 105 122 86 United Kingdom 112 105 118 116 Find the mean of the data in the Meat category.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p039-i0",
@@ -27198,6 +28318,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q7-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q7-c-ii.png",
+          "srcHash": "b94ae6ba89528c0778f52df54b6d47f8",
+          "alt": "The question as printed on the paper — Table A below shows the price index for thirteen countries in four food categories for the year 2015. (Source: Central Statistics Office.) It shows, for example, that if you paid €132 for meat in Austria, then the same quantity of similar meat would cost you €117 in Germany, €106 in Ireland, €63 in Lithuania and so on. The description is the same for the other food categories. Table A (€) Fruits, Milk, Cheese Country Meat Fish Vegetables and Eggs and Potatoes Austria 132 125 105 125 Germany 117 109 91 111 Ireland 106 108 128 136 Lithuania 63 73 85 77 Macedonia 56 59 71 48 Netherlands 111 99 93 104 Norway 157 117 175 150 Poland 54 64 65 62 Spain 85 89 96 95 Sweden 131 115 116 137 Switzerland 254 177 148 172 Turkey 78 105 122 86 United Kingdom 112 105 118 116 Use your calculator to find the standard deviation for the data in the Meat category. Give your answer correct to the nearest whole number.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27229,6 +28357,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q7-c-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q7-c-iii.png",
+          "srcHash": "7ba5be62569f36a7f9a8195e27643518",
+          "alt": "The question as printed on the paper — Table A below shows the price index for thirteen countries in four food categories for the year 2015. (Source: Central Statistics Office.) It shows, for example, that if you paid €132 for meat in Austria, then the same quantity of similar meat would cost you €117 in Germany, €106 in Ireland, €63 in Lithuania and so on. The description is the same for the other food categories. Table A (€) Fruits, Milk, Cheese Country Meat Fish Vegetables and Eggs and Potatoes Austria 132 125 105 125 Germany 117 109 91 111 Ireland 106 108 128 136 Lithuania 63 73 85 77 Macedonia 56 59 71 48 Netherlands 111 99 93 104 Norway 157 117 175 150 Poland 54 64 65 62 Spain 85 89 96 95 Sweden 131 115 116 137 Switzerland 254 177 148 172 Turkey 78 105 122 86 United Kingdom 112 105 118 116 List all the countries in the Meat category that are not within one standard deviation of the mean.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -27263,6 +28399,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q7-d",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q7-d.png",
+          "srcHash": "4770e48b61110557d3ba24486b2dd612",
+          "alt": "The question as printed on the paper — Table A below shows the price index for thirteen countries in four food categories for the year 2015. (Source: Central Statistics Office.) It shows, for example, that if you paid €132 for meat in Austria, then the same quantity of similar meat would cost you €117 in Germany, €106 in Ireland, €63 in Lithuania and so on. The description is the same for the other food categories. Table A (€) Fruits, Milk, Cheese Country Meat Fish Vegetables and Eggs and Potatoes Austria 132 125 105 125 Germany 117 109 91 111 Ireland 106 108 128 136 Lithuania 63 73 85 77 Macedonia 56 59 71 48 Netherlands 111 99 93 104 Norway 157 117 175 150 Poland 54 64 65 62 Spain 85 89 96 95 Sweden 131 115 116 137 Switzerland 254 177 148 172 Turkey 78 105 122 86 United Kingdom 112 105 118 116 A customer in Ireland buys some meat, fish, milk, cheese, eggs, fruits, vegetables and potatoes as detailed in Table C. A customer in Poland buys the same items in the same quantities. Complete Table C. Table C (€) Fruits, Milk, Vegetables Country Meat Fish Cheese Total Cost and and Eggs Potatoes Ireland 36·04 31·32 24·32 31·28 122·96 Poland 18·36",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27292,6 +28436,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q8-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q8-a-i.png",
+          "srcHash": "8d1407b78410f91519e08dd55247f475",
+          "alt": "The question as printed on the paper — A solid sphere of radius 3 cm is placed inside a cylinder and then water is poured into the cylinder until it is full, as shown in the diagram. Find the volume of the sphere, in terms of π.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p041-i0",
@@ -27333,6 +28485,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q8-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q8-a-ii.png",
+          "srcHash": "8e8a801e63ebb93f51944aa8ece51b0d",
+          "alt": "The question as printed on the paper — A solid sphere of radius 3 cm is placed inside a cylinder and then water is poured into the cylinder until it is full, as shown in the diagram. The sphere is now removed. The internal radius of the cylinder is 5 cm. Find the drop, in cm, in the height of the water.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p041-i1",
@@ -27378,6 +28538,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q8-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q8-a-iii.png",
+          "srcHash": "de46b187d88a3d52545cc6d0ce0d7b3f",
+          "alt": "The question as printed on the paper — A solid sphere of radius 3 cm is placed inside a cylinder and then water is poured into the cylinder until it is full, as shown in the diagram. (iii) The cylinder has a height of 18 cm. The curved surface of the cylinder is cut from a rectangular piece of metal measuring 35 cm by 20 cm, as shown. Find how much metal will be left over when the curved surface of the cylinder is cut out. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p041-i2",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p041-i2.png",
@@ -27419,6 +28587,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q8-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q8-b-i.png",
+          "srcHash": "4b518784e83603aeb695240fc0ad8b0a",
+          "alt": "The question as printed on the paper — In September 2018 a European Commission report stated that it is considering a proposal to abolish daylight saving time. This would mean that the clocks would not go forward one hour in March and then not go back one hour the following October. A Transition Year class carried out a survey to find out local people’s views on the proposal. The class surveyed a random sample of 800 people in the local area. Find the margin of error of the survey. Give your answer as a percentage, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p042-i0",
@@ -27464,6 +28640,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q8-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q8-b-ii.png",
+          "srcHash": "53c67536811ae4f8c087fae34bc1e315",
+          "alt": "The question as printed on the paper — In September 2018 a European Commission report stated that it is considering a proposal to abolish daylight saving time. This would mean that the clocks would not go forward one hour in March and then not go back one hour the following October. A Transition Year class carried out a survey to find out local people’s views on the proposal. The class surveyed a random sample of 800 people in the local area. Find the margin of error of the survey. Give your answer as a percentage, correct to 2 decimal places. In the survey 350 people said they supported the EU proposal to abolish daylight saving time. Use your answer to part (b)(i) above to create a 95% confidence interval for the percentage of the population who supported the EU proposal.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p042-i1",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p042-i1.png",
@@ -27507,6 +28691,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q8-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q8-b-iii.png",
+          "srcHash": "8f90e87757f8ec7b967bb9b4252fe7d0",
+          "alt": "The question as printed on the paper — In September 2018 a European Commission report stated that it is considering a proposal to abolish daylight saving time. This would mean that the clocks would not go forward one hour in March and then not go back one hour the following October. A Transition Year class carried out a survey to find out local people’s views on the proposal. The class surveyed a random sample of 800 people in the local area. Find the margin of error of the survey. Give your answer as a percentage, correct to 2 decimal places. In the survey 350 people said they supported the EU proposal to abolish daylight saving time. Use your answer to part (b)(i) above to create a 95% confidence interval for the percentage of the population who supported the EU proposal. A local newspaper had reported that 50% of people in the area supported the EU proposal. Use your answer to part (b)(ii) above to conduct a hypothesis test, at the 5% level of significance, to test the newspaper’s claim. Clearly state your conclusion in the context of the question and give a reason for your conclusion.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p042-i2",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p042-i2.png",
@@ -27549,6 +28741,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q9-a",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q9-a.png",
+          "srcHash": "fa1d6aa0b5d8882339b2acdadf015a58",
+          "alt": "The question as printed on the paper — R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°. Figure 1 North c Ship T R Q 120 km S 30° P The triangle PQR taken from Figure 1 is shown in Figure 2. 30° Find |QR|, the length of [QR]. Figure 2 R Q 120 km 30° P",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p043-i0",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p043-i0.png",
@@ -27590,6 +28790,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q9-b",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q9-b.png",
+          "srcHash": "3588df72deeeaa2e90c268ff4ee81fbd",
+          "alt": "The question as printed on the paper — R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°. Figure 1 North c Ship T R Q 120 km S 30° P The triangle QRS taken from Figure 1 is shown in Figure 3. Use your answer from part (a) to find |QS|. Figure 3 R Q S P",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p043-i1",
@@ -27634,6 +28842,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q9-c",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q9-c.png",
+          "srcHash": "1c646aff569a488b26d798e6bcecfce1",
+          "alt": "The question as printed on the paper — R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°. Figure 1 North c Ship T R Q 120 km S 30° P Find |PS|. Give your answer correct to the nearest km.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p043-i2",
@@ -27682,6 +28898,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q9-d-i",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q9-d-i.png",
+          "srcHash": "242d2cf8e0cc0e4b3a003f39ee112554",
+          "alt": "The question as printed on the paper — R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°. Figure 1 North c Ship T R Q 120 km S 30° P Consider the triangle RST. Use the Cosine Rule to find an expression for cos 𝜃, T where 𝜃is the measure of the angle TRS. Hence show that 𝜃106°, correct to the nearest R degree. c T R S",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2019-OL-scheme-p044-i0",
           "src": "/exam-figures/maths/markbank/maths-2019-OL-scheme-p044-i0.png",
@@ -27722,6 +28946,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q9-d-ii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q9-d-ii.png",
+          "srcHash": "abe89f9344dab643f6639b1fbec15fdd",
+          "alt": "The question as printed on the paper — R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°. Figure 1 North c Ship T R Q 120 km S 30° P John sails directly from S to T. Mary sails from S to T along the minor arc ST. Find the difference between the distance that John sails and the distance that Mary sails. Give your answer correct to the nearest km. c T R",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p044-i1",
@@ -27764,6 +28996,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2019 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2019-OL-ask-p2-q9-d-iii",
+          "src": "/exam-figures/maths/markbank/maths-2019-OL-ask-p2-q9-d-iii.png",
+          "srcHash": "99edc6dc60b81b71924aed3c3b825794",
+          "alt": "The question as printed on the paper — R is a radar station located 120 km north of a port P. The circle c, centred at R and with radius 100 km shows the detection range of the radar. When a ship enters the circle it will be detected by the radar station at R. Figure 1 shows a ship leaving port P and sailing in the direction north 30° east. The ship enters the circle c at S and exits at T. At Q, the ship is closest to R and |∠PQR| = 90°. Figure 1 North c Ship T R Q 120 km S 30° P The sea in this region is estimated to have an average of 1 ship per 25 square kilometres at any time. Use this estimate to find the number of ships in the sector RST. Give your answer correct to the nearest whole number. c T R",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2019 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2019-OL-scheme-p045-i0",
@@ -27808,6 +29048,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q1-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q1-a.png",
+          "srcHash": "13b2ed9495ad69bcad724d0d56e8908b",
+          "alt": "The question as printed on the paper — When Sean joined a sales company he was offered a choice of two different salary contracts. The details of the contracts are outlined in the table below. Salary End of year commission on total sales Contract A €35 000 2% Contract B €30 000 3% Find how much Sean would earn under each contract in a year where his total sales were €400 000. Contract B Contract A",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27838,6 +29086,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q1-b.png",
+          "srcHash": "b8c0a72c7b37c07df9b8da32254b61c0",
+          "alt": "The question as printed on the paper — When Sean joined a sales company he was offered a choice of two different salary contracts. The details of the contracts are outlined in the table below. Salary End of year commission on total sales Contract A €35 000 2% Contract B €30 000 3% (b) Another employee, Mary, earned €50 000 in a particular year. She is on Contract A. Find her total sales for that year.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -27873,6 +29129,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q1-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q1-c.png",
+          "srcHash": "cdd799e90001f95be1adbf548ac18e09",
+          "alt": "The question as printed on the paper — When Sean joined a sales company he was offered a choice of two different salary contracts. The details of the contracts are outlined in the table below. Salary End of year commission on total sales Contract A €35 000 2% Contract B €30 000 3% Find the total sales for which a salesperson would earn the same amount of money under each contract.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27905,6 +29169,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q2-a.png",
+          "srcHash": "2a383a93a0d1d825cb393329b01f33bf",
+          "alt": "The question as printed on the paper — z₁ = −2 + 3iand z₂ = −3 −2i, where i² = −1. z₃ = z₁−z₂. Im 6 Plot z₁, z₂, and z₃ on the Argand Diagram. 5 Label each point clearly. 4 3 2 1 Re -4 -3 -2 -1 1 2 3 4 -1 -2",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-OL-scheme-p009-i0",
@@ -27946,6 +29218,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q2-b.png",
+          "srcHash": "a56fc8cab35c362cc7e6622b25609dff",
+          "alt": "The question as printed on the paper — z₁ = −2 + 3iand z₂ = −3 −2i, where i² = −1. z₃ = z₁−z₂. Investigate if |z₃| = |z₁| + |z₂|.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27979,6 +29259,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q2-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q2-c.png",
+          "srcHash": "b6ae837efe2741e39eb5417f1a2acd21",
+          "alt": "The question as printed on the paper — z₁ = −2 + 3iand z₂ = −3 −2i, where i² = −1. z₃ = z₁−z₂. z1 z4= . Write z4 in the form x+ yi, where x, y∈ℝ. (c) z2",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28011,6 +29299,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q3-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q3-a.png",
+          "srcHash": "9c8068244680b27f5d0c4d03e4d45f99",
+          "alt": "The question as printed on the paper — Solve the equation 2x²−7x−3 = 0. Give each answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-OL-scheme-p010-i0",
@@ -28054,6 +29350,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q3-b.png",
+          "srcHash": "d59d096a9e9d8a3641ea3909bac3b347",
+          "alt": "The question as printed on the paper — Solve the simultaneous equations below to find the value of a and the value of b. 2a + 3b = 15 5a + b = −8",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28081,6 +29385,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q4-a.png",
+          "srcHash": "bf579f72c4359c8907fbd360e3422137",
+          "alt": "The question as printed on the paper — The first three stages in a pattern of grey and white tiles are shown in the diagram below. Stage 3 Stage 2 Stage 1 Stage 4 Draw the next stage of tiles (Stage 4) onto the diagram above.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-OL-scheme-p011-i0",
@@ -28125,6 +29437,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q4-b.png",
+          "srcHash": "1001cb76a71cf116a3871040623b1fc9",
+          "alt": "The question as printed on the paper — The first three stages in a pattern of grey and white tiles are shown in the diagram below. Based on the pattern shown, complete the table below. Stage (n): 1, 2, 3, 4, 5. Number of Grey Tiles: 4, _, _, _, _. Number of White Tiles: _, _, _, _, _. Total: 6, _, _, _, _.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28163,6 +29483,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q4-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q4-c.png",
+          "srcHash": "2f636f33c271fd363d9fa5b4f8154c98",
+          "alt": "The question as printed on the paper — The first three stages in a pattern of grey and white tiles are shown in the diagram below. Stage 3 Stage 2 Stage 1 Stage 4 Assuming the pattern continues, the total number of tiles in stage n ( Tₙ) is given by the formula Tₙ = n² + bn + c, where b and c∈ℕ. Find the value of b and the value of c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28200,6 +29528,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q4-d",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q4-d.png",
+          "srcHash": "0e6fbae95fd492803da1b926c54c93ee",
+          "alt": "The question as printed on the paper — The first three stages in a pattern of grey and white tiles are shown in the diagram below. Stage 3 Stage 2 Stage 1 Stage 4 Find the number of the stage which has 443 tiles in total.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28231,6 +29567,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q5-a.png",
+          "srcHash": "4755fe244d9d39959241e813f26c92c1",
+          "alt": "The question as printed on the paper — y The diagram on the right shows the graph of a quadratic function, f. 6 A (a) Write down the co-ordinates of A, B, and C. f 5 4 3 2 1 x C B -2 -1 1 2 3 -1",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28273,6 +29617,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q5-b.png",
+          "srcHash": "b1da3e53c82c7a8c273990c552cc0cc1",
+          "alt": "The question as printed on the paper — y The diagram on the right shows the graph of a quadratic function, f. 6 A f 5 4 3 2 1 x C B -2 -1 1 2 3 -1 Show that the function can be written as f(x) = −x² + x + 6.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28306,6 +29658,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q5-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q5-c.png",
+          "srcHash": "155f6facc7e7dd1b701663d8492a233a",
+          "alt": "The question as printed on the paper — y The diagram on the right shows the graph of a quadratic function, f. 6 A f 5 4 3 2 1 x C B -2 -1 1 2 3 -1 Show, using calculus, that the maximum point of f(x) is (0·5, 6·25).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28338,6 +29698,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q6-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q6-a.png",
+          "srcHash": "e1a7ad1fe8014d8d2248a1442075d05c",
+          "alt": "The question as printed on the paper — Solve for x. (x + 5)(3x−4) −3(x² + 2) + 4 = 0",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28374,6 +29742,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q6-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q6-b.png",
+          "srcHash": "cc3eeed27c45c6cd0ce766d0d10c580a",
+          "alt": "The question as printed on the paper — (b) Find the solutions of 5 1 1 x+3− x= 2 where x≠−3, 0, x∈ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28402,6 +29778,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q7-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q7-a.png",
+          "srcHash": "df27372f9ed06de3d449a8c723133ca8",
+          "alt": "The question as printed on the paper — Part of the seating arrangement in a theatre is shown in the diagram below. The seats are arranged in rows. Row 1 is nearest the stage and has 28 seats. Each subsequent row behind that contains one more seat. i.e. row 2 has 29 seats, row 3 has 30 seats, and so on. Find the number of seats in row 10. Stage",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28441,6 +29825,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q7-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q7-b.png",
+          "srcHash": "4def4e0a5abc90f084df1c2cd19563ba",
+          "alt": "The question as printed on the paper — Part of the seating arrangement in a theatre is shown in the diagram below. The seats are arranged in rows. Row 1 is nearest the stage and has 28 seats. Each subsequent row behind that contains one more seat. i.e. row 2 has 29 seats, row 3 has 30 seats, and so on. There are 50 seats in the last row. How many rows of seats are there in the theatre?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28475,6 +29867,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q7-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q7-c.png",
+          "srcHash": "a1b34619a50a9c44e35ef29104f91054",
+          "alt": "The question as printed on the paper — Part of the seating arrangement in a theatre is shown in the diagram below. The seats are arranged in rows. Row 1 is nearest the stage and has 28 seats. Each subsequent row behind that contains one more seat. i.e. row 2 has 29 seats, row 3 has 30 seats, and so on. Find the total number of seats in the theatre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28516,6 +29916,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q7-d",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q7-d.png",
+          "srcHash": "836411ab1b91e9e0999564ee9c4b4403",
+          "alt": "The question as printed on the paper — Part of the seating arrangement in a theatre is shown in the diagram below. The seats are arranged in rows. Row 1 is nearest the stage and has 28 seats. Each subsequent row behind that contains one more seat. i.e. row 2 has 29 seats, row 3 has 30 seats, and so on. On a particular night 600 people are at a show in the theatre. Assume that people are seated only in the rows closest to the stage, i.e. they have filled the first n rows and there are some people seated in the next row. Find the value of n and find the number of people seated in the next row.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28548,6 +29956,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q7-e",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q7-e.png",
+          "srcHash": "9c16ece8965dec05817181f5d70c3d83",
+          "alt": "The question as printed on the paper — (e) For a particular show, adult tickets cost €25 each and children’s tickets cost €12 each. Find the total income from ticket sales if 276 adult tickets and 212 children’s tickets were sold.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28582,6 +29998,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q7-f-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q7-f-i.png",
+          "srcHash": "a6d5f1b8c3df7447b422131de348ed6e",
+          "alt": "The question as printed on the paper — (f) (i) For a different show 752 tickets were sold. The ratio of adult tickets sold to children’s tickets sold is 3 : 1. Find how many adult tickets and how many children’s tickets were sold for that show. 1",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28615,6 +30039,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q7-f-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q7-f-ii.png",
+          "srcHash": "b4f0ac4083d03ebfe37f49725f01447e",
+          "alt": "The question as printed on the paper — For the show referred to in part f(i) an adult ticket cost 2 (ii) 2 times as much as a children’s ticket. The income was €17578. Find the cost of a children’s ticket for this show.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28645,6 +30077,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q8-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q8-a.png",
+          "srcHash": "a9a75b107cd4147ca443a5b9d5ca70aa",
+          "alt": "The question as printed on the paper — The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t∈ℝ. Use the drug amount function, C(t), to show that the amount of the drug in the bloodstream 4 hours after the drug has been taken is 224 units.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28673,6 +30113,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q8-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q8-b.png",
+          "srcHash": "c98198f0814a6ac74b94c01eb08b50f8",
+          "alt": "The question as printed on the paper — The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t∈ℝ. Use the function C(t) to complete the table below. t 0 1 2 3 4 5 6 7 8 9 (Hours) C(t) 0 57·5 224 (Units)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28703,6 +30151,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q8-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q8-c.png",
+          "srcHash": "f38b2772d8358c59eab83e9577c76ac7",
+          "alt": "The question as printed on the paper — The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t∈ℝ. Draw the graph of the function C(t) for 0 ≤ t ≤ 9 where t∈ℝ. C(t) 325 300 275 250 225 200 Amount (units) 175 150 125 100 75 50 25 t 1 2 3 4 5 6 7 8 9 10 0 Time (hours)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-OL-scheme-p017-i0",
@@ -28743,6 +30199,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q8-d-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q8-d-i.png",
+          "srcHash": "0809ffd52b7cf20723fe85fdc188c91c",
+          "alt": "The question as printed on the paper — The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t∈ℝ. Draw the graph of the function C(t) for 0 ≤ t ≤ 9 where t∈ℝ. C(t) 325 300 275 250 225 200 Amount (units) 175 150 125 100 75 50 25 t 1 2 3 4 5 6 7 8 9 10 0 Time (hours) (d) Use your graph to estimate each of the following values. In each case show your work on the graph above. 1 The amount of the drug in the bloodstream after 3 (i) 2 hours.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28773,6 +30237,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q8-d-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q8-d-ii.png",
+          "srcHash": "4f728bd0612f25870ca82d09b3323462",
+          "alt": "The question as printed on the paper — The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t∈ℝ. Draw the graph of the function C(t) for 0 ≤ t ≤ 9 where t∈ℝ. C(t) 325 300 275 250 225 200 Amount (units) 175 150 125 100 75 50 25 t 1 2 3 4 5 6 7 8 9 10 0 Time (hours) (d) Use your graph to estimate each of the following values. In each case show your work on the graph above. 1 How long after taking the drug will the amount of the drug in the bloodstream be 100 units?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28802,6 +30274,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q8-e-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q8-e-i.png",
+          "srcHash": "4edb15312c3863302b3fdeedf5fead3a",
+          "alt": "The question as printed on the paper — The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t∈ℝ. Use the drug amount function C(t) = −t³ + 4·5t² + 54t to find, in terms of t, the (e)(i) rate at which the drug amount is changing after t hours.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28834,6 +30314,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q8-e-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q8-e-ii.png",
+          "srcHash": "a68b68f447d70c8507962a84c904db1e",
+          "alt": "The question as printed on the paper — The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t∈ℝ. Use the drug amount function C(t) = −t³ + 4·5t² + 54t to find, in terms of t, the (e)(i) rate at which the drug amount is changing after t hours. Use your answer to part e(i) to find the rate at which the drug amount is changing after 4 hours.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28871,6 +30359,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q8-e-iii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q8-e-iii.png",
+          "srcHash": "c55f2edac1c26de7b1f002ed92c89e2f",
+          "alt": "The question as printed on the paper — The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t∈ℝ. Use the drug amount function C(t) = −t³ + 4·5t² + 54t to find, in terms of t, the (e)(i) rate at which the drug amount is changing after t hours. Use your answer to part e(i) to find the rate at which the drug amount is changing after 4 hours. (iii) Use your answer to part e(i) to find the maximum amount of the drug in the bloodstream over the first 9 hours.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28904,6 +30400,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q8-e-iv",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q8-e-iv.png",
+          "srcHash": "6c0736717022920915b46780af103e20",
+          "alt": "The question as printed on the paper — The amount, in appropriate units, of a certain medicinal drug in the bloodstream t hours after it has been taken can be estimated by the function: C(t) = −t³ + 4·5t² + 54t, where 0 ≤ t ≤ 9, t∈ℝ. Use the drug amount function C(t) = −t³ + 4·5t² + 54t to find, in terms of t, the (e)(i) rate at which the drug amount is changing after t hours. Use your answer to part e(i) to find the rate at which the drug amount is changing after 4 hours. (iii) Use your answer to part e(i) to find the maximum amount of the drug in the bloodstream over the first 9 hours. (iv) Use your answer to part e(i) to show that the drug amount in the bloodstream is decreasing 7 hours after the drug has been taken. Explain your reasoning.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28932,6 +30436,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q9-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q9-a-i.png",
+          "srcHash": "2e2f786e00604286c4274c6df68ed9e9",
+          "alt": "The question as printed on the paper — When earthquakes occur under the sea, they can cause large tidal waves called tsunamis. Scientists can estimate the arrival times of tsunamis to nearby countries. The average speed at which a tsunami travels is given by the formula: s= √g× d where s is the speed of the tsunami (in metres per second), d is the depth of the ocean (in metres) at the location where the earthquake occurred, and g = 9∙8 metres per second². Find s, the speed of a tsunami when the an earthquake occurs at a depth of 2000 m. Give your answer in metres per second.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -28966,6 +30478,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q9-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q9-a-ii.png",
+          "srcHash": "afcad349c4caeb9bc96ef47998655ed0",
+          "alt": "The question as printed on the paper — When earthquakes occur under the sea, they can cause large tidal waves called tsunamis. Scientists can estimate the arrival times of tsunamis to nearby countries. The average speed at which a tsunami travels is given by the formula: s= √g× d where s is the speed of the tsunami (in metres per second), d is the depth of the ocean (in metres) at the location where the earthquake occurred, and g = 9∙8 metres per second². A tsunami has been identified as beginning 400 km from land. The depth of the ocean at that point is 2000 m. Find how long it will take this tsunami to reach land. Give your answer correct to the nearest minute.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -28994,6 +30514,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q9-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q9-b-i.png",
+          "srcHash": "cffeed67cdc227d0bf29e9b80471055c",
+          "alt": "The question as printed on the paper — When earthquakes occur under the sea, they can cause large tidal waves called tsunamis. Scientists can estimate the arrival times of tsunamis to nearby countries. The average speed at which a tsunami travels is given by the formula: s= √g× d where s is the speed of the tsunami (in metres per second), d is the depth of the ocean (in metres) at the location where the earthquake occurred, and g = 9∙8 metres per second². Rearrange the formula to give d in terms of g and s. (b)(i)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -29031,6 +30559,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p1-q9-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p1-q9-b-ii.png",
+          "srcHash": "2d1b24e791bc68c67747edbc54643c08",
+          "alt": "The question as printed on the paper — When earthquakes occur under the sea, they can cause large tidal waves called tsunamis. Scientists can estimate the arrival times of tsunamis to nearby countries. The average speed at which a tsunami travels is given by the formula: s= √g× d where s is the speed of the tsunami (in metres per second), d is the depth of the ocean (in metres) at the location where the earthquake occurred, and g = 9∙8 metres per second². Rearrange the formula to give d in terms of g and s. (b)(i) Hence, or otherwise, find the depth of the ocean at the place where an earthquake occurred, if the resulting tsunami has a speed of 55 metres per second. Give your answer correct to the nearest metre",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29061,6 +30597,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q1-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q1-a-i.png",
+          "srcHash": "ba28494b8013e332d3acdef9f6187549",
+          "alt": "The question as printed on the paper — An experiment consists of throwing two fair, standard, six-sided dice and recording the sum of the two numbers thrown. Some of the totals are shown in the table. Complete the table. Die 1 1 2 3 4 5 6 1 2 3 4 5 6 7 2 3 4 5 6 7 8 3 4 5 6 7 8 9 Die 2 4 5 6 9 10 5 6 8 9 11 6 8 9 10 11",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-OL-scheme-p024-i0",
@@ -29101,6 +30645,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q1-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q1-a-ii.png",
+          "srcHash": "4a4b7a1b9e48e46183936a461c7938e9",
+          "alt": "The question as printed on the paper — An experiment consists of throwing two fair, standard, six-sided dice and recording the sum of the two numbers thrown. Some of the totals are shown in the table. Die 1 1 2 3 4 5 6 1 2 3 4 5 6 7 2 3 4 5 6 7 8 3 4 5 6 7 8 9 Die 2 4 5 6 9 10 5 6 8 9 11 6 8 9 10 11 (ii) Find the probability of getting a total of 7 or 11.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29131,6 +30683,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q1-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q1-a-iii.png",
+          "srcHash": "94ad5c8542258f932d6ed10663ba619d",
+          "alt": "The question as printed on the paper — An experiment consists of throwing two fair, standard, six-sided dice and recording the sum of the two numbers thrown. Some of the totals are shown in the table. Die 1 1 2 3 4 5 6 1 2 3 4 5 6 7 2 3 4 5 6 7 8 3 4 5 6 7 8 9 Die 2 4 5 6 9 10 5 6 8 9 11 6 8 9 10 11 (iii) Find the probability of getting a total which is a prime number.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -29163,6 +30723,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q1-b.png",
+          "srcHash": "29c206c9c421836f1cfec117463901cb",
+          "alt": "The question as printed on the paper — (b) A car distributor sells Ford cars and Renault cars. It has 30 cars for sale on a particular day; 18 are Ford cars and 12 are Renault cars. 7 of the Ford cars are red and 4 of the Renault cars are red. One of the 30 cars is chosen at random. What is the probability that the car chosen is a Ford car or a car which is not red?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -29198,6 +30766,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q2-a.png",
+          "srcHash": "8ca5b639e5322c72a332c0e9970f2097",
+          "alt": "The question as printed on the paper — The points P(7, 10), Q(1, 2) and R(11, 4) are the vertices of the triangle shown. The point U(4, 6) is the midpoint of [PQ] and the point V is the midpoint of [PR]. P V U R Q Find the co-ordinates of V.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29230,6 +30806,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q2-b.png",
+          "srcHash": "459a0482630384e027c0f78ce2a879f8",
+          "alt": "The question as printed on the paper — The points P(7, 10), Q(1, 2) and R(11, 4) are the vertices of the triangle shown. The point U(4, 6) is the midpoint of [PQ] and the point V is the midpoint of [PR]. P V U R Q Show, by using slopes, that UV is parallel to QR.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -29265,6 +30849,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q2-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q2-c.png",
+          "srcHash": "e68b5a2bb008ad2cd5a0ce1a759b9e4e",
+          "alt": "The question as printed on the paper — The points P(7, 10), Q(1, 2) and R(11, 4) are the vertices of the triangle shown. The point U(4, 6) is the midpoint of [PQ] and the point V is the midpoint of [PR]. P Find the area of the triangle PQR.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -29302,6 +30894,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q2-d",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q2-d.png",
+          "srcHash": "c8df7248617ac465eb9df6ed8419b946",
+          "alt": "The question as printed on the paper — The points P(7, 10), Q(1, 2) and R(11, 4) are the vertices of the triangle shown. The point U(4, 6) is the midpoint of [PQ] and the point V is the midpoint of [PR]. P V U R Q The point S is the image of the point Q under the translation UV Find the coordinates of S.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29332,6 +30932,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q3-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q3-a-i.png",
+          "srcHash": "4123a23922edd9c298176c6f63c58750",
+          "alt": "The question as printed on the paper — (a) (i) Find the number of different arrangements that can be made using all the letters of the word RAINBOW. Each letter is used only once. (ii) Find the number of different 3-letter arrangements that can be made using the letters of the word RAINBOW. Each letter is used at most once.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -29370,6 +30978,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q3-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q3-b-i.png",
+          "srcHash": "ca135fba7df441bb8039a1ab161d3cc4",
+          "alt": "The question as printed on the paper — (b) A game, called Rainbow, uses an unbiased circular spinner. The spinner has seven sectors coloured red (R), orange (O), yellow (Y), green (G), blue (B), indigo (I), and violet (V) as shown below. The table below shows the angle of each sector. It also shows the cash prize that a player wins if the spinner stops in that sector. Spinner Colour Angle Probability Prize Red 72° €20 O Y R Orange 30° €60 1 Yellow 45° €24 8 G V Green 90° €8 Blue 60° €42 I B Indigo 18° €90 Violet 45° €48 Complete the “Probability” column of the table which shows the probability of the spinner coming to rest in each sector after one spin. Find the expected value of the prize that a player wins if they play Rainbow.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29404,6 +31020,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q4-a.png",
+          "srcHash": "f62198e504e2d6bc3e5a28e6a1bad684",
+          "alt": "The question as printed on the paper — The points A(1, 8) and B(9, 0) are the end-points of a diameter of the circle w, as shown in the diagram. w Find the co-ordinates of the centre of w.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -29440,6 +31064,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q4-b.png",
+          "srcHash": "f8460f19100f2a8f26278959f1474992",
+          "alt": "The question as printed on the paper — The points A(1, 8) and B(9, 0) are the end-points of a diameter of the circle w, as shown in the diagram. w Find the length of the radius of w. Give your answer in the form p√q, where p, q∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29472,6 +31104,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q4-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q4-c.png",
+          "srcHash": "514c1ec380cb95a384a519d7d3ac6d2f",
+          "alt": "The question as printed on the paper — The points A(1, 8) and B(9, 0) are the end-points of a diameter of the circle w, as shown in the diagram. w Hence write down the equation of the circle w.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -29507,6 +31147,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q4-d",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q4-d.png",
+          "srcHash": "4588fadeaf35d5e4b04e2ee7e0a3e938",
+          "alt": "The question as printed on the paper — The points A(1, 8) and B(9, 0) are the end-points of a diameter of the circle w, as shown in the diagram. w Find the equation of the line that is a tangent to the circle w at A. Give your answer in the form ax + by + c = 0, where a, b, and c∈ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -29546,6 +31194,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q5-a.png",
+          "srcHash": "274c680a1a60df34438ef56ae29714e7",
+          "alt": "The question as printed on the paper — (a) The square ABCD has sides of length 7 cm. S C D The vertices of the square PQRS lie on the perimeter of ABCD, as shown in the diagram, with |AQ| = 5 cm. Find the area of the square PQRS. R P A B Q 5 cm 7 cm",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29581,6 +31237,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q5-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q5-b-i.png",
+          "srcHash": "8346e9aca9eebc3c62db36530d8d4160",
+          "alt": "The question as printed on the paper — The circles u and v represent two wheels that are free to rotate about their centres, as shown. The radius of u is 4 cm and the radius of v is 6 cm. Find the length of the circumference of each circle. Give your answers in cm in terms of π. u The wheels u and v are in non-slip contact and therefore the rotation of one causes the other to rotate. Find the number of complete rotations wheel u makes if wheel v completes 100 rotations.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29613,6 +31277,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q6-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q6-a-i.png",
+          "srcHash": "dd3a00e351d6b95ff79c309ff3a4069d",
+          "alt": "The question as printed on the paper — (i) Construct the triangle ABC, where |AB| = 10 cm, |∠CAB| = 60° and |∠ABC| = 40°. Label each vertex clearly. (ii) Measure |BC|, and write your answer in cm, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-OL-scheme-p032-i0",
@@ -29654,6 +31326,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q6-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q6-b-i.png",
+          "srcHash": "39f98776593aac1de9a68f41e87be811",
+          "alt": "The question as printed on the paper — The diagram shows a parallelogram with vertices P, Q, R, and S. |∠SPQ| = 115°, |∠QRS| = α° and |∠RSP| = β°. Write down the value of α and the value of β.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29687,6 +31367,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q6-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q6-b-ii.png",
+          "srcHash": "a0bc27aec01254c7ec11f7ba9fa33729",
+          "alt": "The question as printed on the paper — The diagram shows a parallelogram with vertices P, Q, R, and S. |∠SPQ| = 115°, |∠QRS| = α° and |∠RSP| = β°. Explain why the triangle PQR is congruent to triangle RSP. Give a reason for any statement you make in your explanation.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29719,6 +31407,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q7-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q7-a-i.png",
+          "srcHash": "651cc35722e06c9585e556fd73e529cd",
+          "alt": "The question as printed on the paper — The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June Year 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 Total Rainfall 72 133 155 101 94 47 149 134 94 84 (mm) Total Sunshine 169 124 180 173 173 239 159 168 228 205 (hours) (Source: Met Éireann) Based on the data in the table above write down: the range of the rainfall data __________________ the year with the highest June rainfall _____________ (iii) the year with the least June sunshine",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29749,6 +31445,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q7-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q7-b.png",
+          "srcHash": "d443760e82c328039790007e7e6d6c09",
+          "alt": "The question as printed on the paper — The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June Year 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 Total Rainfall 72 133 155 101 94 47 149 134 94 84 (mm) Total Sunshine 169 124 180 173 173 239 159 168 228 205 (hours) (Source: Met Éireann) Based on the data in the table, write down the year with the best June weather and give a reason for your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -29786,6 +31490,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q7-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q7-c.png",
+          "srcHash": "9d09f7632785a851d5c0c6e806cd6ec0",
+          "alt": "The question as printed on the paper — The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June Year 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 Total Rainfall 72 133 155 101 94 47 149 134 94 84 (mm) Total Sunshine 169 124 180 173 173 239 159 168 228 205 (hours) (Source: Met Éireann) Write the rainfall data in increasing order and hence find the median of the rainfall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29818,6 +31530,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q7-d-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q7-d-i.png",
+          "srcHash": "8cd3d06a6cf7adcbd8d9feb648ad5a4b",
+          "alt": "The question as printed on the paper — The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June Year 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 Total Rainfall 72 133 155 101 94 47 149 134 94 84 (mm) Total Sunshine 169 124 180 173 173 239 159 168 228 205 (hours) (Source: Met Éireann) Find the mean number of sunshine hours for June in Valentia between 2001 and 2010.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -29855,6 +31575,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q7-d-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q7-d-ii.png",
+          "srcHash": "2888cb115d42b4cab2d7aa557025c745",
+          "alt": "The question as printed on the paper — The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June Year 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 Total Rainfall 72 133 155 101 94 47 149 134 94 84 (mm) Total Sunshine 169 124 180 173 173 239 159 168 228 205 (hours) (Source: Met Éireann) For what years was the sunshine data within 5% of the mean number of sunshine hours in Valentia?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29887,6 +31615,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q7-e",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q7-e.png",
+          "srcHash": "2e84566aea8766a415fbf266a5b0441a",
+          "alt": "The question as printed on the paper — The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June Year 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 Total Rainfall 72 133 155 101 94 47 149 134 94 84 (mm) Total Sunshine 169 124 180 173 173 239 159 168 228 205 (hours) (Source: Met Éireann) Find the standard deviation of the rainfall data, in mm, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -29917,6 +31653,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q7-f-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q7-f-i.png",
+          "srcHash": "fe3d5191163840b4cfe1d971687fbc15",
+          "alt": "The question as printed on the paper — The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June Year 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 Total Rainfall 72 133 155 101 94 47 149 134 94 84 (mm) Total Sunshine 169 124 180 173 173 239 159 168 228 205 (hours) (Source: Met Éireann) Part of a scatterplot of the data in the table is shown below. The first four data points are plotted. Complete the scatterplot. 240 220 Total Sunshine (hours) 200 180 160 140 120 \\/\\/\\/ \\/\\/\\/ 40 60 80 100 120 140 160 Total Rainfall (mm)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-OL-scheme-p035-i0",
@@ -29957,6 +31701,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q7-f-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q7-f-ii.png",
+          "srcHash": "e56a81118b5ad7dc4577e82738bb6bef",
+          "alt": "The question as printed on the paper — The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June Year 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 Total Rainfall 72 133 155 101 94 47 149 134 94 84 (mm) Total Sunshine 169 124 180 173 173 239 159 168 228 205 (hours) (Source: Met Éireann) Part of a scatterplot of the data in the table is shown below. The first four data points are plotted. 240 220 Total Sunshine (hours) 200 180 160 140 120 \\/\\/\\/ \\/\\/\\/ 40 60 80 100 120 140 160 Tick one Total Rainfall (mm) box 0∙6 0∙1 One of the numbers in the table on the right is the correlation coefficient for the data above, correct to 1 decimal place. −0∙1 Based on the scatterplot, select the number that you think −0∙6 most accurately reflects this data. Explain your choice.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-OL-scheme-p035-i1",
@@ -30004,6 +31756,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q8-a",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q8-a.png",
+          "srcHash": "a8299008ec3fa1227ec75a2658ac166f",
+          "alt": "The question as printed on the paper — The diagram shows a section of a garden divided into three parts. In the diagram: |PR| = 3·3 m, |PQ| = 6·5 m, |QT| = |QS| = 8 m, |∠QRP| = 90°, |∠PQR| = α°, and |∠RQS| = β°. Use the theorem of Pythagoras to find |RQ|.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -30038,6 +31798,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q8-b",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q8-b.png",
+          "srcHash": "a945eca5aeb290259b7c20c33a2351ec",
+          "alt": "The question as printed on the paper — The diagram shows a section of a garden divided into three parts. In the diagram: |PR| = 3·3 m, |PQ| = 6·5 m, |QT| = |QS| = 8 m, |∠QRP| = 90°, |∠PQR| = α°, and |∠RQS| = β°. Show that α = 31°, correct to the nearest degree.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -30066,6 +31834,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q8-c",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q8-c.png",
+          "srcHash": "837be932da5bab49b383047d0fb08087",
+          "alt": "The question as printed on the paper — The diagram shows a section of a garden divided into three parts. In the diagram: |PR| = 3·3 m, |PQ| = 6·5 m, |QT| = |QS| = 8 m, |∠QRP| = 90°, |∠PQR| = α°, and |∠RQS| = β°. Use the value of α given in part (b) to find the value of β.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -30108,6 +31884,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q8-d",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q8-d.png",
+          "srcHash": "14700b089e6649a98ca3d9255f2515cc",
+          "alt": "The question as printed on the paper — The diagram shows a section of a garden divided into three parts. In the diagram: |PR| = 3·3 m, |PQ| = 6·5 m, |QT| = |QS| = 8 m, |∠QRP| = 90°, |∠PQR| = α°, and |∠RQS| = β°. Use the Cosine Rule to find the length of [RS]. Give your answer correct to the nearest metre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -30141,6 +31925,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q8-e",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q8-e.png",
+          "srcHash": "7361f85495c44a7a6d758c44879bcb0a",
+          "alt": "The question as printed on the paper — The diagram shows a section of a garden divided into three parts. In the diagram: |PR| = 3·3 m, |PQ| = 6·5 m, |QT| = |QS| = 8 m, |∠QRP| = 90°, |∠PQR| = α°, and |∠RQS| = β°. SQT is a sector of a circle whose centre is Q. Find the length of the arc TS. Give your answer in metres, correct to one decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-OL-scheme-p037-i0",
@@ -30185,6 +31977,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q8-f",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q8-f.png",
+          "srcHash": "a67115784087f9fa98c734ae9f31ef54",
+          "alt": "The question as printed on the paper — The diagram shows a section of a garden divided into three parts. In the diagram: |PR| = 3·3 m, |PQ| = 6·5 m, |QT| = |QS| = 8 m, |∠QRP| = 90°, |∠PQR| = α°, and |∠RQS| = β°. Part (e): SQT is a sector of a circle whose centre is Q. Find the length of the arc TS. Give your answer in metres, correct to one decimal place. Find the area of the sector SQT. Give your answer in square metres, correct to one decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2018-OL-scheme-p037-i1",
           "src": "/exam-figures/maths/markbank/maths-2018-OL-scheme-p037-i1.png",
@@ -30227,6 +32027,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q9-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q9-a-i.png",
+          "srcHash": "50c5011f0875e4b96f2292e0ab55f061",
+          "alt": "The question as printed on the paper — Find the volume of a solid sphere of radius 0·3 cm. Give your answer in cm³, correct to 3 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2018-OL-scheme-p038-i0",
           "src": "/exam-figures/maths/markbank/maths-2018-OL-scheme-p038-i0.png",
@@ -30266,6 +32074,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q9-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q9-a-ii.png",
+          "srcHash": "8ded97f3abd648a977e89e5084980c2d",
+          "alt": "The question as printed on the paper — The sphere is made of pure gold. Each cm³ of pure gold weighs 19·3 grams. Find the number of grams of pure gold in the sphere. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -30298,6 +32114,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q9-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q9-a-iii.png",
+          "srcHash": "37d42af7bd207b2020a2140518791740",
+          "alt": "The question as printed on the paper — (iii) It is known that there are approximately 6∙02 × 10²³ atoms in 197 grams of pure gold. Find the number of atoms of pure gold in the sphere. Give your answer in the form a × 10ⁿ, where 1 ≤ a < 10, n∈ℕ, and where a is correct to 2 significant figures.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-OL-scheme-p038-i1",
@@ -30339,6 +32163,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q9-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q9-b-i.png",
+          "srcHash": "1ff6399828b6cf811deb4f1dc0e55d05",
+          "alt": "The question as printed on the paper — A survey was carried out on behalf of a television station to investigate the popularity of a certain show. A random sample of 1560 television viewers was surveyed. Find the margin of error of the survey. Give your answer as a percentage, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2018-OL-scheme-p039-i0",
@@ -30384,6 +32216,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q9-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q9-b-ii.png",
+          "srcHash": "5f02beb18e1c6ef3b0e1024c2392e390",
+          "alt": "The question as printed on the paper — A survey was carried out on behalf of a television station to investigate the popularity of a certain show. A random sample of 1560 television viewers was surveyed. Find the margin of error of the survey. Give your answer as a percentage, correct to 1 decimal place. In the survey, 546 of the 1560 viewers surveyed said that they liked the show. Use your answer to part b(i) above to create a 95% confidence interval for the percentage of viewers who liked the show.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -30417,6 +32257,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2018 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2018-OL-ask-p2-q9-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2018-OL-ask-p2-q9-b-iii.png",
+          "srcHash": "acc94ad6faeb816ef7e9566692a4807f",
+          "alt": "The question as printed on the paper — A survey was carried out on behalf of a television station to investigate the popularity of a certain show. A random sample of 1560 television viewers was surveyed. Find the margin of error of the survey. Give your answer as a percentage, correct to 1 decimal place. In the survey, 546 of the 1560 viewers surveyed said that they liked the show. Use your answer to part b(i) above to create a 95% confidence interval for the percentage of viewers who liked the show. (iii) An executive for the television station had claimed that 40% of viewers liked the show. Use your answer to part b(ii) above to conduct a hypothesis test, at the 5% level of significance, to test the executive’s claim. State your null hypothesis, your alternative hypothesis and give your conclusion in the context of the question.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2018 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -30454,6 +32302,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q1-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q1-a.png",
+          "srcHash": "1c8d47cd872a033367b8e720d494371f",
+          "alt": "The question as printed on the paper — A new machine is bought for €30 000. Its value depreciates by 15% each year for five years. Find the value of the machine at the end of the five years.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -30486,6 +32342,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q1-b.png",
+          "srcHash": "c98925d82eb42ee93a8a9e4660f7a4c2",
+          "alt": "The question as printed on the paper — A sum of money was invested for two years at 3% compound interest per year. At the end of the two years it amounted to €30 000. Find the sum invested.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p008-i0",
@@ -30528,6 +32392,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q1-c",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q1-c.png",
+          "srcHash": "90f414eb46bdfe77a35b29d117a6e712",
+          "alt": "The question as printed on the paper — (c) A company invested €25 000 for three years at a fixed rate of compound interest. At the end of the three years it amounted to €26 530·20. Find the rate of interest.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-OL-scheme-p008-i1",
           "src": "/exam-figures/maths/markbank/maths-2017-OL-scheme-p008-i1.png",
@@ -30566,6 +32438,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q2-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q2-a-i.png",
+          "srcHash": "5ecca6c4d741300d0b4a424287c7ded7",
+          "alt": "The question as printed on the paper — The complex number z₁ = a + bi,where i² = −1, is shown on the Argand Diagram below. Im Write down the value of a and the 5 value of b. 4 3 a = __________b = _________ 2 1 Re -2 -1 1 2 3 4 5 -1 z₁ -2",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -30592,6 +32472,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q2-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q2-a-ii.png",
+          "srcHash": "18bac0dd6f333b3a2920562721caa2f3",
+          "alt": "The question as printed on the paper — The complex number z₁ = a + bi,where i² = −1, is shown on the Argand Diagram below. Im Write down the value of a and the 5 value of b. 4 3 a = __________b = _________ 2 1 Re -2 -1 1 2 3",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -30624,6 +32512,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q2-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q2-a-iii.png",
+          "srcHash": "c6dcc3d42cb34cf6e52c71d64639c9e1",
+          "alt": "The question as printed on the paper — The complex number z₁ = a + bi,where i² = −1, is shown on the Argand Diagram below. Im Write down the value of a and the 5 value of b. 4 3 a = __________b = _________ 2 1 Re -2 -1 1 2 3 (iii) z₃ = z₁/. Write z₃ in the form x + yi, where x, y∈ℝ. z₂",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p009-i0",
@@ -30664,6 +32560,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q2-b.png",
+          "srcHash": "9a10fb85a4c5161c659b3dcbf3a9b244",
+          "alt": "The question as printed on the paper — Solve for z: 2z−6(4 −6i) = (−1 + i)(4 −2i).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -30695,6 +32599,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q3-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q3-a.png",
+          "srcHash": "c9ea4c47af6f82ac633c43ab7bd864c5",
+          "alt": "The question as printed on the paper — Find the two values of x for which 3x²−6x−8 = 0. Give each answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p010-i0",
@@ -30738,6 +32650,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q3-b.png",
+          "srcHash": "e13682b69537fc3282be30b738811534",
+          "alt": "The question as printed on the paper — Find the co-ordinates of the minimum point of the function f(x) = 3x²−6x−8, wherex∈ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-OL-scheme-p010-i1",
           "src": "/exam-figures/maths/markbank/maths-2017-OL-scheme-p010-i1.png",
@@ -30778,6 +32698,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q4-a.png",
+          "srcHash": "15cbac81ba653b0dbd4e97e87d1f8369",
+          "alt": "The question as printed on the paper — Solve for x: 11x−5(2x−1) = 3(6 −x) + 3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -30813,6 +32741,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q4-b.png",
+          "srcHash": "032ab658f8315961aad9df0fd2d90928",
+          "alt": "The question as printed on the paper — Solve the simultaneous equations: y + 5 = 2x x² + y² = 25.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -30841,6 +32777,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q5-a.png",
+          "srcHash": "fb15f020b7756fed581c3af026902e62",
+          "alt": "The question as printed on the paper — A field is divided into eight sections as shown below. The width of each section is 3 metres. The height, in metres, of each section is given in the diagram. Use the Trapezoidal rule to estimate the area of the field. 8 7 6∙5 6∙5 5∙8 6 4∙8 6 4",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p012-i0",
@@ -30882,6 +32826,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q5-b.png",
+          "srcHash": "eebec31c139d436a9b1914f7de9e3600",
+          "alt": "The question as printed on the paper — The area of the same field was re-estimated by applying the Trapezoidal rule again. This time, a different section width (4 m) and a different set of section heights were used, as shown below. The area was found to be 145∙6 m². Use this information to find the value of the height marked x on the diagram. 8 6∙9 6∙2 6∙4 6 x 4 4 m",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-OL-scheme-p012-i1",
           "src": "/exam-figures/maths/markbank/maths-2017-OL-scheme-p012-i1.png",
@@ -30922,6 +32874,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q6-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q6-a.png",
+          "srcHash": "a9edfb1504a0d7726a0b56e847333ce4",
+          "alt": "The question as printed on the paper — A salesman earns a basic salary of €150 per week. In addition, he gets commission of 20% on sales up to the value of €1000 in the week and 30% commission on any sales above this. Find his total income for a week when his total sales amount to €3000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -30955,6 +32915,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q6-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q6-b.png",
+          "srcHash": "035e79053ece27b7fe670d27cab1ccbf",
+          "alt": "The question as printed on the paper — A salesman earns a basic salary of €150 per week. In addition, he gets commission of 20% on sales up to the value of €1000 in the week and 30% commission on any sales above this. On a different week his total income is €1160. Find his total sales for this week.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p013-i0",
@@ -30991,6 +32959,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q7-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q7-a.png",
+          "srcHash": "b34aefeb825f48a49b76976caed24cb4",
+          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns of tiles are shown in the diagram below. Pattern 3 Pattern 1 Pattern 2 Draw the next pattern of tiles onto the diagram above.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p014-i0",
@@ -31030,6 +33006,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q7-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q7-b.png",
+          "srcHash": "3dd7ed7cbeb03e856af763b3d0008bd5",
+          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns of tiles are shown in the diagram below. Based on the patterns shown, complete the table below. Pattern number (n): 1, 2, 3, 4, 5. Number of Tiles: 5, _, _, _, _.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -31068,6 +33052,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q7-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q7-c-i.png",
+          "srcHash": "25ebc3ca9457bf3f27e4c3d2e7ff345f",
+          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns of tiles are shown in the diagram below. Pattern 3 Pattern 1 Pattern 2 Assuming the pattern continues, the number of tiles in the nth pattern of the sequence is given by the formula Tₙ = pn + q, where p and q∈ℕ. Find the value of p and the value of q.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -31098,6 +33090,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q7-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q7-c-ii.png",
+          "srcHash": "2cec2db0c9162a5bb67216b6561f69b7",
+          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns of tiles are shown in the diagram below. Pattern 3 Pattern 1 Pattern 2 How many tiles are in the 20th pattern?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -31132,6 +33132,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q7-c-iii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q7-c-iii.png",
+          "srcHash": "b125328f371f95dcce3b413faf9e7901",
+          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns of tiles are shown in the diagram below. Pattern 3 Pattern 1 Pattern 2 (iii) Find which pattern has exactly 290 tiles. 3n2+7n",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -31161,6 +33169,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q7-d-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q7-d-i.png",
+          "srcHash": "2c3051e2a143ab75fb3ebdca8aa55a37",
+          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns of tiles are shown in the diagram below. Pattern 3 Pattern 1 Pattern 2 Show that Sn= (d) (i) is a formula for the total number of tiles needed to build 2 the first n patterns.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p015-i0",
@@ -31204,6 +33220,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q7-d-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q7-d-ii.png",
+          "srcHash": "ec29d31f58337c49e8f906f5e529bda5",
+          "alt": "The question as printed on the paper — The first three patterns in a sequence of patterns of tiles are shown in the diagram below. Pattern 3 Pattern 1 Pattern 2 Find the total number of tiles needed to build the first 30 patterns.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-OL-scheme-p015-i1",
           "src": "/exam-figures/maths/markbank/maths-2017-OL-scheme-p015-i1.png",
@@ -31241,6 +33265,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q8-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q8-a.png",
+          "srcHash": "a5800f2b821e941f39b2f9c7bcc45753",
+          "alt": "The question as printed on the paper — A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x−x²−2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro. Use the profit function, P(x), to find how much money the company loses if it does not sell any cable.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -31276,6 +33308,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q8-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q8-b.png",
+          "srcHash": "c892693d18ab424a3c03832c25118b63",
+          "alt": "The question as printed on the paper — A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x−x²−2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro. In a particular week the company made a profit of €8350. Find the number of kilometres of cable it sold that week.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -31305,6 +33345,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q8-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q8-c-i.png",
+          "srcHash": "a3ecef2ce324d7b659e5901b3340ab3c",
+          "alt": "The question as printed on the paper — A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro. The table below shows some of the data representing the profit on sales. Use the profit function, P(x), to complete the table. Number of km of cable sold (x): 50, 60, 70, 80, 90, 100. Profit (€): _, _, 12 350, _, _, _.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -31337,6 +33385,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q8-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q8-c-ii.png",
+          "srcHash": "d46a3679448c51bae634d28acadbb075",
+          "alt": "The question as printed on the paper — A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro. Part (c)(i): The table below shows some of the data representing the profit on sales. Use the profit function, P(x), to complete the table. Number of km of cable sold (x): 50, 60, 70, 80, 90, 100. Profit (€): _, _, 12 350, _, _, _. Use the data in the table to draw the graph of the profit function on the axes below for 50 ≤ x ≤ 100, x ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p017-i0",
@@ -31379,6 +33435,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q8-c-iii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q8-c-iii.png",
+          "srcHash": "ece638506236a9552cab8f1c9e6c3bef",
+          "alt": "The question as printed on the paper — A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x−x²−2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro. (iii) Use your graph to estimate the lower and upper range of sales (in km of cable) in order to make a profit of between €10 000 and €14 000 in a particular week. Show your work on the graph above.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -31409,6 +33473,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q8-d",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q8-d.png",
+          "srcHash": "5ca85b4aef123abd25faec2bb3552895",
+          "alt": "The question as printed on the paper — A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x−x²−2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro. Use calculus to find the number of kilometres of cable sold when the profit is increasing at a rate of €105 per km.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p017-i1",
@@ -31450,6 +33522,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q9-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q9-a.png",
+          "srcHash": "e5c90443be37f6318cea9db30a66276d",
+          "alt": "The question as printed on the paper — Forensic scientists can estimate the height of a person from the lengths of their bones. One method uses a function which relates the length of the femur bone, x, to the height of the person. Using this method the heights of males and females are estimated using the following functions: Male: m(x) = 2·3x + 65·53, where m(x) is the height and x is the length of the femur, in cm. Female: f(x) = 2·5x + 54·13, where f(x) is the height and x is the length of the femur, in cm. Use the functions above to estimate the height of a male and the height of a female each of whose femur is 47·54 cm in length. Give both answers correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -31478,6 +33558,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q9-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q9-b.png",
+          "srcHash": "88b69d217d68abecc19ea3fff2d69ff5",
+          "alt": "The question as printed on the paper — Forensic scientists can estimate the height of a person from the lengths of their bones. One method uses a function which relates the length of the femur bone, x, to the height of the person. Using this method the heights of males and females are estimated using the following functions: Male: m(x) = 2·3x + 65·53, where m(x) is the height and x is the length of the femur, in cm. Female: f(x) = 2·5x + 54·13, where f(x) is the height and x is the length of the femur, in cm. Use m(x) to estimate the femur length of a male whose height is 184 cm. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -31514,6 +33602,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q9-c",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q9-c.png",
+          "srcHash": "5bbe603882a95c97127a20c7a2fcc4c4",
+          "alt": "The question as printed on the paper — Forensic scientists can estimate the height of a person from the lengths of their bones. One method uses a function which relates the length of the femur bone, x, to the height of the person. Using this method the heights of males and females are estimated using the following functions: Male: m(x) = 2·3x + 65·53, where m(x) is the height and x is the length of the femur, in cm. Female: f(x) = 2·5x + 54·13, where f(x) is the height and x is the length of the femur, in cm. Conor’s femur length is 44·2 cm. His height is 171 cm. Find the percentage error in using m(x) to estimate his height. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p018-i0",
@@ -31558,6 +33654,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q9-d",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q9-d.png",
+          "srcHash": "c1f99a537ad1608c25181137346b8bb3",
+          "alt": "The question as printed on the paper — Forensic scientists can estimate the height of a person from the lengths of their bones. One method uses a function which relates the length of the femur bone, x, to the height of the person. Using this method the heights of males and females are estimated using the following functions: Male: m(x) = 2·3x + 65·53, where m(x) is the height and x is the length of the femur, in cm. Female: f(x) = 2·5x + 54·13, where f(x) is the height and x is the length of the femur, in cm. Find the length of a femur for which the estimated height of a male and the estimated height of a female are the same and find this estimated height.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -31586,6 +33690,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q9-e-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q9-e-i.png",
+          "srcHash": "9fb6b6dbf32f3fbf78a3f6f75ad5f387",
+          "alt": "The question as printed on the paper — (e) The Ponderal Index is a number which relates a person’s height to their weight. The formula for the Ponderal Index, P, is M/ℎ³ P = where M is weight in kg and h is height in metres. Find the Ponderal Index for a person who is 1∙60 m tall and weighs 72·5 kg. (i) Give your answer correct to 1 decimal place. M",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p019-i0",
@@ -31623,6 +33735,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP100EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q9-e-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q9-e-ii.png",
+          "srcHash": "8cfd322400e6991a5c8b9c8e398243ac",
+          "alt": "The question as printed on the paper — (e) The Ponderal Index is a number which relates a person’s height to their weight. The formula for the Ponderal Index, P, is M/ℎ³ P = where M is weight in kg and h is height in metres. (ii) Rearrange the formula P = M/ℎ3 to give a formula which will give the height of a person in terms of their weight and Ponderal index.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p019-i1",
@@ -31664,6 +33784,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p1-q9-e-iii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p1-q9-e-iii.png",
+          "srcHash": "2ca792e92a0bd81ba68fa2dbb7897964",
+          "alt": "The question as printed on the paper — (e) The Ponderal Index is a number which relates a person’s height to their weight. The formula for the Ponderal Index, P, is M/ℎ³ P = where M is weight in kg and h is height in metres. (iii) Mary has a Ponderal Index of 13 and a weight of 67∙5 kg. Find her height. Give your answer in metres, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-OL-scheme-p019-i2",
           "src": "/exam-figures/maths/markbank/maths-2017-OL-scheme-p019-i2.png",
@@ -31702,6 +33830,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q1-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q1-a-i.png",
+          "srcHash": "aaa350e7aa965a76948ee8dd9f3417f2",
+          "alt": "The question as printed on the paper — According to the Central Statistics Office (CSO) there were 65 909 babies born in Ireland in 2015. Of these 32 290 were girls. (a)(i) How many boys were born in Ireland in 2015?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -31730,6 +33866,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q1-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q1-a-ii.png",
+          "srcHash": "53df8882445f17d8c411d99a5731d85e",
+          "alt": "The question as printed on the paper — According to the Central Statistics Office (CSO) there were 65 909 babies born in Ireland in 2015. Of these 32 290 were girls. Find the probability that a baby picked at random from those born in Ireland in 2015 is a boy. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p024-i0",
@@ -31772,6 +33916,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q1-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q1-b-i.png",
+          "srcHash": "223a2b1dcc8adaeddc8615064ada9081",
+          "alt": "The question as printed on the paper — According to the Central Statistics Office (CSO) there were 65 909 babies born in Ireland in 2015. Of these 32 290 were girls. (b) Eight babies were born in Limerick’s Maternity Hospital on 1 May 2015. Use your answer to part (a)(ii) to find the probability that the first three babies born were boys. Give your answer correct to 4 decimal places. Find the probability that the third birth was the first girl born in the hospital that day. Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-OL-scheme-p025-i0",
           "src": "/exam-figures/maths/markbank/maths-2017-OL-scheme-p025-i0.png",
@@ -31813,6 +33965,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q1-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q1-c-i.png",
+          "srcHash": "edf971b2db60ef264f8a6c4a95010ba1",
+          "alt": "The question as printed on the paper — According to the Central Statistics Office (CSO) there were 65 909 babies born in Ireland in 2015. Of these 32 290 were girls. The table below shows the probability of being born on a particular day of the week. Complete the table. Day Mon Tue Wed Thu Fri Sat Sun Probability 0·14 0·15 0·18 0·15 0·12 0·1",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-OL-scheme-p025-i1",
           "src": "/exam-figures/maths/markbank/maths-2017-OL-scheme-p025-i1.png",
@@ -31852,6 +34012,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q1-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q1-c-ii.png",
+          "srcHash": "33c91ba703de6c6032ae4a2b037a92df",
+          "alt": "The question as printed on the paper — According to the Central Statistics Office (CSO) there were 65 909 babies born in Ireland in 2015. Of these 32 290 were girls. The table below shows the probability of being born on a particular day of the week. Day Mon Tue Wed Thu Fri Sat Sun Probability 0·14 0·15 0·18 0·15 0·12 0·1 In a particular week 1300 babies were born. Find the number of babies expected to be born on the Tuesday of that week.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -31880,6 +34048,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q2-a.png",
+          "srcHash": "973402c043ebc6bf22a9aeeac0624778",
+          "alt": "The question as printed on the paper — The circle c has centre (0, 0) and radius 5 units. Write down the equation of c. Equation of c:",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -31912,6 +34088,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q2-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q2-b-i.png",
+          "srcHash": "6ef7378f9132d516bd40b1836e3da5fe",
+          "alt": "The question as printed on the paper — (b) The diagram shows a semi-circle which is part of c. y P(−4, k) x A(−5, 0) B(5, 0) The point P(−4, k), k > 0, is on the semi-circle. Find the value of k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -31948,6 +34132,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q2-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q2-b-ii.png",
+          "srcHash": "958ddd3d46e0314377a950204ba39b54",
+          "alt": "The question as printed on the paper — (b) The diagram shows a semi-circle which is part of c. y P(−4, k) x A(−5, 0) B(5, 0) Show that the triangle ABP is right-angled at P.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p026-i0",
@@ -31993,6 +34185,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q2-c",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q2-c.png",
+          "srcHash": "4aa77458afb827da18530c80492b810e",
+          "alt": "The question as printed on the paper — Find the area of the region which is inside the semi-circle but outside the triangle ABP. Give your answer, in square units, correct to 2 decimal places. y P(−4, k) x A(−5, 0) B(5, 0)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-OL-scheme-p027-i0",
           "src": "/exam-figures/maths/markbank/maths-2017-OL-scheme-p027-i0.png",
@@ -32034,6 +34234,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q3-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q3-a-i.png",
+          "srcHash": "1e7eee5632dbb8a350da6d492b693278",
+          "alt": "The question as printed on the paper — (a) The points A(2, 1), B(6, 3), C(5, 5), and D(1, 3) are the vertices of the rectangle ABCD as shown. y 5 Show that |AD| = √5 units. (i) 4 D B 3 2 A 1 x -1 1 2 3 4 5 6 7 -1",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -32069,6 +34277,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q3-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q3-a-ii.png",
+          "srcHash": "195ac6cde97169a30a59c798f500d188",
+          "alt": "The question as printed on the paper — (a) The points A(2, 1), B(6, 3), C(5, 5), and D(1, 3) are the vertices of the rectangle ABCD as shown. y C 5 4 D B 3 2 A 1 x -1 1 2 3 4 5 6 7 -1 Find, in square units, the area of the rectangle ABCD.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p028-i0",
@@ -32110,6 +34326,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q3-b.png",
+          "srcHash": "dd716a83b9e3b5ee8e88c3a99fa7aca1",
+          "alt": "The question as printed on the paper — (a) The points A(2, 1), B(6, 3), C(5, 5), and D(1, 3) are the vertices of the rectangle ABCD as shown. y C 5 4 D B 3 2 A 1 x -1 1 2 3 4 5 6 7 -1 Find the equation of the line BC. Give your answer in the form ax + by + c = 0, where a, b, and c∈ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p028-i1",
@@ -32155,6 +34379,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q3-c",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q3-c.png",
+          "srcHash": "857ce0778d6a851224a5974f02cbfe8e",
+          "alt": "The question as printed on the paper — (a) The points A(2, 1), B(6, 3), C(5, 5), and D(1, 3) are the vertices of the rectangle ABCD as shown. y C 5 4 D B 3 2 A 1 x -1 1 2 3 4 5 6 7 -1 Use trigonometry to find the measure of the angle ABD. Give your answer correct to the nearest degree.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-OL-scheme-p029-i0",
           "src": "/exam-figures/maths/markbank/maths-2017-OL-scheme-p029-i0.png",
@@ -32194,6 +34426,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q4-a.png",
+          "srcHash": "afd3c03d353c0c73a0b017c0133e711c",
+          "alt": "The question as printed on the paper — Construct the triangle ABC, where |AB| = 8 cm, |AC| = 5 cm, and |BC| = 7 cm.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p030-i0",
@@ -32235,6 +34475,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q4-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q4-b-i.png",
+          "srcHash": "7035e21ea6d9016446de6950d27e577e",
+          "alt": "The question as printed on the paper — (b) The diagram shows a square of side length 2k cm. Write down, in terms of k, an expression for the area of the square. 2k 2k",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -32273,6 +34521,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q4-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q4-b-ii.png",
+          "srcHash": "37e7ab1255b364f5ece3709f511de275",
+          "alt": "The question as printed on the paper — (b) The diagram shows a square of side length 2k cm. An isosceles triangle with side lengths of 20 cm 2k and hypotenuse of length 2k cm is removed from the square, as shown. Find the value of k (correct to 2 decimal places) and the area of the remaining (shaded) section. 2k 20 20",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p031-i0",
@@ -32314,6 +34570,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q5-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q5-a-i.png",
+          "srcHash": "117938f8e1a711985b05633850076c64",
+          "alt": "The question as printed on the paper — (a) In a survey, the IQ scores of 1200 people were recorded. The mean score was 100 points and the standard deviation was 15 points. Assuming that IQ scores are normally distributed, the data are shown on the diagram below. Fill in the missing numbers on the horizontal axis. 85 IQ scores",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -32345,6 +34609,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q5-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q5-a-ii.png",
+          "srcHash": "153f26286c23650254733b233ffca101",
+          "alt": "The question as printed on the paper — (a) In a survey, the IQ scores of 1200 people were recorded. The mean score was 100 points and the standard deviation was 15 points. Assuming that IQ scores are normally distributed, the data are shown on the diagram below. 85 IQ scores A person is chosen at random from those surveyed. Use the Empirical Rule to find the probability that this person has an IQ score between 70 and 130 points. (iii) Use the Empirical Rule to find the approximate number of people surveyed with an IQ score of between 85 and 115 points.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p032-i0",
@@ -32383,6 +34655,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q5-b.png",
+          "srcHash": "e47ea355c6829a3821036ee3e1652ff5",
+          "alt": "The question as printed on the paper — (b) A class of 24 pupils is made up of 10 boys and 14 girls. Chemistry is studied by 6 of the boys and 9 of the girls. A pupil is chosen at random from the class. Find the probability that the pupil chosen is a boy or is a pupil who does not study chemistry.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p032-i1",
@@ -32425,6 +34705,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q6-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q6-a.png",
+          "srcHash": "9761a9ace9ac81bc1d5bab52c36769a6",
+          "alt": "The question as printed on the paper — Find the distance x in the diagram below (not to scale). Give your answer correct to 2 decimal places. 65° x 63°",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p033-i0",
@@ -32473,6 +34761,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q6-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q6-b.png",
+          "srcHash": "07eb0e3441e2bbf0903e211cdd952cc6",
+          "alt": "The question as printed on the paper — Find the distance y in the diagram below (not to scale). Give your answer correct to 2 decimal places. y 53·8° 10·2 cm",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -32505,6 +34801,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q7-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q7-a-i.png",
+          "srcHash": "467c48d4feb22648ae64daf0ecf7fbe3",
+          "alt": "The question as printed on the paper — Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. (a)(i) The height of each cone is equal to the diameter of its base. If the radius of the base is 2·25 m, write the height of a cone. Picture: http://cs.nga.gov.au",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -32542,6 +34846,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q7-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q7-a-ii.png",
+          "srcHash": "2fab606e968b758079ff4cca27681313",
+          "alt": "The question as printed on the paper — Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. (a)(i) The height of each cone is equal to the diameter of its base. If the radius of the base is 2·25 m, write the height of a cone. Picture: http://cs.nga.gov.au Show that, correct to 2 decimal places, the slant height, l, of a cone is 5·03 m.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -32577,6 +34889,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q7-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q7-b-i.png",
+          "srcHash": "fffb545a11edb331c9f479b0d49e1b55",
+          "alt": "The question as printed on the paper — Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. (a)(i) The height of each cone is (b) In order to maintain the steel’s reflective shine, the surface is polished regularly. Find the curved surface area of the entire sculpture (14 cones). Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -32606,6 +34926,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q7-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q7-b-ii.png",
+          "srcHash": "06a6d8d1bedf380e297522fbebb74f8d",
+          "alt": "The question as printed on the paper — Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. (a)(i) The height of each cone is (b) In order to maintain the steel’s reflective shine, the surface is polished regularly. One litre of polish will cover 12·25 m². Find how many litres are needed to polish the entire sculpture. Give your answer correct to the nearest litre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p035-i0",
@@ -32651,6 +34979,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q7-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q7-b-iii.png",
+          "srcHash": "23aa6ee31f98b76be89e144b7e84cbb7",
+          "alt": "The question as printed on the paper — Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. (a)(i) The height of each cone is (b) In order to maintain the steel’s reflective shine, the surface is polished regularly. A container of polish contains 5 litres and costs A$110. Find the number of containers of polish that must be purchased in order to polish the entire sculpture and hence find the cost of the polish in euro ( A$1 = €0·68 ). Give your answer correct to the nearest euro.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-OL-scheme-p035-i1",
           "src": "/exam-figures/maths/markbank/maths-2017-OL-scheme-p035-i1.png",
@@ -32695,6 +35031,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q7-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q7-c-i.png",
+          "srcHash": "b79d80f1d81707a696808ef4cfad8e99",
+          "alt": "The question as printed on the paper — Cones is a sculpture in the National Gallery of Australia. It consists of 14 identical steel cones arranged into pairs which are joined together as shown. (a)(i) The height of each cone is The diagram (not to scale) shows the net of the outer surface of one of the cones of the sculpture. It is a sector of a circle of radius length 5·03 m with arc length p m and angle 𝜃 at the centre, as shown below. Find p, the length of the arc of the sector. Give your answer correct to 2 decimal places. p 𝜃 Find 𝜃, the angle at the centre of the sector. Show all your working out. Give your answer correct to the nearest degree.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-OL-scheme-p035-i2",
           "src": "/exam-figures/maths/markbank/maths-2017-OL-scheme-p035-i2.png",
@@ -32735,6 +35079,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q8-a",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q8-a.png",
+          "srcHash": "bbdb654125515979fb8ce38b020a1f4e",
+          "alt": "The question as printed on the paper — The coordinates of C are (4·5, 0). (a) From the diagram, write down the coordinates of the points A, B, D, and E. y 8 E 6 A = ( , ) 4 B = ( , ) B 2 D = ( , ) x C 2 4 6 8 10 12 14 16 E =( , ) -2 A -4 -6 D",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -32769,6 +35121,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q8-b",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q8-b.png",
+          "srcHash": "7bdec178a9bb254fb3097ab421d1768e",
+          "alt": "The question as printed on the paper — The diagram below shows the triangles CBA and CDE. y 8 E 6 4 B 2 x C 2 4 6 8 10 12 14 16 -2 A -4 -6 D Show, using slopes, that the line segments [AB] and [DE] are parallel.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p036-i0",
@@ -32813,6 +35173,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q8-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q8-c-i.png",
+          "srcHash": "7a6f6fc0c8f7ec4f4a8a23238da720fe",
+          "alt": "The question as printed on the paper — The diagram below shows the triangles CBA and CDE. y 8 E 6 4 B 2 x C 2 4 6 8 10 12 14 16 -2 A -4 -6 D Show that the area of the triangle CBA is 4 square units.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-OL-scheme-p036-i1",
           "src": "/exam-figures/maths/markbank/maths-2017-OL-scheme-p036-i1.png",
@@ -32855,6 +35223,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q8-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q8-c-ii.png",
+          "srcHash": "4d575a510f53993c235cbcb41a628943",
+          "alt": "The question as printed on the paper — The diagram below shows the triangles CBA and CDE. y 8 E 6 4 B 2 x C 2 4 6 8 10 12 14 16 -2 A -4 -6 D Find |AB|, the distance from A to B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -32885,6 +35261,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q8-c-iii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q8-c-iii.png",
+          "srcHash": "f55442667006cbab85e7b5d8755213f8",
+          "alt": "The question as printed on the paper — The diagram below shows the triangles CBA and CDE. y 8 E 6 4 B 2 x C 2 4 6 8 10 12 14 16 -2 A -4 -6 D (iii) The triangle CDE is an enlargement of the triangle CBA. Given that |DE| = 15 units, find the scale factor of the enlargement.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p037-i0",
@@ -32927,6 +35311,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q8-c-iv",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q8-c-iv.png",
+          "srcHash": "2793a5468c68253202b5dd603e080b57",
+          "alt": "The question as printed on the paper — The diagram below shows the triangles CBA and CDE. y 8 E 6 4 B 2 x C 2 4 6 8 10 12 14 16 -2 A -4 -6 D (iv) Use this scale factor to find the area of the triangle CDE.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -32958,6 +35350,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q9-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q9-a-i.png",
+          "srcHash": "350f6180c6acee7bc303ace537ab9fff",
+          "alt": "The question as printed on the paper — In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1 United Kingdom EU Membership Referendum 2016 Votes Leave the EU 17 410 742 Remain a member of the EU 16 141 241 Valid votes 33 551 983 Invalid or blank votes Total votes 33 577 342 Source: The UK Electoral Commission (a)(i) Write the number of Invalid or blank votes into the table.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -32987,6 +35387,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q9-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q9-a-ii.png",
+          "srcHash": "a6e8a227ce44a08fd93ac37d2896131f",
+          "alt": "The question as printed on the paper — In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1 United Kingdom EU Membership Referendum 2016 Votes Leave the EU 17 410 742 Remain a member of the EU 16 141 241 Valid votes 33 551 983 Invalid or blank votes Total votes 33 577 342 Source: The UK Electoral Commission Write the number who voted to leave the EU as a percentage of the valid votes. Give your answer correct to the nearest percent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p038-i0",
@@ -33027,6 +35435,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q9-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q9-b-i.png",
+          "srcHash": "746a2793240f09b1254a1c5ff3327aea",
+          "alt": "The question as printed on the paper — In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1 United Kingdom EU Membership Referendum 2016 Votes Leave the EU 17 410 742 Remain a member of the EU 16 141 241 Valid votes 33 551 983 Invalid or blank votes Total votes 33 577 342 Source: The UK Electoral Commission (b) Table 2 shows the percentages of “Remain” and “Leave” voters in various age groups of those who voted in the referendum. Table 2 Age Group Remain (%) Leave (%) 18 ‒ 24 73 27 25 ‒ 34 62 38 35 ‒ 44 52 48 45 ‒ 54 44 56 55 ‒ 64 Draw a suitable chart or charts to represent the data in Table 2.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p039-i0",
@@ -33070,6 +35486,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q9-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q9-b-ii.png",
+          "srcHash": "e58c33a0f9b70751f8da76b08fe5e09e",
+          "alt": "The question as printed on the paper — In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1 United Kingdom EU Membership Referendum 2016 Votes Leave the EU 17 410 742 Remain a member of the EU 16 141 241 Valid votes 33 551 983 Invalid or blank votes Total votes 33 577 342 Source: The UK Electoral Commission (b) Table 2 shows the percentages of “Remain” and “Leave” voters in various age groups of those who voted in the referendum. Table 2 Age Group Remain (%) Leave (%) 18 ‒ 24 73 27 25 ‒ 34 62 38 35 ‒ 44 52 48 45 ‒ 54 44 56 55 ‒ 64 Find the mean of the “Remain” values given in Table 2 and find the mean of the “Leave” values given in Table 2. Give your answers as percentages, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "maths-2017-OL-scheme-p040-i0",
           "src": "/exam-figures/maths/markbank/maths-2017-OL-scheme-p040-i0.png",
@@ -33109,6 +35533,14 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q9-b-iii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q9-b-iii.png",
+          "srcHash": "79d429d4dfbc25dd44aed224962f699f",
+          "alt": "The question as printed on the paper — In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1 United Kingdom EU Membership Referendum 2016 Votes Leave the EU 17 410 742 Remain a member of the EU 16 141 241 Valid votes 33 551 983 Invalid or blank votes Total votes 33 577 342 Source: The UK Electoral Commission (b) Table 2 shows the percentages of “Remain” and “Leave” voters in various age groups of those who voted in the referendum. Table 2 Age Group Remain (%) Leave (%) 18 ‒ 24 73 27 25 ‒ 34 62 38 35 ‒ 44 52 48 45 ‒ 54 44 56 55 ‒ 64 (iii) Explain why the answers to part b(ii) do not accurately reflect the actual outcome of the referendum.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -33138,6 +35570,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q9-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q9-c-i.png",
+          "srcHash": "6d664df0a34200350a515f39f6d570af",
+          "alt": "The question as printed on the paper — In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1 United Kingdom EU Membership Referendum 2016 Votes Leave the EU 17 410 742 Remain a member of the EU 16 141 241 Valid votes 33 551 983 Invalid or blank votes Total votes 33 577 342 Source: The UK Electoral Commission In the days following the UK referendum, a survey was conducted in Ireland on attitudes towards a British exit from the European Union. 1200 people were surveyed. Find the margin of error of this survey. Write your answer as a percentage. Give your answer correct to the nearest percent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p041-i0",
@@ -33179,6 +35619,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q9-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q9-c-ii.png",
+          "srcHash": "efac7a86a44b62a6dd8403606c4c4753",
+          "alt": "The question as printed on the paper — In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1 United Kingdom EU Membership Referendum 2016 Votes Leave the EU 17 410 742 Remain a member of the EU 16 141 241 Valid votes 33 551 983 Invalid or blank votes Total votes 33 577 342 Source: The UK Electoral Commission In the days following the UK referendum, a survey was conducted in Ireland on attitudes towards a British exit from the European Union. 1200 people were surveyed. Find the margin of error of this survey. Write your answer as a percentage. Give your answer correct to the nearest percent. In the Irish survey 578 of the 1200 surveyed agreed that a UK exit would have a negative effect on the Irish economy. Use your answer to part c(i) above to create a 95% confidence interval for the proportion of the Irish population who agreed that a UK exit would have a negative effect on the Irish economy.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
     figure: {
           "candId": "maths-2017-OL-scheme-p041-i1",
@@ -33222,6 +35670,14 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2017 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2017-OL-ask-p2-q9-c-iii",
+          "src": "/exam-figures/maths/markbank/maths-2017-OL-ask-p2-q9-c-iii.png",
+          "srcHash": "7dfddacdf6aaeae31d096c0532af8838",
+          "alt": "The question as printed on the paper — In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1 United Kingdom EU Membership Referendum 2016 Votes Leave the EU 17 410 742 Remain a member of the EU 16 141 241 Valid votes 33 551 983 Invalid or blank votes Total votes 33 577 342 Source: The UK Electoral Commission In the days following the UK referendum, a survey was conducted in Ireland on attitudes towards a British exit from the European Union. 1200 people were surveyed. Find the margin of error of this survey. Write your answer as a percentage. Give your answer correct to the nearest percent. In the Irish survey 578 of the 1200 surveyed agreed that a UK exit would have a negative effect on the Irish economy. Use your answer to part c(i) above to create a 95% confidence interval for the proportion of the Irish population who agreed that a UK exit would have a negative effect on the Irish economy. After the survey, a political party claimed that 53% of the Irish population believed that the decision of the UK to leave the EU would have a negative effect on the Irish economy. Use your answer to part c(ii) above to conduct a hypothesis test, at the 5% level of significance, to test the party’s claim. Give your conclusion in the context of the question.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2017 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
 ];

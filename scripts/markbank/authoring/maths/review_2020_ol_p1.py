@@ -153,4 +153,5 @@ p.review(marks,
       'reason': 'Alternative methods for the same marked task, with no printed pool of prompts.'}],
     lambda t: ('all-questions-required', 'All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained.') if 'Answer all' in t
         else ('method-choice', 'The table is one permitted method for the same printed task and scale; there is no printed pool of prompts.') if 'or otherwise' in t else None)
-p.apply(ROWS, '2020 Ordinary Level Paper 1', expect_added=[c['id'] for c in p.cards])
+p.apply(ROWS, '2020 Ordinary Level Paper 1', expect_added=[c['id'] for c in p.cards],
+        question_figures=True)
