@@ -1,24 +1,24 @@
 {
   "subjectId": "construction-studies",
-  "measuredAt": "2026-10-14T11:12:00.832106+00:00",
+  "measuredAt": "2026-10-14T11:24:52.120088+00:00",
   "command": "python3 scripts/markbank/authoring/reconcile.py construction-studies --baseline write",
   "baseline": {
-    "cards": 1035,
-    "contentHash": "80a8478becc2702b",
-    "coveragePct": 81.2,
-    "covered": 686,
+    "cards": 1061,
+    "contentHash": "d8b5d811eea2a077",
+    "coveragePct": 83.4,
+    "covered": 705,
     "excluded": 0,
     "leaves": 845,
-    "open": 159,
+    "open": 140,
     "orphans": 0,
     "papers": {
       "count": 63,
       "hash": "7a382fe186c759ea"
     },
-    "refsHash": "72e013b7f9afc97e"
+    "refsHash": "2a881239ebbd4f55"
   },
-  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2013 Higher, 2014 Higher, 2014 Ordinary, 2015 Higher, 2015 Ordinary, 2016 Higher, 2016 Ordinary, 2017 Higher, 2017 Ordinary, 2018 Higher, 2018 Ordinary, 2019 Higher, 2019 Ordinary, 2020 Higher, 2020 Ordinary, 2021 Higher, 2021 Ordinary, 2022 Higher, 2022 Ordinary, 2023 Higher, 2023 Ordinary, 2024 Higher, 2024 Ordinary, 2025 Higher, 2025 Ordinary, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
-  "openTotal": 159,
+  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2013 Higher, 2013 Ordinary, 2014 Higher, 2014 Ordinary, 2015 Higher, 2015 Ordinary, 2016 Higher, 2016 Ordinary, 2017 Higher, 2017 Ordinary, 2018 Higher, 2018 Ordinary, 2019 Higher, 2019 Ordinary, 2020 Higher, 2020 Ordinary, 2021 Higher, 2021 Ordinary, 2022 Higher, 2022 Ordinary, 2023 Higher, 2023 Ordinary, 2024 Higher, 2024 Ordinary, 2025 Higher, 2025 Ordinary, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
+  "openTotal": 140,
   "papers": [
     {
       "year": 2010,
@@ -219,28 +219,8 @@
       "year": 2013,
       "level": "ol",
       "leaves": 19,
-      "covered": 0,
-      "open": [
-        "Q1(a)",
-        "Q1(b)",
-        "Q2(a)",
-        "Q2(b)",
-        "Q3(a)",
-        "Q3(b)",
-        "Q4(a)",
-        "Q4(b)",
-        "Q5",
-        "Q6(a)",
-        "Q6(b)",
-        "Q6(c)",
-        "Q7(a)",
-        "Q7(b)",
-        "Q7(c)",
-        "Q8",
-        "Q9(a)",
-        "Q9(b)",
-        "Q9(c)"
-      ]
+      "covered": 19,
+      "open": []
     },
     {
       "year": 2014,
