@@ -2142,6 +2142,12 @@
    "set": {
     "stem": "Chioma is throwing a basketball against a wall. The ball leaves her hands at chest height, 1.35 m above the ground. The ball hits the wall at a height of 2 m. Chioma is standing 3 m from the wall when she throws the basketball with an initial speed of 6.3 m s^(–1) at an angle 𝛼 to the horizontal. The coefficient of restitution between the basketball and the wall is 3/7."
    }
+  },
+  "am-2024-hl-8-b": {
+   "reason": "A ligature glyph misread: the paper draws Calibri’s \"tt\" ligature (glyph 425), which the text layer reported as U+01A9 and the old character map turned into one \"t\". Repaired by glyph id from the card’s own paper (patch_deck_ligatures.py); nothing else in the text changes.",
+   "set": {
+    "questionText": "The algebraic formula below is written in terms of force F, mass m, displacement s and angular velocity 𝜔"
+   }
   }
  }
 }
