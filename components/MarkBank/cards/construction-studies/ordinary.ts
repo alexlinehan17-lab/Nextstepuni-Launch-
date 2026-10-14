@@ -22370,4 +22370,1359 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q1-a", topicId: "cons-1-5", conceptId: "foundation-wall-floor-section-a",
+    section: "B", questionRef: "2010 OL Q1(a)",
+    stem: "A living room has a solid concrete ground floor with a 20 mm quarry tile finish as shown. The external wall of the living room is a 350 mm concrete block wall with an insulated cavity. The wall is plastered on both sides. The foundation is a traditional strip foundation.",
+    questionText: "To a scale of 1:5, draw a vertical section through the external wall and ground floor. The section should show all the construction details from the bottom of the foundation to 400 mm above finished floor level. Indicate the typical sizes of four main components.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 47,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 7 of the above details (5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 19 mm render and 13 mm plaster; 100 mm outer leaf; DPC; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; 120 × 20 mm skirting; 20 mm quarry tiles sealed at the wall; 150 mm concrete floor; 150 mm floor insulation; DPM or radon barrier; hardcore and sand blinding; concrete fill or foundation blocks; reinforced concrete foundation.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "dimensions", kind: "criterion", verbatim: "Any four typical dimensions", marks: 4, contextNote: "Typical sizes of four main components, 1 each.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the section, excellent, good or fair, up to 8.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Strip foundation, cavity wall and solid floor section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, dimension and draughting marks belong to part (a); the cold-bridge detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q1-original.png",
+          "srcHash": "7157809b59eea77d4b0a465b90669fa0",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 1: the printed question with a sketch of the cavity wall and quarry-tiled solid floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q1-section.png",
+          "srcHash": "d6f0cea1069da1ea1845b201e16844f6",
+          "alt": "SEC model section through the strip foundation, cavity wall and solid floor, with the specification list and the cold-bridge details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q1-b", topicId: "cons-6-2", conceptId: "foundation-wall-floor-section-b",
+    section: "B", questionRef: "2010 OL Q1(b)",
+    stem: "A living room has a solid concrete ground floor with a 20 mm quarry tile finish as shown. The external wall of the living room is a 350 mm concrete block wall with an insulated cavity. The wall is plastered on both sides. The foundation is a traditional strip foundation.",
+    questionText: "Show on your drawing the typical design detailing to prevent a thermal/cold bridge at the junction of the concrete floor and the external wall.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "cold-bridge", kind: "criterion", verbatim: "Design detail to prevent a thermal/cold bridge at the junction of the concrete floor and the external wall", marks: 3, contextNote: "Such as: an inner leaf of thermal blocks from the foundation to floor level; the cavity insulation overlapping the floor insulation; perimeter insulation at floor level; a flexible seal between wall and floor.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Strip foundation, cavity wall and solid floor section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, dimension and draughting marks belong to part (a); the cold-bridge detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q1-original.png",
+          "srcHash": "7157809b59eea77d4b0a465b90669fa0",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 1: the printed question with a sketch of the cavity wall and quarry-tiled solid floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q1-section.png",
+          "srcHash": "d6f0cea1069da1ea1845b201e16844f6",
+          "alt": "SEC model section through the strip foundation, cavity wall and solid floor, with the specification list and the cold-bridge details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q1-complete", topicId: "cons-1-5", conceptId: "foundation-wall-floor-section-complete",
+    section: "B", questionRef: "2010 OL Q1 — complete",
+    stem: "A living room has a solid concrete ground floor with a 20 mm quarry tile finish as shown. The external wall of the living room is a 350 mm concrete block wall with an insulated cavity. The wall is plastered on both sides. The foundation is a traditional strip foundation.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the external wall and ground floor. The section should show all the construction details from the bottom of the foundation to 400 mm above finished floor level. Indicate the typical sizes of four main components. (b) Show on your drawing the typical design detailing to prevent a thermal/cold bridge at the junction of the concrete floor and the external wall.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 7 of the above details (5 marks each)", marks: 35, contextNote: "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 19 mm render and 13 mm plaster; 100 mm outer leaf; DPC; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; 120 × 20 mm skirting; 20 mm quarry tiles sealed at the wall; 150 mm concrete floor; 150 mm floor insulation; DPM or radon barrier; hardcore and sand blinding; concrete fill or foundation blocks; reinforced concrete foundation.", permittedMarks: [0,5,10,15,20,25,30,35] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Any four typical dimensions", marks: 4, contextNote: "Typical sizes of four main components, 1 each.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the section, excellent, good or fair, up to 8.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-cold-bridge", kind: "criterion", verbatim: "Design detail to prevent a thermal/cold bridge at the junction of the concrete floor and the external wall", marks: 3, contextNote: "Such as: an inner leaf of thermal blocks from the foundation to floor level; the cavity insulation overlapping the floor insulation; perimeter insulation at floor level; a flexible seal between wall and floor.", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-ol-q1-a","label":"a","marks":47,"rowIds":["a-details","a-dimensions","a-presentation"]},{"sourceCardId":"cons-2010-ol-q1-b","label":"b","marks":3,"rowIds":["b-cold-bridge"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Strip foundation, cavity wall and solid floor section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, dimension and draughting marks belong to part (a); the cold-bridge detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q1-original.png",
+          "srcHash": "7157809b59eea77d4b0a465b90669fa0",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 1: the printed question with a sketch of the cavity wall and quarry-tiled solid floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q1-section.png",
+          "srcHash": "d6f0cea1069da1ea1845b201e16844f6",
+          "alt": "SEC model section through the strip foundation, cavity wall and solid floor, with the specification list and the cold-bridge details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q2-a", topicId: "cons-6-2", conceptId: "cavity-attic-insulation-a",
+    section: "B", questionRef: "2010 OL Q2(a)",
+    stem: "The owner of a house built in the 1960s intends to improve the thermal insulation levels by insulating the external walls and the attic space. The external wall is a 300 mm concrete block wall with an uninsulated cavity. The attic space is also uninsulated. It is proposed to inject insulation into the cavity of the external walls.",
+    questionText: "Using notes and neat freehand sketches, describe the procedures to be followed when injecting the insulation into the cavity. Specify the type of insulation to be used.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 21,
+    rows: [
+    { id: "description-1", kind: "criterion", verbatim: "Valid description one", marks: 4, contextNote: "Such as: carried out by a specialist company registered with SEAI; 22 mm holes drilled through the outer leaf at 800 mm horizontally and 1350 mm vertically, with extra holes at cills and heads.", permittedMarks: [0,1,2,3,4] },
+    { id: "description-2", kind: "criterion", verbatim: "Valid description two", marks: 4, contextNote: "A second, different step. Such as: polystyrene beads pumped in with a light glue that sets them solid; the holes filled and blended with the external finish.", permittedMarks: [0,1,2,3,4] },
+    { id: "insulation", kind: "criterion", verbatim: "Type of insulation", marks: 4, contextNote: "Such as: polystyrene beads.", permittedMarks: [0,1,2,3,4] },
+    { id: "detail", kind: "criterion", verbatim: "Valid detail", marks: 4, contextNote: "A valid detail on the sketch, as in the scheme’s model sketches.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Cavity fill and attic insulation",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The attic insulation material in (c) is an open choice; the scheme gives typical materials."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q2-original.png",
+          "srcHash": "bd30db490446aac95cfc0bffdc0f9e19",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 2: the printed question with a sketch of the attic of the 1960s house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q2-injecting",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q2-injecting.png",
+          "srcHash": "875d2c8b744e83aee6ee042db814c903",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketch on injecting cavity insulation.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q2-b", topicId: "cons-6-2", conceptId: "cavity-attic-insulation-b",
+    section: "B", questionRef: "2010 OL Q2(b)",
+    stem: "The owner of a house built in the 1960s intends to improve the thermal insulation levels by insulating the external walls and the attic space. The external wall is a 300 mm concrete block wall with an uninsulated cavity. The attic space is also uninsulated. It is proposed to inject insulation into the cavity of the external walls.",
+    questionText: "Discuss one advantage and one disadvantage of this method of cavity insulation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "advantage", kind: "criterion", verbatim: "One advantage", marks: 4, contextNote: "Such as: less heat loss and lower bills; no interference inside; the floor area unchanged; economical.", permittedMarks: [0,1,2,3,4] },
+    { id: "disadvantage", kind: "criterion", verbatim: "One disadvantage", marks: 4, contextNote: "Such as: the cavity is bridged, a problem on exposed sites; damp may cross it; the holes show; the beads may not fill it completely.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Cavity fill and attic insulation",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The attic insulation material in (c) is an open choice; the scheme gives typical materials."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q2-original.png",
+          "srcHash": "bd30db490446aac95cfc0bffdc0f9e19",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 2: the printed question with a sketch of the attic of the 1960s house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q2-pros-cons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q2-pros-cons.png",
+          "srcHash": "70be6c548a276b3181e17a32ccd5f85c",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketch on the advantages and disadvantages of cavity fill.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q2-c", topicId: "cons-3-9", conceptId: "cavity-attic-insulation-c",
+    section: "B", questionRef: "2010 OL Q2(c)",
+    stem: "The owner of a house built in the 1960s intends to improve the thermal insulation levels by insulating the external walls and the attic space. The external wall is a 300 mm concrete block wall with an uninsulated cavity. The attic space is also uninsulated. It is proposed to inject insulation into the cavity of the external walls.",
+    questionText: "Using notes and neat freehand sketches, show how the attic is to be insulated and include the insulation to the water storage tank. Specify the insulation material for the attic and give its typical thickness.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 21,
+    rows: [
+    { id: "detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 4, contextNote: "Such as: glass fibre quilt, 100 mm between the joists and 200–300 mm across them, with a vapour barrier on the warm side and ventilation above.", permittedMarks: [0,1,2,3,4] },
+    { id: "detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 4, contextNote: "A second, different detail. Such as: the tank insulated on the sides and top but not underneath, with 65–100 mm polystyrene board; the pipes in pipe sections; or blown insulation by a specialist.", permittedMarks: [0,1,2,3,4] },
+    { id: "insulation", kind: "criterion", verbatim: "Type of insulation", marks: 4, contextNote: "Such as: glass fibre, sheep’s wool, rockwool or cork quilt; blown glass, mineral or cellulose fibre; polystyrene board.", permittedMarks: [0,1,2,3,4] },
+    { id: "thickness", kind: "criterion", verbatim: "Thickness of insulation", marks: 4, contextNote: "Such as: 100 mm between the joists and 200–300 mm over them.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Cavity fill and attic insulation",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The attic insulation material in (c) is an open choice; the scheme gives typical materials."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q2-original.png",
+          "srcHash": "bd30db490446aac95cfc0bffdc0f9e19",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 2: the printed question with a sketch of the attic of the 1960s house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q2-attic",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q2-attic.png",
+          "srcHash": "3df8b266176cf46ea796b2c5ba040ca2",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketches on insulating the attic and the water storage tank (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q2-complete", topicId: "cons-6-2", conceptId: "cavity-attic-insulation-complete",
+    section: "B", questionRef: "2010 OL Q2 — complete",
+    stem: "The owner of a house built in the 1960s intends to improve the thermal insulation levels by insulating the external walls and the attic space. The external wall is a 300 mm concrete block wall with an uninsulated cavity. The attic space is also uninsulated. It is proposed to inject insulation into the cavity of the external walls.",
+    questionText: "(a) Using notes and neat freehand sketches, describe the procedures to be followed when injecting the insulation into the cavity. Specify the type of insulation to be used. (b) Discuss one advantage and one disadvantage of this method of cavity insulation. (c) Using notes and neat freehand sketches, show how the attic is to be insulated and include the insulation to the water storage tank. Specify the insulation material for the attic and give its typical thickness.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-description-1", kind: "criterion", verbatim: "Valid description one", marks: 4, contextNote: "Such as: carried out by a specialist company registered with SEAI; 22 mm holes drilled through the outer leaf at 800 mm horizontally and 1350 mm vertically, with extra holes at cills and heads.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-description-2", kind: "criterion", verbatim: "Valid description two", marks: 4, contextNote: "A second, different step. Such as: polystyrene beads pumped in with a light glue that sets them solid; the holes filled and blended with the external finish.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-insulation", kind: "criterion", verbatim: "Type of insulation", marks: 4, contextNote: "Such as: polystyrene beads.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-detail", kind: "criterion", verbatim: "Valid detail", marks: 4, contextNote: "A valid detail on the sketch, as in the scheme’s model sketches.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-advantage", kind: "criterion", verbatim: "One advantage", marks: 4, contextNote: "Such as: less heat loss and lower bills; no interference inside; the floor area unchanged; economical.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-disadvantage", kind: "criterion", verbatim: "One disadvantage", marks: 4, contextNote: "Such as: the cavity is bridged, a problem on exposed sites; damp may cross it; the holes show; the beads may not fill it completely.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 4, contextNote: "Such as: glass fibre quilt, 100 mm between the joists and 200–300 mm across them, with a vapour barrier on the warm side and ventilation above.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 4, contextNote: "A second, different detail. Such as: the tank insulated on the sides and top but not underneath, with 65–100 mm polystyrene board; the pipes in pipe sections; or blown insulation by a specialist.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-insulation", kind: "criterion", verbatim: "Type of insulation", marks: 4, contextNote: "Such as: glass fibre, sheep’s wool, rockwool or cork quilt; blown glass, mineral or cellulose fibre; polystyrene board.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-thickness", kind: "criterion", verbatim: "Thickness of insulation", marks: 4, contextNote: "Such as: 100 mm between the joists and 200–300 mm over them.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-ol-q2-a","label":"a","marks":21,"rowIds":["a-description-1","a-description-2","a-insulation","a-detail","a-presentation"]},{"sourceCardId":"cons-2010-ol-q2-b","label":"b","marks":8,"rowIds":["b-advantage","b-disadvantage"]},{"sourceCardId":"cons-2010-ol-q2-c","label":"c","marks":21,"rowIds":["c-detail-1","c-detail-2","c-insulation","c-thickness","c-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Cavity fill and attic insulation",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The attic insulation material in (c) is an open choice; the scheme gives typical materials."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q2-original.png",
+          "srcHash": "bd30db490446aac95cfc0bffdc0f9e19",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 2: the printed question with a sketch of the attic of the 1960s house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q2-injecting",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q2-injecting.png",
+          "srcHash": "875d2c8b744e83aee6ee042db814c903",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketch on injecting cavity insulation.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q3-a", topicId: "cons-5-2", conceptId: "stove-back-boiler-cylinder-a",
+    section: "B", questionRef: "2010 OL Q3(a)",
+    stem: "A wood burning stove, as shown in the accompanying sketch, has a back boiler fitted. The back boiler is connected to an indirect cylinder to supply hot water for a dwelling house.",
+    questionText: "Using a single-line labelled diagram, show the pipework required to connect the back boiler, cylinder and expansion tank. Include the following in your diagram: back boiler and indirect cylinder; expansion tank and overflow; rising main; pipework and insulation; valves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 42,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 9 of the above details (4 marks each)", marks: 36, contextNote: "Credit the best NINE acceptable details at 4 marks each, capped at 36. Secondary circulation: 15 mm rising main with stop valve; insulated storage tank and ballvalve; 22 mm overflow; 22 mm insulated cold feed to the cylinder; insulated indirect cylinder; 22 mm insulated expansion pipe; 22 mm hot water supply. Primary circulation: 15 mm supply to the expansion tank; insulated expansion tank with ballvalve; 22 mm overflow; 22 mm insulated cold feed; 28 mm primary return; stove and back boiler; 28 mm primary flow; 22 mm insulated expansion pipe; valves.", permittedMarks: [0,4,8,12,16,20,24,28,32,36] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketch, excellent, good or fair, up to 6.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Wood burning stove, back boiler and cylinder",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-nine list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q3-original.png",
+          "srcHash": "6a0ae77c5b0275c5bfedc69121c0e252",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 3: the printed question with a sketch of the wood burning stove.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q3-system.png",
+          "srcHash": "96dab40acd561933ed4557a023a5a429",
+          "alt": "SEC single-line diagram of the stove, back boiler, cylinder and expansion tank, with the list of components.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q3-b", topicId: "cons-5-3", conceptId: "stove-back-boiler-cylinder-b",
+    section: "B", questionRef: "2010 OL Q3(b)",
+    stem: "A wood burning stove, as shown in the accompanying sketch, has a back boiler fitted. The back boiler is connected to an indirect cylinder to supply hot water for a dwelling house.",
+    questionText: "Discuss two advantages of using a wood burning stove to heat domestic hot water.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 4, contextNote: "Such as: wood is renewable and cheaper; modern stoves are highly efficient and designed to heat hot water.", permittedMarks: [0,1,2,3,4] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 4, contextNote: "A second, different advantage. Such as: nearly carbon neutral as trees re-absorb the CO₂; supplements other heating as fossil fuels dwindle; logs from waste wood or fast-growing willow.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Wood burning stove, back boiler and cylinder",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-nine list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q3-original.png",
+          "srcHash": "6a0ae77c5b0275c5bfedc69121c0e252",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 3: the printed question with a sketch of the wood burning stove.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q3-advantages",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q3-advantages.png",
+          "srcHash": "d9ccbe6fb08bdb11830867ae4e13aada",
+          "alt": "SEC 2010 Ordinary marking scheme notes on the advantages of a wood burning stove for hot water.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q3-complete", topicId: "cons-5-2", conceptId: "stove-back-boiler-cylinder-complete",
+    section: "B", questionRef: "2010 OL Q3 — complete",
+    stem: "A wood burning stove, as shown in the accompanying sketch, has a back boiler fitted. The back boiler is connected to an indirect cylinder to supply hot water for a dwelling house.",
+    questionText: "(a) Using a single-line labelled diagram, show the pipework required to connect the back boiler, cylinder and expansion tank. Include the following in your diagram: back boiler and indirect cylinder; expansion tank and overflow; rising main; pipework and insulation; valves. (b) Discuss two advantages of using a wood burning stove to heat domestic hot water.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 9 of the above details (4 marks each)", marks: 36, contextNote: "Credit the best NINE acceptable details at 4 marks each, capped at 36. Secondary circulation: 15 mm rising main with stop valve; insulated storage tank and ballvalve; 22 mm overflow; 22 mm insulated cold feed to the cylinder; insulated indirect cylinder; 22 mm insulated expansion pipe; 22 mm hot water supply. Primary circulation: 15 mm supply to the expansion tank; insulated expansion tank with ballvalve; 22 mm overflow; 22 mm insulated cold feed; 28 mm primary return; stove and back boiler; 28 mm primary flow; 22 mm insulated expansion pipe; valves.", permittedMarks: [0,4,8,12,16,20,24,28,32,36] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 6, contextNote: "Quality of the sketch, excellent, good or fair, up to 6.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 4, contextNote: "Such as: wood is renewable and cheaper; modern stoves are highly efficient and designed to heat hot water.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 4, contextNote: "A second, different advantage. Such as: nearly carbon neutral as trees re-absorb the CO₂; supplements other heating as fossil fuels dwindle; logs from waste wood or fast-growing willow.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-ol-q3-a","label":"a","marks":42,"rowIds":["a-details","a-presentation"]},{"sourceCardId":"cons-2010-ol-q3-b","label":"b","marks":8,"rowIds":["b-advantage-1","b-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Wood burning stove, back boiler and cylinder",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-nine list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q3-original.png",
+          "srcHash": "6a0ae77c5b0275c5bfedc69121c0e252",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 3: the printed question with a sketch of the wood burning stove.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q3-system.png",
+          "srcHash": "96dab40acd561933ed4557a023a5a429",
+          "alt": "SEC single-line diagram of the stove, back boiler, cylinder and expansion tank, with the list of components.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q4-a", topicId: "cons-4-5", conceptId: "doorframe-hinge-a",
+    section: "B", questionRef: "2010 OL Q4(a)",
+    stem: "A solid pine door and doorframe are shown in the accompanying sketch. The door and frame are fitted in a 100 mm internal concrete block wall which is plastered on both sides.",
+    questionText: "Show, using notes and neat freehand sketches, how to ensure that the doorframe is assembled square prior to fitting the door.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "description-1", kind: "criterion", verbatim: "Valid description one", marks: 3, contextNote: "Such as: the head joined to the two jambs with rebated butt joints, nailed or screwed.", permittedMarks: [0,1,2,3] },
+    { id: "description-2", kind: "criterion", verbatim: "Valid description two", marks: 3, contextNote: "A second, different step. Such as: a corner checked with a large steel square and a brace fixed within the rebate; a cross piece at the bottom holding the width.", permittedMarks: [0,1,2,3] },
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "A sketch of the squared, braced frame, as in the scheme’s model sketches.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Fitting a pine doorframe and hanging a door",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The hinge in (c) is an open choice; the scheme gives a butt hinge."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q4-original.png",
+          "srcHash": "4da01eea286d092eea92e19630dd1da0",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 4: the printed question with a sketch of the solid pine door and frame.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q4-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q4-scheme.png",
+          "srcHash": "3746674e866e2970a76d1a574e2f3022",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketches on squaring the doorframe, fixing it in the wall and fitting a butt hinge.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q4-b", topicId: "cons-4-5", conceptId: "doorframe-hinge-b",
+    section: "B", questionRef: "2010 OL Q4(b)",
+    stem: "A solid pine door and doorframe are shown in the accompanying sketch. The door and frame are fitted in a 100 mm internal concrete block wall which is plastered on both sides.",
+    questionText: "Show, using notes and neat freehand sketches, how the doorframe is fitted in the block wall.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "description-1", kind: "criterion", verbatim: "Valid description one", marks: 3, contextNote: "Such as: the frame placed in the opening against the lintel, the jambs plumb, with the brace and spacer holding it square.", permittedMarks: [0,1,2,3] },
+    { id: "description-2", kind: "criterion", verbatim: "Valid description two", marks: 3, contextNote: "A second, different step. Such as: small wedges to firm it; special screws, rawl bolts, anchor fixings or brackets into the blockwork.", permittedMarks: [0,1,2,3] },
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "A sketch of the frame fixed in the wall, as in the scheme’s model sketches.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Fitting a pine doorframe and hanging a door",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The hinge in (c) is an open choice; the scheme gives a butt hinge."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q4-original.png",
+          "srcHash": "4da01eea286d092eea92e19630dd1da0",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 4: the printed question with a sketch of the solid pine door and frame.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q4-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q4-scheme.png",
+          "srcHash": "3746674e866e2970a76d1a574e2f3022",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketches on squaring the doorframe, fixing it in the wall and fitting a butt hinge.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q4-c", topicId: "cons-4-5", conceptId: "doorframe-hinge-c",
+    section: "B", questionRef: "2010 OL Q4(c)",
+    stem: "A solid pine door and doorframe are shown in the accompanying sketch. The door and frame are fitted in a 100 mm internal concrete block wall which is plastered on both sides.",
+    questionText: "Sketch a suitable hinge for this door and show, using notes and neat freehand sketches, the steps involved in fitting one hinge to the door.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "hinge", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the hinge sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 3, contextNote: "Such as: a butt hinge; its position and ends marked on the door edge; a marking gauge set to the width and the leaf thickness.", permittedMarks: [0,1,2,3] },
+    { id: "detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 3, contextNote: "A second, different step. Such as: the waste removed with a sharp bevel-edged chisel, or a router and jig, the trench sloped slightly on the outer edge.", permittedMarks: [0,1,2,3] },
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "A sketch of the hinge being fitted, as in the scheme’s model sketches.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Fitting a pine doorframe and hanging a door",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The hinge in (c) is an open choice; the scheme gives a butt hinge."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q4-original.png",
+          "srcHash": "4da01eea286d092eea92e19630dd1da0",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 4: the printed question with a sketch of the solid pine door and frame.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q4-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q4-scheme.png",
+          "srcHash": "3746674e866e2970a76d1a574e2f3022",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketches on squaring the doorframe, fixing it in the wall and fitting a butt hinge.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q4-complete", topicId: "cons-4-5", conceptId: "doorframe-hinge-complete",
+    section: "B", questionRef: "2010 OL Q4 — complete",
+    stem: "A solid pine door and doorframe are shown in the accompanying sketch. The door and frame are fitted in a 100 mm internal concrete block wall which is plastered on both sides.",
+    questionText: "(a) Show, using notes and neat freehand sketches, how to ensure that the doorframe is assembled square prior to fitting the door. (b) Show, using notes and neat freehand sketches, how the doorframe is fitted in the block wall. (c) Sketch a suitable hinge for this door and show, using notes and neat freehand sketches, the steps involved in fitting one hinge to the door.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-description-1", kind: "criterion", verbatim: "Valid description one", marks: 3, contextNote: "Such as: the head joined to the two jambs with rebated butt joints, nailed or screwed.", permittedMarks: [0,1,2,3] },
+    { id: "a-description-2", kind: "criterion", verbatim: "Valid description two", marks: 3, contextNote: "A second, different step. Such as: a corner checked with a large steel square and a brace fixed within the rebate; a cross piece at the bottom holding the width.", permittedMarks: [0,1,2,3] },
+    { id: "a-sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "A sketch of the squared, braced frame, as in the scheme’s model sketches.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-description-1", kind: "criterion", verbatim: "Valid description one", marks: 3, contextNote: "Such as: the frame placed in the opening against the lintel, the jambs plumb, with the brace and spacer holding it square.", permittedMarks: [0,1,2,3] },
+    { id: "b-description-2", kind: "criterion", verbatim: "Valid description two", marks: 3, contextNote: "A second, different step. Such as: small wedges to firm it; special screws, rawl bolts, anchor fixings or brackets into the blockwork.", permittedMarks: [0,1,2,3] },
+    { id: "b-sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "A sketch of the frame fixed in the wall, as in the scheme’s model sketches.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-hinge", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the hinge sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 3, contextNote: "Such as: a butt hinge; its position and ends marked on the door edge; a marking gauge set to the width and the leaf thickness.", permittedMarks: [0,1,2,3] },
+    { id: "c-detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 3, contextNote: "A second, different step. Such as: the waste removed with a sharp bevel-edged chisel, or a router and jig, the trench sloped slightly on the outer edge.", permittedMarks: [0,1,2,3] },
+    { id: "c-sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "A sketch of the hinge being fitted, as in the scheme’s model sketches.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-ol-q4-a","label":"a","marks":15,"rowIds":["a-description-1","a-description-2","a-sketch","a-presentation"]},{"sourceCardId":"cons-2010-ol-q4-b","label":"b","marks":15,"rowIds":["b-description-1","b-description-2","b-sketch","b-presentation"]},{"sourceCardId":"cons-2010-ol-q4-c","label":"c","marks":20,"rowIds":["c-hinge","c-detail-1","c-detail-2","c-sketch","c-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Fitting a pine doorframe and hanging a door",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The hinge in (c) is an open choice; the scheme gives a butt hinge."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q4-original.png",
+          "srcHash": "4da01eea286d092eea92e19630dd1da0",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 4: the printed question with a sketch of the solid pine door and frame.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q4-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q4-scheme.png",
+          "srcHash": "3746674e866e2970a76d1a574e2f3022",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketches on squaring the doorframe, fixing it in the wall and fitting a butt hinge.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q5-a", topicId: "cons-1-5", conceptId: "stud-partition-door-section-a",
+    section: "B", questionRef: "2010 OL Q5(a)",
+    stem: "A non-load bearing timber stud partition separates two bedrooms on the first floor of a two storey dwelling house, as shown in the accompanying sketch. The first floor joists are 225 mm × 50 mm, the floor is a tongued and grooved floor and there is a plasterboard ceiling beneath. A flush panel door is fitted in the partition.",
+    questionText: "To a scale of 1:5, draw a vertical section through the floor and stud partition. Show all the construction details from the bottom of the plasterboard ceiling, through the floor joists, the door and saddle to a point 1.5 metres above finished floor level. Label the components and give their typical sizes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 44,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 9 of the above details (4 marks each)", marks: 36, contextNote: "Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: plasterboard ceiling; 225 × 50 mm joists; tongued and grooved floor; door saddle; 120 × 20 mm skirting each side; 70 × 20 mm architrave each side; the internal door; 110 × 44 mm door frame.", permittedMarks: [0,4,8,12,16,20,24,28,32,36] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the section, excellent, good or fair, up to 8.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Stud partition, floor and door section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Construction and draughting marks belong to part (a); the sound detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q5-original.png",
+          "srcHash": "97c748738932e9fbe83793108e320ea3",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 5: the printed question with a sketch of the stud partition with its flush door.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q5-scheme.png",
+          "srcHash": "07af3b8a3756ef8a03c1935b7b59bf9f",
+          "alt": "SEC model section through the stud partition, door and floor, with the specification list and sound methods.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q5-b", topicId: "cons-8-3", conceptId: "stud-partition-door-section-b",
+    section: "B", questionRef: "2010 OL Q5(b)",
+    stem: "A non-load bearing timber stud partition separates two bedrooms on the first floor of a two storey dwelling house, as shown in the accompanying sketch. The first floor joists are 225 mm × 50 mm, the floor is a tongued and grooved floor and there is a plasterboard ceiling beneath. A flush panel door is fitted in the partition.",
+    questionText: "Show on your drawing one method that will help reduce the transmittance of sound through the stud partition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "sound", kind: "criterion", verbatim: "Method that will help reduce the transmittance of sound through stud partition", marks: 6, contextNote: "Such as: mineral wool between the studs; acoustic sealing tape at the surrounding walls; acoustic plasterboard or double layers with staggered joints; a double stud partition with acoustic quilt.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Stud partition, floor and door section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Construction and draughting marks belong to part (a); the sound detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q5-original.png",
+          "srcHash": "97c748738932e9fbe83793108e320ea3",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 5: the printed question with a sketch of the stud partition with its flush door.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q5-scheme.png",
+          "srcHash": "07af3b8a3756ef8a03c1935b7b59bf9f",
+          "alt": "SEC model section through the stud partition, door and floor, with the specification list and sound methods.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q5-complete", topicId: "cons-1-5", conceptId: "stud-partition-door-section-complete",
+    section: "B", questionRef: "2010 OL Q5 — complete",
+    stem: "A non-load bearing timber stud partition separates two bedrooms on the first floor of a two storey dwelling house, as shown in the accompanying sketch. The first floor joists are 225 mm × 50 mm, the floor is a tongued and grooved floor and there is a plasterboard ceiling beneath. A flush panel door is fitted in the partition.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the floor and stud partition. Show all the construction details from the bottom of the plasterboard ceiling, through the floor joists, the door and saddle to a point 1.5 metres above finished floor level. Label the components and give their typical sizes. (b) Show on your drawing one method that will help reduce the transmittance of sound through the stud partition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 9 of the above details (4 marks each)", marks: 36, contextNote: "Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: plasterboard ceiling; 225 × 50 mm joists; tongued and grooved floor; door saddle; 120 × 20 mm skirting each side; 70 × 20 mm architrave each side; the internal door; 110 × 44 mm door frame.", permittedMarks: [0,4,8,12,16,20,24,28,32,36] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the section, excellent, good or fair, up to 8.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-sound", kind: "criterion", verbatim: "Method that will help reduce the transmittance of sound through stud partition", marks: 6, contextNote: "Such as: mineral wool between the studs; acoustic sealing tape at the surrounding walls; acoustic plasterboard or double layers with staggered joints; a double stud partition with acoustic quilt.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-ol-q5-a","label":"a","marks":44,"rowIds":["a-details","a-presentation"]},{"sourceCardId":"cons-2010-ol-q5-b","label":"b","marks":6,"rowIds":["b-sound"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Stud partition, floor and door section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Construction and draughting marks belong to part (a); the sound detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q5-original.png",
+          "srcHash": "97c748738932e9fbe83793108e320ea3",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 5: the printed question with a sketch of the stud partition with its flush door.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q5-scheme.png",
+          "srcHash": "07af3b8a3756ef8a03c1935b7b59bf9f",
+          "alt": "SEC model section through the stud partition, door and floor, with the specification list and sound methods.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q6-a", topicId: "cons-1-8", conceptId: "tool-ladder-safety-a",
+    section: "B", questionRef: "2010 OL Q6(a)",
+    questionText: "List two specific safety precautions to be observed in each of the following situations and give one reason for each safety precaution listed: using a ladder when painting an external wall; using a veneering knife to cut veneers; using a jig saw to cut a wooden panel.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 42,
+    rows: [
+    { id: "ladder", kind: "criterion", verbatim: "Safety precautions using a ladder when painting an external wall", marks: 14, contextNote: "Two precautions 5 each and reasons 4. Such as: a ladder in good condition on firm level ground at 1:4; no over-reaching, three points of contact; coned off from traffic and held by a helper — the angle and over-reaching are dangerous.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    { id: "veneer", kind: "criterion", verbatim: "Safety precautions when using a veneering knife to cut veneers", marks: 14, contextNote: "Two precautions 5 each and reasons 4. Such as: a sharp, good-quality knife on a solid surface; a straight edge held firmly to guide it; light passes; concentration — a sharp knife on a firm surface is safer.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    { id: "jigsaw", kind: "criterion", verbatim: "Safety precautions when using a jig saw to cut a wooden panel", marks: 14, contextNote: "Two precautions 5 each and reasons 4. Such as: the wood firmly clamped; the lead clear of the blade; cut slowly; eye and face protection and a mask — moving wood and a cut lead are dangerous.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Ladder, veneering knife, jig saw and outdoor tool safety",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "All three printed situations in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q6-original.png",
+          "srcHash": "67e2954737425ee327b875ec64227620",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 6: the printed question on ladder, veneering knife, jig saw and outdoor tool safety.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q6-precautions",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q6-precautions.png",
+          "srcHash": "793c657af02b461f1f3bb8ad85da0b62",
+          "alt": "SEC 2010 Ordinary marking scheme notes on ladder, veneering knife and jig saw safety (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q6-b", topicId: "cons-9-4", conceptId: "tool-ladder-safety-b",
+    section: "B", questionRef: "2010 OL Q6(b)",
+    questionText: "Using notes and neat freehand sketches, describe two specific safety precautions that should be observed when using electrical tools out-of-doors.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "precaution-1", kind: "criterion", verbatim: "Precaution one", marks: 2, contextNote: "Such as: dry conditions and double-insulated tools.", permittedMarks: [0,1,2] },
+    { id: "precaution-2", kind: "criterion", verbatim: "Precaution two", marks: 2, contextNote: "A second, different precaution. Such as: leads and connections in good condition; 110 volt equipment outdoors; eye and face protection.", permittedMarks: [0,1,2] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 4, contextNote: "Quality of the sketch, excellent, good or fair, up to 4.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Ladder, veneering knife, jig saw and outdoor tool safety",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "All three printed situations in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q6-original.png",
+          "srcHash": "67e2954737425ee327b875ec64227620",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 6: the printed question on ladder, veneering knife, jig saw and outdoor tool safety.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q6-outdoors",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q6-outdoors.png",
+          "srcHash": "8f731ddf14b1132c1d9ed55302c407d8",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketches on using electrical tools out of doors.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q6-complete", topicId: "cons-1-8", conceptId: "tool-ladder-safety-complete",
+    section: "B", questionRef: "2010 OL Q6 — complete",
+    questionText: "(a) List two specific safety precautions to be observed in each of the following situations and give one reason for each safety precaution listed: using a ladder when painting an external wall; using a veneering knife to cut veneers; using a jig saw to cut a wooden panel. (b) Using notes and neat freehand sketches, describe two specific safety precautions that should be observed when using electrical tools out-of-doors.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-ladder", kind: "criterion", verbatim: "Safety precautions using a ladder when painting an external wall", marks: 14, contextNote: "Two precautions 5 each and reasons 4. Such as: a ladder in good condition on firm level ground at 1:4; no over-reaching, three points of contact; coned off from traffic and held by a helper — the angle and over-reaching are dangerous.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    { id: "a-veneer", kind: "criterion", verbatim: "Safety precautions when using a veneering knife to cut veneers", marks: 14, contextNote: "Two precautions 5 each and reasons 4. Such as: a sharp, good-quality knife on a solid surface; a straight edge held firmly to guide it; light passes; concentration — a sharp knife on a firm surface is safer.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    { id: "a-jigsaw", kind: "criterion", verbatim: "Safety precautions when using a jig saw to cut a wooden panel", marks: 14, contextNote: "Two precautions 5 each and reasons 4. Such as: the wood firmly clamped; the lead clear of the blade; cut slowly; eye and face protection and a mask — moving wood and a cut lead are dangerous.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    { id: "b-precaution-1", kind: "criterion", verbatim: "Precaution one", marks: 2, contextNote: "Such as: dry conditions and double-insulated tools.", permittedMarks: [0,1,2] },
+    { id: "b-precaution-2", kind: "criterion", verbatim: "Precaution two", marks: 2, contextNote: "A second, different precaution. Such as: leads and connections in good condition; 110 volt equipment outdoors; eye and face protection.", permittedMarks: [0,1,2] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 4, contextNote: "Quality of the sketch, excellent, good or fair, up to 4.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-ol-q6-a","label":"a","marks":42,"rowIds":["a-ladder","a-veneer","a-jigsaw"]},{"sourceCardId":"cons-2010-ol-q6-b","label":"b","marks":8,"rowIds":["b-precaution-1","b-precaution-2","b-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Ladder, veneering knife, jig saw and outdoor tool safety",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "All three printed situations in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q6-original.png",
+          "srcHash": "67e2954737425ee327b875ec64227620",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 6: the printed question on ladder, veneering knife, jig saw and outdoor tool safety.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q6-precautions",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q6-precautions.png",
+          "srcHash": "793c657af02b461f1f3bb8ad85da0b62",
+          "alt": "SEC 2010 Ordinary marking scheme notes on ladder, veneering knife and jig saw safety (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q7-a", topicId: "cons-5-4", conceptId: "lean-to-rainwater-a",
+    section: "B", questionRef: "2010 OL Q7(a)",
+    stem: "An extension to the side of a dwelling house has a lean-to roof, as shown in the accompanying sketch. Also shown is an underground rainwater storage tank.",
+    questionText: "Using notes and neat freehand sketches, show how the rainwater is collected from the lean-to roof and discharged to a gulley trap at ground level. Label the components and give their typical sizes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 21,
+    rows: [
+    { id: "gutter", kind: "criterion", verbatim: "Eave gutter - typical 125 mm", marks: 4, contextNote: "The eaves gutter, typically 125 mm.", permittedMarks: [0,1,2,3,4] },
+    { id: "downpipe", kind: "criterion", verbatim: "Downpipe - typical 65 mm", marks: 4, contextNote: "The downpipe, typically 65 mm.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "description-1", kind: "criterion", verbatim: "Valid description one", marks: 4, contextNote: "Such as: rainwater collected into the gutter from the sloping roof, with stopends at its ends.", permittedMarks: [0,1,2,3,4] },
+    { id: "description-2", kind: "criterion", verbatim: "Valid description two", marks: 4, contextNote: "A second, different description. Such as: the water runs through outlets into the downpipe and down to the gully or back inlet gully.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Collecting and storing rainwater from a lean-to roof",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The pipework and filter are shown as in the scheme’s model sketch."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q7-original.png",
+          "srcHash": "fdb9fea3f9561e2522545210204e8570",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 7: the printed question with a sketch of the lean-to extension and the underground rainwater tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q7-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q7-scheme.png",
+          "srcHash": "433f58eef8bcde6526c0159e6ac0dfd3",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketch of the gutter, downpipe, gully, filter and underground storage tank.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q7-b", topicId: "cons-5-4", conceptId: "lean-to-rainwater-b",
+    section: "B", questionRef: "2010 OL Q7(b)",
+    stem: "An extension to the side of a dwelling house has a lean-to roof, as shown in the accompanying sketch. Also shown is an underground rainwater storage tank.",
+    questionText: "The rainwater is conveyed to the underground water storage tank for re-use. Using notes and neat freehand sketches, show the pipework necessary to convey the rainwater from the gulley trap to the storage tank and show the location of a rainwater filter in this system.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 21,
+    rows: [
+    { id: "tank", kind: "criterion", verbatim: "Storage tank and Underground piping", marks: 4, contextNote: "The underground piping and the storage tank, with an overflow and a submersible pump.", permittedMarks: [0,1,2,3,4] },
+    { id: "filter", kind: "criterion", verbatim: "Filter", marks: 4, contextNote: "The filter between the gully trap and the tank, accessible from the top for cleaning.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "description-1", kind: "criterion", verbatim: "Valid description one", marks: 4, contextNote: "Such as: rainwater flows from the gully through underground piping; the filter traps sediment.", permittedMarks: [0,1,2,3,4] },
+    { id: "description-2", kind: "criterion", verbatim: "Valid description two", marks: 4, contextNote: "A second, different description. Such as: filtered water flows into the tank, reused as grey water only, pumped back to the house.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Collecting and storing rainwater from a lean-to roof",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The pipework and filter are shown as in the scheme’s model sketch."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q7-original.png",
+          "srcHash": "fdb9fea3f9561e2522545210204e8570",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 7: the printed question with a sketch of the lean-to extension and the underground rainwater tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q7-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q7-scheme.png",
+          "srcHash": "433f58eef8bcde6526c0159e6ac0dfd3",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketch of the gutter, downpipe, gully, filter and underground storage tank.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q7-c", topicId: "cons-1-2", conceptId: "lean-to-rainwater-c",
+    section: "B", questionRef: "2010 OL Q7(c)",
+    stem: "An extension to the side of a dwelling house has a lean-to roof, as shown in the accompanying sketch. Also shown is an underground rainwater storage tank.",
+    questionText: "Discuss two advantages of storing rainwater and give two suitable uses for the stored rainwater.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "use-1", kind: "criterion", verbatim: "Valid advantage and use one", marks: 4, contextNote: "An advantage and a use. Such as: less domestic water used — watering gardens and plants with no chlorine.", permittedMarks: [0,1,2,3,4] },
+    { id: "use-2", kind: "criterion", verbatim: "Valid advantage and use two", marks: 4, contextNote: "A second advantage and use. Such as: less surface water to the drains and less flooding, kinder to appliances — washing machines, toilets and outdoor cleaning.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Collecting and storing rainwater from a lean-to roof",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The pipework and filter are shown as in the scheme’s model sketch."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q7-original.png",
+          "srcHash": "fdb9fea3f9561e2522545210204e8570",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 7: the printed question with a sketch of the lean-to extension and the underground rainwater tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q7-uses",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q7-uses.png",
+          "srcHash": "d61f52fd7fc2aeef12e0a29065008244",
+          "alt": "SEC 2010 Ordinary marking scheme notes on the advantages and uses of stored rainwater.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q7-complete", topicId: "cons-5-4", conceptId: "lean-to-rainwater-complete",
+    section: "B", questionRef: "2010 OL Q7 — complete",
+    stem: "An extension to the side of a dwelling house has a lean-to roof, as shown in the accompanying sketch. Also shown is an underground rainwater storage tank.",
+    questionText: "(a) Using notes and neat freehand sketches, show how the rainwater is collected from the lean-to roof and discharged to a gulley trap at ground level. Label the components and give their typical sizes. (b) The rainwater is conveyed to the underground water storage tank for re-use. Using notes and neat freehand sketches, show the pipework necessary to convey the rainwater from the gulley trap to the storage tank and show the location of a rainwater filter in this system. (c) Discuss two advantages of storing rainwater and give two suitable uses for the stored rainwater.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-gutter", kind: "criterion", verbatim: "Eave gutter - typical 125 mm", marks: 4, contextNote: "The eaves gutter, typically 125 mm.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-downpipe", kind: "criterion", verbatim: "Downpipe - typical 65 mm", marks: 4, contextNote: "The downpipe, typically 65 mm.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "a-description-1", kind: "criterion", verbatim: "Valid description one", marks: 4, contextNote: "Such as: rainwater collected into the gutter from the sloping roof, with stopends at its ends.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-description-2", kind: "criterion", verbatim: "Valid description two", marks: 4, contextNote: "A second, different description. Such as: the water runs through outlets into the downpipe and down to the gully or back inlet gully.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-tank", kind: "criterion", verbatim: "Storage tank and Underground piping", marks: 4, contextNote: "The underground piping and the storage tank, with an overflow and a submersible pump.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-filter", kind: "criterion", verbatim: "Filter", marks: 4, contextNote: "The filter between the gully trap and the tank, accessible from the top for cleaning.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-description-1", kind: "criterion", verbatim: "Valid description one", marks: 4, contextNote: "Such as: rainwater flows from the gully through underground piping; the filter traps sediment.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-description-2", kind: "criterion", verbatim: "Valid description two", marks: 4, contextNote: "A second, different description. Such as: filtered water flows into the tank, reused as grey water only, pumped back to the house.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-use-1", kind: "criterion", verbatim: "Valid advantage and use one", marks: 4, contextNote: "An advantage and a use. Such as: less domestic water used — watering gardens and plants with no chlorine.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-use-2", kind: "criterion", verbatim: "Valid advantage and use two", marks: 4, contextNote: "A second advantage and use. Such as: less surface water to the drains and less flooding, kinder to appliances — washing machines, toilets and outdoor cleaning.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-ol-q7-a","label":"a","marks":21,"rowIds":["a-gutter","a-downpipe","a-presentation","a-description-1","a-description-2"]},{"sourceCardId":"cons-2010-ol-q7-b","label":"b","marks":21,"rowIds":["b-tank","b-filter","b-presentation","b-description-1","b-description-2"]},{"sourceCardId":"cons-2010-ol-q7-c","label":"c","marks":8,"rowIds":["c-use-1","c-use-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Collecting and storing rainwater from a lean-to roof",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The pipework and filter are shown as in the scheme’s model sketch."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q7-original.png",
+          "srcHash": "fdb9fea3f9561e2522545210204e8570",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 7: the printed question with a sketch of the lean-to extension and the underground rainwater tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q7-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q7-scheme.png",
+          "srcHash": "433f58eef8bcde6526c0159e6ac0dfd3",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketch of the gutter, downpipe, gully, filter and underground storage tank.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q8-terms", topicId: "cons-3-4", conceptId: "construction-terms-terms",
+    section: "B", questionRef: "2010 OL Q8",
+    questionText: "Explain, with the aid of notes and neat freehand sketches, any five of the following: concrete lintel; mortice and tenon; energy rating; door saddle; quarter sawing; ridge board; triple glazing; window cill; vapour barrier.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "terms", kind: "anyN", verbatim: "Primary communication of relevant information", marks: 50, contextNote: "Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). Concrete lintel: a reinforced, often pre-stressed, concrete beam spanning the opening over a window or door, carrying the blockwork above to the wall on either side; its length suits the opening. Mortice and tenon joint: used in furniture, doors and windows: a mortice formed in one piece and a tenon, ideally a third of the thickness, on the other to fit it. Energy rating: the BER of a dwelling, an A to G rating of its energy performance and CO₂ emissions, compulsory when a house is sold or rented since 1 January 2009. Door saddle: a hardwood or softwood piece, typically 110 × 15 mm, fixed at the bottom of the door frame, giving clearance under the door and covering the joint between floor coverings. Quarter sawing: radial conversion of a log cut parallel to the rays, giving stable boards that wear evenly and silver grain in oak; expensive and labour intensive. Ridge board: the horizontal softwood member at the apex between the tops of the rafters, giving the roof rigidity and straightness; opposite rafters are nailed to it. Triple glazing: three layers of glass giving better insulation, sound performance and U-value, less condensation and a comfortable temperature, ideal on exposed sites. Window cill: usually a reinforced concrete unit under the window, sloping away to shed rainwater, with a drip beneath; also PVC, stone, steel or wood. Vapour barrier: a continuous membrane on the warm side of insulation slowing water vapour into it (the 5:1 rule); used in timber frame walls, flat roofs and attic conversions.", group: {"claimMax":5,"perOption":10,"options":["Concrete lintel","Mortice and tenon joint","Energy rating","Door saddle","Quarter sawing","Ridge board","Triple glazing","Window cill","Vapour barrier"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Construction terms",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Explain any five of the nine printed terms. Each term is marked separately at 10 marks; the scheme illustrations are examples of suitable sketches."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q8-original.png",
+          "srcHash": "2c178ad6b1e0a7cb7255d1e7d34e6eb8",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q8-terms",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q8-terms.png",
+          "srcHash": "417bd2b9264a734a7b001961001a094c",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketches for all nine terms — concrete lintel, door saddle, triple glazing, mortice and tenon joint, quarter sawing, window cill, energy rating, ridge board and vapour barrier (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q9-a", topicId: "cons-1-2", conceptId: "window-repair-a",
+    section: "B", questionRef: "2010 OL Q9(a)",
+    stem: "A terrace of traditional houses is shown in the accompanying sketch. The houses have slated roofs and wooden windows and doors. The windows are in need of repair.",
+    questionText: "Discuss two reasons why it is advisable to repair the existing wooden windows in these houses rather than replace them with new windows.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "reason-1", kind: "criterion", verbatim: "Valid reason one", marks: 4, contextNote: "Such as: conserving the existing wooden frames for environmental reasons; keeping the original features, style, character and workmanship.", permittedMarks: [0,1,2,3,4] },
+    { id: "reason-2", kind: "criterion", verbatim: "Valid reason two", marks: 4, contextNote: "A second, different reason. Such as: modern windows may not suit the building; repair is cheaper, sustainable and less disruptive.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Repairing traditional wooden windows",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one of the windows\" and \"one of the houses\" name the window being repaired, not a choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q9-original.png",
+          "srcHash": "977e719fbb12163bc94ed9801b64615d",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 9: the printed question with a sketch of the terrace of traditional houses.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q9-reasons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q9-reasons.png",
+          "srcHash": "84cd0d2bdfee643ed1fd5b4b625d5129",
+          "alt": "SEC 2010 Ordinary marking scheme notes on repairing rather than replacing wooden windows.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q9-b", topicId: "cons-3-6", conceptId: "window-repair-b",
+    section: "B", questionRef: "2010 OL Q9(b)",
+    stem: "A terrace of traditional houses is shown in the accompanying sketch. The houses have slated roofs and wooden windows and doors. The windows are in need of repair.",
+    questionText: "Describe, using notes and neat freehand sketches, the steps to be followed when replacing a broken pane of glass in one of the windows.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 21,
+    rows: [
+    { id: "cleaning", kind: "criterion", verbatim: "Broken glass / Cleaning out rebate", marks: 4, contextNote: "The broken glass and pins removed and the rebate scraped, cleaned and sanded.", permittedMarks: [0,1,2,3,4] },
+    { id: "pins", kind: "criterion", verbatim: "Tool removing / replacing glazing pins / fasteners", marks: 4, contextNote: "Removing and replacing the glazing pins or fasteners with a suitable tool.", permittedMarks: [0,1,2,3,4] },
+    { id: "glazing", kind: "criterion", verbatim: "Inserting new glass / Applying new glazing compound", marks: 4, contextNote: "The rebate primed and bedded with glazing compound, the glass inserted and pinned, then compound bevelled round the edge and trimmed.", permittedMarks: [0,1,2,3,4] },
+    { id: "details", kind: "criterion", verbatim: "Valid details", marks: 4, contextNote: "Valid details on the sketch, as in the scheme’s model sketch.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Repairing traditional wooden windows",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one of the windows\" and \"one of the houses\" name the window being repaired, not a choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q9-original.png",
+          "srcHash": "977e719fbb12163bc94ed9801b64615d",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 9: the printed question with a sketch of the terrace of traditional houses.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q9-glass",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q9-glass.png",
+          "srcHash": "c021802af575e8c56151c306dc6cf885",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketch on replacing a broken pane of glass.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q9-c", topicId: "cons-10-7", conceptId: "window-repair-c",
+    section: "B", questionRef: "2010 OL Q9(c)",
+    stem: "A terrace of traditional houses is shown in the accompanying sketch. The houses have slated roofs and wooden windows and doors. The windows are in need of repair.",
+    questionText: "Describe, using notes and neat freehand sketches, the steps to be followed when removing the existing paint, preparing the surface and repainting a window frame in one of the houses.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 21,
+    rows: [
+    { id: "removal", kind: "criterion", verbatim: "Removal of existing paint by sandpaper, scraper, chemical or heat gun", marks: 4, contextNote: "The floor protected; the old paint removed with sandpaper, a scraper, chemical stripper or a heat gun.", permittedMarks: [0,1,2,3,4] },
+    { id: "preparation", kind: "criterion", verbatim: "Preparation of surfaces by sanding, taping of hinges, catches, glass perimeter", marks: 4, contextNote: "Surfaces clean and dry; hinges, catches and the glass edge masked with tape.", permittedMarks: [0,1,2,3,4] },
+    { id: "painting", kind: "criterion", verbatim: "Application of primer / undercoat / final coat", marks: 4, contextNote: "Primer and undercoat, then the final coats brushed in the direction of the grain.", permittedMarks: [0,1,2,3,4] },
+    { id: "details", kind: "criterion", verbatim: "Valid details", marks: 4, contextNote: "Valid details on the sketch, as in the scheme’s model sketch.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Repairing traditional wooden windows",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one of the windows\" and \"one of the houses\" name the window being repaired, not a choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q9-original.png",
+          "srcHash": "977e719fbb12163bc94ed9801b64615d",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 9: the printed question with a sketch of the terrace of traditional houses.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q9-paint",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q9-paint.png",
+          "srcHash": "8bcbd9fe61ffef2e703d352ce9496610",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketch on stripping, preparing and repainting a window frame.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2010-ol-q9-complete", topicId: "cons-1-2", conceptId: "window-repair-complete",
+    section: "B", questionRef: "2010 OL Q9 — complete",
+    stem: "A terrace of traditional houses is shown in the accompanying sketch. The houses have slated roofs and wooden windows and doors. The windows are in need of repair.",
+    questionText: "(a) Discuss two reasons why it is advisable to repair the existing wooden windows in these houses rather than replace them with new windows. (b) Describe, using notes and neat freehand sketches, the steps to be followed when replacing a broken pane of glass in one of the windows. (c) Describe, using notes and neat freehand sketches, the steps to be followed when removing the existing paint, preparing the surface and repainting a window frame in one of the houses.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-reason-1", kind: "criterion", verbatim: "Valid reason one", marks: 4, contextNote: "Such as: conserving the existing wooden frames for environmental reasons; keeping the original features, style, character and workmanship.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-reason-2", kind: "criterion", verbatim: "Valid reason two", marks: 4, contextNote: "A second, different reason. Such as: modern windows may not suit the building; repair is cheaper, sustainable and less disruptive.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-cleaning", kind: "criterion", verbatim: "Broken glass / Cleaning out rebate", marks: 4, contextNote: "The broken glass and pins removed and the rebate scraped, cleaned and sanded.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-pins", kind: "criterion", verbatim: "Tool removing / replacing glazing pins / fasteners", marks: 4, contextNote: "Removing and replacing the glazing pins or fasteners with a suitable tool.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-glazing", kind: "criterion", verbatim: "Inserting new glass / Applying new glazing compound", marks: 4, contextNote: "The rebate primed and bedded with glazing compound, the glass inserted and pinned, then compound bevelled round the edge and trimmed.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-details", kind: "criterion", verbatim: "Valid details", marks: 4, contextNote: "Valid details on the sketch, as in the scheme’s model sketch.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-removal", kind: "criterion", verbatim: "Removal of existing paint by sandpaper, scraper, chemical or heat gun", marks: 4, contextNote: "The floor protected; the old paint removed with sandpaper, a scraper, chemical stripper or a heat gun.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-preparation", kind: "criterion", verbatim: "Preparation of surfaces by sanding, taping of hinges, catches, glass perimeter", marks: 4, contextNote: "Surfaces clean and dry; hinges, catches and the glass edge masked with tape.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-painting", kind: "criterion", verbatim: "Application of primer / undercoat / final coat", marks: 4, contextNote: "Primer and undercoat, then the final coats brushed in the direction of the grain.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-details", kind: "criterion", verbatim: "Valid details", marks: 4, contextNote: "Valid details on the sketch, as in the scheme’s model sketch.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 5, contextNote: "Quality of the sketch, excellent, good or fair, up to 5.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-ol-q9-a","label":"a","marks":8,"rowIds":["a-reason-1","a-reason-2"]},{"sourceCardId":"cons-2010-ol-q9-b","label":"b","marks":21,"rowIds":["b-cleaning","b-pins","b-glazing","b-details","b-presentation"]},{"sourceCardId":"cons-2010-ol-q9-c","label":"c","marks":21,"rowIds":["c-removal","c-preparation","c-painting","c-details","c-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Repairing traditional wooden windows",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one of the windows\" and \"one of the houses\" name the window being repaired, not a choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q9-original.png",
+          "srcHash": "977e719fbb12163bc94ed9801b64615d",
+          "alt": "Original SEC 2010 Ordinary Construction Studies Question 9: the printed question with a sketch of the terrace of traditional houses.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-OL-q9-glass",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-OL-q9-glass.png",
+          "srcHash": "c021802af575e8c56151c306dc6cf885",
+          "alt": "SEC 2010 Ordinary marking scheme notes and sketch on replacing a broken pane of glass.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];
