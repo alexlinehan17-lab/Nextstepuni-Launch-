@@ -30,6 +30,8 @@ import { type TopicSibling } from './topics';
 import { lensFor } from '../../data/markingLens';
 import { physicalEducationTask } from './physicalEducationTasks';
 const PhysicalEducationTaskCard = lazy(() => import('./PhysicalEducationTaskCard'));
+import { frenchAudioForPaper } from './frenchAudio';
+import FrenchPaperAudio from './FrenchPaperAudio';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -128,6 +130,7 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
   const rootRef = useRef<HTMLDivElement | null>(null);
 
   const resolved = useMemo(() => resolveSibling(sibling), [sibling]);
+  const audioSource = useMemo(() => frenchAudioForPaper(sibling), [sibling]);
   // Marking Lens — the scheme-grounded marks breakdown, where one is authored.
   // Independent of the crop state: it teaches even when no crop can render.
   const lens = useMemo(() => lensFor(sibling), [sibling]);
@@ -230,6 +233,7 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
       </div>
 
       {/* Body */}
+      {visible && audioSource && <FrenchPaperAudio source={audioSource} />}
       {state.s === 'ready' ? (
         // Stays light in dark mode too — the card itself is forced white
         // (design system), so a zinc-950 strip here read as a black band.

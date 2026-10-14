@@ -174,6 +174,7 @@ export default defineConfig(() => {
           // tools and cached by app-chunks; keep growing corpora out of install.
           '**/factory-*.js', '**/reviewed-*.js',
           '**/exam-topic-data-*.js', '**/paper-topic-data-*.js',
+          '**/markbank-french-*.js',
           '**/catchUpLaneData*.js', '**/commandWordData*.js',
           '**/vendor-three*.js',
           // PDF export libraries — only pulled in when a student or GC actually
@@ -305,6 +306,11 @@ export default defineConfig(() => {
             // first keeps it in vendor-react; three/jspdf then stay in their
             // own chunks, reachable only via the lazy Journey / PDF routes.
             manualChunks(id) {
+              // Both French levels share these reviewed corpora. Give each
+              // category its own chunk so the complete deck stays within cache
+              // limits, and runtime-cache it with the other lazy subject decks.
+              const frenchCards = id.match(/\/components\/MarkBank\/cards\/french\/(writing|reading|cloze|listening)\.(?:json|ts)$/);
+              if (frenchCards) return `markbank-french-${frenchCards[1]}`;
               // Paper Trail's generated corpus index and audited exam-topic
               // registries are static data, used only by the lazy Paper Trail
               // route. Keep both outside its interactive viewer chunk, and in
@@ -312,6 +318,11 @@ export default defineConfig(() => {
               // subject must not push either the renderer over the 2 MiB raw-JS
               // ceiling or the static-data chunks over the 1.2 MB warning
               // threshold. They are still fetched only when Paper Trail opens.
+              // French's reviewed task identities (every writing route, cloze gap,
+              // reading and listening task, 2010-2026) are the largest exam-topic
+              // registry; on their own they keep exam-topic-data under the 3 MiB
+              // precache ceiling instead of silently dropping it from the cache.
+              if (id.includes('/data/examTopics/french-')) return 'exam-topic-french';
               if (id.includes('/data/examTopics/')) return 'exam-topic-data';
               if (id.includes('/data/paperTrail/')) return 'paper-topic-data';
               // Vite's __vitePreload helper and Rollup's CJS interop helpers are

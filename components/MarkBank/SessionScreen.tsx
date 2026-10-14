@@ -77,6 +77,9 @@ import AppliedMathematicsRubricPanel, {
 } from './AppliedMathematicsRubricPanel';
 import AudioSourcePlayer from './AudioSourcePlayer';
 import AccountingAssessment, { accountingMark, accountingScoreId } from './AccountingAssessment';
+import FrenchRubricPanel from './FrenchRubricPanel';
+import FrenchQuestionChoices from './FrenchQuestionChoices';
+import { frenchMarks, type FrenchScoreId } from './frenchRubric';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
 import { stemWithListBreaks } from './stemText';
@@ -299,7 +302,7 @@ export type PclmScores = Partial<Record<PclmScoreId, number>>;
 export type IrishScoreId = `irish:${string}`;
 export type ArtScoreId = `art:${string}`;
 export type GeographyScoreId = `geography:${string}`;
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | typeof accountingScoreId;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | typeof accountingScoreId | FrenchScoreId;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -421,6 +424,7 @@ export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system === 'physical-education') return physicalEducationMarks(card, scores);
   if (card.rubric.system === 'applied-mathematics') return appliedMathematicsMarks(card, scores);
   if (card.rubric.system === 'accounting') return accountingMark(card.totalMarks, scores[accountingScoreId]);
+  if (card.rubric.system === 'french') return frenchMarks(card, scores);
   if (card.rubric.system === 'irish') return irishMarks(card, scores);
   if (card.rubric.system === 'art') return artMarks(card, scores);
   if (card.rubric.system === 'geography') return geographyMarks(card, scores);
@@ -1649,6 +1653,11 @@ const RubricPanel: React.FC<{
     }} score={props.scores[accountingScoreId] ?? 0}
       onScore={marks => props.onScore(accountingScoreId, marks)} />;
   }
+  if (props.card.rubric.system === 'french') {
+    return <FrenchRubricPanel {...props} card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'french' }>;
+    }} />;
+  }
   if (props.card.rubric.system === 'irish') {
     return <IrishRubricPanel {...props} card={props.card as SecRubricCard & {
       rubric: Extract<SecRubricCard['rubric'], { system: 'irish' }>;
@@ -2331,7 +2340,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       : assessmentCard.rubric.system === 'art' ? 'Art descriptor'
       : assessmentCard.rubric.system === 'physical-education' ? 'Physical Education criteria'
       : assessmentCard.rubric.system === 'applied-mathematics' ? 'SEC allocation'
-      : assessmentCard.rubric.system === 'accounting' ? 'Accounting allocation' : 'Geography allocation'
+      : assessmentCard.rubric.system === 'accounting' ? 'Accounting allocation'
+      : assessmentCard.rubric.system === 'french' ? 'French marking grid' : 'Geography allocation'
     : 'rubric';
   const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;
 
@@ -2793,12 +2803,21 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
 
-            {!questionFigure && (audioMaterial ? (
+            {!questionFigure && (audioMaterial && assessmentCard.subjectId === 'french' ? (
+              <>
+                <AudioSourcePlayer source={audioMaterial} />
+                <QuestionText text={assessmentCard.questionChoices ? assessmentCard.questionText.split('\n')[0] : assessmentCard.questionText} />
+                {assessmentCard.questionChoices && <FrenchQuestionChoices key={assessmentCard.id} options={assessmentCard.questionChoices} />}
+              </>
+            ) : audioMaterial ? (
               <>
                 <AudioSourcePlayer source={audioMaterial} />
                 <ListeningQuestionSet cards={listeningCards} />
               </>
-            ) : <QuestionText text={assessmentCard.questionText} />)}
+            ) : assessmentCard.subjectId === 'french' && assessmentCard.questionChoices ? <>
+              <QuestionText text={assessmentCard.questionText.split('\n')[0]} />
+              <FrenchQuestionChoices key={assessmentCard.id} options={assessmentCard.questionChoices} />
+            </> : <QuestionText text={assessmentCard.questionText} />)}
 
             {assessmentCard.practiceFocus && <p style={{ marginTop: 12, color: INK, fontWeight: 700 }}>
               Practise: {assessmentCard.practiceFocus}

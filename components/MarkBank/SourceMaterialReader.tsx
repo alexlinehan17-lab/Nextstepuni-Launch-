@@ -296,7 +296,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
               aria-label={`Source page ${index + 1} of ${source.pages.length}`}
             >
               <div className="mb-source-reader-page-meta">
-                <span>{isScheme || source.kind === 'source-paper' || source.kind === 'source-table' ? 'PDF page' : 'Printed page'} {page}</span>
+                <span>PDF page {page}</span>
                 <span>{index + 1} / {source.pages.length}</span>
               </div>
               <div className="mb-source-reader-page-pan">

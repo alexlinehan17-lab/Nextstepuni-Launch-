@@ -52,6 +52,10 @@ import { CARDS as TECHNOLOGY_HIGHER } from '../components/MarkBank/cards/technol
 import { CARDS as TECHNOLOGY_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
 import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
 import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
+import { FRENCH_WRITING_CARDS } from '../components/MarkBank/cards/french/writing';
+import { FRENCH_LISTENING_CARDS } from '../components/MarkBank/cards/french/listening';
+import { FRENCH_CLOZE_CARDS } from '../components/MarkBank/cards/french/cloze';
+import { FRENCH_READING_CARDS } from '../components/MarkBank/cards/french/reading';
 import { CARDS as GERMAN_HIGHER } from '../components/MarkBank/cards/german/higher';
 import { CARDS as GERMAN_ORDINARY } from '../components/MarkBank/cards/german/ordinary';
 import { CARDS as SPANISH_HIGHER } from '../components/MarkBank/cards/spanish/higher';
@@ -798,8 +802,17 @@ const idHash = (ids: readonly string[]) => createHash('sha256')
  * the additions can never rewrite or hide a frozen identity. */
 const peFrozen = new Set(PE_FROZEN_MANIFEST.map(card => card.id));
 const peAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('pe-'));
+// Keep the original French count/hash frozen. Reviewed additions have their own
+// source-and-route audit in frenchWriting.test.ts; never rebaseline missing IDs.
+const frenchAdditionIds = new Set([
+  ...FRENCH_WRITING_CARDS,
+  // Reviewed corrections retain legacy IDs and remain in the frozen hash.
+  ...FRENCH_READING_CARDS.filter(card => card.id.includes('-reading-')),
+  ...FRENCH_CLOZE_CARDS, ...FRENCH_LISTENING_CARDS,
+].map(card => card.id));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
   if (!name.startsWith('physical-education:')) return ids;
   const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
   return [...ids.filter(id => peFrozen.has(id)), ...peAliasIds.filter(id => id.includes(level))];
@@ -843,7 +856,9 @@ describe('Mark Bank card preservation', () => {
     // printed tasks (2026-10-12): 23,075 - 101; Accounting folds 2022 HL
     // Q6(c)'s six pair cards into one: - 5; Politics 2021 OL Q1(f) becomes one
     // card per syllabus topic: + 1.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(22_970);
+    // French keeps its original card set frozen (checked per deck above); its
+    // reviewed additions are counted on top of the bank.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(22_970 + frenchAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

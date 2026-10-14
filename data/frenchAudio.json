@@ -1,0 +1,478 @@
+[
+  {
+    "year": 2026,
+    "paperFileids": [
+      "LC010ALPA00BV.pdf",
+      "LC010GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2026 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC010CLP017EV.mp3",
+      "secFileid": "LC010CLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC010CLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections A–E. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2026",
+      "sha256": "a5b3f3f8290d50f7a3c5055feb7393a0aea0b33671162c935943f2c2efe1be3a",
+      "bytes": 78597715,
+      "durationSeconds": 2456.178594,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2436.704967
+    }
+  },
+  {
+    "year": 2025,
+    "paperFileids": [
+      "LC010ALPA00BV.pdf",
+      "LC010GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2025 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC010CLP017EV.mp3",
+      "secFileid": "LC010CLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC010CLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections A–E. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2025",
+      "sha256": "ba7bb5e6678741dfd39573947727a5fb5a1434a7cbbd626199130a00d70abf8f",
+      "bytes": 75338710,
+      "durationSeconds": 2354.334688,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2334.880354
+    }
+  },
+  {
+    "year": 2024,
+    "paperFileids": [
+      "LC010ALPA00BV.pdf",
+      "LC010GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2024 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC010CLP017EV.mp3",
+      "secFileid": "LC010CLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC010CLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections A–E. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2024",
+      "sha256": "badb9cb95dab3638ba0714f1f3077539173b0ab619b4b5d6ebbd32a6a779bd85",
+      "bytes": 77210780,
+      "durationSeconds": 2412.836875,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2393.384119
+    }
+  },
+  {
+    "year": 2023,
+    "paperFileids": [
+      "LC010ALPA00BV.pdf",
+      "LC010GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2023 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC010CLP017EV.mp3",
+      "secFileid": "LC010CLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC010CLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections A–E. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2023",
+      "sha256": "d8e86734141a6187c0d5b970b38aa9aa524565aed1220d8d7e76df12d31dc458",
+      "bytes": 76646320,
+      "durationSeconds": 2395.1975,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2375.73767
+    }
+  },
+  {
+    "year": 2022,
+    "paperFileids": [
+      "LC010ALPA00BV.pdf",
+      "LC010GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2022 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC010CLP017BV.mp3",
+      "secFileid": "LC010CLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC010CLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections A–E. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2022",
+      "sha256": "6054828b9d4f246b9f548d4a5a05bae6f04e5f56a580a5664770faebfb042eb2",
+      "bytes": 76083530,
+      "durationSeconds": 2377.610313,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2358.140465
+    }
+  },
+  {
+    "year": 2021,
+    "paperFileids": [
+      "LC010ALPA00BV.pdf",
+      "LC010GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2021 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC010ZLP017EV.mp3",
+      "secFileid": "LC010ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC010ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections A–E. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2021",
+      "sha256": "26d3febedd0b12947e846cc91b96e6be3737dccbefcf968929e9401426a85efe",
+      "bytes": 71966980,
+      "durationSeconds": 2248.968125,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2229.498399
+    }
+  },
+  {
+    "year": 2020,
+    "paperFileids": [
+      "LC010ALPA00BV.pdf",
+      "LC010GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2020 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC010ZLP017EV.mp3",
+      "secFileid": "LC010ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC010ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections A–E. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2020",
+      "sha256": "46204cb41f5fc8f735898c145503f869b8b351c204503e3463ca23c771ff695e",
+      "bytes": 72042130,
+      "durationSeconds": 2251.316563,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2231.843203
+    }
+  },
+  {
+    "year": 2019,
+    "paperFileids": [
+      "LC010ALPA00BV.pdf",
+      "LC010GLPA00BV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2019 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC010ZLP017EV.mp3",
+      "secFileid": "LC010ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC010ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–V. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2019",
+      "sha256": "81ba72f182beb8b5327df79501bff0a41295df058ea9bc902d05be952dc080fe",
+      "bytes": 72130027,
+      "durationSeconds": 2254.001625,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2234.53164
+    }
+  },
+  {
+    "year": 2018,
+    "paperFileids": [
+      "LC010ALPA00EV.pdf",
+      "LC010GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2018 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC010ZLP017EV.mp3",
+      "secFileid": "LC010ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC010ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–V. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2018",
+      "sha256": "a50905e94e274360f5621b5e5930283afdb53462da18475439a4367757cac1bf",
+      "bytes": 71155346,
+      "durationSeconds": 2223.542844,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2204.07238
+    }
+  },
+  {
+    "year": 2017,
+    "paperFileids": [
+      "LC010ALPA00EV.pdf",
+      "LC010GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2017 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC010ZLP017EV.mp3",
+      "secFileid": "LC010ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC010ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–V. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2017",
+      "sha256": "49529e5a875dc1404eb20ee121a59bb101679851f0cd4e268aae2f787759a7bf",
+      "bytes": 8055422,
+      "durationSeconds": 2208.902313,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2189.429535
+    }
+  },
+  {
+    "year": 2016,
+    "paperFileids": [
+      "LC010ALPA00EV.pdf",
+      "LC010GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2016 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC010ZLP017EV.mp3",
+      "secFileid": "LC010ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC010ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–V. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2016",
+      "sha256": "ba7499b08b0ee05f76cd3f9b49c59779587e347ff55574afd06b3dee66b65cf5",
+      "bytes": 13025412,
+      "durationSeconds": 2221.101458,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2201.653169
+    }
+  },
+  {
+    "year": 2015,
+    "paperFileids": [
+      "LC010ALPA00EV.pdf",
+      "LC010GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2015 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2015/LC010ZLP017EV.mp3",
+      "secFileid": "LC010ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC010ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–V. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2015",
+      "sha256": "82f1bd824d49edc6f214f7c41964622434662ae7f10cf313f22dfa92bd9591ca",
+      "bytes": 72685913,
+      "durationSeconds": 2271.373063,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2251.917544
+    }
+  },
+  {
+    "year": 2014,
+    "paperFileids": [
+      "LC010ALPA00EV.pdf",
+      "LC010GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2014 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC010ZLP017EV.mp3",
+      "secFileid": "LC010ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC010ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–V. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2014",
+      "sha256": "950451c3892f04c619cd2a87870b50fb0b2830f56db1784d5690bdb57ecc1957",
+      "bytes": 55544152,
+      "durationSeconds": 2314.266083,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2294.790846
+    }
+  },
+  {
+    "year": 2013,
+    "paperFileids": [
+      "LC010ALPA00EV.pdf",
+      "LC010GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2013 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC010ZLP017EV.mp3",
+      "secFileid": "LC010ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC010ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–V. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2013",
+      "sha256": "77ffc7acf15b6e900702ceca54b82efbf4d4cd77cb126179a96fdcb70669658e",
+      "bytes": 54186830,
+      "durationSeconds": 2257.711,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2238.249712
+    }
+  },
+  {
+    "year": 2012,
+    "paperFileids": [
+      "LC010ALPA00EV.pdf",
+      "LC010GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2012 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC010ZLPO17EV.mp3",
+      "secFileid": "LC010ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC010ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–V. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2012",
+      "sha256": "5553d5c6e3d50edd3ac2a91c6f950a6d9f8f32b07e2f00ab9040f711702a8a34",
+      "bytes": 36306327,
+      "durationSeconds": 2269.048125,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2249.582443
+    }
+  },
+  {
+    "year": 2011,
+    "paperFileids": [
+      "LC010ALPA00EV.pdf",
+      "LC010GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2011 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC010ZLP017EV.mp3",
+      "secFileid": "LC010ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC010ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–V. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2011",
+      "sha256": "08bbccd91d191f55e7a5cb8373e7f37b5c3f762b85fbb14ae113b6b79db99306",
+      "bytes": 36421266,
+      "durationSeconds": 2276.231813,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2256.772203
+    }
+  },
+  {
+    "year": 2010,
+    "paperFileids": [
+      "LC010ALPA00EV.pdf",
+      "LC010GLPA00EV.pdf"
+    ],
+    "source": {
+      "kind": "source-audio",
+      "label": "French listening",
+      "title": "2010 French · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2010/LC010ZLP017EV.mp3",
+      "secFileid": "LC010ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2010/LC010ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–V. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-10-07",
+      "discoveredAt": "https://examai.ie/past-papers/leaving-cert/french/2010",
+      "sha256": "c763e4e8d20495561418b1c26c35ff7c4f61e4e14c26f30aad6d5facd32072c2",
+      "bytes": 37733658,
+      "durationSeconds": 2358.256313,
+      "contentType": "audio/mpeg",
+      "acceptRanges": "bytes",
+      "browserPlayback": true,
+      "browserSeekSeconds": 2338.788265
+    }
+  }
+]
