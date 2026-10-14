@@ -1859,7 +1859,7 @@ POOLS_2020_ORDINARY = {
     'Q13(b)': (1, ['Winter barley', 'Spring barley']),
 }
 # The Ordinary question whose lettered parts are a printed any-two choice.
-OL_PART_CHOICE = {2018: 'Q13', 2019: 'Q13', 2020: 'Q13'}
+OL_PART_CHOICE = {2017: 'Q13', 2018: 'Q13', 2019: 'Q13', 2020: 'Q13'}
 # 2019 Higher (legacy syllabus), transcribed from the SEC paper and scheme.
 HIGHER_2019 = '''
 Q1(a)|10|2|5|Target yields in tonnes per hectare of
@@ -2170,9 +2170,87 @@ Q9(d)|12|6|16|Grit in free-range poultry digestive tracts:
 Q9(e)|12|6|16|Deep ploughing podzolic soils:
 '''
 POOLS_2017_HIGHER = {'Q3 Option Two (b)': (1, ['Barley', 'Wheat', 'Oats', 'Maize']), 'Q4(a)': (1, ['Feeding trial', 'Test-tube method']), 'Q4(b)': (1, ['Leaf to stem ratio', 'pH test', 'To get DM content', 'For good quality silage (poor quality)']), 'Q5(a)(ii)': (1, ['Gerber butterfat test', 'Adulteration of milk with water (lactometer)', 'Adulteration of milk with water (cryoscope)', '% water or % solids', 'To find the % ash (or % minerals) in milk', 'To find the % lactose in milk', 'To find the % protein'])}
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY, (2018,'higher'):POOLS_2018_HIGHER, (2018,'ordinary'):POOLS_2018_ORDINARY, (2017,'higher'):POOLS_2017_HIGHER}
+# 2017 Ordinary (legacy syllabus), transcribed from the SEC paper and scheme.
+ORDINARY_2017 = '''
+Q1|20|3|5|Why dry soil:
+Q2|20|4|5|Power harrow
+Q3|20|5|6|Diaphragm separates chest from abdomen:
+Q4|20|5|6|Foot and mouth disease
+Q5|20|6|6|What aspect of germination being tested:
+Q6|20|7|7|Cabbage white life cycle stages:
+Q7|20|8|7|Shelter belts:
+Q8(a)(i)|9|9|8|Functions of cow skeleton:
+Q8(a)(ii)|6|9|8|Mineral and vitamin for bone development:
+Q8(b)(i)|6|9|8|Teeth: A = Incisor
+Q8(b)(ii)|6|9|8|Functions of teeth:
+Q8(c)(i)|6|9|8|Cow stomach chambers:
+Q8(c)(ii)|6|9|8|Function of chambers:
+Q8(d)(i)|12|9|8|Cow heart:
+Q8(d)(ii)|6|9|8|Function of septum:
+Q8(d)(iii)|3|9|8|Heart location:
+Q9(a)(i)|4|10|9|Haploid:
+Q9(a)(ii)|4|10|9|Homozygous: Both alleles are the same
+Q9(a)(iii)|4|10|9|Locus: Position of a gene on a chromosome
+Q9(b)(i)|4|10|9|What about the genes for straw length:
+Q9(b)(ii)|12|10|9|Cross 1
+Q9(b)(iii)|24|10|9|Cross 2
+Q9(c)(i)|4|10|9|Advantage of AI:
+Q9(c)(ii)|4|10|9|Disadvantage of AI:
+Q10(a)(i)|3|11|10|Grass in picture A:
+Q10(a)(ii)|6|11|10|Why use this grass when reseeding:
+Q10(a)(iii)|3|11|10|Plant in picture B: Clover
+Q10(a)(iv)|6|11|10|Why use clover in seed mixture:
+Q10(b)(i)|3|11|10|Why weeds should be controlled in grassland:
+Q10(b)(ii)|6|11|10|How weeds controlled in grassland other than with herbicides:
+Q10(c)|18|11|10|Strip grazing:
+Q10(d)|15|11|10|Experiment - percentage sugar in grass:
+Q11(a)(i)|12|11|11|How iron pan formed:
+Q11(a)(ii)|8|11|11|Effect of iron pan:
+Q11(a)(iii)|4|11|11|Which soil most likely to have iron pan: Podzol
+Q11(a)(iv)|4|11|11|How iron pan removed: Deep ploughing or subsoiler
+Q11(b)|16|11|11|How to take soil samples for testing:
+Q11(c)|16|11|11|How to measure soil pH:
+Q12(a)(i)|4|12|12|A = Stoma
+Q12(a)(ii)|8|12|12|Functions of stoma (A):
+Q12(a)(iii)|4|12|12|Function of cells B: Photosynthesis
+Q12(a)(iv)|8|12|12|How leaf structure suited to photosynthesis:
+Q12(b)(i)|4|12|12|Type of plant with this stem cross section:
+Q12(b)(ii)|4|12|12|X = Vascular bundles
+Q12(b)(iii)|8|12|12|Functions of vascular bundles (X):
+Q12(b)(iv)|4|12|12|Plant with modified stem:
+Q12(c)|16|12|12|To show phototropism in seedlings:
+Q13(a)(i)|3|13|13|A = Water
+Q13(a)(ii)|3|13|13|Colostrum:
+Q13(a)(iii)|6|13|13|Differences between colostrum and milk:
+Q13(a)(iv)|6|13|13|How farmer could improve herd milk quality:
+Q13(a)(v)|3|13|13|Why milk from mastitis-treated cows
+Q13(a)(vi)|3|13|13|Why cull dairy cows:
+Q13(a)(vii)|3|13|13|Dual purpose breed: Produces both milk
+Q13(a)(viii)|3|13|13|An example of a dual purpose breed:
+Q13(b)(i)|6|13|13|Soil type:
+Q13(b)(ii)|3|13|13|Sowing time:
+Q13(b)(iii)|3|13|13|Sowing method:
+Q13(b)(iv)|6|13|13|Weed control:
+Q13(b)(v)|6|13|14|Disease control:
+Q13(b)(vi)|6|13|14|Harvesting:
+Q13(c)(i)|6|13|14|Pollution: Any harmful addition to the environment.
+Q13(c)(ii) — silage|6|13|14|When making silage:
+Q13(c)(ii) — dairy farm|6|13|14|On a dairy farm:
+Q13(c)(ii) — fertiliser|6|13|14|When spreading artificial fertiliser:
+Q13(c)(ii) — insecticides|6|13|14|When using insecticides or fungicides:
+Q13(d)(i)|9|13|14|Housing:
+Q13(d)(ii)|6|13|14|Diet:
+Q13(d)(iii)|6|13|14|Parasite and disease control:
+Q13(d)(iv)|3|13|14|Turnout target weight: 270-320 kg
+Q13(d)(v)|6|13|14|Compensatory growth:
+'''
+POOLS_2017_ORDINARY = {'Q11(c)': (1, ['Universal indicator', 'pH meter'])}
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY, (2018,'higher'):POOLS_2018_HIGHER, (2018,'ordinary'):POOLS_2018_ORDINARY, (2017,'higher'):POOLS_2017_HIGHER, (2017,'ordinary'):POOLS_2017_ORDINARY}
 
 SOURCES = [
+    (2017, 'ordinary', 'G', ORDINARY_2017,
+     'ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310',
+     '14128fb6c59bd93ed27f29e4ca4f92bddc94ac805206c25eeeaf45c4e58bc443'),
     (2017, 'higher', 'A', HIGHER_2017,
      'f8f371d593303ab2cf6b5ebb216be59009e8b2e90f54e1ddafd85e033efe3fe6',
      'b58e95e957390478fb1eb0654b95b8b1cea59c5cbbefd8871ea5b43266c0ad40'),
@@ -2286,7 +2364,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54,(2018,'higher'):57,(2018,'ordinary'):60,(2017,'higher'):58}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54,(2018,'higher'):57,(2018,'ordinary'):60,(2017,'higher'):58,(2017,'ordinary'):71}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -2431,7 +2509,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54; 2018 Higher 57; 2018 Ordinary 60; 2017 Higher 58. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54; 2018 Higher 57; 2018 Ordinary 60; 2017 Higher 58; 2017 Ordinary 71. Remaining editions stay open.')
 
 
 if __name__=='__main__':

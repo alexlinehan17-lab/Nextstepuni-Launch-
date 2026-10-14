@@ -1,18 +1,18 @@
 {
  "agricultural-science": {
-  "cards": 1849,
-  "contentHash": "9a6a8a5412461b4f",
-  "coveragePct": 71.7,
-  "covered": 2038,
+  "cards": 1920,
+  "contentHash": "44d168e9435174bb",
+  "coveragePct": 75.0,
+  "covered": 2131,
   "excluded": 0,
   "leaves": 2842,
-  "open": 804,
+  "open": 711,
   "orphans": 0,
   "papers": {
    "count": 34,
    "hash": "cc3b10d8b4ed8ab5"
   },
-  "refsHash": "cfb1aa56ef6952c2"
+  "refsHash": "51eaccc59e564ce9"
  },
  "art": {
   "cards": 462,

@@ -2052,44 +2052,49 @@
         "sha256": "14128fb6c59bd93ed27f29e4ca4f92bddc94ac805206c25eeeaf45c4e58bc443",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 71,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "858a546507187ca7",
           "page": 3,
           "cue": "Answer six",
           "context": "_____________ Instructions Write your examination number in the space provided on page 1. Answer six questions. Each question carries 20 marks. Write your answers in the spaces provided. Keep your answers short. _______________________________________________________________________________________ Question 1. (a) The diagram sh",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section One: six of seven independent 20-mark questions; every question is retained."
         },
         {
           "id": "448299f42da93ad2",
           "page": 9,
           "cue": "any three",
           "context": "____________ Instructions Write your answers to Section Two into your answer book. Answer any three questions. Each question carries 60 marks. _______________________________________________________________________________________ Question 8. (a) (i) State three functions of the cow’s skeleton. (ii) Name one mineral and one vit",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section Two: three of six independent 60-mark questions; every question is retained."
         },
         {
           "id": "469dd9015b51529e",
           "page": 9,
           "cue": "any two",
           "context": " tooth labelled A and B. (ii) State the function of A and the function of B. (c) (i) Name any two chambers of the cow’s stomach. (ii) State the function of each of the chambers referred to in (i). (d) The diagram shows a section through a cow’s heart. (i) Name each of the parts labelled A, B, C, D. (ii) State the function of ",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q8(c)(i): any two of the four stomach chambers; a marking menu, and (ii) takes a function for each chamber named."
         },
         {
           "id": "6a8ecfdfce9bfd71",
           "page": 13,
           "cue": "any two",
           "context": "Page 13 of 16 Question 13. Answer any two parts of (a), (b), (c), (d). (30 marks, 30 marks) (a) The pie‐chart shows the approximate composition of cows’ milk. Composition of milk (i) What component of milk is represented by the part labelled A? (ii) What is colostrum? (i",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: two of four independently priced 30-mark parts; all four are retained."
         },
         {
           "id": "cd6ca16dbdbebef6",
           "page": 13,
           "cue": "any two",
           "context": "mponent of milk is represented by the part labelled A? (ii) What is colostrum? (iii) Give any two differences between colostrum and ordinary milk. (iv) Give two ways a farmer could improve the quality of the milk from his herd. (v) Why is the milk from a cow treated for mastitis not allowed into the human food supply? (vi) Gi",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q13(a)(iii): any two differences between colostrum and milk from the scheme pool; a marking menu."
         }
       ]
     },
@@ -2108,7 +2113,7 @@
         "sha256": "f9da51589c9b87fef4ba8532b601dd2c421d3030223bc36643947bab3c0d7d7e",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 71,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

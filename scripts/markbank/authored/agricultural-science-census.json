@@ -5,6 +5,1232 @@
   "papers": [
     {
       "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "sourceHashes": {
+        "exampapers": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+        "markingschemes": "14128fb6c59bd93ed27f29e4ca4f92bddc94ac805206c25eeeaf45c4e58bc443"
+      },
+      "status": "boundary-reviewed",
+      "baseTasks": [
+        {
+          "ref": "2017 OL Q1",
+          "marksPerResponse": 20,
+          "paperPage": 3,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Why dry soil:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q1"
+          ]
+        },
+        {
+          "ref": "2017 OL Q2",
+          "marksPerResponse": 20,
+          "paperPage": 4,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Power harrow"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q2"
+          ]
+        },
+        {
+          "ref": "2017 OL Q3",
+          "marksPerResponse": 20,
+          "paperPage": 5,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Diaphragm separates chest from abdomen:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q3"
+          ]
+        },
+        {
+          "ref": "2017 OL Q4",
+          "marksPerResponse": 20,
+          "paperPage": 5,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Foot and mouth disease"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q4"
+          ]
+        },
+        {
+          "ref": "2017 OL Q5",
+          "marksPerResponse": 20,
+          "paperPage": 6,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "What aspect of germination being tested:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q5"
+          ]
+        },
+        {
+          "ref": "2017 OL Q6",
+          "marksPerResponse": 20,
+          "paperPage": 7,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Cabbage white life cycle stages:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q6"
+          ]
+        },
+        {
+          "ref": "2017 OL Q7",
+          "marksPerResponse": 20,
+          "paperPage": 8,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Shelter belts:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q7"
+          ]
+        },
+        {
+          "ref": "2017 OL Q8(a)(i)",
+          "marksPerResponse": 9,
+          "paperPage": 9,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Functions of cow skeleton:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q8(a)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q8(a)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 9,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Mineral and vitamin for bone development:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q8(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q8(b)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 9,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Teeth: A = Incisor"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q8(b)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q8(b)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 9,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Functions of teeth:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q8(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q8(c)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 9,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Cow stomach chambers:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q8(c)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q8(c)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 9,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Function of chambers:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q8(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q8(d)(i)",
+          "marksPerResponse": 12,
+          "paperPage": 9,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Cow heart:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q8(d)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q8(d)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 9,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Function of septum:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q8(d)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q8(d)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 9,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Heart location:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q8(d)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q9(a)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Haploid:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q9(a)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q9(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Homozygous: Both alleles are the same"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q9(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q9(a)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Locus: Position of a gene on a chromosome"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q9(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q9(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "What about the genes for straw length:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q9(b)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q9(b)(ii)",
+          "marksPerResponse": 12,
+          "paperPage": 10,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Cross 1"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q9(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q9(b)(iii)",
+          "marksPerResponse": 24,
+          "paperPage": 10,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Cross 2"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q9(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q9(c)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Advantage of AI:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q9(c)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q9(c)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Disadvantage of AI:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q9(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q10(a)(i)",
+          "marksPerResponse": 3,
+          "paperPage": 11,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Grass in picture A:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q10(a)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q10(a)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Why use this grass when reseeding:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q10(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q10(a)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 11,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Plant in picture B: Clover"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q10(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q10(a)(iv)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Why use clover in seed mixture:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q10(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q10(b)(i)",
+          "marksPerResponse": 3,
+          "paperPage": 11,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Why weeds should be controlled in grassland:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q10(b)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q10(b)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "How weeds controlled in grassland other than with herbicides:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q10(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q10(c)",
+          "marksPerResponse": 18,
+          "paperPage": 11,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Strip grazing:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q10(c)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q10(d)",
+          "marksPerResponse": 15,
+          "paperPage": 11,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Experiment - percentage sugar in grass:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q10(d)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q11(a)(i)",
+          "marksPerResponse": 12,
+          "paperPage": 11,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "How iron pan formed:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q11(a)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q11(a)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 11,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Effect of iron pan:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q11(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q11(a)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 11,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Which soil most likely to have iron pan: Podzol"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q11(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q11(a)(iv)",
+          "marksPerResponse": 4,
+          "paperPage": 11,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "How iron pan removed: Deep ploughing or subsoiler"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q11(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q11(b)",
+          "marksPerResponse": 16,
+          "paperPage": 11,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "How to take soil samples for testing:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q11(b)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q11(c)",
+          "marksPerResponse": 16,
+          "paperPage": 11,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "How to measure soil pH:"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Universal indicator",
+              "pH meter"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2017 OL Q11(c)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q12(a)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 12,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "A = Stoma"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q12(a)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q12(a)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 12,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Functions of stoma (A):"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q12(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q12(a)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 12,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Function of cells B: Photosynthesis"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q12(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q12(a)(iv)",
+          "marksPerResponse": 8,
+          "paperPage": 12,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "How leaf structure suited to photosynthesis:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q12(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q12(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 12,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Type of plant with this stem cross section:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q12(b)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q12(b)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 12,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "X = Vascular bundles"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q12(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q12(b)(iii)",
+          "marksPerResponse": 8,
+          "paperPage": 12,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Functions of vascular bundles (X):"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q12(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q12(b)(iv)",
+          "marksPerResponse": 4,
+          "paperPage": 12,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Plant with modified stem:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q12(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q12(c)",
+          "marksPerResponse": 16,
+          "paperPage": 12,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "To show phototropism in seedlings:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q12(c)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(a)(i)",
+          "marksPerResponse": 3,
+          "paperPage": 13,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "A = Water"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(a)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(a)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 13,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Colostrum:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(a)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Differences between colostrum and milk:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(a)(iv)",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "How farmer could improve herd milk quality:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(a)(v)",
+          "marksPerResponse": 3,
+          "paperPage": 13,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Why milk from mastitis-treated cows"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(a)(v)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(a)(vi)",
+          "marksPerResponse": 3,
+          "paperPage": 13,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Why cull dairy cows:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(a)(vi)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(a)(vii)",
+          "marksPerResponse": 3,
+          "paperPage": 13,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Dual purpose breed: Produces both milk"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(a)(vii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(a)(viii)",
+          "marksPerResponse": 3,
+          "paperPage": 13,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "An example of a dual purpose breed:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(a)(viii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(b)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Soil type:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(b)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(b)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 13,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Sowing time:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(b)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 13,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Sowing method:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(b)(iv)",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Weed control:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(b)(v)",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Disease control:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(b)(v)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(b)(vi)",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Harvesting:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(b)(vi)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(c)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Pollution: Any harmful addition to the environment."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(c)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(c)(ii) — silage",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "When making silage:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(c)(ii) — silage"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(c)(ii) — dairy farm",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "On a dairy farm:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(c)(ii) — dairy farm"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(c)(ii) — fertiliser",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "When spreading artificial fertiliser:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(c)(ii) — fertiliser"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(c)(ii) — insecticides",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "When using insecticides or fungicides:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(c)(ii) — insecticides"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(d)(i)",
+          "marksPerResponse": 9,
+          "paperPage": 13,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Housing:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(d)(i)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(d)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Diet:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(d)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(d)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Parasite and disease control:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(d)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(d)(iv)",
+          "marksPerResponse": 3,
+          "paperPage": 13,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Turnout target weight: 270-320 kg"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(d)(iv)"
+          ]
+        },
+        {
+          "ref": "2017 OL Q13(d)(v)",
+          "marksPerResponse": 6,
+          "paperPage": 13,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Compensatory growth:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 OL Q13(d)(v)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2017,
       "level": "higher",
       "lang": "ev",
       "paperFileid": "LC024ALP000EV.pdf",
@@ -34128,7 +35354,7 @@
       "level": "ordinary",
       "lang": "ev",
       "paperFileid": "LC024GLP000EV.pdf",
-      "independentCensus": "open"
+      "independentCensus": "boundary-reviewed"
     },
     {
       "year": 2017,
@@ -34391,6 +35617,204 @@
     }
   ],
   "questionMarkChecks": [
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q1",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q2",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q3",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q4",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q5",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q6",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q7",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q8",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q9",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q10",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q11",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q12",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q13",
+      "units": {
+        "(a)": 30,
+        "(b)": 30,
+        "(c)": 30,
+        "(d)": 30
+      },
+      "choose": 2,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
     {
       "year": 2017,
       "level": "higher",

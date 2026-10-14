@@ -39,7 +39,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(43);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(42);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
   });
 
@@ -391,7 +391,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(28);
+    expect(review.paperReviews).toHaveLength(29);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -1140,6 +1140,32 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([check.question === 'Q1' ? 60 : 48]);
   });
 
+  it('authors every 2017 Ordinary task from the paper and scheme', () => {
+    const year = ordinary.filter(card => card.year === 2017);
+    expect(year).toHaveLength(71);
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2017 OL'));
+    expect(tasks).toHaveLength(71);
+    expect(tasks.every(task => (task as { originalCard?: string }).originalCard === 'added')).toBe(true);
+    for (const card of year) {
+      expect(tariffReconciles(card), card.id).toBe(true);
+      const specification = resolveCurriculumSpecification(card.subjectId, card.year)!;
+      expect(card.specificationId).toBe(specification.id);
+      for (const id of card.curriculumNodeIds!) expect(findCanonicalTopic(specification, id), `${card.id} ${id}`).toBeDefined();
+    }
+    // Section One: a scale across several parts is one orderedSplit card; one pool keeps its steps.
+    for (const [key, notation] of [['q1', '2(7) + 6(1)'], ['q5', '2(5) + 5(2)'], ['q6', '5(3) + 5(1)']] as const)
+      expect(get(`agsci-2017-ol-${key}`).tariffModel, key).toEqual({ kind: 'orderedSplit', notation });
+    for (const key of ['q4', 'q7']) expect(get(`agsci-2017-ol-${key}`).rows[0].group?.perOptionSteps, key).toEqual([7, 7, 2, 2, 2]);
+    expect(get('agsci-2017-ol-q11c').answerVariants?.map(variant => variant.id)).toEqual(['indicator', 'meter']);
+    // The four pollution situations carry their own 2(3) each.
+    expect(review.tasks.filter(task => task.questionRef.startsWith('2017 OL Q13(c)(ii)'))).toHaveLength(4);
+    for (const [key, letters] of [['q2', 'ABCDEF'], ['q6', 'WXYZ'], ['q8di', 'ABCD']] as const)
+      expect((get(`agsci-2017-ol-${key}`) as { labelKey?: Array<{ letter: string }> }).labelKey?.map(label => label.letter).join(''), key).toBe(letters);
+    const units = census.questionMarkChecks.filter(check => check.year === 2017 && check.level === 'ordinary');
+    expect(units).toHaveLength(13);
+    for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([Number(check.question.slice(1)) <= 7 ? 20 : 60]);
+  });
+
   it('refuses Agricultural Science route siblings that differ only in which printed items were chosen', () => {
     // A printed any-N-of-M choice is ONE practice card (coordinator rule,
     // 2026-10-12). Siblings sharing a question address are allowed only for
@@ -1225,7 +1251,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(1849);
+    expect(atlas.markBankCards).toHaveLength(1920);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

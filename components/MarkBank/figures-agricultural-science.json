@@ -1052,5 +1052,175 @@
       0.575
     ],
     "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-burning-soil": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-burning-soil.png",
+    "md5": "403ecf6ba6f0ae8d2a33f82a2948942a",
+    "alt": "Original Question 1(a) diagram: a crucible holding a dry soil sample on a tripod over a Bunsen burner.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 3,
+    "cropRect": [
+      0.32,
+      0.315,
+      0.7,
+      0.52
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-farm-machinery": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-farm-machinery.png",
+    "md5": "f9f4cf16f94efdddfe6afe95846eee67",
+    "alt": "Original Question 2 photographs lettered A to F: A a cattle crush, B a bale wrapper wrapping a round bale, C a crop sprayer, D a slurry tank, E a power harrow, F a combine harvester.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 4,
+    "cropRect": [
+      0.06,
+      0.165,
+      0.94,
+      0.545
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-germination-flasks": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-germination-flasks.png",
+    "md5": "cd756f68be01247c091dc095a0f19cae",
+    "alt": "Original Question 5 diagram: two vacuum flasks, A holding germinating peas and B boiled peas, each with a thermometer through a cotton wool plug.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 6,
+    "cropRect": [
+      0.26,
+      0.095,
+      0.7,
+      0.405
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-butterfly-life-cycle": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-butterfly-life-cycle.png",
+    "md5": "852d21da1851a21da51f9d8d9188f1a9",
+    "alt": "Original Question 6 life cycle of the cabbage white butterfly: W an adult butterfly, X an egg, Y a caterpillar and Z a pupa hanging from a stem, joined by arrows in a circle.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 7 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 7,
+    "cropRect": [
+      0.2,
+      0.1,
+      0.75,
+      0.46
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-cow-skull": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-cow-skull.png",
+    "md5": "7a3b7fc13e6fa86cbb24c66179de16ba",
+    "alt": "Original Question 8(b) photograph of a cow’s skull: A points to the front teeth of the lower jaw and B to the cheek teeth.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 9,
+    "cropRect": [
+      0.32,
+      0.36,
+      0.68,
+      0.522
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-cow-heart": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-cow-heart.png",
+    "md5": "39b7102cca43890884da541e8f2e3bf0",
+    "alt": "Original Question 8(d) section through a cow’s heart: A points to an upper chamber, B to the large vessel leaving the top, C to the central dividing wall and D to a lower chamber.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 9,
+    "cropRect": [
+      0.58,
+      0.7,
+      0.89,
+      0.915
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-reseeding-plants": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-reseeding-plants.png",
+    "md5": "c82fe9b62446ea081c493292646ad3c4",
+    "alt": "Original Question 10(a) pictures: A a photograph of a grass in seed, B a drawing of a clover plant with round flower heads and three-part leaves.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 11,
+    "cropRect": [
+      0.09,
+      0.115,
+      0.92,
+      0.345
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-leaf-section": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-leaf-section.png",
+    "md5": "6e40fd991d04049319a302133acce6ae",
+    "alt": "Original Question 12(a) section of a leaf: B points to the tall column-shaped cells under the upper surface and A to an opening in the lower surface.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 12 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 12,
+    "cropRect": [
+      0.26,
+      0.1,
+      0.83,
+      0.33
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-stem-section": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-stem-section.png",
+    "md5": "c1925ad49e225ab52eb0882c300b44b9",
+    "alt": "Original Question 12(b) cross section of a plant stem: a ring of oval structures near the edge, two of them ringed and labelled X.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 12 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 12,
+    "cropRect": [
+      0.39,
+      0.53,
+      0.67,
+      0.68
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-milk-pie-chart": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-milk-pie-chart.png",
+    "md5": "2437970a3b3c8607ce6551be8cd597fe",
+    "alt": "Original Question 13(a) pie chart, Composition of milk: minerals 0.8%, protein 3.2%, butterfat 3.8%, lactose 4.6% and A 87.5%.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 13 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 13,
+    "cropRect": [
+      0.28,
+      0.13,
+      0.8,
+      0.365
+    ],
+    "reviewedAt": "2026-10-14"
   }
 }
