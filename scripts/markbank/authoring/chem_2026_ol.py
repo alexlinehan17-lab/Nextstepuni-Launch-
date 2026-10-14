@@ -20,10 +20,13 @@ correct example", "Fraction // Fraction") the point is not a row -- the bank's
 content-free rule (contentFree.mjs) refuses it -- and the card's notes quote
 the criterion instead.
 
-Seven parts are left open (OPEN below): two drawings of compound Z that need
-the paper's reaction series AND the scheme's drawing, which no one card can
-carry; four Q11(d)A parts whose only scheme text is a criterion ("formula",
-"location", "explanation"); and the part the SEC voided for a misprint.
+Q8(a)(iii) and (iv) are drawings of compound Z, which only the paper's
+reaction series names: their question picture is the paper's own print (its
+opening line and the series, then the one ask) and the scheme's drawing is
+the answer. Five parts are excluded (EXCLUDED below, written to
+exclusions/chemistry.json with the scheme's printed evidence): the part the
+SEC voided for a misprint, and four Q11(d)A parts whose only scheme text is a
+criterion ("formula", "location", "explanation").
 """
 import json
 import os
@@ -158,6 +161,13 @@ C.ordered([k('7', 'c', r) for r in ('i', 'ii', 'iii', 'iv')], 'chem-3-4', 'acids
 Q8 = FIG + 'paper-q8'
 C.fixed([k('8', 'a', 'i')], 'chem-4-2', 'naming-compound-y', figure=Q8)
 C.fixed([k('8', 'a', 'ii')], 'chem-4-2', 'naming-compound-z', figure=Q8)
+# (iii) and (iv) are answered with a drawing of Z, and Z is named only in the
+# paper's reaction series. The question picture is the paper's own print --
+# its opening line and the series, then the one ask -- and the scheme's
+# drawing is the answer, held back until the reveal.
+for roman, concept in [('iii', 'structure-of-ethanal'), ('iv', 'carbonyl-group-of-ethanal')]:
+    C.drawn([k('8', 'a', roman)], 'chem-4-2', concept, FIG + f'scheme-q8a-{roman}')
+    C.cards[-1]['questionFigureKey'] = FIG + f'paper-q8a-{roman}'
 C.fixed([k('8', 'a', 'v')], 'chem-2-2', 'tetrahedral-carbons-in-ethanal', figure=Q8)
 for roman, concept in [('i', 'classifying-the-conversion-of-x-to-w'),
                        ('ii', 'classifying-the-conversion-of-y-to-x'),
@@ -219,21 +229,38 @@ C.priced_menu([ka('11', 'd', 'vi', 'B')], 'chem-4-2', 'stages-in-recycling-plast
               note='The scheme lists the five stages in one line and prices any two together '
                    '[6], without a value for each.')
 
-# ── open ─────────────────────────────────────────────────────────────────────
-OPEN = [([k('8', 'a', 'iii')], 'The scheme answers with a drawing of compound Z, and the student '
-         'needs the paper\'s reaction series to know what Z is: one card carries one figure.'),
-        ([k('8', 'a', 'iv')], 'As (iii): a circle drawn on the scheme\'s structure of Z, which '
-         'needs both the paper\'s reaction series and the scheme\'s drawing.'),
-        ([ka('11', 'd', 'i', 'A')], 'The scheme prints only the criterion "formula", for an '
-         'industry the student chooses: no answer to learn (the bank\'s content-free rule).'),
-        ([ka('11', 'd', 'ii', 'A')], 'The scheme prints only the criterion "location".'),
-        ([ka('11', 'd', 'iv', 'A')], 'The scheme prints only the criterion "explanation".'),
-        ([ka('11', 'd', 'v', 'A')], 'The scheme prints only the criterion "explanation".'),
-        ([k('3', 'c', 'iv')], 'The scheme: "Due to a typographical error in Question 3(c)(iv) '
-         'candidates who attempted Question 3 are to be awarded full marks [4] for part (iv)." '
-         'It prints no answer to mark against.')]
-for keys, reason in OPEN:
-    C.leave_open(keys, reason)
+# ── excluded ─────────────────────────────────────────────────────────────────
+# Parts the scheme prints nothing to mark against. Written to
+# scripts/markbank/authoring/exclusions/chemistry.json by --exclusions, the
+# evidence lifted from the scheme's own lines for the part (P.sseg_of), so it
+# cannot drift from what the SEC printed.
+EXCLUDED = [
+    (k('3', 'c', 'iv'), 'the SEC voided the part over a misprint (the paper asks about a '
+     'more concentrated HCl solution in a hydrogen peroxide experiment) and awarded full marks '
+     'to every candidate who attempted Question 3; the scheme prints no answer'),
+    (ka('11', 'd', 'i', 'A'), 'the scheme prints only the criterion "formula" for an industry '
+     'the candidate chooses: no answer to learn (the content-free rule)'),
+    (ka('11', 'd', 'ii', 'A'), 'the scheme prints only the criterion "location"'),
+    (ka('11', 'd', 'iv', 'A'), 'the scheme prints only the criterion "explanation"'),
+    (ka('11', 'd', 'v', 'A'), 'the scheme prints only the criterion "explanation"'),
+]
+
+
+def exclusions():
+    out = []
+    for key, reason in EXCLUDED:
+        sg = P.sseg_of(key)
+        said = ' '.join(x.strip() for x in [it.text + (f' {it.cell}' if it.cell else '')
+                                            for it in P.items(key)] if x.strip())
+        out.append({'ref': C.ref([key]), 'reason': reason,
+                    'evidence': f'{P.year} OL scheme p.{sg.answers[0].page if sg.answers else sg.text[0].page}: '
+                                f'"{C.label(key)} {display_text(sg)}" — {said}'})
+    return out
+
+
+def display_text(sg):
+    from chem_print import display, joined
+    return display(joined(sg.text))
 
 
 def review():
@@ -242,8 +269,8 @@ def review():
         out.append(f"{c['id']} | {c['questionRef']} | {c['totalMarks']} "
                    f"{c['tariffModel']['kind']} {c['tariffModel'].get('notation', '')} | {c['topicId']}")
     out.append('')
-    for ref, reason in C.open:
-        out.append(f'OPEN {ref}: {reason}')
+    for key, reason in EXCLUDED:
+        out.append(f'EXCLUDED {C.ref([key])}: {reason}')
     out.append('')
     for key, (got, want) in sorted(C.letter_totals().items(),
                                    key=lambda kv: (int(kv[0][0]), kv[0][1])):
@@ -257,7 +284,9 @@ if __name__ == '__main__':
     problems = make_audit(MAX_OPTIONS)(C.cards)
     for p in problems:
         print('AUDIT', p, file=sys.stderr)
-    if '--review' in sys.argv:
+    if '--exclusions' in sys.argv:
+        print(json.dumps(exclusions(), ensure_ascii=False, indent=1))
+    elif '--review' in sys.argv:
         print(review())
     else:
         print(json.dumps(C.finish(), ensure_ascii=False, indent=1))

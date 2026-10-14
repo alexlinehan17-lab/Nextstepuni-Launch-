@@ -33,6 +33,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 PAPERS = os.path.join(ROOT, 'examiner-reports', 'chemistry', 'papers')
 SCHEMES = os.path.join(ROOT, 'examiner-reports', 'chemistry', 'schemes')
 DPI = 150
+PANEL_GAP = 14
 
 # (name suffix, source, page, (x0, y0, x1, y1) in PDF points). A source of
 # 'paper-image' takes the raster the paper embeds at that rectangle as it is,
@@ -71,6 +72,13 @@ CROPS = {
         ('paper-q9c', 'paper', 10, (280, 490, 372, 532)),
         ('paper-q10b', 'paper-image', 11, (468, 320, 540, 421)),
         ('paper-q11c', 'paper', 12, (52, 412, 545, 700)),
+        # Q8(a)(iii)/(iv): the question's print -- its opening line and the
+        # reaction series that says what Z is -- above the one ask, as the
+        # card's question picture; the scheme's drawing is its answer.
+        ('paper-q8a-iii', 'paper-panels', 9, ((24, 55, 545, 143), (80, 190, 545, 208))),
+        ('paper-q8a-iv', 'paper-panels', 9, ((24, 55, 545, 143), (80, 211, 545, 229))),
+        ('scheme-q8a-iii', 'scheme', 13, (82, 226.5, 165, 299)),
+        ('scheme-q8a-iv', 'scheme', 13, (82, 314.5, 165, 391)),
         ('scheme-q1c-ii', 'scheme', 6, (108, 507, 275, 588)),
         ('scheme-q2c-ii', 'scheme', 7, (105, 531, 560, 614)),
         ('scheme-q4j', 'scheme', 9, (80, 446, 248, 489)),
@@ -100,6 +108,23 @@ def render(year, lvl, source, page, rect):
         else os.path.join(SCHEMES, f'{year}-{lvl}.pdf')
     doc = fitz.open(path)
     pg = doc[page - 1]
+    if source == 'paper-panels':
+        # Several regions of one page stacked into one picture, the way the
+        # page prints them top to bottom: the question's setup and diagram,
+        # then the one ask the card is for, without the sibling asks between.
+        import io
+        from PIL import Image
+        ims = [Image.open(io.BytesIO(pg.get_pixmap(dpi=DPI, clip=fitz.Rect(*r)).tobytes('png')))
+               for r in rect]
+        out = Image.new('RGB', (max(i.width for i in ims), sum(i.height for i in ims)
+                                + PANEL_GAP * (len(ims) - 1)), 'white')
+        y = 0
+        for im in ims:
+            out.paste(im.convert('RGB'), (0, y))
+            y += im.height + PANEL_GAP
+        buf = io.BytesIO()
+        out.save(buf, format='PNG')
+        return buf.getvalue()
     if source == 'paper-image':
         want = fitz.Rect(*rect)
         hits = [img[0] for img in pg.get_images(full=True)

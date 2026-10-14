@@ -252,5 +252,35 @@
   "description": "The marking scheme's own answer to 2026 OL Q9(a)(ii), as printed: Kc expression [SO3]2 over [SO2]2[O2], above the note [award 3 marks if round brackets used].",
   "questionRef": "2026 OL Q9(a)(ii)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2026-OL-paper-q8a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The question as printed: \"8. Study the series of reactions shown below and answer the questions that follow.\" above the reaction series (C2H5OH (Y) is converted to C2H4 (X) and to CH3CHO (Z); C2H4 (X) is converted to C2H5Cl (W)), then part (iii): \"Draw the molecular structure of compound Z, including all atoms and bonds.\"",
+  "questionRef": "2026 OL Q8(a)(iii)"
+ },
+ {
+  "file": "chemistry-2026-OL-paper-q8a-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The question as printed: \"8. Study the series of reactions shown below and answer the questions that follow.\" above the reaction series (C2H5OH (Y) is converted to C2H4 (X) and to CH3CHO (Z); C2H4 (X) is converted to C2H5Cl (W)), then part (iv): \"Draw a circle around the carbonyl group of compound Z.\"",
+  "questionRef": "2026 OL Q8(a)(iv)"
+ },
+ {
+  "file": "chemistry-2026-OL-scheme-q8a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 OL Q8(a)(iii), as printed: the structure of ethanal, a CH3 carbon bonded to a carbon carrying a hydrogen and a double-bonded oxygen, with every atom and bond drawn.",
+  "questionRef": "2026 OL Q8(a)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-OL-scheme-q8a-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 OL Q8(a)(iv), as printed: the same structure of ethanal with a red circle drawn around the C=O carbonyl group.",
+  "questionRef": "2026 OL Q8(a)(iv)",
+  "solution": true
  }
 ]

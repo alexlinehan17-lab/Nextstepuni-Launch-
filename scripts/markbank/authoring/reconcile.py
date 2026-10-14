@@ -364,6 +364,45 @@ def parse_ref(ref):
     }
 
 
+CHOICE_REF = re.compile(r'Q\d+\s*\(([a-l])\)\s*(?:part\s+)?([AB])(?![A-Za-z])(.*)$')
+
+
+def chemistry_choice(refstr, ref):
+    """Chemistry cites an alternative part as "Q11(d)A(i)", "Q4(l) A" or
+    "Q11(d) part B(i)-(iii)"; the census keys it under the letter plus the
+    alternative, (11, 'dA', 'i'). The general grammar stops at the bare A, so
+    the citation read as the whole of Q11(d) -- both alternatives. Re-read
+    the paths after the letter with the alternative attached."""
+    if not ref:
+        return ref
+    m = CHOICE_REF.search(re.split(r'\s+[\u2014\u2013-]\s+(?!\()', refstr)[0].strip())
+    if not m:
+        return ref
+    letter = m.group(1) + m.group(2)
+    paths, roman, dash, pos, rest = [], None, False, 0, m.group(3)
+    while pos < len(rest):
+        t = PART_TOKEN.match(rest, pos)
+        if not t:
+            break
+        pos = t.end()
+        tok, is_dash, is_sep = t.group(1), t.group(2), t.group(3)
+        if is_dash:
+            dash = True
+            continue
+        if is_sep or not tok:
+            continue
+        tok = tok.lower()
+        if tok not in ROMANS:
+            break
+        if dash and roman in ROMANS:
+            lo, hi = sorted((ROMANS.index(roman), ROMANS.index(tok)))
+            paths += [(letter, x) for x in ROMANS[lo + 1:hi + 1]]
+        else:
+            paths.append((letter, tok))
+        roman, dash = tok, False
+    return dict(ref, paths=paths or [(letter, None)])
+
+
 def leaf_index(census):
     """{(year, level, paper): [leaf keys]} plus section normalisation."""
     idx = {}
@@ -417,7 +456,11 @@ def match_leaves(ref, leaves, sections_mode):
                     covered.append(k)
                 elif letter is None and roman is None:
                     covered.append(k)                   # whole-question card
-                elif letter is not None and kl == letter:
+                elif letter is not None and (kl == letter or (
+                        # A citation of the whole letter -- "Q11(d)" -- holds
+                        # both of Chemistry's alternatives, (d)A and (d)B.
+                        roman is None and isinstance(kl, str) and len(kl) == 2
+                        and kl[0] == letter and kl[1] in 'AB')):
                     if roman is None or kr == roman or kr is None:
                         covered.append(k)
                 elif letter is None and roman is not None:
@@ -466,6 +509,8 @@ def reconcile_subject(subject, census=None):
     cards = shipped_cards(subject)
     for cid, refstr in cards:
         ref = parse_ref(refstr)
+        if subject == 'chemistry':
+            ref = chemistry_choice(refstr, ref)
         if not ref:
             unparsed.append({'id': cid, 'ref': refstr})
             continue
@@ -488,6 +533,8 @@ def reconcile_subject(subject, census=None):
     stale = []
     for entry in load_exclusions(subject):
         ref = parse_ref(entry.get('ref', ''))
+        if subject == 'chemistry':
+            ref = chemistry_choice(entry.get('ref', ''), ref)
         landed = False
         if ref:
             for pk in idx:

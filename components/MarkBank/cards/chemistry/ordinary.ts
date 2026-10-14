@@ -7571,4 +7571,66 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "anyN", verbatim: "sorting", marks: null, contextNote: "Any 2 of these. The scheme lists the five stages in one line and prices any two together [6], without a value for each.", openList: true, group: {"claimMax":2,"options":["sorting","shredding","washing","drying","re-extrusion"]} },
     ],
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2026-ol-q8-a-iii", topicId: "chem-4-2", conceptId: "structure-of-ethanal",
+    section: "B", questionRef: "2026 OL Q8(a)(iii)",
+    stem: "Study the series of reactions shown below and answer the questions that follow.",
+    questionText: "Draw the molecular structure of compound Z, including all atoms and bonds.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw the molecular structure of compound Z, including all atoms and bonds.", marks: 6, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.", openList: true },
+    ],
+    questionFigure: {
+          "candId": "chemistry-2026-OL-paper-q8a-iii",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2026-OL-paper-q8a-iii.png",
+          "srcHash": "6249707cb2158a57fc7b895ace2c0e18",
+          "alt": "The question as printed: \"8. Study the series of reactions shown below and answer the questions that follow.\" above the reaction series (C2H5OH (Y) is converted to C2H4 (X) and to CH3CHO (Z); C2H4 (X) is converted to C2H5Cl (W)), then part (iii): \"Draw the molecular structure of compound Z, including all atoms and bonds.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2026 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "chemistry-2026-OL-scheme-q8a-iii",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2026-OL-scheme-q8a-iii.png",
+          "srcHash": "d15f4b12b4f78204ce9371fddbaf5b91",
+          "alt": "The marking scheme's own answer to 2026 OL Q8(a)(iii), as printed: the structure of ethanal, a CH3 carbon bonded to a carbon carrying a hydrogen and a double-bonded oxygen, with every atom and bond drawn.",
+          "attribution": "SEC Leaving Certificate Chemistry 2026 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2026-ol-q8-a-iv", topicId: "chem-4-2", conceptId: "carbonyl-group-of-ethanal",
+    section: "B", questionRef: "2026 OL Q8(a)(iv)",
+    stem: "Study the series of reactions shown below and answer the questions that follow.",
+    questionText: "Draw a circle around the carbonyl group of compound Z.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw a circle around the carbonyl group of compound Z.", marks: 6, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.", openList: true },
+    ],
+    questionFigure: {
+          "candId": "chemistry-2026-OL-paper-q8a-iv",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2026-OL-paper-q8a-iv.png",
+          "srcHash": "c60cb37b761fd4068397f36af9933bfa",
+          "alt": "The question as printed: \"8. Study the series of reactions shown below and answer the questions that follow.\" above the reaction series (C2H5OH (Y) is converted to C2H4 (X) and to CH3CHO (Z); C2H4 (X) is converted to C2H5Cl (W)), then part (iv): \"Draw a circle around the carbonyl group of compound Z.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2026 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "chemistry-2026-OL-scheme-q8a-iv",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2026-OL-scheme-q8a-iv.png",
+          "srcHash": "2db6c70cdfca81b6257bfb751564ffdc",
+          "alt": "The marking scheme's own answer to 2026 OL Q8(a)(iv), as printed: the same structure of ethanal with a red circle drawn around the C=O carbonyl group.",
+          "attribution": "SEC Leaving Certificate Chemistry 2026 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

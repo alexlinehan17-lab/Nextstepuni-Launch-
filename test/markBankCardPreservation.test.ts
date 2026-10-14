@@ -178,10 +178,10 @@ const decks = [
    * The 2021-2025 identity set is pinned unchanged in the 2026 Chemistry test
    * below, so this count rising cannot hide a removal. */
   ['chemistry:higher', CHEM_HIGHER, 621, '81ecd5fb709cd76e6f128c83f42aaf9fc310d885215faa6cde28548f9ddf94d5'],
-  /* 2026-10-13: chemistry ordinary 380 -> 456, the 2026 Ordinary paper's 76
+  /* 2026-10-13: chemistry ordinary 380 -> 458, the 2026 Ordinary paper's 78
    * cards from chem_2026_ol.py, all under chem-2026-ol-; the 2021-2025 set is
    * pinned in the 2026 Chemistry test below. */
-  ['chemistry:ordinary', CHEM_ORDINARY, 456, '089696ecd851cb0a00bb3cff41c2fa134396504f5a9a8bd973f0ef4ad67de979'],
+  ['chemistry:ordinary', CHEM_ORDINARY, 458, '0843276be921a95527bc50d7f0f18c732ac5389e9a4dd5de23eac1144cc5dcd5'],
   /* 2026-08-23: physics drops from 487/477 to 486/475. Three cards -- one
    * Higher (2021 q13a(v)) and two Ordinary (2022 q3(ii) and q3(viii)) -- quote
    * a stacked fraction the scheme's font renders as a diagonal slash whose
@@ -774,8 +774,8 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_529);
-    // 19,328 + 125 + 76: the 2026 Higher and Ordinary Chemistry papers. Nothing removed.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_531);
+    // 19,328 + 125 + 78: the 2026 Higher and Ordinary Chemistry papers. Nothing removed.
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -834,8 +834,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    // 9,768 + 201 for the 2026 Chemistry papers (125 Higher, 76 Ordinary), all new ids.
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_969);
+    // 9,768 + 203 for the 2026 Chemistry papers (125 Higher, 78 Ordinary), all new ids.
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_971);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
@@ -855,7 +855,7 @@ describe('Mark Bank card preservation', () => {
     expect(added.length).toBe(125);
     expect(added.every(card => card.year === 2026)).toBe(true);
     const addedOrdinary = CHEM_ORDINARY.filter(card => card.id.startsWith('chem-2026-ol-'));
-    expect(addedOrdinary.length).toBe(76);
+    expect(addedOrdinary.length).toBe(78);
     expect(addedOrdinary.every(card => card.year === 2026)).toBe(true);
     expect(identityHash(CHEM_HIGHER.filter(card => card.year <= 2025)))
       .toBe('ef4c5a891f86986b4ba3091bb89a527ac4019d01f1f2590b8c465e35f2db71cc');

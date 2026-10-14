@@ -39980,5 +39980,61 @@
     }
    }
   ]
+ },
+ {
+  "id": "chem-2026-ol-q8-a-iii",
+  "topicId": "chem-4-2",
+  "conceptId": "structure-of-ethanal",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2026 OL Q8(a)(iii)",
+  "questionText": "Draw the molecular structure of compound Z, including all atoms and bonds.",
+  "stem": "Study the series of reactions shown below and answer the questions that follow.",
+  "figureKey": "chemistry-2026-OL-scheme-q8a-iii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the molecular structure of compound Z, including all atoms and bonds.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer."
+   }
+  ],
+  "questionFigureKey": "chemistry-2026-OL-paper-q8a-iii"
+ },
+ {
+  "id": "chem-2026-ol-q8-a-iv",
+  "topicId": "chem-4-2",
+  "conceptId": "carbonyl-group-of-ethanal",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2026 OL Q8(a)(iv)",
+  "questionText": "Draw a circle around the carbonyl group of compound Z.",
+  "stem": "Study the series of reactions shown below and answer the questions that follow.",
+  "figureKey": "chemistry-2026-OL-scheme-q8a-iv",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a circle around the carbonyl group of compound Z.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer."
+   }
+  ],
+  "questionFigureKey": "chemistry-2026-OL-paper-q8a-iv"
  }
 ]

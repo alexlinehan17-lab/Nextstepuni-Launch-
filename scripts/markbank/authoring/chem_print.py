@@ -167,6 +167,8 @@ ROMAN = re.compile(r'^\((i|ii|iii|iv|v|vi|vii|viii|ix|x)\)$')
 ALTMARK = re.compile(r'^\(?([AB])\)?$')
 PAPER_MARK = re.compile(r'^\((\d{1,2})\)$|^\(\d\s*×\s*\d{1,2}\)$')
 TRAILING_MARK = re.compile(r'\s\((\d{1,2})\)$')
+# "Answer part A or part B." -- some text layers drop the space ("Aor").
+CHOICE_AB = re.compile(r'Answer part A\s*or part B')
 LEAD_MARKER = re.compile(r'^(\([a-l]\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\))\s+(.+)$')
 
 
@@ -252,8 +254,8 @@ def segments(lines, first_q='1', answers=True):
         if q is None:
             continue
         am = ALTMARK.match(t)
-        if am and l.x0 < 100 and (t.startswith('(') or any(
-                'Answer part A or part B' in joined(sg.text)
+        if am and l.x0 < 150 and (t.startswith('(') or any(
+                CHOICE_AB.search(joined(sg.text))
                 for sg in segs if sg.key[:2] == (q, letter))):
             alt, roman = am.group(1), None
             cur = Seg((q, letter, None, alt), t)
