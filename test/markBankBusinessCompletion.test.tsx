@@ -1,7 +1,7 @@
 /** @license SPDX-License-Identifier: Apache-2.0 */
 import { createHash } from 'node:crypto';
 import { execFileSync, spawnSync } from 'node:child_process';
-import { readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/business/higher';
@@ -11,6 +11,7 @@ import authored from '../scripts/markbank/authored/business.json';
 import supplement from '../components/MarkBank/cards/business/rubric-authored.json';
 import routePools from '../components/MarkBank/cards/business/route-pools.json';
 import selectionReviews from '../scripts/markbank/authored/business-selection-reviews.json';
+import corpusInventory from '../scripts/markbank/authored/business-corpus-inventory.json';
 import { expandBusinessRoutePools } from '../components/MarkBank/cards/business/routes.mjs';
 import SessionScreen, { rubricMarks } from '../components/MarkBank/SessionScreen';
 import { businessMarks, businessScoreId, type BusinessScores } from '../components/MarkBank/businessRubric';
@@ -37,9 +38,20 @@ const hasPdfParser = (() => {
   try { execFileSync('python3', ['-c', 'import pymupdf'], { stdio: 'ignore' }); return true; }
   catch { return false; }
 })();
+// The SEC papers and schemes are local-only: never committed, never on CI.
+// Anything that opens or hashes one runs only when every English Business
+// paper and scheme is on disk, plus the census's own paper folder. Everything
+// checkable from committed files runs everywhere.
+const englishDocuments = corpusInventory.documents.filter(document => document.language === 'ev');
+const hasBusinessCorpus = existsSync('paper-trail-corpus') && englishDocuments.length === 48
+  && englishDocuments.every(document => existsSync(`paper-trail-corpus/exampapers/${document.year}/${document.paperFileid}`)
+    && existsSync(`paper-trail-corpus/markingschemes/${document.year}/${document.schemeFileid}`))
+  && existsSync('examiner-reports/business/papers')
+  && readdirSync('examiner-reports/business/papers').filter(file => file.endsWith('.pdf')).length === 48;
+const hasBusinessSources = hasPdfParser && hasBusinessCorpus;
 
 describe('Business corpus completion in progress', () => {
-  it.skipIf(!hasPdfParser)('blocks normal generation before deck writes while selection review is incomplete', () => {
+  it.skipIf(!hasBusinessSources)('blocks normal generation before deck writes while selection review is incomplete', () => {
     const path = 'components/MarkBank/cards/business/higher.ts';
     const before = readFileSync(path, 'utf8');
     const result = spawnSync('node', ['scripts/markbank/build-deck.mjs',
@@ -601,7 +613,7 @@ describe('Business corpus completion in progress', () => {
     expect(new Set(businessRubrics.map(card => card.id)).size).toBe(businessRubrics.length);
   });
 
-  it.skipIf(!hasPdfParser)('recovers short questions after ruled answer lines without inventing roman tasks', () => {
+  it.skipIf(!hasBusinessSources)('recovers short questions after ruled answer lines without inventing roman tasks', () => {
     const rows = JSON.parse(execFileSync('python3', ['-c', `
 import json,sys
 sys.path.insert(0,'scripts/markbank/authoring')
@@ -613,7 +625,7 @@ print(json.dumps(sorted(census.key_label(key) for key in census.leaves_of(parts)
       'Q5', 'Q6', 'Q7', 'Q8', 'Q9'].map(q => `Section 1 ${q}`));
   });
 
-  it.skipIf(!hasPdfParser)('does not let 2014 matching rows or the acronym table swallow later questions', () => {
+  it.skipIf(!hasBusinessSources)('does not let 2014 matching rows or the acronym table swallow later questions', () => {
     const result = JSON.parse(execFileSync('python3', ['-c', `
 import json,sys
 sys.path.insert(0,'scripts/markbank/authoring')
@@ -629,7 +641,7 @@ print(json.dumps({'keys':sorted(census.key_label(key) for key in census.leaves_o
     expect(result.interest).toContain('interest rate');
   });
 
-  it.skipIf(!hasPdfParser)('keeps 2016 true/false statements within Q3 and retains the following insurance and gearing asks', () => {
+  it.skipIf(!hasBusinessSources)('keeps 2016 true/false statements within Q3 and retains the following insurance and gearing asks', () => {
     const result = JSON.parse(execFileSync('python3', ['-c', `
 import json,sys
 sys.path.insert(0,'scripts/markbank/authoring')
@@ -650,7 +662,7 @@ print(json.dumps({'keys':sorted(census.key_label(key) for key in census.leaves_o
     expect(result.nextQuestion).toBe(true);
   });
 
-  it.skipIf(!hasPdfParser)('reads the last row of the 2010 Higher EU-institutions matching table as a row, keeping Q5(a)', () => {
+  it.skipIf(!hasBusinessSources)('reads the last row of the 2010 Higher EU-institutions matching table as a row, keeping Q5(a)', () => {
     const result = JSON.parse(execFileSync('python3', ['-c', `
 import json,sys
 sys.path.insert(0,'scripts/markbank/authoring')
@@ -663,7 +675,7 @@ print(json.dumps({'q4':sorted(census.key_label(k) for k in census.leaves_of(part
     expect(result.q5a).toContain('Outline the purpose of a company’s ‘Articles of Association’.');
   });
 
-  it.skipIf(!hasPdfParser)('reads the strip-cut 2011 Ordinary page 11 from its characters for the census and the selection scan', () => {
+  it.skipIf(!hasBusinessSources)('reads the strip-cut 2011 Ordinary page 11 from its characters for the census and the selection scan', () => {
     const result = JSON.parse(execFileSync('python3', ['-c', `
 import json,sys
 sys.path.insert(0,'scripts/markbank/authoring')
@@ -706,7 +718,7 @@ print(json.dumps({'matches':[item['matchedText'] for item in items],'failures':f
       failures: [true, true, true] });
   });
 
-  it.skipIf(!hasPdfParser)('retains printed parts after question numbers, quotations and separate source boxes', () => {
+  it.skipIf(!hasBusinessSources)('retains printed parts after question numbers, quotations and separate source boxes', () => {
     const rows = JSON.parse(execFileSync('python3', ['-c', `
 import json,sys,tempfile
 from pathlib import Path
@@ -730,7 +742,7 @@ print(json.dumps(rows))
     expect(rows).toEqual([2014, 2023, 2025].map(year => ({ year, missing: [], empty: [] })));
   });
 
-  it.skipIf(!hasPdfParser)('recognises the capitalised ABQ heading before the separate question page', () => {
+  it.skipIf(!hasBusinessSources)('recognises the capitalised ABQ heading before the separate question page', () => {
     const rows = JSON.parse(execFileSync('python3', ['-c', `
 import json,sys,tempfile
 from pathlib import Path
@@ -898,15 +910,18 @@ print(json.dumps(results))
       .toContain('other than price discrimination');
   });
 
-  it('binds every reviewed task to the inspected source hashes and reconciled tariff', () => {
+  it('binds every reviewed task to its recorded sources and reconciled tariff', () => {
     // Reviews cover both levels; an Ordinary review's cards live in the Ordinary deck.
     const bothLevels = cards.filter(isBusinessRubric);
     expect(bothLevels.every(tariffReconciles)).toBe(true);
     for (const review of supplement.reviews) {
       expect(review.selectionAnalysis).toContain('open examples');
-      for (const [kind, source] of Object.entries(review.sources)) {
-        const bytes = readFileSync(`paper-trail-corpus/${kind}/${review.year}/${source.fileid}`);
-        expect(createHash('sha256').update(bytes).digest('hex')).toBe(source.sha256);
+      // Every reviewed task names the paper and scheme it was checked against,
+      // by file id and SHA-256; the bytes themselves are compared below.
+      expect(Object.keys(review.sources).sort()).toEqual(['exampapers', 'markingschemes']);
+      for (const source of Object.values(review.sources)) {
+        expect(source.fileid).toMatch(/^LC033[AG]LP\d{3}EV\.pdf$/);
+        expect(source.sha256).toMatch(/^[0-9a-f]{64}$/);
       }
       const cohort = 'cardIds' in review
         ? bothLevels.filter(card => review.cardIds!.includes(card.id))
@@ -916,6 +931,16 @@ print(json.dumps(results))
         expect(card.sourceMaterial?.pages).toEqual(review.paperPagesReviewed);
         if (card.rubric.system !== 'business') throw new Error('Wrong rubric');
         expect(card.rubric.schemePages.every(page => review.schemePagesReviewed.includes(page))).toBe(true);
+      }
+    }
+  });
+
+  it.skipIf(!hasBusinessCorpus)('matches every reviewed source to the SEC paper and scheme bytes it was inspected against', () => {
+    for (const review of supplement.reviews) {
+      for (const [kind, source] of Object.entries(review.sources)) {
+        const bytes = readFileSync(`paper-trail-corpus/${kind}/${review.year}/${source.fileid}`);
+        expect(createHash('sha256').update(bytes).digest('hex'), `${kind}/${review.year}/${source.fileid}`)
+          .toBe(source.sha256);
       }
     }
   });

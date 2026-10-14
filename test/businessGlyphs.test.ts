@@ -1,6 +1,6 @@
 /** @license SPDX-License-Identifier: Apache-2.0 */
 import { execFileSync } from 'node:child_process';
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/business/higher';
@@ -9,6 +9,7 @@ import authored from '../scripts/markbank/authored/business.json';
 import supplement from '../components/MarkBank/cards/business/rubric-authored.json';
 import routePools from '../components/MarkBank/cards/business/route-pools.json';
 import glyphIds from '../scripts/markbank/authoring/glyph_ids.json';
+import corpusInventory from '../scripts/markbank/authored/business-corpus-inventory.json';
 
 // What a broken subset font leaves in a PDF's text layer: Latin Extended
 // ("seƫng" for setting, "ouƞlows", "aŌer"), Greek ("Certiϐicate"), the blocks a
@@ -26,6 +27,12 @@ const hasPdfParser = (() => {
   try { execFileSync('python3', ['-c', 'import pymupdf'], { stdio: 'ignore' }); return true; }
   catch { return false; }
 })();
+// The SEC PDFs are local-only (never committed, never on CI). The glyph scan
+// runs only when every English Business paper and scheme is on disk.
+const englishDocuments = corpusInventory.documents.filter(document => document.language === 'ev');
+const hasBusinessCorpus = existsSync(resolve(__dirname, '../paper-trail-corpus')) && englishDocuments.length === 48
+  && englishDocuments.every(document => existsSync(resolve(__dirname, `../paper-trail-corpus/exampapers/${document.year}/${document.paperFileid}`))
+    && existsSync(resolve(__dirname, `../paper-trail-corpus/markingschemes/${document.year}/${document.schemeFileid}`)));
 
 const SCHEME_DIR = resolve(__dirname, '../examiner-reports/business/schemes');
 const label = (ch: string) => `U+${ch.codePointAt(0)!.toString(16).toUpperCase().padStart(4, '0')}`;
@@ -68,7 +75,7 @@ describe('Business text carries no broken-font glyph', () => {
     expect(found, 'repair with scripts/markbank/authoring/repair_scheme_glyphs.py; extract with --glyph-ids').toEqual([]);
   });
 
-  it.skipIf(!hasPdfParser)('reads every glyph a CID font draws with no Unicode, in every English Business paper and scheme, by its glyph id', () => {
+  it.skipIf(!(hasPdfParser && hasBusinessCorpus))('reads every glyph a CID font draws with no Unicode, in every English Business paper and scheme, by its glyph id', () => {
     // rawdict reports such a glyph's id as its character, so a stand-in like
     // "/($9,1*" is plain ASCII that no character gate can see. Every one must
     // resolve in glyph_ids.json, so the scheme extractor (--unnamed-glyphs) and
