@@ -2857,58 +2857,65 @@
         "sha256": "e54816cb1236808d572ec878c58e031ab2e533f9d8c4916b3d0fdc45cea99d8e",
         "pages": 17
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 52,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "35e2b9a6b59ead9f",
           "page": 2,
           "cue": "Answer six",
           "context": "_____________ Instructions Write your examination number in the space provided on page 1. Answer six questions. Each question carries 20 marks. Write your answers in the spaces provided. Keep your answers short. __________________________________________________________________________________ Question 1. (a) Soil sieves, as sho",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section One: six of seven independent 20-mark questions; every question is retained."
         },
         {
           "id": "9b59fe0e78ff8fc9",
           "page": 2,
           "cue": "any one",
           "context": "________________________________________________________________ (c) Give a reason behind any one of the steps in (b). ________________________________________________________________ ________________________________________________________________ _______________________________________________________",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q1(c): a reason for any one step of the candidate’s own method; the scheme tabulates a reason for every step (a marking menu)."
         },
         {
           "id": "bdb5cd761b56dd4c",
           "page": 7,
           "cue": "Answer three",
           "context": "___________________ Instructions Write your answers to Section Two into your answer book. Answer three questions. Each question carries 60 marks. __________________________________________________________________________________ Question 8. (a) (i) Draw a labelled diagram of a paddock grazing system. (ii) State two advantages and ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section Two: three of six independent 60-mark questions; every question is retained."
         },
         {
           "id": "e2a8512e79d64f52",
           "page": 7,
           "cue": "any one",
           "context": "n Irish farms. (i) Outline four steps involved in making good quality hay and explain why any one of those steps is important. (ii) The following steps are taken when making good quality silage. State one reason for each of the steps listed below. 1. Cutting the grass on a sunny day. 2. Allowing the cut grass to wilt. 3. Roll",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q8(b)(i): a reason for any one of the candidate’s four hay-making steps; the scheme tabulates a reason for each step."
         },
         {
           "id": "e17a2b8e8a420b32",
           "page": 8,
           "cue": "any one",
           "context": "rms. (i) Name the three principal plant nutrients in 10‐10‐20. (ii) State the function of any one of the plant nutrients in 10‐10‐20. (c) Farmyard manure (FYM) and slurry are two forms of farm animal waste. (i) State how each is stored on a farm. (ii) State two differences between the composition of FYM and the composition of",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q9(b)(ii): the function of any one of nitrogen, phosphorus or potassium. One card lists all three nutrients, claim limit one."
         },
         {
           "id": "9c150159ed613827",
           "page": 10,
           "cue": "any one",
           "context": "cience – Ordinary Level Question 11. (a) (i) Name two breeds of dairy cow. (ii) State why any one of these breeds is suitable as a dairy breed. (iii) Cows are culled on dairy farms. State two reasons why dairy cows are culled. (b) A dairy enterprise needs replacement heifers. (i) Name two desirable characteristics of replacem",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q11(a)(ii): why any one of the candidate’s own two breeds suits dairying; the scheme gives a suitability for each breed (a marking menu)."
         },
         {
           "id": "f8917d2fa96ee777",
           "page": 12,
           "cue": "any two",
           "context": "Certificate Examination 2020 12 Agricultural Science – Ordinary Level Question 13. Answer any two of (a), (b), (c), (d). (30 marks, 30 marks) (a) (i) Name two factors that can affect soil temperature. (ii) What is a loam soil? (iii) State two advantages of a loam soil. (iv) State two ways that earthworms may improve the soil.",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: two of four independently priced 30-mark parts; all four are retained."
         }
       ]
     },
@@ -2927,7 +2934,7 @@
         "sha256": "e31365c7b159faa50a6a809e1f47e16e84d6adbbdc53823c3177364d70fac047",
         "pages": 19
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 52,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

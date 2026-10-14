@@ -729,5 +729,90 @@
       0.41
     ],
     "reviewedAt": "2026-10-12"
+  },
+  "agsci-2020-ol-paper-soil-sieves": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2020-ol-paper-soil-sieves.png",
+    "md5": "529258a8498b98b1a91205e4b12f586c",
+    "alt": "Original Question 1(a) photograph: two stacks of round metal soil sieves with mesh bases, a single sieve on its side and a lid.",
+    "attribution": "SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2020/LC024GLP000EV.pdf",
+    "sourceSha256": "ad07041e0062736f05423d160ee9bd758976c40ef0911391cb78d06da487f247",
+    "pdfPage": 2,
+    "cropRect": [
+      0.72,
+      0.36,
+      0.94,
+      0.53
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2020-ol-paper-farm-machinery": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2020-ol-paper-farm-machinery.png",
+    "md5": "42bdde9079a8adafa6d0394e971fc86c",
+    "alt": "Original Question 4 photographs lettered A to F: A a field roller, B a tractor-mounted slurry agitator, C a bale grabber, D a reversible plough turning soil, E a circular round feeder, F a muck spreader.",
+    "attribution": "SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2020/LC024GLP000EV.pdf",
+    "sourceSha256": "ad07041e0062736f05423d160ee9bd758976c40ef0911391cb78d06da487f247",
+    "pdfPage": 4,
+    "cropRect": [
+      0.09,
+      0.155,
+      0.85,
+      0.63
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2020-ol-paper-ruminant-stomach": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2020-ol-paper-ruminant-stomach.png",
+    "md5": "fea07b135c2a374ebbc0f1f48a7961b0",
+    "alt": "Original Question 6 outline of the ruminant stomach: the oesophagus A enters at the top right; B is the large left chamber, C a small chamber at the right, D a round chamber in the centre and E the chamber below it.",
+    "attribution": "SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2020/LC024GLP000EV.pdf",
+    "sourceSha256": "ad07041e0062736f05423d160ee9bd758976c40ef0911391cb78d06da487f247",
+    "pdfPage": 5,
+    "cropRect": [
+      0.585,
+      0.54,
+      0.935,
+      0.712
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2020-ol-paper-excretory-system": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2020-ol-paper-excretory-system.png",
+    "md5": "9d46c2919ed7be1bcc8da18834f136a3",
+    "alt": "Original Question 12(b) diagram of the excretory system: A points to a bean-shaped organ at the top, B to a tube running down from it, and C to the sac at the bottom.",
+    "attribution": "SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2020/LC024GLP000EV.pdf",
+    "sourceSha256": "ad07041e0062736f05423d160ee9bd758976c40ef0911391cb78d06da487f247",
+    "pdfPage": 11,
+    "cropRect": [
+      0.735,
+      0.375,
+      0.995,
+      0.565
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2020-ol-paper-flower": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2020-ol-paper-flower.png",
+    "md5": "496d0d37340e9de8791b0bb6e8a968e9",
+    "alt": "Original Question 12(c) section of a flower: A points to a large outer petal, B to a stalked structure inside the petals, D to the tip of the central stalk, E to the swollen base of the central structure and C to a small body inside it.",
+    "attribution": "SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2020/LC024GLP000EV.pdf",
+    "sourceSha256": "ad07041e0062736f05423d160ee9bd758976c40ef0911391cb78d06da487f247",
+    "pdfPage": 11,
+    "cropRect": [
+      0.62,
+      0.635,
+      0.97,
+      0.83
+    ],
+    "reviewedAt": "2026-10-14"
   }
 }

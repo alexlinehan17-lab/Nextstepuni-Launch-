@@ -5,6 +5,939 @@
   "papers": [
     {
       "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "sourceHashes": {
+        "exampapers": "ad07041e0062736f05423d160ee9bd758976c40ef0911391cb78d06da487f247",
+        "markingschemes": "e54816cb1236808d572ec878c58e031ab2e533f9d8c4916b3d0fdc45cea99d8e"
+      },
+      "status": "boundary-reviewed",
+      "baseTasks": [
+        {
+          "ref": "2020 OL Q1(a)",
+          "marksPerResponse": 4,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "The % sand, silt and clay"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q1(a)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q1(b)",
+          "marksPerResponse": 12,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "Finding soil texture:"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Sieve method",
+              "Feel method",
+              "Sedimentation method"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2020 OL Q1(b)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q1(c)",
+          "marksPerResponse": 4,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "Reason for any one step above:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q1(c)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q2",
+          "marksPerResponse": 20,
+          "paperPage": 3,
+          "schemePage": 4,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 4,
+            "text": "First milk a young mammal"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q2"
+          ]
+        },
+        {
+          "ref": "2020 OL Q3",
+          "marksPerResponse": 20,
+          "paperPage": 3,
+          "schemePage": 4,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 4,
+            "text": "Stomata are pores found on the leaves of plants"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q3"
+          ]
+        },
+        {
+          "ref": "2020 OL Q4",
+          "marksPerResponse": 20,
+          "paperPage": 4,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Slurry agitator"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q4"
+          ]
+        },
+        {
+          "ref": "2020 OL Q5",
+          "marksPerResponse": 20,
+          "paperPage": 5,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Sources of pollution:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q5"
+          ]
+        },
+        {
+          "ref": "2020 OL Q6",
+          "marksPerResponse": 20,
+          "paperPage": 5,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Parts of stomach:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q6"
+          ]
+        },
+        {
+          "ref": "2020 OL Q7(a)",
+          "marksPerResponse": 4,
+          "paperPage": 6,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Vaccination of farm animals:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q7(a)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q7(b)",
+          "marksPerResponse": 4,
+          "paperPage": 6,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Using footbaths:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q7(b)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q7(c)",
+          "marksPerResponse": 4,
+          "paperPage": 6,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Growing certified seed potatoes:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q7(c)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q7(d)",
+          "marksPerResponse": 4,
+          "paperPage": 6,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Subsoiling:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q7(d)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q7(e)",
+          "marksPerResponse": 4,
+          "paperPage": 6,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Maintaining hedgerows:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q7(e)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q8(a)(i)",
+          "marksPerResponse": 9,
+          "paperPage": 7,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Paddock grazing system:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q8(a)(i)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q8(a)(ii)",
+          "marksPerResponse": 12,
+          "paperPage": 7,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Disadvantages"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q8(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q8(b)(i)",
+          "marksPerResponse": 15,
+          "paperPage": 7,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Steps in making good quality hay"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q8(b)(i)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q8(b)(ii)",
+          "marksPerResponse": 12,
+          "paperPage": 7,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "A reason for each listed step in silage making:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q8(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q8(c)",
+          "marksPerResponse": 12,
+          "paperPage": 7,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Simple on-site silage test:"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Colour of silage",
+              "Smell of silage",
+              "Squeeze silage (or dry matter or DM test)",
+              "pH of silage",
+              "Taste of silage",
+              "Feel of silage"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2020 OL Q8(c)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q9(a)(i)",
+          "marksPerResponse": 3,
+          "paperPage": 8,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Element in ground limestone:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q9(a)(i)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q9(a)(ii)",
+          "marksPerResponse": 5,
+          "paperPage": 8,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "How a soil becomes acidic:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q9(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q9(a)(iii)",
+          "marksPerResponse": 12,
+          "paperPage": 8,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Finding pH of a soil sample"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Universal indicator",
+              "pH meter"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2020 OL Q9(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q9(b)(i)",
+          "marksPerResponse": 12,
+          "paperPage": 8,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "The three principal elements in 10-10-20:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q9(b)(i)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q9(b)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 8,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Function of one of the nutrient elements in 10-10-20:"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Nitrogen",
+              "Phosphorus",
+              "Potassium"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2020 OL Q9(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q9(c)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 8,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "How FYM and slurry stored:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q9(c)(i)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q9(c)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 8,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Differences between composition of FYM and of slurry:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q9(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q9(c)(iii)",
+          "marksPerResponse": 8,
+          "paperPage": 8,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Precautions when agitating slurry:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q9(c)(iii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q10(a)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 9,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "How many chromosomes in cattle gametes:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q10(a)(i)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q10(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 9,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Organ in which female games produced:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q10(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q10(a)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 9,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Type of cell division that produces gametes:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q10(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q10(b)",
+          "marksPerResponse": 16,
+          "paperPage": 9,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Cross 1:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q10(b)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q10(c)",
+          "marksPerResponse": 24,
+          "paperPage": 9,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Cross 2:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q10(c)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q10(d)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 9,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Cross breeding:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q10(d)(i)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q10(d)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 9,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "An advantage of cross breeding:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q10(d)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q11(a)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 10,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Dairy breeds:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q11(a)(i)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q11(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Why suitable for dairy:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q11(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q11(a)(iii)",
+          "marksPerResponse": 8,
+          "paperPage": 10,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Why dairy cows culled:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q11(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q11(b)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 10,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Characteristics of replacement heifers:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q11(b)(i)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q11(b)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Heifer age at first calving:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q11(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q11(b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Target weight at first calving:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q11(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q11(b)(iv)",
+          "marksPerResponse": 8,
+          "paperPage": 10,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Signs that indicate calving imminent"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q11(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q11(c)",
+          "marksPerResponse": 16,
+          "paperPage": 10,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Body condition scoring:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q11(c)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q12(a)",
+          "marksPerResponse": 20,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Leaf adaptations for photosynthesis:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q12(a)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q12(b)",
+          "marksPerResponse": 20,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Excretion:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q12(b)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q12(c)",
+          "marksPerResponse": 20,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Parts of flower:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q12(c)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q13(a)",
+          "marksPerResponse": 30,
+          "paperPage": 12,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Factors affecting soil temperature:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q13(a)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q13(b)",
+          "marksPerResponse": 30,
+          "paperPage": 12,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Barley:"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Winter barley",
+              "Spring barley"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2020 OL Q13(b)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q13(c)",
+          "marksPerResponse": 30,
+          "paperPage": 12,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Management of lowland lambs:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q13(c)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q13(d)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 12,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Functions of dietary protein:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q13(d)(i)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q13(d)(ii)",
+          "marksPerResponse": 12,
+          "paperPage": 12,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Protein test:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q13(d)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q13(d)(iii)",
+          "marksPerResponse": 8,
+          "paperPage": 12,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Bulky feeds v concentrates:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q13(d)(iii)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q13(d)(iv)",
+          "marksPerResponse": 3,
+          "paperPage": 12,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Maintenance ration:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q13(d)(iv)"
+          ]
+        },
+        {
+          "ref": "2020 OL Q13(d)(v)",
+          "marksPerResponse": 3,
+          "paperPage": 12,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Production ration:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 OL Q13(d)(v)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2020,
       "level": "higher",
       "lang": "ev",
       "paperFileid": "LC024ALP000EV.pdf",
@@ -28143,7 +29076,7 @@
       "level": "ordinary",
       "lang": "ev",
       "paperFileid": "LC024GLP000EV.pdf",
-      "independentCensus": "open"
+      "independentCensus": "boundary-reviewed"
     },
     {
       "year": 2020,
@@ -28322,6 +29255,204 @@
     }
   ],
   "questionMarkChecks": [
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q1",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q2",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q3",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q4",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q5",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q6",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q7",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q8",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q9",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q10",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q11",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q12",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q13",
+      "units": {
+        "(a)": 30,
+        "(b)": 30,
+        "(c)": 30,
+        "(d)": 30
+      },
+      "choose": 2,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
     {
       "year": 2020,
       "level": "higher",

@@ -37,7 +37,9 @@ try {
     for(let i=0;i<d.length;i+=16)if(d[i+3]>0 && d[i]+d[i+1]+d[i+2]<600)ink++;
     const r=c.getBoundingClientRect();return {width:c.width,height:c.height,ink,right:r.right};
    }));
-   assert(metrics.every(c=>c.ink>5 && c.width>0&&c.height>0 && c.right<=width+1),JSON.stringify({id,width,metrics}));
+   // Nonblank, not dense: a scheme crop's lead strip can be a bare "Q 1" heading, which samples
+   // only a couple of ink pixels at phone width. A blank or missing canvas still fails.
+   assert(metrics.every(c=>c.ink>0 && c.width>0&&c.height>0 && c.right<=width+1),JSON.stringify({id,width,metrics}));
    await page.screenshot({path:`${out}/${width}-${id}.png`,fullPage:true});
    await page.getByRole('button',{name:'Hide the marking scheme',exact:true}).click();
    await page.waitForFunction(count=>document.querySelectorAll('section canvas').length===count,source.paperRegions.length);

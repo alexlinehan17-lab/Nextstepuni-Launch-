@@ -5,7 +5,7 @@ import fitz, hashlib, json, pathlib, sys
 ROOT = pathlib.Path('.')
 MANIFEST = ROOT/'components/MarkBank/figures-agricultural-science.json'
 # A figure keeps the review date it was first catalogued with; new figures take this one.
-REVIEWED_AT = '2026-10-13'
+REVIEWED_AT = '2026-10-14'
 FIGS = {
   # 2026
   'agsci-2026-hl-scheme-cow-reproductive-system': dict(kind='markingschemes', year=2026, fileid='LC024ALP000EV.pdf', page=25, rect=[0.30,0.612,0.725,0.762], solution=True,
@@ -77,6 +77,22 @@ FIGS = {
   'agsci-2022-hl-scheme-calf-shed-airflow': dict(kind='markingschemes', year=2022, fileid='LC024ALP000EV.pdf', page=26, rect=[0.08,0.430,0.95,0.672], solution=True,
       alt='Official marking-scheme answer for Question 14(c)(ii): the shed cross-section with arrows coming in at each side under the eaves, rising diagonally towards the centre and going out through the open ridge in the roof; "Correct indication of arrows coming in at side / going out through roof", 4 + 1.',
       attribution='SEC Agricultural Science 2022 Higher Level marking scheme, PDF page 26 — © State Examinations Commission.'),
+  # 2020
+  'agsci-2020-ol-paper-soil-sieves': dict(kind='exampapers', year=2020, fileid='LC024GLP000EV.pdf', page=2, rect=[0.72,0.36,0.94,0.53], solution=False,
+      alt='Original Question 1(a) photograph: two stacks of round metal soil sieves with mesh bases, a single sieve on its side and a lid.',
+      attribution='SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.'),
+  'agsci-2020-ol-paper-farm-machinery': dict(kind='exampapers', year=2020, fileid='LC024GLP000EV.pdf', page=4, rect=[0.09,0.155,0.85,0.63], solution=False,
+      alt='Original Question 4 photographs lettered A to F: A a field roller, B a tractor-mounted slurry agitator, C a bale grabber, D a reversible plough turning soil, E a circular round feeder, F a muck spreader.',
+      attribution='SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 4 — © State Examinations Commission.'),
+  'agsci-2020-ol-paper-ruminant-stomach': dict(kind='exampapers', year=2020, fileid='LC024GLP000EV.pdf', page=5, rect=[0.585,0.54,0.935,0.712], solution=False,
+      alt='Original Question 6 outline of the ruminant stomach: the oesophagus A enters at the top right; B is the large left chamber, C a small chamber at the right, D a round chamber in the centre and E the chamber below it.',
+      attribution='SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.'),
+  'agsci-2020-ol-paper-excretory-system': dict(kind='exampapers', year=2020, fileid='LC024GLP000EV.pdf', page=11, rect=[0.735,0.375,0.995,0.565], solution=False,
+      alt='Original Question 12(b) diagram of the excretory system: A points to a bean-shaped organ at the top, B to a tube running down from it, and C to the sac at the bottom.',
+      attribution='SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.'),
+  'agsci-2020-ol-paper-flower': dict(kind='exampapers', year=2020, fileid='LC024GLP000EV.pdf', page=11, rect=[0.62,0.635,0.97,0.83], solution=False,
+      alt='Original Question 12(c) section of a flower: A points to a large outer petal, B to a stalked structure inside the petals, D to the tip of the central stalk, E to the swollen base of the central structure and C to a small body inside it.',
+      attribution='SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.'),
   # 2021
   'agsci-2021-hl-paper-sheep-milk-pie': dict(kind='exampapers', year=2021, fileid='LC024ALP000EV.pdf', page=15, rect=[0.52,0.495,0.92,0.82], solution=False,
       alt='Original Question 10(c) pie chart, Sheep Milk Composition: water 84%, fat 7%, lactose 5% and protein 4%.',

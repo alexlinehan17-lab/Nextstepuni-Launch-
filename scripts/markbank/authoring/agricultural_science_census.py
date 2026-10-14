@@ -1794,9 +1794,78 @@ Q9(e)|12|7|12|Increased concentrates diet
 POOLS_2020_HIGHER = {
     'Q4(b)': (1, ['Catalase', 'Amylase']),
 }
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER}
+# 2020 Ordinary (legacy syllabus): Section One six of Q1-Q7 at 20; Section Two three of Q8-Q13
+# at 60, Q13 any two of (a)-(d) at 30. A scale the scheme prints across several parts
+# ("4 + 8(2)") is one task over its span.
+ORDINARY_2020 = '''
+Q1(a)|4|2|3|The % sand, silt and clay
+Q1(b)|12|2|3|Finding soil texture:
+Q1(c)|4|2|3|Reason for any one step above:
+Q2|20|3|4|First milk a young mammal
+Q3|20|3|4|Stomata are pores found on the leaves of plants
+Q4|20|4|5|Slurry agitator
+Q5|20|5|5|Sources of pollution:
+Q6|20|5|6|Parts of stomach:
+Q7(a)|4|6|6|Vaccination of farm animals:
+Q7(b)|4|6|6|Using footbaths:
+Q7(c)|4|6|6|Growing certified seed potatoes:
+Q7(d)|4|6|6|Subsoiling:
+Q7(e)|4|6|6|Maintaining hedgerows:
+Q8(a)(i)|9|7|7|Paddock grazing system:
+Q8(a)(ii)|12|7|7|Disadvantages
+Q8(b)(i)|15|7|7|Steps in making good quality hay
+Q8(b)(ii)|12|7|8|A reason for each listed step in silage making:
+Q8(c)|12|7|8|Simple on-site silage test:
+Q9(a)(i)|3|8|9|Element in ground limestone:
+Q9(a)(ii)|5|8|9|How a soil becomes acidic:
+Q9(a)(iii)|12|8|9|Finding pH of a soil sample
+Q9(b)(i)|12|8|9|The three principal elements in 10-10-20:
+Q9(b)(ii)|4|8|9|Function of one of the nutrient elements in 10-10-20:
+Q9(c)(i)|8|8|10|How FYM and slurry stored:
+Q9(c)(ii)|8|8|10|Differences between composition of FYM and of slurry:
+Q9(c)(iii)|8|8|10|Precautions when agitating slurry:
+Q10(a)(i)|4|9|11|How many chromosomes in cattle gametes:
+Q10(a)(ii)|4|9|11|Organ in which female games produced:
+Q10(a)(iii)|4|9|11|Type of cell division that produces gametes:
+Q10(b)|16|9|11|Cross 1:
+Q10(c)|24|9|11|Cross 2:
+Q10(d)(i)|4|9|11|Cross breeding:
+Q10(d)(ii)|4|9|11|An advantage of cross breeding:
+Q11(a)(i)|8|10|12|Dairy breeds:
+Q11(a)(ii)|4|10|12|Why suitable for dairy:
+Q11(a)(iii)|8|10|12|Why dairy cows culled:
+Q11(b)(i)|8|10|12|Characteristics of replacement heifers:
+Q11(b)(ii)|4|10|12|Heifer age at first calving:
+Q11(b)(iii)|4|10|12|Target weight at first calving:
+Q11(b)(iv)|8|10|12|Signs that indicate calving imminent
+Q11(c)|16|10|13|Body condition scoring:
+Q12(a)|20|11|14|Leaf adaptations for photosynthesis:
+Q12(b)|20|11|14|Excretion:
+Q12(c)|20|11|14|Parts of flower:
+Q13(a)|30|12|15|Factors affecting soil temperature:
+Q13(b)|30|12|15|Barley:
+Q13(c)|30|12|16|Management of lowland lambs:
+Q13(d)(i)|4|12|16|Functions of dietary protein:
+Q13(d)(ii)|12|12|16|Protein test:
+Q13(d)(iii)|8|12|16|Bulky feeds v concentrates:
+Q13(d)(iv)|3|12|16|Maintenance ration:
+Q13(d)(v)|3|12|16|Production ration:
+'''
+POOLS_2020_ORDINARY = {
+    'Q1(b)': (1, ['Sieve method', 'Feel method', 'Sedimentation method']),
+    'Q8(c)': (1, ['Colour of silage', 'Smell of silage', 'Squeeze silage (or dry matter or DM test)', 'pH of silage', 'Taste of silage', 'Feel of silage']),
+    'Q9(a)(iii)': (1, ['Universal indicator', 'pH meter']),
+    'Q9(b)(ii)': (1, ['Nitrogen', 'Phosphorus', 'Potassium']),
+    'Q13(b)': (1, ['Winter barley', 'Spring barley']),
+}
+# The Ordinary question whose lettered parts are a printed any-two choice.
+OL_PART_CHOICE = {2020: 'Q13'}
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY}
 
 SOURCES = [
+    (2020, 'ordinary', 'G', ORDINARY_2020,
+     'ad07041e0062736f05423d160ee9bd758976c40ef0911391cb78d06da487f247',
+     'e54816cb1236808d572ec878c58e031ab2e533f9d8c4916b3d0fdc45cea99d8e'),
     (2020, 'higher', 'A', HIGHER_2020,
      '18ff9aba31b70f50fd65384ab901a9986a39dd43cc2651474263ed752c3016bb',
      'a82cef8f5c02ace6ac4049496bb08a65edad60ca08732e0ca01f2b727b2f76da'),
@@ -1892,7 +1961,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -2011,7 +2080,7 @@ def question_mark_checks(papers):
             choose = None
             if higher and question in ['Q1','Q4','Q8','Q9']:
                 choose = {'Q1':6,'Q4':2,'Q8':2,'Q9':4}[question]
-            elif not higher and question=='Q12':
+            elif not higher and question==OL_PART_CHOICE.get(paper['year'],'Q12'):
                 choose = 2
             for task in tasks:
                 unit = re.search(r'Q\d+(\([a-z]\))',task['ref']).group(1) if choose else 'all'
@@ -2037,7 +2106,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52. Remaining editions stay open.')
 
 
 if __name__=='__main__':

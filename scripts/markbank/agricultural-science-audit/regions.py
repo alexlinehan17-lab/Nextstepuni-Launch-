@@ -17,7 +17,8 @@ import fitz
 
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
 LETTERS = 'abcdefghijklmnop'
-breaks = []  # (page, y) of each printed OR between alternatives, or a section heading; a part never runs past one
+breaks = []  # (page, y) of each OR printed at the margin between alternatives (a centred OR inside a
+            # part separates two methods of one answer), or a section heading; a part never runs past one
 SECTION = re.compile(r'^SECTION\s+(?:ONE|TWO|THREE|A|B|C)\b')
 HEAD = re.compile(r'^(?:Q(?:uestion)?\s*)?(\d{1,2})(?:\s*\.|(?=\s+(?:\(|Option|Any|Two|Four|Answer|[A-Z]))|\s*$)\s*')
 MARKER = re.compile(r'^\(\s*([a-z]{1,4})\s*\)\s*')
@@ -59,7 +60,7 @@ def parse(pdf, max_question=20):
     breaks.clear()
     for p, rows in enumerate(pages, 1):
         for i, (y0, y1, x, text) in enumerate(rows):
-            if re.fullmatch(r'OR|Or', text) or SECTION.match(text):
+            if (re.fullmatch(r'OR|Or', text) and x < 0.15) or SECTION.match(text):
                 breaks.append((p, y0))
             if FURNITURE.match(text) or x > 0.30:
                 continue
@@ -115,10 +116,13 @@ def _heading_top(rows, i):
     part starts at the highest line that overlaps the marker's own line by 15% of its
     height or more. A neighbour's line box only touches the marker's by a hair, and the marks
     column (far right) belongs to whatever row it prices, so only the text column beside the
-    marker counts."""
+    marker counts, and only a heading (a line ending in a colon, or the part's own marker line):
+    the last line of the previous answer can overlap the marker's box just as much."""
     y0, y1, x = rows[i][0], rows[i][1], rows[i][2]
     height = y1 - y0
-    tops = [r[0] for r in rows if x <= r[2] < x + 0.3 and r[0] < y0 and min(r[1], y1) - max(r[0], y0) >= 0.15 * height]
+    heading = lambda text: text.rstrip().endswith(':') or MARKER.match(text)
+    tops = [r[0] for r in rows if x <= r[2] < x + 0.3 and r[0] < y0 and heading(r[3])
+            and min(r[1], y1) - max(r[0], y0) >= 0.15 * height]
     return min([y0] + tops)
 
 
