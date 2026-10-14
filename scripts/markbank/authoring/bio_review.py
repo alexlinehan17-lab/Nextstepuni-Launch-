@@ -69,7 +69,12 @@ def level_word(level):
     return B.LEVEL_WORD[level]
 
 
-def booklet(sec):
+def booklet(sec, ledger=None):
+    """The booklet a section is printed in. From 2019 the paper is two booklets
+    (038: Sections A and B, 040: Section C); up to 2018 it is one, keyed
+    'paper' in the ledger's SOURCES."""
+    if ledger is not None and 'paper' in ledger.SOURCES:
+        return 'paper'
     return '038' if sec in ('A', 'B') else '040'
 
 
@@ -108,8 +113,17 @@ class Lifter:
                            and not sel.get('after')) else 0
         text, meta = src.select(page, sel['start'], sel.get('end'), after=sel.get('after'),
                                 before=sel.get('before'), nth=sel.get('nth', 1), lo=lo,
-                                end_nth=sel.get('end_nth', 1))
+                                end_nth=sel.get('end_nth', 1), skip_marks=sel.get('skip_marks', False))
         self.used[doc].add(page)
+        if sel.get('piece'):
+            pieces = sel['piece'] if isinstance(sel['piece'], list) else [sel['piece']]
+            seps = sel.get('psep') or ['/'] * len(pieces)
+            seps = seps if isinstance(seps, list) else [seps]
+            for index, sep in zip(pieces, seps):
+                cut = [x.strip() for x in text.split(sep)]
+                if not 1 <= index <= len(cut):
+                    raise LookupError(f'{doc} p{page}: no piece {index} in {text!r}')
+                text = cut[index - 1]
         return text, {**meta, 'doc': doc}
 
 
@@ -164,6 +178,18 @@ def read_geo(lifter, spec, sp):
                     raise Refusal(f'tick-col p{page}: header {head!r} printed twice on one line')
                 scored.append((abs((b.x0 + b.x1) / 2 - tx), head))
             value = min(scored)[1]
+    elif kind == 'under':
+        # A letter the scheme prints in a table cell under its part's column
+        # header (the 2020 Higher true/false key: "(c)" over "T"), read from
+        # the column the header heads.
+        heads = src.find_exact(page, spec['head'], clip)
+        if len(heads) != 1:
+            raise Refusal(f'under p{page}: header {spec["head"]!r} printed {len(heads)} times in {clip}')
+        h = heads[0]
+        hx = (h.x0 + h.x1) / 2
+        below = [(r, t) for r, t in src.words(page, clip)
+                 if r.y0 >= h.y1 - 1 and abs((r.x0 + r.x1) / 2 - hx) < 12]
+        value = ' '.join(t for _, t in sorted(below, key=lambda w: (round(w[0].y0), w[0].x0)))
     elif kind == 'circled':
         boxes = src.find_box(page, spec['part'], clip)
         if not boxes:
@@ -229,6 +255,24 @@ def build_row(lifter, spec, row_id, task_doc, sp, lo):
         if kind == 'gate':
             row['exactTermRequired'] = True
         units, worth = [spec['marks']], spec['marks']
+    elif spec['type'] == 'allof':
+        # One mark for several answers printed on separate lines, all of which
+        # must be given ("Name stage A: *Lag / Name stage B: *Log / ... All
+        # three 3"): each answer, with its printed label, in one row.
+        pieces, starred = [], False
+        for lab, ans in spec['parts']:
+            text, meta = lifter.lift(ans, task_doc, sp, lo)
+            starred |= meta['starred'] or '*' in text
+            text = strip_stars(text)
+            if lab:
+                label, _ = lifter.lift(lab, task_doc, sp, lo)
+                text = f'{strip_stars(label).rstrip(":").strip()} — {text}'
+            pieces.append(text)
+        row = {'id': row_id, 'kind': 'gate' if starred else 'point', 'verbatim': ' / '.join(pieces),
+               'marks': spec['marks']}
+        if starred:
+            row['exactTermRequired'] = True
+        units, worth = [spec['marks']], spec['marks']
     elif spec['type'] == 'pt':
         text, meta = lifter.lift(spec['sel'], task_doc, sp, lo)
         starred = meta['starred'] or '*' in text
@@ -277,9 +321,14 @@ def build_row(lifter, spec, row_id, task_doc, sp, lo):
             # A menu printed as one "or" list ("Common cold virus or HIV or
             # ...", "Name two") is cut at the scheme's own "or".
             options = [strip_stars(B.clean_option(x)) for x in t.split(spec.get('sep') or '/')]
+            if spec.get('sep') == ',' and options:
+                # A comma list closes with the sentence's own full stop
+                # ("..., glomerulus."), which is not part of its last item.
+                options[-1] = re.sub(r'\.$', '', options[-1])
             # The scheme's tally ("Any three") printed at the end of the menu's
             # last line is not an option: it goes to the row's note.
-            tally = re.search(r'\s+(Any (?:one|two|three|four|five|six))$', options[-1]) if options else None
+            tally = re.search(r'\s+\(?((?:Any|any) (?:one|two|three|four|five|six))\)?$', options[-1]) \
+                if options else None
             if tally:
                 notes.append(tally.group(1))
                 options[-1] = options[-1][:tally.start()]
@@ -357,7 +406,7 @@ def build(ledger, year, level):
     totals_q, totals_part = defaultdict(int), defaultdict(int)
     seen_ids = set()
     for t in ledger.TASKS:
-        doc = booklet(t['sec'])
+        doc = booklet(t['sec'], ledger)
         # The paper's own ask.
         qsels = t['q'] if isinstance(t['q'], list) else [t['q']]
         qparts, qmetas = [], []
@@ -382,8 +431,16 @@ def build(ledger, year, level):
         # The scheme's reprint: the pairing anchor and the scope of the rows.
         sq = t['sq']
         try:
+            sq_lo = 0
+            for anchor in sq.get('path', []):
+                lines = lifter.srcs['scheme'].lines[sq['page']]
+                hit = next((i for i in range(sq_lo, len(lines)) if lines[i] == anchor), None)
+                if hit is None:
+                    raise LookupError(f'scheme p{sq["page"]}: path line {anchor!r} not found')
+                sq_lo = hit + 1
             sq_text, sq_meta = lifter.srcs['scheme'].select(
-                sq['page'], sq['start'], sq.get('end'), after=sq.get('after'), nth=sq.get('nth', 1))
+                sq['page'], sq['start'], sq.get('end'), after=sq.get('after'), nth=sq.get('nth', 1),
+                lo=sq_lo)
         except LookupError as e:
             problems.append(f'{t["key"]} scheme reprint: {e}')
             continue
@@ -392,7 +449,11 @@ def build(ledger, year, level):
         # Wording check: most of the scheme reprint's content words are in the ask
         # (or its stem: the scheme often reprints the lead-in with the ask).
         score = B.overlap(sq_text, qtext + ' ' + stem)
-        if score < 0.6 and not (sq.get('paired') and score >= 0.25):
+        if sq.get('bare'):
+            if not (sq.get('paired') and re.fullmatch(r'\((?:[a-h]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)', sq_text)):
+                problems.append(f'{t["key"]}: a bare scheme anchor must be a part marker alone, with the '
+                                f'reviewer\'s reason; got {sq_text!r}')
+        elif score < 0.6 and not (sq.get('paired') and score >= 0.25):
             problems.append(f'{t["key"]}: scheme reprint "{sq_text[:60]}" shares {score:.0%} of its '
                             f'words with the paper ask "{qtext[:60]}"')
         rows, task_units, worth = [], [], 0

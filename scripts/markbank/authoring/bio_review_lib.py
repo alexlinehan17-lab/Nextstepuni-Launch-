@@ -53,7 +53,7 @@ _LEAD = re.compile(r'^(?:\s*(?:\([a-h]\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)|
 _AFTER_SENTENCE = re.compile(r'[.?!:]\s+$')
 # What may follow a selection on its line: nothing, a new sentence, or the
 # scheme's own tariff cell glued to the end of a menu ("... / pole Any three 3(1)").
-_TARIFF_TAIL = re.compile(r'^\s*(?:Any\s+\w+\s*)?(?:\d+\(\d\)|\d\+\d|\d{1,2})?\s*$')
+_TARIFF_TAIL = re.compile(r'^\s*(?:Any\s+\w+\s*|\(any\s+\w+\)\s*)?(?:\d+\(\d\)|\d\+\d|\d{1,2})?\s*$')
 
 
 def _closes(text_after, end):
@@ -216,7 +216,8 @@ class Src:
             raise LookupError(f'{self.label} p{page}: {what} {anchor!r} not found')
         return hits[0]
 
-    def select(self, page, start, end=None, after=None, before=None, nth=1, lo=0, end_nth=1):
+    def select(self, page, start, end=None, after=None, before=None, nth=1, lo=0, end_nth=1,
+               skip_marks=False):
         """The printed text from `start` to `end` on one page.
 
         Returns (text, meta) where meta records the line span and whether the
@@ -261,7 +262,13 @@ class Src:
                     if j == i:
                         seg = [L[i][off:k + len(end)]]
                     else:
-                        seg = [L[i][off:]] + L[i + 1:j] + [L[j][:k + len(end)]]
+                        mid = L[i + 1:j]
+                        if skip_marks:
+                            # A mark cell the scheme prints between two lines
+                            # of one answer ("... (the glomerulus" / "3" /
+                            # "wall) or ...") is not part of the answer.
+                            mid = [m for m in mid if not re.fullmatch(r'\d{1,2}(?:\(\d\))?|\d,\d|\d\+\d', m)]
+                        seg = [L[i][off:]] + mid + [L[j][:k + len(end)]]
                     return join_lines(seg), {**meta, 'lines': [i, j]}
                 k = L[j].find(end, k + 1)
         raise LookupError(f'{self.label} p{page}: end {end!r} closes no printed line after '
@@ -276,7 +283,7 @@ def join_lines(segments):
     for seg in (s.strip() for s in segments):
         if not seg:
             continue
-        if out.endswith('-') and len(out) > 1 and out[-2].isalpha():
+        if out.endswith(('-', '\u2010')) and len(out) > 1 and out[-2].isalpha():
             out += seg
         else:
             out = f'{out} {seg}' if out else seg
@@ -306,21 +313,35 @@ def M(marker, page, doc=None):
     return {'src': 'marker', 'text': marker, 'page': page, 'doc': doc}
 
 
-def SQ(page, start, end=None, after=None, nth=1, paired=None):
+def SQ(page, start, end=None, after=None, nth=1, paired=None, bare=False, path=None):
     """The scheme's reprint of the task's question: the pairing anchor.
     `paired` is the reviewer's reason for a pairing whose reprint rewords the
     paper's ask too far for the wording check (the scheme's "Put steps in
     correct order." for the paper's "Place each of the numbers ..."); it is
-    recorded in the audit and still needs a quarter of the words shared."""
+    recorded in the audit and still needs a quarter of the words shared.
+    `bare` anchors a task whose scheme prints no reprint at all, only the
+    part's own marker over its answer (the 2020 Higher true/false key's
+    "(c)" over "T"): the anchor must be that marker alone, and `paired` must
+    say why. `path` walks the scheme's own numbering down to the anchor: each
+    entry is a printed line read exactly ("11", "(c)"), and the anchor is the
+    first `start` after the last of them -- for a scheme that prints no
+    reprints at all (2020 Ordinary) the part's marker is found under its own
+    question and letter, not by counting."""
     return {'page': page, 'start': start, 'end': end, 'after': after, 'nth': nth,
-            **({'paired': paired} if paired else {})}
+            **({'paired': paired} if paired else {}), **({'bare': True} if bare else {}),
+            **({'path': list(path)} if path else {})}
 
 
-def S(start, end=None, page=None, after=None, before=None, nth=1):
+def S(start, end=None, page=None, after=None, before=None, nth=1, skip_marks=False, piece=None, psep=None):
     """A slice of the SCHEME (page defaults to the task's scheme page, and the
-    search starts after the task's own reprinted question)."""
+    search starts after the task's own reprinted question). `skip_marks`
+    leaves out a mark cell printed on its own line inside the answer. `piece`
+    keeps one entry of a printed list cut at the scheme's own separator
+    ("A = Larynx/ B = Trachea/ ..." piece 2 is "B = Trachea"); a list of
+    pieces with a list of separators (`psep`) cuts again inside it."""
     return {'src': 'scheme', 'page': page, 'start': start, 'end': end,
-            'after': after, 'before': before, 'nth': nth}
+            'after': after, 'before': before, 'nth': nth, **({'skip_marks': True} if skip_marks else {}),
+            **({'piece': piece, 'psep': psep} if piece else {})}
 
 
 def pt(sel, marks, label=None, kind=None, note=None, units=None, first_alt=False,
@@ -339,6 +360,13 @@ def anyn(sel, claim, per, steps=None, note=None, options=None, note_sel=None, op
     marks a menu the scheme prints as examples ("e.g.")."""
     return {'type': 'anyn', 'sel': sel, 'claim': claim, 'per': per, 'steps': steps,
             'note': note, 'options': options, 'note_sel': note_sel, 'open_list': open_list, 'sep': sep}
+
+
+def allof(parts, marks, note=None, note_sel=None):
+    """One row for several answers printed on separate lines and priced
+    together ("All three 3"): `parts` is a list of (label selector or None,
+    answer selector)."""
+    return {'type': 'allof', 'parts': parts, 'marks': marks, 'note': note, 'note_sel': note_sel}
 
 
 def G(kind, page=None, clip=None, expect=None, **kw):

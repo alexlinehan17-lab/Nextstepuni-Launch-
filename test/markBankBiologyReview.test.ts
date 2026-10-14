@@ -1402,3 +1402,100 @@ describe('Biology 2021 Ordinary — reviewed sitting, corrected in place', () =>
     }
   });
 });
+
+const hl20 = sittings['2020-hl'];
+const higher2020 = BIO_HIGHER.filter(card => card.year === 2020) as unknown as ReviewedCard[];
+const hl20ById = new Map(higher2020.map(card => [card.id, card]));
+const hl20Verbatims = (id: string) => (hl20ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
+  .map(row => row.verbatim);
+
+describe('Biology 2020 Higher — carded from a paper-by-paper review', () => {
+  it('ships every reviewed task, and nothing else, for the sitting', () => {
+    expect(hl20.baseTaskCount).toBe(149);
+    expect(hl20.cardCount).toBe(150);
+    expect(higher2020).toHaveLength(150);
+    expect(new Set(hl20.tasks.map(task => task.id))).toEqual(new Set(hl20ById.keys()));
+    // Never carded before: no earlier ids to keep, so no correction record.
+    expect(hl20.review).toBeUndefined();
+    expect(hl20.tasks.every(task => task.status === 'carded')).toBe(true);
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(hl20.sources['038'].sha256)
+      .toBe('345f1b98c137a5041458d9676b5a7a57e06f4b5c0b907bffbd08b02e66997dca');
+    expect(hl20.sources['040'].sha256)
+      .toBe('5838f923f9d86219e405f0845a5eb75ae27ab2f8b01fc75c21891868aec38709');
+    expect(hl20.sources.scheme.sha256)
+      .toBe('0727b8e65364d92e73ef68f73a00d478c57a0dbd701670e013914fc26e6fa9f4');
+    expect([hl20.sources['038'].pages, hl20.sources['040'].pages, hl20.sources.scheme.pages])
+      .toEqual([40, 12, 29]);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const task of hl20.tasks) {
+      const card = hl20ById.get(task.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('adds up to the printed question totals', () => {
+    const totals = new Map<number, number>();
+    for (const task of hl20.tasks) {
+      if (task.route && task.route !== 'paralysis') continue;   // one route per pool
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    expect(totals.get(1)).toBe(24);   // best five of six parts at 4
+    // "6(3) + 2": seven responses each carded at 3, so 21 against the ladder's 20.
+    for (const q of [2, 3, 4, 5, 6]) expect(totals.get(q), `Q${q}`).toBe(21);
+    for (const q of [7, 8, 9]) expect(totals.get(q), `Q${q}`).toBe(30);
+    for (const q of [10, 11, 12, 13]) expect(totals.get(q), `Q${q}`).toBe(60);
+    for (const q of [14, 15]) expect(totals.get(q), `Q${q}`).toBe(90);   // any two of three 30s
+    expect(hl20.tasks.some(task => / Q1[67]/.test(task.questionRef))).toBe(false);
+  });
+
+  it('links each card to the booklet its question is printed in', () => {
+    for (const card of higher2020) {
+      expect(card.paperFileid, card.id).toBe(card.section === 'C' ? 'LC025ALP040EV' : 'LC025ALP038EV');
+    }
+  });
+
+  it('splits only the choice the scheme marks differently per option', () => {
+    expect(hl20.routes).toEqual({ 'Q6(f)': ['paralysis', 'parkinsons-disease'] });
+    const routes = higher2020.filter(card => card.questionRef.startsWith('2020 HL Q6(f) — '));
+    expect(routes.map(card => card.questionRef.split(' — ')[1]).sort())
+      .toEqual(['paralysis', 'parkinsons-disease']);
+    expect(new Set(routes.map(card => card.questionText)).size).toBe(1);
+    // Mendel's second law in two printed wordings: answer variants of one card.
+    const variants = (hl20ById.get('bio-2020-hl-q12-a-ii') as unknown as {
+      answerVariants?: Array<{ id: string }> }).answerVariants;
+    expect(variants?.map(v => v.id)).toEqual(['alleles-combine', 'factors-separate']);
+  });
+
+  it('reads the true/false key from the letter under each part', () => {
+    expect(['a', 'b', 'c', 'd', 'e', 'f', 'g'].map(x => hl20Verbatims(`bio-2020-hl-q3-${x}`)[0]))
+      .toEqual(['F', 'F', 'T', 'F', 'T', 'F', 'F']);
+  });
+
+  it('cards each separately priced entry of a printed list on its own', () => {
+    expect(higher2020.filter(card => card.questionRef.startsWith('2020 HL Q12(b)(ii) — ')).map(card => card.id))
+      .toEqual([1, 2, 3, 4].map(n => `bio-2020-hl-q12-b-ii-stage-${n}`));
+    expect(higher2020.filter(card => card.questionRef.startsWith('2020 HL Q10(c)(ii)'))).toHaveLength(6);
+    expect(hl20Verbatims('bio-2020-hl-q14-c-iv-1'))
+      .toEqual(['Name stage A — Lag / Name stage B — Log / Name stage C — Stationary']);
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph|table)s?\b/i;
+    for (const card of higher2020) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    // The underlined terms and the table of parts to label are set as printed.
+    expect(hl20ById.get('bio-2020-hl-q12-c-i-allele')!.questionFigure).toBeTruthy();
+    expect(hl20ById.get('bio-2020-hl-q13-b-iv')!.questionFigure).toBeTruthy();
+  });
+});

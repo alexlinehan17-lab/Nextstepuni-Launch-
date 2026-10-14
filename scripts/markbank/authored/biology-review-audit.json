@@ -124182,6 +124182,5656 @@
     ],
     "excluded": []
    }
+  },
+  "2020-hl": {
+   "status": "reviewed",
+   "reviewedAt": "2026-10-13",
+   "ledger": "scripts/markbank/authoring/bio_review_2020_hl.py",
+   "method": "Biology 2020 Higher Level — reviewed task ledger, carded from the papers for the first time.",
+   "sources": {
+    "038": {
+     "path": "examiner-reports/biology/papers/2020-hl-038-paper.pdf",
+     "fileid": "LC025ALP038EV.pdf",
+     "sha256": "345f1b98c137a5041458d9676b5a7a57e06f4b5c0b907bffbd08b02e66997dca",
+     "bytes": 624286,
+     "pages": 40,
+     "pageRoles": {
+      "1": "cover",
+      "2": "instructions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "questions",
+      "9": "questions",
+      "10": "questions",
+      "11": "questions",
+      "12": "answerbook-instructions",
+      "13": "answer-pages",
+      "14": "answer-pages",
+      "15": "answer-pages",
+      "16": "answer-pages",
+      "17": "answer-pages",
+      "18": "answer-pages",
+      "19": "answer-pages",
+      "20": "answer-pages",
+      "21": "answer-pages",
+      "22": "answer-pages",
+      "23": "answer-pages",
+      "24": "answer-pages",
+      "25": "answer-pages",
+      "26": "answer-pages",
+      "27": "answer-pages",
+      "28": "answer-pages",
+      "29": "answer-pages",
+      "30": "answer-pages",
+      "31": "answer-pages",
+      "32": "answer-pages",
+      "33": "answer-pages",
+      "34": "answer-pages",
+      "35": "answer-pages",
+      "36": "graph-paper",
+      "37": "graph-paper",
+      "38": "graph-paper",
+      "39": "graph-paper",
+      "40": "back-cover"
+     },
+     "pagesLifted": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ]
+    },
+    "040": {
+     "path": "examiner-reports/biology/papers/2020-hl-040-paper.pdf",
+     "fileid": "LC025ALP040EV.pdf",
+     "sha256": "5838f923f9d86219e405f0845a5eb75ae27ab2f8b01fc75c21891868aec38709",
+     "bytes": 1220748,
+     "pages": 12,
+     "pageRoles": {
+      "1": "cover",
+      "2": "questions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "questions",
+      "9": "questions",
+      "10": "blank",
+      "11": "blank",
+      "12": "back-cover"
+     },
+     "pagesLifted": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    "scheme": {
+     "path": "examiner-reports/biology/schemes/2020-hl.pdf",
+     "fileid": "LC025ALP000EV.pdf",
+     "sha256": "0727b8e65364d92e73ef68f73a00d478c57a0dbd701670e013914fc26e6fa9f4",
+     "bytes": 457696,
+     "pages": 29,
+     "pageRoles": {
+      "1": "cover",
+      "2": "note",
+      "3": "introduction",
+      "4": "marking-examples",
+      "5": "marking-examples",
+      "6": "annotations",
+      "7": "marking",
+      "8": "marking",
+      "9": "marking",
+      "10": "marking",
+      "11": "marking",
+      "12": "marking",
+      "13": "marking",
+      "14": "marking",
+      "15": "marking",
+      "16": "marking",
+      "17": "marking",
+      "18": "marking",
+      "19": "marking",
+      "20": "marking",
+      "21": "marking",
+      "22": "marking",
+      "23": "marking",
+      "24": "marking",
+      "25": "marking",
+      "26": "marking",
+      "27": "marking",
+      "28": "blank",
+      "29": "back-cover"
+     },
+     "pagesLifted": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+     ]
+    }
+   },
+   "visualSweep": {
+    "038": "all 40 pages rendered and read",
+    "040": "all 12 pages rendered and read",
+    "scheme": "all 29 pages rendered and read"
+   },
+   "questionTotals": {
+    "1": 20,
+    "2": 20,
+    "3": 20,
+    "4": 20,
+    "5": 20,
+    "6": 20,
+    "7": 30,
+    "8": 30,
+    "9": 30,
+    "10": 60,
+    "11": 60,
+    "12": 60,
+    "13": 60
+   },
+   "partTotals": {
+    "7a": 6,
+    "8a": 6,
+    "9a": 6,
+    "7b": 24,
+    "8b": 24,
+    "9b": 24,
+    "10a": 9,
+    "11a": 9,
+    "12a": 9,
+    "13a": 9,
+    "10b": 27,
+    "11b": 27,
+    "12b": 27,
+    "13b": 27,
+    "10c": 24,
+    "11c": 24,
+    "12c": 24,
+    "13c": 24,
+    "14a": 30,
+    "14b": 30,
+    "14c": 30,
+    "15a": 30,
+    "15b": 30,
+    "15c": 30
+   },
+   "tickChecksums": {
+    "1": {
+     "4": 6
+    },
+    "2": {
+     "3": 7
+    },
+    "3": {
+     "3": 7
+    },
+    "4": {
+     "3": 7
+    },
+    "5": {
+     "3": 7
+    },
+    "6": {
+     "3": 7
+    },
+    "7a": {
+     "3": 2
+    },
+    "8a": {
+     "3": 2
+    },
+    "9a": {
+     "3": 2
+    },
+    "7b": {
+     "3": 8
+    },
+    "8b": {
+     "3": 8
+    },
+    "9b": {
+     "3": 8
+    },
+    "10a": {
+     "3": 3
+    },
+    "11a": {
+     "3": 3
+    },
+    "12a": {
+     "3": 3
+    },
+    "13a": {
+     "3": 3
+    },
+    "10b": {
+     "3": 9
+    },
+    "11b": {
+     "3": 9
+    },
+    "12b": {
+     "3": 9
+    },
+    "13b": {
+     "3": 7,
+     "1": 6
+    },
+    "10c": {
+     "3": 8
+    },
+    "11c": {
+     "3": 8
+    },
+    "12c": {
+     "3": 8
+    },
+    "13c": {
+     "3": 8
+    },
+    "14a": {
+     "3": 10
+    },
+    "14b": {
+     "3": 10
+    },
+    "14c": {
+     "3": 9,
+     "1": 3
+    },
+    "15a": {
+     "3": 10
+    },
+    "15b": {
+     "3": 10
+    },
+    "15c": {
+     "3": 9,
+     "1": 3
+    }
+   },
+   "selectionScan": [
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Instructions: \"blue or black pen\", not a question."
+    },
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "any five",
+     "disposition": "Section A rubric: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "any two",
+     "disposition": "Section B rubric: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "any four",
+     "disposition": "Section C rubric: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "any five",
+     "disposition": "Section A rubric repeated."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "any five",
+     "disposition": "Q1 best five of (a)-(f): each part is its own card; the best five make 20."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "the following",
+     "disposition": "Q1 parts list."
+    },
+    {
+     "doc": "038",
+     "page": 5,
+     "directive": "the following",
+     "disposition": "Q3 lead-in: every statement asked."
+    },
+    {
+     "doc": "038",
+     "page": 5,
+     "directive": "or",
+     "disposition": "Q3 \"true or false\": the answer options."
+    },
+    {
+     "doc": "038",
+     "page": 7,
+     "directive": "the following",
+     "disposition": "Q5 lead-in: every structure asked, one card per lettered part."
+    },
+    {
+     "doc": "038",
+     "page": 8,
+     "directive": "or",
+     "disposition": "Q6(b) \"(or group of substances)\": the same ask, not a choice."
+    },
+    {
+     "doc": "038",
+     "page": 8,
+     "directive": "choose",
+     "disposition": "Q6(f) \"Choose either Parkinson's disease or paralysis\": separate causes and treatments per option: ROUTES."
+    },
+    {
+     "doc": "038",
+     "page": 8,
+     "directive": "either",
+     "disposition": "Q6(f), same choice."
+    },
+    {
+     "doc": "038",
+     "page": 8,
+     "directive": "or",
+     "disposition": "Q6(f), same choice."
+    },
+    {
+     "doc": "038",
+     "page": 9,
+     "directive": "any two",
+     "disposition": "Section B rubric repeated."
+    },
+    {
+     "doc": "038",
+     "page": 9,
+     "directive": "the following",
+     "disposition": "Q7(b) lead-in: every part asked."
+    },
+    {
+     "doc": "038",
+     "page": 9,
+     "directive": "or",
+     "disposition": "Q7(b) \"an enzyme or cell\": either form; marked on the same rows."
+    },
+    {
+     "doc": "038",
+     "page": 9,
+     "directive": "or",
+     "disposition": "Q7(b) \"Name the enzyme or cell\", same."
+    },
+    {
+     "doc": "038",
+     "page": 9,
+     "directive": "or",
+     "disposition": "Q7(b)(i) \"that enzyme or cell\", same."
+    },
+    {
+     "doc": "038",
+     "page": 9,
+     "directive": "or",
+     "disposition": "Q7(b)(ii) \"immobilised enzyme or cell\", same."
+    },
+    {
+     "doc": "038",
+     "page": 10,
+     "directive": "the following",
+     "disposition": "Q8(b) lead-in: every part asked."
+    },
+    {
+     "doc": "038",
+     "page": 10,
+     "directive": "or",
+     "disposition": "Q8(b) \"starch agar or skimmed milk (protein) agar\": marked on shared rows (\"must match agar type\"); one card per part."
+    },
+    {
+     "doc": "038",
+     "page": 11,
+     "directive": "the following",
+     "disposition": "Q9(b) lead-in: every part asked."
+    },
+    {
+     "doc": "038",
+     "page": 11,
+     "directive": "or",
+     "disposition": "Q9(b) \"a sheep's or an ox's heart\": either heart; marked the same."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "any four",
+     "disposition": "Section C rubric repeated."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Q10(b) source title \"ornamental wonder or ecological menace\": passage text."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Q10(c)(ii)3 \"four or five members\": description."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "or",
+     "disposition": "Q11(b)(ii) \"A, B or C\": the answer options."
+    },
+    {
+     "doc": "040",
+     "page": 3,
+     "directive": "the following",
+     "disposition": "Q11(c) lead-in: every part asked."
+    },
+    {
+     "doc": "040",
+     "page": 4,
+     "directive": "any two",
+     "disposition": "Q12(b)(iii) \"any two applications\": the scheme prints two application rows; one card."
+    },
+    {
+     "doc": "040",
+     "page": 4,
+     "directive": "the following",
+     "disposition": "Q12(c)(ii) \"the following chickens\": a reference."
+    },
+    {
+     "doc": "040",
+     "page": 5,
+     "directive": "the following",
+     "disposition": "Q13(b)(iv) \"Label the following parts\": all six labels; one card."
+    },
+    {
+     "doc": "040",
+     "page": 5,
+     "directive": "the following",
+     "disposition": "Q13(c) \"The following table\": a reference."
+    },
+    {
+     "doc": "040",
+     "page": 6,
+     "directive": "any two",
+     "disposition": "Q14 \"any two of (a), (b), (c)\": whole-part choice; every part is carded."
+    },
+    {
+     "doc": "040",
+     "page": 6,
+     "directive": "the following",
+     "disposition": "Q14(b) lead-in: every part asked."
+    },
+    {
+     "doc": "040",
+     "page": 8,
+     "directive": "any two",
+     "disposition": "Q15 \"any two of (a), (b), (c)\": whole-part choice; every part is carded."
+    },
+    {
+     "doc": "040",
+     "page": 8,
+     "directive": "or",
+     "disposition": "Q15(a)(iv) \"agriculture or horticulture\": either setting; one menu."
+    },
+    {
+     "doc": "040",
+     "page": 9,
+     "directive": "the following",
+     "disposition": "Q15(c) lead-in: every part asked."
+    },
+    {
+     "doc": "040",
+     "page": 9,
+     "directive": "any three",
+     "disposition": "Q15(c)(ii) \"any three zones\": a bounded menu on one card."
+    }
+   ],
+   "routes": {
+    "Q6(f)": [
+     "paralysis",
+     "parkinsons-disease"
+    ]
+   },
+   "tasks": [
+    {
+     "status": "carded",
+     "key": "1a",
+     "id": "bio-2020-hl-q1-a",
+     "questionRef": "2020 HL Q1(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "trace-elements",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1b",
+     "id": "bio-2020-hl-q1-b",
+     "questionRef": "2020 HL Q1(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "elements-in-lipids",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1c",
+     "id": "bio-2020-hl-q1-c",
+     "questionRef": "2020 HL Q1(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "unit-of-lipids",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.83,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1d",
+     "id": "bio-2020-hl-q1-d",
+     "questionRef": "2020 HL Q1(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "catabolic-pathway",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1e",
+     "id": "bio-2020-hl-q1-e",
+     "questionRef": "2020 HL Q1(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "polysaccharides",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1f",
+     "id": "bio-2020-hl-q1-f",
+     "questionRef": "2020 HL Q1(f)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "glycogen",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2a",
+     "id": "bio-2020-hl-q2-a",
+     "questionRef": "2020 HL Q2(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "purpose-of-an-experiment",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2b",
+     "id": "bio-2020-hl-q2-b",
+     "questionRef": "2020 HL Q2(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "why-a-control",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2c",
+     "id": "bio-2020-hl-q2-c",
+     "questionRef": "2020 HL Q2(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "identifying-the-control",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2d",
+     "id": "bio-2020-hl-q2-d",
+     "questionRef": "2020 HL Q2(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "unreliable-selection",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.62,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2e",
+     "id": "bio-2020-hl-q2-e",
+     "questionRef": "2020 HL Q2(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "improving-the-design",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3a",
+     "id": "bio-2020-hl-q3-a",
+     "questionRef": "2020 HL Q3(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "spindle-in-metaphase",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint of this part, only its own marker over its answer. The key prints T or F under each part's column header.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3b",
+     "id": "bio-2020-hl-q3-b",
+     "questionRef": "2020 HL Q3(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "products-of-fermentation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of this part, only its own marker over its answer. The key prints T or F under each part's column header.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3c",
+     "id": "bio-2020-hl-q3-c",
+     "questionRef": "2020 HL Q3(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "translation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of this part, only its own marker over its answer. The key prints T or F under each part's column header.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3d",
+     "id": "bio-2020-hl-q3-d",
+     "questionRef": "2020 HL Q3(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "prokaryotic-cells",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of this part, only its own marker over its answer. The key prints T or F under each part's column header.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3e",
+     "id": "bio-2020-hl-q3-e",
+     "questionRef": "2020 HL Q3(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-5",
+     "concept": "natural-selection",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of this part, only its own marker over its answer. The key prints T or F under each part's column header.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3f",
+     "id": "bio-2020-hl-q3-f",
+     "questionRef": "2020 HL Q3(f)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "effects-of-mutation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of this part, only its own marker over its answer. The key prints T or F under each part's column header.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3g",
+     "id": "bio-2020-hl-q3-g",
+     "questionRef": "2020 HL Q3(g)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "ribosomes",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of this part, only its own marker over its answer. The key prints T or F under each part's column header.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4a",
+     "id": "bio-2020-hl-q4-a",
+     "questionRef": "2020 HL Q4(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "dna-name",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-dna",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4b",
+     "id": "bio-2020-hl-q4-b",
+     "questionRef": "2020 HL Q4(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "guanine",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-dna",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4c",
+     "id": "bio-2020-hl-q4-c",
+     "questionRef": "2020 HL Q4(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "nucleotide",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-dna",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4d",
+     "id": "bio-2020-hl-q4-d",
+     "questionRef": "2020 HL Q4(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "base-pairs",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-dna",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.75,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4e",
+     "id": "bio-2020-hl-q4-e",
+     "questionRef": "2020 HL Q4(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "hydrogen-bonds",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-dna",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.75,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4f",
+     "id": "bio-2020-hl-q4-f",
+     "questionRef": "2020 HL Q4(f)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "dna-and-rna",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-dna",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4g",
+     "id": "bio-2020-hl-q4-g",
+     "questionRef": "2020 HL Q4(g)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "non-nuclear-dna",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-dna",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5a",
+     "id": "bio-2020-hl-q5-a",
+     "questionRef": "2020 HL Q5(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "cones",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5b",
+     "id": "bio-2020-hl-q5-b",
+     "questionRef": "2020 HL Q5(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "optic-nerve",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5c",
+     "id": "bio-2020-hl-q5-c",
+     "questionRef": "2020 HL Q5(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "iris",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5d",
+     "id": "bio-2020-hl-q5-d",
+     "questionRef": "2020 HL Q5(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "eustachian-tube",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5e",
+     "id": "bio-2020-hl-q5-e",
+     "questionRef": "2020 HL Q5(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "semicircular-canals",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5f",
+     "id": "bio-2020-hl-q5-f",
+     "questionRef": "2020 HL Q5(f)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "ligaments",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5g",
+     "id": "bio-2020-hl-q5-g",
+     "questionRef": "2020 HL Q5(g)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "cartilage",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6a",
+     "id": "bio-2020-hl-q6-a",
+     "questionRef": "2020 HL Q6(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "axon",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-neuron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6b",
+     "id": "bio-2020-hl-q6-b",
+     "questionRef": "2020 HL Q6(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "neurotransmitters",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-neuron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.5,
+     "pairedBy": "The scheme's \"Name the substance produced A\" for the paper's \"released by A during a nerve impulse\".",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6c",
+     "id": "bio-2020-hl-q6-c",
+     "questionRef": "2020 HL Q6(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "myelin",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-neuron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6d",
+     "id": "bio-2020-hl-q6-d",
+     "questionRef": "2020 HL Q6(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "function-of-myelin",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-neuron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6e",
+     "id": "bio-2020-hl-q6-e",
+     "questionRef": "2020 HL Q6(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "direction-of-impulse",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-neuron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of this part, only its own marker over its answer.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6f",
+     "id": "bio-2020-hl-q6-f-paralysis",
+     "questionRef": "2020 HL Q6(f) — paralysis",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "paralysis-cause-and-treatment",
+     "route": "paralysis",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of this part, only its own marker over its answer.",
+     "decision": "Paralysis or Parkinson's disease: the scheme prints a separate column of causes and of treatments for each, so each is a route card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6f",
+     "id": "bio-2020-hl-q6-f-parkinsons-disease",
+     "questionRef": "2020 HL Q6(f) — parkinsons-disease",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "parkinsons-disease-cause-and-treatment",
+     "route": "parkinsons-disease",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of this part, only its own marker over its answer.",
+     "decision": "Paralysis or Parkinson's disease: the scheme prints a separate column of causes and of treatments for each, so each is a route card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7ai",
+     "id": "bio-2020-hl-q7-a-i",
+     "questionRef": "2020 HL Q7(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "immobilised-enzymes",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7aii",
+     "id": "bio-2020-hl-q7-a-ii",
+     "questionRef": "2020 HL Q7(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "advantages-of-immobilisation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7b",
+     "id": "bio-2020-hl-q7-b",
+     "questionRef": "2020 HL Q7(b)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "enzyme-or-cell-immobilised",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The ask printed under (b) before its (i): its own 3-mark row, carded as Q7(b).",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7bi",
+     "id": "bio-2020-hl-q7-b-i",
+     "questionRef": "2020 HL Q7(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "immobilising-method",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7bii",
+     "id": "bio-2020-hl-q7-b-ii",
+     "questionRef": "2020 HL Q7(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "using-immobilised-enzymes",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8ai",
+     "id": "bio-2020-hl-q8-a-i",
+     "questionRef": "2020 HL Q8(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "germination",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8aii",
+     "id": "bio-2020-hl-q8-a-ii",
+     "questionRef": "2020 HL Q8(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "conditions-for-germination",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bi",
+     "id": "bio-2020-hl-q8-b-i",
+     "questionRef": "2020 HL Q8(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "soaking-seeds",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.83,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bii",
+     "id": "bio-2020-hl-q8-b-ii",
+     "questionRef": "2020 HL Q8(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "preparing-the-seeds",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8biii",
+     "id": "bio-2020-hl-q8-b-iii",
+     "questionRef": "2020 HL Q8(b)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "incubating-the-plates",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8biv",
+     "id": "bio-2020-hl-q8-b-iv",
+     "questionRef": "2020 HL Q8(b)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "testing-for-digestion",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Starch or skimmed-milk agar is marked on one row (\"must match agar type\"): one card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bv",
+     "id": "bio-2020-hl-q8-b-v",
+     "questionRef": "2020 HL Q8(b)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "evidence-of-digestion",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.83,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9ai",
+     "id": "bio-2020-hl-q9-a-i",
+     "questionRef": "2020 HL Q9(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "separate-circulations",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.89,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9aii",
+     "id": "bio-2020-hl-q9-a-ii",
+     "questionRef": "2020 HL Q9(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "diastole",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bi",
+     "id": "bio-2020-hl-q9-b-i",
+     "questionRef": "2020 HL Q9(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "left-and-right-sides",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bii",
+     "id": "bio-2020-hl-q9-b-ii",
+     "questionRef": "2020 HL Q9(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "coronary-artery",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9biii",
+     "id": "bio-2020-hl-q9-b-iii",
+     "questionRef": "2020 HL Q9(b)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "finding-the-bicuspid-valve",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9biv",
+     "id": "bio-2020-hl-q9-b-iv",
+     "questionRef": "2020 HL Q9(b)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "finding-a-semilunar-valve",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "Either semilunar valve is marked on the same two rows: one card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ai",
+     "id": "bio-2020-hl-q10-a-i",
+     "questionRef": "2020 HL Q10(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "why-adaptations",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10aii",
+     "id": "bio-2020-hl-q10-a-ii",
+     "questionRef": "2020 HL Q10(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "types-of-adaptation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bi",
+     "id": "bio-2020-hl-q10-b-i",
+     "questionRef": "2020 HL Q10(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "gunnera-outcompetes",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bii",
+     "id": "bio-2020-hl-q10-b-ii",
+     "questionRef": "2020 HL Q10(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "controlling-gunnera",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10biii",
+     "id": "bio-2020-hl-q10-b-iii",
+     "questionRef": "2020 HL Q10(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "gunnera-in-poor-soil",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10biv",
+     "id": "bio-2020-hl-q10-b-iv",
+     "questionRef": "2020 HL Q10(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "biological-control-of-gunnera",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bv",
+     "id": "bio-2020-hl-q10-b-v",
+     "questionRef": "2020 HL Q10(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "gunnera-spreading",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.89,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bvi",
+     "id": "bio-2020-hl-q10-b-vi",
+     "questionRef": "2020 HL Q10(b)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "abiotic-limits-on-gunnera",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ci",
+     "id": "bio-2020-hl-q10-c-i",
+     "questionRef": "2020 HL Q10(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "why-survey",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.83,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10cii1",
+     "id": "bio-2020-hl-q10-c-ii-1",
+     "questionRef": "2020 HL Q10(c)(ii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "naming-the-ecosystem",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10cii2",
+     "id": "bio-2020-hl-q10-c-ii-2",
+     "questionRef": "2020 HL Q10(c)(ii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "drawing-a-food-chain",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10cii3",
+     "id": "bio-2020-hl-q10-c-ii-3",
+     "questionRef": "2020 HL Q10(c)(ii)3",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "length-of-food-chains",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10cii4",
+     "id": "bio-2020-hl-q10-c-ii-4",
+     "questionRef": "2020 HL Q10(c)(ii)4",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "drawing-a-pyramid-of-numbers",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10cii5",
+     "id": "bio-2020-hl-q10-c-ii-5",
+     "questionRef": "2020 HL Q10(c)(ii)5",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "positions-in-the-pyramid",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10cii6",
+     "id": "bio-2020-hl-q10-c-ii-6",
+     "questionRef": "2020 HL Q10(c)(ii)6",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "limits-of-pyramids",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ai",
+     "id": "bio-2020-hl-q11-a-i",
+     "questionRef": "2020 HL Q11(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "autotrophic-nutrition",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11aii",
+     "id": "bio-2020-hl-q11-a-ii",
+     "questionRef": "2020 HL Q11(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "photosynthesis-equation",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bi",
+     "id": "bio-2020-hl-q11-b-i",
+     "questionRef": "2020 HL Q11(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "stomata",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-leaf",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bii",
+     "id": "bio-2020-hl-q11-b-ii",
+     "questionRef": "2020 HL Q11(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "palisade-chloroplasts",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-leaf",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.71,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11biii",
+     "id": "bio-2020-hl-q11-b-iii",
+     "questionRef": "2020 HL Q11(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "role-of-chlorophyll",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-leaf",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11biv",
+     "id": "bio-2020-hl-q11-b-iv",
+     "questionRef": "2020 HL Q11(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "electrons-from-chlorophyll",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-leaf",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bv",
+     "id": "bio-2020-hl-q11-b-v",
+     "questionRef": "2020 HL Q11(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 15,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "pathway-two",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-leaf",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ci",
+     "id": "bio-2020-hl-q11-c-i",
+     "questionRef": "2020 HL Q11(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "pyruvate",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11cii",
+     "id": "bio-2020-hl-q11-c-ii",
+     "questionRef": "2020 HL Q11(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "breakdown-of-pyruvate",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.82,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ciii",
+     "id": "bio-2020-hl-q11-c-iii",
+     "questionRef": "2020 HL Q11(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "krebs-cycle",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.5,
+     "pairedBy": "The scheme's \"Name the series of reactions\" for the paper's two-sentence ask ending \"Name this series of reactions\".",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11civ",
+     "id": "bio-2020-hl-q11-c-iv",
+     "questionRef": "2020 HL Q11(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "electron-transport-chain",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ai",
+     "id": "bio-2020-hl-q12-a-i",
+     "questionRef": "2020 HL Q12(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "heredity",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12aii",
+     "id": "bio-2020-hl-q12-a-ii",
+     "questionRef": "2020 HL Q12(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "independent-assortment",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme prints the law in two wordings, each on two 3-mark rows, joined by \"OR\": answer variants of one task.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bi",
+     "id": "bio-2020-hl-q12-b-i",
+     "questionRef": "2020 HL Q12(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-3",
+     "concept": "profiling-and-screening",
+     "route": null,
+     "rows": 2,
+     "figure": "q12-profiling",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bii1",
+     "id": "bio-2020-hl-q12-b-ii-stage-1",
+     "questionRef": "2020 HL Q12(b)(ii) — Stage 1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-3",
+     "concept": "profiling-isolation",
+     "route": null,
+     "item": "Stage 1",
+     "rows": 1,
+     "figure": "q12-profiling",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bii2",
+     "id": "bio-2020-hl-q12-b-ii-stage-2",
+     "questionRef": "2020 HL Q12(b)(ii) — Stage 2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-3",
+     "concept": "profiling-cutting",
+     "route": null,
+     "item": "Stage 2",
+     "rows": 1,
+     "figure": "q12-profiling",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bii3",
+     "id": "bio-2020-hl-q12-b-ii-stage-3",
+     "questionRef": "2020 HL Q12(b)(ii) — Stage 3",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-3",
+     "concept": "profiling-separation",
+     "route": null,
+     "item": "Stage 3",
+     "rows": 1,
+     "figure": "q12-profiling",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bii4",
+     "id": "bio-2020-hl-q12-b-ii-stage-4",
+     "questionRef": "2020 HL Q12(b)(ii) — Stage 4",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-3",
+     "concept": "profiling-analysis",
+     "route": null,
+     "item": "Stage 4",
+     "rows": 1,
+     "figure": "q12-profiling",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12biii",
+     "id": "bio-2020-hl-q12-b-iii",
+     "questionRef": "2020 HL Q12(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-3",
+     "concept": "uses-of-profiling",
+     "route": null,
+     "rows": 2,
+     "figure": "q12-profiling",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The scheme prints two application areas, one row each: one card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12biv",
+     "id": "bio-2020-hl-q12-b-iv",
+     "questionRef": "2020 HL Q12(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-3",
+     "concept": "identical-twins",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-profiling",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ci-allele",
+     "id": "bio-2020-hl-q12-c-i-allele",
+     "questionRef": "2020 HL Q12(c)(i) — Allele",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "allele",
+     "route": null,
+     "item": "Allele",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q12c-passage",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ci-incomplete-dominance",
+     "id": "bio-2020-hl-q12-c-i-incomplete-dominance",
+     "questionRef": "2020 HL Q12(c)(i) — Incomplete dominance",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "incomplete-dominance",
+     "route": null,
+     "item": "Incomplete dominance",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q12c-passage",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ci-homozygous",
+     "id": "bio-2020-hl-q12-c-i-homozygous",
+     "questionRef": "2020 HL Q12(c)(i) — Homozygous",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "homozygous",
+     "route": null,
+     "item": "Homozygous",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q12c-passage",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ci-phenotype",
+     "id": "bio-2020-hl-q12-c-i-phenotype",
+     "questionRef": "2020 HL Q12(c)(i) — Phenotype",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "phenotype",
+     "route": null,
+     "item": "Phenotype",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q12c-passage",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12cii",
+     "id": "bio-2020-hl-q12-c-ii",
+     "questionRef": "2020 HL Q12(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "incomplete-dominance-cross",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ciii",
+     "id": "bio-2020-hl-q12-c-iii",
+     "questionRef": "2020 HL Q12(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "complete-dominance-ratio",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13ai",
+     "id": "bio-2020-hl-q13-a-i",
+     "questionRef": "2020 HL Q13(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "homeostasis",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13aii",
+     "id": "bio-2020-hl-q13-a-ii",
+     "questionRef": "2020 HL Q13(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "why-homeostasis",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13aiii",
+     "id": "bio-2020-hl-q13-a-iii",
+     "questionRef": "2020 HL Q13(a)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "excretion",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13bi",
+     "id": "bio-2020-hl-q13-b-i",
+     "questionRef": "2020 HL Q13(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "where-urea-is-made",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13bii",
+     "id": "bio-2020-hl-q13-b-ii",
+     "questionRef": "2020 HL Q13(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "source-of-urea",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.75,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13biii1",
+     "id": "bio-2020-hl-q13-b-iii-1",
+     "questionRef": "2020 HL Q13(b)(iii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "bowmans-capsule-location",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-kidney",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.75,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13biii2",
+     "id": "bio-2020-hl-q13-b-iii-2",
+     "questionRef": "2020 HL Q13(b)(iii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "loop-of-henle-location",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-kidney",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.67,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13biii3",
+     "id": "bio-2020-hl-q13-b-iii-3",
+     "questionRef": "2020 HL Q13(b)(iii)3",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "ureter",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-kidney",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13biv",
+     "id": "bio-2020-hl-q13-b-iv",
+     "questionRef": "2020 HL Q13(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-2-6",
+     "concept": "drawing-a-nephron",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": "q13b-iv-labels",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "The parts to label are printed as a table: shown as the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13ci",
+     "id": "bio-2020-hl-q13-c-i",
+     "questionRef": "2020 HL Q13(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "plasma-and-filtrate",
+     "route": null,
+     "rows": 2,
+     "figure": "q13-table",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13cii1",
+     "id": "bio-2020-hl-q13-c-ii-1",
+     "questionRef": "2020 HL Q13(c)(ii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "glucose-in-filtrate",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-table",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13cii2",
+     "id": "bio-2020-hl-q13-c-ii-2",
+     "questionRef": "2020 HL Q13(c)(ii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "glucose-reabsorption",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-table",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13ciii1",
+     "id": "bio-2020-hl-q13-c-iii-1",
+     "questionRef": "2020 HL Q13(c)(iii)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "salt-and-urine-volume",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-table",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13ciii2",
+     "id": "bio-2020-hl-q13-c-iii-2",
+     "questionRef": "2020 HL Q13(c)(iii)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "adh-and-urine-volume",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-table",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14ai",
+     "id": "bio-2020-hl-q14-a-i",
+     "questionRef": "2020 HL Q14(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "role-of-menstrual-cycle",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-cycle",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14aii",
+     "id": "bio-2020-hl-q14-a-ii",
+     "questionRef": "2020 HL Q14(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "menstruation",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-cycle",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.56,
+     "pairedBy": "The scheme's reprint reads days 1-4 where the paper prints days 1-5; the same event is asked.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14aiii",
+     "id": "bio-2020-hl-q14-a-iii",
+     "questionRef": "2020 HL Q14(a)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "progesterone-drop",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-cycle",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14aiv",
+     "id": "bio-2020-hl-q14-a-iv",
+     "questionRef": "2020 HL Q14(a)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "where-oestrogen-is-made",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-cycle",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14av",
+     "id": "bio-2020-hl-q14-a-v",
+     "questionRef": "2020 HL Q14(a)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "oestrogen-levels",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-cycle",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.83,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14avi",
+     "id": "bio-2020-hl-q14-a-vi",
+     "questionRef": "2020 HL Q14(a)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "ovulation-and-lh",
+     "route": null,
+     "rows": 2,
+     "figure": "q14-cycle",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14avii",
+     "id": "bio-2020-hl-q14-a-vii",
+     "questionRef": "2020 HL Q14(a)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "corpus-luteum",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-cycle",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.86,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14aviii",
+     "id": "bio-2020-hl-q14-a-viii",
+     "questionRef": "2020 HL Q14(a)(viii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "reading-the-cycle-for-pregnancy",
+     "route": null,
+     "rows": 2,
+     "figure": "q14-cycle",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.67,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bi1",
+     "id": "bio-2020-hl-q14-b-i-1",
+     "questionRef": "2020 HL Q14(b)(i)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "pollen-development",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bi2",
+     "id": "bio-2020-hl-q14-b-i-2",
+     "questionRef": "2020 HL Q14(b)(i)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "pollination-to-fertilisation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.9,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bii",
+     "id": "bio-2020-hl-q14-b-ii",
+     "questionRef": "2020 HL Q14(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "wind-pollination",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14biii",
+     "id": "bio-2020-hl-q14-b-iii",
+     "questionRef": "2020 HL Q14(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       23
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "advantages-of-sexual-reproduction",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.86,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14ci",
+     "id": "bio-2020-hl-q14-c-i",
+     "questionRef": "2020 HL Q14(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       24
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-3-2",
+     "concept": "drawing-a-bacterium",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cii",
+     "id": "bio-2020-hl-q14-c-ii",
+     "questionRef": "2020 HL Q14(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       24
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "binary-fission",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14ciii",
+     "id": "bio-2020-hl-q14-c-iii",
+     "questionRef": "2020 HL Q14(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       24
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "process-of-binary-fission",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.5,
+     "pairedBy": "The scheme names the process (\"binary fission\") where the paper says \"this asexual reproduction\".",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14civ1",
+     "id": "bio-2020-hl-q14-c-iv-1",
+     "questionRef": "2020 HL Q14(c)(iv)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       24
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "stages-of-growth",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-growth",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of this part, only its own marker over its answer. Its items are reprinted as row labels.",
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14civ2",
+     "id": "bio-2020-hl-q14-c-iv-2",
+     "questionRef": "2020 HL Q14(c)(iv)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       24
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "growth-curve-axis",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-growth",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": "\"Each of\" a printed list, every entry priced on its own: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cv",
+     "id": "bio-2020-hl-q14-c-v",
+     "questionRef": "2020 HL Q14(c)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       24
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "endospore-formation",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-growth",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ai",
+     "id": "bio-2020-hl-q15-a-i",
+     "questionRef": "2020 HL Q15(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       25
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "tropism",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15aii",
+     "id": "bio-2020-hl-q15-a-ii",
+     "questionRef": "2020 HL Q15(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       25
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "where-auxins-are-made",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15aiii",
+     "id": "bio-2020-hl-q15-a-iii",
+     "questionRef": "2020 HL Q15(a)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       25
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "benefit-of-phototropism",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.83,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15aiv",
+     "id": "bio-2020-hl-q15-a-iv",
+     "questionRef": "2020 HL Q15(a)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       25
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "uses-of-growth-regulators",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15av",
+     "id": "bio-2020-hl-q15-a-v",
+     "questionRef": "2020 HL Q15(a)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       25
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "iaa-concentration",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-iaa",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15avi",
+     "id": "bio-2020-hl-q15-a-vi",
+     "questionRef": "2020 HL Q15(a)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       25
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "auxins-as-hormones",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bi",
+     "id": "bio-2020-hl-q15-b-i",
+     "questionRef": "2020 HL Q15(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       26
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-1",
+     "concept": "viral-coat",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bii",
+     "id": "bio-2020-hl-q15-b-ii",
+     "questionRef": "2020 HL Q15(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       26
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-1",
+     "concept": "viral-nucleic-acid",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15biii",
+     "id": "bio-2020-hl-q15-b-iii",
+     "questionRef": "2020 HL Q15(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       26
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-1",
+     "concept": "obligate-parasites",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15biv",
+     "id": "bio-2020-hl-q15-b-iv",
+     "questionRef": "2020 HL Q15(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       26
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-1-1",
+     "concept": "viral-replication",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.88,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bv",
+     "id": "bio-2020-hl-q15-b-v",
+     "questionRef": "2020 HL Q15(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       26
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "induced-immunity",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bvi",
+     "id": "bio-2020-hl-q15-b-vi",
+     "questionRef": "2020 HL Q15(b)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       26
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "immunity-from-vaccination",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.8,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bvii",
+     "id": "bio-2020-hl-q15-b-vii",
+     "questionRef": "2020 HL Q15(b)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       26
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "active-and-passive-immunity",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.67,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ci",
+     "id": "bio-2020-hl-q15-c-i",
+     "questionRef": "2020 HL Q15(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "drawing-a-root",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15cii",
+     "id": "bio-2020-hl-q15-c-ii",
+     "questionRef": "2020 HL Q15(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-2-6",
+     "concept": "zones-of-the-root",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ciii",
+     "id": "bio-2020-hl-q15-c-iii",
+     "questionRef": "2020 HL Q15(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "zone-of-absorption",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15civ",
+     "id": "bio-2020-hl-q15-c-iv",
+     "questionRef": "2020 HL Q15(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "osmosis-into-roots",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15cv",
+     "id": "bio-2020-hl-q15-c-v",
+     "questionRef": "2020 HL Q15(c)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "xylem",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15cvi",
+     "id": "bio-2020-hl-q15-c-vi",
+     "questionRef": "2020 HL Q15(c)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "xylem-adaptations",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15cvii",
+     "id": "bio-2020-hl-q15-c-vii",
+     "questionRef": "2020 HL Q15(c)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       27
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "cohesion-tension",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    }
+   ],
+   "cardCount": 150,
+   "baseTaskCount": 149,
+   "figures": [
+    "biology-2020-hl-q11-leaf",
+    "biology-2020-hl-q12-profiling",
+    "biology-2020-hl-q12c-passage",
+    "biology-2020-hl-q13-kidney",
+    "biology-2020-hl-q13-table",
+    "biology-2020-hl-q13b-iv-labels",
+    "biology-2020-hl-q14-cycle",
+    "biology-2020-hl-q14-growth",
+    "biology-2020-hl-q15-iaa",
+    "biology-2020-hl-q4-dna",
+    "biology-2020-hl-q6-neuron"
+   ],
+   "checks": {
+    "censusLeaves": 131,
+    "censusLeavesClaimed": 131,
+    "atlas": {
+     "1": {
+      "atlasTopics": [
+       "biology-higher-new-course-12-chemicals-of-life-biomolecules",
+       "biology-higher-old-course-food-food-tests"
+      ],
+      "taskTopics": [
+       "bio-1-2"
+      ]
+     },
+     "2": {
+      "atlasTopics": [
+       "biology-higher-new-course-u2-investigating-in-science",
+       "biology-higher-old-course-the-scientific-method"
+      ],
+      "taskTopics": [
+       "bio-u2"
+      ]
+     },
+     "3": {
+      "atlasTopics": [
+       "biology-higher-new-course-23-cell-division-and-cancer",
+       "biology-higher-old-course-cell-division",
+       "biology-higher-new-course-22-respiration",
+       "biology-higher-new-course-13-unit-of-life-cells",
+       "biology-higher-new-course-15-origins-of-life-evolution"
+      ],
+      "taskTopics": [
+       "bio-1-3",
+       "bio-1-5",
+       "bio-2-2",
+       "bio-2-3"
+      ]
+     },
+     "4": {
+      "atlasTopics": [
+       "biology-higher-new-course-12-dna-rna-and-the-genetic-code",
+       "biology-higher-old-course-genetics-dna-evolution"
+      ],
+      "taskTopics": [
+       "bio-1-2"
+      ]
+     },
+     "5": {
+      "atlasTopics": [
+       "biology-higher-new-course-24-the-musculoskeletal-system",
+       "biology-higher-old-course-musculoskeletal-system"
+      ],
+      "taskTopics": [
+       "bio-2-4"
+      ]
+     },
+     "6": {
+      "atlasTopics": [
+       "biology-higher-new-course-24-the-nervous-system",
+       "biology-higher-old-course-nervous-system"
+      ],
+      "taskTopics": [
+       "bio-2-4"
+      ]
+     },
+     "7": {
+      "atlasTopics": [
+       "biology-higher-old-course-cell-metabolism-enzymes",
+       "biology-higher-new-course-21-enzymes"
+      ],
+      "taskTopics": [
+       "bio-2-1"
+      ]
+     },
+     "8": {
+      "atlasTopics": [
+       "biology-higher-old-course-plant-reproduction",
+       "biology-higher-new-course-25-reproduction-plant"
+      ],
+      "taskTopics": [
+       "bio-2-5"
+      ]
+     },
+     "9": {
+      "atlasTopics": [
+       "biology-higher-new-course-26-the-circulatory-system-and-blood",
+       "biology-higher-old-course-blood-circulatory-system"
+      ],
+      "taskTopics": [
+       "bio-2-6"
+      ]
+     },
+     "10": {
+      "atlasTopics": [
+       "biology-higher-new-course-31-ecology-ecosystems-and-biodiversity",
+       "biology-higher-new-course-31-investigating-an-ecosystem",
+       "biology-higher-old-course-the-study-of-an-ecosystem"
+      ],
+      "taskTopics": [
+       "bio-3-1"
+      ]
+     },
+     "11": {
+      "atlasTopics": [
+       "biology-higher-new-course-22-photosynthesis",
+       "biology-higher-new-course-22-respiration",
+       "biology-higher-old-course-photosynthesis",
+       "biology-higher-old-course-respiration"
+      ],
+      "taskTopics": [
+       "bio-2-2"
+      ]
+     },
+     "12": {
+      "atlasTopics": [
+       "biology-higher-new-course-14-information-of-life-genetic-inheritance",
+       "biology-higher-new-course-26-the-breathing-system",
+       "biology-higher-new-course-33-genetic-engineering",
+       "biology-higher-old-course-genetics-dna-evolution"
+      ],
+      "taskTopics": [
+       "bio-1-4",
+       "bio-3-3"
+      ]
+     },
+     "13": {
+      "atlasTopics": [
+       "biology-higher-new-course-24-homeostasis",
+       "biology-higher-new-course-26-the-urinary-system",
+       "biology-higher-old-course-excretion-thermoregulation"
+      ],
+      "taskTopics": [
+       "bio-2-4",
+       "bio-2-6"
+      ]
+     },
+     "14": {
+      "atlasTopics": [
+       "biology-higher-new-course-25-reproduction-human",
+       "biology-higher-new-course-25-reproduction-plant",
+       "biology-higher-new-course-32-microorganisms",
+       "biology-higher-old-course-bacteria",
+       "biology-higher-old-course-human-reproduction",
+       "biology-higher-old-course-plant-reproduction"
+      ],
+      "taskTopics": [
+       "bio-2-5",
+       "bio-3-2"
+      ]
+     },
+     "15": {
+      "atlasTopics": [
+       "biology-higher-new-course-24-immunity",
+       "biology-higher-new-course-24-plant-responses",
+       "biology-higher-new-course-26-plant-structure-and-transport",
+       "biology-higher-old-course-plant-responses",
+       "biology-higher-old-course-plant-transport",
+       "biology-higher-old-course-viruses",
+       "biology-higher-new-course-11-viruses-classification-and-the-domains-of-life"
+      ],
+      "taskTopics": [
+       "bio-1-1",
+       "bio-2-4",
+       "bio-2-6"
+      ]
+     }
+    },
+    "atlasRule": "every task topic is a curriculum node of one of its question's Topic Atlas topics (biology-<year>-exam-topic-map.json via biology-curriculum-crosswalk.json)",
+    "tickChecksumsMatched": 30,
+    "layoutChecks": [
+     {
+      "doc": "scheme",
+      "page": 10,
+      "item": "Damage (injury) to Spinal Cord",
+      "column": "Paralysis"
+     },
+     {
+      "doc": "scheme",
+      "page": 10,
+      "item": "Decrease in dopamine levels",
+      "column": "Parkinson’s Disease"
+     },
+     {
+      "doc": "scheme",
+      "page": 10,
+      "item": "Physical Therapy",
+      "column": "Paralysis"
+     },
+     {
+      "doc": "scheme",
+      "page": 10,
+      "item": "Levo (L)-Dopa (with carbidopa)",
+      "column": "Parkinson’s Disease"
+     }
+    ],
+    "excluded": []
+   }
   }
  }
 }

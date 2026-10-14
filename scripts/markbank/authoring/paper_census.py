@@ -61,8 +61,10 @@ SUBJECTS = {
     # as a side effect they turned a 1,636-ask ledger into 4,677 asks with no
     # card ever written against them (the trap recorded in
     # markbank-card-text-corrections). The window is a DECISION, like DCG's:
-    # widen it when those sittings are audited, never by fetching.
-    'biology': {'mode': 'merged', 'from': 2021},
+    # widen it when those sittings are audited, never by fetching. 'also'
+    # admits one earlier sitting at a time, as each is carded paper by paper
+    # (bio_review_<year>_<level>.py).
+    'biology': {'mode': 'merged', 'from': 2021, 'also': [(2020, 'hl')]},
     'chemistry': {'mode': 'merged'},
     'physics': {'mode': 'merged'},
     'agricultural-science': {'mode': 'merged'},
@@ -509,6 +511,8 @@ def sittings(subject):
     """
     root = PP.papers_dir(subject)
     first = SUBJECTS.get(subject, {}).get('from')
+    # Sittings admitted ahead of the window, one at a time, as each is audited.
+    also = {tuple(s) for s in SUBJECTS.get(subject, {}).get('also', [])}
     found = collections.defaultdict(list)
     for f in sorted(os.listdir(root)):
         # 'cl' is the common-level token: LCVP is examined at one level, and
@@ -518,7 +522,7 @@ def sittings(subject):
         # 'em' — separate papers sat by different candidates on the same
         # afternoon, and a digits-only pattern found neither of them.
         m = re.fullmatch(r'(\d{4})-(hl|ol|cl)(?:-([a-z0-9]+))?-paper\.pdf', f)
-        if m and (first is None or int(m.group(1)) >= first):
+        if m and (first is None or int(m.group(1)) >= first or (int(m.group(1)), m.group(2)) in also):
             found[(int(m.group(1)), m.group(2))].append(m.group(3))
     return [(y, l, comps) for (y, l), comps in sorted(found.items())]
 

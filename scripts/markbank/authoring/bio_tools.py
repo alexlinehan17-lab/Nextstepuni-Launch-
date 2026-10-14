@@ -18,6 +18,10 @@ checks a ledger before `bio_review.py <year> <level> --write`.
                                                     topics per question plus ADDS ("5:24-immunity;8:...",
                                                     "-topic" drops a wrong reference topic); refuses to
                                                     change a level already mapped unless --replace
+  python3 bio_tools.py scheme-md YEAR LEVEL         write the scheme's markdown, the copy the deck build's
+                                                    provenance gate reads: extraction, then the table cells,
+                                                    block order, column runs and fractions appended, in the
+                                                    order the 2021-2026 files carry them
   python3 bio_tools.py identity [YEAR-LEVEL ...]    re-run --write for every reviewed sitting (except those
                                                     named) and report whether the bank comes back byte-identical
 
@@ -275,6 +279,8 @@ def cmd_topics(year, level, adds='', *flags):
                  'it and gains the topics its reviewed tasks need.', 'questions': {}}
     before = {k: v for k, v in doc['questions'].items() if k.startswith(f'{word}|')}
     for q in range(1, 18):
+        if not ref[q] and not extra.get(q):
+            continue   # a sitting with fewer questions (15 up to 2020)
         for t in extra.get(q, []):
             if t not in cw:
                 raise SystemExit(f'{t} is not in the curriculum crosswalk')
@@ -327,7 +333,51 @@ def cmd_identity(*skip):
     print('byte-identical' if not moved else 'CHANGED: ' + ', '.join(moved))
 
 
-COMMANDS = {k[4:]: v for k, v in globals().items() if k.startswith('cmd_')}
+def cmd_scheme_md(year, level):
+    """examiner-reports/biology/schemes/<year>-<level>.md from its PDF, for one
+    sitting only. The append scripts are called by function with this PDF
+    rather than by command: their own lookup refuses a scheme whose cover does
+    not name its level (2020 Ordinary's cover reads only "Marking Scheme
+    Biology"), and append-scheme-blocks.py rewrites every scheme of a subject
+    and drops what follows its own marker."""
+    import importlib.util
+    import subprocess
+    mb = os.path.join(ROOT, 'scripts', 'markbank')
+    pdf = os.path.join(ROOT, 'examiner-reports', 'biology', 'schemes', f'{year}-{level}.pdf')
+    md = pdf[:-4] + '.md'
+
+    def load(path, name):
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return mod
+
+    def append(mod, lines, drop_empty=False):
+        text = open(md, encoding='utf-8').read()
+        if mod.START in text:
+            text = re.sub(re.escape(mod.START) + r'.*?' + re.escape(mod.END) + r'\n?', '', text, flags=re.S)
+        if drop_empty and not lines:
+            body = ''
+        else:
+            body = '\n\n' + f'{mod.START}\n' + '\n'.join(lines) + f'\n{mod.END}\n'
+        with open(md, 'w', encoding='utf-8') as fh:
+            fh.write(text.rstrip('\n') + (body or '\n'))
+
+    subprocess.run([sys.executable, os.path.join(mb, 'extract-scheme.py'), pdf, '-o', md], check=True, cwd=ROOT)
+    tables = load(os.path.join(mb, 'append-scheme-tables.py'), 'scheme_tables')
+    append(tables, tables.cells(tables.Path(pdf)))
+    blocks = load(os.path.join(HERE, 'append-scheme-blocks.py'), 'scheme_blocks')
+    original = open(md, encoding='utf-8', errors='ignore').read().split(blocks.MARK)[0].rstrip('\n')
+    with open(md, 'w', encoding='utf-8') as fh:
+        fh.write(f'{original}\n\n{blocks.MARK}\n\n{blocks.fold(blocks.block_text(pdf))}\n')
+    columns = load(os.path.join(mb, 'append-scheme-columns.py'), 'scheme_columns')
+    append(columns, columns.column_runs(columns.Path(pdf)))
+    fractions = load(os.path.join(mb, 'append-scheme-fractions.py'), 'scheme_fractions')
+    append(fractions, fractions.fractions(fractions.Path(pdf)), drop_empty=True)
+    print(md)
+
+
+COMMANDS = {k[4:].replace('_', '-'): v for k, v in globals().items() if k.startswith('cmd_')}
 
 if __name__ == '__main__':
     if len(sys.argv) < 2 or sys.argv[1] not in COMMANDS:

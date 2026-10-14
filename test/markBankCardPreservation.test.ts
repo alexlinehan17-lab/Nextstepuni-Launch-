@@ -135,7 +135,11 @@ const decks = [
    * re-reviewed the same way (bio_review_2021_hl.py): all 177 shipped ids are
    * kept (168 corrected, 9 verified) and 11 tasks the old cards bundled or
    * missed ship as new ids. */
-  ['biology:higher', BIO_HIGHER, 1078, '073a713ef3730cdf8f53ddc0f554878af95abdadf9cc23bd20fed685eeb4d456'],
+  /* 2026-10-13: biology higher 1078 -> 1228. The 2020 Higher sitting, never
+   * carded before, is carded from a paper-by-paper review
+   * (bio_review_2020_hl.py): 149 tasks, 150 cards once Q6(f) is split into
+   * its two printed disorders. Every earlier id is unchanged. */
+  ['biology:higher', BIO_HIGHER, 1228, '70a1431d60c2f682debd1138ed4d537eb19c44136f5639138d2b95a3921762e9'],
   /* 2026-10-11: biology ordinary 686 -> 873. The 2026 Ordinary sitting is
    * added from the same review (bio_review_2026_ol.py): 183 tasks, 187 cards
    * once the four closed choose-one pools (Q7(c), Q13(b)(vi), Q16(c)(vi),
@@ -857,7 +861,8 @@ describe('Mark Bank card preservation', () => {
     // ...and the 2022 Ordinary review's 18 new ids: 20,078 + 18.
     // ...and the 2021 Higher review's 11 new ids: 20,096 + 11.
     // ...and the 2021 Ordinary review's 32 new ids: 20,107 + 32.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(20_139);
+    // ...and the 2020 Higher sitting, carded for the first time: 20,139 + 150.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(20_289);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -915,9 +920,11 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('ukrainian:')
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
-      // Biology's reviewed 2026 sittings are additions, counted by their own test.
+      // Biology's reviewed 2026 sittings, and the 2010-2020 sittings carded
+      // for the first time, are additions, counted by their own test.
       .reduce((total, [name, cards]) => total + (name.startsWith('biology:')
-        ? cards.filter(card => card.year <= 2025 && !BIOLOGY_REVIEW_ADDED.has(card.id)).length
+        ? cards.filter(card => card.year >= 2021 && card.year <= 2025
+          && !BIOLOGY_REVIEW_ADDED.has(card.id)).length
         : cards.length), 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
@@ -946,12 +953,17 @@ describe('Mark Bank card preservation', () => {
     const withdrawnOrdinary = withdrawn('ol');
     expect(withdrawnHigher.map(card => card.id)).toEqual(['bio-2024-hl-q8-b2']);
     expect(withdrawnOrdinary.map(card => card.id)).toEqual(['bio-2025-ol-q16-ciii-fig']);
-    expect(identityHash([...BIO_HIGHER.filter(card =>
+    expect(identityHash([...BIO_HIGHER.filter(card => card.year >= 2021 &&
       card.year <= 2025 && !BIOLOGY_REVIEW_ADDED.has(card.id)), ...withdrawnHigher]))
       .toBe('45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836');
-    expect(identityHash([...BIO_ORDINARY.filter(card =>
+    expect(identityHash([...BIO_ORDINARY.filter(card => card.year >= 2021 &&
       card.year <= 2025 && !BIOLOGY_REVIEW_ADDED.has(card.id)), ...withdrawnOrdinary]))
       .toBe('5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e');
+    // The sittings before 2021 had no Biology cards: everything they carry is new.
+    const earlierHigher = BIO_HIGHER.filter(card => card.year <= 2020);
+    expect(earlierHigher).toHaveLength(150);
+    expect(earlierHigher.every(card => card.id.startsWith(`bio-${card.year}-hl-`))).toBe(true);
+    expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(0);
     const added = BIO_HIGHER.filter(card => card.year === 2026);
     expect(added).toHaveLength(188);
     expect(added.every(card => card.id.startsWith('bio-2026-hl-'))).toBe(true);

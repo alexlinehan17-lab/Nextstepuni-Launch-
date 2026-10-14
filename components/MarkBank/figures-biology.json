@@ -1,4 +1,231 @@
 {
+ "biology-2020-hl-q11-leaf": {
+  "src": "/exam-figures/biology/markbank/biology-2020-hl-q11-leaf.png",
+  "md5": "74a629184b02eb0cdb9e13bf5b178452",
+  "alt": "Drawing of a transverse section of a leaf: a flat upper layer marked A, a row of tall column-shaped cells marked B, loosely packed rounded cells with air spaces marked C, a vein, and openings in the lower surface labelled Stomata.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2020 HL Q11(b)(i)",
+  "year": 2020,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   176,
+   132,
+   462,
+   307
+  ]
+ },
+ "biology-2020-hl-q12-profiling": {
+  "src": "/exam-figures/biology/markbank/biology-2020-hl-q12-profiling.png",
+  "md5": "96bf45ee9cf8b6f6bb74b1d6b63a2122",
+  "alt": "Four arrows numbered 1 to 4 link five pictures: a sample tube labelled \"Sample used to create a DNA profile\", a long DNA strand, DNA cut into short pieces, bands in the lanes of a gel, and a pattern of bands labelled \"A DNA profile\".",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 HL Q12(b)(i)",
+  "year": 2020,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   86,
+   172,
+   512,
+   272
+  ]
+ },
+ "biology-2020-hl-q12c-passage": {
+  "src": "/exam-figures/biology/markbank/biology-2020-hl-q12c-passage.png",
+  "md5": "8ee4ed3f8277502a03b83993d51d2610",
+  "alt": "The printed passage about Andalusian chickens, with the words allele, incomplete dominance, homozygous and phenotype underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 HL Q12(c)(i) — Allele",
+  "year": 2020,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   108,
+   418,
+   540,
+   481
+  ]
+ },
+ "biology-2020-hl-q13-kidney": {
+  "src": "/exam-figures/biology/markbank/biology-2020-hl-q13-kidney.png",
+  "md5": "e0d8203d192882736167c72cccbe688f",
+  "alt": "Drawing of a human kidney cut lengthways: the outer region labelled Cortex, the inner region labelled Medulla, the central cavity labelled Pelvis, and the tube leaving it marked A.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2020 HL Q13(b)(iii)1",
+  "year": 2020,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   358,
+   128,
+   528,
+   258
+  ]
+ },
+ "biology-2020-hl-q13-table": {
+  "src": "/exam-figures/biology/markbank/biology-2020-hl-q13-table.png",
+  "md5": "710add5824e05706640f01c7b9508b18",
+  "alt": "Table of composition in grams per 100 cm3 of fluid. Urea: blood plasma 0.03, glomerular filtrate 0.03, urine 1.8. Glucose: 0.1, 0.1, 0. Proteins: 7, 0, 0.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 HL Q13(c)(i)",
+  "year": 2020,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   168,
+   466,
+   512,
+   532
+  ]
+ },
+ "biology-2020-hl-q13b-iv-labels": {
+  "src": "/exam-figures/biology/markbank/biology-2020-hl-q13b-iv-labels.png",
+  "md5": "40df75ae8dbe508684ed7cfc6249e438",
+  "alt": "A table of the six parts to label: Bowman's capsule, Loop of Henle, Proximal convoluted tubule, Collecting duct, Distal convoluted tubule, Glomerulus.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 HL Q13(b)(iv)",
+  "year": 2020,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   140,
+   346,
+   540,
+   392
+  ]
+ },
+ "biology-2020-hl-q14-cycle": {
+  "src": "/exam-figures/biology/markbank/biology-2020-hl-q14-cycle.png",
+  "md5": "4be398a7c6bc42bdd471e81c65bac1bb",
+  "alt": "Diagram of the menstrual cycle over days 1 to 28: the top row shows a follicle developing, bursting at day 14 and then changing into a body that shrinks; the bottom row shows the uterine lining breaking away from day 1 to day 5, then thickening steadily to day 28.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 HL Q14(a)(i)",
+  "year": 2020,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   124,
+   150,
+   545,
+   322
+  ]
+ },
+ "biology-2020-hl-q14-growth": {
+  "src": "/exam-figures/biology/markbank/biology-2020-hl-q14-growth.png",
+  "md5": "e3789b92b184b19fbeacf537ec0630f2",
+  "alt": "Growth curve for microorganisms: the y-axis is labelled Y and the x-axis Time (hours). The line starts flat at A, rises steeply at B, levels off at C, then falls.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2020 HL Q14(c)(iv)1",
+  "year": 2020,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   210,
+   238,
+   400,
+   432
+  ]
+ },
+ "biology-2020-hl-q15-iaa": {
+  "src": "/exam-figures/biology/markbank/biology-2020-hl-q15-iaa.png",
+  "md5": "aba3dbf770367b788c261b4c38f3e7f7",
+  "alt": "Graph of growth promotion (+) above zero and inhibition (-) below against IAA concentration from 0.001 to 100 mg/l, low to high. The root line (solid) rises to a peak at about 0.01 and falls below zero from about 0.1; the shoot line (dashed) rises to a higher peak at about 1.0 and falls below zero near 100.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 HL Q15(a)(v)",
+  "year": 2020,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   150,
+   288,
+   470,
+   516
+  ]
+ },
+ "biology-2020-hl-q4-dna": {
+  "src": "/exam-figures/biology/markbank/biology-2020-hl-q4-dna.png",
+  "md5": "836d4ce38709642ded4a5abb6f0dd70c",
+  "alt": "Diagram of part of a DNA molecule: two sugar-phosphate backbones, with sugars marked S and phosphates marked P, joined by paired bases A-T, T-A, G-C and C-G. A box labelled K encloses one base pair, L points at the dotted bonds between a pair of bases, a tall box labelled J encloses a phosphate, sugar and base, and a label reads \"Identify G\" beside a base marked G.",
+  "lettersVisible": [
+   "G",
+   "J",
+   "K",
+   "L"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2020 HL Q4(a)",
+  "year": 2020,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   130,
+   80,
+   512,
+   276
+  ]
+ },
+ "biology-2020-hl-q6-neuron": {
+  "src": "/exam-figures/biology/markbank/biology-2020-hl-q6-neuron.png",
+  "md5": "d932a71dd36e6131990f518b71ab77cb",
+  "alt": "Diagram of a sensory neuron: branched endings at the left marked A, a long fibre marked B wrapped in segments with a Schwann cell labelled, a cell body on a short side branch labelled Cell body, and an empty box near the fibre for an arrow.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2020 HL Q6(a)",
+  "year": 2020,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP038EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   88,
+   72,
+   495,
+   278
+  ]
+ },
  "biology-2021-hl-q10-table": {
   "src": "/exam-figures/biology/markbank/biology-2021-hl-q10-table.png",
   "md5": "b90ed05a1f88bd0966807e1c76e24d83",
