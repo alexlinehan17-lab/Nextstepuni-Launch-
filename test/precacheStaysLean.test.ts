@@ -42,6 +42,7 @@ describe('service worker precache stays lean', () => {
       '**/DiagramVault*.js',                        // Diagram Vault
       '**/higher-*.js', '**/ordinary-*.js',         // per-subject exam corpora
       '**/factory-*.js', '**/reviewed-*.js',        // reviewed subject task data
+      '**/rubric-*.js',                             // reviewed Business rubric cards
       '**/exam-topic-data-*.js', '**/paper-topic-data-*.js', // Atlas registries
       '**/catchUpLaneData*.js',                     // Catch-Up Lane
       '**/commandWordData*.js',                     // Command Word Reflex

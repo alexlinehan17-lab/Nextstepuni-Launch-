@@ -21,6 +21,19 @@ Two kinds of key, because two kinds of font reach the text layer:
   glyph, while their subset glyph ids are renumbered per PDF. These are keyed by
   family and code point, each settled by cropping the glyph and looking at it.
 
+A third failure needs no broken code point at all. A CID font drawn with no
+ToUnicode reaches the text layer as U+FFFD in the text trace, and rawdict
+reports the glyph id itself as the character: Times New Roman's "LEAVING"
+arrives as "/($9,1*" (gid = code - 29), Calibri's "PAYE" as "W\x04z\x1c", a
+space as "\x03". Those are control characters and plain ASCII, invisible to a
+code-point gate. page_unnamed() finds such glyphs by the trace, and
+repair_char() reads them by family and glyph id. CID fonts keep the original
+font's glyph order, so these ids are derived from sane sightings in CID fonts
+elsewhere in the corpus, at any id, and kept in a table of their own
+(byCidGlyphId) that only an unnamed CID glyph consults: a low id means a
+different glyph in a renumbered simple-font subset, so the mangled-code-point
+repair never reads it.
+
 Anything the table cannot resolve is left in place so the gates refuse it.
 """
 import json
@@ -59,7 +72,8 @@ def load_table(path: Path = TABLE_PATH) -> dict:
     data = json.loads(path.read_text(encoding="utf-8"))
     by_gid = {f'{e["font"]}|{e["gid"]}': e["text"] for e in data["byGlyphId"]}
     by_code = {f'{e["font"]}|{e["code"]}': e["text"] for e in data["byCodePoint"]}
-    return {"gid": by_gid, "code": by_code}
+    by_cid = {f'{e["font"]}|{e["gid"]}': e["text"] for e in data.get("byCidGlyphId", [])}
+    return {"gid": by_gid, "code": by_code, "cid": by_cid}
 
 
 def page_glyphs(page) -> dict:
@@ -73,12 +87,50 @@ def page_glyphs(page) -> dict:
     return origin
 
 
-def repair_char(ch: dict, origin: dict, table: dict) -> str:
-    """The text a rawdict character really stands for, or the character itself."""
+def cid_fonts(page) -> set:
+    """Trace font names that a CID (Type0) font draws on the page."""
+    names = set()
+    for font in page.get_fonts():
+        if font[2] == "Type0":
+            name = re.sub(r"^[A-Z]{6}\+", "", font[3])
+            names.add(re.sub(r"-Identity-[HV]$", "", name))
+    return names
+
+
+def page_unnamed(page) -> set:
+    """Drawing origins of glyphs a CID font draws with no Unicode (trace U+FFFD).
+
+    rawdict reports such a glyph's id as its character, so it can look like a
+    control character or an ordinary letter; only the trace shows it is unnamed.
+    """
+    cids = cid_fonts(page)
+    out = set()
+    for sp in page.get_texttrace():
+        if re.sub(r"^[A-Z]{6}\+", "", sp.get("font", "")) not in cids:
+            continue
+        for ch in sp["chars"]:
+            if ch[1] >= 0 and ch[0] == 0xFFFD:
+                out.add((round(ch[2][0], 2), round(ch[2][1], 2)))
+    return out
+
+
+def repair_char(ch: dict, origin: dict, table: dict, unnamed: set = None) -> str:
+    """The text a rawdict character really stands for, or the character itself.
+
+    `unnamed` (from page_unnamed) also reads the glyphs a CID font draws with
+    no Unicode, whatever character rawdict reported for them.
+    """
     c = ch["c"]
+    key = (round(ch["origin"][0], 2), round(ch["origin"][1], 2))
     if not MANGLED.match(c):
+        if unnamed and key in unnamed:
+            hit = origin.get(key)
+            if hit:
+                text = table.get("cid", {}).get(f"{hit[0]}|{hit[1]}", table["gid"].get(f"{hit[0]}|{hit[1]}"))
+                if text is not None:
+                    return text
         return c
-    hit = origin.get((round(ch["origin"][0], 2), round(ch["origin"][1], 2)))
+    hit = origin.get(key)
     if hit:
         fam, gid = hit
         text = table["gid"].get(f"{fam}|{gid}")
@@ -88,6 +140,20 @@ def repair_char(ch: dict, origin: dict, table: dict) -> str:
         if text is not None:
             return text
     return c
+
+
+def page_text(page, table: dict) -> str:
+    """The page's text layer, every glyph read by its id where the table knows it:
+    rawdict characters joined line by line (as get_text() joins them), with
+    mangled code points and unnamed CID glyphs repaired in place."""
+    origin, unnamed = page_glyphs(page), page_unnamed(page)
+    parts = []
+    for blk in page.get_text("rawdict")["blocks"]:
+        for line in blk.get("lines", []):
+            parts.append("".join(repair_char(ch, origin, table, unnamed) for sp in line["spans"] for ch in sp["chars"]))
+            parts.append("\n")
+        parts.append("\n")
+    return "".join(parts)
 
 
 def document_map(doc, table: dict) -> tuple:

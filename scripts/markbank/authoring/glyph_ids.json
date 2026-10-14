@@ -459,5 +459,289 @@
    "text": "❹",
    "evidence": "settled by crop: 2022 HL scheme p. 20: \"9680 ❹\", \"3400 ❹\"."
   }
+ ],
+ "byCidGlyphId": [
+  {
+   "font": "Calibri",
+   "gid": 3,
+   "text": " ",
+   "evidence": "settled by crop: 2016 OL scheme p. 4: \"the candidate’s answer in order to merit the assigned marks\", drawn blank between the words and reported as U+0003. Its sane readings split between U+0020 and U+00A0, both a space, so the id fails the agreement rule."
+  },
+  {
+   "font": "Calibri",
+   "gid": 4,
+   "text": "A",
+   "evidence": "derived: 7197 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "Calibri",
+   "gid": 18,
+   "text": "C",
+   "evidence": "derived: 8225 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "Calibri",
+   "gid": 24,
+   "text": "D",
+   "evidence": "derived: 3542 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "Calibri",
+   "gid": 28,
+   "text": "E",
+   "evidence": "derived: 5058 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "Calibri",
+   "gid": 39,
+   "text": "G",
+   "evidence": "derived: 2581 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "Calibri",
+   "gid": 58,
+   "text": "J",
+   "evidence": "derived: 322 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "Calibri",
+   "gid": 69,
+   "text": "N",
+   "evidence": "derived: 2346 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "Calibri",
+   "gid": 87,
+   "text": "P",
+   "evidence": "derived: 3089 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "Calibri",
+   "gid": 94,
+   "text": "S",
+   "evidence": "derived: 5499 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "Calibri",
+   "gid": 104,
+   "text": "U",
+   "evidence": "derived: 1264 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "Calibri",
+   "gid": 122,
+   "text": "Y",
+   "evidence": "derived: 218 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "MinionPro",
+   "gid": 1,
+   "text": " ",
+   "evidence": "settled by crop: 2016 OL scheme pp. 17 and 20: a blank 2.7pt glyph at the end of \"Shareholders only lose what they invest into the\" and \"sees an opportunity and uses his initiative to set up the\", reported as U+0001; nothing is drawn."
+  },
+  {
+   "font": "Symbol",
+   "gid": 120,
+   "text": "•",
+   "evidence": "settled by crop: 2016 OL scheme pp. 4, 10, 17 and 20: the round bullet before \"The support notes presented are not exclusive\", drawn by a CID Symbol font with no Unicode and reported as \"x\"; SymbolMT gid 120 is \"•\"."
+  },
+  {
+   "font": "SymbolMT",
+   "gid": 120,
+   "text": "•",
+   "evidence": "derived: 2265 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 3,
+   "text": " ",
+   "evidence": "derived: 3431 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 19,
+   "text": "0",
+   "evidence": "derived: 126 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 20,
+   "text": "1",
+   "evidence": "derived: 131 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 21,
+   "text": "2",
+   "evidence": "derived: 93 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 26,
+   "text": "7",
+   "evidence": "derived: 72 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 36,
+   "text": "A",
+   "evidence": "derived: 124 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 37,
+   "text": "B",
+   "evidence": "derived: 78 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 38,
+   "text": "C",
+   "evidence": "derived: 168 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 40,
+   "text": "E",
+   "evidence": "derived: 49 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 41,
+   "text": "F",
+   "evidence": "derived: 152 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 42,
+   "text": "G",
+   "evidence": "derived: 31 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 43,
+   "text": "H",
+   "evidence": "derived: 22 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 44,
+   "text": "I",
+   "evidence": "derived: 47 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 46,
+   "text": "K",
+   "evidence": "derived: 1 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 47,
+   "text": "L",
+   "evidence": "derived: 32 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 48,
+   "text": "M",
+   "evidence": "derived: 223 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 49,
+   "text": "N",
+   "evidence": "derived: 51 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 53,
+   "text": "R",
+   "evidence": "derived: 91 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 54,
+   "text": "S",
+   "evidence": "derived: 47 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 55,
+   "text": "T",
+   "evidence": "derived: 58 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 56,
+   "text": "U",
+   "evidence": "derived: 79 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRoman",
+   "gid": 57,
+   "text": "V",
+   "evidence": "derived: 2 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRomanPSMT",
+   "gid": 3,
+   "text": " ",
+   "evidence": "derived: 7020 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRomanPSMT",
+   "gid": 37,
+   "text": "B",
+   "evidence": "derived: 52 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRomanPSMT",
+   "gid": 51,
+   "text": "P",
+   "evidence": "derived: 68 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRomanPSMT",
+   "gid": 68,
+   "text": "a",
+   "evidence": "derived: 3674 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRomanPSMT",
+   "gid": 72,
+   "text": "e",
+   "evidence": "derived: 1935 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRomanPSMT",
+   "gid": 74,
+   "text": "g",
+   "evidence": "derived: 624 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRomanPSMT",
+   "gid": 78,
+   "text": "k",
+   "evidence": "derived: 74 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRomanPSMT",
+   "gid": 79,
+   "text": "l",
+   "evidence": "derived: 1048 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "TimesNewRomanPSMT",
+   "gid": 81,
+   "text": "n",
+   "evidence": "derived: 2051 sane sighting(s) of this glyph id in CID fonts"
+  },
+  {
+   "font": "Wingdings",
+   "gid": 57,
+   "text": "✓",
+   "evidence": "derived: 10 sane sighting(s) of this glyph id in CID fonts"
+  }
  ]
 }

@@ -277,6 +277,9 @@ interface CardBase {
    *  different topics, and inheriting would file bread mould under the
    *  breathing system. */
   topicId: string;
+  /** Other canonical topics assessed by the same indivisible marked task.
+   * Cross-list the existing card; never duplicate its identity or progress. */
+  additionalTopicIds?: string[];
   /**
    * Level-independent concept identity, shared by an HL card and its OL sibling.
    * Costs one field now and cannot be retrofitted. Students drop from Higher to
@@ -692,6 +695,31 @@ export interface AccountingRubric {
   taskFocus?: string;
 }
 
+/** A published Business allocation within one response, e.g. Name/Explain/Link. */
+export interface BusinessAllocation {
+  id: string;
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  /** The SEC forbids an ABQ link without relevant theory in that response. */
+  requiresAnyOf?: string[];
+}
+
+export interface BusinessRubric {
+  system: 'business';
+  taskRequirements: string[];
+  guidance: string[];
+  responses: Array<{
+    id: string;
+    label: string;
+    allocations: BusinessAllocation[];
+  }>;
+  /** Exact official support notes, shown only after the scheme is revealed. */
+  schemeFileid: string;
+  schemePages: number[];
+  markingGuideNote: string;
+}
+
 /** French writing combines communicative tasks, language quality and format.
  * A band describes the whole response; it is never a claimable answer. */
 export interface FrenchCriterion {
@@ -718,7 +746,7 @@ export interface FrenchRubric {
   practiceNotes?: string[];
 }
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric;
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -976,6 +1004,24 @@ export function tariffReconciles(card: SecCard): boolean {
         && Boolean(solution.sourceFileid) && Boolean(allocationNote.trim())
         && solution.pages.length > 0
         && solution.pages.every(page => Number.isInteger(page) && page > 0);
+    }
+    if (card.rubric.system === 'business') {
+      const { responses } = card.rubric;
+      return responses.length > 0
+        && new Set(responses.map(response => response.id)).size === responses.length
+        && responses.flatMap(response => response.allocations)
+          .reduce((sum, allocation) => sum + allocation.maxMarks, 0) === card.totalMarks
+        && responses.every(response => response.allocations.length > 0
+          && new Set(response.allocations.map(allocation => allocation.id)).size === response.allocations.length
+          && response.allocations.every(allocation =>
+            allocation.permittedMarks.length > 0
+            && Math.min(...allocation.permittedMarks) === 0
+            && Math.max(...allocation.permittedMarks) === allocation.maxMarks
+            && new Set(allocation.permittedMarks).size === allocation.permittedMarks.length
+            && allocation.permittedMarks.every(mark => Number.isInteger(mark) && mark >= 0)
+            && (!allocation.requiresAnyOf || (allocation.requiresAnyOf.length > 0
+              && allocation.requiresAnyOf.every(id => response.allocations.some(candidate =>
+                candidate.id === id && !candidate.requiresAnyOf && candidate.id !== allocation.id))))));
     }
     if (card.rubric.system === 'irish') {
       const { criteria } = card.rubric;

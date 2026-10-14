@@ -21,6 +21,9 @@ const REVIEWED_PATH = path.join(
   ROOT, 'data/examTopics/business-reviewed-question-topics.json',
 );
 const OUTPUT_PATH = path.join(ROOT, 'data/examTopics/business-local-crosswalk.json');
+// Reviewed differences from the SEC paper and scheme, written by
+// build-business-studyclix-anomalies.mjs from the direct Business source review.
+const ANOMALIES_PATH = path.join(ROOT, 'data/examTopics/business-studyclix-anomalies.json');
 const RUNTIME_PATH = path.join(ROOT, 'data/examTopics/business-runtime.json');
 const BASELINE_PATH = path.join(
   ROOT, 'test/fixtures/businessTopicQuestionBaseline.json',
@@ -391,7 +394,27 @@ if (compactPartReferences.some(row => row.some(value => value === undefined))) {
   throw new Error('Business compact part reference contains an unknown value');
 }
 
+// A StudyClix heading whose outgoing-course topic the reviewed SEC question does
+// not carry is a reviewed reference-anomaly, not a match. Applied after the
+// runtime joins are built, so the shipped runtime is unchanged by it.
+const anomalies = fs.existsSync(ANOMALIES_PATH) ? readJson(ANOMALIES_PATH).anomalies : [];
+const anomalyByKey = new Map(anomalies.map(item => [`${item.topicId}\u0000${item.heading}`, item]));
+let anomaliesApplied = 0;
+for (const item of associations) {
+  const anomaly = anomalyByKey.get(`${item.topicId}\u0000${item.heading}`);
+  if (!anomaly) continue;
+  if (item.resolution !== 'matched') throw new Error(`Business anomaly is not a matched heading: ${item.heading}`);
+  item.resolution = 'reference-anomaly';
+  item.secTopicIds = anomaly.secTopicIds;
+  item.reason = anomaly.reason;
+  anomaliesApplied += 1;
+}
+if (anomaliesApplied !== anomalies.length) {
+  throw new Error(`Business anomalies applied ${anomaliesApplied} of ${anomalies.length}`);
+}
+
 const matchedAssociations = associations.filter(item => item.resolution === 'matched');
+const referenceAnomalyAssociations = associations.filter(item => item.resolution === 'reference-anomaly');
 const sourceBlockedAssociations = associations.filter(item => item.resolution === 'source-blocked');
 const matchedQuestionTopicLinks = new Set(matchedAssociations.map(item => [
   item.topicId, item.level, item.year, item.paperKey, item.n,
@@ -404,6 +427,7 @@ const summary = {
   referenceMockAssociations: mocks,
   referenceProviderSampleAssociations: providerSamples,
   matchedAssociations: matchedAssociations.length,
+  referenceAnomalyAssociations: referenceAnomalyAssociations.length,
   sourceBlockedAssociations: sourceBlockedAssociations.length,
   matchedLogicalCards: exactTopicsByCard.size,
   matchedQuestionTopicLinks,

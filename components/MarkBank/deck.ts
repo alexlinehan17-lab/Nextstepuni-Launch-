@@ -465,10 +465,9 @@ export const AGRICULTURAL_SCIENCE_STRANDS: StrandRef[] = [
  * than an invented one, so a card's topicId resolves against the same headings
  * the rest of the app uses.
  *
- * The ABQ is listed as a topic because it IS one — Section 2 Part 1 is worth 80
- * of 400 marks — but no cards are authored for it yet. An Applied Business
- * Question is a long case study with several parts hanging off it, which is a
- * different card shape from a short question, and that shape is undecided.
+ * ABQ cards carry their case study and are filed under the relevant syllabus
+ * topic. Source-reviewed rubric cards preserve the published response
+ * allocations and provide access to the official scheme after reveal.
  */
 export const BUSINESS_STRANDS: StrandRef[] = [
   {
@@ -2251,7 +2250,7 @@ export async function loadCards(subjectId: string, level: Level): Promise<SecCar
 }
 
 export const cardsForTopic = (topicId: string, cards: SecCard[]) =>
-  cards.filter(c => c.topicId === topicId);
+  cards.filter(c => c.topicId === topicId || c.additionalTopicIds?.includes(topicId));
 
 /** Total marks available in a topic — the denominator for "marks secure". */
 export const topicMarks = (topicId: string, cards: SecCard[]) =>
