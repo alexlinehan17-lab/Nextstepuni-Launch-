@@ -70,6 +70,7 @@ import WaysInPanel, {
 import SourceMaterialReader from './SourceMaterialReader';
 import AudioSourcePlayer from './AudioSourcePlayer';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
+import { questionParts } from './questionParts';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -1682,24 +1683,6 @@ const LabelKeyPanel: React.FC<{ keys: LabelKey[] }> = ({ keys }) => {
 
 
 /**
- * The question, set the way the paper sets it.
- *
- * SEC papers hang their part labels — (i), (ii), (a) — in the left margin so the
- * prose of each part starts on a common line, and a student's eye can find "(ii)"
- * without reading. Run inline, as a single paragraph, the labels disappear into
- * the sentence and a two-part question reads as one long instruction.
- *
- * This splits on labels only where the paper actually printed them; a question
- * with no parts renders as one block, unchanged.
- */
-/* Never glued to a letter. "(x)" IS a part label -- Physics 2022 OL Q3 runs
- * to (x) -- but in "h(x) = 2 sin(2x)" it is a function's argument, and
- * splitting there put "(x)" in the part gutter and left the question
- * reading "the tangent line to h". A printed label always follows a space
- * or opens the text. */
-const PART = /\s*(?<![A-Za-z0-9])(\((?:[ivx]+|[a-h])\))\s+/gi;
-
-/**
  * Which emphasis the command clause carries.
  *
  * 'rule' is a weighted underline in the brand orange, sitting clear of the
@@ -1774,47 +1757,6 @@ const Clause: React.FC<{ text: string }> = ({ text }) => {
   );
 };
 
-interface QuestionPart {
-  label: string;
-  body: string;
-  children: QuestionPart[];
-}
-
-const isRomanPart = (label: string) => /^\([ivx]+\)$/i.test(label);
-
-/** Parse the paper's one- and two-level part grammar.
- *
- * A flat label/body pairing cannot represent `(i) (a) … (b) …`: the empty
- * body between `(i)` and `(a)` shifts every later token into the wrong column.
- * SEC questions use roman numerals for the parent and letters for its children,
- * so retain that hierarchy and let both levels keep a real prose column.
- */
-const questionParts = (text: string): QuestionPart[] | null => {
-  const matches = [...text.matchAll(new RegExp(PART.source, PART.flags))];
-  if (!matches.length || (matches[0].index ?? 0) !== 0) return null;
-  const tokens = matches.map((match, index) => ({
-    label: match[1],
-    body: text.slice(
-      (match.index ?? 0) + match[0].length,
-      matches[index + 1]?.index ?? text.length,
-    ).trim(),
-    children: [] as QuestionPart[],
-  }));
-  const parts: QuestionPart[] = [];
-  let parent: QuestionPart | null = null;
-  for (const token of tokens) {
-    if (isRomanPart(token.label)) {
-      parts.push(token);
-      parent = token;
-    } else if (parent) {
-      parent.children.push(token);
-    } else {
-      parts.push(token);
-    }
-  }
-  return parts;
-};
-
 const PartLabel: React.FC<{ children: React.ReactNode; nested?: boolean }> = ({ children, nested = false }) => (
   <span style={{
     minWidth: 0,
@@ -1825,6 +1767,17 @@ const PartLabel: React.FC<{ children: React.ReactNode; nested?: boolean }> = ({ 
   </span>
 );
 
+/**
+ * The question, set the way the paper sets it.
+ *
+ * SEC papers hang their part labels — (i), (ii), (a) — in the left margin so the
+ * prose of each part starts on a common line, and a student's eye can find "(ii)"
+ * without reading. Run inline, as a single paragraph, the labels disappear into
+ * the sentence and a two-part question reads as one long instruction.
+ *
+ * This splits on labels only where the paper actually printed them (see
+ * ./questionParts); a question with no parts renders as one block, unchanged.
+ */
 const QuestionText: React.FC<{ text: string }> = ({ text }) => {
   const parts = questionParts(text);
   // No label at the head means no hanging: one block, as before.

@@ -335,6 +335,51 @@ describe('the question comes first and stays', () => {
       .toHaveStyle({ display: 'grid', gridTemplateColumns: '34px minmax(0, 1fr)' });
   });
 
+  test('leaves a bracketed symbol or a reference to an earlier part inside the part that prints it', () => {
+    // Synthetic, shaped like Chemistry 2026 OL Q5(a): "(B)" is an element
+    // symbol and "(ii)" a reference back, not printed part labels.
+    const question = '(i) Say what the term means. '
+      + '(ii) Write down the values for element one (B) and element two (Cl) from the table. '
+      + '(iii) Use the values you wrote down in (ii) to predict the bond type. '
+      + '(iv) Name two shapes.';
+    renderSession([card({ questionText: question })]);
+
+    const rendered = screen.getByTestId('mark-bank-question-text');
+    const parts = [...rendered.querySelectorAll('[data-question-depth="0"]')];
+    expect(parts.map(part => part.firstElementChild?.textContent)).toEqual(['(i)', '(ii)', '(iii)', '(iv)']);
+    expect(rendered.querySelectorAll('[data-question-depth="1"]')).toHaveLength(0);
+    expect(parts[1]).toHaveTextContent('element one (B) and element two (Cl) from the table.');
+    expect(parts[2]).toHaveTextContent('Use the values you wrote down in (ii) to predict the bond type.');
+  });
+
+  test('keeps "part (b) above" in the part that refers to it', () => {
+    renderSession([card({ questionText: '(a) Name it. (b) Describe it. (c) Justify your answer at part (b) above.' })]);
+
+    const parts = [...screen.getByTestId('mark-bank-question-text').querySelectorAll('[data-question-depth="0"]')];
+    expect(parts.map(part => part.firstElementChild?.textContent)).toEqual(['(a)', '(b)', '(c)']);
+    expect(parts[2]).toHaveTextContent('Justify your answer at part (b) above.');
+  });
+
+  test('still splits at a part that follows one the card leaves out', () => {
+    renderSession([card({ questionText: '(i) What is meant by the term? (iii) Give one advantage. (b) (ii) Does it rise?' })]);
+
+    const rendered = screen.getByTestId('mark-bank-question-text');
+    expect([...rendered.querySelectorAll('[data-question-depth="0"]')].map(part => part.firstElementChild?.textContent))
+      .toEqual(['(i)', '(iii)', '(ii)']);
+    expect([...rendered.querySelectorAll('[data-question-depth="1"]')].map(part => part.firstElementChild?.textContent))
+      .toEqual(['(b)']);
+  });
+
+  test('still restarts the numerals under each new lettered part', () => {
+    renderSession([card({ questionText: '(a) (i) One. (ii) Two. (b) (i) Three. (ii) Four.' })]);
+
+    const rendered = screen.getByTestId('mark-bank-question-text');
+    expect([...rendered.querySelectorAll('[data-question-depth="0"]')].map(part => part.firstElementChild?.textContent))
+      .toEqual(['(a)', '(i)', '(ii)', '(i)', '(ii)']);
+    expect(rendered.querySelectorAll('[data-question-depth="1"]')).toHaveLength(1);
+    expect(rendered).toHaveTextContent('Four.');
+  });
+
   test('shows and grades an Irish listening section once, then advances past every child card', () => {
     const listening = IRISH_HIGHER.filter(entry =>
       entry.year === 2025 && entry.topicId === 'irish-1-0');
