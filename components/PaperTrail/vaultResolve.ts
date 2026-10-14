@@ -106,6 +106,7 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   'english|2016|LC002GLP200EV.pdf',
   'english|2017|LC002ALP100EV.pdf',
   'english|2017|LC002ALP200EV.pdf',
+  'english|2017|LC002GLP100EV.pdf',
   'english|2018|LC002ALP100EV.pdf',
   'english|2018|LC002ALP200EV.pdf',
   'english|2018|LC002GLP100EV.pdf',

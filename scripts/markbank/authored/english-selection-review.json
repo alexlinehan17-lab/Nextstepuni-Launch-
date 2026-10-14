@@ -464,7 +464,7 @@
     "english-2017-ol-p1-t3-a-iii-a": {
       "questionSha256": "86f34bac38bcf990e885b766452f82400d1acd659aaa5594b2502ccc6f68306d",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The task requires a fixed selection from the specifically printed options. Every unordered selection is a separate practice route, retaining the complete published tariff.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF8 — “at least two reasons why robot teachers … should look like the teacher in Image 1 (i.e. a machine) or like the teacher in Image 2 (i.e. a person)”; both are marked on one grid. One 10-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -1460,37 +1460,37 @@
     "english-2017-ol-p1-t1-a-ii": {
       "questionSha256": "0129d08c472dceb6dfcd48a0556fa083e760cc3bd7a53d5ab136b63bdb6fa3c4",
       "kind": "flexible",
-      "reason": "The paper says “word or words”; it intentionally leaves the number selected flexible. Do not invent a fixed choose-one or choose-two requirement."
+      "reason": "Paper and scheme PDF4: “a word or words” from the three printed, explained — one or more, on one grid. One 15-mark response."
     },
     "english-2017-ol-p1-t1-a-iii-a": {
       "questionSha256": "582f20d7850fd1f7fa085f7bac7e569696bbab833b8f7b4299e300b947b20a0a",
       "kind": "open",
-      "reason": "This is a reasoned evaluation with an open range of justifiable positions, not a prescribed list of answer options. Preserve the judgement and its supporting evidence as one task."
+      "reason": "Scheme PDF5: one piece of Donal Ryan’s advice from the final two paragraphs and reasons why it is or is not good advice — one judgement. One 10-mark response."
     },
     "english-2017-ol-p1-t1-a-iii-b": {
       "questionSha256": "74e4d4cd4a46ea028be1c8ce4300a8c9e50a06505ef32fb5c95138f807c45c14",
       "kind": "open",
-      "reason": "The task requests original interpretation, textual evidence, language features, or a freely chosen personal example. It does not prescribe a fixed named or numbered selection pool. Illustrative examples and grammatical “which/or” do not create routes."
+      "reason": "Scheme PDF5: one piece of good advice received from a friend or family member and how the candidate benefitted. One 10-mark response."
     },
     "english-2017-ol-p1-t2-a-ii": {
       "questionSha256": "6607426493c7927ffb9411f396b07db78229c45b712ece49eddd6c510783de45",
       "kind": "flexible",
-      "reason": "The paper says “word or words”; it intentionally leaves the number selected flexible. Do not invent a fixed choose-one or choose-two requirement."
+      "reason": "Paper and scheme PDF6: “a word or words” from the three printed, explained — one or more, on one grid. One 15-mark response."
     },
     "english-2017-ol-p1-t2-a-iii-b": {
       "questionSha256": "74e4d4cd4a46ea028be1c8ce4300a8c9e50a06505ef32fb5c95138f807c45c14",
       "kind": "open",
-      "reason": "The task requests original interpretation, textual evidence, language features, or a freely chosen personal example. It does not prescribe a fixed named or numbered selection pool. Illustrative examples and grammatical “which/or” do not create routes."
+      "reason": "Scheme PDF6: one piece of good advice received from a friend or family member and how the candidate benefitted. One 10-mark response."
     },
     "english-2017-ol-p1-t3-a-ii": {
       "questionSha256": "1d5ba069208496dce019155cabf27bbe1284a30dc265ce0579b83e8258180873",
       "kind": "flexible",
-      "reason": "The paper says “word or words”; it intentionally leaves the number selected flexible. Do not invent a fixed choose-one or choose-two requirement."
+      "reason": "Paper and scheme PDF8: “a word or words” from the three printed, explained — one or more, on one grid. One 15-mark response."
     },
     "english-2017-ol-p1-t3-a-iii-b": {
       "questionSha256": "8140281c4bcecab97739ac1fec7640fe0589352c193c9f37ae9442c70697b48b",
       "kind": "open",
-      "reason": "This is a reasoned evaluation with an open range of justifiable positions, not a prescribed list of answer options. Preserve the judgement and its supporting evidence as one task."
+      "reason": "Scheme PDF8: why the candidate would or would not like to be taught by a robot teacher — one judgement. One 10-mark response."
     },
     "english-2018-hl-p1-t1-a-i": {
       "questionSha256": "817aae9cc656d205669ec86335c887270fb2e96fd8360f3f91b7750d8837e7cb",
@@ -1907,7 +1907,7 @@
     "english-2017-ol-p1-t2-b": {
       "questionSha256": "a27283a6491dc8f371bfabaf70f7b167012d5bc7f3bf203c027f164160ab857f",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The article explicitly offers either of two publication destinations.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF7 — “an article suitable for publication in a school magazine or on a school website”; both outlets are marked on one grid, with at least one suggestion. One 50-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -2238,12 +2238,12 @@
     "english-2017-ol-p1-t1-b": {
       "questionSha256": "5e1690edc130824db5652437f5182cc39b6607691e07c339761c17bf88c1a0d3",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF5: a talk to Third Years on why good subject choices matter and what to consider — both aspects, “although not necessarily equally”. One 50-mark response."
     },
     "english-2017-ol-p1-t3-b": {
       "questionSha256": "3afe890f2a416553dd8b6a185b3f274a514f3ea17e8b3bc7f48f452faf3e7619",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF9: a letter to the Editor giving reasons why the candidate does or does not support replacing teachers with robots — one view. One 50-mark response."
     },
     "english-2018-hl-p1-t1-b": {
       "questionSha256": "1fe48c3dd735244a0fd87124c999718c10c7df15ec6ef009ef33518a26c02ba2",
@@ -3649,37 +3649,37 @@
     "english-2017-ol-p1-composing-1": {
       "questionSha256": "353e2c762dfb5a988c0560e08ba0c5a1004c4a324af3b14b9a2a8c60f92f3c54",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF10: a short story about a character who gets into trouble because of his or her sense of humour. One 100-mark composition."
     },
     "english-2017-ol-p1-composing-2": {
       "questionSha256": "31780c96e93854f3bf5c3c81d9552606f7a34f9d37d6a0ea9db420658dcda1d9",
       "kind": "flexible",
-      "reason": "Optional register, perspective or number of examples remains flexible; the paper does not require an exclusive fixed-size selection from named options."
+      "reason": "Scheme PDF10: a speech, “My School Days”, “which may be serious or humorous or both” — a free register. One 100-mark composition."
     },
     "english-2017-ol-p1-composing-3": {
       "questionSha256": "fc1d60f6b11dee7b04a81eac6b33271514eb0112a3dca61376c0c22fb4b5bea0",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF10: a personal essay on a box of childhood items found in the attic and the feelings and memories they evoke. One 100-mark composition."
     },
     "english-2017-ol-p1-composing-4": {
       "questionSha256": "9535dd6ab8cc2ac56b620f96f8246ddafba908a409c1e9bbbaa3b16c8a7d5984",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF11: a short story in which a family comes to regret adopting a robot. One 100-mark composition."
     },
     "english-2017-ol-p1-composing-5": {
       "questionSha256": "7ee5914a6635e276d47c0b4999a747de5261842d2da1cce0446b0d66b9c7a45b",
-      "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "kind": "required",
+      "reason": "Scheme PDF11: a magazine article advising on study skills, a healthy lifestyle and balancing study with social life — “three elements required … although not necessarily requiring equal attention”. One 100-mark composition."
     },
     "english-2017-ol-p1-composing-6": {
       "questionSha256": "0f741de075c813fa7e6270d778502f895064757384e0d24a396926718a0d9bd4",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF11: a personal essay on the importance of praise and encouragement; a broad interpretation. One 100-mark composition."
     },
     "english-2017-ol-p1-composing-7": {
       "questionSha256": "f76de2bb57eb0ccc62e4136367f28a5cb094d6247b781a3743a18dc628661881",
       "kind": "flexible",
-      "reason": "Optional register, perspective or number of examples remains flexible; the paper does not require an exclusive fixed-size selection from named options."
+      "reason": "Scheme PDF12: “at least three diary entries” as a robot teacher; “serious or humorous or both”. One 100-mark composition."
     },
     "english-2018-hl-p1-composing-1": {
       "questionSha256": "dd7d9e36d9a10cf8d11223ed8b61798668175ee56cd23c59489bdc0836888fe8",
@@ -17895,6 +17895,26 @@
       "questionSha256": "8742ed17ccc11555d9b7bd93cf42d81c8cbac8e4a26ebfbac527d15e9e3f5f7e",
       "kind": "required",
       "reason": "Scheme PDF39: the appeal of the poem with reference to its theme, tone and language and imagery — all, “not necessarily equally”. One 20-mark response."
+    },
+    "english-2017-ol-p1-t1-a-i": {
+      "questionSha256": "6a1de92287c6076ac93bf661b7008791a7c92c639ea8aaf27bb354ee94cbc5e5",
+      "kind": "open",
+      "reason": "Scheme PDF4: the impression the candidate forms of Donal Ryan, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2017-ol-p1-t2-a-i": {
+      "questionSha256": "00c2c46e6947842cf150aabae791f8fb7354cfe3eda2f6c66fd8481b38744b90",
+      "kind": "open",
+      "reason": "Scheme PDF6: the impression the candidate forms of Nujeen, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2017-ol-p1-t2-a-iii-a": {
+      "questionSha256": "079c18c9d9d3327ee28008b0db4e6f730d7079a78745c478ab1dcbdf4fbf557d",
+      "kind": "flexible",
+      "reason": "Scheme PDF6: “at least two reasons” why the candidate would or would not always encourage friends to follow ambitious dreams — one judgement. One 10-mark response."
+    },
+    "english-2017-ol-p1-t3-a-i": {
+      "questionSha256": "59bf93f2965ef0bc165c45f7a56ba9c05c943871d52ee024f9a5ef3e6091c8aa",
+      "kind": "open",
+      "reason": "Scheme PDF8: what the candidate learns about the life of a Hedge School teacher, in their own words, from the text on Page 6. One 15-mark response."
     }
   }
 }

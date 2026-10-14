@@ -1808,15 +1808,62 @@
       "paperSha256": "7b059877758f5f35944836bad6e7c93eb3adae1e878ab5e3fea693ad2837ee2c",
       "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
       "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
         6,
-        7
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ],
-      "visualSweepComplete": false,
+      "visualSweepComplete": true,
       "notes": [
-        "Robot teachers Image 1/2; QA(iii)(a) selects preferred robot appearance. Descriptive word-or-words list remains flexible."
+        "Robot teachers Image 1/2; QA(iii)(a) selects preferred robot appearance. Descriptive word-or-words list remains flexible.",
+        "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks, one card each (Text 2 B website or magazine and Text 3 A(iii)(a) IMAGE 1 or IMAGE 2 are printed choices marked on one grid). Text 1 and Text 2 A(iii)(b) are printed identically and published once (one printed repeat).",
+        "Readers under printed headings: TEXT 1 Donal Ryan’s School Days PDF2–3, TEXT 2 Nujeen’s School Days PDF4–5, TEXT 3 School Days in the Past (PDF6, A(i)/(ii)) and in the Future (PDF7, A(iii)(a)); the self-contained A(iii) tasks need none. No Purpose cap printed (PDF3); grid PDF46 (O1–O8, 2018 OL print)."
       ],
-      "allTaskBoundariesSchemeChecked": false,
-      "allFiniteRoutesReconciled": false
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        45,
+        46,
+        47
+      ],
+      "schemePagesVisuallyChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        45,
+        46,
+        47
+      ],
+      "independentPaperTally": {
+        "baseTasks": 22,
+        "finiteRoutes": 22,
+        "basis": "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks, one card each (Text 2 B website or magazine and Text 3 A(iii)(a) IMAGE 1 or IMAGE 2 are printed choices marked on one grid). Text 1 and Text 2 A(iii)(b) are printed identically and published once (one printed repeat)."
+      }
     },
     {
       "paperId": "english-2017-ol-p2",

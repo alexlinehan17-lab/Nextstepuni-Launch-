@@ -158,6 +158,17 @@
    "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7"
   },
   {
+   "paperId": "english-2017-ol-p1",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "tasks": 22,
+   "cards": 21,
+   "printedDuplicates": 1,
+   "paperSha256": "7b059877758f5f35944836bad6e7c93eb3adae1e878ab5e3fea693ad2837ee2c",
+   "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e"
+  },
+  {
    "paperId": "english-2016-ol-p1",
    "year": 2016,
    "level": "ordinary",
@@ -1469,6 +1480,16 @@
     },
     "capRulePage": 3
    },
+   "2017-ordinary": {
+    "family": "ol-o1-o8-2018",
+    "gridPages": [
+     46
+    ],
+    "capRule": {
+     "kind": "none"
+    },
+    "capRulePage": 3
+   },
    "2018-ordinary": {
     "family": "ol-o1-o8-2018",
     "gridPages": [
@@ -2119,7 +2140,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1619,
+ "cardCount": 1640,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -33392,6 +33413,796 @@
    "atlas": {
     "fileid": "LC002GLP200EV.pdf",
     "n": "16"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-t1-a-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 1 QA(i)",
+   "questionText": "From your reading of the passage above, what impression do you form of Donal Ryan? Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Donal Ryan’s School Days",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Based on edited extracts from an article by Donal Ryan in the Irish Independent, with a photograph (PDF2–3). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    4
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-t1-a-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 1 QA(ii)",
+   "questionText": "In your opinion, which of the following word or words best describe(s) Donal Ryan’s experience in secondary school? Relaxed Studious Enjoyable. Explain your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Donal Ryan’s School Days",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Based on edited extracts from an article by Donal Ryan in the Irish Independent, with a photograph (PDF2–3). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    4
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-t1-a-iii-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 1 QA(iii)(a)",
+   "questionText": "Donal Ryan offers readers lots of advice in the final two paragraphs above. Identify one piece of advice he offers and give reasons why you do or do not think that it is good advice.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Donal Ryan’s School Days",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Based on edited extracts from an article by Donal Ryan in the Irish Independent, with a photograph (PDF2–3). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-t1-a-iii-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 1 QA(iii)(b)",
+   "questionText": "Identify one piece of good advice you have received from a friend or family member and explain how you benefitted from receiving this advice.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   },
+   "atlasPlacements": [
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "10"
+    }
+   ]
+  },
+  {
+   "id": "english-2017-ol-p1-t1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 1 QB",
+   "questionText": "Students can benefit from advice when choosing which subjects to study for their Leaving Certificate course. Your school Principal has asked you to give a talk to Third Year students who are about to choose their senior cycle subjects. In your talk you should explain to the students why it is important to make good decisions when choosing subjects for their Leaving Certificate course and suggest what you think they should consider when making these decisions.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-t2-a-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 2 QA(i)",
+   "questionText": "From your reading of the passage above, what impression do you form of Nujeen? Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Nujeen’s School Days",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Based on edited extracts from Nujeen by Nujeen Mustafa and Christine Lamb, with a photograph of Nujeen and Nasrine (PDF4–5). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-t2-a-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 2 QA(ii)",
+   "questionText": "In your opinion, which of the following word or words best describe(s) Nujeen’s experience of education in Germany? Difficult Enjoyable Disappointing. Explain your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Nujeen’s School Days",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Based on edited extracts from Nujeen by Nujeen Mustafa and Christine Lamb, with a photograph of Nujeen and Nasrine (PDF4–5). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-t2-a-iii-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 2 QA(iii)(a)",
+   "questionText": "Nujeen dreams of being an astronaut. Would you always encourage your friends to follow their ambitious dreams? Give reasons for your answer.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-t2-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 2 QB",
+   "questionText": "Nujeen Mustafa, who features in TEXT 2 above, was not able to go to school in Syria because of the difficulties posed by her physical disability. Write an article for your school website or magazine in which you suggest what your school could do to make the school building more suitable and the school community more welcoming for students with physical disabilities.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-t3-a-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 3 QA(i)",
+   "questionText": "Explain, in your own words, what you learn about the life of a Hedge School teacher from reading the text on Page 6. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "School Days in the Past and in the Future",
+    "pages": [
+     6
+    ],
+    "attribution": "School Days in the Past (PDF6, from C. K. Byrne and P. J. Dowling, The Hedge Schools of Ireland, with an illustration) and School Days in the Future, IMAGE 1 and IMAGE 2 of robot teachers (PDF7). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-t3-a-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 3 QA(ii)",
+   "questionText": "In your opinion, which of the following word or words best describe(s) what it was like to be a Hedge School student? Enjoyable Difficult Uncomfortable. Explain your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "School Days in the Past and in the Future",
+    "pages": [
+     6
+    ],
+    "attribution": "School Days in the Past (PDF6, from C. K. Byrne and P. J. Dowling, The Hedge Schools of Ireland, with an illustration) and School Days in the Future, IMAGE 1 and IMAGE 2 of robot teachers (PDF7). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-t3-a-iii-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 3 QA(iii)(a)",
+   "questionText": "Look at both of the images of robot teachers above. If robot teachers were introduced in Irish schools, do you think they should be made to look like the teacher in IMAGE 1 or the teacher in IMAGE 2? Give reasons for your answer.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "School Days in the Past and in the Future",
+    "pages": [
+     7
+    ],
+    "attribution": "School Days in the Past (PDF6, from C. K. Byrne and P. J. Dowling, The Hedge Schools of Ireland, with an illustration) and School Days in the Future, IMAGE 1 and IMAGE 2 of robot teachers (PDF7). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-t3-a-iii-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 3 QA(iii)(b)",
+   "questionText": "Explain why you would or would not like to be taught by a robot teacher.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-t3-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Text 3 QB",
+   "questionText": "Imagine it is proposed that all of the teachers in schools in Ireland will be replaced by robots. Write a letter to the Editor of a national newspaper giving reasons why you do or do not support the proposed change to robot teachers.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-composing-1",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Composing 1",
+   "questionText": "In TEXT 1, Donal Ryan tells us that he laughed his way through secondary school. Write a short story which features a character who gets into trouble because of his or her sense of humour.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9,
+    10
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-composing-2",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Composing 2",
+   "questionText": "The theme of TEXTS 1, 2 and 3 is School Days. Imagine that you have been selected as the Student of the Year in your school and have been asked to deliver a speech to the staff and students at a school assembly. The topic for your speech is “My School Days”. Write the speech, which may be serious or humorous or both, that you would deliver.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested speech.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9,
+    10
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-composing-3",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Composing 3",
+   "questionText": "In TEXT 1, Donal Ryan tells us about the box in his parents’ attic that contains his early writing. Imagine you find a box of items from your childhood in your parents’ attic. Write a personal essay in which you identify what you find in the box and describe the feelings and memories these items evoke for you.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9,
+    10
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-composing-4",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Composing 4",
+   "questionText": "In TEXT 3, we see two images of robots. Write a short story in which a family comes to regret adopting a robot.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9,
+    11
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-composing-5",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Composing 5",
+   "questionText": "In TEXT 2, Nujeen Mustafa writes about how she would rather study than socialise. You have been asked to write an article for a magazine popular with young people. In your article you should give advice to Leaving Certificate students on how to develop their study skills, maintain a healthy lifestyle while preparing for exams, and balance study with the more social aspects of life.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9,
+    11
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-composing-6",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Composing 6",
+   "questionText": "In TEXT 1, Donal Ryan writes about the importance of praise and encouragement in his development as a writer. Write a personal essay giving your views on the importance of praise and encouragement as we go through life.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9,
+    11
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2017-ol-p1-composing-7",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2017 OL Paper 1 Composing 7",
+   "questionText": "Images of robot school teachers can be seen in TEXT 3. Imagine you are a robot teacher. Write at least three diary entries in which you record your impressions of humans in general, write specifically about your work as a teacher and give your views on the behaviour of the students that you teach. Your diary entries may be humorous or serious or both.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9,
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "7"
    }
   },
   {

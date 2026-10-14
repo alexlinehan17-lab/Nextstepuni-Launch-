@@ -4888,6 +4888,155 @@
       "attribution": "Bounty — Robyn Sarah, as reproduced in the SEC 2017 paper.",
       "questionSha256": "8742ed17ccc11555d9b7bd93cf42d81c8cbac8e4a26ebfbac527d15e9e3f5f7e",
       "reason": "Paper PDF6 prints the instruction (“Read the following poem by Robyn Sarah and answer either Question 1 or Question 2”), the title, all four stanzas, the byline and the glosses (Glockenspiel, Rads); visually verified."
+    },
+    "english-2017-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Donal Ryan’s School Days",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Based on edited extracts from an article by Donal Ryan in the Irish Independent, with a photograph (PDF2–3). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "6a1de92287c6076ac93bf661b7008791a7c92c639ea8aaf27bb354ee94cbc5e5",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2017-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Donal Ryan’s School Days",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Based on edited extracts from an article by Donal Ryan in the Irish Independent, with a photograph (PDF2–3). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "0129d08c472dceb6dfcd48a0556fa083e760cc3bd7a53d5ab136b63bdb6fa3c4",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2017-ol-p1-t1-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Donal Ryan’s School Days",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Based on edited extracts from an article by Donal Ryan in the Irish Independent, with a photograph (PDF2–3). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "582f20d7850fd1f7fa085f7bac7e569696bbab833b8f7b4299e300b947b20a0a",
+      "reason": "The task cites the advice in “the final two paragraphs above” (paragraph 6 runs from PDF2 to PDF3, paragraph 7 on PDF3)."
+    },
+    "english-2017-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Nujeen’s School Days",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Based on edited extracts from Nujeen by Nujeen Mustafa and Christine Lamb, with a photograph of Nujeen and Nasrine (PDF4–5). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "00c2c46e6947842cf150aabae791f8fb7354cfe3eda2f6c66fd8481b38744b90",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2017-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Nujeen’s School Days",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Based on edited extracts from Nujeen by Nujeen Mustafa and Christine Lamb, with a photograph of Nujeen and Nasrine (PDF4–5). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "6607426493c7927ffb9411f396b07db78229c45b712ece49eddd6c510783de45",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2017-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "School Days in the Past and in the Future",
+      "pages": [
+        6
+      ],
+      "attribution": "School Days in the Past (PDF6, from C. K. Byrne and P. J. Dowling, The Hedge Schools of Ireland, with an illustration) and School Days in the Future, IMAGE 1 and IMAGE 2 of robot teachers (PDF7). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "59bf93f2965ef0bc165c45f7a56ba9c05c943871d52ee024f9a5ef3e6091c8aa",
+      "reason": "The task reads “the text on Page 6” (School Days in the Past, PDF6)."
+    },
+    "english-2017-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "School Days in the Past and in the Future",
+      "pages": [
+        6
+      ],
+      "attribution": "School Days in the Past (PDF6, from C. K. Byrne and P. J. Dowling, The Hedge Schools of Ireland, with an illustration) and School Days in the Future, IMAGE 1 and IMAGE 2 of robot teachers (PDF7). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "1d5ba069208496dce019155cabf27bbe1284a30dc265ce0579b83e8258180873",
+      "reason": "Being a Hedge School student is described in the text on PDF6."
+    },
+    "english-2017-ol-p1-t3-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "School Days in the Past and in the Future",
+      "pages": [
+        7
+      ],
+      "attribution": "School Days in the Past (PDF6, from C. K. Byrne and P. J. Dowling, The Hedge Schools of Ireland, with an illustration) and School Days in the Future, IMAGE 1 and IMAGE 2 of robot teachers (PDF7). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "86f34bac38bcf990e885b766452f82400d1acd659aaa5594b2502ccc6f68306d",
+      "reason": "The task compares “both of the images of robot teachers above”, IMAGE 1 and IMAGE 2 on PDF7."
+    },
+    "english-2017-ol-p1-t1-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "DONAL RYAN’S SCHOOL DAYS",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "7b059877758f5f35944836bad6e7c93eb3adae1e878ab5e3fea693ad2837ee2c",
+      "questionSha256": "74e4d4cd4a46ea028be1c8ce4300a8c9e50a06505ef32fb5c95138f807c45c14",
+      "reason": "Self-contained: a piece of good advice from a friend or family member and how the candidate benefitted; the scheme never refers to the text."
+    },
+    "english-2017-ol-p1-t2-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "NUJEEN’S SCHOOL DAYS",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "7b059877758f5f35944836bad6e7c93eb3adae1e878ab5e3fea693ad2837ee2c",
+      "questionSha256": "079c18c9d9d3327ee28008b0db4e6f730d7079a78745c478ab1dcbdf4fbf557d",
+      "reason": "Self-contained: whether the candidate would always encourage friends to follow their ambitious dreams; the scheme never refers to the text."
+    },
+    "english-2017-ol-p1-t2-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "NUJEEN’S SCHOOL DAYS",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "7b059877758f5f35944836bad6e7c93eb3adae1e878ab5e3fea693ad2837ee2c",
+      "questionSha256": "74e4d4cd4a46ea028be1c8ce4300a8c9e50a06505ef32fb5c95138f807c45c14",
+      "reason": "Self-contained: a piece of good advice from a friend or family member and how the candidate benefitted; the scheme never refers to the text."
+    },
+    "english-2017-ol-p1-t3-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "SCHOOL DAYS IN THE PAST AND IN THE FUTURE",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "7b059877758f5f35944836bad6e7c93eb3adae1e878ab5e3fea693ad2837ee2c",
+      "questionSha256": "8140281c4bcecab97739ac1fec7640fe0589352c193c9f37ae9442c70697b48b",
+      "reason": "Self-contained: whether the candidate would or would not like to be taught by a robot teacher; the scheme never refers to the text."
     }
   }
 }

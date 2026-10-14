@@ -1,6 +1,10 @@
 {
   "rule": "A task printed more than once on the same paper with identical wording, tariff, marking and reader is ONE card (the canonical placement); the publisher refuses an undeclared identical task and checks every declared one, and the Atlas keeps every printed placement.",
   "duplicates": {
+    "english-2017-ol-p1-t2-a-iii-b": {
+      "canonical": "english-2017-ol-p1-t1-a-iii-b",
+      "reason": "Printed identically after TEXT 1 and TEXT 2 (paper PDF3, PDF5), same tariff (10), grid and no reader; one practice identity, keeping both printed placements in the Atlas. TEXT 3 A(iii)(b) is a different task."
+    },
     "english-2018-ol-p1-t2-a-iii-b": {
       "canonical": "english-2018-ol-p1-t1-a-iii-b",
       "reason": "Printed identically under TEXT 1, 2 and 3 (paper PDF3, PDF5, PDF7) and asks about someone other than Joanne O’Riordan, Gary or Paul O’Donovan or Kailash Satyarthi, so no single text’s reader applies (coordinator decision, 2026-10-12). The card shows the printed question page (Text 1 placement, PDF3, viewed) instead of a TEXT reader; the Atlas keeps all three printed placements."
