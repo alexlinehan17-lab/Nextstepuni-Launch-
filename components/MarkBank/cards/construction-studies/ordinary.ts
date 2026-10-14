@@ -32,13 +32,44 @@ export const CARDS: SecCard[] = [
     year: 2016, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q2-b", topicId: "cons-3-9", conceptId: "reasons-why-attic-space-chosen-first",
+    id: "cons-2016-ol-q2-b", topicId: "cons-6-3", conceptId: "reasons-why-attic-space-chosen-first",
     section: "B", questionRef: "2016 OL Q2(b)",
+    stem: "The owners of a house have decided to insulate their house over a number of years, starting with the attic space. The rafters and ceiling joists are 200 mm × 40 mm. The water storage tank is in the attic, as shown.",
     questionText: "Discuss two reasons why the attic space is chosen as the first area to be insulated.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 5","answer":2,"ofParts":14,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "cons-2016-ol-q2-b-r1", kind: "anyN", verbatim: "Discuss two reasons why the attic space is chosen as the first area to be insulated.", marks: 10, openList: true, group: {"claimMax":2,"perOption":5,"options":["The greatest heat loss is through the roof, up to 30% of heat is lost","Insulation reduces the heat loss","Most effective way to save energy inside the home","This costs money and contributes to pollution and global warming","It is relativity easy to insulate the attic and can be carried out by the home owner provided the necessary precautions are taken","Thermal insulation will keep the heat in your house","Increased thermal comfort for occupants","Energy bills are reduced","It is better for the environment","It improves the U-value rating","It improves the Building Energy Rating (BER)","The house will be warmer","Storage tank and associated piping is generally in the attic","The pipework and tank must be insulated"]} },
+    { id: "reason-1", kind: "criterion", verbatim: "Reason one", marks: 5, contextNote: "Such as: the greatest heat loss, up to 30%, is through the roof; the most effective way to save energy.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason two", marks: 5, contextNote: "A second, different reason. Such as: relatively easy for the home owner; lower bills, a better BER and a warmer house; the tank and pipes there must be insulated anyway.", permittedMarks: [0,1,2,3,4,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating an attic, its tank and pipework",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed items in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q2-original.png",
+          "srcHash": "5125bf465a90ef1f7294e4c7c369598b",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 2: the printed question with a sketch of the attic with its rafters, joists and water tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q2-reasons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q2-reasons.png",
+          "srcHash": "6992e96616f5ae257a6a94e9c0dec58a",
+          "alt": "SEC 2016 Ordinary marking scheme notes on reasons to insulate the attic first.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -47,21 +78,41 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
     id: "cons-2016-ol-q3-a", topicId: "cons-5-2", conceptId: "large-given-diagram-also-include-main",
     section: "B", questionRef: "2016 OL Q3(a)",
-    questionText: "Draw a large freehand sketch of the given diagram and also include the main cold water storage tank in the attic. Show the pipework required to connect the stove to the cylinder. Include the following on your sketch: • rising main and the main cold water storage tank • hot water cylinder and expansion pipe • stove and pipework from stove to cylinder • all necessary valves.",
-    tariffModel: {"kind":"fixed","notation":"4 x 4 + 4 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 32,
+    stem: "The sketch shows a wood burning stove which is combined with a solar collector to provide hot water for a dwelling house. Also shown are a dual-coil hot water cylinder and the expansion tank in the attic.",
+    questionText: "Draw a large freehand sketch of the given diagram and also include the main cold water storage tank in the attic. Show the pipework required to connect the stove to the cylinder. Include the following on your sketch: rising main and the main cold water storage tank; hot water cylinder and expansion pipe; stove and pipework from stove to cylinder; all necessary valves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
     rows: [
-    { id: "cons-2016-ol-q3-a-r1", kind: "anyN", verbatim: "Secondary circulation", marks: 16, contextNote: "Secondary circulation", openList: true, group: {"claimMax":4,"perOption":4,"options":["15 mm rising main with stop valve","Insulated storage tank and ball valve","22 mm min overflow","22 mm cold feed with insulation from storage tank to indirect hot water cylinder","Control valve","Drain off valve","Insulated indirect hot water cylinder","22 mm expansion pipe with insulation from indirect hot water cylinder"]} },
-    { id: "cons-2016-ol-q3-a-r2", kind: "anyN", verbatim: "Primary circulation – typical sizes", marks: 16, contextNote: "Primary circulation – typical sizes", openList: true, group: {"claimMax":4,"perOption":4,"options":["15 mm water supply to expansion tank","Insulated expansion tank with ball valve","22 mm overflow min","22 mm cold feed with insulation from expansion tank","28 mm primary return typical","Drain off valve","Stove","28 mm primary flow typical","22 mm expansion pipe with insulation"]} },
+    { id: "items", kind: "criterion", verbatim: "Any 8 of the above details (4 marks each)", marks: 32, contextNote: "Credit the best EIGHT acceptable items at 4 marks each, capped at 32. Secondary circulation: 15 mm rising main; insulated storage tank; 22 mm cold feed to the cylinder; indirect cylinder; 22 mm expansion pipe. Primary circulation: wood burning stove; 28 mm primary flow and return; 22 mm cold supply and expansion pipe from the expansion tank; insulated expansion tank; overflows; valves.", permittedMarks: [0,4,8,12,16,20,24,28,32] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Stove and solar collector hot water",
           "pages": [
+                1,
                 2
           ],
-          "attribution": "SEC Construction Studies 2016 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-eight list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q3-original.png",
+          "srcHash": "7229923e45683f0ea4b1eadbf6b02738",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 3: the printed question with a section of the house with the stove, cylinder, tanks and solar collector.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q3-system.png",
+          "srcHash": "0f34a2bac83bb19ab0a493bd8319441f",
+          "alt": "SEC model sketch of the stove, cylinder, tanks and solar collector pipework, with the secondary and primary circulation details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -71,24 +122,85 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
     id: "cons-2016-ol-q3-b", topicId: "cons-5-2", conceptId: "same-also-pipework-necessary-connect-solar",
     section: "B", questionRef: "2016 OL Q3(b)",
+    stem: "The sketch shows a wood burning stove which is combined with a solar collector to provide hot water for a dwelling house. Also shown are a dual-coil hot water cylinder and the expansion tank in the attic.",
     questionText: "On the same sketch, show also the pipework necessary to connect the solar collector on the roof to the cylinder.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":5,"perPart":4}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "cons-2016-ol-q3-b-r1", kind: "anyN", verbatim: "On the same sketch, show also the pipework necessary to connect the solar collector on the roof to the cylinder.", marks: 4, openList: true, group: {"claimMax":1,"perOption":4,"options":["Solar controller","22 mm flow from solar panel to cylinder","22 mm return from cylinder to solar panel","Pump and isolator located on the return","Expansion vessel and pressure release valve"]} },
+    { id: "solar", kind: "criterion", verbatim: "Valid details", marks: 4, contextNote: "Such as: a solar controller; 22 mm flow from the panel to the cylinder and 22 mm return; a pump and isolator on the return; an expansion vessel and pressure release valve.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Stove and solar collector hot water",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-eight list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q3-original.png",
+          "srcHash": "7229923e45683f0ea4b1eadbf6b02738",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 3: the printed question with a section of the house with the stove, cylinder, tanks and solar collector.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q3-solar",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q3-solar.png",
+          "srcHash": "88337d1d82c7d9128c9e4892d1d84281",
+          "alt": "SEC 2016 Ordinary marking scheme notes on connecting the solar collector to the cylinder.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2016, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q3-c", topicId: "cons-5-2", conceptId: "advantages-including-solar-collector-provide-domestic",
+    id: "cons-2016-ol-q3-c", topicId: "cons-6-4", conceptId: "advantages-including-solar-collector-provide-domestic",
     section: "B", questionRef: "2016 OL Q3(c)",
+    stem: "The sketch shows a wood burning stove which is combined with a solar collector to provide hot water for a dwelling house. Also shown are a dual-coil hot water cylinder and the expansion tank in the attic.",
     questionText: "Discuss two advantages of including a solar collector to provide domestic hot water for a house.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 3","answer":2,"ofParts":8,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "cons-2016-ol-q3-c-r1", kind: "anyN", verbatim: "Discuss two advantages of including a solar collector to provide domestic hot water for a house.", marks: 6, openList: true, group: {"claimMax":2,"perOption":3,"options":["Energy bills for hot water are reduced","Water in the cylinder is seldom cold","Once installed running costs are low","An effective way to save energy inside the home","Reduces CO2 from the burning of fossil fuels","Solar power saves money","Helps to slow climate change","It is an independent source of energy"]} },
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 3, contextNote: "Such as: lower energy bills for hot water; low running costs once installed.", permittedMarks: [0,1,2,3] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 3, contextNote: "A second, different advantage. Such as: less CO₂ from fossil fuels; an independent source of energy; helps slow climate change.", permittedMarks: [0,1,2,3] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Stove and solar collector hot water",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-eight list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q3-original.png",
+          "srcHash": "7229923e45683f0ea4b1eadbf6b02738",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 3: the printed question with a section of the house with the stove, cylinder, tanks and solar collector.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q3-advantages",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q3-advantages.png",
+          "srcHash": "29d53c7d8f4e7ecf97adfc9ba341da48",
+          "alt": "SEC 2016 Ordinary marking scheme notes on advantages of a solar collector for hot water.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -97,17 +209,40 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
     id: "cons-2016-ol-q4-a", topicId: "cons-1-3", conceptId: "reasons-why-necessary-apply-planning-permission",
     section: "B", questionRef: "2016 OL Q4(a)",
+    stem: "The owners intend to apply for planning permission to build a sunspace on to the gable end of their house, as shown in the sketch.",
     questionText: "Discuss two reasons why it is necessary to apply for planning permission to build the sunspace shown.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 6","answer":2,"ofParts":8,"perPart":6}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "cons-2016-ol-q4-a-r1", kind: "anyN", verbatim: "Discuss two reasons why it is necessary to apply for planning permission to build the sunspace shown.", marks: 12, openList: true, group: {"claimMax":2,"perOption":6,"options":["It is a legal requirement when changing the front elevation of a house","Planning permission informs the public about the development","It controls the height, shape, design and location of the sunspace","It prevents the danger of an unsafe sunspace being built","Ensures that the sunspace is attractive and environmentally friendly","Ensures that the sunspace blends easily with its surroundings","When the development changes the front elevation of the building","The Planning Authority may refuse permission"]} },
+    { id: "reason-1", kind: "criterion", verbatim: "Reason one", marks: 6, contextNote: "Such as: a legal requirement when changing the front elevation of a house; it informs the public.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason two", marks: 6, contextNote: "A second, different reason. Such as: it controls height, shape, design and location; prevents an unsafe sunspace; ensures it blends with its surroundings.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Planning permission for a sunspace",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q4-original.png",
+          "srcHash": "b80806830299db68539245778b41596c",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 4: the printed question with a sketch of a house with a sunspace on its gable.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
     figure: {
-          "candId": "construction-studies-2016-ol-paper-p002-i0",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-ol-paper-p002-i0.png",
-          "srcHash": "378a09f1864147eb18b764024174aa3b",
-          "alt": "A tonal perspective sketch of a single-storey pitched-roof dwelling house with a slate roof and a rendered chimney stack. Built against the gable end is a lean-to sunspace with a mono-pitch roof, sloping glazing above and full-height glazed panels below, returning to a further glazed opening on the end wall. A tree stands behind the gable and low shrubs sit against the front and side walls, with a doorway and window visible on the main front elevation.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission",
+          "candId": "construction-studies-2016-OL-q4-reasons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q4-reasons.png",
+          "srcHash": "d49c4e3137f779addd00493aca29cd2d",
+          "alt": "SEC 2016 Ordinary marking scheme notes on why planning permission is needed for the sunspace, with a sketch.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -116,55 +251,174 @@ export const CARDS: SecCard[] = [
     year: 2016, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q4-b", topicId: "cons-1-1", conceptId: "information-must-contained-planning-documents-site",
+    id: "cons-2016-ol-q4-b", topicId: "cons-1-3", conceptId: "information-must-contained-planning-documents-site",
     section: "B", questionRef: "2016 OL Q4(b)",
-    questionText: "State the information that must be contained in each of the following planning documents: • site layout map • planning notice in newspaper.",
-    tariffModel: {"kind":"fixed","notation":"3 x 5 + 3 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 30,
+    stem: "The owners intend to apply for planning permission to build a sunspace on to the gable end of their house, as shown in the sketch.",
+    questionText: "State the information that must be contained in each of the following planning documents: site layout map; planning notice in newspaper.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
     rows: [
-    { id: "cons-2016-ol-q4-b-r1", kind: "anyN", verbatim: "Information on the site layout map", marks: 15, contextNote: "Information on the site layout map", openList: true, group: {"claimMax":3,"perOption":5,"options":["This map will give details of what the site will look like when development is finished","It will show the location of buildings on the site","New development is shown on the layout map","The position of septic tank and percolation area is included","Position of site notice is indicated","Direction north is shown","The scale of the map is 1:500"]} },
-    { id: "cons-2016-ol-q4-b-r2", kind: "anyN", verbatim: "Information on the planning notice in newspaper", marks: 15, contextNote: "Information on the planning notice in newspaper", openList: true, group: {"claimMax":3,"perOption":5,"options":["The name of the local authority to whom the application is being made","The name of the applicant or applicants","Location, townland or postal address of the structure","Type of permission","Nature and extent of the development","Number of houses if applicable","Indicate if it is a protected structure","Details and date when and where the application may be viewed"]} },
+    { id: "site-layout-map", kind: "criterion", verbatim: "Site layout map - Notes", marks: 15, contextNote: "Three valid details, 5 each. Such as: what the site will look like when finished; the location of buildings and the new development; the septic tank and percolation area; the site notice position; north; a scale of 1:500.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "newspaper-notice", kind: "criterion", verbatim: "Planning notice in newspaper - Notes", marks: 15, contextNote: "Three valid details, 5 each. Such as: the planning authority; the applicant’s name; the location or address; the type of permission; the nature and extent of the development; whether it is a protected structure; where and when the application can be viewed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Planning permission for a sunspace",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q4-original.png",
+          "srcHash": "b80806830299db68539245778b41596c",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 4: the printed question with a sketch of a house with a sunspace on its gable.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q4-documents",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q4-documents.png",
+          "srcHash": "8f64aa5ad6fc4612478cf1c08c3d30bd",
+          "alt": "SEC 2016 Ordinary marking scheme notes on the information on the site layout map and the newspaper planning notice.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2016, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q4-c", topicId: "cons-1-1", conceptId: "reason-why-planning-authority-allows-public",
+    id: "cons-2016-ol-q4-c", topicId: "cons-1-3", conceptId: "reason-why-planning-authority-allows-public",
     section: "B", questionRef: "2016 OL Q4(c)",
+    stem: "The owners intend to apply for planning permission to build a sunspace on to the gable end of their house, as shown in the sketch.",
     questionText: "Discuss one reason why the planning authority allows the public to view all planning documents after a planning application is submitted.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 8","answer":1,"ofParts":9,"perPart":8}, totalMarks: 8,
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "cons-2016-ol-q4-c-r1", kind: "anyN", verbatim: "Discuss one reason why the planning authority allows the public to view all planning documents after a planning applicat", marks: 8, openList: true, group: {"claimMax":1,"perOption":8,"options":["Residents of an area must be made aware of any developments being undertaken in their environment","Planning authorities must regulate any development taking place within their area","Building development must be in line with the development plan","Any person can view the plans submitted and lodge a planning objection","It is a legal requirement","This gives the public access to specific planning applications","People may object to the development or make a submission on the proposed work","It provides the full details of the application","It ensures that the planning process is clear and transparent for all"]} },
+    { id: "reason", kind: "criterion", verbatim: "Reason", marks: 8, contextNote: "Such as: residents must be aware of developments in their environment; anyone can view the plans and object or make a submission; a legal requirement; the process is clear and transparent.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Planning permission for a sunspace",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q4-original.png",
+          "srcHash": "b80806830299db68539245778b41596c",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 4: the printed question with a sketch of a house with a sunspace on its gable.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q4-public",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q4-public.png",
+          "srcHash": "362c3e100e7618eb1140b0826a679228",
+          "alt": "SEC 2016 Ordinary marking scheme notes on why the public may view planning documents.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2016, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q5-a", topicId: "cons-4-4", conceptId: "vertical-section-through-bottom-steps-stairs",
+    id: "cons-2016-ol-q5-a", topicId: "cons-1-5", conceptId: "vertical-section-through-bottom-steps-stairs",
     section: "B", questionRef: "2016 OL Q5(a)",
+    stem: "The sketch shows a portion of a cut string wooden stairs. The stairs leads to a small landing as shown. The newel post is 100 mm × 100 mm and the balusters are 50 mm × 50 mm. The rise of each step is 175 mm.",
     questionText: "To a scale of 1:5, draw a vertical section through the bottom three steps of the stairs. Show the cut string, newel post, handrail and balusters.",
-    tariffModel: {"kind":"bestNofParts","notation":"8 x 5","answer":8,"ofParts":10,"perPart":5}, totalMarks: 40,
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
     rows: [
-    { id: "cons-2016-ol-q5-a-r1", kind: "anyN", verbatim: "220 mm", marks: 40, contextNote: "220 mm", openList: true, group: {"claimMax":8,"perOption":5,"options":["Newel post 100 × 100 mm","Handrail","Balusters 50 × 50 mm","Treads 250 mm","Nosing 16 mm minimum","Risers 175 mm","Cut string","Glue blocks","Joint between tread and riser","Bottom three steps"]} },
+    { id: "details", kind: "criterion", verbatim: "Any 8 of the above details (5 marks each)", marks: 40, contextNote: "Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: newel post 100 × 100 mm; handrail; balusters 50 × 50 mm; treads 250 mm; nosing at least 16 mm; risers 175 mm; cut string; glue blocks; the tread–riser joint; the bottom three steps.", permittedMarks: [0,5,10,15,20,25,30,35,40] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Cut string stairs section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the baluster detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q5-original.png",
+          "srcHash": "d924a73baa427eb43a228fecc665e76f",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 5: the printed question with a sketch of a cut string stairs to a landing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q5-scheme.png",
+          "srcHash": "dcd619b576138c36093141d96fea13dc",
+          "alt": "SEC model section through the bottom three steps of the cut string stairs with the baluster joint marked (b), and the details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2016, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q6-a", topicId: "cons-1-8", conceptId: "specific-safety-precautions-observed-construction-studies",
+    id: "cons-2016-ol-q6-a", topicId: "cons-9-4", conceptId: "specific-safety-precautions-observed-construction-studies",
     section: "B", questionRef: "2016 OL Q6(a)",
-    questionText: "Outline two specific safety precautions to be observed in the Construction Studies room in each of the following situations: • using a scalpel to cut modelling card • carrying a chisel • using a contact adhesive.",
-    tariffModel: {"kind":"fixed","notation":"2 x 4 + 2 x 4 + 2 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
+    questionText: "Outline two specific safety precautions to be observed in the Construction Studies room in each of the following situations: using a scalpel to cut modelling card; carrying a chisel; using a contact adhesive.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
-    { id: "cons-2016-ol-q6-a-r1", kind: "anyN", verbatim: "Using a scalpel to cut modelling card", marks: 8, contextNote: "Using a scalpel to cut modelling card", openList: true, group: {"claimMax":2,"perOption":4,"options":["Prepare and carry out the work on a clean flat surface","Place the modelling card on a suitable base or mat","Use a good quality straight edge to guide the scalpel","Ensure the straight edge is held firmly","Scalpels are very sharp","Always cut away from your hands","Do not cut right through the material on the first cut","Score the line lightly at the start with the scalpel","Repeat the cut carefully and repeat a number of times until the material is cut","Keep scalpels covered when not in use","Work slowly and plan each cut","Replace blunt blades","Heed the teacher’s advice on classroom safety"]} },
-    { id: "cons-2016-ol-q6-a-r2", kind: "anyN", verbatim: "Carrying a chisel", marks: 8, contextNote: "Carrying a chisel", openList: true, group: {"claimMax":2,"perOption":4,"options":["Handle sharp-edged tools with care","Carry the chisel down by your side","Carry the chisel with cutting edge pointed towards the floor","Never carry a chisel in your pocket","Walk to your position, never run","Observe and concentrate on where you are going","Keep safety first","Heed teacher’s advice on safety in the classroom"]} },
-    { id: "cons-2016-ol-q6-a-r3", kind: "anyN", verbatim: "Using contact adhesive", marks: 8, contextNote: "Using contact adhesive", openList: true, group: {"claimMax":2,"perOption":4,"options":["Wear protective or latex gloves","Avoid contact with skin and eyes","Use the glue in a well-ventilated area","Avoid inhaling the fumes","Avoid spilling","Keep away from heat","Wear goggles or face shield","Vapour may cause drowsiness or dizziness","Wear appropriate clothing to prevent contact with adhesive","Store in cool location in well-sealed containers","Follow the manufactures instructions for use and storage","Heed the teacher’s advice on classroom safety"]} },
+    { id: "scalpel", kind: "criterion", verbatim: "Using a scalpel to cut modelling card", marks: 8, contextNote: "Two precautions, 4 each. Such as: a clean flat surface and cutting mat; a firmly held straight edge; always cut away from your hands; score lightly then repeat; cover scalpels and replace blunt blades.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "chisel", kind: "criterion", verbatim: "Carrying a chisel", marks: 8, contextNote: "Two precautions, 4 each. Such as: carry it down by your side with the edge towards the floor; never in a pocket; walk, never run.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "adhesive", kind: "criterion", verbatim: "Using contact adhesives", marks: 8, contextNote: "Two precautions, 4 each. Such as: latex gloves and goggles; a well-ventilated area; avoid inhaling the fumes; keep away from heat; follow the instructions for use and storage.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Safety in the Construction Studies room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed situations in (a) are required, each with two precautions and separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q6-original.png",
+          "srcHash": "f8a66776338047f6d176a105bd89b5f8",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 6: the printed question with a sketch of a bowl being turned on a lathe.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q6-precautions",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q6-precautions.png",
+          "srcHash": "9c36ec7cef7e2c47955596956b87a878",
+          "alt": "SEC 2016 Ordinary marking scheme notes on safety precautions with a scalpel, carrying a chisel and using contact adhesive.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -173,108 +427,41 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
     id: "cons-2016-ol-q7-a", topicId: "cons-4-5", conceptId: "typical-construction-details-stud-partition-clearly",
     section: "B", questionRef: "2016 OL Q7(a)",
+    stem: "A non load-bearing timber stud partition with a plasterboard finish separates two bedrooms on the ground floor of a house. A solid wooden door is fitted in the stud partition, as shown.",
     questionText: "Using notes and freehand sketches show the typical construction details of the stud partition. Show clearly the studwork necessary to accommodate the doorframe. Indicate on your sketch the names and typical sizes of all components.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 3","answer":2,"ofParts":6,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 28,
     rows: [
-    { id: "cons-2016-ol-q7-a-r1", kind: "anyN", verbatim: "Using notes and freehand sketches show the typical construction details of the stud partition. Show clearly the studwork", marks: 6, openList: true, group: {"claimMax":2,"perOption":3,"options":["Sole plate 100 mm × 45 mm","Head plate 100 mm × 45 mm","Studs 100 mm × 45 mm","Noggins 100 mm × 45 mm","Door head to opening 100 mm × 70 mm","Door jambs to opening 100 mm × 70 mm"]} },
+    { id: "sketch", kind: "criterion", verbatim: "Non-load bearing timber stud partition with a plaster board finish - Sketch", marks: 12, contextNote: "Two valid details on the sketch, 2 × 3 each, as in the scheme’s model sketches of the studwork around the door opening.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "notes", kind: "criterion", verbatim: "Non-load bearing timber stud partition with a plaster board finish - Notes", marks: 8, contextNote: "Two valid details, 2 × 2 each. Such as: sole and head plates, studs and noggins 100 × 45 mm; door head and jambs to the opening 100 × 70 mm.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q7-c", topicId: "cons-4-6", conceptId: "briefly-method-providing-surface-finish-plasterboard",
-    section: "B", questionRef: "2016 OL Q7(c)",
-    questionText: "Describe briefly one method of providing a surface finish to the plasterboard prior to painting.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 5","answer":2,"ofParts":9,"perPart":5}, totalMarks: 10,
-    rows: [
-    { id: "cons-2016-ol-q7-c-r1", kind: "anyN", verbatim: "Describe briefly one method of providing a surface finish to the plasterboard prior to painting.", marks: 10, openList: true, group: {"claimMax":2,"perOption":5,"options":["Plasterboards are fixed to the studs with all edges supported and screwed","Reinforce internal corners with scrim","Finish with a skim coat using steel float giving a smooth finish","The surface is allowed dry out before painting","Tape and fill all joints and internal angles","Fill all screw holes","Apply joint filler to the joints","Smooth off the filler and finish with a sponge","The surface is allowed dry out before painting"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q9-c", topicId: "cons-1-1", conceptId: "features-design-ensure-garden-room-eco",
-    section: "B", questionRef: "2016 OL Q9(c)",
-    questionText: "Discuss two features of the design that ensure the garden room is eco-friendly.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 4","answer":2,"ofParts":10,"perPart":4}, totalMarks: 8,
-    rows: [
-    { id: "cons-2016-ol-q9-c-r1", kind: "anyN", verbatim: "Discuss two features of the design that ensure that the garden room is eco-friendly", marks: 8, contextNote: "Discuss two features of the design that ensure that the garden room is eco-friendly", openList: true, group: {"claimMax":2,"perOption":4,"options":["Wood is used in the construction of external walls","Water butt used to collect rainwater","Large glazed area to maximise solar gain","Wood is a renewable resource,","Low environmental impact","Suitable woods for cladding are grown in Ireland","Section of the roof projects out over the glazed area","This prevents overheat in very warm weather","Soft permeable surface surrounding the garden room","Wood used for the construction of patio"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q1-b", topicId: "cons-6-2", conceptId: "typical-design-detailing-prevent-formation-thermal",
-    section: "B", questionRef: "2016 OL Q1(b)",
-    questionText: "On your drawing, show the typical design detailing to prevent the formation of a thermal bridge at the junction of the external wall and the floor.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 2","answer":1,"ofParts":5,"perPart":2}, totalMarks: 2,
-    rows: [
-    { id: "cons-2016-ol-q1-b-r1", kind: "anyN", verbatim: "On your drawing, show the typical design detailing to prevent the formation of a thermal bridge at the junction of the e", marks: 2, openList: true, group: {"claimMax":1,"perOption":2,"options":["No structural connection between inside and outside leaf","Continuity of insulation- cavity insulation overlaps floor insulation","Perimeter insulation at floor level","Inner leaf built with thermal blocks k value - 0.20 W/m/K - from foundation to floor level","Flexible seal between wall and floor"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q5-b", topicId: "cons-4-4", conceptId: "how-baluster-fitted-securely-thread",
-    section: "B", questionRef: "2016 OL Q5(b)",
-    questionText: "On your drawing, show how one baluster is fitted securely to the thread.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 2","answer":1,"ofParts":5,"perPart":2}, totalMarks: 2,
-    rows: [
-    { id: "cons-2016-ol-q5-b-r1", kind: "anyN", verbatim: "Show on the drawing how one baluster is fitted securely to the thread", marks: 2, contextNote: "Show on the drawing how one baluster is fitted securely to the thread", openList: true, group: {"claimMax":1,"perOption":2,"options":["The end of the baluster or spindle is turned and fitted into the tread or step","Mortice and tenon joint between baluster and tread","Dowel fitted into bottom of spindle and tread","Occasionally dovetail joint between baluster and step","The joint is covered with a decorative strip of wood"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q7-b", topicId: "cons-8-3", conceptId: "separate-annotated-method-would-help-reduce",
-    section: "B", questionRef: "2016 OL Q7(b)",
-    questionText: "On a separate annotated sketch, show one method that would help reduce the transmittance of sound through the stud partition.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":8,"perPart":4}, totalMarks: 4,
-    rows: [
-    { id: "cons-2016-ol-q7-b-r1", kind: "anyN", verbatim: "On a separate annotated sketch, show one method that would help reduce the transmittance of sound through the stud parti", marks: 4, contextNote: "The scheme groups its answer under: Reduce the transmittance of sound through the stud partition - Notes; Plan views", openList: true, group: {"claimMax":1,"perOption":4,"options":["Filling the space between the studs with mineral wool or fibre glass quilt will give some reduction in airborne sound","Two layers of 12.5 mm plasterboards or one plasterboard and acoustic board fitted to both sides of the studs. Joints should be staggered, taped and sealed. This helps reduce airborne sound","Fitting acoustic board or insulation board with battens and 12.5 mm plasterboard to both sides of the studs. This helps reduce impact and airborne sound","Staggered stud construction with mineral wool or fibre glass insulation between them","Applying two layers of sound isolation padding tape to every second exposed stud","Fixing drywall metal channel with sound isolation mounting clips to the studs. The panels are then screwed to the channel in the normal manner","The gaps at the ceiling, walls and floor are sealed with acoustical caulk","Black foam tape is used to seal around the door"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q1-a", topicId: "cons-2-4", conceptId: "vertical-section-through-strip-foundation-external",
-    section: "B", questionRef: "2016 OL Q1(a)",
-    questionText: "To a scale of 1:5, draw a vertical section through the strip foundation, the external wall and the ground floor. Show the typical construction details from the bottom of the foundation to a level 400 mm above finished floor. Show the position of the radon barrier and include four typical dimensions on your drawing. Show 1.0 metre width of floor.",
-    tariffModel: {"kind":"bestNofParts","notation":"9 x 4","answer":9,"ofParts":14,"perPart":4}, totalMarks: 36,
-    rows: [
-    { id: "cons-2016-ol-q1-a-r1", kind: "anyN", verbatim: "Specification - typical details", marks: 36, contextNote: "Specification - typical details", openList: true, group: {"claimMax":9,"perOption":4,"options":["100 mm concrete footpath/ground","Reinforced concrete slab with level perimeter insulation taped and sealed","D.P.C to internal plaster","19 mm external render","200 mm - 300 mm rigid insulation","100 mm concrete block outer leaf","Inside leaf - 100 mm thermal","200 mm full-fill cavity blocks/Aerated concrete insulation","Wall tie blocks","100mm concrete block inner leaf","Radon barrier or damp proof","15 mm internal plaster taped and membrane sealed to floor","50 mm sand blinding","Skim coat"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q6-b", topicId: "cons-1-8", conceptId: "specific-safety-precautions-observed-when-turning",
-    section: "B", questionRef: "2016 OL Q6(b)",
-    questionText: "Using notes and freehand sketches, describe three specific safety precautions to be observed when turning a wooden bowl on a lathe, as shown. Give one reason for each safety precaution outlined.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 6","answer":3,"ofParts":14,"perPart":6}, totalMarks: 18,
-    rows: [
-    { id: "cons-2016-ol-q6-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, describe three specific safety precautions to be observed when turning a wooden bowl ", marks: 18, openList: true, group: {"claimMax":3,"perOption":6,"options":["Know where the on / off switch is located and how to turn on / off the lathe","Know how to stop the lathe","The wood should be sound and free of any defects","Defective piece may break apart during the turning process","The work B should be properly secured to the faceplate A","If not properly secured the piece may come loose","Rotate the piece by hand at first","This is to ensure the piece will not hit the tool rest","Clear space A between tool rest and the wooden blank","Set the correct speed for turning of the bowl","Using the incorrect speed will may cause serious injury","Slow for big and fast for small items","A special visor should be worn when using the lathe","This offers protection from flying chips or particles"]} },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Timber stud partition with a door",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The sound reduction and plasterboard finish are open choices of method."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q7-original.png",
+          "srcHash": "fc72ca5b61a4792ab39c615870a65771",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 7: the printed question with a sketch of a stud partition with a door between two bedrooms.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
     figure: {
-          "candId": "construction-studies-2016-ol-paper-p003-i0",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-ol-paper-p003-i0.png",
-          "srcHash": "7db5f1800732ccb6ad98099d910356e5",
-          "alt": "A tonal sketch of a wood-turning lathe seen from the side: a cast pedestal and headstock on the left carry a cylindrical drive housing, and a shallow wooden bowl is mounted face-out on the faceplate. A tool rest is set close to the bowl on a vertical post rising from the lathe bed, and a long turning gouge with a dark shaped handle lies across the rest with its cutting edge presented to the inside face of the revolving bowl. No labels or annotation text appear in the drawing.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission",
+          "candId": "construction-studies-2016-OL-q7-partition",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q7-partition.png",
+          "srcHash": "9e969c3f4227142256f8a97086cf6ca8",
+          "alt": "SEC model sketches of the stud partition framing around the door opening, with typical sizes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -283,130 +470,442 @@ export const CARDS: SecCard[] = [
     year: 2016, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q9-a", topicId: "cons-3-3", conceptId: "wood-external-cladding-reasons-choice-wood",
+    id: "cons-2016-ol-q7-c", topicId: "cons-4-1", conceptId: "briefly-method-providing-surface-finish-plasterboard",
+    section: "B", questionRef: "2016 OL Q7(c)",
+    stem: "A non load-bearing timber stud partition with a plasterboard finish separates two bedrooms on the ground floor of a house. A solid wooden door is fitted in the stud partition, as shown.",
+    questionText: "Describe briefly one method of providing a surface finish to the plasterboard prior to painting.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 5, contextNote: "Such as: boards screwed with all edges supported; scrim to internal corners; or joints and angles taped and filled.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 5, contextNote: "A second, different step. Such as: a skim coat with a steel float for a smooth finish; or joint filler smoothed with a sponge; allowed to dry before painting.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Timber stud partition with a door",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The sound reduction and plasterboard finish are open choices of method."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q7-original.png",
+          "srcHash": "fc72ca5b61a4792ab39c615870a65771",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 7: the printed question with a sketch of a stud partition with a door between two bedrooms.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q7-finish",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q7-finish.png",
+          "srcHash": "61b164cee6015df902ae2e76ac552521",
+          "alt": "SEC 2016 Ordinary marking scheme notes on two methods of finishing plasterboard before painting.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q9-c", topicId: "cons-1-2", conceptId: "features-design-ensure-garden-room-eco",
+    section: "B", questionRef: "2016 OL Q9(c)",
+    stem: "The sketch shows an eco-friendly garden room with an external wooden cladding.",
+    questionText: "Discuss two features of the design that ensure the garden room is eco-friendly.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "feature-1", kind: "criterion", verbatim: "Design feature one", marks: 4, contextNote: "Such as: renewable wood grown in Ireland for the walls and patio; a water butt collecting rainwater.", permittedMarks: [0,1,2,3,4] },
+    { id: "feature-2", kind: "criterion", verbatim: "Design feature two", marks: 4, contextNote: "A second, different feature. Such as: large glazing for solar gain with a roof overhang against overheating; a permeable surface around the room.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Eco-friendly garden room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wood, the finish and the features are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q9-original.png",
+          "srcHash": "f4e4da754d1a1e38e4b3867bb091d669",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 9: the printed question with a sketch of a timber-clad garden room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q9-eco",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q9-eco.png",
+          "srcHash": "36c4378de77e717f363a5ea962219546",
+          "alt": "SEC 2016 Ordinary marking scheme notes on eco-friendly features of the garden room.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q1-b", topicId: "cons-6-2", conceptId: "typical-design-detailing-prevent-formation-thermal",
+    section: "B", questionRef: "2016 OL Q1(b)",
+    stem: "A dwelling house has a 400 mm external concrete block wall with a 200 mm full-fill insulated cavity. The ground floor is an insulated concrete floor with a 20 mm floating tongue-and-groove hardwood finish, as shown.",
+    questionText: "On your drawing, show the typical design detailing to prevent the formation of a thermal bridge at the junction of the external wall and the floor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "thermal-bridge", kind: "criterion", verbatim: "Perimeter insulation/thermal blocks/cavity insulation overlaps with floor insulation/flexible seal between floor and wall", marks: 2, contextNote: "Show and identify the detail, as in the scheme’s model sections: perimeter insulation, thermal blocks, the cavity insulation overlapping the floor insulation, or a flexible seal between floor and wall.", permittedMarks: [0,2] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Strip foundation, cavity wall and insulated ground floor section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the thermal-bridge detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q1-original.png",
+          "srcHash": "1508988b348b7a4b3937f95bea35d0ab",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 1: the printed question with a cutaway sketch of the cavity wall and timber-finished ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q1-scheme.png",
+          "srcHash": "2467eef206923d6e76ee84441093a832",
+          "alt": "SEC model sections through the strip foundation, cavity wall and ground floor with the thermal-bridge detail marked (b), the specification list and the notes for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q5-b", topicId: "cons-4-4", conceptId: "how-baluster-fitted-securely-thread",
+    section: "B", questionRef: "2016 OL Q5(b)",
+    stem: "The sketch shows a portion of a cut string wooden stairs. The stairs leads to a small landing as shown. The newel post is 100 mm × 100 mm and the balusters are 50 mm × 50 mm. The rise of each step is 175 mm.",
+    questionText: "On your drawing, show how one baluster is fitted securely to the thread.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "baluster", kind: "criterion", verbatim: "Dowel joint, mortice and tenon joint or equivalent", marks: 2, contextNote: "Show and identify the joint, such as the baluster turned and fitted into the tread, a mortice and tenon, or a dowel, as in the scheme’s model detail.", permittedMarks: [0,2] },
+    { id: "presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Cut string stairs section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the baluster detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q5-original.png",
+          "srcHash": "d924a73baa427eb43a228fecc665e76f",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 5: the printed question with a sketch of a cut string stairs to a landing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q5-scheme.png",
+          "srcHash": "dcd619b576138c36093141d96fea13dc",
+          "alt": "SEC model section through the bottom three steps of the cut string stairs with the baluster joint marked (b), and the details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q7-b", topicId: "cons-8-3", conceptId: "separate-annotated-method-would-help-reduce",
+    section: "B", questionRef: "2016 OL Q7(b)",
+    stem: "A non load-bearing timber stud partition with a plasterboard finish separates two bedrooms on the ground floor of a house. A solid wooden door is fitted in the stud partition, as shown.",
+    questionText: "On a separate annotated sketch, show one method that would help reduce the transmittance of sound through the stud partition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "detail", kind: "criterion", verbatim: "Valid detail", marks: 4, contextNote: "Such as: mineral wool or glass fibre quilt between the studs; two layers of plasterboard with staggered joints; acoustic board on battens; staggered studs; resilient channels and sealed gaps.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Timber stud partition with a door",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The sound reduction and plasterboard finish are open choices of method."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q7-original.png",
+          "srcHash": "fc72ca5b61a4792ab39c615870a65771",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 7: the printed question with a sketch of a stud partition with a door between two bedrooms.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q7-sound",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q7-sound.png",
+          "srcHash": "34776bc8d50b260eabe07d36ee22db61",
+          "alt": "SEC 2016 Ordinary marking scheme plan views and notes on reducing sound through the stud partition (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q1-a", topicId: "cons-1-5", conceptId: "vertical-section-through-strip-foundation-external",
+    section: "B", questionRef: "2016 OL Q1(a)",
+    stem: "A dwelling house has a 400 mm external concrete block wall with a 200 mm full-fill insulated cavity. The ground floor is an insulated concrete floor with a 20 mm floating tongue-and-groove hardwood finish, as shown.",
+    questionText: "To a scale of 1:5, draw a vertical section through the strip foundation, the external wall and the ground floor. Show the typical construction details from the bottom of the foundation to a level 400 mm above finished floor. Show the position of the radon barrier and include four typical dimensions on your drawing. Show 1.0 metre width of floor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 9 of the above details ( 4 marks each)", marks: 36, contextNote: "Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: 100 mm concrete path/ground level; DPC; 100 mm block outer leaf and 19 mm render; full-fill cavity insulation; wall tie; 100 mm block inner leaf and 13 mm plaster; skirting board; 20 mm floating timber floor; 150 mm concrete floor taped and sealed to the wall; 300 mm floor insulation; DPM/radon barrier; hardcore and sand blinding; concrete fill/foundation blocks; reinforced concrete foundation.", permittedMarks: [0,4,8,12,16,20,24,28,32,36] },
+    { id: "dimensions", kind: "criterion", verbatim: "Four typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Strip foundation, cavity wall and insulated ground floor section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the thermal-bridge detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q1-original.png",
+          "srcHash": "1508988b348b7a4b3937f95bea35d0ab",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 1: the printed question with a cutaway sketch of the cavity wall and timber-finished ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q1-scheme.png",
+          "srcHash": "2467eef206923d6e76ee84441093a832",
+          "alt": "SEC model sections through the strip foundation, cavity wall and ground floor with the thermal-bridge detail marked (b), the specification list and the notes for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q6-b", topicId: "cons-9-4", conceptId: "specific-safety-precautions-observed-when-turning",
+    section: "B", questionRef: "2016 OL Q6(b)",
+    questionText: "Using notes and freehand sketches, describe three specific safety precautions to be observed when turning a wooden bowl on a lathe, as shown. Give one reason for each safety precaution outlined.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 26,
+    rows: [
+    { id: "precaution-1", kind: "criterion", verbatim: "Precaution one and valid reason", marks: 6, contextNote: "Precaution and reason. Such as: the work properly secured to the faceplate, or it may come loose.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "precaution-2", kind: "criterion", verbatim: "Precaution two and valid reason", marks: 6, contextNote: "A second, different precaution and reason. Such as: rotate the piece by hand first so it clears the tool rest; set the correct speed, slow for big work.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "precaution-3", kind: "criterion", verbatim: "Precaution three and valid reason", marks: 6, contextNote: "A third, different precaution and reason. Such as: a visor against flying chips; long hair and loose cuffs tied up; know how to stop the lathe; sound wood free of defects.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Safety in the Construction Studies room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed situations in (a) are required, each with two precautions and separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q6-original.png",
+          "srcHash": "f8a66776338047f6d176a105bd89b5f8",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 6: the printed question with a sketch of a bowl being turned on a lathe.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q6-lathe",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q6-lathe.png",
+          "srcHash": "4c06a7e38a6a6bd09a25a416c438d2e0",
+          "alt": "SEC 2016 Ordinary marking scheme notes and sketches on safety precautions when turning a bowl on a lathe.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q9-a", topicId: "cons-3-2", conceptId: "wood-external-cladding-reasons-choice-wood",
     section: "B", questionRef: "2016 OL Q9(a)",
+    stem: "The sketch shows an eco-friendly garden room with an external wooden cladding.",
     questionText: "Specify a suitable wood for the external cladding, and give two reasons for your choice of wood.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 5","answer":3,"ofParts":14,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "cons-2016-ol-q9-a-r1", kind: "anyN", verbatim: "Specify a suitable wood for the external cladding, and give two reasons for your choice of wood.", marks: 15, contextNote: "The scheme groups its answer under: Cedar; Larch Douglas Fir", openList: true, group: {"claimMax":3,"perOption":5,"options":["Cedar has a pleasant appearance","Cedar is easy to cut, glue and finish","Cedar is suitable for all weather situations","It is one of the world’s most durable woods","It is lightweight which makes it suitable for cladding","Cedar is easy to finish with oil or other suitable treatment","Larch is naturally durable for outdoor","Attractive appearance use","The wood is reddish brown in colour","It is resistant to water","The seasoned wood is durable and","Attractive in appearance strong","Resistant to rot and wood eating","The wood is grown in Ireland organisms"]} },
+    { id: "wood", kind: "criterion", verbatim: "Choice of wood", marks: 5, contextNote: "Such as: Western red cedar; larch; Douglas fir.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "reason-1", kind: "criterion", verbatim: "Valid reason one", marks: 5, contextNote: "A reason matching the wood. Such as, cedar: durable and suitable for all weathers; larch: naturally durable outdoors and resistant to rot.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "reason-2", kind: "criterion", verbatim: "Valid reason two", marks: 5, contextNote: "A second, different reason. Such as: a pleasant appearance; easy to cut and finish; lightweight; grown in Ireland.", permittedMarks: [0,1,2,3,4,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Eco-friendly garden room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wood, the finish and the features are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q9-original.png",
+          "srcHash": "f4e4da754d1a1e38e4b3867bb091d669",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 9: the printed question with a sketch of a timber-clad garden room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q9-wood",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q9-wood.png",
+          "srcHash": "f897c700aad1d43f1b64b3a45dcc085b",
+          "alt": "SEC 2016 Ordinary marking scheme notes on suitable woods for cladding — cedar, larch and Douglas fir — and the reasons (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2016, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q2-a", topicId: "cons-5-2", conceptId: "large-attic-space-typical-design-detailing",
+    id: "cons-2016-ol-q2-a", topicId: "cons-3-9", conceptId: "large-attic-space-typical-design-detailing",
     section: "B", questionRef: "2016 OL Q2(a)",
-    questionText: "Draw a large freehand sketch of the attic space. On your sketch, show the typical design detailing necessary to insulate, to a high standard, each of the following: • attic space • water storage tank and • pipework.",
-    tariffModel: {"kind":"bestNofParts","notation":"8 x 4","answer":8,"ofParts":8,"perPart":4}, totalMarks: 32,
+    stem: "The owners of a house have decided to insulate their house over a number of years, starting with the attic space. The rafters and ceiling joists are 200 mm × 40 mm. The water storage tank is in the attic, as shown.",
+    questionText: "Draw a large freehand sketch of the attic space. On your sketch, show the typical design detailing necessary to insulate, to a high standard, each of the following: attic space; water storage tank and pipework.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
     rows: [
-    { id: "cons-2016-ol-q2-a-r1", kind: "anyN", verbatim: "Draw a large freehand sketch of the attic space. On your sketch, show the typical design detailing necessary to insulate", marks: 32, openList: true, group: {"claimMax":8,"perOption":4,"options":["Ceiling joist","Rafter","Insulation – two layers","Tank","Tank supports free of insulation","Insulation - top and sides","Expansion pipe","Other exposed pipes"]} },
+    { id: "attic", kind: "criterion", verbatim: "Attic insulation", marks: 12, contextNote: "Ceiling joist 4, rafter 4 and insulation in two layers 4, as in the scheme’s model sketch.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "tank", kind: "criterion", verbatim: "Water storage tank insulation", marks: 12, contextNote: "The tank 4, its supports kept free of insulation 4, and insulation on top and sides 4.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "pipes", kind: "criterion", verbatim: "Pipe insulation – Notes", marks: 8, contextNote: "Insulation on the expansion pipe 4 and other exposed pipes 4.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating an attic, its tank and pipework",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed items in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q2-original.png",
+          "srcHash": "5125bf465a90ef1f7294e4c7c369598b",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 2: the printed question with a sketch of the attic with its rafters, joists and water tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q2-attic",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q2-attic.png",
+          "srcHash": "be4f81ba1596f93a5d13e6598b0c32a9",
+          "alt": "SEC model sketches of the insulated attic, the insulated tank on its supports and the lagged pipework.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2016, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q8-None-lever-valve", topicId: "cons-3-6", conceptId: "explain-five-lever-valve-mortice-tenon-lever-valve",
-    section: "B", questionRef: "2016 OL Q8 — Lever valve",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • lever valve.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    id: "cons-2016-ol-q8-None-lever-valve", topicId: "cons-5-2", conceptId: "explain-five-lever-valve-mortice-tenon-lever-valve",
+    section: "B", questionRef: "2016 OL Q8",
+    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: lever valve; mortice and tenon joint; cob wall; thermal bridge; dual flush toilet; smart meter; solar gain; low-e glazing; access ramp.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
     rows: [
-    { id: "cons-2016-ol-q8-None-lever-valve-r1", kind: "anyN", verbatim: "Lever valve", marks: 10, contextNote: "Lever valve", openList: true, group: {"claimMax":2,"perOption":6,"options":["This valve is used to control the flow of water in plumbing","It is a valve with a single lever handle, which makes it easy to use","The handle operates the valve which consists of a solid joint containing a hollow ball","The lever or handle indicates whether the valve is open or closed","When the lever is perpendicular to the pipe, the valve is closed","When the lever is parallel to the pipe, the valve is open","The valve provides a good seal when closed","The positions of the lever show visual confirmation of the valves status","This type of valve is available in various diameters"],"perOptionSteps":[6,4]} },
+    { id: "terms", kind: "anyN", verbatim: "Terms", marks: 50, contextNote: "Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). Lever valve: controls the flow of water with a single lever operating a hollow ball; the lever shows the valve open when parallel to the pipe and closed when perpendicular; a good seal; various diameters. Mortice and tenon joint: used in doors, windows and furniture: a mortice cut in one piece and a tenon, about a third of the thickness, formed on the end of the other to fit it. Cob wall: clay, straw or hemp mixed with water (sometimes lime or sand), built in layers on a coursed stone base, each layer dried before the next; tapered and finished with lime render. Thermal bridge: a bridge in the insulation, at floors, cills, lintels, jambs or roofs, conducting heat out; higher heat loss, condensation and mould; prevented by continuous insulation. Dual flush toilet: a cistern with two buttons: about 6–9 litres for solid and 3–4 litres for liquid waste, cutting water use and the water sent to treatment. Smart meter: records and shows the electricity used in the home and its cost, giving the householder control; may be topped up; can also record water or gas. Solar gain: free heat from solar radiation entering through glazing, stored in masonry as a heat sink; maximised by orientation, insulation and airtightness; the main principle of passive design. Low-e glazing: a thin transparent metal or metal-oxide coating on the panes that reflects heat back into the house while admitting solar gain; dearer but reduces heat loss. Access ramp: a sloping path for easy access for wheelchairs, buggies and people with restricted mobility: gradient about 1:20, at least 1500 mm clear width, sections no longer than 9.0 m, non-slip and well lit.", group: {"claimMax":5,"perOption":10,"options":["Lever valve","Mortice and tenon joint","Cob wall","Thermal bridge","Dual flush toilet","Smart meter","Solar gain","Low-e glazing","Access ramp"]} },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q8-None-thermal-bridge", topicId: "cons-3-6", conceptId: "explain-five-lever-valve-mortice-tenon-thermal-bridge",
-    section: "B", questionRef: "2016 OL Q8 — Thermal bridge",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • thermal bridge.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2016-ol-q8-None-thermal-bridge-r1", kind: "anyN", verbatim: "Thermal bridge", marks: 10, contextNote: "Thermal bridge", openList: true, group: {"claimMax":2,"perOption":6,"options":["This is a solid bridge that conducts heat away from the inside to the outside of a structure","Thermal bridge occurs when the insulation of a wall is bridged at floor, window or roof","The thermal bridge is especially evident at window cills, lintels and jambs","A thermal bridge may also be present at the junction of a ground floor and the external wall","Thermal bridge causes a higher level of heat loss at these points","Thermal bridge causes condensation and mould on internal surfaces","Insulation should be continuous in order to prevent the occurrence of a thermal bridge"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q8-None-solar-gain", topicId: "cons-3-6", conceptId: "explain-five-lever-valve-mortice-tenon-solar-gain",
-    section: "B", questionRef: "2016 OL Q8 — Solar gain",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • solar gain.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2016-ol-q8-None-solar-gain-r1", kind: "anyN", verbatim: "Solar gain", marks: 10, contextNote: "Solar gain", openList: true, group: {"claimMax":2,"perOption":6,"options":["This is the solar energy captured in a building","This is the increase in temperature in a room that comes from solar radiation","Using the energy of the sun to create a comfortable internal environment","The heat gain is free from the sun","Good design of the building will make maximum use of this free energy","Solar radiation is transferred indoors through the windows and glazed areas","Surfaces such as concrete, stone or brick walls and masonry act as a heat sink for the heat gain","Location and orientation of the building is important for solar gain","Insulation and airtightness also help conserve solar gain benefits","Solar gain is the main principle of Passive Design"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q8-None-mortice-and-tenon-joint", topicId: "cons-3-6", conceptId: "explain-five-lever-valve-mortice-tenon-mortice-and-tenon-joint",
-    section: "B", questionRef: "2016 OL Q8 — Mortice and tenon joint",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • mortice and tenon joint.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2016-ol-q8-None-mortice-and-tenon-joint-r1", kind: "anyN", verbatim: "Mortice and tenon joint", marks: 10, contextNote: "Mortice and tenon joint", openList: true, group: {"claimMax":2,"perOption":6,"options":["This joint is widely used in the manufacture of doors, windows and furniture","A cutting or mortice M is formed in one piece","A tenon T is cut and formed at the end of the other piece","The tenon then fits neatly into the mortice","The general proportion for the tenon is one third of the thickness"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q8-None-dual-flush-toilet", topicId: "cons-3-6", conceptId: "explain-five-lever-valve-mortice-tenon-dual-flush-toilet",
-    section: "B", questionRef: "2016 OL Q8 — Dual flush toilet",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • dual flush toilet.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2016-ol-q8-None-dual-flush-toilet-r1", kind: "anyN", verbatim: "Dual flush toilet", marks: 10, contextNote: "Dual flush toilet", openList: true, group: {"claimMax":2,"perOption":6,"options":["This is a special fitting within some modern toilet cisterns","It has two buttons allowing the user to choose between two water flush settings","A larger flush A of about 6-9 litres is designed for solid waste","The smaller flush B of 3-4 litres is designed for liquid waste","This type of cistern reduces the amount of water used","It also reduces the amount of water entering waste treatment and sewage systems"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q8-None-low-e-glazing", topicId: "cons-3-6", conceptId: "explain-five-lever-valve-mortice-tenon-low-e-glazing",
-    section: "B", questionRef: "2016 OL Q8 — Low-e glazing",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • low-e glazing.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2016-ol-q8-None-low-e-glazing-r1", kind: "anyN", verbatim: "Low-e glazing", marks: 10, contextNote: "Low-e glazing", openList: true, group: {"claimMax":2,"perOption":6,"options":["This is glazing with a very thin transparent coating of metal or metal oxide deposited on the inside surface of the inner and outer panes of glass in triple glazing system","The coating E is designed to improve the thermal insulation of the glass panel","This glazing reflects heat back into the house","The coating is designed to improve the thermal insulation of the glass panel","Low-e glazing allows for solar heat gain into the building. It also allows the solar heat gain from the sun to enter the house","This type of glazing is more expensive but helps reduce heat loss from the building"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q8-None-smart-meter", topicId: "cons-3-6", conceptId: "explain-five-lever-valve-mortice-tenon-smart-meter",
-    section: "B", questionRef: "2016 OL Q8 — Smart meter",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • smart meter.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2016-ol-q8-None-smart-meter-r1", kind: "anyN", verbatim: "Smart meter", marks: 10, contextNote: "Smart meter", openList: true, group: {"claimMax":2,"perOption":6,"options":["This is a meter used to record the consumption of electricity","It records the usage of electricity in a domestic property","The meter is installed in the home and may be topped up as needed","The homeowner can see how much electricity is being consumed in the house","The meter also shows the cost of electricity being used","The smart meter gives the householder control of electricity use","Smart meters may also be used to record the usage of water or gas"],"perOptionSteps":[6,4]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2016, level: "ordinary",
-    paperFileid: "LC029GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
-    id: "cons-2016-ol-q8-None-access-ramp", topicId: "cons-3-6", conceptId: "explain-five-lever-valve-mortice-tenon-access-ramp",
-    section: "B", questionRef: "2016 OL Q8 — Access ramp",
-    questionText: "Explain, with the aid of notes and freehand sketches, any five of the following: • access ramp.",
-    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "cons-2016-ol-q8-None-access-ramp-r1", kind: "anyN", verbatim: "Access ramp", marks: 10, contextNote: "Access ramp", openList: true, group: {"claimMax":2,"perOption":6,"options":["This is a sloping path designed for ease of access to a dwelling","It is used by people with restricted mobility and those with wheelchairs","The access ramp is helpful for people who have difficulty walking","The ramp is of assistance to people using buggies, prams and pushchairs","The gradient of the ramp should be as easy as possible","The recommended gradient is 1:20","The access ramp should have a minimum clear width of"],"perOptionSteps":[6,4]} },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Construction terms",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Explain any five of the nine printed terms. Each term is marked separately at 10 marks; the scheme illustrations are examples of suitable sketches."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q8-original.png",
+          "srcHash": "80dac17369d696d8a4b12f7bca6d7fff",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 8: the printed instruction and the nine construction terms.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q8-terms",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q8-terms.png",
+          "srcHash": "e696b1ae75a753bd6429f97aa1d613ed",
+          "alt": "SEC 2016 Ordinary marking scheme notes and sketches for all nine terms: lever valve, thermal bridge, solar gain, mortice and tenon joint, dual flush toilet, low-e glazing, cob wall, smart meter and access ramp (four pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -16309,6 +16808,439 @@ export const CARDS: SecCard[] = [
           "srcHash": "403ae66f9aa29cb1093dc20f3b70fe49",
           "alt": "SEC 2017 Ordinary marking scheme sketches and notes on fixing decking boards to the joists.",
           "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q1-complete", topicId: "cons-1-5", conceptId: "foundation-floor-section-complete",
+    section: "B", questionRef: "2016 OL Q1 — complete",
+    stem: "A dwelling house has a 400 mm external concrete block wall with a 200 mm full-fill insulated cavity. The ground floor is an insulated concrete floor with a 20 mm floating tongue-and-groove hardwood finish, as shown.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the strip foundation, the external wall and the ground floor. Show the typical construction details from the bottom of the foundation to a level 400 mm above finished floor. Show the position of the radon barrier and include four typical dimensions on your drawing. Show 1.0 metre width of floor. (b) On your drawing, show the typical design detailing to prevent the formation of a thermal bridge at the junction of the external wall and the floor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 9 of the above details ( 4 marks each)", marks: 36, contextNote: "Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: 100 mm concrete path/ground level; DPC; 100 mm block outer leaf and 19 mm render; full-fill cavity insulation; wall tie; 100 mm block inner leaf and 13 mm plaster; skirting board; 20 mm floating timber floor; 150 mm concrete floor taped and sealed to the wall; 300 mm floor insulation; DPM/radon barrier; hardcore and sand blinding; concrete fill/foundation blocks; reinforced concrete foundation.", permittedMarks: [0,4,8,12,16,20,24,28,32,36] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Four typical dimensions", marks: 4, contextNote: "Four appropriate typical dimensions on the section, 1 each.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-thermal-bridge", kind: "criterion", verbatim: "Perimeter insulation/thermal blocks/cavity insulation overlaps with floor insulation/flexible seal between floor and wall", marks: 2, contextNote: "Show and identify the detail, as in the scheme’s model sections: perimeter insulation, thermal blocks, the cavity insulation overlapping the floor insulation, or a flexible seal between floor and wall.", permittedMarks: [0,2] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.", permittedMarks: [0,4,6,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2016-ol-q1-a","label":"a","marks":40,"rowIds":["a-details","a-dimensions"]},{"sourceCardId":"cons-2016-ol-q1-b","label":"b","marks":10,"rowIds":["b-thermal-bridge","b-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Strip foundation, cavity wall and insulated ground floor section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the thermal-bridge detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q1-original.png",
+          "srcHash": "1508988b348b7a4b3937f95bea35d0ab",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 1: the printed question with a cutaway sketch of the cavity wall and timber-finished ground floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q1-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q1-scheme.png",
+          "srcHash": "2467eef206923d6e76ee84441093a832",
+          "alt": "SEC model sections through the strip foundation, cavity wall and ground floor with the thermal-bridge detail marked (b), the specification list and the notes for part (b).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q2-complete", topicId: "cons-3-9", conceptId: "attic-tank-insulation-complete",
+    section: "B", questionRef: "2016 OL Q2 — complete",
+    stem: "The owners of a house have decided to insulate their house over a number of years, starting with the attic space. The rafters and ceiling joists are 200 mm × 40 mm. The water storage tank is in the attic, as shown.",
+    questionText: "(a) Draw a large freehand sketch of the attic space. On your sketch, show the typical design detailing necessary to insulate, to a high standard, each of the following: attic space; water storage tank and pipework. (b) Discuss two reasons why the attic space is chosen as the first area to be insulated.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-attic", kind: "criterion", verbatim: "Attic insulation", marks: 12, contextNote: "Ceiling joist 4, rafter 4 and insulation in two layers 4, as in the scheme’s model sketch.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-tank", kind: "criterion", verbatim: "Water storage tank insulation", marks: 12, contextNote: "The tank 4, its supports kept free of insulation 4, and insulation on top and sides 4.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-pipes", kind: "criterion", verbatim: "Pipe insulation – Notes", marks: 8, contextNote: "Insulation on the expansion pipe 4 and other exposed pipes 4.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-reason-1", kind: "criterion", verbatim: "Reason one", marks: 5, contextNote: "Such as: the greatest heat loss, up to 30%, is through the roof; the most effective way to save energy.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-reason-2", kind: "criterion", verbatim: "Reason two", marks: 5, contextNote: "A second, different reason. Such as: relatively easy for the home owner; lower bills, a better BER and a warmer house; the tank and pipes there must be insulated anyway.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2016-ol-q2-a","label":"a","marks":40,"rowIds":["a-attic","a-tank","a-pipes","a-presentation"]},{"sourceCardId":"cons-2016-ol-q2-b","label":"b","marks":10,"rowIds":["b-reason-1","b-reason-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Insulating an attic, its tank and pipework",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed items in (a) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q2-original.png",
+          "srcHash": "5125bf465a90ef1f7294e4c7c369598b",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 2: the printed question with a sketch of the attic with its rafters, joists and water tank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q2-attic",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q2-attic.png",
+          "srcHash": "be4f81ba1596f93a5d13e6598b0c32a9",
+          "alt": "SEC model sketches of the insulated attic, the insulated tank on its supports and the lagged pipework.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q3-complete", topicId: "cons-5-2", conceptId: "stove-solar-hot-water-complete",
+    section: "B", questionRef: "2016 OL Q3 — complete",
+    stem: "The sketch shows a wood burning stove which is combined with a solar collector to provide hot water for a dwelling house. Also shown are a dual-coil hot water cylinder and the expansion tank in the attic.",
+    questionText: "(a) Draw a large freehand sketch of the given diagram and also include the main cold water storage tank in the attic. Show the pipework required to connect the stove to the cylinder. Include the following on your sketch: rising main and the main cold water storage tank; hot water cylinder and expansion pipe; stove and pipework from stove to cylinder; all necessary valves. (b) On the same sketch, show also the pipework necessary to connect the solar collector on the roof to the cylinder. (c) Discuss two advantages of including a solar collector to provide domestic hot water for a house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-items", kind: "criterion", verbatim: "Any 8 of the above details (4 marks each)", marks: 32, contextNote: "Credit the best EIGHT acceptable items at 4 marks each, capped at 32. Secondary circulation: 15 mm rising main; insulated storage tank; 22 mm cold feed to the cylinder; indirect cylinder; 22 mm expansion pipe. Primary circulation: wood burning stove; 28 mm primary flow and return; 22 mm cold supply and expansion pipe from the expansion tank; insulated expansion tank; overflows; valves.", permittedMarks: [0,4,8,12,16,20,24,28,32] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "b-solar", kind: "criterion", verbatim: "Valid details", marks: 4, contextNote: "Such as: a solar controller; 22 mm flow from the panel to the cylinder and 22 mm return; a pump and isolator on the return; an expansion vessel and pressure release valve.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Advantage one", marks: 3, contextNote: "Such as: lower energy bills for hot water; low running costs once installed.", permittedMarks: [0,1,2,3] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Advantage two", marks: 3, contextNote: "A second, different advantage. Such as: less CO₂ from fossil fuels; an independent source of energy; helps slow climate change.", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2016-ol-q3-a","label":"a","marks":40,"rowIds":["a-items","a-presentation"]},{"sourceCardId":"cons-2016-ol-q3-b","label":"b","marks":4,"rowIds":["b-solar"]},{"sourceCardId":"cons-2016-ol-q3-c","label":"c","marks":6,"rowIds":["c-advantage-1","c-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Stove and solar collector hot water",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-eight list is a marking menu."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q3-original.png",
+          "srcHash": "7229923e45683f0ea4b1eadbf6b02738",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 3: the printed question with a section of the house with the stove, cylinder, tanks and solar collector.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q3-system",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q3-system.png",
+          "srcHash": "0f34a2bac83bb19ab0a493bd8319441f",
+          "alt": "SEC model sketch of the stove, cylinder, tanks and solar collector pipework, with the secondary and primary circulation details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q4-complete", topicId: "cons-1-3", conceptId: "sunspace-planning-complete",
+    section: "B", questionRef: "2016 OL Q4 — complete",
+    stem: "The owners intend to apply for planning permission to build a sunspace on to the gable end of their house, as shown in the sketch.",
+    questionText: "(a) Discuss two reasons why it is necessary to apply for planning permission to build the sunspace shown. (b) State the information that must be contained in each of the following planning documents: site layout map; planning notice in newspaper. (c) Discuss one reason why the planning authority allows the public to view all planning documents after a planning application is submitted.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-reason-1", kind: "criterion", verbatim: "Reason one", marks: 6, contextNote: "Such as: a legal requirement when changing the front elevation of a house; it informs the public.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-reason-2", kind: "criterion", verbatim: "Reason two", marks: 6, contextNote: "A second, different reason. Such as: it controls height, shape, design and location; prevents an unsafe sunspace; ensures it blends with its surroundings.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-site-layout-map", kind: "criterion", verbatim: "Site layout map - Notes", marks: 15, contextNote: "Three valid details, 5 each. Such as: what the site will look like when finished; the location of buildings and the new development; the septic tank and percolation area; the site notice position; north; a scale of 1:500.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "b-newspaper-notice", kind: "criterion", verbatim: "Planning notice in newspaper - Notes", marks: 15, contextNote: "Three valid details, 5 each. Such as: the planning authority; the applicant’s name; the location or address; the type of permission; the nature and extent of the development; whether it is a protected structure; where and when the application can be viewed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "c-reason", kind: "criterion", verbatim: "Reason", marks: 8, contextNote: "Such as: residents must be aware of developments in their environment; anyone can view the plans and object or make a submission; a legal requirement; the process is clear and transparent.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2016-ol-q4-a","label":"a","marks":12,"rowIds":["a-reason-1","a-reason-2"]},{"sourceCardId":"cons-2016-ol-q4-b","label":"b","marks":30,"rowIds":["b-site-layout-map","b-newspaper-notice"]},{"sourceCardId":"cons-2016-ol-q4-c","label":"c","marks":8,"rowIds":["c-reason"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Planning permission for a sunspace",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q4-original.png",
+          "srcHash": "b80806830299db68539245778b41596c",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 4: the printed question with a sketch of a house with a sunspace on its gable.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q4-documents",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q4-documents.png",
+          "srcHash": "8f64aa5ad6fc4612478cf1c08c3d30bd",
+          "alt": "SEC 2016 Ordinary marking scheme notes on the information on the site layout map and the newspaper planning notice.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q5-complete", topicId: "cons-1-5", conceptId: "cut-string-stairs-section-complete",
+    section: "B", questionRef: "2016 OL Q5 — complete",
+    stem: "The sketch shows a portion of a cut string wooden stairs. The stairs leads to a small landing as shown. The newel post is 100 mm × 100 mm and the balusters are 50 mm × 50 mm. The rise of each step is 175 mm.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the bottom three steps of the stairs. Show the cut string, newel post, handrail and balusters. (b) On your drawing, show how one baluster is fitted securely to the thread.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 8 of the above details (5 marks each)", marks: 40, contextNote: "Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: newel post 100 × 100 mm; handrail; balusters 50 × 50 mm; treads 250 mm; nosing at least 16 mm; risers 175 mm; cut string; glue blocks; the tread–riser joint; the bottom three steps.", permittedMarks: [0,5,10,15,20,25,30,35,40] },
+    { id: "b-baluster", kind: "criterion", verbatim: "Dowel joint, mortice and tenon joint or equivalent", marks: 2, contextNote: "Show and identify the joint, such as the baluster turned and fitted into the tread, a mortice and tenon, or a dowel, as in the scheme’s model detail.", permittedMarks: [0,2] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Draughting, accuracy and scale (excellent, good, fair)", marks: 8, contextNote: "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.", permittedMarks: [0,4,6,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2016-ol-q5-a","label":"a","marks":40,"rowIds":["a-details"]},{"sourceCardId":"cons-2016-ol-q5-b","label":"b","marks":10,"rowIds":["b-baluster","b-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Cut string stairs section",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the baluster detail."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q5-original.png",
+          "srcHash": "d924a73baa427eb43a228fecc665e76f",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 5: the printed question with a sketch of a cut string stairs to a landing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q5-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q5-scheme.png",
+          "srcHash": "dcd619b576138c36093141d96fea13dc",
+          "alt": "SEC model section through the bottom three steps of the cut string stairs with the baluster joint marked (b), and the details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q6-complete", topicId: "cons-9-4", conceptId: "workshop-safety-complete",
+    section: "B", questionRef: "2016 OL Q6 — complete",
+    questionText: "(a) Outline two specific safety precautions to be observed in the Construction Studies room in each of the following situations: using a scalpel to cut modelling card; carrying a chisel; using a contact adhesive. (b) Using notes and freehand sketches, describe three specific safety precautions to be observed when turning a wooden bowl on a lathe, as shown. Give one reason for each safety precaution outlined.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-scalpel", kind: "criterion", verbatim: "Using a scalpel to cut modelling card", marks: 8, contextNote: "Two precautions, 4 each. Such as: a clean flat surface and cutting mat; a firmly held straight edge; always cut away from your hands; score lightly then repeat; cover scalpels and replace blunt blades.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-chisel", kind: "criterion", verbatim: "Carrying a chisel", marks: 8, contextNote: "Two precautions, 4 each. Such as: carry it down by your side with the edge towards the floor; never in a pocket; walk, never run.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-adhesive", kind: "criterion", verbatim: "Using contact adhesives", marks: 8, contextNote: "Two precautions, 4 each. Such as: latex gloves and goggles; a well-ventilated area; avoid inhaling the fumes; keep away from heat; follow the instructions for use and storage.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-precaution-1", kind: "criterion", verbatim: "Precaution one and valid reason", marks: 6, contextNote: "Precaution and reason. Such as: the work properly secured to the faceplate, or it may come loose.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-precaution-2", kind: "criterion", verbatim: "Precaution two and valid reason", marks: 6, contextNote: "A second, different precaution and reason. Such as: rotate the piece by hand first so it clears the tool rest; set the correct speed, slow for big work.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-precaution-3", kind: "criterion", verbatim: "Precaution three and valid reason", marks: 6, contextNote: "A third, different precaution and reason. Such as: a visor against flying chips; long hair and loose cuffs tied up; know how to stop the lathe; sound wood free of defects.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2016-ol-q6-a","label":"a","marks":24,"rowIds":["a-scalpel","a-chisel","a-adhesive"]},{"sourceCardId":"cons-2016-ol-q6-b","label":"b","marks":26,"rowIds":["b-precaution-1","b-precaution-2","b-precaution-3","b-presentation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Safety in the Construction Studies room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed situations in (a) are required, each with two precautions and separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q6-original.png",
+          "srcHash": "f8a66776338047f6d176a105bd89b5f8",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 6: the printed question with a sketch of a bowl being turned on a lathe.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q6-lathe",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q6-lathe.png",
+          "srcHash": "4c06a7e38a6a6bd09a25a416c438d2e0",
+          "alt": "SEC 2016 Ordinary marking scheme notes and sketches on safety precautions when turning a bowl on a lathe.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q7-complete", topicId: "cons-4-5", conceptId: "stud-partition-door-complete",
+    section: "B", questionRef: "2016 OL Q7 — complete",
+    stem: "A non load-bearing timber stud partition with a plasterboard finish separates two bedrooms on the ground floor of a house. A solid wooden door is fitted in the stud partition, as shown.",
+    questionText: "(a) Using notes and freehand sketches show the typical construction details of the stud partition. Show clearly the studwork necessary to accommodate the doorframe. Indicate on your sketch the names and typical sizes of all components. (b) On a separate annotated sketch, show one method that would help reduce the transmittance of sound through the stud partition. (c) Describe briefly one method of providing a surface finish to the plasterboard prior to painting.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-sketch", kind: "criterion", verbatim: "Non-load bearing timber stud partition with a plaster board finish - Sketch", marks: 12, contextNote: "Two valid details on the sketch, 2 × 3 each, as in the scheme’s model sketches of the studwork around the door opening.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "a-notes", kind: "criterion", verbatim: "Non-load bearing timber stud partition with a plaster board finish - Notes", marks: 8, contextNote: "Two valid details, 2 × 2 each. Such as: sole and head plates, studs and noggins 100 × 45 mm; door head and jambs to the opening 100 × 70 mm.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-detail", kind: "criterion", verbatim: "Valid detail", marks: 4, contextNote: "Such as: mineral wool or glass fibre quilt between the studs; two layers of plasterboard with staggered joints; acoustic board on battens; staggered studs; resilient channels and sealed gaps.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketch (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketch: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "c-detail-1", kind: "criterion", verbatim: "Valid detail one", marks: 5, contextNote: "Such as: boards screwed with all edges supported; scrim to internal corners; or joints and angles taped and filled.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-detail-2", kind: "criterion", verbatim: "Valid detail two", marks: 5, contextNote: "A second, different step. Such as: a skim coat with a steel float for a smooth finish; or joint filler smoothed with a sponge; allowed to dry before painting.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2016-ol-q7-a","label":"a","marks":28,"rowIds":["a-sketch","a-presentation","a-notes"]},{"sourceCardId":"cons-2016-ol-q7-b","label":"b","marks":12,"rowIds":["b-detail","b-presentation"]},{"sourceCardId":"cons-2016-ol-q7-c","label":"c","marks":10,"rowIds":["c-detail-1","c-detail-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Timber stud partition with a door",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The sound reduction and plasterboard finish are open choices of method."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q7-original.png",
+          "srcHash": "fc72ca5b61a4792ab39c615870a65771",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 7: the printed question with a sketch of a stud partition with a door between two bedrooms.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q7-partition",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q7-partition.png",
+          "srcHash": "9e969c3f4227142256f8a97086cf6ca8",
+          "alt": "SEC model sketches of the stud partition framing around the door opening, with typical sizes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q9-b", topicId: "cons-10-7", conceptId: "eco-garden-room-b",
+    section: "B", questionRef: "2016 OL Q9(b)",
+    stem: "The sketch shows an eco-friendly garden room with an external wooden cladding.",
+    questionText: "Recommend a suitable applied finish to preserve the external cladding. Using notes and freehand sketches, describe the steps involved in preparing the wood and in applying the recommended surface finish.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 27,
+    rows: [
+    { id: "finish", kind: "criterion", verbatim: "Suitable applied finish", marks: 4, contextNote: "Such as: an oil-based varnish or stain; a water-based finish; deck or teak oil.", permittedMarks: [0,1,2,3,4] },
+    { id: "steps", kind: "criterion", verbatim: "Steps involved in preparing the wood and in applying the recommended surface finish - Notes", marks: 15, contextNote: "Three valid steps, 5 each. Such as: the surface sanded and cleaned, with white spirit or a damp cloth; the finish applied with a brush or cloth in two or three coats; dried and sanded between coats.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Eco-friendly garden room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wood, the finish and the features are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q9-original.png",
+          "srcHash": "f4e4da754d1a1e38e4b3867bb091d669",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 9: the printed question with a sketch of a timber-clad garden room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q9-finish",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q9-finish.png",
+          "srcHash": "cba4f5de4d1972d479c0216459c9d667",
+          "alt": "SEC 2016 Ordinary marking scheme notes and sketches on applying a finish to the cladding.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q9-complete", topicId: "cons-3-2", conceptId: "eco-garden-room-complete",
+    section: "B", questionRef: "2016 OL Q9 — complete",
+    stem: "The sketch shows an eco-friendly garden room with an external wooden cladding.",
+    questionText: "(a) Specify a suitable wood for the external cladding, and give two reasons for your choice of wood. (b) Recommend a suitable applied finish to preserve the external cladding. Using notes and freehand sketches, describe the steps involved in preparing the wood and in applying the recommended surface finish. (c) Discuss two features of the design that ensure the garden room is eco-friendly.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "a-wood", kind: "criterion", verbatim: "Choice of wood", marks: 5, contextNote: "Such as: Western red cedar; larch; Douglas fir.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "a-reason-1", kind: "criterion", verbatim: "Valid reason one", marks: 5, contextNote: "A reason matching the wood. Such as, cedar: durable and suitable for all weathers; larch: naturally durable outdoors and resistant to rot.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "a-reason-2", kind: "criterion", verbatim: "Valid reason two", marks: 5, contextNote: "A second, different reason. Such as: a pleasant appearance; easy to cut and finish; lightweight; grown in Ireland.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-finish", kind: "criterion", verbatim: "Suitable applied finish", marks: 4, contextNote: "Such as: an oil-based varnish or stain; a water-based finish; deck or teak oil.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-steps", kind: "criterion", verbatim: "Steps involved in preparing the wood and in applying the recommended surface finish - Notes", marks: 15, contextNote: "Three valid steps, 5 each. Such as: the surface sanded and cleaned, with white spirit or a damp cloth; the finish applied with a brush or cloth in two or three coats; dried and sanded between coats.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "b-presentation", kind: "criterion", verbatim: "Quality of sketches (excellent, good, fair)", marks: 8, contextNote: "Quality of the sketches: excellent 8, good 6, fair 4.", permittedMarks: [0,4,6,8] },
+    { id: "c-feature-1", kind: "criterion", verbatim: "Design feature one", marks: 4, contextNote: "Such as: renewable wood grown in Ireland for the walls and patio; a water butt collecting rainwater.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-feature-2", kind: "criterion", verbatim: "Design feature two", marks: 4, contextNote: "A second, different feature. Such as: large glazing for solar gain with a roof overhang against overheating; a permeable surface around the room.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2016-ol-q9-a","label":"a","marks":15,"rowIds":["a-wood","a-reason-1","a-reason-2"]},{"sourceCardId":"cons-2016-ol-q9-b","label":"b","marks":27,"rowIds":["b-finish","b-steps","b-presentation"]},{"sourceCardId":"cons-2016-ol-q9-c","label":"c","marks":8,"rowIds":["c-feature-1","c-feature-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Eco-friendly garden room",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The wood, the finish and the features are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2016-OL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q9-original.png",
+          "srcHash": "f4e4da754d1a1e38e4b3867bb091d669",
+          "alt": "Original SEC 2016 Ordinary Construction Studies Question 9: the printed question with a sketch of a timber-clad garden room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2016-OL-q9-finish",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q9-finish.png",
+          "srcHash": "cba4f5de4d1972d479c0216459c9d667",
+          "alt": "SEC 2016 Ordinary marking scheme notes and sketches on applying a finish to the cladding.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
           "solution": true,
           "lettersVisible": []
     },

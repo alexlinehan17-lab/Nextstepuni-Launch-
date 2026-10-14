@@ -1006,14 +1006,7 @@
       "stripStem": true
     }
   },
-  "construction-studies": {
-    "cons-2016-ol-q3-a": {
-      "pages": [
-        2
-      ],
-      "stripStem": true
-    }
-  },
+  "construction-studies": {},
   "economics": {
     "econ-2021-hl-q13-a-ii": {
       "pages": [

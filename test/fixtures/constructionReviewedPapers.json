@@ -875,5 +875,70 @@
       "cons-2016-hl-q10-a",
       "cons-2016-hl-q8-b"
     ]
+  },
+  {
+    "year": 2016,
+    "level": "ordinary",
+    "validator": "scripts/markbank/authoring/construction_2016_ordinary.py",
+    "result": {
+      "tasks": 29,
+      "addedTasks": 9,
+      "correctedTasks": 20,
+      "consolidatedLegacy": 7,
+      "leafTasks": 21,
+      "wholeQuestions": 9,
+      "anyNChoiceCards": 1,
+      "sourceFigures": 28,
+      "paperComplete": true
+    },
+    "priorCount": 925,
+    "addedIds": [
+      "cons-2016-ol-q1-complete",
+      "cons-2016-ol-q2-complete",
+      "cons-2016-ol-q3-complete",
+      "cons-2016-ol-q4-complete",
+      "cons-2016-ol-q5-complete",
+      "cons-2016-ol-q6-complete",
+      "cons-2016-ol-q7-complete",
+      "cons-2016-ol-q9-b",
+      "cons-2016-ol-q9-complete"
+    ],
+    "correctedIds": [
+      "cons-2016-ol-q1-a",
+      "cons-2016-ol-q1-b",
+      "cons-2016-ol-q2-a",
+      "cons-2016-ol-q2-b",
+      "cons-2016-ol-q3-a",
+      "cons-2016-ol-q3-b",
+      "cons-2016-ol-q3-c",
+      "cons-2016-ol-q4-a",
+      "cons-2016-ol-q4-b",
+      "cons-2016-ol-q4-c",
+      "cons-2016-ol-q5-a",
+      "cons-2016-ol-q5-b",
+      "cons-2016-ol-q6-a",
+      "cons-2016-ol-q6-b",
+      "cons-2016-ol-q7-a",
+      "cons-2016-ol-q7-b",
+      "cons-2016-ol-q7-c",
+      "cons-2016-ol-q8-None-lever-valve",
+      "cons-2016-ol-q9-a",
+      "cons-2016-ol-q9-c"
+    ],
+    "withdrawnIds": [
+      "cons-2016-ol-q8-None-mortice-and-tenon-joint",
+      "cons-2016-ol-q8-None-thermal-bridge",
+      "cons-2016-ol-q8-None-dual-flush-toilet",
+      "cons-2016-ol-q8-None-smart-meter",
+      "cons-2016-ol-q8-None-solar-gain",
+      "cons-2016-ol-q8-None-low-e-glazing",
+      "cons-2016-ol-q8-None-access-ramp"
+    ],
+    "keptChoiceIds": [
+      "cons-2016-ol-q8-None-lever-valve"
+    ],
+    "choiceCardIds": [
+      "cons-2016-ol-q8-None-lever-valve"
+    ]
   }
 ]
