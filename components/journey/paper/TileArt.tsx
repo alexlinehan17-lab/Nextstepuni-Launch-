@@ -30,7 +30,10 @@ export function Scenery({
     offsetY = "artOffsetY" in spec ? spec.artOffsetY : 0,
     containBase = "containBase" in spec && spec.containBase,
     footprint = vertices(),
-    folder = "/journey-art/tiles";
+    // Transparency is baked into these files (scripts/bake-journey-art-alpha.py).
+    // A per-tile SVG chroma-key filter used to do it at display time, and
+    // WebKit re-ran every one of them on each frame of a drag.
+    folder = "/journey-art/tiles-v2";
   return (
     <g
       transform={`translate(${x} ${y})`}
@@ -38,8 +41,8 @@ export function Scenery({
       pointerEvents="none"
       data-scenery={kind}
     >
-      <defs>
-        {containBase && (
+      {containBase && (
+        <defs>
           <clipPath id={`${id}-base`}>
             {/* Keep tall scenery visible above the tile, but contain its base
                 within the same side and front edges as the paper surface. */}
@@ -49,22 +52,14 @@ export function Scenery({
               ...footprint.slice(2, 5),
             ].map((p) => `${p.x},${p.y}`).join(" ")} />
           </clipPath>
-        )}
-        <filter id={id} colorInterpolationFilters="sRGB">
-          <feColorMatrix
-            type="matrix"
-            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -3 6 -3 0 2"
-          />
-          <feComposite in2="SourceGraphic" operator="in" />
-        </filter>
-      </defs>
+        </defs>
+      )}
       <image
         href={`${folder}/${kind}.webp`}
         x={-size / 2}
         y={-size * 0.77 + 14 + offsetY}
         width={size}
         height={size}
-        filter={`url(#${id})`}
         clipPath={containBase ? `url(#${id}-base)` : undefined}
       />
     </g>
