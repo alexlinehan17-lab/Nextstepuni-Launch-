@@ -61,6 +61,7 @@ import geography_review_2019_ol as REVIEW_2019_OL
 import geography_review_2018_hl as REVIEW_2018_HL
 import geography_review_2018_ol as REVIEW_2018_OL
 import geography_review_2017_hl as REVIEW_2017_HL
+import geography_review_2017_ol as REVIEW_2017_OL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -106,6 +107,7 @@ REVIEWED = {
     (2018, 'higher'): REVIEW_2018_HL,
     (2018, 'ordinary'): REVIEW_2018_OL,
     (2017, 'higher'): REVIEW_2017_HL,
+    (2017, 'ordinary'): REVIEW_2017_OL,
 }
 
 # 2021-2026 are carded in full. An earlier sitting joins the corpus only once
