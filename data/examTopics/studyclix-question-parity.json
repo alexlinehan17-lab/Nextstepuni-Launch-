@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T10:41:52.667Z",
+  "generatedAt": "2026-10-14T10:55:37.521Z",
   "scope": {
     "included": "Factual State-exam topic associations captured from every current StudyClix Leaving Certificate topic page.",
     "excluded": "Commercial mock questions and all provider-owned question text, solutions, notes, media and PDFs.",
@@ -11,9 +11,9 @@
     "subjectsWithExactCrosswalks": 32,
     "referenceTopics": 1609,
     "referenceOfficialAssociations": 37105,
-    "matched": 27209,
+    "matched": 27208,
     "sourceBlocked": 9856,
-    "referenceAnomaly": 40,
+    "referenceAnomaly": 41,
     "unreviewed": 0,
     "sourceUnavailableTopics": 2,
     "topicsWithGaps": 1341
@@ -3154,9 +3154,9 @@
       "totals": {
         "referenceTopics": 32,
         "referenceOfficialAssociations": 690,
-        "matched": 554,
+        "matched": 553,
         "sourceBlocked": 98,
-        "referenceAnomaly": 38,
+        "referenceAnomaly": 39,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
         "topicsWithGaps": 27
@@ -3671,9 +3671,9 @@
           "label": "Pre-christian Ireland (c 4000BC-AD500)",
           "sourcePath": "/leaving-certificate/art/higher/section-c-ireland-and-its-place-in-the-wider-world/pre-christian-ireland-c-4000bc-ad500",
           "referenceOfficialAssociations": 28,
-          "matched": 21,
+          "matched": 20,
           "sourceBlocked": 6,
-          "referenceAnomaly": 1,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3699,6 +3699,10 @@
             {
               "heading": "2023 - Sample Paper - Section C - Question 13",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2010 - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
             },
             {
               "heading": "2021 - Section 1 - Question 3",

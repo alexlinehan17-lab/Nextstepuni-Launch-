@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the complete Art Mark Bank corpus, 2011–2026.
+"""Build the complete Art Mark Bank corpus, 2010–2026.
 
 The question papers supply the exact prompts.  The marking schemes supply the
 published component allocations (to 2022) and descriptor bands (2023–2026).
@@ -19,10 +19,10 @@ files under its own heading.  A choose-N (N >= 2) list is always one card.  The
 four-criterion Section B/C essay remains intact because the SEC applies that
 rubric holistically.
 
-The complete corpus is therefore 1641 cards across thirty-two papers:
+The complete corpus is therefore 1756 cards across thirty-four papers:
 
-  * Higher Level:   844 cards (see EXPECTED_CARDS_BY_YEAR_LEVEL)
-  * Ordinary Level: 797 cards
+  * Higher Level:   902 cards (see EXPECTED_CARDS_BY_YEAR_LEVEL)
+  * Ordinary Level: 854 cards
 
 An audited year (AUDITED_YEARS) shows only the SEC's printed wording under the
 SEC's name: the descriptor bullets, criterion labels, scheme rows and marking
@@ -62,7 +62,7 @@ SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'art', 'schemes')
 OUT = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'art', 'authored.json')
 CENSUS_OUT = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.json')
 
-YEARS = tuple(range(2011, 2027))
+YEARS = tuple(range(2010, 2027))
 
 # A label printed inside an answer box ("Name of artwork:", "Heading 1:")
 # marks where an answer goes for an ask the question already makes, so it is
@@ -98,12 +98,14 @@ ANSWER_BOX_LABELS: dict[tuple[int, str, int], tuple[str, ...]] = {
 # Years whose SEC-attributed strings are all lifted from the printed page and
 # gated by tests/test_art_sec_wording.py: every year. The factory has no
 # written fallback, so a new year must join this tuple to build at all.
-AUDITED_YEARS = (2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
+AUDITED_YEARS = (2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
 
 EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
+    (2010, 'higher'): 20,
+    (2010, 'ordinary'): 21,
     (2011, 'higher'): 20,
     (2011, 'ordinary'): 21,
     (2012, 'higher'): 20,
@@ -139,6 +141,8 @@ EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
 }
 
 EXPECTED_CARDS_BY_YEAR_LEVEL = {
+    (2010, 'higher'): 58,
+    (2010, 'ordinary'): 57,
     (2011, 'higher'): 59,
     (2011, 'ordinary'): 57,
     (2012, 'higher'): 55,
@@ -180,6 +184,45 @@ EXPECTED_CARDS_BY_YEAR_LEVEL = {
 # label is printed in the question, and the first option's key keeps the
 # card's stable id (the withdrawn per-option ids are aliased in cardAliases.ts).
 PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
+    # Five Georgian architects, one heading: one card per part.
+    (2010, 'higher', 5): (
+        ('richard-cassels', 'Richard Cassels (c.1690-1751)'),
+        ('edward-lovett-pearce', 'Edward Lovett Pearce (1699-1733)'),
+        ('francis-johnston', 'Francis Johnston (1760-1829)'),
+        ('william-chambers', 'William Chambers (c.1723-1796)'),
+        ('thomas-ivory', 'Thomas Ivory (c.1732-1786)'),
+    ),
+    (2010, 'higher', 13): (
+        ('landscape', 'A landscape'),
+        ('animals', 'A painting that includes animals'),
+        ('bernini', 'A work by Bernini'),
+        ('portrait-of-royalty', 'A two-dimensional or three-dimensional portrait of royalty'),
+        ('anthony-gormley', 'A sculpture by Anthony Gormley'),
+        ('francis-bacon', 'A painting by Francis Bacon'),
+    ),
+    (2010, 'higher', 15): (
+        ('mannerism', 'Mannerism'),
+        ('pre-raphaelite-brotherhood', 'the Pre-Raphaelite Brotherhood'),
+        ('cubism', 'Cubism'),
+        ('de-stijl', 'De Stijl'),
+    ),
+    (2010, 'ordinary', 7): (
+        ('walter-osborne', 'Walter Osborne'),
+        ('evie-hone', 'Evie Hone'),
+        ('louis-le-brocquy', 'Louis le Brocquy'),
+        ('brian-bourke', 'Brian Bourke'),
+        ('charles-harper', 'Charles Harper'),
+        ('jim-fitzpatrick', 'Jim Fitzpatrick'),
+    ),
+    # The five works print one per line with no bullet marker; the space
+    # inside the opening quote of Vermeer's title is the paper's.
+    (2010, 'ordinary', 11): (
+        ('the-kiss-of-judas', '“The Kiss of Judas” by Giotto (c.1266 -1337)'),
+        ('the-birth-of-venus', '“The Birth of Venus” by Botticelli (1444 - 1510)'),
+        ('lady-writing-a-letter', '“ Lady Writing a Letter” by Vermeer (1632 - 1675)'),
+        ('starry-night', '“Starry Night” by Van Gogh (1853 - 1890)'),
+        ('guernica', '“Guernica” by Picasso (1881 - 1973)'),
+    ),
     (2011, 'higher', 14): (
         ('dancers', 'a painting that depicts dancers'),
         ('musical-instrument', 'a painting that includes a musical instrument'),
@@ -745,6 +788,22 @@ PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
 # Irish Q7 artists, the Georgian buildings. A list in this table must span at
 # least two headings; the build fails on one that does not.
 OPTION_TOPICS: dict[tuple[int, str, int], dict[str, str]] = {
+    # 2010: a landscape, animals and a royal portrait are subjects of every
+    # period; Gormley (b.1950) is Post-1960s; Bacon's painting from 1944 is
+    # Modernism. Mannerism with the Renaissance; the Pre-Raphaelites (1848)
+    # by date, as Art Nouveau in 2017 HL Q15.
+    (2010, 'higher', 13): {
+        'landscape': 'art-4-6', 'animals': 'art-4-6', 'bernini': 'art-4-2',
+        'portrait-of-royalty': 'art-4-6', 'anthony-gormley': 'art-4-5', 'francis-bacon': 'art-4-4',
+    },
+    (2010, 'higher', 15): {
+        'mannerism': 'art-4-1', 'pre-raphaelite-brotherhood': 'art-4-3', 'cubism': 'art-4-4',
+        'de-stijl': 'art-4-4',
+    },
+    (2010, 'ordinary', 11): {
+        'the-kiss-of-judas': 'art-4-1', 'the-birth-of-venus': 'art-4-1', 'lady-writing-a-letter': 'art-4-2',
+        'starry-night': 'art-4-3', 'guernica': 'art-4-4',
+    },
     # 2011: dancers, a musical instrument and Neoclassicism have no heading;
     # Rubens is the Baroque; Le Corbusier and the Bauhaus are Modernism.
     (2011, 'higher', 14): {
@@ -941,6 +1000,15 @@ REVIEWED_NON_ENUMERABLE_POOLS: dict[tuple[int, str, int], str] = {
 # cannot enter silently, while these reviewed open or logistical choices stay
 # faithful to the paper instead of being over-expanded.
 REVIEWED_OPEN_SELECTIONS: dict[tuple[int, str, int], str] = {
+    (2010, 'higher', 2): (
+        '"either Gallarus Oratory, Co. Kerry or the Church of St. Macdara, Co. '
+        'Galway": two Early Christian buildings, one heading; one card.'),
+    (2010, 'higher', 3): (
+        '"one named page from either book": the Book of Durrow or the Book of '
+        'Kells, one heading; any page, no list to enumerate.'),
+    (2010, 'higher', 18): (
+        '"two historical buildings, either local or national": any buildings; '
+        'no list to enumerate.'),
     (2011, 'higher', 5): (
         '"Write a brief account of either artist": one of the two artists the '
         'question itself compares, Barret and O’Connor, one heading; no list.'),
@@ -1009,6 +1077,19 @@ REVIEWED_OPEN_SELECTIONS: dict[tuple[int, str, int], str] = {
 # Page numbers are one-based within the separate official illustration PDF.
 # Every binding below was checked visually against the rendered sheet.
 ILLUSTRATION_PAGES: dict[tuple[int, str], dict[int, int]] = {
+    # 2010 sheets are four portrait pages each.
+    (2010, 'higher'): {
+        1: 1, 4: 1, 7: 1,
+        9: 2, 11: 2,
+        12: 3,
+        14: 4, 16: 4,
+    },
+    (2010, 'ordinary'): {
+        1: 1, 2: 1, 3: 1,
+        5: 2, 6: 2,
+        8: 3, 9: 3,
+        13: 4, 21: 4,
+    },
     # 2011 sheets embed low-resolution photographs, complete and legible.
     (2011, 'higher'): {
         1: 1, 4: 1, 5: 1, 7: 1, 13: 1, 19: 1,
@@ -1157,6 +1238,29 @@ for _year, _level, _topics in (
 # to give the question this heading; where the reference contradicts the
 # paper, the Atlas builder records a reviewed anomaly).
 LEGACY_QUESTION_TOPICS: dict[tuple[int, str], tuple[str, ...]] = {
+    (2010, 'higher'): (
+        # Q2 early Irish (Early Christian) architecture; Q4 eleventh-century
+        # metalwork; Q7 le Brocquy's 'Image of Bono': Post-1960s Art in Ireland.
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5',
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-1', 'art-4-3',
+        'art-4-6',  # Q13: per option (OPTION_TOPICS)
+        'art-4-4',
+        'art-4-6',  # Q15: per option (OPTION_TOPICS)
+        # Q16 graffiti's social commentary; Q17 furnishing an open-plan living
+        # space; Q18 preserving historical buildings; Q19 local galleries.
+        'art-6-2', 'art-6-3', 'art-6-3', 'art-6-0', 'art-6-1',
+    ),
+    (2010, 'ordinary'): (
+        # Q6 Edward Delaney's 'Famine Group' (1967): Post 1960s Art in Ireland.
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5', 'art-5-4',
+        # Q8 the Wilton Diptych, International Gothic; Q13 Munch's 'Girls on a
+        # Jetty' (c.1901).
+        'art-4-0', 'art-4-1', 'art-4-1',
+        'art-4-6',  # Q11: per option (OPTION_TOPICS)
+        'art-4-3', 'art-4-4', 'art-4-4',
+        # Q19 stadiums in their locality.
+        'art-6-0', 'art-6-1', 'art-6-1', 'art-6-1', 'art-6-3', 'art-6-1', 'art-6-1',
+    ),
     (2011, 'higher'): (
         # Q5 Barret (1741-1806) and O'Connor (c.1792-1841); Q7 Ballagh's
         # 'Portrait of Noel Browne': Post-1960s Art in Ireland.
@@ -1528,6 +1632,9 @@ def is_furniture(line: str, year: int) -> bool:
         r'^State Examinations Commission\.?$',
         r'^Coimisiún na Scrúduithe Stáit$',
         r'^\d{1,2}$',
+        # A stray full stop set on a line of its own under 2010 OL Q18's
+        # closing instruction: layout, not a word of the question.
+        r'^\.$',
     )
     return any(re.search(pattern, value, re.I) for pattern in patterns)
 
@@ -1591,12 +1698,12 @@ def clean_prompt(value: str, sentence_lines: bool = False) -> str:
     # Tick-box options printed on their own line ("Yes [ ]  No [ ]") keep it,
     # so they do not run into the sentences either side (2023 OL Q5(b)).
     value = re.sub(r'(?m)^[ \t]*Yes[ \t]+No[ \t]*$', '\n@@BOXES@@\n', value)
-    # A choose-one directive printed without a colon, its options one per
-    # line with no bullet marker (2012 OL Q11 "Choose one of the following
-    # works and answer (a) and (b)", then four titled works): each option
-    # keeps its own line, as printed.
+    # A choose-one directive whose options print one per line with no bullet
+    # marker (2012 OL Q11 "Choose one of the following works and answer (a)
+    # and (b)", 2010 OL Q11 the same with a colon, then the titled works):
+    # each option keeps its own line, as printed.
     value = re.sub(
-        r'(?mi)^([^\n]*\bone of\s+the following \w+ and answer \(a\)[^\n:]*)\n'
+        r'(?mi)^([^\n]*\bone of\s+the following \w+ and answer \(a\)[^\n]*)\n'
         r'((?:(?![ \t]*(?:\n|@@PART@@))[^\n]*\n)+)',
         lambda match: match.group(1) + '\n' + ''.join(
             f'@@LINE@@{line}\n' for line in match.group(2).split('\n')[:-1]),
@@ -1610,8 +1717,11 @@ def clean_prompt(value: str, sentence_lines: bool = False) -> str:
         value = re.sub(r'([.?!])[ \t]*\n(?=(?:[ \t]*\n)*[ \t]*[A-Z‘“\'(])', r'\1\n@@LINE@@', value)
         # The closing instruction is its own line even after a bullet printed
         # without a full stop ("• use of colour/light", then "Use sketches to
-        # illustrate your answer." in 2011 OL Q14).
-        value = re.sub(r'(?m)^[ \t]*(?=(?:Use sketches to illustrate|Illustrate) your answer)',
+        # illustrate your answer." in 2011 OL Q14), and so is the lead-in to
+        # printed headings after a sentence printed without one ("... of the
+        # film", blank, "Use the following headings ..." in 2010 OL Q20).
+        value = re.sub(r'(?m)^[ \t]*(?=(?:Use sketches to illustrate|Illustrate) your answer'
+                       r'|Use the following headings)',
                        '@@LINE@@', value)
     value = re.sub(r'[ \t]+', ' ', value)
     value = re.sub(r'\s*\n\s*', ' ', value)
@@ -2647,7 +2757,7 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
 
     runtime = {
         'subjectId': 'art',
-        'corpus': 'All separately marked written-examination tasks, 2011–2026; a printed choice is one card',
+        'corpus': 'All separately marked written-examination tasks, 2010–2026; a printed choice is one card',
         'cardCount': len(cards),
         'auditedYears': list(AUDITED_YEARS),
         # Lifted from each audited year's scheme by art_printed.py; the cards

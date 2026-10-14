@@ -10,21 +10,23 @@ import { artMarks, suggestRubricGrade } from '../components/MarkBank/SessionScre
 
 const CARDS = [...HIGHER, ...ORDINARY];
 
-describe('complete Art corpus, 2011–2026', () => {
-  it('cards every separately marked task on all thirty-two papers', () => {
-    expect(HIGHER).toHaveLength(844);
-    expect(ORDINARY).toHaveLength(797);
-    expect(CARDS).toHaveLength(1641);
-    expect(new Set(CARDS.map(card => card.id)).size).toBe(1641);
+describe('complete Art corpus, 2010–2026', () => {
+  it('cards every separately marked task on all thirty-four papers', () => {
+    expect(HIGHER).toHaveLength(902);
+    expect(ORDINARY).toHaveLength(854);
+    expect(CARDS).toHaveLength(1756);
+    expect(new Set(CARDS.map(card => card.id)).size).toBe(1756);
 
     const censusIds = census.papers.flatMap(paper => paper.cards.map(card => card.cardId));
     expect([...CARDS.map(card => card.id)].sort()).toEqual([...censusIds].sort());
-    expect(census.papers).toHaveLength(32);
-    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(1641);
+    expect(census.papers).toHaveLength(34);
+    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(1756);
   });
 
   it('keeps the audited task census for each paper', () => {
     const expected = {
+      '2010-higher': 58,
+      '2010-ordinary': 57,
       '2011-higher': 59,
       '2011-ordinary': 57,
       '2012-higher': 55,
@@ -184,8 +186,8 @@ describe('complete Art corpus, 2011–2026', () => {
     const requiringIllustration = CARDS.filter(card =>
       /accompanying sheet/i.test(`${card.stem ?? ''} ${card.questionText}`));
     const withIllustration = CARDS.filter(card => card.sourceMaterial);
-    expect(requiringIllustration).toHaveLength(604);
-    expect(withIllustration).toHaveLength(635);
+    expect(requiringIllustration).toHaveLength(641);
+    expect(withIllustration).toHaveLength(673);
     expect(requiringIllustration.filter(card => !card.sourceMaterial).map(card => card.id)).toEqual([]);
 
     for (const card of withIllustration) {
@@ -194,7 +196,8 @@ describe('complete Art corpus, 2011–2026', () => {
         pages: [expect.any(Number)],
       });
       expect(card.sourceMaterial!.pages[0]).toBeGreaterThanOrEqual(1);
-      expect(card.sourceMaterial!.pages[0]).toBeLessThanOrEqual(2);
+      // Two landscape pages from 2011; the 2010 sheets are four portrait pages.
+      expect(card.sourceMaterial!.pages[0]).toBeLessThanOrEqual(card.year === 2010 ? 4 : 2);
       // The bilingual sheet from 2021; the English sheet earlier (004 from
       // 2019, C00 2011-2018, 013 in 2010).
       expect(card.sourceMaterial!.sourceFileid)
@@ -221,7 +224,7 @@ describe('complete Art corpus, 2011–2026', () => {
     };
     const printed = authored.descriptors as Record<string, Printed>;
     const audited = new Set<number>(authored.auditedYears);
-    expect([...audited]).toEqual([2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]);
+    expect([...audited]).toEqual([2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]);
     // The condensed wording these cards used to show is gone from them.
     const condensed = 'Limited coherence, focus, visual-art terminology and/or relevant sketches.';
     const written = 'Understand the demands of the chosen question and build the response around it.';

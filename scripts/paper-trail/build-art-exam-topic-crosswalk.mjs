@@ -437,6 +437,12 @@ const REVIEWED_REFERENCE_ANOMALIES = [
     topicId: 'art-ordinary-europe-modernism-c-1900-1960s',
     evidence: "Q14 is \"Choose any work that you have studied by Henri Matisse (1869-1954)\": Matisse's work is Modernism (c. 1900-1960s), as for 2019 HL Q13, not Post-Impressionism.",
   },
+  {
+    level: 'higher', year: 2010, n: '2',
+    referenceTopicId: 'art-higher-pre-christian-ireland-c-4000bc-ad500',
+    topicId: 'art-higher-insular-art-c-500-1100s',
+    evidence: "Q2 is \"Describe and discuss early Irish architecture, referring in your answer to monastic settlements, churches and beehive huts\", then the construction of Gallarus Oratory or the Church of St. Macdara: Early Christian architecture is Insular Art (c. 500-1100s), not Pre-Christian Ireland (c. 4000BC-AD500).",
+  },
 ];
 const anomalyFor = (level, year, n, topicId) => REVIEWED_REFERENCE_ANOMALIES.find(item => (
   item.level === level && item.year === year && item.n === n && item.referenceTopicId === topicId
@@ -862,15 +868,15 @@ if (
   throw new Error('Every logical Art card must be exactly matched, reviewed, or explicitly retained');
 }
 if (
-  matchedAssociations.length !== 554
+  matchedAssociations.length !== 553
   || sourceBlockedAssociations.length !== 98
-  || referenceAnomalyAssociations.length !== 38
-  || exactTopicsByCard.size !== 506
-  || reviewedTopicsByCard.size !== 37
-  || reviewedOnlyCards.length !== 35
-  || matchedQuestionTopicLinks !== 546
-  || reviewedOptionTopics.length !== 158
-  || reviewedSpecificTopics.length !== 52
+  || referenceAnomalyAssociations.length !== 39
+  || exactTopicsByCard.size !== 505
+  || reviewedTopicsByCard.size !== 38
+  || reviewedOnlyCards.length !== 36
+  || matchedQuestionTopicLinks !== 545
+  || reviewedOptionTopics.length !== 169
+  || reviewedSpecificTopics.length !== 57
   || retainedLocalCards.length !== 536
   || retainedWrittenLogicalCards !== 144
   || retainedPracticalLogicalCards !== 392
