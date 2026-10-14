@@ -4527,61 +4527,61 @@
       "textSha256": "a62488dc6474364295b71ceab97bde4de3fdb63cf4e90e1c5b94552c4cbbbc01",
       "contextSha256": "b6a002e6fcae92fcba215d3c867e50dbc46de0306131814b8e6ad3a59f89eec1",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2016-hl-p2-single-a-i"
       ],
       "taskSha256": {
         "english-2016-hl-p2-single-a-i": "2f15c6eb3103ef98e3eb1d2295c5ace78ad9b2e18a4dc69ceca1d398930da310"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2016-hl-p2-p2-pdf-18-a62488dc6474": {
       "textSha256": "a62488dc6474364295b71ceab97bde4de3fdb63cf4e90e1c5b94552c4cbbbc01",
       "contextSha256": "223702902b62942d11e321989ea137e9292f547421ee50fb336916089f69d256",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2016-hl-p2-single-b-i"
       ],
       "taskSha256": {
         "english-2016-hl-p2-single-b-i": "f8445a85c383d55ce0086adb4227df10365e74865d9db7022d18a44aac79a40d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2016-hl-p2-p2-pdf-27-a62488dc6474": {
       "textSha256": "a62488dc6474364295b71ceab97bde4de3fdb63cf4e90e1c5b94552c4cbbbc01",
       "contextSha256": "366c25458d395d39b225a88d880079a1db6abc5e357eaadc0efeb6587069cd50",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2016-hl-p2-single-c-i"
       ],
       "taskSha256": {
         "english-2016-hl-p2-single-c-i": "0438cb52198d9e7d6df6bb4867156b74cd4b90c14a6cb965a53b94a9b9c0b14e"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2016-hl-p2-p3-pdf-5-a62488dc6474": {
       "textSha256": "a62488dc6474364295b71ceab97bde4de3fdb63cf4e90e1c5b94552c4cbbbc01",
       "contextSha256": "a85ab5b3243c1198ce6691c4845b9af96db896ad0ccc807b55e53f9c4fbd088d",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2016-hl-p2-single-d-i"
       ],
       "taskSha256": {
         "english-2016-hl-p2-single-d-i": "705f2881bde275250ded82641c5f368f933aa2b0a6b5dc8700e5a229eac8ee8e"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2016-hl-p2-p3-pdf-15-a62488dc6474": {
       "textSha256": "a62488dc6474364295b71ceab97bde4de3fdb63cf4e90e1c5b94552c4cbbbc01",
       "contextSha256": "08f79f3ca5950ce65b55ab99c1512754215eedd0fe6250ce6342964284c1156c",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2016-hl-p2-single-e-i"
       ],
       "taskSha256": {
         "english-2016-hl-p2-single-e-i": "431be273ba5e93e7e4a46a196e7fbe425d517fc902bfaa9ee11aae3ced962c79"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2016-ol-p1-p3-pdf-34-9e3214ee480f": {
       "textSha256": "9e3214ee480facb28bc4a55c9f19d99e17b8c0290c895b397356c30a2f15b0dc",
@@ -18762,90 +18762,88 @@
       "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
     },
     "english-2016-hl-p2-p4-pdf-23-28d59768478c": {
-      "kind": "tasks",
       "textSha256": "28d59768478ce701bc26546be7c39887eacfbfaec573ead6c076bab0a35ac326",
       "contextSha256": "d170ba90d8800619fec0c0a990c47114a56e880aab542639b94e148bb67c1aca",
-      "taskIds": [
-        "english-2016-hl-p2-comparative-a-q2-a",
-        "english-2016-hl-p2-comparative-a-q2-b"
-      ],
-      "taskSha256": {
-        "english-2016-hl-p2-comparative-a-q2-a": "3db104f3b82b6ce0e6df1cbc01be4998a3fa94552b8b82aeae5d710017ea95f2",
-        "english-2016-hl-p2-comparative-a-q2-b": "c6c4295e027a08d506ff967bad3a31c5f484f8e4bab7248dd6963e87697b7069"
-      },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
-    },
-    "english-2016-hl-p2-p4-pdf-25-9ae4755fe0ff": {
       "kind": "tasks",
-      "textSha256": "9ae4755fe0ff7e86a1734365281dfec13b1df2bdaaeeae49a2625c2cd7dc43be",
-      "contextSha256": "bdd5fcfa4b298885e2d23d797dce4157e5a470453f42a7a7e29ced255b326788",
       "taskIds": [
         "english-2016-hl-p2-comparative-a-q2-a"
       ],
       "taskSha256": {
         "english-2016-hl-p2-comparative-a-q2-a": "3db104f3b82b6ce0e6df1cbc01be4998a3fa94552b8b82aeae5d710017ea95f2"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2016-hl-p2-p4-pdf-25-9ae4755fe0ff": {
+      "textSha256": "9ae4755fe0ff7e86a1734365281dfec13b1df2bdaaeeae49a2625c2cd7dc43be",
+      "contextSha256": "bdd5fcfa4b298885e2d23d797dce4157e5a470453f42a7a7e29ced255b326788",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2016-hl-p2-comparative-a-q2-a"
+      ],
+      "taskSha256": {
+        "english-2016-hl-p2-comparative-a-q2-a": "3db104f3b82b6ce0e6df1cbc01be4998a3fa94552b8b82aeae5d710017ea95f2"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2016-hl-p2-p4-pdf-29-b2e374c08a31": {
-      "kind": "tasks",
       "textSha256": "b2e374c08a315bb49aff70bdb5e27b4be121d2d74956af18f678f8c568b42d31",
       "contextSha256": "09f131d80251dda1222a233a9c12bff2c85902441fcecb8269d2f42761e35afb",
+      "kind": "tasks",
       "taskIds": [
         "english-2016-hl-p2-comparative-a-q2-b"
       ],
       "taskSha256": {
         "english-2016-hl-p2-comparative-a-q2-b": "c6c4295e027a08d506ff967bad3a31c5f484f8e4bab7248dd6963e87697b7069"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2016-hl-p2-p4-pdf-30-5fe71475be3d": {
-      "kind": "tasks",
       "textSha256": "5fe71475be3d2214d3fc696d44b66974d030a05ff3086a622176a9185dd0e81b",
       "contextSha256": "d486adc477b84a17f70e982a6b9436fdd2d0599149012c380fb29c0d842bae3b",
+      "kind": "tasks",
       "taskIds": [
         "english-2016-hl-p2-comparative-a-q2-b"
       ],
       "taskSha256": {
         "english-2016-hl-p2-comparative-a-q2-b": "c6c4295e027a08d506ff967bad3a31c5f484f8e4bab7248dd6963e87697b7069"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2016-hl-p2-p4-pdf-33-bc0ed73fa171": {
-      "kind": "tasks",
       "textSha256": "bc0ed73fa1719fc41110378d6e75880829ce2c12aec53d648c31ffadf1153d22",
       "contextSha256": "b2e4baa9af945d007d978214f5b334a0f78752fafc6f8c3419a2a39da8bd5f16",
+      "kind": "tasks",
       "taskIds": [
         "english-2016-hl-p2-comparative-a-q2-b"
       ],
       "taskSha256": {
         "english-2016-hl-p2-comparative-a-q2-b": "c6c4295e027a08d506ff967bad3a31c5f484f8e4bab7248dd6963e87697b7069"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2016-hl-p2-p5-pdf-12-9ce79ae8644f": {
-      "kind": "tasks",
       "textSha256": "9ce79ae8644f078a9a82247fb4f8230d6485d99dd69e5b50775651733447ec83",
       "contextSha256": "71edc022abc5190f0ac8b1f4df44a52245d3b0c775f61611d70e2983b41a582b",
+      "kind": "tasks",
       "taskIds": [
         "english-2016-hl-p2-comparative-b-q2-a"
       ],
       "taskSha256": {
         "english-2016-hl-p2-comparative-b-q2-a": "d52525fa27d60043126d8df51c70cc88c3489e67588f733ada0b210a00cf5754"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2016-hl-p2-p6-pdf-27-d4d638ba66d2": {
-      "kind": "tasks",
       "textSha256": "d4d638ba66d2cf31cb7807cd1a60f729b7c5339f498db28b040f943990738f77",
       "contextSha256": "f5586b5cad860f8d20f28f332d36453703fce4aa0c323bcd65ffaf2ab99a367c",
+      "kind": "tasks",
       "taskIds": [
         "english-2016-hl-p2-unseen-q1-b"
       ],
       "taskSha256": {
         "english-2016-hl-p2-unseen-q1-b": "8fc3b87aaf2410fcd6bc784a3d780c25e4a55dc4ea6f3efb51e5b76f4f12a9ad"
       },
-      "reason": "The complete multiword raw line matches these reviewed task prompts within its own printed question region. Linked exact question hashes bind the task-level finite/open/flexible decision; no unmatched source text is exempted."
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2016-ol-p2-p8-pdf-15-2824e8911eea": {
       "kind": "tasks",
@@ -32357,49 +32355,49 @@
       "textSha256": "571d64acc95d10209458bd0735bb9c95f3b345cde7a0d64fb4013f115d451a18",
       "contextSha256": "1a54b384e010b37d42ea27b20020a0f366fbb552521a23ffac44b6c8e3c707d3",
       "kind": "non-selection",
-      "reason": "Exact page-number footer: the first number matches this PDF page and the second matches the verified document length. No task or answer-selection directive."
+      "reason": "Page footer (“Page n of 8”); not a candidate task or answer-route selection."
     },
     "english-2016-hl-p2-p2-pdf-33-9c8b28bf9254": {
       "textSha256": "9c8b28bf9254da4995803e44623edfa075bc84b9e13a56958ef03b219f227550",
       "contextSha256": "ecf56b870276965f500be21b53c609739979a1071df3691f3c54381cb4088248",
       "kind": "non-selection",
-      "reason": "Exact page-number footer: the first number matches this PDF page and the second matches the verified document length. No task or answer-selection directive."
+      "reason": "Page footer (“Page n of 8”); not a candidate task or answer-route selection."
     },
     "english-2016-hl-p2-p3-pdf-21-e4cfd6470552": {
       "textSha256": "e4cfd6470552ad617ff6e52fa3b4612851fc91e3d513add0377df47079a93de2",
       "contextSha256": "31bc69fc1763a41d599e8d3c6df7345bee9cf77bb9fd4fdf684ecf309b6fcd06",
       "kind": "non-selection",
-      "reason": "Exact page-number footer: the first number matches this PDF page and the second matches the verified document length. No task or answer-selection directive."
+      "reason": "Page footer (“Page n of 8”); not a candidate task or answer-route selection."
     },
     "english-2016-hl-p2-p4-pdf-35-68401d37ee7d": {
       "textSha256": "68401d37ee7d10a22eb41cc18e5c58aba4d1732ad33ee67217b55de6ca16b08a",
       "contextSha256": "6df659ddb2c3b6759a142f13982e803f5e0af4454ee2077c44a07fd9c651156a",
       "kind": "non-selection",
-      "reason": "Exact page-number footer: the first number matches this PDF page and the second matches the verified document length. No task or answer-selection directive."
+      "reason": "Page footer (“Page n of 8”); not a candidate task or answer-route selection."
     },
     "english-2016-hl-p2-p5-pdf-18-83d6cbdb7f0e": {
       "textSha256": "83d6cbdb7f0e9b6bf850c31a512be205a7d3b9d62c7f7273cd91c8465d3b2205",
       "contextSha256": "9e3f489a376e99817ff92bf1ecd1066ca0851c4f1af86f2a0e695a259e3a980f",
       "kind": "non-selection",
-      "reason": "Exact page-number footer: the first number matches this PDF page and the second matches the verified document length. No task or answer-selection directive."
+      "reason": "Page footer (“Page n of 8”); not a candidate task or answer-route selection."
     },
     "english-2016-hl-p2-p6-pdf-33-ca2c87d605e7": {
       "textSha256": "ca2c87d605e794a470b9b19e92146f9d687a7e50c421b3c015fc392cc5b954a7",
       "contextSha256": "fe9267abffc099f1dc50d34426efc8f2ac21e1343fdd5ff4571054fbf4c365c2",
       "kind": "non-selection",
-      "reason": "Exact page-number footer: the first number matches this PDF page and the second matches the verified document length. No task or answer-selection directive."
+      "reason": "Page footer (“Page n of 8”); not a candidate task or answer-route selection."
     },
     "english-2016-hl-p2-p7-pdf-25-3670eeb01d10": {
       "textSha256": "3670eeb01d107e1408112ed6d9570c7ef8534181578a74c01065eeea03d209cc",
       "contextSha256": "0396f5b302574836b16edd78221dcde309298345ca3b280cda848658f16a152b",
       "kind": "non-selection",
-      "reason": "Exact page-number footer: the first number matches this PDF page and the second matches the verified document length. No task or answer-selection directive."
+      "reason": "Page footer (“Page n of 8”); not a candidate task or answer-route selection."
     },
     "english-2016-hl-p2-p8-pdf-2-78689aa62be8": {
       "textSha256": "78689aa62be8b0555f3a109ce0ab8d5e185831c09eba5c75eaaab62cba19c039",
       "contextSha256": "28d667c025e9ba699fac163ffb723fb7c519d4676372aeaa69d12f0868e9f8ca",
       "kind": "non-selection",
-      "reason": "Exact page-number footer: the first number matches this PDF page and the second matches the verified document length. No task or answer-selection directive."
+      "reason": "Page footer (“Page n of 8”); not a candidate task or answer-route selection."
     },
     "english-2016-ol-p1-p1-pdf-32-3eefdfeb14c8": {
       "textSha256": "3eefdfeb14c8c3c279c8e403ed5fbdc2451f087ff72c6c3a0bd2d03ff2c4c6c5",
@@ -38802,6 +38800,132 @@
       "contextSha256": "b59eebf5c64dc009c75ce0e8478e0ba8c2248ecfeec6ea4534d5682563c401bc",
       "kind": "non-selection",
       "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2016-hl-p2-p1-pdf-8-2610acdeff23": {
+      "textSha256": "2610acdeff23cbf072ef6f87de4c3fcf3802a3ba57945129ec0da246429b17d8",
+      "contextSha256": "69bf3e9941bb3234855d11cf8f13793e86269daa4793da328c29afbe34ff68cd",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2016-hl-p2-p1-pdf-14-9a0dcbd53b00": {
+      "textSha256": "9a0dcbd53b00345d253469c1ed98c672a609a329089c6545a964e718ce909cb3",
+      "contextSha256": "c3d787a5bae311a884002d74ad15fcfbf75ceec0cc9f207c0ab2fedd7f6f4b2f",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2016-hl-p2-p2-pdf-10-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "325573822702f5dfcd7f1dc9a27f9eb8a48c641abc203b99640ea0a62a350b22",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2016-hl-p2-p2-pdf-20-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "e13461824f154a8f951da10260ac2f36dc9391484ece8e5f00cec813c79a938f",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2016-hl-p2-p2-pdf-28-472fd6a97548": {
+      "textSha256": "472fd6a97548a0a548e249190f4cecb049f051421e9fad0579f04eb1f7785ef9",
+      "contextSha256": "4bcddf535a789b3d337af6004aa9d7af238a5cc7a7252b75802ece353a5f9ebb",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2016-hl-p2-single-c-i"
+      ],
+      "taskSha256": {
+        "english-2016-hl-p2-single-c-i": "0438cb52198d9e7d6df6bb4867156b74cd4b90c14a6cb965a53b94a9b9c0b14e"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2016-hl-p2-p2-pdf-29-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "2fe48317537c62614b30d262bf9febc2ad277fc65fc2207d8660a099c96769b3",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2016-hl-p2-p3-pdf-7-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "f355fcbfbbcdc0ccf409051af135313133a14748b9738b6c4351c6bb36fbb5e2",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2016-hl-p2-p3-pdf-17-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "7c79ca01f12961e4aa391d0148db689e42959a7c1a05511d278dea309ced5acf",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2016-hl-p2-p4-pdf-2-5ec8bf4a685f": {
+      "textSha256": "5ec8bf4a685f82df120dba28138a538ba87d3490831ea328de29f053fc8bf4d9",
+      "contextSha256": "b668704ef672fff445dd3e11ee8f145ce58d74641f3df473e59e41d053e6ea71",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2016-hl-p2-p4-pdf-22-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "96ed5628f4d87d05f0c27602051ea90de007e37898e2328819e0b64278e9422f",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2016-hl-p2-p5-pdf-5-4ee61e947865": {
+      "textSha256": "4ee61e947865424d75902eca52c63a09fea4a4d42309c10b3df13d391f901c26",
+      "contextSha256": "7fdca5be57bc213cd94d40e3bb7ca7758b942796d66615c6488c159921a3337a",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2016-hl-p2-comparative-b-q1"
+      ],
+      "taskSha256": {
+        "english-2016-hl-p2-comparative-b-q1": "bbca41ec3fdd247f125cb7c6e5158434f089af211af38c55f96dd962423e6069"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2016-hl-p2-p5-pdf-8-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "33f3346ce328b17fa562ff52d93e0d2650209bebbce5036fe4419be0bb645ee6",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2016-hl-p2-p6-pdf-5-688ce3739d2c": {
+      "textSha256": "688ce3739d2c804b202a4702fbf71068ddb8ae32bbec161a31bbd902a7e361f8",
+      "contextSha256": "18f79599a89b7e7f220a5e0972869c34939d037d04210524ad5d588852211930",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2016-hl-p2-p6-pdf-6-cd1df9617c70": {
+      "textSha256": "cd1df9617c70d4822c849341768c20b2441f22fc34e7446cfc3ad647ee685659",
+      "contextSha256": "aba5d6b4e8ab89c06677ebce0fc1274846046ad972224c3059ed09d03a687c79",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2016-hl-p2-p6-pdf-15-9fa358e55787": {
+      "textSha256": "9fa358e557870b650a21abf25bff06527262625ead6651c6adbe1c5c7c1f9954",
+      "contextSha256": "7819c8a934e20500f3eeb1bb2f0ae8f52ed233a2382f67778acbf48c0eacd2f4",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive."
+    },
+    "english-2016-hl-p2-p6-pdf-28-cdbb685a22f5": {
+      "textSha256": "cdbb685a22f54cf24634bcc71fac609929334e8079c15ccff9c78687c753f546",
+      "contextSha256": "e52f1fd969f39a9f096608074c53474ab3b181edc13fcc899030d867bc8dd957",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2016-hl-p2-unseen-q1-b"
+      ],
+      "taskSha256": {
+        "english-2016-hl-p2-unseen-q1-b": "8fc3b87aaf2410fcd6bc784a3d780c25e4a55dc4ea6f3efb51e5b76f4f12a9ad"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2016-hl-p2-p6-pdf-29-829e5b28af38": {
+      "textSha256": "829e5b28af38ab3379fd0b4f3fd4f2f161326bb38dfeaf83bc97d08f60f84c88",
+      "contextSha256": "46a1ba9ec85d0c4d2158e6f29ffa5499bed4c325c9510605a4fec533b14113d1",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2016-hl-p2-p7-pdf-3-1347e8fc7b6e": {
+      "textSha256": "1347e8fc7b6e35cc113d279ac4d525d57e5a3a76a0f90ede83e469039b6e3ae1",
+      "contextSha256": "a3124867ecfd369eb420667e14ad8440865a3665ed75ae78c309976d619145e4",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
     }
   }
 }

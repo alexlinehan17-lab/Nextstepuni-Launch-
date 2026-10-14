@@ -52061,6 +52061,608 @@
         "notes": "One global mark ex 20 from the 2021 OL combined grid (PDF68–69, O1–O8), P+C and L+M read together."
       },
       "reason": "All 20 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”, Q1(c) “Combined Criteria ex 15, P+C = 9, L + M = 6”; Q2–Q4 “Discrete Criteria ex 35, P = 11, C = 11, L = 11, M = 2” (the adjusted weighting); Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)/(b) 15 combined 9/6, Q2 (i)/(ii)/(iii) “Combined Criteria ex 20” 12/8. Appendix 2 grids PDF68–69."
+    },
+    "english-2016-hl-p2-single-a-i": {
+      "taskSha256": "1e4710bf7573aa33561b13dbf0bb9d1a2a4193e5482deced0eb7b5ef48ded5fe",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 60,
+      "schemePages": [
+        18
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-single-a-ii": {
+      "taskSha256": "a6c0dfd9881d12edf39619c4a4774bebbb321922e599b4f316219f14264a6997",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 60,
+      "schemePages": [
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-single-b-i": {
+      "taskSha256": "afaaf57cbe3fbcf3044f743c6a6c1bb87cedebf52eca8c9c7b25501525ab5ab5",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 60,
+      "schemePages": [
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-single-b-ii": {
+      "taskSha256": "2e87684f0d60436d264df3f8121bb3c40272f3abab2455eaea5e7a23a37caeb0",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 60,
+      "schemePages": [
+        21
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-single-c-i": {
+      "taskSha256": "bab220f0697c86714cee0e6995fa5f0a4ed0b30d6746736c12fe9326cdf86cc4",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 60,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-single-c-ii": {
+      "taskSha256": "a6cd071ed903c80f08244859cab013407e627981b03773c626e2abb2f7500144",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 60,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-single-d-i": {
+      "taskSha256": "3ae20eb0a352349eb4983b74664d2a8385bce11f960838c76128fdbb22633088",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 60,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-single-d-ii": {
+      "taskSha256": "4c3392dbc78325b532ecf4379dfce2c0eb937dda7003de6f725617e9a3084e11",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 60,
+      "schemePages": [
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-single-e-i": {
+      "taskSha256": "ee41ee660d58848cf47fae32a9d85e8918fb3df0974e1afb8c30e732d78d9f96",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 60,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-single-e-ii": {
+      "taskSha256": "d9646c2d659c44a0890600c55fa4e3f49bd668bd6acc91a0a18486ed3c534e55",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 60,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 18,
+          "C": 18,
+          "L": 18,
+          "M": 6
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-comparative-a-q1": {
+      "taskSha256": "4ae3b7e3a20549d7f438ed1a0bce7d8ba4084fa402630a8824bc055cf267fe61",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 70,
+      "schemePages": [
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-comparative-a-q2-a": {
+      "taskSha256": "b4cfc3bfad36f4864bfab410160fde1e193ecaf76d7e50598e1dfe651ba8e9f9",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 30,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 30 from the historical combined A+–E- grid printed with the task and on PDF40; no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-comparative-a-q2-b": {
+      "taskSha256": "7a41c1168f5a9bee272c9c80d0e60046e554d0febc841babadd117f90cc93049",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 40,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 40 from the historical combined A+–E- grid printed with the task and on PDF40; no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-comparative-b-q1": {
+      "taskSha256": "68977ef38326943c8ec36f2cdf21a13b55bd0456bec3c4dc0b38deb03166c1b4",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 70,
+      "schemePages": [
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 21,
+          "C": 21,
+          "L": 21,
+          "M": 7
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-comparative-b-q2-a": {
+      "taskSha256": "7fd9c8ff7fe5cc1c10dba5112ab3f8cd7dbd8f61ee5f1dc8a5d0eb56fab12595",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 30,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 30 from the historical combined A+–E- grid printed with the task and on PDF40; no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-comparative-b-q2-b": {
+      "taskSha256": "338c1d0585366c9f925ad7c51e565072cc97cd908311fe2a1a0d3477bfc52289",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 40,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 40 from the historical combined A+–E- grid printed with the task and on PDF40; no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-unseen-q1-a": {
+      "taskSha256": "9ce93ab5f5e82125d92e112617e0501b3ee6beecf128d2c194956b57746f49a9",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 10,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the historical combined A+–E- grid printed with the task and on PDF40; no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-unseen-q1-b": {
+      "taskSha256": "d9d04e66b1abcf7302c7c5efa28f765728700d194e636f1be967dc8c5ad773ed",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 10,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 10 from the historical combined A+–E- grid printed with the task and on PDF40; no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-unseen-q2": {
+      "taskSha256": "ce6e918cbc0ef391e066a9d8625e4eeca9ffae9b9ab67792ab220b43c0af1670",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 20,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the historical combined A+–E- grid printed with the task and on PDF40; no P/C/L/M submarks."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-prescribed-1": {
+      "taskSha256": "457ab9f748aa4ac80639391fbca5f683c8cb874ce032a19249140ab2cdb7e1d9",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 50,
+      "schemePages": [
+        35
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-prescribed-2": {
+      "taskSha256": "f16597b62e5667e836e2e0c7cb4583a15e8dc41f0187a0b4cef349f1fda5353b",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 50,
+      "schemePages": [
+        36
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-prescribed-3": {
+      "taskSha256": "0b9ae8cd5c8e070d1644a78335a5eeb66e859808777c3ecb6ff2325135a2e50f",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 50,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-hl-p2-prescribed-4": {
+      "taskSha256": "85f3d7d4e865cd4e1c282df470ab1804b8724ec1b46df72dc8fa98ba22947cde",
+      "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "totalMarks": 50,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        28,
+        33,
+        34,
+        40,
+        43
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
+      },
+      "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
     }
   }
 }

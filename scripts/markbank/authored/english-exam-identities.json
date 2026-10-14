@@ -1350,7 +1350,8 @@
       "observedHeading": "Prescribed Poetry · Emily Dickinson · Q1",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
-      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0"
+      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "promptHeading": "Emily Dickinson"
     },
     "english-2016-hl-p2-prescribed-2": {
       "topicId": "english-11-5",
@@ -1359,7 +1360,8 @@
       "observedHeading": "Prescribed Poetry · T. S. Eliot · Q2",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
-      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0"
+      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "promptHeading": "T. S. Eliot"
     },
     "english-2016-hl-p2-prescribed-3": {
       "topicId": "english-11-0",
@@ -1368,7 +1370,8 @@
       "observedHeading": "Prescribed Poetry · “Bishop Uses Highly Detailed Observation, Of People, Places And Events, To Explore · Q3",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
-      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0"
+      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "promptHeading": "Elizabeth Bishop"
     },
     "english-2016-hl-p2-prescribed-4": {
       "topicId": "english-11-4",
@@ -1377,7 +1380,8 @@
       "observedHeading": "Prescribed Poetry · Paul Durcan · Q4",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
-      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0"
+      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "promptHeading": "Paul Durcan"
     },
     "english-2016-ol-p2-single-a": {
       "topicId": "english-12-39",

@@ -861,6 +861,16 @@
     "english-6-0",
     "english-12-4"
    ]
+  },
+  {
+   "id": "english-higher-text-death-and-nightingales-reviewed-archive",
+   "level": "higher",
+   "slug": "text-death-and-nightingales",
+   "label": "Text - Death and Nightingales",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-54"
+   ]
   }
  ]
 }

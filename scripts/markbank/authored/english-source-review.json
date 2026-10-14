@@ -4692,6 +4692,39 @@
       "attribution": "The Language of Cat — Rachel Rooney, as reproduced in the SEC 2021 paper.",
       "questionSha256": "1acd33ee6d5fada7c1bf877f4b5fab8f73f80e34866905aee500a1cdbe546210",
       "reason": "Paper PDF14 prints the introduction (the poet explores the behaviour and attitude of cats), the instruction to read the poem twice, the title, all four stanzas and the byline above both questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
+    },
+    "english-2016-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "And Yet the Books",
+      "pages": [
+        6
+      ],
+      "attribution": "And Yet the Books — Czesław Miłosz, as reproduced in the SEC 2016 paper.",
+      "questionSha256": "34c53416d80fdfc09ade7b98686595e42c858541d7f0c87de97e32c9028cc2a6",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Czesław Miłosz and answer either Question 1 or Question 2”), the title, the whole 16-line poem and the byline above the questions; visually verified."
+    },
+    "english-2016-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "And Yet the Books",
+      "pages": [
+        6
+      ],
+      "attribution": "And Yet the Books — Czesław Miłosz, as reproduced in the SEC 2016 paper.",
+      "questionSha256": "8fc3b87aaf2410fcd6bc784a3d780c25e4a55dc4ea6f3efb51e5b76f4f12a9ad",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Czesław Miłosz and answer either Question 1 or Question 2”), the title, the whole 16-line poem and the byline above the questions; visually verified."
+    },
+    "english-2016-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "And Yet the Books",
+      "pages": [
+        6
+      ],
+      "attribution": "And Yet the Books — Czesław Miłosz, as reproduced in the SEC 2016 paper.",
+      "questionSha256": "b9cb2097728a71a5e0c73cb10a33a2d39fdc86dc75e2f65ab72d55e7aba61765",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Czesław Miłosz and answer either Question 1 or Question 2”), the title, the whole 16-line poem and the byline above the questions; visually verified."
     }
   }
 }

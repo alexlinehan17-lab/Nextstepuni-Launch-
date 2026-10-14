@@ -7388,27 +7388,27 @@
     "english-2016-hl-p2-single-a-i": {
       "questionSha256": "2f15c6eb3103ef98e3eb1d2295c5ace78ad9b2e18a4dc69ceca1d398930da310",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF18: “Candidates may choose to agree and/or disagree wholly or in part”; character traits Catherine Earnshaw and Heathcliff share/do not share and the dramatic and tragic aspects, “separately or together”. One 60-mark response."
     },
     "english-2016-hl-p2-single-b-i": {
       "questionSha256": "f8445a85c383d55ce0086adb4227df10365e74865d9db7022d18a44aac79a40d",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF20: “Candidates may choose to agree and/or disagree wholly or in part”; character traits Daisy Buchanan and Jay Gatsby share/do not share and the dramatic and tragic aspects, “separately or together”. One 60-mark response."
     },
     "english-2016-hl-p2-single-c-i": {
       "questionSha256": "0438cb52198d9e7d6df6bb4867156b74cd4b90c14a6cb965a53b94a9b9c0b14e",
-      "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "kind": "flexible",
+      "reason": "Scheme PDF22: agree and/or disagree, wholly or in part, that the central characters are tragic but not heroic, with “at least two of the play’s central characters”. One 60-mark response."
     },
     "english-2016-hl-p2-single-d-i": {
       "questionSha256": "705f2881bde275250ded82641c5f368f933aa2b0a6b5dc8700e5a229eac8ee8e",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF24: “Candidates may choose to agree and/or disagree wholly or in part”; character traits Billy and Beth Winters share/do not share and the dramatic and tragic aspects, “separately or together”. One 60-mark response."
     },
     "english-2016-hl-p2-single-e-i": {
       "questionSha256": "431be273ba5e93e7e4a46a196e7fbe425d517fc902bfaa9ee11aae3ced962c79",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF26: agree and/or disagree, wholly or in part; both Lear and Gloucester as tragic characters, and whether Lear develops into the more heroic figure. One 60-mark response."
     },
     "english-2016-ol-p2-single-a-q2-a": {
       "questionSha256": "2c5f78afb331ae9f38dea8c83ff72fe28247205ee4365bfb477d9cb85868748e",
@@ -12725,9 +12725,9 @@
       "questionSha256": "cac30217f92302b2da8573a8e106a8f8bdca9f1567d098dd88ebc84f6b9b5bad"
     },
     "english-2016-hl-p2-unseen-q1-b": {
+      "questionSha256": "8fc3b87aaf2410fcd6bc784a3d780c25e4a55dc4ea6f3efb51e5b76f4f12a9ad",
       "kind": "open",
-      "reason": "Images, lines, emotions and examples are freely identified within the poem, without a fixed printed option list. Ordinary literary judgements allow qualified answers; grammatical or, which and his/her do not create closed task routes.",
-      "questionSha256": "8fc3b87aaf2410fcd6bc784a3d780c25e4a55dc4ea6f3efb51e5b76f4f12a9ad"
+      "reason": "Scheme PDF33: two images of the candidate’s own that best convey the poet’s ideas, each explained. One 10-mark response."
     },
     "english-2016-ol-p2-unseen-q1": {
       "kind": "open",
@@ -13298,28 +13298,28 @@
     },
     "english-2016-hl-p2-comparative-a-q1": {
       "questionSha256": "06cbf4cbe13ebad1e01a1f86610554c3dc870a2f0f60d05307c844f5667073f0",
-      "kind": "context",
-      "reason": "The standalone OR separates the already extracted outer comparative alternatives. There is no additional fixed selection inside this marked part."
+      "kind": "required",
+      "reason": "Paper PDF4 and scheme PDF29: how the distribution of power “within each of three texts” reveals the cultural context — three texts required. One 70-mark comparison."
     },
     "english-2016-hl-p2-comparative-a-q2-a": {
       "questionSha256": "3db104f3b82b6ce0e6df1cbc01be4998a3fa94552b8b82aeae5d710017ea95f2",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF30: “at least one central character” and “at least one aspect” of the cultural context in one text, successful or unsuccessful — one graded judgement. One 30-mark response."
     },
     "english-2016-hl-p2-comparative-a-q2-b": {
       "questionSha256": "c6c4295e027a08d506ff967bad3a31c5f484f8e4bab7248dd6963e87697b7069",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF30: two other texts, at least one central character each; “the same aspect/s … or different aspects”. One 40-mark response."
     },
     "english-2016-hl-p2-comparative-b-q1": {
       "questionSha256": "bbca41ec3fdd247f125cb7c6e5158434f089af211af38c55f96dd962423e6069",
-      "kind": "context",
-      "reason": "The standalone OR separates the already extracted outer comparative alternatives. There is no additional fixed selection inside this marked part."
+      "kind": "required",
+      "reason": "Paper PDF5 and scheme PDF31: how the authors of “three of the texts” make settings real and engaging — three texts required. One 70-mark comparison."
     },
     "english-2016-hl-p2-comparative-b-q2-a": {
       "questionSha256": "d52525fa27d60043126d8df51c70cc88c3489e67588f733ada0b210a00cf5754",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF32: the technique(s) heightening “at least one moment of crisis” in one text; a broad interpretation of ‘moment of crisis’. One 30-mark response."
     },
     "english-2016-ol-p2-comparative-a-q1-a-i": {
       "questionSha256": "61b8d4e8a38c91179f5b8455e357b6ac037367969f5522e8107f37d4d0237b1f",
@@ -17620,6 +17620,66 @@
       "questionSha256": "cff20d58e241b6b3891993d8525506523e4585034cbf7ff8701d90ca84b31631",
       "kind": "open",
       "reason": "Scheme PDF65–66: “whether or not” the candidate finds the poem uplifting, amusing or disturbing, as printed — one explained judgement. One 15-mark response."
+    },
+    "english-2016-hl-p2-single-a-ii": {
+      "questionSha256": "297473f11ab86b8e8770230bd84e6ff0b0a98328f22eb9a5927ed154346c0ee5",
+      "kind": "flexible",
+      "reason": "Scheme PDF19: the effectiveness of a range of contrasts to create a darkly fascinating world; “more than one contrast, (although not necessarily equally)”. One 60-mark response."
+    },
+    "english-2016-hl-p2-single-b-ii": {
+      "questionSha256": "f5e8fcd9accf787f003e88087425c000c7482ad1c8f8620d7911e3980e033616",
+      "kind": "flexible",
+      "reason": "Scheme PDF21: the effectiveness of a range of contrasts to create a clearly unequal world; “more than one contrast, (although not necessarily equally)”. One 60-mark response."
+    },
+    "english-2016-hl-p2-single-c-ii": {
+      "questionSha256": "cdc3fd86ee66ac05c8999cd413e97b380000a480c765cf91b5178d989663a849",
+      "kind": "open",
+      "reason": "Scheme PDF23: the various ways in which Friel explores the theme of identity. One 60-mark response."
+    },
+    "english-2016-hl-p2-single-d-ii": {
+      "questionSha256": "80eeeefc44dfb6fe57db8882d339514cf28ef2f956830a0cc5e4ec7be6fd788a",
+      "kind": "flexible",
+      "reason": "Scheme PDF25: the effectiveness of a range of conflicts to create a deeply disturbing world; “more than one conflict, (although not necessarily equally)”. One 60-mark response."
+    },
+    "english-2016-hl-p2-single-e-ii": {
+      "questionSha256": "5186b1985745d672f9cbf9a16fa0565a56fe6443a4212b5e6f3f4576de8ef0b4",
+      "kind": "open",
+      "reason": "Scheme PDF27: Shakespeare’s exploration of both the destructive and the redemptive power of love, “although not necessarily equally”. One 60-mark response."
+    },
+    "english-2016-hl-p2-comparative-b-q2-b": {
+      "questionSha256": "a64b1e0ec3455b58aaa7b0ecd861d8fcc0542d963db61c7688d337b24d97331f",
+      "kind": "flexible",
+      "reason": "Scheme PDF32: two other texts, at least one moment of crisis each; the same or different technique(s). One 40-mark response."
+    },
+    "english-2016-hl-p2-unseen-q1-a": {
+      "questionSha256": "34c53416d80fdfc09ade7b98686595e42c858541d7f0c87de97e32c9028cc2a6",
+      "kind": "open",
+      "reason": "Scheme PDF33: the ideas expressed by the poet, supported from the poem. One 10-mark response."
+    },
+    "english-2016-hl-p2-unseen-q2": {
+      "questionSha256": "b9cb2097728a71a5e0c73cb10a33a2d39fdc86dc75e2f65ab72d55e7aba61765",
+      "kind": "open",
+      "reason": "Scheme PDF33: the language used by the poet throughout the poem, with close reference. One 20-mark response."
+    },
+    "english-2016-hl-p2-prescribed-1": {
+      "questionSha256": "08c1c19a887190a43dfa24b6c41fa4f647c751b4a0d6b162bdc3452d645f28e1",
+      "kind": "open",
+      "reason": "Scheme PDF34, 35: freedom of choice of poems studied; “Candidates are free to agree and/or disagree wholly or in part with the statement”. One 50-mark response."
+    },
+    "english-2016-hl-p2-prescribed-2": {
+      "questionSha256": "f7eccfece77807e89827cd2c25173b466482591ae6ddb6faee6ef712dddf7d79",
+      "kind": "open",
+      "reason": "Scheme PDF34, 36: freedom of choice of poems studied; “Candidates are free to agree and/or disagree wholly or in part with the statement”. One 50-mark response."
+    },
+    "english-2016-hl-p2-prescribed-3": {
+      "questionSha256": "028ab17c23bdeae38fa7150da142508d136ec4dd7b81910674ebf209efa67826",
+      "kind": "open",
+      "reason": "Scheme PDF34, 37: freedom of choice of poems studied; “Candidates are free to agree and/or disagree wholly or in part with the statement”. One 50-mark response."
+    },
+    "english-2016-hl-p2-prescribed-4": {
+      "questionSha256": "67d80d7002d3b3d260a9e74911285947b25f086740f5d44239ac77f57e9dc0e3",
+      "kind": "open",
+      "reason": "Scheme PDF34, 38: freedom of choice of poems studied; “Candidates are free to agree and/or disagree wholly or in part with the statement”. One 50-mark response."
     }
   }
 }

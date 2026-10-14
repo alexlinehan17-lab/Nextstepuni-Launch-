@@ -169,6 +169,17 @@
    "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512"
   },
   {
+   "paperId": "english-2016-hl-p2",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "tasks": 23,
+   "cards": 23,
+   "printedDuplicates": 0,
+   "paperSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+   "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512"
+  },
+  {
    "paperId": "english-2015-hl-p1",
    "year": 2015,
    "level": "higher",
@@ -1288,7 +1299,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 589,
+ "cardCount": 612,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -13312,6 +13323,804 @@
    "atlas": {
     "fileid": "LC002ALP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-single-a-i",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Single Text A(i)",
+   "questionText": "“Catherine Earnshaw and Heathcliff share a variety of character traits that contribute to the dramatic and tragic aspects of the story.” To what extent do you agree or disagree with this statement? Support your answer with reference to the novel, Wuthering Heights.",
+   "totalMarks": 60,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-single-a-ii",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Single Text A(ii)",
+   "questionText": "“Brontë’s effective use of a range of contrasts helps to create a darkly fascinating world in the course of her novel, Wuthering Heights.” Discuss this statement, supporting your answer with reference to the novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-single-b-i",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Single Text B(i)",
+   "questionText": "“Daisy Buchanan and Jay Gatsby possess a variety of character traits that contribute to the dramatic and tragic aspects of the story.” To what extent do you agree or disagree with this statement? Support your answer with reference to the novel, The Great Gatsby.",
+   "totalMarks": 60,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-single-b-ii",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Single Text B(ii)",
+   "questionText": "“Fitzgerald’s effective use of a range of contrasts helps to create a clearly unequal world in the course of his novel, The Great Gatsby.” Discuss this statement, supporting your answer with reference to the novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-single-c-i",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Single Text C(i)",
+   "questionText": "“The central characters in Friel’s play, Translations, are tragic but not heroic.” To what extent do you agree or disagree with this statement? Support your answer with reference to at least two of the play’s central characters.",
+   "totalMarks": 60,
+   "topicId": "english-12-50",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Translations (Brian Friel)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-single-c-ii",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Single Text C(ii)",
+   "questionText": "“Friel explores the theme of identity in a variety of ways throughout the play, Translations.” Discuss this statement, supporting your answer with reference to the play.",
+   "totalMarks": 60,
+   "topicId": "english-12-50",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Translations (Brian Friel)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-single-d-i",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Single Text D(i)",
+   "questionText": "“Billy and Beth Winters share a variety of character traits that contribute to the dramatic and tragic aspects of the story.” To what extent do you agree or disagree with this statement? Support your answer with reference to the novel, Death and Nightingales.",
+   "totalMarks": 60,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-single-d-ii",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Single Text D(ii)",
+   "questionText": "“McCabe makes effective use of a range of conflicts to create a deeply disturbing world in the course of his novel, Death and Nightingales.” Discuss this statement, supporting your answer with reference to the novel.",
+   "totalMarks": 60,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-single-e-i",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Single Text E(i)",
+   "questionText": "“Throughout the course of the play, both Lear and Gloucester are tragic characters, but Lear develops into the more heroic figure.” To what extent do you agree or disagree with this statement? Support your answer with reference to the play, King Lear.",
+   "totalMarks": 60,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-single-e-ii",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Single Text E(ii)",
+   "questionText": "“Shakespeare explores both the destructive and the redemptive power of love throughout the play, King Lear.” Discuss this statement, supporting your answer with reference to the play.",
+   "totalMarks": 60,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-comparative-a-q1",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Comparative A Q1",
+   "questionText": "“Understanding who holds power and who is powerless helps to reveal the cultural context in texts.” Compare how the distribution of power within each of three texts on your comparative course helps to reveal the cultural contexts in these texts. Support your answer with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · The Cultural Context · Q1",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-comparative-a-q2-a",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Comparative A Q2(a)",
+   "questionText": "“Central characters can be successful or unsuccessful in challenging aspects of the cultural context in texts.” Discuss the extent to which at least one central character is successful or unsuccessful in challenging at least one aspect of the cultural context in one text on your comparative course. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · The Cultural Context · Q2",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-comparative-a-q2-b",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Comparative A Q2(b)",
+   "questionText": "“Central characters can be successful or unsuccessful in challenging aspects of the cultural context in texts.” Compare the extent to which at least one central character, from each of two other comparative texts, is either successful or unsuccessful in challenging at least one aspect of the cultural context in these texts. Support your answer with reference to your chosen texts. You may refer to the same aspect or different aspects of the cultural contexts in your answers.",
+   "totalMarks": 40,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · The Cultural Context · Q2",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-comparative-b-q1",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Comparative B Q1",
+   "questionText": "“Authors can use various techniques to make settings real and engaging.” Compare how the authors of three of the texts on your comparative course make the settings in these texts real and engaging. Support your answer with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Literary Genre · Q1",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-comparative-b-q2-a",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Comparative B Q2(a)",
+   "questionText": "“Different techniques may be used to heighten the impact of moments of crisis in texts.” Discuss the technique(s) used to heighten the impact of at least one moment of crisis in one of the texts you have studied for your comparative course. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Literary Genre · Q2",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-comparative-b-q2-b",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Comparative B Q2(b)",
+   "questionText": "“Different techniques may be used to heighten the impact of moments of crisis in texts.” With reference to two other comparative texts, compare the technique(s) used to heighten the impact of at least one moment of crisis in each of these texts. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Literary Genre · Q2",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-unseen-q1-a",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Unseen Poetry Q1(a)",
+   "questionText": "Outline the ideas expressed by the poet in this poem. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "And Yet the Books",
+    "pages": [
+     6
+    ],
+    "attribution": "And Yet the Books — Czesław Miłosz, as reproduced in the SEC 2016 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-unseen-q1-b",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Unseen Poetry Q1(b)",
+   "questionText": "Select two images from the poem that you think best convey the poet’s ideas. Explain your choice.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "And Yet the Books",
+    "pages": [
+     6
+    ],
+    "attribution": "And Yet the Books — Czesław Miłosz, as reproduced in the SEC 2016 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-unseen-q2",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Unseen Poetry Q2",
+   "questionText": "Discuss the language used by the poet throughout this poem. Refer closely to the text in your answer.",
+   "totalMarks": 20,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q2",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "And Yet the Books",
+    "pages": [
+     6
+    ],
+    "attribution": "And Yet the Books — Czesław Miłosz, as reproduced in the SEC 2016 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-prescribed-1",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Prescribed Poetry Q1",
+   "questionText": "“Dickinson’s use of an innovative style to explore intense experiences can both intrigue and confuse.” Discuss this statement, supporting your answer with reference to the poetry of Emily Dickinson on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Emily Dickinson",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-prescribed-2",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Prescribed Poetry Q2",
+   "questionText": "“Eliot frequently creates memorable characters and dramatic settings to convey both his search for meaning in life and his sense of disillusionment.” Discuss this statement, supporting your answer with reference to the poetry of T. S. Eliot on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-5",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "T.S. Eliot",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-prescribed-3",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Prescribed Poetry Q3",
+   "questionText": "“Bishop uses highly detailed observation, of people, places and events, to explore unique personal experiences in her poetry.” Discuss this statement, supporting your answer with reference to the poetry of Elizabeth Bishop on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Elizabeth Bishop",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2016-hl-p2-prescribed-4",
+   "year": 2016,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2016 HL Paper 2 Prescribed Poetry Q4",
+   "questionText": "“Durcan takes a narrative approach to explore a variety of issues in poems of great emotional honesty.” Discuss this statement, supporting your answer with reference to the poetry of Paul Durcan on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-4",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Paul Durcan",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "4"
    }
   },
   {
