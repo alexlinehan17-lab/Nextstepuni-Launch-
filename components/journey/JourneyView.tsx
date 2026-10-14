@@ -22,13 +22,18 @@ import {
   knownLandmarks,
   axialDistance,
   paperTileKind,
+  paperRemovalBlock,
+  paperReplaceCost,
+  paperTileRefund,
   PAPER_LANDMARKS,
   type PaperDiscoveryId,
+  type PaperTile,
 } from "../../functions/src/paperIslandModel";
 import {
   IslandMap,
   TileShelf,
   Placement,
+  TileEditor,
   Overlay,
   defaultCamera,
 } from "./paper/MapControls";
@@ -77,6 +82,8 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
   const [building, setBuilding] = useState(false),
     [chosen, setChosen] = useState<TileKind>("meadow"),
     [candidate, setCandidate] = useState<string | null>(null),
+    // Build mode: the placed tile (cell key) being swapped or removed.
+    [editing, setEditing] = useState<string | null>(null),
     [camera, setCamera] = useState(defaultCamera),
     [group, setGroup] = useState<ShelfGroup>("All tiles"),
     [notice, setNotice] = useState<JourneyNotice | null>(null);
@@ -125,6 +132,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
   const changeMode = (value: boolean) => {
     setBuilding(value);
     setCandidate(null);
+    setEditing(null);
     setNotice(null);
     if (!value) { setChosenWonder(null);if(group==="Wonder tiles")setGroup("All tiles"); }
   };
@@ -170,6 +178,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
   };
   const undo = async () => {
     if (!island) return;
+    const last = island.undo;
     if (
       await execute({
         action: "undo",
@@ -178,11 +187,14 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
       })
     ) {
       setCandidate(null);
-      setNotice({
-        id: crypto.randomUUID(),
-        title: "Last tile returned.",
-        detail: "Your points or earned tile have been returned too.",
-      });
+      setEditing(null);
+      setNotice(
+        last?.previousTile && !last.tileId
+          ? { id: crypto.randomUUID(), title: "Tile put back.", detail: "It is back where it was, and its points or earned tile with it." }
+          : last?.previousTile && !last.previousTile.wonderId && last.restoreCost !== undefined
+            ? { id: crypto.randomUUID(), title: "Swap undone.", detail: "Your original tile is back, and your points with it." }
+            : { id: crypto.randomUUID(), title: "Last tile returned.", detail: "Your points or earned tile have been returned too." },
+      );
     }
   };
   const showDiscovery = (id: LegendId) => {
@@ -207,6 +219,80 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
     choose(kind);setGroup(groupFor(kind));setBuilding(true);setPanel(null);setCandidate(spot?.key??null);
     if(spot)setCamera({x:spot.x,y:spot.y-75,zoom:1});
     setNotice({id:crypto.randomUUID(),title:`${crew.name}’s little wish.`,detail:kind===crew.tile?wishText(id):`Add ${crew.anchorLabel.toLowerCase()} to make a little room for ${crew.name}.`});
+  };
+  const tileName = (tile: PaperTile) =>
+    tile.wonderId ? crewById[tile.wonderId].wonder : tileById[paperTileKind(tile)].name;
+  const editable = useMemo(
+    () => new globalThis.Map((island?.tiles ?? []).filter(tile => tile.kind !== "home").map(tile => [`${tile.q},${tile.r}`, tileName(tile)] as const)),
+    [island?.tiles],
+  );
+  const editingTile = editing ? island?.tiles.find(tile => `${tile.q},${tile.r}` === editing) : undefined;
+  const selectTile = (key: string) => {
+    setEditing(current => (current === key ? null : key));
+    setCandidate(null);
+    setNotice(null);
+  };
+  const pickCorner = (key: string) => {
+    setCandidate(key);
+    setEditing(null);
+  };
+  const editor = (() => {
+    if (!island || !editingTile) return null;
+    const refund = paperTileRefund(editingTile);
+    const removeBlock = paperRemovalBlock(island.tiles, editingTile.id);
+    const removeNote = refund.credit
+      ? "Returns 1 earned tile"
+      : refund.jp > 0
+        ? `Returns ${refund.jp} JP`
+        : editingTile.wonderId
+          ? "Back to your Wonder tiles"
+          : "Nothing to return";
+    let replaceBlock: string | null = null, replaceNote = "";
+    const price = chosenWonder ? null : paperReplaceCost(island, editingTile.id, chosen);
+    const sameTile = !editingTile.wonderId && paperTileKind(editingTile) === chosen;
+    if (chosenWonder || !price) replaceBlock = "Choose a tile from the shelf to swap in.";
+    else if (sameTile) replaceBlock = "Choose a different tile from the shelf to swap in.";
+    else if (price.net > balance)
+      replaceBlock = `You need ${price.net - balance} more JP for this swap.`;
+    if (price && !sameTile)
+      replaceNote = price.usedCredit
+        ? "1 earned tile"
+        : price.net > 0
+          ? `${price.net} JP`
+          : price.net < 0
+            ? `${-price.net} JP back`
+            : "Even swap";
+    // One sentence when both are blocked, so neither button is left unexplained.
+    const note = removeBlock && sameTile && removeBlock.endsWith("or replace it.")
+      ? "Remove the tiles beyond it first, or choose a different shelf tile to swap in."
+      : removeBlock ?? replaceBlock;
+    return { tile: editingTile, refund, removeNote, removeBlock, replaceNote, replaceBlock, note };
+  })();
+  const removeTile = async () => {
+    if (!island || !editor) return;
+    const name = tileName(editor.tile);
+    if (await execute({ action: "remove", tileId: editor.tile.id, requestId: crypto.randomUUID(), revision: island.revision })) {
+      setEditing(null);
+      const { refund, tile } = editor;
+      setNotice({
+        id: crypto.randomUUID(),
+        title: `${name} removed.`,
+        detail: refund.credit
+          ? "Your earned meadow tile is back on the shelf. Undo puts it back."
+          : refund.jp > 0
+            ? `${refund.jp} JP returned. Undo puts it back.`
+            : tile.wonderId
+              ? "It is back with your Wonder tiles, ready to place again."
+              : "It was part of your starting island, so there is nothing to return. Undo puts it back.",
+      });
+    }
+  };
+  const replaceTile = async () => {
+    if (!island || !editor) return;
+    const from = tileName(editor.tile);
+    if (await execute({ action: "replace", tileId: editor.tile.id, kind: chosen, requestId: crypto.randomUUID(), revision: island.revision })) {
+      setNotice({ id: crypto.randomUUID(), title: `${from} swapped for ${selected.name}.`, detail: "Undo swaps it back." });
+    }
   };
   const findSticker = (id?: LegendId) => {
     const target = id ? discoveries.find(d => d.id === id) : undefined;
@@ -272,7 +358,10 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                 chosen={chosen}
                 chosenWonder={chosenWonder}
                 candidate={candidate}
-                onCandidate={setCandidate}
+                onCandidate={pickCorner}
+                editable={editable}
+                selectedTile={editing}
+                onSelectTile={selectTile}
                 onInspect={(kind) => {
                   setInspected(kind);
                   setPanel("tile");
@@ -381,15 +470,31 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
               setGroup={setGroup}
               orientation="row"
             />
-            <Placement
-              world={world}
-              chosen={chosen}
-              chosenWonder={chosenWonder}
-              candidate={candidate}
-              onPlace={() => void build()}
-              onUndo={() => void undo()}
-              busy={busy}
-            />
+            {editor ? (
+              <TileEditor
+                name={tileName(editor.tile)}
+                replaceName={chosenWonder ? crewById[chosenWonder].wonder : selected.name}
+                replaceNote={editor.replaceNote}
+                replaceBlock={editor.replaceBlock}
+                removeNote={editor.removeNote}
+                removeBlock={editor.removeBlock}
+                note={editor.note}
+                busy={busy}
+                onReplace={() => void replaceTile()}
+                onRemove={() => void removeTile()}
+                onClose={() => setEditing(null)}
+              />
+            ) : (
+              <Placement
+                world={world}
+                chosen={chosen}
+                chosenWonder={chosenWonder}
+                candidate={candidate}
+                onPlace={() => void build()}
+                onUndo={() => void undo()}
+                busy={busy}
+              />
+            )}
           </div>
         </div>
       </main>
