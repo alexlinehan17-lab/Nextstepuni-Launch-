@@ -2012,17 +2012,74 @@
       "paperSha256": "a3542b882bf9bb5e7c4708c1ca16516f43b8649d2ae1ac5bd9b1515763d25b7c",
       "schemeSha256": "d134b785b4bbc4dc41514e97b8593301a566b5c0d2452fe23567a62e0540528b",
       "paperPagesInspected": [
+        1,
+        2,
+        3,
         4,
         5,
         6,
-        7
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ],
-      "visualSweepComplete": false,
+      "visualSweepComplete": true,
       "notes": [
-        "QA/B is 40 marks under adjusted paper. Text 2 real/virtual performer choice; Text 3 three numbered musical experiences at 10 marks."
+        "QA/B is 40 marks under adjusted paper. Text 2 real/virtual performer choice; Text 3 three numbered musical experiences at 10 marks.",
+        "Three QA groups of 10/10/10/10 plus three QB 40 and seven composing 100 = 22 tasks, one card each (Text 1 QB any one item, Text 2 A(iii)(a) real or virtual performer, Text 3 A(iii)(a) one of three experiences and composing 1 singer or musician are printed choices marked on one grid). COVID-adjusted paper: one Question A or one Question B.",
+        "Readers under printed headings: TEXT 1 A Rising Star of the Irish Hip-Hop Scene PDF2–3, TEXT 2 The End of Music as We Know It? PDF4–5 (also composing 5, whose earlier reader showed PDF4 alone under an invented title), TEXT 3 Shared Musical Experiences PDF6–7; A(iii)(b) and Text 1 A(iii)(a) need none. C/L ≤ P (PDF3); grids PDF68–69 (adjusted 2021–2022 print)."
       ],
-      "allTaskBoundariesSchemeChecked": false,
-      "allFiniteRoutesReconciled": false
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        67,
+        68,
+        69
+      ],
+      "schemePagesVisuallyChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        67,
+        68,
+        69
+      ],
+      "independentPaperTally": {
+        "baseTasks": 22,
+        "finiteRoutes": 22,
+        "basis": "Three QA groups of 10/10/10/10 plus three QB 40 and seven composing 100 = 22 tasks, one card each (Text 1 QB any one item, Text 2 A(iii)(a) real or virtual performer, Text 3 A(iii)(a) one of three experiences and composing 1 singer or musician are printed choices marked on one grid). COVID-adjusted paper: one Question A or one Question B."
+      }
     },
     {
       "paperId": "english-2021-ol-p2",

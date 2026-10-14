@@ -114,6 +114,17 @@
    "schemeSha256": "d3eb474c27b644da5779765503e9634eff5d9ac414e56199e6a00c76073bbd85"
   },
   {
+   "paperId": "english-2021-ol-p1",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "tasks": 22,
+   "cards": 22,
+   "printedDuplicates": 0,
+   "paperSha256": "a3542b882bf9bb5e7c4708c1ca16516f43b8649d2ae1ac5bd9b1515763d25b7c",
+   "schemeSha256": "d134b785b4bbc4dc41514e97b8593301a566b5c0d2452fe23567a62e0540528b"
+  },
+  {
    "paperId": "english-2018-ol-p1",
    "year": 2018,
    "level": "ordinary",
@@ -1446,6 +1457,17 @@
     },
     "capRulePage": 3
    },
+   "2021-ordinary": {
+    "family": "ol-o1-o8-2022",
+    "gridPages": [
+     68,
+     69
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2022-ordinary": {
     "family": "ol-o1-o8-2022",
     "gridPages": [
@@ -1505,6 +1527,7 @@
  },
  "legacyAdditionalSources": {},
  "bridgedPapers": [
+  "english-2021-ol-p1",
   "english-2022-ol-p1",
   "english-2022-ol-p2",
   "english-2023-ol-p1",
@@ -1515,6 +1538,28 @@
   "english-2025-ol-p2"
  ],
  "bridgedLegacyIds": [
+  "english-2021-ol-p1-composing-1",
+  "english-2021-ol-p1-composing-2",
+  "english-2021-ol-p1-composing-3",
+  "english-2021-ol-p1-composing-4",
+  "english-2021-ol-p1-composing-5",
+  "english-2021-ol-p1-composing-6",
+  "english-2021-ol-p1-composing-7",
+  "english-2021-ol-p1-t1-a-i",
+  "english-2021-ol-p1-t1-a-ii",
+  "english-2021-ol-p1-t1-a-iii-a",
+  "english-2021-ol-p1-t1-a-iii-b",
+  "english-2021-ol-p1-t1-b",
+  "english-2021-ol-p1-t2-a-i",
+  "english-2021-ol-p1-t2-a-ii",
+  "english-2021-ol-p1-t2-a-iii-a",
+  "english-2021-ol-p1-t2-a-iii-b",
+  "english-2021-ol-p1-t2-b",
+  "english-2021-ol-p1-t3-a-i",
+  "english-2021-ol-p1-t3-a-ii",
+  "english-2021-ol-p1-t3-a-iii-a",
+  "english-2021-ol-p1-t3-a-iii-b",
+  "english-2021-ol-p1-t3-b",
   "english-2022-ol-p1-composing-1",
   "english-2022-ol-p1-composing-2",
   "english-2022-ol-p1-composing-3",
@@ -1962,7 +2007,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1404,
+ "cardCount": 1426,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -24540,6 +24585,843 @@
    "atlas": {
     "fileid": "LC002GLP200EV.pdf",
     "n": "14"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t1-a-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 1 QA(i)",
+   "questionText": "Based on your reading of TEXT 1, explain three significant influences on Denise Chaila’s life so far. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "A Rising Star of the Irish Hip-Hop Scene",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Lauren Murphy — based on an interview with Denise Chaila, with a photograph (PDF2–3). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t1-a-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 1 QA(ii)",
+   "questionText": "Drawing on the information provided in the passage above, how do you think Denise Chaila has benefitted from her engagement with music? Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "A Rising Star of the Irish Hip-Hop Scene",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Lauren Murphy — based on an interview with Denise Chaila, with a photograph (PDF2–3). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t1-a-iii-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 1 QA(iii)(a)",
+   "questionText": "Denise Chaila has lived both in Zambia and in Ireland. Identify a country, other than Ireland, where you would like to live and explain the reasons for your choice.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    5,
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t1-a-iii-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 1 QA(iii)(b)",
+   "questionText": "Music is extremely important in Denise Chaila’s life. Explain the importance of music in your life.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 1 QB",
+   "questionText": "Write a review of any one of the following: an album or a fictional or non-fictional book or a film with a music related theme. Your review will appear on a website popular with music fans. In your review you should: provide readers with some information about the item you have chosen to review, provide a fair and balanced account of what you found good or bad about this item and give reasons why, on balance, you would or would not recommend it to your readers.",
+   "totalMarks": 40,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 4). Every choice is marked on the same grid.",
+    "Use the conventions and register of the requested review.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t2-a-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 2 QA(i)",
+   "questionText": "Based on your reading of TEXT 2, explain three ways in which people have connected with one another through music. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The End of Music as We Know It?",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Drawing on a variety of sources on how music connects us and how technology is changing it, with an image of Hatsune Miku (PDF4–5). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t2-a-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 2 QA(ii)",
+   "questionText": "From the information in the passage above, do you think the impact of technology on music and our musical experiences has been entirely positive? Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The End of Music as We Know It?",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Drawing on a variety of sources on how music connects us and how technology is changing it, with an image of Hatsune Miku (PDF4–5). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t2-a-iii-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 2 QA(iii)(a)",
+   "questionText": "Would you prefer to attend a concert that featured a real-life performer, like Lady Gaga, or a virtual performer, like Hatsune Miku? Explain the reasons for your choice.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The End of Music as We Know It?",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Drawing on a variety of sources on how music connects us and how technology is changing it, with an image of Hatsune Miku (PDF4–5). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t2-a-iii-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 2 QA(iii)(b)",
+   "questionText": "Music has been important to human beings from earliest times. Explain the importance of music in your life.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t2-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 2 QB",
+   "questionText": "Several significant inventions are mentioned in TEXT 2. You have been asked to give a talk to your class about what you consider to be the three most important inventions ever. In your talk, which can be serious, or humorous or both, you should: identify the three inventions that you think are the most important of all time, explain why you believe these particular inventions are so important and outline how you think the world would be different without the existence of the inventions you have identified. Write the text of the talk you would deliver.",
+   "totalMarks": 40,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t3-a-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 3 QA(i)",
+   "questionText": "Explain some of the similarities and differences between the type of musical experience presented in IMAGE 1 and that presented in IMAGE 2. Make three points in your response. Support your answer with reference to both of the images.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Shared Musical Experiences",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Three images of shared musical experiences: IMAGE 1 (a festival stage), IMAGE 2 (a family making music, after David Allan) and IMAGE 3 (fans singing in support of the Irish soccer team) (PDF6–7). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t3-a-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 3 QA(ii)",
+   "questionText": "In your opinion, what type of atmosphere is evident among the Irish team’s supporters in IMAGE 3? Explain your response with reference to IMAGE 3.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Shared Musical Experiences",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Three images of shared musical experiences: IMAGE 1 (a festival stage), IMAGE 2 (a family making music, after David Allan) and IMAGE 3 (fans singing in support of the Irish soccer team) (PDF6–7). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t3-a-iii-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 3 QA(iii)(a)",
+   "questionText": "Which one of the three musical experiences, pictured in TEXT 3, do you think you would most enjoy? Explain the reasons for your choice.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 1 of 3). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Shared Musical Experiences",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Three images of shared musical experiences: IMAGE 1 (a festival stage), IMAGE 2 (a family making music, after David Allan) and IMAGE 3 (fans singing in support of the Irish soccer team) (PDF6–7). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t3-a-iii-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 3 QA(iii)(b)",
+   "questionText": "Music is important to people in many different ways and in a wide variety of settings. Explain the importance of music in your life.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-t3-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Text 3 QB",
+   "questionText": "Identify your favourite type of music and write the text for a podcast which you hope will encourage more people to listen to this type of music. In the podcast you should: describe some of the features that make your favourite type of music unique or special, introduce a couple of well-known performers in this musical genre and explain why you think your listeners would enjoy this type of music.",
+   "totalMarks": 40,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-composing-1",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Composing 1",
+   "questionText": "TEXTS 1, 2 and 3 all deal with the theme of music. Write a short story set in a world where all music has been banned. The main character in your story should be a singer or a musician.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-composing-2",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Composing 2",
+   "questionText": "In TEXT 1, Denise Chaila says, “this is who I am – when it comes to gender, when it comes to race, when it comes to identity and culture.” Write a personal essay in which you reflect on what contributes to your sense of identity and who you are.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    13
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-composing-3",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Composing 3",
+   "questionText": "Some incredible technological developments are outlined in TEXT 2. Write an article, for publication in a popular magazine, in which you consider whether technological developments are always good for us, either individually or as a society.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-composing-4",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Composing 4",
+   "questionText": "In TEXT 1, Denise Chaila says that, “you shouldn't bend to fit the world and its labels.” Write a personal essay in which you give your views on the statement, “you shouldn't bend to fit the world and its labels.”",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-composing-5",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Composing 5",
+   "questionText": "In TEXT 2, we learn about the virtual pop star Hatsune Miku. Write a short story in which Hatsune Miku, the turquoise-haired virtual singer who is pictured in Text 2, escapes from her computerised world into the human world.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The End of Music as We Know It?",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Drawing on a variety of sources on how music connects us and how technology is changing it, with an image of Hatsune Miku (PDF4–5). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-composing-6",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Composing 6",
+   "questionText": "In TEXT 3, we can see a range of different shared musical experiences. Write an article, to be published in a community magazine, about the different kinds of activities and experiences that can help to bring people living in a local community together.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2021-ol-p1-composing-7",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2021 OL Paper 1 Composing 7",
+   "questionText": "In TEXT 1, Denise Chaila explains how story-tellers, musicians and poets have contributed to her cultural experiences. Write the text of a talk you would give to a group of students and teachers visiting Ireland on an exchange programme about the contribution made by creative people, such as musicians, actors, artists, poets, film-makers, writers, etc. to life in Ireland.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested talk.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "7"
    }
   },
   {

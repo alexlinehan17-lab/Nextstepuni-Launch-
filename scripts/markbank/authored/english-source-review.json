@@ -248,15 +248,16 @@
       "questionSha256": "60f360b0b919f9db026f279c90135b9a9b8faa02742b126a8db8bfe9c70b516a"
     },
     "english-2021-ol-p1-composing-5": {
-      "kind": "source-illustration",
-      "label": "SOURCE MATERIAL",
-      "title": "Hatsune Miku — virtual singer",
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The End of Music as We Know It?",
       "pages": [
-        4
+        4,
+        5
       ],
-      "attribution": "Source as reproduced in the official SEC English paper.",
-      "reason": "The story features the specific pictured singer from Text 2.",
-      "questionSha256": "98dce90b5d6c829ffc4a8f5c02bbee9fc1bdf74f20bba0987166745d3a46022f"
+      "attribution": "Drawing on a variety of sources on how music connects us and how technology is changing it, with an image of Hatsune Miku (PDF4–5). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "98dce90b5d6c829ffc4a8f5c02bbee9fc1bdf74f20bba0987166745d3a46022f",
+      "reason": "The story features Hatsune Miku, “who is pictured in Text 2” (PDF4); the whole of TEXT 2 (PDF4–5) is retained."
     },
     "english-2022-hl-p1-composing-3": {
       "kind": "source-text",
@@ -4517,6 +4518,158 @@
       "attribution": "How to Construct an Albatross — Louise Greig, as reproduced in the SEC 2021 paper.",
       "questionSha256": "c29532c5ac2fdc05c351763b271f79b7ba617e891ff40993aafb64734dcd9d5d",
       "reason": "Paper PDF6 prints the introduction (Louise Greig issues instructions for the construction of an albatross), the instruction to answer either Question 1 or Question 2, the title, the whole 17-line poem and the byline; visually verified."
+    },
+    "english-2021-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Rising Star of the Irish Hip-Hop Scene",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Lauren Murphy — based on an interview with Denise Chaila, with a photograph (PDF2–3). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "8d78df0ee59a0bd724946a7dd169625c665f375af01ff417f8ad92a5dc931669",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2021-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Rising Star of the Irish Hip-Hop Scene",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Lauren Murphy — based on an interview with Denise Chaila, with a photograph (PDF2–3). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "b0f292fa8a8c44a04c24a49c90a37479df39807af7d05ffb5800a6add4465e24",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2021-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The End of Music as We Know It?",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Drawing on a variety of sources on how music connects us and how technology is changing it, with an image of Hatsune Miku (PDF4–5). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "5124db58a60be78e6542e8c074deeaa2ae3006d9298d88c7d4627eb9ebd0fb7d",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2021-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The End of Music as We Know It?",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Drawing on a variety of sources on how music connects us and how technology is changing it, with an image of Hatsune Miku (PDF4–5). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "c33398f59bb846a56e9a74094344b3d08a3419412decc123b8295e6abf31c8c4",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2021-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Shared Musical Experiences",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Three images of shared musical experiences: IMAGE 1 (a festival stage), IMAGE 2 (a family making music, after David Allan) and IMAGE 3 (fans singing in support of the Irish soccer team) (PDF6–7). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "b02cc5e5a7c0a0d4537a0ed4da2038580142ce74ee0492f5123af7bac29ab2b2",
+      "reason": "The task compares IMAGE 1 and IMAGE 2 (PDF6); TEXT 3 is three images on PDF6–7, all retained."
+    },
+    "english-2021-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Shared Musical Experiences",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Three images of shared musical experiences: IMAGE 1 (a festival stage), IMAGE 2 (a family making music, after David Allan) and IMAGE 3 (fans singing in support of the Irish soccer team) (PDF6–7). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "f75f3f034c3ba7d03623347b164b6da68fede080b89ba049b0bb99be07a6ce66",
+      "reason": "The task is about IMAGE 3 (PDF7); the whole of TEXT 3 (PDF6–7) is retained."
+    },
+    "english-2021-ol-p1-t2-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The End of Music as We Know It?",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Drawing on a variety of sources on how music connects us and how technology is changing it, with an image of Hatsune Miku (PDF4–5). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "a6cfd3bb4331d8a8cb0ed82586fbd28d4c2ef43c70d008dcabdf5eac1ee79bb7",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2021-ol-p1-t3-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Shared Musical Experiences",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Three images of shared musical experiences: IMAGE 1 (a festival stage), IMAGE 2 (a family making music, after David Allan) and IMAGE 3 (fans singing in support of the Irish soccer team) (PDF6–7). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "7165a49adb64296d289ab015cd7ba1fd415f18e615895ba51fbc756c9381b7d4",
+      "reason": "The task chooses one of the three experiences pictured in TEXT 3 (PDF6–7)."
+    },
+    "english-2021-ol-p1-t1-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "A RISING STAR OF THE IRISH HIP-HOP SCENE",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "a3542b882bf9bb5e7c4708c1ca16516f43b8649d2ae1ac5bd9b1515763d25b7c",
+      "questionSha256": "ca22f789854795929e0835a9486ef26616f8ab55f7d37891abfc62b7a46cf2a7",
+      "reason": "Self-contained: a country other than Ireland where the candidate would like to live, and why; scheme PDF5–6 never refers to TEXT 1 beyond the lead-in."
+    },
+    "english-2021-ol-p1-t1-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "A RISING STAR OF THE IRISH HIP-HOP SCENE",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "a3542b882bf9bb5e7c4708c1ca16516f43b8649d2ae1ac5bd9b1515763d25b7c",
+      "questionSha256": "7ccf21d593a2fc9b14f078bc509394e37f2e2e6e8cf28e7c6b249b5c1410d33e",
+      "reason": "Self-contained: the importance of music in the candidate’s own life. Scheme PDF6 never refers to TEXT 1."
+    },
+    "english-2021-ol-p1-t2-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "THE END OF MUSIC AS WE KNOW IT?",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "a3542b882bf9bb5e7c4708c1ca16516f43b8649d2ae1ac5bd9b1515763d25b7c",
+      "questionSha256": "d441f5a217df61202db14a1caf77efd79e8c21ecd6e563f7cb84ba5b66792a22",
+      "reason": "Self-contained: the importance of music in the candidate’s own life. Scheme PDF8 never refers to TEXT 2."
+    },
+    "english-2021-ol-p1-t3-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "SHARED MUSICAL EXPERIENCES",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "a3542b882bf9bb5e7c4708c1ca16516f43b8649d2ae1ac5bd9b1515763d25b7c",
+      "questionSha256": "b02f88f3023c74621168abf2a5ad395ee2fe1459c9b82595ce51d709ee898d2d",
+      "reason": "Self-contained: the importance of music in the candidate’s own life. Scheme PDF10 never refers to TEXT 3."
     }
   }
 }
