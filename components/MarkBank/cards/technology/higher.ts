@@ -77,7 +77,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-a3-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "A", questionRef: "2021 HL Section A Q3(i)",
-    stem: "In December 2019, the U.S. Department of Justice charged the leader of an organised cyber-criminal group for his part in a global Dridex malware atack. The public are advised to ensure that electronic devices are patched, antivirus is turned on and updated, and files are backed up. Explain the terms:",
+    stem: "In December 2019, the U.S. Department of Justice charged the leader of an organised cyber-criminal group for his part in a global Dridex malware attack. The public are advised to ensure that electronic devices are patched, antivirus is turned on and updated, and files are backed up. Explain the terms:",
     questionText: "‘patched’.",
     tariffModel: {"kind":"fixed","notation":"(3 + 3 marks)"}, totalMarks: 3,
     rows: [
@@ -91,7 +91,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-a3-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "A", questionRef: "2021 HL Section A Q3(ii)",
-    stem: "In December 2019, the U.S. Department of Justice charged the leader of an organised cyber-criminal group for his part in a global Dridex malware atack. The public are advised to ensure that electronic devices are patched, antivirus is turned on and updated, and files are backed up. Explain the terms:",
+    stem: "In December 2019, the U.S. Department of Justice charged the leader of an organised cyber-criminal group for his part in a global Dridex malware attack. The public are advised to ensure that electronic devices are patched, antivirus is turned on and updated, and files are backed up. Explain the terms:",
     questionText: "Antivirus.",
     tariffModel: {"kind":"fixed","notation":"(3 + 3 marks)"}, totalMarks: 3,
     rows: [
@@ -395,7 +395,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-b2c-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2021 HL Section B Q2(c)(ii)",
-    questionText: "Describe, using annotated sketches, an electro-mechanical means of tilting the touchscreen for beter viewing by the astronaut team.",
+    questionText: "Describe, using annotated sketches, an electro-mechanical means of tilting the touchscreen for better viewing by the astronaut team.",
     tariffModel: {"kind":"fixed","notation":"(6 marks, 2 + 4)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "As the motor turns the screw, the wedge will make the screen tilt. Motor with screw mechanism", marks: 4, openList: true },
@@ -503,7 +503,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-b3c", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2021 HL Section B Q3(c)",
-    stem: "• the precise value of a resistor • the voltage of a motorcycle batery • the direction of current in a diode. OR",
+    stem: "• the precise value of a resistor • the voltage of a motorcycle battery • the direction of current in a diode. OR",
     questionText: "Outline, with annotated sketches, how to safely use a multimeter to determine:",
     tariffModel: {"kind":"questionTotal","notation":"(6 marks, 2 + 2 +2)"}, totalMarks: 6,
     rows: [
@@ -535,7 +535,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-b3d-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2021 HL Section B Q3(d)(ii)",
-    questionText: "The camera has an internal batery. Suggest one method of enhancing the environmental sustainability of the camera’s power source.",
+    questionText: "The camera has an internal battery. Suggest one method of enhancing the environmental sustainability of the camera’s power source.",
     tariffModel: {"kind":"fixed","notation":"(6 marks, 4 + 2)"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Use renewable batteries, the batteries could be charged by solar power as sports helmets are generally used outdoors, etc.", marks: 2, openList: true },
@@ -582,7 +582,7 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-hl-c1b-iii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2021 HL Section C Q1(b)(iii)",
     stem: "Start Power on Is hopper empty ?",
-    questionText: "After a period of usage, a design problem was identified - the warning buzzer discharged the batery. Suggest a modification to the flowchart to rectify this problem.",
+    questionText: "After a period of usage, a design problem was identified - the warning buzzer discharged the battery. Suggest a modification to the flowchart to rectify this problem.",
     tariffModel: {"kind":"fixed","notation":"(16 marks, 4 + 8 + 4)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The circuit should be altered to sound for a period of time and then turn off or use an alternative output component (such as a LED) as the buzzer will drain a battery quickly.", marks: 4, openList: true },
@@ -622,7 +622,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-c1d-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2021 HL Section C Q1(d)(ii)",
-    questionText: "Outline a method of controlling the speed of the piston as it places the cap on the botle.",
+    questionText: "Outline a method of controlling the speed of the piston as it places the cap on the bottle.",
     tariffModel: {"kind":"fixed","notation":"(14 marks, 8 + 6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Flow control valves to control the speed of the ram.", marks: 6, openList: true },
@@ -908,7 +908,7 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-hl-c4b-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2021 HL Section C Q4(b)(ii)",
     stem: "Tolerance Range 6σ Please turn over",
-    questionText: "Select Manufacturer A or Manufacturer B to produce the fittngs. Justify your selection.",
+    questionText: "Select Manufacturer A or Manufacturer B to produce the fittings. Justify your selection.",
     tariffModel: {"kind":"fixed","notation":"(16 marks, 8 + 4 + 4)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Manufacturer B is capable with Cp at 1.029, it is more consistently accurate.", marks: 4, openList: true },
@@ -1067,7 +1067,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-c5c-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 HL Section C Q5(c)(i)",
-    questionText: "Describe a method of cuttng an intricate design in thin plywood making reference to equipment used, cuttng action, and safety.",
+    questionText: "Describe a method of cutting an intricate design in thin plywood making reference to equipment used, cutting action, and safety.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 6 + 8)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Scroll saw has a thin straight blade produces intricate work.", marks: null, openList: true },

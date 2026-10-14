@@ -6051,7 +6051,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "labelled axis", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "scaled axes", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "points ploted", marks: 6 },
+    { id: "r-3", kind: "point", verbatim: "points plotted", marks: 6 },
     { id: "r-4", kind: "point", verbatim: "line of best fit", marks: 3 },
     ],
     figure: {

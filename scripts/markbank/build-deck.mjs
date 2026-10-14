@@ -745,6 +745,53 @@ function walkStrings(node, fn) {
 
 function repairGlyphs(card) { walkStrings(card, repairText); }
 
+/* Ligature glyphs that a text layer misreads. Calibri draws "tt", "tti", "ti",
+ * "tf" and "tí" as single glyphs; a broken subset reports them as U+01A9,
+ * U+01AB, U+019F, U+019E and U+01A1, and the Latin presentation forms U+FB00-
+ * U+FB06 are the same glyphs reported honestly. None is ever a letter a card
+ * should show. derive_glyph_ids.py reads them by glyph id and
+ * repair_ligature_words.py repairs each source document; one that still
+ * reaches a shipped card means a source was not repaired, so it is refused. */
+const LIGATURE_CODEPOINTS = /[\u019E\u019F\u01A1\u01A9\u01AB\uFB00-\uFB06]/;
+
+/* The same glyphs misread as FEWER letters leave no odd code point behind: the
+ * 2023 OL Latin scheme's text layer says "batle" where the page prints
+ * "battle". repair_ligature_words.py records every such misread form it finds
+ * in a subject's papers and schemes; a shipped card still carrying one is
+ * refused, because the word it shows is not the word that was printed. */
+const LIGATURE_WORDS = (() => {
+  const path = resolve(ROOT, 'scripts/markbank/authoring/ligature_words.json');
+  if (!existsSync(path)) return {};
+  return JSON.parse(readFileSync(path, 'utf8'));
+})();
+
+/* Identifiers are keys, never shown: a concept id coined from a misread
+ * stem ("...-writen-force-...") is left alone, because renaming it would orphan
+ * whatever refers to it. Every printed string is still checked. */
+const LIGATURE_IDENTIFIER_KEYS = new Set(['id', 'conceptId', 'topicId', 'figureKey', 'questionFigureKey', 'labelKey', 'replacementId']);
+
+function printedStrings(node, out = []) {
+  if (Array.isArray(node)) node.forEach(v => (typeof v === 'string' ? out.push(v) : printedStrings(v, out)));
+  else if (node && typeof node === 'object') {
+    for (const [k, v] of Object.entries(node)) {
+      if (LIGATURE_IDENTIFIER_KEYS.has(k)) continue;
+      if (typeof v === 'string') out.push(v);
+      else printedStrings(v, out);
+    }
+  }
+  return out;
+}
+
+function misreadLigatures(card) {
+  const { notes, ...shipped } = card;
+  const text = printedStrings(shipped).join(' ');
+  const code = text.match(LIGATURE_CODEPOINTS);
+  if (code) return `ligature glyph U+${code[0].codePointAt(0).toString(16).toUpperCase().padStart(4, '0')} still on the card`;
+  const words = Object.keys(LIGATURE_WORDS[SUBJECT_ID] ?? {});
+  const hit = words.find(w => new RegExp(`(?<![\\p{L}\\p{N}_])${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}\\p{N}_])`, 'u').test(text));
+  return hit ? `misread ligature "${hit}" (printed "${LIGATURE_WORDS[SUBJECT_ID][hit]}")` : null;
+}
+
 function brokenGlyphs(text) {
   if (DOUBLED_MATHS_DIGIT.test(text)) {
     return 'a doubled maths digit whose value the text layer has lost — the font mis-maps some digits, so the pair cannot be collapsed';
@@ -1382,6 +1429,8 @@ for (const c of cards) {
   repairGlyphs(c);
   const mangled = mangledText(c);
   if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+  const misread = misreadLigatures(c);
+  if (misread) { dropped.push(`${c.id}: ${misread}`); continue; }
 
   let figure = null;
   let labelKey = null;
