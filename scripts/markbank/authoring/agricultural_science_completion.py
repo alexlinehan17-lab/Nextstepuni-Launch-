@@ -37,6 +37,7 @@ from agricultural_science_2021_ol import reviewed_tasks as reviewed_2021_ol, pap
 from agricultural_science_2020_hl import reviewed_tasks as reviewed_2020_hl, paper_review as higher_2020_review
 from agricultural_science_2020_ol import reviewed_tasks as reviewed_2020_ol, paper_review as ordinary_2020_review
 from agricultural_science_2019_hl import reviewed_tasks as reviewed_2019_hl, paper_review as higher_2019_review
+from agricultural_science_2019_ol import reviewed_tasks as reviewed_2019_ol, paper_review as ordinary_2019_review
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -204,7 +205,8 @@ def reviewed_tasks():
     legacy_cards, legacy_dates = [], {}
     for legacy, legacy_review, reviewed_on in [(reviewed_2020_hl, higher_2020_review, '2026-10-13'),
                                                (reviewed_2020_ol, ordinary_2020_review, '2026-10-14'),
-                                               (reviewed_2019_hl, higher_2019_review, '2026-10-14')]:
+                                               (reviewed_2019_hl, higher_2019_review, '2026-10-14'),
+                                               (reviewed_2019_ol, ordinary_2019_review, '2026-10-14')]:
         new_cards, new_tasks = legacy()
         legacy_cards += new_cards
         legacy_dates.update({id(card): reviewed_on for card in new_cards})

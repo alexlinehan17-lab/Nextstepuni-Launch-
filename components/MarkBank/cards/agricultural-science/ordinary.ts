@@ -23160,4 +23160,1677 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-1-4","agricultural-science-0-1"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q1", topicId: "agsci-2-2-3", conceptId: "earthworms-and-the-wormery",
+    section: "A", questionRef: "2019 OL Q1",
+    questionText: "(a) (i) Name the phylum to which earthworms belong. (ii) State two beneficial effects of earthworms in the soil. (b) The photograph shows a wormery, which is used to show the activity of earthworms. (i) Describe four steps taken when setting up the wormery to investigate earthworm activity. (ii) Name one sign of earthworm activity that would be observed in the wormery at the end of the investigation.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(4) + 6(2)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a)(i) Phylum — Annelida", marks: null, contextNote: "Shared scale 2(4) + 6(2): the first correct answers earn the higher award, whichever part they answer, so no part carries a mark of its own. Eight answers: the phylum, two effects, four steps and one sign." },
+    { id: "r-2", kind: "point", verbatim: "(a)(ii) Beneficial effects of earthworms — Improve drainage/ improve aeration/ break down organic matter or create humus/ break down soil/ mix soil layers/ improve soil structure/ (waste products) increase soil fertility", marks: null, contextNote: "Any two." },
+    { id: "r-3", kind: "point", verbatim: "(b)(i) Setting up a wormery — Layer of soil/ layer of sand/ layer of chalk/ leaves or organic matter on top/ add worms/ keep moist/ keep in darkness/ cool place/ leave for at least a week", marks: null, contextNote: "Any four." },
+    { id: "r-4", kind: "point", verbatim: "(b)(ii) Sign of earthworm activity — Mixed layers or tunnels (or holes) through layers or worm casts or leaves not present on top", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2019-ol-paper-wormery",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-wormery.png",
+          "srcHash": "525e1c253bf154285671724388c77241",
+          "alt": "Original Question 1(b) photograph: an empty, narrow glass-sided wormery frame standing on wooden feet.",
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-1-5","agricultural-science-2-5","agricultural-science-3-4"]), kind: "diagram",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q2", topicId: "agsci-2-3", conceptId: "farm-machinery-names-functions",
+    section: "A", questionRef: "2019 OL Q2",
+    questionText: "Name and state the function of each of the items of farm equipment and machinery shown below (B to F). Item A has been completed for you: Silage Wagon — Transports grass from field to cattle or to pit.",
+    tariffModel: {"kind":"fixed","notation":"5 × 2(2)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(Rotary) tedder or hay bob / Shaking out grass (to allow it to dry) or making rows of hay or gathers hay", marks: 4, contextNote: "B: its name and its function, 2(2).", group: {"claimMax":2,"perOption":2,"options":["(Rotary) tedder or hay bob","Shaking out grass (to allow it to dry) or making rows of hay or gathers hay"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Creep feeder / Allows lambs access to feed (but excludes ewes) or to feed meals to lambs", marks: 4, contextNote: "C: its name and its function, 2(2).", group: {"claimMax":2,"perOption":2,"options":["Creep feeder","Allows lambs access to feed (but excludes ewes) or to feed meals to lambs"]} },
+    { id: "r-3", kind: "anyN", verbatim: "Shear grab or silage grab / Transports silage (from pit to feeders)", marks: 4, contextNote: "D: its name and its function, 2(2).", group: {"claimMax":2,"perOption":2,"options":["Shear grab or silage grab","Transports silage (from pit to feeders)"]} },
+    { id: "r-4", kind: "anyN", verbatim: "(Grain) silo / Storing grain (or animal feed)", marks: 4, contextNote: "E: its name and its function, 2(2).", group: {"claimMax":2,"perOption":2,"options":["(Grain) silo","Storing grain (or animal feed)"]} },
+    { id: "r-5", kind: "anyN", verbatim: "Combine (harvester) / Harvesting cereals (or named cereal)", marks: 4, contextNote: "F: its name and its function, 2(2).", group: {"claimMax":2,"perOption":2,"options":["Combine (harvester)","Harvesting cereals (or named cereal)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2019-ol-paper-farm-machinery",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-farm-machinery.png",
+          "srcHash": "e6a3fb5fb3a57b8ffcf703207e7cf6ad",
+          "alt": "Original Question 2 photographs lettered A to F: A a silage wagon behind a tractor, B a rotary tedder, C a creep feeder with lambs, D a shear grab, E a grain silo with an auger, F a combine harvester.",
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Silage wagon (the completed example)","askedInThisQuestion":false},{"letter":"B","meaning":"(Rotary) tedder or hay bob","askedInThisQuestion":true},{"letter":"C","meaning":"Creep feeder","askedInThisQuestion":true},{"letter":"D","meaning":"Shear grab or silage grab","askedInThisQuestion":true},{"letter":"E","meaning":"(Grain) silo","askedInThisQuestion":true},{"letter":"F","meaning":"Combine (harvester)","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-0","agricultural-science-0-1","agricultural-science-1-2","agricultural-science-2-0","agricultural-science-1-6","agricultural-science-2-4"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q3", topicId: "agsci-4-1", conceptId: "true-or-false-farm-science",
+    section: "A", questionRef: "2019 OL Q3",
+    questionText: "Indicate whether each of the following statements is true (T) or false (F) by placing a circle around the correct answer in each case. Example: Liver fluke is a parasite of sheep and cattle — T. (a) A gilt is a young female pig. (b) Benedict’s or Fehling’s solution is used to test a food for starch. (c) Ground limestone is used to raise soil pH. (d) Plants make carbon dioxide (CO2) during photosynthesis. (e) Urea is a fertiliser which has a high content of nitrogen. (f) Pigs have a rumen in their digestive system. (g) Crop rotation helps control crop pests. (h) Chlorophyll is a pigment found in grass. (i) Dairy cows are usually dried off for five months each year. (j) Pollen is produced by the carpels in a flower.",
+    tariffModel: {"kind":"fixed","notation":"10(2)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(a) A gilt is a young female pig: T / (b) Benedict’s or Fehling’s solution is used to test a food for starch: F / (c) Ground limestone is used to raise soil pH: T / (d) Plants make carbon dioxide during photosynthesis: F / (e) Urea is a fertiliser which has a high content of nitrogen: T / (f) Pigs have a ruminant stomach: F / (g) Crop rotation helps to reduce the incidence of crop pests: T / (h) Chlorophyll is a pigment in grass: T / (i) Dairy cows are usually dried off for five months each year: F / (j) Pollen is produced by the carpels in a flower: F", marks: 20, contextNote: "All ten statements, 2 marks each (10(2)). T = true, F = false; the scheme words each statement as shown.", group: {"claimMax":10,"perOption":2,"options":["(a) A gilt is a young female pig: T","(b) Benedict’s or Fehling’s solution is used to test a food for starch: F","(c) Ground limestone is used to raise soil pH: T","(d) Plants make carbon dioxide during photosynthesis: F","(e) Urea is a fertiliser which has a high content of nitrogen: T","(f) Pigs have a ruminant stomach: F","(g) Crop rotation helps to reduce the incidence of crop pests: T","(h) Chlorophyll is a pigment in grass: T","(i) Dairy cows are usually dried off for five months each year: F","(j) Pollen is produced by the carpels in a flower: F"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-1"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q4", topicId: "agsci-4-2", conceptId: "breed-descriptions",
+    section: "A", questionRef: "2019 OL Q4",
+    questionText: "The following is a list of breeds of farm animals: Jersey, Suffolk, Holstein-Friesian, Landrace, Wicklow Cheviot, Belgian Blue. Match each description with a breed name. The first one has been completed for you: Wicklow Cheviot — Mountain/ hill sheep breed. Cow with a high butterfat content in milk; Beef breed of cattle; Pig breed with lean carcass; Sheep breed with good conformation; Dairy breed with high milk yield.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cow with a high butterfat content in milk — Jersey", marks: 4, contextNote: "5(4): 4 marks for each description." },
+    { id: "r-2", kind: "point", verbatim: "Beef breed of cattle — Belgian Blue", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Pig breed with a lean carcass — Landrace", marks: 4 },
+    { id: "r-4", kind: "point", verbatim: "Sheep breed with good conformation — Suffolk", marks: 4 },
+    { id: "r-5", kind: "point", verbatim: "Dairy breed with a high milk yield — Holstein-Friesian", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-1","agricultural-science-2-3","agricultural-science-2-5"]), kind: "diagram",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q5", topicId: "agsci-3-3-1", conceptId: "cereals-harvest-and-certified-seed",
+    section: "A", questionRef: "2019 OL Q5",
+    questionText: "(a) Identify each of the cereals shown in the photographs (A, B, C). (b) State two ways you would know when cereal A is ready for harvesting. (c) Certified seeds are used when sowing a cereal crop. State three features of certified seeds.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(4) + 6(2)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a) Cereal A — Barley", marks: null, contextNote: "Shared scale 2(4) + 6(2): the first correct answers earn the higher award, whichever part they answer, so no part carries a mark of its own. Eight answers: three cereals, two signs and three features." },
+    { id: "r-2", kind: "point", verbatim: "(a) Cereal B — Oats", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(a) Cereal C — Wheat", marks: null },
+    { id: "r-4", kind: "point", verbatim: "(b) When cereal A ready for harvest — Seed-head (or ear) lies parallel to stem/ grain hard/ grain dry/ flag leaf withers/ grain falling off seed-head/ crop is bleached in appearance", marks: null, contextNote: "Any two." },
+    { id: "r-5", kind: "point", verbatim: "(c) Features of certified seeds — Minimum 85% germination rate/ minimum 98% purity/ free from wild oats/ seed is treated (with fungicide and pesticide) or is disease free/ true to type", marks: null, contextNote: "Any three." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q5",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2019-ol-paper-cereals",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-cereals.png",
+          "srcHash": "44dbac5e2ab501842f3304a5313bd145",
+          "alt": "Original Question 5(a) photographs lettered A to C: A ears with long awns, B loose drooping panicles, C a bundle of plump ears without long awns.",
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Barley","askedInThisQuestion":true},{"letter":"B","meaning":"Oats","askedInThisQuestion":true},{"letter":"C","meaning":"Wheat","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-4"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q6a", topicId: "agsci-3-3-2", conceptId: "why-spray-potatoes-fungicide",
+    section: "A", questionRef: "2019 OL Q6(a)",
+    stem: "State one reason for each of the following farming practices.",
+    questionText: "State one reason for the following farming practice: Spraying a potato crop with fungicide.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To prevent (or to control) fungal disease(s) or named fungal disease", marks: 4, contextNote: "One reason, 4 marks (5(4) across the five practices)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q6(a)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-4"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q6b", topicId: "agsci-4-3-2", conceptId: "why-house-beef-in-winter",
+    section: "A", questionRef: "2019 OL Q6(b)",
+    stem: "State one reason for each of the following farming practices.",
+    questionText: "State one reason for the following farming practice: Housing of beef animals in the winter.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To provide shelter (from harsh weather) or higher live-weight gain or easier to feed or easier supervision or prevents poaching or more grass in spring or lack of grass outdoors in winter or allows higher stocking rates", marks: 4, contextNote: "One reason, 4 marks (5(4) across the five practices)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q6(b)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-5"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q6c", topicId: "agsci-4-3-3", conceptId: "why-pare-hooves",
+    section: "A", questionRef: "2019 OL Q6(c)",
+    stem: "State one reason for each of the following farming practices.",
+    questionText: "State one reason for the following farming practice: Paring the hooves of sheep.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To treat foot-rot or to prevent lameness or to remove infected growth or allows oxygen to circulate between hooves", marks: 4, contextNote: "One reason, 4 marks (5(4) across the five practices)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q6(c)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-1-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q6d", topicId: "agsci-2-3", conceptId: "why-agitate-slurry",
+    section: "A", questionRef: "2019 OL Q6(d)",
+    stem: "State one reason for each of the following farming practices.",
+    questionText: "State one reason for the following farming practice: Agitating slurry before it is spread.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To break hard crust or to mix the solids and liquid or to allow gases to escape or easier to spread", marks: 4, contextNote: "One reason, 4 marks (5(4) across the five practices)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q6(d)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-1-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q6e", topicId: "agsci-2-3", conceptId: "why-plant-shelter-belts",
+    section: "A", questionRef: "2019 OL Q6(e)",
+    stem: "State one reason for each of the following farming practices.",
+    questionText: "State one reason for the following farming practice: Planting shelter belts on a farm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To prevent damage to buildings or to keep animals warm or to protect crops or to increase soil temperature or habitat for wildlife or natural boundaries or improved crop growth (on sheltered side) or reduces soil erosion", marks: 4, contextNote: "One reason, 4 marks (5(4) across the five practices)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q6(e)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-6","agricultural-science-1-4"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q7", topicId: "agsci-3-3-1", conceptId: "clover-nodules",
+    section: "A", questionRef: "2019 OL Q7",
+    questionText: "The photograph shows nodules on the roots of a clover plant. (a) (i) Name the plant family to which clover belongs. (ii) What is contained in the root nodules in clover? (iii) What is the role of the contents of these nodules? (iv) Name another plant belonging to the same plant family as clover. (b) State three beneficial effects of including clover in a seed mixture when reseeding grassland.",
+    tariffModel: {"kind":"orderedSplit","notation":"3(4) + 4(2)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a)(i) Clover family — Leguminosae or Fabaceae or Papilionaceae or legumes", marks: null, contextNote: "Shared scale 3(4) + 4(2): the first correct answers earn the higher award, whichever part they answer, so no part carries a mark of its own. Seven answers: (i)-(iv) and three effects." },
+    { id: "r-2", kind: "point", verbatim: "(a)(ii) In root nodules — Bacteria", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(a)(iii) Role of nodule bacteria — To fix nitrogen (or described)", marks: null },
+    { id: "r-4", kind: "point", verbatim: "(a)(iv) Plant in same family as clover — Peas or beans or vetch or gorse (furze, whin)", marks: null },
+    { id: "r-5", kind: "point", verbatim: "(b) Beneficial effects of clover in grassland seed mixture — Reduces amount of artificial N-fertiliser needed/ palatable/ productive/ digestible/ rich in protein/ used in organic farming/ increases grass growth/ fixes nitrogen or increases soil fertility/ good ground cover or controls weeds/ rich in minerals or named mineral/ meets REPS requirements", marks: null, contextNote: "Any three." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q7",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2019-ol-paper-clover-nodules",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-clover-nodules.png",
+          "srcHash": "38aad4b0c7232b5f5b2ce75ac8f90457",
+          "alt": "Original Question 7 photograph: the roots of a clover plant covered in small round nodules.",
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 7 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-3"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q8ai", topicId: "agsci-4-3-1", conceptId: "pig-housing-features",
+    section: "B", questionRef: "2019 OL Q8(a)(i)",
+    questionText: "State two features of the housing used in pig production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Well insulated / draught free / low roof / warm / well ventilated / adequate space / (clean) water supply / good hygiene", marks: 8, contextNote: "Any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["Well insulated","draught free","low roof","warm","well ventilated","adequate space","(clean) water supply","good hygiene"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q8(a)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-3"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q8aii", topicId: "agsci-4-3-1", conceptId: "pig-housing-importance",
+    section: "B", questionRef: "2019 OL Q8(a)(ii)",
+    stem: "State two features of the housing used in pig production.",
+    questionText: "State the importance of any one of those housing features.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Well insulated: Reduces heat loss or prevents over-heating (in summer) / Draught free: Reduces chill or prevents disease(s) / Low roof: Easier to heat / Warm: Increases live-weight gain or lowers FCR / Well ventilated: Prevents disease(s) or removes stale air or removes gases / Adequate space: Reduces spread of disease(s) or animal welfare / (Clean) water: Prevents dehydration / Good hygiene: Prevents disease(s)", marks: 4, contextNote: "The importance of any one of your features, 4 marks.", group: {"claimMax":1,"perOption":4,"options":["Well insulated: Reduces heat loss or prevents over-heating (in summer)","Draught free: Reduces chill or prevents disease(s)","Low roof: Easier to heat","Warm: Increases live-weight gain or lowers FCR","Well ventilated: Prevents disease(s) or removes stale air or removes gases","Adequate space: Reduces spread of disease(s) or animal welfare","(Clean) water: Prevents dehydration","Good hygiene: Prevents disease(s)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q8(a)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-3","agricultural-science-3-5"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q8aiii", topicId: "agsci-4-3-3", conceptId: "why-farrowing-crates",
+    section: "B", questionRef: "2019 OL Q8(a)(iii)",
+    questionText: "The photograph shows a sow and bonhams (piglets) in a farrowing crate. State two reasons for using farrowing crates.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Allows bonhams to suck / allows bonhams access to a creep area / restricts movement of sow (or prevents bonhams being crushed or reduced mortality rates in bonhams)", marks: 8, contextNote: "Any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["Allows bonhams to suck","allows bonhams access to a creep area","restricts movement of sow (or prevents bonhams being crushed or reduced mortality rates in bonhams)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q8(a)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2019-ol-paper-farrowing-crate",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-farrowing-crate.png",
+          "srcHash": "9c2d3e0fbcd3d57b6d11d2cd56722234",
+          "alt": "Original Question 8(a)(iii) photograph: a sow lying in a farrowing crate with bonhams suckling beside the bars.",
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-0"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q8bi", topicId: "agsci-4-1", conceptId: "sow-gestation",
+    section: "B", questionRef: "2019 OL Q8(b)(i)",
+    questionText: "What is the length of gestation for a sow?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3 months + 3 weeks + 3 days (or 110 – 118 days)", marks: 4, contextNote: "5(4) across (b): 4 marks for each answer." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q8(b)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-3"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q8bii", topicId: "agsci-4-3-1", conceptId: "sow-litter-size",
+    section: "B", questionRef: "2019 OL Q8(b)(ii)",
+    questionText: "What is the average litter size for a sow?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "9 – 12 (bonhams)", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q8(b)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-5","agricultural-science-3-4"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q8biii", topicId: "agsci-4-3-3", conceptId: "piglet-rearing-reasons",
+    section: "B", questionRef: "2019 OL Q8(b)(iii)",
+    questionText: "Explain why each of the following is carried out in the rearing of pigs: 1. Bonhams (piglets) are given an iron injection 2. Lysine is included in the diet of pigs 3. A creep area is used.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Why iron injection — To prevent anaemia or sow’s milk is low in iron", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "2. Why lysine in diet — Pigs are not able to make their own or it is an essential amino acid", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "3. Why creep area — Allows bonhams access to high temp (or 30 °C) or keeps bonhams warm or prevents bonhams being crushed or allows creep feeding", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q8(b)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-3"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q8c", topicId: "agsci-4-3-1", conceptId: "hill-or-lowland-sheep",
+    section: "B", questionRef: "2019 OL Q8(c)",
+    questionText: "Describe either hill (mountain) sheep production or lowland sheep production under the following headings: (i) Grass quality (ii) Method of grazing (iii) Number of lambs produced (iv) Stocking rate (v) Amount of labour involved.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Grass quality — Rough grazing or named example(s)", marks: 4, contextNote: "Hill (mountain) sheep production: 5(4), 4 marks for each heading." },
+    { id: "r-2", kind: "point", verbatim: "(ii) Method of grazing — Extensive or described", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "(iii) Number of lambs — One lamb per ewe", marks: 4 },
+    { id: "r-4", kind: "point", verbatim: "(iv) Stocking rate — Low stocking rate or example", marks: 4 },
+    { id: "r-5", kind: "point", verbatim: "(v) Labour — Low labour input", marks: 4 },
+    ],
+    answerVariants: [
+          {
+                "id": "hill",
+                "label": "Hill (mountain) sheep production",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "(i) Grass quality — Rough grazing or named example(s)",
+                            "marks": 4,
+                            "contextNote": "Hill (mountain) sheep production: 5(4), 4 marks for each heading.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(ii) Method of grazing — Extensive or described",
+                            "marks": 4,
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(iii) Number of lambs — One lamb per ewe",
+                            "marks": 4,
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(iv) Stocking rate — Low stocking rate or example",
+                            "marks": 4,
+                            "id": "r-4"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(v) Labour — Low labour input",
+                            "marks": 4,
+                            "id": "r-5"
+                      }
+                ]
+          },
+          {
+                "id": "lowland",
+                "label": "Lowland sheep production",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "(i) Grass quality — Good quality grazing or named example(s)",
+                            "marks": 4,
+                            "contextNote": "Lowland sheep production: 5(4), 4 marks for each heading.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(ii) Method of grazing — Intensive or described",
+                            "marks": 4,
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(iii) Number of lambs — Ewes may have twins or triplets",
+                            "marks": 4,
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(iv) Stocking rate — High stocking rate or example",
+                            "marks": 4,
+                            "id": "r-4"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(v) Labour — High labour input",
+                            "marks": 4,
+                            "id": "r-5"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q8(c)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q9ai", topicId: "agsci-3-3-1", conceptId: "why-reseed-grassland",
+    section: "B", questionRef: "2019 OL Q9(a)(i)",
+    stem: "Many farmers reseed grassland on a regular basis.",
+    questionText: "State two reasons why grassland may have to be reseeded.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Poaching damage / poor quality grass(es)(in old sward) / weed infestation (in old sward) / to increase productivity or yield / to improve digestibility / to improve palatability / to improve stocking rates / to introduce clover into sward / to increase silage yields (IRG)", marks: 6, contextNote: "Any two, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Poaching damage","poor quality grass(es)(in old sward)","weed infestation (in old sward)","to increase productivity or yield","to improve digestibility","to improve palatability","to improve stocking rates","to introduce clover into sward","to increase silage yields (IRG)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q9(a)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-6","agricultural-science-2-1"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q9aii", topicId: "agsci-3-2", conceptId: "reseeding-grass-species",
+    section: "B", questionRef: "2019 OL Q9(a)(ii)",
+    stem: "Many farmers reseed grassland on a regular basis.",
+    questionText: "Name two grass species commonly used when reseeding.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Perennial rye grass (or PRG) / Italian rye grass (or IRG) / Timothy / hybrid ryegrass", marks: 6, contextNote: "Any two, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Perennial rye grass (or PRG)","Italian rye grass (or IRG)","Timothy","hybrid ryegrass"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q9(a)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q9aiii", topicId: "agsci-3-2", conceptId: "grass-species-reason",
+    section: "B", questionRef: "2019 OL Q9(a)(iii)",
+    stem: "Many farmers reseed grassland on a regular basis.",
+    questionText: "Explain the reason for using any one of the grass species named.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "PRG: Palatable or productive or digestible or persistent or long growing season / IRG: Palatable or productive or digestible or long growing season or short term ley / Timothy: Palatable or productive or digestible or suitable for hay / Hybrid ryegrass: Combines desirable characteristics of PRG and IRG or palatable or productive or digestible or persistent or long growing season", marks: 3, contextNote: "A reason for any one of your species, 3 marks.", group: {"claimMax":1,"perOption":3,"options":["PRG: Palatable or productive or digestible or persistent or long growing season","IRG: Palatable or productive or digestible or long growing season or short term ley","Timothy: Palatable or productive or digestible or suitable for hay","Hybrid ryegrass: Combines desirable characteristics of PRG and IRG or palatable or productive or digestible or persistent or long growing season"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q9(a)(iii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q9aiv", topicId: "agsci-3-3-2", conceptId: "why-top-grassland",
+    section: "B", questionRef: "2019 OL Q9(a)(iv)",
+    stem: "Many farmers reseed grassland on a regular basis.",
+    questionText: "State two reasons why grassland is topped.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Increases tillering / weed control / encourages leafy growth / increases yield of grass / removes stemmy growth (or undigestible parts of grass) or increases digestibility", marks: 6, contextNote: "Any two, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Increases tillering","weed control","encourages leafy growth","increases yield of grass","removes stemmy growth (or undigestible parts of grass) or increases digestibility"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q9(a)(iv)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q9bi", topicId: "agsci-3-3-3", conceptId: "making-pit-silage",
+    section: "B", questionRef: "2019 OL Q9(b)(i)",
+    stem: "Feeding good quality silage is essential for cattle to reach production targets.",
+    questionText: "List four stages in making good quality pit silage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Close off field for at least six weeks / fertilise (or spread slurry) / cut in afternoon / cut at correct growth stage / allow grass to wilt / use a precision or double-chop harvester / roll the pit / use additive / seal pit", marks: 12, contextNote: "Any four, 3 marks each (4(3)).", group: {"claimMax":4,"perOption":3,"options":["Close off field for at least six weeks","fertilise (or spread slurry)","cut in afternoon","cut at correct growth stage","allow grass to wilt","use a precision or double-chop harvester","roll the pit","use additive","seal pit"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q9(b)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q9bii", topicId: "agsci-3-3-3", conceptId: "silage-step-importance",
+    section: "B", questionRef: "2019 OL Q9(b)(ii)",
+    stem: "Feeding good quality silage is essential for cattle to reach production targets.",
+    questionText: "Explain the importance of any two of the steps mentioned.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Close off field for at least six weeks: Gives time for grass to grow / Fertilise (or spread slurry): Provides the nutrients for growth / Cut at the correct growing stage: Higher DMD or grass more leafy (or less stemmy) / Cut grass at mid-day: Higher concentration of sugar (or carbohydrates) / Allow grass to wilt: Increases dry matter content or less effluent / Use a precision or double chop harvester: Better fermentation or sugar released / Roll the grass thoroughly: Creates anaerobic conditions (or eliminates air) / Use additive (or named additive): Better fermentation or lowers pH / Seal pit tightly: Anaerobic conditions or prevents rotting of grass", marks: 6, contextNote: "The importance of any two of your steps, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Close off field for at least six weeks: Gives time for grass to grow","Fertilise (or spread slurry): Provides the nutrients for growth","Cut at the correct growing stage: Higher DMD or grass more leafy (or less stemmy)","Cut grass at mid-day: Higher concentration of sugar (or carbohydrates)","Allow grass to wilt: Increases dry matter content or less effluent","Use a precision or double chop harvester: Better fermentation or sugar released","Roll the grass thoroughly: Creates anaerobic conditions (or eliminates air)","Use additive (or named additive): Better fermentation or lowers pH","Seal pit tightly: Anaerobic conditions or prevents rotting of grass"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q9(b)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q9biii", topicId: "agsci-3-3-3", conceptId: "silage-dmd-meaning",
+    section: "B", questionRef: "2019 OL Q9(b)(iii)",
+    stem: "Feeding good quality silage is essential for cattle to reach production targets.",
+    questionText: "Explain what is meant by the DMD of silage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dry matter digestibility or the % of dry matter that can be digested", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q9(b)(iii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q9biv", topicId: "agsci-3-3-3", conceptId: "silage-dmd-target",
+    section: "B", questionRef: "2019 OL Q9(b)(iv)",
+    stem: "Feeding good quality silage is essential for cattle to reach production targets.",
+    questionText: "State the DMD of good quality silage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "70% or greater", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q9(b)(iv)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-4","agricultural-science-2-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q9c", topicId: "agsci-3-3-2", conceptId: "catch-crops",
+    section: "B", questionRef: "2019 OL Q9(c)",
+    questionText: "The photograph shows stubble turnips which are grown as a catch crop. (i) What is meant by the term catch crop? (ii) Name another example of a catch crop. (iii) State two methods of feeding catch crops to farm animals. (iv) Suggest two reasons why farmers are encouraged to grow catch crops.",
+    tariffModel: {"kind":"orderedSplit","notation":"4(3) + 2 + 1"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Catch crop — Crop grown after one main crop and before another [allow between main crops]", marks: null, contextNote: "Shared scale 4(3) + 2 + 1: the first correct answers earn the higher award, whichever part they answer, so no part carries a mark of its own. Six answers: (i), (ii), two methods and two reasons." },
+    { id: "r-2", kind: "point", verbatim: "(ii) Example of catch crop — Kale or rape or fodder beet or stubble turnips or any other correct", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(iii) How to feed catch crop to animals — In situ (or described)/ strip graze (or described)/ zero graze (or described)/ ensile", marks: null, contextNote: "Any two." },
+    { id: "r-4", kind: "point", verbatim: "(iv) Why grow catch crops — Fast growing/ high yield/ winter feed/ feed in early spring/ high protein content/ less silage (or concentrates) needed/ prevents nitrogen leaching/ extra feed during fodder shortage", marks: null, contextNote: "Any two." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q9(c)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2019-ol-paper-stubble-turnips",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-stubble-turnips.png",
+          "srcHash": "4f0a6486b87aa2072ba664ee646dbeed",
+          "alt": "Original Question 9(c) photograph: a row of stubble turnips with leafy tops, partly lifted from the soil.",
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q10a", topicId: "agsci-4-1", conceptId: "genetics-terms",
+    section: "B", questionRef: "2019 OL Q10(a)",
+    questionText: "Explain the following terms used in genetics: (i) Gamete (ii) In-breeding (iii) Clone.",
+    tariffModel: {"kind":"orderedSplit","notation":"4 + 2(3)"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Gamete — A sex cell [allow a sperm (cell) or an egg (cell)]", marks: null, contextNote: "Shared scale 4 + 2(3): the first correct answers earn the higher award, whichever part they answer, so no part carries a mark of its own. Three answers." },
+    { id: "r-2", kind: "point", verbatim: "(ii) In-breeding — Mating or crossing two closely related (species of) plants or animals", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(iii) Clone — A group of genetically identical organisms or a group of asexually produced offspring from the same parent [allow an asexually reproduced individual]", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q10(a)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q10b", topicId: "agsci-4-1", conceptId: "polled-cross-1",
+    section: "B", questionRef: "2019 OL Q10(b)",
+    stem: "Livestock without horns are referred to as polled animals. In sheep the gene for having no horns (P) is dominant, and the gene for having horns (p) is recessive.",
+    questionText: "Copy and complete the following to give the genotype and phenotype of the lambs from the cross. Parents’ phenotypes: Pure-breeding polled ram × Horned ewe. Parents’ genotypes: PP × pp. Gametes: ( ) × ( ). Genotype of offspring: ( ). Phenotype of offspring: ____.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Gametes: (P)", marks: 4, contextNote: "Gametes 2(4), offspring genotype 4, offspring phenotype 4." },
+    { id: "r-2", kind: "point", verbatim: "Gametes: (p)", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Offspring genotype: (Pp)", marks: 4 },
+    { id: "r-4", kind: "point", verbatim: "Offspring phenotype: Polled (or no horns)", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q10(b)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q10c", topicId: "agsci-4-1", conceptId: "polled-cross-2",
+    section: "B", questionRef: "2019 OL Q10(c)",
+    stem: "Livestock without horns are referred to as polled animals. In sheep the gene for having no horns (P) is dominant, and the gene for having horns (p) is recessive.",
+    questionText: "A ram and a ewe with the same genotype as the offspring above are bred with each other. Copy and complete the following to give the possible genotypes and phenotypes of the lambs from this cross. Parents’ genotypes: ( ) × ( ). Possible gametes: ( ) ( ) × ( ) ( ). Genotypes of offspring: ( ) ( ) ( ). Phenotypes of offspring: ____ ____.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 22,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Parents’ genotypes — (Pp) × (Pp)", marks: 4, contextNote: "2(2): 2 for each parent's genotype." },
+    { id: "r-2", kind: "point", verbatim: "Possible gametes — (P) (p) × (P) (p)", marks: 8, contextNote: "4(2): 2 for each gamete." },
+    { id: "r-3", kind: "anyN", verbatim: "(PP) / (Pp) / (pp)", marks: 6, contextNote: "Offspring genotypes, 3(2).", group: {"claimMax":3,"perOption":2,"options":["(PP)","(Pp)","(pp)"]} },
+    { id: "r-4", kind: "anyN", verbatim: "Polled / Horned", marks: 4, contextNote: "Offspring phenotypes, 2(2).", group: {"claimMax":2,"perOption":2,"options":["Polled","Horned"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q10(c)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-6","agricultural-science-3-4"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q10di", topicId: "agsci-4-3-2", conceptId: "ai-advantages",
+    section: "B", questionRef: "2019 OL Q10(d)(i)",
+    stem: "Artificial insemination (AI) is carried out on some farm animals.",
+    questionText: "State two advantages of artificial insemination.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Can select superior bulls or better choice / bulls have been performance tested / bulls have been progeny tested / can use sexed semen / easier to transport / less chance of sexually transmitted diseases / cheaper than keeping a bull / choose bulls with lower calving difficulty history / don’t have to keep a dangerous animal", marks: 6, contextNote: "Any two, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Can select superior bulls or better choice","bulls have been performance tested","bulls have been progeny tested","can use sexed semen","easier to transport","less chance of sexually transmitted diseases","cheaper than keeping a bull","choose bulls with lower calving difficulty history","don’t have to keep a dangerous animal"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q10(d)(i)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-6","agricultural-science-3-4"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q10dii", topicId: "agsci-4-3-2", conceptId: "ai-disadvantages",
+    section: "B", questionRef: "2019 OL Q10(d)(ii)",
+    stem: "Artificial insemination (AI) is carried out on some farm animals.",
+    questionText: "State two disadvantages of artificial insemination.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Need for accurate heat detection / semen must be stored properly / lower conception rate / more labour intensive / must be carried out by trained personnel / may also have to keep a bull", marks: 6, contextNote: "Any two, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Need for accurate heat detection","semen must be stored properly","lower conception rate","more labour intensive","must be carried out by trained personnel","may also have to keep a bull"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q10(d)(ii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-1-0"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q11ai", topicId: "agsci-2-1", conceptId: "rock-types-from-list",
+    section: "B", questionRef: "2019 OL Q11(a)(i)",
+    questionText: "From the list of rock types below, name 1. a sedimentary rock 2. a metamorphic rock 3. an igneous rock. The list: basalt, sandstone, marble, granite, limestone, slate.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Sedimentary — Sandstone or limestone or shale", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "2. Metamorphic — Marble or slate or quartzite", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "3. Igneous — Basalt or granite", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q11(a)(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-1-0"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q11aii", topicId: "agsci-2-1", conceptId: "weathering-meaning",
+    section: "B", questionRef: "2019 OL Q11(a)(ii)",
+    questionText: "What is meant by the weathering of rock?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The breaking down of rock (into small particles)", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q11(a)(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-1-0"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q11aiii", topicId: "agsci-2-1", conceptId: "how-rock-weathers",
+    section: "B", questionRef: "2019 OL Q11(a)(iii)",
+    questionText: "Describe two ways in which rock is weathered.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Water in cracks in rock freezes and expands / acid in rain dissolves rock / heating and cooling causes rock to expand and contract / roots grow into cracks and split the rock / sea waves break up rock / animals break rocks by digging or burrowing or trampling / glaciers crush rock / oxidation-reduction reactions decompose rock / quarrying breaks rock / farm cultivation can break rock / hydration can decompose rock minerals / water can dissolve minerals in rocks", marks: 8, contextNote: "Any two ways; the scheme awards each 2 + 2 (2(2 + 2)).", group: {"claimMax":2,"perOption":4,"options":["Water in cracks in rock freezes and expands","acid in rain dissolves rock","heating and cooling causes rock to expand and contract","roots grow into cracks and split the rock","sea waves break up rock","animals break rocks by digging or burrowing or trampling","glaciers crush rock","oxidation-reduction reactions decompose rock","quarrying breaks rock","farm cultivation can break rock","hydration can decompose rock minerals","water can dissolve minerals in rocks"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q11(a)(iii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-1-3"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q11b", topicId: "agsci-2-2-2", conceptId: "sandy-or-clay-soil",
+    section: "B", questionRef: "2019 OL Q11(b)",
+    questionText: "Describe a sandy soil or a clay soil under the following headings: (i) How the soil feels (ii) Particle size (iii) Fertility (iv) Suitability for tillage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) How the soil feels — Coarse or rough", marks: 4, contextNote: "Sandy soil: 4 marks for each heading." },
+    { id: "r-2", kind: "point", verbatim: "(ii) Particle size — Large", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "(iii) Fertility — Poor", marks: 4 },
+    { id: "r-4", kind: "point", verbatim: "(iv) Suitability for tillage — Suitable or easily tilled", marks: 4 },
+    ],
+    answerVariants: [
+          {
+                "id": "sandy",
+                "label": "Sandy soil",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "(i) How the soil feels — Coarse or rough",
+                            "marks": 4,
+                            "contextNote": "Sandy soil: 4 marks for each heading.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(ii) Particle size — Large",
+                            "marks": 4,
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(iii) Fertility — Poor",
+                            "marks": 4,
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(iv) Suitability for tillage — Suitable or easily tilled",
+                            "marks": 4,
+                            "id": "r-4"
+                      }
+                ]
+          },
+          {
+                "id": "clay",
+                "label": "Clay soil",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "(i) How the soil feels — Fine or smooth",
+                            "marks": 4,
+                            "contextNote": "Clay soil: 4 marks for each heading.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(ii) Particle size — Small",
+                            "marks": 4,
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(iii) Fertility — Good",
+                            "marks": 4,
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "(iv) Suitability for tillage — Not suitable or difficult to till",
+                            "marks": 4,
+                            "id": "r-4"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q11(b)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-1-4"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q11ci", topicId: "agsci-2-2-3", conceptId: "organic-matter-importance",
+    section: "B", questionRef: "2019 OL Q11(c)(i)",
+    questionText: "State two reasons why organic matter is important in a soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Increases soil fertility or provides nutrients / retains water / improves soil structure / increases number of earthworms / binds the soil / improves soil aeration / creates humus (when decomposed)", marks: 8, contextNote: "Any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["Increases soil fertility or provides nutrients","retains water","improves soil structure","increases number of earthworms","binds the soil","improves soil aeration","creates humus (when decomposed)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q11(c)(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-1-5","agricultural-science-1-4"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q11cii", topicId: "agsci-2-3", conceptId: "adding-organic-matter",
+    section: "B", questionRef: "2019 OL Q11(c)(ii)",
+    questionText: "State two ways in which organic matter may be added to soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Spreading farmyard manure / spreading slurry / green manure (or described) / adding seaweed / crop rotation / animal dung when grazing / topping grassland / ploughing in stubble", marks: 8, contextNote: "Any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["Spreading farmyard manure","spreading slurry","green manure (or described)","adding seaweed","crop rotation","animal dung when grazing","topping grassland","ploughing in stubble"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q11(c)(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-1-3"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q11ciii", topicId: "agsci-2-2-2", conceptId: "clay-soils-in-drought",
+    section: "B", questionRef: "2019 OL Q11(c)(iii)",
+    questionText: "Explain why plants grown in clay soil survive better in a drought than those grown in sandy soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Clay soils retain more water or more water lost by drainage in sandy soils or small soil particles in clay hold more water than larger sand particles or clay soils have better capillarity or clay soils are able to bring up water from deeper in the soil", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q11(c)(iii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-5"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q12ai", topicId: "agsci-4-3-3", conceptId: "dairy-calf-care-at-birth",
+    section: "B", questionRef: "2019 OL Q12(a)(i)",
+    stem: "Describe the care and management of a new-born dairy calf from birth to weaning, under the following headings.",
+    questionText: "Describe the care and management of a new-born dairy calf from birth to weaning under the heading: Care at birth.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Feed colostrum / clear mucus from nose and mouth / spray navel with iodine / adequate supervision or have experienced person at hand / call vet if necessary / clean bedding / dry calf or ensure cow licks calf", marks: 6, contextNote: "Any two, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Feed colostrum","clear mucus from nose and mouth","spray navel with iodine","adequate supervision or have experienced person at hand","call vet if necessary","clean bedding","dry calf or ensure cow licks calf"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q12(a)(i)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-4"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q12aii", topicId: "agsci-4-3-2", conceptId: "dairy-calf-diet",
+    section: "B", questionRef: "2019 OL Q12(a)(ii)",
+    stem: "Describe the care and management of a new-born dairy calf from birth to weaning, under the following headings.",
+    questionText: "Describe the care and management of a new-born dairy calf from birth to weaning under the heading: Changes in diet.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Colostrum / cow’s milk / milk replacer / concentrates / hay (or roughage)", marks: 6, contextNote: "Any two, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Colostrum","cow’s milk","milk replacer","concentrates","hay (or roughage)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q12(a)(ii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-4"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q12aiii", topicId: "agsci-4-3-2", conceptId: "dairy-calf-housing",
+    section: "B", questionRef: "2019 OL Q12(a)(iii)",
+    stem: "Describe the care and management of a new-born dairy calf from birth to weaning, under the following headings.",
+    questionText: "Describe the care and management of a new-born dairy calf from birth to weaning under the heading: Housing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Straw bed or dry bed / good hygiene or disinfect house / good ventilation / draught free / water supply / adequate space / lighting", marks: 6, contextNote: "Any two, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Straw bed or dry bed","good hygiene or disinfect house","good ventilation","draught free","water supply","adequate space","lighting"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q12(a)(iii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-5"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q12aiv", topicId: "agsci-4-3-3", conceptId: "dairy-calf-disease-control",
+    section: "B", questionRef: "2019 OL Q12(a)(iv)",
+    stem: "Describe the care and management of a new-born dairy calf from birth to weaning, under the following headings.",
+    questionText: "Describe the care and management of a new-born dairy calf from birth to weaning under the heading: Disease control.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Good hygiene / vaccination / monitor health or good supervision / colostrum / calving box / isolate sick animal(s) / good feeding practices / call vet", marks: 6, contextNote: "Any two, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Good hygiene","vaccination","monitor health or good supervision","colostrum","calving box","isolate sick animal(s)","good feeding practices","call vet"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q12(a)(iv)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-5"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q12bi", topicId: "agsci-4-3-3", conceptId: "mastitis-cause-and-symptoms",
+    section: "B", questionRef: "2019 OL Q12(b)(i)",
+    stem: "The photograph shows cows in a milking parlour. Maintaining hygiene in a milking parlour is important; nevertheless, cows do sometimes contract mastitis.",
+    questionText: "1. What causes mastitis? 2. Describe two symptoms of mastitis.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Cause of mastitis — Bacteria", marks: 3 },
+    { id: "r-2", kind: "anyN", verbatim: "Swollen udder or lumps on udder or on teats / tender udder / redness in udder / cow irritable / watery milk or yellowing of milk / bloody or curdled milk / high cell count", marks: 6, contextNote: "2. Symptoms of mastitis: any two, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Swollen udder or lumps on udder or on teats","tender udder","redness in udder","cow irritable","watery milk or yellowing of milk","bloody or curdled milk","high cell count"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q12(b)(i)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2019-ol-paper-milking-parlour",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-milking-parlour.png",
+          "srcHash": "af4ec8d75257a1a2da438da26f086e50",
+          "alt": "Original Question 12(b) photograph: cows standing either side of the pit of a herringbone milking parlour with milking units attached.",
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 12 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-4","agricultural-science-3-5"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q12bii", topicId: "agsci-4-3-2", conceptId: "parlour-hygiene-reason",
+    section: "B", questionRef: "2019 OL Q12(b)(ii)",
+    stem: "Maintaining hygiene in a milking parlour is important; nevertheless, cows do sometimes contract mastitis.",
+    questionText: "Give another reason why maintaining a high level of hygiene in a milking parlour is important.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To prevent spread of disease or to keep a low bacterial count in the milk or to ensure milk is not contaminated from dirty equipment or to ensure operator does not transfer infection from one cow to another or to ensure milk is not contaminated by dirt on cow’s udder or to avoid penalties for dirty milk", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q12(b)(ii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-4","agricultural-science-3-5"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q12biii", topicId: "agsci-4-3-2", conceptId: "maintaining-parlour-hygiene",
+    section: "B", questionRef: "2019 OL Q12(b)(iii)",
+    stem: "Maintaining hygiene in a milking parlour is important; nevertheless, cows do sometimes contract mastitis.",
+    questionText: "State any three ways that hygiene is maintained before, during, or after milking.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Clean housing (e.g. lime and/or sawdust on floor of cubicles) / sterilised equipment / milker hygiene / clean milking parlour / teat dips used / udder hygiene / fly control / milk is filtered / milk is refrigerated / clean bulk tank", marks: 9, contextNote: "Any three, 3 marks each (3(3)).", group: {"claimMax":3,"perOption":3,"options":["Clean housing (e.g. lime and/or sawdust on floor of cubicles)","sterilised equipment","milker hygiene","clean milking parlour","teat dips used","udder hygiene","fly control","milk is filtered","milk is refrigerated","clean bulk tank"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q12(b)(iii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-4","agricultural-science-0-1"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q12c", topicId: "agsci-4-3-2", conceptId: "milk-hygiene-experiment",
+    section: "B", questionRef: "2019 OL Q12(c)",
+    questionText: "Describe an experiment to compare the hygiene quality of two milk samples.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Two sterile test tubes / equal amount of different milk sample into each test-tube / add resazurin (or methylene blue) solution to each / record colour of each at start / kept at 37 °C / in water-bath / for 15 minutes / change to blue is good quality / change to white is poorest quality / pink or mauve is intermediate quality (for resazurin)", marks: 15, contextNote: "Resazurin test: any five, 3 marks each (5(3)). Maximum of 12 marks if no result given; all points may be obtained from a labelled diagram; maximum of 3 marks for an unlabelled diagram.", group: {"claimMax":5,"perOption":3,"options":["Two sterile test tubes","equal amount of different milk sample into each test-tube","add resazurin (or methylene blue) solution to each","record colour of each at start","kept at 37 °C","in water-bath","for 15 minutes","change to blue is good quality","change to white is poorest quality","pink or mauve is intermediate quality (for resazurin)"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "resazurin",
+                "label": "Resazurin test",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Two sterile test tubes / equal amount of different milk sample into each test-tube / add resazurin (or methylene blue) solution to each / record colour of each at start / kept at 37 °C / in water-bath / for 15 minutes / change to blue is good quality / change to white is poorest quality / pink or mauve is intermediate quality (for resazurin)",
+                            "marks": 15,
+                            "contextNote": "Resazurin test: any five, 3 marks each (5(3)). Maximum of 12 marks if no result given; all points may be obtained from a labelled diagram; maximum of 3 marks for an unlabelled diagram.",
+                            "group": {
+                                  "claimMax": 5,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Two sterile test tubes",
+                                        "equal amount of different milk sample into each test-tube",
+                                        "add resazurin (or methylene blue) solution to each",
+                                        "record colour of each at start",
+                                        "kept at 37 °C",
+                                        "in water-bath",
+                                        "for 15 minutes",
+                                        "change to blue is good quality",
+                                        "change to white is poorest quality",
+                                        "pink or mauve is intermediate quality (for resazurin)"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "agar",
+                "label": "Agar plates",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Two sterile nutrient agar plates / two different milk samples / inoculating loop / flame loop / transfer milk from each sample onto each dish or method of transfer / invert dishes / incubate at 25 °C / suitable time / count the colonies in each dish / staler milk will have more bacteria colonies than fresher milk",
+                            "marks": 15,
+                            "contextNote": "Agar plates: any five, 3 marks each (5(3)). Maximum of 12 marks if no result given; all points may be obtained from a labelled diagram; maximum of 3 marks for an unlabelled diagram.",
+                            "group": {
+                                  "claimMax": 5,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Two sterile nutrient agar plates",
+                                        "two different milk samples",
+                                        "inoculating loop",
+                                        "flame loop",
+                                        "transfer milk from each sample onto each dish or method of transfer",
+                                        "invert dishes",
+                                        "incubate at 25 °C",
+                                        "suitable time",
+                                        "count the colonies in each dish",
+                                        "staler milk will have more bacteria colonies than fresher milk"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q12(c)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-3","agricultural-science-2-4","agricultural-science-2-5"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q13a", topicId: "agsci-3-3-1", conceptId: "maincrop-potatoes",
+    section: "B", questionRef: "2019 OL Q13(a)",
+    stem: "Answer any two of (a), (b), (c), (d).",
+    questionText: "(i) Name two varieties of maincrop potatoes. (ii) Describe the growing of maincrop potatoes under the following headings: 1. Soil preparation 2. Time of planting 3. Weed control 4. Method of harvesting 5. Expected yield 6. Method of storage.",
+    tariffModel: {"kind":"orderedSplit","notation":"7(4) + 2"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Maincrop potato varieties — Rooster/ Kerr Pinks/ Golden Wonder/ Cara/ Record", marks: null, contextNote: "Shared scale 7(4) + 2: the first correct answers earn the higher award, whichever part they answer, so no part carries a mark of its own. Eight answers: two varieties and the six headings." },
+    { id: "r-2", kind: "point", verbatim: "(ii) 1. Soil preparation — Plough (or dig) or remove stones or rotavate or harrow or rake soil", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(ii) 2. When to plant — March ‒ April", marks: null },
+    { id: "r-4", kind: "point", verbatim: "(ii) 3. Weed control — Spray or apply herbicide (or weed-killer) or mechanical (or explained) or pull by hand or crop rotation or burning or shading action or earthing up", marks: null },
+    { id: "r-5", kind: "point", verbatim: "(ii) 4. Harvesting method — Elevator digger or potato harvester or complete harvester or by hand", marks: null },
+    { id: "r-6", kind: "point", verbatim: "(ii) 5. Expected yield — 30 ‒ 40 tonnes per hectare", marks: null },
+    { id: "r-7", kind: "point", verbatim: "(ii) 6. Storage — Cool (or refrigerated store) or dry or pest free or well ventilated shed or in darkness or frost free or high humidity", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q13(a)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-3-0"]), kind: "diagram",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q13b", topicId: "agsci-4-1", conceptId: "sheep-heart-and-blood",
+    section: "B", questionRef: "2019 OL Q13(b)",
+    stem: "Answer any two of (a), (b), (c), (d).",
+    questionText: "The diagram shows a dissected sheep’s heart. (i) Name the parts labelled A, B, C, D. (ii) The blood in C and D has come from the lungs. State one way blood changes as it passes through the lungs. (iii) Name two types of blood cell and state the function of each. (iv) Name the liquid part of blood.",
+    tariffModel: {"kind":"orderedSplit","notation":"5(4) + 5(2)"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) A — Pulmonary artery", marks: null, contextNote: "Shared scale 5(4) + 5(2): the first correct answers earn the higher award, whichever part they answer, so no part carries a mark of its own. Ten answers: four parts, (ii), two cell types with their functions, and (iv)." },
+    { id: "r-2", kind: "point", verbatim: "(i) B — Vena cava", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(i) C — Left atrium", marks: null },
+    { id: "r-4", kind: "point", verbatim: "(i) D — Left ventricle", marks: null },
+    { id: "r-5", kind: "point", verbatim: "(ii) How blood changes through lungs — Loses carbon dioxide or picks up oxygen (or is oxygenated)", marks: null },
+    { id: "r-6", kind: "point", verbatim: "(iii) Types of blood cells — Red blood cells/ white blood cells/ platelets", marks: null, contextNote: "Any two." },
+    { id: "r-7", kind: "point", verbatim: "(iii) Function of red blood cells — Carry oxygen", marks: null },
+    { id: "r-8", kind: "point", verbatim: "(iii) Function of white blood cells — Produce antibodies or fight disease or fight infection", marks: null },
+    { id: "r-9", kind: "point", verbatim: "(iii) Function of platelets — (Blood) clotting", marks: null, contextNote: "The functions of your two cell types." },
+    { id: "r-10", kind: "point", verbatim: "(iv) Liquid part of blood — Plasma", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q13(b)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2019-ol-paper-sheep-heart",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-sheep-heart.png",
+          "srcHash": "fb55b6ac9139320eb9b215d62b7525d4",
+          "alt": "Original Question 13(b) diagram of a dissected sheep heart: A and the aorta at the top, B on the left, C on the upper right above the tricuspid valve label, and D pointing into the lower chamber.",
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 13 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Pulmonary artery","askedInThisQuestion":true},{"letter":"B","meaning":"Vena cava","askedInThisQuestion":true},{"letter":"C","meaning":"Left atrium","askedInThisQuestion":true},{"letter":"D","meaning":"Left ventricle","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-4"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q13ci", topicId: "agsci-3-3-2", conceptId: "why-conifers",
+    section: "B", questionRef: "2019 OL Q13(c)(i)",
+    stem: "Answer any two of (a), (b), (c), (d).",
+    questionText: "Give two reasons why conifers are the main type of tree grown in Irish forests.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Can withstand harsh climatic conditions (or named harsh condition) / flexible (or do not break easily in the wind) / have shallow root system (for shallow soils in the mountains) / grow well in poorer-quality soils / snow falls off them easily / fast growing / easy to grow", marks: 10, contextNote: "Any two, 5 marks each (2(5)).", group: {"claimMax":2,"perOption":5,"options":["Can withstand harsh climatic conditions (or named harsh condition)","flexible (or do not break easily in the wind)","have shallow root system (for shallow soils in the mountains)","grow well in poorer-quality soils","snow falls off them easily","fast growing","easy to grow"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q13(c)(i)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-1"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q13cii", topicId: "agsci-3-2", conceptId: "irish-conifer-species",
+    section: "B", questionRef: "2019 OL Q13(c)(ii)",
+    stem: "Answer any two of (a), (b), (c), (d).",
+    questionText: "Name a species of conifer commonly grown in Ireland.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Spruce or fir or pine or larch or juniper", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q13(c)(ii)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-4"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q13ciii", topicId: "agsci-3-3-2", conceptId: "why-thin-forestry",
+    section: "B", questionRef: "2019 OL Q13(c)(iii)",
+    stem: "Answer any two of (a), (b), (c), (d).",
+    questionText: "Why are forestry trees thinned at various times?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Removes diseased (or damaged) trees or improves quality of remaining trees or increases size of remaining trees or reduces competition (or named example) or improves access or thinnings provide income or useful products made from thinnings", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q13(c)(iii)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-1-6"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q13civ", topicId: "agsci-2-3", conceptId: "forestry-environment-benefits",
+    section: "B", questionRef: "2019 OL Q13(c)(iv)",
+    stem: "Answer any two of (a), (b), (c), (d).",
+    questionText: "State two beneficial effects of forestry on the environment.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Produces oxygen / consumes carbon dioxide / reduces noise / provides habitat for wildlife / provides shelter / aesthetic / prevents soil erosion / natural amenity", marks: 10, contextNote: "Any two, 5 marks each (2(5)).", group: {"claimMax":2,"perOption":5,"options":["Produces oxygen","consumes carbon dioxide","reduces noise","provides habitat for wildlife","provides shelter","aesthetic","prevents soil erosion","natural amenity"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q13(c)(iv)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2019, ["agricultural-science-2-0","agricultural-science-0-1"]), kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2019 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2019-ol-q13d", topicId: "agsci-3-1", conceptId: "transpiration",
+    section: "B", questionRef: "2019 OL Q13(d)",
+    stem: "Answer any two of (a), (b), (c), (d).",
+    questionText: "(i) What is meant by the term transpiration? (ii) State two environmental factors that affect the rate of transpiration. (iii) Why is transpiration important in plants? (iv) Describe an experiment to demonstrate transpiration in a plant.",
+    tariffModel: {"kind":"orderedSplit","notation":"6 + 8(3)"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Transpiration — Loss of water vapour through (stomata of) leaves", marks: null, contextNote: "Shared scale 6 + 8(3): the first correct answers earn the higher award, whichever part they answer, so no part carries a mark of its own. Nine answers: (i), two factors, (iii) and five points of one experiment." },
+    { id: "r-2", kind: "point", verbatim: "(ii) Factors affecting transpiration rate — Air temperature/ air movements/ relative humidity/ light intensity/ availability of soil water/ presence or absence of a cuticle", marks: null, contextNote: "Any two." },
+    { id: "r-3", kind: "point", verbatim: "(iii) Importance of transpiration — Cools the plant or brings water through the plant or brings minerals through the plant", marks: null },
+    { id: "r-4", kind: "point", verbatim: "(iv) Plastic bag method — Potted plant/ water well/ soil covered with plastic/ plant enclosed in a plastic bag (or bell jar)/ leave in a bright place/ for suitable time/ drops of liquid form on the inside of plastic bag (or bell jar)/ test liquid with anhydrous copper sulfate/ colour change from white to blue indicates liquid is water", marks: null, contextNote: "Any five points of one method. Maximum of 12 marks if no result given; all points may be obtained from a labelled diagram; maximum of 3 marks for an unlabelled diagram.", route: "bag" },
+    { id: "r-5", kind: "point", verbatim: "(iv) Potometer method — Cut leafy shoot (at an angle)/ under water/ fill potometer with water/ by submerging/ place shoot in the potometer/ seal shoot in potometer/ introduce bubble into potometer/ place potometer in front of a lamp or in bright place/ record position of bubble/ leave for suitable time/ movement of bubble indicates transpiration", marks: null, route: "potometer" },
+    { id: "r-6", kind: "point", verbatim: "(iv) Coloured dye method — Celery/ cut under water/ place in coloured dye/ leave for suitable time/ presence of dye in leaves (or in upper part(s) of stem or in xylem vessels) indicates transpiration or upward movement of water (by transpiration)", marks: null, route: "celery" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2019 Ordinary — Q13(d)",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
 ];

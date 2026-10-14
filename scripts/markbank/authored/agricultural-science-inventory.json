@@ -2542,65 +2542,73 @@
         "sha256": "80e7534cdefcbe5d0d7921ed0ffb5041c5628cce01e910b4c75ab55ba8ef9ca0",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 54,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "c8504d75225fbfc5",
           "page": 2,
           "cue": "Answer six",
           "context": "_____________ Instructions Write your examination number in the space provided on page 1. Answer six questions. Each question carries 20 marks. Write your answers in the spaces provided. Keep your answers short. ________________________________________________________________________________________________________ Question 1. (",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section One: six of seven independent 20-mark questions; every question is retained."
         },
         {
           "id": "f2ea94f03d317398",
           "page": 8,
           "cue": "Answer three",
           "context": "___________________ Instructions Write your answers to Section Two into your answer book. Answer three questions. Each question carries 60 marks. ______________________________________________________________________________________________ Question 8. (a) (i) State two features of the housing used in pig production. (ii) State th",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section Two: three of six independent 60-mark questions; every question is retained."
         },
         {
           "id": "82e8a73b4285d153",
           "page": 8,
           "cue": "any one",
           "context": "i) State two features of the housing used in pig production. (ii) State the importance of any one of those housing features. (iii) The photograph shows a sow and bonhams (piglets) in a farrowing crate. State two reasons for using farrowing crates. (b) (i) What is the length of gestation for a sow? (ii) What is the average lit",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q8(a)(ii): the importance of any one of the candidate’s own housing features; the scheme tabulates an importance for each feature (a marking menu)."
         },
         {
           "id": "72b70b60ca49f954",
           "page": 8,
           "cue": "either",
           "context": "injection 2. Lysine is included in the diet of pigs 3. A creep area is used. (c) Describe either hill (mountain) sheep production or lowland sheep production under the following headings: (i) Grass quality (ii) Method of grazing (iii) Number of lambs produced (iv) Stocking rate (v) Amount of labour involved.",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q8(c): hill (mountain) or lowland sheep production, kept as answer routes on one card."
         },
         {
           "id": "c349dfaa48b0ec42",
           "page": 9,
           "cue": "any one",
           "context": ") Name two grass species commonly used when reseeding. (iii) Explain the reason for using any one of the grass species named. (iv) State two reasons why grassland is topped. (b) Feeding good quality silage is essential for cattle to reach production targets. (i) List four stages in making good quality pit silage. (ii) Explain",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q9(a)(iii): the reason for any one of the candidate’s own named grass species; the scheme gives reasons per species (a marking menu)."
         },
         {
           "id": "526c9f54802d9199",
           "page": 9,
           "cue": "any two",
           "context": "s. (i) List four stages in making good quality pit silage. (ii) Explain the importance of any two of the steps mentioned. (iii) Explain what is meant by the DMD of silage. (iv) State the DMD of good quality silage. (c) The photograph shows stubble turnips which are grown as a catch crop. (i) What is meant by the term catch cr",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q9(b)(ii): the importance of any two of the candidate’s own silage steps; the scheme tabulates an importance for each step."
         },
         {
           "id": "ae0afb674c064a2a",
           "page": 12,
           "cue": "any three",
           "context": "on why maintaining a high level of hygiene in a milking parlour is important. (iii) State any three ways that hygiene is maintained before, during, or after milking. (c) Describe an experiment to compare the hygiene quality of two milk samples.",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q12(b)(iii): any three hygiene measures from the scheme pool; a marking menu."
         },
         {
           "id": "1617d9049f8f6d3c",
           "page": 13,
           "cue": "any two",
           "context": "tificate Examination, 2019 13 Agricultural Science – Ordinary Level B Question 13. Answer any two of (a), (b), (c), (d). (30 marks, 30 marks) (a) (i) Name two varieties of maincrop potatoes. (ii) Describe the growing of maincrop potatoes under the following headings: 1. Soil preparation 2. Time of planting 3. Weed control 4. ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: two of four independently priced 30-mark parts; all four are retained."
         }
       ]
     },
@@ -2619,7 +2627,7 @@
         "sha256": "58e5ec4be68ff7f24b782ec6abca253b7bff8d13fd552399c63d983dbbd6adce",
         "pages": 20
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 54,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

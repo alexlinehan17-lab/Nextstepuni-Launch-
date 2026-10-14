@@ -814,5 +814,141 @@
       0.83
     ],
     "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-wormery": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-wormery.png",
+    "md5": "525e1c253bf154285671724388c77241",
+    "alt": "Original Question 1(b) photograph: an empty, narrow glass-sided wormery frame standing on wooden feet.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 2,
+    "cropRect": [
+      0.7,
+      0.55,
+      0.95,
+      0.72
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-farm-machinery": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-farm-machinery.png",
+    "md5": "e6a3fb5fb3a57b8ffcf703207e7cf6ad",
+    "alt": "Original Question 2 photographs lettered A to F: A a silage wagon behind a tractor, B a rotary tedder, C a creep feeder with lambs, D a shear grab, E a grain silo with an auger, F a combine harvester.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 3,
+    "cropRect": [
+      0.09,
+      0.1175,
+      0.9,
+      0.68
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-cereals": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-cereals.png",
+    "md5": "44dbac5e2ab501842f3304a5313bd145",
+    "alt": "Original Question 5(a) photographs lettered A to C: A ears with long awns, B loose drooping panicles, C a bundle of plump ears without long awns.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 5,
+    "cropRect": [
+      0.1,
+      0.115,
+      0.95,
+      0.3
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-clover-nodules": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-clover-nodules.png",
+    "md5": "38aad4b0c7232b5f5b2ce75ac8f90457",
+    "alt": "Original Question 7 photograph: the roots of a clover plant covered in small round nodules.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 7 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 7,
+    "cropRect": [
+      0.37,
+      0.1,
+      0.63,
+      0.305
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-farrowing-crate": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-farrowing-crate.png",
+    "md5": "9c2d3e0fbcd3d57b6d11d2cd56722234",
+    "alt": "Original Question 8(a)(iii) photograph: a sow lying in a farrowing crate with bonhams suckling beside the bars.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 8,
+    "cropRect": [
+      0.35,
+      0.37,
+      0.65,
+      0.515
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-stubble-turnips": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-stubble-turnips.png",
+    "md5": "4f0a6486b87aa2072ba664ee646dbeed",
+    "alt": "Original Question 9(c) photograph: a row of stubble turnips with leafy tops, partly lifted from the soil.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 9,
+    "cropRect": [
+      0.24,
+      0.48,
+      0.57,
+      0.63
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-milking-parlour": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-milking-parlour.png",
+    "md5": "af4ec8d75257a1a2da438da26f086e50",
+    "alt": "Original Question 12(b) photograph: cows standing either side of the pit of a herringbone milking parlour with milking units attached.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 12 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 12,
+    "cropRect": [
+      0.29,
+      0.285,
+      0.735,
+      0.505
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-sheep-heart": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-sheep-heart.png",
+    "md5": "fb55b6ac9139320eb9b215d62b7525d4",
+    "alt": "Original Question 13(b) diagram of a dissected sheep heart: A and the aorta at the top, B on the left, C on the upper right above the tricuspid valve label, and D pointing into the lower chamber.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 13 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 13,
+    "cropRect": [
+      0.3,
+      0.31,
+      0.73,
+      0.475
+    ],
+    "reviewedAt": "2026-10-14"
   }
 }

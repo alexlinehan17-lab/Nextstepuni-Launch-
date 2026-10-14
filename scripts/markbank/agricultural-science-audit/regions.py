@@ -19,7 +19,7 @@ ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
 LETTERS = 'abcdefghijklmnop'
 breaks = []  # (page, y) of each printed OR or section heading; see spans() for when one ends a part
 SECTION = re.compile(r'^SECTION\s+(?:ONE|TWO|THREE|A|B|C)\b', re.I)
-HEAD = re.compile(r'^(?:Q(?:uestion)?\s*)?(\d{1,2})(?:\s*\.|(?=\s+(?:\(|Option|Any|Two|Four|Answer|[A-Z]))|\s*$)\s*')
+HEAD = re.compile(r'^(?:Q(?:uestion)?\.?\s*)?(\d{1,2})(?:\s*\.|(?=\s+(?:\(|Option|Any|Two|Four|Answer|[A-Z]))|\s*$)\s*')
 MARKER = re.compile(r'^\(\s*([a-z]{1,4})\s*\)\s*')
 OPTION = re.compile(r'^Option\s+(One|Two)\b\.?\s*', re.I)
 FURNITURE = re.compile(r'^(Leaving Certificate|Agricultural Science\s*[–-]|Marking scheme Agricultural|Page \d+|\d{1,2}$|There is no examination material|\[OVER\]$)', re.I)
