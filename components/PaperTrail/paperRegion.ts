@@ -24,6 +24,24 @@ const MAX_PAGES = 3;
 /** A trailing sliver shorter than this fraction of a page adds nothing. */
 const MIN_TAIL = 0.03;
 
+/**
+ * Whether a sidecar entry is a printed question anchor. Reviewed practice
+ * tasks that split a printed question (e.g. Accounting 1(a),
+ * 8(a)(ii)-break-even) are appended with their own audited `paperRegion`;
+ * their `pP`/`pY` is a page reference, not the place a printed question
+ * begins. A printed question practised whole keeps its bare number and stays
+ * an anchor even when it carries `practiceTask` metadata.
+ */
+const isPrintedAnchor = (question: PaperAnswerQuestion): boolean =>
+  !question.practiceTask || /^\d+$/.test(question.n);
+
+/** The printed question anchors in a sidecar. Treating a split task as an
+ *  anchor would end the previous question's crop at the top of the task's
+ *  page and stack task rails on the paper, so only printed questions take part
+ *  in anchor-derived layout. */
+export const printedQuestionAnchors = (qs: PaperAnswerQuestion[]): PaperAnswerQuestion[] =>
+  qs.filter(isPrintedAnchor);
+
 /** Sort anchors into printed order (page, then vertical position). */
 const inPrintOrder = (qs: PaperAnswerQuestion[]): PaperAnswerQuestion[] =>
   [...qs].sort((a, b) => a.pP - b.pP || a.pY[0] - b.pY[0]);
@@ -62,7 +80,7 @@ export function paperRegionFor(
   maxPages = MAX_PAGES,
 ): PaperAnswerSeg[] | null {
   if (!qs.length) return null;
-  const ordered = inPrintOrder(qs);
+  const ordered = inPrintOrder(qs.filter(question => question.n === n || isPrintedAnchor(question)));
   const i = ordered.findIndex(q => q.n === n);
   if (i === -1) return null;
   const q = ordered[i];

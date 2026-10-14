@@ -370,7 +370,7 @@ export const PAPER_TRAIL_INDEX: Record<string, PaperEntry[]> = {
   "applied-mathematics": [
     {"year": 2026, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020ALP000EV.pdf", "b": 676825}, "scheme": {"f": "LC020ALP000EV.pdf", "b": 1171674}, "answers": 1}]},
     {"year": 2026, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020ALP000IV.pdf", "b": 619607}, "scheme": {"f": "LC020ALP000IV.pdf", "b": 635239}, "answers": 1}]},
-    {"year": 2026, "level": "ordinary", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020GLP000EV.pdf", "b": 834071}, "scheme": {"f": "LC020GLP000EV.pdf", "b": 623825}}]},
+    {"year": 2026, "level": "ordinary", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020GLP000EV.pdf", "b": 834071}, "scheme": {"f": "LC020GLP000EV.pdf", "b": 623825}, "answers": 1}]},
     {"year": 2026, "level": "ordinary", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020GLP000IV.pdf", "b": 791419}, "scheme": {"f": "LC020GLP000IV.pdf", "b": 602344}, "answers": 1}]},
     {"year": 2025, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020ALP000EV.pdf", "b": 596527}, "scheme": {"f": "LC020ALP000EV.pdf", "b": 1764716}, "answers": 1}]},
     {"year": 2025, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020ALP000IV.pdf", "b": 563377}, "scheme": {"f": "LC020ALP000IV.pdf", "b": 450631}, "answers": 1}]},
@@ -429,7 +429,7 @@ export const PAPER_TRAIL_INDEX: Record<string, PaperEntry[]> = {
     {"year": 2011, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020ALP000EV.pdf", "b": 161479}, "scheme": {"f": "LC020ALP000EV.pdf", "b": 245730}, "answers": 1}]},
     {"year": 2011, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020ALP000IV.pdf", "b": 158080}, "scheme": {"f": "LC020ALP000IV.pdf", "b": 231664}, "answers": 1}]},
     {"year": 2011, "level": "ordinary", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020GLP000EV.pdf", "b": 144416}, "scheme": {"f": "LC020GLP000EV.pdf", "b": 200563}, "answers": 1}]},
-    {"year": 2011, "level": "ordinary", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020GLP000IV.pdf", "b": 151298}}]},
+    {"year": 2011, "level": "ordinary", "lang": "iv", "note": "Irish paper with the matching English marking scheme.", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020GLP000IV.pdf", "b": 151298}, "scheme": {"f": "LC020GLP000EV.pdf", "b": 200563}, "answers": 1}]},
     {"year": 2010, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020ALP000EV.pdf", "b": 158494}, "scheme": {"f": "LC020ALP000EV.pdf", "b": 239961}, "answers": 1}]},
     {"year": 2010, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020ALP000IV.pdf", "b": 146556}, "scheme": {"f": "LC020ALP000IV.pdf", "b": 231447}, "answers": 1}]},
     {"year": 2010, "level": "ordinary", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020GLP000EV.pdf", "b": 148410}, "scheme": {"f": "LC020GLP000EV.pdf", "b": 196230}, "answers": 1}]},

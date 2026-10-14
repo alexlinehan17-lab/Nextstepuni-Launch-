@@ -170,6 +170,10 @@ export default defineConfig(() => {
           // needs them (vite.config.ts pdfjsResources).
           '**/pdfjs-*/**',
           '**/higher-*.js', '**/ordinary-*.js',
+          // Subject factories and Atlas registries are fetched with their lazy
+          // tools and cached by app-chunks; keep growing corpora out of install.
+          '**/factory-*.js', '**/reviewed-*.js',
+          '**/exam-topic-data-*.js', '**/paper-topic-data-*.js',
           '**/catchUpLaneData*.js', '**/commandWordData*.js',
           '**/vendor-three*.js',
           // PDF export libraries — only pulled in when a student or GC actually

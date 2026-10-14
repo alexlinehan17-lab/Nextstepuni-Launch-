@@ -32,6 +32,7 @@ import Viewer from './Viewer';
 import ImageViewer from './ImageViewer';
 import { grammarFor, timingFor } from './subjectMeta';
 import { taggedSubjects, topicsForPaper, type TopicSibling } from './topics';
+import { fullPaperQuestionFor } from './physicalEducationTasks';
 import { attemptNs } from './attemptStore';
 import { examinerInsightsFor } from '../../data/paperTrail/examinerInsights';
 import WeaknessMap from './WeaknessMap';
@@ -424,7 +425,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         lang: t.lang,
         item,
         side: 'paper',
-        focusQuestion: t.n,
+        focusQuestion: fullPaperQuestionFor(t),
         returnTo,
       };
     });

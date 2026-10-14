@@ -66,7 +66,7 @@ import { loadPdfjs, openPdfDocument, type PdfjsModule } from './pdfjsLoader';
 import CropView from './CropView';
 import { captureZoomAnchor, restoreZoomAnchor, type ZoomAnchor } from './zoomAnchor';
 import MobileQuestionTools from './MobileQuestionTools';
-import { questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
+import { printedQuestionAnchors, questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
 import { isAnswerMap, mergePaperAnchorMetadata } from './vaultResolve';
 
 /** The viewer's square ink buttons (option E): hairline, offset shadow, orange when on. */
@@ -311,7 +311,7 @@ const Viewer: React.FC<ViewerProps> = ({
   // scroll/zoom re-renders (a fresh filter() each render would defeat it).
   const anchorsByPage = useMemo(() => {
     const m = new Map<number, PaperAnswerQuestion[]>();
-    if (answerMap) for (const q of answerMap.q) {
+    if (answerMap) for (const q of printedQuestionAnchors(answerMap.q)) {
       const list = m.get(q.pP);
       if (list) list.push(q);
       else m.set(q.pP, [q]);
@@ -568,13 +568,19 @@ const Viewer: React.FC<ViewerProps> = ({
   loopStateRef.current = loop;
   const answerMapRef = useRef<PaperAnswerMap | null>(null);
   answerMapRef.current = answerMap;
+  // The Full Loop walks the printed questions. Reviewed practice tasks stay in
+  // the map so a focused jump can still find them, but a student looping the
+  // paper answers each printed question once rather than its parts again.
+  const loopQuestions = useMemo(() => (answerMap ? printedQuestionAnchors(answerMap.q) : []), [answerMap]);
+  const loopQuestionsRef = useRef(loopQuestions);
+  loopQuestionsRef.current = loopQuestions;
   const attemptMarkedRef = useRef(0);
   attemptMarkedRef.current = Object.keys(attempt.marks ?? {}).length;
 
   const persistLoopPlace = useCallback(() => {
     const l = loopStateRef.current;
     if (!l || !storageNs) return;
-    const total = answerMapRef.current?.q.length ?? 0;
+    const total = loopQuestionsRef.current.length;
     if (total < 1) return;
     saveLoopPlace(
       storageNs,
@@ -635,7 +641,7 @@ const Viewer: React.FC<ViewerProps> = ({
     // If the map is already in, clamp against its live length (the saved
     // total guards most drift; a re-generated shorter map is the edge case —
     // the clamp effect below covers a map that arrives after this tap).
-    const liveTotal = answerMapRef.current?.q.length;
+    const liveTotal = loopQuestionsRef.current.length || undefined;
     const idx = liveTotal ? Math.min(place.idx, liveTotal - 1) : place.idx;
     setLoop({ idx, qStartTs: Date.now() });
     setResumePlace(null);
@@ -661,10 +667,10 @@ const Viewer: React.FC<ViewerProps> = ({
   // A resumed index can outrun a re-generated (shorter) answer map that arrives
   // after the resume tap — clamp once the map is in.
   useEffect(() => {
-    if (loop && answerMap && answerMap.q.length > 0 && loop.idx >= answerMap.q.length) {
-      setLoop({ idx: answerMap.q.length - 1, qStartTs: Date.now() });
+    if (loop && loopQuestions.length > 0 && loop.idx >= loopQuestions.length) {
+      setLoop({ idx: loopQuestions.length - 1, qStartTs: Date.now() });
     }
-  }, [loop, answerMap]);
+  }, [loop, loopQuestions]);
 
   // Mid-loop persistence: save on every loop step, and on tab close / bfcache
   // eviction while a loop is live. Unmount is covered separately below.
@@ -691,9 +697,9 @@ const Viewer: React.FC<ViewerProps> = ({
   // Jump to the current loop question once the map is in.
   useEffect(() => {
     if (!loop || !answerMap) return;
-    const q = answerMap.q[loop.idx];
+    const q = loopQuestions[loop.idx];
     if (q) scrollToQuestion(q);
-  }, [loop, answerMap, scrollToQuestion]);
+  }, [loop, answerMap, loopQuestions, scrollToQuestion]);
 
   // Per-question elapsed readout, 1s cadence while the loop bar is showing.
   useEffect(() => {
@@ -706,7 +712,7 @@ const Viewer: React.FC<ViewerProps> = ({
     setReveal(null);
     setLoop(l => {
       if (!l || !answerMap) return l;
-      if (l.idx + 1 >= answerMap.q.length) {
+      if (l.idx + 1 >= loopQuestions.length) {
         // Finished: snapshot the wall clock for the receipt and retire the
         // saved place — a completed loop has nothing to resume.
         loopTotalSecRef.current = loopStartedAtRef.current
@@ -719,7 +725,7 @@ const Viewer: React.FC<ViewerProps> = ({
       }
       return { idx: l.idx + 1, qStartTs: Date.now() };
     });
-  }, [answerMap, storageNs]);
+  }, [answerMap, loopQuestions, storageNs]);
 
   const recordMark = useCallback(
     (n: string, mark: SelfMark | null) => {
@@ -1586,7 +1592,7 @@ const Viewer: React.FC<ViewerProps> = ({
 
       {/* The Full Loop bar (PT-2) — sequences attempt → reveal → mark → next. */}
       {loop && answerMap && !reveal && (() => {
-        const q = answerMap.q[loop.idx];
+        const q = loopQuestions[loop.idx];
         if (!q) return null;
         void loopTick; // 1s cadence re-render for the elapsed readout
         const marked = attempt.marks?.[q.n] !== undefined;
@@ -1598,7 +1604,7 @@ const Viewer: React.FC<ViewerProps> = ({
             <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-2xl px-4 py-3 flex items-center gap-3">
               <div className="min-w-0 flex-1">
                 <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">
-                  The full loop · {loop.idx + 1} of {answerMap.q.length}
+                  The full loop · {loop.idx + 1} of {loopQuestions.length}
                 </p>
                 <p className="text-[14px] font-semibold truncate text-zinc-900 dark:text-white">
                   {q.label ?? `Question ${q.n}`}
@@ -1611,7 +1617,7 @@ const Viewer: React.FC<ViewerProps> = ({
                   className="shrink-0 rounded-full px-4 py-2 text-[13px] font-semibold text-white transition-transform active:translate-y-0.5"
                   style={{ backgroundColor: '#3A8D5F' }}
                 >
-                  {loop.idx + 1 >= answerMap.q.length ? 'Finish' : 'Next →'}
+                  {loop.idx + 1 >= loopQuestions.length ? 'Finish' : 'Next →'}
                 </button>
               ) : (
                 <button
@@ -1676,7 +1682,7 @@ const Viewer: React.FC<ViewerProps> = ({
 
       {/* Full Loop summary — the session in the student's own marks. */}
       {loopDone && answerMap && (() => {
-        const qs = answerMap.q;
+        const qs = loopQuestions;
         const marks = qs.map(q => attempt.marks?.[q.n]).filter((m): m is SelfMark => !!m);
         const avg = marks.length ? Math.round(marks.reduce((a, m) => a + (m.max ? (m.score / m.max) * 100 : m.score), 0) / marks.length) : 0;
         const gapCounts = new Map<GapKind, number>();

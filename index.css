@@ -1665,6 +1665,13 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   .mb-source-reader-tools {
     display: none;
   }
+  .mb-source-reader-accounting .mb-source-reader-tools {
+    display: grid;
+  }
+}
+
+.mb-source-reader-accounting .mb-source-reader-paper {
+  max-width: none;
 }
 
 @media (max-width: 640px) {
