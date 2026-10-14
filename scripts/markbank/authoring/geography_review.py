@@ -459,6 +459,8 @@ def display(text: str) -> str:
     text = re.sub(r'\s+(?=\((?:a|b|c|d)\)\s)', '\n', text)
     # A superscript unit loses its raise in the text layer ("km2").
     text = re.sub(r'\bkm2\b', 'km²', text)
+    # So does the raised "o" the paper prints as a degree sign ("(oC)").
+    text = text.replace('(oC)', '(°C)')
     return text.strip()
 
 

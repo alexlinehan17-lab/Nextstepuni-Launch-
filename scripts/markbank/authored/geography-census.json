@@ -17,10 +17,10 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 2501,
-  "includedBaseTasks": 2500,
+  "paperBaseTasks": 2619,
+  "includedBaseTasks": 2618,
   "excludedBaseTasks": 1,
-  "authoredCards": 2677,
+  "authoredCards": 2805,
   "baseTasks": [
     {
       "id": "geography-2016-hl-p1-q1",
@@ -974,6 +974,1068 @@
       "part": 2,
       "questionRef": "2016 HL Part 2 Q24",
       "title": "The Atmosphere - Ocean Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q1",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q1(i)(a)",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q1-i-b",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q1(i)(b)",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q1-i-c",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q1(i)(c)",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q1-i-d",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q1(i)(d)",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q1-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q1(ii)",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q2",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q2(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q2-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q2(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q3",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q3(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q3-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q3(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q4",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q4(i)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q4-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q4(ii)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q5",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q5",
+      "title": "Physical Landforms and Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q6",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q6(i)(a)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q6-i-b",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q6(i)(b)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q6-i-c",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q6(i)(c)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q6-i-d",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q6(i)(d)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q6-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q6(ii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q7",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q7(i)",
+      "title": "Weather Charts",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q7-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q7(ii)",
+      "title": "Weather Charts",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q8",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q8",
+      "title": "Weathering and Erosion",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q9",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q9(i)",
+      "title": "Economic Activities",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q9-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q9(ii)",
+      "title": "Economic Activities",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q9-iii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q9(iii)",
+      "title": "Economic Activities",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q9-iv",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q9(iv)",
+      "title": "Economic Activities",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q10",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q10",
+      "title": "Satellite Image Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q11",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q11(i)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q11-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q11(ii)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q11-iii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q11(iii)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q11-iv",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q11(iv)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q11-v",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q11(v)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p1-q12",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2016 OL Part 1 Q12",
+      "title": "Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q1a",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q1A(i)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q1a-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q1A(ii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q1a-iii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q1A(iii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q1a-iv",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q1A(iv)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q1a-v",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q1A(v)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q1a-vi",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q1A(vi)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q1a-vii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q1A(vii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q1b-route-i",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q1B",
+      "title": "Landform Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q1c-river-processes",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q1C",
+      "title": "Human Interaction with Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q2a",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q2A",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q2b",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q2B(i)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q2b-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q2B(ii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q2b-iii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q2B(iii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q2b-iv",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q2B(iv)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q2c",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q2C(i)",
+      "title": "Weathering",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q2c-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q2C(ii)",
+      "title": "Weathering",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q3a",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q3A(i)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q3a-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q3A(ii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q3a-iii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q3A(iii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q3a-iv",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q3A(iv)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q3a-v",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q3A(v)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q3a-vi",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q3A(vi)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q3b-quarrying",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q3B",
+      "title": "Human Interaction with the Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q3c",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q3C(i)",
+      "title": "Karst Landscape",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q3c-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q3C(ii)",
+      "title": "Karst Landscape",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q4a",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q4A",
+      "title": "Continental / Sub-Continental Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q4b",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q4B(i)",
+      "title": "Agriculture in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q4b-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q4B(ii)",
+      "title": "Agriculture in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q4c",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q4C",
+      "title": "Regions and Culture",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q5a",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q5A(i)",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q5a-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q5A(ii)",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q5a-iii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q5A(iii)",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q5a-iv",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q5A(iv)",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q5b",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q5B",
+      "title": "Economic Activity in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q5c",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q5C",
+      "title": "Urban Growth",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q6a",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q6A(i)",
+      "title": "Tourism in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q6a-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q6A(ii)",
+      "title": "Tourism in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q6a-iii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q6A(iii)",
+      "title": "Tourism in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q6a-iv",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q6A(iv)",
+      "title": "Tourism in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q6a-v",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q6A(v)",
+      "title": "Tourism in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q6b",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q6B",
+      "title": "Manufacturing in a Continental / Sub-Continental Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q6c",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q6C(i)",
+      "title": "Primary Economic Activity in a European Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q6c-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q6C(ii)",
+      "title": "Primary Economic Activity in a European Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q6c-iii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q6C(iii)",
+      "title": "Primary Economic Activity in a European Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q7a",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q7A",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q7b",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q7B(i)",
+      "title": "Environmental Impact - Fossil Fuels",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q7b-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q7B(ii)",
+      "title": "Environmental Impact - Fossil Fuels",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q7c",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q7C(i)",
+      "title": "Multinational Company (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q7c-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q7C(ii)",
+      "title": "Multinational Company (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q7c-iii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q7C(iii)",
+      "title": "Multinational Company (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q8a",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q8A(i)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q8a-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q8A(ii)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q8a-iii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q8A(iii)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q8a-iv",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q8A(iv)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q8a-v",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q8A(v)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q8b-tourism",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q8B(i)",
+      "title": "Developed Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q8b-ii-tourism",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q8B(ii)",
+      "title": "Developed Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q8b-iii-tourism",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q8B(iii)",
+      "title": "Developed Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q8b-iv-tourism",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q8B(iv)",
+      "title": "Developed Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q8c",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q8C(i)",
+      "title": "Economic Activity and Conflict",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q8c-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q8C(ii)",
+      "title": "Economic Activity and Conflict",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q9a",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q9A(i)",
+      "title": "Energy Consumption",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q9a-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q9A(ii)",
+      "title": "Energy Consumption",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q9b",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q9B",
+      "title": "European Union Policy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q9c",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q9C(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q9c-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q9C(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q9c-iii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q9C(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q10a",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q10A",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q10b",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q10B(i)",
+      "title": "Migration – Rural to Urban",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q10b-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q10B(ii)",
+      "title": "Migration – Rural to Urban",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q10c",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q10C(i)",
+      "title": "Urban Functions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q10c-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q10C(ii)",
+      "title": "Urban Functions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q11a",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q11A(i)",
+      "title": "Irish Emigration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q11a-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q11A(ii)",
+      "title": "Irish Emigration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q11b",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q11B",
+      "title": "Development of Urban Settlements",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q11c",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q11C(i)",
+      "title": "Urban Growth - Developing World City",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q11c-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q11C(ii)",
+      "title": "Urban Growth - Developing World City",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q11c-iii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q11C(iii)",
+      "title": "Urban Growth - Developing World City",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q12a",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q12A(i)",
+      "title": "Urban Growth",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q12a-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q12A(ii)",
+      "title": "Urban Growth",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q12a-iii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q12A(iii)",
+      "title": "Urban Growth",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q12a-iv",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q12A(iv)",
+      "title": "Urban Growth",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q12a-v",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q12A(v)",
+      "title": "Urban Growth",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q12b",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q12B(i)",
+      "title": "Overpopulation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q12b-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q12B(ii)",
+      "title": "Overpopulation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q12c",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q12C(i)",
+      "title": "Rural Settlement Patterns",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2016-ol-p2-q12c-ii",
+      "year": 2016,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2016 OL Part 2 Q12C(ii)",
+      "title": "Rural Settlement Patterns",
       "status": "authored"
     },
     {
@@ -22543,6 +23605,15 @@
       "reviewed": true
     },
     {
+      "year": 2016,
+      "level": "ordinary",
+      "paperBaseTasks": 118,
+      "includedBaseTasks": 118,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 128,
+      "reviewed": true
+    },
+    {
       "year": 2017,
       "level": "higher",
       "paperBaseTasks": 110,
@@ -22784,6 +23855,80 @@
         "reviewed-choose-n-of-m"
       ],
       "combinationsAbsorbed": 3
+    },
+    {
+      "questionRef": "2016 OL Part 2 Q1B",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2016 OL Part 2 Q1C",
+      "classification": "finite-expanded",
+      "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2016 OL Part 2 Q3B",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2016 OL Part 2 Q4B(ii)",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
+    },
+    {
+      "questionRef": "2016 OL Part 2 Q5B",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
+    },
+    {
+      "questionRef": "2016 OL Part 2 Q8B(i)",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2016 OL Part 2 Q8B(ii)",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2016 OL Part 2 Q8B(iii)",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2016 OL Part 2 Q8B(iv)",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
     },
     {
       "questionRef": "2017 HL Part 2 Q1C",
