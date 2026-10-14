@@ -41,6 +41,7 @@ describe('service worker precache stays lean', () => {
       '**/pdf.worker*.js', '**/vendor-pdfjs*.js',   // Paper Trail viewer
       '**/DiagramVault*.js',                        // Diagram Vault
       '**/higher-*.js', '**/ordinary-*.js',         // per-subject exam corpora
+      '**/factory-*.js',                            // a subject's shared card module
       '**/catchUpLaneData*.js',                     // Catch-Up Lane
       '**/commandWordData*.js',                     // Command Word Reflex
       '**/vendor-three*.js',                        // 3D module scenes

@@ -130,6 +130,11 @@ export default defineConfig(() => {
         globIgnores: [
           '**/pdf.worker*.js', '**/vendor-pdfjs*.js', '**/DiagramVault*.js',
           '**/higher-*.js', '**/ordinary-*.js',
+          // A Mark Bank subject whose two decks share one card module
+          // (components/MarkBank/cards/{art,english,geography,irish}/factory.ts)
+          // emits that corpus as its own factory-* chunk; it is the same lazy
+          // exam corpus as the higher-*/ordinary-* decks that import it.
+          '**/factory-*.js',
           '**/catchUpLaneData*.js', '**/commandWordData*.js',
           '**/vendor-three*.js',
           // PDF export libraries — only pulled in when a student or GC actually
