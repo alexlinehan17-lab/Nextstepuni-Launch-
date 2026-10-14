@@ -6606,5 +6606,194 @@
     "alt": "SEC 2011 Higher marking scheme notes on the advantages and disadvantages of MHRV (two pages).",
     "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2011-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q1-original.png",
+    "md5": "b16a2164cb233cd5460096d4500b0218",
+    "alt": "Original SEC 2011 Ordinary Construction Studies Question 1: the printed question with a sketch of the triple-glazed casement window in the wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q2-original.png",
+    "md5": "ec31e5d285978186b15d065180e95e99",
+    "alt": "Original SEC 2011 Ordinary Construction Studies Question 2: the printed question with a sketch of the forty-year-old house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q3-original.png",
+    "md5": "d2318c92ecc9cf011ae7ee5997a983eb",
+    "alt": "Original SEC 2011 Ordinary Construction Studies Question 3: the printed question with a sketch of the bathroom with a basin and mixer shower.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q4-original.png",
+    "md5": "67d1518025c921e37666efc355be6d05",
+    "alt": "Original SEC 2011 Ordinary Construction Studies Question 4: the printed question with a sketch of the kitchen layout.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q5-original.png",
+    "md5": "e9108543e1a099ead40b037319baa85e",
+    "alt": "Original SEC 2011 Ordinary Construction Studies Question 5: the printed question with a sketch of the closed string stairs.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q6-original.png",
+    "md5": "17297d3abf3d85a6f888edffdf2024cd",
+    "alt": "Original SEC 2011 Ordinary Construction Studies Question 6: the printed question on fitting a cill, working at height and lathe safety.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q7-original.png",
+    "md5": "d55dc84cb3157ed37d70b4687b048c81",
+    "alt": "Original SEC 2011 Ordinary Construction Studies Question 7: the printed question with an outline of the house, the underground rainwater tank and the attic tank.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q8-original.png",
+    "md5": "501f9434c05e5cd51b4fd3acfd7b508a",
+    "alt": "Original SEC 2011 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q9-original.png",
+    "md5": "c5ef810c4e9f77c379c33c82afdc63a5",
+    "alt": "Original SEC 2011 Ordinary Construction Studies Question 9: the printed question with a sketch of the wooden garden seat.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-OL-q1-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q1-section.png",
+    "md5": "db96e4ff4eaac986635a616d04914f24",
+    "alt": "SEC model section through the window head and lintels in the cavity wall, with the specification list and the flashing and insulation details.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q2-systems": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q2-systems.png",
+    "md5": "4b3ad521f2c088f0cb87122a22634027",
+    "alt": "SEC 2011 Ordinary marking scheme notes and sketches on injecting cavity insulation and fixing internal insulation.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q2-pros-cons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q2-pros-cons.png",
+    "md5": "ac3ee135bb2e31193fdec0105fa6d67e",
+    "alt": "SEC 2011 Ordinary marking scheme notes on the advantages and disadvantages of cavity fill and internal insulation (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q3-system.png",
+    "md5": "55d930006d9144e9686ec2f387e12758",
+    "alt": "SEC single-line diagrams of the hot and cold supply to the basin and mixer shower, with the list of components.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q3-shower": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q3-shower.png",
+    "md5": "e7a695e23b6757194076b48c8fa851c2",
+    "alt": "SEC 2011 Ordinary marking scheme notes on the advantages of a mixer shower over an electric power shower.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q4-cabinets": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q4-cabinets.png",
+    "md5": "21215ba95f8916b13ea5595fef209ac5",
+    "alt": "SEC 2011 Ordinary marking scheme notes and sketches on fixing overhead cabinets to a block wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q4-floor": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q4-floor.png",
+    "md5": "8c84f49da22c9909e457087b0ad87681",
+    "alt": "SEC 2011 Ordinary marking scheme notes and sketches on fitting a solid wood floor and suitable woods.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q4-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q4-layout.png",
+    "md5": "696f2210959d9a052b68024ac4d05d21",
+    "alt": "SEC 2011 Ordinary marking scheme notes on the advantages of the sink, cooker and fridge positions.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q5-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q5-scheme.png",
+    "md5": "9606d707c154a2f41b9b4442ec67aa19",
+    "alt": "SEC model section through the bottom steps of the closed string stairs, with specifications and the anti-creak details.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q6-precautions": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q6-precautions.png",
+    "md5": "8dc9158c63c4ad1927eb423ed3243871",
+    "alt": "SEC 2011 Ordinary marking scheme notes on fitting a precast cill and working at height.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q6-lathe": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q6-lathe.png",
+    "md5": "486b69ee46df58230ca72f6a1cefb5e0",
+    "alt": "SEC 2011 Ordinary marking scheme notes and sketches on wood turning lathe safety.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q7-pump": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q7-pump.png",
+    "md5": "ef04b975d45f3ddfd003a5f0da8d4099",
+    "alt": "SEC 2011 Ordinary marking scheme notes and sketch on pumping rainwater from the underground tank to the attic tank.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q7-appliance": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q7-appliance.png",
+    "md5": "22d955d527efaee201c0ac4260a974e3",
+    "alt": "SEC 2011 Ordinary marking scheme notes and sketch on connecting the toilet or washing machine to the attic rainwater tank.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q7-reason": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q7-reason.png",
+    "md5": "00c256383904d3c206077f98b6f87c83",
+    "alt": "SEC 2011 Ordinary marking scheme notes on why rainwater is stored in a separate attic tank.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q8-terms": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q8-terms.png",
+    "md5": "262f0a9a72e7f868e61b14721e07ed62",
+    "alt": "SEC 2011 Ordinary marking scheme notes and sketches for all nine terms — fascia, window board, solar panel, strip foundation, butt hinge, wall tie, thermostatic valve, rafter and radon barrier (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q9-feature": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q9-feature.png",
+    "md5": "6f7324bd2d04fb69bc3f6983f1aa3066",
+    "alt": "SEC 2011 Ordinary marking scheme notes and sketch on the slatted seat design for outdoor use.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q9-joint": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q9-joint.png",
+    "md5": "86fde486350f158bb404d76ac8bcfffa",
+    "alt": "SEC 2011 Ordinary marking scheme notes and sketch of a mortise and tenon joint for the arm rest.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-OL-q9-finish": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-OL-q9-finish.png",
+    "md5": "5c415bf13660ac800ecc2a41d5bf5077",
+    "alt": "SEC 2011 Ordinary marking scheme notes and sketches on preparing the seat and applying paint, varnish, stain or Danish oil (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }
