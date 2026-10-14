@@ -25,6 +25,14 @@ const decks = readdirSync(CARDS, { withFileTypes: true })
     .map(file => resolve(CARDS, entry.name, file))
     .filter(existsSync)
     .map(path => ({ subject: entry.name, path, text: readFileSync(path, 'utf8') })));
+// Decks generated at runtime (Art, English, Geography, ...) keep their card text in
+// JSON beside the module, so the code-point scan reads those sources too.
+const jsonSources = readdirSync(CARDS, { withFileTypes: true })
+  .filter(entry => entry.isDirectory())
+  .flatMap(entry => readdirSync(resolve(CARDS, entry.name))
+    .filter(file => file.endsWith('.json'))
+    .map(file => resolve(CARDS, entry.name, file)))
+  .map(path => ({ path, text: readFileSync(path, 'utf8') }));
 
 // Identifier fields are keys, never shown; a concept id coined from a misread
 // stem stays as it is so nothing that refers to it is orphaned.
@@ -37,7 +45,8 @@ const escape = (word: string) => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 describe('Mark Bank ligature glyphs', () => {
   it('no deck, in any subject, ships a ligature glyph code point', () => {
     expect(decks.length).toBeGreaterThan(40);
-    const found = decks.flatMap(({ path, text }) => {
+    expect(jsonSources.map(({ path }) => path.split('/cards/')[1])).toContain('art/authored.json');
+    const found = [...decks, ...jsonSources].flatMap(({ path, text }) => {
       const hits = [...new Set(text.match(LIGATURE_CODEPOINTS) ?? [])];
       return hits.length ? [`${path.split('/cards/')[1]}: ${hits.map(label).join(' ')}`] : [];
     });

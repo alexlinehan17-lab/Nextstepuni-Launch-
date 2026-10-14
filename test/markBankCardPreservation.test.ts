@@ -801,6 +801,33 @@ const idHash = (ids: readonly string[]) => createHash('sha256')
   .update([...ids].sort().join('\n'))
   .digest('hex');
 
+/* Art keeps its 462 pre-collapse IDs frozen (222 Higher + 240 Ordinary, the
+ * original identity hashes above). The one-card-per-printed-task rule withdraws
+ * the per-option cards of a printed choice whose options share one Topic Atlas
+ * heading, and every choose-two route; each withdrawn ID is an explicit
+ * cardAliases.ts key resolving in one step to the card for its own part, so the
+ * frozen identity = live 2021–2025 Art IDs + Art alias keys. Every other
+ * year's papers (2026, and 2020 back towards 2010) are added on top
+ * (ART_ADDED below), never folded into the frozen hashes. */
+const artAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('art-'));
+const ART_ADDED: Record<number, { higher: number; ordinary: number }> = {
+  2026: { higher: 26, ordinary: 26 },
+  2020: { higher: 62, ordinary: 57 },
+  2019: { higher: 62, ordinary: 57 },
+  2018: { higher: 62, ordinary: 57 },
+  2017: { higher: 62, ordinary: 57 },
+  2016: { higher: 62, ordinary: 57 },
+  2015: { higher: 63, ordinary: 57 },
+  2014: { higher: 65, ordinary: 57 },
+  2013: { higher: 64, ordinary: 68 },
+  2012: { higher: 55, ordinary: 55 },
+  2011: { higher: 59, ordinary: 57 },
+  2010: { higher: 58, ordinary: 57 },
+};
+const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED;
+const artAdded = (level: 'higher' | 'ordinary') => Object.values(ART_ADDED)
+  .reduce((sum, counts) => sum + counts[level], 0);
+
 /* Additive, alias-aware decks: the frozen set is pinned with main's own count and
  * hash, and reviewed additions are pinned separately, so a deliberate change to
  * the additions can never rewrite or hide a frozen identity. */
@@ -827,9 +854,14 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
-  if (!name.startsWith('physical-education:')) return ids;
   const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
-  return [...ids.filter(id => peFrozen.has(id)), ...peAliasIds.filter(id => id.includes(level))];
+  if (name.startsWith('art:')) {
+    return [...ids.filter(id => !isArtAdded(id)), ...artAliasIds.filter(id => id.includes(level))];
+  }
+  if (name.startsWith('physical-education:')) {
+    return [...ids.filter(id => peFrozen.has(id)), ...peAliasIds.filter(id => id.includes(level))];
+  }
+  return ids;
 };
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
@@ -855,6 +887,38 @@ describe('Mark Bank card preservation', () => {
     expect(idHash(additions)).toBe(hash);
   });
 
+  it('collapses each Art printed choice to one card and resolves every withdrawn ID', () => {
+    const higher = new Map(ART_HIGHER.map(card => [card.id, card]));
+    const ordinary = new Map(ART_ORDINARY.map(card => [card.id, card]));
+    expect(artAliasIds).toHaveLength(68);
+    for (const oldId of artAliasIds) {
+      const canonical = CARD_ID_ALIASES[oldId];
+      const deck = oldId.includes('-hl-') ? higher : ordinary;
+      expect(higher.has(oldId) || ordinary.has(oldId), `${oldId} should be withdrawn`).toBe(false);
+      expect(deck.has(canonical), `${oldId} -> ${canonical} must be live at the same level`).toBe(true);
+      expect(canonical in CARD_ID_ALIASES, `${oldId} must resolve in one step`).toBe(false);
+      expect(canonical.slice(0, 12), `${oldId} must stay in its year and level`).toBe(oldId.slice(0, 12));
+    }
+    const aliased = (level: string) => artAliasIds.filter(id => id.includes(level)).length;
+    expect([aliased('-hl-'), aliased('-ol-')]).toEqual([20, 48]);
+    expect(ART_HIGHER).toHaveLength(222 - aliased('-hl-') + artAdded('higher'));
+    expect(ART_ORDINARY).toHaveLength(240 - aliased('-ol-') + artAdded('ordinary'));
+  });
+
+  it('adds each further Art year on top of the frozen 2021–2025 identity', () => {
+    // No added id was ever aliased or frozen; each is a new card for a printed task.
+    const cards = [...ART_HIGHER, ...ART_ORDINARY];
+    for (const [year, counts] of Object.entries(ART_ADDED)) {
+      const added = cards.filter(card => card.year === Number(year));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+      expect(added.every(card => card.id.startsWith(`art-${year}-`))).toBe(true);
+    }
+    expect(artAliasIds.filter(isArtAdded)).toEqual([]);
+    expect(cards.filter(card => !isArtAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
+      .toBe(true);
+  });
+
   it('protects the complete current bank', () => {
     // 10,495 before this session, plus sixteen subjects carded in six waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
@@ -873,12 +937,16 @@ describe('Mark Bank card preservation', () => {
     // Business and French keep their original card sets frozen (checked per
     // deck above); their reviewed additions are counted on top of the bank.
     // Business: 2010-2026 source-reviewed additions (2026-10-14), 1,382.
+    // Art (2026-10-14): its 462 frozen 2021-2025 cards become one card per
+    // printed task (68 per-option IDs withdrawn onto aliases) and 2010-2020
+    // and 2026 are added on top: - 68 + 1,362.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
+    const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => total + cards.length - businessAdded(name, cards), 0))
-      .toBe(22_970 + frenchAdditionIds.size);
+      .toBe(22_970 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(22_970 + frenchAdditionIds.size + businessAdditionIds.size);
+      .toBe(22_970 + frenchAdditionIds.size + businessAdditionIds.size + artNet);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -918,7 +986,8 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(54);
+    // 54 earlier consolidations + 68 Art per-option cards (2026-10-12).
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(122);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -963,7 +1032,11 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:')
         && !name.startsWith('politics-and-society:') && !name.startsWith('accounting:'))
-      .reduce((total, [name, cards]) => total + (name.startsWith('business:') ? frozenIds(name, cards).length : cards.length), 0);
+      // Business additions and the added Art years are new cards, not part of
+      // this earlier bank.
+      .reduce((total, [name, cards]) => total + (name.startsWith('business:') ? frozenIds(name, cards).length
+        : name.startsWith('art:') ? cards.filter(card => !isArtAdded(card.id)).length
+          : cards.length), 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
 
@@ -979,13 +1052,15 @@ describe('Mark Bank card preservation', () => {
       .toBe('2f6f346262b91ac1385b55c194b7940d927c207403fa00c0ada08e087fd227a9');
   });
 
-  it('adds the Art choose-two routes without replacing any existing card id', () => {
-    const correctionIds = new Set(ART_ORDINARY
-      .filter(card => card.questionRef.startsWith('2025 OL Q4(a)')
-        && card.id !== 'art-2025-ol-q4-a')
-      .map(card => card.id));
-    expect(correctionIds.size).toBe(9);
-    expect(identityHash(ART_ORDINARY.filter(card => !correctionIds.has(card.id))))
+  it('added the Art choose-two routes without replacing an id, and withdrew them onto Q4(a)', () => {
+    // The nine heading-pair routes were added on top of the original Ordinary
+    // identity; one card per printed task now withdraws them onto
+    // art-2025-ol-q4-a, so they live on as alias keys of the frozen set.
+    const frozen = frozenIds('art:ordinary', ART_ORDINARY);
+    const routes = new Set(frozen.filter(id => id.startsWith('art-2025-ol-q4-a-')));
+    expect(routes.size).toBe(9);
+    for (const id of routes) expect(CARD_ID_ALIASES[id]).toBe('art-2025-ol-q4-a');
+    expect(idHash(frozen.filter(id => !routes.has(id))))
       .toBe('e5403f6e685e0133ad94ef321f97a77f96127c2ee3570395e00662d7719ddbd5');
   });
 });

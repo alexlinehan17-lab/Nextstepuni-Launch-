@@ -180,7 +180,7 @@ export const IRISH_STRANDS: StrandRef[] = irishCurriculum.strands.map(strand => 
  * their canonical curriculum ids while omitting Research/Create/Respond rows,
  * which belong to coursework and the practical examination rather than this
  * complete written-paper deck. `art-6-4` is the registry's catch-all filing
- * bucket, not another examinable content area; every 2021–2025 question has a
+ * bucket, not another examinable content area; every 2021–2026 question has a
  * more specific home, so showing it as “Being built” would falsely make this
  * complete corpus look unfinished.
  */
