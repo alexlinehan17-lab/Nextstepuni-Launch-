@@ -1455,7 +1455,7 @@
     "english-2017-hl-p1-t1-a-iii": {
       "questionSha256": "5e4d93effb7573311c63251ac33fb1b016cf03ec766bfbfc264c89b6f3c2429f",
       "kind": "required",
-      "reason": "Setting/atmosphere, poems and visual impact are required headings in one comparison of BOTH images, not optional choices."
+      "reason": "Scheme PDF5: a comparison of the two images addressing setting and atmosphere, the poems and the visual impact — all required, “although not necessarily equally”. One 20-mark response."
     },
     "english-2017-ol-p1-t1-a-ii": {
       "questionSha256": "0129d08c472dceb6dfcd48a0556fa083e760cc3bd7a53d5ab136b63bdb6fa3c4",
@@ -2223,17 +2223,17 @@
     "english-2017-hl-p1-t1-b": {
       "questionSha256": "bcbd8b3ae5dac82daf81ce329f99d83ee18ac1771538c6caf6a866562923e3e9",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF6: a school-website article explaining the choice of three poems or extracts, ideas for their display and the intended impact; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 50-mark response."
     },
     "english-2017-hl-p1-t2-b": {
       "questionSha256": "34e8b8c9880f771f1d496d49d714b9fa05f2d66ee8d0e188f13b57de17868faf",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF9: an opinion piece on reliance on the online world for news, the reliability of these sources and the impact on society; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 50-mark response."
     },
     "english-2017-hl-p1-t3-b": {
       "questionSha256": "320efa525d754740ea65e0a92819e99fe41c81c99f120440f47c210cd0c93552",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF12: a radio text reflecting on the world of childhood, what captured the candidate’s imagination, and songs, sounds or stories that live on; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 50-mark response."
     },
     "english-2017-ol-p1-t1-b": {
       "questionSha256": "5e1690edc130824db5652437f5182cc39b6607691e07c339761c17bf88c1a0d3",
@@ -3614,37 +3614,37 @@
     "english-2017-hl-p1-composing-1": {
       "questionSha256": "1abf20f93db96cff9c14d1ba3b5a1ff7973ce4005a8117a0e544ac945a6e79b3",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF14: a discursive essay on the positive and negative aspects of different types of advertising. One 100-mark composition."
     },
     "english-2017-hl-p1-composing-2": {
       "questionSha256": "d5c84edaab5f0ba2500c1c7991b2f22e68f5e772a43cf2f3009b97a74cc32ff1",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF15: a descriptive essay entitled Night Scene. One 100-mark composition."
     },
     "english-2017-hl-p1-composing-3": {
       "questionSha256": "41347f06572cc0dabea7a2fc5ad18c778b777c13c5a7c0b137326ef657ea307d",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF16: a speech to a World Youth Conference on how democracy can be supported today. One 100-mark composition."
     },
     "english-2017-hl-p1-composing-4": {
       "questionSha256": "3c0c0da379a0b275b8a53db9c737e31465ceddc97b2e231cdae6a5a6cb752f56",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF17: a short story in which a tattoo plays an important part. One 100-mark composition."
     },
     "english-2017-hl-p1-composing-5": {
       "questionSha256": "cda1271fe84a4e084788a1eb84b05770df2d3fee00f7bc27e8621044bcc6ff0f",
       "kind": "flexible",
-      "reason": "Optional register, perspective or number of examples remains flexible; the paper does not require an exclusive fixed-size selection from named options."
+      "reason": "Scheme PDF18: a dramatic dialogue promoting the newly invented wheel; “the drama may be humorous or serious or both” is a free register. One 100-mark composition."
     },
     "english-2017-hl-p1-composing-6": {
       "questionSha256": "bb442b6ce94900e2a7f8eb900336d824a74dcc329fc2dc337b0db4e45ff1e93c",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF19: a personal essay reflecting on moments of insight and revelation. One 100-mark composition."
     },
     "english-2017-hl-p1-composing-7": {
       "questionSha256": "7b2e8f7bb7526d3fb33bd81fa70d1e0c23e133e649f83613ce679cd071d09b78",
       "kind": "open",
-      "reason": "The discursive article considers whether scientists or writers/artists contribute more. It allows a reasoned, qualified comparison rather than demanding one of two formal debate positions."
+      "reason": "Scheme PDF20: an article on whether scientists or writers and artists have made the greater contribution; “Candidates may choose to consider both aspects … or may decide to write in favour of” either — one discussion on one grid. One 100-mark composition."
     },
     "english-2017-ol-p1-composing-1": {
       "questionSha256": "353e2c762dfb5a988c0560e08ba0c5a1004c4a324af3b14b9a2a8c60f92f3c54",
@@ -17835,6 +17835,46 @@
       "questionSha256": "1025057e8532b977bf59dee8980a807cfb577594831526ffc7af136b37151643",
       "kind": "open",
       "reason": "Scheme PDF46: a description in the candidate’s own words. One 10-mark response."
+    },
+    "english-2017-hl-p1-t1-a-i": {
+      "questionSha256": "c0e8b95b07735f1726233b274130b537ebf162aaf142350ae3bff266c6fae102",
+      "kind": "open",
+      "reason": "Scheme PDF4: what the candidate learns about Robert Montgomery’s approach to poetry, from the visual and written elements, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2017-hl-p1-t1-a-ii": {
+      "questionSha256": "d9beab3d7bcbe83329aa6f095de6521559da476d4442658edf97c6d9b60064a5",
+      "kind": "open",
+      "reason": "Scheme PDF5: the candidate’s opinion on the extent to which they have or have not benefitted from poetry at school, with “two or more reasons”; “Allow for a wide range of views on the subject.” One 15-mark response."
+    },
+    "english-2017-hl-p1-t2-a-i": {
+      "questionSha256": "63cf41057772fef53097fc74ada0c34c6d1edd7f2d9e46ab7b11001e45040815",
+      "kind": "open",
+      "reason": "Scheme PDF7: what the candidate learns about the impact of developments in technology on modern communication, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2017-hl-p1-t2-a-ii": {
+      "questionSha256": "13509d1ea0baf2e10ecf5eb79cd1241f15e1dc21cd0d9d8b82cd9801424da0f8",
+      "kind": "open",
+      "reason": "Scheme PDF7: the candidate’s opinion on what schools should do to promote the appropriate use of free speech, with “two or more reasons”; “Allow for a wide variety of responses.” One 15-mark response."
+    },
+    "english-2017-hl-p1-t2-a-iii": {
+      "questionSha256": "aab8058b95bd7bac08e7fcd08a955e8e00d05d993e6763cdbfa6de69416ce663",
+      "kind": "open",
+      "reason": "Scheme PDF8: “Expect candidates to agree or disagree (wholly or in part)” with the statement, discussing how effectively the languages of argument and persuasion (“not necessarily equally or separately”) convince readers. One 20-mark response."
+    },
+    "english-2017-hl-p1-t3-a-i": {
+      "questionSha256": "5f3c4fd5e9191e4a0c84abf57c770097d0220480cf60162cae4b9c7ebd8c9cde",
+      "kind": "open",
+      "reason": "Scheme PDF10: what the candidate learns about the characteristics of a child’s world conveyed by Paul Auster, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2017-hl-p1-t3-a-ii": {
+      "questionSha256": "302403ffaff9906f2ebf2cf0895533567cd24899b725bd3cd82729192390e6b3",
+      "kind": "open",
+      "reason": "Scheme PDF10: the candidate’s opinion on whether there is a “best age” to be, with “two or more reasons”; “Allow for a wide range of responses.” One 15-mark response."
+    },
+    "english-2017-hl-p1-t3-a-iii": {
+      "questionSha256": "0a01a3b2cac6c48d3bae88201eed5e7eed5e6241078d2dd2ecee670bff3de672",
+      "kind": "open",
+      "reason": "Scheme PDF11: “Expect candidates to agree or disagree (wholly or in part)” with the statement, discussing how effectively aesthetic language creates a charming and reflective memoir. One 20-mark response."
     }
   }
 }

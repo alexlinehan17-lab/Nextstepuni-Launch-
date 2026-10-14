@@ -26,9 +26,26 @@ class EnglishPaperGateTest(unittest.TestCase):
         self.assertFalse(any(report['pending'].values()))
 
     def test_unreviewed_paper_is_refused_with_its_pending_work(self):
-        with self.assertRaisesRegex(ValueError, 'refused by its own gate'):
-            self.gate('english-2017-hl-p1', strict=True)
-        report, _ = self.gate('english-2017-hl-p1', strict=False)
+        # Item 5 reviews every English-language paper, so no unreviewed paper is left to point at:
+        # strip one reviewed paper's scheme and visual reviews to recreate the unreviewed state.
+        import english_review_gate as gate_module
+        key, real_read = 'english-2017-hl-p1', gate_module.read
+        self.gate(key, strict=True)
+
+        def unreviewed(name):
+            data = real_read(name)
+            if name == 'english-task-review.json':
+                data['tasks'] = {tid: d for tid, d in data['tasks'].items() if not tid.startswith(key + '-')}
+            if name == 'english-visual-review.json':
+                for entry in data['papers']:
+                    if entry['paperId'] == key:
+                        entry['visualSweepComplete'] = False
+            return data
+
+        with mock.patch.object(gate_module, 'read', unreviewed):
+            with self.assertRaisesRegex(ValueError, 'refused by its own gate'):
+                self.gate(key, strict=True)
+            report, _ = self.gate(key, strict=False)
         self.assertTrue(report['pending']['schemeTasks'])
         self.assertTrue(report['pending']['paperReviews'])
 

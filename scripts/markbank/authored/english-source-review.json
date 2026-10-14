@@ -4747,6 +4747,114 @@
       "attribution": "Mother, Washing Dishes — Susan Meyers, as reproduced in the SEC 2016 paper.",
       "questionSha256": "58ad53d4d4590cb249594f8794ced4974af0e41d742357a3c7c1ef9491c50b33",
       "reason": "Paper PDF10 prints the introduction (Susan Meyers remembers her mother’s willingness to wash dishes), the instruction, the title, both stanzas and the byline above both questions; visually verified. PDF11 begins Prescribed Poem A and is excluded."
+    },
+    "english-2017-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "The World of Poetry",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Two images of Robert Montgomery’s work (IMAGE 1, Bexhill-on-Sea; IMAGE 2, Trafalgar Square) and Marta Bausells, The Medium is the Message – The Power of Public Poetry, edited from The Guardian (PDF2–3). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "c0e8b95b07735f1726233b274130b537ebf162aaf142350ae3bff266c6fae102",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2017-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "The World of Poetry",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Two images of Robert Montgomery’s work (IMAGE 1, Bexhill-on-Sea; IMAGE 2, Trafalgar Square) and Marta Bausells, The Medium is the Message – The Power of Public Poetry, edited from The Guardian (PDF2–3). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "d9beab3d7bcbe83329aa6f095de6521559da476d4442658edf97c6d9b60064a5",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2017-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "The World of Poetry",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Two images of Robert Montgomery’s work (IMAGE 1, Bexhill-on-Sea; IMAGE 2, Trafalgar Square) and Marta Bausells, The Medium is the Message – The Power of Public Poetry, edited from The Guardian (PDF2–3). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "5e4d93effb7573311c63251ac33fb1b016cf03ec766bfbfc264c89b6f3c2429f",
+      "reason": "The task compares “the two images … on Page 2” (IMAGE 1 and IMAGE 2, PDF2); the whole of TEXT 1 (PDF2–3) is retained."
+    },
+    "english-2017-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Connected World",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Timothy Garton Ash — edited extracts from Free Speech – Ten Principles for a Connected World, with an image (PDF4–5). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "63cf41057772fef53097fc74ada0c34c6d1edd7f2d9e46ab7b11001e45040815",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2017-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Connected World",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Timothy Garton Ash — edited extracts from Free Speech – Ten Principles for a Connected World, with an image (PDF4–5). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "13509d1ea0baf2e10ecf5eb79cd1241f15e1dc21cd0d9d8b82cd9801424da0f8",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2017-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Connected World",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Timothy Garton Ash — edited extracts from Free Speech – Ten Principles for a Connected World, with an image (PDF4–5). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "aab8058b95bd7bac08e7fcd08a955e8e00d05d993e6763cdbfa6de69416ce663",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2017-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The World of Childhood",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Paul Auster — edited extract from his memoir Report from the Interior, with the book cover (PDF6–7). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "5f3c4fd5e9191e4a0c84abf57c770097d0220480cf60162cae4b9c7ebd8c9cde",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2017-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The World of Childhood",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Paul Auster — edited extract from his memoir Report from the Interior, with the book cover (PDF6–7). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "302403ffaff9906f2ebf2cf0895533567cd24899b725bd3cd82729192390e6b3",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2017-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The World of Childhood",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Paul Auster — edited extract from his memoir Report from the Interior, with the book cover (PDF6–7). As reproduced in the SEC 2017 paper.",
+      "questionSha256": "0a01a3b2cac6c48d3bae88201eed5e7eed5e6241078d2dd2ecee670bff3de672",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
     }
   }
 }

@@ -158,6 +158,17 @@
    "schemeSha256": "a70bbdafde8f03a842b8b52b2c151894daa86697db73aa83730ef7b00c3e5d49"
   },
   {
+   "paperId": "english-2017-hl-p1",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "tasks": 19,
+   "cards": 19,
+   "printedDuplicates": 0,
+   "paperSha256": "e261c6bc026da5aa11bc71ca82005295a4dc2041a02542f7054580974a7937b1",
+   "schemeSha256": "b2bcd5afd1e1952d5bcd5ddfe261c0a8e5e6b44ae90b1e0392fee7833f9dfe51"
+  },
+  {
    "paperId": "english-2016-hl-p1",
    "year": 2016,
    "level": "higher",
@@ -977,6 +988,16 @@
     },
     "capRulePage": 3
    },
+   "2017-higher": {
+    "family": "hl-h1-h8",
+    "gridPages": [
+     46
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2018-higher": {
     "family": "hl-h1-h8",
     "gridPages": [
@@ -1299,7 +1320,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 612,
+ "cardCount": 631,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -12584,6 +12605,707 @@
    "atlas": {
     "fileid": "LC002ALP200EV.pdf",
     "n": "4"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-t1-a-i",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Text 1 QA(i)",
+   "questionText": "Based on your reading of TEXT 1 (images and written text), what do you learn about Robert Montgomery’s approach to poetry? Support your answer with reference to TEXT 1.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "The World of Poetry",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Two images of Robert Montgomery’s work (IMAGE 1, Bexhill-on-Sea; IMAGE 2, Trafalgar Square) and Marta Bausells, The Medium is the Message – The Power of Public Poetry, edited from The Guardian (PDF2–3). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    4
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-t1-a-ii",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Text 1 QA(ii)",
+   "questionText": "Robert Montgomery believes that poetry can be of benefit to society. In your opinion, have you benefitted from engaging with poetry during your time at school? Give reasons for your answer.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "The World of Poetry",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Two images of Robert Montgomery’s work (IMAGE 1, Bexhill-on-Sea; IMAGE 2, Trafalgar Square) and Marta Bausells, The Medium is the Message – The Power of Public Poetry, edited from The Guardian (PDF2–3). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-t1-a-iii",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Text 1 QA(iii)",
+   "questionText": "Compare the two images featuring Robert Montgomery’s work that appear on Page 2. You should address the following in the course of your answer: setting and atmosphere, the poems, the visual impact of the images. Support your answer with reference to both images.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "The World of Poetry",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Two images of Robert Montgomery’s work (IMAGE 1, Bexhill-on-Sea; IMAGE 2, Trafalgar Square) and Marta Bausells, The Medium is the Message – The Power of Public Poetry, edited from The Guardian (PDF2–3). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-t1-b",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Text 1 QB",
+   "questionText": "Your school Principal has agreed to your suggestion to display three poems, or extracts from three poems, on the 2017 Leaving Certificate Higher Level English poetry course, in your school. You have been asked to choose the poetry and decide how and where it will be displayed. Write an article for your school’s website in which you explain your choice of poetry, your ideas for its display and the impact you hope this project will have on the school community.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-t2-a-i",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Text 2 QA(i)",
+   "questionText": "Based on your reading of TEXT 2, what do you learn about the impact of developments in technology on modern communication? Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "A Connected World",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Timothy Garton Ash — edited extracts from Free Speech – Ten Principles for a Connected World, with an image (PDF4–5). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-t2-a-ii",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Text 2 QA(ii)",
+   "questionText": "In your opinion, what should schools do to promote the appropriate use of free speech in society? Give reasons for your answer.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "A Connected World",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Timothy Garton Ash — edited extracts from Free Speech – Ten Principles for a Connected World, with an image (PDF4–5). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-t2-a-iii",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Text 2 QA(iii)",
+   "questionText": "“Professor Garton Ash makes effective use of the languages of argument and persuasion to convince readers that today’s society needs more and better free speech.“ Do you agree with the above statement? Support your answer with reference to Professor Garton Ash’s use of the languages of argument and persuasion in the above text to convince readers that today’s society needs more and better free speech.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "A Connected World",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Timothy Garton Ash — edited extracts from Free Speech – Ten Principles for a Connected World, with an image (PDF4–5). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-t2-b",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Text 2 QB",
+   "questionText": "The views people hold today are often influenced by the news and information they receive from the online world of the internet and social media. Write an opinion piece, for publication in a national newspaper, in which you give your views on the extent to which people today rely on the online world as a source of news and information, the reliability of these sources and the impact of this development on society.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-t3-a-i",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Text 3 QA(i)",
+   "questionText": "What characteristics of a child’s world does Paul Auster convey in the above extract? Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "The World of Childhood",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Paul Auster — edited extract from his memoir Report from the Interior, with the book cover (PDF6–7). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-t3-a-ii",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Text 3 QA(ii)",
+   "questionText": "In the extract above Paul Auster states that “six is far and away the best age anyone can be”. In your opinion, is there a “best age” to be? Give reasons for your answer.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "The World of Childhood",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Paul Auster — edited extract from his memoir Report from the Interior, with the book cover (PDF6–7). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-t3-a-iii",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Text 3 QA(iii)",
+   "questionText": "“Paul Auster makes effective use of aesthetic language to create a charming and reflective memoir.” Based on your reading of the above extract, do you agree with this statement? Support your answer with reference to Paul Auster’s use of aesthetic language in the above text to create a charming and reflective memoir.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "The World of Childhood",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Paul Auster — edited extract from his memoir Report from the Interior, with the book cover (PDF6–7). As reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-t3-b",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Text 3 QB",
+   "questionText": "You have been asked to participate in a radio programme entitled Reflections on the World of Childhood. Write the text to be broadcast on radio, in which you reflect on the world of your childhood, discuss what captured your childish imagination, and recall a selection of the songs or sounds or stories that live on in your memory.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-composing-1",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Composing 1",
+   "questionText": "Robert Montgomery, whose work features in TEXT 1, sometimes uses advertising billboards to display his work. Write a discursive essay in which you explore the positive and negative aspects of different types of advertising.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-discursive",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested discursive essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-composing-2",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Composing 2",
+   "questionText": "In TEXT 3, Paul Auster describes the stars as, “benign and beautiful presences hovering in the night.” Write a descriptive essay entitled Night Scene.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-composing-3",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Composing 3",
+   "questionText": "In TEXT 2, Timothy Garton Ash quotes an English judge, ‘‘freedom of speech is the lifeblood of democracy”. Write a speech, to be delivered to a World Youth Conference, in which you give your views on how democracy can be supported in the world today.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested speech.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-composing-4",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Composing 4",
+   "questionText": "We learn in Text 1 that fans have been tattooed with Robert Montgomery’s poetic words. Write a short story in which a tattoo plays an important part in the narrative.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-composing-5",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Composing 5",
+   "questionText": "Timothy Garton Ash alludes to the invention of the wheel in TEXT 2. Imagine it is the Stone Age and you have just invented the wheel. Write a dialogue in dramatic form, in which you introduce and promote your new invention to your sceptical friends and neighbours. Your drama may be humorous or serious or both.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-composing-6",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Composing 6",
+   "questionText": "In TEXT 3, Paul Auster describes a moment of revelation he experienced one Saturday morning when he was six years old. Write a personal essay in which you reflect on moments of insight and revelation you have experienced.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2017-hl-p1-composing-7",
+   "year": 2017,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2017 HL Paper 1 Composing 7",
+   "questionText": "TEXT 1 and TEXT 3 feature the work of a poet and a novelist. Write an article for a serious publication in which you consider whether scientists or writers and artists have made, and continue to make, the greater contribution to society.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "7"
    }
   },
   {
