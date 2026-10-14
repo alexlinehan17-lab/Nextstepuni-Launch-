@@ -2311,9 +2311,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       // Except on a matching or true/false card, where the scheme's whole answer
       // IS the prefix's tail — a letter or a verdict. "e · a · d" and
       // "false · false · false" name nothing; there the label is the content.
+      // Case is kept as printed: a gamete "R" is not "r", nor "C H O" "c h o".
       .map(r => {
         const tail = r.verbatim.split(/\s[—-]\s/).pop() ?? r.verbatim;
-        return (tail.trim().length <= 6 ? r.verbatim : tail).toLowerCase();
+        return tail.trim().length <= 6 ? r.verbatim : tail;
       });
   }, [assessmentCard, rowClaims]);
   /* Three names fit the band; beyond that the count carries it. Naming all six
