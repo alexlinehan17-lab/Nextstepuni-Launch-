@@ -163,6 +163,24 @@ try {
     assert.equal(await frame.getByText('These tools are for exam nerves.',{exact:false}).count(),0,'Removed support advice stays absent');
   }
 
+  // Opening a long select (Mark Bank's subjects) scrolled the whole page to the
+  // bottom: the menu's first frame sat at the end of <body> while the selected
+  // option took focus (index.css, 2026-10-14).
+  await open('view=innovation-zone&tool=mark-bank', 1024, 'light', '[aria-label="Choose subject"]', true);
+  const pickerBefore = await frame.evaluate(() => window.scrollY);
+  await frame.getByRole('combobox', { name: 'Choose subject' }).click();
+  await frame.locator('[data-slot=select-content]').waitFor();
+  await page.waitForTimeout(600);
+  const picker = await frame.evaluate(() => {
+    const trigger = document.querySelector('[aria-label="Choose subject"]').getBoundingClientRect();
+    const menu = document.querySelector('[data-slot=select-content]').getBoundingClientRect();
+    return { scrollY: window.scrollY, gap: menu.top - trigger.bottom, inView: menu.bottom <= window.innerHeight + 1 };
+  });
+  assert.equal(picker.scrollY, pickerBefore, 'Opening the subject picker leaves the page where it was');
+  assert.ok(picker.gap >= 0 && picker.gap < 12 && picker.inView, `Subject menu opens under its trigger and on screen (${JSON.stringify(picker)})`);
+  await capture('mark-bank-subject-picker', 1024, 'light');
+  await page.keyboard.press('Escape');
+
   await open('view=tree', 1024, 'dark', '.student-home', true);
   assert.equal(await frame.locator('.student-sidebar-shell').count(), 0, 'Tablets keep the established mobile app navigation');
   await capture('tablet-home', 1024, 'dark');
