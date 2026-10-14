@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import type { PDFDocumentLoadingTask, RenderTask } from 'pdfjs-dist';
-import { loadPdfjs } from './pdfjsLoader';
+import { loadPdfjs, openPdfDocument } from './pdfjsLoader';
 
 // Cache only small rendered covers, never keep a PDF worker document alive.
 const covers = new Map<string, string>();
@@ -25,7 +25,7 @@ export default function PaperCover({ url, image = false, renderWidth = 160 }: { 
         if (disposed) return;
         // Use range requests and disable prefetch: a cover should not
         // download a whole multi-megabyte paper on a student's mobile data.
-        task = pdfjs.getDocument({ url, disableAutoFetch: true, disableStream: true });
+        task = openPdfDocument(pdfjs, { url, disableAutoFetch: true, disableStream: true });
         timeout = window.setTimeout(() => { void task?.destroy().catch(() => {}); }, 15000);
         const pdf = await task.promise;
         if (disposed) return;
