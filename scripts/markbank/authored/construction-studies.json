@@ -98466,5 +98466,4020 @@
         ]
       }
     ]
+  },
+  {
+    "id": "cons-2013-hl-q1-a",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "closed-string-stairs-section-a",
+    "questionRef": "2013 HL Q1(a)",
+    "stem": "A closed-string wooden stairs leads to a landing with balustrade, as shown in the sketch. The landing has a hardwood tongued and grooved floor, on 200 mm × 50 mm joists with a plasterboard ceiling beneath. The newel post is 100 mm × 100 mm and the rise of a step should not exceed 175 mm.",
+    "questionText": "To a scale of 1:5, draw a vertical section through the centre of the stairs and through the landing. The section should show the typical construction details through the top three steps of the stairs and the landing, showing the newel post, balusters and handrails to the stairs and landing. Include the typical dimensions of three structural members of the stairs. Show the typical handrail height to stairs and landing. Note: On your drawing, show a 500 mm length of landing.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 56,
+    "rows": [
+      {
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "Any 10 points × 4 marks",
+        "marks": 40,
+        "contextNote": "Best ten points, 4 each (drawing 3, annotation 1). Menu: closed string 250 × 50; string capping; pitch line; riser and rise 175 mm; tread and going 225 mm plus nosing; glue blocks and wedges; newel post 100 × 100; string and handrail jointed to the newel with tenons; balusters 40 × 40 to stairs and landing; 500 mm of landing; handrails 60 × 60 to 120 × 70; trimmer 200 × 75; landing joists 200 × 50 on hangers or notched; hardwood flooring 100 × 20; plasterboard ceiling.",
+        "permittedMarks": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36,
+          40
+        ]
+      },
+      {
+        "id": "dimensions",
+        "kind": "criterion",
+        "verbatim": "Dimensions of 3 structural members (3 × 2 marks)",
+        "marks": 6,
+        "contextNote": "Typical dimensions of three structural members, 2 each, such as the string 250 × 50, the newel post 100 × 100 and the trimmer 200 × 75.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "handrails",
+        "kind": "criterion",
+        "verbatim": "Typical handrail heights (2 × 2 marks)",
+        "marks": 4,
+        "contextNote": "The minimum handrail heights to the stairs and to the landing, 2 each, shown on the drawing.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Scale and Drafting",
+        "marks": 6,
+        "contextNote": "Scale and drafting of the section.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q1-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "Closed-string stairs and landing section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction, dimension, handrail height and scale/drafting marks belong to part (a); the two safety features in (b) are marked separately."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q1-b",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-4-4",
+    "conceptId": "closed-string-stairs-section-b",
+    "questionRef": "2013 HL Q1(b)",
+    "stem": "A closed-string wooden stairs leads to a landing with balustrade, as shown in the sketch. The landing has a hardwood tongued and grooved floor, on 200 mm × 50 mm joists with a plasterboard ceiling beneath. The newel post is 100 mm × 100 mm and the rise of a step should not exceed 175 mm.",
+    "questionText": "Indicate on your drawing two design features that ensure that the stairs is safe for all users.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "feature-1",
+        "kind": "criterion",
+        "verbatim": "Design detail 1",
+        "marks": 2,
+        "contextNote": "Show and identify a safety feature, such as a pitch line of less than 42°.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "feature-2",
+        "kind": "criterion",
+        "verbatim": "Design detail 2",
+        "marks": 2,
+        "contextNote": "A second, different feature, such as balusters spaced so that a 100 mm sphere cannot pass between them, or the minimum handrail heights to the stairs and landing.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q1-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "Closed-string stairs and landing section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction, dimension, handrail height and scale/drafting marks belong to part (a); the two safety features in (b) are marked separately."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q1-complete",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "closed-string-stairs-section-complete",
+    "questionRef": "2013 HL Q1 — complete",
+    "stem": "A closed-string wooden stairs leads to a landing with balustrade, as shown in the sketch. The landing has a hardwood tongued and grooved floor, on 200 mm × 50 mm joists with a plasterboard ceiling beneath. The newel post is 100 mm × 100 mm and the rise of a step should not exceed 175 mm.",
+    "questionText": "(a) To a scale of 1:5, draw a vertical section through the centre of the stairs and through the landing. The section should show the typical construction details through the top three steps of the stairs and the landing, showing the newel post, balusters and handrails to the stairs and landing. Include the typical dimensions of three structural members of the stairs. Show the typical handrail height to stairs and landing. Note: On your drawing, show a 500 mm length of landing.\n\n(b) Indicate on your drawing two design features that ensure that the stairs is safe for all users.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "Any 10 points × 4 marks",
+        "marks": 40,
+        "contextNote": "Best ten points, 4 each (drawing 3, annotation 1). Menu: closed string 250 × 50; string capping; pitch line; riser and rise 175 mm; tread and going 225 mm plus nosing; glue blocks and wedges; newel post 100 × 100; string and handrail jointed to the newel with tenons; balusters 40 × 40 to stairs and landing; 500 mm of landing; handrails 60 × 60 to 120 × 70; trimmer 200 × 75; landing joists 200 × 50 on hangers or notched; hardwood flooring 100 × 20; plasterboard ceiling.",
+        "permittedMarks": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36,
+          40
+        ]
+      },
+      {
+        "id": "a-dimensions",
+        "kind": "criterion",
+        "verbatim": "Dimensions of 3 structural members (3 × 2 marks)",
+        "marks": 6,
+        "contextNote": "Typical dimensions of three structural members, 2 each, such as the string 250 × 50, the newel post 100 × 100 and the trimmer 200 × 75.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-handrails",
+        "kind": "criterion",
+        "verbatim": "Typical handrail heights (2 × 2 marks)",
+        "marks": 4,
+        "contextNote": "The minimum handrail heights to the stairs and to the landing, 2 each, shown on the drawing.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Scale and Drafting",
+        "marks": 6,
+        "contextNote": "Scale and drafting of the section.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-feature-1",
+        "kind": "criterion",
+        "verbatim": "Design detail 1",
+        "marks": 2,
+        "contextNote": "Show and identify a safety feature, such as a pitch line of less than 42°.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "b-feature-2",
+        "kind": "criterion",
+        "verbatim": "Design detail 2",
+        "marks": 2,
+        "contextNote": "A second, different feature, such as balusters spaced so that a 100 mm sphere cannot pass between them, or the minimum handrail heights to the stairs and landing.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q1-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "Closed-string stairs and landing section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction, dimension, handrail height and scale/drafting marks belong to part (a); the two safety features in (b) are marked separately."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2013-hl-q1-a",
+        "label": "a",
+        "marks": 56,
+        "rowIds": [
+          "a-details",
+          "a-dimensions",
+          "a-handrails",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q1-b",
+        "label": "b",
+        "marks": 4,
+        "rowIds": [
+          "b-feature-1",
+          "b-feature-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2013-hl-q2-a",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "site-safety-culture-a",
+    "questionRef": "2013 HL Q2(a)",
+    "stem": "",
+    "questionText": "Discuss in detail the importance of each of the following in the development of a safety culture amongst workers on a construction site: training; vigilance; teamwork.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 27,
+    "rows": [
+      {
+        "id": "training",
+        "kind": "criterion",
+        "verbatim": "Training",
+        "marks": 9,
+        "contextNote": "Such as: awareness of risks on site; accidents minimised through planning and constant risk assessment; the legally required Safe Pass course, renewed every four years; specialist equipment training; mandatory PPE.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "id": "vigilance",
+        "kind": "criterion",
+        "verbatim": "Vigilance",
+        "marks": 9,
+        "contextNote": "Such as: management committed to monitoring safety; a regularly reviewed safety statement; a safety officer assessing risks; reporting of hazards, accidents and near misses; enforcement by the Health and Safety Authority.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "id": "teamwork",
+        "kind": "criterion",
+        "verbatim": "Teamwork",
+        "marks": 9,
+        "contextNote": "Such as: inexperienced workers paired with trained ones; trust and good communication between management and employees; a shared responsibility and a climate of openness; work suited to each worker’s skills.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q2-culture",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Safety culture, ladders, windows and power tools on site",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "All three printed items in (a) and both printed activities in (b) are required, each separately marked."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q2-b",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "site-safety-culture-b",
+    "questionRef": "2013 HL Q2(b)",
+    "stem": "",
+    "questionText": "Identify two possible risks to personal safety associated with each of the following: using a ladder on a construction site; fitting a window in the second storey of a dwelling house. Using notes and freehand sketches as appropriate, outline two specific safety procedures that should be observed to eliminate each risk identified at 2(b) above.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "ladder-risks",
+        "kind": "criterion",
+        "verbatim": "Using a ladder on site Risk 1 Risk 2",
+        "marks": 6,
+        "contextNote": "Two risks, 3 each. Such as: a damaged ladder; a ladder slipping or falling; working near power lines.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "window-risks",
+        "kind": "criterion",
+        "verbatim": "Fitting a window Risk 1 Risk 2",
+        "marks": 6,
+        "contextNote": "Two risks, 3 each. Such as: a fall from height; back injury lifting a heavy window.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "ladder-procedures",
+        "kind": "criterion",
+        "verbatim": "Using a ladder Safety procedure 1 Note & sketch Safety procedure 2 Note & sketch",
+        "marks": 6,
+        "contextNote": "Two procedures, note and sketch, 3 each. Such as: inspect the ladder; secure it at both ends on a firm, level base; three points of contact; extend it at least 1.0 m above the platform at about 74°, the foot a quarter of the height out; wooden ladders near power lines.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "window-procedures",
+        "kind": "criterion",
+        "verbatim": "Fitting a window Safety procedure 1 Note & sketch Safety procedure 2 Note & sketch",
+        "marks": 6,
+        "contextNote": "Two procedures, note and sketch, 3 each. Such as: work from a safe platform such as scaffolding; at most 25 kg lifted per person with the correct lifting procedure; enough people lifting in unison; a cherry picker, teleporter or suction pads.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q2-risks",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Safety culture, ladders, windows and power tools on site",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "All three printed items in (a) and both printed activities in (b) are required, each separately marked."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q2-c",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-9-4",
+    "conceptId": "site-safety-culture-c",
+    "questionRef": "2013 HL Q2(c)",
+    "stem": "",
+    "questionText": "Recommend three best practice guidelines that should be observed when using electrical tools on a construction site.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "guideline-1",
+        "kind": "criterion",
+        "verbatim": "Guideline 1",
+        "marks": 3,
+        "contextNote": "Such as: all power tools on a 110 volt supply, regularly serviced and properly earthed.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "guideline-2",
+        "kind": "criterion",
+        "verbatim": "Guideline 2",
+        "marks": 3,
+        "contextNote": "A second, different guideline. Such as: cables correctly sized, undamaged, waterproof and not a trip hazard; equipment kept covered and dry.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "guideline-3",
+        "kind": "criterion",
+        "verbatim": "Guideline 3",
+        "marks": 3,
+        "contextNote": "A third, different guideline. Such as: insulated footwear, gloves, earmuffs and safety glasses; damaged equipment removed from service for repair.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q2-tools",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Safety culture, ladders, windows and power tools on site",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "All three printed items in (a) and both printed activities in (b) are required, each separately marked."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q2-complete",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "site-safety-culture-complete",
+    "questionRef": "2013 HL Q2 — complete",
+    "stem": "",
+    "questionText": "(a) Discuss in detail the importance of each of the following in the development of a safety culture amongst workers on a construction site: training; vigilance; teamwork.\n\n(b) Identify two possible risks to personal safety associated with each of the following: using a ladder on a construction site; fitting a window in the second storey of a dwelling house. Using notes and freehand sketches as appropriate, outline two specific safety procedures that should be observed to eliminate each risk identified at 2(b) above.\n\n(c) Recommend three best practice guidelines that should be observed when using electrical tools on a construction site.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-training",
+        "kind": "criterion",
+        "verbatim": "Training",
+        "marks": 9,
+        "contextNote": "Such as: awareness of risks on site; accidents minimised through planning and constant risk assessment; the legally required Safe Pass course, renewed every four years; specialist equipment training; mandatory PPE.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "id": "a-vigilance",
+        "kind": "criterion",
+        "verbatim": "Vigilance",
+        "marks": 9,
+        "contextNote": "Such as: management committed to monitoring safety; a regularly reviewed safety statement; a safety officer assessing risks; reporting of hazards, accidents and near misses; enforcement by the Health and Safety Authority.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "id": "a-teamwork",
+        "kind": "criterion",
+        "verbatim": "Teamwork",
+        "marks": 9,
+        "contextNote": "Such as: inexperienced workers paired with trained ones; trust and good communication between management and employees; a shared responsibility and a climate of openness; work suited to each worker’s skills.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "id": "b-ladder-risks",
+        "kind": "criterion",
+        "verbatim": "Using a ladder on site Risk 1 Risk 2",
+        "marks": 6,
+        "contextNote": "Two risks, 3 each. Such as: a damaged ladder; a ladder slipping or falling; working near power lines.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-window-risks",
+        "kind": "criterion",
+        "verbatim": "Fitting a window Risk 1 Risk 2",
+        "marks": 6,
+        "contextNote": "Two risks, 3 each. Such as: a fall from height; back injury lifting a heavy window.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-ladder-procedures",
+        "kind": "criterion",
+        "verbatim": "Using a ladder Safety procedure 1 Note & sketch Safety procedure 2 Note & sketch",
+        "marks": 6,
+        "contextNote": "Two procedures, note and sketch, 3 each. Such as: inspect the ladder; secure it at both ends on a firm, level base; three points of contact; extend it at least 1.0 m above the platform at about 74°, the foot a quarter of the height out; wooden ladders near power lines.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-window-procedures",
+        "kind": "criterion",
+        "verbatim": "Fitting a window Safety procedure 1 Note & sketch Safety procedure 2 Note & sketch",
+        "marks": 6,
+        "contextNote": "Two procedures, note and sketch, 3 each. Such as: work from a safe platform such as scaffolding; at most 25 kg lifted per person with the correct lifting procedure; enough people lifting in unison; a cherry picker, teleporter or suction pads.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-guideline-1",
+        "kind": "criterion",
+        "verbatim": "Guideline 1",
+        "marks": 3,
+        "contextNote": "Such as: all power tools on a 110 volt supply, regularly serviced and properly earthed.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "c-guideline-2",
+        "kind": "criterion",
+        "verbatim": "Guideline 2",
+        "marks": 3,
+        "contextNote": "A second, different guideline. Such as: cables correctly sized, undamaged, waterproof and not a trip hazard; equipment kept covered and dry.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "c-guideline-3",
+        "kind": "criterion",
+        "verbatim": "Guideline 3",
+        "marks": 3,
+        "contextNote": "A third, different guideline. Such as: insulated footwear, gloves, earmuffs and safety glasses; damaged equipment removed from service for repair.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q2-risks",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "Safety culture, ladders, windows and power tools on site",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "All three printed items in (a) and both printed activities in (b) are required, each separately marked."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2013-hl-q2-a",
+        "label": "a",
+        "marks": 27,
+        "rowIds": [
+          "a-training",
+          "a-vigilance",
+          "a-teamwork"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q2-b",
+        "label": "b",
+        "marks": 24,
+        "rowIds": [
+          "b-ladder-risks",
+          "b-window-risks",
+          "b-ladder-procedures",
+          "b-window-procedures"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q2-c",
+        "label": "c",
+        "marks": 9,
+        "rowIds": [
+          "c-guideline-1",
+          "c-guideline-2",
+          "c-guideline-3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2013-hl-q3-a",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "rear-extension-sunlight-a",
+    "questionRef": "2013 HL Q3(a)",
+    "stem": "The drawing shows the elevation, ground floor plan and portion of the rear garden of a two-storey semi-detached house. The rear wall B-B of the house is south facing. The external walls are 350 mm concrete block walls with an insulated cavity. All internal walls are of 100 mm solid block construction and the internal wall A-A is load-bearing. It is proposed to build a single-storey extension to the rear of the house to: allow increased sunlight into the interior of the house and improve the view to the rear garden.",
+    "questionText": "Show, using notes and freehand sketches, a proposed design for the extension to the rear of the dwelling house and a revised layout for the ground floor to include the extension.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 40,
+    "rows": [
+      {
+        "id": "extension",
+        "kind": "criterion",
+        "verbatim": "Proposed design for the extension Note Sketch",
+        "marks": 20,
+        "contextNote": "Note 10 and sketch 10. Such as: an optimised south-facing footprint; high-performance low-e glazing; rooflights; part of wall B-B removed to let light in; the thermal mass of block walls and floor.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "id": "layout",
+        "kind": "criterion",
+        "verbatim": "Revised Layout Note Sketch",
+        "marks": 20,
+        "contextNote": "Note 10 and sketch 10. Such as: an open-plan layout with more floor area and kitchen space; floor-to-ceiling glazing to the garden; more natural light to the existing rooms; access to the garden.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q3-design",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "A sunlit rear extension and revised ground floor",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. The design and layout are open responses; the scheme gives model designs."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q3-b",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "rear-extension-sunlight-b",
+    "questionRef": "2013 HL Q3(b)",
+    "stem": "The drawing shows the elevation, ground floor plan and portion of the rear garden of a two-storey semi-detached house. The rear wall B-B of the house is south facing. The external walls are 350 mm concrete block walls with an insulated cavity. All internal walls are of 100 mm solid block construction and the internal wall A-A is load-bearing. It is proposed to build a single-storey extension to the rear of the house to: allow increased sunlight into the interior of the house and improve the view to the rear garden.",
+    "questionText": "For each of the above, discuss in detail the reasons for your proposed design choices.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "sunlight",
+        "kind": "criterion",
+        "verbatim": "Increased sunlight into the interior of the house",
+        "marks": 10,
+        "contextNote": "Two reasons, 5 each. Such as: energy gains from sunlight and heat collected; the health benefits of natural light; a high window head for deep daylight; a careful balance of glazing against winter heat loss and summer overheating; south is the optimal orientation.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "view",
+        "kind": "criterion",
+        "verbatim": "Improve the view to the rear garden",
+        "marks": 10,
+        "contextNote": "Two reasons, 5 each. Such as: bringing the outdoors in, a pleasant space to relax; the garden becomes part of the living space; children seen at play; views of wildlife; health and well-being.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q3-reasons",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "A sunlit rear extension and revised ground floor",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. The design and layout are open responses; the scheme gives model designs."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q3-complete",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "rear-extension-sunlight-complete",
+    "questionRef": "2013 HL Q3 — complete",
+    "stem": "The drawing shows the elevation, ground floor plan and portion of the rear garden of a two-storey semi-detached house. The rear wall B-B of the house is south facing. The external walls are 350 mm concrete block walls with an insulated cavity. All internal walls are of 100 mm solid block construction and the internal wall A-A is load-bearing. It is proposed to build a single-storey extension to the rear of the house to: allow increased sunlight into the interior of the house and improve the view to the rear garden.",
+    "questionText": "(a) Show, using notes and freehand sketches, a proposed design for the extension to the rear of the dwelling house and a revised layout for the ground floor to include the extension.\n\n(b) For each of the above, discuss in detail the reasons for your proposed design choices.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-extension",
+        "kind": "criterion",
+        "verbatim": "Proposed design for the extension Note Sketch",
+        "marks": 20,
+        "contextNote": "Note 10 and sketch 10. Such as: an optimised south-facing footprint; high-performance low-e glazing; rooflights; part of wall B-B removed to let light in; the thermal mass of block walls and floor.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "id": "a-layout",
+        "kind": "criterion",
+        "verbatim": "Revised Layout Note Sketch",
+        "marks": 20,
+        "contextNote": "Note 10 and sketch 10. Such as: an open-plan layout with more floor area and kitchen space; floor-to-ceiling glazing to the garden; more natural light to the existing rooms; access to the garden.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "id": "b-sunlight",
+        "kind": "criterion",
+        "verbatim": "Increased sunlight into the interior of the house",
+        "marks": 10,
+        "contextNote": "Two reasons, 5 each. Such as: energy gains from sunlight and heat collected; the health benefits of natural light; a high window head for deep daylight; a careful balance of glazing against winter heat loss and summer overheating; south is the optimal orientation.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "b-view",
+        "kind": "criterion",
+        "verbatim": "Improve the view to the rear garden",
+        "marks": 10,
+        "contextNote": "Two reasons, 5 each. Such as: bringing the outdoors in, a pleasant space to relax; the garden becomes part of the living space; children seen at play; views of wildlife; health and well-being.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q3-design",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "A sunlit rear extension and revised ground floor",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. The design and layout are open responses; the scheme gives model designs."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2013-hl-q3-a",
+        "label": "a",
+        "marks": 40,
+        "rowIds": [
+          "a-extension",
+          "a-layout"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q3-b",
+        "label": "b",
+        "marks": 20,
+        "rowIds": [
+          "b-sunlight",
+          "b-view"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2013-hl-q4-a",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-5-3",
+    "conceptId": "stove-solar-heating-a",
+    "questionRef": "2013 HL Q4(a)",
+    "stem": "It is proposed to use a wood-burning stove combined with a solar collector to provide central heating and hot water for a two-storey house.",
+    "questionText": "Using notes and a single-line diagram, show a typical design layout for the heating system and the domestic hot water system. Show two independently controlled heating zones, one on each floor, and include three radiators on each floor. Indicate the location of the control valves and give the typical sizes of the pipework.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 40,
+    "rows": [
+      {
+        "id": "items",
+        "kind": "criterion",
+        "verbatim": "9 × 4 marks (Sketch 3 Annotation 1)",
+        "marks": 36,
+        "contextNote": "Best nine items, 4 each (sketch 3, annotation 1). Menu: wood burning stove; radiators; zone control mechanism; zone thermostats; header or expansion tank; feed to the expansion tank; cold feed from it; expansion pipe or vessel; flow and return pipes to the radiators; radiator valves; pump and valves; solar panel with its flow and return and solar pump; twin-coil cylinder; control panel; expansion vessel; thermal reducing vessel.",
+        "permittedMarks": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36
+        ]
+      },
+      {
+        "id": "sizes",
+        "kind": "criterion",
+        "verbatim": "Sizes of pipework (any 2)",
+        "marks": 4,
+        "contextNote": "Any two typical pipe sizes, 2 each, such as 22 mm flow and return, 28 mm expansion and 15 mm upstands to the radiators.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q4-system",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Wood-burning stove and solar collector heating",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The listed components are a marking menu, not a printed choice."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q4-b",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-4",
+    "conceptId": "stove-solar-heating-b",
+    "questionRef": "2013 HL Q4(b)",
+    "stem": "It is proposed to use a wood-burning stove combined with a solar collector to provide central heating and hot water for a two-storey house.",
+    "questionText": "Using notes and freehand sketches, discuss two design considerations that should be taken into account when siting a solar collector, as shown, to ensure maximum efficiency.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "consideration-1",
+        "kind": "criterion",
+        "verbatim": "Design consideration 1 Note 3 marks & sketch 3 marks",
+        "marks": 6,
+        "contextNote": "Note 3 and sketch 3. Such as: orientation facing south, within 15° east or west of south; the angle of inclination, about 45° in Ireland.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "consideration-2",
+        "kind": "criterion",
+        "verbatim": "Design consideration 2 Note 3 marks & sketch 3 marks",
+        "marks": 6,
+        "contextNote": "A second, different consideration: note 3 and sketch 3. Such as: a location free of shading and close to the cylinder; sizing of about 1.0–1.5 m² of panel per person, avoiding oversizing.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q4-siting",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Wood-burning stove and solar collector heating",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The listed components are a marking menu, not a printed choice."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q4-c",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-5-3",
+    "conceptId": "stove-solar-heating-c",
+    "questionRef": "2013 HL Q4(c)",
+    "stem": "It is proposed to use a wood-burning stove combined with a solar collector to provide central heating and hot water for a two-storey house.",
+    "questionText": "Discuss in detail two advantages and two disadvantages of the heating system outlined at 4 above.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 2,
+        "contextNote": "Such as: solar power is renewable and silent, with less CO₂; up to 60% of hot water demand.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 2,
+        "contextNote": "A second, different advantage. Such as: wood is a renewable, carbon-neutral fuel; stoves are over 70% efficient; easy installation and grants available.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "disadvantage-1",
+        "kind": "criterion",
+        "verbatim": "Disadvantage 1",
+        "marks": 2,
+        "contextNote": "Such as: weather dependent, with less sunlight further north; a significant initial cost.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "disadvantage-2",
+        "kind": "criterion",
+        "verbatim": "Disadvantage 2",
+        "marks": 2,
+        "contextNote": "A second, different disadvantage. Such as: disposal of the glycol solar fluid; stoves lit and cleaned by hand; dry storage needed for wood pellets.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q4-advantages",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Wood-burning stove and solar collector heating",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The listed components are a marking menu, not a printed choice."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q4-complete",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-5-3",
+    "conceptId": "stove-solar-heating-complete",
+    "questionRef": "2013 HL Q4 — complete",
+    "stem": "It is proposed to use a wood-burning stove combined with a solar collector to provide central heating and hot water for a two-storey house.",
+    "questionText": "(a) Using notes and a single-line diagram, show a typical design layout for the heating system and the domestic hot water system. Show two independently controlled heating zones, one on each floor, and include three radiators on each floor. Indicate the location of the control valves and give the typical sizes of the pipework.\n\n(b) Using notes and freehand sketches, discuss two design considerations that should be taken into account when siting a solar collector, as shown, to ensure maximum efficiency.\n\n(c) Discuss in detail two advantages and two disadvantages of the heating system outlined at 4 above.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-items",
+        "kind": "criterion",
+        "verbatim": "9 × 4 marks (Sketch 3 Annotation 1)",
+        "marks": 36,
+        "contextNote": "Best nine items, 4 each (sketch 3, annotation 1). Menu: wood burning stove; radiators; zone control mechanism; zone thermostats; header or expansion tank; feed to the expansion tank; cold feed from it; expansion pipe or vessel; flow and return pipes to the radiators; radiator valves; pump and valves; solar panel with its flow and return and solar pump; twin-coil cylinder; control panel; expansion vessel; thermal reducing vessel.",
+        "permittedMarks": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36
+        ]
+      },
+      {
+        "id": "a-sizes",
+        "kind": "criterion",
+        "verbatim": "Sizes of pipework (any 2)",
+        "marks": 4,
+        "contextNote": "Any two typical pipe sizes, 2 each, such as 22 mm flow and return, 28 mm expansion and 15 mm upstands to the radiators.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-consideration-1",
+        "kind": "criterion",
+        "verbatim": "Design consideration 1 Note 3 marks & sketch 3 marks",
+        "marks": 6,
+        "contextNote": "Note 3 and sketch 3. Such as: orientation facing south, within 15° east or west of south; the angle of inclination, about 45° in Ireland.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-consideration-2",
+        "kind": "criterion",
+        "verbatim": "Design consideration 2 Note 3 marks & sketch 3 marks",
+        "marks": 6,
+        "contextNote": "A second, different consideration: note 3 and sketch 3. Such as: a location free of shading and close to the cylinder; sizing of about 1.0–1.5 m² of panel per person, avoiding oversizing.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-advantage-1",
+        "kind": "criterion",
+        "verbatim": "Advantage 1",
+        "marks": 2,
+        "contextNote": "Such as: solar power is renewable and silent, with less CO₂; up to 60% of hot water demand.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "c-advantage-2",
+        "kind": "criterion",
+        "verbatim": "Advantage 2",
+        "marks": 2,
+        "contextNote": "A second, different advantage. Such as: wood is a renewable, carbon-neutral fuel; stoves are over 70% efficient; easy installation and grants available.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "c-disadvantage-1",
+        "kind": "criterion",
+        "verbatim": "Disadvantage 1",
+        "marks": 2,
+        "contextNote": "Such as: weather dependent, with less sunlight further north; a significant initial cost.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "c-disadvantage-2",
+        "kind": "criterion",
+        "verbatim": "Disadvantage 2",
+        "marks": 2,
+        "contextNote": "A second, different disadvantage. Such as: disposal of the glycol solar fluid; stoves lit and cleaned by hand; dry storage needed for wood pellets.",
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q4-system",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Wood-burning stove and solar collector heating",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The listed components are a marking menu, not a printed choice."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2013-hl-q4-a",
+        "label": "a",
+        "marks": 40,
+        "rowIds": [
+          "a-items",
+          "a-sizes"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q4-b",
+        "label": "b",
+        "marks": 12,
+        "rowIds": [
+          "b-consideration-1",
+          "b-consideration-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q4-c",
+        "label": "c",
+        "marks": 8,
+        "rowIds": [
+          "c-advantage-1",
+          "c-advantage-2",
+          "c-disadvantage-1",
+          "c-disadvantage-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2013-hl-q5-a",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-1",
+    "conceptId": "window-u-values-a",
+    "questionRef": "2013 HL Q5(a)",
+    "stem": "A section through a triple-glazed, high performance wooden window is shown at A. The frame is a thermally broken, insulated frame as shown. Two of the panes of glass have a low-emissivity (low-e) coating and the spaces between the panes are filled with argon gas. A section through a traditional single-glazed solid wooden window is shown at B.",
+    "questionText": "For window A, using the given data, calculate the U-value of each of the following: the thermally broken wooden frame and the triple glazed argon-filled glazing unit. Glass thickness 4 mm; Space between panes of glass, each space 20 mm; Wood in thermally broken frame, each piece 30 mm; Rigid urethane insulation in frame, thickness 60 mm. Data for thermally broken wooden frame: Conductivity of wood (k) 0.150 W/m °C; Conductivity of rigid urethane insulation (k) 0.021 W/m °C; Resistance of external surface of frame (R) 0.950 m2 °C/W; Resistance of internal surface of frame (R) 1.400 m2 °C/W. Data for triple-glazed unit: Conductivity of glass (k) 1.050 W/m °C; Conductivity of argon gas (k) 0.160 W/m °C; Resistance of external surface of glass (R) 0.075 m2 °C/W; Resistance of internal surface of glass (R) 0.110 m2 °C/W; Total resistance of the low-e panes of glass (R) 3.400 m2 °C/W.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "frame",
+        "kind": "criterion",
+        "verbatim": "Thermally broken wooden frame (15 marks)",
+        "marks": 15,
+        "contextNote": "Correct tabulation 2, wood 3, insulation 3, external and internal surfaces 2, total resistance 2, U-value 3 (1 for the formula). By R = T/k: wood 0.06/0.150 = 0.400; urethane 0.06/0.021 = 2.857; surfaces 0.950 + 1.400; total 5.607 m²°C/W; U = 1/Rt = 1/5.607 = 0.178 W/m²K.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "id": "glazing",
+        "kind": "criterion",
+        "verbatim": "Triple glazed, low-e, soft coat unit (15 marks)",
+        "marks": 15,
+        "contextNote": "Glass 3, argon gas 3, external and internal surfaces 2, low-e glazing 2, total resistance 2, U-value 3 (1 for the formula). By R = T/k: one pane of glass 0.004/1.050 = 0.0038095; argon 0.040/0.160 = 0.25; surfaces 0.075 + 0.110; low-e glass 3.400; total 3.8388 m²°C/W; U = 1/3.8388 = 0.260495 W/m²K.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q5-calculation",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Triple-glazed window U-values and window head detail",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-values from (a); the scheme’s worked answers are U = 0.178 for the frame and U = 0.260495 for the glazing unit."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q5-b",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-3",
+    "conceptId": "window-u-values-b",
+    "questionRef": "2013 HL Q5(b)",
+    "stem": "A section through a triple-glazed, high performance wooden window is shown at A. The frame is a thermally broken, insulated frame as shown. Two of the panes of glass have a low-emissivity (low-e) coating and the spaces between the panes are filled with argon gas. A section through a traditional single-glazed solid wooden window is shown at B.",
+    "questionText": "The traditional single-glazed solid wooden window shown at B has the following U-values: U-value of the solid wooden frame 0.317 W/ m2 °C; U-value of the single glazing 5.300 W/ m2 °C. Using the U-values of the high performance window frame and glazing unit obtained at 5(a) and the U-values of the traditional single-glazed wooden window given at 5(b) above, discuss the performance of both windows under the following headings: thermal properties; environmental considerations.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 14,
+    "rows": [
+      {
+        "id": "thermal",
+        "kind": "criterion",
+        "verbatim": "Thermal properties",
+        "marks": 7,
+        "contextNote": "Such as: the thermally broken frame (0.178) is almost twice as efficient as the traditional frame (0.317), the insulation in line with the glazing; the triple-glazed unit (0.261) up to twenty times more efficient than single glazing (5.300), which loses about 25% of the heat; lower heat loss costs and more comfort.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "environmental",
+        "kind": "criterion",
+        "verbatim": "Environmental considerations",
+        "marks": 7,
+        "contextNote": "Such as: less demand for finite fossil fuels and less CO₂; locally sourced, naturally durable timber such as larch, cedar or Douglas fir from FSC-certified sources, with low embodied energy and no chemical preservatives or aluminium.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q5-comparison",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Triple-glazed window U-values and window head detail",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-values from (a); the scheme’s worked answers are U = 0.178 for the frame and U = 0.260495 for the glazing unit."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q5-c",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-3-6",
+    "conceptId": "window-u-values-c",
+    "questionRef": "2013 HL Q5(c)",
+    "stem": "A section through a triple-glazed, high performance wooden window is shown at A. The frame is a thermally broken, insulated frame as shown. Two of the panes of glass have a low-emissivity (low-e) coating and the spaces between the panes are filled with argon gas. A section through a traditional single-glazed solid wooden window is shown at B.",
+    "questionText": "Using notes and freehand sketches, show the design detailing of a window which is fixed in a 350 mm concrete block wall with an insulated cavity, to ensure minimum heat loss. Note: Show design details at the window head only.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "notes",
+        "kind": "criterion",
+        "verbatim": "Notes / Annotations",
+        "marks": 8,
+        "contextNote": "Such as: a cavity tray; the cavity at the head sealed with 50 mm high-density insulation or a proprietary cavity closer; no thermal bridge; airtight tape; reinforced concrete lintels; the thermally broken frame positioned in line with the insulation.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 8,
+        "contextNote": "A sketch of the window head in the insulated cavity wall, as in the scheme’s model details.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q5-head",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Triple-glazed window U-values and window head detail",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-values from (a); the scheme’s worked answers are U = 0.178 for the frame and U = 0.260495 for the glazing unit."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q5-complete",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-1",
+    "conceptId": "window-u-values-complete",
+    "questionRef": "2013 HL Q5 — complete",
+    "stem": "A section through a triple-glazed, high performance wooden window is shown at A. The frame is a thermally broken, insulated frame as shown. Two of the panes of glass have a low-emissivity (low-e) coating and the spaces between the panes are filled with argon gas. A section through a traditional single-glazed solid wooden window is shown at B.",
+    "questionText": "(a) For window A, using the given data, calculate the U-value of each of the following: the thermally broken wooden frame and the triple glazed argon-filled glazing unit. Glass thickness 4 mm; Space between panes of glass, each space 20 mm; Wood in thermally broken frame, each piece 30 mm; Rigid urethane insulation in frame, thickness 60 mm. Data for thermally broken wooden frame: Conductivity of wood (k) 0.150 W/m °C; Conductivity of rigid urethane insulation (k) 0.021 W/m °C; Resistance of external surface of frame (R) 0.950 m2 °C/W; Resistance of internal surface of frame (R) 1.400 m2 °C/W. Data for triple-glazed unit: Conductivity of glass (k) 1.050 W/m °C; Conductivity of argon gas (k) 0.160 W/m °C; Resistance of external surface of glass (R) 0.075 m2 °C/W; Resistance of internal surface of glass (R) 0.110 m2 °C/W; Total resistance of the low-e panes of glass (R) 3.400 m2 °C/W.\n\n(b) The traditional single-glazed solid wooden window shown at B has the following U-values: U-value of the solid wooden frame 0.317 W/ m2 °C; U-value of the single glazing 5.300 W/ m2 °C. Using the U-values of the high performance window frame and glazing unit obtained at 5(a) and the U-values of the traditional single-glazed wooden window given at 5(b) above, discuss the performance of both windows under the following headings: thermal properties; environmental considerations.\n\n(c) Using notes and freehand sketches, show the design detailing of a window which is fixed in a 350 mm concrete block wall with an insulated cavity, to ensure minimum heat loss. Note: Show design details at the window head only.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-frame",
+        "kind": "criterion",
+        "verbatim": "Thermally broken wooden frame (15 marks)",
+        "marks": 15,
+        "contextNote": "Correct tabulation 2, wood 3, insulation 3, external and internal surfaces 2, total resistance 2, U-value 3 (1 for the formula). By R = T/k: wood 0.06/0.150 = 0.400; urethane 0.06/0.021 = 2.857; surfaces 0.950 + 1.400; total 5.607 m²°C/W; U = 1/Rt = 1/5.607 = 0.178 W/m²K.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "id": "a-glazing",
+        "kind": "criterion",
+        "verbatim": "Triple glazed, low-e, soft coat unit (15 marks)",
+        "marks": 15,
+        "contextNote": "Glass 3, argon gas 3, external and internal surfaces 2, low-e glazing 2, total resistance 2, U-value 3 (1 for the formula). By R = T/k: one pane of glass 0.004/1.050 = 0.0038095; argon 0.040/0.160 = 0.25; surfaces 0.075 + 0.110; low-e glass 3.400; total 3.8388 m²°C/W; U = 1/3.8388 = 0.260495 W/m²K.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "id": "b-thermal",
+        "kind": "criterion",
+        "verbatim": "Thermal properties",
+        "marks": 7,
+        "contextNote": "Such as: the thermally broken frame (0.178) is almost twice as efficient as the traditional frame (0.317), the insulation in line with the glazing; the triple-glazed unit (0.261) up to twenty times more efficient than single glazing (5.300), which loses about 25% of the heat; lower heat loss costs and more comfort.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "b-environmental",
+        "kind": "criterion",
+        "verbatim": "Environmental considerations",
+        "marks": 7,
+        "contextNote": "Such as: less demand for finite fossil fuels and less CO₂; locally sourced, naturally durable timber such as larch, cedar or Douglas fir from FSC-certified sources, with low embodied energy and no chemical preservatives or aluminium.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "c-notes",
+        "kind": "criterion",
+        "verbatim": "Notes / Annotations",
+        "marks": 8,
+        "contextNote": "Such as: a cavity tray; the cavity at the head sealed with 50 mm high-density insulation or a proprietary cavity closer; no thermal bridge; airtight tape; reinforced concrete lintels; the thermally broken frame positioned in line with the insulation.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "c-sketch",
+        "kind": "criterion",
+        "verbatim": "Sketch",
+        "marks": 8,
+        "contextNote": "A sketch of the window head in the insulated cavity wall, as in the scheme’s model details.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q5-calculation",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Triple-glazed window U-values and window head detail",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-values from (a); the scheme’s worked answers are U = 0.178 for the frame and U = 0.260495 for the glazing unit."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2013-hl-q5-a",
+        "label": "a",
+        "marks": 30,
+        "rowIds": [
+          "a-frame",
+          "a-glazing"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q5-b",
+        "label": "b",
+        "marks": 14,
+        "rowIds": [
+          "b-thermal",
+          "b-environmental"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q5-c",
+        "label": "c",
+        "marks": 16,
+        "rowIds": [
+          "c-notes",
+          "c-sketch"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2013-hl-q6-a",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "first-time-buyer-house-a",
+    "questionRef": "2013 HL Q6(a)",
+    "stem": "The elevation and ground floor plan of a house are shown. The house has three bedrooms and a bathroom in the attic space. The external wall is of timber frame construction with a rendered concrete block outer leaf. The house is designed to have low environmental impact and be suitable for first-time buyers.",
+    "questionText": "With reference to the design shown, discuss in detail, using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "feature-1",
+        "kind": "criterion",
+        "verbatim": "Feature 1 Note Sketch",
+        "marks": 10,
+        "contextNote": "Note 5 and sketch 5. Such as: a steep pitched roof giving three bedrooms and a bathroom on a compact footprint; roof lights giving three times the daylight of dormers.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "feature-2",
+        "kind": "criterion",
+        "verbatim": "Feature 2 Note Sketch",
+        "marks": 10,
+        "contextNote": "A second, different feature: note 5 and sketch 5. Such as: south-facing high-performance glazing and small north windows; a wood-burning stove on an internal chimney stack; rainwater harvesting.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "feature-3",
+        "kind": "criterion",
+        "verbatim": "Feature 3 Note Sketch",
+        "marks": 10,
+        "contextNote": "A third, different feature: note 5 and sketch 5. Such as: solar panels on the south roof; the long elevation on an east–west axis; a flexible universal design; local timber frame and low-carbon GGBS concrete.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q6-features",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "A low-impact house for first-time buyers",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. Features are open responses; the scheme lists typical examples. All three printed considerations in (b) are required."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q6-b",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "first-time-buyer-house-b",
+    "questionRef": "2013 HL Q6(b)",
+    "stem": "The elevation and ground floor plan of a house are shown. The house has three bedrooms and a bathroom in the attic space. The external wall is of timber frame construction with a rendered concrete block outer leaf. The house is designed to have low environmental impact and be suitable for first-time buyers.",
+    "questionText": "Discuss in detail the importance of each of the following when designing a house suitable for first-time buyers: modest in scale; easy to modify; proximity to services.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "scale",
+        "kind": "criterion",
+        "verbatim": "Modest in scale (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: a small footprint and site keep building, purchase and mortgage costs down; one room deep for solar gain; no corridors to heat; bedrooms in the attic; zoned heating.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "modify",
+        "kind": "criterion",
+        "verbatim": "Easy to modify (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: the downstairs room used as a study, playroom or bedroom at no extra cost; a door opening into the bathroom; upstairs work done while the ground floor room is used.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "services",
+        "kind": "criterion",
+        "verbatim": "Proximity to services (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: schools, shops and a doctor within walking or cycling distance; public transport to work, with no second car; a stronger sense of community; services nearby are more sustainable.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q6-buyers",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "A low-impact house for first-time buyers",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. Features are open responses; the scheme lists typical examples. All three printed considerations in (b) are required."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q6-complete",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "first-time-buyer-house-complete",
+    "questionRef": "2013 HL Q6 — complete",
+    "stem": "The elevation and ground floor plan of a house are shown. The house has three bedrooms and a bathroom in the attic space. The external wall is of timber frame construction with a rendered concrete block outer leaf. The house is designed to have low environmental impact and be suitable for first-time buyers.",
+    "questionText": "(a) With reference to the design shown, discuss in detail, using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.\n\n(b) Discuss in detail the importance of each of the following when designing a house suitable for first-time buyers: modest in scale; easy to modify; proximity to services.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-feature-1",
+        "kind": "criterion",
+        "verbatim": "Feature 1 Note Sketch",
+        "marks": 10,
+        "contextNote": "Note 5 and sketch 5. Such as: a steep pitched roof giving three bedrooms and a bathroom on a compact footprint; roof lights giving three times the daylight of dormers.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "a-feature-2",
+        "kind": "criterion",
+        "verbatim": "Feature 2 Note Sketch",
+        "marks": 10,
+        "contextNote": "A second, different feature: note 5 and sketch 5. Such as: south-facing high-performance glazing and small north windows; a wood-burning stove on an internal chimney stack; rainwater harvesting.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "a-feature-3",
+        "kind": "criterion",
+        "verbatim": "Feature 3 Note Sketch",
+        "marks": 10,
+        "contextNote": "A third, different feature: note 5 and sketch 5. Such as: solar panels on the south roof; the long elevation on an east–west axis; a flexible universal design; local timber frame and low-carbon GGBS concrete.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "b-scale",
+        "kind": "criterion",
+        "verbatim": "Modest in scale (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: a small footprint and site keep building, purchase and mortgage costs down; one room deep for solar gain; no corridors to heat; bedrooms in the attic; zoned heating.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "b-modify",
+        "kind": "criterion",
+        "verbatim": "Easy to modify (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: the downstairs room used as a study, playroom or bedroom at no extra cost; a door opening into the bathroom; upstairs work done while the ground floor room is used.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "b-services",
+        "kind": "criterion",
+        "verbatim": "Proximity to services (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: schools, shops and a doctor within walking or cycling distance; public transport to work, with no second car; a stronger sense of community; services nearby are more sustainable.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q6-features",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "A low-impact house for first-time buyers",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original elevation and plan retained. Features are open responses; the scheme lists typical examples. All three printed considerations in (b) are required."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2013-hl-q6-a",
+        "label": "a",
+        "marks": 30,
+        "rowIds": [
+          "a-feature-1",
+          "a-feature-2",
+          "a-feature-3"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q6-b",
+        "label": "b",
+        "marks": 30,
+        "rowIds": [
+          "b-scale",
+          "b-modify",
+          "b-services"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2013-hl-q7-a",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "stove-hearth-chimney-section-a",
+    "questionRef": "2013 HL Q7(a)",
+    "stem": "A chimney is designed to accommodate a modern wood-burning stove, as shown in the accompanying sketch. The chimney is located on an internal 215 mm solid concrete block wall between the living room and the kitchen. The flue from the stove to the main flue liner is 150 mm in diameter. The floor is an insulated solid concrete ground floor with a 20 mm floating hardwood finish. The dimensions of the stove are: height 700 mm, width 550 mm, depth 450 mm.",
+    "questionText": "To a scale of 1:5, draw a vertical section through the ground floor, hearth and chimney. The section should show the typical construction details from 400 mm below the finished floor to a level 300 mm above the top of the flue from the stove, and include the connection to the main flue liner in the chimney. Include three typical dimensions on your drawing.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 57,
+    "rows": [
+      {
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "9 points × 5 marks",
+        "marks": 45,
+        "contextNote": "Best nine points, 5 each (detail 4, annotation 1). Menu: hardcore; sand blinding; radon barrier; subfloor and screed or floor slab; insulation; hearth; 20 mm floating hardwood floor; internal block wall; lintel or flue gatherer; plaster; flue liners; lime-sand or vermiculite fill; cast iron flue from the stove; airtight seal to the wall; stove; independent air supply; cleaning access.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45
+        ]
+      },
+      {
+        "id": "dimensions",
+        "kind": "criterion",
+        "verbatim": "3 typical dimensions (3 × 2 marks)",
+        "marks": 6,
+        "contextNote": "Three typical dimensions, 2 each.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Scale & Drafting",
+        "marks": 6,
+        "contextNote": "Scale and drafting of the section.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q7-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Hearth and chimney for a wood-burning stove",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the flue liner joint in (b) is marked separately."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q7-b",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-5-7",
+    "conceptId": "stove-hearth-chimney-section-b",
+    "questionRef": "2013 HL Q7(b)",
+    "stem": "A chimney is designed to accommodate a modern wood-burning stove, as shown in the accompanying sketch. The chimney is located on an internal 215 mm solid concrete block wall between the living room and the kitchen. The flue from the stove to the main flue liner is 150 mm in diameter. The floor is an insulated solid concrete ground floor with a 20 mm floating hardwood finish. The dimensions of the stove are: height 700 mm, width 550 mm, depth 450 mm.",
+    "questionText": "Indicate clearly on the drawing how the flue liners in the chimney are joined to ensure the safe removal of smoke and flue gases. Note: Show an outline of the stove only; it is not necessary to show a detailed drawing of the stove.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "liners",
+        "kind": "criterion",
+        "verbatim": "Design detail",
+        "marks": 3,
+        "contextNote": "Show the joint of the flue liners, as in the scheme’s model section: liners socketed and jointed for the safe removal of smoke and gases; a specialised adaptor joining the stove flue to the clay liner, or a continuous stainless steel liner, in vermiculite fill.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q7-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Hearth and chimney for a wood-burning stove",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the flue liner joint in (b) is marked separately."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q7-complete",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "stove-hearth-chimney-section-complete",
+    "questionRef": "2013 HL Q7 — complete",
+    "stem": "A chimney is designed to accommodate a modern wood-burning stove, as shown in the accompanying sketch. The chimney is located on an internal 215 mm solid concrete block wall between the living room and the kitchen. The flue from the stove to the main flue liner is 150 mm in diameter. The floor is an insulated solid concrete ground floor with a 20 mm floating hardwood finish. The dimensions of the stove are: height 700 mm, width 550 mm, depth 450 mm.",
+    "questionText": "(a) To a scale of 1:5, draw a vertical section through the ground floor, hearth and chimney. The section should show the typical construction details from 400 mm below the finished floor to a level 300 mm above the top of the flue from the stove, and include the connection to the main flue liner in the chimney. Include three typical dimensions on your drawing.\n\n(b) Indicate clearly on the drawing how the flue liners in the chimney are joined to ensure the safe removal of smoke and flue gases. Note: Show an outline of the stove only; it is not necessary to show a detailed drawing of the stove.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "9 points × 5 marks",
+        "marks": 45,
+        "contextNote": "Best nine points, 5 each (detail 4, annotation 1). Menu: hardcore; sand blinding; radon barrier; subfloor and screed or floor slab; insulation; hearth; 20 mm floating hardwood floor; internal block wall; lintel or flue gatherer; plaster; flue liners; lime-sand or vermiculite fill; cast iron flue from the stove; airtight seal to the wall; stove; independent air supply; cleaning access.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45
+        ]
+      },
+      {
+        "id": "a-dimensions",
+        "kind": "criterion",
+        "verbatim": "3 typical dimensions (3 × 2 marks)",
+        "marks": 6,
+        "contextNote": "Three typical dimensions, 2 each.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Scale & Drafting",
+        "marks": 6,
+        "contextNote": "Scale and drafting of the section.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-liners",
+        "kind": "criterion",
+        "verbatim": "Design detail",
+        "marks": 3,
+        "contextNote": "Show the joint of the flue liners, as in the scheme’s model section: liners socketed and jointed for the safe removal of smoke and gases; a specialised adaptor joining the stove flue to the clay liner, or a continuous stainless steel liner, in vermiculite fill.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q7-section",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Hearth and chimney for a wood-burning stove",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the flue liner joint in (b) is marked separately."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2013-hl-q7-a",
+        "label": "a",
+        "marks": 57,
+        "rowIds": [
+          "a-details",
+          "a-dimensions",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q7-b",
+        "label": "b",
+        "marks": 3,
+        "rowIds": [
+          "b-liners"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2013-hl-q8-a",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-2-2",
+    "conceptId": "strip-raft-foundations-a",
+    "questionRef": "2013 HL Q8(a)",
+    "stem": "",
+    "questionText": "Discuss in detail, using notes and freehand sketches, two functional requirements of a foundation suitable for a dwelling house.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "requirement-1",
+        "kind": "criterion",
+        "verbatim": "Functional requirement of foundation 1",
+        "marks": 10,
+        "contextNote": "Note 5 and sketch 5. Such as: to transmit the dead and live loads safely to the ground, with a factor of safety; to provide a level surface for building.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "requirement-2",
+        "kind": "criterion",
+        "verbatim": "Functional requirement of foundation 2",
+        "marks": 10,
+        "contextNote": "A second, different requirement: note 5 and sketch 5. Such as: to anchor the structure; to prevent differential settlement; to resist seasonal ground movement, below the frost line; to resist sulphates in the soil.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q8-requirements",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Foundations: requirements, strip or raft, and concrete strength",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Both printed foundations in (b) are detailed, then one is recommended; not a choice."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q8-b",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-2-4",
+    "conceptId": "strip-raft-foundations-b",
+    "questionRef": "2013 HL Q8(b)",
+    "stem": "",
+    "questionText": "A trial hole, as shown in the sketch, indicates a moderately firm clay subsoil for the foundations of a dwelling house. The external wall of the house is a 350 mm solid concrete block wall with an insulated cavity. Consideration is being given at the design stage to using either: a traditional strip foundation or a raft foundation. Show, using notes and annotated freehand sketches, the typical design detailing for each type of foundation. Recommend a preferred foundation for the house and give two reasons for your recommendation.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 31,
+    "rows": [
+      {
+        "id": "strip",
+        "kind": "criterion",
+        "verbatim": "Traditional strip foundation Notes Sketches",
+        "marks": 10,
+        "contextNote": "Notes 5 and sketches 5. Such as: a reinforced strip at least 600 mm down against frost heave; hardcore, sand blinding, radon barrier and insulation; cavity fill.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "raft",
+        "kind": "criterion",
+        "verbatim": "Raft foundation Notes Sketches",
+        "marks": 10,
+        "contextNote": "Notes 5 and sketches 5. Such as: a mesh-reinforced concrete raft on hardcore; radon barrier and insulation; DPC at least 150 mm above ground level.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "recommendation",
+        "kind": "criterion",
+        "verbatim": "Recommendation for foundation",
+        "marks": 3,
+        "contextNote": "The preferred foundation, strip or raft.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 4,
+        "contextNote": "A reason matching the choice. Such as, strip: suited to moderately firm clay; easily constructed, filled and levelled.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 4,
+        "contextNote": "A second, different reason. Such as, strip: economical in materials and labour; raft: suited to poor soils, spreads the load evenly and reduces settlement, and allows load-bearing walls anywhere.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q8-foundations",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Foundations: requirements, strip or raft, and concrete strength",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Both printed foundations in (b) are detailed, then one is recommended; not a choice."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q8-c",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-2-7",
+    "conceptId": "strip-raft-foundations-c",
+    "questionRef": "2013 HL Q8(c)",
+    "stem": "",
+    "questionText": "Discuss in detail three best practice guidelines that should be observed to ensure the maximum strength of concrete in a foundation.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "guideline-1",
+        "kind": "criterion",
+        "verbatim": "Guideline 1",
+        "marks": 3,
+        "contextNote": "Such as: a level trench bottom free of loose soil; clean, correctly sized aggregates; batching by weight.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "guideline-2",
+        "kind": "criterion",
+        "verbatim": "Guideline 2",
+        "marks": 3,
+        "contextNote": "A second, different guideline. Such as: the correct water/cement ratio, about 0.6; reinforcement placed as designed with 75 mm cover; sulphate-resisting cement where needed.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "guideline-3",
+        "kind": "criterion",
+        "verbatim": "Guideline 3",
+        "marks": 3,
+        "contextNote": "A third, different guideline. Such as: compaction without excessive vibration; concrete not dropped from a height; cured for up to 28 days and protected from extreme heat or cold.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q8-concrete",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Foundations: requirements, strip or raft, and concrete strength",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Both printed foundations in (b) are detailed, then one is recommended; not a choice."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q8-complete",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-2-2",
+    "conceptId": "strip-raft-foundations-complete",
+    "questionRef": "2013 HL Q8 — complete",
+    "stem": "",
+    "questionText": "(a) Discuss in detail, using notes and freehand sketches, two functional requirements of a foundation suitable for a dwelling house.\n\n(b) A trial hole, as shown in the sketch, indicates a moderately firm clay subsoil for the foundations of a dwelling house. The external wall of the house is a 350 mm solid concrete block wall with an insulated cavity. Consideration is being given at the design stage to using either: a traditional strip foundation or a raft foundation. Show, using notes and annotated freehand sketches, the typical design detailing for each type of foundation. Recommend a preferred foundation for the house and give two reasons for your recommendation.\n\n(c) Discuss in detail three best practice guidelines that should be observed to ensure the maximum strength of concrete in a foundation.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-requirement-1",
+        "kind": "criterion",
+        "verbatim": "Functional requirement of foundation 1",
+        "marks": 10,
+        "contextNote": "Note 5 and sketch 5. Such as: to transmit the dead and live loads safely to the ground, with a factor of safety; to provide a level surface for building.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "a-requirement-2",
+        "kind": "criterion",
+        "verbatim": "Functional requirement of foundation 2",
+        "marks": 10,
+        "contextNote": "A second, different requirement: note 5 and sketch 5. Such as: to anchor the structure; to prevent differential settlement; to resist seasonal ground movement, below the frost line; to resist sulphates in the soil.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "b-strip",
+        "kind": "criterion",
+        "verbatim": "Traditional strip foundation Notes Sketches",
+        "marks": 10,
+        "contextNote": "Notes 5 and sketches 5. Such as: a reinforced strip at least 600 mm down against frost heave; hardcore, sand blinding, radon barrier and insulation; cavity fill.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "b-raft",
+        "kind": "criterion",
+        "verbatim": "Raft foundation Notes Sketches",
+        "marks": 10,
+        "contextNote": "Notes 5 and sketches 5. Such as: a mesh-reinforced concrete raft on hardcore; radon barrier and insulation; DPC at least 150 mm above ground level.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "b-recommendation",
+        "kind": "criterion",
+        "verbatim": "Recommendation for foundation",
+        "marks": 3,
+        "contextNote": "The preferred foundation, strip or raft.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-reason-1",
+        "kind": "criterion",
+        "verbatim": "Reason 1",
+        "marks": 4,
+        "contextNote": "A reason matching the choice. Such as, strip: suited to moderately firm clay; easily constructed, filled and levelled.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-reason-2",
+        "kind": "criterion",
+        "verbatim": "Reason 2",
+        "marks": 4,
+        "contextNote": "A second, different reason. Such as, strip: economical in materials and labour; raft: suited to poor soils, spreads the load evenly and reduces settlement, and allows load-bearing walls anywhere.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-guideline-1",
+        "kind": "criterion",
+        "verbatim": "Guideline 1",
+        "marks": 3,
+        "contextNote": "Such as: a level trench bottom free of loose soil; clean, correctly sized aggregates; batching by weight.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "c-guideline-2",
+        "kind": "criterion",
+        "verbatim": "Guideline 2",
+        "marks": 3,
+        "contextNote": "A second, different guideline. Such as: the correct water/cement ratio, about 0.6; reinforcement placed as designed with 75 mm cover; sulphate-resisting cement where needed.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "c-guideline-3",
+        "kind": "criterion",
+        "verbatim": "Guideline 3",
+        "marks": 3,
+        "contextNote": "A third, different guideline. Such as: compaction without excessive vibration; concrete not dropped from a height; cured for up to 28 days and protected from extreme heat or cold.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q8-foundations",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Foundations: requirements, strip or raft, and concrete strength",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Both printed foundations in (b) are detailed, then one is recommended; not a choice."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2013-hl-q8-a",
+        "label": "a",
+        "marks": 20,
+        "rowIds": [
+          "a-requirement-1",
+          "a-requirement-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q8-b",
+        "label": "b",
+        "marks": 31,
+        "rowIds": [
+          "b-strip",
+          "b-raft",
+          "b-recommendation",
+          "b-reason-1",
+          "b-reason-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q8-c",
+        "label": "c",
+        "marks": 9,
+        "rowIds": [
+          "c-guideline-1",
+          "c-guideline-2",
+          "c-guideline-3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2013-hl-q9-a",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-3-4",
+    "conceptId": "damp-junctions-a",
+    "questionRef": "2013 HL Q9(a)",
+    "stem": "A two-storey house, as shown in the drawing, is of timber frame construction with a rendered concrete block outer leaf. The chimney is also of rendered concrete block construction and both roofs are slated. Careful design detailing is required to prevent the penetration of dampness at the critical junctions circled in the drawing.",
+    "questionText": "Select any three locations from those circled on the drawing and show, using notes and freehand sketches, the typical design detailing which will prevent the penetration of dampness at each location.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 36,
+    "rows": [
+      {
+        "id": "locations",
+        "kind": "anyN",
+        "verbatim": "Three locations",
+        "marks": 36,
+        "contextNote": "Any three of the four circled locations, each note 6 and sketch 6 = 12. Location 1: the chimney on the main roof: a lead back gutter welted under the slates; the roofing membrane carried under the battens and taped to the chimney; a cover flashing at the back of the chimney overhanging the lead gutter. Location 2: the window head: a stepped DPC so moisture cannot reach the inside leaf; an anti-capillary groove at the sash opening; a weather strip at the top of the window; mastic sealant around the window. Location 3: the window cill: the cill wrapped in DPC; a second layer of DPC around the cavity barrier; an anti-capillary groove in the cill; mastic sealant; airtight tape between the frame and the internal wall. Location 4: the lean-to roof against the wall: a stepped DPC; a cover flashing at the roof–wall junction; the roof membrane carried onto the wall and taped to the masonry.",
+        "group": {
+          "claimMax": 3,
+          "perOption": 12,
+          "options": [
+            "Location 1",
+            "Location 2",
+            "Location 3",
+            "Location 4"
+          ]
+        }
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q9-locations",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Preventing damp at the circled junctions",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original drawing with four circled junctions retained. Part (a) is a closed choice of any three of the four: one card holding all four, named by the scheme’s Location headings."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q9-b",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-3-4",
+    "conceptId": "damp-junctions-b",
+    "questionRef": "2013 HL Q9(b)",
+    "stem": "A two-storey house, as shown in the drawing, is of timber frame construction with a rendered concrete block outer leaf. The chimney is also of rendered concrete block construction and both roofs are slated. Careful design detailing is required to prevent the penetration of dampness at the critical junctions circled in the drawing.",
+    "questionText": "Select any two junctions and specify a damp-proofing material suitable for each junction. Discuss the advantages of each material for the specified junction.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "material-1",
+        "kind": "criterion",
+        "verbatim": "Damp proof material 1 (specification 3 marks) (advantages 3 marks)",
+        "marks": 6,
+        "contextNote": "Specification 3 and advantages 3. Such as: lead — widely used around chimneys; flexible, corrosion-resistant, accommodates moderate movement, readily available and easily worked.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "material-2",
+        "kind": "criterion",
+        "verbatim": "Damp proof material 2 (specification 3 marks) (advantages 3 marks)",
+        "marks": 6,
+        "contextNote": "A material for the second junction: specification 3 and advantages 3. Such as: a flexible plastic DPC — readily available, inexpensive and highly resistant to corrosive materials in mortar.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q9-materials",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Preventing damp at the circled junctions",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original drawing with four circled junctions retained. Part (a) is a closed choice of any three of the four: one card holding all four, named by the scheme’s Location headings."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q9-c",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-3-3",
+    "conceptId": "damp-junctions-c",
+    "questionRef": "2013 HL Q9(c)",
+    "stem": "A two-storey house, as shown in the drawing, is of timber frame construction with a rendered concrete block outer leaf. The chimney is also of rendered concrete block construction and both roofs are slated. Careful design detailing is required to prevent the penetration of dampness at the critical junctions circled in the drawing.",
+    "questionText": "Discuss in detail the importance of ensuring that moisture does not penetrate to the inner leaf of a wall of timber frame construction.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "discussion-1",
+        "kind": "criterion",
+        "verbatim": "Discussion 1",
+        "marks": 6,
+        "contextNote": "Such as: a longer life, avoiding decay of the timber frame — fungal decay follows prolonged contact with damp masonry; damp insulation loses its effectiveness.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "discussion-2",
+        "kind": "criterion",
+        "verbatim": "Discussion 2",
+        "marks": 6,
+        "contextNote": "A second, different point. Such as: no mould on the internal walls; openings detailed and sealed; the breather membrane fixed correctly so moisture is kept out while vapour escapes; timber kept away from masonry.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q9-moisture",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Preventing damp at the circled junctions",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original drawing with four circled junctions retained. Part (a) is a closed choice of any three of the four: one card holding all four, named by the scheme’s Location headings."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q9-complete",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-3-4",
+    "conceptId": "damp-junctions-complete",
+    "questionRef": "2013 HL Q9 — complete",
+    "stem": "A two-storey house, as shown in the drawing, is of timber frame construction with a rendered concrete block outer leaf. The chimney is also of rendered concrete block construction and both roofs are slated. Careful design detailing is required to prevent the penetration of dampness at the critical junctions circled in the drawing.",
+    "questionText": "(a) Select any three locations from those circled on the drawing and show, using notes and freehand sketches, the typical design detailing which will prevent the penetration of dampness at each location.\n\n(b) Select any two junctions and specify a damp-proofing material suitable for each junction. Discuss the advantages of each material for the specified junction.\n\n(c) Discuss in detail the importance of ensuring that moisture does not penetrate to the inner leaf of a wall of timber frame construction.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-locations",
+        "kind": "anyN",
+        "verbatim": "Three locations",
+        "marks": 36,
+        "contextNote": "Any three of the four circled locations, each note 6 and sketch 6 = 12. Location 1: the chimney on the main roof: a lead back gutter welted under the slates; the roofing membrane carried under the battens and taped to the chimney; a cover flashing at the back of the chimney overhanging the lead gutter. Location 2: the window head: a stepped DPC so moisture cannot reach the inside leaf; an anti-capillary groove at the sash opening; a weather strip at the top of the window; mastic sealant around the window. Location 3: the window cill: the cill wrapped in DPC; a second layer of DPC around the cavity barrier; an anti-capillary groove in the cill; mastic sealant; airtight tape between the frame and the internal wall. Location 4: the lean-to roof against the wall: a stepped DPC; a cover flashing at the roof–wall junction; the roof membrane carried onto the wall and taped to the masonry.",
+        "group": {
+          "claimMax": 3,
+          "perOption": 12,
+          "options": [
+            "Location 1",
+            "Location 2",
+            "Location 3",
+            "Location 4"
+          ]
+        }
+      },
+      {
+        "id": "b-material-1",
+        "kind": "criterion",
+        "verbatim": "Damp proof material 1 (specification 3 marks) (advantages 3 marks)",
+        "marks": 6,
+        "contextNote": "Specification 3 and advantages 3. Such as: lead — widely used around chimneys; flexible, corrosion-resistant, accommodates moderate movement, readily available and easily worked.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-material-2",
+        "kind": "criterion",
+        "verbatim": "Damp proof material 2 (specification 3 marks) (advantages 3 marks)",
+        "marks": 6,
+        "contextNote": "A material for the second junction: specification 3 and advantages 3. Such as: a flexible plastic DPC — readily available, inexpensive and highly resistant to corrosive materials in mortar.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-discussion-1",
+        "kind": "criterion",
+        "verbatim": "Discussion 1",
+        "marks": 6,
+        "contextNote": "Such as: a longer life, avoiding decay of the timber frame — fungal decay follows prolonged contact with damp masonry; damp insulation loses its effectiveness.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-discussion-2",
+        "kind": "criterion",
+        "verbatim": "Discussion 2",
+        "marks": 6,
+        "contextNote": "A second, different point. Such as: no mould on the internal walls; openings detailed and sealed; the breather membrane fixed correctly so moisture is kept out while vapour escapes; timber kept away from masonry.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q9-locations",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Preventing damp at the circled junctions",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original drawing with four circled junctions retained. Part (a) is a closed choice of any three of the four: one card holding all four, named by the scheme’s Location headings."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2013-hl-q9-a",
+        "label": "a",
+        "marks": 36,
+        "rowIds": [
+          "a-locations"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q9-b",
+        "label": "b",
+        "marks": 12,
+        "rowIds": [
+          "b-material-1",
+          "b-material-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q9-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-discussion-1",
+          "c-discussion-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2013-hl-q10-a",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-4",
+    "conceptId": "passive-house-mhrv-a",
+    "questionRef": "2013 HL Q10(a)",
+    "stem": "",
+    "questionText": "Using notes and freehand sketches as appropriate, discuss in detail the importance of any two of the following in the design of a Passive House: building orientation; thermal mass; primary energy demand.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "items",
+        "kind": "anyN",
+        "verbatim": "Discussion of 2 design details",
+        "marks": 24,
+        "contextNote": "Any two of the three printed items, each note 6 and sketch 6 = 12. Building orientation: the glazed façade due south or within 30° of south to maximise solar gain, especially in winter; otherwise more insulation and careful fenestration are needed. Thermal mass: the ability of a material, usually the concrete floor, to absorb and store heat: it stores solar gain, stabilising the temperature against summer overheating and heating the home in winter; high heat capacity and density with moderate conductivity. Primary energy demand: the total energy for space and water heating, ventilation and all electricity, at most 120 kWh/m²a for certification (typically 60–70); electricity has a conversion factor of about 2.4.",
+        "group": {
+          "claimMax": 2,
+          "perOption": 12,
+          "options": [
+            "Building orientation",
+            "Thermal mass",
+            "Primary energy demand"
+          ]
+        }
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q10-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q10-principles",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10",
+      "title": "Passive House principles and MHRV",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original drawing retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q10-b",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-5",
+    "conceptId": "passive-house-mhrv-b",
+    "questionRef": "2013 HL Q10(b)",
+    "stem": "",
+    "questionText": "It is proposed to install a Mechanical Heat Recovery with Ventilation (MHRV) system in a Passive House, as shown in the drawing. Draw a single line diagram of the given room layout and indicate a preferred location for the MHRV unit. Show a typical design layout for the ducting to the MHRV unit and indicate clearly the direction of airflow in all the ducts. Describe how a Mechanical Heat Recovery with Ventilation (MHRV) system works. Note: Show a plan of the room layout only, it is not necessary to show the furniture.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "layout",
+        "kind": "criterion",
+        "verbatim": "Room layout",
+        "marks": 6,
+        "contextNote": "A single-line plan of the given rooms.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "location",
+        "kind": "criterion",
+        "verbatim": "MHRV location",
+        "marks": 6,
+        "contextNote": "A preferred location for the unit, such as the utility room.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "ducting",
+        "kind": "criterion",
+        "verbatim": "Ducting layout including direction of airflow",
+        "marks": 6,
+        "contextNote": "Extract ducts from the kitchen, bathroom and utility and supply ducts to the living spaces and bedrooms, with the airflow shown in every duct, as in the scheme’s model plans.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "explanation",
+        "kind": "criterion",
+        "verbatim": "Explanation of how the system works",
+        "marks": 6,
+        "contextNote": "Moist warm extract air and filtered outdoor air pass through a heat exchanger of thin plates without mixing; the outdoor air is warmed and supplied to the living spaces; a post heater in cold weather and a summer bypass; a sound attenuator.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q10-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q10-mhrv",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10",
+      "title": "Passive House principles and MHRV",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original drawing retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q10-c",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-5",
+    "conceptId": "passive-house-mhrv-c",
+    "questionRef": "2013 HL Q10(c)",
+    "stem": "",
+    "questionText": "Discuss in detail two design considerations that should be taken into account when deciding a preferred location for the MHRV unit in a Passive House.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "consideration-1",
+        "kind": "criterion",
+        "verbatim": "Design consideration 1",
+        "marks": 6,
+        "contextNote": "Such as: energy conservation — the unit inside the thermal envelope, with short ducts and the extract rooms grouped.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "consideration-2",
+        "kind": "criterion",
+        "verbatim": "Design consideration 2",
+        "marks": 6,
+        "contextNote": "A second, different consideration. Such as: maintenance — accessible for the annual filter change; noise — at most 25 dB; aesthetics — in a utility room or kitchen cabinet.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q10-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q10-location",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10",
+      "title": "Passive House principles and MHRV",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original drawing retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q10-complete",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-6-4",
+    "conceptId": "passive-house-mhrv-complete",
+    "questionRef": "2013 HL Q10 — complete",
+    "stem": "",
+    "questionText": "(a) Using notes and freehand sketches as appropriate, discuss in detail the importance of any two of the following in the design of a Passive House: building orientation; thermal mass; primary energy demand.\n\n(b) It is proposed to install a Mechanical Heat Recovery with Ventilation (MHRV) system in a Passive House, as shown in the drawing. Draw a single line diagram of the given room layout and indicate a preferred location for the MHRV unit. Show a typical design layout for the ducting to the MHRV unit and indicate clearly the direction of airflow in all the ducts. Describe how a Mechanical Heat Recovery with Ventilation (MHRV) system works. Note: Show a plan of the room layout only, it is not necessary to show the furniture.\n\n(c) Discuss in detail two design considerations that should be taken into account when deciding a preferred location for the MHRV unit in a Passive House.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "a-items",
+        "kind": "anyN",
+        "verbatim": "Discussion of 2 design details",
+        "marks": 24,
+        "contextNote": "Any two of the three printed items, each note 6 and sketch 6 = 12. Building orientation: the glazed façade due south or within 30° of south to maximise solar gain, especially in winter; otherwise more insulation and careful fenestration are needed. Thermal mass: the ability of a material, usually the concrete floor, to absorb and store heat: it stores solar gain, stabilising the temperature against summer overheating and heating the home in winter; high heat capacity and density with moderate conductivity. Primary energy demand: the total energy for space and water heating, ventilation and all electricity, at most 120 kWh/m²a for certification (typically 60–70); electricity has a conversion factor of about 2.4.",
+        "group": {
+          "claimMax": 2,
+          "perOption": 12,
+          "options": [
+            "Building orientation",
+            "Thermal mass",
+            "Primary energy demand"
+          ]
+        }
+      },
+      {
+        "id": "b-layout",
+        "kind": "criterion",
+        "verbatim": "Room layout",
+        "marks": 6,
+        "contextNote": "A single-line plan of the given rooms.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-location",
+        "kind": "criterion",
+        "verbatim": "MHRV location",
+        "marks": 6,
+        "contextNote": "A preferred location for the unit, such as the utility room.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-ducting",
+        "kind": "criterion",
+        "verbatim": "Ducting layout including direction of airflow",
+        "marks": 6,
+        "contextNote": "Extract ducts from the kitchen, bathroom and utility and supply ducts to the living spaces and bedrooms, with the airflow shown in every duct, as in the scheme’s model plans.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "b-explanation",
+        "kind": "criterion",
+        "verbatim": "Explanation of how the system works",
+        "marks": 6,
+        "contextNote": "Moist warm extract air and filtered outdoor air pass through a heat exchanger of thin plates without mixing; the outdoor air is warmed and supplied to the living spaces; a post heater in cold weather and a summer bypass; a sound attenuator.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-consideration-1",
+        "kind": "criterion",
+        "verbatim": "Design consideration 1",
+        "marks": 6,
+        "contextNote": "Such as: energy conservation — the unit inside the thermal envelope, with short ducts and the extract rooms grouped.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "c-consideration-2",
+        "kind": "criterion",
+        "verbatim": "Design consideration 2",
+        "marks": 6,
+        "contextNote": "A second, different consideration. Such as: maintenance — accessible for the annual filter change; noise — at most 25 dB; aesthetics — in a utility room or kitchen cabinet.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q10-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2013-HL-q10-principles",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10",
+      "title": "Passive House principles and MHRV",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Original drawing retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2013-hl-q10-a",
+        "label": "a",
+        "marks": 24,
+        "rowIds": [
+          "a-items"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q10-b",
+        "label": "b",
+        "marks": 24,
+        "rowIds": [
+          "b-layout",
+          "b-location",
+          "b-ducting",
+          "b-explanation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q10-c",
+        "label": "c",
+        "marks": 12,
+        "rowIds": [
+          "c-consideration-1",
+          "c-consideration-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2013-hl-q10-alt-discussion",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "sustainable-housing-location-discussion",
+    "questionRef": "2013 HL Q10-alt — discussion",
+    "stem": "“It is worth questioning whether a large house built to passive standards but remote from schools, shops or workplace, may in the long term be less sustainable than a modestly-sized home built within walking or cycling distance from daily destinations. The cost of energy required to power but also to transport goods and people from place to place will increasingly form part of the debate on sustainability. Passive living is not just a factor of the energy rating of the fabric of the house, but of an holistic approach to how we as a society think about dwelling, about the reuse of existing space in the first instance and about the appropriateness of scale”. From House to Home: a long conversation - Orla Murphy, School of Architecture, UCD HOUSE - AN EXHIBITION OF 21ST CENTURY HOMES IN THE WEST OF IRELAND (2012) AVAYA: 25-29 Mervue Business Park, Mervue, Galway",
+    "questionText": "Discuss the above statement in detail.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "point-1",
+        "kind": "criterion",
+        "verbatim": "Discussion – point 1 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: a remote house needs large amounts of energy and materials for services and roads, while a modest home near schools, shops and work is reached by walking, cycling or public transport.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "point-2",
+        "kind": "criterion",
+        "verbatim": "Discussion – point 2 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: oil and gas are finite and over a third of energy goes on transport; sustainability must look beyond the BER of the fabric to a holistic approach to living.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "point-3",
+        "kind": "criterion",
+        "verbatim": "Discussion – point 3 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: Ireland builds the largest houses in the EU while town centres decay; reuse existing buildings, build modest, compact, flexible deep-green homes. Three distinct, well-argued points are needed.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q10-alt-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+      "title": "Sustainable housing beyond the energy rating (alternative Question 10)",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q10-alt-guidelines",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "sustainable-housing-location-guidelines",
+    "questionRef": "2013 HL Q10-alt — guidelines",
+    "stem": "“It is worth questioning whether a large house built to passive standards but remote from schools, shops or workplace, may in the long term be less sustainable than a modestly-sized home built within walking or cycling distance from daily destinations. The cost of energy required to power but also to transport goods and people from place to place will increasingly form part of the debate on sustainability. Passive living is not just a factor of the energy rating of the fabric of the house, but of an holistic approach to how we as a society think about dwelling, about the reuse of existing space in the first instance and about the appropriateness of scale”. From House to Home: a long conversation - Orla Murphy, School of Architecture, UCD HOUSE - AN EXHIBITION OF 21ST CENTURY HOMES IN THE WEST OF IRELAND (2012) AVAYA: 25-29 Mervue Business Park, Mervue, Galway",
+    "questionText": "Propose three guidelines that would promote the development of environmentally sustainable housing in Ireland.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "guideline-1",
+        "kind": "criterion",
+        "verbatim": "Guideline 1 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: universal design and flexible, lifetime housing as the norm; sustainability a condition of planning.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "guideline-2",
+        "kind": "criterion",
+        "verbatim": "Guideline 2 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: urban renewal with grant aid to refurbish decaying buildings; higher urban densities with cycle and walking routes.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "guideline-3",
+        "kind": "criterion",
+        "verbatim": "Guideline 3 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: deep-green planning guidelines for all developments; housing clusters and eco-villages as exemplars; incentives for low embodied energy design. Three distinct guidelines are needed.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q10-alt-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+      "title": "Sustainable housing beyond the energy rating (alternative Question 10)",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    }
+  },
+  {
+    "id": "cons-2013-hl-q10-alt-complete",
+    "subjectId": "construction-studies",
+    "year": 2013,
+    "level": "higher",
+    "section": "B",
+    "topicId": "cons-1-2",
+    "conceptId": "sustainable-housing-location-complete",
+    "questionRef": "2013 HL Q10-alt — complete",
+    "stem": "“It is worth questioning whether a large house built to passive standards but remote from schools, shops or workplace, may in the long term be less sustainable than a modestly-sized home built within walking or cycling distance from daily destinations. The cost of energy required to power but also to transport goods and people from place to place will increasingly form part of the debate on sustainability. Passive living is not just a factor of the energy rating of the fabric of the house, but of an holistic approach to how we as a society think about dwelling, about the reuse of existing space in the first instance and about the appropriateness of scale”. From House to Home: a long conversation - Orla Murphy, School of Architecture, UCD HOUSE - AN EXHIBITION OF 21ST CENTURY HOMES IN THE WEST OF IRELAND (2012) AVAYA: 25-29 Mervue Business Park, Mervue, Galway",
+    "questionText": "Discuss the above statement in detail and propose three guidelines that would promote the development of environmentally sustainable housing in Ireland.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 60,
+    "rows": [
+      {
+        "id": "discussion-point-1",
+        "kind": "criterion",
+        "verbatim": "Discussion – point 1 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: a remote house needs large amounts of energy and materials for services and roads, while a modest home near schools, shops and work is reached by walking, cycling or public transport.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "discussion-point-2",
+        "kind": "criterion",
+        "verbatim": "Discussion – point 2 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: oil and gas are finite and over a third of energy goes on transport; sustainability must look beyond the BER of the fabric to a holistic approach to living.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "discussion-point-3",
+        "kind": "criterion",
+        "verbatim": "Discussion – point 3 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: Ireland builds the largest houses in the EU while town centres decay; reuse existing buildings, build modest, compact, flexible deep-green homes. Three distinct, well-argued points are needed.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "guidelines-guideline-1",
+        "kind": "criterion",
+        "verbatim": "Guideline 1 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: universal design and flexible, lifetime housing as the norm; sustainability a condition of planning.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "guidelines-guideline-2",
+        "kind": "criterion",
+        "verbatim": "Guideline 2 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: urban renewal with grant aid to refurbish decaying buildings; higher urban densities with cycle and walking routes.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "guidelines-guideline-3",
+        "kind": "criterion",
+        "verbatim": "Guideline 3 (4 for point, 6 for discussion)",
+        "marks": 10,
+        "contextNote": "Point 4 and discussion 6. Such as: deep-green planning guidelines for all developments; housing clusters and eco-villages as exemplars; incentives for low embodied energy design. Three distinct guidelines are needed.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2013-HL-q10-alt-original",
+    "questionFigureIncludesPrompt": true,
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+      "title": "Sustainable housing beyond the energy rating (alternative Question 10)",
+      "pages": [
+        1,
+        5
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2013-hl-q10-alt-discussion",
+        "label": "Discussion of the statement",
+        "marks": 30,
+        "rowIds": [
+          "discussion-point-1",
+          "discussion-point-2",
+          "discussion-point-3"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2013-hl-q10-alt-guidelines",
+        "label": "Three guidelines",
+        "marks": 30,
+        "rowIds": [
+          "guidelines-guideline-1",
+          "guidelines-guideline-2",
+          "guidelines-guideline-3"
+        ]
+      }
+    ]
   }
 ]
