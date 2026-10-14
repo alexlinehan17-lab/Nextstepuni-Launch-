@@ -10,6 +10,11 @@
 .student-home button:focus-visible,.direction-page :is(button,select):focus-visible,.module-completion button:focus-visible {outline:3px solid #b74b10;outline-offset:5px}
 .sh-date {display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--student-muted);font-size:12px}
 .sh-profile {display:none}
+/* iPads run the mobile app design with no sidebar at every width, so the
+   profile sheet (settings, Your setup, North Star) must stay reachable from
+   Home above the phone breakpoint too. */
+.mobile-home-shell .sh-profile {display:block;position:relative;flex-shrink:0;overflow:hidden;border:1.5px solid var(--student-ink);border-radius:50%}
+.mobile-home-shell .sh-profile i {position:absolute;right:0;top:0;width:10px;height:10px;border-radius:50%;background:#ff7915}
 .sh-home-actions {display:flex;align-items:center;gap:8px;flex-shrink:0}
 .sh-feedback {display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:44px;padding:9px 11px;border:1px solid var(--student-ink);border-radius:999px;background:var(--student-paper);color:inherit;font-size:12px;font-weight:600}
 .sh-feedback:hover {background:var(--surface-soft)}

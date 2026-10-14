@@ -959,6 +959,7 @@ const App: React.FC = () => {
           onGoToInsights={handleGoToInsights}
           onGoToReferences={() => nav.navigateToAccreditation()}
           onGoToYearPlans={() => nav.navigateToYearPlans()}
+          onGoToYourSetup={() => nav.navigateToYourSetup()}
           onOpenSiteGuide={() => setSiteGuideOpen(true)}
           onOpenFeedback={() => setFeedbackOpen(true)}
           completedCount={completedCount}

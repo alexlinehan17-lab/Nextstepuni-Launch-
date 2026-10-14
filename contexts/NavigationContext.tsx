@@ -14,7 +14,8 @@ export type ViewState =
   | 'tree' | 'modules' | 'category' | 'module' | 'innovation-zone'
   | 'dashboard' | 'learning-paths' | 'onboarding'
   | 'my-journey' | 'my-direction' | 'study-session' | 'insights'
-  | 'jc-coming-soon' | 'cut-content' | 'accreditation' | 'year-plans' | 'wip-tools';
+  | 'jc-coming-soon' | 'cut-content' | 'accreditation' | 'year-plans' | 'wip-tools'
+  | 'your-setup';
 
 export type DashboardSection = 'overview' | 'study' | 'confidence' | 'practice' | 'milestones';
 
@@ -44,6 +45,7 @@ type NavigationAction =
   | { type: 'NAVIGATE_TO_CUT_CONTENT' }
   | { type: 'NAVIGATE_TO_ACCREDITATION' }
   | { type: 'NAVIGATE_TO_YEAR_PLANS' }
+  | { type: 'NAVIGATE_TO_YOUR_SETUP' }
   | { type: 'NAVIGATE_TO_WIP_TOOLS' }
   | { type: 'SET_DASHBOARD_SECTION'; section: DashboardSection }
   | { type: 'SET_ACTIVE_TOOL'; tool: string | null }
@@ -68,6 +70,7 @@ interface NavigationContextValue {
   navigateToCutContent: () => void;
   navigateToAccreditation: () => void;
   navigateToYearPlans: () => void;
+  navigateToYourSetup: () => void;
   navigateToWipTools: () => void;
   setDashboardSection: (section: DashboardSection) => void;
   setActiveTool: (tool: string | null) => void;
@@ -81,6 +84,7 @@ const VALID_VIEWS = new Set<string>([
   'dashboard', 'learning-paths', 'onboarding',
   'my-journey', 'my-direction', 'study-session', 'insights',
   'jc-coming-soon', 'cut-content', 'accreditation', 'year-plans', 'wip-tools',
+  'your-setup',
 ]);
 
 const VALID_DASHBOARD_SECTIONS = new Set<DashboardSection>([
@@ -184,6 +188,8 @@ function navigationReducer(state: NavigationState, action: NavigationAction): Na
       return { ...state, viewState: 'accreditation', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_YEAR_PLANS':
       return { ...state, viewState: 'year-plans', currentModuleId: null, cameFromJourney: false, activeTool: null };
+    case 'NAVIGATE_TO_YOUR_SETUP':
+      return { ...state, viewState: 'your-setup', currentCategory: null, currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_WIP_TOOLS':
       return { ...state, viewState: 'wip-tools', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'SET_DASHBOARD_SECTION':
@@ -416,6 +422,11 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     window.scrollTo(0, 0);
   }, [navigate]);
 
+  const navigateToYourSetup = useCallback(() => {
+    navigate({ type: 'NAVIGATE_TO_YOUR_SETUP' });
+    window.scrollTo(0, 0);
+  }, [navigate]);
+
   const navigateToWipTools = useCallback(() => {
     navigate({ type: 'NAVIGATE_TO_WIP_TOOLS' });
     window.scrollTo(0, 0);
@@ -458,6 +469,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     navigateToCutContent,
     navigateToAccreditation,
     navigateToYearPlans,
+    navigateToYourSetup,
     navigateToWipTools,
     setDashboardSection,
     setActiveTool,
