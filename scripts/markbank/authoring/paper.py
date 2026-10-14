@@ -154,6 +154,11 @@ MISPRINTS = {
     ('biology', 2020, 'ol'): [
         ('(iii) What is meant by the term heterotrophic?', lambda t: '(ii)' + t[5:]),
     ],
+    # 2018 HL prints Q14(a)'s fifth part as "(iv)" again; the scheme numbers
+    # it (v), between (iv) and (vi).
+    ('biology', 2018, 'hl'): [
+        ('(iv) The graph below shows variations', lambda t: '(v)' + t[4:]),
+    ],
 }
 # A question head the text layer welds onto the END of the block before it,
 # with no closed sentence between them for INLINE_QHEAD to split at: 2020 OL

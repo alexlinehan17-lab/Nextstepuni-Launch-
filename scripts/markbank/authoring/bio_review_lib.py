@@ -298,14 +298,18 @@ def join_lines(segments):
 # The ledger is data. These constructors only record selectors; nothing is
 # lifted until build() runs against the PDFs.
 
-def Q(page, start, end=None, doc=None, after=None, before=None, nth=1, br=False, end_nth=1):
+def Q(page, start, end=None, doc=None, after=None, before=None, nth=1, br=False, end_nth=1,
+      piece=None, psep=None):
     """A slice of the QUESTION paper (doc defaults to the task's booklet).
     `br` starts it on a new line, as the paper sets printed options; `end_nth`
     closes on the nth printed close of `end` (a sentence ending the same way
-    earlier in the ask)."""
+    earlier in the ask). `piece`/`psep` keep one entry of a line the paper
+    sets with several numbered asks side by side ("1. The initial decrease in
+    mass   2. The subsequent increase in mass."), as S() does for the scheme."""
     return {'src': 'paper', 'doc': doc, 'page': page, 'start': start, 'end': end,
             'after': after, 'before': before, 'nth': nth, 'br': br,
-            **({'end_nth': end_nth} if end_nth != 1 else {})}
+            **({'end_nth': end_nth} if end_nth != 1 else {}),
+            **({'piece': piece, 'psep': psep} if piece else {})}
 
 
 def M(marker, page, doc=None):

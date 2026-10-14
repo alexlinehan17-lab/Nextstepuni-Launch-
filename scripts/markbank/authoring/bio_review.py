@@ -490,7 +490,10 @@ def build(ledger, year, level):
         seen_ids.add(cid)
         # Route cards share one task: count its tariff once.
         first_route = not t['route'] or t['route'] == ledger.ROUTES[t['ref']][0]
-        lk = ladder_key(ledger, qn, letter)
+        # LADDER_OF names the ladder of a task whose part holds more than one
+        # (2018 HL Q11(b): the labels' ladder, then "2(3) + 2 + 2(1)" over
+        # (ii) and (iii)); every other task finds its ladder by question/letter.
+        lk = getattr(ledger, 'LADDER_OF', {}).get(t['key']) or ladder_key(ledger, qn, letter)
         if first_route:
             ck = key_part if key_part in ledger.CHECKSUMS else qn
             units_by[ck].update(task_units)
