@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T09:36:14.904Z",
+  "generatedAt": "2026-10-14T09:55:18.717Z",
   "scope": {
     "included": "Factual State-exam topic associations captured from every current StudyClix Leaving Certificate topic page.",
     "excluded": "Commercial mock questions and all provider-owned question text, solutions, notes, media and PDFs.",
@@ -11,9 +11,9 @@
     "subjectsWithExactCrosswalks": 32,
     "referenceTopics": 1609,
     "referenceOfficialAssociations": 37105,
-    "matched": 27211,
+    "matched": 27210,
     "sourceBlocked": 9856,
-    "referenceAnomaly": 38,
+    "referenceAnomaly": 39,
     "unreviewed": 0,
     "sourceUnavailableTopics": 2,
     "topicsWithGaps": 1341
@@ -3154,9 +3154,9 @@
       "totals": {
         "referenceTopics": 32,
         "referenceOfficialAssociations": 690,
-        "matched": 556,
+        "matched": 555,
         "sourceBlocked": 98,
-        "referenceAnomaly": 36,
+        "referenceAnomaly": 37,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
         "topicsWithGaps": 27
@@ -3187,9 +3187,9 @@
           "label": "Art as Social Commentary or Commentator",
           "sourcePath": "/leaving-certificate/art/higher/section-a-todays-world/art-as-social-commentary-or-commentator",
           "referenceOfficialAssociations": 14,
-          "matched": 9,
+          "matched": 8,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3211,6 +3211,10 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section A - Question 5 - Part B",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2013 - Section 3 - Question 17",
+              "resolution": "reference-anomaly"
             }
           ]
         },

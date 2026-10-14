@@ -425,6 +425,12 @@ const REVIEWED_REFERENCE_ANOMALIES = [
     topicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
     evidence: "Q9 is 'Holy Trinity' by Masaccio (1401-c.1428), illustrated on the accompanying sheet: Masaccio is The Renaissance (c. 1300-1600s), not Realism, Impressionism and Post-Impressionism.",
   },
+  {
+    level: 'higher', year: 2013, n: '17',
+    referenceTopicId: 'art-higher-art-as-social-commentary-or-commentator',
+    topicId: 'art-higher-artists-theory-and-thinking',
+    evidence: "Q17 is \"A curator's work involves planning all aspects of an exhibition\": (a) the main steps a curator took in planning and mounting a named exhibition and (b) curating an exhibition of Transition Year artwork. It comments on no social issue; it is a curating and exhibition question, filed with the gallery questions under Artists: Theory and Thinking (as 2024 HL Q5(a) \"the role of the curator\"), not Art as Social Commentary or Commentator.",
+  },
 ];
 const anomalyFor = (level, year, n, topicId) => REVIEWED_REFERENCE_ANOMALIES.find(item => (
   item.level === level && item.year === year && item.n === n && item.referenceTopicId === topicId
@@ -850,15 +856,15 @@ if (
   throw new Error('Every logical Art card must be exactly matched, reviewed, or explicitly retained');
 }
 if (
-  matchedAssociations.length !== 556
+  matchedAssociations.length !== 555
   || sourceBlockedAssociations.length !== 98
-  || referenceAnomalyAssociations.length !== 36
-  || exactTopicsByCard.size !== 508
-  || reviewedTopicsByCard.size !== 35
-  || reviewedOnlyCards.length !== 33
-  || matchedQuestionTopicLinks !== 548
-  || reviewedOptionTopics.length !== 126
-  || reviewedSpecificTopics.length !== 40
+  || referenceAnomalyAssociations.length !== 37
+  || exactTopicsByCard.size !== 507
+  || reviewedTopicsByCard.size !== 36
+  || reviewedOnlyCards.length !== 34
+  || matchedQuestionTopicLinks !== 547
+  || reviewedOptionTopics.length !== 140
+  || reviewedSpecificTopics.length !== 42
   || retainedLocalCards.length !== 536
   || retainedWrittenLogicalCards !== 144
   || retainedPracticalLogicalCards !== 392

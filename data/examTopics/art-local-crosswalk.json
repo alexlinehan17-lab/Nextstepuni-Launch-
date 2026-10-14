@@ -30,14 +30,14 @@
     "referenceOfficialAssociations": 690,
     "referenceMockAssociations": 609,
     "referenceProviderSampleAssociations": 0,
-    "matchedAssociations": 556,
+    "matchedAssociations": 555,
     "sourceBlockedAssociations": 98,
-    "referenceAnomalyAssociations": 36,
-    "matchedLogicalCards": 508,
-    "reviewedLogicalCards": 33,
-    "reviewedOptionTopics": 126,
-    "reviewedSpecificTopics": 40,
-    "matchedQuestionTopicLinks": 548,
+    "referenceAnomalyAssociations": 37,
+    "matchedLogicalCards": 507,
+    "reviewedLogicalCards": 34,
+    "reviewedOptionTopics": 140,
+    "reviewedSpecificTopics": 42,
+    "matchedQuestionTopicLinks": 547,
     "retainedLocalLogicalCards": 536,
     "retainedWrittenLogicalCards": 144,
     "retainedPracticalLogicalCards": 392,
@@ -510,7 +510,7 @@
       "sitting": "main",
       "section": "3",
       "questionNumber": "17",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -518,7 +518,9 @@
         "paperKey": "single",
         "fileid": "LC014ALP013EV.pdf",
         "questionNumber": "17"
-      }
+      },
+      "filedUnder": "art-higher-artists-theory-and-thinking",
+      "reason": "StudyClix files this 2013 higher heading under art-higher-art-as-social-commentary-or-commentator. Decided 2026-10-12 from the SEC paper: Q17 is \"A curator's work involves planning all aspects of an exhibition\": (a) the main steps a curator took in planning and mounting a named exhibition and (b) curating an exhibition of Transition Year artwork. It comments on no social issue; it is a curating and exhibition question, filed with the gallery questions under Artists: Theory and Thinking (as 2024 HL Q5(a) \"the role of the curator\"), not Art as Social Commentary or Commentator. NextStepUni files the question under art-higher-artists-theory-and-thinking, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-higher-artists-processes-and-media",
@@ -20457,6 +20459,146 @@
   "reviewedOptionTopics": [
     {
       "level": "higher",
+      "year": 2013,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a self-portrait of a named artist",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-higher-section-b-generic-questions",
+      "heading": "2013 - Question 14 - a self-portrait of a named artist"
+    },
+    {
+      "level": "higher",
+      "year": 2013,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a sculpture by Donatello (1386 -1466)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2013 - Question 14 - a sculpture by Donatello (1386 -1466)"
+    },
+    {
+      "level": "higher",
+      "year": 2013,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a painting by Titian (c.1488 -1576)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-higher-the-renaissance-c-1300-1600s",
+      "heading": "2013 - Question 14 - a painting by Titian (c.1488 -1576)"
+    },
+    {
+      "level": "higher",
+      "year": 2013,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a painting by Goya (1746 -1828)",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-higher-section-b-generic-questions",
+      "heading": "2013 - Question 14 - a painting by Goya (1746 -1828)"
+    },
+    {
+      "level": "higher",
+      "year": 2013,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a building by Le Corbusier (1887-1965)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2013 - Question 14 - a building by Le Corbusier (1887-1965)"
+    },
+    {
+      "level": "higher",
+      "year": 2013,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "The International Gothic style",
+      "canonicalNodeId": "art-4-0",
+      "topicId": "art-higher-romanesque-and-gothic",
+      "heading": "2013 - Question 15 - The International Gothic style"
+    },
+    {
+      "level": "higher",
+      "year": 2013,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Romanticism",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-higher-section-b-generic-questions",
+      "heading": "2013 - Question 15 - Romanticism"
+    },
+    {
+      "level": "higher",
+      "year": 2013,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Pointillism",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-higher-realism-impressionism-and-post-impressionism",
+      "heading": "2013 - Question 15 - Pointillism"
+    },
+    {
+      "level": "higher",
+      "year": 2013,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Cubism",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2013 - Question 15 - Cubism"
+    },
+    {
+      "level": "ordinary",
+      "year": 2013,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "11",
+      "option": "‘The Lamentation’ by Giotto (c.1267-1337)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2013 - Question 11 - ‘The Lamentation’ by Giotto (c.1267-1337)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2013,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "11",
+      "option": "‘David’ by Michelangelo (1475 -1564)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2013 - Question 11 - ‘David’ by Michelangelo (1475 -1564)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2013,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "11",
+      "option": "‘The Taking of Christ’ by Caravaggio (1571-1610)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-ordinary-the-baroque-c-1600-1700s",
+      "heading": "2013 - Question 11 - ‘The Taking of Christ’ by Caravaggio (1571-1610)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2013,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "11",
+      "option": "‘L’Absinthe’ by Edgar Degas (1834 -1917)",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-ordinary-europe-realism-impressionism-and-post-impressionism",
+      "heading": "2013 - Question 11 - ‘L’Absinthe’ by Edgar Degas (1834 -1917)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2013,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "11",
+      "option": "‘Sunflowers’ by Vincent Van Gogh (1853 -1890)",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-ordinary-europe-realism-impressionism-and-post-impressionism",
+      "heading": "2013 - Question 11 - ‘Sunflowers’ by Vincent Van Gogh (1853 -1890)"
+    },
+    {
+      "level": "higher",
       "year": 2014,
       "fileid": "LC014ALP013EV.pdf",
       "questionNumber": "14",
@@ -22087,6 +22229,24 @@
       "questionNumber": "17",
       "topicIds": [
         "art-higher-art-and-the-environment"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2013,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "18",
+      "topicIds": [
+        "art-higher-art-and-the-environment"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2013,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "20",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
       ]
     }
   ]
