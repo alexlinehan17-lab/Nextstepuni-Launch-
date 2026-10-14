@@ -30607,4 +30607,1720 @@ export const CARDS: SecCard[] = [
           "includesPrompt": true
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q1-a", topicId: "cons-1-5", conceptId: "truss-wall-window-section-a",
+    section: "B", questionRef: "2010 HL Q1(a)",
+    stem: "The sketch shows portion of an external wall, roof and a window of a dwelling house. The external wall is a 350 mm concrete block wall with an insulated cavity. The roof has prefabricated trussed rafters, it is slated and has a pitch of 30 degrees. The house has an internal span of 6.0 metres. The window is an outward opening triple-glazed wooden casement window and is 600 mm in height. The fixed frame of the window is 150 mm × 80 mm.",
+    questionText: "To a scale of 1:10, draw a vertical section through the external wall, window and roof structure. The section should show the typical construction details from 300 mm below the concrete cill, through the fixed frame of the window and include the roof to the level of the ridge. Include four typical dimensions of the roof structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 56,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 12 details ×4 marks", marks: 48, contextNote: "Best twelve details, 4 each (drawing 3, annotation 1). Wall: inner and outer leaf; internal and external plaster; 150 mm cavity with 100 mm insulation; cavity closer; concrete lintels; stepped DPC. Window: concrete cill with DPC behind; wooden frame cill; window board; triple-glazed unit; frame head; insulation behind the cill. Roof: fascia, soffit and gutter; eaves vent; felt and battens; slates; ceiling joist; attic insulation; strut.", permittedMarks: [0,4,8,12,16,20,24,28,32,36,40,44,48] },
+    { id: "dimensions", kind: "criterion", verbatim: "Four typical dimensions of roof structure", marks: 4, contextNote: "Four typical dimensions of the roof structure, 1 each, such as wallplate 100 × 75, ceiling 150 × 50, rafter 150 × 50, strut 100 × 50 and batten 50 × 30 mm.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Scale & Drafting", marks: 4, contextNote: "Scale and drafting of the section.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Trussed roof, wall and window section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the cavity closure in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q1-original.png",
+          "srcHash": "52f8afbdda69210cc489e522c0a35864",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 1: the printed question with a sketch of the wall, casement window and trussed slated roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q1-section.png",
+          "srcHash": "e462bbdf9fedccc5caf03631087d047e",
+          "alt": "SEC model sections through the wall, window and trussed roof, with typical roof sizes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q1-b", topicId: "cons-3-3", conceptId: "truss-wall-window-section-b",
+    section: "B", questionRef: "2010 HL Q1(b)",
+    stem: "The sketch shows portion of an external wall, roof and a window of a dwelling house. The external wall is a 350 mm concrete block wall with an insulated cavity. The roof has prefabricated trussed rafters, it is slated and has a pitch of 30 degrees. The house has an internal span of 6.0 metres. The window is an outward opening triple-glazed wooden casement window and is 600 mm in height. The fixed frame of the window is 150 mm × 80 mm.",
+    questionText: "Indicate clearly on the drawing how the cavity is closed at wallplate level. Note: Show the details for one external wall, one half of the roof from eaves to ridge level and include three courses of slate at eaves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "closure", kind: "criterion", verbatim: "4 marks for indicating how cavity is closed at wallplate level", marks: 4, contextNote: "Show how the cavity is closed at wallplate level, such as with a proprietary cavity closer or a block of insulation, as in the scheme’s model sections.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Trussed roof, wall and window section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the cavity closure in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q1-original.png",
+          "srcHash": "52f8afbdda69210cc489e522c0a35864",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 1: the printed question with a sketch of the wall, casement window and trussed slated roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q1-section.png",
+          "srcHash": "e462bbdf9fedccc5caf03631087d047e",
+          "alt": "SEC model sections through the wall, window and trussed roof, with typical roof sizes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q1-complete", topicId: "cons-1-5", conceptId: "truss-wall-window-section-complete",
+    section: "B", questionRef: "2010 HL Q1 — complete",
+    stem: "The sketch shows portion of an external wall, roof and a window of a dwelling house. The external wall is a 350 mm concrete block wall with an insulated cavity. The roof has prefabricated trussed rafters, it is slated and has a pitch of 30 degrees. The house has an internal span of 6.0 metres. The window is an outward opening triple-glazed wooden casement window and is 600 mm in height. The fixed frame of the window is 150 mm × 80 mm.",
+    questionText: "(a) To a scale of 1:10, draw a vertical section through the external wall, window and roof structure. The section should show the typical construction details from 300 mm below the concrete cill, through the fixed frame of the window and include the roof to the level of the ridge. Include four typical dimensions of the roof structure. (b) Indicate clearly on the drawing how the cavity is closed at wallplate level. Note: Show the details for one external wall, one half of the roof from eaves to ridge level and include three courses of slate at eaves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 12 details ×4 marks", marks: 48, contextNote: "Best twelve details, 4 each (drawing 3, annotation 1). Wall: inner and outer leaf; internal and external plaster; 150 mm cavity with 100 mm insulation; cavity closer; concrete lintels; stepped DPC. Window: concrete cill with DPC behind; wooden frame cill; window board; triple-glazed unit; frame head; insulation behind the cill. Roof: fascia, soffit and gutter; eaves vent; felt and battens; slates; ceiling joist; attic insulation; strut.", permittedMarks: [0,4,8,12,16,20,24,28,32,36,40,44,48] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Four typical dimensions of roof structure", marks: 4, contextNote: "Four typical dimensions of the roof structure, 1 each, such as wallplate 100 × 75, ceiling 150 × 50, rafter 150 × 50, strut 100 × 50 and batten 50 × 30 mm.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Scale & Drafting", marks: 4, contextNote: "Scale and drafting of the section.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-closure", kind: "criterion", verbatim: "4 marks for indicating how cavity is closed at wallplate level", marks: 4, contextNote: "Show how the cavity is closed at wallplate level, such as with a proprietary cavity closer or a block of insulation, as in the scheme’s model sections.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-hl-q1-a","label":"a","marks":56,"rowIds":["a-details","a-dimensions","a-presentation"]},{"sourceCardId":"cons-2010-hl-q1-b","label":"b","marks":4,"rowIds":["b-closure"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Trussed roof, wall and window section",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction, dimension and scale/drafting marks belong to part (a); the cavity closure in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q1-original.png",
+          "srcHash": "52f8afbdda69210cc489e522c0a35864",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 1: the printed question with a sketch of the wall, casement window and trussed slated roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q1-section.png",
+          "srcHash": "e462bbdf9fedccc5caf03631087d047e",
+          "alt": "SEC model sections through the wall, window and trussed roof, with typical roof sizes.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q2-a", topicId: "cons-1-2", conceptId: "wheelchair-open-plan-a",
+    section: "B", questionRef: "2010 HL Q2(a)",
+    stem: "The accompanying diagram shows an open-plan living, dining and kitchen space suitable for a person in a wheelchair. The floor is an insulated solid concrete ground floor.",
+    questionText: "Using notes and freehand sketches show the design detailing at the entrance door to ensure that rainwater is removed from the threshold area and that the entrance is suitable for a person in a wheelchair.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 32,
+    rows: [
+    { id: "detail-1", kind: "criterion", verbatim: "Design detail 1 - note 8 marks, sketch 8 marks", marks: 16, contextNote: "Note 8 and sketch 8. Such as: a level entrance with a 1500 mm turning circle; a ramp no steeper than 1:20; a drainage channel beside the threshold to remove rainwater quickly.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "detail-2", kind: "criterion", verbatim: "Design detail 2 - note 8 marks, sketch 8 marks", marks: 16, contextNote: "A second, different detail: note 8 and sketch 8. Such as: a reinforced concrete threshold with a DPC tray behind it; a proprietary threshold no more than 15 mm high; insulation, radon barrier and floor build-up.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "An entrance and open-plan living for a wheelchair user",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original diagram retained. The two areas in (b) are chosen from the diagram; the scheme marks any two alike."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q2-original.png",
+          "srcHash": "bf6faab2abcf1f9827da2e56d474fd14",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 2: the printed question with the plan of the open-plan living, dining and kitchen space and its entrance.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q2-entrance",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q2-entrance.png",
+          "srcHash": "ac945ae7cf667b80b55d003819fc4118",
+          "alt": "SEC 2010 Higher marking scheme notes and sketch on the accessible entrance threshold.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q2-b", topicId: "cons-1-2", conceptId: "wheelchair-open-plan-b",
+    section: "B", questionRef: "2010 HL Q2(b)",
+    stem: "The accompanying diagram shows an open-plan living, dining and kitchen space suitable for a person in a wheelchair. The floor is an insulated solid concrete ground floor.",
+    questionText: "From the given diagram, select any two areas that need specific consideration to ensure suitability for a person in a wheelchair. For each area selected, using notes and freehand sketches, show the specific design detailing that ensures ease of use for a person in a wheelchair. Indicate on your design sketches typical dimensions as appropriate.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 28,
+    rows: [
+    { id: "area-1", kind: "criterion", verbatim: "Area 1", marks: 14, contextNote: "Note 7 and sketch 7, with dimensions. Such as, the dining area: a circular, pedestal table at 700–800 mm; space round it; switches and sockets at 900–1200 mm; low cills and lever handles.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    { id: "area-2", kind: "criterion", verbatim: "Area 2", marks: 14, contextNote: "A second, different area: note 7 and sketch 7. Such as, the kitchen: sink, cooker and fridge in a close triangle; a low sink with open knee space and lever taps; worktop beside the cooker and appliances; eye-level oven; doors at least 800 mm clear.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "An entrance and open-plan living for a wheelchair user",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original diagram retained. The two areas in (b) are chosen from the diagram; the scheme marks any two alike."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q2-original.png",
+          "srcHash": "bf6faab2abcf1f9827da2e56d474fd14",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 2: the printed question with the plan of the open-plan living, dining and kitchen space and its entrance.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q2-areas",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q2-areas.png",
+          "srcHash": "0766ef80caeceb8e7ece61af8417d339",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on the dining and kitchen areas for a wheelchair user (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q2-complete", topicId: "cons-1-2", conceptId: "wheelchair-open-plan-complete",
+    section: "B", questionRef: "2010 HL Q2 — complete",
+    stem: "The accompanying diagram shows an open-plan living, dining and kitchen space suitable for a person in a wheelchair. The floor is an insulated solid concrete ground floor.",
+    questionText: "(a) Using notes and freehand sketches show the design detailing at the entrance door to ensure that rainwater is removed from the threshold area and that the entrance is suitable for a person in a wheelchair. (b) From the given diagram, select any two areas that need specific consideration to ensure suitability for a person in a wheelchair. For each area selected, using notes and freehand sketches, show the specific design detailing that ensures ease of use for a person in a wheelchair. Indicate on your design sketches typical dimensions as appropriate.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-detail-1", kind: "criterion", verbatim: "Design detail 1 - note 8 marks, sketch 8 marks", marks: 16, contextNote: "Note 8 and sketch 8. Such as: a level entrance with a 1500 mm turning circle; a ramp no steeper than 1:20; a drainage channel beside the threshold to remove rainwater quickly.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "a-detail-2", kind: "criterion", verbatim: "Design detail 2 - note 8 marks, sketch 8 marks", marks: 16, contextNote: "A second, different detail: note 8 and sketch 8. Such as: a reinforced concrete threshold with a DPC tray behind it; a proprietary threshold no more than 15 mm high; insulation, radon barrier and floor build-up.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "b-area-1", kind: "criterion", verbatim: "Area 1", marks: 14, contextNote: "Note 7 and sketch 7, with dimensions. Such as, the dining area: a circular, pedestal table at 700–800 mm; space round it; switches and sockets at 900–1200 mm; low cills and lever handles.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    { id: "b-area-2", kind: "criterion", verbatim: "Area 2", marks: 14, contextNote: "A second, different area: note 7 and sketch 7. Such as, the kitchen: sink, cooker and fridge in a close triangle; a low sink with open knee space and lever taps; worktop beside the cooker and appliances; eye-level oven; doors at least 800 mm clear.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-hl-q2-a","label":"a","marks":32,"rowIds":["a-detail-1","a-detail-2"]},{"sourceCardId":"cons-2010-hl-q2-b","label":"b","marks":28,"rowIds":["b-area-1","b-area-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "An entrance and open-plan living for a wheelchair user",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original diagram retained. The two areas in (b) are chosen from the diagram; the scheme marks any two alike."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q2-original.png",
+          "srcHash": "bf6faab2abcf1f9827da2e56d474fd14",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 2: the printed question with the plan of the open-plan living, dining and kitchen space and its entrance.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q2-entrance",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q2-entrance.png",
+          "srcHash": "ac945ae7cf667b80b55d003819fc4118",
+          "alt": "SEC 2010 Higher marking scheme notes and sketch on the accessible entrance threshold.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q3-a", topicId: "cons-6-2", conceptId: "internal-external-insulation-a",
+    section: "B", questionRef: "2010 HL Q3(a)",
+    stem: "The external wall of a dwelling house built in the 1970s is a 300 mm concrete block wall with 40 mm expanded polystyrene insulation in the cavity. It has been decided to upgrade the thermal properties of the external wall by using either: an internal insulation system or an external insulation system.",
+    questionText: "For each of the insulation systems outlined above, show using notes and freehand sketches, one method of applying the insulation material. For each insulation system, include the following in your sketches: method of fixing; insulation material and its thickness; surface finish.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 48,
+    rows: [
+    { id: "internal", kind: "criterion", verbatim: "Internal Insulation System (note 4 marks, sketch 4 marks)", marks: 24, contextNote: "Fixing, insulation and its thickness, and finish, each note 4 and sketch 4. Such as: insulated dry-lining board on adhesive dabs or mechanical fixings, or battens at 400 mm with insulation between; rigid phenolic foam at least 80 mm with 12.5 mm plasterboard and an integral vapour barrier; a skim finish.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24] },
+    { id: "external", kind: "criterion", verbatim: "External Insulation System (note 4 marks, sketch 4 marks)", marks: 24, contextNote: "Fixing, insulation and its thickness, and finish, each note 4 and sketch 4. Such as: rigid phenolic foam 80–300 mm or EPS bonded with base coat adhesive and anchor bolts; fibreglass mesh; two coats of acrylic render; angle beads and sealed cill and head details.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Internal and external insulation of a cavity wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Both printed systems are required (\"for each of the insulation systems\"); not a choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q3-original.png",
+          "srcHash": "2c2d2cfcae247ef50b726a4d660b8093",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 3: the printed question on internal and external insulation of a 1970s cavity wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q3-systems",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q3-systems.png",
+          "srcHash": "6ba73776105a14c925249f2003c19bcb",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on internal dry lining and external insulation, with cill and head details (three pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q3-b", topicId: "cons-6-2", conceptId: "internal-external-insulation-b",
+    section: "B", questionRef: "2010 HL Q3(b)",
+    stem: "The external wall of a dwelling house built in the 1970s is a 300 mm concrete block wall with 40 mm expanded polystyrene insulation in the cavity. It has been decided to upgrade the thermal properties of the external wall by using either: an internal insulation system or an external insulation system.",
+    questionText: "Discuss in detail two advantages of each system of insulation and recommend a preferred system of insulation for the house outlined above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "internal-advantages", kind: "criterion", verbatim: "Two advantages of each system (2×2 marks each)", marks: 4, contextNote: "Two advantages of internal insulation, 2 each. Such as: the elevations unchanged, no planning needed; the character of older buildings kept; rooms warm up faster; easy to install.", permittedMarks: [0,1,2,3,4] },
+    { id: "external-advantages", kind: "criterion", verbatim: "Two advantages of each system (2×2 marks each)", marks: 4, contextNote: "Two advantages of external insulation, 2 each. Such as: no loss of floor space or disruption inside; an upgraded appearance and BER; the wall’s thermal mass stores heat for the rooms.", permittedMarks: [0,1,2,3,4] },
+    { id: "recommendation", kind: "criterion", verbatim: "Recommendation", marks: 4, contextNote: "A preferred system for the house, internal or external, with a reason.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Internal and external insulation of a cavity wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Both printed systems are required (\"for each of the insulation systems\"); not a choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q3-original.png",
+          "srcHash": "2c2d2cfcae247ef50b726a4d660b8093",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 3: the printed question on internal and external insulation of a 1970s cavity wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q3-advantages",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q3-advantages.png",
+          "srcHash": "03066e1a0e16dc1e047b40f03b1020ed",
+          "alt": "SEC 2010 Higher marking scheme notes on the advantages of internal and external insulation.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q3-complete", topicId: "cons-6-2", conceptId: "internal-external-insulation-complete",
+    section: "B", questionRef: "2010 HL Q3 — complete",
+    stem: "The external wall of a dwelling house built in the 1970s is a 300 mm concrete block wall with 40 mm expanded polystyrene insulation in the cavity. It has been decided to upgrade the thermal properties of the external wall by using either: an internal insulation system or an external insulation system.",
+    questionText: "(a) For each of the insulation systems outlined above, show using notes and freehand sketches, one method of applying the insulation material. For each insulation system, include the following in your sketches: method of fixing; insulation material and its thickness; surface finish. (b) Discuss in detail two advantages of each system of insulation and recommend a preferred system of insulation for the house outlined above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-internal", kind: "criterion", verbatim: "Internal Insulation System (note 4 marks, sketch 4 marks)", marks: 24, contextNote: "Fixing, insulation and its thickness, and finish, each note 4 and sketch 4. Such as: insulated dry-lining board on adhesive dabs or mechanical fixings, or battens at 400 mm with insulation between; rigid phenolic foam at least 80 mm with 12.5 mm plasterboard and an integral vapour barrier; a skim finish.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24] },
+    { id: "a-external", kind: "criterion", verbatim: "External Insulation System (note 4 marks, sketch 4 marks)", marks: 24, contextNote: "Fixing, insulation and its thickness, and finish, each note 4 and sketch 4. Such as: rigid phenolic foam 80–300 mm or EPS bonded with base coat adhesive and anchor bolts; fibreglass mesh; two coats of acrylic render; angle beads and sealed cill and head details.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24] },
+    { id: "b-internal-advantages", kind: "criterion", verbatim: "Two advantages of each system (2×2 marks each)", marks: 4, contextNote: "Two advantages of internal insulation, 2 each. Such as: the elevations unchanged, no planning needed; the character of older buildings kept; rooms warm up faster; easy to install.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-external-advantages", kind: "criterion", verbatim: "Two advantages of each system (2×2 marks each)", marks: 4, contextNote: "Two advantages of external insulation, 2 each. Such as: no loss of floor space or disruption inside; an upgraded appearance and BER; the wall’s thermal mass stores heat for the rooms.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-recommendation", kind: "criterion", verbatim: "Recommendation", marks: 4, contextNote: "A preferred system for the house, internal or external, with a reason.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-hl-q3-a","label":"a","marks":48,"rowIds":["a-internal","a-external"]},{"sourceCardId":"cons-2010-hl-q3-b","label":"b","marks":12,"rowIds":["b-internal-advantages","b-external-advantages","b-recommendation"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Internal and external insulation of a cavity wall",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Both printed systems are required (\"for each of the insulation systems\"); not a choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q3-original.png",
+          "srcHash": "2c2d2cfcae247ef50b726a4d660b8093",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 3: the printed question on internal and external insulation of a 1970s cavity wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q3-systems",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q3-systems.png",
+          "srcHash": "6ba73776105a14c925249f2003c19bcb",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on internal dry lining and external insulation, with cill and head details (three pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q4-a", topicId: "cons-5-5", conceptId: "drainage-manhole-a",
+    section: "B", questionRef: "2010 HL Q4(a)",
+    questionText: "Discuss, using notes and freehand sketches, three functional requirements of a below ground drainage system to ensure the safe removal of sewage from a domestic dwelling.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "requirement-1", kind: "criterion", verbatim: "Functional requirement 1", marks: 8, contextNote: "Note 4 and sketch 4. Such as: watertight, with correctly sealed joints; self-cleansing at the correct gradient.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "requirement-2", kind: "criterion", verbatim: "Functional requirement 2", marks: 8, contextNote: "A second, different requirement. Such as: access for clearing blockages, with straight runs and oblique connections; flexible joints against settlement, traffic and tree roots.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "requirement-3", kind: "criterion", verbatim: "Functional requirement 3", marks: 8, contextNote: "A third, different requirement. Such as: ventilation so foul air and methane do not enter the dwelling; traps and seals of the correct depth; resistance to corrosive soil.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Below ground drainage, a manhole and testing",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The requirements and the test are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q4-original.png",
+          "srcHash": "5a22cbbc597476ba76985ddca38ec109",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 4: the printed question with a sketch of the manhole at a branch and main drain.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q4-requirements",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q4-requirements.png",
+          "srcHash": "ae58a45be4f3206fc6f669508ff69e4d",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on the functional requirements of below ground drainage.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q4-b", topicId: "cons-5-5", conceptId: "drainage-manhole-b",
+    section: "B", questionRef: "2010 HL Q4(b)",
+    questionText: "The accompanying sketch shows the location of a manhole at the intersection of a branch drain and a main drain in a below ground drainage system for a domestic dwelling. Using notes and freehand sketches, show the typical construction details through the manhole from the foundation to the manhole cover. Indicate on the sketch the typical dimensions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "note", kind: "criterion", verbatim: "Note 8marks", marks: 8, contextNote: "Such as: a 150 mm mass concrete base; branches laid obliquely into a half-round channel at or above its horizontal diameter; benching rounded and up to the top of the outgoing pipe; rendered concrete or block walls; a cast iron, pressed steel or precast cover; step irons over 1 m deep.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "sketch", kind: "criterion", verbatim: "Sketch 8 marks", marks: 8, contextNote: "A sketch through the manhole from the base to the cover, as in the scheme’s model section.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "dimensions", kind: "criterion", verbatim: "Typical dimensions", marks: 8, contextNote: "Typical dimensions, such as an internal size of 1200 × 750 to 1200 × 840 mm and a 150 mm base.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Below ground drainage, a manhole and testing",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The requirements and the test are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q4-original.png",
+          "srcHash": "5a22cbbc597476ba76985ddca38ec109",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 4: the printed question with a sketch of the manhole at a branch and main drain.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q4-manhole",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q4-manhole.png",
+          "srcHash": "e3d5322c320871584ade4d58d21f3359",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on the construction of a manhole.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q4-c", topicId: "cons-5-5", conceptId: "drainage-manhole-c",
+    section: "B", questionRef: "2010 HL Q4(c)",
+    questionText: "Using notes and freehand sketches, describe in detail one test that may be carried out to ensure that the below ground drainage system is watertight.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "test", kind: "criterion", verbatim: "Note and sketch (2×6 marks)", marks: 12, contextNote: "Note 6 and sketch 6. Such as, the water test before backfilling: the end plugged, a 1.5 m head of water above the invert, filled and left 2 hours, then leakage over 30 minutes no more than 0.05 litres per metre; or an air test.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Below ground drainage, a manhole and testing",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The requirements and the test are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q4-original.png",
+          "srcHash": "5a22cbbc597476ba76985ddca38ec109",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 4: the printed question with a sketch of the manhole at a branch and main drain.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q4-test",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q4-test.png",
+          "srcHash": "a66f43aef3f5180e8064745d5b361645",
+          "alt": "SEC 2010 Higher marking scheme notes and sketch on the water, air and smoke tests (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q4-complete", topicId: "cons-5-5", conceptId: "drainage-manhole-complete",
+    section: "B", questionRef: "2010 HL Q4 — complete",
+    questionText: "(a) Discuss, using notes and freehand sketches, three functional requirements of a below ground drainage system to ensure the safe removal of sewage from a domestic dwelling. (b) The accompanying sketch shows the location of a manhole at the intersection of a branch drain and a main drain in a below ground drainage system for a domestic dwelling. Using notes and freehand sketches, show the typical construction details through the manhole from the foundation to the manhole cover. Indicate on the sketch the typical dimensions. (c) Using notes and freehand sketches, describe in detail one test that may be carried out to ensure that the below ground drainage system is watertight.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-requirement-1", kind: "criterion", verbatim: "Functional requirement 1", marks: 8, contextNote: "Note 4 and sketch 4. Such as: watertight, with correctly sealed joints; self-cleansing at the correct gradient.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-requirement-2", kind: "criterion", verbatim: "Functional requirement 2", marks: 8, contextNote: "A second, different requirement. Such as: access for clearing blockages, with straight runs and oblique connections; flexible joints against settlement, traffic and tree roots.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-requirement-3", kind: "criterion", verbatim: "Functional requirement 3", marks: 8, contextNote: "A third, different requirement. Such as: ventilation so foul air and methane do not enter the dwelling; traps and seals of the correct depth; resistance to corrosive soil.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-note", kind: "criterion", verbatim: "Note 8marks", marks: 8, contextNote: "Such as: a 150 mm mass concrete base; branches laid obliquely into a half-round channel at or above its horizontal diameter; benching rounded and up to the top of the outgoing pipe; rendered concrete or block walls; a cast iron, pressed steel or precast cover; step irons over 1 m deep.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-sketch", kind: "criterion", verbatim: "Sketch 8 marks", marks: 8, contextNote: "A sketch through the manhole from the base to the cover, as in the scheme’s model section.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-dimensions", kind: "criterion", verbatim: "Typical dimensions", marks: 8, contextNote: "Typical dimensions, such as an internal size of 1200 × 750 to 1200 × 840 mm and a 150 mm base.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "c-test", kind: "criterion", verbatim: "Note and sketch (2×6 marks)", marks: 12, contextNote: "Note 6 and sketch 6. Such as, the water test before backfilling: the end plugged, a 1.5 m head of water above the invert, filled and left 2 hours, then leakage over 30 minutes no more than 0.05 litres per metre; or an air test.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-hl-q4-a","label":"a","marks":24,"rowIds":["a-requirement-1","a-requirement-2","a-requirement-3"]},{"sourceCardId":"cons-2010-hl-q4-b","label":"b","marks":24,"rowIds":["b-note","b-sketch","b-dimensions"]},{"sourceCardId":"cons-2010-hl-q4-c","label":"c","marks":12,"rowIds":["c-test"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Below ground drainage, a manhole and testing",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The requirements and the test are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q4-original.png",
+          "srcHash": "5a22cbbc597476ba76985ddca38ec109",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 4: the printed question with a sketch of the manhole at a branch and main drain.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q4-manhole",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q4-manhole.png",
+          "srcHash": "e3d5322c320871584ade4d58d21f3359",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on the construction of a manhole.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q5-a", topicId: "cons-6-1", conceptId: "solid-wall-u-value-a",
+    section: "B", questionRef: "2010 HL Q5(a)",
+    questionText: "Calculate the U-value of an uninsulated external solid concrete wall of a dwelling house built in the 1950s given the following data: External render thickness 16 mm; Solid concrete wall thickness 225 mm; Internal plaster thickness 13 mm. Thermal data of external wall of house: Resistivity of the solid concrete wall (r) 1.190 m °C/W; Resistivity of external render (r) 2.170 m °C/W; Resistivity of internal plaster (r) 6.250 m °C/W; Resistance of external surface (R) 0.048 m2 °C/W; Resistance of internal surface (R) 0.122 m2 °C/W.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "tabulation", kind: "criterion", verbatim: "Correct Tabulation", marks: 3, contextNote: "The calculation set out in a table of material, resistivity, thickness and resistance.", permittedMarks: [0,1,2,3] },
+    { id: "resistances", kind: "criterion", verbatim: "10 points×3 marks for each point", marks: 15, contextNote: "Five resistances, 3 each, by R = T × r: render 0.016 × 2.17 = 0.03472; wall 0.225 × 1.190 = 0.26775; plaster 0.013 × 6.250 = 0.08125; external surface 0.048 and internal surface 0.122 (given). All in m²°C/W.", permittedMarks: [0,3,6,9,12,15] },
+    { id: "total-resistance", kind: "criterion", verbatim: "Total Resistance", marks: 3, contextNote: "Total resistance, the sum of R = 0.55372 m²°C/W.", permittedMarks: [0,3] },
+    { id: "u-value", kind: "criterion", verbatim: "U-value Formula U=1/R t", marks: 6, contextNote: "The formula U = 1/Rt 3 and the U-value 3: U = 1 ÷ 0.55372 = 1.805.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "units", kind: "criterion", verbatim: "Correct units W/m2 °C or W/m2 K", marks: 3, contextNote: "The correct units, W/m²°C or W/m²K.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Solid wall U-value, phenolic foam thickness and thermal mass",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the resistance from (a); the scheme’s worked answers are U = 1.805 W/m²K and 78.75 mm of phenolic foam."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q5-original.png",
+          "srcHash": "f2b74b866442c9d6a2f9b0a1ddb21185",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 5: the printed question with all the thermal data for the solid concrete wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q5-calculation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q5-calculation.png",
+          "srcHash": "95990cb554047bfbe6120c3f25f38867",
+          "alt": "SEC worked solution: the U-value table giving a total resistance of 0.55372 and U = 1.805, and 78.75 mm of phenolic foam for 0.27 W/m²K (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q5-b", topicId: "cons-6-1", conceptId: "solid-wall-u-value-b",
+    section: "B", questionRef: "2010 HL Q5(b)",
+    questionText: "Phenolic foam insulation is to be fitted to the external surface of the solid concrete wall. Given the conductivity (k) of phenolic foam as 0.025 W/m °C, calculate the thickness of phenolic foam required to achieve a U-value of 0.27 W/m2 °C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 21,
+    rows: [
+    { id: "formula", kind: "criterion", verbatim: "Application of formula : R=1/U", marks: 3, contextNote: "R = 1/U.", permittedMarks: [0,1,2,3] },
+    { id: "existing", kind: "criterion", verbatim: "Current Resistance from part (a)", marks: 3, contextNote: "The existing resistance, 0.55372 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "required", kind: "criterion", verbatim: "Resistance required for a U- Value of 0.27", marks: 3, contextNote: "R = 1 ÷ 0.27 = 3.703 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "difference", kind: "criterion", verbatim: "Difference in Resistances", marks: 3, contextNote: "Difference = 3.703 − 0.55372 = 3.15 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "thickness", kind: "criterion", verbatim: "Required thickness of insulation", marks: 9, contextNote: "The formula R = T/k 3, its application 3 and the thickness 3: T = 3.15 × 0.025 = 0.07875 metres, 78.75 mm (79 mm) of phenolic foam.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Solid wall U-value, phenolic foam thickness and thermal mass",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the resistance from (a); the scheme’s worked answers are U = 1.805 W/m²K and 78.75 mm of phenolic foam."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q5-original.png",
+          "srcHash": "f2b74b866442c9d6a2f9b0a1ddb21185",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 5: the printed question with all the thermal data for the solid concrete wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q5-calculation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q5-calculation.png",
+          "srcHash": "95990cb554047bfbe6120c3f25f38867",
+          "alt": "SEC worked solution: the U-value table giving a total resistance of 0.55372 and U = 1.805, and 78.75 mm of phenolic foam for 0.27 W/m²K (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q5-c", topicId: "cons-6-4", conceptId: "solid-wall-u-value-c",
+    section: "B", questionRef: "2010 HL Q5(c)",
+    questionText: "Discuss in detail, using notes and freehand sketches, the importance of thermal mass in improving the thermal performance of a dwelling house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "mass", kind: "criterion", verbatim: "Note and sketch", marks: 9, contextNote: "Note 5 and sketch 4. Such as: dense materials such as concrete, block and tiles store solar gain by day and release it slowly; passive solar collection through tall south glazing at about 6:1 mass to glass; thermal mass in direct sun 30% more efficient; insulated and airtight so the stored heat is kept.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Solid wall U-value, phenolic foam thickness and thermal mass",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the resistance from (a); the scheme’s worked answers are U = 1.805 W/m²K and 78.75 mm of phenolic foam."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q5-original.png",
+          "srcHash": "f2b74b866442c9d6a2f9b0a1ddb21185",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 5: the printed question with all the thermal data for the solid concrete wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q5-mass",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q5-mass.png",
+          "srcHash": "335993131549a5fa27cb889fd2a23a52",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on thermal mass and passive solar collection and storage (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q5-complete", topicId: "cons-6-1", conceptId: "solid-wall-u-value-complete",
+    section: "B", questionRef: "2010 HL Q5 — complete",
+    questionText: "(a) Calculate the U-value of an uninsulated external solid concrete wall of a dwelling house built in the 1950s given the following data: External render thickness 16 mm; Solid concrete wall thickness 225 mm; Internal plaster thickness 13 mm. Thermal data of external wall of house: Resistivity of the solid concrete wall (r) 1.190 m °C/W; Resistivity of external render (r) 2.170 m °C/W; Resistivity of internal plaster (r) 6.250 m °C/W; Resistance of external surface (R) 0.048 m2 °C/W; Resistance of internal surface (R) 0.122 m2 °C/W. (b) Phenolic foam insulation is to be fitted to the external surface of the solid concrete wall. Given the conductivity (k) of phenolic foam as 0.025 W/m °C, calculate the thickness of phenolic foam required to achieve a U-value of 0.27 W/m2 °C. (c) Discuss in detail, using notes and freehand sketches, the importance of thermal mass in improving the thermal performance of a dwelling house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-tabulation", kind: "criterion", verbatim: "Correct Tabulation", marks: 3, contextNote: "The calculation set out in a table of material, resistivity, thickness and resistance.", permittedMarks: [0,1,2,3] },
+    { id: "a-resistances", kind: "criterion", verbatim: "10 points×3 marks for each point", marks: 15, contextNote: "Five resistances, 3 each, by R = T × r: render 0.016 × 2.17 = 0.03472; wall 0.225 × 1.190 = 0.26775; plaster 0.013 × 6.250 = 0.08125; external surface 0.048 and internal surface 0.122 (given). All in m²°C/W.", permittedMarks: [0,3,6,9,12,15] },
+    { id: "a-total-resistance", kind: "criterion", verbatim: "Total Resistance", marks: 3, contextNote: "Total resistance, the sum of R = 0.55372 m²°C/W.", permittedMarks: [0,3] },
+    { id: "a-u-value", kind: "criterion", verbatim: "U-value Formula U=1/R t", marks: 6, contextNote: "The formula U = 1/Rt 3 and the U-value 3: U = 1 ÷ 0.55372 = 1.805.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-units", kind: "criterion", verbatim: "Correct units W/m2 °C or W/m2 K", marks: 3, contextNote: "The correct units, W/m²°C or W/m²K.", permittedMarks: [0,1,2,3] },
+    { id: "b-formula", kind: "criterion", verbatim: "Application of formula : R=1/U", marks: 3, contextNote: "R = 1/U.", permittedMarks: [0,1,2,3] },
+    { id: "b-existing", kind: "criterion", verbatim: "Current Resistance from part (a)", marks: 3, contextNote: "The existing resistance, 0.55372 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "b-required", kind: "criterion", verbatim: "Resistance required for a U- Value of 0.27", marks: 3, contextNote: "R = 1 ÷ 0.27 = 3.703 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "b-difference", kind: "criterion", verbatim: "Difference in Resistances", marks: 3, contextNote: "Difference = 3.703 − 0.55372 = 3.15 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "b-thickness", kind: "criterion", verbatim: "Required thickness of insulation", marks: 9, contextNote: "The formula R = T/k 3, its application 3 and the thickness 3: T = 3.15 × 0.025 = 0.07875 metres, 78.75 mm (79 mm) of phenolic foam.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    { id: "c-mass", kind: "criterion", verbatim: "Note and sketch", marks: 9, contextNote: "Note 5 and sketch 4. Such as: dense materials such as concrete, block and tiles store solar gain by day and release it slowly; passive solar collection through tall south glazing at about 6:1 mass to glass; thermal mass in direct sun 30% more efficient; insulated and airtight so the stored heat is kept.", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-hl-q5-a","label":"a","marks":30,"rowIds":["a-tabulation","a-resistances","a-total-resistance","a-u-value","a-units"]},{"sourceCardId":"cons-2010-hl-q5-b","label":"b","marks":21,"rowIds":["b-formula","b-existing","b-required","b-difference","b-thickness"]},{"sourceCardId":"cons-2010-hl-q5-c","label":"c","marks":9,"rowIds":["c-mass"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Solid wall U-value, phenolic foam thickness and thermal mass",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the resistance from (a); the scheme’s worked answers are U = 1.805 W/m²K and 78.75 mm of phenolic foam."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q5-original.png",
+          "srcHash": "f2b74b866442c9d6a2f9b0a1ddb21185",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 5: the printed question with all the thermal data for the solid concrete wall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q5-calculation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q5-calculation.png",
+          "srcHash": "95990cb554047bfbe6120c3f25f38867",
+          "alt": "SEC worked solution: the U-value table giving a total resistance of 0.55372 and U = 1.805, and 78.75 mm of phenolic foam for 0.27 W/m²K (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q6-a", topicId: "cons-1-2", conceptId: "timber-frame-low-impact-a",
+    section: "B", questionRef: "2010 HL Q6(a)",
+    stem: "The drawing shows the design of a timber frame house with an external wooden cladding and a flat roof. The house is designed to have low environmental impact.",
+    questionText: "Discuss in detail, using notes and freehand sketches, three design features that contribute to reducing the environmental impact of the house shown.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 48,
+    rows: [
+    { id: "feature-1", kind: "criterion", verbatim: "Design feature 1", marks: 16, contextNote: "Note 8 and sketch 8. Such as: external wooden cladding, locally sourced and renewable with low embodied energy, using less concrete.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "feature-2", kind: "criterion", verbatim: "Design feature 2", marks: 16, contextNote: "A second, different feature: note 8 and sketch 8. Such as: passive solar gain through a large south-facing glazed area, small north windows and a tiled floor for thermal mass.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "feature-3", kind: "criterion", verbatim: "Design feature 3", marks: 16, contextNote: "A third, different feature: note 8 and sketch 8. Such as: a compact form one room wide with a low surface-to-volume ratio and a flat roof using fewer materials.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "A timber frame house with low environmental impact",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing retained. Features are open responses; all three printed qualities in (b) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q6-original.png",
+          "srcHash": "1a3e343d939feb9e05a3c03b326c7251",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 6: the printed question with the elevation and plan of the timber frame house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q6-features",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q6-features.png",
+          "srcHash": "a49a4313fa64b1fd4d92cc5cdda3aecc",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on the cladding, passive solar gain and compact form (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q6-b", topicId: "cons-1-2", conceptId: "timber-frame-low-impact-b",
+    section: "B", questionRef: "2010 HL Q6(b)",
+    stem: "The drawing shows the design of a timber frame house with an external wooden cladding and a flat roof. The house is designed to have low environmental impact.",
+    questionText: "Discuss in detail the importance of each of the following when choosing materials for an environmentally sustainable house: renewable; durable; locally sourced.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "renewable", kind: "criterion", verbatim: "Renewable", marks: 4, contextNote: "Such as: materials that regrow, with low embodied energy and less fossil fuel in processing; carbon-neutral materials such as hemp; low-carbon GGBS concrete.", permittedMarks: [0,1,2,3,4] },
+    { id: "durable", kind: "criterion", verbatim: "Durable", marks: 4, contextNote: "Such as: naturally durable cedar, Douglas fir or oak, or boron-treated timber; long-lasting stone and glass; less maintenance; water resistance against mould and rot.", permittedMarks: [0,1,2,3,4] },
+    { id: "local", kind: "criterion", verbatim: "Locally sourced", marks: 4, contextNote: "Such as: fewer transport miles and fossil fuels; buildings integrated with their surroundings; local enterprise, skills and employment.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "A timber frame house with low environmental impact",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing retained. Features are open responses; all three printed qualities in (b) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q6-original.png",
+          "srcHash": "1a3e343d939feb9e05a3c03b326c7251",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 6: the printed question with the elevation and plan of the timber frame house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q6-materials",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q6-materials.png",
+          "srcHash": "f28f1c7805a692736266469a31f20018",
+          "alt": "SEC 2010 Higher marking scheme notes on renewable, durable and locally sourced materials.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q6-complete", topicId: "cons-1-2", conceptId: "timber-frame-low-impact-complete",
+    section: "B", questionRef: "2010 HL Q6 — complete",
+    stem: "The drawing shows the design of a timber frame house with an external wooden cladding and a flat roof. The house is designed to have low environmental impact.",
+    questionText: "(a) Discuss in detail, using notes and freehand sketches, three design features that contribute to reducing the environmental impact of the house shown. (b) Discuss in detail the importance of each of the following when choosing materials for an environmentally sustainable house: renewable; durable; locally sourced.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-feature-1", kind: "criterion", verbatim: "Design feature 1", marks: 16, contextNote: "Note 8 and sketch 8. Such as: external wooden cladding, locally sourced and renewable with low embodied energy, using less concrete.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "a-feature-2", kind: "criterion", verbatim: "Design feature 2", marks: 16, contextNote: "A second, different feature: note 8 and sketch 8. Such as: passive solar gain through a large south-facing glazed area, small north windows and a tiled floor for thermal mass.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "a-feature-3", kind: "criterion", verbatim: "Design feature 3", marks: 16, contextNote: "A third, different feature: note 8 and sketch 8. Such as: a compact form one room wide with a low surface-to-volume ratio and a flat roof using fewer materials.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "b-renewable", kind: "criterion", verbatim: "Renewable", marks: 4, contextNote: "Such as: materials that regrow, with low embodied energy and less fossil fuel in processing; carbon-neutral materials such as hemp; low-carbon GGBS concrete.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-durable", kind: "criterion", verbatim: "Durable", marks: 4, contextNote: "Such as: naturally durable cedar, Douglas fir or oak, or boron-treated timber; long-lasting stone and glass; less maintenance; water resistance against mould and rot.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-local", kind: "criterion", verbatim: "Locally sourced", marks: 4, contextNote: "Such as: fewer transport miles and fossil fuels; buildings integrated with their surroundings; local enterprise, skills and employment.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-hl-q6-a","label":"a","marks":48,"rowIds":["a-feature-1","a-feature-2","a-feature-3"]},{"sourceCardId":"cons-2010-hl-q6-b","label":"b","marks":12,"rowIds":["b-renewable","b-durable","b-local"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "A timber frame house with low environmental impact",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing retained. Features are open responses; all three printed qualities in (b) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q6-original.png",
+          "srcHash": "1a3e343d939feb9e05a3c03b326c7251",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 6: the printed question with the elevation and plan of the timber frame house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q6-features",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q6-features.png",
+          "srcHash": "a49a4313fa64b1fd4d92cc5cdda3aecc",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on the cladding, passive solar gain and compact form (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q7-a", topicId: "cons-1-5", conceptId: "open-riser-stairs-section-a",
+    section: "B", questionRef: "2010 HL Q7(a)",
+    stem: "The top portion of an open riser timber stairs is shown in the accompanying sketch. The first floor landing has a suspended timber floor with 25 mm hardwood flooring on timber joists and a plasterboard ceiling beneath. The newel post is 100 mm × 100 mm.",
+    questionText: "To a scale of 1:5 draw a vertical section through the top three steps of the stairs and landing. Show the newel post, balusters and handrail of the stairs. Indicate on the drawing the: handrail height to stairs; handrail height to landing; spacing between balusters.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 6 details × 5 marks each", marks: 30, contextNote: "Best six details, 5 each (drawing 3, annotation 1). Menu: closed string; string capping; partial riser; tread; newel post; handrail; balusters; trimmer; flooring; landing handrail; the string and the handrail jointed to the newel post.", permittedMarks: [0,5,10,15,20,25,30] },
+    { id: "presentation", kind: "criterion", verbatim: "Scale and Drafting", marks: 4, contextNote: "Scale and drafting of the section.", permittedMarks: [0,1,2,3,4] },
+    { id: "stairs-handrail", kind: "criterion", verbatim: "Handrail height to stairs", marks: 2, contextNote: "The handrail height to the stairs, 840–900 mm from the pitch line.", permittedMarks: [0,1,2] },
+    { id: "landing-handrail", kind: "criterion", verbatim: "Handrail height to landing", marks: 2, contextNote: "The handrail height to the landing, at least 900 mm.", permittedMarks: [0,1,2] },
+    { id: "balusters", kind: "criterion", verbatim: "Spacing between balusters", marks: 2, contextNote: "Spacing so a 100 mm sphere cannot pass between the balusters.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Open riser stairs section",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Construction, handrail and scale/drafting marks belong to part (a); the two safety features in (b) are marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q7-original.png",
+          "srcHash": "47295b0c6c99e61ec65dd0ee45a96082",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 7: the printed question with a sketch of the top of the open riser stairs.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q7-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q7-scheme.png",
+          "srcHash": "67d7ffa1e8eb15247f199c32e8acb1da",
+          "alt": "SEC model section through the open riser stairs and landing with handrail heights, and notes and sketches on stairs safety (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q7-b", topicId: "cons-4-4", conceptId: "open-riser-stairs-section-b",
+    section: "B", questionRef: "2010 HL Q7(b)",
+    stem: "The top portion of an open riser timber stairs is shown in the accompanying sketch. The first floor landing has a suspended timber floor with 25 mm hardwood flooring on timber joists and a plasterboard ceiling beneath. The newel post is 100 mm × 100 mm.",
+    questionText: "Using notes and freehand sketches, show two safety features in the design of an open riser stairs to ensure that the stairs is safe for all users.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "feature-1", kind: "criterion", verbatim: "Two design features that ensure the stairs is safe", marks: 10, contextNote: "Note 5 and sketch 5. Such as: a going of at least 220 mm and rise of at most 220 mm, 2R + G between 550 and 700 mm, a pitch of at most 42°; openings that do not pass a 100 mm sphere.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "feature-2", kind: "criterion", verbatim: "Two design features that ensure the stairs is safe", marks: 10, contextNote: "A second, different feature: note 5 and sketch 5. Such as: handrails at 840–900 mm, on both sides over 1000 mm wide; guarding not easily climbed; 2 m headroom; a landing at the top of every flight.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Open riser stairs section",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Construction, handrail and scale/drafting marks belong to part (a); the two safety features in (b) are marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q7-original.png",
+          "srcHash": "47295b0c6c99e61ec65dd0ee45a96082",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 7: the printed question with a sketch of the top of the open riser stairs.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q7-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q7-scheme.png",
+          "srcHash": "67d7ffa1e8eb15247f199c32e8acb1da",
+          "alt": "SEC model section through the open riser stairs and landing with handrail heights, and notes and sketches on stairs safety (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q7-complete", topicId: "cons-1-5", conceptId: "open-riser-stairs-section-complete",
+    section: "B", questionRef: "2010 HL Q7 — complete",
+    stem: "The top portion of an open riser timber stairs is shown in the accompanying sketch. The first floor landing has a suspended timber floor with 25 mm hardwood flooring on timber joists and a plasterboard ceiling beneath. The newel post is 100 mm × 100 mm.",
+    questionText: "(a) To a scale of 1:5 draw a vertical section through the top three steps of the stairs and landing. Show the newel post, balusters and handrail of the stairs. Indicate on the drawing the: handrail height to stairs; handrail height to landing; spacing between balusters. (b) Using notes and freehand sketches, show two safety features in the design of an open riser stairs to ensure that the stairs is safe for all users.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 6 details × 5 marks each", marks: 30, contextNote: "Best six details, 5 each (drawing 3, annotation 1). Menu: closed string; string capping; partial riser; tread; newel post; handrail; balusters; trimmer; flooring; landing handrail; the string and the handrail jointed to the newel post.", permittedMarks: [0,5,10,15,20,25,30] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Scale and Drafting", marks: 4, contextNote: "Scale and drafting of the section.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-stairs-handrail", kind: "criterion", verbatim: "Handrail height to stairs", marks: 2, contextNote: "The handrail height to the stairs, 840–900 mm from the pitch line.", permittedMarks: [0,1,2] },
+    { id: "a-landing-handrail", kind: "criterion", verbatim: "Handrail height to landing", marks: 2, contextNote: "The handrail height to the landing, at least 900 mm.", permittedMarks: [0,1,2] },
+    { id: "a-balusters", kind: "criterion", verbatim: "Spacing between balusters", marks: 2, contextNote: "Spacing so a 100 mm sphere cannot pass between the balusters.", permittedMarks: [0,1,2] },
+    { id: "b-feature-1", kind: "criterion", verbatim: "Two design features that ensure the stairs is safe", marks: 10, contextNote: "Note 5 and sketch 5. Such as: a going of at least 220 mm and rise of at most 220 mm, 2R + G between 550 and 700 mm, a pitch of at most 42°; openings that do not pass a 100 mm sphere.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-feature-2", kind: "criterion", verbatim: "Two design features that ensure the stairs is safe", marks: 10, contextNote: "A second, different feature: note 5 and sketch 5. Such as: handrails at 840–900 mm, on both sides over 1000 mm wide; guarding not easily climbed; 2 m headroom; a landing at the top of every flight.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-hl-q7-a","label":"a","marks":40,"rowIds":["a-details","a-presentation","a-stairs-handrail","a-landing-handrail","a-balusters"]},{"sourceCardId":"cons-2010-hl-q7-b","label":"b","marks":20,"rowIds":["b-feature-1","b-feature-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Open riser stairs section",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Construction, handrail and scale/drafting marks belong to part (a); the two safety features in (b) are marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q7-original.png",
+          "srcHash": "47295b0c6c99e61ec65dd0ee45a96082",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 7: the printed question with a sketch of the top of the open riser stairs.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q7-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q7-scheme.png",
+          "srcHash": "67d7ffa1e8eb15247f199c32e8acb1da",
+          "alt": "SEC model section through the open riser stairs and landing with handrail heights, and notes and sketches on stairs safety (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q8-a", topicId: "cons-7-2", conceptId: "window-daylight-performance-a",
+    section: "B", questionRef: "2010 HL Q8(a)",
+    questionText: "Determine by degree of efficiency method, or by any other suitable method, the approximate size of a vertical window for a living room 5.0 metres long by 3.8 metres wide requiring an average illumination of 150 lux on the working plane. Assume an unobstructed view and the illumination of a standard overcast sky to be 5000 lux.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "formula", kind: "criterion", verbatim: "Correct entry into formula", marks: 4, contextNote: "The formula Li = Lo × WF × E × window area ÷ floor area 2, and the correct entry 2: 150 = 5,000 × 0.5 × 0.4 × W ÷ (5.0 × 3.8).", permittedMarks: [0,1,2,3,4] },
+    { id: "floor-area", kind: "criterion", verbatim: "Floor area", marks: 2, contextNote: "Floor area = 5.0 × 3.8 = 19.0 m².", permittedMarks: [0,1,2] },
+    { id: "product", kind: "criterion", verbatim: "Lo×WF×E", marks: 2, contextNote: "Lo × WF × E = 5,000 × 0.5 × 0.4 = 1,000.", permittedMarks: [0,1,2] },
+    { id: "solve", kind: "criterion", verbatim: "Solve for w (window area) line 1", marks: 4, contextNote: "Two lines solving for W, 2 each: 150 × 19 = 1,000 W; 2850 = 1000 W.", permittedMarks: [0,1,2,3,4] },
+    { id: "window-area", kind: "criterion", verbatim: "Window area", marks: 2, contextNote: "Window area = 2,850 ÷ 1,000 = 2.85 m².", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Window size by daylight, and a high-performance window",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The method in (a) is open (\"or by any other suitable method\"); the scheme works the degree of efficiency method to a window area of 2.85 m²."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q8-original.png",
+          "srcHash": "f57925f2b3dc32994e25e92c1ff53f4f",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 8: the printed question on window size by daylight and a high-performance window.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q8-calculation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q8-calculation.png",
+          "srcHash": "456db231115e5f4910cea7c9b2c6c23d",
+          "alt": "SEC worked solution by the degree of efficiency method, giving a window area of 2.85 m².",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q8-b", topicId: "cons-3-6", conceptId: "window-daylight-performance-b",
+    section: "B", questionRef: "2010 HL Q8(b)",
+    questionText: "Discuss in detail, using notes and freehand sketches, two design considerations for a contemporary window frame and glazing system that will ensure the high thermal performance of both: the window frame and the glazing system.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 32,
+    rows: [
+    { id: "frame-1", kind: "criterion", verbatim: "Frame design 1", marks: 8, contextNote: "Note 4 and sketch 4. Such as: a thermally broken wooden frame, the outside separated from the inside by a low-conductivity material.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "frame-2", kind: "criterion", verbatim: "Frame design 2", marks: 8, contextNote: "A second, different frame design. Such as: composite materials with good insulation; good seals between sash and frame; a dwell vent system preheating incoming air between two frames.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "glazing-1", kind: "criterion", verbatim: "Glazing system 1", marks: 8, contextNote: "Note 4 and sketch 4. Such as: double, triple or quadruple glazing with a low-e coating reflecting heat back into the house.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "glazing-2", kind: "criterion", verbatim: "Glazing system 2", marks: 8, contextNote: "A second, different glazing design. Such as: argon, krypton or xenon gas fills; insulated spacers between the panes; an airtight assembly.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Window size by daylight, and a high-performance window",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The method in (a) is open (\"or by any other suitable method\"); the scheme works the degree of efficiency method to a window area of 2.85 m²."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q8-original.png",
+          "srcHash": "f57925f2b3dc32994e25e92c1ff53f4f",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 8: the printed question on window size by daylight and a high-performance window.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q8-window",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q8-window.png",
+          "srcHash": "82c8622488b8d5d341c006429f684e36",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on thermally efficient window frames and glazing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q8-c", topicId: "cons-3-5", conceptId: "window-daylight-performance-c",
+    section: "B", questionRef: "2010 HL Q8(c)",
+    questionText: "Outline two environmental considerations that should be taken into account when recommending a preferred material for the window frame.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "consideration-1", kind: "criterion", verbatim: "Environmental consideration 1", marks: 7, contextNote: "Such as: a renewable frame material such as wood, with far less embodied energy than aluminium; local and easily replaced.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    { id: "consideration-2", kind: "criterion", verbatim: "Environmental consideration 2", marks: 7, contextNote: "A second, different consideration. Such as: good insulation reducing fossil fuel for heating; durability, perhaps aluminium-clad timber; recyclable or biodegradable at end of life.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Window size by daylight, and a high-performance window",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The method in (a) is open (\"or by any other suitable method\"); the scheme works the degree of efficiency method to a window area of 2.85 m²."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q8-original.png",
+          "srcHash": "f57925f2b3dc32994e25e92c1ff53f4f",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 8: the printed question on window size by daylight and a high-performance window.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q8-environment",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q8-environment.png",
+          "srcHash": "23d7082a48d77fbf3014b332c2f12338",
+          "alt": "SEC 2010 Higher marking scheme notes on environmental considerations for the window frame material.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q8-complete", topicId: "cons-7-2", conceptId: "window-daylight-performance-complete",
+    section: "B", questionRef: "2010 HL Q8 — complete",
+    questionText: "(a) Determine by degree of efficiency method, or by any other suitable method, the approximate size of a vertical window for a living room 5.0 metres long by 3.8 metres wide requiring an average illumination of 150 lux on the working plane. Assume an unobstructed view and the illumination of a standard overcast sky to be 5000 lux. (b) Discuss in detail, using notes and freehand sketches, two design considerations for a contemporary window frame and glazing system that will ensure the high thermal performance of both: the window frame and the glazing system. (c) Outline two environmental considerations that should be taken into account when recommending a preferred material for the window frame.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-formula", kind: "criterion", verbatim: "Correct entry into formula", marks: 4, contextNote: "The formula Li = Lo × WF × E × window area ÷ floor area 2, and the correct entry 2: 150 = 5,000 × 0.5 × 0.4 × W ÷ (5.0 × 3.8).", permittedMarks: [0,1,2,3,4] },
+    { id: "a-floor-area", kind: "criterion", verbatim: "Floor area", marks: 2, contextNote: "Floor area = 5.0 × 3.8 = 19.0 m².", permittedMarks: [0,1,2] },
+    { id: "a-product", kind: "criterion", verbatim: "Lo×WF×E", marks: 2, contextNote: "Lo × WF × E = 5,000 × 0.5 × 0.4 = 1,000.", permittedMarks: [0,1,2] },
+    { id: "a-solve", kind: "criterion", verbatim: "Solve for w (window area) line 1", marks: 4, contextNote: "Two lines solving for W, 2 each: 150 × 19 = 1,000 W; 2850 = 1000 W.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-window-area", kind: "criterion", verbatim: "Window area", marks: 2, contextNote: "Window area = 2,850 ÷ 1,000 = 2.85 m².", permittedMarks: [0,1,2] },
+    { id: "b-frame-1", kind: "criterion", verbatim: "Frame design 1", marks: 8, contextNote: "Note 4 and sketch 4. Such as: a thermally broken wooden frame, the outside separated from the inside by a low-conductivity material.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-frame-2", kind: "criterion", verbatim: "Frame design 2", marks: 8, contextNote: "A second, different frame design. Such as: composite materials with good insulation; good seals between sash and frame; a dwell vent system preheating incoming air between two frames.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-glazing-1", kind: "criterion", verbatim: "Glazing system 1", marks: 8, contextNote: "Note 4 and sketch 4. Such as: double, triple or quadruple glazing with a low-e coating reflecting heat back into the house.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-glazing-2", kind: "criterion", verbatim: "Glazing system 2", marks: 8, contextNote: "A second, different glazing design. Such as: argon, krypton or xenon gas fills; insulated spacers between the panes; an airtight assembly.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "c-consideration-1", kind: "criterion", verbatim: "Environmental consideration 1", marks: 7, contextNote: "Such as: a renewable frame material such as wood, with far less embodied energy than aluminium; local and easily replaced.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    { id: "c-consideration-2", kind: "criterion", verbatim: "Environmental consideration 2", marks: 7, contextNote: "A second, different consideration. Such as: good insulation reducing fossil fuel for heating; durability, perhaps aluminium-clad timber; recyclable or biodegradable at end of life.", permittedMarks: [0,1,2,3,4,5,6,7] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-hl-q8-a","label":"a","marks":14,"rowIds":["a-formula","a-floor-area","a-product","a-solve","a-window-area"]},{"sourceCardId":"cons-2010-hl-q8-b","label":"b","marks":32,"rowIds":["b-frame-1","b-frame-2","b-glazing-1","b-glazing-2"]},{"sourceCardId":"cons-2010-hl-q8-c","label":"c","marks":14,"rowIds":["c-consideration-1","c-consideration-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Window size by daylight, and a high-performance window",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The method in (a) is open (\"or by any other suitable method\"); the scheme works the degree of efficiency method to a window area of 2.85 m²."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q8-original.png",
+          "srcHash": "f57925f2b3dc32994e25e92c1ff53f4f",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 8: the printed question on window size by daylight and a high-performance window.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q8-window",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q8-window.png",
+          "srcHash": "82c8622488b8d5d341c006429f684e36",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on thermally efficient window frames and glazing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q9-a", topicId: "cons-3-8", conceptId: "attic-living-airtightness-a",
+    section: "B", questionRef: "2010 HL Q9(a)",
+    questionText: "Discuss in detail, using notes and freehand sketches, three functional requirements of an attic space suitable for use as a living area.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "requirement-1", kind: "criterion", verbatim: "Functional requirement 1", marks: 8, contextNote: "Note 4 and sketch 4. Such as: adequate floor area, height, light and ventilation; adequate access.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "requirement-2", kind: "criterion", verbatim: "Functional requirement 2", marks: 8, contextNote: "A second, different requirement. Such as: fire resistance — fire-grade plasterboard, fire stops, encased steel and a safe means of escape; sound insulation with a floating, isolated floor.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "requirement-3", kind: "criterion", verbatim: "Functional requirement 3", marks: 8, contextNote: "A third, different requirement. Such as: structural integrity with correctly sized joists; a vapour barrier and roof ventilation against condensation; insulation to 0.2 W/m²K without thermal bridges.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "An attic living space and its airtightness",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The requirements and leakage routes are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q9-original.png",
+          "srcHash": "a2285934c19436c122bafcfd7c0195b9",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 9: the printed question with an outline sketch of the attic space.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q9-requirements",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q9-requirements.png",
+          "srcHash": "091632004c3ddd2157cc5fda3975ba59",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on the functional requirements of an attic living space.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q9-b", topicId: "cons-6-5", conceptId: "attic-living-airtightness-b",
+    section: "B", questionRef: "2010 HL Q9(b)",
+    questionText: "The sketch shows the outline of an attic space in a new house. Identify two possible air leakage routes in the attic space. Using notes and freehand sketches, show clearly the correct design detailing that will improve the airtightness level at each air leakage route identified. Specify the materials used to achieve satisfactory airtightness levels.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "leakage-1", kind: "criterion", verbatim: "Air leakage 1", marks: 5, contextNote: "Such as: the junction of the wall and floor, or the sloping ceiling and the vertical wall.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "detail-1", kind: "criterion", verbatim: "Design detail 1", marks: 4, contextNote: "Note 2 and sketch 2. Such as: the skirting sealed to the floor with flexible sealant or tape; a continuous air barrier taped at the junctions; plasterboard joints sealed; a void for services.", permittedMarks: [0,1,2,3,4] },
+    { id: "leakage-2", kind: "criterion", verbatim: "Air leakage 2", marks: 5, contextNote: "A second, different route. Such as: the roof light; services such as lights, plugs, switches and pipes piercing the barrier.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "detail-2", kind: "criterion", verbatim: "Design detail 2", marks: 4, contextNote: "Note 2 and sketch 2. Such as: tape and flexible sealant round the roof light, taped to the roof membrane; grommets and proprietary socket boxes at services.", permittedMarks: [0,1,2,3,4] },
+    { id: "materials", kind: "criterion", verbatim: "Specification of materials", marks: 2, contextNote: "The materials specified, such as airtight tape, flexible sealant, membranes and grommets.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "An attic living space and its airtightness",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The requirements and leakage routes are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q9-original.png",
+          "srcHash": "a2285934c19436c122bafcfd7c0195b9",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 9: the printed question with an outline sketch of the attic space.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q9-leakage",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q9-leakage.png",
+          "srcHash": "987b8b3a2753eaf5eae7c03f99d5b247",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on sealing air leakage routes in the attic (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q9-c", topicId: "cons-6-5", conceptId: "attic-living-airtightness-c",
+    section: "B", questionRef: "2010 HL Q9(c)",
+    questionText: "Discuss two advantages of improved airtightness in the attic space.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 8, contextNote: "Such as: build tight and ventilate right — less heat lost to draughts, which can be up to half of all heat loss; no cold draughts.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 8, contextNote: "A second, different advantage. Such as: moist indoor air kept out of the structure, preventing interstitial condensation and decay; lower carbon emissions.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "An attic living space and its airtightness",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The requirements and leakage routes are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q9-original.png",
+          "srcHash": "a2285934c19436c122bafcfd7c0195b9",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 9: the printed question with an outline sketch of the attic space.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q9-advantages",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q9-advantages.png",
+          "srcHash": "09ccf82c9d22483d4cefa8769773efdb",
+          "alt": "SEC 2010 Higher marking scheme notes on the advantages of airtightness.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q9-complete", topicId: "cons-3-8", conceptId: "attic-living-airtightness-complete",
+    section: "B", questionRef: "2010 HL Q9 — complete",
+    questionText: "(a) Discuss in detail, using notes and freehand sketches, three functional requirements of an attic space suitable for use as a living area. (b) The sketch shows the outline of an attic space in a new house. Identify two possible air leakage routes in the attic space. Using notes and freehand sketches, show clearly the correct design detailing that will improve the airtightness level at each air leakage route identified. Specify the materials used to achieve satisfactory airtightness levels. (c) Discuss two advantages of improved airtightness in the attic space.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-requirement-1", kind: "criterion", verbatim: "Functional requirement 1", marks: 8, contextNote: "Note 4 and sketch 4. Such as: adequate floor area, height, light and ventilation; adequate access.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-requirement-2", kind: "criterion", verbatim: "Functional requirement 2", marks: 8, contextNote: "A second, different requirement. Such as: fire resistance — fire-grade plasterboard, fire stops, encased steel and a safe means of escape; sound insulation with a floating, isolated floor.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "a-requirement-3", kind: "criterion", verbatim: "Functional requirement 3", marks: 8, contextNote: "A third, different requirement. Such as: structural integrity with correctly sized joists; a vapour barrier and roof ventilation against condensation; insulation to 0.2 W/m²K without thermal bridges.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-leakage-1", kind: "criterion", verbatim: "Air leakage 1", marks: 5, contextNote: "Such as: the junction of the wall and floor, or the sloping ceiling and the vertical wall.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-detail-1", kind: "criterion", verbatim: "Design detail 1", marks: 4, contextNote: "Note 2 and sketch 2. Such as: the skirting sealed to the floor with flexible sealant or tape; a continuous air barrier taped at the junctions; plasterboard joints sealed; a void for services.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-leakage-2", kind: "criterion", verbatim: "Air leakage 2", marks: 5, contextNote: "A second, different route. Such as: the roof light; services such as lights, plugs, switches and pipes piercing the barrier.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-detail-2", kind: "criterion", verbatim: "Design detail 2", marks: 4, contextNote: "Note 2 and sketch 2. Such as: tape and flexible sealant round the roof light, taped to the roof membrane; grommets and proprietary socket boxes at services.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-materials", kind: "criterion", verbatim: "Specification of materials", marks: 2, contextNote: "The materials specified, such as airtight tape, flexible sealant, membranes and grommets.", permittedMarks: [0,1,2] },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 8, contextNote: "Such as: build tight and ventilate right — less heat lost to draughts, which can be up to half of all heat loss; no cold draughts.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 8, contextNote: "A second, different advantage. Such as: moist indoor air kept out of the structure, preventing interstitial condensation and decay; lower carbon emissions.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-hl-q9-a","label":"a","marks":24,"rowIds":["a-requirement-1","a-requirement-2","a-requirement-3"]},{"sourceCardId":"cons-2010-hl-q9-b","label":"b","marks":20,"rowIds":["b-leakage-1","b-detail-1","b-leakage-2","b-detail-2","b-materials"]},{"sourceCardId":"cons-2010-hl-q9-c","label":"c","marks":16,"rowIds":["c-advantage-1","c-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "An attic living space and its airtightness",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The requirements and leakage routes are open responses; the scheme lists typical examples."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q9-original.png",
+          "srcHash": "a2285934c19436c122bafcfd7c0195b9",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 9: the printed question with an outline sketch of the attic space.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q9-leakage",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q9-leakage.png",
+          "srcHash": "987b8b3a2753eaf5eae7c03f99d5b247",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on sealing air leakage routes in the attic (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q10-a", topicId: "cons-6-2", conceptId: "passive-house-overheating-a",
+    section: "B", questionRef: "2010 HL Q10(a)",
+    questionText: "Using notes and freehand sketches, discuss in detail the importance of any two of the following in the design of a Passive House: shape and form of the house; continuity of insulation; reduced thermal/cold bridging.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "items", kind: "anyN", verbatim: "Design of a passive house", marks: 16, contextNote: "Any two of the three printed items, each note 4 and sketch 4 = 8. Shape and Form: a compact form with a low surface-to-volume ratio; maximum glazing to the south and minimum to the north; open-plan living, a sunspace and draught lobbies; a 45° roof for solar panels. Continuity of Insulation: rigid wall insulation carried down to the foundation; at least 300 mm under the whole slab, with edge insulation; insulation continuous at the eaves; triple-glazed, thermally broken windows. Reduced cold bridge: continuous insulation at the window reveals, head and cill, at the top of the wall at wallplate level, and at the ground floor and wall junction.", group: {"claimMax":2,"perOption":8,"options":["Shape and Form","Continuity of Insulation","Reduced cold bridge"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design, MHRV and overheating",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q10-original.png",
+          "srcHash": "ccc03aa585880507ff92d829bf8979b3",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 10: the printed question with a sketch of the MHRV layout in a Passive House.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q10-principles",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q10-principles.png",
+          "srcHash": "438ef6ab1a92d406bad0ba52a62f85ae",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches for all three items — shape and form, continuity of insulation and reduced cold bridging (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q10-b", topicId: "cons-6-5", conceptId: "passive-house-overheating-b",
+    section: "B", questionRef: "2010 HL Q10(b)",
+    questionText: "The layout of a Mechanical Heat Recovery with Ventilation system (MHRV) for a Passive House is shown in the accompanying sketch. Explain, using notes and freehand sketches, the operating principles of such a system and discuss two advantages of this system for a Passive House.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "principle-1", kind: "criterion", verbatim: "Operating principle 1", marks: 8, contextNote: "Note and sketch. Such as: warm air extracted from the kitchen, bathroom and utility passes to the heat exchange unit, where its heat is taken out.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "principle-2", kind: "criterion", verbatim: "Operating principle 2", marks: 8, contextNote: "A second principle. Such as: the recovered heat warms the colder incoming fresh air, which is distributed through a separate, independent duct system.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 4, contextNote: "Such as: up to 93% of the heat recovered, cutting heating costs; no conventional heating system needed.", permittedMarks: [0,1,2,3,4] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 4, contextNote: "A second, different advantage. Such as: filters against pollen and allergens; less mould; odours removed; a constant flow of fresh air to bedrooms.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design, MHRV and overheating",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q10-original.png",
+          "srcHash": "ccc03aa585880507ff92d829bf8979b3",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 10: the printed question with a sketch of the MHRV layout in a Passive House.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q10-mhrv",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q10-mhrv.png",
+          "srcHash": "cc2c473751a6b9d404d41f7b751cd0d0",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on MHRV operation and advantages, and on preventing overheating.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q10-c", topicId: "cons-6-4", conceptId: "passive-house-overheating-c",
+    section: "B", questionRef: "2010 HL Q10(c)",
+    questionText: "Show, using notes and freehand sketches, two design details that would help prevent the possible overheating of a Passive House in summer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "detail-1", kind: "criterion", verbatim: "Design detail 1", marks: 10, contextNote: "Note 5 and sketch 5. Such as: brise soleil over the large glazed area; an extended but not excessive soffit overhang.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "detail-2", kind: "criterion", verbatim: "Design detail 2", marks: 10, contextNote: "A second, different detail: note 5 and sketch 5. Such as: heavily lined blinds or curtains or timber shutters; openings opposite each other for through ventilation; opening sashes.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design, MHRV and overheating",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q10-original.png",
+          "srcHash": "ccc03aa585880507ff92d829bf8979b3",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 10: the printed question with a sketch of the MHRV layout in a Passive House.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q10-mhrv",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q10-mhrv.png",
+          "srcHash": "cc2c473751a6b9d404d41f7b751cd0d0",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches on MHRV operation and advantages, and on preventing overheating.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q10-complete", topicId: "cons-6-2", conceptId: "passive-house-overheating-complete",
+    section: "B", questionRef: "2010 HL Q10 — complete",
+    questionText: "(a) Using notes and freehand sketches, discuss in detail the importance of any two of the following in the design of a Passive House: shape and form of the house; continuity of insulation; reduced thermal/cold bridging. (b) The layout of a Mechanical Heat Recovery with Ventilation system (MHRV) for a Passive House is shown in the accompanying sketch. Explain, using notes and freehand sketches, the operating principles of such a system and discuss two advantages of this system for a Passive House. (c) Show, using notes and freehand sketches, two design details that would help prevent the possible overheating of a Passive House in summer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-items", kind: "anyN", verbatim: "Design of a passive house", marks: 16, contextNote: "Any two of the three printed items, each note 4 and sketch 4 = 8. Shape and Form: a compact form with a low surface-to-volume ratio; maximum glazing to the south and minimum to the north; open-plan living, a sunspace and draught lobbies; a 45° roof for solar panels. Continuity of Insulation: rigid wall insulation carried down to the foundation; at least 300 mm under the whole slab, with edge insulation; insulation continuous at the eaves; triple-glazed, thermally broken windows. Reduced cold bridge: continuous insulation at the window reveals, head and cill, at the top of the wall at wallplate level, and at the ground floor and wall junction.", group: {"claimMax":2,"perOption":8,"options":["Shape and Form","Continuity of Insulation","Reduced cold bridge"]} },
+    { id: "b-principle-1", kind: "criterion", verbatim: "Operating principle 1", marks: 8, contextNote: "Note and sketch. Such as: warm air extracted from the kitchen, bathroom and utility passes to the heat exchange unit, where its heat is taken out.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-principle-2", kind: "criterion", verbatim: "Operating principle 2", marks: 8, contextNote: "A second principle. Such as: the recovered heat warms the colder incoming fresh air, which is distributed through a separate, independent duct system.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 4, contextNote: "Such as: up to 93% of the heat recovered, cutting heating costs; no conventional heating system needed.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 4, contextNote: "A second, different advantage. Such as: filters against pollen and allergens; less mould; odours removed; a constant flow of fresh air to bedrooms.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-detail-1", kind: "criterion", verbatim: "Design detail 1", marks: 10, contextNote: "Note 5 and sketch 5. Such as: brise soleil over the large glazed area; an extended but not excessive soffit overhang.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "c-detail-2", kind: "criterion", verbatim: "Design detail 2", marks: 10, contextNote: "A second, different detail: note 5 and sketch 5. Such as: heavily lined blinds or curtains or timber shutters; openings opposite each other for through ventilation; opening sashes.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-hl-q10-a","label":"a","marks":16,"rowIds":["a-items"]},{"sourceCardId":"cons-2010-hl-q10-b","label":"b","marks":24,"rowIds":["b-principle-1","b-principle-2","b-advantage-1","b-advantage-2"]},{"sourceCardId":"cons-2010-hl-q10-c","label":"c","marks":20,"rowIds":["c-detail-1","c-detail-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design, MHRV and overheating",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q10-original.png",
+          "srcHash": "ccc03aa585880507ff92d829bf8979b3",
+          "alt": "Original SEC 2010 Higher Construction Studies Question 10: the printed question with a sketch of the MHRV layout in a Passive House.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2010-HL-q10-principles",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q10-principles.png",
+          "srcHash": "438ef6ab1a92d406bad0ba52a62f85ae",
+          "alt": "SEC 2010 Higher marking scheme notes and sketches for all three items — shape and form, continuity of insulation and reduced cold bridging (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q10-alt-discussion", topicId: "cons-1-2", conceptId: "sustainable-urbanism-discussion",
+    section: "B", questionRef: "2010 HL Q10-alt — discussion",
+    stem: "“In the increasingly urbanised world of the 21st century, a major challenge is to find solutions to the problems facing our towns and cities – the control of sprawl, sustainable growth, integrated transport systems and better-quality urban environments and public realms. Cities and towns that are diverse, varied in use, walkable, human scaled and identifiable by the high quality of their public realm can contribute to the process of creating sustainable urbanism. The challenge for all citizens is to make our towns and cities viable in the long term, environmentally and socially, as well as economically. There will be no sustainable world and no sustainable country without sustainable cities and towns”. Sustainable Urbanism: creating communities for the knowledge economy: by Anthony Reddy in The New Housing 2, Royal Institute of Architects of Ireland 2009.",
+    questionText: "Discuss the above statement in detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "point-1", kind: "criterion", verbatim: "Point 1 - discussion", marks: 10, contextNote: "Such as: controlling sprawl by building close to amenities, renewing town centres as places to live at carefully planned higher densities.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "point-2", kind: "criterion", verbatim: "Point 2 - discussion", marks: 10, contextNote: "Such as: integrated transport with good bus, rail and light rail; better public realms — safe, overlooked, well-managed public spaces and play areas.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "point-3", kind: "criterion", verbatim: "Point 3 - discussion", marks: 10, contextNote: "Such as: diverse, walkable, human-scaled towns with distinctive character, inclusive universal design and adaptable, efficient buildings. Three distinct, well-argued points are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Sustainable urbanism (alternative Question 10)",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q10-alt-original.png",
+          "srcHash": "773b0c1cdfc2b3b325f06b41a29b9d20",
+          "alt": "Original SEC 2010 Higher Construction Studies alternative Question 10: the printed quotation from Anthony Reddy on sustainable urbanism, and the task.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q10-alt-guidelines", topicId: "cons-1-2", conceptId: "sustainable-urbanism-guidelines",
+    section: "B", questionRef: "2010 HL Q10-alt — guidelines",
+    stem: "“In the increasingly urbanised world of the 21st century, a major challenge is to find solutions to the problems facing our towns and cities – the control of sprawl, sustainable growth, integrated transport systems and better-quality urban environments and public realms. Cities and towns that are diverse, varied in use, walkable, human scaled and identifiable by the high quality of their public realm can contribute to the process of creating sustainable urbanism. The challenge for all citizens is to make our towns and cities viable in the long term, environmentally and socially, as well as economically. There will be no sustainable world and no sustainable country without sustainable cities and towns”. Sustainable Urbanism: creating communities for the knowledge economy: by Anthony Reddy in The New Housing 2, Royal Institute of Architects of Ireland 2009.",
+    questionText: "Propose three guidelines that would help create environmentally sustainable urban development in Ireland.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "guideline-1", kind: "criterion", verbatim: "Guideline 1", marks: 10, contextNote: "Such as: energy analysis and low embodied energy design for every development; urban living made an attractive option.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guideline-2", kind: "criterion", verbatim: "Guideline 2", marks: 10, contextNote: "Such as: modest, flexible buildings for every stage of life; building close to amenities and in clusters so people walk and cycle.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guideline-3", kind: "criterion", verbatim: "Guideline 3", marks: 10, contextNote: "Such as: renewable energy and A-rated fittings; clear sustainable planning guidelines; grants and education for sustainable design. Three distinct guidelines are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Sustainable urbanism (alternative Question 10)",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q10-alt-original.png",
+          "srcHash": "773b0c1cdfc2b3b325f06b41a29b9d20",
+          "alt": "Original SEC 2010 Higher Construction Studies alternative Question 10: the printed quotation from Anthony Reddy on sustainable urbanism, and the task.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2010 Higher Level — © State Examinations Commission.",
+    id: "cons-2010-hl-q10-alt-complete", topicId: "cons-1-2", conceptId: "sustainable-urbanism-complete",
+    section: "B", questionRef: "2010 HL Q10-alt — complete",
+    stem: "“In the increasingly urbanised world of the 21st century, a major challenge is to find solutions to the problems facing our towns and cities – the control of sprawl, sustainable growth, integrated transport systems and better-quality urban environments and public realms. Cities and towns that are diverse, varied in use, walkable, human scaled and identifiable by the high quality of their public realm can contribute to the process of creating sustainable urbanism. The challenge for all citizens is to make our towns and cities viable in the long term, environmentally and socially, as well as economically. There will be no sustainable world and no sustainable country without sustainable cities and towns”. Sustainable Urbanism: creating communities for the knowledge economy: by Anthony Reddy in The New Housing 2, Royal Institute of Architects of Ireland 2009.",
+    questionText: "Discuss the above statement in detail and propose three guidelines that would help create environmentally sustainable urban development in Ireland.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "discussion-point-1", kind: "criterion", verbatim: "Point 1 - discussion", marks: 10, contextNote: "Such as: controlling sprawl by building close to amenities, renewing town centres as places to live at carefully planned higher densities.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "discussion-point-2", kind: "criterion", verbatim: "Point 2 - discussion", marks: 10, contextNote: "Such as: integrated transport with good bus, rail and light rail; better public realms — safe, overlooked, well-managed public spaces and play areas.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "discussion-point-3", kind: "criterion", verbatim: "Point 3 - discussion", marks: 10, contextNote: "Such as: diverse, walkable, human-scaled towns with distinctive character, inclusive universal design and adaptable, efficient buildings. Three distinct, well-argued points are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guidelines-guideline-1", kind: "criterion", verbatim: "Guideline 1", marks: 10, contextNote: "Such as: energy analysis and low embodied energy design for every development; urban living made an attractive option.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guidelines-guideline-2", kind: "criterion", verbatim: "Guideline 2", marks: 10, contextNote: "Such as: modest, flexible buildings for every stage of life; building close to amenities and in clusters so people walk and cycle.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guidelines-guideline-3", kind: "criterion", verbatim: "Guideline 3", marks: 10, contextNote: "Such as: renewable energy and A-rated fittings; clear sustainable planning guidelines; grants and education for sustainable design. Three distinct guidelines are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2010-hl-q10-alt-discussion","label":"Discussion of the statement","marks":30,"rowIds":["discussion-point-1","discussion-point-2","discussion-point-3"]},{"sourceCardId":"cons-2010-hl-q10-alt-guidelines","label":"Three guidelines","marks":30,"rowIds":["guidelines-guideline-1","guidelines-guideline-2","guidelines-guideline-3"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Sustainable urbanism (alternative Question 10)",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2010-HL-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2010-HL-q10-alt-original.png",
+          "srcHash": "773b0c1cdfc2b3b325f06b41a29b9d20",
+          "alt": "Original SEC 2010 Higher Construction Studies alternative Question 10: the printed quotation from Anthony Reddy on sustainable urbanism, and the task.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2010 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
 ];
