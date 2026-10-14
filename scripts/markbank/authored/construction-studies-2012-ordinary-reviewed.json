@@ -1,0 +1,5065 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "year": 2012,
+  "level": "ordinary",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "fileid": "LC029GLP000EV.pdf",
+  "component": "theory",
+  "status": "2012 Ordinary main English theory Q1–Q9: 28 source-reviewed tasks (28 added, 0 pre-audit cards corrected in place under their original IDs); whole theory paper reconciled against the original paper and scheme. Practical component and Irish edition remain separate work.",
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf": "d529d6c698018dc5277c9263c92682f5c6294239f37f59ac891caea7056238e3",
+    "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf": "6e9157b363ec4060b91166a6ce6a623e211cf5e81847a41cd4cdcf5918f0bebe"
+  },
+  "tasks": [
+    {
+      "questionNumber": "1",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q1-a",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-1-5",
+        "conceptId": "tiled-roof-eaves-section-a",
+        "questionRef": "2012 OL Q1(a)",
+        "stem": "The sketch shows a tiled roof of a dwelling house, which is supported on a 350 mm external concrete block wall with an insulated cavity. The roof is a traditional cut roof and has a pitch of 45°.",
+        "questionText": "To a scale of 1:5, draw a vertical section through the eaves of the tiled roof and the external wall. Show the typical construction details from a level 400 mm below the wall plate, through the eaves and include three courses of tiles at eaves. Include the roof insulation and show clearly the ventilation path to the roof structure at the eaves. Include three typical dimensions.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 40,
+        "rows": [
+          {
+            "id": "details",
+            "kind": "criterion",
+            "verbatim": "Any 7 of the above details (5 marks each)",
+            "marks": 35,
+            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete tiles; 44 × 35 mm battens; breathable membrane; rafters 150–250 × 40 mm; roof insulation; 150 × 40 mm ceiling joists; 12.5 mm foil-backed plasterboard and skim; 100 × 75 mm wallplate; internal plaster and external render; 100 mm inner leaf; wall insulation; 50 mm residual cavity; 100 mm outer leaf; fascia and soffit; 100 mm eaves gutter; ventilation path.",
+            "permittedMarks": [
+              0,
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35
+            ]
+          },
+          {
+            "id": "dimensions",
+            "kind": "criterion",
+            "verbatim": "Three typical dimensions",
+            "marks": 5,
+            "contextNote": "Three typical dimensions on the section.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q1-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q1-section",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Tiled cut roof eaves section",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the cavity closer."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "2acdbb5d4bb7cc7c8cd843c88a86ce7d062df2d4ee101f7d32ac852b88f60128"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 4,
+          "textSha256": "ed53e9afdd70f0b6e07c767c05faa9bdb5307178316ccf2e733b95a588563d31"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 15,
+          "textSha256": "a703d37fe74e7c9fffbad8978f72d181046e97714cf0ed51548d6e6af4a97e1c"
+        }
+      ],
+      "boundaryReview": "Scheme p15 (printed 12): (a) best 7 of 16 listed details × 5 = 35, three typical dimensions 5 = 40; (b) cavity closer 4, and draughting, accuracy and scale 6 (6/4/2) printed after it = 10. Complete 50.",
+      "selectionReview": "One required section and one required method of closing the cavity. The best-seven detail list is a marking menu, not a printed choice.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q1-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q1-section"
+      ]
+    },
+    {
+      "questionNumber": "1",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q1-b",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-3-10",
+        "conceptId": "tiled-roof-eaves-section-b",
+        "questionRef": "2012 OL Q1(b)",
+        "stem": "The sketch shows a tiled roof of a dwelling house, which is supported on a 350 mm external concrete block wall with an insulated cavity. The roof is a traditional cut roof and has a pitch of 45°.",
+        "questionText": "On your drawing, show one method of closing the cavity at eaves level.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 10,
+        "rows": [
+          {
+            "id": "closer",
+            "kind": "criterion",
+            "verbatim": "Method of closing cavity at eaves level",
+            "marks": 4,
+            "contextNote": "Such as: a proprietary cavity closer at the top of the wall; or a slate fixed across the cavity to both leaves.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "presentation",
+            "kind": "criterion",
+            "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+            "marks": 6,
+            "contextNote": "Draughting, accuracy and scale of the whole section: excellent 6, good 4, fair 2. The scheme prints this band after the part (b) row.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q1-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q1-closer",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Tiled cut roof eaves section",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the cavity closer."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "2acdbb5d4bb7cc7c8cd843c88a86ce7d062df2d4ee101f7d32ac852b88f60128"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 4,
+          "textSha256": "ed53e9afdd70f0b6e07c767c05faa9bdb5307178316ccf2e733b95a588563d31"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 15,
+          "textSha256": "a703d37fe74e7c9fffbad8978f72d181046e97714cf0ed51548d6e6af4a97e1c"
+        }
+      ],
+      "boundaryReview": "Scheme p15 (printed 12): (a) best 7 of 16 listed details × 5 = 35, three typical dimensions 5 = 40; (b) cavity closer 4, and draughting, accuracy and scale 6 (6/4/2) printed after it = 10. Complete 50.",
+      "selectionReview": "One required section and one required method of closing the cavity. The best-seven detail list is a marking menu, not a printed choice.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q1-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q1-closer"
+      ]
+    },
+    {
+      "questionNumber": "1",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q1-complete",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-1-5",
+        "conceptId": "tiled-roof-eaves-section-complete",
+        "questionRef": "2012 OL Q1 — complete",
+        "stem": "The sketch shows a tiled roof of a dwelling house, which is supported on a 350 mm external concrete block wall with an insulated cavity. The roof is a traditional cut roof and has a pitch of 45°.",
+        "questionText": "(a) To a scale of 1:5, draw a vertical section through the eaves of the tiled roof and the external wall. Show the typical construction details from a level 400 mm below the wall plate, through the eaves and include three courses of tiles at eaves. Include the roof insulation and show clearly the ventilation path to the roof structure at the eaves. Include three typical dimensions.\n\n(b) On your drawing, show one method of closing the cavity at eaves level.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 50,
+        "rows": [
+          {
+            "id": "a-details",
+            "kind": "criterion",
+            "verbatim": "Any 7 of the above details (5 marks each)",
+            "marks": 35,
+            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete tiles; 44 × 35 mm battens; breathable membrane; rafters 150–250 × 40 mm; roof insulation; 150 × 40 mm ceiling joists; 12.5 mm foil-backed plasterboard and skim; 100 × 75 mm wallplate; internal plaster and external render; 100 mm inner leaf; wall insulation; 50 mm residual cavity; 100 mm outer leaf; fascia and soffit; 100 mm eaves gutter; ventilation path.",
+            "permittedMarks": [
+              0,
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35
+            ]
+          },
+          {
+            "id": "a-dimensions",
+            "kind": "criterion",
+            "verbatim": "Three typical dimensions",
+            "marks": 5,
+            "contextNote": "Three typical dimensions on the section.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "b-closer",
+            "kind": "criterion",
+            "verbatim": "Method of closing cavity at eaves level",
+            "marks": 4,
+            "contextNote": "Such as: a proprietary cavity closer at the top of the wall; or a slate fixed across the cavity to both leaves.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "b-presentation",
+            "kind": "criterion",
+            "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+            "marks": 6,
+            "contextNote": "Draughting, accuracy and scale of the whole section: excellent 6, good 4, fair 2. The scheme prints this band after the part (b) row.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q1-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q1-section",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Tiled cut roof eaves section",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the cavity closer."
+        },
+        "taskGroups": [
+          {
+            "sourceCardId": "cons-2012-ol-q1-a",
+            "label": "a",
+            "marks": 40,
+            "rowIds": [
+              "a-details",
+              "a-dimensions"
+            ]
+          },
+          {
+            "sourceCardId": "cons-2012-ol-q1-b",
+            "label": "b",
+            "marks": 10,
+            "rowIds": [
+              "b-closer",
+              "b-presentation"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "2acdbb5d4bb7cc7c8cd843c88a86ce7d062df2d4ee101f7d32ac852b88f60128"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 4,
+          "textSha256": "ed53e9afdd70f0b6e07c767c05faa9bdb5307178316ccf2e733b95a588563d31"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 15,
+          "textSha256": "a703d37fe74e7c9fffbad8978f72d181046e97714cf0ed51548d6e6af4a97e1c"
+        }
+      ],
+      "boundaryReview": "Scheme p15 (printed 12): (a) best 7 of 16 listed details × 5 = 35, three typical dimensions 5 = 40; (b) cavity closer 4, and draughting, accuracy and scale 6 (6/4/2) printed after it = 10. Complete 50.",
+      "selectionReview": "One required section and one required method of closing the cavity. The best-seven detail list is a marking menu, not a printed choice.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q1-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q1-section"
+      ]
+    },
+    {
+      "questionNumber": "2",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q2-a",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "external-insulation-system-a",
+        "questionRef": "2012 OL Q2(a)",
+        "stem": "A dwelling house, as shown in the sketch, has a 300 mm external block wall with 50 mm expanded polystyrene insulation in the cavity. The wall has a smooth external render finish. It is proposed to improve the insulation properties of the wall by adding an external system of insulation.",
+        "questionText": "Using notes and neat freehand sketches, show one suitable method of applying an external insulation system to the wall. Specify the insulation material used, indicate its typical thickness and include details of the external surface finish to the insulation.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 40,
+        "rows": [
+          {
+            "id": "description-1",
+            "kind": "criterion",
+            "verbatim": "Valid description one",
+            "marks": 6,
+            "contextNote": "Such as: slabs of insulation fixed to the wall with adhesive and mechanical fixings.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "description-2",
+            "kind": "criterion",
+            "verbatim": "Valid description two",
+            "marks": 6,
+            "contextNote": "A second, different step. Such as: an acrylic basecoat with a fibre mesh embedded for impact resistance; a coloured primer.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "finish",
+            "kind": "criterion",
+            "verbatim": "Details of external surface finish to the insulation",
+            "marks": 6,
+            "contextNote": "Such as: a coloured, textured acrylic render, trowelled or sprayed, durable and in a range of colours.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "insulation",
+            "kind": "criterion",
+            "verbatim": "Type and thickness of insulation (3 marks + 3marks)",
+            "marks": 6,
+            "contextNote": "Type 3 and thickness 3. Such as: expanded polystyrene, at least 120 mm and up to 300 mm; phenolic foam, at least 75 mm; or Gutex or cork.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "sketch",
+            "kind": "criterion",
+            "verbatim": "External insulation – Sketch",
+            "marks": 16,
+            "contextNote": "Two valid details on the sketch, 4 each, and the quality of the sketch, excellent 8, good 6, fair 4.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q2-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q2-method",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "External insulation of an existing wall",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one suitable method\" is an open choice of method; the scheme gives a typical system."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "2acdbb5d4bb7cc7c8cd843c88a86ce7d062df2d4ee101f7d32ac852b88f60128"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 5,
+          "textSha256": "83af39c5a24b93b640a5701bc8318b81d5d795d6a4ebc0d3e8f36fac461f55b3"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 16,
+          "textSha256": "371fe281813a4c542401ac5d997efdbfb8746fdd1d3bc205b57d533d5aef51ed"
+        }
+      ],
+      "boundaryReview": "Scheme p16 (printed 13): (a) notes — two descriptions × 6, surface finish 6 and insulation type and thickness 3 + 3 = 24 — and sketch — two details × 4 and quality 8 (8/6/4) = 16: 40; (b) two advantages × 5 = 10. Complete 50.",
+      "selectionReview": "\"one suitable method\" is an open choice of method; the scheme gives a typical external insulation system.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q2-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q2-method"
+      ]
+    },
+    {
+      "questionNumber": "2",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q2-b",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-6-3",
+        "conceptId": "external-insulation-system-b",
+        "questionRef": "2012 OL Q2(b)",
+        "stem": "A dwelling house, as shown in the sketch, has a 300 mm external block wall with 50 mm expanded polystyrene insulation in the cavity. The wall has a smooth external render finish. It is proposed to improve the insulation properties of the wall by adding an external system of insulation.",
+        "questionText": "List two advantages of applying an external system of insulation to the walls of an existing house.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 10,
+        "rows": [
+          {
+            "id": "advantage-1",
+            "kind": "criterion",
+            "verbatim": "Advantage one",
+            "marks": 5,
+            "contextNote": "Such as: less heat loss; lower bills and CO₂; no loss of floor area and no disruption inside.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "advantage-2",
+            "kind": "criterion",
+            "verbatim": "Advantage two",
+            "marks": 5,
+            "contextNote": "A second, different advantage. Such as: the wall becomes a heat store; a practical way to insulate an existing building; a new finish that hides all the fixings.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q2-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q2-advantages",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "External insulation of an existing wall",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one suitable method\" is an open choice of method; the scheme gives a typical system."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "2acdbb5d4bb7cc7c8cd843c88a86ce7d062df2d4ee101f7d32ac852b88f60128"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 5,
+          "textSha256": "83af39c5a24b93b640a5701bc8318b81d5d795d6a4ebc0d3e8f36fac461f55b3"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 16,
+          "textSha256": "371fe281813a4c542401ac5d997efdbfb8746fdd1d3bc205b57d533d5aef51ed"
+        }
+      ],
+      "boundaryReview": "Scheme p16 (printed 13): (a) notes — two descriptions × 6, surface finish 6 and insulation type and thickness 3 + 3 = 24 — and sketch — two details × 4 and quality 8 (8/6/4) = 16: 40; (b) two advantages × 5 = 10. Complete 50.",
+      "selectionReview": "\"one suitable method\" is an open choice of method; the scheme gives a typical external insulation system.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q2-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q2-advantages"
+      ]
+    },
+    {
+      "questionNumber": "2",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q2-complete",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "external-insulation-system-complete",
+        "questionRef": "2012 OL Q2 — complete",
+        "stem": "A dwelling house, as shown in the sketch, has a 300 mm external block wall with 50 mm expanded polystyrene insulation in the cavity. The wall has a smooth external render finish. It is proposed to improve the insulation properties of the wall by adding an external system of insulation.",
+        "questionText": "(a) Using notes and neat freehand sketches, show one suitable method of applying an external insulation system to the wall. Specify the insulation material used, indicate its typical thickness and include details of the external surface finish to the insulation.\n\n(b) List two advantages of applying an external system of insulation to the walls of an existing house.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 50,
+        "rows": [
+          {
+            "id": "a-description-1",
+            "kind": "criterion",
+            "verbatim": "Valid description one",
+            "marks": 6,
+            "contextNote": "Such as: slabs of insulation fixed to the wall with adhesive and mechanical fixings.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "a-description-2",
+            "kind": "criterion",
+            "verbatim": "Valid description two",
+            "marks": 6,
+            "contextNote": "A second, different step. Such as: an acrylic basecoat with a fibre mesh embedded for impact resistance; a coloured primer.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "a-finish",
+            "kind": "criterion",
+            "verbatim": "Details of external surface finish to the insulation",
+            "marks": 6,
+            "contextNote": "Such as: a coloured, textured acrylic render, trowelled or sprayed, durable and in a range of colours.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "a-insulation",
+            "kind": "criterion",
+            "verbatim": "Type and thickness of insulation (3 marks + 3marks)",
+            "marks": 6,
+            "contextNote": "Type 3 and thickness 3. Such as: expanded polystyrene, at least 120 mm and up to 300 mm; phenolic foam, at least 75 mm; or Gutex or cork.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "a-sketch",
+            "kind": "criterion",
+            "verbatim": "External insulation – Sketch",
+            "marks": 16,
+            "contextNote": "Two valid details on the sketch, 4 each, and the quality of the sketch, excellent 8, good 6, fair 4.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ]
+          },
+          {
+            "id": "b-advantage-1",
+            "kind": "criterion",
+            "verbatim": "Advantage one",
+            "marks": 5,
+            "contextNote": "Such as: less heat loss; lower bills and CO₂; no loss of floor area and no disruption inside.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "b-advantage-2",
+            "kind": "criterion",
+            "verbatim": "Advantage two",
+            "marks": 5,
+            "contextNote": "A second, different advantage. Such as: the wall becomes a heat store; a practical way to insulate an existing building; a new finish that hides all the fixings.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q2-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q2-method",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "External insulation of an existing wall",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. \"one suitable method\" is an open choice of method; the scheme gives a typical system."
+        },
+        "taskGroups": [
+          {
+            "sourceCardId": "cons-2012-ol-q2-a",
+            "label": "a",
+            "marks": 40,
+            "rowIds": [
+              "a-description-1",
+              "a-description-2",
+              "a-finish",
+              "a-insulation",
+              "a-sketch"
+            ]
+          },
+          {
+            "sourceCardId": "cons-2012-ol-q2-b",
+            "label": "b",
+            "marks": 10,
+            "rowIds": [
+              "b-advantage-1",
+              "b-advantage-2"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "2acdbb5d4bb7cc7c8cd843c88a86ce7d062df2d4ee101f7d32ac852b88f60128"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 5,
+          "textSha256": "83af39c5a24b93b640a5701bc8318b81d5d795d6a4ebc0d3e8f36fac461f55b3"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 16,
+          "textSha256": "371fe281813a4c542401ac5d997efdbfb8746fdd1d3bc205b57d533d5aef51ed"
+        }
+      ],
+      "boundaryReview": "Scheme p16 (printed 13): (a) notes — two descriptions × 6, surface finish 6 and insulation type and thickness 3 + 3 = 24 — and sketch — two details × 4 and quality 8 (8/6/4) = 16: 40; (b) two advantages × 5 = 10. Complete 50.",
+      "selectionReview": "\"one suitable method\" is an open choice of method; the scheme gives a typical external insulation system.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q2-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q2-method"
+      ]
+    },
+    {
+      "questionNumber": "3",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q3-a",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-5-1",
+        "conceptId": "mains-cold-water-supply-a",
+        "questionRef": "2012 OL Q3(a)",
+        "stem": "A dwelling house is connected to the public water supply system to provide clean, treated water for the household.",
+        "questionText": "Using a single-line labelled diagram, show the pipework required to supply cold water to a kitchen sink, as shown in the sketch. Include the following in your diagram: pipework from public mains to kitchen sink; location of valves; material and typical size of pipework.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 38,
+        "rows": [
+          {
+            "id": "details",
+            "kind": "criterion",
+            "verbatim": "Any 6 of the above details (5 marks each)",
+            "marks": 30,
+            "contextNote": "Credit the best SIX acceptable details at 5 marks each, capped at 30. Marked details: connection to the water mains; stop valve; water supply pipe; external wall; protective sleeve for the supply; service pipe insulation; stop valve inside; rising main; connection to the kitchen sink; typical material; typical pipe size.",
+            "permittedMarks": [
+              0,
+              5,
+              10,
+              15,
+              20,
+              25,
+              30
+            ]
+          },
+          {
+            "id": "presentation",
+            "kind": "criterion",
+            "verbatim": "Quality of sketch (excellent, good, fair)",
+            "marks": 8,
+            "contextNote": "Quality of the sketch: excellent 8, good 6, fair 4.",
+            "permittedMarks": [
+              0,
+              4,
+              6,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q3-system",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Mains cold water to a kitchen sink",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-six list is a marking menu."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "2acdbb5d4bb7cc7c8cd843c88a86ce7d062df2d4ee101f7d32ac852b88f60128"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 6,
+          "textSha256": "b16232374602a28fff8da8f98fbb6a40280cc1bd97c20141d79c4f5a61bf44a4"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 17,
+          "textSha256": "320625229c1392336060d63b2a8e6b8e0a3a984f9260e08398f8058251b641fc"
+        }
+      ],
+      "boundaryReview": "Scheme p17 (printed 14): (a) best 6 of 11 listed details × 5 = 30 and quality of sketch 8 (8/6/4) = 38; (b) two frost details × 3 = 6; (c) two ways × 3 = 6. Complete 50.",
+      "selectionReview": "The printed component list is required content, not a choice; the best-six list is a marking menu.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q3-system"
+      ]
+    },
+    {
+      "questionNumber": "3",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q3-b",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-5-1",
+        "conceptId": "mains-cold-water-supply-b",
+        "questionRef": "2012 OL Q3(b)",
+        "stem": "A dwelling house is connected to the public water supply system to provide clean, treated water for the household.",
+        "questionText": "Include in your sketch two design details that would prevent the water in the mains supply from freezing during very cold weather.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "frost",
+            "kind": "criterion",
+            "verbatim": "Designs details (2 × 3 marks)",
+            "marks": 6,
+            "contextNote": "Two details, 3 each. Such as: the pipe laid about one metre deep, at least 750 mm; the last 600 mm of the service pipe insulated; heavy-duty polyethylene or PVC pipe.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q3-frost",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Mains cold water to a kitchen sink",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-six list is a marking menu."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "2acdbb5d4bb7cc7c8cd843c88a86ce7d062df2d4ee101f7d32ac852b88f60128"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 6,
+          "textSha256": "b16232374602a28fff8da8f98fbb6a40280cc1bd97c20141d79c4f5a61bf44a4"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 17,
+          "textSha256": "320625229c1392336060d63b2a8e6b8e0a3a984f9260e08398f8058251b641fc"
+        }
+      ],
+      "boundaryReview": "Scheme p17 (printed 14): (a) best 6 of 11 listed details × 5 = 30 and quality of sketch 8 (8/6/4) = 38; (b) two frost details × 3 = 6; (c) two ways × 3 = 6. Complete 50.",
+      "selectionReview": "The printed component list is required content, not a choice; the best-six list is a marking menu.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q3-frost"
+      ]
+    },
+    {
+      "questionNumber": "3",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q3-c",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-5-2",
+        "conceptId": "mains-cold-water-supply-c",
+        "questionRef": "2012 OL Q3(c)",
+        "stem": "A dwelling house is connected to the public water supply system to provide clean, treated water for the household.",
+        "questionText": "Outline two ways in which the household could reduce the use of treated water from the public water supply.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "ways",
+            "kind": "criterion",
+            "verbatim": "Two ways (2 × 3 marks)",
+            "marks": 6,
+            "contextNote": "Two ways, 3 each. Such as: a displacement bottle in the cistern; push taps; a conical sink; dual-flush cisterns; rainwater harvesting; an aerated shower head; recycled grey water for flushing and gardening.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q3-saving",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Mains cold water to a kitchen sink",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-six list is a marking menu."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "2acdbb5d4bb7cc7c8cd843c88a86ce7d062df2d4ee101f7d32ac852b88f60128"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 6,
+          "textSha256": "b16232374602a28fff8da8f98fbb6a40280cc1bd97c20141d79c4f5a61bf44a4"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 17,
+          "textSha256": "320625229c1392336060d63b2a8e6b8e0a3a984f9260e08398f8058251b641fc"
+        }
+      ],
+      "boundaryReview": "Scheme p17 (printed 14): (a) best 6 of 11 listed details × 5 = 30 and quality of sketch 8 (8/6/4) = 38; (b) two frost details × 3 = 6; (c) two ways × 3 = 6. Complete 50.",
+      "selectionReview": "The printed component list is required content, not a choice; the best-six list is a marking menu.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q3-saving"
+      ]
+    },
+    {
+      "questionNumber": "3",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q3-complete",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-5-1",
+        "conceptId": "mains-cold-water-supply-complete",
+        "questionRef": "2012 OL Q3 — complete",
+        "stem": "A dwelling house is connected to the public water supply system to provide clean, treated water for the household.",
+        "questionText": "(a) Using a single-line labelled diagram, show the pipework required to supply cold water to a kitchen sink, as shown in the sketch. Include the following in your diagram: pipework from public mains to kitchen sink; location of valves; material and typical size of pipework.\n\n(b) Include in your sketch two design details that would prevent the water in the mains supply from freezing during very cold weather.\n\n(c) Outline two ways in which the household could reduce the use of treated water from the public water supply.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 50,
+        "rows": [
+          {
+            "id": "a-details",
+            "kind": "criterion",
+            "verbatim": "Any 6 of the above details (5 marks each)",
+            "marks": 30,
+            "contextNote": "Credit the best SIX acceptable details at 5 marks each, capped at 30. Marked details: connection to the water mains; stop valve; water supply pipe; external wall; protective sleeve for the supply; service pipe insulation; stop valve inside; rising main; connection to the kitchen sink; typical material; typical pipe size.",
+            "permittedMarks": [
+              0,
+              5,
+              10,
+              15,
+              20,
+              25,
+              30
+            ]
+          },
+          {
+            "id": "a-presentation",
+            "kind": "criterion",
+            "verbatim": "Quality of sketch (excellent, good, fair)",
+            "marks": 8,
+            "contextNote": "Quality of the sketch: excellent 8, good 6, fair 4.",
+            "permittedMarks": [
+              0,
+              4,
+              6,
+              8
+            ]
+          },
+          {
+            "id": "b-frost",
+            "kind": "criterion",
+            "verbatim": "Designs details (2 × 3 marks)",
+            "marks": 6,
+            "contextNote": "Two details, 3 each. Such as: the pipe laid about one metre deep, at least 750 mm; the last 600 mm of the service pipe insulated; heavy-duty polyethylene or PVC pipe.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "c-ways",
+            "kind": "criterion",
+            "verbatim": "Two ways (2 × 3 marks)",
+            "marks": 6,
+            "contextNote": "Two ways, 3 each. Such as: a displacement bottle in the cistern; push taps; a conical sink; dual-flush cisterns; rainwater harvesting; an aerated shower head; recycled grey water for flushing and gardening.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q3-system",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Mains cold water to a kitchen sink",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-six list is a marking menu."
+        },
+        "taskGroups": [
+          {
+            "sourceCardId": "cons-2012-ol-q3-a",
+            "label": "a",
+            "marks": 38,
+            "rowIds": [
+              "a-details",
+              "a-presentation"
+            ]
+          },
+          {
+            "sourceCardId": "cons-2012-ol-q3-b",
+            "label": "b",
+            "marks": 6,
+            "rowIds": [
+              "b-frost"
+            ]
+          },
+          {
+            "sourceCardId": "cons-2012-ol-q3-c",
+            "label": "c",
+            "marks": 6,
+            "rowIds": [
+              "c-ways"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "2acdbb5d4bb7cc7c8cd843c88a86ce7d062df2d4ee101f7d32ac852b88f60128"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 6,
+          "textSha256": "b16232374602a28fff8da8f98fbb6a40280cc1bd97c20141d79c4f5a61bf44a4"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 17,
+          "textSha256": "320625229c1392336060d63b2a8e6b8e0a3a984f9260e08398f8058251b641fc"
+        }
+      ],
+      "boundaryReview": "Scheme p17 (printed 14): (a) best 6 of 11 listed details × 5 = 30 and quality of sketch 8 (8/6/4) = 38; (b) two frost details × 3 = 6; (c) two ways × 3 = 6. Complete 50.",
+      "selectionReview": "The printed component list is required content, not a choice; the best-six list is a marking menu.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q3-system"
+      ]
+    },
+    {
+      "questionNumber": "4",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q4-a",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-2-4",
+        "conceptId": "strip-foundation-design-a",
+        "questionRef": "2012 OL Q4(a)",
+        "stem": "A strip foundation is designed to support a 350 mm external wall of a dwelling house. The wall is of concrete block construction with an insulated cavity, as shown in the sketch.",
+        "questionText": "Describe, using notes and neat freehand sketches, the design of a typical strip foundation for the above external wall under the following headings: width and depth of trench; finished level of concrete in foundation; reinforcement of foundation; position of wall on strip foundation.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 40,
+        "rows": [
+          {
+            "id": "trench",
+            "kind": "criterion",
+            "verbatim": "Width and depth of trench",
+            "marks": 10,
+            "contextNote": "Primary communication 6 and other communication 4. Such as: at least three times the wall thickness, 1050 mm for a 350 mm wall; as deep as the ground needs, at least 600 mm to the top of the concrete, below the frost line.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "id": "level",
+            "kind": "criterion",
+            "verbatim": "Finish level of concrete in foundation",
+            "marks": 10,
+            "contextNote": "Primary communication 6 and other communication 4. Such as: pegs driven into the trench base, projecting by the foundation thickness, levelled with a straight edge and laser level.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "id": "reinforcement",
+            "kind": "criterion",
+            "verbatim": "Reinforcement of foundation",
+            "marks": 10,
+            "contextNote": "Primary communication 6 and other communication 4. Such as: ribbed mild steel bars supported 75 mm from the bottom, where the tension is; concrete poured, vibrated and compacted around them; or steel mesh.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "id": "position",
+            "kind": "criterion",
+            "verbatim": "Position of wall on strip foundation",
+            "marks": 10,
+            "contextNote": "Primary communication 6 and other communication 4. Such as: the wall central on the foundation, with equal projections on both sides.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q4-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q4-design",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Strip foundation design",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All four printed headings in (a) are required, each separately marked."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "2acdbb5d4bb7cc7c8cd843c88a86ce7d062df2d4ee101f7d32ac852b88f60128"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 6,
+          "textSha256": "b16232374602a28fff8da8f98fbb6a40280cc1bd97c20141d79c4f5a61bf44a4"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 7,
+          "textSha256": "91f4cf18fabd6b42e6f02f82941283f3f072b5683680fe5745fe661b9992c587"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 18,
+          "textSha256": "cb825c16e0ecfde82668d8db767a82d7100a021819c17f80009d1a2278c09f56"
+        }
+      ],
+      "boundaryReview": "Scheme p18 (printed 15): (a) four printed headings × (primary communication 6 + other communication 4) = 40; (b) two environmental reasons × 5 = 10. Complete 50.",
+      "selectionReview": "All four printed headings in (a) are required, each separately marked; not a choice.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q4-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q4-design"
+      ]
+    },
+    {
+      "questionNumber": "4",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q4-b",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-2-4",
+        "conceptId": "strip-foundation-design-b",
+        "questionRef": "2012 OL Q4(b)",
+        "stem": "A strip foundation is designed to support a 350 mm external wall of a dwelling house. The wall is of concrete block construction with an insulated cavity, as shown in the sketch.",
+        "questionText": "Discuss two environmental reasons why a strip foundation is the preferred foundation type for the external wall of the house.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 10,
+        "rows": [
+          {
+            "id": "reason-1",
+            "kind": "criterion",
+            "verbatim": "Reason one",
+            "marks": 5,
+            "contextNote": "Such as: less concrete than a raft foundation; minimum excavation, using less energy.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "reason-2",
+            "kind": "criterion",
+            "verbatim": "Reason two",
+            "marks": 5,
+            "contextNote": "A second, different reason. Such as: less steel; a lower carbon footprint than other foundations; environmentally sustainable.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q4-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q4-reasons",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Strip foundation design",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All four printed headings in (a) are required, each separately marked."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "2acdbb5d4bb7cc7c8cd843c88a86ce7d062df2d4ee101f7d32ac852b88f60128"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 6,
+          "textSha256": "b16232374602a28fff8da8f98fbb6a40280cc1bd97c20141d79c4f5a61bf44a4"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 7,
+          "textSha256": "91f4cf18fabd6b42e6f02f82941283f3f072b5683680fe5745fe661b9992c587"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 18,
+          "textSha256": "cb825c16e0ecfde82668d8db767a82d7100a021819c17f80009d1a2278c09f56"
+        }
+      ],
+      "boundaryReview": "Scheme p18 (printed 15): (a) four printed headings × (primary communication 6 + other communication 4) = 40; (b) two environmental reasons × 5 = 10. Complete 50.",
+      "selectionReview": "All four printed headings in (a) are required, each separately marked; not a choice.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q4-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q4-reasons"
+      ]
+    },
+    {
+      "questionNumber": "4",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q4-complete",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-2-4",
+        "conceptId": "strip-foundation-design-complete",
+        "questionRef": "2012 OL Q4 — complete",
+        "stem": "A strip foundation is designed to support a 350 mm external wall of a dwelling house. The wall is of concrete block construction with an insulated cavity, as shown in the sketch.",
+        "questionText": "(a) Describe, using notes and neat freehand sketches, the design of a typical strip foundation for the above external wall under the following headings: width and depth of trench; finished level of concrete in foundation; reinforcement of foundation; position of wall on strip foundation.\n\n(b) Discuss two environmental reasons why a strip foundation is the preferred foundation type for the external wall of the house.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 50,
+        "rows": [
+          {
+            "id": "a-trench",
+            "kind": "criterion",
+            "verbatim": "Width and depth of trench",
+            "marks": 10,
+            "contextNote": "Primary communication 6 and other communication 4. Such as: at least three times the wall thickness, 1050 mm for a 350 mm wall; as deep as the ground needs, at least 600 mm to the top of the concrete, below the frost line.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "id": "a-level",
+            "kind": "criterion",
+            "verbatim": "Finish level of concrete in foundation",
+            "marks": 10,
+            "contextNote": "Primary communication 6 and other communication 4. Such as: pegs driven into the trench base, projecting by the foundation thickness, levelled with a straight edge and laser level.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "id": "a-reinforcement",
+            "kind": "criterion",
+            "verbatim": "Reinforcement of foundation",
+            "marks": 10,
+            "contextNote": "Primary communication 6 and other communication 4. Such as: ribbed mild steel bars supported 75 mm from the bottom, where the tension is; concrete poured, vibrated and compacted around them; or steel mesh.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "id": "a-position",
+            "kind": "criterion",
+            "verbatim": "Position of wall on strip foundation",
+            "marks": 10,
+            "contextNote": "Primary communication 6 and other communication 4. Such as: the wall central on the foundation, with equal projections on both sides.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "id": "b-reason-1",
+            "kind": "criterion",
+            "verbatim": "Reason one",
+            "marks": 5,
+            "contextNote": "Such as: less concrete than a raft foundation; minimum excavation, using less energy.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "b-reason-2",
+            "kind": "criterion",
+            "verbatim": "Reason two",
+            "marks": 5,
+            "contextNote": "A second, different reason. Such as: less steel; a lower carbon footprint than other foundations; environmentally sustainable.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q4-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q4-design",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Strip foundation design",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All four printed headings in (a) are required, each separately marked."
+        },
+        "taskGroups": [
+          {
+            "sourceCardId": "cons-2012-ol-q4-a",
+            "label": "a",
+            "marks": 40,
+            "rowIds": [
+              "a-trench",
+              "a-level",
+              "a-reinforcement",
+              "a-position"
+            ]
+          },
+          {
+            "sourceCardId": "cons-2012-ol-q4-b",
+            "label": "b",
+            "marks": 10,
+            "rowIds": [
+              "b-reason-1",
+              "b-reason-2"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "2acdbb5d4bb7cc7c8cd843c88a86ce7d062df2d4ee101f7d32ac852b88f60128"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 6,
+          "textSha256": "b16232374602a28fff8da8f98fbb6a40280cc1bd97c20141d79c4f5a61bf44a4"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 7,
+          "textSha256": "91f4cf18fabd6b42e6f02f82941283f3f072b5683680fe5745fe661b9992c587"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 18,
+          "textSha256": "cb825c16e0ecfde82668d8db767a82d7100a021819c17f80009d1a2278c09f56"
+        }
+      ],
+      "boundaryReview": "Scheme p18 (printed 15): (a) four printed headings × (primary communication 6 + other communication 4) = 40; (b) two environmental reasons × 5 = 10. Complete 50.",
+      "selectionReview": "All four printed headings in (a) are required, each separately marked; not a choice.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q4-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q4-design"
+      ]
+    },
+    {
+      "questionNumber": "5",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q5-a",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-1-5",
+        "conceptId": "window-cill-section-a",
+        "questionRef": "2012 OL Q5(a)",
+        "stem": "A triple-glazed timber casement window, as shown in the sketch, is fixed in a 350 mm external concrete block wall with an insulated cavity. The fixed frame of the window is 150 mm × 80 mm. The wall is plastered on both sides.",
+        "questionText": "To a scale of 1:5, draw a vertical section through the bottom portion of the window showing the fixed frame of the window and the concrete cill. Show the typical construction details from 300 mm below to a level 250 mm above the concrete cill. Indicate the typical sizes of three main components.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 40,
+        "rows": [
+          {
+            "id": "details",
+            "kind": "criterion",
+            "verbatim": "Any 7 of the above details (5 marks each)",
+            "marks": 35,
+            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 25 mm window board; 150 × 80 mm frame; triple low-e glazing; precast concrete cill; mastic or taped seals; DPC; 15 mm plaster outside and in; 100 mm outer leaf; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; proprietary cavity closer.",
+            "permittedMarks": [
+              0,
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35
+            ]
+          },
+          {
+            "id": "dimensions",
+            "kind": "criterion",
+            "verbatim": "Three typical dimensions",
+            "marks": 5,
+            "contextNote": "Typical sizes of three main components.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q5-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q5-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Triple-glazed window cill section",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the cold-bridge detail."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 8,
+          "textSha256": "d71e7c048be0ca625b728e53fe9cbf9948290499cf623c01864078fc2f39abd4"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 19,
+          "textSha256": "16edefd3b5426f6fcbbe8072c9f525a37a812774d13b8c25e54910b864302b82"
+        }
+      ],
+      "boundaryReview": "Scheme p19 (printed 16): (a) best 7 of 13 listed details × 5 = 35, three typical dimensions 5 = 40; (b) cold-bridge detail 4, and draughting, accuracy and scale 6 (6/4/2) printed after it = 10. Complete 50.",
+      "selectionReview": "One required section and one required cold-bridge detail. The best-seven detail list is a marking menu, not a printed choice.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q5-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q5-scheme"
+      ]
+    },
+    {
+      "questionNumber": "5",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q5-b",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "window-cill-section-b",
+        "questionRef": "2012 OL Q5(b)",
+        "stem": "A triple-glazed timber casement window, as shown in the sketch, is fixed in a 350 mm external concrete block wall with an insulated cavity. The fixed frame of the window is 150 mm × 80 mm. The wall is plastered on both sides.",
+        "questionText": "Include in your drawing the typical design detailing that would prevent the formation of a thermal/cold bridge at the concrete cill.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 10,
+        "rows": [
+          {
+            "id": "cold-bridge",
+            "kind": "criterion",
+            "verbatim": "Valid design detail",
+            "marks": 4,
+            "contextNote": "Such as: insulation brought up behind the concrete cill; an insulated cavity closer.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "presentation",
+            "kind": "criterion",
+            "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+            "marks": 6,
+            "contextNote": "Draughting, accuracy and scale of the whole section: excellent 6, good 4, fair 2. The scheme prints this band after the part (b) row.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q5-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q5-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Triple-glazed window cill section",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the cold-bridge detail."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 8,
+          "textSha256": "d71e7c048be0ca625b728e53fe9cbf9948290499cf623c01864078fc2f39abd4"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 19,
+          "textSha256": "16edefd3b5426f6fcbbe8072c9f525a37a812774d13b8c25e54910b864302b82"
+        }
+      ],
+      "boundaryReview": "Scheme p19 (printed 16): (a) best 7 of 13 listed details × 5 = 35, three typical dimensions 5 = 40; (b) cold-bridge detail 4, and draughting, accuracy and scale 6 (6/4/2) printed after it = 10. Complete 50.",
+      "selectionReview": "One required section and one required cold-bridge detail. The best-seven detail list is a marking menu, not a printed choice.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q5-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q5-scheme"
+      ]
+    },
+    {
+      "questionNumber": "5",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q5-complete",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-1-5",
+        "conceptId": "window-cill-section-complete",
+        "questionRef": "2012 OL Q5 — complete",
+        "stem": "A triple-glazed timber casement window, as shown in the sketch, is fixed in a 350 mm external concrete block wall with an insulated cavity. The fixed frame of the window is 150 mm × 80 mm. The wall is plastered on both sides.",
+        "questionText": "(a) To a scale of 1:5, draw a vertical section through the bottom portion of the window showing the fixed frame of the window and the concrete cill. Show the typical construction details from 300 mm below to a level 250 mm above the concrete cill. Indicate the typical sizes of three main components.\n\n(b) Include in your drawing the typical design detailing that would prevent the formation of a thermal/cold bridge at the concrete cill.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 50,
+        "rows": [
+          {
+            "id": "a-details",
+            "kind": "criterion",
+            "verbatim": "Any 7 of the above details (5 marks each)",
+            "marks": 35,
+            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 25 mm window board; 150 × 80 mm frame; triple low-e glazing; precast concrete cill; mastic or taped seals; DPC; 15 mm plaster outside and in; 100 mm outer leaf; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; proprietary cavity closer.",
+            "permittedMarks": [
+              0,
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35
+            ]
+          },
+          {
+            "id": "a-dimensions",
+            "kind": "criterion",
+            "verbatim": "Three typical dimensions",
+            "marks": 5,
+            "contextNote": "Typical sizes of three main components.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "b-cold-bridge",
+            "kind": "criterion",
+            "verbatim": "Valid design detail",
+            "marks": 4,
+            "contextNote": "Such as: insulation brought up behind the concrete cill; an insulated cavity closer.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "b-presentation",
+            "kind": "criterion",
+            "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+            "marks": 6,
+            "contextNote": "Draughting, accuracy and scale of the whole section: excellent 6, good 4, fair 2. The scheme prints this band after the part (b) row.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q5-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q5-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Triple-glazed window cill section",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the cold-bridge detail."
+        },
+        "taskGroups": [
+          {
+            "sourceCardId": "cons-2012-ol-q5-a",
+            "label": "a",
+            "marks": 40,
+            "rowIds": [
+              "a-details",
+              "a-dimensions"
+            ]
+          },
+          {
+            "sourceCardId": "cons-2012-ol-q5-b",
+            "label": "b",
+            "marks": 10,
+            "rowIds": [
+              "b-cold-bridge",
+              "b-presentation"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 8,
+          "textSha256": "d71e7c048be0ca625b728e53fe9cbf9948290499cf623c01864078fc2f39abd4"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 19,
+          "textSha256": "16edefd3b5426f6fcbbe8072c9f525a37a812774d13b8c25e54910b864302b82"
+        }
+      ],
+      "boundaryReview": "Scheme p19 (printed 16): (a) best 7 of 13 listed details × 5 = 35, three typical dimensions 5 = 40; (b) cold-bridge detail 4, and draughting, accuracy and scale 6 (6/4/2) printed after it = 10. Complete 50.",
+      "selectionReview": "One required section and one required cold-bridge detail. The best-seven detail list is a marking menu, not a printed choice.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q5-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q5-scheme"
+      ]
+    },
+    {
+      "questionNumber": "6",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q6-a",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-1-8",
+        "conceptId": "site-safety-lifting-concrete-a",
+        "questionRef": "2012 OL Q6(a)",
+        "stem": "",
+        "questionText": "List two specific safety precautions that should be observed in each of the following situations and give one reason for each safety precaution listed: manually lifting a load from a floor; placing concrete in a foundation trench from a ready-mix truck.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 20,
+        "rows": [
+          {
+            "id": "lifting",
+            "kind": "criterion",
+            "verbatim": "Safety precautions when lifting a load",
+            "marks": 10,
+            "contextNote": "Two precautions 4 each and reasons 2. Such as: stand close, back straight, bend the knees; test the load and get help if too heavy; keep it close to the body; do not twist; a clear, tidy area — protecting your back.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "id": "concrete",
+            "kind": "criterion",
+            "verbatim": "Safety precautions when placing concrete in a foundation",
+            "marks": 10,
+            "contextNote": "Two precautions 4 each and reasons 2. Such as: a high visibility jacket, boots and helmet; the driver able to see the work; the truck kept back from the trench edge in wet weather; a deep trench supported; only qualified workers with Safe Pass.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q6-precautions",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Lifting, placing concrete and protective equipment",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Both printed situations in (a) are required, each separately marked; the two items of equipment in (b) are an open response."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 8,
+          "textSha256": "d71e7c048be0ca625b728e53fe9cbf9948290499cf623c01864078fc2f39abd4"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 9,
+          "textSha256": "392a9fe9580df5cd25d31bc456ef84aaac23733c64b878c181b33d1a366852e1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 20,
+          "textSha256": "14022b172ed5f3fb50d7ddd7ccaef1d9309f96f85ffe773a3199912f47c50692"
+        }
+      ],
+      "boundaryReview": "Scheme p20 (printed 17): (a) for each printed situation two precautions × 4 and reasons 2 = 10, 20; (b) two items, each note 5, sketch 5 (5/3/2) and importance 5 = 15, 30. Complete 50.",
+      "selectionReview": "Both printed situations in (a) are required, each separately marked; the two items in (b) are an open response.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q6-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q6-precautions"
+      ]
+    },
+    {
+      "questionNumber": "6",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q6-b",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-1-8",
+        "conceptId": "site-safety-lifting-concrete-b",
+        "questionRef": "2012 OL Q6(b)",
+        "stem": "",
+        "questionText": "Using notes and neat freehand sketches, describe two items of personal protective equipment that must be worn on a building site and discuss the importance of each item to ensure the personal safety of workers on a building site.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 30,
+        "rows": [
+          {
+            "id": "item-1",
+            "kind": "criterion",
+            "verbatim": "Item One",
+            "marks": 15,
+            "contextNote": "Note 5, sketch 5 (excellent 5, good 3, fair 2) and importance 5. Such as: a high visibility jacket or vest with reflective strips, so workers are seen, especially near machinery.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "id": "item-2",
+            "kind": "criterion",
+            "verbatim": "Item two",
+            "marks": 15,
+            "contextNote": "A second, different item: note 5, sketch 5 (5/3/2) and importance 5. Such as: a safety helmet protecting the head from falling objects; steel cap boots protecting the feet.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q6-ppe",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Lifting, placing concrete and protective equipment",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Both printed situations in (a) are required, each separately marked; the two items of equipment in (b) are an open response."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 8,
+          "textSha256": "d71e7c048be0ca625b728e53fe9cbf9948290499cf623c01864078fc2f39abd4"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 9,
+          "textSha256": "392a9fe9580df5cd25d31bc456ef84aaac23733c64b878c181b33d1a366852e1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 20,
+          "textSha256": "14022b172ed5f3fb50d7ddd7ccaef1d9309f96f85ffe773a3199912f47c50692"
+        }
+      ],
+      "boundaryReview": "Scheme p20 (printed 17): (a) for each printed situation two precautions × 4 and reasons 2 = 10, 20; (b) two items, each note 5, sketch 5 (5/3/2) and importance 5 = 15, 30. Complete 50.",
+      "selectionReview": "Both printed situations in (a) are required, each separately marked; the two items in (b) are an open response.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q6-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q6-ppe"
+      ]
+    },
+    {
+      "questionNumber": "6",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q6-complete",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-1-8",
+        "conceptId": "site-safety-lifting-concrete-complete",
+        "questionRef": "2012 OL Q6 — complete",
+        "stem": "",
+        "questionText": "(a) List two specific safety precautions that should be observed in each of the following situations and give one reason for each safety precaution listed: manually lifting a load from a floor; placing concrete in a foundation trench from a ready-mix truck.\n\n(b) Using notes and neat freehand sketches, describe two items of personal protective equipment that must be worn on a building site and discuss the importance of each item to ensure the personal safety of workers on a building site.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 50,
+        "rows": [
+          {
+            "id": "a-lifting",
+            "kind": "criterion",
+            "verbatim": "Safety precautions when lifting a load",
+            "marks": 10,
+            "contextNote": "Two precautions 4 each and reasons 2. Such as: stand close, back straight, bend the knees; test the load and get help if too heavy; keep it close to the body; do not twist; a clear, tidy area — protecting your back.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "id": "a-concrete",
+            "kind": "criterion",
+            "verbatim": "Safety precautions when placing concrete in a foundation",
+            "marks": 10,
+            "contextNote": "Two precautions 4 each and reasons 2. Such as: a high visibility jacket, boots and helmet; the driver able to see the work; the truck kept back from the trench edge in wet weather; a deep trench supported; only qualified workers with Safe Pass.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "id": "b-item-1",
+            "kind": "criterion",
+            "verbatim": "Item One",
+            "marks": 15,
+            "contextNote": "Note 5, sketch 5 (excellent 5, good 3, fair 2) and importance 5. Such as: a high visibility jacket or vest with reflective strips, so workers are seen, especially near machinery.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "id": "b-item-2",
+            "kind": "criterion",
+            "verbatim": "Item two",
+            "marks": 15,
+            "contextNote": "A second, different item: note 5, sketch 5 (5/3/2) and importance 5. Such as: a safety helmet protecting the head from falling objects; steel cap boots protecting the feet.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q6-precautions",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Lifting, placing concrete and protective equipment",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Both printed situations in (a) are required, each separately marked; the two items of equipment in (b) are an open response."
+        },
+        "taskGroups": [
+          {
+            "sourceCardId": "cons-2012-ol-q6-a",
+            "label": "a",
+            "marks": 20,
+            "rowIds": [
+              "a-lifting",
+              "a-concrete"
+            ]
+          },
+          {
+            "sourceCardId": "cons-2012-ol-q6-b",
+            "label": "b",
+            "marks": 30,
+            "rowIds": [
+              "b-item-1",
+              "b-item-2"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 8,
+          "textSha256": "d71e7c048be0ca625b728e53fe9cbf9948290499cf623c01864078fc2f39abd4"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 9,
+          "textSha256": "392a9fe9580df5cd25d31bc456ef84aaac23733c64b878c181b33d1a366852e1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 20,
+          "textSha256": "14022b172ed5f3fb50d7ddd7ccaef1d9309f96f85ffe773a3199912f47c50692"
+        }
+      ],
+      "boundaryReview": "Scheme p20 (printed 17): (a) for each printed situation two precautions × 4 and reasons 2 = 10, 20; (b) two items, each note 5, sketch 5 (5/3/2) and importance 5 = 15, 30. Complete 50.",
+      "selectionReview": "Both printed situations in (a) are required, each separately marked; the two items in (b) are an open response.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q6-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q6-precautions"
+      ]
+    },
+    {
+      "questionNumber": "7",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q7-a",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-1-3",
+        "conceptId": "garage-conversion-planning-a",
+        "questionRef": "2012 OL Q7(a)",
+        "stem": "A homeowner wishes to obtain planning permission to convert an existing garage to a living room, as shown in the accompanying sketch.",
+        "questionText": "Discuss two reasons why it is necessary to apply for planning permission to convert the garage to a living room.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 12,
+        "rows": [
+          {
+            "id": "reason-1",
+            "kind": "criterion",
+            "verbatim": "Reason one",
+            "marks": 6,
+            "contextNote": "Such as: a change of use; the front appearance of the house changes, with a new window.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "reason-2",
+            "kind": "criterion",
+            "verbatim": "Reason two",
+            "marks": 6,
+            "contextNote": "A second, different reason. Such as: a legal requirement when changing the front elevation; others may object or make a submission.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q7-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q7-reasons",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Planning permission for a garage conversion",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 10,
+          "textSha256": "629a65f093280cfc6cfd666e2bfb5caab9cdd06b276e8a55411a51e42e369a75"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 21,
+          "textSha256": "473ad967b5902f105765b5e91414f8e7c3e114196c660c0f3ad483e95cf6cb24"
+        }
+      ],
+      "boundaryReview": "Scheme p21 (printed 18): (a) two reasons × 6 = 12; (b) site location map three details × 5 = 15 and site notice three details × 5 = 15 = 30; (c) one reason 8. Complete 50.",
+      "selectionReview": "Both printed planning documents in (b) are required, each separately marked; not a choice.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q7-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q7-reasons"
+      ]
+    },
+    {
+      "questionNumber": "7",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q7-b",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-1-3",
+        "conceptId": "garage-conversion-planning-b",
+        "questionRef": "2012 OL Q7(b)",
+        "stem": "A homeowner wishes to obtain planning permission to convert an existing garage to a living room, as shown in the accompanying sketch.",
+        "questionText": "Outline the information that must be contained in each of the following documents when making a planning application to the planning authority: site location map; copy of site notice.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 30,
+        "rows": [
+          {
+            "id": "map",
+            "kind": "criterion",
+            "verbatim": "Site location map",
+            "marks": 15,
+            "contextNote": "Three valid details, 5 each. Such as: the Ordnance Survey sheet number; north; the townland; nearby features; boundaries in red, adjoining land owned in blue, wayleaves in yellow; the site notice location.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "id": "notice",
+            "kind": "criterion",
+            "verbatim": "Site notice",
+            "marks": 15,
+            "contextNote": "Three valid details, 5 each. Such as: the applicant’s name and address; the type of permission and date; a description of the development; whether it is a protected structure; that it may be inspected at the planning authority within 5 weeks.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q7-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q7-documents",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Planning permission for a garage conversion",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 10,
+          "textSha256": "629a65f093280cfc6cfd666e2bfb5caab9cdd06b276e8a55411a51e42e369a75"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 21,
+          "textSha256": "473ad967b5902f105765b5e91414f8e7c3e114196c660c0f3ad483e95cf6cb24"
+        }
+      ],
+      "boundaryReview": "Scheme p21 (printed 18): (a) two reasons × 6 = 12; (b) site location map three details × 5 = 15 and site notice three details × 5 = 15 = 30; (c) one reason 8. Complete 50.",
+      "selectionReview": "Both printed planning documents in (b) are required, each separately marked; not a choice.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q7-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q7-documents"
+      ]
+    },
+    {
+      "questionNumber": "7",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q7-c",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-1-3",
+        "conceptId": "garage-conversion-planning-c",
+        "questionRef": "2012 OL Q7(c)",
+        "stem": "A homeowner wishes to obtain planning permission to convert an existing garage to a living room, as shown in the accompanying sketch.",
+        "questionText": "Discuss one reason why a planning authority might refuse planning permission for the proposed conversion.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 8,
+        "rows": [
+          {
+            "id": "refusal",
+            "kind": "criterion",
+            "verbatim": "Valid detail",
+            "marks": 8,
+            "contextNote": "Such as: it changes the front elevation; defective specifications such as floor-to-ceiling height; windows overlooking a neighbour; a design out of character; a substandard structure.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q7-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q7-refusal",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Planning permission for a garage conversion",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 10,
+          "textSha256": "629a65f093280cfc6cfd666e2bfb5caab9cdd06b276e8a55411a51e42e369a75"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 21,
+          "textSha256": "473ad967b5902f105765b5e91414f8e7c3e114196c660c0f3ad483e95cf6cb24"
+        }
+      ],
+      "boundaryReview": "Scheme p21 (printed 18): (a) two reasons × 6 = 12; (b) site location map three details × 5 = 15 and site notice three details × 5 = 15 = 30; (c) one reason 8. Complete 50.",
+      "selectionReview": "Both printed planning documents in (b) are required, each separately marked; not a choice.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q7-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q7-refusal"
+      ]
+    },
+    {
+      "questionNumber": "7",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q7-complete",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-1-3",
+        "conceptId": "garage-conversion-planning-complete",
+        "questionRef": "2012 OL Q7 — complete",
+        "stem": "A homeowner wishes to obtain planning permission to convert an existing garage to a living room, as shown in the accompanying sketch.",
+        "questionText": "(a) Discuss two reasons why it is necessary to apply for planning permission to convert the garage to a living room.\n\n(b) Outline the information that must be contained in each of the following documents when making a planning application to the planning authority: site location map; copy of site notice.\n\n(c) Discuss one reason why a planning authority might refuse planning permission for the proposed conversion.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 50,
+        "rows": [
+          {
+            "id": "a-reason-1",
+            "kind": "criterion",
+            "verbatim": "Reason one",
+            "marks": 6,
+            "contextNote": "Such as: a change of use; the front appearance of the house changes, with a new window.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "a-reason-2",
+            "kind": "criterion",
+            "verbatim": "Reason two",
+            "marks": 6,
+            "contextNote": "A second, different reason. Such as: a legal requirement when changing the front elevation; others may object or make a submission.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "b-map",
+            "kind": "criterion",
+            "verbatim": "Site location map",
+            "marks": 15,
+            "contextNote": "Three valid details, 5 each. Such as: the Ordnance Survey sheet number; north; the townland; nearby features; boundaries in red, adjoining land owned in blue, wayleaves in yellow; the site notice location.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "id": "b-notice",
+            "kind": "criterion",
+            "verbatim": "Site notice",
+            "marks": 15,
+            "contextNote": "Three valid details, 5 each. Such as: the applicant’s name and address; the type of permission and date; a description of the development; whether it is a protected structure; that it may be inspected at the planning authority within 5 weeks.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "id": "c-refusal",
+            "kind": "criterion",
+            "verbatim": "Valid detail",
+            "marks": 8,
+            "contextNote": "Such as: it changes the front elevation; defective specifications such as floor-to-ceiling height; windows overlooking a neighbour; a design out of character; a substandard structure.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q7-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q7-documents",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Planning permission for a garage conversion",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. Both printed planning documents in (b) are required, each separately marked."
+        },
+        "taskGroups": [
+          {
+            "sourceCardId": "cons-2012-ol-q7-a",
+            "label": "a",
+            "marks": 12,
+            "rowIds": [
+              "a-reason-1",
+              "a-reason-2"
+            ]
+          },
+          {
+            "sourceCardId": "cons-2012-ol-q7-b",
+            "label": "b",
+            "marks": 30,
+            "rowIds": [
+              "b-map",
+              "b-notice"
+            ]
+          },
+          {
+            "sourceCardId": "cons-2012-ol-q7-c",
+            "label": "c",
+            "marks": 8,
+            "rowIds": [
+              "c-refusal"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 10,
+          "textSha256": "629a65f093280cfc6cfd666e2bfb5caab9cdd06b276e8a55411a51e42e369a75"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 21,
+          "textSha256": "473ad967b5902f105765b5e91414f8e7c3e114196c660c0f3ad483e95cf6cb24"
+        }
+      ],
+      "boundaryReview": "Scheme p21 (printed 18): (a) two reasons × 6 = 12; (b) site location map three details × 5 = 15 and site notice three details × 5 = 15 = 30; (c) one reason 8. Complete 50.",
+      "selectionReview": "Both printed planning documents in (b) are required, each separately marked; not a choice.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q7-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q7-documents"
+      ]
+    },
+    {
+      "questionNumber": "8",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q8-terms",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-5-4",
+        "conceptId": "construction-terms-terms",
+        "questionRef": "2012 OL Q8",
+        "stem": "",
+        "questionText": "Explain, with the aid of notes and neat freehand sketches, any five of the following: rainwater butt; box dovetail joint; compression joint; wall tie; gully trap; angle bead; newel post; through and through sawing; biscuit joint.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 50,
+        "rows": [
+          {
+            "id": "terms",
+            "kind": "anyN",
+            "verbatim": "Terms",
+            "marks": 50,
+            "contextNote": "Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). Rainwater butt: a barrel or tank connected to the downpipe to collect rainwater from the roof, with an overflow and a tap at the base; 100–300 litres; part of rainwater harvesting. Box Dovetail Joint: a joint for box shapes and drawers in quality furniture, by hand or machine; slope 1:6 for softwood, 1:8 for hardwood; decorative, with contrasting woods. Compression joint: a brass or PVC plumbing joint for copper or PVC pipe: the ends cut square, the nut and olive slipped on, and the nut tightened to compress the olive into a watertight joint. Wall tie: a stainless steel fitting holding the two leaves of a cavity wall together so they act as one, and holding the insulation; at 900 mm horizontally and 450 mm vertically. Gully trap: a PVC fitting at the head of an underground drain collecting waste or rainwater, with a grid against leaves and a water seal keeping odours and gases in the drain; it may have a back inlet. Angle bead: a stainless, galvanised steel or plastic bead with a solid rib and mesh flanges, fixed with nails or plaster dabs to give a true, reinforced plaster corner inside or out. Newel Post: a hardwood or softwood post, usually 75 × 75 or 100 × 100 mm, at the top or bottom of the stairs string or at a landing, supporting the handrail; square or round, often shaped or carved. Through and through sawing: plain sawing: the log cut straight through into boards, with little waste and the widest boards, but boards likely to cup in seasoning and no particular grain pattern. Biscuit joint: a biscuit joiner cuts crescent grooves in the edges for compressed beech biscuits, glued and cramped; ideal for joining boards edge to edge.",
+            "group": {
+              "claimMax": 5,
+              "perOption": 10,
+              "options": [
+                "Rainwater butt",
+                "Box Dovetail Joint",
+                "Compression joint",
+                "Wall tie",
+                "Gully trap",
+                "Angle bead",
+                "Newel Post",
+                "Through and through sawing",
+                "Biscuit joint"
+              ]
+            }
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q8-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q8-terms",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Construction terms",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Explain any five of the nine printed terms. Each term is marked separately at 10 marks; the scheme illustrations are examples of suitable sketches."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 11,
+          "textSha256": "3fd8e7a13ecb81e5ea02baab683b5421b4f71a000da233b101083e4fd16a5b0e"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 12,
+          "textSha256": "67676c75e8a2371d63ac37b15053baa77249e73350bdf61e714c9a0e3f3de1d3"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 13,
+          "textSha256": "6a7283841a7715a0c131634d7faf6d5dbaa6538e31acef8b2169ff0b87ab06b1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 22,
+          "textSha256": "44c062955f5003f7e65d2874a99d146d3a7ad5fc65b261216e4f71c6978fdc2a"
+        }
+      ],
+      "boundaryReview": "Scheme p22 (printed 19): five items, each primary communication of relevant information 6 plus other communication 4 = 10; complete 50.",
+      "selectionReview": "Closed choose-five of nine printed terms. Choice is not a route: one card prints all nine terms and carries one any-five group over them (10 marks each), never a card per term or per combination. No pre-audit card existed for this question.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q8-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q8-terms"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q9-a",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-10-1",
+        "conceptId": "oak-table-restoration-a",
+        "questionRef": "2012 OL Q9(a)",
+        "stem": "The sketch shows a traditional dining table made from solid oak.",
+        "questionText": "Show, using notes and neat freehand sketches, a suitable method of jointing the front rail to the leg and discuss why the method of jointing shown is suitable.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 14,
+        "rows": [
+          {
+            "id": "name",
+            "kind": "criterion",
+            "verbatim": "Name",
+            "marks": 4,
+            "contextNote": "Such as: a haunched mortise and tenon; a dowel joint.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "suitability",
+            "kind": "criterion",
+            "verbatim": "Suitability of joint",
+            "marks": 4,
+            "contextNote": "Such as, the haunched mortise and tenon: the traditional, strong and sturdy joint for quality work, with a high glue area, resisting twisting; dowels are weaker.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "presentation",
+            "kind": "criterion",
+            "verbatim": "Quality of sketch (excellent good fair)",
+            "marks": 6,
+            "contextNote": "Quality of the sketch of the joint: excellent 6, good 4, fair 2.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q9-joint",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Restoring a solid oak dining table",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The joint and the finish are open choices; the scheme gives typical examples."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 13,
+          "textSha256": "6a7283841a7715a0c131634d7faf6d5dbaa6538e31acef8b2169ff0b87ab06b1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 14,
+          "textSha256": "8dccb2ded57b76420035e664b47bc1b0b251743e5f1760617b9d1c5509792858"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 23,
+          "textSha256": "8c3014fd410725a3592fef40ce27349fa6f9b17c9bc716aa8fc113eee20ddaa6"
+        }
+      ],
+      "boundaryReview": "Scheme p23 (printed 20): (a) joint name 4, suitability 4 and quality of sketch 6 (6/4/2) = 14; (b) two preparation details × 6 and quality of sketch 4 (4/3/2) = 16; (c) finish 4, two application details × 6 and quality of sketches 4 (4/3/2) = 20. Complete 50.",
+      "selectionReview": "The joint and the finish are open choices; the scheme gives typical examples.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q9-joint"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q9-b",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-10-7",
+        "conceptId": "oak-table-restoration-b",
+        "questionRef": "2012 OL Q9(b)",
+        "stem": "The sketch shows a traditional dining table made from solid oak.",
+        "questionText": "It has been decided to restore the tabletop, which has become damaged over time, as shown. Show, using notes and neat freehand sketches, the steps involved in removing the marks and in preparing the tabletop for the application of a new applied finish.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 16,
+        "rows": [
+          {
+            "id": "detail-1",
+            "kind": "criterion",
+            "verbatim": "Valid detail one",
+            "marks": 6,
+            "contextNote": "Such as: the surface cleaned, with paint or varnish remover if needed; sanded with medium to fine glasspaper or an electric sander.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "detail-2",
+            "kind": "criterion",
+            "verbatim": "Valid detail two",
+            "marks": 6,
+            "contextNote": "A second, different step. Such as: deep marks repaired or lightly planed out; steel wool for a smooth finish; cleaned with white spirit and lightly sanded again.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "presentation",
+            "kind": "criterion",
+            "verbatim": "Quality of sketch (excellent good fair)",
+            "marks": 4,
+            "contextNote": "Quality of the sketch: excellent 4, good 3, fair 2.",
+            "permittedMarks": [
+              0,
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q9-restore",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Restoring a solid oak dining table",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The joint and the finish are open choices; the scheme gives typical examples."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 13,
+          "textSha256": "6a7283841a7715a0c131634d7faf6d5dbaa6538e31acef8b2169ff0b87ab06b1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 14,
+          "textSha256": "8dccb2ded57b76420035e664b47bc1b0b251743e5f1760617b9d1c5509792858"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 23,
+          "textSha256": "8c3014fd410725a3592fef40ce27349fa6f9b17c9bc716aa8fc113eee20ddaa6"
+        }
+      ],
+      "boundaryReview": "Scheme p23 (printed 20): (a) joint name 4, suitability 4 and quality of sketch 6 (6/4/2) = 14; (b) two preparation details × 6 and quality of sketch 4 (4/3/2) = 16; (c) finish 4, two application details × 6 and quality of sketches 4 (4/3/2) = 20. Complete 50.",
+      "selectionReview": "The joint and the finish are open choices; the scheme gives typical examples.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q9-restore"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q9-c",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-10-7",
+        "conceptId": "oak-table-restoration-c",
+        "questionRef": "2012 OL Q9(c)",
+        "stem": "The sketch shows a traditional dining table made from solid oak.",
+        "questionText": "Recommend a suitable applied finish for the tabletop. Describe, using notes and neat freehand sketches, the steps to be followed when applying the recommended finish.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 20,
+        "rows": [
+          {
+            "id": "finish",
+            "kind": "criterion",
+            "verbatim": "Name of finish",
+            "marks": 4,
+            "contextNote": "Such as: varnish; wax; oil or Danish oil; lacquer.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "detail-1",
+            "kind": "criterion",
+            "verbatim": "Valid detail one",
+            "marks": 6,
+            "contextNote": "A step matching the finish. Such as: varnish applied with a good brush, lightly sanded and a second coat applied; oil applied with a lint-free cloth.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "detail-2",
+            "kind": "criterion",
+            "verbatim": "Valid detail two",
+            "marks": 6,
+            "contextNote": "A second, different step. Such as: wax applied in very light layers, dried and buffed, layer by layer; lacquer sprayed on for a high quality finish.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "presentation",
+            "kind": "criterion",
+            "verbatim": "Quality of sketches (excellent good fair)",
+            "marks": 4,
+            "contextNote": "Quality of the sketches: excellent 4, good 3, fair 2.",
+            "permittedMarks": [
+              0,
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q9-finish",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Restoring a solid oak dining table",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The joint and the finish are open choices; the scheme gives typical examples."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 13,
+          "textSha256": "6a7283841a7715a0c131634d7faf6d5dbaa6538e31acef8b2169ff0b87ab06b1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 14,
+          "textSha256": "8dccb2ded57b76420035e664b47bc1b0b251743e5f1760617b9d1c5509792858"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 23,
+          "textSha256": "8c3014fd410725a3592fef40ce27349fa6f9b17c9bc716aa8fc113eee20ddaa6"
+        }
+      ],
+      "boundaryReview": "Scheme p23 (printed 20): (a) joint name 4, suitability 4 and quality of sketch 6 (6/4/2) = 14; (b) two preparation details × 6 and quality of sketch 4 (4/3/2) = 16; (c) finish 4, two application details × 6 and quality of sketches 4 (4/3/2) = 20. Complete 50.",
+      "selectionReview": "The joint and the finish are open choices; the scheme gives typical examples.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q9-finish"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "alternative": false,
+      "correction": false,
+      "card": {
+        "id": "cons-2012-ol-q9-complete",
+        "subjectId": "construction-studies",
+        "year": 2012,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-10-1",
+        "conceptId": "oak-table-restoration-complete",
+        "questionRef": "2012 OL Q9 — complete",
+        "stem": "The sketch shows a traditional dining table made from solid oak.",
+        "questionText": "(a) Show, using notes and neat freehand sketches, a suitable method of jointing the front rail to the leg and discuss why the method of jointing shown is suitable.\n\n(b) It has been decided to restore the tabletop, which has become damaged over time, as shown. Show, using notes and neat freehand sketches, the steps involved in removing the marks and in preparing the tabletop for the application of a new applied finish.\n\n(c) Recommend a suitable applied finish for the tabletop. Describe, using notes and neat freehand sketches, the steps to be followed when applying the recommended finish.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 50,
+        "rows": [
+          {
+            "id": "a-name",
+            "kind": "criterion",
+            "verbatim": "Name",
+            "marks": 4,
+            "contextNote": "Such as: a haunched mortise and tenon; a dowel joint.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "a-suitability",
+            "kind": "criterion",
+            "verbatim": "Suitability of joint",
+            "marks": 4,
+            "contextNote": "Such as, the haunched mortise and tenon: the traditional, strong and sturdy joint for quality work, with a high glue area, resisting twisting; dowels are weaker.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "a-presentation",
+            "kind": "criterion",
+            "verbatim": "Quality of sketch (excellent good fair)",
+            "marks": 6,
+            "contextNote": "Quality of the sketch of the joint: excellent 6, good 4, fair 2.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "id": "b-detail-1",
+            "kind": "criterion",
+            "verbatim": "Valid detail one",
+            "marks": 6,
+            "contextNote": "Such as: the surface cleaned, with paint or varnish remover if needed; sanded with medium to fine glasspaper or an electric sander.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "b-detail-2",
+            "kind": "criterion",
+            "verbatim": "Valid detail two",
+            "marks": 6,
+            "contextNote": "A second, different step. Such as: deep marks repaired or lightly planed out; steel wool for a smooth finish; cleaned with white spirit and lightly sanded again.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "b-presentation",
+            "kind": "criterion",
+            "verbatim": "Quality of sketch (excellent good fair)",
+            "marks": 4,
+            "contextNote": "Quality of the sketch: excellent 4, good 3, fair 2.",
+            "permittedMarks": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "c-finish",
+            "kind": "criterion",
+            "verbatim": "Name of finish",
+            "marks": 4,
+            "contextNote": "Such as: varnish; wax; oil or Danish oil; lacquer.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "c-detail-1",
+            "kind": "criterion",
+            "verbatim": "Valid detail one",
+            "marks": 6,
+            "contextNote": "A step matching the finish. Such as: varnish applied with a good brush, lightly sanded and a second coat applied; oil applied with a lint-free cloth.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "c-detail-2",
+            "kind": "criterion",
+            "verbatim": "Valid detail two",
+            "marks": 6,
+            "contextNote": "A second, different step. Such as: wax applied in very light layers, dried and buffed, layer by layer; lacquer sprayed on for a high quality finish.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "c-presentation",
+            "kind": "criterion",
+            "verbatim": "Quality of sketches (excellent good fair)",
+            "marks": 4,
+            "contextNote": "Quality of the sketches: excellent 4, good 3, fair 2.",
+            "permittedMarks": [
+              0,
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2012-OL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2012-OL-q9-restore",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Restoring a solid oak dining table",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The joint and the finish are open choices; the scheme gives typical examples."
+        },
+        "taskGroups": [
+          {
+            "sourceCardId": "cons-2012-ol-q9-a",
+            "label": "a",
+            "marks": 14,
+            "rowIds": [
+              "a-name",
+              "a-suitability",
+              "a-presentation"
+            ]
+          },
+          {
+            "sourceCardId": "cons-2012-ol-q9-b",
+            "label": "b",
+            "marks": 16,
+            "rowIds": [
+              "b-detail-1",
+              "b-detail-2",
+              "b-presentation"
+            ]
+          },
+          {
+            "sourceCardId": "cons-2012-ol-q9-c",
+            "label": "c",
+            "marks": 20,
+            "rowIds": [
+              "c-finish",
+              "c-detail-1",
+              "c-detail-2",
+              "c-presentation"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "8348df256e5e0f6cfd7d3f69a135f2c47f859081add3ee255ae68f9be5cebd3c"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "61be5c84d7729dced71784b815657be25330e759b9a3fcbf3d1d45e998ff21f8"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 3,
+          "textSha256": "762e377c9f65c92dc33fbf499931c5e1912ba4746ad438c3013e1745a51161e6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 13,
+          "textSha256": "6a7283841a7715a0c131634d7faf6d5dbaa6538e31acef8b2169ff0b87ab06b1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 14,
+          "textSha256": "8dccb2ded57b76420035e664b47bc1b0b251743e5f1760617b9d1c5509792858"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 23,
+          "textSha256": "8c3014fd410725a3592fef40ce27349fa6f9b17c9bc716aa8fc113eee20ddaa6"
+        }
+      ],
+      "boundaryReview": "Scheme p23 (printed 20): (a) joint name 4, suitability 4 and quality of sketch 6 (6/4/2) = 14; (b) two preparation details × 6 and quality of sketch 4 (4/3/2) = 16; (c) finish 4, two application details × 6 and quality of sketches 4 (4/3/2) = 20. Complete 50.",
+      "selectionReview": "The joint and the finish are open choices; the scheme gives typical examples.",
+      "requiredQuestionFigures": [
+        "construction-studies-2012-OL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2012-OL-q9-restore"
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "cardId": "cons-2012-ol-q1-a",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-3-9",
+        "cons-3-10",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Scaled drawing (1.5) of a tiled roof (3.9) at the eaves (3.10) on a cavity wall (3.3).",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-question-one-drawing-questions",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q1-b",
+      "markBankTopicId": "cons-3-10",
+      "canonicalTopicIds": [
+        "cons-3-10",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Closing the cavity (3.3) at the eaves (3.10).",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q1-complete",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-3-9",
+        "cons-3-10",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-question-one-drawing-questions",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q2-a",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-2"
+      ],
+      "canonicalTopicReview": "External insulation (6.2) on the external envelope (3.2).",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q2-b",
+      "markBankTopicId": "cons-6-3",
+      "canonicalTopicIds": [
+        "cons-6-3",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Heat loss and running costs (6.3) with insulation (6.2).",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q2-complete",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-2",
+        "cons-6-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q3-a",
+      "markBankTopicId": "cons-5-1",
+      "canonicalTopicIds": [
+        "cons-5-1",
+        "cons-5-2"
+      ],
+      "canonicalTopicReview": "The water service entry (5.1) and cold water supply (5.2).",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q3-b",
+      "markBankTopicId": "cons-5-1",
+      "canonicalTopicIds": [
+        "cons-5-1",
+        "cons-5-2"
+      ],
+      "canonicalTopicReview": "Protecting the service entry (5.1) from frost.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q3-c",
+      "markBankTopicId": "cons-5-2",
+      "canonicalTopicIds": [
+        "cons-5-2",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Water supply (5.2) used sustainably (1.2).",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q3-complete",
+      "markBankTopicId": "cons-5-1",
+      "canonicalTopicIds": [
+        "cons-5-1",
+        "cons-5-2",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q4-a",
+      "markBankTopicId": "cons-2-4",
+      "canonicalTopicIds": [
+        "cons-2-4",
+        "cons-2-5"
+      ],
+      "canonicalTopicReview": "Strip foundations (2.4) and their reinforcement (2.5).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q4-b",
+      "markBankTopicId": "cons-2-4",
+      "canonicalTopicIds": [
+        "cons-2-4",
+        "cons-2-2"
+      ],
+      "canonicalTopicReview": "The choice of foundation (2.2, 2.4).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q4-complete",
+      "markBankTopicId": "cons-2-4",
+      "canonicalTopicIds": [
+        "cons-2-4",
+        "cons-2-5",
+        "cons-2-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q5-a",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-3-6",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Scaled drawing (1.5) of a window cill (3.6) in a cavity wall (3.3).",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-question-one-drawing-questions",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q5-b",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-6"
+      ],
+      "canonicalTopicReview": "A thermal bridge (6.2) at the window cill (3.6).",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-windows-doors"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q5-complete",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-3-6",
+        "cons-3-3",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-question-one-drawing-questions",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q6-a",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8"
+      ],
+      "canonicalTopicReview": "Safety precautions on site (1.8).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q6-b",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8"
+      ],
+      "canonicalTopicReview": "Personal protective equipment on site (1.8).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q6-complete",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q7-a",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Planning permission (1.3).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q7-b",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Planning application documents (1.3).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q7-c",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Planning permission (1.3).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q7-complete",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q8-terms",
+      "markBankTopicId": "cons-5-4",
+      "canonicalTopicIds": [
+        "cons-5-4",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-3-3",
+        "cons-5-5",
+        "cons-4-1",
+        "cons-4-4",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "The union of the nine printed terms: Rainwater from gutters and downpipes (5.4). Joints (10.1) and the choice of joint (10.4). The Ordinary reference taxonomy has no joinery heading; the term keeps the Wood, Rot & Ventilation association used for joinery, and 10.1/10.4 are declared outside that heading’s crosswalk. Water supply pipework (5.2). Cavity walls (3.3). Underground drainage (5.5). Wall finishes (4.1). No Ordinary outgoing reference heading covers plastering; the term keeps the Foundations, Floors & Walls association, and 4.1 is declared outside that heading’s crosswalk. Stairs (4.4). No Ordinary outgoing reference heading covers stairs; the term keeps the Foundations, Floors & Walls association, and 4.4 is declared outside that heading’s crosswalk. The conversion of timber into boards (10.3). Jointing boards (10.3).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-drainage",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q9-a",
+      "markBankTopicId": "cons-10-1",
+      "canonicalTopicIds": [
+        "cons-10-1",
+        "cons-10-4"
+      ],
+      "canonicalTopicReview": "Joints (10.1) and the choice of joint (10.4).",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q9-b",
+      "markBankTopicId": "cons-10-7",
+      "canonicalTopicIds": [
+        "cons-10-7"
+      ],
+      "canonicalTopicReview": "Surface preparation of timber (10.7).",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q9-c",
+      "markBankTopicId": "cons-10-7",
+      "canonicalTopicIds": [
+        "cons-10-7"
+      ],
+      "canonicalTopicReview": "Applied finishes for timber (10.7).",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2012-ol-q9-complete",
+      "markBankTopicId": "cons-10-1",
+      "canonicalTopicIds": [
+        "cons-10-1",
+        "cons-10-4",
+        "cons-10-7"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    }
+  ],
+  "questionFigures": [
+    {
+      "key": "construction-studies-2012-OL-q1-original",
+      "source": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+      "page": 2,
+      "rect": [
+        30,
+        39,
+        580,
+        197
+      ],
+      "renderScale": 2,
+      "solution": false,
+      "sha256": "4ba3e60e261868b71c9f3dbeed9e55159e889effac3113b2d4413617bcb550bf",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q2-original",
+      "source": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+      "page": 2,
+      "rect": [
+        30,
+        197,
+        580,
+        372
+      ],
+      "renderScale": 2,
+      "solution": false,
+      "sha256": "6e4207c53746e62c89f522dd690cae5c723fc927672dc5fa5fe0d29023f17583",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q3-original",
+      "source": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+      "page": 2,
+      "rect": [
+        30,
+        372,
+        580,
+        580
+      ],
+      "renderScale": 2,
+      "solution": false,
+      "sha256": "e6f5398416f2529e5a36f1756f35b4ff88540e732eab295bc33cffa5e2bf3e11",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q4-original",
+      "source": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+      "page": 2,
+      "rect": [
+        30,
+        580,
+        580,
+        790
+      ],
+      "renderScale": 2,
+      "solution": false,
+      "sha256": "6cc927b373fa9e11b29e67539e3606fd43a3010ce7c27c5ecda90f6358282048",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q5-original",
+      "source": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+      "page": 3,
+      "rect": [
+        30,
+        39,
+        580,
+        191
+      ],
+      "renderScale": 2,
+      "solution": false,
+      "sha256": "21f22049b241c8f15dbc09c2a66a256b74e1b1d16e1f037217a938abe011fb93",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q6-original",
+      "source": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+      "page": 3,
+      "rect": [
+        30,
+        191,
+        580,
+        313
+      ],
+      "renderScale": 2,
+      "solution": false,
+      "sha256": "4a9bad8f1aa929a25e4d3ab6edb59948dc311c2e03447c93ffc3596ee44d6fec",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q7-original",
+      "source": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+      "page": 3,
+      "rect": [
+        30,
+        313,
+        580,
+        509
+      ],
+      "renderScale": 2,
+      "solution": false,
+      "sha256": "cdfcd87c60048a1c6af49366659c4ff6d9c8baa363019b927774c3d7843c43fe",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q8-original",
+      "source": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+      "page": 3,
+      "rect": [
+        30,
+        509,
+        580,
+        601
+      ],
+      "renderScale": 2,
+      "solution": false,
+      "sha256": "f075feae29aa2a9ed80298cce46da10b878e159c0fcc9966cd58251e7d1ead6c",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q9-original",
+      "source": "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf",
+      "page": 3,
+      "rect": [
+        30,
+        601,
+        580,
+        790
+      ],
+      "renderScale": 2,
+      "solution": false,
+      "sha256": "73f99a0ed46206a50d81c9e6a6066e0b965f390dc1830af289edb0e3e889f661",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q1-section",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 4,
+      "rect": [
+        18,
+        50,
+        580,
+        622
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "025fecde1149e9621dcd4fef01a6bc9522913a6e1f1f51394cdd770f3e83e1f3",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q1-closer",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 4,
+      "rect": [
+        18,
+        622,
+        580,
+        777
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "d3642ff686ef87992ff26e19f5dbeccf6ac19e7b56a5ef0a9cdb3b71289dff6b",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q2-method",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 5,
+      "rect": [
+        25,
+        50,
+        580,
+        564
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "51311e695c8da164bddc3e333cf2a0462f05481c6238876e3042a1f522c09f19",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q2-advantages",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 5,
+      "rect": [
+        25,
+        564,
+        580,
+        777
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "b71a2013be7ac5f91dc9745756548fab7824b947b3d8e2ab16f2063d80f69d05",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q3-system",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 6,
+      "rect": [
+        25,
+        50,
+        580,
+        322
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "18c5c745ccc10c96aca1f855e2776e959046a8f37cec85c81b87e6921f60778f",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q3-frost",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 6,
+      "rect": [
+        25,
+        322,
+        580,
+        408
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "3a328ba5d5658690f0ff3d8d85f69349d3568ec6dcd9908e4049fc371e4f0965",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q3-saving",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 6,
+      "rect": [
+        25,
+        408,
+        580,
+        563
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "b4ddfc586fcf6ed31c714677b8b2f5cb54d6c3d6066f60dc934f36418440273b",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q4-design",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 6,
+          "rect": [
+            25,
+            563,
+            580,
+            777
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 7,
+          "rect": [
+            25,
+            60,
+            580,
+            540
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "1ef8c45732b3e633f365d0dda128a1c981ce788f62c816c9f3516873e25a49ba",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q4-reasons",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 7,
+      "rect": [
+        25,
+        540,
+        580,
+        777
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "84817f974c6af52857664e318f08e214add19d3e956d1edfd8bcbfdcce0bbefe",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q5-scheme",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 8,
+      "rect": [
+        25,
+        46,
+        580,
+        436
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "16550f468d3dde72c9df15e603322f117b9215ba197fc4c754736f91ae5a7a5e",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q6-precautions",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 8,
+          "rect": [
+            25,
+            436,
+            580,
+            777
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 9,
+          "rect": [
+            25,
+            50,
+            580,
+            252
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "26a3dc88da554cc7cb61ddd0476cfd17666b454b3d054fcf77dc284adf5df077",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q6-ppe",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 9,
+      "rect": [
+        25,
+        252,
+        580,
+        777
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "965131d38605660af7094098ccda82c955ba33623d4b78364b76ed040ebc348d",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q7-reasons",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 10,
+      "rect": [
+        25,
+        50,
+        580,
+        207
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "63e1047fc362b715529639f180b9bd24cd0d56b27bd5b5c87d04c78e1fe99257",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q7-documents",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 10,
+      "rect": [
+        25,
+        207,
+        580,
+        565
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "965a12025880d080d8f3594202ac54a0112bc06d42cb62dccc3c6d0e7ce89e34",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q7-refusal",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 10,
+      "rect": [
+        25,
+        565,
+        580,
+        777
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "58cfb1b15d8fa0c96f0b9aabe7e0081cc2187f223bd4bb724c412c7195c62db4",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q8-terms",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 11,
+          "rect": [
+            25,
+            50,
+            580,
+            777
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 12,
+          "rect": [
+            25,
+            50,
+            580,
+            777
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+          "page": 13,
+          "rect": [
+            25,
+            50,
+            580,
+            120
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "13e103fc80f4bbf8307da87225801e44ffcb9c46f9e6cfee0900a63cb26ba4d6",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q9-joint",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 13,
+      "rect": [
+        25,
+        120,
+        580,
+        505
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "de1f5a0ef4a8d38f210ab71ec556a9f4763a2b0dc285580953d3bb305a10d1bc",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q9-restore",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 13,
+      "rect": [
+        25,
+        505,
+        580,
+        777
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "ad2c54035ff9e612e31c7ca6bc3f0d8c51756b5c42bbaaf95ff23c278657fb42",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2012-OL-q9-finish",
+      "source": "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf",
+      "page": 14,
+      "rect": [
+        25,
+        50,
+        580,
+        560
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "61d51ac98d777090f7b4054e600a04b4d7bb893c080344e9a02fa51631c79644",
+      "visuallyInspected": true
+    }
+  ],
+  "addedIds": [
+    "cons-2012-ol-q1-a",
+    "cons-2012-ol-q1-b",
+    "cons-2012-ol-q1-complete",
+    "cons-2012-ol-q2-a",
+    "cons-2012-ol-q2-b",
+    "cons-2012-ol-q2-complete",
+    "cons-2012-ol-q3-a",
+    "cons-2012-ol-q3-b",
+    "cons-2012-ol-q3-c",
+    "cons-2012-ol-q3-complete",
+    "cons-2012-ol-q4-a",
+    "cons-2012-ol-q4-b",
+    "cons-2012-ol-q4-complete",
+    "cons-2012-ol-q5-a",
+    "cons-2012-ol-q5-b",
+    "cons-2012-ol-q5-complete",
+    "cons-2012-ol-q6-a",
+    "cons-2012-ol-q6-b",
+    "cons-2012-ol-q6-complete",
+    "cons-2012-ol-q7-a",
+    "cons-2012-ol-q7-b",
+    "cons-2012-ol-q7-c",
+    "cons-2012-ol-q7-complete",
+    "cons-2012-ol-q8-terms",
+    "cons-2012-ol-q9-a",
+    "cons-2012-ol-q9-b",
+    "cons-2012-ol-q9-c",
+    "cons-2012-ol-q9-complete"
+  ],
+  "corrections": [],
+  "selectionLedger": {
+    "pattern": "\\b(?:choose|select|one\\s+of|any\\s+\\w+|either|or|answer\\s+\\w+)\\b",
+    "unclassified": 0,
+    "sourceHashes": {
+      "paper-trail-corpus/exampapers/2012/LC029GLP000EV.pdf": "d529d6c698018dc5277c9263c92682f5c6294239f37f59ac891caea7056238e3",
+      "paper-trail-corpus/markingschemes/2012/LC029GLP000EV.pdf": "6e9157b363ec4060b91166a6ce6a623e211cf5e81847a41cd4cdcf5918f0bebe"
+    },
+    "rows": [
+      {
+        "page": 1,
+        "start": 211,
+        "match": "Answer Question",
+        "context": "Theory - Ordinary Level (200 marks) Friday, 15 June Afternoon, 2:00 to 4:30 (a) Answer Question 1 and three other questions. (b) All questions carry equal marks. (c) Answers m",
+        "classification": "Whole-exam selection: Question 1 and three other questions (200 marks); all question banks retained, no full-exam Cartesian cards."
+      },
+      {
+        "page": 3,
+        "start": 1794,
+        "match": "any five",
+        "context": "posed conversion. 8. Explain, with the aid of notes and neat freehand sketches, any five of the following: • rainwater butt • box dovetail joint • compression joint • w",
+        "classification": "Q8 closed choose-five of nine printed terms: one card with an any-five group over all nine terms (choice is not a route)."
+      }
+    ],
+    "finiteQuestionChoices": {
+      "8": {
+        "choose": 5,
+        "options": [
+          "Rainwater butt",
+          "Box Dovetail Joint",
+          "Compression joint",
+          "Wall tie",
+          "Gully trap",
+          "Angle bead",
+          "Newel Post",
+          "Through and through sawing",
+          "Biscuit joint"
+        ],
+        "cardId": "cons-2012-ol-q8-terms",
+        "groupRowId": "terms",
+        "wholeQuestionMarks": 50,
+        "termMarks": 10
+      }
+    }
+  },
+  "questionRouteLedgers": {
+    "1": {
+      "wholeRoutes": [
+        {
+          "id": "cons-2012-ol-q1-complete",
+          "parts": [
+            "a",
+            "b"
+          ],
+          "marks": 50
+        }
+      ]
+    },
+    "2": {
+      "wholeRoutes": [
+        {
+          "id": "cons-2012-ol-q2-complete",
+          "parts": [
+            "a",
+            "b"
+          ],
+          "marks": 50
+        }
+      ]
+    },
+    "3": {
+      "wholeRoutes": [
+        {
+          "id": "cons-2012-ol-q3-complete",
+          "parts": [
+            "a",
+            "b",
+            "c"
+          ],
+          "marks": 50
+        }
+      ]
+    },
+    "4": {
+      "wholeRoutes": [
+        {
+          "id": "cons-2012-ol-q4-complete",
+          "parts": [
+            "a",
+            "b"
+          ],
+          "marks": 50
+        }
+      ]
+    },
+    "5": {
+      "wholeRoutes": [
+        {
+          "id": "cons-2012-ol-q5-complete",
+          "parts": [
+            "a",
+            "b"
+          ],
+          "marks": 50
+        }
+      ]
+    },
+    "6": {
+      "wholeRoutes": [
+        {
+          "id": "cons-2012-ol-q6-complete",
+          "parts": [
+            "a",
+            "b"
+          ],
+          "marks": 50
+        }
+      ]
+    },
+    "7": {
+      "wholeRoutes": [
+        {
+          "id": "cons-2012-ol-q7-complete",
+          "parts": [
+            "a",
+            "b",
+            "c"
+          ],
+          "marks": 50
+        }
+      ]
+    },
+    "8": {
+      "wholeRoutes": [
+        {
+          "id": "cons-2012-ol-q8-terms",
+          "parts": [
+            "one card over every printed item"
+          ],
+          "marks": 50
+        }
+      ]
+    },
+    "9": {
+      "wholeRoutes": [
+        {
+          "id": "cons-2012-ol-q9-complete",
+          "parts": [
+            "a",
+            "b",
+            "c"
+          ],
+          "marks": 50
+        }
+      ]
+    }
+  },
+  "taxonomyGaps": [
+    {
+      "cardId": "cons-2012-ol-q4-a",
+      "canonicalTopicIds": [
+        "cons-2-5"
+      ],
+      "atlasTopicId": "construction-studies-ordinary-foundations-floors-walls",
+      "reason": "No Ordinary outgoing reference heading covers reinforcement (2.5); the card keeps the Foundations, Floors & Walls association."
+    },
+    {
+      "cardId": "cons-2012-ol-q8-terms",
+      "canonicalTopicIds": [
+        "cons-10-1",
+        "cons-10-4"
+      ],
+      "atlasTopicId": "construction-studies-ordinary-wood-rot-ventilation",
+      "reason": "No Ordinary outgoing reference heading covers joinery (10.1, 10.4, box dovetail joint)."
+    },
+    {
+      "cardId": "cons-2012-ol-q8-terms",
+      "canonicalTopicIds": [
+        "cons-4-1",
+        "cons-4-4"
+      ],
+      "atlasTopicId": "construction-studies-ordinary-foundations-floors-walls",
+      "reason": "No Ordinary outgoing reference heading covers plastering or stairs (4.1 angle bead, 4.4 newel post)."
+    },
+    {
+      "cardId": "cons-2012-ol-q9-a",
+      "canonicalTopicIds": [
+        "cons-10-1",
+        "cons-10-4"
+      ],
+      "atlasTopicId": "construction-studies-ordinary-wood-rot-ventilation",
+      "reason": "No Ordinary outgoing reference heading covers joinery (10.1, 10.4); the card keeps the Wood, Rot & Ventilation association."
+    }
+  ],
+  "questionsReviewed": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "unreviewedQuestions": [],
+  "alternativeQuestions": [],
+  "reviewedAt": "2026-10-14T17:00:41.695425+00:00",
+  "paperComplete": true,
+  "fullPaperReconciliation": {
+    "questions": 9,
+    "alternativeQuestions": 0,
+    "examRubric": "Question 1 and three other questions, 50 marks each, 200 total; no full-exam Cartesian cards.",
+    "method": "Same-operator source review of the paper and every scheme page; validator construction_2012_ordinary.py on the shared engine construction_paper.py.",
+    "validator": {
+      "tasks": 28,
+      "addedTasks": 28,
+      "correctedTasks": 0,
+      "consolidatedLegacy": 0,
+      "leafTasks": 20,
+      "wholeQuestions": 9,
+      "anyNChoiceCards": 1,
+      "sourceFigures": 28,
+      "paperComplete": true
+    }
+  },
+  "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2012-ordinary/prior-authored-card-hashes.json",
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2012-ordinary/prior-2012-ordinary-cards.json"
+}

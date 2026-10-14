@@ -6193,5 +6193,201 @@
     "alt": "SEC 2012 Higher marking scheme notes on the advantages and disadvantages of Passive House construction.",
     "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2012-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q1-original.png",
+    "md5": "8e1b3c1ba676074958db694fe3f3271f",
+    "alt": "Original SEC 2012 Ordinary Construction Studies Question 1: the printed question with a sketch of the tiled roof at the eaves.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2012-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q2-original.png",
+    "md5": "0962d82b449048e2ea96e4c82a52c8c3",
+    "alt": "Original SEC 2012 Ordinary Construction Studies Question 2: the printed question with a sketch of the rendered house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2012-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q3-original.png",
+    "md5": "23f5a929fab89d1eca77e62ff82036b3",
+    "alt": "Original SEC 2012 Ordinary Construction Studies Question 3: the printed question with a sketch of the kitchen sink and tap.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2012-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q4-original.png",
+    "md5": "63098a8b48dea7de68406f0c1c3e1a6b",
+    "alt": "Original SEC 2012 Ordinary Construction Studies Question 4: the printed question with a sketch of the cavity wall on its strip foundation.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2012-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q5-original.png",
+    "md5": "3a496c251345adb5bcb57811b9fd90d4",
+    "alt": "Original SEC 2012 Ordinary Construction Studies Question 5: the printed question with a sketch of the triple-glazed casement window.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2012-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q6-original.png",
+    "md5": "5a8d3850a77f32c03b3cc24ffcd712f0",
+    "alt": "Original SEC 2012 Ordinary Construction Studies Question 6: the printed question with a sketch of a worker carrying a load.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2012-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q7-original.png",
+    "md5": "d24350704d1e940f33e8d4435a66040f",
+    "alt": "Original SEC 2012 Ordinary Construction Studies Question 7: the printed question with a sketch of the house and garage to be converted.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2012-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q8-original.png",
+    "md5": "d01dc8c4fe2bd1d23a074110ba8b4768",
+    "alt": "Original SEC 2012 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2012-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q9-original.png",
+    "md5": "f43fa687fad3df3115cd74abbbc52404",
+    "alt": "Original SEC 2012 Ordinary Construction Studies Question 9: the printed question with a sketch of the solid oak dining table.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2012-OL-q1-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q1-section.png",
+    "md5": "e1e3558d15ecb4d88b8f6c47d0093c49",
+    "alt": "SEC model sections through the tiled roof at the eaves on the cavity wall, with the specification list.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q1-closer": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q1-closer.png",
+    "md5": "11464f203be197fb5140c3a939d54087",
+    "alt": "SEC 2012 Ordinary marking scheme notes on closing the cavity at eaves level.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q2-method": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q2-method.png",
+    "md5": "624a51593df9f872059e66f167141166",
+    "alt": "SEC 2012 Ordinary marking scheme notes and sketch on an external insulation system and its insulation materials.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q2-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q2-advantages.png",
+    "md5": "72db14c855bdf8d04c39dc05c169aa79",
+    "alt": "SEC 2012 Ordinary marking scheme notes on the advantages of external wall insulation.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q3-system.png",
+    "md5": "3a94f6bc5499dcf2ee7e23e8c66c5aee",
+    "alt": "SEC single-line diagram of the mains supply through the wall to the kitchen sink, with the list of components.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q3-frost": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q3-frost.png",
+    "md5": "d1fe360db9dc701a2457093b2c7aa5d3",
+    "alt": "SEC 2012 Ordinary marking scheme notes on protecting the mains supply from frost.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q3-saving": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q3-saving.png",
+    "md5": "20b37dea1842d14fad9f7b8cfcad0bcb",
+    "alt": "SEC 2012 Ordinary marking scheme notes and sketch on reducing the use of treated water.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q4-design": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q4-design.png",
+    "md5": "cb5a7d4cff49031fcfc4997d0c57466c",
+    "alt": "SEC 2012 Ordinary marking scheme notes and sketches on the trench, concrete level, reinforcement and wall position of a strip foundation (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q4-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q4-reasons.png",
+    "md5": "88f40d5001626be5dc260554d4dd8e4a",
+    "alt": "SEC 2012 Ordinary marking scheme notes on the environmental reasons for a strip foundation.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q5-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q5-scheme.png",
+    "md5": "1d4fd2b537cb16a1ace573b18f421b4d",
+    "alt": "SEC model section through the window cill in the cavity wall, with the specification list and the cold-bridge detail.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q6-precautions": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q6-precautions.png",
+    "md5": "bb5cf3d0fa46310208a2e78459c83798",
+    "alt": "SEC 2012 Ordinary marking scheme notes and sketch on safe lifting and on placing concrete from a ready-mix truck (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q6-ppe": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q6-ppe.png",
+    "md5": "1a5be57e2699af434c6150f17e7aaca6",
+    "alt": "SEC 2012 Ordinary marking scheme notes and sketches on a high visibility jacket, a safety helmet and steel cap boots.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q7-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q7-reasons.png",
+    "md5": "ff12512d13c0c1c21d1bae01fb58f1ca",
+    "alt": "SEC 2012 Ordinary marking scheme notes on why planning permission is needed for the conversion.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q7-documents": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q7-documents.png",
+    "md5": "932200c0a9da924b5b72c8e521ec8cd9",
+    "alt": "SEC 2012 Ordinary marking scheme notes on the site location map and the site notice.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q7-refusal": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q7-refusal.png",
+    "md5": "d5e1ee9c7e085176dfdb82cb7bb201e4",
+    "alt": "SEC 2012 Ordinary marking scheme notes on reasons to refuse permission for the conversion.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q8-terms": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q8-terms.png",
+    "md5": "e7293cdaa1b14fbd77f734873b81e8cb",
+    "alt": "SEC 2012 Ordinary marking scheme notes and sketches for all nine terms — rainwater butt, wall tie, newel post, box dovetail joint, gully trap, through and through sawing, compression joint, angle bead and biscuit joint (three pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q9-joint": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q9-joint.png",
+    "md5": "16f47a67f09443b3b598b0115492b2d6",
+    "alt": "SEC 2012 Ordinary marking scheme notes and sketches of a haunched mortise and tenon and a dowel joint.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q9-restore": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q9-restore.png",
+    "md5": "7f0d4a30a176808dbad59bce1502f5b7",
+    "alt": "SEC 2012 Ordinary marking scheme notes and sketches on restoring the tabletop.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2012-OL-q9-finish": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-OL-q9-finish.png",
+    "md5": "5820985496c18ee702c691d03db2f344",
+    "alt": "SEC 2012 Ordinary marking scheme notes and sketches on varnish, lacquer, wax and oil finishes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }
