@@ -133,5 +133,124 @@
   "description": "The marking scheme's own answer to 2026 HL Q11(a)(v), as printed: the full structure of propanone with all atoms and bonds, the second bond of the C=O double bond circled in red as the bond formed.",
   "questionRef": "2026 HL Q11(a)(v)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2026-OL-paper-q1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Apparatus for preparing ethene: a horizontal test tube clamped over a Bunsen burner, with glass wool soaked in ethanol at its closed end and solid A heated in the middle; a delivery tube leads down into a trough of water, where ethene collects in an inverted test tube filled with water. Labels: glass wool soaked in ethanol, solid A, tube, ethene, water.",
+  "questionRef": "2026 OL Q1"
+ },
+ {
+  "file": "chemistry-2026-OL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A burette, drawn upright with its scale marks and tap at the bottom, labelled A beneath it.",
+  "questionRef": "2026 OL Q2"
+ },
+ {
+  "file": "chemistry-2026-OL-paper-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Table of titration results: approximate titration 27.2 cm3; first accurate titration 26.5 cm3; second accurate titration 26.6 cm3.",
+  "questionRef": "2026 OL Q2(c)"
+ },
+ {
+  "file": "chemistry-2026-OL-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Table of results: time (seconds) 0, 30, 60, 90, 120 and 150 against volume of oxygen gas produced (cm3) 0, 24, 36, 42, 47 and 47.",
+  "questionRef": "2026 OL Q3(c)"
+ },
+ {
+  "file": "chemistry-2026-OL-paper-q6.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Table of compounds A to E: A, CH4; B, C2H2; C, C3H8; D, C4H10; E, C6H5CH3.",
+  "questionRef": "2026 OL Q6"
+ },
+ {
+  "file": "chemistry-2026-OL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Series of reactions drawn as boxes and arrows: C2H5OH (Y) is converted to C2H4 (X) and to CH3CHO (Z); C2H4 (X) is converted to C2H5Cl (W). The letters W, X, Y and Z are printed beneath the boxes.",
+  "questionRef": "2026 OL Q8"
+ },
+ {
+  "file": "chemistry-2026-OL-paper-q9c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The combined gas law as printed: P1V1 over T1 equals P2V2 over T2.",
+  "questionRef": "2026 OL Q9(c)"
+ },
+ {
+  "file": "chemistry-2026-OL-paper-q10b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Black and white photograph of the French scientist the question refers to: an elderly man with a white moustache and beard, in a dark suit and bow tie.",
+  "questionRef": "2026 OL Q10(b)"
+ },
+ {
+  "file": "chemistry-2026-OL-paper-q11c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The printed question: the terms bacteria, nitrogen, polluted, phosphorus, screening, settlement and oxygen, then a passage on the stages of sewage treatment with seven blanks lettered A to G to be filled from the terms.",
+  "questionRef": "2026 OL Q11(c)"
+ },
+ {
+  "file": "chemistry-2026-OL-scheme-q1c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 OL Q1(c)(ii), as printed: the structure of ethene, two carbon atoms joined by a double bond with two hydrogen atoms on each, above the red note -1 if C–C double bond omitted.",
+  "questionRef": "2026 OL Q1(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-OL-scheme-q2c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2026 OL Q2(c)(ii), as printed in two routes separated by //: M1V1 over n1 = M2V2 over n2 // M over 1000 × v [2]; (0.2)(26.55) over 1 // 0.2 over 1000 × 26.55 = 5.31 × 10−3 [2]; (M)(25) over 1 // 5.31 × 10−3 over 25 × 1000 [2]; = 0.21 (moles per litre) [2].",
+  "questionRef": "2026 OL Q2(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-OL-scheme-q4j.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 OL Q4(j), as printed: three accepted drawings of benzene, a hexagon with a circle inside or with alternating double bonds drawn either way, separated by or.",
+  "questionRef": "2026 OL Q4(j)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-OL-scheme-q5a-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own dot and cross diagram of BCl3 for 2026 OL Q5(a)(iv): boron in the centre bonded to three chlorine atoms, each bond a shared dot and cross, each chlorine with three lone pairs of dots.",
+  "questionRef": "2026 OL Q5(a)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-OL-scheme-q6c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 OL Q6(c)(i), as printed: C2H2 + 2½O2 → 2CO2 + H2O, the one half set as a small stacked fraction.",
+  "questionRef": "2026 OL Q6(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-OL-scheme-q6d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 OL Q6(d)(ii), as printed: the two structures of C4H10 with all atoms and bonds, the straight chain of four carbons / a three-carbon chain with a CH3 branch on the middle carbon.",
+  "questionRef": "2026 OL Q6(d)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2026-OL-scheme-q9a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 OL Q9(a)(ii), as printed: Kc expression [SO3]2 over [SO2]2[O2], above the note [award 3 marks if round brackets used].",
+  "questionRef": "2026 OL Q9(a)(ii)",
+  "solution": true
  }
 ]

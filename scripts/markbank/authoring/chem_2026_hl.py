@@ -156,8 +156,8 @@ C.fixed([('7', 'b', 'iv', None)], 'chem-3-3', 'kc-expression-for-steam-reforming
                       'own print is shown with the answer.'},
         figure=FIG + 'scheme-q7b-iv')
 C.fixed([('7', 'b', 'v', None)], 'chem-3-3', 'calculating-kc',
-        fixes={'i.e. 4 = 0.2 (mol L⁻¹ of CH₄), 4 = 0.9 (mol L⁻¹ of H₂O), 4 = 1.7 (mol L⁻¹ CO), '
-               '4 = 5.1 (mol L⁻¹ H₂) K_(c) = [0.2][0.9] = 1252.8 (mol²L⁻²)': '1252.8 (mol²L⁻²)'},
+        fixes={'i.e. 4 = 0.2 (mol L⁻¹ of CH₄ ), 4 = 0.9 (mol L⁻¹ of H₂O), 4 = 1.7 (mol L⁻¹ CO), '
+               '4 = 5.1 (mol L⁻¹ H₂) Kc = [0.2][0.9] = 1252.8 (mol² L⁻²)': '1252.8 (mol² L⁻²)'},
         row_notes={1: 'The scheme sets its working as fractions; its own print is shown with '
                       'the answer.'},
         figure=FIG + 'scheme-q7b-v')

@@ -95,6 +95,28 @@ def ligatures():
     return _LIGATURES
 
 
+def _spaced(spans):
+    """Keep the spaces a script run carries. _script_text reads a small span
+    as a super/subscript and strips it, so "cm" + "3 " + "portions" came out
+    "cm³portions", and a space set in a smaller size between "HCl" and
+    "needed" vanished. A trailing space is split off into a span of the line's
+    own size, and a space-only span is given that size."""
+    if not spans:
+        return spans
+    base = max(sp['size'] for sp in spans)
+    out = []
+    for sp in spans:
+        t = sp['text']
+        if t and not t.strip():
+            out.append(dict(sp, size=base))
+        elif t != t.rstrip() and sp['size'] < base - 1.0:
+            out.append(dict(sp, text=t.rstrip()))
+            out.append(dict(sp, text=' ', size=base))
+        else:
+            out.append(sp)
+    return out
+
+
 def read_lines(path, first=1, last=None):
     """Every printed line, page by page, rows clustered then read left to right."""
     lig = ligatures()
@@ -109,9 +131,9 @@ def read_lines(path, first=1, last=None):
                 # BEFORE the Maths demangler sees them: it collapses a doubled
                 # maths character (a Maths-font quirk), which turned the
                 # Chemistry scheme's "1000" into "10" and "26.55" into "26.5".
-                ln = dict(ln, spans=[dict(sp, text=''.join(
+                ln = dict(ln, spans=_spaced([dict(sp, text=''.join(
                     unicodedata.normalize('NFKD', c) if 0x1D7CE <= ord(c) <= 0x1D7FF
-                    else lig.get(c, c) for c in sp['text'])) for sp in ln['spans']])
+                    else lig.get(c, c) for c in sp['text'])) for sp in ln['spans']]))
                 text = ' '.join(_script_text(ln).split())
                 # A full stop or comma set in the script's small size has no
                 # script form; _script_text wraps it as "_(.)". Unwrap it.
@@ -737,7 +759,7 @@ class Cards:
             rows.append(point(f'r-{len(rows) + 1}', text, mark_value(it.cell), note))
         return rows
 
-    def split(self, keys, fixes=None, notes=None, drawn=(), drop=()):
+    def split(self, keys, fixes=None, notes=None, drawn=(), drop=(), criteria=()):
         """Points the scheme prices together ("[6+2+2+2]"): one null row each,
         a choice among them as one null anyN group. Returns (rows, cell).
 
@@ -777,6 +799,15 @@ class Cards:
                     rows.append(r)
                     continue
                 pts = it.points()
+                for crit in criteria:
+                    # An instruction to the examiner ("any correct example"),
+                    # not an answer: it goes on the card's notes, where it
+                    # still tells the student what earns the mark.
+                    if display(crit) in [display(x) for x in pts]:
+                        pts = [x for x in pts if display(x) != display(crit)]
+                        self._criteria.append(f'For ({key[2] or key[1]}) the scheme prints only '
+                                              f'the criterion "{display(crit)}".')
+                        dropped.add(crit)
                 for d in drop:
                     if display(d) in [display(x) for x in pts]:
                         pts = [x for x in pts if display(x) != display(d)]
@@ -787,8 +818,8 @@ class Cards:
                                                 notes.get(len(rows), '')] if x)
                     r = point(f'r-{len(rows) + 1}', t, None, note)
                     rows.append(r)
-        if set(drop) - dropped:
-            raise Refused(f'{keys}: nothing to drop for {sorted(set(drop) - dropped)}')
+        if (set(drop) | set(criteria)) - dropped:
+            raise Refused(f'{keys}: nothing to drop for {sorted((set(drop) | set(criteria)) - dropped)}')
         if len(cells) != 1:
             raise Refused(f'{keys}: {len(cells)} mark cells across a split ({cells})')
         return rows, cells[0]
@@ -851,12 +882,13 @@ class Cards:
         return self.add(keys, topic, concept, rows, **kw)
 
     def ordered(self, keys, topic, concept, **kw):
+        self._criteria = []
         rows, cell = self.split([tuple(k) for k in keys], kw.pop('fixes', None),
                                 kw.pop('row_notes', None), drawn=kw.pop('drawn', ()),
-                                drop=kw.pop('drop', ()))
+                                drop=kw.pop('drop', ()), criteria=kw.pop('criteria', ()))
         note = (f'The scheme prices these points together as {cell} without saying which '
                 f'point earns which part, so no per-point value is shown.')
-        kw['notes'] = tidy(note + ' ' + kw.get('notes', ''))
+        kw['notes'] = tidy(' '.join([note] + self._criteria + [kw.get('notes', '')]))
         return self.add(keys, topic, concept, rows, kind='orderedSplit', notation=cell,
                         total=mark_value(cell), **kw)
 

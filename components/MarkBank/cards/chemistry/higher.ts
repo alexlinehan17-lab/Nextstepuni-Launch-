@@ -8199,7 +8199,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"[4+2+2]"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "add FeSO₄ / iron(II) sulfate", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "add H₂SO₄/ concentrated sulfuric acid", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "add H₂SO₄ / concentrated sulfuric acid", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "brown ring", marks: null, openList: true },
     ],
   } as SecCard,
@@ -8327,7 +8327,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Mr = 126", marks: 2, openList: true },
     { id: "r-2", kind: "point", verbatim: "0.0017 ÷ 126 = 1.349 × 10⁻⁵ (moles of C₆H₆O₃)", marks: 2, contextNote: "The scheme prints 0.0017 over 126 as a fraction; ÷ stands for its bar.", openList: true },
-    { id: "r-3", kind: "point", verbatim: "1.349 × 10⁻⁵× 6 × 10²³ = 8.1 × 10¹⁸", marks: 2, openList: true },
+    { id: "r-3", kind: "point", verbatim: "1.349 × 10⁻⁵ × 6 × 10²³ = 8.1 × 10¹⁸", marks: 2, openList: true },
     ],
     figure: {
           "candId": "chemistry-2026-HL-paper-q4i",
@@ -8706,7 +8706,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "convert to moles per litre (÷4)", marks: 3, openList: true },
-    { id: "r-2", kind: "point", verbatim: "1252.8 (mol²L⁻²)", marks: 3, contextNote: "The scheme sets its working as fractions; its own print is shown with the answer.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "1252.8 (mol² L⁻²)", marks: 3, contextNote: "The scheme sets its working as fractions; its own print is shown with the answer.", openList: true },
     ],
     figure: {
           "candId": "chemistry-2026-HL-scheme-q7b-v",
@@ -9107,7 +9107,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use a balanced chemical equation to describe one other reaction that is catalysed by a catalytic converter.",
     tariffModel: {"kind":"orderedSplit","notation":"[4+2]"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "CO + ½O₂→ CO₂ / 2NO + 2CO → 2CO₂ + N₂/ complete combustion of a hydrocarbon e.g. CH₄ + 2O₂→ CO₂ + 2H₂O etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "CO + ½O₂→ CO₂ / 2NO + 2CO → 2CO₂ + N₂ / complete combustion of a hydrocarbon e.g. CH₄ + 2O₂→ CO₂ + 2H₂O etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -9457,7 +9457,7 @@ export const CARDS: SecCard[] = [
     questionText: "State the oxidation number of C in C₂O₄²⁻ and CO₂.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "C₂O₄²⁻= + 3", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "C₂O₄²⁻ = + 3", marks: 3, openList: true },
     { id: "r-2", kind: "point", verbatim: "CO₂ = + 4", marks: 3, openList: true },
     ],
   } as SecCard,
@@ -9472,8 +9472,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "2MnO₄⁻→ 2Mn²⁺", marks: 2, openList: true },
-    { id: "r-2", kind: "point", verbatim: "16H⁺→ 8H₂O", marks: 2, openList: true },
-    { id: "r-3", kind: "point", verbatim: "5C₂O₄²⁻→ 10CO₂", marks: 2, contextNote: "The scheme adds: [2MnO₄⁻+ 16H⁺+ 5C₂O₄²⁻→ 2Mn²⁺ + 8H₂O + 10CO₂]", openList: true },
+    { id: "r-2", kind: "point", verbatim: "16H⁺ → 8H₂O", marks: 2, openList: true },
+    { id: "r-3", kind: "point", verbatim: "5C₂O₄²⁻→ 10CO₂", marks: 2, contextNote: "The scheme adds: [2MnO₄⁻+ 16H⁺ + 5C₂O₄²⁻→ 2Mn²⁺ + 8H₂O + 10CO₂ ]", openList: true },
     ],
   } as SecCard,
   {
@@ -9545,7 +9545,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "pH = –log₁₀[H₃O⁺] / [H⁺] = √(KaMacid) / [H⁺] = 10^-2.8", marks: 2, contextNote: "The scheme sets Ka and Macid together under one root sign.", openList: true },
     { id: "r-2", kind: "point", verbatim: "[H⁺] = 1.585 × 10⁻³", marks: 2, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Ka= 2.51 × 10⁻⁵", marks: 2, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Ka = 2.51 × 10⁻⁵", marks: 2, openList: true },
     ],
     figure: {
           "candId": "chemistry-2026-HL-paper-q11c",
